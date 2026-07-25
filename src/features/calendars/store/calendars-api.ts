@@ -742,6 +742,31 @@ const injectedEndpoints = apiSlice.injectEndpoints({
         return response.data
       },
     }),
+    enableSubscription: builder.mutation<
+      { share_token: string; public_url: string },
+      string
+    >({
+      query: (key) => ({
+        url: `calendars/${encodeURIComponent(key)}/subscription`,
+        method: 'POST',
+      }),
+      transformResponse: (response: {
+        data?: { share_token: string; public_url: string }
+      }) => {
+        if (!response.data) {
+          throw new Error('Subscription response missing data')
+        }
+        return response.data
+      },
+      invalidatesTags: [CALENDARS_SLICE],
+    }),
+    disableSubscription: builder.mutation<void, string>({
+      query: (key) => ({
+        url: `calendars/${encodeURIComponent(key)}/subscription`,
+        method: 'DELETE',
+      }),
+      invalidatesTags: [CALENDARS_SLICE],
+    }),
     updateCalendarVisibility: builder.mutation<
       null,
       { id: string; hidden: boolean }
@@ -797,6 +822,8 @@ export const {
   useGetEventsInTimeRangeQuery,
   useSearchEventsQuery,
   useExportCalendarMutation,
+  useEnableSubscriptionMutation,
+  useDisableSubscriptionMutation,
   useUpdateCalendarVisibilityMutation,
   useGetFreeBusyQuery,
   useSearchUsersQuery,
