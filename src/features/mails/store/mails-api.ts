@@ -15,6 +15,7 @@ import type {
   ImapFolder,
   ImapMessages,
   ImapMessagesBackendResponse,
+  ImapMessagesList,
   UpdateFolderBody,
 } from '../mails-types'
 import { getMailActionNotificationKeys } from '../utils/get-mail-action-notification-keys'
@@ -33,10 +34,12 @@ import {
   normalizeAttachments,
   normalizeImapFolder,
   normalizeImapFolderTree,
+  mapMailToListItem,
   normalizeMailDetail,
   transformFolderMessagesResponse,
   type BackendResponse,
   type RawImapFolder,
+  type RawMailListItem,
 } from './mails-normalizers'
 
 export interface MailListQueryParams {
@@ -709,7 +712,7 @@ const injectedEndpoints = apiSlice.injectEndpoints({
       ],
     }),
     searchMails: builder.query<
-      ImapMessages[],
+      ImapMessagesList[],
       { accountId: string; folder: string; q: string }
     >({
       query: ({ accountId, folder, q }) => ({
@@ -717,17 +720,10 @@ const injectedEndpoints = apiSlice.injectEndpoints({
         params: { q },
       }),
       transformResponse: (
-        response: BackendResponse<ImapMessages[]> | ImapMessages[]
+        response: BackendResponse<RawMailListItem[]> | RawMailListItem[]
       ) => {
-        const mails = Array.isArray(response)
-          ? response
-          : (response?.data ?? [])
-        return mails.map((mail) => ({
-          ...mail,
-          id: mail.uid ?? mail.id ?? '',
-          date: mail.date ?? Date.now(),
-          attachments: normalizeAttachments(mail.attachments),
-        }))
+        const mails = Array.isArray(response) ? response : (response?.data ?? [])
+        return mails.map(mapMailToListItem)
       },
     }),
   }),

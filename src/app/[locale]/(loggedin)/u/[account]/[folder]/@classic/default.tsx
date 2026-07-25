@@ -5,6 +5,7 @@ import MessagesList from '@/features/mails/components/list'
 import MailListSkeleton from '@/features/mails/components/skeletons/list-skeleton'
 import { VirtualFolderEmptyState } from '@/features/mails/components/virtual-folder-empty-state'
 import { useFolderMessages } from '@/features/mails/hooks/use-folder-messages'
+import { useMailSearch } from '@/features/mails/hooks/use-mail-search'
 import { setSkipFolderFetch } from '@/features/mails/store/mail-navigation-slice'
 import { getClientFilteredMails } from '@/features/mails/utils/client-mail-list-filter'
 import { folderPathFromParams } from '@/features/mails/utils/folder-path-from-params'
@@ -21,11 +22,19 @@ const Page: React.FC = () => {
   const dispatch = useAppDispatch()
   const searchParams = useSearchParams()
   const activeFilter = searchParams.get('filter') ?? 'all'
+  const searchQuery = searchParams.get('q') ?? ''
+  const isSearchActive = searchQuery.length >= 2
+
   const { data, isLoading, isFetching, error, refetch, isVirtualFolder } =
     useFolderMessages({
       folder: folderPath,
       accountId: accountString,
     })
+
+  const mailSearch = useMailSearch({
+    folder: folderPath,
+    accountId: accountString,
+  })
 
   useEffect(() => {
     dispatch(setSkipFolderFetch(false))
@@ -36,11 +45,14 @@ const Page: React.FC = () => {
     [data, activeFilter]
   )
 
-  const clientFilterActive = activeFilter !== 'all'
+  const displayMails = useMemo(
+    () => (isSearchActive ? (mailSearch.results ?? []) : filteredMails),
+    [isSearchActive, mailSearch.results, filteredMails]
+  )
 
   const containerClassName = `${mail_id ? 'hidden lg:flex' : 'flex'} w-full`
 
-  if (isVirtualFolder) {
+  if (!isSearchActive && isVirtualFolder) {
     return (
       <div className={containerClassName}>
         <VirtualFolderEmptyState />
@@ -48,7 +60,7 @@ const Page: React.FC = () => {
     )
   }
 
-  if (isLoading) {
+  if (!isSearchActive && isLoading) {
     return (
       <div className={containerClassName}>
         <MailListSkeleton />
@@ -56,7 +68,7 @@ const Page: React.FC = () => {
     )
   }
 
-  if (error) {
+  if (!isSearchActive && error) {
     return (
       <div className={containerClassName}>
         <FolderMessagesErrorFallback
@@ -74,14 +86,14 @@ const Page: React.FC = () => {
     <div className={containerClassName}>
       <MessagesList
         type="classic"
-        items={filteredMails}
-        page={clientFilterActive ? 1 : (data?.page ?? 1)}
-        total={clientFilterActive ? filteredMails.length : (data?.total ?? 0)}
-        totalPages={clientFilterActive ? 1 : (data?.totalPages ?? 1)}
-        hasNextPage={clientFilterActive ? false : (data?.hasNextPage ?? false)}
-        hasPreviousPage={clientFilterActive ? false : (data?.hasPreviousPage ?? false)}
-        isLoading={false}
-        isFetching={isFetching}
+        items={displayMails}
+        page={isSearchActive ? 1 : (data?.page ?? 1)}
+        total={isSearchActive ? (mailSearch.results?.length ?? 0) : (data?.total ?? 0)}
+        totalPages={isSearchActive ? 1 : (data?.totalPages ?? 1)}
+        hasNextPage={isSearchActive ? false : (data?.hasNextPage ?? false)}
+        hasPreviousPage={isSearchActive ? false : (data?.hasPreviousPage ?? false)}
+        isLoading={!isSearchActive && isLoading}
+        isFetching={isSearchActive ? mailSearch.isFetching : isFetching}
         hideToolbar
       />
     </div>

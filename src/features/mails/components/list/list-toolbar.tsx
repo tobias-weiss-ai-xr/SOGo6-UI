@@ -10,6 +10,8 @@ import MailDetailNavigation from '@/features/mails/components/mail/mail-detail-n
 import { useFolderMessages } from '@/features/mails/hooks/use-folder-messages'
 import { useListToolbarMode } from '@/features/mails/hooks/use-list-toolbar-mode'
 import { useMailItemActions } from '@/features/mails/hooks/use-mail-item-actions'
+import { useMailSearch } from '@/features/mails/hooks/use-mail-search'
+import ListSearch from '@/features/mails/components/list/list-search'
 import {
   clearSelectedMails,
   setSelectedMails,
@@ -47,22 +49,39 @@ const ListToolbar: React.FC = () => {
     accountId: accountString,
   })
 
-  const filteredMails = useMemo(
+  const mailSearch = useMailSearch({
+    folder: folderPath,
+    accountId: accountString,
+  })
+
+  const isSearchActive = mailSearch.isSearching
+
+  const filteredRawMails = useMemo(
     () => getClientFilteredMails(data?.mails ?? [], activeFilter),
     [data, activeFilter]
   )
 
-  const displayedCount = clientFilterActive
-    ? filteredMails.length
-    : (data?.total ?? 0)
+  const displayedMails = useMemo(
+    () => (isSearchActive ? (mailSearch.results ?? []) : filteredRawMails),
+    [isSearchActive, mailSearch.results, filteredRawMails]
+  )
+
+  const displayedCount = useMemo(
+    () => (isSearchActive
+      ? (mailSearch.results?.length ?? 0)
+      : clientFilterActive
+        ? filteredRawMails.length
+        : (data?.total ?? 0)),
+    [isSearchActive, mailSearch.results, clientFilterActive, filteredRawMails, data?.total]
+  )
 
   const selectedIds = useAppSelector(
     (state: RootState) => state.mailLayout.selectedMailIds
   )
 
   const allIds = useMemo(
-    () => filteredMails.map((m) => String(m.id)),
-    [filteredMails]
+    () => displayedMails.map((m) => String(m.id)),
+    [displayedMails]
   )
 
   const allSelected = allIds.length > 0 && selectedIds.length === allIds.length
@@ -91,7 +110,7 @@ const ListToolbar: React.FC = () => {
 
   const handleBulkAction = useCallback(
     async (idx: number) => {
-      const mailsById = new Map(filteredMails.map((m) => [String(m.id), m]))
+      const mailsById = new Map(displayedMails.map((m) => [String(m.id), m]))
       for (const id of selectedIds) {
         const item = mailsById.get(id)
         switch (idx) {
@@ -122,7 +141,7 @@ const ListToolbar: React.FC = () => {
       dispatch(clearSelectedMails())
     },
     [
-      filteredMails,
+      displayedMails,
       selectedIds,
       deleteMail,
       archiveMail,
@@ -199,12 +218,22 @@ const ListToolbar: React.FC = () => {
             />
           ) : (
             <div className="flex min-w-0 items-baseline gap-2">
-              <span className="text-lg leading-none font-semibold">
-                {folderTitle}
-              </span>
-              <span className="text-muted-foreground hidden text-sm leading-none md:inline">
-                {t('messages_number.string', { number: displayedCount })}
-              </span>
+              <ListSearch
+                value={mailSearch.query}
+                isSearching={isSearchActive}
+                onChange={mailSearch.setQuery}
+                onClear={mailSearch.clearSearch}
+              />
+              {!isSearchActive && (
+                <>
+                  <span className="text-lg leading-none font-semibold">
+                    {folderTitle}
+                  </span>
+                  <span className="text-muted-foreground hidden text-sm leading-none md:inline">
+                    {t('messages_number.string', { number: displayedCount })}
+                  </span>
+                </>
+              )}
             </div>
           )}
         </div>
