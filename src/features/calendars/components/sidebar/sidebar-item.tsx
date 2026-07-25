@@ -8,12 +8,13 @@ import {
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu'
 import { SidebarMenuAction, SidebarMenuItem } from '@/components/ui/sidebar'
-import { cn } from '@/lib/utils'
+import WorkInProgress from '@/components/work-in-progress'
 import {
   useGetSyncStatusQuery,
   useTriggerSyncMutation,
 } from '@/features/calendars/store/calendars-api'
 import { useIsMobile } from '@/hooks/use-mobile'
+import { cn } from '@/lib/utils'
 import {
   AlertTriangle,
   CheckCircle2,
@@ -24,12 +25,12 @@ import {
 } from 'lucide-react'
 import { useTranslations } from 'next-intl'
 import React, { memo, useMemo } from 'react'
+import { useCalendarVisibility } from '../../hooks/useCalendarVisibility'
 import { isSubscriptionCalendar } from '../../utils/calendar-source-type'
 import DeleteAction from './actions/delete'
+import ExportAction from './actions/export'
 import LinkAction from './actions/link'
 import EditForm from './forms/edit'
-import WorkInProgress from '@/components/work-in-progress'
-import { useCalendarVisibility } from '../../hooks/useCalendarVisibility'
 
 interface SidebarItemProps {
   name: string
@@ -54,17 +55,14 @@ function useExternalSyncVisuals(
   const { data: syncStatus } = useGetSyncStatusQuery(calendarKey, {
     skip: !calendarKey || !isSubscription,
   })
-  const isRunning =
-    isMutationLoading || syncStatus?.sync_status === 'running'
+  const isRunning = isMutationLoading || syncStatus?.sync_status === 'running'
 
   const statusIcon = () => {
     if (isRunning) {
       return <Loader2 className="h-3 w-3 shrink-0 animate-spin" />
     }
     if (syncStatus?.sync_status === 'failed') {
-      return (
-        <AlertTriangle className="text-destructive h-3 w-3 shrink-0" />
-      )
+      return <AlertTriangle className="text-destructive h-3 w-3 shrink-0" />
     }
     if (syncStatus?.sync_status === 'completed') {
       return <CheckCircle2 className="h-3 w-3 shrink-0 text-green-500" />
@@ -289,7 +287,11 @@ const SidebarItem: React.FC<SidebarItemProps> = ({
               <WorkInProgress title={t('sidebar.sharing.string')} />
             )}
             {type === 'export' && (
-              <WorkInProgress title={t('sidebar.export.string')} />
+              <ExportAction
+                id={id}
+                name={name}
+                onClose={() => setDialogOpen(false)}
+              />
             )}
           </DialogContent>
         </Dialog>

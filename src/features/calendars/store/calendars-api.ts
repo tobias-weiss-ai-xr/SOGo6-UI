@@ -724,6 +724,24 @@ const injectedEndpoints = apiSlice.injectEndpoints({
         { type: USER_SEARCH_SLICE, id: `${q}:${limit}` },
       ],
     }),
+    exportCalendar: builder.mutation<
+      { job_id: string },
+      { key: string; startDate?: string; endDate?: string }
+    >({
+      query: ({ key, startDate, endDate }) => ({
+        url: `calendars/${encodeURIComponent(key)}/export`,
+        params: {
+          start_date_time: startDate || undefined,
+          end_date_time: endDate || undefined,
+        },
+      }),
+      transformResponse: (response: { data?: { job_id: string } }) => {
+        if (!response.data) {
+          throw new Error('Export response missing job_id')
+        }
+        return response.data
+      },
+    }),
     updateCalendarVisibility: builder.mutation<
       null,
       { id: string; hidden: boolean }
@@ -778,6 +796,7 @@ export const {
   useGetEventsQuery,
   useGetEventsInTimeRangeQuery,
   useSearchEventsQuery,
+  useExportCalendarMutation,
   useUpdateCalendarVisibilityMutation,
   useGetFreeBusyQuery,
   useSearchUsersQuery,
