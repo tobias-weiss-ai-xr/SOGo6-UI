@@ -375,6 +375,27 @@ const injectedEndpoints = apiSlice.injectEndpoints({
             ],
     }),
 
+    batchMailAction: builder.mutation<
+      void,
+      {
+        accountId?: string
+        folder: string
+        action: string
+        mailUids: string[]
+        data?: string | string[] | null
+      }
+    >({
+      query: ({ accountId = '0', folder, action, mailUids, data }) => ({
+        url: `mailboxes/${accountId}/folders/${encodeURIComponent(folder)}/mails/batch-action`,
+        method: 'POST',
+        body: { action, mail_uids: mailUids, data },
+      }),
+      invalidatesTags: (_result, _error, arg) => [
+        { type: FOLDER_MESSAGES_SLICE, folder: arg.folder },
+        MAILS_FOLDERS_SLICE,
+      ],
+    }),
+
     downloadMail: builder.mutation<
       Blob,
       {
@@ -739,6 +760,7 @@ export const {
   useLazyGetReplyMessageQuery,
   useMoveToTrashMutation,
   useMailActionMutation,
+  useBatchMailActionMutation,
   useDownloadMailMutation,
   useLazyGetMailRawQuery,
   usePurgeFolderMutation,

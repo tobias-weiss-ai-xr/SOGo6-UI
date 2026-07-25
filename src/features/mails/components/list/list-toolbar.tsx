@@ -102,52 +102,79 @@ const ListToolbar: React.FC = () => {
 
   const tActions = useTranslations('MAILS_LIST.actions')
   const tBar = useTranslations('MAILS_COMMONS.mail_display.action-bar')
-  const { deleteMail, archiveMail, toggleRead, markSpam, markHam, isJunk } =
+  const { archiveDestination, isJunk } =
     useMailItemActions({
       accountId: accountString,
       folder: folderPath,
     })
+  const [batchMailAction] = useBatchMailActionMutation()
 
   const handleBulkAction = useCallback(
     async (idx: number) => {
-      const mailsById = new Map(displayedMails.map((m) => [String(m.id), m]))
-      for (const id of selectedIds) {
-        const item = mailsById.get(id)
-        switch (idx) {
-          case 0:
-            await deleteMail(id)
-            break
-          case 1:
-            await archiveMail(id)
-            break
-          case 2:
-            if (item && !item.seen) {
-              await toggleRead(id, false)
-            }
-            break
-          case 3:
-            if (isJunk) {
-              await markHam(id)
-            } else {
-              await markSpam(id)
-            }
-            break
-          case 4:
-            break
-          default:
-            break
-        }
+      const mailUids = selectedIds
+      if (mailUids.length === 0) return
+
+      switch (idx) {
+        case 0:
+          await batchMailAction({
+            accountId: accountString,
+            folder: folderPath,
+            action: 'delete',
+            mailUids,
+          }).unwrap()
+          dispatch(clearSelectedMails())
+          break
+        case 1:
+          await batchMailAction({
+            accountId: accountString,
+            folder: folderPath,
+            action: 'move',
+            mailUids,
+            data: archiveDestination,
+          }).unwrap()
+          dispatch(clearSelectedMails())
+          break
+        case 2:
+          await batchMailAction({
+            accountId: accountString,
+            folder: folderPath,
+            action: 'tag',
+            mailUids,
+            data: ['\\Seen'],
+          }).unwrap()
+          dispatch(clearSelectedMails())
+          break
+        case 3:
+          if (isJunk) {
+            await batchMailAction({
+              accountId: accountString,
+              folder: folderPath,
+              action: 'ham',
+              mailUids,
+            }).unwrap()
+          } else {
+            await batchMailAction({
+              accountId: accountString,
+              folder: folderPath,
+              action: 'spam',
+              mailUids,
+            }).unwrap()
+          }
+          dispatch(clearSelectedMails())
+          break
+        case 4:
+          // Label action - not yet implemented
+          break
+        default:
+          break
       }
-      dispatch(clearSelectedMails())
     },
     [
-      displayedMails,
       selectedIds,
-      deleteMail,
-      archiveMail,
-      toggleRead,
-      markSpam,
-      markHam,
+      batchMailAction,
+      accountString,
+      folderPath,
+      archiveDestination,
       isJunk,
       dispatch,
     ]
