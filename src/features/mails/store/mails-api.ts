@@ -708,6 +708,28 @@ const injectedEndpoints = apiSlice.injectEndpoints({
         { type: MAIL_SLICE, id: mailId },
       ],
     }),
+    searchMails: builder.query<
+      ImapMessages[],
+      { accountId: string; folder: string; q: string }
+    >({
+      query: ({ accountId, folder, q }) => ({
+        url: `${mailboxUrl(accountId)}/folders/${encodeURIComponent(folder)}/mails/search`,
+        params: { q },
+      }),
+      transformResponse: (
+        response: BackendResponse<ImapMessages[]> | ImapMessages[]
+      ) => {
+        const mails = Array.isArray(response)
+          ? response
+          : (response?.data ?? [])
+        return mails.map((mail) => ({
+          ...mail,
+          id: mail.uid ?? mail.id ?? '',
+          date: mail.date ?? Date.now(),
+          attachments: normalizeAttachments(mail.attachments),
+        }))
+      },
+    }),
   }),
   overrideExisting: true,
 })
@@ -733,6 +755,8 @@ export const {
   useSetFolderTypeMutation,
   useMoveFolderMutation,
   useExportFolderMutation,
+  useSearchMailsQuery,
+  useLazySearchMailsQuery,
 } = injectedEndpoints
 
 export const mailsApiEndpoints = injectedEndpoints
