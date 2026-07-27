@@ -1,50 +1,35 @@
 // SOGo 6 Service Worker
-// Provides offline fallback and caches static assets.
+// Provides offline fallback, asset caching, and push notifications.
 
 const CACHE = 'sogo6-v1'
-const STATIC_ASSETS = [
-  '/',
-  '/manifest.json',
-  '/icons/icon.svg',
-]
+const STATIC_ASSETS = ['/', '/manifest.json', '/icons/icon.svg']
 
-// Install: cache static assets
+// Install
 self.addEventListener('install', (event) => {
   event.waitUntil(
-    caches.open(CACHE).then((cache) => {
-      return cache.addAll(STATIC_ASSETS)
-    })
+    caches.open(CACHE).then((cache) => cache.addAll(STATIC_ASSETS))
   )
 })
 
-// Activate: clean old caches
+// Activate
 self.addEventListener('activate', (event) => {
   event.waitUntil(
-    caches.keys().then((keys) => {
-      return Promise.all(
-        keys.filter((k) => k !== CACHE).map((k) => caches.delete(k))
-      )
-    })
+    caches.keys().then((keys) =>
+      Promise.all(keys.filter((k) => k !== CACHE).map((k) => caches.delete(k)))
+    )
   )
 })
 
-// Fetch: serve from cache, fall back to network
+// Fetch
 self.addEventListener('fetch', (event) => {
-  // Only handle GET requests
   if (event.request.method !== 'GET') return
-
   event.respondWith(
     caches.match(event.request).then((cached) => {
       if (cached) return cached
       return fetch(event.request).then((response) => {
-        // Cache successful responses for static assets
-        if (
-          response.ok &&
-          event.request.url.startsWith(self.location.origin)
-        ) {
+        if (response.ok && event.request.url.startsWith(self.location.origin)) {
           const clone = response.clone()
           caches.open(CACHE).then((cache) => {
-            // Only cache if it's a static asset (not API)
             if (
               !event.request.url.includes('/api/') &&
               !event.request.url.includes('/_next/')
@@ -56,11 +41,41 @@ self.addEventListener('fetch', (event) => {
         return response
       })
     }).catch(() => {
-      // Offline fallback
-      if (event.request.mode === 'navigate') {
-        return caches.match('/')
-      }
+      if (event.request.mode === 'navigate') return caches.match('/')
       return new Response('Offline', { status: 503 })
+    })
+  )
+})
+
+// Push notification
+self.addEventListener('push', (event) => {
+  let data = { title: 'SOGo', body: '', icon: '/icons/icon.svg', tag: '' }
+  try {
+    if (event.data) data = { ...data, ...JSON.parse(event.data.text()) }
+  } catch {
+    data.body = event.data?.text() || ''
+  }
+  event.waitUntil(
+    self.registration.showNotification(data.title, {
+      body: data.body,
+      icon: data.icon,
+      tag: data.tag,
+      data: { url: data.data?.url || '/' },
+      vibrate: [200, 100, 200],
+    })
+  )
+})
+
+// Notification click
+self.addEventListener('notificationclick', (event) => {
+  event.notification.close()
+  const url = event.notification.data?.url || '/'
+  event.waitUntil(
+    clients.matchAll({ type: 'window' }).then((windowClients) => {
+      for (const client of windowClients) {
+        if (client.url === url && 'focus' in client) return client.focus()
+      }
+      return clients.openWindow(url)
     })
   )
 })
