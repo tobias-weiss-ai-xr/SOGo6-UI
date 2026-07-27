@@ -17,8 +17,8 @@ describe('list-item-utils', () => {
     })
 
     it('should format dates from this week as day name', () => {
-      // Get a date from earlier this week (not today)
-      const daysAgo = now.getDay() > 0 ? now.getDay() : 7
+      // Go back at least 1 day to ensure we don't land on today
+      const daysAgo = Math.max(1, now.getDay() === 0 ? 6 : now.getDay() - 1)
       const dateFromThisWeek = new Date(
         now.getTime() - daysAgo * 24 * 60 * 60 * 1000
       )
