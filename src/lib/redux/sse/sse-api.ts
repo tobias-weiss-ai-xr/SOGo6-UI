@@ -118,11 +118,15 @@ export const sseApi = createApi({
         // Check if SSE is disabled via environment variable
         const sseEnabled = await isSSEEnabled()
         if (!sseEnabled) {
-          console.log('SSE is disabled via SSE_ENABLED environment variable')
+          if (process.env.NODE_ENV === 'development') {
+            console.log('SSE is disabled via SSE_ENABLED environment variable')
+          }
           return { data: { connected: false, disabled: true } }
         }
 
-        console.log('Connecting to SSE server with config:', newConfig)
+        if (process.env.NODE_ENV === 'development') {
+          console.log('Connecting to SSE server with config:', newConfig)
+        }
         if (newConfig) {
           // Create or update service with new config
           if (sseServiceInstance) {
@@ -163,7 +167,9 @@ export const initSSEApi = async (
 ): Promise<SSEService | null> => {
   const sseEnabled = await isSSEEnabled()
   if (!sseEnabled) {
-    console.log('SSE is disabled via SSE_ENABLED environment variable')
+    if (process.env.NODE_ENV === 'development') {
+      console.log('SSE is disabled via SSE_ENABLED environment variable')
+    }
     return null
   }
   sseServiceInstance = new SSEService(config)

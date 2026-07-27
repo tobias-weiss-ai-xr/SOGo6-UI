@@ -69,20 +69,22 @@ const checkApiHealth = async (apiUrl: string): Promise<boolean> => {
     const errorName = (error as Error).name
     const errorMessage = (error as Error).message
 
-    if (
-      errorName === 'AbortError' ||
-      errorMessage.includes('Failed to fetch')
-    ) {
-      console.info(
-        `%cAPI health check failed for ${healthUrl} (unreachable or timeout)`,
-        'color: #94a3b8'
-      )
-    } else {
-      console.info(
-        `%cAPI health check failed for ${healthUrl}`,
-        'color: #94a3b8',
-        error
-      )
+    if (process.env.NODE_ENV === 'development') {
+      if (
+        errorName === 'AbortError' ||
+        errorMessage.includes('Failed to fetch')
+      ) {
+        console.info(
+          `%cAPI health check failed for ${healthUrl} (unreachable or timeout)`,
+          'color: #94a3b8'
+        )
+      } else {
+        console.info(
+          `%cAPI health check failed for ${healthUrl}`,
+          'color: #94a3b8',
+          error
+        )
+      }
     }
     return false
   }

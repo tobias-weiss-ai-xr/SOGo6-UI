@@ -250,9 +250,11 @@ export class SSEService {
       this.config.reconnectInterval || 5000
     )
 
-    console.log(
-      `Reconnection attempt ${this.reconnectAttempts}/3, waiting ${delay}ms...`
-    )
+    if (process.env.NODE_ENV === 'development') {
+      console.log(
+        `Reconnection attempt ${this.reconnectAttempts}/3, waiting ${delay}ms...`
+      )
+    }
 
     if (this.reconnectTimeout) {
       clearTimeout(this.reconnectTimeout)
