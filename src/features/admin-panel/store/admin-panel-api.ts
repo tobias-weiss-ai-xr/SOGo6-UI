@@ -702,6 +702,71 @@ const injectedEndpoints = apiSlice.injectEndpoints({
       }),
       invalidatesTags: ['AdminDbMigration'],
     }),
+
+    // === Migration Tools ===
+
+    getMigrationHistory: builder.query<{
+      entries: Array<{ id: string; source: string; user_uid: string; status: string; started_at: number; completed_at: number | null; items_migrated: number; items_failed: number; details: string | null }>
+    }, void>({
+      query: () => ({
+        url: '/admin/v1/migration/history',
+        method: 'GET',
+      }),
+      providesTags: ['AdminMigration'],
+    }),
+
+    getMigrationSources: builder.query<{
+      sources: Array<{ id: string; name: string; description: string; fields: string[] }>
+    }, void>({
+      query: () => ({
+        url: '/admin/v1/migration/sources',
+        method: 'GET',
+      }),
+    }),
+
+    startMigration: builder.mutation<{
+      id: string; source: string; user_uid: string; status: string; started_at: number; details: string
+    }, { source: string; user_uid: string; options?: Record<string, unknown> }>({
+      query: (body) => ({
+        url: '/admin/v1/migration/start',
+        method: 'POST',
+        body,
+      }),
+      invalidatesTags: ['AdminMigration'],
+    }),
+
+    // === Config as Code ===
+
+    getConfigExport: builder.query<{
+      config: Record<string, unknown>
+      version: number
+      checksum: string
+    }, void>({
+      query: () => ({
+        url: '/admin/v1/config-as-code/export',
+        method: 'GET',
+      }),
+    }),
+
+    getConfigHistory: builder.query<{
+      snapshots: Array<{ id: string; version: number; created_at: number; created_by: string; description: string; checksum: string }>
+    }, void>({
+      query: () => ({
+        url: '/admin/v1/config-as-code/history',
+        method: 'GET',
+      }),
+    }),
+
+    importConfig: builder.mutation<{
+      version: number; checksum: string; id: string
+    }, { config: Record<string, unknown>; description?: string }>({
+      query: (body) => ({
+        url: '/admin/v1/config-as-code/import',
+        method: 'POST',
+        body,
+      }),
+      invalidatesTags: ['AdminConfig'],
+    }),
   }),
   overrideExisting: false,
 })
@@ -757,4 +822,10 @@ export const {
   useSetBackupConfigMutation,
   useGetDbMigrationQuery,
   useRunDbMigrationMutation,
+  useGetMigrationHistoryQuery,
+  useGetMigrationSourcesQuery,
+  useStartMigrationMutation,
+  useGetConfigExportQuery,
+  useGetConfigHistoryQuery,
+  useImportConfigMutation,
 } = injectedEndpoints

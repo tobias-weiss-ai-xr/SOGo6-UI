@@ -8,6 +8,8 @@
     "branding": { "string": "Branding" },
     "backup": { "string": "Backup" },
     "db_migration": { "string": "DB Migration" },
+    "migration": { "string": "Migration" },
+    "config_code": { "string": "Config as Code" },
     "api_docs": { "string": "API Documentation" },
     "config": {
       "string": "Configuration",

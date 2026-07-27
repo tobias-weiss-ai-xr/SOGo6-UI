@@ -1,4 +1,4 @@
-import { Database, Palette, Users, UserCog, BookOpen, Shield, Building2, Activity, ScrollText, HardDrive, FileUp, Bug, Palette as BrandIcon, Archive, GitBranch } from 'lucide-react'
+import { Database, Palette, Users, UserCog, BookOpen, Shield, Building2, Activity, ScrollText, HardDrive, FileUp, Bug, Palette as BrandIcon, Archive, GitBranch, ArrowRightLeft, FileCode } from 'lucide-react'
 
 const navItems = [
   {
@@ -89,6 +89,18 @@ const navItems = [
     isActive: true,
     collapsedIcon: GitBranch,
     url: '/admin_panel/db-migration',
+  },
+  {
+    title: 'AP_SIDEBAR.migration.string',
+    isActive: true,
+    collapsedIcon: ArrowRightLeft,
+    url: '/admin_panel/migration',
+  },
+  {
+    title: 'AP_SIDEBAR.config_code.string',
+    isActive: true,
+    collapsedIcon: FileCode,
+    url: '/admin_panel/config-code',
   },
   {
     title: 'AP_SIDEBAR.api_docs.string',
