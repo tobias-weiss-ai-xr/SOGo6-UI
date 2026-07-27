@@ -194,12 +194,13 @@ export const withErrorBoundary = (
   return class ErrorBoundaryWrapper extends React.Component<ErrorBoundaryProps> {
     render() {
       return (
-        <ErrorBoundary fallback={fallback}>
+        <ErrorBoundaryComponent fallback={fallback}>
           <WrappedComponent {...this.props} />
-        </ErrorBoundary>
+        </ErrorBoundaryComponent>
       );
     }
   };
 };
 
+export { ErrorBoundaryComponent as ErrorBoundary };
 export default ErrorBoundaryComponent;
