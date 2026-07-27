@@ -29,6 +29,12 @@
     },
     "sessions": {
       "string": "Sessions"
+    },
+    "dns_wizard": {
+      "string": "DNS Wizard"
+    },
+    "resources": {
+      "string": "Resources"
     }
   }
 }

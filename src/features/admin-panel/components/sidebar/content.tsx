@@ -1,4 +1,4 @@
-import { Database, Palette, Users, UserCog, BookOpen } from 'lucide-react'
+import { Database, Palette, Users, UserCog, BookOpen, Shield, Building2 } from 'lucide-react'
 
 const navItems = [
   {
@@ -47,6 +47,18 @@ const navItems = [
     isActive: true,
     collapsedIcon: BookOpen,
     url: '/swagger-admin',
+  },
+  {
+    title: 'AP_SIDEBAR.dns_wizard.string',
+    isActive: true,
+    collapsedIcon: Shield,
+    url: '/admin_panel/dns-wizard',
+  },
+  {
+    title: 'AP_SIDEBAR.resources.string',
+    isActive: true,
+    collapsedIcon: Building2,
+    url: '/admin_panel/resources',
   },
 ]
 

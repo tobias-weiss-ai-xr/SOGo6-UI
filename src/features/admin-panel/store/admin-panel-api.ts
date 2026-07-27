@@ -2,6 +2,8 @@ import type {
   //AdminConfig,
   AdminConfigSection,
 } from '@/features/admin-panel/types/admin-panel'
+import type { DnsRecord, DnsValidation } from './dns-wizard-api'
+import type { Resource } from './resource-booking-api'
 import {
   ADMIN_CONFIG_SLICE,
   ADMIN_V1_CONFIG_DOMAIN_DEFAULT_SLICE,
@@ -376,6 +378,128 @@ const injectedEndpoints = apiSlice.injectEndpoints({
       }),
       invalidatesTags: [ADMIN_V1_CONFIG_RULES_SLICE],
     }),
+
+    // === DNS Wizard ===
+
+    generateSpfRecord: builder.mutation<DnsRecord, {
+      domain: string
+      mx_servers?: string[]
+      ip4_addresses?: string[]
+      ip6_addresses?: string[]
+      include_domains?: string[]
+      policy?: string
+    }>({
+      query: (body) => ({
+        url: '/admin/v1/dns/spf/generate',
+        method: 'POST',
+        body,
+      }),
+    }),
+
+    validateSpfRecord: builder.mutation<DnsValidation, { spf_value: string }>({
+      query: (body) => ({
+        url: '/admin/v1/dns/spf/validate',
+        method: 'POST',
+        body,
+      }),
+    }),
+
+    generateDkimRecord: builder.mutation<DnsRecord, {
+      domain: string
+      selector?: string
+      key_type?: string
+      public_key?: string
+    }>({
+      query: (body) => ({
+        url: '/admin/v1/dns/dkim/generate',
+        method: 'POST',
+        body,
+      }),
+    }),
+
+    generateDmarcRecord: builder.mutation<DnsRecord, {
+      domain: string
+      policy?: string
+      rua_email?: string
+      ruf_email?: string
+      pct?: number
+      subdomain_policy?: string
+      aspf?: string
+      adkim?: string
+    }>({
+      query: (body) => ({
+        url: '/admin/v1/dns/dmarc/generate',
+        method: 'POST',
+        body,
+      }),
+    }),
+
+    validateDmarcRecord: builder.mutation<DnsValidation, { dmarc_value: string }>({
+      query: (body) => ({
+        url: '/admin/v1/dns/dmarc/validate',
+        method: 'POST',
+        body,
+      }),
+    }),
+
+    // === Resource Booking ===
+
+    getResources: builder.query<Resource[], { active_only?: boolean } | void>({
+      query: (params) => ({
+        url: '/admin/v1/resources/',
+        method: 'GET',
+        params: params ?? {},
+      }),
+      providesTags: ['AdminResources'],
+    }),
+
+    getResource: builder.query<Resource, string>({
+      query: (id) => ({
+        url: `/admin/v1/resources/${id}`,
+        method: 'GET',
+      }),
+      providesTags: (_result, _error, id) => [{ type: 'AdminResources', id }],
+    }),
+
+    createResource: builder.mutation<Resource, {
+      name: string
+      email: string
+      resource_type?: string
+      description?: string
+      capacity?: number
+      location?: string
+      features?: string[]
+      booking_policy?: string
+      allowed_groups?: string[]
+      auto_accept?: boolean
+    }>({
+      query: (body) => ({
+        url: '/admin/v1/resources/',
+        method: 'POST',
+        body,
+      }),
+      invalidatesTags: ['AdminResources'],
+    }),
+
+    updateResource: builder.mutation<Resource, { id: string; body: Partial<Resource> }>({
+      query: ({ id, body }) => ({
+        url: `/admin/v1/resources/${id}`,
+        method: 'PATCH',
+        body,
+      }),
+      invalidatesTags: (_result, _error, { id }) => [
+        'AdminResources',
+        { type: 'AdminResources', id },
+      ],
+    }),
+
+    deleteResource: builder.mutation<{ deleted: string }, string>({
+      query: (id) => ({
+        url: `/admin/v1/resources/${id}`,
+        method: 'DELETE',
+      }),
+      invalidatesTags: ['AdminResources'],
+    }),
   }),
   overrideExisting: false,
 })
@@ -405,4 +529,14 @@ export const {
   useCreateRuleMutation,
   useUpdateRuleMutation,
   useDeleteRuleMutation,
+  useGenerateSpfRecordMutation,
+  useValidateSpfRecordMutation,
+  useGenerateDkimRecordMutation,
+  useGenerateDmarcRecordMutation,
+  useValidateDmarcRecordMutation,
+  useGetResourcesQuery,
+  useGetResourceQuery,
+  useCreateResourceMutation,
+  useUpdateResourceMutation,
+  useDeleteResourceMutation,
 } = injectedEndpoints
