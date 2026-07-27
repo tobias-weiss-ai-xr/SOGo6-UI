@@ -1,18 +1,34 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
 
 export type MailLayoutMode = 'full' | 'split'
+export type MailViewMode = 'flat' | 'conversation'
 
-const STORAGE_KEY = 'sogo_mail_layout'
+const LAYOUT_KEY = 'sogo_mail_layout'
+const VIEW_KEY = 'sogo_mail_view'
 
 interface MailLayoutState {
   mode: MailLayoutMode
+  viewMode: MailViewMode
   selectedMailIds: string[]
 }
 
-const initialState: MailLayoutState = {
-  mode: 'full',
-  selectedMailIds: [],
+function loadInitialState(): MailLayoutState {
+  let mode: MailLayoutMode = 'full'
+  let viewMode: MailViewMode = 'flat'
+  if (typeof window !== 'undefined') {
+    try {
+      const saved = localStorage.getItem(LAYOUT_KEY)
+      if (saved === 'full' || saved === 'split') mode = saved
+      const savedView = localStorage.getItem(VIEW_KEY)
+      if (savedView === 'flat' || savedView === 'conversation') viewMode = savedView
+    } catch {
+      // ignore
+    }
+  }
+  return { mode, viewMode, selectedMailIds: [] }
 }
+
+const initialState: MailLayoutState = loadInitialState()
 
 const mailLayoutSlice = createSlice({
   name: 'mailLayout',
@@ -20,13 +36,11 @@ const mailLayoutSlice = createSlice({
   reducers: {
     setMailLayout(state, action: PayloadAction<MailLayoutMode>) {
       state.mode = action.payload
-      if (typeof window !== 'undefined') {
-        try {
-          localStorage.setItem(STORAGE_KEY, action.payload)
-        } catch {
-          // ignore write errors
-        }
-      }
+      try { localStorage.setItem(LAYOUT_KEY, action.payload) } catch {}
+    },
+    setMailViewMode(state, action: PayloadAction<MailViewMode>) {
+      state.viewMode = action.payload
+      try { localStorage.setItem(VIEW_KEY, action.payload) } catch {}
     },
     setSelectedMails(state, action: PayloadAction<string[]>) {
       state.selectedMailIds = action.payload
@@ -37,5 +51,5 @@ const mailLayoutSlice = createSlice({
   },
 })
 
-export const { setMailLayout, setSelectedMails, clearSelectedMails } = mailLayoutSlice.actions
+export const { setMailLayout, setMailViewMode, setSelectedMails, clearSelectedMails } = mailLayoutSlice.actions
 export default mailLayoutSlice.reducer

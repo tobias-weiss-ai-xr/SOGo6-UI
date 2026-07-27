@@ -34,6 +34,14 @@ export interface ImapMessagesList {
   hasAttachment: boolean
   snippet: string
   size?: number
+  /** RFC 5322 Message-ID for thread grouping */
+  messageId?: string
+  /** Message-ID this mail replies to */
+  inReplyTo?: string
+  /** Space-separated list of ancestor Message-IDs */
+  references?: string
+  /** Stable thread identifier (root message-id) */
+  threadId?: string
   answered: boolean
   forwarded: boolean
   deleted: boolean
