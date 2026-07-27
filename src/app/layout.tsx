@@ -19,10 +19,22 @@ export const metadata: Metadata = {
   title: 'SOGo',
   description: 'SOGo Webmail',
   robots: 'noindex, nofollow',
+  manifest: '/manifest.json',
   icons: {
     icon: '/images/sogo-compact.svg',
     shortcut: '/images/sogo-compact.svg',
     apple: '/images/sogo-compact.svg',
+  },
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: 'default',
+    title: 'SOGo',
+  },
+  viewport: {
+    width: 'device-width',
+    initialScale: 1,
+    maximumScale: 1,
+    viewportFit: 'cover',
   },
 }
 
@@ -45,6 +57,18 @@ export default async function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} ${openDyslexic.variable}`}
     >
       <body className="overflow-hidden antialiased">
+        {/* Service Worker registration for PWA support */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              if ('serviceWorker' in navigator) {
+                window.addEventListener('load', () => {
+                  navigator.serviceWorker.register('/sw.js').catch(() => {});
+                });
+              }
+            `,
+          }}
+        />
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
