@@ -22,6 +22,7 @@ import { useLocale, useTranslations } from 'next-intl'
 import React from 'react'
 import { useForm } from 'react-hook-form'
 import { z } from 'zod'
+import { WebauthnLoginDialog } from '@/features/auth/webauthn-login-dialog'
 
 const localeLabels: Record<string, string> = {
   en: 'English',
@@ -238,6 +239,10 @@ export function LoginForm({
               ))}
           </SelectContent>
         </Select>
+      </div>
+      {/* Passkey login button */}
+      <div className="mb-3">
+        <WebauthnLoginDialog />
       </div>
       {/* Submit button - CTA principal */}
       <Button
