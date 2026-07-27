@@ -45,11 +45,11 @@ describe('list-item-utils', () => {
     it('should format dates from this year as "MMM D"', () => {
       const mockNow = new Date(2025, 10, 8) // November 8, 2025
       const realDateConstructor = Date
-      jest.spyOn(global, 'Date').mockImplementation((...args: any[]) => {
+      jest.spyOn(global, 'Date').mockImplementation(function(this: any, ...args: any[]) {
         if (args.length === 0) {
-          return mockNow as any
+          return mockNow
         }
-        return new realDateConstructor(...args) as any
+        return new (Function.prototype.bind.apply(realDateConstructor, [null, ...args]) as any)()
       })
 
       // January 8, 2025 — same year, clearly outside current week

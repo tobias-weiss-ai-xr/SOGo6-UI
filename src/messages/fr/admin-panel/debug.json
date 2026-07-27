@@ -9,7 +9,7 @@
       "user": { "string": "User" },
       "folder": { "string": "IMAP Folder" },
       "mail_uid": { "string": "Mail UID" },
-      "select_user": { "string": "Select user..."
+      "select_user": { "string": "Select user..." }
     },
     "result": {
       "raw": { "title": { "string": "Raw Email Source" } },

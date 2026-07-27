@@ -44,7 +44,7 @@ export default function QuotasPage(): ReactNode {
   const { data: quotaData, isLoading: quotaLoading } = useGetUserQuotaQuery(selectedUid, { skip: !selectedUid })
   const [setQuota] = useSetUserQuotaMutation()
 
-  const quota = quotaData?.data ?? null
+  const quota = quotaData ?? null
 
   const handleSave = useCallback(async () => {
     if (!selectedUid) return

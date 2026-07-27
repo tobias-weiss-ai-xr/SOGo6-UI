@@ -30,7 +30,7 @@ export default function HealthDashboardPage(): ReactNode {
   const t = useTranslations('AP_HEALTH')
   const { data, isLoading, isError, refetch } = useGetHealthDashboardQuery()
 
-  const health = data?.data ?? null
+  const health = data ?? null
   const services = health?.services ?? []
   const allOk = services.length > 0 && services.every(s => s.status === 'ok')
   const degraded = services.some(s => s.status !== 'ok')

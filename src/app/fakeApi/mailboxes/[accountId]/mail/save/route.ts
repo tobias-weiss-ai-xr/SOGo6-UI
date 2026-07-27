@@ -11,6 +11,7 @@ export async function POST(
   const body = await req.json()
   const close = new URL(req.url).searchParams.get('close') === 'true'
 
+  console.log(
     `[fakeApi] POST /mailboxes/${accountId}/mail/save${close ? '?close=true' : ''}`,
     body
   )

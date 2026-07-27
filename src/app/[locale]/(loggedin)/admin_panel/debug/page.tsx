@@ -34,13 +34,13 @@ export default function DebugPage(): ReactNode {
     if (view === 'raw') {
       try {
         const res = await fetchRaw({ userUid, folder, mailUid }).unwrap()
-        setRawResult((res as any)?.data ?? res ?? null)
+        setRawResult(typeof res === 'string' ? res : JSON.stringify(res, null, 2))
         setHeadersResult(null)
       } catch { toast.error(t('errors.fetch_failed.string')) }
     } else {
       try {
         const res = await fetchHeaders({ userUid, folder, mailUid }).unwrap()
-        setHeadersResult((res as any)?.data ?? res ?? null)
+        setHeadersResult(typeof res === 'object' && res ? res as Record<string, string> : null)
         setRawResult(null)
       } catch { toast.error(t('errors.fetch_failed.string')) }
     }

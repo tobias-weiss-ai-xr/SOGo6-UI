@@ -3,7 +3,7 @@ import domainDefault from '../../../domainDefault.json'
 export async function PATCH(request: Request) {
   try {
     const body = await request.json()
-    )
+    console.log('[fakeApi] PATCH /admin/v1/config/domain-default', body)
 
     // Expecting { customDomainId, config } — store/merge as simple behavior
     // const { customDomainId, config } = body ?? {}

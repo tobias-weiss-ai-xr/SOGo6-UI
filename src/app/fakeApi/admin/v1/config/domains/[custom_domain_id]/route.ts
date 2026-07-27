@@ -15,7 +15,7 @@ export async function PATCH(
   try {
     const { custom_domain_id: customDomainId } = await params
     const body = await request.json()
-    )
+    console.log(`[fakeApi] PATCH /admin/v1/config/domains/${customDomainId}`, body)
     // This is a fake API: we don't persist to disk.
     // Return the updated representation indicating success.
     // const updated = {

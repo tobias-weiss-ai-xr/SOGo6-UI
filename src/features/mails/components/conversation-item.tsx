@@ -16,7 +16,7 @@ import { useTranslations } from 'next-intl'
 import React, { useState } from 'react'
 import type { Conversation } from '../hooks/use-conversations'
 import type { ImapMessagesList } from '../mails-types'
-import { formatDate } from './list/list-item-utils'
+import { formatDate } from './list-item-utils'
 
 interface ConversationItemProps {
   conversation: Conversation

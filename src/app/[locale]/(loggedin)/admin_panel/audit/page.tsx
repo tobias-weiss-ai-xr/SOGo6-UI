@@ -27,7 +27,7 @@ export default function AuditLogPage(): ReactNode {
   const t = useTranslations('AP_AUDIT')
   const { data, isLoading, isError, refetch } = useGetAuditLogQuery({ limit: 100 })
 
-  const entries = data?.data?.entries ?? []
+  const entries = data?.entries ?? []
 
   if (isLoading) {
     return (
@@ -71,7 +71,7 @@ export default function AuditLogPage(): ReactNode {
                 </TableCell>
               </TableRow>
             ) : (
-              entries.map((entry, i) => (
+              entries.map((entry: { timestamp: number; action: string; actor: string; target: string | null; detail: string | null; ip: string | null }, i: number) => (
                 <TableRow key={i}>
                   <TableCell className="text-sm text-muted-foreground whitespace-nowrap">
                     {formatTimestamp(entry.timestamp)}
