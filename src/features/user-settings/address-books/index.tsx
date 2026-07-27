@@ -2,6 +2,8 @@
 
 import { useTranslations } from 'next-intl'
 import React from 'react'
+
+import { ErrorAlertWithRetry } from '@/components/ui/error-alert'
 import AddressBooksSettingsForm from './components/address-books-form'
 import LabelsFormSkeleton from './components/skeleton'
 
@@ -12,10 +14,10 @@ import {
 
 const AddressBooksSettings: React.FC = () => {
   const t = useTranslations('US_ADDRESS_BOOKS')
-  const { data, error, isFetching } = useGetUserPreferencesQuery()
+  const { data, error, isFetching, refetch } = useGetUserPreferencesQuery()
   const [updateAddressBooks] = useUpdateUserPreferencesContactMutation()
   if (error) {
-    return 'ERROR'
+    return <ErrorAlertWithRetry onRetry={() => refetch()} />
   }
   return (
     <div className="grid grid-cols-1 gap-4">

@@ -7,7 +7,6 @@ export async function POST(
   const { accountId } = await params
   const body = await req.json()
 
-  console.log(`[fakeApi] POST /mailboxes/${accountId}/discarddraft`, body)
 
   return NextResponse.json(
     {

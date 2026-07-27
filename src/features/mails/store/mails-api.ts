@@ -71,6 +71,23 @@ const getFolderMessagesQuery = ({
   return url
 }
 
+const searchMailsQuery = ({
+  accountId = '0',
+  params,
+}: {
+  accountId?: string
+  params: Record<string, string | number | boolean | undefined>
+}) => {
+  const searchParams = new URLSearchParams()
+  Object.entries(params).forEach(([key, value]) => {
+    if (value !== undefined && value !== '' && value !== false) {
+      searchParams.append(key, String(value))
+    }
+  })
+  const qs = searchParams.toString()
+  return `mailboxes/${accountId}/search${qs ? `?${qs}` : ''}`
+}
+
 const getMailQuery = ({
   accountId = '0',
   folder,
@@ -135,6 +152,24 @@ const mailActionQuery = ({
   url: `mailboxes/${accountId}/folders/${encodeURIComponent(folder)}/mails/${encodeURIComponent(mailId)}/action`,
   method: 'POST' as const,
   body: { action, data },
+})
+
+const batchMailActionQuery = ({
+  accountId = '0',
+  folder,
+  action,
+  mailUids,
+  data,
+}: {
+  accountId?: string
+  folder: string
+  action: 'delete' | 'move' | 'spam' | 'ham' | 'tag' | 'untag' | 'copy'
+  mailUids: number[] | string[]
+  data?: string | string[] | null
+}) => ({
+  url: `mailboxes/${accountId}/folders/${encodeURIComponent(folder)}/mails/batch-action`,
+  method: 'POST' as const,
+  body: { action, mail_uids: mailUids, data },
 })
 
 const injectedEndpoints = apiSlice.injectEndpoints({
@@ -618,6 +653,35 @@ const injectedEndpoints = apiSlice.injectEndpoints({
       },
     }),
 
+    searchMails: builder.query<
+      ImapMessagesBackendResponse,
+      {
+        accountId?: string
+        params: Record<string, string | number | boolean | undefined>
+      }
+    >({
+      keepUnusedDataFor: 30,
+      query: searchMailsQuery,
+      transformResponse: transformFolderMessagesResponse,
+    }),
+
+    batchMailAction: builder.mutation<
+      { processed_ids?: number[]; failed_ids?: Array<{ uid: number; error: string }>; action: string },
+      {
+        accountId?: string
+        folder: string
+        action: 'delete' | 'move' | 'spam' | 'ham' | 'tag' | 'untag' | 'copy'
+        mailUids: number[] | string[]
+        data?: string | string[] | null
+      }
+    >({
+      query: batchMailActionQuery,
+      invalidatesTags: (_result, _error, { folder }) => [
+        { type: FOLDER_MESSAGES_SLICE, folder },
+        MAILS_FOLDERS_SLICE,
+      ],
+    }),
+
     exportFolder: builder.mutation<
       { job_id?: string },
       { accountId: string; folderPath: string }
@@ -733,6 +797,9 @@ export const {
   useSetFolderTypeMutation,
   useMoveFolderMutation,
   useExportFolderMutation,
+  useBatchMailActionMutation,
+  useSearchMailsQuery,
+  useLazySearchMailsQuery,
 } = injectedEndpoints
 
 export const mailsApiEndpoints = injectedEndpoints
@@ -742,5 +809,6 @@ export {
   getFoldersQuery,
   getMailQuery,
   mailActionQuery,
+  batchMailActionQuery,
   moveToTrashQuery,
 }

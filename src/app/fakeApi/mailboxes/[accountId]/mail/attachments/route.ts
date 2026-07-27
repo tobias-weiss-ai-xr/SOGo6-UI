@@ -21,15 +21,6 @@ export async function POST(
       )
     }
 
-    console.log(
-      `[fakeApi] POST /mailboxes/${accountId}/mail/attachments`,
-      {
-        filename: file.name,
-        size: file.size,
-        type: file.type,
-      }
-    )
-
     // Generate a mock key and return filename
     const mockKey = `${Date.now()}${Math.random().toString(36).substr(2, 9)}`
 

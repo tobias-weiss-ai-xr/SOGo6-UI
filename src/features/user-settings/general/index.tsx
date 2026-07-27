@@ -1,5 +1,6 @@
 'use client'
 
+import { ErrorAlertWithRetry } from '@/components/ui/error-alert'
 import { PageLoader } from '@/components/lazy-components'
 import { useTranslations } from 'next-intl'
 import React from 'react'
@@ -18,11 +19,11 @@ import {
 
 const GeneralSettings: React.FC = () => {
   const t = useTranslations('US_GENERAL')
-  const { data, error, isFetching } = useGetUserPreferencesQuery()
+  const { data, error, isFetching, refetch } = useGetUserPreferencesQuery()
   const [updateData] = useUpdateUserPreferencesGeneralMutation()
 
   if (error) {
-    return 'ERROR'
+    return <ErrorAlertWithRetry onRetry={() => refetch()} />
   }
   return (
     <div className="grid grid-cols-1 gap-4">

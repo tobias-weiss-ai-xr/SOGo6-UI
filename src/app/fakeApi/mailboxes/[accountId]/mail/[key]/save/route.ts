@@ -9,7 +9,6 @@ export async function PUT(
   const body = await req.json()
   const close = new URL(req.url).searchParams.get('close') === 'true'
 
-  console.log(
     `[fakeApi] PUT /mailboxes/${accountId}/mail/${key}/save${close ? '?close=true' : ''}`,
     body
   )

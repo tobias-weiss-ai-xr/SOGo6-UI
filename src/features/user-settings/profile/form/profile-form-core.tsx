@@ -43,7 +43,6 @@ const ProfileFormCore = () => {
   const schema = createProfileSchema(t, formT, uiConfig)
 
   // Default values from API
-  // TODO get data (uid,mail,cn...) from API when available
   const defaultValues: ProfileFormData = {
     uid: user?.uid,
     mail: user?.email,

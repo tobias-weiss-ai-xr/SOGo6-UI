@@ -39,9 +39,24 @@ export const profileApi = apiSlice.injectEndpoints({
       // Cache 5 minutes (profile changes rarely)
       keepUnusedDataFor: 300,
     }),
+
+    /**
+     * POST /profile/password
+     * Changes the authenticated user's password.
+     */
+    changePassword: builder.mutation<
+      { changed: boolean },
+      { current_password: string; new_password: string }
+    >({
+      query: (body) => ({
+        url: 'profile/password',
+        method: 'POST',
+        body,
+      }),
+    }),
   }),
   overrideExisting: false,
 })
 
 // Export auto-generated hooks
-export const { useGetUserProfileQuery } = profileApi
+export const { useGetUserProfileQuery, useChangePasswordMutation } = profileApi

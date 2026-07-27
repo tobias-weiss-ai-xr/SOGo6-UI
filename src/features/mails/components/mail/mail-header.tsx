@@ -102,7 +102,7 @@ export default function MailHeader({
           )}
         </div>
         {/* CC */}
-        {cc?.length > 0 && (
+        {(cc?.length ?? 0) > 0 && (
           <div className="flex flex-wrap items-center gap-2">
             <span className="text-base font-bold">Cc</span>
             {displayedCc.map((contact, idx) => (

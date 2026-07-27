@@ -7,7 +7,6 @@ export async function GET(
 ) {
   try {
     const { accountId } = await params
-    console.log(`[fakeApi] GET /mailboxes/${accountId}/mail/current`)
 
     return NextResponse.json(
       {

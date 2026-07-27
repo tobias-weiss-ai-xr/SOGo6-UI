@@ -250,6 +250,30 @@ export interface FreeBusyApiResponse {
   error_msg?: string | null
 }
 
+/**
+ * A single calendar share entry.
+ */
+export type CalendarShare = {
+  user_uid: string
+  public_level: string
+  confidential_level: string
+  private_level: string
+  can_create: boolean
+  can_delete: boolean
+}
+
+/**
+ * POST body for /calendars/<key>/shares
+ */
+export type CalendarShareCreateBody = {
+  user_uid: string
+  public_level?: string
+  confidential_level?: string
+  private_level?: string
+  can_create?: boolean
+  can_delete?: boolean
+}
+
 /** Request body sent to the backend (FreeBusyRequestSchema) */
 export interface FreeBusyRequest {
   target_uids: string[] // participant emails / uids

@@ -146,23 +146,23 @@ describe('calendar-utils', () => {
       })
     })
 
-    describe('reminder fields: non-sentinel uses journalDefaultReminder', () => {
-      it('uses journalDefaultReminder for SOGO_U_EVENT_DEFAULT_REMINDER when eventDefaultReminder is not "-1"', () => {
+    describe('reminder fields: non-sentinel uses the correct field', () => {
+      it('uses eventDefaultReminder for SOGO_U_EVENT_DEFAULT_REMINDER when eventDefaultReminder is not "-1"', () => {
         const settings = makeGeneralSettings({
           eventDefaultReminder: '15',
           journalDefaultReminder: '30',
         })
         const result = calendarGeneralToApi(settings)
-        expect(result.SOGO_U_EVENT_DEFAULT_REMINDER).toBe('30')
+        expect(result.SOGO_U_EVENT_DEFAULT_REMINDER).toBe('15')
       })
 
-      it('uses journalDefaultReminder for SOGO_U_TASK_DEFAULT_REMINDER when taskDefaultReminder is not "-1"', () => {
+      it('uses taskDefaultReminder for SOGO_U_TASK_DEFAULT_REMINDER when taskDefaultReminder is not "-1"', () => {
         const settings = makeGeneralSettings({
           taskDefaultReminder: '10',
           journalDefaultReminder: '45',
         })
         const result = calendarGeneralToApi(settings)
-        expect(result.SOGO_U_TASK_DEFAULT_REMINDER).toBe('45')
+        expect(result.SOGO_U_TASK_DEFAULT_REMINDER).toBe('10')
       })
 
       it('uses journalDefaultReminder for SOGO_U_JOURNAL_DEFAULT_REMINDER when journalDefaultReminder is not "-1"', () => {

@@ -126,7 +126,7 @@ const CollapsibleArrayItem: React.FC<{
               disabled={isDeleteDisabled}
               title={
                 isDeleteDisabled
-                  ? t('impossible-to-delete-at-least-one-instance-required') //TODO: trad
+                  ? t('impossible-to-delete-at-least-one-instance-required') 
                   : undefined
               }
             >

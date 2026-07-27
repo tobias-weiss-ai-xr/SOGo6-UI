@@ -10,6 +10,7 @@ import {
   ShieldUser,
   User,
   UserCog,
+  BookOpen,
 } from 'lucide-react'
 import { useMemo } from 'react'
 
@@ -120,6 +121,11 @@ export function useNavItems(): NavItem[] {
                 url: '/user_settings/mail/notifications',
               }),
             ],
+          },
+          {
+            title: 'US_SIDEBAR.settings.api_docs.string',
+            url: '/swagger-basic',
+            icon: BookOpen,
           },
         ],
       },

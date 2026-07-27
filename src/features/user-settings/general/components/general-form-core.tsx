@@ -71,9 +71,11 @@ export function GeneralSettingsForm({ data, update }: Props) {
   return (
     <Form {...form}>
       <form
-        onSubmit={form.handleSubmit(onSubmit, (err) =>
-          console.log('errors sbmit', err)
-        )}
+        onSubmit={form.handleSubmit(onSubmit, (err) => {
+          if (process.env.NODE_ENV === 'development') {
+            console.warn('form validation errors', err)
+          }
+        })}
       >
         <div className="grid gap-4 space-y-5">
           <div className="grid grid-cols-2 gap-4 space-x-10">

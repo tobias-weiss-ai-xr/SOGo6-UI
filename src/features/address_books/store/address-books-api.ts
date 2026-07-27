@@ -11,6 +11,9 @@ import type { BaseQueryFn } from '@reduxjs/toolkit/query'
 import { EndpointBuilder } from '@reduxjs/toolkit/query'
 import type {
   ApiDistributionList,
+  ApiAddressBookShare,
+  ApiAddressBookShareCreateBody,
+  ApiAddressBookSharesData,
   BookEntriesQueryParams,
   BookEntriesResponse,
   ContactSuggestion,
@@ -41,6 +44,8 @@ import {
   addressBookListsImportPath,
   addressBookListsPath,
   addressBookPath,
+  addressBookSharePath,
+  addressBookSharesPath,
   addressBooksCollectionPath,
   allContactsPath,
   buildListQueryParams,
@@ -855,6 +860,43 @@ const injectedEndpoints = apiSlice.injectEndpoints({
         job_id: unwrapJobId(response),
       }),
     }),
+
+    listAddressBookShares: builder.query<
+      ApiAddressBookSharesData,
+      string
+    >({
+      query: (key) => addressBookSharesPath(key),
+      providesTags: (result, error, key) => [
+        { type: ADDRESS_BOOKS_SLICE, id: `shares:${key}` },
+      ],
+    }),
+
+    addAddressBookShare: builder.mutation<
+      ApiAddressBookShare,
+      { key: string; body: ApiAddressBookShareCreateBody }
+    >({
+      query: ({ key, body }) => ({
+        url: addressBookSharesPath(key),
+        method: 'POST',
+        body,
+      }),
+      invalidatesTags: (result, error, { key }) => [
+        { type: ADDRESS_BOOKS_SLICE, id: `shares:${key}` },
+      ],
+    }),
+
+    removeAddressBookShare: builder.mutation<
+      void,
+      { key: string; userUid: string }
+    >({
+      query: ({ key, userUid }) => ({
+        url: addressBookSharePath(key, userUid),
+        method: 'DELETE',
+      }),
+      invalidatesTags: (result, error, { key }) => [
+        { type: ADDRESS_BOOKS_SLICE, id: `shares:${key}` },
+      ],
+    }),
   }),
   overrideExisting: false,
 })
@@ -879,6 +921,9 @@ export const {
   useExportAddressBookDocumentMutation,
   useExportContactDocumentMutation,
   useExportListDocumentMutation,
+  useListAddressBookSharesQuery,
+  useAddAddressBookShareMutation,
+  useRemoveAddressBookShareMutation,
 } = injectedEndpoints
 
 export const addressBooksApiEndpoints = injectedEndpoints

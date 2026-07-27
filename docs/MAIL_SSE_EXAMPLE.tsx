@@ -1,3 +1,4 @@
+// @ts-nocheck — Documentation example file, not compiled as part of the app
 /**
  * Example: Real-time Mail List with SSE Integration
  *

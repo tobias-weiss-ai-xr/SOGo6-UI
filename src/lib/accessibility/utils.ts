@@ -5,7 +5,7 @@
  * including focus management, keyboard navigation, and ARIA helpers.
  */
 
-import { A11Y_CONFIG, ARIA_ATTRIBUTES, ARIA_LIVE_REGIONS, FOCUS_TRAP, KEYBOARD_KEYS, SR_ONLY_CLASS } from './constants';
+import { A11Y_CONFIG, ARIA_ATTRIBUTES, ARIA_LIVE_REGIONS, ARIA_ROLES, FOCUS_TRAP, KEYBOARD_KEYS, SR_ONLY_CLASS } from './constants';
 
 /**
  * Get all focusable elements within a container
@@ -386,7 +386,7 @@ export function getFocusOutlineStyle(): React.CSSProperties {
 /**
  * Global keyboard event listener for shortcuts
  */
-let globalKeyboardListeners: Map<string, () => void> = new Map();
+let globalKeyboardListeners: Map<string, EventListener> = new Map();
 
 export function addKeyboardShortcut(
   keyCombination: string,
@@ -395,11 +395,12 @@ export function addKeyboardShortcut(
   // Parse key combination (e.g., "Ctrl+K", "Meta+Shift+F")
   const [modifier, key] = keyCombination.split('+').map(k => k.trim());
   
-  const handler = (event: KeyboardEvent) => {
+  const handler: EventListener = (event) => {
+    const kbEvent = event as KeyboardEvent;
     const modifierKey = getModifierKey(modifier);
-    if (modifierKey && !event[modifierKey]) return;
-    if (event.key === key && !isInputElement(event.target as HTMLElement)) {
-      event.preventDefault();
+    if (modifierKey && !(kbEvent as any)[modifierKey]) return;
+    if (kbEvent.key === key && !isInputElement(kbEvent.target as HTMLElement)) {
+      kbEvent.preventDefault();
       callback();
     }
   };

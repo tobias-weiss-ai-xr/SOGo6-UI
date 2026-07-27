@@ -3,7 +3,7 @@ import { BaseQueryFn, EndpointBuilder } from '@reduxjs/toolkit/query'
 
 const injectedEndpoints = apiSlice.injectEndpoints({
   endpoints: (builder: EndpointBuilder<BaseQueryFn, string, 'api'>) => ({
-    getThemes: builder.query<CSSStyleSheet, void>({
+    getThemes: builder.query<string, void>({
       query: () => 'customization/themes',
     }),
   }),

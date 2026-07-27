@@ -37,7 +37,6 @@ export async function DELETE(
   { params }: { params: Promise<{ accountId: string; key: string }> }
 ) {
   const { accountId, key } = await params
-  console.log(`[fakeApi] DELETE /mailboxes/${accountId}/mail/${key}`)
 
   return NextResponse.json(
     {

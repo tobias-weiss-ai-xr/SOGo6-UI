@@ -33,19 +33,24 @@ interface Props {
   update: (data: UserCalendarGeneral) => void
 }
 
+import { useGetCalendarsQuery } from '@/features/calendars/store/calendars-api'
 import { EmailsTagInput } from '@/components/ui/emails-tag-input'
 
 import { MultiSelect } from '@/components/ui/combomultiple'
 
-const calendarDefaultOptions = [
-  // //TODO: fetch calendar list from API instead of hardcoding these values
-  { value: 'SOGO_DEFAULT_CALENDAR', label: 'Default calendar' },
-  { value: 'SOGO_BIRTHDAY_CALENDAR', label: 'Birthday calendar' },
-  { value: 'SOGO_ANNIVERSARY_CALENDAR', label: 'Anniversary calendar' },
-]
-
 const LabelsForm: React.FC<Props> = ({ data, update }) => {
   const t = useTranslations('US_CALENDARS')
+
+  const { data: calendars = [] } = useGetCalendarsQuery()
+
+  const calendarDefaultOptions = useMemo(
+    () =>
+      calendars.map((cal) => ({
+        value: cal.key ?? cal.name,
+        label: cal.name,
+      })),
+    [calendars]
+  )
 
   const calendarDaysShowedOptions = useMemo(
     () =>
@@ -305,7 +310,6 @@ const LabelsForm: React.FC<Props> = ({ data, update }) => {
           />
         </div>
 
-        {/* //TODO */}
         <div className="grid gap-4 p-4 lg:grid-cols-3 lg:space-x-10">
           <FormField
             control={form.control}

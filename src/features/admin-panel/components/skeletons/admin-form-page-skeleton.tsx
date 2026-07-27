@@ -2,7 +2,7 @@ import { Skeleton } from '@/components/ui/skeleton'
 
 const ROWS = 16
 
-//TODO: A refaire quand on aura les formulaires dynamiques
+{/* Temporary skeleton — will be replaced when dynamic forms are ready */}
 export default function DomainsPageSkeleton() {
   return (
     <div className="flex h-full w-full flex-col">

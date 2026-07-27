@@ -1,5 +1,6 @@
 'use client'
 
+import { ErrorAlertWithRetry } from '@/components/ui/error-alert'
 import { PageLoader } from '@/components/lazy-components'
 import {
   useGetUserPreferencesQuery,
@@ -11,11 +12,10 @@ import MailGeneralSettingsForm from './components/mail-general-form'
 
 const MailGeneralSettings: React.FC = () => {
   const t = useTranslations('US_MAIL_GENERAL')
-  const { data, error, isFetching } = useGetUserPreferencesQuery()
+  const { data, error, isFetching, refetch } = useGetUserPreferencesQuery()
   const [updateData] = useUpdateUserPreferencesMailGeneralMutation()
   if (error) {
-    console.log(error)
-    return 'ERROR'
+    return <ErrorAlertWithRetry onRetry={() => refetch()} />
   }
   return (
     <div className="grid grid-cols-1 gap-4">

@@ -22,6 +22,8 @@ import type {
   CalendarEventCreateBody,
   CalendarEventUpdateBody,
   CalendarEventsResponse,
+  CalendarShare,
+  CalendarShareCreateBody,
   CalendarSyncResult,
   CalendarSyncStatus,
   CalendarUpdateBody,
@@ -46,6 +48,10 @@ const externalCalendarSyncUrl = (key: string) =>
 const calendarEventsUrl = (key: string) =>
   `calendars/${encodeURIComponent(key)}/events`
 const eventUrl = (eventKey: string) => `events/${encodeURIComponent(eventKey)}`
+const calendarSharesUrl = (key: string) =>
+  `calendars/${encodeURIComponent(key)}/shares`
+const calendarShareUrl = (key: string, userUid: string) =>
+  `calendars/${encodeURIComponent(key)}/shares/${encodeURIComponent(userUid)}`
 
 const createCalendarNotifyMutation =
   (options: {
@@ -760,6 +766,65 @@ const injectedEndpoints = apiSlice.injectEndpoints({
         }
       },
     }),
+
+    // === Calendar Sharing ===
+
+    /**
+     * List all shares for a calendar.
+     */
+    listShares: builder.query<
+      CalendarShare[],
+      string
+    >({
+      query: (key) => ({
+        url: calendarSharesUrl(key),
+        method: 'GET',
+      }),
+      transformResponse: (
+        response: ApiDataResponse<{ shares: CalendarShare[]; total_count: number }>,
+      ) => response.data?.shares ?? [],
+      providesTags: (result, error, key) => [
+        { type: CALENDARS_SLICE, id: `shares:${key}` },
+      ],
+    }),
+
+    /**
+     * Add a share to a calendar.
+     */
+    addShare: builder.mutation<
+      CalendarShare,
+      { key: string; body: CalendarShareCreateBody }
+    >({
+      query: ({ key, body }) => ({
+        url: calendarSharesUrl(key),
+        method: 'POST',
+        body,
+      }),
+      transformResponse: (
+        response: ApiDataResponse<CalendarShare>,
+      ) => response.data!,
+      invalidatesTags: (result, error, { key }) => [
+        { type: CALENDARS_SLICE, id: `shares:${key}` },
+        CALENDARS_SLICE,
+      ],
+    }),
+
+    /**
+     * Remove a share from a calendar.
+     */
+    removeShare: builder.mutation<
+      void,
+      { key: string; userUid: string }
+    >({
+      query: ({ key, userUid }) => ({
+        url: calendarShareUrl(key, userUid),
+        method: 'DELETE',
+      }),
+      invalidatesTags: (result, error, { key }) => [
+        { type: CALENDARS_SLICE, id: `shares:${key}` },
+        CALENDARS_SLICE,
+      ],
+    }),
   }),
   overrideExisting: false,
 })
@@ -787,6 +852,9 @@ export const {
   useDeleteExternalCalendarMutation,
   useTriggerSyncMutation,
   useGetSyncStatusQuery,
+  useListSharesQuery,
+  useAddShareMutation,
+  useRemoveShareMutation,
 } = injectedEndpoints
 
 export const calendarsApiEndpoints = injectedEndpoints

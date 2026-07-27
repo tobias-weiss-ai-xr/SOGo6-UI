@@ -70,6 +70,52 @@
                 "string": "Download iOS - MacOS configuration profile"
             }
         },
+        "sharing": {
+            "title": {
+                "string": "Address Book Sharing"
+            },
+            "description": {
+                "string": "Share this address book with other users. Shared users can view or modify contacts based on the permission level you grant."
+            },
+            "addUser": {
+                "string": "Add User"
+            },
+            "searchPlaceholder": {
+                "string": "Enter user email..."
+            },
+            "addButton": {
+                "string": "Share"
+            },
+            "added": {
+                "string": "Address book shared successfully"
+            },
+            "addError": {
+                "string": "Failed to share address book"
+            },
+            "removed": {
+                "string": "Share removed successfully"
+            },
+            "removeError": {
+                "string": "Failed to remove share"
+            },
+            "removeButton": {
+                "string": "Remove"
+            },
+            "existingShares": {
+                "string": "Shared with"
+            },
+            "noShares": {
+                "string": "This address book is not shared with anyone yet."
+            },
+            "table": {
+                "user": {
+                    "string": "User"
+                },
+                "level": {
+                    "string": "Permission Level"
+                }
+            }
+        },
         "all_contacts": {
             "string": "All contacts",
             "context": "Sidebar entry for cross-address-book contact listing"

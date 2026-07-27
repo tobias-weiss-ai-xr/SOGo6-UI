@@ -45,6 +45,12 @@ export const addressBookContactExportPath = (
 export const addressBookListExportPath = (bookKey: string, listKey: string) =>
   `${addressBookListPath(bookKey, listKey)}/export`
 
+export const addressBookSharesPath = (key: string) =>
+  `${addressBookPath(key)}/shares`
+
+export const addressBookSharePath = (bookKey: string, userUid: string) =>
+  `${addressBookSharesPath(bookKey)}/${encodeURIComponent(userUid)}`
+
 export const legacyAddressBookEntriesPath = (bookId: string) =>
   `address_books/${encodeURIComponent(bookId)}`
 

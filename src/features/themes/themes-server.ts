@@ -10,7 +10,7 @@ export async function getThemesServer(): Promise<string | null> {
       (process.env.NODE_ENV === 'production' ? 'https' : 'http')
 
     const response = await fetch(
-      `${protocol}://${host}/fakeApi/customization/themes`,
+      `${protocol}://${host}/api/user/v1/customization/themes`,
       {
         cache: 'force-cache', // Cache the themes data
       }

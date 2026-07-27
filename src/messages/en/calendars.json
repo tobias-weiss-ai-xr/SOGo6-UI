@@ -923,6 +923,55 @@
           "string": "Cancel"
         }
       }
+    },
+    "share": {
+      "title": {
+        "string": "Calendar Sharing"
+      },
+      "description": {
+        "string": "Share this calendar with other users. Shared users can see events based on the permission level you grant."
+      },
+      "addUser": {
+        "string": "Add User"
+      },
+      "searchPlaceholder": {
+        "string": "Search by name or email..."
+      },
+      "addButton": {
+        "string": "Share"
+      },
+      "added": {
+        "string": "Calendar shared successfully"
+      },
+      "addError": {
+        "string": "Failed to share calendar"
+      },
+      "removed": {
+        "string": "Share removed successfully"
+      },
+      "removeError": {
+        "string": "Failed to remove share"
+      },
+      "removeButton": {
+        "string": "Remove"
+      },
+      "existingShares": {
+        "string": "Shared with"
+      },
+      "noShares": {
+        "string": "This calendar is not shared with anyone yet."
+      },
+      "table": {
+        "user": {
+          "string": "User"
+        },
+        "level": {
+          "string": "Permission Level"
+        },
+        "canCreate": {
+          "string": "Can Create"
+        }
+      }
     }
   }
 }

@@ -47,6 +47,10 @@ jest.mock('@/components/ui/form', () => ({
   ),
 }))
 
+jest.mock('@/features/calendars/store/calendars-api', () => ({
+  useGetCalendarsQuery: jest.fn(),
+}))
+
 jest.mock('@/components/ui/forms/select-form', () => {
   return function MockSelectForm({ value, onValueChange, options }: any) {
     return (
@@ -161,6 +165,15 @@ const mockData = {
 
 beforeEach(() => {
   jest.clearAllMocks()
+
+  const mockUseGetCalendarsQuery = require('@/features/calendars/store/calendars-api').useGetCalendarsQuery
+  mockUseGetCalendarsQuery.mockReturnValue({
+    data: [
+      { key: 'cal1', name: 'Personal' },
+      { key: 'cal2', name: 'Work' },
+    ],
+  })
+
   ;(useTranslations as jest.Mock).mockImplementation((namespace: string) => {
     const translations: Record<string, Record<string, string>> = {
       US_CALENDARS: {

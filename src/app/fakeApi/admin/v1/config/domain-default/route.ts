@@ -3,10 +3,6 @@ import domainDefault from '../../../domainDefault.json'
 export async function PATCH(request: Request) {
   try {
     const body = await request.json()
-    console.log('PATCH /admin/v1/config/domain-default body:', body)
-    console.log(
-      'PATCH /admin/v1/config/domain-default body:',
-      JSON.stringify(body, null, 2)
     )
 
     // Expecting { customDomainId, config } — store/merge as simple behavior

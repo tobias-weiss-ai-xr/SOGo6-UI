@@ -56,9 +56,11 @@ export function TotpSettingsForm({ data, update }: Props) {
     <Form {...form}>
       <form
         className="rounded-md border p-4 shadow-sm"
-        onSubmit={form.handleSubmit(onSubmit, (err) =>
-          console.log('errors sbmit', err)
-        )}
+        onSubmit={form.handleSubmit(onSubmit, (err) => {
+          if (process.env.NODE_ENV === 'development') {
+            console.warn('form validation errors', err)
+          }
+        })}
       >
         <div>
           <FormField

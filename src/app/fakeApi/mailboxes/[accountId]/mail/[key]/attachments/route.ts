@@ -21,15 +21,6 @@ export async function POST(
       )
     }
 
-    console.log(
-      `[fakeApi] POST /mailboxes/${accountId}/mail/${key}/attachments`,
-      {
-        filename: file.name,
-        size: file.size,
-        type: file.type,
-      }
-    )
-
     return NextResponse.json(
       {
         data: { filename: file.name },

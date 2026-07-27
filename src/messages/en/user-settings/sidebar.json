@@ -74,6 +74,10 @@
                     "string": "Forward",
                     "context": "Link to the forward email settings in the settings sidebar"
                 }
+            },
+            "api_docs": {
+                "string": "API Documentation",
+                "context": "Link to the API documentation / Swagger UI in the settings sidebar"
             }
         }
     }

@@ -75,7 +75,6 @@ const AdminDomainFormFrame: React.FC<Props> = ({
   // onInvalid callback: useful to surface validation problems
   function handleInvalid(errors: any) {
     console.error('[AdminDomainFormFrame] validation errors:', errors)
-    alert('Validation errors: some fields are invalid.') //TODO: toast avec trad
   }
 
   const { isDirty, isSubmitting } = form.formState

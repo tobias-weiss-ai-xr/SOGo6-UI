@@ -113,7 +113,9 @@ function ExternalAccountForm({
   }
 
   if (error) {
-    console.log('Error in ExternalAccountForm:', error)
+    if (process.env.NODE_ENV === 'development') {
+      console.warn('ExternalAccountForm error:', error)
+    }
     return (
       <Card>
         <CardContent className="pt-6">

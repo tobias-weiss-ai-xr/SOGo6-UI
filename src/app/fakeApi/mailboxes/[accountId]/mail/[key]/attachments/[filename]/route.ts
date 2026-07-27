@@ -9,9 +9,6 @@ export async function GET(
   }: { params: Promise<{ accountId: string; key: string; filename: string }> }
 ) {
   const { accountId, key, filename } = await params
-  console.log(
-    `[fakeApi] GET /mailboxes/${accountId}/mail/${key}/attachments/${filename}`
-  )
 
   // Generate mock file content
   const mockContent = new TextEncoder().encode(
@@ -55,9 +52,6 @@ export async function DELETE(
   }: { params: Promise<{ accountId: string; key: string; filename: string }> }
 ) {
   const { accountId, key, filename } = await params
-  console.log(
-    `[fakeApi] DELETE /mailboxes/${accountId}/mail/${key}/attachments/${filename}`
-  )
 
   return NextResponse.json(
     {

@@ -27,9 +27,9 @@ export function calendarGeneralToApi(
     SOGO_U_TASK_DEFAULT_CLASS: value.taskDefaultClass,
     SOGO_U_JOURNAL_DEFAULT_CLASS: value.journalDefaultClass,
     SOGO_U_EVENT_DEFAULT_REMINDER:
-      value.eventDefaultReminder === '-1' ? null : value.journalDefaultReminder,
+      value.eventDefaultReminder === '-1' ? null : value.eventDefaultReminder,
     SOGO_U_TASK_DEFAULT_REMINDER:
-      value.taskDefaultReminder === '-1' ? null : value.journalDefaultReminder,
+      value.taskDefaultReminder === '-1' ? null : value.taskDefaultReminder,
     SOGO_U_JOURNAL_DEFAULT_REMINDER:
       value.journalDefaultReminder === '-1'
         ? null

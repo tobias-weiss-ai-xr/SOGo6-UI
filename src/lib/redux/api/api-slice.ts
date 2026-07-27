@@ -43,6 +43,7 @@ export const FOLDER_SHARE_SLICE = 'folder/share'
 export const USER_SEARCH_SLICE = 'user_search'
 export const CONTACTS_AUTOCOMPLETE_SLICE = 'contacts_autocomplete'
 export const JOBS_SLICE = 'jobs'
+export const WEBAUTHN_CREDENTIALS_SLICE = 'WebAuthnCredentials'
 
 // ---------------------------------------------------------------------------
 // Tag types array
@@ -85,6 +86,7 @@ const tagTypes = [
   USER_SEARCH_SLICE,
   CONTACTS_AUTOCOMPLETE_SLICE,
   JOBS_SLICE,
+  WEBAUTHN_CREDENTIALS_SLICE,
 ] as const
 
 // Cache the base URL to avoid fetching env vars on every API call
@@ -100,6 +102,12 @@ const PUBLIC_AUTH_ENDPOINTS = new Set([
   'getSystem',
   'getAuthMode',
   'login',
+  'webauthnBeginRegistration',
+  'webauthnCompleteRegistration',
+  'webauthnBeginLogin',
+  'webauthnCompleteLogin',
+  'webauthnGetCredentials',
+  'webauthnDeleteCredential',
 ])
 
 const dynamicBaseQuery: BaseQueryFn = async (args, api, extraOptions) => {
