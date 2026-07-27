@@ -145,6 +145,10 @@
                 "previous-mail": {
                     "string": "Previous mail",
                     "description": "Previous mail"
+                },
+                "snooze": {
+                    "string": "Snooze",
+                    "description": "Temporarily remove from inbox and return later"
                 }
             },
             "content": {

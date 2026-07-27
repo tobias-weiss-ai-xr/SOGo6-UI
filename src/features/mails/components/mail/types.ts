@@ -9,6 +9,7 @@ export const ActionId = {
   HAM: 'ham',
   MARK_UNREAD: 'mark-unread',
   LABEL: 'label',
+  SNOOZE: 'snooze',
   MORE: 'more',
   ARCHIVE: 'archive',
   DOWNLOAD: 'download',

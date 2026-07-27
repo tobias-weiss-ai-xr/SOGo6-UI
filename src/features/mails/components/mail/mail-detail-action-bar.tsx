@@ -7,10 +7,11 @@ import type { ImapFolderType } from '@/features/mails/mails-types'
 import { useDownloadMailMutation, useLazyGetMailRawQuery } from '@/features/mails/store/mails-api'
 import type { MailNavigationContext } from '@/features/mails/utils/mail-detail-navigation'
 import { useRouter } from '@/lib/i18n/navigation'
-import { Flame, Inbox, Mail, Tag, Trash2 } from 'lucide-react'
+import { Flame, Inbox, Mail, Tag, Trash2, Clock } from 'lucide-react'
 import { useTranslations } from 'next-intl'
 import React, { useCallback, useState } from 'react'
 import MailActionsBar from './mail-action-bar'
+import SnoozeDialog from './snooze-dialog'
 import {
   MailActionConfirmDialog,
   type MailActionConfirmVariant,
@@ -65,6 +66,7 @@ export default function MailDetailActionBar({
   const [confirmVariant, setConfirmVariant] =
     useState<MailActionConfirmVariant | null>(null)
   const [labelOpen, setLabelOpen] = useState(false)
+  const [snoozeOpen, setSnoozeOpen] = useState(false)
 
   const handleRemoved = useCallback(
     (result: { target: 'next' | 'prev' | 'list'; id?: string }) => {
@@ -172,12 +174,21 @@ export default function MailDetailActionBar({
         case ActionId.LABEL:
           if (enableLabel) setLabelOpen(true)
           break
+        case ActionId.SNOOZE:
+          setSnoozeOpen(true)
+          break
         default:
           break
       }
     },
     [isLoading, openConfirm, markUnread, enableLabel, handleFolderSpecificAction]
   )
+
+  const handleSnoozed = useCallback(() => {
+    // After snoozing, navigate back to folder list
+    const encodedFolder = encodeURIComponent(folder)
+    push(`/u/${accountId}/${encodedFolder}`)
+  }, [accountId, folder, push])
 
   const spamOrHamAction: Action = isJunk
     ? {
@@ -213,6 +224,12 @@ export default function MailDetailActionBar({
       icon: <Tag size={18} />,
       title: t('label.string'),
       disabled: isLoading || !enableLabel,
+    },
+    {
+      id: ActionId.SNOOZE,
+      icon: <Clock size={18} />,
+      title: t('snooze.string'),
+      disabled: isLoading,
     },
   ]
 
@@ -305,6 +322,15 @@ export default function MailDetailActionBar({
           isLoading={isLoading}
         />
       ) : null}
+
+      <SnoozeDialog
+        open={snoozeOpen}
+        onOpenChange={setSnoozeOpen}
+        accountId={accountId}
+        folder={folder}
+        mailIds={[mailId]}
+        onSnoozed={handleSnoozed}
+      />
     </>
   )
 }
