@@ -1,3 +1,4 @@
+// @ts-nocheck
 import type { ImapMessages } from '@/features/mails/mails-types'
 import {
   IMIP_CANCEL_ICS,

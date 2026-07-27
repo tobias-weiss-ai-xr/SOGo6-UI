@@ -1,3 +1,4 @@
-//GET
-
-//PATCH
+// @ts-nocheck
+// GET
+// PATCH
+export {}

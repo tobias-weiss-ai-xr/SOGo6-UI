@@ -1,12 +1,63 @@
 {
   "MOBILE": {
-    "title": { "string": "Mobile App Management" },
-    "description": { "string": "Manage registered devices, push notifications, and app configuration" },
-    "errors": { "fail": { "string": "Operation failed" } },
-    "success": { "unregister": { "string": "Device unregistered" }, "broadcast": { "string": "Push notification sent" } },
-    "config": { "title": { "string": "App Settings" }, "push": { "string": "Push Notifications" }, "biometric": { "string": "Biometric Auth" } },
-    "push": { "title": { "string": "Push Broadcast" }, "title": { "placeholder": { "string": "Notification title" } }, "message": { "placeholder": { "string": "Message..." } }, "broadcast": { "string": "Send" } },
-    "stats": { "title": { "string": "Statistics" }, "devices": { "string": "Registered Devices" } },
-    "devices": { "title": { "string": "All Devices" }, "empty": { "string": "No devices registered yet" } }
+    "title": {
+      "string": "Gestion de l'app mobile"
+    },
+    "description": {
+      "string": "Gérer les appareils enregistrés, les notifications push et la configuration de l'app"
+    },
+    "errors": {
+      "fail": {
+        "string": "Opération échouée"
+      }
+    },
+    "success": {
+      "unregister": {
+        "string": "Appareil désenregistré"
+      },
+      "broadcast": {
+        "string": "Notification push envoyée"
+      }
+    },
+    "config": {
+      "title": {
+        "string": "Paramètres de l'app"
+      },
+      "push": {
+        "string": "Notifications push"
+      },
+      "biometric": {
+        "string": "Authentification biométrique"
+      }
+    },
+    "push": {
+      "title": {
+        "string": "Diffusion push"
+      },
+      "message": {
+        "placeholder": {
+          "string": "Message..."
+        }
+      },
+      "broadcast": {
+        "string": "Envoyer"
+      }
+    },
+    "stats": {
+      "title": {
+        "string": "Statistiques"
+      },
+      "devices": {
+        "string": "Appareils enregistrés"
+      }
+    },
+    "devices": {
+      "title": {
+        "string": "Tous les appareils"
+      },
+      "empty": {
+        "string": "Aucun appareil enregistré"
+      }
+    }
   }
 }

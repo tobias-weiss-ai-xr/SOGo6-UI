@@ -1,9 +1,34 @@
 {
   "IMPORT": {
-    "title": { "string": "PST / M365 Import & Export" },
-    "description": { "string": "Import mailboxes from PST files or Microsoft 365 with progress tracking" },
-    "errors": { "fields": { "string": "Required fields missing" }, "fail": { "string": "Operation failed" } },
-    "success": { "analyze": { "string": "PST analyzed" }, "import": { "string": "Import started" } },
-    "jobs": { "title": { "string": "Import Jobs" }, "empty": { "string": "No import jobs yet" } }
+    "title": {
+      "string": "PST / M365 导入导出"
+    },
+    "description": {
+      "string": "从 PST 文件或 Microsoft 365 导入邮箱，支持进度跟踪"
+    },
+    "errors": {
+      "fields": {
+        "string": "必填字段缺失"
+      },
+      "fail": {
+        "string": "操作失败"
+      }
+    },
+    "success": {
+      "analyze": {
+        "string": "PST 分析完成"
+      },
+      "import": {
+        "string": "导入已启动"
+      }
+    },
+    "jobs": {
+      "title": {
+        "string": "导入任务"
+      },
+      "empty": {
+        "string": "暂无导入任务"
+      }
+    }
   }
 }

@@ -1,1 +1,46 @@
-{ "AI_SUMMARIZE": { "title": { "string": "Email Summarization" }, "description": { "string": "TL;DR for long email threads. Extractive summarization returns the most important sentences." }, "input": { "title": { "string": "Input Email" }, "text": { "string": "Email Text" }, "placeholder": { "string": "Paste the email body here..." }, "sentences": { "string": "Max Sentences" } }, "output": { "title": { "string": "Summary" }, "empty": { "string": "Enter text and click Summarize" } }, "summarize": { "string": "Summarize" }, "loading": { "string": "Summarizing..." }, "errors": { "empty": { "string": "Enter text to summarize" }, "fail": { "string": "Summarization failed" } } }}
+{
+  "AI_SUMMARIZE": {
+    "title": {
+      "string": "邮件摘要"
+    },
+    "description": {
+      "string": "基于句子评分的提取式摘要"
+    },
+    "input": {
+      "title": {
+        "string": "输入"
+      },
+      "text": {
+        "string": "邮件文本"
+      },
+      "sentences": {
+        "string": "句数"
+      },
+      "placeholder": {
+        "string": "在此粘贴邮件文本..."
+      }
+    },
+    "output": {
+      "title": {
+        "string": "摘要"
+      },
+      "empty": {
+        "string": "摘要将在此显示"
+      }
+    },
+    "summarize": {
+      "string": "生成摘要"
+    },
+    "loading": {
+      "string": "正在摘要..."
+    },
+    "errors": {
+      "empty": {
+        "string": "请输入文本"
+      },
+      "fail": {
+        "string": "操作失败"
+      }
+    }
+  }
+}

@@ -1,9 +1,34 @@
 {
   "IMPORT": {
-    "title": { "string": "PST / M365 Import & Export" },
-    "description": { "string": "Import mailboxes from PST files or Microsoft 365 with progress tracking" },
-    "errors": { "fields": { "string": "Required fields missing" }, "fail": { "string": "Operation failed" } },
-    "success": { "analyze": { "string": "PST analyzed" }, "import": { "string": "Import started" } },
-    "jobs": { "title": { "string": "Import Jobs" }, "empty": { "string": "No import jobs yet" } }
+    "title": {
+      "string": "Importación/Exportación PST/M365"
+    },
+    "description": {
+      "string": "Importar buzones desde archivos PST o Microsoft 365 con seguimiento de progreso"
+    },
+    "errors": {
+      "fields": {
+        "string": "Campos obligatorios faltantes"
+      },
+      "fail": {
+        "string": "Operación fallida"
+      }
+    },
+    "success": {
+      "analyze": {
+        "string": "PST analizado"
+      },
+      "import": {
+        "string": "Importación iniciada"
+      }
+    },
+    "jobs": {
+      "title": {
+        "string": "Trabajos de importación"
+      },
+      "empty": {
+        "string": "Sin trabajos de importación"
+      }
+    }
   }
 }

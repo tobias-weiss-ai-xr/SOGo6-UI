@@ -1,24 +1,50 @@
 {
   "SCIM": {
-    "title": { "string": "SCIM Provisioning" },
-    "description": { "string": "SCIM 2.0 identity lifecycle management for Azure AD, Okta, and other IdPs" },
+    "title": {
+      "string": "Provisionnement SCIM"
+    },
+    "description": {
+      "string": "Gestion du cycle de vie des identités SCIM 2.0 pour Azure AD, Okta et autres IdPs"
+    },
     "errors": {
-      "email": { "string": "Email is required" },
-      "fail": { "string": "Operation failed" }
+      "email": {
+        "string": "E-mail requis"
+      },
+      "fail": {
+        "string": "Opération échouée"
+      }
     },
     "success": {
-      "create": { "string": "User provisioned successfully" },
-      "delete": { "string": "User deprovisioned" }
+      "create": {
+        "string": "Utilisateur provisionné"
+      },
+      "delete": {
+        "string": "Utilisateur supprimé"
+      }
     },
     "field": {
-      "email": { "string": "Username/Email" },
-      "name": { "string": "Display Name" },
-      "status": { "string": "Status" }
+      "email": {
+        "string": "Nom d'utilisateur/E-mail"
+      },
+      "name": {
+        "string": "Nom d'affichage"
+      },
+      "status": {
+        "string": "Statut"
+      }
     },
-    "button": { "provision": { "string": "Provision User" } },
+    "button": {
+      "provision": {
+        "string": "Provisionner l'utilisateur"
+      }
+    },
     "users": {
-      "title": { "string": "Provisioned Users" },
-      "empty": { "string": "No SCIM users provisioned yet" }
+      "title": {
+        "string": "Utilisateurs provisionnés"
+      },
+      "empty": {
+        "string": "Aucun utilisateur SCIM"
+      }
     }
   }
 }

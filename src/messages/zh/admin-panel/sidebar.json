@@ -136,34 +136,34 @@
       "string": "Resources"
     },
     "scim": {
-      "string": "SCIM Provisioning"
+      "string": "SCIM 配置"
     },
     "student_groups": {
-      "string": "Student Groups"
+      "string": "学生分组管理"
     },
     "hipaa": {
-      "string": "HIPAA Compliance"
+      "string": "HIPAA 合规模式"
     },
     "eidas": {
-      "string": "eIDAS Signatures"
+      "string": "eIDAS 签名"
     },
     "donor": {
-      "string": "Donor Management"
+      "string": "捐赠者管理"
     },
     "volunteer": {
-      "string": "Volunteer Scheduling"
+      "string": "志愿者排班"
     },
     "import": {
-      "string": "Import/Export"
+      "string": "导入/导出"
     },
     "matrix": {
-      "string": "Matrix Chat"
+      "string": "Matrix 聊天"
     },
     "protocols": {
       "string": "JMAP / ActiveSync"
     },
     "mobile": {
-      "string": "Mobile App"
+      "string": "移动应用"
     }
   }
 }

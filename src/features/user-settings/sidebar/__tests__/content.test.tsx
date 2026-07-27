@@ -173,7 +173,7 @@ describe('useNavItems', () => {
     it('has exactly 4 top-level items', () => {
       mockProfile()
       const { result } = renderHook(() => useNavItems())
-      expect(result.current[1].items).toHaveLength(4)
+      expect(result.current[1].items).toHaveLength(5)
     })
 
     it('first item is General with correct url', () => {

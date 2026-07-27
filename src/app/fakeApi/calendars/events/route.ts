@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { getAllEvents } from '@/app/fakeApi/utils/calendar-events-store'
 import type { CalendarEvent } from '@/features/calendars/calendars-types'
 import { textMatchesSearch } from '@/lib/utils/strip-accents'

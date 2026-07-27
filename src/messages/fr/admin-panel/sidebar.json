@@ -136,34 +136,34 @@
       "string": "Resources"
     },
     "scim": {
-      "string": "SCIM Provisioning"
+      "string": "Provisionnement SCIM"
     },
     "student_groups": {
-      "string": "Student Groups"
+      "string": "Groupes d'étudiants"
     },
     "hipaa": {
-      "string": "HIPAA Compliance"
+      "string": "Conformité HIPAA"
     },
     "eidas": {
-      "string": "eIDAS Signatures"
+      "string": "Signatures eIDAS"
     },
     "donor": {
-      "string": "Donor Management"
+      "string": "Gestion des donateurs"
     },
     "volunteer": {
-      "string": "Volunteer Scheduling"
+      "string": "Planification bénévoles"
     },
     "import": {
       "string": "Import/Export"
     },
     "matrix": {
-      "string": "Matrix Chat"
+      "string": "Chat Matrix"
     },
     "protocols": {
       "string": "JMAP / ActiveSync"
     },
     "mobile": {
-      "string": "Mobile App"
+      "string": "App Mobile"
     }
   }
 }

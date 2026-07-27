@@ -1,24 +1,50 @@
 {
   "SCIM": {
-    "title": { "string": "SCIM Provisioning" },
-    "description": { "string": "SCIM 2.0 identity lifecycle management for Azure AD, Okta, and other IdPs" },
+    "title": {
+      "string": "SCIM 配置管理"
+    },
+    "description": {
+      "string": "面向 Azure AD、Okta 等身份提供商的 SCIM 2.0 身份生命周期管理"
+    },
     "errors": {
-      "email": { "string": "Email is required" },
-      "fail": { "string": "Operation failed" }
+      "email": {
+        "string": "邮箱必填"
+      },
+      "fail": {
+        "string": "操作失败"
+      }
     },
     "success": {
-      "create": { "string": "User provisioned successfully" },
-      "delete": { "string": "User deprovisioned" }
+      "create": {
+        "string": "用户已配置"
+      },
+      "delete": {
+        "string": "用户已移除"
+      }
     },
     "field": {
-      "email": { "string": "Username/Email" },
-      "name": { "string": "Display Name" },
-      "status": { "string": "Status" }
+      "email": {
+        "string": "用户名/邮箱"
+      },
+      "name": {
+        "string": "显示名称"
+      },
+      "status": {
+        "string": "状态"
+      }
     },
-    "button": { "provision": { "string": "Provision User" } },
+    "button": {
+      "provision": {
+        "string": "配置用户"
+      }
+    },
     "users": {
-      "title": { "string": "Provisioned Users" },
-      "empty": { "string": "No SCIM users provisioned yet" }
+      "title": {
+        "string": "已配置用户"
+      },
+      "empty": {
+        "string": "暂无 SCIM 用户"
+      }
     }
   }
 }

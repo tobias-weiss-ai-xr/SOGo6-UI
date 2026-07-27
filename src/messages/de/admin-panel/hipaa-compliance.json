@@ -1,33 +1,82 @@
 {
   "HIPAA": {
-    "title": { "string": "HIPAA Compliance Mode" },
-    "description": { "string": "Healthcare-grade compliance with PHI detection, encryption, and audit trails" },
-    "errors": { "fail": { "string": "Operation failed" }, "email": { "string": "Email required" } },
+    "title": {
+      "string": "HIPAA-Konformitätsmodus"
+    },
+    "description": {
+      "string": "Gesundheitskonforme Konformität mit PHI-Erkennung, Verschlüsselung und Überwachungsprotokollen"
+    },
+    "errors": {
+      "fail": {
+        "string": "Vorgang fehlgeschlagen"
+      },
+      "email": {
+        "string": "E-Mail erforderlich"
+      }
+    },
     "config": {
-      "title": { "string": "Compliance Settings" },
-      "enabled": { "string": "HIPAA Mode" },
-      "encryption": { "string": "Encryption at Rest" },
-      "audit": { "string": "Audit Trail" },
-      "phi_detection": { "string": "PHI Detection" },
-      "require_reason": { "string": "Require Access Reason" },
-      "retention": { "string": "Log Retention" }
+      "title": {
+        "string": "Konformitätseinstellungen"
+      },
+      "enabled": {
+        "string": "HIPAA-Modus"
+      },
+      "encryption": {
+        "string": "Verschlüsselung"
+      },
+      "audit": {
+        "string": "Überwachungsprotokoll"
+      },
+      "phi_detection": {
+        "string": "PHI-Erkennung"
+      },
+      "require_reason": {
+        "string": "Zugriffsgrund erforderlich"
+      },
+      "retention": {
+        "string": "Aufbewahrung"
+      }
     },
     "detect": {
-      "title": { "string": "PHI Scanner" },
-      "placeholder": { "string": "Paste email or document text to scan for PHI..." },
-      "button": { "string": "Scan for PHI" },
-      "risk": { "string": "Risk Level" }
+      "title": {
+        "string": "PHI-Scanner"
+      },
+      "placeholder": {
+        "string": "E-Mail- oder Dokumenttext zum Scannen einfügen..."
+      },
+      "button": {
+        "string": "PHI scannen"
+      },
+      "risk": {
+        "string": "Risikostufe"
+      }
     },
     "audit": {
-      "title": { "string": "Access Audit Trail" },
-      "email": { "placeholder": { "string": "Email ID" } },
-      "reason": { "placeholder": { "string": "Reason (required)" } },
-      "log": { "string": "Log Access" },
-      "accessor": { "string": "Accessor" },
-      "action": { "string": "Action" },
-      "time": { "string": "Time" }
+      "title": {
+        "string": "Zugriffsüberwachung"
+      },
+      "log": {
+        "string": "Zugriff protokollieren"
+      },
+      "accessor": {
+        "string": "Zugreifer"
+      },
+      "action": {
+        "string": "Aktion"
+      },
+      "time": {
+        "string": "Zeit"
+      }
     },
-    "success": { "log": { "string": "Access logged" } },
-    "label": { "days": { "string": "days" } }
+    "success": {
+      "log": {
+        "string": "Zugriff protokolliert"
+      }
+    },
+    "label": {
+      "days": {
+        "string": "Tage"
+      }
+    }
   }
 }
