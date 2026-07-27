@@ -1001,6 +1001,178 @@ const injectedEndpoints = apiSlice.injectEndpoints({
       query: (body) => ({ url: '/api/user/v1/ai/transcripts', method: 'POST', body }),
       invalidatesTags: ['AdminTranscripts'],
     }),
+
+    // === Tier 6: #66 SCIM Provisioning ===
+    getScimUsers: builder.query<any, void>({
+      query: () => ({ url: '/scim/v2/Users', method: 'GET' }),
+    }),
+    createScimUser: builder.mutation<any, any>({
+      query: (body) => ({ url: '/scim/v2/Users', method: 'POST', body }),
+    }),
+    patchScimUser: builder.mutation<any, { userId: string; body: any }>({
+      query: ({ userId, body }) => ({ url: `/scim/v2/Users/${userId}`, method: 'PATCH', body }),
+    }),
+    deleteScimUser: builder.mutation<any, string>({
+      query: (userId) => ({ url: `/scim/v2/Users/${userId}`, method: 'DELETE' }),
+    }),
+
+    // === Tier 6: #67 Student Groups ===
+    listStudentGroups: builder.query<any, void>({
+      query: () => '/admin/student-groups/',
+    }),
+    createStudentGroup: builder.mutation<any, any>({
+      query: (body) => ({ url: '/admin/student-groups/', method: 'POST', body }),
+    }),
+    deleteStudentGroup: builder.mutation<any, string>({
+      query: (id) => ({ url: `/admin/student-groups/${id}`, method: 'DELETE' }),
+    }),
+    enrollStudents: builder.mutation<any, any>({
+      query: (body) => ({ url: '/admin/student-groups/enroll', method: 'POST', body }),
+    }),
+    dropStudents: builder.mutation<any, any>({
+      query: (body) => ({ url: '/admin/student-groups/drop', method: 'POST', body }),
+    }),
+
+    // === Tier 6: #68 HIPAA Compliance ===
+    getHipaaConfig: builder.query<any, void>({
+      query: () => '/admin/hipaa/config',
+    }),
+    setHipaaConfig: builder.mutation<any, any>({
+      query: (body) => ({ url: '/admin/hipaa/config', method: 'POST', body }),
+    }),
+    detectPhi: builder.mutation<any, any>({
+      query: (body) => ({ url: '/admin/hipaa/detect-phi', method: 'POST', body }),
+    }),
+    getHipaaAuditTrail: builder.query<any, void>({
+      query: () => '/admin/hipaa/audit-trail',
+    }),
+    logHipaaAccess: builder.mutation<any, any>({
+      query: (body) => ({ url: '/admin/hipaa/audit-trail', method: 'POST', body }),
+    }),
+
+    // === Tier 6: #69 eIDAS Signatures ===
+    signDocument: builder.mutation<any, any>({
+      query: (body) => ({ url: '/admin/eidas/sign', method: 'POST', body }),
+    }),
+    verifySignature: builder.mutation<any, any>({
+      query: (body) => ({ url: '/admin/eidas/verify', method: 'POST', body }),
+    }),
+    listEidasCertificates: builder.query<any, void>({
+      query: () => '/admin/eidas/certificates',
+    }),
+    listEidasSignatures: builder.query<any, void>({
+      query: () => '/admin/eidas/signatures',
+    }),
+
+    // === Tier 6: #70 Donor Management ===
+    listDonors: builder.query<any, void>({
+      query: () => '/admin/donors/',
+    }),
+    createDonor: builder.mutation<any, any>({
+      query: (body) => ({ url: '/admin/donors/', method: 'POST', body }),
+    }),
+    getDonor: builder.query<any, string>({
+      query: (id) => `/admin/donors/${id}`,
+    }),
+    recordDonation: builder.mutation<any, any>({
+      query: ({ id, body }) => ({ url: `/admin/donors/${id}/donate`, method: 'POST', body }),
+    }),
+    updateGdprConsent: builder.mutation<any, any>({
+      query: ({ id, body }) => ({ url: `/admin/donors/${id}/gdpr`, method: 'POST', body }),
+    }),
+
+    // === Tier 6: #71 Volunteer Scheduling ===
+    listVolunteers: builder.query<any, void>({
+      query: () => '/admin/volunteers/',
+    }),
+    createVolunteer: builder.mutation<any, any>({
+      query: (body) => ({ url: '/admin/volunteers/', method: 'POST', body }),
+    }),
+    listVolunteerShifts: builder.query<any, void>({
+      query: () => '/admin/volunteers/shifts',
+    }),
+    createVolunteerShift: builder.mutation<any, any>({
+      query: (body) => ({ url: '/admin/volunteers/shifts', method: 'POST', body }),
+    }),
+    volunteerCheckin: builder.mutation<any, string>({
+      query: (shiftId) => ({ url: `/admin/volunteers/shifts/${shiftId}/checkin`, method: 'POST' }),
+    }),
+    volunteerCheckout: builder.mutation<any, any>({
+      query: ({ shiftId, body }) => ({ url: `/admin/volunteers/shifts/${shiftId}/checkout`, method: 'POST', body }),
+    }),
+    generateCertificate: builder.mutation<any, string>({
+      query: (volId) => ({ url: `/admin/volunteers/${volId}/certificate`, method: 'POST' }),
+    }),
+
+    // === Tier 7: #72 Import/Export ===
+    analyzePst: builder.mutation<any, any>({
+      query: (body) => ({ url: '/admin/import/pst/analyze', method: 'POST', body }),
+    }),
+    startPstImport: builder.mutation<any, any>({
+      query: (body) => ({ url: '/admin/import/pst/import', method: 'POST', body }),
+    }),
+    discoverM365: builder.mutation<any, any>({
+      query: (body) => ({ url: '/admin/import/m365/discover', method: 'POST', body }),
+    }),
+    startM365Import: builder.mutation<any, any>({
+      query: (body) => ({ url: '/admin/import/m365/import', method: 'POST', body }),
+    }),
+    listImportJobs: builder.query<any, void>({
+      query: () => '/admin/import/jobs',
+    }),
+    cancelImportJob: builder.mutation<any, string>({
+      query: (jobId) => ({ url: `/admin/import/jobs/${jobId}`, method: 'DELETE' }),
+    }),
+
+    // === Tier 7: #73 Matrix Chat ===
+    getMatrixConfig: builder.query<any, void>({
+      query: () => '/admin/matrix/config',
+    }),
+    setMatrixConfig: builder.mutation<any, any>({
+      query: (body) => ({ url: '/admin/matrix/config', method: 'POST', body }),
+    }),
+    listMatrixRooms: builder.query<any, void>({
+      query: () => '/admin/matrix/rooms',
+    }),
+    createMatrixRoom: builder.mutation<any, any>({
+      query: (body) => ({ url: '/admin/matrix/rooms', method: 'POST', body }),
+    }),
+    getMatrixRoom: builder.query<any, string>({
+      query: (roomId) => `/admin/matrix/rooms/${roomId}`,
+    }),
+    sendMatrixMessage: builder.mutation<any, any>({
+      query: ({ roomId, body }) => ({ url: `/admin/matrix/rooms/${roomId}/send`, method: 'POST', body }),
+    }),
+    listMatrixLinks: builder.query<any, void>({
+      query: () => '/admin/matrix/link',
+    }),
+
+    // === Tier 7: #74 JMAP Protocol ===
+    getJmapStatus: builder.query<any, void>({
+      query: () => '/jmap/status',
+    }),
+
+    // === Tier 7: #75 ActiveSync ===
+    getActiveSyncStatus: builder.query<any, void>({
+      query: () => '/Microsoft-Server-ActiveSync/status',
+    }),
+
+    // === Tier 7: #76 Mobile App ===
+    listMobileDevices: builder.query<any, void>({
+      query: () => '/admin/mobile/devices',
+    }),
+    getMobileConfig: builder.query<any, void>({
+      query: () => '/admin/mobile/config',
+    }),
+    setMobileConfig: builder.mutation<any, any>({
+      query: (body) => ({ url: '/admin/mobile/config', method: 'POST', body }),
+    }),
+    unregisterMobileDevice: builder.mutation<any, string>({
+      query: (deviceId) => ({ url: `/admin/mobile/devices/${deviceId}`, method: 'DELETE' }),
+    }),
+    broadcastPush: builder.mutation<any, any>({
+      query: (body) => ({ url: '/admin/mobile/push/broadcast', method: 'POST', body }),
+    }),
   }),
   overrideExisting: false,
 })
@@ -1104,4 +1276,56 @@ export const {
   useAiSpamScoreMutation,
   useListTranscriptsQuery,
   useCreateTranscriptMutation,
+  // Tier 6
+  useGetScimUsersQuery,
+  useCreateScimUserMutation,
+  usePatchScimUserMutation,
+  useDeleteScimUserMutation,
+  useListStudentGroupsQuery,
+  useCreateStudentGroupMutation,
+  useDeleteStudentGroupMutation,
+  useEnrollStudentsMutation,
+  useDropStudentsMutation,
+  useGetHipaaConfigQuery,
+  useSetHipaaConfigMutation,
+  useDetectPhiMutation,
+  useGetHipaaAuditTrailQuery,
+  useLogHipaaAccessMutation,
+  useSignDocumentMutation,
+  useVerifySignatureMutation,
+  useListEidasCertificatesQuery,
+  useListEidasSignaturesQuery,
+  useListDonorsQuery,
+  useCreateDonorMutation,
+  useGetDonorQuery,
+  useRecordDonationMutation,
+  useUpdateGdprConsentMutation,
+  useListVolunteersQuery,
+  useCreateVolunteerMutation,
+  useListVolunteerShiftsQuery,
+  useCreateVolunteerShiftMutation,
+  useVolunteerCheckinMutation,
+  useVolunteerCheckoutMutation,
+  useGenerateCertificateMutation,
+  // Tier 7
+  useAnalyzePstMutation,
+  useStartPstImportMutation,
+  useDiscoverM365Mutation,
+  useStartM365ImportMutation,
+  useListImportJobsQuery,
+  useCancelImportJobMutation,
+  useGetMatrixConfigQuery,
+  useSetMatrixConfigMutation,
+  useListMatrixRoomsQuery,
+  useCreateMatrixRoomMutation,
+  useGetMatrixRoomQuery,
+  useSendMatrixMessageMutation,
+  useListMatrixLinksQuery,
+  useGetJmapStatusQuery,
+  useGetActiveSyncStatusQuery,
+  useListMobileDevicesQuery,
+  useGetMobileConfigQuery,
+  useSetMobileConfigMutation,
+  useUnregisterMobileDeviceMutation,
+  useBroadcastPushMutation,
 } = injectedEndpoints

@@ -1,4 +1,4 @@
-import { Database, Palette, Users, UserCog, BookOpen, Shield, Building2, Activity, ScrollText, HardDrive, FileUp, Bug, Palette as BrandIcon, Archive, GitBranch, ArrowRightLeft, FileCode, Webhook, Key, FileText, Cloud, CalendarDays, CalendarClock, PenLine, Share2, GitBranch as ApprovalIcon, Ticket, Building2 as CrmIcon, Workflow, Zap, CalendarRange, Sparkles, Tags, PenTool, Search, ShieldCheck, FileAudio } from 'lucide-react'
+import { Database, Palette, Users, UserCog, BookOpen, Shield, Building2, Activity, ScrollText, HardDrive, FileUp, Bug, Palette as BrandIcon, Archive, GitBranch, ArrowRightLeft, FileCode, Webhook, Key, FileText, Cloud, CalendarDays, CalendarClock, PenLine, Share2, GitBranch as ApprovalIcon, Ticket, Building2 as CrmIcon, Workflow, Zap, CalendarRange, Sparkles, Tags, PenTool, Search, ShieldCheck, FileAudio, GraduationCap, Heart, HandHelping, Upload, MessageSquare, Mail, Smartphone, Stamp, UserPlus } from 'lucide-react'
 
 const navItems = [
   {
@@ -257,6 +257,68 @@ const navItems = [
     isActive: true,
     collapsedIcon: FileAudio,
     url: '/admin_panel/ai-transcripts',
+  },
+  // Tier 6 — Vertical Markets
+  {
+    title: 'AP_SIDEBAR.scim.string',
+    isActive: true,
+    collapsedIcon: UserPlus,
+    url: '/admin_panel/scim-provisioning',
+  },
+  {
+    title: 'AP_SIDEBAR.student_groups.string',
+    isActive: true,
+    collapsedIcon: GraduationCap,
+    url: '/admin_panel/student-groups',
+  },
+  {
+    title: 'AP_SIDEBAR.hipaa.string',
+    isActive: true,
+    collapsedIcon: ShieldCheck,
+    url: '/admin_panel/hipaa-compliance',
+  },
+  {
+    title: 'AP_SIDEBAR.eidas.string',
+    isActive: true,
+    collapsedIcon: Stamp,
+    url: '/admin_panel/eidas-signatures',
+  },
+  {
+    title: 'AP_SIDEBAR.donor.string',
+    isActive: true,
+    collapsedIcon: Heart,
+    url: '/admin_panel/donor-management',
+  },
+  {
+    title: 'AP_SIDEBAR.volunteer.string',
+    isActive: true,
+    collapsedIcon: HandHelping,
+    url: '/admin_panel/volunteer-scheduling',
+  },
+  // Tier 7 — Advanced
+  {
+    title: 'AP_SIDEBAR.import.string',
+    isActive: true,
+    collapsedIcon: Upload,
+    url: '/admin_panel/import-export',
+  },
+  {
+    title: 'AP_SIDEBAR.matrix.string',
+    isActive: true,
+    collapsedIcon: MessageSquare,
+    url: '/admin_panel/matrix-chat',
+  },
+  {
+    title: 'AP_SIDEBAR.protocols.string',
+    isActive: true,
+    collapsedIcon: Mail,
+    url: '/admin_panel/protocols',
+  },
+  {
+    title: 'AP_SIDEBAR.mobile.string',
+    isActive: true,
+    collapsedIcon: Smartphone,
+    url: '/admin_panel/mobile-app',
   },
   {
     title: 'PORTAL.title.string',
