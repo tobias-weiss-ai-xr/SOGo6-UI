@@ -14,7 +14,7 @@ import { useTranslations } from 'next-intl'
 import React from 'react'
 import { setActiveDraft } from '../../store'
 import { selectDraftData } from '../../store/mail-compose-selectors'
-import { setPendingInsert, setSendAt } from '../../store/mail-compose-slice'
+import { setPendingInsert, setSendAt, updateSubject } from '../../store/mail-compose-slice'
 import { resolveComposeAccountId } from '../../utils/resolve-compose-account-id'
 import ComposeAttachmentList from './compose-attachment-list'
 import CustomEditor from './compose'
@@ -159,6 +159,15 @@ export const FloatingCompose: React.FC<FloatingComposeProps> = ({
     dispatch(setSendAt({ draftId, sendAt: null }))
   }
 
+  const handleInsertTemplate = (tmplSubject: string, tmplBody: string) => {
+    if (tmplSubject) {
+      dispatch(updateSubject({ draftId, subject: tmplSubject }))
+    }
+    if (tmplBody) {
+      dispatch(setPendingInsert(tmplBody))
+    }
+  }
+
   if (!draft) return null
 
   return (
@@ -250,6 +259,9 @@ export const FloatingCompose: React.FC<FloatingComposeProps> = ({
             sendAt={sendAt}
             onScheduleSend={() => setSchedulePickerOpen(true)}
             onClearSchedule={handleClearSchedule}
+            subject={subject}
+            body={body}
+            onInsertTemplate={handleInsertTemplate}
           />
         </>
       )}

@@ -19,6 +19,7 @@ import {
 import { useAppDispatch } from '@/lib/redux/hooks'
 import { cn } from '@/lib/utils'
 import {
+  Bookmark,
   MoreHorizontalIcon,
   MoreVerticalIcon,
   Paperclip,
@@ -27,6 +28,7 @@ import {
 } from 'lucide-react'
 import { useTranslations } from 'next-intl'
 import React from 'react'
+import QuickReplyTemplates from './quick-reply-templates'
 import {
   MAIL_PRIORITY_HIGH,
   MAIL_PRIORITY_HIGHEST,
@@ -53,6 +55,9 @@ interface ComposeToolbarProps {
   sendAt?: string | null
   onScheduleSend: () => void
   onClearSchedule: () => void
+  subject?: string
+  body?: string
+  onInsertTemplate: (subject: string, body: string) => void
 }
 
 export function ComposeToolbar({
@@ -67,6 +72,12 @@ export function ComposeToolbar({
   selectedPriority,
   isSending,
   onSend,
+  sendAt,
+  onScheduleSend,
+  onClearSchedule,
+  subject,
+  body,
+  onInsertTemplate,
 }: ComposeToolbarProps) {
   const t = useTranslations('COMPOSE')
   const dispatch = useAppDispatch()
@@ -105,6 +116,13 @@ export function ComposeToolbar({
             <Video className="h-5 w-5" />
           </Button>
         )}
+
+        {/* Quick Reply Templates */}
+        <QuickReplyTemplates
+          currentSubject={subject}
+          currentBody={body}
+          onInsert={onInsertTemplate}
+        />
 
         <ButtonGroup className="z-9999">
           <DropdownMenu>
