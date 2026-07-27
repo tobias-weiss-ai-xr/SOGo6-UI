@@ -5,6 +5,9 @@
     "users": { "string": "Users" },
     "bulk_users": { "string": "Bulk Users" },
     "quotas": { "string": "Quotas" },
+    "branding": { "string": "Branding" },
+    "backup": { "string": "Backup" },
+    "db_migration": { "string": "DB Migration" },
     "api_docs": { "string": "API Documentation" },
     "config": {
       "string": "Configuration",

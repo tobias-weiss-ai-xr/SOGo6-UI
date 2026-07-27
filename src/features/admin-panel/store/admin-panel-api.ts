@@ -601,6 +601,107 @@ const injectedEndpoints = apiSlice.injectEndpoints({
         method: 'GET',
       }),
     }),
+
+    // === Domain Branding ===
+
+    getDomainBranding: builder.query<{
+      logo: string | null
+      primary_color: string | null
+      custom_css: string | null
+      login_header: string | null
+      login_footer: string | null
+      favicon: string | null
+    }, string>({
+      query: (domain) => ({
+        url: `/admin/v1/branding/${domain}`,
+        method: 'GET',
+      }),
+      providesTags: ['AdminBranding'],
+    }),
+
+    setDomainBranding: builder.mutation<Record<string, unknown>, {
+      domain: string
+      logo?: string | null
+      primary_color?: string | null
+      custom_css?: string | null
+      login_header?: string | null
+      login_footer?: string | null
+      favicon?: string | null
+    }>({
+      query: ({ domain, ...body }) => ({
+        url: `/admin/v1/branding/${domain}`,
+        method: 'PUT',
+        body,
+      }),
+      invalidatesTags: ['AdminBranding'],
+    }),
+
+    // === Backup ===
+
+    getBackupHistory: builder.query<{
+      entries: Array<{ id: string; timestamp: number; status: string; type: string; size_mb: number; duration_s: number; filename: string | null }>
+      config: { retention_days: number; s3_enabled: boolean; s3_bucket: string | null; s3_prefix: string | null; include_mailstore: boolean }
+    }, void>({
+      query: () => ({
+        url: '/admin/v1/backup/',
+        method: 'GET',
+      }),
+      providesTags: ['AdminBackup'],
+    }),
+
+    triggerBackup: builder.mutation<{
+      id: string; timestamp: number; status: string; type: string; size_mb: number; duration_s: number; filename: string | null
+    }, void>({
+      query: () => ({
+        url: '/admin/v1/backup/trigger',
+        method: 'POST',
+      }),
+      invalidatesTags: ['AdminBackup'],
+    }),
+
+    getBackupConfig: builder.query<{
+      retention_days: number; s3_enabled: boolean; s3_bucket: string | null; s3_prefix: string | null; include_mailstore: boolean
+    }, void>({
+      query: () => ({
+        url: '/admin/v1/backup/config',
+        method: 'GET',
+      }),
+      providesTags: ['AdminBackup'],
+    }),
+
+    setBackupConfig: builder.mutation<Record<string, unknown>, {
+      retention_days?: number; s3_enabled?: boolean; s3_bucket?: string | null; s3_prefix?: string | null; include_mailstore?: boolean
+    }>({
+      query: (body) => ({
+        url: '/admin/v1/backup/config',
+        method: 'PUT',
+        body,
+      }),
+      invalidatesTags: ['AdminBackup'],
+    }),
+
+    // === DB Migration ===
+
+    getDbMigration: builder.query<{
+      current_version: string
+      migrations: Array<{ id: string; version: string; description: string; applied_at: number; applied_by: string; status: string }>
+    }, void>({
+      query: () => ({
+        url: '/admin/v1/db-migration/',
+        method: 'GET',
+      }),
+      providesTags: ['AdminDbMigration'],
+    }),
+
+    runDbMigration: builder.mutation<{
+      id: string; version: string; description: string; applied_at: number; applied_by: string; status: string
+    }, void>({
+      query: () => ({
+        url: '/admin/v1/db-migration/run',
+        method: 'POST',
+      }),
+      invalidatesTags: ['AdminDbMigration'],
+    }),
   }),
   overrideExisting: false,
 })
@@ -648,4 +749,12 @@ export const {
   useSetUserQuotaMutation,
   useLazyGetMailboxDebugRawQuery,
   useLazyGetMailboxDebugHeadersQuery,
+  useGetDomainBrandingQuery,
+  useSetDomainBrandingMutation,
+  useGetBackupHistoryQuery,
+  useTriggerBackupMutation,
+  useGetBackupConfigQuery,
+  useSetBackupConfigMutation,
+  useGetDbMigrationQuery,
+  useRunDbMigrationMutation,
 } = injectedEndpoints
