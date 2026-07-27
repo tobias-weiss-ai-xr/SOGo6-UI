@@ -1,45 +1,45 @@
 {
     "US_GENERAL": {
         "title": {
-            "string": "Paramètres généraux",
+            "string": "Configuración general",
             "context": "Title for the general settings page"
         },
         "labels": {
             "language": {
-                "string": "Langue"
+                "string": "Idioma"
             },
             "timezone": {
-                "string": "Fuseau horaire"
+                "string": "Zona horaria"
             },
             "short_date_style": {
-                "string": "Format date court"
+                "string": "Formato de fecha corto"
             },
             "long_date_style": {
-                "string": "Format date long"
+                "string": "Formato de fecha largo"
             },
             "time_style": {
-                "string": "Format heure"
+                "string": "Formato de hora"
             },
             "default_view": {
-                "string": "Vue par défaut"
+                "string": "Default View"
             },
             "refresh_frequency": {
-                "string": "Fréquence d'actualisation"
+                "string": "Frecuencia de actualización"
             },
             "enable_notifications": {
-                "string": "Activer les notifications"
+                "string": "Activar notificaciones"
             },
             "saved": {
-                "string": "Paramètres généraux enregistrés"
+                "string": "Configuración general guardada"
             },
             "mail": {
-                "string": "Courrier"
+                "string": "Correo"
             },
             "calendar": {
-                "string": "Agenda"
+                "string": "Calendario"
             },
             "contacts": {
-                "string": "Contacts"
+                "string": "Contactos"
             },
             "last": {
                 "string": "Last displayed module"

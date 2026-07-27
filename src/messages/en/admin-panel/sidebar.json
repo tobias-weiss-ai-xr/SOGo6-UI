@@ -6,6 +6,12 @@
     "theme": {
       "string": "Theme"
     },
+    "users": {
+      "string": "Users"
+    },
+    "api_docs": {
+      "string": "API Documentation"
+    },
     "config": {
       "string": "Configuration",
       "rules": {
@@ -20,6 +26,9 @@
           "string": "Custom domains"
         }
       }
+    },
+    "sessions": {
+      "string": "Sessions"
     }
   }
 }
