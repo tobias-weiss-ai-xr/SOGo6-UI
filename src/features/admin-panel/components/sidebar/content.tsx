@@ -1,4 +1,4 @@
-import { Database, Palette, Users, UserCog, BookOpen, Shield, Building2, Activity, ScrollText, HardDrive, FileUp, Bug, Palette as BrandIcon, Archive, GitBranch, ArrowRightLeft, FileCode, Webhook, Key, FileText } from 'lucide-react'
+import { Database, Palette, Users, UserCog, BookOpen, Shield, Building2, Activity, ScrollText, HardDrive, FileUp, Bug, Palette as BrandIcon, Archive, GitBranch, ArrowRightLeft, FileCode, Webhook, Key, FileText, Cloud } from 'lucide-react'
 
 const navItems = [
   {
@@ -131,6 +131,12 @@ const navItems = [
     isActive: true,
     collapsedIcon: Building2,
     url: '/admin_panel/resources',
+  },
+  {
+    title: 'PORTAL.title.string',
+    isActive: true,
+    collapsedIcon: Cloud,
+    url: '/portal',
   },
 ]
 
