@@ -20,6 +20,8 @@ export interface SendMailBody {
   priority?: number
   is_html?: boolean
   reply_to?: string | null
+  /** ISO 8601 datetime for scheduled delivery */
+  send_at?: string | null
 }
 
 export interface SendMailArg {

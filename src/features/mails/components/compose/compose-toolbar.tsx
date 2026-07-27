@@ -50,6 +50,9 @@ interface ComposeToolbarProps {
   selectedPriority: MailComposeDraft['priority']
   isSending: boolean
   onSend: () => void
+  sendAt?: string | null
+  onScheduleSend: () => void
+  onClearSchedule: () => void
 }
 
 export function ComposeToolbar({
@@ -184,7 +187,11 @@ export function ComposeToolbar({
           disabled={isSending || isUploading}
         >
           <Send className="mr-2 h-4 w-4" />
-          {isSending ? t('sending.string') : t('send.string')}
+          {sendAt
+            ? t('schedule_sending.string')
+            : isSending
+              ? t('sending.string')
+              : t('send.string')}
         </Button>
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
@@ -198,9 +205,16 @@ export function ComposeToolbar({
           </DropdownMenuTrigger>
           <DropdownMenuContent align="end" className="z-9999 w-40">
             <DropdownMenuGroup>
-              <DropdownMenuItem disabled>
-                {t('schedule_sending.string')}
+              <DropdownMenuItem onSelect={onScheduleSend}>
+                {sendAt
+                  ? t('schedule_sending.change')
+                  : t('schedule_sending.string')}
               </DropdownMenuItem>
+              {sendAt && (
+                <DropdownMenuItem onSelect={onClearSchedule}>
+                  {t('schedule_sending.clear')}
+                </DropdownMenuItem>
+              )}
             </DropdownMenuGroup>
           </DropdownMenuContent>
         </DropdownMenu>

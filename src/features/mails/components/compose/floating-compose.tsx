@@ -14,7 +14,7 @@ import { useTranslations } from 'next-intl'
 import React from 'react'
 import { setActiveDraft } from '../../store'
 import { selectDraftData } from '../../store/mail-compose-selectors'
-import { setPendingInsert } from '../../store/mail-compose-slice'
+import { setPendingInsert, setSendAt } from '../../store/mail-compose-slice'
 import { resolveComposeAccountId } from '../../utils/resolve-compose-account-id'
 import ComposeAttachmentList from './compose-attachment-list'
 import CustomEditor from './compose'
@@ -22,6 +22,7 @@ import ComposeHeader from './compose-header'
 import ComposeSendAlerts from './compose-send-alerts'
 import ComposeToolbar from './compose-toolbar'
 import ComposeWindowHeader from './compose-window-header'
+import ScheduleSendPicker from './schedule-send-picker'
 import styles from './compose.module.css'
 
 interface FloatingComposeProps {
@@ -49,6 +50,7 @@ export const FloatingCompose: React.FC<FloatingComposeProps> = ({
     body,
     isDirty,
     attachments,
+    sendAt,
   } = useAppSelector(selectDraftData(draftId))
 
   const activeDraftId = useAppSelector(
@@ -111,6 +113,7 @@ export const FloatingCompose: React.FC<FloatingComposeProps> = ({
     requestReadReceipt,
     selectedPriority,
     isPlainText,
+    sendAt,
   }
 
   const {
@@ -143,6 +146,17 @@ export const FloatingCompose: React.FC<FloatingComposeProps> = ({
     const meetId = Math.random().toString(36).substring(2, 10)
     const link = `${jitsiBaseUrl}/${meetId}`
     dispatch(setPendingInsert(`<a href="${link}">${link}</a>`))
+  }
+
+  // Schedule send state
+  const [schedulePickerOpen, setSchedulePickerOpen] = React.useState(false)
+
+  const handleScheduleConfirm = (isoDateTime: string) => {
+    dispatch(setSendAt({ draftId, sendAt: isoDateTime }))
+  }
+
+  const handleClearSchedule = () => {
+    dispatch(setSendAt({ draftId, sendAt: null }))
   }
 
   if (!draft) return null
@@ -233,9 +247,21 @@ export const FloatingCompose: React.FC<FloatingComposeProps> = ({
             selectedPriority={selectedPriority}
             isSending={isSending}
             onSend={() => void handleSend()}
+            sendAt={sendAt}
+            onScheduleSend={() => setSchedulePickerOpen(true)}
+            onClearSchedule={handleClearSchedule}
           />
         </>
       )}
+
+      {/* Schedule Send picker dialog */}
+      <ScheduleSendPicker
+        open={schedulePickerOpen}
+        onOpenChange={setSchedulePickerOpen}
+        onConfirm={handleScheduleConfirm}
+        onClear={handleClearSchedule}
+        currentValue={sendAt}
+      />
 
       <ComposeSendAlerts
         showNoRecipientAlert={showNoRecipientAlert}
