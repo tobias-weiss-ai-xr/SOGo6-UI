@@ -10,6 +10,8 @@
     "db_migration": { "string": "DB Migration" },
     "migration": { "string": "Migration" },
     "config_code": { "string": "Config as Code" },
+    "webhooks": { "string": "Webhooks" },
+    "oauth_clients": { "string": "OAuth Clients" },
     "api_docs": { "string": "API Documentation" },
     "config": {
       "string": "Configuration",
@@ -25,6 +27,7 @@
     "health": { "string": "Health" },
     "debug": { "string": "Mailbox Debug" },
     "dns_wizard": { "string": "DNS Wizard" },
-    "resources": { "string": "Resources" }
+    "resources": { "string": "Resources" },
+    "doc_preview": { "string": "Doc Preview" }
   }
 }

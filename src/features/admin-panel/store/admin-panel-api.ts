@@ -767,6 +767,60 @@ const injectedEndpoints = apiSlice.injectEndpoints({
       }),
       invalidatesTags: ['AdminConfig'],
     }),
+
+    // === Webhooks ===
+
+    listWebhooks: builder.query<Array<{
+      id: string; name: string; url: string; events: string[]; secret: string; enabled: boolean; created_at: number
+    }>, void>({
+      query: () => ({
+        url: '/admin/v1/webhooks/',
+        method: 'GET',
+      }),
+      providesTags: ['AdminWebhooks'],
+    }),
+
+    createWebhook: builder.mutation<{
+      id: string; name: string; url: string; events: string[]; secret: string; enabled: boolean
+    }, { url: string; events: string[]; secret?: string; name?: string }>({
+      query: (body) => ({
+        url: '/admin/v1/webhooks/',
+        method: 'POST',
+        body,
+      }),
+      invalidatesTags: ['AdminWebhooks'],
+    }),
+
+    deleteWebhook: builder.mutation<{ status: string }, string>({
+      query: (id) => ({
+        url: `/admin/v1/webhooks/${id}`,
+        method: 'DELETE',
+      }),
+      invalidatesTags: ['AdminWebhooks'],
+    }),
+
+    // === OAuth2 Provider ===
+
+    listOAuthClients: builder.query<Array<{
+      client_id: string; client_secret: string; name: string; redirect_uris: string[]; scopes: string[]; created_at: number
+    }>, void>({
+      query: () => ({
+        url: '/api/user/v1/oauth/clients',
+        method: 'GET',
+      }),
+      providesTags: ['AdminOAuth'],
+    }),
+
+    registerOAuthClient: builder.mutation<{
+      client_id: string; client_secret: string; name: string; redirect_uris: string[]; scopes: string[]
+    }, { name: string; redirect_uris: string[]; scopes?: string[] }>({
+      query: (body) => ({
+        url: '/api/user/v1/oauth/clients',
+        method: 'POST',
+        body,
+      }),
+      invalidatesTags: ['AdminOAuth'],
+    }),
   }),
   overrideExisting: false,
 })
@@ -828,4 +882,9 @@ export const {
   useGetConfigExportQuery,
   useGetConfigHistoryQuery,
   useImportConfigMutation,
+  useListWebhooksQuery,
+  useCreateWebhookMutation,
+  useDeleteWebhookMutation,
+  useListOAuthClientsQuery,
+  useRegisterOAuthClientMutation,
 } = injectedEndpoints

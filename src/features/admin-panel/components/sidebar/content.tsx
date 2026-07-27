@@ -1,4 +1,4 @@
-import { Database, Palette, Users, UserCog, BookOpen, Shield, Building2, Activity, ScrollText, HardDrive, FileUp, Bug, Palette as BrandIcon, Archive, GitBranch, ArrowRightLeft, FileCode } from 'lucide-react'
+import { Database, Palette, Users, UserCog, BookOpen, Shield, Building2, Activity, ScrollText, HardDrive, FileUp, Bug, Palette as BrandIcon, Archive, GitBranch, ArrowRightLeft, FileCode, Webhook, Key, FileText } from 'lucide-react'
 
 const navItems = [
   {
@@ -101,6 +101,18 @@ const navItems = [
     isActive: true,
     collapsedIcon: FileCode,
     url: '/admin_panel/config-code',
+  },
+  {
+    title: 'AP_SIDEBAR.webhooks.string',
+    isActive: true,
+    collapsedIcon: Webhook,
+    url: '/admin_panel/webhooks',
+  },
+  {
+    title: 'AP_SIDEBAR.oauth_clients.string',
+    isActive: true,
+    collapsedIcon: Key,
+    url: '/admin_panel/oauth-clients',
   },
   {
     title: 'AP_SIDEBAR.api_docs.string',
