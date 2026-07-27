@@ -11,6 +11,7 @@ import ContactFormHost from '@/features/address_books/components/contact-form-ho
 import DistributionListFormHost from '@/features/address_books/components/distribution-list-form-host'
 import { useAddressBookDragEnd } from '@/features/address_books/hooks/use-address-book-drag-end'
 import FloatingComposeContainer from '@/features/mails/components/compose/floating-compose-container'
+import GlobalQuickSearch from '@/features/search/components/GlobalQuickSearch'
 import {
   NotificationProvider,
   NotificationToaster,
@@ -121,6 +122,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <MobileCreateFab />
       </SidebarProvider>
       <FloatingComposeContainer />
+      <GlobalQuickSearch />
       <ContactFormHost />
       <DistributionListFormHost />
     </>
