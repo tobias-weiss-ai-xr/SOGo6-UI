@@ -500,6 +500,107 @@ const injectedEndpoints = apiSlice.injectEndpoints({
       }),
       invalidatesTags: ['AdminResources'],
     }),
+
+    // === Health Dashboard ===
+
+    getHealthDashboard: builder.query<{
+      services: Array<{ name: string; status: string; latency_ms: number; detail: string }>
+      uptime_seconds: number
+      version: string
+    }, void>({
+      query: () => ({
+        url: '/admin/v1/health-dashboard/',
+        method: 'GET',
+      }),
+      providesTags: ['AdminHealth'],
+    }),
+
+    // === Audit Log ===
+
+    getAuditLog: builder.query<{
+      entries: Array<{
+        timestamp: number
+        action: string
+        actor: string
+        target: string | null
+        detail: string | null
+        ip: string | null
+      }>
+    }, { limit?: number } | void>({
+      query: (params) => ({
+        url: '/admin/v1/audit-log/',
+        method: 'GET',
+        params: params ?? {},
+      }),
+      providesTags: ['AdminAuditLog'],
+    }),
+
+    // === Bulk Users ===
+
+    exportUsersCsv: builder.mutation<Blob, void>({
+      query: () => ({
+        url: '/admin/v1/bulk-users/export/csv',
+        method: 'GET',
+        responseHandler: (response) => response.blob(),
+      }),
+    }),
+
+    importUsersCsv: builder.mutation<{
+      created: number
+      updated: number
+      errors: Array<{ row: number; error: string }>
+    }, FormData>({
+      query: (body) => ({
+        url: '/admin/v1/bulk-users/import/csv',
+        method: 'POST',
+        body,
+      }),
+    }),
+
+    // === Usage Quotas ===
+
+    getUserQuota: builder.query<{
+      mailbox_size_mb: number
+      mailbox_used_mb: number
+      calendar_count: number
+      calendar_used: number
+      contact_count: number
+      contact_used: number
+    }, string>({
+      query: (userUid) => ({
+        url: `/admin/v1/quotas/${userUid}`,
+        method: 'GET',
+      }),
+    }),
+
+    setUserQuota: builder.mutation<Record<string, unknown>, {
+      user_uid: string
+      mailbox_size_mb?: number
+      calendar_count?: number
+      contact_count?: number
+    }>({
+      query: (body) => ({
+        url: `/admin/v1/quotas/${body.user_uid}`,
+        method: 'POST',
+        body: { mailbox_size_mb: body.mailbox_size_mb, calendar_count: body.calendar_count, contact_count: body.contact_count },
+      }),
+    }),
+
+    // === Mailbox Debug ===
+
+    getMailboxDebugRaw: builder.query<string, { userUid: string; folder: string; mailUid: string }>({
+      query: ({ userUid, folder, mailUid }) => ({
+        url: `/admin/v1/mailbox-debug/${userUid}/raw/${folder}/${mailUid}`,
+        method: 'GET',
+      }),
+    }),
+
+    getMailboxDebugHeaders: builder.query<Record<string, string>, { userUid: string; folder: string; mailUid: string }>({
+      query: ({ userUid, folder, mailUid }) => ({
+        url: `/admin/v1/mailbox-debug/${userUid}/headers/${folder}/${mailUid}`,
+        method: 'GET',
+      }),
+    }),
   }),
   overrideExisting: false,
 })
@@ -539,4 +640,12 @@ export const {
   useCreateResourceMutation,
   useUpdateResourceMutation,
   useDeleteResourceMutation,
+  useGetHealthDashboardQuery,
+  useGetAuditLogQuery,
+  useExportUsersCsvMutation,
+  useImportUsersCsvMutation,
+  useGetUserQuotaQuery,
+  useSetUserQuotaMutation,
+  useLazyGetMailboxDebugRawQuery,
+  useLazyGetMailboxDebugHeadersQuery,
 } = injectedEndpoints

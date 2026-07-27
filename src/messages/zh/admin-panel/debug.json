@@ -1,0 +1,22 @@
+{ "AP_DEBUG": {
+    "title": { "string": "Mailbox Debug" },
+    "description": { "string": "Diagnostic tool for troubleshooting mail delivery issues. View raw email source or parsed headers." },
+    "query": {
+      "title": { "string": "Debug Query" },
+      "button": { "string": "Inspect" }
+    },
+    "labels": {
+      "user": { "string": "User" },
+      "folder": { "string": "IMAP Folder" },
+      "mail_uid": { "string": "Mail UID" },
+      "select_user": { "string": "Select user..."
+    },
+    "result": {
+      "raw": { "title": { "string": "Raw Email Source" } },
+      "headers": { "title": { "string": "Parsed Headers" } }
+    },
+    "errors": {
+      "fields_required": { "string": "User, folder, and mail UID are required" },
+      "fetch_failed": { "string": "Failed to fetch debug data" }
+    }
+}}

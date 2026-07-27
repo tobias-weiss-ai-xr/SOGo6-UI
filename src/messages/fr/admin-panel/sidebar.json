@@ -1,31 +1,25 @@
 {
-    "AP_SIDEBAR": {
-        "system": {
-            "string": "Système"
-        },
-        "theme": {
-            "string": "Thème"
-        },
-        "users": {
-            "string": "Utilisateurs"
-        },
-        "config": {
-            "string": "Configuration",
-            "rules": {
-                "string": "Règles"
-            },
-            "domains": {
-                "string": "Domaines",
-                "default": {
-                    "string": "Défaut"
-                },
-                "custom": {
-                    "string": "Domaines personnalisés"
-                }
-            }
-        }
+  "AP_SIDEBAR": {
+    "system": { "string": "System" },
+    "theme": { "string": "Theme" },
+    "users": { "string": "Users" },
+    "bulk_users": { "string": "Bulk Users" },
+    "quotas": { "string": "Quotas" },
+    "api_docs": { "string": "API Documentation" },
+    "config": {
+      "string": "Configuration",
+      "rules": { "string": "Rules" },
+      "domains": {
+        "string": "Domains",
+        "default": { "string": "Default" },
+        "custom": { "string": "Custom domains" }
+      }
     },
-    "sessions": {
-        "string": "Sessions"
-    }
+    "sessions": { "string": "Sessions" },
+    "audit": { "string": "Audit Log" },
+    "health": { "string": "Health" },
+    "debug": { "string": "Mailbox Debug" },
+    "dns_wizard": { "string": "DNS Wizard" },
+    "resources": { "string": "Resources" }
+  }
 }

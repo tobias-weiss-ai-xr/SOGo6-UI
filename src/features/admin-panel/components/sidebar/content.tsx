@@ -1,6 +1,12 @@
-import { Database, Palette, Users, UserCog, BookOpen, Shield, Building2 } from 'lucide-react'
+import { Database, Palette, Users, UserCog, BookOpen, Shield, Building2, Activity, ScrollText, HardDrive, FileUp, Bug } from 'lucide-react'
 
 const navItems = [
+  {
+    title: 'AP_SIDEBAR.health.string',
+    isActive: true,
+    collapsedIcon: Activity,
+    url: '/admin_panel/health',
+  },
   {
     title: 'AP_SIDEBAR.theme.string',
     isActive: true,
@@ -18,6 +24,18 @@ const navItems = [
     isActive: true,
     collapsedIcon: UserCog,
     url: '/admin_panel/users',
+  },
+  {
+    title: 'AP_SIDEBAR.bulk_users.string',
+    isActive: true,
+    collapsedIcon: FileUp,
+    url: '/admin_panel/bulk-users',
+  },
+  {
+    title: 'AP_SIDEBAR.quotas.string',
+    isActive: true,
+    collapsedIcon: HardDrive,
+    url: '/admin_panel/quotas',
   },
   {
     title: 'AP_SIDEBAR.config.domains.string',
@@ -41,6 +59,18 @@ const navItems = [
     isActive: true,
     collapsedIcon: Users,
     url: '/admin_panel/sessions',
+  },
+  {
+    title: 'AP_SIDEBAR.audit.string',
+    isActive: true,
+    collapsedIcon: ScrollText,
+    url: '/admin_panel/audit',
+  },
+  {
+    title: 'AP_SIDEBAR.debug.string',
+    isActive: true,
+    collapsedIcon: Bug,
+    url: '/admin_panel/debug',
   },
   {
     title: 'AP_SIDEBAR.api_docs.string',
