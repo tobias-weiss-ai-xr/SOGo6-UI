@@ -869,6 +869,81 @@ const injectedEndpoints = apiSlice.injectEndpoints({
       query: (body) => ({ url: '/admin/v1/files/shares', method: 'POST', body }),
       invalidatesTags: ['AdminFileShares'],
     }),
+
+    // ── Approval Workflows (#50) ───────────────────────────────────────
+    listApprovals: builder.query<Array<{ id: string; title: string; status: string; category: string; current_step: number; steps: any[]; created_at: number }>, void>({
+      query: () => ({ url: '/admin/v1/approvals', method: 'GET' }),
+      providesTags: ['AdminApprovals'],
+    }),
+    createApproval: builder.mutation<any, any>({
+      query: (body) => ({ url: '/admin/v1/approvals', method: 'POST', body }),
+      invalidatesTags: ['AdminApprovals'],
+    }),
+    actionApproval: builder.mutation<any, { approval_id: string; action: string; comment?: string }>({
+      query: ({ approval_id, ...body }) => ({ url: `/admin/v1/approvals/${approval_id}/action`, method: 'POST', body }),
+      invalidatesTags: ['AdminApprovals'],
+    }),
+
+    // ── Helpdesk / Ticketing (#51) ──────────────────────────────────────
+    listTickets: builder.query<Array<{ id: string; subject: string; status: string; priority: string; requester_email: string; assignee_email: string; created_at: number; sla_deadline: number }>, void>({
+      query: () => ({ url: '/admin/v1/tickets', method: 'GET' }),
+      providesTags: ['AdminTickets'],
+    }),
+    createTicket: builder.mutation<any, any>({
+      query: (body) => ({ url: '/admin/v1/tickets', method: 'POST', body }),
+      invalidatesTags: ['AdminTickets'],
+    }),
+    updateTicket: builder.mutation<any, { ticket_id: string } & Record<string, any>>({
+      query: ({ ticket_id, ...body }) => ({ url: `/admin/v1/tickets/${ticket_id}`, method: 'PATCH', body }),
+      invalidatesTags: ['AdminTickets'],
+    }),
+
+    // ── CRM-light (#53) ─────────────────────────────────────────────────
+    listCrmAccounts: builder.query<Array<{ id: string; name: string; domain: string; industry: string; created_at: number }>, void>({
+      query: () => ({ url: '/admin/v1/crm/accounts', method: 'GET' }),
+      providesTags: ['AdminCrm'],
+    }),
+    createCrmAccount: builder.mutation<any, any>({
+      query: (body) => ({ url: '/admin/v1/crm/accounts', method: 'POST', body }),
+      invalidatesTags: ['AdminCrm'],
+    }),
+
+    // ── Workflow Builder (#54) ────────────────────────────────────────
+    listWorkflows: builder.query<Array<{ id: string; name: string; trigger_type: string; enabled: boolean; trigger_count: number; created_at: number }>, void>({
+      query: () => ({ url: '/admin/v1/workflows', method: 'GET' }),
+      providesTags: ['AdminWorkflows'],
+    }),
+    createWorkflow: builder.mutation<any, any>({
+      query: (body) => ({ url: '/admin/v1/workflows', method: 'POST', body }),
+      invalidatesTags: ['AdminWorkflows'],
+    }),
+    toggleWorkflow: builder.mutation<any, { workflow_id: string; enabled: boolean }>({
+      query: ({ workflow_id, ...body }) => ({ url: `/admin/v1/workflows/${workflow_id}`, method: 'PATCH', body }),
+      invalidatesTags: ['AdminWorkflows'],
+    }),
+    deleteWorkflow: builder.mutation<{ status: string }, string>({
+      query: (workflow_id) => ({ url: `/admin/v1/workflows/${workflow_id}`, method: 'DELETE' }),
+      invalidatesTags: ['AdminWorkflows'],
+    }),
+
+    // ── Quick Actions (#55) ────────────────────────────────────────────
+    listQuickActions: builder.query<Array<{ id: string; name: string; icon: string; steps: any[]; created_at: number }>, void>({
+      query: () => ({ url: '/admin/v1/quick-actions', method: 'GET' }),
+      providesTags: ['AdminQuickActions'],
+    }),
+    createQuickAction: builder.mutation<any, any>({
+      query: (body) => ({ url: '/admin/v1/quick-actions', method: 'POST', body }),
+      invalidatesTags: ['AdminQuickActions'],
+    }),
+    deleteQuickAction: builder.mutation<{ status: string }, string>({
+      query: (action_id) => ({ url: `/admin/v1/quick-actions/${action_id}`, method: 'DELETE' }),
+      invalidatesTags: ['AdminQuickActions'],
+    }),
+
+    // ── Free/Busy Lookup (#48) ──────────────────────────────────────────
+    getFreeBusy: builder.mutation<any, { target_uids: string[]; start: string; end: string }>({
+      query: (body) => ({ url: '/api/v1/calendar/freebusy', method: 'POST', body }),
+    }),
   }),
   overrideExisting: false,
 })
@@ -945,4 +1020,20 @@ export const {
   useReviewSharedDraftMutation,
   useListFileSharesQuery,
   useCreateFileShareMutation,
+  useListApprovalsQuery,
+  useCreateApprovalMutation,
+  useActionApprovalMutation,
+  useListTicketsQuery,
+  useCreateTicketMutation,
+  useUpdateTicketMutation,
+  useListCrmAccountsQuery,
+  useCreateCrmAccountMutation,
+  useListWorkflowsQuery,
+  useCreateWorkflowMutation,
+  useToggleWorkflowMutation,
+  useDeleteWorkflowMutation,
+  useListQuickActionsQuery,
+  useCreateQuickActionMutation,
+  useDeleteQuickActionMutation,
+  useGetFreeBusyMutation,
 } = injectedEndpoints

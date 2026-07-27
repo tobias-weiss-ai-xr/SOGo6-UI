@@ -17,6 +17,12 @@
     "shared_drafts": { "string": "Shared Drafts" },
     "file_sharing": { "string": "File Sharing" },
     "doc_preview": { "string": "Doc Preview" },
+    "approvals": { "string": "Approvals" },
+    "helpdesk": { "string": "Helpdesk" },
+    "crm": { "string": "CRM" },
+    "workflows": { "string": "Workflows" },
+    "quick_actions": { "string": "Quick Actions" },
+    "freebusy": { "string": "Free/Busy" },
     "api_docs": { "string": "API Documentation" },
     "config": {
       "string": "Configuration",

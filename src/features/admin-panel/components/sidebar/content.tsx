@@ -1,4 +1,4 @@
-import { Database, Palette, Users, UserCog, BookOpen, Shield, Building2, Activity, ScrollText, HardDrive, FileUp, Bug, Palette as BrandIcon, Archive, GitBranch, ArrowRightLeft, FileCode, Webhook, Key, FileText, Cloud, CalendarDays, CalendarClock, PenLine, Share2 } from 'lucide-react'
+import { Database, Palette, Users, UserCog, BookOpen, Shield, Building2, Activity, ScrollText, HardDrive, FileUp, Bug, Palette as BrandIcon, Archive, GitBranch, ArrowRightLeft, FileCode, Webhook, Key, FileText, Cloud, CalendarDays, CalendarClock, PenLine, Share2, GitBranch as ApprovalIcon, Ticket, Building2 as CrmIcon, Workflow, Zap, CalendarRange } from 'lucide-react'
 
 const navItems = [
   {
@@ -161,6 +161,42 @@ const navItems = [
     isActive: true,
     collapsedIcon: Building2,
     url: '/admin_panel/resources',
+  },
+  {
+    title: 'AP_SIDEBAR.approvals.string',
+    isActive: true,
+    collapsedIcon: ApprovalIcon,
+    url: '/admin_panel/approvals',
+  },
+  {
+    title: 'AP_SIDEBAR.helpdesk.string',
+    isActive: true,
+    collapsedIcon: Ticket,
+    url: '/admin_panel/helpdesk',
+  },
+  {
+    title: 'AP_SIDEBAR.crm.string',
+    isActive: true,
+    collapsedIcon: CrmIcon,
+    url: '/admin_panel/crm',
+  },
+  {
+    title: 'AP_SIDEBAR.workflows.string',
+    isActive: true,
+    collapsedIcon: Workflow,
+    url: '/admin_panel/workflows',
+  },
+  {
+    title: 'AP_SIDEBAR.quick_actions.string',
+    isActive: true,
+    collapsedIcon: Zap,
+    url: '/admin_panel/quick-actions',
+  },
+  {
+    title: 'AP_SIDEBAR.freebusy.string',
+    isActive: true,
+    collapsedIcon: CalendarRange,
+    url: '/admin_panel/freebusy',
   },
   {
     title: 'PORTAL.title.string',
