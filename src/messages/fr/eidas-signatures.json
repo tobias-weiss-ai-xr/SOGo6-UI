@@ -1,0 +1,74 @@
+{
+  "EIDAS": {
+    "title": {
+      "string": "Signatures eIDAS"
+    },
+    "description": {
+      "string": "Signatures électroniques qualifiées (UE 910/2014)"
+    },
+    "errors": {
+      "fields": {
+        "string": "Tous les champs requis"
+      },
+      "fail": {
+        "string": "Opération échouée"
+      }
+    },
+    "success": {
+      "sign": {
+        "string": "Signé avec QES"
+      }
+    },
+    "sign": {
+      "title": {
+        "string": "Signer le document"
+      },
+      "placeholder": {
+        "string": "Entrez le contenu du document à signer..."
+      },
+      "signer": {
+        "string": "E-mail du signataire"
+      },
+      "algorithm": {
+        "string": "Algorithme de hachage"
+      },
+      "button": {
+        "string": "Signer avec QES"
+      }
+    },
+    "verify": {
+      "title": {
+        "string": "Vérifier la signature"
+      },
+      "doc_hash": {
+        "string": "Hash du document"
+      },
+      "signature": {
+        "string": "Signature"
+      },
+      "button": {
+        "string": "Vérifier"
+      },
+      "valid": {
+        "string": "Valide"
+      },
+      "invalid": {
+        "string": "Invalide"
+      }
+    },
+    "certs": {
+      "title": {
+        "string": "Certificats de service de confiance"
+      },
+      "type": {
+        "string": "Type"
+      },
+      "name": {
+        "string": "Nom"
+      },
+      "hash": {
+        "string": "Hash"
+      }
+    }
+  }
+}

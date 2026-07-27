@@ -1,0 +1,44 @@
+{
+  "STUDENT_GROUPS": {
+    "title": {
+      "string": "Groupes détudiants"
+    },
+    "description": {
+      "string": "Gérez les groupes détudiants et inscriptions"
+    },
+    "errors": {
+      "name": {
+        "string": "Nom de groupe requis"
+      },
+      "fail": {
+        "string": "Opération échouée"
+      }
+    },
+    "success": {
+      "create": {
+        "string": "Groupe créé"
+      }
+    },
+    "field": {
+      "name": {
+        "string": "Nom du groupe"
+      },
+      "course": {
+        "string": "Code du cours"
+      }
+    },
+    "button": {
+      "create": {
+        "string": "Créer un groupe"
+      }
+    },
+    "label": {
+      "none": {
+        "string": "Aucun"
+      },
+      "students": {
+        "string": "étudiants"
+      }
+    }
+  }
+}

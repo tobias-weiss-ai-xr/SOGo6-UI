@@ -1,1 +1,52 @@
-{ "AI_ANOMALY": { "title": { "string": "Anomaly Detection" }, "description": { "string": "Flag unusual sending patterns: bulk email, odd hours, new recipients." }, "input": { "title": { "string": "Sending Pattern" }, "recipients": { "string": "Recipient Count" }, "hour": { "string": "Hour (0-23)" }, "new_ratio": { "string": "New Recipient Ratio" } }, "output": { "title": { "string": "Analysis Result" }, "empty": { "string": "Enter values and click Analyze" }, "anomaly": { "string": "Anomaly Detected!" }, "normal": { "string": "Pattern Normal" }, "score": { "string": "Risk Score" } }, "analyze": { "string": "Analyze" }, "errors": { "fail": { "string": "Analysis failed" } } }}
+{
+  "AI_ANOMALY": {
+    "title": {
+      "string": "Anomalieerkennung"
+    },
+    "description": {
+      "string": "Versandmuster-Analyse mit Risikobewertung"
+    },
+    "input": {
+      "title": {
+        "string": "Eingabe"
+      },
+      "recipients": {
+        "string": "Empfängeranzahl"
+      },
+      "hour": {
+        "string": "Stunde"
+      },
+      "new_ratio": {
+        "string": "Neue-Empfänger-Quote"
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Ergebnis"
+      },
+      "empty": {
+        "string": "Analyse wird hier angezeigt"
+      },
+      "anomaly": {
+        "string": "Anomalie erkannt"
+      },
+      "normal": {
+        "string": "Normal"
+      },
+      "score": {
+        "string": "Risikopunktzahl"
+      }
+    },
+    "analyze": {
+      "string": "Analysieren"
+    },
+    "errors": {
+      "empty": {
+        "string": "Felder erforderlich"
+      },
+      "fail": {
+        "string": "Analyse fehlgeschlagen"
+      }
+    }
+  }
+}

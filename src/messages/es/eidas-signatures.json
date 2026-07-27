@@ -1,0 +1,74 @@
+{
+  "EIDAS": {
+    "title": {
+      "string": "Firmas eIDAS"
+    },
+    "description": {
+      "string": "Firmas electrónicas cualificadas (UE 910/2014)"
+    },
+    "errors": {
+      "fields": {
+        "string": "Todos los campos requeridos"
+      },
+      "fail": {
+        "string": "Operación fallida"
+      }
+    },
+    "success": {
+      "sign": {
+        "string": "Firmado con QES"
+      }
+    },
+    "sign": {
+      "title": {
+        "string": "Firmar documento"
+      },
+      "placeholder": {
+        "string": "Ingrese el contenido del documento a firmar..."
+      },
+      "signer": {
+        "string": "Correo del firmante"
+      },
+      "algorithm": {
+        "string": "Algoritmo hash"
+      },
+      "button": {
+        "string": "Firmar con QES"
+      }
+    },
+    "verify": {
+      "title": {
+        "string": "Verificar firma"
+      },
+      "doc_hash": {
+        "string": "Hash del documento"
+      },
+      "signature": {
+        "string": "Firma"
+      },
+      "button": {
+        "string": "Verificar"
+      },
+      "valid": {
+        "string": "Válida"
+      },
+      "invalid": {
+        "string": "Inválida"
+      }
+    },
+    "certs": {
+      "title": {
+        "string": "Certificados de servicio de confianza"
+      },
+      "type": {
+        "string": "Tipo"
+      },
+      "name": {
+        "string": "Nombre"
+      },
+      "hash": {
+        "string": "Hash"
+      }
+    }
+  }
+}

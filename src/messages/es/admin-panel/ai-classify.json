@@ -1,1 +1,46 @@
-{ "AI_CLASSIFY": { "title": { "string": "Smart Email Classification" }, "description": { "string": "Auto-label emails: newsletter, invoice, notification, social, personal." }, "input": { "title": { "string": "Input Email" }, "subject": { "string": "Subject" }, "sender": { "string": "Sender" }, "body": { "string": "Body" }, "placeholder": { "string": "Paste email content..." } }, "output": { "title": { "string": "Classification Results" }, "empty": { "string": "Enter text and click Classify" } }, "classify": { "string": "Classify" }, "errors": { "empty": { "string": "Enter email text" }, "fail": { "string": "Classification failed" } } }}
+{
+  "AI_CLASSIFY": {
+    "title": {
+      "string": "Clasificación de correos"
+    },
+    "description": {
+      "string": "Categorización automática de correos con puntuación de confianza"
+    },
+    "input": {
+      "title": {
+        "string": "Entrada"
+      },
+      "subject": {
+        "string": "Asunto"
+      },
+      "sender": {
+        "string": "Remitente"
+      },
+      "body": {
+        "string": "Texto del correo"
+      },
+      "placeholder": {
+        "string": "Pegue el texto del correo aquí..."
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Categorías"
+      },
+      "empty": {
+        "string": "Las categorías aparecerán aquí"
+      }
+    },
+    "classify": {
+      "string": "Clasificar"
+    },
+    "errors": {
+      "empty": {
+        "string": "Texto requerido"
+      },
+      "fail": {
+        "string": "Clasificación fallida"
+      }
+    }
+  }
+}

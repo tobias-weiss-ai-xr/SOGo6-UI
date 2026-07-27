@@ -1,0 +1,10 @@
+{
+  "PROTOCOLS": {
+    "title": {
+      "string": "E-Mail-Protokollstatus"
+    },
+    "description": {
+      "string": "JMAP- und ActiveSync-Serverstatus und -Fähigkeiten"
+    }
+  }
+}

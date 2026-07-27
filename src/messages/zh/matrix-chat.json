@@ -1,0 +1,71 @@
+{
+  "MATRIX": {
+    "title": {
+      "string": "Matrix 聊天集成"
+    },
+    "description": {
+      "string": "嵌入式 Matrix 房间和 SOGo 用户关联"
+    },
+    "errors": {
+      "name": {
+        "string": "名称必填"
+      },
+      "fail": {
+        "string": "操作失败"
+      }
+    },
+    "success": {
+      "config": {
+        "string": "配置已保存"
+      },
+      "room": {
+        "string": "房间已创建"
+      }
+    },
+    "config": {
+      "title": {
+        "string": "服务器配置"
+      },
+      "enabled": {
+        "string": "已启用"
+      },
+      "bridge": {
+        "string": "桥接"
+      }
+    },
+    "rooms": {
+      "title": {
+        "string": "聊天房间"
+      },
+      "name": {
+        "placeholder": {
+          "string": "房间名称..."
+        }
+      },
+      "visibility": {
+        "private": {
+          "string": "私有"
+        },
+        "public": {
+          "string": "公开"
+        }
+      },
+      "button": {
+        "save": {
+          "string": "保存"
+        },
+        "create": {
+          "string": "创建房间"
+        }
+      }
+    },
+    "links": {
+      "title": {
+        "string": "用户关联"
+      },
+      "empty": {
+        "string": "暂无关联用户"
+      }
+    }
+  }
+}

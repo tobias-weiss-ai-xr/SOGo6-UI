@@ -1,1 +1,54 @@
-{ "AI_ENRICH": { "title": { "string": "Contact Auto-Enrichment" }, "description": { "string": "Extract phone, title, company, location from email signatures." }, "input": { "title": { "string": "Email Signature" }, "signature": { "string": "Signature Text" }, "placeholder": { "string": "Paste an email signature here..." } }, "output": { "title": { "string": "Extracted Information" }, "empty": { "string": "Enter signature text and click Extract" } }, "extract": { "string": "Extract Info" }, "field": { "phone": { "string": "Phone" }, "title": { "string": "Title" }, "company": { "string": "Company" }, "location": { "string": "Location" } }, "errors": { "empty": { "string": "Enter text" }, "fail": { "string": "Extraction failed" } } }}
+{
+  "AI_ENRICH": {
+    "title": {
+      "string": "Enrichissement de contacts"
+    },
+    "description": {
+      "string": "Extraction des données de contact depuis les signatures"
+    },
+    "input": {
+      "title": {
+        "string": "Entrée"
+      },
+      "signature": {
+        "string": "Texte de signature"
+      },
+      "placeholder": {
+        "string": "Collez la signature e-mail ici..."
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Données extraites"
+      },
+      "empty": {
+        "string": "Les données apparaîtront ici"
+      }
+    },
+    "field": {
+      "phone": {
+        "string": "Téléphone"
+      },
+      "title": {
+        "string": "Poste"
+      },
+      "company": {
+        "string": "Entreprise"
+      },
+      "location": {
+        "string": "Lieu"
+      }
+    },
+    "extract": {
+      "string": "Extraire"
+    },
+    "errors": {
+      "empty": {
+        "string": "Texte requis"
+      },
+      "fail": {
+        "string": "Échec de l'extraction"
+      }
+    }
+  }
+}

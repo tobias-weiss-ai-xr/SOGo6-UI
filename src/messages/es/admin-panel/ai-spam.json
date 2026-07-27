@@ -1,1 +1,49 @@
-{ "AI_SPAM": { "title": { "string": "Intelligent Spam Filter" }, "description": { "string": "Real-time spam scoring with pattern analysis, sender reputation, and content heuristics." }, "input": { "title": { "string": "Email to Score" }, "subject": { "string": "Subject" }, "sender": { "string": "Sender" }, "body": { "string": "Body" }, "placeholder": { "string": "Paste the email body..." } }, "output": { "title": { "string": "Spam Score" }, "empty": { "string": "Enter email content and click Score" }, "signals": { "string": "Detected Signals" } }, "score": { "string": "Score Email" }, "errors": { "empty": { "string": "Enter subject or body" }, "fail": { "string": "Scoring failed" } } }}
+{
+  "AI_SPAM": {
+    "title": {
+      "string": "Filtro antispam inteligente"
+    },
+    "description": {
+      "string": "Detección de spam en tiempo real con análisis de señales"
+    },
+    "input": {
+      "title": {
+        "string": "Entrada"
+      },
+      "subject": {
+        "string": "Asunto"
+      },
+      "sender": {
+        "string": "Remitente"
+      },
+      "body": {
+        "string": "Texto del correo"
+      },
+      "placeholder": {
+        "string": "Pegue el texto para analizar..."
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Resultado"
+      },
+      "empty": {
+        "string": "El resultado aparecerá aquí"
+      },
+      "signals": {
+        "string": "Señales"
+      }
+    },
+    "score": {
+      "string": "Evaluar"
+    },
+    "errors": {
+      "empty": {
+        "string": "Asunto o texto requerido"
+      },
+      "fail": {
+        "string": "Análisis fallido"
+      }
+    }
+  }
+}

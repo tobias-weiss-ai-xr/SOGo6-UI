@@ -1,0 +1,98 @@
+{
+  "VOLUNTEER": {
+    "title": {
+      "string": "Planification des bénévoles"
+    },
+    "description": {
+      "string": "Gérez les bénévoles et suivez les heures"
+    },
+    "errors": {
+      "fields": {
+        "string": "Champs requis manquants"
+      },
+      "fail": {
+        "string": "Opération échouée"
+      }
+    },
+    "success": {
+      "create": {
+        "string": "Bénévole enregistré"
+      },
+      "shift": {
+        "string": "Quart assigné"
+      },
+      "cert": {
+        "string": "Certificat généré"
+      }
+    },
+    "register": {
+      "title": {
+        "string": "Enregistrer un bénévole"
+      }
+    },
+    "shift": {
+      "title": {
+        "string": "Créer un quart"
+      },
+      "select": {
+        "string": "Sélectionner un bénévole..."
+      },
+      "task": {
+        "string": "Tâche"
+      },
+      "start": {
+        "string": "Début"
+      },
+      "end": {
+        "string": "Fin"
+      }
+    },
+    "field": {
+      "name": {
+        "string": "Nom"
+      },
+      "email": {
+        "string": "E-mail"
+      },
+      "hours": {
+        "string": "Heures"
+      },
+      "status": {
+        "string": "Statut"
+      },
+      "no_shows": {
+        "string": "Absences"
+      }
+    },
+    "button": {
+      "register": {
+        "string": "Enregistrer"
+      },
+      "assign": {
+        "string": "Assigner un quart"
+      }
+    },
+    "stats": {
+      "title": {
+        "string": "Statistiques"
+      },
+      "volunteers": {
+        "string": "Bénévoles"
+      },
+      "hours": {
+        "string": "Heures totales"
+      },
+      "shifts": {
+        "string": "Quarts actifs"
+      }
+    },
+    "list": {
+      "title": {
+        "string": "Tous les bénévoles"
+      },
+      "empty": {
+        "string": "Aucun bénévole enregistré"
+      }
+    }
+  }
+}

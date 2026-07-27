@@ -1,1 +1,68 @@
-{ "AP_HELPDESK": { "title": { "string": "Helpdesk / Ticketing" }, "description": { "string": "Auto-create tickets from emails with assignment, priority, SLA tracking, and response history." }, "form": { "create": { "string": "New Ticket" }, "cancel": { "string": "Cancel" }, "title": { "string": "Create Ticket" }, "subject": { "string": "Subject" }, "priority": { "string": "Priority" }, "description": { "string": "Description" }, "requester": { "string": "Requester Email" }, "assignee": { "string": "Assignee Email" }, "sla": { "string": "SLA (hours)" }, "submit": { "string": "Create Ticket" } }, "create": { "success": { "string": "Ticket created" }, "error": { "string": "Failed to create" } }, "update": { "success": { "string": "Ticket updated" }, "error": { "string": "Failed to update" } }, "list": { "empty": { "string": "No tickets yet." } }, "errors": { "fields": { "string": "Subject and description are required" } } }}
+{
+  "AP_HELPDESK": {
+    "title": {
+      "string": "Helpdesk / Ticketing"
+    },
+    "description": {
+      "string": "Crear tickets automaticamente desde correos."
+    },
+    "form": {
+      "create": {
+        "string": "Nuevo ticket"
+      },
+      "cancel": {
+        "string": "Cancelar"
+      },
+      "title": {
+        "string": "Crear ticket"
+      },
+      "subject": {
+        "string": "Asunto"
+      },
+      "priority": {
+        "string": "Prioridad"
+      },
+      "description": {
+        "string": "Descripcion"
+      },
+      "requester": {
+        "string": "Correo del solicitante"
+      },
+      "assignee": {
+        "string": "Correo del asignado"
+      },
+      "sla": {
+        "string": "SLA (horas)"
+      },
+      "submit": {
+        "string": "Crear ticket"
+      }
+    },
+    "create": {
+      "success": {
+        "string": "Ticket creado"
+      },
+      "error": {
+        "string": "Error al crear"
+      }
+    },
+    "update": {
+      "success": {
+        "string": "Ticket actualizado"
+      },
+      "error": {
+        "string": "Error al actualizar"
+      }
+    },
+    "list": {
+      "empty": {
+        "string": "Sin tickets."
+      }
+    },
+    "errors": {
+      "fields": {
+        "string": "Asunto y descripcion requeridos"
+      }
+    }
+  }
+}

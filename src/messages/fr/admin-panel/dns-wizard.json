@@ -1,7 +1,7 @@
 {
   "AP_DNS_WIZARD": {
     "title": {
-      "string": "DNS Wizard"
+      "string": "Assistant DNS"
     },
     "description": {
       "string": "Generate and validate DNS records for email authentication (SPF, DKIM, DMARC). Add these records to your domain's DNS zone to protect against spoofing and improve deliverability."

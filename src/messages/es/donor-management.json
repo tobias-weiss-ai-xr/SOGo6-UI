@@ -1,0 +1,100 @@
+{
+  "DONOR": {
+    "title": {
+      "string": "Gestión de donantes"
+    },
+    "description": {
+      "string": "Seguimiento de donantes, consentimiento RGPD y recibos"
+    },
+    "errors": {
+      "fields": {
+        "string": "Campos obligatorios faltantes"
+      },
+      "fail": {
+        "string": "Operación fallida"
+      }
+    },
+    "success": {
+      "create": {
+        "string": "Donante registrado"
+      },
+      "donate": {
+        "string": "Donación registrada"
+      }
+    },
+    "register": {
+      "title": {
+        "string": "Registrar donante"
+      }
+    },
+    "donate": {
+      "title": {
+        "string": "Registrar donación"
+      },
+      "select": {
+        "string": "Seleccionar donante..."
+      },
+      "campaign": {
+        "string": "Campaña"
+      }
+    },
+    "field": {
+      "name": {
+        "string": "Nombre"
+      },
+      "email": {
+        "string": "Correo"
+      },
+      "type": {
+        "string": "Tipo"
+      },
+      "total": {
+        "string": "Total"
+      },
+      "donations": {
+        "string": "Donaciones"
+      },
+      "consent": {
+        "string": "RGPD"
+      }
+    },
+    "type": {
+      "individual": {
+        "string": "Individual"
+      },
+      "corporate": {
+        "string": "Corporativo"
+      },
+      "foundation": {
+        "string": "Fundación"
+      }
+    },
+    "button": {
+      "register": {
+        "string": "Registrar"
+      },
+      "donate": {
+        "string": "Registrar donación"
+      }
+    },
+    "stats": {
+      "title": {
+        "string": "Estadísticas"
+      },
+      "total_donors": {
+        "string": "Total donantes"
+      },
+      "total_raised": {
+        "string": "Total recaudado"
+      }
+    },
+    "list": {
+      "title": {
+        "string": "Todos los donantes"
+      },
+      "empty": {
+        "string": "Sin donantes"
+      }
+    }
+  }
+}

@@ -1,1 +1,46 @@
-{ "AI_CLASSIFY": { "title": { "string": "Smart Email Classification" }, "description": { "string": "Auto-label emails: newsletter, invoice, notification, social, personal." }, "input": { "title": { "string": "Input Email" }, "subject": { "string": "Subject" }, "sender": { "string": "Sender" }, "body": { "string": "Body" }, "placeholder": { "string": "Paste email content..." } }, "output": { "title": { "string": "Classification Results" }, "empty": { "string": "Enter text and click Classify" } }, "classify": { "string": "Classify" }, "errors": { "empty": { "string": "Enter email text" }, "fail": { "string": "Classification failed" } } }}
+{
+  "AI_CLASSIFY": {
+    "title": {
+      "string": "邮件分类"
+    },
+    "description": {
+      "string": "自动邮件分类及置信度评分"
+    },
+    "input": {
+      "title": {
+        "string": "输入"
+      },
+      "subject": {
+        "string": "主题"
+      },
+      "sender": {
+        "string": "发件人"
+      },
+      "body": {
+        "string": "邮件正文"
+      },
+      "placeholder": {
+        "string": "在此粘贴邮件文本..."
+      }
+    },
+    "output": {
+      "title": {
+        "string": "分类结果"
+      },
+      "empty": {
+        "string": "分类结果将在此显示"
+      }
+    },
+    "classify": {
+      "string": "分类"
+    },
+    "errors": {
+      "empty": {
+        "string": "请输入文本"
+      },
+      "fail": {
+        "string": "分类失败"
+      }
+    }
+  }
+}

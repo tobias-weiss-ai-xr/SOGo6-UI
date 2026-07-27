@@ -1,7 +1,7 @@
 {
   "AP_RESOURCES": {
     "title": {
-      "string": "Resource Booking"
+      "string": "Reserva de recursos"
     },
     "description": {
       "string": "Manage bookable resources such as meeting rooms, equipment, and vehicles. Resources can be invited as attendees to calendar events with automatic conflict detection."

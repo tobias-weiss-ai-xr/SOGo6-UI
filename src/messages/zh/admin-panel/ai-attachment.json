@@ -1,1 +1,40 @@
-{ "AI_ATTACH": { "title": { "string": "Smart Attachment Actions" }, "description": { "string": "Auto-detect document type and suggest save, forward, or archive actions." }, "input": { "title": { "string": "Attachment" }, "filename": { "string": "Filename" } }, "output": { "title": { "string": "Analysis" }, "empty": { "string": "Enter a filename" }, "preview": { "string": "Can Preview" } }, "classify": { "string": "Classify" }, "errors": { "empty": { "string": "Enter a filename" }, "fail": { "string": "Classification failed" } } }}
+{
+  "AI_ATTACH": {
+    "title": {
+      "string": "智能附件操作"
+    },
+    "description": {
+      "string": "自动文件类型识别与操作建议"
+    },
+    "input": {
+      "title": {
+        "string": "输入"
+      },
+      "filename": {
+        "string": "文件名"
+      }
+    },
+    "output": {
+      "title": {
+        "string": "结果"
+      },
+      "empty": {
+        "string": "结果将在此显示"
+      },
+      "preview": {
+        "string": "可预览"
+      }
+    },
+    "classify": {
+      "string": "分类"
+    },
+    "errors": {
+      "empty": {
+        "string": "请输入文件名"
+      },
+      "fail": {
+        "string": "分类失败"
+      }
+    }
+  }
+}

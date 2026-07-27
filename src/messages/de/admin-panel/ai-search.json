@@ -1,1 +1,40 @@
-{ "AI_SEARCH": { "title": { "string": "Natural Language Search" }, "description": { "string": "Search emails with plain English. Converts to structured queries automatically." }, "input": { "placeholder": { "string": "Show invoices from March over $500..." } }, "output": { "title": { "string": "Parsed Query" }, "empty": { "string": "Enter a search query above" }, "detected": { "string": "Detected filters" } }, "search": { "string": "Search" }, "errors": { "empty": { "string": "Enter a search query" }, "fail": { "string": "Search failed" } } }}
+{
+  "AI_SEARCH": {
+    "title": {
+      "string": "Natürlichsprach-Suche"
+    },
+    "description": {
+      "string": "Suchanfragen in strukturierte Filter umwandeln"
+    },
+    "input": {
+      "title": {
+        "string": "Suchanfrage"
+      },
+      "placeholder": {
+        "string": "E-Mails von John über das Projekt vom letzten Monat"
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Erkannte Filter"
+      },
+      "empty": {
+        "string": "Filter werden hier angezeigt"
+      },
+      "detected": {
+        "string": "Erkannt"
+      }
+    },
+    "search": {
+      "string": "Suchen"
+    },
+    "errors": {
+      "empty": {
+        "string": "Suchbegriff erforderlich"
+      },
+      "fail": {
+        "string": "Suche fehlgeschlagen"
+      }
+    }
+  }
+}

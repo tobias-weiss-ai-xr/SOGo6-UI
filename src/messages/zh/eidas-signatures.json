@@ -1,0 +1,74 @@
+{
+  "EIDAS": {
+    "title": {
+      "string": "eIDAS 签名"
+    },
+    "description": {
+      "string": "根据欧盟法规 910/2014 的合格电子签名"
+    },
+    "errors": {
+      "fields": {
+        "string": "所有字段必填"
+      },
+      "fail": {
+        "string": "操作失败"
+      }
+    },
+    "success": {
+      "sign": {
+        "string": "已使用 QES 签名"
+      }
+    },
+    "sign": {
+      "title": {
+        "string": "签署文档"
+      },
+      "placeholder": {
+        "string": "输入要签署的文档内容..."
+      },
+      "signer": {
+        "string": "签署者邮箱"
+      },
+      "algorithm": {
+        "string": "哈希算法"
+      },
+      "button": {
+        "string": "使用 QES 签署"
+      }
+    },
+    "verify": {
+      "title": {
+        "string": "验证签名"
+      },
+      "doc_hash": {
+        "string": "文档哈希"
+      },
+      "signature": {
+        "string": "签名"
+      },
+      "button": {
+        "string": "验证"
+      },
+      "valid": {
+        "string": "有效"
+      },
+      "invalid": {
+        "string": "无效"
+      }
+    },
+    "certs": {
+      "title": {
+        "string": "信任服务证书"
+      },
+      "type": {
+        "string": "类型"
+      },
+      "name": {
+        "string": "名称"
+      },
+      "hash": {
+        "string": "哈希"
+      }
+    }
+  }
+}

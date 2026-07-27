@@ -1,0 +1,10 @@
+{
+  "PROTOCOLS": {
+    "title": {
+      "string": "邮件协议状态"
+    },
+    "description": {
+      "string": "JMAP 和 ActiveSync 协议服务器状态和功能"
+    }
+  }
+}

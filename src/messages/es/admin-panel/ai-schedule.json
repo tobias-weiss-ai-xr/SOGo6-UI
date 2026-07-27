@@ -1,1 +1,46 @@
-{ "AI_SCHEDULE": { "title": { "string": "Smart Calendar Scheduling" }, "description": { "string": "AI-suggested meeting times based on attendee availability patterns and preferences." }, "input": { "title": { "string": "Meeting Setup" }, "attendees": { "string": "Attendees" }, "from": { "string": "From" }, "to": { "string": "To" }, "duration": { "string": "Duration (min)" } }, "output": { "title": { "string": "Suggested Times" } }, "suggest": { "string": "Suggest Times" }, "errors": { "fields": { "string": "Attendees, from, and to dates are required" }, "fail": { "string": "Suggestion failed" } } }}
+{
+  "AI_SCHEDULE": {
+    "title": {
+      "string": "Programación inteligente de reuniones"
+    },
+    "description": {
+      "string": "Sugerencias de horario con análisis de participantes y detección de conflictos"
+    },
+    "input": {
+      "title": {
+        "string": "Entrada"
+      },
+      "attendees": {
+        "string": "Participantes"
+      },
+      "from": {
+        "string": "Desde"
+      },
+      "to": {
+        "string": "Hasta"
+      },
+      "duration": {
+        "string": "Duración (min)"
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Sugerencias"
+      },
+      "empty": {
+        "string": "Sin sugerencias"
+      }
+    },
+    "suggest": {
+      "string": "Sugerir"
+    },
+    "errors": {
+      "fields": {
+        "string": "Todos los campos requeridos"
+      },
+      "fail": {
+        "string": "Sugerencias fallidas"
+      }
+    }
+  }
+}

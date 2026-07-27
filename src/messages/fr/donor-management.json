@@ -1,0 +1,100 @@
+{
+  "DONOR": {
+    "title": {
+      "string": "Gestion des donateurs"
+    },
+    "description": {
+      "string": "Suivi des donateurs, consentement RGPD et reçus"
+    },
+    "errors": {
+      "fields": {
+        "string": "Champs requis manquants"
+      },
+      "fail": {
+        "string": "Opération échouée"
+      }
+    },
+    "success": {
+      "create": {
+        "string": "Donateur enregistré"
+      },
+      "donate": {
+        "string": "Don enregistré"
+      }
+    },
+    "register": {
+      "title": {
+        "string": "Enregistrer un donateur"
+      }
+    },
+    "donate": {
+      "title": {
+        "string": "Enregistrer un don"
+      },
+      "select": {
+        "string": "Sélectionner un donateur..."
+      },
+      "campaign": {
+        "string": "Campagne"
+      }
+    },
+    "field": {
+      "name": {
+        "string": "Nom"
+      },
+      "email": {
+        "string": "E-mail"
+      },
+      "type": {
+        "string": "Type"
+      },
+      "total": {
+        "string": "Total"
+      },
+      "donations": {
+        "string": "Dons"
+      },
+      "consent": {
+        "string": "RGPD"
+      }
+    },
+    "type": {
+      "individual": {
+        "string": "Personne"
+      },
+      "corporate": {
+        "string": "Entreprise"
+      },
+      "foundation": {
+        "string": "Fondation"
+      }
+    },
+    "button": {
+      "register": {
+        "string": "Enregistrer"
+      },
+      "donate": {
+        "string": "Enregistrer le don"
+      }
+    },
+    "stats": {
+      "title": {
+        "string": "Statistiques"
+      },
+      "total_donors": {
+        "string": "Total donateurs"
+      },
+      "total_raised": {
+        "string": "Total collecté"
+      }
+    },
+    "list": {
+      "title": {
+        "string": "Tous les donateurs"
+      },
+      "empty": {
+        "string": "Aucun donateur"
+      }
+    }
+  }
+}

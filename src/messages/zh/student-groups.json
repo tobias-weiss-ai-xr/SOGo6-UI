@@ -1,0 +1,44 @@
+{
+  "STUDENT_GROUPS": {
+    "title": {
+      "string": "学生分组"
+    },
+    "description": {
+      "string": "管理学生分组和注册"
+    },
+    "errors": {
+      "name": {
+        "string": "分组名称必填"
+      },
+      "fail": {
+        "string": "操作失败"
+      }
+    },
+    "success": {
+      "create": {
+        "string": "分组已创建"
+      }
+    },
+    "field": {
+      "name": {
+        "string": "分组名称"
+      },
+      "course": {
+        "string": "课程代码"
+      }
+    },
+    "button": {
+      "create": {
+        "string": "创建分组"
+      }
+    },
+    "label": {
+      "none": {
+        "string": "无"
+      },
+      "students": {
+        "string": "学生"
+      }
+    }
+  }
+}

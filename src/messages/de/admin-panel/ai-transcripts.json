@@ -1,1 +1,60 @@
-{ "AI_TRANSCRIPTS": { "title": { "string": "Meeting Transcripts" }, "description": { "string": "Record meeting transcripts, auto-generate summaries and action items." }, "form": { "create": { "string": "New Transcript" }, "cancel": { "string": "Cancel" }, "title": { "string": "Create Transcript" }, "meeting_title": { "string": "Meeting Title" }, "event_id": { "string": "Calendar Event ID" }, "attendees": { "string": "Attendees" }, "transcript": { "string": "Transcript / Notes" }, "placeholder": { "string": "Paste meeting notes or transcript..." }, "submit": { "string": "Save & Summarize" } }, "create": { "success": { "string": "Transcript saved" }, "error": { "string": "Failed to save" } }, "list": { "empty": { "string": "No transcripts yet." } }, "errors": { "fields": { "string": "Title and transcript text are required" } } }}
+{
+  "AI_TRANSCRIPTS": {
+    "title": {
+      "string": "Meeting-Transkripte"
+    },
+    "description": {
+      "string": "Transkript-Verwaltung mit automatischer Zusammenfassung und Aktionspunkte"
+    },
+    "input": {
+      "title": {
+        "string": "Neues Transkript"
+      },
+      "transcript_title": {
+        "string": "Titel"
+      },
+      "attendees": {
+        "string": "Teilnehmer"
+      },
+      "content": {
+        "string": "Inhalt"
+      },
+      "placeholder": {
+        "string": "Meeting-Transkript hier einfügen..."
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Zusammenfassung"
+      },
+      "empty": {
+        "string": "Zusammenfassung wird hier angezeigt"
+      }
+    },
+    "list": {
+      "title": {
+        "string": "Transkripte"
+      },
+      "empty": {
+        "string": "Keine Transkripte vorhanden"
+      },
+      "duration": {
+        "string": "Min"
+      },
+      "attendees_short": {
+        "string": "Teiln."
+      }
+    },
+    "create": {
+      "string": "Erstellen"
+    },
+    "errors": {
+      "fields": {
+        "string": "Titel und Inhalt erforderlich"
+      },
+      "fail": {
+        "string": "Erstellung fehlgeschlagen"
+      }
+    }
+  }
+}

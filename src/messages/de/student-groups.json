@@ -1,0 +1,44 @@
+{
+  "STUDENT_GROUPS": {
+    "title": {
+      "string": "Studentengruppen"
+    },
+    "description": {
+      "string": "Studentengruppen und Einschreibungen verwalten"
+    },
+    "errors": {
+      "name": {
+        "string": "Gruppenname erforderlich"
+      },
+      "fail": {
+        "string": "Vorgang fehlgeschlagen"
+      }
+    },
+    "success": {
+      "create": {
+        "string": "Gruppe erstellt"
+      }
+    },
+    "field": {
+      "name": {
+        "string": "Gruppenname"
+      },
+      "course": {
+        "string": "Kurskennung"
+      }
+    },
+    "button": {
+      "create": {
+        "string": "Gruppe erstellen"
+      }
+    },
+    "label": {
+      "none": {
+        "string": "Keine"
+      },
+      "students": {
+        "string": "Studenten"
+      }
+    }
+  }
+}

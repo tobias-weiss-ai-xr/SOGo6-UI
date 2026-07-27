@@ -1,0 +1,71 @@
+{
+  "MATRIX": {
+    "title": {
+      "string": "Integración Matrix Chat"
+    },
+    "description": {
+      "string": "Salas Matrix integradas y vinculación de usuarios SOGo"
+    },
+    "errors": {
+      "name": {
+        "string": "Nombre requerido"
+      },
+      "fail": {
+        "string": "Operación fallida"
+      }
+    },
+    "success": {
+      "config": {
+        "string": "Configuración guardada"
+      },
+      "room": {
+        "string": "Sala creada"
+      }
+    },
+    "config": {
+      "title": {
+        "string": "Configuración del servidor"
+      },
+      "enabled": {
+        "string": "Activado"
+      },
+      "bridge": {
+        "string": "Bridge"
+      }
+    },
+    "rooms": {
+      "title": {
+        "string": "Salas de chat"
+      },
+      "name": {
+        "placeholder": {
+          "string": "Nombre de la sala..."
+        }
+      },
+      "visibility": {
+        "private": {
+          "string": "Privado"
+        },
+        "public": {
+          "string": "Público"
+        }
+      },
+      "button": {
+        "save": {
+          "string": "Guardar"
+        },
+        "create": {
+          "string": "Crear sala"
+        }
+      }
+    },
+    "links": {
+      "title": {
+        "string": "Enlaces de usuarios"
+      },
+      "empty": {
+        "string": "Sin usuarios vinculados"
+      }
+    }
+  }
+}

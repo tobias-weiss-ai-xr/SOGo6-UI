@@ -1,1 +1,60 @@
-{ "AI_TRANSCRIPTS": { "title": { "string": "Meeting Transcripts" }, "description": { "string": "Record meeting transcripts, auto-generate summaries and action items." }, "form": { "create": { "string": "New Transcript" }, "cancel": { "string": "Cancel" }, "title": { "string": "Create Transcript" }, "meeting_title": { "string": "Meeting Title" }, "event_id": { "string": "Calendar Event ID" }, "attendees": { "string": "Attendees" }, "transcript": { "string": "Transcript / Notes" }, "placeholder": { "string": "Paste meeting notes or transcript..." }, "submit": { "string": "Save & Summarize" } }, "create": { "success": { "string": "Transcript saved" }, "error": { "string": "Failed to save" } }, "list": { "empty": { "string": "No transcripts yet." } }, "errors": { "fields": { "string": "Title and transcript text are required" } } }}
+{
+  "AI_TRANSCRIPTS": {
+    "title": {
+      "string": "会议记录"
+    },
+    "description": {
+      "string": "会议记录管理，自动生成摘要和行动要点"
+    },
+    "input": {
+      "title": {
+        "string": "新建记录"
+      },
+      "transcript_title": {
+        "string": "标题"
+      },
+      "attendees": {
+        "string": "参会者"
+      },
+      "content": {
+        "string": "内容"
+      },
+      "placeholder": {
+        "string": "在此粘贴会议记录..."
+      }
+    },
+    "output": {
+      "title": {
+        "string": "摘要"
+      },
+      "empty": {
+        "string": "摘要将在此显示"
+      }
+    },
+    "list": {
+      "title": {
+        "string": "记录列表"
+      },
+      "empty": {
+        "string": "暂无记录"
+      },
+      "duration": {
+        "string": "分钟"
+      },
+      "attendees_short": {
+        "string": "人"
+      }
+    },
+    "create": {
+      "string": "创建"
+    },
+    "errors": {
+      "fields": {
+        "string": "标题和内容必填"
+      },
+      "fail": {
+        "string": "创建失败"
+      }
+    }
+  }
+}
