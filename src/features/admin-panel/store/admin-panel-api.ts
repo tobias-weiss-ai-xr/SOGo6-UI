@@ -944,6 +944,63 @@ const injectedEndpoints = apiSlice.injectEndpoints({
     getFreeBusy: builder.mutation<any, { target_uids: string[]; start: string; end: string }>({
       query: (body) => ({ url: '/api/v1/calendar/freebusy', method: 'POST', body }),
     }),
+
+    // ── Tier 5: AI & Intelligence (#56-#65) ────────────────────────────
+
+    // #56 Email Summarization
+    aiSummarize: builder.mutation<{ summary: string; model: string }, { text: string; max_sentences?: number }>({
+      query: (body) => ({ url: '/api/user/v1/ai/summarize', method: 'POST', body }),
+    }),
+
+    // #57 Smart Email Classification
+    aiClassify: builder.mutation<{ labels: Array<{ label: string; confidence: number }> }, { text: string; subject?: string; sender?: string }>({
+      query: (body) => ({ url: '/api/user/v1/ai/classify', method: 'POST', body }),
+    }),
+
+    // #58 AI Draft Assistant (suggest-reply)
+    aiSuggestReply: builder.mutation<{ suggestion: string }, { email_text: string; tone?: string }>({
+      query: (body) => ({ url: '/api/user/v1/ai/suggest-reply', method: 'POST', body }),
+    }),
+
+    // #59 Natural Language Search
+    aiNaturalSearch: builder.mutation<{ query: string; filters: Record<string, any> }, { query: string }>({
+      query: (body) => ({ url: '/api/user/v1/ai/natural-search', method: 'POST', body }),
+    }),
+
+    // #60 Smart Calendar Scheduling
+    aiSuggestMeetingTimes: builder.mutation<any, any>({
+      query: (body) => ({ url: '/api/user/v1/ai/smart-calendar/suggest-times', method: 'POST', body }),
+    }),
+
+    // #61 Anomaly Detection
+    aiDetectAnomaly: builder.mutation<any, any>({
+      query: (body) => ({ url: '/api/user/v1/ai/detect-anomaly', method: 'POST', body }),
+    }),
+
+    // #62 Contact Auto-Enrichment
+    aiEnrichContact: builder.mutation<{ phone?: string; title?: string; company?: string; location?: string }, { text: string }>({
+      query: (body) => ({ url: '/api/user/v1/ai/enrich-contact', method: 'POST', body }),
+    }),
+
+    // #63 Smart Attachment Actions
+    aiClassifyAttachment: builder.mutation<{ type: string; suggestion: string; can_preview: boolean }, { filename: string; content_type?: string }>({
+      query: (body) => ({ url: '/api/user/v1/ai/classify-attachment', method: 'POST', body }),
+    }),
+
+    // #64 Intelligent Spam Filtering
+    aiSpamScore: builder.mutation<any, { subject: string; body: string; sender?: string; has_attachments?: boolean }>({
+      query: (body) => ({ url: '/api/user/v1/ai/spam/score', method: 'POST', body }),
+    }),
+
+    // #65 Meeting Transcripts
+    listTranscripts: builder.query<any[], void>({
+      query: () => ({ url: '/api/user/v1/ai/transcripts', method: 'GET' }),
+      providesTags: ['AdminTranscripts'],
+    }),
+    createTranscript: builder.mutation<any, any>({
+      query: (body) => ({ url: '/api/user/v1/ai/transcripts', method: 'POST', body }),
+      invalidatesTags: ['AdminTranscripts'],
+    }),
   }),
   overrideExisting: false,
 })
@@ -1036,4 +1093,15 @@ export const {
   useCreateQuickActionMutation,
   useDeleteQuickActionMutation,
   useGetFreeBusyMutation,
+  useAiSummarizeMutation,
+  useAiClassifyMutation,
+  useAiSuggestReplyMutation,
+  useAiNaturalSearchMutation,
+  useAiSuggestMeetingTimesMutation,
+  useAiDetectAnomalyMutation,
+  useAiEnrichContactMutation,
+  useAiClassifyAttachmentMutation,
+  useAiSpamScoreMutation,
+  useListTranscriptsQuery,
+  useCreateTranscriptMutation,
 } = injectedEndpoints

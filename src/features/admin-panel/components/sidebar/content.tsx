@@ -1,4 +1,4 @@
-import { Database, Palette, Users, UserCog, BookOpen, Shield, Building2, Activity, ScrollText, HardDrive, FileUp, Bug, Palette as BrandIcon, Archive, GitBranch, ArrowRightLeft, FileCode, Webhook, Key, FileText, Cloud, CalendarDays, CalendarClock, PenLine, Share2, GitBranch as ApprovalIcon, Ticket, Building2 as CrmIcon, Workflow, Zap, CalendarRange } from 'lucide-react'
+import { Database, Palette, Users, UserCog, BookOpen, Shield, Building2, Activity, ScrollText, HardDrive, FileUp, Bug, Palette as BrandIcon, Archive, GitBranch, ArrowRightLeft, FileCode, Webhook, Key, FileText, Cloud, CalendarDays, CalendarClock, PenLine, Share2, GitBranch as ApprovalIcon, Ticket, Building2 as CrmIcon, Workflow, Zap, CalendarRange, Sparkles, Tags, PenTool, Search, ShieldCheck, FileAudio } from 'lucide-react'
 
 const navItems = [
   {
@@ -197,6 +197,66 @@ const navItems = [
     isActive: true,
     collapsedIcon: CalendarRange,
     url: '/admin_panel/freebusy',
+  },
+  {
+    title: 'AP_SIDEBAR.ai_summarize.string',
+    isActive: true,
+    collapsedIcon: Sparkles,
+    url: '/admin_panel/ai-summarize',
+  },
+  {
+    title: 'AP_SIDEBAR.ai_classify.string',
+    isActive: true,
+    collapsedIcon: Tags,
+    url: '/admin_panel/ai-classify',
+  },
+  {
+    title: 'AP_SIDEBAR.ai_draft.string',
+    isActive: true,
+    collapsedIcon: PenTool,
+    url: '/admin_panel/ai-draft',
+  },
+  {
+    title: 'AP_SIDEBAR.ai_search.string',
+    isActive: true,
+    collapsedIcon: Search,
+    url: '/admin_panel/ai-search',
+  },
+  {
+    title: 'AP_SIDEBAR.ai_schedule.string',
+    isActive: true,
+    collapsedIcon: CalendarDays,
+    url: '/admin_panel/ai-schedule',
+  },
+  {
+    title: 'AP_SIDEBAR.ai_anomaly.string',
+    isActive: true,
+    collapsedIcon: ShieldCheck,
+    url: '/admin_panel/ai-anomaly',
+  },
+  {
+    title: 'AP_SIDEBAR.ai_enrich.string',
+    isActive: true,
+    collapsedIcon: UserCog,
+    url: '/admin_panel/ai-enrich',
+  },
+  {
+    title: 'AP_SIDEBAR.ai_attachment.string',
+    isActive: true,
+    collapsedIcon: FileText,
+    url: '/admin_panel/ai-attachment',
+  },
+  {
+    title: 'AP_SIDEBAR.ai_spam.string',
+    isActive: true,
+    collapsedIcon: ShieldCheck,
+    url: '/admin_panel/ai-spam',
+  },
+  {
+    title: 'AP_SIDEBAR.ai_transcripts.string',
+    isActive: true,
+    collapsedIcon: FileAudio,
+    url: '/admin_panel/ai-transcripts',
   },
   {
     title: 'PORTAL.title.string',
