@@ -1,4 +1,4 @@
-import { Database, Palette, Users, UserCog, BookOpen, Shield, Building2, Activity, ScrollText, HardDrive, FileUp, Bug, Palette as BrandIcon, Archive, GitBranch, ArrowRightLeft, FileCode, Webhook, Key, FileText, Cloud } from 'lucide-react'
+import { Database, Palette, Users, UserCog, BookOpen, Shield, Building2, Activity, ScrollText, HardDrive, FileUp, Bug, Palette as BrandIcon, Archive, GitBranch, ArrowRightLeft, FileCode, Webhook, Key, FileText, Cloud, CalendarDays, CalendarClock, PenLine, Share2 } from 'lucide-react'
 
 const navItems = [
   {
@@ -113,6 +113,36 @@ const navItems = [
     isActive: true,
     collapsedIcon: Key,
     url: '/admin_panel/oauth-clients',
+  },
+  {
+    title: 'AP_SIDEBAR.scheduling_polls.string',
+    isActive: true,
+    collapsedIcon: CalendarDays,
+    url: '/admin_panel/scheduling-polls',
+  },
+  {
+    title: 'AP_SIDEBAR.appointment_slots.string',
+    isActive: true,
+    collapsedIcon: CalendarClock,
+    url: '/admin_panel/appointment-slots',
+  },
+  {
+    title: 'AP_SIDEBAR.shared_drafts.string',
+    isActive: true,
+    collapsedIcon: PenLine,
+    url: '/admin_panel/shared-drafts',
+  },
+  {
+    title: 'AP_SIDEBAR.file_sharing.string',
+    isActive: true,
+    collapsedIcon: Share2,
+    url: '/admin_panel/file-sharing',
+  },
+  {
+    title: 'AP_SIDEBAR.doc_preview.string',
+    isActive: true,
+    collapsedIcon: FileText,
+    url: '/admin_panel/document-preview',
   },
   {
     title: 'AP_SIDEBAR.api_docs.string',

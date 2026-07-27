@@ -12,6 +12,11 @@
     "config_code": { "string": "Config as Code" },
     "webhooks": { "string": "Webhooks" },
     "oauth_clients": { "string": "OAuth Clients" },
+    "scheduling_polls": { "string": "Scheduling Polls" },
+    "appointment_slots": { "string": "Appointment Slots" },
+    "shared_drafts": { "string": "Shared Drafts" },
+    "file_sharing": { "string": "File Sharing" },
+    "doc_preview": { "string": "Doc Preview" },
     "api_docs": { "string": "API Documentation" },
     "config": {
       "string": "Configuration",
@@ -27,7 +32,6 @@
     "health": { "string": "Health" },
     "debug": { "string": "Mailbox Debug" },
     "dns_wizard": { "string": "DNS Wizard" },
-    "resources": { "string": "Resources" },
-    "doc_preview": { "string": "Doc Preview" }
+    "resources": { "string": "Resources" }
   }
 }

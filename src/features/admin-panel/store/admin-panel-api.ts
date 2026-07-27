@@ -821,6 +821,54 @@ const injectedEndpoints = apiSlice.injectEndpoints({
       }),
       invalidatesTags: ['AdminOAuth'],
     }),
+
+    // ── Scheduling Polls (#46) ─────────────────────────────────────────
+    listSchedulingPolls: builder.query<Array<{ id: string; title: string; status: string; response_count: number; created_at: number }>, void>({
+      query: () => ({ url: '/api/v1/calendar/polls', method: 'GET' }),
+      providesTags: ['AdminPolls'],
+    }),
+    createSchedulingPoll: builder.mutation<any, any>({
+      query: (body) => ({ url: '/api/v1/calendar/polls', method: 'POST', body }),
+      invalidatesTags: ['AdminPolls'],
+    }),
+
+    // ── Appointment Slots (#47) ─────────────────────────────────────────
+    listAppointmentSlots: builder.query<Array<{ id: string; title: string; duration_minutes: number; enabled: boolean; booking_url: string }>, void>({
+      query: () => ({ url: '/api/v1/calendar/appointment-slots', method: 'GET' }),
+      providesTags: ['AdminSlots'],
+    }),
+    createAppointmentSlot: builder.mutation<any, any>({
+      query: (body) => ({ url: '/api/v1/calendar/appointment-slots', method: 'POST', body }),
+      invalidatesTags: ['AdminSlots'],
+    }),
+    listSlotBookings: builder.query<Array<{ id: string; name: string; email: string; date: string; time: string }>, void>({
+      query: () => ({ url: '/api/v1/calendar/appointment-slots/bookings', method: 'GET' }),
+      providesTags: ['AdminSlots'],
+    }),
+
+    // ── Collaborative Drafts (#49) ────────────────────────────────────
+    listSharedDrafts: builder.query<Array<{ id: string; subject: string; author: string; status: string; created_at: number }>, void>({
+      query: () => ({ url: '/api/v1/mail/shared-drafts', method: 'GET' }),
+      providesTags: ['AdminDrafts'],
+    }),
+    createSharedDraft: builder.mutation<any, any>({
+      query: (body) => ({ url: '/api/v1/mail/shared-drafts', method: 'POST', body }),
+      invalidatesTags: ['AdminDrafts'],
+    }),
+    reviewSharedDraft: builder.mutation<any, { draft_id: string; reviewer: string; comment?: string; approved: boolean }>({
+      query: ({ draft_id, ...body }) => ({ url: `/api/v1/mail/shared-drafts/${draft_id}/review`, method: 'POST', body }),
+      invalidatesTags: ['AdminDrafts'],
+    }),
+
+    // ── File Sharing (#52) ──────────────────────────────────────────────
+    listFileShares: builder.query<Array<{ id: string; filename: string; size: number; downloads: number; expires_at: number; url: string }>, void>({
+      query: () => ({ url: '/admin/v1/files/shares', method: 'GET' }),
+      providesTags: ['AdminFileShares'],
+    }),
+    createFileShare: builder.mutation<{ id: string; token: string; url: string; expires_at: number }, { filename: string; size: number; expires_in_days?: number; password?: string }>({
+      query: (body) => ({ url: '/admin/v1/files/shares', method: 'POST', body }),
+      invalidatesTags: ['AdminFileShares'],
+    }),
   }),
   overrideExisting: false,
 })
@@ -887,4 +935,14 @@ export const {
   useDeleteWebhookMutation,
   useListOAuthClientsQuery,
   useRegisterOAuthClientMutation,
+  useListSchedulingPollsQuery,
+  useCreateSchedulingPollMutation,
+  useListAppointmentSlotsQuery,
+  useCreateAppointmentSlotMutation,
+  useListSlotBookingsQuery,
+  useListSharedDraftsQuery,
+  useCreateSharedDraftMutation,
+  useReviewSharedDraftMutation,
+  useListFileSharesQuery,
+  useCreateFileShareMutation,
 } = injectedEndpoints
