@@ -2,6 +2,15 @@ import '@testing-library/jest-dom'
 import { render, screen } from '@testing-library/react'
 import { LoginForm } from '../login-form'
 
+// Mock Redux hooks to avoid needing Provider wrapper
+jest.mock('@/lib/redux/hooks', () => ({
+  useAppDispatch: () => jest.fn(),
+  useAppSelector: (selector: any) => {
+    if (typeof selector === 'function') return selector({})
+    return {}
+  },
+}))
+
 jest.mock('next-intl', () => ({
   useTranslations: () => (key: string) => key,
   useLocale: () => 'en',

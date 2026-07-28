@@ -31,7 +31,9 @@ jest.mock('next/navigation', () => ({
 }))
 
 jest.mock('@/components/ui/tooltip', () => ({
-  TooltipWrapper: ({ children }: any) => <div>{children}</div>,
+  Tooltip: ({ children }: any) => <div>{children}</div>,
+  TooltipContent: ({ children }: any) => <div>{children}</div>,
+  TooltipTrigger: ({ children }: any) => <div>{children}</div>,
 }))
 
 const mockUseRouter = useRouter as jest.Mock
