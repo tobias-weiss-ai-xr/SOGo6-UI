@@ -560,7 +560,7 @@ describe('KeyboardTabPanel', () => {
       </KeyboardTabPanel>
     );
 
-    expect(screen.getByRole('tabpanel')).toBeInTheDocument();
+    expect(screen.getByRole('tabpanel', { hidden: true })).toBeInTheDocument();
   });
 
   it('is aria-hidden when not selected', () => {
@@ -570,7 +570,7 @@ describe('KeyboardTabPanel', () => {
       </KeyboardTabPanel>
     );
 
-    const panel = screen.getByRole('tabpanel');
+    const panel = screen.getByRole('tabpanel', { hidden: true });
     expect(panel).toHaveAttribute('aria-hidden', 'true');
   });
 });
@@ -580,12 +580,13 @@ describe('Accessibility Compliance', () => {
     const onSelectionChange = jest.fn();
     const onSelect = jest.fn();
     const items = ['A', 'B', 'C'];
+    let currentIndex = 0;
 
-    render(
+    const { rerender } = render(
       <KeyboardListNavigator
-        selectedIndex={0}
+        selectedIndex={currentIndex}
         itemCount={items.length}
-        onSelectionChange={onSelectionChange}
+        onSelectionChange={(i) => { currentIndex = i; onSelectionChange(i); }}
         onSelect={onSelect}
       >
         {items.map((item, i) => (
@@ -602,6 +603,20 @@ describe('Accessibility Compliance', () => {
     fireEvent.keyDown(listbox, { key: 'ArrowDown' });
     expect(onSelectionChange).toHaveBeenCalledWith(1);
 
+    // Update controlled state and re-render
+    rerender(
+      <KeyboardListNavigator
+        selectedIndex={currentIndex}
+        itemCount={items.length}
+        onSelectionChange={(i) => { currentIndex = i; onSelectionChange(i); }}
+        onSelect={onSelect}
+      >
+        {items.map((item, i) => (
+          <div key={i} id={`item-${i}`}>{item}</div>
+        ))}
+      </KeyboardListNavigator>
+    );
+
     // Enter/Space activate selection
     fireEvent.keyDown(listbox, { key: 'Enter' });
     expect(onSelect).toHaveBeenCalledWith(1);
@@ -612,7 +627,7 @@ describe('Accessibility Compliance', () => {
 
     // Escape dismisses
     const onEscape = jest.fn();
-    const { rerender } = render(
+    render(
       <KeyboardListNavigator
         selectedIndex={0}
         itemCount={items.length}
@@ -625,13 +640,17 @@ describe('Accessibility Compliance', () => {
       </KeyboardListNavigator>
     );
 
-    fireEvent.keyDown(screen.getByRole('listbox'), { key: 'Escape' });
+    // Find the last rendered listbox (after render, there are two)
+    const listboxes = screen.getAllByRole('listbox');
+    const escapeListbox = listboxes[listboxes.length - 1];
+    fireEvent.keyDown(escapeListbox, { key: 'Escape' });
     expect(onEscape).toHaveBeenCalled();
   });
 
   it('KeyboardGridNavigator supports 2D navigation', () => {
     const onPositionChange = jest.fn();
-    render(
+
+    const { rerender } = render(
       <KeyboardGridNavigator
         position={{ row: 1, col: 1 }}
         dimensions={{ rows: 3, cols: 3 }}
@@ -648,13 +667,47 @@ describe('Accessibility Compliance', () => {
     fireEvent.keyDown(grid, { key: 'ArrowUp' });
     expect(onPositionChange).toHaveBeenCalledWith({ row: 0, col: 1 });
 
-    fireEvent.keyDown(grid, { key: 'ArrowDown' });
-    expect(onPositionChange).toHaveBeenCalledWith({ row: 2, col: 1 });
+    // Rerender with updated position
+    rerender(
+      <KeyboardGridNavigator
+        position={{ row: 0, col: 1 }}
+        dimensions={{ rows: 3, cols: 3 }}
+        onPositionChange={onPositionChange}
+        circular={false}
+      >
+        <div>Grid</div>
+      </KeyboardGridNavigator>
+    );
 
-    fireEvent.keyDown(grid, { key: 'ArrowLeft' });
-    expect(onPositionChange).toHaveBeenCalledWith({ row: 2, col: 0 });
+    fireEvent.keyDown(screen.getByRole('grid'), { key: 'ArrowDown' });
+    expect(onPositionChange).toHaveBeenCalledWith({ row: 1, col: 1 });
 
-    fireEvent.keyDown(grid, { key: 'ArrowRight' });
-    expect(onPositionChange).toHaveBeenCalledWith({ row: 2, col: 2 });
+    rerender(
+      <KeyboardGridNavigator
+        position={{ row: 1, col: 1 }}
+        dimensions={{ rows: 3, cols: 3 }}
+        onPositionChange={onPositionChange}
+        circular={false}
+      >
+        <div>Grid</div>
+      </KeyboardGridNavigator>
+    );
+
+    fireEvent.keyDown(screen.getByRole('grid'), { key: 'ArrowLeft' });
+    expect(onPositionChange).toHaveBeenCalledWith({ row: 1, col: 0 });
+
+    rerender(
+      <KeyboardGridNavigator
+        position={{ row: 1, col: 0 }}
+        dimensions={{ rows: 3, cols: 3 }}
+        onPositionChange={onPositionChange}
+        circular={false}
+      >
+        <div>Grid</div>
+      </KeyboardGridNavigator>
+    );
+
+    fireEvent.keyDown(screen.getByRole('grid'), { key: 'ArrowRight' });
+    expect(onPositionChange).toHaveBeenCalledWith({ row: 1, col: 1 });
   });
 });
