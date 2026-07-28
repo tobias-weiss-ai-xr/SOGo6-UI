@@ -1,17 +1,17 @@
 // @ts-nocheck
-import { describe, it, expect, vi } from 'vitest'
+import { describe, it, expect } from '@jest/globals'
 import { render, screen, fireEvent } from '@testing-library/react'
 
 // Mock next-intl
-vi.mock('next-intl', () => ({
+jest.mock('next-intl', () => ({
   useTranslations: () => (key: string) => key,
 }))
 
 // Mock sonner toast
-vi.mock('sonner', () => ({
+jest.mock('sonner', () => ({
   toast: {
-    success: vi.fn(),
-    error: vi.fn(),
+    success: jest.fn(),
+    error: jest.fn(),
   },
 }))
 
@@ -35,20 +35,20 @@ const mockResources = [
   },
 ]
 
-vi.mock('@/features/admin-panel/store/admin-panel-api', () => ({
+jest.mock('@/features/admin-panel/store/admin-panel-api', () => ({
   useGetResourcesQuery: () => ({
     data: mockResources,
     isLoading: false,
     isError: false,
-    refetch: vi.fn(),
+    refetch: jest.fn(),
   }),
-  useCreateResourceMutation: () => [vi.fn(), { isLoading: false }],
-  useUpdateResourceMutation: () => [vi.fn(), { isLoading: false }],
-  useDeleteResourceMutation: () => [vi.fn(), { isLoading: false }],
+  useCreateResourceMutation: () => [jest.fn(), { isLoading: false }],
+  useUpdateResourceMutation: () => [jest.fn(), { isLoading: false }],
+  useDeleteResourceMutation: () => [jest.fn(), { isLoading: false }],
 }))
 
 // Mock UI components
-vi.mock('@/components/ui/button', () => ({
+jest.mock('@/components/ui/button', () => ({
   Button: ({ children, onClick, disabled, variant }: any) => (
     <button onClick={onClick} disabled={disabled} data-variant={variant}>
       {children}
@@ -56,17 +56,17 @@ vi.mock('@/components/ui/button', () => ({
   ),
 }))
 
-vi.mock('@/components/ui/input', () => ({
+jest.mock('@/components/ui/input', () => ({
   Input: ({ value, onChange, placeholder, type }: any) => (
     <input value={value} onChange={(e) => onChange?.(e)} placeholder={placeholder} type={type} />
   ),
 }))
 
-vi.mock('@/components/ui/label', () => ({
+jest.mock('@/components/ui/label', () => ({
   Label: ({ children }: { children: React.ReactNode }) => <label>{children}</label>,
 }))
 
-vi.mock('@/components/ui/select', () => ({
+jest.mock('@/components/ui/select', () => ({
   Select: ({ children, value, onValueChange }: any) => (
     <select value={value} onChange={(e) => onValueChange?.(e.target.value)}>
       {children}
@@ -78,11 +78,11 @@ vi.mock('@/components/ui/select', () => ({
   SelectItem: ({ children, value }: any) => <option value={value}>{children}</option>,
 }))
 
-vi.mock('@/components/ui/badge', () => ({
+jest.mock('@/components/ui/badge', () => ({
   Badge: ({ children, variant }: any) => <span data-variant={variant}>{children}</span>,
 }))
 
-vi.mock('@/components/ui/table', () => ({
+jest.mock('@/components/ui/table', () => ({
   Table: ({ children }: { children: React.ReactNode }) => <table>{children}</table>,
   TableHeader: ({ children }: { children: React.ReactNode }) => <thead>{children}</thead>,
   TableBody: ({ children }: { children: React.ReactNode }) => <tbody>{children}</tbody>,
@@ -91,7 +91,7 @@ vi.mock('@/components/ui/table', () => ({
   TableCell: ({ children }: { children: React.ReactNode }) => <td>{children}</td>,
 }))
 
-vi.mock('@/components/ui/dialog', () => ({
+jest.mock('@/components/ui/dialog', () => ({
   Dialog: ({ children, open }: any) => open ? <div data-testid="dialog">{children}</div> : null,
   DialogContent: ({ children }: { children: React.ReactNode }) => <div>{children}</div>,
   DialogHeader: ({ children }: { children: React.ReactNode }) => <div>{children}</div>,
@@ -100,7 +100,7 @@ vi.mock('@/components/ui/dialog', () => ({
   DialogFooter: ({ children }: { children: React.ReactNode }) => <div>{children}</div>,
 }))
 
-vi.mock('@/components/ui/skeleton', () => ({
+jest.mock('@/components/ui/skeleton', () => ({
   Skeleton: ({ className }: any) => <div className={className} />,
 }))
 

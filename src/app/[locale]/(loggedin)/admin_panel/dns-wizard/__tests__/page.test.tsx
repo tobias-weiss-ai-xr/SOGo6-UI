@@ -1,47 +1,47 @@
 // @ts-nocheck
-import { describe, it, expect, vi } from 'vitest'
+import { describe, it, expect } from '@jest/globals'
 import { render, screen, fireEvent } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 
 // Mock next-intl
-vi.mock('next-intl', () => ({
+jest.mock('next-intl', () => ({
   useTranslations: () => (key: string) => key,
 }))
 
 // Mock sonner toast
-vi.mock('sonner', () => ({
+jest.mock('sonner', () => ({
   toast: {
-    success: vi.fn(),
-    error: vi.fn(),
+    success: jest.fn(),
+    error: jest.fn(),
   },
 }))
 
 // Mock admin-panel-api mutations
-vi.mock('@/features/admin-panel/store/admin-panel-api', () => ({
+jest.mock('@/features/admin-panel/store/admin-panel-api', () => ({
   useGenerateSpfRecordMutation: () => [
-    vi.fn().mockResolvedValue({ data: { data: { record: { name: 'example.org', type: 'TXT', value: 'v=spf1 mx ~all', ttl: 3600, description: 'SPF record' } } } }),
+    jest.fn().mockResolvedValue({ data: { data: { record: { name: 'example.org', type: 'TXT', value: 'v=spf1 mx ~all', ttl: 3600, description: 'SPF record' } } } }),
     { isLoading: false },
   ],
   useValidateSpfRecordMutation: () => [
-    vi.fn().mockResolvedValue({ data: { data: { valid: true, warnings: [], errors: [] } } }),
+    jest.fn().mockResolvedValue({ data: { data: { valid: true, warnings: [], errors: [] } } }),
     { isLoading: false },
   ],
   useGenerateDkimRecordMutation: () => [
-    vi.fn().mockResolvedValue({ data: { data: { record: { name: 'sogo._domainkey.example.org', type: 'TXT', value: 'v=DKIM1; k=ed25519; p=placeholder', ttl: 3600, selector: 'sogo', description: 'DKIM record' } } } }),
+    jest.fn().mockResolvedValue({ data: { data: { record: { name: 'sogo._domainkey.example.org', type: 'TXT', value: 'v=DKIM1; k=ed25519; p=placeholder', ttl: 3600, selector: 'sogo', description: 'DKIM record' } } } }),
     { isLoading: false },
   ],
   useGenerateDmarcRecordMutation: () => [
-    vi.fn().mockResolvedValue({ data: { data: { record: { name: '_dmarc.example.org', type: 'TXT', value: 'v=DMARC1; p=none; pct=100', ttl: 3600, description: 'DMARC record' } } } }),
+    jest.fn().mockResolvedValue({ data: { data: { record: { name: '_dmarc.example.org', type: 'TXT', value: 'v=DMARC1; p=none; pct=100', ttl: 3600, description: 'DMARC record' } } } }),
     { isLoading: false },
   ],
   useValidateDmarcRecordMutation: () => [
-    vi.fn().mockResolvedValue({ data: { data: { valid: true, warnings: [], errors: [] } } }),
+    jest.fn().mockResolvedValue({ data: { data: { valid: true, warnings: [], errors: [] } } }),
     { isLoading: false },
   ],
 }))
 
 // Mock UI components
-vi.mock('@/components/ui/tabs', () => ({
+jest.mock('@/components/ui/tabs', () => ({
   Tabs: ({ children, defaultValue }: { children: React.ReactNode; defaultValue: string }) => (
     <div data-testid="tabs" data-default={defaultValue}>
       {children}
@@ -56,7 +56,7 @@ vi.mock('@/components/ui/tabs', () => ({
   ),
 }))
 
-vi.mock('@/components/ui/card', () => ({
+jest.mock('@/components/ui/card', () => ({
   Card: ({ children }: { children: React.ReactNode }) => <div>{children}</div>,
   CardHeader: ({ children }: { children: React.ReactNode }) => <div>{children}</div>,
   CardTitle: ({ children }: { children: React.ReactNode }) => <div>{children}</div>,
@@ -64,7 +64,7 @@ vi.mock('@/components/ui/card', () => ({
   CardContent: ({ children }: { children: React.ReactNode }) => <div>{children}</div>,
 }))
 
-vi.mock('@/components/ui/button', () => ({
+jest.mock('@/components/ui/button', () => ({
   Button: ({ children, onClick, disabled, variant }: any) => (
     <button onClick={onClick} disabled={disabled} data-variant={variant}>
       {children}
@@ -72,17 +72,17 @@ vi.mock('@/components/ui/button', () => ({
   ),
 }))
 
-vi.mock('@/components/ui/input', () => ({
+jest.mock('@/components/ui/input', () => ({
   Input: ({ value, onChange, placeholder, type }: any) => (
     <input value={value} onChange={(e) => onChange?.(e)} placeholder={placeholder} type={type} />
   ),
 }))
 
-vi.mock('@/components/ui/label', () => ({
+jest.mock('@/components/ui/label', () => ({
   Label: ({ children }: { children: React.ReactNode }) => <label>{children}</label>,
 }))
 
-vi.mock('@/components/ui/select', () => ({
+jest.mock('@/components/ui/select', () => ({
   Select: ({ children, value, onValueChange }: any) => (
     <select value={value} onChange={(e) => onValueChange?.(e.target.value)}>
       {children}
@@ -94,7 +94,7 @@ vi.mock('@/components/ui/select', () => ({
   SelectItem: ({ children, value }: any) => <option value={value}>{children}</option>,
 }))
 
-vi.mock('@/components/ui/badge', () => ({
+jest.mock('@/components/ui/badge', () => ({
   Badge: ({ children, variant }: any) => <span data-variant={variant}>{children}</span>,
 }))
 
