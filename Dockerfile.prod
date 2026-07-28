@@ -57,7 +57,7 @@ EXPOSE 3000
 
 # Health check
 HEALTHCHECK --interval=30s --timeout=10s --start-period=30s --retries=3 \
-    CMD wget -q --spider http://localhost:3000/env || exit 1
+    CMD wget -q --spider http://127.0.0.1:3000/env || exit 1
 
 # Run the standalone Next.js server
 CMD ["node", "server.js"]
