@@ -1,127 +1,129 @@
 {
   "ADMIN_PANNEL_RULE": {
     "title": {
-      "string": "Rules"
+      "string": "规则"
     },
     "filter_placeholder": {
-      "string": "Filter rules..."
+      "string": "过滤规则..."
     },
-    "add_new_rule": { "string": "Add new rule" },
+    "add_new_rule": {
+      "string": "添加新规则"
+    },
     "select_all": {
-      "string": "Select all"
+      "string": "全选"
     },
     "select_row": {
-      "string": "Select row"
+      "string": "选择行"
     },
     "domain": {
-      "string": "Domain"
+      "string": "域名"
     },
     "open_menu": {
-      "string": "Open menu"
+      "string": "打开菜单"
     },
     "actions": {
-      "string": "Actions"
+      "string": "操作"
     },
     "copy_domain": {
-      "string": "Copy domain name"
+      "string": "复制域名"
     },
     "edit": {
-      "string": "Edit"
+      "string": "编辑"
     },
     "delete": {
-      "string": "Delete"
+      "string": "删除"
     }
   },
   "AP_RULES": {
     "title": {
-      "string": "Rules"
+      "string": "规则"
     },
     "description": {
-      "string": "Manage configuration rules for domains"
+      "string": "管理域的配置规则"
     },
     "search": {
       "placeholder": {
-        "string": "Search rules..."
+        "string": "搜索规则..."
       }
     },
     "create": {
       "button": {
-        "string": "New Rule"
+        "string": "新建规则"
       },
       "title": {
-        "string": "Create Rule"
+        "string": "创建规则"
       },
       "description": {
-        "string": "Add a new configuration rule"
+        "string": "添加新的配置规则"
       },
       "success": {
-        "string": "Rule created successfully"
+        "string": "规则创建成功"
       },
       "error": {
-        "string": "Failed to create rule"
+        "string": "规则创建失败"
       },
       "name_required": {
-        "string": "Rule name is required"
+        "string": "规则名称为必填"
       }
     },
     "edit": {
       "button": {
-        "string": "Edit"
+        "string": "编辑"
       },
       "title": {
-        "string": "Edit Rule"
+        "string": "编辑规则"
       },
       "description": {
-        "string": "Update rule: {name}"
+        "string": "更新规则：{name}"
       },
       "save": {
-        "string": "Save Changes"
+        "string": "保存更改"
       },
       "success": {
-        "string": "Rule updated successfully"
+        "string": "规则更新成功"
       },
       "error": {
-        "string": "Failed to update rule"
+        "string": "规则更新失败"
       }
     },
     "delete": {
       "button": {
-        "string": "Delete"
+        "string": "删除"
       },
       "title": {
-        "string": "Delete Rule"
+        "string": "删除规则"
       },
       "confirm": {
-        "string": "Are you sure you want to delete rule \"{name}\"?"
+        "string": "确定要删除规则\"{name}\"吗？"
       },
       "success": {
-        "string": "Rule deleted successfully"
+        "string": "规则删除成功"
       },
       "error": {
-        "string": "Failed to delete rule"
+        "string": "规则删除失败"
       }
     },
     "form": {
       "name": {
-        "string": "Rule Name"
+        "string": "规则名称"
       },
       "name_placeholder": {
-        "string": "e.g. French LDAP Rules"
+        "string": "例如：法语 LDAP 规则"
       },
       "description": {
-        "string": "Description"
+        "string": "描述"
       },
       "description_placeholder": {
-        "string": "Optional description of this rule"
+        "string": "此规则的可选描述"
       },
       "domains": {
-        "string": "Affected Domains"
+        "string": "受影响的域名"
       },
       "domains_placeholder": {
         "string": "example.org, domain2.org"
       },
       "domains_hint": {
-        "string": "Comma-separated list of domain names. Leave empty for all domains."
+        "string": "以逗号分隔的域名列表。留空表示所有域名。"
       }
     },
     "table": {
@@ -129,17 +131,17 @@
         "string": "ID"
       },
       "name": {
-        "string": "Name"
+        "string": "名称"
       },
       "actions": {
-        "string": "Actions"
+        "string": "操作"
       }
     },
     "no_rules": {
-      "string": "No rules configured yet"
+      "string": "尚未配置规则"
     },
     "no_results": {
-      "string": "No rules match your search"
+      "string": "没有匹配搜索的规则"
     }
   }
 }

@@ -36,6 +36,7 @@ import {
   useReactTable,
   VisibilityState,
 } from '@tanstack/react-table'
+import { toast } from 'sonner'
 import { useTranslations } from 'next-intl'
 import * as React from 'react'
 import { AdminDataTableProps } from '../types/admin-data-table'
@@ -98,11 +99,11 @@ export function AdminDataTable<TData>({
     const val = (newDomainName || '').trim()
     const desc = (newDomainDescription || '').trim()
     if (!val) {
-      alert('Please enter a domain name') //TODO: toast avec trad
+      toast.error('Please enter a domain name')
       return
     }
     if (!desc) {
-      alert('Please enter a domain description') //TODO: toast avec trad
+      toast.error('Please enter a domain description')
       return
     }
 
@@ -123,7 +124,7 @@ export function AdminDataTable<TData>({
     } catch (err: any) {
       const msg =
         err?.data?.message || err?.message || 'Failed to create custom domain'
-      alert(msg)
+      toast.error(msg)
     }
   }
 
