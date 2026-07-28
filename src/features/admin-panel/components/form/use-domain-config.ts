@@ -16,6 +16,7 @@ import type {
 } from '@/features/admin-panel/types/form'
 import { useCallback, useMemo } from 'react'
 import { toast } from 'sonner'
+import { logger } from '@/lib/logger'
 
 /**
  * Deep clone a value (object or array) using JSON serialization.
@@ -331,7 +332,7 @@ export function useDomainConfig({ customDomainId }: UseDomainConfigOpts) {
           error?.message ||
           String(err) ||
           'Unknown error'
-        console.error('[useDomainConfig] Save error:', err)
+        logger.error('[useDomainConfig] Save error:', { error: err })
         toast.error('Error saving parameters: ' + message)
         throw err
       }
@@ -366,7 +367,7 @@ export function useDomainConfig({ customDomainId }: UseDomainConfigOpts) {
         }).unwrap()
         return res
       } catch (err) {
-        console.error('[useDomainConfig] updateDomainDescription error:', err)
+        logger.error('[useDomainConfig] updateDomainDescription error:', { error: err })
         throw err
       }
     },

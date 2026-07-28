@@ -12,6 +12,7 @@
 
 import React, { useEffect, useRef, ReactNode, KeyboardEvent } from 'react';
 import { KEYBOARD_KEYS } from '@/lib/accessibility/constants';
+import { logger } from '@/lib/logger'
 
 /**
  * Keyboard navigation directions
@@ -350,7 +351,7 @@ export function useKeyboardShortcut(
     const key = keys.find(k => !['Ctrl', 'Shift', 'Alt', 'Meta', 'Cmd'].includes(k));
     
     if (!key) {
-      console.warn(`Invalid keyboard shortcut: ${shortcut}`);
+      logger.warn(`Invalid keyboard shortcut: ${shortcut}`);
       return;
     }
 

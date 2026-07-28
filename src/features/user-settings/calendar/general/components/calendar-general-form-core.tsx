@@ -37,6 +37,7 @@ import { useGetCalendarsQuery } from '@/features/calendars/store/calendars-api'
 import { EmailsTagInput } from '@/components/ui/emails-tag-input'
 
 import { MultiSelect } from '@/components/ui/combomultiple'
+import { logger } from '@/lib/logger'
 
 const LabelsForm: React.FC<Props> = ({ data, update }) => {
   const t = useTranslations('US_CALENDARS')
@@ -87,7 +88,7 @@ const LabelsForm: React.FC<Props> = ({ data, update }) => {
       <form
         onSubmit={form.handleSubmit(onSubmit, (err) => {
           if (process.env.NODE_ENV === 'development') {
-            console.warn('errors submit', err)
+            logger.warn('errors submit', { detail: err })
           }
         })}
       >

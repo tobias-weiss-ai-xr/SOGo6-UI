@@ -14,6 +14,7 @@ import {
   createVisibilityResolver,
   filterInvisibleFields,
 } from './utils'
+import { logger } from '@/lib/logger'
 
 type Props = AdminFormProps & {
   // New prop: which tab to render (UI only). `data` now contains all tabs.
@@ -74,7 +75,7 @@ const AdminDomainFormFrame: React.FC<Props> = ({
 
   // onInvalid callback: useful to surface validation problems
   function handleInvalid(errors: any) {
-    console.error('[AdminDomainFormFrame] validation errors:', errors)
+    logger.error('[AdminDomainFormFrame] validation errors:', { error: errors })
   }
 
   const { isDirty, isSubmitting } = form.formState

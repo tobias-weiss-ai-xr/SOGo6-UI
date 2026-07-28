@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react'
 import { useAppSelector } from '@/lib/redux/hooks'
 import type { RootState } from '@/lib/redux/store'
+import { logger } from '@/lib/logger'
 
 /**
  * Hook to manage Web Push notification subscriptions.
@@ -63,7 +64,7 @@ export function usePushNotifications() {
 
       setIsSubscribed(true)
     } catch (error) {
-      console.error('Failed to subscribe to push:', error)
+      logger.error('Failed to subscribe to push:', { error: error })
     } finally {
       setIsLoading(false)
     }
@@ -87,7 +88,7 @@ export function usePushNotifications() {
       }
       setIsSubscribed(false)
     } catch (error) {
-      console.error('Failed to unsubscribe:', error)
+      logger.error('Failed to unsubscribe:', { error: error })
     }
   }
 

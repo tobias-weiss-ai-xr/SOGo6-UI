@@ -3,6 +3,7 @@
 import { Textarea } from '@/components/ui/textarea'
 import { useEffect, useRef, useState } from 'react'
 import type { AdminPanelHeaderProps } from '../../types/form'
+import { logger } from '@/lib/logger'
 
 type Props = AdminPanelHeaderProps & {
   editableDescription?: boolean
@@ -50,7 +51,7 @@ export default function AdminPanelHeader({
       await onSaveDescription(value)
       setLastSaved(value)
     } catch (err) {
-      console.error('Error saving domain description:', err)
+      logger.error('Error saving domain description:', { error: err })
       // keep editing mode so the user can correct
       return
     } finally {

@@ -11,6 +11,7 @@ import { useDeleteAddressBookMutation } from '@/features/address_books/store/add
 import { useRouter } from '@/lib/i18n/navigation'
 import { useTranslations } from 'next-intl'
 import React from 'react'
+import { logger } from '@/lib/logger'
 
 const DeleteAction: React.FC<{ name: string; id: string }> = ({ name, id }) => {
   const t = useTranslations('ADDRESS_BOOKS_SIDEBAR')
@@ -23,7 +24,7 @@ const DeleteAction: React.FC<{ name: string; id: string }> = ({ name, id }) => {
       await deleteAddressBook(id).unwrap()
       push('/address_books')
     } catch (error) {
-      console.error('Failed to delete address book:', error)
+      logger.error('Failed to delete address book:', { error: error })
     }
   }
 

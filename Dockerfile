@@ -21,9 +21,7 @@ COPY . ./
 EXPOSE 3000 24678
 
 # Use next dev for development (hot reload, stable for E2E tests).
-# Note: In production, use Dockerfile.prod with multi-stage build.
-# TODO: Production standalone build has issues with Next.js 16.2.10 RSC streaming
-# (client-side hydration doesn't occur after build). Tracked as known issue.
+# In production, use Dockerfile.prod with multi-stage build.
 CMD ["sh", "-c", "if [ -f next.config.mjs ] || [ -f next.config.js ]; then \
   echo '=== Starting dev server (next dev) ===' && \
   npx next dev --port 3000 --hostname 0.0.0.0; \

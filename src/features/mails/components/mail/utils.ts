@@ -1,5 +1,6 @@
 import { getCachedEnvVars } from '@/lib/env-service'
 import React, { useEffect, useRef } from 'react'
+import { logger } from '@/lib/logger'
 
 // Resolve API base URL at call time (env may load after module init)
 function getApiBaseUrl(): string {
@@ -203,7 +204,7 @@ export function sanitizeEmailHtml(html: string): string {
     )
   } catch (error) {
     if (process.env.NODE_ENV === 'development') {
-      console.error('❌ [sanitizeEmailHtml] Error:', error)
+      logger.error('❌ [sanitizeEmailHtml] Error:', { error: error })
     }
     return '' // In case of error, return empty for security
   }
@@ -376,7 +377,7 @@ export const ShadowEmailContent = ({ html }: { html: string }) => {
     contentContainer.innerHTML = cleanHtml
 
     if (process.env.NODE_ENV === 'development' && html && !cleanHtml) {
-      console.warn('⚠️ [ShadowEmailContent] HTML was sanitized to empty string')
+      logger.warn('⚠️ [ShadowEmailContent] HTML was sanitized to empty string')
     }
   }, [html])
 

@@ -20,6 +20,7 @@ import { PP_DEFAULT } from '../../store/user-preferences-api-types'
 import { BasicInfoTab } from '../components/basic-info-tab'
 import { IdentitiesTab } from '../components/identities-tab'
 import { createProfileSchema, ProfileFormData } from './profile-schema'
+import { logger } from '@/lib/logger'
 
 const ProfileFormCore = () => {
   const formT = useTranslations('FORM_COMMONS')
@@ -96,7 +97,7 @@ const ProfileFormCore = () => {
         SOGO_U_PROFILE_PICTURE: values.profilePictureSource,
       }).unwrap()
     } catch (error) {
-      console.error('Failed to update profile:', error)
+      logger.error('Failed to update profile:', { error: error })
     }
   }
 

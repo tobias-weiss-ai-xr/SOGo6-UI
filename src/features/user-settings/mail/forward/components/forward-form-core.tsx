@@ -43,6 +43,7 @@ import {
   createForwardSchema,
   type ForwardFormValues,
 } from './forward-schema'
+import { logger } from '@/lib/logger'
 
 interface Props {
   data: MailForward | undefined
@@ -85,7 +86,7 @@ function MailForwardSettingsForm({ data, accountId, update }: Props) {
       }).unwrap()
       reset(mapMailForwardToFormValues(saved))
     } catch (error) {
-      console.error('Failed to save mail forward settings:', error)
+      logger.error('Failed to save mail forward settings:', { error: error })
     }
   }
 

@@ -17,6 +17,7 @@ import { MailboxSettings } from '@/features/user-settings/mail/external-accounts
 import { Mail, Pencil, Plus, Trash2 } from 'lucide-react'
 import { useTranslations } from 'next-intl'
 import { useState } from 'react'
+import { logger } from '@/lib/logger'
 
 interface ExternalAccountsListViewProps {
   data: MailboxSettings[] | undefined
@@ -54,7 +55,7 @@ function ExternalAccountsListView({
         setAccountToDelete(null)
         setIsDeleting(false)
       } catch (error) {
-        console.error('Failed to delete:', error)
+        logger.error('Failed to delete:', { error: error })
       }
     }
   }

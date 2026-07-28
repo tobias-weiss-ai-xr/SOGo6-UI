@@ -29,6 +29,7 @@ import {
   mapGeneralSettingsToApi,
 } from '../store/general-utils'
 import { schema } from './general-schema'
+import { logger } from '@/lib/logger'
 
 interface Props {
   data: UserPreferences | undefined
@@ -73,7 +74,7 @@ export function GeneralSettingsForm({ data, update }: Props) {
       <form
         onSubmit={form.handleSubmit(onSubmit, (err) => {
           if (process.env.NODE_ENV === 'development') {
-            console.warn('form validation errors', err)
+            logger.warn('form validation errors', { detail: err })
           }
         })}
       >

@@ -8,6 +8,7 @@
  */
 
 import React, { Component, ErrorInfo, ReactNode } from 'react';
+import { logger } from '@/lib/logger';
 
 export interface ErrorBoundaryProps {
   children: ReactNode;
@@ -48,11 +49,22 @@ class ErrorBoundaryComponent extends Component<ErrorBoundaryProps, ErrorBoundary
   }
 
   componentDidCatch(error: Error, errorInfo: ErrorInfo): void {
-    console.error('ErrorBoundary caught error:', error, errorInfo);
+    logger.error('ErrorBoundary caught error', { error: String(error), componentStack: errorInfo.componentStack });
     
     // Log error to error reporting service
     if (this.props.onError) {
       this.props.onError(error, errorInfo);
+    }
+  }
+
+  /**
+   * Reset the error state when children change (allows recovery
+   * when the same ErrorBoundary instance receives new children
+   * after an error was caught).
+   */
+  componentDidUpdate(prevProps: ErrorBoundaryProps): void {
+    if (this.state.hasError && prevProps.children !== this.props.children) {
+      this.setState({ hasError: false, error: null });
     }
   }
 
@@ -147,11 +159,9 @@ export const AccessibleErrorFallback: React.FC<AccessibleErrorFallbackProps> = (
         {title || defaultTitle}
       </h2>
       
-      {message && (
-        <p className="error-message">
-          {message}
-        </p>
-      )}
+      <p className="error-message">
+        {message || defaultMessage}
+      </p>
       
       {error && (
         <p className="error-details">

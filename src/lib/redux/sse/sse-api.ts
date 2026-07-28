@@ -7,6 +7,7 @@ import { fetchEnvVars } from '@/lib/env-service'
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
 import { SSEService } from './sse-service'
 import { SSEConfig, SSEConnectionState, SSEMessage } from './types'
+import { logger } from '@/lib/logger'
 
 let sseServiceInstance: SSEService | null = null
 
@@ -94,7 +95,7 @@ export const sseApi = createApi({
             },
           }
         } catch (error) {
-          console.warn('Failed to get SSE status:', error)
+          logger.warn('Failed to get SSE status:', { detail: error })
           return {
             data: {
               state: SSEConnectionState.DISCONNECTED,

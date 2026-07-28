@@ -1,4 +1,5 @@
 import { headers } from 'next/headers'
+import { logger } from '@/lib/logger'
 
 export async function getThemesServer(): Promise<string | null> {
   try {
@@ -17,14 +18,14 @@ export async function getThemesServer(): Promise<string | null> {
     )
 
     if (!response.ok) {
-      console.error('Failed to fetch themes:', response.statusText)
+      logger.error('Failed to fetch themes', { status: response.status, statusText: response.statusText })
       return null
     }
 
     const themes = await response.json()
     return themes
   } catch (error) {
-    console.error('Error fetching themes on server:', error)
+    logger.error('Error fetching themes on server', { error: String(error) })
     return null
   }
 }

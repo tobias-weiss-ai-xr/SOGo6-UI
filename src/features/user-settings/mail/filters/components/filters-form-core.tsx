@@ -34,6 +34,7 @@ import type { useUpdateMailFiltersSettingsMutation } from '../store/mail-filters
 import FilterLineForm from './filter-line-form'
 import FilterEditDialog from './filter-form'
 import { createFiltersSchema, type FiltersFormValues } from './filters-schema'
+import { logger } from '@/lib/logger'
 
 interface Props {
   data: MailFilter[] | undefined
@@ -83,7 +84,7 @@ const MailFiltersSettingsForm: React.FC<Props> = ({
       }).unwrap()
       form.reset({ filters: saved })
     } catch (error) {
-      console.error('Failed to save mail filters:', error)
+      logger.error('Failed to save mail filters:', { error: error })
     }
   }
 

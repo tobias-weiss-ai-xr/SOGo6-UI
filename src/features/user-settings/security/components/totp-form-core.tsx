@@ -25,6 +25,7 @@ import {
   mapSecuritySettingsToApi,
 } from '../store/security-utils'
 import { schema } from './totp-schema'
+import { logger } from '@/lib/logger'
 
 interface Props {
   data: UserPreferences | undefined
@@ -58,7 +59,7 @@ export function TotpSettingsForm({ data, update }: Props) {
         className="rounded-md border p-4 shadow-sm"
         onSubmit={form.handleSubmit(onSubmit, (err) => {
           if (process.env.NODE_ENV === 'development') {
-            console.warn('form validation errors', err)
+            logger.warn('form validation errors', { detail: err })
           }
         })}
       >
