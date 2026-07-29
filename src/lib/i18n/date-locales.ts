@@ -1,5 +1,32 @@
 import type { Locale } from 'date-fns'
-import { de, enUS, es, fr } from 'date-fns/locale'
+import {
+  de,
+  enUS,
+  es,
+  fr,
+  it,
+  pt,
+  nl,
+  pl,
+  ru,
+  sv,
+  da,
+  fi,
+  nb, // Norwegian Bokmål (used for 'no')
+  cs,
+  el,
+  tr,
+  hu,
+  ro,
+  ja,
+  hi,
+  ar,
+  ko,
+  th,
+  vi,
+  id,
+  zhCN, // Chinese Simplified (used for 'zh')
+} from 'date-fns/locale'
 import { getDefaultLocale, getLocales } from './config'
 
 /**
@@ -8,11 +35,35 @@ import { getDefaultLocale, getLocales } from './config'
  */
 /** next-intl locale key → date-fns locale (used by RBC + getDateFnsLocale) */
 export const DATE_LOCALES: Record<string, Locale> = {
+  // Existing locales
   en: enUS,
   de: de,
   fr: fr,
   es: es,
-  // Add more locales here as needed:
+  zh: zhCN,
+  // European locales
+  it: it,
+  pt: pt,
+  nl: nl,
+  pl: pl,
+  ru: ru,
+  sv: sv,
+  da: da,
+  fi: fi,
+  no: nb, // Norwegian Bokmål
+  cs: cs,
+  el: el,
+  tr: tr,
+  hu: hu,
+  ro: ro,
+  // Global locales
+  ja: ja,
+  hi: hi,
+  ar: ar,
+  ko: ko,
+  th: th,
+  vi: vi,
+  id: id,
 }
 
 /**

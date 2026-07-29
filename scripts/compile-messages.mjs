@@ -20,7 +20,14 @@ const SRC_MESSAGES = join(ROOT, 'src', 'messages');
 const OUT_DIR = join(ROOT, 'src', 'compiled-messages');
 
 // Locales to compile (mirrors src/lib/i18n/config.ts)
-const LOCALES = ['en', 'de', 'fr', 'es', 'zh'];
+const LOCALES = [
+  // Existing locales
+  'en', 'de', 'fr', 'es', 'zh',
+  // European locales
+  'it', 'pt', 'nl', 'pl', 'ru', 'sv', 'da', 'fi', 'no', 'cs', 'el', 'tr', 'hu', 'ro',
+  // Global locales
+  'ja', 'hi', 'ar', 'ko', 'th', 'vi', 'id',
+];
 
 function deepMerge(target, source) {
   const output = { ...target };

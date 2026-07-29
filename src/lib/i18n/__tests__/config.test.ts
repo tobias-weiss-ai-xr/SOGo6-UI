@@ -12,9 +12,9 @@ describe('i18n config', () => {
       expect(Array.isArray(locales)).toBe(true)
     })
 
-    it('should return exactly 5 locales', () => {
+    it('should return exactly 26 locales', () => {
       const locales = getLocales()
-      expect(locales).toHaveLength(5)
+      expect(locales).toHaveLength(26)
     })
 
     it('should include English locale', () => {
@@ -50,7 +50,12 @@ describe('i18n config', () => {
 
     it('should return locales in expected order', () => {
       const locales = getLocales()
-      expect(locales).toEqual(['en', 'de', 'fr', 'es', 'zh'])
+      const expectedLocales = [
+        'en', 'de', 'fr', 'es', 'zh',
+        'it', 'pt', 'nl', 'pl', 'ru', 'sv', 'da', 'fi', 'no', 'cs', 'el', 'tr', 'hu', 'ro',
+        'ja', 'hi', 'ar', 'ko', 'th', 'vi', 'id',
+      ]
+      expect(locales).toEqual(expectedLocales)
     })
   })
 
@@ -124,8 +129,8 @@ describe('i18n config', () => {
       })
     })
 
-    it('should have exactly 5 locales in routing config', () => {
-      expect(routing.locales).toHaveLength(5)
+    it('should have exactly 26 locales in routing config', () => {
+      expect(routing.locales).toHaveLength(26)
     })
   })
 

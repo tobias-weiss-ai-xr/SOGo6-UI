@@ -25,6 +25,27 @@ let deMessages: Record<string, unknown> = {}
 let frMessages: Record<string, unknown> = {}
 let esMessages: Record<string, unknown> = {}
 let zhMessages: Record<string, unknown> = {}
+let itMessages: Record<string, unknown> = {}
+let ptMessages: Record<string, unknown> = {}
+let nlMessages: Record<string, unknown> = {}
+let plMessages: Record<string, unknown> = {}
+let ruMessages: Record<string, unknown> = {}
+let svMessages: Record<string, unknown> = {}
+let daMessages: Record<string, unknown> = {}
+let fiMessages: Record<string, unknown> = {}
+let noMessages: Record<string, unknown> = {}
+let csMessages: Record<string, unknown> = {}
+let elMessages: Record<string, unknown> = {}
+let trMessages: Record<string, unknown> = {}
+let huMessages: Record<string, unknown> = {}
+let roMessages: Record<string, unknown> = {}
+let jaMessages: Record<string, unknown> = {}
+let hiMessages: Record<string, unknown> = {}
+let arMessages: Record<string, unknown> = {}
+let koMessages: Record<string, unknown> = {}
+let thMessages: Record<string, unknown> = {}
+let viMessages: Record<string, unknown> = {}
+let idMessages: Record<string, unknown> = {}
 
 try {
   enMessages = require('./compiled-messages/en.json')
@@ -51,6 +72,111 @@ try {
 } catch {
   /* empty */
 }
+try {
+  itMessages = require('./compiled-messages/it.json')
+} catch {
+  /* empty */
+}
+try {
+  ptMessages = require('./compiled-messages/pt.json')
+} catch {
+  /* empty */
+}
+try {
+  nlMessages = require('./compiled-messages/nl.json')
+} catch {
+  /* empty */
+}
+try {
+  plMessages = require('./compiled-messages/pl.json')
+} catch {
+  /* empty */
+}
+try {
+  ruMessages = require('./compiled-messages/ru.json')
+} catch {
+  /* empty */
+}
+try {
+  svMessages = require('./compiled-messages/sv.json')
+} catch {
+  /* empty */
+}
+try {
+  daMessages = require('./compiled-messages/da.json')
+} catch {
+  /* empty */
+}
+try {
+  fiMessages = require('./compiled-messages/fi.json')
+} catch {
+  /* empty */
+}
+try {
+  noMessages = require('./compiled-messages/no.json')
+} catch {
+  /* empty */
+}
+try {
+  csMessages = require('./compiled-messages/cs.json')
+} catch {
+  /* empty */
+}
+try {
+  elMessages = require('./compiled-messages/el.json')
+} catch {
+  /* empty */
+}
+try {
+  trMessages = require('./compiled-messages/tr.json')
+} catch {
+  /* empty */
+}
+try {
+  huMessages = require('./compiled-messages/hu.json')
+} catch {
+  /* empty */
+}
+try {
+  roMessages = require('./compiled-messages/ro.json')
+} catch {
+  /* empty */
+}
+try {
+  jaMessages = require('./compiled-messages/ja.json')
+} catch {
+  /* empty */
+}
+try {
+  hiMessages = require('./compiled-messages/hi.json')
+} catch {
+  /* empty */
+}
+try {
+  arMessages = require('./compiled-messages/ar.json')
+} catch {
+  /* empty */
+}
+try {
+  koMessages = require('./compiled-messages/ko.json')
+} catch {
+  /* empty */
+}
+try {
+  thMessages = require('./compiled-messages/th.json')
+} catch {
+  /* empty */
+}
+try {
+  viMessages = require('./compiled-messages/vi.json')
+} catch {
+  /* empty */
+}
+try {
+  idMessages = require('./compiled-messages/id.json')
+} catch {
+  /* empty */
+}
 
 // ── Pre-built locale map ──────────────────────────────────────────────────
 
@@ -60,6 +186,27 @@ const PRECOMPILED: Record<string, Record<string, unknown>> = {
   fr: frMessages,
   es: esMessages,
   zh: zhMessages,
+  it: itMessages,
+  pt: ptMessages,
+  nl: nlMessages,
+  pl: plMessages,
+  ru: ruMessages,
+  sv: svMessages,
+  da: daMessages,
+  fi: fiMessages,
+  no: noMessages,
+  cs: csMessages,
+  el: elMessages,
+  tr: trMessages,
+  hu: huMessages,
+  ro: roMessages,
+  ja: jaMessages,
+  hi: hiMessages,
+  ar: arMessages,
+  ko: koMessages,
+  th: thMessages,
+  vi: viMessages,
+  id: idMessages,
 }
 
 // ── Dynamic fallback (dev only) ───────────────────────────────────────────

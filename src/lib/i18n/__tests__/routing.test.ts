@@ -8,7 +8,11 @@ jest.mock('next-intl/routing', () => ({
 
 // Mock i18n config
 jest.mock('../config', () => ({
-  getLocales: jest.fn(() => ['en', 'de', 'fr', 'es']),
+  getLocales: jest.fn(() => [
+    'en', 'de', 'fr', 'es', 'zh',
+    'it', 'pt', 'nl', 'pl', 'ru', 'sv', 'da', 'fi', 'no', 'cs', 'el', 'tr', 'hu', 'ro',
+    'ja', 'hi', 'ar', 'ko', 'th', 'vi', 'id',
+  ]),
   getDefaultLocale: jest.fn(() => 'en'),
 }))
 
@@ -67,12 +71,17 @@ describe('routing', () => {
       expect(routing.locales).toContain('es')
     })
 
-    it('should have exactly 4 locales', () => {
-      expect(routing.locales).toHaveLength(4)
+    it('should have exactly 26 locales', () => {
+      expect(routing.locales).toHaveLength(26)
     })
 
     it('should have locales in the expected order', () => {
-      expect(routing.locales).toEqual(['en', 'de', 'fr', 'es'])
+      const expectedLocales = [
+        'en', 'de', 'fr', 'es', 'zh',
+        'it', 'pt', 'nl', 'pl', 'ru', 'sv', 'da', 'fi', 'no', 'cs', 'el', 'tr', 'hu', 'ro',
+        'ja', 'hi', 'ar', 'ko', 'th', 'vi', 'id',
+      ]
+      expect(routing.locales).toEqual(expectedLocales)
     })
 
     it('should not have duplicate locales', () => {
@@ -102,7 +111,11 @@ describe('routing', () => {
 
   describe('routing consistency', () => {
     it('should have locales that match configuration', () => {
-      const expectedLocales = ['en', 'de', 'fr', 'es']
+      const expectedLocales = [
+        'en', 'de', 'fr', 'es', 'zh',
+        'it', 'pt', 'nl', 'pl', 'ru', 'sv', 'da', 'fi', 'no', 'cs', 'el', 'tr', 'hu', 'ro',
+        'ja', 'hi', 'ar', 'ko', 'th', 'vi', 'id',
+      ]
       expect(routing.locales).toEqual(expectedLocales)
     })
 
@@ -134,7 +147,7 @@ describe('routing', () => {
     })
 
     it('should support locale validation', () => {
-      const testLocales = ['en', 'de', 'fr', 'es']
+      const testLocales = ['en', 'de', 'fr', 'es', 'zh', 'it', 'ja', 'ar']
       testLocales.forEach((locale) => {
         expect(routing.locales).toContain(locale)
       })

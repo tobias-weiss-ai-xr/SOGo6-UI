@@ -1,0 +1,39 @@
+{
+  "MAIL_SNOOZE": {
+    "title": {
+      "string": "Snooze"
+    },
+    "description": {
+      "string": "Choose when this email should reappear in your inbox."
+    },
+    "presets": {
+      "later_today": {
+        "string": "Later today"
+      },
+      "tomorrow": {
+        "string": "Tomorrow"
+      },
+      "this_weekend": {
+        "string": "This weekend"
+      },
+      "next_week": {
+        "string": "Next week"
+      }
+    },
+    "pick_date": {
+      "string": "Pick a date & time"
+    },
+    "pick_date_placeholder": {
+      "string": "Select date..."
+    },
+    "snooze_button": {
+      "string": "Snooze"
+    },
+    "success": {
+      "string": "Email snoozed"
+    },
+    "error": {
+      "string": "Failed to snooze email"
+    }
+  }
+}
