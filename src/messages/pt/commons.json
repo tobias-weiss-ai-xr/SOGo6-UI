@@ -1,17 +1,17 @@
 {
     "COMMONS": {
         "close": {
-            "string": "Close"
+            "string": "Fechar"
         },
         "workInProgress": {
             "description": {
-                "string": "This feature is currently under development."
+                "string": "Este recurso está atualmente em desenvolvimento."
             },
             "message": {
-                "string": "We're working hard to bring you this feature."
+                "string": "Estamos trabalhando duro para trazer este recurso para você."
             },
             "comingSoon": {
-                "string": "Coming soon! Stay tuned."
+                "string": "Em breve! Fique ligado."
             }
         }
     },
@@ -19,29 +19,29 @@
         "demo": {
             "warning": {
                 "title": {
-                    "string": "Demo Version"
+                    "string": "Versão Demo"
                 },
                 "description": {
-                    "string": "You are currently using a demo version of the application. Some features may be limited."
+                    "string": "Você está atualmente usando uma versão demo da aplicação. Alguns recursos podem ser limitados."
                 },
                 "action": {
-                    "string": "Got it"
+                    "string": "Entendi"
                 }
             }
         },
         "language": {
-            "english": "English",
-            "french": "Français"
+            "english": "Inglês",
+            "french": "Francês"
         },
         "serviceUnavailable": {
             "title": {
-                "string": "Service unavailable"
+                "string": "Serviço indisponível"
             },
             "description": {
-                "string": "The application could not connect to the server. Please try again later or contact your administrator."
+                "string": "A aplicação não conseguiu conectar ao servidor. Por favor, tente novamente mais tarde ou contate seu administrador."
             },
             "retry": {
-                "string": "Try again"
+                "string": "Tentar novamente"
             }
         }
     }

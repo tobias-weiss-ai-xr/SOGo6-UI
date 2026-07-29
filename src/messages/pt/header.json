@@ -2,86 +2,86 @@
     "HEADER": {
         "theme": {
             "title": {
-                "string": "Theme",
-                "context": "Section title for the header dropdown"
+                "string": "Tema",
+                "context": "Título da seção para o menu suspenso do cabeçalho"
             },
             "dark": {
-                "string": "Dark",
-                "context": "Dark theme switcher in the header"
+                "string": "Escuro",
+                "context": "Alternador de tema escuro no cabeçalho"
             },
             "light": {
-                "string": "Light",
-                "context": "Light theme switcher in the header"
+                "string": "Claro",
+                "context": "Alternador de tema claro no cabeçalho"
             },
             "dyslexia": {
-                "string": "Dyslexia",
-                "context": "Dyslexia theme switcher in the header"
+                "string": "Dislexia",
+                "context": "Alternador de tema dislexia no cabeçalho"
             },
             "tritanopia": {
                 "string": "Tritanopia",
-                "context": "Tritanopia theme switcher in the header"
+                "context": "Alternador de tema tritanopia no cabeçalho"
             },
             "protanopia": {
                 "string": "Protanopia",
-                "context": "Protanopia theme switcher in the header"
+                "context": "Alternador de tema protanopia no cabeçalho"
             },
             "deuteranopia": {
                 "string": "Deuteranopia",
-                "context": "Deuteranopia theme switcher in the header"
+                "context": "Alternador de tema deuteranopia no cabeçalho"
             },
             "system": {
                 "string": "Auto",
-                "context": "Auto theme switcher in the header"
+                "context": "Alternador de tema automático no cabeçalho"
             }
         },
         "admin": {
             "panel": {
-                "string": "Administrator Panel",
-                "context": "Title of the admin panel in the header dropdown"
+                "string": "Painel de Administrador",
+                "context": "Título do painel de administração no menu suspenso do cabeçalho"
             }
         },
         "account": {
             "section": {
-                "string": "Account",
-                "context": "Section title for the header dropdown"
+                "string": "Conta",
+                "context": "Título da seção para o menu suspenso do cabeçalho"
             },
             "profile": {
-                "string": "Profile",
-                "context": "Link to the account profile in the header dropdown"
+                "string": "Perfil",
+                "context": "Link para o perfil da conta no menu suspenso do cabeçalho"
             },
             "security": {
-                "string": "Security",
-                "context": "Link to the account security in the header dropdown"
+                "string": "Segurança",
+                "context": "Link para a segurança da conta no menu suspenso do cabeçalho"
             },
             "defaultUser": {
-                "string": "User",
-                "context": "Default username fallback when profile is not yet loaded"
+                "string": "Usuário",
+                "context": "Nome de usuário padrão quando o perfil ainda não foi carregado"
             }
         },
         "logout": {
-            "string": "Logout",
-            "context": "Link to logout in the header dropdown"
+            "string": "Sair",
+            "context": "Link para sair no menu suspenso do cabeçalho"
         },
         "settings": {
             "title": {
-                "string": "Settings",
-                "context": "Section title for the header dropdown"
+                "string": "Configurações",
+                "context": "Título da seção para o menu suspenso do cabeçalho"
             },
             "general": {
-                "string": "General",
-                "context": "Link to the general settings in the header dropdown"
+                "string": "Geral",
+                "context": "Link para as configurações gerais no menu suspenso do cabeçalho"
             },
             "calendar": {
-                "string": "Calendar",
-                "context": "Link to the calendar settings in the header dropdown"
+                "string": "Calendário",
+                "context": "Link para as configurações de calendário no menu suspenso do cabeçalho"
             },
             "address_books": {
-                "string": "Address books",
-                "context": "Link to the address books settings in the header dropdown"
+                "string": "Cadernetas de endereços",
+                "context": "Link para as configurações de cadernetas de endereços no menu suspenso do cabeçalho"
             },
             "email": {
                 "string": "Email",
-                "context": "Link to the emails settings in the header dropdown"
+                "context": "Link para as configurações de email no menu suspenso do cabeçalho"
             }
         }
     }

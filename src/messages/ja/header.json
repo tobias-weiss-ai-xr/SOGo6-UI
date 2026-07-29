@@ -2,86 +2,86 @@
     "HEADER": {
         "theme": {
             "title": {
-                "string": "Theme",
-                "context": "Section title for the header dropdown"
+                "string": "テーマ",
+                "context": "ヘッダーのドロップダウンのセクションタイトル"
             },
             "dark": {
-                "string": "Dark",
-                "context": "Dark theme switcher in the header"
+                "string": "ダーク",
+                "context": "ヘッダーのダークテーマ切り替え"
             },
             "light": {
-                "string": "Light",
-                "context": "Light theme switcher in the header"
+                "string": "ライト",
+                "context": "ヘッダーのライトテーマ切り替え"
             },
             "dyslexia": {
-                "string": "Dyslexia",
-                "context": "Dyslexia theme switcher in the header"
+                "string": "ディスレクシア",
+                "context": "ヘッダーのディスレクシアテーマ切り替え"
             },
             "tritanopia": {
-                "string": "Tritanopia",
-                "context": "Tritanopia theme switcher in the header"
+                "string": "青色弱",
+                "context": "ヘッダーの青色弱テーマ切り替え"
             },
             "protanopia": {
-                "string": "Protanopia",
-                "context": "Protanopia theme switcher in the header"
+                "string": "赤色盲",
+                "context": "ヘッダーの赤色盲テーマ切り替え"
             },
             "deuteranopia": {
-                "string": "Deuteranopia",
-                "context": "Deuteranopia theme switcher in the header"
+                "string": "緑色盲",
+                "context": "ヘッダーの緑色盲テーマ切り替え"
             },
             "system": {
-                "string": "Auto",
-                "context": "Auto theme switcher in the header"
+                "string": "自動",
+                "context": "ヘッダーの自動テーマ切り替え"
             }
         },
         "admin": {
             "panel": {
-                "string": "Administrator Panel",
-                "context": "Title of the admin panel in the header dropdown"
+                "string": "管理パネル",
+                "context": "ヘッダーのドロップダウンの管理パネルタイトル"
             }
         },
         "account": {
             "section": {
-                "string": "Account",
-                "context": "Section title for the header dropdown"
+                "string": "アカウント",
+                "context": "ヘッダーのドロップダウンのセクションタイトル"
             },
             "profile": {
-                "string": "Profile",
-                "context": "Link to the account profile in the header dropdown"
+                "string": "プロフィール",
+                "context": "ヘッダーのドロップダウンのアカウントプロフィールへのリンク"
             },
             "security": {
-                "string": "Security",
-                "context": "Link to the account security in the header dropdown"
+                "string": "セキュリティ",
+                "context": "ヘッダーのドロップダウンのアカウントセキュリティへのリンク"
             },
             "defaultUser": {
-                "string": "User",
-                "context": "Default username fallback when profile is not yet loaded"
+                "string": "ユーザー",
+                "context": "プロフィールがまだ読み込まれていない場合のデフォルトユーザー名"
             }
         },
         "logout": {
-            "string": "Logout",
-            "context": "Link to logout in the header dropdown"
+            "string": "ログアウト",
+            "context": "ヘッダーのドロップダウンのログアウトリンク"
         },
         "settings": {
             "title": {
-                "string": "Settings",
-                "context": "Section title for the header dropdown"
+                "string": "設定",
+                "context": "ヘッダーのドロップダウンのセクションタイトル"
             },
             "general": {
-                "string": "General",
-                "context": "Link to the general settings in the header dropdown"
+                "string": "一般",
+                "context": "ヘッダーのドロップダウンの一般設定へのリンク"
             },
             "calendar": {
-                "string": "Calendar",
-                "context": "Link to the calendar settings in the header dropdown"
+                "string": "カレンダー",
+                "context": "ヘッダーのドロップダウンのカレンダー設定へのリンク"
             },
             "address_books": {
-                "string": "Address books",
-                "context": "Link to the address books settings in the header dropdown"
+                "string": "アドレス帳",
+                "context": "ヘッダーのドロップダウンのアドレス帳設定へのリンク"
             },
             "email": {
-                "string": "Email",
-                "context": "Link to the emails settings in the header dropdown"
+                "string": "メール",
+                "context": "ヘッダーのドロップダウンのメール設定へのリンク"
             }
         }
     }

@@ -1,17 +1,17 @@
 {
     "COMMONS": {
         "close": {
-            "string": "Close"
+            "string": "Chiudi"
         },
         "workInProgress": {
             "description": {
-                "string": "This feature is currently under development."
+                "string": "Questa funzionalità è attualmente in sviluppo."
             },
             "message": {
-                "string": "We're working hard to bring you this feature."
+                "string": "Stiamo lavorando sodo per portarti questa funzionalità."
             },
             "comingSoon": {
-                "string": "Coming soon! Stay tuned."
+                "string": "Prossimamente! Resta sintonizzato."
             }
         }
     },
@@ -19,29 +19,29 @@
         "demo": {
             "warning": {
                 "title": {
-                    "string": "Demo Version"
+                    "string": "Versione Demo"
                 },
                 "description": {
-                    "string": "You are currently using a demo version of the application. Some features may be limited."
+                    "string": "Stai attualmente utilizzando una versione demo dell'applicazione. Alcune funzionalità potrebbero essere limitate."
                 },
                 "action": {
-                    "string": "Got it"
+                    "string": "Ho capito"
                 }
             }
         },
         "language": {
-            "english": "English",
-            "french": "Français"
+            "english": "Inglese",
+            "french": "Francese"
         },
         "serviceUnavailable": {
             "title": {
-                "string": "Service unavailable"
+                "string": "Servizio non disponibile"
             },
             "description": {
-                "string": "The application could not connect to the server. Please try again later or contact your administrator."
+                "string": "L'applicazione non è riuscita a connettersi al server. Riprova più tardi o contatta il tuo amministratore."
             },
             "retry": {
-                "string": "Try again"
+                "string": "Riprova"
             }
         }
     }

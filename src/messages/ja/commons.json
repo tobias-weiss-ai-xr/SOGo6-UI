@@ -1,17 +1,17 @@
 {
     "COMMONS": {
         "close": {
-            "string": "Close"
+            "string": "閉じる"
         },
         "workInProgress": {
             "description": {
-                "string": "This feature is currently under development."
+                "string": "この機能は現在開発中です。"
             },
             "message": {
-                "string": "We're working hard to bring you this feature."
+                "string": "この機能をお届けするために懸命に作業しています。"
             },
             "comingSoon": {
-                "string": "Coming soon! Stay tuned."
+                "string": "近日公開！お楽しみに。"
             }
         }
     },
@@ -19,29 +19,29 @@
         "demo": {
             "warning": {
                 "title": {
-                    "string": "Demo Version"
+                    "string": "デモ版"
                 },
                 "description": {
-                    "string": "You are currently using a demo version of the application. Some features may be limited."
+                    "string": "現在、アプリケーションのデモ版を使用しています。一部の機能は制限されている可能性があります。"
                 },
                 "action": {
-                    "string": "Got it"
+                    "string": "理解しました"
                 }
             }
         },
         "language": {
-            "english": "English",
-            "french": "Français"
+            "english": "英語",
+            "french": "フランス語"
         },
         "serviceUnavailable": {
             "title": {
-                "string": "Service unavailable"
+                "string": "サービス利用不可"
             },
             "description": {
-                "string": "The application could not connect to the server. Please try again later or contact your administrator."
+                "string": "アプリケーションがサーバーに接続できませんでした。後ほど再度お試しください、または管理者に連絡してください。"
             },
             "retry": {
-                "string": "Try again"
+                "string": "再試行"
             }
         }
     }
