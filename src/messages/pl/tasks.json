@@ -1,61 +1,61 @@
 {
   "TASKS": {
     "page_title": {
-      "string": "Tasks"
+      "string": "Zadania"
     },
     "new_task": {
-      "string": "New task"
+      "string": "Nowe zadanie"
     },
     "search_placeholder": {
-      "string": "Search tasks…"
+      "string": "Szukaj zadań…"
     },
     "show_completed": {
-      "string": "Show completed"
+      "string": "Pokaż ukończone"
     },
     "all_calendars": {
-      "string": "All calendars"
+      "string": "Wszystkie kalendarze"
     },
     "empty_title": {
-      "string": "No tasks yet"
+      "string": "Jeszcze brak zadań"
     },
     "empty_description": {
-      "string": "Create your first task to get organized."
+      "string": "Utwórz swoje pierwsze zadanie, aby się zorganizować."
     },
     "overdue": {
-      "string": "Overdue"
+      "string": "Przeterminowane"
     },
     "filters": {
       "all": {
-        "string": "All"
+        "string": "Wszystkie"
       },
       "needs_action": {
-        "string": "To do"
+        "string": "Do zrobienia"
       },
       "in_process": {
-        "string": "In progress"
+        "string": "W toku"
       },
       "completed": {
-        "string": "Completed"
+        "string": "Ukończone"
       },
       "cancelled": {
-        "string": "Cancelled"
+        "string": "Anulowane"
       },
       "overdue": {
-        "string": "Overdue"
+        "string": "Przeterminowane"
       }
     },
     "priority": {
       "none": {
-        "string": "No priority"
+        "string": "Brak priorytetu"
       },
       "high": {
-        "string": "High"
+        "string": "Wysoki"
       },
       "medium": {
-        "string": "Medium"
+        "string": "Średni"
       },
       "low": {
-        "string": "Low"
+        "string": "Niski"
       }
     },
     "status": {

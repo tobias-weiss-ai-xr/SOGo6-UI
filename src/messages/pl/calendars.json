@@ -1,20 +1,20 @@
 {
   "CALENDARS": {
     "loading": {
-      "string": "Loading..."
+      "string": "Ładowanie..."
     },
     "attendance": {
       "accepted": {
-        "string": "Accept"
+        "string": "Akceptuję"
       },
       "declined": {
-        "string": "Decline"
+        "string": "Odrzucam"
       },
       "tentative": {
-        "string": "Maybe"
+        "string": "Może"
       },
       "delegated": {
-        "string": "Delegate"
+        "string": "Deleguję"
       },
       "success": {
         "accepted": {
@@ -58,45 +58,45 @@
     },
     "toolbar": {
       "previous": {
-        "string": "Previous"
+        "string": "Poprzedni"
       },
       "today": {
-        "string": "Today"
+        "string": "Dziś"
       },
       "next": {
-        "string": "Next"
+        "string": "Następny"
       },
       "pickDate": {
-        "string": "Pick a date"
+        "string": "Wybierz datę"
       },
       "search": {
-        "string": "Search events...",
+        "string": "Szukaj wydarzeń...",
         "no_results": {
-          "string": "No events found"
+          "string": "Nie znaleziono wydarzeń"
         },
         "loading": {
-          "string": "Searching..."
+          "string": "Wyszukiwanie..."
         }
       },
       "selectView": {
-        "string": "Select view"
+        "string": "Wybierz widok"
       },
       "views": {
         "month": {
-          "string": "Month"
+          "string": "Miesiąc"
         },
         "week": {
-          "string": "Week"
+          "string": "Tydzień"
         },
         "day": {
-          "string": "Day"
+          "string": "Dzień"
         },
         "schedule": {
-          "string": "Schedule"
+          "string": "Harmonogram"
         }
       },
       "createEvent": {
-        "string": "Create Event"
+        "string": "Utwórz wydarzenie"
       }
     },
     "events": {

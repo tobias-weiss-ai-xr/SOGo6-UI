@@ -1,20 +1,20 @@
 {
   "CALENDARS": {
     "loading": {
-      "string": "Loading..."
+      "string": "Laden..."
     },
     "attendance": {
       "accepted": {
-        "string": "Accept"
+        "string": "Accepteren"
       },
       "declined": {
-        "string": "Decline"
+        "string": "Afwijzen"
       },
       "tentative": {
-        "string": "Maybe"
+        "string": "Misschien"
       },
       "delegated": {
-        "string": "Delegate"
+        "string": "Delegeren"
       },
       "success": {
         "accepted": {
@@ -58,45 +58,45 @@
     },
     "toolbar": {
       "previous": {
-        "string": "Previous"
+        "string": "Vorige"
       },
       "today": {
-        "string": "Today"
+        "string": "Vandaag"
       },
       "next": {
-        "string": "Next"
+        "string": "Volgende"
       },
       "pickDate": {
-        "string": "Pick a date"
+        "string": "Kies een datum"
       },
       "search": {
-        "string": "Search events...",
+        "string": "Evenementen zoeken...",
         "no_results": {
-          "string": "No events found"
+          "string": "Geen evenementen gevonden"
         },
         "loading": {
-          "string": "Searching..."
+          "string": "Zoeken..."
         }
       },
       "selectView": {
-        "string": "Select view"
+        "string": "Selecteer weergave"
       },
       "views": {
         "month": {
-          "string": "Month"
+          "string": "Maand"
         },
         "week": {
           "string": "Week"
         },
         "day": {
-          "string": "Day"
+          "string": "Dag"
         },
         "schedule": {
-          "string": "Schedule"
+          "string": "Schema"
         }
       },
       "createEvent": {
-        "string": "Create Event"
+        "string": "Evenement maken"
       }
     },
     "events": {

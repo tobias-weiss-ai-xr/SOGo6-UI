@@ -1,20 +1,20 @@
 {
   "CALENDARS": {
     "loading": {
-      "string": "Loading..."
+      "string": "Загрузка..."
     },
     "attendance": {
       "accepted": {
-        "string": "Accept"
+        "string": "Согласен"
       },
       "declined": {
-        "string": "Decline"
+        "string": "Отказаться"
       },
       "tentative": {
-        "string": "Maybe"
+        "string": "Возможно"
       },
       "delegated": {
-        "string": "Delegate"
+        "string": "Делегировать"
       },
       "success": {
         "accepted": {
@@ -58,45 +58,45 @@
     },
     "toolbar": {
       "previous": {
-        "string": "Previous"
+        "string": "Предыдущий"
       },
       "today": {
-        "string": "Today"
+        "string": "Сегодня"
       },
       "next": {
-        "string": "Next"
+        "string": "Следующий"
       },
       "pickDate": {
-        "string": "Pick a date"
+        "string": "Выберите дату"
       },
       "search": {
-        "string": "Search events...",
+        "string": "Поиск событий...",
         "no_results": {
-          "string": "No events found"
+          "string": "События не найдены"
         },
         "loading": {
-          "string": "Searching..."
+          "string": "Поиск..."
         }
       },
       "selectView": {
-        "string": "Select view"
+        "string": "Выберите вид"
       },
       "views": {
         "month": {
-          "string": "Month"
+          "string": "Месяц"
         },
         "week": {
-          "string": "Week"
+          "string": "Неделя"
         },
         "day": {
-          "string": "Day"
+          "string": "День"
         },
         "schedule": {
-          "string": "Schedule"
+          "string": "Расписание"
         }
       },
       "createEvent": {
-        "string": "Create Event"
+        "string": "Создать событие"
       }
     },
     "events": {

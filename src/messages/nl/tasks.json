@@ -1,61 +1,61 @@
 {
   "TASKS": {
     "page_title": {
-      "string": "Tasks"
+      "string": "Taken"
     },
     "new_task": {
-      "string": "New task"
+      "string": "Nieuwe taak"
     },
     "search_placeholder": {
-      "string": "Search tasks…"
+      "string": "Taken zoeken…"
     },
     "show_completed": {
-      "string": "Show completed"
+      "string": "Voltooiden tonen"
     },
     "all_calendars": {
-      "string": "All calendars"
+      "string": "Alle agenda's"
     },
     "empty_title": {
-      "string": "No tasks yet"
+      "string": "Nog geen taken"
     },
     "empty_description": {
-      "string": "Create your first task to get organized."
+      "string": "Maak je eerste taak om georganiseerd te raken."
     },
     "overdue": {
-      "string": "Overdue"
+      "string": "Verlopen"
     },
     "filters": {
       "all": {
-        "string": "All"
+        "string": "Alle"
       },
       "needs_action": {
-        "string": "To do"
+        "string": "Te doen"
       },
       "in_process": {
-        "string": "In progress"
+        "string": "Bezig"
       },
       "completed": {
-        "string": "Completed"
+        "string": "Voltooid"
       },
       "cancelled": {
-        "string": "Cancelled"
+        "string": "Geannuleerd"
       },
       "overdue": {
-        "string": "Overdue"
+        "string": "Verlopen"
       }
     },
     "priority": {
       "none": {
-        "string": "No priority"
+        "string": "Geen prioriteit"
       },
       "high": {
-        "string": "High"
+        "string": "Hoog"
       },
       "medium": {
-        "string": "Medium"
+        "string": "Middel"
       },
       "low": {
-        "string": "Low"
+        "string": "Laag"
       }
     },
     "status": {

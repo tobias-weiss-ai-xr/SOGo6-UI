@@ -1,61 +1,61 @@
 {
   "TASKS": {
     "page_title": {
-      "string": "Tasks"
+      "string": "Задачи"
     },
     "new_task": {
-      "string": "New task"
+      "string": "Новая задача"
     },
     "search_placeholder": {
-      "string": "Search tasks…"
+      "string": "Поиск задач…"
     },
     "show_completed": {
-      "string": "Show completed"
+      "string": "Показать завершенные"
     },
     "all_calendars": {
-      "string": "All calendars"
+      "string": "Все календари"
     },
     "empty_title": {
-      "string": "No tasks yet"
+      "string": "Пока нет задач"
     },
     "empty_description": {
-      "string": "Create your first task to get organized."
+      "string": "Создайте свою первую задачу, чтобы навести порядок."
     },
     "overdue": {
-      "string": "Overdue"
+      "string": "Просроченные"
     },
     "filters": {
       "all": {
-        "string": "All"
+        "string": "Все"
       },
       "needs_action": {
-        "string": "To do"
+        "string": "Сделать"
       },
       "in_process": {
-        "string": "In progress"
+        "string": "В процессе"
       },
       "completed": {
-        "string": "Completed"
+        "string": "Завершено"
       },
       "cancelled": {
-        "string": "Cancelled"
+        "string": "Отменено"
       },
       "overdue": {
-        "string": "Overdue"
+        "string": "Просроченные"
       }
     },
     "priority": {
       "none": {
-        "string": "No priority"
+        "string": "Без приоритета"
       },
       "high": {
-        "string": "High"
+        "string": "Высокий"
       },
       "medium": {
-        "string": "Medium"
+        "string": "Средний"
       },
       "low": {
-        "string": "Low"
+        "string": "Низкий"
       }
     },
     "status": {
