@@ -8,40 +8,59 @@
 
 ## ✅ Completed Translations
 
-### Italian (it) - 100% Complete for Core Files
+### Phase 1: Core UI (COMPLETE)
+
+#### Italian (it) - 100% Complete for Core Files
 - ✅ `commons.json` - Common UI strings
 - ✅ `navigation.json` - Navigation menu
 - ✅ `header.json` - Header elements
 - ✅ `auth.json` - Authentication screens
 
-### Portuguese (pt) - 100% Complete for Core Files
+#### Portuguese (pt) - 100% Complete for Core Files
 - ✅ `commons.json` - Common UI strings
 - ✅ `navigation.json` - Navigation menu
 - ✅ `header.json` - Header elements
 - ✅ `auth.json` - Authentication screens
 
-### Japanese (ja) - 100% Complete for Core Files
+#### Japanese (ja) - 100% Complete for Core Files
 - ✅ `commons.json` - Common UI strings
 - ✅ `navigation.json` - Navigation menu
 - ✅ `header.json` - Header elements
 - ✅ `auth.json` - Authentication screens
+
+### Phase 2: Email & Calendar (IN PROGRESS)
+
+#### Dutch (nl) - Partial
+- ✅ `calendars.json` - Core calendar strings (loading, attendance, toolbar, views)
+- ✅ `tasks.json` - Task management (filters, priority, status)
+- ✅ `mails/commons.json` - Email common strings
+
+#### Polish (pl) - Partial
+- ✅ `calendars.json` - Core calendar strings (loading, attendance, toolbar, views)
+- ✅ `tasks.json` - Task management (filters, priority, status)
+- ✅ `mails/commons.json` - Email common strings
+
+#### Russian (ru) - Partial
+- ✅ `calendars.json` - Core calendar strings (loading, attendance, toolbar, views)
+- ✅ `tasks.json` - Task management (filters, priority, status)
+- ✅ `mails/commons.json` - Email common strings
 
 ---
 
 ## 📊 Translation Statistics
 
-| Locale | Core Files | Admin Panel | Mails | User Settings | Forms | Overall % |
-|--------|-----------|-------------|-------|---------------|-------|-----------|
-| **it** | 4/4 ✅ | 0/58 | 0/5 | 0/13 | 0/4 | ~5% |
-| **pt** | 4/4 ✅ | 0/58 | 0/5 | 0/13 | 0/4 | ~5% |
-| **ja** | 4/4 ✅ | 0/58 | 0/5 | 0/13 | 0/4 | ~5% |
-| **de** | 4/4 | 40/58 | 5/5 | 13/13 | 4/4 | ~85% |
-| **fr** | 4/4 | 40/58 | 5/5 | 13/13 | 4/4 | ~85% |
-| **es** | 4/4 | 40/58 | 5/5 | 13/13 | 4/4 | ~85% |
-| **zh** | 4/4 | 38/58 | 5/5 | 13/13 | 4/4 | ~83% |
-| **nl** | 0/4 | 0/58 | 0/5 | 0/13 | 0/4 | 0% |
-| **pl** | 0/4 | 0/58 | 0/5 | 0/13 | 0/4 | 0% |
-| **ru** | 0/4 | 0/58 | 0/5 | 0/13 | 0/4 | 0% |
+| Locale | Core Files | Calendars | Tasks | Mails | Admin Panel | Overall % |
+|--------|-----------|-----------|-------|-------|-------------|-----------|
+| **it** | 4/4 ✅ | 0/1 | 0/1 | 0/5 | 0/58 | ~5% |
+| **pt** | 4/4 ✅ | 0/1 | 0/1 | 0/5 | 0/58 | ~5% |
+| **ja** | 4/4 ✅ | 0/1 | 0/1 | 0/5 | 0/58 | ~5% |
+| **de** | 4/4 | 1/1 | 1/1 | 5/5 | 40/58 | ~85% |
+| **fr** | 4/4 | 1/1 | 1/1 | 5/5 | 40/58 | ~85% |
+| **es** | 4/4 | 1/1 | 1/1 | 5/5 | 40/58 | ~85% |
+| **zh** | 4/4 | 1/1 | 1/1 | 5/5 | 38/58 | ~83% |
+| **nl** | 0/4 | 1/1 ✅ | 1/1 ✅ | 1/5 | 0/58 | ~3% |
+| **pl** | 0/4 | 1/1 ✅ | 1/1 ✅ | 1/5 | 0/58 | ~3% |
+| **ru** | 0/4 | 1/1 ✅ | 1/1 ✅ | 1/5 | 0/58 | ~3% |
 | **sv** | 0/4 | 0/58 | 0/5 | 0/13 | 0/4 | 0% |
 | **da** | 0/4 | 0/58 | 0/5 | 0/13 | 0/4 | 0% |
 | **fi** | 0/4 | 0/58 | 0/5 | 0/13 | 0/4 | 0% |
@@ -152,17 +171,31 @@ npm run dev
 
 ## 🚀 Quick Start for New Translators
 
-1. **Clone repository** (already done)
-2. **Navigate to your locale**: `src/messages/<locale>/`
-3. **Start with core files**:
+### For Core UI (Phase 1)
+1. **Navigate to your locale**: `src/messages/<locale>/`
+2. **Start with core files**:
    - `commons.json`
    - `navigation.json`
    - `header.json`
    - `auth.json`
-4. **Translate strings** (keep structure intact)
-5. **Compile**: `node scripts/compile-messages.mjs`
-6. **Test**: `npm run dev`
-7. **Commit**: `git add src/messages/<locale>/`
+3. **Translate strings** (keep structure intact)
+4. **Compile**: `node scripts/compile-messages.mjs`
+5. **Test**: `npm run dev`
+6. **Commit**: `git add src/messages/<locale>/`
+
+### For Calendar/Tasks (Phase 2)
+1. **Files to translate**:
+   - `calendars.json` - Calendar events, views, attendees
+   - `tasks.json` - Task management, filters, priorities
+2. **Use English as reference**: `src/messages/en/`
+3. **Test calendar and tasks views**
+
+### For Email (Phase 3)
+1. **Files to translate**:
+   - `mails/commons.json` - Email actions, labels
+   - `mails/compose.json` - Compose email
+   - `mails/list.json` - Email list
+   - `mails/snooze.json` - Snooze feature
 
 ---
 
@@ -180,7 +213,8 @@ npm run dev
 | Date | Action | Languages | Files |
 |------|--------|-----------|-------|
 | 2024 | Initial i18n setup | 21 new locales | ~1,800 template files |
-| 2024 | Core translations | it, pt, ja | 12 files (4 per language) |
+| 2024 | Phase 1: Core UI | it, pt, ja | 12 files (4 per language) |
+| 2024 | Phase 2: Calendar/Tasks | nl, pl, ru | 9 files (3 per language) |
 
 ---
 
