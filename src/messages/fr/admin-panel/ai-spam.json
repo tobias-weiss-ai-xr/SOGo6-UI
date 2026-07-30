@@ -1,49 +1,49 @@
 {
-  "AI_SPAM": {
-    "title": {
-      "string": "Filtre anti-spam intelligent"
-    },
-    "description": {
-      "string": "Détection de spam en temps réel avec analyse des signaux"
-    },
-    "input": {
-      "title": {
-        "string": "Entrée"
-      },
-      "subject": {
-        "string": "Objet"
-      },
-      "sender": {
-        "string": "Expéditeur"
-      },
-      "body": {
-        "string": "Texte de l'e-mail"
-      },
-      "placeholder": {
-        "string": "Collez le texte à analyser..."
-      }
-    },
-    "output": {
-      "title": {
-        "string": "Résultat"
-      },
-      "empty": {
-        "string": "Le résultat apparaîtra ici"
-      },
-      "signals": {
-        "string": "Signaux"
-      }
-    },
-    "score": {
-      "string": "Évaluer"
-    },
-    "errors": {
-      "empty": {
-        "string": "Objet ou texte requis"
-      },
-      "fail": {
-        "string": "Échec de l'analyse"
-      }
+    "AI_SPAM": {
+        "title": {
+            "string": "Filtre anti-spam intelligent"
+        },
+        "description": {
+            "string": "Détection de spam en temps réel avec analyse des signaux"
+        },
+        "input": {
+            "title": {
+                "string": "Entrée"
+            },
+            "subject": {
+                "string": "Objet"
+            },
+            "sender": {
+                "string": "Expéditeur"
+            },
+            "body": {
+                "string": "Texte de l'e-mail"
+            },
+            "placeholder": {
+                "string": "Collez le texte à analyser..."
+            }
+        },
+        "output": {
+            "title": {
+                "string": "Résultat"
+            },
+            "empty": {
+                "string": "Le résultat apparaîtra ici"
+            },
+            "signals": {
+                "string": "Signaux"
+            }
+        },
+        "score": {
+            "string": "Évalueur"
+        },
+        "errors": {
+            "empty": {
+                "string": "Objet ou texte requis"
+            },
+            "fail": {
+                "string": "Échec de l'analyse"
+            }
+        }
     }
-  }
 }

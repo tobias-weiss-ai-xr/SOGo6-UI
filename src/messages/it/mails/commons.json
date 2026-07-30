@@ -3,27 +3,27 @@
         "mail_display": {
             "action-bar": {
                 "reply": {
-                    "string": "Reply",
+                    "string": "Rispondi",
                     "description": "Reply to the current message"
                 },
                 "reply_all": {
-                    "string": "Reply all",
+                    "string": "Rispondi a tutti",
                     "description": "Reply to all recipients of the current message"
                 },
                 "forward": {
-                    "string": "Forward",
+                    "string": "Inoltra",
                     "description": "Forward the current message to another recipient"
                 },
                 "edit_draft": {
-                    "string": "Edit",
+                    "string": "Modifica",
                     "description": "Open the draft in the composer"
                 },
                 "use_template": {
-                    "string": "Use template",
+                    "string": "Usa modello",
                     "description": "Create a new draft from this template without modifying it"
                 },
                 "return": {
-                    "string": "Return to search results",
+                    "string": "Torna ai risultati di ricerca",
                     "description": "Return to search results"
                 },
                 "delete": {
@@ -31,7 +31,7 @@
                     "description": "Delete the current message"
                 },
                 "report_spam": {
-                    "string": "Mark as spam",
+                    "string": "Segna come spam",
                     "description": "Mark as spam"
                 },
                 "mark_unread": {
@@ -39,15 +39,15 @@
                     "description": "Mark as unread"
                 },
                 "label": {
-                    "string": "Label",
+                    "string": "Etichetta",
                     "description": "Label",
                     "coming_soon": {
-                        "string": "Labels coming soon",
+                        "string": "Etichette in arrivo",
                         "description": "Tooltip when label picker is not yet available"
                     }
                 },
                 "move_to_inbox": {
-                    "string": "Move to Inbox",
+                    "string": "Sposta in Posta in arrivo",
                     "description": "Move message from Junk back to the Inbox"
                 },
                 "archive": {
@@ -59,7 +59,7 @@
                     "description": "Download message as .eml file"
                 },
                 "move": {
-                    "string": "Move to folder",
+                    "string": "Sposta in cartella",
                     "description": "Move message to another folder"
                 },
                 "print": {
@@ -80,11 +80,11 @@
                         "description": "Cc label in print view"
                     },
                     "date": {
-                        "string": "Date",
+                        "string": "Data",
                         "description": "Date label in print view"
                     },
                     "attachments": {
-                        "string": "Attachments",
+                        "string": "Allegati",
                         "description": "Attachments label in print view"
                     }
                 },
@@ -94,10 +94,10 @@
                 },
                 "delete_confirm": {
                     "title": {
-                        "string": "Delete message"
+                        "string": "Elimina messaggio"
                     },
                     "message": {
-                        "string": "This message will be moved to Trash."
+                        "string": "Questo messaggio verrà spostato nel Cestino."
                     },
                     "confirm": {
                         "string": "Elimina"
@@ -108,13 +108,13 @@
                 },
                 "spam_confirm": {
                     "title": {
-                        "string": "Mark as spam"
+                        "string": "Segna come spam"
                     },
                     "message": {
-                        "string": "This message will be moved to Junk."
+                        "string": "Questo messaggio verrà spostato in Posta indesiderata."
                     },
                     "confirm": {
-                        "string": "Move to Junk"
+                        "string": "Sposta in Posta indesiderata"
                     },
                     "cancel": {
                         "string": "Annulla"
@@ -122,13 +122,13 @@
                 },
                 "ham_confirm": {
                     "title": {
-                        "string": "Move to Inbox"
+                        "string": "Sposta in Posta in arrivo"
                     },
                     "message": {
-                        "string": "This message will be moved to your Inbox."
+                        "string": "Questo messaggio verrà spostato nella Posta in arrivo."
                     },
                     "confirm": {
-                        "string": "Move to Inbox"
+                        "string": "Sposta in Posta in arrivo"
                     },
                     "cancel": {
                         "string": "Annulla"
@@ -147,30 +147,30 @@
                     "description": "Previous mail"
                 },
                 "snooze": {
-                    "string": "Snooze",
+                    "string": "Posticipa",
                     "description": "Temporarily remove from inbox and return later"
                 }
             },
             "content": {
                 "external_images_warning": {
-                    "string": "This message contains external images.  Click to display them.",
+                    "string": "Questo messaggio contiene immagini esterne. Clicca per visualizzarle.",
                     "description": "Warning: This message contains external images"
                 },
                 "download_attachment": {
-                    "string": "Download attachment",
+                    "string": "Scarica allegato",
                     "description": "ARIA label for the download attachment link"
                 },
                 "download_all_attachments": {
-                    "string": "Download all attachments",
+                    "string": "Scarica tutti gli allegati",
                     "description": "ARIA label for the download all attachments link"
                 },
                 "download_error": {
                     "title": {
-                        "string": "Download failed",
+                        "string": "Download fallito",
                         "description": "Title of the error toast shown when an attachment fails to download"
                     },
                     "message": {
-                        "string": "The attachment could not be downloaded. Please try again.",
+                        "string": "L'allegato non può essere scaricato. Riprova.",
                         "description": "Message of the error toast shown when an attachment fails to download"
                     }
                 },
@@ -193,16 +193,16 @@
                     "description": "Cc"
                 },
                 "unsubscribe": {
-                    "string": "Unsubscribe",
+                    "string": "Annulla iscrizione",
                     "description": "Unsubscribe from the mailing list"
                 },
                 "unsubscribe-dialog": {
                     "message": {
-                        "string": "Do you want to unsubscribe from this mailing list?",
+                        "string": "Vuoi annullare l'iscrizione a questa mailing list?",
                         "description": "Message in the unsubscribe dialog"
                     },
                     "confirm": {
-                        "string": "Unsubscribe",
+                        "string": "Annulla iscrizione",
                         "description": "Confirm the unsubscription"
                     },
                     "cancel": {
@@ -212,15 +212,15 @@
                 },
                 "contacts-badge": {
                     "popover-view-contact": {
-                        "string": "View contact",
+                        "string": "Visualizza contatto",
                         "description": "Open the matching contact in the address book"
                     },
                     "popover-add-to-addressbook": {
-                        "string": "Add to address book",
+                        "string": "Aggiungi alla rubrica",
                         "description": "Add the contact to the address book"
                     },
                     "popover-write-new-message": {
-                        "string": "Write new message",
+                        "string": "Scrivi nuovo messaggio",
                         "description": "Write a new message to the contact"
                     }
                 }
@@ -286,7 +286,7 @@
         },
         "account_switcher": {
             "add_account": {
-                "string": "Add account",
+                "string": "Aggiungi account",
                 "description": "Button to add an external mail account in the sidebar account switcher"
             },
             "new_folder": {
@@ -294,7 +294,7 @@
                 "description": "Label for the new folder action in the account switcher menu"
             },
             "delegate": {
-                "string": "Delegate",
+                "string": "Delega",
                 "description": "Label for the delegate action in the account switcher menu (not yet implemented)"
             }
         },
@@ -313,7 +313,7 @@
         "folders": {
             "actions": {
                 "new_subfolder": {
-                    "string": "New Subfolder",
+                    "string": "Nuova Sottocartella",
                     "description": "Button to create a new subfolder in the current folder"
                 },
                 "rename": {
@@ -322,15 +322,15 @@
                 },
                 "rename_dialog": {
                     "title": {
-                        "string": "Rename folder",
+                        "string": "Rinomina cartella",
                         "description": "Title of the rename folder dialog"
                     },
                     "label": {
-                        "string": "Folder name",
+                        "string": "Nome cartella",
                         "description": "Label for the folder name input"
                     },
                     "placeholder": {
-                        "string": "e.g. Work, Archives…",
+                        "string": "es. Lavoro, Archivi…",
                         "description": "Placeholder for the folder name input"
                     },
                     "submit": {
@@ -342,24 +342,24 @@
                         "description": "Cancel button label in the rename folder dialog"
                     },
                     "error_required": {
-                        "string": "Folder name is required",
+                        "string": "Il nome della cartella è obbligatorio",
                         "description": "Validation error when folder name is empty"
                     },
                     "error_dot": {
-                        "string": "Folder name cannot contain a dot",
+                        "string": "Il nome della cartella non può contenere un punto",
                         "description": "Validation error when folder name contains a dot character"
                     },
                     "error_max": {
-                        "string": "Folder name must be at most 100 characters",
+                        "string": "Il nome della cartella deve essere al massimo di 100 caratteri",
                         "description": "Validation error when folder name exceeds max length"
                     }
                 },
                 "mark_as_read": {
-                    "string": "Mark as Read",
+                    "string": "Segna come letta",
                     "description": "Button to mark the current folder as read"
                 },
                 "export": {
-                    "string": "Export",
+                    "string": "Esporta",
                     "description": "Button to export all messages in the current folder"
                 },
                 "move_to": {
@@ -367,26 +367,26 @@
                     "description": "Button to move the current folder under another parent"
                 },
                 "set_as": {
-                    "string": "Set as",
+                    "string": "Imposta come",
                     "description": "Button to assign a semantic folder type to a normal folder"
                 },
                 "empty_folder": {
-                    "string": "Empty folder",
+                    "string": "Svuota cartella",
                     "description": "Button to permanently empty trash or junk folder"
                 },
                 "action_unavailable": {
-                    "string": "This action is not available yet",
+                    "string": "Questa azione non è ancora disponibile",
                     "description": "Tooltip shown when a folder action is disabled because the backend is not ready"
                 },
                 "empty_folder_dialog": {
                     "title": {
-                        "string": "Empty folder"
+                        "string": "Svuota cartella"
                     },
                     "description": {
-                        "string": "Permanently delete all messages in \"{folder}\"? This action cannot be undone."
+                        "string": "Eliminare definitivamente tutti i messaggi in \"{folder}\"? Questa azione non può essere annullata."
                     },
                     "confirm": {
-                        "string": "Empty folder"
+                        "string": "Svuota cartella"
                     },
                     "cancel": {
                         "string": "Annulla"
@@ -394,10 +394,10 @@
                 },
                 "set_as_dialog": {
                     "title": {
-                        "string": "Set folder type"
+                        "string": "Imposta tipo cartella"
                     },
                     "description": {
-                        "string": "Choose the semantic type for \"{folder}\"."
+                        "string": "Scegli il tipo semantico per \"{folder}\"."
                     },
                     "cancel": {
                         "string": "Annulla"
@@ -416,22 +416,22 @@
                             "string": "Posta indesiderata"
                         },
                         "TEMPLATE": {
-                            "string": "Templates"
+                            "string": "Modelli"
                         }
                     }
                 },
                 "move_to_dialog": {
                     "title": {
-                        "string": "Move folder"
+                        "string": "Sposta cartella"
                     },
                     "description": {
-                        "string": "Choose a new parent for \"{folder}\"."
+                        "string": "Scegli un nuovo genitore per \"{folder}\"."
                     },
                     "placeholder": {
-                        "string": "Select destination"
+                        "string": "Seleziona destinazione"
                     },
                     "root": {
-                        "string": "Root level"
+                        "string": "Livello radice"
                     },
                     "confirm": {
                         "string": "Sposta"
@@ -441,44 +441,44 @@
                     }
                 },
                 "sharing": {
-                    "string": "Sharing",
+                    "string": "Condivisione",
                     "title": {
-                        "string": "Share folder"
+                        "string": "Condividi cartella"
                     },
                     "description": {
-                        "string": "Manage who has access to \"{folder}\" and their permissions."
+                        "string": "Gestisci chi ha accesso a \"{folder}\" e i relativi permessi."
                     },
                     "noUsers": {
-                        "string": "No users have access yet."
+                        "string": "Nessun utente ha ancora accesso."
                     },
                     "addUser": {
                         "label": {
-                            "string": "Add a user"
+                            "string": "Aggiungi un utente"
                         },
                         "placeholder": {
-                            "string": "email@domain.com"
+                            "string": "email@dominio.com"
                         },
                         "button": {
-                            "string": "Add"
+                            "string": "Aggiungi"
                         },
                         "error": {
                             "invalid": {
-                                "string": "Please enter a valid email address."
+                                "string": "Inserisci un indirizzo email valido."
                             },
                             "duplicate": {
-                                "string": "This user already has access."
+                                "string": "Questo utente ha già accesso."
                             }
                         }
                     },
                     "presets": {
                         "read": {
-                            "string": "Read"
+                            "string": "Lettura"
                         },
                         "write": {
-                            "string": "Write"
+                            "string": "Scrittura"
                         },
                         "admin": {
-                            "string": "Admin"
+                            "string": "Amministratore"
                         }
                     },
                     "save": {
@@ -489,105 +489,105 @@
                     },
                     "badge": {
                         "you": {
-                            "string": "You"
+                            "string": "Tu"
                         },
                         "public": {
-                            "string": "Public"
+                            "string": "Pubblico"
                         }
                     },
                     "removeUser": {
                         "tooltip": {
-                            "string": "Cannot remove yourself"
+                            "string": "Non puoi rimuovere te stesso"
                         }
                     }
                 },
                 "purge": {
-                    "string": "Purge",
+                    "string": "Elimina definitivamente",
                     "description": "Button to permanently delete all messages in the current folder",
                     "confirmTitle": {
-                        "string": "Purge folder"
+                        "string": "Elimina definitivamente cartella"
                     },
                     "confirmDesc": {
-                        "string": "Are you sure you want to purge \"{folder}\"? All deleted messages will be permanently removed. This action cannot be undone."
+                        "string": "Sei sicuro di voler eliminare definitivamente \"{folder}\"? Tutti i messaggi eliminati verranno rimossi permanentemente. Questa azione non può essere annullata."
                     },
                     "confirm": {
-                        "string": "Purge"
+                        "string": "Elimina definitivamente"
                     },
                     "cancel": {
                         "string": "Annulla"
                     },
                     "olderThan": {
-                        "string": "Delete mails older than"
+                        "string": "Elimina messaggi più vecchi di"
                     },
                     "customDate": {
-                        "string": "Custom date"
+                        "string": "Data personalizzata"
                     },
                     "pickDate": {
-                        "string": "Pick a date"
+                        "string": "Scegli una data"
                     },
                     "applyToSubfolders": {
-                        "string": "Apply to subfolders"
+                        "string": "Applica alle sottocartelle"
                     },
                     "permanentlyDelete": {
-                        "string": "Permanently delete (cannot be undone)"
+                        "string": "Elimina definitivamente (non può essere annullato)"
                     },
                     "confirmPermanent": {
-                        "string": "I understand this will permanently delete the selected mails and they cannot be recovered"
+                        "string": "Capisco che questo eliminerà definitivamente i messaggi selezionati e non potranno essere recuperati"
                     },
                     "datePresets": {
                         "3months": {
-                            "string": "3 months"
+                            "string": "3 mesi"
                         },
                         "6months": {
-                            "string": "6 months"
+                            "string": "6 mesi"
                         },
                         "1year": {
-                            "string": "1 year"
+                            "string": "1 anno"
                         },
                         "custom": {
-                            "string": "Custom date"
+                            "string": "Data personalizzata"
                         },
                         "all": {
-                            "string": "All mails"
+                            "string": "Tutti i messaggi"
                         }
                     },
                     "successTitle": {
-                        "string": "Folder purged"
+                        "string": "Cartella eliminata definitivamente"
                     },
                     "successMessage": {
-                        "string": "All deleted messages have been permanently removed."
+                        "string": "Tutti i messaggi eliminati sono stati rimossi permanentemente."
                     },
                     "errorTitle": {
-                        "string": "Purge failed"
+                        "string": "Eliminazione definitiva fallita"
                     },
                     "errorMessage": {
-                        "string": "An error occurred while purging the folder. Please try again."
+                        "string": "Si è verificato un errore durante l'eliminazione definitiva della cartella. Riprova."
                     }
                 },
                 "expunge": {
-                    "string": "Expunge",
+                    "string": "Espungi",
                     "confirmTitle": {
-                        "string": "Expunge folder"
+                        "string": "Espungi cartella"
                     },
                     "confirmDesc": {
-                        "string": "Are you sure you want to expunge \"{folder}\"? All messages marked as deleted will be permanently removed. This action cannot be undone."
+                        "string": "Sei sicuro di voler espungere \"{folder}\"? Tutti i messaggi contrassegnati come eliminati verranno rimossi permanentemente. Questa azione non può essere annullata."
                     },
                     "confirm": {
-                        "string": "Expunge"
+                        "string": "Espungi"
                     },
                     "cancel": {
                         "string": "Annulla"
                     }
                 },
                 "delete": {
-                    "string": "Delete folder",
+                    "string": "Elimina cartella",
                     "description": "Label for the delete folder action in the folder context menu",
                     "confirmTitle": {
-                        "string": "Delete folder",
+                        "string": "Elimina cartella",
                         "description": "Title of the delete folder confirmation dialog"
                     },
                     "confirmDesc": {
-                        "string": "Are you sure you want to delete \"{folder}\"? It will be moved to Trash. If it is already in Trash, it will be permanently deleted.",
+                        "string": "Sei sicuro di voler eliminare \"{folder}\"? Verrà spostata nel Cestino. Se è già nel Cestino, verrà eliminata definitivamente.",
                         "description": "Description of the delete folder confirmation dialog"
                     },
                     "confirm": {
@@ -601,19 +601,19 @@
                 },
                 "new_subfolder_dialog": {
                     "title": {
-                        "string": "New subfolder",
+                        "string": "Nuova sottocartella",
                         "description": "Title of the create subfolder dialog"
                     },
                     "label": {
-                        "string": "Folder name",
+                        "string": "Nome cartella",
                         "description": "Label for the folder name input"
                     },
                     "placeholder": {
-                        "string": "e.g. Work, Archives…",
+                        "string": "es. Lavoro, Archivi…",
                         "description": "Placeholder for the folder name input"
                     },
                     "submit": {
-                        "string": "Create",
+                        "string": "Crea",
                         "description": "Submit button label in the create subfolder dialog"
                     },
                     "cancel": {
@@ -621,15 +621,15 @@
                         "description": "Cancel button label in the create subfolder dialog"
                     },
                     "error_required": {
-                        "string": "Folder name is required",
+                        "string": "Il nome della cartella è obbligatorio",
                         "description": "Validation error when folder name is empty"
                     },
                     "error_dot": {
-                        "string": "Folder name cannot contain a dot",
+                        "string": "Il nome della cartella non può contenere un punto",
                         "description": "Validation error when folder name contains a dot character"
                     },
                     "error_max": {
-                        "string": "Folder name must be at most 100 characters",
+                        "string": "Il nome della cartella deve essere al massimo di 100 caratteri",
                         "description": "Validation error when folder name exceeds max length"
                     }
                 }
@@ -655,19 +655,19 @@
                 "description": "Messages identified as spam"
             },
             "template": {
-                "string": "Templates",
+                "string": "Modelli",
                 "description": "Message templates"
             },
             "virtual_folder": {
-                "string": "Virtual folder — expand to browse subfolders",
+                "string": "Cartella virtuale — espandi per sfogliare le sottocartelle",
                 "description": "Tooltip for non-selectable IMAP folders"
             },
             "virtual_empty": {
                 "title": {
-                    "string": "Virtual folder"
+                    "string": "Cartella virtuale"
                 },
                 "description": {
-                    "string": "This folder cannot contain messages. Expand it in the sidebar to browse subfolders."
+                    "string": "Questa cartella non può contenere messaggi. Espandila nella barra laterale per sfogliare le sottocartelle."
                 }
             }
         },
@@ -676,40 +676,40 @@
                 "string": "Nuovo messaggio"
             },
             "defaultSender": {
-                "string": "Unknown sender"
+                "string": "Mittente sconosciuto"
             }
         },
         "invitation": {
             "label": {
-                "string": "Calendar invitation",
+                "string": "Invito calendario",
                 "description": "Heading for an iMIP calendar invitation in mail view"
             },
             "synced_to_calendar": {
-                "string": "This event has been added to your calendar.",
+                "string": "Questo evento è stato aggiunto al tuo calendario.",
                 "description": "Info banner after inbound iMIP sync"
             },
             "event_cancelled": {
-                "string": "This event has been cancelled.",
+                "string": "Questo evento è stato cancellato.",
                 "description": "Message for iMIP CANCEL mails"
             },
             "reply_from_attendee": {
-                "string": "{name} responded: {status}",
+                "string": "{name} ha risposto: {status}",
                 "description": "Message when an attendee sends an iMIP REPLY"
             },
             "sync_pending": {
-                "string": "Syncing with your calendar…",
+                "string": "Sincronizzazione con il calendario in corso...",
                 "description": "Event not found yet after opening invitation mail"
             },
             "retry": {
-                "string": "Retry",
+                "string": "Riprova",
                 "description": "Retry loading calendar event for invitation"
             },
             "view_in_calendar": {
-                "string": "View in calendar",
+                "string": "Visualizza nel calendario",
                 "description": "Link to open the event in the calendar module"
             },
             "recurring_badge": {
-                "string": "Recurring event",
+                "string": "Evento ricorrente",
                 "description": "Badge for recurring invitations"
             }
         }

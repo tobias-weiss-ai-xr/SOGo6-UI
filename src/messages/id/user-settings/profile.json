@@ -37,7 +37,7 @@
         "identities": {},
         "api": {
             "title": {
-                "string": "Error"
+                "string": "Kesalahan"
             },
             "loading": {
                 "string": "Loading"

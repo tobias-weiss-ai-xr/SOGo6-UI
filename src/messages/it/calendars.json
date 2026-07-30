@@ -1,977 +1,977 @@
 {
-  "CALENDARS": {
-    "loading": {
-      "string": "Loading..."
-    },
-    "attendance": {
-      "accepted": {
-        "string": "Accept"
-      },
-      "declined": {
-        "string": "Decline"
-      },
-      "tentative": {
-        "string": "Maybe"
-      },
-      "delegated": {
-        "string": "Delegate"
-      },
-      "success": {
-        "accepted": {
-          "string": "You accepted this event"
-        },
-        "declined": {
-          "string": "You declined this event"
-        },
-        "tentative": {
-          "string": "Marked as maybe"
-        }
-      },
-      "error": {
-        "string": {
-          "string": "Failed to update your attendance"
-        }
-      }
-    },
-    "recurrenceScope": {
-      "editTitle": {
-        "string": "Edit recurring event"
-      },
-      "deleteTitle": {
-        "string": "Delete recurring event"
-      },
-      "description": {
-        "string": "Which events do you want to modify?"
-      },
-      "ONE": {
-        "string": "This event only"
-      },
-      "THISANDFUTURE": {
-        "string": "This and following events"
-      },
-      "ALL": {
-        "string": "All events"
-      },
-      "cancel": {
-        "string": "Cancel"
-      }
-    },
-    "toolbar": {
-      "previous": {
-        "string": "Previous"
-      },
-      "today": {
-        "string": "Today"
-      },
-      "next": {
-        "string": "Next"
-      },
-      "pickDate": {
-        "string": "Pick a date"
-      },
-      "search": {
-        "string": "Search events...",
-        "no_results": {
-          "string": "No events found"
-        },
+    "CALENDARS": {
         "loading": {
-          "string": "Searching..."
-        }
-      },
-      "selectView": {
-        "string": "Select view"
-      },
-      "views": {
-        "month": {
-          "string": "Month"
+            "string": "Caricamento..."
         },
-        "week": {
-          "string": "Week"
+        "attendance": {
+            "accepted": {
+                "string": "Accetta"
+            },
+            "declined": {
+                "string": "Rifiuta"
+            },
+            "tentative": {
+                "string": "Forse"
+            },
+            "delegated": {
+                "string": "Delega"
+            },
+            "success": {
+                "accepted": {
+                    "string": "Hai accettato questo evento"
+                },
+                "declined": {
+                    "string": "Hai rifiutato questo evento"
+                },
+                "tentative": {
+                    "string": "Segnato come forse"
+                }
+            },
+            "error": {
+                "string": {
+                    "string": "Aggiornamento partecipazione fallito"
+                }
+            }
         },
-        "day": {
-          "string": "Day"
+        "recurrenceScope": {
+            "editTitle": {
+                "string": "Modifica evento ricorrente"
+            },
+            "deleteTitle": {
+                "string": "Elimina evento ricorrente"
+            },
+            "description": {
+                "string": "Quali eventi vuoi modificare?"
+            },
+            "ONE": {
+                "string": "Solo questo evento"
+            },
+            "THISANDFUTURE": {
+                "string": "Questo e gli eventi successivi"
+            },
+            "ALL": {
+                "string": "Tutti gli eventi"
+            },
+            "cancel": {
+                "string": "Annulla"
+            }
+        },
+        "toolbar": {
+            "previous": {
+                "string": "Precedente"
+            },
+            "today": {
+                "string": "Oggi"
+            },
+            "next": {
+                "string": "Avanti"
+            },
+            "pickDate": {
+                "string": "Scegli una data"
+            },
+            "search": {
+                "string": "Cerca eventi...",
+                "no_results": {
+                    "string": "Nessun evento trovato"
+                },
+                "loading": {
+                    "string": "Ricerca in corso..."
+                }
+            },
+            "selectView": {
+                "string": "Seleziona vista"
+            },
+            "views": {
+                "month": {
+                    "string": "Mese"
+                },
+                "week": {
+                    "string": "Settimana"
+                },
+                "day": {
+                    "string": "Giorno"
+                },
+                "schedule": {
+                    "string": "Programma"
+                }
+            },
+            "createEvent": {
+                "string": "Crea Evento"
+            }
+        },
+        "events": {
+            "create": {
+                "string": "Crea Evento"
+            }
         },
         "schedule": {
-          "string": "Schedule"
+            "noEvents": {
+                "string": "Nessun evento"
+            },
+            "noUpcomingEvents": {
+                "string": "Nessun evento imminente per questo periodo"
+            }
+        },
+        "views": {
+            "month": {
+                "string": "Mese"
+            },
+            "week": {
+                "string": "Settimana"
+            },
+            "day": {
+                "string": "Giorno"
+            },
+            "agenda": {
+                "string": "Agenda"
+            }
+        },
+        "mobile": {
+            "event": {
+                "string": "evento",
+                "plural": "eventi"
+            },
+            "weekView": {
+                "eventsCount": {
+                    "string": "{count, plural, one {# evento} other {# eventi}}"
+                }
+            },
+            "noEvents": {
+                "string": "Nessun evento"
+            },
+            "swipeHint": {
+                "string": "← Scorri per vedere tutti i giorni →"
+            },
+            "swipeToChangeDay": {
+                "string": "Scorri per cambiare giorno"
+            },
+            "swipeToNavigate": {
+                "string": "← Scorri per navigare →"
+            },
+            "timeSeparator": {
+                "string": "-"
+            },
+            "month": {
+                "today": {
+                    "string": "Oggi"
+                },
+                "hasEvents": {
+                    "string": "Ha eventi"
+                }
+            }
+        },
+        "external": {
+            "add_title": {
+                "string": "Iscriviti al calendario"
+            },
+            "name_label": {
+                "string": "Nome"
+            },
+            "url_label": {
+                "string": "URL Calendario (.ics)"
+            },
+            "url_error": {
+                "string": "Inserisci un URL valido"
+            },
+            "color_label": {
+                "string": "Colore"
+            },
+            "sync_interval_label": {
+                "string": "Sincronizza ogni"
+            },
+            "sync_now": {
+                "string": "Sincronizza ora"
+            },
+            "submit": {
+                "string": "Iscriviti"
+            },
+            "sync_interval_options": {
+                "5": {
+                    "string": "5 min"
+                },
+                "15": {
+                    "string": "15 min"
+                },
+                "30": {
+                    "string": "30 min"
+                },
+                "60": {
+                    "string": "1 ora"
+                },
+                "360": {
+                    "string": "6 ore"
+                },
+                "1440": {
+                    "string": "24 ore"
+                }
+            }
+        },
+        "sidebar": {
+            "personals": {
+                "string": "Calendari Personali"
+            },
+            "shared": {
+                "string": "Calendari Condivisi"
+            },
+            "subscriptions": {
+                "string": "Sottoscrizioni"
+            },
+            "add": {
+                "string": "Aggiungi Calendario"
+            },
+            "edit": {
+                "string": "Modifica Calendario"
+            },
+            "delete": {
+                "string": "Elimina Calendario"
+            },
+            "sharing": {
+                "string": "Impostazioni Condivisione"
+            },
+            "link": {
+                "string": "Ottieni Link Calendario",
+                "description": {
+                    "string": "Copia questo link per iscriverti a questo calendario in altre applicazioni calendario."
+                }
+            },
+            "export": {
+                "string": "Esporta Calendario"
+            },
+            "color": {
+                "string": "Colore Calendario"
+            },
+            "readOnlyCalendar": {
+                "string": "Calendario in sola lettura",
+                "context": "Label for ICS/subscription calendars that cannot be edited"
+            }
+        },
+        "actions": {
+            "newEvent": {
+                "string": "Nuovo Evento"
+            },
+            "today": {
+                "string": "Oggi"
+            },
+            "month": {
+                "string": "Mese"
+            },
+            "week": {
+                "string": "Settimana"
+            },
+            "day": {
+                "string": "Giorno"
+            },
+            "agenda": {
+                "string": "Agenda"
+            }
+        },
+        "visualization": {
+            "location": {
+                "string": "Posizione"
+            },
+            "description": {
+                "string": "Descrizione"
+            },
+            "attendees": {
+                "string": "Partecipanti"
+            },
+            "conference": {
+                "string": "Video Conferenza"
+            },
+            "joinMeeting": {
+                "string": "Partecipa alla riunione"
+            },
+            "reminders": {
+                "string": "Promemoria"
+            },
+            "recurrence": {
+                "string": "Ripetizioni"
+            },
+            "frequency": {
+                "daily": {
+                    "string": "Giornaliero"
+                },
+                "weekly": {
+                    "string": "Settimanale"
+                },
+                "monthly": {
+                    "string": "Mensile"
+                },
+                "yearly": {
+                    "string": "Annuale"
+                }
+            },
+            "every": {
+                "string": "Ogni {count}"
+            },
+            "daysBefore": {
+                "string": "{count} giorni prima"
+            },
+            "hoursBefore": {
+                "string": "{count} ore prima"
+            },
+            "minutesBefore": {
+                "string": "{count} minuti prima"
+            },
+            "organizer": {
+                "string": "Organizzatore"
+            },
+            "organizerRole": {
+                "string": "(organizzatore)"
+            },
+            "attendeeStatus": {
+                "accepted": {
+                    "string": "Accettato"
+                },
+                "pending": {
+                    "string": "In attesa"
+                },
+                "declined": {
+                    "string": "Rifiutato"
+                },
+                "tentative": {
+                    "string": "Provvisorio"
+                }
+            },
+            "categories": {
+                "string": "Categorie"
+            },
+            "url": {
+                "string": "URL"
+            },
+            "visibility": {
+                "string": "Visibilità",
+                "values": {
+                    "public": {
+                        "string": "Pubblico"
+                    },
+                    "private": {
+                        "string": "Privato"
+                    },
+                    "confidential": {
+                        "string": "Confidenziale"
+                    }
+                }
+            },
+            "showAs": {
+                "string": "Mostra come",
+                "values": {
+                    "busy": {
+                        "string": "Occupato"
+                    },
+                    "free": {
+                        "string": "Libero"
+                    },
+                    "tentative": {
+                        "string": "Provvisorio"
+                    },
+                    "outOfOffice": {
+                        "string": "Fuori sede"
+                    }
+                }
+            },
+            "status": {
+                "string": "Stato",
+                "values": {
+                    "confirmed": {
+                        "string": "Confermato"
+                    },
+                    "tentative": {
+                        "string": "Provvisorio"
+                    },
+                    "cancelled": {
+                        "string": "Annullato"
+                    }
+                }
+            }
+        },
+        "eventForm": {
+            "calendar": {
+                "label": {
+                    "string": "Calendario"
+                },
+                "placeholder": {
+                    "string": "Seleziona calendario"
+                }
+            },
+            "title": {
+                "label": {
+                    "string": "Titolo evento"
+                },
+                "placeholder": {
+                    "string": "Inserisci titolo evento"
+                }
+            },
+            "allDay": {
+                "label": {
+                    "string": "Tutto il giorno"
+                }
+            },
+            "startDate": {
+                "label": {
+                    "string": "Data inizio"
+                }
+            },
+            "startTime": {
+                "label": {
+                    "string": "Ora inizio"
+                }
+            },
+            "endDate": {
+                "label": {
+                    "string": "Data fine"
+                }
+            },
+            "endTime": {
+                "label": {
+                    "string": "Ora fine"
+                }
+            },
+            "errors": {
+                "date_order": {
+                    "string": "La data di fine deve essere uguale o successiva alla data di inizio."
+                }
+            },
+            "timezone": {
+                "label": {
+                    "string": "Fuso orario (evento)"
+                },
+                "description": {
+                    "string": "Fuso orario in cui vengono interpretate le date di questo evento"
+                }
+            },
+            "description": {
+                "label": {
+                    "string": "Descrizione"
+                },
+                "placeholder": {
+                    "string": "Aggiungi dettagli evento"
+                }
+            },
+            "location": {
+                "label": {
+                    "string": "Posizione"
+                },
+                "placeholder": {
+                    "string": "Aggiungi posizione"
+                }
+            },
+            "visibility": {
+                "label": {
+                    "string": "Visibilità"
+                },
+                "placeholder": {
+                    "string": "Seleziona visibilità"
+                },
+                "options": {
+                    "public": {
+                        "string": "Pubblico"
+                    },
+                    "private": {
+                        "string": "Privato"
+                    },
+                    "confidential": {
+                        "string": "Confidenziale"
+                    }
+                }
+            },
+            "showAs": {
+                "label": {
+                    "string": "Mostra come"
+                },
+                "placeholder": {
+                    "string": "Seleziona disponibilità"
+                },
+                "options": {
+                    "busy": {
+                        "string": "Occupato"
+                    },
+                    "free": {
+                        "string": "Libero"
+                    },
+                    "outOfOffice": {
+                        "string": "Fuori sede"
+                    },
+                    "tentative": {
+                        "string": "Provvisorio"
+                    }
+                }
+            },
+            "status": {
+                "label": {
+                    "string": "Stato"
+                },
+                "placeholder": {
+                    "string": "Seleziona stato"
+                },
+                "options": {
+                    "confirmed": {
+                        "string": "Confermato"
+                    },
+                    "tentative": {
+                        "string": "Provvisorio"
+                    },
+                    "cancelled": {
+                        "string": "Annullato"
+                    }
+                }
+            },
+            "color": {
+                "label": {
+                    "string": "Colore"
+                },
+                "reset": {
+                    "string": "Reimposta"
+                }
+            },
+            "categories": {
+                "label": {
+                    "string": "Categorie"
+                },
+                "placeholder": {
+                    "string": "Aggiungi una categoria e premi Invio"
+                },
+                "remove": {
+                    "string": "Rimuovi {category}"
+                }
+            },
+            "attendees": {
+                "label": {
+                    "string": "Partecipanti"
+                },
+                "title": {
+                    "string": "Partecipanti"
+                },
+                "add": {
+                    "string": "Aggiungi partecipante"
+                },
+                "emailPlaceholder": {
+                    "string": "email@example.com"
+                },
+                "namePlaceholder": {
+                    "string": "Nome (opzionale)"
+                },
+                "remove": {
+                    "string": "Rimuovi {email}"
+                },
+                "search_placeholder": {
+                    "string": "Cerca per nome o email..."
+                },
+                "invalid_email": {
+                    "string": "Inserisci un indirizzo email valido"
+                },
+                "already_added": {
+                    "string": "Questo partecipante è già stato aggiunto"
+                },
+                "max_reached": {
+                    "string": "Raggiunto il massimo di {max} partecipanti"
+                },
+                "add_email_direct": {
+                    "string": "Aggiungi \"{email}\" direttamente"
+                },
+                "no_data": {
+                    "string": "Nessun dato di disponibilità"
+                },
+                "legend_free": {
+                    "string": "Disponibile"
+                },
+                "legend_busy": {
+                    "string": "Occupato"
+                },
+                "legend_tentative": {
+                    "string": "Provvisorio"
+                },
+                "legend_non_working": {
+                    "string": "Orario non lavorativo"
+                },
+                "optimal_slot": {
+                    "string": "Finestra suggerita"
+                },
+                "timeline_hour": {
+                    "string": "{hour}h"
+                },
+                "scroll_horizontal_hint": {
+                    "string": "Scorri orizzontalmente"
+                },
+                "tooltip_slot_busy": {
+                    "string": "Occupato"
+                },
+                "tooltip_slot_free": {
+                    "string": "{name} · libero · {time}"
+                },
+                "tooltip_slot_optimal": {
+                    "string": "Parte della finestra suggerita di {duration} min · {time}"
+                }
+            },
+            "reminders": {
+                "label": {
+                    "string": "Promemoria"
+                },
+                "add": {
+                    "string": "Aggiungi promemoria"
+                },
+                "minutesBefore": {
+                    "string": "min prima"
+                },
+                "remove": {
+                    "string": "Rimuovi promemoria"
+                },
+                "methods": {
+                    "popup": {
+                        "string": "Popup"
+                    },
+                    "email": {
+                        "string": "Email"
+                    }
+                }
+            },
+            "recurrence": {
+                "repeat": {
+                    "string": "Ripeti"
+                },
+                "every": {
+                    "string": "Ogni"
+                },
+                "on": {
+                    "string": "Il"
+                },
+                "onDay": {
+                    "string": "Il giorno"
+                },
+                "ofTheMonth": {
+                    "string": "del mese"
+                },
+                "ends": {
+                    "string": "Termina"
+                },
+                "occurrences": {
+                    "string": "occorrenze"
+                },
+                "days": {
+                    "mo": {
+                        "string": "Lun"
+                    },
+                    "tu": {
+                        "string": "Mar"
+                    },
+                    "we": {
+                        "string": "Mer"
+                    },
+                    "th": {
+                        "string": "Gio"
+                    },
+                    "fr": {
+                        "string": "Ven"
+                    },
+                    "sa": {
+                        "string": "Sab"
+                    },
+                    "su": {
+                        "string": "Dom"
+                    }
+                },
+                "frequencies": {
+                    "daily": {
+                        "string": "Giorno/i"
+                    },
+                    "weekly": {
+                        "string": "Settimana/e"
+                    },
+                    "monthly": {
+                        "string": "Mese/i"
+                    },
+                    "yearly": {
+                        "string": "Anno/i"
+                    }
+                },
+                "endTypes": {
+                    "never": {
+                        "string": "Mai"
+                    },
+                    "on": {
+                        "string": "Il"
+                    },
+                    "after": {
+                        "string": "Dopo"
+                    }
+                }
+            },
+            "url": {
+                "label": {
+                    "string": "URL"
+                },
+                "placeholder": {
+                    "string": "https://example.com"
+                }
+            },
+            "cancel": {
+                "string": "Annulla"
+            },
+            "create": {
+                "string": "Crea Evento"
+            },
+            "update": {
+                "string": "Aggiorna Evento"
+            }
+        },
+        "common": {
+            "cancel": {
+                "string": "Annulla"
+            }
+        },
+        "forms": {
+            "createCalendar": {
+                "title": {
+                    "string": "Crea Nuovo Calendario"
+                },
+                "defaultEventDuration": {
+                    "string": "Durata Evento Predefinita"
+                },
+                "nameLabel": {
+                    "string": "Nome Calendario"
+                },
+                "namePlaceholder": {
+                    "string": "Mio Calendario"
+                },
+                "colorLabel": {
+                    "string": "Colore"
+                },
+                "description": {
+                    "string": "Descrizione"
+                },
+                "descriptionPlaceholder": {
+                    "string": "Aggiungi descrizione al calendario"
+                },
+                "eventDuration": {
+                    "string": "Durata Evento"
+                },
+                "eventNotifications": {
+                    "string": "Notifiche Evento"
+                },
+                "allDayNotifications": {
+                    "string": "Notifiche eventi giornalieri"
+                },
+                "addNotification": {
+                    "string": "Aggiungi notifica"
+                },
+                "showBusyStatus": {
+                    "string": "Mostra agli altri quando sono occupato"
+                },
+                "atTimeOfEvent": {
+                    "string": "al momento dell'evento"
+                },
+                "fiveMinutes": {
+                    "string": "5 minuti prima"
+                },
+                "fifteenMinutes": {
+                    "string": "15 minuti prima"
+                },
+                "thirtyMinutesBefore": {
+                    "string": "30 minuti prima"
+                },
+                "oneHourBefore": {
+                    "string": "1 ora prima"
+                },
+                "dayBefore": {
+                    "string": "giorno prima"
+                },
+                "notification": {
+                    "string": "notifica"
+                },
+                "email": {
+                    "string": "email"
+                },
+                "delete": {
+                    "string": "Elimina"
+                },
+                "at": {
+                    "string": "alle"
+                },
+                "durationOptions": {
+                    "thirtyMinutes": {
+                        "string": "30 minuti"
+                    },
+                    "oneHour": {
+                        "string": "1 ora"
+                    },
+                    "twoHours": {
+                        "string": "2 ore"
+                    },
+                    "allDay": {
+                        "string": "Tutto il giorno"
+                    }
+                },
+                "saving": {
+                    "string": "Creazione in corso..."
+                },
+                "submit": {
+                    "string": "Crea Calendario"
+                },
+                "cancel": {
+                    "string": "Annulla"
+                }
+            },
+            "editCalendar": {
+                "title": {
+                    "string": "Modifica Calendario"
+                },
+                "nameLabel": {
+                    "string": "Nome Calendario"
+                },
+                "colorLabel": {
+                    "string": "Colore"
+                },
+                "description": {
+                    "string": "Descrizione"
+                },
+                "descriptionPlaceholder": {
+                    "string": "Aggiungi descrizione al calendario"
+                },
+                "eventDuration": {
+                    "string": "Durata Evento"
+                },
+                "eventNotifications": {
+                    "string": "Notifiche Evento"
+                },
+                "allDayNotifications": {
+                    "string": "Notifiche eventi giornalieri"
+                },
+                "addNotification": {
+                    "string": "Aggiungi notifica"
+                },
+                "showBusyStatus": {
+                    "string": "Mostra agli altri quando sono occupato"
+                },
+                "atTimeOfEvent": {
+                    "string": "al momento dell'evento"
+                },
+                "fiveMinutes": {
+                    "string": "5 minuti prima"
+                },
+                "fifteenMinutes": {
+                    "string": "15 minuti prima"
+                },
+                "thirtyMinutesBefore": {
+                    "string": "30 minuti prima"
+                },
+                "oneHourBefore": {
+                    "string": "1 ora prima"
+                },
+                "dayBefore": {
+                    "string": "giorno prima"
+                },
+                "notification": {
+                    "string": "notifica"
+                },
+                "email": {
+                    "string": "email"
+                },
+                "delete": {
+                    "string": "Elimina"
+                },
+                "at": {
+                    "string": "alle"
+                },
+                "durationOptions": {
+                    "thirtyMinutes": {
+                        "string": "30 minuti"
+                    },
+                    "oneHour": {
+                        "string": "1 ora"
+                    },
+                    "twoHours": {
+                        "string": "2 ore"
+                    },
+                    "allDay": {
+                        "string": "Tutto il giorno"
+                    }
+                },
+                "submit": {
+                    "string": "Salva Modifiche"
+                },
+                "cancel": {
+                    "string": "Annulla"
+                }
+            },
+            "editEvent": {
+                "string": "Modifica evento"
+            },
+            "deleteEvent": {
+                "confirm": {
+                    "title": {
+                        "string": "Eliminare l'evento?"
+                    },
+                    "description": {
+                        "string": "Questa azione non può essere annullata."
+                    },
+                    "button": {
+                        "string": "Elimina"
+                    }
+                }
+            },
+            "deleteCalendar": {
+                "title": {
+                    "string": "Elimina Calendario"
+                },
+                "message": {
+                    "string": "Sei sicuro di voler eliminare questo calendario? Questa azione non può essere annullata."
+                },
+                "confirm": {
+                    "string": "Elimina"
+                },
+                "cancel": {
+                    "string": "Annulla"
+                }
+            }
+        },
+        "share": {
+            "title": {
+                "string": "Condivisione Calendario"
+            },
+            "description": {
+                "string": "Condividi questo calendario con altri utenti. Gli utenti con cui lo condividi possono vedere gli eventi in base al livello di autorizzazione che concedi."
+            },
+            "addUser": {
+                "string": "Aggiungi utente"
+            },
+            "searchPlaceholder": {
+                "string": "Cerca per nome o email..."
+            },
+            "addButton": {
+                "string": "Condividi"
+            },
+            "added": {
+                "string": "Calendario condiviso con successo"
+            },
+            "addError": {
+                "string": "Condivisione calendario fallita"
+            },
+            "removed": {
+                "string": "Condivisione rimossa con successo"
+            },
+            "removeError": {
+                "string": "Rimozione condivisione fallita"
+            },
+            "removeButton": {
+                "string": "Rimuovi"
+            },
+            "existingShares": {
+                "string": "Condiviso con"
+            },
+            "noShares": {
+                "string": "Questo calendario non è ancora condiviso con nessuno."
+            },
+            "table": {
+                "user": {
+                    "string": "Utente"
+                },
+                "level": {
+                    "string": "Livello di autorizzazione"
+                },
+                "canCreate": {
+                    "string": "Può creare"
+                }
+            }
         }
-      },
-      "createEvent": {
-        "string": "Create Event"
-      }
-    },
-    "events": {
-      "create": {
-        "string": "Create Event"
-      }
-    },
-    "schedule": {
-      "noEvents": {
-        "string": "No events"
-      },
-      "noUpcomingEvents": {
-        "string": "No upcoming events for this period"
-      }
-    },
-    "views": {
-      "month": {
-        "string": "Month"
-      },
-      "week": {
-        "string": "Week"
-      },
-      "day": {
-        "string": "Day"
-      },
-      "agenda": {
-        "string": "Agenda"
-      }
-    },
-    "mobile": {
-      "event": {
-        "string": "event",
-        "plural": "events"
-      },
-      "weekView": {
-        "eventsCount": {
-          "string": "{count, plural, one {# event} other {# events}}"
-        }
-      },
-      "noEvents": {
-        "string": "No events"
-      },
-      "swipeHint": {
-        "string": "← Swipe to see all days →"
-      },
-      "swipeToChangeDay": {
-        "string": "Swipe to change day"
-      },
-      "swipeToNavigate": {
-        "string": "← Swipe to navigate →"
-      },
-      "timeSeparator": {
-        "string": "-"
-      },
-      "month": {
-        "today": {
-          "string": "Today"
-        },
-        "hasEvents": {
-          "string": "Has events"
-        }
-      }
-    },
-    "external": {
-      "add_title": {
-        "string": "Subscribe to calendar"
-      },
-      "name_label": {
-        "string": "Name"
-      },
-      "url_label": {
-        "string": "Calendar URL (.ics)"
-      },
-      "url_error": {
-        "string": "Please enter a valid URL"
-      },
-      "color_label": {
-        "string": "Color"
-      },
-      "sync_interval_label": {
-        "string": "Sync every"
-      },
-      "sync_now": {
-        "string": "Sync now"
-      },
-      "submit": {
-        "string": "Subscribe"
-      },
-      "sync_interval_options": {
-        "5": {
-          "string": "5 min"
-        },
-        "15": {
-          "string": "15 min"
-        },
-        "30": {
-          "string": "30 min"
-        },
-        "60": {
-          "string": "1 hour"
-        },
-        "360": {
-          "string": "6 hours"
-        },
-        "1440": {
-          "string": "24 hours"
-        }
-      }
-    },
-    "sidebar": {
-      "personals": {
-        "string": "Personal Calendars"
-      },
-      "shared": {
-        "string": "Shared Calendars"
-      },
-      "subscriptions": {
-        "string": "Subscriptions"
-      },
-      "add": {
-        "string": "Add Calendar"
-      },
-      "edit": {
-        "string": "Edit Calendar"
-      },
-      "delete": {
-        "string": "Delete Calendar"
-      },
-      "sharing": {
-        "string": "Sharing Settings"
-      },
-      "link": {
-        "string": "Get Calendar Link",
-        "description": {
-          "string": "Copy this link to subscribe to this calendar in other calendar applications."
-        }
-      },
-      "export": {
-        "string": "Export Calendar"
-      },
-      "color": {
-        "string": "Calendar Color"
-      },
-      "readOnlyCalendar": {
-        "string": "Read-only calendar",
-        "context": "Label for ICS/subscription calendars that cannot be edited"
-      }
-    },
-    "actions": {
-      "newEvent": {
-        "string": "New Event"
-      },
-      "today": {
-        "string": "Today"
-      },
-      "month": {
-        "string": "Month"
-      },
-      "week": {
-        "string": "Week"
-      },
-      "day": {
-        "string": "Day"
-      },
-      "agenda": {
-        "string": "Agenda"
-      }
-    },
-    "visualization": {
-      "location": {
-        "string": "Location"
-      },
-      "description": {
-        "string": "Description"
-      },
-      "attendees": {
-        "string": "Attendees"
-      },
-      "conference": {
-        "string": "Video Conference"
-      },
-      "joinMeeting": {
-        "string": "Join Meeting"
-      },
-      "reminders": {
-        "string": "Reminders"
-      },
-      "recurrence": {
-        "string": "Repeats"
-      },
-      "frequency": {
-        "daily": {
-          "string": "Daily"
-        },
-        "weekly": {
-          "string": "Weekly"
-        },
-        "monthly": {
-          "string": "Monthly"
-        },
-        "yearly": {
-          "string": "Yearly"
-        }
-      },
-      "every": {
-        "string": "Every {count}"
-      },
-      "daysBefore": {
-        "string": "{count} days before"
-      },
-      "hoursBefore": {
-        "string": "{count} hours before"
-      },
-      "minutesBefore": {
-        "string": "{count} minutes before"
-      },
-      "organizer": {
-        "string": "Organizer"
-      },
-      "organizerRole": {
-        "string": "(organizer)"
-      },
-      "attendeeStatus": {
-        "accepted": {
-          "string": "Accepted"
-        },
-        "pending": {
-          "string": "Pending"
-        },
-        "declined": {
-          "string": "Declined"
-        },
-        "tentative": {
-          "string": "Tentative"
-        }
-      },
-      "categories": {
-        "string": "Categories"
-      },
-      "url": {
-        "string": "URL"
-      },
-      "visibility": {
-        "string": "Visibility",
-        "values": {
-          "public": {
-            "string": "Public"
-          },
-          "private": {
-            "string": "Private"
-          },
-          "confidential": {
-            "string": "Confidential"
-          }
-        }
-      },
-      "showAs": {
-        "string": "Show as",
-        "values": {
-          "busy": {
-            "string": "Busy"
-          },
-          "free": {
-            "string": "Free"
-          },
-          "tentative": {
-            "string": "Tentative"
-          },
-          "outOfOffice": {
-            "string": "Out of office"
-          }
-        }
-      },
-      "status": {
-        "string": "Status",
-        "values": {
-          "confirmed": {
-            "string": "Confirmed"
-          },
-          "tentative": {
-            "string": "Tentative"
-          },
-          "cancelled": {
-            "string": "Cancelled"
-          }
-        }
-      }
-    },
-    "eventForm": {
-      "calendar": {
-        "label": {
-          "string": "Calendar"
-        },
-        "placeholder": {
-          "string": "Select calendar"
-        }
-      },
-      "title": {
-        "label": {
-          "string": "Event title"
-        },
-        "placeholder": {
-          "string": "Enter event title"
-        }
-      },
-      "allDay": {
-        "label": {
-          "string": "All day"
-        }
-      },
-      "startDate": {
-        "label": {
-          "string": "Start date"
-        }
-      },
-      "startTime": {
-        "label": {
-          "string": "Start time"
-        }
-      },
-      "endDate": {
-        "label": {
-          "string": "End date"
-        }
-      },
-      "endTime": {
-        "label": {
-          "string": "End time"
-        }
-      },
-      "errors": {
-        "date_order": {
-          "string": "End date must be on or after the start date."
-        }
-      },
-      "timezone": {
-        "label": {
-          "string": "Timezone (event)"
-        },
-        "description": {
-          "string": "Timezone in which this event's dates are interpreted"
-        }
-      },
-      "description": {
-        "label": {
-          "string": "Description"
-        },
-        "placeholder": {
-          "string": "Add event details"
-        }
-      },
-      "location": {
-        "label": {
-          "string": "Location"
-        },
-        "placeholder": {
-          "string": "Add location"
-        }
-      },
-      "visibility": {
-        "label": {
-          "string": "Visibility"
-        },
-        "placeholder": {
-          "string": "Select visibility"
-        },
-        "options": {
-          "public": {
-            "string": "Public"
-          },
-          "private": {
-            "string": "Private"
-          },
-          "confidential": {
-            "string": "Confidential"
-          }
-        }
-      },
-      "showAs": {
-        "label": {
-          "string": "Show as"
-        },
-        "placeholder": {
-          "string": "Select availability"
-        },
-        "options": {
-          "busy": {
-            "string": "Busy"
-          },
-          "free": {
-            "string": "Free"
-          },
-          "outOfOffice": {
-            "string": "Out of office"
-          },
-          "tentative": {
-            "string": "Tentative"
-          }
-        }
-      },
-      "status": {
-        "label": {
-          "string": "Status"
-        },
-        "placeholder": {
-          "string": "Select status"
-        },
-        "options": {
-          "confirmed": {
-            "string": "Confirmed"
-          },
-          "tentative": {
-            "string": "Tentative"
-          },
-          "cancelled": {
-            "string": "Cancelled"
-          }
-        }
-      },
-      "color": {
-        "label": {
-          "string": "Color"
-        },
-        "reset": {
-          "string": "Reset"
-        }
-      },
-      "categories": {
-        "label": {
-          "string": "Categories"
-        },
-        "placeholder": {
-          "string": "Add a category and press Enter"
-        },
-        "remove": {
-          "string": "Remove {category}"
-        }
-      },
-      "attendees": {
-        "label": {
-          "string": "Attendees"
-        },
-        "title": {
-          "string": "Participants"
-        },
-        "add": {
-          "string": "Add participant"
-        },
-        "emailPlaceholder": {
-          "string": "email@example.com"
-        },
-        "namePlaceholder": {
-          "string": "Name (optional)"
-        },
-        "remove": {
-          "string": "Remove {email}"
-        },
-        "search_placeholder": {
-          "string": "Search by name or email..."
-        },
-        "invalid_email": {
-          "string": "Please enter a valid email address"
-        },
-        "already_added": {
-          "string": "This participant has already been added"
-        },
-        "max_reached": {
-          "string": "Maximum {max} participants reached"
-        },
-        "add_email_direct": {
-          "string": "Add \"{email}\" directly"
-        },
-        "no_data": {
-          "string": "No availability data"
-        },
-        "legend_free": {
-          "string": "Available"
-        },
-        "legend_busy": {
-          "string": "Busy"
-        },
-        "legend_tentative": {
-          "string": "Tentative"
-        },
-        "legend_non_working": {
-          "string": "Non-working hours"
-        },
-        "optimal_slot": {
-          "string": "Suggested window"
-        },
-        "timeline_hour": {
-          "string": "{hour}h"
-        },
-        "scroll_horizontal_hint": {
-          "string": "Scroll horizontally"
-        },
-        "tooltip_slot_busy": {
-          "string": "Busy"
-        },
-        "tooltip_slot_free": {
-          "string": "{name} · free · {time}"
-        },
-        "tooltip_slot_optimal": {
-          "string": "Part of the suggested {duration}-min window · {time}"
-        }
-      },
-      "reminders": {
-        "label": {
-          "string": "Reminders"
-        },
-        "add": {
-          "string": "Add reminder"
-        },
-        "minutesBefore": {
-          "string": "min before"
-        },
-        "remove": {
-          "string": "Remove reminder"
-        },
-        "methods": {
-          "popup": {
-            "string": "Popup"
-          },
-          "email": {
-            "string": "Email"
-          }
-        }
-      },
-      "recurrence": {
-        "repeat": {
-          "string": "Repeat"
-        },
-        "every": {
-          "string": "Every"
-        },
-        "on": {
-          "string": "On"
-        },
-        "onDay": {
-          "string": "On day"
-        },
-        "ofTheMonth": {
-          "string": "of the month"
-        },
-        "ends": {
-          "string": "Ends"
-        },
-        "occurrences": {
-          "string": "occurrences"
-        },
-        "days": {
-          "mo": {
-            "string": "Mon"
-          },
-          "tu": {
-            "string": "Tue"
-          },
-          "we": {
-            "string": "Wed"
-          },
-          "th": {
-            "string": "Thu"
-          },
-          "fr": {
-            "string": "Fri"
-          },
-          "sa": {
-            "string": "Sat"
-          },
-          "su": {
-            "string": "Sun"
-          }
-        },
-        "frequencies": {
-          "daily": {
-            "string": "Day(s)"
-          },
-          "weekly": {
-            "string": "Week(s)"
-          },
-          "monthly": {
-            "string": "Month(s)"
-          },
-          "yearly": {
-            "string": "Year(s)"
-          }
-        },
-        "endTypes": {
-          "never": {
-            "string": "Never"
-          },
-          "on": {
-            "string": "On"
-          },
-          "after": {
-            "string": "After"
-          }
-        }
-      },
-      "url": {
-        "label": {
-          "string": "URL"
-        },
-        "placeholder": {
-          "string": "https://example.com"
-        }
-      },
-      "cancel": {
-        "string": "Cancel"
-      },
-      "create": {
-        "string": "Create Event"
-      },
-      "update": {
-        "string": "Update Event"
-      }
-    },
-    "common": {
-      "cancel": {
-        "string": "Cancel"
-      }
-    },
-    "forms": {
-      "createCalendar": {
-        "title": {
-          "string": "Create New Calendar"
-        },
-        "defaultEventDuration": {
-          "string": "Default Event Duration"
-        },
-        "nameLabel": {
-          "string": "Calendar Name"
-        },
-        "namePlaceholder": {
-          "string": "My Calendar"
-        },
-        "colorLabel": {
-          "string": "Color"
-        },
-        "description": {
-          "string": "Description"
-        },
-        "descriptionPlaceholder": {
-          "string": "Add description to calendar"
-        },
-        "eventDuration": {
-          "string": "Event Duration"
-        },
-        "eventNotifications": {
-          "string": "Event Notifications"
-        },
-        "allDayNotifications": {
-          "string": "All-day event notifications"
-        },
-        "addNotification": {
-          "string": "Add notification"
-        },
-        "showBusyStatus": {
-          "string": "Show others when I'm busy"
-        },
-        "atTimeOfEvent": {
-          "string": "at time of event"
-        },
-        "fiveMinutes": {
-          "string": "5 minutes before"
-        },
-        "fifteenMinutes": {
-          "string": "15 minutes before"
-        },
-        "thirtyMinutesBefore": {
-          "string": "30 minutes before"
-        },
-        "oneHourBefore": {
-          "string": "1 hour before"
-        },
-        "dayBefore": {
-          "string": "day before"
-        },
-        "notification": {
-          "string": "notification"
-        },
-        "email": {
-          "string": "e-mail"
-        },
-        "delete": {
-          "string": "Delete"
-        },
-        "at": {
-          "string": "at"
-        },
-        "durationOptions": {
-          "thirtyMinutes": {
-            "string": "30 minutes"
-          },
-          "oneHour": {
-            "string": "1 hour"
-          },
-          "twoHours": {
-            "string": "2 hours"
-          },
-          "allDay": {
-            "string": "All day"
-          }
-        },
-        "saving": {
-          "string": "Creating..."
-        },
-        "submit": {
-          "string": "Create Calendar"
-        },
-        "cancel": {
-          "string": "Cancel"
-        }
-      },
-      "editCalendar": {
-        "title": {
-          "string": "Edit Calendar"
-        },
-        "nameLabel": {
-          "string": "Calendar Name"
-        },
-        "colorLabel": {
-          "string": "Color"
-        },
-        "description": {
-          "string": "Description"
-        },
-        "descriptionPlaceholder": {
-          "string": "Add description to calendar"
-        },
-        "eventDuration": {
-          "string": "Event Duration"
-        },
-        "eventNotifications": {
-          "string": "Event Notifications"
-        },
-        "allDayNotifications": {
-          "string": "All-day event notifications"
-        },
-        "addNotification": {
-          "string": "Add notification"
-        },
-        "showBusyStatus": {
-          "string": "Show others when I'm busy"
-        },
-        "atTimeOfEvent": {
-          "string": "at time of event"
-        },
-        "fiveMinutes": {
-          "string": "5 minutes before"
-        },
-        "fifteenMinutes": {
-          "string": "15 minutes before"
-        },
-        "thirtyMinutesBefore": {
-          "string": "30 minutes before"
-        },
-        "oneHourBefore": {
-          "string": "1 hour before"
-        },
-        "dayBefore": {
-          "string": "day before"
-        },
-        "notification": {
-          "string": "notification"
-        },
-        "email": {
-          "string": "e-mail"
-        },
-        "delete": {
-          "string": "Delete"
-        },
-        "at": {
-          "string": "at"
-        },
-        "durationOptions": {
-          "thirtyMinutes": {
-            "string": "30 minutes"
-          },
-          "oneHour": {
-            "string": "1 hour"
-          },
-          "twoHours": {
-            "string": "2 hours"
-          },
-          "allDay": {
-            "string": "All day"
-          }
-        },
-        "submit": {
-          "string": "Save Changes"
-        },
-        "cancel": {
-          "string": "Cancel"
-        }
-      },
-      "editEvent": {
-        "string": "Edit event"
-      },
-      "deleteEvent": {
-        "confirm": {
-          "title": {
-            "string": "Delete event?"
-          },
-          "description": {
-            "string": "This action cannot be undone."
-          },
-          "button": {
-            "string": "Delete"
-          }
-        }
-      },
-      "deleteCalendar": {
-        "title": {
-          "string": "Delete Calendar"
-        },
-        "message": {
-          "string": "Are you sure you want to delete this calendar? This action cannot be undone."
-        },
-        "confirm": {
-          "string": "Delete"
-        },
-        "cancel": {
-          "string": "Cancel"
-        }
-      }
-    },
-    "share": {
-      "title": {
-        "string": "Calendar Sharing"
-      },
-      "description": {
-        "string": "Share this calendar with other users. Shared users can see events based on the permission level you grant."
-      },
-      "addUser": {
-        "string": "Add User"
-      },
-      "searchPlaceholder": {
-        "string": "Search by name or email..."
-      },
-      "addButton": {
-        "string": "Share"
-      },
-      "added": {
-        "string": "Calendar shared successfully"
-      },
-      "addError": {
-        "string": "Failed to share calendar"
-      },
-      "removed": {
-        "string": "Share removed successfully"
-      },
-      "removeError": {
-        "string": "Failed to remove share"
-      },
-      "removeButton": {
-        "string": "Remove"
-      },
-      "existingShares": {
-        "string": "Shared with"
-      },
-      "noShares": {
-        "string": "This calendar is not shared with anyone yet."
-      },
-      "table": {
-        "user": {
-          "string": "User"
-        },
-        "level": {
-          "string": "Permission Level"
-        },
-        "canCreate": {
-          "string": "Can Create"
-        }
-      }
     }
-  }
 }

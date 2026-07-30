@@ -1,17 +1,17 @@
 {
     "COMMONS": {
         "close": {
-            "string": "Close"
+            "string": "Zavřít"
         },
         "workInProgress": {
             "description": {
-                "string": "This feature is currently under development."
+                "string": "Tato funkce je aktuálně ve vývoji."
             },
             "message": {
-                "string": "We're working hard to bring you this feature."
+                "string": "Tvrdě pracujeme na tom, abychom vám tuto funkci přinesli."
             },
             "comingSoon": {
-                "string": "Coming soon! Stay tuned."
+                "string": "Již brzy! Zůstaňte informováni."
             }
         }
     },
@@ -19,13 +19,13 @@
         "demo": {
             "warning": {
                 "title": {
-                    "string": "Demo Version"
+                    "string": "Ukázková verze"
                 },
                 "description": {
-                    "string": "You are currently using a demo version of the application. Some features may be limited."
+                    "string": "V současné době používáte ukázkovou verzi aplikace. Některé funkce mohou být omezeny."
                 },
                 "action": {
-                    "string": "Got it"
+                    "string": "Rozumím"
                 }
             }
         },
@@ -35,13 +35,13 @@
         },
         "serviceUnavailable": {
             "title": {
-                "string": "Service unavailable"
+                "string": "Služba není k dispozici"
             },
             "description": {
-                "string": "The application could not connect to the server. Please try again later or contact your administrator."
+                "string": "Aplikaci se nepodařilo připojit k serveru. Zkuste to prosím později nebo kontaktujte svého správce."
             },
             "retry": {
-                "string": "Try again"
+                "string": "Zkusit znovu"
             }
         }
     }

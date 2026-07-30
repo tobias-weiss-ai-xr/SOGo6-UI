@@ -1,9 +1,1 @@
-{ "AP_DRAFTS": {
-    "title": { "string": "Collaborative Drafts" },
-    "description": { "string": "Share draft emails with colleagues for review and approval before sending." },
-    "form": { "share": { "string": "Share Draft" }, "cancel": { "string": "Cancel" }, "title": { "string": "Share a Draft" }, "subject": { "string": "Subject" }, "reviewers": { "string": "Reviewers" }, "message": { "string": "Message to Reviewers" }, "message_hint": { "string": "Please review this draft before I send it" }, "body": { "string": "Email Body" }, "submit": { "string": "Share Draft" } },
-    "create": { "success": { "string": "Draft shared" }, "error": { "string": "Failed to share draft" } },
-    "review": { "approved": { "string": "Draft approved" }, "rejected": { "string": "Draft rejected" }, "error": { "string": "Review failed" } },
-    "list": { "empty": { "string": "No shared drafts. Create one to collaborate on an email." }, "by": { "string": "by" } },
-    "errors": { "fields": { "string": "Subject, body, and at least one reviewer are required" } }
-}}
+{"AP_DRAFTS": {"title": {"string": "Bozze Collaborative"}, "description": {"string": "Condividi bozze email con colleghi per revisione e approvazione prima dell'invio."}, "form": {"share": {"string": "Condividi Bozza"}, "cancel": {"string": "Annulla"}, "title": {"string": "Condividi una Bozza"}, "subject": {"string": "Oggetto"}, "reviewers": {"string": "Revisori"}, "message": {"string": "Messaggio ai Revisori"}, "message_hint": {"string": "Per favore revisiona questa bozza prima che la invii"}, "body": {"string": "Corpo Email"}, "submit": {"string": "Condividi Bozza"}}, "create": {"success": {"string": "Bozza condivisa"}, "error": {"string": "Condivisione bozza fallita"}}, "review": {"approved": {"string": "Bozza approvata"}, "rejected": {"string": "Bozza respinta"}, "error": {"string": "Revisione fallita"}}, "list": {"empty": {"string": "Nessuna bozza condivisa. Creane una per collaborare su un'email."}, "by": {"string": "da"}}, "errors": {"fields": {"string": "Oggetto, corpo e almeno un revisore sono obbligatori"}}}}

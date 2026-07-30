@@ -1,9 +1,68 @@
-{ "AP_WEBHOOKS": {
-    "title": { "string": "Webhooks" },
-    "description": { "string": "Outbound webhooks for n8n, Make, and other automation platforms. Events trigger HTTP POST with HMAC-signed payloads." },
-    "form": { "add": { "string": "Add Webhook" }, "cancel": { "string": "Cancel" }, "title": { "string": "New Webhook" }, "url": { "string": "Webhook URL" }, "name": { "string": "Display Name" }, "name_placeholder": { "string": "e.g. n8n Workflow" }, "secret": { "string": "Signing Secret" }, "secret_placeholder": { "string": "HMAC secret (optional)" }, "events": { "string": "Events" }, "create": { "string": "Create Webhook" } },
-    "create": { "success": { "string": "Webhook created" }, "error": { "string": "Failed to create webhook" } },
-    "delete": { "success": { "string": "Webhook deleted" }, "error": { "string": "Failed to delete" } },
-    "list": { "empty": { "string": "No webhooks configured. Click Add Webhook to get started." } },
-    "errors": { "fields": { "string": "URL and at least one event are required" } }
-}}
+{
+    "AP_WEBHOOKS": {
+        "title": {
+            "string": "Webhooks"
+        },
+        "description": {
+            "string": "Outbound webhooks for n8n, Make, and other automation platforms. Events trigger HTTP POST with HMAC-signed payloads."
+        },
+        "form": {
+            "add": {
+                "string": "Add Webhook"
+            },
+            "cancel": {
+                "string": "Cancelar"
+            },
+            "title": {
+                "string": "New Webhook"
+            },
+            "url": {
+                "string": "Webhook URL"
+            },
+            "name": {
+                "string": "Display Name"
+            },
+            "name_placeholder": {
+                "string": "e.g. n8n Workflow"
+            },
+            "secret": {
+                "string": "Signing Secret"
+            },
+            "secret_placeholder": {
+                "string": "HMAC secret (optional)"
+            },
+            "events": {
+                "string": "Events"
+            },
+            "create": {
+                "string": "Create Webhook"
+            }
+        },
+        "create": {
+            "success": {
+                "string": "Webhook created"
+            },
+            "error": {
+                "string": "Failed to create webhook"
+            }
+        },
+        "delete": {
+            "success": {
+                "string": "Webhook deleted"
+            },
+            "error": {
+                "string": "Failed to delete"
+            }
+        },
+        "list": {
+            "empty": {
+                "string": "No webhooks configured. Click Add Webhook to get started."
+            }
+        },
+        "errors": {
+            "fields": {
+                "string": "URL and at least one event are required"
+            }
+        }
+    }
+}

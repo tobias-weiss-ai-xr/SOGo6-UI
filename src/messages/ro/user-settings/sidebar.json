@@ -16,7 +16,7 @@
         },
         "settings": {
             "title": {
-                "string": "Settings",
+                "string": "Setări",
                 "context": "Section title for the settings sidebar"
             },
             "general": {

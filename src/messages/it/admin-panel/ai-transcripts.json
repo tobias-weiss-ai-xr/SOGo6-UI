@@ -1,1 +1,57 @@
-{ "AI_TRANSCRIPTS": { "title": { "string": "Meeting Transcripts" }, "description": { "string": "Record meeting transcripts, auto-generate summaries and action items." }, "form": { "create": { "string": "New Transcript" }, "cancel": { "string": "Cancel" }, "title": { "string": "Create Transcript" }, "meeting_title": { "string": "Meeting Title" }, "event_id": { "string": "Calendar Event ID" }, "attendees": { "string": "Attendees" }, "transcript": { "string": "Transcript / Notes" }, "placeholder": { "string": "Paste meeting notes or transcript..." }, "submit": { "string": "Save & Summarize" } }, "create": { "success": { "string": "Transcript saved" }, "error": { "string": "Failed to save" } }, "list": { "empty": { "string": "No transcripts yet." } }, "errors": { "fields": { "string": "Title and transcript text are required" } } }}
+{
+    "AI_TRANSCRIPTS": {
+        "title": {
+            "string": "Trascrizioni Riunioni"
+        },
+        "description": {
+            "string": "Registra trascrizioni riunioni, genera automaticamente riassunti e elementi d'azione."
+        },
+        "form": {
+            "create": {
+                "string": "Nuova Trascrizione"
+            },
+            "cancel": {
+                "string": "Annulla"
+            },
+            "title": {
+                "string": "Crea Trascrizione"
+            },
+            "meeting_title": {
+                "string": "Titolo Riunione"
+            },
+            "event_id": {
+                "string": "ID Evento Calendario"
+            },
+            "attendees": {
+                "string": "Partecipanti"
+            },
+            "transcript": {
+                "string": "Trascrizione / Note"
+            },
+            "placeholder": {
+                "string": "Incolla note della riunione o trascrizione..."
+            },
+            "submit": {
+                "string": "Salva e Riassumi"
+            }
+        },
+        "create": {
+            "success": {
+                "string": "Trascrizione salvata"
+            },
+            "error": {
+                "string": "Salvataggio fallito"
+            }
+        },
+        "list": {
+            "empty": {
+                "string": "Nessuna trascrizione ancora."
+            }
+        },
+        "errors": {
+            "fields": {
+                "string": "Titolo e testo della trascrizione sono obbligatori"
+            }
+        }
+    }
+}

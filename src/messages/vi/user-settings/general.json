@@ -33,13 +33,13 @@
                 "string": "General settings saved"
             },
             "mail": {
-                "string": "Mail"
+                "string": "Thư"
             },
             "calendar": {
-                "string": "Calendar"
+                "string": "Lịch"
             },
             "contacts": {
-                "string": "Contacts"
+                "string": "Danh bạ"
             },
             "last": {
                 "string": "Last displayed module"

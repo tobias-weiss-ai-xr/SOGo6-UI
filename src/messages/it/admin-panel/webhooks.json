@@ -1,9 +1,11 @@
-{ "AP_WEBHOOKS": {
-    "title": { "string": "Webhooks" },
-    "description": { "string": "Outbound webhooks for n8n, Make, and other automation platforms. Events trigger HTTP POST with HMAC-signed payloads." },
-    "form": { "add": { "string": "Add Webhook" }, "cancel": { "string": "Cancel" }, "title": { "string": "New Webhook" }, "url": { "string": "Webhook URL" }, "name": { "string": "Display Name" }, "name_placeholder": { "string": "e.g. n8n Workflow" }, "secret": { "string": "Signing Secret" }, "secret_placeholder": { "string": "HMAC secret (optional)" }, "events": { "string": "Events" }, "create": { "string": "Create Webhook" } },
-    "create": { "success": { "string": "Webhook created" }, "error": { "string": "Failed to create webhook" } },
-    "delete": { "success": { "string": "Webhook deleted" }, "error": { "string": "Failed to delete" } },
-    "list": { "empty": { "string": "No webhooks configured. Click Add Webhook to get started." } },
-    "errors": { "fields": { "string": "URL and at least one event are required" } }
-}}
+{
+  "AP_WEBHOOKS": {
+    "title": { "string": "Webhook" },
+    "description": { "string": "Webhook in uscita per n8n, Make e altre piattaforme di automazione. Gli eventi attivano HTTP POST con payload firmati HMAC." },
+    "form": { "add": { "string": "Aggiungi Webhook" }, "cancel": { "string": "Annulla" }, "title": { "string": "Nuovo Webhook" }, "url": { "string": "URL Webhook" }, "name": { "string": "Nome Visualizzato" }, "name_placeholder": { "string": "es. n8n Workflow" }, "secret": { "string": "Segreto di Firma" }, "secret_placeholder": { "string": "Segreto HMAC (opzionale)" }, "events": { "string": "Eventi" }, "create": { "string": "Crea Webhook" } },
+    "create": { "success": { "string": "Webhook creato" }, "error": { "string": "Creazione webhook fallita" } },
+    "delete": { "success": { "string": "Webhook eliminato" }, "error": { "string": "Eliminazione fallita" } },
+    "list": { "empty": { "string": "Nessun webhook configurato. Clicca Aggiungi Webhook per iniziare." } },
+    "errors": { "fields": { "string": "URL e almeno un evento sono obbligatori" } }
+  }
+}

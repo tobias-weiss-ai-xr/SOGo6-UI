@@ -1,59 +1,59 @@
 {
-  "NAVIGATION": {
-    "address_book": {
-      "string": "Address Book"
-    },
-    "calendar": {
-      "string": "Calendar"
-    },
-    "tasks": {
-      "string": "Tasks"
-    },
-    "notes": {
-      "string": "Notes"
-    },
-    "fast_access": {
-      "calendar": {
-        "title": "Calendar",
-        "view_all": "View all",
-        "today": "Today",
-        "no_events": "No events today",
-        "all_day": "All day",
-        "loading": "Loading events…",
-        "error": "Could not load events"
-      },
-      "tasks": {
-        "title": "Tasks",
-        "view_all": "View all tasks",
-        "search_placeholder": "Search tasks",
-        "overdue": "Overdue",
-        "today": "Today",
-        "upcoming": "Upcoming",
-        "no_due_date": "No due date",
-        "empty": "You're all caught up",
-        "no_results": "No matches",
-        "loading": "Loading tasks…",
-        "error": "Could not load tasks"
-      },
-      "address_book": {
-        "title": "Contacts",
-        "view_all": "View all",
-        "search_placeholder": "Search contacts and lists",
-        "distribution_lists": "Distribution lists",
-        "contacts": "Contacts",
-        "member_count": "{number} members",
-        "compose": "Write message",
-        "loading": "Loading contacts…",
-        "error": "Could not load contacts",
-        "empty": "No address book available",
-        "no_entries": "No contacts or lists yet",
-        "no_results": "No matches",
-        "search_min_length": "Enter at least 2 characters to search."
-      },
-      "coming_soon": {
-        "title": "Feature incoming",
-        "description": "This section is under development and will be available soon."
-      }
+    "NAVIGATION": {
+        "address_book": {
+            "string": "एड्रेस बुक"
+        },
+        "calendar": {
+            "string": "कैलेंडर"
+        },
+        "tasks": {
+            "string": "कार्य"
+        },
+        "notes": {
+            "string": "नोट्स"
+        },
+        "fast_access": {
+            "calendar": {
+                "title": "कैलेंडर",
+                "view_all": "सभी देखें",
+                "today": "आज",
+                "no_events": "आज कोई इवेंट नहीं",
+                "all_day": "All day",
+                "loading": "ईवेंट लोड हो रहे हैं…",
+                "error": "कैलेंडर"
+            },
+            "tasks": {
+                "title": "कार्य",
+                "view_all": "सभी देखें",
+                "search_placeholder": "Search tasks",
+                "overdue": "Overdue",
+                "today": "आज",
+                "upcoming": "Upcoming",
+                "no_due_date": "No due date",
+                "empty": "You're all caught up",
+                "no_results": "No matches",
+                "loading": "कार्य लोड हो रहे हैं…",
+                "error": "Could not load tasks"
+            },
+            "address_book": {
+                "title": "Contacts",
+                "view_all": "View all",
+                "search_placeholder": "Search contacts and lists",
+                "distribution_lists": "Distribution lists",
+                "contacts": "Contacts",
+                "member_count": "{number} members",
+                "compose": "Write message",
+                "loading": "Loading contacts…",
+                "error": "Could not load contacts",
+                "empty": "No address book available",
+                "no_entries": "No contacts or lists yet",
+                "no_results": "No matches",
+                "search_min_length": "Enter at least 2 characters to search."
+            },
+            "coming_soon": {
+                "title": "Feature incoming",
+                "description": "This section is under development and will be available soon."
+            }
+        }
     }
-  }
 }

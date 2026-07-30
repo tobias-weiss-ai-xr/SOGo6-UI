@@ -17,7 +17,7 @@
                 "developer_comment": "Weist den Benutzer an, die Details zu prüfen und vorsichtig fortzufahren."
             },
             "info": {
-                "string": "Info",
+                "string": "INfo",
                 "context": "Notification title for informational messages.",
                 "developer_comment": "Informiert den Benutzer über eine Meldung."
             }

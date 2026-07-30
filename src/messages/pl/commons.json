@@ -1,17 +1,17 @@
 {
     "COMMONS": {
         "close": {
-            "string": "Close"
+            "string": "Zamknij"
         },
         "workInProgress": {
             "description": {
-                "string": "This feature is currently under development."
+                "string": "Ta funkcja jest obecnie w fazie rozwoju."
             },
             "message": {
-                "string": "We're working hard to bring you this feature."
+                "string": "Pracujemy nad udostępnieniem tej funkcji."
             },
             "comingSoon": {
-                "string": "Coming soon! Stay tuned."
+                "string": "Wkrótce! Śledź nowości."
             }
         }
     },
@@ -19,13 +19,13 @@
         "demo": {
             "warning": {
                 "title": {
-                    "string": "Demo Version"
+                    "string": "Wersja demonstracyjna"
                 },
                 "description": {
-                    "string": "You are currently using a demo version of the application. Some features may be limited."
+                    "string": "Używasz wersji demonstracyjnej aplikacji. Niektóre funkcje mogą być ograniczone."
                 },
                 "action": {
-                    "string": "Got it"
+                    "string": "Rozumiem"
                 }
             }
         },
@@ -35,13 +35,13 @@
         },
         "serviceUnavailable": {
             "title": {
-                "string": "Service unavailable"
+                "string": "Usługa niedostępna"
             },
             "description": {
-                "string": "The application could not connect to the server. Please try again later or contact your administrator."
+                "string": "Aplikacja nie mogła połączyć się z serwerem. Spróbuj ponownie później lub skontaktuj się z administratorem."
             },
             "retry": {
-                "string": "Try again"
+                "string": "Spróbuj ponownie"
             }
         }
     }

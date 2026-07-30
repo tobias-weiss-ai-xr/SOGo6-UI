@@ -1,7 +1,17 @@
-{ "AP_DBMIG": {
-    "title": { "string": "Database Migration" },
-    "description": { "string": "Track schema versions and migration history. Run migrations from the admin panel." },
-    "current_version": { "string": "Current Schema Version" },
-    "run": { "button": { "string": "Run Migration" }, "running": { "string": "Running..." }, "success": { "string": "Migration applied" }, "error": { "string": "Migration failed" } },
-    "history": { "title": { "string": "Migration History" }, "empty": { "string": "No migrations recorded." } }
-}}
+{
+    "AP_DBMIG": {
+        "title": { "string": "Migrazione Database" },
+        "description": { "string": "Traccia versioni dello schema e cronologia delle migrazioni. Esegui migrazioni dal pannello admin." },
+        "current_version": { "string": "Versione Schema Corrente" },
+        "run": {
+            "button": { "string": "Esegui Migrazione" },
+            "running": { "string": "In esecuzione..." },
+            "success": { "string": "Migrazione applicata" },
+            "error": { "string": "Migrazione fallita" }
+        },
+        "history": {
+            "title": { "string": "Cronologia Migrazioni" },
+            "empty": { "string": "Nessuna migrazione registrata." }
+        }
+    }
+}

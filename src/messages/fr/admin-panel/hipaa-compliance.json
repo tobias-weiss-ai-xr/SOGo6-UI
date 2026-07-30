@@ -1,82 +1,82 @@
 {
-  "HIPAA": {
-    "title": {
-      "string": "Mode de conformité HIPAA"
-    },
-    "description": {
-      "string": "Conformité santé avec détection PHI, chiffrement et pistes d'audit"
-    },
-    "errors": {
-      "fail": {
-        "string": "Opération échouée"
-      },
-      "email": {
-        "string": "E-mail requis"
-      }
-    },
-    "config": {
-      "title": {
-        "string": "Paramètres de conformité"
-      },
-      "enabled": {
-        "string": "Mode HIPAA"
-      },
-      "encryption": {
-        "string": "Chiffrement"
-      },
-      "audit": {
-        "string": "Piste d'audit"
-      },
-      "phi_detection": {
-        "string": "Détection PHI"
-      },
-      "require_reason": {
-        "string": "Raison d'accès requise"
-      },
-      "retention": {
-        "string": "Rétention"
-      }
-    },
-    "detect": {
-      "title": {
-        "string": "Scanneur PHI"
-      },
-      "placeholder": {
-        "string": "Collez le texte d'e-mail ou de document à analyser..."
-      },
-      "button": {
-        "string": "Scanner PHI"
-      },
-      "risk": {
-        "string": "Niveau de risque"
-      }
-    },
-    "audit": {
-      "title": {
-        "string": "Piste d'audit d'accès"
-      },
-      "log": {
-        "string": "Enregistrer l'accès"
-      },
-      "accessor": {
-        "string": "Accédant"
-      },
-      "action": {
-        "string": "Action"
-      },
-      "time": {
-        "string": "Heure"
-      }
-    },
-    "success": {
-      "log": {
-        "string": "Accès enregistré"
-      }
-    },
-    "label": {
-      "days": {
-        "string": "jours"
-      }
+    "HIPAA": {
+        "title": {
+            "string": "Mode de conformité HIPAA"
+        },
+        "description": {
+            "string": "Conformité santé avec détection PHI, chiffrement et pistes d'audit"
+        },
+        "errors": {
+            "fail": {
+                "string": "Opération échouée"
+            },
+            "email": {
+                "string": "E-mail requis"
+            }
+        },
+        "config": {
+            "title": {
+                "string": "Paramètres de conformité"
+            },
+            "enabled": {
+                "string": "Mode HIPAA"
+            },
+            "encryption": {
+                "string": "Chiffreement"
+            },
+            "audit": {
+                "string": "Piste d'audit"
+            },
+            "phi_detection": {
+                "string": "Détection PHI"
+            },
+            "require_reason": {
+                "string": "Raison d'accès requise"
+            },
+            "retention": {
+                "string": "Rétention"
+            }
+        },
+        "detect": {
+            "title": {
+                "string": "Scanneur PHI"
+            },
+            "placeholder": {
+                "string": "Collez le texte d'e-mail ou de document à analyser..."
+            },
+            "button": {
+                "string": "Scanner PHI"
+            },
+            "risk": {
+                "string": "Niveau de risque"
+            }
+        },
+        "audit": {
+            "title": {
+                "string": "Piste d'audit d'accès"
+            },
+            "log": {
+                "string": "Enregistrer l'accès"
+            },
+            "accessor": {
+                "string": "Accédant"
+            },
+            "action": {
+                "string": "Action"
+            },
+            "time": {
+                "string": "Heure"
+            }
+        },
+        "success": {
+            "log": {
+                "string": "Accès enregistré"
+            }
+        },
+        "label": {
+            "days": {
+                "string": "jours"
+            }
+        }
     }
-  }
 }

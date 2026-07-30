@@ -1,37 +1,37 @@
 {
     "IDENTITY_COMPONENT": {
         "labels": {
-            "name": "Identity Name",
-            "email": "Email Address",
-            "replyTo": "Reply To",
-            "newIdentity": "New Identity",
-            "default": "Default",
-            "removeIdentity": "Remove Identity",
-            "atLeastOneIdentity": "At least one identity is required",
+            "name": "Nome Identità",
+            "email": "Indirizzo Email",
+            "replyTo": "Rispondi A",
+            "newIdentity": "Nuova Identità",
+            "default": "Predefinita",
+            "removeIdentity": "Rimuovi Identità",
+            "atLeastOneIdentity": "È richiesta almeno un'identità",
             "useDefaultIdentity": {
-                "string": "Use as default identity"
+                "string": "Usa come identità predefinita"
             },
-            "setAsDefault": "Set as default",
-            "defaultDescription": "This identity will be used by default when composing new messages",
-            "mainIdentityEmail": "This is your main email address and cannot be changed",
-            "nameNotEditable": "Name editing is disabled by administrator",
-            "replyToNotEditable": "Reply-To editing is disabled by administrator",
-            "signatures": "Signatures",
-            "signaturesDescription": "Create and manage email signatures for this identity",
-            "signaturePlaceholder": "Enter signature name",
-            "addIdentity": "Add an identity",
-            "allowsCustom": "You can add and manage additional identities"
+            "setAsDefault": "Imposta come predefinita",
+            "defaultDescription": "Questa identità verrà utilizzata per impostazione predefinita durante la composizione di nuovi messaggi",
+            "mainIdentityEmail": "Questo è il tuo indirizzo email principale e non può essere modificato",
+            "nameNotEditable": "La modifica del nome è disabilitata dall'amministratore",
+            "replyToNotEditable": "La modifica del Rispondi A è disabilitata dall'amministratore",
+            "signatures": "Firme",
+            "signaturesDescription": "Crea e gestisci le firme email per questa identità",
+            "signaturePlaceholder": "Inserisci nome firma",
+            "addIdentity": "Aggiungi un'identità",
+            "allowsCustom": "Puoi aggiungere e gestire identità aggiuntive"
         },
         "description": {
             "useDefaultIdentity": {
-                "string": "This identity will be selected by default when composing new messages"
+                "string": "Questa identità verrà selezionata per impostazione predefinita durante la composizione di nuovi messaggi"
             }
         },
         "accessibility": {
-            "toggleCollapse": "Toggle identity details",
-            "expandIdentity": "Expand",
-            "collapseIdentity": "Collapse",
-            "removeIcon": "Remove identity button"
+            "toggleCollapse": "Mostra/nascondi dettagli identità",
+            "expandIdentity": "Espandi",
+            "collapseIdentity": "Comprimi",
+            "removeIcon": "Pulsante rimuovi identità"
         }
     }
 }

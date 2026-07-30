@@ -1,7 +1,7 @@
 {
     "US_MAIL_GENERAL": {
         "title": {
-            "string": "Paramètres généraux du courrier",
+            "string": "Paramètres généraux du courrieur",
             "context": "Title for the mail general settings page"
         },
         "compose_message_in": {
@@ -84,7 +84,7 @@
         },
         "attachment_position": {
             "title": {
-                "string": "Place the attachment",
+                "string": "Place the attachement",
                 "context": "Dropdown label to know where to place the attachment"
             },
             "above": {

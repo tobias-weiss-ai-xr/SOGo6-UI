@@ -1,40 +1,40 @@
 {
-  "AI_ATTACH": {
-    "title": {
-      "string": "Actions intelligentes sur pièces jointes"
-    },
-    "description": {
-      "string": "Détection automatique du type de fichier et suggestions d'actions"
-    },
-    "input": {
-      "title": {
-        "string": "Entrée"
-      },
-      "filename": {
-        "string": "Nom de fichier"
-      }
-    },
-    "output": {
-      "title": {
-        "string": "Résultat"
-      },
-      "empty": {
-        "string": "Le résultat apparaîtra ici"
-      },
-      "preview": {
-        "string": "Aperçu possible"
-      }
-    },
-    "classify": {
-      "string": "Classifier"
-    },
-    "errors": {
-      "empty": {
-        "string": "Nom de fichier requis"
-      },
-      "fail": {
-        "string": "Échec de la classification"
-      }
+    "AI_ATTACH": {
+        "title": {
+            "string": "Actions intelligentes sur pièces jointes"
+        },
+        "description": {
+            "string": "Détection automatique du type de fichier et suggestions d'actions"
+        },
+        "input": {
+            "title": {
+                "string": "Entrée"
+            },
+            "filename": {
+                "string": "Nom de fichieur"
+            }
+        },
+        "output": {
+            "title": {
+                "string": "Résultat"
+            },
+            "empty": {
+                "string": "Le résultat apparaîtra ici"
+            },
+            "preview": {
+                "string": "Aperçu possible"
+            }
+        },
+        "classify": {
+            "string": "Classifieur"
+        },
+        "errors": {
+            "empty": {
+                "string": "Nom de fichier requis"
+            },
+            "fail": {
+                "string": "Échec de la classification"
+            }
+        }
     }
-  }
 }

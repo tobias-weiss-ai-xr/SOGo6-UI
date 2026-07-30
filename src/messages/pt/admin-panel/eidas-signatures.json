@@ -1,28 +1,28 @@
 {
   "EIDAS": {
-    "title": { "string": "eIDAS Qualified Signatures" },
-    "description": { "string": "EU Regulation 910/2014 qualified electronic signatures and timestamps" },
-    "errors": { "fields": { "string": "All fields required" }, "fail": { "string": "Operation failed" } },
-    "success": { "sign": { "string": "Document signed with QES" } },
+    "title": { "string": "Assinaturas Eletrônicas eIDAS" },
+    "description": { "string": "Regulamento UE 910/2014 — assinaturas eletrônicas qualificadas e carimbos de data/hora" },
+    "errors": { "fields": { "string": "Todos os campos obrigatórios" }, "fail": { "string": "Operação falhou" } },
+    "success": { "sign": { "string": "Documento assinado com QES" } },
     "sign": {
-      "title": { "string": "Sign Document" },
-      "placeholder": { "string": "Enter document content to sign..." },
-      "signer": { "string": "Signer Email" },
-      "algorithm": { "string": "Hash Algorithm" },
-      "button": { "string": "Sign with QES" }
+      "title": { "string": "Assinar Documento" },
+      "placeholder": { "string": "Insira o conteúdo do documento para assinar..." },
+      "signer": { "string": "E-mail do signatário" },
+      "algorithm": { "string": "Algoritmo de Hash" },
+      "button": { "string": "Assinar com QES" }
     },
     "verify": {
-      "title": { "string": "Verify Signature" },
-      "doc_hash": { "string": "Document Hash" },
-      "signature": { "string": "Signature" },
-      "button": { "string": "Verify" },
-      "valid": { "string": "Valid" },
-      "invalid": { "string": "Invalid" }
+      "title": { "string": "Verificar Assinatura" },
+      "doc_hash": { "string": "Hash do Documento" },
+      "signature": { "string": "Assinatura" },
+      "button": { "string": "Verificar" },
+      "valid": { "string": "Válida" },
+      "invalid": { "string": "Inválida" }
     },
     "certs": {
-      "title": { "string": "Trust Service Certificates" },
-      "type": { "string": "Type" },
-      "name": { "string": "Name" },
+      "title": { "string": "Certificados de Serviço de Confiança" },
+      "type": { "string": "Tipo" },
+      "name": { "string": "Nome" },
       "hash": { "string": "Hash" }
     }
   }

@@ -2,31 +2,31 @@
     "FORM_COMMONS": {
         "save": {
             "default": {
-                "string": "Save",
+                "string": "Uložit",
                 "description": "Click to save the form data."
             }
         },
         "delete": {
             "default": {
-                "string": "Delete",
+                "string": "Smazat",
                 "description": "Click to delete the selected item."
             }
         },
         "edit": {
             "default": {
-                "string": "Edit",
+                "string": "Upravit",
                 "description": "Click to edit the selected item."
             }
         },
         "cancel": {
             "default": {
-                "string": "Cancel",
+                "string": "Zrušit",
                 "description": "Click to cancel the form submission."
             }
         },
         "create": {
             "default": {
-                "string": "Create",
+                "string": "Vytvořit",
                 "description": "Click to create a new item."
             }
         },

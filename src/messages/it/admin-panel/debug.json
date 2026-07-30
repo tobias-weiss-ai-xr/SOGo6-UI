@@ -1,22 +1,24 @@
-{ "AP_DEBUG": {
-    "title": { "string": "Mailbox Debug" },
-    "description": { "string": "Diagnostic tool for troubleshooting mail delivery issues. View raw email source or parsed headers." },
-    "query": {
-      "title": { "string": "Debug Query" },
-      "button": { "string": "Inspect" }
-    },
-    "labels": {
-      "user": { "string": "User" },
-      "folder": { "string": "IMAP Folder" },
-      "mail_uid": { "string": "Mail UID" },
-      "select_user": { "string": "Select user..." }
-    },
-    "result": {
-      "raw": { "title": { "string": "Raw Email Source" } },
-      "headers": { "title": { "string": "Parsed Headers" } }
-    },
-    "errors": {
-      "fields_required": { "string": "User, folder, and mail UID are required" },
-      "fetch_failed": { "string": "Failed to fetch debug data" }
+{
+    "AP_DEBUG": {
+        "title": { "string": "Debug Casella Postale" },
+        "description": { "string": "Strumento diagnostico per risolvere problemi di consegna email. Visualizza il sorgente email grezzo o le intestazioni analizzate." },
+        "query": {
+            "title": { "string": "Query di Debug" },
+            "button": { "string": "Ispeziona" }
+        },
+        "labels": {
+            "user": { "string": "Utente" },
+            "folder": { "string": "Cartella IMAP" },
+            "mail_uid": { "string": "UID Mail" },
+            "select_user": { "string": "Seleziona utente..." }
+        },
+        "result": {
+            "raw": { "title": { "string": "Sorgente Email Grezzo" } },
+            "headers": { "title": { "string": "Intestazioni Analizzate" } }
+        },
+        "errors": {
+            "fields_required": { "string": "Utente, cartella e UID mail sono obbligatori" },
+            "fetch_failed": { "string": "Recupero dati debug fallito" }
+        }
     }
-}}
+}

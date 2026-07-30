@@ -37,7 +37,7 @@
             "context": "Button label to return to the contact list."
         },
         "copied_to_clipboard": {
-            "string": "Copié dans le presse-papier",
+            "string": "Copié dans le presse-papieur",
             "context": "Toast message when content is copied successfully."
         },
         "copied_value": {
@@ -61,19 +61,19 @@
             "context": "Generic copy button label."
         },
         "edit": {
-            "string": "Modifier",
+            "string": "Modifieur",
             "context": "Button label to edit a field."
         },
         "export": {
-            "string": "Exporter",
+            "string": "Exporteur",
             "context": "Button label to export a contact."
         },
         "save": {
-            "string": "Enregistrer",
+            "string": "Enregistreur",
             "context": "Button label to save changes."
         },
         "cancel": {
-            "string": "Annuler",
+            "string": "Annuleur",
             "context": "Button label to cancel editing."
         },
         "edit_note": {
@@ -97,11 +97,11 @@
             "context": "Title for the edit contact dialog"
         },
         "create": {
-            "string": "Créer",
+            "string": "Créeur",
             "context": "Button to create a new contact"
         },
         "delete": {
-            "string": "Supprimer",
+            "string": "Supprimeur",
             "context": "Button to delete a contact"
         },
         "add_email": {
@@ -125,7 +125,7 @@
             "context": "Button to add another URL field"
         },
         "add_impp": {
-            "string": "Add instant messaging",
+            "string": "Add instant messagant",
             "context": "Button to add another instant messaging field"
         },
         "categories": {
@@ -153,7 +153,7 @@
             "context": "Label for anniversary field in contact visualization"
         },
         "impp": {
-            "string": "Instant messaging",
+            "string": "Instant messagant",
             "context": "Label for instant messaging addresses"
         },
         "geo": {
@@ -196,7 +196,7 @@
                 "string": "Rôle"
             },
             "impp": {
-                "string": "Instant messaging"
+                "string": "Instant messagant"
             },
             "anniversary": {
                 "string": "Anniversaire"
@@ -279,7 +279,7 @@
                 "string": "This contact will be permanently removed from your address book."
             },
             "confirm": {
-                "string": "Supprimer"
+                "string": "Supprimeur"
             }
         },
         "write_message": {

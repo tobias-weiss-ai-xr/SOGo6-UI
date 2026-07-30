@@ -1,27 +1,27 @@
 {
     "US_MAIL_CATEGORIES": {
         "create": {
-            "string": "Add mail category",
+            "string": "Aggiungi categoria email",
             "context": "Button text to add a new mail category"
         },
         "title": {
-            "string": "Categories",
+            "string": "Categorie",
             "context": "Title for the mail categories settings page"
         },
         "accessibility": {
             "icon": {
                 "delete": {
-                    "string": "Delete {name}",
+                    "string": "Elimina {name}",
                     "context": "Accessibility message for the delete icon"
                 }
             }
         },
         "categories": {
-            "Work": "Travail",
-            "Family": "Famille",
-            "Friends": "Amis",
+            "Work": "Lavoro",
+            "Family": "Famiglia",
+            "Friends": "Amici",
             "validation": {
-                "category-name-required": "Category name is required"
+                "category-name-required": "Il nome della categoria è obbligatorio"
             }
         }
     }

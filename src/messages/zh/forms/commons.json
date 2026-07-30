@@ -2,31 +2,31 @@
     "FORM_COMMONS": {
         "save": {
             "default": {
-                "string": "Save",
+                "string": "保存",
                 "description": "Click to save the form data."
             }
         },
         "delete": {
             "default": {
-                "string": "Delete",
+                "string": "删除",
                 "description": "Click to delete the selected item."
             }
         },
         "edit": {
             "default": {
-                "string": "Edit",
+                "string": "编辑",
                 "description": "Click to edit the selected item."
             }
         },
         "cancel": {
             "default": {
-                "string": "Cancel",
+                "string": "取消",
                 "description": "Click to cancel the form submission."
             }
         },
         "create": {
             "default": {
-                "string": "Create",
+                "string": "创建",
                 "description": "Click to create a new item."
             }
         },

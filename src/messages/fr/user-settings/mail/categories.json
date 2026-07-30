@@ -1,7 +1,7 @@
 {
     "US_MAIL_CATEGORIES": {
         "create": {
-            "string": "Ajouter une catégorie de courrier",
+            "string": "Ajouter une catégorie de courrieur",
             "context": "Button text to add a new mail category"
         },
         "title": {

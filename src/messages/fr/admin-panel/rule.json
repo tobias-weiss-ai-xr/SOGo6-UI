@@ -10,7 +10,7 @@
             "string": "Nouvelle règle"
         },
         "select_all": {
-            "string": "Tout sélectionner"
+            "string": "Tout sélectionneur"
         },
         "select_row": {
             "string": "Sélectionner la ligne"
@@ -28,10 +28,10 @@
             "string": "Copier le nom du domaine"
         },
         "edit": {
-            "string": "Modifier"
+            "string": "Modifieur"
         },
         "delete": {
-            "string": "Supprimer"
+            "string": "Supprimeur"
         }
     },
     "AP_RULES": {
@@ -68,7 +68,7 @@
         },
         "edit": {
             "button": {
-                "string": "Modifier"
+                "string": "Modifieur"
             },
             "title": {
                 "string": "Edit Rule"
@@ -88,7 +88,7 @@
         },
         "delete": {
             "button": {
-                "string": "Supprimer"
+                "string": "Supprimeur"
             },
             "title": {
                 "string": "Delete Rule"

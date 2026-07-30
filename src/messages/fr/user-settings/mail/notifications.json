@@ -1,7 +1,7 @@
 {
     "US_MAIL_NOTIFICATIONS": {
         "title": {
-            "string": "Notifications de courrier"
+            "string": "Notifications de courrieur"
         },
         "page": {
             "description": {
@@ -31,7 +31,7 @@
         },
         "hints": {
             "blur": {
-                "string": "Appuyez sur Entrée pour ajouter"
+                "string": "Appuyez sur Entrée pour ajouteur"
             }
         },
         "placeholders": {

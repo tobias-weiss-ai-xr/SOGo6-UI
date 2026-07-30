@@ -2,37 +2,37 @@
     "FORM_COMMONS": {
         "save": {
             "default": {
-                "string": "Enregistrer",
+                "string": "Enregistreur",
                 "description": "Click to save the form data."
             }
         },
         "delete": {
             "default": {
-                "string": "Supprimer",
+                "string": "Supprimeur",
                 "description": "Click to delete the selected item."
             }
         },
         "edit": {
             "default": {
-                "string": "Modifier",
+                "string": "Modifieur",
                 "description": "Click to edit the selected item."
             }
         },
         "cancel": {
             "default": {
-                "string": "Annuler",
+                "string": "Annuleur",
                 "description": "Click to cancel the form submission."
             }
         },
         "create": {
             "default": {
-                "string": "Créer",
+                "string": "Créeur",
                 "description": "Click to create a new item."
             }
         },
         "reset": {
             "default": {
-                "string": "Réinitialiser",
+                "string": "Réinitialiseur",
                 "description": "Click to reset the form fields to their default values."
             }
         },

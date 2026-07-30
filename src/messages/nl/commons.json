@@ -1,17 +1,17 @@
 {
     "COMMONS": {
         "close": {
-            "string": "Close"
+            "string": "Sluiten"
         },
         "workInProgress": {
             "description": {
-                "string": "This feature is currently under development."
+                "string": "Deze functie wordt momenteel ontwikkeld."
             },
             "message": {
-                "string": "We're working hard to bring you this feature."
+                "string": "We werken hard om deze functie beschikbaar te maken."
             },
             "comingSoon": {
-                "string": "Coming soon! Stay tuned."
+                "string": "Binnenkort beschikbaar! Blijf op de hoogte."
             }
         }
     },
@@ -19,13 +19,13 @@
         "demo": {
             "warning": {
                 "title": {
-                    "string": "Demo Version"
+                    "string": "Demoversie"
                 },
                 "description": {
-                    "string": "You are currently using a demo version of the application. Some features may be limited."
+                    "string": "U gebruikt momenteel een demoversie van de applicatie. Sommige functies kunnen beperkt zijn."
                 },
                 "action": {
-                    "string": "Got it"
+                    "string": "Begrepen"
                 }
             }
         },
@@ -35,13 +35,13 @@
         },
         "serviceUnavailable": {
             "title": {
-                "string": "Service unavailable"
+                "string": "Service niet beschikbaar"
             },
             "description": {
-                "string": "The application could not connect to the server. Please try again later or contact your administrator."
+                "string": "De applicatie kon geen verbinding maken met de server. Probeer het later opnieuw of neem contact op met uw beheerder."
             },
             "retry": {
-                "string": "Try again"
+                "string": "Opnieuw proberen"
             }
         }
     }

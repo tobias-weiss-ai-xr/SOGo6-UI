@@ -1,17 +1,17 @@
 {
     "COMMONS": {
         "close": {
-            "string": "Close"
+            "string": "Κλείσιμο"
         },
         "workInProgress": {
             "description": {
-                "string": "This feature is currently under development."
+                "string": "Αυτή η λειτουργία βρίσκεται υπό ανάπτυξη."
             },
             "message": {
-                "string": "We're working hard to bring you this feature."
+                "string": "Εργαζόμαστε σκληρά για να σας φέρουμε αυτή τη λειτουργία."
             },
             "comingSoon": {
-                "string": "Coming soon! Stay tuned."
+                "string": "Έρχεται σύντομα! Μείνετε συνδεδεμένοι."
             }
         }
     },
@@ -19,13 +19,13 @@
         "demo": {
             "warning": {
                 "title": {
-                    "string": "Demo Version"
+                    "string": "Εκδομή επίδειξης"
                 },
                 "description": {
-                    "string": "You are currently using a demo version of the application. Some features may be limited."
+                    "string": "Χρησιμοποιείτε μια έκδοση επίδειξης της εφαρμογής. Ορισμένες λειτουργίες ενδέχεται να είναι περιορισμένες."
                 },
                 "action": {
-                    "string": "Got it"
+                    "string": "Το κατάλαβα"
                 }
             }
         },
@@ -35,13 +35,13 @@
         },
         "serviceUnavailable": {
             "title": {
-                "string": "Service unavailable"
+                "string": "Η υπηρεσία δεν είναι διαθέσιμη"
             },
             "description": {
-                "string": "The application could not connect to the server. Please try again later or contact your administrator."
+                "string": "Η εφαρμογή δεν μπόρεσε να συνδεθεί στον διακομιστή. Δοκιμάστε ξανά αργότερα ή επικοινωνήστε με τον διαχειριστή σας."
             },
             "retry": {
-                "string": "Try again"
+                "string": "Δοκιμή ξανά"
             }
         }
     }

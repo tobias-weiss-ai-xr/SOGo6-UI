@@ -58,7 +58,7 @@
                 }
             },
             "sharing": {
-                "string": "Sharing"
+                "string": "Sharando"
             },
             "import": {
                 "string": "Importar"
@@ -72,13 +72,13 @@
         },
         "sharing": {
             "title": {
-                "string": "Address Book Sharing"
+                "string": "Address Book Sharando"
             },
             "description": {
                 "string": "Share this address book with other users. Shared users can view or modify contacts based on the permission level you grant."
             },
             "addUser": {
-                "string": "Add User"
+                "string": "Add Usor"
             },
             "searchPlaceholder": {
                 "string": "Enter user email..."
@@ -87,13 +87,13 @@
                 "string": "Share"
             },
             "added": {
-                "string": "Address book shared successfully"
+                "string": "Address book shared successfulmente"
             },
             "addError": {
                 "string": "Failed to share address book"
             },
             "removed": {
-                "string": "Share removed successfully"
+                "string": "Share removed successfulmente"
             },
             "removeError": {
                 "string": "Failed to remove share"

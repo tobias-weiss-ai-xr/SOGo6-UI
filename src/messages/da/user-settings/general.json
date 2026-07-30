@@ -36,10 +36,10 @@
                 "string": "Mail"
             },
             "calendar": {
-                "string": "Calendar"
+                "string": "Kalender"
             },
             "contacts": {
-                "string": "Contacts"
+                "string": "Kontakter"
             },
             "last": {
                 "string": "Last displayed module"

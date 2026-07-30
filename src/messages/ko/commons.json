@@ -1,17 +1,17 @@
 {
     "COMMONS": {
         "close": {
-            "string": "Close"
+            "string": "닫기"
         },
         "workInProgress": {
             "description": {
-                "string": "This feature is currently under development."
+                "string": "이 기능은 현재 개발 중입니다."
             },
             "message": {
-                "string": "We're working hard to bring you this feature."
+                "string": "이 기능을 제공하기 위해 열심히 작업하고 있습니다."
             },
             "comingSoon": {
-                "string": "Coming soon! Stay tuned."
+                "string": "곧 출시! 계속 지켜봐 주세요."
             }
         }
     },
@@ -19,13 +19,13 @@
         "demo": {
             "warning": {
                 "title": {
-                    "string": "Demo Version"
+                    "string": "데모 버전"
                 },
                 "description": {
-                    "string": "You are currently using a demo version of the application. Some features may be limited."
+                    "string": "현재 애플리케이션의 데모 버전을 사용하고 있습니다. 일부 기능이 제한될 수 있습니다."
                 },
                 "action": {
-                    "string": "Got it"
+                    "string": "확인"
                 }
             }
         },
@@ -35,13 +35,13 @@
         },
         "serviceUnavailable": {
             "title": {
-                "string": "Service unavailable"
+                "string": "서비스를 사용할 수 없음"
             },
             "description": {
-                "string": "The application could not connect to the server. Please try again later or contact your administrator."
+                "string": "애플리케이션을 서버에 연결할 수 없습니다. 나중에 다시 시도하거나 관리자에게 문의해 주세요."
             },
             "retry": {
-                "string": "Try again"
+                "string": "다시 시도"
             }
         }
     }

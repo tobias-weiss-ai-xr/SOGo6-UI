@@ -1,1 +1,12 @@
-{ "AP_WORKFLOWS": { "title": { "string": "Workflow Builder" }, "description": { "string": "Low-code automation: If email from X and subject Y → forward, create event, notify." }, "form": { "create": { "string": "New Workflow" }, "cancel": { "string": "Cancel" }, "title": { "string": "Create Workflow" }, "name": { "string": "Workflow Name" }, "trigger": { "string": "Trigger" }, "description": { "string": "Description" }, "conditions": { "string": "Conditions" }, "actions": { "string": "Actions" }, "submit": { "string": "Create Workflow" } }, "create": { "success": { "string": "Workflow created" }, "error": { "string": "Failed to create" } }, "toggle": { "error": { "string": "Failed to toggle" } }, "delete": { "success": { "string": "Workflow deleted" }, "error": { "string": "Failed to delete" } }, "list": { "empty": { "string": "No workflows defined. Create one to automate actions." } }, "errors": { "fields": { "string": "Name, conditions, and actions are required" } } }}
+{
+  "AP_WORKFLOWS": {
+    "title": { "string": "Costruttore di Workflow" },
+    "description": { "string": "Automazione low-code: Se email da X e oggetto Y → inoltra, crea evento, notifica." },
+    "form": { "create": { "string": "Nuovo Workflow" }, "cancel": { "string": "Annulla" }, "title": { "string": "Crea Workflow" }, "name": { "string": "Nome Workflow" }, "trigger": { "string": "Trigger" }, "description": { "string": "Descrizione" }, "conditions": { "string": "Condizioni" }, "actions": { "string": "Azioni" }, "submit": { "string": "Crea Workflow" } },
+    "create": { "success": { "string": "Workflow creato" }, "error": { "string": "Creazione fallita" } },
+    "toggle": { "error": { "string": "Attivazione/disattivazione fallita" } },
+    "delete": { "success": { "string": "Workflow eliminato" }, "error": { "string": "Eliminazione fallita" } },
+    "list": { "empty": { "string": "Nessun workflow definito. Creane uno per automatizzare le azioni." } },
+    "errors": { "fields": { "string": "Nome, condizioni e azioni sono obbligatori" } }
+  }
+}

@@ -125,7 +125,7 @@
             "context": "Button to add another URL field"
         },
         "add_impp": {
-            "string": "Add instant messaging",
+            "string": "Add instant messagando",
             "context": "Button to add another instant messaging field"
         },
         "categories": {
@@ -153,7 +153,7 @@
             "context": "Label for anniversary field in contact visualization"
         },
         "impp": {
-            "string": "Instant messaging",
+            "string": "Instant messagando",
             "context": "Label for instant messaging addresses"
         },
         "geo": {
@@ -196,7 +196,7 @@
                 "string": "Rol"
             },
             "impp": {
-                "string": "Instant messaging"
+                "string": "Instant messagando"
             },
             "anniversary": {
                 "string": "Aniversario"

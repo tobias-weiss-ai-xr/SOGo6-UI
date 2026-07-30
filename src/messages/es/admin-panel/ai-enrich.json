@@ -1,54 +1,54 @@
 {
-  "AI_ENRICH": {
-    "title": {
-      "string": "Enriquecimiento de contactos"
-    },
-    "description": {
-      "string": "Extracción de datos de contacto desde firmas de correo"
-    },
-    "input": {
-      "title": {
-        "string": "Entrada"
-      },
-      "signature": {
-        "string": "Texto de firma"
-      },
-      "placeholder": {
-        "string": "Pegue la firma de correo aquí..."
-      }
-    },
-    "output": {
-      "title": {
-        "string": "Datos extraídos"
-      },
-      "empty": {
-        "string": "Los datos aparecerán aquí"
-      }
-    },
-    "field": {
-      "phone": {
-        "string": "Teléfono"
-      },
-      "title": {
-        "string": "Cargo"
-      },
-      "company": {
-        "string": "Empresa"
-      },
-      "location": {
-        "string": "Ubicación"
-      }
-    },
-    "extract": {
-      "string": "Extraer"
-    },
-    "errors": {
-      "empty": {
-        "string": "Texto requerido"
-      },
-      "fail": {
-        "string": "Extracción fallida"
-      }
+    "AI_ENRICH": {
+        "title": {
+            "string": "Enriquecimiento de contactos"
+        },
+        "description": {
+            "string": "Extracción de datos de contacto desde firmas de correo"
+        },
+        "input": {
+            "title": {
+                "string": "Entrada"
+            },
+            "signature": {
+                "string": "Texto de firma"
+            },
+            "placeholder": {
+                "string": "Pegue la firma de correo aquí..."
+            }
+        },
+        "output": {
+            "title": {
+                "string": "Datos extraídos"
+            },
+            "empty": {
+                "string": "Los datos aparecerán aquí"
+            }
+        },
+        "field": {
+            "phone": {
+                "string": "Teléfono"
+            },
+            "title": {
+                "string": "Cargo"
+            },
+            "company": {
+                "string": "Empresa"
+            },
+            "location": {
+                "string": "Ubicación"
+            }
+        },
+        "extract": {
+            "string": "Extraor"
+        },
+        "errors": {
+            "empty": {
+                "string": "Texto requerido"
+            },
+            "fail": {
+                "string": "Extracción fallida"
+            }
+        }
     }
-  }
 }

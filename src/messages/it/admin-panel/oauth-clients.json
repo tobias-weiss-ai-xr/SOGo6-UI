@@ -1,9 +1,29 @@
-{ "AP_OAUTH": {
-    "title": { "string": "OAuth2 / OIDC Clients" },
-    "description": { "string": "Manage OAuth2 client applications. SOGo acts as an OAuth2 authorization server and OpenID Connect provider." },
-    "form": { "register": { "string": "Register Client" }, "cancel": { "string": "Cancel" }, "title": { "string": "Register OAuth2 Client" }, "name": { "string": "Application Name" }, "redirect_uris": { "string": "Redirect URIs" }, "redirect_hint": { "string": "Separate multiple URIs with commas" }, "scopes": { "string": "Scopes" }, "create": { "string": "Register" } },
-    "credentials": { "title": { "string": "Client Credentials — Save Now" } },
-    "create": { "success": { "string": "Client registered" }, "error": { "string": "Registration failed" } },
-    "list": { "empty": { "string": "No OAuth2 clients registered yet." } },
-    "errors": { "fields": { "string": "Name and redirect URI are required" } }
-}}
+{
+    "AP_OAUTH": {
+        "title": { "string": "Client OAuth2 / OIDC" },
+        "description": { "string": "Gestisci applicazioni client OAuth2. SOGo funge da server di autorizzazione OAuth2 e provider OpenID Connect." },
+        "form": {
+            "register": { "string": "Registra Client" },
+            "cancel": { "string": "Annulla" },
+            "title": { "string": "Registra Client OAuth2" },
+            "name": { "string": "Nome Applicazione" },
+            "redirect_uris": { "string": "URI di Reindirizzamento" },
+            "redirect_hint": { "string": "Separa più URI con virgole" },
+            "scopes": { "string": "Ambiti" },
+            "create": { "string": "Registra" }
+        },
+        "credentials": {
+            "title": { "string": "Credenziali Client — Salva Ora" }
+        },
+        "create": {
+            "success": { "string": "Client registrato" },
+            "error": { "string": "Registrazione fallita" }
+        },
+        "list": {
+            "empty": { "string": "Nessun client OAuth2 ancora registrato." }
+        },
+        "errors": {
+            "fields": { "string": "Nome e URI di reindirizzamento sono obbligatori" }
+        }
+    }
+}

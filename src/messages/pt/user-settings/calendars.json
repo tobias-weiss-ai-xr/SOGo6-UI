@@ -1,138 +1,138 @@
 {
     "US_CALENDARS": {
         "title": {
-            "string": "Calendars",
+            "string": "Calendários",
             "context": "Title for the calendars settings section"
         },
         "accessibility": {
             "icon": {
                 "delete": {
-                    "string": "Delete {name}",
+                    "string": "Excluir {name}",
                     "context": "Accessibility message for the delete icon"
                 }
             }
         },
         "calendarCreationNotif": {
-            "string": "Send notification when a calendar is created",
+            "string": "Enviar notificação quando um calendário for criado",
             "context": "Label for the calendar creation notification setting"
         },
         "calendarViewFirstDay": {
-            "0": "Sunday",
-            "1": "Monday",
-            "2": "Tuesday",
-            "3": "Wednesday",
-            "4": "Thursday",
-            "5": "Friday",
-            "6": "Saturday",
-            "string": "First day of the week in calendar view",
+            "0": "Domingo",
+            "1": "Segunda-feira",
+            "2": "Terça-feira",
+            "3": "Quarta-feira",
+            "4": "Quinta-feira",
+            "5": "Sexta-feira",
+            "6": "Sábado",
+            "string": "Primeiro dia da semana na visualização do calendário",
             "context": "Label for the setting that determines the first day of the week in calendar view (0=Sunday..6=Saturday)"
         },
         "workdayStartTime": {
-            "string": "Workday start time",
+            "string": "Horário de início do dia de trabalho",
             "context": "Label for the setting that determines the start time of the workday (e.g. 09:00)"
         },
         "workdayEndTime": {
-            "string": "Workday end time",
+            "string": "Horário de término do dia de trabalho",
             "context": "Label for the setting that determines the end time of the workday (e.g. 18:00)"
         },
         "busyOffHours": {
-            "string": "Show as busy during off hours",
+            "string": "Mostrar como ocupado durante horários não comerciais",
             "context": "Label for the setting that determines whether to show as busy during off hours"
         },
         "calendarDaysShowed": {
-            "0": "Sunday",
-            "1": "Monday",
-            "2": "Tuesday",
-            "3": "Wednesday",
-            "4": "Thursday",
-            "5": "Friday",
-            "6": "Saturday",
-            "string": "Days showed in calendar view",
+            "0": "Domingo",
+            "1": "Segunda-feira",
+            "2": "Terça-feira",
+            "3": "Quarta-feira",
+            "4": "Quinta-feira",
+            "5": "Sexta-feira",
+            "6": "Sábado",
+            "string": "Dias mostrados na visualização do calendário",
             "context": "Label for the setting that determines which days are showed in calendar view (array of 0=Sunday..6=Saturday)"
         },
         "calendarWeekNumberFormat": {
-            "%U": "Sunday as the first day of the week",
-            "%W": "Monday as the first day of the week",
-            "%V": "First 4 days week",
-            "string": "How the first week number is evaluated",
+            "%U": "Domingo como primeiro dia da semana",
+            "%W": "Segunda-feira como primeiro dia da semana",
+            "%V": "Primeira semana de 4 dias",
+            "string": "Como o número da primeira semana é avaliado",
             "context": "Label for the setting that determines the week number format in calendar view (%U, %W or %V)"
         },
         "calendarDefault": {
-            "string": "Default Calendar chosen when creating a new event",
+            "string": "Calendário padrão ao criar um novo evento",
             "context": "Label for the setting that determines the default calendar"
         },
         "calendarStatus": {
-            "PUBLIC": "Public",
-            "CONFIDENTIAL": "Confidential",
-            "PRIVATE": "Private"
+            "PUBLIC": "Público",
+            "CONFIDENTIAL": "Confidencial",
+            "PRIVATE": "Privado"
         },
         "eventDefaultClass": {
-            "string": "Default classification for events",
+            "string": "Classificação padrão para eventos",
             "context": "Label for the setting that determines the default classification for events (PUBLIC, CONFIDENTIAL or PRIVATE)"
         },
         "taskDefaultClass": {
-            "string": "Default classification for tasks",
+            "string": "Classificação padrão para tarefas",
             "context": "Label for the setting that determines the default classification for tasks (PUBLIC, CONFIDENTIAL or PRIVATE)"
         },
         "journalDefaultClass": {
-            "string": "Default classification for journal entries",
+            "string": "Classificação padrão para entradas de diário",
             "context": "Label for the setting that determines the default classification for journal entries (PUBLIC, CONFIDENTIAL or PRIVATE)"
         },
         "eventDefaultReminder": {
-            "string": "Default reminder for events",
+            "string": "Lembrete padrão para eventos",
             "context": "Label for the setting that determines the default reminder for events (e.g. -PT15M)"
         },
         "taskDefaultReminder": {
-            "string": "Default reminder for tasks",
+            "string": "Lembrete padrão para tarefas",
             "context": "Label for the setting that determines the default reminder for tasks (e.g. -PT15M)"
         },
         "journalDefaultReminder": {
-            "string": "Default reminder for journal entries",
+            "string": "Lembrete padrão para entradas de diário",
             "context": "Label for the setting that determines the default reminder for journal entries (e.g. -PT15M)"
         },
         "reminderAfter": {
-            "string": "before",
+            "string": "antes",
             "context": "example: 20min before"
         },
         "noInvitation": {
-            "string": "Prevent to be add as attendee by others users",
+            "string": "Impedir de ser adicionado como participante por outros usuários",
             "context": "Label for the setting prevent user to be add as attendees by others users"
         },
         "noInvitationWhitelist": {
-            "string": "Invitation whitelist",
+            "string": "Lista branca de convites",
             "context": "Label for the setting that determines the whitelist of email addresses to which invitations will be sent even if 'Do not send invitations' is enabled"
         },
         "doNotSendInvitFromDav": {
-            "string": "Do not send invitations for events created from CalDAV clients",
+            "string": "Não enviar convites para eventos criados em clientes CalDAV",
             "context": "Label for the setting that determines whether to send invitations for events created from CalDAV clients or not"
         },
         "davForceSyncFromClient": {
-            "string": "Force synchronization of events created from CalDAV clients",
-            "help-tooltip": "Warning: if events from the client are more recent, force the sync anyway",
+            "string": "Forçar sincronização de eventos criados em clientes CalDAV",
+            "help-tooltip": "Aviso: se os eventos do cliente forem mais recentes, force a sincronização mesmo assim",
             "context": "Label for the setting that determines whether to force synchronization of events created from CalDAV clients or not"
         },
         "categories": {
             "create": {
-                "string": "Add calendar category",
+                "string": "Adicionar categoria de calendário",
                 "context": "Button text to add a new calendar category"
             },
             "title": {
-                "string": "Categories",
+                "string": "Categorias",
                 "context": "Title for the calendar categories settings page"
             },
             "accessibility": {
                 "icon": {
                     "delete": {
-                        "string": "Delete {name}",
+                        "string": "Excluir {name}",
                         "context": "Accessibility message for the delete icon"
                     }
                 }
             },
-            "Work": "Work",
-            "Family": "Family",
-            "Friends": "Friends",
+            "Work": "Trabalho",
+            "Family": "Família",
+            "Friends": "Amigos",
             "validation": {
-                "category-name-required": "Category name is required"
+                "category-name-required": "O nome da categoria é obrigatório"
             }
         }
     }

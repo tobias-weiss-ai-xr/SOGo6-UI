@@ -44,7 +44,7 @@
         },
         "auto_reply": {
             "enable": {
-                "string": "Enable vacation auto reply"
+                "string": "Enable vacation auto repmente"
             },
             "subject": {
                 "label": {

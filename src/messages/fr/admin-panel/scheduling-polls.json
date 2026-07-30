@@ -1,63 +1,63 @@
 {
-  "AP_POLLS": {
-    "title": {
-      "string": "Sondages de planification"
-    },
-    "description": {
-      "string": "Create 'When are you free?' polls to find the best meeting time for internal and external participants."
-    },
-    "form": {
-      "create": {
-        "string": "Create Poll"
-      },
-      "cancel": {
-        "string": "Cancel"
-      },
-      "title": {
-        "string": "New Scheduling Poll"
-      },
-      "poll_title": {
-        "string": "Poll Title"
-      },
-      "title_hint": {
-        "string": "e.g. Q1 Planning Meeting"
-      },
-      "participants": {
-        "string": "Participants"
-      },
-      "description": {
-        "string": "Description"
-      },
-      "time_slots": {
-        "string": "Proposed Time Slots"
-      },
-      "add_slot": {
-        "string": "Add Slot"
-      },
-      "submit": {
-        "string": "Create Poll"
-      }
-    },
-    "create": {
-      "success": {
-        "string": "Poll created"
-      },
-      "error": {
-        "string": "Failed to create poll"
-      }
-    },
-    "list": {
-      "empty": {
-        "string": "No scheduling polls yet. Create one to find the best meeting time."
-      },
-      "by": {
-        "string": "by"
-      }
-    },
-    "errors": {
-      "fields": {
-        "string": "Title, participants, and at least one time slot are required"
-      }
+    "AP_POLLS": {
+        "title": {
+            "string": "Sondages de planification"
+        },
+        "description": {
+            "string": "Create 'When are you free?' polls to find the best meeting time for internal and external participants."
+        },
+        "form": {
+            "create": {
+                "string": "Create Poll"
+            },
+            "cancel": {
+                "string": "Annuler"
+            },
+            "title": {
+                "string": "New Scheduling Poll"
+            },
+            "poll_title": {
+                "string": "Poll Title"
+            },
+            "title_hint": {
+                "string": "e.g. Q1 Planning Meetant"
+            },
+            "participants": {
+                "string": "Participants"
+            },
+            "description": {
+                "string": "Description"
+            },
+            "time_slots": {
+                "string": "Proposed Time Slots"
+            },
+            "add_slot": {
+                "string": "Add Slot"
+            },
+            "submit": {
+                "string": "Create Poll"
+            }
+        },
+        "create": {
+            "success": {
+                "string": "Poll created"
+            },
+            "error": {
+                "string": "Failed to create poll"
+            }
+        },
+        "list": {
+            "empty": {
+                "string": "No scheduling polls yet. Create one to find the best meeting time."
+            },
+            "by": {
+                "string": "by"
+            }
+        },
+        "errors": {
+            "fields": {
+                "string": "Title, participants, and at least one time slot are required"
+            }
+        }
     }
-  }
 }

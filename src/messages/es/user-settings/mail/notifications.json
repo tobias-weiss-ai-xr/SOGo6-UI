@@ -36,7 +36,7 @@
         },
         "placeholders": {
             "email": {
-                "string": "Añada dirección y pulse Enter"
+                "string": "Añada dirección y pulse Entor"
             },
             "message": {
                 "string": "Introduzca el mensaje"

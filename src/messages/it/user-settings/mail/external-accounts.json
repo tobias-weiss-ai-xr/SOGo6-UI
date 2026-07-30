@@ -1,267 +1,267 @@
 {
-  "US_MAIL_EXTERNAL_ACCOUNTS": {
-    "title": {
-      "string": "External Accounts"
-    },
-    "sections": {
-      "imap": {
-        "string": "Incoming Mail (IMAP)"
-      },
-      "smtp": {
-        "string": "Outgoing Mail (SMTP)"
-      },
-      "identity": {
-        "string": "Identities"
-      },
-      "preferences": {
-        "string": "Preferences"
-      },
-      "certificate": {
-        "string": "S/MIME Certificate"
-      },
-      "receipts": {
-        "string": "Receipts",
-        "description": "When I receive a request for a return receipt"
-      }
-    },
-    "list": {
-      "title": {
-        "string": "Your external Accounts"
-      },
-      "add_button": {
-        "string": "Add Account"
-      },
-      "edit_button": {
-        "string": "Edit"
-      },
-      "edit_button_aria": {
-        "string": "Edit account {email}"
-      },
-      "delete_button_aria": {
-        "string": "Delete account {email}"
-      },
-      "delete_confirm_title": {
-        "string": "{name}"
-      },
-      "delete_confirm_desc": {
-        "string": "Are you sure you want to delete {name}? This action cannot be undone."
-      },
-      "cancel_button": {
-        "string": "Cancel"
-      },
-      "confirm_delete_button": {
-        "string": "Delete"
-      },
-      "empty": {
-        "string": "No IMAP accounts configured yet. Add your first account to get started."
-      }
-    },
-    "edit": {
-      "title": {
-        "string": "Edit External Account"
-      },
-      "back_button": {
-        "string": "Back to list"
-      },
-      "readonly_notice": {
-        "string": "Most settings are read-only."
-      }
-    },
-    "new": {
-      "title": {
-        "string": "New External Account"
-      },
-      "description": {
-        "string": "Configure a new external IMAP account"
-      },
-      "back_button": {
-        "string": "Cancel"
-      },
-      "create_button": {
-        "string": "Create Account"
-      }
-    },
-    "labels": {
-      "name": "Name",
-      "email": "Email",
-      "replyTo": "Reply to",
-      "receipts": {
-        "never": "Never",
-        "always": "Always",
-        "ask": "Ask",
-        "neverSend": "Never send a return receipt",
-        "allowSome": "Allow return receipts for some messages",
-        "notToCc": "If I'm not in the To or Cc of the message",
-        "outsideDomain": "If the sender is outside my domain",
-        "other": "In all other cases"
-      },
-      "server": {
-        "string": "Server"
-      },
-      "port": {
-        "string": "Port"
-      },
-      "encryption": {
-        "string": "Encryption"
-      },
-      "authType": {
-        "string": "Authentication type"
-      },
-      "smtpServer": {
-        "string": "SMTP Server"
-      },
-      "smtpPort": {
-        "string": "Port"
-      },
-      "smtpAuth": {
-        "string": "SMTP Authentication"
-      },
-      "smtpEncryption": {
-        "string": "SMTP Encryption"
-      },
-      "username": {
-        "string": "Username"
-      },
-      "password": {
-        "string": "Password"
-      },
-      "useDefaultIdentity": {
-        "string": "Always use default identity for this account"
-      },
-      "readReceipts": {
-        "string": "Read Receipts"
-      },
-      "certificateName": {
-        "string": "Certificate Name"
-      },
-      "certificateFingerprint": {
-        "string": "Certificate Fingerprint"
-      },
-      "certificateFile": {
-        "string": "S/MIME Certificate File"
-      },
-      "certificatePassword": {
-        "string": "Certificate Import Password"
-      },
-      "selectedFile": {
-        "string": "Selected file"
-      }
-    },
-    "placeholders": {
-      "nameAccount": "Work account",
-      "imapServer": {
-        "string": "imap.example.com"
-      },
-      "smtpServer": {
-        "string": "smtp.example.com"
-      },
-      "username": {
-        "string": "user@example.com"
-      },
-      "password": {
-        "string": "Enter your password"
-      },
-      "certificateName": {
-        "string": "My S/MIME Certificate"
-      },
-      "certificateFingerprint": {
-        "string": "Auto-generated after certificate upload"
-      },
-      "certificatePassword": {
-        "string": "Enter certificate import password"
-      },
-      "signatureName": "Name"
-    },
-    "description": {
-      "useDefaultIdentity": {
-        "string": "When composing messages, your default identity will be used instead of the account-specific one"
-      },
-      "password": {
-        "string": "Your account password (stored securely)"
-      },
-      "certificateName": {
-        "string": "Name of the certificate"
-      },
-      "certificateFile": {
-        "string": "Upload your S/MIME certificate file"
-      },
-      "certificatePassword": {
-        "string": "Password required to import the certificate file"
-      }
-    },
-    "encryption": {
-      "none": {
-        "string": "None"
-      },
-      "ssl": {
-        "string": "SSL"
-      },
-      "tls": {
-        "string": "TLS"
-      }
-    },
-    "readReceipts": {
-      "never": {
-        "string": "Never send read receipts"
-      },
-      "selective": {
-        "string": "Allow sending read receipts for certain messages"
-      }
-    },
-    "aria": {
-      "show_password": {
-        "string": "Show password"
-      },
-      "hide_password": {
-        "string": "Hide password"
-      }
-    },
-    "tabs": {
-      "settings": {
-        "string": "Settings"
-      },
-      "security": {
-        "string": "Security"
-      }
-    },
-    "notifications": {
-      "success": {
+    "US_MAIL_EXTERNAL_ACCOUNTS": {
         "title": {
-          "string": "Success"
+            "string": "Account Esterni"
         },
-        "created": {
-          "string": "IMAP account created successfully"
+        "sections": {
+            "imap": {
+                "string": "Posta in arrivo (IMAP)"
+            },
+            "smtp": {
+                "string": "Posta in uscita (SMTP)"
+            },
+            "identity": {
+                "string": "Identità"
+            },
+            "preferences": {
+                "string": "Preferenze"
+            },
+            "certificate": {
+                "string": "Certificato S/MIME"
+            },
+            "receipts": {
+                "string": "Ricevute",
+                "description": "When I receive a request for a return receipt"
+            }
         },
-        "updated": {
-          "string": "IMAP account updated successfully"
+        "list": {
+            "title": {
+                "string": "I tuoi account esterni"
+            },
+            "add_button": {
+                "string": "Aggiungi account"
+            },
+            "edit_button": {
+                "string": "Modifica"
+            },
+            "edit_button_aria": {
+                "string": "Modifica account {email}"
+            },
+            "delete_button_aria": {
+                "string": "Elimina account {email}"
+            },
+            "delete_confirm_title": {
+                "string": "{name}"
+            },
+            "delete_confirm_desc": {
+                "string": "Sei sicuro di voler eliminare {name}? Questa azione non può essere annullata."
+            },
+            "cancel_button": {
+                "string": "Annulla"
+            },
+            "confirm_delete_button": {
+                "string": "Elimina"
+            },
+            "empty": {
+                "string": "Nessun account IMAP configurato ancora. Aggiungi il tuo primo account per iniziare."
+            }
         },
-        "deleted": {
-          "string": "Account deleted successfully"
+        "edit": {
+            "title": {
+                "string": "Modifica Account Esterno"
+            },
+            "back_button": {
+                "string": "Torna all'elenco"
+            },
+            "readonly_notice": {
+                "string": "La maggior parte delle impostazioni è in sola lettura."
+            }
+        },
+        "new": {
+            "title": {
+                "string": "Nuovo Account Esterno"
+            },
+            "description": {
+                "string": "Configura un nuovo account IMAP esterno"
+            },
+            "back_button": {
+                "string": "Annulla"
+            },
+            "create_button": {
+                "string": "Crea Account"
+            }
+        },
+        "labels": {
+            "name": "Nome",
+            "email": "Email",
+            "replyTo": "Rispondi a",
+            "receipts": {
+                "never": "Mai",
+                "always": "Sempre",
+                "ask": "Chiedi",
+                "neverSend": "Non inviare mai una ricevuta di ritorno",
+                "allowSome": "Consenti ricevute di ritorno per alcuni messaggi",
+                "notToCc": "Se non sono in To o Cc del messaggio",
+                "outsideDomain": "Se il mittente è al di fuori del mio dominio",
+                "other": "In tutti gli altri casi"
+            },
+            "server": {
+                "string": "Server"
+            },
+            "port": {
+                "string": "Porta"
+            },
+            "encryption": {
+                "string": "Crittografia"
+            },
+            "authType": {
+                "string": "Tipo di autenticazione"
+            },
+            "smtpServer": {
+                "string": "Server SMTP"
+            },
+            "smtpPort": {
+                "string": "Porta"
+            },
+            "smtpAuth": {
+                "string": "Autenticazione SMTP"
+            },
+            "smtpEncryption": {
+                "string": "Crittografia SMTP"
+            },
+            "username": {
+                "string": "Nome utente"
+            },
+            "password": {
+                "string": "Password"
+            },
+            "useDefaultIdentity": {
+                "string": "Usa sempre l'identità predefinita per questo account"
+            },
+            "readReceipts": {
+                "string": "Ricevute di lettura"
+            },
+            "certificateName": {
+                "string": "Nome certificato"
+            },
+            "certificateFingerprint": {
+                "string": "Impronta digitale certificato"
+            },
+            "certificateFile": {
+                "string": "File certificato S/MIME"
+            },
+            "certificatePassword": {
+                "string": "Password importazione certificato"
+            },
+            "selectedFile": {
+                "string": "File selezionato"
+            }
+        },
+        "placeholders": {
+            "nameAccount": "Account di lavoro",
+            "imapServer": {
+                "string": "imap.example.com"
+            },
+            "smtpServer": {
+                "string": "smtp.example.com"
+            },
+            "username": {
+                "string": "user@example.com"
+            },
+            "password": {
+                "string": "Inserisci la tua password"
+            },
+            "certificateName": {
+                "string": "Il mio certificato S/MIME"
+            },
+            "certificateFingerprint": {
+                "string": "Generato automaticamente dopo il caricamento del certificato"
+            },
+            "certificatePassword": {
+                "string": "Inserisci la password di importazione del certificato"
+            },
+            "signatureName": "Nome"
+        },
+        "description": {
+            "useDefaultIdentity": {
+                "string": "Durante la composizione dei messaggi, verrà utilizzata la tua identità predefinita invece di quella specifica dell'account"
+            },
+            "password": {
+                "string": "La password del tuo account (memorizzata in modo sicuro)"
+            },
+            "certificateName": {
+                "string": "Nome del certificato"
+            },
+            "certificateFile": {
+                "string": "Carica il file del certificato S/MIME"
+            },
+            "certificatePassword": {
+                "string": "Password necessaria per importare il file del certificato"
+            }
+        },
+        "encryption": {
+            "none": {
+                "string": "Nessuno"
+            },
+            "ssl": {
+                "string": "SSL"
+            },
+            "tls": {
+                "string": "TLS"
+            }
+        },
+        "readReceipts": {
+            "never": {
+                "string": "Non inviare mai ricevute di lettura"
+            },
+            "selective": {
+                "string": "Consenti l'invio di ricevute di lettura per alcuni messaggi"
+            }
+        },
+        "aria": {
+            "show_password": {
+                "string": "Mostra password"
+            },
+            "hide_password": {
+                "string": "Nascondi password"
+            }
+        },
+        "tabs": {
+            "settings": {
+                "string": "Impostazioni"
+            },
+            "security": {
+                "string": "Sicurezza"
+            }
+        },
+        "notifications": {
+            "success": {
+                "title": {
+                    "string": "Successo"
+                },
+                "created": {
+                    "string": "Account IMAP creato con successo"
+                },
+                "updated": {
+                    "string": "Account IMAP aggiornato con successo"
+                },
+                "deleted": {
+                    "string": "Account eliminato con successo"
+                }
+            },
+            "errors_api": {
+                "title": {
+                    "string": "Errore"
+                },
+                "load_failed": {
+                    "string": "Caricamento account esterni fallito. Riprova più tardi."
+                },
+                "create_failed": {
+                    "string": "Creazione account esterno fallita. Riprova."
+                },
+                "update_failed": {
+                    "string": "Aggiornamento account esterno fallito. Riprova."
+                },
+                "delete_failed": {
+                    "string": "Eliminazione account fallita. Riprova."
+                }
+            }
+        },
+        "validation": {
+            "required": "Obbligatorio",
+            "server-required": "L'indirizzo del server è obbligatorio",
+            "server-invalid": "Deve essere un hostname o indirizzo IP valido",
+            "port-required": "La porta è obbligatoria"
         }
-      },
-      "errors_api": {
-        "title": {
-          "string": "Error"
-        },
-        "load_failed": {
-          "string": "Failed to load external accounts. Please try again later."
-        },
-        "create_failed": {
-          "string": "Failed to create external account. Please try again."
-        },
-        "update_failed": {
-          "string": "Failed to update external account. Please try again."
-        },
-        "delete_failed": {
-          "string": "Failed to delete account. Please try again."
-        }
-      }
-    },
-    "validation": {
-      "required": "Required",
-      "server-required": "Server address is required",
-      "server-invalid": "Must be a valid hostname or IP address",
-      "port-required": "Port is required"
     }
-  }
 }

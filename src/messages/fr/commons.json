@@ -1,7 +1,7 @@
 {
     "COMMONS": {
         "close": {
-            "string": "Fermer"
+            "string": "Fermeur"
         },
         "workInProgress": {
             "description": {
@@ -41,7 +41,7 @@
                 "string": "L'application n'a pas pu se connecter au serveur. Veuillez réessayer plus tard ou contacter votre administrateur."
             },
             "retry": {
-                "string": "Réessayer"
+                "string": "Réessayeur"
             }
         }
     }

@@ -1,17 +1,17 @@
 {
     "COMMONS": {
         "close": {
-            "string": "Close"
+            "string": "Закрыть"
         },
         "workInProgress": {
             "description": {
-                "string": "This feature is currently under development."
+                "string": "Эта функция в настоящее время находится в разработке."
             },
             "message": {
-                "string": "We're working hard to bring you this feature."
+                "string": "Мы усердно работаем над тем, чтобы предоставить вам эту функцию."
             },
             "comingSoon": {
-                "string": "Coming soon! Stay tuned."
+                "string": "Скоро! Следите за обновлениями."
             }
         }
     },
@@ -19,13 +19,13 @@
         "demo": {
             "warning": {
                 "title": {
-                    "string": "Demo Version"
+                    "string": "Демо-версия"
                 },
                 "description": {
-                    "string": "You are currently using a demo version of the application. Some features may be limited."
+                    "string": "Вы используете демо-версию приложения. Некоторые функции могут быть ограничены."
                 },
                 "action": {
-                    "string": "Got it"
+                    "string": "Понятно"
                 }
             }
         },
@@ -35,13 +35,13 @@
         },
         "serviceUnavailable": {
             "title": {
-                "string": "Service unavailable"
+                "string": "Сервис недоступен"
             },
             "description": {
-                "string": "The application could not connect to the server. Please try again later or contact your administrator."
+                "string": "Приложению не удалось подключиться к серверу. Попробуйте позже или обратитесь к администратору."
             },
             "retry": {
-                "string": "Try again"
+                "string": "Повторить"
             }
         }
     }

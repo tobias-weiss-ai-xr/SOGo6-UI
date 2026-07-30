@@ -37,7 +37,7 @@
         },
         "placeholders": {
             "email": {
-                "string": "Añada dirección y pulse Enter"
+                "string": "Añada dirección y pulse Entor"
             }
         },
         "errors": {
@@ -106,10 +106,10 @@
                 "string": "Remove {email}"
             },
             "email_input_group": {
-                "string": "Email addresses for forwarding"
+                "string": "Email addresses for forwardando"
             },
             "toggle_forwarding": {
-                "string": "Toggle email forwarding"
+                "string": "Toggle email forwardando"
             }
         }
     }

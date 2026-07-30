@@ -51,10 +51,10 @@
         },
         "create": {
             "button": {
-                "string": "Create User"
+                "string": "Create Usor"
             },
             "title": {
-                "string": "Create New User"
+                "string": "Create New Usor"
             },
             "success": {
                 "string": "Usuario creado con éxito"
@@ -68,7 +68,7 @@
                 "string": "Editar"
             },
             "title": {
-                "string": "Edit User"
+                "string": "Edit Usor"
             },
             "save": {
                 "string": "Save Changes"

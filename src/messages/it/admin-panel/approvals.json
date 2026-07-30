@@ -1,1 +1,31 @@
-{ "AP_APPROVALS": { "title": { "string": "Approval Workflows" }, "description": { "string": "Create multi-step approval chains for purchase orders, announcements, and more." }, "form": { "create": { "string": "New Approval" }, "cancel": { "string": "Cancel" }, "title": { "string": "Create Approval Workflow" }, "workflow_title": { "string": "Title" }, "category": { "string": "Category" }, "description": { "string": "Description" }, "steps": { "string": "Approval Steps" }, "submit": { "string": "Create Workflow" } }, "create": { "success": { "string": "Workflow created" }, "error": { "string": "Failed to create" } }, "action": { "approved": { "string": "Step approved" }, "rejected": { "string": "Rejected" }, "error": { "string": "Action failed" } }, "list": { "empty": { "string": "No approval workflows yet." } }, "errors": { "fields": { "string": "Title and at least one step with email are required" } } }}
+{
+    "AP_APPROVALS": {
+        "title": { "string": "Flussi di Approvazione" },
+        "description": { "string": "Crea catene di approvazione multi-step per ordini di acquisto, annunci e altro." },
+        "form": {
+            "create": { "string": "Nuova Approvazione" },
+            "cancel": { "string": "Annulla" },
+            "title": { "string": "Crea Flusso di Approvazione" },
+            "workflow_title": { "string": "Titolo" },
+            "category": { "string": "Categoria" },
+            "description": { "string": "Descrizione" },
+            "steps": { "string": "Passaggi di Approvazione" },
+            "submit": { "string": "Crea Flusso" }
+        },
+        "create": {
+            "success": { "string": "Flusso creato" },
+            "error": { "string": "Creazione fallita" }
+        },
+        "action": {
+            "approved": { "string": "Passaggio approvato" },
+            "rejected": { "string": "Respinto" },
+            "error": { "string": "Azione fallita" }
+        },
+        "list": {
+            "empty": { "string": "Nessun flusso di approvazione ancora." }
+        },
+        "errors": {
+            "fields": { "string": "Titolo e almeno un passaggio con email sono obbligatori" }
+        }
+    }
+}

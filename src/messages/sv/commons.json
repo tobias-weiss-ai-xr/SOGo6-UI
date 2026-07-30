@@ -1,17 +1,17 @@
 {
     "COMMONS": {
         "close": {
-            "string": "Close"
+            "string": "Stäng"
         },
         "workInProgress": {
             "description": {
-                "string": "This feature is currently under development."
+                "string": "Denna funktion är för närvarande under utveckling."
             },
             "message": {
-                "string": "We're working hard to bring you this feature."
+                "string": "Vi arbetar hårt för att ta fram denna funktion."
             },
             "comingSoon": {
-                "string": "Coming soon! Stay tuned."
+                "string": "Kommer snart! Håll utkik."
             }
         }
     },
@@ -19,13 +19,13 @@
         "demo": {
             "warning": {
                 "title": {
-                    "string": "Demo Version"
+                    "string": "Demoversion"
                 },
                 "description": {
-                    "string": "You are currently using a demo version of the application. Some features may be limited."
+                    "string": "Du använder för närvarande en demoversion av applikationen. Vissa funktioner kan vara begränsade."
                 },
                 "action": {
-                    "string": "Got it"
+                    "string": "Jag förstår"
                 }
             }
         },
@@ -35,13 +35,13 @@
         },
         "serviceUnavailable": {
             "title": {
-                "string": "Service unavailable"
+                "string": "Tjänsten är inte tillgänglig"
             },
             "description": {
-                "string": "The application could not connect to the server. Please try again later or contact your administrator."
+                "string": "Applikationen kunde inte ansluta till servern. Försök igen senare eller kontakta din administratör."
             },
             "retry": {
-                "string": "Try again"
+                "string": "Försök igen"
             }
         }
     }

@@ -54,7 +54,7 @@
                     "context": "Description for the passkey registration dialog"
                 },
                 "button": {
-                    "string": "Register",
+                    "string": "Registor",
                     "context": "Button to start passkey registration"
                 },
                 "waiting": {

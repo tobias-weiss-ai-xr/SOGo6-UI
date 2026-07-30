@@ -11,7 +11,7 @@
                 "string": "Rechercher par nom, e-mail ou UID..."
             },
             "clear": {
-                "string": "Effacer"
+                "string": "Effaceur"
             }
         },
         "table": {
@@ -51,10 +51,10 @@
         },
         "create": {
             "button": {
-                "string": "Create User"
+                "string": "Create Useur"
             },
             "title": {
-                "string": "Create New User"
+                "string": "Create New Useur"
             },
             "success": {
                 "string": "Utilisateur créé avec succès"
@@ -65,10 +65,10 @@
         },
         "edit": {
             "button": {
-                "string": "Modifier"
+                "string": "Modifieur"
             },
             "title": {
-                "string": "Edit User"
+                "string": "Edit Useur"
             },
             "save": {
                 "string": "Save Changes"
@@ -82,7 +82,7 @@
         },
         "delete": {
             "button": {
-                "string": "Supprimer"
+                "string": "Supprimeur"
             },
             "confirm": {
                 "string": "Êtes-vous sûr de vouloir supprimer {uid} ?"

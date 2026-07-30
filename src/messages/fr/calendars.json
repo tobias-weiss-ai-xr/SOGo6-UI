@@ -5,23 +5,23 @@
         },
         "attendance": {
             "accepted": {
-                "string": "Accepter"
+                "string": "Accepteur"
             },
             "declined": {
-                "string": "Refuser"
+                "string": "Refuseur"
             },
             "tentative": {
                 "string": "Peut-être"
             },
             "delegated": {
-                "string": "Déléguer"
+                "string": "Délégueur"
             },
             "success": {
                 "accepted": {
-                    "string": "Vous avez accepté cet événement"
+                    "string": "Vous avez accepté cet événeement"
                 },
                 "declined": {
-                    "string": "Vous avez refusé cet événement"
+                    "string": "Vous avez refusé cet événeement"
                 },
                 "tentative": {
                     "string": "Marqué comme peut-être"
@@ -53,7 +53,7 @@
                 "string": "All events"
             },
             "cancel": {
-                "string": "Annuler"
+                "string": "Annuleur"
             }
         },
         "toolbar": {
@@ -279,7 +279,7 @@
                 "string": "Video Conference"
             },
             "joinMeeting": {
-                "string": "Join Meeting"
+                "string": "Join Meetant"
             },
             "reminders": {
                 "string": "Reminders"
@@ -521,7 +521,7 @@
                     "string": "Couleur"
                 },
                 "reset": {
-                    "string": "Réinitialiser"
+                    "string": "Réinitialiseur"
                 }
             },
             "categories": {
@@ -529,7 +529,7 @@
                     "string": "Catégories"
                 },
                 "placeholder": {
-                    "string": "Add a category and press Enter"
+                    "string": "Add a category and press Enteur"
                 },
                 "remove": {
                     "string": "Remove {category}"
@@ -608,13 +608,13 @@
                     "string": "Reminders"
                 },
                 "add": {
-                    "string": "Add reminder"
+                    "string": "Add remindeur"
                 },
                 "minutesBefore": {
                     "string": "min before"
                 },
                 "remove": {
-                    "string": "Remove reminder"
+                    "string": "Remove remindeur"
                 },
                 "methods": {
                     "popup": {
@@ -627,7 +627,7 @@
             },
             "recurrence": {
                 "repeat": {
-                    "string": "Répéter"
+                    "string": "Répéteur"
                 },
                 "every": {
                     "string": "Every"
@@ -705,7 +705,7 @@
                 }
             },
             "cancel": {
-                "string": "Annuler"
+                "string": "Annuleur"
             },
             "create": {
                 "string": "Create Event"
@@ -716,7 +716,7 @@
         },
         "common": {
             "cancel": {
-                "string": "Annuler"
+                "string": "Annuleur"
             }
         },
         "forms": {
@@ -782,7 +782,7 @@
                     "string": "e-mail"
                 },
                 "delete": {
-                    "string": "Supprimer"
+                    "string": "Supprimeur"
                 },
                 "at": {
                     "string": "à"
@@ -808,7 +808,7 @@
                     "string": "Create Calendar"
                 },
                 "cancel": {
-                    "string": "Annuler"
+                    "string": "Annuleur"
                 }
             },
             "editCalendar": {
@@ -867,7 +867,7 @@
                     "string": "e-mail"
                 },
                 "delete": {
-                    "string": "Supprimer"
+                    "string": "Supprimeur"
                 },
                 "at": {
                     "string": "à"
@@ -890,7 +890,7 @@
                     "string": "Save Changes"
                 },
                 "cancel": {
-                    "string": "Annuler"
+                    "string": "Annuleur"
                 }
             },
             "editEvent": {
@@ -905,7 +905,7 @@
                         "string": "Cette action est irréversible."
                     },
                     "button": {
-                        "string": "Supprimer"
+                        "string": "Supprimeur"
                     }
                 }
             },
@@ -917,22 +917,22 @@
                     "string": "Are you sure you want to delete this calendar? This action cannot be undone."
                 },
                 "confirm": {
-                    "string": "Supprimer"
+                    "string": "Supprimeur"
                 },
                 "cancel": {
-                    "string": "Annuler"
+                    "string": "Annuleur"
                 }
             }
         },
         "share": {
             "title": {
-                "string": "Calendar Sharing"
+                "string": "Calendar Sharant"
             },
             "description": {
                 "string": "Share this calendar with other users. Shared users can see events based on the permission level you grant."
             },
             "addUser": {
-                "string": "Add User"
+                "string": "Add Useur"
             },
             "searchPlaceholder": {
                 "string": "Search by name or email..."
@@ -953,7 +953,7 @@
                 "string": "Failed to remove share"
             },
             "removeButton": {
-                "string": "Supprimer"
+                "string": "Supprimeur"
             },
             "existingShares": {
                 "string": "Partagé avec"

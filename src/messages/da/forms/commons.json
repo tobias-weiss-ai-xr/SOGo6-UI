@@ -2,31 +2,31 @@
     "FORM_COMMONS": {
         "save": {
             "default": {
-                "string": "Save",
+                "string": "Gem",
                 "description": "Click to save the form data."
             }
         },
         "delete": {
             "default": {
-                "string": "Delete",
+                "string": "Slet",
                 "description": "Click to delete the selected item."
             }
         },
         "edit": {
             "default": {
-                "string": "Edit",
+                "string": "Rediger",
                 "description": "Click to edit the selected item."
             }
         },
         "cancel": {
             "default": {
-                "string": "Cancel",
+                "string": "Annuller",
                 "description": "Click to cancel the form submission."
             }
         },
         "create": {
             "default": {
-                "string": "Create",
+                "string": "Opret",
                 "description": "Click to create a new item."
             }
         },

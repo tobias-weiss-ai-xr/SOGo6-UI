@@ -1,17 +1,17 @@
 {
     "COMMONS": {
         "close": {
-            "string": "Close"
+            "string": "Đóng"
         },
         "workInProgress": {
             "description": {
-                "string": "This feature is currently under development."
+                "string": "Tính năng này hiện đang được phát triển."
             },
             "message": {
-                "string": "We're working hard to bring you this feature."
+                "string": "Chúng tôi đang nỗ lực để mang đến tính năng này cho bạn."
             },
             "comingSoon": {
-                "string": "Coming soon! Stay tuned."
+                "string": "Sắp ra mắt! Hãy theo dõi."
             }
         }
     },
@@ -19,13 +19,13 @@
         "demo": {
             "warning": {
                 "title": {
-                    "string": "Demo Version"
+                    "string": "Phiên bản dùng thử"
                 },
                 "description": {
-                    "string": "You are currently using a demo version of the application. Some features may be limited."
+                    "string": "Bạn đang sử dụng phiên bản dùng thử của ứng dụng. Một số tính năng có thể bị giới hạn."
                 },
                 "action": {
-                    "string": "Got it"
+                    "string": "Đã hiểu"
                 }
             }
         },
@@ -35,13 +35,13 @@
         },
         "serviceUnavailable": {
             "title": {
-                "string": "Service unavailable"
+                "string": "Dịch vụ không khả dụng"
             },
             "description": {
-                "string": "The application could not connect to the server. Please try again later or contact your administrator."
+                "string": "Ứng dụng không thể kết nối đến máy chủ. Vui lòng thử lại sau hoặc liên hệ quản trị viên của bạn."
             },
             "retry": {
-                "string": "Try again"
+                "string": "Thử lại"
             }
         }
     }

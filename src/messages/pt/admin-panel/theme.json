@@ -1,135 +1,135 @@
 {
-  "AP_THEME": {
-    "title": {
-      "string": "Theme Settings"
-    },
-    "description": {
-      "string": "Customize the look and feel of the SOGo interface"
-    },
-    "form_title": {
-      "string": "Custom Theme"
-    },
-    "form_description": {
-      "string": "Configure colors, logo, and custom CSS for the groupware interface"
-    },
-    "fields": {
-      "primary": {
-        "label": {
-          "string": "Primary Color"
+    "AP_THEME": {
+        "title": {
+            "string": "Theme Settings"
         },
         "description": {
-          "string": "HSL values for the primary color (e.g. 180 25% 40%)"
-        }
-      },
-      "primary_foreground": {
-        "label": {
-          "string": "Primary Foreground"
+            "string": "Customize the look and feel of the SOGo interface"
         },
-        "description": {
-          "string": "Text color on primary backgrounds"
-        }
-      },
-      "background": {
-        "label": {
-          "string": "Background"
+        "form_title": {
+            "string": "Custom Theme"
         },
-        "description": {
-          "string": "HSL values for the page background"
-        }
-      },
-      "foreground": {
-        "label": {
-          "string": "Foreground"
+        "form_description": {
+            "string": "Configure colors, logo, and custom CSS for the groupware interface"
         },
-        "description": {
-          "string": "Default text color"
-        }
-      },
-      "sidebar_background": {
-        "label": {
-          "string": "Sidebar Background"
+        "fields": {
+            "primary": {
+                "label": {
+                    "string": "Primary Color"
+                },
+                "description": {
+                    "string": "HSL values for the primary color (e.g. 180 25% 40%)"
+                }
+            },
+            "primary_foreground": {
+                "label": {
+                    "string": "Primary Foreground"
+                },
+                "description": {
+                    "string": "Text color on primary backgrounds"
+                }
+            },
+            "background": {
+                "label": {
+                    "string": "Background"
+                },
+                "description": {
+                    "string": "HSL values for the page background"
+                }
+            },
+            "foreground": {
+                "label": {
+                    "string": "Foreground"
+                },
+                "description": {
+                    "string": "Default text color"
+                }
+            },
+            "sidebar_background": {
+                "label": {
+                    "string": "Sidebar Background"
+                },
+                "description": {
+                    "string": "HSL values for the sidebar background"
+                }
+            },
+            "sidebar_foreground": {
+                "label": {
+                    "string": "Sidebar Foreground"
+                },
+                "description": {
+                    "string": "Text color in the sidebar"
+                }
+            },
+            "sidebar_primary": {
+                "label": {
+                    "string": "Sidebar Primary"
+                },
+                "description": {
+                    "string": "Primary accent color in the sidebar"
+                }
+            },
+            "sidebar_accent": {
+                "label": {
+                    "string": "Sidebar Accent"
+                },
+                "description": {
+                    "string": "Accent color in the sidebar"
+                }
+            },
+            "header_background": {
+                "label": {
+                    "string": "Header Background"
+                },
+                "description": {
+                    "string": "HSL values for the top header bar"
+                }
+            },
+            "header_foreground": {
+                "label": {
+                    "string": "Header Foreground"
+                },
+                "description": {
+                    "string": "Text color in the heador"
+                }
+            },
+            "logo_url": {
+                "label": {
+                    "string": "Logo URL"
+                },
+                "description": {
+                    "string": "URL of the custom logo image (optional)"
+                }
+            },
+            "custom_css": {
+                "label": {
+                    "string": "Custom CSS"
+                },
+                "description": {
+                    "string": "Additional CSS rules to inject (optional)"
+                }
+            }
         },
-        "description": {
-          "string": "HSL values for the sidebar background"
-        }
-      },
-      "sidebar_foreground": {
-        "label": {
-          "string": "Sidebar Foreground"
+        "save": {
+            "string": "Save Changes"
         },
-        "description": {
-          "string": "Text color in the sidebar"
-        }
-      },
-      "sidebar_primary": {
-        "label": {
-          "string": "Sidebar Primary"
+        "saving": {
+            "string": "Saving…"
         },
-        "description": {
-          "string": "Primary accent color in the sidebar"
-        }
-      },
-      "sidebar_accent": {
-        "label": {
-          "string": "Sidebar Accent"
+        "saved": {
+            "string": "Theme settings saved successfulmente"
         },
-        "description": {
-          "string": "Accent color in the sidebar"
-        }
-      },
-      "header_background": {
-        "label": {
-          "string": "Header Background"
+        "save_error": {
+            "string": "Failed to save: {message}"
         },
-        "description": {
-          "string": "HSL values for the top header bar"
-        }
-      },
-      "header_foreground": {
-        "label": {
-          "string": "Header Foreground"
+        "unsaved_changes": {
+            "string": "You have unsaved changes"
         },
-        "description": {
-          "string": "Text color in the header"
-        }
-      },
-      "logo_url": {
-        "label": {
-          "string": "Logo URL"
+        "load_error": {
+            "string": "Failed to load theme settings"
         },
-        "description": {
-          "string": "URL of the custom logo image (optional)"
+        "retry": {
+            "string": "Retry"
         }
-      },
-      "custom_css": {
-        "label": {
-          "string": "Custom CSS"
-        },
-        "description": {
-          "string": "Additional CSS rules to inject (optional)"
-        }
-      }
-    },
-    "save": {
-      "string": "Save Changes"
-    },
-    "saving": {
-      "string": "Saving…"
-    },
-    "saved": {
-      "string": "Theme settings saved successfully"
-    },
-    "save_error": {
-      "string": "Failed to save: {message}"
-    },
-    "unsaved_changes": {
-      "string": "You have unsaved changes"
-    },
-    "load_error": {
-      "string": "Failed to load theme settings"
-    },
-    "retry": {
-      "string": "Retry"
     }
-  }
 }

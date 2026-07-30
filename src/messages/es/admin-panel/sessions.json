@@ -46,7 +46,7 @@
                 "string": "Sesión revocada con éxito"
             },
             "success_multiple": {
-                "string": "{count} sessions revoked successfully"
+                "string": "{count} sessions revoked successfulmente"
             },
             "error": {
                 "string": "Error al revocar sesión"

@@ -1,39 +1,39 @@
 {
   "MAIL_SNOOZE": {
     "title": {
-      "string": "Snooze"
+      "string": "Reporter"
     },
     "description": {
-      "string": "Choose when this email should reappear in your inbox."
+      "string": "Choisissez quand ce courriel doit réapparaître dans votre boîte de réception."
     },
     "presets": {
       "later_today": {
-        "string": "Later today"
+        "string": "Plus tard aujourd'hui"
       },
       "tomorrow": {
-        "string": "Tomorrow"
+        "string": "Demain"
       },
       "this_weekend": {
-        "string": "This weekend"
+        "string": "Ce week-end"
       },
       "next_week": {
-        "string": "Next week"
+        "string": "Semaine prochaine"
       }
     },
     "pick_date": {
-      "string": "Pick a date & time"
+      "string": "Choisir une date et une heure"
     },
     "pick_date_placeholder": {
-      "string": "Select date..."
+      "string": "Sélectionner une date..."
     },
     "snooze_button": {
-      "string": "Snooze"
+      "string": "Reporter"
     },
     "success": {
-      "string": "Email snoozed"
+      "string": "Courriel reporté"
     },
     "error": {
-      "string": "Failed to snooze email"
+      "string": "Échec du report du courriel"
     }
   }
 }

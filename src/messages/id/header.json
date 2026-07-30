@@ -64,7 +64,7 @@
         },
         "settings": {
             "title": {
-                "string": "Settings",
+                "string": "Pengaturan",
                 "context": "Section title for the header dropdown"
             },
             "general": {
@@ -72,7 +72,7 @@
                 "context": "Link to the general settings in the header dropdown"
             },
             "calendar": {
-                "string": "Calendar",
+                "string": "Kalender",
                 "context": "Link to the calendar settings in the header dropdown"
             },
             "address_books": {

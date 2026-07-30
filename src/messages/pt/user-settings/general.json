@@ -33,13 +33,13 @@
                 "string": "General settings saved"
             },
             "mail": {
-                "string": "Mail"
+                "string": "Email"
             },
             "calendar": {
-                "string": "Calendar"
+                "string": "Calendário"
             },
             "contacts": {
-                "string": "Contacts"
+                "string": "Contatos"
             },
             "last": {
                 "string": "Last displayed module"

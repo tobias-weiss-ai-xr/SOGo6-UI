@@ -1,135 +1,135 @@
 {
-  "AP_THEME": {
-    "title": {
-      "string": "Theme Settings"
-    },
-    "description": {
-      "string": "Customize the look and feel of the SOGo interface"
-    },
-    "form_title": {
-      "string": "Custom Theme"
-    },
-    "form_description": {
-      "string": "Configure colors, logo, and custom CSS for the groupware interface"
-    },
-    "fields": {
-      "primary": {
-        "label": {
-          "string": "Primary Color"
+    "AP_THEME": {
+        "title": {
+            "string": "Impostazioni Tema"
         },
         "description": {
-          "string": "HSL values for the primary color (e.g. 180 25% 40%)"
-        }
-      },
-      "primary_foreground": {
-        "label": {
-          "string": "Primary Foreground"
+            "string": "Personalizza l'aspetto dell'interfaccia SOGo"
         },
-        "description": {
-          "string": "Text color on primary backgrounds"
-        }
-      },
-      "background": {
-        "label": {
-          "string": "Background"
+        "form_title": {
+            "string": "Tema Personalizzato"
         },
-        "description": {
-          "string": "HSL values for the page background"
-        }
-      },
-      "foreground": {
-        "label": {
-          "string": "Foreground"
+        "form_description": {
+            "string": "Configura colori, logo e CSS personalizzati per l'interfaccia"
         },
-        "description": {
-          "string": "Default text color"
-        }
-      },
-      "sidebar_background": {
-        "label": {
-          "string": "Sidebar Background"
+        "fields": {
+            "primary": {
+                "label": {
+                    "string": "Colore Primario"
+                },
+                "description": {
+                    "string": "Valori HSL per il colore primario (es. 180 25% 40%)"
+                }
+            },
+            "primary_foreground": {
+                "label": {
+                    "string": "Primario - Primo Piano"
+                },
+                "description": {
+                    "string": "Colore del testo sugli sfondi primari"
+                }
+            },
+            "background": {
+                "label": {
+                    "string": "Sfondo"
+                },
+                "description": {
+                    "string": "Valori HSL per lo sfondo della pagina"
+                }
+            },
+            "foreground": {
+                "label": {
+                    "string": "Primo Piano"
+                },
+                "description": {
+                    "string": "Colore predefinito del testo"
+                }
+            },
+            "sidebar_background": {
+                "label": {
+                    "string": "Sfondo Barra Laterale"
+                },
+                "description": {
+                    "string": "Valori HSL per lo sfondo della barra laterale"
+                }
+            },
+            "sidebar_foreground": {
+                "label": {
+                    "string": "Testo Barra Laterale"
+                },
+                "description": {
+                    "string": "Colore del testo nella barra laterale"
+                }
+            },
+            "sidebar_primary": {
+                "label": {
+                    "string": "Primario Barra Laterale"
+                },
+                "description": {
+                    "string": "Colore di accento primario nella barra laterale"
+                }
+            },
+            "sidebar_accent": {
+                "label": {
+                    "string": "Accento Barra Laterale"
+                },
+                "description": {
+                    "string": "Colore di accento nella barra laterale"
+                }
+            },
+            "header_background": {
+                "label": {
+                    "string": "Sfondo Intestazione"
+                },
+                "description": {
+                    "string": "Valori HSL per la barra dell'intestazione superiore"
+                }
+            },
+            "header_foreground": {
+                "label": {
+                    "string": "Testo Intestazione"
+                },
+                "description": {
+                    "string": "Colore del testo nell'intestazione"
+                }
+            },
+            "logo_url": {
+                "label": {
+                    "string": "URL Logo"
+                },
+                "description": {
+                    "string": "URL dell'immagine del logo personalizzato (opzionale)"
+                }
+            },
+            "custom_css": {
+                "label": {
+                    "string": "CSS Personalizzato"
+                },
+                "description": {
+                    "string": "Regole CSS aggiuntive da iniettare (opzionale)"
+                }
+            }
         },
-        "description": {
-          "string": "HSL values for the sidebar background"
-        }
-      },
-      "sidebar_foreground": {
-        "label": {
-          "string": "Sidebar Foreground"
+        "save": {
+            "string": "Salva Modifiche"
         },
-        "description": {
-          "string": "Text color in the sidebar"
-        }
-      },
-      "sidebar_primary": {
-        "label": {
-          "string": "Sidebar Primary"
+        "saving": {
+            "string": "Salvataggio in corso…"
         },
-        "description": {
-          "string": "Primary accent color in the sidebar"
-        }
-      },
-      "sidebar_accent": {
-        "label": {
-          "string": "Sidebar Accent"
+        "saved": {
+            "string": "Impostazioni tema salvate con successo"
         },
-        "description": {
-          "string": "Accent color in the sidebar"
-        }
-      },
-      "header_background": {
-        "label": {
-          "string": "Header Background"
+        "save_error": {
+            "string": "Salvataggio fallito: {message}"
         },
-        "description": {
-          "string": "HSL values for the top header bar"
-        }
-      },
-      "header_foreground": {
-        "label": {
-          "string": "Header Foreground"
+        "unsaved_changes": {
+            "string": "Ci sono modifiche non salvate"
         },
-        "description": {
-          "string": "Text color in the header"
-        }
-      },
-      "logo_url": {
-        "label": {
-          "string": "Logo URL"
+        "load_error": {
+            "string": "Caricamento impostazioni tema fallito"
         },
-        "description": {
-          "string": "URL of the custom logo image (optional)"
+        "retry": {
+            "string": "Riprova"
         }
-      },
-      "custom_css": {
-        "label": {
-          "string": "Custom CSS"
-        },
-        "description": {
-          "string": "Additional CSS rules to inject (optional)"
-        }
-      }
-    },
-    "save": {
-      "string": "Save Changes"
-    },
-    "saving": {
-      "string": "Saving…"
-    },
-    "saved": {
-      "string": "Theme settings saved successfully"
-    },
-    "save_error": {
-      "string": "Failed to save: {message}"
-    },
-    "unsaved_changes": {
-      "string": "You have unsaved changes"
-    },
-    "load_error": {
-      "string": "Failed to load theme settings"
-    },
-    "retry": {
-      "string": "Retry"
     }
-  }
 }

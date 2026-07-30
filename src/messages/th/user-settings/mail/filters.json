@@ -186,10 +186,10 @@
                     "string": "This filter will be removed when you save your changes."
                 },
                 "confirm": {
-                    "string": "Delete"
+                    "string": "ลบ"
                 },
                 "cancel": {
-                    "string": "Cancel"
+                    "string": "ยกเลิก"
                 }
             }
         },

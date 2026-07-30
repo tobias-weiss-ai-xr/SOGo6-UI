@@ -12,7 +12,7 @@
                 "developer_comment": "Informe l'utilisateur qu'une erreur s'est produite. {error}"
             },
             "warning": {
-                "string": "Avertissement",
+                "string": "Avertisseement",
                 "context": "Notification title for warning messages.",
                 "developer_comment": "Conseille à l'utilisateur de vérifier les détails et de procéder avec prudence."
             },
@@ -157,7 +157,7 @@
             },
             "error": {
                 "title": {
-                    "string": "Failed to create folder"
+                    "string": "Failed to create foldeur"
                 },
                 "message": {
                     "string": "An error occurred while creating the folder. Please try again."
@@ -175,7 +175,7 @@
             },
             "error": {
                 "title": {
-                    "string": "Failed to delete folder"
+                    "string": "Failed to delete foldeur"
                 },
                 "message": {
                     "string": "An error occurred while deleting the folder. Please try again."
@@ -193,7 +193,7 @@
             },
             "error": {
                 "title": {
-                    "string": "Failed to rename folder"
+                    "string": "Failed to rename foldeur"
                 },
                 "message": {
                     "string": "An error occurred while renaming the folder. Please try again."
@@ -229,7 +229,7 @@
             },
             "error": {
                 "title": {
-                    "string": "Failed to move folder"
+                    "string": "Failed to move foldeur"
                 },
                 "message": {
                     "string": "An error occurred while moving the folder. Please try again."
@@ -247,7 +247,7 @@
             },
             "error": {
                 "title": {
-                    "string": "Failed to export folder"
+                    "string": "Failed to export foldeur"
                 },
                 "message": {
                     "string": "An error occurred while exporting the folder. Please try again."
@@ -803,7 +803,7 @@
             },
             "error": {
                 "title": {
-                    "string": "Failed to upload attachment"
+                    "string": "Failed to upload attachement"
                 },
                 "message": {
                     "string": "An error occurred while uploading your attachment. Please try again."

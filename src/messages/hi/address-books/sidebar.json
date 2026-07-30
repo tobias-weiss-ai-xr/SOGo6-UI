@@ -99,7 +99,7 @@
                 "string": "Failed to remove share"
             },
             "removeButton": {
-                "string": "Remove"
+                "string": "निकालना"
             },
             "existingShares": {
                 "string": "Shared with"
@@ -173,7 +173,7 @@
                 "string": "Import completed. Created: {counts}."
             },
             "close": {
-                "string": "Close"
+                "string": "बंद करें"
             }
         },
         "export": {
@@ -196,7 +196,7 @@
                 "string": "Export completed. Your download should start shortly."
             },
             "close": {
-                "string": "Close"
+                "string": "बंद करें"
             }
         }
     }

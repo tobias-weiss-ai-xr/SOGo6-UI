@@ -1,39 +1,39 @@
 {
     "MAIL_SNOOZE": {
         "title": {
-            "string": "Snooze"
+            "string": "Posticipa"
         },
         "description": {
-            "string": "Choose when this email should reappear in your inbox."
+            "string": "Scegli quando questa email dovrebbe riapparire nella tua casella di posta."
         },
         "presets": {
             "later_today": {
-                "string": "Later today"
+                "string": "Più tardi oggi"
             },
             "tomorrow": {
-                "string": "Tomorrow"
+                "string": "Domani"
             },
             "this_weekend": {
-                "string": "This weekend"
+                "string": "Questo fine settimana"
             },
             "next_week": {
-                "string": "Next week"
+                "string": "La prossima settimana"
             }
         },
         "pick_date": {
-            "string": "Pick a date & time"
+            "string": "Scegli data e ora"
         },
         "pick_date_placeholder": {
-            "string": "Select date..."
+            "string": "Seleziona data..."
         },
         "snooze_button": {
-            "string": "Snooze"
+            "string": "Posticipa"
         },
         "success": {
-            "string": "Email snoozed"
+            "string": "Email posticipata"
         },
         "error": {
-            "string": "Failed to snooze email"
+            "string": "Impossibile posticipare l'email"
         }
     }
 }

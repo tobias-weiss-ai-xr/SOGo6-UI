@@ -1,127 +1,129 @@
 {
   "ADMIN_PANNEL_RULE": {
     "title": {
-      "string": "Rules"
+      "string": "Regole"
     },
     "filter_placeholder": {
-      "string": "Filter rules..."
+      "string": "Filtra regole..."
     },
-    "add_new_rule": { "string": "Add new rule" },
+    "add_new_rule": {
+      "string": "Aggiungi nuova regola"
+    },
     "select_all": {
-      "string": "Select all"
+      "string": "Seleziona tutto"
     },
     "select_row": {
-      "string": "Select row"
+      "string": "Seleziona riga"
     },
     "domain": {
-      "string": "Domain"
+      "string": "Dominio"
     },
     "open_menu": {
-      "string": "Open menu"
+      "string": "Apri menu"
     },
     "actions": {
-      "string": "Actions"
+      "string": "Azioni"
     },
     "copy_domain": {
-      "string": "Copy domain name"
+      "string": "Copia nome dominio"
     },
     "edit": {
-      "string": "Edit"
+      "string": "Modifica"
     },
     "delete": {
-      "string": "Delete"
+      "string": "Elimina"
     }
   },
   "AP_RULES": {
     "title": {
-      "string": "Rules"
+      "string": "Regole"
     },
     "description": {
-      "string": "Manage configuration rules for domains"
+      "string": "Gestisci regole di configurazione per i domini"
     },
     "search": {
       "placeholder": {
-        "string": "Search rules..."
+        "string": "Cerca regole..."
       }
     },
     "create": {
       "button": {
-        "string": "New Rule"
+        "string": "Nuova Regola"
       },
       "title": {
-        "string": "Create Rule"
+        "string": "Crea Regola"
       },
       "description": {
-        "string": "Add a new configuration rule"
+        "string": "Aggiungi una nuova regola di configurazione"
       },
       "success": {
-        "string": "Rule created successfully"
+        "string": "Regola creata con successo"
       },
       "error": {
-        "string": "Failed to create rule"
+        "string": "Creazione regola fallita"
       },
       "name_required": {
-        "string": "Rule name is required"
+        "string": "Il nome della regola è obbligatorio"
       }
     },
     "edit": {
       "button": {
-        "string": "Edit"
+        "string": "Modifica"
       },
       "title": {
-        "string": "Edit Rule"
+        "string": "Modifica Regola"
       },
       "description": {
-        "string": "Update rule: {name}"
+        "string": "Aggiorna regola: {name}"
       },
       "save": {
-        "string": "Save Changes"
+        "string": "Salva Modifiche"
       },
       "success": {
-        "string": "Rule updated successfully"
+        "string": "Regola aggiornata con successo"
       },
       "error": {
-        "string": "Failed to update rule"
+        "string": "Aggiornamento regola fallito"
       }
     },
     "delete": {
       "button": {
-        "string": "Delete"
+        "string": "Elimina"
       },
       "title": {
-        "string": "Delete Rule"
+        "string": "Elimina Regola"
       },
       "confirm": {
-        "string": "Are you sure you want to delete rule \"{name}\"?"
+        "string": "Sei sicuro di voler eliminare la regola \"{name}\"?"
       },
       "success": {
-        "string": "Rule deleted successfully"
+        "string": "Regola eliminata con successo"
       },
       "error": {
-        "string": "Failed to delete rule"
+        "string": "Eliminazione regola fallita"
       }
     },
     "form": {
       "name": {
-        "string": "Rule Name"
+        "string": "Nome Regola"
       },
       "name_placeholder": {
-        "string": "e.g. French LDAP Rules"
+        "string": "es. Regole LDAP Francia"
       },
       "description": {
-        "string": "Description"
+        "string": "Descrizione"
       },
       "description_placeholder": {
-        "string": "Optional description of this rule"
+        "string": "Descrizione opzionale di questa regola"
       },
       "domains": {
-        "string": "Affected Domains"
+        "string": "Domini Interessati"
       },
       "domains_placeholder": {
         "string": "example.org, domain2.org"
       },
       "domains_hint": {
-        "string": "Comma-separated list of domain names. Leave empty for all domains."
+        "string": "Elenco separato da virgole di nomi di dominio. Lascia vuoto per tutti i domini."
       }
     },
     "table": {
@@ -129,17 +131,17 @@
         "string": "ID"
       },
       "name": {
-        "string": "Name"
+        "string": "Nome"
       },
       "actions": {
-        "string": "Actions"
+        "string": "Azioni"
       }
     },
     "no_rules": {
-      "string": "No rules configured yet"
+      "string": "Nessuna regola ancora configurata"
     },
     "no_results": {
-      "string": "No rules match your search"
+      "string": "Nessuna regola corrisponde alla tua ricerca"
     }
   }
 }

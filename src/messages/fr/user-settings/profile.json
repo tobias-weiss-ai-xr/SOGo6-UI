@@ -40,7 +40,7 @@
                 "string": "Erreur"
             },
             "loading": {
-                "string": "Chargement"
+                "string": "Chargeement"
             },
             "load_failed": {
                 "string": "Failed to load profile. Please try again later."

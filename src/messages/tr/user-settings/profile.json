@@ -37,7 +37,7 @@
         "identities": {},
         "api": {
             "title": {
-                "string": "Error"
+                "string": "Hata"
             },
             "loading": {
                 "string": "Loading"

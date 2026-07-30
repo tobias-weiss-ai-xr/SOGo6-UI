@@ -96,28 +96,28 @@
                 "other": "In all other cases"
             },
             "server": {
-                "string": "Server"
+                "string": "Servor"
             },
             "port": {
                 "string": "Port"
             },
             "encryption": {
-                "string": "Encryption"
+                "string": "Encrypción"
             },
             "authType": {
                 "string": "Tipo de autenticación"
             },
             "smtpServer": {
-                "string": "SMTP Server"
+                "string": "SMTP Servor"
             },
             "smtpPort": {
                 "string": "Port"
             },
             "smtpAuth": {
-                "string": "SMTP Authentication"
+                "string": "SMTP Authenticación"
             },
             "smtpEncryption": {
-                "string": "SMTP Encryption"
+                "string": "SMTP Encrypción"
             },
             "username": {
                 "string": "Nombre de usuario"
@@ -230,13 +230,13 @@
                     "string": "Éxito"
                 },
                 "created": {
-                    "string": "IMAP account created successfully"
+                    "string": "IMAP account created successfulmente"
                 },
                 "updated": {
-                    "string": "IMAP account updated successfully"
+                    "string": "IMAP account updated successfulmente"
                 },
                 "deleted": {
-                    "string": "Account deleted successfully"
+                    "string": "Account deleted successfulmente"
                 }
             },
             "errors_api": {

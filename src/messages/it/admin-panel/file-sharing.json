@@ -1,8 +1,27 @@
-{ "AP_FILESHARE": {
-    "title": { "string": "File Sharing" },
-    "description": { "string": "Create shareable links for files with optional password protection, expiration, and download tracking." },
-    "form": { "share": { "string": "Share File" }, "cancel": { "string": "Cancel" }, "title": { "string": "Share a File" }, "filename": { "string": "Filename" }, "size": { "string": "Size (bytes)" }, "expires": { "string": "Expires in (days)" }, "password": { "string": "Password" }, "password_hint": { "string": "Leave empty for no password" }, "submit": { "string": "Create Share Link" } },
-    "create": { "success": { "string": "Share link created" }, "error": { "string": "Failed to create share" } },
-    "list": { "empty": { "string": "No shared files. Create a share link to securely distribute files." } },
-    "errors": { "fields": { "string": "Filename and size are required" } }
-}}
+{
+    "AP_FILESHARE": {
+        "title": { "string": "Condivisione File" },
+        "description": { "string": "Crea link condivisibili per file con protezione password opzionale, scadenza e tracciamento dei download." },
+        "form": {
+            "share": { "string": "Condividi File" },
+            "cancel": { "string": "Annulla" },
+            "title": { "string": "Condividi un File" },
+            "filename": { "string": "Nome File" },
+            "size": { "string": "Dimensione (byte)" },
+            "expires": { "string": "Scade tra (giorni)" },
+            "password": { "string": "Password" },
+            "password_hint": { "string": "Lascia vuoto per nessuna password" },
+            "submit": { "string": "Crea Link di Condivisione" }
+        },
+        "create": {
+            "success": { "string": "Link di condivisione creato" },
+            "error": { "string": "Creazione condivisione fallita" }
+        },
+        "list": {
+            "empty": { "string": "Nessun file condiviso. Crea un link per distribuire file in modo sicuro." }
+        },
+        "errors": {
+            "fields": { "string": "Nome file e dimensione sono obbligatori" }
+        }
+    }
+}

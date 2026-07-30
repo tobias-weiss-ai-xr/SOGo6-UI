@@ -1,7 +1,27 @@
-{ "AP_BACKUP": {
-    "title": { "string": "Backup Automation" },
-    "description": { "string": "Manage database and mailstore backups with retention policies and optional S3 upload." },
-    "trigger": { "button": { "string": "Trigger Backup" }, "running": { "string": "Running..." }, "success": { "string": "Backup completed" }, "error": { "string": "Backup failed" } },
-    "config": { "retention": { "string": "Retention" }, "s3": { "string": "S3 Upload" }, "mailstore": { "string": "Mailstore" }, "total": { "string": "Total Backups" } },
-    "table": { "id": { "string": "ID" }, "timestamp": { "string": "Timestamp" }, "type": { "string": "Type" }, "status": { "string": "Status" }, "size": { "string": "Size" }, "duration": { "string": "Duration" }, "empty": { "string": "No backups yet." } }
-}}
+{
+    "AP_BACKUP": {
+        "title": { "string": "Backup Automatici" },
+        "description": { "string": "Gestisci backup del database e del mailstore con politiche di conservazione e upload S3 opzionale." },
+        "trigger": {
+            "button": { "string": "Avvia Backup" },
+            "running": { "string": "In esecuzione..." },
+            "success": { "string": "Backup completato" },
+            "error": { "string": "Backup fallito" }
+        },
+        "config": {
+            "retention": { "string": "Conservazione" },
+            "s3": { "string": "Upload S3" },
+            "mailstore": { "string": "Mailstore" },
+            "total": { "string": "Backup Totali" }
+        },
+        "table": {
+            "id": { "string": "ID" },
+            "timestamp": { "string": "Data/Ora" },
+            "type": { "string": "Tipo" },
+            "status": { "string": "Stato" },
+            "size": { "string": "Dimensione" },
+            "duration": { "string": "Durata" },
+            "empty": { "string": "Nessun backup ancora." }
+        }
+    }
+}

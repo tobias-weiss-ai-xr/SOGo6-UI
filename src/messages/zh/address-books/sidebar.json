@@ -58,7 +58,7 @@
                 }
             },
             "sharing": {
-                "string": "Sharing"
+                "string": "Sharing中"
             },
             "import": {
                 "string": "Import"
@@ -72,7 +72,7 @@
         },
         "sharing": {
             "title": {
-                "string": "Address Book Sharing"
+                "string": "Address Book Sharing中"
             },
             "description": {
                 "string": "Share this address book with other users. Shared users can view or modify contacts based on the permission level you grant."
@@ -173,7 +173,7 @@
                 "string": "Import completed. Created: {counts}."
             },
             "close": {
-                "string": "Close"
+                "string": "关闭"
             }
         },
         "export": {
@@ -196,7 +196,7 @@
                 "string": "Export completed. Your download should start shortly."
             },
             "close": {
-                "string": "Close"
+                "string": "关闭"
             }
         }
     }

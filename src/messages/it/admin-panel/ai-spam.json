@@ -1,1 +1,49 @@
-{ "AI_SPAM": { "title": { "string": "Intelligent Spam Filter" }, "description": { "string": "Real-time spam scoring with pattern analysis, sender reputation, and content heuristics." }, "input": { "title": { "string": "Email to Score" }, "subject": { "string": "Subject" }, "sender": { "string": "Sender" }, "body": { "string": "Body" }, "placeholder": { "string": "Paste the email body..." } }, "output": { "title": { "string": "Spam Score" }, "empty": { "string": "Enter email content and click Score" }, "signals": { "string": "Detected Signals" } }, "score": { "string": "Score Email" }, "errors": { "empty": { "string": "Enter subject or body" }, "fail": { "string": "Scoring failed" } } }}
+{
+    "AI_SPAM": {
+        "title": {
+            "string": "Filtro Antispam Intelligente"
+        },
+        "description": {
+            "string": "Punteggio spam in tempo reale con analisi dei pattern, reputazione mittente e euristiche sui contenuti."
+        },
+        "input": {
+            "title": {
+                "string": "Email da Valutare"
+            },
+            "subject": {
+                "string": "Oggetto"
+            },
+            "sender": {
+                "string": "Mittente"
+            },
+            "body": {
+                "string": "Corpo"
+            },
+            "placeholder": {
+                "string": "Incolla il corpo dell'email..."
+            }
+        },
+        "output": {
+            "title": {
+                "string": "Punteggio Spam"
+            },
+            "empty": {
+                "string": "Inserisci contenuto email e clicca Valuta"
+            },
+            "signals": {
+                "string": "Segnali Rilevati"
+            }
+        },
+        "score": {
+            "string": "Valuta Email"
+        },
+        "errors": {
+            "empty": {
+                "string": "Inserisci oggetto o corpo"
+            },
+            "fail": {
+                "string": "Valutazione fallita"
+            }
+        }
+    }
+}

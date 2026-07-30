@@ -1,68 +1,68 @@
 {
-  "AP_HELPDESK": {
-    "title": {
-      "string": "Helpdesk / Ticketing"
-    },
-    "description": {
-      "string": "Creer automatiquement des tickets depuis les e-mails."
-    },
-    "form": {
-      "create": {
-        "string": "Nouveau ticket"
-      },
-      "cancel": {
-        "string": "Annuler"
-      },
-      "title": {
-        "string": "Creer le ticket"
-      },
-      "subject": {
-        "string": "Objet"
-      },
-      "priority": {
-        "string": "Priorite"
-      },
-      "description": {
-        "string": "Description"
-      },
-      "requester": {
-        "string": "E-mail du demandeur"
-      },
-      "assignee": {
-        "string": "E-mail de l'assigne"
-      },
-      "sla": {
-        "string": "SLA (heures)"
-      },
-      "submit": {
-        "string": "Creer le ticket"
-      }
-    },
-    "create": {
-      "success": {
-        "string": "Ticket cree"
-      },
-      "error": {
-        "string": "Echec de la creation"
-      }
-    },
-    "update": {
-      "success": {
-        "string": "Ticket mis a jour"
-      },
-      "error": {
-        "string": "Echec de la mise a jour"
-      }
-    },
-    "list": {
-      "empty": {
-        "string": "Aucun ticket."
-      }
-    },
-    "errors": {
-      "fields": {
-        "string": "Objet et description requis"
-      }
+    "AP_HELPDESK": {
+        "title": {
+            "string": "Helpdesk / Ticketant"
+        },
+        "description": {
+            "string": "Creer automatiquement des tickets depuis les e-mails."
+        },
+        "form": {
+            "create": {
+                "string": "Nouveau ticket"
+            },
+            "cancel": {
+                "string": "Annuleur"
+            },
+            "title": {
+                "string": "Creer le ticket"
+            },
+            "subject": {
+                "string": "Objet"
+            },
+            "priority": {
+                "string": "Priorite"
+            },
+            "description": {
+                "string": "Description"
+            },
+            "requester": {
+                "string": "E-mail du demandeur"
+            },
+            "assignee": {
+                "string": "E-mail de l'assigne"
+            },
+            "sla": {
+                "string": "SLA (heures)"
+            },
+            "submit": {
+                "string": "Creer le ticket"
+            }
+        },
+        "create": {
+            "success": {
+                "string": "Ticket cree"
+            },
+            "error": {
+                "string": "Echec de la creation"
+            }
+        },
+        "update": {
+            "success": {
+                "string": "Ticket mis a jour"
+            },
+            "error": {
+                "string": "Echec de la mise a jour"
+            }
+        },
+        "list": {
+            "empty": {
+                "string": "Aucun ticket."
+            }
+        },
+        "errors": {
+            "fields": {
+                "string": "Objet et description requis"
+            }
+        }
     }
-  }
 }

@@ -1,9 +1,71 @@
-{ "AP_SLOTS": {
-    "title": { "string": "Appointment Slots" },
-    "description": { "string": "Publish bookable time slots (Calendly-style). Generate booking links for external participants." },
-    "form": { "create": { "string": "Create Slot" }, "cancel": { "string": "Cancel" }, "title": { "string": "New Appointment Slot" }, "slot_title": { "string": "Slot Title" }, "duration": { "string": "Duration (min)" }, "buffer": { "string": "Buffer (min)" }, "start_time": { "string": "Start Time" }, "end_time": { "string": "End Time" }, "days": { "string": "Available Days" }, "submit": { "string": "Create Slot" } },
-    "create": { "success": { "string": "Slot created" }, "error": { "string": "Failed to create slot" } },
-    "slots": { "title": { "string": "Your Slots" }, "empty": { "string": "No appointment slots. Create one to share your availability." } },
-    "bookings": { "title": { "string": "Recent Bookings" }, "empty": { "string": "No bookings yet." } },
-    "errors": { "fields": { "string": "Title, duration, times, and at least one day are required" } }
-}}
+{
+    "AP_SLOTS": {
+        "title": {
+            "string": "Appointment Slots"
+        },
+        "description": {
+            "string": "Publish bookable time slots (Calendly-style). Generate booking links for external participants."
+        },
+        "form": {
+            "create": {
+                "string": "Create Slot"
+            },
+            "cancel": {
+                "string": "Annuleren"
+            },
+            "title": {
+                "string": "New Appointment Slot"
+            },
+            "slot_title": {
+                "string": "Slot Title"
+            },
+            "duration": {
+                "string": "Duration (min)"
+            },
+            "buffer": {
+                "string": "Buffer (min)"
+            },
+            "start_time": {
+                "string": "Start Time"
+            },
+            "end_time": {
+                "string": "End Time"
+            },
+            "days": {
+                "string": "Available Days"
+            },
+            "submit": {
+                "string": "Create Slot"
+            }
+        },
+        "create": {
+            "success": {
+                "string": "Slot created"
+            },
+            "error": {
+                "string": "Failed to create slot"
+            }
+        },
+        "slots": {
+            "title": {
+                "string": "Your Slots"
+            },
+            "empty": {
+                "string": "No appointment slots. Create one to share your availability."
+            }
+        },
+        "bookings": {
+            "title": {
+                "string": "Recent Bookings"
+            },
+            "empty": {
+                "string": "No bookings yet."
+            }
+        },
+        "errors": {
+            "fields": {
+                "string": "Title, duration, times, and at least one day are required"
+            }
+        }
+    }
+}

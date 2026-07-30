@@ -1,28 +1,28 @@
 {
   "EIDAS": {
-    "title": { "string": "eIDAS Qualified Signatures" },
-    "description": { "string": "EU Regulation 910/2014 qualified electronic signatures and timestamps" },
-    "errors": { "fields": { "string": "All fields required" }, "fail": { "string": "Operation failed" } },
-    "success": { "sign": { "string": "Document signed with QES" } },
+    "title": { "string": "Firme Qualificate eIDAS" },
+    "description": { "string": "Firme elettroniche qualificate e timestamp secondo il Regolamento UE 910/2014" },
+    "errors": { "fields": { "string": "Tutti i campi sono obbligatori" }, "fail": { "string": "Operazione fallita" } },
+    "success": { "sign": { "string": "Documento firmato con QES" } },
     "sign": {
-      "title": { "string": "Sign Document" },
-      "placeholder": { "string": "Enter document content to sign..." },
-      "signer": { "string": "Signer Email" },
-      "algorithm": { "string": "Hash Algorithm" },
-      "button": { "string": "Sign with QES" }
+      "title": { "string": "Firma Documento" },
+      "placeholder": { "string": "Inserisci il contenuto del documento da firmare..." },
+      "signer": { "string": "Email Firmatario" },
+      "algorithm": { "string": "Algoritmo Hash" },
+      "button": { "string": "Firma con QES" }
     },
     "verify": {
-      "title": { "string": "Verify Signature" },
-      "doc_hash": { "string": "Document Hash" },
-      "signature": { "string": "Signature" },
-      "button": { "string": "Verify" },
-      "valid": { "string": "Valid" },
-      "invalid": { "string": "Invalid" }
+      "title": { "string": "Verifica Firma" },
+      "doc_hash": { "string": "Hash Documento" },
+      "signature": { "string": "Firma" },
+      "button": { "string": "Verifica" },
+      "valid": { "string": "Valida" },
+      "invalid": { "string": "Non valida" }
     },
     "certs": {
-      "title": { "string": "Trust Service Certificates" },
-      "type": { "string": "Type" },
-      "name": { "string": "Name" },
+      "title": { "string": "Certificati del Servizio Fiduciario" },
+      "type": { "string": "Tipo" },
+      "name": { "string": "Nome" },
       "hash": { "string": "Hash" }
     }
   }

@@ -32,7 +32,7 @@
                 "string": "Ajouter un compte"
             },
             "edit_button": {
-                "string": "Modifier"
+                "string": "Modifieur"
             },
             "edit_button_aria": {
                 "string": "Edit account {email}"
@@ -47,10 +47,10 @@
                 "string": "Are you sure you want to delete {name}? This action cannot be undone."
             },
             "cancel_button": {
-                "string": "Annuler"
+                "string": "Annuleur"
             },
             "confirm_delete_button": {
-                "string": "Supprimer"
+                "string": "Supprimeur"
             },
             "empty": {
                 "string": "No IMAP accounts configured yet. Add your first account to get started."
@@ -75,7 +75,7 @@
                 "string": "Configure a new external IMAP account"
             },
             "back_button": {
-                "string": "Annuler"
+                "string": "Annuleur"
             },
             "create_button": {
                 "string": "Create Account"
@@ -96,7 +96,7 @@
                 "other": "In all other cases"
             },
             "server": {
-                "string": "Server"
+                "string": "Serveur"
             },
             "port": {
                 "string": "Port"
@@ -108,7 +108,7 @@
                 "string": "Type d'authentification"
             },
             "smtpServer": {
-                "string": "SMTP Server"
+                "string": "SMTP Serveur"
             },
             "smtpPort": {
                 "string": "Port"

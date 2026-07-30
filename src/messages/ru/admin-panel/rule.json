@@ -1,145 +1,147 @@
 {
-  "ADMIN_PANNEL_RULE": {
-    "title": {
-      "string": "Rules"
+    "ADMIN_PANNEL_RULE": {
+        "title": {
+            "string": "Rules"
+        },
+        "filter_placeholder": {
+            "string": "Filter rules..."
+        },
+        "add_new_rule": {
+            "string": "Add new rule"
+        },
+        "select_all": {
+            "string": "Select all"
+        },
+        "select_row": {
+            "string": "Select row"
+        },
+        "domain": {
+            "string": "Domain"
+        },
+        "open_menu": {
+            "string": "Open menu"
+        },
+        "actions": {
+            "string": "Actions"
+        },
+        "copy_domain": {
+            "string": "Copy domain name"
+        },
+        "edit": {
+            "string": "Редактировать"
+        },
+        "delete": {
+            "string": "Удалить"
+        }
     },
-    "filter_placeholder": {
-      "string": "Filter rules..."
-    },
-    "add_new_rule": { "string": "Add new rule" },
-    "select_all": {
-      "string": "Select all"
-    },
-    "select_row": {
-      "string": "Select row"
-    },
-    "domain": {
-      "string": "Domain"
-    },
-    "open_menu": {
-      "string": "Open menu"
-    },
-    "actions": {
-      "string": "Actions"
-    },
-    "copy_domain": {
-      "string": "Copy domain name"
-    },
-    "edit": {
-      "string": "Edit"
-    },
-    "delete": {
-      "string": "Delete"
+    "AP_RULES": {
+        "title": {
+            "string": "Rules"
+        },
+        "description": {
+            "string": "Manage configuration rules for domains"
+        },
+        "search": {
+            "placeholder": {
+                "string": "Search rules..."
+            }
+        },
+        "create": {
+            "button": {
+                "string": "New Rule"
+            },
+            "title": {
+                "string": "Create Rule"
+            },
+            "description": {
+                "string": "Add a new configuration rule"
+            },
+            "success": {
+                "string": "Rule created successfully"
+            },
+            "error": {
+                "string": "Failed to create rule"
+            },
+            "name_required": {
+                "string": "Rule name is required"
+            }
+        },
+        "edit": {
+            "button": {
+                "string": "Редактировать"
+            },
+            "title": {
+                "string": "Edit Rule"
+            },
+            "description": {
+                "string": "Update rule: {name}"
+            },
+            "save": {
+                "string": "Save Changes"
+            },
+            "success": {
+                "string": "Rule updated successfully"
+            },
+            "error": {
+                "string": "Failed to update rule"
+            }
+        },
+        "delete": {
+            "button": {
+                "string": "Удалить"
+            },
+            "title": {
+                "string": "Delete Rule"
+            },
+            "confirm": {
+                "string": "Are you sure you want to delete rule \"{name}\"?"
+            },
+            "success": {
+                "string": "Rule deleted successfully"
+            },
+            "error": {
+                "string": "Failed to delete rule"
+            }
+        },
+        "form": {
+            "name": {
+                "string": "Rule Name"
+            },
+            "name_placeholder": {
+                "string": "e.g. French LDAP Rules"
+            },
+            "description": {
+                "string": "Description"
+            },
+            "description_placeholder": {
+                "string": "Optional description of this rule"
+            },
+            "domains": {
+                "string": "Affected Domains"
+            },
+            "domains_placeholder": {
+                "string": "example.org, domain2.org"
+            },
+            "domains_hint": {
+                "string": "Comma-separated list of domain names. Leave empty for all domains."
+            }
+        },
+        "table": {
+            "id": {
+                "string": "ID"
+            },
+            "name": {
+                "string": "Name"
+            },
+            "actions": {
+                "string": "Actions"
+            }
+        },
+        "no_rules": {
+            "string": "No rules configured yet"
+        },
+        "no_results": {
+            "string": "No rules match your search"
+        }
     }
-  },
-  "AP_RULES": {
-    "title": {
-      "string": "Rules"
-    },
-    "description": {
-      "string": "Manage configuration rules for domains"
-    },
-    "search": {
-      "placeholder": {
-        "string": "Search rules..."
-      }
-    },
-    "create": {
-      "button": {
-        "string": "New Rule"
-      },
-      "title": {
-        "string": "Create Rule"
-      },
-      "description": {
-        "string": "Add a new configuration rule"
-      },
-      "success": {
-        "string": "Rule created successfully"
-      },
-      "error": {
-        "string": "Failed to create rule"
-      },
-      "name_required": {
-        "string": "Rule name is required"
-      }
-    },
-    "edit": {
-      "button": {
-        "string": "Edit"
-      },
-      "title": {
-        "string": "Edit Rule"
-      },
-      "description": {
-        "string": "Update rule: {name}"
-      },
-      "save": {
-        "string": "Save Changes"
-      },
-      "success": {
-        "string": "Rule updated successfully"
-      },
-      "error": {
-        "string": "Failed to update rule"
-      }
-    },
-    "delete": {
-      "button": {
-        "string": "Delete"
-      },
-      "title": {
-        "string": "Delete Rule"
-      },
-      "confirm": {
-        "string": "Are you sure you want to delete rule \"{name}\"?"
-      },
-      "success": {
-        "string": "Rule deleted successfully"
-      },
-      "error": {
-        "string": "Failed to delete rule"
-      }
-    },
-    "form": {
-      "name": {
-        "string": "Rule Name"
-      },
-      "name_placeholder": {
-        "string": "e.g. French LDAP Rules"
-      },
-      "description": {
-        "string": "Description"
-      },
-      "description_placeholder": {
-        "string": "Optional description of this rule"
-      },
-      "domains": {
-        "string": "Affected Domains"
-      },
-      "domains_placeholder": {
-        "string": "example.org, domain2.org"
-      },
-      "domains_hint": {
-        "string": "Comma-separated list of domain names. Leave empty for all domains."
-      }
-    },
-    "table": {
-      "id": {
-        "string": "ID"
-      },
-      "name": {
-        "string": "Name"
-      },
-      "actions": {
-        "string": "Actions"
-      }
-    },
-    "no_rules": {
-      "string": "No rules configured yet"
-    },
-    "no_results": {
-      "string": "No rules match your search"
-    }
-  }
 }

@@ -32,7 +32,7 @@
         },
         "reset": {
             "default": {
-                "string": "Restablecer",
+                "string": "Restablecor",
                 "description": "Click to reset the form fields to their default values."
             }
         },

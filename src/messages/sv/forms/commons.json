@@ -2,31 +2,31 @@
     "FORM_COMMONS": {
         "save": {
             "default": {
-                "string": "Save",
+                "string": "Spara",
                 "description": "Click to save the form data."
             }
         },
         "delete": {
             "default": {
-                "string": "Delete",
+                "string": "Ta bort",
                 "description": "Click to delete the selected item."
             }
         },
         "edit": {
             "default": {
-                "string": "Edit",
+                "string": "Redigera",
                 "description": "Click to edit the selected item."
             }
         },
         "cancel": {
             "default": {
-                "string": "Cancel",
+                "string": "Avbryt",
                 "description": "Click to cancel the form submission."
             }
         },
         "create": {
             "default": {
-                "string": "Create",
+                "string": "Skapa",
                 "description": "Click to create a new item."
             }
         },

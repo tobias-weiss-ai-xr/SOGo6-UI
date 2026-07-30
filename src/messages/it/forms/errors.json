@@ -2,12 +2,12 @@
     "FORM_ERRORS": {
         "required": {
             "default": {
-                "string": "This field is required"
+                "string": "Questo campo è obbligatorio"
             }
         },
         "invalid": {
             "email": {
-                "string": "Invalid email address"
+                "string": "Indirizzo email non valido"
             }
         }
     }

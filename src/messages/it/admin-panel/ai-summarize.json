@@ -1,1 +1,46 @@
-{ "AI_SUMMARIZE": { "title": { "string": "Email Summarization" }, "description": { "string": "TL;DR for long email threads. Extractive summarization returns the most important sentences." }, "input": { "title": { "string": "Input Email" }, "text": { "string": "Email Text" }, "placeholder": { "string": "Paste the email body here..." }, "sentences": { "string": "Max Sentences" } }, "output": { "title": { "string": "Summary" }, "empty": { "string": "Enter text and click Summarize" } }, "summarize": { "string": "Summarize" }, "loading": { "string": "Summarizing..." }, "errors": { "empty": { "string": "Enter text to summarize" }, "fail": { "string": "Summarization failed" } } }}
+{
+    "AI_SUMMARIZE": {
+        "title": {
+            "string": "Riassunto Email"
+        },
+        "description": {
+            "string": "Riassunto per lunghe conversazioni email. La sintesi estrattiva restituisce le frasi più importanti."
+        },
+        "input": {
+            "title": {
+                "string": "Email di Input"
+            },
+            "text": {
+                "string": "Testo Email"
+            },
+            "placeholder": {
+                "string": "Incolla qui il corpo dell'email..."
+            },
+            "sentences": {
+                "string": "Numero Massimo Frasi"
+            }
+        },
+        "output": {
+            "title": {
+                "string": "Riassunto"
+            },
+            "empty": {
+                "string": "Inserisci testo e clicca Riassumi"
+            }
+        },
+        "summarize": {
+            "string": "Riassumi"
+        },
+        "loading": {
+            "string": "Riassumendo..."
+        },
+        "errors": {
+            "empty": {
+                "string": "Inserisci testo da riassumere"
+            },
+            "fail": {
+                "string": "Riassunto fallito"
+            }
+        }
+    }
+}

@@ -1,54 +1,54 @@
 {
-  "AP_CRM": {
-    "title": {
-      "string": "CRM léger"
-    },
-    "description": {
-      "string": "Associate contacts with accounts, track interactions, categorize contacts, and record notes."
-    },
-    "form": {
-      "create": {
-        "string": "New Account"
-      },
-      "cancel": {
-        "string": "Cancel"
-      },
-      "title": {
-        "string": "Create Account"
-      },
-      "name": {
-        "string": "Account Name"
-      },
-      "domain": {
-        "string": "Domain"
-      },
-      "industry": {
-        "string": "Industry"
-      },
-      "notes": {
-        "string": "Notes"
-      },
-      "submit": {
-        "string": "Create Account"
-      }
-    },
-    "create": {
-      "success": {
-        "string": "Account created"
-      },
-      "error": {
-        "string": "Failed to create"
-      }
-    },
-    "list": {
-      "empty": {
-        "string": "No CRM accounts yet."
-      }
-    },
-    "errors": {
-      "fields": {
-        "string": "Account name is required"
-      }
+    "AP_CRM": {
+        "title": {
+            "string": "CRM légeur"
+        },
+        "description": {
+            "string": "Associate contacts with accounts, track interactions, categorize contacts, and record notes."
+        },
+        "form": {
+            "create": {
+                "string": "New Account"
+            },
+            "cancel": {
+                "string": "Annuler"
+            },
+            "title": {
+                "string": "Create Account"
+            },
+            "name": {
+                "string": "Account Name"
+            },
+            "domain": {
+                "string": "Domain"
+            },
+            "industry": {
+                "string": "Industry"
+            },
+            "notes": {
+                "string": "Notes"
+            },
+            "submit": {
+                "string": "Create Account"
+            }
+        },
+        "create": {
+            "success": {
+                "string": "Account created"
+            },
+            "error": {
+                "string": "Failed to create"
+            }
+        },
+        "list": {
+            "empty": {
+                "string": "No CRM accounts yet."
+            }
+        },
+        "errors": {
+            "fields": {
+                "string": "Account name is required"
+            }
+        }
     }
-  }
 }

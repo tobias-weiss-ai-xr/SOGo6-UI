@@ -2,31 +2,31 @@
     "FORM_COMMONS": {
         "save": {
             "default": {
-                "string": "Save",
+                "string": "Mentés",
                 "description": "Click to save the form data."
             }
         },
         "delete": {
             "default": {
-                "string": "Delete",
+                "string": "Töröl",
                 "description": "Click to delete the selected item."
             }
         },
         "edit": {
             "default": {
-                "string": "Edit",
+                "string": "Szerkeszt",
                 "description": "Click to edit the selected item."
             }
         },
         "cancel": {
             "default": {
-                "string": "Cancel",
+                "string": "Mégsem",
                 "description": "Click to cancel the form submission."
             }
         },
         "create": {
             "default": {
-                "string": "Create",
+                "string": "Létrehoz",
                 "description": "Click to create a new item."
             }
         },

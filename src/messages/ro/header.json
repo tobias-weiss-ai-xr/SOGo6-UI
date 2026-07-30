@@ -54,7 +54,7 @@
                 "context": "Link to the account security in the header dropdown"
             },
             "defaultUser": {
-                "string": "User",
+                "string": "Usor",
                 "context": "Default username fallback when profile is not yet loaded"
             }
         },
@@ -64,7 +64,7 @@
         },
         "settings": {
             "title": {
-                "string": "Settings",
+                "string": "Setări",
                 "context": "Section title for the header dropdown"
             },
             "general": {

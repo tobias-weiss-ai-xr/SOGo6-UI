@@ -23,15 +23,15 @@
             "context": "Displays the number of selected contacts."
         },
         "deselect_all": {
-            "string": "Tout désélectionner",
+            "string": "Tout désélectionneur",
             "context": "Button to deselect all selected contacts."
         },
         "select": {
-            "string": "Sélectionner",
+            "string": "Sélectionneur",
             "context": "Tooltip for select checkbox."
         },
         "deselect": {
-            "string": "Désélectionner",
+            "string": "Désélectionneur",
             "context": "Tooltip for deselect checkbox."
         },
         "filters": {
@@ -62,10 +62,10 @@
                 }
             },
             "sort_order_asc": {
-                "string": "Sort ascending"
+                "string": "Sort ascendant"
             },
             "sort_order_desc": {
-                "string": "Sort descending"
+                "string": "Sort descendant"
             }
         },
         "no_items": {

@@ -2,22 +2,22 @@
     "NOTIFICATIONS": {
         "title": {
             "success": {
-                "string": "Success",
+                "string": "Succes",
                 "context": "Notification title for successful operations.",
                 "developer_comment": "Advise the user that an operation completed successfully."
             },
             "error": {
-                "string": "Error",
+                "string": "Eroare",
                 "context": "Notification title for failed operations.",
                 "developer_comment": "Advise the user that an error occurred during the operation. {error}"
             },
             "warning": {
-                "string": "Warning",
+                "string": "Avertisment",
                 "context": "Notification title for warning messages.",
                 "developer_comment": "Advise the user to check the details and proceed with caution."
             },
             "info": {
-                "string": "Info",
+                "string": "Informații",
                 "context": "Notification title for informational messages.",
                 "developer_comment": "Advise the user of an informational message."
             }
@@ -157,7 +157,7 @@
             },
             "error": {
                 "title": {
-                    "string": "Failed to create folder"
+                    "string": "Failed to create foldor"
                 },
                 "message": {
                     "string": "An error occurred while creating the folder. Please try again."
@@ -175,7 +175,7 @@
             },
             "error": {
                 "title": {
-                    "string": "Failed to delete folder"
+                    "string": "Failed to delete foldor"
                 },
                 "message": {
                     "string": "An error occurred while deleting the folder. Please try again."
@@ -193,7 +193,7 @@
             },
             "error": {
                 "title": {
-                    "string": "Failed to rename folder"
+                    "string": "Failed to rename foldor"
                 },
                 "message": {
                     "string": "An error occurred while renaming the folder. Please try again."
@@ -229,7 +229,7 @@
             },
             "error": {
                 "title": {
-                    "string": "Failed to move folder"
+                    "string": "Failed to move foldor"
                 },
                 "message": {
                     "string": "An error occurred while moving the folder. Please try again."
@@ -247,7 +247,7 @@
             },
             "error": {
                 "title": {
-                    "string": "Failed to export folder"
+                    "string": "Failed to export foldor"
                 },
                 "message": {
                     "string": "An error occurred while exporting the folder. Please try again."

@@ -40,10 +40,10 @@
             },
             "SOGO_D_CAS_URL": {
                 "name": {
-                    "string": "URL of the CAS server"
+                    "string": "URL of the CAS serveur"
                 },
                 "description": {
-                    "string": "Put the full url of your CAS server"
+                    "string": "Put the full url of your CAS serveur"
                 },
                 "developer_comment": ""
             },
@@ -52,7 +52,7 @@
                     "string": "Enable logout with CAS"
                 },
                 "description": {
-                    "string": "Check the box to allow user to logout from your sogo and the CAS server"
+                    "string": "Check the box to allow user to logout from your sogo and the CAS serveur"
                 },
                 "developer_comment": ""
             },
@@ -121,7 +121,7 @@
             },
             "SOGO_D_OPENID_ENDSESSION_ENABLED": {
                 "name": {
-                    "string": "Enable End Session from OpenID server"
+                    "string": "Enable End Session from OpenID serveur"
                 },
                 "description": {
                     "string": "By default, usr can only logout from webmail. Check this setting to also logout from your OpenID server, meaning the user will be logout from all applications using the OpenID server. Only works if your OpenId has a end_session_endpoint"
@@ -313,7 +313,7 @@
                     "string": "CN field"
                 },
                 "description": {
-                    "string": "Field with the Complete Name of the user"
+                    "string": "Field with the Complete Name of the useur"
                 },
                 "developer_comment": ""
             },
@@ -337,7 +337,7 @@
             },
             "US_LDAP_FILTER": {
                 "name": {
-                    "string": "LDAP Filter"
+                    "string": "LDAP Filteur"
                 },
                 "description": {
                     "string": "Additionnal filter to use for LDAP queries.\nUse '=', '!=', 'AND', 'OR' and the parenthesis. Example: '(objectClass='mailUser' OR objectClass!='mailGroup') AND accountStatus='active'"
@@ -364,7 +364,7 @@
             },
             "US_LDAP_BIND_AS_USER": {
                 "name": {
-                    "string": "Bind as User"
+                    "string": "Bind as Useur"
                 },
                 "description": {
                     "string": "After authentication, use the user's DN to bind instead"
@@ -394,7 +394,7 @@
                     "string": "LDAP Group Classs"
                 },
                 "description": {
-                    "string": "Set the LDAP class that will indicates to SOGO thas this is a group and not a singular user"
+                    "string": "Set the LDAP class that will indicates to SOGO thas this is a group and not a singular useur"
                 },
                 "developer_comment": ""
             },
@@ -403,7 +403,7 @@
                     "string": "SQL User Url"
                 },
                 "description": {
-                    "string": "Database URL to your users table. Example: postgresql://sogo:sogo@127.0.0.1:5432/sogo/sogo_user"
+                    "string": "Database URL to your users table. Example: postgresql://sogo:sogo@127.0.0.1:5432/sogo/sogo_useur"
                 },
                 "developer_comment": ""
             },
@@ -418,7 +418,7 @@
             },
             "US_SQL_USER_FILTER": {
                 "name": {
-                    "string": "SQL User Filter"
+                    "string": "SQL User Filteur"
                 },
                 "description": {
                     "string": "Additional WHERE conditions to add to the sql query. Example: 'active=1'"
@@ -436,7 +436,7 @@
             },
             "US_MAPPING": {
                 "name": {
-                    "string": "User Source Mapping"
+                    "string": "User Source Mappant"
                 },
                 "description": {
                     "string": "Map your User Source field to contact attribute"
@@ -679,7 +679,7 @@
             },
             "US_RESOURCE_MULTIBOOKING": {
                 "name": {
-                    "string": "User Resource Multibooking"
+                    "string": "User Resource Multibookant"
                 },
                 "description": {
                     "string": "Field where to find the multibooking value of a resource"
@@ -706,7 +706,7 @@
             },
             "SOGO_D_MAPI_ACCESS": {
                 "name": {
-                    "string": "Enable MAPI Server"
+                    "string": "Enable MAPI Serveur"
                 },
                 "description": {
                     "string": "Allow user on desktop to use MAPI protocol"
@@ -715,7 +715,7 @@
             },
             "SOGO_D_EAS_ACCESS": {
                 "name": {
-                    "string": "Enable EAS Server"
+                    "string": "Enable EAS Serveur"
                 },
                 "description": {
                     "string": "Allow user on mobile to use ActiveSync protocol"
@@ -733,7 +733,7 @@
             },
             "SOGO_D_FOLDER_DISABLE_SHARING": {
                 "name": {
-                    "string": "Disable Folder Sharing"
+                    "string": "Disable Folder Sharant"
                 },
                 "description": {
                     "string": "Prevent user from sharing their folder among mail, calendar and contact"
@@ -742,7 +742,7 @@
             },
             "SOGO_D_FOLDER_DISABLE_SHARING_ANY_AUTH": {
                 "name": {
-                    "string": "Disable Folder Sharing With Authenticated User"
+                    "string": "Disable Folder Sharing With Authenticated Useur"
                 },
                 "description": {
                     "string": "Prevent user from sharing their folder with all authenticated user among mail, calendar and contact"
@@ -772,7 +772,7 @@
                     "string": "Maximun API request time"
                 },
                 "description": {
-                    "string": "Set the timespan where 'Maximum API request' is limiting"
+                    "string": "Set the timespan where 'Maximum API request' is limitant"
                 },
                 "developer_comment": ""
             },
@@ -871,7 +871,7 @@
                     "string": "Mail server type"
                 },
                 "description": {
-                    "string": "Set the kind of mail server"
+                    "string": "Set the kind of mail serveur"
                 },
                 "developer_comment": ""
             },
@@ -880,7 +880,7 @@
                     "string": "Serveur IMAP"
                 },
                 "description": {
-                    "string": "Hostname of the IMAP server"
+                    "string": "Hostname of the IMAP serveur"
                 },
                 "developer_comment": ""
             },
@@ -889,7 +889,7 @@
                     "string": "Port IMAP"
                 },
                 "description": {
-                    "string": "Port of the imap server"
+                    "string": "Port of the imap serveur"
                 },
                 "developer_comment": ""
             },
@@ -898,7 +898,7 @@
                     "string": "Chiffrement IMAP"
                 },
                 "description": {
-                    "string": "Encryption mechanism fo the IMAP server"
+                    "string": "Encryption mechanism fo the IMAP serveur"
                 },
                 "developer_comment": ""
             },
@@ -940,7 +940,7 @@
             },
             "SOGO_D_MAIL_FILTERING_ENABLED": {
                 "name": {
-                    "string": "Enable mail filtering"
+                    "string": "Enable mail filterant"
                 },
                 "description": {
                     "string": "Allow user to set mail's filters"
@@ -958,10 +958,10 @@
             },
             "SOGO_D_SIEVE_SERVER": {
                 "name": {
-                    "string": "Sieve server"
+                    "string": "Sieve serveur"
                 },
                 "description": {
-                    "string": "Hostname of the sieve server"
+                    "string": "Hostname of the sieve serveur"
                 },
                 "developer_comment": ""
             },
@@ -970,7 +970,7 @@
                     "string": "Sieve port"
                 },
                 "description": {
-                    "string": "Port of the sieve server"
+                    "string": "Port of the sieve serveur"
                 },
                 "developer_comment": ""
             },
@@ -979,7 +979,7 @@
                     "string": "Chiffrement Sieve"
                 },
                 "description": {
-                    "string": "Encryption of the sieve server"
+                    "string": "Encryption of the sieve serveur"
                 },
                 "developer_comment": ""
             },
@@ -994,7 +994,7 @@
             },
             "SOGO_D_SIEVE_FOLDER_ENCODING": {
                 "name": {
-                    "string": "Sieve encoding"
+                    "string": "Sieve encodant"
                 },
                 "description": {
                     "string": "Set the encoding used by the sieve server."
@@ -1003,7 +1003,7 @@
             },
             "SOGO_D_SIEVE_HEADER": {
                 "name": {
-                    "string": "Sieve header"
+                    "string": "Sieve headeur"
                 },
                 "description": {
                     "string": "Set a sieve script that will be at the start of all user's sieve script"
@@ -1012,7 +1012,7 @@
             },
             "SOGO_D_SIEVE_FOOTER": {
                 "name": {
-                    "string": "Sieve footer"
+                    "string": "Sieve footeur"
                 },
                 "description": {
                     "string": "Set a sieve script that will be at the bottom of all user's sieve script"
@@ -1024,7 +1024,7 @@
                     "string": "Initial sieve script"
                 },
                 "description": {
-                    "string": "Set the initial sieve script for all new users. They will be able to modify it after"
+                    "string": "Set the initial sieve script for all new users. They will be able to modify it afteur"
                 },
                 "developer_comment": ""
             },
@@ -1159,7 +1159,7 @@
                     "string": "Outgoing Mail server type"
                 },
                 "description": {
-                    "string": "Set the kind of outgoing mail server"
+                    "string": "Set the kind of outgoing mail serveur"
                 },
                 "developer_comment": ""
             },
@@ -1168,7 +1168,7 @@
                     "string": "Serveur SMTP"
                 },
                 "description": {
-                    "string": "Hostname of the SMTP server"
+                    "string": "Hostname of the SMTP serveur"
                 },
                 "developer_comment": ""
             },
@@ -1177,7 +1177,7 @@
                     "string": "Port SMTP"
                 },
                 "description": {
-                    "string": "Port of the smtp server"
+                    "string": "Port of the smtp serveur"
                 },
                 "developer_comment": ""
             },
@@ -1186,7 +1186,7 @@
                     "string": "Chiffrement SMTP"
                 },
                 "description": {
-                    "string": "Encryption mechanism fo the SMTP server"
+                    "string": "Encryption mechanism fo the SMTP serveur"
                 },
                 "developer_comment": ""
             },
@@ -1276,7 +1276,7 @@
                     "string": "Check 'From'"
                 },
                 "description": {
-                    "string": "Check if the from is one of the user's mail (default, aliases, identities...) before requesting the outgoing mail server"
+                    "string": "Check if the from is one of the user's mail (default, aliases, identities...) before requesting the outgoing mail serveur"
                 },
                 "developer_comment": ""
             }

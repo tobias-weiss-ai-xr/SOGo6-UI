@@ -19,10 +19,10 @@
         "demo": {
             "warning": {
                 "title": {
-                    "string": "Versione Demo"
+                    "string": "Versione demo"
                 },
                 "description": {
-                    "string": "Stai attualmente utilizzando una versione demo dell'applicazione. Alcune funzionalità potrebbero essere limitate."
+                    "string": "Stai utilizzando una versione demo dell'applicazione. Alcune funzionalità potrebbero essere limitate."
                 },
                 "action": {
                     "string": "Ho capito"
@@ -38,7 +38,7 @@
                 "string": "Servizio non disponibile"
             },
             "description": {
-                "string": "L'applicazione non è riuscita a connettersi al server. Riprova più tardi o contatta il tuo amministratore."
+                "string": "L'applicazione non è riuscita a connettersi al server. Riprova più tardi o contatta l'amministratore."
             },
             "retry": {
                 "string": "Riprova"

@@ -2,11 +2,11 @@
     "CALENDAR": {
         "pick": {
             "range": {
-                "string": "Select a date range...",
+                "string": "Selecione um intervalo de datas...",
                 "context": "Default message displayed in the calendar when the user is asked to select a date range."
             },
             "single": {
-                "string": "Select a date...",
+                "string": "Selecione uma data...",
                 "context": "Default message displayed in the calendar when the user is asked to select a single date."
             }
         }

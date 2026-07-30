@@ -157,7 +157,7 @@
             },
             "error": {
                 "title": {
-                    "string": "Failed to create folder"
+                    "string": "Failed to create foldor"
                 },
                 "message": {
                     "string": "An error occurred while creating the folder. Please try again."
@@ -175,7 +175,7 @@
             },
             "error": {
                 "title": {
-                    "string": "Failed to delete folder"
+                    "string": "Failed to delete foldor"
                 },
                 "message": {
                     "string": "An error occurred while deleting the folder. Please try again."
@@ -193,7 +193,7 @@
             },
             "error": {
                 "title": {
-                    "string": "Failed to rename folder"
+                    "string": "Failed to rename foldor"
                 },
                 "message": {
                     "string": "An error occurred while renaming the folder. Please try again."
@@ -229,7 +229,7 @@
             },
             "error": {
                 "title": {
-                    "string": "Failed to move folder"
+                    "string": "Failed to move foldor"
                 },
                 "message": {
                     "string": "An error occurred while moving the folder. Please try again."
@@ -247,7 +247,7 @@
             },
             "error": {
                 "title": {
-                    "string": "Failed to export folder"
+                    "string": "Failed to export foldor"
                 },
                 "message": {
                     "string": "An error occurred while exporting the folder. Please try again."

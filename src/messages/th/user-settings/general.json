@@ -33,13 +33,13 @@
                 "string": "General settings saved"
             },
             "mail": {
-                "string": "Mail"
+                "string": "อีเมล"
             },
             "calendar": {
-                "string": "Calendar"
+                "string": "ปฏิทิน"
             },
             "contacts": {
-                "string": "Contacts"
+                "string": "ผู้ติดต่อ"
             },
             "last": {
                 "string": "Last displayed module"

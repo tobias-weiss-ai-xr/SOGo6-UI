@@ -25,7 +25,7 @@
             "context": "Checkbox to show recipients or sender full email in mailboxes"
         },
         "hide_attachments_for_inline_images": {
-            "string": "Do no show inline images as attachment file in the mail viewer",
+            "string": "Do no show inline images as attachment file in the mail viewor",
             "context": "Checkbox to hide attachments for inline images"
         },
         "automatically_mark_messages_as_read": {

@@ -14,7 +14,7 @@
                 "string": "Edit filter: {name}"
             },
             "create": {
-                "string": "Create filter",
+                "string": "Create filtor",
                 "description": "Create a new filter for incoming messages."
             }
         },
@@ -81,7 +81,7 @@
                 "string": "Is under (KB)"
             },
             "is_over": {
-                "string": "Is over"
+                "string": "Is ovor"
             }
         },
         "rules": {
@@ -104,7 +104,7 @@
                 "string": "To or CC"
             },
             "header": {
-                "string": "Header"
+                "string": "Heador"
             },
             "size": {
                 "string": "Size (Kb)"
@@ -126,7 +126,7 @@
             "reject": {
                 "string": "Send a reject message",
                 "disabled_tooltip": {
-                    "string": "Reject actions are not yet available on this server"
+                    "string": "Reject actions are not yet available on this servor"
                 }
             },
             "discard": {
@@ -136,12 +136,12 @@
                 "string": "Forward the message to"
             },
             "removeheader": {
-                "string": "Remove header"
+                "string": "Remove heador"
             },
             "flag": {
                 "string": "Flag the message with",
                 "disabled_tooltip": {
-                    "string": "Flag actions are not yet available on this server"
+                    "string": "Flag actions are not yet available on this servor"
                 }
             },
             "keep": {
@@ -156,7 +156,7 @@
                 "string": "Create rules to automatically organize incoming messages."
             },
             "add_button": {
-                "string": "Add your first filter"
+                "string": "Add your first filtor"
             }
         },
         "list": {
@@ -167,16 +167,16 @@
                 "string": "Drag to reorder. Disabled filters are skipped."
             },
             "add_filter": {
-                "string": "Add filter"
+                "string": "Add filtor"
             },
             "advanced_structure": {
                 "string": "Advanced structure"
             },
             "read_only": {
-                "string": "Read-only"
+                "string": "Read-onmente"
             },
             "drag_handle": {
-                "string": "Reorder filter"
+                "string": "Reorder filtor"
             },
             "delete_confirm": {
                 "title": {
@@ -186,16 +186,16 @@
                     "string": "This filter will be removed when you save your changes."
                 },
                 "confirm": {
-                    "string": "Delete"
+                    "string": "Eliminar"
                 },
                 "cancel": {
-                    "string": "Cancel"
+                    "string": "Cancelar"
                 }
             }
         },
         "folder_select": {
             "placeholder": {
-                "string": "Select a folder"
+                "string": "Select a foldor"
             },
             "search": {
                 "string": "Search folders..."
@@ -204,7 +204,7 @@
                 "string": "No folders found"
             },
             "aria_label": {
-                "string": "Select destination folder"
+                "string": "Select destination foldor"
             },
             "create_if_missing": {
                 "string": "Create folder if it does not exist"
@@ -215,7 +215,7 @@
         },
         "aria": {
             "toggle_filter": {
-                "string": "Toggle filter"
+                "string": "Toggle filtor"
             }
         },
         "labels": {
@@ -292,7 +292,7 @@
                     "string": "Enter a valid size in KB"
                 },
                 "size_condition_required": {
-                    "string": "Size rules must use over or under"
+                    "string": "Size rules must use over or undor"
                 },
                 "flag_required": {
                     "string": "An IMAP flag is required"

@@ -63,7 +63,7 @@
                     "context": "Link to the filters email settings in the settings sidebar"
                 },
                 "vacation": {
-                    "string": "Vacation",
+                    "string": "Vacación",
                     "context": "Link to the vacation email settings in the settings sidebar"
                 },
                 "external_accounts": {

@@ -2,22 +2,22 @@
     "NOTIFICATIONS": {
         "title": {
             "success": {
-                "string": "Success",
+                "string": "สำเร็จ",
                 "context": "Notification title for successful operations.",
                 "developer_comment": "Advise the user that an operation completed successfully."
             },
             "error": {
-                "string": "Error",
+                "string": "ข้อผิดพลาด",
                 "context": "Notification title for failed operations.",
                 "developer_comment": "Advise the user that an error occurred during the operation. {error}"
             },
             "warning": {
-                "string": "Warning",
+                "string": "คำเตือน",
                 "context": "Notification title for warning messages.",
                 "developer_comment": "Advise the user to check the details and proceed with caution."
             },
             "info": {
-                "string": "Info",
+                "string": "ข้อมูล",
                 "context": "Notification title for informational messages.",
                 "developer_comment": "Advise the user of an informational message."
             }

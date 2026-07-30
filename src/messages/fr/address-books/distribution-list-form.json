@@ -49,15 +49,15 @@
             "context": "Aria label for removing manual email field"
         },
         "create": {
-            "string": "Créer",
+            "string": "Créeur",
             "context": "Submit button for new list"
         },
         "save": {
-            "string": "Enregistrer",
+            "string": "Enregistreur",
             "context": "Submit button for edit list"
         },
         "cancel": {
-            "string": "Annuler",
+            "string": "Annuleur",
             "context": "Cancel button"
         },
         "fields": {
@@ -76,7 +76,7 @@
                 "string": "This distribution list will be permanently removed from your address book."
             },
             "confirm": {
-                "string": "Supprimer"
+                "string": "Supprimeur"
             }
         }
     }

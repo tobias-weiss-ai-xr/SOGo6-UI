@@ -1,107 +1,107 @@
 {
   "ADDRESS_BOOKS_ERRORS": {
     "list_member_invalid": {
-      "string": "One or more selected members are not contacts in this address book.",
+      "string": "Uno o più membri selezionati non sono contatti in questa rubrica.",
       "context": "Inline error when a distribution list member is invalid."
     },
     "addressbook_not_found": {
-      "string": "The address book could not be found.",
+      "string": "La rubrica non è stata trovata.",
       "context": "Error when an address book is missing."
     },
     "addressbook_duplicate": {
-      "string": "An address book with this name already exists.",
+      "string": "Esiste già una rubrica con questo nome.",
       "context": "Toast when address book creation conflicts."
     },
     "contact_not_found": {
-      "string": "The contact could not be found.",
+      "string": "Il contatto non è stato trovato.",
       "context": "Error when a contact is missing."
     },
     "contact_duplicate": {
-      "string": "A contact with this identifier already exists.",
+      "string": "Esiste già un contatto con questo identificativo.",
       "context": "Toast when contact creation conflicts."
     },
     "contact_persist_failed": {
-      "string": "The contact could not be saved.",
+      "string": "Impossibile salvare il contatto.",
       "context": "Error when contact creation fails on the server."
     },
     "contact_update_failed": {
-      "string": "The contact could not be updated.",
+      "string": "Impossibile aggiornare il contatto.",
       "context": "Error when contact update fails on the server."
     },
     "operation_not_supported": {
-      "string": "This operation is not supported for this address book.",
+      "string": "Questa operazione non è supportata per questa rubrica.",
       "context": "Error when mutating a non-local address book source."
     },
     "list_not_found": {
-      "string": "The distribution list could not be found.",
+      "string": "La lista di distribuzione non è stata trovata.",
       "context": "Error when a distribution list is missing."
     },
     "list_duplicate": {
-      "string": "A distribution list with this name already exists.",
+      "string": "Esiste già una lista di distribuzione con questo nome.",
       "context": "Toast when list creation conflicts."
     },
     "list_persist_failed": {
-      "string": "The distribution list could not be saved.",
+      "string": "Impossibile salvare la lista di distribuzione.",
       "context": "Error when list creation fails on the server."
     },
     "list_update_failed": {
-      "string": "The distribution list could not be updated.",
+      "string": "Impossibile aggiornare la lista di distribuzione.",
       "context": "Error when list update fails on the server."
     },
     "access_denied": {
-      "string": "You do not have permission to modify this address book.",
+      "string": "Non hai il permesso di modificare questa rubrica.",
       "context": "Toast when write access is denied."
     },
     "read_only": {
-      "string": "This address book is read-only.",
+      "string": "Questa rubrica è in sola lettura.",
       "context": "Toast when mutating a read-only address book."
     },
     "export_format_unsupported": {
-      "string": "The selected export format is not supported.",
+      "string": "Il formato di esportazione selezionato non è supportato.",
       "context": "Error when export format negotiation fails."
     },
     "import_no_file": {
-      "string": "No file was provided for import.",
+      "string": "Nessun file è stato fornito per l'importazione.",
       "context": "Error when import request has no file."
     },
     "import_too_large": {
-      "string": "The import file exceeds the maximum allowed size (10 MB).",
+      "string": "Il file di importazione supera la dimensione massima consentita (10 MB).",
       "context": "Error when import payload is too large."
     },
     "import_parse_failed": {
-      "string": "The import file could not be parsed.",
+      "string": "Impossibile analizzare il file di importazione.",
       "context": "Error when import document parsing fails."
     },
     "job_not_found": {
-      "string": "The background job could not be found.",
+      "string": "Il job in background non è stato trovato.",
       "context": "Error when polling an unknown job."
     },
     "job_forbidden": {
-      "string": "You do not have access to this background job.",
+      "string": "Non hai accesso a questo job in background.",
       "context": "Error when job belongs to another user."
     },
     "job_not_ready": {
-      "string": "The export is not ready yet. Please wait and try again.",
+      "string": "L'esportazione non è ancora pronta. Attendi e riprova.",
       "context": "Error when downloading a job result too early."
     },
     "job_no_result": {
-      "string": "This job has no downloadable result.",
+      "string": "Questo job non ha un risultato scaricabile.",
       "context": "Error when job result is unavailable."
     },
     "job_concurrent_limit": {
-      "string": "Too many background jobs are running. Please try again later.",
+      "string": "Troppi job in background sono in esecuzione. Riprova più tardi.",
       "context": "Error when concurrent job limit is reached."
     },
     "file_too_large": {
-      "string": "The photo exceeds the maximum allowed size (2 MB).",
+      "string": "La foto supera la dimensione massima consentita (2 MB).",
       "context": "Inline error when contact photo upload is too large."
     },
     "file_type_not_allowed": {
-      "string": "This file type is not allowed for contact photos.",
+      "string": "Questo tipo di file non è consentito per le foto dei contatti.",
       "context": "Inline error when contact photo type is not allowed."
     },
     "generic": {
-      "string": "The operation could not be completed. Please try again.",
+      "string": "Impossibile completare l'operazione. Riprova.",
       "context": "Fallback error message for contact API errors."
     }
   }

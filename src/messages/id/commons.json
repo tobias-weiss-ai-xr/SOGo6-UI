@@ -1,17 +1,17 @@
 {
     "COMMONS": {
         "close": {
-            "string": "Close"
+            "string": "Tutup"
         },
         "workInProgress": {
             "description": {
-                "string": "This feature is currently under development."
+                "string": "Fitur ini sedang dalam pengembangan."
             },
             "message": {
-                "string": "We're working hard to bring you this feature."
+                "string": "Kami bekerja keras untuk menghadirkan fitur ini untuk Anda."
             },
             "comingSoon": {
-                "string": "Coming soon! Stay tuned."
+                "string": "Segera hadir! Nantikan terus."
             }
         }
     },
@@ -19,13 +19,13 @@
         "demo": {
             "warning": {
                 "title": {
-                    "string": "Demo Version"
+                    "string": "Versi Demo"
                 },
                 "description": {
-                    "string": "You are currently using a demo version of the application. Some features may be limited."
+                    "string": "Anda sedang menggunakan versi demo aplikasi. Beberapa fitur mungkin dibatasi."
                 },
                 "action": {
-                    "string": "Got it"
+                    "string": "Mengerti"
                 }
             }
         },
@@ -35,13 +35,13 @@
         },
         "serviceUnavailable": {
             "title": {
-                "string": "Service unavailable"
+                "string": "Layanan tidak tersedia"
             },
             "description": {
-                "string": "The application could not connect to the server. Please try again later or contact your administrator."
+                "string": "Aplikasi tidak dapat terhubung ke server. Silakan coba lagi nanti atau hubungi administrator Anda."
             },
             "retry": {
-                "string": "Try again"
+                "string": "Coba lagi"
             }
         }
     }

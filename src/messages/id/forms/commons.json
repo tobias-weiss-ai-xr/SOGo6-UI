@@ -2,13 +2,13 @@
     "FORM_COMMONS": {
         "save": {
             "default": {
-                "string": "Save",
+                "string": "Simpan",
                 "description": "Click to save the form data."
             }
         },
         "delete": {
             "default": {
-                "string": "Delete",
+                "string": "Hapus",
                 "description": "Click to delete the selected item."
             }
         },
@@ -20,13 +20,13 @@
         },
         "cancel": {
             "default": {
-                "string": "Cancel",
+                "string": "Batal",
                 "description": "Click to cancel the form submission."
             }
         },
         "create": {
             "default": {
-                "string": "Create",
+                "string": "Buat",
                 "description": "Click to create a new item."
             }
         },

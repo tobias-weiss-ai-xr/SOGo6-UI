@@ -16,7 +16,7 @@
         },
         "settings": {
             "title": {
-                "string": "Settings",
+                "string": "การตั้งค่า",
                 "context": "Section title for the settings sidebar"
             },
             "general": {
@@ -29,7 +29,7 @@
             },
             "calendars": {
                 "title": {
-                    "string": "Calendar",
+                    "string": "ปฏิทิน",
                     "context": "Section title for the settings sidebar"
                 },
                 "general": {

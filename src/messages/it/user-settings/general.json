@@ -1,80 +1,80 @@
 {
     "US_GENERAL": {
         "title": {
-            "string": "General Settings",
+            "string": "Impostazioni Generali",
             "context": "Title for the general settings page"
         },
         "labels": {
             "language": {
-                "string": "Language"
+                "string": "Lingua"
             },
             "timezone": {
-                "string": "Timezone"
+                "string": "Fuso orario"
             },
             "short_date_style": {
-                "string": "Short Date Style"
+                "string": "Formato data breve"
             },
             "long_date_style": {
-                "string": "Long Date Style"
+                "string": "Formato data esteso"
             },
             "time_style": {
-                "string": "Time Style"
+                "string": "Formato ora"
             },
             "default_view": {
-                "string": "Default View"
+                "string": "Vista predefinita"
             },
             "refresh_frequency": {
-                "string": "Refresh Frequency"
+                "string": "Frequenza aggiornamento"
             },
             "enable_notifications": {
-                "string": "Enable Notifications"
+                "string": "Abilita notifiche"
             },
             "saved": {
-                "string": "General settings saved"
+                "string": "Impostazioni generali salvate"
             },
             "mail": {
-                "string": "Mail"
+                "string": "Posta"
             },
             "calendar": {
-                "string": "Calendar"
+                "string": "Calendario"
             },
             "contacts": {
-                "string": "Contacts"
+                "string": "Contatti"
             },
             "last": {
-                "string": "Last displayed module"
+                "string": "Ultimo modulo visualizzato"
             },
             "enable_external_avatar": {
-                "string": "Enable external avatar"
+                "string": "Abilita avatar esterno"
             }
         },
         "descriptions": {
             "language": {
-                "string": "The language used in the app."
+                "string": "La lingua utilizzata nell'app."
             },
             "timezone": {
-                "string": "The time zone you are in."
+                "string": "Il fuso orario in cui ti trovi."
             },
             "short_date_style": {
-                "string": "How dates are displayed in the app."
+                "string": "Come vengono visualizzate le date nell'app."
             },
             "long_date_style": {
-                "string": "How dates are displayed in the app."
+                "string": "Come vengono visualizzate le date nell'app."
             },
             "time_style": {
-                "string": "How time is displayed in the app."
+                "string": "Come viene visualizzata l'ora nell'app."
             },
             "default_view": {
-                "string": "The default view when you open the app."
+                "string": "La vista predefinita quando apri l'app."
             },
             "refresh_frequency": {
-                "string": " How often the app should check for new emails, calendar events, and more."
+                "string": "Con quale frequenza l'app deve controllare nuovi messaggi, eventi del calendario e altro."
             },
             "enable_notifications": {
-                "string": "Receive notifications for new emails, calendar events, and more."
+                "string": "Ricevi notifiche per nuovi messaggi, eventi del calendario e altro."
             },
             "enable_external_avatar": {
-                "string": "Enable external avatar (e.g., Gravatar)"
+                "string": "Abilita avatar esterno (es. Gravatar)"
             }
         }
     }

@@ -1,17 +1,17 @@
 {
     "COMMONS": {
         "close": {
-            "string": "Close"
+            "string": "إغلاق"
         },
         "workInProgress": {
             "description": {
-                "string": "This feature is currently under development."
+                "string": "هذه الميزة قيد التطوير حالياً."
             },
             "message": {
-                "string": "We're working hard to bring you this feature."
+                "string": "نعمل بجد لتقديم هذه الميزة لك."
             },
             "comingSoon": {
-                "string": "Coming soon! Stay tuned."
+                "string": "قريباً! ترقبوا."
             }
         }
     },
@@ -19,13 +19,13 @@
         "demo": {
             "warning": {
                 "title": {
-                    "string": "Demo Version"
+                    "string": "نسخة تجريبية"
                 },
                 "description": {
-                    "string": "You are currently using a demo version of the application. Some features may be limited."
+                    "string": "أنت تستخدم حالياً نسخة تجريبية من التطبيق. قد تكون بعض الميزات محدودة."
                 },
                 "action": {
-                    "string": "Got it"
+                    "string": "فهمت"
                 }
             }
         },
@@ -35,13 +35,13 @@
         },
         "serviceUnavailable": {
             "title": {
-                "string": "Service unavailable"
+                "string": "الخدمة غير متاحة"
             },
             "description": {
-                "string": "The application could not connect to the server. Please try again later or contact your administrator."
+                "string": "لم يتمكن التطبيق من الاتصال بالخادم. يرجى المحاولة مرة أخرى لاحقاً أو الاتصال بالمسؤول."
             },
             "retry": {
-                "string": "Try again"
+                "string": "إعادة المحاولة"
             }
         }
     }

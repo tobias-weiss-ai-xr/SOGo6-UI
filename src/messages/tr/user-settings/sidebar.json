@@ -16,7 +16,7 @@
         },
         "settings": {
             "title": {
-                "string": "Settings",
+                "string": "Ayarlar",
                 "context": "Section title for the settings sidebar"
             },
             "general": {
@@ -29,7 +29,7 @@
             },
             "calendars": {
                 "title": {
-                    "string": "Calendar",
+                    "string": "Takvim",
                     "context": "Section title for the settings sidebar"
                 },
                 "general": {

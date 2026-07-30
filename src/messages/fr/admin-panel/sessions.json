@@ -28,7 +28,7 @@
         },
         "revoke": {
             "button": {
-                "string": "Révoquer"
+                "string": "Révoqueur"
             },
             "confirm": {
                 "string": "Confirmez-vous la révocation de cette session ?"

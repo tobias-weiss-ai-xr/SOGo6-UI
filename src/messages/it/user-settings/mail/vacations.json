@@ -1,130 +1,130 @@
 {
     "US_MAIL_VACATIONS": {
         "title": {
-            "string": "Vacation Settings",
+            "string": "Impostazioni Vacanza",
             "context": "Title for the vacation settings page"
         },
         "page": {
             "description": {
-                "string": "Configure your out-of-office auto reply message and when it should be active."
+                "string": "Configura il messaggio di risposta automatica per fuori sede e quando dovrebbe essere attivo."
             }
         },
         "errors_api": {
             "load_failed": {
-                "string": "Could not load vacation settings. Please try again later."
+                "string": "Impossibile caricare le impostazioni di vacanza. Riprova più tardi."
             },
             "feature_disabled": {
-                "string": "Vacation auto reply has been disabled by your administrator."
+                "string": "La risposta automatica di vacanza è stata disabilitata dall'amministratore."
             }
         },
         "errors": {
             "validation": {
                 "message_required": {
-                    "string": "Auto reply message is required when vacation is enabled."
+                    "string": "Il messaggio di risposta automatica è obbligatorio quando la vacanza è abilitata."
                 },
                 "dates_required": {
-                    "string": "Start and end dates are required when date constraints are enabled."
+                    "string": "Le date di inizio e fine sono obbligatorie quando i vincoli di data sono abilitati."
                 },
                 "date_order": {
-                    "string": "End date must be on or after the start date."
+                    "string": "La data di fine deve essere uguale o successiva alla data di inizio."
                 },
                 "time_invalid": {
-                    "string": "Please enter a valid time in HH:MM format."
+                    "string": "Inserisci un orario valido nel formato HH:MM."
                 },
                 "weekday_required": {
-                    "string": "Select at least one weekday when weekday constraints are enabled."
+                    "string": "Seleziona almeno un giorno della settimana quando i vincoli sui giorni sono abilitati."
                 },
                 "response_interval_invalid": {
-                    "string": "Response interval must be zero or a positive number."
+                    "string": "L'intervallo di risposta deve essere zero o un numero positivo."
                 },
                 "response_interval_zero": {
-                    "string": "A zero-day response interval is not allowed on this domain."
+                    "string": "Un intervallo di risposta di zero giorni non è consentito su questo dominio."
                 }
             }
         },
         "auto_reply": {
             "enable": {
-                "string": "Enable vacation auto reply"
+                "string": "Abilita risposta automatica di vacanza"
             },
             "subject": {
                 "label": {
-                    "string": "Auto reply subject"
+                    "string": "Oggetto risposta automatica"
                 },
                 "description": {
-                    "string": "Leave blank to use default subject. You can write {subject} to insert the original subject."
+                    "string": "Lascia vuoto per usare l'oggetto predefinito. Puoi scrivere {subject} per inserire l'oggetto originale."
                 }
             },
             "message": {
-                "string": "Auto reply message"
+                "string": "Messaggio di risposta automatica"
             },
             "constraints": {
                 "title": {
-                    "string": "Activation constraints"
+                    "string": "Vincoli di attivazione"
                 },
                 "description": {
-                    "string": "Customize day and hour ranges independently and optionally combine them with specific weekdays to tailor your vacation filters to your preferences."
+                    "string": "Personalizza intervalli di giorni e ore indipendentemente e combinali opzionalmente con giorni specifici per personalizzare i filtri di vacanza secondo le tue preferenze."
                 },
                 "enable": {
                     "days": {
-                        "string": "Enable auto reply on these days"
+                        "string": "Abilita risposta automatica in questi giorni"
                     },
                     "hours": {
-                        "string": "Enable auto reply between these hours"
+                        "string": "Abilita risposta automatica tra queste ore"
                     },
                     "range": {
-                        "string": "Enable auto reply between these days"
+                        "string": "Abilita risposta automatica tra questi giorni"
                     }
                 },
                 "time": {
                     "start": {
-                        "string": "Start time"
+                        "string": "Ora inizio"
                     },
                     "end": {
-                        "string": "End time"
+                        "string": "Ora fine"
                     }
                 },
                 "weekdays": {
                     "monday": {
-                        "string": "Monday"
+                        "string": "Lunedì"
                     },
                     "tuesday": {
-                        "string": "Tuesday"
+                        "string": "Martedì"
                     },
                     "wednesday": {
-                        "string": "Wednesday"
+                        "string": "Mercoledì"
                     },
                     "thursday": {
-                        "string": "Thursday"
+                        "string": "Giovedì"
                     },
                     "friday": {
-                        "string": "Friday"
+                        "string": "Venerdì"
                     },
                     "saturday": {
-                        "string": "Saturday"
+                        "string": "Sabato"
                     },
                     "sunday": {
-                        "string": "Sunday"
+                        "string": "Domenica"
                     }
                 }
             },
             "response": {
                 "interval_days": {
                     "label": {
-                        "string": "Minimum days between auto replies"
+                        "string": "Giorni minimi tra risposte automatiche"
                     },
                     "placeholder": {
-                        "string": "Leave empty for default behavior"
+                        "string": "Lascia vuoto per il comportamento predefinito"
                     },
                     "description": {
-                        "string": "Prevents sending duplicate vacation replies within this period (RFC 5230 :days)."
+                        "string": "Previene l'invio di risposte di vacanza duplicate entro questo periodo (RFC 5230 :days)."
                     }
                 },
                 "send_always": {
                     "label": {
-                        "string": "Always send vacation message response"
+                        "string": "Invia sempre messaggio di risposta di vacanza"
                     },
                     "description": {
-                        "string": "The vacation message is sent prior to applying your filters."
+                        "string": "Il messaggio di vacanza viene inviato prima di applicare i filtri."
                     }
                 }
             }

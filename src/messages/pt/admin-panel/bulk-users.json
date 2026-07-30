@@ -1,25 +1,25 @@
 { "AP_BULK": {
-    "title": { "string": "Bulk User Management" },
-    "description": { "string": "Import and export users in bulk using CSV files." },
+    "title": { "string": "Gerenciamento de Usuários em Massa" },
+    "description": { "string": "Importe e exporte usuários em massa usando arquivos CSV." },
     "export": {
-      "title": { "string": "Export Users" },
-      "description": { "string": "Download all users as a CSV file." },
-      "format": { "string": "CSV file (.csv)" },
-      "button": { "string": "Export CSV" },
-      "success": { "string": "Export downloaded" },
-      "error": { "string": "Export failed" }
+      "title": { "string": "Exportar Usuários" },
+      "description": { "string": "Baixe todos os usuários como um arquivo CSV." },
+      "format": { "string": "Arquivo CSV (.csv)" },
+      "button": { "string": "Exportar CSV" },
+      "success": { "string": "Exportação baixada" },
+      "error": { "string": "Falha na exportação" }
     },
     "import": {
-      "title": { "string": "Import Users" },
-      "description": { "string": "Upload a CSV file with user data to create or update accounts." },
-      "dropzone": { "string": "Click to upload CSV" },
-      "button": { "string": "Import CSV" },
-      "remove": { "string": "Remove file" },
-      "success": { "string": "Imported: {created} created, {updated} updated" },
-      "error": { "string": "Import failed" }
+      "title": { "string": "Importar Usuários" },
+      "description": { "string": "Envie um arquivo CSV com dados de usuário para criar ou atualizar contas." },
+      "dropzone": { "string": "Clique para enviar CSV" },
+      "button": { "string": "Importar CSV" },
+      "remove": { "string": "Remover arquivo" },
+      "success": { "string": "Importado: {created} criados, {updated} atualizados" },
+      "error": { "string": "Falha na importação" }
     },
     "format": {
-      "title": { "string": "CSV Format" },
-      "hint": { "string": "First row must be the header. uid, cn, sn, givenName, mail are required. password is optional (random if blank)." }
+      "title": { "string": "Formato CSV" },
+      "hint": { "string": "A primeira linha deve ser o cabeçalho. uid, cn, sn, givenName, mail são obrigatórios. password é opcional (aleatório se vazio)." }
     }
 }}

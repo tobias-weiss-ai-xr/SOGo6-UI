@@ -33,13 +33,13 @@
                 "string": "General settings saved"
             },
             "mail": {
-                "string": "Mail"
+                "string": "E-posta"
             },
             "calendar": {
-                "string": "Calendar"
+                "string": "Takvim"
             },
             "contacts": {
-                "string": "Contacts"
+                "string": "Kişiler"
             },
             "last": {
                 "string": "Last displayed module"

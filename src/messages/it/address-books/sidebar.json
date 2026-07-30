@@ -1,146 +1,146 @@
 {
     "ADDRESS_BOOKS_SIDEBAR": {
         "new_contact": {
-            "string": "New contact",
+            "string": "Nuovo contatto",
             "context": "Button for creating a new contact in the sidebar"
         },
         "new_distribution_list": {
-            "string": "New distribution list",
+            "string": "Nuova lista di distribuzione",
             "context": "Button for creating a new distribution list in the sidebar"
         },
         "globals": {
-            "string": "Global address books"
+            "string": "Rubriche globali"
         },
         "personals": {
-            "string": "Address books"
+            "string": "Rubriche"
         },
         "add_personal": {
-            "string": "Add address book"
+            "string": "Aggiungi rubrica"
         },
         "subscriptions": {
-            "string": "Subscriptions"
+            "string": "Sottoscrizioni"
         },
         "add_subscriptions": {
-            "string": "Add subscriptions"
+            "string": "Aggiungi sottoscrizioni"
         },
         "name": {
-            "string": "Name",
+            "string": "Nome",
             "context": "Label for the name field in the address book sidebar."
         },
         "options": {
             "edit": {
                 "title": {
-                    "string": "Edit address book {name}"
+                    "string": "Modifica rubrica {name}"
                 },
                 "labels": {
                     "name": {
-                        "string": "Name"
+                        "string": "Nome"
                     }
                 }
             },
             "link": {
                 "title": {
-                    "string": "Links"
+                    "string": "Collegamenti"
                 },
                 "labels": {
                     "name": {
-                        "string": "CardDAV URL"
+                        "string": "URL CardDAV"
                     }
                 },
                 "copy": {
-                    "string": "Copy URL",
+                    "string": "Copia URL",
                     "context": "Aria label for copying the address book CardDAV URL."
                 }
             },
             "delete": {
                 "title": {
-                    "string": "Are you sure you want to delete address book {name}?"
+                    "string": "Sei sicuro di voler eliminare la rubrica {name}?"
                 }
             },
             "sharing": {
-                "string": "Sharing"
+                "string": "Condivisione"
             },
             "import": {
-                "string": "Import"
+                "string": "Importa"
             },
             "export": {
-                "string": "Export"
+                "string": "Esporta"
             },
             "ios_download": {
-                "string": "Download iOS - MacOS configuration profile"
+                "string": "Scarica profilo configurazione iOS - macOS"
             }
         },
         "sharing": {
             "title": {
-                "string": "Address Book Sharing"
+                "string": "Condivisione Rubrica"
             },
             "description": {
-                "string": "Share this address book with other users. Shared users can view or modify contacts based on the permission level you grant."
+                "string": "Condividi questa rubrica con altri utenti. Gli utenti con cui la condividi possono visualizzare o modificare i contatti in base al livello di autorizzazione che concedi."
             },
             "addUser": {
-                "string": "Add User"
+                "string": "Aggiungi utente"
             },
             "searchPlaceholder": {
-                "string": "Enter user email..."
+                "string": "Inserisci email utente..."
             },
             "addButton": {
-                "string": "Share"
+                "string": "Condividi"
             },
             "added": {
-                "string": "Address book shared successfully"
+                "string": "Rubrica condivisa con successo"
             },
             "addError": {
-                "string": "Failed to share address book"
+                "string": "Condivisione rubrica fallita"
             },
             "removed": {
-                "string": "Share removed successfully"
+                "string": "Condivisione rimossa con successo"
             },
             "removeError": {
-                "string": "Failed to remove share"
+                "string": "Rimozione condivisione fallita"
             },
             "removeButton": {
-                "string": "Remove"
+                "string": "Rimuovi"
             },
             "existingShares": {
-                "string": "Shared with"
+                "string": "Condivisa con"
             },
             "noShares": {
-                "string": "This address book is not shared with anyone yet."
+                "string": "Questa rubrica non è ancora condivisa con nessuno."
             },
             "table": {
                 "user": {
-                    "string": "User"
+                    "string": "Utente"
                 },
                 "level": {
-                    "string": "Permission Level"
+                    "string": "Livello di autorizzazione"
                 }
             }
         },
         "all_contacts": {
-            "string": "All contacts",
+            "string": "Tutti i contatti",
             "context": "Sidebar entry for cross-address-book contact listing"
         },
         "import": {
             "description": {
-                "string": "Upload a contacts or distribution list file to import."
+                "string": "Carica un file di contatti o liste di distribuzione da importare."
             },
             "title_book": {
-                "string": "Import into {name}"
+                "string": "Importa in {name}"
             },
             "scope": {
-                "string": "Import target"
+                "string": "Destinazione importazione"
             },
             "scope_contacts": {
-                "string": "Contacts into this address book"
+                "string": "Contatti in questa rubrica"
             },
             "scope_lists": {
-                "string": "Distribution lists into this address book"
+                "string": "Liste di distribuzione in questa rubrica"
             },
             "scope_new_book": {
-                "string": "Create a new address book"
+                "string": "Crea una nuova rubrica"
             },
             "format": {
-                "string": "File format"
+                "string": "Formato file"
             },
             "format_json": {
                 "string": "JSON"
@@ -158,45 +158,45 @@
                 "string": "File"
             },
             "submit": {
-                "string": "Start import"
+                "string": "Avvia importazione"
             },
             "processing": {
-                "string": "Import in progress..."
+                "string": "Importazione in corso..."
             },
             "cancel": {
-                "string": "Cancel import"
+                "string": "Annulla importazione"
             },
             "success": {
-                "string": "Import completed successfully."
+                "string": "Importazione completata con successo."
             },
             "success_with_counts": {
-                "string": "Import completed. Created: {counts}."
+                "string": "Importazione completata. Creati: {counts}."
             },
             "close": {
-                "string": "Close"
+                "string": "Chiudi"
             }
         },
         "export": {
             "description": {
-                "string": "Export this address book to a file."
+                "string": "Esporta questa rubrica in un file."
             },
             "title_book": {
-                "string": "Export {name}"
+                "string": "Esporta {name}"
             },
             "format": {
-                "string": "Export format"
+                "string": "Formato di esportazione"
             },
             "submit": {
-                "string": "Start export"
+                "string": "Avvia esportazione"
             },
             "processing": {
-                "string": "Export in progress..."
+                "string": "Esportazione in corso..."
             },
             "success": {
-                "string": "Export completed. Your download should start shortly."
+                "string": "Esportazione completata. Il download dovrebbe iniziare a breve."
             },
             "close": {
-                "string": "Close"
+                "string": "Chiudi"
             }
         }
     }

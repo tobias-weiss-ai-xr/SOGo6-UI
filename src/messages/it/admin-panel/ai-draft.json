@@ -1,1 +1,40 @@
-{ "AI_DRAFT": { "title": { "string": "AI Draft Assistant" }, "description": { "string": "Reply suggestions with tone adjustment. Generates contextual draft replies." }, "input": { "title": { "string": "Original Email" }, "email": { "string": "Email Body" }, "placeholder": { "string": "Paste the email you want to reply to..." } }, "output": { "title": { "string": "Suggested Reply" }, "empty": { "string": "Enter email text and select a tone" } }, "suggest": { "string": "Suggest Reply" }, "errors": { "empty": { "string": "Enter email text" }, "fail": { "string": "Suggestion failed" } } }}
+{
+    "AI_DRAFT": {
+        "title": {
+            "string": "Assistente Bozze AI"
+        },
+        "description": {
+            "string": "Suggerimenti di risposta con regolazione del tono. Genera bozze di risposta contestuali."
+        },
+        "input": {
+            "title": {
+                "string": "Email Originale"
+            },
+            "email": {
+                "string": "Corpo Email"
+            },
+            "placeholder": {
+                "string": "Incolla l'email a cui vuoi rispondere..."
+            }
+        },
+        "output": {
+            "title": {
+                "string": "Risposta Suggerita"
+            },
+            "empty": {
+                "string": "Inserisci il testo dell'email e seleziona un tono"
+            }
+        },
+        "suggest": {
+            "string": "Suggerisci Risposta"
+        },
+        "errors": {
+            "empty": {
+                "string": "Inserisci il testo dell'email"
+            },
+            "fail": {
+                "string": "Suggerimento fallito"
+            }
+        }
+    }
+}

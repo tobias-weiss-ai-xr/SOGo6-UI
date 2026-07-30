@@ -110,10 +110,10 @@
                 "string": "Visibilité"
             },
             "save": {
-                "string": "Enregistrer"
+                "string": "Enregistreur"
             },
             "cancel": {
-                "string": "Annuler"
+                "string": "Annuleur"
             },
             "calendar_required": {
                 "string": "Select a calendar"
@@ -126,10 +126,10 @@
         },
         "actions": {
             "edit": {
-                "string": "Modifier"
+                "string": "Modifieur"
             },
             "delete": {
-                "string": "Supprimer"
+                "string": "Supprimeur"
             }
         },
         "delete_dialog": {
@@ -140,10 +140,10 @@
                 "string": "Cette action est irréversible."
             },
             "confirm": {
-                "string": "Supprimer"
+                "string": "Supprimeur"
             },
             "cancel": {
-                "string": "Annuler"
+                "string": "Annuleur"
             }
         },
         "selection": {
@@ -151,7 +151,7 @@
                 "string": "Select tasks"
             },
             "cancel": {
-                "string": "Annuler"
+                "string": "Annuleur"
             },
             "select_all": {
                 "string": "Select all tasks"
@@ -161,13 +161,13 @@
             },
             "actions": {
                 "complete": {
-                    "string": "Terminer"
+                    "string": "Termineur"
                 },
                 "reopen": {
                     "string": "Rouvrir"
                 },
                 "delete": {
-                    "string": "Supprimer"
+                    "string": "Supprimeur"
                 }
             },
             "delete_dialog": {
@@ -178,10 +178,10 @@
                     "string": "You are about to delete {count, plural, one {# task} other {# tasks}}. This action cannot be undone."
                 },
                 "confirm": {
-                    "string": "Supprimer"
+                    "string": "Supprimeur"
                 },
                 "cancel": {
-                    "string": "Annuler"
+                    "string": "Annuleur"
                 }
             }
         },

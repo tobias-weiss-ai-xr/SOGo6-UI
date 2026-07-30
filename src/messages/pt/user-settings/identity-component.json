@@ -1,37 +1,37 @@
 {
     "IDENTITY_COMPONENT": {
         "labels": {
-            "name": "Identity Name",
-            "email": "Email Address",
-            "replyTo": "Reply To",
-            "newIdentity": "New Identity",
-            "default": "Default",
-            "removeIdentity": "Remove Identity",
-            "atLeastOneIdentity": "At least one identity is required",
+            "name": "Nome da Identidade",
+            "email": "Endereço de E-mail",
+            "replyTo": "Responder Para",
+            "newIdentity": "Nova Identidade",
+            "default": "Padrão",
+            "removeIdentity": "Remover Identidade",
+            "atLeastOneIdentity": "Pelo menos uma identidade é obrigatória",
             "useDefaultIdentity": {
-                "string": "Use as default identity"
+                "string": "Usar como identidade padrão"
             },
-            "setAsDefault": "Set as default",
-            "defaultDescription": "This identity will be used by default when composing new messages",
-            "mainIdentityEmail": "This is your main email address and cannot be changed",
-            "nameNotEditable": "Name editing is disabled by administrator",
-            "replyToNotEditable": "Reply-To editing is disabled by administrator",
-            "signatures": "Signatures",
-            "signaturesDescription": "Create and manage email signatures for this identity",
-            "signaturePlaceholder": "Enter signature name",
-            "addIdentity": "Add an identity",
-            "allowsCustom": "You can add and manage additional identities"
+            "setAsDefault": "Definir como padrão",
+            "defaultDescription": "Esta identidade será usada por padrão ao compor novas mensagens",
+            "mainIdentityEmail": "Este é seu endereço de e-mail principal e não pode ser alterado",
+            "nameNotEditable": "A edição do nome foi desabilitada pelo administrador",
+            "replyToNotEditable": "A edição de Responder Para foi desabilitada pelo administrador",
+            "signatures": "Assinaturas",
+            "signaturesDescription": "Crie e gerencie assinaturas de e-mail para esta identidade",
+            "signaturePlaceholder": "Insira o nome da assinatura",
+            "addIdentity": "Adicionar uma identidade",
+            "allowsCustom": "Você pode adicionar e gerenciar identidades adicionais"
         },
         "description": {
             "useDefaultIdentity": {
-                "string": "This identity will be selected by default when composing new messages"
+                "string": "Esta identidade será selecionada por padrão ao compor novas mensagens"
             }
         },
         "accessibility": {
-            "toggleCollapse": "Toggle identity details",
-            "expandIdentity": "Expand",
-            "collapseIdentity": "Collapse",
-            "removeIcon": "Remove identity button"
+            "toggleCollapse": "Alternar detalhes da identidade",
+            "expandIdentity": "Expandir",
+            "collapseIdentity": "Recolher",
+            "removeIcon": "Botão de remover identidade"
         }
     }
 }

@@ -1,16 +1,35 @@
 {
-  "MATRIX": {
-    "title": { "string": "Matrix Chat Integration" },
-    "description": { "string": "Embedded Matrix rooms, messaging, and SOGo user linking" },
-    "errors": { "name": { "string": "Name required" }, "fail": { "string": "Operation failed" } },
-    "success": { "config": { "string": "Configuration saved" }, "room": { "string": "Room created" } },
-    "config": { "title": { "string": "Server Config" }, "enabled": { "string": "Enabled" }, "bridge": { "string": "Bridge" } },
-    "rooms": {
-      "title": { "string": "Chat Rooms" },
-      "name": { "placeholder": { "string": "Room name..." } },
-      "visibility": { "private": { "string": "Private" }, "public": { "string": "Public" } }
-    },
-    "button": { "save": { "string": "Save" }, "create": { "string": "Create Room" } },
-    "links": { "title": { "string": "User Links" }, "empty": { "string": "No linked users" } }
-  }
+    "MATRIX": {
+        "title": { "string": "Integrazione Chat Matrix" },
+        "description": { "string": "Stanze Matrix integrate, messaggistica e collegamento utenti SOGo" },
+        "errors": {
+            "name": { "string": "Nome obbligatorio" },
+            "fail": { "string": "Operazione fallita" }
+        },
+        "success": {
+            "config": { "string": "Configurazione salvata" },
+            "room": { "string": "Stanza creata" }
+        },
+        "config": {
+            "title": { "string": "Configurazione Server" },
+            "enabled": { "string": "Abilitato" },
+            "bridge": { "string": "Bridge" }
+        },
+        "rooms": {
+            "title": { "string": "Stanze Chat" },
+            "name": { "placeholder": { "string": "Nome stanza..." } },
+            "visibility": {
+                "private": { "string": "Privata" },
+                "public": { "string": "Pubblica" }
+            }
+        },
+        "button": {
+            "save": { "string": "Salva" },
+            "create": { "string": "Crea Stanza" }
+        },
+        "links": {
+            "title": { "string": "Collegamenti Utenti" },
+            "empty": { "string": "Nessun utente collegato" }
+        }
+    }
 }

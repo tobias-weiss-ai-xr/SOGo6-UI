@@ -1,8 +1,26 @@
-{ "AP_MIG": {
-    "title": { "string": "Migration Tools" },
-    "description": { "string": "Import data from external sources — G Suite, M365, Dovecot, Cyrus, or file uploads." },
-    "wizard": { "title": { "string": "Start Migration" }, "source": { "string": "Source" }, "select_source": { "string": "Choose a source..." }, "user": { "string": "Target User" }, "select_user": { "string": "Select user..." } },
-    "start": { "button": { "string": "Start Migration" }, "running": { "string": "Starting..." }, "success": { "string": "Migration started" }, "error": { "string": "Migration failed" } },
-    "history": { "title": { "string": "Migration History" }, "empty": { "string": "No migrations yet." } },
-    "errors": { "fields": { "string": "Source and user are required" } }
-}}
+{
+    "AP_MIG": {
+        "title": { "string": "Strumenti di Migrazione" },
+        "description": { "string": "Importa dati da fonti esterne — G Suite, M365, Dovecot, Cyrus o caricamenti file." },
+        "wizard": {
+            "title": { "string": "Avvia Migrazione" },
+            "source": { "string": "Sorgente" },
+            "select_source": { "string": "Scegli una sorgente..." },
+            "user": { "string": "Utente Destinazione" },
+            "select_user": { "string": "Seleziona utente..." }
+        },
+        "start": {
+            "button": { "string": "Avvia Migrazione" },
+            "running": { "string": "Avvio in corso..." },
+            "success": { "string": "Migrazione avviata" },
+            "error": { "string": "Migrazione fallita" }
+        },
+        "history": {
+            "title": { "string": "Cronologia Migrazioni" },
+            "empty": { "string": "Nessuna migrazione ancora." }
+        },
+        "errors": {
+            "fields": { "string": "Sorgente e utente sono obbligatori" }
+        }
+    }
+}

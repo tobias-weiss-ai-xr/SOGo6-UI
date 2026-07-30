@@ -37,10 +37,10 @@
         "identities": {},
         "api": {
             "title": {
-                "string": "Error"
+                "string": "错误"
             },
             "loading": {
-                "string": "Loading"
+                "string": "Loading中"
             },
             "load_failed": {
                 "string": "Failed to load profile. Please try again later."

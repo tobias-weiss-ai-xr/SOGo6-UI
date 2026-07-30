@@ -1,1 +1,57 @@
-{ "AI_TRANSCRIPTS": { "title": { "string": "Meeting Transcripts" }, "description": { "string": "Record meeting transcripts, auto-generate summaries and action items." }, "form": { "create": { "string": "New Transcript" }, "cancel": { "string": "Cancel" }, "title": { "string": "Create Transcript" }, "meeting_title": { "string": "Meeting Title" }, "event_id": { "string": "Calendar Event ID" }, "attendees": { "string": "Attendees" }, "transcript": { "string": "Transcript / Notes" }, "placeholder": { "string": "Paste meeting notes or transcript..." }, "submit": { "string": "Save & Summarize" } }, "create": { "success": { "string": "Transcript saved" }, "error": { "string": "Failed to save" } }, "list": { "empty": { "string": "No transcripts yet." } }, "errors": { "fields": { "string": "Title and transcript text are required" } } }}
+{
+    "AI_TRANSCRIPTS": {
+        "title": {
+            "string": "Meeting Transcripts"
+        },
+        "description": {
+            "string": "Record meeting transcripts, auto-generate summaries and action items."
+        },
+        "form": {
+            "create": {
+                "string": "New Transcript"
+            },
+            "cancel": {
+                "string": "İptal"
+            },
+            "title": {
+                "string": "Create Transcript"
+            },
+            "meeting_title": {
+                "string": "Meeting Title"
+            },
+            "event_id": {
+                "string": "Calendar Event ID"
+            },
+            "attendees": {
+                "string": "Attendees"
+            },
+            "transcript": {
+                "string": "Transcript / Notes"
+            },
+            "placeholder": {
+                "string": "Paste meeting notes or transcript..."
+            },
+            "submit": {
+                "string": "Save & Summarize"
+            }
+        },
+        "create": {
+            "success": {
+                "string": "Transcript saved"
+            },
+            "error": {
+                "string": "Failed to save"
+            }
+        },
+        "list": {
+            "empty": {
+                "string": "No transcripts yet."
+            }
+        },
+        "errors": {
+            "fields": {
+                "string": "Title and transcript text are required"
+            }
+        }
+    }
+}

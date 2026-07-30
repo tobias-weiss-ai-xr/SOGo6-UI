@@ -1,39 +1,39 @@
 {
   "MAIL_SNOOZE": {
     "title": {
-      "string": "Snooze"
+      "string": "Später erinnern"
     },
     "description": {
-      "string": "Choose when this email should reappear in your inbox."
+      "string": "Wählen Sie, wann diese E-Mail in Ihrem Posteingang wieder erscheinen soll."
     },
     "presets": {
       "later_today": {
-        "string": "Later today"
+        "string": "Später heute"
       },
       "tomorrow": {
-        "string": "Tomorrow"
+        "string": "Morgen"
       },
       "this_weekend": {
-        "string": "This weekend"
+        "string": "Dieses Wochenende"
       },
       "next_week": {
-        "string": "Next week"
+        "string": "Nächste Woche"
       }
     },
     "pick_date": {
-      "string": "Pick a date & time"
+      "string": "Datum und Uhrzeit auswählen"
     },
     "pick_date_placeholder": {
-      "string": "Select date..."
+      "string": "Datum auswählen..."
     },
     "snooze_button": {
-      "string": "Snooze"
+      "string": "Später erinnern"
     },
     "success": {
-      "string": "Email snoozed"
+      "string": "E-Mail zurückgestellt"
     },
     "error": {
-      "string": "Failed to snooze email"
+      "string": "Fehler beim Zurückstellen der E-Mail"
     }
   }
 }

@@ -1,17 +1,17 @@
 {
     "COMMONS": {
         "close": {
-            "string": "Close"
+            "string": "Kapat"
         },
         "workInProgress": {
             "description": {
-                "string": "This feature is currently under development."
+                "string": "Bu özellik şu anda geliştirme aşamasındadır."
             },
             "message": {
-                "string": "We're working hard to bring you this feature."
+                "string": "Bu özelliği size sunmak için sıkı çalışıyoruz."
             },
             "comingSoon": {
-                "string": "Coming soon! Stay tuned."
+                "string": "Yakında! Takipte kalın."
             }
         }
     },
@@ -19,13 +19,13 @@
         "demo": {
             "warning": {
                 "title": {
-                    "string": "Demo Version"
+                    "string": "Demo Sürümü"
                 },
                 "description": {
-                    "string": "You are currently using a demo version of the application. Some features may be limited."
+                    "string": "Şu anda uygulamanın demo sürümünü kullanıyorsunuz. Bazı özellikler sınırlı olabilir."
                 },
                 "action": {
-                    "string": "Got it"
+                    "string": "Anladım"
                 }
             }
         },
@@ -35,13 +35,13 @@
         },
         "serviceUnavailable": {
             "title": {
-                "string": "Service unavailable"
+                "string": "Hizmet kullanılamıyor"
             },
             "description": {
-                "string": "The application could not connect to the server. Please try again later or contact your administrator."
+                "string": "Uygulama sunucuya bağlanamadı. Lütfen daha sonra tekrar deneyin veya yöneticinize başvurun."
             },
             "retry": {
-                "string": "Try again"
+                "string": "Tekrar dene"
             }
         }
     }

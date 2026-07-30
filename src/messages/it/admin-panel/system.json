@@ -1,79 +1,79 @@
 {
-  "AP_SYSTEM": {
-    "title": {
-      "string": "System Settings"
-    },
-    "description": {
-      "string": "Configure system-wide behaviour for the SOGo instance."
-    },
-    "form_title": {
-      "string": "Configuration"
-    },
-    "form_description": {
-      "string": "Modify global system settings below."
-    },
-    "save": {
-      "string": "Save"
-    },
-    "saving": {
-      "string": "Saving…"
-    },
-    "saved": {
-      "string": "System settings saved successfully."
-    },
-    "save_error": {
-      "string": "Failed to save: {message}"
-    },
-    "load_error": {
-      "string": "Failed to load system settings."
-    },
-    "retry": {
-      "string": "Retry"
-    },
-    "unsaved_changes": {
-      "string": "You have unsaved changes."
-    },
-    "fields": {
-      "SOGO_S_DIRECT_LOGIN": {
-        "label": {
-          "string": "Direct Login"
+    "AP_SYSTEM": {
+        "title": {
+            "string": "Impostazioni di Sistema"
         },
         "description": {
-          "string": "Allow users to log in without selecting a domain."
-        }
-      },
-      "SOGO_S_DOMAINLESS_LOGIN": {
-        "label": {
-          "string": "Domainless Login"
+            "string": "Configura il comportamento globale per l'istanza SOGo."
         },
-        "description": {
-          "string": "Allow login with username only (no @domain)."
-        }
-      },
-      "SOGO_S_DO_DOMAIN": {
-        "label": {
-          "string": "Enable Domains"
+        "form_title": {
+            "string": "Configurazione"
         },
-        "description": {
-          "string": "Enable multi-domain support for this instance."
-        }
-      },
-      "SOGO_S_REJECT_UNKNOWN_DOMAIN": {
-        "label": {
-          "string": "Reject Unknown Domains"
+        "form_description": {
+            "string": "Modifica le impostazioni globali di sistema qui sotto."
         },
-        "description": {
-          "string": "Reject login attempts from domains not configured in SOGo."
-        }
-      },
-      "SOGO_S_SENDMAIL": {
-        "label": {
-          "string": "Sendmail Path"
+        "save": {
+            "string": "Salva"
         },
-        "description": {
-          "string": "Absolute path to the sendmail binary used for outgoing mail."
+        "saving": {
+            "string": "Salvataggio in corso…"
+        },
+        "saved": {
+            "string": "Impostazioni di sistema salvate con successo."
+        },
+        "save_error": {
+            "string": "Salvataggio fallito: {message}"
+        },
+        "load_error": {
+            "string": "Caricamento impostazioni di sistema fallito."
+        },
+        "retry": {
+            "string": "Riprova"
+        },
+        "unsaved_changes": {
+            "string": "Ci sono modifiche non salvate."
+        },
+        "fields": {
+            "SOGO_S_DIRECT_LOGIN": {
+                "label": {
+                    "string": "Accesso Diretto"
+                },
+                "description": {
+                    "string": "Consenti agli utenti di accedere senza selezionare un dominio."
+                }
+            },
+            "SOGO_S_DOMAINLESS_LOGIN": {
+                "label": {
+                    "string": "Accesso Senza Dominio"
+                },
+                "description": {
+                    "string": "Consenti l'accesso con solo il nome utente (senza @dominio)."
+                }
+            },
+            "SOGO_S_DO_DOMAIN": {
+                "label": {
+                    "string": "Abilita Domini"
+                },
+                "description": {
+                    "string": "Abilita il supporto multi-dominio per questa istanza."
+                }
+            },
+            "SOGO_S_REJECT_UNKNOWN_DOMAIN": {
+                "label": {
+                    "string": "Rifiuta Domini Sconosciuti"
+                },
+                "description": {
+                    "string": "Rifiuta tentativi di accesso da domini non configurati in SOGo."
+                }
+            },
+            "SOGO_S_SENDMAIL": {
+                "label": {
+                    "string": "Percorso Sendmail"
+                },
+                "description": {
+                    "string": "Percorso assoluto del binario sendmail utilizzato per la posta in uscita."
+                }
+            }
         }
-      }
     }
-  }
 }

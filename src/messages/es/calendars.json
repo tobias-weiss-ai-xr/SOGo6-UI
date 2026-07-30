@@ -44,7 +44,7 @@
                 "string": "Which events do you want to modify?"
             },
             "ONE": {
-                "string": "This event only"
+                "string": "This event onmente"
             },
             "THISANDFUTURE": {
                 "string": "This and following events"
@@ -279,7 +279,7 @@
                 "string": "Video Conference"
             },
             "joinMeeting": {
-                "string": "Join Meeting"
+                "string": "Join Meetando"
             },
             "reminders": {
                 "string": "Reminders"
@@ -295,10 +295,10 @@
                     "string": "Semanal"
                 },
                 "monthly": {
-                    "string": "Monthly"
+                    "string": "Monthmente"
                 },
                 "yearly": {
-                    "string": "Yearly"
+                    "string": "Yearmente"
                 }
             },
             "every": {
@@ -521,7 +521,7 @@
                     "string": "Color"
                 },
                 "reset": {
-                    "string": "Restablecer"
+                    "string": "Restablecor"
                 }
             },
             "categories": {
@@ -529,7 +529,7 @@
                     "string": "Categorías"
                 },
                 "placeholder": {
-                    "string": "Add a category and press Enter"
+                    "string": "Add a category and press Entor"
                 },
                 "remove": {
                     "string": "Remove {category}"
@@ -567,7 +567,7 @@
                     "string": "Maximum {max} participants reached"
                 },
                 "add_email_direct": {
-                    "string": "Add \"{email}\" directly"
+                    "string": "Add \"{email}\" directmente"
                 },
                 "no_data": {
                     "string": "No availability data"
@@ -591,7 +591,7 @@
                     "string": "{hour}h"
                 },
                 "scroll_horizontal_hint": {
-                    "string": "Scroll horizontally"
+                    "string": "Scroll horizontalmente"
                 },
                 "tooltip_slot_busy": {
                     "string": "Ocupado"
@@ -608,13 +608,13 @@
                     "string": "Reminders"
                 },
                 "add": {
-                    "string": "Add reminder"
+                    "string": "Add remindor"
                 },
                 "minutesBefore": {
                     "string": "min before"
                 },
                 "remove": {
-                    "string": "Remove reminder"
+                    "string": "Remove remindor"
                 },
                 "methods": {
                     "popup": {
@@ -725,7 +725,7 @@
                     "string": "Create New Calendar"
                 },
                 "defaultEventDuration": {
-                    "string": "Default Event Duration"
+                    "string": "Default Event Duración"
                 },
                 "nameLabel": {
                     "string": "Calendar Name"
@@ -743,7 +743,7 @@
                     "string": "Add description to calendar"
                 },
                 "eventDuration": {
-                    "string": "Event Duration"
+                    "string": "Event Duración"
                 },
                 "eventNotifications": {
                     "string": "Event Notifications"
@@ -752,7 +752,7 @@
                     "string": "All-day event notifications"
                 },
                 "addNotification": {
-                    "string": "Add notification"
+                    "string": "Add notificación"
                 },
                 "showBusyStatus": {
                     "string": "Show others when I'm busy"
@@ -776,7 +776,7 @@
                     "string": "day before"
                 },
                 "notification": {
-                    "string": "notification"
+                    "string": "notificación"
                 },
                 "email": {
                     "string": "e-mail"
@@ -828,7 +828,7 @@
                     "string": "Add description to calendar"
                 },
                 "eventDuration": {
-                    "string": "Event Duration"
+                    "string": "Event Duración"
                 },
                 "eventNotifications": {
                     "string": "Event Notifications"
@@ -837,7 +837,7 @@
                     "string": "All-day event notifications"
                 },
                 "addNotification": {
-                    "string": "Add notification"
+                    "string": "Add notificación"
                 },
                 "showBusyStatus": {
                     "string": "Show others when I'm busy"
@@ -861,7 +861,7 @@
                     "string": "day before"
                 },
                 "notification": {
-                    "string": "notification"
+                    "string": "notificación"
                 },
                 "email": {
                     "string": "e-mail"
@@ -926,13 +926,13 @@
         },
         "share": {
             "title": {
-                "string": "Calendar Sharing"
+                "string": "Calendar Sharando"
             },
             "description": {
                 "string": "Share this calendar with other users. Shared users can see events based on the permission level you grant."
             },
             "addUser": {
-                "string": "Add User"
+                "string": "Add Usor"
             },
             "searchPlaceholder": {
                 "string": "Search by name or email..."
@@ -941,13 +941,13 @@
                 "string": "Share"
             },
             "added": {
-                "string": "Calendar shared successfully"
+                "string": "Calendar shared successfulmente"
             },
             "addError": {
                 "string": "Failed to share calendar"
             },
             "removed": {
-                "string": "Share removed successfully"
+                "string": "Share removed successfulmente"
             },
             "removeError": {
                 "string": "Failed to remove share"

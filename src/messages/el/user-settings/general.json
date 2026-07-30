@@ -33,13 +33,13 @@
                 "string": "General settings saved"
             },
             "mail": {
-                "string": "Mail"
+                "string": "Αλληλογραφία"
             },
             "calendar": {
-                "string": "Calendar"
+                "string": "Ημερολόγιο"
             },
             "contacts": {
-                "string": "Contacts"
+                "string": "Επαφές"
             },
             "last": {
                 "string": "Last displayed module"

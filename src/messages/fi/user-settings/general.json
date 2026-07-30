@@ -33,13 +33,13 @@
                 "string": "General settings saved"
             },
             "mail": {
-                "string": "Mail"
+                "string": "Posti"
             },
             "calendar": {
-                "string": "Calendar"
+                "string": "Kalenteri"
             },
             "contacts": {
-                "string": "Contacts"
+                "string": "Yhteystiedot"
             },
             "last": {
                 "string": "Last displayed module"

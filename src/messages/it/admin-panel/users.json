@@ -1,130 +1,130 @@
 {
-  "AP_USERS": {
-    "title": {
-      "string": "User Management"
-    },
-    "description": {
-      "string": "Create, edit, and delete user accounts in the LDAP directory"
-    },
-    "search": {
-      "placeholder": {
-        "string": "Search by name, email, or UID..."
-      },
-      "clear": {
-        "string": "Clear"
-      }
-    },
-    "table": {
-      "uid": {
-        "string": "UID"
-      },
-      "cn": {
-        "string": "Full Name"
-      },
-      "mail": {
-        "string": "Email"
-      },
-      "sn": {
-        "string": "Surname"
-      },
-      "givenName": {
-        "string": "Given Name"
-      },
-      "uidNumber": {
-        "string": "UID Number"
-      },
-      "gidNumber": {
-        "string": "GID Number"
-      },
-      "homeDirectory": {
-        "string": "Home Directory"
-      },
-      "actions": {
-        "string": "Actions"
-      },
-      "no_users": {
-        "string": "No users found"
-      },
-      "loading": {
-        "string": "Loading users..."
-      }
-    },
-    "create": {
-      "button": {
-        "string": "Create User"
-      },
-      "title": {
-        "string": "Create New User"
-      },
-      "success": {
-        "string": "User created successfully"
-      },
-      "error": {
-        "string": "Failed to create user"
-      }
-    },
-    "edit": {
-      "button": {
-        "string": "Edit"
-      },
-      "title": {
-        "string": "Edit User"
-      },
-      "save": {
-        "string": "Save Changes"
-      },
-      "success": {
-        "string": "User updated successfully"
-      },
-      "error": {
-        "string": "Failed to update user"
-      }
-    },
-    "delete": {
-      "button": {
-        "string": "Delete"
-      },
-      "confirm": {
-        "string": "Are you sure you want to delete user {uid}?"
-      },
-      "success": {
-        "string": "User deleted successfully"
-      },
-      "error": {
-        "string": "Failed to delete user"
-      }
-    },
-    "form": {
-      "uid": {
-        "string": "User ID (email)"
-      },
-      "cn": {
-        "string": "Full Name"
-      },
-      "sn": {
-        "string": "Surname"
-      },
-      "givenName": {
-        "string": "Given Name"
-      },
-      "mail": {
-        "string": "Email Address"
-      },
-      "password": {
-        "string": "Password"
-      },
-      "uidNumber": {
-        "string": "UID Number (optional)"
-      },
-      "gidNumber": {
-        "string": "GID Number (optional)"
-      },
-      "homeDirectory": {
-        "string": "Home Directory (optional)"
-      },
-      "required": {
-        "string": "Required"
-      }
+    "AP_USERS": {
+        "title": {
+            "string": "Gestione Utenti"
+        },
+        "description": {
+            "string": "Crea, modifica ed elimina account utente nella directory LDAP"
+        },
+        "search": {
+            "placeholder": {
+                "string": "Cerca per nome, email o UID..."
+            },
+            "clear": {
+                "string": "Cancella"
+            }
+        },
+        "table": {
+            "uid": {
+                "string": "UID"
+            },
+            "cn": {
+                "string": "Nome Completo"
+            },
+            "mail": {
+                "string": "Email"
+            },
+            "sn": {
+                "string": "Cognome"
+            },
+            "givenName": {
+                "string": "Nome"
+            },
+            "uidNumber": {
+                "string": "Numero UID"
+            },
+            "gidNumber": {
+                "string": "Numero GID"
+            },
+            "homeDirectory": {
+                "string": "Directory Home"
+            },
+            "actions": {
+                "string": "Azioni"
+            },
+            "no_users": {
+                "string": "Nessun utente trovato"
+            },
+            "loading": {
+                "string": "Caricamento utenti in corso..."
+            }
+        },
+        "create": {
+            "button": {
+                "string": "Crea Utente"
+            },
+            "title": {
+                "string": "Crea Nuovo Utente"
+            },
+            "success": {
+                "string": "Utente creato con successo"
+            },
+            "error": {
+                "string": "Creazione utente fallita"
+            }
+        },
+        "edit": {
+            "button": {
+                "string": "Modifica"
+            },
+            "title": {
+                "string": "Modifica Utente"
+            },
+            "save": {
+                "string": "Salva Modifiche"
+            },
+            "success": {
+                "string": "Utente aggiornato con successo"
+            },
+            "error": {
+                "string": "Aggiornamento utente fallito"
+            }
+        },
+        "delete": {
+            "button": {
+                "string": "Elimina"
+            },
+            "confirm": {
+                "string": "Sei sicuro di voler eliminare l'utente {uid}?"
+            },
+            "success": {
+                "string": "Utente eliminato con successo"
+            },
+            "error": {
+                "string": "Eliminazione utente fallita"
+            }
+        },
+        "form": {
+            "uid": {
+                "string": "ID Utente (email)"
+            },
+            "cn": {
+                "string": "Nome Completo"
+            },
+            "sn": {
+                "string": "Cognome"
+            },
+            "givenName": {
+                "string": "Nome"
+            },
+            "mail": {
+                "string": "Indirizzo Email"
+            },
+            "password": {
+                "string": "Password"
+            },
+            "uidNumber": {
+                "string": "Numero UID (opzionale)"
+            },
+            "gidNumber": {
+                "string": "Numero GID (opzionale)"
+            },
+            "homeDirectory": {
+                "string": "Directory Home (opzionale)"
+            },
+            "required": {
+                "string": "Obbligatorio"
+            }
+        }
     }
-  }
 }

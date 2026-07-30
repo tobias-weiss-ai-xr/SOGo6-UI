@@ -1,12 +1,31 @@
 {
-  "MOBILE": {
-    "title": { "string": "Mobile App Management" },
-    "description": { "string": "Manage registered devices, push notifications, and app configuration" },
-    "errors": { "fail": { "string": "Operation failed" } },
-    "success": { "unregister": { "string": "Device unregistered" }, "broadcast": { "string": "Push notification sent" } },
-    "config": { "title": { "string": "App Settings" }, "push": { "string": "Push Notifications" }, "biometric": { "string": "Biometric Auth" } },
-    "push": { "title": { "string": "Push Broadcast" }, "title": { "placeholder": { "string": "Notification title" } }, "message": { "placeholder": { "string": "Message..." } }, "broadcast": { "string": "Send" } },
-    "stats": { "title": { "string": "Statistics" }, "devices": { "string": "Registered Devices" } },
-    "devices": { "title": { "string": "All Devices" }, "empty": { "string": "No devices registered yet" } }
-  }
+    "MOBILE": {
+        "title": { "string": "Gestione App Mobile" },
+        "description": { "string": "Gestisci dispositivi registrati, notifiche push e configurazione app" },
+        "errors": {
+            "fail": { "string": "Operazione fallita" }
+        },
+        "success": {
+            "unregister": { "string": "Dispositivo deregistrato" },
+            "broadcast": { "string": "Notifica push inviata" }
+        },
+        "config": {
+            "title": { "string": "Impostazioni App" },
+            "push": { "string": "Notifiche Push" },
+            "biometric": { "string": "Auth Biometrica" }
+        },
+        "push": {
+            "title": { "placeholder": { "string": "Titolo notifica" } },
+            "message": { "placeholder": { "string": "Messaggio..." } },
+            "broadcast": { "string": "Invia" }
+        },
+        "stats": {
+            "title": { "string": "Statistiche" },
+            "devices": { "string": "Dispositivi Registrati" }
+        },
+        "devices": {
+            "title": { "string": "Tutti i Dispositivi" },
+            "empty": { "string": "Nessun dispositivo ancora registrato" }
+        }
+    }
 }

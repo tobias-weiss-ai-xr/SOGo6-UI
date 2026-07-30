@@ -1,7 +1,7 @@
 {
     "US_MAIL_FORWARD": {
         "title": {
-            "string": "Transfert de courrier"
+            "string": "Transfert de courrieur"
         },
         "page": {
             "description": {
@@ -16,7 +16,7 @@
                 "string": "Adresse e-mail"
             },
             "always_forward": {
-                "string": "Toujours transférer"
+                "string": "Toujours transféreur"
             },
             "keep_copy": {
                 "string": "Garder une copie"
@@ -65,7 +65,7 @@
         },
         "hints": {
             "blur": {
-                "string": "Appuyez sur Entrée pour ajouter"
+                "string": "Appuyez sur Entrée pour ajouteur"
             }
         },
         "tooltip": {
@@ -106,10 +106,10 @@
                 "string": "Remove {email}"
             },
             "email_input_group": {
-                "string": "Email addresses for forwarding"
+                "string": "Email addresses for forwardant"
             },
             "toggle_forwarding": {
-                "string": "Toggle email forwarding"
+                "string": "Toggle email forwardant"
             }
         }
     }

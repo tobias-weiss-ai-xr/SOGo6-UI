@@ -1,17 +1,17 @@
 {
     "COMMONS": {
         "close": {
-            "string": "Close"
+            "string": "Lukk"
         },
         "workInProgress": {
             "description": {
-                "string": "This feature is currently under development."
+                "string": "Denne funksjonen er for tiden under utvikling."
             },
             "message": {
-                "string": "We're working hard to bring you this feature."
+                "string": "Vi jobber hardt med å bringe deg denne funksjonen."
             },
             "comingSoon": {
-                "string": "Coming soon! Stay tuned."
+                "string": "Kommer snart! Følg med."
             }
         }
     },
@@ -19,13 +19,13 @@
         "demo": {
             "warning": {
                 "title": {
-                    "string": "Demo Version"
+                    "string": "Demoversjon"
                 },
                 "description": {
-                    "string": "You are currently using a demo version of the application. Some features may be limited."
+                    "string": "Du bruker for tiden en demoversjon av applikasjonen. Noen funksjoner kan være begrenset."
                 },
                 "action": {
-                    "string": "Got it"
+                    "string": "Jeg forstår"
                 }
             }
         },
@@ -35,13 +35,13 @@
         },
         "serviceUnavailable": {
             "title": {
-                "string": "Service unavailable"
+                "string": "Tjenesten er ikke tilgjengelig"
             },
             "description": {
-                "string": "The application could not connect to the server. Please try again later or contact your administrator."
+                "string": "Applikasjonen kunne ikke koble til serveren. Prøv igjen senere eller kontakt administratoren din."
             },
             "retry": {
-                "string": "Try again"
+                "string": "Prøv igjen"
             }
         }
     }

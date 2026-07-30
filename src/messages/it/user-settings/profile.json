@@ -1,52 +1,52 @@
 {
     "FORM_PROFILE": {
-        "title": "Profile",
-        "description": "Manage your profile information and settings.",
+        "title": "Profilo",
+        "description": "Gestisci le informazioni e le impostazioni del tuo profilo.",
         "sections": {
-            "basicInfo": "Basic Information",
-            "identities": "Identities"
+            "basicInfo": "Informazioni di base",
+            "identities": "Identità"
         },
         "firstname": {
-            "string": "First Name",
+            "string": "Nome",
             "description": "Label for the first name input field."
         },
         "lastname": {
-            "string": "Last Name",
+            "string": "Cognome",
             "description": "Label for the last name input field."
         },
         "basicInfo": {
-            "title": "Basic Information",
-            "uid": "User ID",
+            "title": "Informazioni di base",
+            "uid": "ID Utente",
             "email": "Email",
-            "fullName": "Name",
-            "aliases": "Email Aliases"
+            "fullName": "Nome",
+            "aliases": "Alias email"
         },
         "extraInfo": {
-            "title": "Extra Information",
-            "company": "Company",
+            "title": "Informazioni aggiuntive",
+            "company": "Azienda",
             "team": "Team"
         },
         "profilePictureSource": {
-            "title": "Profile Picture",
-            "description": "Choose how your profile picture is displayed. You can upload a custom image, use your Gravatar, Libravatar or use the default avatar.",
-            "useDefault": "Default",
+            "title": "Immagine del profilo",
+            "description": "Scegli come visualizzare la tua immagine del profilo. Puoi caricare un'immagine personalizzata, usare Gravatar, Libravatar o l'avatar predefinito.",
+            "useDefault": "Predefinito",
             "useGravatar": "Gravatar",
             "useLibravatar": "Libravatar",
-            "useCustom": "Custom"
+            "useCustom": "Personalizzato"
         },
         "identities": {},
         "api": {
             "title": {
-                "string": "Error"
+                "string": "Errore"
             },
             "loading": {
-                "string": "Loading"
+                "string": "Caricamento in corso"
             },
             "load_failed": {
-                "string": "Failed to load profile. Please try again later."
+                "string": "Caricamento profilo fallito. Riprova più tardi."
             },
             "update_failed": {
-                "string": "Failed to update profile. Please try again."
+                "string": "Aggiornamento profilo fallito. Riprova."
             }
         }
     }

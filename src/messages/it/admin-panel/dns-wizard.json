@@ -1,189 +1,189 @@
 {
-  "AP_DNS_WIZARD": {
-    "title": {
-      "string": "DNS Wizard"
-    },
-    "description": {
-      "string": "Generate and validate DNS records for email authentication (SPF, DKIM, DMARC). Add these records to your domain's DNS zone to protect against spoofing and improve deliverability."
-    },
-    "tabs": {
-      "spf": {
-        "string": "SPF"
-      },
-      "dkim": {
-        "string": "DKIM"
-      },
-      "dmarc": {
-        "string": "DMARC"
-      },
-      "validate": {
-        "string": "Validate"
-      }
-    },
-    "labels": {
-      "domain": {
-        "string": "Domain"
-      },
-      "policy": {
-        "string": "Policy"
-      },
-      "mx_servers": {
-        "string": "MX Servers"
-      },
-      "ip4_addresses": {
-        "string": "IPv4 Addresses"
-      },
-      "ip6_addresses": {
-        "string": "IPv6 Addresses"
-      },
-      "include_domains": {
-        "string": "Include Domains"
-      },
-      "selector": {
-        "string": "Selector"
-      },
-      "key_type": {
-        "string": "Key Type"
-      },
-      "public_key": {
-        "string": "Public Key (Base64)"
-      },
-      "rua_email": {
-        "string": "Aggregate Reports Email"
-      },
-      "ruf_email": {
-        "string": "Forensic Reports Email"
-      },
-      "pct": {
-        "string": "Policy Percentage"
-      },
-      "subdomain_policy": {
-        "string": "Subdomain Policy"
-      },
-      "aspf": {
-        "string": "SPF Alignment"
-      },
-      "adkim": {
-        "string": "DKIM Alignment"
-      }
-    },
-    "policies": {
-      "hardfail": {
-        "string": "hardfail"
-      },
-      "softfail": {
-        "string": "softfail"
-      },
-      "neutral": {
-        "string": "neutral"
-      },
-      "no_policy": {
-        "string": "no policy"
-      }
-    },
-    "spf": {
-      "description": {
-        "string": "SPF (Sender Policy Framework) specifies which mail servers are allowed to send email from your domain. Add this TXT record to your DNS zone."
-      },
-      "generate": {
-        "string": "Generate SPF Record"
-      }
-    },
-    "dkim": {
-      "description": {
-        "string": "DKIM (DomainKeys Identified Mail) adds a digital signature to outgoing emails, allowing recipients to verify the message was not altered in transit."
-      },
-      "generate": {
-        "string": "Generate DKIM Record"
-      },
-      "public_key_placeholder": {
-        "string": "Leave empty for placeholder with generation instructions"
-      },
-      "public_key_hint": {
-        "string": "Optional. If empty, the record will include a placeholder with the openssl command to generate the key pair."
-      }
-    },
-    "dmarc": {
-      "description": {
-        "string": "DMARC (Domain-based Message Authentication, Reporting, and Conformance) tells receiving mail servers what to do when SPF or DKIM fails. Start with p=none to monitor, then move to quarantine or reject."
-      },
-      "generate": {
-        "string": "Generate DMARC Record"
-      },
-      "policy_none": {
-        "string": "monitor only"
-      },
-      "policy_quarantine": {
-        "string": "quarantine failures"
-      },
-      "policy_reject": {
-        "string": "reject failures"
-      },
-      "relaxed": {
-        "string": "relaxed"
-      },
-      "strict": {
-        "string": "strict"
-      },
-      "inherit": {
-        "string": "Inherit from domain policy"
-      }
-    },
-    "validate": {
-      "description": {
-        "string": "Paste an existing SPF or DMARC record value to check for syntax errors and best-practice warnings."
-      },
-      "button": {
-        "string": "Validate"
-      },
-      "spf_title": {
-        "string": "Validate SPF Record"
-      },
-      "dmarc_title": {
-        "string": "Validate DMARC Record"
-      }
-    },
-    "record": {
-      "title": {
-        "string": "Generated DNS Record"
-      },
-      "name": {
-        "string": "Name"
-      },
-      "type": {
-        "string": "Type"
-      },
-      "value": {
-        "string": "Value"
-      },
-      "ttl": {
-        "string": "TTL"
-      },
-      "selector": {
-        "string": "Selector"
-      }
-    },
-    "validation": {
-      "valid": {
-        "string": "Valid"
-      },
-      "invalid": {
-        "string": "Invalid"
-      },
-      "domain_required": {
-        "string": "Domain is required"
-      },
-      "value_required": {
-        "string": "Record value is required"
-      }
-    },
-    "errors": {
-      "generate_failed": {
-        "string": "Failed to generate record"
-      },
-      "validate_failed": {
-        "string": "Failed to validate record"
-      }
+    "AP_DNS_WIZARD": {
+        "title": {
+            "string": "Procedura Guidata DNS"
+        },
+        "description": {
+            "string": "Genera e convalida i record DNS per l'autenticazione email (SPF, DKIM, DMARC). Aggiungi questi record alla zona DNS del tuo dominio per proteggerti dallo spoofing e migliorare la consegna."
+        },
+        "tabs": {
+            "spf": {
+                "string": "SPF"
+            },
+            "dkim": {
+                "string": "DKIM"
+            },
+            "dmarc": {
+                "string": "DMARC"
+            },
+            "validate": {
+                "string": "Convalida"
+            }
+        },
+        "labels": {
+            "domain": {
+                "string": "Dominio"
+            },
+            "policy": {
+                "string": "Policy"
+            },
+            "mx_servers": {
+                "string": "Server MX"
+            },
+            "ip4_addresses": {
+                "string": "Indirizzi IPv4"
+            },
+            "ip6_addresses": {
+                "string": "Indirizzi IPv6"
+            },
+            "include_domains": {
+                "string": "Domini Inclusi"
+            },
+            "selector": {
+                "string": "Selettore"
+            },
+            "key_type": {
+                "string": "Tipo Chiave"
+            },
+            "public_key": {
+                "string": "Chiave Pubblica (Base64)"
+            },
+            "rua_email": {
+                "string": "Email Rapporti Aggregati"
+            },
+            "ruf_email": {
+                "string": "Email Rapporti Forensi"
+            },
+            "pct": {
+                "string": "Percentuale Policy"
+            },
+            "subdomain_policy": {
+                "string": "Policy Sottodominio"
+            },
+            "aspf": {
+                "string": "Allineamento SPF"
+            },
+            "adkim": {
+                "string": "Allineamento DKIM"
+            }
+        },
+        "policies": {
+            "hardfail": {
+                "string": "hardfail"
+            },
+            "softfail": {
+                "string": "softfail"
+            },
+            "neutral": {
+                "string": "neutrale"
+            },
+            "no_policy": {
+                "string": "nessuna policy"
+            }
+        },
+        "spf": {
+            "description": {
+                "string": "SPF (Sender Policy Framework) specifica quali server di posta sono autorizzati a inviare email dal tuo dominio. Aggiungi questo record TXT alla tua zona DNS."
+            },
+            "generate": {
+                "string": "Genera Record SPF"
+            }
+        },
+        "dkim": {
+            "description": {
+                "string": "DKIM (DomainKeys Identified Mail) aggiunge una firma digitale alle email in uscita, consentendo ai destinatari di verificare che il messaggio non sia stato alterato durante il transito."
+            },
+            "generate": {
+                "string": "Genera Record DKIM"
+            },
+            "public_key_placeholder": {
+                "string": "Lascia vuoto per un segnaposto con istruzioni di generazione"
+            },
+            "public_key_hint": {
+                "string": "Opzionale. Se vuoto, il record includerà un segnaposto con il comando openssl per generare la coppia di chiavi."
+            }
+        },
+        "dmarc": {
+            "description": {
+                "string": "DMARC (Domain-based Message Authentication, Reporting, and Conformance) indica ai server di posta riceventi cosa fare quando SPF o DKIM falliscono. Inizia con p=none per monitorare, poi passa a quarantine o reject."
+            },
+            "generate": {
+                "string": "Genera Record DMARC"
+            },
+            "policy_none": {
+                "string": "solo monitoraggio"
+            },
+            "policy_quarantine": {
+                "string": "metti in quarantena"
+            },
+            "policy_reject": {
+                "string": "rifiuta"
+            },
+            "relaxed": {
+                "string": "rilassato"
+            },
+            "strict": {
+                "string": "rigoroso"
+            },
+            "inherit": {
+                "string": "Eredita dalla policy del dominio"
+            }
+        },
+        "validate": {
+            "description": {
+                "string": "Incolla un record SPF o DMARC esistente per verificare errori di sintassi e avvisi di buone pratiche."
+            },
+            "button": {
+                "string": "Convalida"
+            },
+            "spf_title": {
+                "string": "Convalida Record SPF"
+            },
+            "dmarc_title": {
+                "string": "Convalida Record DMARC"
+            }
+        },
+        "record": {
+            "title": {
+                "string": "Record DNS Generato"
+            },
+            "name": {
+                "string": "Nome"
+            },
+            "type": {
+                "string": "Tipo"
+            },
+            "value": {
+                "string": "Valore"
+            },
+            "ttl": {
+                "string": "TTL"
+            },
+            "selector": {
+                "string": "Selettore"
+            }
+        },
+        "validation": {
+            "valid": {
+                "string": "Valido"
+            },
+            "invalid": {
+                "string": "Non valido"
+            },
+            "domain_required": {
+                "string": "Il dominio è obbligatorio"
+            },
+            "value_required": {
+                "string": "Il valore del record è obbligatorio"
+            }
+        },
+        "errors": {
+            "generate_failed": {
+                "string": "Generazione record fallita"
+            },
+            "validate_failed": {
+                "string": "Convalida record fallita"
+            }
+        }
     }
-  }
 }

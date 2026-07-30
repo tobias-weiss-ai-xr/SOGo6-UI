@@ -5,13 +5,13 @@
         },
         "workInProgress": {
             "description": {
-                "string": "Este recurso está atualmente em desenvolvimento."
+                "string": "Esta funcionalidade está em desenvolvimento."
             },
             "message": {
-                "string": "Estamos trabalhando duro para trazer este recurso para você."
+                "string": "Estamos trabalhando para disponibilizar esta funcionalidade."
             },
             "comingSoon": {
-                "string": "Em breve! Fique ligado."
+                "string": "Em breve! Fique atento."
             }
         }
     },
@@ -19,10 +19,10 @@
         "demo": {
             "warning": {
                 "title": {
-                    "string": "Versão Demo"
+                    "string": "Versão de demonstração"
                 },
                 "description": {
-                    "string": "Você está atualmente usando uma versão demo da aplicação. Alguns recursos podem ser limitados."
+                    "string": "Você está usando uma versão demo da aplicação. Algumas funcionalidades podem estar limitadas."
                 },
                 "action": {
                     "string": "Entendi"
@@ -38,7 +38,7 @@
                 "string": "Serviço indisponível"
             },
             "description": {
-                "string": "A aplicação não conseguiu conectar ao servidor. Por favor, tente novamente mais tarde ou contate seu administrador."
+                "string": "A aplicação não conseguiu conectar ao servidor. Tente novamente mais tarde ou entre em contato com o administrador."
             },
             "retry": {
                 "string": "Tentar novamente"

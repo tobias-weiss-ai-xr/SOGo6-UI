@@ -1,1 +1,32 @@
-{ "AP_HELPDESK": { "title": { "string": "Helpdesk / Ticketing" }, "description": { "string": "Auto-create tickets from emails with assignment, priority, SLA tracking, and response history." }, "form": { "create": { "string": "New Ticket" }, "cancel": { "string": "Cancel" }, "title": { "string": "Create Ticket" }, "subject": { "string": "Subject" }, "priority": { "string": "Priority" }, "description": { "string": "Description" }, "requester": { "string": "Requester Email" }, "assignee": { "string": "Assignee Email" }, "sla": { "string": "SLA (hours)" }, "submit": { "string": "Create Ticket" } }, "create": { "success": { "string": "Ticket created" }, "error": { "string": "Failed to create" } }, "update": { "success": { "string": "Ticket updated" }, "error": { "string": "Failed to update" } }, "list": { "empty": { "string": "No tickets yet." } }, "errors": { "fields": { "string": "Subject and description are required" } } }}
+{
+    "AP_HELPDESK": {
+        "title": { "string": "Helpdesk / Ticket" },
+        "description": { "string": "Crea automaticamente ticket dalle email con assegnazione, priorità, tracciamento SLA e cronologia risposte." },
+        "form": {
+            "create": { "string": "Nuovo Ticket" },
+            "cancel": { "string": "Annulla" },
+            "title": { "string": "Crea Ticket" },
+            "subject": { "string": "Oggetto" },
+            "priority": { "string": "Priorità" },
+            "description": { "string": "Descrizione" },
+            "requester": { "string": "Email Richiedente" },
+            "assignee": { "string": "Email Assegnatario" },
+            "sla": { "string": "SLA (ore)" },
+            "submit": { "string": "Crea Ticket" }
+        },
+        "create": {
+            "success": { "string": "Ticket creato" },
+            "error": { "string": "Creazione fallita" }
+        },
+        "update": {
+            "success": { "string": "Ticket aggiornato" },
+            "error": { "string": "Aggiornamento fallito" }
+        },
+        "list": {
+            "empty": { "string": "Nessun ticket ancora." }
+        },
+        "errors": {
+            "fields": { "string": "Oggetto e descrizione sono obbligatori" }
+        }
+    }
+}

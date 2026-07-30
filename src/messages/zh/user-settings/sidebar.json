@@ -16,7 +16,7 @@
         },
         "settings": {
             "title": {
-                "string": "Settings",
+                "string": "设置",
                 "context": "Section title for the settings sidebar"
             },
             "general": {

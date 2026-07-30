@@ -33,13 +33,13 @@
                 "string": "General settings saved"
             },
             "mail": {
-                "string": "Mail"
+                "string": "Levél"
             },
             "calendar": {
-                "string": "Calendar"
+                "string": "Naptár"
             },
             "contacts": {
-                "string": "Contacts"
+                "string": "Kapcsolatok"
             },
             "last": {
                 "string": "Last displayed module"

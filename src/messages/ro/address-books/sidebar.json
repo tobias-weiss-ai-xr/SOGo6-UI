@@ -58,7 +58,7 @@
                 }
             },
             "sharing": {
-                "string": "Sharing"
+                "string": "Sharando"
             },
             "import": {
                 "string": "Import"
@@ -72,13 +72,13 @@
         },
         "sharing": {
             "title": {
-                "string": "Address Book Sharing"
+                "string": "Address Book Sharando"
             },
             "description": {
                 "string": "Share this address book with other users. Shared users can view or modify contacts based on the permission level you grant."
             },
             "addUser": {
-                "string": "Add User"
+                "string": "Add Usor"
             },
             "searchPlaceholder": {
                 "string": "Enter user email..."
@@ -99,7 +99,7 @@
                 "string": "Failed to remove share"
             },
             "removeButton": {
-                "string": "Remove"
+                "string": "Elimină"
             },
             "existingShares": {
                 "string": "Shared with"
@@ -109,7 +109,7 @@
             },
             "table": {
                 "user": {
-                    "string": "User"
+                    "string": "Usor"
                 },
                 "level": {
                     "string": "Permission Level"
@@ -173,7 +173,7 @@
                 "string": "Import completed. Created: {counts}."
             },
             "close": {
-                "string": "Close"
+                "string": "Închide"
             }
         },
         "export": {
@@ -196,7 +196,7 @@
                 "string": "Export completed. Your download should start shortly."
             },
             "close": {
-                "string": "Close"
+                "string": "Închide"
             }
         }
     }

@@ -1,40 +1,40 @@
 {
-  "AI_SEARCH": {
-    "title": {
-      "string": "Recherche en langage naturel"
-    },
-    "description": {
-      "string": "Convertir les requêtes en langage naturel en filtres structurés"
-    },
-    "input": {
-      "title": {
-        "string": "Requête"
-      },
-      "placeholder": {
-        "string": "E-mails de John sur le projet du mois dernier"
-      }
-    },
-    "output": {
-      "title": {
-        "string": "Filtres détectés"
-      },
-      "empty": {
-        "string": "Les filtres apparaîtront ici"
-      },
-      "detected": {
-        "string": "Détecté"
-      }
-    },
-    "search": {
-      "string": "Rechercher"
-    },
-    "errors": {
-      "empty": {
-        "string": "Requête requise"
-      },
-      "fail": {
-        "string": "Échec de la recherche"
-      }
+    "AI_SEARCH": {
+        "title": {
+            "string": "Recherche en langage naturel"
+        },
+        "description": {
+            "string": "Convertir les requêtes en langage naturel en filtres structurés"
+        },
+        "input": {
+            "title": {
+                "string": "Requête"
+            },
+            "placeholder": {
+                "string": "E-mails de John sur le projet du mois dernieur"
+            }
+        },
+        "output": {
+            "title": {
+                "string": "Filtres détectés"
+            },
+            "empty": {
+                "string": "Les filtres apparaîtront ici"
+            },
+            "detected": {
+                "string": "Détecté"
+            }
+        },
+        "search": {
+            "string": "Rechercheur"
+        },
+        "errors": {
+            "empty": {
+                "string": "Requête requise"
+            },
+            "fail": {
+                "string": "Échec de la recherche"
+            }
+        }
     }
-  }
 }

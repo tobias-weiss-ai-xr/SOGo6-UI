@@ -1,322 +1,322 @@
 {
-  "CONTACT_FORM": {
-    "emails": {
-      "string": "Email addresses",
-      "context": "Label for the email addresses section in the contact form."
-    },
-    "addresses": {
-      "string": "Addresses",
-      "context": "Label for the addresses section in the contact form."
-    },
-    "phone_numbers": {
-      "string": "Phone numbers",
-      "context": "Label for the phone numbers section in the contact form."
-    },
-    "urls": {
-      "string": "URLs",
-      "context": "Label for the URLs section in the contact form."
-    },
-    "birthday": {
-      "string": "Birthday",
-      "context": "Label for the birthday field in the contact visualization."
-    },
-    "notes": {
-      "string": "Notes",
-      "context": "Label for the notes section in the contact form."
-    },
-    "contact_information": {
-      "string": "Contact Information",
-      "context": "Label for the contact information section in the contact form."
-    },
-    "contact_details": {
-      "string": "Contact Details",
-      "context": "Title for the contact details view header."
-    },
-    "back_to_list": {
-      "string": "Back to list",
-      "context": "Button label to return to the contact list."
-    },
-    "copied_to_clipboard": {
-      "string": "Copied to clipboard",
-      "context": "Toast message when content is copied successfully."
-    },
-    "copied_value": {
-      "string": "Copied: {value}",
-      "context": "Toast description showing what was copied."
-    },
-    "copy_failed": {
-      "string": "Copy failed",
-      "context": "Toast error message when copy operation fails."
-    },
-    "copy_failed_description": {
-      "string": "Unable to copy to clipboard. Please try again.",
-      "context": "Toast error description when copy fails."
-    },
-    "copy_email": {
-      "string": "Copy email",
-      "context": "Tooltip for copy email button."
-    },
-    "copy": {
-      "string": "Copy",
-      "context": "Generic copy button label."
-    },
-    "edit": {
-      "string": "Edit",
-      "context": "Button label to edit a field."
-    },
-    "export": {
-      "string": "Export",
-      "context": "Button label to export a contact."
-    },
-    "save": {
-      "string": "Save",
-      "context": "Button label to save changes."
-    },
-    "cancel": {
-      "string": "Cancel",
-      "context": "Button label to cancel editing."
-    },
-    "edit_note": {
-      "string": "Edit note",
-      "context": "Button label to edit the contact note."
-    },
-    "add_note": {
-      "string": "Add note",
-      "context": "Button label to add a note to the contact."
-    },
-    "no_notes": {
-      "string": "No notes",
-      "context": "Placeholder text when there are no notes."
-    },
-    "new_contact": {
-      "string": "New contact",
-      "context": "Title for the new contact dialog"
-    },
-    "edit_contact": {
-      "string": "Edit contact",
-      "context": "Title for the edit contact dialog"
-    },
-    "create": {
-      "string": "Create",
-      "context": "Button to create a new contact"
-    },
-    "delete": {
-      "string": "Delete",
-      "context": "Button to delete a contact"
-    },
-    "add_email": {
-      "string": "Add email",
-      "context": "Button to add another email field"
-    },
-    "add_phone": {
-      "string": "Add phone",
-      "context": "Button to add another phone field"
-    },
-    "remove_field": {
-      "string": "Remove field",
-      "context": "Aria label for removing a dynamic form field"
-    },
-    "add_address": {
-      "string": "Add address",
-      "context": "Button to add another address field"
-    },
-    "add_url": {
-      "string": "Add URL",
-      "context": "Button to add another URL field"
-    },
-    "add_impp": {
-      "string": "Add instant messaging",
-      "context": "Button to add another instant messaging field"
-    },
-    "categories": {
-      "string": "Categories",
-      "context": "Label for contact categories field"
-    },
-    "photo": {
-      "string": "Photo",
-      "context": "Label for contact photo upload"
-    },
-    "photo_upload": {
-      "string": "Upload a photo",
-      "context": "Button to select a contact photo file"
-    },
-    "photo_change": {
-      "string": "Change photo",
-      "context": "Button to change contact photo"
-    },
-    "photo_remove": {
-      "string": "Remove photo",
-      "context": "Button to remove contact photo"
-    },
-    "anniversary": {
-      "string": "Anniversary",
-      "context": "Label for anniversary field in contact visualization"
-    },
-    "impp": {
-      "string": "Instant messaging",
-      "context": "Label for instant messaging addresses"
-    },
-    "geo": {
-      "string": "Location",
-      "context": "Label for geographic location"
-    },
-    "submit_error": {
-      "string": "Could not save. Please check the form and try again.",
-      "context": "Generic submit error shown in contact form"
-    },
-    "fields": {
-      "first_name": {
-        "string": "First name"
-      },
-      "last_name": {
-        "string": "Last name"
-      },
-      "middle_name": {
-        "string": "Middle name"
-      },
-      "prefix": {
-        "string": "Prefix"
-      },
-      "suffix": {
-        "string": "Suffix"
-      },
-      "nickname": {
-        "string": "Nickname"
-      },
-      "organization": {
-        "string": "Organization"
-      },
-      "department": {
-        "string": "Department"
-      },
-      "job_title": {
-        "string": "Job title"
-      },
-      "role": {
-        "string": "Role"
-      },
-      "impp": {
-        "string": "Instant messaging"
-      },
-      "anniversary": {
-        "string": "Anniversary"
-      },
-      "birthday_unknown_year": {
-        "string": "Year unknown (month and day only)"
-      },
-      "street": {
-        "string": "Street"
-      },
-      "city": {
-        "string": "City"
-      },
-      "postal_code": {
-        "string": "Postal code"
-      },
-      "country": {
-        "string": "Country"
-      },
-      "region": {
-        "string": "Region / State"
-      },
-      "po_box": {
-        "string": "PO box"
-      },
-      "extended": {
-        "string": "Extended address"
-      },
-      "contact_kind": {
-        "string": "Contact type"
-      },
-      "contact_kind_individual": {
-        "string": "Person"
-      },
-      "contact_kind_org": {
-        "string": "Organization"
-      },
-      "organization_required": {
-        "string": "Organization name"
-      },
-      "type": {
-        "string": "Type"
-      },
-      "type_default": {
-        "string": "Default"
-      },
-      "pref": {
-        "string": "Preferred"
-      },
-      "email_type_work": {
-        "string": "Work"
-      },
-      "email_type_home": {
-        "string": "Home"
-      },
-      "email_type_other": {
-        "string": "Other"
-      },
-      "phone_type_work": {
-        "string": "Work"
-      },
-      "phone_type_home": {
-        "string": "Home"
-      },
-      "phone_type_mobile": {
-        "string": "Mobile"
-      },
-      "phone_type_other": {
-        "string": "Other"
-      },
-      "url": {
-        "string": "URL"
-      }
-    },
-    "delete_dialog": {
-      "title": {
-        "string": "Delete contact?"
-      },
-      "description": {
-        "string": "This contact will be permanently removed from your address book."
-      },
-      "confirm": {
-        "string": "Delete"
-      }
-    },
-    "write_message": {
-      "string": "Write message",
-      "context": "Button to compose an email to this contact."
-    },
-    "actions_menu": {
-      "string": "More actions",
-      "context": "Aria label for the contact actions dropdown menu."
-    },
-    "compose_email": {
-      "string": "Compose",
-      "context": "Button to compose an email to a specific address on the contact card."
-    },
-    "selection_placeholder": {
-      "title": {
-        "string": "Select a contact",
-        "context": "Title shown when no contact is selected in the detail panel."
-      },
-      "description": {
-        "string": "Choose a contact or distribution list from the list to view details.",
-        "context": "Description shown when no contact is selected."
-      }
-    },
-    "load_error": {
-      "title": {
-        "string": "Could not load contact",
-        "context": "Error title when contact details fail to load."
-      },
-      "list": {
-        "string": "Could not load contacts",
-        "context": "Error message when the contact list fails to load."
-      },
-      "description": {
-        "string": "Please try again later.",
-        "context": "Error description when contact data fails to load."
-      }
+    "CONTACT_FORM": {
+        "emails": {
+            "string": "Email addresses",
+            "context": "Label for the email addresses section in the contact form."
+        },
+        "addresses": {
+            "string": "Addresses",
+            "context": "Label for the addresses section in the contact form."
+        },
+        "phone_numbers": {
+            "string": "Phone numbers",
+            "context": "Label for the phone numbers section in the contact form."
+        },
+        "urls": {
+            "string": "URLs",
+            "context": "Label for the URLs section in the contact form."
+        },
+        "birthday": {
+            "string": "Birthday",
+            "context": "Label for the birthday field in the contact visualization."
+        },
+        "notes": {
+            "string": "บันทึก",
+            "context": "Label for the notes section in the contact form."
+        },
+        "contact_information": {
+            "string": "Contact Information",
+            "context": "Label for the contact information section in the contact form."
+        },
+        "contact_details": {
+            "string": "Contact Details",
+            "context": "Title for the contact details view header."
+        },
+        "back_to_list": {
+            "string": "Back to list",
+            "context": "Button label to return to the contact list."
+        },
+        "copied_to_clipboard": {
+            "string": "Copied to clipboard",
+            "context": "Toast message when content is copied successfully."
+        },
+        "copied_value": {
+            "string": "Copied: {value}",
+            "context": "Toast description showing what was copied."
+        },
+        "copy_failed": {
+            "string": "Copy failed",
+            "context": "Toast error message when copy operation fails."
+        },
+        "copy_failed_description": {
+            "string": "Unable to copy to clipboard. Please try again.",
+            "context": "Toast error description when copy fails."
+        },
+        "copy_email": {
+            "string": "Copy email",
+            "context": "Tooltip for copy email button."
+        },
+        "copy": {
+            "string": "คัดลอก",
+            "context": "Generic copy button label."
+        },
+        "edit": {
+            "string": "แก้ไข",
+            "context": "Button label to edit a field."
+        },
+        "export": {
+            "string": "Export",
+            "context": "Button label to export a contact."
+        },
+        "save": {
+            "string": "บันทึก",
+            "context": "Button label to save changes."
+        },
+        "cancel": {
+            "string": "ยกเลิก",
+            "context": "Button label to cancel editing."
+        },
+        "edit_note": {
+            "string": "Edit note",
+            "context": "Button label to edit the contact note."
+        },
+        "add_note": {
+            "string": "Add note",
+            "context": "Button label to add a note to the contact."
+        },
+        "no_notes": {
+            "string": "No notes",
+            "context": "Placeholder text when there are no notes."
+        },
+        "new_contact": {
+            "string": "New contact",
+            "context": "Title for the new contact dialog"
+        },
+        "edit_contact": {
+            "string": "Edit contact",
+            "context": "Title for the edit contact dialog"
+        },
+        "create": {
+            "string": "สร้าง",
+            "context": "Button to create a new contact"
+        },
+        "delete": {
+            "string": "ลบ",
+            "context": "Button to delete a contact"
+        },
+        "add_email": {
+            "string": "Add email",
+            "context": "Button to add another email field"
+        },
+        "add_phone": {
+            "string": "Add phone",
+            "context": "Button to add another phone field"
+        },
+        "remove_field": {
+            "string": "Remove field",
+            "context": "Aria label for removing a dynamic form field"
+        },
+        "add_address": {
+            "string": "Add address",
+            "context": "Button to add another address field"
+        },
+        "add_url": {
+            "string": "Add URL",
+            "context": "Button to add another URL field"
+        },
+        "add_impp": {
+            "string": "Add instant messaging",
+            "context": "Button to add another instant messaging field"
+        },
+        "categories": {
+            "string": "Categories",
+            "context": "Label for contact categories field"
+        },
+        "photo": {
+            "string": "Photo",
+            "context": "Label for contact photo upload"
+        },
+        "photo_upload": {
+            "string": "Upload a photo",
+            "context": "Button to select a contact photo file"
+        },
+        "photo_change": {
+            "string": "Change photo",
+            "context": "Button to change contact photo"
+        },
+        "photo_remove": {
+            "string": "Remove photo",
+            "context": "Button to remove contact photo"
+        },
+        "anniversary": {
+            "string": "Anniversary",
+            "context": "Label for anniversary field in contact visualization"
+        },
+        "impp": {
+            "string": "Instant messaging",
+            "context": "Label for instant messaging addresses"
+        },
+        "geo": {
+            "string": "Location",
+            "context": "Label for geographic location"
+        },
+        "submit_error": {
+            "string": "Could not save. Please check the form and try again.",
+            "context": "Generic submit error shown in contact form"
+        },
+        "fields": {
+            "first_name": {
+                "string": "First name"
+            },
+            "last_name": {
+                "string": "Last name"
+            },
+            "middle_name": {
+                "string": "Middle name"
+            },
+            "prefix": {
+                "string": "Prefix"
+            },
+            "suffix": {
+                "string": "Suffix"
+            },
+            "nickname": {
+                "string": "Nickname"
+            },
+            "organization": {
+                "string": "Organization"
+            },
+            "department": {
+                "string": "Department"
+            },
+            "job_title": {
+                "string": "Job title"
+            },
+            "role": {
+                "string": "Role"
+            },
+            "impp": {
+                "string": "Instant messaging"
+            },
+            "anniversary": {
+                "string": "Anniversary"
+            },
+            "birthday_unknown_year": {
+                "string": "Year unknown (month and day only)"
+            },
+            "street": {
+                "string": "Street"
+            },
+            "city": {
+                "string": "City"
+            },
+            "postal_code": {
+                "string": "Postal code"
+            },
+            "country": {
+                "string": "Country"
+            },
+            "region": {
+                "string": "Region / State"
+            },
+            "po_box": {
+                "string": "PO box"
+            },
+            "extended": {
+                "string": "Extended address"
+            },
+            "contact_kind": {
+                "string": "Contact type"
+            },
+            "contact_kind_individual": {
+                "string": "Person"
+            },
+            "contact_kind_org": {
+                "string": "Organization"
+            },
+            "organization_required": {
+                "string": "Organization name"
+            },
+            "type": {
+                "string": "Type"
+            },
+            "type_default": {
+                "string": "Default"
+            },
+            "pref": {
+                "string": "Preferred"
+            },
+            "email_type_work": {
+                "string": "Work"
+            },
+            "email_type_home": {
+                "string": "Home"
+            },
+            "email_type_other": {
+                "string": "Other"
+            },
+            "phone_type_work": {
+                "string": "Work"
+            },
+            "phone_type_home": {
+                "string": "Home"
+            },
+            "phone_type_mobile": {
+                "string": "Mobile"
+            },
+            "phone_type_other": {
+                "string": "Other"
+            },
+            "url": {
+                "string": "URL"
+            }
+        },
+        "delete_dialog": {
+            "title": {
+                "string": "Delete contact?"
+            },
+            "description": {
+                "string": "This contact will be permanently removed from your address book."
+            },
+            "confirm": {
+                "string": "ลบ"
+            }
+        },
+        "write_message": {
+            "string": "Write message",
+            "context": "Button to compose an email to this contact."
+        },
+        "actions_menu": {
+            "string": "More actions",
+            "context": "Aria label for the contact actions dropdown menu."
+        },
+        "compose_email": {
+            "string": "Compose",
+            "context": "Button to compose an email to a specific address on the contact card."
+        },
+        "selection_placeholder": {
+            "title": {
+                "string": "Select a contact",
+                "context": "Title shown when no contact is selected in the detail panel."
+            },
+            "description": {
+                "string": "Choose a contact or distribution list from the list to view details.",
+                "context": "Description shown when no contact is selected."
+            }
+        },
+        "load_error": {
+            "title": {
+                "string": "Could not load contact",
+                "context": "Error title when contact details fail to load."
+            },
+            "list": {
+                "string": "Could not load contacts",
+                "context": "Error message when the contact list fails to load."
+            },
+            "description": {
+                "string": "Please try again later.",
+                "context": "Error description when contact data fails to load."
+            }
+        }
     }
-  }
 }

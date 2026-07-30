@@ -1,1 +1,29 @@
-{ "AP_QUICK": { "title": { "string": "Quick Actions" }, "description": { "string": "User-defined multi-step actions triggered with a single click from the mail list." }, "form": { "create": { "string": "New Action" }, "cancel": { "string": "Cancel" }, "title": { "string": "Create Quick Action" }, "name": { "string": "Action Name" }, "icon": { "string": "Icon" }, "steps": { "string": "Steps" }, "submit": { "string": "Create Action" } }, "create": { "success": { "string": "Action created" }, "error": { "string": "Failed to create" } }, "delete": { "success": { "string": "Action deleted" }, "error": { "string": "Failed to delete" } }, "list": { "empty": { "string": "No quick actions yet. Create one to speed up your workflow." } }, "errors": { "fields": { "string": "Name and at least one step are required" } } }}
+{
+    "AP_QUICK": {
+        "title": { "string": "Azioni Rapide" },
+        "description": { "string": "Azioni multi-step definite dall'utente attivate con un singolo clic dalla lista email." },
+        "form": {
+            "create": { "string": "Nuova Azione" },
+            "cancel": { "string": "Annulla" },
+            "title": { "string": "Crea Azione Rapida" },
+            "name": { "string": "Nome Azione" },
+            "icon": { "string": "Icona" },
+            "steps": { "string": "Passaggi" },
+            "submit": { "string": "Crea Azione" }
+        },
+        "create": {
+            "success": { "string": "Azione creata" },
+            "error": { "string": "Creazione fallita" }
+        },
+        "delete": {
+            "success": { "string": "Azione eliminata" },
+            "error": { "string": "Eliminazione fallita" }
+        },
+        "list": {
+            "empty": { "string": "Nessuna azione rapida ancora. Creane una per velocizzare il tuo flusso di lavoro." }
+        },
+        "errors": {
+            "fields": { "string": "Nome e almeno un passaggio sono obbligatori" }
+        }
+    }
+}

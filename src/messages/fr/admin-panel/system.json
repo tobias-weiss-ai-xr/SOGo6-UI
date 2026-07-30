@@ -13,7 +13,7 @@
             "string": "Modifiez les paramètres système globaux ci-dessous."
         },
         "save": {
-            "string": "Enregistrer"
+            "string": "Enregistreur"
         },
         "saving": {
             "string": "Enregistrement…"
@@ -28,7 +28,7 @@
             "string": "Impossible de charger les paramètres système."
         },
         "retry": {
-            "string": "Réessayer"
+            "string": "Réessayeur"
         },
         "unsaved_changes": {
             "string": "You have unsaved changes."

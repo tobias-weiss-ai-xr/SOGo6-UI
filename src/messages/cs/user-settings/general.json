@@ -33,13 +33,13 @@
                 "string": "General settings saved"
             },
             "mail": {
-                "string": "Mail"
+                "string": "Pošta"
             },
             "calendar": {
-                "string": "Calendar"
+                "string": "Kalendář"
             },
             "contacts": {
-                "string": "Contacts"
+                "string": "Kontakty"
             },
             "last": {
                 "string": "Last displayed module"
