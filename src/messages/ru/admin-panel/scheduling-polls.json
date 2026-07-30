@@ -26,7 +26,7 @@
                 "string": "Participants"
             },
             "description": {
-                "string": "Description"
+                "string": "Описание"
             },
             "time_slots": {
                 "string": "Proposed Time Slots"

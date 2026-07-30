@@ -23,7 +23,7 @@
                 "string": "Category"
             },
             "description": {
-                "string": "Description"
+                "string": "विवरण"
             },
             "steps": {
                 "string": "Approval Steps"

@@ -1,10 +1,10 @@
 {
     "DATA_TABLE": {
         "filter_placeholder": {
-            "string": "Filter..."
+            "string": "フィルター..."
         },
         "no_result": {
-            "string": "No results."
+            "string": "結果がありません。"
         },
         "previous": {
             "string": "前へ"

@@ -23,7 +23,7 @@
                 "string": "Category"
             },
             "description": {
-                "string": "Description"
+                "string": "Deskripsi"
             },
             "steps": {
                 "string": "Approval Steps"

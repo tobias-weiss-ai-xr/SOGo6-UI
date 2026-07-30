@@ -23,7 +23,7 @@
                 "string": "Trigger"
             },
             "description": {
-                "string": "Description"
+                "string": "คำอธิบาย"
             },
             "conditions": {
                 "string": "Conditions"

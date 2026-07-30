@@ -27,7 +27,7 @@
                 "string": "Server Config"
             },
             "enabled": {
-                "string": "Enabled"
+                "string": "Activat"
             },
             "bridge": {
                 "string": "Bridge"

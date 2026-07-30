@@ -20,15 +20,15 @@
         },
         "status": {
             "active": {
-                "string": "Active"
+                "string": "Actief"
             },
             "inactive": {
-                "string": "Inactive"
+                "string": "Inactief"
             }
         },
         "labels": {
             "name": {
-                "string": "Name"
+                "string": "Naam"
             },
             "email": {
                 "string": "Email"
@@ -43,7 +43,7 @@
                 "string": "Location"
             },
             "description": {
-                "string": "Description"
+                "string": "Beschrijving"
             },
             "booking_policy": {
                 "string": "Booking Policy"
@@ -84,7 +84,7 @@
         },
         "table": {
             "name": {
-                "string": "Name"
+                "string": "Naam"
             },
             "email": {
                 "string": "Email"

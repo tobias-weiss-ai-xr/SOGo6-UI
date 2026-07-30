@@ -1,10 +1,10 @@
 {
     "DATA_TABLE": {
         "filter_placeholder": {
-            "string": "Filter..."
+            "string": "تصفية..."
         },
         "no_result": {
-            "string": "No results."
+            "string": "لا توجد نتائج."
         },
         "previous": {
             "string": "السابق"

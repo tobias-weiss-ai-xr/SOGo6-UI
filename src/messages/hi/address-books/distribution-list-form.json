@@ -65,7 +65,7 @@
                 "string": "List name"
             },
             "note": {
-                "string": "Description"
+                "string": "विवरण"
             }
         },
         "delete_dialog": {

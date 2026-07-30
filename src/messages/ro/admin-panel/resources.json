@@ -20,21 +20,21 @@
         },
         "status": {
             "active": {
-                "string": "Active"
+                "string": "Activ"
             },
             "inactive": {
-                "string": "Inactive"
+                "string": "Inactiv"
             }
         },
         "labels": {
             "name": {
-                "string": "Name"
+                "string": "Nume"
             },
             "email": {
                 "string": "Email"
             },
             "type": {
-                "string": "Type"
+                "string": "Tip"
             },
             "capacity": {
                 "string": "Capacity"
@@ -43,7 +43,7 @@
                 "string": "Location"
             },
             "description": {
-                "string": "Description"
+                "string": "Descriere"
             },
             "booking_policy": {
                 "string": "Booking Policy"
@@ -84,13 +84,13 @@
         },
         "table": {
             "name": {
-                "string": "Name"
+                "string": "Nume"
             },
             "email": {
                 "string": "Email"
             },
             "type": {
-                "string": "Type"
+                "string": "Tip"
             },
             "capacity": {
                 "string": "Capacity"

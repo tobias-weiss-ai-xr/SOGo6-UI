@@ -1,10 +1,10 @@
 {
     "DATA_TABLE": {
         "filter_placeholder": {
-            "string": "Filter..."
+            "string": "फ़िल्टर..."
         },
         "no_result": {
-            "string": "No results."
+            "string": "कोई परिणाम नहीं।"
         },
         "previous": {
             "string": "पिछला"

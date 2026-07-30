@@ -83,7 +83,7 @@
                 "string": "Title"
             },
             "description": {
-                "string": "Description"
+                "string": "الوصف"
             },
             "due": {
                 "string": "Due date"
@@ -92,7 +92,7 @@
                 "string": "Start date"
             },
             "status": {
-                "string": "Status"
+                "string": "الحالة"
             },
             "priority": {
                 "string": "Priority"

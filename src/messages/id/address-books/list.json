@@ -36,7 +36,7 @@
         },
         "filters": {
             "name": {
-                "string": "Name"
+                "string": "Nama"
             },
             "sort_by": {
                 "string": "Sort by"

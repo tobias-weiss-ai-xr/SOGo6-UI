@@ -23,7 +23,7 @@
                 "string": "Category"
             },
             "description": {
-                "string": "Description"
+                "string": "Opis"
             },
             "steps": {
                 "string": "Approval Steps"

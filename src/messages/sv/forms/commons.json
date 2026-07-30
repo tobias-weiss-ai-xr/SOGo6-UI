@@ -37,7 +37,7 @@
             }
         },
         "enabled": {
-            "string": "Enabled"
+            "string": "Aktiverad"
         },
         "emails": {
             "placeholder": "Add email address and press Enter"

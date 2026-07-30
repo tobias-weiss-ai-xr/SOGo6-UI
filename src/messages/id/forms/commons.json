@@ -14,7 +14,7 @@
         },
         "edit": {
             "default": {
-                "string": "Edit",
+                "string": "Sunting",
                 "description": "Click to edit the selected item."
             }
         },
@@ -37,7 +37,7 @@
             }
         },
         "enabled": {
-            "string": "Enabled"
+            "string": "Diaktifkan"
         },
         "emails": {
             "placeholder": "Add email address and press Enter"

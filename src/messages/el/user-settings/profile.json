@@ -40,7 +40,7 @@
                 "string": "Σφάλμα"
             },
             "loading": {
-                "string": "Loading"
+                "string": "Φόρτωση"
             },
             "load_failed": {
                 "string": "Failed to load profile. Please try again later."

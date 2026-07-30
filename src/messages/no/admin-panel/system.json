@@ -7,7 +7,7 @@
             "string": "Configure system-wide behaviour for the SOGo instance."
         },
         "form_title": {
-            "string": "Configuration"
+            "string": "Konfigurasjon"
         },
         "form_description": {
             "string": "Modify global system settings below."

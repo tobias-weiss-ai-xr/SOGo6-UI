@@ -40,7 +40,7 @@
                 "string": "Hata"
             },
             "loading": {
-                "string": "Loading"
+                "string": "Yükleniyor"
             },
             "load_failed": {
                 "string": "Failed to load profile. Please try again later."

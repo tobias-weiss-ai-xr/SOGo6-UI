@@ -1,13 +1,79 @@
-{ "AP_BRANDING": {
-    "title": { "string": "Multi-Tenant Branding" },
-    "description": { "string": "Customize login page appearance per domain — logo, colors, CSS, header/footer text." },
-    "select_domain": { "string": "Domain" },
-    "select_placeholder": { "string": "Choose a domain..." },
-    "select_hint": { "string": "Select a domain above to view and edit its branding." },
-    "card": { "identity": { "string": "Visual Identity" }, "login_page": { "string": "Login Page" } },
-    "labels": { "logo": { "string": "Logo" }, "favicon": { "string": "Favicon" }, "primary_color": { "string": "Primary Color" }, "login_header": { "string": "Login Header Text" }, "login_footer": { "string": "Login Footer Text" }, "custom_css": { "string": "Custom CSS" } },
-    "buttons": { "upload": { "string": "Upload" } },
-    "placeholders": { "header": { "string": "e.g. Welcome to My Company Mail" }, "footer": { "string": "e.g. © 2026 My Company" }, "css": { "string": "body { font-family: sans-serif; }" } },
-    "save": { "button": { "string": "Save Branding" }, "success": { "string": "Branding saved" }, "error": { "string": "Failed to save branding" } },
-    "errors": { "upload": { "string": "Failed to read file" } }
-}}
+{
+    "AP_BRANDING": {
+        "title": {
+            "string": "Multi-Tenant Branding"
+        },
+        "description": {
+            "string": "Customize login page appearance per domain — logo, colors, CSS, header/footer text."
+        },
+        "select_domain": {
+            "string": "Домен"
+        },
+        "select_placeholder": {
+            "string": "Choose a domain..."
+        },
+        "select_hint": {
+            "string": "Select a domain above to view and edit its branding."
+        },
+        "card": {
+            "identity": {
+                "string": "Visual Identity"
+            },
+            "login_page": {
+                "string": "Login Page"
+            }
+        },
+        "labels": {
+            "logo": {
+                "string": "Logo"
+            },
+            "favicon": {
+                "string": "Favicon"
+            },
+            "primary_color": {
+                "string": "Primary Color"
+            },
+            "login_header": {
+                "string": "Login Header Text"
+            },
+            "login_footer": {
+                "string": "Login Footer Text"
+            },
+            "custom_css": {
+                "string": "Custom CSS"
+            }
+        },
+        "buttons": {
+            "upload": {
+                "string": "Upload"
+            }
+        },
+        "placeholders": {
+            "header": {
+                "string": "e.g. Welcome to My Company Mail"
+            },
+            "footer": {
+                "string": "e.g. © 2026 My Company"
+            },
+            "css": {
+                "string": "body { font-family: sans-serif; }"
+            }
+        },
+        "save": {
+            "button": {
+                "string": "Save Branding"
+            },
+            "success": {
+                "string": "Branding saved"
+            },
+            "error": {
+                "string": "Failed to save branding"
+            }
+        },
+        "errors": {
+            "upload": {
+                "string": "Failed to read file"
+            }
+        }
+    }
+}

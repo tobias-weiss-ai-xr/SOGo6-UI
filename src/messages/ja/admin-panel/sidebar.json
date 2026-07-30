@@ -1,13 +1,13 @@
 {
     "AP_SIDEBAR": {
         "system": {
-            "string": "System"
+            "string": "システム"
         },
         "theme": {
             "string": "Theme"
         },
         "users": {
-            "string": "Users"
+            "string": "ユーザー"
         },
         "bulk_users": {
             "string": "Bulk Users"
@@ -103,14 +103,14 @@
             "string": "API Documentation"
         },
         "config": {
-            "string": "Configuration",
+            "string": "設定",
             "rules": {
                 "string": "Rules"
             },
             "domains": {
                 "string": "Domains",
                 "default": {
-                    "string": "Default"
+                    "string": "デフォルト"
                 },
                 "custom": {
                     "string": "Custom domains"
@@ -133,7 +133,7 @@
             "string": "DNS Wizard"
         },
         "resources": {
-            "string": "Resources"
+            "string": "リソース"
         },
         "scim": {
             "string": "SCIM Provisioning中"

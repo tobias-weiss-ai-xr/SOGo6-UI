@@ -83,7 +83,7 @@
                 "string": "Title"
             },
             "description": {
-                "string": "Description"
+                "string": "Descriere"
             },
             "due": {
                 "string": "Due date"

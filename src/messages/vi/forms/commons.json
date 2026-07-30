@@ -37,7 +37,7 @@
             }
         },
         "enabled": {
-            "string": "Enabled"
+            "string": "Đã bật"
         },
         "emails": {
             "placeholder": "Add email address and press Enter"

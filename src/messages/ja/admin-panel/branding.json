@@ -7,7 +7,7 @@
             "string": "Customize login page appearance per domain — logo, colors, CSS, header/footer text."
         },
         "select_domain": {
-            "string": "Domain"
+            "string": "ドメイン"
         },
         "select_placeholder": {
             "string": "Choose a domain..."

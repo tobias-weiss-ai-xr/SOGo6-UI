@@ -92,10 +92,10 @@
         },
         "status": {
             "enabled": {
-                "string": "Enabled"
+                "string": "Diaktifkan"
             },
             "disabled": {
-                "string": "Disabled"
+                "string": "Dinonaktifkan"
             }
         },
         "aria": {

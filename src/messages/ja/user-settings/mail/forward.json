@@ -92,10 +92,10 @@
         },
         "status": {
             "enabled": {
-                "string": "Enabled"
+                "string": "有効"
             },
             "disabled": {
-                "string": "Disabled"
+                "string": "無効"
             }
         },
         "aria": {

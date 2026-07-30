@@ -92,10 +92,10 @@
         },
         "status": {
             "enabled": {
-                "string": "Enabled"
+                "string": "सक्षम"
             },
             "disabled": {
-                "string": "Disabled"
+                "string": "अक्षम"
             }
         },
         "aria": {

@@ -40,7 +40,7 @@
                 "string": "ข้อผิดพลาด"
             },
             "loading": {
-                "string": "Loading"
+                "string": "กำลังโหลด"
             },
             "load_failed": {
                 "string": "Failed to load profile. Please try again later."

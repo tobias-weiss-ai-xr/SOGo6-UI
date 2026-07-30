@@ -26,7 +26,7 @@
                 "string": "Participants"
             },
             "description": {
-                "string": "Description"
+                "string": "विवरण"
             },
             "time_slots": {
                 "string": "Proposed Time Slots"

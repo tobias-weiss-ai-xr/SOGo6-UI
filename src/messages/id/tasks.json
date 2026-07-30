@@ -83,7 +83,7 @@
                 "string": "Title"
             },
             "description": {
-                "string": "Description"
+                "string": "Deskripsi"
             },
             "due": {
                 "string": "Due date"
@@ -126,7 +126,7 @@
         },
         "actions": {
             "edit": {
-                "string": "Edit"
+                "string": "Sunting"
             },
             "delete": {
                 "string": "Hapus"

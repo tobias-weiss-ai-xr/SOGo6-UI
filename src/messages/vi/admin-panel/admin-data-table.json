@@ -1,10 +1,10 @@
 {
     "DATA_TABLE": {
         "filter_placeholder": {
-            "string": "Filter..."
+            "string": "Lọc..."
         },
         "no_result": {
-            "string": "No results."
+            "string": "Không có kết quả."
         },
         "previous": {
             "string": "Trước đó"

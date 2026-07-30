@@ -165,7 +165,7 @@
                 "string": "Subscribe to calendar"
             },
             "name_label": {
-                "string": "Name"
+                "string": "Nome"
             },
             "url_label": {
                 "string": "Calendar URL (.ics)"

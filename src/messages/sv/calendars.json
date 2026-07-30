@@ -165,7 +165,7 @@
                 "string": "Subscribe to calendar"
             },
             "name_label": {
-                "string": "Name"
+                "string": "Namn"
             },
             "url_label": {
                 "string": "Calendar URL (.ics)"
@@ -270,7 +270,7 @@
                 "string": "Location"
             },
             "description": {
-                "string": "Description"
+                "string": "Beskrivning"
             },
             "attendees": {
                 "string": "Attendees"
@@ -442,7 +442,7 @@
             },
             "description": {
                 "label": {
-                    "string": "Description"
+                    "string": "Beskrivning"
                 },
                 "placeholder": {
                     "string": "Add event details"
@@ -737,7 +737,7 @@
                     "string": "Color"
                 },
                 "description": {
-                    "string": "Description"
+                    "string": "Beskrivning"
                 },
                 "descriptionPlaceholder": {
                     "string": "Add description to calendar"
@@ -822,7 +822,7 @@
                     "string": "Color"
                 },
                 "description": {
-                    "string": "Description"
+                    "string": "Beskrivning"
                 },
                 "descriptionPlaceholder": {
                     "string": "Add description to calendar"

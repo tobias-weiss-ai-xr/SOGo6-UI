@@ -1,22 +1,22 @@
 {
     "ADMIN_PANNEL_DOMAIN": {
         "title": {
-            "string": "Custom domains"
+            "string": "Domínios personalizados"
         },
         "filter_placeholder": {
-            "string": "Filter domains..."
+            "string": "Filtrar domínios..."
         },
         "add_new_domain": {
-            "string": "Add new custom domain"
+            "string": "Adicionar novo domínio personalizado"
         },
         "select_all": {
-            "string": "Select all"
+            "string": "Selecionar tudo"
         },
         "select_row": {
-            "string": "Select row"
+            "string": "Selecionar linha"
         },
         "domain": {
-            "string": "Domain"
+            "string": "Domínio"
         },
         "open_menu": {
             "string": "Open menu"

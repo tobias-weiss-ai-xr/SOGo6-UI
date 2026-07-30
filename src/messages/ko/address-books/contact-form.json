@@ -238,10 +238,10 @@
                 "string": "Organization name"
             },
             "type": {
-                "string": "Type"
+                "string": "유형"
             },
             "type_default": {
-                "string": "Default"
+                "string": "기본"
             },
             "pref": {
                 "string": "Preferred"

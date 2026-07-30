@@ -23,7 +23,7 @@
                 "string": "Category"
             },
             "description": {
-                "string": "Description"
+                "string": "Popis"
             },
             "steps": {
                 "string": "Approval Steps"

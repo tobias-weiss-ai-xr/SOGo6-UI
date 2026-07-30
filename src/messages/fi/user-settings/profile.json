@@ -40,7 +40,7 @@
                 "string": "Virhe"
             },
             "loading": {
-                "string": "Loading"
+                "string": "Lataa"
             },
             "load_failed": {
                 "string": "Failed to load profile. Please try again later."

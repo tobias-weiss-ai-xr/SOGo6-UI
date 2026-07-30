@@ -1,13 +1,13 @@
 {
     "AP_SIDEBAR": {
         "system": {
-            "string": "System"
+            "string": "Sistem"
         },
         "theme": {
             "string": "Theme"
         },
         "users": {
-            "string": "Users"
+            "string": "Utilizatori"
         },
         "bulk_users": {
             "string": "Bulk Users"
@@ -103,14 +103,14 @@
             "string": "API Documentation"
         },
         "config": {
-            "string": "Configuration",
+            "string": "Configurație",
             "rules": {
                 "string": "Rules"
             },
             "domains": {
                 "string": "Domains",
                 "default": {
-                    "string": "Default"
+                    "string": "Implicit"
                 },
                 "custom": {
                     "string": "Custom domains"
@@ -133,7 +133,7 @@
             "string": "DNS Wizard"
         },
         "resources": {
-            "string": "Resources"
+            "string": "Resurse"
         },
         "scim": {
             "string": "SCIM Provisionando"

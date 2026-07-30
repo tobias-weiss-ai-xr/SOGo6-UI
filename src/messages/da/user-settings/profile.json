@@ -40,7 +40,7 @@
                 "string": "Fejl"
             },
             "loading": {
-                "string": "Loading"
+                "string": "Indlæser"
             },
             "load_failed": {
                 "string": "Failed to load profile. Please try again later."

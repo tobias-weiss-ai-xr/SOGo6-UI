@@ -92,10 +92,10 @@
         },
         "status": {
             "enabled": {
-                "string": "Enabled"
+                "string": "Engedélyezve"
             },
             "disabled": {
-                "string": "Disabled"
+                "string": "Letiltva"
             }
         },
         "aria": {

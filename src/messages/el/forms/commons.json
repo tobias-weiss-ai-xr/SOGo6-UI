@@ -37,7 +37,7 @@
             }
         },
         "enabled": {
-            "string": "Enabled"
+            "string": "Ενεργοποιημένο"
         },
         "emails": {
             "placeholder": "Add email address and press Enter"

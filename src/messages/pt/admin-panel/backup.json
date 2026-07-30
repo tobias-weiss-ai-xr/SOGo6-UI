@@ -42,7 +42,7 @@
                 "string": "Timestamp"
             },
             "type": {
-                "string": "Type"
+                "string": "Tipo"
             },
             "status": {
                 "string": "Status"

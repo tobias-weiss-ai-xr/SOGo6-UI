@@ -23,7 +23,7 @@
                 "string": "Category"
             },
             "description": {
-                "string": "Description"
+                "string": "คำอธิบาย"
             },
             "steps": {
                 "string": "Approval Steps"

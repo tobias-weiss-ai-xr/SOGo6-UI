@@ -37,7 +37,7 @@
             }
         },
         "enabled": {
-            "string": "Enabled"
+            "string": "सक्षम"
         },
         "emails": {
             "placeholder": "Add email address and press Enter"

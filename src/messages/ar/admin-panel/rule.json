@@ -16,7 +16,7 @@
             "string": "Select row"
         },
         "domain": {
-            "string": "Domain"
+            "string": "المجال"
         },
         "open_menu": {
             "string": "Open menu"
@@ -111,7 +111,7 @@
                 "string": "e.g. French LDAP Rules"
             },
             "description": {
-                "string": "Description"
+                "string": "الوصف"
             },
             "description_placeholder": {
                 "string": "Optional description of this rule"
@@ -131,7 +131,7 @@
                 "string": "ID"
             },
             "name": {
-                "string": "Name"
+                "string": "الاسم"
             },
             "actions": {
                 "string": "Actions"

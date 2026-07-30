@@ -40,7 +40,7 @@
                 "string": "خطأ"
             },
             "loading": {
-                "string": "Loading"
+                "string": "جارٍ التحميل"
             },
             "load_failed": {
                 "string": "Failed to load profile. Please try again later."

@@ -241,7 +241,7 @@
                 "string": "Type"
             },
             "type_default": {
-                "string": "Default"
+                "string": "Standard"
             },
             "pref": {
                 "string": "Preferred"

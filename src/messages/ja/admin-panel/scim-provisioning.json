@@ -30,7 +30,7 @@
                 "string": "Display Name"
             },
             "status": {
-                "string": "Status"
+                "string": "ステータス"
             }
         },
         "button": {

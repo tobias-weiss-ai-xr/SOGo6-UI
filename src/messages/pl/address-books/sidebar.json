@@ -24,7 +24,7 @@
             "string": "Add subscriptions"
         },
         "name": {
-            "string": "Name",
+            "string": "Nazwa",
             "context": "Label for the name field in the address book sidebar."
         },
         "options": {
@@ -34,7 +34,7 @@
                 },
                 "labels": {
                     "name": {
-                        "string": "Name"
+                        "string": "Nazwa"
                     }
                 }
             },

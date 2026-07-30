@@ -61,7 +61,7 @@
             "context": "Generic copy button label."
         },
         "edit": {
-            "string": "Edit",
+            "string": "Sunting",
             "context": "Button label to edit a field."
         },
         "export": {
@@ -238,10 +238,10 @@
                 "string": "Organization name"
             },
             "type": {
-                "string": "Type"
+                "string": "Tipe"
             },
             "type_default": {
-                "string": "Default"
+                "string": "Bawaan"
             },
             "pref": {
                 "string": "Preferred"

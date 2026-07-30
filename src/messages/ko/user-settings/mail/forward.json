@@ -92,10 +92,10 @@
         },
         "status": {
             "enabled": {
-                "string": "Enabled"
+                "string": "활성화됨"
             },
             "disabled": {
-                "string": "Disabled"
+                "string": "비활성화됨"
             }
         },
         "aria": {

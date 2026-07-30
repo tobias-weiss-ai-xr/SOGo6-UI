@@ -26,7 +26,7 @@
                 "string": "Participants"
             },
             "description": {
-                "string": "Description"
+                "string": "Mô tả"
             },
             "time_slots": {
                 "string": "Proposed Time Slots"

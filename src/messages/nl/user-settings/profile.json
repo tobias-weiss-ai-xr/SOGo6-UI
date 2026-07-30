@@ -40,7 +40,7 @@
                 "string": "Fout"
             },
             "loading": {
-                "string": "Loading"
+                "string": "Laden"
             },
             "load_failed": {
                 "string": "Failed to load profile. Please try again later."

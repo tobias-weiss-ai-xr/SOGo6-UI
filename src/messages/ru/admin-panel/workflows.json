@@ -23,7 +23,7 @@
                 "string": "Trigger"
             },
             "description": {
-                "string": "Description"
+                "string": "Описание"
             },
             "conditions": {
                 "string": "Conditions"

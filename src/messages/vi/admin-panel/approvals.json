@@ -23,7 +23,7 @@
                 "string": "Category"
             },
             "description": {
-                "string": "Description"
+                "string": "Mô tả"
             },
             "steps": {
                 "string": "Approval Steps"

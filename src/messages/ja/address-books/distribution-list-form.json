@@ -65,7 +65,7 @@
                 "string": "List name"
             },
             "note": {
-                "string": "Description"
+                "string": "説明"
             }
         },
         "delete_dialog": {

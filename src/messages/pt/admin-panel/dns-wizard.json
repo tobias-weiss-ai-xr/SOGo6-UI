@@ -22,7 +22,7 @@
         },
         "labels": {
             "domain": {
-                "string": "Domain"
+                "string": "Domínio"
             },
             "policy": {
                 "string": "Policy"
@@ -148,10 +148,10 @@
                 "string": "Generated DNS Record"
             },
             "name": {
-                "string": "Name"
+                "string": "Nome"
             },
             "type": {
-                "string": "Type"
+                "string": "Tipo"
             },
             "value": {
                 "string": "Value"

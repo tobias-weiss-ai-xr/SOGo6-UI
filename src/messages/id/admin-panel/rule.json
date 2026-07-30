@@ -28,7 +28,7 @@
             "string": "Copy domain name"
         },
         "edit": {
-            "string": "Edit"
+            "string": "Sunting"
         },
         "delete": {
             "string": "Hapus"
@@ -68,7 +68,7 @@
         },
         "edit": {
             "button": {
-                "string": "Edit"
+                "string": "Sunting"
             },
             "title": {
                 "string": "Edit Rule"
@@ -111,7 +111,7 @@
                 "string": "e.g. French LDAP Rules"
             },
             "description": {
-                "string": "Description"
+                "string": "Deskripsi"
             },
             "description_placeholder": {
                 "string": "Optional description of this rule"
@@ -131,7 +131,7 @@
                 "string": "ID"
             },
             "name": {
-                "string": "Name"
+                "string": "Nama"
             },
             "actions": {
                 "string": "Actions"

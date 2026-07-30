@@ -1,20 +1,98 @@
 {
-  "VOLUNTEER": {
-    "title": { "string": "Volunteer Scheduling" },
-    "description": { "string": "Manage volunteers, assign shifts, track hours, and generate certificates" },
-    "errors": { "fields": { "string": "Required fields missing" }, "fail": { "string": "Operation failed" } },
-    "success": { "create": { "string": "Volunteer registered" }, "shift": { "string": "Shift assigned" }, "cert": { "string": "Certificate generated" } },
-    "register": { "title": { "string": "Register Volunteer" } },
-    "shift": {
-      "title": { "string": "Create Shift" },
-      "select": { "string": "Select volunteer..." },
-      "task": { "string": "Task" },
-      "start": { "string": "Start" },
-      "end": { "string": "End" }
-    },
-    "field": { "name": { "string": "Name" }, "email": { "string": "Email" }, "hours": { "string": "Hours" }, "status": { "string": "Status" }, "no_shows": { "string": "No-shows" } },
-    "button": { "register": { "string": "Register" }, "assign": { "string": "Assign Shift" } },
-    "stats": { "title": { "string": "Statistics" }, "volunteers": { "string": "Volunteers" }, "hours": { "string": "Total Hours" }, "shifts": { "string": "Active Shifts" } },
-    "list": { "title": { "string": "All Volunteers" }, "empty": { "string": "No volunteers registered yet" } }
-  }
+    "VOLUNTEER": {
+        "title": {
+            "string": "Volunteer Scheduling"
+        },
+        "description": {
+            "string": "Manage volunteers, assign shifts, track hours, and generate certificates"
+        },
+        "errors": {
+            "fields": {
+                "string": "Required fields missing"
+            },
+            "fail": {
+                "string": "Operation failed"
+            }
+        },
+        "success": {
+            "create": {
+                "string": "Volunteer registered"
+            },
+            "shift": {
+                "string": "Shift assigned"
+            },
+            "cert": {
+                "string": "Certificate generated"
+            }
+        },
+        "register": {
+            "title": {
+                "string": "Register Volunteer"
+            }
+        },
+        "shift": {
+            "title": {
+                "string": "Create Shift"
+            },
+            "select": {
+                "string": "Select volunteer..."
+            },
+            "task": {
+                "string": "Task"
+            },
+            "start": {
+                "string": "Start"
+            },
+            "end": {
+                "string": "End"
+            }
+        },
+        "field": {
+            "name": {
+                "string": "الاسم"
+            },
+            "email": {
+                "string": "Email"
+            },
+            "hours": {
+                "string": "Hours"
+            },
+            "status": {
+                "string": "الحالة"
+            },
+            "no_shows": {
+                "string": "No-shows"
+            }
+        },
+        "button": {
+            "register": {
+                "string": "Register"
+            },
+            "assign": {
+                "string": "Assign Shift"
+            }
+        },
+        "stats": {
+            "title": {
+                "string": "Statistics"
+            },
+            "volunteers": {
+                "string": "Volunteers"
+            },
+            "hours": {
+                "string": "Total Hours"
+            },
+            "shifts": {
+                "string": "Active Shifts"
+            }
+        },
+        "list": {
+            "title": {
+                "string": "All Volunteers"
+            },
+            "empty": {
+                "string": "No volunteers registered yet"
+            }
+        }
+    }
 }

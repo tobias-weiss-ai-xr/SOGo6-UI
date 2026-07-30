@@ -92,10 +92,10 @@
         },
         "status": {
             "enabled": {
-                "string": "Enabled"
+                "string": "Đã bật"
             },
             "disabled": {
-                "string": "Disabled"
+                "string": "Đã tắt"
             }
         },
         "aria": {

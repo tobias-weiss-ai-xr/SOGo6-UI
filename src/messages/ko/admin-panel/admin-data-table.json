@@ -1,10 +1,10 @@
 {
     "DATA_TABLE": {
         "filter_placeholder": {
-            "string": "Filter..."
+            "string": "필터..."
         },
         "no_result": {
-            "string": "No results."
+            "string": "결과 없음."
         },
         "previous": {
             "string": "이전"

@@ -1,7 +1,61 @@
-{ "AP_BACKUP": {
-    "title": { "string": "Backup Automation" },
-    "description": { "string": "Manage database and mailstore backups with retention policies and optional S3 upload." },
-    "trigger": { "button": { "string": "Trigger Backup" }, "running": { "string": "Running..." }, "success": { "string": "Backup completed" }, "error": { "string": "Backup failed" } },
-    "config": { "retention": { "string": "Retention" }, "s3": { "string": "S3 Upload" }, "mailstore": { "string": "Mailstore" }, "total": { "string": "Total Backups" } },
-    "table": { "id": { "string": "ID" }, "timestamp": { "string": "Timestamp" }, "type": { "string": "Type" }, "status": { "string": "Status" }, "size": { "string": "Size" }, "duration": { "string": "Duration" }, "empty": { "string": "No backups yet." } }
-}}
+{
+    "AP_BACKUP": {
+        "title": {
+            "string": "Backup Automation"
+        },
+        "description": {
+            "string": "Manage database and mailstore backups with retention policies and optional S3 upload."
+        },
+        "trigger": {
+            "button": {
+                "string": "Trigger Backup"
+            },
+            "running": {
+                "string": "Running..."
+            },
+            "success": {
+                "string": "Backup completed"
+            },
+            "error": {
+                "string": "Backup failed"
+            }
+        },
+        "config": {
+            "retention": {
+                "string": "Retention"
+            },
+            "s3": {
+                "string": "S3 Upload"
+            },
+            "mailstore": {
+                "string": "Mailstore"
+            },
+            "total": {
+                "string": "Total Backups"
+            }
+        },
+        "table": {
+            "id": {
+                "string": "ID"
+            },
+            "timestamp": {
+                "string": "Timestamp"
+            },
+            "type": {
+                "string": "Tür"
+            },
+            "status": {
+                "string": "Durum"
+            },
+            "size": {
+                "string": "Size"
+            },
+            "duration": {
+                "string": "Duration"
+            },
+            "empty": {
+                "string": "No backups yet."
+            }
+        }
+    }
+}

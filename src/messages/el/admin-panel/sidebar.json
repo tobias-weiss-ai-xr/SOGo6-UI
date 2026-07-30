@@ -1,169 +1,169 @@
 {
-  "AP_SIDEBAR": {
-    "system": {
-      "string": "System"
-    },
-    "theme": {
-      "string": "Theme"
-    },
-    "users": {
-      "string": "Users"
-    },
-    "bulk_users": {
-      "string": "Bulk Users"
-    },
-    "quotas": {
-      "string": "Quotas"
-    },
-    "branding": {
-      "string": "Branding"
-    },
-    "backup": {
-      "string": "Backup"
-    },
-    "db_migration": {
-      "string": "DB Migration"
-    },
-    "migration": {
-      "string": "Migration"
-    },
-    "config_code": {
-      "string": "Config as Code"
-    },
-    "webhooks": {
-      "string": "Webhooks"
-    },
-    "oauth_clients": {
-      "string": "OAuth Clients"
-    },
-    "scheduling_polls": {
-      "string": "Scheduling Polls"
-    },
-    "appointment_slots": {
-      "string": "Appointment Slots"
-    },
-    "shared_drafts": {
-      "string": "Shared Drafts"
-    },
-    "file_sharing": {
-      "string": "File Sharing"
-    },
-    "doc_preview": {
-      "string": "Doc Preview"
-    },
-    "approvals": {
-      "string": "Approvals"
-    },
-    "helpdesk": {
-      "string": "Helpdesk"
-    },
-    "crm": {
-      "string": "CRM"
-    },
-    "workflows": {
-      "string": "Workflows"
-    },
-    "quick_actions": {
-      "string": "Quick Actions"
-    },
-    "freebusy": {
-      "string": "Free/Busy"
-    },
-    "ai_summarize": {
-      "string": "AI Summarize"
-    },
-    "ai_classify": {
-      "string": "AI Classify"
-    },
-    "ai_draft": {
-      "string": "AI Draft"
-    },
-    "ai_search": {
-      "string": "AI Search"
-    },
-    "ai_schedule": {
-      "string": "AI Schedule"
-    },
-    "ai_anomaly": {
-      "string": "AI Anomaly"
-    },
-    "ai_enrich": {
-      "string": "AI Enrich"
-    },
-    "ai_attachment": {
-      "string": "AI Attach"
-    },
-    "ai_spam": {
-      "string": "AI Spam"
-    },
-    "ai_transcripts": {
-      "string": "AI Transcripts"
-    },
-    "api_docs": {
-      "string": "API Documentation"
-    },
-    "config": {
-      "string": "Configuration",
-      "rules": {
-        "string": "Rules"
-      },
-      "domains": {
-        "string": "Domains",
-        "default": {
-          "string": "Default"
+    "AP_SIDEBAR": {
+        "system": {
+            "string": "Σύστημα"
         },
-        "custom": {
-          "string": "Custom domains"
+        "theme": {
+            "string": "Theme"
+        },
+        "users": {
+            "string": "Χρήστες"
+        },
+        "bulk_users": {
+            "string": "Bulk Users"
+        },
+        "quotas": {
+            "string": "Quotas"
+        },
+        "branding": {
+            "string": "Branding"
+        },
+        "backup": {
+            "string": "Backup"
+        },
+        "db_migration": {
+            "string": "DB Migration"
+        },
+        "migration": {
+            "string": "Migration"
+        },
+        "config_code": {
+            "string": "Config as Code"
+        },
+        "webhooks": {
+            "string": "Webhooks"
+        },
+        "oauth_clients": {
+            "string": "OAuth Clients"
+        },
+        "scheduling_polls": {
+            "string": "Scheduling Polls"
+        },
+        "appointment_slots": {
+            "string": "Appointment Slots"
+        },
+        "shared_drafts": {
+            "string": "Shared Drafts"
+        },
+        "file_sharing": {
+            "string": "File Sharing"
+        },
+        "doc_preview": {
+            "string": "Doc Preview"
+        },
+        "approvals": {
+            "string": "Approvals"
+        },
+        "helpdesk": {
+            "string": "Helpdesk"
+        },
+        "crm": {
+            "string": "CRM"
+        },
+        "workflows": {
+            "string": "Workflows"
+        },
+        "quick_actions": {
+            "string": "Quick Actions"
+        },
+        "freebusy": {
+            "string": "Free/Busy"
+        },
+        "ai_summarize": {
+            "string": "AI Summarize"
+        },
+        "ai_classify": {
+            "string": "AI Classify"
+        },
+        "ai_draft": {
+            "string": "AI Draft"
+        },
+        "ai_search": {
+            "string": "AI Search"
+        },
+        "ai_schedule": {
+            "string": "AI Schedule"
+        },
+        "ai_anomaly": {
+            "string": "AI Anomaly"
+        },
+        "ai_enrich": {
+            "string": "AI Enrich"
+        },
+        "ai_attachment": {
+            "string": "AI Attach"
+        },
+        "ai_spam": {
+            "string": "AI Spam"
+        },
+        "ai_transcripts": {
+            "string": "AI Transcripts"
+        },
+        "api_docs": {
+            "string": "API Documentation"
+        },
+        "config": {
+            "string": "Διαμόρφωση",
+            "rules": {
+                "string": "Rules"
+            },
+            "domains": {
+                "string": "Domains",
+                "default": {
+                    "string": "Προεπιλογή"
+                },
+                "custom": {
+                    "string": "Custom domains"
+                }
+            }
+        },
+        "sessions": {
+            "string": "Sessions"
+        },
+        "audit": {
+            "string": "Audit Log"
+        },
+        "health": {
+            "string": "Health"
+        },
+        "debug": {
+            "string": "Mailbox Debug"
+        },
+        "dns_wizard": {
+            "string": "DNS Wizard"
+        },
+        "resources": {
+            "string": "Πόροι"
+        },
+        "scim": {
+            "string": "SCIM Provisioning"
+        },
+        "student_groups": {
+            "string": "Student Groups"
+        },
+        "hipaa": {
+            "string": "HIPAA Compliance"
+        },
+        "eidas": {
+            "string": "eIDAS Signatures"
+        },
+        "donor": {
+            "string": "Donor Management"
+        },
+        "volunteer": {
+            "string": "Volunteer Scheduling"
+        },
+        "import": {
+            "string": "Import/Export"
+        },
+        "matrix": {
+            "string": "Matrix Chat"
+        },
+        "protocols": {
+            "string": "JMAP / ActiveSync"
+        },
+        "mobile": {
+            "string": "Mobile App"
         }
-      }
-    },
-    "sessions": {
-      "string": "Sessions"
-    },
-    "audit": {
-      "string": "Audit Log"
-    },
-    "health": {
-      "string": "Health"
-    },
-    "debug": {
-      "string": "Mailbox Debug"
-    },
-    "dns_wizard": {
-      "string": "DNS Wizard"
-    },
-    "resources": {
-      "string": "Resources"
-    },
-    "scim": {
-      "string": "SCIM Provisioning"
-    },
-    "student_groups": {
-      "string": "Student Groups"
-    },
-    "hipaa": {
-      "string": "HIPAA Compliance"
-    },
-    "eidas": {
-      "string": "eIDAS Signatures"
-    },
-    "donor": {
-      "string": "Donor Management"
-    },
-    "volunteer": {
-      "string": "Volunteer Scheduling"
-    },
-    "import": {
-      "string": "Import/Export"
-    },
-    "matrix": {
-      "string": "Matrix Chat"
-    },
-    "protocols": {
-      "string": "JMAP / ActiveSync"
-    },
-    "mobile": {
-      "string": "Mobile App"
     }
-  }
 }

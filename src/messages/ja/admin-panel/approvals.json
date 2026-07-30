@@ -23,7 +23,7 @@
                 "string": "Category"
             },
             "description": {
-                "string": "Description"
+                "string": "説明"
             },
             "steps": {
                 "string": "Approval Steps"

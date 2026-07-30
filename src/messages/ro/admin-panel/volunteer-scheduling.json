@@ -49,7 +49,7 @@
         },
         "field": {
             "name": {
-                "string": "Name"
+                "string": "Nume"
             },
             "email": {
                 "string": "Email"

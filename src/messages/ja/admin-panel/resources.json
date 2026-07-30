@@ -28,13 +28,13 @@
         },
         "labels": {
             "name": {
-                "string": "Name"
+                "string": "名前"
             },
             "email": {
                 "string": "Email"
             },
             "type": {
-                "string": "Type"
+                "string": "種類"
             },
             "capacity": {
                 "string": "Capacity"
@@ -43,7 +43,7 @@
                 "string": "Location"
             },
             "description": {
-                "string": "Description"
+                "string": "説明"
             },
             "booking_policy": {
                 "string": "Booking Policy"
@@ -84,13 +84,13 @@
         },
         "table": {
             "name": {
-                "string": "Name"
+                "string": "名前"
             },
             "email": {
                 "string": "Email"
             },
             "type": {
-                "string": "Type"
+                "string": "種類"
             },
             "capacity": {
                 "string": "Capacity"
@@ -102,7 +102,7 @@
                 "string": "Policy"
             },
             "status": {
-                "string": "Status"
+                "string": "ステータス"
             },
             "actions": {
                 "string": "Actions"

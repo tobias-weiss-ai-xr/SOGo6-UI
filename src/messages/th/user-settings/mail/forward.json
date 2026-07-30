@@ -92,10 +92,10 @@
         },
         "status": {
             "enabled": {
-                "string": "Enabled"
+                "string": "เปิด"
             },
             "disabled": {
-                "string": "Disabled"
+                "string": "ปิด"
             }
         },
         "aria": {

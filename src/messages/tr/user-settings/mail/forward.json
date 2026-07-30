@@ -92,10 +92,10 @@
         },
         "status": {
             "enabled": {
-                "string": "Enabled"
+                "string": "Etkin"
             },
             "disabled": {
-                "string": "Disabled"
+                "string": "Devre dışı"
             }
         },
         "aria": {

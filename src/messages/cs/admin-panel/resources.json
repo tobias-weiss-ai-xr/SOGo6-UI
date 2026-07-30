@@ -20,21 +20,21 @@
         },
         "status": {
             "active": {
-                "string": "Active"
+                "string": "Aktivní"
             },
             "inactive": {
-                "string": "Inactive"
+                "string": "Neaktivní"
             }
         },
         "labels": {
             "name": {
-                "string": "Name"
+                "string": "Název"
             },
             "email": {
                 "string": "Email"
             },
             "type": {
-                "string": "Type"
+                "string": "Typ"
             },
             "capacity": {
                 "string": "Capacity"
@@ -43,7 +43,7 @@
                 "string": "Location"
             },
             "description": {
-                "string": "Description"
+                "string": "Popis"
             },
             "booking_policy": {
                 "string": "Booking Policy"
@@ -84,13 +84,13 @@
         },
         "table": {
             "name": {
-                "string": "Name"
+                "string": "Název"
             },
             "email": {
                 "string": "Email"
             },
             "type": {
-                "string": "Type"
+                "string": "Typ"
             },
             "capacity": {
                 "string": "Capacity"
@@ -102,7 +102,7 @@
                 "string": "Policy"
             },
             "status": {
-                "string": "Status"
+                "string": "Stav"
             },
             "actions": {
                 "string": "Actions"

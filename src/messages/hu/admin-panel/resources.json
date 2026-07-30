@@ -20,21 +20,21 @@
         },
         "status": {
             "active": {
-                "string": "Active"
+                "string": "Aktív"
             },
             "inactive": {
-                "string": "Inactive"
+                "string": "Inaktív"
             }
         },
         "labels": {
             "name": {
-                "string": "Name"
+                "string": "Név"
             },
             "email": {
                 "string": "Email"
             },
             "type": {
-                "string": "Type"
+                "string": "Típus"
             },
             "capacity": {
                 "string": "Capacity"
@@ -43,7 +43,7 @@
                 "string": "Location"
             },
             "description": {
-                "string": "Description"
+                "string": "Leírás"
             },
             "booking_policy": {
                 "string": "Booking Policy"
@@ -84,13 +84,13 @@
         },
         "table": {
             "name": {
-                "string": "Name"
+                "string": "Név"
             },
             "email": {
                 "string": "Email"
             },
             "type": {
-                "string": "Type"
+                "string": "Típus"
             },
             "capacity": {
                 "string": "Capacity"
@@ -102,7 +102,7 @@
                 "string": "Policy"
             },
             "status": {
-                "string": "Status"
+                "string": "Állapot"
             },
             "actions": {
                 "string": "Actions"

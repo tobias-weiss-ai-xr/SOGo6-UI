@@ -40,7 +40,7 @@
                 "string": "Chyba"
             },
             "loading": {
-                "string": "Loading"
+                "string": "Načítání"
             },
             "load_failed": {
                 "string": "Failed to load profile. Please try again later."

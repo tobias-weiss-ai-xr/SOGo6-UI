@@ -165,7 +165,7 @@
                 "string": "Subscribe to calendar"
             },
             "name_label": {
-                "string": "Name"
+                "string": "Název"
             },
             "url_label": {
                 "string": "Calendar URL (.ics)"
@@ -270,7 +270,7 @@
                 "string": "Location"
             },
             "description": {
-                "string": "Description"
+                "string": "Popis"
             },
             "attendees": {
                 "string": "Attendees"
@@ -371,7 +371,7 @@
                 }
             },
             "status": {
-                "string": "Status",
+                "string": "Stav",
                 "values": {
                     "confirmed": {
                         "string": "Confirmed"
@@ -442,7 +442,7 @@
             },
             "description": {
                 "label": {
-                    "string": "Description"
+                    "string": "Popis"
                 },
                 "placeholder": {
                     "string": "Add event details"
@@ -499,7 +499,7 @@
             },
             "status": {
                 "label": {
-                    "string": "Status"
+                    "string": "Stav"
                 },
                 "placeholder": {
                     "string": "Select status"
@@ -737,7 +737,7 @@
                     "string": "Color"
                 },
                 "description": {
-                    "string": "Description"
+                    "string": "Popis"
                 },
                 "descriptionPlaceholder": {
                     "string": "Add description to calendar"
@@ -822,7 +822,7 @@
                     "string": "Color"
                 },
                 "description": {
-                    "string": "Description"
+                    "string": "Popis"
                 },
                 "descriptionPlaceholder": {
                     "string": "Add description to calendar"

@@ -40,7 +40,7 @@
                 "string": "Feil"
             },
             "loading": {
-                "string": "Loading"
+                "string": "Laster"
             },
             "load_failed": {
                 "string": "Failed to load profile. Please try again later."

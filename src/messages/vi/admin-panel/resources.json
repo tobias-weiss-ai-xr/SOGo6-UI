@@ -20,21 +20,21 @@
         },
         "status": {
             "active": {
-                "string": "Active"
+                "string": "Hoạt động"
             },
             "inactive": {
-                "string": "Inactive"
+                "string": "Không hoạt động"
             }
         },
         "labels": {
             "name": {
-                "string": "Name"
+                "string": "Tên"
             },
             "email": {
                 "string": "Email"
             },
             "type": {
-                "string": "Type"
+                "string": "Loại"
             },
             "capacity": {
                 "string": "Capacity"
@@ -43,7 +43,7 @@
                 "string": "Location"
             },
             "description": {
-                "string": "Description"
+                "string": "Mô tả"
             },
             "booking_policy": {
                 "string": "Booking Policy"
@@ -84,13 +84,13 @@
         },
         "table": {
             "name": {
-                "string": "Name"
+                "string": "Tên"
             },
             "email": {
                 "string": "Email"
             },
             "type": {
-                "string": "Type"
+                "string": "Loại"
             },
             "capacity": {
                 "string": "Capacity"
@@ -102,7 +102,7 @@
                 "string": "Policy"
             },
             "status": {
-                "string": "Status"
+                "string": "Trạng thái"
             },
             "actions": {
                 "string": "Actions"

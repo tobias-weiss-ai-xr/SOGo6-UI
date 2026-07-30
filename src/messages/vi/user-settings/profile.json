@@ -40,7 +40,7 @@
                 "string": "Lỗi"
             },
             "loading": {
-                "string": "Loading"
+                "string": "Đang tải"
             },
             "load_failed": {
                 "string": "Failed to load profile. Please try again later."

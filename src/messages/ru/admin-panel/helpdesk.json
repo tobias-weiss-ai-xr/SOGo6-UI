@@ -23,7 +23,7 @@
                 "string": "Priority"
             },
             "description": {
-                "string": "Description"
+                "string": "Описание"
             },
             "requester": {
                 "string": "Requester Email"

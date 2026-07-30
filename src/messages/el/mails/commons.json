@@ -15,7 +15,7 @@
                     "description": "Forward the current message to another recipient"
                 },
                 "edit_draft": {
-                    "string": "Edit",
+                    "string": "Επεξεργασία",
                     "description": "Open the draft in the composer"
                 },
                 "use_template": {
@@ -459,7 +459,7 @@
                             "string": "email@domain.com"
                         },
                         "button": {
-                            "string": "Add"
+                            "string": "Προσθήκη"
                         },
                         "error": {
                             "invalid": {
@@ -613,7 +613,7 @@
                         "description": "Placeholder for the folder name input"
                     },
                     "submit": {
-                        "string": "Create",
+                        "string": "Δημιουργία",
                         "description": "Submit button label in the create subfolder dialog"
                     },
                     "cancel": {

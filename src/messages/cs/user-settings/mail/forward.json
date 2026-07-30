@@ -92,10 +92,10 @@
         },
         "status": {
             "enabled": {
-                "string": "Enabled"
+                "string": "Povoleno"
             },
             "disabled": {
-                "string": "Disabled"
+                "string": "Zakázáno"
             }
         },
         "aria": {

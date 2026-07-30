@@ -40,13 +40,13 @@
         },
         "field": {
             "name": {
-                "string": "Name"
+                "string": "Nome"
             },
             "email": {
                 "string": "Email"
             },
             "type": {
-                "string": "Type"
+                "string": "Tipo"
             },
             "total": {
                 "string": "Total"

@@ -238,10 +238,10 @@
                 "string": "Organization name"
             },
             "type": {
-                "string": "Type"
+                "string": "Tür"
             },
             "type_default": {
-                "string": "Default"
+                "string": "Varsayılan"
             },
             "pref": {
                 "string": "Preferred"

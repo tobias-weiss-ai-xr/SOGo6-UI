@@ -28,7 +28,7 @@
                 "string": "Import Configuration"
             },
             "description_label": {
-                "string": "Description"
+                "string": "설명"
             },
             "description_placeholder": {
                 "string": "e.g. Update mail server settings"

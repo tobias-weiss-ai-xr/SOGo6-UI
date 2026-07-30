@@ -23,7 +23,7 @@
                 "string": "Trigger"
             },
             "description": {
-                "string": "Description"
+                "string": "説明"
             },
             "conditions": {
                 "string": "Conditions"

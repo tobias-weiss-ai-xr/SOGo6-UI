@@ -238,10 +238,10 @@
                 "string": "Organization name"
             },
             "type": {
-                "string": "Type"
+                "string": "Tip"
             },
             "type_default": {
-                "string": "Default"
+                "string": "Implicit"
             },
             "pref": {
                 "string": "Preferred"

@@ -92,10 +92,10 @@
         },
         "status": {
             "enabled": {
-                "string": "Enabled"
+                "string": "Ingeschakeld"
             },
             "disabled": {
-                "string": "Disabled"
+                "string": "Uitgeschakeld"
             }
         },
         "aria": {

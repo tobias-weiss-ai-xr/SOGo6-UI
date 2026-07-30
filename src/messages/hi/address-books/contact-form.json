@@ -238,10 +238,10 @@
                 "string": "Organization name"
             },
             "type": {
-                "string": "Type"
+                "string": "प्रकार"
             },
             "type_default": {
-                "string": "Default"
+                "string": "डिफ़ॉल्ट"
             },
             "pref": {
                 "string": "Preferred"

@@ -40,7 +40,7 @@
                 "string": "त्रुटि"
             },
             "loading": {
-                "string": "Loading"
+                "string": "लोड हो रहा है"
             },
             "load_failed": {
                 "string": "Failed to load profile. Please try again later."

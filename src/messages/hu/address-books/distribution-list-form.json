@@ -65,7 +65,7 @@
                 "string": "List name"
             },
             "note": {
-                "string": "Description"
+                "string": "Leírás"
             }
         },
         "delete_dialog": {

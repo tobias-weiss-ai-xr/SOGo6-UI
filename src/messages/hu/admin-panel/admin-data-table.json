@@ -1,10 +1,10 @@
 {
     "DATA_TABLE": {
         "filter_placeholder": {
-            "string": "Filter..."
+            "string": "Szűrés..."
         },
         "no_result": {
-            "string": "No results."
+            "string": "Nincsenek eredmények."
         },
         "previous": {
             "string": "Előző"

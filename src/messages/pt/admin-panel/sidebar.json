@@ -1,19 +1,19 @@
 {
     "AP_SIDEBAR": {
         "system": {
-            "string": "System"
+            "string": "Sistema"
         },
         "theme": {
-            "string": "Theme"
+            "string": "Tema"
         },
         "users": {
-            "string": "Users"
+            "string": "Usuários"
         },
         "bulk_users": {
-            "string": "Bulk Users"
+            "string": "Usuários em Massa"
         },
         "quotas": {
-            "string": "Quotas"
+            "string": "Cotas"
         },
         "branding": {
             "string": "Brandando"
@@ -110,10 +110,10 @@
             "domains": {
                 "string": "Domains",
                 "default": {
-                    "string": "Default"
+                    "string": "Padrão"
                 },
                 "custom": {
-                    "string": "Custom domains"
+                    "string": "Domínios personalizados"
                 }
             }
         },
@@ -133,7 +133,7 @@
             "string": "DNS Wizard"
         },
         "resources": {
-            "string": "Resources"
+            "string": "Recursos"
         },
         "scim": {
             "string": "SCIM Provisionando"

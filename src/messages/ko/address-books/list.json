@@ -36,7 +36,7 @@
         },
         "filters": {
             "name": {
-                "string": "Name"
+                "string": "이름"
             },
             "sort_by": {
                 "string": "Sort by"

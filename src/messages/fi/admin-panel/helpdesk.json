@@ -23,7 +23,7 @@
                 "string": "Priority"
             },
             "description": {
-                "string": "Description"
+                "string": "Kuvaus"
             },
             "requester": {
                 "string": "Requester Email"

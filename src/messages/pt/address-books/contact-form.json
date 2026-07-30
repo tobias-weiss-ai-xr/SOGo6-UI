@@ -238,10 +238,10 @@
                 "string": "Organization name"
             },
             "type": {
-                "string": "Type"
+                "string": "Tipo"
             },
             "type_default": {
-                "string": "Default"
+                "string": "Padrão"
             },
             "pref": {
                 "string": "Preferred"

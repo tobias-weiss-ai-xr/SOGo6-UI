@@ -36,7 +36,7 @@
         },
         "filters": {
             "name": {
-                "string": "Name"
+                "string": "Όνομα"
             },
             "sort_by": {
                 "string": "Sort by"

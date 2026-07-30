@@ -10,13 +10,13 @@
             "string": "Add new rule"
         },
         "select_all": {
-            "string": "Select all"
+            "string": "Selecionar tudo"
         },
         "select_row": {
-            "string": "Select row"
+            "string": "Selecionar linha"
         },
         "domain": {
-            "string": "Domain"
+            "string": "Domínio"
         },
         "open_menu": {
             "string": "Open menu"
@@ -131,7 +131,7 @@
                 "string": "ID"
             },
             "name": {
-                "string": "Name"
+                "string": "Nome"
             },
             "actions": {
                 "string": "Actions"

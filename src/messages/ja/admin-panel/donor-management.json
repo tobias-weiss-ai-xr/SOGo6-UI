@@ -40,13 +40,13 @@
         },
         "field": {
             "name": {
-                "string": "Name"
+                "string": "名前"
             },
             "email": {
                 "string": "Email"
             },
             "type": {
-                "string": "Type"
+                "string": "種類"
             },
             "total": {
                 "string": "Total"

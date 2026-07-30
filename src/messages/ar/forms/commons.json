@@ -37,7 +37,7 @@
             }
         },
         "enabled": {
-            "string": "Enabled"
+            "string": "ممكّن"
         },
         "emails": {
             "placeholder": "Add email address and press Enter"

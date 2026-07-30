@@ -238,10 +238,10 @@
                 "string": "Organization name"
             },
             "type": {
-                "string": "Type"
+                "string": "Tyyppi"
             },
             "type_default": {
-                "string": "Default"
+                "string": "Oletus"
             },
             "pref": {
                 "string": "Preferred"

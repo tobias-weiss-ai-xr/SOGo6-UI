@@ -238,10 +238,10 @@
                 "string": "Organization name"
             },
             "type": {
-                "string": "Type"
+                "string": "Loại"
             },
             "type_default": {
-                "string": "Default"
+                "string": "Mặc định"
             },
             "pref": {
                 "string": "Preferred"

@@ -23,7 +23,7 @@
                 "string": "Trigger"
             },
             "description": {
-                "string": "Description"
+                "string": "Kuvaus"
             },
             "conditions": {
                 "string": "Conditions"

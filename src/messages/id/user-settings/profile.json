@@ -40,7 +40,7 @@
                 "string": "Kesalahan"
             },
             "loading": {
-                "string": "Loading"
+                "string": "Memuat"
             },
             "load_failed": {
                 "string": "Failed to load profile. Please try again later."

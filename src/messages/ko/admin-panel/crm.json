@@ -20,7 +20,7 @@
                 "string": "Account Name"
             },
             "domain": {
-                "string": "Domain"
+                "string": "도메인"
             },
             "industry": {
                 "string": "Industry"
