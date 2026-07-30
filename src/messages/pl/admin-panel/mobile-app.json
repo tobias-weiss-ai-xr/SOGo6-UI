@@ -1,12 +1,65 @@
 {
   "MOBILE": {
-    "title": { "string": "Mobile App Management" },
-    "description": { "string": "Manage registered devices, push notifications, and app configuration" },
-    "errors": { "fail": { "string": "Operation failed" } },
-    "success": { "unregister": { "string": "Device unregistered" }, "broadcast": { "string": "Push notification sent" } },
-    "config": { "title": { "string": "App Settings" }, "push": { "string": "Push Notifications" }, "biometric": { "string": "Biometric Auth" } },
-    "push": { "title": { "string": "Push Broadcast" }, "title": { "placeholder": { "string": "Notification title" } }, "message": { "placeholder": { "string": "Message..." } }, "broadcast": { "string": "Send" } },
-    "stats": { "title": { "string": "Statistics" }, "devices": { "string": "Registered Devices" } },
-    "devices": { "title": { "string": "All Devices" }, "empty": { "string": "No devices registered yet" } }
+    "title": {
+      "string": "Zarządzanie aplikacją mobilną"
+    },
+    "description": {
+      "string": "Zarządzaj zarejestrowanymi urządzeniami, powiadomieniami push i konfiguracją aplikacji"
+    },
+    "errors": {
+      "fail": {
+        "string": "Operacja nie powiodła się"
+      }
+    },
+    "success": {
+      "unregister": {
+        "string": "Urządzenie zarejestrowane"
+      },
+      "broadcast": {
+        "string": "Powiadomienie push zostało wysłane"
+      }
+    },
+    "config": {
+      "title": {
+        "string": "Ustawienia aplikacji"
+      },
+      "push": {
+        "string": "Powiadomienia push"
+      },
+      "biometric": {
+        "string": "Uwierzytelnianie biometryczne"
+      }
+    },
+    "push": {
+      "title": {
+        "placeholder": {
+          "string": "Tytuł powiadomienia"
+        }
+      },
+      "message": {
+        "placeholder": {
+          "string": "Wiadomość..."
+        }
+      },
+      "broadcast": {
+        "string": "Wyślij"
+      }
+    },
+    "stats": {
+      "title": {
+        "string": "Statystyki"
+      },
+      "devices": {
+        "string": "Zarejestrowane urządzenia"
+      }
+    },
+    "devices": {
+      "title": {
+        "string": "Wszystkie urządzenia"
+      },
+      "empty": {
+        "string": "Brak zarejestrowanych urządzeń"
+      }
+    }
   }
 }

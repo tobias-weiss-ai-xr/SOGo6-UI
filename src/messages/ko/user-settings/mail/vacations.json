@@ -1,133 +1,133 @@
 {
-    "US_MAIL_VACATIONS": {
-        "title": {
-            "string": "Vacation Settings",
-            "context": "Title for the vacation settings page"
+  "US_MAIL_VACATIONS": {
+    "title": {
+      "string": "휴가 설정",
+      "context": "Title for the vacation settings page"
+    },
+    "page": {
+      "description": {
+        "string": "부재 중 자동 응답 메시지를 구성하고 활성화할 기간을 설정하세요."
+      }
+    },
+    "errors_api": {
+      "load_failed": {
+        "string": "휴가 설정을 불러올 수 없습니다. 나중에 다시 시도해 주세요."
+      },
+      "feature_disabled": {
+        "string": "관리자에 의해 휴가 자동 응답이 비활성화되었습니다."
+      }
+    },
+    "errors": {
+      "validation": {
+        "message_required": {
+          "string": "휴가 설정이 활성화된 경우 자동 응답 메시지는 필수입니다."
         },
-        "page": {
-            "description": {
-                "string": "Configure your out-of-office auto reply message and when it should be active."
-            }
+        "dates_required": {
+          "string": "기간 제한이 활성화된 경우 시작일과 종료일은 필수입니다."
         },
-        "errors_api": {
-            "load_failed": {
-                "string": "Could not load vacation settings. Please try again later."
-            },
-            "feature_disabled": {
-                "string": "Vacation auto reply has been disabled by your administrator."
-            }
+        "date_order": {
+          "string": "종료일은 시작일과 같거나 그 이후여야 합니다."
         },
-        "errors": {
-            "validation": {
-                "message_required": {
-                    "string": "Auto reply message is required when vacation is enabled."
-                },
-                "dates_required": {
-                    "string": "Start and end dates are required when date constraints are enabled."
-                },
-                "date_order": {
-                    "string": "End date must be on or after the start date."
-                },
-                "time_invalid": {
-                    "string": "Please enter a valid time in HH:MM format."
-                },
-                "weekday_required": {
-                    "string": "Select at least one weekday when weekday constraints are enabled."
-                },
-                "response_interval_invalid": {
-                    "string": "Response interval must be zero or a positive number."
-                },
-                "response_interval_zero": {
-                    "string": "A zero-day response interval is not allowed on this domain."
-                }
-            }
+        "time_invalid": {
+          "string": "유효한 시간을 HH:MM 형식으로 입력해 주세요."
         },
-        "auto_reply": {
-            "enable": {
-                "string": "Enable vacation auto reply"
-            },
-            "subject": {
-                "label": {
-                    "string": "Auto reply subject"
-                },
-                "description": {
-                    "string": "Leave blank to use default subject. You can write {subject} to insert the original subject."
-                }
-            },
-            "message": {
-                "string": "Auto reply message"
-            },
-            "constraints": {
-                "title": {
-                    "string": "Activation constraints"
-                },
-                "description": {
-                    "string": "Customize day and hour ranges independently and optionally combine them with specific weekdays to tailor your vacation filters to your preferences."
-                },
-                "enable": {
-                    "days": {
-                        "string": "Enable auto reply on these days"
-                    },
-                    "hours": {
-                        "string": "Enable auto reply between these hours"
-                    },
-                    "range": {
-                        "string": "Enable auto reply between these days"
-                    }
-                },
-                "time": {
-                    "start": {
-                        "string": "Start time"
-                    },
-                    "end": {
-                        "string": "End time"
-                    }
-                },
-                "weekdays": {
-                    "monday": {
-                        "string": "Monday"
-                    },
-                    "tuesday": {
-                        "string": "Tuesday"
-                    },
-                    "wednesday": {
-                        "string": "Wednesday"
-                    },
-                    "thursday": {
-                        "string": "Thursday"
-                    },
-                    "friday": {
-                        "string": "Friday"
-                    },
-                    "saturday": {
-                        "string": "Saturday"
-                    },
-                    "sunday": {
-                        "string": "Sunday"
-                    }
-                }
-            },
-            "response": {
-                "interval_days": {
-                    "label": {
-                        "string": "Minimum days between auto replies"
-                    },
-                    "placeholder": {
-                        "string": "Leave empty for default behavior"
-                    },
-                    "description": {
-                        "string": "Prevents sending duplicate vacation replies within this period (RFC 5230 :days)."
-                    }
-                },
-                "send_always": {
-                    "label": {
-                        "string": "Always send vacation message response"
-                    },
-                    "description": {
-                        "string": "The vacation message is sent prior to applying your filters."
-                    }
-                }
-            }
+        "weekday_required": {
+          "string": "요일 제한이 활성화된 경우 최소 한 개의 요일을 선택해 주세요."
+        },
+        "response_interval_invalid": {
+          "string": "응답 간격은 0 또는 양수여야 합니다."
+        },
+        "response_interval_zero": {
+          "string": "이 도메인에서는 0일 응답 간격이 허용되지 않습니다."
         }
+      }
+    },
+    "auto_reply": {
+      "enable": {
+        "string": "휴가 자동 응답 활성화"
+      },
+      "subject": {
+        "label": {
+          "string": "자동 응답 제목"
+        },
+        "description": {
+          "string": "비워 두면 기본 제목이 사용됩니다. {subject}을 입력하여 원래 제목을 삽입할 수 있습니다."
+        }
+      },
+      "message": {
+        "string": "자동 응답 메시지"
+      },
+      "constraints": {
+        "title": {
+          "string": "활성화 조건"
+        },
+        "description": {
+          "string": "요일과 시간 범위를 독립적으로 사용자 정의하고, 필요에 따라 특정 요일과 조합하여 휴가 필터를 맞춤 설정할 수 있습니다."
+        },
+        "enable": {
+          "days": {
+            "string": "이 날짜에 자동 응답 활성화"
+          },
+          "hours": {
+            "string": "이 시간 사이에 자동 응답 활성화"
+          },
+          "range": {
+            "string": "이 기간 사이에 자동 응답 활성화"
+          }
+        },
+        "time": {
+          "start": {
+            "string": "시작 시간"
+          },
+          "end": {
+            "string": "종료 시간"
+          }
+        },
+        "weekdays": {
+          "monday": {
+            "string": "월요일"
+          },
+          "tuesday": {
+            "string": "화요일"
+          },
+          "wednesday": {
+            "string": "수요일"
+          },
+          "thursday": {
+            "string": "목요일"
+          },
+          "friday": {
+            "string": "금요일"
+          },
+          "saturday": {
+            "string": "토요일"
+          },
+          "sunday": {
+            "string": "일요일"
+          }
+        }
+      },
+      "response": {
+        "interval_days": {
+          "label": {
+            "string": "자동 응답 간 최소 일수"
+          },
+          "placeholder": {
+            "string": "기본 동작을 위해 비워 두세요"
+          },
+          "description": {
+            "string": "이 기간 내 중복 휴가 응답 전송 방지(RFC 5230 :days)"
+          }
+        },
+        "send_always": {
+          "label": {
+            "string": "항상 휴가 메시지 응답 보내기"
+          },
+          "description": {
+            "string": "휴가 메시지는 필터 적용 전에 전송됩니다."
+          }
+        }
+      }
     }
+  }
 }

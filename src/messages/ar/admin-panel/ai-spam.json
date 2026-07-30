@@ -1,1 +1,49 @@
-{ "AI_SPAM": { "title": { "string": "Intelligent Spam Filter" }, "description": { "string": "Real-time spam scoring with pattern analysis, sender reputation, and content heuristics." }, "input": { "title": { "string": "Email to Score" }, "subject": { "string": "Subject" }, "sender": { "string": "Sender" }, "body": { "string": "Body" }, "placeholder": { "string": "Paste the email body..." } }, "output": { "title": { "string": "Spam Score" }, "empty": { "string": "Enter email content and click Score" }, "signals": { "string": "Detected Signals" } }, "score": { "string": "Score Email" }, "errors": { "empty": { "string": "Enter subject or body" }, "fail": { "string": "Scoring failed" } } }}
+{
+  "AI_SPAM": {
+    "title": {
+      "string": "مرشح البريد المزعج الذكي"
+    },
+    "description": {
+      "string": "تقييم البريد المزعج في الوقت الفعلي باستخدام تحليل الأنماط وسمعة المرسل وخوارزميات المحتوى."
+    },
+    "input": {
+      "title": {
+        "string": "البريد الإلكتروني لتقييمه"
+      },
+      "subject": {
+        "string": "الموضوع"
+      },
+      "sender": {
+        "string": "المرسل"
+      },
+      "body": {
+        "string": "نص الرسالة"
+      },
+      "placeholder": {
+        "string": "الصق نص البريد الإلكتروني هنا..."
+      }
+    },
+    "output": {
+      "title": {
+        "string": "درجة البريد المزعج"
+      },
+      "empty": {
+        "string": "أدخل محتوى البريد وانقر على تقييم"
+      },
+      "signals": {
+        "string": "الإشارات المكتشفة"
+      }
+    },
+    "score": {
+      "string": "تقييم البريد"
+    },
+    "errors": {
+      "empty": {
+        "string": "أدخل الموضوع أو نص الرسالة"
+      },
+      "fail": {
+        "string": "فشل التقييم"
+      }
+    }
+  }
+}

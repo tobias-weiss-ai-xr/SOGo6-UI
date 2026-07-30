@@ -1,7 +1,34 @@
-{ "AP_HEALTH": {
-    "title": { "string": "System Health" },
-    "description": { "string": "Real-time status of all services in the SOGo stack." },
-    "status": { "all_ok": { "string": "All Systems Operational" }, "degraded": { "string": "Degraded" } },
-    "overview": { "uptime": { "string": "Uptime" }, "version": { "string": "Version" }, "services": { "string": "Services Healthy" } },
-    "errors": { "load_failed": { "string": "Failed to load health data" } }
-}}
+{
+  "AP_HEALTH": {
+    "title": {
+      "string": "Systemhelse"
+    },
+    "description": {
+      "string": "Sanntidsstatus for alle tjenester i SOGo-stakken."
+    },
+    "status": {
+      "all_ok": {
+        "string": "Alle systemer opererer normalt"
+      },
+      "degraded": {
+        "string": "Nedsatt ytelse"
+      }
+    },
+    "overview": {
+      "uptime": {
+        "string": "Oppetid"
+      },
+      "version": {
+        "string": "Versjon"
+      },
+      "services": {
+        "string": "Tjenester i god stand"
+      }
+    },
+    "errors": {
+      "load_failed": {
+        "string": "Kunne ikke laste helsedata"
+      }
+    }
+  }
+}

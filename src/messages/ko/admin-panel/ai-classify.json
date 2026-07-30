@@ -1,1 +1,46 @@
-{ "AI_CLASSIFY": { "title": { "string": "Smart Email Classification" }, "description": { "string": "Auto-label emails: newsletter, invoice, notification, social, personal." }, "input": { "title": { "string": "Input Email" }, "subject": { "string": "Subject" }, "sender": { "string": "Sender" }, "body": { "string": "Body" }, "placeholder": { "string": "Paste email content..." } }, "output": { "title": { "string": "Classification Results" }, "empty": { "string": "Enter text and click Classify" } }, "classify": { "string": "Classify" }, "errors": { "empty": { "string": "Enter email text" }, "fail": { "string": "Classification failed" } } }}
+{
+  "AI_CLASSIFY": {
+    "title": {
+      "string": "스마트 이메일 분류"
+    },
+    "description": {
+      "string": "이메일 자동 분류: 뉴스레터, 송장, 알림, 소셜, 개인"
+    },
+    "input": {
+      "title": {
+        "string": "입력 이메일"
+      },
+      "subject": {
+        "string": "제목"
+      },
+      "sender": {
+        "string": "발신자"
+      },
+      "body": {
+        "string": "본문"
+      },
+      "placeholder": {
+        "string": "이메일 내용을 붙여넣으세요..."
+      }
+    },
+    "output": {
+      "title": {
+        "string": "분류 결과"
+      },
+      "empty": {
+        "string": "텍스트를 입력하고 분류 버튼을 클릭하세요"
+      }
+    },
+    "classify": {
+      "string": "분류"
+    },
+    "errors": {
+      "empty": {
+        "string": "이메일 텍스트를 입력하세요"
+      },
+      "fail": {
+        "string": "분류에 실패했습니다"
+      }
+    }
+  }
+}

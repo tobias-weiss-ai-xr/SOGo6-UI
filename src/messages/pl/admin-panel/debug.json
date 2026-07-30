@@ -1,22 +1,52 @@
-{ "AP_DEBUG": {
-    "title": { "string": "Mailbox Debug" },
-    "description": { "string": "Diagnostic tool for troubleshooting mail delivery issues. View raw email source or parsed headers." },
+{
+  "AP_DEBUG": {
+    "title": {
+      "string": "Debugowanie skrzynki pocztowej"
+    },
+    "description": {
+      "string": "Narzędzie diagnostyczne do rozwiązywania problemów z dostarczaniem poczty. Wyświetl surowce źródło wiadomości lub zanalizowane nagłówki."
+    },
     "query": {
-      "title": { "string": "Debug Query" },
-      "button": { "string": "Inspect" }
+      "title": {
+        "string": "Zapytanie debugowania"
+      },
+      "button": {
+        "string": "Sprawdź"
+      }
     },
     "labels": {
-      "user": { "string": "User" },
-      "folder": { "string": "IMAP Folder" },
-      "mail_uid": { "string": "Mail UID" },
-      "select_user": { "string": "Select user..." }
+      "user": {
+        "string": "Użytkownik"
+      },
+      "folder": {
+        "string": "Folder IMAP"
+      },
+      "mail_uid": {
+        "string": "UID wiadomości"
+      },
+      "select_user": {
+        "string": "Wybierz użytkownika..."
+      }
     },
     "result": {
-      "raw": { "title": { "string": "Raw Email Source" } },
-      "headers": { "title": { "string": "Parsed Headers" } }
+      "raw": {
+        "title": {
+          "string": "Surowce źródło wiadomości"
+        }
+      },
+      "headers": {
+        "title": {
+          "string": "Zanalizowane nagłówki"
+        }
+      }
     },
     "errors": {
-      "fields_required": { "string": "User, folder, and mail UID are required" },
-      "fetch_failed": { "string": "Failed to fetch debug data" }
+      "fields_required": {
+        "string": "Wymagane są: użytkownik, folder i UID wiadomości"
+      },
+      "fetch_failed": {
+        "string": "Nie udało się pobrać danych debugowania"
+      }
     }
-}}
+  }
+}

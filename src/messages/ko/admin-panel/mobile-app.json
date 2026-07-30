@@ -1,12 +1,65 @@
 {
   "MOBILE": {
-    "title": { "string": "Mobile App Management" },
-    "description": { "string": "Manage registered devices, push notifications, and app configuration" },
-    "errors": { "fail": { "string": "Operation failed" } },
-    "success": { "unregister": { "string": "Device unregistered" }, "broadcast": { "string": "Push notification sent" } },
-    "config": { "title": { "string": "App Settings" }, "push": { "string": "Push Notifications" }, "biometric": { "string": "Biometric Auth" } },
-    "push": { "title": { "string": "Push Broadcast" }, "title": { "placeholder": { "string": "Notification title" } }, "message": { "placeholder": { "string": "Message..." } }, "broadcast": { "string": "Send" } },
-    "stats": { "title": { "string": "Statistics" }, "devices": { "string": "Registered Devices" } },
-    "devices": { "title": { "string": "All Devices" }, "empty": { "string": "No devices registered yet" } }
+    "title": {
+      "string": "모바일 앱 관리"
+    },
+    "description": {
+      "string": "등록된 기기, 푸시 알림 및 앱 구성 관리"
+    },
+    "errors": {
+      "fail": {
+        "string": "작업 실패"
+      }
+    },
+    "success": {
+      "unregister": {
+        "string": "기기 등록 해제됨"
+      },
+      "broadcast": {
+        "string": "푸시 알림 전송됨"
+      }
+    },
+    "config": {
+      "title": {
+        "string": "앱 설정"
+      },
+      "push": {
+        "string": "푸시 알림"
+      },
+      "biometric": {
+        "string": "생체 인증"
+      }
+    },
+    "push": {
+      "title": {
+        "placeholder": {
+          "string": "알림 제목"
+        }
+      },
+      "message": {
+        "placeholder": {
+          "string": "메시지..."
+        }
+      },
+      "broadcast": {
+        "string": "전송"
+      }
+    },
+    "stats": {
+      "title": {
+        "string": "통계"
+      },
+      "devices": {
+        "string": "등록된 기기"
+      }
+    },
+    "devices": {
+      "title": {
+        "string": "모든 기기"
+      },
+      "empty": {
+        "string": "등록된 기기가 없습니다"
+      }
+    }
   }
 }

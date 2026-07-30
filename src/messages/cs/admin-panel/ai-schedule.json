@@ -1,1 +1,43 @@
-{ "AI_SCHEDULE": { "title": { "string": "Smart Calendar Scheduling" }, "description": { "string": "AI-suggested meeting times based on attendee availability patterns and preferences." }, "input": { "title": { "string": "Meeting Setup" }, "attendees": { "string": "Attendees" }, "from": { "string": "From" }, "to": { "string": "To" }, "duration": { "string": "Duration (min)" } }, "output": { "title": { "string": "Suggested Times" } }, "suggest": { "string": "Suggest Times" }, "errors": { "fields": { "string": "Attendees, from, and to dates are required" }, "fail": { "string": "Suggestion failed" } } }}
+{
+  "AI_SCHEDULE": {
+    "title": {
+      "string": "Inteligentní plánování kalendáře"
+    },
+    "description": {
+      "string": "Návrhy času schůzek od AI na základě vzorců dostupnosti a preferencí účastníků."
+    },
+    "input": {
+      "title": {
+        "string": "Nastavení schůzky"
+      },
+      "attendees": {
+        "string": "Účastníci"
+      },
+      "from": {
+        "string": "Od"
+      },
+      "to": {
+        "string": "Do"
+      },
+      "duration": {
+        "string": "Délka (min)"
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Navrhované časy"
+      }
+    },
+    "suggest": {
+      "string": "Navrhnout časy"
+    },
+    "errors": {
+      "fields": {
+        "string": "Účastníci, datum od a datum do jsou povinné"
+      },
+      "fail": {
+        "string": "Návrh se nezdařil"
+      }
+    }
+  }
+}

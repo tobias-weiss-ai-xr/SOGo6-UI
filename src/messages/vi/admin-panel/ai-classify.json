@@ -1,1 +1,46 @@
-{ "AI_CLASSIFY": { "title": { "string": "Smart Email Classification" }, "description": { "string": "Auto-label emails: newsletter, invoice, notification, social, personal." }, "input": { "title": { "string": "Input Email" }, "subject": { "string": "Subject" }, "sender": { "string": "Sender" }, "body": { "string": "Body" }, "placeholder": { "string": "Paste email content..." } }, "output": { "title": { "string": "Classification Results" }, "empty": { "string": "Enter text and click Classify" } }, "classify": { "string": "Classify" }, "errors": { "empty": { "string": "Enter email text" }, "fail": { "string": "Classification failed" } } }}
+{
+  "AI_CLASSIFY": {
+    "title": {
+      "string": "Phân loại Email Thông minh"
+    },
+    "description": {
+      "string": "Tự động gán nhãn email: bản tin, hóa đơn, thông báo, mạng xã hội, cá nhân."
+    },
+    "input": {
+      "title": {
+        "string": "Email Đầu vào"
+      },
+      "subject": {
+        "string": "Tiêu đề"
+      },
+      "sender": {
+        "string": "Người gửi"
+      },
+      "body": {
+        "string": "Nội dung"
+      },
+      "placeholder": {
+        "string": "Dán nội dung email..."
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Kết quả Phân loại"
+      },
+      "empty": {
+        "string": "Nhập văn bản và nhấn Phân loại"
+      }
+    },
+    "classify": {
+      "string": "Phân loại"
+    },
+    "errors": {
+      "empty": {
+        "string": "Vui lòng nhập nội dung email"
+      },
+      "fail": {
+        "string": "Phân loại thất bại"
+      }
+    }
+  }
+}

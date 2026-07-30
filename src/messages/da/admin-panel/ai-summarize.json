@@ -1,1 +1,46 @@
-{ "AI_SUMMARIZE": { "title": { "string": "Email Summarization" }, "description": { "string": "TL;DR for long email threads. Extractive summarization returns the most important sentences." }, "input": { "title": { "string": "Input Email" }, "text": { "string": "Email Text" }, "placeholder": { "string": "Paste the email body here..." }, "sentences": { "string": "Max Sentences" } }, "output": { "title": { "string": "Summary" }, "empty": { "string": "Enter text and click Summarize" } }, "summarize": { "string": "Summarize" }, "loading": { "string": "Summarizing..." }, "errors": { "empty": { "string": "Enter text to summarize" }, "fail": { "string": "Summarization failed" } } }}
+{
+  "AI_SUMMARIZE": {
+    "title": {
+      "string": "E-mail-sammendrag"
+    },
+    "description": {
+      "string": "TL;DR til lange e-mail-tråde. Ekstraherende sammendrag returnerer de vigtigste sætninger."
+    },
+    "input": {
+      "title": {
+        "string": "Input-e-mail"
+      },
+      "text": {
+        "string": "E-mail-tekst"
+      },
+      "placeholder": {
+        "string": "Indsæt e-mail-brødteksten her..."
+      },
+      "sentences": {
+        "string": "Maks. sætninger"
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Sammendrag"
+      },
+      "empty": {
+        "string": "Indtast tekst og klik på Sammendrag"
+      }
+    },
+    "summarize": {
+      "string": "Sammendrag"
+    },
+    "loading": {
+      "string": "Sammendrages..."
+    },
+    "errors": {
+      "empty": {
+        "string": "Indtast tekst for at sammendrage"
+      },
+      "fail": {
+        "string": "Sammendrag mislykkedes"
+      }
+    }
+  }
+}

@@ -1,135 +1,135 @@
 {
   "AP_THEME": {
     "title": {
-      "string": "Theme Settings"
+      "string": "Teeman asetukset"
     },
     "description": {
-      "string": "Customize the look and feel of the SOGo interface"
+      "string": "Mukauta SOGo-käyttöliittymän ulkoasua ja tuntuja"
     },
     "form_title": {
-      "string": "Custom Theme"
+      "string": "Mukautettu teema"
     },
     "form_description": {
-      "string": "Configure colors, logo, and custom CSS for the groupware interface"
+      "string": "Määritä värit, logo ja mukautettu CSS ryhmäohjelmiston käyttöliittymälle"
     },
     "fields": {
       "primary": {
         "label": {
-          "string": "Primary Color"
+          "string": "Pääväri"
         },
         "description": {
-          "string": "HSL values for the primary color (e.g. 180 25% 40%)"
+          "string": "Päävärin HSL-arvot (esim. 180 25% 40%)"
         }
       },
       "primary_foreground": {
         "label": {
-          "string": "Primary Foreground"
+          "string": "Pääväri taustalla oleva teksti"
         },
         "description": {
-          "string": "Text color on primary backgrounds"
+          "string": "Tekstin väri pääväritaustoilla"
         }
       },
       "background": {
         "label": {
-          "string": "Background"
+          "string": "Tausta"
         },
         "description": {
-          "string": "HSL values for the page background"
+          "string": "Sivun taustan HSL-arvot"
         }
       },
       "foreground": {
         "label": {
-          "string": "Foreground"
+          "string": "Etualalla oleva väri"
         },
         "description": {
-          "string": "Default text color"
+          "string": "Oletustekstin väri"
         }
       },
       "sidebar_background": {
         "label": {
-          "string": "Sidebar Background"
+          "string": "Sivupalkin tausta"
         },
         "description": {
-          "string": "HSL values for the sidebar background"
+          "string": "Sivupalkin taustan HSL-arvot"
         }
       },
       "sidebar_foreground": {
         "label": {
-          "string": "Sidebar Foreground"
+          "string": "Sivupalkin teksti"
         },
         "description": {
-          "string": "Text color in the sidebar"
+          "string": "Tekstin väri sivupalkissa"
         }
       },
       "sidebar_primary": {
         "label": {
-          "string": "Sidebar Primary"
+          "string": "Sivupalkin pääväri"
         },
         "description": {
-          "string": "Primary accent color in the sidebar"
+          "string": "Pääkorostusväri sivupalkissa"
         }
       },
       "sidebar_accent": {
         "label": {
-          "string": "Sidebar Accent"
+          "string": "Sivupalkin korostusväri"
         },
         "description": {
-          "string": "Accent color in the sidebar"
+          "string": "Korostusväri sivupalkissa"
         }
       },
       "header_background": {
         "label": {
-          "string": "Header Background"
+          "string": "Ylätunnisteen tausta"
         },
         "description": {
-          "string": "HSL values for the top header bar"
+          "string": "HSL-arvot ylätunnistepalkille"
         }
       },
       "header_foreground": {
         "label": {
-          "string": "Header Foreground"
+          "string": "Ylätunnisteen etualue"
         },
         "description": {
-          "string": "Text color in the header"
+          "string": "Tekstin väri ylätunnisteessa"
         }
       },
       "logo_url": {
         "label": {
-          "string": "Logo URL"
+          "string": "Logon URL-osoite"
         },
         "description": {
-          "string": "URL of the custom logo image (optional)"
+          "string": "Mukautetun logokuvan URL-osoite (valinnainen)"
         }
       },
       "custom_css": {
         "label": {
-          "string": "Custom CSS"
+          "string": "Mukautettu CSS"
         },
         "description": {
-          "string": "Additional CSS rules to inject (optional)"
+          "string": "Lisä-CSS-säännöt (valinnainen)"
         }
       }
     },
     "save": {
-      "string": "Save Changes"
+      "string": "Tallenna muutokset"
     },
     "saving": {
-      "string": "Saving…"
+      "string": "Tallennetaan…"
     },
     "saved": {
-      "string": "Theme settings saved successfully"
+      "string": "Teeman asetukset tallennettu onnistuneesti"
     },
     "save_error": {
-      "string": "Failed to save: {message}"
+      "string": "Tallennus epäonnistui: {message}"
     },
     "unsaved_changes": {
-      "string": "You have unsaved changes"
+      "string": "Sinulla on tallentamattomia muutoksia"
     },
     "load_error": {
-      "string": "Failed to load theme settings"
+      "string": "Teeman asetusten lataus epäonnistui"
     },
     "retry": {
-      "string": "Retry"
+      "string": "Yritä uudelleen"
     }
   }
 }

@@ -1,25 +1,61 @@
-{ "AP_BULK": {
-    "title": { "string": "Bulk User Management" },
-    "description": { "string": "Import and export users in bulk using CSV files." },
+{
+  "AP_BULK": {
+    "title": {
+      "string": "बulk यूज़र प्रबंधन"
+    },
+    "description": {
+      "string": "CSV फ़ाइलों का उपयोग करके यूज़र्स को बulk में इम्पोर्ट और एक्सपोर्ट करें।"
+    },
     "export": {
-      "title": { "string": "Export Users" },
-      "description": { "string": "Download all users as a CSV file." },
-      "format": { "string": "CSV file (.csv)" },
-      "button": { "string": "Export CSV" },
-      "success": { "string": "Export downloaded" },
-      "error": { "string": "Export failed" }
+      "title": {
+        "string": "यूज़र्स एक्सपोर्ट करें"
+      },
+      "description": {
+        "string": "सभी यूज़र्स को CSV फ़ाइल के रूप में डाउनलोड करें।"
+      },
+      "format": {
+        "string": "CSV फ़ाइल (.csv)"
+      },
+      "button": {
+        "string": "CSV एक्सपोर्ट करें"
+      },
+      "success": {
+        "string": "एक्सपोर्ट डाउनलोड हुआ"
+      },
+      "error": {
+        "string": "एक्सपोर्ट विफल"
+      }
     },
     "import": {
-      "title": { "string": "Import Users" },
-      "description": { "string": "Upload a CSV file with user data to create or update accounts." },
-      "dropzone": { "string": "Click to upload CSV" },
-      "button": { "string": "Import CSV" },
-      "remove": { "string": "Remove file" },
-      "success": { "string": "Imported: {created} created, {updated} updated" },
-      "error": { "string": "Import failed" }
+      "title": {
+        "string": "यूज़र्स इम्पोर्ट करें"
+      },
+      "description": {
+        "string": "यूज़र डेटा वाली CSV फ़ाइल अपलोड करें ताकि खाते बनाए या अपडेट किए जा सकें।"
+      },
+      "dropzone": {
+        "string": "CSV अपलोड करने के लिए क्लिक करें"
+      },
+      "button": {
+        "string": "CSV इम्पोर्ट करें"
+      },
+      "remove": {
+        "string": "फ़ाइल हटाएं"
+      },
+      "success": {
+        "string": "इम्पोर्ट हुआ: {created} बनाए गए, {updated} अपडेट हुए"
+      },
+      "error": {
+        "string": "इम्पोर्ट विफल"
+      }
     },
     "format": {
-      "title": { "string": "CSV Format" },
-      "hint": { "string": "First row must be the header. uid, cn, sn, givenName, mail are required. password is optional (random if blank)." }
+      "title": {
+        "string": "CSV प्रारूप"
+      },
+      "hint": {
+        "string": "पहली पंक्ति हेडर होनी चाहिए। uid, cn, sn, givenName, mail अनिवार्य हैं। password वैकल्पिक है (खाली होने पर यादृच्छिक)।"
+      }
     }
-}}
+  }
+}

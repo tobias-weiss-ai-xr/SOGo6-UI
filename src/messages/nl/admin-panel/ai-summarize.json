@@ -1,1 +1,46 @@
-{ "AI_SUMMARIZE": { "title": { "string": "Email Summarization" }, "description": { "string": "TL;DR for long email threads. Extractive summarization returns the most important sentences." }, "input": { "title": { "string": "Input Email" }, "text": { "string": "Email Text" }, "placeholder": { "string": "Paste the email body here..." }, "sentences": { "string": "Max Sentences" } }, "output": { "title": { "string": "Summary" }, "empty": { "string": "Enter text and click Summarize" } }, "summarize": { "string": "Summarize" }, "loading": { "string": "Summarizing..." }, "errors": { "empty": { "string": "Enter text to summarize" }, "fail": { "string": "Summarization failed" } } }}
+{
+  "AI_SUMMARIZE": {
+    "title": {
+      "string": "E-mailsamenvatting"
+    },
+    "description": {
+      "string": "TL;DR voor lange e-mailthreads. Extractieve samenvatting haalt de belangrijkste zinnen eruit."
+    },
+    "input": {
+      "title": {
+        "string": "Invoere-mail"
+      },
+      "text": {
+        "string": "E-mailtekst"
+      },
+      "placeholder": {
+        "string": "Plak hier de inhoud van de e-mail..."
+      },
+      "sentences": {
+        "string": "Max. zinnen"
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Samenvatting"
+      },
+      "empty": {
+        "string": "Voer tekst in en klik op Samenvatten"
+      }
+    },
+    "summarize": {
+      "string": "Samenvatten"
+    },
+    "loading": {
+      "string": "Samenvatten..."
+    },
+    "errors": {
+      "empty": {
+        "string": "Voer tekst in om samen te vatten"
+      },
+      "fail": {
+        "string": "Samenvatten mislukt"
+      }
+    }
+  }
+}

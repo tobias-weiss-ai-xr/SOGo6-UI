@@ -1,1 +1,46 @@
-{ "AI_CLASSIFY": { "title": { "string": "Smart Email Classification" }, "description": { "string": "Auto-label emails: newsletter, invoice, notification, social, personal." }, "input": { "title": { "string": "Input Email" }, "subject": { "string": "Subject" }, "sender": { "string": "Sender" }, "body": { "string": "Body" }, "placeholder": { "string": "Paste email content..." } }, "output": { "title": { "string": "Classification Results" }, "empty": { "string": "Enter text and click Classify" } }, "classify": { "string": "Classify" }, "errors": { "empty": { "string": "Enter email text" }, "fail": { "string": "Classification failed" } } }}
+{
+  "AI_CLASSIFY": {
+    "title": {
+      "string": "Intelligent e-mail-klassificering"
+    },
+    "description": {
+      "string": "Automatisk mærkning af e-mails: nyhedsbrev, faktura, notifikation, socialt, personligt."
+    },
+    "input": {
+      "title": {
+        "string": "Indtast e-mail"
+      },
+      "subject": {
+        "string": "Emne"
+      },
+      "sender": {
+        "string": "Afsender"
+      },
+      "body": {
+        "string": "Brødtekst"
+      },
+      "placeholder": {
+        "string": "Indsæt e-mail-indhold her..."
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Klassificeringsresultater"
+      },
+      "empty": {
+        "string": "Indtast tekst og klik på Klassificer"
+      }
+    },
+    "classify": {
+      "string": "Klassificer"
+    },
+    "errors": {
+      "empty": {
+        "string": "Indtast e-mail-tekst"
+      },
+      "fail": {
+        "string": "Klassificering mislykkedes"
+      }
+    }
+  }
+}

@@ -1,1 +1,49 @@
-{ "AI_ANOMALY": { "title": { "string": "Anomaly Detection" }, "description": { "string": "Flag unusual sending patterns: bulk email, odd hours, new recipients." }, "input": { "title": { "string": "Sending Pattern" }, "recipients": { "string": "Recipient Count" }, "hour": { "string": "Hour (0-23)" }, "new_ratio": { "string": "New Recipient Ratio" } }, "output": { "title": { "string": "Analysis Result" }, "empty": { "string": "Enter values and click Analyze" }, "anomaly": { "string": "Anomaly Detected!" }, "normal": { "string": "Pattern Normal" }, "score": { "string": "Risk Score" } }, "analyze": { "string": "Analyze" }, "errors": { "fail": { "string": "Analysis failed" } } }}
+{
+  "AI_ANOMALY": {
+    "title": {
+      "string": "Wykrywanie anomalii"
+    },
+    "description": {
+      "string": "Zaznacz nietypowe wzorce wysyłania: masowe e-maile, nietypowe godziny, nowi odbiorcy."
+    },
+    "input": {
+      "title": {
+        "string": "Wzór wysyłania"
+      },
+      "recipients": {
+        "string": "Liczba odbiorców"
+      },
+      "hour": {
+        "string": "Godzina (0-23)"
+      },
+      "new_ratio": {
+        "string": "Odsetek nowych odbiorców"
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Wynik analizy"
+      },
+      "empty": {
+        "string": "Wprowadź wartości i kliknij Analizuj"
+      },
+      "anomaly": {
+        "string": "Wykryto anomalię!"
+      },
+      "normal": {
+        "string": "Wzór normalny"
+      },
+      "score": {
+        "string": "Wskaźnik ryzyka"
+      }
+    },
+    "analyze": {
+      "string": "Analizuj"
+    },
+    "errors": {
+      "fail": {
+        "string": "Analiza nie powiodła się"
+      }
+    }
+  }
+}

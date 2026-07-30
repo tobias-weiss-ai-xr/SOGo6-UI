@@ -1,1 +1,43 @@
-{ "AI_SCHEDULE": { "title": { "string": "Smart Calendar Scheduling" }, "description": { "string": "AI-suggested meeting times based on attendee availability patterns and preferences." }, "input": { "title": { "string": "Meeting Setup" }, "attendees": { "string": "Attendees" }, "from": { "string": "From" }, "to": { "string": "To" }, "duration": { "string": "Duration (min)" } }, "output": { "title": { "string": "Suggested Times" } }, "suggest": { "string": "Suggest Times" }, "errors": { "fields": { "string": "Attendees, from, and to dates are required" }, "fail": { "string": "Suggestion failed" } } }}
+{
+  "AI_SCHEDULE": {
+    "title": {
+      "string": "การจัดตารางปฏิทินอัจฉริยะ"
+    },
+    "description": {
+      "string": "เวลาประชุมที่ AI แนะนำโดยอิงจากรูปแบบและความพึงพอใจของผู้เข้าร่วม"
+    },
+    "input": {
+      "title": {
+        "string": "ตั้งค่าการประชุม"
+      },
+      "attendees": {
+        "string": "ผู้เข้าร่วม"
+      },
+      "from": {
+        "string": "จาก"
+      },
+      "to": {
+        "string": "ถึง"
+      },
+      "duration": {
+        "string": "ระยะเวลา (นาที)"
+      }
+    },
+    "output": {
+      "title": {
+        "string": "เวลาที่แนะนำ"
+      }
+    },
+    "suggest": {
+      "string": "แนะนำเวลา"
+    },
+    "errors": {
+      "fields": {
+        "string": "ต้องระบุผู้เข้าร่วม วันที่เริ่มต้น และวันที่สิ้นสุด"
+      },
+      "fail": {
+        "string": "การแนะนำล้มเหลว"
+      }
+    }
+  }
+}

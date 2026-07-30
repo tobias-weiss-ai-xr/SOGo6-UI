@@ -1,135 +1,135 @@
 {
   "AP_THEME": {
     "title": {
-      "string": "Theme Settings"
+      "string": "Téma beállítások"
     },
     "description": {
-      "string": "Customize the look and feel of the SOGo interface"
+      "string": "Testre szabd a SOGo felület megjelenését és érzetét"
     },
     "form_title": {
-      "string": "Custom Theme"
+      "string": "Egyéni téma"
     },
     "form_description": {
-      "string": "Configure colors, logo, and custom CSS for the groupware interface"
+      "string": "A csoportmunka-felület színeinek, logójának és egyéni CSS-ének beállítása"
     },
     "fields": {
       "primary": {
         "label": {
-          "string": "Primary Color"
+          "string": "Elsődleges szín"
         },
         "description": {
-          "string": "HSL values for the primary color (e.g. 180 25% 40%)"
+          "string": "HSL értékek az elsődleges színhez (pl. 180 25% 40%)"
         }
       },
       "primary_foreground": {
         "label": {
-          "string": "Primary Foreground"
+          "string": "Elsődleges előtér"
         },
         "description": {
-          "string": "Text color on primary backgrounds"
+          "string": "Szöveg színe elsődleges háttéren"
         }
       },
       "background": {
         "label": {
-          "string": "Background"
+          "string": "Háttér"
         },
         "description": {
-          "string": "HSL values for the page background"
+          "string": "HSL értékek az oldal háttérszínehez"
         }
       },
       "foreground": {
         "label": {
-          "string": "Foreground"
+          "string": "Előtér"
         },
         "description": {
-          "string": "Default text color"
+          "string": "Alapértelmezett szövegszín"
         }
       },
       "sidebar_background": {
         "label": {
-          "string": "Sidebar Background"
+          "string": "Oldalsáv háttér"
         },
         "description": {
-          "string": "HSL values for the sidebar background"
+          "string": "HSL értékek az oldalsáv háttérszínehez"
         }
       },
       "sidebar_foreground": {
         "label": {
-          "string": "Sidebar Foreground"
+          "string": "Oldalsáv előtér"
         },
         "description": {
-          "string": "Text color in the sidebar"
+          "string": "Szöveg szín az oldalsávban"
         }
       },
       "sidebar_primary": {
         "label": {
-          "string": "Sidebar Primary"
+          "string": "Oldalsáv elsődleges színe"
         },
         "description": {
-          "string": "Primary accent color in the sidebar"
+          "string": "Elsődleges hangsúlyszín az oldalsávban"
         }
       },
       "sidebar_accent": {
         "label": {
-          "string": "Sidebar Accent"
+          "string": "Oldalsáv hangsúlyszíne"
         },
         "description": {
-          "string": "Accent color in the sidebar"
+          "string": "Hangsúlyszín az oldalsávban"
         }
       },
       "header_background": {
         "label": {
-          "string": "Header Background"
+          "string": "Fejléc háttér"
         },
         "description": {
-          "string": "HSL values for the top header bar"
+          "string": "HSL értékek a fejléc sáv háttérszíneihez"
         }
       },
       "header_foreground": {
         "label": {
-          "string": "Header Foreground"
+          "string": "Fejléc előtér"
         },
         "description": {
-          "string": "Text color in the header"
+          "string": "Szöveg színe a fejlécben"
         }
       },
       "logo_url": {
         "label": {
-          "string": "Logo URL"
+          "string": "Logó URL-címe"
         },
         "description": {
-          "string": "URL of the custom logo image (optional)"
+          "string": "A testreszabott logó kép URL-címe (opcionális)"
         }
       },
       "custom_css": {
         "label": {
-          "string": "Custom CSS"
+          "string": "Egyéni CSS"
         },
         "description": {
-          "string": "Additional CSS rules to inject (optional)"
+          "string": "További CSS szabályok beillesztése (opcionális)"
         }
       }
     },
     "save": {
-      "string": "Save Changes"
+      "string": "Változások mentése"
     },
     "saving": {
-      "string": "Saving…"
+      "string": "Mentés…"
     },
     "saved": {
-      "string": "Theme settings saved successfully"
+      "string": "A téma beállításai sikeresen elmentve"
     },
     "save_error": {
-      "string": "Failed to save: {message}"
+      "string": "A mentés sikertelen: {message}"
     },
     "unsaved_changes": {
-      "string": "You have unsaved changes"
+      "string": "Van mentetlen változtatás"
     },
     "load_error": {
-      "string": "Failed to load theme settings"
+      "string": "A téma beállításainak betöltése sikertelen"
     },
     "retry": {
-      "string": "Retry"
+      "string": "Újra"
     }
   }
 }

@@ -1,18 +1,18 @@
 {
-    "OPENCLOUD": {
-        "picker": {
-            "search": {
-                "string": "Search files..."
-            },
-            "empty": {
-                "string": "No files found"
-            },
-            "attached": {
-                "string": "Attached: {name}"
-            },
-            "error": {
-                "string": "Failed to select file"
-            }
-        }
+  "OPENCLOUD": {
+    "picker": {
+      "search": {
+        "string": "Cari berkas..."
+      },
+      "empty": {
+        "string": "Tidak ada berkas yang ditemukan"
+      },
+      "attached": {
+        "string": "Terlampir: {name}"
+      },
+      "error": {
+        "string": "Gagal memilih berkas"
+      }
     }
+  }
 }

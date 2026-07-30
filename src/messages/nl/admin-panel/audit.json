@@ -1,16 +1,44 @@
-{ "AP_AUDIT": {
-    "title": { "string": "Audit Log" },
-    "description": { "string": "Tamper-proof log of admin and user actions. Entries are append-only and cannot be modified or deleted." },
-    "table": {
-      "timestamp": { "string": "Timestamp" },
-      "action": { "string": "Action" },
-      "actor": { "string": "Actor" },
-      "target": { "string": "Target" },
-      "detail": { "string": "Detail" },
-      "ip": { "string": "IP Address" },
-      "no_entries": { "string": "No audit log entries found." }
+{
+  "AP_AUDIT": {
+    "title": {
+      "string": "Auditlogboek"
     },
-    "count_one": { "string": "entry" },
-    "count_many": { "string": "entries" },
-    "errors": { "load_failed": { "string": "Failed to load audit log" } }
-}}
+    "description": {
+      "string": "Manipulatiebestendig logboek van beheerder- en gebruikersacties. Invoeren zijn alleen toe te voegen en kunnen niet worden gewijzigd of verwijderd."
+    },
+    "table": {
+      "timestamp": {
+        "string": "Tijdstempel"
+      },
+      "action": {
+        "string": "Actie"
+      },
+      "actor": {
+        "string": "Uitvoerder"
+      },
+      "target": {
+        "string": "Doel"
+      },
+      "detail": {
+        "string": "Details"
+      },
+      "ip": {
+        "string": "IP-adres"
+      },
+      "no_entries": {
+        "string": "Geen auditlogboekinvoeren gevonden."
+      }
+    },
+    "count_one": {
+      "string": "invoer"
+    },
+    "count_many": {
+      "string": "invoeren"
+    },
+    "errors": {
+      "load_failed": {
+        "string": "Laden van auditlogboek mislukt"
+      }
+    }
+  }
+}

@@ -1,1 +1,40 @@
-{ "AI_ATTACH": { "title": { "string": "Smart Attachment Actions" }, "description": { "string": "Auto-detect document type and suggest save, forward, or archive actions." }, "input": { "title": { "string": "Attachment" }, "filename": { "string": "Filename" } }, "output": { "title": { "string": "Analysis" }, "empty": { "string": "Enter a filename" }, "preview": { "string": "Can Preview" } }, "classify": { "string": "Classify" }, "errors": { "empty": { "string": "Enter a filename" }, "fail": { "string": "Classification failed" } } }}
+{
+  "AI_ATTACH": {
+    "title": {
+      "string": "Inteligentní akce pro přílohy"
+    },
+    "description": {
+      "string": "Automaticky rozpozná typ dokumentu a navrhne akce uložit, přesměrovat nebo archivovat."
+    },
+    "input": {
+      "title": {
+        "string": "Příloha"
+      },
+      "filename": {
+        "string": "Název souboru"
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Analýza"
+      },
+      "empty": {
+        "string": "Zadejte název souboru"
+      },
+      "preview": {
+        "string": "Lze náhlednout"
+      }
+    },
+    "classify": {
+      "string": "Klasifikovat"
+    },
+    "errors": {
+      "empty": {
+        "string": "Zadejte název souboru"
+      },
+      "fail": {
+        "string": "Klasifikace se nezdařila"
+      }
+    }
+  }
+}

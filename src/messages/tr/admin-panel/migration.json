@@ -1,8 +1,54 @@
-{ "AP_MIG": {
-    "title": { "string": "Migration Tools" },
-    "description": { "string": "Import data from external sources — G Suite, M365, Dovecot, Cyrus, or file uploads." },
-    "wizard": { "title": { "string": "Start Migration" }, "source": { "string": "Source" }, "select_source": { "string": "Choose a source..." }, "user": { "string": "Target User" }, "select_user": { "string": "Select user..." } },
-    "start": { "button": { "string": "Start Migration" }, "running": { "string": "Starting..." }, "success": { "string": "Migration started" }, "error": { "string": "Migration failed" } },
-    "history": { "title": { "string": "Migration History" }, "empty": { "string": "No migrations yet." } },
-    "errors": { "fields": { "string": "Source and user are required" } }
-}}
+{
+  "AP_MIG": {
+    "title": {
+      "string": "Geçiş Araçları"
+    },
+    "description": {
+      "string": "Harici kaynaklardan veri içe aktarın — G Suite, M365, Dovecot, Cyrus veya dosya yüklemeleri."
+    },
+    "wizard": {
+      "title": {
+        "string": "Geçişi Başlat"
+      },
+      "source": {
+        "string": "Kaynak"
+      },
+      "select_source": {
+        "string": "Kaynak seçin..."
+      },
+      "user": {
+        "string": "Hedef Kullanıcı"
+      },
+      "select_user": {
+        "string": "Kullanıcı seçin..."
+      }
+    },
+    "start": {
+      "button": {
+        "string": "Geçişi Başlat"
+      },
+      "running": {
+        "string": "Başlatılıyor..."
+      },
+      "success": {
+        "string": "Geçiş başlatıldı"
+      },
+      "error": {
+        "string": "Geçiş başarısız oldu"
+      }
+    },
+    "history": {
+      "title": {
+        "string": "Geçiş Geçmişi"
+      },
+      "empty": {
+        "string": "Henüz geçiş yok."
+      }
+    },
+    "errors": {
+      "fields": {
+        "string": "Kaynak ve kullanıcı gerekli"
+      }
+    }
+  }
+}

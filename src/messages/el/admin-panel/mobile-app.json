@@ -1,12 +1,65 @@
 {
   "MOBILE": {
-    "title": { "string": "Mobile App Management" },
-    "description": { "string": "Manage registered devices, push notifications, and app configuration" },
-    "errors": { "fail": { "string": "Operation failed" } },
-    "success": { "unregister": { "string": "Device unregistered" }, "broadcast": { "string": "Push notification sent" } },
-    "config": { "title": { "string": "App Settings" }, "push": { "string": "Push Notifications" }, "biometric": { "string": "Biometric Auth" } },
-    "push": { "title": { "string": "Push Broadcast" }, "title": { "placeholder": { "string": "Notification title" } }, "message": { "placeholder": { "string": "Message..." } }, "broadcast": { "string": "Send" } },
-    "stats": { "title": { "string": "Statistics" }, "devices": { "string": "Registered Devices" } },
-    "devices": { "title": { "string": "All Devices" }, "empty": { "string": "No devices registered yet" } }
+    "title": {
+      "string": "Διαχείριση Εφαρμογής για Κινητά"
+    },
+    "description": {
+      "string": "Διαχείριση εγγεγραμμένων συσκευών, ειδοποιήσεων push και ρυθμίσεων εφαρμογής"
+    },
+    "errors": {
+      "fail": {
+        "string": "Η λειτουργία απέτυχε"
+      }
+    },
+    "success": {
+      "unregister": {
+        "string": "Η συσκευή καταργήθηκε"
+      },
+      "broadcast": {
+        "string": "Ειδοποίηση push αποσταλμένη"
+      }
+    },
+    "config": {
+      "title": {
+        "string": "Ρυθμίσεις Εφαρμογής"
+      },
+      "push": {
+        "string": "Ειδοποιήσεις Push"
+      },
+      "biometric": {
+        "string": "Βιομετρική Ταυτοποίηση"
+      }
+    },
+    "push": {
+      "title": {
+        "placeholder": {
+          "string": "Τίτλος ειδοποίησης"
+        }
+      },
+      "message": {
+        "placeholder": {
+          "string": "Μήνυμα..."
+        }
+      },
+      "broadcast": {
+        "string": "Αποστολή"
+      }
+    },
+    "stats": {
+      "title": {
+        "string": "Στατιστικά"
+      },
+      "devices": {
+        "string": "Εγγεγραμμένες Συσκευές"
+      }
+    },
+    "devices": {
+      "title": {
+        "string": "Όλες οι Συσκευές"
+      },
+      "empty": {
+        "string": "Δεν έχουν εγγραφεί ακόμα συσκευές"
+      }
+    }
   }
 }

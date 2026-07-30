@@ -1,8 +1,54 @@
-{ "AP_MIG": {
-    "title": { "string": "Migration Tools" },
-    "description": { "string": "Import data from external sources — G Suite, M365, Dovecot, Cyrus, or file uploads." },
-    "wizard": { "title": { "string": "Start Migration" }, "source": { "string": "Source" }, "select_source": { "string": "Choose a source..." }, "user": { "string": "Target User" }, "select_user": { "string": "Select user..." } },
-    "start": { "button": { "string": "Start Migration" }, "running": { "string": "Starting..." }, "success": { "string": "Migration started" }, "error": { "string": "Migration failed" } },
-    "history": { "title": { "string": "Migration History" }, "empty": { "string": "No migrations yet." } },
-    "errors": { "fields": { "string": "Source and user are required" } }
-}}
+{
+  "AP_MIG": {
+    "title": {
+      "string": "Công cụ Di chuyển"
+    },
+    "description": {
+      "string": "Nhập dữ liệu từ các nguồn bên ngoài — G Suite, M365, Dovecot, Cyrus hoặc tải lên tệp."
+    },
+    "wizard": {
+      "title": {
+        "string": "Bắt đầu Di chuyển"
+      },
+      "source": {
+        "string": "Nguồn"
+      },
+      "select_source": {
+        "string": "Chọn nguồn..."
+      },
+      "user": {
+        "string": "Người dùng Đích"
+      },
+      "select_user": {
+        "string": "Chọn người dùng..."
+      }
+    },
+    "start": {
+      "button": {
+        "string": "Bắt đầu Di chuyển"
+      },
+      "running": {
+        "string": "Đang khởi động..."
+      },
+      "success": {
+        "string": "Đã bắt đầu di chuyển"
+      },
+      "error": {
+        "string": "Di chuyển thất bại"
+      }
+    },
+    "history": {
+      "title": {
+        "string": "Lịch sử Di chuyển"
+      },
+      "empty": {
+        "string": "Chưa có lần di chuyển nào."
+      }
+    },
+    "errors": {
+      "fields": {
+        "string": "Nguồn và người dùng là bắt buộc"
+      }
+    }
+  }
+}

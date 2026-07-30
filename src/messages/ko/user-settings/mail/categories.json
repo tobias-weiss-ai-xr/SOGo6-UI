@@ -1,28 +1,28 @@
 {
-    "US_MAIL_CATEGORIES": {
-        "create": {
-            "string": "Add mail category",
-            "context": "Button text to add a new mail category"
-        },
-        "title": {
-            "string": "Categories",
-            "context": "Title for the mail categories settings page"
-        },
-        "accessibility": {
-            "icon": {
-                "delete": {
-                    "string": "Delete {name}",
-                    "context": "Accessibility message for the delete icon"
-                }
-            }
-        },
-        "categories": {
-            "Work": "Travail",
-            "Family": "Famille",
-            "Friends": "Amis",
-            "validation": {
-                "category-name-required": "Category name is required"
-            }
+  "US_MAIL_CATEGORIES": {
+    "create": {
+      "string": "메일 카테고리 추가",
+      "context": "Button text to add a new mail category"
+    },
+    "title": {
+      "string": "카테고리",
+      "context": "Title for the mail categories settings page"
+    },
+    "accessibility": {
+      "icon": {
+        "delete": {
+          "string": "{name} 삭제",
+          "context": "Accessibility message for the delete icon"
         }
+      }
+    },
+    "categories": {
+      "Work": "Travail",
+      "Family": "Famille",
+      "Friends": "Amis",
+      "validation": {
+        "category-name-required": "Category name is required"
+      }
     }
+  }
 }

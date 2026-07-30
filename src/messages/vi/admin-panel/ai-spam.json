@@ -1,1 +1,49 @@
-{ "AI_SPAM": { "title": { "string": "Intelligent Spam Filter" }, "description": { "string": "Real-time spam scoring with pattern analysis, sender reputation, and content heuristics." }, "input": { "title": { "string": "Email to Score" }, "subject": { "string": "Subject" }, "sender": { "string": "Sender" }, "body": { "string": "Body" }, "placeholder": { "string": "Paste the email body..." } }, "output": { "title": { "string": "Spam Score" }, "empty": { "string": "Enter email content and click Score" }, "signals": { "string": "Detected Signals" } }, "score": { "string": "Score Email" }, "errors": { "empty": { "string": "Enter subject or body" }, "fail": { "string": "Scoring failed" } } }}
+{
+  "AI_SPAM": {
+    "title": {
+      "string": "Bộ lọc Spam Thông minh"
+    },
+    "description": {
+      "string": "Đánh giá spam theo thời gian thực với phân tích mẫu, danh tiếng người gửi và heuristic nội dung."
+    },
+    "input": {
+      "title": {
+        "string": "Email cần Đánh giá"
+      },
+      "subject": {
+        "string": "Tiêu đề"
+      },
+      "sender": {
+        "string": "Người gửi"
+      },
+      "body": {
+        "string": "Nội dung"
+      },
+      "placeholder": {
+        "string": "Dán nội dung email vào đây..."
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Điểm Spam"
+      },
+      "empty": {
+        "string": "Nhập nội dung email và nhấn Đánh giá"
+      },
+      "signals": {
+        "string": "Tín hiệu Phát hiện"
+      }
+    },
+    "score": {
+      "string": "Đánh giá Email"
+    },
+    "errors": {
+      "empty": {
+        "string": "Vui lòng nhập tiêu đề hoặc nội dung"
+      },
+      "fail": {
+        "string": "Đánh giá thất bại"
+      }
+    }
+  }
+}

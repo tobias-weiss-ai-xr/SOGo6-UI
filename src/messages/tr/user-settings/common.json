@@ -1,7 +1,7 @@
 {
-    "US_USER_SETTINGS": {
-        "unsaved_changes": {
-            "string": "You have unsaved changes"
-        }
+  "US_USER_SETTINGS": {
+    "unsaved_changes": {
+      "string": "Kaydedilmemiş değişiklikleriniz var"
     }
+  }
 }

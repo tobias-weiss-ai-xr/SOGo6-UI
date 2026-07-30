@@ -1,1 +1,46 @@
-{ "AI_CLASSIFY": { "title": { "string": "Smart Email Classification" }, "description": { "string": "Auto-label emails: newsletter, invoice, notification, social, personal." }, "input": { "title": { "string": "Input Email" }, "subject": { "string": "Subject" }, "sender": { "string": "Sender" }, "body": { "string": "Body" }, "placeholder": { "string": "Paste email content..." } }, "output": { "title": { "string": "Classification Results" }, "empty": { "string": "Enter text and click Classify" } }, "classify": { "string": "Classify" }, "errors": { "empty": { "string": "Enter email text" }, "fail": { "string": "Classification failed" } } }}
+{
+  "AI_CLASSIFY": {
+    "title": {
+      "string": "Klasifikasi Email Cerdas"
+    },
+    "description": {
+      "string": "Label otomatis email: buletin, faktur, notifikasi, sosial, pribadi."
+    },
+    "input": {
+      "title": {
+        "string": "Email Masukan"
+      },
+      "subject": {
+        "string": "Subjek"
+      },
+      "sender": {
+        "string": "Pengirim"
+      },
+      "body": {
+        "string": "Isi"
+      },
+      "placeholder": {
+        "string": "Tempel konten email..."
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Hasil Klasifikasi"
+      },
+      "empty": {
+        "string": "Masukkan teks dan klik Klasifikasi"
+      }
+    },
+    "classify": {
+      "string": "Klasifikasi"
+    },
+    "errors": {
+      "empty": {
+        "string": "Masukkan teks email"
+      },
+      "fail": {
+        "string": "Klasifikasi gagal"
+      }
+    }
+  }
+}

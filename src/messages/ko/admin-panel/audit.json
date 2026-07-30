@@ -1,16 +1,44 @@
-{ "AP_AUDIT": {
-    "title": { "string": "Audit Log" },
-    "description": { "string": "Tamper-proof log of admin and user actions. Entries are append-only and cannot be modified or deleted." },
-    "table": {
-      "timestamp": { "string": "Timestamp" },
-      "action": { "string": "Action" },
-      "actor": { "string": "Actor" },
-      "target": { "string": "Target" },
-      "detail": { "string": "Detail" },
-      "ip": { "string": "IP Address" },
-      "no_entries": { "string": "No audit log entries found." }
+{
+  "AP_AUDIT": {
+    "title": {
+      "string": "감사 로그"
     },
-    "count_one": { "string": "entry" },
-    "count_many": { "string": "entries" },
-    "errors": { "load_failed": { "string": "Failed to load audit log" } }
-}}
+    "description": {
+      "string": "관리자 및 사용자 작업에 대한 변조 방지 로그입니다. 항목은 추가만 가능하며 수정 또는 삭제가 불가능합니다."
+    },
+    "table": {
+      "timestamp": {
+        "string": "타임스탬프"
+      },
+      "action": {
+        "string": "작업"
+      },
+      "actor": {
+        "string": "실행자"
+      },
+      "target": {
+        "string": "대상"
+      },
+      "detail": {
+        "string": "상세 정보"
+      },
+      "ip": {
+        "string": "IP 주소"
+      },
+      "no_entries": {
+        "string": "감사 로그 항목이 없습니다."
+      }
+    },
+    "count_one": {
+      "string": "개"
+    },
+    "count_many": {
+      "string": "개"
+    },
+    "errors": {
+      "load_failed": {
+        "string": "감사 로그를 불러오지 못했습니다."
+      }
+    }
+  }
+}

@@ -1,1 +1,40 @@
-{ "AI_ATTACH": { "title": { "string": "Smart Attachment Actions" }, "description": { "string": "Auto-detect document type and suggest save, forward, or archive actions." }, "input": { "title": { "string": "Attachment" }, "filename": { "string": "Filename" } }, "output": { "title": { "string": "Analysis" }, "empty": { "string": "Enter a filename" }, "preview": { "string": "Can Preview" } }, "classify": { "string": "Classify" }, "errors": { "empty": { "string": "Enter a filename" }, "fail": { "string": "Classification failed" } } }}
+{
+  "AI_ATTACH": {
+    "title": {
+      "string": "スマート添付ファイルアクション"
+    },
+    "description": {
+      "string": "ドキュメントの種類を自動検出し、保存、転送、アーカイブのアクションを提案します。"
+    },
+    "input": {
+      "title": {
+        "string": "添付ファイル"
+      },
+      "filename": {
+        "string": "ファイル名"
+      }
+    },
+    "output": {
+      "title": {
+        "string": "分析結果"
+      },
+      "empty": {
+        "string": "ファイル名を入力してください"
+      },
+      "preview": {
+        "string": "プレビュー可能"
+      }
+    },
+    "classify": {
+      "string": "分類"
+    },
+    "errors": {
+      "empty": {
+        "string": "ファイル名を入力してください"
+      },
+      "fail": {
+        "string": "分類に失敗しました"
+      }
+    }
+  }
+}

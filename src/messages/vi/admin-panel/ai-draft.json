@@ -1,1 +1,40 @@
-{ "AI_DRAFT": { "title": { "string": "AI Draft Assistant" }, "description": { "string": "Reply suggestions with tone adjustment. Generates contextual draft replies." }, "input": { "title": { "string": "Original Email" }, "email": { "string": "Email Body" }, "placeholder": { "string": "Paste the email you want to reply to..." } }, "output": { "title": { "string": "Suggested Reply" }, "empty": { "string": "Enter email text and select a tone" } }, "suggest": { "string": "Suggest Reply" }, "errors": { "empty": { "string": "Enter email text" }, "fail": { "string": "Suggestion failed" } } }}
+{
+  "AI_DRAFT": {
+    "title": {
+      "string": "Trợ lý Soạn thảo AI"
+    },
+    "description": {
+      "string": "Gợi ý phản hồi với điều chỉnh giọng điệu. Tạo bản nháp phản hồi phù hợp ngữ cảnh."
+    },
+    "input": {
+      "title": {
+        "string": "Email Gốc"
+      },
+      "email": {
+        "string": "Nội dung Email"
+      },
+      "placeholder": {
+        "string": "Dán email bạn muốn trả lời vào đây..."
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Phản hồi Đề xuất"
+      },
+      "empty": {
+        "string": "Nhập nội dung email và chọn giọng điệu"
+      }
+    },
+    "suggest": {
+      "string": "Đề xuất Phản hồi"
+    },
+    "errors": {
+      "empty": {
+        "string": "Vui lòng nhập nội dung email"
+      },
+      "fail": {
+        "string": "Đề xuất thất bại"
+      }
+    }
+  }
+}

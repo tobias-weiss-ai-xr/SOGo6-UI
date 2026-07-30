@@ -1,1 +1,46 @@
-{ "AI_SUMMARIZE": { "title": { "string": "Email Summarization" }, "description": { "string": "TL;DR for long email threads. Extractive summarization returns the most important sentences." }, "input": { "title": { "string": "Input Email" }, "text": { "string": "Email Text" }, "placeholder": { "string": "Paste the email body here..." }, "sentences": { "string": "Max Sentences" } }, "output": { "title": { "string": "Summary" }, "empty": { "string": "Enter text and click Summarize" } }, "summarize": { "string": "Summarize" }, "loading": { "string": "Summarizing..." }, "errors": { "empty": { "string": "Enter text to summarize" }, "fail": { "string": "Summarization failed" } } }}
+{
+  "AI_SUMMARIZE": {
+    "title": {
+      "string": "تلخيص البريد الإلكتروني"
+    },
+    "description": {
+      "string": "ملخص مختصر لسلاسل البريد الإلكتروني الطويلة. يقوم التلخيص الاستخراجي بإرجاع الجمل الأكثر أهمية."
+    },
+    "input": {
+      "title": {
+        "string": "البريد الإلكتروني المدخل"
+      },
+      "text": {
+        "string": "نص البريد الإلكتروني"
+      },
+      "placeholder": {
+        "string": "الصق نص البريد الإلكتروني هنا..."
+      },
+      "sentences": {
+        "string": "أقصى عدد من الجمل"
+      }
+    },
+    "output": {
+      "title": {
+        "string": "الملخص"
+      },
+      "empty": {
+        "string": "أدخل النص وانقر على تلخيص"
+      }
+    },
+    "summarize": {
+      "string": "تلخيص"
+    },
+    "loading": {
+      "string": "جاري التلخيص..."
+    },
+    "errors": {
+      "empty": {
+        "string": "أدخل نصًا للتلخيص"
+      },
+      "fail": {
+        "string": "فشل التلخيص"
+      }
+    }
+  }
+}

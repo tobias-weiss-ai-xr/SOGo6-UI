@@ -1,1 +1,46 @@
-{ "AI_CLASSIFY": { "title": { "string": "Smart Email Classification" }, "description": { "string": "Auto-label emails: newsletter, invoice, notification, social, personal." }, "input": { "title": { "string": "Input Email" }, "subject": { "string": "Subject" }, "sender": { "string": "Sender" }, "body": { "string": "Body" }, "placeholder": { "string": "Paste email content..." } }, "output": { "title": { "string": "Classification Results" }, "empty": { "string": "Enter text and click Classify" } }, "classify": { "string": "Classify" }, "errors": { "empty": { "string": "Enter email text" }, "fail": { "string": "Classification failed" } } }}
+{
+  "AI_CLASSIFY": {
+    "title": {
+      "string": "การจัดประเภทอีเมลอัจฉริยะ"
+    },
+    "description": {
+      "string": "ติดฉลากอีเมลอัตโนมัติ: จดหมายข่าว, ใบแจ้งหนี้, การแจ้งเตือน, โซเชียล, ส่วนตัว"
+    },
+    "input": {
+      "title": {
+        "string": "อีเมลที่ต้องการจัดประเภท"
+      },
+      "subject": {
+        "string": "หัวข้อ"
+      },
+      "sender": {
+        "string": "ผู้ส่ง"
+      },
+      "body": {
+        "string": "เนื้อหา"
+      },
+      "placeholder": {
+        "string": "วางเนื้อหาอีเมลที่นี่..."
+      }
+    },
+    "output": {
+      "title": {
+        "string": "ผลการจัดประเภท"
+      },
+      "empty": {
+        "string": "กรุณาใส่ข้อความแล้วคลิกจัดประเภท"
+      }
+    },
+    "classify": {
+      "string": "จัดประเภท"
+    },
+    "errors": {
+      "empty": {
+        "string": "กรุณาใส่ข้อความอีเมล"
+      },
+      "fail": {
+        "string": "การจัดประเภทล้มเหลว"
+      }
+    }
+  }
+}

@@ -1,1 +1,43 @@
-{ "AI_SCHEDULE": { "title": { "string": "Smart Calendar Scheduling" }, "description": { "string": "AI-suggested meeting times based on attendee availability patterns and preferences." }, "input": { "title": { "string": "Meeting Setup" }, "attendees": { "string": "Attendees" }, "from": { "string": "From" }, "to": { "string": "To" }, "duration": { "string": "Duration (min)" } }, "output": { "title": { "string": "Suggested Times" } }, "suggest": { "string": "Suggest Times" }, "errors": { "fields": { "string": "Attendees, from, and to dates are required" }, "fail": { "string": "Suggestion failed" } } }}
+{
+  "AI_SCHEDULE": {
+    "title": {
+      "string": "Penjadwalan Kalender Cerdas"
+    },
+    "description": {
+      "string": "Saran waktu rapat berbasis AI berdasarkan pola dan preferensi ketersediaan peserta."
+    },
+    "input": {
+      "title": {
+        "string": "Pengaturan Rapat"
+      },
+      "attendees": {
+        "string": "Peserta"
+      },
+      "from": {
+        "string": "Dari"
+      },
+      "to": {
+        "string": "Sampai"
+      },
+      "duration": {
+        "string": "Durasi (menit)"
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Waktu yang Disarankan"
+      }
+    },
+    "suggest": {
+      "string": "Sarankan Waktu"
+    },
+    "errors": {
+      "fields": {
+        "string": "Peserta, tanggal dari, dan sampai wajib diisi"
+      },
+      "fail": {
+        "string": "Saran gagal"
+      }
+    }
+  }
+}

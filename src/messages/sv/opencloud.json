@@ -1,18 +1,18 @@
 {
-    "OPENCLOUD": {
-        "picker": {
-            "search": {
-                "string": "Search files..."
-            },
-            "empty": {
-                "string": "No files found"
-            },
-            "attached": {
-                "string": "Attached: {name}"
-            },
-            "error": {
-                "string": "Failed to select file"
-            }
-        }
+  "OPENCLOUD": {
+    "picker": {
+      "search": {
+        "string": "Sök filer..."
+      },
+      "empty": {
+        "string": "Inga filer hittades"
+      },
+      "attached": {
+        "string": "Bifogad: {name}"
+      },
+      "error": {
+        "string": "Misslyckades med att välja fil"
+      }
     }
+  }
 }

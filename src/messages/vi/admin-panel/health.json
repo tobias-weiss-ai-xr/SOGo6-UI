@@ -1,7 +1,34 @@
-{ "AP_HEALTH": {
-    "title": { "string": "System Health" },
-    "description": { "string": "Real-time status of all services in the SOGo stack." },
-    "status": { "all_ok": { "string": "All Systems Operational" }, "degraded": { "string": "Degraded" } },
-    "overview": { "uptime": { "string": "Uptime" }, "version": { "string": "Version" }, "services": { "string": "Services Healthy" } },
-    "errors": { "load_failed": { "string": "Failed to load health data" } }
-}}
+{
+  "AP_HEALTH": {
+    "title": {
+      "string": "Tình trạng hệ thống"
+    },
+    "description": {
+      "string": "Trạng thái thời gian thực của tất cả dịch vụ trong stack SOGo."
+    },
+    "status": {
+      "all_ok": {
+        "string": "Tất cả hệ thống hoạt động bình thường"
+      },
+      "degraded": {
+        "string": "Hoạt động kém"
+      }
+    },
+    "overview": {
+      "uptime": {
+        "string": "Thời gian hoạt động"
+      },
+      "version": {
+        "string": "Phiên bản"
+      },
+      "services": {
+        "string": "Dịch vụ hoạt động tốt"
+      }
+    },
+    "errors": {
+      "load_failed": {
+        "string": "Không tải được dữ liệu tình trạng"
+      }
+    }
+  }
+}

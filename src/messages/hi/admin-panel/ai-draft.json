@@ -1,1 +1,40 @@
-{ "AI_DRAFT": { "title": { "string": "AI Draft Assistant" }, "description": { "string": "Reply suggestions with tone adjustment. Generates contextual draft replies." }, "input": { "title": { "string": "Original Email" }, "email": { "string": "Email Body" }, "placeholder": { "string": "Paste the email you want to reply to..." } }, "output": { "title": { "string": "Suggested Reply" }, "empty": { "string": "Enter email text and select a tone" } }, "suggest": { "string": "Suggest Reply" }, "errors": { "empty": { "string": "Enter email text" }, "fail": { "string": "Suggestion failed" } } }}
+{
+  "AI_DRAFT": {
+    "title": {
+      "string": "AI ड्राफ्ट सहायक"
+    },
+    "description": {
+      "string": "टोन समायोजन के साथ जवाब सुझाव। सन्दर्भानुसार ड्राफ्ट जवाब उत्पन्न करता है।"
+    },
+    "input": {
+      "title": {
+        "string": "मूल ईमेल"
+      },
+      "email": {
+        "string": "ईमेल मुख्य भाग"
+      },
+      "placeholder": {
+        "string": "उस ईमेल को पेस्ट करें जिसका आप जवाब देना चाहते हैं..."
+      }
+    },
+    "output": {
+      "title": {
+        "string": "सुझाया गया जवाब"
+      },
+      "empty": {
+        "string": "ईमेल टेक्स्ट दर्ज करें और एक टोन चुनें"
+      }
+    },
+    "suggest": {
+      "string": "जवाब सुझाएं"
+    },
+    "errors": {
+      "empty": {
+        "string": "ईमेल टेक्स्ट दर्ज करें"
+      },
+      "fail": {
+        "string": "सुझाव विफल"
+      }
+    }
+  }
+}

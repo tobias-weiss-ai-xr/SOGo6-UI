@@ -1,1 +1,49 @@
-{ "AI_ANOMALY": { "title": { "string": "Anomaly Detection" }, "description": { "string": "Flag unusual sending patterns: bulk email, odd hours, new recipients." }, "input": { "title": { "string": "Sending Pattern" }, "recipients": { "string": "Recipient Count" }, "hour": { "string": "Hour (0-23)" }, "new_ratio": { "string": "New Recipient Ratio" } }, "output": { "title": { "string": "Analysis Result" }, "empty": { "string": "Enter values and click Analyze" }, "anomaly": { "string": "Anomaly Detected!" }, "normal": { "string": "Pattern Normal" }, "score": { "string": "Risk Score" } }, "analyze": { "string": "Analyze" }, "errors": { "fail": { "string": "Analysis failed" } } }}
+{
+  "AI_ANOMALY": {
+    "title": {
+      "string": "이상 감지"
+    },
+    "description": {
+      "string": "이상한 발송 패턴 감지: 대량 이메일, 이상 시간대, 새로운 수신자"
+    },
+    "input": {
+      "title": {
+        "string": "발송 패턴"
+      },
+      "recipients": {
+        "string": "수신자 수"
+      },
+      "hour": {
+        "string": "시간 (0-23)"
+      },
+      "new_ratio": {
+        "string": "새로운 수신자 비율"
+      }
+    },
+    "output": {
+      "title": {
+        "string": "분석 결과"
+      },
+      "empty": {
+        "string": "값을 입력하고 분석 버튼을 클릭하세요"
+      },
+      "anomaly": {
+        "string": "이상 감지됨!"
+      },
+      "normal": {
+        "string": "정상 패턴"
+      },
+      "score": {
+        "string": "위험 점수"
+      }
+    },
+    "analyze": {
+      "string": "분석"
+    },
+    "errors": {
+      "fail": {
+        "string": "분석 실패"
+      }
+    }
+  }
+}

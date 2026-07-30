@@ -1,135 +1,135 @@
 {
   "AP_THEME": {
     "title": {
-      "string": "Theme Settings"
+      "string": "テーマ設定"
     },
     "description": {
-      "string": "Customize the look and feel of the SOGo interface"
+      "string": "SOGoインターフェースの見た目と操作感をカスタマイズ"
     },
     "form_title": {
-      "string": "Custom Theme"
+      "string": "カスタムテーマ"
     },
     "form_description": {
-      "string": "Configure colors, logo, and custom CSS for the groupware interface"
+      "string": "グループウェアインターフェースの色、ロゴ、カスタムCSSを設定"
     },
     "fields": {
       "primary": {
         "label": {
-          "string": "Primary Color"
+          "string": "プライマリカラー"
         },
         "description": {
-          "string": "HSL values for the primary color (e.g. 180 25% 40%)"
+          "string": "プライマリカラーのHSL値（例: 180 25% 40%）"
         }
       },
       "primary_foreground": {
         "label": {
-          "string": "Primary Foreground"
+          "string": "プライマリ前景色"
         },
         "description": {
-          "string": "Text color on primary backgrounds"
+          "string": "プライマリ背景上のテキスト色"
         }
       },
       "background": {
         "label": {
-          "string": "Background"
+          "string": "背景"
         },
         "description": {
-          "string": "HSL values for the page background"
+          "string": "ページ背景のHSL値"
         }
       },
       "foreground": {
         "label": {
-          "string": "Foreground"
+          "string": "前景色"
         },
         "description": {
-          "string": "Default text color"
+          "string": "デフォルトのテキスト色"
         }
       },
       "sidebar_background": {
         "label": {
-          "string": "Sidebar Background"
+          "string": "サイドバー背景"
         },
         "description": {
-          "string": "HSL values for the sidebar background"
+          "string": "サイドバー背景のHSL値"
         }
       },
       "sidebar_foreground": {
         "label": {
-          "string": "Sidebar Foreground"
+          "string": "サイドバー前景色"
         },
         "description": {
-          "string": "Text color in the sidebar"
+          "string": "サイドバー内のテキスト色"
         }
       },
       "sidebar_primary": {
         "label": {
-          "string": "Sidebar Primary"
+          "string": "サイドバープライマリ"
         },
         "description": {
-          "string": "Primary accent color in the sidebar"
+          "string": "サイドバー内のプライマリアクセント色"
         }
       },
       "sidebar_accent": {
         "label": {
-          "string": "Sidebar Accent"
+          "string": "サイドバーサイドアクセント"
         },
         "description": {
-          "string": "Accent color in the sidebar"
+          "string": "サイドバー内のアクセント色"
         }
       },
       "header_background": {
         "label": {
-          "string": "Header Background"
+          "string": "ヘッダー背景"
         },
         "description": {
-          "string": "HSL values for the top header bar"
+          "string": "上部ヘッダーバーのHSL値"
         }
       },
       "header_foreground": {
         "label": {
-          "string": "Header Foreground"
+          "string": "ヘッダー前景"
         },
         "description": {
-          "string": "Text color in the header"
+          "string": "ヘッダー内のテキスト色"
         }
       },
       "logo_url": {
         "label": {
-          "string": "Logo URL"
+          "string": "ロゴURL"
         },
         "description": {
-          "string": "URL of the custom logo image (optional)"
+          "string": "カスタムロゴ画像のURL（オプション）"
         }
       },
       "custom_css": {
         "label": {
-          "string": "Custom CSS"
+          "string": "カスタムCSS"
         },
         "description": {
-          "string": "Additional CSS rules to inject (optional)"
+          "string": "追加で挿入するCSSルール（オプション）"
         }
       }
     },
     "save": {
-      "string": "Save Changes"
+      "string": "変更を保存"
     },
     "saving": {
-      "string": "Saving…"
+      "string": "保存中…"
     },
     "saved": {
-      "string": "Theme settings saved successfully"
+      "string": "テーマ設定を保存しました"
     },
     "save_error": {
-      "string": "Failed to save: {message}"
+      "string": "保存に失敗しました: {message}"
     },
     "unsaved_changes": {
-      "string": "You have unsaved changes"
+      "string": "未保存の変更があります"
     },
     "load_error": {
-      "string": "Failed to load theme settings"
+      "string": "テーマ設定の読み込みに失敗しました"
     },
     "retry": {
-      "string": "Retry"
+      "string": "再試行"
     }
   }
 }

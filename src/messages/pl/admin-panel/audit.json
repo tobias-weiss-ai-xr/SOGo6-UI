@@ -1,16 +1,44 @@
-{ "AP_AUDIT": {
-    "title": { "string": "Audit Log" },
-    "description": { "string": "Tamper-proof log of admin and user actions. Entries are append-only and cannot be modified or deleted." },
-    "table": {
-      "timestamp": { "string": "Timestamp" },
-      "action": { "string": "Action" },
-      "actor": { "string": "Actor" },
-      "target": { "string": "Target" },
-      "detail": { "string": "Detail" },
-      "ip": { "string": "IP Address" },
-      "no_entries": { "string": "No audit log entries found." }
+{
+  "AP_AUDIT": {
+    "title": {
+      "string": "Dziennik audytu"
     },
-    "count_one": { "string": "entry" },
-    "count_many": { "string": "entries" },
-    "errors": { "load_failed": { "string": "Failed to load audit log" } }
-}}
+    "description": {
+      "string": "Niezmienialny dziennik działań administratorów i użytkowników. Wpisy są dołączane i nie mogą zostać zmodyfikowane ani usunięte."
+    },
+    "table": {
+      "timestamp": {
+        "string": "Data i godzina"
+      },
+      "action": {
+        "string": "Akcja"
+      },
+      "actor": {
+        "string": "Wykonawca"
+      },
+      "target": {
+        "string": "Cel"
+      },
+      "detail": {
+        "string": "Szczegóły"
+      },
+      "ip": {
+        "string": "Adres IP"
+      },
+      "no_entries": {
+        "string": "Nie znaleziono wpisów w dzienniku audytu."
+      }
+    },
+    "count_one": {
+      "string": "wpis"
+    },
+    "count_many": {
+      "string": "wpisy"
+    },
+    "errors": {
+      "load_failed": {
+        "string": "Nie udało się załadować dziennika audytu"
+      }
+    }
+  }
+}

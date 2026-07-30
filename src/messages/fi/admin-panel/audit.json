@@ -1,16 +1,44 @@
-{ "AP_AUDIT": {
-    "title": { "string": "Audit Log" },
-    "description": { "string": "Tamper-proof log of admin and user actions. Entries are append-only and cannot be modified or deleted." },
-    "table": {
-      "timestamp": { "string": "Timestamp" },
-      "action": { "string": "Action" },
-      "actor": { "string": "Actor" },
-      "target": { "string": "Target" },
-      "detail": { "string": "Detail" },
-      "ip": { "string": "IP Address" },
-      "no_entries": { "string": "No audit log entries found." }
+{
+  "AP_AUDIT": {
+    "title": {
+      "string": "Tarkistusloki"
     },
-    "count_one": { "string": "entry" },
-    "count_many": { "string": "entries" },
-    "errors": { "load_failed": { "string": "Failed to load audit log" } }
-}}
+    "description": {
+      "string": "Manipuloimaton loki ylläpitäjien ja käyttäjien toiminnoista. Merkinnät ovat vain lisättäviä eikä niitä voi muokata tai poistaa."
+    },
+    "table": {
+      "timestamp": {
+        "string": "Aikaleima"
+      },
+      "action": {
+        "string": "Toiminto"
+      },
+      "actor": {
+        "string": "Toimija"
+      },
+      "target": {
+        "string": "Kohde"
+      },
+      "detail": {
+        "string": "Yksityiskohdat"
+      },
+      "ip": {
+        "string": "IP-osoite"
+      },
+      "no_entries": {
+        "string": "Tarkistuslokimerkintöjä ei löytynyt."
+      }
+    },
+    "count_one": {
+      "string": "merkintä"
+    },
+    "count_many": {
+      "string": "merkintää"
+    },
+    "errors": {
+      "load_failed": {
+        "string": "Tarkistuslokin lataus epäonnistui"
+      }
+    }
+  }
+}

@@ -1,1 +1,49 @@
-{ "AI_SPAM": { "title": { "string": "Intelligent Spam Filter" }, "description": { "string": "Real-time spam scoring with pattern analysis, sender reputation, and content heuristics." }, "input": { "title": { "string": "Email to Score" }, "subject": { "string": "Subject" }, "sender": { "string": "Sender" }, "body": { "string": "Body" }, "placeholder": { "string": "Paste the email body..." } }, "output": { "title": { "string": "Spam Score" }, "empty": { "string": "Enter email content and click Score" }, "signals": { "string": "Detected Signals" } }, "score": { "string": "Score Email" }, "errors": { "empty": { "string": "Enter subject or body" }, "fail": { "string": "Scoring failed" } } }}
+{
+  "AI_SPAM": {
+    "title": {
+      "string": "Intelligent spamfilter"
+    },
+    "description": {
+      "string": "Realtidsscoring af spam med mønsteranalyse, afsenderreputation og indholdsheuristik."
+    },
+    "input": {
+      "title": {
+        "string": "E-mail til scoring"
+      },
+      "subject": {
+        "string": "Emne"
+      },
+      "sender": {
+        "string": "Afsender"
+      },
+      "body": {
+        "string": "Brødtekst"
+      },
+      "placeholder": {
+        "string": "Indsæt e-mailens brødtekst her..."
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Spam-score"
+      },
+      "empty": {
+        "string": "Indtast e-mail-indhold og klik på Score"
+      },
+      "signals": {
+        "string": "Detekterede signaler"
+      }
+    },
+    "score": {
+      "string": "Score e-mail"
+    },
+    "errors": {
+      "empty": {
+        "string": "Indtast emne eller brødtekst"
+      },
+      "fail": {
+        "string": "Scoring mislykkedes"
+      }
+    }
+  }
+}

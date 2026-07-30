@@ -1,22 +1,52 @@
-{ "AP_DEBUG": {
-    "title": { "string": "Mailbox Debug" },
-    "description": { "string": "Diagnostic tool for troubleshooting mail delivery issues. View raw email source or parsed headers." },
+{
+  "AP_DEBUG": {
+    "title": {
+      "string": "メールボックスデバッグ"
+    },
+    "description": {
+      "string": "メール配送の問題をトラブルシューティングするための診断ツール。生のメールソースや解析済みヘッダーを表示します。"
+    },
     "query": {
-      "title": { "string": "Debug Query" },
-      "button": { "string": "Inspect" }
+      "title": {
+        "string": "デバッグクエリ"
+      },
+      "button": {
+        "string": "検査"
+      }
     },
     "labels": {
-      "user": { "string": "User" },
-      "folder": { "string": "IMAP Folder" },
-      "mail_uid": { "string": "Mail UID" },
-      "select_user": { "string": "Select user..." }
+      "user": {
+        "string": "ユーザー"
+      },
+      "folder": {
+        "string": "IMAP フォルダー"
+      },
+      "mail_uid": {
+        "string": "メール UID"
+      },
+      "select_user": {
+        "string": "ユーザーを選択..."
+      }
     },
     "result": {
-      "raw": { "title": { "string": "Raw Email Source" } },
-      "headers": { "title": { "string": "Parsed Headers" } }
+      "raw": {
+        "title": {
+          "string": "生メールソース"
+        }
+      },
+      "headers": {
+        "title": {
+          "string": "解析済みヘッダー"
+        }
+      }
     },
     "errors": {
-      "fields_required": { "string": "User, folder, and mail UID are required" },
-      "fetch_failed": { "string": "Failed to fetch debug data" }
+      "fields_required": {
+        "string": "ユーザー、フォルダー、メール UID は必須です"
+      },
+      "fetch_failed": {
+        "string": "デバッグデータの取得に失敗しました"
+      }
     }
-}}
+  }
+}

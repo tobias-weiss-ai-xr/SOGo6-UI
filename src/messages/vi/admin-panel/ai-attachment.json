@@ -1,1 +1,40 @@
-{ "AI_ATTACH": { "title": { "string": "Smart Attachment Actions" }, "description": { "string": "Auto-detect document type and suggest save, forward, or archive actions." }, "input": { "title": { "string": "Attachment" }, "filename": { "string": "Filename" } }, "output": { "title": { "string": "Analysis" }, "empty": { "string": "Enter a filename" }, "preview": { "string": "Can Preview" } }, "classify": { "string": "Classify" }, "errors": { "empty": { "string": "Enter a filename" }, "fail": { "string": "Classification failed" } } }}
+{
+  "AI_ATTACH": {
+    "title": {
+      "string": "Hành động đính kèm thông minh"
+    },
+    "description": {
+      "string": "Tự động phát hiện loại tài liệu và đề xuất hành động lưu, chuyển tiếp hoặc lưu trữ."
+    },
+    "input": {
+      "title": {
+        "string": "Tệp đính kèm"
+      },
+      "filename": {
+        "string": "Tên tệp"
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Phân tích"
+      },
+      "empty": {
+        "string": "Nhập tên tệp"
+      },
+      "preview": {
+        "string": "Có thể xem trước"
+      }
+    },
+    "classify": {
+      "string": "Phân loại"
+    },
+    "errors": {
+      "empty": {
+        "string": "Nhập tên tệp"
+      },
+      "fail": {
+        "string": "Phân loại thất bại"
+      }
+    }
+  }
+}

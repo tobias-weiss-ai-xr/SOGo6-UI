@@ -1,7 +1,35 @@
-{ "AP_DBMIG": {
-    "title": { "string": "Database Migration" },
-    "description": { "string": "Track schema versions and migration history. Run migrations from the admin panel." },
-    "current_version": { "string": "Current Schema Version" },
-    "run": { "button": { "string": "Run Migration" }, "running": { "string": "Running..." }, "success": { "string": "Migration applied" }, "error": { "string": "Migration failed" } },
-    "history": { "title": { "string": "Migration History" }, "empty": { "string": "No migrations recorded." } }
-}}
+{
+  "AP_DBMIG": {
+    "title": {
+      "string": "데이터베이스 마이그레이션"
+    },
+    "description": {
+      "string": "스키마 버전 및 마이그레이션 기록을 추적합니다. 관리자 패널에서 마이그레이션을 실행하세요."
+    },
+    "current_version": {
+      "string": "현재 스키마 버전"
+    },
+    "run": {
+      "button": {
+        "string": "마이그레이션 실행"
+      },
+      "running": {
+        "string": "실행 중..."
+      },
+      "success": {
+        "string": "마이그레이션 적용 완료"
+      },
+      "error": {
+        "string": "마이그레이션 실패"
+      }
+    },
+    "history": {
+      "title": {
+        "string": "마이그레이션 기록"
+      },
+      "empty": {
+        "string": "기록된 마이그레이션이 없습니다."
+      }
+    }
+  }
+}

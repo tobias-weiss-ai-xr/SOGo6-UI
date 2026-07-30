@@ -1,1 +1,43 @@
-{ "AI_SCHEDULE": { "title": { "string": "Smart Calendar Scheduling" }, "description": { "string": "AI-suggested meeting times based on attendee availability patterns and preferences." }, "input": { "title": { "string": "Meeting Setup" }, "attendees": { "string": "Attendees" }, "from": { "string": "From" }, "to": { "string": "To" }, "duration": { "string": "Duration (min)" } }, "output": { "title": { "string": "Suggested Times" } }, "suggest": { "string": "Suggest Times" }, "errors": { "fields": { "string": "Attendees, from, and to dates are required" }, "fail": { "string": "Suggestion failed" } } }}
+{
+  "AI_SCHEDULE": {
+    "title": {
+      "string": "Умное планирование календаря"
+    },
+    "description": {
+      "string": "Время встреч, предложенное ИИ на основе шаблонов доступности и предпочтений участников."
+    },
+    "input": {
+      "title": {
+        "string": "Настройка встречи"
+      },
+      "attendees": {
+        "string": "Участники"
+      },
+      "from": {
+        "string": "С"
+      },
+      "to": {
+        "string": "По"
+      },
+      "duration": {
+        "string": "Длительность (мин)"
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Предложенное время"
+      }
+    },
+    "suggest": {
+      "string": "Предложить время"
+    },
+    "errors": {
+      "fields": {
+        "string": "Требуются участники, дата начала и окончания"
+      },
+      "fail": {
+        "string": "Ошибка предложения времени"
+      }
+    }
+  }
+}

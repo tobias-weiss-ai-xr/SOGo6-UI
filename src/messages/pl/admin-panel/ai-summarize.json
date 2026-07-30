@@ -1,1 +1,46 @@
-{ "AI_SUMMARIZE": { "title": { "string": "Email Summarization" }, "description": { "string": "TL;DR for long email threads. Extractive summarization returns the most important sentences." }, "input": { "title": { "string": "Input Email" }, "text": { "string": "Email Text" }, "placeholder": { "string": "Paste the email body here..." }, "sentences": { "string": "Max Sentences" } }, "output": { "title": { "string": "Summary" }, "empty": { "string": "Enter text and click Summarize" } }, "summarize": { "string": "Summarize" }, "loading": { "string": "Summarizing..." }, "errors": { "empty": { "string": "Enter text to summarize" }, "fail": { "string": "Summarization failed" } } }}
+{
+  "AI_SUMMARIZE": {
+    "title": {
+      "string": "Podsumowanie e-maila"
+    },
+    "description": {
+      "string": "TL;DR dla długich wątków e-mail. Ekstraktywne podsumowanie zwraca najważniejsze zdania."
+    },
+    "input": {
+      "title": {
+        "string": "E-mail wejściowy"
+      },
+      "text": {
+        "string": "Treść e-maila"
+      },
+      "placeholder": {
+        "string": "Wklej tutaj treść e-maila..."
+      },
+      "sentences": {
+        "string": "Maks. zdań"
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Podsumowanie"
+      },
+      "empty": {
+        "string": "Wprowadź tekst i kliknij Podsumuj"
+      }
+    },
+    "summarize": {
+      "string": "Podsumuj"
+    },
+    "loading": {
+      "string": "Podsumowywanie..."
+    },
+    "errors": {
+      "empty": {
+        "string": "Wprowadź tekst do podsumowania"
+      },
+      "fail": {
+        "string": "Podsumowanie nie powiodło się"
+      }
+    }
+  }
+}

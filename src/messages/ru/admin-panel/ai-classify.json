@@ -1,1 +1,46 @@
-{ "AI_CLASSIFY": { "title": { "string": "Smart Email Classification" }, "description": { "string": "Auto-label emails: newsletter, invoice, notification, social, personal." }, "input": { "title": { "string": "Input Email" }, "subject": { "string": "Subject" }, "sender": { "string": "Sender" }, "body": { "string": "Body" }, "placeholder": { "string": "Paste email content..." } }, "output": { "title": { "string": "Classification Results" }, "empty": { "string": "Enter text and click Classify" } }, "classify": { "string": "Classify" }, "errors": { "empty": { "string": "Enter email text" }, "fail": { "string": "Classification failed" } } }}
+{
+  "AI_CLASSIFY": {
+    "title": {
+      "string": "Умная классификация писем"
+    },
+    "description": {
+      "string": "Автоматическая разметка писем: рассылка, счёт, уведомление, социальные сети, личные."
+    },
+    "input": {
+      "title": {
+        "string": "Входное письмо"
+      },
+      "subject": {
+        "string": "Тема"
+      },
+      "sender": {
+        "string": "Отправитель"
+      },
+      "body": {
+        "string": "Текст письма"
+      },
+      "placeholder": {
+        "string": "Вставьте содержимое письма..."
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Результаты классификации"
+      },
+      "empty": {
+        "string": "Введите текст и нажмите «Классифицировать»"
+      }
+    },
+    "classify": {
+      "string": "Классифицировать"
+    },
+    "errors": {
+      "empty": {
+        "string": "Введите текст письма"
+      },
+      "fail": {
+        "string": "Ошибка классификации"
+      }
+    }
+  }
+}

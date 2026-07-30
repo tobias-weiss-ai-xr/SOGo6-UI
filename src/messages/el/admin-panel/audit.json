@@ -1,16 +1,44 @@
-{ "AP_AUDIT": {
-    "title": { "string": "Audit Log" },
-    "description": { "string": "Tamper-proof log of admin and user actions. Entries are append-only and cannot be modified or deleted." },
-    "table": {
-      "timestamp": { "string": "Timestamp" },
-      "action": { "string": "Action" },
-      "actor": { "string": "Actor" },
-      "target": { "string": "Target" },
-      "detail": { "string": "Detail" },
-      "ip": { "string": "IP Address" },
-      "no_entries": { "string": "No audit log entries found." }
+{
+  "AP_AUDIT": {
+    "title": {
+      "string": "Αρχείο Ελέγχου"
     },
-    "count_one": { "string": "entry" },
-    "count_many": { "string": "entries" },
-    "errors": { "load_failed": { "string": "Failed to load audit log" } }
-}}
+    "description": {
+      "string": "Αμετάβλητο αρχείο καταγραφής ενεργειών διαχειριστών και χρηστών. Οι εγγραφές προστίθενται μόνο και δεν μπορούν να τροποποιηθούν ή να διαγραφούν."
+    },
+    "table": {
+      "timestamp": {
+        "string": "Χρονοσφραγίδα"
+      },
+      "action": {
+        "string": "Ενέργεια"
+      },
+      "actor": {
+        "string": "Δρώντας"
+      },
+      "target": {
+        "string": "Στόχος"
+      },
+      "detail": {
+        "string": "Λεπτομέρειες"
+      },
+      "ip": {
+        "string": "Διεύθυνση IP"
+      },
+      "no_entries": {
+        "string": "Δεν βρέθηκαν εγγραφές στο αρχείο ελέγχου."
+      }
+    },
+    "count_one": {
+      "string": "εγγραφή"
+    },
+    "count_many": {
+      "string": "εγγραφές"
+    },
+    "errors": {
+      "load_failed": {
+        "string": "Αποτυχία φόρτωσης του αρχείου ελέγχου"
+      }
+    }
+  }
+}

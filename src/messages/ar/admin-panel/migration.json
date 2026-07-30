@@ -1,8 +1,54 @@
-{ "AP_MIG": {
-    "title": { "string": "Migration Tools" },
-    "description": { "string": "Import data from external sources — G Suite, M365, Dovecot, Cyrus, or file uploads." },
-    "wizard": { "title": { "string": "Start Migration" }, "source": { "string": "Source" }, "select_source": { "string": "Choose a source..." }, "user": { "string": "Target User" }, "select_user": { "string": "Select user..." } },
-    "start": { "button": { "string": "Start Migration" }, "running": { "string": "Starting..." }, "success": { "string": "Migration started" }, "error": { "string": "Migration failed" } },
-    "history": { "title": { "string": "Migration History" }, "empty": { "string": "No migrations yet." } },
-    "errors": { "fields": { "string": "Source and user are required" } }
-}}
+{
+  "AP_MIG": {
+    "title": {
+      "string": "أدوات الهجرة"
+    },
+    "description": {
+      "string": "استيراد البيانات من مصادر خارجية — G Suite، M365، Dovecot، Cyrus، أو رفع الملفات."
+    },
+    "wizard": {
+      "title": {
+        "string": "بدء الهجرة"
+      },
+      "source": {
+        "string": "المصدر"
+      },
+      "select_source": {
+        "string": "اختر مصدرًا..."
+      },
+      "user": {
+        "string": "المستخدم الهدف"
+      },
+      "select_user": {
+        "string": "اختر مستخدمًا..."
+      }
+    },
+    "start": {
+      "button": {
+        "string": "بدء الهجرة"
+      },
+      "running": {
+        "string": "جاري البدء..."
+      },
+      "success": {
+        "string": "تم بدء الهجرة"
+      },
+      "error": {
+        "string": "فشلت الهجرة"
+      }
+    },
+    "history": {
+      "title": {
+        "string": "سجل الهجرات"
+      },
+      "empty": {
+        "string": "لا توجد هجرات بعد."
+      }
+    },
+    "errors": {
+      "fields": {
+        "string": "المصدر والمستخدم مطلوبان"
+      }
+    }
+  }
+}

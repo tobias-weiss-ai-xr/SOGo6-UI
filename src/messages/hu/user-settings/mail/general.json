@@ -1,171 +1,171 @@
 {
-    "US_MAIL_GENERAL": {
-        "title": {
-            "string": "Mail General Settings",
-            "context": "Title for the mail general settings page"
-        },
-        "compose_message_in": {
-            "string": "Compose message in",
-            "context": "Dropdown label in what way to compose messages"
-        },
-        "display_subscribed_mailboxes_only": {
-            "string": "Show subscribed mailboxes only",
-            "context": "Checkbox to show subscribed mailboxes only"
-        },
-        "fetch_count_of_unseen_messages": {
-            "string": "Fetch count of unseen messages for all mailboxes",
-            "context": "Checkbox to fetch count of unseen messages for all mailboxes"
-        },
-        "sort_messages_by_threads": {
-            "string": "Sort messages by threads",
-            "context": "Checkbox to sort messages by threads"
-        },
-        "show_recipients_or_sender_full_email": {
-            "string": "Show recipients or sender full email in mailboxes",
-            "context": "Checkbox to show recipients or sender full email in mailboxes"
-        },
-        "hide_attachments_for_inline_images": {
-            "string": "Do no show inline images as attachment file in the mail viewer",
-            "context": "Checkbox to hide attachments for inline images"
-        },
-        "automatically_mark_messages_as_read": {
-            "string": "Mark messages as read after (defined) seconds",
-            "context": "Checkbox to automatically mark messages as read"
-        },
-        "collect_unknown_addresses": {
-            "string": "Save unknown mail addresses into an addressbook",
-            "context": "Checkbox to collect unknown mail addresses"
-        },
-        "collect_unknown_addressbook_name": {
-            "string": "Addressbook name",
-            "context": "Input for the unknown email addressbook name"
-        },
-        "forward_messages": {
-            "title": {
-                "string": "Forward messages",
-                "context": "Dropdown label for forward messages"
-            },
-            "as_attachment": {
-                "string": "As attachment",
-                "context": "Checkbox to forward messages as attachment"
-            },
-            "as_inline": {
-                "string": "As inline",
-                "context": "Checkbox to forward messages as inline"
-            }
-        },
-        "start_reply": {
-            "title": {
-                "string": "When replying to a message",
-                "context": "Dropdown label to know where to start in the mail when replying"
-            },
-            "to_above": {
-                "string": "Start my reply above the quote",
-                "context": "Checkbox to start replying at the bottom"
-            },
-            "to_below": {
-                "string": "Start my reply below the quote",
-                "context": "Checkbox to start replying at the top"
-            }
-        },
-        "place_signature": {
-            "title": {
-                "string": "and place the signature",
-                "context": "Dropdown label to know where to place the signature"
-            },
-            "above": {
-                "string": "above the quote",
-                "context": "Checkbox to start replying at the bottom"
-            },
-            "below": {
-                "string": "below the quote",
-                "context": "Checkbox to start replying at the top"
-            }
-        },
-        "attachment_position": {
-            "title": {
-                "string": "Place the attachment",
-                "context": "Dropdown label to know where to place the attachment"
-            },
-            "above": {
-                "string": "above the mail"
-            },
-            "below": {
-                "string": "below the mail"
-            }
-        },
-        "sign_on": {
-            "new": {
-                "string": "Insert signature on new message"
-            },
-            "reply": {
-                "string": "Insert signature on reply message"
-            },
-            "forward": {
-                "string": "Insert signature on forward message"
-            }
-        },
-        "default_font_size": {
-            "title": {
-                "string": "Default font size",
-                "context": "Dropdown label to know the default font size"
-            },
-            "sm": {
-                "string": "Small",
-                "context": "Small font size"
-            },
-            "md": {
-                "string": "Medium",
-                "context": "Medium font size"
-            },
-            "lg": {
-                "string": "Large",
-                "context": "Large font size"
-            },
-            "xl": {
-                "string": "Extra large",
-                "context": "Extra large font size"
-            }
-        },
-        "display_remote_images": {
-            "string": "Display remote inline images",
-            "context": "Checkbox to set display remote inline images to true or false"
-        },
-        "compose": {
-            "title": {
-                "string": "Default compose opening behavior",
-                "context": "Dropdown label to know where to open compose in"
-            },
-            "always_ask": {
-                "string": "Always ask opening compose in new window or inside webmail",
-                "context": "Dropdown label to know where to open compose in"
-            },
-            "in_new_window": {
-                "string": "Open compose in new window",
-                "context": "Dropdown label to know where to open compose in"
-            },
-            "inside_webmail": {
-                "string": "Open compose inside webmail",
-                "context": "Dropdown label to know where to open compose in"
-            }
-        },
-        "mail_allow_receipt": {
-            "string": "Allow mail to ask for receipts",
-            "context": "Checkbox to allow mail to ask for receipts"
-        },
-        "mail_folder_subscribe": {
-            "string": "Show subscribed mailboxes only",
-            "context": "Checkbox to show subscribed mailboxes only"
-        },
-        "compose_mail_window": {
-            "string": "Compose mail window",
-            "context": "Dropdown label to know where to open compose in",
-            "popup": {
-                "string": "Compose email in a popup"
-            },
-            "inline": {
-                "string": "Compose email inside the webmail"
-            }
-        }
+  "US_MAIL_GENERAL": {
+    "title": {
+      "string": "Általános levelezési beállítások",
+      "context": "Title for the mail general settings page"
+    },
+    "compose_message_in": {
+      "string": "Üzenet szerkesztése ebben:",
+      "context": "Dropdown label in what way to compose messages"
+    },
+    "display_subscribed_mailboxes_only": {
+      "string": "Csak a feliratkozott levélszekrények megjelenítése",
+      "context": "Checkbox to show subscribed mailboxes only"
+    },
+    "fetch_count_of_unseen_messages": {
+      "string": "Olvasatlan üzenetek száma minden levélszekrényhez",
+      "context": "Checkbox to fetch count of unseen messages for all mailboxes"
+    },
+    "sort_messages_by_threads": {
+      "string": "Üzenetek rendezése szálak szerint",
+      "context": "Checkbox to sort messages by threads"
+    },
+    "show_recipients_or_sender_full_email": {
+      "string": "Címzettek vagy feladó teljes e-mail-címének megjelenítése a levélszekrényekben",
+      "context": "Checkbox to show recipients or sender full email in mailboxes"
+    },
+    "hide_attachments_for_inline_images": {
+      "string": "Ne jelenjenek meg a beágyazott képek mellékletként a levélnézőben",
+      "context": "Checkbox to hide attachments for inline images"
+    },
+    "automatically_mark_messages_as_read": {
+      "string": "Üzenetek automatikus olvasottként jelölése (meghatározott) másodperc után",
+      "context": "Checkbox to automatically mark messages as read"
+    },
+    "collect_unknown_addresses": {
+      "string": "Ismeretlen e-mail-címek mentése a címkönyvbe",
+      "context": "Checkbox to collect unknown mail addresses"
+    },
+    "collect_unknown_addressbook_name": {
+      "string": "Címkönyv neve",
+      "context": "Input for the unknown email addressbook name"
+    },
+    "forward_messages": {
+      "title": {
+        "string": "Üzenetek továbbítása",
+        "context": "Dropdown label for forward messages"
+      },
+      "as_attachment": {
+        "string": "Mellékletként",
+        "context": "Checkbox to forward messages as attachment"
+      },
+      "as_inline": {
+        "string": "Beágyazva",
+        "context": "Checkbox to forward messages as inline"
+      }
+    },
+    "start_reply": {
+      "title": {
+        "string": "Válasz írása üzenetre",
+        "context": "Dropdown label to know where to start in the mail when replying"
+      },
+      "to_above": {
+        "string": "Válasz kezdése az idézet felett",
+        "context": "Checkbox to start replying at the bottom"
+      },
+      "to_below": {
+        "string": "Válasz kezdése az idézet alatt",
+        "context": "Checkbox to start replying at the top"
+      }
+    },
+    "place_signature": {
+      "title": {
+        "string": "és az aláírás elhelyezése",
+        "context": "Dropdown label to know where to place the signature"
+      },
+      "above": {
+        "string": "az idézet felett",
+        "context": "Checkbox to start replying at the bottom"
+      },
+      "below": {
+        "string": "az idézet alatt",
+        "context": "Checkbox to start replying at the top"
+      }
+    },
+    "attachment_position": {
+      "title": {
+        "string": "Melléklet elhelyezése",
+        "context": "Dropdown label to know where to place the attachment"
+      },
+      "above": {
+        "string": "a levél felett"
+      },
+      "below": {
+        "string": "a levél alatt"
+      }
+    },
+    "sign_on": {
+      "new": {
+        "string": "Aláírás beszúrása új üzenetre"
+      },
+      "reply": {
+        "string": "Aláírás beszúrása válaszüzenetre"
+      },
+      "forward": {
+        "string": "Aláírás beszúrása továbbított üzenetre"
+      }
+    },
+    "default_font_size": {
+      "title": {
+        "string": "Alapértelmezett betűméret",
+        "context": "Dropdown label to know the default font size"
+      },
+      "sm": {
+        "string": "Kicsi",
+        "context": "Small font size"
+      },
+      "md": {
+        "string": "Közepes",
+        "context": "Medium font size"
+      },
+      "lg": {
+        "string": "Nagy",
+        "context": "Large font size"
+      },
+      "xl": {
+        "string": "Nagyon nagy",
+        "context": "Extra large font size"
+      }
+    },
+    "display_remote_images": {
+      "string": "Távoli beágyazott képek megjelenítése",
+      "context": "Checkbox to set display remote inline images to true or false"
+    },
+    "compose": {
+      "title": {
+        "string": "Alapértelmezett üzenetírási viselkedés",
+        "context": "Dropdown label to know where to open compose in"
+      },
+      "always_ask": {
+        "string": "Mindig kérdezze meg, hogy új ablakban vagy a webmailen belül nyissa meg az üzenetírást",
+        "context": "Dropdown label to know where to open compose in"
+      },
+      "in_new_window": {
+        "string": "Üzenetírás megnyitása új ablakban",
+        "context": "Dropdown label to know where to open compose in"
+      },
+      "inside_webmail": {
+        "string": "Üzenetírás megnyitása a webmailen belül",
+        "context": "Dropdown label to know where to open compose in"
+      }
+    },
+    "mail_allow_receipt": {
+      "string": "Engedélyezze az üzeneteknek a visszaigazolás kérését",
+      "context": "Checkbox to allow mail to ask for receipts"
+    },
+    "mail_folder_subscribe": {
+      "string": "Csak a feliratkozott levelezőmappák megjelenítése",
+      "context": "Checkbox to show subscribed mailboxes only"
+    },
+    "compose_mail_window": {
+      "string": "Üzenetírási ablak",
+      "context": "Dropdown label to know where to open compose in",
+      "popup": {
+        "string": "Compose email in a popup"
+      },
+      "inline": {
+        "string": "Compose email inside the webmail"
+      }
     }
+  }
 }

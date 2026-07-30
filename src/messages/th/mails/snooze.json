@@ -1,39 +1,39 @@
 {
-    "MAIL_SNOOZE": {
-        "title": {
-            "string": "Snooze"
-        },
-        "description": {
-            "string": "Choose when this email should reappear in your inbox."
-        },
-        "presets": {
-            "later_today": {
-                "string": "Later today"
-            },
-            "tomorrow": {
-                "string": "Tomorrow"
-            },
-            "this_weekend": {
-                "string": "This weekend"
-            },
-            "next_week": {
-                "string": "Next week"
-            }
-        },
-        "pick_date": {
-            "string": "Pick a date & time"
-        },
-        "pick_date_placeholder": {
-            "string": "Select date..."
-        },
-        "snooze_button": {
-            "string": "Snooze"
-        },
-        "success": {
-            "string": "Email snoozed"
-        },
-        "error": {
-            "string": "Failed to snooze email"
-        }
+  "MAIL_SNOOZE": {
+    "title": {
+      "string": "เลื่อนการแจ้งเตือน"
+    },
+    "description": {
+      "string": "เลือกเวลาที่อีเมลฉบับนี้จะปรากฏในกล่องจดหมายของคุณอีกครั้ง"
+    },
+    "presets": {
+      "later_today": {
+        "string": "ภายในวันนี้"
+      },
+      "tomorrow": {
+        "string": "พรุ่งนี้"
+      },
+      "this_weekend": {
+        "string": "วันหยุดสุดสัปดาห์นี้"
+      },
+      "next_week": {
+        "string": "สัปดาห์หน้า"
+      }
+    },
+    "pick_date": {
+      "string": "เลือกวันที่และเวลา"
+    },
+    "pick_date_placeholder": {
+      "string": "เลือกวันที่..."
+    },
+    "snooze_button": {
+      "string": "เลื่อนการแจ้งเตือน"
+    },
+    "success": {
+      "string": "เลื่อนการแจ้งเตือนอีเมลแล้ว"
+    },
+    "error": {
+      "string": "ไม่สามารถเลื่อนการแจ้งเตือนอีเมลได้"
     }
+  }
 }

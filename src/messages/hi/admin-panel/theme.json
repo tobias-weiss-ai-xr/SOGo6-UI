@@ -1,135 +1,135 @@
 {
   "AP_THEME": {
     "title": {
-      "string": "Theme Settings"
+      "string": "थीम सेटिंग्स"
     },
     "description": {
-      "string": "Customize the look and feel of the SOGo interface"
+      "string": "SOGo इंटरफेस की लुक और फील को अनुकूलित करें"
     },
     "form_title": {
-      "string": "Custom Theme"
+      "string": "कस्टम थीम"
     },
     "form_description": {
-      "string": "Configure colors, logo, and custom CSS for the groupware interface"
+      "string": "ग्रुपवेयर इंटरफेस के लिए रंग, लोगो और कस्टम CSS कॉन्फ़िगर करें"
     },
     "fields": {
       "primary": {
         "label": {
-          "string": "Primary Color"
+          "string": "प्राथमिक रंग"
         },
         "description": {
-          "string": "HSL values for the primary color (e.g. 180 25% 40%)"
+          "string": "प्राथमिक रंग के लिए HSL मान (जैसे 180 25% 40%)"
         }
       },
       "primary_foreground": {
         "label": {
-          "string": "Primary Foreground"
+          "string": "प्राथमिक फोरग्राउंड"
         },
         "description": {
-          "string": "Text color on primary backgrounds"
+          "string": "प्राथमिक पृष्ठभूमि पर टेक्स्ट रंग"
         }
       },
       "background": {
         "label": {
-          "string": "Background"
+          "string": "पृष्ठभूमि"
         },
         "description": {
-          "string": "HSL values for the page background"
+          "string": "पृष्ठ पृष्ठभूमि के लिए HSL मान"
         }
       },
       "foreground": {
         "label": {
-          "string": "Foreground"
+          "string": "फोरग्राउंड"
         },
         "description": {
-          "string": "Default text color"
+          "string": "डिफ़ॉल्ट टेक्स्ट रंग"
         }
       },
       "sidebar_background": {
         "label": {
-          "string": "Sidebar Background"
+          "string": "साइडबार पृष्ठभूमि"
         },
         "description": {
-          "string": "HSL values for the sidebar background"
+          "string": "साइडबार पृष्ठभूमि के लिए HSL मान"
         }
       },
       "sidebar_foreground": {
         "label": {
-          "string": "Sidebar Foreground"
+          "string": "साइडबार फोरग्राउंड"
         },
         "description": {
-          "string": "Text color in the sidebar"
+          "string": "साइडबार में टेक्स्ट रंग"
         }
       },
       "sidebar_primary": {
         "label": {
-          "string": "Sidebar Primary"
+          "string": "साइडबार प्राथमिक"
         },
         "description": {
-          "string": "Primary accent color in the sidebar"
+          "string": "साइडबार में प्राथमिक एक्सेंट रंग"
         }
       },
       "sidebar_accent": {
         "label": {
-          "string": "Sidebar Accent"
+          "string": "साइडबार एक्सेंट"
         },
         "description": {
-          "string": "Accent color in the sidebar"
+          "string": "साइडबार में एक्सेंट रंग"
         }
       },
       "header_background": {
         "label": {
-          "string": "Header Background"
+          "string": "हेडर बैकग्राउंड"
         },
         "description": {
-          "string": "HSL values for the top header bar"
+          "string": "टॉप हेडर बार के लिए HSL मान"
         }
       },
       "header_foreground": {
         "label": {
-          "string": "Header Foreground"
+          "string": "हेडर फोरग्राउंड"
         },
         "description": {
-          "string": "Text color in the header"
+          "string": "हेडर में टेक्स्ट का रंग"
         }
       },
       "logo_url": {
         "label": {
-          "string": "Logo URL"
+          "string": "लोगो URL"
         },
         "description": {
-          "string": "URL of the custom logo image (optional)"
+          "string": "कस्टम लोगो इमेज का URL (ऐच्छिक)"
         }
       },
       "custom_css": {
         "label": {
-          "string": "Custom CSS"
+          "string": "कस्टम CSS"
         },
         "description": {
-          "string": "Additional CSS rules to inject (optional)"
+          "string": "इंजेक्ट करने के लिए अतिरिक्त CSS नियम (ऐच्छिक)"
         }
       }
     },
     "save": {
-      "string": "Save Changes"
+      "string": "परिवर्तन सहेजें"
     },
     "saving": {
-      "string": "Saving…"
+      "string": "सहेज रहा है…"
     },
     "saved": {
-      "string": "Theme settings saved successfully"
+      "string": "थीम सेटिंग्स सफलतापूर्वक सहेजी गईं"
     },
     "save_error": {
-      "string": "Failed to save: {message}"
+      "string": "सहेजने में विफल: {message}"
     },
     "unsaved_changes": {
-      "string": "You have unsaved changes"
+      "string": "आपके पास असहेजित परिवर्तन हैं"
     },
     "load_error": {
-      "string": "Failed to load theme settings"
+      "string": "थीम सेटिंग्स लोड करने में विफल"
     },
     "retry": {
-      "string": "Retry"
+      "string": "पुनः प्रयास करें"
     }
   }
 }

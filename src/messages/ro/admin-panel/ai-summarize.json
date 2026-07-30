@@ -1,1 +1,46 @@
-{ "AI_SUMMARIZE": { "title": { "string": "Email Summarization" }, "description": { "string": "TL;DR for long email threads. Extractive summarization returns the most important sentences." }, "input": { "title": { "string": "Input Email" }, "text": { "string": "Email Text" }, "placeholder": { "string": "Paste the email body here..." }, "sentences": { "string": "Max Sentences" } }, "output": { "title": { "string": "Summary" }, "empty": { "string": "Enter text and click Summarize" } }, "summarize": { "string": "Summarize" }, "loading": { "string": "Summarizing..." }, "errors": { "empty": { "string": "Enter text to summarize" }, "fail": { "string": "Summarization failed" } } }}
+{
+  "AI_SUMMARIZE": {
+    "title": {
+      "string": "Rezumatizare email"
+    },
+    "description": {
+      "string": "TL;DR pentru fire lungi de emailuri. Rezumatizarea extractivă returnează cele mai importante propoziții."
+    },
+    "input": {
+      "title": {
+        "string": "Email de intrare"
+      },
+      "text": {
+        "string": "Textul emailului"
+      },
+      "placeholder": {
+        "string": "Lipește aici corpul emailului..."
+      },
+      "sentences": {
+        "string": "Număr maxim de propoziții"
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Rezumat"
+      },
+      "empty": {
+        "string": "Introdu textul și apasă pe Rezumă"
+      }
+    },
+    "summarize": {
+      "string": "Rezumă"
+    },
+    "loading": {
+      "string": "Se rezumă..."
+    },
+    "errors": {
+      "empty": {
+        "string": "Introdu textul de rezumat"
+      },
+      "fail": {
+        "string": "Rezumatizarea a eșuat"
+      }
+    }
+  }
+}

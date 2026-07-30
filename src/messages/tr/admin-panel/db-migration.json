@@ -1,7 +1,35 @@
-{ "AP_DBMIG": {
-    "title": { "string": "Database Migration" },
-    "description": { "string": "Track schema versions and migration history. Run migrations from the admin panel." },
-    "current_version": { "string": "Current Schema Version" },
-    "run": { "button": { "string": "Run Migration" }, "running": { "string": "Running..." }, "success": { "string": "Migration applied" }, "error": { "string": "Migration failed" } },
-    "history": { "title": { "string": "Migration History" }, "empty": { "string": "No migrations recorded." } }
-}}
+{
+  "AP_DBMIG": {
+    "title": {
+      "string": "Veritabanı Göçü"
+    },
+    "description": {
+      "string": "Şema sürümlerini ve göç geçmişini takip edin. Yönetim panelinden göçleri çalıştırın."
+    },
+    "current_version": {
+      "string": "Mevcut Şema Sürümü"
+    },
+    "run": {
+      "button": {
+        "string": "Göçü Çalıştır"
+      },
+      "running": {
+        "string": "Çalışıyor..."
+      },
+      "success": {
+        "string": "Göç uygulandı"
+      },
+      "error": {
+        "string": "Göç başarısız oldu"
+      }
+    },
+    "history": {
+      "title": {
+        "string": "Göç Geçmişi"
+      },
+      "empty": {
+        "string": "Kaydedilmiş göç yok."
+      }
+    }
+  }
+}

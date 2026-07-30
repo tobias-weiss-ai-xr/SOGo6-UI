@@ -1,16 +1,44 @@
-{ "AP_AUDIT": {
-    "title": { "string": "Audit Log" },
-    "description": { "string": "Tamper-proof log of admin and user actions. Entries are append-only and cannot be modified or deleted." },
-    "table": {
-      "timestamp": { "string": "Timestamp" },
-      "action": { "string": "Action" },
-      "actor": { "string": "Actor" },
-      "target": { "string": "Target" },
-      "detail": { "string": "Detail" },
-      "ip": { "string": "IP Address" },
-      "no_entries": { "string": "No audit log entries found." }
+{
+  "AP_AUDIT": {
+    "title": {
+      "string": "Журнал аудита"
     },
-    "count_one": { "string": "entry" },
-    "count_many": { "string": "entries" },
-    "errors": { "load_failed": { "string": "Failed to load audit log" } }
-}}
+    "description": {
+      "string": "Защищённый от изменений журнал действий администраторов и пользователей. Записи добавляются только в конец и не могут быть изменены или удалены."
+    },
+    "table": {
+      "timestamp": {
+        "string": "Время"
+      },
+      "action": {
+        "string": "Действие"
+      },
+      "actor": {
+        "string": "Исполнитель"
+      },
+      "target": {
+        "string": "Цель"
+      },
+      "detail": {
+        "string": "Детали"
+      },
+      "ip": {
+        "string": "IP-адрес"
+      },
+      "no_entries": {
+        "string": "Записи в журнале аудита не найдены."
+      }
+    },
+    "count_one": {
+      "string": "запись"
+    },
+    "count_many": {
+      "string": "записи"
+    },
+    "errors": {
+      "load_failed": {
+        "string": "Не удалось загрузить журнал аудита"
+      }
+    }
+  }
+}

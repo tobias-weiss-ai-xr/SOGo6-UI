@@ -1,39 +1,39 @@
 {
-    "MAIL_SNOOZE": {
-        "title": {
-            "string": "Snooze"
-        },
-        "description": {
-            "string": "Choose when this email should reappear in your inbox."
-        },
-        "presets": {
-            "later_today": {
-                "string": "Later today"
-            },
-            "tomorrow": {
-                "string": "Tomorrow"
-            },
-            "this_weekend": {
-                "string": "This weekend"
-            },
-            "next_week": {
-                "string": "Next week"
-            }
-        },
-        "pick_date": {
-            "string": "Pick a date & time"
-        },
-        "pick_date_placeholder": {
-            "string": "Select date..."
-        },
-        "snooze_button": {
-            "string": "Snooze"
-        },
-        "success": {
-            "string": "Email snoozed"
-        },
-        "error": {
-            "string": "Failed to snooze email"
-        }
+  "MAIL_SNOOZE": {
+    "title": {
+      "string": "Αναβολή"
+    },
+    "description": {
+      "string": "Επιλέξτε πότε να εμφανιστεί ξανά αυτό το email στο εισερχόμενό σας."
+    },
+    "presets": {
+      "later_today": {
+        "string": "Αργότερα σήμερα"
+      },
+      "tomorrow": {
+        "string": "Αύριο"
+      },
+      "this_weekend": {
+        "string": "Αυτό το Σαββατοκύριακο"
+      },
+      "next_week": {
+        "string": "Επόμενη εβδομάδα"
+      }
+    },
+    "pick_date": {
+      "string": "Επιλέξτε ημερομηνία & ώρα"
+    },
+    "pick_date_placeholder": {
+      "string": "Επιλέξτε ημερομηνία..."
+    },
+    "snooze_button": {
+      "string": "Αναβολή"
+    },
+    "success": {
+      "string": "Το email αναβλήθηκε"
+    },
+    "error": {
+      "string": "Αποτυχία αναβολής του email"
     }
+  }
 }

@@ -1,39 +1,39 @@
 {
-    "MAIL_SNOOZE": {
-        "title": {
-            "string": "Snooze"
-        },
-        "description": {
-            "string": "Choose when this email should reappear in your inbox."
-        },
-        "presets": {
-            "later_today": {
-                "string": "Later today"
-            },
-            "tomorrow": {
-                "string": "Tomorrow"
-            },
-            "this_weekend": {
-                "string": "This weekend"
-            },
-            "next_week": {
-                "string": "Next week"
-            }
-        },
-        "pick_date": {
-            "string": "Pick a date & time"
-        },
-        "pick_date_placeholder": {
-            "string": "Select date..."
-        },
-        "snooze_button": {
-            "string": "Snooze"
-        },
-        "success": {
-            "string": "Email snoozed"
-        },
-        "error": {
-            "string": "Failed to snooze email"
-        }
+  "MAIL_SNOOZE": {
+    "title": {
+      "string": "Amânare"
+    },
+    "description": {
+      "string": "Alege când să reapară acest e-mail în inbox."
+    },
+    "presets": {
+      "later_today": {
+        "string": "Mai târziu astăzi"
+      },
+      "tomorrow": {
+        "string": "Mâine"
+      },
+      "this_weekend": {
+        "string": "Sâmbătă/duminică"
+      },
+      "next_week": {
+        "string": "Săptămâna viitoare"
+      }
+    },
+    "pick_date": {
+      "string": "Alege dată și oră"
+    },
+    "pick_date_placeholder": {
+      "string": "Selectează data..."
+    },
+    "snooze_button": {
+      "string": "Amână"
+    },
+    "success": {
+      "string": "E-mail amânat"
+    },
+    "error": {
+      "string": "Nu s-a putut amâna e-mailul"
     }
+  }
 }

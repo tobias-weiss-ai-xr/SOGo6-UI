@@ -1,1 +1,43 @@
-{ "AI_SCHEDULE": { "title": { "string": "Smart Calendar Scheduling" }, "description": { "string": "AI-suggested meeting times based on attendee availability patterns and preferences." }, "input": { "title": { "string": "Meeting Setup" }, "attendees": { "string": "Attendees" }, "from": { "string": "From" }, "to": { "string": "To" }, "duration": { "string": "Duration (min)" } }, "output": { "title": { "string": "Suggested Times" } }, "suggest": { "string": "Suggest Times" }, "errors": { "fields": { "string": "Attendees, from, and to dates are required" }, "fail": { "string": "Suggestion failed" } } }}
+{
+  "AI_SCHEDULE": {
+    "title": {
+      "string": "Lịch trình Thông minh"
+    },
+    "description": {
+      "string": "Thời gian họp được AI gợi ý dựa trên mẫu thời gian rảnh và sở thích của người tham dự."
+    },
+    "input": {
+      "title": {
+        "string": "Thiết lập Cuộc họp"
+      },
+      "attendees": {
+        "string": "Người tham dự"
+      },
+      "from": {
+        "string": "Từ ngày"
+      },
+      "to": {
+        "string": "Đến ngày"
+      },
+      "duration": {
+        "string": "Thời lượng (phút)"
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Thời gian Đề xuất"
+      }
+    },
+    "suggest": {
+      "string": "Đề xuất Thời gian"
+    },
+    "errors": {
+      "fields": {
+        "string": "Người tham dự, ngày bắt đầu và ngày kết thúc là bắt buộc"
+      },
+      "fail": {
+        "string": "Đề xuất thất bại"
+      }
+    }
+  }
+}

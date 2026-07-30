@@ -1,8 +1,54 @@
-{ "AP_MIG": {
-    "title": { "string": "Migration Tools" },
-    "description": { "string": "Import data from external sources — G Suite, M365, Dovecot, Cyrus, or file uploads." },
-    "wizard": { "title": { "string": "Start Migration" }, "source": { "string": "Source" }, "select_source": { "string": "Choose a source..." }, "user": { "string": "Target User" }, "select_user": { "string": "Select user..." } },
-    "start": { "button": { "string": "Start Migration" }, "running": { "string": "Starting..." }, "success": { "string": "Migration started" }, "error": { "string": "Migration failed" } },
-    "history": { "title": { "string": "Migration History" }, "empty": { "string": "No migrations yet." } },
-    "errors": { "fields": { "string": "Source and user are required" } }
-}}
+{
+  "AP_MIG": {
+    "title": {
+      "string": "Migrációs eszközök"
+    },
+    "description": {
+      "string": "Adatok importálása külső forrásokból – G Suite, M365, Dovecot, Cyrus vagy fájlfeltöltések segítségével."
+    },
+    "wizard": {
+      "title": {
+        "string": "Migráció indítása"
+      },
+      "source": {
+        "string": "Forrás"
+      },
+      "select_source": {
+        "string": "Válasszon forrásot..."
+      },
+      "user": {
+        "string": "Célfelhasználó"
+      },
+      "select_user": {
+        "string": "Válasszon felhasználót..."
+      }
+    },
+    "start": {
+      "button": {
+        "string": "Migráció indítása"
+      },
+      "running": {
+        "string": "Indítás folyamatban..."
+      },
+      "success": {
+        "string": "A migráció elindult"
+      },
+      "error": {
+        "string": "A migráció sikertelen"
+      }
+    },
+    "history": {
+      "title": {
+        "string": "Migrációs előzmények"
+      },
+      "empty": {
+        "string": "Még nincsenek migrációk."
+      }
+    },
+    "errors": {
+      "fields": {
+        "string": "A forrás és a felhasználó megadása kötelező"
+      }
+    }
+  }
+}

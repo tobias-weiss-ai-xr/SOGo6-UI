@@ -1,1 +1,49 @@
-{ "AI_ANOMALY": { "title": { "string": "Anomaly Detection" }, "description": { "string": "Flag unusual sending patterns: bulk email, odd hours, new recipients." }, "input": { "title": { "string": "Sending Pattern" }, "recipients": { "string": "Recipient Count" }, "hour": { "string": "Hour (0-23)" }, "new_ratio": { "string": "New Recipient Ratio" } }, "output": { "title": { "string": "Analysis Result" }, "empty": { "string": "Enter values and click Analyze" }, "anomaly": { "string": "Anomaly Detected!" }, "normal": { "string": "Pattern Normal" }, "score": { "string": "Risk Score" } }, "analyze": { "string": "Analyze" }, "errors": { "fail": { "string": "Analysis failed" } } }}
+{
+  "AI_ANOMALY": {
+    "title": {
+      "string": "Phát hiện Dị thường"
+    },
+    "description": {
+      "string": "Đánh dấu các mẫu gửi bất thường: gửi hàng loạt, giờ lẻ, người nhận mới."
+    },
+    "input": {
+      "title": {
+        "string": "Mẫu Gửi"
+      },
+      "recipients": {
+        "string": "Số lượng Người nhận"
+      },
+      "hour": {
+        "string": "Giờ (0-23)"
+      },
+      "new_ratio": {
+        "string": "Tỷ lệ Người nhận Mới"
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Kết quả Phân tích"
+      },
+      "empty": {
+        "string": "Nhập giá trị và nhấn Phân tích"
+      },
+      "anomaly": {
+        "string": "Phát hiện Dị thường!"
+      },
+      "normal": {
+        "string": "Mẫu Bình thường"
+      },
+      "score": {
+        "string": "Điểm Rủi ro"
+      }
+    },
+    "analyze": {
+      "string": "Phân tích"
+    },
+    "errors": {
+      "fail": {
+        "string": "Phân tích thất bại"
+      }
+    }
+  }
+}

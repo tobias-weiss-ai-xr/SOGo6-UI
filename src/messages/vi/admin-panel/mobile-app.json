@@ -1,12 +1,65 @@
 {
   "MOBILE": {
-    "title": { "string": "Mobile App Management" },
-    "description": { "string": "Manage registered devices, push notifications, and app configuration" },
-    "errors": { "fail": { "string": "Operation failed" } },
-    "success": { "unregister": { "string": "Device unregistered" }, "broadcast": { "string": "Push notification sent" } },
-    "config": { "title": { "string": "App Settings" }, "push": { "string": "Push Notifications" }, "biometric": { "string": "Biometric Auth" } },
-    "push": { "title": { "string": "Push Broadcast" }, "title": { "placeholder": { "string": "Notification title" } }, "message": { "placeholder": { "string": "Message..." } }, "broadcast": { "string": "Send" } },
-    "stats": { "title": { "string": "Statistics" }, "devices": { "string": "Registered Devices" } },
-    "devices": { "title": { "string": "All Devices" }, "empty": { "string": "No devices registered yet" } }
+    "title": {
+      "string": "Quản lý Ứng dụng Di động"
+    },
+    "description": {
+      "string": "Quản lý thiết bị đã đăng ký, thông báo đẩy và cấu hình ứng dụng"
+    },
+    "errors": {
+      "fail": {
+        "string": "Thao tác thất bại"
+      }
+    },
+    "success": {
+      "unregister": {
+        "string": "Thiết bị đã hủy đăng ký"
+      },
+      "broadcast": {
+        "string": "Thông báo đẩy đã được gửi"
+      }
+    },
+    "config": {
+      "title": {
+        "string": "Cài đặt Ứng dụng"
+      },
+      "push": {
+        "string": "Thông báo Đẩy"
+      },
+      "biometric": {
+        "string": "Xác thực Sinh trắc học"
+      }
+    },
+    "push": {
+      "title": {
+        "placeholder": {
+          "string": "Tiêu đề thông báo"
+        }
+      },
+      "message": {
+        "placeholder": {
+          "string": "Tin nhắn..."
+        }
+      },
+      "broadcast": {
+        "string": "Gửi"
+      }
+    },
+    "stats": {
+      "title": {
+        "string": "Thống kê"
+      },
+      "devices": {
+        "string": "Thiết bị Đã Đăng ký"
+      }
+    },
+    "devices": {
+      "title": {
+        "string": "Tất cả Thiết bị"
+      },
+      "empty": {
+        "string": "Chưa có thiết bị nào được đăng ký"
+      }
+    }
   }
 }

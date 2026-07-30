@@ -1,107 +1,107 @@
 {
   "ADDRESS_BOOKS_ERRORS": {
     "list_member_invalid": {
-      "string": "One or more selected members are not contacts in this address book.",
+      "string": "Một hoặc nhiều thành viên được chọn không phải là liên hệ trong sổ địa chỉ này.",
       "context": "Inline error when a distribution list member is invalid."
     },
     "addressbook_not_found": {
-      "string": "The address book could not be found.",
+      "string": "Không tìm thấy sổ địa chỉ.",
       "context": "Error when an address book is missing."
     },
     "addressbook_duplicate": {
-      "string": "An address book with this name already exists.",
+      "string": "Đã tồn tại một sổ địa chỉ có tên này.",
       "context": "Toast when address book creation conflicts."
     },
     "contact_not_found": {
-      "string": "The contact could not be found.",
+      "string": "Không tìm thấy liên hệ.",
       "context": "Error when a contact is missing."
     },
     "contact_duplicate": {
-      "string": "A contact with this identifier already exists.",
+      "string": "Đã tồn tại một liên hệ có định danh này.",
       "context": "Toast when contact creation conflicts."
     },
     "contact_persist_failed": {
-      "string": "The contact could not be saved.",
+      "string": "Không thể lưu liên hệ.",
       "context": "Error when contact creation fails on the server."
     },
     "contact_update_failed": {
-      "string": "The contact could not be updated.",
+      "string": "Không thể cập nhật liên hệ.",
       "context": "Error when contact update fails on the server."
     },
     "operation_not_supported": {
-      "string": "This operation is not supported for this address book.",
+      "string": "Thao tác này không được hỗ trợ cho sổ địa chỉ này.",
       "context": "Error when mutating a non-local address book source."
     },
     "list_not_found": {
-      "string": "The distribution list could not be found.",
+      "string": "Không tìm thấy danh sách phân phối.",
       "context": "Error when a distribution list is missing."
     },
     "list_duplicate": {
-      "string": "A distribution list with this name already exists.",
+      "string": "Đã tồn tại một danh sách phân phối có tên này.",
       "context": "Toast when list creation conflicts."
     },
     "list_persist_failed": {
-      "string": "The distribution list could not be saved.",
+      "string": "Không thể lưu danh sách phân phối.",
       "context": "Error when list creation fails on the server."
     },
     "list_update_failed": {
-      "string": "The distribution list could not be updated.",
+      "string": "Không thể cập nhật danh sách phân phối.",
       "context": "Error when list update fails on the server."
     },
     "access_denied": {
-      "string": "You do not have permission to modify this address book.",
+      "string": "Bạn không có quyền sửa đổi sổ địa chỉ này.",
       "context": "Toast when write access is denied."
     },
     "read_only": {
-      "string": "This address book is read-only.",
+      "string": "Sổ địa chỉ này chỉ cho phép đọc.",
       "context": "Toast when mutating a read-only address book."
     },
     "export_format_unsupported": {
-      "string": "The selected export format is not supported.",
+      "string": "Định dạng xuất được chọn không được hỗ trợ.",
       "context": "Error when export format negotiation fails."
     },
     "import_no_file": {
-      "string": "No file was provided for import.",
+      "string": "Không có tệp nào được cung cấp để nhập.",
       "context": "Error when import request has no file."
     },
     "import_too_large": {
-      "string": "The import file exceeds the maximum allowed size (10 MB).",
+      "string": "Tệp nhập vượt quá kích thước tối đa cho phép (10 MB).",
       "context": "Error when import payload is too large."
     },
     "import_parse_failed": {
-      "string": "The import file could not be parsed.",
+      "string": "Không thể phân tích cú pháp tệp nhập.",
       "context": "Error when import document parsing fails."
     },
     "job_not_found": {
-      "string": "The background job could not be found.",
+      "string": "Không tìm thấy tác vụ nền.",
       "context": "Error when polling an unknown job."
     },
     "job_forbidden": {
-      "string": "You do not have access to this background job.",
+      "string": "Bạn không có quyền truy cập vào tác vụ nền này.",
       "context": "Error when job belongs to another user."
     },
     "job_not_ready": {
-      "string": "The export is not ready yet. Please wait and try again.",
+      "string": "Quá trình xuất chưa sẵn sàng. Vui lòng đợi và thử lại.",
       "context": "Error when downloading a job result too early."
     },
     "job_no_result": {
-      "string": "This job has no downloadable result.",
+      "string": "Tác vụ này không có kết quả có thể tải xuống.",
       "context": "Error when job result is unavailable."
     },
     "job_concurrent_limit": {
-      "string": "Too many background jobs are running. Please try again later.",
+      "string": "Quá nhiều tác vụ nền đang chạy. Vui lòng thử lại sau.",
       "context": "Error when concurrent job limit is reached."
     },
     "file_too_large": {
-      "string": "The photo exceeds the maximum allowed size (2 MB).",
+      "string": "Ảnh vượt quá kích thước tối đa cho phép (2 MB).",
       "context": "Inline error when contact photo upload is too large."
     },
     "file_type_not_allowed": {
-      "string": "This file type is not allowed for contact photos.",
+      "string": "Loại tệp này không được phép sử dụng cho ảnh liên hệ.",
       "context": "Inline error when contact photo type is not allowed."
     },
     "generic": {
-      "string": "The operation could not be completed. Please try again.",
+      "string": "Không thể hoàn thành thao tác. Vui lòng thử lại.",
       "context": "Fallback error message for contact API errors."
     }
   }

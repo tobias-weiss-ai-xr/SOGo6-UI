@@ -1,76 +1,76 @@
 {
   "AP_SESSIONS": {
     "title": {
-      "string": "Active Sessions"
+      "string": "活跃会话"
     },
     "description": {
-      "string": "View and manage active user sessions"
+      "string": "查看和管理活跃用户会话"
     },
     "table": {
       "uid": {
-        "string": "User"
+        "string": "用户"
       },
       "domain": {
-        "string": "Domain"
+        "string": "域"
       },
       "last_activity": {
-        "string": "Last Activity"
+        "string": "最后活动时间"
       },
       "actions": {
-        "string": "Actions"
+        "string": "操作"
       },
       "no_sessions": {
-        "string": "No active sessions found"
+        "string": "未找到活跃会话"
       },
       "loading": {
-        "string": "Loading sessions..."
+        "string": "正在加载会话..."
       }
     },
     "revoke": {
       "button": {
-        "string": "Revoke"
+        "string": "撤销"
       },
       "confirm": {
-        "string": "Are you sure you want to revoke this session?"
+        "string": "确定要撤销此会话吗？"
       },
       "confirm_multiple": {
-        "string": "Are you sure you want to revoke the selected sessions?"
+        "string": "确定要撤销所选会话吗？"
       },
       "revoke_selected": {
-        "string": "Revoke Selected"
+        "string": "撤销选中项"
       },
       "revoke_selected_one": {
-        "string": "Revoke Selected ({count})"
+        "string": "撤销选中项 ({count})"
       },
       "success": {
-        "string": "Session revoked successfully"
+        "string": "会话已成功撤销"
       },
       "success_multiple": {
-        "string": "{count} sessions revoked successfully"
+        "string": "已成功撤销 {count} 个会话"
       },
       "error": {
-        "string": "Failed to revoke session"
+        "string": "撤销会话失败"
       }
     },
     "revoke_inactive": {
       "button": {
-        "string": "Revoke Inactive"
+        "string": "撤销非活跃会话"
       },
       "confirm": {
-        "string": "Are you sure you want to revoke all inactive sessions?"
+        "string": "确定要撤销所有非活跃会话吗？"
       },
       "days": {
-        "string": "Days of inactivity"
+        "string": "非活跃天数"
       },
       "days_placeholder": {
-        "string": "e.g., 30"
+        "string": "例如：30"
       },
       "success": {
-        "string": "Inactive sessions revoked successfully"
+        "string": "已成功撤销非活跃会话"
       }
     },
     "refresh": {
-      "string": "Refresh"
+      "string": "刷新"
     }
   }
 }

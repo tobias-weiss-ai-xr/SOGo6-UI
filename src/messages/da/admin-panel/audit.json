@@ -1,16 +1,44 @@
-{ "AP_AUDIT": {
-    "title": { "string": "Audit Log" },
-    "description": { "string": "Tamper-proof log of admin and user actions. Entries are append-only and cannot be modified or deleted." },
-    "table": {
-      "timestamp": { "string": "Timestamp" },
-      "action": { "string": "Action" },
-      "actor": { "string": "Actor" },
-      "target": { "string": "Target" },
-      "detail": { "string": "Detail" },
-      "ip": { "string": "IP Address" },
-      "no_entries": { "string": "No audit log entries found." }
+{
+  "AP_AUDIT": {
+    "title": {
+      "string": "Revisionslog"
     },
-    "count_one": { "string": "entry" },
-    "count_many": { "string": "entries" },
-    "errors": { "load_failed": { "string": "Failed to load audit log" } }
-}}
+    "description": {
+      "string": "Manipulationssikker log over admin- og brugerhandlinger. Poster tilføjes kun og kan hverken ændres eller slettes."
+    },
+    "table": {
+      "timestamp": {
+        "string": "Tidsstempel"
+      },
+      "action": {
+        "string": "Handling"
+      },
+      "actor": {
+        "string": "Udfører"
+      },
+      "target": {
+        "string": "Mål"
+      },
+      "detail": {
+        "string": "Detaljer"
+      },
+      "ip": {
+        "string": "IP-adresse"
+      },
+      "no_entries": {
+        "string": "Ingen poster fundet i revisionsloggen."
+      }
+    },
+    "count_one": {
+      "string": "post"
+    },
+    "count_many": {
+      "string": "poster"
+    },
+    "errors": {
+      "load_failed": {
+        "string": "Kunne ikke indlæse revisionslog"
+      }
+    }
+  }
+}

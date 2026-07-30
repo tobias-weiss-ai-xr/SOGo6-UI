@@ -1,1 +1,40 @@
-{ "AI_DRAFT": { "title": { "string": "AI Draft Assistant" }, "description": { "string": "Reply suggestions with tone adjustment. Generates contextual draft replies." }, "input": { "title": { "string": "Original Email" }, "email": { "string": "Email Body" }, "placeholder": { "string": "Paste the email you want to reply to..." } }, "output": { "title": { "string": "Suggested Reply" }, "empty": { "string": "Enter email text and select a tone" } }, "suggest": { "string": "Suggest Reply" }, "errors": { "empty": { "string": "Enter email text" }, "fail": { "string": "Suggestion failed" } } }}
+{
+  "AI_DRAFT": {
+    "title": {
+      "string": "AI-udkastassistent"
+    },
+    "description": {
+      "string": "Svarforslag med tonetilpasning. Genererer kontekstuelle udkast til svar."
+    },
+    "input": {
+      "title": {
+        "string": "Original e-mail"
+      },
+      "email": {
+        "string": "E-mail-indhold"
+      },
+      "placeholder": {
+        "string": "Indsæt den e-mail, du ønsker at svare på..."
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Foreslået svar"
+      },
+      "empty": {
+        "string": "Indtast e-mail-tekst og vælg en tone"
+      }
+    },
+    "suggest": {
+      "string": "Foreslå svar"
+    },
+    "errors": {
+      "empty": {
+        "string": "Indtast e-mail-tekst"
+      },
+      "fail": {
+        "string": "Forslag mislykkedes"
+      }
+    }
+  }
+}

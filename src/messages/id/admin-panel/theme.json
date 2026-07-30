@@ -1,135 +1,135 @@
 {
   "AP_THEME": {
     "title": {
-      "string": "Theme Settings"
+      "string": "Pengaturan Tema"
     },
     "description": {
-      "string": "Customize the look and feel of the SOGo interface"
+      "string": "Sesuaikan tampilan dan nuansa antarmuka SOGo"
     },
     "form_title": {
-      "string": "Custom Theme"
+      "string": "Tema Kustom"
     },
     "form_description": {
-      "string": "Configure colors, logo, and custom CSS for the groupware interface"
+      "string": "Konfigurasi warna, logo, dan CSS kustom untuk antarmuka groupware"
     },
     "fields": {
       "primary": {
         "label": {
-          "string": "Primary Color"
+          "string": "Warna Primer"
         },
         "description": {
-          "string": "HSL values for the primary color (e.g. 180 25% 40%)"
+          "string": "Nilai HSL untuk warna primer (contoh: 180 25% 40%)"
         }
       },
       "primary_foreground": {
         "label": {
-          "string": "Primary Foreground"
+          "string": "Latar Depan Primer"
         },
         "description": {
-          "string": "Text color on primary backgrounds"
+          "string": "Warna teks pada latar belakang primer"
         }
       },
       "background": {
         "label": {
-          "string": "Background"
+          "string": "Latar Belakang"
         },
         "description": {
-          "string": "HSL values for the page background"
+          "string": "Nilai HSL untuk latar belakang halaman"
         }
       },
       "foreground": {
         "label": {
-          "string": "Foreground"
+          "string": "Latar Depan"
         },
         "description": {
-          "string": "Default text color"
+          "string": "Warna teks default"
         }
       },
       "sidebar_background": {
         "label": {
-          "string": "Sidebar Background"
+          "string": "Latar Belakang Sidebar"
         },
         "description": {
-          "string": "HSL values for the sidebar background"
+          "string": "Nilai HSL untuk latar belakang sidebar"
         }
       },
       "sidebar_foreground": {
         "label": {
-          "string": "Sidebar Foreground"
+          "string": "Latar Depan Sidebar"
         },
         "description": {
-          "string": "Text color in the sidebar"
+          "string": "Warna teks di sidebar"
         }
       },
       "sidebar_primary": {
         "label": {
-          "string": "Sidebar Primary"
+          "string": "Primer Sidebar"
         },
         "description": {
-          "string": "Primary accent color in the sidebar"
+          "string": "Warna aksen primer di sidebar"
         }
       },
       "sidebar_accent": {
         "label": {
-          "string": "Sidebar Accent"
+          "string": "Aksen Sidebar"
         },
         "description": {
-          "string": "Accent color in the sidebar"
+          "string": "Warna aksen di sidebar"
         }
       },
       "header_background": {
         "label": {
-          "string": "Header Background"
+          "string": "Latar Belakang Header"
         },
         "description": {
-          "string": "HSL values for the top header bar"
+          "string": "Nilai HSL untuk bilah header bagian atas"
         }
       },
       "header_foreground": {
         "label": {
-          "string": "Header Foreground"
+          "string": "Teks Header"
         },
         "description": {
-          "string": "Text color in the header"
+          "string": "Warna teks di header"
         }
       },
       "logo_url": {
         "label": {
-          "string": "Logo URL"
+          "string": "URL Logo"
         },
         "description": {
-          "string": "URL of the custom logo image (optional)"
+          "string": "URL gambar logo kustom (opsional)"
         }
       },
       "custom_css": {
         "label": {
-          "string": "Custom CSS"
+          "string": "CSS Kustom"
         },
         "description": {
-          "string": "Additional CSS rules to inject (optional)"
+          "string": "Aturan CSS tambahan untuk disisipkan (opsional)"
         }
       }
     },
     "save": {
-      "string": "Save Changes"
+      "string": "Simpan Perubahan"
     },
     "saving": {
-      "string": "Saving…"
+      "string": "Menyimpan…"
     },
     "saved": {
-      "string": "Theme settings saved successfully"
+      "string": "Pengaturan tema berhasil disimpan"
     },
     "save_error": {
-      "string": "Failed to save: {message}"
+      "string": "Gagal menyimpan: {message}"
     },
     "unsaved_changes": {
-      "string": "You have unsaved changes"
+      "string": "Anda memiliki perubahan yang belum disimpan"
     },
     "load_error": {
-      "string": "Failed to load theme settings"
+      "string": "Gagal memuat pengaturan tema"
     },
     "retry": {
-      "string": "Retry"
+      "string": "Coba Lagi"
     }
   }
 }

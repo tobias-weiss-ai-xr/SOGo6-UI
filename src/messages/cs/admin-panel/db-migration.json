@@ -1,7 +1,35 @@
-{ "AP_DBMIG": {
-    "title": { "string": "Database Migration" },
-    "description": { "string": "Track schema versions and migration history. Run migrations from the admin panel." },
-    "current_version": { "string": "Current Schema Version" },
-    "run": { "button": { "string": "Run Migration" }, "running": { "string": "Running..." }, "success": { "string": "Migration applied" }, "error": { "string": "Migration failed" } },
-    "history": { "title": { "string": "Migration History" }, "empty": { "string": "No migrations recorded." } }
-}}
+{
+  "AP_DBMIG": {
+    "title": {
+      "string": "Migrace databáze"
+    },
+    "description": {
+      "string": "Sledujte verze schématu a historii migrací. Spouštějte migrace z administrátorského panelu."
+    },
+    "current_version": {
+      "string": "Aktuální verze schématu"
+    },
+    "run": {
+      "button": {
+        "string": "Spustit migraci"
+      },
+      "running": {
+        "string": "Probíhá..."
+      },
+      "success": {
+        "string": "Migrace aplikována"
+      },
+      "error": {
+        "string": "Migrace selhala"
+      }
+    },
+    "history": {
+      "title": {
+        "string": "Historie migrací"
+      },
+      "empty": {
+        "string": "Žádné migrace nezaznamenány."
+      }
+    }
+  }
+}

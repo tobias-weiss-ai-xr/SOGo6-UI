@@ -1,22 +1,52 @@
-{ "AP_DEBUG": {
-    "title": { "string": "Mailbox Debug" },
-    "description": { "string": "Diagnostic tool for troubleshooting mail delivery issues. View raw email source or parsed headers." },
+{
+  "AP_DEBUG": {
+    "title": {
+      "string": "Отладка почтового ящика"
+    },
+    "description": {
+      "string": "Диагностический инструмент для устранения проблем с доставкой писем. Просмотр исходного кода письма или разобранных заголовков."
+    },
     "query": {
-      "title": { "string": "Debug Query" },
-      "button": { "string": "Inspect" }
+      "title": {
+        "string": "Запрос отладки"
+      },
+      "button": {
+        "string": "Проверить"
+      }
     },
     "labels": {
-      "user": { "string": "User" },
-      "folder": { "string": "IMAP Folder" },
-      "mail_uid": { "string": "Mail UID" },
-      "select_user": { "string": "Select user..." }
+      "user": {
+        "string": "Пользователь"
+      },
+      "folder": {
+        "string": "Папка IMAP"
+      },
+      "mail_uid": {
+        "string": "UID письма"
+      },
+      "select_user": {
+        "string": "Выберите пользователя..."
+      }
     },
     "result": {
-      "raw": { "title": { "string": "Raw Email Source" } },
-      "headers": { "title": { "string": "Parsed Headers" } }
+      "raw": {
+        "title": {
+          "string": "Исходный код письма"
+        }
+      },
+      "headers": {
+        "title": {
+          "string": "Разобранные заголовки"
+        }
+      }
     },
     "errors": {
-      "fields_required": { "string": "User, folder, and mail UID are required" },
-      "fetch_failed": { "string": "Failed to fetch debug data" }
+      "fields_required": {
+        "string": "Требуется указать пользователя, папку и UID письма"
+      },
+      "fetch_failed": {
+        "string": "Не удалось получить данные отладки"
+      }
     }
-}}
+  }
+}

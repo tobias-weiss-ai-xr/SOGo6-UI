@@ -1,7 +1,35 @@
-{ "AP_DBMIG": {
-    "title": { "string": "Database Migration" },
-    "description": { "string": "Track schema versions and migration history. Run migrations from the admin panel." },
-    "current_version": { "string": "Current Schema Version" },
-    "run": { "button": { "string": "Run Migration" }, "running": { "string": "Running..." }, "success": { "string": "Migration applied" }, "error": { "string": "Migration failed" } },
-    "history": { "title": { "string": "Migration History" }, "empty": { "string": "No migrations recorded." } }
-}}
+{
+  "AP_DBMIG": {
+    "title": {
+      "string": "ترحيل قاعدة البيانات"
+    },
+    "description": {
+      "string": "تتبع إصدارات المخطط وسجل الترحيلات. تنفيذ الترحيلات من لوحة الإدارة."
+    },
+    "current_version": {
+      "string": "إصدار المخطط الحالي"
+    },
+    "run": {
+      "button": {
+        "string": "تنفيذ الترحيل"
+      },
+      "running": {
+        "string": "جاري التنفيذ..."
+      },
+      "success": {
+        "string": "تم تطبيق الترحيل"
+      },
+      "error": {
+        "string": "فشل الترحيل"
+      }
+    },
+    "history": {
+      "title": {
+        "string": "سجل الترحيلات"
+      },
+      "empty": {
+        "string": "لا توجد ترحيلات مسجلة."
+      }
+    }
+  }
+}

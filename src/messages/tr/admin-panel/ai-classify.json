@@ -1,1 +1,46 @@
-{ "AI_CLASSIFY": { "title": { "string": "Smart Email Classification" }, "description": { "string": "Auto-label emails: newsletter, invoice, notification, social, personal." }, "input": { "title": { "string": "Input Email" }, "subject": { "string": "Subject" }, "sender": { "string": "Sender" }, "body": { "string": "Body" }, "placeholder": { "string": "Paste email content..." } }, "output": { "title": { "string": "Classification Results" }, "empty": { "string": "Enter text and click Classify" } }, "classify": { "string": "Classify" }, "errors": { "empty": { "string": "Enter email text" }, "fail": { "string": "Classification failed" } } }}
+{
+  "AI_CLASSIFY": {
+    "title": {
+      "string": "Akıllı E-posta Sınıflandırma"
+    },
+    "description": {
+      "string": "E-postaları otomatik etiketle: bülten, fatura, bildirim, sosyal, kişisel."
+    },
+    "input": {
+      "title": {
+        "string": "Giriş E-postası"
+      },
+      "subject": {
+        "string": "Konu"
+      },
+      "sender": {
+        "string": "Gönderen"
+      },
+      "body": {
+        "string": "İçerik"
+      },
+      "placeholder": {
+        "string": "E-posta içeriğini yapıştırın..."
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Sınıflandırma Sonuçları"
+      },
+      "empty": {
+        "string": "Metin girin ve Sınıflandır'a tıklayın"
+      }
+    },
+    "classify": {
+      "string": "Sınıflandır"
+    },
+    "errors": {
+      "empty": {
+        "string": "E-posta metni girin"
+      },
+      "fail": {
+        "string": "Sınıflandırma başarısız"
+      }
+    }
+  }
+}

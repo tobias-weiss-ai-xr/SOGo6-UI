@@ -1,1 +1,46 @@
-{ "AI_CLASSIFY": { "title": { "string": "Smart Email Classification" }, "description": { "string": "Auto-label emails: newsletter, invoice, notification, social, personal." }, "input": { "title": { "string": "Input Email" }, "subject": { "string": "Subject" }, "sender": { "string": "Sender" }, "body": { "string": "Body" }, "placeholder": { "string": "Paste email content..." } }, "output": { "title": { "string": "Classification Results" }, "empty": { "string": "Enter text and click Classify" } }, "classify": { "string": "Classify" }, "errors": { "empty": { "string": "Enter email text" }, "fail": { "string": "Classification failed" } } }}
+{
+  "AI_CLASSIFY": {
+    "title": {
+      "string": "Έξυπνη Ταξινόμηση Email"
+    },
+    "description": {
+      "string": "Αυτόματη ετικέτα email: ενημερωτικό δελτίο, τιμολόγιο, ειδοποίηση, κοινωνικά, προσωπικό."
+    },
+    "input": {
+      "title": {
+        "string": "Εισαγωγή Email"
+      },
+      "subject": {
+        "string": "Θέμα"
+      },
+      "sender": {
+        "string": "Αποστολέας"
+      },
+      "body": {
+        "string": "Κείμενο"
+      },
+      "placeholder": {
+        "string": "Επικολλήστε το περιεχόμενο του email..."
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Αποτελέσματα Ταξινόμησης"
+      },
+      "empty": {
+        "string": "Εισαγάγετε κείμενο και κάντε κλικ στο Ταξινόμηση"
+      }
+    },
+    "classify": {
+      "string": "Ταξινόμηση"
+    },
+    "errors": {
+      "empty": {
+        "string": "Εισαγάγετε κείμενο email"
+      },
+      "fail": {
+        "string": "Η ταξινόμηση απέτυχε"
+      }
+    }
+  }
+}

@@ -1,7 +1,34 @@
-{ "AP_HEALTH": {
-    "title": { "string": "System Health" },
-    "description": { "string": "Real-time status of all services in the SOGo stack." },
-    "status": { "all_ok": { "string": "All Systems Operational" }, "degraded": { "string": "Degraded" } },
-    "overview": { "uptime": { "string": "Uptime" }, "version": { "string": "Version" }, "services": { "string": "Services Healthy" } },
-    "errors": { "load_failed": { "string": "Failed to load health data" } }
-}}
+{
+  "AP_HEALTH": {
+    "title": {
+      "string": "システムの状態"
+    },
+    "description": {
+      "string": "SOGo スタック内のすべてのサービスのリアルタイムステータス"
+    },
+    "status": {
+      "all_ok": {
+        "string": "全システム正常稼働中"
+      },
+      "degraded": {
+        "string": "性能低下"
+      }
+    },
+    "overview": {
+      "uptime": {
+        "string": "稼働時間"
+      },
+      "version": {
+        "string": "バージョン"
+      },
+      "services": {
+        "string": "サービスの状態"
+      }
+    },
+    "errors": {
+      "load_failed": {
+        "string": "ヘルスデータの読み込みに失敗しました"
+      }
+    }
+  }
+}

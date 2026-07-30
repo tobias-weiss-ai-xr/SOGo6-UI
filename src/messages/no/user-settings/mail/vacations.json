@@ -1,133 +1,133 @@
 {
-    "US_MAIL_VACATIONS": {
-        "title": {
-            "string": "Vacation Settings",
-            "context": "Title for the vacation settings page"
+  "US_MAIL_VACATIONS": {
+    "title": {
+      "string": "Feriemeldingsinnstillinger",
+      "context": "Title for the vacation settings page"
+    },
+    "page": {
+      "description": {
+        "string": "Konfigurer din automatiske fraværsmelding og når den skal være aktiv."
+      }
+    },
+    "errors_api": {
+      "load_failed": {
+        "string": "Kunne ikke laste feriemeldingsinnstillinger. Prøv igjen senere."
+      },
+      "feature_disabled": {
+        "string": "Automatisk fraværsmelding er deaktivert av administratoren din."
+      }
+    },
+    "errors": {
+      "validation": {
+        "message_required": {
+          "string": "Automatisk melding er påkrevd når feriemelding er aktivert."
         },
-        "page": {
-            "description": {
-                "string": "Configure your out-of-office auto reply message and when it should be active."
-            }
+        "dates_required": {
+          "string": "Start- og sluttdato må oppgis når datobegrensninger er aktivert."
         },
-        "errors_api": {
-            "load_failed": {
-                "string": "Could not load vacation settings. Please try again later."
-            },
-            "feature_disabled": {
-                "string": "Vacation auto reply has been disabled by your administrator."
-            }
+        "date_order": {
+          "string": "Sluttdato må være på eller etter startdato."
         },
-        "errors": {
-            "validation": {
-                "message_required": {
-                    "string": "Auto reply message is required when vacation is enabled."
-                },
-                "dates_required": {
-                    "string": "Start and end dates are required when date constraints are enabled."
-                },
-                "date_order": {
-                    "string": "End date must be on or after the start date."
-                },
-                "time_invalid": {
-                    "string": "Please enter a valid time in HH:MM format."
-                },
-                "weekday_required": {
-                    "string": "Select at least one weekday when weekday constraints are enabled."
-                },
-                "response_interval_invalid": {
-                    "string": "Response interval must be zero or a positive number."
-                },
-                "response_interval_zero": {
-                    "string": "A zero-day response interval is not allowed on this domain."
-                }
-            }
+        "time_invalid": {
+          "string": "Angi en gyldig tid i TT:MM-format."
         },
-        "auto_reply": {
-            "enable": {
-                "string": "Enable vacation auto reply"
-            },
-            "subject": {
-                "label": {
-                    "string": "Auto reply subject"
-                },
-                "description": {
-                    "string": "Leave blank to use default subject. You can write {subject} to insert the original subject."
-                }
-            },
-            "message": {
-                "string": "Auto reply message"
-            },
-            "constraints": {
-                "title": {
-                    "string": "Activation constraints"
-                },
-                "description": {
-                    "string": "Customize day and hour ranges independently and optionally combine them with specific weekdays to tailor your vacation filters to your preferences."
-                },
-                "enable": {
-                    "days": {
-                        "string": "Enable auto reply on these days"
-                    },
-                    "hours": {
-                        "string": "Enable auto reply between these hours"
-                    },
-                    "range": {
-                        "string": "Enable auto reply between these days"
-                    }
-                },
-                "time": {
-                    "start": {
-                        "string": "Start time"
-                    },
-                    "end": {
-                        "string": "End time"
-                    }
-                },
-                "weekdays": {
-                    "monday": {
-                        "string": "Monday"
-                    },
-                    "tuesday": {
-                        "string": "Tuesday"
-                    },
-                    "wednesday": {
-                        "string": "Wednesday"
-                    },
-                    "thursday": {
-                        "string": "Thursday"
-                    },
-                    "friday": {
-                        "string": "Friday"
-                    },
-                    "saturday": {
-                        "string": "Saturday"
-                    },
-                    "sunday": {
-                        "string": "Sunday"
-                    }
-                }
-            },
-            "response": {
-                "interval_days": {
-                    "label": {
-                        "string": "Minimum days between auto replies"
-                    },
-                    "placeholder": {
-                        "string": "Leave empty for default behavior"
-                    },
-                    "description": {
-                        "string": "Prevents sending duplicate vacation replies within this period (RFC 5230 :days)."
-                    }
-                },
-                "send_always": {
-                    "label": {
-                        "string": "Always send vacation message response"
-                    },
-                    "description": {
-                        "string": "The vacation message is sent prior to applying your filters."
-                    }
-                }
-            }
+        "weekday_required": {
+          "string": "Velg minst én ukedag når ukedagsbegrensninger er aktivert."
+        },
+        "response_interval_invalid": {
+          "string": "Svarintervall må være null eller et positivt tall."
+        },
+        "response_interval_zero": {
+          "string": "Et svarintervall på null dager er ikke tillatt på dette domenet."
         }
+      }
+    },
+    "auto_reply": {
+      "enable": {
+        "string": "Aktiver automatisk fraværsmelding"
+      },
+      "subject": {
+        "label": {
+          "string": "Emne for automatisk svar"
+        },
+        "description": {
+          "string": "La feltet stå tomt for å bruke standardemne. Du kan skrive {subject} for å sette inn det opprinnelige emnet."
+        }
+      },
+      "message": {
+        "string": "Automatisk svarmelding"
+      },
+      "constraints": {
+        "title": {
+          "string": "Aktiveringsbegrensninger"
+        },
+        "description": {
+          "string": "Tilpass dager og tidsrom uavhengig av hverandre, og kombiner dem eventuelt med bestemte ukedager for å tilpasse feriefiltrene dine etter dine preferanser."
+        },
+        "enable": {
+          "days": {
+            "string": "Aktiver automatisk svar på disse dagene"
+          },
+          "hours": {
+            "string": "Aktiver automatisk svar mellom disse klokkeslettene"
+          },
+          "range": {
+            "string": "Aktiver automatisk svar mellom disse dagene"
+          }
+        },
+        "time": {
+          "start": {
+            "string": "Starttid"
+          },
+          "end": {
+            "string": "Sluttid"
+          }
+        },
+        "weekdays": {
+          "monday": {
+            "string": "Mandag"
+          },
+          "tuesday": {
+            "string": "Tirsdag"
+          },
+          "wednesday": {
+            "string": "Onsdag"
+          },
+          "thursday": {
+            "string": "Torsdag"
+          },
+          "friday": {
+            "string": "Fredag"
+          },
+          "saturday": {
+            "string": "Lørdag"
+          },
+          "sunday": {
+            "string": "Søndag"
+          }
+        }
+      },
+      "response": {
+        "interval_days": {
+          "label": {
+            "string": "Minimum antall dager mellom automatiske svar"
+          },
+          "placeholder": {
+            "string": "La feltet stå tomt for standard oppførsel"
+          },
+          "description": {
+            "string": "Forhindrer sending av dupliserte feriesvar innenfor denne perioden (RFC 5230 :dager)."
+          }
+        },
+        "send_always": {
+          "label": {
+            "string": "Send alltid feriemelding som svar"
+          },
+          "description": {
+            "string": "Feriemeldingen sendes før filterne dine blir brukt."
+          }
+        }
+      }
     }
+  }
 }

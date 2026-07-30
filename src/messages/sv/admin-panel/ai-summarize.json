@@ -1,1 +1,46 @@
-{ "AI_SUMMARIZE": { "title": { "string": "Email Summarization" }, "description": { "string": "TL;DR for long email threads. Extractive summarization returns the most important sentences." }, "input": { "title": { "string": "Input Email" }, "text": { "string": "Email Text" }, "placeholder": { "string": "Paste the email body here..." }, "sentences": { "string": "Max Sentences" } }, "output": { "title": { "string": "Summary" }, "empty": { "string": "Enter text and click Summarize" } }, "summarize": { "string": "Summarize" }, "loading": { "string": "Summarizing..." }, "errors": { "empty": { "string": "Enter text to summarize" }, "fail": { "string": "Summarization failed" } } }}
+{
+  "AI_SUMMARIZE": {
+    "title": {
+      "string": "E-postsammanfattning"
+    },
+    "description": {
+      "string": "TL;DR för långa e-posttrådar. Extraherande sammanfattning returnerar de viktigaste meningarna."
+    },
+    "input": {
+      "title": {
+        "string": "Indata-e-post"
+      },
+      "text": {
+        "string": "E-posttext"
+      },
+      "placeholder": {
+        "string": "Klistra in e-postinnehållet här..."
+      },
+      "sentences": {
+        "string": "Max antal meningar"
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Sammanfattning"
+      },
+      "empty": {
+        "string": "Ange text och klicka på Sammanfatta"
+      }
+    },
+    "summarize": {
+      "string": "Sammanfatta"
+    },
+    "loading": {
+      "string": "Sammanfattar..."
+    },
+    "errors": {
+      "empty": {
+        "string": "Ange text att sammanfatta"
+      },
+      "fail": {
+        "string": "Sammanfattningen misslyckades"
+      }
+    }
+  }
+}

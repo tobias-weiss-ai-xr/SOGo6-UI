@@ -1,22 +1,52 @@
-{ "AP_DEBUG": {
-    "title": { "string": "Mailbox Debug" },
-    "description": { "string": "Diagnostic tool for troubleshooting mail delivery issues. View raw email source or parsed headers." },
+{
+  "AP_DEBUG": {
+    "title": {
+      "string": "Postvak Debuggen"
+    },
+    "description": {
+      "string": "Diagnostisch hulpmiddel voor het oplossen van problemen met e-mailbezorging. Bekijk de ruwe e-mailbron of geparste headers."
+    },
     "query": {
-      "title": { "string": "Debug Query" },
-      "button": { "string": "Inspect" }
+      "title": {
+        "string": "Debug-opdracht"
+      },
+      "button": {
+        "string": "Inspecteren"
+      }
     },
     "labels": {
-      "user": { "string": "User" },
-      "folder": { "string": "IMAP Folder" },
-      "mail_uid": { "string": "Mail UID" },
-      "select_user": { "string": "Select user..." }
+      "user": {
+        "string": "Gebruiker"
+      },
+      "folder": {
+        "string": "IMAP-map"
+      },
+      "mail_uid": {
+        "string": "E-mail-UID"
+      },
+      "select_user": {
+        "string": "Selecteer gebruiker..."
+      }
     },
     "result": {
-      "raw": { "title": { "string": "Raw Email Source" } },
-      "headers": { "title": { "string": "Parsed Headers" } }
+      "raw": {
+        "title": {
+          "string": "Ruwe e-mailbron"
+        }
+      },
+      "headers": {
+        "title": {
+          "string": "Geparste headers"
+        }
+      }
     },
     "errors": {
-      "fields_required": { "string": "User, folder, and mail UID are required" },
-      "fetch_failed": { "string": "Failed to fetch debug data" }
+      "fields_required": {
+        "string": "Gebruiker, map en e-mail-UID zijn verplicht"
+      },
+      "fetch_failed": {
+        "string": "Ophalen van debuggegevens mislukt"
+      }
     }
-}}
+  }
+}

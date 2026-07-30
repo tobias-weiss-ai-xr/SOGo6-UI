@@ -1,16 +1,44 @@
-{ "AP_AUDIT": {
-    "title": { "string": "Audit Log" },
-    "description": { "string": "Tamper-proof log of admin and user actions. Entries are append-only and cannot be modified or deleted." },
-    "table": {
-      "timestamp": { "string": "Timestamp" },
-      "action": { "string": "Action" },
-      "actor": { "string": "Actor" },
-      "target": { "string": "Target" },
-      "detail": { "string": "Detail" },
-      "ip": { "string": "IP Address" },
-      "no_entries": { "string": "No audit log entries found." }
+{
+  "AP_AUDIT": {
+    "title": {
+      "string": "บันทึกการตรวจสอบ"
     },
-    "count_one": { "string": "entry" },
-    "count_many": { "string": "entries" },
-    "errors": { "load_failed": { "string": "Failed to load audit log" } }
-}}
+    "description": {
+      "string": "บันทึกการกระทำของแอดมินและผู้ใช้ที่ป้องกันการแก้ไข ข้อมูลจะถูกเพิ่มเติมเท่านั้น และไม่สามารถแก้ไขหรือลบได้"
+    },
+    "table": {
+      "timestamp": {
+        "string": "เวลา"
+      },
+      "action": {
+        "string": "การกระทำ"
+      },
+      "actor": {
+        "string": "ผู้กระทำ"
+      },
+      "target": {
+        "string": "เป้าหมาย"
+      },
+      "detail": {
+        "string": "รายละเอียด"
+      },
+      "ip": {
+        "string": "ที่อยู่ IP"
+      },
+      "no_entries": {
+        "string": "ไม่พบบันทึกการตรวจสอบ"
+      }
+    },
+    "count_one": {
+      "string": "รายการ"
+    },
+    "count_many": {
+      "string": "รายการ"
+    },
+    "errors": {
+      "load_failed": {
+        "string": "โหลดบันทึกการตรวจสอบล้มเหลว"
+      }
+    }
+  }
+}

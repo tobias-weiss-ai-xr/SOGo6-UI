@@ -1,22 +1,52 @@
-{ "AP_DEBUG": {
-    "title": { "string": "Mailbox Debug" },
-    "description": { "string": "Diagnostic tool for troubleshooting mail delivery issues. View raw email source or parsed headers." },
+{
+  "AP_DEBUG": {
+    "title": {
+      "string": "Posta Kutusu Hata Ayıklama"
+    },
+    "description": {
+      "string": "Posta teslim sorunlarını gidermek için tanı aracı. Ham e-posta kaynağını veya ayrıştırılmış başlıkları görüntüleyin."
+    },
     "query": {
-      "title": { "string": "Debug Query" },
-      "button": { "string": "Inspect" }
+      "title": {
+        "string": "Hata Ayıklama Sorgusu"
+      },
+      "button": {
+        "string": "İncele"
+      }
     },
     "labels": {
-      "user": { "string": "User" },
-      "folder": { "string": "IMAP Folder" },
-      "mail_uid": { "string": "Mail UID" },
-      "select_user": { "string": "Select user..." }
+      "user": {
+        "string": "Kullanıcı"
+      },
+      "folder": {
+        "string": "IMAP Klasörü"
+      },
+      "mail_uid": {
+        "string": "Posta UID"
+      },
+      "select_user": {
+        "string": "Kullanıcı seçin..."
+      }
     },
     "result": {
-      "raw": { "title": { "string": "Raw Email Source" } },
-      "headers": { "title": { "string": "Parsed Headers" } }
+      "raw": {
+        "title": {
+          "string": "Ham E-posta Kaynağı"
+        }
+      },
+      "headers": {
+        "title": {
+          "string": "Ayrıştırılmış Başlıklar"
+        }
+      }
     },
     "errors": {
-      "fields_required": { "string": "User, folder, and mail UID are required" },
-      "fetch_failed": { "string": "Failed to fetch debug data" }
+      "fields_required": {
+        "string": "Kullanıcı, klasör ve posta UID gerekli"
+      },
+      "fetch_failed": {
+        "string": "Hata ayıklama verileri getirilemedi"
+      }
     }
-}}
+  }
+}

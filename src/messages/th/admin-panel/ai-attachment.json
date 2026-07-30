@@ -1,1 +1,40 @@
-{ "AI_ATTACH": { "title": { "string": "Smart Attachment Actions" }, "description": { "string": "Auto-detect document type and suggest save, forward, or archive actions." }, "input": { "title": { "string": "Attachment" }, "filename": { "string": "Filename" } }, "output": { "title": { "string": "Analysis" }, "empty": { "string": "Enter a filename" }, "preview": { "string": "Can Preview" } }, "classify": { "string": "Classify" }, "errors": { "empty": { "string": "Enter a filename" }, "fail": { "string": "Classification failed" } } }}
+{
+  "AI_ATTACH": {
+    "title": {
+      "string": "การดำเนินการแนบอัจฉริยะ"
+    },
+    "description": {
+      "string": "ตรวจจับประเภทเอกสารอัตโนมัติ และแนะนำการบันทึก ส่งต่อ หรือเก็บถาวร"
+    },
+    "input": {
+      "title": {
+        "string": "ไฟล์แนบ"
+      },
+      "filename": {
+        "string": "ชื่อไฟล์"
+      }
+    },
+    "output": {
+      "title": {
+        "string": "การวิเคราะห์"
+      },
+      "empty": {
+        "string": "กรุณากรอกชื่อไฟล์"
+      },
+      "preview": {
+        "string": "สามารถดูตัวอย่างได้"
+      }
+    },
+    "classify": {
+      "string": "จัดประเภท"
+    },
+    "errors": {
+      "empty": {
+        "string": "กรุณากรอกชื่อไฟล์"
+      },
+      "fail": {
+        "string": "การจัดประเภทล้มเหลว"
+      }
+    }
+  }
+}

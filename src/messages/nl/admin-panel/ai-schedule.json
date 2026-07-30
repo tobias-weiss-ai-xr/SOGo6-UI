@@ -1,1 +1,43 @@
-{ "AI_SCHEDULE": { "title": { "string": "Smart Calendar Scheduling" }, "description": { "string": "AI-suggested meeting times based on attendee availability patterns and preferences." }, "input": { "title": { "string": "Meeting Setup" }, "attendees": { "string": "Attendees" }, "from": { "string": "From" }, "to": { "string": "To" }, "duration": { "string": "Duration (min)" } }, "output": { "title": { "string": "Suggested Times" } }, "suggest": { "string": "Suggest Times" }, "errors": { "fields": { "string": "Attendees, from, and to dates are required" }, "fail": { "string": "Suggestion failed" } } }}
+{
+  "AI_SCHEDULE": {
+    "title": {
+      "string": "Slimme kalenderplanning"
+    },
+    "description": {
+      "string": "AI-voorgestelde vergadertijden op basis van beschikbaarheidspatronen en voorkeuren van deelnemers."
+    },
+    "input": {
+      "title": {
+        "string": "Vergadering instellen"
+      },
+      "attendees": {
+        "string": "Deelnemers"
+      },
+      "from": {
+        "string": "Van"
+      },
+      "to": {
+        "string": "Tot"
+      },
+      "duration": {
+        "string": "Duur (min)"
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Voorgestelde tijden"
+      }
+    },
+    "suggest": {
+      "string": "Tijden voorstellen"
+    },
+    "errors": {
+      "fields": {
+        "string": "Deelnemers, start- en einddatum zijn verplicht"
+      },
+      "fail": {
+        "string": "Voorstellen mislukt"
+      }
+    }
+  }
+}

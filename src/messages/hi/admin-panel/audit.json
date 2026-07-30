@@ -1,16 +1,44 @@
-{ "AP_AUDIT": {
-    "title": { "string": "Audit Log" },
-    "description": { "string": "Tamper-proof log of admin and user actions. Entries are append-only and cannot be modified or deleted." },
-    "table": {
-      "timestamp": { "string": "Timestamp" },
-      "action": { "string": "Action" },
-      "actor": { "string": "Actor" },
-      "target": { "string": "Target" },
-      "detail": { "string": "Detail" },
-      "ip": { "string": "IP Address" },
-      "no_entries": { "string": "No audit log entries found." }
+{
+  "AP_AUDIT": {
+    "title": {
+      "string": "ऑडिट लॉग"
     },
-    "count_one": { "string": "entry" },
-    "count_many": { "string": "entries" },
-    "errors": { "load_failed": { "string": "Failed to load audit log" } }
-}}
+    "description": {
+      "string": "एडमिन और उपयोगकर्ता क्रियाओं का छेड़छाड़-रोधी लॉग। प्रविष्टियाँ केवल जोड़ी जा सकती हैं, संशोधित या हटाई नहीं जा सकती।"
+    },
+    "table": {
+      "timestamp": {
+        "string": "टाइमस्टैम्प"
+      },
+      "action": {
+        "string": "क्रिया"
+      },
+      "actor": {
+        "string": "कर्ता"
+      },
+      "target": {
+        "string": "लक्ष्य"
+      },
+      "detail": {
+        "string": "विवरण"
+      },
+      "ip": {
+        "string": "आईपी पता"
+      },
+      "no_entries": {
+        "string": "कोई ऑडिट लॉग प्रविष्टियाँ नहीं मिलीं।"
+      }
+    },
+    "count_one": {
+      "string": "प्रविष्टि"
+    },
+    "count_many": {
+      "string": "प्रविष्टियाँ"
+    },
+    "errors": {
+      "load_failed": {
+        "string": "ऑडिट लॉग लोड करने में विफल"
+      }
+    }
+  }
+}

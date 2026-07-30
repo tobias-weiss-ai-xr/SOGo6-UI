@@ -1,1 +1,40 @@
-{ "AP_FREEBUSY": { "title": { "string": "Free/Busy Lookup" }, "description": { "string": "Visual attendee schedule overlay. Check availability when creating events." }, "form": { "title": { "string": "Check Availability" }, "participants": { "string": "Participants" }, "start": { "string": "Start" }, "end": { "string": "End" }, "lookup": { "string": "Look Up" } }, "results": { "title": { "string": "Busy Slots" } }, "errors": { "fields": { "string": "At least one participant is required" } }, "error": { "string": "Lookup failed" } }}
+{
+  "AP_FREEBUSY": {
+    "title": {
+      "string": "Müsait/Meşgul Durumu Sorgula"
+    },
+    "description": {
+      "string": "Katılımcı programlarının görsel olarak üst üste bindirilmesi. Etkinlik oluştururken müsaitliği kontrol edin."
+    },
+    "form": {
+      "title": {
+        "string": "Müsaitliği Kontrol Et"
+      },
+      "participants": {
+        "string": "Katılımcılar"
+      },
+      "start": {
+        "string": "Başlangıç"
+      },
+      "end": {
+        "string": "Bitiş"
+      },
+      "lookup": {
+        "string": "Sorgula"
+      }
+    },
+    "results": {
+      "title": {
+        "string": "Meşgul Zaman Aralıkları"
+      }
+    },
+    "errors": {
+      "fields": {
+        "string": "En az bir katılımcı gerekli"
+      }
+    },
+    "error": {
+      "string": "Sorgulama başarısız"
+    }
+  }
+}

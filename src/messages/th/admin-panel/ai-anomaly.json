@@ -1,1 +1,49 @@
-{ "AI_ANOMALY": { "title": { "string": "Anomaly Detection" }, "description": { "string": "Flag unusual sending patterns: bulk email, odd hours, new recipients." }, "input": { "title": { "string": "Sending Pattern" }, "recipients": { "string": "Recipient Count" }, "hour": { "string": "Hour (0-23)" }, "new_ratio": { "string": "New Recipient Ratio" } }, "output": { "title": { "string": "Analysis Result" }, "empty": { "string": "Enter values and click Analyze" }, "anomaly": { "string": "Anomaly Detected!" }, "normal": { "string": "Pattern Normal" }, "score": { "string": "Risk Score" } }, "analyze": { "string": "Analyze" }, "errors": { "fail": { "string": "Analysis failed" } } }}
+{
+  "AI_ANOMALY": {
+    "title": {
+      "string": "การตรวจจับความผิดปกติ"
+    },
+    "description": {
+      "string": "แจ้งเตือนรูปแบบการส่งที่ผิดปกติ: การส่งอีเมลจำนวนมาก, ช่วงเวลาผิดปกติ, ผู้รับใหม่"
+    },
+    "input": {
+      "title": {
+        "string": "รูปแบบการส่ง"
+      },
+      "recipients": {
+        "string": "จำนวนผู้รับ"
+      },
+      "hour": {
+        "string": "ชั่วโมง (0-23)"
+      },
+      "new_ratio": {
+        "string": "อัตราส่วนผู้รับใหม่"
+      }
+    },
+    "output": {
+      "title": {
+        "string": "ผลการวิเคราะห์"
+      },
+      "empty": {
+        "string": "กรอกค่าแล้วคลิกวิเคราะห์"
+      },
+      "anomaly": {
+        "string": "ตรวจพบความผิดปกติ!"
+      },
+      "normal": {
+        "string": "รูปแบบปกติ"
+      },
+      "score": {
+        "string": "คะแนนความเสี่ยง"
+      }
+    },
+    "analyze": {
+      "string": "วิเคราะห์"
+    },
+    "errors": {
+      "fail": {
+        "string": "การวิเคราะห์ล้มเหลว"
+      }
+    }
+  }
+}

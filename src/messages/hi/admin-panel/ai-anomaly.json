@@ -1,1 +1,49 @@
-{ "AI_ANOMALY": { "title": { "string": "Anomaly Detection" }, "description": { "string": "Flag unusual sending patterns: bulk email, odd hours, new recipients." }, "input": { "title": { "string": "Sending Pattern" }, "recipients": { "string": "Recipient Count" }, "hour": { "string": "Hour (0-23)" }, "new_ratio": { "string": "New Recipient Ratio" } }, "output": { "title": { "string": "Analysis Result" }, "empty": { "string": "Enter values and click Analyze" }, "anomaly": { "string": "Anomaly Detected!" }, "normal": { "string": "Pattern Normal" }, "score": { "string": "Risk Score" } }, "analyze": { "string": "Analyze" }, "errors": { "fail": { "string": "Analysis failed" } } }}
+{
+  "AI_ANOMALY": {
+    "title": {
+      "string": "असामान्यता का पता लगाना"
+    },
+    "description": {
+      "string": "असामान्य भेजने के पैटर्न को चिह्नित करें: थोक ईमेल, अजीब घंटे, नए प्राप्तकर्ता।"
+    },
+    "input": {
+      "title": {
+        "string": "भेजने का पैटर्न"
+      },
+      "recipients": {
+        "string": "प्राप्तकर्ताओं की संख्या"
+      },
+      "hour": {
+        "string": "घंटा (0-23)"
+      },
+      "new_ratio": {
+        "string": "नए प्राप्तकर्ताओं का अनुपात"
+      }
+    },
+    "output": {
+      "title": {
+        "string": "विश्लेषण परिणाम"
+      },
+      "empty": {
+        "string": "मूल्य दर्ज करें और विश्लेषण करें पर क्लिक करें"
+      },
+      "anomaly": {
+        "string": "असामान्यता का पता चला!"
+      },
+      "normal": {
+        "string": "पैटर्न सामान्य है"
+      },
+      "score": {
+        "string": "जोखिम स्कोर"
+      }
+    },
+    "analyze": {
+      "string": "विश्लेषण करें"
+    },
+    "errors": {
+      "fail": {
+        "string": "विश्लेषण विफल"
+      }
+    }
+  }
+}

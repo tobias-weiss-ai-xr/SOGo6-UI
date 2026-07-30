@@ -1,135 +1,135 @@
 {
   "AP_THEME": {
     "title": {
-      "string": "Theme Settings"
+      "string": "Ustawienia motywu"
     },
     "description": {
-      "string": "Customize the look and feel of the SOGo interface"
+      "string": "Dostosuj wygląd i odczucia interfejsu SOGo"
     },
     "form_title": {
-      "string": "Custom Theme"
+      "string": "Niestandardowy motyw"
     },
     "form_description": {
-      "string": "Configure colors, logo, and custom CSS for the groupware interface"
+      "string": "Konfiguruj kolory, logo i niestandardowy CSS dla interfejsu groupware"
     },
     "fields": {
       "primary": {
         "label": {
-          "string": "Primary Color"
+          "string": "Kolor podstawowy"
         },
         "description": {
-          "string": "HSL values for the primary color (e.g. 180 25% 40%)"
+          "string": "Wartości HSL dla koloru podstawowego (np. 180 25% 40%)"
         }
       },
       "primary_foreground": {
         "label": {
-          "string": "Primary Foreground"
+          "string": "Pierwszy plan koloru podstawowego"
         },
         "description": {
-          "string": "Text color on primary backgrounds"
+          "string": "Kolor tekstu na tle koloru podstawowego"
         }
       },
       "background": {
         "label": {
-          "string": "Background"
+          "string": "Tło"
         },
         "description": {
-          "string": "HSL values for the page background"
+          "string": "Wartości HSL dla tła strony"
         }
       },
       "foreground": {
         "label": {
-          "string": "Foreground"
+          "string": "Pierwszy plan"
         },
         "description": {
-          "string": "Default text color"
+          "string": "Domyślny kolor tekstu"
         }
       },
       "sidebar_background": {
         "label": {
-          "string": "Sidebar Background"
+          "string": "Tło paska bocznego"
         },
         "description": {
-          "string": "HSL values for the sidebar background"
+          "string": "Wartości HSL dla tła paska bocznego"
         }
       },
       "sidebar_foreground": {
         "label": {
-          "string": "Sidebar Foreground"
+          "string": "Pierwszy plan paska bocznego"
         },
         "description": {
-          "string": "Text color in the sidebar"
+          "string": "Kolor tekstu w pasku bocznym"
         }
       },
       "sidebar_primary": {
         "label": {
-          "string": "Sidebar Primary"
+          "string": "Kolor podstawowy paska bocznego"
         },
         "description": {
-          "string": "Primary accent color in the sidebar"
+          "string": "Podstawowy kolor akcentowy w pasku bocznym"
         }
       },
       "sidebar_accent": {
         "label": {
-          "string": "Sidebar Accent"
+          "string": "Kolor akcentowy paska bocznego"
         },
         "description": {
-          "string": "Accent color in the sidebar"
+          "string": "Kolor akcentowy w pasku bocznym"
         }
       },
       "header_background": {
         "label": {
-          "string": "Header Background"
+          "string": "Tło nagłówka"
         },
         "description": {
-          "string": "HSL values for the top header bar"
+          "string": "Wartości HSL dla górnego paska nagłówka"
         }
       },
       "header_foreground": {
         "label": {
-          "string": "Header Foreground"
+          "string": "Pierwszy plan nagłówka"
         },
         "description": {
-          "string": "Text color in the header"
+          "string": "Kolor tekstu w nagłówku"
         }
       },
       "logo_url": {
         "label": {
-          "string": "Logo URL"
+          "string": "Adres URL loga"
         },
         "description": {
-          "string": "URL of the custom logo image (optional)"
+          "string": "Adres URL niestandardowego obrazka loga (opcjonalnie)"
         }
       },
       "custom_css": {
         "label": {
-          "string": "Custom CSS"
+          "string": "Niestandardowy CSS"
         },
         "description": {
-          "string": "Additional CSS rules to inject (optional)"
+          "string": "Dodatkowe reguły CSS do wstrzyknięcia (opcjonalnie)"
         }
       }
     },
     "save": {
-      "string": "Save Changes"
+      "string": "Zapisz zmiany"
     },
     "saving": {
-      "string": "Saving…"
+      "string": "Zapisywanie…"
     },
     "saved": {
-      "string": "Theme settings saved successfully"
+      "string": "Ustawienia motywu zostały pomyślnie zapisane"
     },
     "save_error": {
-      "string": "Failed to save: {message}"
+      "string": "Zapisywanie nie powiodło się: {message}"
     },
     "unsaved_changes": {
-      "string": "You have unsaved changes"
+      "string": "Masz niezapisane zmiany"
     },
     "load_error": {
-      "string": "Failed to load theme settings"
+      "string": "Nie udało się załadować ustawień motywu"
     },
     "retry": {
-      "string": "Retry"
+      "string": "Spróbuj ponownie"
     }
   }
 }

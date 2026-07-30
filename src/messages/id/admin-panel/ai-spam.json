@@ -1,1 +1,49 @@
-{ "AI_SPAM": { "title": { "string": "Intelligent Spam Filter" }, "description": { "string": "Real-time spam scoring with pattern analysis, sender reputation, and content heuristics." }, "input": { "title": { "string": "Email to Score" }, "subject": { "string": "Subject" }, "sender": { "string": "Sender" }, "body": { "string": "Body" }, "placeholder": { "string": "Paste the email body..." } }, "output": { "title": { "string": "Spam Score" }, "empty": { "string": "Enter email content and click Score" }, "signals": { "string": "Detected Signals" } }, "score": { "string": "Score Email" }, "errors": { "empty": { "string": "Enter subject or body" }, "fail": { "string": "Scoring failed" } } }}
+{
+  "AI_SPAM": {
+    "title": {
+      "string": "Filter Spam Cerdas"
+    },
+    "description": {
+      "string": "Pemberian skor spam secara real-time dengan analisis pola, reputasi pengirim, dan heuristik konten."
+    },
+    "input": {
+      "title": {
+        "string": "Email untuk Dinilai"
+      },
+      "subject": {
+        "string": "Subjek"
+      },
+      "sender": {
+        "string": "Pengirim"
+      },
+      "body": {
+        "string": "Isi"
+      },
+      "placeholder": {
+        "string": "Tempel isi email di sini..."
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Skor Spam"
+      },
+      "empty": {
+        "string": "Masukkan konten email dan klik Nilai"
+      },
+      "signals": {
+        "string": "Sinyal yang Terdeteksi"
+      }
+    },
+    "score": {
+      "string": "Nilai Email"
+    },
+    "errors": {
+      "empty": {
+        "string": "Masukkan subjek atau isi"
+      },
+      "fail": {
+        "string": "Pemberian skor gagal"
+      }
+    }
+  }
+}

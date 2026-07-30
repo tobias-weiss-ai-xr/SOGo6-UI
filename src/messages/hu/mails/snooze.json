@@ -1,39 +1,39 @@
 {
-    "MAIL_SNOOZE": {
-        "title": {
-            "string": "Snooze"
-        },
-        "description": {
-            "string": "Choose when this email should reappear in your inbox."
-        },
-        "presets": {
-            "later_today": {
-                "string": "Later today"
-            },
-            "tomorrow": {
-                "string": "Tomorrow"
-            },
-            "this_weekend": {
-                "string": "This weekend"
-            },
-            "next_week": {
-                "string": "Next week"
-            }
-        },
-        "pick_date": {
-            "string": "Pick a date & time"
-        },
-        "pick_date_placeholder": {
-            "string": "Select date..."
-        },
-        "snooze_button": {
-            "string": "Snooze"
-        },
-        "success": {
-            "string": "Email snoozed"
-        },
-        "error": {
-            "string": "Failed to snooze email"
-        }
+  "MAIL_SNOOZE": {
+    "title": {
+      "string": "Halasztás"
+    },
+    "description": {
+      "string": "Válassza ki, mikor jelenjen meg újra az e-mail a beérkezett levelek között."
+    },
+    "presets": {
+      "later_today": {
+        "string": "Ma később"
+      },
+      "tomorrow": {
+        "string": "Holnap"
+      },
+      "this_weekend": {
+        "string": "Ezen a hétvégén"
+      },
+      "next_week": {
+        "string": "Jövő héten"
+      }
+    },
+    "pick_date": {
+      "string": "Dátum és idő kiválasztása"
+    },
+    "pick_date_placeholder": {
+      "string": "Dátum kiválasztása..."
+    },
+    "snooze_button": {
+      "string": "Halasztás"
+    },
+    "success": {
+      "string": "E-mail halasztva"
+    },
+    "error": {
+      "string": "Az e-mail halasztása sikertelen"
     }
+  }
 }

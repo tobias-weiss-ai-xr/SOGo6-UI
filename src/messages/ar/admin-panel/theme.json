@@ -1,135 +1,135 @@
 {
   "AP_THEME": {
     "title": {
-      "string": "Theme Settings"
+      "string": "إعدادات السمة"
     },
     "description": {
-      "string": "Customize the look and feel of the SOGo interface"
+      "string": "تخصيص مظهر وشعور واجهة SOGo"
     },
     "form_title": {
-      "string": "Custom Theme"
+      "string": "سمة مخصصة"
     },
     "form_description": {
-      "string": "Configure colors, logo, and custom CSS for the groupware interface"
+      "string": "تكوين الألوان والشعار و CSS المخصص لواجهة مجموعة البرامج"
     },
     "fields": {
       "primary": {
         "label": {
-          "string": "Primary Color"
+          "string": "اللون الأساسي"
         },
         "description": {
-          "string": "HSL values for the primary color (e.g. 180 25% 40%)"
+          "string": "قيم HSL للون الأساسي (مثال: 180 25% 40%)"
         }
       },
       "primary_foreground": {
         "label": {
-          "string": "Primary Foreground"
+          "string": "الوجه الأمامي الأساسي"
         },
         "description": {
-          "string": "Text color on primary backgrounds"
+          "string": "لون النص على خلفيات أساسية"
         }
       },
       "background": {
         "label": {
-          "string": "Background"
+          "string": "الخلفية"
         },
         "description": {
-          "string": "HSL values for the page background"
+          "string": "قيم HSL لخلفية الصفحة"
         }
       },
       "foreground": {
         "label": {
-          "string": "Foreground"
+          "string": "الوجه الأمامي"
         },
         "description": {
-          "string": "Default text color"
+          "string": "لون النص الافتراضي"
         }
       },
       "sidebar_background": {
         "label": {
-          "string": "Sidebar Background"
+          "string": "خلفية الشريط الجانبي"
         },
         "description": {
-          "string": "HSL values for the sidebar background"
+          "string": "قيم HSL لخلفية الشريط الجانبي"
         }
       },
       "sidebar_foreground": {
         "label": {
-          "string": "Sidebar Foreground"
+          "string": "الوجه الأمامي للشريط الجانبي"
         },
         "description": {
-          "string": "Text color in the sidebar"
+          "string": "لون النص في الشريط الجانبي"
         }
       },
       "sidebar_primary": {
         "label": {
-          "string": "Sidebar Primary"
+          "string": "الأساسي في الشريط الجانبي"
         },
         "description": {
-          "string": "Primary accent color in the sidebar"
+          "string": "لون التوكيد الأساسي في الشريط الجانبي"
         }
       },
       "sidebar_accent": {
         "label": {
-          "string": "Sidebar Accent"
+          "string": "لون التوكيد في الشريط الجانبي"
         },
         "description": {
-          "string": "Accent color in the sidebar"
+          "string": "لون التوكيد في الشريط الجانبي"
         }
       },
       "header_background": {
         "label": {
-          "string": "Header Background"
+          "string": "خلفية الرأس"
         },
         "description": {
-          "string": "HSL values for the top header bar"
+          "string": "قيم HSL لشريط الرأس العلوي"
         }
       },
       "header_foreground": {
         "label": {
-          "string": "Header Foreground"
+          "string": "الون الأمامي للرأس"
         },
         "description": {
-          "string": "Text color in the header"
+          "string": "لون النص في الرأس"
         }
       },
       "logo_url": {
         "label": {
-          "string": "Logo URL"
+          "string": "رابط الشعار"
         },
         "description": {
-          "string": "URL of the custom logo image (optional)"
+          "string": "رابط صورة الشعار المخصص (اختياري)"
         }
       },
       "custom_css": {
         "label": {
-          "string": "Custom CSS"
+          "string": "CSS مخصص"
         },
         "description": {
-          "string": "Additional CSS rules to inject (optional)"
+          "string": "قواعد CSS إضافية للإضافة (اختياري)"
         }
       }
     },
     "save": {
-      "string": "Save Changes"
+      "string": "حفظ التغييرات"
     },
     "saving": {
-      "string": "Saving…"
+      "string": "جاري الحفظ…"
     },
     "saved": {
-      "string": "Theme settings saved successfully"
+      "string": "تم حفظ إعدادات السمة بنجاح"
     },
     "save_error": {
-      "string": "Failed to save: {message}"
+      "string": "فشل الحفظ: {message}"
     },
     "unsaved_changes": {
-      "string": "You have unsaved changes"
+      "string": "لديك تغييرات غير محفوظة"
     },
     "load_error": {
-      "string": "Failed to load theme settings"
+      "string": "فشل تحميل إعدادات السمة"
     },
     "retry": {
-      "string": "Retry"
+      "string": "إعادة المحاولة"
     }
   }
 }

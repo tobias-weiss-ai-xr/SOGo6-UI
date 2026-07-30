@@ -1,12 +1,65 @@
 {
   "MOBILE": {
-    "title": { "string": "Mobile App Management" },
-    "description": { "string": "Manage registered devices, push notifications, and app configuration" },
-    "errors": { "fail": { "string": "Operation failed" } },
-    "success": { "unregister": { "string": "Device unregistered" }, "broadcast": { "string": "Push notification sent" } },
-    "config": { "title": { "string": "App Settings" }, "push": { "string": "Push Notifications" }, "biometric": { "string": "Biometric Auth" } },
-    "push": { "title": { "string": "Push Broadcast" }, "title": { "placeholder": { "string": "Notification title" } }, "message": { "placeholder": { "string": "Message..." } }, "broadcast": { "string": "Send" } },
-    "stats": { "title": { "string": "Statistics" }, "devices": { "string": "Registered Devices" } },
-    "devices": { "title": { "string": "All Devices" }, "empty": { "string": "No devices registered yet" } }
+    "title": {
+      "string": "मोबाइल ऐप प्रबंधन"
+    },
+    "description": {
+      "string": "पंजीकृत डिवाइस, पुश नोटिफिकेशन और ऐप कॉन्फ़िगरेशन प्रबंधित करें"
+    },
+    "errors": {
+      "fail": {
+        "string": "ऑपरेशन विफल"
+      }
+    },
+    "success": {
+      "unregister": {
+        "string": "डिवाइस अनपंजीकृत"
+      },
+      "broadcast": {
+        "string": "पुश नोटिफिकेशन भेजा गया"
+      }
+    },
+    "config": {
+      "title": {
+        "string": "ऐप सेटिंग्स"
+      },
+      "push": {
+        "string": "पुश नोटिफिकेशन"
+      },
+      "biometric": {
+        "string": "बायोमेट्रिक प्रमाणीकरण"
+      }
+    },
+    "push": {
+      "title": {
+        "placeholder": {
+          "string": "नोटिफिकेशन शीर्षक"
+        }
+      },
+      "message": {
+        "placeholder": {
+          "string": "संदेश..."
+        }
+      },
+      "broadcast": {
+        "string": "भेजें"
+      }
+    },
+    "stats": {
+      "title": {
+        "string": "आंकड़े"
+      },
+      "devices": {
+        "string": "पंजीकृत डिवाइस"
+      }
+    },
+    "devices": {
+      "title": {
+        "string": "सभी डिवाइस"
+      },
+      "empty": {
+        "string": "अभी तक कोई डिवाइस पंजीकृत नहीं"
+      }
+    }
   }
 }

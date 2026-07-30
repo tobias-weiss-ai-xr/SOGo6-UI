@@ -1,39 +1,39 @@
 {
-    "MAIL_SNOOZE": {
-        "title": {
-            "string": "Snooze"
-        },
-        "description": {
-            "string": "Choose when this email should reappear in your inbox."
-        },
-        "presets": {
-            "later_today": {
-                "string": "Later today"
-            },
-            "tomorrow": {
-                "string": "Tomorrow"
-            },
-            "this_weekend": {
-                "string": "This weekend"
-            },
-            "next_week": {
-                "string": "Next week"
-            }
-        },
-        "pick_date": {
-            "string": "Pick a date & time"
-        },
-        "pick_date_placeholder": {
-            "string": "Select date..."
-        },
-        "snooze_button": {
-            "string": "Snooze"
-        },
-        "success": {
-            "string": "Email snoozed"
-        },
-        "error": {
-            "string": "Failed to snooze email"
-        }
+  "MAIL_SNOOZE": {
+    "title": {
+      "string": "後で表示"
+    },
+    "description": {
+      "string": "このメールを受信トレイに再表示する日時を選択してください。"
+    },
+    "presets": {
+      "later_today": {
+        "string": "今日中に"
+      },
+      "tomorrow": {
+        "string": "明日"
+      },
+      "this_weekend": {
+        "string": "今週末"
+      },
+      "next_week": {
+        "string": "来週"
+      }
+    },
+    "pick_date": {
+      "string": "日時を選択"
+    },
+    "pick_date_placeholder": {
+      "string": "日付を選択..."
+    },
+    "snooze_button": {
+      "string": "後で表示"
+    },
+    "success": {
+      "string": "メールを後で表示に設定しました"
+    },
+    "error": {
+      "string": "メールの後で表示設定に失敗しました"
     }
+  }
 }

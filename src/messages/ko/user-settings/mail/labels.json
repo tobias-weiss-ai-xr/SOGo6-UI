@@ -1,14 +1,14 @@
 {
-    "US_MAIL_LABELS": {
-        "title": {
-            "string": "Mail Labels",
-            "context": "Title for the mail labels settings page"
-        },
-        "label": {
-            "string": "Label"
-        },
-        "imap_label": {
-            "string": "IMAP Label"
-        }
+  "US_MAIL_LABELS": {
+    "title": {
+      "string": "메일 레이블",
+      "context": "Title for the mail labels settings page"
+    },
+    "label": {
+      "string": "레이블"
+    },
+    "imap_label": {
+      "string": "IMAP 레이블"
     }
+  }
 }

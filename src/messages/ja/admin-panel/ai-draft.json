@@ -1,1 +1,40 @@
-{ "AI_DRAFT": { "title": { "string": "AI Draft Assistant" }, "description": { "string": "Reply suggestions with tone adjustment. Generates contextual draft replies." }, "input": { "title": { "string": "Original Email" }, "email": { "string": "Email Body" }, "placeholder": { "string": "Paste the email you want to reply to..." } }, "output": { "title": { "string": "Suggested Reply" }, "empty": { "string": "Enter email text and select a tone" } }, "suggest": { "string": "Suggest Reply" }, "errors": { "empty": { "string": "Enter email text" }, "fail": { "string": "Suggestion failed" } } }}
+{
+  "AI_DRAFT": {
+    "title": {
+      "string": "AI 下書きアシスタント"
+    },
+    "description": {
+      "string": "トーン調整付きの返信候補を提案。文脈に応じた下書きを生成します。"
+    },
+    "input": {
+      "title": {
+        "string": "元のメール"
+      },
+      "email": {
+        "string": "メール本文"
+      },
+      "placeholder": {
+        "string": "返信したいメールを貼り付けてください..."
+      }
+    },
+    "output": {
+      "title": {
+        "string": "提案返信"
+      },
+      "empty": {
+        "string": "メール本文を入力し、トーンを選択してください"
+      }
+    },
+    "suggest": {
+      "string": "返信を提案"
+    },
+    "errors": {
+      "empty": {
+        "string": "メール本文を入力してください"
+      },
+      "fail": {
+        "string": "提案に失敗しました"
+      }
+    }
+  }
+}

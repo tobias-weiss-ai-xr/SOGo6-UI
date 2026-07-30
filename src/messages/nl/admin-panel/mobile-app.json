@@ -1,12 +1,65 @@
 {
   "MOBILE": {
-    "title": { "string": "Mobile App Management" },
-    "description": { "string": "Manage registered devices, push notifications, and app configuration" },
-    "errors": { "fail": { "string": "Operation failed" } },
-    "success": { "unregister": { "string": "Device unregistered" }, "broadcast": { "string": "Push notification sent" } },
-    "config": { "title": { "string": "App Settings" }, "push": { "string": "Push Notifications" }, "biometric": { "string": "Biometric Auth" } },
-    "push": { "title": { "string": "Push Broadcast" }, "title": { "placeholder": { "string": "Notification title" } }, "message": { "placeholder": { "string": "Message..." } }, "broadcast": { "string": "Send" } },
-    "stats": { "title": { "string": "Statistics" }, "devices": { "string": "Registered Devices" } },
-    "devices": { "title": { "string": "All Devices" }, "empty": { "string": "No devices registered yet" } }
+    "title": {
+      "string": "Beheer van mobiele app"
+    },
+    "description": {
+      "string": "Beheer geregistreerde apparaten, pushmeldingen en app-configuratie"
+    },
+    "errors": {
+      "fail": {
+        "string": "Bewerking mislukt"
+      }
+    },
+    "success": {
+      "unregister": {
+        "string": "Apparaat uitgeschreven"
+      },
+      "broadcast": {
+        "string": "Pushmelding verzonden"
+      }
+    },
+    "config": {
+      "title": {
+        "string": "App-instellingen"
+      },
+      "push": {
+        "string": "Pushmeldingen"
+      },
+      "biometric": {
+        "string": "Biometrische verificatie"
+      }
+    },
+    "push": {
+      "title": {
+        "placeholder": {
+          "string": "Titel van melding"
+        }
+      },
+      "message": {
+        "placeholder": {
+          "string": "Bericht..."
+        }
+      },
+      "broadcast": {
+        "string": "Verzenden"
+      }
+    },
+    "stats": {
+      "title": {
+        "string": "Statistieken"
+      },
+      "devices": {
+        "string": "Geregistreerde apparaten"
+      }
+    },
+    "devices": {
+      "title": {
+        "string": "Alle apparaten"
+      },
+      "empty": {
+        "string": "Nog geen apparaten geregistreerd"
+      }
+    }
   }
 }

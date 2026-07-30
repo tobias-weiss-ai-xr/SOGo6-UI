@@ -1,1 +1,49 @@
-{ "AI_ANOMALY": { "title": { "string": "Anomaly Detection" }, "description": { "string": "Flag unusual sending patterns: bulk email, odd hours, new recipients." }, "input": { "title": { "string": "Sending Pattern" }, "recipients": { "string": "Recipient Count" }, "hour": { "string": "Hour (0-23)" }, "new_ratio": { "string": "New Recipient Ratio" } }, "output": { "title": { "string": "Analysis Result" }, "empty": { "string": "Enter values and click Analyze" }, "anomaly": { "string": "Anomaly Detected!" }, "normal": { "string": "Pattern Normal" }, "score": { "string": "Risk Score" } }, "analyze": { "string": "Analyze" }, "errors": { "fail": { "string": "Analysis failed" } } }}
+{
+  "AI_ANOMALY": {
+    "title": {
+      "string": "كشف الشذوذ"
+    },
+    "description": {
+      "string": "إشارة إلى أنماط إرسال غير عادية: بريد جماعي، أوقات غريبة، مستلمون جدد."
+    },
+    "input": {
+      "title": {
+        "string": "نمط الإرسال"
+      },
+      "recipients": {
+        "string": "عدد المستلمين"
+      },
+      "hour": {
+        "string": "الساعة (0-23)"
+      },
+      "new_ratio": {
+        "string": "نسبة المستلمين الجدد"
+      }
+    },
+    "output": {
+      "title": {
+        "string": "نتيجة التحليل"
+      },
+      "empty": {
+        "string": "أدخل القيم وانقر على تحليل"
+      },
+      "anomaly": {
+        "string": "تم اكتشاف شذوذ!"
+      },
+      "normal": {
+        "string": "النمط طبيعي"
+      },
+      "score": {
+        "string": "درجة المخاطر"
+      }
+    },
+    "analyze": {
+      "string": "تحليل"
+    },
+    "errors": {
+      "fail": {
+        "string": "فشل التحليل"
+      }
+    }
+  }
+}

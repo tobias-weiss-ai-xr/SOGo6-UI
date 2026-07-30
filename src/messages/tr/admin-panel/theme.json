@@ -1,135 +1,135 @@
 {
   "AP_THEME": {
     "title": {
-      "string": "Theme Settings"
+      "string": "Tema Ayarları"
     },
     "description": {
-      "string": "Customize the look and feel of the SOGo interface"
+      "string": "SOGo arayüzünün görünümünü ve hissini özelleştirin"
     },
     "form_title": {
-      "string": "Custom Theme"
+      "string": "Özel Tema"
     },
     "form_description": {
-      "string": "Configure colors, logo, and custom CSS for the groupware interface"
+      "string": "Grupware arayüzü için renkleri, logoyu ve özel CSS'i yapılandırın"
     },
     "fields": {
       "primary": {
         "label": {
-          "string": "Primary Color"
+          "string": "Birincil Renk"
         },
         "description": {
-          "string": "HSL values for the primary color (e.g. 180 25% 40%)"
+          "string": "Birincil renk için HSL değerleri (örn. 180 25% 40%)"
         }
       },
       "primary_foreground": {
         "label": {
-          "string": "Primary Foreground"
+          "string": "Birincil Ön Plan"
         },
         "description": {
-          "string": "Text color on primary backgrounds"
+          "string": "Birincil arka planlardaki metin rengi"
         }
       },
       "background": {
         "label": {
-          "string": "Background"
+          "string": "Arka Plan"
         },
         "description": {
-          "string": "HSL values for the page background"
+          "string": "Sayfa arka planı için HSL değerleri"
         }
       },
       "foreground": {
         "label": {
-          "string": "Foreground"
+          "string": "Ön Plan"
         },
         "description": {
-          "string": "Default text color"
+          "string": "Varsayılan metin rengi"
         }
       },
       "sidebar_background": {
         "label": {
-          "string": "Sidebar Background"
+          "string": "Yan Çubuk Arka Planı"
         },
         "description": {
-          "string": "HSL values for the sidebar background"
+          "string": "Yan çubuk arka planı için HSL değerleri"
         }
       },
       "sidebar_foreground": {
         "label": {
-          "string": "Sidebar Foreground"
+          "string": "Yan Çubuk Ön Planı"
         },
         "description": {
-          "string": "Text color in the sidebar"
+          "string": "Yan çubuktaki metin rengi"
         }
       },
       "sidebar_primary": {
         "label": {
-          "string": "Sidebar Primary"
+          "string": "Yan Çubuk Birincil Rengi"
         },
         "description": {
-          "string": "Primary accent color in the sidebar"
+          "string": "Yan çubuktaki birincil vurgu rengi"
         }
       },
       "sidebar_accent": {
         "label": {
-          "string": "Sidebar Accent"
+          "string": "Yan Çubuk Vurgu Rengi"
         },
         "description": {
-          "string": "Accent color in the sidebar"
+          "string": "Yan çubuktaki vurgu rengi"
         }
       },
       "header_background": {
         "label": {
-          "string": "Header Background"
+          "string": "Üst Bilgi Arka Planı"
         },
         "description": {
-          "string": "HSL values for the top header bar"
+          "string": "Üst bilgi çubuğu için HSL değerleri"
         }
       },
       "header_foreground": {
         "label": {
-          "string": "Header Foreground"
+          "string": "Üst Bilgi Ön Planı"
         },
         "description": {
-          "string": "Text color in the header"
+          "string": "Üst bilgi çubuğundaki metin rengi"
         }
       },
       "logo_url": {
         "label": {
-          "string": "Logo URL"
+          "string": "Logo URL'si"
         },
         "description": {
-          "string": "URL of the custom logo image (optional)"
+          "string": "Özel logo görselinin URL'si (isteğe bağlı)"
         }
       },
       "custom_css": {
         "label": {
-          "string": "Custom CSS"
+          "string": "Özel CSS"
         },
         "description": {
-          "string": "Additional CSS rules to inject (optional)"
+          "string": "Eklenecek ek CSS kuralları (isteğe bağlı)"
         }
       }
     },
     "save": {
-      "string": "Save Changes"
+      "string": "Değişiklikleri Kaydet"
     },
     "saving": {
-      "string": "Saving…"
+      "string": "Kaydediliyor…"
     },
     "saved": {
-      "string": "Theme settings saved successfully"
+      "string": "Tema ayarları başarıyla kaydedildi"
     },
     "save_error": {
-      "string": "Failed to save: {message}"
+      "string": "Kaydedilemedi: {message}"
     },
     "unsaved_changes": {
-      "string": "You have unsaved changes"
+      "string": "Kaydedilmemiş değişiklikleriniz var"
     },
     "load_error": {
-      "string": "Failed to load theme settings"
+      "string": "Tema ayarları yüklenemedi"
     },
     "retry": {
-      "string": "Retry"
+      "string": "Yeniden Dene"
     }
   }
 }

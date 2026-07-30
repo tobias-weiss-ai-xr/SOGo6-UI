@@ -1,1 +1,40 @@
-{ "AI_ATTACH": { "title": { "string": "Smart Attachment Actions" }, "description": { "string": "Auto-detect document type and suggest save, forward, or archive actions." }, "input": { "title": { "string": "Attachment" }, "filename": { "string": "Filename" } }, "output": { "title": { "string": "Analysis" }, "empty": { "string": "Enter a filename" }, "preview": { "string": "Can Preview" } }, "classify": { "string": "Classify" }, "errors": { "empty": { "string": "Enter a filename" }, "fail": { "string": "Classification failed" } } }}
+{
+  "AI_ATTACH": {
+    "title": {
+      "string": "Smarta bilagoråder"
+    },
+    "description": {
+      "string": "Automatisk detektering av dokumenttyp med förslag på att spara, vidarebefordra eller arkivera."
+    },
+    "input": {
+      "title": {
+        "string": "Bilaga"
+      },
+      "filename": {
+        "string": "Filnamn"
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Analys"
+      },
+      "empty": {
+        "string": "Ange ett filnamn"
+      },
+      "preview": {
+        "string": "Kan förhandsgranska"
+      }
+    },
+    "classify": {
+      "string": "Klassificera"
+    },
+    "errors": {
+      "empty": {
+        "string": "Ange ett filnamn"
+      },
+      "fail": {
+        "string": "Klassificering misslyckades"
+      }
+    }
+  }
+}

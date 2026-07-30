@@ -1,1 +1,40 @@
-{ "AP_FREEBUSY": { "title": { "string": "Free/Busy Lookup" }, "description": { "string": "Visual attendee schedule overlay. Check availability when creating events." }, "form": { "title": { "string": "Check Availability" }, "participants": { "string": "Participants" }, "start": { "string": "Start" }, "end": { "string": "End" }, "lookup": { "string": "Look Up" } }, "results": { "title": { "string": "Busy Slots" } }, "errors": { "fields": { "string": "At least one participant is required" } }, "error": { "string": "Lookup failed" } }}
+{
+  "AP_FREEBUSY": {
+    "title": {
+      "string": "Αναζήτηση Διαθεσιμότητας"
+    },
+    "description": {
+      "string": "Οπτική επικάλυψη προγράμματος συμμετεχόντων. Ελέγξτε τη διαθεσιμότητα κατά τη δημιουργία γεγονότων."
+    },
+    "form": {
+      "title": {
+        "string": "Έλεγχος Διαθεσιμότητας"
+      },
+      "participants": {
+        "string": "Συμμετέχοντες"
+      },
+      "start": {
+        "string": "Αρχή"
+      },
+      "end": {
+        "string": "Τέλος"
+      },
+      "lookup": {
+        "string": "Αναζήτηση"
+      }
+    },
+    "results": {
+      "title": {
+        "string": "Κατειλημμένα Διαστήματα"
+      }
+    },
+    "errors": {
+      "fields": {
+        "string": "Απαιτείται τουλάχιστον ένας συμμετέχων"
+      }
+    },
+    "error": {
+      "string": "Η αναζήτηση απέτυχε"
+    }
+  }
+}

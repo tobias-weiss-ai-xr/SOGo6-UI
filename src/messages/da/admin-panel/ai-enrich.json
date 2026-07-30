@@ -1,1 +1,54 @@
-{ "AI_ENRICH": { "title": { "string": "Contact Auto-Enrichment" }, "description": { "string": "Extract phone, title, company, location from email signatures." }, "input": { "title": { "string": "Email Signature" }, "signature": { "string": "Signature Text" }, "placeholder": { "string": "Paste an email signature here..." } }, "output": { "title": { "string": "Extracted Information" }, "empty": { "string": "Enter signature text and click Extract" } }, "extract": { "string": "Extract Info" }, "field": { "phone": { "string": "Phone" }, "title": { "string": "Title" }, "company": { "string": "Company" }, "location": { "string": "Location" } }, "errors": { "empty": { "string": "Enter text" }, "fail": { "string": "Extraction failed" } } }}
+{
+  "AI_ENRICH": {
+    "title": {
+      "string": "Automatisk berigelse af kontakter"
+    },
+    "description": {
+      "string": "Uddrag telefon, titel, virksomhed og beliggenhed fra e-mail-signaturer."
+    },
+    "input": {
+      "title": {
+        "string": "E-mail-signatur"
+      },
+      "signature": {
+        "string": "Signaturtekst"
+      },
+      "placeholder": {
+        "string": "Indsæt en e-mail-signatur her..."
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Uddraget information"
+      },
+      "empty": {
+        "string": "Indtast signaturtekst og klik på Uddrag"
+      }
+    },
+    "extract": {
+      "string": "Uddrag info"
+    },
+    "field": {
+      "phone": {
+        "string": "Telefon"
+      },
+      "title": {
+        "string": "Titel"
+      },
+      "company": {
+        "string": "Virksomhed"
+      },
+      "location": {
+        "string": "Beliggenhed"
+      }
+    },
+    "errors": {
+      "empty": {
+        "string": "Indtast tekst"
+      },
+      "fail": {
+        "string": "Uddrag mislykkedes"
+      }
+    }
+  }
+}

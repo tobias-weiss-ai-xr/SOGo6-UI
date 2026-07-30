@@ -1,1 +1,40 @@
-{ "AI_DRAFT": { "title": { "string": "AI Draft Assistant" }, "description": { "string": "Reply suggestions with tone adjustment. Generates contextual draft replies." }, "input": { "title": { "string": "Original Email" }, "email": { "string": "Email Body" }, "placeholder": { "string": "Paste the email you want to reply to..." } }, "output": { "title": { "string": "Suggested Reply" }, "empty": { "string": "Enter email text and select a tone" } }, "suggest": { "string": "Suggest Reply" }, "errors": { "empty": { "string": "Enter email text" }, "fail": { "string": "Suggestion failed" } } }}
+{
+  "AI_DRAFT": {
+    "title": {
+      "string": "ผู้ช่วยร่างอีเมลด้วย AI"
+    },
+    "description": {
+      "string": "แนะนำคำตอบพร้อมปรับโทนเสียง สร้างร่างคำตอบที่เหมาะสมกับบริบท"
+    },
+    "input": {
+      "title": {
+        "string": "อีเมลต้นฉบับ"
+      },
+      "email": {
+        "string": "เนื้อหาอีเมล"
+      },
+      "placeholder": {
+        "string": "วางอีเมลที่ต้องการตอบกลับ..."
+      }
+    },
+    "output": {
+      "title": {
+        "string": "คำตอบที่แนะนำ"
+      },
+      "empty": {
+        "string": "กรุณาใส่เนื้อหาอีเมลและเลือกโทนเสียง"
+      }
+    },
+    "suggest": {
+      "string": "แนะนำคำตอบ"
+    },
+    "errors": {
+      "empty": {
+        "string": "กรุณาใส่เนื้อหาอีเมล"
+      },
+      "fail": {
+        "string": "ไม่สามารถแนะนำคำตอบได้"
+      }
+    }
+  }
+}

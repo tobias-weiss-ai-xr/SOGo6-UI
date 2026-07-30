@@ -1,1 +1,46 @@
-{ "AI_SUMMARIZE": { "title": { "string": "Email Summarization" }, "description": { "string": "TL;DR for long email threads. Extractive summarization returns the most important sentences." }, "input": { "title": { "string": "Input Email" }, "text": { "string": "Email Text" }, "placeholder": { "string": "Paste the email body here..." }, "sentences": { "string": "Max Sentences" } }, "output": { "title": { "string": "Summary" }, "empty": { "string": "Enter text and click Summarize" } }, "summarize": { "string": "Summarize" }, "loading": { "string": "Summarizing..." }, "errors": { "empty": { "string": "Enter text to summarize" }, "fail": { "string": "Summarization failed" } } }}
+{
+  "AI_SUMMARIZE": {
+    "title": {
+      "string": "이메일 요약"
+    },
+    "description": {
+      "string": "긴 이메일 스레드의 TL;DR. 추출 요약으로 가장 중요한 문장을 반환합니다."
+    },
+    "input": {
+      "title": {
+        "string": "입력 이메일"
+      },
+      "text": {
+        "string": "이메일 본문"
+      },
+      "placeholder": {
+        "string": "이메일 본문을 여기에 붙여넣으세요..."
+      },
+      "sentences": {
+        "string": "최대 문장 수"
+      }
+    },
+    "output": {
+      "title": {
+        "string": "요약"
+      },
+      "empty": {
+        "string": "텍스트를 입력하고 요약 버튼을 클릭하세요"
+      }
+    },
+    "summarize": {
+      "string": "요약"
+    },
+    "loading": {
+      "string": "요약 중..."
+    },
+    "errors": {
+      "empty": {
+        "string": "요약할 텍스트를 입력하세요"
+      },
+      "fail": {
+        "string": "요약 실패"
+      }
+    }
+  }
+}

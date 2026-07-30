@@ -1,1 +1,54 @@
-{ "AI_ENRICH": { "title": { "string": "Contact Auto-Enrichment" }, "description": { "string": "Extract phone, title, company, location from email signatures." }, "input": { "title": { "string": "Email Signature" }, "signature": { "string": "Signature Text" }, "placeholder": { "string": "Paste an email signature here..." } }, "output": { "title": { "string": "Extracted Information" }, "empty": { "string": "Enter signature text and click Extract" } }, "extract": { "string": "Extract Info" }, "field": { "phone": { "string": "Phone" }, "title": { "string": "Title" }, "company": { "string": "Company" }, "location": { "string": "Location" } }, "errors": { "empty": { "string": "Enter text" }, "fail": { "string": "Extraction failed" } } }}
+{
+  "AI_ENRICH": {
+    "title": {
+      "string": "İletişim Otomatik Zenginleştirme"
+    },
+    "description": {
+      "string": "E-posta imzalarından telefon, unvan, şirket, konum bilgilerini çıkartın."
+    },
+    "input": {
+      "title": {
+        "string": "E-posta İmzası"
+      },
+      "signature": {
+        "string": "İmza Metni"
+      },
+      "placeholder": {
+        "string": "E-posta imzasını buraya yapıştırın..."
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Çıkarılan Bilgiler"
+      },
+      "empty": {
+        "string": "İmza metnini girin ve Çıkart'a tıklayın"
+      }
+    },
+    "extract": {
+      "string": "Bilgileri Çıkart"
+    },
+    "field": {
+      "phone": {
+        "string": "Telefon"
+      },
+      "title": {
+        "string": "Unvan"
+      },
+      "company": {
+        "string": "Şirket"
+      },
+      "location": {
+        "string": "Konum"
+      }
+    },
+    "errors": {
+      "empty": {
+        "string": "Metin girin"
+      },
+      "fail": {
+        "string": "Çıkarma başarısız"
+      }
+    }
+  }
+}

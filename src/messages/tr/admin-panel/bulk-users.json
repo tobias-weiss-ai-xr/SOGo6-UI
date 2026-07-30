@@ -1,25 +1,61 @@
-{ "AP_BULK": {
-    "title": { "string": "Bulk User Management" },
-    "description": { "string": "Import and export users in bulk using CSV files." },
+{
+  "AP_BULK": {
+    "title": {
+      "string": "Toplu Kullanıcı Yönetimi"
+    },
+    "description": {
+      "string": "CSV dosyaları kullanarak kullanıcıları toplu şekilde içe aktarın ve dışa aktarın."
+    },
     "export": {
-      "title": { "string": "Export Users" },
-      "description": { "string": "Download all users as a CSV file." },
-      "format": { "string": "CSV file (.csv)" },
-      "button": { "string": "Export CSV" },
-      "success": { "string": "Export downloaded" },
-      "error": { "string": "Export failed" }
+      "title": {
+        "string": "Kullanıcıları Dışa Aktar"
+      },
+      "description": {
+        "string": "Tüm kullanıcıları CSV dosyası olarak indirin."
+      },
+      "format": {
+        "string": "CSV dosyası (.csv)"
+      },
+      "button": {
+        "string": "CSV Dışa Aktar"
+      },
+      "success": {
+        "string": "Dışa aktarma indirildi"
+      },
+      "error": {
+        "string": "Dışa aktarma başarısız"
+      }
     },
     "import": {
-      "title": { "string": "Import Users" },
-      "description": { "string": "Upload a CSV file with user data to create or update accounts." },
-      "dropzone": { "string": "Click to upload CSV" },
-      "button": { "string": "Import CSV" },
-      "remove": { "string": "Remove file" },
-      "success": { "string": "Imported: {created} created, {updated} updated" },
-      "error": { "string": "Import failed" }
+      "title": {
+        "string": "Kullanıcıları İçe Aktar"
+      },
+      "description": {
+        "string": "Kullanıcı verileri içeren bir CSV dosyası yükleyerek hesap oluşturun veya güncelleyin."
+      },
+      "dropzone": {
+        "string": "CSV yüklemek için tıklayın"
+      },
+      "button": {
+        "string": "CSV İçe Aktar"
+      },
+      "remove": {
+        "string": "Dosyayı kaldır"
+      },
+      "success": {
+        "string": "İçe aktarıldı: {created} oluşturuldu, {updated} güncellendi"
+      },
+      "error": {
+        "string": "İçe aktarma başarısız"
+      }
     },
     "format": {
-      "title": { "string": "CSV Format" },
-      "hint": { "string": "First row must be the header. uid, cn, sn, givenName, mail are required. password is optional (random if blank)." }
+      "title": {
+        "string": "CSV Biçimi"
+      },
+      "hint": {
+        "string": "İlk satır başlık olmalıdır. uid, cn, sn, givenName, mail zorunludur. password isteğe bağlıdır (boş bırakılırsa rastgele atanır)."
+      }
     }
-}}
+  }
+}

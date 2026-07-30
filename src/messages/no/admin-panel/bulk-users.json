@@ -1,25 +1,61 @@
-{ "AP_BULK": {
-    "title": { "string": "Bulk User Management" },
-    "description": { "string": "Import and export users in bulk using CSV files." },
+{
+  "AP_BULK": {
+    "title": {
+      "string": "Massebehandling av brukere"
+    },
+    "description": {
+      "string": "Importer og eksporter brukere i bulk ved hjelp av CSV-filer."
+    },
     "export": {
-      "title": { "string": "Export Users" },
-      "description": { "string": "Download all users as a CSV file." },
-      "format": { "string": "CSV file (.csv)" },
-      "button": { "string": "Export CSV" },
-      "success": { "string": "Export downloaded" },
-      "error": { "string": "Export failed" }
+      "title": {
+        "string": "Eksporter brukere"
+      },
+      "description": {
+        "string": "Last ned alle brukere som en CSV-fil."
+      },
+      "format": {
+        "string": "CSV-fil (.csv)"
+      },
+      "button": {
+        "string": "Eksporter CSV"
+      },
+      "success": {
+        "string": "Eksport fullført"
+      },
+      "error": {
+        "string": "Eksport mislyktes"
+      }
     },
     "import": {
-      "title": { "string": "Import Users" },
-      "description": { "string": "Upload a CSV file with user data to create or update accounts." },
-      "dropzone": { "string": "Click to upload CSV" },
-      "button": { "string": "Import CSV" },
-      "remove": { "string": "Remove file" },
-      "success": { "string": "Imported: {created} created, {updated} updated" },
-      "error": { "string": "Import failed" }
+      "title": {
+        "string": "Importer brukere"
+      },
+      "description": {
+        "string": "Last opp en CSV-fil med brukerdata for å opprette eller oppdatere kontoer."
+      },
+      "dropzone": {
+        "string": "Klikk for å laste opp CSV"
+      },
+      "button": {
+        "string": "Importer CSV"
+      },
+      "remove": {
+        "string": "Fjern fil"
+      },
+      "success": {
+        "string": "Importert: {created} opprettet, {updated} oppdatert"
+      },
+      "error": {
+        "string": "Import mislyktes"
+      }
     },
     "format": {
-      "title": { "string": "CSV Format" },
-      "hint": { "string": "First row must be the header. uid, cn, sn, givenName, mail are required. password is optional (random if blank)." }
+      "title": {
+        "string": "CSV-format"
+      },
+      "hint": {
+        "string": "Første rad må være overskriften. uid, cn, sn, givenName, mail er påkrevd. password er valgfritt (tilfeldig hvis tomt)."
+      }
     }
-}}
+  }
+}

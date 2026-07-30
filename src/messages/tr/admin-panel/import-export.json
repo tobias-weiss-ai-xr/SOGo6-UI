@@ -1,9 +1,34 @@
 {
   "IMPORT": {
-    "title": { "string": "PST / M365 Import & Export" },
-    "description": { "string": "Import mailboxes from PST files or Microsoft 365 with progress tracking" },
-    "errors": { "fields": { "string": "Required fields missing" }, "fail": { "string": "Operation failed" } },
-    "success": { "analyze": { "string": "PST analyzed" }, "import": { "string": "Import started" } },
-    "jobs": { "title": { "string": "Import Jobs" }, "empty": { "string": "No import jobs yet" } }
+    "title": {
+      "string": "PST / M365 İçe Aktarma & Dışa Aktarma"
+    },
+    "description": {
+      "string": "PST dosyalarından veya Microsoft 365'ten posta kutuları içe aktarın, ilerleme takibiyle"
+    },
+    "errors": {
+      "fields": {
+        "string": "Gerekli alanlar eksik"
+      },
+      "fail": {
+        "string": "İşlem başarısız oldu"
+      }
+    },
+    "success": {
+      "analyze": {
+        "string": "PST analiz edildi"
+      },
+      "import": {
+        "string": "İçe aktarma başlatıldı"
+      }
+    },
+    "jobs": {
+      "title": {
+        "string": "İçe Aktarma İşleri"
+      },
+      "empty": {
+        "string": "Henüz içe aktarma işi yok"
+      }
+    }
   }
 }

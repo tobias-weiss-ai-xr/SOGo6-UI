@@ -1,7 +1,35 @@
-{ "AP_DBMIG": {
-    "title": { "string": "Database Migration" },
-    "description": { "string": "Track schema versions and migration history. Run migrations from the admin panel." },
-    "current_version": { "string": "Current Schema Version" },
-    "run": { "button": { "string": "Run Migration" }, "running": { "string": "Running..." }, "success": { "string": "Migration applied" }, "error": { "string": "Migration failed" } },
-    "history": { "title": { "string": "Migration History" }, "empty": { "string": "No migrations recorded." } }
-}}
+{
+  "AP_DBMIG": {
+    "title": {
+      "string": "डेटाबेस माइग्रेशन"
+    },
+    "description": {
+      "string": "स्कीमा संस्करणों और माइग्रेशन इतिहास को ट्रैक करें। एडमिन पैनल से माइग्रेशन चलाएं।"
+    },
+    "current_version": {
+      "string": "वर्तमान स्कीमा संस्करण"
+    },
+    "run": {
+      "button": {
+        "string": "माइग्रेशन चलाएं"
+      },
+      "running": {
+        "string": "चल रहा है..."
+      },
+      "success": {
+        "string": "माइग्रेशन लागू हुआ"
+      },
+      "error": {
+        "string": "माइग्रेशन विफल हुआ"
+      }
+    },
+    "history": {
+      "title": {
+        "string": "माइग्रेशन इतिहास"
+      },
+      "empty": {
+        "string": "कोई माइग्रेशन रिकॉर्ड नहीं।"
+      }
+    }
+  }
+}

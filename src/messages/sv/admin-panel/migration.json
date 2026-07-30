@@ -1,8 +1,54 @@
-{ "AP_MIG": {
-    "title": { "string": "Migration Tools" },
-    "description": { "string": "Import data from external sources — G Suite, M365, Dovecot, Cyrus, or file uploads." },
-    "wizard": { "title": { "string": "Start Migration" }, "source": { "string": "Source" }, "select_source": { "string": "Choose a source..." }, "user": { "string": "Target User" }, "select_user": { "string": "Select user..." } },
-    "start": { "button": { "string": "Start Migration" }, "running": { "string": "Starting..." }, "success": { "string": "Migration started" }, "error": { "string": "Migration failed" } },
-    "history": { "title": { "string": "Migration History" }, "empty": { "string": "No migrations yet." } },
-    "errors": { "fields": { "string": "Source and user are required" } }
-}}
+{
+  "AP_MIG": {
+    "title": {
+      "string": "Migrationsverktyg"
+    },
+    "description": {
+      "string": "Importera data från externa källor – G Suite, M365, Dovecot, Cyrus eller filupp laddningar."
+    },
+    "wizard": {
+      "title": {
+        "string": "Starta migration"
+      },
+      "source": {
+        "string": "Källa"
+      },
+      "select_source": {
+        "string": "Välj en källa..."
+      },
+      "user": {
+        "string": "Mål användare"
+      },
+      "select_user": {
+        "string": "Välj användare..."
+      }
+    },
+    "start": {
+      "button": {
+        "string": "Starta migration"
+      },
+      "running": {
+        "string": "Startar..."
+      },
+      "success": {
+        "string": "Migration startad"
+      },
+      "error": {
+        "string": "Migration misslyckades"
+      }
+    },
+    "history": {
+      "title": {
+        "string": "Migrationshistorik"
+      },
+      "empty": {
+        "string": "Inga migrationer än."
+      }
+    },
+    "errors": {
+      "fields": {
+        "string": "Källa och användare krävs"
+      }
+    }
+  }
+}

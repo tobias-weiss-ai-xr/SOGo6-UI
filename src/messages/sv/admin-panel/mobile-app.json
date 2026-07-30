@@ -1,12 +1,65 @@
 {
   "MOBILE": {
-    "title": { "string": "Mobile App Management" },
-    "description": { "string": "Manage registered devices, push notifications, and app configuration" },
-    "errors": { "fail": { "string": "Operation failed" } },
-    "success": { "unregister": { "string": "Device unregistered" }, "broadcast": { "string": "Push notification sent" } },
-    "config": { "title": { "string": "App Settings" }, "push": { "string": "Push Notifications" }, "biometric": { "string": "Biometric Auth" } },
-    "push": { "title": { "string": "Push Broadcast" }, "title": { "placeholder": { "string": "Notification title" } }, "message": { "placeholder": { "string": "Message..." } }, "broadcast": { "string": "Send" } },
-    "stats": { "title": { "string": "Statistics" }, "devices": { "string": "Registered Devices" } },
-    "devices": { "title": { "string": "All Devices" }, "empty": { "string": "No devices registered yet" } }
+    "title": {
+      "string": "Mobilapphantering"
+    },
+    "description": {
+      "string": "Hantera registrerade enheter, push-notiser och appkonfiguration"
+    },
+    "errors": {
+      "fail": {
+        "string": "Åtgärden misslyckades"
+      }
+    },
+    "success": {
+      "unregister": {
+        "string": "Enhet avregistrerad"
+      },
+      "broadcast": {
+        "string": "Push-notis skickad"
+      }
+    },
+    "config": {
+      "title": {
+        "string": "Appinställningar"
+      },
+      "push": {
+        "string": "Push-notiser"
+      },
+      "biometric": {
+        "string": "Biometrisk autentisering"
+      }
+    },
+    "push": {
+      "title": {
+        "placeholder": {
+          "string": "Notisrubrik"
+        }
+      },
+      "message": {
+        "placeholder": {
+          "string": "Meddelande..."
+        }
+      },
+      "broadcast": {
+        "string": "Skicka"
+      }
+    },
+    "stats": {
+      "title": {
+        "string": "Statistik"
+      },
+      "devices": {
+        "string": "Registrerade enheter"
+      }
+    },
+    "devices": {
+      "title": {
+        "string": "Alla enheter"
+      },
+      "empty": {
+        "string": "Inga enheter registrerade än"
+      }
+    }
   }
 }

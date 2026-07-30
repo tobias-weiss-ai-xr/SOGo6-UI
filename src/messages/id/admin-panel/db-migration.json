@@ -1,7 +1,35 @@
-{ "AP_DBMIG": {
-    "title": { "string": "Database Migration" },
-    "description": { "string": "Track schema versions and migration history. Run migrations from the admin panel." },
-    "current_version": { "string": "Current Schema Version" },
-    "run": { "button": { "string": "Run Migration" }, "running": { "string": "Running..." }, "success": { "string": "Migration applied" }, "error": { "string": "Migration failed" } },
-    "history": { "title": { "string": "Migration History" }, "empty": { "string": "No migrations recorded." } }
-}}
+{
+  "AP_DBMIG": {
+    "title": {
+      "string": "Migrasi Basis Data"
+    },
+    "description": {
+      "string": "Lacak versi skema dan riwayat migrasi. Jalankan migrasi dari panel admin."
+    },
+    "current_version": {
+      "string": "Versi Skema Saat Ini"
+    },
+    "run": {
+      "button": {
+        "string": "Jalankan Migrasi"
+      },
+      "running": {
+        "string": "Sedang berjalan..."
+      },
+      "success": {
+        "string": "Migrasi diterapkan"
+      },
+      "error": {
+        "string": "Migrasi gagal"
+      }
+    },
+    "history": {
+      "title": {
+        "string": "Riwayat Migrasi"
+      },
+      "empty": {
+        "string": "Tidak ada catatan migrasi."
+      }
+    }
+  }
+}

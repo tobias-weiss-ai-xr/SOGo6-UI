@@ -1,1 +1,40 @@
-{ "AI_DRAFT": { "title": { "string": "AI Draft Assistant" }, "description": { "string": "Reply suggestions with tone adjustment. Generates contextual draft replies." }, "input": { "title": { "string": "Original Email" }, "email": { "string": "Email Body" }, "placeholder": { "string": "Paste the email you want to reply to..." } }, "output": { "title": { "string": "Suggested Reply" }, "empty": { "string": "Enter email text and select a tone" } }, "suggest": { "string": "Suggest Reply" }, "errors": { "empty": { "string": "Enter email text" }, "fail": { "string": "Suggestion failed" } } }}
+{
+  "AI_DRAFT": {
+    "title": {
+      "string": "AI-utkastassistent"
+    },
+    "description": {
+      "string": "Svarsförslag med tonjustering. Genererar kontextuella utkast till svar."
+    },
+    "input": {
+      "title": {
+        "string": "Originalmeddelande"
+      },
+      "email": {
+        "string": "E-postinnehåll"
+      },
+      "placeholder": {
+        "string": "Klistra in e-postmeddelandet du vill svara på..."
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Föreslaget svar"
+      },
+      "empty": {
+        "string": "Ange e-posttext och välj en ton"
+      }
+    },
+    "suggest": {
+      "string": "Föreslå svar"
+    },
+    "errors": {
+      "empty": {
+        "string": "Ange e-posttext"
+      },
+      "fail": {
+        "string": "Förslaget misslyckades"
+      }
+    }
+  }
+}

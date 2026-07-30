@@ -1,22 +1,52 @@
-{ "AP_DEBUG": {
-    "title": { "string": "Mailbox Debug" },
-    "description": { "string": "Diagnostic tool for troubleshooting mail delivery issues. View raw email source or parsed headers." },
+{
+  "AP_DEBUG": {
+    "title": {
+      "string": "ดีบักกล่องจดหมาย"
+    },
+    "description": {
+      "string": "เครื่องมือวินิจฉัยสำหรับแก้ไขปัญหาการส่งจดหมาย ดูแหล่งที่มาของอีเมลดิบหรือส่วนหัวที่แยกวิเคราะห์"
+    },
     "query": {
-      "title": { "string": "Debug Query" },
-      "button": { "string": "Inspect" }
+      "title": {
+        "string": "คำสั่งดีบัก"
+      },
+      "button": {
+        "string": "ตรวจสอบ"
+      }
     },
     "labels": {
-      "user": { "string": "User" },
-      "folder": { "string": "IMAP Folder" },
-      "mail_uid": { "string": "Mail UID" },
-      "select_user": { "string": "Select user..." }
+      "user": {
+        "string": "ผู้ใช้"
+      },
+      "folder": {
+        "string": "โฟลเดอร์ IMAP"
+      },
+      "mail_uid": {
+        "string": "UID ของจดหมาย"
+      },
+      "select_user": {
+        "string": "เลือกผู้ใช้..."
+      }
     },
     "result": {
-      "raw": { "title": { "string": "Raw Email Source" } },
-      "headers": { "title": { "string": "Parsed Headers" } }
+      "raw": {
+        "title": {
+          "string": "แหล่งที่มาของอีเมลดิบ"
+        }
+      },
+      "headers": {
+        "title": {
+          "string": "ส่วนหัวที่แยกวิเคราะห์"
+        }
+      }
     },
     "errors": {
-      "fields_required": { "string": "User, folder, and mail UID are required" },
-      "fetch_failed": { "string": "Failed to fetch debug data" }
+      "fields_required": {
+        "string": "ต้องระบุผู้ใช้ โฟลเดอร์ และ UID ของจดหมาย"
+      },
+      "fetch_failed": {
+        "string": "ไม่สามารถดึงข้อมูลดีบักได้"
+      }
     }
-}}
+  }
+}

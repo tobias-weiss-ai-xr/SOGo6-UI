@@ -1,7 +1,34 @@
-{ "AP_HEALTH": {
-    "title": { "string": "System Health" },
-    "description": { "string": "Real-time status of all services in the SOGo stack." },
-    "status": { "all_ok": { "string": "All Systems Operational" }, "degraded": { "string": "Degraded" } },
-    "overview": { "uptime": { "string": "Uptime" }, "version": { "string": "Version" }, "services": { "string": "Services Healthy" } },
-    "errors": { "load_failed": { "string": "Failed to load health data" } }
-}}
+{
+  "AP_HEALTH": {
+    "title": {
+      "string": "สถานะระบบ"
+    },
+    "description": {
+      "string": "สถานะแบบเรียลไทม์ของบริการทั้งหมดใน SOGo stack"
+    },
+    "status": {
+      "all_ok": {
+        "string": "ระบบทั้งหมดทำงานปกติ"
+      },
+      "degraded": {
+        "string": "ทำงานได้ไม่เต็มประสิทธิภาพ"
+      }
+    },
+    "overview": {
+      "uptime": {
+        "string": "เวลาทำงาน"
+      },
+      "version": {
+        "string": "เวอร์ชัน"
+      },
+      "services": {
+        "string": "บริการทำงานปกติ"
+      }
+    },
+    "errors": {
+      "load_failed": {
+        "string": "โหลดข้อมูลสถานะล้มเหลว"
+      }
+    }
+  }
+}

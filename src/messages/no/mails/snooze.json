@@ -1,39 +1,39 @@
 {
-    "MAIL_SNOOZE": {
-        "title": {
-            "string": "Snooze"
-        },
-        "description": {
-            "string": "Choose when this email should reappear in your inbox."
-        },
-        "presets": {
-            "later_today": {
-                "string": "Later today"
-            },
-            "tomorrow": {
-                "string": "Tomorrow"
-            },
-            "this_weekend": {
-                "string": "This weekend"
-            },
-            "next_week": {
-                "string": "Next week"
-            }
-        },
-        "pick_date": {
-            "string": "Pick a date & time"
-        },
-        "pick_date_placeholder": {
-            "string": "Select date..."
-        },
-        "snooze_button": {
-            "string": "Snooze"
-        },
-        "success": {
-            "string": "Email snoozed"
-        },
-        "error": {
-            "string": "Failed to snooze email"
-        }
+  "MAIL_SNOOZE": {
+    "title": {
+      "string": "Utsett"
+    },
+    "description": {
+      "string": "Velg når denne e-posten skal dukke opp igjen i innboksen."
+    },
+    "presets": {
+      "later_today": {
+        "string": "Senere i dag"
+      },
+      "tomorrow": {
+        "string": "I morgen"
+      },
+      "this_weekend": {
+        "string": "I helgen"
+      },
+      "next_week": {
+        "string": "Neste uke"
+      }
+    },
+    "pick_date": {
+      "string": "Velg dato og tid"
+    },
+    "pick_date_placeholder": {
+      "string": "Velg dato..."
+    },
+    "snooze_button": {
+      "string": "Utsett"
+    },
+    "success": {
+      "string": "E-post utsatt"
+    },
+    "error": {
+      "string": "Kunne ikke utsette e-post"
     }
+  }
 }

@@ -1,14 +1,14 @@
 {
-    "FORM_ERRORS": {
-        "required": {
-            "default": {
-                "string": "This field is required"
-            }
-        },
-        "invalid": {
-            "email": {
-                "string": "Invalid email address"
-            }
-        }
+  "FORM_ERRORS": {
+    "required": {
+      "default": {
+        "string": "Αυτό το πεδίο είναι υποχρεωτικό"
+      }
+    },
+    "invalid": {
+      "email": {
+        "string": "Μη έγκυρη διεύθυνση ηλεκτρονικού ταχυδρομείου"
+      }
     }
+  }
 }

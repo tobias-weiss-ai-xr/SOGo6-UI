@@ -1,1 +1,54 @@
-{ "AI_ENRICH": { "title": { "string": "Contact Auto-Enrichment" }, "description": { "string": "Extract phone, title, company, location from email signatures." }, "input": { "title": { "string": "Email Signature" }, "signature": { "string": "Signature Text" }, "placeholder": { "string": "Paste an email signature here..." } }, "output": { "title": { "string": "Extracted Information" }, "empty": { "string": "Enter signature text and click Extract" } }, "extract": { "string": "Extract Info" }, "field": { "phone": { "string": "Phone" }, "title": { "string": "Title" }, "company": { "string": "Company" }, "location": { "string": "Location" } }, "errors": { "empty": { "string": "Enter text" }, "fail": { "string": "Extraction failed" } } }}
+{
+  "AI_ENRICH": {
+    "title": {
+      "string": "การเพิ่มข้อมูลติดต่ออัตโนมัติ"
+    },
+    "description": {
+      "string": "ดึงข้อมูลโทรศัพท์ ตำแหน่ง บริษัท และสถานที่จากลายเซ็นอีเมล"
+    },
+    "input": {
+      "title": {
+        "string": "ลายเซ็นอีเมล"
+      },
+      "signature": {
+        "string": "ข้อความลายเซ็น"
+      },
+      "placeholder": {
+        "string": "วางลายเซ็นอีเมลที่นี่..."
+      }
+    },
+    "output": {
+      "title": {
+        "string": "ข้อมูลที่ดึงออกมา"
+      },
+      "empty": {
+        "string": "กรอกข้อความลายเซ็นและคลิกดึงข้อมูล"
+      }
+    },
+    "extract": {
+      "string": "ดึงข้อมูล"
+    },
+    "field": {
+      "phone": {
+        "string": "โทรศัพท์"
+      },
+      "title": {
+        "string": "ตำแหน่ง"
+      },
+      "company": {
+        "string": "บริษัท"
+      },
+      "location": {
+        "string": "สถานที่"
+      }
+    },
+    "errors": {
+      "empty": {
+        "string": "กรอกข้อความ"
+      },
+      "fail": {
+        "string": "การดึงข้อมูลล้มเหลว"
+      }
+    }
+  }
+}

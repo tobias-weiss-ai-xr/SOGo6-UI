@@ -1,8 +1,54 @@
-{ "AP_MIG": {
-    "title": { "string": "Migration Tools" },
-    "description": { "string": "Import data from external sources — G Suite, M365, Dovecot, Cyrus, or file uploads." },
-    "wizard": { "title": { "string": "Start Migration" }, "source": { "string": "Source" }, "select_source": { "string": "Choose a source..." }, "user": { "string": "Target User" }, "select_user": { "string": "Select user..." } },
-    "start": { "button": { "string": "Start Migration" }, "running": { "string": "Starting..." }, "success": { "string": "Migration started" }, "error": { "string": "Migration failed" } },
-    "history": { "title": { "string": "Migration History" }, "empty": { "string": "No migrations yet." } },
-    "errors": { "fields": { "string": "Source and user are required" } }
-}}
+{
+  "AP_MIG": {
+    "title": {
+      "string": "Migratietools"
+    },
+    "description": {
+      "string": "Importeer gegevens uit externe bronnen — G Suite, M365, Dovecot, Cyrus of bestandsuploads."
+    },
+    "wizard": {
+      "title": {
+        "string": "Migratie starten"
+      },
+      "source": {
+        "string": "Bron"
+      },
+      "select_source": {
+        "string": "Kies een bron..."
+      },
+      "user": {
+        "string": "Doelgebruiker"
+      },
+      "select_user": {
+        "string": "Selecteer gebruiker..."
+      }
+    },
+    "start": {
+      "button": {
+        "string": "Migratie starten"
+      },
+      "running": {
+        "string": "Bezig met starten..."
+      },
+      "success": {
+        "string": "Migratie gestart"
+      },
+      "error": {
+        "string": "Migratie mislukt"
+      }
+    },
+    "history": {
+      "title": {
+        "string": "Migratiegeschiedenis"
+      },
+      "empty": {
+        "string": "Nog geen migraties."
+      }
+    },
+    "errors": {
+      "fields": {
+        "string": "Bron en gebruiker zijn verplicht"
+      }
+    }
+  }
+}

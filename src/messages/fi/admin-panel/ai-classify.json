@@ -1,1 +1,46 @@
-{ "AI_CLASSIFY": { "title": { "string": "Smart Email Classification" }, "description": { "string": "Auto-label emails: newsletter, invoice, notification, social, personal." }, "input": { "title": { "string": "Input Email" }, "subject": { "string": "Subject" }, "sender": { "string": "Sender" }, "body": { "string": "Body" }, "placeholder": { "string": "Paste email content..." } }, "output": { "title": { "string": "Classification Results" }, "empty": { "string": "Enter text and click Classify" } }, "classify": { "string": "Classify" }, "errors": { "empty": { "string": "Enter email text" }, "fail": { "string": "Classification failed" } } }}
+{
+  "AI_CLASSIFY": {
+    "title": {
+      "string": "Älykäs sähköpostin luokittelu"
+    },
+    "description": {
+      "string": "Automaattinen sähköpostien merkintä: uutiskirje, lasku, ilmoitus, sosiaalinen, henkilökohtainen."
+    },
+    "input": {
+      "title": {
+        "string": "Syötteen sähköposti"
+      },
+      "subject": {
+        "string": "Aihe"
+      },
+      "sender": {
+        "string": "Lähettäjä"
+      },
+      "body": {
+        "string": "Viesti"
+      },
+      "placeholder": {
+        "string": "Liitä sähköpostin sisältö tähän..."
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Luokittelutulokset"
+      },
+      "empty": {
+        "string": "Syötä teksti ja klikkaa Luokittele"
+      }
+    },
+    "classify": {
+      "string": "Luokittele"
+    },
+    "errors": {
+      "empty": {
+        "string": "Syötä sähköpostin teksti"
+      },
+      "fail": {
+        "string": "Luokittelu epäonnistui"
+      }
+    }
+  }
+}

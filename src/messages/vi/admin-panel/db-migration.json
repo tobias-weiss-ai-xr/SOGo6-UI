@@ -1,7 +1,35 @@
-{ "AP_DBMIG": {
-    "title": { "string": "Database Migration" },
-    "description": { "string": "Track schema versions and migration history. Run migrations from the admin panel." },
-    "current_version": { "string": "Current Schema Version" },
-    "run": { "button": { "string": "Run Migration" }, "running": { "string": "Running..." }, "success": { "string": "Migration applied" }, "error": { "string": "Migration failed" } },
-    "history": { "title": { "string": "Migration History" }, "empty": { "string": "No migrations recorded." } }
-}}
+{
+  "AP_DBMIG": {
+    "title": {
+      "string": "Di chuyển Cơ sở dữ liệu"
+    },
+    "description": {
+      "string": "Theo dõi phiên bản schema và lịch sử di chuyển. Chạy di chuyển từ bảng điều khiển quản trị."
+    },
+    "current_version": {
+      "string": "Phiên bản Schema Hiện tại"
+    },
+    "run": {
+      "button": {
+        "string": "Chạy Di chuyển"
+      },
+      "running": {
+        "string": "Đang chạy..."
+      },
+      "success": {
+        "string": "Di chuyển đã được áp dụng"
+      },
+      "error": {
+        "string": "Di chuyển thất bại"
+      }
+    },
+    "history": {
+      "title": {
+        "string": "Lịch sử Di chuyển"
+      },
+      "empty": {
+        "string": "Không có bản ghi di chuyển nào."
+      }
+    }
+  }
+}

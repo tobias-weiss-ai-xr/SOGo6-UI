@@ -1,37 +1,37 @@
 {
-    "US_ADDRESS_BOOKS": {
-        "create": {
-            "string": "Add contact category",
-            "context": "Button text to add a new address book category"
-        },
-        "title": {
-            "string": "Address Books",
-            "context": "Title for the address books settings page"
-        },
-        "accessibility": {
-            "icon": {
-                "delete": {
-                    "string": "Delete {name}",
-                    "context": "Accessibility message for the delete icon"
-                }
-            }
-        },
-        "notification": {
-            "title": "Notifications",
-            "string": "Send email notification when an address book is created",
-            "context": "Label for the notification setting"
-        },
-        "categories": {
-            "title": "Categories",
-            "Work": "Work",
-            "Family": "Family",
-            "Friends": "Friends"
-        },
-        "color": {
-            "title": "Couleur"
-        },
-        "validation": {
-            "category-name-required": "Category name is required"
+  "US_ADDRESS_BOOKS": {
+    "create": {
+      "string": "Adaugă categorie de contact",
+      "context": "Button text to add a new address book category"
+    },
+    "title": {
+      "string": "Cărți de adrese",
+      "context": "Title for the address books settings page"
+    },
+    "accessibility": {
+      "icon": {
+        "delete": {
+          "string": "Șterge {name}",
+          "context": "Accessibility message for the delete icon"
         }
+      }
+    },
+    "notification": {
+      "title": "Notifications",
+      "string": "Trimite notificare prin e-mail când o carte de adrese este creată",
+      "context": "Label for the notification setting"
+    },
+    "categories": {
+      "title": "Categories",
+      "Work": "Work",
+      "Family": "Family",
+      "Friends": "Friends"
+    },
+    "color": {
+      "title": "Couleur"
+    },
+    "validation": {
+      "category-name-required": "Category name is required"
     }
+  }
 }

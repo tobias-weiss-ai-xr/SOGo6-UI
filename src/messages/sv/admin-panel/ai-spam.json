@@ -1,1 +1,49 @@
-{ "AI_SPAM": { "title": { "string": "Intelligent Spam Filter" }, "description": { "string": "Real-time spam scoring with pattern analysis, sender reputation, and content heuristics." }, "input": { "title": { "string": "Email to Score" }, "subject": { "string": "Subject" }, "sender": { "string": "Sender" }, "body": { "string": "Body" }, "placeholder": { "string": "Paste the email body..." } }, "output": { "title": { "string": "Spam Score" }, "empty": { "string": "Enter email content and click Score" }, "signals": { "string": "Detected Signals" } }, "score": { "string": "Score Email" }, "errors": { "empty": { "string": "Enter subject or body" }, "fail": { "string": "Scoring failed" } } }}
+{
+  "AI_SPAM": {
+    "title": {
+      "string": "Intelligent skräppostfilter"
+    },
+    "description": {
+      "string": "Spampoäng i realtid med mönsteranalys, avsändarens rykte och innehållsheuristik."
+    },
+    "input": {
+      "title": {
+        "string": "E-post att poängsätta"
+      },
+      "subject": {
+        "string": "Ämne"
+      },
+      "sender": {
+        "string": "Avsändare"
+      },
+      "body": {
+        "string": "Meddelandetext"
+      },
+      "placeholder": {
+        "string": "Klistra in e-postens innehåll här..."
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Skräppostpoäng"
+      },
+      "empty": {
+        "string": "Ange e-postinnehåll och klicka på Poängsätt"
+      },
+      "signals": {
+        "string": "Upptäckta signaler"
+      }
+    },
+    "score": {
+      "string": "Poängsätt e-post"
+    },
+    "errors": {
+      "empty": {
+        "string": "Ange ämne eller meddelandetext"
+      },
+      "fail": {
+        "string": "Poängsättning misslyckades"
+      }
+    }
+  }
+}

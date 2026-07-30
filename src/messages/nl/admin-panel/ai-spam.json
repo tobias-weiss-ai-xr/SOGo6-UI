@@ -1,1 +1,49 @@
-{ "AI_SPAM": { "title": { "string": "Intelligent Spam Filter" }, "description": { "string": "Real-time spam scoring with pattern analysis, sender reputation, and content heuristics." }, "input": { "title": { "string": "Email to Score" }, "subject": { "string": "Subject" }, "sender": { "string": "Sender" }, "body": { "string": "Body" }, "placeholder": { "string": "Paste the email body..." } }, "output": { "title": { "string": "Spam Score" }, "empty": { "string": "Enter email content and click Score" }, "signals": { "string": "Detected Signals" } }, "score": { "string": "Score Email" }, "errors": { "empty": { "string": "Enter subject or body" }, "fail": { "string": "Scoring failed" } } }}
+{
+  "AI_SPAM": {
+    "title": {
+      "string": "Intelligente Spamfilter"
+    },
+    "description": {
+      "string": "Echtijdse spamscoring met patroonanalyse, afzenderreputatie en inhoudsheuristieken."
+    },
+    "input": {
+      "title": {
+        "string": "E-mail om te scoren"
+      },
+      "subject": {
+        "string": "Onderwerp"
+      },
+      "sender": {
+        "string": "Afzender"
+      },
+      "body": {
+        "string": "Inhoud"
+      },
+      "placeholder": {
+        "string": "Plak hier de e-mailinhoud..."
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Spamscore"
+      },
+      "empty": {
+        "string": "Voer e-mailinhoud in en klik op Scoren"
+      },
+      "signals": {
+        "string": "Gedetecteerde signalen"
+      }
+    },
+    "score": {
+      "string": "E-mail scoren"
+    },
+    "errors": {
+      "empty": {
+        "string": "Voer onderwerp of inhoud in"
+      },
+      "fail": {
+        "string": "Scoren mislukt"
+      }
+    }
+  }
+}

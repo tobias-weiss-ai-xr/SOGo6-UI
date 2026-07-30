@@ -1,16 +1,44 @@
-{ "AP_AUDIT": {
-    "title": { "string": "Audit Log" },
-    "description": { "string": "Tamper-proof log of admin and user actions. Entries are append-only and cannot be modified or deleted." },
-    "table": {
-      "timestamp": { "string": "Timestamp" },
-      "action": { "string": "Action" },
-      "actor": { "string": "Actor" },
-      "target": { "string": "Target" },
-      "detail": { "string": "Detail" },
-      "ip": { "string": "IP Address" },
-      "no_entries": { "string": "No audit log entries found." }
+{
+  "AP_AUDIT": {
+    "title": {
+      "string": "Nhật ký Kiểm toán"
     },
-    "count_one": { "string": "entry" },
-    "count_many": { "string": "entries" },
-    "errors": { "load_failed": { "string": "Failed to load audit log" } }
-}}
+    "description": {
+      "string": "Nhật ký chống can thiệp ghi lại các hành động của quản trị viên và người dùng. Các mục được thêm vào và không thể sửa đổi hoặc xóa."
+    },
+    "table": {
+      "timestamp": {
+        "string": "Thời gian"
+      },
+      "action": {
+        "string": "Hành động"
+      },
+      "actor": {
+        "string": "Người thực hiện"
+      },
+      "target": {
+        "string": "Đối tượng"
+      },
+      "detail": {
+        "string": "Chi tiết"
+      },
+      "ip": {
+        "string": "Địa chỉ IP"
+      },
+      "no_entries": {
+        "string": "Không tìm thấy mục nhật ký kiểm toán nào."
+      }
+    },
+    "count_one": {
+      "string": "mục"
+    },
+    "count_many": {
+      "string": "mục"
+    },
+    "errors": {
+      "load_failed": {
+        "string": "Không tải được nhật ký kiểm toán"
+      }
+    }
+  }
+}

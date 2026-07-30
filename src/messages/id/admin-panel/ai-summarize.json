@@ -1,1 +1,46 @@
-{ "AI_SUMMARIZE": { "title": { "string": "Email Summarization" }, "description": { "string": "TL;DR for long email threads. Extractive summarization returns the most important sentences." }, "input": { "title": { "string": "Input Email" }, "text": { "string": "Email Text" }, "placeholder": { "string": "Paste the email body here..." }, "sentences": { "string": "Max Sentences" } }, "output": { "title": { "string": "Summary" }, "empty": { "string": "Enter text and click Summarize" } }, "summarize": { "string": "Summarize" }, "loading": { "string": "Summarizing..." }, "errors": { "empty": { "string": "Enter text to summarize" }, "fail": { "string": "Summarization failed" } } }}
+{
+  "AI_SUMMARIZE": {
+    "title": {
+      "string": "Ringkasan Email"
+    },
+    "description": {
+      "string": "TL;DR untuk utas email panjang. Ringkasan ekstraktif mengembalikan kalimat-kalimat terpenting."
+    },
+    "input": {
+      "title": {
+        "string": "Email Masukan"
+      },
+      "text": {
+        "string": "Teks Email"
+      },
+      "placeholder": {
+        "string": "Tempelkan isi email di sini..."
+      },
+      "sentences": {
+        "string": "Maksimal Kalimat"
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Ringkasan"
+      },
+      "empty": {
+        "string": "Masukkan teks dan klik Ringkas"
+      }
+    },
+    "summarize": {
+      "string": "Ringkas"
+    },
+    "loading": {
+      "string": "Sedang meringkas..."
+    },
+    "errors": {
+      "empty": {
+        "string": "Masukkan teks untuk diringkas"
+      },
+      "fail": {
+        "string": "Peringkasan gagal"
+      }
+    }
+  }
+}

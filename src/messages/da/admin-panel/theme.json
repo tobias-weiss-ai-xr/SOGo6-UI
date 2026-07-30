@@ -1,135 +1,135 @@
 {
   "AP_THEME": {
     "title": {
-      "string": "Theme Settings"
+      "string": "Tema-indstillinger"
     },
     "description": {
-      "string": "Customize the look and feel of the SOGo interface"
+      "string": "Tilpas udseende og fornemmelse af SOGo-grænsefladen"
     },
     "form_title": {
-      "string": "Custom Theme"
+      "string": "Brugerdefineret tema"
     },
     "form_description": {
-      "string": "Configure colors, logo, and custom CSS for the groupware interface"
+      "string": "Konfigurer farver, logo og brugerdefineret CSS til groupware-grænsefladen"
     },
     "fields": {
       "primary": {
         "label": {
-          "string": "Primary Color"
+          "string": "Primær farve"
         },
         "description": {
-          "string": "HSL values for the primary color (e.g. 180 25% 40%)"
+          "string": "HSL-værdier for den primære farve (f.eks. 180 25% 40%)"
         }
       },
       "primary_foreground": {
         "label": {
-          "string": "Primary Foreground"
+          "string": "Primær forgrund"
         },
         "description": {
-          "string": "Text color on primary backgrounds"
+          "string": "Tekstfarve på primære baggrunde"
         }
       },
       "background": {
         "label": {
-          "string": "Background"
+          "string": "Baggrund"
         },
         "description": {
-          "string": "HSL values for the page background"
+          "string": "HSL-værdier for sidebaggrunden"
         }
       },
       "foreground": {
         "label": {
-          "string": "Foreground"
+          "string": "Forgrund"
         },
         "description": {
-          "string": "Default text color"
+          "string": "Standard tekstfarve"
         }
       },
       "sidebar_background": {
         "label": {
-          "string": "Sidebar Background"
+          "string": "Sidepanel-baggrund"
         },
         "description": {
-          "string": "HSL values for the sidebar background"
+          "string": "HSL-værdier for sidepanel-baggrunden"
         }
       },
       "sidebar_foreground": {
         "label": {
-          "string": "Sidebar Foreground"
+          "string": "Sidepanel-forgrund"
         },
         "description": {
-          "string": "Text color in the sidebar"
+          "string": "Tekstfarve i sidepanelet"
         }
       },
       "sidebar_primary": {
         "label": {
-          "string": "Sidebar Primary"
+          "string": "Sidepanel-primærfarve"
         },
         "description": {
-          "string": "Primary accent color in the sidebar"
+          "string": "Primær accentfarve i sidepanelet"
         }
       },
       "sidebar_accent": {
         "label": {
-          "string": "Sidebar Accent"
+          "string": "Sidepanel-accentfarve"
         },
         "description": {
-          "string": "Accent color in the sidebar"
+          "string": "Accentfarve i sidepanelet"
         }
       },
       "header_background": {
         "label": {
-          "string": "Header Background"
+          "string": "Headerbaggrund"
         },
         "description": {
-          "string": "HSL values for the top header bar"
+          "string": "HSL-værdier for den øverste headerlinje"
         }
       },
       "header_foreground": {
         "label": {
-          "string": "Header Foreground"
+          "string": "Headerforgrund"
         },
         "description": {
-          "string": "Text color in the header"
+          "string": "Tekstfarve i headeren"
         }
       },
       "logo_url": {
         "label": {
-          "string": "Logo URL"
+          "string": "Logo-URL"
         },
         "description": {
-          "string": "URL of the custom logo image (optional)"
+          "string": "URL for det brugerdefinerede logo-billede (valgfrit)"
         }
       },
       "custom_css": {
         "label": {
-          "string": "Custom CSS"
+          "string": "Brugerdefineret CSS"
         },
         "description": {
-          "string": "Additional CSS rules to inject (optional)"
+          "string": "Yderligere CSS-regler, der skal indsættes (valgfrit)"
         }
       }
     },
     "save": {
-      "string": "Save Changes"
+      "string": "Gem ændringer"
     },
     "saving": {
-      "string": "Saving…"
+      "string": "Gemmer…"
     },
     "saved": {
-      "string": "Theme settings saved successfully"
+      "string": "Tema-indstillinger gemt succesfuldt"
     },
     "save_error": {
-      "string": "Failed to save: {message}"
+      "string": "Kunne ikke gemme: {message}"
     },
     "unsaved_changes": {
-      "string": "You have unsaved changes"
+      "string": "Du har ugemte ændringer"
     },
     "load_error": {
-      "string": "Failed to load theme settings"
+      "string": "Kunne ikke indlæse tema-indstillinger"
     },
     "retry": {
-      "string": "Retry"
+      "string": "Prøv igen"
     }
   }
 }

@@ -1,12 +1,65 @@
 {
   "MOBILE": {
-    "title": { "string": "Mobile App Management" },
-    "description": { "string": "Manage registered devices, push notifications, and app configuration" },
-    "errors": { "fail": { "string": "Operation failed" } },
-    "success": { "unregister": { "string": "Device unregistered" }, "broadcast": { "string": "Push notification sent" } },
-    "config": { "title": { "string": "App Settings" }, "push": { "string": "Push Notifications" }, "biometric": { "string": "Biometric Auth" } },
-    "push": { "title": { "string": "Push Broadcast" }, "title": { "placeholder": { "string": "Notification title" } }, "message": { "placeholder": { "string": "Message..." } }, "broadcast": { "string": "Send" } },
-    "stats": { "title": { "string": "Statistics" }, "devices": { "string": "Registered Devices" } },
-    "devices": { "title": { "string": "All Devices" }, "empty": { "string": "No devices registered yet" } }
+    "title": {
+      "string": "Gestionarea aplicației mobile"
+    },
+    "description": {
+      "string": "Gestionați dispozitivele înregistrate, notificările push și configurarea aplicației"
+    },
+    "errors": {
+      "fail": {
+        "string": "Operațiunea a eșuat"
+      }
+    },
+    "success": {
+      "unregister": {
+        "string": "Dispozitiv dezînregistrat"
+      },
+      "broadcast": {
+        "string": "Notificare push trimisă"
+      }
+    },
+    "config": {
+      "title": {
+        "string": "Setări aplicație"
+      },
+      "push": {
+        "string": "Notificări push"
+      },
+      "biometric": {
+        "string": "Autentificare biometrică"
+      }
+    },
+    "push": {
+      "title": {
+        "placeholder": {
+          "string": "Titlul notificării"
+        }
+      },
+      "message": {
+        "placeholder": {
+          "string": "Mesaj..."
+        }
+      },
+      "broadcast": {
+        "string": "Trimite"
+      }
+    },
+    "stats": {
+      "title": {
+        "string": "Statistici"
+      },
+      "devices": {
+        "string": "Dispozitive înregistrate"
+      }
+    },
+    "devices": {
+      "title": {
+        "string": "Toate dispozitivele"
+      },
+      "empty": {
+        "string": "Niciun dispozitiv înregistrat încă"
+      }
+    }
   }
 }

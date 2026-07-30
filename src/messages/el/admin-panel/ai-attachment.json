@@ -1,1 +1,40 @@
-{ "AI_ATTACH": { "title": { "string": "Smart Attachment Actions" }, "description": { "string": "Auto-detect document type and suggest save, forward, or archive actions." }, "input": { "title": { "string": "Attachment" }, "filename": { "string": "Filename" } }, "output": { "title": { "string": "Analysis" }, "empty": { "string": "Enter a filename" }, "preview": { "string": "Can Preview" } }, "classify": { "string": "Classify" }, "errors": { "empty": { "string": "Enter a filename" }, "fail": { "string": "Classification failed" } } }}
+{
+  "AI_ATTACH": {
+    "title": {
+      "string": "Έξυπνες Ενέργειες Συνημμένων"
+    },
+    "description": {
+      "string": "Αυτόματη ανίχνευση τύπου εγγράφου και πρόταση αποθήκευσης, προώθησης ή αρχειοθέτησης."
+    },
+    "input": {
+      "title": {
+        "string": "Συνημμένο"
+      },
+      "filename": {
+        "string": "Όνομα αρχείου"
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Ανάλυση"
+      },
+      "empty": {
+        "string": "Εισαγάγετε ένα όνομα αρχείου"
+      },
+      "preview": {
+        "string": "Μπορεί να προεπισκοπηθεί"
+      }
+    },
+    "classify": {
+      "string": "Ταξινόμηση"
+    },
+    "errors": {
+      "empty": {
+        "string": "Εισαγάγετε ένα όνομα αρχείου"
+      },
+      "fail": {
+        "string": "Η ταξινόμηση απέτυχε"
+      }
+    }
+  }
+}

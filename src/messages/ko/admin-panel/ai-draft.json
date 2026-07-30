@@ -1,1 +1,40 @@
-{ "AI_DRAFT": { "title": { "string": "AI Draft Assistant" }, "description": { "string": "Reply suggestions with tone adjustment. Generates contextual draft replies." }, "input": { "title": { "string": "Original Email" }, "email": { "string": "Email Body" }, "placeholder": { "string": "Paste the email you want to reply to..." } }, "output": { "title": { "string": "Suggested Reply" }, "empty": { "string": "Enter email text and select a tone" } }, "suggest": { "string": "Suggest Reply" }, "errors": { "empty": { "string": "Enter email text" }, "fail": { "string": "Suggestion failed" } } }}
+{
+  "AI_DRAFT": {
+    "title": {
+      "string": "AI 초안 보조 도구"
+    },
+    "description": {
+      "string": "어조 조절이 가능한 답장 제안. 문맥에 맞는 초안 답장을 생성합니다."
+    },
+    "input": {
+      "title": {
+        "string": "원본 이메일"
+      },
+      "email": {
+        "string": "이메일 본문"
+      },
+      "placeholder": {
+        "string": "답장하고 싶은 이메일을 붙여넣으세요..."
+      }
+    },
+    "output": {
+      "title": {
+        "string": "제안된 답장"
+      },
+      "empty": {
+        "string": "이메일 텍스트를 입력하고 어조를 선택하세요"
+      }
+    },
+    "suggest": {
+      "string": "답장 제안"
+    },
+    "errors": {
+      "empty": {
+        "string": "이메일 텍스트를 입력하세요"
+      },
+      "fail": {
+        "string": "제안 실패"
+      }
+    }
+  }
+}

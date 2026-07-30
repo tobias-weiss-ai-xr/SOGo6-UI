@@ -1,1 +1,49 @@
-{ "AI_ANOMALY": { "title": { "string": "Anomaly Detection" }, "description": { "string": "Flag unusual sending patterns: bulk email, odd hours, new recipients." }, "input": { "title": { "string": "Sending Pattern" }, "recipients": { "string": "Recipient Count" }, "hour": { "string": "Hour (0-23)" }, "new_ratio": { "string": "New Recipient Ratio" } }, "output": { "title": { "string": "Analysis Result" }, "empty": { "string": "Enter values and click Analyze" }, "anomaly": { "string": "Anomaly Detected!" }, "normal": { "string": "Pattern Normal" }, "score": { "string": "Risk Score" } }, "analyze": { "string": "Analyze" }, "errors": { "fail": { "string": "Analysis failed" } } }}
+{
+  "AI_ANOMALY": {
+    "title": {
+      "string": "Deteksi Anomali"
+    },
+    "description": {
+      "string": "Tandai pola pengiriman yang tidak biasa: email massal, jam aneh, penerima baru."
+    },
+    "input": {
+      "title": {
+        "string": "Pola Pengiriman"
+      },
+      "recipients": {
+        "string": "Jumlah Penerima"
+      },
+      "hour": {
+        "string": "Jam (0-23)"
+      },
+      "new_ratio": {
+        "string": "Rasio Penerima Baru"
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Hasil Analisis"
+      },
+      "empty": {
+        "string": "Masukkan nilai dan klik Analisis"
+      },
+      "anomaly": {
+        "string": "Anomali Terdeteksi!"
+      },
+      "normal": {
+        "string": "Pola Normal"
+      },
+      "score": {
+        "string": "Skor Risiko"
+      }
+    },
+    "analyze": {
+      "string": "Analisis"
+    },
+    "errors": {
+      "fail": {
+        "string": "Analisis gagal"
+      }
+    }
+  }
+}

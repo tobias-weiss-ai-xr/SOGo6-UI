@@ -1,1 +1,40 @@
-{ "AP_FREEBUSY": { "title": { "string": "Free/Busy Lookup" }, "description": { "string": "Visual attendee schedule overlay. Check availability when creating events." }, "form": { "title": { "string": "Check Availability" }, "participants": { "string": "Participants" }, "start": { "string": "Start" }, "end": { "string": "End" }, "lookup": { "string": "Look Up" } }, "results": { "title": { "string": "Busy Slots" } }, "errors": { "fields": { "string": "At least one participant is required" } }, "error": { "string": "Lookup failed" } }}
+{
+  "AP_FREEBUSY": {
+    "title": {
+      "string": "예약 가능 여부 조회"
+    },
+    "description": {
+      "string": "시각적 참석자 일정 오버레이. 이벤트 생성 시 가용성 확인."
+    },
+    "form": {
+      "title": {
+        "string": "가용성 확인"
+      },
+      "participants": {
+        "string": "참석자"
+      },
+      "start": {
+        "string": "시작"
+      },
+      "end": {
+        "string": "종료"
+      },
+      "lookup": {
+        "string": "조회"
+      }
+    },
+    "results": {
+      "title": {
+        "string": "바쁜 시간대"
+      }
+    },
+    "errors": {
+      "fields": {
+        "string": "최소 한 명의 참석자가 필요합니다"
+      }
+    },
+    "error": {
+      "string": "조회 실패"
+    }
+  }
+}

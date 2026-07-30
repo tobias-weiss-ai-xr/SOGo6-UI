@@ -1,1 +1,40 @@
-{ "AP_FREEBUSY": { "title": { "string": "Free/Busy Lookup" }, "description": { "string": "Visual attendee schedule overlay. Check availability when creating events." }, "form": { "title": { "string": "Check Availability" }, "participants": { "string": "Participants" }, "start": { "string": "Start" }, "end": { "string": "End" }, "lookup": { "string": "Look Up" } }, "results": { "title": { "string": "Busy Slots" } }, "errors": { "fields": { "string": "At least one participant is required" } }, "error": { "string": "Lookup failed" } }}
+{
+  "AP_FREEBUSY": {
+    "title": {
+      "string": "空き/予定確認"
+    },
+    "description": {
+      "string": "参加者のスケジュールを視覚的に重ねて表示。イベント作成時の空き状況を確認できます。"
+    },
+    "form": {
+      "title": {
+        "string": "空き状況を確認"
+      },
+      "participants": {
+        "string": "参加者"
+      },
+      "start": {
+        "string": "開始"
+      },
+      "end": {
+        "string": "終了"
+      },
+      "lookup": {
+        "string": "検索"
+      }
+    },
+    "results": {
+      "title": {
+        "string": "予定が入っている時間帯"
+      }
+    },
+    "errors": {
+      "fields": {
+        "string": "少なくとも1人の参加者が必要です"
+      }
+    },
+    "error": {
+      "string": "検索に失敗しました"
+    }
+  }
+}

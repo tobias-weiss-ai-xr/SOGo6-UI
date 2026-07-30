@@ -1,12 +1,65 @@
 {
   "MOBILE": {
-    "title": { "string": "Mobile App Management" },
-    "description": { "string": "Manage registered devices, push notifications, and app configuration" },
-    "errors": { "fail": { "string": "Operation failed" } },
-    "success": { "unregister": { "string": "Device unregistered" }, "broadcast": { "string": "Push notification sent" } },
-    "config": { "title": { "string": "App Settings" }, "push": { "string": "Push Notifications" }, "biometric": { "string": "Biometric Auth" } },
-    "push": { "title": { "string": "Push Broadcast" }, "title": { "placeholder": { "string": "Notification title" } }, "message": { "placeholder": { "string": "Message..." } }, "broadcast": { "string": "Send" } },
-    "stats": { "title": { "string": "Statistics" }, "devices": { "string": "Registered Devices" } },
-    "devices": { "title": { "string": "All Devices" }, "empty": { "string": "No devices registered yet" } }
+    "title": {
+      "string": "モバイルアプリ管理"
+    },
+    "description": {
+      "string": "登録デバイス、プッシュ通知、アプリ設定を管理"
+    },
+    "errors": {
+      "fail": {
+        "string": "操作に失敗しました"
+      }
+    },
+    "success": {
+      "unregister": {
+        "string": "デバイスを登録解除しました"
+      },
+      "broadcast": {
+        "string": "プッシュ通知を送信しました"
+      }
+    },
+    "config": {
+      "title": {
+        "string": "アプリ設定"
+      },
+      "push": {
+        "string": "プッシュ通知"
+      },
+      "biometric": {
+        "string": "生体認証"
+      }
+    },
+    "push": {
+      "title": {
+        "placeholder": {
+          "string": "通知タイトル"
+        }
+      },
+      "message": {
+        "placeholder": {
+          "string": "メッセージ..."
+        }
+      },
+      "broadcast": {
+        "string": "送信"
+      }
+    },
+    "stats": {
+      "title": {
+        "string": "統計"
+      },
+      "devices": {
+        "string": "登録デバイス数"
+      }
+    },
+    "devices": {
+      "title": {
+        "string": "すべてのデバイス"
+      },
+      "empty": {
+        "string": "まだデバイスが登録されていません"
+      }
+    }
   }
 }

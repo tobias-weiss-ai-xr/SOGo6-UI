@@ -1,25 +1,61 @@
-{ "AP_BULK": {
-    "title": { "string": "Bulk User Management" },
-    "description": { "string": "Import and export users in bulk using CSV files." },
+{
+  "AP_BULK": {
+    "title": {
+      "string": "إدارة المستخدمين الجماعي"
+    },
+    "description": {
+      "string": "استيراد وتصدير المستخدمين بشكل جماعي باستخدام ملفات CSV."
+    },
     "export": {
-      "title": { "string": "Export Users" },
-      "description": { "string": "Download all users as a CSV file." },
-      "format": { "string": "CSV file (.csv)" },
-      "button": { "string": "Export CSV" },
-      "success": { "string": "Export downloaded" },
-      "error": { "string": "Export failed" }
+      "title": {
+        "string": "تصدير المستخدمين"
+      },
+      "description": {
+        "string": "تحميل جميع المستخدمين كملف CSV."
+      },
+      "format": {
+        "string": "ملف CSV (.csv)"
+      },
+      "button": {
+        "string": "تصدير CSV"
+      },
+      "success": {
+        "string": "تم تحميل التصدير"
+      },
+      "error": {
+        "string": "فشل التصدير"
+      }
     },
     "import": {
-      "title": { "string": "Import Users" },
-      "description": { "string": "Upload a CSV file with user data to create or update accounts." },
-      "dropzone": { "string": "Click to upload CSV" },
-      "button": { "string": "Import CSV" },
-      "remove": { "string": "Remove file" },
-      "success": { "string": "Imported: {created} created, {updated} updated" },
-      "error": { "string": "Import failed" }
+      "title": {
+        "string": "استيراد المستخدمين"
+      },
+      "description": {
+        "string": "رفع ملف CSV يحتوي على بيانات المستخدمين لإنشاء حسابات أو تحديثها."
+      },
+      "dropzone": {
+        "string": "انقر لرفع ملف CSV"
+      },
+      "button": {
+        "string": "استيراد CSV"
+      },
+      "remove": {
+        "string": "إزالة الملف"
+      },
+      "success": {
+        "string": "تم الاستيراد: {created} تم إنشاؤه، {updated} تم تحديثه"
+      },
+      "error": {
+        "string": "فشل الاستيراد"
+      }
     },
     "format": {
-      "title": { "string": "CSV Format" },
-      "hint": { "string": "First row must be the header. uid, cn, sn, givenName, mail are required. password is optional (random if blank)." }
+      "title": {
+        "string": "تنسيق CSV"
+      },
+      "hint": {
+        "string": "يجب أن يكون الصف الأول عنوانًا. uid, cn, sn, givenName, mail مطلوبة. password اختياري (عشوائي إذا فارغ)."
+      }
     }
-}}
+  }
+}

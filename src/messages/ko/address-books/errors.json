@@ -1,107 +1,107 @@
 {
   "ADDRESS_BOOKS_ERRORS": {
     "list_member_invalid": {
-      "string": "One or more selected members are not contacts in this address book.",
+      "string": "선택한 멤버 중 하나 이상이 이 주소록의 연락처가 아닙니다.",
       "context": "Inline error when a distribution list member is invalid."
     },
     "addressbook_not_found": {
-      "string": "The address book could not be found.",
+      "string": "주소록을 찾을 수 없습니다.",
       "context": "Error when an address book is missing."
     },
     "addressbook_duplicate": {
-      "string": "An address book with this name already exists.",
+      "string": "이 이름의 주소록이 이미 존재합니다.",
       "context": "Toast when address book creation conflicts."
     },
     "contact_not_found": {
-      "string": "The contact could not be found.",
+      "string": "연락처를 찾을 수 없습니다.",
       "context": "Error when a contact is missing."
     },
     "contact_duplicate": {
-      "string": "A contact with this identifier already exists.",
+      "string": "이 식별자의 연락처가 이미 존재합니다.",
       "context": "Toast when contact creation conflicts."
     },
     "contact_persist_failed": {
-      "string": "The contact could not be saved.",
+      "string": "연락처를 저장할 수 없습니다.",
       "context": "Error when contact creation fails on the server."
     },
     "contact_update_failed": {
-      "string": "The contact could not be updated.",
+      "string": "연락처를 업데이트할 수 없습니다.",
       "context": "Error when contact update fails on the server."
     },
     "operation_not_supported": {
-      "string": "This operation is not supported for this address book.",
+      "string": "이 주소록에서는 이 작업이 지원되지 않습니다.",
       "context": "Error when mutating a non-local address book source."
     },
     "list_not_found": {
-      "string": "The distribution list could not be found.",
+      "string": "배포 목록을 찾을 수 없습니다.",
       "context": "Error when a distribution list is missing."
     },
     "list_duplicate": {
-      "string": "A distribution list with this name already exists.",
+      "string": "이 이름의 배포 목록이 이미 존재합니다.",
       "context": "Toast when list creation conflicts."
     },
     "list_persist_failed": {
-      "string": "The distribution list could not be saved.",
+      "string": "배포 목록을 저장할 수 없습니다.",
       "context": "Error when list creation fails on the server."
     },
     "list_update_failed": {
-      "string": "The distribution list could not be updated.",
+      "string": "배포 목록을 업데이트할 수 없습니다.",
       "context": "Error when list update fails on the server."
     },
     "access_denied": {
-      "string": "You do not have permission to modify this address book.",
+      "string": "이 주소록을 수정할 권한이 없습니다.",
       "context": "Toast when write access is denied."
     },
     "read_only": {
-      "string": "This address book is read-only.",
+      "string": "이 주소록은 읽기 전용입니다.",
       "context": "Toast when mutating a read-only address book."
     },
     "export_format_unsupported": {
-      "string": "The selected export format is not supported.",
+      "string": "선택한 내보내기 형식이 지원되지 않습니다.",
       "context": "Error when export format negotiation fails."
     },
     "import_no_file": {
-      "string": "No file was provided for import.",
+      "string": "가져올 파일이 제공되지 않았습니다.",
       "context": "Error when import request has no file."
     },
     "import_too_large": {
-      "string": "The import file exceeds the maximum allowed size (10 MB).",
+      "string": "가져올 파일이 최대 허용 크기(10 MB)를 초과합니다.",
       "context": "Error when import payload is too large."
     },
     "import_parse_failed": {
-      "string": "The import file could not be parsed.",
+      "string": "가져올 파일을 구문 분석할 수 없습니다.",
       "context": "Error when import document parsing fails."
     },
     "job_not_found": {
-      "string": "The background job could not be found.",
+      "string": "백그라운드 작업을 찾을 수 없습니다.",
       "context": "Error when polling an unknown job."
     },
     "job_forbidden": {
-      "string": "You do not have access to this background job.",
+      "string": "이 백그라운드 작업에 접근할 수 없습니다.",
       "context": "Error when job belongs to another user."
     },
     "job_not_ready": {
-      "string": "The export is not ready yet. Please wait and try again.",
+      "string": "내보내기가 아직 준비되지 않았습니다. 잠시 기다렸다가 다시 시도해 주세요.",
       "context": "Error when downloading a job result too early."
     },
     "job_no_result": {
-      "string": "This job has no downloadable result.",
+      "string": "이 작업에는 다운로드할 결과가 없습니다.",
       "context": "Error when job result is unavailable."
     },
     "job_concurrent_limit": {
-      "string": "Too many background jobs are running. Please try again later.",
+      "string": "너무 많은 백그라운드 작업이 실행 중입니다. 나중에 다시 시도해 주세요.",
       "context": "Error when concurrent job limit is reached."
     },
     "file_too_large": {
-      "string": "The photo exceeds the maximum allowed size (2 MB).",
+      "string": "사진이 최대 허용 크기(2 MB)를 초과했습니다.",
       "context": "Inline error when contact photo upload is too large."
     },
     "file_type_not_allowed": {
-      "string": "This file type is not allowed for contact photos.",
+      "string": "이 파일 형식은 연락처 사진으로 허용되지 않습니다.",
       "context": "Inline error when contact photo type is not allowed."
     },
     "generic": {
-      "string": "The operation could not be completed. Please try again.",
+      "string": "작업을 완료할 수 없습니다. 다시 시도해 주세요.",
       "context": "Fallback error message for contact API errors."
     }
   }

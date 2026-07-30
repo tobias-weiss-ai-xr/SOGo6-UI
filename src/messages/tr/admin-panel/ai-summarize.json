@@ -1,1 +1,46 @@
-{ "AI_SUMMARIZE": { "title": { "string": "Email Summarization" }, "description": { "string": "TL;DR for long email threads. Extractive summarization returns the most important sentences." }, "input": { "title": { "string": "Input Email" }, "text": { "string": "Email Text" }, "placeholder": { "string": "Paste the email body here..." }, "sentences": { "string": "Max Sentences" } }, "output": { "title": { "string": "Summary" }, "empty": { "string": "Enter text and click Summarize" } }, "summarize": { "string": "Summarize" }, "loading": { "string": "Summarizing..." }, "errors": { "empty": { "string": "Enter text to summarize" }, "fail": { "string": "Summarization failed" } } }}
+{
+  "AI_SUMMARIZE": {
+    "title": {
+      "string": "E-posta Özeti"
+    },
+    "description": {
+      "string": "Uzun e-posta dizileri için TL;DR. Özetleme, en önemli cümleleri çıkarır."
+    },
+    "input": {
+      "title": {
+        "string": "Giriş E-postası"
+      },
+      "text": {
+        "string": "E-posta Metni"
+      },
+      "placeholder": {
+        "string": "E-posta içeriğini buraya yapıştırın..."
+      },
+      "sentences": {
+        "string": "Maksimum Cümle Sayısı"
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Özet"
+      },
+      "empty": {
+        "string": "Metin girin ve Özetle'ye tıklayın"
+      }
+    },
+    "summarize": {
+      "string": "Özetle"
+    },
+    "loading": {
+      "string": "Özetleniyor..."
+    },
+    "errors": {
+      "empty": {
+        "string": "Özetlenecek metin girin"
+      },
+      "fail": {
+        "string": "Özetleme başarısız"
+      }
+    }
+  }
+}

@@ -1,1 +1,46 @@
-{ "AI_CLASSIFY": { "title": { "string": "Smart Email Classification" }, "description": { "string": "Auto-label emails: newsletter, invoice, notification, social, personal." }, "input": { "title": { "string": "Input Email" }, "subject": { "string": "Subject" }, "sender": { "string": "Sender" }, "body": { "string": "Body" }, "placeholder": { "string": "Paste email content..." } }, "output": { "title": { "string": "Classification Results" }, "empty": { "string": "Enter text and click Classify" } }, "classify": { "string": "Classify" }, "errors": { "empty": { "string": "Enter email text" }, "fail": { "string": "Classification failed" } } }}
+{
+  "AI_CLASSIFY": {
+    "title": {
+      "string": "スマートメール分類"
+    },
+    "description": {
+      "string": "メールを自動でラベル付け：ニュースレター、請求書、通知、SNS、個人メール"
+    },
+    "input": {
+      "title": {
+        "string": "入力メール"
+      },
+      "subject": {
+        "string": "件名"
+      },
+      "sender": {
+        "string": "送信者"
+      },
+      "body": {
+        "string": "本文"
+      },
+      "placeholder": {
+        "string": "メールの内容を貼り付けてください..."
+      }
+    },
+    "output": {
+      "title": {
+        "string": "分類結果"
+      },
+      "empty": {
+        "string": "テキストを入力して「分類」をクリックしてください"
+      }
+    },
+    "classify": {
+      "string": "分類"
+    },
+    "errors": {
+      "empty": {
+        "string": "メールのテキストを入力してください"
+      },
+      "fail": {
+        "string": "分類に失敗しました"
+      }
+    }
+  }
+}

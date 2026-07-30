@@ -1,76 +1,76 @@
 {
   "AP_SESSIONS": {
     "title": {
-      "string": "Active Sessions"
+      "string": "Sesi Aktif"
     },
     "description": {
-      "string": "View and manage active user sessions"
+      "string": "Lihat dan kelola sesi pengguna aktif"
     },
     "table": {
       "uid": {
-        "string": "User"
+        "string": "Pengguna"
       },
       "domain": {
         "string": "Domain"
       },
       "last_activity": {
-        "string": "Last Activity"
+        "string": "Aktivitas Terakhir"
       },
       "actions": {
-        "string": "Actions"
+        "string": "Aksi"
       },
       "no_sessions": {
-        "string": "No active sessions found"
+        "string": "Tidak ada sesi aktif yang ditemukan"
       },
       "loading": {
-        "string": "Loading sessions..."
+        "string": "Memuat sesi..."
       }
     },
     "revoke": {
       "button": {
-        "string": "Revoke"
+        "string": "Cabut"
       },
       "confirm": {
-        "string": "Are you sure you want to revoke this session?"
+        "string": "Apakah Anda yakin ingin mencabut sesi ini?"
       },
       "confirm_multiple": {
-        "string": "Are you sure you want to revoke the selected sessions?"
+        "string": "Apakah Anda yakin ingin mencabut sesi yang dipilih?"
       },
       "revoke_selected": {
-        "string": "Revoke Selected"
+        "string": "Cabut yang Dipilih"
       },
       "revoke_selected_one": {
-        "string": "Revoke Selected ({count})"
+        "string": "Cabut yang Dipilih ({count})"
       },
       "success": {
-        "string": "Session revoked successfully"
+        "string": "Sesi berhasil dicabut"
       },
       "success_multiple": {
-        "string": "{count} sessions revoked successfully"
+        "string": "{count} sesi berhasil dicabut"
       },
       "error": {
-        "string": "Failed to revoke session"
+        "string": "Gagal mencabut sesi"
       }
     },
     "revoke_inactive": {
       "button": {
-        "string": "Revoke Inactive"
+        "string": "Cabut Tidak Aktif"
       },
       "confirm": {
-        "string": "Are you sure you want to revoke all inactive sessions?"
+        "string": "Apakah Anda yakin ingin mencabut semua sesi tidak aktif?"
       },
       "days": {
-        "string": "Days of inactivity"
+        "string": "Hari tidak aktif"
       },
       "days_placeholder": {
-        "string": "e.g., 30"
+        "string": "contoh: 30"
       },
       "success": {
-        "string": "Inactive sessions revoked successfully"
+        "string": "Sesi tidak aktif berhasil dicabut"
       }
     },
     "refresh": {
-      "string": "Refresh"
+      "string": "Muat Ulang"
     }
   }
 }

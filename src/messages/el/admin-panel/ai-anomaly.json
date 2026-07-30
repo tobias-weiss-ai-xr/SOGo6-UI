@@ -1,1 +1,49 @@
-{ "AI_ANOMALY": { "title": { "string": "Anomaly Detection" }, "description": { "string": "Flag unusual sending patterns: bulk email, odd hours, new recipients." }, "input": { "title": { "string": "Sending Pattern" }, "recipients": { "string": "Recipient Count" }, "hour": { "string": "Hour (0-23)" }, "new_ratio": { "string": "New Recipient Ratio" } }, "output": { "title": { "string": "Analysis Result" }, "empty": { "string": "Enter values and click Analyze" }, "anomaly": { "string": "Anomaly Detected!" }, "normal": { "string": "Pattern Normal" }, "score": { "string": "Risk Score" } }, "analyze": { "string": "Analyze" }, "errors": { "fail": { "string": "Analysis failed" } } }}
+{
+  "AI_ANOMALY": {
+    "title": {
+      "string": "Ανίχνευση Ανωμαλιών"
+    },
+    "description": {
+      "string": "Σήμανση ασυνήθιστων προτύπων αποστολής: μαζικά email, περίεργες ώρες, νέοι παραλήπτες."
+    },
+    "input": {
+      "title": {
+        "string": "Πρότυπο Αποστολής"
+      },
+      "recipients": {
+        "string": "Αριθμός Παραληπτών"
+      },
+      "hour": {
+        "string": "Ώρα (0-23)"
+      },
+      "new_ratio": {
+        "string": "Ποσοστό Νέων Παραληπτών"
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Αποτέλεσμα Ανάλυσης"
+      },
+      "empty": {
+        "string": "Εισαγάγετε τιμές και κάντε κλικ στην Ανάλυση"
+      },
+      "anomaly": {
+        "string": "Εντοπίστηκε Ανωμαλία!"
+      },
+      "normal": {
+        "string": "Κανονικό Πρότυπο"
+      },
+      "score": {
+        "string": "Βαθμολογία Κινδύνου"
+      }
+    },
+    "analyze": {
+      "string": "Ανάλυση"
+    },
+    "errors": {
+      "fail": {
+        "string": "Η ανάλυση απέτυχε"
+      }
+    }
+  }
+}

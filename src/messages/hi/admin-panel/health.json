@@ -1,7 +1,34 @@
-{ "AP_HEALTH": {
-    "title": { "string": "System Health" },
-    "description": { "string": "Real-time status of all services in the SOGo stack." },
-    "status": { "all_ok": { "string": "All Systems Operational" }, "degraded": { "string": "Degraded" } },
-    "overview": { "uptime": { "string": "Uptime" }, "version": { "string": "Version" }, "services": { "string": "Services Healthy" } },
-    "errors": { "load_failed": { "string": "Failed to load health data" } }
-}}
+{
+  "AP_HEALTH": {
+    "title": {
+      "string": "सिस्टम स्वास्थ्य"
+    },
+    "description": {
+      "string": "SOGo स्टैक में सभी सेवाओं की रीयल-टाइम स्थिति।"
+    },
+    "status": {
+      "all_ok": {
+        "string": "सभी प्रणालियाँ सक्षम"
+      },
+      "degraded": {
+        "string": "खराब स्थिति"
+      }
+    },
+    "overview": {
+      "uptime": {
+        "string": "अपटाइम"
+      },
+      "version": {
+        "string": "संस्करण"
+      },
+      "services": {
+        "string": "सेवाएं स्वस्थ"
+      }
+    },
+    "errors": {
+      "load_failed": {
+        "string": "स्वास्थ्य डेटा लोड करने में विफल"
+      }
+    }
+  }
+}

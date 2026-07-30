@@ -1,12 +1,65 @@
 {
   "MOBILE": {
-    "title": { "string": "Mobile App Management" },
-    "description": { "string": "Manage registered devices, push notifications, and app configuration" },
-    "errors": { "fail": { "string": "Operation failed" } },
-    "success": { "unregister": { "string": "Device unregistered" }, "broadcast": { "string": "Push notification sent" } },
-    "config": { "title": { "string": "App Settings" }, "push": { "string": "Push Notifications" }, "biometric": { "string": "Biometric Auth" } },
-    "push": { "title": { "string": "Push Broadcast" }, "title": { "placeholder": { "string": "Notification title" } }, "message": { "placeholder": { "string": "Message..." } }, "broadcast": { "string": "Send" } },
-    "stats": { "title": { "string": "Statistics" }, "devices": { "string": "Registered Devices" } },
-    "devices": { "title": { "string": "All Devices" }, "empty": { "string": "No devices registered yet" } }
+    "title": {
+      "string": "Správa mobilní aplikace"
+    },
+    "description": {
+      "string": "Správa registrovaných zařízení, push notifikací a konfigurace aplikace"
+    },
+    "errors": {
+      "fail": {
+        "string": "Operace se nezdařila"
+      }
+    },
+    "success": {
+      "unregister": {
+        "string": "Zařízení odregistrováno"
+      },
+      "broadcast": {
+        "string": "Push notifikace odeslána"
+      }
+    },
+    "config": {
+      "title": {
+        "string": "Nastavení aplikace"
+      },
+      "push": {
+        "string": "Push notifikace"
+      },
+      "biometric": {
+        "string": "Biometrické ověření"
+      }
+    },
+    "push": {
+      "title": {
+        "placeholder": {
+          "string": "Název notifikace"
+        }
+      },
+      "message": {
+        "placeholder": {
+          "string": "Zpráva..."
+        }
+      },
+      "broadcast": {
+        "string": "Odeslat"
+      }
+    },
+    "stats": {
+      "title": {
+        "string": "Statistiky"
+      },
+      "devices": {
+        "string": "Registrovaná zařízení"
+      }
+    },
+    "devices": {
+      "title": {
+        "string": "Všechna zařízení"
+      },
+      "empty": {
+        "string": "Zatím nejsou registrována žádná zařízení"
+      }
+    }
   }
 }

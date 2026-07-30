@@ -1,7 +1,34 @@
-{ "AP_HEALTH": {
-    "title": { "string": "System Health" },
-    "description": { "string": "Real-time status of all services in the SOGo stack." },
-    "status": { "all_ok": { "string": "All Systems Operational" }, "degraded": { "string": "Degraded" } },
-    "overview": { "uptime": { "string": "Uptime" }, "version": { "string": "Version" }, "services": { "string": "Services Healthy" } },
-    "errors": { "load_failed": { "string": "Failed to load health data" } }
-}}
+{
+  "AP_HEALTH": {
+    "title": {
+      "string": "Κατάσταση Συστήματος"
+    },
+    "description": {
+      "string": "Κατάσταση σε πραγματικό χρόνο όλων των υπηρεσιών στη στοίβα SOGo."
+    },
+    "status": {
+      "all_ok": {
+        "string": "Όλα τα Συστήματα Λειτουργούν Κανονικά"
+      },
+      "degraded": {
+        "string": "Μειωμένη Απόδοση"
+      }
+    },
+    "overview": {
+      "uptime": {
+        "string": "Χρόνος Λειτουργίας"
+      },
+      "version": {
+        "string": "Έκδοση"
+      },
+      "services": {
+        "string": "Υπηρεσίες Υγιείς"
+      }
+    },
+    "errors": {
+      "load_failed": {
+        "string": "Αποτυχία φόρτωσης δεδομένων κατάστασης"
+      }
+    }
+  }
+}

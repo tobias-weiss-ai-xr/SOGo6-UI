@@ -1,8 +1,54 @@
-{ "AP_MIG": {
-    "title": { "string": "Migration Tools" },
-    "description": { "string": "Import data from external sources — G Suite, M365, Dovecot, Cyrus, or file uploads." },
-    "wizard": { "title": { "string": "Start Migration" }, "source": { "string": "Source" }, "select_source": { "string": "Choose a source..." }, "user": { "string": "Target User" }, "select_user": { "string": "Select user..." } },
-    "start": { "button": { "string": "Start Migration" }, "running": { "string": "Starting..." }, "success": { "string": "Migration started" }, "error": { "string": "Migration failed" } },
-    "history": { "title": { "string": "Migration History" }, "empty": { "string": "No migrations yet." } },
-    "errors": { "fields": { "string": "Source and user are required" } }
-}}
+{
+  "AP_MIG": {
+    "title": {
+      "string": "เครื่องมือย้ายข้อมูล"
+    },
+    "description": {
+      "string": "นำเข้าข้อมูลจากแหล่งภายนอก — G Suite, M365, Dovecot, Cyrus หรืออัปโหลดไฟล์"
+    },
+    "wizard": {
+      "title": {
+        "string": "เริ่มการย้ายข้อมูล"
+      },
+      "source": {
+        "string": "แหล่งที่มา"
+      },
+      "select_source": {
+        "string": "เลือกแหล่งที่มา..."
+      },
+      "user": {
+        "string": "ผู้ใช้เป้าหมาย"
+      },
+      "select_user": {
+        "string": "เลือกผู้ใช้..."
+      }
+    },
+    "start": {
+      "button": {
+        "string": "เริ่มการย้ายข้อมูล"
+      },
+      "running": {
+        "string": "กำลังเริ่มต้น..."
+      },
+      "success": {
+        "string": "เริ่มการย้ายข้อมูลแล้ว"
+      },
+      "error": {
+        "string": "การย้ายข้อมูลล้มเหลว"
+      }
+    },
+    "history": {
+      "title": {
+        "string": "ประวัติการย้ายข้อมูล"
+      },
+      "empty": {
+        "string": "ยังไม่มีการย้ายข้อมูล"
+      }
+    },
+    "errors": {
+      "fields": {
+        "string": "ต้องระบุแหล่งที่มาและผู้ใช้"
+      }
+    }
+  }
+}

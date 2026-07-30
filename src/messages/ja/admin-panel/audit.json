@@ -1,16 +1,44 @@
-{ "AP_AUDIT": {
-    "title": { "string": "Audit Log" },
-    "description": { "string": "Tamper-proof log of admin and user actions. Entries are append-only and cannot be modified or deleted." },
-    "table": {
-      "timestamp": { "string": "Timestamp" },
-      "action": { "string": "Action" },
-      "actor": { "string": "Actor" },
-      "target": { "string": "Target" },
-      "detail": { "string": "Detail" },
-      "ip": { "string": "IP Address" },
-      "no_entries": { "string": "No audit log entries found." }
+{
+  "AP_AUDIT": {
+    "title": {
+      "string": "監査ログ"
     },
-    "count_one": { "string": "entry" },
-    "count_many": { "string": "entries" },
-    "errors": { "load_failed": { "string": "Failed to load audit log" } }
-}}
+    "description": {
+      "string": "管理者およびユーザーの操作を記録した改ざん防止ログ。エントリは追記のみで、修正や削除はできません。"
+    },
+    "table": {
+      "timestamp": {
+        "string": "タイムスタンプ"
+      },
+      "action": {
+        "string": "アクション"
+      },
+      "actor": {
+        "string": "実行者"
+      },
+      "target": {
+        "string": "対象"
+      },
+      "detail": {
+        "string": "詳細"
+      },
+      "ip": {
+        "string": "IPアドレス"
+      },
+      "no_entries": {
+        "string": "監査ログのエントリが見つかりません。"
+      }
+    },
+    "count_one": {
+      "string": "件"
+    },
+    "count_many": {
+      "string": "件"
+    },
+    "errors": {
+      "load_failed": {
+        "string": "監査ログの読み込みに失敗しました"
+      }
+    }
+  }
+}

@@ -1,14 +1,14 @@
 {
-    "FORM_ERRORS": {
-        "required": {
-            "default": {
-                "string": "This field is required"
-            }
-        },
-        "invalid": {
-            "email": {
-                "string": "Invalid email address"
-            }
-        }
+  "FORM_ERRORS": {
+    "required": {
+      "default": {
+        "string": "هذا الحقل مطلوب"
+      }
+    },
+    "invalid": {
+      "email": {
+        "string": "عنوان بريد إلكتروني غير صالح"
+      }
     }
+  }
 }

@@ -1,1 +1,54 @@
-{ "AI_ENRICH": { "title": { "string": "Contact Auto-Enrichment" }, "description": { "string": "Extract phone, title, company, location from email signatures." }, "input": { "title": { "string": "Email Signature" }, "signature": { "string": "Signature Text" }, "placeholder": { "string": "Paste an email signature here..." } }, "output": { "title": { "string": "Extracted Information" }, "empty": { "string": "Enter signature text and click Extract" } }, "extract": { "string": "Extract Info" }, "field": { "phone": { "string": "Phone" }, "title": { "string": "Title" }, "company": { "string": "Company" }, "location": { "string": "Location" } }, "errors": { "empty": { "string": "Enter text" }, "fail": { "string": "Extraction failed" } } }}
+{
+  "AI_ENRICH": {
+    "title": {
+      "string": "إغناء جهات الاتصال تلقائيًا"
+    },
+    "description": {
+      "string": "استخراج رقم الهاتف والمسمى الوظيفي والشركة والموقع من توقيعات البريد الإلكتروني."
+    },
+    "input": {
+      "title": {
+        "string": "توقيع البريد الإلكتروني"
+      },
+      "signature": {
+        "string": "نص التوقيع"
+      },
+      "placeholder": {
+        "string": "الصق توقيع بريد إلكتروني هنا..."
+      }
+    },
+    "output": {
+      "title": {
+        "string": "المعلومات المستخرجة"
+      },
+      "empty": {
+        "string": "أدخل نص التوقيع وانقر على استخراج"
+      }
+    },
+    "extract": {
+      "string": "استخراج المعلومات"
+    },
+    "field": {
+      "phone": {
+        "string": "الهاتف"
+      },
+      "title": {
+        "string": "المسمى الوظيفي"
+      },
+      "company": {
+        "string": "الشركة"
+      },
+      "location": {
+        "string": "الموقع"
+      }
+    },
+    "errors": {
+      "empty": {
+        "string": "أدخل نصًا"
+      },
+      "fail": {
+        "string": "فشل الاستخراج"
+      }
+    }
+  }
+}

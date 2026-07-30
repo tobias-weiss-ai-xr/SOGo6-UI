@@ -1,6 +1,10 @@
 {
   "PROTOCOLS": {
-    "title": { "string": "Email Protocol Status" },
-    "description": { "string": "JMAP and ActiveSync protocol server status and capabilities" }
+    "title": {
+      "string": "Starea protocolului de email"
+    },
+    "description": {
+      "string": "Starea și capabilitățile serverului pentru protocoalele JMAP și ActiveSync"
+    }
   }
 }

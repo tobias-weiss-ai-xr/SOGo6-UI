@@ -1,1 +1,49 @@
-{ "AI_SPAM": { "title": { "string": "Intelligent Spam Filter" }, "description": { "string": "Real-time spam scoring with pattern analysis, sender reputation, and content heuristics." }, "input": { "title": { "string": "Email to Score" }, "subject": { "string": "Subject" }, "sender": { "string": "Sender" }, "body": { "string": "Body" }, "placeholder": { "string": "Paste the email body..." } }, "output": { "title": { "string": "Spam Score" }, "empty": { "string": "Enter email content and click Score" }, "signals": { "string": "Detected Signals" } }, "score": { "string": "Score Email" }, "errors": { "empty": { "string": "Enter subject or body" }, "fail": { "string": "Scoring failed" } } }}
+{
+  "AI_SPAM": {
+    "title": {
+      "string": "Интеллектуальный фильтр спама"
+    },
+    "description": {
+      "string": "Оценка спама в реальном времени с анализом шаблонов, репутацией отправителя и эвристическим анализом содержимого."
+    },
+    "input": {
+      "title": {
+        "string": "Письмо для оценки"
+      },
+      "subject": {
+        "string": "Тема"
+      },
+      "sender": {
+        "string": "Отправитель"
+      },
+      "body": {
+        "string": "Текст письма"
+      },
+      "placeholder": {
+        "string": "Вставьте текст письма..."
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Оценка спама"
+      },
+      "empty": {
+        "string": "Введите содержимое письма и нажмите «Оценить»"
+      },
+      "signals": {
+        "string": "Обнаруженные сигналы"
+      }
+    },
+    "score": {
+      "string": "Оценить письмо"
+    },
+    "errors": {
+      "empty": {
+        "string": "Укажите тему или текст письма"
+      },
+      "fail": {
+        "string": "Ошибка оценки"
+      }
+    }
+  }
+}

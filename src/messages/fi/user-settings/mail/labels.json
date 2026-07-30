@@ -1,14 +1,14 @@
 {
-    "US_MAIL_LABELS": {
-        "title": {
-            "string": "Mail Labels",
-            "context": "Title for the mail labels settings page"
-        },
-        "label": {
-            "string": "Label"
-        },
-        "imap_label": {
-            "string": "IMAP Label"
-        }
+  "US_MAIL_LABELS": {
+    "title": {
+      "string": "Sähköpostin tunnisteet",
+      "context": "Title for the mail labels settings page"
+    },
+    "label": {
+      "string": "Tunniste"
+    },
+    "imap_label": {
+      "string": "IMAP-tunniste"
     }
+  }
 }

@@ -1,7 +1,35 @@
-{ "AP_DBMIG": {
-    "title": { "string": "Database Migration" },
-    "description": { "string": "Track schema versions and migration history. Run migrations from the admin panel." },
-    "current_version": { "string": "Current Schema Version" },
-    "run": { "button": { "string": "Run Migration" }, "running": { "string": "Running..." }, "success": { "string": "Migration applied" }, "error": { "string": "Migration failed" } },
-    "history": { "title": { "string": "Migration History" }, "empty": { "string": "No migrations recorded." } }
-}}
+{
+  "AP_DBMIG": {
+    "title": {
+      "string": "Adatbázis migráció"
+    },
+    "description": {
+      "string": "Sémaverziók és migrációs előzmények nyomon követése. Migrációk futtatása az admin felületről."
+    },
+    "current_version": {
+      "string": "Jelenlegi sémaverzió"
+    },
+    "run": {
+      "button": {
+        "string": "Migráció futtatása"
+      },
+      "running": {
+        "string": "Futtatás alatt..."
+      },
+      "success": {
+        "string": "Migráció alkalmazva"
+      },
+      "error": {
+        "string": "Migráció sikertelen"
+      }
+    },
+    "history": {
+      "title": {
+        "string": "Migrációs előzmények"
+      },
+      "empty": {
+        "string": "Nincsenek rögzített migrációk."
+      }
+    }
+  }
+}

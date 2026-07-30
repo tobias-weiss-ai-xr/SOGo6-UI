@@ -1,8 +1,54 @@
-{ "AP_MIG": {
-    "title": { "string": "Migration Tools" },
-    "description": { "string": "Import data from external sources — G Suite, M365, Dovecot, Cyrus, or file uploads." },
-    "wizard": { "title": { "string": "Start Migration" }, "source": { "string": "Source" }, "select_source": { "string": "Choose a source..." }, "user": { "string": "Target User" }, "select_user": { "string": "Select user..." } },
-    "start": { "button": { "string": "Start Migration" }, "running": { "string": "Starting..." }, "success": { "string": "Migration started" }, "error": { "string": "Migration failed" } },
-    "history": { "title": { "string": "Migration History" }, "empty": { "string": "No migrations yet." } },
-    "errors": { "fields": { "string": "Source and user are required" } }
-}}
+{
+  "AP_MIG": {
+    "title": {
+      "string": "माइग्रेशन टूल्स"
+    },
+    "description": {
+      "string": "बाहरी स्रोतों से डेटा आयात करें — G Suite, M365, Dovecot, Cyrus, या फ़ाइल अपलोड।"
+    },
+    "wizard": {
+      "title": {
+        "string": "माइग्रेशन शुरू करें"
+      },
+      "source": {
+        "string": "स्रोत"
+      },
+      "select_source": {
+        "string": "स्रोत चुनें..."
+      },
+      "user": {
+        "string": "लक्ष्य उपयोगकर्ता"
+      },
+      "select_user": {
+        "string": "उपयोगकर्ता चुनें..."
+      }
+    },
+    "start": {
+      "button": {
+        "string": "माइग्रेशन शुरू करें"
+      },
+      "running": {
+        "string": "शुरू हो रहा है..."
+      },
+      "success": {
+        "string": "माइग्रेशन शुरू हो गया"
+      },
+      "error": {
+        "string": "माइग्रेशन विफल"
+      }
+    },
+    "history": {
+      "title": {
+        "string": "माइग्रेशन इतिहास"
+      },
+      "empty": {
+        "string": "अभी तक कोई माइग्रेशन नहीं।"
+      }
+    },
+    "errors": {
+      "fields": {
+        "string": "स्रोत और उपयोगकर्ता आवश्यक हैं"
+      }
+    }
+  }
+}

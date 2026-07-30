@@ -1,22 +1,52 @@
-{ "AP_DEBUG": {
-    "title": { "string": "Mailbox Debug" },
-    "description": { "string": "Diagnostic tool for troubleshooting mail delivery issues. View raw email source or parsed headers." },
+{
+  "AP_DEBUG": {
+    "title": {
+      "string": "메일함 디버그"
+    },
+    "description": {
+      "string": "메일 배달 문제 해결을 위한 진단 도구. 원본 이메일 소스 또는 파싱된 헤더를 확인할 수 있습니다."
+    },
     "query": {
-      "title": { "string": "Debug Query" },
-      "button": { "string": "Inspect" }
+      "title": {
+        "string": "디버그 쿼리"
+      },
+      "button": {
+        "string": "검사"
+      }
     },
     "labels": {
-      "user": { "string": "User" },
-      "folder": { "string": "IMAP Folder" },
-      "mail_uid": { "string": "Mail UID" },
-      "select_user": { "string": "Select user..." }
+      "user": {
+        "string": "사용자"
+      },
+      "folder": {
+        "string": "IMAP 폴더"
+      },
+      "mail_uid": {
+        "string": "메일 UID"
+      },
+      "select_user": {
+        "string": "사용자 선택..."
+      }
     },
     "result": {
-      "raw": { "title": { "string": "Raw Email Source" } },
-      "headers": { "title": { "string": "Parsed Headers" } }
+      "raw": {
+        "title": {
+          "string": "원본 이메일 소스"
+        }
+      },
+      "headers": {
+        "title": {
+          "string": "파싱된 헤더"
+        }
+      }
     },
     "errors": {
-      "fields_required": { "string": "User, folder, and mail UID are required" },
-      "fetch_failed": { "string": "Failed to fetch debug data" }
+      "fields_required": {
+        "string": "사용자, 폴더, 메일 UID가 필요합니다"
+      },
+      "fetch_failed": {
+        "string": "디버그 데이터를 가져오지 못했습니다"
+      }
     }
-}}
+  }
+}

@@ -1,135 +1,135 @@
 {
   "AP_THEME": {
     "title": {
-      "string": "Theme Settings"
+      "string": "Cài đặt Giao diện"
     },
     "description": {
-      "string": "Customize the look and feel of the SOGo interface"
+      "string": "Tùy chỉnh giao diện và trải nghiệm của SOGo"
     },
     "form_title": {
-      "string": "Custom Theme"
+      "string": "Giao diện Tùy chỉnh"
     },
     "form_description": {
-      "string": "Configure colors, logo, and custom CSS for the groupware interface"
+      "string": "Cấu hình màu sắc, logo và CSS tùy chỉnh cho giao diện nhóm"
     },
     "fields": {
       "primary": {
         "label": {
-          "string": "Primary Color"
+          "string": "Màu Chính"
         },
         "description": {
-          "string": "HSL values for the primary color (e.g. 180 25% 40%)"
+          "string": "Giá trị HSL cho màu chính (ví dụ: 180 25% 40%)"
         }
       },
       "primary_foreground": {
         "label": {
-          "string": "Primary Foreground"
+          "string": "Nền Chính"
         },
         "description": {
-          "string": "Text color on primary backgrounds"
+          "string": "Màu chữ trên nền chính"
         }
       },
       "background": {
         "label": {
-          "string": "Background"
+          "string": "Nền"
         },
         "description": {
-          "string": "HSL values for the page background"
+          "string": "Giá trị HSL cho nền trang"
         }
       },
       "foreground": {
         "label": {
-          "string": "Foreground"
+          "string": "Đầu trang"
         },
         "description": {
-          "string": "Default text color"
+          "string": "Màu chữ mặc định"
         }
       },
       "sidebar_background": {
         "label": {
-          "string": "Sidebar Background"
+          "string": "Nền Thanh Bên"
         },
         "description": {
-          "string": "HSL values for the sidebar background"
+          "string": "Giá trị HSL cho nền thanh bên"
         }
       },
       "sidebar_foreground": {
         "label": {
-          "string": "Sidebar Foreground"
+          "string": "Đầu trang Thanh Bên"
         },
         "description": {
-          "string": "Text color in the sidebar"
+          "string": "Màu chữ trong thanh bên"
         }
       },
       "sidebar_primary": {
         "label": {
-          "string": "Sidebar Primary"
+          "string": "Màu Chính Thanh Bên"
         },
         "description": {
-          "string": "Primary accent color in the sidebar"
+          "string": "Màu nhấn chính trong thanh bên"
         }
       },
       "sidebar_accent": {
         "label": {
-          "string": "Sidebar Accent"
+          "string": "Màu Nhấn Thanh Bên"
         },
         "description": {
-          "string": "Accent color in the sidebar"
+          "string": "Màu nhấn trong thanh bên"
         }
       },
       "header_background": {
         "label": {
-          "string": "Header Background"
+          "string": "Nền Tiêu đề"
         },
         "description": {
-          "string": "HSL values for the top header bar"
+          "string": "Giá trị HSL cho thanh tiêu đề trên cùng"
         }
       },
       "header_foreground": {
         "label": {
-          "string": "Header Foreground"
+          "string": "Màu chữ Tiêu đề"
         },
         "description": {
-          "string": "Text color in the header"
+          "string": "Màu chữ trong tiêu đề"
         }
       },
       "logo_url": {
         "label": {
-          "string": "Logo URL"
+          "string": "URL Logo"
         },
         "description": {
-          "string": "URL of the custom logo image (optional)"
+          "string": "URL của hình ảnh logo tùy chỉnh (tùy chọn)"
         }
       },
       "custom_css": {
         "label": {
-          "string": "Custom CSS"
+          "string": "CSS Tùy chỉnh"
         },
         "description": {
-          "string": "Additional CSS rules to inject (optional)"
+          "string": "Các quy tắc CSS bổ sung để chèn (tùy chọn)"
         }
       }
     },
     "save": {
-      "string": "Save Changes"
+      "string": "Lưu Thay đổi"
     },
     "saving": {
-      "string": "Saving…"
+      "string": "Đang lưu…"
     },
     "saved": {
-      "string": "Theme settings saved successfully"
+      "string": "Cài đặt giao diện đã được lưu thành công"
     },
     "save_error": {
-      "string": "Failed to save: {message}"
+      "string": "Lưu thất bại: {message}"
     },
     "unsaved_changes": {
-      "string": "You have unsaved changes"
+      "string": "Bạn có thay đổi chưa được lưu"
     },
     "load_error": {
-      "string": "Failed to load theme settings"
+      "string": "Không tải được cài đặt giao diện"
     },
     "retry": {
-      "string": "Retry"
+      "string": "Thử lại"
     }
   }
 }

@@ -1,22 +1,52 @@
-{ "AP_DEBUG": {
-    "title": { "string": "Mailbox Debug" },
-    "description": { "string": "Diagnostic tool for troubleshooting mail delivery issues. View raw email source or parsed headers." },
+{
+  "AP_DEBUG": {
+    "title": {
+      "string": "Gỡ lỗi Hộp thư"
+    },
+    "description": {
+      "string": "Công cụ chẩn đoán để khắc phục sự cố giao nhận thư. Xem nguồn thư thô hoặc tiêu đề đã phân tích."
+    },
     "query": {
-      "title": { "string": "Debug Query" },
-      "button": { "string": "Inspect" }
+      "title": {
+        "string": "Truy vấn Gỡ lỗi"
+      },
+      "button": {
+        "string": "Kiểm tra"
+      }
     },
     "labels": {
-      "user": { "string": "User" },
-      "folder": { "string": "IMAP Folder" },
-      "mail_uid": { "string": "Mail UID" },
-      "select_user": { "string": "Select user..." }
+      "user": {
+        "string": "Người dùng"
+      },
+      "folder": {
+        "string": "Thư mục IMAP"
+      },
+      "mail_uid": {
+        "string": "UID Thư"
+      },
+      "select_user": {
+        "string": "Chọn người dùng..."
+      }
     },
     "result": {
-      "raw": { "title": { "string": "Raw Email Source" } },
-      "headers": { "title": { "string": "Parsed Headers" } }
+      "raw": {
+        "title": {
+          "string": "Nguồn Thư Thô"
+        }
+      },
+      "headers": {
+        "title": {
+          "string": "Tiêu đề Đã Phân Tích"
+        }
+      }
     },
     "errors": {
-      "fields_required": { "string": "User, folder, and mail UID are required" },
-      "fetch_failed": { "string": "Failed to fetch debug data" }
+      "fields_required": {
+        "string": "Yêu cầu nhập Người dùng, thư mục và UID thư"
+      },
+      "fetch_failed": {
+        "string": "Không thể lấy dữ liệu gỡ lỗi"
+      }
     }
-}}
+  }
+}

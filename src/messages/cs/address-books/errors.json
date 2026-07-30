@@ -1,107 +1,107 @@
 {
   "ADDRESS_BOOKS_ERRORS": {
     "list_member_invalid": {
-      "string": "One or more selected members are not contacts in this address book.",
+      "string": "Jeden nebo více vybraných členů nejsou kontakty v tomto adresáři.",
       "context": "Inline error when a distribution list member is invalid."
     },
     "addressbook_not_found": {
-      "string": "The address book could not be found.",
+      "string": "Adresář nebyl nalezen.",
       "context": "Error when an address book is missing."
     },
     "addressbook_duplicate": {
-      "string": "An address book with this name already exists.",
+      "string": "Adresář s tímto názvem již existuje.",
       "context": "Toast when address book creation conflicts."
     },
     "contact_not_found": {
-      "string": "The contact could not be found.",
+      "string": "Kontakt nebyl nalezen.",
       "context": "Error when a contact is missing."
     },
     "contact_duplicate": {
-      "string": "A contact with this identifier already exists.",
+      "string": "Kontakt s tímto identifikátorem již existuje.",
       "context": "Toast when contact creation conflicts."
     },
     "contact_persist_failed": {
-      "string": "The contact could not be saved.",
+      "string": "Kontakt se nepodařilo uložit.",
       "context": "Error when contact creation fails on the server."
     },
     "contact_update_failed": {
-      "string": "The contact could not be updated.",
+      "string": "Kontakt se nepodařilo aktualizovat.",
       "context": "Error when contact update fails on the server."
     },
     "operation_not_supported": {
-      "string": "This operation is not supported for this address book.",
+      "string": "Tato operace není pro tento adresář podporována.",
       "context": "Error when mutating a non-local address book source."
     },
     "list_not_found": {
-      "string": "The distribution list could not be found.",
+      "string": "Distribuční seznam nebyl nalezen.",
       "context": "Error when a distribution list is missing."
     },
     "list_duplicate": {
-      "string": "A distribution list with this name already exists.",
+      "string": "Distribuční seznam s tímto názvem již existuje.",
       "context": "Toast when list creation conflicts."
     },
     "list_persist_failed": {
-      "string": "The distribution list could not be saved.",
+      "string": "Distribuční seznam se nepodařilo uložit.",
       "context": "Error when list creation fails on the server."
     },
     "list_update_failed": {
-      "string": "The distribution list could not be updated.",
+      "string": "Distribuční seznam se nepodařilo aktualizovat.",
       "context": "Error when list update fails on the server."
     },
     "access_denied": {
-      "string": "You do not have permission to modify this address book.",
+      "string": "Nemáte oprávnění upravovat tento adresář.",
       "context": "Toast when write access is denied."
     },
     "read_only": {
-      "string": "This address book is read-only.",
+      "string": "Tento adresář je pouze pro čtení.",
       "context": "Toast when mutating a read-only address book."
     },
     "export_format_unsupported": {
-      "string": "The selected export format is not supported.",
+      "string": "Vybraný formát pro export není podporován.",
       "context": "Error when export format negotiation fails."
     },
     "import_no_file": {
-      "string": "No file was provided for import.",
+      "string": "Nebyl poskytnut žádný soubor pro import.",
       "context": "Error when import request has no file."
     },
     "import_too_large": {
-      "string": "The import file exceeds the maximum allowed size (10 MB).",
+      "string": "Importovaný soubor překračuje maximální povolenou velikost (10 MB).",
       "context": "Error when import payload is too large."
     },
     "import_parse_failed": {
-      "string": "The import file could not be parsed.",
+      "string": "Importovaný soubor se nepodařilo analyzovat.",
       "context": "Error when import document parsing fails."
     },
     "job_not_found": {
-      "string": "The background job could not be found.",
+      "string": "Pozadí úlohy nebyl nalezen.",
       "context": "Error when polling an unknown job."
     },
     "job_forbidden": {
-      "string": "You do not have access to this background job.",
+      "string": "Nemáte přístup k této pozadí úloze.",
       "context": "Error when job belongs to another user."
     },
     "job_not_ready": {
-      "string": "The export is not ready yet. Please wait and try again.",
+      "string": "Export ještě není připraven. Počkejte a zkuste to znovu.",
       "context": "Error when downloading a job result too early."
     },
     "job_no_result": {
-      "string": "This job has no downloadable result.",
+      "string": "Tato úloha nemá žádný stahovatelný výsledek.",
       "context": "Error when job result is unavailable."
     },
     "job_concurrent_limit": {
-      "string": "Too many background jobs are running. Please try again later.",
+      "string": "Běží příliš mnoho pozadí úloh. Zkuste to prosím později.",
       "context": "Error when concurrent job limit is reached."
     },
     "file_too_large": {
-      "string": "The photo exceeds the maximum allowed size (2 MB).",
+      "string": "Fotografie překračuje maximální povolenou velikost (2 MB).",
       "context": "Inline error when contact photo upload is too large."
     },
     "file_type_not_allowed": {
-      "string": "This file type is not allowed for contact photos.",
+      "string": "Tento typ souboru není povolen pro fotografie kontaktů.",
       "context": "Inline error when contact photo type is not allowed."
     },
     "generic": {
-      "string": "The operation could not be completed. Please try again.",
+      "string": "Operaci se nepodařilo dokončit. Zkuste to prosím znovu.",
       "context": "Fallback error message for contact API errors."
     }
   }

@@ -1,1 +1,49 @@
-{ "AI_SPAM": { "title": { "string": "Intelligent Spam Filter" }, "description": { "string": "Real-time spam scoring with pattern analysis, sender reputation, and content heuristics." }, "input": { "title": { "string": "Email to Score" }, "subject": { "string": "Subject" }, "sender": { "string": "Sender" }, "body": { "string": "Body" }, "placeholder": { "string": "Paste the email body..." } }, "output": { "title": { "string": "Spam Score" }, "empty": { "string": "Enter email content and click Score" }, "signals": { "string": "Detected Signals" } }, "score": { "string": "Score Email" }, "errors": { "empty": { "string": "Enter subject or body" }, "fail": { "string": "Scoring failed" } } }}
+{
+  "AI_SPAM": {
+    "title": {
+      "string": "Inteligentny filtr spamu"
+    },
+    "description": {
+      "string": "Ocena spamu w czasie rzeczywistym z analizą wzorców, reputacją nadawcy i heurystykami treści."
+    },
+    "input": {
+      "title": {
+        "string": "Email do oceny"
+      },
+      "subject": {
+        "string": "Temat"
+      },
+      "sender": {
+        "string": "Nadawca"
+      },
+      "body": {
+        "string": "Treść"
+      },
+      "placeholder": {
+        "string": "Wklej treść emaila..."
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Wynik spamu"
+      },
+      "empty": {
+        "string": "Wprowadź treść emaila i kliknij Oceń"
+      },
+      "signals": {
+        "string": "Wykryte sygnały"
+      }
+    },
+    "score": {
+      "string": "Oceń email"
+    },
+    "errors": {
+      "empty": {
+        "string": "Wprowadź temat lub treść"
+      },
+      "fail": {
+        "string": "Ocena nie powiodła się"
+      }
+    }
+  }
+}

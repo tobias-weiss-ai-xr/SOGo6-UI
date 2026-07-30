@@ -1,135 +1,135 @@
 {
   "AP_THEME": {
     "title": {
-      "string": "Theme Settings"
+      "string": "การตั้งค่าหน้าตา"
     },
     "description": {
-      "string": "Customize the look and feel of the SOGo interface"
+      "string": "ปรับแต่งหน้าตาและรูปแบบของอินเตอร์เฟซ SOGo"
     },
     "form_title": {
-      "string": "Custom Theme"
+      "string": "ธีมที่กำหนดเอง"
     },
     "form_description": {
-      "string": "Configure colors, logo, and custom CSS for the groupware interface"
+      "string": "กำหนดสี โลโก้ และ CSS ที่กำหนดเองสำหรับอินเตอร์เฟซของกลุ่มงาน"
     },
     "fields": {
       "primary": {
         "label": {
-          "string": "Primary Color"
+          "string": "สีหลัก"
         },
         "description": {
-          "string": "HSL values for the primary color (e.g. 180 25% 40%)"
+          "string": "ค่า HSL ของสีหลัก (ตัวอย่าง 180 25% 40%)"
         }
       },
       "primary_foreground": {
         "label": {
-          "string": "Primary Foreground"
+          "string": "พื้นหน้าสีหลัก"
         },
         "description": {
-          "string": "Text color on primary backgrounds"
+          "string": "สีข้อความบนพื้นหลังสีหลัก"
         }
       },
       "background": {
         "label": {
-          "string": "Background"
+          "string": "พื้นหลัง"
         },
         "description": {
-          "string": "HSL values for the page background"
+          "string": "ค่า HSL ของพื้นหลังหน้าเว็บ"
         }
       },
       "foreground": {
         "label": {
-          "string": "Foreground"
+          "string": "พื้นหน้า"
         },
         "description": {
-          "string": "Default text color"
+          "string": "สีข้อความเริ่มต้น"
         }
       },
       "sidebar_background": {
         "label": {
-          "string": "Sidebar Background"
+          "string": "พื้นหลังแถบด้านข้าง"
         },
         "description": {
-          "string": "HSL values for the sidebar background"
+          "string": "ค่า HSL ของพื้นหลังแถบด้านข้าง"
         }
       },
       "sidebar_foreground": {
         "label": {
-          "string": "Sidebar Foreground"
+          "string": "พื้นหน้าแถบด้านข้าง"
         },
         "description": {
-          "string": "Text color in the sidebar"
+          "string": "สีข้อความในแถบด้านข้าง"
         }
       },
       "sidebar_primary": {
         "label": {
-          "string": "Sidebar Primary"
+          "string": "สีหลักแถบด้านข้าง"
         },
         "description": {
-          "string": "Primary accent color in the sidebar"
+          "string": "สีเน้นหลักในแถบด้านข้าง"
         }
       },
       "sidebar_accent": {
         "label": {
-          "string": "Sidebar Accent"
+          "string": "สีเน้นแถบด้านข้าง"
         },
         "description": {
-          "string": "Accent color in the sidebar"
+          "string": "สีเน้นในแถบด้านข้าง"
         }
       },
       "header_background": {
         "label": {
-          "string": "Header Background"
+          "string": "พื้นหลังส่วนหัว"
         },
         "description": {
-          "string": "HSL values for the top header bar"
+          "string": "ค่า HSL สำหรับแถบส่วนหัวด้านบน"
         }
       },
       "header_foreground": {
         "label": {
-          "string": "Header Foreground"
+          "string": "พื้นหน้าส่วนหัว"
         },
         "description": {
-          "string": "Text color in the header"
+          "string": "สีข้อความในส่วนหัว"
         }
       },
       "logo_url": {
         "label": {
-          "string": "Logo URL"
+          "string": "URL โลโก้"
         },
         "description": {
-          "string": "URL of the custom logo image (optional)"
+          "string": "URL ของรูปภาพโลโก้ที่กำหนดเอง (ไม่บังคับ)"
         }
       },
       "custom_css": {
         "label": {
-          "string": "Custom CSS"
+          "string": "CSS ที่กำหนดเอง"
         },
         "description": {
-          "string": "Additional CSS rules to inject (optional)"
+          "string": "กฎ CSS เพิ่มเติมที่จะแทรก (ไม่บังคับ)"
         }
       }
     },
     "save": {
-      "string": "Save Changes"
+      "string": "บันทึกการเปลี่ยนแปลง"
     },
     "saving": {
-      "string": "Saving…"
+      "string": "กำลังบันทึก…"
     },
     "saved": {
-      "string": "Theme settings saved successfully"
+      "string": "บันทึกการตั้งค่าหน้าตาเรียบร้อย"
     },
     "save_error": {
-      "string": "Failed to save: {message}"
+      "string": "บันทึกไม่สำเร็จ: {message}"
     },
     "unsaved_changes": {
-      "string": "You have unsaved changes"
+      "string": "คุณมีการเปลี่ยนแปลงที่ยังไม่ได้บันทึก"
     },
     "load_error": {
-      "string": "Failed to load theme settings"
+      "string": "โหลดการตั้งค่าหน้าตาไม่สำเร็จ"
     },
     "retry": {
-      "string": "Retry"
+      "string": "ลองใหม่"
     }
   }
 }

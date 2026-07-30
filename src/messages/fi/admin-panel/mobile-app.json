@@ -1,12 +1,65 @@
 {
   "MOBILE": {
-    "title": { "string": "Mobile App Management" },
-    "description": { "string": "Manage registered devices, push notifications, and app configuration" },
-    "errors": { "fail": { "string": "Operation failed" } },
-    "success": { "unregister": { "string": "Device unregistered" }, "broadcast": { "string": "Push notification sent" } },
-    "config": { "title": { "string": "App Settings" }, "push": { "string": "Push Notifications" }, "biometric": { "string": "Biometric Auth" } },
-    "push": { "title": { "string": "Push Broadcast" }, "title": { "placeholder": { "string": "Notification title" } }, "message": { "placeholder": { "string": "Message..." } }, "broadcast": { "string": "Send" } },
-    "stats": { "title": { "string": "Statistics" }, "devices": { "string": "Registered Devices" } },
-    "devices": { "title": { "string": "All Devices" }, "empty": { "string": "No devices registered yet" } }
+    "title": {
+      "string": "Mobiilisovelluksen hallinta"
+    },
+    "description": {
+      "string": "Hallitse rekisteröityjä laitteita, push-ilmoituksia ja sovellusasetuksia"
+    },
+    "errors": {
+      "fail": {
+        "string": "Toiminto epäonnistui"
+      }
+    },
+    "success": {
+      "unregister": {
+        "string": "Laite poistettu rekisteristä"
+      },
+      "broadcast": {
+        "string": "Push-ilmoitus lähetetty"
+      }
+    },
+    "config": {
+      "title": {
+        "string": "Sovellusasetukset"
+      },
+      "push": {
+        "string": "Push-ilmoitukset"
+      },
+      "biometric": {
+        "string": "Biometrinen tunnistautuminen"
+      }
+    },
+    "push": {
+      "title": {
+        "placeholder": {
+          "string": "Ilmoituksen otsikko"
+        }
+      },
+      "message": {
+        "placeholder": {
+          "string": "Viesti..."
+        }
+      },
+      "broadcast": {
+        "string": "Lähetä"
+      }
+    },
+    "stats": {
+      "title": {
+        "string": "Tilastot"
+      },
+      "devices": {
+        "string": "Rekisteröidyt laitteet"
+      }
+    },
+    "devices": {
+      "title": {
+        "string": "Kaikki laitteet"
+      },
+      "empty": {
+        "string": "Ei vielä rekisteröityjä laitteita"
+      }
+    }
   }
 }

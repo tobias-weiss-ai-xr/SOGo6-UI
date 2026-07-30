@@ -1,9 +1,34 @@
 {
   "IMPORT": {
-    "title": { "string": "PST / M365 Import & Export" },
-    "description": { "string": "Import mailboxes from PST files or Microsoft 365 with progress tracking" },
-    "errors": { "fields": { "string": "Required fields missing" }, "fail": { "string": "Operation failed" } },
-    "success": { "analyze": { "string": "PST analyzed" }, "import": { "string": "Import started" } },
-    "jobs": { "title": { "string": "Import Jobs" }, "empty": { "string": "No import jobs yet" } }
+    "title": {
+      "string": "นำเข้า/ส่งออก PST / M365"
+    },
+    "description": {
+      "string": "นำเข้ากล่องจดหมายจากไฟล์ PST หรือ Microsoft 365 พร้อมติดตามความคืบหน้า"
+    },
+    "errors": {
+      "fields": {
+        "string": "ข้อมูลที่จำเป็นขาดหายไป"
+      },
+      "fail": {
+        "string": "การดำเนินการล้มเหลว"
+      }
+    },
+    "success": {
+      "analyze": {
+        "string": "วิเคราะห์ PST เสร็จสิ้น"
+      },
+      "import": {
+        "string": "เริ่มนำเข้าแล้ว"
+      }
+    },
+    "jobs": {
+      "title": {
+        "string": "งานนำเข้า"
+      },
+      "empty": {
+        "string": "ยังไม่มีงานนำเข้า"
+      }
+    }
   }
 }

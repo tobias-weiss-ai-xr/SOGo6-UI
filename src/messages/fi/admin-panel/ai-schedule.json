@@ -1,1 +1,43 @@
-{ "AI_SCHEDULE": { "title": { "string": "Smart Calendar Scheduling" }, "description": { "string": "AI-suggested meeting times based on attendee availability patterns and preferences." }, "input": { "title": { "string": "Meeting Setup" }, "attendees": { "string": "Attendees" }, "from": { "string": "From" }, "to": { "string": "To" }, "duration": { "string": "Duration (min)" } }, "output": { "title": { "string": "Suggested Times" } }, "suggest": { "string": "Suggest Times" }, "errors": { "fields": { "string": "Attendees, from, and to dates are required" }, "fail": { "string": "Suggestion failed" } } }}
+{
+  "AI_SCHEDULE": {
+    "title": {
+      "string": "Älykäs kalenterin aikataulutus"
+    },
+    "description": {
+      "string": "AI:n ehdottamat kokousajat osallistujien saatavuusmallien ja mieltymysten perusteella."
+    },
+    "input": {
+      "title": {
+        "string": "Kokouksen asetukset"
+      },
+      "attendees": {
+        "string": "Osallistujat"
+      },
+      "from": {
+        "string": "Alkaen"
+      },
+      "to": {
+        "string": "Päätös"
+      },
+      "duration": {
+        "string": "Kesto (min)"
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Ehdotetut ajat"
+      }
+    },
+    "suggest": {
+      "string": "Ehdota aikoja"
+    },
+    "errors": {
+      "fields": {
+        "string": "Osallistujat, alkupäivä ja loppupäivä ovat pakollisia"
+      },
+      "fail": {
+        "string": "Ehdotuksen luominen epäonnistui"
+      }
+    }
+  }
+}

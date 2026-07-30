@@ -1,1 +1,49 @@
-{ "AI_SPAM": { "title": { "string": "Intelligent Spam Filter" }, "description": { "string": "Real-time spam scoring with pattern analysis, sender reputation, and content heuristics." }, "input": { "title": { "string": "Email to Score" }, "subject": { "string": "Subject" }, "sender": { "string": "Sender" }, "body": { "string": "Body" }, "placeholder": { "string": "Paste the email body..." } }, "output": { "title": { "string": "Spam Score" }, "empty": { "string": "Enter email content and click Score" }, "signals": { "string": "Detected Signals" } }, "score": { "string": "Score Email" }, "errors": { "empty": { "string": "Enter subject or body" }, "fail": { "string": "Scoring failed" } } }}
+{
+  "AI_SPAM": {
+    "title": {
+      "string": "Intelligens levélszűrő"
+    },
+    "description": {
+      "string": "Valós idejű spam-pontozás mintaelemzéssel, feladó hírnévvel és tartalmi heurisztikákkal."
+    },
+    "input": {
+      "title": {
+        "string": "Pontozandó e-mail"
+      },
+      "subject": {
+        "string": "Tárgy"
+      },
+      "sender": {
+        "string": "Feladó"
+      },
+      "body": {
+        "string": "Üzenet szövege"
+      },
+      "placeholder": {
+        "string": "Illessze be az e-mail szövegét..."
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Spam-pontozás"
+      },
+      "empty": {
+        "string": "Adja meg az e-mail tartalmát, majd kattintson a Pontozás gombra"
+      },
+      "signals": {
+        "string": "Észlelt jelek"
+      }
+    },
+    "score": {
+      "string": "Pontozás"
+    },
+    "errors": {
+      "empty": {
+        "string": "Adja meg a tárgyat vagy az üzenet szövegét"
+      },
+      "fail": {
+        "string": "A pontozás sikertelen"
+      }
+    }
+  }
+}

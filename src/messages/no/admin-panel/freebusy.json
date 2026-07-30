@@ -1,1 +1,40 @@
-{ "AP_FREEBUSY": { "title": { "string": "Free/Busy Lookup" }, "description": { "string": "Visual attendee schedule overlay. Check availability when creating events." }, "form": { "title": { "string": "Check Availability" }, "participants": { "string": "Participants" }, "start": { "string": "Start" }, "end": { "string": "End" }, "lookup": { "string": "Look Up" } }, "results": { "title": { "string": "Busy Slots" } }, "errors": { "fields": { "string": "At least one participant is required" } }, "error": { "string": "Lookup failed" } }}
+{
+  "AP_FREEBUSY": {
+    "title": {
+      "string": "Ledig/Opptatt-oppslag"
+    },
+    "description": {
+      "string": "Visuell overlapp av deltakeres timeplaner. Sjekk tilgjengelighet når du oppretter arrangementer."
+    },
+    "form": {
+      "title": {
+        "string": "Sjekk tilgjengelighet"
+      },
+      "participants": {
+        "string": "Deltakere"
+      },
+      "start": {
+        "string": "Start"
+      },
+      "end": {
+        "string": "Slutt"
+      },
+      "lookup": {
+        "string": "Søk"
+      }
+    },
+    "results": {
+      "title": {
+        "string": "Opptatte tidsrom"
+      }
+    },
+    "errors": {
+      "fields": {
+        "string": "Minst én deltaker kreves"
+      }
+    },
+    "error": {
+      "string": "Oppslag mislyktes"
+    }
+  }
+}

@@ -1,22 +1,52 @@
-{ "AP_DEBUG": {
-    "title": { "string": "Mailbox Debug" },
-    "description": { "string": "Diagnostic tool for troubleshooting mail delivery issues. View raw email source or parsed headers." },
+{
+  "AP_DEBUG": {
+    "title": {
+      "string": "تصحيح صندوق البريد"
+    },
+    "description": {
+      "string": "أداة تشخيص لاستكشاف مشكلات تسليم البريد الإلكتروني. عرض مصدر البريد الخام أو رؤوسية المفهرسة."
+    },
     "query": {
-      "title": { "string": "Debug Query" },
-      "button": { "string": "Inspect" }
+      "title": {
+        "string": "استعلام التصحيح"
+      },
+      "button": {
+        "string": "تفحص"
+      }
     },
     "labels": {
-      "user": { "string": "User" },
-      "folder": { "string": "IMAP Folder" },
-      "mail_uid": { "string": "Mail UID" },
-      "select_user": { "string": "Select user..." }
+      "user": {
+        "string": "المستخدم"
+      },
+      "folder": {
+        "string": "مجلد IMAP"
+      },
+      "mail_uid": {
+        "string": "معرف البريد (UID)"
+      },
+      "select_user": {
+        "string": "اختر مستخدمًا..."
+      }
     },
     "result": {
-      "raw": { "title": { "string": "Raw Email Source" } },
-      "headers": { "title": { "string": "Parsed Headers" } }
+      "raw": {
+        "title": {
+          "string": "مصدر البريد الخام"
+        }
+      },
+      "headers": {
+        "title": {
+          "string": "الرؤوسيات المفهرسة"
+        }
+      }
     },
     "errors": {
-      "fields_required": { "string": "User, folder, and mail UID are required" },
-      "fetch_failed": { "string": "Failed to fetch debug data" }
+      "fields_required": {
+        "string": "المستخدم والمجلد ومعرف البريد مطلوبة"
+      },
+      "fetch_failed": {
+        "string": "فشل جلب بيانات التصحيح"
+      }
     }
-}}
+  }
+}

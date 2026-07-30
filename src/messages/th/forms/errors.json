@@ -1,14 +1,14 @@
 {
-    "FORM_ERRORS": {
-        "required": {
-            "default": {
-                "string": "This field is required"
-            }
-        },
-        "invalid": {
-            "email": {
-                "string": "Invalid email address"
-            }
-        }
+  "FORM_ERRORS": {
+    "required": {
+      "default": {
+        "string": "กรุณากรอกข้อมูลในฟิลด์นี้"
+      }
+    },
+    "invalid": {
+      "email": {
+        "string": "อีเมลไม่ถูกต้อง"
+      }
     }
+  }
 }

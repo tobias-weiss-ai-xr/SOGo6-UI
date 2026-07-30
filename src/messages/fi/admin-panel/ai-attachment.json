@@ -1,1 +1,40 @@
-{ "AI_ATTACH": { "title": { "string": "Smart Attachment Actions" }, "description": { "string": "Auto-detect document type and suggest save, forward, or archive actions." }, "input": { "title": { "string": "Attachment" }, "filename": { "string": "Filename" } }, "output": { "title": { "string": "Analysis" }, "empty": { "string": "Enter a filename" }, "preview": { "string": "Can Preview" } }, "classify": { "string": "Classify" }, "errors": { "empty": { "string": "Enter a filename" }, "fail": { "string": "Classification failed" } } }}
+{
+  "AI_ATTACH": {
+    "title": {
+      "string": "Älykkäät liitteen toiminnot"
+    },
+    "description": {
+      "string": "Tunnistaa asiakirjatyypin automaattisesti ja ehdottaa tallennus-, välitys- tai arkistointitoimia."
+    },
+    "input": {
+      "title": {
+        "string": "Liite"
+      },
+      "filename": {
+        "string": "Tiedostonimi"
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Analyysi"
+      },
+      "empty": {
+        "string": "Anna tiedostonimi"
+      },
+      "preview": {
+        "string": "Voi esikatsella"
+      }
+    },
+    "classify": {
+      "string": "Luokittele"
+    },
+    "errors": {
+      "empty": {
+        "string": "Anna tiedostonimi"
+      },
+      "fail": {
+        "string": "Luokittelu epäonnistui"
+      }
+    }
+  }
+}

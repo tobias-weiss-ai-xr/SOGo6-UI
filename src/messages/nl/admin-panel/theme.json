@@ -1,135 +1,135 @@
 {
   "AP_THEME": {
     "title": {
-      "string": "Theme Settings"
+      "string": "Thema-instellingen"
     },
     "description": {
-      "string": "Customize the look and feel of the SOGo interface"
+      "string": "Pas het uiterlijk en de uitstraling van de SOGo-interface aan"
     },
     "form_title": {
-      "string": "Custom Theme"
+      "string": "Aangepast thema"
     },
     "form_description": {
-      "string": "Configure colors, logo, and custom CSS for the groupware interface"
+      "string": "Configureer kleuren, logo en aangepaste CSS voor de groupware-interface"
     },
     "fields": {
       "primary": {
         "label": {
-          "string": "Primary Color"
+          "string": "Primair kleur"
         },
         "description": {
-          "string": "HSL values for the primary color (e.g. 180 25% 40%)"
+          "string": "HSL-waarden voor de primair kleur (bv. 180 25% 40%)"
         }
       },
       "primary_foreground": {
         "label": {
-          "string": "Primary Foreground"
+          "string": "Primair voorgrond"
         },
         "description": {
-          "string": "Text color on primary backgrounds"
+          "string": "Tekstkleur op primair achtergronden"
         }
       },
       "background": {
         "label": {
-          "string": "Background"
+          "string": "Achtergrond"
         },
         "description": {
-          "string": "HSL values for the page background"
+          "string": "HSL-waarden voor de pagina-achtergrond"
         }
       },
       "foreground": {
         "label": {
-          "string": "Foreground"
+          "string": "Voorgrond"
         },
         "description": {
-          "string": "Default text color"
+          "string": "Standaard tekstkleur"
         }
       },
       "sidebar_background": {
         "label": {
-          "string": "Sidebar Background"
+          "string": "Zijbalk-achtergrond"
         },
         "description": {
-          "string": "HSL values for the sidebar background"
+          "string": "HSL-waarden voor de zijbalk-achtergrond"
         }
       },
       "sidebar_foreground": {
         "label": {
-          "string": "Sidebar Foreground"
+          "string": "Zijbalk-voorgrond"
         },
         "description": {
-          "string": "Text color in the sidebar"
+          "string": "Tekstkleur in de zijbalk"
         }
       },
       "sidebar_primary": {
         "label": {
-          "string": "Sidebar Primary"
+          "string": "Zijbalk primair"
         },
         "description": {
-          "string": "Primary accent color in the sidebar"
+          "string": "Primair accentkleur in de zijbalk"
         }
       },
       "sidebar_accent": {
         "label": {
-          "string": "Sidebar Accent"
+          "string": "Zijbalk accent"
         },
         "description": {
-          "string": "Accent color in the sidebar"
+          "string": "Accentkleur in de zijbalk"
         }
       },
       "header_background": {
         "label": {
-          "string": "Header Background"
+          "string": "Achtergrond kopbal"
         },
         "description": {
-          "string": "HSL values for the top header bar"
+          "string": "HSL-waarden voor de bovenste kopbal"
         }
       },
       "header_foreground": {
         "label": {
-          "string": "Header Foreground"
+          "string": "Voorgrond kopbal"
         },
         "description": {
-          "string": "Text color in the header"
+          "string": "Tekstkleur in de kopbal"
         }
       },
       "logo_url": {
         "label": {
-          "string": "Logo URL"
+          "string": "Logo-URL"
         },
         "description": {
-          "string": "URL of the custom logo image (optional)"
+          "string": "URL van het aangepaste logo (optioneel)"
         }
       },
       "custom_css": {
         "label": {
-          "string": "Custom CSS"
+          "string": "Aangepaste CSS"
         },
         "description": {
-          "string": "Additional CSS rules to inject (optional)"
+          "string": "Extra CSS-regels om in te voegen (optioneel)"
         }
       }
     },
     "save": {
-      "string": "Save Changes"
+      "string": "Wijzigingen opslaan"
     },
     "saving": {
-      "string": "Saving…"
+      "string": "Opslaan…"
     },
     "saved": {
-      "string": "Theme settings saved successfully"
+      "string": "Thema-instellingen succesvol opgeslagen"
     },
     "save_error": {
-      "string": "Failed to save: {message}"
+      "string": "Opslaan mislukt: {message}"
     },
     "unsaved_changes": {
-      "string": "You have unsaved changes"
+      "string": "U heeft niet-opgeslagen wijzigingen"
     },
     "load_error": {
-      "string": "Failed to load theme settings"
+      "string": "Laden van thema-instellingen mislukt"
     },
     "retry": {
-      "string": "Retry"
+      "string": "Opnieuw proberen"
     }
   }
 }

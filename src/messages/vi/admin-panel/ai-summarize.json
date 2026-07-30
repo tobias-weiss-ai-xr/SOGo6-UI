@@ -1,1 +1,46 @@
-{ "AI_SUMMARIZE": { "title": { "string": "Email Summarization" }, "description": { "string": "TL;DR for long email threads. Extractive summarization returns the most important sentences." }, "input": { "title": { "string": "Input Email" }, "text": { "string": "Email Text" }, "placeholder": { "string": "Paste the email body here..." }, "sentences": { "string": "Max Sentences" } }, "output": { "title": { "string": "Summary" }, "empty": { "string": "Enter text and click Summarize" } }, "summarize": { "string": "Summarize" }, "loading": { "string": "Summarizing..." }, "errors": { "empty": { "string": "Enter text to summarize" }, "fail": { "string": "Summarization failed" } } }}
+{
+  "AI_SUMMARIZE": {
+    "title": {
+      "string": "Tóm tắt Email"
+    },
+    "description": {
+      "string": "TL;DR cho chuỗi email dài. Tóm tắt trích xuất trả về những câu quan trọng nhất."
+    },
+    "input": {
+      "title": {
+        "string": "Email Đầu vào"
+      },
+      "text": {
+        "string": "Nội dung Email"
+      },
+      "placeholder": {
+        "string": "Dán nội dung email vào đây..."
+      },
+      "sentences": {
+        "string": "Số câu tối đa"
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Bản tóm tắt"
+      },
+      "empty": {
+        "string": "Nhập văn bản và nhấn Tóm tắt"
+      }
+    },
+    "summarize": {
+      "string": "Tóm tắt"
+    },
+    "loading": {
+      "string": "Đang tóm tắt..."
+    },
+    "errors": {
+      "empty": {
+        "string": "Vui lòng nhập văn bản để tóm tắt"
+      },
+      "fail": {
+        "string": "Tóm tắt thất bại"
+      }
+    }
+  }
+}

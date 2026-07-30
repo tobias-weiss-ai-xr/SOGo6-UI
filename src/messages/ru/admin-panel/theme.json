@@ -1,135 +1,135 @@
 {
   "AP_THEME": {
     "title": {
-      "string": "Theme Settings"
+      "string": "Настройки темы"
     },
     "description": {
-      "string": "Customize the look and feel of the SOGo interface"
+      "string": "Настройте внешний вид интерфейса SOGo"
     },
     "form_title": {
-      "string": "Custom Theme"
+      "string": "Пользовательская тема"
     },
     "form_description": {
-      "string": "Configure colors, logo, and custom CSS for the groupware interface"
+      "string": "Настройте цвета, логотип и пользовательский CSS для интерфейса групповой работы"
     },
     "fields": {
       "primary": {
         "label": {
-          "string": "Primary Color"
+          "string": "Основной цвет"
         },
         "description": {
-          "string": "HSL values for the primary color (e.g. 180 25% 40%)"
+          "string": "Значения HSL для основного цвета (например, 180 25% 40%)"
         }
       },
       "primary_foreground": {
         "label": {
-          "string": "Primary Foreground"
+          "string": "Цвет текста на основном фоне"
         },
         "description": {
-          "string": "Text color on primary backgrounds"
+          "string": "Цвет текста на фоне основного цвета"
         }
       },
       "background": {
         "label": {
-          "string": "Background"
+          "string": "Фон"
         },
         "description": {
-          "string": "HSL values for the page background"
+          "string": "Значения HSL для фона страницы"
         }
       },
       "foreground": {
         "label": {
-          "string": "Foreground"
+          "string": "Цвет текста"
         },
         "description": {
-          "string": "Default text color"
+          "string": "Цвет текста по умолчанию"
         }
       },
       "sidebar_background": {
         "label": {
-          "string": "Sidebar Background"
+          "string": "Фон боковой панели"
         },
         "description": {
-          "string": "HSL values for the sidebar background"
+          "string": "Значения HSL для фона боковой панели"
         }
       },
       "sidebar_foreground": {
         "label": {
-          "string": "Sidebar Foreground"
+          "string": "Цвет текста боковой панели"
         },
         "description": {
-          "string": "Text color in the sidebar"
+          "string": "Цвет текста в боковой панели"
         }
       },
       "sidebar_primary": {
         "label": {
-          "string": "Sidebar Primary"
+          "string": "Основной акцентный цвет боковой панели"
         },
         "description": {
-          "string": "Primary accent color in the sidebar"
+          "string": "Основной акцентный цвет в боковой панели"
         }
       },
       "sidebar_accent": {
         "label": {
-          "string": "Sidebar Accent"
+          "string": "Акцентный цвет боковой панели"
         },
         "description": {
-          "string": "Accent color in the sidebar"
+          "string": "Акцентный цвет в боковой панели"
         }
       },
       "header_background": {
         "label": {
-          "string": "Header Background"
+          "string": "Фон заголовка"
         },
         "description": {
-          "string": "HSL values for the top header bar"
+          "string": "Значения HSL для верхней панели заголовка"
         }
       },
       "header_foreground": {
         "label": {
-          "string": "Header Foreground"
+          "string": "Цвет текста заголовка"
         },
         "description": {
-          "string": "Text color in the header"
+          "string": "Цвет текста в заголовке"
         }
       },
       "logo_url": {
         "label": {
-          "string": "Logo URL"
+          "string": "URL логотипа"
         },
         "description": {
-          "string": "URL of the custom logo image (optional)"
+          "string": "URL пользовательского изображения логотипа (необязательно)"
         }
       },
       "custom_css": {
         "label": {
-          "string": "Custom CSS"
+          "string": "Пользовательский CSS"
         },
         "description": {
-          "string": "Additional CSS rules to inject (optional)"
+          "string": "Дополнительные CSS-правила для вставки (необязательно)"
         }
       }
     },
     "save": {
-      "string": "Save Changes"
+      "string": "Сохранить изменения"
     },
     "saving": {
-      "string": "Saving…"
+      "string": "Сохранение…"
     },
     "saved": {
-      "string": "Theme settings saved successfully"
+      "string": "Настройки темы успешно сохранены"
     },
     "save_error": {
-      "string": "Failed to save: {message}"
+      "string": "Ошибка сохранения: {message}"
     },
     "unsaved_changes": {
-      "string": "You have unsaved changes"
+      "string": "У вас есть несохранённые изменения"
     },
     "load_error": {
-      "string": "Failed to load theme settings"
+      "string": "Не удалось загрузить настройки темы"
     },
     "retry": {
-      "string": "Retry"
+      "string": "Повторить"
     }
   }
 }

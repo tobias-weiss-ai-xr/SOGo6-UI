@@ -1,1 +1,40 @@
-{ "AI_DRAFT": { "title": { "string": "AI Draft Assistant" }, "description": { "string": "Reply suggestions with tone adjustment. Generates contextual draft replies." }, "input": { "title": { "string": "Original Email" }, "email": { "string": "Email Body" }, "placeholder": { "string": "Paste the email you want to reply to..." } }, "output": { "title": { "string": "Suggested Reply" }, "empty": { "string": "Enter email text and select a tone" } }, "suggest": { "string": "Suggest Reply" }, "errors": { "empty": { "string": "Enter email text" }, "fail": { "string": "Suggestion failed" } } }}
+{
+  "AI_DRAFT": {
+    "title": {
+      "string": "AI Vázlatasszisztens"
+    },
+    "description": {
+      "string": "Válaszjavaslatok hangnem beállításával. Kontextuális vázlatválaszok generálása."
+    },
+    "input": {
+      "title": {
+        "string": "Eredeti e-mail"
+      },
+      "email": {
+        "string": "E-mail szövege"
+      },
+      "placeholder": {
+        "string": "Illessze be az e-mailt, amire válaszolni szeretne..."
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Javasolt válasz"
+      },
+      "empty": {
+        "string": "Adja meg az e-mail szövegét és válasszon egy hangnemet"
+      }
+    },
+    "suggest": {
+      "string": "Válasz javaslata"
+    },
+    "errors": {
+      "empty": {
+        "string": "Adja meg az e-mail szövegét"
+      },
+      "fail": {
+        "string": "A javaslat sikertelen"
+      }
+    }
+  }
+}

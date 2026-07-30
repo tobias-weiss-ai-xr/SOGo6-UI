@@ -1,7 +1,35 @@
-{ "AP_DBMIG": {
-    "title": { "string": "Database Migration" },
-    "description": { "string": "Track schema versions and migration history. Run migrations from the admin panel." },
-    "current_version": { "string": "Current Schema Version" },
-    "run": { "button": { "string": "Run Migration" }, "running": { "string": "Running..." }, "success": { "string": "Migration applied" }, "error": { "string": "Migration failed" } },
-    "history": { "title": { "string": "Migration History" }, "empty": { "string": "No migrations recorded." } }
-}}
+{
+  "AP_DBMIG": {
+    "title": {
+      "string": "Tietokantasiirto"
+    },
+    "description": {
+      "string": "Seuraa skeemaversioita ja siirtohistoriaa. Suorita siirrot ylläpitopaneelista."
+    },
+    "current_version": {
+      "string": "Nykyinen skeemaversio"
+    },
+    "run": {
+      "button": {
+        "string": "Suorita siirto"
+      },
+      "running": {
+        "string": "Suoritetaan..."
+      },
+      "success": {
+        "string": "Siirto suoritettu"
+      },
+      "error": {
+        "string": "Siirto epäonnistui"
+      }
+    },
+    "history": {
+      "title": {
+        "string": "Siirtohistoria"
+      },
+      "empty": {
+        "string": "Ei tallennettuja siirtoja."
+      }
+    }
+  }
+}

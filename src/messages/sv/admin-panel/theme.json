@@ -1,135 +1,135 @@
 {
   "AP_THEME": {
     "title": {
-      "string": "Theme Settings"
+      "string": "Teminställningar"
     },
     "description": {
-      "string": "Customize the look and feel of the SOGo interface"
+      "string": "Anpassa utseende och känsla för SOGo-gränssnittet"
     },
     "form_title": {
-      "string": "Custom Theme"
+      "string": "Anpassat tema"
     },
     "form_description": {
-      "string": "Configure colors, logo, and custom CSS for the groupware interface"
+      "string": "Konfigurera färger, logotyp och anpassad CSS för groupware-gränssnittet"
     },
     "fields": {
       "primary": {
         "label": {
-          "string": "Primary Color"
+          "string": "Primärfärg"
         },
         "description": {
-          "string": "HSL values for the primary color (e.g. 180 25% 40%)"
+          "string": "HSL-värden för primärfärgen (t.ex. 180 25% 40%)"
         }
       },
       "primary_foreground": {
         "label": {
-          "string": "Primary Foreground"
+          "string": "Primär förgrund"
         },
         "description": {
-          "string": "Text color on primary backgrounds"
+          "string": "Textfärg på primära bakgrunder"
         }
       },
       "background": {
         "label": {
-          "string": "Background"
+          "string": "Bakgrund"
         },
         "description": {
-          "string": "HSL values for the page background"
+          "string": "HSL-värden för sidbakgrunden"
         }
       },
       "foreground": {
         "label": {
-          "string": "Foreground"
+          "string": "Förgrund"
         },
         "description": {
-          "string": "Default text color"
+          "string": "Standardtextfärg"
         }
       },
       "sidebar_background": {
         "label": {
-          "string": "Sidebar Background"
+          "string": "Sidopanelbakgrund"
         },
         "description": {
-          "string": "HSL values for the sidebar background"
+          "string": "HSL-värden för sidopanelbakgrunden"
         }
       },
       "sidebar_foreground": {
         "label": {
-          "string": "Sidebar Foreground"
+          "string": "Sidopanelförgrund"
         },
         "description": {
-          "string": "Text color in the sidebar"
+          "string": "Textfärg i sidopanelen"
         }
       },
       "sidebar_primary": {
         "label": {
-          "string": "Sidebar Primary"
+          "string": "Sidopanelprimär"
         },
         "description": {
-          "string": "Primary accent color in the sidebar"
+          "string": "Primär accentfärg i sidopanelen"
         }
       },
       "sidebar_accent": {
         "label": {
-          "string": "Sidebar Accent"
+          "string": "Sidopanelaccent"
         },
         "description": {
-          "string": "Accent color in the sidebar"
+          "string": "Accentfärg i sidopanelen"
         }
       },
       "header_background": {
         "label": {
-          "string": "Header Background"
+          "string": "Rubrikbakgrund"
         },
         "description": {
-          "string": "HSL values for the top header bar"
+          "string": "HSL-värden för den övre rubrikraden"
         }
       },
       "header_foreground": {
         "label": {
-          "string": "Header Foreground"
+          "string": "Rubrikförgrund"
         },
         "description": {
-          "string": "Text color in the header"
+          "string": "Textfärg i rubriken"
         }
       },
       "logo_url": {
         "label": {
-          "string": "Logo URL"
+          "string": "Logotyp-URL"
         },
         "description": {
-          "string": "URL of the custom logo image (optional)"
+          "string": "URL för anpassad logotypbild (valfritt)"
         }
       },
       "custom_css": {
         "label": {
-          "string": "Custom CSS"
+          "string": "Anpassad CSS"
         },
         "description": {
-          "string": "Additional CSS rules to inject (optional)"
+          "string": "Ytterligare CSS-regler att infoga (valfritt)"
         }
       }
     },
     "save": {
-      "string": "Save Changes"
+      "string": "Spara ändringar"
     },
     "saving": {
-      "string": "Saving…"
+      "string": "Sparar…"
     },
     "saved": {
-      "string": "Theme settings saved successfully"
+      "string": "Teminställningar sparade"
     },
     "save_error": {
-      "string": "Failed to save: {message}"
+      "string": "Misslyckades med att spara: {message}"
     },
     "unsaved_changes": {
-      "string": "You have unsaved changes"
+      "string": "Du har osparade ändringar"
     },
     "load_error": {
-      "string": "Failed to load theme settings"
+      "string": "Misslyckades med att ladda temainställningar"
     },
     "retry": {
-      "string": "Retry"
+      "string": "Försök igen"
     }
   }
 }

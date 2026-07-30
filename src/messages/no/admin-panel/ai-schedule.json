@@ -1,1 +1,43 @@
-{ "AI_SCHEDULE": { "title": { "string": "Smart Calendar Scheduling" }, "description": { "string": "AI-suggested meeting times based on attendee availability patterns and preferences." }, "input": { "title": { "string": "Meeting Setup" }, "attendees": { "string": "Attendees" }, "from": { "string": "From" }, "to": { "string": "To" }, "duration": { "string": "Duration (min)" } }, "output": { "title": { "string": "Suggested Times" } }, "suggest": { "string": "Suggest Times" }, "errors": { "fields": { "string": "Attendees, from, and to dates are required" }, "fail": { "string": "Suggestion failed" } } }}
+{
+  "AI_SCHEDULE": {
+    "title": {
+      "string": "Smart kalenderplanlegging"
+    },
+    "description": {
+      "string": "AI-forslag til møtetider basert på deltakernes tilgjengelighetsmønstre og preferanser."
+    },
+    "input": {
+      "title": {
+        "string": "Møteoppsett"
+      },
+      "attendees": {
+        "string": "Deltakere"
+      },
+      "from": {
+        "string": "Fra"
+      },
+      "to": {
+        "string": "Til"
+      },
+      "duration": {
+        "string": "Varighet (min)"
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Foreslåtte tider"
+      }
+    },
+    "suggest": {
+      "string": "Foreslå tider"
+    },
+    "errors": {
+      "fields": {
+        "string": "Deltakere, fra- og til-datoer er påkrevd"
+      },
+      "fail": {
+        "string": "Forslag mislyktes"
+      }
+    }
+  }
+}

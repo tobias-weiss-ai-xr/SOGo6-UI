@@ -1,107 +1,107 @@
 {
   "ADDRESS_BOOKS_ERRORS": {
     "list_member_invalid": {
-      "string": "One or more selected members are not contacts in this address book.",
+      "string": "选中的一个或多个成员不在这个通讯录中。",
       "context": "Inline error when a distribution list member is invalid."
     },
     "addressbook_not_found": {
-      "string": "The address book could not be found.",
+      "string": "找不到该通讯录。",
       "context": "Error when an address book is missing."
     },
     "addressbook_duplicate": {
-      "string": "An address book with this name already exists.",
+      "string": "已存在同名的通讯录。",
       "context": "Toast when address book creation conflicts."
     },
     "contact_not_found": {
-      "string": "The contact could not be found.",
+      "string": "找不到该联系人。",
       "context": "Error when a contact is missing."
     },
     "contact_duplicate": {
-      "string": "A contact with this identifier already exists.",
+      "string": "已存在具有该标识符的联系人。",
       "context": "Toast when contact creation conflicts."
     },
     "contact_persist_failed": {
-      "string": "The contact could not be saved.",
+      "string": "无法保存联系人。",
       "context": "Error when contact creation fails on the server."
     },
     "contact_update_failed": {
-      "string": "The contact could not be updated.",
+      "string": "无法更新联系人。",
       "context": "Error when contact update fails on the server."
     },
     "operation_not_supported": {
-      "string": "This operation is not supported for this address book.",
+      "string": "此通讯录不支持该操作。",
       "context": "Error when mutating a non-local address book source."
     },
     "list_not_found": {
-      "string": "The distribution list could not be found.",
+      "string": "找不到该分发列表。",
       "context": "Error when a distribution list is missing."
     },
     "list_duplicate": {
-      "string": "A distribution list with this name already exists.",
+      "string": "已存在同名的分发列表。",
       "context": "Toast when list creation conflicts."
     },
     "list_persist_failed": {
-      "string": "The distribution list could not be saved.",
+      "string": "无法保存分发列表。",
       "context": "Error when list creation fails on the server."
     },
     "list_update_failed": {
-      "string": "The distribution list could not be updated.",
+      "string": "无法更新分发列表。",
       "context": "Error when list update fails on the server."
     },
     "access_denied": {
-      "string": "You do not have permission to modify this address book.",
+      "string": "您没有权限修改此通讯录。",
       "context": "Toast when write access is denied."
     },
     "read_only": {
-      "string": "This address book is read-only.",
+      "string": "此通讯录为只读。",
       "context": "Toast when mutating a read-only address book."
     },
     "export_format_unsupported": {
-      "string": "The selected export format is not supported.",
+      "string": "不支持所选的导出格式。",
       "context": "Error when export format negotiation fails."
     },
     "import_no_file": {
-      "string": "No file was provided for import.",
+      "string": "未提供导入文件。",
       "context": "Error when import request has no file."
     },
     "import_too_large": {
-      "string": "The import file exceeds the maximum allowed size (10 MB).",
+      "string": "导入文件超过了最大允许大小（10 MB）。",
       "context": "Error when import payload is too large."
     },
     "import_parse_failed": {
-      "string": "The import file could not be parsed.",
+      "string": "无法解析导入文件。",
       "context": "Error when import document parsing fails."
     },
     "job_not_found": {
-      "string": "The background job could not be found.",
+      "string": "找不到该后台任务。",
       "context": "Error when polling an unknown job."
     },
     "job_forbidden": {
-      "string": "You do not have access to this background job.",
+      "string": "您无权访问此后台任务。",
       "context": "Error when job belongs to another user."
     },
     "job_not_ready": {
-      "string": "The export is not ready yet. Please wait and try again.",
+      "string": "导出尚未准备就绪，请稍等后重试。",
       "context": "Error when downloading a job result too early."
     },
     "job_no_result": {
-      "string": "This job has no downloadable result.",
+      "string": "此任务没有可下载的结果。",
       "context": "Error when job result is unavailable."
     },
     "job_concurrent_limit": {
-      "string": "Too many background jobs are running. Please try again later.",
+      "string": "后台任务过多，请稍后重试。",
       "context": "Error when concurrent job limit is reached."
     },
     "file_too_large": {
-      "string": "The photo exceeds the maximum allowed size (2 MB).",
+      "string": "照片超过了最大允许大小（2 MB）。",
       "context": "Inline error when contact photo upload is too large."
     },
     "file_type_not_allowed": {
-      "string": "This file type is not allowed for contact photos.",
+      "string": "此文件类型不允许用作联系人照片。",
       "context": "Inline error when contact photo type is not allowed."
     },
     "generic": {
-      "string": "The operation could not be completed. Please try again.",
+      "string": "操作无法完成，请重试。",
       "context": "Fallback error message for contact API errors."
     }
   }

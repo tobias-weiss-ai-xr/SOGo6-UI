@@ -1,6 +1,16 @@
-{ "PORTAL": {
-    "title": { "string": "App Portal" },
-    "description": { "string": "SOGo 6 integrated with the Univention Nubus Portal. Manage connected apps, configure nubusintercom, and launch integrations." },
-    "launch": { "string": "Launch" },
-    "settings": { "string": "Intercom Settings" }
-}}
+{
+  "PORTAL": {
+    "title": {
+      "string": "应用门户"
+    },
+    "description": {
+      "string": "集成 Univention Nubus 门户的 SOGo 6。管理连接的应用、配置 nubusintercom 并启动集成。"
+    },
+    "launch": {
+      "string": "启动"
+    },
+    "settings": {
+      "string": "对讲机设置"
+    }
+  }
+}

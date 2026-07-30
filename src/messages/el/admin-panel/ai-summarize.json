@@ -1,1 +1,46 @@
-{ "AI_SUMMARIZE": { "title": { "string": "Email Summarization" }, "description": { "string": "TL;DR for long email threads. Extractive summarization returns the most important sentences." }, "input": { "title": { "string": "Input Email" }, "text": { "string": "Email Text" }, "placeholder": { "string": "Paste the email body here..." }, "sentences": { "string": "Max Sentences" } }, "output": { "title": { "string": "Summary" }, "empty": { "string": "Enter text and click Summarize" } }, "summarize": { "string": "Summarize" }, "loading": { "string": "Summarizing..." }, "errors": { "empty": { "string": "Enter text to summarize" }, "fail": { "string": "Summarization failed" } } }}
+{
+  "AI_SUMMARIZE": {
+    "title": {
+      "string": "Σύνοψη email"
+    },
+    "description": {
+      "string": "TL;DR για μακρές αλυσίδες email. Η εξαγωγική σύνοψη επιστρέφει τις πιο σημαντικές προτάσεις."
+    },
+    "input": {
+      "title": {
+        "string": "Εισαγωγή Email"
+      },
+      "text": {
+        "string": "Κείμενο Email"
+      },
+      "placeholder": {
+        "string": "Επικολλήστε εδώ το κείμενο του email..."
+      },
+      "sentences": {
+        "string": "Μέγιστες Προτάσεις"
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Σύνοψη"
+      },
+      "empty": {
+        "string": "Εισαγάγετε κείμενο και κάντε κλικ στη Σύνοψη"
+      }
+    },
+    "summarize": {
+      "string": "Συνοψίζω"
+    },
+    "loading": {
+      "string": "Γίνεται σύνοψη..."
+    },
+    "errors": {
+      "empty": {
+        "string": "Εισαγάγετε κείμενο για σύνοψη"
+      },
+      "fail": {
+        "string": "Η σύνοψη απέτυχε"
+      }
+    }
+  }
+}

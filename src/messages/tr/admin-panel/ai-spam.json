@@ -1,1 +1,49 @@
-{ "AI_SPAM": { "title": { "string": "Intelligent Spam Filter" }, "description": { "string": "Real-time spam scoring with pattern analysis, sender reputation, and content heuristics." }, "input": { "title": { "string": "Email to Score" }, "subject": { "string": "Subject" }, "sender": { "string": "Sender" }, "body": { "string": "Body" }, "placeholder": { "string": "Paste the email body..." } }, "output": { "title": { "string": "Spam Score" }, "empty": { "string": "Enter email content and click Score" }, "signals": { "string": "Detected Signals" } }, "score": { "string": "Score Email" }, "errors": { "empty": { "string": "Enter subject or body" }, "fail": { "string": "Scoring failed" } } }}
+{
+  "AI_SPAM": {
+    "title": {
+      "string": "Akıllı Spam Filtresi"
+    },
+    "description": {
+      "string": "Gerçek zamanlı spam puanlaması: desen analizi, gönderici itibarı ve içerik sezgileriyle."
+    },
+    "input": {
+      "title": {
+        "string": "Puanlanacak E-posta"
+      },
+      "subject": {
+        "string": "Konu"
+      },
+      "sender": {
+        "string": "Gönderen"
+      },
+      "body": {
+        "string": "İçerik"
+      },
+      "placeholder": {
+        "string": "E-posta içeriğini yapıştırın..."
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Spam Puanı"
+      },
+      "empty": {
+        "string": "E-posta içeriğini girin ve Puanla'ya tıklayın"
+      },
+      "signals": {
+        "string": "Tespit Edilen Sinyaller"
+      }
+    },
+    "score": {
+      "string": "Puanla"
+    },
+    "errors": {
+      "empty": {
+        "string": "Konu veya içerik girin"
+      },
+      "fail": {
+        "string": "Puanlama başarısız"
+      }
+    }
+  }
+}

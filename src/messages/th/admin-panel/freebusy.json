@@ -1,1 +1,40 @@
-{ "AP_FREEBUSY": { "title": { "string": "Free/Busy Lookup" }, "description": { "string": "Visual attendee schedule overlay. Check availability when creating events." }, "form": { "title": { "string": "Check Availability" }, "participants": { "string": "Participants" }, "start": { "string": "Start" }, "end": { "string": "End" }, "lookup": { "string": "Look Up" } }, "results": { "title": { "string": "Busy Slots" } }, "errors": { "fields": { "string": "At least one participant is required" } }, "error": { "string": "Lookup failed" } }}
+{
+  "AP_FREEBUSY": {
+    "title": {
+      "string": "ตรวจสอบเวลาว่าง/ยุ่ง"
+    },
+    "description": {
+      "string": "ทับซ้อนตารางผู้เข้าร่วมแบบภาพ เพื่อตรวจสอบความพร้อมเมื่อสร้างกิจกรรม"
+    },
+    "form": {
+      "title": {
+        "string": "ตรวจสอบความพร้อม"
+      },
+      "participants": {
+        "string": "ผู้เข้าร่วม"
+      },
+      "start": {
+        "string": "เริ่ม"
+      },
+      "end": {
+        "string": "สิ้นสุด"
+      },
+      "lookup": {
+        "string": "ค้นหา"
+      }
+    },
+    "results": {
+      "title": {
+        "string": "ช่วงเวลายุ่ง"
+      }
+    },
+    "errors": {
+      "fields": {
+        "string": "ต้องมีผู้เข้าร่วมอย่างน้อยหนึ่งคน"
+      }
+    },
+    "error": {
+      "string": "การค้นหาล้มเหลว"
+    }
+  }
+}

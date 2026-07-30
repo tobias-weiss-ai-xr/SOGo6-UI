@@ -1,133 +1,133 @@
 {
-    "US_MAIL_VACATIONS": {
-        "title": {
-            "string": "Vacation Settings",
-            "context": "Title for the vacation settings page"
+  "US_MAIL_VACATIONS": {
+    "title": {
+      "string": "Tatil Ayarları",
+      "context": "Title for the vacation settings page"
+    },
+    "page": {
+      "description": {
+        "string": "Ofis dışı otomatik yanıt mesajınızı ve ne zaman aktif olacağını yapılandırın."
+      }
+    },
+    "errors_api": {
+      "load_failed": {
+        "string": "Tatil ayarları yüklenemedi. Lütfen daha sonra tekrar deneyin."
+      },
+      "feature_disabled": {
+        "string": "Tatil otomatik yanıtı yöneticiniz tarafından devre dışı bırakıldı."
+      }
+    },
+    "errors": {
+      "validation": {
+        "message_required": {
+          "string": "Tatil etkinleştirildiğinde otomatik yanıt mesajı gereklidir."
         },
-        "page": {
-            "description": {
-                "string": "Configure your out-of-office auto reply message and when it should be active."
-            }
+        "dates_required": {
+          "string": "Tarih kısıtlamaları etkinleştirildiğinde başlangıç ve bitiş tarihleri gereklidir."
         },
-        "errors_api": {
-            "load_failed": {
-                "string": "Could not load vacation settings. Please try again later."
-            },
-            "feature_disabled": {
-                "string": "Vacation auto reply has been disabled by your administrator."
-            }
+        "date_order": {
+          "string": "Bitiş tarihi, başlangıç tarihinden önce veya aynı gün olmalıdır."
         },
-        "errors": {
-            "validation": {
-                "message_required": {
-                    "string": "Auto reply message is required when vacation is enabled."
-                },
-                "dates_required": {
-                    "string": "Start and end dates are required when date constraints are enabled."
-                },
-                "date_order": {
-                    "string": "End date must be on or after the start date."
-                },
-                "time_invalid": {
-                    "string": "Please enter a valid time in HH:MM format."
-                },
-                "weekday_required": {
-                    "string": "Select at least one weekday when weekday constraints are enabled."
-                },
-                "response_interval_invalid": {
-                    "string": "Response interval must be zero or a positive number."
-                },
-                "response_interval_zero": {
-                    "string": "A zero-day response interval is not allowed on this domain."
-                }
-            }
+        "time_invalid": {
+          "string": "Lütfen geçerli bir saat girin (SS:DD formatında)."
         },
-        "auto_reply": {
-            "enable": {
-                "string": "Enable vacation auto reply"
-            },
-            "subject": {
-                "label": {
-                    "string": "Auto reply subject"
-                },
-                "description": {
-                    "string": "Leave blank to use default subject. You can write {subject} to insert the original subject."
-                }
-            },
-            "message": {
-                "string": "Auto reply message"
-            },
-            "constraints": {
-                "title": {
-                    "string": "Activation constraints"
-                },
-                "description": {
-                    "string": "Customize day and hour ranges independently and optionally combine them with specific weekdays to tailor your vacation filters to your preferences."
-                },
-                "enable": {
-                    "days": {
-                        "string": "Enable auto reply on these days"
-                    },
-                    "hours": {
-                        "string": "Enable auto reply between these hours"
-                    },
-                    "range": {
-                        "string": "Enable auto reply between these days"
-                    }
-                },
-                "time": {
-                    "start": {
-                        "string": "Start time"
-                    },
-                    "end": {
-                        "string": "End time"
-                    }
-                },
-                "weekdays": {
-                    "monday": {
-                        "string": "Monday"
-                    },
-                    "tuesday": {
-                        "string": "Tuesday"
-                    },
-                    "wednesday": {
-                        "string": "Wednesday"
-                    },
-                    "thursday": {
-                        "string": "Thursday"
-                    },
-                    "friday": {
-                        "string": "Friday"
-                    },
-                    "saturday": {
-                        "string": "Saturday"
-                    },
-                    "sunday": {
-                        "string": "Sunday"
-                    }
-                }
-            },
-            "response": {
-                "interval_days": {
-                    "label": {
-                        "string": "Minimum days between auto replies"
-                    },
-                    "placeholder": {
-                        "string": "Leave empty for default behavior"
-                    },
-                    "description": {
-                        "string": "Prevents sending duplicate vacation replies within this period (RFC 5230 :days)."
-                    }
-                },
-                "send_always": {
-                    "label": {
-                        "string": "Always send vacation message response"
-                    },
-                    "description": {
-                        "string": "The vacation message is sent prior to applying your filters."
-                    }
-                }
-            }
+        "weekday_required": {
+          "string": "Hafta içi kısıtlamaları etkinleştirildiğinde en az bir hafta günü seçin."
+        },
+        "response_interval_invalid": {
+          "string": "Yanıt aralığı sıfır veya pozitif bir sayı olmalıdır."
+        },
+        "response_interval_zero": {
+          "string": "Sıfır günlük yanıt aralığı bu alanda izin verilmemektedir."
         }
+      }
+    },
+    "auto_reply": {
+      "enable": {
+        "string": "Tatil otomatik yanıtını etkinleştir"
+      },
+      "subject": {
+        "label": {
+          "string": "Otomatik yanıt konusu"
+        },
+        "description": {
+          "string": "Varsayılan konuyu kullanmak için boş bırakın. Orijinal konuyu eklemek için {subject} yazabilirsiniz."
+        }
+      },
+      "message": {
+        "string": "Otomatik yanıt mesajı"
+      },
+      "constraints": {
+        "title": {
+          "string": "Etkinleştirme kısıtlamaları"
+        },
+        "description": {
+          "string": "Gün ve saat aralıklarını bağımsız olarak özelleştirin ve isteğe bağlı olarak bunları belirli hafta günleriyle birleştirerek tatil filtrelerinizi tercihlerinize göre uyarlayın."
+        },
+        "enable": {
+          "days": {
+            "string": "Bu günlerde otomatik yanıtı etkinleştir"
+          },
+          "hours": {
+            "string": "Bu saatler arasında otomatik yanıtı etkinleştir"
+          },
+          "range": {
+            "string": "Bu tarihler arasında otomatik yanıtı etkinleştir"
+          }
+        },
+        "time": {
+          "start": {
+            "string": "Başlangıç saati"
+          },
+          "end": {
+            "string": "Bitiş saati"
+          }
+        },
+        "weekdays": {
+          "monday": {
+            "string": "Pazartesi"
+          },
+          "tuesday": {
+            "string": "Salı"
+          },
+          "wednesday": {
+            "string": "Çarşamba"
+          },
+          "thursday": {
+            "string": "Perşembe"
+          },
+          "friday": {
+            "string": "Cuma"
+          },
+          "saturday": {
+            "string": "Cumartesi"
+          },
+          "sunday": {
+            "string": "Pazar"
+          }
+        }
+      },
+      "response": {
+        "interval_days": {
+          "label": {
+            "string": "Otomatik yanıtlar arasındaki minimum gün sayısı"
+          },
+          "placeholder": {
+            "string": "Varsayılan davranış için boş bırakın"
+          },
+          "description": {
+            "string": "Bu süre içinde yinelenen tatil yanıtlarının gönderilmesini engeller (RFC 5230 :days)."
+          }
+        },
+        "send_always": {
+          "label": {
+            "string": "Tatil mesajını her zaman gönder"
+          },
+          "description": {
+            "string": "Tatil mesajı, filtrelerinizin uygulanmasından önce gönderilir."
+          }
+        }
+      }
     }
+  }
 }

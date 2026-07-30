@@ -1,133 +1,133 @@
 {
-    "US_MAIL_VACATIONS": {
-        "title": {
-            "string": "Vacation Settings",
-            "context": "Title for the vacation settings page"
+  "US_MAIL_VACATIONS": {
+    "title": {
+      "string": "การตั้งค่าการตอบกลับอัตโนมัติขณะลาพักร้อน",
+      "context": "Title for the vacation settings page"
+    },
+    "page": {
+      "description": {
+        "string": "กำหนดข้อความตอบกลับอัตโนมัติขณะลาพักร้อน และระยะเวลาที่จะเปิดใช้งาน"
+      }
+    },
+    "errors_api": {
+      "load_failed": {
+        "string": "ไม่สามารถโหลดการตั้งค่าการลาพักร้อนได้ กรุณาลองใหม่อีกครั้งในภายหลัง"
+      },
+      "feature_disabled": {
+        "string": "การตอบกลับอัตโนมัติขณะลาพักร้อนถูกปิดใช้งานโดยผู้ดูแลระบบของคุณ"
+      }
+    },
+    "errors": {
+      "validation": {
+        "message_required": {
+          "string": "จำเป็นต้องระบุข้อความตอบกลับอัตโนมัติเมื่อเปิดใช้งานการลาพักร้อน"
         },
-        "page": {
-            "description": {
-                "string": "Configure your out-of-office auto reply message and when it should be active."
-            }
+        "dates_required": {
+          "string": "จำเป็นต้องระบุวันที่เริ่มต้นและวันที่สิ้นสุดเมื่อเปิดใช้งานข้อจำกัดวันที่"
         },
-        "errors_api": {
-            "load_failed": {
-                "string": "Could not load vacation settings. Please try again later."
-            },
-            "feature_disabled": {
-                "string": "Vacation auto reply has been disabled by your administrator."
-            }
+        "date_order": {
+          "string": "วันที่สิ้นสุดต้องเป็นวันที่เดียวกันหรือหลังจากวันที่เริ่มต้น"
         },
-        "errors": {
-            "validation": {
-                "message_required": {
-                    "string": "Auto reply message is required when vacation is enabled."
-                },
-                "dates_required": {
-                    "string": "Start and end dates are required when date constraints are enabled."
-                },
-                "date_order": {
-                    "string": "End date must be on or after the start date."
-                },
-                "time_invalid": {
-                    "string": "Please enter a valid time in HH:MM format."
-                },
-                "weekday_required": {
-                    "string": "Select at least one weekday when weekday constraints are enabled."
-                },
-                "response_interval_invalid": {
-                    "string": "Response interval must be zero or a positive number."
-                },
-                "response_interval_zero": {
-                    "string": "A zero-day response interval is not allowed on this domain."
-                }
-            }
+        "time_invalid": {
+          "string": "กรุณาระบุเวลาที่ถูกต้องในรูปแบบ ชม:นาที"
         },
-        "auto_reply": {
-            "enable": {
-                "string": "Enable vacation auto reply"
-            },
-            "subject": {
-                "label": {
-                    "string": "Auto reply subject"
-                },
-                "description": {
-                    "string": "Leave blank to use default subject. You can write {subject} to insert the original subject."
-                }
-            },
-            "message": {
-                "string": "Auto reply message"
-            },
-            "constraints": {
-                "title": {
-                    "string": "Activation constraints"
-                },
-                "description": {
-                    "string": "Customize day and hour ranges independently and optionally combine them with specific weekdays to tailor your vacation filters to your preferences."
-                },
-                "enable": {
-                    "days": {
-                        "string": "Enable auto reply on these days"
-                    },
-                    "hours": {
-                        "string": "Enable auto reply between these hours"
-                    },
-                    "range": {
-                        "string": "Enable auto reply between these days"
-                    }
-                },
-                "time": {
-                    "start": {
-                        "string": "Start time"
-                    },
-                    "end": {
-                        "string": "End time"
-                    }
-                },
-                "weekdays": {
-                    "monday": {
-                        "string": "Monday"
-                    },
-                    "tuesday": {
-                        "string": "Tuesday"
-                    },
-                    "wednesday": {
-                        "string": "Wednesday"
-                    },
-                    "thursday": {
-                        "string": "Thursday"
-                    },
-                    "friday": {
-                        "string": "Friday"
-                    },
-                    "saturday": {
-                        "string": "Saturday"
-                    },
-                    "sunday": {
-                        "string": "Sunday"
-                    }
-                }
-            },
-            "response": {
-                "interval_days": {
-                    "label": {
-                        "string": "Minimum days between auto replies"
-                    },
-                    "placeholder": {
-                        "string": "Leave empty for default behavior"
-                    },
-                    "description": {
-                        "string": "Prevents sending duplicate vacation replies within this period (RFC 5230 :days)."
-                    }
-                },
-                "send_always": {
-                    "label": {
-                        "string": "Always send vacation message response"
-                    },
-                    "description": {
-                        "string": "The vacation message is sent prior to applying your filters."
-                    }
-                }
-            }
+        "weekday_required": {
+          "string": "จำเป็นต้องเลือกวันทำการอย่างน้อยหนึ่งวันเมื่อเปิดใช้งานข้อจำกัดวันทำการ"
+        },
+        "response_interval_invalid": {
+          "string": "ช่วงเวลาการตอบกลับต้องเป็นศูนย์หรือจำนวนบวก"
+        },
+        "response_interval_zero": {
+          "string": "ไม่สามารถตั้งค่าช่วงเวลาการตอบกลับเป็นศูนย์วันได้ในโดเมนนี้"
         }
+      }
+    },
+    "auto_reply": {
+      "enable": {
+        "string": "เปิดใช้งานการตอบกลับอัตโนมัติขณะลาพักร้อน"
+      },
+      "subject": {
+        "label": {
+          "string": "หัวข้อการตอบกลับอัตโนมัติ"
+        },
+        "description": {
+          "string": "เว้นว่างไว้เพื่อใช้หัวข้อเริ่มต้น คุณสามารถพิมพ์ {subject} เพื่อแทรกหัวข้อเดิม"
+        }
+      },
+      "message": {
+        "string": "ข้อความตอบกลับอัตโนมัติ"
+      },
+      "constraints": {
+        "title": {
+          "string": "ข้อจำกัดการเปิดใช้งาน"
+        },
+        "description": {
+          "string": "ปรับแต่งช่วงวันและชั่วโมงอย่างอิสระ และสามารถรวมกับวันทำการเฉพาะเพื่อปรับแต่งตัวกรองการลาพักร้อนให้เหมาะกับความต้องการของคุณ"
+        },
+        "enable": {
+          "days": {
+            "string": "เปิดใช้งานการตอบกลับอัตโนมัติในวันเหล่านี้"
+          },
+          "hours": {
+            "string": "เปิดใช้งานการตอบกลับอัตโนมัติระหว่างชั่วโมงเหล่านี้"
+          },
+          "range": {
+            "string": "เปิดใช้งานการตอบกลับอัตโนมัติระหว่างวันเหล่านี้"
+          }
+        },
+        "time": {
+          "start": {
+            "string": "เวลาเริ่มต้น"
+          },
+          "end": {
+            "string": "เวลาสิ้นสุด"
+          }
+        },
+        "weekdays": {
+          "monday": {
+            "string": "วันจันทร์"
+          },
+          "tuesday": {
+            "string": "วันอังคาร"
+          },
+          "wednesday": {
+            "string": "วันพุธ"
+          },
+          "thursday": {
+            "string": "วันพฤหัสบดี"
+          },
+          "friday": {
+            "string": "วันศุกร์"
+          },
+          "saturday": {
+            "string": "วันเสาร์"
+          },
+          "sunday": {
+            "string": "วันอาทิตย์"
+          }
+        }
+      },
+      "response": {
+        "interval_days": {
+          "label": {
+            "string": "จำนวนวันขั้นต่ำระหว่างการตอบกลับอัตโนมัติ"
+          },
+          "placeholder": {
+            "string": "เว้นว่างเพื่อใช้ค่ามาตรฐาน"
+          },
+          "description": {
+            "string": "ป้องกันการส่งข้อความตอบกลับวันหยุดซ้ำภายในระยะเวลานี้ (RFC 5230 :days)"
+          }
+        },
+        "send_always": {
+          "label": {
+            "string": "ส่งข้อความตอบกลับวันหยุดเสมอ"
+          },
+          "description": {
+            "string": "ข้อความวันหยุดจะถูกส่งก่อนที่จะนำฟิลเตอร์ของคุณไปใช้"
+          }
+        }
+      }
     }
+  }
 }

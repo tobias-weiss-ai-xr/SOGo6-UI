@@ -1,135 +1,135 @@
 {
   "AP_THEME": {
     "title": {
-      "string": "Theme Settings"
+      "string": "Ρυθμίσεις Θέματος"
     },
     "description": {
-      "string": "Customize the look and feel of the SOGo interface"
+      "string": "Προσαρμόστε την εμφάνιση και την αίσθηση της διεπαφής SOGo"
     },
     "form_title": {
-      "string": "Custom Theme"
+      "string": "Προσαρμοσμένο Θέμα"
     },
     "form_description": {
-      "string": "Configure colors, logo, and custom CSS for the groupware interface"
+      "string": "Διαμορφώστε χρώματα, λογότυπο και προσαρμοσμένο CSS για τη διεπαφή του groupware"
     },
     "fields": {
       "primary": {
         "label": {
-          "string": "Primary Color"
+          "string": "Κύριο Χρώμα"
         },
         "description": {
-          "string": "HSL values for the primary color (e.g. 180 25% 40%)"
+          "string": "Τιμές HSL για το κύριο χρώμα (π.χ. 180 25% 40%)"
         }
       },
       "primary_foreground": {
         "label": {
-          "string": "Primary Foreground"
+          "string": "Κύριο Προσκήνιο"
         },
         "description": {
-          "string": "Text color on primary backgrounds"
+          "string": "Χρώμα κειμένου σε κύρια φόντα"
         }
       },
       "background": {
         "label": {
-          "string": "Background"
+          "string": "Φόντο"
         },
         "description": {
-          "string": "HSL values for the page background"
+          "string": "Τιμές HSL για το φόντο της σελίδας"
         }
       },
       "foreground": {
         "label": {
-          "string": "Foreground"
+          "string": "Προσκήνιο"
         },
         "description": {
-          "string": "Default text color"
+          "string": "Προεπιλεγμένο χρώμα κειμένου"
         }
       },
       "sidebar_background": {
         "label": {
-          "string": "Sidebar Background"
+          "string": "Φόντο Πλαισίου Πλοήγησης"
         },
         "description": {
-          "string": "HSL values for the sidebar background"
+          "string": "Τιμές HSL για το φόντο του πλαίσιου πλοήγησης"
         }
       },
       "sidebar_foreground": {
         "label": {
-          "string": "Sidebar Foreground"
+          "string": "Προσκήνιο Πλαισίου Πλοήγησης"
         },
         "description": {
-          "string": "Text color in the sidebar"
+          "string": "Χρώμα κειμένου στο πλαίσιο πλοήγησης"
         }
       },
       "sidebar_primary": {
         "label": {
-          "string": "Sidebar Primary"
+          "string": "Κύριο Χρώμα Πλαισίου Πλοήγησης"
         },
         "description": {
-          "string": "Primary accent color in the sidebar"
+          "string": "Κύριο χρώμα έμφασης στο πλαίσιο πλοήγησης"
         }
       },
       "sidebar_accent": {
         "label": {
-          "string": "Sidebar Accent"
+          "string": "Χρώμα Έμφασης Πλαισίου Πλοήγησης"
         },
         "description": {
-          "string": "Accent color in the sidebar"
+          "string": "Χρώμα έμφασης στο πλαίσιο πλοήγησης"
         }
       },
       "header_background": {
         "label": {
-          "string": "Header Background"
+          "string": "Υπόβαθρο Κεφαλίδας"
         },
         "description": {
-          "string": "HSL values for the top header bar"
+          "string": "Τιμές HSL για την πάνω μπάρα κεφαλίδας"
         }
       },
       "header_foreground": {
         "label": {
-          "string": "Header Foreground"
+          "string": "Πρώτο Πλάνο Κεφαλίδας"
         },
         "description": {
-          "string": "Text color in the header"
+          "string": "Χρώμα κειμένου στην κεφαλίδα"
         }
       },
       "logo_url": {
         "label": {
-          "string": "Logo URL"
+          "string": "URL Λογότυπου"
         },
         "description": {
-          "string": "URL of the custom logo image (optional)"
+          "string": "URL της προσαρμοσμένης εικόνας λογότυπου (προαιρετικό)"
         }
       },
       "custom_css": {
         "label": {
-          "string": "Custom CSS"
+          "string": "Προσαρμοσμένο CSS"
         },
         "description": {
-          "string": "Additional CSS rules to inject (optional)"
+          "string": "Επιπλέον κανόνες CSS για ένθεση (προαιρετικό)"
         }
       }
     },
     "save": {
-      "string": "Save Changes"
+      "string": "Αποθήκευση Αλλαγών"
     },
     "saving": {
-      "string": "Saving…"
+      "string": "Αποθήκευση…"
     },
     "saved": {
-      "string": "Theme settings saved successfully"
+      "string": "Οι ρυθμίσεις θέματος αποθηκεύτηκαν επιτυχώς"
     },
     "save_error": {
-      "string": "Failed to save: {message}"
+      "string": "Αποτυχία αποθήκευσης: {message}"
     },
     "unsaved_changes": {
-      "string": "You have unsaved changes"
+      "string": "Έχετε μη αποθηκευμένες αλλαγές"
     },
     "load_error": {
-      "string": "Failed to load theme settings"
+      "string": "Αποτυχία φόρτωσης ρυθμίσεων θέματος"
     },
     "retry": {
-      "string": "Retry"
+      "string": "Δοκιμή Ξανά"
     }
   }
 }

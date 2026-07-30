@@ -1,1 +1,54 @@
-{ "AI_ENRICH": { "title": { "string": "Contact Auto-Enrichment" }, "description": { "string": "Extract phone, title, company, location from email signatures." }, "input": { "title": { "string": "Email Signature" }, "signature": { "string": "Signature Text" }, "placeholder": { "string": "Paste an email signature here..." } }, "output": { "title": { "string": "Extracted Information" }, "empty": { "string": "Enter signature text and click Extract" } }, "extract": { "string": "Extract Info" }, "field": { "phone": { "string": "Phone" }, "title": { "string": "Title" }, "company": { "string": "Company" }, "location": { "string": "Location" } }, "errors": { "empty": { "string": "Enter text" }, "fail": { "string": "Extraction failed" } } }}
+{
+  "AI_ENRICH": {
+    "title": {
+      "string": "Automatikus kontaktadatok bővítése"
+    },
+    "description": {
+      "string": "Telefonszám, beosztás, cégnév és helyszín kinyerése e-mail aláírásokból."
+    },
+    "input": {
+      "title": {
+        "string": "E-mail aláírás"
+      },
+      "signature": {
+        "string": "Aláírás szövege"
+      },
+      "placeholder": {
+        "string": "Illessze be ide az e-mail aláírást..."
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Kinyert adatok"
+      },
+      "empty": {
+        "string": "Adja meg az aláírás szövegét, majd kattintson a Kinyerés gombra"
+      }
+    },
+    "extract": {
+      "string": "Adatok kinyerése"
+    },
+    "field": {
+      "phone": {
+        "string": "Telefonszám"
+      },
+      "title": {
+        "string": "Beosztás"
+      },
+      "company": {
+        "string": "Cég"
+      },
+      "location": {
+        "string": "Helyszín"
+      }
+    },
+    "errors": {
+      "empty": {
+        "string": "Adjon meg szöveget"
+      },
+      "fail": {
+        "string": "A kinyerés sikertelen"
+      }
+    }
+  }
+}

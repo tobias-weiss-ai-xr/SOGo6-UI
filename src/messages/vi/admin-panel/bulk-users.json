@@ -1,25 +1,61 @@
-{ "AP_BULK": {
-    "title": { "string": "Bulk User Management" },
-    "description": { "string": "Import and export users in bulk using CSV files." },
+{
+  "AP_BULK": {
+    "title": {
+      "string": "Quản lý người dùng hàng loạt"
+    },
+    "description": {
+      "string": "Nhập và xuất người dùng hàng loạt bằng tệp CSV."
+    },
     "export": {
-      "title": { "string": "Export Users" },
-      "description": { "string": "Download all users as a CSV file." },
-      "format": { "string": "CSV file (.csv)" },
-      "button": { "string": "Export CSV" },
-      "success": { "string": "Export downloaded" },
-      "error": { "string": "Export failed" }
+      "title": {
+        "string": "Xuất người dùng"
+      },
+      "description": {
+        "string": "Tải xuống tất cả người dùng dưới dạng tệp CSV."
+      },
+      "format": {
+        "string": "Tệp CSV (.csv)"
+      },
+      "button": {
+        "string": "Xuất CSV"
+      },
+      "success": {
+        "string": "Đã tải xuống xuất"
+      },
+      "error": {
+        "string": "Xuất thất bại"
+      }
     },
     "import": {
-      "title": { "string": "Import Users" },
-      "description": { "string": "Upload a CSV file with user data to create or update accounts." },
-      "dropzone": { "string": "Click to upload CSV" },
-      "button": { "string": "Import CSV" },
-      "remove": { "string": "Remove file" },
-      "success": { "string": "Imported: {created} created, {updated} updated" },
-      "error": { "string": "Import failed" }
+      "title": {
+        "string": "Nhập người dùng"
+      },
+      "description": {
+        "string": "Tải lên tệp CSV chứa dữ liệu người dùng để tạo hoặc cập nhật tài khoản."
+      },
+      "dropzone": {
+        "string": "Nhấp để tải lên CSV"
+      },
+      "button": {
+        "string": "Nhập CSV"
+      },
+      "remove": {
+        "string": "Xóa tệp"
+      },
+      "success": {
+        "string": "Đã nhập: {created} đã tạo, {updated} đã cập nhật"
+      },
+      "error": {
+        "string": "Nhập thất bại"
+      }
     },
     "format": {
-      "title": { "string": "CSV Format" },
-      "hint": { "string": "First row must be the header. uid, cn, sn, givenName, mail are required. password is optional (random if blank)." }
+      "title": {
+        "string": "Định dạng CSV"
+      },
+      "hint": {
+        "string": "Dòng đầu tiên phải là tiêu đề. uid, cn, sn, givenName, mail là bắt buộc. password là tùy chọn (ngẫu nhiên nếu để trống)."
+      }
     }
-}}
+  }
+}

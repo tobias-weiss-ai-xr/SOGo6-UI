@@ -1,1 +1,49 @@
-{ "AI_SPAM": { "title": { "string": "Intelligent Spam Filter" }, "description": { "string": "Real-time spam scoring with pattern analysis, sender reputation, and content heuristics." }, "input": { "title": { "string": "Email to Score" }, "subject": { "string": "Subject" }, "sender": { "string": "Sender" }, "body": { "string": "Body" }, "placeholder": { "string": "Paste the email body..." } }, "output": { "title": { "string": "Spam Score" }, "empty": { "string": "Enter email content and click Score" }, "signals": { "string": "Detected Signals" } }, "score": { "string": "Score Email" }, "errors": { "empty": { "string": "Enter subject or body" }, "fail": { "string": "Scoring failed" } } }}
+{
+  "AI_SPAM": {
+    "title": {
+      "string": "Inteligentní filtr spamu"
+    },
+    "description": {
+      "string": "Skórování spamu v reálném čase pomocí analýzy vzorů, pověsti odesílatele a heuristik obsahu."
+    },
+    "input": {
+      "title": {
+        "string": "E-mail k ohodnocení"
+      },
+      "subject": {
+        "string": "Předmět"
+      },
+      "sender": {
+        "string": "Odesílatel"
+      },
+      "body": {
+        "string": "Tělo zprávy"
+      },
+      "placeholder": {
+        "string": "Vložte text e-mailu..."
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Skóre spamu"
+      },
+      "empty": {
+        "string": "Zadejte obsah e-mailu a klikněte na Ohodnotit"
+      },
+      "signals": {
+        "string": "Zjištěné signály"
+      }
+    },
+    "score": {
+      "string": "Ohodnotit e-mail"
+    },
+    "errors": {
+      "empty": {
+        "string": "Zadejte předmět nebo tělo zprávy"
+      },
+      "fail": {
+        "string": "Hodnocení se nezdařilo"
+      }
+    }
+  }
+}

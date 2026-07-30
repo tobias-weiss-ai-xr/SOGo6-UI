@@ -1,18 +1,18 @@
 {
-    "OPENCLOUD": {
-        "picker": {
-            "search": {
-                "string": "Search files..."
-            },
-            "empty": {
-                "string": "No files found"
-            },
-            "attached": {
-                "string": "Attached: {name}"
-            },
-            "error": {
-                "string": "Failed to select file"
-            }
-        }
+  "OPENCLOUD": {
+    "picker": {
+      "search": {
+        "string": "Søg efter filer..."
+      },
+      "empty": {
+        "string": "Ingen filer fundet"
+      },
+      "attached": {
+        "string": "Vedhæftet: {name}"
+      },
+      "error": {
+        "string": "Kunne ikke vælge fil"
+      }
     }
+  }
 }

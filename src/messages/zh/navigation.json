@@ -1,16 +1,16 @@
 {
   "NAVIGATION": {
     "address_book": {
-      "string": "Address Book"
+      "string": "通讯录"
     },
     "calendar": {
-      "string": "Calendar"
+      "string": "日历"
     },
     "tasks": {
-      "string": "Tasks"
+      "string": "任务"
     },
     "notes": {
-      "string": "Notes"
+      "string": "笔记"
     },
     "fast_access": {
       "calendar": {
