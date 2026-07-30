@@ -27,7 +27,7 @@
                     "description": "Return to search results"
                 },
                 "delete": {
-                    "string": "Delete",
+                    "string": "삭제",
                     "description": "Delete the current message"
                 },
                 "report_spam": {
@@ -35,7 +35,7 @@
                     "description": "Mark as spam"
                 },
                 "mark_unread": {
-                    "string": "Mark as unread",
+                    "string": "안 읽음으로 표시",
                     "description": "Mark as unread"
                 },
                 "label": {
@@ -51,11 +51,11 @@
                     "description": "Move message from Junk back to the Inbox"
                 },
                 "archive": {
-                    "string": "Archive",
+                    "string": "보관",
                     "description": "Move message to archive folder"
                 },
                 "download": {
-                    "string": "Download",
+                    "string": "다운로드",
                     "description": "Download message as .eml file"
                 },
                 "move": {
@@ -63,20 +63,20 @@
                     "description": "Move message to another folder"
                 },
                 "print": {
-                    "string": "Print",
+                    "string": "인쇄",
                     "description": "Print the current message"
                 },
                 "print_labels": {
                     "from": {
-                        "string": "From",
+                        "string": "보내는 사람",
                         "description": "From label in print view"
                     },
                     "to": {
-                        "string": "To",
+                        "string": "받는 사람",
                         "description": "To label in print view"
                     },
                     "cc": {
-                        "string": "Cc",
+                        "string": "참조",
                         "description": "Cc label in print view"
                     },
                     "date": {
@@ -89,7 +89,7 @@
                     }
                 },
                 "view_source": {
-                    "string": "View source",
+                    "string": "소스 보기",
                     "description": "View raw message source"
                 },
                 "delete_confirm": {
@@ -100,10 +100,10 @@
                         "string": "This message will be moved to Trash."
                     },
                     "confirm": {
-                        "string": "Delete"
+                        "string": "삭제"
                     },
                     "cancel": {
-                        "string": "Cancel"
+                        "string": "취소"
                     }
                 },
                 "spam_confirm": {
@@ -117,7 +117,7 @@
                         "string": "Move to Junk"
                     },
                     "cancel": {
-                        "string": "Cancel"
+                        "string": "취소"
                     }
                 },
                 "ham_confirm": {
@@ -131,19 +131,19 @@
                         "string": "Move to Inbox"
                     },
                     "cancel": {
-                        "string": "Cancel"
+                        "string": "취소"
                     }
                 },
                 "more": {
-                    "string": "More actions",
+                    "string": "더 많은 작업",
                     "description": "More actions"
                 },
                 "next-mail": {
-                    "string": "Next mail",
+                    "string": "다음 메일",
                     "description": "Next mail"
                 },
                 "previous-mail": {
-                    "string": "Previous mail",
+                    "string": "이전 메일",
                     "description": "Previous mail"
                 },
                 "snooze": {
@@ -181,15 +181,15 @@
             },
             "header": {
                 "from": {
-                    "string": "From",
+                    "string": "보내는 사람",
                     "description": "From"
                 },
                 "to": {
-                    "string": "To",
+                    "string": "받는 사람",
                     "description": "To"
                 },
                 "cc": {
-                    "string": "Cc",
+                    "string": "참조",
                     "description": "Cc"
                 },
                 "unsubscribe": {
@@ -206,7 +206,7 @@
                         "description": "Confirm the unsubscription"
                     },
                     "cancel": {
-                        "string": "Cancel",
+                        "string": "취소",
                         "description": "Cancel the unsubscription"
                     }
                 },
@@ -227,61 +227,61 @@
             }
         },
         "error": {
-            "string": "Error",
+            "string": "오류",
             "description": "Generic error title used when mails fail to load"
         },
         "search": {
             "placeholder": {
-                "string": "Search emails",
+                "string": "이메일 검색",
                 "description": "Placeholder text for the email search input field"
             },
             "more_options": {
-                "string": "More Options",
+                "string": "더 많은 옵션",
                 "description": "Button to open more search options"
             },
             "folders": {
-                "string": "Folders",
+                "string": "폴더",
                 "description": "Label for the folders section in the search options"
             },
             "confirm": {
-                "string": "Search",
+                "string": "검색",
                 "description": "Button to confirm and execute the email search"
             },
             "in_message_content": {
-                "string": "In message content",
+                "string": "메시지 내용",
                 "description": "Option to search within the content of messages"
             },
             "with_attachments": {
-                "string": "With Attachments",
+                "string": "첨부파일 포함",
                 "description": "Option to filter emails that have attachments"
             },
             "in_favorites": {
-                "string": "In favorites",
+                "string": "즐겨찾기",
                 "description": "Option to filter emails that are marked as favorites"
             },
             "unseen_only": {
-                "string": "Unseen only",
+                "string": "안 본 것만",
                 "description": "Option to filter emails that are unseen"
             },
             "body": {
-                "string": "Body",
+                "string": "본문",
                 "description": "Label for the 'Body' field in email search options"
             },
             "date_from": {
-                "string": "Date from",
+                "string": "날짜부터",
                 "description": "Label for the 'Date from' field in email search options"
             },
             "date_to": {
-                "string": "Date to",
+                "string": "날짜까지",
                 "description": "Label for the 'Date to' field in email search options"
             },
             "others": {
-                "string": "Others",
+                "string": "기타",
                 "description": "Label for the 'Others' section in email search options"
             }
         },
         "from": {
-            "string": "From",
+            "string": "보내는 사람",
             "description": "Label for the 'From' field in email search options"
         },
         "account_switcher": {
@@ -290,7 +290,7 @@
                 "description": "Button to add an external mail account in the sidebar account switcher"
             },
             "new_folder": {
-                "string": "New folder",
+                "string": "새 폴더",
                 "description": "Label for the new folder action in the account switcher menu"
             },
             "delegate": {
@@ -299,15 +299,15 @@
             }
         },
         "to": {
-            "string": "To",
+            "string": "받는 사람",
             "description": "Label for the 'To' field in email search options"
         },
         "bcc": {
-            "string": "Bcc",
+            "string": "참조(비밀)",
             "description": "Label for the 'Bcc' field in email search options"
         },
         "subject": {
-            "string": "Subject",
+            "string": "제목",
             "description": "Label for the 'Subject' field in email search options"
         },
         "folders": {
@@ -317,7 +317,7 @@
                     "description": "Button to create a new subfolder in the current folder"
                 },
                 "rename": {
-                    "string": "Rename",
+                    "string": "이름 변경",
                     "description": "Button to rename the current folder"
                 },
                 "rename_dialog": {
@@ -334,11 +334,11 @@
                         "description": "Placeholder for the folder name input"
                     },
                     "submit": {
-                        "string": "Rename",
+                        "string": "이름 변경",
                         "description": "Submit button label in the rename folder dialog"
                     },
                     "cancel": {
-                        "string": "Cancel",
+                        "string": "취소",
                         "description": "Cancel button label in the rename folder dialog"
                     },
                     "error_required": {
@@ -363,7 +363,7 @@
                     "description": "Button to export all messages in the current folder"
                 },
                 "move_to": {
-                    "string": "Move to",
+                    "string": "이동 위치",
                     "description": "Button to move the current folder under another parent"
                 },
                 "set_as": {
@@ -389,7 +389,7 @@
                         "string": "Empty folder"
                     },
                     "cancel": {
-                        "string": "Cancel"
+                        "string": "취소"
                     }
                 },
                 "set_as_dialog": {
@@ -400,20 +400,20 @@
                         "string": "Choose the semantic type for \"{folder}\"."
                     },
                     "cancel": {
-                        "string": "Cancel"
+                        "string": "취소"
                     },
                     "types": {
                         "DRAFT": {
-                            "string": "Drafts"
+                            "string": "임시 저장"
                         },
                         "SENT": {
-                            "string": "Sent"
+                            "string": "보낸 편지함"
                         },
                         "TRASH": {
-                            "string": "Trash"
+                            "string": "휴지통"
                         },
                         "JUNK": {
-                            "string": "Junk"
+                            "string": "스팸"
                         },
                         "TEMPLATE": {
                             "string": "Templates"
@@ -434,10 +434,10 @@
                         "string": "Root level"
                     },
                     "confirm": {
-                        "string": "Move"
+                        "string": "이동"
                     },
                     "cancel": {
-                        "string": "Cancel"
+                        "string": "취소"
                     }
                 },
                 "sharing": {
@@ -482,10 +482,10 @@
                         }
                     },
                     "save": {
-                        "string": "Save"
+                        "string": "저장"
                     },
                     "cancel": {
-                        "string": "Cancel"
+                        "string": "취소"
                     },
                     "badge": {
                         "you": {
@@ -514,7 +514,7 @@
                         "string": "Purge"
                     },
                     "cancel": {
-                        "string": "Cancel"
+                        "string": "취소"
                     },
                     "olderThan": {
                         "string": "Delete mails older than"
@@ -576,7 +576,7 @@
                         "string": "Expunge"
                     },
                     "cancel": {
-                        "string": "Cancel"
+                        "string": "취소"
                     }
                 },
                 "delete": {
@@ -591,11 +591,11 @@
                         "description": "Description of the delete folder confirmation dialog"
                     },
                     "confirm": {
-                        "string": "Delete",
+                        "string": "삭제",
                         "description": "Confirm button label in the delete folder dialog"
                     },
                     "cancel": {
-                        "string": "Cancel",
+                        "string": "취소",
                         "description": "Cancel button label in the delete folder dialog"
                     }
                 },
@@ -617,7 +617,7 @@
                         "description": "Submit button label in the create subfolder dialog"
                     },
                     "cancel": {
-                        "string": "Cancel",
+                        "string": "취소",
                         "description": "Cancel button label in the create subfolder dialog"
                     },
                     "error_required": {
@@ -635,23 +635,23 @@
                 }
             },
             "inbox": {
-                "string": "Inbox",
+                "string": "收件箱",
                 "description": "Your inbox where you receive new messages"
             },
             "sent": {
-                "string": "Sent",
+                "string": "보낸 편지함",
                 "description": "Messages you have sent"
             },
             "drafts": {
-                "string": "Drafts",
+                "string": "임시 저장",
                 "description": "Messages you have saved as drafts"
             },
             "trash": {
-                "string": "Trash",
+                "string": "휴지통",
                 "description": "Deleted messages that can be restored or permanently deleted"
             },
             "junk": {
-                "string": "Junk",
+                "string": "스팸",
                 "description": "Messages identified as spam"
             },
             "template": {
@@ -673,7 +673,7 @@
         },
         "sse": {
             "defaultSubject": {
-                "string": "New message"
+                "string": "새 메시지"
             },
             "defaultSender": {
                 "string": "Unknown sender"

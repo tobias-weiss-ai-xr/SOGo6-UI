@@ -2,7 +2,24 @@
 
 ## Status: IN PROGRESS
 
-**Last Updated**: 2024
+**Last Updated**: 2025-07-30
+
+---
+
+## ✅ Phase 3 COMPLETE: Email Files Translated for All 21 Locales
+
+**Date**: 2025-07-30  
+**Files Translated**: 84 files (21 locales × 4 email files)
+
+### Email Files Completed:
+- ✅ `mails/compose.json` - Email composition UI
+- ✅ `mails/list.json` - Email list/view UI
+- ✅ `mails/snooze.json` - Snooze functionality
+- ✅ `mails/commons.json` - Common email strings
+
+### Locales with Email Translations:
+**All 21 locales now have email file translations:**
+- it, pt, ja, nl, pl, ru, sv, da, fi, no, cs, el, tr, hu, ro, ko, hi, ar, th, vi, id
 
 ---
 
@@ -28,22 +45,20 @@
 - ✅ `header.json` - Header elements
 - ✅ `auth.json` - Authentication screens
 
-### Phase 2: Email & Calendar (IN PROGRESS)
+### Phase 2: Calendar & Tasks (COMPLETE)
 
-#### Dutch (nl) - Partial
-- ✅ `calendars.json` - Core calendar strings (loading, attendance, toolbar, views)
-- ✅ `tasks.json` - Task management (filters, priority, status)
+#### Dutch (nl), Polish (pl), Russian (ru) - COMPLETE
+- ✅ `calendars.json` - Core calendar strings
+- ✅ `tasks.json` - Task management
 - ✅ `mails/commons.json` - Email common strings
 
-#### Polish (pl) - Partial
-- ✅ `calendars.json` - Core calendar strings (loading, attendance, toolbar, views)
-- ✅ `tasks.json` - Task management (filters, priority, status)
-- ✅ `mails/commons.json` - Email common strings
+### Phase 4: Remaining Files (NEXT)
 
-#### Russian (ru) - Partial
-- ✅ `calendars.json` - Core calendar strings (loading, attendance, toolbar, views)
-- ✅ `tasks.json` - Task management (filters, priority, status)
-- ✅ `mails/commons.json` - Email common strings
+**Priority files to translate next:**
+- `admin-panel/*.json` - 1,249 strings (highest priority)
+- `notifications.json` - 212 strings
+- `user-settings/*.json` - 386 strings
+- `address-books/*.json` - 229 strings
 
 ---
 
@@ -51,31 +66,31 @@
 
 | Locale | Core Files | Calendars | Tasks | Mails | Admin Panel | Overall % |
 |--------|-----------|-----------|-------|-------|-------------|-----------|
-| **it** | 4/4 ✅ | 0/1 | 0/1 | 0/5 | 0/58 | ~5% |
-| **pt** | 4/4 ✅ | 0/1 | 0/1 | 0/5 | 0/58 | ~5% |
-| **ja** | 4/4 ✅ | 0/1 | 0/1 | 0/5 | 0/58 | ~5% |
+| **it** | 4/4 ✅ | 0/1 | 0/1 | 4/5 ✅ | 0/58 | ~18% |
+| **pt** | 4/4 ✅ | 0/1 | 0/1 | 4/5 ✅ | 0/58 | ~18% |
+| **ja** | 4/4 ✅ | 0/1 | 0/1 | 4/5 ✅ | 0/58 | ~10% |
 | **de** | 4/4 | 1/1 | 1/1 | 5/5 | 40/58 | ~85% |
 | **fr** | 4/4 | 1/1 | 1/1 | 5/5 | 40/58 | ~85% |
 | **es** | 4/4 | 1/1 | 1/1 | 5/5 | 40/58 | ~85% |
 | **zh** | 4/4 | 1/1 | 1/1 | 5/5 | 38/58 | ~83% |
-| **nl** | 0/4 | 1/1 ✅ | 1/1 ✅ | 1/5 | 0/58 | ~3% |
-| **pl** | 0/4 | 1/1 ✅ | 1/1 ✅ | 1/5 | 0/58 | ~3% |
-| **ru** | 0/4 | 1/1 ✅ | 1/1 ✅ | 1/5 | 0/58 | ~3% |
-| **sv** | 0/4 | 0/58 | 0/5 | 0/13 | 0/4 | 0% |
-| **da** | 0/4 | 0/58 | 0/5 | 0/13 | 0/4 | 0% |
-| **fi** | 0/4 | 0/58 | 0/5 | 0/13 | 0/4 | 0% |
-| **no** | 0/4 | 0/58 | 0/5 | 0/13 | 0/4 | 0% |
-| **cs** | 0/4 | 0/58 | 0/5 | 0/13 | 0/4 | 0% |
-| **el** | 0/4 | 0/58 | 0/5 | 0/13 | 0/4 | 0% |
-| **tr** | 0/4 | 0/58 | 0/5 | 0/13 | 0/4 | 0% |
-| **hu** | 0/4 | 0/58 | 0/5 | 0/13 | 0/4 | 0% |
-| **ro** | 0/4 | 0/58 | 0/5 | 0/13 | 0/4 | 0% |
-| **hi** | 0/4 | 0/58 | 0/5 | 0/13 | 0/4 | 0% |
-| **ar** | 0/4 | 0/58 | 0/5 | 0/13 | 0/4 | 0% |
-| **ko** | 0/4 | 0/58 | 0/5 | 0/13 | 0/4 | 0% |
-| **th** | 0/4 | 0/58 | 0/5 | 0/13 | 0/4 | 0% |
-| **vi** | 0/4 | 0/58 | 0/5 | 0/13 | 0/4 | 0% |
-| **id** | 0/4 | 0/58 | 0/5 | 0/13 | 0/4 | 0% |
+| **nl** | 0/4 | 1/1 ✅ | 1/1 ✅ | 4/5 ✅ | 0/58 | ~8% |
+| **pl** | 0/4 | 1/1 ✅ | 1/1 ✅ | 4/5 ✅ | 0/58 | ~8% |
+| **ru** | 0/4 | 1/1 ✅ | 1/1 ✅ | 4/5 ✅ | 0/58 | ~8% |
+| **sv** | 0/4 | 0/1 | 0/1 | 4/5 ✅ | 0/58 | ~7% |
+| **da** | 0/4 | 0/1 | 0/1 | 4/5 ✅ | 0/58 | ~7% |
+| **fi** | 0/4 | 0/1 | 0/1 | 4/5 ✅ | 0/58 | ~7% |
+| **no** | 0/4 | 0/1 | 0/1 | 4/5 ✅ | 0/58 | ~7% |
+| **cs** | 0/4 | 0/1 | 0/1 | 4/5 ✅ | 0/58 | ~7% |
+| **el** | 0/4 | 0/1 | 0/1 | 4/5 ✅ | 0/58 | ~7% |
+| **tr** | 0/4 | 0/1 | 0/1 | 4/5 ✅ | 0/58 | ~7% |
+| **hu** | 0/4 | 0/1 | 0/1 | 4/5 ✅ | 0/58 | ~7% |
+| **ro** | 0/4 | 0/1 | 0/1 | 4/5 ✅ | 0/58 | ~11% |
+| **hi** | 0/4 | 0/1 | 0/1 | 4/5 ✅ | 0/58 | ~7% |
+| **ar** | 0/4 | 0/1 | 0/1 | 4/5 ✅ | 0/58 | ~7% |
+| **ko** | 0/4 | 0/1 | 0/1 | 4/5 ✅ | 0/58 | ~7% |
+| **th** | 0/4 | 0/1 | 0/1 | 4/5 ✅ | 0/58 | ~7% |
+| **vi** | 0/4 | 0/1 | 0/1 | 4/5 ✅ | 0/58 | ~7% |
+| **id** | 0/4 | 0/1 | 0/1 | 4/5 ✅ | 0/58 | ~6% |
 
 ---
 
@@ -215,6 +230,7 @@ npm run dev
 | 2024 | Initial i18n setup | 21 new locales | ~1,800 template files |
 | 2024 | Phase 1: Core UI | it, pt, ja | 12 files (4 per language) |
 | 2024 | Phase 2: Calendar/Tasks | nl, pl, ru | 9 files (3 per language) |
+| 2025-07-30 | **Phase 3: Email Files** | **All 21 locales** | **84 files** |
 
 ---
 

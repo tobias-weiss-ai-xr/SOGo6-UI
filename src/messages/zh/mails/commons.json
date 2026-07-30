@@ -15,7 +15,7 @@
                     "description": "Forward the current message to another recipient"
                 },
                 "edit_draft": {
-                    "string": "Edit",
+                    "string": "编辑",
                     "description": "Open the draft in the composer"
                 },
                 "use_template": {
@@ -27,7 +27,7 @@
                     "description": "Return to search results"
                 },
                 "delete": {
-                    "string": "Delete",
+                    "string": "删除",
                     "description": "Delete the current message"
                 },
                 "report_spam": {
@@ -100,10 +100,10 @@
                         "string": "This message will be moved to Trash."
                     },
                     "confirm": {
-                        "string": "Delete"
+                        "string": "删除"
                     },
                     "cancel": {
-                        "string": "Cancel"
+                        "string": "取消"
                     }
                 },
                 "spam_confirm": {
@@ -117,7 +117,7 @@
                         "string": "Move to Junk"
                     },
                     "cancel": {
-                        "string": "Cancel"
+                        "string": "取消"
                     }
                 },
                 "ham_confirm": {
@@ -131,7 +131,7 @@
                         "string": "Move to Inbox"
                     },
                     "cancel": {
-                        "string": "Cancel"
+                        "string": "取消"
                     }
                 },
                 "more": {
@@ -206,7 +206,7 @@
                         "description": "Confirm the unsubscription"
                     },
                     "cancel": {
-                        "string": "Cancel",
+                        "string": "取消",
                         "description": "Cancel the unsubscription"
                     }
                 },
@@ -227,7 +227,7 @@
             }
         },
         "error": {
-            "string": "Error",
+            "string": "错误",
             "description": "Generic error title used when mails fail to load"
         },
         "search": {
@@ -244,7 +244,7 @@
                 "description": "Label for the folders section in the search options"
             },
             "confirm": {
-                "string": "Search",
+                "string": "搜索",
                 "description": "Button to confirm and execute the email search"
             },
             "in_message_content": {
@@ -338,7 +338,7 @@
                         "description": "Submit button label in the rename folder dialog"
                     },
                     "cancel": {
-                        "string": "Cancel",
+                        "string": "取消",
                         "description": "Cancel button label in the rename folder dialog"
                     },
                     "error_required": {
@@ -389,7 +389,7 @@
                         "string": "Empty folder"
                     },
                     "cancel": {
-                        "string": "Cancel"
+                        "string": "取消"
                     }
                 },
                 "set_as_dialog": {
@@ -400,7 +400,7 @@
                         "string": "Choose the semantic type for \"{folder}\"."
                     },
                     "cancel": {
-                        "string": "Cancel"
+                        "string": "取消"
                     },
                     "types": {
                         "DRAFT": {
@@ -437,11 +437,11 @@
                         "string": "Move"
                     },
                     "cancel": {
-                        "string": "Cancel"
+                        "string": "取消"
                     }
                 },
                 "sharing": {
-                    "string": "Sharing",
+                    "string": "Sharing中",
                     "title": {
                         "string": "Share folder"
                     },
@@ -459,7 +459,7 @@
                             "string": "email@domain.com"
                         },
                         "button": {
-                            "string": "Add"
+                            "string": "添加"
                         },
                         "error": {
                             "invalid": {
@@ -482,10 +482,10 @@
                         }
                     },
                     "save": {
-                        "string": "Save"
+                        "string": "保存"
                     },
                     "cancel": {
-                        "string": "Cancel"
+                        "string": "取消"
                     },
                     "badge": {
                         "you": {
@@ -514,7 +514,7 @@
                         "string": "Purge"
                     },
                     "cancel": {
-                        "string": "Cancel"
+                        "string": "取消"
                     },
                     "olderThan": {
                         "string": "Delete mails older than"
@@ -576,7 +576,7 @@
                         "string": "Expunge"
                     },
                     "cancel": {
-                        "string": "Cancel"
+                        "string": "取消"
                     }
                 },
                 "delete": {
@@ -591,11 +591,11 @@
                         "description": "Description of the delete folder confirmation dialog"
                     },
                     "confirm": {
-                        "string": "Delete",
+                        "string": "删除",
                         "description": "Confirm button label in the delete folder dialog"
                     },
                     "cancel": {
-                        "string": "Cancel",
+                        "string": "取消",
                         "description": "Cancel button label in the delete folder dialog"
                     }
                 },
@@ -613,11 +613,11 @@
                         "description": "Placeholder for the folder name input"
                     },
                     "submit": {
-                        "string": "Create",
+                        "string": "创建",
                         "description": "Submit button label in the create subfolder dialog"
                     },
                     "cancel": {
-                        "string": "Cancel",
+                        "string": "取消",
                         "description": "Cancel button label in the create subfolder dialog"
                     },
                     "error_required": {

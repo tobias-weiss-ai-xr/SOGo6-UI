@@ -27,7 +27,7 @@
                     "description": "Return to search results"
                 },
                 "delete": {
-                    "string": "Delete",
+                    "string": "Excluir",
                     "description": "Delete the current message"
                 },
                 "report_spam": {
@@ -35,7 +35,7 @@
                     "description": "Mark as spam"
                 },
                 "mark_unread": {
-                    "string": "Mark as unread",
+                    "string": "Marcar como não lido",
                     "description": "Mark as unread"
                 },
                 "label": {
@@ -51,11 +51,11 @@
                     "description": "Move message from Junk back to the Inbox"
                 },
                 "archive": {
-                    "string": "Archive",
+                    "string": "Arquivar",
                     "description": "Move message to archive folder"
                 },
                 "download": {
-                    "string": "Download",
+                    "string": "Baixar",
                     "description": "Download message as .eml file"
                 },
                 "move": {
@@ -63,16 +63,16 @@
                     "description": "Move message to another folder"
                 },
                 "print": {
-                    "string": "Print",
+                    "string": "Imprimir",
                     "description": "Print the current message"
                 },
                 "print_labels": {
                     "from": {
-                        "string": "From",
+                        "string": "De",
                         "description": "From label in print view"
                     },
                     "to": {
-                        "string": "To",
+                        "string": "Para",
                         "description": "To label in print view"
                     },
                     "cc": {
@@ -89,7 +89,7 @@
                     }
                 },
                 "view_source": {
-                    "string": "View source",
+                    "string": "Ver fonte",
                     "description": "View raw message source"
                 },
                 "delete_confirm": {
@@ -100,10 +100,10 @@
                         "string": "This message will be moved to Trash."
                     },
                     "confirm": {
-                        "string": "Delete"
+                        "string": "Excluir"
                     },
                     "cancel": {
-                        "string": "Cancel"
+                        "string": "Cancelar"
                     }
                 },
                 "spam_confirm": {
@@ -117,7 +117,7 @@
                         "string": "Move to Junk"
                     },
                     "cancel": {
-                        "string": "Cancel"
+                        "string": "Cancelar"
                     }
                 },
                 "ham_confirm": {
@@ -131,19 +131,19 @@
                         "string": "Move to Inbox"
                     },
                     "cancel": {
-                        "string": "Cancel"
+                        "string": "Cancelar"
                     }
                 },
                 "more": {
-                    "string": "More actions",
+                    "string": "Mais ações",
                     "description": "More actions"
                 },
                 "next-mail": {
-                    "string": "Next mail",
+                    "string": "Próximo email",
                     "description": "Next mail"
                 },
                 "previous-mail": {
-                    "string": "Previous mail",
+                    "string": "Email anterior",
                     "description": "Previous mail"
                 },
                 "snooze": {
@@ -181,11 +181,11 @@
             },
             "header": {
                 "from": {
-                    "string": "From",
+                    "string": "De",
                     "description": "From"
                 },
                 "to": {
-                    "string": "To",
+                    "string": "Para",
                     "description": "To"
                 },
                 "cc": {
@@ -206,7 +206,7 @@
                         "description": "Confirm the unsubscription"
                     },
                     "cancel": {
-                        "string": "Cancel",
+                        "string": "Cancelar",
                         "description": "Cancel the unsubscription"
                     }
                 },
@@ -227,61 +227,61 @@
             }
         },
         "error": {
-            "string": "Error",
+            "string": "Erro",
             "description": "Generic error title used when mails fail to load"
         },
         "search": {
             "placeholder": {
-                "string": "Search emails",
+                "string": "Pesquisar emails",
                 "description": "Placeholder text for the email search input field"
             },
             "more_options": {
-                "string": "More Options",
+                "string": "Mais opções",
                 "description": "Button to open more search options"
             },
             "folders": {
-                "string": "Folders",
+                "string": "Pastas",
                 "description": "Label for the folders section in the search options"
             },
             "confirm": {
-                "string": "Search",
+                "string": "Pesquisar",
                 "description": "Button to confirm and execute the email search"
             },
             "in_message_content": {
-                "string": "In message content",
+                "string": "No conteúdo da mensagem",
                 "description": "Option to search within the content of messages"
             },
             "with_attachments": {
-                "string": "With Attachments",
+                "string": "Com anexos",
                 "description": "Option to filter emails that have attachments"
             },
             "in_favorites": {
-                "string": "In favorites",
+                "string": "Nos favoritos",
                 "description": "Option to filter emails that are marked as favorites"
             },
             "unseen_only": {
-                "string": "Unseen only",
+                "string": "Apenas não lidos",
                 "description": "Option to filter emails that are unseen"
             },
             "body": {
-                "string": "Body",
+                "string": "Corpo",
                 "description": "Label for the 'Body' field in email search options"
             },
             "date_from": {
-                "string": "Date from",
+                "string": "Data de",
                 "description": "Label for the 'Date from' field in email search options"
             },
             "date_to": {
-                "string": "Date to",
+                "string": "Data até",
                 "description": "Label for the 'Date to' field in email search options"
             },
             "others": {
-                "string": "Others",
+                "string": "Outros",
                 "description": "Label for the 'Others' section in email search options"
             }
         },
         "from": {
-            "string": "From",
+            "string": "De",
             "description": "Label for the 'From' field in email search options"
         },
         "account_switcher": {
@@ -290,7 +290,7 @@
                 "description": "Button to add an external mail account in the sidebar account switcher"
             },
             "new_folder": {
-                "string": "New folder",
+                "string": "Nova pasta",
                 "description": "Label for the new folder action in the account switcher menu"
             },
             "delegate": {
@@ -299,15 +299,15 @@
             }
         },
         "to": {
-            "string": "To",
+            "string": "Para",
             "description": "Label for the 'To' field in email search options"
         },
         "bcc": {
-            "string": "Bcc",
+            "string": "Cco",
             "description": "Label for the 'Bcc' field in email search options"
         },
         "subject": {
-            "string": "Subject",
+            "string": "Assunto",
             "description": "Label for the 'Subject' field in email search options"
         },
         "folders": {
@@ -317,7 +317,7 @@
                     "description": "Button to create a new subfolder in the current folder"
                 },
                 "rename": {
-                    "string": "Rename",
+                    "string": "Renomear",
                     "description": "Button to rename the current folder"
                 },
                 "rename_dialog": {
@@ -334,11 +334,11 @@
                         "description": "Placeholder for the folder name input"
                     },
                     "submit": {
-                        "string": "Rename",
+                        "string": "Renomear",
                         "description": "Submit button label in the rename folder dialog"
                     },
                     "cancel": {
-                        "string": "Cancel",
+                        "string": "Cancelar",
                         "description": "Cancel button label in the rename folder dialog"
                     },
                     "error_required": {
@@ -363,7 +363,7 @@
                     "description": "Button to export all messages in the current folder"
                 },
                 "move_to": {
-                    "string": "Move to",
+                    "string": "Mover para",
                     "description": "Button to move the current folder under another parent"
                 },
                 "set_as": {
@@ -389,7 +389,7 @@
                         "string": "Empty folder"
                     },
                     "cancel": {
-                        "string": "Cancel"
+                        "string": "Cancelar"
                     }
                 },
                 "set_as_dialog": {
@@ -400,20 +400,20 @@
                         "string": "Choose the semantic type for \"{folder}\"."
                     },
                     "cancel": {
-                        "string": "Cancel"
+                        "string": "Cancelar"
                     },
                     "types": {
                         "DRAFT": {
-                            "string": "Drafts"
+                            "string": "Rascunhos"
                         },
                         "SENT": {
-                            "string": "Sent"
+                            "string": "Enviados"
                         },
                         "TRASH": {
-                            "string": "Trash"
+                            "string": "Lixeira"
                         },
                         "JUNK": {
-                            "string": "Junk"
+                            "string": "Lixo eletrônico"
                         },
                         "TEMPLATE": {
                             "string": "Templates"
@@ -434,10 +434,10 @@
                         "string": "Root level"
                     },
                     "confirm": {
-                        "string": "Move"
+                        "string": "Mover"
                     },
                     "cancel": {
-                        "string": "Cancel"
+                        "string": "Cancelar"
                     }
                 },
                 "sharing": {
@@ -482,10 +482,10 @@
                         }
                     },
                     "save": {
-                        "string": "Save"
+                        "string": "Salvar"
                     },
                     "cancel": {
-                        "string": "Cancel"
+                        "string": "Cancelar"
                     },
                     "badge": {
                         "you": {
@@ -514,7 +514,7 @@
                         "string": "Purge"
                     },
                     "cancel": {
-                        "string": "Cancel"
+                        "string": "Cancelar"
                     },
                     "olderThan": {
                         "string": "Delete mails older than"
@@ -576,7 +576,7 @@
                         "string": "Expunge"
                     },
                     "cancel": {
-                        "string": "Cancel"
+                        "string": "Cancelar"
                     }
                 },
                 "delete": {
@@ -591,11 +591,11 @@
                         "description": "Description of the delete folder confirmation dialog"
                     },
                     "confirm": {
-                        "string": "Delete",
+                        "string": "Excluir",
                         "description": "Confirm button label in the delete folder dialog"
                     },
                     "cancel": {
-                        "string": "Cancel",
+                        "string": "Cancelar",
                         "description": "Cancel button label in the delete folder dialog"
                     }
                 },
@@ -617,7 +617,7 @@
                         "description": "Submit button label in the create subfolder dialog"
                     },
                     "cancel": {
-                        "string": "Cancel",
+                        "string": "Cancelar",
                         "description": "Cancel button label in the create subfolder dialog"
                     },
                     "error_required": {
@@ -635,23 +635,23 @@
                 }
             },
             "inbox": {
-                "string": "Inbox",
+                "string": "Caixa de entrada",
                 "description": "Your inbox where you receive new messages"
             },
             "sent": {
-                "string": "Sent",
+                "string": "Enviados",
                 "description": "Messages you have sent"
             },
             "drafts": {
-                "string": "Drafts",
+                "string": "Rascunhos",
                 "description": "Messages you have saved as drafts"
             },
             "trash": {
-                "string": "Trash",
+                "string": "Lixeira",
                 "description": "Deleted messages that can be restored or permanently deleted"
             },
             "junk": {
-                "string": "Junk",
+                "string": "Lixo eletrônico",
                 "description": "Messages identified as spam"
             },
             "template": {
@@ -673,7 +673,7 @@
         },
         "sse": {
             "defaultSubject": {
-                "string": "New message"
+                "string": "Nova mensagem"
             },
             "defaultSender": {
                 "string": "Unknown sender"

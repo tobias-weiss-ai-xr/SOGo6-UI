@@ -27,7 +27,7 @@
                     "description": "Return to search results"
                 },
                 "delete": {
-                    "string": "Delete",
+                    "string": "削除",
                     "description": "Delete the current message"
                 },
                 "report_spam": {
@@ -35,7 +35,7 @@
                     "description": "Mark as spam"
                 },
                 "mark_unread": {
-                    "string": "Mark as unread",
+                    "string": "未読にする",
                     "description": "Mark as unread"
                 },
                 "label": {
@@ -51,11 +51,11 @@
                     "description": "Move message from Junk back to the Inbox"
                 },
                 "archive": {
-                    "string": "Archive",
+                    "string": "アーカイブ",
                     "description": "Move message to archive folder"
                 },
                 "download": {
-                    "string": "Download",
+                    "string": "ダウンロード",
                     "description": "Download message as .eml file"
                 },
                 "move": {
@@ -63,16 +63,16 @@
                     "description": "Move message to another folder"
                 },
                 "print": {
-                    "string": "Print",
+                    "string": "印刷",
                     "description": "Print the current message"
                 },
                 "print_labels": {
                     "from": {
-                        "string": "From",
+                        "string": "送信者",
                         "description": "From label in print view"
                     },
                     "to": {
-                        "string": "To",
+                        "string": "受信者",
                         "description": "To label in print view"
                     },
                     "cc": {
@@ -89,7 +89,7 @@
                     }
                 },
                 "view_source": {
-                    "string": "View source",
+                    "string": "ソースを表示",
                     "description": "View raw message source"
                 },
                 "delete_confirm": {
@@ -100,10 +100,10 @@
                         "string": "This message will be moved to Trash."
                     },
                     "confirm": {
-                        "string": "Delete"
+                        "string": "削除"
                     },
                     "cancel": {
-                        "string": "Cancel"
+                        "string": "キャンセル"
                     }
                 },
                 "spam_confirm": {
@@ -117,7 +117,7 @@
                         "string": "Move to Junk"
                     },
                     "cancel": {
-                        "string": "Cancel"
+                        "string": "キャンセル"
                     }
                 },
                 "ham_confirm": {
@@ -131,19 +131,19 @@
                         "string": "Move to Inbox"
                     },
                     "cancel": {
-                        "string": "Cancel"
+                        "string": "キャンセル"
                     }
                 },
                 "more": {
-                    "string": "More actions",
+                    "string": "その他のアクション",
                     "description": "More actions"
                 },
                 "next-mail": {
-                    "string": "Next mail",
+                    "string": "次のメール",
                     "description": "Next mail"
                 },
                 "previous-mail": {
-                    "string": "Previous mail",
+                    "string": "前のメール",
                     "description": "Previous mail"
                 },
                 "snooze": {
@@ -181,11 +181,11 @@
             },
             "header": {
                 "from": {
-                    "string": "From",
+                    "string": "送信者",
                     "description": "From"
                 },
                 "to": {
-                    "string": "To",
+                    "string": "受信者",
                     "description": "To"
                 },
                 "cc": {
@@ -206,7 +206,7 @@
                         "description": "Confirm the unsubscription"
                     },
                     "cancel": {
-                        "string": "Cancel",
+                        "string": "キャンセル",
                         "description": "Cancel the unsubscription"
                     }
                 },
@@ -227,61 +227,61 @@
             }
         },
         "error": {
-            "string": "Error",
+            "string": "エラー",
             "description": "Generic error title used when mails fail to load"
         },
         "search": {
             "placeholder": {
-                "string": "Search emails",
+                "string": "メールを検索",
                 "description": "Placeholder text for the email search input field"
             },
             "more_options": {
-                "string": "More Options",
+                "string": "その他のオプション",
                 "description": "Button to open more search options"
             },
             "folders": {
-                "string": "Folders",
+                "string": "フォルダ",
                 "description": "Label for the folders section in the search options"
             },
             "confirm": {
-                "string": "Search",
+                "string": "検索",
                 "description": "Button to confirm and execute the email search"
             },
             "in_message_content": {
-                "string": "In message content",
+                "string": "メッセージ本文",
                 "description": "Option to search within the content of messages"
             },
             "with_attachments": {
-                "string": "With Attachments",
+                "string": "添付ファイル付き",
                 "description": "Option to filter emails that have attachments"
             },
             "in_favorites": {
-                "string": "In favorites",
+                "string": "お気に入り",
                 "description": "Option to filter emails that are marked as favorites"
             },
             "unseen_only": {
-                "string": "Unseen only",
+                "string": "未読のみ",
                 "description": "Option to filter emails that are unseen"
             },
             "body": {
-                "string": "Body",
+                "string": "本文",
                 "description": "Label for the 'Body' field in email search options"
             },
             "date_from": {
-                "string": "Date from",
+                "string": "日付から",
                 "description": "Label for the 'Date from' field in email search options"
             },
             "date_to": {
-                "string": "Date to",
+                "string": "日付まで",
                 "description": "Label for the 'Date to' field in email search options"
             },
             "others": {
-                "string": "Others",
+                "string": "その他",
                 "description": "Label for the 'Others' section in email search options"
             }
         },
         "from": {
-            "string": "From",
+            "string": "送信者",
             "description": "Label for the 'From' field in email search options"
         },
         "account_switcher": {
@@ -290,7 +290,7 @@
                 "description": "Button to add an external mail account in the sidebar account switcher"
             },
             "new_folder": {
-                "string": "New folder",
+                "string": "新規フォルダ",
                 "description": "Label for the new folder action in the account switcher menu"
             },
             "delegate": {
@@ -299,7 +299,7 @@
             }
         },
         "to": {
-            "string": "To",
+            "string": "受信者",
             "description": "Label for the 'To' field in email search options"
         },
         "bcc": {
@@ -307,7 +307,7 @@
             "description": "Label for the 'Bcc' field in email search options"
         },
         "subject": {
-            "string": "Subject",
+            "string": "件名",
             "description": "Label for the 'Subject' field in email search options"
         },
         "folders": {
@@ -317,7 +317,7 @@
                     "description": "Button to create a new subfolder in the current folder"
                 },
                 "rename": {
-                    "string": "Rename",
+                    "string": "名前変更",
                     "description": "Button to rename the current folder"
                 },
                 "rename_dialog": {
@@ -334,11 +334,11 @@
                         "description": "Placeholder for the folder name input"
                     },
                     "submit": {
-                        "string": "Rename",
+                        "string": "名前変更",
                         "description": "Submit button label in the rename folder dialog"
                     },
                     "cancel": {
-                        "string": "Cancel",
+                        "string": "キャンセル",
                         "description": "Cancel button label in the rename folder dialog"
                     },
                     "error_required": {
@@ -363,7 +363,7 @@
                     "description": "Button to export all messages in the current folder"
                 },
                 "move_to": {
-                    "string": "Move to",
+                    "string": "移動先",
                     "description": "Button to move the current folder under another parent"
                 },
                 "set_as": {
@@ -389,7 +389,7 @@
                         "string": "Empty folder"
                     },
                     "cancel": {
-                        "string": "Cancel"
+                        "string": "キャンセル"
                     }
                 },
                 "set_as_dialog": {
@@ -400,20 +400,20 @@
                         "string": "Choose the semantic type for \"{folder}\"."
                     },
                     "cancel": {
-                        "string": "Cancel"
+                        "string": "キャンセル"
                     },
                     "types": {
                         "DRAFT": {
-                            "string": "Drafts"
+                            "string": "下書き"
                         },
                         "SENT": {
-                            "string": "Sent"
+                            "string": "送信済み"
                         },
                         "TRASH": {
-                            "string": "Trash"
+                            "string": "ごみ箱"
                         },
                         "JUNK": {
-                            "string": "Junk"
+                            "string": "スパム"
                         },
                         "TEMPLATE": {
                             "string": "Templates"
@@ -434,10 +434,10 @@
                         "string": "Root level"
                     },
                     "confirm": {
-                        "string": "Move"
+                        "string": "移動"
                     },
                     "cancel": {
-                        "string": "Cancel"
+                        "string": "キャンセル"
                     }
                 },
                 "sharing": {
@@ -482,10 +482,10 @@
                         }
                     },
                     "save": {
-                        "string": "Save"
+                        "string": "保存"
                     },
                     "cancel": {
-                        "string": "Cancel"
+                        "string": "キャンセル"
                     },
                     "badge": {
                         "you": {
@@ -514,7 +514,7 @@
                         "string": "Purge"
                     },
                     "cancel": {
-                        "string": "Cancel"
+                        "string": "キャンセル"
                     },
                     "olderThan": {
                         "string": "Delete mails older than"
@@ -576,7 +576,7 @@
                         "string": "Expunge"
                     },
                     "cancel": {
-                        "string": "Cancel"
+                        "string": "キャンセル"
                     }
                 },
                 "delete": {
@@ -591,11 +591,11 @@
                         "description": "Description of the delete folder confirmation dialog"
                     },
                     "confirm": {
-                        "string": "Delete",
+                        "string": "削除",
                         "description": "Confirm button label in the delete folder dialog"
                     },
                     "cancel": {
-                        "string": "Cancel",
+                        "string": "キャンセル",
                         "description": "Cancel button label in the delete folder dialog"
                     }
                 },
@@ -617,7 +617,7 @@
                         "description": "Submit button label in the create subfolder dialog"
                     },
                     "cancel": {
-                        "string": "Cancel",
+                        "string": "キャンセル",
                         "description": "Cancel button label in the create subfolder dialog"
                     },
                     "error_required": {
@@ -635,23 +635,23 @@
                 }
             },
             "inbox": {
-                "string": "Inbox",
+                "string": "受信トレイ",
                 "description": "Your inbox where you receive new messages"
             },
             "sent": {
-                "string": "Sent",
+                "string": "送信済み",
                 "description": "Messages you have sent"
             },
             "drafts": {
-                "string": "Drafts",
+                "string": "下書き",
                 "description": "Messages you have saved as drafts"
             },
             "trash": {
-                "string": "Trash",
+                "string": "ごみ箱",
                 "description": "Deleted messages that can be restored or permanently deleted"
             },
             "junk": {
-                "string": "Junk",
+                "string": "スパム",
                 "description": "Messages identified as spam"
             },
             "template": {
@@ -673,7 +673,7 @@
         },
         "sse": {
             "defaultSubject": {
-                "string": "New message"
+                "string": "新規メッセージ"
             },
             "defaultSender": {
                 "string": "Unknown sender"

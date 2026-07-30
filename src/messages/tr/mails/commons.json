@@ -27,7 +27,7 @@
                     "description": "Return to search results"
                 },
                 "delete": {
-                    "string": "Delete",
+                    "string": "Sil",
                     "description": "Delete the current message"
                 },
                 "report_spam": {
@@ -35,7 +35,7 @@
                     "description": "Mark as spam"
                 },
                 "mark_unread": {
-                    "string": "Mark as unread",
+                    "string": "Okunmadı olarak işaretle",
                     "description": "Mark as unread"
                 },
                 "label": {
@@ -51,11 +51,11 @@
                     "description": "Move message from Junk back to the Inbox"
                 },
                 "archive": {
-                    "string": "Archive",
+                    "string": "Arşiv",
                     "description": "Move message to archive folder"
                 },
                 "download": {
-                    "string": "Download",
+                    "string": "İndir",
                     "description": "Download message as .eml file"
                 },
                 "move": {
@@ -63,20 +63,20 @@
                     "description": "Move message to another folder"
                 },
                 "print": {
-                    "string": "Print",
+                    "string": "Yazdır",
                     "description": "Print the current message"
                 },
                 "print_labels": {
                     "from": {
-                        "string": "From",
+                        "string": "Gönderen",
                         "description": "From label in print view"
                     },
                     "to": {
-                        "string": "To",
+                        "string": "Kime",
                         "description": "To label in print view"
                     },
                     "cc": {
-                        "string": "Cc",
+                        "string": "Bilgi",
                         "description": "Cc label in print view"
                     },
                     "date": {
@@ -89,7 +89,7 @@
                     }
                 },
                 "view_source": {
-                    "string": "View source",
+                    "string": "Kaynağı görüntüle",
                     "description": "View raw message source"
                 },
                 "delete_confirm": {
@@ -100,10 +100,10 @@
                         "string": "This message will be moved to Trash."
                     },
                     "confirm": {
-                        "string": "Delete"
+                        "string": "Sil"
                     },
                     "cancel": {
-                        "string": "Cancel"
+                        "string": "İptal"
                     }
                 },
                 "spam_confirm": {
@@ -117,7 +117,7 @@
                         "string": "Move to Junk"
                     },
                     "cancel": {
-                        "string": "Cancel"
+                        "string": "İptal"
                     }
                 },
                 "ham_confirm": {
@@ -131,19 +131,19 @@
                         "string": "Move to Inbox"
                     },
                     "cancel": {
-                        "string": "Cancel"
+                        "string": "İptal"
                     }
                 },
                 "more": {
-                    "string": "More actions",
+                    "string": "Daha fazla işlem",
                     "description": "More actions"
                 },
                 "next-mail": {
-                    "string": "Next mail",
+                    "string": "Sonraki mail",
                     "description": "Next mail"
                 },
                 "previous-mail": {
-                    "string": "Previous mail",
+                    "string": "Önceki mail",
                     "description": "Previous mail"
                 },
                 "snooze": {
@@ -181,15 +181,15 @@
             },
             "header": {
                 "from": {
-                    "string": "From",
+                    "string": "Gönderen",
                     "description": "From"
                 },
                 "to": {
-                    "string": "To",
+                    "string": "Kime",
                     "description": "To"
                 },
                 "cc": {
-                    "string": "Cc",
+                    "string": "Bilgi",
                     "description": "Cc"
                 },
                 "unsubscribe": {
@@ -206,7 +206,7 @@
                         "description": "Confirm the unsubscription"
                     },
                     "cancel": {
-                        "string": "Cancel",
+                        "string": "İptal",
                         "description": "Cancel the unsubscription"
                     }
                 },
@@ -227,61 +227,61 @@
             }
         },
         "error": {
-            "string": "Error",
+            "string": "Hata",
             "description": "Generic error title used when mails fail to load"
         },
         "search": {
             "placeholder": {
-                "string": "Search emails",
+                "string": "E-posta ara",
                 "description": "Placeholder text for the email search input field"
             },
             "more_options": {
-                "string": "More Options",
+                "string": "Daha fazla seçenek",
                 "description": "Button to open more search options"
             },
             "folders": {
-                "string": "Folders",
+                "string": "Klasörler",
                 "description": "Label for the folders section in the search options"
             },
             "confirm": {
-                "string": "Search",
+                "string": "Ara",
                 "description": "Button to confirm and execute the email search"
             },
             "in_message_content": {
-                "string": "In message content",
+                "string": "Mesaj içeriğinde",
                 "description": "Option to search within the content of messages"
             },
             "with_attachments": {
-                "string": "With Attachments",
+                "string": "Ekli",
                 "description": "Option to filter emails that have attachments"
             },
             "in_favorites": {
-                "string": "In favorites",
+                "string": "Favorilerde",
                 "description": "Option to filter emails that are marked as favorites"
             },
             "unseen_only": {
-                "string": "Unseen only",
+                "string": "Sadece görünmeyen",
                 "description": "Option to filter emails that are unseen"
             },
             "body": {
-                "string": "Body",
+                "string": "Gövde",
                 "description": "Label for the 'Body' field in email search options"
             },
             "date_from": {
-                "string": "Date from",
+                "string": "Tarih itibaren",
                 "description": "Label for the 'Date from' field in email search options"
             },
             "date_to": {
-                "string": "Date to",
+                "string": "Tarih kadar",
                 "description": "Label for the 'Date to' field in email search options"
             },
             "others": {
-                "string": "Others",
+                "string": "Diğerleri",
                 "description": "Label for the 'Others' section in email search options"
             }
         },
         "from": {
-            "string": "From",
+            "string": "Gönderen",
             "description": "Label for the 'From' field in email search options"
         },
         "account_switcher": {
@@ -290,7 +290,7 @@
                 "description": "Button to add an external mail account in the sidebar account switcher"
             },
             "new_folder": {
-                "string": "New folder",
+                "string": "Yeni klasör",
                 "description": "Label for the new folder action in the account switcher menu"
             },
             "delegate": {
@@ -299,15 +299,15 @@
             }
         },
         "to": {
-            "string": "To",
+            "string": "Kime",
             "description": "Label for the 'To' field in email search options"
         },
         "bcc": {
-            "string": "Bcc",
+            "string": "Gizli",
             "description": "Label for the 'Bcc' field in email search options"
         },
         "subject": {
-            "string": "Subject",
+            "string": "Konu",
             "description": "Label for the 'Subject' field in email search options"
         },
         "folders": {
@@ -317,7 +317,7 @@
                     "description": "Button to create a new subfolder in the current folder"
                 },
                 "rename": {
-                    "string": "Rename",
+                    "string": "Yeniden adlandır",
                     "description": "Button to rename the current folder"
                 },
                 "rename_dialog": {
@@ -334,11 +334,11 @@
                         "description": "Placeholder for the folder name input"
                     },
                     "submit": {
-                        "string": "Rename",
+                        "string": "Yeniden adlandır",
                         "description": "Submit button label in the rename folder dialog"
                     },
                     "cancel": {
-                        "string": "Cancel",
+                        "string": "İptal",
                         "description": "Cancel button label in the rename folder dialog"
                     },
                     "error_required": {
@@ -363,7 +363,7 @@
                     "description": "Button to export all messages in the current folder"
                 },
                 "move_to": {
-                    "string": "Move to",
+                    "string": "Şuraya taşı",
                     "description": "Button to move the current folder under another parent"
                 },
                 "set_as": {
@@ -389,7 +389,7 @@
                         "string": "Empty folder"
                     },
                     "cancel": {
-                        "string": "Cancel"
+                        "string": "İptal"
                     }
                 },
                 "set_as_dialog": {
@@ -400,20 +400,20 @@
                         "string": "Choose the semantic type for \"{folder}\"."
                     },
                     "cancel": {
-                        "string": "Cancel"
+                        "string": "İptal"
                     },
                     "types": {
                         "DRAFT": {
-                            "string": "Drafts"
+                            "string": "Taslaklar"
                         },
                         "SENT": {
-                            "string": "Sent"
+                            "string": "Gönderilenler"
                         },
                         "TRASH": {
-                            "string": "Trash"
+                            "string": "Çöp"
                         },
                         "JUNK": {
-                            "string": "Junk"
+                            "string": "İstenmeyen"
                         },
                         "TEMPLATE": {
                             "string": "Templates"
@@ -434,10 +434,10 @@
                         "string": "Root level"
                     },
                     "confirm": {
-                        "string": "Move"
+                        "string": "Taşı"
                     },
                     "cancel": {
-                        "string": "Cancel"
+                        "string": "İptal"
                     }
                 },
                 "sharing": {
@@ -482,10 +482,10 @@
                         }
                     },
                     "save": {
-                        "string": "Save"
+                        "string": "Kaydet"
                     },
                     "cancel": {
-                        "string": "Cancel"
+                        "string": "İptal"
                     },
                     "badge": {
                         "you": {
@@ -514,7 +514,7 @@
                         "string": "Purge"
                     },
                     "cancel": {
-                        "string": "Cancel"
+                        "string": "İptal"
                     },
                     "olderThan": {
                         "string": "Delete mails older than"
@@ -576,7 +576,7 @@
                         "string": "Expunge"
                     },
                     "cancel": {
-                        "string": "Cancel"
+                        "string": "İptal"
                     }
                 },
                 "delete": {
@@ -591,11 +591,11 @@
                         "description": "Description of the delete folder confirmation dialog"
                     },
                     "confirm": {
-                        "string": "Delete",
+                        "string": "Sil",
                         "description": "Confirm button label in the delete folder dialog"
                     },
                     "cancel": {
-                        "string": "Cancel",
+                        "string": "İptal",
                         "description": "Cancel button label in the delete folder dialog"
                     }
                 },
@@ -617,7 +617,7 @@
                         "description": "Submit button label in the create subfolder dialog"
                     },
                     "cancel": {
-                        "string": "Cancel",
+                        "string": "İptal",
                         "description": "Cancel button label in the create subfolder dialog"
                     },
                     "error_required": {
@@ -635,23 +635,23 @@
                 }
             },
             "inbox": {
-                "string": "Inbox",
+                "string": "Gelen kutusu",
                 "description": "Your inbox where you receive new messages"
             },
             "sent": {
-                "string": "Sent",
+                "string": "Gönderilenler",
                 "description": "Messages you have sent"
             },
             "drafts": {
-                "string": "Drafts",
+                "string": "Taslaklar",
                 "description": "Messages you have saved as drafts"
             },
             "trash": {
-                "string": "Trash",
+                "string": "Çöp",
                 "description": "Deleted messages that can be restored or permanently deleted"
             },
             "junk": {
-                "string": "Junk",
+                "string": "İstenmeyen",
                 "description": "Messages identified as spam"
             },
             "template": {
@@ -673,7 +673,7 @@
         },
         "sse": {
             "defaultSubject": {
-                "string": "New message"
+                "string": "Yeni mesaj"
             },
             "defaultSender": {
                 "string": "Unknown sender"

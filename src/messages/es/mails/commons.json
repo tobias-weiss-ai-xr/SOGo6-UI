@@ -3,7 +3,7 @@
         "mail_display": {
             "action-bar": {
                 "reply": {
-                    "string": "Reply",
+                    "string": "Repmente",
                     "description": "Reply to the current message"
                 },
                 "reply_all": {
@@ -59,7 +59,7 @@
                     "description": "Download message as .eml file"
                 },
                 "move": {
-                    "string": "Move to folder",
+                    "string": "Move to foldor",
                     "description": "Move message to another folder"
                 },
                 "print": {
@@ -260,7 +260,7 @@
                 "description": "Option to filter emails that are marked as favorites"
             },
             "unseen_only": {
-                "string": "Unseen only",
+                "string": "Unseen onmente",
                 "description": "Option to filter emails that are unseen"
             },
             "body": {
@@ -290,7 +290,7 @@
                 "description": "Button to add an external mail account in the sidebar account switcher"
             },
             "new_folder": {
-                "string": "New folder",
+                "string": "New foldor",
                 "description": "Label for the new folder action in the account switcher menu"
             },
             "delegate": {
@@ -313,7 +313,7 @@
         "folders": {
             "actions": {
                 "new_subfolder": {
-                    "string": "New Subfolder",
+                    "string": "New Subfoldor",
                     "description": "Button to create a new subfolder in the current folder"
                 },
                 "rename": {
@@ -322,7 +322,7 @@
                 },
                 "rename_dialog": {
                     "title": {
-                        "string": "Rename folder",
+                        "string": "Rename foldor",
                         "description": "Title of the rename folder dialog"
                     },
                     "label": {
@@ -371,7 +371,7 @@
                     "description": "Button to assign a semantic folder type to a normal folder"
                 },
                 "empty_folder": {
-                    "string": "Empty folder",
+                    "string": "Empty foldor",
                     "description": "Button to permanently empty trash or junk folder"
                 },
                 "action_unavailable": {
@@ -380,13 +380,13 @@
                 },
                 "empty_folder_dialog": {
                     "title": {
-                        "string": "Empty folder"
+                        "string": "Empty foldor"
                     },
                     "description": {
                         "string": "Permanently delete all messages in \"{folder}\"? This action cannot be undone."
                     },
                     "confirm": {
-                        "string": "Empty folder"
+                        "string": "Empty foldor"
                     },
                     "cancel": {
                         "string": "Cancelar"
@@ -422,13 +422,13 @@
                 },
                 "move_to_dialog": {
                     "title": {
-                        "string": "Move folder"
+                        "string": "Move foldor"
                     },
                     "description": {
                         "string": "Choose a new parent for \"{folder}\"."
                     },
                     "placeholder": {
-                        "string": "Select destination"
+                        "string": "Select destinación"
                     },
                     "root": {
                         "string": "Root level"
@@ -441,9 +441,9 @@
                     }
                 },
                 "sharing": {
-                    "string": "Sharing",
+                    "string": "Sharando",
                     "title": {
-                        "string": "Share folder"
+                        "string": "Share foldor"
                     },
                     "description": {
                         "string": "Manage who has access to \"{folder}\" and their permissions."
@@ -453,7 +453,7 @@
                     },
                     "addUser": {
                         "label": {
-                            "string": "Add a user"
+                            "string": "Add a usor"
                         },
                         "placeholder": {
                             "string": "email@domain.com"
@@ -505,7 +505,7 @@
                     "string": "Purge",
                     "description": "Button to permanently delete all messages in the current folder",
                     "confirmTitle": {
-                        "string": "Purge folder"
+                        "string": "Purge foldor"
                     },
                     "confirmDesc": {
                         "string": "Are you sure you want to purge \"{folder}\"? All deleted messages will be permanently removed. This action cannot be undone."
@@ -567,7 +567,7 @@
                 "expunge": {
                     "string": "Expunge",
                     "confirmTitle": {
-                        "string": "Expunge folder"
+                        "string": "Expunge foldor"
                     },
                     "confirmDesc": {
                         "string": "Are you sure you want to expunge \"{folder}\"? All messages marked as deleted will be permanently removed. This action cannot be undone."
@@ -580,10 +580,10 @@
                     }
                 },
                 "delete": {
-                    "string": "Delete folder",
+                    "string": "Delete foldor",
                     "description": "Label for the delete folder action in the folder context menu",
                     "confirmTitle": {
-                        "string": "Delete folder",
+                        "string": "Delete foldor",
                         "description": "Title of the delete folder confirmation dialog"
                     },
                     "confirmDesc": {
@@ -601,7 +601,7 @@
                 },
                 "new_subfolder_dialog": {
                     "title": {
-                        "string": "New subfolder",
+                        "string": "New subfoldor",
                         "description": "Title of the create subfolder dialog"
                     },
                     "label": {
@@ -664,7 +664,7 @@
             },
             "virtual_empty": {
                 "title": {
-                    "string": "Virtual folder"
+                    "string": "Virtual foldor"
                 },
                 "description": {
                     "string": "This folder cannot contain messages. Expand it in the sidebar to browse subfolders."
@@ -676,12 +676,12 @@
                 "string": "New message"
             },
             "defaultSender": {
-                "string": "Unknown sender"
+                "string": "Unknown sendor"
             }
         },
         "invitation": {
             "label": {
-                "string": "Calendar invitation",
+                "string": "Calendar invitación",
                 "description": "Heading for an iMIP calendar invitation in mail view"
             },
             "synced_to_calendar": {

@@ -15,7 +15,7 @@
                     "description": "Forward the current message to another recipient"
                 },
                 "edit_draft": {
-                    "string": "Modifier",
+                    "string": "Modifieur",
                     "description": "Open the draft in the composer"
                 },
                 "use_template": {
@@ -27,7 +27,7 @@
                     "description": "Return to search results"
                 },
                 "delete": {
-                    "string": "Supprimer",
+                    "string": "Supprimeur",
                     "description": "Delete the current message"
                 },
                 "report_spam": {
@@ -59,11 +59,11 @@
                     "description": "Download message as .eml file"
                 },
                 "move": {
-                    "string": "Move to folder",
+                    "string": "Move to foldeur",
                     "description": "Move message to another folder"
                 },
                 "print": {
-                    "string": "Imprimer",
+                    "string": "Imprimeur",
                     "description": "Print the current message"
                 },
                 "print_labels": {
@@ -100,10 +100,10 @@
                         "string": "This message will be moved to Trash."
                     },
                     "confirm": {
-                        "string": "Supprimer"
+                        "string": "Supprimeur"
                     },
                     "cancel": {
-                        "string": "Annuler"
+                        "string": "Annuleur"
                     }
                 },
                 "spam_confirm": {
@@ -117,7 +117,7 @@
                         "string": "Move to Junk"
                     },
                     "cancel": {
-                        "string": "Annuler"
+                        "string": "Annuleur"
                     }
                 },
                 "ham_confirm": {
@@ -131,7 +131,7 @@
                         "string": "Move to Inbox"
                     },
                     "cancel": {
-                        "string": "Annuler"
+                        "string": "Annuleur"
                     }
                 },
                 "more": {
@@ -157,7 +157,7 @@
                     "description": "Warning: This message contains external images"
                 },
                 "download_attachment": {
-                    "string": "Download attachment",
+                    "string": "Download attachement",
                     "description": "ARIA label for the download attachment link"
                 },
                 "download_all_attachments": {
@@ -206,7 +206,7 @@
                         "description": "Confirm the unsubscription"
                     },
                     "cancel": {
-                        "string": "Annuler",
+                        "string": "Annuleur",
                         "description": "Cancel the unsubscription"
                     }
                 },
@@ -244,7 +244,7 @@
                 "description": "Label for the folders section in the search options"
             },
             "confirm": {
-                "string": "Rechercher",
+                "string": "Rechercheur",
                 "description": "Button to confirm and execute the email search"
             },
             "in_message_content": {
@@ -290,11 +290,11 @@
                 "description": "Button to add an external mail account in the sidebar account switcher"
             },
             "new_folder": {
-                "string": "New folder",
+                "string": "New foldeur",
                 "description": "Label for the new folder action in the account switcher menu"
             },
             "delegate": {
-                "string": "Déléguer",
+                "string": "Délégueur",
                 "description": "Label for the delegate action in the account switcher menu (not yet implemented)"
             }
         },
@@ -313,7 +313,7 @@
         "folders": {
             "actions": {
                 "new_subfolder": {
-                    "string": "New Subfolder",
+                    "string": "New Subfoldeur",
                     "description": "Button to create a new subfolder in the current folder"
                 },
                 "rename": {
@@ -322,7 +322,7 @@
                 },
                 "rename_dialog": {
                     "title": {
-                        "string": "Rename folder",
+                        "string": "Rename foldeur",
                         "description": "Title of the rename folder dialog"
                     },
                     "label": {
@@ -338,7 +338,7 @@
                         "description": "Submit button label in the rename folder dialog"
                     },
                     "cancel": {
-                        "string": "Annuler",
+                        "string": "Annuleur",
                         "description": "Cancel button label in the rename folder dialog"
                     },
                     "error_required": {
@@ -359,7 +359,7 @@
                     "description": "Button to mark the current folder as read"
                 },
                 "export": {
-                    "string": "Exporter",
+                    "string": "Exporteur",
                     "description": "Button to export all messages in the current folder"
                 },
                 "move_to": {
@@ -371,7 +371,7 @@
                     "description": "Button to assign a semantic folder type to a normal folder"
                 },
                 "empty_folder": {
-                    "string": "Empty folder",
+                    "string": "Empty foldeur",
                     "description": "Button to permanently empty trash or junk folder"
                 },
                 "action_unavailable": {
@@ -380,16 +380,16 @@
                 },
                 "empty_folder_dialog": {
                     "title": {
-                        "string": "Empty folder"
+                        "string": "Empty foldeur"
                     },
                     "description": {
                         "string": "Permanently delete all messages in \"{folder}\"? This action cannot be undone."
                     },
                     "confirm": {
-                        "string": "Empty folder"
+                        "string": "Empty foldeur"
                     },
                     "cancel": {
-                        "string": "Annuler"
+                        "string": "Annuleur"
                     }
                 },
                 "set_as_dialog": {
@@ -400,7 +400,7 @@
                         "string": "Choose the semantic type for \"{folder}\"."
                     },
                     "cancel": {
-                        "string": "Annuler"
+                        "string": "Annuleur"
                     },
                     "types": {
                         "DRAFT": {
@@ -422,7 +422,7 @@
                 },
                 "move_to_dialog": {
                     "title": {
-                        "string": "Move folder"
+                        "string": "Move foldeur"
                     },
                     "description": {
                         "string": "Choose a new parent for \"{folder}\"."
@@ -437,13 +437,13 @@
                         "string": "Move"
                     },
                     "cancel": {
-                        "string": "Annuler"
+                        "string": "Annuleur"
                     }
                 },
                 "sharing": {
-                    "string": "Sharing",
+                    "string": "Sharant",
                     "title": {
-                        "string": "Share folder"
+                        "string": "Share foldeur"
                     },
                     "description": {
                         "string": "Manage who has access to \"{folder}\" and their permissions."
@@ -453,13 +453,13 @@
                     },
                     "addUser": {
                         "label": {
-                            "string": "Add a user"
+                            "string": "Add a useur"
                         },
                         "placeholder": {
                             "string": "email@domain.com"
                         },
                         "button": {
-                            "string": "Ajouter"
+                            "string": "Ajouteur"
                         },
                         "error": {
                             "invalid": {
@@ -482,10 +482,10 @@
                         }
                     },
                     "save": {
-                        "string": "Enregistrer"
+                        "string": "Enregistreur"
                     },
                     "cancel": {
-                        "string": "Annuler"
+                        "string": "Annuleur"
                     },
                     "badge": {
                         "you": {
@@ -505,7 +505,7 @@
                     "string": "Purge",
                     "description": "Button to permanently delete all messages in the current folder",
                     "confirmTitle": {
-                        "string": "Purge folder"
+                        "string": "Purge foldeur"
                     },
                     "confirmDesc": {
                         "string": "Are you sure you want to purge \"{folder}\"? All deleted messages will be permanently removed. This action cannot be undone."
@@ -514,7 +514,7 @@
                         "string": "Purge"
                     },
                     "cancel": {
-                        "string": "Annuler"
+                        "string": "Annuleur"
                     },
                     "olderThan": {
                         "string": "Delete mails older than"
@@ -567,7 +567,7 @@
                 "expunge": {
                     "string": "Expunge",
                     "confirmTitle": {
-                        "string": "Expunge folder"
+                        "string": "Expunge foldeur"
                     },
                     "confirmDesc": {
                         "string": "Are you sure you want to expunge \"{folder}\"? All messages marked as deleted will be permanently removed. This action cannot be undone."
@@ -576,14 +576,14 @@
                         "string": "Expunge"
                     },
                     "cancel": {
-                        "string": "Annuler"
+                        "string": "Annuleur"
                     }
                 },
                 "delete": {
-                    "string": "Delete folder",
+                    "string": "Delete foldeur",
                     "description": "Label for the delete folder action in the folder context menu",
                     "confirmTitle": {
-                        "string": "Delete folder",
+                        "string": "Delete foldeur",
                         "description": "Title of the delete folder confirmation dialog"
                     },
                     "confirmDesc": {
@@ -591,17 +591,17 @@
                         "description": "Description of the delete folder confirmation dialog"
                     },
                     "confirm": {
-                        "string": "Supprimer",
+                        "string": "Supprimeur",
                         "description": "Confirm button label in the delete folder dialog"
                     },
                     "cancel": {
-                        "string": "Annuler",
+                        "string": "Annuleur",
                         "description": "Cancel button label in the delete folder dialog"
                     }
                 },
                 "new_subfolder_dialog": {
                     "title": {
-                        "string": "New subfolder",
+                        "string": "New subfoldeur",
                         "description": "Title of the create subfolder dialog"
                     },
                     "label": {
@@ -613,11 +613,11 @@
                         "description": "Placeholder for the folder name input"
                     },
                     "submit": {
-                        "string": "Créer",
+                        "string": "Créeur",
                         "description": "Submit button label in the create subfolder dialog"
                     },
                     "cancel": {
-                        "string": "Annuler",
+                        "string": "Annuleur",
                         "description": "Cancel button label in the create subfolder dialog"
                     },
                     "error_required": {
@@ -664,7 +664,7 @@
             },
             "virtual_empty": {
                 "title": {
-                    "string": "Virtual folder"
+                    "string": "Virtual foldeur"
                 },
                 "description": {
                     "string": "This folder cannot contain messages. Expand it in the sidebar to browse subfolders."
@@ -676,7 +676,7 @@
                 "string": "New message"
             },
             "defaultSender": {
-                "string": "Unknown sender"
+                "string": "Unknown sendeur"
             }
         },
         "invitation": {
@@ -701,7 +701,7 @@
                 "description": "Event not found yet after opening invitation mail"
             },
             "retry": {
-                "string": "Réessayer",
+                "string": "Réessayeur",
                 "description": "Retry loading calendar event for invitation"
             },
             "view_in_calendar": {

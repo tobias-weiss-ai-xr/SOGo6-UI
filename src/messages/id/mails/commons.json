@@ -27,7 +27,7 @@
                     "description": "Return to search results"
                 },
                 "delete": {
-                    "string": "Delete",
+                    "string": "Hapus",
                     "description": "Delete the current message"
                 },
                 "report_spam": {
@@ -35,7 +35,7 @@
                     "description": "Mark as spam"
                 },
                 "mark_unread": {
-                    "string": "Mark as unread",
+                    "string": "Tandai belum dibaca",
                     "description": "Mark as unread"
                 },
                 "label": {
@@ -51,11 +51,11 @@
                     "description": "Move message from Junk back to the Inbox"
                 },
                 "archive": {
-                    "string": "Archive",
+                    "string": "Arsip",
                     "description": "Move message to archive folder"
                 },
                 "download": {
-                    "string": "Download",
+                    "string": "Unduh",
                     "description": "Download message as .eml file"
                 },
                 "move": {
@@ -63,16 +63,16 @@
                     "description": "Move message to another folder"
                 },
                 "print": {
-                    "string": "Print",
+                    "string": "Cetak",
                     "description": "Print the current message"
                 },
                 "print_labels": {
                     "from": {
-                        "string": "From",
+                        "string": "Dari",
                         "description": "From label in print view"
                     },
                     "to": {
-                        "string": "To",
+                        "string": "Untuk",
                         "description": "To label in print view"
                     },
                     "cc": {
@@ -89,7 +89,7 @@
                     }
                 },
                 "view_source": {
-                    "string": "View source",
+                    "string": "Lihat sumber",
                     "description": "View raw message source"
                 },
                 "delete_confirm": {
@@ -100,10 +100,10 @@
                         "string": "This message will be moved to Trash."
                     },
                     "confirm": {
-                        "string": "Delete"
+                        "string": "Hapus"
                     },
                     "cancel": {
-                        "string": "Cancel"
+                        "string": "Batal"
                     }
                 },
                 "spam_confirm": {
@@ -117,7 +117,7 @@
                         "string": "Move to Junk"
                     },
                     "cancel": {
-                        "string": "Cancel"
+                        "string": "Batal"
                     }
                 },
                 "ham_confirm": {
@@ -131,19 +131,19 @@
                         "string": "Move to Inbox"
                     },
                     "cancel": {
-                        "string": "Cancel"
+                        "string": "Batal"
                     }
                 },
                 "more": {
-                    "string": "More actions",
+                    "string": "Tindakan lainnya",
                     "description": "More actions"
                 },
                 "next-mail": {
-                    "string": "Next mail",
+                    "string": "Mail berikutnya",
                     "description": "Next mail"
                 },
                 "previous-mail": {
-                    "string": "Previous mail",
+                    "string": "Mail sebelumnya",
                     "description": "Previous mail"
                 },
                 "snooze": {
@@ -181,11 +181,11 @@
             },
             "header": {
                 "from": {
-                    "string": "From",
+                    "string": "Dari",
                     "description": "From"
                 },
                 "to": {
-                    "string": "To",
+                    "string": "Untuk",
                     "description": "To"
                 },
                 "cc": {
@@ -206,7 +206,7 @@
                         "description": "Confirm the unsubscription"
                     },
                     "cancel": {
-                        "string": "Cancel",
+                        "string": "Batal",
                         "description": "Cancel the unsubscription"
                     }
                 },
@@ -227,61 +227,61 @@
             }
         },
         "error": {
-            "string": "Error",
+            "string": "Kesalahan",
             "description": "Generic error title used when mails fail to load"
         },
         "search": {
             "placeholder": {
-                "string": "Search emails",
+                "string": "Cari email",
                 "description": "Placeholder text for the email search input field"
             },
             "more_options": {
-                "string": "More Options",
+                "string": "Opsi lainnya",
                 "description": "Button to open more search options"
             },
             "folders": {
-                "string": "Folders",
+                "string": "Folder",
                 "description": "Label for the folders section in the search options"
             },
             "confirm": {
-                "string": "Search",
+                "string": "Cari",
                 "description": "Button to confirm and execute the email search"
             },
             "in_message_content": {
-                "string": "In message content",
+                "string": "Dalam konten pesan",
                 "description": "Option to search within the content of messages"
             },
             "with_attachments": {
-                "string": "With Attachments",
+                "string": "Dengan lampiran",
                 "description": "Option to filter emails that have attachments"
             },
             "in_favorites": {
-                "string": "In favorites",
+                "string": "Di favorit",
                 "description": "Option to filter emails that are marked as favorites"
             },
             "unseen_only": {
-                "string": "Unseen only",
+                "string": "Hanya tak terlihat",
                 "description": "Option to filter emails that are unseen"
             },
             "body": {
-                "string": "Body",
+                "string": "Tubuh",
                 "description": "Label for the 'Body' field in email search options"
             },
             "date_from": {
-                "string": "Date from",
+                "string": "Tanggal dari",
                 "description": "Label for the 'Date from' field in email search options"
             },
             "date_to": {
-                "string": "Date to",
+                "string": "Tanggal sampai",
                 "description": "Label for the 'Date to' field in email search options"
             },
             "others": {
-                "string": "Others",
+                "string": "Lainnya",
                 "description": "Label for the 'Others' section in email search options"
             }
         },
         "from": {
-            "string": "From",
+            "string": "Dari",
             "description": "Label for the 'From' field in email search options"
         },
         "account_switcher": {
@@ -290,7 +290,7 @@
                 "description": "Button to add an external mail account in the sidebar account switcher"
             },
             "new_folder": {
-                "string": "New folder",
+                "string": "Folder baru",
                 "description": "Label for the new folder action in the account switcher menu"
             },
             "delegate": {
@@ -299,7 +299,7 @@
             }
         },
         "to": {
-            "string": "To",
+            "string": "Untuk",
             "description": "Label for the 'To' field in email search options"
         },
         "bcc": {
@@ -307,7 +307,7 @@
             "description": "Label for the 'Bcc' field in email search options"
         },
         "subject": {
-            "string": "Subject",
+            "string": "Subjek",
             "description": "Label for the 'Subject' field in email search options"
         },
         "folders": {
@@ -317,7 +317,7 @@
                     "description": "Button to create a new subfolder in the current folder"
                 },
                 "rename": {
-                    "string": "Rename",
+                    "string": "Ubah nama",
                     "description": "Button to rename the current folder"
                 },
                 "rename_dialog": {
@@ -334,11 +334,11 @@
                         "description": "Placeholder for the folder name input"
                     },
                     "submit": {
-                        "string": "Rename",
+                        "string": "Ubah nama",
                         "description": "Submit button label in the rename folder dialog"
                     },
                     "cancel": {
-                        "string": "Cancel",
+                        "string": "Batal",
                         "description": "Cancel button label in the rename folder dialog"
                     },
                     "error_required": {
@@ -363,7 +363,7 @@
                     "description": "Button to export all messages in the current folder"
                 },
                 "move_to": {
-                    "string": "Move to",
+                    "string": "Pindahkan ke",
                     "description": "Button to move the current folder under another parent"
                 },
                 "set_as": {
@@ -389,7 +389,7 @@
                         "string": "Empty folder"
                     },
                     "cancel": {
-                        "string": "Cancel"
+                        "string": "Batal"
                     }
                 },
                 "set_as_dialog": {
@@ -400,17 +400,17 @@
                         "string": "Choose the semantic type for \"{folder}\"."
                     },
                     "cancel": {
-                        "string": "Cancel"
+                        "string": "Batal"
                     },
                     "types": {
                         "DRAFT": {
-                            "string": "Drafts"
+                            "string": "Draf"
                         },
                         "SENT": {
-                            "string": "Sent"
+                            "string": "Terkirim"
                         },
                         "TRASH": {
-                            "string": "Trash"
+                            "string": "Sampah"
                         },
                         "JUNK": {
                             "string": "Junk"
@@ -434,10 +434,10 @@
                         "string": "Root level"
                     },
                     "confirm": {
-                        "string": "Move"
+                        "string": "Pindahkan"
                     },
                     "cancel": {
-                        "string": "Cancel"
+                        "string": "Batal"
                     }
                 },
                 "sharing": {
@@ -482,10 +482,10 @@
                         }
                     },
                     "save": {
-                        "string": "Save"
+                        "string": "Simpan"
                     },
                     "cancel": {
-                        "string": "Cancel"
+                        "string": "Batal"
                     },
                     "badge": {
                         "you": {
@@ -514,7 +514,7 @@
                         "string": "Purge"
                     },
                     "cancel": {
-                        "string": "Cancel"
+                        "string": "Batal"
                     },
                     "olderThan": {
                         "string": "Delete mails older than"
@@ -576,7 +576,7 @@
                         "string": "Expunge"
                     },
                     "cancel": {
-                        "string": "Cancel"
+                        "string": "Batal"
                     }
                 },
                 "delete": {
@@ -591,11 +591,11 @@
                         "description": "Description of the delete folder confirmation dialog"
                     },
                     "confirm": {
-                        "string": "Delete",
+                        "string": "Hapus",
                         "description": "Confirm button label in the delete folder dialog"
                     },
                     "cancel": {
-                        "string": "Cancel",
+                        "string": "Batal",
                         "description": "Cancel button label in the delete folder dialog"
                     }
                 },
@@ -617,7 +617,7 @@
                         "description": "Submit button label in the create subfolder dialog"
                     },
                     "cancel": {
-                        "string": "Cancel",
+                        "string": "Batal",
                         "description": "Cancel button label in the create subfolder dialog"
                     },
                     "error_required": {
@@ -635,19 +635,19 @@
                 }
             },
             "inbox": {
-                "string": "Inbox",
+                "string": "Kotak masuk",
                 "description": "Your inbox where you receive new messages"
             },
             "sent": {
-                "string": "Sent",
+                "string": "Terkirim",
                 "description": "Messages you have sent"
             },
             "drafts": {
-                "string": "Drafts",
+                "string": "Draf",
                 "description": "Messages you have saved as drafts"
             },
             "trash": {
-                "string": "Trash",
+                "string": "Sampah",
                 "description": "Deleted messages that can be restored or permanently deleted"
             },
             "junk": {
@@ -673,7 +673,7 @@
         },
         "sse": {
             "defaultSubject": {
-                "string": "New message"
+                "string": "Pesan baru"
             },
             "defaultSender": {
                 "string": "Unknown sender"
