@@ -63,6 +63,20 @@ export function getDefaultSSEConfigSync(): SSEConfig {
  * Production SSE configuration (reverse-proxy same-origin).
  */
 export function getProductionSSEConfig(): SSEConfig {
+  // Get auth token from storage - check localStorage first (rememberMe), then sessionStorage
+  const STORAGE_KEY = 'sogo_auth'
+  let token = ''
+  try {
+    const stored = localStorage.getItem(STORAGE_KEY) || sessionStorage.getItem(STORAGE_KEY)
+    if (stored) {
+      const auth = JSON.parse(stored)
+      token = auth.token || ''
+    }
+  } catch {
+    // If parsing fails, fall back to empty token
+    token = ''
+  }
+
   return {
     url: `${window.location.origin}/api/sse`,
     reconnectInterval: 5000,
@@ -72,7 +86,7 @@ export function getProductionSSEConfig(): SSEConfig {
     headers: {
       'Content-Type': 'text/event-stream',
       Accept: 'text/event-stream',
-      Authorization: `Bearer ${localStorage.getItem('auth_token') || ''}`,
+      Authorization: token ? `Bearer ${token}` : '',
     },
   }
 }
