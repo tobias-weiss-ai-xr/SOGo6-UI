@@ -13,6 +13,9 @@ export async function OPTIONS() {
 //POST to add new domain. There is no domain_id
 export async function POST(request: Request) {
   const reqBody = await request.json()
-  console.log('[fakeApi] POST /admin/v1/config/domains', reqBody)
+  // Development logging for fake API
+  if (process.env.NODE_ENV === 'development') {
+    console.log('[fakeApi] POST /admin/v1/config/domains', reqBody)
+  }
   return NextResponse.json({ success: true, data: reqBody })
 }
