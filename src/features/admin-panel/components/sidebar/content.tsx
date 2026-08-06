@@ -157,6 +157,12 @@ const navItems = [
     url: '/admin_panel/dns-wizard',
   },
   {
+    title: 'AP_SIDEBAR.email_auth.string',
+    isActive: true,
+    collapsedIcon: ShieldCheck,
+    url: '/admin_panel/email-authentication',
+  },
+  {
     title: 'AP_SIDEBAR.resources.string',
     isActive: true,
     collapsedIcon: Building2,

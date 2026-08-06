@@ -132,6 +132,9 @@
     "dns_wizard": {
       "string": "DNS Wizard"
     },
+    "email_auth": {
+      "string": "Email Authentication"
+    },
     "resources": {
       "string": "Resources"
     },

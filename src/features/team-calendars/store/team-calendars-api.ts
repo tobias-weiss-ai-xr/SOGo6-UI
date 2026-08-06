@@ -48,9 +48,10 @@ const injectedEndpoints = apiSlice.injectEndpoints({
       query: (body) => ({ url: 'calendars/teams', method: 'POST', body }),
       invalidatesTags: () => [{ type: TEAM_CALENDARS_SLICE, id: 'LIST' }],
       async onQueryStarted(_body, { dispatch, queryFulfilled }) {
-        await createApiNotificationHandler({ dispatch, queryFulfilled })(
-          { success: 'Team calendar created', error: 'Failed to create team calendar' }
-        )
+        await createApiNotificationHandler(dispatch, {
+          successTitle: 'Team calendar created',
+          errorTitle: 'Failed to create team calendar',
+        })(undefined, { queryFulfilled })
       },
     }),
     updateTeamCalendar: builder.mutation<TeamCalendar, { teamId: string; body: TeamCalendarUpdateBody }>({
@@ -64,9 +65,10 @@ const injectedEndpoints = apiSlice.injectEndpoints({
       query: (teamId) => ({ url: teamUrl(teamId), method: 'DELETE' }),
       invalidatesTags: () => [{ type: TEAM_CALENDARS_SLICE, id: 'LIST' }],
       async onQueryStarted(_teamId, { dispatch, queryFulfilled }) {
-        await createApiNotificationHandler({ dispatch, queryFulfilled })(
-          { success: 'Team calendar deleted', error: 'Failed to delete team calendar' }
-        )
+        await createApiNotificationHandler(dispatch, {
+          successTitle: 'Team calendar deleted',
+          errorTitle: 'Failed to delete team calendar',
+        })(undefined, { queryFulfilled })
       },
     }),
 
@@ -103,9 +105,10 @@ const injectedEndpoints = apiSlice.injectEndpoints({
       query: ({ teamId, body }) => ({ url: `${teamUrl(teamId)}/invites`, method: 'POST', body }),
       invalidatesTags: () => [{ type: TEAM_CALENDAR_INVITES_SLICE, id: 'LIST' }],
       async onQueryStarted(_args, { dispatch, queryFulfilled }) {
-        await createApiNotificationHandler({ dispatch, queryFulfilled })(
-          { success: 'Invitation sent', error: 'Failed to send invitation' }
-        )
+        await createApiNotificationHandler(dispatch, {
+          successTitle: 'Invitation sent',
+          errorTitle: 'Failed to send invitation',
+        })(undefined, { queryFulfilled })
       },
     }),
     listPendingInvites: builder.query<{ invites: TeamCalendarInvite[]; total_count: number }, void>({
@@ -127,18 +130,20 @@ const injectedEndpoints = apiSlice.injectEndpoints({
         { type: TEAM_CALENDARS_SLICE, id: 'LIST' },
       ],
       async onQueryStarted(_inviteId, { dispatch, queryFulfilled }) {
-        await createApiNotificationHandler({ dispatch, queryFulfilled })(
-          { success: 'Invitation accepted', error: 'Failed to accept invitation' }
-        )
+        await createApiNotificationHandler(dispatch, {
+          successTitle: 'Invitation accepted',
+          errorTitle: 'Failed to accept invitation',
+        })(undefined, { queryFulfilled })
       },
     }),
     rejectInvite: builder.mutation<TeamCalendarInvite, string>({
       query: (inviteId) => ({ url: `calendars/teams/invites/${inviteId}/reject`, method: 'POST' }),
       invalidatesTags: () => [{ type: TEAM_CALENDAR_INVITES_SLICE, id: 'LIST' }],
       async onQueryStarted(_inviteId, { dispatch, queryFulfilled }) {
-        await createApiNotificationHandler({ dispatch, queryFulfilled })(
-          { success: 'Invitation rejected', error: 'Failed to reject invitation' }
-        )
+        await createApiNotificationHandler(dispatch, {
+          successTitle: 'Invitation rejected',
+          errorTitle: 'Failed to reject invitation',
+        })(undefined, { queryFulfilled })
       },
     }),
   }),
