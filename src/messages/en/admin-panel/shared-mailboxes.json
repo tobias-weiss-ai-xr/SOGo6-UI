@@ -1,0 +1,198 @@
+{
+  "AP_SHARED_MAILBOXES": {
+    "title": {
+      "string": "Shared Mailboxes",
+      "context": "Page title for shared mailboxes administration"
+    },
+    "description": {
+      "string": "Manage team/shared mailboxes (e.g., support@, info@)",
+      "context": "Page description"
+    },
+    "createMailbox": {
+      "string": "Create Shared Mailbox",
+      "context": "Button to create a new shared mailbox"
+    },
+    "createSuccess": {
+      "string": "Shared mailbox created successfully",
+      "context": "Success message after creating a shared mailbox"
+    },
+    "createDescription": {
+      "string": "Create a new shared mailbox for your team.",
+      "context": "Description for create dialog"
+    },
+    "searchPlaceholder": {
+      "string": "Search shared mailboxes...",
+      "context": "Placeholder for search input"
+    },
+    "noMailboxes": {
+      "string": "No shared mailboxes yet",
+      "context": "Message when no shared mailboxes exist"
+    },
+    "name": {
+      "string": "Name",
+      "context": "Label for mailbox name"
+    },
+    "email": {
+      "string": "Email",
+      "context": "Label for mailbox email"
+    },
+    "members": {
+      "string": "Members",
+      "context": "Label for member count"
+    },
+    "status": {
+      "string": "Status",
+      "context": "Label for mailbox status"
+    },
+    "active": {
+      "string": "Active",
+      "context": "Status badge for active mailbox"
+    },
+    "inactive": {
+      "string": "Inactive",
+      "context": "Status badge for inactive mailbox"
+    },
+    "createdAt": {
+      "string": "Created",
+      "context": "Label for creation date"
+    },
+    "actions": {
+      "string": "Actions",
+      "context": "Label for actions column"
+    },
+    "edit": {
+      "string": "Edit",
+      "context": "Menu item to edit a mailbox"
+    },
+    "manageMembers": {
+      "string": "Manage Members",
+      "context": "Menu item to manage mailbox members"
+    },
+    "delete": {
+      "string": "Delete",
+      "context": "Menu item to delete a mailbox"
+    },
+    "editMailbox": {
+      "string": "Edit Shared Mailbox",
+      "context": "Title for edit dialog"
+    },
+    "editDescription": {
+      "string": "Update the settings for\"{name}\".",
+      "context": "Description for edit dialog"
+    },
+    "editSuccess": {
+      "string": "Shared mailbox updated successfully",
+      "context": "Success message after updating a shared mailbox"
+    },
+    "deleteMailbox": {
+      "string": "Delete Shared Mailbox",
+      "context": "Title for delete confirmation dialog"
+    },
+    "deleteConfirm": {
+      "string": "Are you sure you want to delete\"{name}\"?",
+      "context": "Confirmation message for deletion"
+    },
+    "deleteWarning": {
+      "string": "This action cannot be undone. All emails in this mailbox will no longer be accessible.",
+      "context": "Warning message for deletion"
+    },
+    "deleteSuccess": {
+      "string": "Shared mailbox deleted successfully",
+      "context": "Success message after deleting a shared mailbox"
+    },
+    "descriptionPlaceholder": {
+      "string": "Enter a description for this shared mailbox",
+      "context": "Placeholder for description input"
+    },
+    "initialMembers": {
+      "string": "Initial Members",
+      "context": "Label for initial members selection"
+    },
+    "cancel": {
+      "string": "Cancel",
+      "context": "Button to cancel an action"
+    },
+    "create": {
+      "string": "Create",
+      "context": "Button to create a mailbox"
+    },
+    "creating": {
+      "string": "Creating...",
+      "context": "Button text when creating"
+    },
+    "update": {
+      "string": "Update",
+      "context": "Button to update a mailbox"
+    },
+    "updating": {
+      "string": "Updating...",
+      "context": "Button text when updating"
+    },
+    "deleting": {
+      "string": "Deleting...",
+      "context": "Button text when deleting"
+    },
+    "manageMembers": {
+      "string": "Manage Members",
+      "context": "Title for members management dialog"
+    },
+    "membersDescription": {
+      "string": "Add or remove members for\"{name}\".",
+      "context": "Description for members dialog"
+    },
+    "currentMembers": {
+      "string": "Current Members",
+      "context": "Label for current members section"
+    },
+    "noMembers": {
+      "string": "No members yet",
+      "context": "Message when no members exist"
+    },
+    "addMembers": {
+      "string": "Add Members",
+      "context": "Label for add members section"
+    },
+    "searchUsers": {
+      "string": "Search users...",
+      "context": "Placeholder for user search"
+    },
+    "close": {
+      "string": "Close",
+      "context": "Button to close dialog"
+    },
+    "memberAddSuccess": {
+      "string": "Added\"{name}\" to the shared mailbox",
+      "context": "Success message after adding a member"
+    },
+    "memberRemoveSuccess": {
+      "string": "Member removed successfully",
+      "context": "Success message after removing a member"
+    },
+    "error": {
+      "requiredFields": {
+        "string": "Please fill in all required fields",
+        "context": "Error message for missing required fields"
+      },
+      "createFailed": {
+        "string": "Failed to create shared mailbox",
+        "context": "Error message when create fails"
+      },
+      "updateFailed": {
+        "string": "Failed to update shared mailbox",
+        "context": "Error message when update fails"
+      },
+      "deleteFailed": {
+        "string": "Failed to delete shared mailbox",
+        "context": "Error message when delete fails"
+      },
+      "memberAddFailed": {
+        "string": "Failed to add member",
+        "context": "Error message when adding member fails"
+      },
+      "memberRemoveFailed": {
+        "string": "Failed to remove member",
+        "context": "Error message when removing member fails"
+      }
+    }
+  }
+}

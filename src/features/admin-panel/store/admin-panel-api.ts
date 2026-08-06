@@ -22,6 +22,18 @@ export type DomainItem = {
   extra_infos?: Record<string, string>
 }
 
+// Shared Mailbox Types
+export type SharedMailbox = {
+  id: string
+  email: string
+  name: string
+  description: string
+  member_uids: string[]
+  is_active: boolean
+  created_at: string
+  updated_at: string
+}
+
 const injectedEndpoints = apiSlice.injectEndpoints({
   endpoints: (builder: EndpointBuilder<BaseQueryFn, string, 'api'>) => ({
     getSystem: builder.query<Record<string, any>, void>({
@@ -296,6 +308,137 @@ const injectedEndpoints = apiSlice.injectEndpoints({
         { type: 'AdminUsers', id: uid },
       ],
     }),
+
+    // ========================================================================
+    // Shared Mailboxes Endpoints
+    // ========================================================================
+
+    /**
+     * Get all shared mailboxes.
+     */
+    listSharedMailboxes: builder.query(
+      { mailboxes: SharedMailbox[]; total_count: number },
+      void
+    )({
+      query: () => ({
+        url: '/admin/v1/shared-mailboxes',
+        method: 'GET',
+      }),
+      providesTags: ['SharedMailboxes'],
+    }),
+
+    /**
+     * Get a shared mailbox by ID.
+     */
+    getSharedMailbox: builder.query<SharedMailbox, string>({
+      query: (mailboxId) => ({
+        url: `/admin/v1/shared-mailboxes/${mailboxId}`,
+        method: 'GET',
+      }),
+      providesTags: (result, error, mailboxId) => [
+        'SharedMailboxes',
+        { type: 'SharedMailboxes', id: mailboxId },
+      ],
+    }),
+
+    /**
+     * Create a new shared mailbox.
+     */
+    createSharedMailbox: builder.mutation<
+      SharedMailbox,
+      { email: string; name: string; description?: string; member_uids?: string[] }
+    >({
+      query: (body) => ({
+        url: '/admin/v1/shared-mailboxes',
+        method: 'POST',
+        body,
+      }),
+      invalidatesTags: ['SharedMailboxes'],
+    }),
+
+    /**
+     * Update a shared mailbox.
+     */
+    updateSharedMailbox: builder.mutation<
+      SharedMailbox,
+      { mailboxId: string; name?: string; description?: string; is_active?: boolean }
+    >({
+      query: ({ mailboxId, ...body }) => ({
+        url: `/admin/v1/shared-mailboxes/${mailboxId}`,
+        method: 'PUT',
+        body,
+      }),
+      invalidatesTags: (result, error, { mailboxId }) => [
+        'SharedMailboxes',
+        { type: 'SharedMailboxes', id: mailboxId },
+      ],
+    }),
+
+    /**
+     * Delete a shared mailbox.
+     */
+    deleteSharedMailbox: builder.mutation<
+      { deleted: boolean },
+      string
+    >({
+      query: (mailboxId) => ({
+        url: `/admin/v1/shared-mailboxes/${mailboxId}`,
+        method: 'DELETE',
+      }),
+      invalidatesTags: ['SharedMailboxes'],
+    }),
+
+    /**
+     * Get members of a shared mailbox.
+     */
+    getSharedMailboxMembers: builder.query<string[], string>({
+      query: (mailboxId) => ({
+        url: `/admin/v1/shared-mailboxes/${mailboxId}/members`,
+        method: 'GET',
+      }),
+      providesTags: (result, error, mailboxId) => [
+        { type: 'SharedMailboxMembers', id: mailboxId },
+      ],
+    }),
+
+    /**
+     * Add a member to a shared mailbox.
+     */
+    addSharedMailboxMember: builder.mutation<
+      SharedMailbox,
+      { mailboxId: string; user_uid: string }
+    >({
+      query: ({ mailboxId, user_uid }) => ({
+        url: `/admin/v1/shared-mailboxes/${mailboxId}/members`,
+        method: 'POST',
+        body: { user_uid },
+      }),
+      invalidatesTags: (result, error, { mailboxId }) => [
+        'SharedMailboxes',
+        { type: 'SharedMailboxes', id: mailboxId },
+        { type: 'SharedMailboxMembers', id: mailboxId },
+      ],
+    }),
+
+    /**
+     * Remove a member from a shared mailbox.
+     */
+    removeSharedMailboxMember: builder.mutation<
+      SharedMailbox,
+      { mailboxId: string; user_uid: string }
+    >({
+      query: ({ mailboxId, user_uid }) => ({
+        url: `/admin/v1/shared-mailboxes/${mailboxId}/members/${user_uid}`,
+        method: 'DELETE',
+      }),
+      invalidatesTags: (result, error, { mailboxId }) => [
+        'SharedMailboxes',
+        { type: 'SharedMailboxes', id: mailboxId },
+        { type: 'SharedMailboxMembers', id: mailboxId },
+      ],
+    }),
+
+    // End Shared Mailboxes Endpoints
 
     /**
      * Get the current theme configuration.
@@ -1197,6 +1340,15 @@ export const {
   useCreateUserMutation,
   useUpdateUserMutation,
   useDeleteUserMutation,
+  // Shared Mailboxes
+  useListSharedMailboxesQuery,
+  useGetSharedMailboxQuery,
+  useCreateSharedMailboxMutation,
+  useUpdateSharedMailboxMutation,
+  useDeleteSharedMailboxMutation,
+  useGetSharedMailboxMembersQuery,
+  useAddSharedMailboxMemberMutation,
+  useRemoveSharedMailboxMemberMutation,
   useGetThemeQuery,
   usePatchThemeMutation,
   useCreateRuleMutation,
