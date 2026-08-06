@@ -1,13 +1,18 @@
 /**
  * Passkeys Feature Index
  *
- * Exports all passkey-related components and utilities.
+ * Exports all passkey-related components that integrate with the existing Redux store.
  *
  * Spec: sogo6-server/.openspec/specs/webauthn-passkeys.spec.md
  */
 
-export { PasskeyManager } from './PasskeyManager';
-export { PasskeyLoginButton } from './PasskeyLoginButton';
+// Components that integrate with Redux/RTK Query
+export { PasskeyManagerWithStore as PasskeyManager } from './PasskeyManagerWithStore';
+export { PasskeyLoginButtonWithStore as PasskeyLoginButton } from './PasskeyLoginButtonWithStore';
 
-// Re-export types and utilities
-export type { WebAuthnCredential } from './PasskeyManager';
+// Also export the raw components for advanced use cases
+export { PasskeyManagerWithStore } from './PasskeyManagerWithStore';
+export { PasskeyLoginButtonWithStore } from './PasskeyLoginButtonWithStore';
+
+// WebAuthn utility library
+export * from '@/lib/webauthn';

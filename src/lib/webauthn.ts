@@ -2,18 +2,19 @@
  * WebAuthn/Passkeys Client Library
  *
  * This library provides client-side functionality for WebAuthn passkey
- * registration and authentication.
+ * registration and authentication. Uses the existing Redux RTK Query API.
  *
  * Spec: sogo6-server/.openspec/specs/webauthn-passkeys.spec.md
  */
-
-import { get, post } from './api-client';
 
 // ============================================================================
 // Types
 // ============================================================================
 
-interface PublicKeyCredentialCreationOptionsJSON {
+/**
+ * JSON-serializable WebAuthn options for the server
+ */
+export interface PublicKeyCredentialCreationOptionsJSON {
   challenge: string;
   rp: {
     id: string;
@@ -33,10 +34,10 @@ interface PublicKeyCredentialCreationOptionsJSON {
     userVerification: string;
     requireResidentKey?: boolean;
   };
-  challenge_id?: string; // Our custom addition
+  challenge_id?: string;
 }
 
-interface PublicKeyCredentialRequestOptionsJSON {
+export interface PublicKeyCredentialRequestOptionsJSON {
   challenge: string;
   rpId: string;
   allowCredentials: Array<{
@@ -46,39 +47,27 @@ interface PublicKeyCredentialRequestOptionsJSON {
   }>;
   timeout: number;
   userVerification: string;
-  challenge_id?: string; // Our custom addition
+  challenge_id?: string;
 }
 
-interface AuthenticatorAttestationResponseJSON {
+/**
+ * JSON representation for server communication
+ */
+export interface PublicKeyCredentialJSON {
   id: string;
   rawId: string;
   type: string;
   response: {
-    attestationObject: string;
+    attestationObject?: string;
     clientDataJSON: string;
+    authenticatorData?: string;
+    signature?: string;
+    userHandle?: string | null;
   };
+  clientExtensionResults?: Record<string, unknown>;
 }
 
-interface AuthenticatorAssertionResponseJSON {
-  id: string;
-  rawId: string;
-  type: string;
-  response: {
-    authenticatorData: string;
-    clientDataJSON: string;
-    signature: string;
-    userHandle: string;
-  };
-}
-
-interface PublicKeyCredentialJSON {
-  id: string;
-  rawId: string;
-  type: string;
-  response: AuthenticatorAttestationResponseJSON | AuthenticatorAssertionResponseJSON;
-}
-
-interface WebAuthnCredential {
+export interface WebAuthnCredential {
   id: string;
   name: string;
   is_default: boolean;
@@ -87,7 +76,7 @@ interface WebAuthnCredential {
   created_at: string;
 }
 
-interface WebAuthnSupport {
+export interface WebAuthnSupport {
   supported: boolean;
   require_webauthn: boolean;
   allow_password_fallback: boolean;
@@ -101,9 +90,6 @@ interface WebAuthnSupport {
 
 const API_BASE = '/user/v1/webauthn';
 
-const DEFAULT_RELIANCE_PARTY_ID = window.location.hostname;
-const DEFAULT_RELIANCE_PARTY_NAME = 'SOGo6';
-
 // ============================================================================
 // Helper Functions
 // ============================================================================
@@ -113,9 +99,10 @@ const DEFAULT_RELIANCE_PARTY_NAME = 'SOGo6';
  */
 export function isWebAuthnSupported(): boolean {
   return (
-    'credentials' in navigator &&
+    typeof window !== 'undefined' &&
+    'credentials' in window &&
     'PublicKeyCredential' in window &&
-    'authenticatorSelection' in PublicKeyCredentialCreationOptions.prototype
+    'authenticatorSelection' in (PublicKeyCredentialCreationOptions?.prototype || {})
   );
 }
 
@@ -134,14 +121,27 @@ function uint8ArrayToBase64url(buffer: Uint8Array): string {
 /**
  * Convert base64url string to Uint8Array
  */
-function base64urlToUint8Array(base64url: string): Uint8Array {
-  // Add padding if needed
+export function base64urlToUint8Array(base64url: string): Uint8Array {
   const padding = 4 - (base64url.length % 4);
   const base64 = (padding !== 4 ? base64url + '='.repeat(padding) : base64url)
-    .replace(/-/g, '+')
+    .replace(/\-/g, '+')
     .replace(/_/g, '/');
   const bytes = atob(base64);
   return new Uint8Array(Array.from(bytes).map((c) => c.charCodeAt(0)));
+}
+
+/**
+ * Convert base64url string to ArrayBuffer
+ */
+export function base64urlToBuffer(base64url: string): ArrayBuffer {
+  return base64urlToUint8Array(base64url).buffer;
+}
+
+/**
+ * Convert ArrayBuffer to base64url string
+ */
+export function bufferToBase64url(buffer: ArrayBuffer): string {
+  return uint8ArrayToBase64url(new Uint8Array(buffer));
 }
 
 /**
@@ -151,24 +151,24 @@ function prepareRegistrationOptions(
   options: PublicKeyCredentialCreationOptionsJSON
 ): PublicKeyCredentialCreationOptions {
   return {
-    challenge: base64urlToUint8Array(options.challenge),
+    challenge: base64urlToBuffer(options.challenge),
     rp: {
       id: options.rp.id,
-      name: options.rp.name
+      name: options.rp.name,
     },
     user: {
-      id: base64urlToUint8Array(options.user.id),
+      id: base64urlToBuffer(options.user.id),
       name: options.user.name,
-      displayName: options.user.displayName
+      displayName: options.user.displayName,
     },
-    pubKeyCredParams: options.pubKeyCredParams.map(p => ({
+    pubKeyCredParams: options.pubKeyCredParams.map((p) => ({
       type: p.type as PublicKeyCredentialType,
-      alg: p.alg as COSE.Algorithm
+      alg: p.alg as COSE.Algorithm,
     })),
     timeout: options.timeout,
     attestation: options.attestation as AttestationConveyancePreference,
     userVerification: options.userVerification as UserVerificationRequirement,
-    authenticatorSelection: options.authenticatorSelection as AuthenticatorSelectionCriteria
+    authenticatorSelection: options.authenticatorSelection as AuthenticatorSelectionCriteria,
   };
 }
 
@@ -179,257 +179,152 @@ function prepareAuthenticationOptions(
   options: PublicKeyCredentialRequestOptionsJSON
 ): PublicKeyCredentialRequestOptions {
   return {
-    challenge: base64urlToUint8Array(options.challenge),
+    challenge: base64urlToBuffer(options.challenge),
     rpId: options.rpId,
-    allowCredentials: options.allowCredentials.map(c => ({
-      id: base64urlToUint8Array(c.id),
+    allowCredentials: options.allowCredentials.map((c) => ({
+      id: base64urlToBuffer(c.id),
       type: c.type as PublicKeyCredentialType,
-      transports: c.transports as AuthenticationExtensionsClientOutputs['transports']
+      transports: c.transports as AuthenticationExtensionsClientOutputs['transports'],
     })),
     timeout: options.timeout,
-    userVerification: options.userVerification as UserVerificationRequirement
+    userVerification: options.userVerification as UserVerificationRequirement,
   };
 }
 
 /**
- * Convert browser response to JSON-serializable format for server
+ * Convert browser PublicKeyCredential to JSON-serializable format for server
  */
-function publicKeyCredentialToJSON(
+export function publicKeyCredentialToJSON(
   credential: PublicKeyCredential
 ): PublicKeyCredentialJSON {
   const { id, rawId, type, response } = credential;
-  
+
   return {
-    id: uint8ArrayToBase64url(new Uint8Array(id)),
-    rawId: uint8ArrayToBase64url(new Uint8Array(rawId)),
+    id: bufferToBase64url(id),
+    rawId: bufferToBase64url(rawId),
     type,
     response: {
-      attestationObject: response instanceof AuthenticatorAttestationResponse 
-        ? uint8ArrayToBase64url(new Uint8Array(response.attestationObject))
-        : undefined,
-      clientDataJSON: uint8ArrayToBase64url(new Uint8Array(response.clientDataJSON)),
-      authenticatorData: response instanceof AuthenticatorAssertionResponse
-        ? uint8ArrayToBase64url(new Uint8Array(response.authenticatorData))
-        : response instanceof AuthenticatorAttestationResponse
-          ? uint8ArrayToBase64url(new Uint8Array(response.getAuthenticatorData()))
+      attestationObject:
+        response instanceof AuthenticatorAttestationResponse
+          ? bufferToBase64url(response.attestationObject)
           : undefined,
-      signature: response instanceof AuthenticatorAssertionResponse
-        ? uint8ArrayToBase64url(new Uint8Array(response.signature))
-        : undefined,
-      userHandle: response instanceof AuthenticatorAssertionResponse
-        ? response.userHandle ? uint8ArrayToBase64url(new Uint8Array(response.userHandle)) : null
-        : undefined
+      clientDataJSON: bufferToBase64url(response.clientDataJSON),
+      authenticatorData:
+        response instanceof AuthenticatorAssertionResponse
+          ? bufferToBase64url(response.authenticatorData)
+          : response instanceof AuthenticatorAttestationResponse
+          ? bufferToBase64url(response.getAuthenticatorData())
+          : undefined,
+      signature:
+        response instanceof AuthenticatorAssertionResponse
+          ? bufferToBase64url(response.signature)
+          : undefined,
+      userHandle:
+        response instanceof AuthenticatorAssertionResponse
+          ? response.userHandle
+            ? bufferToBase64url(response.userHandle)
+            : null
+          : undefined,
+    },
+    clientExtensionResults: credential.getClientExtensionResults?.(),
+  };
+}
+
+/**
+ * Simple HTTP GET request
+ */
+async function httpGet<T>(url: string): Promise<T | null> {
+  const response = await fetch(url, {
+    method: 'GET',
+    credentials: 'include',
+    headers: {
+      'Content-Type': 'application/json',
+      'Accept': 'application/json',
+    },
+  });
+
+  if (!response.ok) {
+    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+  }
+
+  try {
+    return await response.json();
+  } catch {
+    return null;
+  }
+}
+
+/**
+ * Simple HTTP POST request
+ */
+async function httpPost<T>(url: string, body: unknown): Promise<T | null> {
+  const response = await fetch(url, {
+    method: 'POST',
+    credentials: 'include',
+    headers: {
+      'Content-Type': 'application/json',
+      'Accept': 'application/json',
+    },
+    body: JSON.stringify(body),
+  });
+
+  if (!response.ok) {
+    const errorData = await response.json().catch(() => ({}));
+    throw new Error(errorData?.error || errorData?.message || response.statusText);
+  }
+
+  try {
+    return await response.json();
+  } catch {
+    return null;
+  }
+}
+
+/**
+ * Simple HTTP DELETE request
+ */
+async function httpDelete(url: string): Promise<void> {
+  const response = await fetch(url, {
+    method: 'DELETE',
+    credentials: 'include',
+    headers: {
+      'Content-Type': 'application/json',
+      'Accept': 'application/json',
+    },
+  });
+
+  if (!response.ok) {
+    const errorData = await response.json().catch(() => ({}));
+    throw new Error(errorData?.error || errorData?.message || response.statusText);
+  }
+}
+
+// ============================================================================
+// Authentication Helper Types (for TypeScript)
+// ============================================================================
+
+declare global {
+  namespace NodeJS {
+    interface Global {
+      PublicKeyCredential: typeof PublicKeyCredential;
     }
-  };
-}
-
-// ============================================================================
-// Main API Functions
-// ============================================================================
-
-/**
- * Check WebAuthn support status
- */
-export async function checkWebAuthnSupport(): Promise<WebAuthnSupport> {
-  const response = await get(`${API_BASE}`);
-  return response?.data || {
-    supported: isWebAuthnSupported(),
-    require_webauthn: false,
-    allow_password_fallback: true,
-    user_has_passkeys: false,
-    passkey_count: 0
-  };
-}
-
-/**
- * Get registration options from server
- */
-export async function getRegistrationOptions(
-  userVerification: UserVerificationRequirement = 'preferred'
-): Promise<PublicKeyCredentialCreationOptionsJSON> {
-  const params = new URLSearchParams();
-  if (userVerification) {
-    params.append('user_verification', userVerification);
   }
-  
-  const response = await get(`${API_BASE}/challenge/register?${params.toString()}`);
-  return response?.data;
 }
 
-/**
- * Register a new passkey
- */
-export async function registerPasskey(
-  options: PublicKeyCredentialCreationOptionsJSON,
-  passkeyName?: string
-): Promise<WebAuthnCredential> {
-  if (!isWebAuthnSupported()) {
-    throw new Error('WebAuthn is not supported in this browser');
-  }
-  
-  const challengeId = options.challenge_id;
-  if (!challengeId) {
-    throw new Error('Missing challenge_id in registration options');
-  }
-  
-  // Prepare options for browser API
-  const publicKeyCredentialOptions = prepareRegistrationOptions(options);
-  
-  // Create credential
-  const credential = await navigator.credentials.create({
-    publicKey: publicKeyCredentialOptions
-  });
-  
-  if (!credential) {
-    throw new Error('Passkey registration was cancelled');
-  }
-  
-  // Convert to JSON for server
-  const credentialJSON = publicKeyCredentialToJSON(
-    credential as PublicKeyCredential
-  );
-  
-  // Send to server
-  const response = await post(`${API_BASE}/register`, {
-    credential: credentialJSON,
-    name: passkeyName,
-    is_default: false,
-    challenge_id: challengeId
-  });
-  
-  return response?.data;
-}
-
-/**
- * Get login options from server
- */
-export async function getLoginOptions(
-  userVerification: UserVerificationRequirement = 'preferred'
-): Promise<PublicKeyCredentialRequestOptionsJSON> {
-  const params = new URLSearchParams();
-  if (userVerification) {
-    params.append('user_verification', userVerification);
-  }
-  
-  const response = await get(`${API_BASE}/challenge/login?${params.toString()}`);
-  return response?.data;
-}
-
-/**
- * Login with a passkey
- */
-export async function loginWithPasskey(
-  options: PublicKeyCredentialRequestOptionsJSON
-): Promise<WebAuthnCredential> {
-  if (!isWebAuthnSupported()) {
-    throw new Error('WebAuthn is not supported in this browser');
-  }
-  
-  const challengeId = options.challenge_id;
-  if (!challengeId) {
-    throw new Error('Missing challenge_id in login options');
-  }
-  
-  // Prepare options for browser API
-  const publicKeyCredentialOptions = prepareAuthenticationOptions(options);
-  
-  // Get credential
-  const credential = await navigator.credentials.get({
-    publicKey: publicKeyCredentialOptions
-  });
-  
-  if (!credential) {
-    throw new Error('Passkey login was cancelled');
-  }
-  
-  // Convert to JSON for server
-  const credentialJSON = publicKeyCredentialToJSON(
-    credential as PublicKeyCredential
-  );
-  
-  // Send to server
-  const response = await post(`${API_BASE}/login`, {
-    credential: credentialJSON,
-    challenge_id: challengeId
-  });
-  
-  return response?.data;
-}
-
-/**
- * List all passkeys for the current user
- */
-export async function listPasskeys(): Promise<{ credentials: WebAuthnCredential[]; count: number }> {
-  const response = await get(`${API_BASE}/credentials`);
-  return response?.data || { credentials: [], count: 0 };
-}
-
-/**
- * Get passkey details
- */
-export async function getPasskey(credentialId: string): Promise<WebAuthnCredential> {
-  const response = await get(`${API_BASE}/credentials/${credentialId}`);
-  return response?.data;
-}
-
-/**
- * Update passkey (rename, set as default)
- */
-export async function updatePasskey(
-  credentialId: string,
-  updates: { name?: string; is_default?: boolean }
-): Promise<WebAuthnCredential> {
-  const response = await post(`${API_BASE}/credentials/${credentialId}`, updates);
-  return response?.data;
-}
-
-/**
- * Remove a passkey
- */
-export async function removePasskey(credentialId: string): Promise<void> {
-  await post(`${API_BASE}/credentials/${credentialId}`, {}, { method: 'DELETE' });
-}
-
-// ============================================================================
-// Convenience Functions
-// ============================================================================
-
-/**
- * Complete passkey registration flow
- */
-export async function completeRegistration(
-  passkeyName?: string,
-  userVerification?: UserVerificationRequirement
-): Promise<WebAuthnCredential> {
-  // 1. Get registration options
-  const options = await getRegistrationOptions(userVerification);
-  
-  // 2. Register passkey
-  return registerPasskey(options, passkeyName);
-}
-
-/**
- * Complete passkey login flow
- */
-export async function completeLogin(
-  userVerification?: UserVerificationRequirement
-): Promise<WebAuthnCredential> {
-  // 1. Get login options
-  const options = await getLoginOptions(userVerification);
-  
-  // 2. Login with passkey
-  return loginWithPasskey(options);
-}
-
-// ============================================================================
-// Type Extensions
-// ============================================================================
-
+// Extend window if needed
 declare global {
   interface Window {
     PublicKeyCredential: typeof PublicKeyCredential;
   }
 }
 
-// Ensure Typescript knows about WebAuthn types
-export {};
+// ============================================================================
+// Exports
+// ============================================================================
+
+export {
+  uint8ArrayToBase64url,
+  bufferToBase64url,
+  prepareRegistrationOptions,
+  prepareAuthenticationOptions,
+};
