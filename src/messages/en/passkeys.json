@@ -1,0 +1,168 @@
+{
+  "passkeys": {
+    "title": {
+      "string": "Passkeys",
+      "context": "Title for the passkeys management section"
+    },
+    "description": {
+      "string": "Manage your WebAuthn passkeys for passwordless authentication",
+      "context": "Description for the passkeys management section"
+    },
+    "passkey": {
+      "string": "Passkey",
+      "context": "Singular form of passkey"
+    },
+    "addPasskey": {
+      "string": "Add Passkey",
+      "context": "Button to add a new passkey"
+    },
+    "addFirstPasskey": {
+      "string": "Add Your First Passkey",
+      "context": "Button to add the first passkey"
+    },
+    "addPasskeyDesc": {
+      "string": "Create a new passkey for this account. You can use your device's biometric sensor (Face ID, Touch ID, Fingerprint) or a security key.",
+      "context": "Description for adding a new passkey"
+    },
+    "noPasskeys": {
+      "string": "No Passkeys Yet",
+      "context": "Title when user has no passkeys"
+    },
+    "noPasskeysDesc": {
+      "string": "Passkeys provide a secure and convenient way to log in without passwords. Add one to get started.",
+      "context": "Description when user has no passkeys"
+    },
+    "name": {
+      "string": "Name",
+      "context": "Label for passkey name"
+    },
+    "namePlaceholder": {
+      "string": "My Passkey",
+      "context": "Placeholder for passkey name"
+    },
+    "default": {
+      "string": "Default",
+      "context": "Label for default passkey"
+    },
+    "lastUsed": {
+      "string": "Last Used",
+      "context": "Label for when passkey was last used"
+    },
+    "signCount": {
+      "string": "Signatures",
+      "context": "Label for signature count"
+    },
+    "createdAt": {
+      "string": "Created",
+      "context": "Label for when passkey was created"
+    },
+    "register": {
+      "string": "Register",
+      "context": "Button to register passkey"
+    },
+    "registering": {
+      "string": "Registering...",
+      "context": "Button text when registering passkey"
+    },
+    "loginWithPasskey": {
+      "string": "Sign in with Passkey",
+      "context": "Button to sign in with passkey"
+    },
+    "removePasskey": {
+      "string": "Remove Passkey",
+      "context": "Title for remove passkey dialog"
+    },
+    "removeConfirm": {
+      "string": "Are you sure you want to remove\"{name}\"? This cannot be undone.",
+      "context": "Confirmation message for removing passkey"
+    },
+    "removeLastWarning": {
+      "string": "This is your last passkey. You will need to use password authentication.",
+      "context": "Warning when removing the last passkey"
+    },
+    "removalSuccess": {
+      "string": "Passkey removed successfully",
+      "context": "Success message after removing passkey"
+    },
+    "removalFailed": {
+      "string": "Failed to remove passkey",
+      "context": "Error message when passkey removal fails"
+    },
+    "renamePasskey": {
+      "string": "Rename Passkey",
+      "context": "Title for rename passkey dialog"
+    },
+    "renameDesc": {
+      "string": "Enter a new name for\"{name}\"",
+      "context": "Description for renaming passkey"
+    },
+    "updateSuccess": {
+      "string": "Passkey updated successfully",
+      "context": "Success message after updating passkey"
+    },
+    "updateFailed": {
+      "string": "Failed to update passkey",
+      "context": "Error message when passkey update fails"
+    },
+    "setAsDefault": {
+      "string": "Set as Default",
+      "context": "Menu item to set passkey as default"
+    },
+    "defaultSuccess": {
+      "string": "Default passkey updated",
+      "context": "Success message after setting default passkey"
+    },
+    "defaultFailed": {
+      "string": "Failed to set default passkey",
+      "context": "Error message when setting default passkey fails"
+    },
+    "fetchFailed": {
+      "string": "Failed to load passkeys",
+      "context": "Error message when loading passkeys fails"
+    },
+    "browserNotSupported": {
+      "string": "Passkeys are not supported in this browser",
+      "context": "Error when WebAuthn is not available in browser"
+    },
+    "browserNotSupportedDesc": {
+      "string": "Please use a modern browser like Chrome, Edge, Safari, or Firefox to use passkeys.",
+      "context": "Description when WebAuthn is not available"
+    },
+    "registrationSuccess": {
+      "string": "Passkey registered successfully!",
+      "context": "Success message after registering passkey"
+    },
+    "registrationFailed": {
+      "string": "Failed to register passkey",
+      "context": "Error message when passkey registration fails"
+    },
+    "registrationCancelled": {
+      "string": "Passkey registration was cancelled",
+      "context": "Message when user cancels passkey registration"
+    },
+    "loginFailed": {
+      "string": "Passkey login failed",
+      "context": "Error message when passkey login fails"
+    },
+    "loginCancelled": {
+      "string": "Passkey login was cancelled",
+      "context": "Message when user cancels passkey login"
+    },
+    "loginSuccess": {
+      "string": "Logged in successfully with passkey!",
+      "context": "Success message after passkey login"
+    },
+    "noCredentials": {
+      "string": "No passkeys found for this account",
+      "context": "Error when user has no passkeys to login with"
+    },
+    "requiredNotice": {
+      "string": "Passkeys are required for this account",
+      "context": "Notice when WebAuthn is required by policy"
+    },
+    "maxReached": {
+      "string": "Maximum number of passkeys reached",
+      "context": "Error when user tries to add too many passkeys"
+    }
+  }
+}
