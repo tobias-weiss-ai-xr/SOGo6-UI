@@ -17,6 +17,7 @@ import {
   useBookResourceMutation,
   useGetMyBookingsQuery,
 } from '@/features/resources/store/resources-api'
+import { QuickBookingModal } from '@/features/resources/components'
 import type {
   Resource,
   ResourceType,
@@ -113,6 +114,7 @@ export default function ResourceBrowserPage() {
   const [bookingTimeRange, setBookingTimeRange] = useState<{ start_time: string; end_time: string } | null>(null)
   const [showBookingModal, setShowBookingModal] = useState(false)
   const [showDetailsModal, setShowDetailsModal] = useState(false)
+  const [showQuickBookingModal, setShowQuickBookingModal] = useState(false)
 
   // Debounced filter values for API calls
   const [debouncedFilters, setDebouncedFilters] = useState<ResourceFilters>(filters)
@@ -277,12 +279,12 @@ export default function ResourceBrowserPage() {
 
   const handleQuickBookClick = (resource: Resource) => {
     setSelectedResource(resource)
-    const now = new Date()
-    const start = new Date(now.getTime() + 15 * 60 * 1000)
-    const end = new Date(start.getTime() + 60 * 60 * 1000)
-    setBookingTimeRange({ start_time: start.toISOString(), end_time: end.toISOString() })
-    // For now, just show details. Full booking flow comes later
-    setShowDetailsModal(true)
+    setShowQuickBookingModal(true)
+  }
+
+  const handleCloseQuickBookingModal = () => {
+    setShowQuickBookingModal(false)
+    setSelectedResource(null)
   }
 
   const handleCancelModals = () => {
@@ -578,6 +580,13 @@ export default function ResourceBrowserPage() {
       </div>
       {/* Modals */}
       {showDetailsModal && <ResourceDetailsModal />}
+      {showQuickBookingModal && selectedResource && (
+        <QuickBookingModal
+          resource={selectedResource}
+          isOpen={showQuickBookingModal}
+          onClose={handleCloseQuickBookingModal}
+        />
+      )}
     </div>
   )
 }
