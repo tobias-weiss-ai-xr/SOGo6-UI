@@ -58,6 +58,8 @@ import {
   type EventReminder,
   type FreeBusyRequest,
 } from '../calendars-types'
+import { ResourceSelector } from '@/features/resources/components'
+import type { Resource } from '@/features/resources/types/resources'
 import { useGetFreeBusyQuery } from '../store/calendars-api'
 import { isCalendarWritable } from '../utils/is-calendar-writable'
 import { recurrenceScopeToMutationFields } from '../utils/recurrence-scope-mutation'
@@ -108,6 +110,16 @@ const eventFormFieldsSchema = z.object({
       z.object({
         email: z.string().email().or(z.literal('')),
         name: z.string().optional(),
+      })
+    )
+    .default([]),
+  resources: z
+    .array(
+      z.object({
+        id: z.string(),
+        email: z.string(),
+        name: z.string(),
+        resource_type: z.enum(['room', 'equipment', 'vehicle', 'other']),
       })
     )
     .default([]),
@@ -303,6 +315,12 @@ export function EventForm({
           email: attendee.email,
           name: attendee.name ?? '',
         })) ?? [],
+      resources: event?.attendees?.filter(a => a.cutype === 'resource' || a.cutype === 'room')?.map(a => ({
+        id: a.email, // Using email as ID for now, backend will resolve
+        email: a.email,
+        name: a.name ?? '',
+        resource_type: a.cutype === 'room' ? 'room' : 'equipment',
+      })) ?? [],
       recurrence_rule: recurrenceToFormRule(
         event?.recurrence ?? event?.recurrence_rule ?? null
       ),
@@ -451,16 +469,37 @@ export function EventForm({
             minutes_before: reminder.minutes_before,
           }))
         : undefined,
-    attendees:
-      values.attendees.filter((attendee) => attendee.email.trim() !== '')
-        .length > 0
-        ? values.attendees
-            .filter((attendee) => attendee.email.trim() !== '')
+    attendees: [
+      ...values.attendees.filter((attendee) => attendee.email.trim() !== '')
+        .map((attendee) => ({
+          email: attendee.email,
+          name: attendee.name || undefined,
+        })),
+      ...values.resources.map((resource) => ({
+        email: resource.email,
+        name: resource.name,
+        cutype: resource.resource_type === 'room' ? 'room' : 'resource',
+        role: 'required' as const,
+        status: 'needs-action' as const,
+        rsvp: false,
+      })),
+    ].length > 0
+      ? [
+          ...values.attendees.filter((attendee) => attendee.email.trim() !== '')
             .map((attendee) => ({
               email: attendee.email,
               name: attendee.name || undefined,
-            }))
-        : undefined,
+            })),
+          ...values.resources.map((resource) => ({
+            email: resource.email,
+            name: resource.name,
+            cutype: resource.resource_type === 'room' ? 'room' : 'resource',
+            role: 'required' as const,
+            status: 'needs-action' as const,
+            rsvp: false,
+          })),
+        ]
+      : undefined,
     recurrence_rule: values.recurrence_rule ?? undefined,
   })
 
@@ -908,6 +947,26 @@ export function EventForm({
               </div>
             )}
           </FormItem>
+
+          {/* Resources */}
+          <FormField
+            control={form.control}
+            name="resources"
+            render={({ field }) => (
+              <FormItem>
+                <FormLabel>{t('CALENDARS.eventForm.resources.title.string')}</FormLabel>
+                <ResourceSelector
+                  value={field.value}
+                  onChange={field.onChange}
+                  startTime={watchedStart || ''}
+                  endTime={watchedEnd || ''}
+                  disabled={isSubmitting}
+                />
+                <FormMessage />
+              </FormItem>
+            )}
+          />
+
           <div className={cn('flex flex-col gap-2')}>
             <div className={cn('flex items-center justify-between')}>
               <span className={cn('text-sm font-medium')}>

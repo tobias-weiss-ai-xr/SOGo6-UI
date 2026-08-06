@@ -289,6 +289,8 @@ export interface AttendeeInputItem {
   email: string
   name?: string
   status?: 'needs-action' | 'accepted' | 'declined' | 'tentative'
+  /** Calendar user type - for resource attendees */
+  cutype?: 'individual' | 'group' | 'resource' | 'room' | 'unknown'
 }
 
 export interface UserSearchResult {
