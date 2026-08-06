@@ -39,6 +39,24 @@
             "string": "Show as busy during off hours",
             "context": "Label for the setting that determines whether to show as busy during off hours"
         },
+        "nonWorkingWeekdays": {
+            "0": "Sunday",
+            "1": "Monday",
+            "2": "Tuesday",
+            "3": "Wednesday",
+            "4": "Thursday",
+            "5": "Friday",
+            "6": "Saturday",
+            "string": "Non-working days",
+            "context": "Label for the setting that selects which weekdays are considered non-working for free/busy (array of 0=Sunday..6=Saturday)"
+        },
+        "defaultLocation": {
+            "string": "Default meeting location",
+            "placeholder": {
+                "string": "e.g. Conference Room A"
+            },
+            "context": "Label for the setting that stores the default meeting location pre-filled when creating new events"
+        },
         "calendarDaysShowed": {
             "0": "Sunday",
             "1": "Monday",

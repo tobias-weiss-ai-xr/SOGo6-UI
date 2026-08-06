@@ -225,6 +225,38 @@ const LabelsForm: React.FC<Props> = ({ data, update }) => {
           />
           <FormField
             control={form.control}
+            name="nonWorkingWeekdays"
+            render={({ field }) => (
+              <FormItem>
+                <FormLabel>{t('nonWorkingWeekdays.string')}</FormLabel>
+                <MultiSelect
+                  options={calendarDaysShowedOptions}
+                  selected={field.value.map(String)}
+                  onChange={(values) => field.onChange(values.map(Number))}
+                />
+              </FormItem>
+            )}
+          />
+          <FormField
+            control={form.control}
+            name="defaultLocation"
+            render={({ field }) => (
+              <FormItem>
+                <FormLabel>{t('defaultLocation.string')}</FormLabel>
+                <FormControl>
+                  <input
+                    type="text"
+                    className="flex h-9 w-full rounded-md border border-input bg-transparent px-3 py-1 text-sm shadow-sm transition-colors placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50"
+                    placeholder={t('defaultLocation.placeholder.string')}
+                    value={field.value ?? ''}
+                    onChange={field.onChange}
+                  />
+                </FormControl>
+              </FormItem>
+            )}
+          />
+          <FormField
+            control={form.control}
             name="calendarWeekNumberFormat"
             render={({ field }) => (
               <FormItem>

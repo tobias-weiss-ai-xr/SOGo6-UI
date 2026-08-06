@@ -20,6 +20,8 @@ export function calendarGeneralToApi(
     SOGO_U_WORKDAY_START_TIME: value.workdayStartTime,
     SOGO_U_WORKDAY_END_TIME: value.workdayEndTime,
     SOGO_U_BUSY_OFF_HOURS: value.busyOffHours,
+    SOGO_U_NON_WORKING_WEEKDAYS: value.nonWorkingWeekdays,
+    SOGO_U_DEFAULT_LOCATION: value.defaultLocation ?? '',
     SOGO_U_CALENDAR_DAYS_SHOWED: value.calendarDaysShowed,
     SOGO_U_CALENDAR_WEEK_NUMBER_FORMAT: value.calendarWeekNumberFormat,
     SOGO_U_CALENDAR_DEFAULT: value.calendarDefault,
@@ -52,6 +54,9 @@ export function apiToCalendarGeneral(
     workdayStartTime: value.USER_CALENDAR_GENERAL.SOGO_U_WORKDAY_START_TIME,
     workdayEndTime: value.USER_CALENDAR_GENERAL.SOGO_U_WORKDAY_END_TIME,
     busyOffHours: value.USER_CALENDAR_GENERAL.SOGO_U_BUSY_OFF_HOURS,
+    nonWorkingWeekdays:
+      value.USER_CALENDAR_GENERAL.SOGO_U_NON_WORKING_WEEKDAYS || [5, 6],
+    defaultLocation: value.USER_CALENDAR_GENERAL.SOGO_U_DEFAULT_LOCATION ?? '',
     calendarDaysShowed: value.USER_CALENDAR_GENERAL.SOGO_U_CALENDAR_DAYS_SHOWED,
     calendarWeekNumberFormat:
       value.USER_CALENDAR_GENERAL.SOGO_U_CALENDAR_WEEK_NUMBER_FORMAT,

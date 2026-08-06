@@ -61,6 +61,8 @@ function makeCalendarGeneralSettings(overrides = {}): CalendarGeneralSettings {
     workdayStartTime: '09:00',
     workdayEndTime: '18:00',
     busyOffHours: false,
+    nonWorkingWeekdays: [5, 6],
+    defaultLocation: '',
     calendarDaysShowed: [1, 2, 3, 4, 5],
     calendarWeekNumberFormat: '%V',
     calendarDefault: 'SOGO_DEFAULT_CALENDAR',
@@ -315,8 +317,8 @@ describe('user-preferences-types runtime shape validation', () => {
   // ── CalendarGeneralSettings ───────────────────────────────────────────────
 
   describe('CalendarGeneralSettings', () => {
-    it('constructs with all 18 required fields', () => {
-      expect(Object.keys(makeCalendarGeneralSettings())).toHaveLength(18)
+    it('constructs with all 20 required fields', () => {
+      expect(Object.keys(makeCalendarGeneralSettings())).toHaveLength(20)
     })
 
     it('boolean fields are booleans at runtime', () => {

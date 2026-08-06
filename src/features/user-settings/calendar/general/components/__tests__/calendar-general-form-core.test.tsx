@@ -35,7 +35,7 @@ jest.mock('@/components/ui/form', () => ({
   FormControl: ({ children }: any) => <div>{children}</div>,
   FormField: ({ name, render }: any) => {
     // Fields that expect an array value (used with .map())
-    const arrayFields = ['calendarDaysShowed', 'noInvitationWhitelist']
+    const arrayFields = ['calendarDaysShowed', 'noInvitationWhitelist', 'nonWorkingWeekdays']
     const isArray = arrayFields.some((f) => name?.includes(f))
     return render({
       field: { value: isArray ? [] : '', onChange: jest.fn(), checked: false },
@@ -147,6 +147,8 @@ const mockData = {
   workdayStartTime: '09:00',
   workdayEndTime: '17:00',
   busyOffHours: false,
+  nonWorkingWeekdays: [5, 6],
+  defaultLocation: 'Room A',
   calendarDaysShowed: [1, 2, 3, 4, 5],
   calendarWeekNumberFormat: '%V',
   calendarDefault: 'SOGO_DEFAULT_CALENDAR',
@@ -189,6 +191,9 @@ beforeEach(() => {
         'workdayStartTime.string': 'Workday start time',
         'workdayEndTime.string': 'Workday end time',
         'busyOffHours.string': 'Busy off hours',
+        'nonWorkingWeekdays.string': 'Non-working days',
+        'defaultLocation.string': 'Default meeting location',
+        'defaultLocation.placeholder.string': 'e.g. Conference Room A',
         'calendarDaysShowed.string': 'Days showed',
         'calendarWeekNumberFormat.string': 'Week number format',
         'calendarWeekNumberFormat.%U': 'Sunday-based',
@@ -325,7 +330,8 @@ describe('CalendarGeneralForm', () => {
     it('renders the multi-select for calendar days showed', () => {
       render(<LabelsForm data={mockData as any} update={mockUpdate} />)
 
-      expect(screen.getByTestId('multi-select')).toBeInTheDocument()
+      // Two multi-selects render: calendarDaysShowed + nonWorkingWeekdays
+      expect(screen.getAllByTestId('multi-select').length).toBeGreaterThanOrEqual(2)
     })
   })
 

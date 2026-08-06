@@ -69,6 +69,8 @@ export interface CalendarGeneralSettings {
   workdayStartTime: string | '09:00' // SOGO_U_WORKDAY_START_TIME (e.g. "09:00")
   workdayEndTime: string | '18:00' // SOGO_U_WORKDAY_END_TIME (e.g. "18:00")
   busyOffHours: boolean | false // SOGO_U_BUSY_OFF_HOURS
+  nonWorkingWeekdays: number[] | [5, 6] // SOGO_U_NON_WORKING_WEEKDAYS (array of 0=Sun..6=Sat)
+  defaultLocation: string | '' // SOGO_U_DEFAULT_LOCATION (pre-filled when creating events)
   calendarDaysShowed: number[] | [0, 1, 2, 3, 4, 5, 6] // SOGO_U_CALENDAR_DAYS_SHOWED (array of 0..6)
   calendarWeekNumberFormat: '%U' | '%W' | '%V' // SOGO_U_CALENDAR_WEEK_NUMBER_FORMAT
   calendarDefault: string | 'SOGO_DEFAULT_CALENDAR' // SOGO_U_CALENDAR_DEFAULT
