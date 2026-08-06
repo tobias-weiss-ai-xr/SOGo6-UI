@@ -3,6 +3,7 @@
 import ShadcnBigCalendar from '@/components/calendar'
 import { Dialog, DialogContent, DialogHeader } from '@/components/ui/dialog'
 import { type Calendar, type CalendarEvent } from '@/features/calendars'
+import { hasResourceAttendees, getResourceCount } from '@/features/resources/components/resource-event-indicator'
 import { AgendaView } from '@/features/calendars/components/agenda-view'
 import { LazyEventForm } from '@/features/calendars/components/event-form-lazy'
 import { MobileCalendarView } from '@/features/calendars/components/mobile-calendar-view'
@@ -66,6 +67,7 @@ const calendarSlotSelectionGuardComponents = {
       </span>
     ),
   },
+  event: eventWrapper,
 }
 
 export interface CalendarViewProps {
@@ -163,6 +165,22 @@ function CalendarView({
       .rbc-slot-selection {
         background-color: ${defaultColor} !important;
       }
+      .rbc-event-with-resources::after {
+        content: attr(data-resource-count);
+        position: absolute;
+        top: 2px;
+        right: 2px;
+        background: rgba(255, 255, 255, 0.25);
+        color: white;
+        border-radius: 50%;
+        width: 18px;
+        height: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 10px;
+        font-weight: bold;
+      }
     `
 
     Object.entries(calendarColorMap).forEach(([calendarId, color]) => {
@@ -189,6 +207,9 @@ function CalendarView({
     const color =
       calendarColorMap[event.calendar_id ?? ''] || defaultColor
 
+    const hasResources = hasResourceAttendees(event as unknown as CalendarEvent)
+    const resourceCount = hasResources ? getResourceCount(event as unknown as CalendarEvent) : 0
+
     return {
       style: {
         backgroundColor: color,
@@ -199,7 +220,21 @@ function CalendarView({
         display: 'block',
         textDecoration: event.status === 'cancelled' ? 'line-through' : 'none',
       },
+      className: hasResources ? 'rbc-event-with-resources' : '',
     }
+  }
+
+  // Add resource count as data attribute to events
+  const eventWrapper = (props: any) => {
+    const { event } = props
+    const hasResources = hasResourceAttendees(event as unknown as CalendarEvent)
+    const resourceCount = hasResources ? getResourceCount(event as unknown as CalendarEvent) : 0
+    
+    if (!hasResources) {
+      return <span {...props} />
+    }
+    
+    return <span {...props} data-resource-count={resourceCount} />
   }
 
   // Mobile view rendering
