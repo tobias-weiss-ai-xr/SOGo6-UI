@@ -4,77 +4,73 @@
  * Admin Resource Management Page
  * 
  * Allows administrators to create, edit, delete, and manage resources
+ * Uses real admin API endpoints via RTK Query
  */
 
-import { useState, useEffect, useMemo } from 'react'
+import { useState, useEffect, useMemo, useCallback } from 'react'
 import { useRouter } from 'next/navigation'
+import { useTranslations } from 'next-intl'
 
-import type { Resource, ResourceType, BookingPolicy } from '@/features/resources/types/resources'
+import type { Resource as AdminResource } from '@/features/admin-panel/store/resource-booking-api'
+import type { ResourceType, BookingPolicy } from '@/features/resources/types/resources'
+import {
+  useGetResourcesQuery,
+  useGetResourceQuery,
+  useCreateResourceMutation,
+  useUpdateResourceMutation,
+  useDeleteResourceMutation,
+} from '@/features/admin-panel/store/admin-panel-api'
 
 // Helper functions
-function formatResourceType(type: ResourceType): string {
-  const types: Record<ResourceType, string> = { room: 'Room', equipment: 'Equipment', vehicle: 'Vehicle', other: 'Other' }
-  return types[type] || type
+function formatResourceType(type: string): string {
+  const types: Record<ResourceType, string> = {
+    room: 'Room',
+    equipment: 'Equipment', 
+    vehicle: 'Vehicle',
+    other: 'Other'
+  }
+  return types[type as ResourceType] || type
 }
 
-// Mock admin API - replace with real API calls
-const mockResources: Resource[] = [
-  {
-    id: '1',
-    name: 'Conference Room A',
-    description: 'Large conference room with projector and whiteboard',
-    email: 'room-a@company.org',
-    resource_type: 'room',
-    capacity: 20,
-    location: 'Building A, Floor 1',
-    features: ['projector', 'whiteboard', 'video_conferencing'],
-    is_active: true,
-    booking_policy: 'open',
-    auto_accept: true,
-    created_at: '2025-01-01T10:00:00Z',
-    updated_at: '2025-01-15T14:30:00Z',
-    allowed_groups: [],
-    is_favorite: false,
-  },
-  {
-    id: '2',
-    name: 'Laptop Cart',
-    description: '10 laptops for training sessions',
-    email: 'laptops@company.org',
-    resource_type: 'equipment',
-    capacity: null,
-    location: 'IT Department',
-    features: ['laptops', 'chargers'],
-    is_active: true,
-    booking_policy: 'moderated',
-    auto_accept: false,
-    created_at: '2025-02-01T10:00:00Z',
-    updated_at: '2025-02-20T11:20:00Z',
-    allowed_groups: ['training-team'],
-    is_favorite: false,
-  },
-  {
-    id: '3',
-    name: 'Company Van',
-    description: 'Technician transportation vehicle',
-    email: 'van@company.org',
-    resource_type: 'vehicle',
-    capacity: 8,
-    location: 'Parking Lot C',
-    features: ['AC', 'GPS'],
-    is_active: false,
-    booking_policy: 'restricted',
-    auto_accept: false,
-    created_at: '2025-03-01T10:00:00Z',
-    updated_at: '2025-03-10T09:15:00Z',
-    allowed_groups: ['technicians', 'management'],
-    is_favorite: false,
-  },
-]
+// Map admin resource to our internal type for compatibility
+function mapAdminResourceToInternal(resource: AdminResource): ResourceType & { created_at: string; updated_at: string } & AdminResource {
+  return resource
+}
+
+// Default resource form data
+const defaultResourceFormData: Omit<AdminResource, 'id' | 'created_at' | 'updated_at'> = {
+  name: '',
+  description: '',
+  email: '',
+  resource_type: 'room',
+  capacity: null,
+  location: null,
+  features: [],
+  is_active: true,
+  booking_policy: 'open',
+  allowed_groups: [],
+  auto_accept: true,
+}
 
 export default function AdminResourceManagementPage() {
+  const t = useTranslations('admin-panel.resources')
   const router = useRouter()
-  const [resources, setResources] = useState<Resource[]>(mockResources)
+  
+  // API hooks
+  const {
+    data: resourcesData,
+    isLoading: isFetching,
+    isError: isFetchError,
+    error: fetchError,
+    refetch,
+  } = useGetResourcesQuery({ active_only: false })
+  
+  const [createResource, { isLoading: isCreating }] = useCreateResourceMutation()
+  const [updateResource, { isLoading: isUpdating }] = useUpdateResourceMutation()
+  const [deleteResource, { isLoading: isDeleting }] = useDeleteResourceMutation()
+  
+  // State
+  const [resources, setResources] = useState<AdminResource[]>([])
   const [isLoading, setIsLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
   
@@ -88,44 +84,43 @@ export default function AdminResourceManagementPage() {
   const [showCreateModal, setShowCreateModal] = useState(false)
   const [showEditModal, setShowEditModal] = useState(false)
   const [showDeleteModal, setShowDeleteModal] = useState(false)
-  const [selectedResource, setSelectedResource] = useState<Resource | null>(null)
+  const [selectedResource, setSelectedResource] = useState<AdminResource | null>(null)
   
   // Form state
-  const [formData, setFormData] = useState<Partial<Resource>>({
-    name: '',
-    description: '',
-    email: '',
-    resource_type: 'room',
-    capacity: null,
-    location: '',
-    features: [],
-    is_active: true,
-    booking_policy: 'open',
-    auto_accept: true,
-    allowed_groups: [],
-  })
-
-  // Load resources (mock for now)
+  const [formData, setFormData] = useState<Partial<Omit<AdminResource, 'id' | 'created_at' | 'updated_at'>>>(defaultResourceFormData)
+  
+  // Load resources from API
   useEffect(() => {
     const loadResources = async () => {
       setIsLoading(true)
+      setError(null)
+      
       try {
-        // TODO: Replace with actual API call
-        // const response = await fetch('/admin/v1/resources')
-        // const data = await response.json()
-        // setResources(data.resources)
-        setResources(mockResources)
+        // Data is already loaded by the query hook
+        if (resourcesData?.data) {
+          setResources(resourcesData.data)
+        }
       } catch (err) {
         setError('Failed to load resources')
       } finally {
         setIsLoading(false)
       }
     }
-    loadResources()
-  }, [])
+    
+    if (isFetchError && fetchError) {
+      setError('Failed to load resources')
+      setIsLoading(false)
+    } else if (!isFetching && resourcesData?.data) {
+      setResources(resourcesData.data)
+      setIsLoading(false)
+    } else if (!isFetching && !resourcesData?.data) {
+      setIsLoading(false)
+    }
+  }, [resourcesData, isFetching, isFetchError, fetchError])
 
   // Filter resources
   const filteredResources = useMemo(() => {
+    if (!resources) return []
     return resources.filter(resource => {
       const matchesSearch = filter.search === '' || 
         resource.name.toLowerCase().includes(filter.search.toLowerCase()) ||
@@ -137,122 +132,136 @@ export default function AdminResourceManagementPage() {
   }, [resources, filter])
 
   // Form handlers
-  const handleCreate = () => {
-    setFormData({
-      name: '',
-      description: '',
-      email: '',
-      resource_type: 'room',
-      capacity: null,
-      location: '',
-      features: [],
-      is_active: true,
-      booking_policy: 'open',
-      auto_accept: true,
-      allowed_groups: [],
-    })
+  const handleCreate = useCallback(() => {
+    setFormData({ ...defaultResourceFormData })
     setShowCreateModal(true)
-  }
+  }, [])
 
-  const handleEdit = (resource: Resource) => {
+  const handleEdit = useCallback((resource: AdminResource) => {
     setSelectedResource(resource)
-    setFormData({ ...resource, features: resource.features || [], allowed_groups: resource.allowed_groups || [] })
+    setFormData({
+      name: resource.name,
+      description: resource.description,
+      email: resource.email,
+      resource_type: resource.resource_type,
+      capacity: resource.capacity,
+      location: resource.location,
+      features: resource.features || [],
+      is_active: resource.is_active,
+      booking_policy: resource.booking_policy,
+      allowed_groups: resource.allowed_groups || [],
+      auto_accept: resource.auto_accept,
+    })
     setShowEditModal(true)
-  }
+  }, [])
 
-  const handleDelete = (resource: Resource) => {
+  const handleDelete = useCallback((resource: AdminResource) => {
     setSelectedResource(resource)
     setShowDeleteModal(true)
-  }
+  }, [])
 
-  const handleCloseCreateModal = () => {
+  const handleCloseCreateModal = useCallback(() => {
     setShowCreateModal(false)
-    setFormData({})
-  }
+    setFormData(defaultResourceFormData)
+  }, [])
 
-  const handleCloseEditModal = () => {
+  const handleCloseEditModal = useCallback(() => {
     setShowEditModal(false)
     setSelectedResource(null)
-    setFormData({})
-  }
+    setFormData(defaultResourceFormData)
+  }, [])
 
-  const handleCloseDeleteModal = () => {
+  const handleCloseDeleteModal = useCallback(() => {
     setShowDeleteModal(false)
     setSelectedResource(null)
-  }
+  }, [])
 
-  const handleFormChange = (field: keyof Resource, value: string | number | boolean | string[] | null) => {
+  const handleFormChange = useCallback((field: keyof AdminResource, value: string | number | boolean | string[] | null) => {
     setFormData(prev => ({ ...prev, [field]: value }))
-  }
+  }, [])
 
-  const handleFormSubmit = async (e: React.FormEvent) => {
+  const handleFormSubmit = useCallback(async (e: React.FormEvent) => {
     e.preventDefault()
-    // TODO: Submit to API
-    console.log('Form submitted:', formData)
-    if (showCreateModal) {
-      // Create new resource
-      const newResource: Resource = {
-        ...formData as Resource,
-        id: Date.now().toString(),
-        created_at: new Date().toISOString(),
-        updated_at: new Date().toISOString(),
-        is_favorite: false,
-      }
-      setResources(prev => [...prev, newResource])
-      handleCloseCreateModal()
-    } else if (showEditModal && selectedResource) {
-      // Update existing resource
-      setResources(prev => prev.map(r => r.id === selectedResource.id ? { ...r, ...formData as Resource, updated_at: new Date().toISOString() } : r))
-      handleCloseEditModal()
+    
+    const formAsResource: Omit<AdminResource, 'id' | 'created_at' | 'updated_at'> = {
+      ...defaultResourceFormData,
+      ...formData,
     }
-  }
+    
+    try {
+      if (showCreateModal) {
+        // Create new resource
+        await createResource(formAsResource).unwrap()
+        // Refetch resources
+        await refetch()
+        handleCloseCreateModal()
+      } else if (showEditModal && selectedResource) {
+        // Update existing resource
+        await updateResource({
+          id: selectedResource.id,
+          body: formAsResource,
+        }).unwrap()
+        // Refetch resources
+        await refetch()
+        handleCloseEditModal()
+      }
+    } catch (err: any) {
+      setError(err.data?.message || 'Failed to save resource')
+    }
+  }, [formData, showCreateModal, showEditModal, selectedResource, createResource, updateResource, refetch, handleCloseCreateModal, handleCloseEditModal])
 
-  const handleDeleteConfirm = () => {
+  const handleDeleteConfirm = useCallback(async () => {
     if (!selectedResource) return
-    setResources(prev => prev.filter(r => r.id !== selectedResource.id))
-    handleCloseDeleteModal()
-  }
+    
+    try {
+      await deleteResource(selectedResource.id).unwrap()
+      await refetch()
+      handleCloseDeleteModal()
+    } catch (err: any) {
+      setError(err.data?.message || 'Failed to delete resource')
+    }
+  }, [selectedResource, deleteResource, refetch, handleCloseDeleteModal])
 
-  const handleAddFeature = () => {
+  const handleAddFeature = useCallback(() => {
     const features = formData.features || []
     setFormData(prev => ({ ...prev, features: [...features, ''] }))
-  }
+  }, [formData.features])
 
-  const handleRemoveFeature = (index: number) => {
+  const handleRemoveFeature = useCallback((index: number) => {
     const features = formData.features || []
     const newFeatures = [...features]
     newFeatures.splice(index, 1)
     setFormData(prev => ({ ...prev, features: newFeatures }))
-  }
+  }, [formData.features])
 
-  const handleUpdateFeature = (index: number, value: string) => {
+  const handleUpdateFeature = useCallback((index: number, value: string) => {
     const features = formData.features || []
     const newFeatures = [...features]
     newFeatures[index] = value
     setFormData(prev => ({ ...prev, features: newFeatures }))
-  }
+  }, [formData.features])
 
-  const handleAddAllowedGroup = () => {
+  const handleAddAllowedGroup = useCallback(() => {
     const allowedGroups = formData.allowed_groups || []
     setFormData(prev => ({ ...prev, allowed_groups: [...allowedGroups, ''] }))
-  }
+  }, [formData.allowed_groups])
 
-  const handleRemoveAllowedGroup = (index: number) => {
+  const handleRemoveAllowedGroup = useCallback((index: number) => {
     const allowedGroups = formData.allowed_groups || []
     const newGroups = [...allowedGroups]
     newGroups.splice(index, 1)
     setFormData(prev => ({ ...prev, allowed_groups: newGroups }))
-  }
+  }, [formData.allowed_groups])
 
-  const handleUpdateAllowedGroup = (index: number, value: string) => {
+  const handleUpdateAllowedGroup = useCallback((index: number, value: string) => {
     const allowedGroups = formData.allowed_groups || []
     const newGroups = [...allowedGroups]
     newGroups[index] = value
     setFormData(prev => ({ ...prev, allowed_groups: newGroups }))
-  }
+  }, [formData.allowed_groups])
 
   // Render helpers
-  const renderResourceRow = (resource: Resource) => (
+  const renderResourceRow = (resource: AdminResource) => (
     <tr key={resource.id} className="hover:bg-gray-50">
       <td className="px-4 py-3 whitespace-nowrap">
         <div className="font-medium text-gray-900">{resource.name}</div>
@@ -309,6 +318,7 @@ export default function AdminResourceManagementPage() {
             onClick={() => handleDelete(resource)}
             className="text-red-600 hover:text-red-800 p-1 rounded hover:bg-red-50"
             title="Delete"
+            disabled={isDeleting}
           >
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
@@ -492,14 +502,16 @@ export default function AdminResourceManagementPage() {
               <button
                 type="button" onClick={showCreateModal ? handleCloseCreateModal : handleCloseEditModal}
                 className="px-4 py-2 bg-gray-100 text-gray-700 rounded-md hover:bg-gray-200 text-sm font-medium"
+                disabled={isCreating || isUpdating}
               >
                 Cancel
               </button>
               <button
                 type="submit"
-                className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 text-sm font-medium"
+                className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 text-sm font-medium disabled:opacity-50 disabled:cursor-not-allowed"
+                disabled={isCreating || isUpdating}
               >
-                {submitText}
+                {isCreating || isUpdating ? 'Saving...' : submitText}
               </button>
             </div>
           </form>
@@ -536,14 +548,16 @@ export default function AdminResourceManagementPage() {
             <button
               type="button" onClick={handleCloseDeleteModal}
               className="px-4 py-2 bg-gray-100 text-gray-700 rounded-md hover:bg-gray-200 text-sm font-medium"
+              disabled={isDeleting}
             >
               Cancel
             </button>
             <button
               type="button" onClick={handleDeleteConfirm}
-              className="px-4 py-2 bg-red-600 text-white rounded-md hover:bg-red-700 text-sm font-medium"
+              className="px-4 py-2 bg-red-600 text-white rounded-md hover:bg-red-700 text-sm font-medium disabled:opacity-50 disabled:cursor-not-allowed"
+              disabled={isDeleting}
             >
-              Delete
+              {isDeleting ? 'Deleting...' : 'Delete'}
             </button>
           </div>
         </div>
@@ -566,7 +580,8 @@ export default function AdminResourceManagementPage() {
           </div>
           <button
             onClick={handleCreate}
-            className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 text-sm font-medium transition-colors flex items-center gap-2"
+            className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 text-sm font-medium transition-colors flex items-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
+            disabled={isCreating}
           >
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
@@ -574,6 +589,14 @@ export default function AdminResourceManagementPage() {
             Create Resource
           </button>
         </div>
+
+        {/* Error Display */}
+        {error && (
+          <div className="mb-6 p-4 bg-red-50 border border-red-200 rounded-lg text-red-600">
+            {error}
+            <button onClick={() => setError(null)} className="ml-4 text-red-800 hover:text-red-900">×</button>
+          </div>
+        )}
 
         {/* Filters */}
         <div className="bg-white rounded-lg shadow p-6 mb-6">
