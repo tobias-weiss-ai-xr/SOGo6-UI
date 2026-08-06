@@ -29,6 +29,13 @@ jest.mock('@/features/user-profile', () => ({
   })),
 }))
 
+jest.mock('@/features/search/store/global-search-api', () => ({
+  useGlobalSearchQuery: jest.fn(() => ({
+    data: { contacts: [], events: [], users: [] },
+    isFetching: false,
+  })),
+}))
+
 
 jest.mock('@/components/sidebar/app-sidebar', () => ({
   AppSidebar: () => <div data-testid="app-sidebar">App Sidebar</div>,

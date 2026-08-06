@@ -5,11 +5,16 @@
     "navigate": "Quick navigation",
     "results": "Search results",
     "noResults": "No results found.",
+    "searching": "Searching\u2026",
     "goToInbox": "Go to Inbox",
     "goToMail": "Go to Mail",
     "goToContacts": "Go to Contacts",
     "goToCalendar": "Go to Calendar",
     "goToSettings": "Go to Settings",
-    "searchInMail": "Search mail for \"{query}\""
+    "searchInMail": "Search mail for \"{query}\"",
+    "contactsHeading": "Contacts",
+    "calendarHeading": "Calendar events",
+    "usersHeading": "Users",
+    "untitledEvent": "Untitled event"
   }
 }
