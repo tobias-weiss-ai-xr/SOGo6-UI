@@ -316,10 +316,7 @@ const injectedEndpoints = apiSlice.injectEndpoints({
     /**
      * Get all shared mailboxes.
      */
-    listSharedMailboxes: builder.query(
-      { mailboxes: SharedMailbox[]; total_count: number },
-      void
-    )({
+    listSharedMailboxes: builder.query<{ mailboxes: SharedMailbox[]; total_count: number }, void>({
       query: () => ({
         url: '/admin/v1/shared-mailboxes',
         method: 'GET',
