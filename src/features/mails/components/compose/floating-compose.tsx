@@ -64,6 +64,7 @@ export const FloatingCompose: React.FC<FloatingComposeProps> = ({
     jitsiBaseUrl,
     mainAccount,
     externalAccounts,
+    sharedMailboxAccounts,
   } = useProfile()
 
   const accountId = React.useMemo(
@@ -71,9 +72,10 @@ export const FloatingCompose: React.FC<FloatingComposeProps> = ({
       resolveComposeAccountId(
         selectedIdentity?.mail,
         mainAccount,
-        externalAccounts
+        externalAccounts,
+        sharedMailboxAccounts
       ),
-    [selectedIdentity?.mail, mainAccount, externalAccounts]
+    [selectedIdentity?.mail, mainAccount, externalAccounts, sharedMailboxAccounts]
   )
 
   const SOGO_D_MAIL_DRAFT_AUTOSAVE = uiSettings?.SOGO_D_MAIL_DRAFT_AUTOSAVE

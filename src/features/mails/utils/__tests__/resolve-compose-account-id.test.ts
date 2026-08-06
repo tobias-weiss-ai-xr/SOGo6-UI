@@ -70,4 +70,33 @@ describe('resolveComposeAccountId', () => {
       resolveComposeAccountId('unknown@sogo.nu', mainAccount, [])
     ).toBe('0')
   })
+
+  it('returns shared mailbox id when identity matches shared mailbox email', () => {
+    const sharedMailboxAccounts = [
+      { id: 'shared-123', email: 'support@sogo.nu', name: 'Support Team' },
+      { id: 'shared-456', email: 'sales@sogo.nu', name: 'Sales Team' },
+    ] as any
+    expect(
+      resolveComposeAccountId('support@sogo.nu', mainAccount, externalAccounts, sharedMailboxAccounts)
+    ).toBe('shared-123')
+  })
+
+  it('checks shared mailboxes first before checking main account', () => {
+    const sharedMailboxAccounts = [
+      { id: 'shared-123', email: 'main@sogo.nu', name: 'Shared Main' },
+    ] as any
+    // Even though main@sogo.nu is in main account, shared mailbox should take precedence
+    expect(
+      resolveComposeAccountId('main@sogo.nu', mainAccount, externalAccounts, sharedMailboxAccounts)
+    ).toBe('shared-123')
+  })
+
+  it('returns "0" when shared mailbox email does not match', () => {
+    const sharedMailboxAccounts = [
+      { id: 'shared-123', email: 'support@sogo.nu', name: 'Support Team' },
+    ] as any
+    expect(
+      resolveComposeAccountId('unknown@sogo.nu', mainAccount, externalAccounts, sharedMailboxAccounts)
+    ).toBe('0')
+  })
 })
