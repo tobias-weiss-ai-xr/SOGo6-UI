@@ -25,15 +25,32 @@ export function AccountSwitcher() {
   const t = useTranslations('MAILS_COMMONS')
   const { push } = useRouter()
   const { account } = useParams()
-  const { allMailboxes, defaultIdentity, canAddExternalAccount, isLoading } = useProfile()
+  const {
+    allMailboxes,
+    defaultIdentity,
+    canAddExternalAccount,
+    isLoading,
+    sharedMailboxAccounts,
+  } = useProfile()
   const [createFolderOpen, setCreateFolderOpen] = React.useState(false)
 
   // Index courant depuis l'URL (/u/0/INBOX → 0)
   const currentIndex = account ? Number(account) : 0
   const accountId = String(currentIndex)
 
+  // Check if current account is a shared mailbox (id starts with 'shared-')
+  const currentIsShared = account && String(account).startsWith('shared-')
+
   // Email d'affichage d'une mailbox
   const getAccountEmail = (mailboxId: string): string => {
+    // Check if it's a shared mailbox
+    if (mailboxId.startsWith('shared-')) {
+      const sharedMailbox = sharedMailboxAccounts.find((m) => m.id === mailboxId)
+      if (sharedMailbox) {
+        return `${sharedMailbox.name} <${sharedMailbox.email}>`
+      }
+      return ''
+    }
     const mailbox = allMailboxes.find((m) => m.id === mailboxId)
     if (!mailbox) return ''
     if (mailboxId === '0') {
@@ -42,7 +59,13 @@ export function AccountSwitcher() {
     return mailbox.name || mailbox.identities?.[0]?.mail || ''
   }
 
-  const selectedMailbox = allMailboxes[currentIndex] ?? allMailboxes[0]
+  // Find selected mailbox from either regular mailboxes or shared mailboxes
+  let selectedMailbox = null
+  if (currentIsShared) {
+    selectedMailbox = sharedMailboxAccounts.find((m) => m.id === account)
+  } else {
+    selectedMailbox = allMailboxes[currentIndex] ?? allMailboxes[0]
+  }
   const selectedEmail = selectedMailbox ? getAccountEmail(selectedMailbox.id) : ''
 
   if (isLoading) {
@@ -95,11 +118,32 @@ export function AccountSwitcher() {
                   onClick={() => push(`/u/${index}/INBOX`)}
                 >
                   <span className="truncate">{getAccountEmail(mailbox.id)}</span>
-                  {index === currentIndex && (
+                  {!currentIsShared && index === currentIndex && (
                     <Check className="ml-auto h-4 w-4 shrink-0" />
                   )}
                 </DropdownMenuItem>
               ))}
+
+              {sharedMailboxAccounts.length > 0 && (
+                <>
+                  <DropdownMenuSeparator />
+                  <DropdownMenuItem disabled className="text-xs text-muted-foreground">
+                    {t('account_switcher.shared_mailboxes.string')}
+                  </DropdownMenuItem>
+                  {sharedMailboxAccounts.map((mailbox) => (
+                    <DropdownMenuItem
+                      key={mailbox.id}
+                      onClick={() => push(`/u/${mailbox.id}/INBOX`)}
+                    >
+                      <Users className="mr-2 h-4 w-4" />
+                      <span className="truncate">{getAccountEmail(mailbox.id)}</span>
+                      {currentIsShared && account === mailbox.id && (
+                        <Check className="ml-auto h-4 w-4 shrink-0" />
+                      )}
+                    </DropdownMenuItem>
+                  ))}
+                </>
+              )}
 
               <DropdownMenuSeparator />
               <DropdownMenuItem onClick={() => setCreateFolderOpen(true)}>

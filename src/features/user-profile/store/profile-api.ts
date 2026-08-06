@@ -2,6 +2,7 @@ import type {
   ProfileApiResponse,
   ProfileData,
 } from '@/features/user-profile/profile-types'
+import type { SharedMailbox } from '@/features/admin-panel/store/admin-panel-api'
 import { apiSlice, PROFILE_SLICE } from '@/lib/redux/api/api-slice'
 
 /**
@@ -41,6 +42,27 @@ export const profileApi = apiSlice.injectEndpoints({
     }),
 
     /**
+     * GET /user/v1/shared-mailboxes
+     * Fetches shared mailboxes that the current user has access to
+     */
+    getUserSharedMailboxes: builder.query<SharedMailbox[], void>({
+      query: () => ({
+        url: 'user/v1/shared-mailboxes',
+        method: 'GET',
+      }),
+
+      transformResponse: (response: { mailboxes: SharedMailbox[] }): SharedMailbox[] => {
+        return response.mailboxes || []
+      },
+
+      // Tag for cache invalidation
+      providesTags: ['SharedMailboxes'],
+
+      // Cache 5 minutes
+      keepUnusedDataFor: 300,
+    }),
+
+    /**
      * POST /profile/password
      * Changes the authenticated user's password.
      */
@@ -59,4 +81,8 @@ export const profileApi = apiSlice.injectEndpoints({
 })
 
 // Export auto-generated hooks
-export const { useGetUserProfileQuery, useChangePasswordMutation } = profileApi
+export const {
+  useGetUserProfileQuery,
+  useChangePasswordMutation,
+  useGetUserSharedMailboxesQuery,
+} = profileApi

@@ -1,18 +1,29 @@
 import { useAppSelector } from '@/lib/redux/hooks'
-import { useGetUserProfileQuery } from '../store/profile-api'
+import {
+  useGetUserProfileQuery,
+  useGetUserSharedMailboxesQuery,
+} from '../store/profile-api'
 
 /**
  * Custom hook for easy access to profile data
- * Combines data from auth.user (uid, cn, email) with profile API
+ * Combines data from auth.user (uid, cn, email) with profile API and shared mailboxes
  */
 export function useProfile() {
   const {
     data: profile,
-    isLoading,
-    isError,
-    error,
-    refetch,
+    isLoading: profileLoading,
+    isError: profileError,
+    error: profileErr,
+    refetch: refetchProfile,
   } = useGetUserProfileQuery()
+
+  const {
+    data: sharedMailboxes = [],
+    isLoading: sharedLoading,
+    isError: sharedError,
+    error: sharedErr,
+    refetch: refetchShared,
+  } = useGetUserSharedMailboxesQuery()
 
   // Get user info from Redux auth state
   const authUser = useAppSelector((state) => state.auth.user)
@@ -27,13 +38,36 @@ export function useProfile() {
   // Default identity
   const defaultIdentity = mainAccount?.identities.find((id) => id.isDefault)
 
+  // Combine regular mailboxes with shared mailboxes for the account switcher
+  // Shared mailboxes are marked with a special id to distinguish them
+  const sharedMailboxAccounts = sharedMailboxes.map((sm) => ({
+    id: `shared-${sm.id}`,
+    name: sm.name,
+    email: sm.email,
+    description: sm.description,
+    isShared: true,
+    sharedMailbox: sm,
+    identities: [
+      {
+        mail: sm.email,
+        name: sm.name,
+        replyTo: '',
+        isDefault: true,
+        signatures: {},
+      },
+    ],
+    receipts: {},
+    certificates: {},
+  }))
+
   return {
     // Raw data
     profile,
-    isLoading,
-    isError,
-    error,
-    refetch,
+    isLoading: profileLoading || sharedLoading,
+    isError: profileError || sharedError,
+    error: profileErr || sharedErr,
+    refetchProfile,
+    refetchShared,
 
     // User info (combined auth.user + extracted domain)
     user: authUser
@@ -47,6 +81,9 @@ export function useProfile() {
     mainAccount,
     externalAccounts,
     allMailboxes: profile?.mailboxes || [],
+    sharedMailboxes,
+    sharedMailboxAccounts,
+    allaccountsIncludingShared: [...(profile?.mailboxes || []), ...sharedMailboxAccounts],
     defaultIdentity,
 
     // Preferences shortcuts

@@ -296,6 +296,10 @@
             "delegate": {
                 "string": "Delegate",
                 "description": "Label for the delegate action in the account switcher menu (not yet implemented)"
+            },
+            "shared_mailboxes": {
+                "string": "Shared",
+                "description": "Label for the shared mailboxes section in the account switcher"
             }
         },
         "to": {
@@ -330,7 +334,7 @@
                         "description": "Label for the folder name input"
                     },
                     "placeholder": {
-                        "string": "e.g. Work, Archives…",
+                        "string": "e.g. Work, Archives\u2026",
                         "description": "Placeholder for the folder name input"
                     },
                     "submit": {
@@ -609,7 +613,7 @@
                         "description": "Label for the folder name input"
                     },
                     "placeholder": {
-                        "string": "e.g. Work, Archives…",
+                        "string": "e.g. Work, Archives\u2026",
                         "description": "Placeholder for the folder name input"
                     },
                     "submit": {
@@ -659,7 +663,7 @@
                 "description": "Message templates"
             },
             "virtual_folder": {
-                "string": "Virtual folder — expand to browse subfolders",
+                "string": "Virtual folder \u2014 expand to browse subfolders",
                 "description": "Tooltip for non-selectable IMAP folders"
             },
             "virtual_empty": {
@@ -697,7 +701,7 @@
                 "description": "Message when an attendee sends an iMIP REPLY"
             },
             "sync_pending": {
-                "string": "Syncing with your calendar…",
+                "string": "Syncing with your calendar\u2026",
                 "description": "Event not found yet after opening invitation mail"
             },
             "retry": {
