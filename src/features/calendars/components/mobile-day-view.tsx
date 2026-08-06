@@ -3,6 +3,7 @@
 import { Badge } from '@/components/ui/badge'
 import { Card, CardContent } from '@/components/ui/card'
 import { type CalendarEvent } from '@/features/calendars'
+import { ResourceEventIndicator, hasResourceAttendees } from '@/features/resources/components/resource-event-indicator'
 import { getDateFnsLocale } from '@/lib/i18n/date-locales'
 import { cn } from '@/lib/utils'
 import { useDrag } from '@use-gesture/react'
@@ -163,9 +164,14 @@ export function MobileDayView({
 
                               {/* Event content */}
                               <div className="flex-1 space-y-1">
-                                <h3 className="leading-tight font-medium">
-                                  {event.title}
-                                </h3>
+                                <div className="flex items-center gap-2">
+                                  <h3 className="leading-tight font-medium">
+                                    {event.title}
+                                  </h3>
+                                  {hasResourceAttendees(event as unknown as CalendarEvent) && (
+                                    <ResourceEventIndicator event={event as unknown as CalendarEvent} />
+                                  )}
+                                </div>
 
                                 <div className="text-muted-foreground flex items-center gap-1 text-sm">
                                   <Clock className="h-3 w-3" />

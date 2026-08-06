@@ -4,6 +4,7 @@ import {
   DEFAULT_CALENDAR_COLOR,
   type CalendarEvent,
 } from '@/features/calendars'
+import { ResourceEventIndicator, hasResourceAttendees } from '@/features/resources/components/resource-event-indicator'
 import { cn } from '@/lib/utils'
 import { format } from 'date-fns'
 import { useTranslations } from 'next-intl'
@@ -112,8 +113,11 @@ export function AgendaView({
                 )}
               </div>
 
-              {/* Status Indicator */}
-              <div className="flex items-center justify-end">
+              {/* Status and Resource Indicators */}
+              <div className="flex items-center justify-end gap-2">
+                {hasResourceAttendees(event as unknown as CalendarEvent) && (
+                  <ResourceEventIndicator event={event as unknown as CalendarEvent} />
+                )}
                 {event.all_day && (
                   <span className="inline-flex items-center rounded-full bg-blue-50 px-2 py-1 text-xs font-medium text-blue-700">
                     {t('forms.createCalendar.durationOptions.allDay.string')}
