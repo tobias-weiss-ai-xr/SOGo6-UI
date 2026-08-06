@@ -84,6 +84,10 @@ export function useNavItems(): NavItem[] {
                 title: 'US_SIDEBAR.settings.calendars.categories.string',
                 url: '/user_settings/calendars/categories',
               },
+              {
+                title: 'US_SIDEBAR.settings.calendars.caldav.string',
+                url: '/user_settings/calendars/caldav',
+              },
             ],
           },
           {

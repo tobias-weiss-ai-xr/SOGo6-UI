@@ -39,6 +39,10 @@
                 "categories": {
                     "string": "Categories",
                     "context": "Link to the categories calendars settings in the settings sidebar"
+                },
+                "caldav": {
+                    "string": "CalDAV & Sync",
+                    "context": "Link to the CalDAV synchronization settings in the settings sidebar"
                 }
             },
             "email": {

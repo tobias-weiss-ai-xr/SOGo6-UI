@@ -1,0 +1,54 @@
+{
+    "US_CALDAV": {
+        "title": {
+            "string": "CalDAV & Sync",
+            "context": "Title of the CalDAV & Sync settings page"
+        },
+        "description": {
+            "string": "Connect Apple Calendar, Thunderbird, DAVx5 or any CalDAV-compatible client using the URLs below.",
+            "context": "Short description of the CalDAV & Sync settings page"
+        },
+        "serverUrl": {
+            "string": "Server URL",
+            "context": "Label for the CalDAV server base URL"
+        },
+        "calendarHomePath": {
+            "string": "Calendar home",
+            "context": "Label for the user's calendar home set collection path"
+        },
+        "davCapabilities": {
+            "string": "Protocol capabilities",
+            "context": "Label for the DAV capabilities header value"
+        },
+        "supportedComponents": {
+            "string": "Supported components",
+            "context": "Label for the iCalendar component types a new calendar supports"
+        },
+        "calendarsTitle": {
+            "string": "Your calendars",
+            "context": "Heading for the per-calendar sync status list"
+        },
+        "noCalendars": {
+            "string": "No calendars to synchronize yet.",
+            "context": "Empty state when the user has no calendars"
+        },
+        "eventCount": {
+            "string": "Events:",
+            "context": "Label prefix showing how many events a calendar contains"
+        },
+        "discoverable": {
+            "string": "Discoverable",
+            "context": "Heading label for the discoverability section"
+        },
+        "status": {
+            "ready": {
+                "string": "Ready",
+                "context": "Badge shown when a calendar is servable over CalDAV"
+            },
+            "notDiscoverable": {
+                "string": "Not discoverable",
+                "context": "Badge shown when a calendar is not servable over CalDAV"
+            }
+        }
+    }
+}
