@@ -46,6 +46,19 @@ const localizer = dateFnsLocalizer({
 
 const DnDCalendar = withDragAndDrop<CalendarEventWithDate>(ShadcnBigCalendar)
 
+// Add resource count as data attribute to events (module scope: no component state needed)
+const eventWrapper = (props: any) => {
+  const { event } = props
+  const hasResources = hasResourceAttendees(event as unknown as CalendarEvent)
+  const resourceCount = hasResources ? getResourceCount(event as unknown as CalendarEvent) : 0
+
+  if (!hasResources) {
+    return <span {...props} />
+  }
+
+  return <span {...props} data-resource-count={resourceCount} />
+}
+
 const calendarSlotSelectionGuardComponents = {
   week: {
     header: ({ label }: { date: Date; label: string }) => (
@@ -222,19 +235,6 @@ function CalendarView({
       },
       className: hasResources ? 'rbc-event-with-resources' : '',
     }
-  }
-
-  // Add resource count as data attribute to events
-  const eventWrapper = (props: any) => {
-    const { event } = props
-    const hasResources = hasResourceAttendees(event as unknown as CalendarEvent)
-    const resourceCount = hasResources ? getResourceCount(event as unknown as CalendarEvent) : 0
-    
-    if (!hasResources) {
-      return <span {...props} />
-    }
-    
-    return <span {...props} data-resource-count={resourceCount} />
   }
 
   // Mobile view rendering

@@ -7,6 +7,11 @@ jest.mock('next-intl', () => ({
   useTranslations: () => (key: string) => key,
 }))
 
+// Mock next/navigation (useRouter)
+jest.mock('next/navigation', () => ({
+  useRouter: jest.fn(() => ({ push: jest.fn(), replace: jest.fn(), back: jest.fn() })),
+}))
+
 // Mock sonner toast
 jest.mock('sonner', () => ({
   toast: {
@@ -37,7 +42,7 @@ const mockResources = [
 
 jest.mock('@/features/admin-panel/store/admin-panel-api', () => ({
   useGetResourcesQuery: () => ({
-    data: mockResources,
+    data: { data: mockResources },
     isLoading: false,
     isError: false,
     refetch: jest.fn(),
@@ -109,8 +114,8 @@ describe('ResourcesPage', () => {
     const ResourcesPage = (await import('../page')).default
     render(<ResourcesPage />)
 
-    expect(screen.getByText('AP_RESOURCES.title.string')).toBeInTheDocument()
-    expect(screen.getByText('AP_RESOURCES.description.string')).toBeInTheDocument()
+    expect(screen.getByText('Resource Management')).toBeInTheDocument()
+    expect(screen.getByText('Manage meeting rooms, equipment, and vehicles')).toBeInTheDocument()
   })
 
   it('renders resource table with data', async () => {
@@ -118,25 +123,27 @@ describe('ResourcesPage', () => {
     render(<ResourcesPage />)
 
     expect(screen.getByText('Conference Room A')).toBeInTheDocument()
-    expect(screen.getByText('room-a@example.org')).toBeInTheDocument()
+    expect(screen.getByText('Ground floor')).toBeInTheDocument()
     expect(screen.getByText('20')).toBeInTheDocument()
     expect(screen.getByText('Building A')).toBeInTheDocument()
+    expect(screen.getByText('Active')).toBeInTheDocument()
   })
 
   it('renders Add Resource button', async () => {
     const ResourcesPage = (await import('../page')).default
     render(<ResourcesPage />)
 
-    expect(screen.getByText('AP_RESOURCES.create.button.string')).toBeInTheDocument()
+    expect(screen.getByText('Create Resource')).toBeInTheDocument()
   })
 
   it('renders table headers', async () => {
     const ResourcesPage = (await import('../page')).default
     render(<ResourcesPage />)
 
-    expect(screen.getByText('AP_RESOURCES.table.name.string')).toBeInTheDocument()
-    expect(screen.getByText('AP_RESOURCES.table.type.string')).toBeInTheDocument()
-    expect(screen.getByText('AP_RESOURCES.table.policy.string')).toBeInTheDocument()
-    expect(screen.getByText('AP_RESOURCES.table.status.string')).toBeInTheDocument()
+    expect(screen.getByText('Name')).toBeInTheDocument()
+    expect(screen.getAllByText('Type').length).toBeGreaterThan(0)
+    expect(screen.getByText('Location')).toBeInTheDocument()
+    expect(screen.getByText('Capacity')).toBeInTheDocument()
+    expect(screen.getByText('Status')).toBeInTheDocument()
   })
 })

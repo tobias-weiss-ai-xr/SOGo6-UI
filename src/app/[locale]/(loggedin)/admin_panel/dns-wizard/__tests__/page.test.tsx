@@ -103,8 +103,8 @@ describe('DnsWizardPage', () => {
     const DnsWizardPage = (await import('../page')).default
     render(<DnsWizardPage />)
 
-    expect(screen.getByText('AP_DNS_WIZARD.title.string')).toBeInTheDocument()
-    expect(screen.getByText('AP_DNS_WIZARD.description.string')).toBeInTheDocument()
+    expect(screen.getByText('title.string')).toBeInTheDocument()
+    expect(screen.getByText('description.string')).toBeInTheDocument()
   })
 
   it('renders all tab triggers', async () => {
@@ -122,7 +122,7 @@ describe('DnsWizardPage', () => {
     render(<DnsWizardPage />)
 
     expect(screen.getByTestId('tab-content-spf')).toBeInTheDocument()
-    expect(screen.getByPlaceholderText('example.org')).toBeInTheDocument()
+    expect(screen.getAllByPlaceholderText('example.org').length).toBeGreaterThan(0)
   })
 
   it('renders DKIM tab content with form fields', async () => {
@@ -146,7 +146,7 @@ describe('DnsWizardPage', () => {
     render(<DnsWizardPage />)
 
     expect(screen.getByTestId('tab-content-validate')).toBeInTheDocument()
-    expect(screen.getByText('AP_DNS_WIZARD.validate.spf_title.string')).toBeInTheDocument()
-    expect(screen.getByText('AP_DNS_WIZARD.validate.dmarc_title.string')).toBeInTheDocument()
+    expect(screen.getByText('validate.spf_title.string')).toBeInTheDocument()
+    expect(screen.getByText('validate.dmarc_title.string')).toBeInTheDocument()
   })
 })

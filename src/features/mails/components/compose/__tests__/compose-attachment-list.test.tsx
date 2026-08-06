@@ -242,8 +242,8 @@ describe('ComposeAttachmentList', () => {
       await user.click(screen.getByTitle('attachment.download.string'))
 
       expect(consoleErrorSpy).toHaveBeenCalledWith(
-        'Failed to download attachment:',
-        expect.any(Error)
+        '[sogo] Failed to download attachment:',
+        { error: expect.any(Error) }
       )
       consoleErrorSpy.mockRestore()
     })

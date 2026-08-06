@@ -38,6 +38,9 @@ jest.mock('@/features/auth/components/store/auth.api', () => ({
     isError: false,
   }),
   useLazyGetAuthModeQuery: () => [jest.fn()],
+  useWebauthnBeginLoginMutation: () => [jest.fn(), { isLoading: false }],
+  useWebauthnCompleteLoginMutation: () => [jest.fn(), { isLoading: false }],
+  useLoginMutation: () => [jest.fn(), { isLoading: false }],
 }))
 
 describe('LoginForm - Step 1 (Email + Language)', () => {

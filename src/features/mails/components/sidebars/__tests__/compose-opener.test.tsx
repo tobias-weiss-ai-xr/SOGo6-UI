@@ -27,6 +27,16 @@ jest.mock('next-intl', () => ({
   useTranslations: jest.fn(() => (key: string) => key),
 }))
 
+jest.mock('next/navigation', () => ({
+  useParams: jest.fn(() => ({})),
+}))
+
+jest.mock('@/features/user-profile', () => ({
+  useProfile: jest.fn(() => ({
+    sharedMailboxAccounts: [],
+  })),
+}))
+
 jest.mock('sonner', () => ({
   toast: {
     error: jest.fn(),

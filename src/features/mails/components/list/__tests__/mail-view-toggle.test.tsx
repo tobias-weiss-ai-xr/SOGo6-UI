@@ -4,19 +4,35 @@ import { render, screen } from '@testing-library/react'
 import React from 'react'
 import MailViewToggle from '../mail-view-toggle'
 
-const mockPush = jest.fn()
-
-jest.mock('@/features/app-data/store/user-preferences-api', () => ({
-  useGetPreferencesQuery: jest.fn(() => ({ data: { mailDisplayMode: 'modern' } })),
-  useUpdatePreferencesMutation: jest.fn(() => [jest.fn(), { isLoading: false }]),
+jest.mock('next-intl', () => ({
+  useTranslations: jest.fn(() => (key: string) => key),
 }))
 
-jest.mock('next/navigation', () => ({
-  usePathname: jest.fn(() => '/u/account/INBOX'),
-  useRouter: jest.fn(() => ({ push: mockPush })),
-  useSearchParams: jest.fn(() => ({ toString: () => '' })),
-  useParams: jest.fn(() => ({ account: 'account', folder: 'INBOX' })),
-}))
+jest.mock('@/components/ui/toggle-group', () => {
+  const React = require('react')
+  const ToggleGroupContext = React.createContext({ value: null, onValueChange: null })
+  return {
+    ToggleGroup: ({ children, value, onValueChange, ...props }: any) => (
+      <ToggleGroupContext.Provider value={{ value, onValueChange }}>
+        <div data-testid="toggle-group" data-value={value} {...props}>
+          {children}
+        </div>
+      </ToggleGroupContext.Provider>
+    ),
+    ToggleGroupItem: ({ children, value, ...props }: any) => {
+      const ctx = React.useContext(ToggleGroupContext)
+      return (
+        <button
+          type="button"
+          onClick={() => ctx.onValueChange?.(value)}
+          {...props}
+        >
+          {children}
+        </button>
+      )
+    },
+  }
+})
 
 jest.mock('@/components/ui/tooltip', () => ({
   Tooltip: ({ children }: any) => <div>{children}</div>,
@@ -24,55 +40,44 @@ jest.mock('@/components/ui/tooltip', () => ({
   TooltipTrigger: ({ children }: any) => <div>{children}</div>,
 }))
 
-const mockUpdatePreferences = jest.fn()
-
 describe('MailViewToggle', () => {
+  const onChange = jest.fn()
+
   beforeEach(() => {
     jest.clearAllMocks()
-    const { useGetPreferencesQuery, useUpdatePreferencesMutation } = require(
-      '@/features/app-data/store/user-preferences-api'
+  })
+
+  it('renders two toggle buttons (flat + conversation)', () => {
+    render(<MailViewToggle value="flat" onChange={onChange} />)
+    expect(
+      screen.getByRole('button', { name: 'mails.viewFlat' })
+    ).toBeInTheDocument()
+    expect(
+      screen.getByRole('button', { name: 'mails.viewConversation' })
+    ).toBeInTheDocument()
+  })
+
+  it('passes the current value to the toggle group', () => {
+    render(<MailViewToggle value="conversation" onChange={onChange} />)
+    expect(screen.getByTestId('toggle-group')).toHaveAttribute(
+      'data-value',
+      'conversation'
     )
-    useGetPreferencesQuery.mockReturnValue({ data: { mailDisplayMode: 'modern' } })
-    useUpdatePreferencesMutation.mockReturnValue([mockUpdatePreferences, { isLoading: false }])
   })
 
-  describe('basic rendering', () => {
-    it('renders LayoutList icon when modern mode', () => {
-      render(<MailViewToggle />)
-      expect(screen.getByTestId('mail-view-toggle-layout-list')).toBeInTheDocument()
-    })
-
-    it('renders Columns2 icon when classic mode', () => {
-      const { useGetPreferencesQuery } = require('@/features/app-data/store/user-preferences-api')
-      useGetPreferencesQuery.mockReturnValue({ data: { mailDisplayMode: 'classic' } })
-      render(<MailViewToggle />)
-      expect(screen.getByTestId('mail-view-toggle-columns')).toBeInTheDocument()
-    })
-
-    it('renders button with aria-label', () => {
-      render(<MailViewToggle />)
-      expect(screen.getByRole('button', { name: 'Mail view toggle' })).toBeInTheDocument()
-    })
+  it('calls onChange with flat when the flat button is clicked', async () => {
+    const user = userEvent.setup()
+    render(<MailViewToggle value="conversation" onChange={onChange} />)
+    await user.click(screen.getByRole('button', { name: 'mails.viewFlat' }))
+    expect(onChange).toHaveBeenCalledWith('flat')
   })
 
-  describe('integration', () => {
-    it('calls updatePreferences and push when toggled from modern', async () => {
-      const user = userEvent.setup()
-      render(<MailViewToggle />)
-      const button = screen.getByRole('button', { name: 'Mail view toggle' })
-      await user.click(button)
-      expect(mockUpdatePreferences).toHaveBeenCalledWith({ mailDisplayMode: 'classic' })
-      expect(mockPush).toHaveBeenCalled()
-    })
-
-    it('disables button when mutation is loading', () => {
-      const { useUpdatePreferencesMutation } = require(
-        '@/features/app-data/store/user-preferences-api'
-      )
-      useUpdatePreferencesMutation.mockReturnValue([mockUpdatePreferences, { isLoading: true }])
-      render(<MailViewToggle />)
-      const button = screen.getByRole('button', { name: 'Mail view toggle' })
-      expect(button).toBeDisabled()
-    })
+  it('calls onChange with conversation when the conversation button is clicked', async () => {
+    const user = userEvent.setup()
+    render(<MailViewToggle value="flat" onChange={onChange} />)
+    await user.click(
+      screen.getByRole('button', { name: 'mails.viewConversation' })
+    )
+    expect(onChange).toHaveBeenCalledWith('conversation')
   })
 })

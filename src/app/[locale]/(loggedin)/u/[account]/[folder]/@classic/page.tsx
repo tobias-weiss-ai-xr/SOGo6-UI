@@ -11,6 +11,7 @@ import { RootState } from '@/lib/redux/store'
 import { setSelectedMails } from '@/features/mails/store/mail-layout-slice'
 import { useParams, useSearchParams, useRouter } from 'next/navigation'
 import React, { useCallback } from 'react'
+import { useSelector } from 'react-redux'
 import { useAppDispatch, useAppSelector } from '@/lib/redux/hooks'
 
 const Page: React.FC = () => {

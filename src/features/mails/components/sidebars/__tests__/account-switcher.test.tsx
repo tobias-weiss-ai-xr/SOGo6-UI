@@ -55,6 +55,7 @@ const mockProfile = (overrides = {}) => {
         identities: [{ mail: 'jdoe@sogo.nu' }],
       },
     ],
+    sharedMailboxAccounts: [],
     defaultIdentity: { mail: 'jdoe@sogo.nu' },
     canAddExternalAccount: false,
     isLoading: false,
