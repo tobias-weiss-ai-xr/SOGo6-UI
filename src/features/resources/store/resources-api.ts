@@ -1,4 +1,4 @@
-حلةimport { apiSlice } from '@/lib/redux/api/api-slice'
+import { apiSlice } from '@/lib/redux/api/api-slice'
 import type { EndpointBuilder } from '@reduxjs/toolkit/query'
 import type { BaseQueryFn } from '@reduxjs/toolkit/query/react'
 
