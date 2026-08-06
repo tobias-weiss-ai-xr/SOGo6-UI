@@ -1,9 +1,12 @@
 {
   "name": "SOGo 6",
   "short_name": "SOGo",
+  "id": "/",
   "description": "Next-generation groupware — mail, calendar, contacts",
-  "start_url": "/",
+  "start_url": "/en",
+  "scope": "/",
   "display": "standalone",
+  "display_override": ["window-controls-overlay", "standalone"],
   "background_color": "#ffffff",
   "theme_color": "#3B82F6",
   "orientation": "any",
@@ -20,6 +23,26 @@
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Mail",
+      "short_name": "Mail",
+      "url": "/en/u/0/INBOX",
+      "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Calendar",
+      "short_name": "Calendar",
+      "url": "/en/calendars",
+      "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Contacts",
+      "short_name": "Contacts",
+      "url": "/en/address_books",
+      "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }]
     }
   ],
   "screenshots": [],

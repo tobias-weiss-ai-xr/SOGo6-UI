@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   icons: {
     icon: '/images/sogo-compact.svg',
     shortcut: '/images/sogo-compact.svg',
-    apple: '/images/sogo-compact.svg',
+    apple: '/icons/icon-192.png',
   },
   appleWebApp: {
     capable: true,
