@@ -754,6 +754,30 @@
                 "message": {
                     "string": "An error occurred while sending your email. Please try again."
                 }
+            },
+            "undo": {
+                "message": {
+                    "string": "Email sent"
+                },
+                "action": {
+                    "string": "Undo"
+                }
+            },
+            "undo_cancelled": {
+                "title": {
+                    "string": "Send cancelled"
+                },
+                "message": {
+                    "string": "Your email was not sent. You can keep editing the draft."
+                }
+            },
+            "undo_cancel_error": {
+                "title": {
+                    "string": "Could not undo"
+                },
+                "message": {
+                    "string": "The undo window has expired and the email may have been sent."
+                }
             }
         },
         "save_draft": {

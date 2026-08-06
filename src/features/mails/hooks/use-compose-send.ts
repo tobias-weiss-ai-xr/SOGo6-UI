@@ -1,9 +1,14 @@
 'use client'
 
 import { useAppDispatch } from '@/lib/redux/hooks'
+import { useTranslations } from 'next-intl'
 import React from 'react'
+import { toast } from 'sonner'
 import { closeDraft } from '../store'
-import { useSendMailMutation } from '../store/mail-api'
+import {
+  useCancelPendingSendMutation,
+  useSendMailMutation,
+} from '../store/mail-api'
 import {
   buildComposeMailPayload,
   type ComposeMailFields,
@@ -26,8 +31,10 @@ export function useComposeSend({
   body,
   ...mailFields
 }: UseComposeSendOptions) {
+  const t = useTranslations('NOTIFICATIONS')
   const dispatch = useAppDispatch()
   const [sendMail, { isLoading: isSending }] = useSendMailMutation()
+  const [cancelPendingSend] = useCancelPendingSendMutation()
 
   const [showNoRecipientAlert, setShowNoRecipientAlert] = React.useState(false)
   const [emptyContentAlert, setEmptyContentAlert] =
@@ -47,9 +54,31 @@ export function useComposeSend({
       }),
     })
 
-    if (!('error' in result)) {
-      dispatch(closeDraft({ draftId }))
+    if ('error' in result) return
+
+    // Undo Send: the server held the email in a pending state and returned a
+    // pending_key. Keep the compose window open and offer an Undo toast.
+    const sendData = result.data?.data
+    if (sendData?.status === 'pending' && sendData.pending_key) {
+      const pendingKey = sendData.pending_key
+      const remainingMs = sendData.undo_available_until
+        ? Math.max(0, Math.round((sendData.undo_available_until * 1000) - Date.now()))
+        : 10_000
+
+      toast.success(t('mail_send.undo.message.string'), {
+        duration: remainingMs,
+        action: {
+          label: t('mail_send.undo.action.string'),
+          onClick: () => {
+            cancelPendingSend({ accountId, pendingKey })
+          },
+        },
+      })
+      // Do NOT close the draft — the email is still cancellable.
+      return
     }
+
+    dispatch(closeDraft({ draftId }))
   }
 
   const handleSend = async () => {

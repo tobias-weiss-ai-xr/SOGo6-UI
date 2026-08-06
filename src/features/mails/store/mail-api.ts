@@ -8,18 +8,20 @@ import { MAIL_PRIORITY_NORMAL } from '@/features/mails/store/mail-compose-slice'
 import { BaseQueryFn, EndpointBuilder } from '@reduxjs/toolkit/query'
 import type {
   BackendResponse,
+  CancelPendingSendArg,
   CurrentMailItem,
   DeleteAttachmentArg,
   DownloadAttachmentArg,
   GetCurrentMailArg,
   SaveDraftArg,
   SendMailArg,
+  SendMailResult,
   UploadAttachmentArg,
 } from './mail-api-types'
 
 const injectedEndpoints = apiSlice.injectEndpoints({
   endpoints: (builder: EndpointBuilder<BaseQueryFn, string, 'api'>) => ({
-    sendMail: builder.mutation<BackendResponse<void>, SendMailArg>({
+    sendMail: builder.mutation<BackendResponse<SendMailResult>, SendMailArg>({
       query: ({ accountId, mail, mailKey }) => ({
         url:
           mailKey != null
@@ -48,6 +50,26 @@ const injectedEndpoints = apiSlice.injectEndpoints({
         FOLDER_MESSAGES_SLICE,
         MAILS_FOLDERS_SLICE,
       ],
+    }),
+
+    // POST mailboxes/:accountId/mail/pending/:pendingKey/cancel — Undo Send
+    cancelPendingSend: builder.mutation<
+      BackendResponse<{ status: string }>,
+      CancelPendingSendArg
+    >({
+      query: ({ accountId, pendingKey }) => ({
+        url: `mailboxes/${accountId}/mail/pending/${pendingKey}/cancel`,
+        method: 'POST',
+      }),
+      async onQueryStarted(arg, { dispatch, queryFulfilled }) {
+        await createApiNotificationHandler(dispatch, {
+          successTitle: 'mail_send.undo_cancelled.title.string',
+          successMessage: 'mail_send.undo_cancelled.message.string',
+          errorTitle: 'mail_send.undo_cancel_error.title.string',
+          errorMessage: 'mail_send.undo_cancel_error.message.string',
+        })(undefined, { queryFulfilled })
+      },
+      invalidatesTags: () => [FOLDER_MESSAGES_SLICE, MAILS_FOLDERS_SLICE],
     }),
 
     // POST mail/save — create new draft (no key yet)
@@ -172,6 +194,7 @@ const injectedEndpoints = apiSlice.injectEndpoints({
 
 export const {
   useSendMailMutation,
+  useCancelPendingSendMutation,
   useSaveDraftMutation,
   useDeleteMailMutation,
   useUploadAttachmentMutation,
