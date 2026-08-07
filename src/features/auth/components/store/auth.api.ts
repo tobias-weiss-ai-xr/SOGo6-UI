@@ -12,7 +12,11 @@ export interface LoginResponse {
 }
 
 export interface AuthModeResponse {
-  data: { kind: 'plain' | 'sso' | 'ldap'; location: string }
+  data: {
+    kind: 'plain' | 'sso' | 'ldap'
+    location: string
+    discovery_required?: boolean
+  }
   error_code: string
   error_msg: string
 }
@@ -24,7 +28,11 @@ export interface SystemResponse {
 }
 
 export interface WebAuthnBeginResponse {
-  data: { publicKey: PublicKeyCredentialCreationOptions | PublicKeyCredentialRequestOptions }
+  data: {
+    publicKey:
+      | PublicKeyCredentialCreationOptions
+      | PublicKeyCredentialRequestOptions
+  }
   error_code: string
   error_msg: string
 }
