@@ -113,18 +113,31 @@ const BOOKING_DETAIL_SLICE = (id: string) => `${BOOKINGS_SLICE}_${id}`
 const injectedEndpoints = apiSlice.injectEndpoints({
   endpoints: (builder: EndpointBuilder<BaseQueryFn, string, 'api'>) => ({
     // Get list of resources with optional filters
-    getResources: builder.query<{ resources: Resource[]; total_count: number; limit: number; offset: number }, ResourceListQuery | void>({
+    getResources: builder.query<
+      {
+        resources: Resource[]
+        total_count: number
+        limit: number
+        offset: number
+      },
+      ResourceListQuery | void
+    >({
       query: (query: ResourceListQuery | void) => {
         const params = new URLSearchParams()
         if (query) {
-          if (query.resource_type) params.append('resource_type', query.resource_type)
+          if (query.resource_type)
+            params.append('resource_type', query.resource_type)
           if (query.location) params.append('location', query.location)
-          if (query.capacity_min !== undefined) params.append('capacity_min', String(query.capacity_min))
-          if (query.capacity_max !== undefined) params.append('capacity_max', String(query.capacity_max))
+          if (query.capacity_min !== undefined)
+            params.append('capacity_min', String(query.capacity_min))
+          if (query.capacity_max !== undefined)
+            params.append('capacity_max', String(query.capacity_max))
           if (query.search) params.append('search', query.search)
           if (query.feature) params.append('feature', query.feature)
-          if (query.limit !== undefined) params.append('limit', String(query.limit))
-          if (query.offset !== undefined) params.append('offset', String(query.offset))
+          if (query.limit !== undefined)
+            params.append('limit', String(query.limit))
+          if (query.offset !== undefined)
+            params.append('offset', String(query.offset))
         }
         return {
           url: '/user/v1/resources',
@@ -134,12 +147,19 @@ const injectedEndpoints = apiSlice.injectEndpoints({
       },
       providesTags: [RESOURCES_SLICE],
       transformResponse: (response: Record<string, unknown>) => {
-        return (response?.data as { resources: Resource[]; total_count: number; limit: number; offset: number }) ?? {
-          resources: [],
-          total_count: 0,
-          limit: 50,
-          offset: 0,
-        }
+        return (
+          (response?.data as {
+            resources: Resource[]
+            total_count: number
+            limit: number
+            offset: number
+          }) ?? {
+            resources: [],
+            total_count: 0,
+            limit: 50,
+            offset: 0,
+          }
+        )
       },
     }),
 
@@ -149,14 +169,25 @@ const injectedEndpoints = apiSlice.injectEndpoints({
         url: `/user/v1/resources/${resourceId}`,
         method: 'GET',
       }),
-      providesTags: (result, error, id) => [RESOURCES_SLICE, RESOURCE_DETAIL_SLICE(id)],
+      providesTags: (result, error, id) => [
+        RESOURCES_SLICE,
+        RESOURCE_DETAIL_SLICE(id),
+      ],
       transformResponse: (response: Record<string, unknown>) => {
         return (response?.data as Resource) ?? null
       },
     }),
 
     // Get resources available during a time range
-    getAvailableResources: builder.query<{ resources: ResourceWithAvailability[]; total_count: number; start_time: string; end_time: string }, TimeRange>({
+    getAvailableResources: builder.query<
+      {
+        resources: ResourceWithAvailability[]
+        total_count: number
+        start_time: string
+        end_time: string
+      },
+      TimeRange
+    >({
       query: (timeRange: TimeRange) => {
         const params = new URLSearchParams()
         params.append('start_time', timeRange.start_time)
@@ -170,37 +201,67 @@ const injectedEndpoints = apiSlice.injectEndpoints({
       },
       providesTags: [RESOURCES_SLICE],
       transformResponse: (response: Record<string, unknown>) => {
-        return (response?.data as { resources: ResourceWithAvailability[]; total_count: number; start_time: string; end_time: string }) ?? {
-          resources: [],
-          total_count: 0,
-          start_time: timeRange.start_time,
-          end_time: timeRange.end_time,
-        }
+        return (
+          (response?.data as {
+            resources: ResourceWithAvailability[]
+            total_count: number
+            start_time: string
+            end_time: string
+          }) ?? {
+            resources: [],
+            total_count: 0,
+            start_time: timeRange.start_time,
+            end_time: timeRange.end_time,
+          }
+        )
       },
     }),
 
     // Check availability of a specific resource
-    checkResourceAvailability: builder.mutation<AvailabilityCheckResponse, { resourceId: string } & AvailabilityCheckRequest>({
-      query: ({ resourceId, ...body }: { resourceId: string } & AvailabilityCheckRequest) => ({
+    checkResourceAvailability: builder.mutation<
+      AvailabilityCheckResponse,
+      { resourceId: string } & AvailabilityCheckRequest
+    >({
+      query: ({
+        resourceId,
+        ...body
+      }: { resourceId: string } & AvailabilityCheckRequest) => ({
         url: `/user/v1/resources/${resourceId}/check-availability`,
         method: 'POST',
         body,
       }),
       transformResponse: (response: Record<string, unknown>) => {
-        return (response?.data as AvailabilityCheckResponse) ?? { available: false, resource_id: resourceId, conflicts: [] }
+        return (
+          (response?.data as AvailabilityCheckResponse) ?? {
+            available: false,
+            resource_id: resourceId,
+            conflicts: [],
+          }
+        )
       },
     }),
 
     // Book a resource (creates calendar event)
-    bookResource: builder.mutation<BookingCreateResponse, { resourceId: string } & BookResourceRequest>({
-      query: ({ resourceId, ...body }: { resourceId: string } & BookResourceRequest) => ({
+    bookResource: builder.mutation<
+      BookingCreateResponse,
+      { resourceId: string } & BookResourceRequest
+    >({
+      query: ({
+        resourceId,
+        ...body
+      }: { resourceId: string } & BookResourceRequest) => ({
         url: `/user/v1/resources/${resourceId}/book`,
         method: 'POST',
         body,
       }),
       invalidatesTags: [RESOURCES_SLICE, BOOKINGS_SLICE],
       transformResponse: (response: Record<string, unknown>) => {
-        return (response?.data as BookingCreateResponse) ?? { booking_id: '', message: 'Booking created' }
+        return (
+          (response?.data as BookingCreateResponse) ?? {
+            booking_id: '',
+            message: 'Booking created',
+          }
+        )
       },
     }),
 
@@ -212,7 +273,12 @@ const injectedEndpoints = apiSlice.injectEndpoints({
       }),
       providesTags: [BOOKINGS_SLICE],
       transformResponse: (response: Record<string, unknown>) => {
-        return (response?.data as BookingListResponse) ?? { bookings: [], total_count: 0 }
+        return (
+          (response?.data as BookingListResponse) ?? {
+            bookings: [],
+            total_count: 0,
+          }
+        )
       },
     }),
 
@@ -222,21 +288,98 @@ const injectedEndpoints = apiSlice.injectEndpoints({
         url: `/user/v1/resources/my-bookings/${bookingId}`,
         method: 'GET',
       }),
-      providesTags: (result, error, id) => [BOOKINGS_SLICE, BOOKING_DETAIL_SLICE(id)],
+      providesTags: (result, error, id) => [
+        BOOKINGS_SLICE,
+        BOOKING_DETAIL_SLICE(id),
+      ],
       transformResponse: (response: Record<string, unknown>) => {
         return (response?.data as Booking) ?? null
       },
     }),
 
     // Cancel a booking
-    cancelBooking: builder.mutation<{ message: string; booking_id: string }, string>({
+    cancelBooking: builder.mutation<
+      { message: string; booking_id: string },
+      string
+    >({
       query: (bookingId: string) => ({
         url: `/user/v1/resources/my-bookings/${bookingId}`,
         method: 'DELETE',
       }),
       invalidatesTags: [BOOKINGS_SLICE],
       transformResponse: (response: Record<string, unknown>) => {
-        return (response?.data as { message: string; booking_id: string }) ?? { message: 'Booking cancelled', booking_id: bookingId }
+        return (
+          (response?.data as { message: string; booking_id: string }) ?? {
+            message: 'Booking cancelled',
+            booking_id: bookingId,
+          }
+        )
+      },
+    }),
+
+    // Get user's favorite resources
+    getFavoriteResources: builder.query<
+      { resources: Resource[]; total_count: number },
+      void
+    >({
+      query: () => ({
+        url: '/user/v1/resources/favorites',
+        method: 'GET',
+      }),
+      providesTags: [RESOURCES_SLICE],
+      transformResponse: (response: Record<string, unknown>) => {
+        return (
+          (response?.data as {
+            resources: Resource[]
+            total_count: number
+          }) ?? { resources: [], total_count: 0 }
+        )
+      },
+    }),
+
+    // Add a resource to favorites
+    addFavoriteResource: builder.mutation<
+      { resource_id: string; is_favorite: boolean },
+      string
+    >({
+      query: (resourceId: string) => ({
+        url: `/user/v1/resources/${resourceId}/favorite`,
+        method: 'POST',
+      }),
+      invalidatesTags: (result, error, resourceId) => [
+        RESOURCES_SLICE,
+        RESOURCE_DETAIL_SLICE(resourceId),
+      ],
+      transformResponse: (response: Record<string, unknown>) => {
+        return (
+          (response?.data as { resource_id: string; is_favorite: boolean }) ?? {
+            resource_id: '',
+            is_favorite: true,
+          }
+        )
+      },
+    }),
+
+    // Remove a resource from favorites
+    removeFavoriteResource: builder.mutation<
+      { resource_id: string; is_favorite: boolean },
+      string
+    >({
+      query: (resourceId: string) => ({
+        url: `/user/v1/resources/${resourceId}/favorite`,
+        method: 'DELETE',
+      }),
+      invalidatesTags: (result, error, resourceId) => [
+        RESOURCES_SLICE,
+        RESOURCE_DETAIL_SLICE(resourceId),
+      ],
+      transformResponse: (response: Record<string, unknown>) => {
+        return (
+          (response?.data as { resource_id: string; is_favorite: boolean }) ?? {
+            resource_id: '',
+            is_favorite: false,
+          }
+        )
       },
     }),
   }),
@@ -252,10 +395,10 @@ export const {
   useGetMyBookingsQuery,
   useGetMyBookingQuery,
   useCancelBookingMutation,
+  useGetFavoriteResourcesQuery,
+  useAddFavoriteResourceMutation,
+  useRemoveFavoriteResourceMutation,
 } = injectedEndpoints
 
 // Export lazy-loaded hooks for code splitting (optional)
-export const {
-  endpoints,
-  select,
-} = injectedEndpoints
+export const { endpoints, select } = injectedEndpoints

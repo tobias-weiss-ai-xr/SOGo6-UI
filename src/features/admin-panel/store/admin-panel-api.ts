@@ -399,6 +399,66 @@ const injectedEndpoints = apiSlice.injectEndpoints({
     }),
 
     /**
+     * Search shared mailboxes by name, email or description.
+     */
+    searchSharedMailboxes: builder.query<
+      { mailboxes: SharedMailbox[]; total_count: number },
+      string
+    >({
+      query: (q) => ({
+        url: '/admin/v1/shared-mailboxes/search',
+        method: 'GET',
+        params: { q },
+      }),
+      transformResponse: (response: Record<string, any>) =>
+        response?.data ?? { mailboxes: [], total_count: 0 },
+      providesTags: ['SharedMailboxes'],
+    }),
+
+    /**
+     * Export all shared mailboxes as portable configuration.
+     */
+    exportSharedMailboxes: builder.query<
+      { mailboxes: Array<Record<string, any>>; total_count: number },
+      void
+    >({
+      query: () => ({
+        url: '/admin/v1/shared-mailboxes/export',
+        method: 'GET',
+      }),
+      transformResponse: (response: Record<string, any>) =>
+        response?.data ?? { mailboxes: [], total_count: 0 },
+    }),
+
+    /**
+     * Import shared mailbox configurations (idempotent).
+     */
+    importSharedMailboxes: builder.mutation<
+      { imported: number; results: Array<Record<string, any>> },
+      { mailboxes: Array<Record<string, any>>; dry_run?: boolean }
+    >({
+      query: (body) => ({
+        url: '/admin/v1/shared-mailboxes/import',
+        method: 'POST',
+        body,
+      }),
+      transformResponse: (response: Record<string, any>) =>
+        response?.data ?? { imported: 0, results: [] },
+      invalidatesTags: ['SharedMailboxes'],
+    }),
+
+    /**
+     * Export shared mailbox analytics as CSV.
+     */
+    exportSharedMailboxAnalyticsCsv: builder.mutation<Blob, string>({
+      query: (mailboxId) => ({
+        url: `/admin/v1/shared-mailboxes/${mailboxId}/analytics/export`,
+        method: 'GET',
+        responseHandler: (response) => response.blob(),
+      }),
+    }),
+
+    /**
      * Get a shared mailbox by ID.
      */
     getSharedMailbox: builder.query<SharedMailbox, string>({
@@ -2170,6 +2230,10 @@ export const {
   useDeleteUserMutation,
   // Shared Mailboxes
   useListSharedMailboxesQuery,
+  useSearchSharedMailboxesQuery,
+  useExportSharedMailboxesQuery,
+  useImportSharedMailboxesMutation,
+  useExportSharedMailboxAnalyticsCsvMutation,
   useGetSharedMailboxQuery,
   useCreateSharedMailboxMutation,
   useUpdateSharedMailboxMutation,

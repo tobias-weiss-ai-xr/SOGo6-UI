@@ -46,8 +46,10 @@ import {
   useDeleteSharedMailboxAssignmentMutation,
   useDeleteSharedMailboxMutation,
   useDeleteSharedMailboxNoteMutation,
+  useExportSharedMailboxAnalyticsCsvMutation,
   useGetSharedMailboxAnalyticsQuery,
   useGetSharedMailboxMembersQuery,
+  useImportSharedMailboxesMutation,
   useListSharedMailboxAssignmentsQuery,
   useListSharedMailboxesQuery,
   useListSharedMailboxNotesQuery,
@@ -63,6 +65,7 @@ import {
   BarChart3,
   CheckCircle2,
   ClipboardList,
+  Download,
   Loader2,
   Mail,
   MoreHorizontal,
@@ -71,6 +74,7 @@ import {
   Search,
   StickyNote,
   Trash2,
+  Upload,
   UserMinus,
   UserPlus,
   Users,
@@ -132,6 +136,9 @@ export default function SharedMailboxesPage(): ReactNode {
     useCreateSharedMailboxAssignmentMutation()
   const [updateAssignment] = useUpdateSharedMailboxAssignmentMutation()
   const [deleteAssignment] = useDeleteSharedMailboxAssignmentMutation()
+  const [importMailboxes, { isLoading: isImporting }] =
+    useImportSharedMailboxesMutation()
+  const [exportAnalyticsCsv] = useExportSharedMailboxAnalyticsCsvMutation()
 
   // User Queries (for member selection)
   const { data: usersData } = useListUsersQuery()
@@ -499,6 +506,72 @@ export default function SharedMailboxesPage(): ReactNode {
     setShowDetailsDialog(true)
   }
 
+  const handleExportAll = async () => {
+    try {
+      const response = await fetch('/admin/v1/shared-mailboxes/export', {
+        method: 'GET',
+        headers: { 'Content-Type': 'application/json' },
+      })
+      const json = await response.json()
+      const data = json?.data ?? { mailboxes: [] }
+      const blob = new Blob([JSON.stringify(data, null, 2)], {
+        type: 'application/json',
+      })
+      const url = URL.createObjectURL(blob)
+      const a = document.createElement('a')
+      a.href = url
+      a.download = 'shared-mailboxes-export.json'
+      a.click()
+      URL.revokeObjectURL(url)
+      toast.success(`Exported ${data.mailboxes?.length ?? 0} shared mailboxes`)
+    } catch (error: any) {
+      toast.error(error.message || 'Failed to export shared mailboxes')
+    }
+  }
+
+  const handleImportFile = async (
+    event: React.ChangeEvent<HTMLInputElement>
+  ) => {
+    const file = event.target.files?.[0]
+    event.target.value = ''
+    if (!file) return
+    try {
+      const text = await file.text()
+      const parsed = JSON.parse(text)
+      const mailboxes = Array.isArray(parsed)
+        ? parsed
+        : (parsed.mailboxes ?? [])
+      if (!Array.isArray(mailboxes) || mailboxes.length === 0) {
+        toast.error('No mailboxes found in import file')
+        return
+      }
+      const result = await importMailboxes({ mailboxes }).unwrap()
+      toast.success(`Imported ${result.imported} shared mailboxes`)
+      refetchMailboxes()
+    } catch (error: any) {
+      toast.error(
+        error.data?.error_msg ||
+          error.message ||
+          'Failed to import shared mailboxes'
+      )
+    }
+  }
+
+  const handleExportAnalyticsCsv = async () => {
+    if (!selectedMailbox) return
+    try {
+      const blob = await exportAnalyticsCsv(selectedMailbox.id).unwrap()
+      const url = URL.createObjectURL(blob)
+      const a = document.createElement('a')
+      a.href = url
+      a.download = `shared-mailbox-${selectedMailbox.id}-analytics.csv`
+      a.click()
+      URL.revokeObjectURL(url)
+    } catch (error: any) {
+      toast.error(error.message || 'Failed to export analytics CSV')
+    }
+  }
+
   const resetForm = () => {
     setFormEmail('')
     setFormName('')
@@ -696,14 +769,42 @@ export default function SharedMailboxesPage(): ReactNode {
           <h1 className="text-2xl font-bold">{t('title')}</h1>
           <p className="text-muted-foreground">{t('description')}</p>
         </div>
-        <Button
-          onClick={() => {
-            setShowCreateDialog(true)
-            resetForm()
-          }}
-        >
-          <Plus className="mr-2 h-4 w-4" /> {t('createMailbox')}
-        </Button>
+        <div className="flex items-center gap-2">
+          <Button
+            variant="outline"
+            onClick={handleExportAll}
+            title="Export all shared mailboxes as JSON"
+          >
+            <Download className="mr-2 h-4 w-4" /> Export
+          </Button>
+          <label>
+            <input
+              type="file"
+              accept=".json,application/json"
+              className="hidden"
+              onChange={handleImportFile}
+              disabled={isImporting}
+            />
+            <Button variant="outline" asChild disabled={isImporting}>
+              <span>
+                {isImporting ? (
+                  <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                ) : (
+                  <Upload className="mr-2 h-4 w-4" />
+                )}
+                Import
+              </span>
+            </Button>
+          </label>
+          <Button
+            onClick={() => {
+              setShowCreateDialog(true)
+              resetForm()
+            }}
+          >
+            <Plus className="mr-2 h-4 w-4" /> {t('createMailbox')}
+          </Button>
+        </div>
       </div>
 
       {/* Search */}
@@ -1241,6 +1342,15 @@ export default function SharedMailboxesPage(): ReactNode {
 
             {/* Analytics */}
             <TabsContent value="analytics" className="space-y-4">
+              <div className="flex justify-end">
+                <Button
+                  variant="outline"
+                  size="sm"
+                  onClick={handleExportAnalyticsCsv}
+                >
+                  <Download className="mr-1 h-4 w-4" /> Export CSV
+                </Button>
+              </div>
               {!analytics ? (
                 <Skeleton className="h-40 w-full" />
               ) : (
