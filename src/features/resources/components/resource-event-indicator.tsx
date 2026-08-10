@@ -76,7 +76,7 @@ const resourceTypeLabelMap: Record<'room' | 'equipment' | 'vehicle', string> = {
  * 
  * Displays a small badge indicator when an event has resource attendees
  */
-export default function ResourceEventIndicator({ 
+export function ResourceEventIndicator({ 
   event, 
   className 
 }: ResourceEventIndicatorProps) {
@@ -131,3 +131,5 @@ export function useEventResources(event: CalendarEvent) {
     types: getResourceTypes(event),
   }
 }
+
+export default ResourceEventIndicator
