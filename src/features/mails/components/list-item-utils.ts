@@ -1,43 +1,61 @@
+/**
+ * Utility functions for mail list item rendering.
+ */
+
+/**
+ * Format a date string into a human-friendly relative/absolute representation.
+ *
+ * - < 1 hour ago today → "Xm"
+ * - Today → "HH:MM AM/PM"
+ * - This week → Weekday name (e.g. "Monday")
+ * - This year → "MMM D" (e.g. "Jan 8")
+ * - Previous year → "MMM D, YYYY" (e.g. "Jan 8, 2024")
+ */
 export function formatDate(
-  dateString: string,
-  forceLocale?: string,
-  tMinutesAgo?: (count: number) => string
+  isoString: string,
+  locale: string = 'en-US',
 ): string {
-  const date = new Date(dateString)
+  const date = new Date(isoString)
   const now = new Date()
+
+  const startOfToday = new Date(now.getFullYear(), now.getMonth(), now.getDate())
   const diffMs = now.getTime() - date.getTime()
-  const diffMinutes = Math.floor(diffMs / (1000 * 60))
-  const diffHours = Math.floor(diffMs / (1000 * 60 * 60))
+  const diffMinutes = Math.floor(diffMs / 60000)
 
-  const isToday =
-    date.getDate() === now.getDate() &&
-    date.getMonth() === now.getMonth() &&
-    date.getFullYear() === now.getFullYear()
+  // Less than 1 hour ago today
+  if (date >= startOfToday && diffMinutes < 60 && diffMinutes >= 0) {
+    return `${diffMinutes}m`
+  }
 
-  const startOfWeek = new Date(now)
-  startOfWeek.setDate(now.getDate() - now.getDay())
-  startOfWeek.setHours(0, 0, 0, 0)
-  const isCurrentWeek = date >= startOfWeek && date < now && !isToday
-
-  if (diffHours < 1 && isToday) {
-    return tMinutesAgo ? tMinutesAgo(diffMinutes) : `${diffMinutes}m`
-  } else if (isToday) {
-    return date.toLocaleTimeString(forceLocale || [], {
+  // Today → time format
+  if (date >= startOfToday) {
+    return date.toLocaleTimeString(locale, {
       hour: 'numeric',
       minute: '2-digit',
     })
-  } else if (isCurrentWeek) {
-    return date.toLocaleDateString(forceLocale || [], { weekday: 'long' }) // e.g., "Monday"
-  } else if (date.getFullYear() < now.getFullYear()) {
-    return date.toLocaleDateString(forceLocale || [], {
-      month: 'short',
-      day: 'numeric',
-      year: 'numeric',
-    })
-  } else {
-    return date.toLocaleDateString(forceLocale || [], {
+  }
+
+  // This week (Mon–Sun of current week)
+  const startOfWeek = new Date(startOfToday)
+  const dayOfWeek = now.getDay() === 0 ? 6 : now.getDay() - 1 // Monday = 0
+  startOfWeek.setDate(startOfWeek.getDate() - dayOfWeek)
+
+  if (date >= startOfWeek) {
+    return date.toLocaleDateString(locale, { weekday: 'long' })
+  }
+
+  // This year → "MMM D"
+  if (date.getFullYear() === now.getFullYear()) {
+    return date.toLocaleDateString(locale, {
       month: 'short',
       day: 'numeric',
     })
   }
+
+  // Previous year → "MMM D, YYYY"
+  return date.toLocaleDateString(locale, {
+    month: 'short',
+    day: 'numeric',
+    year: 'numeric',
+  })
 }

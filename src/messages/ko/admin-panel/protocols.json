@@ -1,0 +1,10 @@
+{
+  "PROTOCOLS": {
+    "title": {
+      "string": "이메일 프로토콜 상태"
+    },
+    "description": {
+      "string": "JMAP 및 ActiveSync 프로토콜 서버 상태 및 기능"
+    }
+  }
+}

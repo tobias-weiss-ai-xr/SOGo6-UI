@@ -1,0 +1,44 @@
+{
+  "AP_AUDIT": {
+    "title": {
+      "string": "Dziennik audytu"
+    },
+    "description": {
+      "string": "Niezmienialny dziennik działań administratorów i użytkowników. Wpisy są dołączane i nie mogą zostać zmodyfikowane ani usunięte."
+    },
+    "table": {
+      "timestamp": {
+        "string": "Data i godzina"
+      },
+      "action": {
+        "string": "Akcja"
+      },
+      "actor": {
+        "string": "Wykonawca"
+      },
+      "target": {
+        "string": "Cel"
+      },
+      "detail": {
+        "string": "Szczegóły"
+      },
+      "ip": {
+        "string": "Adres IP"
+      },
+      "no_entries": {
+        "string": "Nie znaleziono wpisów w dzienniku audytu."
+      }
+    },
+    "count_one": {
+      "string": "wpis"
+    },
+    "count_many": {
+      "string": "wpisy"
+    },
+    "errors": {
+      "load_failed": {
+        "string": "Nie udało się załadować dziennika audytu"
+      }
+    }
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "HIPAA": {
+    "title": {
+      "string": "HIPAA-Konformitätsmodus"
+    },
+    "description": {
+      "string": "Gesundheitskonforme Konformität mit PHI-Erkennung, Verschlüsselung und Überwachungsprotokollen"
+    },
+    "errors": {
+      "fail": {
+        "string": "Vorgang fehlgeschlagen"
+      },
+      "email": {
+        "string": "E-Mail erforderlich"
+      }
+    },
+    "config": {
+      "title": {
+        "string": "Konformitätseinstellungen"
+      },
+      "enabled": {
+        "string": "HIPAA-Modus"
+      },
+      "encryption": {
+        "string": "Verschlüsselung"
+      },
+      "audit": {
+        "string": "Überwachungsprotokoll"
+      },
+      "phi_detection": {
+        "string": "PHI-Erkennung"
+      },
+      "require_reason": {
+        "string": "Zugriffsgrund erforderlich"
+      },
+      "retention": {
+        "string": "Aufbewahrung"
+      }
+    },
+    "detect": {
+      "title": {
+        "string": "PHI-Scanner"
+      },
+      "placeholder": {
+        "string": "E-Mail- oder Dokumenttext zum Scannen einfügen..."
+      },
+      "button": {
+        "string": "PHI scannen"
+      },
+      "risk": {
+        "string": "Risikostufe"
+      }
+    },
+    "audit": {
+      "title": {
+        "string": "Zugriffsüberwachung"
+      },
+      "log": {
+        "string": "Zugriff protokollieren"
+      },
+      "accessor": {
+        "string": "Zugreifer"
+      },
+      "action": {
+        "string": "Aktion"
+      },
+      "time": {
+        "string": "Zeit"
+      }
+    },
+    "success": {
+      "log": {
+        "string": "Zugriff protokolliert"
+      }
+    },
+    "label": {
+      "days": {
+        "string": "Tage"
+      }
+    }
+  }
+}

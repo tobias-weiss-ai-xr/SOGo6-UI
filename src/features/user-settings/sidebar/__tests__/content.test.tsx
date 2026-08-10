@@ -173,7 +173,7 @@ describe('useNavItems', () => {
     it('has exactly 4 top-level items', () => {
       mockProfile()
       const { result } = renderHook(() => useNavItems())
-      expect(result.current[1].items).toHaveLength(4)
+      expect(result.current[1].items).toHaveLength(5)
     })
 
     it('first item is General with correct url', () => {
@@ -241,10 +241,10 @@ describe('useNavItems', () => {
       expect(result.current[1].items?.[2].isActive).toBe(true)
     })
 
-    it('has exactly 2 sub-items', () => {
+    it('has exactly 3 sub-items', () => {
       mockProfile()
       const { result } = renderHook(() => useNavItems())
-      expect(result.current[1].items?.[2].items).toHaveLength(2)
+      expect(result.current[1].items?.[2].items).toHaveLength(3)
     })
 
     it('first sub-item is Calendars General with correct url', () => {
@@ -263,6 +263,14 @@ describe('useNavItems', () => {
         'US_SIDEBAR.settings.calendars.categories.string'
       )
       expect(item?.url).toBe('/user_settings/calendars/categories')
+    })
+
+    it('third sub-item is CalDAV & Sync with correct url', () => {
+      mockProfile()
+      const { result } = renderHook(() => useNavItems())
+      const item = result.current[1].items?.[2].items?.[2]
+      expect(item?.title).toBe('US_SIDEBAR.settings.calendars.caldav.string')
+      expect(item?.url).toBe('/user_settings/calendars/caldav')
     })
   })
 

@@ -1,0 +1,48 @@
+{
+    "COMMONS": {
+        "close": {
+            "string": "Închide"
+        },
+        "workInProgress": {
+            "description": {
+                "string": "Această funcționalitate este în curs de dezvoltare."
+            },
+            "message": {
+                "string": "Lucrăm din greu pentru a vă aduce această funcționalitate."
+            },
+            "comingSoon": {
+                "string": "În curând! Rămâneți conectat."
+            }
+        }
+    },
+    "COMMON": {
+        "demo": {
+            "warning": {
+                "title": {
+                    "string": "Versiune demo"
+                },
+                "description": {
+                    "string": "Utilizați în prezent o versiune demo a aplicației. Unele funcționalități pot fi limitate."
+                },
+                "action": {
+                    "string": "Am înțeles"
+                }
+            }
+        },
+        "language": {
+            "english": "English",
+            "french": "Français"
+        },
+        "serviceUnavailable": {
+            "title": {
+                "string": "Serviciu indisponibil"
+            },
+            "description": {
+                "string": "Aplicația nu s-a putut conecta la server. Încercați din nou mai târziu sau contactați administratorul."
+            },
+            "retry": {
+                "string": "Reîncearcă"
+            }
+        }
+    }
+}

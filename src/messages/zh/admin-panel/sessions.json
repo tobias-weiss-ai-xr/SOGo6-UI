@@ -1,0 +1,76 @@
+{
+  "AP_SESSIONS": {
+    "title": {
+      "string": "活跃会话"
+    },
+    "description": {
+      "string": "查看和管理活跃用户会话"
+    },
+    "table": {
+      "uid": {
+        "string": "用户"
+      },
+      "domain": {
+        "string": "域"
+      },
+      "last_activity": {
+        "string": "最后活动时间"
+      },
+      "actions": {
+        "string": "操作"
+      },
+      "no_sessions": {
+        "string": "未找到活跃会话"
+      },
+      "loading": {
+        "string": "正在加载会话..."
+      }
+    },
+    "revoke": {
+      "button": {
+        "string": "撤销"
+      },
+      "confirm": {
+        "string": "确定要撤销此会话吗？"
+      },
+      "confirm_multiple": {
+        "string": "确定要撤销所选会话吗？"
+      },
+      "revoke_selected": {
+        "string": "撤销选中项"
+      },
+      "revoke_selected_one": {
+        "string": "撤销选中项 ({count})"
+      },
+      "success": {
+        "string": "会话已成功撤销"
+      },
+      "success_multiple": {
+        "string": "已成功撤销 {count} 个会话"
+      },
+      "error": {
+        "string": "撤销会话失败"
+      }
+    },
+    "revoke_inactive": {
+      "button": {
+        "string": "撤销非活跃会话"
+      },
+      "confirm": {
+        "string": "确定要撤销所有非活跃会话吗？"
+      },
+      "days": {
+        "string": "非活跃天数"
+      },
+      "days_placeholder": {
+        "string": "例如：30"
+      },
+      "success": {
+        "string": "已成功撤销非活跃会话"
+      }
+    },
+    "refresh": {
+      "string": "刷新"
+    }
+  }
+}

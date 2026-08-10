@@ -1,0 +1,108 @@
+{
+  "ADDRESS_BOOKS_ERRORS": {
+    "list_member_invalid": {
+      "string": "Một hoặc nhiều thành viên được chọn không phải là liên hệ trong sổ địa chỉ này.",
+      "context": "Inline error when a distribution list member is invalid."
+    },
+    "addressbook_not_found": {
+      "string": "Không tìm thấy sổ địa chỉ.",
+      "context": "Error when an address book is missing."
+    },
+    "addressbook_duplicate": {
+      "string": "Đã tồn tại một sổ địa chỉ có tên này.",
+      "context": "Toast when address book creation conflicts."
+    },
+    "contact_not_found": {
+      "string": "Không tìm thấy liên hệ.",
+      "context": "Error when a contact is missing."
+    },
+    "contact_duplicate": {
+      "string": "Đã tồn tại một liên hệ có định danh này.",
+      "context": "Toast when contact creation conflicts."
+    },
+    "contact_persist_failed": {
+      "string": "Không thể lưu liên hệ.",
+      "context": "Error when contact creation fails on the server."
+    },
+    "contact_update_failed": {
+      "string": "Không thể cập nhật liên hệ.",
+      "context": "Error when contact update fails on the server."
+    },
+    "operation_not_supported": {
+      "string": "Thao tác này không được hỗ trợ cho sổ địa chỉ này.",
+      "context": "Error when mutating a non-local address book source."
+    },
+    "list_not_found": {
+      "string": "Không tìm thấy danh sách phân phối.",
+      "context": "Error when a distribution list is missing."
+    },
+    "list_duplicate": {
+      "string": "Đã tồn tại một danh sách phân phối có tên này.",
+      "context": "Toast when list creation conflicts."
+    },
+    "list_persist_failed": {
+      "string": "Không thể lưu danh sách phân phối.",
+      "context": "Error when list creation fails on the server."
+    },
+    "list_update_failed": {
+      "string": "Không thể cập nhật danh sách phân phối.",
+      "context": "Error when list update fails on the server."
+    },
+    "access_denied": {
+      "string": "Bạn không có quyền sửa đổi sổ địa chỉ này.",
+      "context": "Toast when write access is denied."
+    },
+    "read_only": {
+      "string": "Sổ địa chỉ này chỉ cho phép đọc.",
+      "context": "Toast when mutating a read-only address book."
+    },
+    "export_format_unsupported": {
+      "string": "Định dạng xuất được chọn không được hỗ trợ.",
+      "context": "Error when export format negotiation fails."
+    },
+    "import_no_file": {
+      "string": "Không có tệp nào được cung cấp để nhập.",
+      "context": "Error when import request has no file."
+    },
+    "import_too_large": {
+      "string": "Tệp nhập vượt quá kích thước tối đa cho phép (10 MB).",
+      "context": "Error when import payload is too large."
+    },
+    "import_parse_failed": {
+      "string": "Không thể phân tích cú pháp tệp nhập.",
+      "context": "Error when import document parsing fails."
+    },
+    "job_not_found": {
+      "string": "Không tìm thấy tác vụ nền.",
+      "context": "Error when polling an unknown job."
+    },
+    "job_forbidden": {
+      "string": "Bạn không có quyền truy cập vào tác vụ nền này.",
+      "context": "Error when job belongs to another user."
+    },
+    "job_not_ready": {
+      "string": "Quá trình xuất chưa sẵn sàng. Vui lòng đợi và thử lại.",
+      "context": "Error when downloading a job result too early."
+    },
+    "job_no_result": {
+      "string": "Tác vụ này không có kết quả có thể tải xuống.",
+      "context": "Error when job result is unavailable."
+    },
+    "job_concurrent_limit": {
+      "string": "Quá nhiều tác vụ nền đang chạy. Vui lòng thử lại sau.",
+      "context": "Error when concurrent job limit is reached."
+    },
+    "file_too_large": {
+      "string": "Ảnh vượt quá kích thước tối đa cho phép (2 MB).",
+      "context": "Inline error when contact photo upload is too large."
+    },
+    "file_type_not_allowed": {
+      "string": "Loại tệp này không được phép sử dụng cho ảnh liên hệ.",
+      "context": "Inline error when contact photo type is not allowed."
+    },
+    "generic": {
+      "string": "Không thể hoàn thành thao tác. Vui lòng thử lại.",
+      "context": "Fallback error message for contact API errors."
+    }
+  }
+}

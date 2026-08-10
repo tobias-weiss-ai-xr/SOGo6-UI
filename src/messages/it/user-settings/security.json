@@ -1,0 +1,75 @@
+{
+    "US_SECURITY": {
+        "title": {
+            "string": "Sicurezza",
+            "context": "Title for the Security settings section in user settings"
+        },
+        "totp": {
+            "title": {
+                "string": "Autenticazione a due fattori (TOTP)",
+                "context": "Title for the Two-Factor Authentication settings"
+            },
+            "description": {
+                "string": "L'autenticazione a due fattori aggiunge un ulteriore livello di sicurezza al tuo account. Una volta abilitata, ti verrà richiesto di inserire un codice univoco generato da un'app di autenticazione sul tuo telefono ogni volta che accedi."
+            },
+            "verification_code": {
+                "title": {
+                    "string": "Codice di verifica"
+                },
+                "description": {
+                    "string": "Inserisci il codice di verifica generato dalla tua app di autenticazione."
+                }
+            }
+        },
+        "webauthn": {
+            "title": {
+                "string": "Passkey (WebAuthn)",
+                "context": "Title for the WebAuthn settings section"
+            },
+            "description": {
+                "string": "Le passkey ti consentono di accedere senza password utilizzando il sensore biometrico del tuo dispositivo (impronta digitale, Face ID) o una chiave di sicurezza hardware. La tua passkey è memorizzata in modo sicuro su questo dispositivo.",
+                "context": "Description for the WebAuthn settings section"
+            },
+            "registered_credentials": {
+                "string": "Passkey registrate",
+                "context": "Label for the list of registered passkeys"
+            },
+            "registered_at": {
+                "string": "Registrata il",
+                "context": "Label for the registration date of a passkey"
+            },
+            "no_credentials": {
+                "string": "Nessuna passkey ancora registrata.",
+                "context": "Message when no passkeys are registered"
+            },
+            "register": {
+                "string": "Registra una nuova passkey",
+                "context": "Button to register a new passkey",
+                "title": {
+                    "string": "Registra una Nuova Passkey",
+                    "context": "Title for the passkey registration dialog"
+                },
+                "description": {
+                    "string": "Il tuo browser o dispositivo ti guiderà nella configurazione di una passkey tramite biometria, PIN o chiave di sicurezza esterna.",
+                    "context": "Description for the passkey registration dialog"
+                },
+                "button": {
+                    "string": "Registra",
+                    "context": "Button to start passkey registration"
+                },
+                "waiting": {
+                    "string": "In attesa dell'interazione del dispositivo — segui le istruzioni sul tuo dispositivo.",
+                    "context": "Status during passkey registration"
+                },
+                "success": {
+                    "string": "Passkey registrata con successo!",
+                    "context": "Status when passkey registration succeeds"
+                }
+            },
+            "device_name": {
+                "string": "Nome del dispositivo (opzionale)",
+                "context": "Label for the device name input field"
+            }
+        }
+    }
+}

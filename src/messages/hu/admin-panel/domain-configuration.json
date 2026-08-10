@@ -1,0 +1,1285 @@
+{
+  "AP_DOMAIN_CONFIGURATION": {
+    "origin": {
+      "rule": {
+        "string": "(a {origin} szabályból)"
+      },
+      "default": {
+        "string": "(az alapértelmezett konfigurációból)"
+      },
+      "domain": {
+        "string": "(a {origin} domainből)"
+      }
+    },
+    "tabs": {
+      "auth_settings": {
+        "string": "Hitelesítési beállítások"
+      },
+      "user_source": {
+        "string": "Felhasználói forrás"
+      },
+      "user_module_settings": {
+        "string": "Felhasználói és modulbeállítások"
+      },
+      "mail_settings": {
+        "string": "Levél beállítások"
+      },
+      "calendar_contact_settings": {
+        "string": "Naptár és névjegy beállítások"
+      }
+    },
+    "properties": {
+      "SOGO_D_AUTH_TYPE": {
+        "name": {
+          "string": "Hitelesítés típusa"
+        },
+        "description": {
+          "string": "Válassza ki a felhasználók hitelesítési módját. A 'Plain' a hagyományos felhasználónév/jelszó kombinációt jelenti"
+        },
+        "developer_comment": "Options might include LDAP, SQL, etc."
+      },
+      "SOGO_D_CAS_URL": {
+        "name": {
+          "string": "CAS szerver URL-je"
+        },
+        "description": {
+          "string": "Adja meg a CAS szerver teljes URL-jét"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_CAS_LOGOUT_ENABLED": {
+        "name": {
+          "string": "Kijelentkezés engedélyezése CAS-sal"
+        },
+        "description": {
+          "string": "Jelölje be a jelölőnégyzetet, ha engedélyezni szeretné a felhasználók kijelentkezését a SOGO-ból és a CAS szerverről"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_OPENID_CONFIG_URL": {
+        "name": {
+          "string": "OpenID szolgáltató végpontjának URL-je"
+        },
+        "description": {
+          "string": "Példa: https://myopenid.net/.well-known/openid-configuration"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_OPENID_CLIENT_NAME": {
+        "name": {
+          "string": "OpenID kliens neve"
+        },
+        "description": {
+          "string": "OpenID kliensének neve"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_OPENID_CLIENT_SECRET": {
+        "name": {
+          "string": "OpenID kliens titka"
+        },
+        "description": {
+          "string": "OpenID kliens titkos kulcsa"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_OPENID_SCOPE": {
+        "name": {
+          "string": "OpenID kliens hatókör"
+        },
+        "description": {
+          "string": "Az OpenID kliens hatóköre. Alapértelmezett: 'openid profile email'."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_OPENID_EMAIL": {
+        "name": {
+          "string": "felhasználó e-mail kulcsa"
+        },
+        "description": {
+          "string": "A kulcs, ahol a felhasználó e-mail címe található a profiljában."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_OPENID_TOKEN_CHECK_INTERVAL": {
+        "name": {
+          "string": "Token ellenőrzési időköz"
+        },
+        "description": {
+          "string": "Az OpenID szerverhez küldött token-ellenőrzési kérések számának korlátozása érdekében állítsa be azt az időt (másodpercben), amíg a token érvényességét nem ellenőrizzük újra egy sikeres ellenőrzés után. 0 azt jelenti, hogy a tokent mindig ellenőrizzük. 60 azt jelenti, hogy a tokent 60 másodpercig nem ellenőrizzük egy sikeres ellenőrzés után."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_OPENID_REFRESH_ENABLE": {
+        "name": {
+          "string": "Frissítő token mechanizmus engedélyezése"
+        },
+        "description": {
+          "string": "Ha az OpenID szerver kezel frissítő token mechanizmust, a SOGo használni fogja azt."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_OPENID_ENDSESSION_ENABLED": {
+        "name": {
+          "string": "Kilépés az OpenID szerverről engedélyezése"
+        },
+        "description": {
+          "string": "Alapértelmezés szerint a felhasználók csak a webmailből léphetnek ki. Jelölje be ezt a beállítást ahhoz, hogy a kilépés az OpenID szerverről is történjen, azaz a felhasználó kijelentkezik az összes, az OpenID szervert használó alkalmazásból. Csak akkor működik, ha az OpenID szerver rendelkezik end_session_endpoint-tal."
+        },
+        "developer_comment": ""
+      },
+      "SOGo_D_OPENID_FETCH_USER_PROFILE": {
+        "name": {
+          "string": "Felhasználói profil letöltése"
+        },
+        "description": {
+          "string": "Alapértelmezés szerint a SOGo letölti a felhasználói profilt az e-mail cím megszerzéséhez. Tiltja le ezt a beállítást, ha az e-mail címet közvetlenül a tokenből szeretné megszerezni. Tiltja le, ha a Microsoft Active Directory Federation Service-öt (AD FS) használja."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SAML2_URL": {
+        "name": {
+          "string": "SAML2 MÉG NEM KÉSZ!!!"
+        },
+        "description": {
+          "string": "Sok sikert annak, aki ezt megcsinálja..."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_PWD_CHANGE_ENABLED": {
+        "name": {
+          "string": "Jelszó változtatás engedélyezése"
+        },
+        "description": {
+          "string": "Lehetővé teszi a felhasználók számára, hogy a SOGo-ból változtassák meg a jelszavaikat. Győződjön meg arról, hogy a felhasználói forrás engedélyezi a felhasználók számára ezt a műveletet."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_LOGIN_CHECK_MAX_ATTEMPT": {
+        "name": {
+          "string": "Maximális sikertelen bejelentkezési kísérlet"
+        },
+        "description": {
+          "string": "Állítsa be, hányszor próbálkozhat sikertelenül egy felhasználó a bejelentkezéssel, mielőtt blokkolásra kerül. 0 azt jelenti, hogy nincs korlát."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_LOGIN_CHECK_TIME_SPAN": {
+        "name": {
+          "string": "Sikertelen bejelentkezési kísérletek időtartama"
+        },
+        "description": {
+          "string": "Állítsa be azt az időtartamot másodpercben, amíg a sikertelen kísérleteket számolja. Példa: 60 azt jelenti, hogy a felhasználó legfeljebb 'Maximális sikertelen bejelentkezési kísérlet' számú alkalommal próbálkozhat sikertelenül 60 másodpercen belül az első sikertelen kísérlet után, mielőtt blokkolásra kerül."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_LOGIN_CHECK_BLOCK_TIME": {
+        "name": {
+          "string": "Sikertelen bejelentkezési kísérlet blokkolási ideje"
+        },
+        "description": {
+          "string": "Állítsa be, hogy hány másodpercig legyen a felhasználó blokkolva túl sok sikertelen kísérlet után."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_PWD_RECOVERY": {
+        "name": {
+          "string": "Jelszóhelyreállítás engedélyezése"
+        },
+        "description": {
+          "string": "Engedélyezze a felhasználók számára a jelszóhelyreállítási módszer beállítását"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_PWD_RECOVERY_METHOD": {
+        "name": {
+          "string": "Elérhető jelszóhelyreállítási módszerek"
+        },
+        "description": {
+          "string": "Válassza ki a felhasználók számára elérhető jelszóhelyreállítási módszereket"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_PWD_RECOVERY_FORCE": {
+        "name": {
+          "string": "Jelszóhelyreállítás kötelezővé tétele"
+        },
+        "description": {
+          "string": "Kényszerítse a felhasználókat a jelszóhelyreállítási módszer beállítására."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_PWD_RECOVERY_DELAY": {
+        "name": {
+          "string": "Késleltetés a jelszóhelyreállítások között"
+        },
+        "description": {
+          "string": "Másodpercekben megadott késleltetés, mielőtt a felhasználó újra kérhetné a jelszóhelyreállítást."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_LOGIN_MFA": {
+        "name": {
+          "string": "Többtényezős hitelesítés engedélyezése"
+        },
+        "description": {
+          "string": "Engedélyezze a felhasználók számára a többtényezős hitelesítés beállítását"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_LOGIN_MFA_METHOD": {
+        "name": {
+          "string": "Elérhető többtényezős hitelesítési módszerek"
+        },
+        "description": {
+          "string": "Válassza ki a felhasználók számára elérhető többtényezős hitelesítési módszereket"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_LOGIN_MFA_FORCE": {
+        "name": {
+          "string": "Többtényezős hitelesítés kötelezővé tétele"
+        },
+        "description": {
+          "string": "Kényszerítse a felhasználókat a többtényezős hitelesítés beállítására"
+        },
+        "developer_comment": ""
+      },
+      "US_UID": {
+        "name": {
+          "string": "Felhasználói forrás azonosító"
+        },
+        "description": {
+          "string": "Válasszon egy egyedi nevet ehhez a felhasználói forráshoz, ez nem lesz látható a felhasználók számára"
+        },
+        "developer_comment": "Only for SOGo to differentiate differents User SOurce"
+      },
+      "US_TYPE": {
+        "name": {
+          "string": "Felhasználói forrás típusa"
+        },
+        "description": {
+          "string": "Állítsa be a felhasználói forrás típusát"
+        },
+        "developer_comment": "Only ldap and sql supported for now"
+      },
+      "US_LDAP_HOSTNAME": {
+        "name": {
+          "string": "LDAP szerver gazdanév"
+        },
+        "description": {
+          "string": "Csak a gazdanévet és a portot adjon meg, ne adjon hozzá más információt"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_BIND_DN": {
+        "name": {
+          "string": "Bind DN"
+        },
+        "description": {
+          "string": "A bejelentkezési név DN-je a szerverhez való kapcsolódáshoz."
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_BIND_DN_PWD": {
+        "name": {
+          "string": "Bind DN jelszó"
+        },
+        "description": {
+          "string": "A Bind DN jelszava"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_BASE_DN": {
+        "name": {
+          "string": "Alap DN"
+        },
+        "description": {
+          "string": "A felhasználók bejegyzésének alap DN-je. Ha az e-mail domainje benne van, hozzáadhatja a '%d'-t a felhasználó e-mailjéből való dinamikus beillesztéshez, például: 'ou=%d,dc=example,dc=com'"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_UID": {
+        "name": {
+          "string": "UID mező"
+        },
+        "description": {
+          "string": "A mező, amely tartalmazza a felhasználó bejelentkezési nevét. A bejelentkezési névnek egyedinek kell lennie az összes Felhasználói Forrás és Domain között"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_CN": {
+        "name": {
+          "string": "CN mező"
+        },
+        "description": {
+          "string": "A mező, amely tartalmazza a felhasználó teljes nevét"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_ID": {
+        "name": {
+          "string": "ID mező"
+        },
+        "description": {
+          "string": "A mező, amely elkezdi a felhasználó DN-jét, ha a Bind Field beállítás nincs használatban (például: ha a 'dn: uid=sogo,ou=users,dc=example,dc=org', akkor ez az érték 'uid' kell legyen)"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_SCOPE": {
+        "name": {
+          "string": "LDAP keresési hatókör"
+        },
+        "description": {
+          "string": "Megadja az AlapDN-nél vagy alatt lévő bejegyzések halmazát, amelyeket potenciális találatoknak tekinthetünk egy keresési kérés esetén"
+        },
+        "developer_comment": "https://ldapwiki.com/wiki/Wiki.jsp?page=LDAP%20Search%20Scopes"
+      },
+      "US_LDAP_FILTER": {
+        "name": {
+          "string": "LDAP szűrő"
+        },
+        "description": {
+          "string": "További szűrő az LDAP lekérdezésekhez. Használja a '=', '!=', 'AND', 'OR' és a zárójeleket. Példa: '(objectClass='mailUser' OR objectClass!='mailGroup') AND accountStatus='active'"
+        },
+        "developer_comment": "Use SOGo's syntax and not ldap syntax for filter"
+      },
+      "US_LDAP_PWD_POLICY": {
+        "name": {
+          "string": "LDAP jelszóirányelv"
+        },
+        "description": {
+          "string": "Jelzi, hogy az LDAP szerver rendelkezik jelszóirányelvvel, lejárati és kegyelemidő fogalmával"
+        },
+        "developer_comment": "https://ldapwiki.com/wiki/Wiki.jsp?page=Password%20Policy"
+      },
+      "US_LDAP_PWD_UPDATE_SAMBA": {
+        "name": {
+          "string": "LDAP jelszófrissítés Samba jelszavakkal"
+        },
+        "description": {
+          "string": "Ha egy felhasználó megváltoztatja a jelszavát, a sambaNTPassword és sambaLMPassword is frissül"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_BIND_AS_USER": {
+        "name": {
+          "string": "Csatlakozás felhasználói azonosítóval"
+        },
+        "description": {
+          "string": "Hitelesítés után a felhasználó DN-jével csatlakozik"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_BIND_FIELD": {
+        "name": {
+          "string": "További csatlakozási mezők"
+        },
+        "description": {
+          "string": "További csatlakozási mezők használata. Például, ha hozzáadja az 'email' mezőt, a csatlakozás 'mail=<bejelentkezés>' formátumú lesz"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_ATTR_FIELD": {
+        "name": {
+          "string": "Attribútum mezők"
+        },
+        "description": {
+          "string": "A keresési lekérdezés során visszatérő attribútum mezők. Alapértelmezés szerint '*' (minden). Vigyázzon, mert ez jelentősen befolyásolhatja a SOGo viselkedését"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_GROUP_CLASS": {
+        "name": {
+          "string": "LDAP csoport osztály"
+        },
+        "description": {
+          "string": "Állítsa be az LDAP osztályt, amely jelzi a SOGo-nak, hogy ez egy csoport, nem pedig egy egyéni felhasználó"
+        },
+        "developer_comment": ""
+      },
+      "US_SQL_USER_URL": {
+        "name": {
+          "string": "SQL felhasználói URL"
+        },
+        "description": {
+          "string": "Adatbázis URL a felhasználók táblájához. Példa: postgresql://sogo:sogo@127.0.0.1:5432/sogo/sogo_user"
+        },
+        "developer_comment": ""
+      },
+      "US_SQL_PREPEND_PWD_SCHEME": {
+        "name": {
+          "string": "SQL felhasználói jelszó séma"
+        },
+        "description": {
+          "string": "Jelölje be az IGEN opciót, ha a jelszó az adatbázisban így van tárolva: {séma}titkositottÉrték"
+        },
+        "developer_comment": ""
+      },
+      "US_SQL_USER_FILTER": {
+        "name": {
+          "string": "SQL felhasználói szűrő"
+        },
+        "description": {
+          "string": "További WHERE feltételek az SQL lekérdezéshez. Példa: 'active=1'"
+        },
+        "developer_comment": ""
+      },
+      "US_SQL_DOMAIN_FIELD": {
+        "name": {
+          "string": "SQL felhasználói tartomány"
+        },
+        "description": {
+          "string": "Állítsa be azt az oszlopnevet, ahol a felhasználó tartománya található. Ha be van állítva, minden SQL lekérdezés a WHERE feltételéhez hozzáadja: '<tartomány_oszlop> = <felhasználói tartomány>'"
+        },
+        "developer_comment": ""
+      },
+      "US_MAPPING": {
+        "name": {
+          "string": "Felhasználói forrás leképezése"
+        },
+        "description": {
+          "string": "Képzeze le a felhasználói forrás mezőit a kapcsolat attribútumokra"
+        },
+        "developer_comment": ""
+      },
+      "US_CAN_AUTH": {
+        "name": {
+          "string": "Hitelesíthető"
+        },
+        "description": {
+          "string": "A felhasználók ebből a felhasználói forrásból bejelentkezhetnek a webmailbe"
+        },
+        "developer_comment": ""
+      },
+      "US_PWD_ALGO": {
+        "name": {
+          "string": "Felhasználói forrás jelszó algoritmusa"
+        },
+        "description": {
+          "string": "Az e felhasználói forrás által használt jelszó algoritmus. Kötelező SQL felhasználói forrás esetén. Opcionális LDAP-nál: csak akkor szükséges, ha engedélyezi a felhasználók számára a jelszó megváltoztatását"
+        },
+        "developer_comment": ""
+      },
+      "US_SIM_KEY_TYPE": {
+        "name": {
+          "string": "Jelszó algoritmus szimmetrikus kulcs típusa"
+        },
+        "description": {
+          "string": "Megadja, hogyan tárolja a jelszó algoritmus szimmetrikus kulcsát"
+        },
+        "developer_comment": ""
+      },
+      "US_SIM_KEY_VALUE": {
+        "name": {
+          "string": "Jelszó algoritmus szimmetrikus kulcs értéke"
+        },
+        "description": {
+          "string": "Az érték a típustól függ.\nHa 'path', adja meg a fájl elérési útját, ahol a SOGo megtalálja a szimmetrikus kulcsot.\nHa 'env', adja meg a környezeti változó nevét, ahol a kulcs található.\nHa 'plain', közvetlenül adja meg a kulcsot"
+        },
+        "developer_comment": ""
+      },
+      "US_PWD_POLICY": {
+        "name": {
+          "string": "Felhasználói jelszó irányelv"
+        },
+        "description": {
+          "string": "Jelölje be a jelölőnégyzetet a felhasználói jelszó irányelv hozzáadásához. Ez az irányelv akkor lesz alkalmazva, ha a felhasználó megváltoztatja a jelszót, vagy ha engedélyezi a 'jelszó erősség ellenőrzése bejelentkezéskor' beállítást"
+        },
+        "developer_comment": ""
+      },
+      "US_PWD_LEN_MIN": {
+        "name": {
+          "string": "Felhasználói jelszó minimális hossza"
+        },
+        "description": {
+          "string": "A felhasználói jelszó minimális hossza (beleértve). Minimum 4 karakter."
+        },
+        "developer_comment": ""
+      },
+      "US_PWD_LEN_MAX": {
+        "name": {
+          "string": "Felhasználói jelszó maximális hossza"
+        },
+        "description": {
+          "string": "A felhasználói jelszó maximális hossza (beleértve). 0 jelentése: nincs korlát"
+        },
+        "developer_comment": ""
+      },
+      "US_PWD_UPPERCASE_MIN": {
+        "name": {
+          "string": "Felhasználói jelszó nagybetűk minimuma"
+        },
+        "description": {
+          "string": "Nagybetűk minimális előfordulása. 0 jelentése: nincs korlát"
+        },
+        "developer_comment": ""
+      },
+      "US_PWD_LOWERCASE_MIN": {
+        "name": {
+          "string": "Felhasználói jelszó kisbetűk minimuma"
+        },
+        "description": {
+          "string": "Kisbetűk minimális előfordulása. 0 jelentése: nincs korlát"
+        },
+        "developer_comment": ""
+      },
+      "US_PWD_DIGITS_MIN": {
+        "name": {
+          "string": "Felhasználói jelszó számjegyek minimuma"
+        },
+        "description": {
+          "string": "Számjegyek minimális előfordulása. 0 jelentése: nincs korlát"
+        },
+        "developer_comment": ""
+      },
+      "US_PWD_SPECIAL_ALLOWED": {
+        "name": {
+          "string": "Felhasználói jelszó engedélyezett különleges karakterei"
+        },
+        "description": {
+          "string": "A jelszóban engedélyezett különleges karakterek listája"
+        },
+        "developer_comment": ""
+      },
+      "US_PWD_SPECIAL_MIN": {
+        "name": {
+          "string": "Felhasználói jelszó különleges karakterek minimuma"
+        },
+        "description": {
+          "string": "A különleges karakterek minimális előfordulása. A 0 érték korlát nélkül jelentkezik"
+        },
+        "developer_comment": ""
+      },
+      "US_MAIL": {
+        "name": {
+          "string": "Felhasználói e-mail mező"
+        },
+        "description": {
+          "string": "A felhasználó e-mail címét tartalmazó mező. A fő e-mail mező után további mezők adhatók meg a felhasználó aliasainak megjelölésére"
+        },
+        "developer_comment": ""
+      },
+      "US_MAIL_SERVER_LOGIN": {
+        "name": {
+          "string": "Felhasználói levelezőszerver bejelentkezési név"
+        },
+        "description": {
+          "string": "Csak akkor adjon meg, ha a felhasználó bejelentkezési neve a levelezőszerverre (IMAP) különbözik a fő e-mail címétől. Itt adja meg azt a mezőt, ahol a bejelentkezési név található"
+        },
+        "developer_comment": ""
+      },
+      "US_MAIL_FILTERING_LOGIN": {
+        "name": {
+          "string": "Felhasználói levelezőszűrő szerver bejelentkezési név"
+        },
+        "description": {
+          "string": "Csak akkor adjon meg, ha a felhasználó bejelentkezési neve a levelezőszűrő szerverre (Sieve) különbözik a fő e-mail címétől. Itt adja meg azt a mezőt, ahol a bejelentkezési név található"
+        },
+        "developer_comment": ""
+      },
+      "US_MAIL_OUTGOING_LOGIN": {
+        "name": {
+          "string": "Felhasználói kimenő levelezőszerver bejelentkezési név"
+        },
+        "description": {
+          "string": "Csak akkor adjon meg, ha a felhasználó bejelentkezési neve a kimenő levelezőszerverre (SMTP) különbözik a fő e-mail címétől. Itt adja meg azt a mezőt, ahol a bejelentkezési név található"
+        },
+        "developer_comment": ""
+      },
+      "US_KIND": {
+        "name": {
+          "string": "Felhasználói típus"
+        },
+        "description": {
+          "string": "Adja meg azt a mezőt, ahol a felhasználó típusa található ('felhasználó', 'erőforrás' vagy 'csoport')"
+        },
+        "developer_comment": ""
+      },
+      "US_IS_ADDRESSBOOK": {
+        "name": {
+          "string": "A felhasználói forrás címtár-e"
+        },
+        "description": {
+          "string": "Adja meg azt a mezőt, ha a felhasználók ebből a felhasználói forrásból automatikus kiegészítéssel vagy a globális címtárból kereshetők"
+        },
+        "developer_comment": ""
+      },
+      "US_SEARCH": {
+        "name": {
+          "string": "Felhasználói keresési mező"
+        },
+        "description": {
+          "string": "További mező a felhasználó kereséséhez. Például a 'név' mezővel a felhasználók nevével is kereshet"
+        },
+        "developer_comment": ""
+      },
+      "US_DISPLAY_NAME": {
+        "name": {
+          "string": "Felhasználói forrás megjelölési neve"
+        },
+        "description": {
+          "string": "A felhasználói forrás megjelölési neve, amely a globális címtár listájában fog megjelenni"
+        },
+        "developer_comment": ""
+      },
+      "US_AUTO_SEARCH": {
+        "name": {
+          "string": "Felhasználók automatikus megjelenítése a globális címkönyvben"
+        },
+        "description": {
+          "string": "Automatikusan keres és megjelenít felhasználókat a Globális Címkönyvben, ha kiválasztják. Ellenkező esetben a felhasználónak be kell gépelnie a keresést, vagy a '.' karaktert kell megadnia az összes felhasználó kereséséhez."
+        },
+        "developer_comment": ""
+      },
+      "US_AUTO_SEARCH_LIMIT": {
+        "name": {
+          "string": "Felhasználói automatikus kiegészítés korlát"
+        },
+        "description": {
+          "string": "Korlátozza a keresés után visszaadott felhasználók maximális számát. A 0 érték korlát nélkül jelentkezik."
+        },
+        "developer_comment": ""
+      },
+      "US_EXTRA_CONTACT_INFO": {
+        "name": {
+          "string": "Felhasználói további kapcsolatadatok"
+        },
+        "description": {
+          "string": "Megadja, milyen további információt kell csatolni az automatikus kiegészítés eredményeihez. A formátum: 'cn <kiegészítő> email'."
+        },
+        "developer_comment": ""
+      },
+      "US_HIDDEN_USER": {
+        "name": {
+          "string": "Rejtett felhasználók"
+        },
+        "description": {
+          "string": "Azok a felhasználói azonosítók listája, amelyeket soha nem ad vissza másoknak keresés vagy automatikus kiegészítés esetén."
+        },
+        "developer_comment": ""
+      },
+      "US_HAS_RESOURCE": {
+        "name": {
+          "string": "A felhasználói forrás tartalmaz erőforrásokat"
+        },
+        "description": {
+          "string": "Jelölje be, ha ez a felhasználói forrás tartalmaz erőforrásokat."
+        },
+        "developer_comment": ""
+      },
+      "US_RESOURCE_SEARCH": {
+        "name": {
+          "string": "Erőforrás-keresés"
+        },
+        "description": {
+          "string": "További keresési mező erőforrásokhoz."
+        },
+        "developer_comment": ""
+      },
+      "US_RESOURCE_MULTIBOOKING": {
+        "name": {
+          "string": "Erőforrás többszörös foglalhatóság"
+        },
+        "description": {
+          "string": "Mező, ahol az erőforrás többszörös foglalhatóságának értéke található."
+        },
+        "developer_comment": ""
+      },
+      "US_RESOURCE_EXTRA_INFO": {
+        "name": {
+          "string": "Erőforrás további információk"
+        },
+        "description": {
+          "string": "Megadja, milyen további információt kell csatolni az automatikus kiegészítés eredményeihez. A formátum: 'cn <kiegészítő> email'."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MODULE_ACCESS": {
+        "name": {
+          "string": "Modul hozzáférés"
+        },
+        "description": {
+          "string": "Definiálja, hogy az e-mail, naptár és névjegy modulok közül melyek érhetők el."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAPI_ACCESS": {
+        "name": {
+          "string": "MAPI szerver engedélyezése"
+        },
+        "description": {
+          "string": "Lehetővé teszi az asztali felhasználók számára a MAPI protokoll használatát."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_EAS_ACCESS": {
+        "name": {
+          "string": "EAS szerver engedélyezése"
+        },
+        "description": {
+          "string": "Lehetővé teszi a mobilos felhasználók számára az ActiveSync protokoll használatát"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_FOLDER_DISABLE_EXPORT": {
+        "name": {
+          "string": "Mappa exportálásának tiltása"
+        },
+        "description": {
+          "string": "Megakadályozza a felhasználót abban, hogy e-mail, naptár vagy névjegy mappáit exportálja"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_FOLDER_DISABLE_SHARING": {
+        "name": {
+          "string": "Mappa megosztásának tiltása"
+        },
+        "description": {
+          "string": "Megakadályozza a felhasználót abban, hogy e-mail, naptár vagy névjegy mappáit megossza"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_FOLDER_DISABLE_SHARING_ANY_AUTH": {
+        "name": {
+          "string": "Mappa megosztásának tiltása hitelesített felhasználókkal"
+        },
+        "description": {
+          "string": "Megakadályozza a felhasználót abban, hogy e-mail, naptár vagy névjegy mappáit bármely hitelesített felhasználóval megossza"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_AUTOCOMPLETION_MIN_LEN": {
+        "name": {
+          "string": "Automatikus kiegészítés minimális karakterszáma"
+        },
+        "description": {
+          "string": "Beállítja az automatikus kiegészítés indításához szükséges minimális karakterek számát (pl. 3: a keresés a harmadik karakter beírásakor indul)"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_API_MAX_REQUEST": {
+        "name": {
+          "string": "API-kérések maximális száma"
+        },
+        "description": {
+          "string": "Beállítja, hogy egy hitelesített felhasználó hány kérést tehet egy adott időintervallum alatt"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_API_MAX_REQUEST_INTERVAL": {
+        "name": {
+          "string": "API-kérések korlátának időtartama"
+        },
+        "description": {
+          "string": "Beállítja azt az időintervallumot, amelyen belül az 'API-kérések maximális száma' korlátozás érvényes"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_API_MAX_REQUEST_BLOCK_INTERVAL": {
+        "name": {
+          "string": "Blokkolási idő a maximális API-kérés elérése után"
+        },
+        "description": {
+          "string": "Beállítja azt az időt, amíg egy felhasználót blokkolnak a kérések további küldésétől, ha eléri a 'API-kérések maximális száma' korlátot"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_IDENTITIES_ENABLED": {
+        "name": {
+          "string": "Azonosságok engedélyezése"
+        },
+        "description": {
+          "string": "Lehetővé teszi a felhasználók számára e-mail azonososságok létrehozását"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_IDENTITIES_CUSTOM_FROM_ENABLED": {
+        "name": {
+          "string": "Egyéni 'Feladó' engedélyezése"
+        },
+        "description": {
+          "string": "Lehetővé teszi a felhasználók számára, hogy egyéni 'Feladó' mezőt állítsanak be az azonososságukban"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_IDENTITIES_CUSTOM_NAME_ENABLED": {
+        "name": {
+          "string": "Egyéni 'Név' engedélyezése"
+        },
+        "description": {
+          "string": "Felhasználónak lehetővé teszi az egyéni név beállítását az azonosítókban"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_IDENTITIES_CUSTOM_REPLY_TO_ENABLED": {
+        "name": {
+          "string": "Egyéni 'Válaszcím' engedélyezése"
+        },
+        "description": {
+          "string": "Felhasználónak lehetővé teszi az egyéni 'Válaszcím' beállítását az azonosítókban"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_ALLOW_EXT_MAIL_ACCOUNT": {
+        "name": {
+          "string": "Külső e-mail fiók engedélyezése"
+        },
+        "description": {
+          "string": "Felhasználónak lehetővé teszi a külső fiók beállítását"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_ALLOW_EXT_AVATAR": {
+        "name": {
+          "string": "Külső avatar használatának engedélyezése"
+        },
+        "description": {
+          "string": "Felhasználónak lehetővé teszi a beállításokat külső avatar (gravatar, libravatar stb.) használatára"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_REFRESH_INTERVAL_ALLOWED": {
+        "name": {
+          "string": "Engedélyezett automatikus frissítés időköze az e-mailekhez"
+        },
+        "description": {
+          "string": "Az értékek beállítása, amelyeket a felhasználók kiválaszthatnak az 'e-mailek automatikus frissítése' értékéhez"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_JUNK_SETTINGS": {
+        "name": {
+          "string": "Spam/ham kiváltó mechanizmusának beállítása"
+        },
+        "description": {
+          "string": "Mechanizmus beállítása, amikor a felhasználók levélként jelölik meg a spamet/hamot"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_JUNK_MAIL_SPAM": {
+        "name": {
+          "string": "E-mail cím spamre"
+        },
+        "description": {
+          "string": "E-mail cím beállítása, ahova a spam továbbítódik"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_SERVER_TYPE": {
+        "name": {
+          "string": "Levélkiszolgáló típusa"
+        },
+        "description": {
+          "string": "A levélkiszolgáló típusa"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_IMAP_SERVER": {
+        "name": {
+          "string": "IMAP kiszolgáló"
+        },
+        "description": {
+          "string": "Az IMAP kiszolgáló hosztneve"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_IMAP_PORT": {
+        "name": {
+          "string": "IMAP port"
+        },
+        "description": {
+          "string": "Az IMAP kiszolgáló portja"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_IMAP_ENCRYPTION": {
+        "name": {
+          "string": "IMAP titkosítás"
+        },
+        "description": {
+          "string": "Az IMAP szerver titkosítási mechanizmusa"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_IMAP_AUTH_MECH": {
+        "name": {
+          "string": "IMAP hitelesítési mechanizmus"
+        },
+        "description": {
+          "string": "Az IMAP hitelesítési mechanizmusa. A 'login' használata óvatosságot igényel"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SOFT_EMAIL_QUOTA": {
+        "name": {
+          "string": "Lágy kvóta"
+        },
+        "description": {
+          "string": "A lágy kvóta százalékos beállítása"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_PURGE_ALLOW": {
+        "name": {
+          "string": "Törlés engedélyezése"
+        },
+        "description": {
+          "string": "A törlés lehetővé teszi a felhasználók számára, hogy töröljék az összes, egy adott dátum előtt keletkező e-mailt egy mappában vagy az egész fiókban"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_PURGE_MIN_DATE": {
+        "name": {
+          "string": "Törlés minimális napok száma"
+        },
+        "description": {
+          "string": "A törléshez szükséges minimális napok száma. 0 azt jelenti, hogy a felhasználó törölhet minden e-mailt. 30 azt jelenti, hogy csak 30 napnál régebbi e-mailek törölhetők"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_FILTERING_ENABLED": {
+        "name": {
+          "string": "E-mail szűrés engedélyezése"
+        },
+        "description": {
+          "string": "Lehetővé teszi a felhasználók számára az e-mailek szűrőinek beállítását"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_FILTERING_TYPE": {
+        "name": {
+          "string": "E-mail szűrés típusa"
+        },
+        "description": {
+          "string": "Az e-mail szűrés protokolljának típusa"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SIEVE_SERVER": {
+        "name": {
+          "string": "Sieve szerver"
+        },
+        "description": {
+          "string": "A Sieve szerver hostneve"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SIEVE_PORT": {
+        "name": {
+          "string": "Sieve port"
+        },
+        "description": {
+          "string": "A Sieve szerver portja"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SIEVE_ENCRYPTION": {
+        "name": {
+          "string": "Sieve titkosítás"
+        },
+        "description": {
+          "string": "A Sieve szerver titkosítása"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SIEVE_AUTH_MECH": {
+        "name": {
+          "string": "Sieve hitelesítési mechanizmus"
+        },
+        "description": {
+          "string": "Hitelesítési mechanizmus a sieve-hez. Ha None"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SIEVE_FOLDER_ENCODING": {
+        "name": {
+          "string": "Sieve kódolás"
+        },
+        "description": {
+          "string": "Beállítja a sieve szerver által használt kódolást."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SIEVE_HEADER": {
+        "name": {
+          "string": "Sieve fejléc"
+        },
+        "description": {
+          "string": "Beállít egy sieve szkriptet, amely minden felhasználó sieve szkriptjének elején lesz"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SIEVE_FOOTER": {
+        "name": {
+          "string": "Sieve lábléc"
+        },
+        "description": {
+          "string": "Beállít egy sieve szkriptet, amely minden felhasználó sieve szkriptjének végén lesz"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SIEVE_FIRST_FILTER": {
+        "name": {
+          "string": "Kezdeti sieve szkript"
+        },
+        "description": {
+          "string": "Beállítja az új felhasználók kezdeti sieve szkriptjét. Utána módosíthatják azt"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_VACATION_ENABLED": {
+        "name": {
+          "string": "Távolléti üzenet engedélyezése"
+        },
+        "description": {
+          "string": "Engedélyezi a felhasználók számára a távolléti üzenet beállítását. A 'vacation' sieve kiterjesztés használata (rfc5230)"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_VACATION_ALLOW_RESPONSE_ALWAYS": {
+        "name": {
+          "string": "Távolléti üzenet mindig"
+        },
+        "description": {
+          "string": "Engedélyezi a felhasználók számára a távolléti üzenet beállítását, amely mindig elküldésre kerül, kedvezményes időszak nélkül"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_FORWARD_ENABLED": {
+        "name": {
+          "string": "Automatikus továbbítás engedélyezése"
+        },
+        "description": {
+          "string": "Engedélyezi a felhasználók számára az automatikus továbbítás beállítását. A 'redirect' sieve parancs használata"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_FORWARD_ALLOW_USER_DOMAIN": {
+        "name": {
+          "string": "Automatikus továbbítás engedélyezése a felhasználó domainjére"
+        },
+        "description": {
+          "string": "Engedélyezi a felhasználók számára az automatikus továbbítás beállítását az azonos domainen belüli címekre"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_FORWARD_ALLOW_SOGO_DOMAIN": {
+        "name": {
+          "string": "Automatikus továbbítás engedélyezése a SOGo domainre"
+        },
+        "description": {
+          "string": "Engedélyezi a felhasználók számára az automatikus továbbítás beállítását a SOGo által ismert címekre"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_FORWARD_ALLOW_EXT_DOMAIN": {
+        "name": {
+          "string": "Automatikus továbbítás engedélyezése külső domainre"
+        },
+        "description": {
+          "string": "Felhasználók engedélyezése automatikus továbbítás beállítására külső címekre"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_FORWARD_WHITELIST": {
+        "name": {
+          "string": "Automatikus továbbítás fehérlistás domainjei"
+        },
+        "description": {
+          "string": "Specifikus domainek megadása, ahova a felhasználók továbbíthatnak"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_FORWARD_BLACKLIST": {
+        "name": {
+          "string": "Automatikus továbbítás feketelistás domainjei"
+        },
+        "description": {
+          "string": "Specifikus domainek megadása, ahova a felhasználók nem továbbíthatnak"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_NOTIFY_ENABLED": {
+        "name": {
+          "string": "Értesítés engedélyezése"
+        },
+        "description": {
+          "string": "Felhasználók engedélyezése értesítés beállítására. A 'notify' szűrő bővítmény használata (RFC5435)"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_NOTIFY_ALLOW_USER_DOMAIN": {
+        "name": {
+          "string": "Értesítés engedélyezése a felhasználó domainjére"
+        },
+        "description": {
+          "string": "Felhasználók engedélyezése értesítés küldésére az azonos domainen belüli címekre"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_NOTIFY_ALLOW_SOGO_DOMAIN": {
+        "name": {
+          "string": "Értesítés engedélyezése SOGo domainre"
+        },
+        "description": {
+          "string": "Felhasználók engedélyezése értesítés küldésére a SOGo által ismert címekre"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_NOTIFY_ALLOW_EXT_DOMAIN": {
+        "name": {
+          "string": "Értesítés engedélyezése külső domainre"
+        },
+        "description": {
+          "string": "Felhasználók engedélyezése értesítés küldésére külső címekre"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_NOTIFY_WHITELIST": {
+        "name": {
+          "string": "Értesítés fehérlistás domainjei"
+        },
+        "description": {
+          "string": "Specifikus domainek megadása, ahova a felhasználók értesíthetnek"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_NOTIFY_BLACKLIST": {
+        "name": {
+          "string": "Értesítés feketelistás domainjei"
+        },
+        "description": {
+          "string": "Specifikus domainek megadása, ahova a felhasználók nem értesíthetnek"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_OUTGOING_TYPE": {
+        "name": {
+          "string": "Kimenő levelezőszerver típusa"
+        },
+        "description": {
+          "string": "Kimenő levelezőszerver fajtájának beállítása"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SMTP_SERVER": {
+        "name": {
+          "string": "SMTP szerver"
+        },
+        "description": {
+          "string": "Az SMTP szerver hostneve"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SMTP_PORT": {
+        "name": {
+          "string": "SMTP port"
+        },
+        "description": {
+          "string": "Az SMTP szerver portja"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SMTP_ENCRYPTION": {
+        "name": {
+          "string": "SMTP titkosítás"
+        },
+        "description": {
+          "string": "Az SMTP szerver titkosítási mechanizmusa"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SMTP_AUTH_MECH": {
+        "name": {
+          "string": "SMTP hitelesítési mechanizmus"
+        },
+        "description": {
+          "string": "Az SMTP hitelesítési mechanizmusa. A 'Nincs' beállítás használata óvatosságot igényel"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SMTP_MASTER_ENABLED": {
+        "name": {
+          "string": "SMTP főszámlahasználat"
+        },
+        "description": {
+          "string": "Főszámlahasználat az összes rendszüzenethez (események, értesítések stb.)"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SMTP_MASTER_FROM": {
+        "name": {
+          "string": "Főszámla feladója"
+        },
+        "description": {
+          "string": "Az SMTP főszámla feladója"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SMTP_MASTER_LOGIN": {
+        "name": {
+          "string": "Főszámla bejelentkezési név"
+        },
+        "description": {
+          "string": "Az SMTP főszámla e-mail címe"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SMTP_MASTER_PWD": {
+        "name": {
+          "string": "Főszámla jelszó"
+        },
+        "description": {
+          "string": "Az SMTP főszámla jelszava"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_MAX_SUBMISSION": {
+        "name": {
+          "string": "Maximális küldhető e-mailek száma"
+        },
+        "description": {
+          "string": "A felhasználó által egy időintervallum alatt küldhető e-mailek maximális száma"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_MAX_SUBMISSION_INTERVAL": {
+        "name": {
+          "string": "Maximális küldési időintervallum"
+        },
+        "description": {
+          "string": "Az időintervallum másodpercben, amelyre a 'Maximális küldhető e-mailek száma' vonatkozik"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_MAX_SUBMISSION_BLOCK_INTERVAl": {
+        "name": {
+          "string": "Maximális levélküldési blokkolási idő"
+        },
+        "description": {
+          "string": "Az időtartam, amíg egy felhasználó nem küldhet levelet a „Maximális elküldött levél” korlát aktiválása után"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_MAX_RECIPIENT": {
+        "name": {
+          "string": "Maximális címzettek száma egy levélben"
+        },
+        "description": {
+          "string": "Főszámlajegyző jelszava"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_CHECK_FROM": {
+        "name": {
+          "string": "„Feladó” ellenőrzése"
+        },
+        "description": {
+          "string": "Ellenőrizzük, hogy a feladó a felhasználó levelei közül valami-e (alapértelmezett, álnevek, identitások stb.), mielőtt a kimenő levelekiszolgálót igénybe vesszük"
+        },
+        "developer_comment": ""
+      }
+    }
+  }
+}

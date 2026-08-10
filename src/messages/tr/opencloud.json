@@ -1,0 +1,18 @@
+{
+  "OPENCLOUD": {
+    "picker": {
+      "search": {
+        "string": "Dosya ara..."
+      },
+      "empty": {
+        "string": "Dosya bulunamadı"
+      },
+      "attached": {
+        "string": "Eklendi: {name}"
+      },
+      "error": {
+        "string": "Dosya seçilemedi"
+      }
+    }
+  }
+}

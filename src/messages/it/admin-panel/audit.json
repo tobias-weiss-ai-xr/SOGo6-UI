@@ -1,0 +1,20 @@
+{
+    "AP_AUDIT": {
+        "title": { "string": "Registro Audit" },
+        "description": { "string": "Registro a prova di manomissione delle azioni di admin e utenti. Le voci sono solo aggiuntive e non possono essere modificate o eliminate." },
+        "table": {
+            "timestamp": { "string": "Data/Ora" },
+            "action": { "string": "Azione" },
+            "actor": { "string": "Attore" },
+            "target": { "string": "Destinatario" },
+            "detail": { "string": "Dettaglio" },
+            "ip": { "string": "Indirizzo IP" },
+            "no_entries": { "string": "Nessuna voce di audit trovata." }
+        },
+        "count_one": { "string": "voce" },
+        "count_many": { "string": "voci" },
+        "errors": {
+            "load_failed": { "string": "Caricamento registro audit fallito" }
+        }
+    }
+}

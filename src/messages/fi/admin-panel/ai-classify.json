@@ -1,0 +1,46 @@
+{
+  "AI_CLASSIFY": {
+    "title": {
+      "string": "Älykäs sähköpostin luokittelu"
+    },
+    "description": {
+      "string": "Automaattinen sähköpostien merkintä: uutiskirje, lasku, ilmoitus, sosiaalinen, henkilökohtainen."
+    },
+    "input": {
+      "title": {
+        "string": "Syötteen sähköposti"
+      },
+      "subject": {
+        "string": "Aihe"
+      },
+      "sender": {
+        "string": "Lähettäjä"
+      },
+      "body": {
+        "string": "Viesti"
+      },
+      "placeholder": {
+        "string": "Liitä sähköpostin sisältö tähän..."
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Luokittelutulokset"
+      },
+      "empty": {
+        "string": "Syötä teksti ja klikkaa Luokittele"
+      }
+    },
+    "classify": {
+      "string": "Luokittele"
+    },
+    "errors": {
+      "empty": {
+        "string": "Syötä sähköpostin teksti"
+      },
+      "fail": {
+        "string": "Luokittelu epäonnistui"
+      }
+    }
+  }
+}

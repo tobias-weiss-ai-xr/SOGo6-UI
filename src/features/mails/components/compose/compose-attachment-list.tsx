@@ -11,6 +11,7 @@ import {
 } from '../../store/mail-api'
 import type { MailComposeAttachment } from '../../store/mail-compose-slice'
 import { removeAttachment } from '../../store/mail-compose-slice'
+import { logger } from '@/lib/logger'
 
 interface ComposeAttachmentListProps {
   draftId: string
@@ -70,7 +71,7 @@ export function ComposeAttachmentList({
       document.body.removeChild(link)
       URL.revokeObjectURL(url)
     } catch (error) {
-      console.error('Failed to download attachment:', error)
+      logger.error('Failed to download attachment:', { error: error })
     }
   }
 

@@ -19,6 +19,7 @@ import { apiSlice } from '../../api/api-slice'
 import { useAppDispatch } from '../../hooks'
 import type { AppDispatch } from '../../store'
 import { getSSEServiceInstance } from '../sse-api'
+import { logger } from '@/lib/logger'
 
 export interface MailReceivedListenerFallbacks {
   defaultSubject: string
@@ -60,7 +61,7 @@ export function useMailReceivedListener(
         if (retryCount < maxRetries) {
           timeoutId = setTimeout(setupListener, 10000)
         } else {
-          console.warn('SSE service failed to initialize after retries')
+          logger.warn('SSE service failed to initialize after retries')
         }
         return
       }
@@ -150,6 +151,6 @@ function updateMailsCache(
 
     dispatch(updateAction)
   } catch (error) {
-    console.error('Error updating mails cache:', error)
+    logger.error('Error updating mails cache:', { error: error })
   }
 }

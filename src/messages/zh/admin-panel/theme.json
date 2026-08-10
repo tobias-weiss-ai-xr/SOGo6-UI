@@ -1,0 +1,135 @@
+{
+  "AP_THEME": {
+    "title": {
+      "string": "主题设置"
+    },
+    "description": {
+      "string": "自定义 SOGo 界面的外观和风格"
+    },
+    "form_title": {
+      "string": "自定义主题"
+    },
+    "form_description": {
+      "string": "为群件界面配置颜色、徽标和自定义 CSS"
+    },
+    "fields": {
+      "primary": {
+        "label": {
+          "string": "主色调"
+        },
+        "description": {
+          "string": "主色调的 HSL 值（例如 180 25% 40%）"
+        }
+      },
+      "primary_foreground": {
+        "label": {
+          "string": "主色调前景色"
+        },
+        "description": {
+          "string": "主色调背景上的文本颜色"
+        }
+      },
+      "background": {
+        "label": {
+          "string": "背景"
+        },
+        "description": {
+          "string": "页面背景的 HSL 值"
+        }
+      },
+      "foreground": {
+        "label": {
+          "string": "前景色"
+        },
+        "description": {
+          "string": "默认文本颜色"
+        }
+      },
+      "sidebar_background": {
+        "label": {
+          "string": "侧边栏背景"
+        },
+        "description": {
+          "string": "侧边栏背景的 HSL 值"
+        }
+      },
+      "sidebar_foreground": {
+        "label": {
+          "string": "侧边栏前景色"
+        },
+        "description": {
+          "string": "侧边栏中的文本颜色"
+        }
+      },
+      "sidebar_primary": {
+        "label": {
+          "string": "侧边栏主色调"
+        },
+        "description": {
+          "string": "侧边栏中的主强调色"
+        }
+      },
+      "sidebar_accent": {
+        "label": {
+          "string": "侧边栏强调色"
+        },
+        "description": {
+          "string": "侧边栏中的强调色"
+        }
+      },
+      "header_background": {
+        "label": {
+          "string": "页眉背景"
+        },
+        "description": {
+          "string": "顶部页眉栏的 HSL 颜色值"
+        }
+      },
+      "header_foreground": {
+        "label": {
+          "string": "页眉前景"
+        },
+        "description": {
+          "string": "页眉中的文本颜色"
+        }
+      },
+      "logo_url": {
+        "label": {
+          "string": "Logo URL"
+        },
+        "description": {
+          "string": "自定义 Logo 图片的 URL（可选）"
+        }
+      },
+      "custom_css": {
+        "label": {
+          "string": "自定义 CSS"
+        },
+        "description": {
+          "string": "要注入的额外 CSS 规则（可选）"
+        }
+      }
+    },
+    "save": {
+      "string": "保存更改"
+    },
+    "saving": {
+      "string": "正在保存…"
+    },
+    "saved": {
+      "string": "主题设置已成功保存"
+    },
+    "save_error": {
+      "string": "保存失败：{message}"
+    },
+    "unsaved_changes": {
+      "string": "您有未保存的更改"
+    },
+    "load_error": {
+      "string": "加载主题设置失败"
+    },
+    "retry": {
+      "string": "重试"
+    }
+  }
+}

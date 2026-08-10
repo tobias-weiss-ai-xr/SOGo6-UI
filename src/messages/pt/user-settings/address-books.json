@@ -1,0 +1,37 @@
+{
+    "US_ADDRESS_BOOKS": {
+        "create": {
+            "string": "Adicionar categoria de contato",
+            "context": "Button text to add a new address book category"
+        },
+        "title": {
+            "string": "Catálogos de Endereços",
+            "context": "Title for the address books settings page"
+        },
+        "accessibility": {
+            "icon": {
+                "delete": {
+                    "string": "Excluir {name}",
+                    "context": "Accessibility message for the delete icon"
+                }
+            }
+        },
+        "notification": {
+            "title": "Notificações",
+            "string": "Enviar notificação por e-mail quando um catálogo de endereços for criado",
+            "context": "Label for the notification setting"
+        },
+        "categories": {
+            "title": "Categorias",
+            "Work": "Trabalho",
+            "Family": "Família",
+            "Friends": "Amigos"
+        },
+        "color": {
+            "title": "Cor"
+        },
+        "validation": {
+            "category-name-required": "O nome da categoria é obrigatório"
+        }
+    }
+}

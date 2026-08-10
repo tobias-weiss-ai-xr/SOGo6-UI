@@ -1,0 +1,59 @@
+{
+    "NAVIGATION": {
+        "address_book": {
+            "string": "주소록"
+        },
+        "calendar": {
+            "string": "캘린더"
+        },
+        "tasks": {
+            "string": "작업"
+        },
+        "notes": {
+            "string": "메모"
+        },
+        "fast_access": {
+            "calendar": {
+                "title": "캘린더",
+                "view_all": "전체 보기",
+                "today": "오늘",
+                "no_events": "오늘 이벤트 없음",
+                "all_day": "All day",
+                "loading": "이벤트 로딩 중…",
+                "error": "캘린더"
+            },
+            "tasks": {
+                "title": "작업",
+                "view_all": "전체 보기",
+                "search_placeholder": "Search tasks",
+                "overdue": "Overdue",
+                "today": "오늘",
+                "upcoming": "Upcoming",
+                "no_due_date": "No due date",
+                "empty": "You're all caught up",
+                "no_results": "No matches",
+                "loading": "작업 로딩 중…",
+                "error": "Could not load tasks"
+            },
+            "address_book": {
+                "title": "Contacts",
+                "view_all": "View all",
+                "search_placeholder": "Search contacts and lists",
+                "distribution_lists": "Distribution lists",
+                "contacts": "Contacts",
+                "member_count": "{number} members",
+                "compose": "Write message",
+                "loading": "Loading contacts…",
+                "error": "Could not load contacts",
+                "empty": "No address book available",
+                "no_entries": "No contacts or lists yet",
+                "no_results": "No matches",
+                "search_min_length": "Enter at least 2 characters to search."
+            },
+            "coming_soon": {
+                "title": "Feature incoming",
+                "description": "This section is under development and will be available soon."
+            }
+        }
+    }
+}

@@ -1,0 +1,34 @@
+{
+  "AP_HEALTH": {
+    "title": {
+      "string": "系统健康"
+    },
+    "description": {
+      "string": "SOGo 技术栈中所有服务的实时状态。"
+    },
+    "status": {
+      "all_ok": {
+        "string": "所有系统正常运行"
+      },
+      "degraded": {
+        "string": "Degraded"
+      }
+    },
+    "overview": {
+      "uptime": {
+        "string": "可用时间"
+      },
+      "version": {
+        "string": "Version"
+      },
+      "services": {
+        "string": "Services Healthy"
+      }
+    },
+    "errors": {
+      "load_failed": {
+        "string": "Failed to load health data"
+      }
+    }
+  }
+}

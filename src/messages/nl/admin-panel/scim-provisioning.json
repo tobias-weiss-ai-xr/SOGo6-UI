@@ -1,0 +1,50 @@
+{
+  "SCIM": {
+    "title": {
+      "string": "SCIM-provisie"
+    },
+    "description": {
+      "string": "SCIM 2.0-identiteitslevenscyclusbeheer voor Azure AD, Okta en andere IdP's"
+    },
+    "errors": {
+      "email": {
+        "string": "E-mailadres is verplicht"
+      },
+      "fail": {
+        "string": "Bewerking mislukt"
+      }
+    },
+    "success": {
+      "create": {
+        "string": "Gebruiker succesvol geprovisioneerd"
+      },
+      "delete": {
+        "string": "Gebruiker gedeprovisioneerd"
+      }
+    },
+    "field": {
+      "email": {
+        "string": "Gebruikersnaam/E-mail"
+      },
+      "name": {
+        "string": "Weergavenaam"
+      },
+      "status": {
+        "string": "Status"
+      }
+    },
+    "button": {
+      "provision": {
+        "string": "Gebruiker provisioneren"
+      }
+    },
+    "users": {
+      "title": {
+        "string": "Geprovisioneerde gebruikers"
+      },
+      "empty": {
+        "string": "Nog geen SCIM-gebruikers geprovisioneerd"
+      }
+    }
+  }
+}

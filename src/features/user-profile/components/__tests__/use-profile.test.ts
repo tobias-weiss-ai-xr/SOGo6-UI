@@ -10,6 +10,9 @@ jest.mock('@/lib/redux/hooks', () => ({
 
 jest.mock('../../store/profile-api', () => ({
   useGetUserProfileQuery: jest.fn(),
+  useGetUserSharedMailboxesQuery: jest.fn(
+    () => ({ data: [], isLoading: false, isError: false, error: undefined })
+  ),
 }))
 
 describe('useProfile', () => {
@@ -45,7 +48,8 @@ describe('useProfile', () => {
     expect(result.current).toHaveProperty('isLoading')
     expect(result.current).toHaveProperty('isError')
     expect(result.current).toHaveProperty('error')
-    expect(result.current).toHaveProperty('refetch')
+    expect(result.current).toHaveProperty('refetchProfile')
+    expect(result.current).toHaveProperty('refetchShared')
     expect(result.current).toHaveProperty('user')
     expect(result.current).toHaveProperty('mainAccount')
     expect(result.current).toHaveProperty('externalAccounts')

@@ -1,0 +1,171 @@
+{
+  "US_MAIL_GENERAL": {
+    "title": {
+      "string": "메일 일반 설정",
+      "context": "Title for the mail general settings page"
+    },
+    "compose_message_in": {
+      "string": "메시지 작성 시",
+      "context": "Dropdown label in what way to compose messages"
+    },
+    "display_subscribed_mailboxes_only": {
+      "string": "구독한 메일함만 표시",
+      "context": "Checkbox to show subscribed mailboxes only"
+    },
+    "fetch_count_of_unseen_messages": {
+      "string": "모든 메일함의 읽지 않은 메시지 수 가져오기",
+      "context": "Checkbox to fetch count of unseen messages for all mailboxes"
+    },
+    "sort_messages_by_threads": {
+      "string": "메시지를 스레드별로 정렬",
+      "context": "Checkbox to sort messages by threads"
+    },
+    "show_recipients_or_sender_full_email": {
+      "string": "메일함에서 수신자 또는 발신자 전체 이메일 주소 표시",
+      "context": "Checkbox to show recipients or sender full email in mailboxes"
+    },
+    "hide_attachments_for_inline_images": {
+      "string": "메일 뷰어에서 인라인 이미지를 첨부 파일로 표시하지 않기",
+      "context": "Checkbox to hide attachments for inline images"
+    },
+    "automatically_mark_messages_as_read": {
+      "string": "지정된 시간 후 메시지를 읽음으로 표시",
+      "context": "Checkbox to automatically mark messages as read"
+    },
+    "collect_unknown_addresses": {
+      "string": "알 수 없는 메일 주소를 주소록에 저장",
+      "context": "Checkbox to collect unknown mail addresses"
+    },
+    "collect_unknown_addressbook_name": {
+      "string": "주소록 이름",
+      "context": "Input for the unknown email addressbook name"
+    },
+    "forward_messages": {
+      "title": {
+        "string": "메시지 전달",
+        "context": "Dropdown label for forward messages"
+      },
+      "as_attachment": {
+        "string": "첨부 파일로",
+        "context": "Checkbox to forward messages as attachment"
+      },
+      "as_inline": {
+        "string": "본문에 포함",
+        "context": "Checkbox to forward messages as inline"
+      }
+    },
+    "start_reply": {
+      "title": {
+        "string": "메시지에 답장할 때",
+        "context": "Dropdown label to know where to start in the mail when replying"
+      },
+      "to_above": {
+        "string": "인용문 위에 답장 작성",
+        "context": "Checkbox to start replying at the bottom"
+      },
+      "to_below": {
+        "string": "인용문 아래에 답장 작성",
+        "context": "Checkbox to start replying at the top"
+      }
+    },
+    "place_signature": {
+      "title": {
+        "string": "서명 배치",
+        "context": "Dropdown label to know where to place the signature"
+      },
+      "above": {
+        "string": "인용문 위에",
+        "context": "Checkbox to start replying at the bottom"
+      },
+      "below": {
+        "string": "인용문 아래에",
+        "context": "Checkbox to start replying at the top"
+      }
+    },
+    "attachment_position": {
+      "title": {
+        "string": "첨부 파일 배치",
+        "context": "Dropdown label to know where to place the attachment"
+      },
+      "above": {
+        "string": "메일 위"
+      },
+      "below": {
+        "string": "메일 아래"
+      }
+    },
+    "sign_on": {
+      "new": {
+        "string": "새 메시지에 서명 삽입"
+      },
+      "reply": {
+        "string": "답장 메시지에 서명 삽입"
+      },
+      "forward": {
+        "string": "전달 메시지에 서명 삽입"
+      }
+    },
+    "default_font_size": {
+      "title": {
+        "string": "기본 글꼴 크기",
+        "context": "Dropdown label to know the default font size"
+      },
+      "sm": {
+        "string": "작음",
+        "context": "Small font size"
+      },
+      "md": {
+        "string": "보통",
+        "context": "Medium font size"
+      },
+      "lg": {
+        "string": "큼",
+        "context": "Large font size"
+      },
+      "xl": {
+        "string": "매우 큼",
+        "context": "Extra large font size"
+      }
+    },
+    "display_remote_images": {
+      "string": "원격 인라인 이미지 표시",
+      "context": "Checkbox to set display remote inline images to true or false"
+    },
+    "compose": {
+      "title": {
+        "string": "기본 작성 열기 동작",
+        "context": "Dropdown label to know where to open compose in"
+      },
+      "always_ask": {
+        "string": "항상 새 창 또는 웹메일 내 작성 열기 여부 묻기",
+        "context": "Dropdown label to know where to open compose in"
+      },
+      "in_new_window": {
+        "string": "새 창에서 작성 열기",
+        "context": "Dropdown label to know where to open compose in"
+      },
+      "inside_webmail": {
+        "string": "웹메일 내에서 작성 열기",
+        "context": "Dropdown label to know where to open compose in"
+      }
+    },
+    "mail_allow_receipt": {
+      "string": "메일이 수신 확인 요청 허용",
+      "context": "Checkbox to allow mail to ask for receipts"
+    },
+    "mail_folder_subscribe": {
+      "string": "구독한 메일함만 표시",
+      "context": "Checkbox to show subscribed mailboxes only"
+    },
+    "compose_mail_window": {
+      "string": "메일 작성 창",
+      "context": "Dropdown label to know where to open compose in",
+      "popup": {
+        "string": "Compose email in a popup"
+      },
+      "inline": {
+        "string": "Compose email inside the webmail"
+      }
+    }
+  }
+}

@@ -2,6 +2,8 @@
 
 import { useTranslations } from 'next-intl'
 import React from 'react'
+
+import { ErrorAlertWithRetry } from '@/components/ui/error-alert'
 import MailLabelsSettingsForm from './components/labels-form'
 import { PageLoader } from '@/components/lazy-components'
 import {
@@ -11,10 +13,10 @@ import {
 
 const MailLabelsSettings: React.FC = () => {
   const t = useTranslations('US_MAIL_LABELS')
-  const { data, error, isFetching } = useGetMailLabelsSettingsQuery()
+  const { data, error, isFetching, refetch } = useGetMailLabelsSettingsQuery()
   const [updateData] = useUpdateMailLabelsSettingsMutation()
   if (error) {
-    return 'ERROR'
+    return <ErrorAlertWithRetry onRetry={() => refetch()} />
   }
   return (
     <div className="grid grid-cols-1 gap-4">

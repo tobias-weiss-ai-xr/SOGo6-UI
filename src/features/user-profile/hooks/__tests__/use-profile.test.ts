@@ -69,19 +69,20 @@ describe('useProfile hook', () => {
     })
 
     it('should return isLoading', () => {
-      expect(fileContent).toContain('isLoading,')
+      expect(fileContent).toMatch(/isLoading:\s*profileLoading\s*\|\|\s*sharedLoading/)
     })
 
     it('should return isError', () => {
-      expect(fileContent).toContain('isError,')
+      expect(fileContent).toMatch(/isError:\s*profileError\s*\|\|\s*sharedError/)
     })
 
     it('should return error', () => {
-      expect(fileContent).toContain('error,')
+      expect(fileContent).toMatch(/error:\s*profileErr\s*\|\|\s*sharedErr/)
     })
 
     it('should return refetch', () => {
-      expect(fileContent).toContain('refetch,')
+      expect(fileContent).toContain('refetchProfile,')
+      expect(fileContent).toContain('refetchShared,')
     })
   })
 

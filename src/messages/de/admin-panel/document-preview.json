@@ -1,0 +1,34 @@
+{
+    "AP_DOCPREV": {
+        "title": {
+            "string": "Dokumentenvorschau"
+        },
+        "description": {
+            "string": "Preview PDF and Office documents in-browser. PDFs render natively; Office docs use Collabora/OnlyOffice."
+        },
+        "upload": {
+            "dropzone": {
+                "string": "Click to upload or drag a document"
+            }
+        },
+        "settings": {
+            "button": {
+                "string": "Einstellungen"
+            },
+            "title": {
+                "string": "Preview Settings"
+            },
+            "collabora_url": {
+                "string": "Collabora/OnlyOffice URL"
+            },
+            "hint": {
+                "string": "The base URL of your Collabora or OnlyOffice server. Leave default for demo mode."
+            }
+        },
+        "errors": {
+            "unsupported": {
+                "string": "Unsupported file type. Use .pdf, .docx, .xlsx, or .pptx"
+            }
+        }
+    }
+}

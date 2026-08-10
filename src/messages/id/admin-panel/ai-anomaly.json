@@ -1,0 +1,49 @@
+{
+  "AI_ANOMALY": {
+    "title": {
+      "string": "Deteksi Anomali"
+    },
+    "description": {
+      "string": "Tandai pola pengiriman yang tidak biasa: email massal, jam aneh, penerima baru."
+    },
+    "input": {
+      "title": {
+        "string": "Pola Pengiriman"
+      },
+      "recipients": {
+        "string": "Jumlah Penerima"
+      },
+      "hour": {
+        "string": "Jam (0-23)"
+      },
+      "new_ratio": {
+        "string": "Rasio Penerima Baru"
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Hasil Analisis"
+      },
+      "empty": {
+        "string": "Masukkan nilai dan klik Analisis"
+      },
+      "anomaly": {
+        "string": "Anomali Terdeteksi!"
+      },
+      "normal": {
+        "string": "Pola Normal"
+      },
+      "score": {
+        "string": "Skor Risiko"
+      }
+    },
+    "analyze": {
+      "string": "Analisis"
+    },
+    "errors": {
+      "fail": {
+        "string": "Analisis gagal"
+      }
+    }
+  }
+}

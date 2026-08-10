@@ -1,0 +1,54 @@
+{
+  "AP_MIG": {
+    "title": {
+      "string": "Migrasjonsverktøy"
+    },
+    "description": {
+      "string": "Importer data fra eksterne kilder – G Suite, M365, Dovecot, Cyrus eller filopplasting."
+    },
+    "wizard": {
+      "title": {
+        "string": "Start migrasjon"
+      },
+      "source": {
+        "string": "Kilde"
+      },
+      "select_source": {
+        "string": "Velg en kilde..."
+      },
+      "user": {
+        "string": "Målbruker"
+      },
+      "select_user": {
+        "string": "Velg bruker..."
+      }
+    },
+    "start": {
+      "button": {
+        "string": "Start migrasjon"
+      },
+      "running": {
+        "string": "Starter..."
+      },
+      "success": {
+        "string": "Migrasjon startet"
+      },
+      "error": {
+        "string": "Migrasjon mislyktes"
+      }
+    },
+    "history": {
+      "title": {
+        "string": "Migrasjonshistorikk"
+      },
+      "empty": {
+        "string": "Ingen migrasjoner ennå."
+      }
+    },
+    "errors": {
+      "fields": {
+        "string": "Kilde og bruker er påkrevd"
+      }
+    }
+  }
+}

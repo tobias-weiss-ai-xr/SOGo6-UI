@@ -1,0 +1,108 @@
+{
+  "ADDRESS_BOOKS_ERRORS": {
+    "list_member_invalid": {
+      "string": "Een of meer geselecteerde leden zijn geen contacten in dit adresboek.",
+      "context": "Inline error when a distribution list member is invalid."
+    },
+    "addressbook_not_found": {
+      "string": "Het adresboek kon niet worden gevonden.",
+      "context": "Error when an address book is missing."
+    },
+    "addressbook_duplicate": {
+      "string": "Er bestaat al een adresboek met deze naam.",
+      "context": "Toast when address book creation conflicts."
+    },
+    "contact_not_found": {
+      "string": "Het contact kon niet worden gevonden.",
+      "context": "Error when a contact is missing."
+    },
+    "contact_duplicate": {
+      "string": "Er bestaat al een contact met deze identifier.",
+      "context": "Toast when contact creation conflicts."
+    },
+    "contact_persist_failed": {
+      "string": "Het contact kon niet worden opgeslagen.",
+      "context": "Error when contact creation fails on the server."
+    },
+    "contact_update_failed": {
+      "string": "Het contact kon niet worden bijgewerkt.",
+      "context": "Error when contact update fails on the server."
+    },
+    "operation_not_supported": {
+      "string": "Deze bewerking wordt niet ondersteund voor dit adresboek.",
+      "context": "Error when mutating a non-local address book source."
+    },
+    "list_not_found": {
+      "string": "De distributielijst kon niet worden gevonden.",
+      "context": "Error when a distribution list is missing."
+    },
+    "list_duplicate": {
+      "string": "Er bestaat al een distributielijst met deze naam.",
+      "context": "Toast when list creation conflicts."
+    },
+    "list_persist_failed": {
+      "string": "De distributielijst kon niet worden opgeslagen.",
+      "context": "Error when list creation fails on the server."
+    },
+    "list_update_failed": {
+      "string": "De distributielijst kon niet worden bijgewerkt.",
+      "context": "Error when list update fails on the server."
+    },
+    "access_denied": {
+      "string": "U heeft geen toestemming om dit adresboek te wijzigen.",
+      "context": "Toast when write access is denied."
+    },
+    "read_only": {
+      "string": "Dit adresboek is alleen-lezen.",
+      "context": "Toast when mutating a read-only address book."
+    },
+    "export_format_unsupported": {
+      "string": "Het geselecteerde exportformaat wordt niet ondersteund.",
+      "context": "Error when export format negotiation fails."
+    },
+    "import_no_file": {
+      "string": "Er is geen bestand opgegeven voor import.",
+      "context": "Error when import request has no file."
+    },
+    "import_too_large": {
+      "string": "Het importbestand overschrijdt de maximale toegestane grootte (10 MB).",
+      "context": "Error when import payload is too large."
+    },
+    "import_parse_failed": {
+      "string": "Het importbestand kon niet worden verwerkt.",
+      "context": "Error when import document parsing fails."
+    },
+    "job_not_found": {
+      "string": "De achtergrondtaak kon niet worden gevonden.",
+      "context": "Error when polling an unknown job."
+    },
+    "job_forbidden": {
+      "string": "U heeft geen toegang tot deze achtergrondtaak.",
+      "context": "Error when job belongs to another user."
+    },
+    "job_not_ready": {
+      "string": "De export is nog niet klaar. Wacht even en probeer het opnieuw.",
+      "context": "Error when downloading a job result too early."
+    },
+    "job_no_result": {
+      "string": "Deze taak heeft geen downloadbaar resultaat.",
+      "context": "Error when job result is unavailable."
+    },
+    "job_concurrent_limit": {
+      "string": "Er lopen te veel achtergrondtaken. Probeer het later opnieuw.",
+      "context": "Error when concurrent job limit is reached."
+    },
+    "file_too_large": {
+      "string": "De foto overschrijdt de maximale toegestane grootte (2 MB).",
+      "context": "Inline error when contact photo upload is too large."
+    },
+    "file_type_not_allowed": {
+      "string": "Dit bestandstype is niet toegestaan voor contactfoto's.",
+      "context": "Inline error when contact photo type is not allowed."
+    },
+    "generic": {
+      "string": "De bewerking kon niet worden voltooid. Probeer het opnieuw.",
+      "context": "Fallback error message for contact API errors."
+    }
+  }
+}

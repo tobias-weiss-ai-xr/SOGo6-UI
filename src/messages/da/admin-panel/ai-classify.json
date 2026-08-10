@@ -1,0 +1,46 @@
+{
+  "AI_CLASSIFY": {
+    "title": {
+      "string": "Intelligent e-mail-klassificering"
+    },
+    "description": {
+      "string": "Automatisk mærkning af e-mails: nyhedsbrev, faktura, notifikation, socialt, personligt."
+    },
+    "input": {
+      "title": {
+        "string": "Indtast e-mail"
+      },
+      "subject": {
+        "string": "Emne"
+      },
+      "sender": {
+        "string": "Afsender"
+      },
+      "body": {
+        "string": "Brødtekst"
+      },
+      "placeholder": {
+        "string": "Indsæt e-mail-indhold her..."
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Klassificeringsresultater"
+      },
+      "empty": {
+        "string": "Indtast tekst og klik på Klassificer"
+      }
+    },
+    "classify": {
+      "string": "Klassificer"
+    },
+    "errors": {
+      "empty": {
+        "string": "Indtast e-mail-tekst"
+      },
+      "fail": {
+        "string": "Klassificering mislykkedes"
+      }
+    }
+  }
+}

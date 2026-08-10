@@ -1,0 +1,40 @@
+{
+  "AP_FREEBUSY": {
+    "title": {
+      "string": "Tra cứu Trạng thái Rảnh/Bận"
+    },
+    "description": {
+      "string": "Hiển thị chồng lịch của người tham dự. Kiểm tra tính sẵn sàng khi tạo sự kiện."
+    },
+    "form": {
+      "title": {
+        "string": "Kiểm tra Tính Sẵn Sàng"
+      },
+      "participants": {
+        "string": "Người tham dự"
+      },
+      "start": {
+        "string": "Bắt đầu"
+      },
+      "end": {
+        "string": "Kết thúc"
+      },
+      "lookup": {
+        "string": "Tra cứu"
+      }
+    },
+    "results": {
+      "title": {
+        "string": "Khoảng thời gian bận"
+      }
+    },
+    "errors": {
+      "fields": {
+        "string": "Ít nhất một người tham dự là bắt buộc"
+      }
+    },
+    "error": {
+      "string": "Tra cứu thất bại"
+    }
+  }
+}

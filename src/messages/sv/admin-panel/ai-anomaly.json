@@ -1,0 +1,49 @@
+{
+  "AI_ANOMALY": {
+    "title": {
+      "string": "Avvikelsedetektering"
+    },
+    "description": {
+      "string": "Markera ovanliga sändningsmönster: massutskick, udda tider, nya mottagare."
+    },
+    "input": {
+      "title": {
+        "string": "Sändningsmönster"
+      },
+      "recipients": {
+        "string": "Antal mottagare"
+      },
+      "hour": {
+        "string": "Timme (0-23)"
+      },
+      "new_ratio": {
+        "string": "Andel nya mottagare"
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Analysresultat"
+      },
+      "empty": {
+        "string": "Ange värden och klicka på Analysera"
+      },
+      "anomaly": {
+        "string": "Avvikelse upptäckt!"
+      },
+      "normal": {
+        "string": "Mönster normalt"
+      },
+      "score": {
+        "string": "Riskpoäng"
+      }
+    },
+    "analyze": {
+      "string": "Analysera"
+    },
+    "errors": {
+      "fail": {
+        "string": "Analys misslyckades"
+      }
+    }
+  }
+}

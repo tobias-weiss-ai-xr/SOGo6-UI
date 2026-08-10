@@ -1,0 +1,88 @@
+{
+    "HEADER": {
+        "theme": {
+            "title": {
+                "string": "Tema",
+                "context": "Título da seção para o menu suspenso do cabeçalho"
+            },
+            "dark": {
+                "string": "Escuro",
+                "context": "Alternador de tema escuro no cabeçalho"
+            },
+            "light": {
+                "string": "Claro",
+                "context": "Alternador de tema claro no cabeçalho"
+            },
+            "dyslexia": {
+                "string": "Dislexia",
+                "context": "Alternador de tema dislexia no cabeçalho"
+            },
+            "tritanopia": {
+                "string": "Tritanopia",
+                "context": "Alternador de tema tritanopia no cabeçalho"
+            },
+            "protanopia": {
+                "string": "Protanopia",
+                "context": "Alternador de tema protanopia no cabeçalho"
+            },
+            "deuteranopia": {
+                "string": "Deuteranopia",
+                "context": "Alternador de tema deuteranopia no cabeçalho"
+            },
+            "system": {
+                "string": "Auto",
+                "context": "Alternador de tema automático no cabeçalho"
+            }
+        },
+        "admin": {
+            "panel": {
+                "string": "Painel de Administrador",
+                "context": "Título do painel de administração no menu suspenso do cabeçalho"
+            }
+        },
+        "account": {
+            "section": {
+                "string": "Conta",
+                "context": "Título da seção para o menu suspenso do cabeçalho"
+            },
+            "profile": {
+                "string": "Perfil",
+                "context": "Link para o perfil da conta no menu suspenso do cabeçalho"
+            },
+            "security": {
+                "string": "Segurança",
+                "context": "Link para a segurança da conta no menu suspenso do cabeçalho"
+            },
+            "defaultUser": {
+                "string": "Usuário",
+                "context": "Nome de usuário padrão quando o perfil ainda não foi carregado"
+            }
+        },
+        "logout": {
+            "string": "Sair",
+            "context": "Link para sair no menu suspenso do cabeçalho"
+        },
+        "settings": {
+            "title": {
+                "string": "Configurações",
+                "context": "Título da seção para o menu suspenso do cabeçalho"
+            },
+            "general": {
+                "string": "Geral",
+                "context": "Link para as configurações gerais no menu suspenso do cabeçalho"
+            },
+            "calendar": {
+                "string": "Calendário",
+                "context": "Link para as configurações de calendário no menu suspenso do cabeçalho"
+            },
+            "address_books": {
+                "string": "Cadernetas de endereços",
+                "context": "Link para as configurações de cadernetas de endereços no menu suspenso do cabeçalho"
+            },
+            "email": {
+                "string": "Email",
+                "context": "Link para as configurações de email no menu suspenso do cabeçalho"
+            }
+        }
+    }
+}

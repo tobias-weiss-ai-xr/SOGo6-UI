@@ -1,0 +1,40 @@
+{
+  "AP_FREEBUSY": {
+    "title": {
+      "string": "Kontrola volno/obsazeno"
+    },
+    "description": {
+      "string": "Vizualizace rozvrhu účastníků. Zkontrolujte dostupnost při vytváření událostí."
+    },
+    "form": {
+      "title": {
+        "string": "Zkontrolovat dostupnost"
+      },
+      "participants": {
+        "string": "Účastníci"
+      },
+      "start": {
+        "string": "Začátek"
+      },
+      "end": {
+        "string": "Konec"
+      },
+      "lookup": {
+        "string": "Vyhledat"
+      }
+    },
+    "results": {
+      "title": {
+        "string": "Obsazená období"
+      }
+    },
+    "errors": {
+      "fields": {
+        "string": "Je vyžadován alespoň jeden účastník"
+      }
+    },
+    "error": {
+      "string": "Vyhledávání se nezdařilo"
+    }
+  }
+}

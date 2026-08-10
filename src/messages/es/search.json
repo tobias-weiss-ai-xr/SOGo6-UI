@@ -1,0 +1,15 @@
+{
+  "search": {
+    "openCommandPalette": "Presione Cmd+K para abrir la paleta de comandos",
+    "placeholder": "Buscar correos, contactos, calendario\u2026",
+    "navigate": "Navegaci\u00f3n r\u00e1pida",
+    "results": "Resultados",
+    "noResults": "Sin resultados.",
+    "goToInbox": "Ir a la bandeja de entrada",
+    "goToMail": "Ir al correo",
+    "goToContacts": "Ir a contactos",
+    "goToCalendar": "Ir al calendario",
+    "goToSettings": "Ir a ajustes",
+    "searchInMail": "Buscar en correos \"{query}\""
+  }
+}

@@ -1,0 +1,48 @@
+{
+    "COMMONS": {
+        "close": {
+            "string": "Kapat"
+        },
+        "workInProgress": {
+            "description": {
+                "string": "Bu özellik şu anda geliştirme aşamasındadır."
+            },
+            "message": {
+                "string": "Bu özelliği size sunmak için sıkı çalışıyoruz."
+            },
+            "comingSoon": {
+                "string": "Yakında! Takipte kalın."
+            }
+        }
+    },
+    "COMMON": {
+        "demo": {
+            "warning": {
+                "title": {
+                    "string": "Demo Sürümü"
+                },
+                "description": {
+                    "string": "Şu anda uygulamanın demo sürümünü kullanıyorsunuz. Bazı özellikler sınırlı olabilir."
+                },
+                "action": {
+                    "string": "Anladım"
+                }
+            }
+        },
+        "language": {
+            "english": "English",
+            "french": "Français"
+        },
+        "serviceUnavailable": {
+            "title": {
+                "string": "Hizmet kullanılamıyor"
+            },
+            "description": {
+                "string": "Uygulama sunucuya bağlanamadı. Lütfen daha sonra tekrar deneyin veya yöneticinize başvurun."
+            },
+            "retry": {
+                "string": "Tekrar dene"
+            }
+        }
+    }
+}

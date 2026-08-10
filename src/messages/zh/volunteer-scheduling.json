@@ -1,0 +1,98 @@
+{
+  "VOLUNTEER": {
+    "title": {
+      "string": "志愿者排班"
+    },
+    "description": {
+      "string": "管理志愿者、追踪工时"
+    },
+    "errors": {
+      "fields": {
+        "string": "必填字段缺失"
+      },
+      "fail": {
+        "string": "操作失败"
+      }
+    },
+    "success": {
+      "create": {
+        "string": "志愿者已注册"
+      },
+      "shift": {
+        "string": "班次已分配"
+      },
+      "cert": {
+        "string": "证书已生成"
+      }
+    },
+    "register": {
+      "title": {
+        "string": "注册志愿者"
+      }
+    },
+    "shift": {
+      "title": {
+        "string": "新建班次"
+      },
+      "select": {
+        "string": "选择志愿者..."
+      },
+      "task": {
+        "string": "任务"
+      },
+      "start": {
+        "string": "开始时间"
+      },
+      "end": {
+        "string": "结束时间"
+      }
+    },
+    "field": {
+      "name": {
+        "string": "姓名"
+      },
+      "email": {
+        "string": "邮箱"
+      },
+      "hours": {
+        "string": "工时"
+      },
+      "status": {
+        "string": "状态"
+      },
+      "no_shows": {
+        "string": "缺勤次数"
+      }
+    },
+    "button": {
+      "register": {
+        "string": "注册"
+      },
+      "assign": {
+        "string": "分配班次"
+      }
+    },
+    "stats": {
+      "title": {
+        "string": "统计信息"
+      },
+      "volunteers": {
+        "string": "志愿者"
+      },
+      "hours": {
+        "string": "总工时"
+      },
+      "shifts": {
+        "string": "活跃班次"
+      }
+    },
+    "list": {
+      "title": {
+        "string": "所有志愿者"
+      },
+      "empty": {
+        "string": "暂无志愿者"
+      }
+    }
+  }
+}

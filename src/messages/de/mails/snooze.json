@@ -1,0 +1,39 @@
+{
+  "MAIL_SNOOZE": {
+    "title": {
+      "string": "Später erinnern"
+    },
+    "description": {
+      "string": "Wählen Sie, wann diese E-Mail in Ihrem Posteingang wieder erscheinen soll."
+    },
+    "presets": {
+      "later_today": {
+        "string": "Später heute"
+      },
+      "tomorrow": {
+        "string": "Morgen"
+      },
+      "this_weekend": {
+        "string": "Dieses Wochenende"
+      },
+      "next_week": {
+        "string": "Nächste Woche"
+      }
+    },
+    "pick_date": {
+      "string": "Datum und Uhrzeit auswählen"
+    },
+    "pick_date_placeholder": {
+      "string": "Datum auswählen..."
+    },
+    "snooze_button": {
+      "string": "Später erinnern"
+    },
+    "success": {
+      "string": "E-Mail zurückgestellt"
+    },
+    "error": {
+      "string": "Fehler beim Zurückstellen der E-Mail"
+    }
+  }
+}

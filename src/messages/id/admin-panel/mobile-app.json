@@ -1,0 +1,65 @@
+{
+  "MOBILE": {
+    "title": {
+      "string": "Manajemen Aplikasi Seluler"
+    },
+    "description": {
+      "string": "Kelola perangkat terdaftar, notifikasi push, dan konfigurasi aplikasi"
+    },
+    "errors": {
+      "fail": {
+        "string": "Operasi gagal"
+      }
+    },
+    "success": {
+      "unregister": {
+        "string": "Perangkat dicabut pendaftarannya"
+      },
+      "broadcast": {
+        "string": "Notifikasi push terkirim"
+      }
+    },
+    "config": {
+      "title": {
+        "string": "Pengaturan Aplikasi"
+      },
+      "push": {
+        "string": "Notifikasi Push"
+      },
+      "biometric": {
+        "string": "Autentikasi Biometrik"
+      }
+    },
+    "push": {
+      "title": {
+        "placeholder": {
+          "string": "Judul notifikasi"
+        }
+      },
+      "message": {
+        "placeholder": {
+          "string": "Pesan..."
+        }
+      },
+      "broadcast": {
+        "string": "Kirim"
+      }
+    },
+    "stats": {
+      "title": {
+        "string": "Statistik"
+      },
+      "devices": {
+        "string": "Perangkat Terdaftar"
+      }
+    },
+    "devices": {
+      "title": {
+        "string": "Semua Perangkat"
+      },
+      "empty": {
+        "string": "Belum ada perangkat terdaftar"
+      }
+    }
+  }
+}

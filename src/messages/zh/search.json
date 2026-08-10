@@ -1,0 +1,15 @@
+{
+  "search": {
+    "openCommandPalette": "按 Cmd+K 打开命令面板",
+    "placeholder": "搜索邮件、联系人、日历…",
+    "navigate": "快速导航",
+    "results": "搜索结果",
+    "noResults": "未找到结果。",
+    "goToInbox": "前往收件箱",
+    "goToMail": "前往邮件",
+    "goToContacts": "前往联系人",
+    "goToCalendar": "前往日历",
+    "goToSettings": "前往设置",
+    "searchInMail": "在邮件中搜索 \"{query}\""
+  }
+}

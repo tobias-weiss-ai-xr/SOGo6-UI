@@ -1,0 +1,54 @@
+{
+  "AI_ENRICH": {
+    "title": {
+      "string": "Automatisk berikelse av kontakter"
+    },
+    "description": {
+      "string": "Hent ut telefon, tittel, firma og sted fra e-postsignaturer."
+    },
+    "input": {
+      "title": {
+        "string": "E-postsignatur"
+      },
+      "signature": {
+        "string": "Signaturtekst"
+      },
+      "placeholder": {
+        "string": "Lim inn en e-postsignatur her..."
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Utvunnet informasjon"
+      },
+      "empty": {
+        "string": "Skriv inn signaturtekst og klikk Utvinn"
+      }
+    },
+    "extract": {
+      "string": "Utvinn info"
+    },
+    "field": {
+      "phone": {
+        "string": "Telefon"
+      },
+      "title": {
+        "string": "Tittel"
+      },
+      "company": {
+        "string": "Firma"
+      },
+      "location": {
+        "string": "Sted"
+      }
+    },
+    "errors": {
+      "empty": {
+        "string": "Skriv inn tekst"
+      },
+      "fail": {
+        "string": "Utvinning mislyktes"
+      }
+    }
+  }
+}

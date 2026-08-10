@@ -1,0 +1,108 @@
+{
+  "ADDRESS_BOOKS_ERRORS": {
+    "list_member_invalid": {
+      "string": "Um ou mais membros selecionados não são contatos neste catálogo de endereços.",
+      "context": "Inline error when a distribution list member is invalid."
+    },
+    "addressbook_not_found": {
+      "string": "O catálogo de endereços não pôde ser encontrado.",
+      "context": "Error when an address book is missing."
+    },
+    "addressbook_duplicate": {
+      "string": "Já existe um catálogo de endereços com este nome.",
+      "context": "Toast when address book creation conflicts."
+    },
+    "contact_not_found": {
+      "string": "O contato não pôde ser encontrado.",
+      "context": "Error when a contact is missing."
+    },
+    "contact_duplicate": {
+      "string": "Já existe um contato com este identificador.",
+      "context": "Toast when contact creation conflicts."
+    },
+    "contact_persist_failed": {
+      "string": "O contato não pôde ser salvo.",
+      "context": "Error when contact creation fails on the server."
+    },
+    "contact_update_failed": {
+      "string": "O contato não pôde ser atualizado.",
+      "context": "Error when contact update fails on the server."
+    },
+    "operation_not_supported": {
+      "string": "Esta operação não é suportada para este catálogo de endereços.",
+      "context": "Error when mutating a non-local address book source."
+    },
+    "list_not_found": {
+      "string": "A lista de distribuição não pôde ser encontrada.",
+      "context": "Error when a distribution list is missing."
+    },
+    "list_duplicate": {
+      "string": "Já existe uma lista de distribuição com este nome.",
+      "context": "Toast when list creation conflicts."
+    },
+    "list_persist_failed": {
+      "string": "A lista de distribuição não pôde ser salva.",
+      "context": "Error when list creation fails on the server."
+    },
+    "list_update_failed": {
+      "string": "A lista de distribuição não pôde ser atualizada.",
+      "context": "Error when list update fails on the server."
+    },
+    "access_denied": {
+      "string": "Você não tem permissão para modificar este catálogo de endereços.",
+      "context": "Toast when write access is denied."
+    },
+    "read_only": {
+      "string": "Este catálogo de endereços é somente leitura.",
+      "context": "Toast when mutating a read-only address book."
+    },
+    "export_format_unsupported": {
+      "string": "O formato de exportação selecionado não é suportado.",
+      "context": "Error when export format negotiation fails."
+    },
+    "import_no_file": {
+      "string": "Nenhum arquivo foi fornecido para importação.",
+      "context": "Error when import request has no file."
+    },
+    "import_too_large": {
+      "string": "O arquivo de importação excede o tamanho máximo permitido (10 MB).",
+      "context": "Error when import payload is too large."
+    },
+    "import_parse_failed": {
+      "string": "O arquivo de importação não pôde ser analisado.",
+      "context": "Error when import document parsing fails."
+    },
+    "job_not_found": {
+      "string": "O trabalho em segundo plano não pôde ser encontrado.",
+      "context": "Error when polling an unknown job."
+    },
+    "job_forbidden": {
+      "string": "Você não tem acesso a este trabalho em segundo plano.",
+      "context": "Error when job belongs to another user."
+    },
+    "job_not_ready": {
+      "string": "A exportação ainda não está pronta. Aguarde e tente novamente.",
+      "context": "Error when downloading a job result too early."
+    },
+    "job_no_result": {
+      "string": "Este trabalho não tem resultado para download.",
+      "context": "Error when job result is unavailable."
+    },
+    "job_concurrent_limit": {
+      "string": "Muitos trabalhos em segundo plano estão em execução. Tente novamente mais tarde.",
+      "context": "Error when concurrent job limit is reached."
+    },
+    "file_too_large": {
+      "string": "A foto excede o tamanho máximo permitido (2 MB).",
+      "context": "Inline error when contact photo upload is too large."
+    },
+    "file_type_not_allowed": {
+      "string": "Este tipo de arquivo não é permitido para fotos de contato.",
+      "context": "Inline error when contact photo type is not allowed."
+    },
+    "generic": {
+      "string": "A operação não pôde ser concluída. Tente novamente.",
+      "context": "Fallback error message for contact API errors."
+    }
+  }
+}

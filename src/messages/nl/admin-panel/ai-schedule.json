@@ -1,0 +1,43 @@
+{
+  "AI_SCHEDULE": {
+    "title": {
+      "string": "Slimme kalenderplanning"
+    },
+    "description": {
+      "string": "AI-voorgestelde vergadertijden op basis van beschikbaarheidspatronen en voorkeuren van deelnemers."
+    },
+    "input": {
+      "title": {
+        "string": "Vergadering instellen"
+      },
+      "attendees": {
+        "string": "Deelnemers"
+      },
+      "from": {
+        "string": "Van"
+      },
+      "to": {
+        "string": "Tot"
+      },
+      "duration": {
+        "string": "Duur (min)"
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Voorgestelde tijden"
+      }
+    },
+    "suggest": {
+      "string": "Tijden voorstellen"
+    },
+    "errors": {
+      "fields": {
+        "string": "Deelnemers, start- en einddatum zijn verplicht"
+      },
+      "fail": {
+        "string": "Voorstellen mislukt"
+      }
+    }
+  }
+}

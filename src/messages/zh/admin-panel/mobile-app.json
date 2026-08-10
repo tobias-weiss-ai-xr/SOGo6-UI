@@ -1,0 +1,63 @@
+{
+  "MOBILE": {
+    "title": {
+      "string": "移动应用管理"
+    },
+    "description": {
+      "string": "管理已注册设备、推送通知和应用配置"
+    },
+    "errors": {
+      "fail": {
+        "string": "操作失败"
+      }
+    },
+    "success": {
+      "unregister": {
+        "string": "设备已注销"
+      },
+      "broadcast": {
+        "string": "推送通知已发送"
+      }
+    },
+    "config": {
+      "title": {
+        "string": "应用设置"
+      },
+      "push": {
+        "string": "推送通知"
+      },
+      "biometric": {
+        "string": "生物识别认证"
+      }
+    },
+    "push": {
+      "title": {
+        "string": "推送广播"
+      },
+      "message": {
+        "placeholder": {
+          "string": "消息..."
+        }
+      },
+      "broadcast": {
+        "string": "发送"
+      }
+    },
+    "stats": {
+      "title": {
+        "string": "统计信息"
+      },
+      "devices": {
+        "string": "已注册设备"
+      }
+    },
+    "devices": {
+      "title": {
+        "string": "所有设备"
+      },
+      "empty": {
+        "string": "暂无已注册设备"
+      }
+    }
+  }
+}

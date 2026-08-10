@@ -1,0 +1,1285 @@
+{
+  "AP_DOMAIN_CONFIGURATION": {
+    "origin": {
+      "rule": {
+        "string": "(من قاعدة {origin})"
+      },
+      "default": {
+        "string": "(من التكوين الافتراضي)"
+      },
+      "domain": {
+        "string": "(من المجال {origin})"
+      }
+    },
+    "tabs": {
+      "auth_settings": {
+        "string": "إعدادات المصادقة"
+      },
+      "user_source": {
+        "string": "مصدر المستخدمين"
+      },
+      "user_module_settings": {
+        "string": "إعدادات المستخدمين والوحدات"
+      },
+      "mail_settings": {
+        "string": "إعدادات البريد"
+      },
+      "calendar_contact_settings": {
+        "string": "إعدادات التقويم وجهات الاتصال"
+      }
+    },
+    "properties": {
+      "SOGO_D_AUTH_TYPE": {
+        "name": {
+          "string": "نوع المصادقة"
+        },
+        "description": {
+          "string": "اختر طريقة المصادقة للمستخدمين. 'Plain' تعني اسم المستخدم وكلمة المرور الكلاسيكية"
+        },
+        "developer_comment": "Options might include LDAP, SQL, etc."
+      },
+      "SOGO_D_CAS_URL": {
+        "name": {
+          "string": "عنوان URL لخادم CAS"
+        },
+        "description": {
+          "string": "ادخل عنوان URL الكامل لخادم CAS الخاص بك"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_CAS_LOGOUT_ENABLED": {
+        "name": {
+          "string": "تمكين تسجيل الخروج مع CAS"
+        },
+        "description": {
+          "string": "ضع علامة في المربع للسماح للمستخدمين بتسجيل الخروج من SOGo وخادم CAS"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_OPENID_CONFIG_URL": {
+        "name": {
+          "string": "عنوان URL لنقطة نهاية موفر OpenID"
+        },
+        "description": {
+          "string": "مثال: https://myopenid.net/.well-known/openid-configuration"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_OPENID_CLIENT_NAME": {
+        "name": {
+          "string": "اسم عميل OpenID"
+        },
+        "description": {
+          "string": "اسم عميل OpenID الخاص بك"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_OPENID_CLIENT_SECRET": {
+        "name": {
+          "string": "سر عميل OpenID"
+        },
+        "description": {
+          "string": "سر عميل OpenID الخاص بك"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_OPENID_SCOPE": {
+        "name": {
+          "string": "نطاق عميل OpenID"
+        },
+        "description": {
+          "string": "نطاق عميل OpenID الخاص بك. الافتراضي هو 'openid profile email'."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_OPENID_EMAIL": {
+        "name": {
+          "string": "مفتاح بريد المستخدم"
+        },
+        "description": {
+          "string": "المفتاح الذي يتم من خلاله العثور على بريد المستخدم في ملف تعريف المستخدم."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_OPENID_TOKEN_CHECK_INTERVAL": {
+        "name": {
+          "string": "فترة فحص الرمز المميز"
+        },
+        "description": {
+          "string": "لتقييد عدد الطلبات المرسلة إلى خادم OpenID لفحص صلاحية الرمز المميز، حدد فترة بالثواني لن يتم خلالها فحص الرمز مرة أخرى بعد نجاح الفحص الأول. 0 تعني أن الرمز سيتم فحصه دائمًا. 60 تعني أن الرمز لن يتم فحصه لمدة 60 ثانية بعد النجاح الأول."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_OPENID_REFRESH_ENABLE": {
+        "name": {
+          "string": "تمكين آلية تحديث الرمز المميز"
+        },
+        "description": {
+          "string": "إذا كان خادم OpenID يدعم آلية تحديث الرموز المميزة، فإن SOGo سيستخدمها."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_OPENID_ENDSESSION_ENABLED": {
+        "name": {
+          "string": "تمكين إنهاء الجلسة من خادم OpenID"
+        },
+        "description": {
+          "string": "بشكل افتراضي، يمكن للمستخدم تسجيل الخروج من البريد الإلكتروني عبر الويب فقط. حدد هذا الخيار لتسجيل الخروج أيضًا من خادم OpenID، مما يعني أن المستخدم سيتم تسجيل خروجهم من جميع التطبيقات التي تستخدم خادم OpenID. يعمل هذا فقط إذا كان خادم OpenID يحتوي على نقطة نهاية لإنهاء الجلسة (end_session_endpoint)."
+        },
+        "developer_comment": ""
+      },
+      "SOGo_D_OPENID_FETCH_USER_PROFILE": {
+        "name": {
+          "string": "استرجاع ملف تعريف المستخدم"
+        },
+        "description": {
+          "string": "بشكل افتراضي، يسترجع SOGo ملف تعريف المستخدم للحصول على بريد المستخدم. الغِ هذا الخيار للحصول على البريد مباشرة من الرمز المميز. الغِ هذا الخيار إذا كنت تستخدم خدمة اتحاد دليل Active Directory من مايكروسوفت (AD FS)."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SAML2_URL": {
+        "name": {
+          "string": "SAML2 لم يتم الانتهاء منه بعد!!!"
+        },
+        "description": {
+          "string": "حظًا سعيدًا للشخص الذي سيقوم بذلك..."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_PWD_CHANGE_ENABLED": {
+        "name": {
+          "string": "تمكين تغيير كلمة المرور"
+        },
+        "description": {
+          "string": "السماح للمستخدمين بتغيير كلمة المرور الخاصة بهم من SOGo. تأكد من أن مصدر المستخدم يمنح المستخدمين الحق في القيام بهذا الإجراء."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_LOGIN_CHECK_MAX_ATTEMPT": {
+        "name": {
+          "string": "الحد الأقصى لمحاولات تسجيل الدخول الفاشلة"
+        },
+        "description": {
+          "string": "حدد عدد المرات التي يمكن للمستخدم فيها فشل تسجيل الدخول قبل حجب حسابه. 0 تعني عدم وجود حد."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_LOGIN_CHECK_TIME_SPAN": {
+        "name": {
+          "string": "الفترة الزمنية لمحاولات تسجيل الدخول الفاشلة"
+        },
+        "description": {
+          "string": "حدد الفترة الزمنية بالثواني لحساب محاولات تسجيل الدخول الفاشلة. مثال: 60 تعني أن المستخدم يمكن أن يفشل حتى 'الحد الأقصى لمحاولات تسجيل الدخول الفاشلة' خلال 60 ثانية بعد الفشل الأول، قبل حجب حسابه."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_LOGIN_CHECK_BLOCK_TIME": {
+        "name": {
+          "string": "وقت حظر محاولات تسجيل الدخول الفاشلة"
+        },
+        "description": {
+          "string": "ضبط المدة بالثواني التي يتم فيها حظر المستخدم بعد عدد كبير من محاولات تسجيل الدخول الفاشلة."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_PWD_RECOVERY": {
+        "name": {
+          "string": "تمكين استعادة كلمة المرور"
+        },
+        "description": {
+          "string": "السماح للمستخدمين بتعيين طريقة لاستعادة كلمة المرور"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_PWD_RECOVERY_METHOD": {
+        "name": {
+          "string": "طرق استعادة كلمة المرور المتاحة"
+        },
+        "description": {
+          "string": "اختر طرق استعادة كلمة المرور المتاحة للمستخدمين"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_PWD_RECOVERY_FORCE": {
+        "name": {
+          "string": "إجبار على استعادة كلمة المرور"
+        },
+        "description": {
+          "string": "إجبار المستخدمين على إعداد طريقة لاستعادة كلمة المرور."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_PWD_RECOVERY_DELAY": {
+        "name": {
+          "string": "التأخير بين طلبات استعادة كلمة المرور"
+        },
+        "description": {
+          "string": "التأخير بالثواني قبل أن يتمكن المستخدم من طلب استعادة كلمة المرور مرة أخرى."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_LOGIN_MFA": {
+        "name": {
+          "string": "تمكين المصادقة متعددة العوامل (MFA)"
+        },
+        "description": {
+          "string": "السماح للمستخدمين بإعداد مصادقة متعددة العوامل"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_LOGIN_MFA_METHOD": {
+        "name": {
+          "string": "طرق المصادقة متعددة العوامل المتاحة"
+        },
+        "description": {
+          "string": "اختر طرق المصادقة متعددة العوامل المتاحة للمستخدمين"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_LOGIN_MFA_FORCE": {
+        "name": {
+          "string": "إجبار على المصادقة متعددة العوامل"
+        },
+        "description": {
+          "string": "إجبار المستخدمين على إعداد المصادقة متعددة العوامل"
+        },
+        "developer_comment": ""
+      },
+      "US_UID": {
+        "name": {
+          "string": "معرف مصدر المستخدم (UID)"
+        },
+        "description": {
+          "string": "اختر اسماً فريداً لمصدر المستخدم، لن يتم عرضه للمستخدمين"
+        },
+        "developer_comment": "Only for SOGo to differentiate differents User SOurce"
+      },
+      "US_TYPE": {
+        "name": {
+          "string": "نوع مصدر المستخدم"
+        },
+        "description": {
+          "string": "ضبط نوع مصدر المستخدم"
+        },
+        "developer_comment": "Only ldap and sql supported for now"
+      },
+      "US_LDAP_HOSTNAME": {
+        "name": {
+          "string": "اسم مضيف خادم LDAP"
+        },
+        "description": {
+          "string": "حدد المضيف والمنفذ فقط، لا تضف أي معلومات أخرى"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_BIND_DN": {
+        "name": {
+          "string": "DN الربط"
+        },
+        "description": {
+          "string": "DN لاسم تسجيل الدخول المستخدم للربط بخادمك"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_BIND_DN_PWD": {
+        "name": {
+          "string": "كلمة مرور DN الربط"
+        },
+        "description": {
+          "string": "كلمة المرور الخاصة بـ DN الربط"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_BASE_DN": {
+        "name": {
+          "string": "DN الأساسي"
+        },
+        "description": {
+          "string": "DN الأساسي لإدخالات المستخدمين. إذا كان مجال البريد موجودًا هنا، يمكنك إضافة '%d' لإضافته ديناميكيًا من بريد المستخدم مثل: 'ou=%d,dc=example,dc=com'"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_UID": {
+        "name": {
+          "string": "حقل UID"
+        },
+        "description": {
+          "string": "الحقل الذي يحتوي على اسم تسجيل دخول المستخدم، يجب أن يكون تسجيل الدخول فريدًا عبر جميع مصادر المستخدمين والنطاقات"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_CN": {
+        "name": {
+          "string": "حقل CN"
+        },
+        "description": {
+          "string": "الحقل الذي يحتوي على الاسم الكامل للمستخدم"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_ID": {
+        "name": {
+          "string": "حقل المعرف"
+        },
+        "description": {
+          "string": "الحقل الذي يبدأ به DN للمستخدم إذا لم يتم استخدام حقل الربط. (مثال: إذا كان لديك 'dn: uid=sogo,ou=users,dc=example,dc=org' يجب أن تكون القيمة 'uid')"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_SCOPE": {
+        "name": {
+          "string": "نطاق بحث LDAP"
+        },
+        "description": {
+          "string": "يحدد مجموعة الإدخالات عند أو أسفل DN الأساسي التي قد تعتبر مطابقة محتملة لطلب البحث"
+        },
+        "developer_comment": "https://ldapwiki.com/wiki/Wiki.jsp?page=LDAP%20Search%20Scopes"
+      },
+      "US_LDAP_FILTER": {
+        "name": {
+          "string": "مرشح LDAP"
+        },
+        "description": {
+          "string": "مرشح إضافي لاستخدامه في استعلامات LDAP. استخدم '=' و'!=' و'AND' و'OR' والأقواس. مثال: '(objectClass='mailUser' OR objectClass!='mailGroup') AND accountStatus='active'"
+        },
+        "developer_comment": "Use SOGo's syntax and not ldap syntax for filter"
+      },
+      "US_LDAP_PWD_POLICY": {
+        "name": {
+          "string": "سياسة كلمة مرور LDAP"
+        },
+        "description": {
+          "string": "يدل على أن خادم LDAP الخاص بك لديه سياسة كلمة مرور مع مفهوم انتهاء الصلاحية وفترة سماح"
+        },
+        "developer_comment": "https://ldapwiki.com/wiki/Wiki.jsp?page=Password%20Policy"
+      },
+      "US_LDAP_PWD_UPDATE_SAMBA": {
+        "name": {
+          "string": "تحديث كلمات مرور سامبا عبر LDAP"
+        },
+        "description": {
+          "string": "إذا قام المستخدم بتغيير كلمة المرور، يتم تحديث sambaNTPassword وsambaLMPassword أيضًا"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_BIND_AS_USER": {
+        "name": {
+          "string": "الربط ك مستخدم"
+        },
+        "description": {
+          "string": "بعد المصادقة، استخدم DN المستخدم للربط بدلاً من ذلك"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_BIND_FIELD": {
+        "name": {
+          "string": "حقول الربط الإضافية"
+        },
+        "description": {
+          "string": "حقول الربط الإضافية المستخدمة. على سبيل المثال، إذا أضفت 'mail'، سيكون الربط أيضًا 'mail=<login>'"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_ATTR_FIELD": {
+        "name": {
+          "string": "حقول السمة"
+        },
+        "description": {
+          "string": "حقول السمة المراد إرجاعها أثناء استعلام البحث. الافتراضي هو '*' أي جميع الحقول. احذر، فقد يؤثر هذا بشدة على سلوك SOGo"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_GROUP_CLASS": {
+        "name": {
+          "string": "فئة مجموعة LDAP"
+        },
+        "description": {
+          "string": "ضبط فئة LDAP التي تشير إلى SOGo بأن هذا مجموعة وليس مستخدمًا فرديًا"
+        },
+        "developer_comment": ""
+      },
+      "US_SQL_USER_URL": {
+        "name": {
+          "string": "رابط قاعدة بيانات المستخدمين (SQL)"
+        },
+        "description": {
+          "string": "رابط قاعدة البيانات لجدول المستخدمين. مثال: postgresql://sogo:sogo@127.0.0.1:5432/sogo/sogo_user"
+        },
+        "developer_comment": ""
+      },
+      "US_SQL_PREPEND_PWD_SCHEME": {
+        "name": {
+          "string": "مخطط كلمة مرور المستخدم (SQL)"
+        },
+        "description": {
+          "string": "اختر نعم إذا كانت كلمة المرور مخزنة في قاعدة البيانات بهذا الشكل {scheme}valueمشفرة"
+        },
+        "developer_comment": ""
+      },
+      "US_SQL_USER_FILTER": {
+        "name": {
+          "string": "مرشح مستخدم SQL"
+        },
+        "description": {
+          "string": "شروط WHERE إضافية لإضافتها إلى استعلام SQL. مثال: 'active=1'"
+        },
+        "developer_comment": ""
+      },
+      "US_SQL_DOMAIN_FIELD": {
+        "name": {
+          "string": "نطاق مستخدم SQL"
+        },
+        "description": {
+          "string": "ضبط اسم العمود الذي يحتوي على نطاق المستخدم. إذا تم تعيينه، سيضيف كل استعلام SQL '<domain_column> = <user domain>' إلى شرط WHERE الخاص به"
+        },
+        "developer_comment": ""
+      },
+      "US_MAPPING": {
+        "name": {
+          "string": "مطابقة مصدر المستخدم"
+        },
+        "description": {
+          "string": "ربط حقل مصدر المستخدم بسمة الاتصال"
+        },
+        "developer_comment": ""
+      },
+      "US_CAN_AUTH": {
+        "name": {
+          "string": "يمكن المصادقة"
+        },
+        "description": {
+          "string": "يمكن للمستخدمين في هذا مصدر المستخدم تسجيل الدخول إلى البريد الإلكتروني عبر الويب"
+        },
+        "developer_comment": ""
+      },
+      "US_PWD_ALGO": {
+        "name": {
+          "string": "خوارزمية كلمة مرور مصدر المستخدم"
+        },
+        "description": {
+          "string": "خوارزمية كلمة المرور المستخدمة من قبل هذا مصدر المستخدم. إلزامي لمصدر مستخدم SQL. اختياري لـ LDAP: مطلوب فقط إذا سمحت للمستخدم بتغيير كلمة المرور"
+        },
+        "developer_comment": ""
+      },
+      "US_SIM_KEY_TYPE": {
+        "name": {
+          "string": "نوع المفتاح المتماثل لخوارزمية كلمة المرور"
+        },
+        "description": {
+          "string": "يحدد كيفية تخزين المفتاح المتماثل لخوارزمية كلمة المرور"
+        },
+        "developer_comment": ""
+      },
+      "US_SIM_KEY_VALUE": {
+        "name": {
+          "string": "قيمة المفتاح المتماثل لخوارزمية كلمة المرور"
+        },
+        "description": {
+          "string": "القيمة تعتمد على النوع.\nإذا كان 'مسار'، أدخل هنا مسار الملف حيث سيجد SOGo المفتاح المتماثل.\nإذا كان 'env'، ضع اسم متغير البيئة الذي يحتوي على المفتاح.\nإذا كان 'نص عادي'، ضع المفتاح مباشرة هنا"
+        },
+        "developer_comment": ""
+      },
+      "US_PWD_POLICY": {
+        "name": {
+          "string": "سياسة كلمة مرور المستخدم"
+        },
+        "description": {
+          "string": "ضع علامة في المربع لإضافة سياسة لكلمة مرور المستخدم. ستستخدم هذه السياسة عند تغيير المستخدم لكلمة المرور أو إذا قمت بتفعيل 'التحقق من قوة كلمة المرور عند تسجيل الدخول'"
+        },
+        "developer_comment": ""
+      },
+      "US_PWD_LEN_MIN": {
+        "name": {
+          "string": "الحد الأدنى لطول كلمة مرور المستخدم"
+        },
+        "description": {
+          "string": "الطول الأدنى لكلمة مرور المستخدم، شامل. الحد الأدنى هو 4"
+        },
+        "developer_comment": ""
+      },
+      "US_PWD_LEN_MAX": {
+        "name": {
+          "string": "الحد الأقصى لطول كلمة مرور المستخدم"
+        },
+        "description": {
+          "string": "الطول الأقصى لكلمة مرور المستخدم، شامل. 0 يعني لا حد"
+        },
+        "developer_comment": ""
+      },
+      "US_PWD_UPPERCASE_MIN": {
+        "name": {
+          "string": "الحد الأدنى للحروف الكبيرة في كلمة المرور"
+        },
+        "description": {
+          "string": "الحد الأدنى لتكرار الحروف الكبيرة. 0 يعني لا حد"
+        },
+        "developer_comment": ""
+      },
+      "US_PWD_LOWERCASE_MIN": {
+        "name": {
+          "string": "الحد الأدنى للحروف الصغيرة في كلمة المرور"
+        },
+        "description": {
+          "string": "الحد الأدنى لتكرار الحروف الصغيرة. 0 يعني لا حد"
+        },
+        "developer_comment": ""
+      },
+      "US_PWD_DIGITS_MIN": {
+        "name": {
+          "string": "الحد الأدنى للأرقام في كلمة المرور"
+        },
+        "description": {
+          "string": "الحد الأدنى لتكرار الأرقام. 0 يعني لا حد"
+        },
+        "developer_comment": ""
+      },
+      "US_PWD_SPECIAL_ALLOWED": {
+        "name": {
+          "string": "الحروف الخاصة المسموح بها في كلمة مرور المستخدم"
+        },
+        "description": {
+          "string": "قائمة الحروف الخاصة المسموح بها في كلمات المرور"
+        },
+        "developer_comment": ""
+      },
+      "US_PWD_SPECIAL_MIN": {
+        "name": {
+          "string": "الحد الأدنى للحروف الخاصة في كلمة المرور"
+        },
+        "description": {
+          "string": "الحد الأدنى لتكرار الحروف الخاصة. 0 تعني عدم وجود حد"
+        },
+        "developer_comment": ""
+      },
+      "US_MAIL": {
+        "name": {
+          "string": "حقل بريد المستخدم"
+        },
+        "description": {
+          "string": "الحقل الذي يحتوي على بريد المستخدم. يمكن إضافة حقول إضافية بعد الحقل الرئيسي لبريد المستخدم للإشارة إلى الأسماء المستعارة للمستخدم"
+        },
+        "developer_comment": ""
+      },
+      "US_MAIL_SERVER_LOGIN": {
+        "name": {
+          "string": "اسم تسجيل الدخول لخادم بريد المستخدم"
+        },
+        "description": {
+          "string": "ضبط هذا الحقل فقط إذا كان تسجيل الدخول إلى خادم البريد (IMAP) مختلفًا عن البريد الرئيسي للمستخدم. أدخل هنا الحقل الذي يحتوي على اسم تسجيل الدخول"
+        },
+        "developer_comment": ""
+      },
+      "US_MAIL_FILTERING_LOGIN": {
+        "name": {
+          "string": "اسم تسجيل الدخول لخادم ترشيح بريد المستخدم"
+        },
+        "description": {
+          "string": "ضبط هذا الحقل فقط إذا كان تسجيل الدخول إلى خادم ترشيح البريد (Sieve) مختلفًا عن البريد الرئيسي للمستخدم. أدخل هنا الحقل الذي يحتوي على اسم تسجيل الدخول"
+        },
+        "developer_comment": ""
+      },
+      "US_MAIL_OUTGOING_LOGIN": {
+        "name": {
+          "string": "اسم تسجيل الدخول لخادم البريد الصادر للمستخدم"
+        },
+        "description": {
+          "string": "ضبط هذا الحقل فقط إذا كان تسجيل الدخول إلى خادم البريد الصادر (SMTP) مختلفًا عن البريد الرئيسي للمستخدم. أدخل هنا الحقل الذي يحتوي على اسم تسجيل الدخول"
+        },
+        "developer_comment": ""
+      },
+      "US_KIND": {
+        "name": {
+          "string": "نوع المستخدم"
+        },
+        "description": {
+          "string": "ضبط الحقل الذي يحتوي على نوع المستخدم ('مستخدم' أو 'مورد' أو 'مجموعة')"
+        },
+        "developer_comment": ""
+      },
+      "US_IS_ADDRESSBOOK": {
+        "name": {
+          "string": "مصدر المستخدم هو دفتر عناوين"
+        },
+        "description": {
+          "string": "ضبط الحقل إذا كان مستخدمو هذا المصدر يمكن العثور عليهم عبر الإكمال التلقائي أو دفتر العناوين العالمي"
+        },
+        "developer_comment": ""
+      },
+      "US_SEARCH": {
+        "name": {
+          "string": "حقل بحث المستخدم"
+        },
+        "description": {
+          "string": "حقل إضافي لإضافته عند البحث عن مستخدم. على سبيل المثال، 'name' سيجد المستخدمين عن طريق اسمهم"
+        },
+        "developer_comment": ""
+      },
+      "US_DISPLAY_NAME": {
+        "name": {
+          "string": "اسم عرض مصدر المستخدم"
+        },
+        "description": {
+          "string": "اسم عرض هذا المصدر للمستخدمين، سيظهر في قائمة دفتر العناوين العالمي"
+        },
+        "developer_comment": ""
+      },
+      "US_AUTO_SEARCH": {
+        "name": {
+          "string": "عرض المستخدمين تلقائيًا في GAB"
+        },
+        "description": {
+          "string": "البحث تلقائيًا وعرض المستخدمين في دليل العناوين العالمي عند تحديدهم. وإلا يجب على المستخدم كتابة نص لإطلاق البحث أو كتابة '.' للبحث عن الجميع."
+        },
+        "developer_comment": ""
+      },
+      "US_AUTO_SEARCH_LIMIT": {
+        "name": {
+          "string": "حد إكمال المستخدم تلقائيًا"
+        },
+        "description": {
+          "string": "تحديد الحد الأقصى لعدد المستخدمين المعروضين بعد استعلام البحث. 0 يعني عدم وجود حد"
+        },
+        "developer_comment": ""
+      },
+      "US_EXTRA_CONTACT_INFO": {
+        "name": {
+          "string": "معلومات الاتصال الإضافية للمستخدم"
+        },
+        "description": {
+          "string": "تحديد المعلومات التي يجب إضافتها مع نتيجة الإكمال التلقائي. تظهر على شكل 'cn <إضافي> mail'"
+        },
+        "developer_comment": ""
+      },
+      "US_HIDDEN_USER": {
+        "name": {
+          "string": "مستخدم مخفي"
+        },
+        "description": {
+          "string": "قائمة معرّفات المستخدمين (uid) التي لا يجب عرضها للآخرين في البحث والإكمال التلقائي"
+        },
+        "developer_comment": ""
+      },
+      "US_HAS_RESOURCE": {
+        "name": {
+          "string": "مصدر المستخدم يحتوي على موارد"
+        },
+        "description": {
+          "string": "ضع علامة إذا كان مصدر المستخدم هذا يحتوي على موارد"
+        },
+        "developer_comment": ""
+      },
+      "US_RESOURCE_SEARCH": {
+        "name": {
+          "string": "بحث موارد المستخدم"
+        },
+        "description": {
+          "string": "حقل بحث إضافي للموارد"
+        },
+        "developer_comment": ""
+      },
+      "US_RESOURCE_MULTIBOOKING": {
+        "name": {
+          "string": "حجز متعدد لموارد المستخدم"
+        },
+        "description": {
+          "string": "الحقل الذي يحتوي على قيمة الحجز المتعدد للمورد"
+        },
+        "developer_comment": ""
+      },
+      "US_RESOURCE_EXTRA_INFO": {
+        "name": {
+          "string": "معلومات إضافية لموارد المستخدم"
+        },
+        "description": {
+          "string": "تحديد المعلومات التي يجب إضافتها مع نتيجة الإكمال التلقائي. تظهر على شكل 'cn <إضافي> mail'"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MODULE_ACCESS": {
+        "name": {
+          "string": "وصول الوحدات"
+        },
+        "description": {
+          "string": "تحديد الوحدات المتاحة من بين البريد والتقويم وجهات الاتصال"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAPI_ACCESS": {
+        "name": {
+          "string": "تمكين خادم MAPI"
+        },
+        "description": {
+          "string": "السماح للمستخدمين على سطح المكتب باستخدام بروتوكول MAPI"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_EAS_ACCESS": {
+        "name": {
+          "string": "تمكين خادم EAS"
+        },
+        "description": {
+          "string": "السماح للمستخدمين على الأجهزة المحمولة باستخدام بروتوكول ActiveSync"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_FOLDER_DISABLE_EXPORT": {
+        "name": {
+          "string": "تعطيل تصدير المجلدات"
+        },
+        "description": {
+          "string": "منع المستخدم من تصدير مجلداته (البريد، التقويم، جهات الاتصال)"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_FOLDER_DISABLE_SHARING": {
+        "name": {
+          "string": "تعطيل مشاركة المجلدات"
+        },
+        "description": {
+          "string": "منع المستخدم من مشاركة مجلداته (البريد، التقويم، جهات الاتصال)"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_FOLDER_DISABLE_SHARING_ANY_AUTH": {
+        "name": {
+          "string": "تعطيل مشاركة المجلدات مع المستخدمين المعتمدين"
+        },
+        "description": {
+          "string": "منع المستخدم من مشاركة مجلداته مع جميع المستخدمين المعتمدين (البريد، التقويم، جهات الاتصال)"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_AUTOCOMPLETION_MIN_LEN": {
+        "name": {
+          "string": "الحد الأدنى للحروف للإكمال التلقائي"
+        },
+        "description": {
+          "string": "ضبط الحد الأدنى لعدد الحروف لبدء البحث بالإكمال التلقائي (مثلاً: 3 يعني أن البحث سيبدأ عند الحرف الثالث)"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_API_MAX_REQUEST": {
+        "name": {
+          "string": "الحد الأقصى لطلبات API"
+        },
+        "description": {
+          "string": "ضبط الحد الأقصى لعدد الطلبات التي يمكن للمستخدم المعتمد إجراؤها خلال فترة زمنية"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_API_MAX_REQUEST_INTERVAL": {
+        "name": {
+          "string": "الفترة الزمنية للحد الأقصى لطلبات API"
+        },
+        "description": {
+          "string": "ضبط الفترة الزمنية التي ينطبق فيها حد 'الحد الأقصى لطلبات API'"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_API_MAX_REQUEST_BLOCK_INTERVAL": {
+        "name": {
+          "string": "فترة الحظر بعد تجاوز حد طلبات API"
+        },
+        "description": {
+          "string": "ضبط المدة التي يتم فيها حظر المستخدم من إرسال طلبات إذا تم الوصول إلى 'الحد الأقصى لطلبات API'"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_IDENTITIES_ENABLED": {
+        "name": {
+          "string": "تمكين الهويات"
+        },
+        "description": {
+          "string": "السماح للمستخدم بإنشاء هويات بريدية"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_IDENTITIES_CUSTOM_FROM_ENABLED": {
+        "name": {
+          "string": "تمكين 'مرسل مخصص'"
+        },
+        "description": {
+          "string": "السماح للمستخدم بتحديد 'مرسل' مخصص في هوياته"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_IDENTITIES_CUSTOM_NAME_ENABLED": {
+        "name": {
+          "string": "تمكين اسم مخصص"
+        },
+        "description": {
+          "string": "السماح للمستخدم بتعيين اسم مخصص في هوياته"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_IDENTITIES_CUSTOM_REPLY_TO_ENABLED": {
+        "name": {
+          "string": "تمكين 'الرد إلى' مخصص"
+        },
+        "description": {
+          "string": "السماح للمستخدم بتعيين 'الرد إلى' مخصص في هوياته"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_ALLOW_EXT_MAIL_ACCOUNT": {
+        "name": {
+          "string": "تمكين حساب بريد خارجي"
+        },
+        "description": {
+          "string": "السماح للمستخدم بتعيين حساب خارجي"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_ALLOW_EXT_AVATAR": {
+        "name": {
+          "string": "السماح باستخدام صورة رمزية خارجية"
+        },
+        "description": {
+          "string": "السماح للمستخدم بتعيين تفضيلات لاستخدام صورة رمزية خارجية (Gravatar, Libravatar...)"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_REFRESH_INTERVAL_ALLOWED": {
+        "name": {
+          "string": "تعيين الفترات المسموح بها للتحديث التلقائي للبريد"
+        },
+        "description": {
+          "string": "تعيين القيم التي يمكن للمستخدمين اختيارها لقيمة 'التحديث التلقائي للبريد'"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_JUNK_SETTINGS": {
+        "name": {
+          "string": "تعيين نوع محفز البريد المرغوب/المزعج"
+        },
+        "description": {
+          "string": "تعيين آلية عند تحديد المستخدمين للبريد كمرغوب أو مزعج"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_JUNK_MAIL_SPAM": {
+        "name": {
+          "string": "بريد للرسائل المزعجة"
+        },
+        "description": {
+          "string": "تعيين عنوان البريد الذي سيتم إعادة توجيه الرسائل المزعجة إليه"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_SERVER_TYPE": {
+        "name": {
+          "string": "نوع خادم البريد"
+        },
+        "description": {
+          "string": "تعيين نوع خادم البريد"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_IMAP_SERVER": {
+        "name": {
+          "string": "خادم IMAP"
+        },
+        "description": {
+          "string": "اسم مضيف خادم IMAP"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_IMAP_PORT": {
+        "name": {
+          "string": "منفذ IMAP"
+        },
+        "description": {
+          "string": "منفذ خادم IMAP"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_IMAP_ENCRYPTION": {
+        "name": {
+          "string": "تشفير IMAP"
+        },
+        "description": {
+          "string": "آلية تشفير خادم IMAP"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_IMAP_AUTH_MECH": {
+        "name": {
+          "string": "آلية مصادقة IMAP"
+        },
+        "description": {
+          "string": "آلية مصادقة IMAP. لا تستخدم 'login' دون احتياطات"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SOFT_EMAIL_QUOTA": {
+        "name": {
+          "string": "الحصة المرنة"
+        },
+        "description": {
+          "string": "ضبط نسبة الحصة المرنة"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_PURGE_ALLOW": {
+        "name": {
+          "string": "تمكين التنظيف"
+        },
+        "description": {
+          "string": "يسمح التنظيف للمستخدم بحذف جميع رسائله القديمة عن تاريخ معين في مجلد أو لحسابه بأكمله"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_PURGE_MIN_DATE": {
+        "name": {
+          "string": "الحد الأدنى لأيام التنظيف"
+        },
+        "description": {
+          "string": "ضبط الحد الأدنى للأيام التي يمكن للمستخدم استخدامها للتنظيف. 0 تعني أن المستخدم يمكن أن يحذف جميع رسائله. 30 تعني أن المستخدم يمكن أن يحذف الرسائل الأقدم من 30 يومًا"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_FILTERING_ENABLED": {
+        "name": {
+          "string": "تمكين تصفية البريد"
+        },
+        "description": {
+          "string": "السماح للمستخدم بتعيين مرشحات البريد"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_FILTERING_TYPE": {
+        "name": {
+          "string": "نوع تصفية البريد"
+        },
+        "description": {
+          "string": "نوع بروتوكول تصفية البريد"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SIEVE_SERVER": {
+        "name": {
+          "string": "خادم Sieve"
+        },
+        "description": {
+          "string": "اسم مضيف خادم Sieve"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SIEVE_PORT": {
+        "name": {
+          "string": "منفذ Sieve"
+        },
+        "description": {
+          "string": "منفذ خادم Sieve"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SIEVE_ENCRYPTION": {
+        "name": {
+          "string": "تشفير Sieve"
+        },
+        "description": {
+          "string": "تشفير خادم Sieve"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SIEVE_AUTH_MECH": {
+        "name": {
+          "string": "آلية مصادقة Sieve"
+        },
+        "description": {
+          "string": "آلية المصادقة الخاصة بخادم Sieve. إذا لم يتم تحديد أي شيء"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SIEVE_FOLDER_ENCODING": {
+        "name": {
+          "string": "ترميز مجلد Sieve"
+        },
+        "description": {
+          "string": "ضبط الترميز المستخدم من قبل خادم Sieve."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SIEVE_HEADER": {
+        "name": {
+          "string": "رأس Sieve"
+        },
+        "description": {
+          "string": "ضبط نص Sieve الذي سيظهر في بداية جميع نصوص Sieve الخاصة بالمستخدمين"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SIEVE_FOOTER": {
+        "name": {
+          "string": "تذييل Sieve"
+        },
+        "description": {
+          "string": "ضبط نص Sieve الذي سيظهر في نهاية جميع نصوص Sieve الخاصة بالمستخدمين"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SIEVE_FIRST_FILTER": {
+        "name": {
+          "string": "نص Sieve الأولي"
+        },
+        "description": {
+          "string": "ضبط نص Sieve الأولي لجميع المستخدمين الجدد. يمكنهم تعديله لاحقًا"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_VACATION_ENABLED": {
+        "name": {
+          "string": "السماح برسالة الإجازة"
+        },
+        "description": {
+          "string": "السماح للمستخدم بتعيين رسالة إجازة. يستخدم امتداد 'vacation' في Sieve (RFC 5230)"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_VACATION_ALLOW_RESPONSE_ALWAYS": {
+        "name": {
+          "string": "السماح بإرسال رسالة الإجازة دائمًا"
+        },
+        "description": {
+          "string": "السماح للمستخدم بتعيين رسالة إجازة تُرسل دائمًا دون فترة سماح"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_FORWARD_ENABLED": {
+        "name": {
+          "string": "السماح بالتحويل التلقائي"
+        },
+        "description": {
+          "string": "السماح للمستخدم بتعيين تحويل تلقائي. يستخدم أمر 'redirect' في Sieve"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_FORWARD_ALLOW_USER_DOMAIN": {
+        "name": {
+          "string": "السماح بالتحويل التلقائي إلى نفس المجال"
+        },
+        "description": {
+          "string": "السماح للمستخدم بتعيين تحويل تلقائي إلى عناوين داخل نفس المجال"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_FORWARD_ALLOW_SOGO_DOMAIN": {
+        "name": {
+          "string": "السماح بالتحويل التلقائي إلى مجال SOGo"
+        },
+        "description": {
+          "string": "السماح للمستخدم بتعيين تحويل تلقائي إلى عناوين معروفة في SOGo"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_FORWARD_ALLOW_EXT_DOMAIN": {
+        "name": {
+          "string": "السماح بالتحويل التلقائي إلى مجال خارجي"
+        },
+        "description": {
+          "string": "السماح للمستخدم بتعيين تحويل تلقائي إلى عناوين خارجية"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_FORWARD_WHITELIST": {
+        "name": {
+          "string": "المجالات المسموح بها للتحويل التلقائي (القائمة البيضاء)"
+        },
+        "description": {
+          "string": "تعيين مجالات محددة يمكن للمستخدم التحويل إليها"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_FORWARD_BLACKLIST": {
+        "name": {
+          "string": "المجالات المحظورة للتحويل التلقائي (القائمة السوداء)"
+        },
+        "description": {
+          "string": "تعيين مجالات محددة يحظر على المستخدم التحويل إليها"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_NOTIFY_ENABLED": {
+        "name": {
+          "string": "السماح بالإشعارات"
+        },
+        "description": {
+          "string": "السماح للمستخدم بتعيين الإشعارات. يستخدم امتداد 'notify' في Sieve (RFC5435)"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_NOTIFY_ALLOW_USER_DOMAIN": {
+        "name": {
+          "string": "السماح بالإشعارات إلى مجال المستخدم"
+        },
+        "description": {
+          "string": "السماح للمستخدم بإرسال إشعارات إلى العناوين ضمن نفس المجال"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_NOTIFY_ALLOW_SOGO_DOMAIN": {
+        "name": {
+          "string": "السماح بالإشعارات إلى مجال SOGo"
+        },
+        "description": {
+          "string": "السماح للمستخدم بإرسال إشعارات إلى العناوين المعروفة في SOGo"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_NOTIFY_ALLOW_EXT_DOMAIN": {
+        "name": {
+          "string": "السماح بالإشعارات إلى مجال خارجي"
+        },
+        "description": {
+          "string": "السماح للمستخدم بإرسال إشعارات إلى عناوين خارجية"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_NOTIFY_WHITELIST": {
+        "name": {
+          "string": "المجالات المسموح بها للإشعارات (القائمة البيضاء)"
+        },
+        "description": {
+          "string": "تعيين مجالات محددة يمكن للمستخدم إرسال إشعارات إليها"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_NOTIFY_BLACKLIST": {
+        "name": {
+          "string": "المجالات المحظورة للإشعارات (القائمة السوداء)"
+        },
+        "description": {
+          "string": "تعيين مجالات محددة يحظر على المستخدم إرسال إشعارات إليها"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_OUTGOING_TYPE": {
+        "name": {
+          "string": "نوع خادم البريد الصادر"
+        },
+        "description": {
+          "string": "تعيين نوع خادم البريد الصادر"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SMTP_SERVER": {
+        "name": {
+          "string": "خادم SMTP"
+        },
+        "description": {
+          "string": "اسم مضيف خادم SMTP"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SMTP_PORT": {
+        "name": {
+          "string": "منفذ SMTP"
+        },
+        "description": {
+          "string": "منفذ خادم SMTP"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SMTP_ENCRYPTION": {
+        "name": {
+          "string": "تشفير SMTP"
+        },
+        "description": {
+          "string": "آلية التشفير لخادم SMTP"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SMTP_AUTH_MECH": {
+        "name": {
+          "string": "آلية مصادقة SMTP"
+        },
+        "description": {
+          "string": "آلية مصادقة SMTP. لا تستخدم 'لا شيء' دون احتياطات"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SMTP_MASTER_ENABLED": {
+        "name": {
+          "string": "حساب رئيسي لـ SMTP"
+        },
+        "description": {
+          "string": "استخدام حساب رئيسي لجميع الرسائل النظامية (الأحداث، الإشعارات...)"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SMTP_MASTER_FROM": {
+        "name": {
+          "string": "مرسل الحساب الرئيسي"
+        },
+        "description": {
+          "string": "مرسل الحساب الرئيسي لـ SMTP"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SMTP_MASTER_LOGIN": {
+        "name": {
+          "string": "اسم تسجيل الدخول للحساب الرئيسي"
+        },
+        "description": {
+          "string": "بريد الحساب الرئيسي لـ SMTP"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SMTP_MASTER_PWD": {
+        "name": {
+          "string": "كلمة مرور الحساب الرئيسي"
+        },
+        "description": {
+          "string": "كلمة مرور الحساب الرئيسي لـ SMTP"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_MAX_SUBMISSION": {
+        "name": {
+          "string": "الحد الأقصى للرسائل المرسلة"
+        },
+        "description": {
+          "string": "الحد الأقصى للرسائل التي يمكن للمستخدم إرسالها خلال فترة زمنية"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_MAX_SUBMISSION_INTERVAL": {
+        "name": {
+          "string": "فترة الحد الأقصى للرسائل المرسلة"
+        },
+        "description": {
+          "string": "المدة بالثواني لفترة 'الحد الأقصى للرسائل المرسلة'"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_MAX_SUBMISSION_BLOCK_INTERVAl": {
+        "name": {
+          "string": "فترة حظر إرسال البريد"
+        },
+        "description": {
+          "string": "المدة التي يُمنع فيها المستخدم من إرسال البريد بعد تجاوز 'حد أقصى لإرسال البريد'"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_MAX_RECIPIENT": {
+        "name": {
+          "string": "الحد الأقصى للمستلمين في البريد"
+        },
+        "description": {
+          "string": "كلمة مرور الحساب الرئيسي"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_CHECK_FROM": {
+        "name": {
+          "string": "التحقق من 'مرسل'"
+        },
+        "description": {
+          "string": "التحقق مما إذا كان المرسل أحد عناوين البريد الخاصة بالمستخدم (الافتراضي، الأسماء المستعارة، الهويات...) قبل طلب خادم البريد الصادر"
+        },
+        "developer_comment": ""
+      }
+    }
+  }
+}

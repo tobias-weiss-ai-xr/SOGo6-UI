@@ -1,0 +1,44 @@
+{
+  "AP_AUDIT": {
+    "title": {
+      "string": "Jurnal de audit"
+    },
+    "description": {
+      "string": "Jurnal imuabil al acțiunilor administratorilor și utilizatorilor. Intrările sunt adăugate doar și nu pot fi modificate sau șterse."
+    },
+    "table": {
+      "timestamp": {
+        "string": "Data și ora"
+      },
+      "action": {
+        "string": "Acțiune"
+      },
+      "actor": {
+        "string": "Actor"
+      },
+      "target": {
+        "string": "Țintă"
+      },
+      "detail": {
+        "string": "Detalii"
+      },
+      "ip": {
+        "string": "Adresă IP"
+      },
+      "no_entries": {
+        "string": "Nicio intrare în jurnalul de audit găsită."
+      }
+    },
+    "count_one": {
+      "string": "inregistrare"
+    },
+    "count_many": {
+      "string": "inregistrări"
+    },
+    "errors": {
+      "load_failed": {
+        "string": "Nu s-a putut încărca jurnalul de audit"
+      }
+    }
+  }
+}

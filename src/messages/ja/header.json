@@ -1,0 +1,88 @@
+{
+    "HEADER": {
+        "theme": {
+            "title": {
+                "string": "テーマ",
+                "context": "ヘッダーのドロップダウンのセクションタイトル"
+            },
+            "dark": {
+                "string": "ダーク",
+                "context": "ヘッダーのダークテーマ切り替え"
+            },
+            "light": {
+                "string": "ライト",
+                "context": "ヘッダーのライトテーマ切り替え"
+            },
+            "dyslexia": {
+                "string": "ディスレクシア",
+                "context": "ヘッダーのディスレクシアテーマ切り替え"
+            },
+            "tritanopia": {
+                "string": "青色弱",
+                "context": "ヘッダーの青色弱テーマ切り替え"
+            },
+            "protanopia": {
+                "string": "赤色盲",
+                "context": "ヘッダーの赤色盲テーマ切り替え"
+            },
+            "deuteranopia": {
+                "string": "緑色盲",
+                "context": "ヘッダーの緑色盲テーマ切り替え"
+            },
+            "system": {
+                "string": "自動",
+                "context": "ヘッダーの自動テーマ切り替え"
+            }
+        },
+        "admin": {
+            "panel": {
+                "string": "管理パネル",
+                "context": "ヘッダーのドロップダウンの管理パネルタイトル"
+            }
+        },
+        "account": {
+            "section": {
+                "string": "アカウント",
+                "context": "ヘッダーのドロップダウンのセクションタイトル"
+            },
+            "profile": {
+                "string": "プロフィール",
+                "context": "ヘッダーのドロップダウンのアカウントプロフィールへのリンク"
+            },
+            "security": {
+                "string": "セキュリティ",
+                "context": "ヘッダーのドロップダウンのアカウントセキュリティへのリンク"
+            },
+            "defaultUser": {
+                "string": "ユーザー",
+                "context": "プロフィールがまだ読み込まれていない場合のデフォルトユーザー名"
+            }
+        },
+        "logout": {
+            "string": "ログアウト",
+            "context": "ヘッダーのドロップダウンのログアウトリンク"
+        },
+        "settings": {
+            "title": {
+                "string": "設定",
+                "context": "ヘッダーのドロップダウンのセクションタイトル"
+            },
+            "general": {
+                "string": "一般",
+                "context": "ヘッダーのドロップダウンの一般設定へのリンク"
+            },
+            "calendar": {
+                "string": "カレンダー",
+                "context": "ヘッダーのドロップダウンのカレンダー設定へのリンク"
+            },
+            "address_books": {
+                "string": "アドレス帳",
+                "context": "ヘッダーのドロップダウンのアドレス帳設定へのリンク"
+            },
+            "email": {
+                "string": "メール",
+                "context": "ヘッダーのドロップダウンのメール設定へのリンク"
+            }
+        }
+    }
+}

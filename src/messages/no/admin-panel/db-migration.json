@@ -1,0 +1,35 @@
+{
+  "AP_DBMIG": {
+    "title": {
+      "string": "Database-migrasjon"
+    },
+    "description": {
+      "string": "Spor skjema-versjoner og migrasjonshistorikk. Kjør migrasjoner fra adminpanelet."
+    },
+    "current_version": {
+      "string": "Gjeldende skjemaversjon"
+    },
+    "run": {
+      "button": {
+        "string": "Kjør migrasjon"
+      },
+      "running": {
+        "string": "Kjører..."
+      },
+      "success": {
+        "string": "Migrasjon påført"
+      },
+      "error": {
+        "string": "Migrasjon feilet"
+      }
+    },
+    "history": {
+      "title": {
+        "string": "Migrasjonshistorikk"
+      },
+      "empty": {
+        "string": "Ingen migrasjoner registrert."
+      }
+    }
+  }
+}

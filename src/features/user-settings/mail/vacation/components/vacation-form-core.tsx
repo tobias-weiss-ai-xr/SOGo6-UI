@@ -27,6 +27,7 @@ import {
   createVacationSchema,
   type VacationFormValues,
 } from './vacation-schema'
+import { logger } from '@/lib/logger'
 
 interface Props {
   data: MailVacation | undefined
@@ -80,7 +81,7 @@ const MailVacationSettingsForm: React.FC<Props> = ({
       }).unwrap()
       form.reset(saved)
     } catch (error) {
-      console.error('Failed to save vacation settings:', error)
+      logger.error('Failed to save vacation settings:', { error: error })
     }
   }
 

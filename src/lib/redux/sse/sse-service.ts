@@ -18,6 +18,7 @@ import {
   type MessageHandler,
   type StateChangeHandler,
 } from './utils'
+import { logger } from '@/lib/logger'
 
 export class SSEService {
   private eventSource: EventSource | null = null
@@ -238,7 +239,7 @@ export class SSEService {
       }
 
       this.setConnectionState(SSEConnectionState.CLOSED)
-      console.error(`Max reconnection attempts reached (3). Giving up.`)
+      logger.error(`Max reconnection attempts reached (3). Giving up.`)
       return
     }
 
@@ -250,9 +251,11 @@ export class SSEService {
       this.config.reconnectInterval || 5000
     )
 
-    console.log(
-      `Reconnection attempt ${this.reconnectAttempts}/3, waiting ${delay}ms...`
-    )
+    if (process.env.NODE_ENV === 'development') {
+      console.log(
+        `Reconnection attempt ${this.reconnectAttempts}/3, waiting ${delay}ms...`
+      )
+    }
 
     if (this.reconnectTimeout) {
       clearTimeout(this.reconnectTimeout)

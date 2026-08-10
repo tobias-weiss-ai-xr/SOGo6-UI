@@ -1,0 +1,19 @@
+{
+    "DATA_TABLE": {
+        "filter_placeholder": {
+            "string": "Filtrera..."
+        },
+        "no_result": {
+            "string": "Inga resultat."
+        },
+        "previous": {
+            "string": "Föregående"
+        },
+        "next": {
+            "string": "Nästa"
+        },
+        "selected": {
+            "string": "{selected} of {total} row(s) selected."
+        }
+    }
+}

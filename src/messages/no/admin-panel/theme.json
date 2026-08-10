@@ -1,0 +1,135 @@
+{
+  "AP_THEME": {
+    "title": {
+      "string": "Tema-innstillinger"
+    },
+    "description": {
+      "string": "Tilpass utseende og følelse av SOGo-grensesnittet"
+    },
+    "form_title": {
+      "string": "Egendefinert tema"
+    },
+    "form_description": {
+      "string": "Konfigurer farger, logo og egendefinert CSS for gruppevaregrensesnittet"
+    },
+    "fields": {
+      "primary": {
+        "label": {
+          "string": "Primærfarge"
+        },
+        "description": {
+          "string": "HSL-verdier for primærfargen (f.eks. 180 25% 40%)"
+        }
+      },
+      "primary_foreground": {
+        "label": {
+          "string": "Primær forgrunn"
+        },
+        "description": {
+          "string": "Tekstfarge på primær bakgrunner"
+        }
+      },
+      "background": {
+        "label": {
+          "string": "Bakgrunn"
+        },
+        "description": {
+          "string": "HSL-verdier for sidebakgrunnen"
+        }
+      },
+      "foreground": {
+        "label": {
+          "string": "Forgrunn"
+        },
+        "description": {
+          "string": "Standard tekstfarge"
+        }
+      },
+      "sidebar_background": {
+        "label": {
+          "string": "Sidepanel-bakgrunn"
+        },
+        "description": {
+          "string": "HSL-verdier for sidepanel-bakgrunnen"
+        }
+      },
+      "sidebar_foreground": {
+        "label": {
+          "string": "Sidepanel-forgrunn"
+        },
+        "description": {
+          "string": "Tekstfarge i sidepanelet"
+        }
+      },
+      "sidebar_primary": {
+        "label": {
+          "string": "Sidepanel-primærfarge"
+        },
+        "description": {
+          "string": "Primær aksentfarge i sidepanelet"
+        }
+      },
+      "sidebar_accent": {
+        "label": {
+          "string": "Sidepanel-aksentfarge"
+        },
+        "description": {
+          "string": "Aksentfarge i sidepanelet"
+        }
+      },
+      "header_background": {
+        "label": {
+          "string": "Topptekstbakgrunn"
+        },
+        "description": {
+          "string": "HSL-verdier for toppmenylinjen"
+        }
+      },
+      "header_foreground": {
+        "label": {
+          "string": "Topptekstforgrunn"
+        },
+        "description": {
+          "string": "Tekstfarge i toppmenyen"
+        }
+      },
+      "logo_url": {
+        "label": {
+          "string": "Logo-URL"
+        },
+        "description": {
+          "string": "URL til tilpasset logobilde (valgfritt)"
+        }
+      },
+      "custom_css": {
+        "label": {
+          "string": "Egendefinert CSS"
+        },
+        "description": {
+          "string": "Ytterligere CSS-regler som skal injiseres (valgfritt)"
+        }
+      }
+    },
+    "save": {
+      "string": "Lagre endringer"
+    },
+    "saving": {
+      "string": "Lagrer…"
+    },
+    "saved": {
+      "string": "Temainnstillinger lagret vellykket"
+    },
+    "save_error": {
+      "string": "Kunne ikke lagre: {message}"
+    },
+    "unsaved_changes": {
+      "string": "Du har ulagrede endringer"
+    },
+    "load_error": {
+      "string": "Kunne ikke laste temainnstillinger"
+    },
+    "retry": {
+      "string": "Prøv igjen"
+    }
+  }
+}

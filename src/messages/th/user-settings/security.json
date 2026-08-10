@@ -1,0 +1,75 @@
+{
+  "US_SECURITY": {
+    "title": {
+      "string": "ความปลอดภัย",
+      "context": "Title for the Security settings section in user settings"
+    },
+    "totp": {
+      "title": {
+        "string": "การยืนยันตัวตนสองขั้นตอน (TOTP)",
+        "context": "Title for the Two-Factor Authentication settings"
+      },
+      "description": {
+        "string": "การยืนยันตัวตนสองขั้นตอนจะเพิ่มชั้นความปลอดภัยให้กับบัญชีของคุณ เมื่อเปิดใช้งาน คุณจะต้องป้อนรหัสเฉพาะที่สร้างโดยแอปพลิเคชันยืนยันตัวตนบนโทรศัพท์ของคุณทุกครั้งที่เข้าสู่ระบบ"
+      },
+      "verification_code": {
+        "title": {
+          "string": "รหัสยืนยัน"
+        },
+        "description": {
+          "string": "ป้อนรหัสยืนยันที่สร้างโดยแอปพลิเคชันยืนยันตัวตนของคุณ"
+        }
+      }
+    },
+    "webauthn": {
+      "title": {
+        "string": "คีย์ผ่าน (WebAuthn)",
+        "context": "Title for the WebAuthn settings section"
+      },
+      "description": {
+        "string": "คีย์ผ่านช่วยให้คุณเข้าสู่ระบบได้โดยไม่ต้องใช้รหัสผ่าน โดยใช้เซ็นเซอร์ชีวมิติของอุปกรณ์ (ลนิ้วมือ, Face ID) หรือคีย์ความปลอดภัยฮาร์ดแวร์ คีย์ผ่านของคุณจะถูกจัดเก็บอย่างปลอดภัยบนอุปกรณ์นี้",
+        "context": "Description for the WebAuthn settings section"
+      },
+      "registered_credentials": {
+        "string": "คีย์ผ่านที่ลงทะเบียน",
+        "context": "Label for the list of registered passkeys"
+      },
+      "registered_at": {
+        "string": "ลงทะเบียนเมื่อ",
+        "context": "Label for the registration date of a passkey"
+      },
+      "no_credentials": {
+        "string": "ยังไม่มีคีย์ผ่านที่ลงทะเบียน",
+        "context": "Message when no passkeys are registered"
+      },
+      "register": {
+        "string": "ลงทะเบียนคีย์ผ่านใหม่",
+        "context": "Button to register a new passkey",
+        "title": {
+          "string": "Register a New Passkey",
+          "context": "Title for the passkey registration dialog"
+        },
+        "description": {
+          "string": "Your browser or device will guide you through setting up a passkey using biometrics, a PIN, or an external security key.",
+          "context": "Description for the passkey registration dialog"
+        },
+        "button": {
+          "string": "Register",
+          "context": "Button to start passkey registration"
+        },
+        "waiting": {
+          "string": "Waiting for device interaction — follow the prompts on your device.",
+          "context": "Status during passkey registration"
+        },
+        "success": {
+          "string": "Passkey registered successfully!",
+          "context": "Status when passkey registration succeeds"
+        }
+      },
+      "device_name": {
+        "string": "ชื่ออุปกรณ์ (ไม่บังคับ)",
+        "context": "Label for the device name input field"
+      }
+    }
+  }
+}

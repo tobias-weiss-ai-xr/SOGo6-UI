@@ -1,0 +1,233 @@
+{
+    "TASKS": {
+        "page_title": {
+            "string": "Attività"
+        },
+        "new_task": {
+            "string": "Nuova attività"
+        },
+        "search_placeholder": {
+            "string": "Cerca attività..."
+        },
+        "show_completed": {
+            "string": "Mostra completate"
+        },
+        "all_calendars": {
+            "string": "Tutti i calendari"
+        },
+        "empty_title": {
+            "string": "Ancora nessuna attività"
+        },
+        "empty_description": {
+            "string": "Crea la tua prima attività per organizzarti."
+        },
+        "overdue": {
+            "string": "Scadute"
+        },
+        "filters": {
+            "all": {
+                "string": "Tutti"
+            },
+            "needs_action": {
+                "string": "Da fare"
+            },
+            "in_process": {
+                "string": "In corso"
+            },
+            "completed": {
+                "string": "Completate"
+            },
+            "cancelled": {
+                "string": "Annullate"
+            },
+            "overdue": {
+                "string": "Scadute"
+            }
+        },
+        "priority": {
+            "none": {
+                "string": "Nessuna priorità"
+            },
+            "high": {
+                "string": "Alta"
+            },
+            "medium": {
+                "string": "Media"
+            },
+            "low": {
+                "string": "Bassa"
+            }
+        },
+        "status": {
+            "needs_action": {
+                "string": "Da fare"
+            },
+            "in_process": {
+                "string": "In corso"
+            },
+            "completed": {
+                "string": "Completata"
+            },
+            "cancelled": {
+                "string": "Annullata"
+            }
+        },
+        "form": {
+            "create_title": {
+                "string": "Nuova attività"
+            },
+            "edit_title": {
+                "string": "Modifica attività"
+            },
+            "title": {
+                "string": "Titolo"
+            },
+            "description": {
+                "string": "Descrizione"
+            },
+            "due": {
+                "string": "Data scadenza"
+            },
+            "date_start": {
+                "string": "Data inizio"
+            },
+            "status": {
+                "string": "Stato"
+            },
+            "priority": {
+                "string": "Priorità"
+            },
+            "percent_complete": {
+                "string": "Avanzamento"
+            },
+            "calendar": {
+                "string": "Calendario"
+            },
+            "categories": {
+                "string": "Categorie"
+            },
+            "visibility": {
+                "string": "Visibilità"
+            },
+            "save": {
+                "string": "Salva"
+            },
+            "cancel": {
+                "string": "Annulla"
+            },
+            "calendar_required": {
+                "string": "Seleziona un calendario"
+            },
+            "errors": {
+                "date_order": {
+                    "string": "La data di scadenza deve essere uguale o successiva alla data di inizio."
+                }
+            }
+        },
+        "actions": {
+            "edit": {
+                "string": "Modifica"
+            },
+            "delete": {
+                "string": "Elimina"
+            }
+        },
+        "delete_dialog": {
+            "title": {
+                "string": "Eliminare l'attività?"
+            },
+            "description": {
+                "string": "Questa azione non può essere annullata."
+            },
+            "confirm": {
+                "string": "Elimina"
+            },
+            "cancel": {
+                "string": "Annulla"
+            }
+        },
+        "selection": {
+            "enter": {
+                "string": "Seleziona attività"
+            },
+            "cancel": {
+                "string": "Annulla"
+            },
+            "select_all": {
+                "string": "Seleziona tutte le attività"
+            },
+            "count": {
+                "string": "{count, plural, one {# selezionata} other {# selezionate}}"
+            },
+            "actions": {
+                "complete": {
+                    "string": "Completa"
+                },
+                "reopen": {
+                    "string": "Riapri"
+                },
+                "delete": {
+                    "string": "Elimina"
+                }
+            },
+            "delete_dialog": {
+                "title": {
+                    "string": "Eliminare le attività selezionate?"
+                },
+                "description": {
+                    "string": "Stai per eliminare {count, plural, one {# attività} other {# attività}}. Questa azione non può essere annullata."
+                },
+                "confirm": {
+                    "string": "Elimina"
+                },
+                "cancel": {
+                    "string": "Annulla"
+                }
+            }
+        },
+        "sidebar": {
+            "smart_views": {
+                "title": {
+                    "string": "Viste intelligenti"
+                },
+                "all": {
+                    "string": "Tutte le attività"
+                },
+                "today": {
+                    "string": "Oggi"
+                },
+                "upcoming": {
+                    "string": "In arrivo"
+                },
+                "overdue": {
+                    "string": "Scadute"
+                },
+                "completed": {
+                    "string": "Completate"
+                }
+            },
+            "calendars": {
+                "title": {
+                    "string": "Calendari"
+                },
+                "all": {
+                    "string": "Tutti i calendari"
+                }
+            }
+        },
+        "fast_access": {
+            "title": {
+                "string": "Attività"
+            },
+            "view_all": {
+                "string": "Vedi tutte le attività"
+            },
+            "empty": {
+                "string": "Nessuna attività in sospeso"
+            },
+            "loading": {
+                "string": "Caricamento attività..."
+            }
+        }
+    }
+}

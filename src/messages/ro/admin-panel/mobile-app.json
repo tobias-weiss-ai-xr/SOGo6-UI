@@ -1,0 +1,65 @@
+{
+  "MOBILE": {
+    "title": {
+      "string": "Gestionarea aplicației mobile"
+    },
+    "description": {
+      "string": "Gestionați dispozitivele înregistrate, notificările push și configurarea aplicației"
+    },
+    "errors": {
+      "fail": {
+        "string": "Operațiunea a eșuat"
+      }
+    },
+    "success": {
+      "unregister": {
+        "string": "Dispozitiv dezînregistrat"
+      },
+      "broadcast": {
+        "string": "Notificare push trimisă"
+      }
+    },
+    "config": {
+      "title": {
+        "string": "Setări aplicație"
+      },
+      "push": {
+        "string": "Notificări push"
+      },
+      "biometric": {
+        "string": "Autentificare biometrică"
+      }
+    },
+    "push": {
+      "title": {
+        "placeholder": {
+          "string": "Titlul notificării"
+        }
+      },
+      "message": {
+        "placeholder": {
+          "string": "Mesaj..."
+        }
+      },
+      "broadcast": {
+        "string": "Trimite"
+      }
+    },
+    "stats": {
+      "title": {
+        "string": "Statistici"
+      },
+      "devices": {
+        "string": "Dispozitive înregistrate"
+      }
+    },
+    "devices": {
+      "title": {
+        "string": "Toate dispozitivele"
+      },
+      "empty": {
+        "string": "Niciun dispozitiv înregistrat încă"
+      }
+    }
+  }
+}

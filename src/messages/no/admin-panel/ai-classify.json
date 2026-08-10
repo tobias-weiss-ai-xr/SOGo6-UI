@@ -1,0 +1,46 @@
+{
+  "AI_CLASSIFY": {
+    "title": {
+      "string": "Smart e-postklassifisering"
+    },
+    "description": {
+      "string": "Automatisk merking av e-poster: nyhetsbrev, faktura, varsel, sosiale medier, personlig."
+    },
+    "input": {
+      "title": {
+        "string": "Inndata e-post"
+      },
+      "subject": {
+        "string": "Emne"
+      },
+      "sender": {
+        "string": "Avsender"
+      },
+      "body": {
+        "string": "Innhold"
+      },
+      "placeholder": {
+        "string": "Lim inn e-postinnhold..."
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Klassifiseringsresultater"
+      },
+      "empty": {
+        "string": "Skriv inn tekst og klikk Klassifiser"
+      }
+    },
+    "classify": {
+      "string": "Klassifiser"
+    },
+    "errors": {
+      "empty": {
+        "string": "Skriv inn e-posttekst"
+      },
+      "fail": {
+        "string": "Klassifisering mislyktes"
+      }
+    }
+  }
+}

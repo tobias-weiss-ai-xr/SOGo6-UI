@@ -206,6 +206,21 @@ export interface ListCreateBody {
 
 export type ListPatchBody = Partial<ListCreateBody>
 
+export interface ApiAddressBookShare {
+  user_uid: string
+  share_level: string
+}
+
+export interface ApiAddressBookShareCreateBody {
+  user_uid: string
+  share_level: string
+}
+
+export interface ApiAddressBookSharesData {
+  shares: ApiAddressBookShare[]
+  total_count: number
+}
+
 export interface ContactSuggestion {
   type: 'contact' | 'list'
   name?: string

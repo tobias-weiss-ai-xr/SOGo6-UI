@@ -1,0 +1,28 @@
+{
+  "US_MAIL_CATEGORIES": {
+    "create": {
+      "string": "Tambah kategori surat",
+      "context": "Button text to add a new mail category"
+    },
+    "title": {
+      "string": "Kategori",
+      "context": "Title for the mail categories settings page"
+    },
+    "accessibility": {
+      "icon": {
+        "delete": {
+          "string": "Hapus {name}",
+          "context": "Accessibility message for the delete icon"
+        }
+      }
+    },
+    "categories": {
+      "Work": "Travail",
+      "Family": "Famille",
+      "Friends": "Amis",
+      "validation": {
+        "category-name-required": "Category name is required"
+      }
+    }
+  }
+}

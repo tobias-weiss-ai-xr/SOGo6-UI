@@ -1,0 +1,40 @@
+{
+  "AI_DRAFT": {
+    "title": {
+      "string": "AI-utkastassistent"
+    },
+    "description": {
+      "string": "Svarsförslag med tonjustering. Genererar kontextuella utkast till svar."
+    },
+    "input": {
+      "title": {
+        "string": "Originalmeddelande"
+      },
+      "email": {
+        "string": "E-postinnehåll"
+      },
+      "placeholder": {
+        "string": "Klistra in e-postmeddelandet du vill svara på..."
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Föreslaget svar"
+      },
+      "empty": {
+        "string": "Ange e-posttext och välj en ton"
+      }
+    },
+    "suggest": {
+      "string": "Föreslå svar"
+    },
+    "errors": {
+      "empty": {
+        "string": "Ange e-posttext"
+      },
+      "fail": {
+        "string": "Förslaget misslyckades"
+      }
+    }
+  }
+}

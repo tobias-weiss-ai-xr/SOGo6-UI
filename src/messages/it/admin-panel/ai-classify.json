@@ -1,0 +1,46 @@
+{
+    "AI_CLASSIFY": {
+        "title": {
+            "string": "Classificazione Intelligente Email"
+        },
+        "description": {
+            "string": "Etichetta automaticamente le email: newsletter, fattura, notifica, social, personale."
+        },
+        "input": {
+            "title": {
+                "string": "Email di Input"
+            },
+            "subject": {
+                "string": "Oggetto"
+            },
+            "sender": {
+                "string": "Mittente"
+            },
+            "body": {
+                "string": "Corpo"
+            },
+            "placeholder": {
+                "string": "Incolla il contenuto dell'email..."
+            }
+        },
+        "output": {
+            "title": {
+                "string": "Risultati Classificazione"
+            },
+            "empty": {
+                "string": "Inserisci testo e clicca Classifica"
+            }
+        },
+        "classify": {
+            "string": "Classifica"
+        },
+        "errors": {
+            "empty": {
+                "string": "Inserisci il testo dell'email"
+            },
+            "fail": {
+                "string": "Classificazione fallita"
+            }
+        }
+    }
+}

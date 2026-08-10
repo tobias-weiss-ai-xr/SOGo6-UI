@@ -1,0 +1,48 @@
+{
+    "COMMONS": {
+        "close": {
+            "string": "إغلاق"
+        },
+        "workInProgress": {
+            "description": {
+                "string": "هذه الميزة قيد التطوير حالياً."
+            },
+            "message": {
+                "string": "نعمل بجد لتقديم هذه الميزة لك."
+            },
+            "comingSoon": {
+                "string": "قريباً! ترقبوا."
+            }
+        }
+    },
+    "COMMON": {
+        "demo": {
+            "warning": {
+                "title": {
+                    "string": "نسخة تجريبية"
+                },
+                "description": {
+                    "string": "أنت تستخدم حالياً نسخة تجريبية من التطبيق. قد تكون بعض الميزات محدودة."
+                },
+                "action": {
+                    "string": "فهمت"
+                }
+            }
+        },
+        "language": {
+            "english": "English",
+            "french": "Français"
+        },
+        "serviceUnavailable": {
+            "title": {
+                "string": "الخدمة غير متاحة"
+            },
+            "description": {
+                "string": "لم يتمكن التطبيق من الاتصال بالخادم. يرجى المحاولة مرة أخرى لاحقاً أو الاتصال بالمسؤول."
+            },
+            "retry": {
+                "string": "إعادة المحاولة"
+            }
+        }
+    }
+}

@@ -1,0 +1,48 @@
+{
+    "COMMONS": {
+        "close": {
+            "string": "Tutup"
+        },
+        "workInProgress": {
+            "description": {
+                "string": "Fitur ini sedang dalam pengembangan."
+            },
+            "message": {
+                "string": "Kami bekerja keras untuk menghadirkan fitur ini untuk Anda."
+            },
+            "comingSoon": {
+                "string": "Segera hadir! Nantikan terus."
+            }
+        }
+    },
+    "COMMON": {
+        "demo": {
+            "warning": {
+                "title": {
+                    "string": "Versi Demo"
+                },
+                "description": {
+                    "string": "Anda sedang menggunakan versi demo aplikasi. Beberapa fitur mungkin dibatasi."
+                },
+                "action": {
+                    "string": "Mengerti"
+                }
+            }
+        },
+        "language": {
+            "english": "English",
+            "french": "Français"
+        },
+        "serviceUnavailable": {
+            "title": {
+                "string": "Layanan tidak tersedia"
+            },
+            "description": {
+                "string": "Aplikasi tidak dapat terhubung ke server. Silakan coba lagi nanti atau hubungi administrator Anda."
+            },
+            "retry": {
+                "string": "Coba lagi"
+            }
+        }
+    }
+}

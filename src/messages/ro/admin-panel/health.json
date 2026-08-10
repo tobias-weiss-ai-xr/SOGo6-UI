@@ -1,0 +1,34 @@
+{
+  "AP_HEALTH": {
+    "title": {
+      "string": "Starea sistemului"
+    },
+    "description": {
+      "string": "Starea în timp real a tuturor serviciilor din stiva SOGo."
+    },
+    "status": {
+      "all_ok": {
+        "string": "Toate sistemele funcționează normal"
+      },
+      "degraded": {
+        "string": "Degradat"
+      }
+    },
+    "overview": {
+      "uptime": {
+        "string": "Timp de funcționare"
+      },
+      "version": {
+        "string": "Versiune"
+      },
+      "services": {
+        "string": "Servicii sănătoase"
+      }
+    },
+    "errors": {
+      "load_failed": {
+        "string": "Nu s-au putut încărca datele de stare"
+      }
+    }
+  }
+}

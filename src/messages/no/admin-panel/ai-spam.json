@@ -1,0 +1,49 @@
+{
+  "AI_SPAM": {
+    "title": {
+      "string": "Intelligent spamfilter"
+    },
+    "description": {
+      "string": "Sanntids spamvurdering med mønsteranalyse, avsenders omdømme og innholdsheuristikk."
+    },
+    "input": {
+      "title": {
+        "string": "E-post å vurdere"
+      },
+      "subject": {
+        "string": "Emne"
+      },
+      "sender": {
+        "string": "Avsender"
+      },
+      "body": {
+        "string": "Innhold"
+      },
+      "placeholder": {
+        "string": "Lim inn e-postinnholdet her..."
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Spam-poengsum"
+      },
+      "empty": {
+        "string": "Skriv inn e-postinnhold og klikk Vurder"
+      },
+      "signals": {
+        "string": "Oppdagede signaler"
+      }
+    },
+    "score": {
+      "string": "Vurder e-post"
+    },
+    "errors": {
+      "empty": {
+        "string": "Skriv inn emne eller innhold"
+      },
+      "fail": {
+        "string": "Vurdering mislyktes"
+      }
+    }
+  }
+}

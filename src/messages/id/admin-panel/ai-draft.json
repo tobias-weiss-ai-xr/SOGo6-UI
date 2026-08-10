@@ -1,0 +1,40 @@
+{
+  "AI_DRAFT": {
+    "title": {
+      "string": "Asisten Draf AI"
+    },
+    "description": {
+      "string": "Saran balasan dengan penyesuaian nada. Menghasilkan draf balasan kontekstual."
+    },
+    "input": {
+      "title": {
+        "string": "Email Asli"
+      },
+      "email": {
+        "string": "Isi Email"
+      },
+      "placeholder": {
+        "string": "Tempel email yang ingin Anda balas..."
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Saran Balasan"
+      },
+      "empty": {
+        "string": "Masukkan teks email dan pilih nada"
+      }
+    },
+    "suggest": {
+      "string": "Sarankan Balasan"
+    },
+    "errors": {
+      "empty": {
+        "string": "Masukkan teks email"
+      },
+      "fail": {
+        "string": "Saran gagal"
+      }
+    }
+  }
+}

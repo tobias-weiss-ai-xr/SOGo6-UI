@@ -1,0 +1,35 @@
+{
+    "AP_DBMIG": {
+        "title": {
+            "string": "Database Migração"
+        },
+        "description": {
+            "string": "Track schema versions and migration history. Run migrations from the admin panel."
+        },
+        "current_version": {
+            "string": "Current Schema Versão"
+        },
+        "run": {
+            "button": {
+                "string": "Run Migração"
+            },
+            "running": {
+                "string": "Running..."
+            },
+            "success": {
+                "string": "Migration applied"
+            },
+            "error": {
+                "string": "Migration failed"
+            }
+        },
+        "history": {
+            "title": {
+                "string": "Migration History"
+            },
+            "empty": {
+                "string": "No migrations recorded."
+            }
+        }
+    }
+}

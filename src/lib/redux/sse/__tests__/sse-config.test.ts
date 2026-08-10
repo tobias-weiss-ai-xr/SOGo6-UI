@@ -83,13 +83,43 @@ describe('sse-config', () => {
 
   describe('getProductionSSEConfig', () => {
     it('uses same-origin API SSE endpoint with auth header', () => {
-      localStorage.setItem('auth_token', 'token-123')
+      const authData = JSON.stringify({ token: 'token-123', user: 'testuser' })
+      localStorage.setItem('sogo_auth', authData)
 
       const config = getProductionSSEConfig()
 
       expect(config.url).toBe(`${window.location.origin}/api/sse`)
       expect(config.headers?.Authorization).toBe('Bearer token-123')
       expect(config.reconnectInterval).toBe(5000)
+    })
+
+    it('falls back to sessionStorage when localStorage is empty', () => {
+      localStorage.removeItem('sogo_auth')
+      const authData = JSON.stringify({ token: 'session-token' })
+      sessionStorage.setItem('sogo_auth', authData)
+
+      const config = getProductionSSEConfig()
+
+      expect(config.headers?.Authorization).toBe('Bearer session-token')
+
+      sessionStorage.removeItem('sogo_auth')
+    })
+
+    it('returns empty auth header when no token is stored', () => {
+      localStorage.removeItem('sogo_auth')
+      sessionStorage.removeItem('sogo_auth')
+
+      const config = getProductionSSEConfig()
+
+      expect(config.headers?.Authorization).toBe('')
+    })
+
+    it('handles malformed stored auth gracefully', () => {
+      localStorage.setItem('sogo_auth', 'not-json')
+
+      const config = getProductionSSEConfig()
+
+      expect(config.headers?.Authorization).toBe('')
     })
   })
 

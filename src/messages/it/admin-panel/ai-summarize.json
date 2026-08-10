@@ -1,0 +1,46 @@
+{
+    "AI_SUMMARIZE": {
+        "title": {
+            "string": "Riassunto Email"
+        },
+        "description": {
+            "string": "Riassunto per lunghe conversazioni email. La sintesi estrattiva restituisce le frasi più importanti."
+        },
+        "input": {
+            "title": {
+                "string": "Email di Input"
+            },
+            "text": {
+                "string": "Testo Email"
+            },
+            "placeholder": {
+                "string": "Incolla qui il corpo dell'email..."
+            },
+            "sentences": {
+                "string": "Numero Massimo Frasi"
+            }
+        },
+        "output": {
+            "title": {
+                "string": "Riassunto"
+            },
+            "empty": {
+                "string": "Inserisci testo e clicca Riassumi"
+            }
+        },
+        "summarize": {
+            "string": "Riassumi"
+        },
+        "loading": {
+            "string": "Riassumendo..."
+        },
+        "errors": {
+            "empty": {
+                "string": "Inserisci testo da riassumere"
+            },
+            "fail": {
+                "string": "Riassunto fallito"
+            }
+        }
+    }
+}

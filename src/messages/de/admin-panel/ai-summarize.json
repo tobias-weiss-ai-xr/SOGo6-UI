@@ -1,0 +1,46 @@
+{
+  "AI_SUMMARIZE": {
+    "title": {
+      "string": "E-Mail-Zusammenfassung"
+    },
+    "description": {
+      "string": "Extraktive Zusammenfassung basierend auf Satzscoring"
+    },
+    "input": {
+      "title": {
+        "string": "Eingabe"
+      },
+      "text": {
+        "string": "E-Mail-Text"
+      },
+      "sentences": {
+        "string": "Sätze"
+      },
+      "placeholder": {
+        "string": "E-Mail-Text hier einfügen..."
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Zusammenfassung"
+      },
+      "empty": {
+        "string": "Zusammenfassung wird hier angezeigt"
+      }
+    },
+    "summarize": {
+      "string": "Zusammenfassen"
+    },
+    "loading": {
+      "string": "Wird zusammengefasst..."
+    },
+    "errors": {
+      "empty": {
+        "string": "Text erforderlich"
+      },
+      "fail": {
+        "string": "Vorgang fehlgeschlagen"
+      }
+    }
+  }
+}

@@ -1,0 +1,1285 @@
+{
+  "AP_DOMAIN_CONFIGURATION": {
+    "origin": {
+      "rule": {
+        "string": "(из правила {origin})"
+      },
+      "default": {
+        "string": "(из стандартной конфигурации)"
+      },
+      "domain": {
+        "string": "(из домена {origin})"
+      }
+    },
+    "tabs": {
+      "auth_settings": {
+        "string": "Настройки аутентификации"
+      },
+      "user_source": {
+        "string": "Источник пользователей"
+      },
+      "user_module_settings": {
+        "string": "Настройки пользователей и модулей"
+      },
+      "mail_settings": {
+        "string": "Настройки почты"
+      },
+      "calendar_contact_settings": {
+        "string": "Настройки календаря и контактов"
+      }
+    },
+    "properties": {
+      "SOGO_D_AUTH_TYPE": {
+        "name": {
+          "string": "Тип аутентификации"
+        },
+        "description": {
+          "string": "Выберите метод аутентификации для пользователей. 'Plain' означает классический логин/пароль"
+        },
+        "developer_comment": "Options might include LDAP, SQL, etc."
+      },
+      "SOGO_D_CAS_URL": {
+        "name": {
+          "string": "URL сервера CAS"
+        },
+        "description": {
+          "string": "Укажите полный URL вашего сервера CAS"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_CAS_LOGOUT_ENABLED": {
+        "name": {
+          "string": "Включить выход из системы через CAS"
+        },
+        "description": {
+          "string": "Отметьте, чтобы разрешить пользователям выходить из SOGo и сервера CAS"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_OPENID_CONFIG_URL": {
+        "name": {
+          "string": "URL конечной точки провайдера OpenID"
+        },
+        "description": {
+          "string": "Пример: https://myopenid.net/.well-known/openid-configuration"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_OPENID_CLIENT_NAME": {
+        "name": {
+          "string": "Имя клиента OpenID"
+        },
+        "description": {
+          "string": "Имя вашего клиента OpenID"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_OPENID_CLIENT_SECRET": {
+        "name": {
+          "string": "Секрет клиента OpenID"
+        },
+        "description": {
+          "string": "Секретный ключ вашего клиента OpenID"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_OPENID_SCOPE": {
+        "name": {
+          "string": "Область действия клиента OpenID"
+        },
+        "description": {
+          "string": "Область действия вашего клиента OpenID. По умолчанию: 'openid profile email'."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_OPENID_EMAIL": {
+        "name": {
+          "string": "Ключ электронной почты пользователя"
+        },
+        "description": {
+          "string": "Ключ, по которому можно найти адрес электронной почты пользователя в его профиле."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_OPENID_TOKEN_CHECK_INTERVAL": {
+        "name": {
+          "string": "Интервал проверки токена"
+        },
+        "description": {
+          "string": "Чтобы ограничить количество запросов к вашему серверу OpenID для проверки действительности токена, укажите интервал в секундах, в течение которого токен не будет проверяться повторно после первой успешной проверки. Значение 0 означает, что токен будет проверяться всегда. Значение 60 означает, что токен не будет проверяться в течение 60 секунд после первой успешной проверки."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_OPENID_REFRESH_ENABLE": {
+        "name": {
+          "string": "Разрешить механизм обновления токена"
+        },
+        "description": {
+          "string": "Если ваш сервер OpenID поддерживает механизм обновления токена, SOGo будет его использовать."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_OPENID_ENDSESSION_ENABLED": {
+        "name": {
+          "string": "Включить завершение сеанса на сервере OpenID"
+        },
+        "description": {
+          "string": "По умолчанию пользователи могут выходить только из веб-почты. Включите эту настройку, чтобы также выходить из сервера OpenID, что означает выход пользователя из всех приложений, использующих этот сервер OpenID. Работает только если ваш OpenID имеет конечную точку end_session_endpoint."
+        },
+        "developer_comment": ""
+      },
+      "SOGo_D_OPENID_FETCH_USER_PROFILE": {
+        "name": {
+          "string": "Получать профиль пользователя"
+        },
+        "description": {
+          "string": "По умолчанию SOGo получает профиль пользователя, чтобы извлечь его адрес электронной почты. Снимите этот флажок, чтобы получать адрес электронной почты напрямую из токена. Снимите этот флажок, если вы используете службу федерации Active Directory от Microsoft (AD FS)."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SAML2_URL": {
+        "name": {
+          "string": "SAML2 ЕЩЁ НЕ ГОТОВО!!!"
+        },
+        "description": {
+          "string": "Удачи тому, кто будет это делать..."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_PWD_CHANGE_ENABLED": {
+        "name": {
+          "string": "Разрешить смену пароля"
+        },
+        "description": {
+          "string": "Позволяет пользователям изменять свой пароль через SOGo. Убедитесь, что ваш источник пользователей предоставляет пользователям права на выполнение этого действия."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_LOGIN_CHECK_MAX_ATTEMPT": {
+        "name": {
+          "string": "Максимальное количество неудачных попыток входа"
+        },
+        "description": {
+          "string": "Укажите, сколько раз пользователь может ошибаться при входе, прежде чем будет заблокирован. Значение 0 означает отсутствие ограничений."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_LOGIN_CHECK_TIME_SPAN": {
+        "name": {
+          "string": "Период времени для учёта неудачных попыток входа"
+        },
+        "description": {
+          "string": "Укажите период времени в секундах, в течение которого учитываются неудачные попытки входа. Пример: 60 означает, что пользователь может ошибаться до значения 'Максимальное количество неудачных попыток входа' в течение 60 секунд после первой неудачной попытки, прежде чем будет заблокирован."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_LOGIN_CHECK_BLOCK_TIME": {
+        "name": {
+          "string": "Время блокировки после неудачных попыток входа"
+        },
+        "description": {
+          "string": "Укажите, сколько секунд пользователь будет заблокирован после слишком большого количества неудачных попыток."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_PWD_RECOVERY": {
+        "name": {
+          "string": "Включить восстановление пароля"
+        },
+        "description": {
+          "string": "Разрешить пользователю настроить метод восстановления пароля"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_PWD_RECOVERY_METHOD": {
+        "name": {
+          "string": "Доступные методы восстановления пароля"
+        },
+        "description": {
+          "string": "Выберите доступные методы восстановления пароля для пользователей"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_PWD_RECOVERY_FORCE": {
+        "name": {
+          "string": "Принудительное восстановление пароля"
+        },
+        "description": {
+          "string": "Обязать пользователей настроить метод восстановления пароля."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_PWD_RECOVERY_DELAY": {
+        "name": {
+          "string": "Задержка между запросами на восстановление пароля"
+        },
+        "description": {
+          "string": "Задержка в секундах перед тем, как пользователь сможет снова запросить восстановление пароля."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_LOGIN_MFA": {
+        "name": {
+          "string": "Включить MFA"
+        },
+        "description": {
+          "string": "Разрешить пользователю настроить многофакторную аутентификацию"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_LOGIN_MFA_METHOD": {
+        "name": {
+          "string": "Доступные методы MFA"
+        },
+        "description": {
+          "string": "Выберите доступные методы многофакторной аутентификации для пользователей"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_LOGIN_MFA_FORCE": {
+        "name": {
+          "string": "Принудительная MFA"
+        },
+        "description": {
+          "string": "Обязать пользователей настроить MFA"
+        },
+        "developer_comment": ""
+      },
+      "US_UID": {
+        "name": {
+          "string": "Идентификатор источника пользователей"
+        },
+        "description": {
+          "string": "Задайте уникальное имя для этого источника пользователей, оно не будет отображаться пользователям"
+        },
+        "developer_comment": "Only for SOGo to differentiate differents User SOurce"
+      },
+      "US_TYPE": {
+        "name": {
+          "string": "Тип источника пользователей"
+        },
+        "description": {
+          "string": "Укажите тип источника пользователей"
+        },
+        "developer_comment": "Only ldap and sql supported for now"
+      },
+      "US_LDAP_HOSTNAME": {
+        "name": {
+          "string": "Имя хоста LDAP-сервера"
+        },
+        "description": {
+          "string": "Укажите только хост и порт, не добавляйте другую информацию"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_BIND_DN": {
+        "name": {
+          "string": "DN для привязки"
+        },
+        "description": {
+          "string": "DN имени пользователя для привязки к вашему серверу"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_BIND_DN_PWD": {
+        "name": {
+          "string": "Пароль для DN привязки"
+        },
+        "description": {
+          "string": "Пароль для вашего DN привязки"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_BASE_DN": {
+        "name": {
+          "string": "Базовый DN"
+        },
+        "description": {
+          "string": "Базовый DN для записей пользователей. Если домен почты входит в него, можно добавить '%d' для динамического подставления из почты пользователя, например: 'ou=%d,dc=example,dc=com'"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_UID": {
+        "name": {
+          "string": "Поле UID"
+        },
+        "description": {
+          "string": "Поле с логином пользователя. Логин должен быть уникальным для всех источников пользователей и доменов"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_CN": {
+        "name": {
+          "string": "Поле CN"
+        },
+        "description": {
+          "string": "Поле с полным именем пользователя"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_ID": {
+        "name": {
+          "string": "Поле ID"
+        },
+        "description": {
+          "string": "Поле, с которого начинается DN пользователя, если не используется поле привязки (например: если у вас 'dn: uid=sogo,ou=users,dc=example,dc=org', то значение должно быть 'uid')"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_SCOPE": {
+        "name": {
+          "string": "Область поиска LDAP"
+        },
+        "description": {
+          "string": "Указывает набор записей на уровне или ниже BaseDN, которые могут рассматриваться как потенциальные совпадения для запроса поиска"
+        },
+        "developer_comment": "https://ldapwiki.com/wiki/Wiki.jsp?page=LDAP%20Search%20Scopes"
+      },
+      "US_LDAP_FILTER": {
+        "name": {
+          "string": "Фильтр LDAP"
+        },
+        "description": {
+          "string": "Дополнительный фильтр для LDAP-запросов. Используйте '=', '!=', 'AND', 'OR' и скобки. Пример: '(objectClass='mailUser' OR objectClass!='mailGroup') AND accountStatus='active'"
+        },
+        "developer_comment": "Use SOGo's syntax and not ldap syntax for filter"
+      },
+      "US_LDAP_PWD_POLICY": {
+        "name": {
+          "string": "Политика паролей LDAP"
+        },
+        "description": {
+          "string": "Указывает, что на вашем LDAP-сервере действует политика паролей с учетом срока действия и льготного периода"
+        },
+        "developer_comment": "https://ldapwiki.com/wiki/Wiki.jsp?page=Password%20Policy"
+      },
+      "US_LDAP_PWD_UPDATE_SAMBA": {
+        "name": {
+          "string": "Обновлять пароли Samba через LDAP"
+        },
+        "description": {
+          "string": "При смене пароля пользователем также обновляются атрибуты sambaNTPassword и sambaLMPassword"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_BIND_AS_USER": {
+        "name": {
+          "string": "Привязка от имени пользователя"
+        },
+        "description": {
+          "string": "После аутентификации использовать DN пользователя для привязки"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_BIND_FIELD": {
+        "name": {
+          "string": "Дополнительные поля для привязки"
+        },
+        "description": {
+          "string": "Дополнительные поля для привязки. Например, если добавить 'mail', привязка будет включать 'mail=<логин>'"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_ATTR_FIELD": {
+        "name": {
+          "string": "Атрибуты для возврата"
+        },
+        "description": {
+          "string": "Атрибуты, возвращаемые при выполнении запроса поиска. По умолчанию — '*' (все атрибуты). Будьте осторожны: это может существенно повлиять на производительность SOGo"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_GROUP_CLASS": {
+        "name": {
+          "string": "Класс группы LDAP"
+        },
+        "description": {
+          "string": "Укажите класс LDAP, который будет сигнализировать SOGo, что это группа, а не отдельный пользователь"
+        },
+        "developer_comment": ""
+      },
+      "US_SQL_USER_URL": {
+        "name": {
+          "string": "URL базы данных пользователей"
+        },
+        "description": {
+          "string": "URL базы данных для таблицы пользователей. Пример: postgresql://sogo:sogo@127.0.0.1:5432/sogo/sogo_user"
+        },
+        "developer_comment": ""
+      },
+      "US_SQL_PREPEND_PWD_SCHEME": {
+        "name": {
+          "string": "Схема хранения пароля в SQL"
+        },
+        "description": {
+          "string": "Отметьте ДА, если пароль хранится в базе данных в формате {схема}зашифрованноеЗначение"
+        },
+        "developer_comment": ""
+      },
+      "US_SQL_USER_FILTER": {
+        "name": {
+          "string": "Фильтр пользователей SQL"
+        },
+        "description": {
+          "string": "Дополнительные условия WHERE для SQL-запроса. Пример: 'active=1'"
+        },
+        "developer_comment": ""
+      },
+      "US_SQL_DOMAIN_FIELD": {
+        "name": {
+          "string": "Поле домена пользователя в SQL"
+        },
+        "description": {
+          "string": "Укажите имя столбца, в котором хранится домен пользователя. Если задано, к каждому SQL-запросу будет добавлено '<столбец_домена> = <домен_пользователя>' в условие WHERE"
+        },
+        "developer_comment": ""
+      },
+      "US_MAPPING": {
+        "name": {
+          "string": "Сопоставление полей источника пользователей"
+        },
+        "description": {
+          "string": "Сопоставьте поля источника пользователей с атрибутами контактов"
+        },
+        "developer_comment": ""
+      },
+      "US_CAN_AUTH": {
+        "name": {
+          "string": "Может аутентифицироваться"
+        },
+        "description": {
+          "string": "Пользователи из этого источника могут входить в веб-почту"
+        },
+        "developer_comment": ""
+      },
+      "US_PWD_ALGO": {
+        "name": {
+          "string": "Алгоритм хэширования паролей источника пользователей"
+        },
+        "description": {
+          "string": "Алгоритм хэширования паролей, используемый этим источником. Обязательно для SQL-источника. Необязательно для LDAP: требуется только если пользователям разрешено изменять свои пароли"
+        },
+        "developer_comment": ""
+      },
+      "US_SIM_KEY_TYPE": {
+        "name": {
+          "string": "Тип симметричного ключа алгоритма пароля"
+        },
+        "description": {
+          "string": "Указывает, как хранится симметричный ключ алгоритма хэширования паролей"
+        },
+        "developer_comment": ""
+      },
+      "US_SIM_KEY_VALUE": {
+        "name": {
+          "string": "Значение симметричного ключа алгоритма пароля"
+        },
+        "description": {
+          "string": "Значение зависит от типа.\nЕсли 'path', укажите путь к файлу, где SOGo будет искать симметричный ключ.\nЕсли 'env', укажите имя переменной окружения, содержащей ключ.\nЕсли 'plain', введите ключ напрямую"
+        },
+        "developer_comment": ""
+      },
+      "US_PWD_POLICY": {
+        "name": {
+          "string": "Политика паролей пользователей"
+        },
+        "description": {
+          "string": "Отметьте, чтобы добавить политику для паролей пользователей. Эта политика будет применяться при смене пароля пользователем или если включена опция 'проверять сложность пароля при входе'"
+        },
+        "developer_comment": ""
+      },
+      "US_PWD_LEN_MIN": {
+        "name": {
+          "string": "Минимальная длина пароля пользователя"
+        },
+        "description": {
+          "string": "Минимальная длина пароля пользователя (включительно). Минимальное значение: 4"
+        },
+        "developer_comment": ""
+      },
+      "US_PWD_LEN_MAX": {
+        "name": {
+          "string": "Максимальная длина пароля пользователя"
+        },
+        "description": {
+          "string": "Максимальная длина пароля пользователя (включительно). 0 означает отсутствие ограничения"
+        },
+        "developer_comment": ""
+      },
+      "US_PWD_UPPERCASE_MIN": {
+        "name": {
+          "string": "Минимальное количество заглавных букв в пароле"
+        },
+        "description": {
+          "string": "Минимальное количество заглавных букв. 0 означает отсутствие ограничения"
+        },
+        "developer_comment": ""
+      },
+      "US_PWD_LOWERCASE_MIN": {
+        "name": {
+          "string": "Минимальное количество строчных букв в пароле"
+        },
+        "description": {
+          "string": "Минимальное количество строчных букв. 0 означает отсутствие ограничения"
+        },
+        "developer_comment": ""
+      },
+      "US_PWD_DIGITS_MIN": {
+        "name": {
+          "string": "Минимальное количество цифр в пароле"
+        },
+        "description": {
+          "string": "Минимальное количество цифр. 0 означает отсутствие ограничения"
+        },
+        "developer_comment": ""
+      },
+      "US_PWD_SPECIAL_ALLOWED": {
+        "name": {
+          "string": "Разрешенные специальные символы в пароле пользователя"
+        },
+        "description": {
+          "string": "Список специальных символов, разрешенных в паролях"
+        },
+        "developer_comment": ""
+      },
+      "US_PWD_SPECIAL_MIN": {
+        "name": {
+          "string": "Минимальное количество специальных символов в пароле"
+        },
+        "description": {
+          "string": "Минимальное количество специальных символов. 0 означает отсутствие ограничения"
+        },
+        "developer_comment": ""
+      },
+      "US_MAIL": {
+        "name": {
+          "string": "Поле электронной почты пользователя"
+        },
+        "description": {
+          "string": "Поле, в котором хранится основной адрес электронной почты пользователя. Дополнительные поля могут быть добавлены для указания псевдонимов"
+        },
+        "developer_comment": ""
+      },
+      "US_MAIL_SERVER_LOGIN": {
+        "name": {
+          "string": "Логин пользователя для почтового сервера"
+        },
+        "description": {
+          "string": "Укажите, если логин для входа на почтовый сервер (IMAP) отличается от основного адреса почты. Здесь укажите поле, в котором хранится логин"
+        },
+        "developer_comment": ""
+      },
+      "US_MAIL_FILTERING_LOGIN": {
+        "name": {
+          "string": "Логин пользователя для сервера фильтрации почты"
+        },
+        "description": {
+          "string": "Укажите, если логин для входа на сервер фильтрации почты (Sieve) отличается от основного адреса почты. Здесь укажите поле, в котором хранится логин"
+        },
+        "developer_comment": ""
+      },
+      "US_MAIL_OUTGOING_LOGIN": {
+        "name": {
+          "string": "Логин пользователя для исходящего почтового сервера"
+        },
+        "description": {
+          "string": "Укажите, если логин для входа на исходящий почтовый сервер (SMTP) отличается от основного адреса почты. Здесь укажите поле, в котором хранится логин"
+        },
+        "developer_comment": ""
+      },
+      "US_KIND": {
+        "name": {
+          "string": "Тип пользователя"
+        },
+        "description": {
+          "string": "Укажите поле, в котором хранится тип пользователя ('пользователь', 'ресурс' или 'группа')"
+        },
+        "developer_comment": ""
+      },
+      "US_IS_ADDRESSBOOK": {
+        "name": {
+          "string": "Источник пользователей — адресная книга"
+        },
+        "description": {
+          "string": "Укажите поле, если пользователи этого источника могут быть найдены через автозаполнение или глобальную адресную книгу"
+        },
+        "developer_comment": ""
+      },
+      "US_SEARCH": {
+        "name": {
+          "string": "Поле поиска пользователя"
+        },
+        "description": {
+          "string": "Дополнительное поле для поиска пользователя. Например, 'имя' позволит находить пользователей по имени"
+        },
+        "developer_comment": ""
+      },
+      "US_DISPLAY_NAME": {
+        "name": {
+          "string": "Отображаемое имя источника пользователей"
+        },
+        "description": {
+          "string": "Отображаемое имя этого источника пользователей, будет показано в списке глобальной адресной книги"
+        },
+        "developer_comment": ""
+      },
+      "US_AUTO_SEARCH": {
+        "name": {
+          "string": "Автоматический поиск пользователей в Глобальной адресной книге"
+        },
+        "description": {
+          "string": "Автоматически искать и отображать пользователей в Глобальной адресной книге при выборе. В противном случае пользователю нужно ввести текст для запуска поиска или символ '.' для поиска всех."
+        },
+        "developer_comment": ""
+      },
+      "US_AUTO_SEARCH_LIMIT": {
+        "name": {
+          "string": "Ограничение автозаполнения пользователей"
+        },
+        "description": {
+          "string": "Ограничивает максимальное количество пользователей, возвращаемых после запроса поиска. Значение 0 означает отсутствие ограничения"
+        },
+        "developer_comment": ""
+      },
+      "US_EXTRA_CONTACT_INFO": {
+        "name": {
+          "string": "Дополнительная контактная информация пользователя"
+        },
+        "description": {
+          "string": "Указывает, какую информацию добавлять к результату автозаполнения. Отображается как 'cn <дополнительно> mail'"
+        },
+        "developer_comment": ""
+      },
+      "US_HIDDEN_USER": {
+        "name": {
+          "string": "Скрытые пользователи"
+        },
+        "description": {
+          "string": "Список UID пользователей, которые никогда не возвращаются другим пользователям при поиске и автозаполнении"
+        },
+        "developer_comment": ""
+      },
+      "US_HAS_RESOURCE": {
+        "name": {
+          "string": "Источник пользователей содержит ресурсы"
+        },
+        "description": {
+          "string": "Отметьте, если этот источник пользователей содержит ресурсы"
+        },
+        "developer_comment": ""
+      },
+      "US_RESOURCE_SEARCH": {
+        "name": {
+          "string": "Поиск ресурсов пользователя"
+        },
+        "description": {
+          "string": "Дополнительное поле для поиска ресурсов"
+        },
+        "developer_comment": ""
+      },
+      "US_RESOURCE_MULTIBOOKING": {
+        "name": {
+          "string": "Мультибронирование ресурсов пользователя"
+        },
+        "description": {
+          "string": "Поле, в котором хранится значение мультибронирования для ресурса"
+        },
+        "developer_comment": ""
+      },
+      "US_RESOURCE_EXTRA_INFO": {
+        "name": {
+          "string": "Дополнительная информация о ресурсах пользователя"
+        },
+        "description": {
+          "string": "Указывает, какую информацию добавлять к результату автозаполнения. Отображается как 'cn <дополнительно> mail'"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MODULE_ACCESS": {
+        "name": {
+          "string": "Доступ к модулям"
+        },
+        "description": {
+          "string": "Определяет, какие модули доступны: почта, календарь и контакты"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAPI_ACCESS": {
+        "name": {
+          "string": "Включить сервер MAPI"
+        },
+        "description": {
+          "string": "Разрешает пользователям настольных компьютеров использовать протокол MAPI"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_EAS_ACCESS": {
+        "name": {
+          "string": "Включить сервер EAS"
+        },
+        "description": {
+          "string": "Разрешить пользователям на мобильных устройствах использовать протокол ActiveSync"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_FOLDER_DISABLE_EXPORT": {
+        "name": {
+          "string": "Запретить экспорт папок"
+        },
+        "description": {
+          "string": "Запретить пользователям экспортировать свои папки (почта, календарь, контакты)"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_FOLDER_DISABLE_SHARING": {
+        "name": {
+          "string": "Запретить общий доступ к папкам"
+        },
+        "description": {
+          "string": "Запретить пользователям предоставлять общий доступ к своим папкам (почта, календарь, контакты)"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_FOLDER_DISABLE_SHARING_ANY_AUTH": {
+        "name": {
+          "string": "Запретить общий доступ к папкам для аутентифицированных пользователей"
+        },
+        "description": {
+          "string": "Запретить пользователям предоставлять общий доступ к своим папкам (почта, календарь, контакты) всем аутентифицированным пользователям"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_AUTOCOMPLETION_MIN_LEN": {
+        "name": {
+          "string": "Минимальное количество символов для автозаполнения"
+        },
+        "description": {
+          "string": "Установить минимальное количество символов для запуска поиска автозаполнения (например, 3 — поиск начнется с третьего символа)"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_API_MAX_REQUEST": {
+        "name": {
+          "string": "Максимальное количество запросов к API"
+        },
+        "description": {
+          "string": "Установить максимальное количество запросов, которые аутентифицированный пользователь может сделать за определенный промежуток времени"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_API_MAX_REQUEST_INTERVAL": {
+        "name": {
+          "string": "Период ограничения запросов к API"
+        },
+        "description": {
+          "string": "Установить временной интервал, в течение которого действует ограничение 'Максимальное количество запросов к API'"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_API_MAX_REQUEST_BLOCK_INTERVAL": {
+        "name": {
+          "string": "Время блокировки после превышения лимита запросов к API"
+        },
+        "description": {
+          "string": "Установить время, на которое пользователь блокируется, если превышен лимит 'Максимальное количество запросов к API'"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_IDENTITIES_ENABLED": {
+        "name": {
+          "string": "Включить идентификаторы"
+        },
+        "description": {
+          "string": "Разрешить пользователям создавать почтовые идентификаторы"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_IDENTITIES_CUSTOM_FROM_ENABLED": {
+        "name": {
+          "string": "Включить пользовательское поле 'От'"
+        },
+        "description": {
+          "string": "Разрешить пользователям настраивать пользовательское поле 'От' в своих идентификаторах"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_IDENTITIES_CUSTOM_NAME_ENABLED": {
+        "name": {
+          "string": "Включить пользовательское имя"
+        },
+        "description": {
+          "string": "Разрешить пользователю устанавливать пользовательское имя в своих идентификаторах"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_IDENTITIES_CUSTOM_REPLY_TO_ENABLED": {
+        "name": {
+          "string": "Включить пользовательский 'Ответить на'"
+        },
+        "description": {
+          "string": "Разрешить пользователю устанавливать пользовательский адрес 'Ответить на' в своих идентификаторах"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_ALLOW_EXT_MAIL_ACCOUNT": {
+        "name": {
+          "string": "Включить внешний почтовый аккаунт"
+        },
+        "description": {
+          "string": "Разрешить пользователю настраивать внешний аккаунт"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_ALLOW_EXT_AVATAR": {
+        "name": {
+          "string": "Разрешить использование внешнего аватара"
+        },
+        "description": {
+          "string": "Разрешить пользователю настраивать использование внешнего аватара (gravatar, libravatar и др.)"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_REFRESH_INTERVAL_ALLOWED": {
+        "name": {
+          "string": "Установить допустимый интервал автообновления почты"
+        },
+        "description": {
+          "string": "Задать значения, которые пользователи могут выбирать для параметра 'автообновление почты'"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_JUNK_SETTINGS": {
+        "name": {
+          "string": "Установить тип триггера для спама/не спама"
+        },
+        "description": {
+          "string": "Задать механизм, используемый при помечении писем как спам/не спам"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_JUNK_MAIL_SPAM": {
+        "name": {
+          "string": "Адрес для спама"
+        },
+        "description": {
+          "string": "Указать адрес электронной почты, куда будет пересылаться спам"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_SERVER_TYPE": {
+        "name": {
+          "string": "Тип почтового сервера"
+        },
+        "description": {
+          "string": "Задать тип почтового сервера"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_IMAP_SERVER": {
+        "name": {
+          "string": "IMAP-сервер"
+        },
+        "description": {
+          "string": "Имя хоста IMAP-сервера"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_IMAP_PORT": {
+        "name": {
+          "string": "Порт IMAP"
+        },
+        "description": {
+          "string": "Порт IMAP-сервера"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_IMAP_ENCRYPTION": {
+        "name": {
+          "string": "Шифрование IMAP"
+        },
+        "description": {
+          "string": "Механизм шифрования для IMAP-сервера"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_IMAP_AUTH_MECH": {
+        "name": {
+          "string": "Механизм аутентификации IMAP"
+        },
+        "description": {
+          "string": "Механизм аутентификации IMAP. Не используйте 'login' без предосторожности"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SOFT_EMAIL_QUOTA": {
+        "name": {
+          "string": "Мягкая квота"
+        },
+        "description": {
+          "string": "Установите процент мягкой квоты"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_PURGE_ALLOW": {
+        "name": {
+          "string": "Разрешить очистку"
+        },
+        "description": {
+          "string": "Очистка позволяет пользователю удалять все письма старше определённой даты в папке или для всего аккаунта"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_PURGE_MIN_DATE": {
+        "name": {
+          "string": "Минимальное количество дней для очистки"
+        },
+        "description": {
+          "string": "Установите минимальное количество дней, за которое пользователь может выполнить очистку. 0 — пользователь может удалить все письма. 30 — только письма старше 30 дней"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_FILTERING_ENABLED": {
+        "name": {
+          "string": "Включить фильтрацию писем"
+        },
+        "description": {
+          "string": "Разрешить пользователю настраивать фильтры для писем"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_FILTERING_TYPE": {
+        "name": {
+          "string": "Тип фильтрации писем"
+        },
+        "description": {
+          "string": "Тип протокола фильтрации писем"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SIEVE_SERVER": {
+        "name": {
+          "string": "Sieve-сервер"
+        },
+        "description": {
+          "string": "Имя хоста Sieve-сервера"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SIEVE_PORT": {
+        "name": {
+          "string": "Порт Sieve"
+        },
+        "description": {
+          "string": "Порт Sieve-сервера"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SIEVE_ENCRYPTION": {
+        "name": {
+          "string": "Шифрование Sieve"
+        },
+        "description": {
+          "string": "Шифрование Sieve-сервера"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SIEVE_AUTH_MECH": {
+        "name": {
+          "string": "Механизм аутентификации Sieve"
+        },
+        "description": {
+          "string": "Механизм аутентификации для Sieve. Если не указано"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SIEVE_FOLDER_ENCODING": {
+        "name": {
+          "string": "Кодировка Sieve"
+        },
+        "description": {
+          "string": "Устанавливает кодировку, используемую сервером Sieve."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SIEVE_HEADER": {
+        "name": {
+          "string": "Заголовок Sieve"
+        },
+        "description": {
+          "string": "Устанавливает скрипт Sieve, который будет добавлен в начало всех пользовательских скриптов Sieve"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SIEVE_FOOTER": {
+        "name": {
+          "string": "Подвал Sieve"
+        },
+        "description": {
+          "string": "Устанавливает скрипт Sieve, который будет добавлен в конец всех пользовательских скриптов Sieve"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SIEVE_FIRST_FILTER": {
+        "name": {
+          "string": "Начальный скрипт Sieve"
+        },
+        "description": {
+          "string": "Устанавливает начальный скрипт Sieve для всех новых пользователей. Они смогут изменить его позже"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_VACATION_ENABLED": {
+        "name": {
+          "string": "Разрешить сообщение об отсутствии"
+        },
+        "description": {
+          "string": "Разрешает пользователю устанавливать сообщение об отсутствии. Использует расширение 'vacation' для Sieve (RFC 5230)"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_VACATION_ALLOW_RESPONSE_ALWAYS": {
+        "name": {
+          "string": "Разрешить отправку сообщения об отсутствии всегда"
+        },
+        "description": {
+          "string": "Разрешает пользователю устанавливать сообщение об отсутствии, которое будет отправляться всегда без периода ожидания"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_FORWARD_ENABLED": {
+        "name": {
+          "string": "Разрешить автоматическую пересылку"
+        },
+        "description": {
+          "string": "Разрешает пользователю настраивать автоматическую пересылку. Использует команду 'redirect' в Sieve"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_FORWARD_ALLOW_USER_DOMAIN": {
+        "name": {
+          "string": "Разрешить автоматическую пересылку на адреса в домене пользователя"
+        },
+        "description": {
+          "string": "Разрешает пользователю настраивать автоматическую пересылку на адреса в том же домене"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_FORWARD_ALLOW_SOGO_DOMAIN": {
+        "name": {
+          "string": "Разрешить автоматическую пересылку на домены SOGo"
+        },
+        "description": {
+          "string": "Разрешает пользователю настраивать автоматическую пересылку на адреса, известные SOGo"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_FORWARD_ALLOW_EXT_DOMAIN": {
+        "name": {
+          "string": "Разрешить автоматическую пересылку на внешние домены"
+        },
+        "description": {
+          "string": "Разрешить пользователям настраивать автоматическую пересылку на внешние адреса"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_FORWARD_WHITELIST": {
+        "name": {
+          "string": "Белый список доменов для автоматической пересылки"
+        },
+        "description": {
+          "string": "Указать домены, на которые пользователи могут настраивать пересылку"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_FORWARD_BLACKLIST": {
+        "name": {
+          "string": "Чёрный список доменов для автоматической пересылки"
+        },
+        "description": {
+          "string": "Указать домены, на которые пользователям запрещено настраивать пересылку"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_NOTIFY_ENABLED": {
+        "name": {
+          "string": "Разрешить уведомления"
+        },
+        "description": {
+          "string": "Разрешить пользователям настраивать уведомления. Использует расширение sieve 'notify' (RFC 5435)"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_NOTIFY_ALLOW_USER_DOMAIN": {
+        "name": {
+          "string": "Разрешить уведомления на домен пользователя"
+        },
+        "description": {
+          "string": "Разрешить пользователям настраивать уведомления на адреса в том же домене"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_NOTIFY_ALLOW_SOGO_DOMAIN": {
+        "name": {
+          "string": "Разрешить уведомления на домены SOGo"
+        },
+        "description": {
+          "string": "Разрешить пользователям настраивать уведомления на адреса, известные SOGo"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_NOTIFY_ALLOW_EXT_DOMAIN": {
+        "name": {
+          "string": "Разрешить уведомления на внешние домены"
+        },
+        "description": {
+          "string": "Разрешить пользователям настраивать уведомления на внешние адреса"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_NOTIFY_WHITELIST": {
+        "name": {
+          "string": "Белый список доменов для уведомлений"
+        },
+        "description": {
+          "string": "Указать домены, на которые пользователи могут настраивать уведомления"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_NOTIFY_BLACKLIST": {
+        "name": {
+          "string": "Чёрный список доменов для уведомлений"
+        },
+        "description": {
+          "string": "Указать домены, на которые пользователям запрещено настраивать уведомления"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_OUTGOING_TYPE": {
+        "name": {
+          "string": "Тип исходящего почтового сервера"
+        },
+        "description": {
+          "string": "Указать тип исходящего почтового сервера"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SMTP_SERVER": {
+        "name": {
+          "string": "SMTP-сервер"
+        },
+        "description": {
+          "string": "Имя хоста SMTP-сервера"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SMTP_PORT": {
+        "name": {
+          "string": "Порт SMTP"
+        },
+        "description": {
+          "string": "Порт SMTP-сервера"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SMTP_ENCRYPTION": {
+        "name": {
+          "string": "Шифрование SMTP"
+        },
+        "description": {
+          "string": "Механизм шифрования SMTP-сервера"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SMTP_AUTH_MECH": {
+        "name": {
+          "string": "Механизм аутентификации SMTP"
+        },
+        "description": {
+          "string": "Механизм аутентификации SMTP. Не используйте 'None' без предосторожности"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SMTP_MASTER_ENABLED": {
+        "name": {
+          "string": "Учетная запись мастера SMTP"
+        },
+        "description": {
+          "string": "Использовать учетную запись мастера для всех системных сообщений (события, уведомления и т. д.)"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SMTP_MASTER_FROM": {
+        "name": {
+          "string": "Отправитель учетной записи мастера"
+        },
+        "description": {
+          "string": "Адрес отправителя учетной записи мастера SMTP"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SMTP_MASTER_LOGIN": {
+        "name": {
+          "string": "Логин учетной записи мастера"
+        },
+        "description": {
+          "string": "Почта учетной записи мастера SMTP"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SMTP_MASTER_PWD": {
+        "name": {
+          "string": "Пароль учетной записи мастера"
+        },
+        "description": {
+          "string": "Пароль учетной записи мастера SMTP"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_MAX_SUBMISSION": {
+        "name": {
+          "string": "Максимум отправленных писем"
+        },
+        "description": {
+          "string": "Максимальное количество писем, которые пользователь может отправить за определенный промежуток времени"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_MAX_SUBMISSION_INTERVAL": {
+        "name": {
+          "string": "Период для максимума писем"
+        },
+        "description": {
+          "string": "Промежуток времени в секундах для параметра 'Максимум отправленных писем'"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_MAX_SUBMISSION_BLOCK_INTERVAl": {
+        "name": {
+          "string": "Время блокировки отправки писем"
+        },
+        "description": {
+          "string": "Время, в течение которого пользователю запрещено отправлять письма после срабатывания ограничения 'Максимум отправленных писем'"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_MAX_RECIPIENT": {
+        "name": {
+          "string": "Максимум получателей в письме"
+        },
+        "description": {
+          "string": "Пароль основного аккаунта"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_CHECK_FROM": {
+        "name": {
+          "string": "Проверка поля 'От'"
+        },
+        "description": {
+          "string": "Проверка, является ли адрес 'От' одним из почтовых адресов пользователя (основной, псевдонимы, идентичности и т. д.) перед отправкой на исходящий почтовый сервер"
+        },
+        "developer_comment": ""
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "AP_FREEBUSY": {
+    "title": {
+      "string": "Vapaa/Varattu -haku"
+    },
+    "description": {
+      "string": "Osallistujien aikataulun visuaalinen päällekkäisnäkymä. Tarkista saatavuus luodessasi tapahtumia."
+    },
+    "form": {
+      "title": {
+        "string": "Tarkista saatavuus"
+      },
+      "participants": {
+        "string": "Osallistujat"
+      },
+      "start": {
+        "string": "Alkaen"
+      },
+      "end": {
+        "string": "Päättyen"
+      },
+      "lookup": {
+        "string": "Hae"
+      }
+    },
+    "results": {
+      "title": {
+        "string": "Varatut ajat"
+      }
+    },
+    "errors": {
+      "fields": {
+        "string": "Vähintään yksi osallistuja vaaditaan"
+      }
+    },
+    "error": {
+      "string": "Haku epäonnistui"
+    }
+  }
+}

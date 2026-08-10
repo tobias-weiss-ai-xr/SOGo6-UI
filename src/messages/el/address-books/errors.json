@@ -1,0 +1,108 @@
+{
+  "ADDRESS_BOOKS_ERRORS": {
+    "list_member_invalid": {
+      "string": "Ένα ή περισσότερα επιλεγμένα μέλη δεν είναι επαφές σε αυτήν την λίστα διευθύνσεων.",
+      "context": "Inline error when a distribution list member is invalid."
+    },
+    "addressbook_not_found": {
+      "string": "Η λίστα διευθύνσεων δεν βρέθηκε.",
+      "context": "Error when an address book is missing."
+    },
+    "addressbook_duplicate": {
+      "string": "Υπάρχει ήδη μια λίστα διευθύνσεων με αυτό το όνομα.",
+      "context": "Toast when address book creation conflicts."
+    },
+    "contact_not_found": {
+      "string": "Η επαφή δεν βρέθηκε.",
+      "context": "Error when a contact is missing."
+    },
+    "contact_duplicate": {
+      "string": "Υπάρχει ήδη μια επαφή με αυτόν τον αναγνωριστικό.",
+      "context": "Toast when contact creation conflicts."
+    },
+    "contact_persist_failed": {
+      "string": "Η επαφή δεν μπορούσε να αποθηκευτεί.",
+      "context": "Error when contact creation fails on the server."
+    },
+    "contact_update_failed": {
+      "string": "Η επαφή δεν μπορούσε να ενημερωθεί.",
+      "context": "Error when contact update fails on the server."
+    },
+    "operation_not_supported": {
+      "string": "Αυτή η ενέργεια δεν υποστηρίζεται για αυτήν την λίστα διευθύνσεων.",
+      "context": "Error when mutating a non-local address book source."
+    },
+    "list_not_found": {
+      "string": "Η λίστα διανομής δεν βρέθηκε.",
+      "context": "Error when a distribution list is missing."
+    },
+    "list_duplicate": {
+      "string": "Υπάρχει ήδη μια λίστα διανομής με αυτό το όνομα.",
+      "context": "Toast when list creation conflicts."
+    },
+    "list_persist_failed": {
+      "string": "Η λίστα διανομής δεν μπορούσε να αποθηκευτεί.",
+      "context": "Error when list creation fails on the server."
+    },
+    "list_update_failed": {
+      "string": "Η λίστα διανομής δεν μπορούσε να ενημερωθεί.",
+      "context": "Error when list update fails on the server."
+    },
+    "access_denied": {
+      "string": "Δεν έχετε άδεια να τροποποιήσετε αυτήν την λίστα διευθύνσεων.",
+      "context": "Toast when write access is denied."
+    },
+    "read_only": {
+      "string": "Αυτή η λίστα διευθύνσεων είναι μόνο για ανάγνωση.",
+      "context": "Toast when mutating a read-only address book."
+    },
+    "export_format_unsupported": {
+      "string": "Η επιλεγμένη μορφή εξαγωγής δεν υποστηρίζεται.",
+      "context": "Error when export format negotiation fails."
+    },
+    "import_no_file": {
+      "string": "Δεν παρέχθηκε αρχείο για εισαγωγή.",
+      "context": "Error when import request has no file."
+    },
+    "import_too_large": {
+      "string": "Το αρχείο εισαγωγής υπερβαίνει το μέγιστο επιτρεπόμενο μέγεθος (10 MB).",
+      "context": "Error when import payload is too large."
+    },
+    "import_parse_failed": {
+      "string": "Δεν ήταν δυνατή η ανάλυση του αρχείου εισαγωγής.",
+      "context": "Error when import document parsing fails."
+    },
+    "job_not_found": {
+      "string": "Η εργασία υποβάθρου δεν βρέθηκε.",
+      "context": "Error when polling an unknown job."
+    },
+    "job_forbidden": {
+      "string": "Δεν έχετε πρόσβαση σε αυτήν την εργασία υποβάθρου.",
+      "context": "Error when job belongs to another user."
+    },
+    "job_not_ready": {
+      "string": "Η εξαγωγή δεν είναι ακόμα έτοιμη. Παρακαλώ περιμένετε και δοκιμάστε ξανά.",
+      "context": "Error when downloading a job result too early."
+    },
+    "job_no_result": {
+      "string": "Αυτή η εργασία δεν έχει καμία λήψιμη αποτελέσματος.",
+      "context": "Error when job result is unavailable."
+    },
+    "job_concurrent_limit": {
+      "string": "Τρέχουν πολλά εργασίες στο παρασκήνιο. Παρακαλώ δοκιμάστε αργότερα.",
+      "context": "Error when concurrent job limit is reached."
+    },
+    "file_too_large": {
+      "string": "Η φωτογραφία υπερβαίνει το μέγιστο επιτρεπόμενο μέγεθος (2 MB).",
+      "context": "Inline error when contact photo upload is too large."
+    },
+    "file_type_not_allowed": {
+      "string": "Αυτός ο τύπος αρχείου δεν επιτρέπεται για φωτογραφίες επαφών.",
+      "context": "Inline error when contact photo type is not allowed."
+    },
+    "generic": {
+      "string": "Η λειτουργία δεν μπορούσε να ολοκληρωθεί. Παρακαλώ δοκιμάστε ξανά.",
+      "context": "Fallback error message for contact API errors."
+    }
+  }
+}

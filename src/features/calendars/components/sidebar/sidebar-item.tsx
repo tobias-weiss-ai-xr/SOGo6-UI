@@ -28,7 +28,7 @@ import { isSubscriptionCalendar } from '../../utils/calendar-source-type'
 import DeleteAction from './actions/delete'
 import LinkAction from './actions/link'
 import EditForm from './forms/edit'
-import WorkInProgress from '@/components/work-in-progress'
+import ShareForm from './forms/share'
 import { useCalendarVisibility } from '../../hooks/useCalendarVisibility'
 
 interface SidebarItemProps {
@@ -286,7 +286,7 @@ const SidebarItem: React.FC<SidebarItemProps> = ({
             )}
             {type === 'link' && <LinkAction id={id} />}
             {type === 'sharing' && (
-              <WorkInProgress title={t('sidebar.sharing.string')} />
+              <ShareForm calendarKey={resolvedCalendarKey} />
             )}
             {type === 'export' && (
               <WorkInProgress title={t('sidebar.export.string')} />

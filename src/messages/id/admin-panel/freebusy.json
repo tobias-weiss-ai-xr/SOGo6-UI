@@ -1,0 +1,40 @@
+{
+  "AP_FREEBUSY": {
+    "title": {
+      "string": "Pencarian Waktu Luang/Sibuk"
+    },
+    "description": {
+      "string": "Tumpang tindih jadwal peserta secara visual. Periksa ketersediaan saat membuat acara."
+    },
+    "form": {
+      "title": {
+        "string": "Periksa Ketersediaan"
+      },
+      "participants": {
+        "string": "Peserta"
+      },
+      "start": {
+        "string": "Mulai"
+      },
+      "end": {
+        "string": "Selesai"
+      },
+      "lookup": {
+        "string": "Cari"
+      }
+    },
+    "results": {
+      "title": {
+        "string": "Slot Sibuk"
+      }
+    },
+    "errors": {
+      "fields": {
+        "string": "Setidaknya satu peserta diperlukan"
+      }
+    },
+    "error": {
+      "string": "Pencarian gagal"
+    }
+  }
+}

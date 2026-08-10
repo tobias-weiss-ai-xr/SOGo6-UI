@@ -1,0 +1,44 @@
+{
+  "AP_AUDIT": {
+    "title": {
+      "string": "Überwachungsprotokoll"
+    },
+    "description": {
+      "string": "Tamper-proof log of admin and user actions. Entries are append-only and cannot be modified or deleted."
+    },
+    "table": {
+      "timestamp": {
+        "string": "Zeitstempel"
+      },
+      "action": {
+        "string": "Aktion"
+      },
+      "actor": {
+        "string": "Actor"
+      },
+      "target": {
+        "string": "Target"
+      },
+      "detail": {
+        "string": "Detail"
+      },
+      "ip": {
+        "string": "IP-Adresse"
+      },
+      "no_entries": {
+        "string": "No audit log entries found."
+      }
+    },
+    "count_one": {
+      "string": "entry"
+    },
+    "count_many": {
+      "string": "entries"
+    },
+    "errors": {
+      "load_failed": {
+        "string": "Failed to load audit log"
+      }
+    }
+  }
+}

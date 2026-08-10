@@ -1,0 +1,59 @@
+{
+    "NAVIGATION": {
+        "address_book": {
+            "string": "Rubrica"
+        },
+        "calendar": {
+            "string": "Calendario"
+        },
+        "tasks": {
+            "string": "Attività"
+        },
+        "notes": {
+            "string": "Note"
+        },
+        "fast_access": {
+            "calendar": {
+                "title": "Calendario",
+                "view_all": "Vedi tutto",
+                "today": "Oggi",
+                "no_events": "Nessun evento oggi",
+                "all_day": "Tutto il giorno",
+                "loading": "Carica eventi…",
+                "error": "Calendario"
+            },
+            "tasks": {
+                "title": "Attività",
+                "view_all": "Vedi tutto",
+                "search_placeholder": "Cerca compiti",
+                "overdue": "Scaduti",
+                "today": "Oggi",
+                "upcoming": "Prossimi",
+                "no_due_date": "Nessuna scadenza",
+                "empty": "Sei tutto in pari",
+                "no_results": "Nessuna corrispondenza",
+                "loading": "Carica eventi…",
+                "error": "Impossibile caricare i compiti"
+            },
+            "address_book": {
+                "title": "Contatti",
+                "view_all": "Visualizza tutti",
+                "search_placeholder": "Cerca contatti e liste",
+                "distribution_lists": "Liste di distribuzione",
+                "contacts": "Contatti",
+                "member_count": "{number} membri",
+                "compose": "Scrivi messaggio",
+                "loading": "Caricamento contatti…",
+                "error": "Impossibile caricare i contatti",
+                "empty": "Nessuna rubrica disponibile",
+                "no_entries": "Nessun contatto o lista ancora",
+                "no_results": "Nessuna corrispondenza",
+                "search_min_length": "Inserisci almeno 2 caratteri per cercare."
+            },
+            "coming_soon": {
+                "title": "Funzionalità in arrivo",
+                "description": "Questa sezione è in sviluppo e sarà disponibile a breve."
+            }
+        }
+    }
+}

@@ -1,0 +1,1285 @@
+{
+  "AP_DOMAIN_CONFIGURATION": {
+    "origin": {
+      "rule": {
+        "string": "(säännöstä {origin})"
+      },
+      "default": {
+        "string": "(oletuskonfiguraatiosta)"
+      },
+      "domain": {
+        "string": "(verkkotunnuksesta {origin})"
+      }
+    },
+    "tabs": {
+      "auth_settings": {
+        "string": "Todennusasetukset"
+      },
+      "user_source": {
+        "string": "Käyttäjälähde"
+      },
+      "user_module_settings": {
+        "string": "Käyttäjä- ja moduliasetukset"
+      },
+      "mail_settings": {
+        "string": "Sähköpostiasetukset"
+      },
+      "calendar_contact_settings": {
+        "string": "Kalenteri- ja yhteystietoasetukset"
+      }
+    },
+    "properties": {
+      "SOGO_D_AUTH_TYPE": {
+        "name": {
+          "string": "Todennustapa"
+        },
+        "description": {
+          "string": "Valitse käyttäjien todennusmenetelmä. 'Plain' tarkoittaa perinteistä käyttäjätunnus/salasana -todennusta"
+        },
+        "developer_comment": "Options might include LDAP, SQL, etc."
+      },
+      "SOGO_D_CAS_URL": {
+        "name": {
+          "string": "CAS-palvelimen URL-osoite"
+        },
+        "description": {
+          "string": "Anna CAS-palvelimesi täydellinen URL-osoite"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_CAS_LOGOUT_ENABLED": {
+        "name": {
+          "string": "Ota CAS-kirjautuminen ulos käyttöön"
+        },
+        "description": {
+          "string": "Valitse ruutu, jotta käyttäjät voivat kirjautua ulos SOGOsta ja CAS-palvelimelta"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_OPENID_CONFIG_URL": {
+        "name": {
+          "string": "OpenID-tarjoajan päätepisteen URL-osoite"
+        },
+        "description": {
+          "string": "Esimerkki: https://myopenid.net/.well-known/openid-configuration"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_OPENID_CLIENT_NAME": {
+        "name": {
+          "string": "OpenID-asiakkaan nimi"
+        },
+        "description": {
+          "string": "OpenID-asiakkaasi nimi"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_OPENID_CLIENT_SECRET": {
+        "name": {
+          "string": "OpenID-asiakkaan salaisuus"
+        },
+        "description": {
+          "string": "OpenID-asiakkaasi salaisuus"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_OPENID_SCOPE": {
+        "name": {
+          "string": "OpenID-asiakkaan laajuus"
+        },
+        "description": {
+          "string": "OpenID-asiakkaan laajuus. Oletusarvo on 'openid profile email'."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_OPENID_EMAIL": {
+        "name": {
+          "string": "Käyttäjän sähköpostin avain"
+        },
+        "description": {
+          "string": "Avain, josta käyttäjän sähköposti löytyy käyttäjäprofiilista."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_OPENID_TOKEN_CHECK_INTERVAL": {
+        "name": {
+          "string": "Tokenin tarkistusväli"
+        },
+        "description": {
+          "string": "Rajoita OpenID-palvelimelle tehtävien tokenin voimassaolon tarkistuspyyntöjen määrää asettamalla väli sekunneissa, jolloin tokenia ei tarkisteta uudelleen ensimmäisen onnistuneen tarkistuksen jälkeen. Arvo 0 tarkoittaa, että tokenia tarkistetaan aina. Arvo 60 tarkoittaa, että tokenia ei tarkisteta 60 sekuntiin ensimmäisen onnistuneen tarkistuksen jälkeen."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_OPENID_REFRESH_ENABLE": {
+        "name": {
+          "string": "Salli tokenin päivittämismekanismi"
+        },
+        "description": {
+          "string": "Jos OpenID-palvelimesi tukee tokenin päivittämismekanismia, SOGo käyttää sitä."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_OPENID_ENDSESSION_ENABLED": {
+        "name": {
+          "string": "Ota käyttöön istunnon päättäminen OpenID-palvelimelta"
+        },
+        "description": {
+          "string": "Oletusarvoisesti käyttäjä voi kirjautua ulos vain webmailista. Valitse tämä asetus, jotta käyttäjä kirjautuu ulos myös OpenID-palvelimelta, mikä tarkoittaa, että käyttäjä kirjautuu ulos kaikista OpenID-palvelinta käyttävistä sovelluksista. Toimii vain, jos OpenID-palvelimellasi on end_session_endpoint."
+        },
+        "developer_comment": ""
+      },
+      "SOGo_D_OPENID_FETCH_USER_PROFILE": {
+        "name": {
+          "string": "Hae käyttäjäprofiili"
+        },
+        "description": {
+          "string": "Oletusarvoisesti SOGo hakee käyttäjäprofiilin saadakseen käyttäjän sähköpostin. Poista valinta, jos haluat sähköpostin suoraan tokenista. Poista valinta, jos käytät Microsoftin Active Directory Federation Serviceä (AD FS)."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SAML2_URL": {
+        "name": {
+          "string": "SAML2 EI VALMIS!"
+        },
+        "description": {
+          "string": "Onnea henkilölle, joka tekee tämän..."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_PWD_CHANGE_ENABLED": {
+        "name": {
+          "string": "Ota salasanan vaihto käyttöön"
+        },
+        "description": {
+          "string": "Salli käyttäjien vaihtaa salasana SOGo:ssa. Varmista, että käyttäjätietolähteesi myöntää käyttäjille oikeuden tehdä tämä toimenpide."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_LOGIN_CHECK_MAX_ATTEMPT": {
+        "name": {
+          "string": "Kirjautumisen enimmäisyritykset"
+        },
+        "description": {
+          "string": "Määritä, kuinka monta kertaa käyttäjä voi epäonnistua kirjautumisessa ennen estämistä. Arvo 0 tarkoittaa, että rajoitusta ei ole."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_LOGIN_CHECK_TIME_SPAN": {
+        "name": {
+          "string": "Epäonnistuneiden kirjautumisyritysten aikaväli"
+        },
+        "description": {
+          "string": "Määritä aikaväli sekunneissa, jonka aikana epäonnistuneet yritykset lasketaan. Esimerkki: 60 tarkoittaa, että käyttäjä voi epäonnistua enintään 'Kirjautumisen enimmäisyritykset' -määrän verran 60 sekunnin aikana ensimmäisestä epäonnistumisesta ennen estämistä."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_LOGIN_CHECK_BLOCK_TIME": {
+        "name": {
+          "string": "Epäonnistuneen kirjautumisen estoaika"
+        },
+        "description": {
+          "string": "Määritä, kuinka kauan (sekunneissa) käyttäjä estetään liian monen epäonnistuneen yrityksen jälkeen."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_PWD_RECOVERY": {
+        "name": {
+          "string": "Ota salasanan palautus käyttöön"
+        },
+        "description": {
+          "string": "Salli käyttäjän määrittää salasanan palautusmenetelmä"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_PWD_RECOVERY_METHOD": {
+        "name": {
+          "string": "Käytettävissä olevat salasanan palautusmenetelmät"
+        },
+        "description": {
+          "string": "Valitse käyttäjille tarjottavat salasanan palautusmenetelmät"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_PWD_RECOVERY_FORCE": {
+        "name": {
+          "string": "Pakota salasanan palautus"
+        },
+        "description": {
+          "string": "Pakota käyttäjät määrittämään salasanan palautusmenetelmä."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_PWD_RECOVERY_DELAY": {
+        "name": {
+          "string": "Viive salasanan palautusten välillä"
+        },
+        "description": {
+          "string": "Viive sekunneissa, ennen kuin käyttäjä voi pyytää salasanan palautusta uudelleen."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_LOGIN_MFA": {
+        "name": {
+          "string": "Ota monivaiheinen todennus käyttöön"
+        },
+        "description": {
+          "string": "Salli käyttäjän määrittää monivaiheinen todennus"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_LOGIN_MFA_METHOD": {
+        "name": {
+          "string": "Käytettävissä olevat MFA-menetelmät"
+        },
+        "description": {
+          "string": "Valitse käyttäjille tarjottavat monivaiheisen todennuksen menetelmät"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_LOGIN_MFA_FORCE": {
+        "name": {
+          "string": "Pakota MFA"
+        },
+        "description": {
+          "string": "Pakota käyttäjät ottamaan monivaiheinen todennus käyttöön"
+        },
+        "developer_comment": ""
+      },
+      "US_UID": {
+        "name": {
+          "string": "Käyttäjälähteen tunniste"
+        },
+        "description": {
+          "string": "Anna yksilöllinen nimi tälle käyttäjälähteelle, sitä ei näytetä käyttäjille"
+        },
+        "developer_comment": "Only for SOGo to differentiate differents User SOurce"
+      },
+      "US_TYPE": {
+        "name": {
+          "string": "Käyttäjälähteen tyyppi"
+        },
+        "description": {
+          "string": "Määritä käyttäjälähteen tyyppi"
+        },
+        "developer_comment": "Only ldap and sql supported for now"
+      },
+      "US_LDAP_HOSTNAME": {
+        "name": {
+          "string": "LDAP-palvelimen isäntänimi"
+        },
+        "description": {
+          "string": "Määritä vain isäntä ja portti, älä lisää muita tietoja"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_BIND_DN": {
+        "name": {
+          "string": "Sitoutumisen DN"
+        },
+        "description": {
+          "string": "Käyttäjätunnuksen DN, jota käytetään palvelimeen sitoutumiseen."
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_BIND_DN_PWD": {
+        "name": {
+          "string": "Sitoutumisen DN salasana"
+        },
+        "description": {
+          "string": "Salasana sitoutumisen DN:lle"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_BASE_DN": {
+        "name": {
+          "string": "Perus-DN"
+        },
+        "description": {
+          "string": "Käyttäjien merkintöjen perus-DN. Jos sähköpostin verkkotunnus on tässä, voit lisätä '%d' lisätäksesi sen dynaamisesti käyttäjän sähköpostista, esimerkiksi: 'ou=%d,dc=example,dc=com'"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_UID": {
+        "name": {
+          "string": "UID-kenttä"
+        },
+        "description": {
+          "string": "Kenttä, jossa on käyttäjän kirjautumistunnus. Kirjautumistunnuksen on oltava yksilöllinen kaikissa käyttäjälähteissä ja verkkotunnuksissa"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_CN": {
+        "name": {
+          "string": "CN-kenttä"
+        },
+        "description": {
+          "string": "Kenttä, jossa on käyttäjän täydellinen nimi"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_ID": {
+        "name": {
+          "string": "ID-kenttä"
+        },
+        "description": {
+          "string": "Kenttä, joka aloittaa käyttäjän DN:n, jos Sitoutumiskenttää ei käytetä (esimerkki: jos sinulla on 'dn: uid=sogo,ou=users,dc=example,dc=org', tämän arvon tulisi olla 'uid')"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_SCOPE": {
+        "name": {
+          "string": "LDAP-hakualue"
+        },
+        "description": {
+          "string": "Ilmaisee ne merkinnät perus-DN:ssä tai sen alapuolella, jotka voidaan katsoa mahdollisiksi osumiksi hakupyyntöön"
+        },
+        "developer_comment": "https://ldapwiki.com/wiki/Wiki.jsp?page=LDAP%20Search%20Scopes"
+      },
+      "US_LDAP_FILTER": {
+        "name": {
+          "string": "LDAP-suodatin"
+        },
+        "description": {
+          "string": "Lisäsuodatin LDAP-kyselyjä varten. Käytä '=', '!=', 'AND', 'OR' ja sulkuja. Esimerkki: '(objectClass='mailUser' OR objectClass!='mailGroup') AND accountStatus='active'"
+        },
+        "developer_comment": "Use SOGo's syntax and not ldap syntax for filter"
+      },
+      "US_LDAP_PWD_POLICY": {
+        "name": {
+          "string": "LDAP-salasanaohjeistus"
+        },
+        "description": {
+          "string": "Ilmaisee, että LDAP-palvelimellasi on salasanan ohjeistus vanhenemisen ja armahdusajan käsitteillä"
+        },
+        "developer_comment": "https://ldapwiki.com/wiki/Wiki.jsp?page=Password%20Policy"
+      },
+      "US_LDAP_PWD_UPDATE_SAMBA": {
+        "name": {
+          "string": "Päivitä Samba-salasanat LDAP:n kautta"
+        },
+        "description": {
+          "string": "Jos käyttäjä vaihtaa salasanansa, päivitetään myös sambaNTPassword ja sambaLMPassword"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_BIND_AS_USER": {
+        "name": {
+          "string": "Sido käyttäjänä"
+        },
+        "description": {
+          "string": "Todennuksen jälkeen käytä käyttäjän DN:ää sitomiseen"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_BIND_FIELD": {
+        "name": {
+          "string": "Lisäkentät sitomista varten"
+        },
+        "description": {
+          "string": "Lisäkentät, joita käytetään sitomiseen. Esimerkiksi jos lisäät 'mail', sitominen sisältää myös 'mail=<kirjautumistunnus>'"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_ATTR_FIELD": {
+        "name": {
+          "string": "Attribuuttikentät"
+        },
+        "description": {
+          "string": "Attribuuttikentät, jotka palautetaan haun yhteydessä. Oletusarvo on '*', joka tarkoittaa kaikkia. Ole varovainen, sillä tämä voi vaikuttaa merkittävästi SOGo:n suorituskykyyn"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_GROUP_CLASS": {
+        "name": {
+          "string": "LDAP-ryhmäluokka"
+        },
+        "description": {
+          "string": "Määritä LDAP-luokka, joka ilmaisee SOGolle, että kyseessä on ryhmä eikä yksittäinen käyttäjä"
+        },
+        "developer_comment": ""
+      },
+      "US_SQL_USER_URL": {
+        "name": {
+          "string": "SQL-käyttäjän URL-osoite"
+        },
+        "description": {
+          "string": "Tietokannan URL-osoite käyttäjätietotauluun. Esimerkki: postgresql://sogo:sogo@127.0.0.1:5432/sogo/sogo_user"
+        },
+        "developer_comment": ""
+      },
+      "US_SQL_PREPEND_PWD_SCHEME": {
+        "name": {
+          "string": "SQL-käyttäjän salasanan salausmenetelmä"
+        },
+        "description": {
+          "string": "Valitse KYLLÄ, jos salasana on tallennettu tietokantaan muodossa {scheme}encryptedValue"
+        },
+        "developer_comment": ""
+      },
+      "US_SQL_USER_FILTER": {
+        "name": {
+          "string": "SQL-käyttäjän suodatin"
+        },
+        "description": {
+          "string": "Lisäehtoja SQL-kyselyyn. Esimerkki: 'active=1'"
+        },
+        "developer_comment": ""
+      },
+      "US_SQL_DOMAIN_FIELD": {
+        "name": {
+          "string": "SQL-käyttäjän verkkotunnus"
+        },
+        "description": {
+          "string": "Määritä sarakkeen nimi, jossa käyttäjän verkkotunnus on. Jos asetettu, jokaiseen SQL-kyselyyn lisätään '<domain_column> = <käyttäjän verkkotunnus>' WHERE-ehtoon."
+        },
+        "developer_comment": ""
+      },
+      "US_MAPPING": {
+        "name": {
+          "string": "Käyttäjän lähteen kuvaus"
+        },
+        "description": {
+          "string": "Kuvaus käyttäjän lähdekentistä yhteystietoattribuuttiin"
+        },
+        "developer_comment": ""
+      },
+      "US_CAN_AUTH": {
+        "name": {
+          "string": "Voi todentaa"
+        },
+        "description": {
+          "string": "Tämän käyttäjälähteen käyttäjät voivat kirjautua webmailiin"
+        },
+        "developer_comment": ""
+      },
+      "US_PWD_ALGO": {
+        "name": {
+          "string": "Käyttäjälähteen salasanan salausalgoritmi"
+        },
+        "description": {
+          "string": "Tämän käyttäjälähteen käyttämä salasanan salausalgoritmi. Pakollinen SQL-käyttäjälähteelle. Vapaaehtoinen LDAP:lle: tarvitaan vain, jos sallit käyttäjien salasanan vaihtamisen"
+        },
+        "developer_comment": ""
+      },
+      "US_SIM_KEY_TYPE": {
+        "name": {
+          "string": "Salasanan salausalgoritmin symmetrisen avaimen tyyppi"
+        },
+        "description": {
+          "string": "Määrittää, miten symmetrinen avain tallennetaan"
+        },
+        "developer_comment": ""
+      },
+      "US_SIM_KEY_VALUE": {
+        "name": {
+          "string": "Salasanan salausalgoritmin symmetrisen avaimen arvo"
+        },
+        "description": {
+          "string": "Arvo riippuu tyypistä.\nJos 'path', anna tiedostopolku, josta SOGo löytää symmetrisen avaimen.\nJos 'env', aseta ympäristömuuttujan nimi, jossa avain on.\nJos 'plain', syötä avain suoraan tähän"
+        },
+        "developer_comment": ""
+      },
+      "US_PWD_POLICY": {
+        "name": {
+          "string": "Käyttäjän salasanakäytäntö"
+        },
+        "description": {
+          "string": "Valitse ruutu lisätäksesi käytännön käyttäjän salasanalle. Tätä käytäntöä käytetään, kun käyttäjä vaihtaa salasanaansa tai jos olet ottanut käyttöön 'tarkista salasanan vahvuus kirjautumisen yhteydessä'"
+        },
+        "developer_comment": ""
+      },
+      "US_PWD_LEN_MIN": {
+        "name": {
+          "string": "Käyttäjän salasanan vähimmäispituus"
+        },
+        "description": {
+          "string": "Käyttäjän salasanan vähimmäispituus (mukaan lukien). Vähintään 4 merkkiä."
+        },
+        "developer_comment": ""
+      },
+      "US_PWD_LEN_MAX": {
+        "name": {
+          "string": "Käyttäjän salasanan enimmäispituus"
+        },
+        "description": {
+          "string": "Käyttäjän salasanan enimmäispituus (mukaan lukien). 0 tarkoittaa, että rajoitusta ei ole"
+        },
+        "developer_comment": ""
+      },
+      "US_PWD_UPPERCASE_MIN": {
+        "name": {
+          "string": "Käyttäjän salasanan isoja kirjaimia (minimi)"
+        },
+        "description": {
+          "string": "Isojen kirjainten vähimmäismäärä. 0 tarkoittaa, että rajoitusta ei ole"
+        },
+        "developer_comment": ""
+      },
+      "US_PWD_LOWERCASE_MIN": {
+        "name": {
+          "string": "Käyttäjän salasanan pieniä kirjaimia (minimi)"
+        },
+        "description": {
+          "string": "Pienien kirjainten vähimmäismäärä. 0 tarkoittaa, että rajoitusta ei ole"
+        },
+        "developer_comment": ""
+      },
+      "US_PWD_DIGITS_MIN": {
+        "name": {
+          "string": "Käyttäjän salasanan numeroita (minimi)"
+        },
+        "description": {
+          "string": "Numeromerkkien vähimmäismäärä. 0 tarkoittaa, että rajoitusta ei ole"
+        },
+        "developer_comment": ""
+      },
+      "US_PWD_SPECIAL_ALLOWED": {
+        "name": {
+          "string": "Käyttäjän salasanan sallitut erikoismerkit"
+        },
+        "description": {
+          "string": "Luettelo salasanassa sallituista erikoismerkeistä"
+        },
+        "developer_comment": ""
+      },
+      "US_PWD_SPECIAL_MIN": {
+        "name": {
+          "string": "Käyttäjän salasanan erikoismerkkien vähimmäismäärä"
+        },
+        "description": {
+          "string": "Erikoismerkien vähimmäismäärä salasanassa. 0 tarkoittaa, että rajoitusta ei ole"
+        },
+        "developer_comment": ""
+      },
+      "US_MAIL": {
+        "name": {
+          "string": "Käyttäjän sähköpostikenttä"
+        },
+        "description": {
+          "string": "Kenttä, josta käyttäjän sähköpostiosoite löytyy. Pääpostiosoitteen jälkeen voidaan määrittää lisäkenttiä käyttäjän aliasosoitteille"
+        },
+        "developer_comment": ""
+      },
+      "US_MAIL_SERVER_LOGIN": {
+        "name": {
+          "string": "Käyttäjän sähköpostipalvelimen kirjautumistunnus"
+        },
+        "description": {
+          "string": "Määritä vain, jos käyttäjän kirjautumistunnus sähköpostipalvelimeen (IMAP) poikkeaa pääpostiosoitteesta. Anna tässä kenttä, josta kirjautumistunnus löytyy"
+        },
+        "developer_comment": ""
+      },
+      "US_MAIL_FILTERING_LOGIN": {
+        "name": {
+          "string": "Käyttäjän sähköpostisuodattimen kirjautumistunnus"
+        },
+        "description": {
+          "string": "Määritä vain, jos käyttäjän kirjautumistunnus sähköpostisuodatinpalvelimeen (Sieve) poikkeaa pääpostiosoitteesta. Anna tässä kenttä, josta kirjautumistunnus löytyy"
+        },
+        "developer_comment": ""
+      },
+      "US_MAIL_OUTGOING_LOGIN": {
+        "name": {
+          "string": "Käyttäjän lähtevän postin palvelimen kirjautumistunnus"
+        },
+        "description": {
+          "string": "Määritä vain, jos käyttäjän kirjautumistunnus lähtevän postin palvelimeen (SMTP) poikkeaa pääpostiosoitteesta. Anna tässä kenttä, josta kirjautumistunnus löytyy"
+        },
+        "developer_comment": ""
+      },
+      "US_KIND": {
+        "name": {
+          "string": "Käyttäjän tyyppi"
+        },
+        "description": {
+          "string": "Määritä kenttä, josta käyttäjän tyyppi ('user', 'resource' tai 'group') löytyy"
+        },
+        "developer_comment": ""
+      },
+      "US_IS_ADDRESSBOOK": {
+        "name": {
+          "string": "Käyttäjälähde on osoitekirja"
+        },
+        "description": {
+          "string": "Määritä kenttä, jos tämän käyttäjälähteen käyttäjät löytyvät automaattisesta täydennyksestä tai globaalista osoitekirjasta"
+        },
+        "developer_comment": ""
+      },
+      "US_SEARCH": {
+        "name": {
+          "string": "Käyttäjän hakukenttä"
+        },
+        "description": {
+          "string": "Lisäkenttä, joka lisätään käyttäjän hakuun. Esimerkiksi 'name' löytää käyttäjän nimen perusteella"
+        },
+        "developer_comment": ""
+      },
+      "US_DISPLAY_NAME": {
+        "name": {
+          "string": "Käyttäjälähteen näyttönimi"
+        },
+        "description": {
+          "string": "Tämän käyttäjälähteen näyttönimi, joka näytetään globaalissa osoitekirjalistassa"
+        },
+        "developer_comment": ""
+      },
+      "US_AUTO_SEARCH": {
+        "name": {
+          "string": "Käyttäjän automaattinen näyttäminen GAB:ssa"
+        },
+        "description": {
+          "string": "Hakee ja näyttää käyttäjiä automaattisesti Yleisen osoitekirjan (Global Address Book) valinnassa. Muuten käyttäjän on kirjoitettava hakuun tai syötettävä '.' kaikkien käyttäjien hakemiseksi."
+        },
+        "developer_comment": ""
+      },
+      "US_AUTO_SEARCH_LIMIT": {
+        "name": {
+          "string": "Käyttäjän automaattisen täydennyksen raja"
+        },
+        "description": {
+          "string": "Rajoittaa haun palauttamien käyttäjien enimmäismäärää. Arvo 0 tarkoittaa, että rajoitusta ei ole."
+        },
+        "developer_comment": ""
+      },
+      "US_EXTRA_CONTACT_INFO": {
+        "name": {
+          "string": "Käyttäjän lisätiedot"
+        },
+        "description": {
+          "string": "Määrittää, mitä tietoja lisätään automaattisen täydennyksen tulokseen. Näytetään muodossa 'cn <lisätiedot> sähköposti'."
+        },
+        "developer_comment": ""
+      },
+      "US_HIDDEN_USER": {
+        "name": {
+          "string": "Piilotetut käyttäjät"
+        },
+        "description": {
+          "string": "Luettelo käyttäjätunnuksista (uid), joita ei koskaan palauteta muille haun tai automaattisen täydennyksen yhteydessä."
+        },
+        "developer_comment": ""
+      },
+      "US_HAS_RESOURCE": {
+        "name": {
+          "string": "Käyttäjälähteessä on resursseja"
+        },
+        "description": {
+          "string": "Valitse ruutu, jos tämä käyttäjälähde sisältää resursseja."
+        },
+        "developer_comment": ""
+      },
+      "US_RESOURCE_SEARCH": {
+        "name": {
+          "string": "Resurssien haku"
+        },
+        "description": {
+          "string": "Lisähakukenttä resursseille."
+        },
+        "developer_comment": ""
+      },
+      "US_RESOURCE_MULTIBOOKING": {
+        "name": {
+          "string": "Resurssien monivaraus"
+        },
+        "description": {
+          "string": "Kenttä, josta löytyy resurssin monivarausarvo."
+        },
+        "developer_comment": ""
+      },
+      "US_RESOURCE_EXTRA_INFO": {
+        "name": {
+          "string": "Resurssien lisätiedot"
+        },
+        "description": {
+          "string": "Määrittää, mitä tietoja lisätään automaattisen täydennyksen tulokseen. Näytetään muodossa 'cn <lisätiedot> sähköposti'."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MODULE_ACCESS": {
+        "name": {
+          "string": "Moduulien käyttöoikeudet"
+        },
+        "description": {
+          "string": "Määrittää, mitkä moduulit (sähköposti, kalenteri, yhteystiedot) ovat käytettävissä."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAPI_ACCESS": {
+        "name": {
+          "string": "MAPI-palvelimen käyttöönotto"
+        },
+        "description": {
+          "string": "Sallii työpöytäkäyttäjien käyttää MAPI-protokollaa."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_EAS_ACCESS": {
+        "name": {
+          "string": "Ota EAS-palvelin käyttöön"
+        },
+        "description": {
+          "string": "Salli mobiilikäyttäjien käyttää ActiveSync-protokollaa"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_FOLDER_DISABLE_EXPORT": {
+        "name": {
+          "string": "Poista kansioiden vienti käytöstä"
+        },
+        "description": {
+          "string": "Estä käyttäjiä vientämästä kansioitaan (sähköposti, kalenteri, yhteystiedot)"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_FOLDER_DISABLE_SHARING": {
+        "name": {
+          "string": "Poista kansioiden jakaminen käytöstä"
+        },
+        "description": {
+          "string": "Estä käyttäjiä jakamasta kansioitaan (sähköposti, kalenteri, yhteystiedot)"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_FOLDER_DISABLE_SHARING_ANY_AUTH": {
+        "name": {
+          "string": "Poista kansioiden jakaminen todennetuille käyttäjille käytöstä"
+        },
+        "description": {
+          "string": "Estä käyttäjiä jakamasta kansioitaan kaikille todennetuille käyttäjille (sähköposti, kalenteri, yhteystiedot)"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_AUTOCOMPLETION_MIN_LEN": {
+        "name": {
+          "string": "Automaattisen täydennyksen vähimmäismerkit"
+        },
+        "description": {
+          "string": "Aseta vähimmäismäärä merkkejä, joilla automaattinen täydennys käynnistyy (esim. 3 = haku aloitetaan kolmannella merkillä)"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_API_MAX_REQUEST": {
+        "name": {
+          "string": "API-pyyntöjen enimmäismäärä"
+        },
+        "description": {
+          "string": "Aseta todennetun käyttäjän enimmäismäärä API-pyynnöille tietyn ajan kuluessa"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_API_MAX_REQUEST_INTERVAL": {
+        "name": {
+          "string": "API-pyyntöjen enimmäisajanjakso"
+        },
+        "description": {
+          "string": "Aseta aikaväli, jonka aikana 'API-pyyntöjen enimmäismäärä' rajoittaa pyyntöjä"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_API_MAX_REQUEST_BLOCK_INTERVAL": {
+        "name": {
+          "string": "Eston kesto API-pyyntöjen enimmäismäärän ylittyessä"
+        },
+        "description": {
+          "string": "Aseta aika, jonka käyttäjä estetään tekemästä pyyntöjä, jos 'API-pyyntöjen enimmäismäärä' on ylitetty"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_IDENTITIES_ENABLED": {
+        "name": {
+          "string": "Ota identiteetit käyttöön"
+        },
+        "description": {
+          "string": "Salli käyttäjien luoda sähköposti-identiteettejä"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_IDENTITIES_CUSTOM_FROM_ENABLED": {
+        "name": {
+          "string": "Ota mukautettu 'Lähettäjä'-kenttä käyttöön"
+        },
+        "description": {
+          "string": "Salli käyttäjien asettaa mukautettu 'Lähettäjä'-kenttä identiteeteissään"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_IDENTITIES_CUSTOM_NAME_ENABLED": {
+        "name": {
+          "string": "Ota käyttöön mukautettu 'Nimi'"
+        },
+        "description": {
+          "string": "Salli käyttäjän asettaa mukautettu nimi identiteeteissään"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_IDENTITIES_CUSTOM_REPLY_TO_ENABLED": {
+        "name": {
+          "string": "Ota käyttöön mukautettu 'Vastaa osoitteeseen'"
+        },
+        "description": {
+          "string": "Salli käyttäjän asettaa mukautettu 'Vastaa osoitteeseen' identiteeteissään"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_ALLOW_EXT_MAIL_ACCOUNT": {
+        "name": {
+          "string": "Ota käyttöön ulkoinen sähköpostitili"
+        },
+        "description": {
+          "string": "Salli käyttäjän asettaa ulkoinen tili"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_ALLOW_EXT_AVATAR": {
+        "name": {
+          "string": "Salli ulkoisen profiilikuvan käyttö"
+        },
+        "description": {
+          "string": "Salli käyttäjän asettaa asetukset ulkoisen profiilikuvan (gravatar, libravatar jne.) käyttöön"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_REFRESH_INTERVAL_ALLOWED": {
+        "name": {
+          "string": "Aseta sallitut sähköpostin automaattisen päivittämisen välit"
+        },
+        "description": {
+          "string": "Aseta arvot, joita käyttäjät voivat valita 'sähköpostin automaattinen päivittäminen' -asetukselle"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_JUNK_SETTINGS": {
+        "name": {
+          "string": "Aseta roskapostin/halutun postin laukaisintyyppi"
+        },
+        "description": {
+          "string": "Aseta mekanismi, jota käytetään, kun käyttäjät merkitsivät viestin roskapostiksi tai halutuksi postiksi"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_JUNK_MAIL_SPAM": {
+        "name": {
+          "string": "Sähköposti roskapostille"
+        },
+        "description": {
+          "string": "Aseta sähköpostiosoite, johon roskaposti ohjataan"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_SERVER_TYPE": {
+        "name": {
+          "string": "Sähköpostipalvelimen tyyppi"
+        },
+        "description": {
+          "string": "Aseta sähköpostipalvelimen tyyppi"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_IMAP_SERVER": {
+        "name": {
+          "string": "IMAP-palvelin"
+        },
+        "description": {
+          "string": "IMAP-palvelimen isäntänimi"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_IMAP_PORT": {
+        "name": {
+          "string": "IMAP-portti"
+        },
+        "description": {
+          "string": "IMAP-palvelimen portti"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_IMAP_ENCRYPTION": {
+        "name": {
+          "string": "IMAP-salaus"
+        },
+        "description": {
+          "string": "IMAP-palvelimen salausmekanismi"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_IMAP_AUTH_MECH": {
+        "name": {
+          "string": "IMAP-todennusmekanismi"
+        },
+        "description": {
+          "string": "IMAP:n todennusmekanismi. Älä käytä 'login'-menetelmää varotoimitta"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SOFT_EMAIL_QUOTA": {
+        "name": {
+          "string": "Pehmeä kiintiö"
+        },
+        "description": {
+          "string": "Aseta pehmeän kiintiön prosenttiosuus"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_PURGE_ALLOW": {
+        "name": {
+          "string": "Salli tyhjennys"
+        },
+        "description": {
+          "string": "Tyhjennys mahdollistaa käyttäjälle vanhojen viestien poiston tietystä kansiosta tai koko tilistä tietyn päivämäärän jälkeen"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_PURGE_MIN_DATE": {
+        "name": {
+          "string": "Tyhjennyksen vähimmäispäivät"
+        },
+        "description": {
+          "string": "Aseta vähimmäispäivät, joiden jälkeen käyttäjä voi tyhjentää viestejä. 0 tarkoittaa, että käyttäjä voi poistaa kaikki viestinsä. 30 tarkoittaa, että käyttäjä voi poistaa vain yli 30 päivää vanhat viestit"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_FILTERING_ENABLED": {
+        "name": {
+          "string": "Ota sähköpostin suodatus käyttöön"
+        },
+        "description": {
+          "string": "Salli käyttäjien määritellä sähköpostisuodattimia"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_FILTERING_TYPE": {
+        "name": {
+          "string": "Sähköpostisuodatuksen tyyppi"
+        },
+        "description": {
+          "string": "Sähköpostisuodatusprotokollan tyyppi"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SIEVE_SERVER": {
+        "name": {
+          "string": "Sieve-palvelin"
+        },
+        "description": {
+          "string": "Sieve-palvelimen isäntänimi"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SIEVE_PORT": {
+        "name": {
+          "string": "Sieve-portti"
+        },
+        "description": {
+          "string": "Sieve-palvelimen portti"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SIEVE_ENCRYPTION": {
+        "name": {
+          "string": "Sieve-salaus"
+        },
+        "description": {
+          "string": "Sieve-palvelimen salaus"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SIEVE_AUTH_MECH": {
+        "name": {
+          "string": "Sieve-todennusmekanismi"
+        },
+        "description": {
+          "string": "Sieve-todennusmekanismi. Jos ei aseteta, käytetään oletusta."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SIEVE_FOLDER_ENCODING": {
+        "name": {
+          "string": "Sieve-merkistökoodaus"
+        },
+        "description": {
+          "string": "Määrittää Sieve-palvelimen käyttämän merkistökoodauksen."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SIEVE_HEADER": {
+        "name": {
+          "string": "Sieve-otsikko"
+        },
+        "description": {
+          "string": "Määrittää Sieve-skriptin, joka lisätään kaikkien käyttäjien Sieve-skriptien alkuun"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SIEVE_FOOTER": {
+        "name": {
+          "string": "Sieve-alatunniste"
+        },
+        "description": {
+          "string": "Määrittää Sieve-skriptin, joka lisätään kaikkien käyttäjien Sieve-skriptien loppuun"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SIEVE_FIRST_FILTER": {
+        "name": {
+          "string": "Alustava Sieve-skripti"
+        },
+        "description": {
+          "string": "Määrittää uusien käyttäjien alustavan Sieve-skriptin. Käyttäjät voivat muokata sitä myöhemmin."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_VACATION_ENABLED": {
+        "name": {
+          "string": "Salli lomaviesti"
+        },
+        "description": {
+          "string": "Salli käyttäjän asettaa lomaviesti. Käyttää 'vacation'-Sieve-laajennusta (RFC 5230)."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_VACATION_ALLOW_RESPONSE_ALWAYS": {
+        "name": {
+          "string": "Salli lomaviesti aina"
+        },
+        "description": {
+          "string": "Salli käyttäjän asettaa lomaviestin, joka lähetetään aina ilman armovaihetta."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_FORWARD_ENABLED": {
+        "name": {
+          "string": "Salli automaattinen välitys"
+        },
+        "description": {
+          "string": "Salli käyttäjän asettaa automaattisen viestin välityksen. Käyttää 'redirect'-Sieve-komentoa."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_FORWARD_ALLOW_USER_DOMAIN": {
+        "name": {
+          "string": "Salli automaattinen välitys saman verkkotunnuksen sisällä"
+        },
+        "description": {
+          "string": "Salli käyttäjän asettaa automaattisen viestin välityksen saman verkkotunnuksen osoitteisiin."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_FORWARD_ALLOW_SOGO_DOMAIN": {
+        "name": {
+          "string": "Salli automaattinen välitys SOGo-verkkotunnukseen"
+        },
+        "description": {
+          "string": "Salli käyttäjän asettaa automaattisen viestin välityksen SOGo:n tunnetuille osoitteille."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_FORWARD_ALLOW_EXT_DOMAIN": {
+        "name": {
+          "string": "Salli automaattinen välittäminen ulkoiselle verkkotunnukselle"
+        },
+        "description": {
+          "string": "Salli käyttäjän asettaa automaattinen välittäminen ulkoisille osoitteille"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_FORWARD_WHITELIST": {
+        "name": {
+          "string": "Automaattisen välittämisen sallitut verkkotunnukset"
+        },
+        "description": {
+          "string": "Määritä verkkotunnukset, joihin käyttäjä voi välittää viestejä"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_FORWARD_BLACKLIST": {
+        "name": {
+          "string": "Automaattisen välittämisen estetyt verkkotunnukset"
+        },
+        "description": {
+          "string": "Määritä verkkotunnukset, joihin käyttäjältä on kielletty viestien välittäminen"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_NOTIFY_ENABLED": {
+        "name": {
+          "string": "Salli ilmoitukset"
+        },
+        "description": {
+          "string": "Salli käyttäjän asettaa ilmoituksia. Käyttää 'notify'-sieve-laajennosta (RFC 5435)"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_NOTIFY_ALLOW_USER_DOMAIN": {
+        "name": {
+          "string": "Salli ilmoitukset käyttäjän verkkotunnukselle"
+        },
+        "description": {
+          "string": "Salli käyttäjän asettaa ilmoituksia osoitteisiin samassa verkkotunnuksessa"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_NOTIFY_ALLOW_SOGO_DOMAIN": {
+        "name": {
+          "string": "Salli ilmoitukset SOGo-verkkotunnukselle"
+        },
+        "description": {
+          "string": "Salli käyttäjän asettaa ilmoituksia SOGo-tunnistamiin osoitteisiin"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_NOTIFY_ALLOW_EXT_DOMAIN": {
+        "name": {
+          "string": "Salli ilmoitukset ulkoiselle verkkotunnukselle"
+        },
+        "description": {
+          "string": "Salli käyttäjän asettaa ilmoituksia ulkoisille osoitteille"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_NOTIFY_WHITELIST": {
+        "name": {
+          "string": "Ilmoitusten sallitut verkkotunnukset"
+        },
+        "description": {
+          "string": "Määritä verkkotunnukset, joihin käyttäjä voi lähettää ilmoituksia"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_NOTIFY_BLACKLIST": {
+        "name": {
+          "string": "Ilmoitusten estetyt verkkotunnukset"
+        },
+        "description": {
+          "string": "Määritä verkkotunnukset, joihin käyttäjältä on kielletty ilmoitusten lähettäminen"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_OUTGOING_TYPE": {
+        "name": {
+          "string": "Lähtöpalvelimen tyyppi"
+        },
+        "description": {
+          "string": "Määritä lähtöpalvelimen tyyppi"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SMTP_SERVER": {
+        "name": {
+          "string": "SMTP-palvelin"
+        },
+        "description": {
+          "string": "SMTP-palvelimen isäntänimi"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SMTP_PORT": {
+        "name": {
+          "string": "SMTP-portti"
+        },
+        "description": {
+          "string": "SMTP-palvelimen portti"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SMTP_ENCRYPTION": {
+        "name": {
+          "string": "SMTP-salaus"
+        },
+        "description": {
+          "string": "SMTP-palvelimen salausmekanismi"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SMTP_AUTH_MECH": {
+        "name": {
+          "string": "SMTP-todennusmekanismi"
+        },
+        "description": {
+          "string": "SMTP:n todennusmekanismi. Älä käytä 'Ei mitään' varotoimitta"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SMTP_MASTER_ENABLED": {
+        "name": {
+          "string": "SMTP-pääkäyttäjätili"
+        },
+        "description": {
+          "string": "Käytä pääkäyttäjätiliä kaikille järjestelmäviesteille (tapahtumat, ilmoitukset jne.)"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SMTP_MASTER_FROM": {
+        "name": {
+          "string": "Pääkäyttäjätilin lähettäjä"
+        },
+        "description": {
+          "string": "SMTP-pääkäyttäjätilin lähettäjä"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SMTP_MASTER_LOGIN": {
+        "name": {
+          "string": "Pääkäyttäjätilin kirjautumistunnus"
+        },
+        "description": {
+          "string": "SMTP-pääkäyttäjätilin sähköposti"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SMTP_MASTER_PWD": {
+        "name": {
+          "string": "Pääkäyttäjätilin salasana"
+        },
+        "description": {
+          "string": "SMTP-pääkäyttäjätilin salasana"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_MAX_SUBMISSION": {
+        "name": {
+          "string": "Lähetettävien sähköpostien enimmäismäärä"
+        },
+        "description": {
+          "string": "Käyttäjän lähettämien sähköpostien enimmäismäärä tietyn ajan kuluessa"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_MAX_SUBMISSION_INTERVAL": {
+        "name": {
+          "string": "Lähetettävien sähköpostien enimmäismäärän aikaväli"
+        },
+        "description": {
+          "string": "Aikaväli sekunneissa, jolloin 'Lähetettävien sähköpostien enimmäismäärä' otetaan huomioon"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_MAX_SUBMISSION_BLOCK_INTERVAl": {
+        "name": {
+          "string": "Maksimipostituksen eston kesto"
+        },
+        "description": {
+          "string": "Aika, jonka käyttäjä on estetty lähettämästä sähköpostia 'Maksimipostitusmäärä'-rajan ylittyessä"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_MAX_RECIPIENT": {
+        "name": {
+          "string": "Vastaanottajien enimmäismäärä sähköpostissa"
+        },
+        "description": {
+          "string": "Pääkäyttäjän salasanan tarkistus"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_CHECK_FROM": {
+        "name": {
+          "string": "Tarkista 'Lähettäjä'-kenttä"
+        },
+        "description": {
+          "string": "Tarkista, onko lähettäjä yksi käyttäjän sähköpostiosoitteista (oletus, alias, identiteetit jne.) ennen ulkoisen postipalvelimen käyttöä"
+        },
+        "developer_comment": ""
+      }
+    }
+  }
+}

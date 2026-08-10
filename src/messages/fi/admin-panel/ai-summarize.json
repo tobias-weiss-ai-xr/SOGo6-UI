@@ -1,0 +1,46 @@
+{
+  "AI_SUMMARIZE": {
+    "title": {
+      "string": "Sähköpostin tiivistys"
+    },
+    "description": {
+      "string": "TL;DR pitkille sähköpostiketjuille. Uutteellinen tiivistys palauttaa tärkeimmät lauseet."
+    },
+    "input": {
+      "title": {
+        "string": "Syötesähköposti"
+      },
+      "text": {
+        "string": "Sähköpostin teksti"
+      },
+      "placeholder": {
+        "string": "Liitä sähköpostin sisältö tähän..."
+      },
+      "sentences": {
+        "string": "Maksimimäärä lauseita"
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Tiivistelmä"
+      },
+      "empty": {
+        "string": "Syötä teksti ja klikkaa Tiivistä"
+      }
+    },
+    "summarize": {
+      "string": "Tiivistä"
+    },
+    "loading": {
+      "string": "Tiivistetään..."
+    },
+    "errors": {
+      "empty": {
+        "string": "Syötä tiivistettävä teksti"
+      },
+      "fail": {
+        "string": "Tiivistys epäonnistui"
+      }
+    }
+  }
+}

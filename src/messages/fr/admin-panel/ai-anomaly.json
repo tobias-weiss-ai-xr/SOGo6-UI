@@ -1,0 +1,52 @@
+{
+    "AI_ANOMALY": {
+        "title": {
+            "string": "Détection d'anomalies"
+        },
+        "description": {
+            "string": "Analyse des modèles d'envoi avec scoring de risque"
+        },
+        "input": {
+            "title": {
+                "string": "Entrée"
+            },
+            "recipients": {
+                "string": "Nombre de destinataires"
+            },
+            "hour": {
+                "string": "Heure"
+            },
+            "new_ratio": {
+                "string": "Ratio nouveaux destinataires"
+            }
+        },
+        "output": {
+            "title": {
+                "string": "Résultat"
+            },
+            "empty": {
+                "string": "L'analyse apparaîtra ici"
+            },
+            "anomaly": {
+                "string": "Anomalie détectée"
+            },
+            "normal": {
+                "string": "Normal"
+            },
+            "score": {
+                "string": "Score de risque"
+            }
+        },
+        "analyze": {
+            "string": "Analyseur"
+        },
+        "errors": {
+            "empty": {
+                "string": "Champs requis"
+            },
+            "fail": {
+                "string": "Échec de l'analyse"
+            }
+        }
+    }
+}

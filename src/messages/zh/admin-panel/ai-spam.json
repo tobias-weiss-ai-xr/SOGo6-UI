@@ -1,0 +1,49 @@
+{
+  "AI_SPAM": {
+    "title": {
+      "string": "智能垃圾邮件过滤器"
+    },
+    "description": {
+      "string": "实时垃圾邮件检测与信号分析"
+    },
+    "input": {
+      "title": {
+        "string": "输入"
+      },
+      "subject": {
+        "string": "主题"
+      },
+      "sender": {
+        "string": "发件人"
+      },
+      "body": {
+        "string": "邮件正文"
+      },
+      "placeholder": {
+        "string": "粘贴邮件文本进行分析..."
+      }
+    },
+    "output": {
+      "title": {
+        "string": "结果"
+      },
+      "empty": {
+        "string": "结果将在此显示"
+      },
+      "signals": {
+        "string": "信号"
+      }
+    },
+    "score": {
+      "string": "评分"
+    },
+    "errors": {
+      "empty": {
+        "string": "请输入主题或正文"
+      },
+      "fail": {
+        "string": "分析失败"
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "FORM_ERRORS": {
+    "required": {
+      "default": {
+        "string": "此字段为必填项"
+      }
+    },
+    "invalid": {
+      "email": {
+        "string": "无效的电子邮件地址"
+      }
+    }
+  }
+}

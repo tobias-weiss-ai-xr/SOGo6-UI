@@ -1,5 +1,6 @@
 import { SerializedError } from '@reduxjs/toolkit'
 import { FetchBaseQueryError } from '@reduxjs/toolkit/query'
+import { logger } from '@/lib/logger'
 
 interface BackendErrorResponse {
   error_msg?: string
@@ -40,7 +41,7 @@ export function getExistingErrorMessage(error: unknown): string | null {
 }
 
 export function getErrorMessage(error: unknown): string {
-  console.error('getErrorMessage error object:', error)
+  logger.error('getErrorMessage error object:', { error: error })
   if (isFetchBaseQueryError(error)) {
     if ('error' in error && typeof error.error === 'string') {
       return error.error

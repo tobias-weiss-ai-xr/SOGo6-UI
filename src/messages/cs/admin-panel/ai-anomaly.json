@@ -1,0 +1,49 @@
+{
+  "AI_ANOMALY": {
+    "title": {
+      "string": "Detekce anomálií"
+    },
+    "description": {
+      "string": "Označte neobvyklé vzorce odesílání: hromadné e-maily, podivné hodiny, noví příjemci."
+    },
+    "input": {
+      "title": {
+        "string": "Vzor odesílání"
+      },
+      "recipients": {
+        "string": "Počet příjemců"
+      },
+      "hour": {
+        "string": "Hodina (0-23)"
+      },
+      "new_ratio": {
+        "string": "Podíl nových příjemců"
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Výsledek analýzy"
+      },
+      "empty": {
+        "string": "Zadejte hodnoty a klikněte na Analyzovat"
+      },
+      "anomaly": {
+        "string": "Zjištěna anomálie!"
+      },
+      "normal": {
+        "string": "Vzor je normální"
+      },
+      "score": {
+        "string": "Skóre rizika"
+      }
+    },
+    "analyze": {
+      "string": "Analyzovat"
+    },
+    "errors": {
+      "fail": {
+        "string": "Analýza se nezdařila"
+      }
+    }
+  }
+}

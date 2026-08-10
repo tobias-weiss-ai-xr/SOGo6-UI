@@ -1,0 +1,54 @@
+{
+  "AI_ENRICH": {
+    "title": {
+      "string": "Automatyczne wzbogacanie kontaktów"
+    },
+    "description": {
+      "string": "Wydobywaj numer telefonu, stanowisko, firmę i lokalizację z podpisów e-mail."
+    },
+    "input": {
+      "title": {
+        "string": "Podpis e-mail"
+      },
+      "signature": {
+        "string": "Tekst podpisu"
+      },
+      "placeholder": {
+        "string": "Wklej tutaj podpis e-mail..."
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Wydobyte informacje"
+      },
+      "empty": {
+        "string": "Wprowadź tekst podpisu i kliknij Wydobądź"
+      }
+    },
+    "extract": {
+      "string": "Wydobądź informacje"
+    },
+    "field": {
+      "phone": {
+        "string": "Telefon"
+      },
+      "title": {
+        "string": "Stanowisko"
+      },
+      "company": {
+        "string": "Firma"
+      },
+      "location": {
+        "string": "Lokalizacja"
+      }
+    },
+    "errors": {
+      "empty": {
+        "string": "Wprowadź tekst"
+      },
+      "fail": {
+        "string": "Wydobycie nie powiodło się"
+      }
+    }
+  }
+}

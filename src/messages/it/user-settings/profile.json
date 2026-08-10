@@ -1,0 +1,53 @@
+{
+    "FORM_PROFILE": {
+        "title": "Profilo",
+        "description": "Gestisci le informazioni e le impostazioni del tuo profilo.",
+        "sections": {
+            "basicInfo": "Informazioni di base",
+            "identities": "Identità"
+        },
+        "firstname": {
+            "string": "Nome",
+            "description": "Label for the first name input field."
+        },
+        "lastname": {
+            "string": "Cognome",
+            "description": "Label for the last name input field."
+        },
+        "basicInfo": {
+            "title": "Informazioni di base",
+            "uid": "ID Utente",
+            "email": "Email",
+            "fullName": "Nome",
+            "aliases": "Alias email"
+        },
+        "extraInfo": {
+            "title": "Informazioni aggiuntive",
+            "company": "Azienda",
+            "team": "Team"
+        },
+        "profilePictureSource": {
+            "title": "Immagine del profilo",
+            "description": "Scegli come visualizzare la tua immagine del profilo. Puoi caricare un'immagine personalizzata, usare Gravatar, Libravatar o l'avatar predefinito.",
+            "useDefault": "Predefinito",
+            "useGravatar": "Gravatar",
+            "useLibravatar": "Libravatar",
+            "useCustom": "Personalizzato"
+        },
+        "identities": {},
+        "api": {
+            "title": {
+                "string": "Errore"
+            },
+            "loading": {
+                "string": "Caricamento in corso"
+            },
+            "load_failed": {
+                "string": "Caricamento profilo fallito. Riprova più tardi."
+            },
+            "update_failed": {
+                "string": "Aggiornamento profilo fallito. Riprova."
+            }
+        }
+    }
+}

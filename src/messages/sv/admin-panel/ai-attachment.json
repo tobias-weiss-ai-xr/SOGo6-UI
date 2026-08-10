@@ -1,0 +1,40 @@
+{
+  "AI_ATTACH": {
+    "title": {
+      "string": "Smarta bilagoråder"
+    },
+    "description": {
+      "string": "Automatisk detektering av dokumenttyp med förslag på att spara, vidarebefordra eller arkivera."
+    },
+    "input": {
+      "title": {
+        "string": "Bilaga"
+      },
+      "filename": {
+        "string": "Filnamn"
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Analys"
+      },
+      "empty": {
+        "string": "Ange ett filnamn"
+      },
+      "preview": {
+        "string": "Kan förhandsgranska"
+      }
+    },
+    "classify": {
+      "string": "Klassificera"
+    },
+    "errors": {
+      "empty": {
+        "string": "Ange ett filnamn"
+      },
+      "fail": {
+        "string": "Klassificering misslyckades"
+      }
+    }
+  }
+}

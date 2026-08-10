@@ -1,0 +1,43 @@
+{
+  "AI_SCHEDULE": {
+    "title": {
+      "string": "Intelligent kalenderplanlægning"
+    },
+    "description": {
+      "string": "AI-forslag til mødetider baseret på deltagernes tilgængelighedsmønstre og præferencer."
+    },
+    "input": {
+      "title": {
+        "string": "Mødeopsætning"
+      },
+      "attendees": {
+        "string": "Deltagere"
+      },
+      "from": {
+        "string": "Fra"
+      },
+      "to": {
+        "string": "Til"
+      },
+      "duration": {
+        "string": "Varighed (min)"
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Foreslåede tidspunkter"
+      }
+    },
+    "suggest": {
+      "string": "Foreslå tidspunkter"
+    },
+    "errors": {
+      "fields": {
+        "string": "Deltagere, fra- og til-datoer er påkrævet"
+      },
+      "fail": {
+        "string": "Forslag mislykkedes"
+      }
+    }
+  }
+}

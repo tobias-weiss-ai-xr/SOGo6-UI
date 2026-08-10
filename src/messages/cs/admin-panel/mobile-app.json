@@ -1,0 +1,65 @@
+{
+  "MOBILE": {
+    "title": {
+      "string": "Správa mobilní aplikace"
+    },
+    "description": {
+      "string": "Správa registrovaných zařízení, push notifikací a konfigurace aplikace"
+    },
+    "errors": {
+      "fail": {
+        "string": "Operace se nezdařila"
+      }
+    },
+    "success": {
+      "unregister": {
+        "string": "Zařízení odregistrováno"
+      },
+      "broadcast": {
+        "string": "Push notifikace odeslána"
+      }
+    },
+    "config": {
+      "title": {
+        "string": "Nastavení aplikace"
+      },
+      "push": {
+        "string": "Push notifikace"
+      },
+      "biometric": {
+        "string": "Biometrické ověření"
+      }
+    },
+    "push": {
+      "title": {
+        "placeholder": {
+          "string": "Název notifikace"
+        }
+      },
+      "message": {
+        "placeholder": {
+          "string": "Zpráva..."
+        }
+      },
+      "broadcast": {
+        "string": "Odeslat"
+      }
+    },
+    "stats": {
+      "title": {
+        "string": "Statistiky"
+      },
+      "devices": {
+        "string": "Registrovaná zařízení"
+      }
+    },
+    "devices": {
+      "title": {
+        "string": "Všechna zařízení"
+      },
+      "empty": {
+        "string": "Zatím nejsou registrována žádná zařízení"
+      }
+    }
+  }
+}

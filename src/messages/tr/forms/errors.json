@@ -1,0 +1,14 @@
+{
+  "FORM_ERRORS": {
+    "required": {
+      "default": {
+        "string": "Bu alan zorunludur"
+      }
+    },
+    "invalid": {
+      "email": {
+        "string": "Geçersiz e-posta adresi"
+      }
+    }
+  }
+}

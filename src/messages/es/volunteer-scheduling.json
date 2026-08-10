@@ -1,0 +1,98 @@
+{
+  "VOLUNTEER": {
+    "title": {
+      "string": "Programación de voluntarios"
+    },
+    "description": {
+      "string": "Gestione voluntarios y registre horas"
+    },
+    "errors": {
+      "fields": {
+        "string": "Campos obligatorios faltantes"
+      },
+      "fail": {
+        "string": "Operación fallida"
+      }
+    },
+    "success": {
+      "create": {
+        "string": "Voluntario registrado"
+      },
+      "shift": {
+        "string": "Turno asignado"
+      },
+      "cert": {
+        "string": "Certificado generado"
+      }
+    },
+    "register": {
+      "title": {
+        "string": "Registrar voluntario"
+      }
+    },
+    "shift": {
+      "title": {
+        "string": "Crear turno"
+      },
+      "select": {
+        "string": "Seleccionar voluntario..."
+      },
+      "task": {
+        "string": "Tarea"
+      },
+      "start": {
+        "string": "Inicio"
+      },
+      "end": {
+        "string": "Fin"
+      }
+    },
+    "field": {
+      "name": {
+        "string": "Nombre"
+      },
+      "email": {
+        "string": "Correo"
+      },
+      "hours": {
+        "string": "Horas"
+      },
+      "status": {
+        "string": "Estado"
+      },
+      "no_shows": {
+        "string": "No asistencias"
+      }
+    },
+    "button": {
+      "register": {
+        "string": "Registrar"
+      },
+      "assign": {
+        "string": "Asignar turno"
+      }
+    },
+    "stats": {
+      "title": {
+        "string": "Estadísticas"
+      },
+      "volunteers": {
+        "string": "Voluntarios"
+      },
+      "hours": {
+        "string": "Horas totales"
+      },
+      "shifts": {
+        "string": "Turnos activos"
+      }
+    },
+    "list": {
+      "title": {
+        "string": "Todos los voluntarios"
+      },
+      "empty": {
+        "string": "Sin voluntarios"
+      }
+    }
+  }
+}

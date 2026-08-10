@@ -1,0 +1,54 @@
+{
+  "AP_MIG": {
+    "title": {
+      "string": "Εργαλεία Μεταφοράς"
+    },
+    "description": {
+      "string": "Εισαγωγή δεδομένων από εξωτερικές πηγές — G Suite, M365, Dovecot, Cyrus ή μεταφόρτωση αρχείων."
+    },
+    "wizard": {
+      "title": {
+        "string": "Έναρξη Μεταφοράς"
+      },
+      "source": {
+        "string": "Πηγή"
+      },
+      "select_source": {
+        "string": "Επιλέξτε πηγή..."
+      },
+      "user": {
+        "string": "Στόχος Χρήστης"
+      },
+      "select_user": {
+        "string": "Επιλέξτε χρήστη..."
+      }
+    },
+    "start": {
+      "button": {
+        "string": "Έναρξη Μεταφοράς"
+      },
+      "running": {
+        "string": "Έναρξη..."
+      },
+      "success": {
+        "string": "Η μεταφορά ξεκίνησε"
+      },
+      "error": {
+        "string": "Αποτυχία μεταφοράς"
+      }
+    },
+    "history": {
+      "title": {
+        "string": "Ιστορικό Μεταφορών"
+      },
+      "empty": {
+        "string": "Δεν υπάρχουν μεταφορές ακόμα."
+      }
+    },
+    "errors": {
+      "fields": {
+        "string": "Απαιτούνται πηγή και χρήστης"
+      }
+    }
+  }
+}

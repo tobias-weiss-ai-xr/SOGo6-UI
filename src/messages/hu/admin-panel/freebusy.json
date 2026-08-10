@@ -1,0 +1,40 @@
+{
+  "AP_FREEBUSY": {
+    "title": {
+      "string": "Foglalt/Szabad keresés"
+    },
+    "description": {
+      "string": "Vizuális résztvevői ütemezet rétegezés. Ellenőrizze a rendelkezésre állást események létrehozásakor."
+    },
+    "form": {
+      "title": {
+        "string": "Rendelkezésre állás ellenőrzése"
+      },
+      "participants": {
+        "string": "Résztvevők"
+      },
+      "start": {
+        "string": "Kezdés"
+      },
+      "end": {
+        "string": "Befejezés"
+      },
+      "lookup": {
+        "string": "Keresés"
+      }
+    },
+    "results": {
+      "title": {
+        "string": "Foglalt időpontok"
+      }
+    },
+    "errors": {
+      "fields": {
+        "string": "Legalább egy résztvevő megadása kötelező"
+      }
+    },
+    "error": {
+      "string": "A keresés sikertelen"
+    }
+  }
+}

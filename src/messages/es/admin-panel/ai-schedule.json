@@ -1,0 +1,46 @@
+{
+  "AI_SCHEDULE": {
+    "title": {
+      "string": "Programación inteligente de reuniones"
+    },
+    "description": {
+      "string": "Sugerencias de horario con análisis de participantes y detección de conflictos"
+    },
+    "input": {
+      "title": {
+        "string": "Entrada"
+      },
+      "attendees": {
+        "string": "Participantes"
+      },
+      "from": {
+        "string": "Desde"
+      },
+      "to": {
+        "string": "Hasta"
+      },
+      "duration": {
+        "string": "Duración (min)"
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Sugerencias"
+      },
+      "empty": {
+        "string": "Sin sugerencias"
+      }
+    },
+    "suggest": {
+      "string": "Sugerir"
+    },
+    "errors": {
+      "fields": {
+        "string": "Todos los campos requeridos"
+      },
+      "fail": {
+        "string": "Sugerencias fallidas"
+      }
+    }
+  }
+}

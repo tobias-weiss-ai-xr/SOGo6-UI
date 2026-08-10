@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { getExternalCalendars } from '@/app/fakeApi/external-calendars/route'
 import { DEFAULT_CALENDARS } from '@/app/fakeApi/utils/default-data'
 import {

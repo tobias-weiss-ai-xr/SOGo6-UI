@@ -1,0 +1,152 @@
+{
+    "ADDRESS_BOOKS_LIST": {
+        "contacts_number": {
+            "string": "{number, plural, one {# contatto} other {# contatti}}",
+            "context": "Displays the number of contacts in an address book."
+        },
+        "lists_count": {
+            "string": "{number, plural, one {# lista} other {# liste}}",
+            "context": "Displays the number of distribution lists in an address book."
+        },
+        "sections": {
+            "distribution_lists": {
+                "string": "Liste di distribuzione",
+                "context": "Section heading for distribution lists in the address book list."
+            },
+            "contacts": {
+                "string": "Contatti",
+                "context": "Section heading for individual contacts in the address book list."
+            }
+        },
+        "selected_count": {
+            "string": "{number, plural, one {# selezionato} other {# selezionati}}",
+            "context": "Displays the number of selected contacts."
+        },
+        "deselect_all": {
+            "string": "Deseleziona tutto",
+            "context": "Button to deselect all selected contacts."
+        },
+        "select": {
+            "string": "Seleziona",
+            "context": "Tooltip for select checkbox."
+        },
+        "deselect": {
+            "string": "Deseleziona",
+            "context": "Tooltip for deselect checkbox."
+        },
+        "filters": {
+            "name": {
+                "string": "Nome"
+            },
+            "sort_by": {
+                "string": "Ordina per"
+            },
+            "sort_options": {
+                "display_name": {
+                    "string": "Nome visualizzato"
+                },
+                "last_name": {
+                    "string": "Cognome"
+                },
+                "first_name": {
+                    "string": "Nome"
+                },
+                "organization": {
+                    "string": "Organizzazione"
+                },
+                "created_at": {
+                    "string": "Data creazione"
+                },
+                "updated_at": {
+                    "string": "Data aggiornamento"
+                }
+            },
+            "sort_order_asc": {
+                "string": "Ordine crescente"
+            },
+            "sort_order_desc": {
+                "string": "Ordine decrescente"
+            }
+        },
+        "no_items": {
+            "string": "Nessun contatto trovato."
+        },
+        "empty_title": {
+            "string": "Ancora nessun contatto",
+            "context": "Title when an address book has no contacts"
+        },
+        "empty_description": {
+            "string": "Aggiungi il tuo primo contatto per iniziare.",
+            "context": "Description when an address book is empty"
+        },
+        "empty_create_contact": {
+            "string": "Nuovo contatto",
+            "context": "Button to create the first contact from empty state"
+        },
+        "search_empty_title": {
+            "string": "Nessun risultato",
+            "context": "Title when search returns no contacts"
+        },
+        "search_empty_description": {
+            "string": "Prova un termine di ricerca diverso o cancella il filtro.",
+            "context": "Description when search has no matches"
+        },
+        "clear_search": {
+            "string": "Cancella ricerca",
+            "context": "Button to reset the contacts search filter"
+        },
+        "search_placeholder": {
+            "string": "Cerca contatti…",
+            "context": "Placeholder for the contacts search input in the header"
+        },
+        "search_min_length": {
+            "string": "Inserisci almeno 2 caratteri per cercare.",
+            "context": "Hint when the search query is too short for server-side search"
+        },
+        "source_address_book": {
+            "string": "In {name}",
+            "context": "Shows which address book a contact belongs to in the all-contacts view."
+        },
+        "delete_selected": {
+            "string": "Elimina contatti selezionati",
+            "context": "Aria label for bulk delete button"
+        },
+        "bulk_delete_description": {
+            "string": "Sei sicuro di voler eliminare {number, plural, one {# contatto} other {# contatti}}? Questa azione non può essere annullata.",
+            "context": "Confirmation message for bulk delete"
+        },
+        "create_list_from_selection": {
+            "string": "Crea lista di distribuzione dalla selezione",
+            "context": "Aria label for bulk create list action"
+        },
+        "list_member_count": {
+            "string": "{number, plural, one {# membro} other {# membri}}",
+            "context": "Member count shown under a distribution list in the contact list"
+        },
+        "read_only_banner": {
+            "string": "{name} è in sola lettura. Non puoi modificare contatti o liste.",
+            "context": "Banner shown when viewing a non-writable address book."
+        },
+        "pagination": {
+            "previous": {
+                "string": "Pagina precedente",
+                "context": "Pagination previous page button"
+            },
+            "next": {
+                "string": "Pagina successiva",
+                "context": "Pagination next page button"
+            },
+            "page": {
+                "string": "Pagina {page} di {total}",
+                "context": "Current pagination page indicator (contacts only)"
+            },
+            "page_size": {
+                "string": "Per pagina"
+            },
+            "contacts_page_hint": {
+                "string": "La paginazione si applica ai contatti; tutte le liste sono mostrate.",
+                "context": "Hint that list pagination is contact-scoped"
+            }
+        }
+    }
+}

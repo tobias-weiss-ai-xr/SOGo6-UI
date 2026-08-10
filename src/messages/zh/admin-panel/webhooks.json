@@ -1,0 +1,68 @@
+{
+  "AP_WEBHOOKS": {
+    "title": {
+      "string": "Webhooks"
+    },
+    "description": {
+      "string": "用于 n8n、Make 等自动化平台的出站 Webhook。"
+    },
+    "form": {
+      "add": {
+        "string": "添加 Webhook"
+      },
+      "cancel": {
+        "string": "取消"
+      },
+      "title": {
+        "string": "新建 Webhook"
+      },
+      "url": {
+        "string": "Webhook URL"
+      },
+      "name": {
+        "string": "显示名称"
+      },
+      "name_placeholder": {
+        "string": "例如 n8n 工作流"
+      },
+      "secret": {
+        "string": "签名密钥"
+      },
+      "secret_placeholder": {
+        "string": "HMAC 密钥（可选）"
+      },
+      "events": {
+        "string": "事件"
+      },
+      "create": {
+        "string": "创建 Webhook"
+      }
+    },
+    "create": {
+      "success": {
+        "string": "Webhook 已创建"
+      },
+      "error": {
+        "string": "创建 Webhook 失败"
+      }
+    },
+    "delete": {
+      "success": {
+        "string": "Webhook 已删除"
+      },
+      "error": {
+        "string": "删除失败"
+      }
+    },
+    "list": {
+      "empty": {
+        "string": "暂无 Webhook。"
+      }
+    },
+    "errors": {
+      "fields": {
+        "string": "URL 和至少一个事件为必填"
+      }
+    }
+  }
+}

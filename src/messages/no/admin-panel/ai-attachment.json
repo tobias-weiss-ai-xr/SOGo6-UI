@@ -1,0 +1,40 @@
+{
+  "AI_ATTACH": {
+    "title": {
+      "string": "Smarte vedleggshandlinger"
+    },
+    "description": {
+      "string": "Automatisk gjenkjenning av dokumenttype og forslag til lagring, videresending eller arkivering."
+    },
+    "input": {
+      "title": {
+        "string": "Vedlegg"
+      },
+      "filename": {
+        "string": "Filnavn"
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Analyse"
+      },
+      "empty": {
+        "string": "Skriv inn et filnavn"
+      },
+      "preview": {
+        "string": "Kan forhåndsvise"
+      }
+    },
+    "classify": {
+      "string": "Klassifiser"
+    },
+    "errors": {
+      "empty": {
+        "string": "Skriv inn et filnavn"
+      },
+      "fail": {
+        "string": "Klassifisering mislyktes"
+      }
+    }
+  }
+}

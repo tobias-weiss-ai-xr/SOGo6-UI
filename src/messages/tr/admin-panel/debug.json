@@ -1,0 +1,52 @@
+{
+  "AP_DEBUG": {
+    "title": {
+      "string": "Posta Kutusu Hata Ayıklama"
+    },
+    "description": {
+      "string": "Posta teslim sorunlarını gidermek için tanı aracı. Ham e-posta kaynağını veya ayrıştırılmış başlıkları görüntüleyin."
+    },
+    "query": {
+      "title": {
+        "string": "Hata Ayıklama Sorgusu"
+      },
+      "button": {
+        "string": "İncele"
+      }
+    },
+    "labels": {
+      "user": {
+        "string": "Kullanıcı"
+      },
+      "folder": {
+        "string": "IMAP Klasörü"
+      },
+      "mail_uid": {
+        "string": "Posta UID"
+      },
+      "select_user": {
+        "string": "Kullanıcı seçin..."
+      }
+    },
+    "result": {
+      "raw": {
+        "title": {
+          "string": "Ham E-posta Kaynağı"
+        }
+      },
+      "headers": {
+        "title": {
+          "string": "Ayrıştırılmış Başlıklar"
+        }
+      }
+    },
+    "errors": {
+      "fields_required": {
+        "string": "Kullanıcı, klasör ve posta UID gerekli"
+      },
+      "fetch_failed": {
+        "string": "Hata ayıklama verileri getirilemedi"
+      }
+    }
+  }
+}

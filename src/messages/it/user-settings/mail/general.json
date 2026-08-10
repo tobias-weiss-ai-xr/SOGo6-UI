@@ -1,0 +1,171 @@
+{
+    "US_MAIL_GENERAL": {
+        "title": {
+            "string": "Impostazioni Generali Posta",
+            "context": "Title for the mail general settings page"
+        },
+        "compose_message_in": {
+            "string": "Componi messaggio in",
+            "context": "Dropdown label in what way to compose messages"
+        },
+        "display_subscribed_mailboxes_only": {
+            "string": "Mostra solo caselle di posta sottoscritte",
+            "context": "Checkbox to show subscribed mailboxes only"
+        },
+        "fetch_count_of_unseen_messages": {
+            "string": "Recupera conteggio messaggi non letti per tutte le caselle",
+            "context": "Checkbox to fetch count of unseen messages for all mailboxes"
+        },
+        "sort_messages_by_threads": {
+            "string": "Ordina messaggi per conversazioni",
+            "context": "Checkbox to sort messages by threads"
+        },
+        "show_recipients_or_sender_full_email": {
+            "string": "Mostra email completa di destinatari o mittente nelle caselle",
+            "context": "Checkbox to show recipients or sender full email in mailboxes"
+        },
+        "hide_attachments_for_inline_images": {
+            "string": "Non mostrare le immagini inline come allegato nel visualizzatore di posta",
+            "context": "Checkbox to hide attachments for inline images"
+        },
+        "automatically_mark_messages_as_read": {
+            "string": "Segna messaggi come letti dopo (definiti) secondi",
+            "context": "Checkbox to automatically mark messages as read"
+        },
+        "collect_unknown_addresses": {
+            "string": "Salva indirizzi email sconosciuti in una rubrica",
+            "context": "Checkbox to collect unknown mail addresses"
+        },
+        "collect_unknown_addressbook_name": {
+            "string": "Nome rubrica",
+            "context": "Input for the unknown email addressbook name"
+        },
+        "forward_messages": {
+            "title": {
+                "string": "Inoltra messaggi",
+                "context": "Dropdown label for forward messages"
+            },
+            "as_attachment": {
+                "string": "Come allegato",
+                "context": "Checkbox to forward messages as attachment"
+            },
+            "as_inline": {
+                "string": "Come in linea",
+                "context": "Checkbox to forward messages as inline"
+            }
+        },
+        "start_reply": {
+            "title": {
+                "string": "Quando rispondi a un messaggio",
+                "context": "Dropdown label to know where to start in the mail when replying"
+            },
+            "to_above": {
+                "string": "Inizia la risposta sopra la citazione",
+                "context": "Checkbox to start replying at the bottom"
+            },
+            "to_below": {
+                "string": "Inizia la risposta sotto la citazione",
+                "context": "Checkbox to start replying at the top"
+            }
+        },
+        "place_signature": {
+            "title": {
+                "string": "e posiziona la firma",
+                "context": "Dropdown label to know where to place the signature"
+            },
+            "above": {
+                "string": "sopra la citazione",
+                "context": "Checkbox to start replying at the bottom"
+            },
+            "below": {
+                "string": "sotto la citazione",
+                "context": "Checkbox to start replying at the top"
+            }
+        },
+        "attachment_position": {
+            "title": {
+                "string": "Posiziona l'allegato",
+                "context": "Dropdown label to know where to place the attachment"
+            },
+            "above": {
+                "string": "sopra la mail"
+            },
+            "below": {
+                "string": "sotto la mail"
+            }
+        },
+        "sign_on": {
+            "new": {
+                "string": "Inserisci firma sui nuovi messaggi"
+            },
+            "reply": {
+                "string": "Inserisci firma sui messaggi di risposta"
+            },
+            "forward": {
+                "string": "Inserisci firma sui messaggi inoltrati"
+            }
+        },
+        "default_font_size": {
+            "title": {
+                "string": "Dimensione carattere predefinita",
+                "context": "Dropdown label to know the default font size"
+            },
+            "sm": {
+                "string": "Piccolo",
+                "context": "Small font size"
+            },
+            "md": {
+                "string": "Medio",
+                "context": "Medium font size"
+            },
+            "lg": {
+                "string": "Grande",
+                "context": "Large font size"
+            },
+            "xl": {
+                "string": "Extra grande",
+                "context": "Extra large font size"
+            }
+        },
+        "display_remote_images": {
+            "string": "Mostra immagini remote in linea",
+            "context": "Checkbox to set display remote inline images to true or false"
+        },
+        "compose": {
+            "title": {
+                "string": "Comportamento predefinito apertura composizione",
+                "context": "Dropdown label to know where to open compose in"
+            },
+            "always_ask": {
+                "string": "Chiedi sempre se aprire la composizione in nuova finestra o nella webmail",
+                "context": "Dropdown label to know where to open compose in"
+            },
+            "in_new_window": {
+                "string": "Apri composizione in nuova finestra",
+                "context": "Dropdown label to know where to open compose in"
+            },
+            "inside_webmail": {
+                "string": "Apri composizione nella webmail",
+                "context": "Dropdown label to know where to open compose in"
+            }
+        },
+        "mail_allow_receipt": {
+            "string": "Consenti alla posta di chiedere ricevute",
+            "context": "Checkbox to allow mail to ask for receipts"
+        },
+        "mail_folder_subscribe": {
+            "string": "Mostra solo caselle di posta sottoscritte",
+            "context": "Checkbox to show subscribed mailboxes only"
+        },
+        "compose_mail_window": {
+            "string": "Finestra di composizione posta",
+            "context": "Dropdown label to know where to open compose in",
+            "popup": {
+                "string": "Componi email in una finestra popup"
+            },
+            "inline": {
+                "string": "Componi email nella webmail"
+            }
+        }
+    }
+}

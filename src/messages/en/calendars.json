@@ -603,6 +603,44 @@
           "string": "Part of the suggested {duration}-min window · {time}"
         }
       },
+      "resources": {
+        "title": {
+          "string": "Rooms and Resources"
+        },
+        "placeholder": {
+          "string": "Add room or equipment"
+        },
+        "add": {
+          "string": "Add Room or Resource"
+        },
+        "remove": {
+          "string": "Remove resource"
+        },
+        "search": {
+          "string": "Search resources..."
+        },
+        "no_results": {
+          "string": "No resources found"
+        },
+        "loading": {
+          "string": "Loading resources..."
+        },
+        "rooms": {
+          "string": "Rooms"
+        },
+        "equipment": {
+          "string": "Equipment"
+        },
+        "vehicles": {
+          "string": "Vehicles"
+        },
+        "added": {
+          "string": "Added"
+        },
+        "max_reached": {
+          "string": "Maximum {max} resources reached"
+        }
+      },
       "reminders": {
         "label": {
           "string": "Reminders"
@@ -921,6 +959,55 @@
         },
         "cancel": {
           "string": "Cancel"
+        }
+      }
+    },
+    "share": {
+      "title": {
+        "string": "Calendar Sharing"
+      },
+      "description": {
+        "string": "Share this calendar with other users. Shared users can see events based on the permission level you grant."
+      },
+      "addUser": {
+        "string": "Add User"
+      },
+      "searchPlaceholder": {
+        "string": "Search by name or email..."
+      },
+      "addButton": {
+        "string": "Share"
+      },
+      "added": {
+        "string": "Calendar shared successfully"
+      },
+      "addError": {
+        "string": "Failed to share calendar"
+      },
+      "removed": {
+        "string": "Share removed successfully"
+      },
+      "removeError": {
+        "string": "Failed to remove share"
+      },
+      "removeButton": {
+        "string": "Remove"
+      },
+      "existingShares": {
+        "string": "Shared with"
+      },
+      "noShares": {
+        "string": "This calendar is not shared with anyone yet."
+      },
+      "table": {
+        "user": {
+          "string": "User"
+        },
+        "level": {
+          "string": "Permission Level"
+        },
+        "canCreate": {
+          "string": "Can Create"
         }
       }
     }

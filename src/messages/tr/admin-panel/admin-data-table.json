@@ -1,0 +1,19 @@
+{
+    "DATA_TABLE": {
+        "filter_placeholder": {
+            "string": "Filtrele..."
+        },
+        "no_result": {
+            "string": "Sonuç yok."
+        },
+        "previous": {
+            "string": "Önceki"
+        },
+        "next": {
+            "string": "Sonraki"
+        },
+        "selected": {
+            "string": "{selected} of {total} row(s) selected."
+        }
+    }
+}

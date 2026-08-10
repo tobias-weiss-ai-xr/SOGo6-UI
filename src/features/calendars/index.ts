@@ -11,6 +11,8 @@ export type {
   CalendarEventQueryArgs,
   CalendarEventUpdateBody,
   CalendarEventsResponse,
+  CalendarShare,
+  CalendarShareCreateBody,
   CalendarType,
   CalendarUpdateBody,
   CalendarsResponse,
@@ -48,4 +50,7 @@ export {
   useGetSyncStatusQuery,
   useTriggerSyncMutation,
   useUpdateExternalCalendarMutation,
+  useListSharesQuery,
+  useAddShareMutation,
+  useRemoveShareMutation,
 } from './store/calendars-api'

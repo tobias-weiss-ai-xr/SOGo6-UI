@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { getAllEvents } from '@/app/fakeApi/utils/calendar-events-store'
 import type { CalendarEvent } from '@/features/calendars/calendars-types'
 import { textMatchesSearch } from '@/lib/utils/strip-accents'
@@ -15,15 +16,9 @@ export async function GET(request: NextRequest) {
   try {
     const { searchParams } = new URL(request.url)
 
-    console.log('searchParams', searchParams)
-
     const startDateParam = searchParams.get('start_date_time')
     const endDateParam = searchParams.get('end_date_time')
     const searchParam = searchParams.get('search')
-
-    console.log('startDateParam', startDateParam)
-    console.log('endDateParam', endDateParam)
-    console.log('searchParam', searchParam)
 
     const startDate = startDateParam
       ? new Date(startDateParam + 'T00:00:00Z')

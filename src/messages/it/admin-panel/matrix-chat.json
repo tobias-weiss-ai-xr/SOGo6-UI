@@ -1,0 +1,35 @@
+{
+    "MATRIX": {
+        "title": { "string": "Integrazione Chat Matrix" },
+        "description": { "string": "Stanze Matrix integrate, messaggistica e collegamento utenti SOGo" },
+        "errors": {
+            "name": { "string": "Nome obbligatorio" },
+            "fail": { "string": "Operazione fallita" }
+        },
+        "success": {
+            "config": { "string": "Configurazione salvata" },
+            "room": { "string": "Stanza creata" }
+        },
+        "config": {
+            "title": { "string": "Configurazione Server" },
+            "enabled": { "string": "Abilitato" },
+            "bridge": { "string": "Bridge" }
+        },
+        "rooms": {
+            "title": { "string": "Stanze Chat" },
+            "name": { "placeholder": { "string": "Nome stanza..." } },
+            "visibility": {
+                "private": { "string": "Privata" },
+                "public": { "string": "Pubblica" }
+            }
+        },
+        "button": {
+            "save": { "string": "Salva" },
+            "create": { "string": "Crea Stanza" }
+        },
+        "links": {
+            "title": { "string": "Collegamenti Utenti" },
+            "empty": { "string": "Nessun utente collegato" }
+        }
+    }
+}

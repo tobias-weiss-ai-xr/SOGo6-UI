@@ -1,0 +1,1285 @@
+{
+  "AP_DOMAIN_CONFIGURATION": {
+    "origin": {
+      "rule": {
+        "string": "(dari aturan {origin})"
+      },
+      "default": {
+        "string": "(dari konfigurasi default)"
+      },
+      "domain": {
+        "string": "(dari domain {origin})"
+      }
+    },
+    "tabs": {
+      "auth_settings": {
+        "string": "Pengaturan Autentikasi"
+      },
+      "user_source": {
+        "string": "Sumber Pengguna"
+      },
+      "user_module_settings": {
+        "string": "Pengaturan Pengguna dan Modul"
+      },
+      "mail_settings": {
+        "string": "Pengaturan Surel"
+      },
+      "calendar_contact_settings": {
+        "string": "Pengaturan Kalender dan Kontak"
+      }
+    },
+    "properties": {
+      "SOGO_D_AUTH_TYPE": {
+        "name": {
+          "string": "Jenis Autentikasi"
+        },
+        "description": {
+          "string": "Pilih metode autentikasi untuk pengguna. 'Plain' berarti username/kata sandi klasik"
+        },
+        "developer_comment": "Options might include LDAP, SQL, etc."
+      },
+      "SOGO_D_CAS_URL": {
+        "name": {
+          "string": "URL server CAS"
+        },
+        "description": {
+          "string": "Masukkan URL lengkap server CAS Anda"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_CAS_LOGOUT_ENABLED": {
+        "name": {
+          "string": "Aktifkan logout dengan CAS"
+        },
+        "description": {
+          "string": "Centang kotak untuk mengizinkan pengguna logout dari SOGo dan server CAS"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_OPENID_CONFIG_URL": {
+        "name": {
+          "string": "URL endpoint Penyedia OpenID"
+        },
+        "description": {
+          "string": "Contoh: https://myopenid.net/.well-known/openid-configuration"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_OPENID_CLIENT_NAME": {
+        "name": {
+          "string": "Nama klien OpenID"
+        },
+        "description": {
+          "string": "Nama klien OpenID Anda"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_OPENID_CLIENT_SECRET": {
+        "name": {
+          "string": "Rahasia klien OpenID"
+        },
+        "description": {
+          "string": "Rahasia klien OpenID Anda"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_OPENID_SCOPE": {
+        "name": {
+          "string": "Ruang lingkup klien OpenID"
+        },
+        "description": {
+          "string": "Ruang lingkup klien OpenID Anda. Nilai default: 'openid profile email'."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_OPENID_EMAIL": {
+        "name": {
+          "string": "Kunci email pengguna"
+        },
+        "description": {
+          "string": "Kunci untuk menemukan email pengguna di profil pengguna."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_OPENID_TOKEN_CHECK_INTERVAL": {
+        "name": {
+          "string": "Interval pengecekan token"
+        },
+        "description": {
+          "string": "Untuk membatasi jumlah permintaan ke server OpenID untuk memeriksa validitas token, atur interval dalam detik di mana token tidak akan diperiksa lagi setelah keberhasilan pertama. 0 berarti token selalu diperiksa. 60 berarti token tidak akan diperiksa selama 60 detik setelah keberhasilan pertama."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_OPENID_REFRESH_ENABLE": {
+        "name": {
+          "string": "Aktifkan Mekanisme Refresh Token"
+        },
+        "description": {
+          "string": "Jika server OpenID Anda mendukung mekanisme refresh token, SOGo akan menggunakannya."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_OPENID_ENDSESSION_ENABLED": {
+        "name": {
+          "string": "Aktifkan Akhiri Sesi dari server OpenID"
+        },
+        "description": {
+          "string": "Secara default, pengguna hanya dapat keluar dari webmail. Centang pengaturan ini untuk juga keluar dari server OpenID, yang berarti pengguna akan keluar dari semua aplikasi yang menggunakan server OpenID. Hanya berfungsi jika OpenID Anda memiliki endpoint end_session_endpoint."
+        },
+        "developer_comment": ""
+      },
+      "SOGo_D_OPENID_FETCH_USER_PROFILE": {
+        "name": {
+          "string": "Ambil Profil Pengguna"
+        },
+        "description": {
+          "string": "Secara default, SOGo mengambil profil pengguna untuk mendapatkan email pengguna. Nonaktifkan opsi ini untuk mendapatkan email langsung dari token. Nonaktifkan jika Anda menggunakan Microsoft Active Directory Federation Service (AD FS)."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SAML2_URL": {
+        "name": {
+          "string": "SAML2 BELUM SELESAI!!!"
+        },
+        "description": {
+          "string": "Semoga beruntung bagi orang yang akan mengerjakan ini..."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_PWD_CHANGE_ENABLED": {
+        "name": {
+          "string": "Aktifkan Perubahan Kata Sandi"
+        },
+        "description": {
+          "string": "Izinkan pengguna untuk mengubah kata sandi mereka dari SOGo. Pastikan Sumber Pengguna memberikan hak kepada pengguna untuk melakukan tindakan ini."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_LOGIN_CHECK_MAX_ATTEMPT": {
+        "name": {
+          "string": "Batas Maksimal Percobaan Login Gagal"
+        },
+        "description": {
+          "string": "Atur berapa kali pengguna dapat gagal login sebelum diblokir. 0 berarti tidak ada batas."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_LOGIN_CHECK_TIME_SPAN": {
+        "name": {
+          "string": "Jangka Waktu Percobaan Login Gagal"
+        },
+        "description": {
+          "string": "Atur jangka waktu dalam detik untuk menghitung percobaan gagal. Contoh: 60 berarti pengguna hanya dapat gagal hingga 'Batas Maksimal Percobaan Login Gagal' dalam 60 detik setelah kegagalan pertama, sebelum diblokir."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_LOGIN_CHECK_BLOCK_TIME": {
+        "name": {
+          "string": "Waktu Blokir Upaya Login Gagal"
+        },
+        "description": {
+          "string": "Atur berapa lama (dalam detik) pengguna diblokir setelah terlalu banyak upaya login gagal."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_PWD_RECOVERY": {
+        "name": {
+          "string": "Aktifkan Pemulihan Kata Sandi"
+        },
+        "description": {
+          "string": "Izinkan pengguna untuk mengatur metode pemulihan kata sandi"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_PWD_RECOVERY_METHOD": {
+        "name": {
+          "string": "Metode Pemulihan Kata Sandi yang Tersedia"
+        },
+        "description": {
+          "string": "Pilih metode pemulihan kata sandi yang tersedia untuk pengguna"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_PWD_RECOVERY_FORCE": {
+        "name": {
+          "string": "Paksa Pemulihan Kata Sandi"
+        },
+        "description": {
+          "string": "Paksa pengguna untuk mengatur metode pemulihan kata sandi."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_PWD_RECOVERY_DELAY": {
+        "name": {
+          "string": "Tunda Antara Pemulihan Kata Sandi"
+        },
+        "description": {
+          "string": "Tunda dalam detik sebelum pengguna dapat meminta pemulihan kata sandi lagi."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_LOGIN_MFA": {
+        "name": {
+          "string": "Aktifkan MFA"
+        },
+        "description": {
+          "string": "Izinkan pengguna untuk mengatur Autentikasi Multi-Faktor"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_LOGIN_MFA_METHOD": {
+        "name": {
+          "string": "Metode MFA yang Tersedia"
+        },
+        "description": {
+          "string": "Pilih metode Autentikasi Multi-Faktor yang tersedia untuk pengguna"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_LOGIN_MFA_FORCE": {
+        "name": {
+          "string": "Paksa MFA"
+        },
+        "description": {
+          "string": "Paksa pengguna untuk mengatur MFA"
+        },
+        "developer_comment": ""
+      },
+      "US_UID": {
+        "name": {
+          "string": "UID Sumber Pengguna"
+        },
+        "description": {
+          "string": "Pilih nama unik untuk Sumber Pengguna ini, tidak akan ditampilkan kepada pengguna"
+        },
+        "developer_comment": "Only for SOGo to differentiate differents User SOurce"
+      },
+      "US_TYPE": {
+        "name": {
+          "string": "Jenis Sumber Pengguna"
+        },
+        "description": {
+          "string": "Atur jenis Sumber Pengguna Anda"
+        },
+        "developer_comment": "Only ldap and sql supported for now"
+      },
+      "US_LDAP_HOSTNAME": {
+        "name": {
+          "string": "Nama host server LDAP"
+        },
+        "description": {
+          "string": "Hanya tentukan host dan port, jangan tambahkan informasi lain"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_BIND_DN": {
+        "name": {
+          "string": "Bind DN"
+        },
+        "description": {
+          "string": "DN nama login yang digunakan untuk bind ke server Anda."
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_BIND_DN_PWD": {
+        "name": {
+          "string": "Kata sandi Bind DN"
+        },
+        "description": {
+          "string": "Kata sandi untuk Bind DN Anda"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_BASE_DN": {
+        "name": {
+          "string": "Base DN"
+        },
+        "description": {
+          "string": "Base DN entri pengguna Anda. Jika domain email ada di sini, Anda dapat menambahkan '%d' untuk menambahkannya secara dinamis dari email pengguna, misalnya: 'ou=%d,dc=example,dc=com'"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_UID": {
+        "name": {
+          "string": "Bidang UID"
+        },
+        "description": {
+          "string": "Bidang yang berisi login pengguna, login harus bersifat unik di semua Sumber Pengguna dan Domain"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_CN": {
+        "name": {
+          "string": "Bidang CN"
+        },
+        "description": {
+          "string": "Bidang yang berisi Nama Lengkap pengguna"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_ID": {
+        "name": {
+          "string": "Bidang ID"
+        },
+        "description": {
+          "string": "Bidang yang memulai DN pengguna jika pengaturan Bind Field tidak digunakan. (contoh: jika Anda memiliki 'dn: uid=sogo,ou=users,dc=example,dc=org', nilai ini harus 'uid')"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_SCOPE": {
+        "name": {
+          "string": "Ruang Lingkup Pencarian LDAP"
+        },
+        "description": {
+          "string": "Menunjukkan himpunan entri pada atau di bawah BaseDN yang dapat dianggap sebagai kecocokan potensial untuk permintaan pencarian"
+        },
+        "developer_comment": "https://ldapwiki.com/wiki/Wiki.jsp?page=LDAP%20Search%20Scopes"
+      },
+      "US_LDAP_FILTER": {
+        "name": {
+          "string": "Filter LDAP"
+        },
+        "description": {
+          "string": "Filter tambahan untuk digunakan dalam kueri LDAP. Gunakan '=', '!=', 'AND', 'OR', dan tanda kurung. Contoh: '(objectClass='mailUser' OR objectClass!='mailGroup') AND accountStatus='active'"
+        },
+        "developer_comment": "Use SOGo's syntax and not ldap syntax for filter"
+      },
+      "US_LDAP_PWD_POLICY": {
+        "name": {
+          "string": "Kebijakan Kata Sandi LDAP"
+        },
+        "description": {
+          "string": "Menunjukkan bahwa server LDAP Anda memiliki Kebijakan Kata Sandi dengan konsep kedaluwarsa dan masa tenggang"
+        },
+        "developer_comment": "https://ldapwiki.com/wiki/Wiki.jsp?page=Password%20Policy"
+      },
+      "US_LDAP_PWD_UPDATE_SAMBA": {
+        "name": {
+          "string": "Perbarui Kata Sandi Samba LDAP"
+        },
+        "description": {
+          "string": "Jika pengguna mengubah kata sandi, juga memperbarui sambaNTPassword dan sambaLMPassword"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_BIND_AS_USER": {
+        "name": {
+          "string": "Ikat sebagai Pengguna"
+        },
+        "description": {
+          "string": "Setelah autentikasi, gunakan DN pengguna untuk ikat"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_BIND_FIELD": {
+        "name": {
+          "string": "Field ikat tambahan"
+        },
+        "description": {
+          "string": "Field ikat tambahan yang digunakan. Misalnya, jika menambahkan 'mail', ikatan akan menyertakan 'mail=<login>'"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_ATTR_FIELD": {
+        "name": {
+          "string": "Field atribut"
+        },
+        "description": {
+          "string": "Field atribut yang dikembalikan saat pencarian. Default adalah '*' (semua). Hati-hati, hal ini dapat memengaruhi kinerja SOGo secara signifikan"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_GROUP_CLASS": {
+        "name": {
+          "string": "Kelas Grup LDAP"
+        },
+        "description": {
+          "string": "Atur kelas LDAP yang menandakan kepada SOGo bahwa ini adalah grup, bukan pengguna tunggal"
+        },
+        "developer_comment": ""
+      },
+      "US_SQL_USER_URL": {
+        "name": {
+          "string": "URL Pengguna SQL"
+        },
+        "description": {
+          "string": "URL database ke tabel pengguna. Contoh: postgresql://sogo:sogo@127.0.0.1:5432/sogo/sogo_user"
+        },
+        "developer_comment": ""
+      },
+      "US_SQL_PREPEND_PWD_SCHEME": {
+        "name": {
+          "string": "Skema Kata Sandi Pengguna SQL"
+        },
+        "description": {
+          "string": "Centang YA jika kata sandi disimpan dalam format {skema}nilaiTerenkripsi di database"
+        },
+        "developer_comment": ""
+      },
+      "US_SQL_USER_FILTER": {
+        "name": {
+          "string": "Filter Pengguna SQL"
+        },
+        "description": {
+          "string": "Kondisi WHERE tambahan untuk ditambahkan ke kueri SQL. Contoh: 'active=1'"
+        },
+        "developer_comment": ""
+      },
+      "US_SQL_DOMAIN_FIELD": {
+        "name": {
+          "string": "Domain Pengguna SQL"
+        },
+        "description": {
+          "string": "Atur nama kolom tempat domain pengguna disimpan. Jika diatur, setiap kueri SQL akan menambahkan '<kolom_domain> = <domain_pengguna>' ke kondisi WHERE"
+        },
+        "developer_comment": ""
+      },
+      "US_MAPPING": {
+        "name": {
+          "string": "Pemetaan Sumber Pengguna"
+        },
+        "description": {
+          "string": "Petakan field Sumber Pengguna ke atribut kontak"
+        },
+        "developer_comment": ""
+      },
+      "US_CAN_AUTH": {
+        "name": {
+          "string": "Dapat Otentikasi"
+        },
+        "description": {
+          "string": "Pengguna pada Sumber Pengguna ini dapat login ke webmail"
+        },
+        "developer_comment": ""
+      },
+      "US_PWD_ALGO": {
+        "name": {
+          "string": "Algoritma Kata Sandi Sumber Pengguna"
+        },
+        "description": {
+          "string": "Algoritma kata sandi yang digunakan oleh sumber pengguna ini. Wajib untuk sumber pengguna SQL. Opsional untuk LDAP: hanya diperlukan jika Anda mengizinkan pengguna untuk mengubah kata sandi mereka"
+        },
+        "developer_comment": ""
+      },
+      "US_SIM_KEY_TYPE": {
+        "name": {
+          "string": "Jenis Kunci Simetris Algoritma Kata Sandi"
+        },
+        "description": {
+          "string": "Menunjukkan bagaimana Anda menyimpan kunci simetris dari algoritma kata sandi Anda"
+        },
+        "developer_comment": ""
+      },
+      "US_SIM_KEY_VALUE": {
+        "name": {
+          "string": "Nilai Kunci Simetris Algoritma Kata Sandi"
+        },
+        "description": {
+          "string": "Nilai tergantung pada jenisnya.\nJika 'path', masukkan di sini jalur file tempat SOGo akan menemukan kunci simetris Anda.\nJika 'env', atur nama variabel ENV tempat kunci disimpan.\nJika 'plain', masukkan langsung kunci di sini"
+        },
+        "developer_comment": ""
+      },
+      "US_PWD_POLICY": {
+        "name": {
+          "string": "Kebijakan Kata Sandi Pengguna"
+        },
+        "description": {
+          "string": "Centang kotak untuk menambahkan kebijakan pada kata sandi pengguna. Kebijakan ini akan digunakan saat pengguna mengubahnya atau jika Anda mengaktifkan 'periksa kekuatan kata sandi saat login'"
+        },
+        "developer_comment": ""
+      },
+      "US_PWD_LEN_MIN": {
+        "name": {
+          "string": "Panjang Minimum Kata Sandi Pengguna"
+        },
+        "description": {
+          "string": "Panjang minimum kata sandi pengguna, inklusif. Minimum 4 karakter"
+        },
+        "developer_comment": ""
+      },
+      "US_PWD_LEN_MAX": {
+        "name": {
+          "string": "Panjang Maksimum Kata Sandi Pengguna"
+        },
+        "description": {
+          "string": "Panjang maksimum kata sandi pengguna, inklusif. 0 berarti tidak ada batas"
+        },
+        "developer_comment": ""
+      },
+      "US_PWD_UPPERCASE_MIN": {
+        "name": {
+          "string": "Minimum Huruf Besar Kata Sandi Pengguna"
+        },
+        "description": {
+          "string": "Jumlah minimum huruf besar. 0 berarti tidak ada batas"
+        },
+        "developer_comment": ""
+      },
+      "US_PWD_LOWERCASE_MIN": {
+        "name": {
+          "string": "Minimum Huruf Kecil Kata Sandi Pengguna"
+        },
+        "description": {
+          "string": "Jumlah minimum huruf kecil. 0 berarti tidak ada batas"
+        },
+        "developer_comment": ""
+      },
+      "US_PWD_DIGITS_MIN": {
+        "name": {
+          "string": "Minimum Angka Kata Sandi Pengguna"
+        },
+        "description": {
+          "string": "Jumlah minimum angka. 0 berarti tidak ada batas"
+        },
+        "developer_comment": ""
+      },
+      "US_PWD_SPECIAL_ALLOWED": {
+        "name": {
+          "string": "Karakter Khusus Kata Sandi Pengguna Diizinkan"
+        },
+        "description": {
+          "string": "Daftar karakter khusus yang diizinkan dalam kata sandi"
+        },
+        "developer_comment": ""
+      },
+      "US_PWD_SPECIAL_MIN": {
+        "name": {
+          "string": "Minimum Karakter Khusus Kata Sandi"
+        },
+        "description": {
+          "string": "Jumlah minimum karakter khusus yang harus ada. 0 berarti tidak ada batasan"
+        },
+        "developer_comment": ""
+      },
+      "US_MAIL": {
+        "name": {
+          "string": "Field Surel Pengguna"
+        },
+        "description": {
+          "string": "Field tempat menemukan surel pengguna. Field tambahan dapat ditetapkan setelah field surel utama untuk menandai alias pengguna"
+        },
+        "developer_comment": ""
+      },
+      "US_MAIL_SERVER_LOGIN": {
+        "name": {
+          "string": "Login Server Surel Pengguna"
+        },
+        "description": {
+          "string": "Hanya tetapkan jika login pengguna ke server surel (IMAP) berbeda dengan surel utamanya. Tetapkan di sini field tempat menemukan login mereka"
+        },
+        "developer_comment": ""
+      },
+      "US_MAIL_FILTERING_LOGIN": {
+        "name": {
+          "string": "Login Server Penyaring Surel Pengguna"
+        },
+        "description": {
+          "string": "Hanya tetapkan jika login pengguna ke server penyaring surel (Sieve) berbeda dengan surel utamanya. Tetapkan di sini field tempat menemukan login mereka"
+        },
+        "developer_comment": ""
+      },
+      "US_MAIL_OUTGOING_LOGIN": {
+        "name": {
+          "string": "Login Server Keluar Surel Pengguna"
+        },
+        "description": {
+          "string": "Hanya tetapkan jika login pengguna ke server keluar surel (SMTP) berbeda dengan surel utamanya. Tetapkan di sini field tempat menemukan login mereka"
+        },
+        "developer_comment": ""
+      },
+      "US_KIND": {
+        "name": {
+          "string": "Jenis Pengguna"
+        },
+        "description": {
+          "string": "Tetapkan field tempat jenis pengguna ditemukan ('user', 'resource', atau 'group')"
+        },
+        "developer_comment": ""
+      },
+      "US_IS_ADDRESSBOOK": {
+        "name": {
+          "string": "Sumber Pengguna Adalah Buku Alamat"
+        },
+        "description": {
+          "string": "Tetapkan field jika pengguna dari Sumber Pengguna ini dapat ditemukan melalui otomatisasi pelengkapan atau Buku Alamat Global"
+        },
+        "developer_comment": ""
+      },
+      "US_SEARCH": {
+        "name": {
+          "string": "Field Pencarian Pengguna"
+        },
+        "description": {
+          "string": "Field tambahan yang ditambahkan saat mencari pengguna. Contoh: 'name' akan menemukan pengguna berdasarkan nama mereka"
+        },
+        "developer_comment": ""
+      },
+      "US_DISPLAY_NAME": {
+        "name": {
+          "string": "Nama Tampilan Sumber Pengguna"
+        },
+        "description": {
+          "string": "Nama tampilan dari sumber pengguna ini, akan ditampilkan jika daftar buku alamat global"
+        },
+        "developer_comment": ""
+      },
+      "US_AUTO_SEARCH": {
+        "name": {
+          "string": "Tampilkan Otomatis Pengguna di Buku Alamat Global"
+        },
+        "description": {
+          "string": "Secara otomatis mencari dan menampilkan pengguna di Buku Alamat Global saat dipilih. Jika tidak, pengguna harus mengetik untuk memicu pencarian atau mengetik '.' untuk mencari semua."
+        },
+        "developer_comment": ""
+      },
+      "US_AUTO_SEARCH_LIMIT": {
+        "name": {
+          "string": "Batas Otomatis Penyelesaian Pengguna"
+        },
+        "description": {
+          "string": "Batasi jumlah maksimum pengguna yang ditampilkan setelah kueri pencarian. 0 berarti tanpa batas"
+        },
+        "developer_comment": ""
+      },
+      "US_EXTRA_CONTACT_INFO": {
+        "name": {
+          "string": "Info Kontak Tambahan Pengguna"
+        },
+        "description": {
+          "string": "Tentukan informasi apa yang akan ditambahkan ke hasil otomatis. Ditampilkan sebagai 'cn <extra> mail'"
+        },
+        "developer_comment": ""
+      },
+      "US_HIDDEN_USER": {
+        "name": {
+          "string": "Pengguna Tersembunyi"
+        },
+        "description": {
+          "string": "Daftar uid pengguna yang tidak akan pernah ditampilkan kepada orang lain untuk pencarian dan otomatis penyelesaian"
+        },
+        "developer_comment": ""
+      },
+      "US_HAS_RESOURCE": {
+        "name": {
+          "string": "Sumber Pengguna Memiliki Sumber Daya"
+        },
+        "description": {
+          "string": "Centang kotak jika Sumber Pengguna ini memiliki sumber daya"
+        },
+        "developer_comment": ""
+      },
+      "US_RESOURCE_SEARCH": {
+        "name": {
+          "string": "Pencarian Sumber Daya Pengguna"
+        },
+        "description": {
+          "string": "Bidang pencarian tambahan untuk sumber daya"
+        },
+        "developer_comment": ""
+      },
+      "US_RESOURCE_MULTIBOOKING": {
+        "name": {
+          "string": "Multi-Pemesanan Sumber Daya Pengguna"
+        },
+        "description": {
+          "string": "Bidang untuk menemukan nilai multi-pemesanan dari suatu sumber daya"
+        },
+        "developer_comment": ""
+      },
+      "US_RESOURCE_EXTRA_INFO": {
+        "name": {
+          "string": "Info Tambahan Sumber Daya Pengguna"
+        },
+        "description": {
+          "string": "Tentukan informasi apa yang akan ditambahkan ke hasil otomatis. Ditampilkan sebagai 'cn <extra> mail'"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MODULE_ACCESS": {
+        "name": {
+          "string": "Akses Modul"
+        },
+        "description": {
+          "string": "Tentukan modul mana yang tersedia di antara surel, kalender, dan kontak"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAPI_ACCESS": {
+        "name": {
+          "string": "Aktifkan Server MAPI"
+        },
+        "description": {
+          "string": "Izinkan pengguna di desktop untuk menggunakan protokol MAPI"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_EAS_ACCESS": {
+        "name": {
+          "string": "Aktifkan Server EAS"
+        },
+        "description": {
+          "string": "Izinkan pengguna di perangkat seluler untuk menggunakan protokol ActiveSync"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_FOLDER_DISABLE_EXPORT": {
+        "name": {
+          "string": "Nonaktifkan Ekspor Folder"
+        },
+        "description": {
+          "string": "Cegah pengguna mengekspor folder mereka di surel, kalender, dan kontak"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_FOLDER_DISABLE_SHARING": {
+        "name": {
+          "string": "Nonaktifkan Berbagi Folder"
+        },
+        "description": {
+          "string": "Cegah pengguna berbagi folder mereka di surel, kalender, dan kontak"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_FOLDER_DISABLE_SHARING_ANY_AUTH": {
+        "name": {
+          "string": "Nonaktifkan Berbagi Folder dengan Pengguna Terautentikasi"
+        },
+        "description": {
+          "string": "Cegah pengguna berbagi folder dengan semua pengguna terautentikasi di surel, kalender, dan kontak"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_AUTOCOMPLETION_MIN_LEN": {
+        "name": {
+          "string": "Jumlah karakter minimum untuk otomatisasi"
+        },
+        "description": {
+          "string": "Atur jumlah karakter minimum untuk memicu pencarian otomatisasi (3 berarti pencarian akan dilakukan pada karakter ketiga)"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_API_MAX_REQUEST": {
+        "name": {
+          "string": "Permintaan API maksimum"
+        },
+        "description": {
+          "string": "Atur jumlah permintaan maksimum yang dapat dilakukan pengguna terautentikasi dalam suatu periode"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_API_MAX_REQUEST_INTERVAL": {
+        "name": {
+          "string": "Waktu batas permintaan API maksimum"
+        },
+        "description": {
+          "string": "Atur rentang waktu di mana 'Permintaan API maksimum' berlaku"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_API_MAX_REQUEST_BLOCK_INTERVAL": {
+        "name": {
+          "string": "Waktu blokir setelah permintaan API maksimum"
+        },
+        "description": {
+          "string": "Atur waktu di mana pengguna diblokir untuk melakukan permintaan jika 'Permintaan API maksimum' telah tercapai"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_IDENTITIES_ENABLED": {
+        "name": {
+          "string": "Aktifkan Identitas"
+        },
+        "description": {
+          "string": "Izinkan pengguna membuat identitas surel"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_IDENTITIES_CUSTOM_FROM_ENABLED": {
+        "name": {
+          "string": "Aktifkan 'Dari' Kustom"
+        },
+        "description": {
+          "string": "Izinkan pengguna mengatur 'Dari' kustom dalam identitas mereka"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_IDENTITIES_CUSTOM_NAME_ENABLED": {
+        "name": {
+          "string": "Aktifkan nama kustom"
+        },
+        "description": {
+          "string": "Izinkan pengguna untuk mengatur Nama kustom dalam identitas mereka"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_IDENTITIES_CUSTOM_REPLY_TO_ENABLED": {
+        "name": {
+          "string": "Aktifkan 'Balas ke' kustom"
+        },
+        "description": {
+          "string": "Izinkan pengguna untuk mengatur 'Balas ke' kustom dalam identitas mereka"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_ALLOW_EXT_MAIL_ACCOUNT": {
+        "name": {
+          "string": "Aktifkan akun surel eksternal"
+        },
+        "description": {
+          "string": "Izinkan pengguna untuk mengatur akun eksternal"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_ALLOW_EXT_AVATAR": {
+        "name": {
+          "string": "Izinkan penggunaan avatar eksternal"
+        },
+        "description": {
+          "string": "Izinkan pengguna untuk mengatur preferensi penggunaan avatar eksternal (gravatar, libravatar, dll.)"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_REFRESH_INTERVAL_ALLOWED": {
+        "name": {
+          "string": "Atur interval penyegaran otomatis surel yang diizinkan"
+        },
+        "description": {
+          "string": "Atur nilai yang dapat dipilih pengguna untuk opsi 'penyegaran otomatis surel'"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_JUNK_SETTINGS": {
+        "name": {
+          "string": "Atur jenis pemicu untuk ham/spam"
+        },
+        "description": {
+          "string": "Atur mekanisme saat pengguna menandai surel sebagai spam/ham"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_JUNK_MAIL_SPAM": {
+        "name": {
+          "string": "Surel untuk spam"
+        },
+        "description": {
+          "string": "Atur alamat surel tempat spam akan diteruskan"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_SERVER_TYPE": {
+        "name": {
+          "string": "Jenis server surel"
+        },
+        "description": {
+          "string": "Atur jenis server surel"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_IMAP_SERVER": {
+        "name": {
+          "string": "Server IMAP"
+        },
+        "description": {
+          "string": "Nama host server IMAP"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_IMAP_PORT": {
+        "name": {
+          "string": "Port IMAP"
+        },
+        "description": {
+          "string": "Port server IMAP"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_IMAP_ENCRYPTION": {
+        "name": {
+          "string": "Enkripsi IMAP"
+        },
+        "description": {
+          "string": "Mekanisme enkripsi untuk server IMAP"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_IMAP_AUTH_MECH": {
+        "name": {
+          "string": "Mekanisme autentikasi IMAP"
+        },
+        "description": {
+          "string": "Mekanisme autentikasi IMAP. Jangan gunakan 'login' tanpa hati-hati"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SOFT_EMAIL_QUOTA": {
+        "name": {
+          "string": "Kuota Lunak"
+        },
+        "description": {
+          "string": "Atur persentase kuota lunak"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_PURGE_ALLOW": {
+        "name": {
+          "string": "Aktifkan pembersihan"
+        },
+        "description": {
+          "string": "Pembersihan memungkinkan pengguna menghapus semua email yang lebih lama dari tanggal tertentu di folder atau untuk seluruh akun"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_PURGE_MIN_DATE": {
+        "name": {
+          "string": "Minimal hari pembersihan"
+        },
+        "description": {
+          "string": "Atur minimal hari yang dapat digunakan pengguna untuk pembersihan. 0 berarti pengguna dapat menghapus semua email. 30 berarti pengguna hanya dapat menghapus email yang lebih lama dari 30 hari"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_FILTERING_ENABLED": {
+        "name": {
+          "string": "Aktifkan penyaringan email"
+        },
+        "description": {
+          "string": "Izinkan pengguna mengatur filter email"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_FILTERING_TYPE": {
+        "name": {
+          "string": "Jenis penyaringan email"
+        },
+        "description": {
+          "string": "Jenis protokol penyaringan email"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SIEVE_SERVER": {
+        "name": {
+          "string": "Server Sieve"
+        },
+        "description": {
+          "string": "Nama host server Sieve"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SIEVE_PORT": {
+        "name": {
+          "string": "Port Sieve"
+        },
+        "description": {
+          "string": "Port server Sieve"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SIEVE_ENCRYPTION": {
+        "name": {
+          "string": "Enkripsi Sieve"
+        },
+        "description": {
+          "string": "Enkripsi server Sieve"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SIEVE_AUTH_MECH": {
+        "name": {
+          "string": "Mekanisme autentikasi Sieve"
+        },
+        "description": {
+          "string": "Mekanisme autentikasi untuk Sieve. Jika None"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SIEVE_FOLDER_ENCODING": {
+        "name": {
+          "string": "Pengkodean Sieve"
+        },
+        "description": {
+          "string": "Atur pengkodean yang digunakan oleh server Sieve."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SIEVE_HEADER": {
+        "name": {
+          "string": "Header Sieve"
+        },
+        "description": {
+          "string": "Atur skrip Sieve yang akan ditempatkan di awal semua skrip Sieve pengguna"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SIEVE_FOOTER": {
+        "name": {
+          "string": "Footer Sieve"
+        },
+        "description": {
+          "string": "Atur skrip Sieve yang akan ditempatkan di akhir semua skrip Sieve pengguna"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SIEVE_FIRST_FILTER": {
+        "name": {
+          "string": "Skrip Sieve awal"
+        },
+        "description": {
+          "string": "Atur skrip Sieve awal untuk semua pengguna baru. Mereka dapat memodifikasinya setelahnya"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_VACATION_ENABLED": {
+        "name": {
+          "string": "Izinkan pesan liburan"
+        },
+        "description": {
+          "string": "Izinkan pengguna untuk mengatur pesan liburan. Gunakan ekstensi 'vacation' Sieve (rfc5230)"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_VACATION_ALLOW_RESPONSE_ALWAYS": {
+        "name": {
+          "string": "Izinkan pesan liburan setiap saat"
+        },
+        "description": {
+          "string": "Izinkan pengguna untuk mengatur pesan liburan yang akan dikirim setiap saat tanpa masa tenggang"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_FORWARD_ENABLED": {
+        "name": {
+          "string": "Izinkan penerusan otomatis"
+        },
+        "description": {
+          "string": "Izinkan pengguna untuk mengatur penerusan otomatis. Gunakan perintah 'redirect' Sieve"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_FORWARD_ALLOW_USER_DOMAIN": {
+        "name": {
+          "string": "Izinkan penerusan otomatis ke domain pengguna"
+        },
+        "description": {
+          "string": "Izinkan pengguna untuk mengatur penerusan otomatis ke alamat dalam domain yang sama"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_FORWARD_ALLOW_SOGO_DOMAIN": {
+        "name": {
+          "string": "Izinkan penerusan otomatis ke domain SOGo"
+        },
+        "description": {
+          "string": "Izinkan pengguna untuk mengatur penerusan otomatis ke alamat yang dikenal oleh SOGo"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_FORWARD_ALLOW_EXT_DOMAIN": {
+        "name": {
+          "string": "Izinkan penerusan otomatis ke domain eksternal"
+        },
+        "description": {
+          "string": "Izinkan pengguna untuk mengatur penerusan otomatis ke alamat eksternal"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_FORWARD_WHITELIST": {
+        "name": {
+          "string": "Domain whitelist penerusan otomatis"
+        },
+        "description": {
+          "string": "Atur domain tertentu di mana pengguna dapat meneruskan"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_FORWARD_BLACKLIST": {
+        "name": {
+          "string": "Domain blacklist penerusan otomatis"
+        },
+        "description": {
+          "string": "Atur domain tertentu di mana pengguna dilarang meneruskan"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_NOTIFY_ENABLED": {
+        "name": {
+          "string": "Izinkan notifikasi"
+        },
+        "description": {
+          "string": "Izinkan pengguna untuk mengatur notifikasi. Menggunakan ekstensi sieve 'notify' (rfc5435)"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_NOTIFY_ALLOW_USER_DOMAIN": {
+        "name": {
+          "string": "Izinkan notifikasi ke domain pengguna"
+        },
+        "description": {
+          "string": "Izinkan pengguna untuk mengatur notifikasi ke alamat dalam domain yang sama"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_NOTIFY_ALLOW_SOGO_DOMAIN": {
+        "name": {
+          "string": "Izinkan notifikasi ke domain SOGo"
+        },
+        "description": {
+          "string": "Izinkan pengguna untuk mengatur notifikasi ke alamat yang dikenal oleh SOGo"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_NOTIFY_ALLOW_EXT_DOMAIN": {
+        "name": {
+          "string": "Izinkan notifikasi ke domain eksternal"
+        },
+        "description": {
+          "string": "Izinkan pengguna untuk mengatur notifikasi ke alamat eksternal"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_NOTIFY_WHITELIST": {
+        "name": {
+          "string": "Domain whitelist notifikasi"
+        },
+        "description": {
+          "string": "Atur domain tertentu di mana pengguna dapat mengirim notifikasi"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_NOTIFY_BLACKLIST": {
+        "name": {
+          "string": "Domain blacklist notifikasi"
+        },
+        "description": {
+          "string": "Atur domain tertentu di mana pengguna dilarang mengirim notifikasi"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_OUTGOING_TYPE": {
+        "name": {
+          "string": "Jenis server surat keluar"
+        },
+        "description": {
+          "string": "Atur jenis server surat keluar"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SMTP_SERVER": {
+        "name": {
+          "string": "Server SMTP"
+        },
+        "description": {
+          "string": "Nama host server SMTP"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SMTP_PORT": {
+        "name": {
+          "string": "Port SMTP"
+        },
+        "description": {
+          "string": "Port server SMTP"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SMTP_ENCRYPTION": {
+        "name": {
+          "string": "Enkripsi SMTP"
+        },
+        "description": {
+          "string": "Mekanisme enkripsi server SMTP"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SMTP_AUTH_MECH": {
+        "name": {
+          "string": "Mekanisme autentikasi SMTP"
+        },
+        "description": {
+          "string": "Mekanisme autentikasi SMTP. Jangan gunakan 'Tidak Ada' tanpa hati-hati"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SMTP_MASTER_ENABLED": {
+        "name": {
+          "string": "Akun master SMTP"
+        },
+        "description": {
+          "string": "Gunakan akun master untuk semua pesan sistem (acara, notifikasi, dll.)"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SMTP_MASTER_FROM": {
+        "name": {
+          "string": "Pengirim akun master"
+        },
+        "description": {
+          "string": "Pengirim akun master SMTP"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SMTP_MASTER_LOGIN": {
+        "name": {
+          "string": "Login akun master"
+        },
+        "description": {
+          "string": "Email akun master SMTP"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SMTP_MASTER_PWD": {
+        "name": {
+          "string": "Kata sandi akun master"
+        },
+        "description": {
+          "string": "Kata sandi akun master SMTP"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_MAX_SUBMISSION": {
+        "name": {
+          "string": "Maksimal email terkirim"
+        },
+        "description": {
+          "string": "Jumlah maksimal email yang dapat dikirim pengguna dalam suatu periode"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_MAX_SUBMISSION_INTERVAL": {
+        "name": {
+          "string": "Durasi maksimal pengiriman email"
+        },
+        "description": {
+          "string": "Durasi dalam detik untuk batasan 'Maksimal email terkirim'"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_MAX_SUBMISSION_BLOCK_INTERVAl": {
+        "name": {
+          "string": "Waktu blokir pengiriman surel"
+        },
+        "description": {
+          "string": "Durasi di mana pengguna dilarang mengirim surel setelah memicu 'Batas maksimal surel terkirim'"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_MAX_RECIPIENT": {
+        "name": {
+          "string": "Maksimal penerima dalam surel"
+        },
+        "description": {
+          "string": "Kata sandi akun utama"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_CHECK_FROM": {
+        "name": {
+          "string": "Periksa 'Dari'"
+        },
+        "description": {
+          "string": "Periksa apakah pengirim merupakan salah satu alamat surel pengguna (default, alias, identitas, dll.) sebelum meminta server surel keluar"
+        },
+        "developer_comment": ""
+      }
+    }
+  }
+}

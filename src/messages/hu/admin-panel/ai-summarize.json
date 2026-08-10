@@ -1,0 +1,46 @@
+{
+  "AI_SUMMARIZE": {
+    "title": {
+      "string": "E-mail összefoglaló"
+    },
+    "description": {
+      "string": "TL;DR hosszú e-mail fonalakhoz. A kivonatos összefoglalás kiemeli a legfontosabb mondatokat."
+    },
+    "input": {
+      "title": {
+        "string": "Bemeneti e-mail"
+      },
+      "text": {
+        "string": "E-mail szöveg"
+      },
+      "placeholder": {
+        "string": "Illeszd be az e-mail törzsét ide..."
+      },
+      "sentences": {
+        "string": "Max. mondatok száma"
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Összefoglaló"
+      },
+      "empty": {
+        "string": "Írj be szöveget, majd kattints az Összefoglalás gombra"
+      }
+    },
+    "summarize": {
+      "string": "Összefoglalás"
+    },
+    "loading": {
+      "string": "Összefoglalás készítése..."
+    },
+    "errors": {
+      "empty": {
+        "string": "Írj be szöveget az összefoglaláshoz"
+      },
+      "fail": {
+        "string": "Az összefoglalás sikertelen"
+      }
+    }
+  }
+}

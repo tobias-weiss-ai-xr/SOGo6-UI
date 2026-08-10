@@ -1,0 +1,198 @@
+{
+  "AP_EMAIL_AUTH": {
+    "title": {
+      "string": "Email Authentication"
+    },
+    "description": {
+      "string": "Configure DKIM, DMARC and SPF to protect your domains from spoofing and improve deliverability."
+    },
+    "domains": {
+      "title": {
+        "string": "Domains"
+      },
+      "add": {
+        "string": "Add Domain"
+      },
+      "name": {
+        "string": "Domain name"
+      },
+      "namePlaceholder": {
+        "string": "example.org"
+      },
+      "description": {
+        "string": "Description"
+      },
+      "empty": {
+        "string": "No domains configured yet. Add your first domain to begin."
+      },
+      "added": {
+        "string": "Domain added"
+      },
+      "addFailed": {
+        "string": "Failed to add domain"
+      },
+      "delete": {
+        "string": "Delete"
+      },
+      "deleted": {
+        "string": "Domain deleted"
+      },
+      "deleteFailed": {
+        "string": "Failed to delete domain"
+      },
+      "validateAll": {
+        "string": "Validate All"
+      },
+      "validated": {
+        "string": "Validation complete"
+      }
+    },
+    "status": {
+      "ok": {
+        "string": "OK"
+      },
+      "warning": {
+        "string": "Warning"
+      },
+      "error": {
+        "string": "Error"
+      },
+      "none": {
+        "string": "Not configured"
+      },
+      "overall": {
+        "string": "Overall"
+      },
+      "dkim": {
+        "string": "DKIM"
+      },
+      "dmarc": {
+        "string": "DMARC"
+      },
+      "spf": {
+        "string": "SPF"
+      }
+    },
+    "dkim": {
+      "title": {
+        "string": "DKIM"
+      },
+      "generateKey": {
+        "string": "Generate Key Pair"
+      },
+      "selector": {
+        "string": "Selector"
+      },
+      "keyLength": {
+        "string": "Key length"
+      },
+      "configure": {
+        "string": "Save DKIM Configuration"
+      },
+      "rotate": {
+        "string": "Rotate Keys"
+      },
+      "validate": {
+        "string": "Validate DNS"
+      },
+      "publicKey": {
+        "string": "Public key"
+      },
+      "dnsRecord": {
+        "string": "DNS record"
+      },
+      "generated": {
+        "string": "Key pair generated"
+      },
+      "saved": {
+        "string": "DKIM configuration saved"
+      },
+      "rotated": {
+        "string": "Keys rotated — update your DNS record"
+      },
+      "validation": {
+        "string": "Validation result"
+      }
+    },
+    "dmarc": {
+      "title": {
+        "string": "DMARC"
+      },
+      "policy": {
+        "string": "Policy"
+      },
+      "pct": {
+        "string": "Percentage"
+      },
+      "reportEmail": {
+        "string": "Aggregate report email"
+      },
+      "configure": {
+        "string": "Save DMARC Policy"
+      },
+      "validate": {
+        "string": "Validate DNS"
+      },
+      "saved": {
+        "string": "DMARC policy saved"
+      }
+    },
+    "spf": {
+      "title": {
+        "string": "SPF"
+      },
+      "includes": {
+        "string": "Include domains"
+      },
+      "ip4": {
+        "string": "IPv4 addresses"
+      },
+      "allQualifier": {
+        "string": "Catch-all policy"
+      },
+      "configure": {
+        "string": "Save SPF Record"
+      },
+      "validate": {
+        "string": "Validate DNS"
+      },
+      "saved": {
+        "string": "SPF record saved"
+      }
+    },
+    "test": {
+      "title": {
+        "string": "Test"
+      },
+      "from": {
+        "string": "From address"
+      },
+      "run": {
+        "string": "Run Test"
+      },
+      "result": {
+        "string": "Result"
+      },
+      "sent": {
+        "string": "Sent"
+      },
+      "failed": {
+        "string": "Failed"
+      }
+    },
+    "common": {
+      "loading": {
+        "string": "Loading…"
+      },
+      "copy": {
+        "string": "Copy"
+      },
+      "copied": {
+        "string": "Copied"
+      },
+      "error": {
+        "string": "Error"
+      }
+    }
+  }
+}

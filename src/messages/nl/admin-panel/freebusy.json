@@ -1,0 +1,40 @@
+{
+  "AP_FREEBUSY": {
+    "title": {
+      "string": "Beschikbaarheid/Bezet opzoeken"
+    },
+    "description": {
+      "string": "Visuele overlay van deelnemersagenda's. Controleer beschikbaarheid bij het maken van afspraken."
+    },
+    "form": {
+      "title": {
+        "string": "Beschikbaarheid controleren"
+      },
+      "participants": {
+        "string": "Deelnemers"
+      },
+      "start": {
+        "string": "Start"
+      },
+      "end": {
+        "string": "Eind"
+      },
+      "lookup": {
+        "string": "Opzoeken"
+      }
+    },
+    "results": {
+      "title": {
+        "string": "Bezette tijdsloten"
+      }
+    },
+    "errors": {
+      "fields": {
+        "string": "Minimaal één deelnemer is vereist"
+      }
+    },
+    "error": {
+      "string": "Opzoeken mislukt"
+    }
+  }
+}

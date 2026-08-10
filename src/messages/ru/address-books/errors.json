@@ -1,0 +1,108 @@
+{
+  "ADDRESS_BOOKS_ERRORS": {
+    "list_member_invalid": {
+      "string": "Один или несколько выбранных участников не являются контактами в этой адресной книге.",
+      "context": "Inline error when a distribution list member is invalid."
+    },
+    "addressbook_not_found": {
+      "string": "Адресная книга не найдена.",
+      "context": "Error when an address book is missing."
+    },
+    "addressbook_duplicate": {
+      "string": "Адресная книга с таким именем уже существует.",
+      "context": "Toast when address book creation conflicts."
+    },
+    "contact_not_found": {
+      "string": "Контакт не найден.",
+      "context": "Error when a contact is missing."
+    },
+    "contact_duplicate": {
+      "string": "Контакт с таким идентификатором уже существует.",
+      "context": "Toast when contact creation conflicts."
+    },
+    "contact_persist_failed": {
+      "string": "Не удалось сохранить контакт.",
+      "context": "Error when contact creation fails on the server."
+    },
+    "contact_update_failed": {
+      "string": "Не удалось обновить контакт.",
+      "context": "Error when contact update fails on the server."
+    },
+    "operation_not_supported": {
+      "string": "Эта операция не поддерживается для данной адресной книги.",
+      "context": "Error when mutating a non-local address book source."
+    },
+    "list_not_found": {
+      "string": "Рассылочный список не найден.",
+      "context": "Error when a distribution list is missing."
+    },
+    "list_duplicate": {
+      "string": "Рассылочный список с таким именем уже существует.",
+      "context": "Toast when list creation conflicts."
+    },
+    "list_persist_failed": {
+      "string": "Не удалось сохранить рассылочный список.",
+      "context": "Error when list creation fails on the server."
+    },
+    "list_update_failed": {
+      "string": "Не удалось обновить рассылочный список.",
+      "context": "Error when list update fails on the server."
+    },
+    "access_denied": {
+      "string": "У вас нет прав на изменение этой адресной книги.",
+      "context": "Toast when write access is denied."
+    },
+    "read_only": {
+      "string": "Эта адресная книга доступна только для чтения.",
+      "context": "Toast when mutating a read-only address book."
+    },
+    "export_format_unsupported": {
+      "string": "Выбранный формат экспорта не поддерживается.",
+      "context": "Error when export format negotiation fails."
+    },
+    "import_no_file": {
+      "string": "Файл для импорта не предоставлен.",
+      "context": "Error when import request has no file."
+    },
+    "import_too_large": {
+      "string": "Размер файла импорта превышает максимально допустимый (10 МБ).",
+      "context": "Error when import payload is too large."
+    },
+    "import_parse_failed": {
+      "string": "Не удалось обработать файл импорта.",
+      "context": "Error when import document parsing fails."
+    },
+    "job_not_found": {
+      "string": "Фоновая задача не найдена.",
+      "context": "Error when polling an unknown job."
+    },
+    "job_forbidden": {
+      "string": "У вас нет доступа к этой фоновой задаче.",
+      "context": "Error when job belongs to another user."
+    },
+    "job_not_ready": {
+      "string": "Экспорт ещё не готов. Пожалуйста, подождите и попробуйте снова.",
+      "context": "Error when downloading a job result too early."
+    },
+    "job_no_result": {
+      "string": "У этой задачи нет доступного для загрузки результата.",
+      "context": "Error when job result is unavailable."
+    },
+    "job_concurrent_limit": {
+      "string": "Слишком много фоновых задач выполняется одновременно. Пожалуйста, попробуйте позже.",
+      "context": "Error when concurrent job limit is reached."
+    },
+    "file_too_large": {
+      "string": "Фото превышает максимально допустимый размер (2 МБ).",
+      "context": "Inline error when contact photo upload is too large."
+    },
+    "file_type_not_allowed": {
+      "string": "Этот тип файла не разрешён для фотографий контактов.",
+      "context": "Inline error when contact photo type is not allowed."
+    },
+    "generic": {
+      "string": "Операция не может быть выполнена. Пожалуйста, попробуйте снова.",
+      "context": "Fallback error message for contact API errors."
+    }
+  }
+}

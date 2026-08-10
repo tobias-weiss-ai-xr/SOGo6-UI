@@ -1,0 +1,49 @@
+{
+  "AI_ANOMALY": {
+    "title": {
+      "string": "Avvikdeteksjon"
+    },
+    "description": {
+      "string": "Marker uvanlige sendemønstre: masseutsendelser, rare tidspunkter, nye mottakere."
+    },
+    "input": {
+      "title": {
+        "string": "Sendemønster"
+      },
+      "recipients": {
+        "string": "Antall mottakere"
+      },
+      "hour": {
+        "string": "Time (0-23)"
+      },
+      "new_ratio": {
+        "string": "Andel nye mottakere"
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Analyseresultat"
+      },
+      "empty": {
+        "string": "Fyll inn verdier og klikk Analyser"
+      },
+      "anomaly": {
+        "string": "Avvik oppdaget!"
+      },
+      "normal": {
+        "string": "Mønster normalt"
+      },
+      "score": {
+        "string": "Risikoscore"
+      }
+    },
+    "analyze": {
+      "string": "Analyser"
+    },
+    "errors": {
+      "fail": {
+        "string": "Analyse mislyktes"
+      }
+    }
+  }
+}

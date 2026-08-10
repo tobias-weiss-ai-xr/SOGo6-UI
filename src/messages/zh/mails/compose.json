@@ -1,0 +1,17 @@
+{
+  "schedule_sending": {
+    "string": "定时发送",
+    "change": "修改时间",
+    "clear": "取消定时",
+    "context": "安排已编写邮件的发送时间"
+  },
+  "scheduleSend": {
+    "title": "定时发送",
+    "description": "选择邮件的投递时间",
+    "time": "时间",
+    "confirm": "确认定时",
+    "clear": "清除定时",
+    "currentlyScheduled": "当前定于 {time} 投递",
+    "change": "修改时间"
+  }
+}

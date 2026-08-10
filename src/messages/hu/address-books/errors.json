@@ -1,0 +1,108 @@
+{
+  "ADDRESS_BOOKS_ERRORS": {
+    "list_member_invalid": {
+      "string": "Az egyik vagy több kiválasztott tag nem szerepel ebben a címtárban.",
+      "context": "Inline error when a distribution list member is invalid."
+    },
+    "addressbook_not_found": {
+      "string": "A címtár nem található.",
+      "context": "Error when an address book is missing."
+    },
+    "addressbook_duplicate": {
+      "string": "Már létezik egy ilyen nevű címtár.",
+      "context": "Toast when address book creation conflicts."
+    },
+    "contact_not_found": {
+      "string": "A kapcsolat nem található.",
+      "context": "Error when a contact is missing."
+    },
+    "contact_duplicate": {
+      "string": "Már létezik egy ilyen azonosítójú kapcsolat.",
+      "context": "Toast when contact creation conflicts."
+    },
+    "contact_persist_failed": {
+      "string": "A kapcsolatot nem sikerült menteni.",
+      "context": "Error when contact creation fails on the server."
+    },
+    "contact_update_failed": {
+      "string": "A kapcsolatot nem sikerült frissíteni.",
+      "context": "Error when contact update fails on the server."
+    },
+    "operation_not_supported": {
+      "string": "Ez a művelet nem támogatott ebben a címtárban.",
+      "context": "Error when mutating a non-local address book source."
+    },
+    "list_not_found": {
+      "string": "Az elosztólista nem található.",
+      "context": "Error when a distribution list is missing."
+    },
+    "list_duplicate": {
+      "string": "Már létezik egy ilyen nevű elosztólista.",
+      "context": "Toast when list creation conflicts."
+    },
+    "list_persist_failed": {
+      "string": "Az elosztólista mentése sikertelen.",
+      "context": "Error when list creation fails on the server."
+    },
+    "list_update_failed": {
+      "string": "Az elosztólista frissítése sikertelen.",
+      "context": "Error when list update fails on the server."
+    },
+    "access_denied": {
+      "string": "Nincs jogosultsága a címtár módosításához.",
+      "context": "Toast when write access is denied."
+    },
+    "read_only": {
+      "string": "Ez a címtár csak olvasható.",
+      "context": "Toast when mutating a read-only address book."
+    },
+    "export_format_unsupported": {
+      "string": "A kiválasztott exportformátum nem támogatott.",
+      "context": "Error when export format negotiation fails."
+    },
+    "import_no_file": {
+      "string": "Nem lett fájl megadva az importáláshoz.",
+      "context": "Error when import request has no file."
+    },
+    "import_too_large": {
+      "string": "Az importálandó fájl mérete meghaladja a maximálisan engedélyezett méretet (10 MB).",
+      "context": "Error when import payload is too large."
+    },
+    "import_parse_failed": {
+      "string": "Az importálandó fájl nem elemezhető.",
+      "context": "Error when import document parsing fails."
+    },
+    "job_not_found": {
+      "string": "A háttérfeladat nem található.",
+      "context": "Error when polling an unknown job."
+    },
+    "job_forbidden": {
+      "string": "Nincs hozzáférésed ehhez a háttérfeladathoz.",
+      "context": "Error when job belongs to another user."
+    },
+    "job_not_ready": {
+      "string": "Az exportálás még nem kész. Kérjük, várjon és próbálja újra.",
+      "context": "Error when downloading a job result too early."
+    },
+    "job_no_result": {
+      "string": "Ez a feladatnak nincs letölthető eredménye.",
+      "context": "Error when job result is unavailable."
+    },
+    "job_concurrent_limit": {
+      "string": "Túl sok háttérfeladat fut éppen. Kérjük, próbálja újra később.",
+      "context": "Error when concurrent job limit is reached."
+    },
+    "file_too_large": {
+      "string": "A fénykép meghaladja a maximálisan engedélyezett méretet (2 MB).",
+      "context": "Inline error when contact photo upload is too large."
+    },
+    "file_type_not_allowed": {
+      "string": "Ez a fájltípus nem engedélyezett a kapcsolatképekhez.",
+      "context": "Inline error when contact photo type is not allowed."
+    },
+    "generic": {
+      "string": "A művelet nem fejeződött be sikeresen. Kérjük, próbálja újra.",
+      "context": "Fallback error message for contact API errors."
+    }
+  }
+}

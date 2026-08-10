@@ -65,6 +65,8 @@ export interface UserCalendarGeneral extends SkipNotification {
   SOGO_U_WORKDAY_START_TIME: string
   SOGO_U_WORKDAY_END_TIME: string
   SOGO_U_BUSY_OFF_HOURS: boolean
+  SOGO_U_NON_WORKING_WEEKDAYS: number[]
+  SOGO_U_DEFAULT_LOCATION: string
   SOGO_U_CALENDAR_DAYS_SHOWED: number[]
   SOGO_U_CALENDAR_WEEK_NUMBER_FORMAT: '%U' | '%W' | '%V'
   SOGO_U_CALENDAR_DEFAULT: string

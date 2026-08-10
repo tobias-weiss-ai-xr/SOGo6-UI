@@ -1,0 +1,147 @@
+{
+  "ADMIN_PANNEL_RULE": {
+    "title": {
+      "string": "规则"
+    },
+    "filter_placeholder": {
+      "string": "过滤规则..."
+    },
+    "add_new_rule": {
+      "string": "添加新规则"
+    },
+    "select_all": {
+      "string": "全选"
+    },
+    "select_row": {
+      "string": "选择行"
+    },
+    "domain": {
+      "string": "域名"
+    },
+    "open_menu": {
+      "string": "打开菜单"
+    },
+    "actions": {
+      "string": "操作"
+    },
+    "copy_domain": {
+      "string": "复制域名"
+    },
+    "edit": {
+      "string": "编辑"
+    },
+    "delete": {
+      "string": "删除"
+    }
+  },
+  "AP_RULES": {
+    "title": {
+      "string": "规则"
+    },
+    "description": {
+      "string": "管理域的配置规则"
+    },
+    "search": {
+      "placeholder": {
+        "string": "搜索规则..."
+      }
+    },
+    "create": {
+      "button": {
+        "string": "新建规则"
+      },
+      "title": {
+        "string": "创建规则"
+      },
+      "description": {
+        "string": "添加新的配置规则"
+      },
+      "success": {
+        "string": "规则创建成功"
+      },
+      "error": {
+        "string": "规则创建失败"
+      },
+      "name_required": {
+        "string": "规则名称为必填"
+      }
+    },
+    "edit": {
+      "button": {
+        "string": "编辑"
+      },
+      "title": {
+        "string": "编辑规则"
+      },
+      "description": {
+        "string": "更新规则：{name}"
+      },
+      "save": {
+        "string": "保存更改"
+      },
+      "success": {
+        "string": "规则更新成功"
+      },
+      "error": {
+        "string": "规则更新失败"
+      }
+    },
+    "delete": {
+      "button": {
+        "string": "删除"
+      },
+      "title": {
+        "string": "删除规则"
+      },
+      "confirm": {
+        "string": "确定要删除规则\"{name}\"吗？"
+      },
+      "success": {
+        "string": "规则删除成功"
+      },
+      "error": {
+        "string": "规则删除失败"
+      }
+    },
+    "form": {
+      "name": {
+        "string": "规则名称"
+      },
+      "name_placeholder": {
+        "string": "例如：法语 LDAP 规则"
+      },
+      "description": {
+        "string": "描述"
+      },
+      "description_placeholder": {
+        "string": "此规则的可选描述"
+      },
+      "domains": {
+        "string": "受影响的域名"
+      },
+      "domains_placeholder": {
+        "string": "example.org, domain2.org"
+      },
+      "domains_hint": {
+        "string": "以逗号分隔的域名列表。留空表示所有域名。"
+      }
+    },
+    "table": {
+      "id": {
+        "string": "ID"
+      },
+      "name": {
+        "string": "名称"
+      },
+      "actions": {
+        "string": "操作"
+      }
+    },
+    "no_rules": {
+      "string": "尚未配置规则"
+    },
+    "no_results": {
+      "string": "没有匹配搜索的规则"
+    }
+  }
+}

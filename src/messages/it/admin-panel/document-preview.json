@@ -1,0 +1,18 @@
+{
+    "AP_DOCPREV": {
+        "title": { "string": "Anteprima Documenti" },
+        "description": { "string": "Anteprima di PDF e documenti Office nel browser. I PDF vengono renderizzati nativamente; i documenti Office usano Collabora/OnlyOffice." },
+        "upload": {
+            "dropzone": { "string": "Clicca per caricare o trascina un documento" }
+        },
+        "settings": {
+            "button": { "string": "Impostazioni" },
+            "title": { "string": "Impostazioni Anteprima" },
+            "collabora_url": { "string": "URL Collabora/OnlyOffice" },
+            "hint": { "string": "L'URL base del tuo server Collabora o OnlyOffice. Lascia il valore predefinito per la modalità demo." }
+        },
+        "errors": {
+            "unsupported": { "string": "Tipo di file non supportato. Usa .pdf, .docx, .xlsx o .pptx" }
+        }
+    }
+}

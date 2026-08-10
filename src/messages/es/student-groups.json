@@ -1,0 +1,44 @@
+{
+  "STUDENT_GROUPS": {
+    "title": {
+      "string": "Grupos de estudiantes"
+    },
+    "description": {
+      "string": "Gestione grupos e inscripciones"
+    },
+    "errors": {
+      "name": {
+        "string": "Nombre de grupo requerido"
+      },
+      "fail": {
+        "string": "Operación fallida"
+      }
+    },
+    "success": {
+      "create": {
+        "string": "Grupo creado"
+      }
+    },
+    "field": {
+      "name": {
+        "string": "Nombre del grupo"
+      },
+      "course": {
+        "string": "Código del curso"
+      }
+    },
+    "button": {
+      "create": {
+        "string": "Crear grupo"
+      }
+    },
+    "label": {
+      "none": {
+        "string": "Ninguno"
+      },
+      "students": {
+        "string": "estudiantes"
+      }
+    }
+  }
+}

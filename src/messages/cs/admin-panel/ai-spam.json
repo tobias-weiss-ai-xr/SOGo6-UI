@@ -1,0 +1,49 @@
+{
+  "AI_SPAM": {
+    "title": {
+      "string": "Inteligentní filtr spamu"
+    },
+    "description": {
+      "string": "Skórování spamu v reálném čase pomocí analýzy vzorů, pověsti odesílatele a heuristik obsahu."
+    },
+    "input": {
+      "title": {
+        "string": "E-mail k ohodnocení"
+      },
+      "subject": {
+        "string": "Předmět"
+      },
+      "sender": {
+        "string": "Odesílatel"
+      },
+      "body": {
+        "string": "Tělo zprávy"
+      },
+      "placeholder": {
+        "string": "Vložte text e-mailu..."
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Skóre spamu"
+      },
+      "empty": {
+        "string": "Zadejte obsah e-mailu a klikněte na Ohodnotit"
+      },
+      "signals": {
+        "string": "Zjištěné signály"
+      }
+    },
+    "score": {
+      "string": "Ohodnotit e-mail"
+    },
+    "errors": {
+      "empty": {
+        "string": "Zadejte předmět nebo tělo zprávy"
+      },
+      "fail": {
+        "string": "Hodnocení se nezdařilo"
+      }
+    }
+  }
+}

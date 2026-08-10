@@ -1,0 +1,71 @@
+{
+    "AP_DRAFTS": {
+        "title": {
+            "string": "Collaborative Drafts"
+        },
+        "description": {
+            "string": "Share draft emails with colleagues for review and approval before sending."
+        },
+        "form": {
+            "share": {
+                "string": "Share Draft"
+            },
+            "cancel": {
+                "string": "취소"
+            },
+            "title": {
+                "string": "Share a Draft"
+            },
+            "subject": {
+                "string": "Subject"
+            },
+            "reviewers": {
+                "string": "Reviewers"
+            },
+            "message": {
+                "string": "Message to Reviewers"
+            },
+            "message_hint": {
+                "string": "Please review this draft before I send it"
+            },
+            "body": {
+                "string": "Email Body"
+            },
+            "submit": {
+                "string": "Share Draft"
+            }
+        },
+        "create": {
+            "success": {
+                "string": "Draft shared"
+            },
+            "error": {
+                "string": "Failed to share draft"
+            }
+        },
+        "review": {
+            "approved": {
+                "string": "Draft approved"
+            },
+            "rejected": {
+                "string": "Draft rejected"
+            },
+            "error": {
+                "string": "Review failed"
+            }
+        },
+        "list": {
+            "empty": {
+                "string": "No shared drafts. Create one to collaborate on an email."
+            },
+            "by": {
+                "string": "by"
+            }
+        },
+        "errors": {
+            "fields": {
+                "string": "Subject, body, and at least one reviewer are required"
+            }
+        }
+    }
+}

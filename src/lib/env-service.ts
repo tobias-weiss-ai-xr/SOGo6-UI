@@ -69,20 +69,22 @@ const checkApiHealth = async (apiUrl: string): Promise<boolean> => {
     const errorName = (error as Error).name
     const errorMessage = (error as Error).message
 
-    if (
-      errorName === 'AbortError' ||
-      errorMessage.includes('Failed to fetch')
-    ) {
-      console.info(
-        `%cAPI health check failed for ${healthUrl} (unreachable or timeout)`,
-        'color: #94a3b8'
-      )
-    } else {
-      console.info(
-        `%cAPI health check failed for ${healthUrl}`,
-        'color: #94a3b8',
-        error
-      )
+    if (process.env.NODE_ENV === 'development') {
+      if (
+        errorName === 'AbortError' ||
+        errorMessage.includes('Failed to fetch')
+      ) {
+        console.info(
+          `%cAPI health check failed for ${healthUrl} (unreachable or timeout)`,
+          'color: #94a3b8'
+        )
+      } else {
+        console.info(
+          `%cAPI health check failed for ${healthUrl}`,
+          'color: #94a3b8',
+          error
+        )
+      }
     }
     return false
   }
@@ -125,30 +127,41 @@ export const fetchEnvVars = async (): Promise<EnvVariables> => {
 
       // Check if the configured API is healthy (only in development)
       if (isDevelopment && configuredApiUrl !== '/fakeApi') {
-        console.log(
+        // Development logging for API connectivity debugging
+        const logDev = (...args: any[]) => {
+          if (process.env.NODE_ENV === 'development') {
+            console.log(...args)
+          }
+        }
+        logDev(
           `%c🔍 Checking API connectivity: ${configuredApiUrl}`,
           'color: #3b82f6; font-weight: bold'
         )
         isApiHealthy = await checkApiHealth(configuredApiUrl)
         if (!isApiHealthy) {
-          console.log(
+          logDev(
             `%c❌ API at ${configuredApiUrl} is not reachable.`,
             'color: #ef4444; font-weight: bold'
           )
-          console.log(
+          logDev(
             `%c➡️  Switching to /fakeApi (mock data)`,
             'color: #f59e0b; font-weight: bold'
           )
-          //fakeApi defined here
           data.REACT_APP_API_BASE_URL = '/fakeApi'
         } else {
-          console.log(
+          logDev(
             `%c✅ API at ${configuredApiUrl} is reachable. Using real API.`,
             'color: #10b981; font-weight: bold'
           )
         }
       } else if (isDevelopment && configuredApiUrl === '/fakeApi') {
-        console.log(
+        // Development logging for fake API usage
+        const logDev = (...args: any[]) => {
+          if (process.env.NODE_ENV === 'development') {
+            console.log(...args)
+          }
+        }
+        logDev(
           `%c🎭 Using /fakeApi (mock data) - No health check needed.`,
           'color: #8b5cf6; font-weight: bold'
         )

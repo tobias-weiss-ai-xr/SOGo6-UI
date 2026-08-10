@@ -1,0 +1,48 @@
+{
+    "COMMONS": {
+        "close": {
+            "string": "Zavřít"
+        },
+        "workInProgress": {
+            "description": {
+                "string": "Tato funkce je aktuálně ve vývoji."
+            },
+            "message": {
+                "string": "Tvrdě pracujeme na tom, abychom vám tuto funkci přinesli."
+            },
+            "comingSoon": {
+                "string": "Již brzy! Zůstaňte informováni."
+            }
+        }
+    },
+    "COMMON": {
+        "demo": {
+            "warning": {
+                "title": {
+                    "string": "Ukázková verze"
+                },
+                "description": {
+                    "string": "V současné době používáte ukázkovou verzi aplikace. Některé funkce mohou být omezeny."
+                },
+                "action": {
+                    "string": "Rozumím"
+                }
+            }
+        },
+        "language": {
+            "english": "English",
+            "french": "Français"
+        },
+        "serviceUnavailable": {
+            "title": {
+                "string": "Služba není k dispozici"
+            },
+            "description": {
+                "string": "Aplikaci se nepodařilo připojit k serveru. Zkuste to prosím později nebo kontaktujte svého správce."
+            },
+            "retry": {
+                "string": "Zkusit znovu"
+            }
+        }
+    }
+}

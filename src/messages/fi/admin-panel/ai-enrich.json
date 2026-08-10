@@ -1,0 +1,54 @@
+{
+  "AI_ENRICH": {
+    "title": {
+      "string": "Yhteystietojen automaattinen täydentäminen"
+    },
+    "description": {
+      "string": "Poimi puhelinnumero, titteli, yritys ja sijainti sähköpostin allekirjoituksesta."
+    },
+    "input": {
+      "title": {
+        "string": "Sähköpostin allekirjoitus"
+      },
+      "signature": {
+        "string": "Allekirjoitusteksti"
+      },
+      "placeholder": {
+        "string": "Liitä sähköpostin allekirjoitus tähän..."
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Poimitut tiedot"
+      },
+      "empty": {
+        "string": "Syötä allekirjoitusteksti ja klikkaa Poimi"
+      }
+    },
+    "extract": {
+      "string": "Poimi tiedot"
+    },
+    "field": {
+      "phone": {
+        "string": "Puhelin"
+      },
+      "title": {
+        "string": "Titteli"
+      },
+      "company": {
+        "string": "Yritys"
+      },
+      "location": {
+        "string": "Sijainti"
+      }
+    },
+    "errors": {
+      "empty": {
+        "string": "Syötä teksti"
+      },
+      "fail": {
+        "string": "Poiminen epäonnistui"
+      }
+    }
+  }
+}

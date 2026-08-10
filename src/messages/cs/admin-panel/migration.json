@@ -1,0 +1,54 @@
+{
+  "AP_MIG": {
+    "title": {
+      "string": "Nástroje pro migraci"
+    },
+    "description": {
+      "string": "Import dat z externích zdrojů – G Suite, M365, Dovecot, Cyrus nebo nahrané soubory."
+    },
+    "wizard": {
+      "title": {
+        "string": "Spustit migraci"
+      },
+      "source": {
+        "string": "Zdroj"
+      },
+      "select_source": {
+        "string": "Vyberte zdroj..."
+      },
+      "user": {
+        "string": "Cílový uživatel"
+      },
+      "select_user": {
+        "string": "Vyberte uživatele..."
+      }
+    },
+    "start": {
+      "button": {
+        "string": "Spustit migraci"
+      },
+      "running": {
+        "string": "Spouštění..."
+      },
+      "success": {
+        "string": "Migrace spuštěna"
+      },
+      "error": {
+        "string": "Migrace se nezdařila"
+      }
+    },
+    "history": {
+      "title": {
+        "string": "Historie migrací"
+      },
+      "empty": {
+        "string": "Zatím žádné migrace."
+      }
+    },
+    "errors": {
+      "fields": {
+        "string": "Zdroj a uživatel jsou povinné"
+      }
+    }
+  }
+}

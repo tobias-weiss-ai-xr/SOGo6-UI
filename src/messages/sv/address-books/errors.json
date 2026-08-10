@@ -1,0 +1,108 @@
+{
+  "ADDRESS_BOOKS_ERRORS": {
+    "list_member_invalid": {
+      "string": "En eller flera valda medlemmar är inte kontakter i denna adressbok.",
+      "context": "Inline error when a distribution list member is invalid."
+    },
+    "addressbook_not_found": {
+      "string": "Adressboken kunde inte hittas.",
+      "context": "Error when an address book is missing."
+    },
+    "addressbook_duplicate": {
+      "string": "En adressbok med detta namn finns redan.",
+      "context": "Toast when address book creation conflicts."
+    },
+    "contact_not_found": {
+      "string": "Kontakten kunde inte hittas.",
+      "context": "Error when a contact is missing."
+    },
+    "contact_duplicate": {
+      "string": "En kontakt med denna identifierare finns redan.",
+      "context": "Toast when contact creation conflicts."
+    },
+    "contact_persist_failed": {
+      "string": "Kontakten kunde inte sparas.",
+      "context": "Error when contact creation fails on the server."
+    },
+    "contact_update_failed": {
+      "string": "Kontakten kunde inte uppdateras.",
+      "context": "Error when contact update fails on the server."
+    },
+    "operation_not_supported": {
+      "string": "Denna åtgärd stöds inte för denna adressbok.",
+      "context": "Error when mutating a non-local address book source."
+    },
+    "list_not_found": {
+      "string": "Distributionslistan kunde inte hittas.",
+      "context": "Error when a distribution list is missing."
+    },
+    "list_duplicate": {
+      "string": "En distributionslista med detta namn finns redan.",
+      "context": "Toast when list creation conflicts."
+    },
+    "list_persist_failed": {
+      "string": "Distributionslistan kunde inte sparas.",
+      "context": "Error when list creation fails on the server."
+    },
+    "list_update_failed": {
+      "string": "Distributionslistan kunde inte uppdateras.",
+      "context": "Error when list update fails on the server."
+    },
+    "access_denied": {
+      "string": "Du har inte behörighet att modifiera denna adressbok.",
+      "context": "Toast when write access is denied."
+    },
+    "read_only": {
+      "string": "Denna adressbok är skrivskyddad.",
+      "context": "Toast when mutating a read-only address book."
+    },
+    "export_format_unsupported": {
+      "string": "Det valda exportformatet stöds inte.",
+      "context": "Error when export format negotiation fails."
+    },
+    "import_no_file": {
+      "string": "Ingen fil angavs för import.",
+      "context": "Error when import request has no file."
+    },
+    "import_too_large": {
+      "string": "Importfilen överskrider den maximala tillåtna storleken (10 MB).",
+      "context": "Error when import payload is too large."
+    },
+    "import_parse_failed": {
+      "string": "Importfilen kunde inte tolkas.",
+      "context": "Error when import document parsing fails."
+    },
+    "job_not_found": {
+      "string": "Bakgrundsjobbet kunde inte hittas.",
+      "context": "Error when polling an unknown job."
+    },
+    "job_forbidden": {
+      "string": "Du har inte åtkomst till detta bakgrundsjobb.",
+      "context": "Error when job belongs to another user."
+    },
+    "job_not_ready": {
+      "string": "Exporten är inte klar än. Vänta och försök igen.",
+      "context": "Error when downloading a job result too early."
+    },
+    "job_no_result": {
+      "string": "Den här uppgiften har inget nedladdningsbart resultat.",
+      "context": "Error when job result is unavailable."
+    },
+    "job_concurrent_limit": {
+      "string": "För många bakgrundsjobb körs. Försök igen senare.",
+      "context": "Error when concurrent job limit is reached."
+    },
+    "file_too_large": {
+      "string": "Fotot överskrider den maximala tillåtna storleken (2 MB).",
+      "context": "Inline error when contact photo upload is too large."
+    },
+    "file_type_not_allowed": {
+      "string": "Den här filtypen är inte tillåten för kontaktbilder.",
+      "context": "Inline error when contact photo type is not allowed."
+    },
+    "generic": {
+      "string": "Åtgärden kunde inte slutföras. Försök igen.",
+      "context": "Fallback error message for contact API errors."
+    }
+  }
+}

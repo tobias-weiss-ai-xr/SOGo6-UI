@@ -1,0 +1,75 @@
+{
+  "US_SECURITY": {
+    "title": {
+      "string": "Zabezpieczenia",
+      "context": "Title for the Security settings section in user settings"
+    },
+    "totp": {
+      "title": {
+        "string": "Uwierzytelnianie dwuskładnikowe (TOTP)",
+        "context": "Title for the Two-Factor Authentication settings"
+      },
+      "description": {
+        "string": "Uwierzytelnianie dwuskładnikowe dodaje dodatkową warstwę ochrony do Twojego konta. Po włączeniu, przy każdym logowaniu będziesz musiał wprowadzić unikalny kod wygenerowany przez aplikację uwierzytelniającą na swoim telefonie."
+      },
+      "verification_code": {
+        "title": {
+          "string": "Kod weryfikacyjny"
+        },
+        "description": {
+          "string": "Wprowadź kod weryfikacyjny wygenerowany przez swoją aplikację uwierzytelniającą."
+        }
+      }
+    },
+    "webauthn": {
+      "title": {
+        "string": "Klucze dostępu (WebAuthn)",
+        "context": "Title for the WebAuthn settings section"
+      },
+      "description": {
+        "string": "Klucze dostępu pozwalają zalogować się bez hasła, używając czujnika biometrycznego urządzenia (odcisk palca, Face ID) lub fizycznego klucza bezpieczeństwa. Twój klucz dostępu jest bezpiecznie przechowywany na tym urządzeniu.",
+        "context": "Description for the WebAuthn settings section"
+      },
+      "registered_credentials": {
+        "string": "Zarejestrowane klucze dostępu",
+        "context": "Label for the list of registered passkeys"
+      },
+      "registered_at": {
+        "string": "Zarejestrowano",
+        "context": "Label for the registration date of a passkey"
+      },
+      "no_credentials": {
+        "string": "Brak zarejestrowanych kluczy dostępu.",
+        "context": "Message when no passkeys are registered"
+      },
+      "register": {
+        "string": "Zarejestruj nowy klucz dostępu",
+        "context": "Button to register a new passkey",
+        "title": {
+          "string": "Register a New Passkey",
+          "context": "Title for the passkey registration dialog"
+        },
+        "description": {
+          "string": "Your browser or device will guide you through setting up a passkey using biometrics, a PIN, or an external security key.",
+          "context": "Description for the passkey registration dialog"
+        },
+        "button": {
+          "string": "Register",
+          "context": "Button to start passkey registration"
+        },
+        "waiting": {
+          "string": "Waiting for device interaction — follow the prompts on your device.",
+          "context": "Status during passkey registration"
+        },
+        "success": {
+          "string": "Passkey registered successfully!",
+          "context": "Status when passkey registration succeeds"
+        }
+      },
+      "device_name": {
+        "string": "Nazwa urządzenia (opcjonalnie)",
+        "context": "Label for the device name input field"
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+    "COMMONS": {
+        "close": {
+            "string": "Lukk"
+        },
+        "workInProgress": {
+            "description": {
+                "string": "Denne funksjonen er for tiden under utvikling."
+            },
+            "message": {
+                "string": "Vi jobber hardt med å bringe deg denne funksjonen."
+            },
+            "comingSoon": {
+                "string": "Kommer snart! Følg med."
+            }
+        }
+    },
+    "COMMON": {
+        "demo": {
+            "warning": {
+                "title": {
+                    "string": "Demoversjon"
+                },
+                "description": {
+                    "string": "Du bruker for tiden en demoversjon av applikasjonen. Noen funksjoner kan være begrenset."
+                },
+                "action": {
+                    "string": "Jeg forstår"
+                }
+            }
+        },
+        "language": {
+            "english": "English",
+            "french": "Français"
+        },
+        "serviceUnavailable": {
+            "title": {
+                "string": "Tjenesten er ikke tilgjengelig"
+            },
+            "description": {
+                "string": "Applikasjonen kunne ikke koble til serveren. Prøv igjen senere eller kontakt administratoren din."
+            },
+            "retry": {
+                "string": "Prøv igjen"
+            }
+        }
+    }
+}

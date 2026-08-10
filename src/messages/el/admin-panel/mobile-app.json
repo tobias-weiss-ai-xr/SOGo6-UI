@@ -1,0 +1,65 @@
+{
+  "MOBILE": {
+    "title": {
+      "string": "Διαχείριση Εφαρμογής για Κινητά"
+    },
+    "description": {
+      "string": "Διαχείριση εγγεγραμμένων συσκευών, ειδοποιήσεων push και ρυθμίσεων εφαρμογής"
+    },
+    "errors": {
+      "fail": {
+        "string": "Η λειτουργία απέτυχε"
+      }
+    },
+    "success": {
+      "unregister": {
+        "string": "Η συσκευή καταργήθηκε"
+      },
+      "broadcast": {
+        "string": "Ειδοποίηση push αποσταλμένη"
+      }
+    },
+    "config": {
+      "title": {
+        "string": "Ρυθμίσεις Εφαρμογής"
+      },
+      "push": {
+        "string": "Ειδοποιήσεις Push"
+      },
+      "biometric": {
+        "string": "Βιομετρική Ταυτοποίηση"
+      }
+    },
+    "push": {
+      "title": {
+        "placeholder": {
+          "string": "Τίτλος ειδοποίησης"
+        }
+      },
+      "message": {
+        "placeholder": {
+          "string": "Μήνυμα..."
+        }
+      },
+      "broadcast": {
+        "string": "Αποστολή"
+      }
+    },
+    "stats": {
+      "title": {
+        "string": "Στατιστικά"
+      },
+      "devices": {
+        "string": "Εγγεγραμμένες Συσκευές"
+      }
+    },
+    "devices": {
+      "title": {
+        "string": "Όλες οι Συσκευές"
+      },
+      "empty": {
+        "string": "Δεν έχουν εγγραφεί ακόμα συσκευές"
+      }
+    }
+  }
+}

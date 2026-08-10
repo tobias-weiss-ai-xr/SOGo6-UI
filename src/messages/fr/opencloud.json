@@ -1,0 +1,8 @@
+{ "OPENCLOUD": {
+    "picker": {
+      "search": { "string": "Rechercher des fichiers..." },
+      "empty": { "string": "Aucun fichier trouvé" },
+      "attached": { "string": "Joint : {name}" },
+      "error": { "string": "Échec de la sélection du fichier" }
+    }
+}}

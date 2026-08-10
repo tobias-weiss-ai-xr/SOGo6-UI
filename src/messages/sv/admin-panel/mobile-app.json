@@ -1,0 +1,65 @@
+{
+  "MOBILE": {
+    "title": {
+      "string": "Mobilapphantering"
+    },
+    "description": {
+      "string": "Hantera registrerade enheter, push-notiser och appkonfiguration"
+    },
+    "errors": {
+      "fail": {
+        "string": "Åtgärden misslyckades"
+      }
+    },
+    "success": {
+      "unregister": {
+        "string": "Enhet avregistrerad"
+      },
+      "broadcast": {
+        "string": "Push-notis skickad"
+      }
+    },
+    "config": {
+      "title": {
+        "string": "Appinställningar"
+      },
+      "push": {
+        "string": "Push-notiser"
+      },
+      "biometric": {
+        "string": "Biometrisk autentisering"
+      }
+    },
+    "push": {
+      "title": {
+        "placeholder": {
+          "string": "Notisrubrik"
+        }
+      },
+      "message": {
+        "placeholder": {
+          "string": "Meddelande..."
+        }
+      },
+      "broadcast": {
+        "string": "Skicka"
+      }
+    },
+    "stats": {
+      "title": {
+        "string": "Statistik"
+      },
+      "devices": {
+        "string": "Registrerade enheter"
+      }
+    },
+    "devices": {
+      "title": {
+        "string": "Alla enheter"
+      },
+      "empty": {
+        "string": "Inga enheter registrerade än"
+      }
+    }
+  }
+}

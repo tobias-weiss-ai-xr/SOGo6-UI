@@ -1,0 +1,14 @@
+{
+  "CALENDAR": {
+    "pick": {
+      "range": {
+        "string": "Chọn khoảng thời gian...",
+        "context": "Default message displayed in the calendar when the user is asked to select a date range."
+      },
+      "single": {
+        "string": "Chọn ngày...",
+        "context": "Default message displayed in the calendar when the user is asked to select a single date."
+      }
+    }
+  }
+}

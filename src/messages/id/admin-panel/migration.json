@@ -1,0 +1,54 @@
+{
+  "AP_MIG": {
+    "title": {
+      "string": "Alat Migrasi"
+    },
+    "description": {
+      "string": "Impor data dari sumber eksternal — G Suite, M365, Dovecot, Cyrus, atau unggahan file."
+    },
+    "wizard": {
+      "title": {
+        "string": "Mulai Migrasi"
+      },
+      "source": {
+        "string": "Sumber"
+      },
+      "select_source": {
+        "string": "Pilih sumber..."
+      },
+      "user": {
+        "string": "Pengguna Target"
+      },
+      "select_user": {
+        "string": "Pilih pengguna..."
+      }
+    },
+    "start": {
+      "button": {
+        "string": "Mulai Migrasi"
+      },
+      "running": {
+        "string": "Memulai..."
+      },
+      "success": {
+        "string": "Migrasi dimulai"
+      },
+      "error": {
+        "string": "Migrasi gagal"
+      }
+    },
+    "history": {
+      "title": {
+        "string": "Riwayat Migrasi"
+      },
+      "empty": {
+        "string": "Belum ada migrasi."
+      }
+    },
+    "errors": {
+      "fields": {
+        "string": "Sumber dan pengguna wajib diisi"
+      }
+    }
+  }
+}

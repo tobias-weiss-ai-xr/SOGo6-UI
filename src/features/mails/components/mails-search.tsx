@@ -1,3 +1,5 @@
+'use client'
+
 import { Button } from '@/components/ui/button'
 import { Checkbox } from '@/components/ui/checkbox'
 import {
@@ -13,27 +15,98 @@ import {
   PopoverTrigger,
 } from '@/components/ui/popover'
 import { Separator } from '@/components/ui/separator'
+import {
+  activateSearch,
+  clearSearch,
+  selectMailSearch,
+} from '@/features/mails/store/mail-search-slice'
+import { useAppDispatch, useAppSelector } from '@/lib/redux/hooks'
 import { useTranslations } from 'next-intl'
-import { memo } from 'react'
-import { SearchIcon } from 'lucide-react'
+import { memo, useCallback, useState } from 'react'
+import { SearchIcon, X } from 'lucide-react'
 import SearchFolders from './search-folders'
 import SearchMoreOptions from './search-more-options'
 
-export function MailsSearch() {
+export interface MailsSearchProps {
+  /** Current folder path (used to scope search if no folders specified) */
+  folder?: string
+  /** Current account ID */
+  accountId?: string
+}
+
+export function MailsSearch({ folder, accountId }: MailsSearchProps) {
   const formT = useTranslations('FORM_COMMONS')
   const t = useTranslations('MAILS_COMMONS')
+  const dispatch = useAppDispatch()
+  const searchState = useAppSelector(selectMailSearch)
+
+  const [localQuery, setLocalQuery] = useState(searchState.query || '')
+  const [inBody, setInBody] = useState(false)
+  const [selectedFolders, setSelectedFolders] = useState<string>('')
+  const [open, setOpen] = useState(false)
+
+  const handleSearch = useCallback(() => {
+    const params: Record<string, string | boolean | undefined> = {
+      query: localQuery,
+      in_body: inBody || undefined,
+      folders: selectedFolders || undefined,
+      page: 1,
+      per_page: 20,
+    }
+
+    dispatch(
+      activateSearch({
+        query: localQuery,
+        searchParams: params,
+      })
+    )
+    setOpen(false)
+  }, [localQuery, inBody, selectedFolders, dispatch])
+
+  const handleReset = useCallback(() => {
+    setLocalQuery('')
+    setInBody(false)
+    setSelectedFolders('')
+    dispatch(clearSearch())
+    setOpen(false)
+  }, [dispatch])
+
+  const handleKeyDown = useCallback(
+    (e: React.KeyboardEvent) => {
+      if (e.key === 'Enter') {
+        handleSearch()
+      }
+    },
+    [handleSearch]
+  )
+
   return (
-    <Popover>
+    <Popover open={open} onOpenChange={setOpen}>
       <PopoverTrigger asChild>
-        <div className="relative">
-          <Input
-            className="placeholder:text-transparent"
-            placeholder={t('search.placeholder.string')}
-          />
-          <div className="pointer-events-none absolute inset-0 flex items-center gap-2 px-3 text-sm text-gray-500">
-            <SearchIcon className="size-4 shrink-0 opacity-70" />
-            {t('search.placeholder.string')}
-          </div>
+        <div className="relative cursor-pointer">
+          {searchState.isActive ? (
+            <div className="flex items-center gap-2 rounded-md border border-blue-400 bg-blue-50 px-3 py-1.5 text-sm text-blue-700">
+              <SearchIcon className="size-4 shrink-0 opacity-70" />
+              <span className="truncate max-w-[120px]">
+                {searchState.query}
+              </span>
+              <span className="text-blue-400">
+                ({searchState.total})
+              </span>
+              <X
+                className="size-4 cursor-pointer hover:text-blue-900"
+                onClick={(e) => {
+                  e.stopPropagation()
+                  handleReset()
+                }}
+              />
+            </div>
+          ) : (
+            <div className="flex items-center gap-2 rounded-md border px-3 py-1.5 text-sm text-gray-500 hover:border-gray-300">
+              <SearchIcon className="size-4 shrink-0 opacity-70" />
+              {t('search.placeholder.string')}
+            </div>
+          )}
         </div>
       </PopoverTrigger>
       <PopoverContent
@@ -43,13 +116,23 @@ export function MailsSearch() {
         style={{ width: 'var(--radix-popover-trigger-width)' }}
       >
         <div className="grid gap-4">
-          <Input />
+          <Input
+            value={localQuery}
+            onChange={(e) => setLocalQuery(e.target.value)}
+            onKeyDown={handleKeyDown}
+            placeholder={t('search.placeholder.string')}
+            autoFocus
+          />
           <div className="grid gap-2">
             <div className="flex items-center justify-between">
               <Label htmlFor="bodySearch">
                 {t('search.in_message_content.string')}
               </Label>
-              <Checkbox id="bodySearch" />
+              <Checkbox
+                id="bodySearch"
+                checked={inBody}
+                onCheckedChange={(checked) => setInBody(!!checked)}
+              />
             </div>
             <div className="">
               <Label>{t('search.folders.string')}</Label>
@@ -84,8 +167,12 @@ export function MailsSearch() {
 
           <div className="flex items-center justify-end">
             <div>
-              <Button>{formT('reset.default.string')}</Button>
-              <Button className="ml-2">{t('search.confirm.string')}</Button>
+              <Button variant="outline" onClick={handleReset}>
+                {formT('reset.default.string')}
+              </Button>
+              <Button className="ml-2" onClick={handleSearch}>
+                {t('search.confirm.string')}
+              </Button>
             </div>
           </div>
         </div>

@@ -1,0 +1,100 @@
+{
+  "DONOR": {
+    "title": {
+      "string": "捐赠者管理"
+    },
+    "description": {
+      "string": "跟踪捐赠者、管理 GDPR 同意、生成税务收据"
+    },
+    "errors": {
+      "fields": {
+        "string": "必填字段缺失"
+      },
+      "fail": {
+        "string": "操作失败"
+      }
+    },
+    "success": {
+      "create": {
+        "string": "捐赠者已注册"
+      },
+      "donate": {
+        "string": "捐赠已记录"
+      }
+    },
+    "register": {
+      "title": {
+        "string": "注册捐赠者"
+      }
+    },
+    "donate": {
+      "title": {
+        "string": "记录捐赠"
+      },
+      "select": {
+        "string": "选择捐赠者..."
+      },
+      "campaign": {
+        "string": "活动"
+      }
+    },
+    "field": {
+      "name": {
+        "string": "姓名"
+      },
+      "email": {
+        "string": "邮箱"
+      },
+      "type": {
+        "string": "类型"
+      },
+      "total": {
+        "string": "总额"
+      },
+      "donations": {
+        "string": "捐赠次数"
+      },
+      "consent": {
+        "string": "GDPR"
+      }
+    },
+    "type": {
+      "individual": {
+        "string": "个人"
+      },
+      "corporate": {
+        "string": "企业"
+      },
+      "foundation": {
+        "string": "基金会"
+      }
+    },
+    "button": {
+      "register": {
+        "string": "注册"
+      },
+      "donate": {
+        "string": "记录捐赠"
+      }
+    },
+    "stats": {
+      "title": {
+        "string": "统计信息"
+      },
+      "total_donors": {
+        "string": "捐赠者总数"
+      },
+      "total_raised": {
+        "string": "筹款总额"
+      }
+    },
+    "list": {
+      "title": {
+        "string": "所有捐赠者"
+      },
+      "empty": {
+        "string": "暂无捐赠者"
+      }
+    }
+  }
+}

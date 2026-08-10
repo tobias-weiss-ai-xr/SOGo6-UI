@@ -1,0 +1,171 @@
+{
+  "US_MAIL_GENERAL": {
+    "title": {
+      "string": "Cài đặt chung Thư",
+      "context": "Title for the mail general settings page"
+    },
+    "compose_message_in": {
+      "string": "Soạn thư bằng",
+      "context": "Dropdown label in what way to compose messages"
+    },
+    "display_subscribed_mailboxes_only": {
+      "string": "Chỉ hiển thị hộp thư đã đăng ký",
+      "context": "Checkbox to show subscribed mailboxes only"
+    },
+    "fetch_count_of_unseen_messages": {
+      "string": "Lấy số lượng thư chưa đọc cho tất cả hộp thư",
+      "context": "Checkbox to fetch count of unseen messages for all mailboxes"
+    },
+    "sort_messages_by_threads": {
+      "string": "Sắp xếp thư theo chuỗi",
+      "context": "Checkbox to sort messages by threads"
+    },
+    "show_recipients_or_sender_full_email": {
+      "string": "Hiển thị đầy đủ email của người nhận/người gửi trong hộp thư",
+      "context": "Checkbox to show recipients or sender full email in mailboxes"
+    },
+    "hide_attachments_for_inline_images": {
+      "string": "Không hiển thị hình ảnh nhúng dưới dạng tệp đính kèm trong trình xem thư",
+      "context": "Checkbox to hide attachments for inline images"
+    },
+    "automatically_mark_messages_as_read": {
+      "string": "Đánh dấu thư là đã đọc sau (thời gian xác định) giây",
+      "context": "Checkbox to automatically mark messages as read"
+    },
+    "collect_unknown_addresses": {
+      "string": "Lưu địa chỉ email chưa biết vào sổ địa chỉ",
+      "context": "Checkbox to collect unknown mail addresses"
+    },
+    "collect_unknown_addressbook_name": {
+      "string": "Tên sổ địa chỉ",
+      "context": "Input for the unknown email addressbook name"
+    },
+    "forward_messages": {
+      "title": {
+        "string": "Chuyển tiếp thư",
+        "context": "Dropdown label for forward messages"
+      },
+      "as_attachment": {
+        "string": "Dưới dạng tệp đính kèm",
+        "context": "Checkbox to forward messages as attachment"
+      },
+      "as_inline": {
+        "string": "Dưới dạng nhúng",
+        "context": "Checkbox to forward messages as inline"
+      }
+    },
+    "start_reply": {
+      "title": {
+        "string": "Khi trả lời thư",
+        "context": "Dropdown label to know where to start in the mail when replying"
+      },
+      "to_above": {
+        "string": "Bắt đầu trả lời phía trên trích dẫn",
+        "context": "Checkbox to start replying at the bottom"
+      },
+      "to_below": {
+        "string": "Bắt đầu trả lời phía dưới trích dẫn",
+        "context": "Checkbox to start replying at the top"
+      }
+    },
+    "place_signature": {
+      "title": {
+        "string": "và đặt chữ ký",
+        "context": "Dropdown label to know where to place the signature"
+      },
+      "above": {
+        "string": "phía trên trích dẫn",
+        "context": "Checkbox to start replying at the bottom"
+      },
+      "below": {
+        "string": "phía dưới trích dẫn",
+        "context": "Checkbox to start replying at the top"
+      }
+    },
+    "attachment_position": {
+      "title": {
+        "string": "Vị trí tệp đính kèm",
+        "context": "Dropdown label to know where to place the attachment"
+      },
+      "above": {
+        "string": "phía trên thư"
+      },
+      "below": {
+        "string": "phía dưới thư"
+      }
+    },
+    "sign_on": {
+      "new": {
+        "string": "Chèn chữ ký vào thư mới"
+      },
+      "reply": {
+        "string": "Chèn chữ ký vào thư trả lời"
+      },
+      "forward": {
+        "string": "Chèn chữ ký vào thư chuyển tiếp"
+      }
+    },
+    "default_font_size": {
+      "title": {
+        "string": "Cỡ chữ mặc định",
+        "context": "Dropdown label to know the default font size"
+      },
+      "sm": {
+        "string": "Nhỏ",
+        "context": "Small font size"
+      },
+      "md": {
+        "string": "Vừa",
+        "context": "Medium font size"
+      },
+      "lg": {
+        "string": "Lớn",
+        "context": "Large font size"
+      },
+      "xl": {
+        "string": "Rất lớn",
+        "context": "Extra large font size"
+      }
+    },
+    "display_remote_images": {
+      "string": "Hiển thị hình ảnh nhúng từ xa",
+      "context": "Checkbox to set display remote inline images to true or false"
+    },
+    "compose": {
+      "title": {
+        "string": "Hành vi mở soạn thư mặc định",
+        "context": "Dropdown label to know where to open compose in"
+      },
+      "always_ask": {
+        "string": "Luôn hỏi mở soạn thư trong cửa sổ mới hay bên trong webmail",
+        "context": "Dropdown label to know where to open compose in"
+      },
+      "in_new_window": {
+        "string": "Mở soạn thư trong cửa sổ mới",
+        "context": "Dropdown label to know where to open compose in"
+      },
+      "inside_webmail": {
+        "string": "Mở soạn thư bên trong webmail",
+        "context": "Dropdown label to know where to open compose in"
+      }
+    },
+    "mail_allow_receipt": {
+      "string": "Cho phép thư yêu cầu xác nhận đã nhận",
+      "context": "Checkbox to allow mail to ask for receipts"
+    },
+    "mail_folder_subscribe": {
+      "string": "Chỉ hiển thị thư mục đã đăng ký",
+      "context": "Checkbox to show subscribed mailboxes only"
+    },
+    "compose_mail_window": {
+      "string": "Cửa sổ soạn thư",
+      "context": "Dropdown label to know where to open compose in",
+      "popup": {
+        "string": "Compose email in a popup"
+      },
+      "inline": {
+        "string": "Compose email inside the webmail"
+      }
+    }
+  }
+}

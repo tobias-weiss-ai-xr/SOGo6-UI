@@ -1,0 +1,14 @@
+{
+  "US_MAIL_LABELS": {
+    "title": {
+      "string": "Štítky pošty",
+      "context": "Title for the mail labels settings page"
+    },
+    "label": {
+      "string": "Štítek"
+    },
+    "imap_label": {
+      "string": "Štítek IMAP"
+    }
+  }
+}

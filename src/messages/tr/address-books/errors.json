@@ -1,0 +1,108 @@
+{
+  "ADDRESS_BOOKS_ERRORS": {
+    "list_member_invalid": {
+      "string": "Seçilen bir veya daha fazla üye bu adres defterindeki kişiler arasında değil.",
+      "context": "Inline error when a distribution list member is invalid."
+    },
+    "addressbook_not_found": {
+      "string": "Adres defteri bulunamadı.",
+      "context": "Error when an address book is missing."
+    },
+    "addressbook_duplicate": {
+      "string": "Bu isimde bir adres defteri zaten var.",
+      "context": "Toast when address book creation conflicts."
+    },
+    "contact_not_found": {
+      "string": "Kişi bulunamadı.",
+      "context": "Error when a contact is missing."
+    },
+    "contact_duplicate": {
+      "string": "Bu kimliğe sahip bir kişi zaten var.",
+      "context": "Toast when contact creation conflicts."
+    },
+    "contact_persist_failed": {
+      "string": "Kişi kaydedilemedi.",
+      "context": "Error when contact creation fails on the server."
+    },
+    "contact_update_failed": {
+      "string": "Kişi güncellenemedi.",
+      "context": "Error when contact update fails on the server."
+    },
+    "operation_not_supported": {
+      "string": "Bu işlem bu adres defteri için desteklenmiyor.",
+      "context": "Error when mutating a non-local address book source."
+    },
+    "list_not_found": {
+      "string": "Dağıtım listesi bulunamadı.",
+      "context": "Error when a distribution list is missing."
+    },
+    "list_duplicate": {
+      "string": "Bu isimde bir dağıtım listesi zaten var.",
+      "context": "Toast when list creation conflicts."
+    },
+    "list_persist_failed": {
+      "string": "Dağıtım listesi kaydedilemedi.",
+      "context": "Error when list creation fails on the server."
+    },
+    "list_update_failed": {
+      "string": "Dağıtım listesi güncellenemedi.",
+      "context": "Error when list update fails on the server."
+    },
+    "access_denied": {
+      "string": "Bu adres defterini değiştirme izniniz yok.",
+      "context": "Toast when write access is denied."
+    },
+    "read_only": {
+      "string": "Bu adres defteri salt okunur.",
+      "context": "Toast when mutating a read-only address book."
+    },
+    "export_format_unsupported": {
+      "string": "Seçilen dışa aktarma formatı desteklenmiyor.",
+      "context": "Error when export format negotiation fails."
+    },
+    "import_no_file": {
+      "string": "İçin aktarım dosyası sağlanmadı.",
+      "context": "Error when import request has no file."
+    },
+    "import_too_large": {
+      "string": "İçin aktarım dosyası boyutu maksimum izin verilen boyutu (10 MB) aşıyor.",
+      "context": "Error when import payload is too large."
+    },
+    "import_parse_failed": {
+      "string": "İçin aktarım dosyası ayrıştırılamadı.",
+      "context": "Error when import document parsing fails."
+    },
+    "job_not_found": {
+      "string": "Arka plan işi bulunamadı.",
+      "context": "Error when polling an unknown job."
+    },
+    "job_forbidden": {
+      "string": "Bu arka plan işine erişim izniniz yok.",
+      "context": "Error when job belongs to another user."
+    },
+    "job_not_ready": {
+      "string": "Dışa aktarma henüz hazır değil. Lütfen bekleyin ve tekrar deneyin.",
+      "context": "Error when downloading a job result too early."
+    },
+    "job_no_result": {
+      "string": "Bu işin indirilebilir sonucu yok.",
+      "context": "Error when job result is unavailable."
+    },
+    "job_concurrent_limit": {
+      "string": "Çok fazla arka plan işi çalışıyor. Lütfen daha sonra tekrar deneyin.",
+      "context": "Error when concurrent job limit is reached."
+    },
+    "file_too_large": {
+      "string": "Fotoğraf maksimum izin verilen boyutu (2 MB) aşıyor.",
+      "context": "Inline error when contact photo upload is too large."
+    },
+    "file_type_not_allowed": {
+      "string": "Bu dosya türü, kişi fotoğrafları için izin verilmemektedir.",
+      "context": "Inline error when contact photo type is not allowed."
+    },
+    "generic": {
+      "string": "İşlem tamamlanamadı. Lütfen tekrar deneyin.",
+      "context": "Fallback error message for contact API errors."
+    }
+  }
+}

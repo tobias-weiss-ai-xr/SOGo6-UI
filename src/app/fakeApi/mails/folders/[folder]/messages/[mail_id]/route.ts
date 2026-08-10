@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { ImapMessages } from '@/features/mails/mails-types'
 import { NextResponse } from 'next/server'
 

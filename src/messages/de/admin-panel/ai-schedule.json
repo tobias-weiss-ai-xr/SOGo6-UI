@@ -1,0 +1,46 @@
+{
+  "AI_SCHEDULE": {
+    "title": {
+      "string": "Intelligente Terminplanung"
+    },
+    "description": {
+      "string": "Meeting-Zeitvorschläge mit Teilnehmer-Analyse und Konflikterkennung"
+    },
+    "input": {
+      "title": {
+        "string": "Eingabe"
+      },
+      "attendees": {
+        "string": "Teilnehmer"
+      },
+      "from": {
+        "string": "Von"
+      },
+      "to": {
+        "string": "Bis"
+      },
+      "duration": {
+        "string": "Dauer (Min.)"
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Vorschläge"
+      },
+      "empty": {
+        "string": "Keine Vorschläge"
+      }
+    },
+    "suggest": {
+      "string": "Vorschlagen"
+    },
+    "errors": {
+      "fields": {
+        "string": "Alle Felder erforderlich"
+      },
+      "fail": {
+        "string": "Vorschläge fehlgeschlagen"
+      }
+    }
+  }
+}

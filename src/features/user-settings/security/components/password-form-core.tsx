@@ -6,6 +6,7 @@ import {
   FormField,
   FormItem,
   FormLabel,
+  FormMessage,
 } from '@/components/ui/form'
 import { PasswordInput } from '@/components/ui/inputs/input-password'
 import { Separator } from '@/components/ui/separator'
@@ -13,19 +14,46 @@ import { zodResolver } from '@hookform/resolvers/zod'
 import { useTranslations } from 'next-intl'
 import React from 'react'
 import { useForm } from 'react-hook-form'
+import { toast } from 'sonner'
 import { z } from 'zod'
 import { defaultValues, schema } from './password-schema'
+import { useChangePasswordMutation } from '@/features/user-profile/store/profile-api'
 
 const PasswordForm: React.FC = () => {
   const formT = useTranslations('FORM_COMMONS')
   const t = useTranslations('FORM_PASSWORD')
+  const [changePassword, { isLoading }] = useChangePasswordMutation()
+
   const form = useForm<z.infer<typeof schema>>({
     resolver: zodResolver(schema),
     defaultValues,
   })
 
-  function onSubmit(_values: z.infer<typeof schema>) {
-    // TODO: wire to password change API when available
+  async function onSubmit(values: z.infer<typeof schema>) {
+    // Validate new password matches confirmation
+    if (values.newPassword !== values.confirmPassword) {
+      toast.error(t('mismatch.string') || 'Passwords do not match')
+      return
+    }
+
+    try {
+      const result = await changePassword({
+        current_password: values.password,
+        new_password: values.newPassword,
+      }).unwrap()
+
+      if (result.changed) {
+        toast.success(t('success.string'))
+        form.reset()
+      }
+    } catch (err: unknown) {
+      const msg =
+        err && typeof err === 'object' && 'data' in err
+          ? String((err as { data: { error_msg?: string; message?: string } }).data?.error_msg ??
+              (err as { data: { error_msg?: string; message?: string } }).data?.message ?? '')
+          : ''
+      toast.error(`${t('error.string')}${msg ? `: ${msg}` : ''}`)
+    }
   }
 
   return (
@@ -49,6 +77,7 @@ const PasswordForm: React.FC = () => {
                 <FormControl>
                   <PasswordInput {...field} placeholder={t('current.string')} />
                 </FormControl>
+                <FormMessage />
               </FormItem>
             )}
           />
@@ -61,6 +90,7 @@ const PasswordForm: React.FC = () => {
                 <FormControl>
                   <PasswordInput {...field} placeholder={t('new.string')} />
                 </FormControl>
+                <FormMessage />
               </FormItem>
             )}
           />
@@ -73,13 +103,14 @@ const PasswordForm: React.FC = () => {
                 <FormControl>
                   <PasswordInput {...field} placeholder={t('confirm.string')} />
                 </FormControl>
+                <FormMessage />
               </FormItem>
             )}
           />
         </div>
         <div className="flex justify-end pt-6">
-          <Button className="text-background">
-            {formT('save.default.string')}
+          <Button className="text-background" disabled={isLoading}>
+            {isLoading ? t('saving.string') || 'Changing...' : formT('save.default.string')}
           </Button>
         </div>
       </form>

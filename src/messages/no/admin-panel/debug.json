@@ -1,0 +1,52 @@
+{
+  "AP_DEBUG": {
+    "title": {
+      "string": "Postkasse-feilsøking"
+    },
+    "description": {
+      "string": "Diagnostisk verktøy for feilsøking av e-postleveringsproblemer. Vis rå e-postkilde eller parsede overskrifter."
+    },
+    "query": {
+      "title": {
+        "string": "Feilsøkingsforespørsel"
+      },
+      "button": {
+        "string": "Inspekter"
+      }
+    },
+    "labels": {
+      "user": {
+        "string": "Bruker"
+      },
+      "folder": {
+        "string": "IMAP-mappe"
+      },
+      "mail_uid": {
+        "string": "E-post-UID"
+      },
+      "select_user": {
+        "string": "Velg bruker..."
+      }
+    },
+    "result": {
+      "raw": {
+        "title": {
+          "string": "Rå e-postkilde"
+        }
+      },
+      "headers": {
+        "title": {
+          "string": "Parsede overskrifter"
+        }
+      }
+    },
+    "errors": {
+      "fields_required": {
+        "string": "Bruker, mappe og e-post-UID er påkrevd"
+      },
+      "fetch_failed": {
+        "string": "Kunne ikke hente feilsøkingsdata"
+      }
+    }
+  }
+}

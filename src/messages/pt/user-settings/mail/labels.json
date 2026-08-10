@@ -1,0 +1,14 @@
+{
+    "US_MAIL_LABELS": {
+        "title": {
+            "string": "Rótulos de E-mail",
+            "context": "Title for the mail labels settings page"
+        },
+        "label": {
+            "string": "Rótulo"
+        },
+        "imap_label": {
+            "string": "Rótulo IMAP"
+        }
+    }
+}

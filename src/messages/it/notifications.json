@@ -1,0 +1,902 @@
+{
+    "NOTIFICATIONS": {
+        "title": {
+            "success": {
+                "string": "Successo",
+                "context": "Notification title for successful operations.",
+                "developer_comment": "Advise the user that an operation completed successfully."
+            },
+            "error": {
+                "string": "Errore",
+                "context": "Notification title for failed operations.",
+                "developer_comment": "Advise the user that an error occurred during the operation. {error}"
+            },
+            "warning": {
+                "string": "Avviso",
+                "context": "Notification title for warning messages.",
+                "developer_comment": "Advise the user to check the details and proceed with caution."
+            },
+            "info": {
+                "string": "Informazione",
+                "context": "Notification title for informational messages.",
+                "developer_comment": "Advise the user of an informational message."
+            }
+        },
+        "mail_action": {
+            "spam": {
+                "successTitle": {
+                    "string": "Segnato come spam"
+                },
+                "successMessage": {
+                    "string": "Il messaggio è stato spostato in Posta indesiderata."
+                },
+                "errorTitle": {
+                    "string": "Azione fallita"
+                },
+                "errorMessage": {
+                    "string": "Impossibile segnare questo messaggio come spam."
+                }
+            },
+            "ham": {
+                "successTitle": {
+                    "string": "Spostato in Posta in arrivo"
+                },
+                "successMessage": {
+                    "string": "Il messaggio è stato spostato nella Posta in arrivo."
+                },
+                "errorTitle": {
+                    "string": "Azione fallita"
+                },
+                "errorMessage": {
+                    "string": "Impossibile ripristinare questo messaggio."
+                }
+            },
+            "move": {
+                "successTitle": {
+                    "string": "Messaggio spostato"
+                },
+                "successMessage": {
+                    "string": "Il messaggio è stato spostato con successo."
+                },
+                "errorTitle": {
+                    "string": "Spostamento fallito"
+                },
+                "errorMessage": {
+                    "string": "Impossibile spostare questo messaggio."
+                }
+            },
+            "tag": {
+                "successTitle": {
+                    "string": "Etichetta applicata"
+                },
+                "successMessage": {
+                    "string": "L'etichetta è stata applicata a questo messaggio."
+                },
+                "errorTitle": {
+                    "string": "Etichettatura fallita"
+                },
+                "errorMessage": {
+                    "string": "Impossibile applicare l'etichetta."
+                }
+            },
+            "untag_label": {
+                "successTitle": {
+                    "string": "Etichetta rimossa"
+                },
+                "successMessage": {
+                    "string": "L'etichetta è stata rimossa da questo messaggio."
+                },
+                "errorTitle": {
+                    "string": "Etichettatura fallita"
+                },
+                "errorMessage": {
+                    "string": "Impossibile rimuovere l'etichetta."
+                }
+            }
+        },
+        "mail_print": {
+            "popup_blocked": {
+                "title": {
+                    "string": "Stampa bloccata"
+                },
+                "message": {
+                    "string": "Consenti popup per questo sito per stampare i messaggi."
+                }
+            }
+        },
+        "folders_purge": {
+            "successTitle": {
+                "string": "Cartella eliminata definitivamente"
+            },
+            "successMessage": {
+                "string": "Tutti i messaggi eliminati sono stati rimossi permanentemente."
+            },
+            "errorTitle": {
+                "string": "Eliminazione definitiva fallita"
+            },
+            "errorMessage": {
+                "string": "Si è verificato un errore durante l'eliminazione definitiva della cartella. Riprova."
+            }
+        },
+        "folders_expunge": {
+            "successTitle": {
+                "string": "Cartella espunta"
+            },
+            "successMessage": {
+                "string": "Tutti i messaggi eliminati sono stati rimossi permanentemente."
+            },
+            "errorTitle": {
+                "string": "Espunzione fallita"
+            },
+            "errorMessage": {
+                "string": "Si è verificato un errore durante l'espunzione della cartella. Riprova."
+            }
+        },
+        "folders_share": {
+            "successTitle": {
+                "string": "Condivisione aggiornata"
+            },
+            "successMessage": {
+                "string": "Le impostazioni di condivisione della cartella sono state salvate."
+            },
+            "errorTitle": {
+                "string": "Condivisione fallita"
+            },
+            "errorMessage": {
+                "string": "Si è verificato un errore durante l'aggiornamento delle impostazioni di condivisione. Riprova."
+            }
+        },
+        "folders_create": {
+            "success": {
+                "title": {
+                    "string": "Cartella creata"
+                },
+                "message": {
+                    "string": "La sottocartella è stata creata con successo."
+                }
+            },
+            "error": {
+                "title": {
+                    "string": "Creazione cartella fallita"
+                },
+                "message": {
+                    "string": "Si è verificato un errore durante la creazione della cartella. Riprova."
+                }
+            }
+        },
+        "folders_delete": {
+            "success": {
+                "title": {
+                    "string": "Cartella eliminata"
+                },
+                "message": {
+                    "string": "La cartella è stata spostata nel Cestino o eliminata definitivamente."
+                }
+            },
+            "error": {
+                "title": {
+                    "string": "Eliminazione cartella fallita"
+                },
+                "message": {
+                    "string": "Si è verificato un errore durante l'eliminazione della cartella. Riprova."
+                }
+            }
+        },
+        "folders_rename": {
+            "success": {
+                "title": {
+                    "string": "Cartella rinominata"
+                },
+                "message": {
+                    "string": "La cartella è stata rinominata con successo."
+                }
+            },
+            "error": {
+                "title": {
+                    "string": "Rinomina cartella fallita"
+                },
+                "message": {
+                    "string": "Si è verificato un errore durante la rinomina della cartella. Riprova."
+                }
+            }
+        },
+        "folders_set_type": {
+            "success": {
+                "title": {
+                    "string": "Tipo cartella aggiornato"
+                },
+                "message": {
+                    "string": "Il tipo di cartella è stato aggiornato."
+                }
+            },
+            "error": {
+                "title": {
+                    "string": "Aggiornamento tipo cartella fallito"
+                },
+                "message": {
+                    "string": "Si è verificato un errore durante l'aggiornamento del tipo di cartella. Riprova."
+                }
+            }
+        },
+        "folders_move": {
+            "success": {
+                "title": {
+                    "string": "Cartella spostata"
+                },
+                "message": {
+                    "string": "La cartella è stata spostata."
+                }
+            },
+            "error": {
+                "title": {
+                    "string": "Spostamento cartella fallito"
+                },
+                "message": {
+                    "string": "Si è verificato un errore durante lo spostamento della cartella. Riprova."
+                }
+            }
+        },
+        "folders_export": {
+            "success": {
+                "title": {
+                    "string": "Esportazione avviata"
+                },
+                "message": {
+                    "string": "L'esportazione della cartella è stata avviata."
+                }
+            },
+            "error": {
+                "title": {
+                    "string": "Esportazione cartella fallita"
+                },
+                "message": {
+                    "string": "Si è verificato un errore durante l'esportazione della cartella. Riprova."
+                }
+            }
+        },
+        "calendar_create": {
+            "success": {
+                "title": {
+                    "string": "Calendario creato"
+                },
+                "message": {
+                    "string": "Il calendario è stato creato con successo."
+                }
+            },
+            "error": {
+                "title": {
+                    "string": "Creazione fallita"
+                },
+                "message": {
+                    "string": "Creazione del calendario fallita. Riprova."
+                }
+            }
+        },
+        "calendar_update": {
+            "success": {
+                "title": {
+                    "string": "Calendario aggiornato"
+                },
+                "message": {
+                    "string": "Il calendario è stato aggiornato con successo."
+                }
+            },
+            "error": {
+                "title": {
+                    "string": "Aggiornamento fallito"
+                },
+                "message": {
+                    "string": "Aggiornamento del calendario fallito. Riprova."
+                }
+            }
+        },
+        "calendar_delete": {
+            "success": {
+                "title": {
+                    "string": "Calendario eliminato"
+                },
+                "message": {
+                    "string": "Il calendario è stato eliminato con successo."
+                }
+            },
+            "error": {
+                "title": {
+                    "string": "Eliminazione fallita"
+                },
+                "message": {
+                    "string": "Eliminazione del calendario fallita. Riprova."
+                }
+            }
+        },
+        "external_calendar_create": {
+            "success": {
+                "title": {
+                    "string": "Calendario sottoscritto"
+                },
+                "message": {
+                    "string": "Il calendario ICS è stato aggiunto."
+                }
+            },
+            "error": {
+                "title": {
+                    "string": "Sottoscrizione fallita"
+                },
+                "message": {
+                    "string": "Impossibile sottoscrivere questo calendario."
+                }
+            }
+        },
+        "external_calendar_delete": {
+            "success": {
+                "title": {
+                    "string": "Sottoscrizione rimossa"
+                },
+                "message": {
+                    "string": "Il calendario è stato rimosso."
+                }
+            },
+            "error": {
+                "title": {
+                    "string": "Eliminazione fallita"
+                },
+                "message": {
+                    "string": "Impossibile rimuovere questo calendario."
+                }
+            }
+        },
+        "external_calendar_sync": {
+            "success": {
+                "title": {
+                    "string": "Calendario sincronizzato"
+                },
+                "message": {
+                    "string": "Il calendario è stato sincronizzato."
+                }
+            },
+            "error": {
+                "title": {
+                    "string": "Sincronizzazione fallita"
+                },
+                "message": {
+                    "string": "Impossibile sincronizzare questo calendario."
+                }
+            }
+        },
+        "calendar_event_create": {
+            "success": {
+                "title": {
+                    "string": "Evento creato"
+                },
+                "message": {
+                    "string": "L'evento è stato creato con successo."
+                }
+            },
+            "error": {
+                "title": {
+                    "string": "Creazione fallita"
+                },
+                "message": {
+                    "string": "Creazione dell'evento fallita. Riprova."
+                }
+            }
+        },
+        "calendar_event_update": {
+            "success": {
+                "title": {
+                    "string": "Evento aggiornato"
+                },
+                "message": {
+                    "string": "L'evento è stato aggiornato con successo."
+                }
+            },
+            "error": {
+                "title": {
+                    "string": "Aggiornamento fallito"
+                },
+                "message": {
+                    "string": "Aggiornamento dell'evento fallito. Riprova."
+                }
+            }
+        },
+        "calendar_event_delete": {
+            "success": {
+                "title": {
+                    "string": "Evento eliminato"
+                },
+                "message": {
+                    "string": "L'evento è stato eliminato con successo."
+                }
+            },
+            "error": {
+                "title": {
+                    "string": "Eliminazione fallita"
+                },
+                "message": {
+                    "string": "Eliminazione dell'evento fallita. Riprova."
+                }
+            }
+        },
+        "task_create": {
+            "success": {
+                "title": {
+                    "string": "Attività creata"
+                },
+                "message": {
+                    "string": "L'attività è stata creata."
+                }
+            },
+            "error": {
+                "title": {
+                    "string": "Creazione fallita"
+                },
+                "message": {
+                    "string": "Impossibile creare l'attività. Riprova."
+                }
+            }
+        },
+        "task_update": {
+            "success": {
+                "title": {
+                    "string": "Attività aggiornata"
+                },
+                "message": {
+                    "string": "L'attività è stata aggiornata."
+                }
+            },
+            "error": {
+                "title": {
+                    "string": "Aggiornamento fallito"
+                },
+                "message": {
+                    "string": "Impossibile aggiornare l'attività. Riprova."
+                }
+            }
+        },
+        "task_delete": {
+            "success": {
+                "title": {
+                    "string": "Attività eliminata"
+                },
+                "message": {
+                    "string": "L'attività è stata eliminata."
+                }
+            },
+            "error": {
+                "title": {
+                    "string": "Eliminazione fallita"
+                },
+                "message": {
+                    "string": "Impossibile eliminare l'attività. Riprova."
+                }
+            }
+        },
+        "address_book_entry_create": {
+            "success": {
+                "title": {
+                    "string": "Contatto creato"
+                },
+                "message": {
+                    "string": "Il contatto è stato aggiunto alla tua rubrica."
+                }
+            },
+            "error": {
+                "title": {
+                    "string": "Creazione fallita"
+                },
+                "message": {
+                    "string": "Impossibile creare il contatto. Riprova."
+                }
+            }
+        },
+        "address_book_entry_update": {
+            "success": {
+                "title": {
+                    "string": "Contatto aggiornato"
+                },
+                "message": {
+                    "string": "Il contatto è stato aggiornato."
+                }
+            },
+            "error": {
+                "title": {
+                    "string": "Aggiornamento fallito"
+                },
+                "message": {
+                    "string": "Impossibile aggiornare il contatto. Riprova."
+                }
+            }
+        },
+        "address_book_entry_delete": {
+            "success": {
+                "title": {
+                    "string": "Contatto eliminato"
+                },
+                "message": {
+                    "string": "Il contatto è stato rimosso."
+                }
+            },
+            "error": {
+                "title": {
+                    "string": "Eliminazione fallita"
+                },
+                "message": {
+                    "string": "Impossibile eliminare il contatto. Riprova."
+                }
+            }
+        },
+        "address_book_entry_move": {
+            "success": {
+                "title": {
+                    "string": "Contatto spostato"
+                },
+                "message": {
+                    "string": "Il contatto è stato spostato in un'altra rubrica."
+                }
+            },
+            "error": {
+                "title": {
+                    "string": "Spostamento fallito"
+                },
+                "message": {
+                    "string": "Impossibile spostare il contatto. Riprova."
+                }
+            }
+        },
+        "address_book_create": {
+            "success": {
+                "title": {
+                    "string": "Rubrica creata"
+                },
+                "message": {
+                    "string": "La rubrica è stata creata."
+                }
+            },
+            "error": {
+                "title": {
+                    "string": "Creazione fallita"
+                },
+                "message": {
+                    "string": "Impossibile creare la rubrica. Riprova."
+                }
+            }
+        },
+        "address_book_update": {
+            "success": {
+                "title": {
+                    "string": "Rubrica aggiornata"
+                },
+                "message": {
+                    "string": "La rubrica è stata aggiornata."
+                }
+            },
+            "error": {
+                "title": {
+                    "string": "Aggiornamento fallito"
+                },
+                "message": {
+                    "string": "Impossibile aggiornare la rubrica. Riprova."
+                }
+            }
+        },
+        "address_book_delete": {
+            "success": {
+                "title": {
+                    "string": "Rubrica eliminata"
+                },
+                "message": {
+                    "string": "La rubrica è stata rimossa."
+                }
+            },
+            "error": {
+                "title": {
+                    "string": "Eliminazione fallita"
+                },
+                "message": {
+                    "string": "Impossibile eliminare la rubrica. Riprova."
+                }
+            }
+        },
+        "contact_api_errors": {
+            "addressbook_not_found": {
+                "string": "La rubrica non è stata trovata."
+            },
+            "addressbook_duplicate": {
+                "string": "Esiste già una rubrica con questo nome."
+            },
+            "contact_not_found": {
+                "string": "Il contatto non è stato trovato."
+            },
+            "contact_duplicate": {
+                "string": "Esiste già un contatto con questo identificativo."
+            },
+            "contact_persist_failed": {
+                "string": "Il contatto non può essere salvato."
+            },
+            "contact_update_failed": {
+                "string": "Il contatto non può essere aggiornato."
+            },
+            "operation_not_supported": {
+                "string": "Questa operazione non è supportata per questa rubrica."
+            },
+            "list_not_found": {
+                "string": "La lista di distribuzione non è stata trovata."
+            },
+            "list_duplicate": {
+                "string": "Esiste già una lista di distribuzione con questo nome."
+            },
+            "list_persist_failed": {
+                "string": "La lista di distribuzione non può essere salvata."
+            },
+            "list_update_failed": {
+                "string": "La lista di distribuzione non può essere aggiornata."
+            },
+            "list_member_invalid": {
+                "string": "Uno o più membri selezionati non sono contatti in questa rubrica."
+            },
+            "access_denied": {
+                "string": "Non hai il permesso di modificare questa rubrica."
+            },
+            "read_only": {
+                "string": "Questa rubrica è in sola lettura."
+            },
+            "export_format_unsupported": {
+                "string": "Il formato di esportazione selezionato non è supportato."
+            },
+            "import_no_file": {
+                "string": "Nessun file è stato fornito per l'importazione."
+            },
+            "import_too_large": {
+                "string": "Il file di importazione supera la dimensione massima consentita (10 MB)."
+            },
+            "import_parse_failed": {
+                "string": "Il file di importazione non può essere analizzato."
+            },
+            "job_not_found": {
+                "string": "Il job in background non è stato trovato."
+            },
+            "job_forbidden": {
+                "string": "Non hai accesso a questo job in background."
+            },
+            "job_not_ready": {
+                "string": "L'esportazione non è ancora pronta. Attendere e riprovare."
+            },
+            "job_no_result": {
+                "string": "Questo job non ha risultati scaricabili."
+            },
+            "job_concurrent_limit": {
+                "string": "Troppi job in background sono in esecuzione. Riprova più tardi."
+            },
+            "file_too_large": {
+                "string": "La foto supera la dimensione massima consentita (2 MB)."
+            },
+            "file_type_not_allowed": {
+                "string": "Questo tipo di file non è consentito per le foto dei contatti."
+            },
+            "generic": {
+                "string": "L'operazione non può essere completata. Riprova."
+            }
+        },
+        "calendar_event_attendance": {
+            "success": {
+                "accepted": {
+                    "title": {
+                        "string": "Invito accettato"
+                    },
+                    "message": {
+                        "string": "Hai accettato questo evento."
+                    }
+                },
+                "declined": {
+                    "title": {
+                        "string": "Invito rifiutato"
+                    },
+                    "message": {
+                        "string": "Hai rifiutato questo evento."
+                    }
+                },
+                "tentative": {
+                    "title": {
+                        "string": "Segnato come forse"
+                    },
+                    "message": {
+                        "string": "Hai segnato questo evento come forse."
+                    }
+                },
+                "delegated": {
+                    "title": {
+                        "string": "Partecipazione aggiornata"
+                    },
+                    "message": {
+                        "string": "La tua partecipazione è stata aggiornata."
+                    }
+                }
+            },
+            "error": {
+                "title": {
+                    "string": "Aggiornamento partecipazione fallito"
+                },
+                "message": {
+                    "string": "Aggiornamento della partecipazione fallito. Riprova."
+                }
+            }
+        },
+        "message": {
+            "success": {
+                "string": "Operazione completata con successo.",
+                "developer_comment": "Advise the user that an operation completed successfully."
+            },
+            "error": {
+                "string": "Si è verificato un errore durante l'operazione.",
+                "developer_comment": "Advise the user that there was an error while processing their request."
+            },
+            "warning": {
+                "string": "Controlla i dettagli e procedi con cautela.",
+                "developer_comment": "This is a warning message to alert the user."
+            },
+            "info": {
+                "string": "Questo è un messaggio informativo.",
+                "developer_comment": "This message provides information to the user."
+            }
+        },
+        "mail_send": {
+            "success": {
+                "title": {
+                    "string": "Posta inviata"
+                },
+                "message": {
+                    "string": "La tua email è stata inviata con successo."
+                }
+            },
+            "error": {
+                "title": {
+                    "string": "Invio posta fallito"
+                },
+                "message": {
+                    "string": "Si è verificato un errore durante l'invio dell'email. Riprova."
+                }
+            }
+        },
+        "save_draft": {
+            "success": {
+                "title": {
+                    "string": "Bozza salvata"
+                },
+                "message": {
+                    "string": "La tua email è stata salvata come bozza."
+                }
+            },
+            "error": {
+                "title": {
+                    "string": "Salvataggio bozza fallito"
+                },
+                "message": {
+                    "string": "Si è verificato un errore durante il salvataggio della bozza. Riprova."
+                }
+            }
+        },
+        "discard_draft": {
+            "success": {
+                "title": {
+                    "string": "Bozza scartata"
+                },
+                "message": {
+                    "string": "La tua email è stata scartata."
+                }
+            },
+            "error": {
+                "title": {
+                    "string": "Scarto bozza fallito"
+                },
+                "message": {
+                    "string": "Si è verificato un errore durante lo scarto della bozza. Riprova."
+                }
+            }
+        },
+        "attachment_upload": {
+            "success": {
+                "title": {
+                    "string": "Allegato caricato"
+                },
+                "message": {
+                    "string": "Il tuo allegato è stato caricato con successo."
+                }
+            },
+            "error": {
+                "title": {
+                    "string": "Caricamento allegato fallito"
+                },
+                "message": {
+                    "string": "Si è verificato un errore durante il caricamento dell'allegato. Riprova."
+                }
+            }
+        },
+        "mail_filters": {
+            "save": {
+                "success": {
+                    "title": {
+                        "string": "Filtri salvati"
+                    },
+                    "message": {
+                        "string": "I tuoi filtri posta sono stati aggiornati."
+                    }
+                },
+                "error": {
+                    "title": {
+                        "string": "Impossibile salvare i filtri"
+                    },
+                    "message": {
+                        "string": "Si è verificato un errore durante il salvataggio dei filtri posta."
+                    }
+                }
+            }
+        },
+        "mail_vacation": {
+            "save": {
+                "success": {
+                    "title": {
+                        "string": "Impostazioni vacanza salvate"
+                    },
+                    "message": {
+                        "string": "La tua risposta automatica di vacanza è stata aggiornata."
+                    }
+                },
+                "error": {
+                    "title": {
+                        "string": "Impossibile salvare le impostazioni vacanza"
+                    },
+                    "message": {
+                        "string": "Si è verificato un errore durante il salvataggio delle impostazioni vacanza."
+                    }
+                }
+            }
+        },
+        "mail_forward": {
+            "save": {
+                "success": {
+                    "title": {
+                        "string": "Impostazioni inoltro salvate"
+                    },
+                    "message": {
+                        "string": "Le tue impostazioni di inoltro posta sono state aggiornate."
+                    }
+                },
+                "error": {
+                    "title": {
+                        "string": "Impossibile salvare le impostazioni inoltro"
+                    },
+                    "message": {
+                        "string": "Si è verificato un errore durante il salvataggio delle impostazioni di inoltro posta."
+                    }
+                }
+            }
+        },
+        "mail_notify": {
+            "save": {
+                "success": {
+                    "title": {
+                        "string": "Impostazioni notifica salvate"
+                    },
+                    "message": {
+                        "string": "Le tue impostazioni di notifica posta sono state aggiornate."
+                    }
+                },
+                "error": {
+                    "title": {
+                        "string": "Impossibile salvare le impostazioni notifica"
+                    },
+                    "message": {
+                        "string": "Si è verificato un errore durante il salvataggio delle impostazioni di notifica posta."
+                    }
+                },
+                "warning": {
+                    "title": {
+                        "string": "Impostazioni notifica non applicate"
+                    },
+                    "message": {
+                        "string": "Il tuo server non supporta le notifiche posta (estensione enotify). Le impostazioni non sono state salvate."
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,40 @@
+{
+  "AI_ATTACH": {
+    "title": {
+      "string": "Acciones inteligentes de adjuntos"
+    },
+    "description": {
+      "string": "Detección automática de tipo de archivo y sugerencias de acciones"
+    },
+    "input": {
+      "title": {
+        "string": "Entrada"
+      },
+      "filename": {
+        "string": "Nombre de archivo"
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Resultado"
+      },
+      "empty": {
+        "string": "El resultado aparecerá aquí"
+      },
+      "preview": {
+        "string": "Vista previa posible"
+      }
+    },
+    "classify": {
+      "string": "Clasificar"
+    },
+    "errors": {
+      "empty": {
+        "string": "Nombre de archivo requerido"
+      },
+      "fail": {
+        "string": "Clasificación fallida"
+      }
+    }
+  }
+}

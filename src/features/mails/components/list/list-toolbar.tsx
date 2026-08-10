@@ -22,6 +22,7 @@ import {
 import { useIsMobile } from '@/hooks/use-mobile'
 import { useAppDispatch, useAppSelector } from '@/lib/redux/hooks'
 import type { RootState } from '@/lib/redux/store'
+import { useBatchMailActionMutation } from '@/features/mails/store/mails-api'
 import { Archive, Flame, Inbox, Mail, Tag, Trash2 } from 'lucide-react'
 import { useTranslations } from 'next-intl'
 import { useParams, useSearchParams } from 'next/navigation'
@@ -83,55 +84,98 @@ const ListToolbar: React.FC = () => {
 
   const tActions = useTranslations('MAILS_LIST.actions')
   const tBar = useTranslations('MAILS_COMMONS.mail_display.action-bar')
-  const { deleteMail, archiveMail, toggleRead, markSpam, markHam, isJunk } =
+  const { isJunk } =
     useMailItemActions({
       accountId: accountString,
       folder: folderPath,
     })
 
+  const [batchAction] = useBatchMailActionMutation()
+
   const handleBulkAction = useCallback(
     async (idx: number) => {
+      const mailUids = selectedIds.map(Number).filter((n) => !isNaN(n))
+      if (mailUids.length === 0) return
+
       const mailsById = new Map(filteredMails.map((m) => [String(m.id), m]))
-      for (const id of selectedIds) {
-        const item = mailsById.get(id)
-        switch (idx) {
-          case 0:
-            await deleteMail(id)
-            break
-          case 1:
-            await archiveMail(id)
-            break
-          case 2:
-            if (item && !item.seen) {
-              await toggleRead(id, false)
+
+      switch (idx) {
+        case 0:
+          // Bulk delete
+          await batchAction({
+            accountId: accountString,
+            folder: folderPath,
+            action: 'delete',
+            mailUids,
+          }).unwrap()
+          break
+        case 1:
+          // Bulk archive (move to Archive)
+          try {
+            const archiveDest = 'Archive'
+            await batchAction({
+              accountId: accountString,
+              folder: folderPath,
+              action: 'move',
+              mailUids,
+              data: archiveDest,
+            }).unwrap()
+          } catch {
+            // If folder doesn't exist, try with fallback
+            await batchAction({
+              accountId: accountString,
+              folder: folderPath,
+              action: 'move',
+              mailUids,
+              data: 'Archives',
+            }).unwrap()
+          }
+          break
+        case 2:
+          // Bulk mark as read (tag with \Seen)
+          {
+            const unreadIds = mailUids.filter((id) => {
+              const item = mailsById.get(String(id))
+              return item && !item.seen
+            })
+            if (unreadIds.length > 0) {
+              await batchAction({
+                accountId: accountString,
+                folder: folderPath,
+                action: 'tag',
+                mailUids: unreadIds,
+                data: ['\\Seen'],
+              }).unwrap()
             }
-            break
-          case 3:
-            if (isJunk) {
-              await markHam(id)
-            } else {
-              await markSpam(id)
-            }
-            break
-          case 4:
-            break
-          default:
-            break
-        }
+          }
+          break
+        case 3:
+          // Bulk mark spam/ham
+          if (isJunk) {
+            await batchAction({
+              accountId: accountString,
+              folder: folderPath,
+              action: 'ham',
+              mailUids,
+            }).unwrap()
+          } else {
+            await batchAction({
+              accountId: accountString,
+              folder: folderPath,
+              action: 'spam',
+              mailUids,
+            }).unwrap()
+          }
+          break
+        case 4:
+          // Label (future feature)
+          break
+        default:
+          break
       }
       dispatch(clearSelectedMails())
     },
-    [
-      filteredMails,
-      selectedIds,
-      deleteMail,
-      archiveMail,
-      toggleRead,
-      markSpam,
-      markHam,
-      isJunk,
-      dispatch,
-    ]
+    [filteredMails, selectedIds, accountString, folderPath, batchAction, isJunk, dispatch]
   )
 
   if (toolbarMode === 'hidden') {

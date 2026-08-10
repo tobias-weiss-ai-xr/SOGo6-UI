@@ -2,6 +2,8 @@
 
 import { useTranslations } from 'next-intl'
 import React from 'react'
+
+import { ErrorAlertWithRetry } from '@/components/ui/error-alert'
 import LabelsFormSkeleton from './components/skeleton'
 
 import {
@@ -13,10 +15,10 @@ import { CalendarsCategoriesSettingsForm } from './components/calendar-categorie
 
 const CalendarsCategoriesSettings: React.FC = () => {
   const t = useTranslations('US_CALENDARS')
-  const { data, error, isFetching } = useGetUserPreferencesQuery()
+  const { data, error, isFetching, refetch } = useGetUserPreferencesQuery()
   const [updateCalendars] = useUpdateUserPreferencesCalendarCategoryMutation()
   if (error) {
-    return 'ERROR' //TODO
+    return <ErrorAlertWithRetry onRetry={() => refetch()} />
   }
   return (
     <div className="grid grid-cols-1 gap-4">

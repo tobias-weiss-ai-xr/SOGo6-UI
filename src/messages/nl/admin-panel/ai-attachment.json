@@ -1,0 +1,40 @@
+{
+  "AI_ATTACH": {
+    "title": {
+      "string": "Slimme bijlageacties"
+    },
+    "description": {
+      "string": "Detecteert automatisch het type document en stelt opslaan, doorsturen of archiveren voor."
+    },
+    "input": {
+      "title": {
+        "string": "Bijlage"
+      },
+      "filename": {
+        "string": "Bestandsnaam"
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Analyse"
+      },
+      "empty": {
+        "string": "Voer een bestandsnaam in"
+      },
+      "preview": {
+        "string": "Kan voorvertonen"
+      }
+    },
+    "classify": {
+      "string": "Classificeren"
+    },
+    "errors": {
+      "empty": {
+        "string": "Voer een bestandsnaam in"
+      },
+      "fail": {
+        "string": "Classificatie mislukt"
+      }
+    }
+  }
+}

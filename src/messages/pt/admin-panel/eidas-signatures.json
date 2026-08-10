@@ -1,0 +1,29 @@
+{
+  "EIDAS": {
+    "title": { "string": "Assinaturas Eletrônicas eIDAS" },
+    "description": { "string": "Regulamento UE 910/2014 — assinaturas eletrônicas qualificadas e carimbos de data/hora" },
+    "errors": { "fields": { "string": "Todos os campos obrigatórios" }, "fail": { "string": "Operação falhou" } },
+    "success": { "sign": { "string": "Documento assinado com QES" } },
+    "sign": {
+      "title": { "string": "Assinar Documento" },
+      "placeholder": { "string": "Insira o conteúdo do documento para assinar..." },
+      "signer": { "string": "E-mail do signatário" },
+      "algorithm": { "string": "Algoritmo de Hash" },
+      "button": { "string": "Assinar com QES" }
+    },
+    "verify": {
+      "title": { "string": "Verificar Assinatura" },
+      "doc_hash": { "string": "Hash do Documento" },
+      "signature": { "string": "Assinatura" },
+      "button": { "string": "Verificar" },
+      "valid": { "string": "Válida" },
+      "invalid": { "string": "Inválida" }
+    },
+    "certs": {
+      "title": { "string": "Certificados de Serviço de Confiança" },
+      "type": { "string": "Tipo" },
+      "name": { "string": "Nome" },
+      "hash": { "string": "Hash" }
+    }
+  }
+}

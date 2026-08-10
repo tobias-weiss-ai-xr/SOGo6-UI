@@ -1,0 +1,65 @@
+{
+  "MOBILE": {
+    "title": {
+      "string": "Zarządzanie aplikacją mobilną"
+    },
+    "description": {
+      "string": "Zarządzaj zarejestrowanymi urządzeniami, powiadomieniami push i konfiguracją aplikacji"
+    },
+    "errors": {
+      "fail": {
+        "string": "Operacja nie powiodła się"
+      }
+    },
+    "success": {
+      "unregister": {
+        "string": "Urządzenie zarejestrowane"
+      },
+      "broadcast": {
+        "string": "Powiadomienie push zostało wysłane"
+      }
+    },
+    "config": {
+      "title": {
+        "string": "Ustawienia aplikacji"
+      },
+      "push": {
+        "string": "Powiadomienia push"
+      },
+      "biometric": {
+        "string": "Uwierzytelnianie biometryczne"
+      }
+    },
+    "push": {
+      "title": {
+        "placeholder": {
+          "string": "Tytuł powiadomienia"
+        }
+      },
+      "message": {
+        "placeholder": {
+          "string": "Wiadomość..."
+        }
+      },
+      "broadcast": {
+        "string": "Wyślij"
+      }
+    },
+    "stats": {
+      "title": {
+        "string": "Statystyki"
+      },
+      "devices": {
+        "string": "Zarejestrowane urządzenia"
+      }
+    },
+    "devices": {
+      "title": {
+        "string": "Wszystkie urządzenia"
+      },
+      "empty": {
+        "string": "Brak zarejestrowanych urządzeń"
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "MAIL_SNOOZE": {
+    "title": {
+      "string": "Amânare"
+    },
+    "description": {
+      "string": "Alege când să reapară acest e-mail în inbox."
+    },
+    "presets": {
+      "later_today": {
+        "string": "Mai târziu astăzi"
+      },
+      "tomorrow": {
+        "string": "Mâine"
+      },
+      "this_weekend": {
+        "string": "Sâmbătă/duminică"
+      },
+      "next_week": {
+        "string": "Săptămâna viitoare"
+      }
+    },
+    "pick_date": {
+      "string": "Alege dată și oră"
+    },
+    "pick_date_placeholder": {
+      "string": "Selectează data..."
+    },
+    "snooze_button": {
+      "string": "Amână"
+    },
+    "success": {
+      "string": "E-mail amânat"
+    },
+    "error": {
+      "string": "Nu s-a putut amâna e-mailul"
+    }
+  }
+}

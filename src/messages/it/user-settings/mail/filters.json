@@ -1,0 +1,306 @@
+{
+    "US_MAIL_FILTERS": {
+        "title": {
+            "string": "Filtri Posta",
+            "context": "Title for the mail filters settings page"
+        },
+        "page": {
+            "description": {
+                "string": "Organizza automaticamente i messaggi in arrivo con regole personalizzate. I filtri vengono eseguiti in ordine dall'alto verso il basso."
+            }
+        },
+        "form": {
+            "edit": {
+                "string": "Modifica filtro: {name}"
+            },
+            "create": {
+                "string": "Crea filtro",
+                "description": "Create a new filter for incoming messages."
+            }
+        },
+        "operators": {
+            "title": {
+                "string": "Per i messaggi in arrivo che"
+            },
+            "all": {
+                "string": "Corrispondono a tutti i messaggi"
+            },
+            "or": {
+                "string": "Corrispondono a una qualsiasi delle seguenti regole",
+                "context": "test context",
+                "developer_comment": "This is the string that will be used in the UI to indicate that any of the rules should match."
+            },
+            "and": {
+                "string": "Corrispondono a tutte le seguenti regole"
+            }
+        },
+        "conditions": {
+            "title": {
+                "string": "Corrispondono alle seguenti condizioni"
+            },
+            "is": {
+                "string": "È"
+            },
+            "is_not": {
+                "string": "Non è"
+            },
+            "contains": {
+                "string": "Contiene"
+            },
+            "not_contain": {
+                "string": "Non contiene"
+            },
+            "match": {
+                "string": "Corrisponde"
+            },
+            "not_match": {
+                "string": "Non corrisponde"
+            },
+            "match_regex": {
+                "string": "Corrisponde regex"
+            },
+            "starts_with": {
+                "string": "Inizia con"
+            },
+            "ends_with": {
+                "string": "Finisce con"
+            },
+            "exists": {
+                "string": "Esiste"
+            },
+            "size_over": {
+                "string": "È maggiore di (KB)"
+            },
+            "not_match_regex": {
+                "string": "Non corrisponde regex"
+            },
+            "not_exists": {
+                "string": "Non esiste"
+            },
+            "size_under": {
+                "string": "È minore di (KB)"
+            },
+            "is_over": {
+                "string": "È maggiore di"
+            }
+        },
+        "rules": {
+            "body": {
+                "string": "Corpo"
+            },
+            "from": {
+                "string": "Da"
+            },
+            "subject": {
+                "string": "Oggetto"
+            },
+            "to": {
+                "string": "A"
+            },
+            "cc": {
+                "string": "CC"
+            },
+            "to_or_cc": {
+                "string": "A o CC"
+            },
+            "header": {
+                "string": "Intestazione"
+            },
+            "size": {
+                "string": "Dimensione (Kb)"
+            }
+        },
+        "actions": {
+            "title": {
+                "string": "Esegui le seguenti azioni"
+            },
+            "move": {
+                "string": "Archivia il messaggio in"
+            },
+            "copy": {
+                "string": "Copia il messaggio in"
+            },
+            "stop": {
+                "string": "Interrompi elaborazione regole di filtro"
+            },
+            "reject": {
+                "string": "Invia un messaggio di rifiuto",
+                "disabled_tooltip": {
+                    "string": "Le azioni di rifiuto non sono ancora disponibili su questo server"
+                }
+            },
+            "discard": {
+                "string": "Scarta il messaggio"
+            },
+            "forward": {
+                "string": "Inoltra il messaggio a"
+            },
+            "removeheader": {
+                "string": "Rimuovi intestazione"
+            },
+            "flag": {
+                "string": "Contrassegna il messaggio con",
+                "disabled_tooltip": {
+                    "string": "Le azioni di contrassegno non sono ancora disponibili su questo server"
+                }
+            },
+            "keep": {
+                "string": "Mantieni il messaggio"
+            }
+        },
+        "empty_state": {
+            "title": {
+                "string": "Nessun filtro posta ancora"
+            },
+            "description": {
+                "string": "Crea regole per organizzare automaticamente i messaggi in arrivo."
+            },
+            "add_button": {
+                "string": "Aggiungi il tuo primo filtro"
+            }
+        },
+        "list": {
+            "section_title": {
+                "string": "I tuoi filtri"
+            },
+            "section_description": {
+                "string": "Trascina per riordinare. I filtri disabilitati vengono saltati."
+            },
+            "add_filter": {
+                "string": "Aggiungi filtro"
+            },
+            "advanced_structure": {
+                "string": "Struttura avanzata"
+            },
+            "read_only": {
+                "string": "Sola lettura"
+            },
+            "drag_handle": {
+                "string": "Riordina filtro"
+            },
+            "delete_confirm": {
+                "title": {
+                    "string": "Eliminare il filtro?"
+                },
+                "description": {
+                    "string": "Questo filtro verrà rimosso quando salvi le modifiche."
+                },
+                "confirm": {
+                    "string": "Elimina"
+                },
+                "cancel": {
+                    "string": "Annulla"
+                }
+            }
+        },
+        "folder_select": {
+            "placeholder": {
+                "string": "Seleziona una cartella"
+            },
+            "search": {
+                "string": "Cerca cartelle..."
+            },
+            "empty": {
+                "string": "Nessuna cartella trovata"
+            },
+            "aria_label": {
+                "string": "Seleziona cartella di destinazione"
+            },
+            "create_if_missing": {
+                "string": "Crea la cartella se non esiste"
+            }
+        },
+        "advanced_structure_readonly": {
+            "string": "Questo filtro utilizza una struttura di regole avanzata che non può essere modificata nell'editor semplificato. Puoi comunque abilitarlo, disabilitarlo o eliminarlo."
+        },
+        "aria": {
+            "toggle_filter": {
+                "string": "Attiva/disattiva filtro"
+            }
+        },
+        "labels": {
+            "filter_name": {
+                "string": "Nome filtro"
+            },
+            "custom_header": {
+                "string": "Nome intestazione"
+            }
+        },
+        "placeholders": {
+            "forward_email": {
+                "string": "nome@example.com"
+            },
+            "header_name": {
+                "string": "Nome intestazione (es. X-Spam-Flag)"
+            },
+            "size_value": {
+                "string": "Dimensione (es. 1024, 5M, 10K)"
+            },
+            "imap_flag": {
+                "string": "Flag IMAP (es. \\Flagged)"
+            },
+            "reject_message": {
+                "string": "Messaggio di rifiuto opzionale"
+            }
+        },
+        "success": {
+            "title": {
+                "string": "Filtri salvati"
+            },
+            "saved": {
+                "string": "I tuoi filtri posta sono stati aggiornati."
+            }
+        },
+        "errors_api": {
+            "title": {
+                "string": "Impossibile salvare i filtri"
+            },
+            "save_failed": {
+                "string": "Si è verificato un errore durante il salvataggio dei filtri posta."
+            },
+            "load_failed": {
+                "string": "Impossibile caricare i filtri posta. Riprova più tardi."
+            },
+            "feature_disabled": {
+                "string": "Il filtraggio della posta è stato disabilitato dall'amministratore."
+            }
+        },
+        "errors": {
+            "validation": {
+                "name_required": {
+                    "string": "Il nome del filtro è obbligatorio"
+                },
+                "rules_required": {
+                    "string": "È richiesta almeno una condizione"
+                },
+                "actions_required": {
+                    "string": "È richiesta almeno un'azione"
+                },
+                "folder_required": {
+                    "string": "È richiesta una cartella di destinazione"
+                },
+                "email_invalid": {
+                    "string": "Inserisci un indirizzo email valido"
+                },
+                "header_name_required": {
+                    "string": "Il nome dell'intestazione è obbligatorio"
+                },
+                "rule_value_required": {
+                    "string": "Il valore della condizione è obbligatorio"
+                },
+                "size_value_required": {
+                    "string": "Inserisci una dimensione valida in KB"
+                },
+                "size_condition_required": {
+                    "string": "Le regole di dimensione devono usare maggiore o minore"
+                },
+                "flag_required": {
+                    "string": "È richiesto un flag IMAP"
+                },
+                "action_unavailable": {
+                    "string": "Questa azione non è ancora disponibile"
+                }
+            }
+        }
+    }
+}

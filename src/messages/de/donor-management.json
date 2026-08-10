@@ -1,0 +1,100 @@
+{
+  "DONOR": {
+    "title": {
+      "string": "Spenderverwaltung"
+    },
+    "description": {
+      "string": "Spender verfolgen, DSGVO-Einwilligung und Quittungen"
+    },
+    "errors": {
+      "fields": {
+        "string": "Pflichtfelder fehlen"
+      },
+      "fail": {
+        "string": "Vorgang fehlgeschlagen"
+      }
+    },
+    "success": {
+      "create": {
+        "string": "Spender registriert"
+      },
+      "donate": {
+        "string": "Spende erfasst"
+      }
+    },
+    "register": {
+      "title": {
+        "string": "Spender registrieren"
+      }
+    },
+    "donate": {
+      "title": {
+        "string": "Spende erfassen"
+      },
+      "select": {
+        "string": "Spender auswählen..."
+      },
+      "campaign": {
+        "string": "Kampagne"
+      }
+    },
+    "field": {
+      "name": {
+        "string": "Name"
+      },
+      "email": {
+        "string": "E-Mail"
+      },
+      "type": {
+        "string": "Typ"
+      },
+      "total": {
+        "string": "Gesamt"
+      },
+      "donations": {
+        "string": "Spenden"
+      },
+      "consent": {
+        "string": "DSGVO"
+      }
+    },
+    "type": {
+      "individual": {
+        "string": "Einzelperson"
+      },
+      "corporate": {
+        "string": "Unternehmen"
+      },
+      "foundation": {
+        "string": "Stiftung"
+      }
+    },
+    "button": {
+      "register": {
+        "string": "Registrieren"
+      },
+      "donate": {
+        "string": "Spende erfassen"
+      }
+    },
+    "stats": {
+      "title": {
+        "string": "Statistiken"
+      },
+      "total_donors": {
+        "string": "Spender gesamt"
+      },
+      "total_raised": {
+        "string": "Gesamt gespendet"
+      }
+    },
+    "list": {
+      "title": {
+        "string": "Alle Spender"
+      },
+      "empty": {
+        "string": "Keine Spender registriert"
+      }
+    }
+  }
+}

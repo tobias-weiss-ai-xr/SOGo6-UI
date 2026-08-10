@@ -1,0 +1,34 @@
+{
+  "AP_HEALTH": {
+    "title": {
+      "string": "Rendszerállapot"
+    },
+    "description": {
+      "string": "Valós idejű állapotjelzés a SOGo verem összes szolgáltatásához."
+    },
+    "status": {
+      "all_ok": {
+        "string": "Minden rendszer működik"
+      },
+      "degraded": {
+        "string": "Korlátozott működés"
+      }
+    },
+    "overview": {
+      "uptime": {
+        "string": "Futási idő"
+      },
+      "version": {
+        "string": "Verzió"
+      },
+      "services": {
+        "string": "Egészséges szolgáltatások"
+      }
+    },
+    "errors": {
+      "load_failed": {
+        "string": "Az állapotadatok betöltése sikertelen"
+      }
+    }
+  }
+}

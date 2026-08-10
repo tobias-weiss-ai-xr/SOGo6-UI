@@ -1,0 +1,39 @@
+{
+  "MAIL_SNOOZE": {
+    "title": {
+      "string": "Utsett"
+    },
+    "description": {
+      "string": "Velg når denne e-posten skal dukke opp igjen i innboksen."
+    },
+    "presets": {
+      "later_today": {
+        "string": "Senere i dag"
+      },
+      "tomorrow": {
+        "string": "I morgen"
+      },
+      "this_weekend": {
+        "string": "I helgen"
+      },
+      "next_week": {
+        "string": "Neste uke"
+      }
+    },
+    "pick_date": {
+      "string": "Velg dato og tid"
+    },
+    "pick_date_placeholder": {
+      "string": "Velg dato..."
+    },
+    "snooze_button": {
+      "string": "Utsett"
+    },
+    "success": {
+      "string": "E-post utsatt"
+    },
+    "error": {
+      "string": "Kunne ikke utsette e-post"
+    }
+  }
+}

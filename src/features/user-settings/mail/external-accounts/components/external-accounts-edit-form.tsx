@@ -33,6 +33,7 @@ import {
   mapMailboxSettingsToApi,
   mapMailboxSettingsToApiCreate,
 } from '@/features/user-settings/mail/external-accounts/store/mailboxes-utils'
+import { logger } from '@/lib/logger'
 
 interface ExternalAccountFormProps {
   data?: MailboxSettings
@@ -108,12 +109,14 @@ function ExternalAccountForm({
         onSuccess()
       }
     } catch (error) {
-      console.error('Failed to manageData:', error)
+      logger.error('Failed to manageData:', { error: error })
     }
   }
 
   if (error) {
-    console.log('Error in ExternalAccountForm:', error)
+    if (process.env.NODE_ENV === 'development') {
+      logger.warn('ExternalAccountForm error:', { detail: error })
+    }
     return (
       <Card>
         <CardContent className="pt-6">

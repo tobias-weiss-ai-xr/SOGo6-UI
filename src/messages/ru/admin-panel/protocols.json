@@ -1,0 +1,10 @@
+{
+  "PROTOCOLS": {
+    "title": {
+      "string": "Статус почтового протокола"
+    },
+    "description": {
+      "string": "Статус и возможности сервера протоколов JMAP и ActiveSync"
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "ADDRESS_BOOKS_ERRORS": {
+    "list_member_invalid": {
+      "string": "選択されたメンバーのいずれかがこのアドレス帳の連絡先ではありません。",
+      "context": "Inline error when a distribution list member is invalid."
+    },
+    "addressbook_not_found": {
+      "string": "アドレス帳が見つかりません。",
+      "context": "Error when an address book is missing."
+    },
+    "addressbook_duplicate": {
+      "string": "この名前のアドレス帳はすでに存在します。",
+      "context": "Toast when address book creation conflicts."
+    },
+    "contact_not_found": {
+      "string": "連絡先が見つかりません。",
+      "context": "Error when a contact is missing."
+    },
+    "contact_duplicate": {
+      "string": "この識別子の連絡先はすでに存在します。",
+      "context": "Toast when contact creation conflicts."
+    },
+    "contact_persist_failed": {
+      "string": "連絡先を保存できませんでした。",
+      "context": "Error when contact creation fails on the server."
+    },
+    "contact_update_failed": {
+      "string": "連絡先を更新できませんでした。",
+      "context": "Error when contact update fails on the server."
+    },
+    "operation_not_supported": {
+      "string": "このアドレス帳ではこの操作はサポートされていません。",
+      "context": "Error when mutating a non-local address book source."
+    },
+    "list_not_found": {
+      "string": "配布リストが見つかりません。",
+      "context": "Error when a distribution list is missing."
+    },
+    "list_duplicate": {
+      "string": "この名前の配布リストはすでに存在します。",
+      "context": "Toast when list creation conflicts."
+    },
+    "list_persist_failed": {
+      "string": "配布リストを保存できませんでした。",
+      "context": "Error when list creation fails on the server."
+    },
+    "list_update_failed": {
+      "string": "配布リストを更新できませんでした。",
+      "context": "Error when list update fails on the server."
+    },
+    "access_denied": {
+      "string": "このアドレス帳を修正する権限がありません。",
+      "context": "Toast when write access is denied."
+    },
+    "read_only": {
+      "string": "このアドレス帳は読み取り専用です。",
+      "context": "Toast when mutating a read-only address book."
+    },
+    "export_format_unsupported": {
+      "string": "選択されたエクスポート形式はサポートされていません。",
+      "context": "Error when export format negotiation fails."
+    },
+    "import_no_file": {
+      "string": "インポート用のファイルが提供されていません。",
+      "context": "Error when import request has no file."
+    },
+    "import_too_large": {
+      "string": "インポートファイルが最大許容サイズ（10 MB）を超えています。",
+      "context": "Error when import payload is too large."
+    },
+    "import_parse_failed": {
+      "string": "インポートファイルを解析できませんでした。",
+      "context": "Error when import document parsing fails."
+    },
+    "job_not_found": {
+      "string": "バックグラウンドジョブが見つかりません。",
+      "context": "Error when polling an unknown job."
+    },
+    "job_forbidden": {
+      "string": "このバックグラウンドジョブにアクセスする権限がありません。",
+      "context": "Error when job belongs to another user."
+    },
+    "job_not_ready": {
+      "string": "エクスポートはまだ準備できていません。お待ちいただき、再度お試しください。",
+      "context": "Error when downloading a job result too early."
+    },
+    "job_no_result": {
+      "string": "このジョブにはダウンロード可能な結果がありません。",
+      "context": "Error when job result is unavailable."
+    },
+    "job_concurrent_limit": {
+      "string": "バックグラウンドジョブが多すぎます。後でもう一度お試しください。",
+      "context": "Error when concurrent job limit is reached."
+    },
+    "file_too_large": {
+      "string": "写真のサイズが最大許容サイズ（2 MB）を超えています。",
+      "context": "Inline error when contact photo upload is too large."
+    },
+    "file_type_not_allowed": {
+      "string": "このファイル形式は連絡先写真に使用できません。",
+      "context": "Inline error when contact photo type is not allowed."
+    },
+    "generic": {
+      "string": "操作を完了できませんでした。再度お試しください。",
+      "context": "Fallback error message for contact API errors."
+    }
+  }
+}

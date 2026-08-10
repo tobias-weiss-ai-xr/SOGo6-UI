@@ -1,0 +1,49 @@
+{
+  "AI_ANOMALY": {
+    "title": {
+      "string": "Anomali Tespiti"
+    },
+    "description": {
+      "string": "Olağandışı gönderim kalıplarını işaretle: toplu e-posta, tuhaf saatler, yeni alıcılar."
+    },
+    "input": {
+      "title": {
+        "string": "Gönderim Kalıbı"
+      },
+      "recipients": {
+        "string": "Alıcı Sayısı"
+      },
+      "hour": {
+        "string": "Saat (0-23)"
+      },
+      "new_ratio": {
+        "string": "Yeni Alıcı Oranı"
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Analiz Sonucu"
+      },
+      "empty": {
+        "string": "Değerleri girin ve Analiz Et'e tıklayın"
+      },
+      "anomaly": {
+        "string": "Anomali Tespit Edildi!"
+      },
+      "normal": {
+        "string": "Kalıp Normal"
+      },
+      "score": {
+        "string": "Risk Puanı"
+      }
+    },
+    "analyze": {
+      "string": "Analiz Et"
+    },
+    "errors": {
+      "fail": {
+        "string": "Analiz başarısız"
+      }
+    }
+  }
+}

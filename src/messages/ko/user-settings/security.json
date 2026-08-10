@@ -1,0 +1,75 @@
+{
+  "US_SECURITY": {
+    "title": {
+      "string": "보안",
+      "context": "Title for the Security settings section in user settings"
+    },
+    "totp": {
+      "title": {
+        "string": "2단계 인증 (TOTP)",
+        "context": "Title for the Two-Factor Authentication settings"
+      },
+      "description": {
+        "string": "2단계 인증은 계정 보안에 추가적인 보호 계층을 제공합니다. 활성화하면 로그인 시마다 휴대폰의 인증 앱에서 생성된 고유 코드를 입력해야 합니다."
+      },
+      "verification_code": {
+        "title": {
+          "string": "인증 코드"
+        },
+        "description": {
+          "string": "인증 앱에서 생성된 인증 코드를 입력하세요."
+        }
+      }
+    },
+    "webauthn": {
+      "title": {
+        "string": "패스키 (WebAuthn)",
+        "context": "Title for the WebAuthn settings section"
+      },
+      "description": {
+        "string": "패스키는 생체 인식 센서(지문, Face ID) 또는 하드웨어 보안 키를 사용하여 비밀번호 없이 로그인할 수 있습니다. 패스키는 이 기기에 안전하게 저장됩니다.",
+        "context": "Description for the WebAuthn settings section"
+      },
+      "registered_credentials": {
+        "string": "등록된 패스키",
+        "context": "Label for the list of registered passkeys"
+      },
+      "registered_at": {
+        "string": "등록일",
+        "context": "Label for the registration date of a passkey"
+      },
+      "no_credentials": {
+        "string": "등록된 패스키가 없습니다.",
+        "context": "Message when no passkeys are registered"
+      },
+      "register": {
+        "string": "새 패스키 등록",
+        "context": "Button to register a new passkey",
+        "title": {
+          "string": "Register a New Passkey",
+          "context": "Title for the passkey registration dialog"
+        },
+        "description": {
+          "string": "Your browser or device will guide you through setting up a passkey using biometrics, a PIN, or an external security key.",
+          "context": "Description for the passkey registration dialog"
+        },
+        "button": {
+          "string": "Register",
+          "context": "Button to start passkey registration"
+        },
+        "waiting": {
+          "string": "Waiting for device interaction — follow the prompts on your device.",
+          "context": "Status during passkey registration"
+        },
+        "success": {
+          "string": "Passkey registered successfully!",
+          "context": "Status when passkey registration succeeds"
+        }
+      },
+      "device_name": {
+        "string": "기기 이름 (선택 사항)",
+        "context": "Label for the device name input field"
+      }
+    }
+  }
+}

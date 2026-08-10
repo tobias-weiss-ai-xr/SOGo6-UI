@@ -1,0 +1,54 @@
+{
+    "AP_MIG": {
+        "title": {
+            "string": "Herramientas de migración"
+        },
+        "description": {
+            "string": "Importar datos desde fuentes externas — G Suite, M365, Dovecot, Cyrus o cargas de archivos."
+        },
+        "wizard": {
+            "title": {
+                "string": "Start Migración"
+            },
+            "source": {
+                "string": "Source"
+            },
+            "select_source": {
+                "string": "Choose a source..."
+            },
+            "user": {
+                "string": "Target Usor"
+            },
+            "select_user": {
+                "string": "Select user..."
+            }
+        },
+        "start": {
+            "button": {
+                "string": "Start Migración"
+            },
+            "running": {
+                "string": "Starting..."
+            },
+            "success": {
+                "string": "Migration started"
+            },
+            "error": {
+                "string": "Migration failed"
+            }
+        },
+        "history": {
+            "title": {
+                "string": "Migration History"
+            },
+            "empty": {
+                "string": "No migrations yet."
+            }
+        },
+        "errors": {
+            "fields": {
+                "string": "Source and user are required"
+            }
+        }
+    }
+}

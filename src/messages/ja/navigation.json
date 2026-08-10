@@ -1,0 +1,59 @@
+{
+    "NAVIGATION": {
+        "address_book": {
+            "string": "アドレス帳"
+        },
+        "calendar": {
+            "string": "カレンダー"
+        },
+        "tasks": {
+            "string": "タスク"
+        },
+        "notes": {
+            "string": "メモ"
+        },
+        "fast_access": {
+            "calendar": {
+                "title": "カレンダー",
+                "view_all": "すべて表示",
+                "today": "今日",
+                "no_events": "本日のイベントはありません",
+                "all_day": "終日",
+                "loading": "イベントを読み込み中…",
+                "error": "カレンダー"
+            },
+            "tasks": {
+                "title": "タスク",
+                "view_all": "すべて表示",
+                "search_placeholder": "タスクを検索",
+                "overdue": "期限切れ",
+                "today": "今日",
+                "upcoming": "近日",
+                "no_due_date": "期日なし",
+                "empty": "すべて完了しています",
+                "no_results": "一致するものはありません",
+                "loading": "タスクを読み込み中…",
+                "error": "タスクを読み込めませんでした"
+            },
+            "address_book": {
+                "title": "連絡先",
+                "view_all": "すべて表示",
+                "search_placeholder": "連絡先とリストを検索",
+                "distribution_lists": "配信リスト",
+                "contacts": "連絡先",
+                "member_count": "{number} 人のメンバー",
+                "compose": "メッセージを作成",
+                "loading": "連絡先を読み込み中…",
+                "error": "連絡先を読み込めませんでした",
+                "empty": "利用可能なアドレス帳がありません",
+                "no_entries": "連絡先やリストはまだありません",
+                "no_results": "一致するものはありません",
+                "search_min_length": "検索するには少なくとも 2 文字を入力してください。"
+            },
+            "coming_soon": {
+                "title": "機能近日公開",
+                "description": "このセクションは開発中で、近日公開予定です。"
+            }
+        }
+    }
+}

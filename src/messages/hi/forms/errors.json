@@ -1,0 +1,14 @@
+{
+  "FORM_ERRORS": {
+    "required": {
+      "default": {
+        "string": "यह फ़ील्ड आवश्यक है"
+      }
+    },
+    "invalid": {
+      "email": {
+        "string": "अमान्य ईमेल पता"
+      }
+    }
+  }
+}

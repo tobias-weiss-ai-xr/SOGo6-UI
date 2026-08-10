@@ -1,0 +1,53 @@
+{
+  "AP_QUOTAS": {
+    "title": {
+      "string": "Cuotas de uso"
+    },
+    "description": {
+      "string": "Ver y establecer límites de recursos por usuario para tamaño de buzón, calendarios y contactos."
+    },
+    "select_user": {
+      "string": "Seleccionar usuario"
+    },
+    "select_placeholder": {
+      "string": "Choose a user..."
+    },
+    "current_usage": {
+      "string": "Current Usage"
+    },
+    "set_quota": {
+      "string": "Set Quota"
+    },
+    "labels": {
+      "mailbox": {
+        "string": "Mailbox"
+      },
+      "calendars": {
+        "string": "Calendars"
+      },
+      "contacts": {
+        "string": "Contacts"
+      },
+      "mailbox_limit": {
+        "string": "Mailbox Size Limit"
+      },
+      "calendar_limit": {
+        "string": "Max Calendars"
+      },
+      "contact_limit": {
+        "string": "Max Contacts"
+      }
+    },
+    "save": {
+      "button": {
+        "string": "Save Quota"
+      },
+      "success": {
+        "string": "Quota updated"
+      },
+      "error": {
+        "string": "Failed to update quota"
+      }
+    }
+  }
+}

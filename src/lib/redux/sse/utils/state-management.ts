@@ -4,6 +4,7 @@
  */
 
 import { SSEConnectionState } from '../types'
+import { logger } from '@/lib/logger'
 
 export interface StateChangeHandler {
   (_state: SSEConnectionState): void
@@ -24,7 +25,7 @@ export function notifyStateChange(
     try {
       handler(state)
     } catch (error) {
-      console.error('Error in state change handler:', error)
+      logger.error('Error in state change handler:', { error: error })
     }
   })
 }
@@ -37,7 +38,7 @@ export function notifyError(handlers: Set<ErrorHandler>, error: Error): void {
     try {
       handler(error)
     } catch (err) {
-      console.error('Error in error handler:', err)
+      logger.error('Error in error handler:', { error: err })
     }
   })
 }

@@ -1,0 +1,40 @@
+{
+  "AI_DRAFT": {
+    "title": {
+      "string": "AI-utkastassistent"
+    },
+    "description": {
+      "string": "Forslag til svar med tonetilpasning. Genererer kontekstuelle utkast til svar."
+    },
+    "input": {
+      "title": {
+        "string": "Original e-post"
+      },
+      "email": {
+        "string": "E-postinnhold"
+      },
+      "placeholder": {
+        "string": "Lim inn e-posten du ønsker å svare på..."
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Foreslått svar"
+      },
+      "empty": {
+        "string": "Skriv inn e-posttekst og velg en tone"
+      }
+    },
+    "suggest": {
+      "string": "Foreslå svar"
+    },
+    "errors": {
+      "empty": {
+        "string": "Skriv inn e-posttekst"
+      },
+      "fail": {
+        "string": "Forespørselen mislyktes"
+      }
+    }
+  }
+}

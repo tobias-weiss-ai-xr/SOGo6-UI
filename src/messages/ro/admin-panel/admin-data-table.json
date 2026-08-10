@@ -1,0 +1,19 @@
+{
+    "DATA_TABLE": {
+        "filter_placeholder": {
+            "string": "Filtrează..."
+        },
+        "no_result": {
+            "string": "Niciun rezultat."
+        },
+        "previous": {
+            "string": "Anterior"
+        },
+        "next": {
+            "string": "Următorul"
+        },
+        "selected": {
+            "string": "{selected} of {total} row(s) selected."
+        }
+    }
+}

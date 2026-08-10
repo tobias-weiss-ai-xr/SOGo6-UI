@@ -1,0 +1,40 @@
+{
+  "AP_FREEBUSY": {
+    "title": {
+      "string": "फ्री/बिज़ी खोज"
+    },
+    "description": {
+      "string": "दृश्य प्रतिभागी अनुसूची ओवरले। इवेंट बनाते समय उपलब्धता जांचें।"
+    },
+    "form": {
+      "title": {
+        "string": "उपलब्धता जांचें"
+      },
+      "participants": {
+        "string": "प्रतिभागी"
+      },
+      "start": {
+        "string": "प्रारंभ"
+      },
+      "end": {
+        "string": "समाप्ति"
+      },
+      "lookup": {
+        "string": "खोजें"
+      }
+    },
+    "results": {
+      "title": {
+        "string": "बिज़ी स्लॉट्स"
+      }
+    },
+    "errors": {
+      "fields": {
+        "string": "कम से कम एक प्रतिभागी आवश्यक है"
+      }
+    },
+    "error": {
+      "string": "खोज विफल"
+    }
+  }
+}

@@ -4,6 +4,7 @@
  */
 
 import { SSEMessage } from '../types'
+import { logger } from '@/lib/logger'
 
 export type MessageHandler<T = unknown> = (_message: SSEMessage<T>) => void
 
@@ -21,7 +22,7 @@ export function emitMessage<T = unknown>(
       try {
         handler(message as SSEMessage)
       } catch (error) {
-        console.error(`Error in message handler for type "${type}":`, error)
+        logger.error(`Error in message handler for type "${type}":`, { error: error })
       }
     })
   }

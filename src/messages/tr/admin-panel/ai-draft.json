@@ -1,0 +1,40 @@
+{
+  "AI_DRAFT": {
+    "title": {
+      "string": "AI Taslak Yardımcısı"
+    },
+    "description": {
+      "string": "Ton ayarlamalı yanıt önerileri. Bağlamsal taslak yanıtlar oluşturur."
+    },
+    "input": {
+      "title": {
+        "string": "Orijinal E-posta"
+      },
+      "email": {
+        "string": "E-posta İçeriği"
+      },
+      "placeholder": {
+        "string": "Yanıtlamak istediğiniz e-postayı yapıştırın..."
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Önerilen Yanıt"
+      },
+      "empty": {
+        "string": "E-posta metnini girin ve bir ton seçin"
+      }
+    },
+    "suggest": {
+      "string": "Yanıt Öner"
+    },
+    "errors": {
+      "empty": {
+        "string": "E-posta metni girin"
+      },
+      "fail": {
+        "string": "Öneri oluşturulamadı"
+      }
+    }
+  }
+}

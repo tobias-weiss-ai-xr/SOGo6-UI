@@ -1,0 +1,147 @@
+{
+  "ADMIN_PANNEL_RULE": {
+    "title": {
+      "string": "Regole"
+    },
+    "filter_placeholder": {
+      "string": "Filtra regole..."
+    },
+    "add_new_rule": {
+      "string": "Aggiungi nuova regola"
+    },
+    "select_all": {
+      "string": "Seleziona tutto"
+    },
+    "select_row": {
+      "string": "Seleziona riga"
+    },
+    "domain": {
+      "string": "Dominio"
+    },
+    "open_menu": {
+      "string": "Apri menu"
+    },
+    "actions": {
+      "string": "Azioni"
+    },
+    "copy_domain": {
+      "string": "Copia nome dominio"
+    },
+    "edit": {
+      "string": "Modifica"
+    },
+    "delete": {
+      "string": "Elimina"
+    }
+  },
+  "AP_RULES": {
+    "title": {
+      "string": "Regole"
+    },
+    "description": {
+      "string": "Gestisci regole di configurazione per i domini"
+    },
+    "search": {
+      "placeholder": {
+        "string": "Cerca regole..."
+      }
+    },
+    "create": {
+      "button": {
+        "string": "Nuova Regola"
+      },
+      "title": {
+        "string": "Crea Regola"
+      },
+      "description": {
+        "string": "Aggiungi una nuova regola di configurazione"
+      },
+      "success": {
+        "string": "Regola creata con successo"
+      },
+      "error": {
+        "string": "Creazione regola fallita"
+      },
+      "name_required": {
+        "string": "Il nome della regola è obbligatorio"
+      }
+    },
+    "edit": {
+      "button": {
+        "string": "Modifica"
+      },
+      "title": {
+        "string": "Modifica Regola"
+      },
+      "description": {
+        "string": "Aggiorna regola: {name}"
+      },
+      "save": {
+        "string": "Salva Modifiche"
+      },
+      "success": {
+        "string": "Regola aggiornata con successo"
+      },
+      "error": {
+        "string": "Aggiornamento regola fallito"
+      }
+    },
+    "delete": {
+      "button": {
+        "string": "Elimina"
+      },
+      "title": {
+        "string": "Elimina Regola"
+      },
+      "confirm": {
+        "string": "Sei sicuro di voler eliminare la regola \"{name}\"?"
+      },
+      "success": {
+        "string": "Regola eliminata con successo"
+      },
+      "error": {
+        "string": "Eliminazione regola fallita"
+      }
+    },
+    "form": {
+      "name": {
+        "string": "Nome Regola"
+      },
+      "name_placeholder": {
+        "string": "es. Regole LDAP Francia"
+      },
+      "description": {
+        "string": "Descrizione"
+      },
+      "description_placeholder": {
+        "string": "Descrizione opzionale di questa regola"
+      },
+      "domains": {
+        "string": "Domini Interessati"
+      },
+      "domains_placeholder": {
+        "string": "example.org, domain2.org"
+      },
+      "domains_hint": {
+        "string": "Elenco separato da virgole di nomi di dominio. Lascia vuoto per tutti i domini."
+      }
+    },
+    "table": {
+      "id": {
+        "string": "ID"
+      },
+      "name": {
+        "string": "Nome"
+      },
+      "actions": {
+        "string": "Azioni"
+      }
+    },
+    "no_rules": {
+      "string": "Nessuna regola ancora configurata"
+    },
+    "no_results": {
+      "string": "Nessuna regola corrisponde alla tua ricerca"
+    }
+  }
+}

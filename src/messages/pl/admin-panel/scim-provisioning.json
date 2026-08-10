@@ -1,0 +1,50 @@
+{
+  "SCIM": {
+    "title": {
+      "string": "Prowizja SCIM"
+    },
+    "description": {
+      "string": "Zarządzanie cyklem życia tożsamości SCIM 2.0 dla Azure AD, Okta i innych dostawców tożsamości (IdP)"
+    },
+    "errors": {
+      "email": {
+        "string": "Adres e-mail jest wymagany"
+      },
+      "fail": {
+        "string": "Operacja nie powiodła się"
+      }
+    },
+    "success": {
+      "create": {
+        "string": "Użytkownik został pomyślnie zaimportowany"
+      },
+      "delete": {
+        "string": "Użytkownik został usunięty"
+      }
+    },
+    "field": {
+      "email": {
+        "string": "Nazwa użytkownika/Adres e-mail"
+      },
+      "name": {
+        "string": "Wyświetlana nazwa"
+      },
+      "status": {
+        "string": "Status"
+      }
+    },
+    "button": {
+      "provision": {
+        "string": "Zaimportuj użytkownika"
+      }
+    },
+    "users": {
+      "title": {
+        "string": "Zaimportowani użytkownicy"
+      },
+      "empty": {
+        "string": "Nie zaimportowano jeszcze żadnych użytkowników SCIM"
+      }
+    }
+  }
+}

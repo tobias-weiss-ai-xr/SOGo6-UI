@@ -1,0 +1,60 @@
+{
+  "AI_TRANSCRIPTS": {
+    "title": {
+      "string": "Meeting-Transkripte"
+    },
+    "description": {
+      "string": "Transkript-Verwaltung mit automatischer Zusammenfassung und Aktionspunkte"
+    },
+    "input": {
+      "title": {
+        "string": "Neues Transkript"
+      },
+      "transcript_title": {
+        "string": "Titel"
+      },
+      "attendees": {
+        "string": "Teilnehmer"
+      },
+      "content": {
+        "string": "Inhalt"
+      },
+      "placeholder": {
+        "string": "Meeting-Transkript hier einfügen..."
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Zusammenfassung"
+      },
+      "empty": {
+        "string": "Zusammenfassung wird hier angezeigt"
+      }
+    },
+    "list": {
+      "title": {
+        "string": "Transkripte"
+      },
+      "empty": {
+        "string": "Keine Transkripte vorhanden"
+      },
+      "duration": {
+        "string": "Min"
+      },
+      "attendees_short": {
+        "string": "Teiln."
+      }
+    },
+    "create": {
+      "string": "Erstellen"
+    },
+    "errors": {
+      "fields": {
+        "string": "Titel und Inhalt erforderlich"
+      },
+      "fail": {
+        "string": "Erstellung fehlgeschlagen"
+      }
+    }
+  }
+}

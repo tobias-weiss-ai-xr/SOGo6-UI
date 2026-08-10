@@ -1,0 +1,28 @@
+{
+    "US_MAIL_CATEGORIES": {
+        "create": {
+            "string": "Adicionar categoria de e-mail",
+            "context": "Button text to add a new mail category"
+        },
+        "title": {
+            "string": "Categorias",
+            "context": "Title for the mail categories settings page"
+        },
+        "accessibility": {
+            "icon": {
+                "delete": {
+                    "string": "Excluir {name}",
+                    "context": "Accessibility message for the delete icon"
+                }
+            }
+        },
+        "categories": {
+            "Work": "Trabalho",
+            "Family": "Família",
+            "Friends": "Amigos",
+            "validation": {
+                "category-name-required": "O nome da categoria é obrigatório"
+            }
+        }
+    }
+}

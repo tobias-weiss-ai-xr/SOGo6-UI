@@ -1,0 +1,16 @@
+{
+    "PORTAL": {
+        "title": {
+            "string": "SOGo पोर्टल"
+        },
+        "description": {
+            "string": "SOGo पोर्टल में आपका स्वागत है। शुरू करने के लिए एक एप्लिकेशन चुनें।"
+        },
+        "launch": {
+            "string": "Launch"
+        },
+        "settings": {
+            "string": "Intercom Settings"
+        }
+    }
+}

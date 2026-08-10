@@ -1,0 +1,19 @@
+{
+    "DATA_TABLE": {
+        "filter_placeholder": {
+            "string": "Filter..."
+        },
+        "no_result": {
+            "string": "Ingen resultater."
+        },
+        "previous": {
+            "string": "Forrige"
+        },
+        "next": {
+            "string": "Næste"
+        },
+        "selected": {
+            "string": "{selected} of {total} row(s) selected."
+        }
+    }
+}

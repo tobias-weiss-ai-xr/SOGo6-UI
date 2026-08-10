@@ -1,0 +1,61 @@
+{
+  "AP_BULK": {
+    "title": {
+      "string": "Tömeges felhasználói kezelés"
+    },
+    "description": {
+      "string": "Felhasználók tömeges importálása és exportálása CSV-fájlok segítségével."
+    },
+    "export": {
+      "title": {
+        "string": "Felhasználók exportálása"
+      },
+      "description": {
+        "string": "Összes felhasználó letöltése CSV-fájlként."
+      },
+      "format": {
+        "string": "CSV-fájl (.csv)"
+      },
+      "button": {
+        "string": "Exportálás CSV-ként"
+      },
+      "success": {
+        "string": "Exportálás letöltve"
+      },
+      "error": {
+        "string": "Exportálás sikertelen"
+      }
+    },
+    "import": {
+      "title": {
+        "string": "Felhasználók importálása"
+      },
+      "description": {
+        "string": "CSV-fájl feltöltése felhasználói adatokkal fiókok létrehozásához vagy frissítéséhez."
+      },
+      "dropzone": {
+        "string": "Kattintson a CSV-fájl feltöltéséhez"
+      },
+      "button": {
+        "string": "Importálás CSV-ből"
+      },
+      "remove": {
+        "string": "Fájl eltávolítása"
+      },
+      "success": {
+        "string": "Importálva: {created} létrehozva, {updated} frissítve"
+      },
+      "error": {
+        "string": "Importálás sikertelen"
+      }
+    },
+    "format": {
+      "title": {
+        "string": "CSV-formátum"
+      },
+      "hint": {
+        "string": "Az első sornak a fejlécnek kell lennie. Kötelező mezők: uid, cn, sn, givenName, mail. A jelszó opcionális (véletlenszerű, ha üres)."
+      }
+    }
+  }
+}

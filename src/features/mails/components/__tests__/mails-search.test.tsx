@@ -1,6 +1,26 @@
-/* eslint-disable react/jsx-no-literals */
+import { configureStore } from '@reduxjs/toolkit'
 import { render } from '@testing-library/react'
+import { Provider } from 'react-redux'
 import { MailsSearch } from '../mails-search'
+
+import mailSearchReducer from '@/features/mails/store/mail-search-slice'
+
+// Create a minimal store for testing
+const mockStore = configureStore({
+  reducer: {
+    mails: () => ({}),
+    mailUI: () => ({}),
+    addressBooks: () => ({}),
+    contacts: () => ({}),
+    calendars: () => ({}),
+    tasks: () => ({}),
+    mailSearch: mailSearchReducer,
+  },
+})
+
+const TestWrapper = ({ children }: { children: React.ReactNode }) => (
+  <Provider store={mockStore}>{children}</Provider>
+)
 
 // Mock next-intl
 jest.mock('next-intl', () => ({
@@ -54,11 +74,13 @@ jest.mock('../search-more-options', () => ({
 
 describe('MailsSearch', () => {
   it('renders without crashing', () => {
-    expect(() => render(<MailsSearch />)).not.toThrow()
+    expect(() =>
+      render(<MailsSearch />, { wrapper: TestWrapper })
+    ).not.toThrow()
   })
 
   it('memoizes correctly', () => {
-    const { rerender } = render(<MailsSearch />)
+    const { rerender } = render(<MailsSearch />, { wrapper: TestWrapper })
     expect(() => rerender(<MailsSearch />)).not.toThrow()
   })
 })

@@ -1,0 +1,61 @@
+{
+  "AP_BULK": {
+    "title": {
+      "string": "一括ユーザー管理"
+    },
+    "description": {
+      "string": "CSVファイルを使用してユーザーを一括でインポートおよびエクスポートします。"
+    },
+    "export": {
+      "title": {
+        "string": "ユーザーのエクスポート"
+      },
+      "description": {
+        "string": "すべてのユーザーをCSVファイルとしてダウンロードします。"
+      },
+      "format": {
+        "string": "CSVファイル (.csv)"
+      },
+      "button": {
+        "string": "CSVをエクスポート"
+      },
+      "success": {
+        "string": "エクスポートがダウンロードされました"
+      },
+      "error": {
+        "string": "エクスポートに失敗しました"
+      }
+    },
+    "import": {
+      "title": {
+        "string": "ユーザーのインポート"
+      },
+      "description": {
+        "string": "ユーザーデータを含むCSVファイルをアップロードして、アカウントを作成または更新します。"
+      },
+      "dropzone": {
+        "string": "クリックしてCSVをアップロード"
+      },
+      "button": {
+        "string": "CSVをインポート"
+      },
+      "remove": {
+        "string": "ファイルを削除"
+      },
+      "success": {
+        "string": "インポート完了: {created}件作成、{updated}件更新"
+      },
+      "error": {
+        "string": "インポートに失敗しました"
+      }
+    },
+    "format": {
+      "title": {
+        "string": "CSVフォーマット"
+      },
+      "hint": {
+        "string": "1行目はヘッダーである必要があります。uid、cn、sn、givenName、mailは必須です。passwordは任意（空の場合はランダム）です。"
+      }
+    }
+  }
+}

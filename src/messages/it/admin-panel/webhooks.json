@@ -1,0 +1,11 @@
+{
+  "AP_WEBHOOKS": {
+    "title": { "string": "Webhook" },
+    "description": { "string": "Webhook in uscita per n8n, Make e altre piattaforme di automazione. Gli eventi attivano HTTP POST con payload firmati HMAC." },
+    "form": { "add": { "string": "Aggiungi Webhook" }, "cancel": { "string": "Annulla" }, "title": { "string": "Nuovo Webhook" }, "url": { "string": "URL Webhook" }, "name": { "string": "Nome Visualizzato" }, "name_placeholder": { "string": "es. n8n Workflow" }, "secret": { "string": "Segreto di Firma" }, "secret_placeholder": { "string": "Segreto HMAC (opzionale)" }, "events": { "string": "Eventi" }, "create": { "string": "Crea Webhook" } },
+    "create": { "success": { "string": "Webhook creato" }, "error": { "string": "Creazione webhook fallita" } },
+    "delete": { "success": { "string": "Webhook eliminato" }, "error": { "string": "Eliminazione fallita" } },
+    "list": { "empty": { "string": "Nessun webhook configurato. Clicca Aggiungi Webhook per iniziare." } },
+    "errors": { "fields": { "string": "URL e almeno un evento sono obbligatori" } }
+  }
+}

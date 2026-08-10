@@ -1,0 +1,61 @@
+{
+  "AP_BULK": {
+    "title": {
+      "string": "إدارة المستخدمين الجماعي"
+    },
+    "description": {
+      "string": "استيراد وتصدير المستخدمين بشكل جماعي باستخدام ملفات CSV."
+    },
+    "export": {
+      "title": {
+        "string": "تصدير المستخدمين"
+      },
+      "description": {
+        "string": "تحميل جميع المستخدمين كملف CSV."
+      },
+      "format": {
+        "string": "ملف CSV (.csv)"
+      },
+      "button": {
+        "string": "تصدير CSV"
+      },
+      "success": {
+        "string": "تم تحميل التصدير"
+      },
+      "error": {
+        "string": "فشل التصدير"
+      }
+    },
+    "import": {
+      "title": {
+        "string": "استيراد المستخدمين"
+      },
+      "description": {
+        "string": "رفع ملف CSV يحتوي على بيانات المستخدمين لإنشاء حسابات أو تحديثها."
+      },
+      "dropzone": {
+        "string": "انقر لرفع ملف CSV"
+      },
+      "button": {
+        "string": "استيراد CSV"
+      },
+      "remove": {
+        "string": "إزالة الملف"
+      },
+      "success": {
+        "string": "تم الاستيراد: {created} تم إنشاؤه، {updated} تم تحديثه"
+      },
+      "error": {
+        "string": "فشل الاستيراد"
+      }
+    },
+    "format": {
+      "title": {
+        "string": "تنسيق CSV"
+      },
+      "hint": {
+        "string": "يجب أن يكون الصف الأول عنوانًا. uid, cn, sn, givenName, mail مطلوبة. password اختياري (عشوائي إذا فارغ)."
+      }
+    }
+  }
+}

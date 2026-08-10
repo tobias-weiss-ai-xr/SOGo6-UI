@@ -1,0 +1,20 @@
+{
+  "VOLUNTEER": {
+    "title": { "string": "Gestione Volontari" },
+    "description": { "string": "Gestisci volontari, assegna turni, traccia ore e genera certificati" },
+    "errors": { "fields": { "string": "Campi obbligatori mancanti" }, "fail": { "string": "Operazione fallita" } },
+    "success": { "create": { "string": "Volontario registrato" }, "shift": { "string": "Turno assegnato" }, "cert": { "string": "Certificato generato" } },
+    "register": { "title": { "string": "Registra Volontario" } },
+    "shift": {
+      "title": { "string": "Crea Turno" },
+      "select": { "string": "Seleziona volontario..." },
+      "task": { "string": "Attività" },
+      "start": { "string": "Inizio" },
+      "end": { "string": "Fine" }
+    },
+    "field": { "name": { "string": "Nome" }, "email": { "string": "Email" }, "hours": { "string": "Ore" }, "status": { "string": "Stato" }, "no_shows": { "string": "Assenze" } },
+    "button": { "register": { "string": "Registra" }, "assign": { "string": "Assegna Turno" } },
+    "stats": { "title": { "string": "Statistiche" }, "volunteers": { "string": "Volontari" }, "hours": { "string": "Ore Totali" }, "shifts": { "string": "Turni Attivi" } },
+    "list": { "title": { "string": "Tutti i Volontari" }, "empty": { "string": "Nessun volontario ancora registrato" } }
+  }
+}

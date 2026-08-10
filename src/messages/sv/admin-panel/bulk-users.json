@@ -1,0 +1,61 @@
+{
+  "AP_BULK": {
+    "title": {
+      "string": "Masshantering av användare"
+    },
+    "description": {
+      "string": "Importera och exportera användare i bulk med hjälp av CSV-filer."
+    },
+    "export": {
+      "title": {
+        "string": "Exportera användare"
+      },
+      "description": {
+        "string": "Ladda ner alla användare som en CSV-fil."
+      },
+      "format": {
+        "string": "CSV-fil (.csv)"
+      },
+      "button": {
+        "string": "Exportera CSV"
+      },
+      "success": {
+        "string": "Export nedladdad"
+      },
+      "error": {
+        "string": "Export misslyckades"
+      }
+    },
+    "import": {
+      "title": {
+        "string": "Importera användare"
+      },
+      "description": {
+        "string": "Ladda upp en CSV-fil med användardata för att skapa eller uppdatera konton."
+      },
+      "dropzone": {
+        "string": "Klicka för att ladda upp CSV"
+      },
+      "button": {
+        "string": "Importera CSV"
+      },
+      "remove": {
+        "string": "Ta bort fil"
+      },
+      "success": {
+        "string": "Importerat: {created} skapade, {updated} uppdaterade"
+      },
+      "error": {
+        "string": "Import misslyckades"
+      }
+    },
+    "format": {
+      "title": {
+        "string": "CSV-format"
+      },
+      "hint": {
+        "string": "Första raden måste vara rubrikraden. uid, cn, sn, givenName, mail är obligatoriska. password är valfritt (slumpmässigt om tomt)."
+      }
+    }
+  }
+}

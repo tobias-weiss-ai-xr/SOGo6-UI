@@ -19,6 +19,7 @@ import {
 import { useAppDispatch } from '@/lib/redux/hooks'
 import { cn } from '@/lib/utils'
 import {
+  Bookmark,
   MoreHorizontalIcon,
   MoreVerticalIcon,
   Paperclip,
@@ -27,6 +28,7 @@ import {
 } from 'lucide-react'
 import { useTranslations } from 'next-intl'
 import React from 'react'
+import QuickReplyTemplates from './quick-reply-templates'
 import {
   MAIL_PRIORITY_HIGH,
   MAIL_PRIORITY_HIGHEST,
@@ -50,6 +52,12 @@ interface ComposeToolbarProps {
   selectedPriority: MailComposeDraft['priority']
   isSending: boolean
   onSend: () => void
+  sendAt?: string | null
+  onScheduleSend: () => void
+  onClearSchedule: () => void
+  subject?: string
+  body?: string
+  onInsertTemplate: (subject: string, body: string) => void
 }
 
 export function ComposeToolbar({
@@ -64,6 +72,12 @@ export function ComposeToolbar({
   selectedPriority,
   isSending,
   onSend,
+  sendAt,
+  onScheduleSend,
+  onClearSchedule,
+  subject,
+  body,
+  onInsertTemplate,
 }: ComposeToolbarProps) {
   const t = useTranslations('COMPOSE')
   const dispatch = useAppDispatch()
@@ -102,6 +116,13 @@ export function ComposeToolbar({
             <Video className="h-5 w-5" />
           </Button>
         )}
+
+        {/* Quick Reply Templates */}
+        <QuickReplyTemplates
+          currentSubject={subject}
+          currentBody={body}
+          onInsert={onInsertTemplate}
+        />
 
         <ButtonGroup className="z-9999">
           <DropdownMenu>
@@ -184,7 +205,11 @@ export function ComposeToolbar({
           disabled={isSending || isUploading}
         >
           <Send className="mr-2 h-4 w-4" />
-          {isSending ? t('sending.string') : t('send.string')}
+          {sendAt
+            ? t('schedule_sending.string')
+            : isSending
+              ? t('sending.string')
+              : t('send.string')}
         </Button>
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
@@ -198,9 +223,16 @@ export function ComposeToolbar({
           </DropdownMenuTrigger>
           <DropdownMenuContent align="end" className="z-9999 w-40">
             <DropdownMenuGroup>
-              <DropdownMenuItem disabled>
-                {t('schedule_sending.string')}
+              <DropdownMenuItem onSelect={onScheduleSend}>
+                {sendAt
+                  ? t('schedule_sending.change')
+                  : t('schedule_sending.string')}
               </DropdownMenuItem>
+              {sendAt && (
+                <DropdownMenuItem onSelect={onClearSchedule}>
+                  {t('schedule_sending.clear')}
+                </DropdownMenuItem>
+              )}
             </DropdownMenuGroup>
           </DropdownMenuContent>
         </DropdownMenu>

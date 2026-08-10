@@ -1,0 +1,10 @@
+{
+  "PROTOCOLS": {
+    "title": {
+      "string": "メールプロトコルのステータス"
+    },
+    "description": {
+      "string": "JMAP および ActiveSync プロトコルサーバーのステータスと機能"
+    }
+  }
+}

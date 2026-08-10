@@ -1,0 +1,19 @@
+{
+    "DATA_TABLE": {
+        "filter_placeholder": {
+            "string": "필터..."
+        },
+        "no_result": {
+            "string": "결과 없음."
+        },
+        "previous": {
+            "string": "이전"
+        },
+        "next": {
+            "string": "다음"
+        },
+        "selected": {
+            "string": "{selected} of {total} row(s) selected."
+        }
+    }
+}

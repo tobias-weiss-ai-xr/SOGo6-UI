@@ -1,0 +1,133 @@
+{
+    "US_MAIL_VACATIONS": {
+        "title": {
+            "string": "Impostazioni Vacanza",
+            "context": "Title for the vacation settings page"
+        },
+        "page": {
+            "description": {
+                "string": "Configura il messaggio di risposta automatica per fuori sede e quando dovrebbe essere attivo."
+            }
+        },
+        "errors_api": {
+            "load_failed": {
+                "string": "Impossibile caricare le impostazioni di vacanza. Riprova più tardi."
+            },
+            "feature_disabled": {
+                "string": "La risposta automatica di vacanza è stata disabilitata dall'amministratore."
+            }
+        },
+        "errors": {
+            "validation": {
+                "message_required": {
+                    "string": "Il messaggio di risposta automatica è obbligatorio quando la vacanza è abilitata."
+                },
+                "dates_required": {
+                    "string": "Le date di inizio e fine sono obbligatorie quando i vincoli di data sono abilitati."
+                },
+                "date_order": {
+                    "string": "La data di fine deve essere uguale o successiva alla data di inizio."
+                },
+                "time_invalid": {
+                    "string": "Inserisci un orario valido nel formato HH:MM."
+                },
+                "weekday_required": {
+                    "string": "Seleziona almeno un giorno della settimana quando i vincoli sui giorni sono abilitati."
+                },
+                "response_interval_invalid": {
+                    "string": "L'intervallo di risposta deve essere zero o un numero positivo."
+                },
+                "response_interval_zero": {
+                    "string": "Un intervallo di risposta di zero giorni non è consentito su questo dominio."
+                }
+            }
+        },
+        "auto_reply": {
+            "enable": {
+                "string": "Abilita risposta automatica di vacanza"
+            },
+            "subject": {
+                "label": {
+                    "string": "Oggetto risposta automatica"
+                },
+                "description": {
+                    "string": "Lascia vuoto per usare l'oggetto predefinito. Puoi scrivere {subject} per inserire l'oggetto originale."
+                }
+            },
+            "message": {
+                "string": "Messaggio di risposta automatica"
+            },
+            "constraints": {
+                "title": {
+                    "string": "Vincoli di attivazione"
+                },
+                "description": {
+                    "string": "Personalizza intervalli di giorni e ore indipendentemente e combinali opzionalmente con giorni specifici per personalizzare i filtri di vacanza secondo le tue preferenze."
+                },
+                "enable": {
+                    "days": {
+                        "string": "Abilita risposta automatica in questi giorni"
+                    },
+                    "hours": {
+                        "string": "Abilita risposta automatica tra queste ore"
+                    },
+                    "range": {
+                        "string": "Abilita risposta automatica tra questi giorni"
+                    }
+                },
+                "time": {
+                    "start": {
+                        "string": "Ora inizio"
+                    },
+                    "end": {
+                        "string": "Ora fine"
+                    }
+                },
+                "weekdays": {
+                    "monday": {
+                        "string": "Lunedì"
+                    },
+                    "tuesday": {
+                        "string": "Martedì"
+                    },
+                    "wednesday": {
+                        "string": "Mercoledì"
+                    },
+                    "thursday": {
+                        "string": "Giovedì"
+                    },
+                    "friday": {
+                        "string": "Venerdì"
+                    },
+                    "saturday": {
+                        "string": "Sabato"
+                    },
+                    "sunday": {
+                        "string": "Domenica"
+                    }
+                }
+            },
+            "response": {
+                "interval_days": {
+                    "label": {
+                        "string": "Giorni minimi tra risposte automatiche"
+                    },
+                    "placeholder": {
+                        "string": "Lascia vuoto per il comportamento predefinito"
+                    },
+                    "description": {
+                        "string": "Previene l'invio di risposte di vacanza duplicate entro questo periodo (RFC 5230 :days)."
+                    }
+                },
+                "send_always": {
+                    "label": {
+                        "string": "Invia sempre messaggio di risposta di vacanza"
+                    },
+                    "description": {
+                        "string": "Il messaggio di vacanza viene inviato prima di applicare i filtri."
+                    }
+                }
+            }
+        }
+    }
+}

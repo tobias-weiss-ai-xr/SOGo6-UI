@@ -1,0 +1,1285 @@
+{
+  "AP_DOMAIN_CONFIGURATION": {
+    "origin": {
+      "rule": {
+        "string": "(नियम {origin} से)"
+      },
+      "default": {
+        "string": "(डिफ़ॉल्ट कॉन्फ़िगरेशन से)"
+      },
+      "domain": {
+        "string": "(डोमेन {origin} से)"
+      }
+    },
+    "tabs": {
+      "auth_settings": {
+        "string": "प्रमाणीकरण सेटिंग्स"
+      },
+      "user_source": {
+        "string": "उपयोगकर्ता स्रोत"
+      },
+      "user_module_settings": {
+        "string": "उपयोगकर्ता और मॉड्यूल सेटिंग्स"
+      },
+      "mail_settings": {
+        "string": "मेल सेटिंग्स"
+      },
+      "calendar_contact_settings": {
+        "string": "कैलेंडर और संपर्क सेटिंग्स"
+      }
+    },
+    "properties": {
+      "SOGO_D_AUTH_TYPE": {
+        "name": {
+          "string": "प्रमाणीकरण प्रकार"
+        },
+        "description": {
+          "string": "उपयोगकर्ताओं के लिए प्रमाणीकरण विधि चुनें। 'प्लेन' का अर्थ पारंपरिक उपयोगकर्ता नाम/पासवर्ड है"
+        },
+        "developer_comment": "Options might include LDAP, SQL, etc."
+      },
+      "SOGO_D_CAS_URL": {
+        "name": {
+          "string": "CAS सर्वर का URL"
+        },
+        "description": {
+          "string": "अपने CAS सर्वर का पूरा URL डालें"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_CAS_LOGOUT_ENABLED": {
+        "name": {
+          "string": "CAS के साथ लॉगआउट सक्षम करें"
+        },
+        "description": {
+          "string": "उपयोगकर्ताओं को अपने SOGo और CAS सर्वर से लॉगआउट करने की अनुमति देने के लिए बॉक्स पर टिक करें"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_OPENID_CONFIG_URL": {
+        "name": {
+          "string": "OpenID प्रदाता एंडपॉइंट का URL"
+        },
+        "description": {
+          "string": "उदाहरण: https://myopenid.net/.well-known/openid-configuration"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_OPENID_CLIENT_NAME": {
+        "name": {
+          "string": "OpenID क्लाइंट नाम"
+        },
+        "description": {
+          "string": "अपने OpenID क्लाइंट का नाम"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_OPENID_CLIENT_SECRET": {
+        "name": {
+          "string": "OpenID क्लाइंट सीक्रेट"
+        },
+        "description": {
+          "string": "अपने OpenID क्लाइंट का सीक्रेट"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_OPENID_SCOPE": {
+        "name": {
+          "string": "OpenID क्लाइंट स्कोप"
+        },
+        "description": {
+          "string": "आपके OpenID क्लाइंट का स्कोप। डिफ़ॉल्ट 'openid profile email' होता है।"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_OPENID_EMAIL": {
+        "name": {
+          "string": "उपयोगकर्ता का ईमेल कुंजी"
+        },
+        "description": {
+          "string": "उपयोगकर्ता प्रोफाइल में ईमेल ढूंढने के लिए कुंजी।"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_OPENID_TOKEN_CHECK_INTERVAL": {
+        "name": {
+          "string": "टोकन जांच अंतराल"
+        },
+        "description": {
+          "string": "OpenID सर्वर को टोकन वैधता जांचने के अनुरोधों की संख्या सीमित करने के लिए, सेकंड में एक अंतराल सेट करें, जिसमें पहली सफलता के बाद टोकन दोबारा नहीं जांचा जाएगा। 0 का मतलब है कि टोकन हमेशा जांचा जाएगा। 60 का मतलब है कि पहली सफलता के बाद 60 सेकंड तक टोकन नहीं जांचा जाएगा।"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_OPENID_REFRESH_ENABLE": {
+        "name": {
+          "string": "रिफ्रेश टोकन मैकेनिज्म सक्षम करें"
+        },
+        "description": {
+          "string": "अगर आपका OpenID सर्वर रिफ्रेश टोकन मैकेनिज्म प्रबंधित करता है, तो SOGo इसका उपयोग करेगा।"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_OPENID_ENDSESSION_ENABLED": {
+        "name": {
+          "string": "OpenID सर्वर से सेशन समाप्ति सक्षम करें"
+        },
+        "description": {
+          "string": "डिफ़ॉल्ट रूप से, उपयोगकर्ता केवल वेबमेल से लॉगआउट कर सकते हैं। इस सेटिंग को चेक करें ताकि OpenID सर्वर से भी लॉगआउट हो सके, अर्थात उपयोगकर्ता उन सभी एप्लिकेशन्स से लॉगआउट हो जाएंगे जो OpenID सर्वर का उपयोग कर रहे हैं। यह केवल तभी काम करेगा अगर आपका OpenID सर्वर में end_session_endpoint हो।"
+        },
+        "developer_comment": ""
+      },
+      "SOGo_D_OPENID_FETCH_USER_PROFILE": {
+        "name": {
+          "string": "उपयोगकर्ता प्रोफाइल प्राप्त करें"
+        },
+        "description": {
+          "string": "डिफ़ॉल्ट रूप से, SOGo उपयोगकर्ता की ईमेल प्राप्त करने के लिए उपयोगकर्ता प्रोफाइल प्राप्त करता है। इसे अनचेक करें ताकि ईमेल सीधे टोकन से प्राप्त हो। अगर आप Microsoft के Active Directory Federation Service (AD FS) का उपयोग कर रहे हैं तो इसे अनचेक करें।"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SAML2_URL": {
+        "name": {
+          "string": "SAML2 अभी तक पूरा नहीं हुआ है!!!"
+        },
+        "description": {
+          "string": "जो व्यक्ति इसे करेगा, उसे शुभकामनाएं..."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_PWD_CHANGE_ENABLED": {
+        "name": {
+          "string": "पासवर्ड बदलने को सक्षम करें"
+        },
+        "description": {
+          "string": "उपयोगकर्ताओं को SOGo से अपना पासवर्ड बदलने की अनुमति दें। सुनिश्चित करें कि आपका उपयोगकर्ता स्रोत उपयोगकर्ताओं को यह कार्रवाई करने का अधिकार देता है।"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_LOGIN_CHECK_MAX_ATTEMPT": {
+        "name": {
+          "string": "लॉगिन में अधिकतम असफल प्रयास"
+        },
+        "description": {
+          "string": "सेट करें कि कोई उपयोगकर्ता कितनी बार लॉगिन में असफल हो सकता है, उससे पहले ब्लॉक हो जाए। 0 का मतलब है कोई सीमा नहीं।"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_LOGIN_CHECK_TIME_SPAN": {
+        "name": {
+          "string": "लॉगिन असफल प्रयास समय अवधि"
+        },
+        "description": {
+          "string": "असफल प्रयासों को गिनने के लिए सेकंड में समय अवधि सेट करें। उदाहरण: 60 का मतलब है कि उपयोगकर्ता पहली असफलता के 60 सेकंड बाद तक 'लॉगिन अधिकतम असफल प्रयास' तक असफल हो सकता है, उससे पहले ब्लॉक हो जाए।"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_LOGIN_CHECK_BLOCK_TIME": {
+        "name": {
+          "string": "लॉगिन विफल प्रयास अवरुद्ध समय"
+        },
+        "description": {
+          "string": "बहुत सारे विफल प्रयासों के बाद उपयोगकर्ता को कितने सेकंड तक ब्लॉक किया जाता है, इसे सेट करें।"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_PWD_RECOVERY": {
+        "name": {
+          "string": "पासवर्ड रिकवरी सक्षम करें"
+        },
+        "description": {
+          "string": "उपयोगकर्ताओं को पासवर्ड रिकवरी विधि सेट करने की अनुमति दें"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_PWD_RECOVERY_METHOD": {
+        "name": {
+          "string": "उपलब्ध पासवर्ड रिकवरी विधियाँ"
+        },
+        "description": {
+          "string": "उपयोगकर्ताओं के लिए उपलब्ध पासवर्ड रिकवरी विधि चुनें"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_PWD_RECOVERY_FORCE": {
+        "name": {
+          "string": "पासवर्ड रिकवरी अनिवार्य करें"
+        },
+        "description": {
+          "string": "उपयोगकर्ताओं को पासवर्ड रिकवरी विधि सेट अप करने के लिए मजबूर करें।"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_PWD_RECOVERY_DELAY": {
+        "name": {
+          "string": "पासवर्ड रिकवरी के बीच देरी"
+        },
+        "description": {
+          "string": "सेकंड में देरी, जिसके बाद उपयोगकर्ता फिर से पासवर्ड रिकवरी का अनुरोध कर सकता है।"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_LOGIN_MFA": {
+        "name": {
+          "string": "MFA सक्षम करें"
+        },
+        "description": {
+          "string": "उपयोगकर्ताओं को मल्टी-फैक्टर प्रमाणीकरण सेट अप करने की अनुमति दें"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_LOGIN_MFA_METHOD": {
+        "name": {
+          "string": "उपलब्ध MFA विधियाँ"
+        },
+        "description": {
+          "string": "उपयोगकर्ताओं के लिए उपलब्ध MFA विधियाँ चुनें"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_LOGIN_MFA_FORCE": {
+        "name": {
+          "string": "MFA अनिवार्य करें"
+        },
+        "description": {
+          "string": "उपयोगकर्ताओं को MFA सेट अप करने के लिए मजबूर करें"
+        },
+        "developer_comment": ""
+      },
+      "US_UID": {
+        "name": {
+          "string": "उपयोगकर्ता स्रोत UID"
+        },
+        "description": {
+          "string": "इस उपयोगकर्ता स्रोत के लिए एक अनोखा नाम चुनें, यह उपयोगकर्ताओं को प्रदर्शित नहीं होगा"
+        },
+        "developer_comment": "Only for SOGo to differentiate differents User SOurce"
+      },
+      "US_TYPE": {
+        "name": {
+          "string": "उपयोगकर्ता स्रोत प्रकार"
+        },
+        "description": {
+          "string": "अपना उपयोगकर्ता स्रोत प्रकार सेट करें"
+        },
+        "developer_comment": "Only ldap and sql supported for now"
+      },
+      "US_LDAP_HOSTNAME": {
+        "name": {
+          "string": "LDAP सर्वर होस्टनाम"
+        },
+        "description": {
+          "string": "केवल होस्ट और पोर्ट ही दर्ज करें, कोई अतिरिक्त जानकारी न जोड़ें"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_BIND_DN": {
+        "name": {
+          "string": "बाइंड DN"
+        },
+        "description": {
+          "string": "सर्वर से बाइंड करने के लिए उपयोग किए जाने वाले लॉगिन नाम का DN"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_BIND_DN_PWD": {
+        "name": {
+          "string": "बाइंड DN पासवर्ड"
+        },
+        "description": {
+          "string": "आपके बाइंड DN का पासवर्ड"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_BASE_DN": {
+        "name": {
+          "string": "बेस DN"
+        },
+        "description": {
+          "string": "उपयोगकर्ताओं की एंट्री का बेस DN। यदि मेल डोमेन यहां शामिल है, तो '%d' जोड़कर इसे गतिशील रूप से उपयोगकर्ता मेल से जोड़ा जा सकता है, जैसे: 'ou=%d,dc=example,dc=com'"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_UID": {
+        "name": {
+          "string": "UID फील्ड"
+        },
+        "description": {
+          "string": "उपयोगकर्ता के लॉगिन वाला फील्ड, लॉगिन सभी यूज़र सोर्स और डोमेन में अद्वितीय होना चाहिए"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_CN": {
+        "name": {
+          "string": "CN फील्ड"
+        },
+        "description": {
+          "string": "उपयोगकर्ता के पूर्ण नाम वाला फील्ड"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_ID": {
+        "name": {
+          "string": "ID फील्ड"
+        },
+        "description": {
+          "string": "फील्ड जो बाइंड फील्ड का उपयोग नहीं किए जाने पर यूज़र DN शुरू करता है (उदाहरण: यदि आपका 'dn: uid=sogo,ou=users,dc=example,dc=org' है तो यह मान 'uid' होना चाहिए)"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_SCOPE": {
+        "name": {
+          "string": "LDAP खोज दायरा"
+        },
+        "description": {
+          "string": "बेस DN पर या उसके नीचे उन एंट्रियों के सेट को इंगित करता है जो खोज अनुरोध के लिए संभावित मैच मानी जा सकती हैं"
+        },
+        "developer_comment": "https://ldapwiki.com/wiki/Wiki.jsp?page=LDAP%20Search%20Scopes"
+      },
+      "US_LDAP_FILTER": {
+        "name": {
+          "string": "LDAP फ़िल्टर"
+        },
+        "description": {
+          "string": "LDAP क्वेरी के लिए अतिरिक्त फ़िल्टर। '=', '!=', 'AND', 'OR' और कोष्ठक का उपयोग करें। उदाहरण: '(objectClass='mailUser' OR objectClass!='mailGroup') AND accountStatus='active'"
+        },
+        "developer_comment": "Use SOGo's syntax and not ldap syntax for filter"
+      },
+      "US_LDAP_PWD_POLICY": {
+        "name": {
+          "string": "LDAP पासवर्ड नीति"
+        },
+        "description": {
+          "string": "इंगित करता है कि आपका LDAP सर्वर पासवर्ड नीति के साथ समाप्ति और अनुग्रह अवधि की अवधारणा रखता है"
+        },
+        "developer_comment": "https://ldapwiki.com/wiki/Wiki.jsp?page=Password%20Policy"
+      },
+      "US_LDAP_PWD_UPDATE_SAMBA": {
+        "name": {
+          "string": "एलडीएपी सांबा पासवर्ड अपडेट करें"
+        },
+        "description": {
+          "string": "यदि कोई उपयोगकर्ता अपना पासवर्ड बदलता है, तो sambaNTPassword और sambaLMPassword भी अपडेट करें"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_BIND_AS_USER": {
+        "name": {
+          "string": "उपयोगकर्ता के रूप में बाइंड करें"
+        },
+        "description": {
+          "string": "प्रमाणीकरण के बाद, बाइंड करने के लिए उपयोगकर्ता के DN का उपयोग करें"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_BIND_FIELD": {
+        "name": {
+          "string": "अतिरिक्त बाइंड फ़ील्ड"
+        },
+        "description": {
+          "string": "उपयोग करने के लिए अतिरिक्त बाइंड फ़ील्ड। उदाहरण के लिए, यदि आप 'mail' जोड़ते हैं, तो बाइंड में 'mail=<login>' भी होगा"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_ATTR_FIELD": {
+        "name": {
+          "string": "एट्रिब्यूट फ़ील्ड"
+        },
+        "description": {
+          "string": "खोज क्वेरी के दौरान लौटाए जाने वाले एट्रिब्यूट फ़ील्ड। डिफ़ॉल्ट '*' है, मतलब सभी। सावधान रहें, क्योंकि यह SOGo के व्यवहार को गंभीर रूप से प्रभावित कर सकता है"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_GROUP_CLASS": {
+        "name": {
+          "string": "एलडीएपी समूह वर्ग"
+        },
+        "description": {
+          "string": "उन एलडीएपी वर्ग को सेट करें जो SOGo को बताएगा कि यह एक समूह है, कोई एकल उपयोगकर्ता नहीं"
+        },
+        "developer_comment": ""
+      },
+      "US_SQL_USER_URL": {
+        "name": {
+          "string": "एसक्यूएल उपयोगकर्ता URL"
+        },
+        "description": {
+          "string": "अपने उपयोगकर्ता तालिका के लिए डेटाबेस URL। उदाहरण: postgresql://sogo:sogo@127.0.0.1:5432/sogo/sogo_user"
+        },
+        "developer_comment": ""
+      },
+      "US_SQL_PREPEND_PWD_SCHEME": {
+        "name": {
+          "string": "एसक्यूएल उपयोगकर्ता पासवर्ड स्कीम"
+        },
+        "description": {
+          "string": "यदि पासवर्ड डेटाबेस में इस प्रकार संग्रहीत है {scheme}encryptedValue, तो YES चेक करें"
+        },
+        "developer_comment": ""
+      },
+      "US_SQL_USER_FILTER": {
+        "name": {
+          "string": "एसक्यूएल उपयोगकर्ता फ़िल्टर"
+        },
+        "description": {
+          "string": "एसक्यूएल क्वेरी में जोड़ने के लिए अतिरिक्त WHERE शर्तें। उदाहरण: 'active=1'"
+        },
+        "developer_comment": ""
+      },
+      "US_SQL_DOMAIN_FIELD": {
+        "name": {
+          "string": "एसक्यूएल उपयोगकर्ता डोमेन"
+        },
+        "description": {
+          "string": "उन कॉलम का नाम सेट करें जहाँ उपयोगकर्ता का डोमेन है। यदि सेट किया जाता है, तो हर SQL क्वेरी अपने WHERE कंडीशन में '<domain_column> = <user domain>' जोड़ेगी"
+        },
+        "developer_comment": ""
+      },
+      "US_MAPPING": {
+        "name": {
+          "string": "उपयोगकर्ता स्रोत मैपिंग"
+        },
+        "description": {
+          "string": "अपने उपयोगकर्ता स्रोत फ़ील्ड को संपर्क एट्रिब्यूट से मैप करें"
+        },
+        "developer_comment": ""
+      },
+      "US_CAN_AUTH": {
+        "name": {
+          "string": "प्रमाणीकरण कर सकता है"
+        },
+        "description": {
+          "string": "इस यूज़र सोर्स के उपयोगकर्ता वेबमेल में लॉगिन कर सकते हैं"
+        },
+        "developer_comment": ""
+      },
+      "US_PWD_ALGO": {
+        "name": {
+          "string": "यूज़र सोर्स पासवर्ड एल्गोरिदम"
+        },
+        "description": {
+          "string": "इस यूज़र सोर्स द्वारा उपयोग किया जाने वाला पासवर्ड एल्गोरिदम। SQL यूज़र सोर्स के लिए अनिवार्य। LDAP के लिए वैकल्पिक: केवल तभी आवश्यक है जब आप उपयोगकर्ताओं को अपना पासवर्ड बदलने की अनुमति देते हैं"
+        },
+        "developer_comment": ""
+      },
+      "US_SIM_KEY_TYPE": {
+        "name": {
+          "string": "पासवर्ड एल्गोरिदम सममित कुंजी प्रकार"
+        },
+        "description": {
+          "string": "बताएं कि आप अपने पासवर्ड एल्गोरिदम की सममित कुंजी को कैसे स्टोर करते हैं"
+        },
+        "developer_comment": ""
+      },
+      "US_SIM_KEY_VALUE": {
+        "name": {
+          "string": "पासवर्ड एल्गोरिदम सममित कुंजी मान"
+        },
+        "description": {
+          "string": "मान प्रकार पर निर्भर करता है।\nयदि 'path' हो, तो यहां वह फ़ाइल पथ डालें जहाँ SOGo को आपकी सममित कुंजी मिलेगी।\nयदि 'env' हो, तो उस ENV वेरिएबल का नाम सेट करें जहाँ कुंजी है।\nयदि 'plain' हो, तो यहां सीधे कुंजी डालें"
+        },
+        "developer_comment": ""
+      },
+      "US_PWD_POLICY": {
+        "name": {
+          "string": "यूज़र पासवर्ड नीति"
+        },
+        "description": {
+          "string": "यूज़र के पासवर्ड पर नीति जोड़ने के लिए बॉक्स पर टिक करें। यह नीति तब लागू होगी जब यूज़र अपना पासवर्ड बदलता है या यदि आप 'लॉगिन पर पासवर्ड मज़बूती जाँचें' सक्षम करते हैं"
+        },
+        "developer_comment": ""
+      },
+      "US_PWD_LEN_MIN": {
+        "name": {
+          "string": "यूज़र पासवर्ड न्यूनतम लंबाई"
+        },
+        "description": {
+          "string": "यूज़र पासवर्ड की न्यूनतम लंबाई, समावेशी। न्यूनतम 4।"
+        },
+        "developer_comment": ""
+      },
+      "US_PWD_LEN_MAX": {
+        "name": {
+          "string": "यूज़र पासवर्ड अधिकतम लंबाई"
+        },
+        "description": {
+          "string": "यूज़र पासवर्ड की अधिकतम लंबाई, समावेशी। 0 का मतलब कोई सीमा नहीं"
+        },
+        "developer_comment": ""
+      },
+      "US_PWD_UPPERCASE_MIN": {
+        "name": {
+          "string": "यूज़र पासवर्ड अपरकेस न्यूनतम"
+        },
+        "description": {
+          "string": "अपरकेस अक्षरों की न्यूनतम घटनाएं। 0 का मतलब कोई सीमा नहीं"
+        },
+        "developer_comment": ""
+      },
+      "US_PWD_LOWERCASE_MIN": {
+        "name": {
+          "string": "यूज़र पासवर्ड लोअरकेस न्यूनतम"
+        },
+        "description": {
+          "string": "लोअरकेस अक्षरों की न्यूनतम घटनाएं। 0 का मतलब कोई सीमा नहीं"
+        },
+        "developer_comment": ""
+      },
+      "US_PWD_DIGITS_MIN": {
+        "name": {
+          "string": "यूज़र पासवर्ड अंकों का न्यूनतम"
+        },
+        "description": {
+          "string": "अंकों की न्यूनतम घटनाएं। 0 का मतलब कोई सीमा नहीं"
+        },
+        "developer_comment": ""
+      },
+      "US_PWD_SPECIAL_ALLOWED": {
+        "name": {
+          "string": "उपयोगकर्ता पासवर्ड विशेष वर्ण अनुमत"
+        },
+        "description": {
+          "string": "पासवर्ड में अनुमत विशेष वर्णों की सूची"
+        },
+        "developer_comment": ""
+      },
+      "US_PWD_SPECIAL_MIN": {
+        "name": {
+          "string": "उपयोगकर्ता पासवर्ड विशेष वर्ण न्यूनतम"
+        },
+        "description": {
+          "string": "विशेष वर्णों की न्यूनतम संख्या। 0 का मतलब कोई सीमा नहीं"
+        },
+        "developer_comment": ""
+      },
+      "US_MAIL": {
+        "name": {
+          "string": "उपयोगकर्ता मेल फ़ील्ड"
+        },
+        "description": {
+          "string": "उपयोगकर्ता के मेल को खोजने के लिए फ़ील्ड। मुख्य मेल फ़ील्ड के बाद अतिरिक्त फ़ील्ड सेट किए जा सकते हैं ताकि उपयोगकर्ता के उपनाम बताए जा सकें।"
+        },
+        "developer_comment": ""
+      },
+      "US_MAIL_SERVER_LOGIN": {
+        "name": {
+          "string": "उपयोगकर्ता मेल सर्वर लॉगिन"
+        },
+        "description": {
+          "string": "केवल तभी सेट करें जब उपयोगकर्ता का मेल सर्वर (IMAP) लॉगिन उनके मुख्य मेल से अलग हो। यहां उनके लॉगिन को खोजने के लिए फ़ील्ड सेट करें"
+        },
+        "developer_comment": ""
+      },
+      "US_MAIL_FILTERING_LOGIN": {
+        "name": {
+          "string": "उपयोगकर्ता मेल फ़िल्टरिंग लॉगिन"
+        },
+        "description": {
+          "string": "केवल तभी सेट करें जब उपयोगकर्ता का मेल फ़िल्टर सर्वर (Sieve) लॉगिन उनके मुख्य मेल से अलग हो। यहां उनके लॉगिन को खोजने के लिए फ़ील्ड सेट करें"
+        },
+        "developer_comment": ""
+      },
+      "US_MAIL_OUTGOING_LOGIN": {
+        "name": {
+          "string": "उपयोगकर्ता आउटगोइंग मेल लॉगिन"
+        },
+        "description": {
+          "string": "केवल तभी सेट करें जब उपयोगकर्ता का आउटगोइंग मेल सर्वर (SMTP) लॉगिन उनके मुख्य मेल से अलग हो। यहां उनके लॉगिन को खोजने के लिए फ़ील्ड सेट करें"
+        },
+        "developer_comment": ""
+      },
+      "US_KIND": {
+        "name": {
+          "string": "उपयोगकर्ता प्रकार"
+        },
+        "description": {
+          "string": "उपयोगकर्ता के प्रकार ('user', 'resource' या 'group') को खोजने के लिए फ़ील्ड सेट करें"
+        },
+        "developer_comment": ""
+      },
+      "US_IS_ADDRESSBOOK": {
+        "name": {
+          "string": "उपयोगकर्ता स्रोत एड्रेसबुक है"
+        },
+        "description": {
+          "string": "इस फ़ील्ड को सेट करें अगर इस उपयोगकर्ता स्रोत के उपयोगकर्ता ऑटोकंप्लीट या ग्लोबल एड्रेस बुक के माध्यम से खोजे जा सकते हैं"
+        },
+        "developer_comment": ""
+      },
+      "US_SEARCH": {
+        "name": {
+          "string": "उपयोगकर्ता खोज फ़ील्ड"
+        },
+        "description": {
+          "string": "उपयोगकर्ता खोजते समय जोड़ने के लिए अतिरिक्त फ़ील्ड। उदाहरण 'name' उपयोगकर्ता को उनके नाम से खोजेगा"
+        },
+        "developer_comment": ""
+      },
+      "US_DISPLAY_NAME": {
+        "name": {
+          "string": "उपयोगकर्ता स्रोत प्रदर्शन नाम"
+        },
+        "description": {
+          "string": "इस उपयोगकर्ता स्रोत का प्रदर्शन नाम, ग्लोबल एड्रेस बुक सूची में दिखाया जाएगा"
+        },
+        "developer_comment": ""
+      },
+      "US_AUTO_SEARCH": {
+        "name": {
+          "string": "ग्लोबल एड्रेस बुक में उपयोगकर्ता स्वचालित प्रदर्शन"
+        },
+        "description": {
+          "string": "चयनित होने पर स्वचालित रूप से ग्लोबल एड्रेस बुक में उपयोगकर्ताओं की खोज करें और प्रदर्शित करें। अन्यथा, उपयोगकर्ता को खोज ट्रिगर करने के लिए टाइप करना होगा या '.' टाइप करके सभी खोजने होंगे।"
+        },
+        "developer_comment": ""
+      },
+      "US_AUTO_SEARCH_LIMIT": {
+        "name": {
+          "string": "उपयोगकर्ता ऑटोकंप्लीशन सीमा"
+        },
+        "description": {
+          "string": "खोज क्वेरी के बाद लौटाए गए उपयोगकर्ताओं की अधिकतम संख्या सीमित करें। 0 का मतलब कोई सीमा नहीं है"
+        },
+        "developer_comment": ""
+      },
+      "US_EXTRA_CONTACT_INFO": {
+        "name": {
+          "string": "उपयोगकर्ता अतिरिक्त संपर्क जानकारी"
+        },
+        "description": {
+          "string": "बताएं कि ऑटोकंप्लीशन परिणाम के साथ कौन सी जानकारी जोड़नी है। 'cn <extra> mail' के रूप में प्रदर्शित होता है"
+        },
+        "developer_comment": ""
+      },
+      "US_HIDDEN_USER": {
+        "name": {
+          "string": "छिपे हुए उपयोगकर्ता"
+        },
+        "description": {
+          "string": "उन उपयोगकर्ताओं के uid की सूची जो कभी भी खोज और ऑटोकंप्लीशन के लिए लौटाए नहीं जाने चाहिए"
+        },
+        "developer_comment": ""
+      },
+      "US_HAS_RESOURCE": {
+        "name": {
+          "string": "उपयोगकर्ता स्रोत में संसाधन है"
+        },
+        "description": {
+          "string": "अगर इस उपयोगकर्ता स्रोत में संसाधन हैं तो चेकबॉक्स पर टिक करें"
+        },
+        "developer_comment": ""
+      },
+      "US_RESOURCE_SEARCH": {
+        "name": {
+          "string": "उपयोगकर्ता संसाधन खोज"
+        },
+        "description": {
+          "string": "संसाधनों के लिए अतिरिक्त खोज फ़ील्ड"
+        },
+        "developer_comment": ""
+      },
+      "US_RESOURCE_MULTIBOOKING": {
+        "name": {
+          "string": "उपयोगकर्ता संसाधन मल्टीबुकिंग"
+        },
+        "description": {
+          "string": "वह फ़ील्ड जहाँ संसाधन की मल्टीबुकिंग वैल्यू मिलेगी"
+        },
+        "developer_comment": ""
+      },
+      "US_RESOURCE_EXTRA_INFO": {
+        "name": {
+          "string": "उपयोगकर्ता संसाधन अतिरिक्त जानकारी"
+        },
+        "description": {
+          "string": "बताएं कि ऑटोकंप्लीशन परिणाम के साथ कौन सी जानकारी जोड़नी है। 'cn <extra> mail' के रूप में प्रदर्शित होता है"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MODULE_ACCESS": {
+        "name": {
+          "string": "मॉड्यूल एक्सेस"
+        },
+        "description": {
+          "string": "मेल, कैलेंडर और संपर्क में से कौन से मॉड्यूल उपलब्ध हैं, यह परिभाषित करें"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAPI_ACCESS": {
+        "name": {
+          "string": "MAPI सर्वर सक्षम करें"
+        },
+        "description": {
+          "string": "डेस्कटॉप पर उपयोगकर्ताओं को MAPI प्रोटोकॉल का उपयोग करने की अनुमति दें"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_EAS_ACCESS": {
+        "name": {
+          "string": "EAS सर्वर सक्षम करें"
+        },
+        "description": {
+          "string": "मोबाइल उपयोगकर्ताओं को ActiveSync प्रोटोकॉल का उपयोग करने की अनुमति दें"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_FOLDER_DISABLE_EXPORT": {
+        "name": {
+          "string": "फोल्डर निर्यात अक्षम करें"
+        },
+        "description": {
+          "string": "उपयोगकर्ताओं को मेल, कैलेंडर और संपर्कों में अपने फोल्डर निर्यात करने से रोकें"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_FOLDER_DISABLE_SHARING": {
+        "name": {
+          "string": "फोल्डर साझा करना अक्षम करें"
+        },
+        "description": {
+          "string": "उपयोगकर्ताओं को मेल, कैलेंडर और संपर्कों में अपने फोल्डर साझा करने से रोकें"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_FOLDER_DISABLE_SHARING_ANY_AUTH": {
+        "name": {
+          "string": "प्रमाणित उपयोगकर्ताओं के साथ फोल्डर साझा करना अक्षम करें"
+        },
+        "description": {
+          "string": "उपयोगकर्ताओं को मेल, कैलेंडर और संपर्कों में अपने फोल्डर को सभी प्रमाणित उपयोगकर्ताओं के साथ साझा करने से रोकें"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_AUTOCOMPLETION_MIN_LEN": {
+        "name": {
+          "string": "स्वत: पूर्णता के लिए न्यूनतम अक्षर"
+        },
+        "description": {
+          "string": "स्वत: पूर्णता खोज ट्रिगर करने के लिए न्यूनतम अक्षरों की संख्या सेट करें (3 का मतलब तीसरे अक्षर पर खोज शुरू होगी)"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_API_MAX_REQUEST": {
+        "name": {
+          "string": "अधिकतम API अनुरोध"
+        },
+        "description": {
+          "string": "एक प्रमाणित उपयोगकर्ता द्वारा एक निश्चित समय में किए जा सकने वाले अधिकतम अनुरोधों की संख्या सेट करें"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_API_MAX_REQUEST_INTERVAL": {
+        "name": {
+          "string": "अधिकतम API अनुरोध अवधि"
+        },
+        "description": {
+          "string": "उस समयावधि को सेट करें जिसमें 'अधिकतम API अनुरोध' सीमा लागू होगी"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_API_MAX_REQUEST_BLOCK_INTERVAL": {
+        "name": {
+          "string": "अधिकतम API अनुरोध के बाद ब्लॉक समय"
+        },
+        "description": {
+          "string": "यदि 'अधिकतम API अनुरोध' सीमा पार हो जाती है तो उपयोगकर्ता को अनुरोध करने से ब्लॉक करने का समय सेट करें"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_IDENTITIES_ENABLED": {
+        "name": {
+          "string": "पहचान सक्षम करें"
+        },
+        "description": {
+          "string": "उपयोगकर्ताओं को मेल पहचान बनाने की अनुमति दें"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_IDENTITIES_CUSTOM_FROM_ENABLED": {
+        "name": {
+          "string": "कस्टम 'प्रेषक' सक्षम करें"
+        },
+        "description": {
+          "string": "उपयोगकर्ताओं को अपनी पहचान में कस्टम 'प्रेषक' सेट करने की अनुमति दें"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_IDENTITIES_CUSTOM_NAME_ENABLED": {
+        "name": {
+          "string": "कस्टम 'नाम' सक्षम करें"
+        },
+        "description": {
+          "string": "उपयोगकर्ताओं को अपनी पहचान में कस्टम नाम सेट करने की अनुमति दें"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_IDENTITIES_CUSTOM_REPLY_TO_ENABLED": {
+        "name": {
+          "string": "कस्टम 'रिप्लाई-टू' सक्षम करें"
+        },
+        "description": {
+          "string": "उपयोगकर्ताओं को अपनी पहचान में कस्टम 'रिप्लाई-टू' सेट करने की अनुमति दें"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_ALLOW_EXT_MAIL_ACCOUNT": {
+        "name": {
+          "string": "बाहरी मेल खाता सक्षम करें"
+        },
+        "description": {
+          "string": "उपयोगकर्ताओं को बाहरी खाता सेट करने की अनुमति दें"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_ALLOW_EXT_AVATAR": {
+        "name": {
+          "string": "बाहरी अवतार का उपयोग अनुमत करें"
+        },
+        "description": {
+          "string": "उपयोगकर्ताओं को बाहरी अवतार (ग्रावतार, लिब्रावतार आदि) का उपयोग करने के लिए प्राथमिकताएं सेट करने की अनुमति दें"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_REFRESH_INTERVAL_ALLOWED": {
+        "name": {
+          "string": "मेल के लिए स्वचालित-रिफ्रेश अंतराल सेट करें"
+        },
+        "description": {
+          "string": "'स्वचालित-रिफ्रेश मेल' मान के लिए उपयोगकर्ता चुन सकते हैं, उसके लिए मान सेट करें"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_JUNK_SETTINGS": {
+        "name": {
+          "string": "हैम/स्पैम के लिए ट्रिगर प्रकार सेट करें"
+        },
+        "description": {
+          "string": "जब उपयोगकर्ता मेल को स्पैम/हैम के रूप में चिह्नित करते हैं, तब तंत्र सेट करें"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_JUNK_MAIL_SPAM": {
+        "name": {
+          "string": "स्पैम के लिए मेल"
+        },
+        "description": {
+          "string": "स्पैम आगे भेजे जाने वाले मेल पते को सेट करें"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_SERVER_TYPE": {
+        "name": {
+          "string": "मेल सर्वर प्रकार"
+        },
+        "description": {
+          "string": "मेल सर्वर का प्रकार सेट करें"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_IMAP_SERVER": {
+        "name": {
+          "string": "IMAP सर्वर"
+        },
+        "description": {
+          "string": "IMAP सर्वर का होस्टनेम"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_IMAP_PORT": {
+        "name": {
+          "string": "IMAP पोर्ट"
+        },
+        "description": {
+          "string": "IMAP सर्वर का पोर्ट"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_IMAP_ENCRYPTION": {
+        "name": {
+          "string": "IMAP एन्क्रिप्शन"
+        },
+        "description": {
+          "string": "IMAP सर्वर का एन्क्रिप्शन तंत्र"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_IMAP_AUTH_MECH": {
+        "name": {
+          "string": "IMAP प्रमाणीकरण विधि"
+        },
+        "description": {
+          "string": "IMAP का प्रमाणीकरण तंत्र। सावधानी के बिना 'login' का उपयोग न करें"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SOFT_EMAIL_QUOTA": {
+        "name": {
+          "string": "सॉफ्ट कोटा"
+        },
+        "description": {
+          "string": "सॉफ्ट कोटा का प्रतिशत सेट करें।"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_PURGE_ALLOW": {
+        "name": {
+          "string": "सफाई सक्षम करें"
+        },
+        "description": {
+          "string": "सफाई उपयोगकर्ताओं को किसी फोल्डर या उनके पूरे खाते में किसी तारीख से पुराने सभी मेल हटाने की अनुमति देती है।"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_PURGE_MIN_DATE": {
+        "name": {
+          "string": "सफाई न्यूनतम दिन"
+        },
+        "description": {
+          "string": "उपयोगकर्ता द्वारा सफाई के लिए उपयोग किए जाने वाले न्यूनतम दिन सेट करें। 0 का अर्थ है उपयोगकर्ता अपने सभी मेल हटा सकता है। 30 का अर्थ है उपयोगकर्ता केवल 30 दिन से पुराने मेल ही हटा सकता है।"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_FILTERING_ENABLED": {
+        "name": {
+          "string": "मेल फ़िल्टरिंग सक्षम करें"
+        },
+        "description": {
+          "string": "उपयोगकर्ताओं को मेल के फ़िल्टर सेट करने की अनुमति दें"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_FILTERING_TYPE": {
+        "name": {
+          "string": "मेल फ़िल्टरिंग प्रकार"
+        },
+        "description": {
+          "string": "मेल फ़िल्टरिंग प्रोटोकॉल का प्रकार"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SIEVE_SERVER": {
+        "name": {
+          "string": "सिव सर्वर"
+        },
+        "description": {
+          "string": "सिव सर्वर का होस्टनेम"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SIEVE_PORT": {
+        "name": {
+          "string": "सिव पोर्ट"
+        },
+        "description": {
+          "string": "सिव सर्वर का पोर्ट"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SIEVE_ENCRYPTION": {
+        "name": {
+          "string": "सिव एन्क्रिप्शन"
+        },
+        "description": {
+          "string": "सिव सर्वर का एन्क्रिप्शन"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SIEVE_AUTH_MECH": {
+        "name": {
+          "string": "सिव प्रामाणिकरण तंत्र"
+        },
+        "description": {
+          "string": "सिव के लिए प्रामाणिकरण तंत्र। यदि कोई नहीं"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SIEVE_FOLDER_ENCODING": {
+        "name": {
+          "string": "सिव एन्कोडिंग"
+        },
+        "description": {
+          "string": "सिव सर्वर द्वारा उपयोग की जाने वाली एन्कोडिंग सेट करें।"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SIEVE_HEADER": {
+        "name": {
+          "string": "सिव हेडर"
+        },
+        "description": {
+          "string": "एक सिव स्क्रिप्ट सेट करें जो सभी उपयोगकर्ताओं के सिव स्क्रिप्ट के शुरुआत में होगी"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SIEVE_FOOTER": {
+        "name": {
+          "string": "सिव फुटर"
+        },
+        "description": {
+          "string": "एक सिव स्क्रिप्ट सेट करें जो सभी उपयोगकर्ताओं के सिव स्क्रिप्ट के अंत में होगी"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SIEVE_FIRST_FILTER": {
+        "name": {
+          "string": "प्रारंभिक सिव स्क्रिप्ट"
+        },
+        "description": {
+          "string": "सभी नए उपयोगकर्ताओं के लिए प्रारंभिक सिव स्क्रिप्ट सेट करें। वे बाद में इसे संशोधित कर सकेंगे"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_VACATION_ENABLED": {
+        "name": {
+          "string": "अवकाश संदेश की अनुमति दें"
+        },
+        "description": {
+          "string": "उपयोगकर्ता को अवकाश संदेश सेट करने की अनुमति दें। 'vacation' सिव एक्सटेंशन (rfc5230) का उपयोग करें"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_VACATION_ALLOW_RESPONSE_ALWAYS": {
+        "name": {
+          "string": "हर बार अवकाश संदेश भेजने की अनुमति दें"
+        },
+        "description": {
+          "string": "उपयोगकर्ता को एक अवकाश संदेश सेट करने की अनुमति दें जो ग्रेस पीरियड के बिना हर बार भेजा जाएगा"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_FORWARD_ENABLED": {
+        "name": {
+          "string": "स्वचालित अग्रेषण की अनुमति दें"
+        },
+        "description": {
+          "string": "उपयोगकर्ता को स्वचालित अग्रेषण सेट करने की अनुमति दें। 'redirect' सिव कमांड का उपयोग करें"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_FORWARD_ALLOW_USER_DOMAIN": {
+        "name": {
+          "string": "उपयोगकर्ता डोमेन पर स्वचालित अग्रेषण की अनुमति दें"
+        },
+        "description": {
+          "string": "उपयोगकर्ता को उसी डोमेन के पते पर स्वचालित अग्रेषण सेट करने की अनुमति दें"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_FORWARD_ALLOW_SOGO_DOMAIN": {
+        "name": {
+          "string": "SOGo डोमेन पर स्वचालित अग्रेषण की अनुमति दें"
+        },
+        "description": {
+          "string": "उपयोगकर्ता को SOGo द्वारा ज्ञात पते पर स्वचालित अग्रेषण सेट करने की अनुमति दें"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_FORWARD_ALLOW_EXT_DOMAIN": {
+        "name": {
+          "string": "बाहरी डोमेन पर स्वचालित अग्रेषण की अनुमति दें"
+        },
+        "description": {
+          "string": "उपयोगकर्ता को बाहरी पते पर स्वचालित अग्रेषण सेट करने की अनुमति दें"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_FORWARD_WHITELIST": {
+        "name": {
+          "string": "स्वचालित अग्रेषण व्हाइटलिस्ट डोमेन"
+        },
+        "description": {
+          "string": "उन विशिष्ट डोमेन को सेट करें जहाँ उपयोगकर्ता अग्रेषण कर सकते हैं"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_FORWARD_BLACKLIST": {
+        "name": {
+          "string": "स्वचालित अग्रेषण ब्लैकलिस्ट डोमेन"
+        },
+        "description": {
+          "string": "उन विशिष्ट डोमेन को सेट करें जहाँ उपयोगकर्ताओं को अग्रेषण करने की अनुमति नहीं है"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_NOTIFY_ENABLED": {
+        "name": {
+          "string": "सूचना की अनुमति दें"
+        },
+        "description": {
+          "string": "उपयोगकर्ता को सूचना सेट करने की अनुमति दें। 'notify' sieve एक्सटेंशन (rfc5435) का उपयोग करें"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_NOTIFY_ALLOW_USER_DOMAIN": {
+        "name": {
+          "string": "उपयोगकर्ता डोमेन पर सूचना की अनुमति दें"
+        },
+        "description": {
+          "string": "उपयोगकर्ता को उसी डोमेन के पते पर सूचना सेट करने की अनुमति दें"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_NOTIFY_ALLOW_SOGO_DOMAIN": {
+        "name": {
+          "string": "SOGo डोमेन पर सूचना की अनुमति दें"
+        },
+        "description": {
+          "string": "उपयोगकर्ता को SOGo द्वारा ज्ञात पते पर सूचना सेट करने की अनुमति दें"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_NOTIFY_ALLOW_EXT_DOMAIN": {
+        "name": {
+          "string": "बाहरी डोमेन पर सूचना की अनुमति दें"
+        },
+        "description": {
+          "string": "उपयोगकर्ता को बाहरी पते पर सूचना सेट करने की अनुमति दें"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_NOTIFY_WHITELIST": {
+        "name": {
+          "string": "सूचना व्हाइटलिस्टेड डोमेन"
+        },
+        "description": {
+          "string": "उन विशिष्ट डोमेन को सेट करें जहाँ उपयोगकर्ता सूचना भेज सकते हैं"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_NOTIFY_BLACKLIST": {
+        "name": {
+          "string": "सूचना ब्लैकलिस्टेड डोमेन"
+        },
+        "description": {
+          "string": "उन विशिष्ट डोमेन को सेट करें जहाँ उपयोगकर्ताओं को सूचना भेजने की अनुमति नहीं है"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_OUTGOING_TYPE": {
+        "name": {
+          "string": "आउटगोइंग मेल सर्वर प्रकार"
+        },
+        "description": {
+          "string": "आउटगोइंग मेल सर्वर का प्रकार सेट करें"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SMTP_SERVER": {
+        "name": {
+          "string": "SMTP सर्वर"
+        },
+        "description": {
+          "string": "SMTP सर्वर का होस्टनेम"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SMTP_PORT": {
+        "name": {
+          "string": "SMTP पोर्ट"
+        },
+        "description": {
+          "string": "SMTP सर्वर का पोर्ट"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SMTP_ENCRYPTION": {
+        "name": {
+          "string": "SMTP एन्क्रिप्शन"
+        },
+        "description": {
+          "string": "SMTP सर्वर का एन्क्रिप्शन तंत्र"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SMTP_AUTH_MECH": {
+        "name": {
+          "string": "SMTP प्रमाणीकरण विधि"
+        },
+        "description": {
+          "string": "SMTP का प्रमाणीकरण तंत्र। सावधानी के बिना 'None' का उपयोग न करें"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SMTP_MASTER_ENABLED": {
+        "name": {
+          "string": "SMTP मास्टर खाता सक्षम"
+        },
+        "description": {
+          "string": "सभी सिस्टम संदेशों (इवेंट, नोटिफिकेशन आदि) के लिए मास्टर खाते का उपयोग करें"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SMTP_MASTER_FROM": {
+        "name": {
+          "string": "मास्टर खाता से"
+        },
+        "description": {
+          "string": "SMTP मास्टर खाता से"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SMTP_MASTER_LOGIN": {
+        "name": {
+          "string": "मास्टर खाता लॉगिन"
+        },
+        "description": {
+          "string": "SMTP मास्टर खाता ईमेल"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SMTP_MASTER_PWD": {
+        "name": {
+          "string": "मास्टर खाता पासवर्ड"
+        },
+        "description": {
+          "string": "SMTP मास्टर खाता पासवर्ड"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_MAX_SUBMISSION": {
+        "name": {
+          "string": "अधिकतम मेल भेजे गए"
+        },
+        "description": {
+          "string": "एक समय में एक उपयोगकर्ता द्वारा भेजे जा सकने वाले अधिकतम मेल"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_MAX_SUBMISSION_INTERVAL": {
+        "name": {
+          "string": "अधिकतम मेल भेजने का समय"
+        },
+        "description": {
+          "string": "सेकंड में वह समयावधि जिसमें 'अधिकतम मेल भेजे गए' लागू होता है"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_MAX_SUBMISSION_BLOCK_INTERVAl": {
+        "name": {
+          "string": "अधिकतम मेल भेजने के बाद ब्लॉक समय"
+        },
+        "description": {
+          "string": "'अधिकतम मेल भेजे जाने' ट्रिगर होने के बाद उपयोगकर्ता को मेल भेजने से प्रतिबंधित किया जाने वाला समय"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_MAX_RECIPIENT": {
+        "name": {
+          "string": "मेल में अधिकतम प्राप्तकर्ता"
+        },
+        "description": {
+          "string": "मास्टर खाता पासवर्ड"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_CHECK_FROM": {
+        "name": {
+          "string": "'प्रेषक' (From) जाँचें"
+        },
+        "description": {
+          "string": "बाहर जाने वाले मेल सर्वर को अनुरोध भेजने से पहले जाँचें कि 'प्रेषक' उपयोगकर्ता के मेल (डिफ़ॉल्ट, उपनाम, पहचान आदि) में से एक है"
+        },
+        "developer_comment": ""
+      }
+    }
+  }
+}

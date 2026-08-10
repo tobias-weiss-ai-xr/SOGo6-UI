@@ -1,0 +1,133 @@
+{
+  "US_MAIL_VACATIONS": {
+    "title": {
+      "string": "Lomavastausten asetukset",
+      "context": "Title for the vacation settings page"
+    },
+    "page": {
+      "description": {
+        "string": "Määritä poissaolovastaustasi ja sen aktiivisuusaika."
+      }
+    },
+    "errors_api": {
+      "load_failed": {
+        "string": "Lomavastausten asetuksia ei voitu ladata. Yritä myöhemmin uudelleen."
+      },
+      "feature_disabled": {
+        "string": "Lomavastausten automaattinen lähetys on poistettu käytöstä ylläpitäjän toimesta."
+      }
+    },
+    "errors": {
+      "validation": {
+        "message_required": {
+          "string": "Automaattisen vastauksen viesti on pakollinen, kun lomavastaus on käytössä."
+        },
+        "dates_required": {
+          "string": "Aloitus- ja päättymispäivämäärät ovat pakollisia, kun päivämäärärajoitukset ovat käytössä."
+        },
+        "date_order": {
+          "string": "Päättymispäivämäärän tulee olla sama tai myöhemmin kuin aloituspäivämäärä."
+        },
+        "time_invalid": {
+          "string": "Anna kelvollinen aika muotoon TT:MM."
+        },
+        "weekday_required": {
+          "string": "Valitse vähintään yksi viikonpäivä, kun viikonpäivärajoitukset ovat käytössä."
+        },
+        "response_interval_invalid": {
+          "string": "Vastausväli tulee olla nolla tai positiivinen luku."
+        },
+        "response_interval_zero": {
+          "string": "Nollan päivän vastausväli ei ole sallittu tällä verkkotunnuksella."
+        }
+      }
+    },
+    "auto_reply": {
+      "enable": {
+        "string": "Ota lomavastaus käyttöön"
+      },
+      "subject": {
+        "label": {
+          "string": "Automaattisen vastauksen otsikko"
+        },
+        "description": {
+          "string": "Jätä tyhjäksi, jos haluat käyttää oletusotsikkoa. Voit kirjoittaa {subject}, jotta alkuperäinen otsikko lisätään."
+        }
+      },
+      "message": {
+        "string": "Automaattisen vastauksen viesti"
+      },
+      "constraints": {
+        "title": {
+          "string": "Aktivointirajoitukset"
+        },
+        "description": {
+          "string": "Mukauta päivien ja tuntien alueita itsenäisesti ja yhdistä ne halutessasi tiettyihin viikonpäiviin, jotta lomafiltterisi vastaavat omia mieltymyksiäsi."
+        },
+        "enable": {
+          "days": {
+            "string": "Ota automaattinen vastaus käyttöön näinä päivinä"
+          },
+          "hours": {
+            "string": "Ota automaattinen vastaus käyttöön näiden tuntien välillä"
+          },
+          "range": {
+            "string": "Ota automaattinen vastaus käyttöön näiden päivien välillä"
+          }
+        },
+        "time": {
+          "start": {
+            "string": "Aloitusaika"
+          },
+          "end": {
+            "string": "Lopetusaika"
+          }
+        },
+        "weekdays": {
+          "monday": {
+            "string": "Maanantai"
+          },
+          "tuesday": {
+            "string": "Tiistai"
+          },
+          "wednesday": {
+            "string": "Keskiviikko"
+          },
+          "thursday": {
+            "string": "Torstai"
+          },
+          "friday": {
+            "string": "Perjantai"
+          },
+          "saturday": {
+            "string": "Lauantai"
+          },
+          "sunday": {
+            "string": "Sunnuntai"
+          }
+        }
+      },
+      "response": {
+        "interval_days": {
+          "label": {
+            "string": "Automaattivastausten vähimmäisaikaväli (päivissä)"
+          },
+          "placeholder": {
+            "string": "Jätä tyhjäksä oletusarvoa varten"
+          },
+          "description": {
+            "string": "Estää toistuvien lomavastausten lähettämisen tämän ajanjakson sisällä (RFC 5230 :päivät)."
+          }
+        },
+        "send_always": {
+          "label": {
+            "string": "Lähetä lomaviesti aina"
+          },
+          "description": {
+            "string": "Lomaviesti lähetetään ennen suodattimiesi soveltamista."
+          }
+        }
+      }
+    }
+  }
+}

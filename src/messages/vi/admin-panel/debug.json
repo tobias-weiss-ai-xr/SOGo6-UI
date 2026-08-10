@@ -1,0 +1,52 @@
+{
+  "AP_DEBUG": {
+    "title": {
+      "string": "Gỡ lỗi Hộp thư"
+    },
+    "description": {
+      "string": "Công cụ chẩn đoán để khắc phục sự cố giao nhận thư. Xem nguồn thư thô hoặc tiêu đề đã phân tích."
+    },
+    "query": {
+      "title": {
+        "string": "Truy vấn Gỡ lỗi"
+      },
+      "button": {
+        "string": "Kiểm tra"
+      }
+    },
+    "labels": {
+      "user": {
+        "string": "Người dùng"
+      },
+      "folder": {
+        "string": "Thư mục IMAP"
+      },
+      "mail_uid": {
+        "string": "UID Thư"
+      },
+      "select_user": {
+        "string": "Chọn người dùng..."
+      }
+    },
+    "result": {
+      "raw": {
+        "title": {
+          "string": "Nguồn Thư Thô"
+        }
+      },
+      "headers": {
+        "title": {
+          "string": "Tiêu đề Đã Phân Tích"
+        }
+      }
+    },
+    "errors": {
+      "fields_required": {
+        "string": "Yêu cầu nhập Người dùng, thư mục và UID thư"
+      },
+      "fetch_failed": {
+        "string": "Không thể lấy dữ liệu gỡ lỗi"
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "AI_ATTACH": {
+    "title": {
+      "string": "Inteligentne akcje załączników"
+    },
+    "description": {
+      "string": "Automatycznie wykrywa typ dokumentu i sugeruje akcje: zapisz, prześlij dalej lub zarchiwizuj."
+    },
+    "input": {
+      "title": {
+        "string": "Załącznik"
+      },
+      "filename": {
+        "string": "Nazwa pliku"
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Analiza"
+      },
+      "empty": {
+        "string": "Wprowadź nazwę pliku"
+      },
+      "preview": {
+        "string": "Można podglądać"
+      }
+    },
+    "classify": {
+      "string": "Klasyfikuj"
+    },
+    "errors": {
+      "empty": {
+        "string": "Wprowadź nazwę pliku"
+      },
+      "fail": {
+        "string": "Klasyfikacja nie powiodła się"
+      }
+    }
+  }
+}

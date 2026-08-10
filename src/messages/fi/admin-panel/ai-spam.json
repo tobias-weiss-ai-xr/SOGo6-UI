@@ -1,0 +1,49 @@
+{
+  "AI_SPAM": {
+    "title": {
+      "string": "Älykäs roskapostisuodatin"
+    },
+    "description": {
+      "string": "Reaaliaikainen roskapisteytys mallianalyysin, lähettäjän maineen ja sisällön heuristiikkojen avulla."
+    },
+    "input": {
+      "title": {
+        "string": "Pisteytettävä sähköposti"
+      },
+      "subject": {
+        "string": "Aihe"
+      },
+      "sender": {
+        "string": "Lähettäjä"
+      },
+      "body": {
+        "string": "Viestin sisältö"
+      },
+      "placeholder": {
+        "string": "Liitä sähköpostin sisältö tähän..."
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Roskapisteet"
+      },
+      "empty": {
+        "string": "Syötä sähköpostin sisältö ja klikkaa Pisteytä"
+      },
+      "signals": {
+        "string": "Havaitut signaalit"
+      }
+    },
+    "score": {
+      "string": "Pisteytä sähköposti"
+    },
+    "errors": {
+      "empty": {
+        "string": "Anna aihe tai viestin sisältö"
+      },
+      "fail": {
+        "string": "Pisteytys epäonnistui"
+      }
+    }
+  }
+}

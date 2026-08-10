@@ -1,0 +1,40 @@
+{
+  "AP_FREEBUSY": {
+    "title": {
+      "string": "Ledig/Opptatt-oppslag"
+    },
+    "description": {
+      "string": "Visuell overlapp av deltakeres timeplaner. Sjekk tilgjengelighet når du oppretter arrangementer."
+    },
+    "form": {
+      "title": {
+        "string": "Sjekk tilgjengelighet"
+      },
+      "participants": {
+        "string": "Deltakere"
+      },
+      "start": {
+        "string": "Start"
+      },
+      "end": {
+        "string": "Slutt"
+      },
+      "lookup": {
+        "string": "Søk"
+      }
+    },
+    "results": {
+      "title": {
+        "string": "Opptatte tidsrom"
+      }
+    },
+    "errors": {
+      "fields": {
+        "string": "Minst én deltaker kreves"
+      }
+    },
+    "error": {
+      "string": "Oppslag mislyktes"
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "AP_BACKUP": {
+    "title": {
+      "string": "Backup-Automatisierung"
+    },
+    "description": {
+      "string": "Datenbank- und Mailstore-Backups mit Aufbewahrungsrichtlinien und optionalem S3-Upload verwalten."
+    },
+    "trigger": {
+      "button": {
+        "string": "Backup starten"
+      },
+      "running": {
+        "string": "Wird ausgeführt..."
+      },
+      "success": {
+        "string": "Backup abgeschlossen"
+      },
+      "error": {
+        "string": "Backup fehlgeschlagen"
+      }
+    },
+    "config": {
+      "retention": {
+        "string": "Aufbewahrung"
+      },
+      "s3": {
+        "string": "S3-Upload"
+      },
+      "mailstore": {
+        "string": "Mailstore"
+      },
+      "total": {
+        "string": "Backups gesamt"
+      }
+    },
+    "table": {
+      "id": {
+        "string": "ID"
+      },
+      "timestamp": {
+        "string": "Zeitstempel"
+      },
+      "type": {
+        "string": "Type"
+      },
+      "status": {
+        "string": "Status"
+      },
+      "size": {
+        "string": "Größe"
+      },
+      "duration": {
+        "string": "Dauer"
+      },
+      "empty": {
+        "string": "Noch keine Backups."
+      }
+    }
+  }
+}

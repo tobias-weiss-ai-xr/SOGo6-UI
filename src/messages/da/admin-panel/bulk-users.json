@@ -1,0 +1,61 @@
+{
+  "AP_BULK": {
+    "title": {
+      "string": "Bulk-brugersyring"
+    },
+    "description": {
+      "string": "Importer og eksporter brugere i bulk ved hjælp af CSV-filer."
+    },
+    "export": {
+      "title": {
+        "string": "Eksportér brugere"
+      },
+      "description": {
+        "string": "Download alle brugere som en CSV-fil."
+      },
+      "format": {
+        "string": "CSV-fil (.csv)"
+      },
+      "button": {
+        "string": "Eksportér CSV"
+      },
+      "success": {
+        "string": "Eksport downloadet"
+      },
+      "error": {
+        "string": "Eksport mislykkedes"
+      }
+    },
+    "import": {
+      "title": {
+        "string": "Importer brugere"
+      },
+      "description": {
+        "string": "Upload en CSV-fil med brugerdata for at oprette eller opdatere konti."
+      },
+      "dropzone": {
+        "string": "Klik for at uploade CSV"
+      },
+      "button": {
+        "string": "Importer CSV"
+      },
+      "remove": {
+        "string": "Fjern fil"
+      },
+      "success": {
+        "string": "Importeret: {created} oprettet, {updated} opdateret"
+      },
+      "error": {
+        "string": "Import mislykkedes"
+      }
+    },
+    "format": {
+      "title": {
+        "string": "CSV-format"
+      },
+      "hint": {
+        "string": "Første række skal være overskriften. uid, cn, sn, givenName, mail er påkrævet. password er valgfrit (tilfældigt, hvis tomt)."
+      }
+    }
+  }
+}

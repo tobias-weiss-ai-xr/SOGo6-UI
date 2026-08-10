@@ -1,0 +1,35 @@
+{
+  "AP_DBMIG": {
+    "title": {
+      "string": "Adatbázis migráció"
+    },
+    "description": {
+      "string": "Sémaverziók és migrációs előzmények nyomon követése. Migrációk futtatása az admin felületről."
+    },
+    "current_version": {
+      "string": "Jelenlegi sémaverzió"
+    },
+    "run": {
+      "button": {
+        "string": "Migráció futtatása"
+      },
+      "running": {
+        "string": "Futtatás alatt..."
+      },
+      "success": {
+        "string": "Migráció alkalmazva"
+      },
+      "error": {
+        "string": "Migráció sikertelen"
+      }
+    },
+    "history": {
+      "title": {
+        "string": "Migrációs előzmények"
+      },
+      "empty": {
+        "string": "Nincsenek rögzített migrációk."
+      }
+    }
+  }
+}

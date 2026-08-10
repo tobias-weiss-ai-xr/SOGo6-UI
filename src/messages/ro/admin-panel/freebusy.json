@@ -1,0 +1,40 @@
+{
+  "AP_FREEBUSY": {
+    "title": {
+      "string": "Căutare Disponibilitate/Ocupat"
+    },
+    "description": {
+      "string": "Suprapunere vizuală a programului participanților. Verifică disponibilitatea la crearea evenimentelor."
+    },
+    "form": {
+      "title": {
+        "string": "Verifică Disponibilitatea"
+      },
+      "participants": {
+        "string": "Participanți"
+      },
+      "start": {
+        "string": "Început"
+      },
+      "end": {
+        "string": "Sfârșit"
+      },
+      "lookup": {
+        "string": "Caută"
+      }
+    },
+    "results": {
+      "title": {
+        "string": "Intervale Ocupate"
+      }
+    },
+    "errors": {
+      "fields": {
+        "string": "Este necesar cel puțin un participant"
+      }
+    },
+    "error": {
+      "string": "Căutarea a eșuat"
+    }
+  }
+}

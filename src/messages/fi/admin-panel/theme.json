@@ -1,0 +1,135 @@
+{
+  "AP_THEME": {
+    "title": {
+      "string": "Teeman asetukset"
+    },
+    "description": {
+      "string": "Mukauta SOGo-käyttöliittymän ulkoasua ja tuntuja"
+    },
+    "form_title": {
+      "string": "Mukautettu teema"
+    },
+    "form_description": {
+      "string": "Määritä värit, logo ja mukautettu CSS ryhmäohjelmiston käyttöliittymälle"
+    },
+    "fields": {
+      "primary": {
+        "label": {
+          "string": "Pääväri"
+        },
+        "description": {
+          "string": "Päävärin HSL-arvot (esim. 180 25% 40%)"
+        }
+      },
+      "primary_foreground": {
+        "label": {
+          "string": "Pääväri taustalla oleva teksti"
+        },
+        "description": {
+          "string": "Tekstin väri pääväritaustoilla"
+        }
+      },
+      "background": {
+        "label": {
+          "string": "Tausta"
+        },
+        "description": {
+          "string": "Sivun taustan HSL-arvot"
+        }
+      },
+      "foreground": {
+        "label": {
+          "string": "Etualalla oleva väri"
+        },
+        "description": {
+          "string": "Oletustekstin väri"
+        }
+      },
+      "sidebar_background": {
+        "label": {
+          "string": "Sivupalkin tausta"
+        },
+        "description": {
+          "string": "Sivupalkin taustan HSL-arvot"
+        }
+      },
+      "sidebar_foreground": {
+        "label": {
+          "string": "Sivupalkin teksti"
+        },
+        "description": {
+          "string": "Tekstin väri sivupalkissa"
+        }
+      },
+      "sidebar_primary": {
+        "label": {
+          "string": "Sivupalkin pääväri"
+        },
+        "description": {
+          "string": "Pääkorostusväri sivupalkissa"
+        }
+      },
+      "sidebar_accent": {
+        "label": {
+          "string": "Sivupalkin korostusväri"
+        },
+        "description": {
+          "string": "Korostusväri sivupalkissa"
+        }
+      },
+      "header_background": {
+        "label": {
+          "string": "Ylätunnisteen tausta"
+        },
+        "description": {
+          "string": "HSL-arvot ylätunnistepalkille"
+        }
+      },
+      "header_foreground": {
+        "label": {
+          "string": "Ylätunnisteen etualue"
+        },
+        "description": {
+          "string": "Tekstin väri ylätunnisteessa"
+        }
+      },
+      "logo_url": {
+        "label": {
+          "string": "Logon URL-osoite"
+        },
+        "description": {
+          "string": "Mukautetun logokuvan URL-osoite (valinnainen)"
+        }
+      },
+      "custom_css": {
+        "label": {
+          "string": "Mukautettu CSS"
+        },
+        "description": {
+          "string": "Lisä-CSS-säännöt (valinnainen)"
+        }
+      }
+    },
+    "save": {
+      "string": "Tallenna muutokset"
+    },
+    "saving": {
+      "string": "Tallennetaan…"
+    },
+    "saved": {
+      "string": "Teeman asetukset tallennettu onnistuneesti"
+    },
+    "save_error": {
+      "string": "Tallennus epäonnistui: {message}"
+    },
+    "unsaved_changes": {
+      "string": "Sinulla on tallentamattomia muutoksia"
+    },
+    "load_error": {
+      "string": "Teeman asetusten lataus epäonnistui"
+    },
+    "retry": {
+      "string": "Yritä uudelleen"
+    }
+  }
+}

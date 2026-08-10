@@ -1,0 +1,34 @@
+{
+  "AP_HEALTH": {
+    "title": {
+      "string": "Järjestelmän tila"
+    },
+    "description": {
+      "string": "SOGo-pinon kaikkien palveluiden reaaliaikainen tila"
+    },
+    "status": {
+      "all_ok": {
+        "string": "Kaikki järjestelmät toiminnassa"
+      },
+      "degraded": {
+        "string": "Heikentynyt"
+      }
+    },
+    "overview": {
+      "uptime": {
+        "string": "Käyttöaika"
+      },
+      "version": {
+        "string": "Versio"
+      },
+      "services": {
+        "string": "Palvelut kunnossa"
+      }
+    },
+    "errors": {
+      "load_failed": {
+        "string": "Tilan tietojen lataus epäonnistui"
+      }
+    }
+  }
+}

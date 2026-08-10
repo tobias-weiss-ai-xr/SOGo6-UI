@@ -1,0 +1,24 @@
+{
+    "AP_DEBUG": {
+        "title": { "string": "Debug Casella Postale" },
+        "description": { "string": "Strumento diagnostico per risolvere problemi di consegna email. Visualizza il sorgente email grezzo o le intestazioni analizzate." },
+        "query": {
+            "title": { "string": "Query di Debug" },
+            "button": { "string": "Ispeziona" }
+        },
+        "labels": {
+            "user": { "string": "Utente" },
+            "folder": { "string": "Cartella IMAP" },
+            "mail_uid": { "string": "UID Mail" },
+            "select_user": { "string": "Seleziona utente..." }
+        },
+        "result": {
+            "raw": { "title": { "string": "Sorgente Email Grezzo" } },
+            "headers": { "title": { "string": "Intestazioni Analizzate" } }
+        },
+        "errors": {
+            "fields_required": { "string": "Utente, cartella e UID mail sono obbligatori" },
+            "fetch_failed": { "string": "Recupero dati debug fallito" }
+        }
+    }
+}

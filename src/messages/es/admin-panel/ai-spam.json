@@ -1,0 +1,49 @@
+{
+  "AI_SPAM": {
+    "title": {
+      "string": "Filtro antispam inteligente"
+    },
+    "description": {
+      "string": "Detección de spam en tiempo real con análisis de señales"
+    },
+    "input": {
+      "title": {
+        "string": "Entrada"
+      },
+      "subject": {
+        "string": "Asunto"
+      },
+      "sender": {
+        "string": "Remitente"
+      },
+      "body": {
+        "string": "Texto del correo"
+      },
+      "placeholder": {
+        "string": "Pegue el texto para analizar..."
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Resultado"
+      },
+      "empty": {
+        "string": "El resultado aparecerá aquí"
+      },
+      "signals": {
+        "string": "Señales"
+      }
+    },
+    "score": {
+      "string": "Evaluar"
+    },
+    "errors": {
+      "empty": {
+        "string": "Asunto o texto requerido"
+      },
+      "fail": {
+        "string": "Análisis fallido"
+      }
+    }
+  }
+}

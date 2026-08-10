@@ -1,0 +1,59 @@
+{
+    "AP_QUICK": {
+        "title": {
+            "string": "Acciones rápidas"
+        },
+        "description": {
+            "string": "User-defined multi-step actions triggered with a single click from the mail list."
+        },
+        "form": {
+            "create": {
+                "string": "New Acción"
+            },
+            "cancel": {
+                "string": "Cancelar"
+            },
+            "title": {
+                "string": "Create Quick Acción"
+            },
+            "name": {
+                "string": "Action Name"
+            },
+            "icon": {
+                "string": "Icon"
+            },
+            "steps": {
+                "string": "Steps"
+            },
+            "submit": {
+                "string": "Create Acción"
+            }
+        },
+        "create": {
+            "success": {
+                "string": "Action created"
+            },
+            "error": {
+                "string": "Failed to create"
+            }
+        },
+        "delete": {
+            "success": {
+                "string": "Action deleted"
+            },
+            "error": {
+                "string": "Failed to delete"
+            }
+        },
+        "list": {
+            "empty": {
+                "string": "No quick actions yet. Create one to speed up your workflow."
+            }
+        },
+        "errors": {
+            "fields": {
+                "string": "Name and at least one step are required"
+            }
+        }
+    }
+}

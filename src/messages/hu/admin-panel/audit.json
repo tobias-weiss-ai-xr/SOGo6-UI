@@ -1,0 +1,44 @@
+{
+  "AP_AUDIT": {
+    "title": {
+      "string": "Napló"
+    },
+    "description": {
+      "string": "Hamisítás elleni védelmet biztosító napló az adminisztrátorok és felhasználók tevékenységeiről. A bejegyzések csak fűzhetők hozzá, módosítani vagy törölni nem lehet őket."
+    },
+    "table": {
+      "timestamp": {
+        "string": "Időbélyeg"
+      },
+      "action": {
+        "string": "Művelet"
+      },
+      "actor": {
+        "string": "Végrehajtó"
+      },
+      "target": {
+        "string": "Cél"
+      },
+      "detail": {
+        "string": "Részletek"
+      },
+      "ip": {
+        "string": "IP-cím"
+      },
+      "no_entries": {
+        "string": "Nincsenek naplóbejegyzések."
+      }
+    },
+    "count_one": {
+      "string": "bejegyzés"
+    },
+    "count_many": {
+      "string": "bejegyzés"
+    },
+    "errors": {
+      "load_failed": {
+        "string": "A napló betöltése sikertelen"
+      }
+    }
+  }
+}

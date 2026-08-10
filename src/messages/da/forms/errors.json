@@ -1,0 +1,14 @@
+{
+  "FORM_ERRORS": {
+    "required": {
+      "default": {
+        "string": "Dette felt er påkrævet"
+      }
+    },
+    "invalid": {
+      "email": {
+        "string": "Ugyldig e-mail-adresse"
+      }
+    }
+  }
+}

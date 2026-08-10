@@ -1,0 +1,130 @@
+{
+    "AP_USERS": {
+        "title": {
+            "string": "User Management"
+        },
+        "description": {
+            "string": "Create, edit, and delete user accounts in the LDAP directory"
+        },
+        "search": {
+            "placeholder": {
+                "string": "Search by name, email, or UID..."
+            },
+            "clear": {
+                "string": "Clear"
+            }
+        },
+        "table": {
+            "uid": {
+                "string": "UID"
+            },
+            "cn": {
+                "string": "Full Name"
+            },
+            "mail": {
+                "string": "Email"
+            },
+            "sn": {
+                "string": "Surname"
+            },
+            "givenName": {
+                "string": "Given Name"
+            },
+            "uidNumber": {
+                "string": "UID Number"
+            },
+            "gidNumber": {
+                "string": "GID Number"
+            },
+            "homeDirectory": {
+                "string": "Home Directory"
+            },
+            "actions": {
+                "string": "Actions"
+            },
+            "no_users": {
+                "string": "No users found"
+            },
+            "loading": {
+                "string": "Loading users..."
+            }
+        },
+        "create": {
+            "button": {
+                "string": "Create User"
+            },
+            "title": {
+                "string": "Create New User"
+            },
+            "success": {
+                "string": "User created successfully"
+            },
+            "error": {
+                "string": "Failed to create user"
+            }
+        },
+        "edit": {
+            "button": {
+                "string": "编辑"
+            },
+            "title": {
+                "string": "Edit User"
+            },
+            "save": {
+                "string": "Save Changes"
+            },
+            "success": {
+                "string": "User updated successfully"
+            },
+            "error": {
+                "string": "Failed to update user"
+            }
+        },
+        "delete": {
+            "button": {
+                "string": "删除"
+            },
+            "confirm": {
+                "string": "Are you sure you want to delete user {uid}?"
+            },
+            "success": {
+                "string": "User deleted successfully"
+            },
+            "error": {
+                "string": "Failed to delete user"
+            }
+        },
+        "form": {
+            "uid": {
+                "string": "User ID (email)"
+            },
+            "cn": {
+                "string": "Full Name"
+            },
+            "sn": {
+                "string": "Surname"
+            },
+            "givenName": {
+                "string": "Given Name"
+            },
+            "mail": {
+                "string": "Email Address"
+            },
+            "password": {
+                "string": "Password"
+            },
+            "uidNumber": {
+                "string": "UID Number (optional)"
+            },
+            "gidNumber": {
+                "string": "GID Number (optional)"
+            },
+            "homeDirectory": {
+                "string": "Home Directory (optional)"
+            },
+            "required": {
+                "string": "Required"
+            }
+        }
+    }
+}

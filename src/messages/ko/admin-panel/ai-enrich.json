@@ -1,0 +1,54 @@
+{
+  "AI_ENRICH": {
+    "title": {
+      "string": "연락처 자동 보완"
+    },
+    "description": {
+      "string": "이메일 서명에서 전화번호, 직함, 회사, 위치 추출"
+    },
+    "input": {
+      "title": {
+        "string": "이메일 서명"
+      },
+      "signature": {
+        "string": "서명 텍스트"
+      },
+      "placeholder": {
+        "string": "이메일 서명을 여기에 붙여넣으세요..."
+      }
+    },
+    "output": {
+      "title": {
+        "string": "추출된 정보"
+      },
+      "empty": {
+        "string": "서명 텍스트를 입력하고 추출 버튼을 클릭하세요"
+      }
+    },
+    "extract": {
+      "string": "정보 추출"
+    },
+    "field": {
+      "phone": {
+        "string": "전화번호"
+      },
+      "title": {
+        "string": "직함"
+      },
+      "company": {
+        "string": "회사"
+      },
+      "location": {
+        "string": "위치"
+      }
+    },
+    "errors": {
+      "empty": {
+        "string": "텍스트를 입력하세요"
+      },
+      "fail": {
+        "string": "추출 실패"
+      }
+    }
+  }
+}

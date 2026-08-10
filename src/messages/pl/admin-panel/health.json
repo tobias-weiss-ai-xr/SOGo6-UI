@@ -1,0 +1,34 @@
+{
+  "AP_HEALTH": {
+    "title": {
+      "string": "Stan systemu"
+    },
+    "description": {
+      "string": "Status w czasie rzeczywistym wszystkich usług w stosie SOGo."
+    },
+    "status": {
+      "all_ok": {
+        "string": "Wszystkie systemy działają poprawnie"
+      },
+      "degraded": {
+        "string": "Ograniczone działanie"
+      }
+    },
+    "overview": {
+      "uptime": {
+        "string": "Czas działania"
+      },
+      "version": {
+        "string": "Wersja"
+      },
+      "services": {
+        "string": "Usługi sprawne"
+      }
+    },
+    "errors": {
+      "load_failed": {
+        "string": "Nie udało się załadować danych o stanie systemu"
+      }
+    }
+  }
+}

@@ -1,0 +1,215 @@
+{
+    "COMPOSE": {
+        "from": {
+            "string": "Da",
+            "context": "Label for the sender identity selector in the compose form"
+        },
+        "to": {
+            "string": "A",
+            "context": "Label for the recipient field in the compose form"
+        },
+        "new_message": {
+            "string": "Nuovo messaggio",
+            "context": "Button for composing a new message in sidebar"
+        },
+        "send": {
+            "string": "Invia",
+            "context": "Send the composed message"
+        },
+        "sending": {
+            "string": "Invio in corso...",
+            "context": "Indicates that the message is currently being sent"
+        },
+        "no_recipient_alert": {
+            "title": {
+                "string": "Nessun destinatario",
+                "context": "Title of the alert shown when the user tries to send a message without any recipients"
+            },
+            "content": {
+                "string": "Aggiungi almeno un destinatario prima di inviare.",
+                "context": "Content of the alert shown when the user tries to send a message without any recipients"
+            },
+            "ok": {
+                "string": "OK",
+                "context": "Label for the OK button in the alert"
+            },
+            "context": "Alert shown when the user tries to send a message without any recipients"
+        },
+        "no_subject_alert": {
+            "title": {
+                "string": "Nessun oggetto",
+                "context": "Title of the confirmation shown when the user tries to send a message without a subject"
+            },
+            "content": {
+                "string": "Questo messaggio non ha un oggetto. Vuoi inviarlo comunque?",
+                "context": "Content of the confirmation shown when the user tries to send a message without a subject"
+            },
+            "context": "Confirmation shown when the user tries to send a message without a subject"
+        },
+        "no_body_alert": {
+            "title": {
+                "string": "Nessun contenuto",
+                "context": "Title of the confirmation shown when the user tries to send a message without any content"
+            },
+            "content": {
+                "string": "Questo messaggio non ha contenuto. Vuoi inviarlo comunque?",
+                "context": "Content of the confirmation shown when the user tries to send a message without any content"
+            },
+            "context": "Confirmation shown when the user tries to send a message without any content"
+        },
+        "no_subject_body_alert": {
+            "title": {
+                "string": "Nessun oggetto e nessun contenuto",
+                "context": "Title of the confirmation shown when the user tries to send a message without a subject and without any content"
+            },
+            "content": {
+                "string": "Questo messaggio non ha oggetto né contenuto. Vuoi inviarlo comunque?",
+                "context": "Content of the confirmation shown when the user tries to send a message without a subject and without any content"
+            },
+            "context": "Confirmation shown when the user tries to send a message without a subject and without any content"
+        },
+        "empty_content_alert": {
+            "send": {
+                "string": "Invia comunque",
+                "context": "Label for the button confirming the send despite the missing subject and/or content"
+            },
+            "cancel": {
+                "string": "Annulla",
+                "context": "Label for the button cancelling the send to let the user fix the missing subject and/or content"
+            }
+        },
+        "schedule_sending": {
+            "string": "Programma invio",
+            "change": "Cambia programma",
+            "clear": "Cancella programma",
+            "context": "Schedule the sending of the composed message"
+        },
+        "save_draft": {
+            "string": "Salva bozza",
+            "context": "Save the composed message as a draft"
+        },
+        "discard_draft": {
+            "string": "Scarta bozza",
+            "context": "Discard the current draft"
+        },
+        "cc": {
+            "string": "Cc",
+            "context": "Carbon copy recipient"
+        },
+        "bcc": {
+            "string": "Ccn",
+            "context": "Blind carbon copy recipient"
+        },
+        "subject": {
+            "string": "Oggetto",
+            "context": "Subject of the email"
+        },
+        "minimize": {
+            "string": "Minimizza",
+            "context": "Minimize the compose window"
+        },
+        "maximize": {
+            "string": "Massimizza",
+            "context": "Maximize the compose window"
+        },
+        "restore": {
+            "string": "Ripristina",
+            "context": "Restore the compose window to its previous size"
+        },
+        "close": {
+            "string": "Chiudi",
+            "context": "Close the compose window"
+        },
+        "open_in_new_page": {
+            "string": "Apri in nuova pagina",
+            "context": "Open the compose window in a new page"
+        },
+        "jitsi": {
+            "string": "Inserisci link riunione Jitsi",
+            "context": "Button to insert a Jitsi video meeting link into the message body"
+        },
+        "max_recipients_reached": {
+            "string": "Raggiunto il massimo di {max} destinatari",
+            "context": "Error shown when the maximum number of recipients has been reached"
+        },
+        "max_windows_error": {
+            "string": "Massimo {max} finestre di composizione consentite.",
+            "context": "Error shown when the user tries to open more than three floating compose windows"
+        },
+        "signature": {
+            "string": "Firma",
+            "context": "Label for the signature picker button in the compose header"
+        },
+        "no_signature": {
+            "string": "Nessuna firma",
+            "context": "Label for the option to have no signature in the signature picker"
+        },
+        "attachment": {
+            "string": "Inserisci allegato",
+            "context": "Button to insert an attachment into the message body",
+            "download": {
+                "string": "Scarica allegato",
+                "context": "Title for the download attachment button"
+            }
+        },
+        "return_receipt": {
+            "string": "Ricevuta di ritorno",
+            "context": "Button to request a return receipt for the email"
+        },
+        "priority": {
+            "string": "Imposta priorità",
+            "context": "Button to set the priority of the email"
+        },
+        "low": {
+            "string": "Bassa",
+            "context": "Option to set the email priority to low"
+        },
+        "lowest": {
+            "string": "Molto bassa",
+            "context": "Option to set the email priority to lowest"
+        },
+        "normal": {
+            "string": "Normale",
+            "context": "Option to set the email priority to normal"
+        },
+        "high": {
+            "string": "Alta",
+            "context": "Option to set the email priority to high"
+        },
+        "highest": {
+            "string": "Molto alta",
+            "context": "Option to set the email priority to highest"
+        },
+        "attachment_error": {
+            "string": "Caricamento allegato fallito",
+            "context": "Error message shown when an attachment fails to upload"
+        },
+        "drop_files": {
+            "string": "Trascina i file qui",
+            "context": "Overlay message shown when the user drags files over the compose window"
+        },
+        "attachment_upload": {
+            "string": "Caricamento allegato in corso...",
+            "context": "Message shown while an attachment is being uploaded"
+        },
+        "recipient_search": {
+            "loading": {
+                "string": "Ricerca destinatari in corso...",
+                "context": "Loading state while searching contacts and users"
+            },
+            "add_direct": {
+                "string": "Aggiungi \"{email}\"",
+                "context": "Add a typed email address directly as recipient"
+            }
+        }
+    },
+    "scheduleSend": {
+        "title": "Programma Invio",
+        "description": "Scegli quando consegnare questa email",
+        "time": "Ora",
+        "confirm": "Programma",
+        "clear": "Cancella programma",
+        "currentlyScheduled": "Attualmente programmato per {time}",
+        "change": "Cambia programma"
+    }
+}

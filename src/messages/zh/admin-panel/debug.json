@@ -1,0 +1,52 @@
+{
+  "AP_DEBUG": {
+    "title": {
+      "string": "邮箱调试"
+    },
+    "description": {
+      "string": "用于排查邮件投递问题的诊断工具。查看原始邮件源或解析的头部。"
+    },
+    "query": {
+      "title": {
+        "string": "Debug Query"
+      },
+      "button": {
+        "string": "Inspect"
+      }
+    },
+    "labels": {
+      "user": {
+        "string": "用户"
+      },
+      "folder": {
+        "string": "IMAP Folder"
+      },
+      "mail_uid": {
+        "string": "Mail UID"
+      },
+      "select_user": {
+        "string": "Select user..."
+      }
+    },
+    "result": {
+      "raw": {
+        "title": {
+          "string": "Raw Email Source"
+        }
+      },
+      "headers": {
+        "title": {
+          "string": "Parsed Headers"
+        }
+      }
+    },
+    "errors": {
+      "fields_required": {
+        "string": "User, folder, and mail UID are required"
+      },
+      "fetch_failed": {
+        "string": "Failed to fetch debug data"
+      }
+    }
+  }
+}

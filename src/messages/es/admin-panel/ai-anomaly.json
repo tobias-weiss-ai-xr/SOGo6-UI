@@ -1,0 +1,52 @@
+{
+  "AI_ANOMALY": {
+    "title": {
+      "string": "Detección de anomalías"
+    },
+    "description": {
+      "string": "Análisis de patrones de envío con puntuación de riesgo"
+    },
+    "input": {
+      "title": {
+        "string": "Entrada"
+      },
+      "recipients": {
+        "string": "Cantidad de destinatarios"
+      },
+      "hour": {
+        "string": "Hora"
+      },
+      "new_ratio": {
+        "string": "Proporción nuevos destinatarios"
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Resultado"
+      },
+      "empty": {
+        "string": "El análisis aparecerá aquí"
+      },
+      "anomaly": {
+        "string": "Anomalía detectada"
+      },
+      "normal": {
+        "string": "Normal"
+      },
+      "score": {
+        "string": "Puntuación de riesgo"
+      }
+    },
+    "analyze": {
+      "string": "Analizar"
+    },
+    "errors": {
+      "empty": {
+        "string": "Campos requeridos"
+      },
+      "fail": {
+        "string": "Análisis fallido"
+      }
+    }
+  }
+}

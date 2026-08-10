@@ -1,0 +1,40 @@
+{
+    "AI_DRAFT": {
+        "title": {
+            "string": "Assistant de réponse IA"
+        },
+        "description": {
+            "string": "Suggestions de réponse avec réglage du ton"
+        },
+        "input": {
+            "title": {
+                "string": "Entrée"
+            },
+            "email": {
+                "string": "Texte de l'e-mail"
+            },
+            "placeholder": {
+                "string": "Collez l'e-mail original ici..."
+            }
+        },
+        "output": {
+            "title": {
+                "string": "Suggestion"
+            },
+            "empty": {
+                "string": "La suggestion apparaîtra ici"
+            }
+        },
+        "suggest": {
+            "string": "Suggéreur"
+        },
+        "errors": {
+            "empty": {
+                "string": "Texte requis"
+            },
+            "fail": {
+                "string": "Échec de la suggestion"
+            }
+        }
+    }
+}

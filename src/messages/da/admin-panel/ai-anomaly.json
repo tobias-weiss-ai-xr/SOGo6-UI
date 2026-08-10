@@ -1,0 +1,49 @@
+{
+  "AI_ANOMALY": {
+    "title": {
+      "string": "Anomalidetektion"
+    },
+    "description": {
+      "string": "Marker usædvanlige sendemønstre: bulk-e-mails, usædvanlige tidspunkter, nye modtagere."
+    },
+    "input": {
+      "title": {
+        "string": "Sendemønster"
+      },
+      "recipients": {
+        "string": "Antal modtagere"
+      },
+      "hour": {
+        "string": "Time (0-23)"
+      },
+      "new_ratio": {
+        "string": "Andel nye modtagere"
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Analyseresultat"
+      },
+      "empty": {
+        "string": "Indtast værdier og klik på Analyser"
+      },
+      "anomaly": {
+        "string": "Anomali detekteret!"
+      },
+      "normal": {
+        "string": "Mønster normal"
+      },
+      "score": {
+        "string": "Risikoscore"
+      }
+    },
+    "analyze": {
+      "string": "Analyser"
+    },
+    "errors": {
+      "fail": {
+        "string": "Analyse mislykkedes"
+      }
+    }
+  }
+}

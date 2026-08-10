@@ -1,0 +1,52 @@
+{
+  "AP_DEBUG": {
+    "title": {
+      "string": "Postvak Debuggen"
+    },
+    "description": {
+      "string": "Diagnostisch hulpmiddel voor het oplossen van problemen met e-mailbezorging. Bekijk de ruwe e-mailbron of geparste headers."
+    },
+    "query": {
+      "title": {
+        "string": "Debug-opdracht"
+      },
+      "button": {
+        "string": "Inspecteren"
+      }
+    },
+    "labels": {
+      "user": {
+        "string": "Gebruiker"
+      },
+      "folder": {
+        "string": "IMAP-map"
+      },
+      "mail_uid": {
+        "string": "E-mail-UID"
+      },
+      "select_user": {
+        "string": "Selecteer gebruiker..."
+      }
+    },
+    "result": {
+      "raw": {
+        "title": {
+          "string": "Ruwe e-mailbron"
+        }
+      },
+      "headers": {
+        "title": {
+          "string": "Geparste headers"
+        }
+      }
+    },
+    "errors": {
+      "fields_required": {
+        "string": "Gebruiker, map en e-mail-UID zijn verplicht"
+      },
+      "fetch_failed": {
+        "string": "Ophalen van debuggegevens mislukt"
+      }
+    }
+  }
+}

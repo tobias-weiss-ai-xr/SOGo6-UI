@@ -1,0 +1,70 @@
+{
+    "AP_WORKFLOWS": {
+        "title": {
+            "string": "Workflow Builder"
+        },
+        "description": {
+            "string": "Low-code automation: If email from X and subject Y → forward, create event, notify."
+        },
+        "form": {
+            "create": {
+                "string": "New Workflow"
+            },
+            "cancel": {
+                "string": "Batal"
+            },
+            "title": {
+                "string": "Create Workflow"
+            },
+            "name": {
+                "string": "Workflow Name"
+            },
+            "trigger": {
+                "string": "Trigger"
+            },
+            "description": {
+                "string": "Deskripsi"
+            },
+            "conditions": {
+                "string": "Conditions"
+            },
+            "actions": {
+                "string": "Actions"
+            },
+            "submit": {
+                "string": "Create Workflow"
+            }
+        },
+        "create": {
+            "success": {
+                "string": "Workflow created"
+            },
+            "error": {
+                "string": "Failed to create"
+            }
+        },
+        "toggle": {
+            "error": {
+                "string": "Failed to toggle"
+            }
+        },
+        "delete": {
+            "success": {
+                "string": "Workflow deleted"
+            },
+            "error": {
+                "string": "Failed to delete"
+            }
+        },
+        "list": {
+            "empty": {
+                "string": "No workflows defined. Create one to automate actions."
+            }
+        },
+        "errors": {
+            "fields": {
+                "string": "Name, conditions, and actions are required"
+            }
+        }
+    }
+}

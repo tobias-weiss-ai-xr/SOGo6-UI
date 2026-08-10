@@ -1,0 +1,15 @@
+{
+  "search": {
+    "openCommandPalette": "Dr\u00fccken Sie Cmd+K, um die Befehlspalette zu \u00f6ffnen",
+    "placeholder": "E-Mails, Kontakte, Kalender durchsuchen\u2026",
+    "navigate": "Schnellnavigation",
+    "results": "Suchergebnisse",
+    "noResults": "Keine Ergebnisse gefunden.",
+    "goToInbox": "Zum Posteingang",
+    "goToMail": "Zur E-Mail-Ansicht",
+    "goToContacts": "Zu den Kontakten",
+    "goToCalendar": "Zum Kalender",
+    "goToSettings": "Zu den Einstellungen",
+    "searchInMail": "E-Mails nach \"{query}\" durchsuchen"
+  }
+}

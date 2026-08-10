@@ -1,0 +1,133 @@
+{
+  "US_MAIL_VACATIONS": {
+    "title": {
+      "string": "假期设置",
+      "context": "Title for the vacation settings page"
+    },
+    "page": {
+      "description": {
+        "string": "配置您的离开办公室自动回复消息及其生效时间。"
+      }
+    },
+    "errors_api": {
+      "load_failed": {
+        "string": "无法加载假期设置。请稍后再试。"
+      },
+      "feature_disabled": {
+        "string": "管理员已禁用假期自动回复功能。"
+      }
+    },
+    "errors": {
+      "validation": {
+        "message_required": {
+          "string": "启用假期设置时，自动回复消息为必填项。"
+        },
+        "dates_required": {
+          "string": "启用日期限制时，开始和结束日期为必填项。"
+        },
+        "date_order": {
+          "string": "结束日期必须在开始日期之后或与之相同。"
+        },
+        "time_invalid": {
+          "string": "请输入有效的时间（HH:MM 格式）。"
+        },
+        "weekday_required": {
+          "string": "启用工作日限制时，请至少选择一个工作日。"
+        },
+        "response_interval_invalid": {
+          "string": "回复间隔必须为零或正数。"
+        },
+        "response_interval_zero": {
+          "string": "此域名不允许将回复间隔设置为零天。"
+        }
+      }
+    },
+    "auto_reply": {
+      "enable": {
+        "string": "启用假期自动回复"
+      },
+      "subject": {
+        "label": {
+          "string": "自动回复主题"
+        },
+        "description": {
+          "string": "留空将使用默认主题。您可以输入 {subject} 来插入原邮件主题。"
+        }
+      },
+      "message": {
+        "string": "自动回复消息"
+      },
+      "constraints": {
+        "title": {
+          "string": "激活限制"
+        },
+        "description": {
+          "string": "可自定义日期和时间范围，并可选择与特定工作日组合，以根据您的偏好定制假期筛选器。"
+        },
+        "enable": {
+          "days": {
+            "string": "在这些日期启用自动回复"
+          },
+          "hours": {
+            "string": "在这些时间段内启用自动回复"
+          },
+          "range": {
+            "string": "在这些日期范围内启用自动回复"
+          }
+        },
+        "time": {
+          "start": {
+            "string": "开始时间"
+          },
+          "end": {
+            "string": "结束时间"
+          }
+        },
+        "weekdays": {
+          "monday": {
+            "string": "周一"
+          },
+          "tuesday": {
+            "string": "周二"
+          },
+          "wednesday": {
+            "string": "周三"
+          },
+          "thursday": {
+            "string": "周四"
+          },
+          "friday": {
+            "string": "周五"
+          },
+          "saturday": {
+            "string": "周六"
+          },
+          "sunday": {
+            "string": "周日"
+          }
+        }
+      },
+      "response": {
+        "interval_days": {
+          "label": {
+            "string": "自动回复的最小间隔天数"
+          },
+          "placeholder": {
+            "string": "留空使用默认设置"
+          },
+          "description": {
+            "string": "防止在该时间段内重复发送度假自动回复（RFC 5230 :days）。"
+          }
+        },
+        "send_always": {
+          "label": {
+            "string": "始终发送度假消息回复"
+          },
+          "description": {
+            "string": "度假消息会在应用您的筛选器之前发送。"
+          }
+        }
+      }
+    }
+  }
+}

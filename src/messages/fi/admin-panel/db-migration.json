@@ -1,0 +1,35 @@
+{
+  "AP_DBMIG": {
+    "title": {
+      "string": "Tietokantasiirto"
+    },
+    "description": {
+      "string": "Seuraa skeemaversioita ja siirtohistoriaa. Suorita siirrot ylläpitopaneelista."
+    },
+    "current_version": {
+      "string": "Nykyinen skeemaversio"
+    },
+    "run": {
+      "button": {
+        "string": "Suorita siirto"
+      },
+      "running": {
+        "string": "Suoritetaan..."
+      },
+      "success": {
+        "string": "Siirto suoritettu"
+      },
+      "error": {
+        "string": "Siirto epäonnistui"
+      }
+    },
+    "history": {
+      "title": {
+        "string": "Siirtohistoria"
+      },
+      "empty": {
+        "string": "Ei tallennettuja siirtoja."
+      }
+    }
+  }
+}

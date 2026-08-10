@@ -1,0 +1,81 @@
+{
+    "US_GENERAL": {
+        "title": {
+            "string": "Impostazioni Generali",
+            "context": "Title for the general settings page"
+        },
+        "labels": {
+            "language": {
+                "string": "Lingua"
+            },
+            "timezone": {
+                "string": "Fuso orario"
+            },
+            "short_date_style": {
+                "string": "Formato data breve"
+            },
+            "long_date_style": {
+                "string": "Formato data esteso"
+            },
+            "time_style": {
+                "string": "Formato ora"
+            },
+            "default_view": {
+                "string": "Vista predefinita"
+            },
+            "refresh_frequency": {
+                "string": "Frequenza aggiornamento"
+            },
+            "enable_notifications": {
+                "string": "Abilita notifiche"
+            },
+            "saved": {
+                "string": "Impostazioni generali salvate"
+            },
+            "mail": {
+                "string": "Posta"
+            },
+            "calendar": {
+                "string": "Calendario"
+            },
+            "contacts": {
+                "string": "Contatti"
+            },
+            "last": {
+                "string": "Ultimo modulo visualizzato"
+            },
+            "enable_external_avatar": {
+                "string": "Abilita avatar esterno"
+            }
+        },
+        "descriptions": {
+            "language": {
+                "string": "La lingua utilizzata nell'app."
+            },
+            "timezone": {
+                "string": "Il fuso orario in cui ti trovi."
+            },
+            "short_date_style": {
+                "string": "Come vengono visualizzate le date nell'app."
+            },
+            "long_date_style": {
+                "string": "Come vengono visualizzate le date nell'app."
+            },
+            "time_style": {
+                "string": "Come viene visualizzata l'ora nell'app."
+            },
+            "default_view": {
+                "string": "La vista predefinita quando apri l'app."
+            },
+            "refresh_frequency": {
+                "string": "Con quale frequenza l'app deve controllare nuovi messaggi, eventi del calendario e altro."
+            },
+            "enable_notifications": {
+                "string": "Ricevi notifiche per nuovi messaggi, eventi del calendario e altro."
+            },
+            "enable_external_avatar": {
+                "string": "Abilita avatar esterno (es. Gravatar)"
+            }
+        }
+    }
+}

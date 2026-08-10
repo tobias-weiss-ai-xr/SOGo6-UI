@@ -15,6 +15,8 @@ import type {
   UseDomainConfigOpts,
 } from '@/features/admin-panel/types/form'
 import { useCallback, useMemo } from 'react'
+import { toast } from 'sonner'
+import { logger } from '@/lib/logger'
 
 /**
  * Deep clone a value (object or array) using JSON serialization.
@@ -316,11 +318,11 @@ export function useDomainConfig({ customDomainId }: UseDomainConfigOpts) {
             customDomainId: customDomainId.toLowerCase(),
             config: payload,
           }).unwrap()
-          alert('Custom domain patched') //TODO:
+          toast.success('Custom domain config saved')
           return res
         } else {
           const res = await patchDomainDefault({ config: diff }).unwrap()
-          alert('Default domain patched') //TODO:
+          toast.success('Default domain config saved')
           return res
         }
       } catch (err) {
@@ -330,8 +332,8 @@ export function useDomainConfig({ customDomainId }: UseDomainConfigOpts) {
           error?.message ||
           String(err) ||
           'Unknown error'
-        console.error('[useDomainConfig] Save error:', err)
-        alert('Error saving parameters: ' + message)
+        logger.error('[useDomainConfig] Save error:', { error: err })
+        toast.error('Error saving parameters: ' + message)
         throw err
       }
     },
@@ -365,7 +367,7 @@ export function useDomainConfig({ customDomainId }: UseDomainConfigOpts) {
         }).unwrap()
         return res
       } catch (err) {
-        console.error('[useDomainConfig] updateDomainDescription error:', err)
+        logger.error('[useDomainConfig] updateDomainDescription error:', { error: err })
         throw err
       }
     },

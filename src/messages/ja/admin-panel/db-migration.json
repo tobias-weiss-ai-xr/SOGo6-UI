@@ -1,0 +1,35 @@
+{
+  "AP_DBMIG": {
+    "title": {
+      "string": "データベース移行"
+    },
+    "description": {
+      "string": "スキーマバージョンと移行履歴を管理。管理パネルから移行を実行できます。"
+    },
+    "current_version": {
+      "string": "現在のスキーマバージョン"
+    },
+    "run": {
+      "button": {
+        "string": "移行を実行"
+      },
+      "running": {
+        "string": "実行中..."
+      },
+      "success": {
+        "string": "移行が適用されました"
+      },
+      "error": {
+        "string": "移行に失敗しました"
+      }
+    },
+    "history": {
+      "title": {
+        "string": "移行履歴"
+      },
+      "empty": {
+        "string": "移行の記録がありません。"
+      }
+    }
+  }
+}

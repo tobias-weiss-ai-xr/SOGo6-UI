@@ -1,0 +1,82 @@
+{
+  "HIPAA": {
+    "title": {
+      "string": "Modo de cumplimiento HIPAA"
+    },
+    "description": {
+      "string": "Cumplimiento sanitario con detección PHI, cifrado y registros de auditoría"
+    },
+    "errors": {
+      "fail": {
+        "string": "Operación fallida"
+      },
+      "email": {
+        "string": "Correo requerido"
+      }
+    },
+    "config": {
+      "title": {
+        "string": "Configuración de cumplimiento"
+      },
+      "enabled": {
+        "string": "Modo HIPAA"
+      },
+      "encryption": {
+        "string": "Cifrado"
+      },
+      "audit": {
+        "string": "Registro de auditoría"
+      },
+      "phi_detection": {
+        "string": "Detección PHI"
+      },
+      "require_reason": {
+        "string": "Razón de acceso requerida"
+      },
+      "retention": {
+        "string": "Retención"
+      }
+    },
+    "detect": {
+      "title": {
+        "string": "Escáner PHI"
+      },
+      "placeholder": {
+        "string": "Pegue texto de correo o documento para analizar..."
+      },
+      "button": {
+        "string": "Escanear PHI"
+      },
+      "risk": {
+        "string": "Nivel de riesgo"
+      }
+    },
+    "audit": {
+      "title": {
+        "string": "Registro de acceso"
+      },
+      "log": {
+        "string": "Registrar acceso"
+      },
+      "accessor": {
+        "string": "Accesante"
+      },
+      "action": {
+        "string": "Acción"
+      },
+      "time": {
+        "string": "Hora"
+      }
+    },
+    "success": {
+      "log": {
+        "string": "Acceso registrado"
+      }
+    },
+    "label": {
+      "days": {
+        "string": "días"
+      }
+    }
+  }
+}

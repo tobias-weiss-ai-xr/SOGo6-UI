@@ -1,0 +1,61 @@
+{
+  "AP_BACKUP": {
+    "title": {
+      "string": "备份自动化"
+    },
+    "description": {
+      "string": "管理数据库和邮件存储的备份，支持保留策略和可选的 S3 上传。"
+    },
+    "trigger": {
+      "button": {
+        "string": "触发备份"
+      },
+      "running": {
+        "string": "运行中..."
+      },
+      "success": {
+        "string": "备份完成"
+      },
+      "error": {
+        "string": "备份失败"
+      }
+    },
+    "config": {
+      "retention": {
+        "string": "保留"
+      },
+      "s3": {
+        "string": "S3 上传"
+      },
+      "mailstore": {
+        "string": "邮件存储"
+      },
+      "total": {
+        "string": "备份总数"
+      }
+    },
+    "table": {
+      "id": {
+        "string": "ID"
+      },
+      "timestamp": {
+        "string": "时间戳"
+      },
+      "type": {
+        "string": "Type"
+      },
+      "status": {
+        "string": "Status"
+      },
+      "size": {
+        "string": "大小"
+      },
+      "duration": {
+        "string": "时长"
+      },
+      "empty": {
+        "string": "暂无备份。"
+      }
+    }
+  }
+}

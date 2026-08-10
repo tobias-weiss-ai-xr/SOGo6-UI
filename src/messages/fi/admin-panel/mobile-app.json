@@ -1,0 +1,65 @@
+{
+  "MOBILE": {
+    "title": {
+      "string": "Mobiilisovelluksen hallinta"
+    },
+    "description": {
+      "string": "Hallitse rekisteröityjä laitteita, push-ilmoituksia ja sovellusasetuksia"
+    },
+    "errors": {
+      "fail": {
+        "string": "Toiminto epäonnistui"
+      }
+    },
+    "success": {
+      "unregister": {
+        "string": "Laite poistettu rekisteristä"
+      },
+      "broadcast": {
+        "string": "Push-ilmoitus lähetetty"
+      }
+    },
+    "config": {
+      "title": {
+        "string": "Sovellusasetukset"
+      },
+      "push": {
+        "string": "Push-ilmoitukset"
+      },
+      "biometric": {
+        "string": "Biometrinen tunnistautuminen"
+      }
+    },
+    "push": {
+      "title": {
+        "placeholder": {
+          "string": "Ilmoituksen otsikko"
+        }
+      },
+      "message": {
+        "placeholder": {
+          "string": "Viesti..."
+        }
+      },
+      "broadcast": {
+        "string": "Lähetä"
+      }
+    },
+    "stats": {
+      "title": {
+        "string": "Tilastot"
+      },
+      "devices": {
+        "string": "Rekisteröidyt laitteet"
+      }
+    },
+    "devices": {
+      "title": {
+        "string": "Kaikki laitteet"
+      },
+      "empty": {
+        "string": "Ei vielä rekisteröityjä laitteita"
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+    "PORTAL": {
+        "title": {
+            "string": "Cổng SOGo"
+        },
+        "description": {
+            "string": "Chào mừng đến với cổng SOGo. Chọn một ứng dụng để bắt đầu."
+        },
+        "launch": {
+            "string": "Launch"
+        },
+        "settings": {
+            "string": "Intercom Settings"
+        }
+    }
+}

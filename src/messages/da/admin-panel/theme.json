@@ -1,0 +1,135 @@
+{
+  "AP_THEME": {
+    "title": {
+      "string": "Tema-indstillinger"
+    },
+    "description": {
+      "string": "Tilpas udseende og fornemmelse af SOGo-grænsefladen"
+    },
+    "form_title": {
+      "string": "Brugerdefineret tema"
+    },
+    "form_description": {
+      "string": "Konfigurer farver, logo og brugerdefineret CSS til groupware-grænsefladen"
+    },
+    "fields": {
+      "primary": {
+        "label": {
+          "string": "Primær farve"
+        },
+        "description": {
+          "string": "HSL-værdier for den primære farve (f.eks. 180 25% 40%)"
+        }
+      },
+      "primary_foreground": {
+        "label": {
+          "string": "Primær forgrund"
+        },
+        "description": {
+          "string": "Tekstfarve på primære baggrunde"
+        }
+      },
+      "background": {
+        "label": {
+          "string": "Baggrund"
+        },
+        "description": {
+          "string": "HSL-værdier for sidebaggrunden"
+        }
+      },
+      "foreground": {
+        "label": {
+          "string": "Forgrund"
+        },
+        "description": {
+          "string": "Standard tekstfarve"
+        }
+      },
+      "sidebar_background": {
+        "label": {
+          "string": "Sidepanel-baggrund"
+        },
+        "description": {
+          "string": "HSL-værdier for sidepanel-baggrunden"
+        }
+      },
+      "sidebar_foreground": {
+        "label": {
+          "string": "Sidepanel-forgrund"
+        },
+        "description": {
+          "string": "Tekstfarve i sidepanelet"
+        }
+      },
+      "sidebar_primary": {
+        "label": {
+          "string": "Sidepanel-primærfarve"
+        },
+        "description": {
+          "string": "Primær accentfarve i sidepanelet"
+        }
+      },
+      "sidebar_accent": {
+        "label": {
+          "string": "Sidepanel-accentfarve"
+        },
+        "description": {
+          "string": "Accentfarve i sidepanelet"
+        }
+      },
+      "header_background": {
+        "label": {
+          "string": "Headerbaggrund"
+        },
+        "description": {
+          "string": "HSL-værdier for den øverste headerlinje"
+        }
+      },
+      "header_foreground": {
+        "label": {
+          "string": "Headerforgrund"
+        },
+        "description": {
+          "string": "Tekstfarve i headeren"
+        }
+      },
+      "logo_url": {
+        "label": {
+          "string": "Logo-URL"
+        },
+        "description": {
+          "string": "URL for det brugerdefinerede logo-billede (valgfrit)"
+        }
+      },
+      "custom_css": {
+        "label": {
+          "string": "Brugerdefineret CSS"
+        },
+        "description": {
+          "string": "Yderligere CSS-regler, der skal indsættes (valgfrit)"
+        }
+      }
+    },
+    "save": {
+      "string": "Gem ændringer"
+    },
+    "saving": {
+      "string": "Gemmer…"
+    },
+    "saved": {
+      "string": "Tema-indstillinger gemt succesfuldt"
+    },
+    "save_error": {
+      "string": "Kunne ikke gemme: {message}"
+    },
+    "unsaved_changes": {
+      "string": "Du har ugemte ændringer"
+    },
+    "load_error": {
+      "string": "Kunne ikke indlæse tema-indstillinger"
+    },
+    "retry": {
+      "string": "Prøv igen"
+    }
+  }
+}

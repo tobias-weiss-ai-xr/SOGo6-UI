@@ -1,0 +1,92 @@
+{
+    "HIPAA": {
+        "title": {
+            "string": "HIPAA Compliance Mode"
+        },
+        "description": {
+            "string": "Healthcare-grade compliance with PHI detection, encryption, and audit trails"
+        },
+        "errors": {
+            "fail": {
+                "string": "Operation failed"
+            },
+            "email": {
+                "string": "Email required"
+            }
+        },
+        "config": {
+            "title": {
+                "string": "Compliance Settings"
+            },
+            "enabled": {
+                "string": "HIPAA Mode"
+            },
+            "encryption": {
+                "string": "Encryption at Rest"
+            },
+            "audit": {
+                "string": "Audit Trail"
+            },
+            "phi_detection": {
+                "string": "PHI Detection"
+            },
+            "require_reason": {
+                "string": "Require Access Reason"
+            },
+            "retention": {
+                "string": "Log Retention"
+            }
+        },
+        "detect": {
+            "title": {
+                "string": "PHI Scannor"
+            },
+            "placeholder": {
+                "string": "Paste email or document text to scan for PHI..."
+            },
+            "button": {
+                "string": "Scan for PHI"
+            },
+            "risk": {
+                "string": "Risk Level"
+            }
+        },
+        "audit": {
+            "title": {
+                "string": "Access Audit Trail"
+            },
+            "email": {
+                "placeholder": {
+                    "string": "Email ID"
+                }
+            },
+            "reason": {
+                "placeholder": {
+                    "string": "Reason (required)"
+                }
+            },
+            "log": {
+                "string": "Log Access"
+            },
+            "accessor": {
+                "string": "Accessor"
+            },
+            "action": {
+                "string": "Action"
+            },
+            "time": {
+                "string": "Oră"
+            }
+        },
+        "success": {
+            "log": {
+                "string": "Access logged"
+            }
+        },
+        "label": {
+            "days": {
+                "string": "days"
+            }
+        }
+    }
+}

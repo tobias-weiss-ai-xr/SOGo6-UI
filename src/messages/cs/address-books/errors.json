@@ -1,0 +1,108 @@
+{
+  "ADDRESS_BOOKS_ERRORS": {
+    "list_member_invalid": {
+      "string": "Jeden nebo více vybraných členů nejsou kontakty v tomto adresáři.",
+      "context": "Inline error when a distribution list member is invalid."
+    },
+    "addressbook_not_found": {
+      "string": "Adresář nebyl nalezen.",
+      "context": "Error when an address book is missing."
+    },
+    "addressbook_duplicate": {
+      "string": "Adresář s tímto názvem již existuje.",
+      "context": "Toast when address book creation conflicts."
+    },
+    "contact_not_found": {
+      "string": "Kontakt nebyl nalezen.",
+      "context": "Error when a contact is missing."
+    },
+    "contact_duplicate": {
+      "string": "Kontakt s tímto identifikátorem již existuje.",
+      "context": "Toast when contact creation conflicts."
+    },
+    "contact_persist_failed": {
+      "string": "Kontakt se nepodařilo uložit.",
+      "context": "Error when contact creation fails on the server."
+    },
+    "contact_update_failed": {
+      "string": "Kontakt se nepodařilo aktualizovat.",
+      "context": "Error when contact update fails on the server."
+    },
+    "operation_not_supported": {
+      "string": "Tato operace není pro tento adresář podporována.",
+      "context": "Error when mutating a non-local address book source."
+    },
+    "list_not_found": {
+      "string": "Distribuční seznam nebyl nalezen.",
+      "context": "Error when a distribution list is missing."
+    },
+    "list_duplicate": {
+      "string": "Distribuční seznam s tímto názvem již existuje.",
+      "context": "Toast when list creation conflicts."
+    },
+    "list_persist_failed": {
+      "string": "Distribuční seznam se nepodařilo uložit.",
+      "context": "Error when list creation fails on the server."
+    },
+    "list_update_failed": {
+      "string": "Distribuční seznam se nepodařilo aktualizovat.",
+      "context": "Error when list update fails on the server."
+    },
+    "access_denied": {
+      "string": "Nemáte oprávnění upravovat tento adresář.",
+      "context": "Toast when write access is denied."
+    },
+    "read_only": {
+      "string": "Tento adresář je pouze pro čtení.",
+      "context": "Toast when mutating a read-only address book."
+    },
+    "export_format_unsupported": {
+      "string": "Vybraný formát pro export není podporován.",
+      "context": "Error when export format negotiation fails."
+    },
+    "import_no_file": {
+      "string": "Nebyl poskytnut žádný soubor pro import.",
+      "context": "Error when import request has no file."
+    },
+    "import_too_large": {
+      "string": "Importovaný soubor překračuje maximální povolenou velikost (10 MB).",
+      "context": "Error when import payload is too large."
+    },
+    "import_parse_failed": {
+      "string": "Importovaný soubor se nepodařilo analyzovat.",
+      "context": "Error when import document parsing fails."
+    },
+    "job_not_found": {
+      "string": "Pozadí úlohy nebyl nalezen.",
+      "context": "Error when polling an unknown job."
+    },
+    "job_forbidden": {
+      "string": "Nemáte přístup k této pozadí úloze.",
+      "context": "Error when job belongs to another user."
+    },
+    "job_not_ready": {
+      "string": "Export ještě není připraven. Počkejte a zkuste to znovu.",
+      "context": "Error when downloading a job result too early."
+    },
+    "job_no_result": {
+      "string": "Tato úloha nemá žádný stahovatelný výsledek.",
+      "context": "Error when job result is unavailable."
+    },
+    "job_concurrent_limit": {
+      "string": "Běží příliš mnoho pozadí úloh. Zkuste to prosím později.",
+      "context": "Error when concurrent job limit is reached."
+    },
+    "file_too_large": {
+      "string": "Fotografie překračuje maximální povolenou velikost (2 MB).",
+      "context": "Inline error when contact photo upload is too large."
+    },
+    "file_type_not_allowed": {
+      "string": "Tento typ souboru není povolen pro fotografie kontaktů.",
+      "context": "Inline error when contact photo type is not allowed."
+    },
+    "generic": {
+      "string": "Operaci se nepodařilo dokončit. Zkuste to prosím znovu.",
+      "context": "Fallback error message for contact API errors."
+    }
+  }
+}

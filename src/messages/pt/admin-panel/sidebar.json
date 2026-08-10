@@ -1,0 +1,169 @@
+{
+    "AP_SIDEBAR": {
+        "system": {
+            "string": "Sistema"
+        },
+        "theme": {
+            "string": "Tema"
+        },
+        "users": {
+            "string": "Usuários"
+        },
+        "bulk_users": {
+            "string": "Usuários em Massa"
+        },
+        "quotas": {
+            "string": "Cotas"
+        },
+        "branding": {
+            "string": "Brandando"
+        },
+        "backup": {
+            "string": "Backup"
+        },
+        "db_migration": {
+            "string": "DB Migração"
+        },
+        "migration": {
+            "string": "Migração"
+        },
+        "config_code": {
+            "string": "Config as Code"
+        },
+        "webhooks": {
+            "string": "Webhooks"
+        },
+        "oauth_clients": {
+            "string": "OAuth Clients"
+        },
+        "scheduling_polls": {
+            "string": "Scheduling Polls"
+        },
+        "appointment_slots": {
+            "string": "Appointment Slots"
+        },
+        "shared_drafts": {
+            "string": "Shared Drafts"
+        },
+        "file_sharing": {
+            "string": "File Sharando"
+        },
+        "doc_preview": {
+            "string": "Doc Preview"
+        },
+        "approvals": {
+            "string": "Approvals"
+        },
+        "helpdesk": {
+            "string": "Helpdesk"
+        },
+        "crm": {
+            "string": "CRM"
+        },
+        "workflows": {
+            "string": "Workflows"
+        },
+        "quick_actions": {
+            "string": "Quick Actions"
+        },
+        "freebusy": {
+            "string": "Free/Busy"
+        },
+        "ai_summarize": {
+            "string": "AI Summarize"
+        },
+        "ai_classify": {
+            "string": "AI Classify"
+        },
+        "ai_draft": {
+            "string": "AI Draft"
+        },
+        "ai_search": {
+            "string": "AI Search"
+        },
+        "ai_schedule": {
+            "string": "AI Schedule"
+        },
+        "ai_anomaly": {
+            "string": "AI Anomamente"
+        },
+        "ai_enrich": {
+            "string": "AI Enrich"
+        },
+        "ai_attachment": {
+            "string": "AI Attach"
+        },
+        "ai_spam": {
+            "string": "AI Spam"
+        },
+        "ai_transcripts": {
+            "string": "AI Transcripts"
+        },
+        "api_docs": {
+            "string": "API Documentação"
+        },
+        "config": {
+            "string": "Configuração",
+            "rules": {
+                "string": "Rules"
+            },
+            "domains": {
+                "string": "Domains",
+                "default": {
+                    "string": "Padrão"
+                },
+                "custom": {
+                    "string": "Domínios personalizados"
+                }
+            }
+        },
+        "sessions": {
+            "string": "Sessions"
+        },
+        "audit": {
+            "string": "Audit Log"
+        },
+        "health": {
+            "string": "Health"
+        },
+        "debug": {
+            "string": "Mailbox Debug"
+        },
+        "dns_wizard": {
+            "string": "DNS Wizard"
+        },
+        "resources": {
+            "string": "Recursos"
+        },
+        "scim": {
+            "string": "SCIM Provisionando"
+        },
+        "student_groups": {
+            "string": "Student Groups"
+        },
+        "hipaa": {
+            "string": "HIPAA Compliance"
+        },
+        "eidas": {
+            "string": "eIDAS Signatures"
+        },
+        "donor": {
+            "string": "Donor Management"
+        },
+        "volunteer": {
+            "string": "Volunteer Schedulando"
+        },
+        "import": {
+            "string": "Import/Export"
+        },
+        "matrix": {
+            "string": "Matrix Chat"
+        },
+        "protocols": {
+            "string": "JMAP / ActiveSync"
+        },
+        "mobile": {
+            "string": "Mobile App"
+        }
+    }
+}

@@ -62,8 +62,41 @@ describe('mail-api.ts', () => {
       expect(fileContent).toContain('useDeleteMailMutation')
     })
 
+    it('should export useCancelPendingSendMutation', () => {
+      expect(fileContent).toContain('useCancelPendingSendMutation')
+    })
+
     it('should export mailSendApiEndpoints', () => {
       expect(fileContent).toContain('mailSendApiEndpoints')
+    })
+  })
+
+  describe('cancelPendingSend endpoint (Undo Send)', () => {
+    it('should define cancelPendingSend mutation', () => {
+      expect(fileContent).toContain('cancelPendingSend: builder.mutation')
+    })
+
+    it('should use the pending cancel URL', () => {
+      expect(fileContent).toContain(
+        'mailboxes/${accountId}/mail/pending/${pendingKey}/cancel'
+      )
+    })
+
+    it('should use POST method', () => {
+      expect(fileContent).toMatch(/cancelPendingSend[\s\S]*?method:\s*'POST'/)
+    })
+
+    it('should use correct undo-cancel i18n keys', () => {
+      expect(fileContent).toContain('mail_send.undo_cancelled.title.string')
+      expect(fileContent).toContain('mail_send.undo_cancelled.message.string')
+      expect(fileContent).toContain('mail_send.undo_cancel_error.title.string')
+      expect(fileContent).toContain('mail_send.undo_cancel_error.message.string')
+    })
+
+    it('should call createApiNotificationHandler in cancelPendingSend', () => {
+      expect(fileContent).toMatch(
+        /cancelPendingSend[\s\S]*?createApiNotificationHandler/
+      )
     })
   })
 

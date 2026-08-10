@@ -1,0 +1,31 @@
+{
+    "MOBILE": {
+        "title": { "string": "Gestione App Mobile" },
+        "description": { "string": "Gestisci dispositivi registrati, notifiche push e configurazione app" },
+        "errors": {
+            "fail": { "string": "Operazione fallita" }
+        },
+        "success": {
+            "unregister": { "string": "Dispositivo deregistrato" },
+            "broadcast": { "string": "Notifica push inviata" }
+        },
+        "config": {
+            "title": { "string": "Impostazioni App" },
+            "push": { "string": "Notifiche Push" },
+            "biometric": { "string": "Auth Biometrica" }
+        },
+        "push": {
+            "title": { "placeholder": { "string": "Titolo notifica" } },
+            "message": { "placeholder": { "string": "Messaggio..." } },
+            "broadcast": { "string": "Invia" }
+        },
+        "stats": {
+            "title": { "string": "Statistiche" },
+            "devices": { "string": "Dispositivi Registrati" }
+        },
+        "devices": {
+            "title": { "string": "Tutti i Dispositivi" },
+            "empty": { "string": "Nessun dispositivo ancora registrato" }
+        }
+    }
+}

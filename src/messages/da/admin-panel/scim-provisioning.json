@@ -1,0 +1,50 @@
+{
+  "SCIM": {
+    "title": {
+      "string": "SCIM-provisionering"
+    },
+    "description": {
+      "string": "SCIM 2.0 identitetslivscyklusstyring til Azure AD, Okta og andre IdP'er"
+    },
+    "errors": {
+      "email": {
+        "string": "E-mail er påkrævet"
+      },
+      "fail": {
+        "string": "Handlingen mislykkedes"
+      }
+    },
+    "success": {
+      "create": {
+        "string": "Bruger provisioneret succesfuldt"
+      },
+      "delete": {
+        "string": "Bruger deprovisioneret"
+      }
+    },
+    "field": {
+      "email": {
+        "string": "Brugernavn/E-mail"
+      },
+      "name": {
+        "string": "Visningsnavn"
+      },
+      "status": {
+        "string": "Status"
+      }
+    },
+    "button": {
+      "provision": {
+        "string": "Provisioner bruger"
+      }
+    },
+    "users": {
+      "title": {
+        "string": "Provisionerede brugere"
+      },
+      "empty": {
+        "string": "Ingen SCIM-brugere provisioneret endnu"
+      }
+    }
+  }
+}

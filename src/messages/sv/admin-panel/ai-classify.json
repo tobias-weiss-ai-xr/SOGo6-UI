@@ -1,0 +1,46 @@
+{
+  "AI_CLASSIFY": {
+    "title": {
+      "string": "Smart e-postklassificering"
+    },
+    "description": {
+      "string": "Automatisk etikettering av e-post: nyhetsbrev, faktura, avisering, sociala medier, personlig."
+    },
+    "input": {
+      "title": {
+        "string": "Indata för e-post"
+      },
+      "subject": {
+        "string": "Ämne"
+      },
+      "sender": {
+        "string": "Avsändare"
+      },
+      "body": {
+        "string": "Meddelandetext"
+      },
+      "placeholder": {
+        "string": "Klistra in e-postinnehåll här..."
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Klassificeringsresultat"
+      },
+      "empty": {
+        "string": "Ange text och klicka på Klassificera"
+      }
+    },
+    "classify": {
+      "string": "Klassificera"
+    },
+    "errors": {
+      "empty": {
+        "string": "Ange e-posttext"
+      },
+      "fail": {
+        "string": "Klassificeringen misslyckades"
+      }
+    }
+  }
+}

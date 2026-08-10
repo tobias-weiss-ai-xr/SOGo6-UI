@@ -1,0 +1,19 @@
+{
+    "DATA_TABLE": {
+        "filter_placeholder": {
+            "string": "تصفية..."
+        },
+        "no_result": {
+            "string": "لا توجد نتائج."
+        },
+        "previous": {
+            "string": "السابق"
+        },
+        "next": {
+            "string": "التالي"
+        },
+        "selected": {
+            "string": "{selected} of {total} row(s) selected."
+        }
+    }
+}

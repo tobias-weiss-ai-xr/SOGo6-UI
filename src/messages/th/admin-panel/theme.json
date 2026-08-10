@@ -1,0 +1,135 @@
+{
+  "AP_THEME": {
+    "title": {
+      "string": "การตั้งค่าหน้าตา"
+    },
+    "description": {
+      "string": "ปรับแต่งหน้าตาและรูปแบบของอินเตอร์เฟซ SOGo"
+    },
+    "form_title": {
+      "string": "ธีมที่กำหนดเอง"
+    },
+    "form_description": {
+      "string": "กำหนดสี โลโก้ และ CSS ที่กำหนดเองสำหรับอินเตอร์เฟซของกลุ่มงาน"
+    },
+    "fields": {
+      "primary": {
+        "label": {
+          "string": "สีหลัก"
+        },
+        "description": {
+          "string": "ค่า HSL ของสีหลัก (ตัวอย่าง 180 25% 40%)"
+        }
+      },
+      "primary_foreground": {
+        "label": {
+          "string": "พื้นหน้าสีหลัก"
+        },
+        "description": {
+          "string": "สีข้อความบนพื้นหลังสีหลัก"
+        }
+      },
+      "background": {
+        "label": {
+          "string": "พื้นหลัง"
+        },
+        "description": {
+          "string": "ค่า HSL ของพื้นหลังหน้าเว็บ"
+        }
+      },
+      "foreground": {
+        "label": {
+          "string": "พื้นหน้า"
+        },
+        "description": {
+          "string": "สีข้อความเริ่มต้น"
+        }
+      },
+      "sidebar_background": {
+        "label": {
+          "string": "พื้นหลังแถบด้านข้าง"
+        },
+        "description": {
+          "string": "ค่า HSL ของพื้นหลังแถบด้านข้าง"
+        }
+      },
+      "sidebar_foreground": {
+        "label": {
+          "string": "พื้นหน้าแถบด้านข้าง"
+        },
+        "description": {
+          "string": "สีข้อความในแถบด้านข้าง"
+        }
+      },
+      "sidebar_primary": {
+        "label": {
+          "string": "สีหลักแถบด้านข้าง"
+        },
+        "description": {
+          "string": "สีเน้นหลักในแถบด้านข้าง"
+        }
+      },
+      "sidebar_accent": {
+        "label": {
+          "string": "สีเน้นแถบด้านข้าง"
+        },
+        "description": {
+          "string": "สีเน้นในแถบด้านข้าง"
+        }
+      },
+      "header_background": {
+        "label": {
+          "string": "พื้นหลังส่วนหัว"
+        },
+        "description": {
+          "string": "ค่า HSL สำหรับแถบส่วนหัวด้านบน"
+        }
+      },
+      "header_foreground": {
+        "label": {
+          "string": "พื้นหน้าส่วนหัว"
+        },
+        "description": {
+          "string": "สีข้อความในส่วนหัว"
+        }
+      },
+      "logo_url": {
+        "label": {
+          "string": "URL โลโก้"
+        },
+        "description": {
+          "string": "URL ของรูปภาพโลโก้ที่กำหนดเอง (ไม่บังคับ)"
+        }
+      },
+      "custom_css": {
+        "label": {
+          "string": "CSS ที่กำหนดเอง"
+        },
+        "description": {
+          "string": "กฎ CSS เพิ่มเติมที่จะแทรก (ไม่บังคับ)"
+        }
+      }
+    },
+    "save": {
+      "string": "บันทึกการเปลี่ยนแปลง"
+    },
+    "saving": {
+      "string": "กำลังบันทึก…"
+    },
+    "saved": {
+      "string": "บันทึกการตั้งค่าหน้าตาเรียบร้อย"
+    },
+    "save_error": {
+      "string": "บันทึกไม่สำเร็จ: {message}"
+    },
+    "unsaved_changes": {
+      "string": "คุณมีการเปลี่ยนแปลงที่ยังไม่ได้บันทึก"
+    },
+    "load_error": {
+      "string": "โหลดการตั้งค่าหน้าตาไม่สำเร็จ"
+    },
+    "retry": {
+      "string": "ลองใหม่"
+    }
+  }
+}

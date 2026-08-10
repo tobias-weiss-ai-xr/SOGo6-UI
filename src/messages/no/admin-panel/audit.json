@@ -1,0 +1,44 @@
+{
+  "AP_AUDIT": {
+    "title": {
+      "string": "Revisjonslogg"
+    },
+    "description": {
+      "string": "Manipulasjonssikker logg over admin- og brukerhandlinger. Oppføringer er kun tilleggsbaserte og kan verken endres eller slettes."
+    },
+    "table": {
+      "timestamp": {
+        "string": "Tidsstempel"
+      },
+      "action": {
+        "string": "Handling"
+      },
+      "actor": {
+        "string": "Utfører"
+      },
+      "target": {
+        "string": "Mål"
+      },
+      "detail": {
+        "string": "Detaljer"
+      },
+      "ip": {
+        "string": "IP-adresse"
+      },
+      "no_entries": {
+        "string": "Ingen oppføringer funnet i revisjonsloggen."
+      }
+    },
+    "count_one": {
+      "string": "oppføring"
+    },
+    "count_many": {
+      "string": "oppføringer"
+    },
+    "errors": {
+      "load_failed": {
+        "string": "Kunne ikke laste revisjonslogg"
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "CALENDAR": {
+    "pick": {
+      "range": {
+        "string": "Velg en datoområde...",
+        "context": "Default message displayed in the calendar when the user is asked to select a date range."
+      },
+      "single": {
+        "string": "Velg en dato...",
+        "context": "Default message displayed in the calendar when the user is asked to select a single date."
+      }
+    }
+  }
+}

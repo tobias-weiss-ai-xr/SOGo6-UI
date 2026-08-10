@@ -1,0 +1,39 @@
+{
+  "MAIL_SNOOZE": {
+    "title": {
+      "string": "Отложить"
+    },
+    "description": {
+      "string": "Выберите, когда это письмо должно снова появиться в вашем ящике."
+    },
+    "presets": {
+      "later_today": {
+        "string": "Позже сегодня"
+      },
+      "tomorrow": {
+        "string": "Завтра"
+      },
+      "this_weekend": {
+        "string": "В эти выходные"
+      },
+      "next_week": {
+        "string": "На следующей неделе"
+      }
+    },
+    "pick_date": {
+      "string": "Выбрать дату и время"
+    },
+    "pick_date_placeholder": {
+      "string": "Выберите дату..."
+    },
+    "snooze_button": {
+      "string": "Отложить"
+    },
+    "success": {
+      "string": "Письмо отложено"
+    },
+    "error": {
+      "string": "Не удалось отложить письмо"
+    }
+  }
+}

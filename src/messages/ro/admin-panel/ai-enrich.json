@@ -1,0 +1,54 @@
+{
+  "AI_ENRICH": {
+    "title": {
+      "string": "Îmbogățire automată a contactelor"
+    },
+    "description": {
+      "string": "Extrage număr de telefon, funcție, companie, locație din semnăturile de email."
+    },
+    "input": {
+      "title": {
+        "string": "Semnătură email"
+      },
+      "signature": {
+        "string": "Text semnătură"
+      },
+      "placeholder": {
+        "string": "Lipește aici o semnătură de email..."
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Informații extrase"
+      },
+      "empty": {
+        "string": "Introdu textul semnăturii și apasă Extrage"
+      }
+    },
+    "extract": {
+      "string": "Extrage informații"
+    },
+    "field": {
+      "phone": {
+        "string": "Telefon"
+      },
+      "title": {
+        "string": "Funcție"
+      },
+      "company": {
+        "string": "Companie"
+      },
+      "location": {
+        "string": "Locație"
+      }
+    },
+    "errors": {
+      "empty": {
+        "string": "Introduceți text"
+      },
+      "fail": {
+        "string": "Extragerea a eșuat"
+      }
+    }
+  }
+}

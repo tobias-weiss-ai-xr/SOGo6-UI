@@ -2,6 +2,15 @@ import '@testing-library/jest-dom'
 import { render, screen } from '@testing-library/react'
 import { LoginForm } from '../login-form'
 
+// Mock Redux hooks to avoid needing Provider wrapper
+jest.mock('@/lib/redux/hooks', () => ({
+  useAppDispatch: () => jest.fn(),
+  useAppSelector: (selector: any) => {
+    if (typeof selector === 'function') return selector({})
+    return {}
+  },
+}))
+
 jest.mock('next-intl', () => ({
   useTranslations: () => (key: string) => key,
   useLocale: () => 'en',
@@ -29,6 +38,9 @@ jest.mock('@/features/auth/components/store/auth.api', () => ({
     isError: false,
   }),
   useLazyGetAuthModeQuery: () => [jest.fn()],
+  useWebauthnBeginLoginMutation: () => [jest.fn(), { isLoading: false }],
+  useWebauthnCompleteLoginMutation: () => [jest.fn(), { isLoading: false }],
+  useLoginMutation: () => [jest.fn(), { isLoading: false }],
 }))
 
 describe('LoginForm - Step 1 (Email + Language)', () => {

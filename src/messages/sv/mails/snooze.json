@@ -1,0 +1,39 @@
+{
+  "MAIL_SNOOZE": {
+    "title": {
+      "string": "Skjuta upp"
+    },
+    "description": {
+      "string": "Välj när det här e-postmeddelandet ska visas igen i din inkorg."
+    },
+    "presets": {
+      "later_today": {
+        "string": "Senare idag"
+      },
+      "tomorrow": {
+        "string": "Imorgon"
+      },
+      "this_weekend": {
+        "string": "Den här helgen"
+      },
+      "next_week": {
+        "string": "Nästa vecka"
+      }
+    },
+    "pick_date": {
+      "string": "Välj datum och tid"
+    },
+    "pick_date_placeholder": {
+      "string": "Välj datum..."
+    },
+    "snooze_button": {
+      "string": "Skjuta upp"
+    },
+    "success": {
+      "string": "E-postmeddelande skjutet upp"
+    },
+    "error": {
+      "string": "Kunde inte skjuta upp e-postmeddelandet"
+    }
+  }
+}

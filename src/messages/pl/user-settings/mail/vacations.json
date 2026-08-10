@@ -1,0 +1,133 @@
+{
+  "US_MAIL_VACATIONS": {
+    "title": {
+      "string": "Ustawienia nieobecności",
+      "context": "Title for the vacation settings page"
+    },
+    "page": {
+      "description": {
+        "string": "Skonfiguruj automatyczną odpowiedź na czas nieobecności oraz okres, w którym ma być aktywna."
+      }
+    },
+    "errors_api": {
+      "load_failed": {
+        "string": "Nie udało się załadować ustawień nieobecności. Spróbuj ponownie później."
+      },
+      "feature_disabled": {
+        "string": "Automatyczna odpowiedź na czas nieobecności została wyłączona przez administratora."
+      }
+    },
+    "errors": {
+      "validation": {
+        "message_required": {
+          "string": "Wiadomość automatycznej odpowiedzi jest wymagana, gdy nieobecność jest włączona."
+        },
+        "dates_required": {
+          "string": "Data rozpoczęcia i zakończenia są wymagane, gdy ograniczenia czasowe są włączone."
+        },
+        "date_order": {
+          "string": "Data zakończenia musi być taka sama lub późniejsza niż data rozpoczęcia."
+        },
+        "time_invalid": {
+          "string": "Wprowadź poprawną godzinę w formacie GG:MM."
+        },
+        "weekday_required": {
+          "string": "Wybierz co najmniej jeden dzień tygodnia, gdy ograniczenia dotyczące dni tygodnia są włączone."
+        },
+        "response_interval_invalid": {
+          "string": "Interwał odpowiedzi musi być zerem lub liczbą dodatnią."
+        },
+        "response_interval_zero": {
+          "string": "Interwał odpowiedzi wynoszący zero dni nie jest dozwolony w tej domenie."
+        }
+      }
+    },
+    "auto_reply": {
+      "enable": {
+        "string": "Włącz automatyczną odpowiedź na czas nieobecności"
+      },
+      "subject": {
+        "label": {
+          "string": "Temat automatycznej odpowiedzi"
+        },
+        "description": {
+          "string": "Pozostaw puste, aby użyć domyślnego tematu. Możesz wpisać {subject}, aby wstawić oryginalny temat."
+        }
+      },
+      "message": {
+        "string": "Treść automatycznej odpowiedzi"
+      },
+      "constraints": {
+        "title": {
+          "string": "Ograniczenia aktywacji"
+        },
+        "description": {
+          "string": "Dostosuj zakresy dni i godzin niezależnie i opcjonalnie połącz je z konkretnymi dniami tygodnia, aby dopasować filtry nieobecności do swoich preferencji."
+        },
+        "enable": {
+          "days": {
+            "string": "Włącz automatyczną odpowiedź w tych dniach"
+          },
+          "hours": {
+            "string": "Włącz automatyczną odpowiedź między tymi godzinami"
+          },
+          "range": {
+            "string": "Włącz automatyczną odpowiedź między tymi datami"
+          }
+        },
+        "time": {
+          "start": {
+            "string": "Godzina rozpoczęcia"
+          },
+          "end": {
+            "string": "Godzina zakończenia"
+          }
+        },
+        "weekdays": {
+          "monday": {
+            "string": "Poniedziałek"
+          },
+          "tuesday": {
+            "string": "Wtorek"
+          },
+          "wednesday": {
+            "string": "Środa"
+          },
+          "thursday": {
+            "string": "Czwartek"
+          },
+          "friday": {
+            "string": "Piątek"
+          },
+          "saturday": {
+            "string": "Sobota"
+          },
+          "sunday": {
+            "string": "Niedziela"
+          }
+        }
+      },
+      "response": {
+        "interval_days": {
+          "label": {
+            "string": "Minimalna liczba dni między automatycznymi odpowiedziami"
+          },
+          "placeholder": {
+            "string": "Pozostaw puste, aby użyć domyślnego zachowania"
+          },
+          "description": {
+            "string": "Zapobiega wysyłaniu zduplikowanych odpowiedzi urlopowych w tym okresie (RFC 5230 :days)."
+          }
+        },
+        "send_always": {
+          "label": {
+            "string": "Zawsze wysyłaj odpowiedź z wiadomością urlopową"
+          },
+          "description": {
+            "string": "Wiadomość urlopowa jest wysyłana przed zastosowaniem filtrów."
+          }
+        }
+      }
+    }
+  }
+}

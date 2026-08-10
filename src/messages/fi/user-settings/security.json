@@ -1,0 +1,75 @@
+{
+  "US_SECURITY": {
+    "title": {
+      "string": "Turvallisuus",
+      "context": "Title for the Security settings section in user settings"
+    },
+    "totp": {
+      "title": {
+        "string": "Kaksivaiheinen tunnistautuminen (TOTP)",
+        "context": "Title for the Two-Factor Authentication settings"
+      },
+      "description": {
+        "string": "Kaksivaiheinen tunnistautuminen lisää ylimääräisen turvakerroksen tilillesi. Kun se on otettu käyttöön, sinun on syötettävä joka kerta kirjautuessasi ainutlaatuinen koodi, jonka tunnistussovellus generaattorisi puhelimessasi tuottaa."
+      },
+      "verification_code": {
+        "title": {
+          "string": "Vahvistuskoodi"
+        },
+        "description": {
+          "string": "Syötä tunnistussovelluksesi tuottama vahvistuskoodi."
+        }
+      }
+    },
+    "webauthn": {
+      "title": {
+        "string": "Salasanattomat kirjautumiset (WebAuthn)",
+        "context": "Title for the WebAuthn settings section"
+      },
+      "description": {
+        "string": "Salasanattomat kirjautumiset mahdollistavat kirjautumisen ilman salasanaa laitteen biometrisellä tunnistimella (sormenjälki, Face ID) tai laitteistoturva-avainta käyttäen. Salasanaton kirjautumistietosi tallennetaan turvallisesti tähän laitteeseen.",
+        "context": "Description for the WebAuthn settings section"
+      },
+      "registered_credentials": {
+        "string": "Rekisteröidyt salasanattomat kirjautumiset",
+        "context": "Label for the list of registered passkeys"
+      },
+      "registered_at": {
+        "string": "Rekisteröity",
+        "context": "Label for the registration date of a passkey"
+      },
+      "no_credentials": {
+        "string": "Ei vielä rekisteröityjä salasanattomia kirjautumisia.",
+        "context": "Message when no passkeys are registered"
+      },
+      "register": {
+        "string": "Rekisteröi uusi salasanaton kirjautuminen",
+        "context": "Button to register a new passkey",
+        "title": {
+          "string": "Register a New Passkey",
+          "context": "Title for the passkey registration dialog"
+        },
+        "description": {
+          "string": "Your browser or device will guide you through setting up a passkey using biometrics, a PIN, or an external security key.",
+          "context": "Description for the passkey registration dialog"
+        },
+        "button": {
+          "string": "Register",
+          "context": "Button to start passkey registration"
+        },
+        "waiting": {
+          "string": "Waiting for device interaction — follow the prompts on your device.",
+          "context": "Status during passkey registration"
+        },
+        "success": {
+          "string": "Passkey registered successfully!",
+          "context": "Status when passkey registration succeeds"
+        }
+      },
+      "device_name": {
+        "string": "Laitteen nimi (valinnainen)",
+        "context": "Label for the device name input field"
+      }
+    }
+  }
+}

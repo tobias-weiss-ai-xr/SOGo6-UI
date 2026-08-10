@@ -1,0 +1,34 @@
+{
+  "IMPORT": {
+    "title": {
+      "string": "Impor & Ekspor PST / M365"
+    },
+    "description": {
+      "string": "Impor kotak surat dari file PST atau Microsoft 365 dengan pelacakan kemajuan"
+    },
+    "errors": {
+      "fields": {
+        "string": "Field wajib belum diisi"
+      },
+      "fail": {
+        "string": "Operasi gagal"
+      }
+    },
+    "success": {
+      "analyze": {
+        "string": "PST dianalisis"
+      },
+      "import": {
+        "string": "Impor dimulai"
+      }
+    },
+    "jobs": {
+      "title": {
+        "string": "Pekerjaan Impor"
+      },
+      "empty": {
+        "string": "Belum ada pekerjaan impor"
+      }
+    }
+  }
+}

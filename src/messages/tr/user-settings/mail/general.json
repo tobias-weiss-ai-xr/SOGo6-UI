@@ -1,0 +1,171 @@
+{
+  "US_MAIL_GENERAL": {
+    "title": {
+      "string": "E-posta Genel Ayarları",
+      "context": "Title for the mail general settings page"
+    },
+    "compose_message_in": {
+      "string": "İleti oluşturma dili",
+      "context": "Dropdown label in what way to compose messages"
+    },
+    "display_subscribed_mailboxes_only": {
+      "string": "Sadece abone olunan posta kutularını göster",
+      "context": "Checkbox to show subscribed mailboxes only"
+    },
+    "fetch_count_of_unseen_messages": {
+      "string": "Tüm posta kutuları için okunmamış ileti sayısını getir",
+      "context": "Checkbox to fetch count of unseen messages for all mailboxes"
+    },
+    "sort_messages_by_threads": {
+      "string": "İletileri konulara göre sırala",
+      "context": "Checkbox to sort messages by threads"
+    },
+    "show_recipients_or_sender_full_email": {
+      "string": "Posta kutularında alıcı veya göndericinin tam e-posta adresini göster",
+      "context": "Checkbox to show recipients or sender full email in mailboxes"
+    },
+    "hide_attachments_for_inline_images": {
+      "string": "E-posta görüntüleyicisinde satır içi resimleri ek dosya olarak gösterme",
+      "context": "Checkbox to hide attachments for inline images"
+    },
+    "automatically_mark_messages_as_read": {
+      "string": "İletileri (tanımlanan) saniye sonra okundu olarak işaretle",
+      "context": "Checkbox to automatically mark messages as read"
+    },
+    "collect_unknown_addresses": {
+      "string": "Bilinmeyen e-posta adreslerini rehbere kaydet",
+      "context": "Checkbox to collect unknown mail addresses"
+    },
+    "collect_unknown_addressbook_name": {
+      "string": "Rehber adı",
+      "context": "Input for the unknown email addressbook name"
+    },
+    "forward_messages": {
+      "title": {
+        "string": "İletileri ilet",
+        "context": "Dropdown label for forward messages"
+      },
+      "as_attachment": {
+        "string": "Ek olarak",
+        "context": "Checkbox to forward messages as attachment"
+      },
+      "as_inline": {
+        "string": "Satır içi olarak",
+        "context": "Checkbox to forward messages as inline"
+      }
+    },
+    "start_reply": {
+      "title": {
+        "string": "Bir iletiye yanıtlarken",
+        "context": "Dropdown label to know where to start in the mail when replying"
+      },
+      "to_above": {
+        "string": "Yanıtımı alıntının üstüne başlat",
+        "context": "Checkbox to start replying at the bottom"
+      },
+      "to_below": {
+        "string": "Yanıtımı alıntının altına başlat",
+        "context": "Checkbox to start replying at the top"
+      }
+    },
+    "place_signature": {
+      "title": {
+        "string": "ve imzayı yerleştir",
+        "context": "Dropdown label to know where to place the signature"
+      },
+      "above": {
+        "string": "alıntının üstüne",
+        "context": "Checkbox to start replying at the bottom"
+      },
+      "below": {
+        "string": "alıntının altına",
+        "context": "Checkbox to start replying at the top"
+      }
+    },
+    "attachment_position": {
+      "title": {
+        "string": "Eki yerleştir",
+        "context": "Dropdown label to know where to place the attachment"
+      },
+      "above": {
+        "string": "e-postanın üstünde"
+      },
+      "below": {
+        "string": "e-postanın altında"
+      }
+    },
+    "sign_on": {
+      "new": {
+        "string": "Yeni mesajda imza ekle"
+      },
+      "reply": {
+        "string": "Yanıt mesajında imza ekle"
+      },
+      "forward": {
+        "string": "İletilen mesajda imza ekle"
+      }
+    },
+    "default_font_size": {
+      "title": {
+        "string": "Varsayılan yazı boyutu",
+        "context": "Dropdown label to know the default font size"
+      },
+      "sm": {
+        "string": "Küçük",
+        "context": "Small font size"
+      },
+      "md": {
+        "string": "Orta",
+        "context": "Medium font size"
+      },
+      "lg": {
+        "string": "Büyük",
+        "context": "Large font size"
+      },
+      "xl": {
+        "string": "Çok büyük",
+        "context": "Extra large font size"
+      }
+    },
+    "display_remote_images": {
+      "string": "Uzak gömülü resimleri göster",
+      "context": "Checkbox to set display remote inline images to true or false"
+    },
+    "compose": {
+      "title": {
+        "string": "Varsayılan mesaj oluşturma davranışı",
+        "context": "Dropdown label to know where to open compose in"
+      },
+      "always_ask": {
+        "string": "Her zaman yeni pencerede mi yoksa webmail içinde mi açılacağını sor",
+        "context": "Dropdown label to know where to open compose in"
+      },
+      "in_new_window": {
+        "string": "Mesajı yeni pencerede aç",
+        "context": "Dropdown label to know where to open compose in"
+      },
+      "inside_webmail": {
+        "string": "Mesajı webmail içinde aç",
+        "context": "Dropdown label to know where to open compose in"
+      }
+    },
+    "mail_allow_receipt": {
+      "string": "E-postaların okundu bilgisi isteyebilmesine izin ver",
+      "context": "Checkbox to allow mail to ask for receipts"
+    },
+    "mail_folder_subscribe": {
+      "string": "Sadece abone olunan klasörleri göster",
+      "context": "Checkbox to show subscribed mailboxes only"
+    },
+    "compose_mail_window": {
+      "string": "E-posta oluşturma penceresi",
+      "context": "Dropdown label to know where to open compose in",
+      "popup": {
+        "string": "Compose email in a popup"
+      },
+      "inline": {
+        "string": "Compose email inside the webmail"
+      }
+    }
+  }
+}

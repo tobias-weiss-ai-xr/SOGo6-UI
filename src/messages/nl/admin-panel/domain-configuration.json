@@ -1,0 +1,1285 @@
+{
+  "AP_DOMAIN_CONFIGURATION": {
+    "origin": {
+      "rule": {
+        "string": "(van regel {origin})"
+      },
+      "default": {
+        "string": "(van standaardconfiguratie)"
+      },
+      "domain": {
+        "string": "(van domein {origin})"
+      }
+    },
+    "tabs": {
+      "auth_settings": {
+        "string": "Authenticatie-instellingen"
+      },
+      "user_source": {
+        "string": "Gebruikersbron"
+      },
+      "user_module_settings": {
+        "string": "Gebruiker- en module-instellingen"
+      },
+      "mail_settings": {
+        "string": "E-mailinstellingen"
+      },
+      "calendar_contact_settings": {
+        "string": "Agenda- en contactinstellingen"
+      }
+    },
+    "properties": {
+      "SOGO_D_AUTH_TYPE": {
+        "name": {
+          "string": "Authenticatiemethode"
+        },
+        "description": {
+          "string": "Selecteer de authenticatiemethode voor gebruikers. 'Plain' betekent de klassieke gebruikersnaam/wachtwoord"
+        },
+        "developer_comment": "Options might include LDAP, SQL, etc."
+      },
+      "SOGO_D_CAS_URL": {
+        "name": {
+          "string": "URL van de CAS-server"
+        },
+        "description": {
+          "string": "Voer de volledige URL van uw CAS-server in"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_CAS_LOGOUT_ENABLED": {
+        "name": {
+          "string": "Uitloggen met CAS inschakelen"
+        },
+        "description": {
+          "string": "Vink het vakje aan om gebruikers toe te staan uit te loggen bij uw SOGo en de CAS-server"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_OPENID_CONFIG_URL": {
+        "name": {
+          "string": "URL van het OpenID Provider-eindpunt"
+        },
+        "description": {
+          "string": "Voorbeeld: https://myopenid.net/.well-known/openid-configuration"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_OPENID_CLIENT_NAME": {
+        "name": {
+          "string": "OpenID-cliëntnaam"
+        },
+        "description": {
+          "string": "Naam van uw OpenID-cliënt"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_OPENID_CLIENT_SECRET": {
+        "name": {
+          "string": "OpenID-cliëntgeheim"
+        },
+        "description": {
+          "string": "Geheim van uw OpenID-cliënt"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_OPENID_SCOPE": {
+        "name": {
+          "string": "OpenID-clientbereik"
+        },
+        "description": {
+          "string": "Bereik van uw OpenID-client. Standaard is 'openid profile email'."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_OPENID_EMAIL": {
+        "name": {
+          "string": "e-mailveld van de gebruiker"
+        },
+        "description": {
+          "string": "Sleutel waar het e-mailadres van de gebruiker in het gebruikersprofiel te vinden is."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_OPENID_TOKEN_CHECK_INTERVAL": {
+        "name": {
+          "string": "Controle-interval token"
+        },
+        "description": {
+          "string": "Om het aantal verzoeken aan uw OpenID-server te beperken voor het controleren van de geldigheid van het token, stelt u een interval in seconden in waarin het token niet opnieuw wordt gecontroleerd na een eerste succesvolle controle. 0 betekent dat het token altijd wordt gecontroleerd. 60 betekent dat het token 60 seconden niet wordt gecontroleerd na een eerste succesvolle controle."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_OPENID_REFRESH_ENABLE": {
+        "name": {
+          "string": "Vernieuwingsmechanisme token toestaan"
+        },
+        "description": {
+          "string": "Als uw OpenID-server het vernieuwingsmechanisme voor tokens beheert, zal SOGo dit gebruiken."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_OPENID_ENDSESSION_ENABLED": {
+        "name": {
+          "string": "Eindsessie van OpenID-server inschakelen"
+        },
+        "description": {
+          "string": "Standaard kunnen gebruikers alleen uitloggen bij webmail. Schakel deze instelling in om ook uit te loggen bij uw OpenID-server, wat betekent dat de gebruiker wordt uitgelogd bij alle toepassingen die de OpenID-server gebruiken. Werkt alleen als uw OpenID een end_session_endpoint heeft."
+        },
+        "developer_comment": ""
+      },
+      "SOGo_D_OPENID_FETCH_USER_PROFILE": {
+        "name": {
+          "string": "Gebruikersprofiel ophalen"
+        },
+        "description": {
+          "string": "Standaard haalt SOGo het gebruikersprofiel op om het e-mailadres van de gebruiker te verkrijgen. Schakel dit uit om het e-mailadres rechtstreeks uit het token te halen. Schakel dit uit als u Microsoft Active Directory Federation Service (AD FS) gebruikt."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SAML2_URL": {
+        "name": {
+          "string": "SAML2 IS NOG NIET AFGEROND!!!"
+        },
+        "description": {
+          "string": "Succes voor de persoon die dit gaat doen..."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_PWD_CHANGE_ENABLED": {
+        "name": {
+          "string": "Wijziging wachtwoord toestaan"
+        },
+        "description": {
+          "string": "Sta gebruikers toe om hun wachtwoord via SOGo te wijzigen. Zorg ervoor dat uw gebruikersbron de rechten aan gebruikers verleent om deze actie uit te voeren."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_LOGIN_CHECK_MAX_ATTEMPT": {
+        "name": {
+          "string": "Maximaal aantal mislukte inlogpogingen"
+        },
+        "description": {
+          "string": "Stel in hoeveel keer een gebruiker mag falen bij het inloggen voordat deze wordt geblokkeerd. 0 betekent geen limiet."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_LOGIN_CHECK_TIME_SPAN": {
+        "name": {
+          "string": "Tijdsduur mislukte inlogpogingen"
+        },
+        "description": {
+          "string": "Stel de tijdsduur in seconden in waarin mislukte inlogpogingen worden geteld. Voorbeeld: 60 betekent dat de gebruiker binnen 60 seconden na de eerste mislukte poging maximaal 'Maximaal aantal mislukte inlogpogingen' mag falen voordat deze wordt geblokkeerd."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_LOGIN_CHECK_BLOCK_TIME": {
+        "name": {
+          "string": "Tijdsblokkering na mislukte inlogpogingen"
+        },
+        "description": {
+          "string": "Stel in hoelang (in seconden) een gebruiker wordt geblokkeerd na te veel mislukte inlogpogingen."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_PWD_RECOVERY": {
+        "name": {
+          "string": "Wachtwoordherstel inschakelen"
+        },
+        "description": {
+          "string": "Sta gebruikers toe een wachtwoordherstelmethode in te stellen"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_PWD_RECOVERY_METHOD": {
+        "name": {
+          "string": "Beschikbare wachtwoordherstelmethoden"
+        },
+        "description": {
+          "string": "Kies de wachtwoordherstelmethode(n) die voor gebruikers beschikbaar zijn"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_PWD_RECOVERY_FORCE": {
+        "name": {
+          "string": "Wachtwoordherstel afdwingen"
+        },
+        "description": {
+          "string": "Dwing gebruikers een wachtwoordherstelmethode in te stellen."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_PWD_RECOVERY_DELAY": {
+        "name": {
+          "string": "Vertraging tussen wachtwoordherstelverzoeken"
+        },
+        "description": {
+          "string": "Vertraging in seconden voordat een gebruiker opnieuw om wachtwoordherstel kan vragen."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_LOGIN_MFA": {
+        "name": {
+          "string": "MFA inschakelen"
+        },
+        "description": {
+          "string": "Sta gebruikers toe Multi-Factor Authenticatie in te stellen"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_LOGIN_MFA_METHOD": {
+        "name": {
+          "string": "Beschikbare MFA-methoden"
+        },
+        "description": {
+          "string": "Kies de MFA-methoden die voor gebruikers beschikbaar zijn"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_LOGIN_MFA_FORCE": {
+        "name": {
+          "string": "MFA afdwingen"
+        },
+        "description": {
+          "string": "Dwing gebruikers MFA in te stellen"
+        },
+        "developer_comment": ""
+      },
+      "US_UID": {
+        "name": {
+          "string": "Gebruikersbron-UID"
+        },
+        "description": {
+          "string": "Kies een unieke naam voor deze gebruikersbron (wordt niet aan gebruikers getoond)"
+        },
+        "developer_comment": "Only for SOGo to differentiate differents User SOurce"
+      },
+      "US_TYPE": {
+        "name": {
+          "string": "Type gebruikersbron"
+        },
+        "description": {
+          "string": "Stel het type gebruikersbron in"
+        },
+        "developer_comment": "Only ldap and sql supported for now"
+      },
+      "US_LDAP_HOSTNAME": {
+        "name": {
+          "string": "LDAP-serverhostnaam"
+        },
+        "description": {
+          "string": "Geef alleen de host en poort op, voeg geen andere informatie toe"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_BIND_DN": {
+        "name": {
+          "string": "Bind-DN"
+        },
+        "description": {
+          "string": "De DN van de inlognaam die wordt gebruikt voor het binden aan uw server."
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_BIND_DN_PWD": {
+        "name": {
+          "string": "Bind-DN-wachtwoord"
+        },
+        "description": {
+          "string": "Het wachtwoord voor uw Bind-DN"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_BASE_DN": {
+        "name": {
+          "string": "Basis-DN"
+        },
+        "description": {
+          "string": "Basis-DN van uw gebruikersinvoer. Als het domein van de e-mail hierin staat, kunt u '%d' toevoegen om dit dynamisch in te vullen op basis van de e-mail van de gebruiker, zoals: 'ou=%d,dc=example,dc=com'"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_UID": {
+        "name": {
+          "string": "UID-veld"
+        },
+        "description": {
+          "string": "Veld met de inlognaam van de gebruiker; de inlognaam moet uniek zijn voor alle gebruikersbronnen en domeinen"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_CN": {
+        "name": {
+          "string": "CN-veld"
+        },
+        "description": {
+          "string": "Veld met de volledige naam van de gebruiker"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_ID": {
+        "name": {
+          "string": "ID-veld"
+        },
+        "description": {
+          "string": "Veld dat een gebruikers-DN start als het Bind-veld niet wordt gebruikt (voorbeeld: als u 'dn: uid=sogo,ou=users,dc=example,dc=org' heeft, moet deze waarde 'uid' zijn)"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_SCOPE": {
+        "name": {
+          "string": "LDAP-zoekbereik"
+        },
+        "description": {
+          "string": "Geeft de set entries aan op of onder de Basis-DN die als potentiële overeenkomsten voor een zoekverzoek kunnen worden beschouwd"
+        },
+        "developer_comment": "https://ldapwiki.com/wiki/Wiki.jsp?page=LDAP%20Search%20Scopes"
+      },
+      "US_LDAP_FILTER": {
+        "name": {
+          "string": "LDAP-filter"
+        },
+        "description": {
+          "string": "Aanvullend filter voor LDAP-query's. Gebruik '=', '!=', 'AND', 'OR' en haakjes. Voorbeeld: '(objectClass='mailUser' OR objectClass!='mailGroup') AND accountStatus='active'"
+        },
+        "developer_comment": "Use SOGo's syntax and not ldap syntax for filter"
+      },
+      "US_LDAP_PWD_POLICY": {
+        "name": {
+          "string": "LDAP-wachtwoordbeleid"
+        },
+        "description": {
+          "string": "Geeft aan dat uw LDAP-server een wachtwoordbeleid heeft met noties van vervaldatum en wachttijd"
+        },
+        "developer_comment": "https://ldapwiki.com/wiki/Wiki.jsp?page=Password%20Policy"
+      },
+      "US_LDAP_PWD_UPDATE_SAMBA": {
+        "name": {
+          "string": "LDAP-wachtwoord bijwerken voor Samba"
+        },
+        "description": {
+          "string": "Als een gebruiker zijn wachtwoord wijzigt, worden ook sambaNTPassword en sambaLMPassword bijgewerkt"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_BIND_AS_USER": {
+        "name": {
+          "string": "Binden als gebruiker"
+        },
+        "description": {
+          "string": "Na authenticatie de DN van de gebruiker gebruiken om te binden"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_BIND_FIELD": {
+        "name": {
+          "string": "Extra bind-velden"
+        },
+        "description": {
+          "string": "Extra velden om te gebruiken bij het binden. Bijvoorbeeld: als je 'mail' toevoegt, wordt de bind ook 'mail=<login>'"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_ATTR_FIELD": {
+        "name": {
+          "string": "Attribuutvelden"
+        },
+        "description": {
+          "string": "Attributen die worden geretourneerd tijdens zoekopdrachten. Standaard is '*' (alles). Wees voorzichtig, dit kan het gedrag van SOGo aanzienlijk beïnvloeden"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_GROUP_CLASS": {
+        "name": {
+          "string": "LDAP-groepsklasse"
+        },
+        "description": {
+          "string": "Stel de LDAP-klasse in die SOGo aangeeft dat dit een groep is en geen individuele gebruiker"
+        },
+        "developer_comment": ""
+      },
+      "US_SQL_USER_URL": {
+        "name": {
+          "string": "SQL-gebruikers-URL"
+        },
+        "description": {
+          "string": "Database-URL naar je gebruikerstabel. Voorbeeld: postgresql://sogo:sogo@127.0.0.1:5432/sogo/sogo_user"
+        },
+        "developer_comment": ""
+      },
+      "US_SQL_PREPEND_PWD_SCHEME": {
+        "name": {
+          "string": "SQL-wachtwoordschema"
+        },
+        "description": {
+          "string": "Vink JA aan als het wachtwoord in de database als volgt is opgeslagen: {scheme}geëncrypteerdeWaarde"
+        },
+        "developer_comment": ""
+      },
+      "US_SQL_USER_FILTER": {
+        "name": {
+          "string": "SQL-gebruikersfilter"
+        },
+        "description": {
+          "string": "Extra WHERE-voorwaarden om toe te voegen aan de SQL-query. Voorbeeld: 'active=1'"
+        },
+        "developer_comment": ""
+      },
+      "US_SQL_DOMAIN_FIELD": {
+        "name": {
+          "string": "SQL-gebruikersdomein"
+        },
+        "description": {
+          "string": "Stel de kolomnaam in waar het domein van de gebruiker staat. Als ingesteld, voegt elke SQL-query '<domein_kolom> = <gebruikersdomein>' toe aan de WHERE-voorwaarde"
+        },
+        "developer_comment": ""
+      },
+      "US_MAPPING": {
+        "name": {
+          "string": "Gebruikersbron-mapping"
+        },
+        "description": {
+          "string": "Koppel je gebruikersbronveld aan contactattributen"
+        },
+        "developer_comment": ""
+      },
+      "US_CAN_AUTH": {
+        "name": {
+          "string": "Kan authenticeren"
+        },
+        "description": {
+          "string": "Gebruikers van deze gebruikersbron kunnen inloggen op webmail"
+        },
+        "developer_comment": ""
+      },
+      "US_PWD_ALGO": {
+        "name": {
+          "string": "Wachtwoordalgoritme voor gebruikersbron"
+        },
+        "description": {
+          "string": "Wachtwoordalgoritme gebruikt door deze gebruikersbron. Verplicht voor een SQL-gebruikersbron. Optioneel voor LDAP: alleen nodig als gebruikers hun wachtwoord mogen wijzigen"
+        },
+        "developer_comment": ""
+      },
+      "US_SIM_KEY_TYPE": {
+        "name": {
+          "string": "Type symmetrische sleutel voor wachtwoordalgoritme"
+        },
+        "description": {
+          "string": "Geef aan hoe u de symmetrische sleutel van uw wachtwoordalgoritme opslaat"
+        },
+        "developer_comment": ""
+      },
+      "US_SIM_KEY_VALUE": {
+        "name": {
+          "string": "Waarde van de symmetrische sleutel voor wachtwoordalgoritme"
+        },
+        "description": {
+          "string": "De waarde hangt af van het type.\nAls 'pad', voer hier het bestandspad in waar SOGo de symmetrische sleutel kan vinden.\nAls 'env', geef de naam van de omgevingsvariabele op waar de sleutel staat.\nAls 'plain', voer hier direct de sleutel in"
+        },
+        "developer_comment": ""
+      },
+      "US_PWD_POLICY": {
+        "name": {
+          "string": "Wachtwoordbeleid voor gebruikers"
+        },
+        "description": {
+          "string": "Vink het vakje aan om een beleid toe te voegen voor gebruikerswachtwoorden. Dit beleid wordt toegepast wanneer de gebruiker het wachtwoord wijzigt of als u 'controleer wachtwoordsterkte bij inloggen' inschakelt"
+        },
+        "developer_comment": ""
+      },
+      "US_PWD_LEN_MIN": {
+        "name": {
+          "string": "Minimale lengte gebruikerswachtwoord"
+        },
+        "description": {
+          "string": "Minimale lengte van een gebruikerswachtwoord (inclusief). Minimaal 4."
+        },
+        "developer_comment": ""
+      },
+      "US_PWD_LEN_MAX": {
+        "name": {
+          "string": "Maximale lengte gebruikerswachtwoord"
+        },
+        "description": {
+          "string": "Maximale lengte van een gebruikerswachtwoord (inclusief). 0 betekent geen limiet"
+        },
+        "developer_comment": ""
+      },
+      "US_PWD_UPPERCASE_MIN": {
+        "name": {
+          "string": "Minimaal aantal hoofdletters in wachtwoord"
+        },
+        "description": {
+          "string": "Minimaal aantal hoofdletters. 0 betekent geen limiet"
+        },
+        "developer_comment": ""
+      },
+      "US_PWD_LOWERCASE_MIN": {
+        "name": {
+          "string": "Minimaal aantal kleine letters in wachtwoord"
+        },
+        "description": {
+          "string": "Minimaal aantal kleine letters. 0 betekent geen limiet"
+        },
+        "developer_comment": ""
+      },
+      "US_PWD_DIGITS_MIN": {
+        "name": {
+          "string": "Minimaal aantal cijfers in wachtwoord"
+        },
+        "description": {
+          "string": "Minimaal aantal cijfers. 0 betekent geen limiet"
+        },
+        "developer_comment": ""
+      },
+      "US_PWD_SPECIAL_ALLOWED": {
+        "name": {
+          "string": "Toegestane speciale tekens in wachtwoord"
+        },
+        "description": {
+          "string": "Lijst met speciale tekens die in wachtwoorden zijn toegestaan"
+        },
+        "developer_comment": ""
+      },
+      "US_PWD_SPECIAL_MIN": {
+        "name": {
+          "string": "Minimaal aantal speciale tekens in wachtwoord"
+        },
+        "description": {
+          "string": "Minimaal aantal speciale tekens dat moet voorkomen. 0 betekent geen limiet"
+        },
+        "developer_comment": ""
+      },
+      "US_MAIL": {
+        "name": {
+          "string": "E-mailveld gebruiker"
+        },
+        "description": {
+          "string": "Veld waar de e-mail van de gebruiker te vinden is. Extra velden kunnen worden ingesteld na het hoofd-e-mailveld om aliasadressen van de gebruiker op te geven"
+        },
+        "developer_comment": ""
+      },
+      "US_MAIL_SERVER_LOGIN": {
+        "name": {
+          "string": "Inlognaam e-mailserver gebruiker"
+        },
+        "description": {
+          "string": "Alleen instellen als de inlognaam voor uw e-mailserver (IMAP) verschilt van het hoofd-e-mailadres. Geef hier het veld op waar de inlognaam te vinden is"
+        },
+        "developer_comment": ""
+      },
+      "US_MAIL_FILTERING_LOGIN": {
+        "name": {
+          "string": "Inlognaam e-mailfilterserver gebruiker"
+        },
+        "description": {
+          "string": "Alleen instellen als de inlognaam voor uw e-mailfilterserver (Sieve) verschilt van het hoofd-e-mailadres. Geef hier het veld op waar de inlognaam te vinden is"
+        },
+        "developer_comment": ""
+      },
+      "US_MAIL_OUTGOING_LOGIN": {
+        "name": {
+          "string": "Inlognaam uitgaande e-mailserver gebruiker"
+        },
+        "description": {
+          "string": "Alleen instellen als de inlognaam voor uw uitgaande e-mailserver (SMTP) verschilt van het hoofd-e-mailadres. Geef hier het veld op waar de inlognaam te vinden is"
+        },
+        "developer_comment": ""
+      },
+      "US_KIND": {
+        "name": {
+          "string": "Gebruikerssoort"
+        },
+        "description": {
+          "string": "Geef het veld op waar het type gebruiker te vinden is ('gebruiker', 'bron' of 'groep')"
+        },
+        "developer_comment": ""
+      },
+      "US_IS_ADDRESSBOOK": {
+        "name": {
+          "string": "Gebruikersbron is adressenboek"
+        },
+        "description": {
+          "string": "Geef het veld op als de gebruikers van deze gebruikersbron beschikbaar zijn via autocompletie of het globale adressenboek"
+        },
+        "developer_comment": ""
+      },
+      "US_SEARCH": {
+        "name": {
+          "string": "Zoekveld gebruiker"
+        },
+        "description": {
+          "string": "Extra veld om toe te voegen bij het zoeken naar een gebruiker. Bijvoorbeeld 'naam' zoekt gebruikers op naam"
+        },
+        "developer_comment": ""
+      },
+      "US_DISPLAY_NAME": {
+        "name": {
+          "string": "Weergavenaam gebruikersbron"
+        },
+        "description": {
+          "string": "Weergavenaam van deze gebruikersbron, wordt getoond in de lijst met globale adressenboeken"
+        },
+        "developer_comment": ""
+      },
+      "US_AUTO_SEARCH": {
+        "name": {
+          "string": "Automatische weergave van gebruikers in GAB"
+        },
+        "description": {
+          "string": "Automatisch zoeken en weergeven van gebruikers in het Globale Adresboek bij selectie. Anders moet de gebruiker typen om de zoekopdracht te activeren of '.' invoeren om naar alle gebruikers te zoeken."
+        },
+        "developer_comment": ""
+      },
+      "US_AUTO_SEARCH_LIMIT": {
+        "name": {
+          "string": "Limiet voor automatische aanvulling van gebruikers"
+        },
+        "description": {
+          "string": "Beperk het maximale aantal gebruikers dat wordt teruggegeven na een zoekopdracht. 0 betekent geen limiet."
+        },
+        "developer_comment": ""
+      },
+      "US_EXTRA_CONTACT_INFO": {
+        "name": {
+          "string": "Extra contactinformatie van gebruiker"
+        },
+        "description": {
+          "string": "Geef aan welke informatie moet worden toegevoegd aan het resultaat van de automatische aanvulling. Wordt weergegeven als 'cn <extra> mail'."
+        },
+        "developer_comment": ""
+      },
+      "US_HIDDEN_USER": {
+        "name": {
+          "string": "Verborgen gebruiker"
+        },
+        "description": {
+          "string": "Lijst met gebruikers-uid's die nooit aan anderen moeten worden teruggegeven voor zoekopdrachten en automatische aanvulling."
+        },
+        "developer_comment": ""
+      },
+      "US_HAS_RESOURCE": {
+        "name": {
+          "string": "Gebruikersbron heeft bronnen"
+        },
+        "description": {
+          "string": "Vink dit aan als deze gebruikersbron bronnen bevat."
+        },
+        "developer_comment": ""
+      },
+      "US_RESOURCE_SEARCH": {
+        "name": {
+          "string": "Zoeken in gebruikersbronnen"
+        },
+        "description": {
+          "string": "Extra zoekveld voor bronnen."
+        },
+        "developer_comment": ""
+      },
+      "US_RESOURCE_MULTIBOOKING": {
+        "name": {
+          "string": "Meervoudige boeking van gebruikersbronnen"
+        },
+        "description": {
+          "string": "Veld waar de waarde voor meervoudige boeking van een bron te vinden is."
+        },
+        "developer_comment": ""
+      },
+      "US_RESOURCE_EXTRA_INFO": {
+        "name": {
+          "string": "Extra informatie over gebruikersbronnen"
+        },
+        "description": {
+          "string": "Geef aan welke informatie moet worden toegevoegd aan het resultaat van de automatische aanvulling. Wordt weergegeven als 'cn <extra> mail'."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MODULE_ACCESS": {
+        "name": {
+          "string": "Toegang tot modules"
+        },
+        "description": {
+          "string": "Bepaal welke modules beschikbaar zijn: e-mail, agenda en contacten."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAPI_ACCESS": {
+        "name": {
+          "string": "MAPI-server inschakelen"
+        },
+        "description": {
+          "string": "Sta gebruikers op de desktop toe om het MAPI-protocol te gebruiken."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_EAS_ACCESS": {
+        "name": {
+          "string": "EAS-server inschakelen"
+        },
+        "description": {
+          "string": "Sta mobiele gebruikers toe om het ActiveSync-protocol te gebruiken"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_FOLDER_DISABLE_EXPORT": {
+        "name": {
+          "string": "Map-export uitschakelen"
+        },
+        "description": {
+          "string": "Voorkom dat gebruikers hun mappen (e-mail, agenda, contacten) exporteren"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_FOLDER_DISABLE_SHARING": {
+        "name": {
+          "string": "Mapdelen uitschakelen"
+        },
+        "description": {
+          "string": "Voorkom dat gebruikers hun mappen (e-mail, agenda, contacten) delen"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_FOLDER_DISABLE_SHARING_ANY_AUTH": {
+        "name": {
+          "string": "Mapdelen met geverifieerde gebruikers uitschakelen"
+        },
+        "description": {
+          "string": "Voorkom dat gebruikers hun mappen (e-mail, agenda, contacten) delen met alle geverifieerde gebruikers"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_AUTOCOMPLETION_MIN_LEN": {
+        "name": {
+          "string": "Minimaal aantal tekens voor autocompletie"
+        },
+        "description": {
+          "string": "Stel het minimale aantal tekens in om een autocompletie-zoekopdracht te triggeren (bijv. 3 betekent dat de zoekopdracht start bij het derde teken)"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_API_MAX_REQUEST": {
+        "name": {
+          "string": "Maximaal aantal API-verzoeken"
+        },
+        "description": {
+          "string": "Stel het maximale aantal verzoeken in dat een geverifieerde gebruiker binnen een bepaalde tijd mag doen"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_API_MAX_REQUEST_INTERVAL": {
+        "name": {
+          "string": "Tijdsinterval voor maximaal aantal API-verzoeken"
+        },
+        "description": {
+          "string": "Stel de tijdsduur in waarin de beperking 'Maximaal aantal API-verzoeken' geldt"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_API_MAX_REQUEST_BLOCK_INTERVAL": {
+        "name": {
+          "string": "Blokkeertijd na overschrijding maximaal aantal API-verzoeken"
+        },
+        "description": {
+          "string": "Stel de tijd in waarvoor een gebruiker wordt geblokkeerd voor verzoeken als het 'Maximaal aantal API-verzoeken' is bereikt"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_IDENTITIES_ENABLED": {
+        "name": {
+          "string": "Identiteiten inschakelen"
+        },
+        "description": {
+          "string": "Sta gebruikers toe om e-mailidentiteiten aan te maken"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_IDENTITIES_CUSTOM_FROM_ENABLED": {
+        "name": {
+          "string": "Aangepast 'Van'-veld inschakelen"
+        },
+        "description": {
+          "string": "Sta gebruikers toe om een aangepast 'Van'-veld in hun identiteiten in te stellen"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_IDENTITIES_CUSTOM_NAME_ENABLED": {
+        "name": {
+          "string": "Aangepaste 'Naam' inschakelen"
+        },
+        "description": {
+          "string": "Sta gebruikers toe een aangepaste naam in te stellen voor hun identiteiten"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_IDENTITIES_CUSTOM_REPLY_TO_ENABLED": {
+        "name": {
+          "string": "Aangepast 'Antwoord naar' inschakelen"
+        },
+        "description": {
+          "string": "Sta gebruikers toe een aangepast 'Antwoord naar'-adres in te stellen voor hun identiteiten"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_ALLOW_EXT_MAIL_ACCOUNT": {
+        "name": {
+          "string": "Extern e-mailaccount inschakelen"
+        },
+        "description": {
+          "string": "Sta gebruikers toe een extern account in te stellen"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_ALLOW_EXT_AVATAR": {
+        "name": {
+          "string": "Gebruik van externe avatar toestaan"
+        },
+        "description": {
+          "string": "Sta gebruikers toe voorkeuren in te stellen voor het gebruik van een externe avatar (gravatar, libravatar, etc.)"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_REFRESH_INTERVAL_ALLOWED": {
+        "name": {
+          "string": "Toegestane auto-verversingsinterval voor e-mail instellen"
+        },
+        "description": {
+          "string": "Stel de waarden in die gebruikers kunnen kiezen voor de 'auto-ververs e-mail'-instelling"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_JUNK_SETTINGS": {
+        "name": {
+          "string": "Soort trigger voor ham/spam instellen"
+        },
+        "description": {
+          "string": "Stel een mechanisme in voor wanneer gebruikers e-mails als spam/ham markeren"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_JUNK_MAIL_SPAM": {
+        "name": {
+          "string": "E-mail voor spam"
+        },
+        "description": {
+          "string": "Stel het e-mailadres in waar spam naartoe wordt doorgestuurd"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_SERVER_TYPE": {
+        "name": {
+          "string": "Type e-mailserver"
+        },
+        "description": {
+          "string": "Stel het type e-mailserver in"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_IMAP_SERVER": {
+        "name": {
+          "string": "IMAP-server"
+        },
+        "description": {
+          "string": "Hostnaam van de IMAP-server"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_IMAP_PORT": {
+        "name": {
+          "string": "IMAP-poort"
+        },
+        "description": {
+          "string": "Poort van de IMAP-server"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_IMAP_ENCRYPTION": {
+        "name": {
+          "string": "IMAP-versleuteling"
+        },
+        "description": {
+          "string": "Versleutelingsmechanisme voor de IMAP-server"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_IMAP_AUTH_MECH": {
+        "name": {
+          "string": "IMAP-verificatiemechanisme"
+        },
+        "description": {
+          "string": "Verificatiemechanisme van IMAP. Gebruik 'login' niet zonder voorzorgsmaatregelen"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SOFT_EMAIL_QUOTA": {
+        "name": {
+          "string": "Zachte quota"
+        },
+        "description": {
+          "string": "Stel het percentage van de zachte quota in"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_PURGE_ALLOW": {
+        "name": {
+          "string": "Wissen inschakelen"
+        },
+        "description": {
+          "string": "Met wissen kunnen gebruikers alle e-mails ouder dan een bepaalde datum in een map of voor hun hele account verwijderen"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_PURGE_MIN_DATE": {
+        "name": {
+          "string": "Minimale dagen voor wissen"
+        },
+        "description": {
+          "string": "Stel het minimale aantal dagen in waarna een gebruiker het wissen kan toepassen. 0 betekent dat een gebruiker alle e-mails kan verwijderen. 30 betekent dat een gebruiker alleen e-mails ouder dan 30 dagen kan verwijderen"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_FILTERING_ENABLED": {
+        "name": {
+          "string": "E-mailfiltering inschakelen"
+        },
+        "description": {
+          "string": "Sta gebruikers toe om e-mailfilters in te stellen"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_FILTERING_TYPE": {
+        "name": {
+          "string": "Type e-mailfiltering"
+        },
+        "description": {
+          "string": "Soort e-mailfilterprotocol"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SIEVE_SERVER": {
+        "name": {
+          "string": "Sieve-server"
+        },
+        "description": {
+          "string": "Hostnaam van de Sieve-server"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SIEVE_PORT": {
+        "name": {
+          "string": "Sieve-poort"
+        },
+        "description": {
+          "string": "Poort van de Sieve-server"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SIEVE_ENCRYPTION": {
+        "name": {
+          "string": "Sieve-versleuteling"
+        },
+        "description": {
+          "string": "Versleuteling van de Sieve-server"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SIEVE_AUTH_MECH": {
+        "name": {
+          "string": "Sieve-verificatiemechanisme"
+        },
+        "description": {
+          "string": "Verificatiemechanisme voor sieve. Als None"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SIEVE_FOLDER_ENCODING": {
+        "name": {
+          "string": "Sieve-codering"
+        },
+        "description": {
+          "string": "Stel de codering in die door de sieve-server wordt gebruikt."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SIEVE_HEADER": {
+        "name": {
+          "string": "Sieve-koptekst"
+        },
+        "description": {
+          "string": "Stel een sieve-script in dat aan het begin van alle gebruikerssieve-scripts wordt toegevoegd"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SIEVE_FOOTER": {
+        "name": {
+          "string": "Sieve-voettekst"
+        },
+        "description": {
+          "string": "Stel een sieve-script in dat aan het einde van alle gebruikerssieve-scripts wordt toegevoegd"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SIEVE_FIRST_FILTER": {
+        "name": {
+          "string": "Initieel sieve-script"
+        },
+        "description": {
+          "string": "Stel het initiële sieve-script in voor alle nieuwe gebruikers. Zij kunnen het daarna aanpassen"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_VACATION_ENABLED": {
+        "name": {
+          "string": "Afwezigheidsberichten toestaan"
+        },
+        "description": {
+          "string": "Sta gebruikers toe een afwezigheidsbericht in te stellen. Gebruikt de 'vacation'-sieve-extensie (rfc5230)"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_VACATION_ALLOW_RESPONSE_ALWAYS": {
+        "name": {
+          "string": "Afwezigheidsbericht altijd toestaan"
+        },
+        "description": {
+          "string": "Sta gebruikers toe een afwezigheidsbericht in te stellen dat altijd wordt verzonden, zonder wachttijd"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_FORWARD_ENABLED": {
+        "name": {
+          "string": "Automatische doorsturing toestaan"
+        },
+        "description": {
+          "string": "Sta gebruikers toe automatische doorsturing in te stellen. Gebruikt het 'redirect'-sieve-commando"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_FORWARD_ALLOW_USER_DOMAIN": {
+        "name": {
+          "string": "Automatische doorsturing naar eigen domein toestaan"
+        },
+        "description": {
+          "string": "Sta gebruikers toe automatische doorsturing in te stellen naar adressen binnen hetzelfde domein"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_FORWARD_ALLOW_SOGO_DOMAIN": {
+        "name": {
+          "string": "Automatische doorsturing naar SOGo-domein toestaan"
+        },
+        "description": {
+          "string": "Sta gebruikers toe automatische doorsturing in te stellen naar adressen die bekend zijn bij SOGo"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_FORWARD_ALLOW_EXT_DOMAIN": {
+        "name": {
+          "string": "Automatische doorsturing naar externe domeinen toestaan"
+        },
+        "description": {
+          "string": "Gebruikers toestaan om automatische doorsturing in te stellen naar externe adressen"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_FORWARD_WHITELIST": {
+        "name": {
+          "string": "Witlijst voor automatische doorsturing (domeinen)"
+        },
+        "description": {
+          "string": "Specifieke domeinen instellen waar gebruikers naartoe mogen doorsturen"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_FORWARD_BLACKLIST": {
+        "name": {
+          "string": "Zwarte lijst voor automatische doorsturing (domeinen)"
+        },
+        "description": {
+          "string": "Specifieke domeinen instellen waar gebruikers niet naartoe mogen doorsturen"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_NOTIFY_ENABLED": {
+        "name": {
+          "string": "Meldingen toestaan"
+        },
+        "description": {
+          "string": "Gebruikers toestaan om meldingen in te stellen. Gebruikt de 'notify'-sieve-extensie (rfc5435)"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_NOTIFY_ALLOW_USER_DOMAIN": {
+        "name": {
+          "string": "Meldingen naar eigen domein toestaan"
+        },
+        "description": {
+          "string": "Gebruikers toestaan om meldingen in te stellen naar adressen binnen hetzelfde domein"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_NOTIFY_ALLOW_SOGO_DOMAIN": {
+        "name": {
+          "string": "Meldingen naar SOGo-domein toestaan"
+        },
+        "description": {
+          "string": "Gebruikers toestaan om meldingen in te stellen naar adressen die bekend zijn bij SOGo"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_NOTIFY_ALLOW_EXT_DOMAIN": {
+        "name": {
+          "string": "Meldingen naar externe domeinen toestaan"
+        },
+        "description": {
+          "string": "Gebruikers toestaan om meldingen in te stellen naar externe adressen"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_NOTIFY_WHITELIST": {
+        "name": {
+          "string": "Witlijst voor meldingen (domeinen)"
+        },
+        "description": {
+          "string": "Specifieke domeinen instellen waar gebruikers meldingen naartoe mogen sturen"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_NOTIFY_BLACKLIST": {
+        "name": {
+          "string": "Zwarte lijst voor meldingen (domeinen)"
+        },
+        "description": {
+          "string": "Specifieke domeinen instellen waar gebruikers geen meldingen naartoe mogen sturen"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_OUTGOING_TYPE": {
+        "name": {
+          "string": "Type uitgaande mailserver"
+        },
+        "description": {
+          "string": "Het type uitgaande mailserver instellen"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SMTP_SERVER": {
+        "name": {
+          "string": "SMTP-server"
+        },
+        "description": {
+          "string": "Hostnaam van de SMTP-server"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SMTP_PORT": {
+        "name": {
+          "string": "SMTP-poort"
+        },
+        "description": {
+          "string": "Poort van de SMTP-server"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SMTP_ENCRYPTION": {
+        "name": {
+          "string": "SMTP-versleuteling"
+        },
+        "description": {
+          "string": "Versleutelingsmechanisme van de SMTP-server"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SMTP_AUTH_MECH": {
+        "name": {
+          "string": "SMTP-verificatiemethode"
+        },
+        "description": {
+          "string": "Verificatiemechanisme van SMTP. Gebruik 'Geen' niet zonder voorzorgsmaatregelen"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SMTP_MASTER_ENABLED": {
+        "name": {
+          "string": "SMTP-hoofdaccount"
+        },
+        "description": {
+          "string": "Gebruik een hoofdaccount voor alle systeemberichten (gebeurtenissen, meldingen, etc.)"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SMTP_MASTER_FROM": {
+        "name": {
+          "string": "Hoofdaccount afzender"
+        },
+        "description": {
+          "string": "Afzender van het SMTP-hoofdaccount"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SMTP_MASTER_LOGIN": {
+        "name": {
+          "string": "Hoofdaccount inloggen"
+        },
+        "description": {
+          "string": "E-mailadres van het SMTP-hoofdaccount"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SMTP_MASTER_PWD": {
+        "name": {
+          "string": "Hoofdaccount wachtwoord"
+        },
+        "description": {
+          "string": "Wachtwoord van het SMTP-hoofdaccount"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_MAX_SUBMISSION": {
+        "name": {
+          "string": "Maximaal aantal verzonden e-mails"
+        },
+        "description": {
+          "string": "Maximaal aantal e-mails dat een gebruiker in een bepaalde periode kan verzenden"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_MAX_SUBMISSION_INTERVAL": {
+        "name": {
+          "string": "Tijdsinterval maximaal aantal e-mails"
+        },
+        "description": {
+          "string": "Tijdsduur in seconden waarin 'Maximaal aantal verzonden e-mails' geldt"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_MAX_SUBMISSION_BLOCK_INTERVAl": {
+        "name": {
+          "string": "Maximale blokkeertijd voor verzenden van e-mails"
+        },
+        "description": {
+          "string": "Tijdsduur waarin een gebruiker geen e-mails mag verzenden na het triggeren van 'Maximale verzonden e-mails'"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_MAX_RECIPIENT": {
+        "name": {
+          "string": "Maximaal aantal ontvangers per e-mail"
+        },
+        "description": {
+          "string": "Wachtwoord hoofdaccount"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_CHECK_FROM": {
+        "name": {
+          "string": "Controleer 'Van'"
+        },
+        "description": {
+          "string": "Controleer of het 'Van'-adres een van de e-mailadressen van de gebruiker is (standaard, aliases, identiteiten, etc.) voordat de uitgaande mailserver wordt benaderd"
+        },
+        "developer_comment": ""
+      }
+    }
+  }
+}

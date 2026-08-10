@@ -1,0 +1,54 @@
+{
+  "AI_ENRICH": {
+    "title": {
+      "string": "Peningkatan Otomatis Kontak"
+    },
+    "description": {
+      "string": "Ekstrak nomor telepon, jabatan, perusahaan, dan lokasi dari tanda tangan email."
+    },
+    "input": {
+      "title": {
+        "string": "Tanda Tangan Email"
+      },
+      "signature": {
+        "string": "Teks Tanda Tangan"
+      },
+      "placeholder": {
+        "string": "Tempel tanda tangan email di sini..."
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Informasi yang Diekstrak"
+      },
+      "empty": {
+        "string": "Masukkan teks tanda tangan dan klik Ekstrak"
+      }
+    },
+    "extract": {
+      "string": "Ekstrak Info"
+    },
+    "field": {
+      "phone": {
+        "string": "Telepon"
+      },
+      "title": {
+        "string": "Jabatan"
+      },
+      "company": {
+        "string": "Perusahaan"
+      },
+      "location": {
+        "string": "Lokasi"
+      }
+    },
+    "errors": {
+      "empty": {
+        "string": "Masukkan teks"
+      },
+      "fail": {
+        "string": "Ekstraksi gagal"
+      }
+    }
+  }
+}

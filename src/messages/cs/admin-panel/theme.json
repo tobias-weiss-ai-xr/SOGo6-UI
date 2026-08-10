@@ -1,0 +1,135 @@
+{
+  "AP_THEME": {
+    "title": {
+      "string": "Nastavení motivu"
+    },
+    "description": {
+      "string": "Přizpůsobte vzhled a chování rozhraní SOGo"
+    },
+    "form_title": {
+      "string": "Vlastní motiv"
+    },
+    "form_description": {
+      "string": "Nakonfigurujte barvy, logo a vlastní CSS pro rozhraní groupware"
+    },
+    "fields": {
+      "primary": {
+        "label": {
+          "string": "Hlavní barva"
+        },
+        "description": {
+          "string": "Hodnoty HSL pro hlavní barvu (např. 180 25% 40%)"
+        }
+      },
+      "primary_foreground": {
+        "label": {
+          "string": "Popředí hlavní barvy"
+        },
+        "description": {
+          "string": "Barva textu na pozadí hlavní barvy"
+        }
+      },
+      "background": {
+        "label": {
+          "string": "Pozadí"
+        },
+        "description": {
+          "string": "Hodnoty HSL pro pozadí stránky"
+        }
+      },
+      "foreground": {
+        "label": {
+          "string": "Popředí"
+        },
+        "description": {
+          "string": "Výchozí barva textu"
+        }
+      },
+      "sidebar_background": {
+        "label": {
+          "string": "Pozadí postranního panelu"
+        },
+        "description": {
+          "string": "Hodnoty HSL pro pozadí postranního panelu"
+        }
+      },
+      "sidebar_foreground": {
+        "label": {
+          "string": "Popředí postranního panelu"
+        },
+        "description": {
+          "string": "Barva textu v postranním panelu"
+        }
+      },
+      "sidebar_primary": {
+        "label": {
+          "string": "Hlavní barva postranního panelu"
+        },
+        "description": {
+          "string": "Hlavní akcentní barva v postranním panelu"
+        }
+      },
+      "sidebar_accent": {
+        "label": {
+          "string": "Akcent postranního panelu"
+        },
+        "description": {
+          "string": "Akcentní barva v postranním panelu"
+        }
+      },
+      "header_background": {
+        "label": {
+          "string": "Pozadí hlavičky"
+        },
+        "description": {
+          "string": "Hodnoty HSL pro horní lištu hlavičky"
+        }
+      },
+      "header_foreground": {
+        "label": {
+          "string": "Popředí hlavičky"
+        },
+        "description": {
+          "string": "Barva textu v hlavičce"
+        }
+      },
+      "logo_url": {
+        "label": {
+          "string": "URL loga"
+        },
+        "description": {
+          "string": "URL vlastního obrázku loga (volitelné)"
+        }
+      },
+      "custom_css": {
+        "label": {
+          "string": "Vlastní CSS"
+        },
+        "description": {
+          "string": "Další CSS pravidla k vložení (volitelné)"
+        }
+      }
+    },
+    "save": {
+      "string": "Uložit změny"
+    },
+    "saving": {
+      "string": "Ukládání…"
+    },
+    "saved": {
+      "string": "Nastavení motivu úspěšně uloženo"
+    },
+    "save_error": {
+      "string": "Uložení se nezdařilo: {message}"
+    },
+    "unsaved_changes": {
+      "string": "Máte neuložené změny"
+    },
+    "load_error": {
+      "string": "Načtení nastavení motivu se nezdařilo"
+    },
+    "retry": {
+      "string": "Zkusit znovu"
+    }
+  }
+}

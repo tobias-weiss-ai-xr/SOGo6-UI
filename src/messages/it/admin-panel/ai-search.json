@@ -1,0 +1,37 @@
+{
+    "AI_SEARCH": {
+        "title": {
+            "string": "Ricerca in Linguaggio Naturale"
+        },
+        "description": {
+            "string": "Cerca email con linguaggio naturale. Converte automaticamente in query strutturate."
+        },
+        "input": {
+            "placeholder": {
+                "string": "Mostra fatture di marzo oltre $500..."
+            }
+        },
+        "output": {
+            "title": {
+                "string": "Query Analizzata"
+            },
+            "empty": {
+                "string": "Inserisci una query di ricerca sopra"
+            },
+            "detected": {
+                "string": "Filtri rilevati"
+            }
+        },
+        "search": {
+            "string": "Cerca"
+        },
+        "errors": {
+            "empty": {
+                "string": "Inserisci una query di ricerca"
+            },
+            "fail": {
+                "string": "Ricerca fallita"
+            }
+        }
+    }
+}

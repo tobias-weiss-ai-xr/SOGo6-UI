@@ -1,0 +1,48 @@
+{
+    "COMMONS": {
+        "close": {
+            "string": "Bezárás"
+        },
+        "workInProgress": {
+            "description": {
+                "string": "Ez a funkció jelenleg fejlesztés alatt áll."
+            },
+            "message": {
+                "string": "Keményen dolgozunk ezen funkció elérhetővé tételén."
+            },
+            "comingSoon": {
+                "string": "Hamarosan! Figyelje a híreket."
+            }
+        }
+    },
+    "COMMON": {
+        "demo": {
+            "warning": {
+                "title": {
+                    "string": "Bemutató verzió"
+                },
+                "description": {
+                    "string": "Jelenleg az alkalmazás bemutató verzióját használja. Egyes funkciók korlátozottak lehetnek."
+                },
+                "action": {
+                    "string": "Értettem"
+                }
+            }
+        },
+        "language": {
+            "english": "English",
+            "french": "Français"
+        },
+        "serviceUnavailable": {
+            "title": {
+                "string": "A szolgáltatás nem elérhető"
+            },
+            "description": {
+                "string": "Az alkalmazás nem tudott csatlakozni a szerverhez. Próbálja újra később, vagy vegye fel a kapcsolatot a rendszergazdával."
+            },
+            "retry": {
+                "string": "Újrapróbálás"
+            }
+        }
+    }
+}

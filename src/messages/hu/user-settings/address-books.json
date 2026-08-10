@@ -1,0 +1,37 @@
+{
+  "US_ADDRESS_BOOKS": {
+    "create": {
+      "string": "Kapcsolattípus hozzáadása",
+      "context": "Button text to add a new address book category"
+    },
+    "title": {
+      "string": "Címkönyvek",
+      "context": "Title for the address books settings page"
+    },
+    "accessibility": {
+      "icon": {
+        "delete": {
+          "string": "{name} törlése",
+          "context": "Accessibility message for the delete icon"
+        }
+      }
+    },
+    "notification": {
+      "title": "Notifications",
+      "string": "Értesítés küldése e-mailben, ha címkönyv jön létre",
+      "context": "Label for the notification setting"
+    },
+    "categories": {
+      "title": "Categories",
+      "Work": "Work",
+      "Family": "Family",
+      "Friends": "Friends"
+    },
+    "color": {
+      "title": "Couleur"
+    },
+    "validation": {
+      "category-name-required": "Category name is required"
+    }
+  }
+}

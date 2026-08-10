@@ -1,0 +1,19 @@
+{
+    "DATA_TABLE": {
+        "filter_placeholder": {
+            "string": "กรอง..."
+        },
+        "no_result": {
+            "string": "ไม่มีผลลัพธ์"
+        },
+        "previous": {
+            "string": "ก่อนหน้า"
+        },
+        "next": {
+            "string": "ถัดไป"
+        },
+        "selected": {
+            "string": "{selected} of {total} row(s) selected."
+        }
+    }
+}

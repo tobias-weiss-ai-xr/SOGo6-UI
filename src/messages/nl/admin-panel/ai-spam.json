@@ -1,0 +1,49 @@
+{
+  "AI_SPAM": {
+    "title": {
+      "string": "Intelligente Spamfilter"
+    },
+    "description": {
+      "string": "Echtijdse spamscoring met patroonanalyse, afzenderreputatie en inhoudsheuristieken."
+    },
+    "input": {
+      "title": {
+        "string": "E-mail om te scoren"
+      },
+      "subject": {
+        "string": "Onderwerp"
+      },
+      "sender": {
+        "string": "Afzender"
+      },
+      "body": {
+        "string": "Inhoud"
+      },
+      "placeholder": {
+        "string": "Plak hier de e-mailinhoud..."
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Spamscore"
+      },
+      "empty": {
+        "string": "Voer e-mailinhoud in en klik op Scoren"
+      },
+      "signals": {
+        "string": "Gedetecteerde signalen"
+      }
+    },
+    "score": {
+      "string": "E-mail scoren"
+    },
+    "errors": {
+      "empty": {
+        "string": "Voer onderwerp of inhoud in"
+      },
+      "fail": {
+        "string": "Scoren mislukt"
+      }
+    }
+  }
+}

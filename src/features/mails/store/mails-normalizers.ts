@@ -54,6 +54,14 @@ export interface RawMailListItem {
   mail_type?: string | string[]
   /** Already normalized (response `{ mails: ImapMessagesList[] }`). */
   mailType?: string[]
+  /** RFC 5322 Message-ID */
+  message_id?: string
+  /** In-Reply-To header */
+  in_reply_to?: string
+  /** References header */
+  references?: string
+  /** Computed thread identifier */
+  thread_id?: string
 }
 
 export function normalizeImapFolder(folder: RawImapFolder): ImapFolder {
@@ -116,6 +124,10 @@ export function mapMailToListItem(mail: RawMailListItem): ImapMessagesList {
     forwarded: mail.forwarded ?? false,
     deleted: mail.deleted ?? false,
     priority: coerceListPriority(mail.priority),
+    messageId: mail.message_id ?? undefined,
+    inReplyTo: mail.in_reply_to ?? undefined,
+    references: mail.references ?? undefined,
+    threadId: mail.thread_id ?? undefined,
     mailType: normalizeListMailTypes(
       mail.mail_type !== undefined && mail.mail_type !== null
         ? mail.mail_type

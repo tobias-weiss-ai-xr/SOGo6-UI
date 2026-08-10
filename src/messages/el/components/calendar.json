@@ -1,0 +1,14 @@
+{
+  "CALENDAR": {
+    "pick": {
+      "range": {
+        "string": "Επιλέξτε ένα εύρος ημερομηνιών...",
+        "context": "Default message displayed in the calendar when the user is asked to select a date range."
+      },
+      "single": {
+        "string": "Επιλέξτε μια ημερομηνία...",
+        "context": "Default message displayed in the calendar when the user is asked to select a single date."
+      }
+    }
+  }
+}

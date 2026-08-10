@@ -1,0 +1,48 @@
+{
+    "DONOR": {
+        "title": { "string": "Gestione Comunicazione Donatori" },
+        "description": { "string": "Traccia donatori, gestisci consenso GDPR, genera ricevute fiscali e gestisci campagne" },
+        "errors": {
+            "fields": { "string": "Campi obbligatori mancanti" },
+            "fail": { "string": "Operazione fallita" }
+        },
+        "success": {
+            "create": { "string": "Donatore registrato" },
+            "donate": { "string": "Donazione registrata" }
+        },
+        "register": {
+            "title": { "string": "Registra Donatore" }
+        },
+        "donate": {
+            "title": { "string": "Registra Donazione" },
+            "select": { "string": "Seleziona donatore..." },
+            "campaign": { "string": "Campagna" }
+        },
+        "field": {
+            "name": { "string": "Nome" },
+            "email": { "string": "Email" },
+            "type": { "string": "Tipo" },
+            "total": { "string": "Totale" },
+            "donations": { "string": "Donazioni" },
+            "consent": { "string": "GDPR" }
+        },
+        "type": {
+            "individual": { "string": "Individuale" },
+            "corporate": { "string": "Aziendale" },
+            "foundation": { "string": "Fondazione" }
+        },
+        "button": {
+            "register": { "string": "Registra" },
+            "donate": { "string": "Registra Donazione" }
+        },
+        "stats": {
+            "title": { "string": "Statistiche" },
+            "total_donors": { "string": "Donatori Totali" },
+            "total_raised": { "string": "Totale Raccolto" }
+        },
+        "list": {
+            "title": { "string": "Tutti i Donatori" },
+            "empty": { "string": "Nessun donatore ancora registrato" }
+        }
+    }
+}

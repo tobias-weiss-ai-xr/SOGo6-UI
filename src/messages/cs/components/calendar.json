@@ -1,0 +1,14 @@
+{
+  "CALENDAR": {
+    "pick": {
+      "range": {
+        "string": "Vyberte rozmezí dat...",
+        "context": "Default message displayed in the calendar when the user is asked to select a date range."
+      },
+      "single": {
+        "string": "Vyberte datum...",
+        "context": "Default message displayed in the calendar when the user is asked to select a single date."
+      }
+    }
+  }
+}

@@ -21,6 +21,8 @@ function makeGeneralSettings(
     workdayStartTime: '08:00',
     workdayEndTime: '18:00',
     busyOffHours: false,
+    nonWorkingWeekdays: [5, 6],
+    defaultLocation: '',
     calendarDaysShowed: [4],
     calendarWeekNumberFormat: '%U',
     calendarDefault: 'personal',
@@ -49,6 +51,8 @@ function makeApiPreferences(
       SOGO_U_WORKDAY_START_TIME: '08:00',
       SOGO_U_WORKDAY_END_TIME: '18:00',
       SOGO_U_BUSY_OFF_HOURS: false,
+      SOGO_U_NON_WORKING_WEEKDAYS: [5, 6],
+      SOGO_U_DEFAULT_LOCATION: '',
       SOGO_U_CALENDAR_DAYS_SHOWED: 7,
       SOGO_U_CALENDAR_WEEK_NUMBER_FORMAT: 'iso',
       SOGO_U_CALENDAR_DEFAULT: 'personal',
@@ -92,6 +96,8 @@ describe('calendar-utils', () => {
         workdayStartTime: '09:00',
         workdayEndTime: '17:00',
         busyOffHours: true,
+        nonWorkingWeekdays: [6, 0],
+        defaultLocation: 'Room 42',
         calendarDaysShowed: [2, 4],
         calendarWeekNumberFormat: '%U',
         calendarDefault: 'team',
@@ -109,6 +115,8 @@ describe('calendar-utils', () => {
       expect(result.SOGO_U_WORKDAY_START_TIME).toBe('09:00')
       expect(result.SOGO_U_WORKDAY_END_TIME).toBe('17:00')
       expect(result.SOGO_U_BUSY_OFF_HOURS).toBe(true)
+      expect(result.SOGO_U_NON_WORKING_WEEKDAYS).toStrictEqual([6, 0])
+      expect(result.SOGO_U_DEFAULT_LOCATION).toBe('Room 42')
       expect(result.SOGO_U_CALENDAR_DAYS_SHOWED).toStrictEqual([2, 4])
       expect(result.SOGO_U_CALENDAR_WEEK_NUMBER_FORMAT).toBe('%U')
       expect(result.SOGO_U_CALENDAR_DEFAULT).toBe('team')
@@ -146,23 +154,23 @@ describe('calendar-utils', () => {
       })
     })
 
-    describe('reminder fields: non-sentinel uses journalDefaultReminder', () => {
-      it('uses journalDefaultReminder for SOGO_U_EVENT_DEFAULT_REMINDER when eventDefaultReminder is not "-1"', () => {
+    describe('reminder fields: non-sentinel uses the correct field', () => {
+      it('uses eventDefaultReminder for SOGO_U_EVENT_DEFAULT_REMINDER when eventDefaultReminder is not "-1"', () => {
         const settings = makeGeneralSettings({
           eventDefaultReminder: '15',
           journalDefaultReminder: '30',
         })
         const result = calendarGeneralToApi(settings)
-        expect(result.SOGO_U_EVENT_DEFAULT_REMINDER).toBe('30')
+        expect(result.SOGO_U_EVENT_DEFAULT_REMINDER).toBe('15')
       })
 
-      it('uses journalDefaultReminder for SOGO_U_TASK_DEFAULT_REMINDER when taskDefaultReminder is not "-1"', () => {
+      it('uses taskDefaultReminder for SOGO_U_TASK_DEFAULT_REMINDER when taskDefaultReminder is not "-1"', () => {
         const settings = makeGeneralSettings({
           taskDefaultReminder: '10',
           journalDefaultReminder: '45',
         })
         const result = calendarGeneralToApi(settings)
-        expect(result.SOGO_U_TASK_DEFAULT_REMINDER).toBe('45')
+        expect(result.SOGO_U_TASK_DEFAULT_REMINDER).toBe('10')
       })
 
       it('uses journalDefaultReminder for SOGO_U_JOURNAL_DEFAULT_REMINDER when journalDefaultReminder is not "-1"', () => {

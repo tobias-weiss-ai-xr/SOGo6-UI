@@ -1,0 +1,35 @@
+{
+  "AP_DBMIG": {
+    "title": {
+      "string": "数据库迁移"
+    },
+    "description": {
+      "string": "跟踪架构版本和迁移历史。从管理面板运行迁移。"
+    },
+    "current_version": {
+      "string": "Current Schema Version"
+    },
+    "run": {
+      "button": {
+        "string": "Run Migration"
+      },
+      "running": {
+        "string": "运行中..."
+      },
+      "success": {
+        "string": "Migration applied"
+      },
+      "error": {
+        "string": "Migration failed"
+      }
+    },
+    "history": {
+      "title": {
+        "string": "Migration History"
+      },
+      "empty": {
+        "string": "No migrations recorded."
+      }
+    }
+  }
+}

@@ -1,0 +1,133 @@
+{
+  "US_MAIL_VACATIONS": {
+    "title": {
+      "string": "Vakantie-instellingen",
+      "context": "Title for the vacation settings page"
+    },
+    "page": {
+      "description": {
+        "string": "Configureer uw afwezigheidsautomatisch antwoordbericht en wanneer dit actief moet zijn."
+      }
+    },
+    "errors_api": {
+      "load_failed": {
+        "string": "Vakantie-instellingen konden niet worden geladen. Probeer het later opnieuw."
+      },
+      "feature_disabled": {
+        "string": "Automatisch vakantieantwoord is uitgeschakeld door uw beheerder."
+      }
+    },
+    "errors": {
+      "validation": {
+        "message_required": {
+          "string": "Automatisch antwoordbericht is verplicht wanneer vakantie is ingeschakeld."
+        },
+        "dates_required": {
+          "string": "Start- en einddatum zijn verplicht wanneer datumbeperkingen zijn ingeschakeld."
+        },
+        "date_order": {
+          "string": "Einddatum moet op of na de startdatum liggen."
+        },
+        "time_invalid": {
+          "string": "Voer een geldige tijd in in het formaat UU:MM."
+        },
+        "weekday_required": {
+          "string": "Selecteer ten minste één weekdag wanneer weekdagbeperkingen zijn ingeschakeld."
+        },
+        "response_interval_invalid": {
+          "string": "Antwoordinterval moet nul of een positief getal zijn."
+        },
+        "response_interval_zero": {
+          "string": "Een antwoordinterval van nul dagen is niet toegestaan op dit domein."
+        }
+      }
+    },
+    "auto_reply": {
+      "enable": {
+        "string": "Automatisch vakantieantwoord inschakelen"
+      },
+      "subject": {
+        "label": {
+          "string": "Onderwerp automatisch antwoord"
+        },
+        "description": {
+          "string": "Laat leeg om het standaardonderwerp te gebruiken. U kunt {subject} schrijven om het oorspronkelijke onderwerp in te voegen."
+        }
+      },
+      "message": {
+        "string": "Automatisch antwoordbericht"
+      },
+      "constraints": {
+        "title": {
+          "string": "Activeringsbeperkingen"
+        },
+        "description": {
+          "string": "Pas dag- en uurbereiken onafhankelijk aan en combineer deze optioneel met specifieke weekdagen om uw vakantiefilters aan te passen aan uw voorkeuren."
+        },
+        "enable": {
+          "days": {
+            "string": "Automatisch antwoord inschakelen op deze dagen"
+          },
+          "hours": {
+            "string": "Automatisch antwoord inschakelen tussen deze uren"
+          },
+          "range": {
+            "string": "Automatisch antwoord inschakelen tussen deze dagen"
+          }
+        },
+        "time": {
+          "start": {
+            "string": "Starttijd"
+          },
+          "end": {
+            "string": "Eindtijd"
+          }
+        },
+        "weekdays": {
+          "monday": {
+            "string": "Maandag"
+          },
+          "tuesday": {
+            "string": "Dinsdag"
+          },
+          "wednesday": {
+            "string": "Woensdag"
+          },
+          "thursday": {
+            "string": "Donderdag"
+          },
+          "friday": {
+            "string": "Vrijdag"
+          },
+          "saturday": {
+            "string": "Zaterdag"
+          },
+          "sunday": {
+            "string": "Zondag"
+          }
+        }
+      },
+      "response": {
+        "interval_days": {
+          "label": {
+            "string": "Minimale dagen tussen automatische antwoorden"
+          },
+          "placeholder": {
+            "string": "Laat leeg voor standaardgedrag"
+          },
+          "description": {
+            "string": "Voorkomt het verzenden van dubbele afwezigheidsantwoorden binnen deze periode (RFC 5230 :dagen)."
+          }
+        },
+        "send_always": {
+          "label": {
+            "string": "Altijd afwezigheidsbericht verzenden"
+          },
+          "description": {
+            "string": "Het afwezigheidsbericht wordt verzonden voordat uw filters worden toegepast."
+          }
+        }
+      }
+    }
+  }
+}

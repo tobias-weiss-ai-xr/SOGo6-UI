@@ -1,0 +1,171 @@
+{
+  "US_MAIL_GENERAL": {
+    "title": {
+      "string": "邮件常规设置",
+      "context": "Title for the mail general settings page"
+    },
+    "compose_message_in": {
+      "string": "在以下方式中撰写邮件",
+      "context": "Dropdown label in what way to compose messages"
+    },
+    "display_subscribed_mailboxes_only": {
+      "string": "仅显示已订阅的邮箱",
+      "context": "Checkbox to show subscribed mailboxes only"
+    },
+    "fetch_count_of_unseen_messages": {
+      "string": "获取所有邮箱的未读邮件数量",
+      "context": "Checkbox to fetch count of unseen messages for all mailboxes"
+    },
+    "sort_messages_by_threads": {
+      "string": "按对话线程排序邮件",
+      "context": "Checkbox to sort messages by threads"
+    },
+    "show_recipients_or_sender_full_email": {
+      "string": "在邮箱中显示收件人或发件人的完整邮箱地址",
+      "context": "Checkbox to show recipients or sender full email in mailboxes"
+    },
+    "hide_attachments_for_inline_images": {
+      "string": "在邮件查看器中不将内嵌图片显示为附件文件",
+      "context": "Checkbox to hide attachments for inline images"
+    },
+    "automatically_mark_messages_as_read": {
+      "string": "在（设定的）秒数后自动将邮件标记为已读",
+      "context": "Checkbox to automatically mark messages as read"
+    },
+    "collect_unknown_addresses": {
+      "string": "将未知邮箱地址保存到通讯录",
+      "context": "Checkbox to collect unknown mail addresses"
+    },
+    "collect_unknown_addressbook_name": {
+      "string": "通讯录名称",
+      "context": "Input for the unknown email addressbook name"
+    },
+    "forward_messages": {
+      "title": {
+        "string": "转发邮件",
+        "context": "Dropdown label for forward messages"
+      },
+      "as_attachment": {
+        "string": "作为附件",
+        "context": "Checkbox to forward messages as attachment"
+      },
+      "as_inline": {
+        "string": "内嵌方式",
+        "context": "Checkbox to forward messages as inline"
+      }
+    },
+    "start_reply": {
+      "title": {
+        "string": "回复邮件时",
+        "context": "Dropdown label to know where to start in the mail when replying"
+      },
+      "to_above": {
+        "string": "在引用内容上方开始回复",
+        "context": "Checkbox to start replying at the bottom"
+      },
+      "to_below": {
+        "string": "在引用内容下方开始回复",
+        "context": "Checkbox to start replying at the top"
+      }
+    },
+    "place_signature": {
+      "title": {
+        "string": "并放置签名",
+        "context": "Dropdown label to know where to place the signature"
+      },
+      "above": {
+        "string": "在引用内容上方",
+        "context": "Checkbox to start replying at the bottom"
+      },
+      "below": {
+        "string": "在引用内容下方",
+        "context": "Checkbox to start replying at the top"
+      }
+    },
+    "attachment_position": {
+      "title": {
+        "string": "放置附件",
+        "context": "Dropdown label to know where to place the attachment"
+      },
+      "above": {
+        "string": "邮件上方"
+      },
+      "below": {
+        "string": "邮件下方"
+      }
+    },
+    "sign_on": {
+      "new": {
+        "string": "在新邮件中插入签名"
+      },
+      "reply": {
+        "string": "在回复邮件中插入签名"
+      },
+      "forward": {
+        "string": "在转发邮件中插入签名"
+      }
+    },
+    "default_font_size": {
+      "title": {
+        "string": "默认字体大小",
+        "context": "Dropdown label to know the default font size"
+      },
+      "sm": {
+        "string": "小",
+        "context": "Small font size"
+      },
+      "md": {
+        "string": "中",
+        "context": "Medium font size"
+      },
+      "lg": {
+        "string": "大",
+        "context": "Large font size"
+      },
+      "xl": {
+        "string": "特大",
+        "context": "Extra large font size"
+      }
+    },
+    "display_remote_images": {
+      "string": "显示远程内嵌图片",
+      "context": "Checkbox to set display remote inline images to true or false"
+    },
+    "compose": {
+      "title": {
+        "string": "默认撰写邮件打开方式",
+        "context": "Dropdown label to know where to open compose in"
+      },
+      "always_ask": {
+        "string": "总是询问是否在新窗口或网页邮箱中打开撰写窗口",
+        "context": "Dropdown label to know where to open compose in"
+      },
+      "in_new_window": {
+        "string": "在新窗口中打开撰写窗口",
+        "context": "Dropdown label to know where to open compose in"
+      },
+      "inside_webmail": {
+        "string": "在网页邮箱内打开撰写窗口",
+        "context": "Dropdown label to know where to open compose in"
+      }
+    },
+    "mail_allow_receipt": {
+      "string": "允许邮件请求回执",
+      "context": "Checkbox to allow mail to ask for receipts"
+    },
+    "mail_folder_subscribe": {
+      "string": "仅显示已订阅的邮箱",
+      "context": "Checkbox to show subscribed mailboxes only"
+    },
+    "compose_mail_window": {
+      "string": "撰写邮件窗口",
+      "context": "Dropdown label to know where to open compose in",
+      "popup": {
+        "string": "Compose email in a popup"
+      },
+      "inline": {
+        "string": "Compose email inside the webmail"
+      }
+    }
+  }
+}

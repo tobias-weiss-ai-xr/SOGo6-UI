@@ -1,0 +1,12 @@
+{
+  "AP_WORKFLOWS": {
+    "title": { "string": "Costruttore di Workflow" },
+    "description": { "string": "Automazione low-code: Se email da X e oggetto Y → inoltra, crea evento, notifica." },
+    "form": { "create": { "string": "Nuovo Workflow" }, "cancel": { "string": "Annulla" }, "title": { "string": "Crea Workflow" }, "name": { "string": "Nome Workflow" }, "trigger": { "string": "Trigger" }, "description": { "string": "Descrizione" }, "conditions": { "string": "Condizioni" }, "actions": { "string": "Azioni" }, "submit": { "string": "Crea Workflow" } },
+    "create": { "success": { "string": "Workflow creato" }, "error": { "string": "Creazione fallita" } },
+    "toggle": { "error": { "string": "Attivazione/disattivazione fallita" } },
+    "delete": { "success": { "string": "Workflow eliminato" }, "error": { "string": "Eliminazione fallita" } },
+    "list": { "empty": { "string": "Nessun workflow definito. Creane uno per automatizzare le azioni." } },
+    "errors": { "fields": { "string": "Nome, condizioni e azioni sono obbligatori" } }
+  }
+}

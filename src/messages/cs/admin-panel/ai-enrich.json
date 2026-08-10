@@ -1,0 +1,54 @@
+{
+  "AI_ENRICH": {
+    "title": {
+      "string": "Automatické obohacování kontaktů"
+    },
+    "description": {
+      "string": "Extrahujte telefon, tituly, společnost a umístění z e-mailových podpisů."
+    },
+    "input": {
+      "title": {
+        "string": "E-mailový podpis"
+      },
+      "signature": {
+        "string": "Text podpisu"
+      },
+      "placeholder": {
+        "string": "Vložte sem text e-mailového podpisu..."
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Extrahované informace"
+      },
+      "empty": {
+        "string": "Zadejte text podpisu a klikněte na Extrahovat"
+      }
+    },
+    "extract": {
+      "string": "Extrahovat informace"
+    },
+    "field": {
+      "phone": {
+        "string": "Telefon"
+      },
+      "title": {
+        "string": "Titul"
+      },
+      "company": {
+        "string": "Společnost"
+      },
+      "location": {
+        "string": "Umístění"
+      }
+    },
+    "errors": {
+      "empty": {
+        "string": "Zadejte text"
+      },
+      "fail": {
+        "string": "Extrahování se nezdařilo"
+      }
+    }
+  }
+}

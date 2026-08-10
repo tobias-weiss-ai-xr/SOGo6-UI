@@ -1,0 +1,14 @@
+{
+  "CALENDAR": {
+    "pick": {
+      "range": {
+        "string": "एक तारीख सीमा चुनें...",
+        "context": "Default message displayed in the calendar when the user is asked to select a date range."
+      },
+      "single": {
+        "string": "एक तारीख चुनें...",
+        "context": "Default message displayed in the calendar when the user is asked to select a single date."
+      }
+    }
+  }
+}

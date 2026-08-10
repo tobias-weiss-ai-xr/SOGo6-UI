@@ -1,0 +1,14 @@
+{
+    "FORM_ERRORS": {
+        "required": {
+            "default": {
+                "string": "Este campo é obrigatório"
+            }
+        },
+        "invalid": {
+            "email": {
+                "string": "Endereço de e-mail inválido"
+            }
+        }
+    }
+}

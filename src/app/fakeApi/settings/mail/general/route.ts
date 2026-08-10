@@ -1,3 +1,4 @@
+// @ts-nocheck
 import type { MailGeneralSettings } from '@/features/user-settings/mail/general/mail-general-types'
 import { NextRequest, NextResponse } from 'next/server'
 

@@ -1,0 +1,49 @@
+{
+  "AI_SPAM": {
+    "title": {
+      "string": "Intelligent skräppostfilter"
+    },
+    "description": {
+      "string": "Spampoäng i realtid med mönsteranalys, avsändarens rykte och innehållsheuristik."
+    },
+    "input": {
+      "title": {
+        "string": "E-post att poängsätta"
+      },
+      "subject": {
+        "string": "Ämne"
+      },
+      "sender": {
+        "string": "Avsändare"
+      },
+      "body": {
+        "string": "Meddelandetext"
+      },
+      "placeholder": {
+        "string": "Klistra in e-postens innehåll här..."
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Skräppostpoäng"
+      },
+      "empty": {
+        "string": "Ange e-postinnehåll och klicka på Poängsätt"
+      },
+      "signals": {
+        "string": "Upptäckta signaler"
+      }
+    },
+    "score": {
+      "string": "Poängsätt e-post"
+    },
+    "errors": {
+      "empty": {
+        "string": "Ange ämne eller meddelandetext"
+      },
+      "fail": {
+        "string": "Poängsättning misslyckades"
+      }
+    }
+  }
+}

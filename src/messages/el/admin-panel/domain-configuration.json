@@ -1,0 +1,1285 @@
+{
+  "AP_DOMAIN_CONFIGURATION": {
+    "origin": {
+      "rule": {
+        "string": "(από τον κανόνα {origin})"
+      },
+      "default": {
+        "string": "(από την προεπιλεγμένη διαμόρφωση)"
+      },
+      "domain": {
+        "string": "(από τον τομέα {origin})"
+      }
+    },
+    "tabs": {
+      "auth_settings": {
+        "string": "Ρυθμίσεις πιστοποίησης"
+      },
+      "user_source": {
+        "string": "Πηγή χρηστών"
+      },
+      "user_module_settings": {
+        "string": "Ρυθμίσεις χρηστών και μονάδων"
+      },
+      "mail_settings": {
+        "string": "Ρυθμίσεις ταχυδρομείου"
+      },
+      "calendar_contact_settings": {
+        "string": "Ρυθμίσεις ημερολογίου και επαφών"
+      }
+    },
+    "properties": {
+      "SOGO_D_AUTH_TYPE": {
+        "name": {
+          "string": "Τύπος πιστοποίησης"
+        },
+        "description": {
+          "string": "Επιλέξτε τη μέθοδο πιστοποίησης για τους χρήστες. Το 'Plain' σημαίνει το κλασικό όνομα χρήστη/κωδικός πρόσβασης"
+        },
+        "developer_comment": "Options might include LDAP, SQL, etc."
+      },
+      "SOGO_D_CAS_URL": {
+        "name": {
+          "string": "URL του διακομιστή CAS"
+        },
+        "description": {
+          "string": "Εισάγετε το πλήρες URL του διακομιστή CAS σας"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_CAS_LOGOUT_ENABLED": {
+        "name": {
+          "string": "Ενεργοποίηση αποσύνδεσης με CAS"
+        },
+        "description": {
+          "string": "Επιλέξτε το πεδίο για να επιτρέψετε στους χρήστες να αποσυνδεθούν από το SOGo και τον διακομιστή CAS"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_OPENID_CONFIG_URL": {
+        "name": {
+          "string": "URL του τελικού σημείου του παρόχου OpenID"
+        },
+        "description": {
+          "string": "Παράδειγμα: https://myopenid.net/.well-known/openid-configuration"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_OPENID_CLIENT_NAME": {
+        "name": {
+          "string": "Όνομα πελάτη OpenID"
+        },
+        "description": {
+          "string": "Όνομα του πελάτη OpenID σας"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_OPENID_CLIENT_SECRET": {
+        "name": {
+          "string": "Μυστικό κωδικός πελάτη OpenID"
+        },
+        "description": {
+          "string": "Μυστικό κωδικός του πελάτη OpenID σας"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_OPENID_SCOPE": {
+        "name": {
+          "string": "Εύρος πελάτη OpenID"
+        },
+        "description": {
+          "string": "Εύρος του πελάτη OpenID. Προεπιλογή: 'openid profile email'."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_OPENID_EMAIL": {
+        "name": {
+          "string": "Κλειδί email χρήστη"
+        },
+        "description": {
+          "string": "Κλειδί όπου βρίσκεται το email του χρήστη στο προφίλ χρήστη."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_OPENID_TOKEN_CHECK_INTERVAL": {
+        "name": {
+          "string": "Διάστημα ελέγχου token"
+        },
+        "description": {
+          "string": "Για να περιορίσετε τον αριθμό των αιτημάτων προς τον διακομιστή OpenID για έλεγχο εγκυρότητας του token, ορίστε ένα διάστημα σε δευτερόλεπτα κατά το οποίο το token δεν θα ελέγχεται ξανά μετά από μια πρώτη επιτυχία. 0 σημαίνει ότι το token θα ελέγχεται πάντα. 60 σημαίνει ότι το token δεν θα ελέγχεται για 60 δευτερόλεπτα μετά από μια πρώτη επιτυχία."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_OPENID_REFRESH_ENABLE": {
+        "name": {
+          "string": "Ενεργοποίηση μηχανισμού ανανέωσης token"
+        },
+        "description": {
+          "string": "Αν ο διακομιστής OpenID διαχειρίζεται μηχανισμό ανανέωσης token, το SOGo θα τον χρησιμοποιήσει."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_OPENID_ENDSESSION_ENABLED": {
+        "name": {
+          "string": "Ενεργοποίηση λήξης συνεδρίας από διακομιστή OpenID"
+        },
+        "description": {
+          "string": "Προεπιλογή: οι χρήστες μπορούν να αποσυνδεθούν μόνο από το webmail. Ενεργοποιήστε αυτήν τη ρύθμιση για να αποσυνδέεστε επίσης από τον διακομιστή OpenID, πράγμα που σημαίνει ότι ο χρήστης θα αποσυνδεθεί από όλες τις εφαρμογές που χρησιμοποιούν τον διακομιστή OpenID. Λειτουργεί μόνο αν ο διακομιστής OpenID έχει ένα end_session_endpoint."
+        },
+        "developer_comment": ""
+      },
+      "SOGo_D_OPENID_FETCH_USER_PROFILE": {
+        "name": {
+          "string": "Λήψη προφίλ χρήστη"
+        },
+        "description": {
+          "string": "Προεπιλογή: το SOGo ανακτά το προφίλ χρήστη για να λάβει το email του χρήστη. Απενεργοποιήστε αυτήν την επιλογή για να λάβετε το email απευθείας από το token. Απενεργοποιήστε αυτήν την επιλογή αν χρησιμοποιείτε τις Υπηρεσίες Ομοσπονδίας Active Directory της Microsoft (AD FS)."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SAML2_URL": {
+        "name": {
+          "string": "SAML2 ΔΕΝ ΕΧΕΙ ΟΛΟΚΛΗΡΩΘΕΙ ΑΚΟΜΗ!!!!"
+        },
+        "description": {
+          "string": "Καλή τύχη σε όποιον το αναλάβει..."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_PWD_CHANGE_ENABLED": {
+        "name": {
+          "string": "Ενεργοποίηση αλλαγής κωδικού πρόσβασης"
+        },
+        "description": {
+          "string": "Επιτρέψτε στους χρήστες να αλλάζουν τον κωδικό πρόσβασής τους από το SOGo. Βεβαιωθείτε ότι η Πηγή Χρηστών παρέχει τα δικαιώματα στους χρήστες για αυτήν την ενέργεια."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_LOGIN_CHECK_MAX_ATTEMPT": {
+        "name": {
+          "string": "Μέγιστες αποτυχημένες προσπάθειες σύνδεσης"
+        },
+        "description": {
+          "string": "Ορίστε πόσες φορές ένας χρήστης μπορεί να αποτύχει στη σύνδεση πριν αποκλειστεί. 0 σημαίνει χωρίς όριο."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_LOGIN_CHECK_TIME_SPAN": {
+        "name": {
+          "string": "Χρονικό διάστημα αποτυχημένων προσπαθειών σύνδεσης"
+        },
+        "description": {
+          "string": "Ορίστε το χρονικό διάστημα σε δευτερόλεπτα για τη μέτρηση των αποτυχημένων προσπαθειών. Παράδειγμα: 60 σημαίνει ότι ο χρήστης μπορεί να αποτύχει μέχρι 'Μέγιστες αποτυχημένες προσπάθειες σύνδεσης' εντός 60 δευτερολέπτων από την πρώτη αποτυχία, πριν αποκλειστεί."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_LOGIN_CHECK_BLOCK_TIME": {
+        "name": {
+          "string": "Χρόνος αποκλεισμού μετά από αποτυχημένες προσπάθειες σύνδεσης"
+        },
+        "description": {
+          "string": "Ορίστε τη διάρκεια σε δευτερόλεπτα που ο χρήστης αποκλείεται μετά από πολλές αποτυχημένες προσπάθειες σύνδεσης."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_PWD_RECOVERY": {
+        "name": {
+          "string": "Ενεργοποίηση Ανάκτησης Κωδικού Πρόσβασης"
+        },
+        "description": {
+          "string": "Επιτρέψτε στους χρήστες να ορίσουν μια μέθοδο ανάκτησης κωδικού πρόσβασης"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_PWD_RECOVERY_METHOD": {
+        "name": {
+          "string": "Διαθέσιμες Μέθοδοι Ανάκτησης Κωδικού Πρόσβασης"
+        },
+        "description": {
+          "string": "Επιλέξτε τις μεθόδους ανάκτησης κωδικού πρόσβασης που είναι διαθέσιμες στους χρήστες"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_PWD_RECOVERY_FORCE": {
+        "name": {
+          "string": "Υποχρεωτική Ανάκτηση Κωδικού Πρόσβασης"
+        },
+        "description": {
+          "string": "Υποχρεώστε τους χρήστες να ρυθμίσουν μια μέθοδο ανάκτησης κωδικού πρόσβασης."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_PWD_RECOVERY_DELAY": {
+        "name": {
+          "string": "Καθυστέρηση μεταξύ Αιτήσεων Ανάκτησης Κωδικού Πρόσβασης"
+        },
+        "description": {
+          "string": "Καθυστέρηση σε δευτερόλεπτα πριν ο χρήστης μπορεί να ζητήσει ξανά ανάκτηση κωδικού πρόσβασης."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_LOGIN_MFA": {
+        "name": {
+          "string": "Ενεργοποίηση Πολυπαραγοντικής Πιστοποίησης (MFA)"
+        },
+        "description": {
+          "string": "Επιτρέψτε στους χρήστες να ρυθμίσουν Πολυπαραγοντική Πιστοποίηση"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_LOGIN_MFA_METHOD": {
+        "name": {
+          "string": "Διαθέσιμες Μέθοδοι Πολυπαραγοντικής Πιστοποίησης"
+        },
+        "description": {
+          "string": "Επιλέξτε τις μεθόδους Πολυπαραγοντικής Πιστοποίησης που είναι διαθέσιμες στους χρήστες"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_LOGIN_MFA_FORCE": {
+        "name": {
+          "string": "Υποχρεωτική Πολυπαραγοντική Πιστοποίηση"
+        },
+        "description": {
+          "string": "Υποχρεώστε τους χρήστες να ρυθμίσουν Πολυπαραγοντική Πιστοποίηση"
+        },
+        "developer_comment": ""
+      },
+      "US_UID": {
+        "name": {
+          "string": "Αναγνωριστικό Πηγής Χρηστών (UID)"
+        },
+        "description": {
+          "string": "Επιλέξτε ένα μοναδικό όνομα για αυτήν την Πηγή Χρηστών, δεν θα εμφανίζεται στους χρήστες"
+        },
+        "developer_comment": "Only for SOGo to differentiate differents User SOurce"
+      },
+      "US_TYPE": {
+        "name": {
+          "string": "Τύπος Πηγής Χρηστών"
+        },
+        "description": {
+          "string": "Ορίστε τον τύπο της Πηγής Χρηστών σας"
+        },
+        "developer_comment": "Only ldap and sql supported for now"
+      },
+      "US_LDAP_HOSTNAME": {
+        "name": {
+          "string": "Όνομα κεντρικού υπολογιστή διακομιστή LDAP"
+        },
+        "description": {
+          "string": "Καθορίστε μόνο τον κεντρικό υπολογιστή και τη θύρα, μην προσθέτετε άλλες πληροφορίες"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_BIND_DN": {
+        "name": {
+          "string": "DN σύνδεσης"
+        },
+        "description": {
+          "string": "Το DN του ονόματος σύνδεσης που χρησιμοποιείται για σύνδεση με τον διακομιστή σας."
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_BIND_DN_PWD": {
+        "name": {
+          "string": "Κωδικός πρόσβασης DN σύνδεσης"
+        },
+        "description": {
+          "string": "Ο κωδικός πρόσβασης για το DN σύνδεσής σας"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_BASE_DN": {
+        "name": {
+          "string": "Βασικό DN"
+        },
+        "description": {
+          "string": "Βασικό DN των καταχωρήσεων χρηστών. Αν το domain του mail περιλαμβάνεται εδώ, μπορείτε να προσθέσετε '%d' για να το εισάγετε δυναμικά από το mail του χρήστη, π.χ.: 'ou=%d,dc=example,dc=com'"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_UID": {
+        "name": {
+          "string": "Πεδίο UID"
+        },
+        "description": {
+          "string": "Πεδίο με το όνομα σύνδεσης του χρήστη. Το όνομα σύνδεσης πρέπει να είναι μοναδικό σε όλες τις πηγές χρηστών και domains"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_CN": {
+        "name": {
+          "string": "Πεδίο CN"
+        },
+        "description": {
+          "string": "Πεδίο με το πλήρες όνομα του χρήστη"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_ID": {
+        "name": {
+          "string": "Πεδίο ID"
+        },
+        "description": {
+          "string": "Πεδίο που ξεκινά ένα DN χρήστη αν δεν χρησιμοποιείται το πεδίο σύνδεσης (π.χ.: αν έχετε 'dn: uid=sogo,ou=users,dc=example,dc=org', αυτή η τιμή πρέπει να είναι 'uid')"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_SCOPE": {
+        "name": {
+          "string": "Εύρος αναζήτησης LDAP"
+        },
+        "description": {
+          "string": "Υποδεικνύει το σύνολο των καταχωρήσεων στο ή κάτω από το BaseDN που μπορούν να θεωρηθούν ως δυνητικές αντιστοιχίες για ένα αίτημα αναζήτησης"
+        },
+        "developer_comment": "https://ldapwiki.com/wiki/Wiki.jsp?page=LDAP%20Search%20Scopes"
+      },
+      "US_LDAP_FILTER": {
+        "name": {
+          "string": "Φίλτρο LDAP"
+        },
+        "description": {
+          "string": "Πρόσθετο φίλτρο για χρήση σε ερωτήματα LDAP. Χρησιμοποιήστε '=', '!=', 'AND', 'OR' και παρενθέσεις. Παράδειγμα: '(objectClass='mailUser' OR objectClass!='mailGroup') AND accountStatus='active'"
+        },
+        "developer_comment": "Use SOGo's syntax and not ldap syntax for filter"
+      },
+      "US_LDAP_PWD_POLICY": {
+        "name": {
+          "string": "Πολιτική κωδικών πρόσβασης LDAP"
+        },
+        "description": {
+          "string": "Υποδεικνύει ότι ο διακομιστής LDAP σας διαθέτει πολιτική κωδικών πρόσβασης με έννοια λήξης και περιόδου χάριτος"
+        },
+        "developer_comment": "https://ldapwiki.com/wiki/Wiki.jsp?page=Password%20Policy"
+      },
+      "US_LDAP_PWD_UPDATE_SAMBA": {
+        "name": {
+          "string": "Ενημέρωση κωδικών Samba μέσω LDAP"
+        },
+        "description": {
+          "string": "Εάν ένας χρήστης αλλάξει τον κωδικό του, ενημερώνει επίσης τα sambaNTPassword και sambaLMPassword"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_BIND_AS_USER": {
+        "name": {
+          "string": "Σύνδεση ως χρήστης"
+        },
+        "description": {
+          "string": "Μετά την πιστοποίηση, χρησιμοποιεί το DN του χρήστη για σύνδεση"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_BIND_FIELD": {
+        "name": {
+          "string": "Πρόσθετα πεδία σύνδεσης"
+        },
+        "description": {
+          "string": "Πρόσθετα πεδία για χρήση κατά τη σύνδεση. Π.χ., αν προσθέσετε 'mail', η σύνδεση θα περιλαμβάνει και 'mail=<login>'"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_ATTR_FIELD": {
+        "name": {
+          "string": "Πεδία ιδιοτήτων"
+        },
+        "description": {
+          "string": "Πεδία ιδιοτήτων που επιστρέφονται κατά την αναζήτηση. Προεπιλογή είναι '*' (όλα). Προσοχή: αυτό μπορεί να επηρεάσει σημαντικά τη συμπεριφορά του SOGo"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_GROUP_CLASS": {
+        "name": {
+          "string": "Κλάση ομάδας LDAP"
+        },
+        "description": {
+          "string": "Ορίζει την κλάση LDAP που υποδεικνύει στο SOGo ότι πρόκειται για ομάδα και όχι για μεμονωμένο χρήστη"
+        },
+        "developer_comment": ""
+      },
+      "US_SQL_USER_URL": {
+        "name": {
+          "string": "URL χρήστη SQL"
+        },
+        "description": {
+          "string": "URL βάσης δεδομένων για τον πίνακα χρηστών. Παράδειγμα: postgresql://sogo:sogo@127.0.0.1:5432/sogo/sogo_user"
+        },
+        "developer_comment": ""
+      },
+      "US_SQL_PREPEND_PWD_SCHEME": {
+        "name": {
+          "string": "Σχήμα κωδικού χρήστη SQL"
+        },
+        "description": {
+          "string": "Επιλέξτε ΝΑΙ αν ο κωδικός αποθηκεύεται στη βάση δεδομένων ως {σχήμα}κρυπτογραφημένηΤιμή"
+        },
+        "developer_comment": ""
+      },
+      "US_SQL_USER_FILTER": {
+        "name": {
+          "string": "Φίλτρο χρήστη SQL"
+        },
+        "description": {
+          "string": "Πρόσθετες συνθήκες WHERE για προσθήκη στο ερώτημα SQL. Παράδειγμα: 'active=1'"
+        },
+        "developer_comment": ""
+      },
+      "US_SQL_DOMAIN_FIELD": {
+        "name": {
+          "string": "Πεδίο τομέα χρήστη SQL"
+        },
+        "description": {
+          "string": "Ορίστε το όνομα της στήλης όπου βρίσκεται ο τομέας του χρήστη. Αν οριστεί, κάθε ερώτημα SQL θα προσθέτει '<domain_column> = <user domain>' στη συνθήκη WHERE"
+        },
+        "developer_comment": ""
+      },
+      "US_MAPPING": {
+        "name": {
+          "string": "Αντιστοίχιση πηγής χρήστη"
+        },
+        "description": {
+          "string": "Αντιστοιχίστε το πεδίο πηγής χρήστη στο χαρακτηριστικό επαφής"
+        },
+        "developer_comment": ""
+      },
+      "US_CAN_AUTH": {
+        "name": {
+          "string": "Μπορεί να πιστοποιηθεί"
+        },
+        "description": {
+          "string": "Οι χρήστες από αυτήν την Πηγή Χρηστών μπορούν να συνδεθούν στο webmail"
+        },
+        "developer_comment": ""
+      },
+      "US_PWD_ALGO": {
+        "name": {
+          "string": "Αλγόριθμος Κωδικού Πηγής Χρηστών"
+        },
+        "description": {
+          "string": "Αλγόριθμος κωδικού που χρησιμοποιείται από αυτήν την πηγή χρηστών. Υποχρεωτικό για πηγή χρηστών SQL. Προαιρετικό για LDAP: απαιτείται μόνο αν επιτρέπετε στους χρήστες να αλλάξουν τον κωδικό τους"
+        },
+        "developer_comment": ""
+      },
+      "US_SIM_KEY_TYPE": {
+        "name": {
+          "string": "Τύπος Συμμετρικού Κλειδιού Αλγορίθμου Κωδικού"
+        },
+        "description": {
+          "string": "Καθορίζει πώς αποθηκεύετε το συμμετρικό κλειδί του αλγορίθμου κωδικού σας"
+        },
+        "developer_comment": ""
+      },
+      "US_SIM_KEY_VALUE": {
+        "name": {
+          "string": "Τιμή Συμμετρικού Κλειδιού Αλγορίθμου Κωδικού"
+        },
+        "description": {
+          "string": "Η τιμή εξαρτάται από τον τύπο.\nΑν 'διαδρομή', εισαγάγετε εδώ τη διαδρομή του αρχείου όπου το SOGo θα βρει το συμμετρικό κλειδί σας.\nΑν 'env', ορίστε το όνομα της μεταβλητής περιβάλλοντος όπου βρίσκεται το κλειδί.\nΑν 'plain', τοποθετήστε εδώ απευθείας το κλειδί"
+        },
+        "developer_comment": ""
+      },
+      "US_PWD_POLICY": {
+        "name": {
+          "string": "Πολιτική Κωδικού Χρήστη"
+        },
+        "description": {
+          "string": "Επιλέξτε το πλαίσιο για να προσθέσετε μια πολιτική στον κωδικό του χρήστη. Αυτή η πολιτική θα χρησιμοποιηθεί όταν ο χρήστης τον αλλάξει ή αν ενεργοποιήσετε τον 'έλεγχο ισχύος κωδικού κατά τη σύνδεση'"
+        },
+        "developer_comment": ""
+      },
+      "US_PWD_LEN_MIN": {
+        "name": {
+          "string": "Ελάχιστο Μήκος Κωδικού Χρήστη"
+        },
+        "description": {
+          "string": "Ελάχιστο μήκος κωδικού χρήστη, συμπεριλαμβανομένου. Ελάχιστο 4 χαρακτήρες"
+        },
+        "developer_comment": ""
+      },
+      "US_PWD_LEN_MAX": {
+        "name": {
+          "string": "Μέγιστο Μήκος Κωδικού Χρήστη"
+        },
+        "description": {
+          "string": "Μέγιστο μήκος κωδικού χρήστη, συμπεριλαμβανομένου. 0 σημαίνει χωρίς όριο"
+        },
+        "developer_comment": ""
+      },
+      "US_PWD_UPPERCASE_MIN": {
+        "name": {
+          "string": "Ελάχιστα Κεφαλαία Γράμματα Κωδικού Χρήστη"
+        },
+        "description": {
+          "string": "Ελάχιστη εμφάνιση κεφαλαίων γραμμάτων. 0 σημαίνει χωρίς όριο"
+        },
+        "developer_comment": ""
+      },
+      "US_PWD_LOWERCASE_MIN": {
+        "name": {
+          "string": "Ελάχιστα Πεζά Γράμματα Κωδικού Χρήστη"
+        },
+        "description": {
+          "string": "Ελάχιστη εμφάνιση πεζών γραμμάτων. 0 σημαίνει χωρίς όριο"
+        },
+        "developer_comment": ""
+      },
+      "US_PWD_DIGITS_MIN": {
+        "name": {
+          "string": "Ελάχιστα Ψηφία Κωδικού Χρήστη"
+        },
+        "description": {
+          "string": "Ελάχιστη εμφάνιση ψηφίων. 0 σημαίνει χωρίς όριο"
+        },
+        "developer_comment": ""
+      },
+      "US_PWD_SPECIAL_ALLOWED": {
+        "name": {
+          "string": "Επιτρεπόμενοι Ειδικοί Χαρακτήρες Κωδικού Χρήστη"
+        },
+        "description": {
+          "string": "Λίστα με τους ειδικούς χαρακτήρες που επιτρέπονται στους κωδικούς πρόσβασης"
+        },
+        "developer_comment": ""
+      },
+      "US_PWD_SPECIAL_MIN": {
+        "name": {
+          "string": "Ελάχιστο Πλήθος Ειδικών Χαρακτήρων Κωδικού Χρήστη"
+        },
+        "description": {
+          "string": "Ελάχιστο πλήθος ειδικών χαρακτήρων. Η τιμή 0 σημαίνει χωρίς όριο"
+        },
+        "developer_comment": ""
+      },
+      "US_MAIL": {
+        "name": {
+          "string": "Πεδίο Ηλεκτρονικού Ταχυδρομείου Χρήστη"
+        },
+        "description": {
+          "string": "Πεδίο όπου βρίσκεται το ηλεκτρονικό ταχυδρομείο του χρήστη. Μπορούν να οριστούν πρόσθετα πεδία μετά το κύριο πεδίο ηλεκτρονικού ταχυδρομείου για να καθοριστούν τα ψευδώνυμα του χρήστη"
+        },
+        "developer_comment": ""
+      },
+      "US_MAIL_SERVER_LOGIN": {
+        "name": {
+          "string": "Σύνδεση Χρήστη στον Διακομιστή Ηλεκτρονικού Ταχυδρομείου"
+        },
+        "description": {
+          "string": "Ορίστε μόνο αν η σύνδεση του χρήστη στον διακομιστή ηλεκτρονικού ταχυδρομείου (IMAP) διαφέρει από το κύριο ηλεκτρονικό ταχυδρομείο. Καθορίστε εδώ το πεδίο όπου βρίσκεται η σύνδεσή του"
+        },
+        "developer_comment": ""
+      },
+      "US_MAIL_FILTERING_LOGIN": {
+        "name": {
+          "string": "Σύνδεση Χρήστη στον Διακομιστή Φιλτράρισμα Ηλεκτρονικού Ταχυδρομείου"
+        },
+        "description": {
+          "string": "Ορίστε μόνο αν η σύνδεση του χρήστη στον διακομιστή φιλτράρισμα ηλεκτρονικού ταχυδρομείου (Sieve) διαφέρει από το κύριο ηλεκτρονικό ταχυδρομείο. Καθορίστε εδώ το πεδίο όπου βρίσκεται η σύνδεσή του"
+        },
+        "developer_comment": ""
+      },
+      "US_MAIL_OUTGOING_LOGIN": {
+        "name": {
+          "string": "Σύνδεση Χρήστη στον Διακομιστή Αποστολής Ηλεκτρονικού Ταχυδρομείου"
+        },
+        "description": {
+          "string": "Ορίστε μόνο αν η σύνδεση του χρήστη στον διακομιστή αποστολής ηλεκτρονικού ταχυδρομείου (SMTP) διαφέρει από το κύριο ηλεκτρονικό ταχυδρομείο. Καθορίστε εδώ το πεδίο όπου βρίσκεται η σύνδεσή του"
+        },
+        "developer_comment": ""
+      },
+      "US_KIND": {
+        "name": {
+          "string": "Τύπος Χρήστη"
+        },
+        "description": {
+          "string": "Καθορίστε το πεδίο όπου βρίσκεται ο τύπος του χρήστη ('χρήστης', 'πόρος' ή 'ομάδα')"
+        },
+        "developer_comment": ""
+      },
+      "US_IS_ADDRESSBOOK": {
+        "name": {
+          "string": "Η Πηγή Χρηστών είναι Βιβλίο Διευθύνσεων"
+        },
+        "description": {
+          "string": "Καθορίστε το πεδίο εάν οι χρήστες αυτής της Πηγής Χρηστών μπορούν να βρεθούν μέσω αυτοσυμπλήρωσης ή Καθολικού Βιβλίου Διευθύνσεων"
+        },
+        "developer_comment": ""
+      },
+      "US_SEARCH": {
+        "name": {
+          "string": "Πεδίο Αναζήτησης Χρήστη"
+        },
+        "description": {
+          "string": "Πρόσθετο πεδίο για προσθήκη κατά την αναζήτηση ενός χρήστη. Παράδειγμα: 'όνομα' θα βρει τον χρήστη μέσω του ονόματός του"
+        },
+        "developer_comment": ""
+      },
+      "US_DISPLAY_NAME": {
+        "name": {
+          "string": "Εμφανιζόμενο Όνομα Πηγής Χρηστών"
+        },
+        "description": {
+          "string": "Εμφανιζόμενο όνομα αυτής της πηγής χρηστών, θα εμφανίζεται στη λίστα του καθολικού βιβλίου διευθύνσεων"
+        },
+        "developer_comment": ""
+      },
+      "US_AUTO_SEARCH": {
+        "name": {
+          "string": "Αυτόματη εμφάνιση χρηστών στο ΓΚΔ"
+        },
+        "description": {
+          "string": "Αυτόματη αναζήτηση και εμφάνιση χρηστών στο Γενικό Καταλογο Διευθύνσεων όταν επιλεγεί. Αλλιώς, ο χρήστης πρέπει να πληκτρολογήσει για να ενεργοποιήσει την αναζήτηση ή να πληκτρολογήσει '.' για αναζήτηση όλων."
+        },
+        "developer_comment": ""
+      },
+      "US_AUTO_SEARCH_LIMIT": {
+        "name": {
+          "string": "Όριο αυτόματης συμπλήρωσης χρηστών"
+        },
+        "description": {
+          "string": "Ορίζει τον μέγιστο αριθμό χρηστών που επιστρέφονται μετά από ένα ερώτημα αναζήτησης. Η τιμή 0 σημαίνει χωρίς όριο"
+        },
+        "developer_comment": ""
+      },
+      "US_EXTRA_CONTACT_INFO": {
+        "name": {
+          "string": "Επιπλέον πληροφορίες επικοινωνίας χρήστη"
+        },
+        "description": {
+          "string": "Ορίζει ποιες πληροφορίες θα προστεθούν στο αποτέλεσμα αυτόματης συμπλήρωσης. Εμφανίζεται ως 'cn <επιπλέον> mail'"
+        },
+        "developer_comment": ""
+      },
+      "US_HIDDEN_USER": {
+        "name": {
+          "string": "Κρυφοί χρήστες"
+        },
+        "description": {
+          "string": "Λίστα με τα αναγνωριστικά (uid) χρηστών που δεν θα επιστρέφονται σε άλλους κατά την αναζήτηση και αυτόματη συμπλήρωση"
+        },
+        "developer_comment": ""
+      },
+      "US_HAS_RESOURCE": {
+        "name": {
+          "string": "Η πηγή χρηστών περιέχει πόρους"
+        },
+        "description": {
+          "string": "Επιλέξτε το πλαίσιο εάν αυτή η πηγή χρηστών περιέχει πόρους"
+        },
+        "developer_comment": ""
+      },
+      "US_RESOURCE_SEARCH": {
+        "name": {
+          "string": "Αναζήτηση πόρων χρήστη"
+        },
+        "description": {
+          "string": "Επιπλέον πεδίο αναζήτησης για πόρους"
+        },
+        "developer_comment": ""
+      },
+      "US_RESOURCE_MULTIBOOKING": {
+        "name": {
+          "string": "Πολυκράτηση πόρων χρήστη"
+        },
+        "description": {
+          "string": "Πεδίο όπου βρίσκεται η τιμή πολυκράτησης ενός πόρου"
+        },
+        "developer_comment": ""
+      },
+      "US_RESOURCE_EXTRA_INFO": {
+        "name": {
+          "string": "Επιπλέον πληροφορίες πόρων χρήστη"
+        },
+        "description": {
+          "string": "Ορίζει ποιες πληροφορίες θα προστεθούν στο αποτέλεσμα αυτόματης συμπλήρωσης. Εμφανίζεται ως 'cn <επιπλέον> mail'"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MODULE_ACCESS": {
+        "name": {
+          "string": "Πρόσβαση σε ενότητες"
+        },
+        "description": {
+          "string": "Ορίζει ποιες ενότητες είναι διαθέσιμες μεταξύ αλληλογραφίας, ημερολογίου και επαφών"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAPI_ACCESS": {
+        "name": {
+          "string": "Ενεργοποίηση διακομιστή MAPI"
+        },
+        "description": {
+          "string": "Επιτρέπει στους χρήστες επιτραπέζιου υπολογιστή να χρησιμοποιούν το πρωτόκολλο MAPI"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_EAS_ACCESS": {
+        "name": {
+          "string": "Ενεργοποίηση διακομιστή EAS"
+        },
+        "description": {
+          "string": "Επιτρέψτε στους χρήστες σε κινητές συσκευές να χρησιμοποιούν το πρωτόκολλο ActiveSync"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_FOLDER_DISABLE_EXPORT": {
+        "name": {
+          "string": "Απενεργοποίηση εξαγωγής φακέλου"
+        },
+        "description": {
+          "string": "Εμποδίστε τον χρήστη από την εξαγωγή των φακέλων του (ηλεκτρονικό ταχυδρομείο, ημερολόγιο, επαφές)"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_FOLDER_DISABLE_SHARING": {
+        "name": {
+          "string": "Απενεργοποίηση κοινής χρήσης φακέλου"
+        },
+        "description": {
+          "string": "Εμποδίστε τον χρήστη από την κοινή χρήση των φακέλων του (ηλεκτρονικό ταχυδρομείο, ημερολόγιο, επαφές)"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_FOLDER_DISABLE_SHARING_ANY_AUTH": {
+        "name": {
+          "string": "Απενεργοποίηση κοινής χρήσης φακέλου με πιστοποιημένους χρήστες"
+        },
+        "description": {
+          "string": "Εμποδίστε τον χρήστη από την κοινή χρήση των φακέλων του με όλους τους πιστοποιημένους χρήστες (ηλεκτρονικό ταχυδρομείο, ημερολόγιο, επαφές)"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_AUTOCOMPLETION_MIN_LEN": {
+        "name": {
+          "string": "Ελάχιστοι χαρακτήρες για αυτοσυμπλήρωση"
+        },
+        "description": {
+          "string": "Ορίστε τον ελάχιστο αριθμό χαρακτήρων για την ενεργοποίηση αναζήτησης αυτοσυμπλήρωσης (π.χ. 3 σημαίνει ότι η αναζήτηση θα ξεκινήσει στον τρίτο χαρακτήρα)"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_API_MAX_REQUEST": {
+        "name": {
+          "string": "Μέγιστο όριο αιτημάτων API"
+        },
+        "description": {
+          "string": "Ορίστε το μέγιστο αριθμό αιτημάτων που μπορεί να κάνει ένας πιστοποιημένος χρήστης μέσα σε ένα χρονικό διάστημα"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_API_MAX_REQUEST_INTERVAL": {
+        "name": {
+          "string": "Χρονικό διάστημα μέγιστων αιτημάτων API"
+        },
+        "description": {
+          "string": "Ορίστε το χρονικό διάστημα στο οποίο ισχύει ο περιορισμός 'Μέγιστο όριο αιτημάτων API'"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_API_MAX_REQUEST_BLOCK_INTERVAL": {
+        "name": {
+          "string": "Χρόνος αποκλεισμού μετά το μέγιστο όριο αιτημάτων API"
+        },
+        "description": {
+          "string": "Ορίστε το χρονικό διάστημα κατά το οποίο ένας χρήστης αποκλείεται από την αποστολή αιτημάτων αν έχει ξεπεράσει το 'Μέγιστο όριο αιτημάτων API'"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_IDENTITIES_ENABLED": {
+        "name": {
+          "string": "Ενεργοποίηση ταυτοτήτων"
+        },
+        "description": {
+          "string": "Επιτρέψτε στους χρήστες να δημιουργούν ταυτότητες ηλεκτρονικού ταχυδρομείου"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_IDENTITIES_CUSTOM_FROM_ENABLED": {
+        "name": {
+          "string": "Ενεργοποίηση προσαρμοσμένου πεδίου 'Από'"
+        },
+        "description": {
+          "string": "Επιτρέψτε στους χρήστες να ορίζουν προσαρμοσμένο πεδίο 'Από' στις ταυτότητές τους"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_IDENTITIES_CUSTOM_NAME_ENABLED": {
+        "name": {
+          "string": "Ενεργοποίηση προσαρμοσμένου 'Ονόματος'"
+        },
+        "description": {
+          "string": "Επιτρέψτε στον χρήστη να ορίσει προσαρμοσμένο Όνομα στις ταυτότητές του"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_IDENTITIES_CUSTOM_REPLY_TO_ENABLED": {
+        "name": {
+          "string": "Ενεργοποίηση προσαρμοσμένου 'Απάντηση σε'"
+        },
+        "description": {
+          "string": "Επιτρέψτε στον χρήστη να ορίσει προσαρμοσμένο 'Απάντηση σε' στις ταυτότητές του"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_ALLOW_EXT_MAIL_ACCOUNT": {
+        "name": {
+          "string": "Ενεργοποίηση εξωτερικού λογαριασμού ηλεκτρονικού ταχυδρομείου"
+        },
+        "description": {
+          "string": "Επιτρέψτε στον χρήστη να ορίσει εξωτερικό λογαριασμό"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_ALLOW_EXT_AVATAR": {
+        "name": {
+          "string": "Επιτρέψτε τη χρήση εξωτερικού avatar"
+        },
+        "description": {
+          "string": "Επιτρέψτε στον χρήστη να ορίσει προτιμήσεις για χρήση εξωτερικού avatar (gravatar, libravatar κ.λπ.)"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_REFRESH_INTERVAL_ALLOWED": {
+        "name": {
+          "string": "Ορισμός επιτρεπόμενου διαστήματος αυτόματης ανανέωσης για το ηλεκτρονικό ταχυδρομείο"
+        },
+        "description": {
+          "string": "Ορίστε τις τιμές που μπορούν να επιλέξουν οι χρήστες για την 'αυτόματη ανανέωση ηλεκτρονικού ταχυδρομείου'"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_JUNK_SETTINGS": {
+        "name": {
+          "string": "Ορισμός τύπου ενεργοποίησης για ham/spam"
+        },
+        "description": {
+          "string": "Ορίστε έναν μηχανισμό όταν οι χρήστες σημαδεύουν μηνύματα ως spam/ham"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_JUNK_MAIL_SPAM": {
+        "name": {
+          "string": "Ηλεκτρονική διεύθυνση για spam"
+        },
+        "description": {
+          "string": "Ορίστε τη διεύθυνση ηλεκτρονικού ταχυδρομείου όπου θα προωθείται το spam"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_SERVER_TYPE": {
+        "name": {
+          "string": "Τύπος διακομιστή ηλεκτρονικού ταχυδρομείου"
+        },
+        "description": {
+          "string": "Ορίστε τον τύπο του διακομιστή ηλεκτρονικού ταχυδρομείου"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_IMAP_SERVER": {
+        "name": {
+          "string": "Διακομιστής IMAP"
+        },
+        "description": {
+          "string": "Όνομα κεντρικού υπολογιστή του διακομιστή IMAP"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_IMAP_PORT": {
+        "name": {
+          "string": "Θύρα IMAP"
+        },
+        "description": {
+          "string": "Θύρα του διακομιστή IMAP"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_IMAP_ENCRYPTION": {
+        "name": {
+          "string": "Κρυπτογράφηση IMAP"
+        },
+        "description": {
+          "string": "Μηχανισμός κρυπτογράφησης του διακομιστή IMAP"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_IMAP_AUTH_MECH": {
+        "name": {
+          "string": "Μηχανισμός ταυτοποίησης IMAP"
+        },
+        "description": {
+          "string": "Μηχανισμός ταυτοποίησης του IMAP. Μην χρησιμοποιείτε 'login' χωρίς προφύλαξη"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SOFT_EMAIL_QUOTA": {
+        "name": {
+          "string": "Μαλακό όριο αποθήκευσης"
+        },
+        "description": {
+          "string": "Ορίστε το ποσοστό του μαλακού ορίου αποθήκευσης"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_PURGE_ALLOW": {
+        "name": {
+          "string": "Ενεργοποίηση καθαρισμού"
+        },
+        "description": {
+          "string": "Ο καθαρισμός επιτρέπει στους χρήστες να διαγράφουν όλα τα μηνύματα παλαιότερα από μια ημερομηνία σε έναν φάκελο ή για ολόκληρο τον λογαριασμό τους"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_PURGE_MIN_DATE": {
+        "name": {
+          "string": "Ελάχιστες ημέρες καθαρισμού"
+        },
+        "description": {
+          "string": "Ορίστε τις ελάχιστες ημέρες που ένας χρήστης μπορεί να χρησιμοποιήσει τον καθαρισμό. 0 σημαίνει ότι ο χρήστης μπορεί να διαγράψει όλα τα μηνύματά του. 30 σημαίνει ότι ο χρήστης μπορεί να διαγράψει μόνο μηνύματα παλαιότερα των 30 ημερών"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_FILTERING_ENABLED": {
+        "name": {
+          "string": "Ενεργοποίηση φιλτράρισμα αλληλογραφίας"
+        },
+        "description": {
+          "string": "Επιτρέψτε στους χρήστες να ορίσουν φίλτρα αλληλογραφίας"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_FILTERING_TYPE": {
+        "name": {
+          "string": "Τύπος φιλτράρισμα αλληλογραφίας"
+        },
+        "description": {
+          "string": "Είδος πρωτοκόλλου φιλτράρισμα αλληλογραφίας"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SIEVE_SERVER": {
+        "name": {
+          "string": "Διακομιστής Sieve"
+        },
+        "description": {
+          "string": "Όνομα κεντρικού υπολογιστή του διακομιστή Sieve"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SIEVE_PORT": {
+        "name": {
+          "string": "Θύρα Sieve"
+        },
+        "description": {
+          "string": "Θύρα του διακομιστή Sieve"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SIEVE_ENCRYPTION": {
+        "name": {
+          "string": "Κρυπτογράφηση Sieve"
+        },
+        "description": {
+          "string": "Κρυπτογράφηση του διακομιστή Sieve"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SIEVE_AUTH_MECH": {
+        "name": {
+          "string": "Μηχανισμός ταυτότητας Sieve"
+        },
+        "description": {
+          "string": "Μηχανισμός ταυτότητας για το sieve. Αν Κανένα"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SIEVE_FOLDER_ENCODING": {
+        "name": {
+          "string": "Κωδικοποίηση Sieve"
+        },
+        "description": {
+          "string": "Ορίστε την κωδικοποίηση που χρησιμοποιεί ο διακομιστής sieve."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SIEVE_HEADER": {
+        "name": {
+          "string": "Κεφαλίδα Sieve"
+        },
+        "description": {
+          "string": "Ορίστε ένα σενάριο sieve που θα προστίθεται στην αρχή όλων των σεναρίων sieve των χρηστών"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SIEVE_FOOTER": {
+        "name": {
+          "string": "Υποσέλιδο Sieve"
+        },
+        "description": {
+          "string": "Ορίστε ένα σενάριο sieve που θα προστίθεται στο τέλος όλων των σεναρίων sieve των χρηστών"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SIEVE_FIRST_FILTER": {
+        "name": {
+          "string": "Αρχικό σενάριο Sieve"
+        },
+        "description": {
+          "string": "Ορίστε το αρχικό σενάριο sieve για όλους τους νέους χρήστες. Θα μπορούν να το τροποποιήσουν αργότερα"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_VACATION_ENABLED": {
+        "name": {
+          "string": "Επιτρέψτε μήνυμα απουσίας"
+        },
+        "description": {
+          "string": "Επιτρέψτε στους χρήστες να ορίσουν μήνυμα απουσίας. Χρησιμοποιεί την επέκταση 'vacation' του sieve (rfc5230)"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_VACATION_ALLOW_RESPONSE_ALWAYS": {
+        "name": {
+          "string": "Επιτρέψτε μήνυμα απουσίας πάντα"
+        },
+        "description": {
+          "string": "Επιτρέψτε στους χρήστες να ορίσουν μήνυμα απουσίας που θα αποστέλλεται πάντα, χωρίς περίοδο χάριτος"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_FORWARD_ENABLED": {
+        "name": {
+          "string": "Επιτρέψτε αυτόματη προώθηση"
+        },
+        "description": {
+          "string": "Επιτρέψτε στους χρήστες να ορίσουν αυτόματη προώθηση. Χρησιμοποιεί την εντολή 'redirect' του sieve"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_FORWARD_ALLOW_USER_DOMAIN": {
+        "name": {
+          "string": "Επιτρέψτε αυτόματη προώθηση στον τομέα του χρήστη"
+        },
+        "description": {
+          "string": "Επιτρέψτε στους χρήστες να ορίσουν αυτόματη προώθηση σε διευθύνσεις εντός του ίδιου τομέα"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_FORWARD_ALLOW_SOGO_DOMAIN": {
+        "name": {
+          "string": "Επιτρέψτε αυτόματη προώθηση στον τομέα του SOGo"
+        },
+        "description": {
+          "string": "Επιτρέψτε στους χρήστες να ορίσουν αυτόματη προώθηση σε διευθύνσεις γνωστές στο SOGo"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_FORWARD_ALLOW_EXT_DOMAIN": {
+        "name": {
+          "string": "Επιτρέψτε αυτόματη προώθηση σε εξωτερικό domain"
+        },
+        "description": {
+          "string": "Επιτρέψτε στους χρήστες να ορίζουν αυτόματη προώθηση σε εξωτερικές διευθύνσεις"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_FORWARD_WHITELIST": {
+        "name": {
+          "string": "Λευκή λίστα domain για αυτόματη προώθηση"
+        },
+        "description": {
+          "string": "Ορίστε συγκεκριμένα domain όπου οι χρήστες μπορούν να προωθούν"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_FORWARD_BLACKLIST": {
+        "name": {
+          "string": "Μαύρη λίστα domain για αυτόματη προώθηση"
+        },
+        "description": {
+          "string": "Ορίστε συγκεκριμένα domain όπου οι χρήστες δεν επιτρέπεται να προωθούν"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_NOTIFY_ENABLED": {
+        "name": {
+          "string": "Επιτρέψτε ειδοποιήσεις"
+        },
+        "description": {
+          "string": "Επιτρέψτε στους χρήστες να ορίζουν ειδοποιήσεις. Χρησιμοποιεί την επέκταση 'notify' του sieve (rfc5435)"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_NOTIFY_ALLOW_USER_DOMAIN": {
+        "name": {
+          "string": "Επιτρέψτε ειδοποιήσεις στο domain του χρήστη"
+        },
+        "description": {
+          "string": "Επιτρέψτε στους χρήστες να ορίζουν ειδοποιήσεις σε διευθύνσεις εντός του ίδιου domain"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_NOTIFY_ALLOW_SOGO_DOMAIN": {
+        "name": {
+          "string": "Επιτρέψτε ειδοποιήσεις στο domain του SOGo"
+        },
+        "description": {
+          "string": "Επιτρέψτε στους χρήστες να ορίζουν ειδοποιήσεις σε διευθύνσεις γνωστές στο SOGo"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_NOTIFY_ALLOW_EXT_DOMAIN": {
+        "name": {
+          "string": "Επιτρέψτε ειδοποιήσεις σε εξωτερικό domain"
+        },
+        "description": {
+          "string": "Επιτρέψτε στους χρήστες να ορίζουν ειδοποιήσεις σε εξωτερικές διευθύνσεις"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_NOTIFY_WHITELIST": {
+        "name": {
+          "string": "Λευκή λίστα domain για ειδοποιήσεις"
+        },
+        "description": {
+          "string": "Ορίστε συγκεκριμένα domain όπου οι χρήστες μπορούν να στέλνουν ειδοποιήσεις"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_NOTIFY_BLACKLIST": {
+        "name": {
+          "string": "Μαύρη λίστα domain για ειδοποιήσεις"
+        },
+        "description": {
+          "string": "Ορίστε συγκεκριμένα domain όπου οι χρήστες δεν επιτρέπεται να στέλνουν ειδοποιήσεις"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_OUTGOING_TYPE": {
+        "name": {
+          "string": "Τύπος εξερχόμενου διακομιστή αλληλογραφίας"
+        },
+        "description": {
+          "string": "Ορίστε τον τύπο του εξερχόμενου διακομιστή αλληλογραφίας"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SMTP_SERVER": {
+        "name": {
+          "string": "Διακομιστής SMTP"
+        },
+        "description": {
+          "string": "Όνομα κεντρικού υπολογιστή του διακομιστή SMTP"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SMTP_PORT": {
+        "name": {
+          "string": "Θύρα SMTP"
+        },
+        "description": {
+          "string": "Θύρα του διακομιστή SMTP"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SMTP_ENCRYPTION": {
+        "name": {
+          "string": "Κρυπτογράφηση SMTP"
+        },
+        "description": {
+          "string": "Μηχανισμός κρυπτογράφησης του διακομιστή SMTP"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SMTP_AUTH_MECH": {
+        "name": {
+          "string": "Μηχανισμός πιστοποίησης SMTP"
+        },
+        "description": {
+          "string": "Μηχανισμός πιστοποίησης του SMTP. Μην χρησιμοποιείτε 'Κανένα' χωρίς προφύλαξη"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SMTP_MASTER_ENABLED": {
+        "name": {
+          "string": "Κύριος λογαριασμός SMTP"
+        },
+        "description": {
+          "string": "Χρήση κύριου λογαριασμού για όλα τα συστημικά μηνύματα (γεγονότα, ειδοποιήσεις κ.λπ.)"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SMTP_MASTER_FROM": {
+        "name": {
+          "string": "Αποστολέας κύριου λογαριασμού"
+        },
+        "description": {
+          "string": "Αποστολέας του κύριου λογαριασμού SMTP"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SMTP_MASTER_LOGIN": {
+        "name": {
+          "string": "Σύνδεση κύριου λογαριασμού"
+        },
+        "description": {
+          "string": "Διεύθυνση ηλεκτρονικού ταχυδρομείου του κύριου λογαριασμού SMTP"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SMTP_MASTER_PWD": {
+        "name": {
+          "string": "Κωδικός πρόσβασης κύριου λογαριασμού"
+        },
+        "description": {
+          "string": "Κωδικός πρόσβασης του κύριου λογαριασμού SMTP"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_MAX_SUBMISSION": {
+        "name": {
+          "string": "Μέγιστο αριθμό αποστολών"
+        },
+        "description": {
+          "string": "Μέγιστος αριθμός μηνυμάτων που μπορεί να στείλει ένας χρήστης μέσα σε ένα χρονικό διάστημα"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_MAX_SUBMISSION_INTERVAL": {
+        "name": {
+          "string": "Χρονικό διάστημα μέγιστης αποστολής"
+        },
+        "description": {
+          "string": "Διάρκεια σε δευτερόλεπτα για τον 'Μέγιστο αριθμό αποστολών'"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_MAX_SUBMISSION_BLOCK_INTERVAl": {
+        "name": {
+          "string": "Χρόνος αποκλεισμού αποστολής email"
+        },
+        "description": {
+          "string": "Χρόνος κατά τον οποίο ένας χρήστης δεν μπορεί να στείλει email μετά την ενεργοποίηση του 'Μέγιστο όριο αποστολής email'"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_MAX_RECIPIENT": {
+        "name": {
+          "string": "Μέγιστος αριθμός παραληπτών σε email"
+        },
+        "description": {
+          "string": "Κωδικός πρόσβασης του κύριου λογαριασμού"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_CHECK_FROM": {
+        "name": {
+          "string": "Έλεγχος 'Από'"
+        },
+        "description": {
+          "string": "Έλεγχος αν το πεδίο 'Από' είναι ένα από τα email του χρήστη (προεπιλογή, ψευδώνυμα, ταυτότητες κ.λπ.) πριν από την αποστολή στον εξερχόμενο διακομιστή email"
+        },
+        "developer_comment": ""
+      }
+    }
+  }
+}

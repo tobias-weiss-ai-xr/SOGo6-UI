@@ -1,0 +1,52 @@
+{
+  "AP_DEBUG": {
+    "title": {
+      "string": "Debugowanie skrzynki pocztowej"
+    },
+    "description": {
+      "string": "Narzędzie diagnostyczne do rozwiązywania problemów z dostarczaniem poczty. Wyświetl surowce źródło wiadomości lub zanalizowane nagłówki."
+    },
+    "query": {
+      "title": {
+        "string": "Zapytanie debugowania"
+      },
+      "button": {
+        "string": "Sprawdź"
+      }
+    },
+    "labels": {
+      "user": {
+        "string": "Użytkownik"
+      },
+      "folder": {
+        "string": "Folder IMAP"
+      },
+      "mail_uid": {
+        "string": "UID wiadomości"
+      },
+      "select_user": {
+        "string": "Wybierz użytkownika..."
+      }
+    },
+    "result": {
+      "raw": {
+        "title": {
+          "string": "Surowce źródło wiadomości"
+        }
+      },
+      "headers": {
+        "title": {
+          "string": "Zanalizowane nagłówki"
+        }
+      }
+    },
+    "errors": {
+      "fields_required": {
+        "string": "Wymagane są: użytkownik, folder i UID wiadomości"
+      },
+      "fetch_failed": {
+        "string": "Nie udało się pobrać danych debugowania"
+      }
+    }
+  }
+}

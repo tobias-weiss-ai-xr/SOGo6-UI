@@ -1,0 +1,46 @@
+{
+  "AI_CLASSIFY": {
+    "title": {
+      "string": "Inteligentní klasifikace e-mailů"
+    },
+    "description": {
+      "string": "Automatické označování e-mailů: newsletter, faktura, upozornění, sociální sítě, osobní"
+    },
+    "input": {
+      "title": {
+        "string": "Vstupní e-mail"
+      },
+      "subject": {
+        "string": "Předmět"
+      },
+      "sender": {
+        "string": "Odesílatel"
+      },
+      "body": {
+        "string": "Tělo zprávy"
+      },
+      "placeholder": {
+        "string": "Vložte obsah e-mailu..."
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Výsledky klasifikace"
+      },
+      "empty": {
+        "string": "Zadejte text a klikněte na Klasifikovat"
+      }
+    },
+    "classify": {
+      "string": "Klasifikovat"
+    },
+    "errors": {
+      "empty": {
+        "string": "Zadejte text e-mailu"
+      },
+      "fail": {
+        "string": "Klasifikace se nezdařila"
+      }
+    }
+  }
+}

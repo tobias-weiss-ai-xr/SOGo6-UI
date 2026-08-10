@@ -1,0 +1,29 @@
+{
+  "EIDAS": {
+    "title": { "string": "Firme Qualificate eIDAS" },
+    "description": { "string": "Firme elettroniche qualificate e timestamp secondo il Regolamento UE 910/2014" },
+    "errors": { "fields": { "string": "Tutti i campi sono obbligatori" }, "fail": { "string": "Operazione fallita" } },
+    "success": { "sign": { "string": "Documento firmato con QES" } },
+    "sign": {
+      "title": { "string": "Firma Documento" },
+      "placeholder": { "string": "Inserisci il contenuto del documento da firmare..." },
+      "signer": { "string": "Email Firmatario" },
+      "algorithm": { "string": "Algoritmo Hash" },
+      "button": { "string": "Firma con QES" }
+    },
+    "verify": {
+      "title": { "string": "Verifica Firma" },
+      "doc_hash": { "string": "Hash Documento" },
+      "signature": { "string": "Firma" },
+      "button": { "string": "Verifica" },
+      "valid": { "string": "Valida" },
+      "invalid": { "string": "Non valida" }
+    },
+    "certs": {
+      "title": { "string": "Certificati del Servizio Fiduciario" },
+      "type": { "string": "Tipo" },
+      "name": { "string": "Nome" },
+      "hash": { "string": "Hash" }
+    }
+  }
+}

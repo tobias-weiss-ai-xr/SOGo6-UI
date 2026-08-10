@@ -1,0 +1,61 @@
+{
+  "AP_BACKUP": {
+    "title": {
+      "string": "Automatisk sikkerhetskopiering"
+    },
+    "description": {
+      "string": "Administrer database- og e-postlagrings-sikkerhetskopier med oppbevaringsregler og valgfri S3-opplasting."
+    },
+    "trigger": {
+      "button": {
+        "string": "Utløs sikkerhetskopiering"
+      },
+      "running": {
+        "string": "Kjører..."
+      },
+      "success": {
+        "string": "Sikkerhetskopiering fullført"
+      },
+      "error": {
+        "string": "Sikkerhetskopiering mislyktes"
+      }
+    },
+    "config": {
+      "retention": {
+        "string": "Oppbevaring"
+      },
+      "s3": {
+        "string": "S3-opplasting"
+      },
+      "mailstore": {
+        "string": "E-postlagring"
+      },
+      "total": {
+        "string": "Totale sikkerhetskopier"
+      }
+    },
+    "table": {
+      "id": {
+        "string": "ID"
+      },
+      "timestamp": {
+        "string": "Tidsstempel"
+      },
+      "type": {
+        "string": "Type"
+      },
+      "status": {
+        "string": "Status"
+      },
+      "size": {
+        "string": "Størrelse"
+      },
+      "duration": {
+        "string": "Varighet"
+      },
+      "empty": {
+        "string": "Ingen sikkerhetskopier ennå."
+      }
+    }
+  }
+}

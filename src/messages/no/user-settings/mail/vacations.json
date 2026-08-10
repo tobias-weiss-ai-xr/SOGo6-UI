@@ -1,0 +1,133 @@
+{
+  "US_MAIL_VACATIONS": {
+    "title": {
+      "string": "Feriemeldingsinnstillinger",
+      "context": "Title for the vacation settings page"
+    },
+    "page": {
+      "description": {
+        "string": "Konfigurer din automatiske fraværsmelding og når den skal være aktiv."
+      }
+    },
+    "errors_api": {
+      "load_failed": {
+        "string": "Kunne ikke laste feriemeldingsinnstillinger. Prøv igjen senere."
+      },
+      "feature_disabled": {
+        "string": "Automatisk fraværsmelding er deaktivert av administratoren din."
+      }
+    },
+    "errors": {
+      "validation": {
+        "message_required": {
+          "string": "Automatisk melding er påkrevd når feriemelding er aktivert."
+        },
+        "dates_required": {
+          "string": "Start- og sluttdato må oppgis når datobegrensninger er aktivert."
+        },
+        "date_order": {
+          "string": "Sluttdato må være på eller etter startdato."
+        },
+        "time_invalid": {
+          "string": "Angi en gyldig tid i TT:MM-format."
+        },
+        "weekday_required": {
+          "string": "Velg minst én ukedag når ukedagsbegrensninger er aktivert."
+        },
+        "response_interval_invalid": {
+          "string": "Svarintervall må være null eller et positivt tall."
+        },
+        "response_interval_zero": {
+          "string": "Et svarintervall på null dager er ikke tillatt på dette domenet."
+        }
+      }
+    },
+    "auto_reply": {
+      "enable": {
+        "string": "Aktiver automatisk fraværsmelding"
+      },
+      "subject": {
+        "label": {
+          "string": "Emne for automatisk svar"
+        },
+        "description": {
+          "string": "La feltet stå tomt for å bruke standardemne. Du kan skrive {subject} for å sette inn det opprinnelige emnet."
+        }
+      },
+      "message": {
+        "string": "Automatisk svarmelding"
+      },
+      "constraints": {
+        "title": {
+          "string": "Aktiveringsbegrensninger"
+        },
+        "description": {
+          "string": "Tilpass dager og tidsrom uavhengig av hverandre, og kombiner dem eventuelt med bestemte ukedager for å tilpasse feriefiltrene dine etter dine preferanser."
+        },
+        "enable": {
+          "days": {
+            "string": "Aktiver automatisk svar på disse dagene"
+          },
+          "hours": {
+            "string": "Aktiver automatisk svar mellom disse klokkeslettene"
+          },
+          "range": {
+            "string": "Aktiver automatisk svar mellom disse dagene"
+          }
+        },
+        "time": {
+          "start": {
+            "string": "Starttid"
+          },
+          "end": {
+            "string": "Sluttid"
+          }
+        },
+        "weekdays": {
+          "monday": {
+            "string": "Mandag"
+          },
+          "tuesday": {
+            "string": "Tirsdag"
+          },
+          "wednesday": {
+            "string": "Onsdag"
+          },
+          "thursday": {
+            "string": "Torsdag"
+          },
+          "friday": {
+            "string": "Fredag"
+          },
+          "saturday": {
+            "string": "Lørdag"
+          },
+          "sunday": {
+            "string": "Søndag"
+          }
+        }
+      },
+      "response": {
+        "interval_days": {
+          "label": {
+            "string": "Minimum antall dager mellom automatiske svar"
+          },
+          "placeholder": {
+            "string": "La feltet stå tomt for standard oppførsel"
+          },
+          "description": {
+            "string": "Forhindrer sending av dupliserte feriesvar innenfor denne perioden (RFC 5230 :dager)."
+          }
+        },
+        "send_always": {
+          "label": {
+            "string": "Send alltid feriemelding som svar"
+          },
+          "description": {
+            "string": "Feriemeldingen sendes før filterne dine blir brukt."
+          }
+        }
+      }
+    }
+  }
+}

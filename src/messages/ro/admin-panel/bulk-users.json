@@ -1,0 +1,61 @@
+{
+  "AP_BULK": {
+    "title": {
+      "string": "Gestionarea în masă a utilizatorilor"
+    },
+    "description": {
+      "string": "Importă și exportă utilizatori în masă folosind fișiere CSV."
+    },
+    "export": {
+      "title": {
+        "string": "Exportă utilizatori"
+      },
+      "description": {
+        "string": "Descarcă toți utilizatorii sub formă de fișier CSV."
+      },
+      "format": {
+        "string": "Fișier CSV (.csv)"
+      },
+      "button": {
+        "string": "Exportă CSV"
+      },
+      "success": {
+        "string": "Export descărcat"
+      },
+      "error": {
+        "string": "Export eșuat"
+      }
+    },
+    "import": {
+      "title": {
+        "string": "Importă utilizatori"
+      },
+      "description": {
+        "string": "Încarcă un fișier CSV cu datele utilizatorilor pentru a crea sau actualiza conturi."
+      },
+      "dropzone": {
+        "string": "Apasă pentru a încărca CSV"
+      },
+      "button": {
+        "string": "Importă CSV"
+      },
+      "remove": {
+        "string": "Elimină fișierul"
+      },
+      "success": {
+        "string": "Importat: {created} creați, {updated} actualizați"
+      },
+      "error": {
+        "string": "Import eșuat"
+      }
+    },
+    "format": {
+      "title": {
+        "string": "Format CSV"
+      },
+      "hint": {
+        "string": "Primul rând trebuie să fie antetul. uid, cn, sn, givenName, mail sunt obligatorii. password este opțional (aleatoriu dacă este gol)."
+      }
+    }
+  }
+}

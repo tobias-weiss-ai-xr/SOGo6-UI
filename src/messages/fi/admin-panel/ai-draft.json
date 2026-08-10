@@ -1,0 +1,40 @@
+{
+  "AI_DRAFT": {
+    "title": {
+      "string": "AI-luonnosavustaja"
+    },
+    "description": {
+      "string": "Vastausehdotukset sävyasetuksilla. Luo kontekstuaalisia luonnosvastauksia."
+    },
+    "input": {
+      "title": {
+        "string": "Alkuperäinen sähköposti"
+      },
+      "email": {
+        "string": "Sähköpostin sisältö"
+      },
+      "placeholder": {
+        "string": "Liitä tähän sähköposti, johon haluat vastata..."
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Ehdotettu vastaus"
+      },
+      "empty": {
+        "string": "Syötä sähköpostiteksti ja valitse sävy"
+      }
+    },
+    "suggest": {
+      "string": "Ehdota vastaus"
+    },
+    "errors": {
+      "empty": {
+        "string": "Syötä sähköpostiteksti"
+      },
+      "fail": {
+        "string": "Ehdotuksen luominen epäonnistui"
+      }
+    }
+  }
+}

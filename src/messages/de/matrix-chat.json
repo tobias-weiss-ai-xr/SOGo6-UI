@@ -1,0 +1,71 @@
+{
+  "MATRIX": {
+    "title": {
+      "string": "Matrix-Chat-Integration"
+    },
+    "description": {
+      "string": "Eingebettete Matrix-Räume und SOGo-Benutzer-Verknüpfung"
+    },
+    "errors": {
+      "name": {
+        "string": "Name erforderlich"
+      },
+      "fail": {
+        "string": "Vorgang fehlgeschlagen"
+      }
+    },
+    "success": {
+      "config": {
+        "string": "Konfiguration gespeichert"
+      },
+      "room": {
+        "string": "Raum erstellt"
+      }
+    },
+    "config": {
+      "title": {
+        "string": "Serverkonfiguration"
+      },
+      "enabled": {
+        "string": "Aktiviert"
+      },
+      "bridge": {
+        "string": "Bridge"
+      }
+    },
+    "rooms": {
+      "title": {
+        "string": "Chat-Räume"
+      },
+      "name": {
+        "placeholder": {
+          "string": "Raumname..."
+        }
+      },
+      "visibility": {
+        "private": {
+          "string": "Privat"
+        },
+        "public": {
+          "string": "Öffentlich"
+        }
+      },
+      "button": {
+        "save": {
+          "string": "Speichern"
+        },
+        "create": {
+          "string": "Raum erstellen"
+        }
+      }
+    },
+    "links": {
+      "title": {
+        "string": "Benutzer-Links"
+      },
+      "empty": {
+        "string": "Keine verknüpften Benutzer"
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "FORM_ERRORS": {
+    "required": {
+      "default": {
+        "string": "필수 입력 항목입니다"
+      }
+    },
+    "invalid": {
+      "email": {
+        "string": "유효하지 않은 이메일 주소입니다"
+      }
+    }
+  }
+}

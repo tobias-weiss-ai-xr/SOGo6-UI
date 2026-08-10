@@ -1,0 +1,108 @@
+{
+  "ADDRESS_BOOKS_ERRORS": {
+    "list_member_invalid": {
+      "string": "Satu atau lebih anggota yang dipilih bukan kontak di buku alamat ini.",
+      "context": "Inline error when a distribution list member is invalid."
+    },
+    "addressbook_not_found": {
+      "string": "Buku alamat tidak ditemukan.",
+      "context": "Error when an address book is missing."
+    },
+    "addressbook_duplicate": {
+      "string": "Buku alamat dengan nama ini sudah ada.",
+      "context": "Toast when address book creation conflicts."
+    },
+    "contact_not_found": {
+      "string": "Kontak tidak ditemukan.",
+      "context": "Error when a contact is missing."
+    },
+    "contact_duplicate": {
+      "string": "Kontak dengan pengenal ini sudah ada.",
+      "context": "Toast when contact creation conflicts."
+    },
+    "contact_persist_failed": {
+      "string": "Kontak tidak dapat disimpan.",
+      "context": "Error when contact creation fails on the server."
+    },
+    "contact_update_failed": {
+      "string": "Kontak tidak dapat diperbarui.",
+      "context": "Error when contact update fails on the server."
+    },
+    "operation_not_supported": {
+      "string": "Operasi ini tidak didukung untuk buku alamat ini.",
+      "context": "Error when mutating a non-local address book source."
+    },
+    "list_not_found": {
+      "string": "Daftar distribusi tidak ditemukan.",
+      "context": "Error when a distribution list is missing."
+    },
+    "list_duplicate": {
+      "string": "Daftar distribusi dengan nama ini sudah ada.",
+      "context": "Toast when list creation conflicts."
+    },
+    "list_persist_failed": {
+      "string": "Daftar distribusi tidak dapat disimpan.",
+      "context": "Error when list creation fails on the server."
+    },
+    "list_update_failed": {
+      "string": "Daftar distribusi tidak dapat diperbarui.",
+      "context": "Error when list update fails on the server."
+    },
+    "access_denied": {
+      "string": "Anda tidak memiliki izin untuk memodifikasi buku alamat ini.",
+      "context": "Toast when write access is denied."
+    },
+    "read_only": {
+      "string": "Buku alamat ini hanya bisa dibaca.",
+      "context": "Toast when mutating a read-only address book."
+    },
+    "export_format_unsupported": {
+      "string": "Format ekspor yang dipilih tidak didukung.",
+      "context": "Error when export format negotiation fails."
+    },
+    "import_no_file": {
+      "string": "Tidak ada file yang disediakan untuk impor.",
+      "context": "Error when import request has no file."
+    },
+    "import_too_large": {
+      "string": "File impor melebihi ukuran maksimum yang diizinkan (10 MB).",
+      "context": "Error when import payload is too large."
+    },
+    "import_parse_failed": {
+      "string": "File impor tidak dapat diuraikan.",
+      "context": "Error when import document parsing fails."
+    },
+    "job_not_found": {
+      "string": "Pekerjaan latar belakang tidak ditemukan.",
+      "context": "Error when polling an unknown job."
+    },
+    "job_forbidden": {
+      "string": "Anda tidak memiliki akses ke pekerjaan latar belakang ini.",
+      "context": "Error when job belongs to another user."
+    },
+    "job_not_ready": {
+      "string": "Eksport belum siap. Harap tunggu dan coba lagi.",
+      "context": "Error when downloading a job result too early."
+    },
+    "job_no_result": {
+      "string": "Tugas ini tidak memiliki hasil yang dapat diunduh.",
+      "context": "Error when job result is unavailable."
+    },
+    "job_concurrent_limit": {
+      "string": "Terlalu banyak tugas latar belakang sedang berjalan. Harap coba lagi nanti.",
+      "context": "Error when concurrent job limit is reached."
+    },
+    "file_too_large": {
+      "string": "Foto melebihi ukuran maksimum yang diizinkan (2 MB).",
+      "context": "Inline error when contact photo upload is too large."
+    },
+    "file_type_not_allowed": {
+      "string": "Jenis file ini tidak diizinkan untuk foto kontak.",
+      "context": "Inline error when contact photo type is not allowed."
+    },
+    "generic": {
+      "string": "Operasi tidak dapat diselesaikan. Harap coba lagi.",
+      "context": "Fallback error message for contact API errors."
+    }
+  }
+}

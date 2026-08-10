@@ -1,0 +1,40 @@
+{
+  "AI_DRAFT": {
+    "title": {
+      "string": "AI Vázlatasszisztens"
+    },
+    "description": {
+      "string": "Válaszjavaslatok hangnem beállításával. Kontextuális vázlatválaszok generálása."
+    },
+    "input": {
+      "title": {
+        "string": "Eredeti e-mail"
+      },
+      "email": {
+        "string": "E-mail szövege"
+      },
+      "placeholder": {
+        "string": "Illessze be az e-mailt, amire válaszolni szeretne..."
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Javasolt válasz"
+      },
+      "empty": {
+        "string": "Adja meg az e-mail szövegét és válasszon egy hangnemet"
+      }
+    },
+    "suggest": {
+      "string": "Válasz javaslata"
+    },
+    "errors": {
+      "empty": {
+        "string": "Adja meg az e-mail szövegét"
+      },
+      "fail": {
+        "string": "A javaslat sikertelen"
+      }
+    }
+  }
+}

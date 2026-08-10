@@ -1,0 +1,65 @@
+{
+  "MOBILE": {
+    "title": {
+      "string": "Administrasjon av mobilapp"
+    },
+    "description": {
+      "string": "Administrer registrerte enheter, push-varsler og appkonfigurasjon"
+    },
+    "errors": {
+      "fail": {
+        "string": "Operasjonen mislyktes"
+      }
+    },
+    "success": {
+      "unregister": {
+        "string": "Enhet avregistrert"
+      },
+      "broadcast": {
+        "string": "Push-varsel sendt"
+      }
+    },
+    "config": {
+      "title": {
+        "string": "App-innstillinger"
+      },
+      "push": {
+        "string": "Push-varsler"
+      },
+      "biometric": {
+        "string": "Biometrisk autentisering"
+      }
+    },
+    "push": {
+      "title": {
+        "placeholder": {
+          "string": "Varseltittel"
+        }
+      },
+      "message": {
+        "placeholder": {
+          "string": "Melding..."
+        }
+      },
+      "broadcast": {
+        "string": "Send"
+      }
+    },
+    "stats": {
+      "title": {
+        "string": "Statistikk"
+      },
+      "devices": {
+        "string": "Registrerte enheter"
+      }
+    },
+    "devices": {
+      "title": {
+        "string": "Alle enheter"
+      },
+      "empty": {
+        "string": "Ingen enheter registrert ennå"
+      }
+    }
+  }
+}

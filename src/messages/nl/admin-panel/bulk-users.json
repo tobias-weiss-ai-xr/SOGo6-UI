@@ -1,0 +1,61 @@
+{
+  "AP_BULK": {
+    "title": {
+      "string": "Bulkgebruikersbeheer"
+    },
+    "description": {
+      "string": "Importeer en exporteer gebruikers in bulk met CSV-bestanden."
+    },
+    "export": {
+      "title": {
+        "string": "Gebruikers exporteren"
+      },
+      "description": {
+        "string": "Download alle gebruikers als een CSV-bestand."
+      },
+      "format": {
+        "string": "CSV-bestand (.csv)"
+      },
+      "button": {
+        "string": "Exporteer CSV"
+      },
+      "success": {
+        "string": "Export gedownload"
+      },
+      "error": {
+        "string": "Export mislukt"
+      }
+    },
+    "import": {
+      "title": {
+        "string": "Gebruikers importeren"
+      },
+      "description": {
+        "string": "Upload een CSV-bestand met gebruikersgegevens om accounts aan te maken of bij te werken."
+      },
+      "dropzone": {
+        "string": "Klik om CSV te uploaden"
+      },
+      "button": {
+        "string": "Importeer CSV"
+      },
+      "remove": {
+        "string": "Bestand verwijderen"
+      },
+      "success": {
+        "string": "Geïmporteerd: {created} aangemaakt, {updated} bijgewerkt"
+      },
+      "error": {
+        "string": "Import mislukt"
+      }
+    },
+    "format": {
+      "title": {
+        "string": "CSV-indeling"
+      },
+      "hint": {
+        "string": "Eerste rij moet de koptekst zijn. uid, cn, sn, givenName, mail zijn verplicht. password is optioneel (willekeurig als leeg)."
+      }
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "AP_BULK": {
+    "title": {
+      "string": "Zarządzanie użytkownikami zbiorczo"
+    },
+    "description": {
+      "string": "Importuj i eksportuj użytkowników zbiorczo przy użyciu plików CSV."
+    },
+    "export": {
+      "title": {
+        "string": "Eksportuj użytkowników"
+      },
+      "description": {
+        "string": "Pobierz wszystkich użytkowników jako plik CSV."
+      },
+      "format": {
+        "string": "Plik CSV (.csv)"
+      },
+      "button": {
+        "string": "Eksportuj CSV"
+      },
+      "success": {
+        "string": "Eksport pobrany"
+      },
+      "error": {
+        "string": "Eksport nie powiódł się"
+      }
+    },
+    "import": {
+      "title": {
+        "string": "Importuj użytkowników"
+      },
+      "description": {
+        "string": "Prześlij plik CSV z danymi użytkowników, aby utworzyć lub zaktualizować konta."
+      },
+      "dropzone": {
+        "string": "Kliknij, aby przesłać plik CSV"
+      },
+      "button": {
+        "string": "Importuj CSV"
+      },
+      "remove": {
+        "string": "Usuń plik"
+      },
+      "success": {
+        "string": "Zaimportowano: {created} utworzonych, {updated} zaktualizowanych"
+      },
+      "error": {
+        "string": "Import nie powiódł się"
+      }
+    },
+    "format": {
+      "title": {
+        "string": "Format CSV"
+      },
+      "hint": {
+        "string": "Pierwszy wiersz musi być nagłówkiem. Wymagane: uid, cn, sn, givenName, mail. Opcjonalne: password (losowe, jeśli puste)."
+      }
+    }
+  }
+}

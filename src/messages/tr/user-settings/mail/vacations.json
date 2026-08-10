@@ -1,0 +1,133 @@
+{
+  "US_MAIL_VACATIONS": {
+    "title": {
+      "string": "Tatil Ayarları",
+      "context": "Title for the vacation settings page"
+    },
+    "page": {
+      "description": {
+        "string": "Ofis dışı otomatik yanıt mesajınızı ve ne zaman aktif olacağını yapılandırın."
+      }
+    },
+    "errors_api": {
+      "load_failed": {
+        "string": "Tatil ayarları yüklenemedi. Lütfen daha sonra tekrar deneyin."
+      },
+      "feature_disabled": {
+        "string": "Tatil otomatik yanıtı yöneticiniz tarafından devre dışı bırakıldı."
+      }
+    },
+    "errors": {
+      "validation": {
+        "message_required": {
+          "string": "Tatil etkinleştirildiğinde otomatik yanıt mesajı gereklidir."
+        },
+        "dates_required": {
+          "string": "Tarih kısıtlamaları etkinleştirildiğinde başlangıç ve bitiş tarihleri gereklidir."
+        },
+        "date_order": {
+          "string": "Bitiş tarihi, başlangıç tarihinden önce veya aynı gün olmalıdır."
+        },
+        "time_invalid": {
+          "string": "Lütfen geçerli bir saat girin (SS:DD formatında)."
+        },
+        "weekday_required": {
+          "string": "Hafta içi kısıtlamaları etkinleştirildiğinde en az bir hafta günü seçin."
+        },
+        "response_interval_invalid": {
+          "string": "Yanıt aralığı sıfır veya pozitif bir sayı olmalıdır."
+        },
+        "response_interval_zero": {
+          "string": "Sıfır günlük yanıt aralığı bu alanda izin verilmemektedir."
+        }
+      }
+    },
+    "auto_reply": {
+      "enable": {
+        "string": "Tatil otomatik yanıtını etkinleştir"
+      },
+      "subject": {
+        "label": {
+          "string": "Otomatik yanıt konusu"
+        },
+        "description": {
+          "string": "Varsayılan konuyu kullanmak için boş bırakın. Orijinal konuyu eklemek için {subject} yazabilirsiniz."
+        }
+      },
+      "message": {
+        "string": "Otomatik yanıt mesajı"
+      },
+      "constraints": {
+        "title": {
+          "string": "Etkinleştirme kısıtlamaları"
+        },
+        "description": {
+          "string": "Gün ve saat aralıklarını bağımsız olarak özelleştirin ve isteğe bağlı olarak bunları belirli hafta günleriyle birleştirerek tatil filtrelerinizi tercihlerinize göre uyarlayın."
+        },
+        "enable": {
+          "days": {
+            "string": "Bu günlerde otomatik yanıtı etkinleştir"
+          },
+          "hours": {
+            "string": "Bu saatler arasında otomatik yanıtı etkinleştir"
+          },
+          "range": {
+            "string": "Bu tarihler arasında otomatik yanıtı etkinleştir"
+          }
+        },
+        "time": {
+          "start": {
+            "string": "Başlangıç saati"
+          },
+          "end": {
+            "string": "Bitiş saati"
+          }
+        },
+        "weekdays": {
+          "monday": {
+            "string": "Pazartesi"
+          },
+          "tuesday": {
+            "string": "Salı"
+          },
+          "wednesday": {
+            "string": "Çarşamba"
+          },
+          "thursday": {
+            "string": "Perşembe"
+          },
+          "friday": {
+            "string": "Cuma"
+          },
+          "saturday": {
+            "string": "Cumartesi"
+          },
+          "sunday": {
+            "string": "Pazar"
+          }
+        }
+      },
+      "response": {
+        "interval_days": {
+          "label": {
+            "string": "Otomatik yanıtlar arasındaki minimum gün sayısı"
+          },
+          "placeholder": {
+            "string": "Varsayılan davranış için boş bırakın"
+          },
+          "description": {
+            "string": "Bu süre içinde yinelenen tatil yanıtlarının gönderilmesini engeller (RFC 5230 :days)."
+          }
+        },
+        "send_always": {
+          "label": {
+            "string": "Tatil mesajını her zaman gönder"
+          },
+          "description": {
+            "string": "Tatil mesajı, filtrelerinizin uygulanmasından önce gönderilir."
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "AP_HEALTH": {
+    "title": {
+      "string": "Systemintegrität"
+    },
+    "description": {
+      "string": "Echtzeit-Status aller Dienste im SOGo-Stack."
+    },
+    "status": {
+      "all_ok": {
+        "string": "Alle Systeme betriebsbereit"
+      },
+      "degraded": {
+        "string": "Degraded"
+      }
+    },
+    "overview": {
+      "uptime": {
+        "string": "Verfügbarkeit"
+      },
+      "version": {
+        "string": "Version"
+      },
+      "services": {
+        "string": "Services Healthy"
+      }
+    },
+    "errors": {
+      "load_failed": {
+        "string": "Failed to load health data"
+      }
+    }
+  }
+}

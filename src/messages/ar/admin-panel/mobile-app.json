@@ -1,0 +1,65 @@
+{
+  "MOBILE": {
+    "title": {
+      "string": "إدارة تطبيق الجوال"
+    },
+    "description": {
+      "string": "إدارة الأجهزة المسجلة والإشعارات الفورية وإعدادات التطبيق"
+    },
+    "errors": {
+      "fail": {
+        "string": "فشل العملية"
+      }
+    },
+    "success": {
+      "unregister": {
+        "string": "تم إلغاء تسجيل الجهاز"
+      },
+      "broadcast": {
+        "string": "تم إرسال الإشعار الفوري"
+      }
+    },
+    "config": {
+      "title": {
+        "string": "إعدادات التطبيق"
+      },
+      "push": {
+        "string": "الإشعارات الفورية"
+      },
+      "biometric": {
+        "string": "المصادقة البيومترية"
+      }
+    },
+    "push": {
+      "title": {
+        "placeholder": {
+          "string": "عنوان الإشعار"
+        }
+      },
+      "message": {
+        "placeholder": {
+          "string": "الرسالة..."
+        }
+      },
+      "broadcast": {
+        "string": "إرسال"
+      }
+    },
+    "stats": {
+      "title": {
+        "string": "الإحصائيات"
+      },
+      "devices": {
+        "string": "الأجهزة المسجلة"
+      }
+    },
+    "devices": {
+      "title": {
+        "string": "جميع الأجهزة"
+      },
+      "empty": {
+        "string": "لم يتم تسجيل أي أجهزة بعد"
+      }
+    }
+  }
+}

@@ -62,6 +62,15 @@ jest.mock('../mail-label-picker-dialog', () => ({
   default: () => null,
 }))
 
+jest.mock('@/features/mails/store/snooze-api', () => ({
+  useSnoozeMailsMutation: () => [jest.fn(), { isLoading: false }],
+}))
+
+jest.mock('../snooze-dialog', () => ({
+  __esModule: true,
+  default: () => null,
+}))
+
 jest.mock('@/components/ui/buttons/tooltip-button', () => ({
   TooltipButton: ({ children, onClick, disabled, 'data-testid': testId }: any) => (
     <button onClick={onClick} disabled={disabled} data-testid={testId}>

@@ -1,0 +1,1285 @@
+{
+  "AP_DOMAIN_CONFIGURATION": {
+    "origin": {
+      "rule": {
+        "string": "(fra regel {origin})"
+      },
+      "default": {
+        "string": "(fra standardkonfigurasjon)"
+      },
+      "domain": {
+        "string": "(fra domene {origin})"
+      }
+    },
+    "tabs": {
+      "auth_settings": {
+        "string": "Autentiseringsinnstillinger"
+      },
+      "user_source": {
+        "string": "Brukerkilde"
+      },
+      "user_module_settings": {
+        "string": "Bruker- og modulinnstillinger"
+      },
+      "mail_settings": {
+        "string": "E-postinnstillinger"
+      },
+      "calendar_contact_settings": {
+        "string": "Kalender- og kontaktinnstillinger"
+      }
+    },
+    "properties": {
+      "SOGO_D_AUTH_TYPE": {
+        "name": {
+          "string": "Autentiseringstype"
+        },
+        "description": {
+          "string": "Velg autentiseringsmetode for brukere. 'Plain' betyr klassisk brukernavn/passord"
+        },
+        "developer_comment": "Options might include LDAP, SQL, etc."
+      },
+      "SOGO_D_CAS_URL": {
+        "name": {
+          "string": "URL til CAS-serveren"
+        },
+        "description": {
+          "string": "Skriv inn full URL til CAS-serveren din"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_CAS_LOGOUT_ENABLED": {
+        "name": {
+          "string": "Aktiver utlogging med CAS"
+        },
+        "description": {
+          "string": "Huk av for å tillate brukere å logge ut fra SOGo og CAS-serveren"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_OPENID_CONFIG_URL": {
+        "name": {
+          "string": "URL til OpenID-leverandørens endepunkt"
+        },
+        "description": {
+          "string": "Eksempel: https://myopenid.net/.well-known/openid-configuration"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_OPENID_CLIENT_NAME": {
+        "name": {
+          "string": "OpenID-klientnavn"
+        },
+        "description": {
+          "string": "Navn på OpenID-klienten din"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_OPENID_CLIENT_SECRET": {
+        "name": {
+          "string": "OpenID-klienthemmelighet"
+        },
+        "description": {
+          "string": "Hemmeligheten til OpenID-klienten din"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_OPENID_SCOPE": {
+        "name": {
+          "string": "OpenID-klientens omfang"
+        },
+        "description": {
+          "string": "Omfang for OpenID-klienten. Standard er 'openid profile email'."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_OPENID_EMAIL": {
+        "name": {
+          "string": "Brukerens e-postnøkkel"
+        },
+        "description": {
+          "string": "Nøkkel der brukerens e-post finnes i brukerprofilen."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_OPENID_TOKEN_CHECK_INTERVAL": {
+        "name": {
+          "string": "Intervall for tokenvalidering"
+        },
+        "description": {
+          "string": "For å begrense antall forespørsler til OpenID-serveren for å sjekke tokenets gyldighet, sett et intervall i sekunder der tokenet ikke sjekkes på nytt etter en vellykket validering. 0 betyr at tokenet alltid sjekkes. 60 betyr at tokenet ikke sjekkes på nytt i 60 sekunder etter en vellykket validering."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_OPENID_REFRESH_ENABLE": {
+        "name": {
+          "string": "Tillat oppdatering av token"
+        },
+        "description": {
+          "string": "Hvis OpenID-serveren støtter oppdatering av token, vil SOGo bruke dette."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_OPENID_ENDSESSION_ENABLED": {
+        "name": {
+          "string": "Aktiver avslutning av økt fra OpenID-server"
+        },
+        "description": {
+          "string": "Som standard kan brukerne bare logge ut fra webmail. Merk av dette for også å logge ut fra OpenID-serveren, noe som betyr at brukeren vil bli logget ut fra alle applikasjoner som bruker OpenID-serveren. Fungerer bare hvis OpenID-serveren har en end_session_endpoint."
+        },
+        "developer_comment": ""
+      },
+      "SOGo_D_OPENID_FETCH_USER_PROFILE": {
+        "name": {
+          "string": "Hent brukerprofil"
+        },
+        "description": {
+          "string": "Som standard henter SOGo brukerprofilen for å få brukerens e-post. Fjern merket for å hente e-posten direkte fra tokenet. Fjern merket hvis du bruker Microsofts Active Directory Federation Service (AD FS)."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SAML2_URL": {
+        "name": {
+          "string": "SAML2 ER IKKE FERDIG ENNÅ!!!"
+        },
+        "description": {
+          "string": "Lykke til til den som skal gjøre dette..."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_PWD_CHANGE_ENABLED": {
+        "name": {
+          "string": "Aktiver endring av passord"
+        },
+        "description": {
+          "string": "Tillat brukere å endre passordet sitt fra SOGo. Sørg for at brukerkilden gir brukerne rettigheter til å utføre denne handlingen."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_LOGIN_CHECK_MAX_ATTEMPT": {
+        "name": {
+          "string": "Maks antall mislykkede innloggingsforsøk"
+        },
+        "description": {
+          "string": "Angi hvor mange ganger en bruker kan mislykkes med innlogging før de blir blokkert. 0 betyr ingen grense."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_LOGIN_CHECK_TIME_SPAN": {
+        "name": {
+          "string": "Tidsrom for mislykkede innloggingsforsøk"
+        },
+        "description": {
+          "string": "Angi tidsrommet i sekunder for å telle mislykkede forsøk. Eksempel: 60 betyr at brukeren bare kan mislykkes opp til 'Maks antall mislykkede innloggingsforsøk' innen 60 sekunder etter det første mislykkede forsøket, før de blir blokkert."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_LOGIN_CHECK_BLOCK_TIME": {
+        "name": {
+          "string": "Blokkeringstid ved mislykkede innloggingsforsøk"
+        },
+        "description": {
+          "string": "Angi hvor lenge (i sekunder) brukeren blir blokkert etter for mange mislykkede forsøk."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_PWD_RECOVERY": {
+        "name": {
+          "string": "Aktiver passordgjenoppretting"
+        },
+        "description": {
+          "string": "Tillat brukeren å velge en metode for passordgjenoppretting"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_PWD_RECOVERY_METHOD": {
+        "name": {
+          "string": "Tilgjengelige metoder for passordgjenoppretting"
+        },
+        "description": {
+          "string": "Velg hvilke metoder for passordgjenoppretting som skal være tilgjengelige for brukerne"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_PWD_RECOVERY_FORCE": {
+        "name": {
+          "string": "Påkrev passordgjenoppretting"
+        },
+        "description": {
+          "string": "Tving brukerne til å opprette en metode for passordgjenoppretting."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_PWD_RECOVERY_DELAY": {
+        "name": {
+          "string": "Forsinkelse mellom passordgjenopprettinger"
+        },
+        "description": {
+          "string": "Forsinkelse i sekunder før en bruker kan be om passordgjenoppretting på nytt."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_LOGIN_MFA": {
+        "name": {
+          "string": "Aktiver MFA"
+        },
+        "description": {
+          "string": "Tillat brukeren å opprette flerfaktorautentisering"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_LOGIN_MFA_METHOD": {
+        "name": {
+          "string": "Tilgjengelige MFA-metoder"
+        },
+        "description": {
+          "string": "Velg hvilke metoder for flerfaktorautentisering som skal være tilgjengelige for brukerne"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_LOGIN_MFA_FORCE": {
+        "name": {
+          "string": "Påkrev MFA"
+        },
+        "description": {
+          "string": "Tving brukerne til å opprette MFA"
+        },
+        "developer_comment": ""
+      },
+      "US_UID": {
+        "name": {
+          "string": "Brukerkilde-UID"
+        },
+        "description": {
+          "string": "Velg et unikt navn for denne brukerkilden (vises ikke for brukere)"
+        },
+        "developer_comment": "Only for SOGo to differentiate differents User SOurce"
+      },
+      "US_TYPE": {
+        "name": {
+          "string": "Type brukerkilde"
+        },
+        "description": {
+          "string": "Angi typen brukerkilde"
+        },
+        "developer_comment": "Only ldap and sql supported for now"
+      },
+      "US_LDAP_HOSTNAME": {
+        "name": {
+          "string": "LDAP-server vertsnavn"
+        },
+        "description": {
+          "string": "Angi kun vert og port, ikke legg til annen informasjon"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_BIND_DN": {
+        "name": {
+          "string": "Bind-DN"
+        },
+        "description": {
+          "string": "DN-en til påloggingsnavnet som skal brukes for binding til serveren."
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_BIND_DN_PWD": {
+        "name": {
+          "string": "Bind-DN-passord"
+        },
+        "description": {
+          "string": "Passordet for Bind-DN-en"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_BASE_DN": {
+        "name": {
+          "string": "Base-DN"
+        },
+        "description": {
+          "string": "Base-DN for brukeroppslag. Hvis e-postdomenet er her, kan du legge til '%d' for å dynamisk legge det til fra brukerens e-post, f.eks.: 'ou=%d,dc=example,dc=com'"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_UID": {
+        "name": {
+          "string": "UID-felt"
+        },
+        "description": {
+          "string": "Felt med brukerens påloggingsnavn. Påloggingsnavnet må være unikt på tvers av alle brukerkilder og domener"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_CN": {
+        "name": {
+          "string": "CN-felt"
+        },
+        "description": {
+          "string": "Felt med brukerens fullstendige navn"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_ID": {
+        "name": {
+          "string": "ID-felt"
+        },
+        "description": {
+          "string": "Felt som starter en bruker-DN hvis Bind-felt ikke brukes (eksempel: hvis du har 'dn: uid=sogo,ou=users,dc=example,dc=org', bør denne verdien være 'uid')"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_SCOPE": {
+        "name": {
+          "string": "LDAP-søkeomfang"
+        },
+        "description": {
+          "string": "Angir settet med oppføringer på eller under Base-DN som kan være potensielle treff for en søkeforespørsel"
+        },
+        "developer_comment": "https://ldapwiki.com/wiki/Wiki.jsp?page=LDAP%20Search%20Scopes"
+      },
+      "US_LDAP_FILTER": {
+        "name": {
+          "string": "LDAP-filter"
+        },
+        "description": {
+          "string": "Tilleggsfilter for LDAP-spørringer. Bruk '=', '!=', 'AND', 'OR' og parenteser. Eksempel: '(objectClass='mailUser' OR objectClass!='mailGroup') AND accountStatus='active'"
+        },
+        "developer_comment": "Use SOGo's syntax and not ldap syntax for filter"
+      },
+      "US_LDAP_PWD_POLICY": {
+        "name": {
+          "string": "LDAP-passordpolicy"
+        },
+        "description": {
+          "string": "Angir at LDAP-serveren har passordpolicy med utløpsdato og inngangsperiode"
+        },
+        "developer_comment": "https://ldapwiki.com/wiki/Wiki.jsp?page=Password%20Policy"
+      },
+      "US_LDAP_PWD_UPDATE_SAMBA": {
+        "name": {
+          "string": "Oppdater Samba-passord via LDAP"
+        },
+        "description": {
+          "string": "Hvis en bruker endrer passord, oppdateres også sambaNTPassword og sambaLMPassword"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_BIND_AS_USER": {
+        "name": {
+          "string": "Bind som bruker"
+        },
+        "description": {
+          "string": "Etter autentisering, bruk brukerens DN for binding i stedet"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_BIND_FIELD": {
+        "name": {
+          "string": "Ekstra bind-felter"
+        },
+        "description": {
+          "string": "Ekstra felter å bruke under binding. Eksempel: hvis du legger til 'mail', vil bindingen også inkludere 'mail=<innlogging>'"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_ATTR_FIELD": {
+        "name": {
+          "string": "Attributtfelter"
+        },
+        "description": {
+          "string": "Attributtfelter som returneres under søk. Standard er '*' (alle). Vær forsiktig, da dette kan påvirke SOGo-ytelsen betydelig"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_GROUP_CLASS": {
+        "name": {
+          "string": "LDAP Gruppeklasse"
+        },
+        "description": {
+          "string": "Angi LDAP-klassen som indikerer for SOGo at dette er en gruppe og ikke en enkeltbruker"
+        },
+        "developer_comment": ""
+      },
+      "US_SQL_USER_URL": {
+        "name": {
+          "string": "SQL Bruker-URL"
+        },
+        "description": {
+          "string": "Database-URL til brukertabellen. Eksempel: postgresql://sogo:sogo@127.0.0.1:5432/sogo/sogo_user"
+        },
+        "developer_comment": ""
+      },
+      "US_SQL_PREPEND_PWD_SCHEME": {
+        "name": {
+          "string": "SQL Passordskjema"
+        },
+        "description": {
+          "string": "Huk av JA hvis passordet lagres i databasen på formatet {skjema}kryptertVerdi"
+        },
+        "developer_comment": ""
+      },
+      "US_SQL_USER_FILTER": {
+        "name": {
+          "string": "SQL Brukerfilter"
+        },
+        "description": {
+          "string": "Ekstra WHERE-betingelser som legges til SQL-spørringen. Eksempel: 'active=1'"
+        },
+        "developer_comment": ""
+      },
+      "US_SQL_DOMAIN_FIELD": {
+        "name": {
+          "string": "SQL Brukerdomene"
+        },
+        "description": {
+          "string": "Angi kolonnenavn der brukerens domene lagres. Hvis satt, vil hver SQL-spørring legge til '<domene_kolonne> = <brukerdomene>' i WHERE-betingelsen"
+        },
+        "developer_comment": ""
+      },
+      "US_MAPPING": {
+        "name": {
+          "string": "Kildekartlegging for bruker"
+        },
+        "description": {
+          "string": "Koble brukerkildens felt til kontaktattributter"
+        },
+        "developer_comment": ""
+      },
+      "US_CAN_AUTH": {
+        "name": {
+          "string": "Kan autentisere"
+        },
+        "description": {
+          "string": "Brukere fra denne brukerkilden kan logge inn på webmail"
+        },
+        "developer_comment": ""
+      },
+      "US_PWD_ALGO": {
+        "name": {
+          "string": "Passordalgoritme for brukerkilde"
+        },
+        "description": {
+          "string": "Passordalgoritme brukt av denne brukerkilden. Obligatorisk for en SQL-brukerkilde. Valgfritt for LDAP: bare nødvendig hvis du tillater brukere å endre passordet sitt"
+        },
+        "developer_comment": ""
+      },
+      "US_SIM_KEY_TYPE": {
+        "name": {
+          "string": "Type symmetrisk nøkkel for passordalgoritme"
+        },
+        "description": {
+          "string": "Angir hvordan den symmetriske nøkkelen for passordalgoritmen lagres"
+        },
+        "developer_comment": ""
+      },
+      "US_SIM_KEY_VALUE": {
+        "name": {
+          "string": "Verdi for symmetrisk nøkkel for passordalgoritme"
+        },
+        "description": {
+          "string": "Verdien avhenger av typen.\nHvis 'sti', skriv inn filbanen der SOGo finner den symmetriske nøkkelen.\nHvis 'env', angi navnet på miljøvariabelen der nøkkelen er lagret.\nHvis 'ren tekst', skriv inn nøkkelen direkte her"
+        },
+        "developer_comment": ""
+      },
+      "US_PWD_POLICY": {
+        "name": {
+          "string": "Passordpolicy for bruker"
+        },
+        "description": {
+          "string": "Huk av for å legge til en policy for brukerens passord. Denne policyen vil bli brukt når brukeren endrer passordet eller hvis du aktiverer 'sjekk passordstyrke ved innlogging'"
+        },
+        "developer_comment": ""
+      },
+      "US_PWD_LEN_MIN": {
+        "name": {
+          "string": "Minimumslengde for brukerpassord"
+        },
+        "description": {
+          "string": "Minimumslengde for et brukerpassord, inklusiv. Minimum 4 tegn"
+        },
+        "developer_comment": ""
+      },
+      "US_PWD_LEN_MAX": {
+        "name": {
+          "string": "Maksimumslengde for brukerpassord"
+        },
+        "description": {
+          "string": "Maksimumslengde for et brukerpassord, inklusiv. 0 betyr ingen grense"
+        },
+        "developer_comment": ""
+      },
+      "US_PWD_UPPERCASE_MIN": {
+        "name": {
+          "string": "Minimum antall store bokstaver i passord"
+        },
+        "description": {
+          "string": "Minimum antall store bokstaver. 0 betyr ingen grense"
+        },
+        "developer_comment": ""
+      },
+      "US_PWD_LOWERCASE_MIN": {
+        "name": {
+          "string": "Minimum antall små bokstaver i passord"
+        },
+        "description": {
+          "string": "Minimum antall små bokstaver. 0 betyr ingen grense"
+        },
+        "developer_comment": ""
+      },
+      "US_PWD_DIGITS_MIN": {
+        "name": {
+          "string": "Minimum antall sifre i passord"
+        },
+        "description": {
+          "string": "Minimum antall sifre. 0 betyr ingen grense"
+        },
+        "developer_comment": ""
+      },
+      "US_PWD_SPECIAL_ALLOWED": {
+        "name": {
+          "string": "Tillatte spesialtegn i brukerpassord"
+        },
+        "description": {
+          "string": "Liste over spesialtegn som er tillatt i passord"
+        },
+        "developer_comment": ""
+      },
+      "US_PWD_SPECIAL_MIN": {
+        "name": {
+          "string": "Minimum antall spesialtegn i brukerpassord"
+        },
+        "description": {
+          "string": "Minimum antall forekomster av spesialtegn. 0 betyr ingen grense"
+        },
+        "developer_comment": ""
+      },
+      "US_MAIL": {
+        "name": {
+          "string": "Brukerens e-postfelt"
+        },
+        "description": {
+          "string": "Feltet der brukerens e-post finnes. Ytterligere felt kan settes etter hovedfeltet for e-post for å angi brukerens aliaser"
+        },
+        "developer_comment": ""
+      },
+      "US_MAIL_SERVER_LOGIN": {
+        "name": {
+          "string": "Brukerens innlogging til e-postserver"
+        },
+        "description": {
+          "string": "Bare sett hvis brukerens innlogging til e-postserveren (IMAP) er forskjellig fra hoved-e-posten. Angi her feltet der innloggingen finnes"
+        },
+        "developer_comment": ""
+      },
+      "US_MAIL_FILTERING_LOGIN": {
+        "name": {
+          "string": "Brukerens innlogging til e-postfilterserver"
+        },
+        "description": {
+          "string": "Bare sett hvis brukerens innlogging til e-postfilterserveren (Sieve) er forskjellig fra hoved-e-posten. Angi her feltet der innloggingen finnes"
+        },
+        "developer_comment": ""
+      },
+      "US_MAIL_OUTGOING_LOGIN": {
+        "name": {
+          "string": "Brukerens innlogging til utgående e-postserver"
+        },
+        "description": {
+          "string": "Bare sett hvis brukerens innlogging til utgående e-postserver (SMTP) er forskjellig fra hoved-e-posten. Angi her feltet der innloggingen finnes"
+        },
+        "developer_comment": ""
+      },
+      "US_KIND": {
+        "name": {
+          "string": "Brukerkategori"
+        },
+        "description": {
+          "string": "Angi feltet der brukerkategorien finnes ('bruker', 'ressurs' eller 'gruppe')"
+        },
+        "developer_comment": ""
+      },
+      "US_IS_ADDRESSBOOK": {
+        "name": {
+          "string": "Brukerkilden er adressebok"
+        },
+        "description": {
+          "string": "Angi feltet hvis brukerne i denne brukerkilden kan finnes via autofullføring eller global adressebok"
+        },
+        "developer_comment": ""
+      },
+      "US_SEARCH": {
+        "name": {
+          "string": "Søkefelt for bruker"
+        },
+        "description": {
+          "string": "Ekstra felt som legges til ved søk etter en bruker. Eksempel: 'navn' vil finne brukeren ved navnet"
+        },
+        "developer_comment": ""
+      },
+      "US_DISPLAY_NAME": {
+        "name": {
+          "string": "Visningsnavn for brukerkilde"
+        },
+        "description": {
+          "string": "Visningsnavnet for denne brukerkilden, vil vises i listen over globale adressebøker"
+        },
+        "developer_comment": ""
+      },
+      "US_AUTO_SEARCH": {
+        "name": {
+          "string": "Automatisk visning av brukere i GAB"
+        },
+        "description": {
+          "string": "Søk automatisk og vis brukere i Global Adressebok når valgt. Ellers må brukeren skrive inn for å utløse søk, eller skrive '.' for å søke etter alle."
+        },
+        "developer_comment": ""
+      },
+      "US_AUTO_SEARCH_LIMIT": {
+        "name": {
+          "string": "Grense for autofullføring av brukere"
+        },
+        "description": {
+          "string": "Begrens det maksimale antallet brukere som returneres etter et søk. 0 betyr ingen grense"
+        },
+        "developer_comment": ""
+      },
+      "US_EXTRA_CONTACT_INFO": {
+        "name": {
+          "string": "Ekstra kontaktinformasjon for bruker"
+        },
+        "description": {
+          "string": "Angi hvilken informasjon som skal legges til i autofullføringsresultatet. Vises som 'navn <ekstra> e-post'"
+        },
+        "developer_comment": ""
+      },
+      "US_HIDDEN_USER": {
+        "name": {
+          "string": "Skjulte brukere"
+        },
+        "description": {
+          "string": "Liste over brukernavn (uid) som aldri skal returneres til andre for søk og autofullføring"
+        },
+        "developer_comment": ""
+      },
+      "US_HAS_RESOURCE": {
+        "name": {
+          "string": "Brukerkilde har ressurser"
+        },
+        "description": {
+          "string": "Huk av hvis denne brukerkilden har ressurser"
+        },
+        "developer_comment": ""
+      },
+      "US_RESOURCE_SEARCH": {
+        "name": {
+          "string": "Søk etter brukerressurser"
+        },
+        "description": {
+          "string": "Ekstra søkefelt for ressurser"
+        },
+        "developer_comment": ""
+      },
+      "US_RESOURCE_MULTIBOOKING": {
+        "name": {
+          "string": "Multibestilling av brukerressurser"
+        },
+        "description": {
+          "string": "Felt der verdien for multibestilling av en ressurs finnes"
+        },
+        "developer_comment": ""
+      },
+      "US_RESOURCE_EXTRA_INFO": {
+        "name": {
+          "string": "Ekstra informasjon for brukerressurser"
+        },
+        "description": {
+          "string": "Angi hvilken informasjon som skal legges til i autofullføringsresultatet. Vises som 'navn <ekstra> e-post'"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MODULE_ACCESS": {
+        "name": {
+          "string": "Modultilgang"
+        },
+        "description": {
+          "string": "Definer hvilke moduler som er tilgjengelige blant e-post, kalender og kontakter"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAPI_ACCESS": {
+        "name": {
+          "string": "Aktiver MAPI-server"
+        },
+        "description": {
+          "string": "Tillat brukere på skrivebord å bruke MAPI-protokollen"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_EAS_ACCESS": {
+        "name": {
+          "string": "Aktiver EAS-server"
+        },
+        "description": {
+          "string": "Tillat brukere på mobil å bruke ActiveSync-protokollen"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_FOLDER_DISABLE_EXPORT": {
+        "name": {
+          "string": "Deaktiver mappeeksport"
+        },
+        "description": {
+          "string": "Forhindrer brukere i å eksportere mapper for e-post, kalender og kontakter"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_FOLDER_DISABLE_SHARING": {
+        "name": {
+          "string": "Deaktiver mappedeling"
+        },
+        "description": {
+          "string": "Forhindrer brukere i å dele mapper for e-post, kalender og kontakter"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_FOLDER_DISABLE_SHARING_ANY_AUTH": {
+        "name": {
+          "string": "Deaktiver mappedeling med autentiserte brukere"
+        },
+        "description": {
+          "string": "Forhindrer brukere i å dele mapper med alle autentiserte brukere for e-post, kalender og kontakter"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_AUTOCOMPLETION_MIN_LEN": {
+        "name": {
+          "string": "Minimum tegn for autofullføring"
+        },
+        "description": {
+          "string": "Angir minimum antall tegn som kreves for å utløse en autofullføringssøk (3 betyr at søk utføres ved det tredje tegnet)"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_API_MAX_REQUEST": {
+        "name": {
+          "string": "Maksimal API-forespørsel"
+        },
+        "description": {
+          "string": "Angir det maksimale antallet forespørsler en autentisert bruker kan gjøre innen en tidsperiode"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_API_MAX_REQUEST_INTERVAL": {
+        "name": {
+          "string": "Maksimal tidsperiode for API-forespørsler"
+        },
+        "description": {
+          "string": "Angir tidsrommet der 'Maksimal API-forespørsel' gjelder"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_API_MAX_REQUEST_BLOCK_INTERVAL": {
+        "name": {
+          "string": "Blokkeringstid etter maksimal API-forespørsel"
+        },
+        "description": {
+          "string": "Angir hvor lenge en bruker blir blokkert fra å sende forespørsler hvis 'Maksimal API-forespørsel' er nådd"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_IDENTITIES_ENABLED": {
+        "name": {
+          "string": "Aktiver identiteter"
+        },
+        "description": {
+          "string": "Tillat brukere å opprette e-postidentiteter"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_IDENTITIES_CUSTOM_FROM_ENABLED": {
+        "name": {
+          "string": "Aktiver tilpasset 'Fra'-felt"
+        },
+        "description": {
+          "string": "Tillat brukere å angi tilpasset 'Fra'-felt i identitetene sine"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_IDENTITIES_CUSTOM_NAME_ENABLED": {
+        "name": {
+          "string": "Aktiver tilpasset 'Navn'"
+        },
+        "description": {
+          "string": "Tillat bruker å angi tilpasset navn i identitetene sine"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_IDENTITIES_CUSTOM_REPLY_TO_ENABLED": {
+        "name": {
+          "string": "Aktiver tilpasset 'Svar til'"
+        },
+        "description": {
+          "string": "Tillat bruker å angi tilpasset 'Svar til' i identitetene sine"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_ALLOW_EXT_MAIL_ACCOUNT": {
+        "name": {
+          "string": "Aktiver ekstern e-postkonto"
+        },
+        "description": {
+          "string": "Tillat bruker å opprette ekstern konto"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_ALLOW_EXT_AVATAR": {
+        "name": {
+          "string": "Tillat bruk av ekstern avatar"
+        },
+        "description": {
+          "string": "Tillat bruker å velge innstillinger for ekstern avatar (gravatar, libravatar osv.)"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_REFRESH_INTERVAL_ALLOWED": {
+        "name": {
+          "string": "Angi tillatte intervaller for automatisk oppdatering av e-post"
+        },
+        "description": {
+          "string": "Angi verdier brukerne kan velge for 'automatisk oppdatering av e-post'"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_JUNK_SETTINGS": {
+        "name": {
+          "string": "Angi type utløser for søppel/ikkesøppel"
+        },
+        "description": {
+          "string": "Angi mekanisme når brukere merker e-post som søppel/ikkesøppel"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_JUNK_MAIL_SPAM": {
+        "name": {
+          "string": "E-post for søppelpost"
+        },
+        "description": {
+          "string": "Angi e-postadresse dit søppelpost skal videresendes"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_SERVER_TYPE": {
+        "name": {
+          "string": "Type e-postserver"
+        },
+        "description": {
+          "string": "Angi type e-postserver"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_IMAP_SERVER": {
+        "name": {
+          "string": "IMAP-server"
+        },
+        "description": {
+          "string": "Vertsnavn for IMAP-serveren"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_IMAP_PORT": {
+        "name": {
+          "string": "IMAP-port"
+        },
+        "description": {
+          "string": "Port for IMAP-serveren"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_IMAP_ENCRYPTION": {
+        "name": {
+          "string": "IMAP-kryptering"
+        },
+        "description": {
+          "string": "Krypteringsmekanisme for IMAP-serveren"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_IMAP_AUTH_MECH": {
+        "name": {
+          "string": "IMAP-autentiseringsmekanisme"
+        },
+        "description": {
+          "string": "IMAPs autentiseringsmekanisme. Ikke bruk 'login' uten forsiktighetsregler"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SOFT_EMAIL_QUOTA": {
+        "name": {
+          "string": "Myk kvote"
+        },
+        "description": {
+          "string": "Angi prosentandelen for den myke kvoten."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_PURGE_ALLOW": {
+        "name": {
+          "string": "Aktiver tømming"
+        },
+        "description": {
+          "string": "Tømming lar brukeren slette all e-post eldre enn en dato i en mappe eller for hele kontoen."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_PURGE_MIN_DATE": {
+        "name": {
+          "string": "Minimum dager for tømming"
+        },
+        "description": {
+          "string": "Angi minimum antall dager en bruker kan bruke tømming. 0 betyr at brukeren kan slette all e-post. 30 betyr at brukeren bare kan slette e-post eldre enn 30 dager."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_FILTERING_ENABLED": {
+        "name": {
+          "string": "Aktiver e-postfilter"
+        },
+        "description": {
+          "string": "Tillat brukeren å angi e-postfiltre"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_FILTERING_TYPE": {
+        "name": {
+          "string": "Type e-postfilter"
+        },
+        "description": {
+          "string": "Type e-postfilterprotokoll"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SIEVE_SERVER": {
+        "name": {
+          "string": "Sieve-server"
+        },
+        "description": {
+          "string": "Vertsnavn for Sieve-serveren"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SIEVE_PORT": {
+        "name": {
+          "string": "Sieve-port"
+        },
+        "description": {
+          "string": "Port for Sieve-serveren"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SIEVE_ENCRYPTION": {
+        "name": {
+          "string": "Sieve-kryptering"
+        },
+        "description": {
+          "string": "Kryptering for Sieve-serveren"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SIEVE_AUTH_MECH": {
+        "name": {
+          "string": "Sieve-autentiseringsmekanisme"
+        },
+        "description": {
+          "string": "Autentiseringsmekanisme for Sieve. Hvis ingen"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SIEVE_FOLDER_ENCODING": {
+        "name": {
+          "string": "Sieve-koding"
+        },
+        "description": {
+          "string": "Angi kodingen som brukes av Sieve-serveren."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SIEVE_HEADER": {
+        "name": {
+          "string": "Sieve-overskrift"
+        },
+        "description": {
+          "string": "Angi et Sieve-skript som vil stå øverst i alle brukeres Sieve-skript"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SIEVE_FOOTER": {
+        "name": {
+          "string": "Sieve-bunntekst"
+        },
+        "description": {
+          "string": "Angi et Sieve-skript som vil stå nederst i alle brukeres Sieve-skript"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SIEVE_FIRST_FILTER": {
+        "name": {
+          "string": "Innledende Sieve-skript"
+        },
+        "description": {
+          "string": "Angi det innledende Sieve-skriptet for alle nye brukere. De kan endre det senere"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_VACATION_ENABLED": {
+        "name": {
+          "string": "Tillat feriemelding"
+        },
+        "description": {
+          "string": "Tillat brukere å sette opp en feriemelding. Bruker 'vacation'-utvidelsen for Sieve (rfc5230)"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_VACATION_ALLOW_RESPONSE_ALWAYS": {
+        "name": {
+          "string": "Tillat feriemelding hver gang"
+        },
+        "description": {
+          "string": "Tillat brukere å sette opp en feriemelding som sendes hver gang, uten karensperiode"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_FORWARD_ENABLED": {
+        "name": {
+          "string": "Tillat automatisk videresending"
+        },
+        "description": {
+          "string": "Tillat brukere å sette opp automatisk videresending. Bruker 'redirect'-kommandoen for Sieve"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_FORWARD_ALLOW_USER_DOMAIN": {
+        "name": {
+          "string": "Tillat automatisk videresending til brukerens domene"
+        },
+        "description": {
+          "string": "Tillat brukere å sette opp automatisk videresending til adresser innenfor samme domene"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_FORWARD_ALLOW_SOGO_DOMAIN": {
+        "name": {
+          "string": "Tillat automatisk videresending til SOGo-domene"
+        },
+        "description": {
+          "string": "Tillat brukere å sette opp automatisk videresending til adresser kjent av SOGo"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_FORWARD_ALLOW_EXT_DOMAIN": {
+        "name": {
+          "string": "Tillat automatisk videresending til eksterne domener"
+        },
+        "description": {
+          "string": "Tillat bruker å settes opp automatisk videresending til eksterne adresser"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_FORWARD_WHITELIST": {
+        "name": {
+          "string": "Hvitliste for automatisk videresending"
+        },
+        "description": {
+          "string": "Angi spesifikke domener bruker kan videresende til"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_FORWARD_BLACKLIST": {
+        "name": {
+          "string": "Svarteliste for automatisk videresending"
+        },
+        "description": {
+          "string": "Angi spesifikke domener bruker ikke kan videresende til"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_NOTIFY_ENABLED": {
+        "name": {
+          "string": "Tillat varsling"
+        },
+        "description": {
+          "string": "Tillat bruker å settes opp varsling. Bruker 'notify'-sieve-utvidelsen (rfc5435)"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_NOTIFY_ALLOW_USER_DOMAIN": {
+        "name": {
+          "string": "Tillat varsling til brukerens domene"
+        },
+        "description": {
+          "string": "Tillat bruker å settes opp varsling til adresser innenfor samme domene"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_NOTIFY_ALLOW_SOGO_DOMAIN": {
+        "name": {
+          "string": "Tillat varsling til SOGo-domene"
+        },
+        "description": {
+          "string": "Tillat bruker å settes opp varsling til adresser kjent av SOGo"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_NOTIFY_ALLOW_EXT_DOMAIN": {
+        "name": {
+          "string": "Tillat varsling til eksternt domene"
+        },
+        "description": {
+          "string": "Tillat bruker å settes opp varsling til eksterne adresser"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_NOTIFY_WHITELIST": {
+        "name": {
+          "string": "Hvitliste for varsling"
+        },
+        "description": {
+          "string": "Angi spesifikke domener bruker kan sende varsler til"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_NOTIFY_BLACKLIST": {
+        "name": {
+          "string": "Svarteliste for varsling"
+        },
+        "description": {
+          "string": "Angi spesifikke domener bruker ikke kan sende varsler til"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_OUTGOING_TYPE": {
+        "name": {
+          "string": "Type utående e-postserver"
+        },
+        "description": {
+          "string": "Angi type utående e-postserver"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SMTP_SERVER": {
+        "name": {
+          "string": "SMTP-server"
+        },
+        "description": {
+          "string": "Vertsnavn for SMTP-serveren"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SMTP_PORT": {
+        "name": {
+          "string": "SMTP-port"
+        },
+        "description": {
+          "string": "Port for SMTP-serveren"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SMTP_ENCRYPTION": {
+        "name": {
+          "string": "SMTP-kryptering"
+        },
+        "description": {
+          "string": "Krypteringsmekanisme for SMTP-serveren"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SMTP_AUTH_MECH": {
+        "name": {
+          "string": "SMTP-autentiseringsmetode"
+        },
+        "description": {
+          "string": "SMTPs autentiseringsmekanisme. Ikke bruk 'Ingen' uten forsiktighet"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SMTP_MASTER_ENABLED": {
+        "name": {
+          "string": "SMTP-hovedkonto"
+        },
+        "description": {
+          "string": "Bruk en hovedkonto for alle systemmeldinger (hendelser, varsler osv.)"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SMTP_MASTER_FROM": {
+        "name": {
+          "string": "Hovedkonto fra"
+        },
+        "description": {
+          "string": "SMTP-hovedkonto fra"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SMTP_MASTER_LOGIN": {
+        "name": {
+          "string": "Hovedkonto pålogging"
+        },
+        "description": {
+          "string": "E-post for SMTP-hovedkonto"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SMTP_MASTER_PWD": {
+        "name": {
+          "string": "Hovedkonto passord"
+        },
+        "description": {
+          "string": "Passord for SMTP-hovedkonto"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_MAX_SUBMISSION": {
+        "name": {
+          "string": "Maks e-poster sendt"
+        },
+        "description": {
+          "string": "Maksimalt antall e-poster en bruker kan sende innen en tidsperiode"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_MAX_SUBMISSION_INTERVAL": {
+        "name": {
+          "string": "Tidsperiode for maks e-poster"
+        },
+        "description": {
+          "string": "Tidsrom i sekunder der 'Maks e-poster sendt' gjelder"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_MAX_SUBMISSION_BLOCK_INTERVAl": {
+        "name": {
+          "string": "Maksimal blokkeringstid for e-postsending"
+        },
+        "description": {
+          "string": "Tidsrom der en bruker er blokkert fra å sende e-post etter å ha utløst 'Maks e-post sendt'"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_MAX_RECIPIENT": {
+        "name": {
+          "string": "Maks antall mottakere i e-post"
+        },
+        "description": {
+          "string": "Passord for hovedkonto"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_CHECK_FROM": {
+        "name": {
+          "string": "Kontroller 'Fra'-felt"
+        },
+        "description": {
+          "string": "Kontroller om 'Fra'-adressen tilhører brukerens e-postadresser (standard, aliaser, identiteter osv.) før forespørsel sendes til utgående e-postserver"
+        },
+        "developer_comment": ""
+      }
+    }
+  }
+}

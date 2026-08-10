@@ -1,0 +1,108 @@
+{
+  "ADDRESS_BOOKS_ERRORS": {
+    "list_member_invalid": {
+      "string": "สมาชิกที่เลือกหนึ่งหรือหลายรายไม่ใช่ผู้ติดต่อในสมุดที่อยู่นี้",
+      "context": "Inline error when a distribution list member is invalid."
+    },
+    "addressbook_not_found": {
+      "string": "ไม่พบสมุดที่อยู่",
+      "context": "Error when an address book is missing."
+    },
+    "addressbook_duplicate": {
+      "string": "มีสมุดที่อยู่ชื่อนี้อยู่แล้ว",
+      "context": "Toast when address book creation conflicts."
+    },
+    "contact_not_found": {
+      "string": "ไม่พบผู้ติดต่อ",
+      "context": "Error when a contact is missing."
+    },
+    "contact_duplicate": {
+      "string": "มีผู้ติดต่อด้วยตัวระบุนี้อยู่แล้ว",
+      "context": "Toast when contact creation conflicts."
+    },
+    "contact_persist_failed": {
+      "string": "ไม่สามารถบันทึกผู้ติดต่อได้",
+      "context": "Error when contact creation fails on the server."
+    },
+    "contact_update_failed": {
+      "string": "ไม่สามารถอัปเดตผู้ติดต่อได้",
+      "context": "Error when contact update fails on the server."
+    },
+    "operation_not_supported": {
+      "string": "การดำเนินการนี้ไม่รองรับสำหรับสมุดที่อยู่นี้",
+      "context": "Error when mutating a non-local address book source."
+    },
+    "list_not_found": {
+      "string": "ไม่พบรายการแจกจ่าย",
+      "context": "Error when a distribution list is missing."
+    },
+    "list_duplicate": {
+      "string": "มีรายการแจกจ่ายชื่อนี้อยู่แล้ว",
+      "context": "Toast when list creation conflicts."
+    },
+    "list_persist_failed": {
+      "string": "ไม่สามารถบันทึกรายการแจกจ่ายได้",
+      "context": "Error when list creation fails on the server."
+    },
+    "list_update_failed": {
+      "string": "ไม่สามารถอัปเดตรายการแจกจ่ายได้",
+      "context": "Error when list update fails on the server."
+    },
+    "access_denied": {
+      "string": "คุณไม่มีสิทธิ์แก้ไขสมุดที่อยู่นี้",
+      "context": "Toast when write access is denied."
+    },
+    "read_only": {
+      "string": "สมุดที่อยู่นี้เป็นแบบอ่านอย่างเดียว",
+      "context": "Toast when mutating a read-only address book."
+    },
+    "export_format_unsupported": {
+      "string": "รูปแบบการส่งออกที่เลือกไม่รองรับ",
+      "context": "Error when export format negotiation fails."
+    },
+    "import_no_file": {
+      "string": "ไม่มีไฟล์สำหรับนำเข้า",
+      "context": "Error when import request has no file."
+    },
+    "import_too_large": {
+      "string": "ไฟล์นำเข้าเกินขนาดสูงสุดที่อนุญาต (10 MB)",
+      "context": "Error when import payload is too large."
+    },
+    "import_parse_failed": {
+      "string": "ไม่สามารถแยกวิเคราะห์ไฟล์นำเข้าได้",
+      "context": "Error when import document parsing fails."
+    },
+    "job_not_found": {
+      "string": "ไม่พบงานแบ็กกราวด์",
+      "context": "Error when polling an unknown job."
+    },
+    "job_forbidden": {
+      "string": "คุณไม่มีสิทธิ์เข้าถึงงานแบ็กกราวด์นี้",
+      "context": "Error when job belongs to another user."
+    },
+    "job_not_ready": {
+      "string": "การส่งออกยังไม่พร้อม กรุณารอและลองใหม่อีกครั้ง",
+      "context": "Error when downloading a job result too early."
+    },
+    "job_no_result": {
+      "string": "งานนี้ไม่มีผลลัพธ์ที่สามารถดาวน์โหลดได้",
+      "context": "Error when job result is unavailable."
+    },
+    "job_concurrent_limit": {
+      "string": "มีงานแบ็กกราวด์กำลังรันอยู่มากเกินไป กรุณาลองใหม่อีกครั้งในภายหลัง",
+      "context": "Error when concurrent job limit is reached."
+    },
+    "file_too_large": {
+      "string": "รูปภาพมีขนาดเกินขีดจำกัดสูงสุด (2 MB)",
+      "context": "Inline error when contact photo upload is too large."
+    },
+    "file_type_not_allowed": {
+      "string": "ประเภทไฟล์นี้ไม่ได้รับอนุญาตสำหรับรูปภาพติดต่อ",
+      "context": "Inline error when contact photo type is not allowed."
+    },
+    "generic": {
+      "string": "ไม่สามารถดำเนินการได้ กรุณาลองใหม่อีกครั้ง",
+      "context": "Fallback error message for contact API errors."
+    }
+  }
+}

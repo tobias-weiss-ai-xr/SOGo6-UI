@@ -1,0 +1,133 @@
+{
+  "US_MAIL_VACATIONS": {
+    "title": {
+      "string": "Semesterinställningar",
+      "context": "Title for the vacation settings page"
+    },
+    "page": {
+      "description": {
+        "string": "Konfigurera ditt automatiska frånvarosvar och när det ska vara aktivt."
+      }
+    },
+    "errors_api": {
+      "load_failed": {
+        "string": "Kunde inte ladda semesterinställningar. Försök igen senare."
+      },
+      "feature_disabled": {
+        "string": "Automatiskt frånvarosvar har inaktiverats av din administrator."
+      }
+    },
+    "errors": {
+      "validation": {
+        "message_required": {
+          "string": "Automatiskt svarsmeddelande krävs när semester är aktiverat."
+        },
+        "dates_required": {
+          "string": "Start- och slutdatum krävs när datumbegränsningar är aktiverade."
+        },
+        "date_order": {
+          "string": "Slutdatumet måste vara samma som eller efter startdatumet."
+        },
+        "time_invalid": {
+          "string": "Ange en giltig tid i formatet TT:MM."
+        },
+        "weekday_required": {
+          "string": "Välj minst en veckodag när veckodagsbegränsningar är aktiverade."
+        },
+        "response_interval_invalid": {
+          "string": "Svarsintervallet måste vara noll eller ett positivt tal."
+        },
+        "response_interval_zero": {
+          "string": "Ett svarsintervall på noll dagar är inte tillåtet på denna domän."
+        }
+      }
+    },
+    "auto_reply": {
+      "enable": {
+        "string": "Aktivera automatiskt frånvarosvar"
+      },
+      "subject": {
+        "label": {
+          "string": "Ämne för automatiskt svar"
+        },
+        "description": {
+          "string": "Lämna tomt för att använda standardämne. Du kan skriva {subject} för att infoga det ursprungliga ämnet."
+        }
+      },
+      "message": {
+        "string": "Meddelande för automatiskt svar"
+      },
+      "constraints": {
+        "title": {
+          "string": "Aktiveringsbegränsningar"
+        },
+        "description": {
+          "string": "Anpassa dag- och timintervall oberoende av varandra och kombineras valfritt med specifika veckodagar för att skräddarsy dina semesterfilter efter dina preferenser."
+        },
+        "enable": {
+          "days": {
+            "string": "Aktivera automatiskt svar på dessa dagar"
+          },
+          "hours": {
+            "string": "Aktivera automatiskt svar mellan dessa timmar"
+          },
+          "range": {
+            "string": "Aktivera automatiskt svar mellan dessa dagar"
+          }
+        },
+        "time": {
+          "start": {
+            "string": "Starttid"
+          },
+          "end": {
+            "string": "Sluttid"
+          }
+        },
+        "weekdays": {
+          "monday": {
+            "string": "Måndag"
+          },
+          "tuesday": {
+            "string": "Tisdag"
+          },
+          "wednesday": {
+            "string": "Onsdag"
+          },
+          "thursday": {
+            "string": "Torsdag"
+          },
+          "friday": {
+            "string": "Fredag"
+          },
+          "saturday": {
+            "string": "Lördag"
+          },
+          "sunday": {
+            "string": "Söndag"
+          }
+        }
+      },
+      "response": {
+        "interval_days": {
+          "label": {
+            "string": "Minsta antal dagar mellan automatiska svar"
+          },
+          "placeholder": {
+            "string": "Lämna tomt för standardbeteende"
+          },
+          "description": {
+            "string": "Förhindrar att dubbla semesterautosvar skickas inom denna period (RFC 5230 :days)."
+          }
+        },
+        "send_always": {
+          "label": {
+            "string": "Skicka alltid semesterautosvar"
+          },
+          "description": {
+            "string": "Semesterautosvaret skickas innan dina filter tillämpas."
+          }
+        }
+      }
+    }
+  }
+}

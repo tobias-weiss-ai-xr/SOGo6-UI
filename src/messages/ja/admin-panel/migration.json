@@ -1,0 +1,54 @@
+{
+  "AP_MIG": {
+    "title": {
+      "string": "移行ツール"
+    },
+    "description": {
+      "string": "外部ソース（G Suite、M365、Dovecot、Cyrus、またはファイルアップロード）からデータをインポート"
+    },
+    "wizard": {
+      "title": {
+        "string": "移行を開始"
+      },
+      "source": {
+        "string": "ソース"
+      },
+      "select_source": {
+        "string": "ソースを選択..."
+      },
+      "user": {
+        "string": "ターゲットユーザー"
+      },
+      "select_user": {
+        "string": "ユーザーを選択..."
+      }
+    },
+    "start": {
+      "button": {
+        "string": "移行を開始"
+      },
+      "running": {
+        "string": "開始中..."
+      },
+      "success": {
+        "string": "移行が開始されました"
+      },
+      "error": {
+        "string": "移行に失敗しました"
+      }
+    },
+    "history": {
+      "title": {
+        "string": "移行履歴"
+      },
+      "empty": {
+        "string": "まだ移行はありません。"
+      }
+    },
+    "errors": {
+      "fields": {
+        "string": "ソースとユーザーは必須です"
+      }
+    }
+  }
+}

@@ -36,6 +36,7 @@ import {
   createNotificationSchema,
   type NotificationFormValues,
 } from './notifications-schema'
+import { logger } from '@/lib/logger'
 
 interface Props {
   data: MailNotification | undefined
@@ -79,7 +80,7 @@ function MailNotificationsSettingForm({ data, accountId, update }: Props) {
       }).unwrap()
       reset(mapMailNotificationToFormValues(saved))
     } catch (error) {
-      console.error('Failed to save mail notification settings:', error)
+      logger.error('Failed to save mail notification settings:', { error: error })
     }
   }
 

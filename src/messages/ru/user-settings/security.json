@@ -1,0 +1,75 @@
+{
+  "US_SECURITY": {
+    "title": {
+      "string": "Безопасность",
+      "context": "Title for the Security settings section in user settings"
+    },
+    "totp": {
+      "title": {
+        "string": "Двухфакторная аутентификация (TOTP)",
+        "context": "Title for the Two-Factor Authentication settings"
+      },
+      "description": {
+        "string": "Двухфакторная аутентификация добавляет дополнительный уровень защиты вашего аккаунта. После включения вам потребуется вводить уникальный код, сгенерированный приложением-аутентификатором на телефоне, при каждом входе в систему."
+      },
+      "verification_code": {
+        "title": {
+          "string": "Код подтверждения"
+        },
+        "description": {
+          "string": "Введите код подтверждения, сгенерированный вашим приложением-аутентификатором."
+        }
+      }
+    },
+    "webauthn": {
+      "title": {
+        "string": "Ключи доступа (WebAuthn)",
+        "context": "Title for the WebAuthn settings section"
+      },
+      "description": {
+        "string": "Ключи доступа позволяют входить в систему без пароля, используя биометрический датчик устройства (отпечаток пальца, Face ID) или аппаратный ключ безопасности. Ваш ключ доступа надежно хранится на этом устройстве.",
+        "context": "Description for the WebAuthn settings section"
+      },
+      "registered_credentials": {
+        "string": "Зарегистрированные ключи доступа",
+        "context": "Label for the list of registered passkeys"
+      },
+      "registered_at": {
+        "string": "Зарегистрирован",
+        "context": "Label for the registration date of a passkey"
+      },
+      "no_credentials": {
+        "string": "Ключи доступа ещё не зарегистрированы.",
+        "context": "Message when no passkeys are registered"
+      },
+      "register": {
+        "string": "Зарегистрировать новый ключ доступа",
+        "context": "Button to register a new passkey",
+        "title": {
+          "string": "Register a New Passkey",
+          "context": "Title for the passkey registration dialog"
+        },
+        "description": {
+          "string": "Your browser or device will guide you through setting up a passkey using biometrics, a PIN, or an external security key.",
+          "context": "Description for the passkey registration dialog"
+        },
+        "button": {
+          "string": "Register",
+          "context": "Button to start passkey registration"
+        },
+        "waiting": {
+          "string": "Waiting for device interaction — follow the prompts on your device.",
+          "context": "Status during passkey registration"
+        },
+        "success": {
+          "string": "Passkey registered successfully!",
+          "context": "Status when passkey registration succeeds"
+        }
+      },
+      "device_name": {
+        "string": "Название устройства (необязательно)",
+        "context": "Label for the device name input field"
+      }
+    }
+  }
+}

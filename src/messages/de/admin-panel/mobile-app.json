@@ -1,0 +1,63 @@
+{
+  "MOBILE": {
+    "title": {
+      "string": "Mobile App Verwaltung"
+    },
+    "description": {
+      "string": "Registrierte Geräte, Push-Benachrichtigungen und App-Konfiguration verwalten"
+    },
+    "errors": {
+      "fail": {
+        "string": "Vorgang fehlgeschlagen"
+      }
+    },
+    "success": {
+      "unregister": {
+        "string": "Gerät entfernt"
+      },
+      "broadcast": {
+        "string": "Push-Benachrichtigung gesendet"
+      }
+    },
+    "config": {
+      "title": {
+        "string": "App-Einstellungen"
+      },
+      "push": {
+        "string": "Push-Benachrichtigungen"
+      },
+      "biometric": {
+        "string": "Biometrische Authentifizierung"
+      }
+    },
+    "push": {
+      "title": {
+        "string": "Push-Broadcast"
+      },
+      "message": {
+        "placeholder": {
+          "string": "Nachricht..."
+        }
+      },
+      "broadcast": {
+        "string": "Senden"
+      }
+    },
+    "stats": {
+      "title": {
+        "string": "Statistiken"
+      },
+      "devices": {
+        "string": "Registrierte Geräte"
+      }
+    },
+    "devices": {
+      "title": {
+        "string": "Alle Geräte"
+      },
+      "empty": {
+        "string": "Noch keine Geräte registriert"
+      }
+    }
+  }
+}

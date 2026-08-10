@@ -1,0 +1,19 @@
+{
+    "DATA_TABLE": {
+        "filter_placeholder": {
+            "string": "Φίλτρο..."
+        },
+        "no_result": {
+            "string": "Κανένα αποτέλεσμα."
+        },
+        "previous": {
+            "string": "Προηγούμενο"
+        },
+        "next": {
+            "string": "Επόμενο"
+        },
+        "selected": {
+            "string": "{selected} of {total} row(s) selected."
+        }
+    }
+}

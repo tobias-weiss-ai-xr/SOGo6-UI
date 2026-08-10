@@ -1,0 +1,37 @@
+{
+    "AP_BRANDING": {
+        "title": { "string": "Personalizzazione Multi-Tenant" },
+        "description": { "string": "Personalizza l'aspetto della pagina di login per dominio — logo, colori, CSS, testo header/footer." },
+        "select_domain": { "string": "Dominio" },
+        "select_placeholder": { "string": "Scegli un dominio..." },
+        "select_hint": { "string": "Seleziona un dominio sopra per visualizzare e modificare la personalizzazione." },
+        "card": {
+            "identity": { "string": "Identità Visiva" },
+            "login_page": { "string": "Pagina di Login" }
+        },
+        "labels": {
+            "logo": { "string": "Logo" },
+            "favicon": { "string": "Favicon" },
+            "primary_color": { "string": "Colore Primario" },
+            "login_header": { "string": "Testo Header Login" },
+            "login_footer": { "string": "Testo Footer Login" },
+            "custom_css": { "string": "CSS Personalizzato" }
+        },
+        "buttons": {
+            "upload": { "string": "Carica" }
+        },
+        "placeholders": {
+            "header": { "string": "es. Benvenuto nella Posta della Mia Azienda" },
+            "footer": { "string": "es. © 2026 Mia Azienda" },
+            "css": { "string": "body { font-family: sans-serif; }" }
+        },
+        "save": {
+            "button": { "string": "Salva Personalizzazione" },
+            "success": { "string": "Personalizzazione salvata" },
+            "error": { "string": "Salvataggio personalizzazione fallito" }
+        },
+        "errors": {
+            "upload": { "string": "Lettura file fallita" }
+        }
+    }
+}

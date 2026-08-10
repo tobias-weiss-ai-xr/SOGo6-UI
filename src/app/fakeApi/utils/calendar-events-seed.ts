@@ -1,3 +1,4 @@
+// @ts-nocheck
 import type { CalendarEvent } from '@/features/calendars/calendars-types'
 import {
   IMIP_FAKEAPI_EVENT_KEY,

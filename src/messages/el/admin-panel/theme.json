@@ -1,0 +1,135 @@
+{
+  "AP_THEME": {
+    "title": {
+      "string": "Ρυθμίσεις Θέματος"
+    },
+    "description": {
+      "string": "Προσαρμόστε την εμφάνιση και την αίσθηση της διεπαφής SOGo"
+    },
+    "form_title": {
+      "string": "Προσαρμοσμένο Θέμα"
+    },
+    "form_description": {
+      "string": "Διαμορφώστε χρώματα, λογότυπο και προσαρμοσμένο CSS για τη διεπαφή του groupware"
+    },
+    "fields": {
+      "primary": {
+        "label": {
+          "string": "Κύριο Χρώμα"
+        },
+        "description": {
+          "string": "Τιμές HSL για το κύριο χρώμα (π.χ. 180 25% 40%)"
+        }
+      },
+      "primary_foreground": {
+        "label": {
+          "string": "Κύριο Προσκήνιο"
+        },
+        "description": {
+          "string": "Χρώμα κειμένου σε κύρια φόντα"
+        }
+      },
+      "background": {
+        "label": {
+          "string": "Φόντο"
+        },
+        "description": {
+          "string": "Τιμές HSL για το φόντο της σελίδας"
+        }
+      },
+      "foreground": {
+        "label": {
+          "string": "Προσκήνιο"
+        },
+        "description": {
+          "string": "Προεπιλεγμένο χρώμα κειμένου"
+        }
+      },
+      "sidebar_background": {
+        "label": {
+          "string": "Φόντο Πλαισίου Πλοήγησης"
+        },
+        "description": {
+          "string": "Τιμές HSL για το φόντο του πλαίσιου πλοήγησης"
+        }
+      },
+      "sidebar_foreground": {
+        "label": {
+          "string": "Προσκήνιο Πλαισίου Πλοήγησης"
+        },
+        "description": {
+          "string": "Χρώμα κειμένου στο πλαίσιο πλοήγησης"
+        }
+      },
+      "sidebar_primary": {
+        "label": {
+          "string": "Κύριο Χρώμα Πλαισίου Πλοήγησης"
+        },
+        "description": {
+          "string": "Κύριο χρώμα έμφασης στο πλαίσιο πλοήγησης"
+        }
+      },
+      "sidebar_accent": {
+        "label": {
+          "string": "Χρώμα Έμφασης Πλαισίου Πλοήγησης"
+        },
+        "description": {
+          "string": "Χρώμα έμφασης στο πλαίσιο πλοήγησης"
+        }
+      },
+      "header_background": {
+        "label": {
+          "string": "Υπόβαθρο Κεφαλίδας"
+        },
+        "description": {
+          "string": "Τιμές HSL για την πάνω μπάρα κεφαλίδας"
+        }
+      },
+      "header_foreground": {
+        "label": {
+          "string": "Πρώτο Πλάνο Κεφαλίδας"
+        },
+        "description": {
+          "string": "Χρώμα κειμένου στην κεφαλίδα"
+        }
+      },
+      "logo_url": {
+        "label": {
+          "string": "URL Λογότυπου"
+        },
+        "description": {
+          "string": "URL της προσαρμοσμένης εικόνας λογότυπου (προαιρετικό)"
+        }
+      },
+      "custom_css": {
+        "label": {
+          "string": "Προσαρμοσμένο CSS"
+        },
+        "description": {
+          "string": "Επιπλέον κανόνες CSS για ένθεση (προαιρετικό)"
+        }
+      }
+    },
+    "save": {
+      "string": "Αποθήκευση Αλλαγών"
+    },
+    "saving": {
+      "string": "Αποθήκευση…"
+    },
+    "saved": {
+      "string": "Οι ρυθμίσεις θέματος αποθηκεύτηκαν επιτυχώς"
+    },
+    "save_error": {
+      "string": "Αποτυχία αποθήκευσης: {message}"
+    },
+    "unsaved_changes": {
+      "string": "Έχετε μη αποθηκευμένες αλλαγές"
+    },
+    "load_error": {
+      "string": "Αποτυχία φόρτωσης ρυθμίσεων θέματος"
+    },
+    "retry": {
+      "string": "Δοκιμή Ξανά"
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "AP_AUDIT": {
+    "title": {
+      "string": "Granskningslogg"
+    },
+    "description": {
+      "string": "Manipulationssäker logg över admin- och användaråtgärder. Posterna läggs endast till och kan varken ändras eller raderas."
+    },
+    "table": {
+      "timestamp": {
+        "string": "Tidsstämpel"
+      },
+      "action": {
+        "string": "Åtgärd"
+      },
+      "actor": {
+        "string": "Utförare"
+      },
+      "target": {
+        "string": "Mål"
+      },
+      "detail": {
+        "string": "Detaljer"
+      },
+      "ip": {
+        "string": "IP-adress"
+      },
+      "no_entries": {
+        "string": "Inga poster hittades i granskningsloggen."
+      }
+    },
+    "count_one": {
+      "string": "post"
+    },
+    "count_many": {
+      "string": "poster"
+    },
+    "errors": {
+      "load_failed": {
+        "string": "Misslyckades med att ladda granskningsloggen"
+      }
+    }
+  }
+}

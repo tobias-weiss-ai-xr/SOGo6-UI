@@ -1,0 +1,46 @@
+{
+  "AI_CLASSIFY": {
+    "title": {
+      "string": "Inteligentna klasyfikacja e-maili"
+    },
+    "description": {
+      "string": "Automatyczne etykietowanie e-maili: newsletter, faktura, powiadomienie, społecznościowe, prywatne."
+    },
+    "input": {
+      "title": {
+        "string": "E-mail wejściowy"
+      },
+      "subject": {
+        "string": "Temat"
+      },
+      "sender": {
+        "string": "Nadawca"
+      },
+      "body": {
+        "string": "Treść"
+      },
+      "placeholder": {
+        "string": "Wklej treść e-maila..."
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Wyniki klasyfikacji"
+      },
+      "empty": {
+        "string": "Wprowadź tekst i kliknij Klasyfikuj"
+      }
+    },
+    "classify": {
+      "string": "Klasyfikuj"
+    },
+    "errors": {
+      "empty": {
+        "string": "Wprowadź tekst e-maila"
+      },
+      "fail": {
+        "string": "Klasyfikacja nie powiodła się"
+      }
+    }
+  }
+}

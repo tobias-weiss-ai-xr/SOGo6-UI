@@ -1,0 +1,50 @@
+{
+  "SCIM": {
+    "title": {
+      "string": "Provisi SCIM"
+    },
+    "description": {
+      "string": "Manajemen siklus hidup identitas SCIM 2.0 untuk Azure AD, Okta, dan IdP lainnya"
+    },
+    "errors": {
+      "email": {
+        "string": "Email wajib diisi"
+      },
+      "fail": {
+        "string": "Operasi gagal"
+      }
+    },
+    "success": {
+      "create": {
+        "string": "Pengguna berhasil diprovisi"
+      },
+      "delete": {
+        "string": "Pengguna berhasil dinonaktifkan"
+      }
+    },
+    "field": {
+      "email": {
+        "string": "Nama Pengguna/Email"
+      },
+      "name": {
+        "string": "Nama Tampilan"
+      },
+      "status": {
+        "string": "Status"
+      }
+    },
+    "button": {
+      "provision": {
+        "string": "Provisi Pengguna"
+      }
+    },
+    "users": {
+      "title": {
+        "string": "Pengguna yang Diprovisi"
+      },
+      "empty": {
+        "string": "Belum ada pengguna SCIM yang diprovisi"
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+    "PORTAL": {
+        "title": {
+            "string": "SOGo Portál"
+        },
+        "description": {
+            "string": "Üdvözöljük az SOGo Portálon. Válasszon egy alkalmazást az induláshoz."
+        },
+        "launch": {
+            "string": "Launch"
+        },
+        "settings": {
+            "string": "Intercom Settings"
+        }
+    }
+}

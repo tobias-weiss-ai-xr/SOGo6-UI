@@ -1,0 +1,52 @@
+{
+  "AP_DEBUG": {
+    "title": {
+      "string": "मेलबॉक्स डिबग"
+    },
+    "description": {
+      "string": "मेल डिलीवरी समस्याओं का निवारण करने के लिए निदान उपकरण। कच्चे ईमेल स्रोत या पार्स किए गए हेडर देखें।"
+    },
+    "query": {
+      "title": {
+        "string": "डिबग क्वेरी"
+      },
+      "button": {
+        "string": "जाँचें"
+      }
+    },
+    "labels": {
+      "user": {
+        "string": "उपयोगकर्ता"
+      },
+      "folder": {
+        "string": "IMAP फोल्डर"
+      },
+      "mail_uid": {
+        "string": "मेल UID"
+      },
+      "select_user": {
+        "string": "उपयोगकर्ता चुनें..."
+      }
+    },
+    "result": {
+      "raw": {
+        "title": {
+          "string": "कच्चा ईमेल स्रोत"
+        }
+      },
+      "headers": {
+        "title": {
+          "string": "पार्स किए गए हेडर"
+        }
+      }
+    },
+    "errors": {
+      "fields_required": {
+        "string": "उपयोगकर्ता, फोल्डर और मेल UID आवश्यक हैं"
+      },
+      "fetch_failed": {
+        "string": "डिबग डेटा प्राप्त करने में विफल"
+      }
+    }
+  }
+}

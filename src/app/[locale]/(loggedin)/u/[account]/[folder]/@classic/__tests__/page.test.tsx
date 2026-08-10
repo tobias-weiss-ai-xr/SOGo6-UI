@@ -6,6 +6,7 @@ import Page from '../page'
 jest.mock('next/navigation', () => ({
   useParams: jest.fn(),
   useSearchParams: jest.fn(),
+  useRouter: jest.fn(() => ({ push: jest.fn(), replace: jest.fn() })),
 }))
 
 jest.mock('react-redux', () => ({
@@ -20,6 +21,33 @@ jest.mock('@/lib/redux/hooks', () => ({
 jest.mock('@/features/mails/store/mail-navigation-slice', () => ({
   selectSkipFolderFetch: (s: any) => s?.mailNavigation?.skipFolderFetch ?? false,
   setMailNavigation: jest.fn((p) => ({ type: 'mailNavigation/setMailNavigation', payload: p })),
+}))
+
+jest.mock('@/features/mails/hooks/use-mail-item-actions', () => ({
+  useMailItemActions: jest.fn(() => ({
+    deleteMail: jest.fn(),
+    markUnread: jest.fn(),
+    toggleRead: jest.fn(),
+    markSpam: jest.fn(),
+    markHam: jest.fn(),
+    archiveMail: jest.fn(),
+    applyLabel: jest.fn(),
+    removeLabel: jest.fn(),
+    archiveDestination: 'Trash',
+    isJunk: false,
+    isTrash: false,
+    folderType: 'INBOX',
+    isLoading: false,
+  })),
+}))
+
+jest.mock('@/features/mails/hooks/use-keyboard-shortcuts', () => ({
+  __esModule: true,
+  default: jest.fn(),
+}))
+
+jest.mock('@/features/mails/store/mail-layout-slice', () => ({
+  setSelectedMails: jest.fn((ids) => ({ type: 'mailLayout/setSelectedMails', payload: ids })),
 }))
 
 jest.mock('@/features/mails/store/mails-api', () => ({

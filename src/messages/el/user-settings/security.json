@@ -1,0 +1,75 @@
+{
+  "US_SECURITY": {
+    "title": {
+      "string": "Ασφάλεια",
+      "context": "Title for the Security settings section in user settings"
+    },
+    "totp": {
+      "title": {
+        "string": "Διπλός Παραγωγικός Πιστοποίησης (TOTP)",
+        "context": "Title for the Two-Factor Authentication settings"
+      },
+      "description": {
+        "string": "Ο διπλός παράγοντας πιστοποίησης προσθέτει ένα επιπλέον επίπεδο ασφάλειας στον λογαριασμό σας. Μόλις ενεργοποιηθεί, θα πρέπει να εισάγετε έναν μοναδικό κωδικό που δημιουργείται από μια εφαρμογή πιστοποίησης στο τηλέφωνό σας κάθε φορά που συνδέεστε."
+      },
+      "verification_code": {
+        "title": {
+          "string": "Κωδικός Επαλήθευσης"
+        },
+        "description": {
+          "string": "Εισάγετε τον κωδικό επαλήθευσης που δημιουργήθηκε από την εφαρμογή πιστοποίησής σας."
+        }
+      }
+    },
+    "webauthn": {
+      "title": {
+        "string": "Κλειδιά Πρόσβασης (WebAuthn)",
+        "context": "Title for the WebAuthn settings section"
+      },
+      "description": {
+        "string": "Τα κλειδιά πρόσβασης σάς επιτρέπουν να συνδεθείτε χωρίς κωδικό πρόσβασης χρησιμοποιώντας τον βιομετρικό αισθητήρα της συσκευής σας (δακτυλικό αποτύπωμα, Face ID) ή ένα υλικό κλειδί ασφαλείας. Το κλειδί πρόσβασής σας αποθηκεύεται με ασφάλεια σε αυτήν τη συσκευή.",
+        "context": "Description for the WebAuthn settings section"
+      },
+      "registered_credentials": {
+        "string": "Εγγραφμένα κλειδιά πρόσβασης",
+        "context": "Label for the list of registered passkeys"
+      },
+      "registered_at": {
+        "string": "Εγγραφή",
+        "context": "Label for the registration date of a passkey"
+      },
+      "no_credentials": {
+        "string": "Δεν έχουν εγγραφεί ακόμα κλειδιά πρόσβασης.",
+        "context": "Message when no passkeys are registered"
+      },
+      "register": {
+        "string": "Εγγραφή νέου κλειδιού πρόσβασης",
+        "context": "Button to register a new passkey",
+        "title": {
+          "string": "Register a New Passkey",
+          "context": "Title for the passkey registration dialog"
+        },
+        "description": {
+          "string": "Your browser or device will guide you through setting up a passkey using biometrics, a PIN, or an external security key.",
+          "context": "Description for the passkey registration dialog"
+        },
+        "button": {
+          "string": "Register",
+          "context": "Button to start passkey registration"
+        },
+        "waiting": {
+          "string": "Waiting for device interaction — follow the prompts on your device.",
+          "context": "Status during passkey registration"
+        },
+        "success": {
+          "string": "Passkey registered successfully!",
+          "context": "Status when passkey registration succeeds"
+        }
+      },
+      "device_name": {
+        "string": "Όνομα συσκευής (προαιρετικό)",
+        "context": "Label for the device name input field"
+      }
+    }
+  }
+}

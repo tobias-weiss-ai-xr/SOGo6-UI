@@ -1,0 +1,40 @@
+{
+  "AI_DRAFT": {
+    "title": {
+      "string": "Trợ lý Soạn thảo AI"
+    },
+    "description": {
+      "string": "Gợi ý phản hồi với điều chỉnh giọng điệu. Tạo bản nháp phản hồi phù hợp ngữ cảnh."
+    },
+    "input": {
+      "title": {
+        "string": "Email Gốc"
+      },
+      "email": {
+        "string": "Nội dung Email"
+      },
+      "placeholder": {
+        "string": "Dán email bạn muốn trả lời vào đây..."
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Phản hồi Đề xuất"
+      },
+      "empty": {
+        "string": "Nhập nội dung email và chọn giọng điệu"
+      }
+    },
+    "suggest": {
+      "string": "Đề xuất Phản hồi"
+    },
+    "errors": {
+      "empty": {
+        "string": "Vui lòng nhập nội dung email"
+      },
+      "fail": {
+        "string": "Đề xuất thất bại"
+      }
+    }
+  }
+}

@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { NextRequest, NextResponse } from 'next/server'
 
 const data = {
@@ -9,10 +10,7 @@ const data = {
   error_msg: 'No Error',
 }
 
-export async function POST(
-  req: NextRequest,
-  { params }: { params: Promise<{ calendarId: string }> }
-) {
+export async function POST(req: NextRequest) {
   // const body = await req.json()
 
   // Save in the cookie

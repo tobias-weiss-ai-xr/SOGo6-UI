@@ -1,0 +1,135 @@
+{
+  "AP_THEME": {
+    "title": {
+      "string": "Cài đặt Giao diện"
+    },
+    "description": {
+      "string": "Tùy chỉnh giao diện và trải nghiệm của SOGo"
+    },
+    "form_title": {
+      "string": "Giao diện Tùy chỉnh"
+    },
+    "form_description": {
+      "string": "Cấu hình màu sắc, logo và CSS tùy chỉnh cho giao diện nhóm"
+    },
+    "fields": {
+      "primary": {
+        "label": {
+          "string": "Màu Chính"
+        },
+        "description": {
+          "string": "Giá trị HSL cho màu chính (ví dụ: 180 25% 40%)"
+        }
+      },
+      "primary_foreground": {
+        "label": {
+          "string": "Nền Chính"
+        },
+        "description": {
+          "string": "Màu chữ trên nền chính"
+        }
+      },
+      "background": {
+        "label": {
+          "string": "Nền"
+        },
+        "description": {
+          "string": "Giá trị HSL cho nền trang"
+        }
+      },
+      "foreground": {
+        "label": {
+          "string": "Đầu trang"
+        },
+        "description": {
+          "string": "Màu chữ mặc định"
+        }
+      },
+      "sidebar_background": {
+        "label": {
+          "string": "Nền Thanh Bên"
+        },
+        "description": {
+          "string": "Giá trị HSL cho nền thanh bên"
+        }
+      },
+      "sidebar_foreground": {
+        "label": {
+          "string": "Đầu trang Thanh Bên"
+        },
+        "description": {
+          "string": "Màu chữ trong thanh bên"
+        }
+      },
+      "sidebar_primary": {
+        "label": {
+          "string": "Màu Chính Thanh Bên"
+        },
+        "description": {
+          "string": "Màu nhấn chính trong thanh bên"
+        }
+      },
+      "sidebar_accent": {
+        "label": {
+          "string": "Màu Nhấn Thanh Bên"
+        },
+        "description": {
+          "string": "Màu nhấn trong thanh bên"
+        }
+      },
+      "header_background": {
+        "label": {
+          "string": "Nền Tiêu đề"
+        },
+        "description": {
+          "string": "Giá trị HSL cho thanh tiêu đề trên cùng"
+        }
+      },
+      "header_foreground": {
+        "label": {
+          "string": "Màu chữ Tiêu đề"
+        },
+        "description": {
+          "string": "Màu chữ trong tiêu đề"
+        }
+      },
+      "logo_url": {
+        "label": {
+          "string": "URL Logo"
+        },
+        "description": {
+          "string": "URL của hình ảnh logo tùy chỉnh (tùy chọn)"
+        }
+      },
+      "custom_css": {
+        "label": {
+          "string": "CSS Tùy chỉnh"
+        },
+        "description": {
+          "string": "Các quy tắc CSS bổ sung để chèn (tùy chọn)"
+        }
+      }
+    },
+    "save": {
+      "string": "Lưu Thay đổi"
+    },
+    "saving": {
+      "string": "Đang lưu…"
+    },
+    "saved": {
+      "string": "Cài đặt giao diện đã được lưu thành công"
+    },
+    "save_error": {
+      "string": "Lưu thất bại: {message}"
+    },
+    "unsaved_changes": {
+      "string": "Bạn có thay đổi chưa được lưu"
+    },
+    "load_error": {
+      "string": "Không tải được cài đặt giao diện"
+    },
+    "retry": {
+      "string": "Thử lại"
+    }
+  }
+}

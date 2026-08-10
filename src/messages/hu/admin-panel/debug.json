@@ -1,0 +1,52 @@
+{
+  "AP_DEBUG": {
+    "title": {
+      "string": "Levelezőszekrény hibakereső"
+    },
+    "description": {
+      "string": "Diagnosztikai eszköz levelek kézbesítési problémáinak hibakereséséhez. Nyers e-mail forrás vagy elemezett fejlécek megtekintése."
+    },
+    "query": {
+      "title": {
+        "string": "Hibakereső lekérdezés"
+      },
+      "button": {
+        "string": "Ellenőrzés"
+      }
+    },
+    "labels": {
+      "user": {
+        "string": "Felhasználó"
+      },
+      "folder": {
+        "string": "IMAP mappa"
+      },
+      "mail_uid": {
+        "string": "Levél UID"
+      },
+      "select_user": {
+        "string": "Felhasználó kiválasztása..."
+      }
+    },
+    "result": {
+      "raw": {
+        "title": {
+          "string": "Nyers e-mail forrás"
+        }
+      },
+      "headers": {
+        "title": {
+          "string": "Elemezett fejlécek"
+        }
+      }
+    },
+    "errors": {
+      "fields_required": {
+        "string": "A felhasználó, mappa és levél UID kötelező"
+      },
+      "fetch_failed": {
+        "string": "A hibakereső adatok lekérdezése sikertelen"
+      }
+    }
+  }
+}

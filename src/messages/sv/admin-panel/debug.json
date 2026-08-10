@@ -1,0 +1,52 @@
+{
+  "AP_DEBUG": {
+    "title": {
+      "string": "Felsökningsverktyg för brevinkorg"
+    },
+    "description": {
+      "string": "Diagnostiskt verktyg för att felsöka problem med e-postleverans. Visa rå e-postkälla eller parsade rubriker."
+    },
+    "query": {
+      "title": {
+        "string": "Felsökningsförfrågan"
+      },
+      "button": {
+        "string": "Inspektera"
+      }
+    },
+    "labels": {
+      "user": {
+        "string": "Användare"
+      },
+      "folder": {
+        "string": "IMAP-mapp"
+      },
+      "mail_uid": {
+        "string": "E-post-UID"
+      },
+      "select_user": {
+        "string": "Välj användare..."
+      }
+    },
+    "result": {
+      "raw": {
+        "title": {
+          "string": "Rå e-postkälla"
+        }
+      },
+      "headers": {
+        "title": {
+          "string": "Parsade rubriker"
+        }
+      }
+    },
+    "errors": {
+      "fields_required": {
+        "string": "Användare, mapp och e-post-UID krävs"
+      },
+      "fetch_failed": {
+        "string": "Misslyckades med att hämta felsökningsdata"
+      }
+    }
+  }
+}

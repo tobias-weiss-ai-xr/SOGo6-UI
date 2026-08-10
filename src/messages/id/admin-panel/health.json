@@ -1,0 +1,34 @@
+{
+  "AP_HEALTH": {
+    "title": {
+      "string": "Kesehatan Sistem"
+    },
+    "description": {
+      "string": "Status waktu nyata dari semua layanan dalam tumpukan SOGo."
+    },
+    "status": {
+      "all_ok": {
+        "string": "Semua Sistem Beroperasi"
+      },
+      "degraded": {
+        "string": "Terganggu"
+      }
+    },
+    "overview": {
+      "uptime": {
+        "string": "Waktu Aktif"
+      },
+      "version": {
+        "string": "Versi"
+      },
+      "services": {
+        "string": "Layanan Sehat"
+      }
+    },
+    "errors": {
+      "load_failed": {
+        "string": "Gagal memuat data kesehatan"
+      }
+    }
+  }
+}

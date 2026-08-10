@@ -1,0 +1,29 @@
+{
+    "AP_QUICK": {
+        "title": { "string": "Azioni Rapide" },
+        "description": { "string": "Azioni multi-step definite dall'utente attivate con un singolo clic dalla lista email." },
+        "form": {
+            "create": { "string": "Nuova Azione" },
+            "cancel": { "string": "Annulla" },
+            "title": { "string": "Crea Azione Rapida" },
+            "name": { "string": "Nome Azione" },
+            "icon": { "string": "Icona" },
+            "steps": { "string": "Passaggi" },
+            "submit": { "string": "Crea Azione" }
+        },
+        "create": {
+            "success": { "string": "Azione creata" },
+            "error": { "string": "Creazione fallita" }
+        },
+        "delete": {
+            "success": { "string": "Azione eliminata" },
+            "error": { "string": "Eliminazione fallita" }
+        },
+        "list": {
+            "empty": { "string": "Nessuna azione rapida ancora. Creane una per velocizzare il tuo flusso di lavoro." }
+        },
+        "errors": {
+            "fields": { "string": "Nome e almeno un passaggio sono obbligatori" }
+        }
+    }
+}

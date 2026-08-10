@@ -1,0 +1,49 @@
+{
+  "AI_SPAM": {
+    "title": {
+      "string": "Bộ lọc Spam Thông minh"
+    },
+    "description": {
+      "string": "Đánh giá spam theo thời gian thực với phân tích mẫu, danh tiếng người gửi và heuristic nội dung."
+    },
+    "input": {
+      "title": {
+        "string": "Email cần Đánh giá"
+      },
+      "subject": {
+        "string": "Tiêu đề"
+      },
+      "sender": {
+        "string": "Người gửi"
+      },
+      "body": {
+        "string": "Nội dung"
+      },
+      "placeholder": {
+        "string": "Dán nội dung email vào đây..."
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Điểm Spam"
+      },
+      "empty": {
+        "string": "Nhập nội dung email và nhấn Đánh giá"
+      },
+      "signals": {
+        "string": "Tín hiệu Phát hiện"
+      }
+    },
+    "score": {
+      "string": "Đánh giá Email"
+    },
+    "errors": {
+      "empty": {
+        "string": "Vui lòng nhập tiêu đề hoặc nội dung"
+      },
+      "fail": {
+        "string": "Đánh giá thất bại"
+      }
+    }
+  }
+}

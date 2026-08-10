@@ -1,0 +1,717 @@
+{
+    "MAILS_COMMONS": {
+        "mail_display": {
+            "action-bar": {
+                "reply": {
+                    "string": "Reply",
+                    "description": "Reply to the current message"
+                },
+                "reply_all": {
+                    "string": "Reply all",
+                    "description": "Reply to all recipients of the current message"
+                },
+                "forward": {
+                    "string": "Forward",
+                    "description": "Forward the current message to another recipient"
+                },
+                "edit_draft": {
+                    "string": "편집",
+                    "description": "Open the draft in the composer"
+                },
+                "use_template": {
+                    "string": "Use template",
+                    "description": "Create a new draft from this template without modifying it"
+                },
+                "return": {
+                    "string": "Return to search results",
+                    "description": "Return to search results"
+                },
+                "delete": {
+                    "string": "삭제",
+                    "description": "Delete the current message"
+                },
+                "report_spam": {
+                    "string": "Mark as spam",
+                    "description": "Mark as spam"
+                },
+                "mark_unread": {
+                    "string": "안 읽음으로 표시",
+                    "description": "Mark as unread"
+                },
+                "label": {
+                    "string": "Label",
+                    "description": "Label",
+                    "coming_soon": {
+                        "string": "Labels coming soon",
+                        "description": "Tooltip when label picker is not yet available"
+                    }
+                },
+                "move_to_inbox": {
+                    "string": "Move to Inbox",
+                    "description": "Move message from Junk back to the Inbox"
+                },
+                "archive": {
+                    "string": "보관",
+                    "description": "Move message to archive folder"
+                },
+                "download": {
+                    "string": "다운로드",
+                    "description": "Download message as .eml file"
+                },
+                "move": {
+                    "string": "Move to folder",
+                    "description": "Move message to another folder"
+                },
+                "print": {
+                    "string": "인쇄",
+                    "description": "Print the current message"
+                },
+                "print_labels": {
+                    "from": {
+                        "string": "보내는 사람",
+                        "description": "From label in print view"
+                    },
+                    "to": {
+                        "string": "받는 사람",
+                        "description": "To label in print view"
+                    },
+                    "cc": {
+                        "string": "참조",
+                        "description": "Cc label in print view"
+                    },
+                    "date": {
+                        "string": "Date",
+                        "description": "Date label in print view"
+                    },
+                    "attachments": {
+                        "string": "Attachments",
+                        "description": "Attachments label in print view"
+                    }
+                },
+                "view_source": {
+                    "string": "소스 보기",
+                    "description": "View raw message source"
+                },
+                "delete_confirm": {
+                    "title": {
+                        "string": "Delete message"
+                    },
+                    "message": {
+                        "string": "This message will be moved to Trash."
+                    },
+                    "confirm": {
+                        "string": "삭제"
+                    },
+                    "cancel": {
+                        "string": "취소"
+                    }
+                },
+                "spam_confirm": {
+                    "title": {
+                        "string": "Mark as spam"
+                    },
+                    "message": {
+                        "string": "This message will be moved to Junk."
+                    },
+                    "confirm": {
+                        "string": "Move to Junk"
+                    },
+                    "cancel": {
+                        "string": "취소"
+                    }
+                },
+                "ham_confirm": {
+                    "title": {
+                        "string": "Move to Inbox"
+                    },
+                    "message": {
+                        "string": "This message will be moved to your Inbox."
+                    },
+                    "confirm": {
+                        "string": "Move to Inbox"
+                    },
+                    "cancel": {
+                        "string": "취소"
+                    }
+                },
+                "more": {
+                    "string": "더 많은 작업",
+                    "description": "More actions"
+                },
+                "next-mail": {
+                    "string": "다음 메일",
+                    "description": "Next mail"
+                },
+                "previous-mail": {
+                    "string": "이전 메일",
+                    "description": "Previous mail"
+                },
+                "snooze": {
+                    "string": "Snooze",
+                    "description": "Temporarily remove from inbox and return later"
+                }
+            },
+            "content": {
+                "external_images_warning": {
+                    "string": "This message contains external images.  Click to display them.",
+                    "description": "Warning: This message contains external images"
+                },
+                "download_attachment": {
+                    "string": "Download attachment",
+                    "description": "ARIA label for the download attachment link"
+                },
+                "download_all_attachments": {
+                    "string": "Download all attachments",
+                    "description": "ARIA label for the download all attachments link"
+                },
+                "download_error": {
+                    "title": {
+                        "string": "Download failed",
+                        "description": "Title of the error toast shown when an attachment fails to download"
+                    },
+                    "message": {
+                        "string": "The attachment could not be downloaded. Please try again.",
+                        "description": "Message of the error toast shown when an attachment fails to download"
+                    }
+                },
+                "more_attachments_count": {
+                    "string": "+{count}",
+                    "description": "Compact label to reveal additional hidden attachments (e.g. +3)"
+                }
+            },
+            "header": {
+                "from": {
+                    "string": "보내는 사람",
+                    "description": "From"
+                },
+                "to": {
+                    "string": "받는 사람",
+                    "description": "To"
+                },
+                "cc": {
+                    "string": "참조",
+                    "description": "Cc"
+                },
+                "unsubscribe": {
+                    "string": "Unsubscribe",
+                    "description": "Unsubscribe from the mailing list"
+                },
+                "unsubscribe-dialog": {
+                    "message": {
+                        "string": "Do you want to unsubscribe from this mailing list?",
+                        "description": "Message in the unsubscribe dialog"
+                    },
+                    "confirm": {
+                        "string": "Unsubscribe",
+                        "description": "Confirm the unsubscription"
+                    },
+                    "cancel": {
+                        "string": "취소",
+                        "description": "Cancel the unsubscription"
+                    }
+                },
+                "contacts-badge": {
+                    "popover-view-contact": {
+                        "string": "View contact",
+                        "description": "Open the matching contact in the address book"
+                    },
+                    "popover-add-to-addressbook": {
+                        "string": "Add to address book",
+                        "description": "Add the contact to the address book"
+                    },
+                    "popover-write-new-message": {
+                        "string": "Write new message",
+                        "description": "Write a new message to the contact"
+                    }
+                }
+            }
+        },
+        "error": {
+            "string": "오류",
+            "description": "Generic error title used when mails fail to load"
+        },
+        "search": {
+            "placeholder": {
+                "string": "이메일 검색",
+                "description": "Placeholder text for the email search input field"
+            },
+            "more_options": {
+                "string": "더 많은 옵션",
+                "description": "Button to open more search options"
+            },
+            "folders": {
+                "string": "폴더",
+                "description": "Label for the folders section in the search options"
+            },
+            "confirm": {
+                "string": "검색",
+                "description": "Button to confirm and execute the email search"
+            },
+            "in_message_content": {
+                "string": "메시지 내용",
+                "description": "Option to search within the content of messages"
+            },
+            "with_attachments": {
+                "string": "첨부파일 포함",
+                "description": "Option to filter emails that have attachments"
+            },
+            "in_favorites": {
+                "string": "즐겨찾기",
+                "description": "Option to filter emails that are marked as favorites"
+            },
+            "unseen_only": {
+                "string": "안 본 것만",
+                "description": "Option to filter emails that are unseen"
+            },
+            "body": {
+                "string": "본문",
+                "description": "Label for the 'Body' field in email search options"
+            },
+            "date_from": {
+                "string": "날짜부터",
+                "description": "Label for the 'Date from' field in email search options"
+            },
+            "date_to": {
+                "string": "날짜까지",
+                "description": "Label for the 'Date to' field in email search options"
+            },
+            "others": {
+                "string": "기타",
+                "description": "Label for the 'Others' section in email search options"
+            }
+        },
+        "from": {
+            "string": "보내는 사람",
+            "description": "Label for the 'From' field in email search options"
+        },
+        "account_switcher": {
+            "add_account": {
+                "string": "Add account",
+                "description": "Button to add an external mail account in the sidebar account switcher"
+            },
+            "new_folder": {
+                "string": "새 폴더",
+                "description": "Label for the new folder action in the account switcher menu"
+            },
+            "delegate": {
+                "string": "Delegate",
+                "description": "Label for the delegate action in the account switcher menu (not yet implemented)"
+            }
+        },
+        "to": {
+            "string": "받는 사람",
+            "description": "Label for the 'To' field in email search options"
+        },
+        "bcc": {
+            "string": "참조(비밀)",
+            "description": "Label for the 'Bcc' field in email search options"
+        },
+        "subject": {
+            "string": "제목",
+            "description": "Label for the 'Subject' field in email search options"
+        },
+        "folders": {
+            "actions": {
+                "new_subfolder": {
+                    "string": "New Subfolder",
+                    "description": "Button to create a new subfolder in the current folder"
+                },
+                "rename": {
+                    "string": "이름 변경",
+                    "description": "Button to rename the current folder"
+                },
+                "rename_dialog": {
+                    "title": {
+                        "string": "Rename folder",
+                        "description": "Title of the rename folder dialog"
+                    },
+                    "label": {
+                        "string": "Folder name",
+                        "description": "Label for the folder name input"
+                    },
+                    "placeholder": {
+                        "string": "e.g. Work, Archives…",
+                        "description": "Placeholder for the folder name input"
+                    },
+                    "submit": {
+                        "string": "이름 변경",
+                        "description": "Submit button label in the rename folder dialog"
+                    },
+                    "cancel": {
+                        "string": "취소",
+                        "description": "Cancel button label in the rename folder dialog"
+                    },
+                    "error_required": {
+                        "string": "Folder name is required",
+                        "description": "Validation error when folder name is empty"
+                    },
+                    "error_dot": {
+                        "string": "Folder name cannot contain a dot",
+                        "description": "Validation error when folder name contains a dot character"
+                    },
+                    "error_max": {
+                        "string": "Folder name must be at most 100 characters",
+                        "description": "Validation error when folder name exceeds max length"
+                    }
+                },
+                "mark_as_read": {
+                    "string": "Mark as Read",
+                    "description": "Button to mark the current folder as read"
+                },
+                "export": {
+                    "string": "Export",
+                    "description": "Button to export all messages in the current folder"
+                },
+                "move_to": {
+                    "string": "이동 위치",
+                    "description": "Button to move the current folder under another parent"
+                },
+                "set_as": {
+                    "string": "Set as",
+                    "description": "Button to assign a semantic folder type to a normal folder"
+                },
+                "empty_folder": {
+                    "string": "Empty folder",
+                    "description": "Button to permanently empty trash or junk folder"
+                },
+                "action_unavailable": {
+                    "string": "This action is not available yet",
+                    "description": "Tooltip shown when a folder action is disabled because the backend is not ready"
+                },
+                "empty_folder_dialog": {
+                    "title": {
+                        "string": "Empty folder"
+                    },
+                    "description": {
+                        "string": "Permanently delete all messages in \"{folder}\"? This action cannot be undone."
+                    },
+                    "confirm": {
+                        "string": "Empty folder"
+                    },
+                    "cancel": {
+                        "string": "취소"
+                    }
+                },
+                "set_as_dialog": {
+                    "title": {
+                        "string": "Set folder type"
+                    },
+                    "description": {
+                        "string": "Choose the semantic type for \"{folder}\"."
+                    },
+                    "cancel": {
+                        "string": "취소"
+                    },
+                    "types": {
+                        "DRAFT": {
+                            "string": "임시 저장"
+                        },
+                        "SENT": {
+                            "string": "보낸 편지함"
+                        },
+                        "TRASH": {
+                            "string": "휴지통"
+                        },
+                        "JUNK": {
+                            "string": "스팸"
+                        },
+                        "TEMPLATE": {
+                            "string": "Templates"
+                        }
+                    }
+                },
+                "move_to_dialog": {
+                    "title": {
+                        "string": "Move folder"
+                    },
+                    "description": {
+                        "string": "Choose a new parent for \"{folder}\"."
+                    },
+                    "placeholder": {
+                        "string": "Select destination"
+                    },
+                    "root": {
+                        "string": "Root level"
+                    },
+                    "confirm": {
+                        "string": "이동"
+                    },
+                    "cancel": {
+                        "string": "취소"
+                    }
+                },
+                "sharing": {
+                    "string": "Sharing",
+                    "title": {
+                        "string": "Share folder"
+                    },
+                    "description": {
+                        "string": "Manage who has access to \"{folder}\" and their permissions."
+                    },
+                    "noUsers": {
+                        "string": "No users have access yet."
+                    },
+                    "addUser": {
+                        "label": {
+                            "string": "Add a user"
+                        },
+                        "placeholder": {
+                            "string": "email@domain.com"
+                        },
+                        "button": {
+                            "string": "추가"
+                        },
+                        "error": {
+                            "invalid": {
+                                "string": "Please enter a valid email address."
+                            },
+                            "duplicate": {
+                                "string": "This user already has access."
+                            }
+                        }
+                    },
+                    "presets": {
+                        "read": {
+                            "string": "Read"
+                        },
+                        "write": {
+                            "string": "Write"
+                        },
+                        "admin": {
+                            "string": "Admin"
+                        }
+                    },
+                    "save": {
+                        "string": "저장"
+                    },
+                    "cancel": {
+                        "string": "취소"
+                    },
+                    "badge": {
+                        "you": {
+                            "string": "You"
+                        },
+                        "public": {
+                            "string": "Public"
+                        }
+                    },
+                    "removeUser": {
+                        "tooltip": {
+                            "string": "Cannot remove yourself"
+                        }
+                    }
+                },
+                "purge": {
+                    "string": "Purge",
+                    "description": "Button to permanently delete all messages in the current folder",
+                    "confirmTitle": {
+                        "string": "Purge folder"
+                    },
+                    "confirmDesc": {
+                        "string": "Are you sure you want to purge \"{folder}\"? All deleted messages will be permanently removed. This action cannot be undone."
+                    },
+                    "confirm": {
+                        "string": "Purge"
+                    },
+                    "cancel": {
+                        "string": "취소"
+                    },
+                    "olderThan": {
+                        "string": "Delete mails older than"
+                    },
+                    "customDate": {
+                        "string": "Custom date"
+                    },
+                    "pickDate": {
+                        "string": "Pick a date"
+                    },
+                    "applyToSubfolders": {
+                        "string": "Apply to subfolders"
+                    },
+                    "permanentlyDelete": {
+                        "string": "Permanently delete (cannot be undone)"
+                    },
+                    "confirmPermanent": {
+                        "string": "I understand this will permanently delete the selected mails and they cannot be recovered"
+                    },
+                    "datePresets": {
+                        "3months": {
+                            "string": "3 months"
+                        },
+                        "6months": {
+                            "string": "6 months"
+                        },
+                        "1year": {
+                            "string": "1 year"
+                        },
+                        "custom": {
+                            "string": "Custom date"
+                        },
+                        "all": {
+                            "string": "All mails"
+                        }
+                    },
+                    "successTitle": {
+                        "string": "Folder purged"
+                    },
+                    "successMessage": {
+                        "string": "All deleted messages have been permanently removed."
+                    },
+                    "errorTitle": {
+                        "string": "Purge failed"
+                    },
+                    "errorMessage": {
+                        "string": "An error occurred while purging the folder. Please try again."
+                    }
+                },
+                "expunge": {
+                    "string": "Expunge",
+                    "confirmTitle": {
+                        "string": "Expunge folder"
+                    },
+                    "confirmDesc": {
+                        "string": "Are you sure you want to expunge \"{folder}\"? All messages marked as deleted will be permanently removed. This action cannot be undone."
+                    },
+                    "confirm": {
+                        "string": "Expunge"
+                    },
+                    "cancel": {
+                        "string": "취소"
+                    }
+                },
+                "delete": {
+                    "string": "Delete folder",
+                    "description": "Label for the delete folder action in the folder context menu",
+                    "confirmTitle": {
+                        "string": "Delete folder",
+                        "description": "Title of the delete folder confirmation dialog"
+                    },
+                    "confirmDesc": {
+                        "string": "Are you sure you want to delete \"{folder}\"? It will be moved to Trash. If it is already in Trash, it will be permanently deleted.",
+                        "description": "Description of the delete folder confirmation dialog"
+                    },
+                    "confirm": {
+                        "string": "삭제",
+                        "description": "Confirm button label in the delete folder dialog"
+                    },
+                    "cancel": {
+                        "string": "취소",
+                        "description": "Cancel button label in the delete folder dialog"
+                    }
+                },
+                "new_subfolder_dialog": {
+                    "title": {
+                        "string": "New subfolder",
+                        "description": "Title of the create subfolder dialog"
+                    },
+                    "label": {
+                        "string": "Folder name",
+                        "description": "Label for the folder name input"
+                    },
+                    "placeholder": {
+                        "string": "e.g. Work, Archives…",
+                        "description": "Placeholder for the folder name input"
+                    },
+                    "submit": {
+                        "string": "생성",
+                        "description": "Submit button label in the create subfolder dialog"
+                    },
+                    "cancel": {
+                        "string": "취소",
+                        "description": "Cancel button label in the create subfolder dialog"
+                    },
+                    "error_required": {
+                        "string": "Folder name is required",
+                        "description": "Validation error when folder name is empty"
+                    },
+                    "error_dot": {
+                        "string": "Folder name cannot contain a dot",
+                        "description": "Validation error when folder name contains a dot character"
+                    },
+                    "error_max": {
+                        "string": "Folder name must be at most 100 characters",
+                        "description": "Validation error when folder name exceeds max length"
+                    }
+                }
+            },
+            "inbox": {
+                "string": "收件箱",
+                "description": "Your inbox where you receive new messages"
+            },
+            "sent": {
+                "string": "보낸 편지함",
+                "description": "Messages you have sent"
+            },
+            "drafts": {
+                "string": "임시 저장",
+                "description": "Messages you have saved as drafts"
+            },
+            "trash": {
+                "string": "휴지통",
+                "description": "Deleted messages that can be restored or permanently deleted"
+            },
+            "junk": {
+                "string": "스팸",
+                "description": "Messages identified as spam"
+            },
+            "template": {
+                "string": "Templates",
+                "description": "Message templates"
+            },
+            "virtual_folder": {
+                "string": "Virtual folder — expand to browse subfolders",
+                "description": "Tooltip for non-selectable IMAP folders"
+            },
+            "virtual_empty": {
+                "title": {
+                    "string": "Virtual folder"
+                },
+                "description": {
+                    "string": "This folder cannot contain messages. Expand it in the sidebar to browse subfolders."
+                }
+            }
+        },
+        "sse": {
+            "defaultSubject": {
+                "string": "새 메시지"
+            },
+            "defaultSender": {
+                "string": "Unknown sender"
+            }
+        },
+        "invitation": {
+            "label": {
+                "string": "Calendar invitation",
+                "description": "Heading for an iMIP calendar invitation in mail view"
+            },
+            "synced_to_calendar": {
+                "string": "This event has been added to your calendar.",
+                "description": "Info banner after inbound iMIP sync"
+            },
+            "event_cancelled": {
+                "string": "This event has been cancelled.",
+                "description": "Message for iMIP CANCEL mails"
+            },
+            "reply_from_attendee": {
+                "string": "{name} responded: {status}",
+                "description": "Message when an attendee sends an iMIP REPLY"
+            },
+            "sync_pending": {
+                "string": "Syncing with your calendar…",
+                "description": "Event not found yet after opening invitation mail"
+            },
+            "retry": {
+                "string": "Retry",
+                "description": "Retry loading calendar event for invitation"
+            },
+            "view_in_calendar": {
+                "string": "View in calendar",
+                "description": "Link to open the event in the calendar module"
+            },
+            "recurring_badge": {
+                "string": "Recurring event",
+                "description": "Badge for recurring invitations"
+            }
+        }
+    }
+}

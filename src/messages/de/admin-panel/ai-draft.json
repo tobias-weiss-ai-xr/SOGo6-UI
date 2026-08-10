@@ -1,0 +1,40 @@
+{
+  "AI_DRAFT": {
+    "title": {
+      "string": "KI-Antwortassistent"
+    },
+    "description": {
+      "string": "Antwortvorschläge mit Ton-Einstellung"
+    },
+    "input": {
+      "title": {
+        "string": "Eingabe"
+      },
+      "email": {
+        "string": "E-Mail-Text"
+      },
+      "placeholder": {
+        "string": "Original-E-Mail hier einfügen..."
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Vorschlag"
+      },
+      "empty": {
+        "string": "Vorschlag wird hier angezeigt"
+      }
+    },
+    "suggest": {
+      "string": "Vorschlagen"
+    },
+    "errors": {
+      "empty": {
+        "string": "Text erforderlich"
+      },
+      "fail": {
+        "string": "Vorschlag fehlgeschlagen"
+      }
+    }
+  }
+}

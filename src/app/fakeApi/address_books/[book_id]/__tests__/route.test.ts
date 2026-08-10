@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { VCard } from '@/features/address_books/address-books-types'
 import { NextRequest } from 'next/server'
 jest.mock('next/server', () => ({

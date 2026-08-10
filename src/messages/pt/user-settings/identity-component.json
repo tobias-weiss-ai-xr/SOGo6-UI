@@ -1,0 +1,37 @@
+{
+    "IDENTITY_COMPONENT": {
+        "labels": {
+            "name": "Nome da Identidade",
+            "email": "Endereço de E-mail",
+            "replyTo": "Responder Para",
+            "newIdentity": "Nova Identidade",
+            "default": "Padrão",
+            "removeIdentity": "Remover Identidade",
+            "atLeastOneIdentity": "Pelo menos uma identidade é obrigatória",
+            "useDefaultIdentity": {
+                "string": "Usar como identidade padrão"
+            },
+            "setAsDefault": "Definir como padrão",
+            "defaultDescription": "Esta identidade será usada por padrão ao compor novas mensagens",
+            "mainIdentityEmail": "Este é seu endereço de e-mail principal e não pode ser alterado",
+            "nameNotEditable": "A edição do nome foi desabilitada pelo administrador",
+            "replyToNotEditable": "A edição de Responder Para foi desabilitada pelo administrador",
+            "signatures": "Assinaturas",
+            "signaturesDescription": "Crie e gerencie assinaturas de e-mail para esta identidade",
+            "signaturePlaceholder": "Insira o nome da assinatura",
+            "addIdentity": "Adicionar uma identidade",
+            "allowsCustom": "Você pode adicionar e gerenciar identidades adicionais"
+        },
+        "description": {
+            "useDefaultIdentity": {
+                "string": "Esta identidade será selecionada por padrão ao compor novas mensagens"
+            }
+        },
+        "accessibility": {
+            "toggleCollapse": "Alternar detalhes da identidade",
+            "expandIdentity": "Expandir",
+            "collapseIdentity": "Recolher",
+            "removeIcon": "Botão de remover identidade"
+        }
+    }
+}

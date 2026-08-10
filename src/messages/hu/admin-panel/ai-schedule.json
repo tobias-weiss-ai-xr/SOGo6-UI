@@ -1,0 +1,43 @@
+{
+  "AI_SCHEDULE": {
+    "title": {
+      "string": "Okos naptár ütemezés"
+    },
+    "description": {
+      "string": "MI által javasolt találkozói időpontok a résztvevők rendelkezésre állásának mintáin és preferenciáin alapulva."
+    },
+    "input": {
+      "title": {
+        "string": "Találkozó beállítása"
+      },
+      "attendees": {
+        "string": "Résztvevők"
+      },
+      "from": {
+        "string": "Tól"
+      },
+      "to": {
+        "string": "Ig"
+      },
+      "duration": {
+        "string": "Időtartam (perc)"
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Javasolt időpontok"
+      }
+    },
+    "suggest": {
+      "string": "Időpontok javaslata"
+    },
+    "errors": {
+      "fields": {
+        "string": "A résztvevők, a kezdő és a záró dátum kötelező"
+      },
+      "fail": {
+        "string": "A javaslat sikertelen"
+      }
+    }
+  }
+}

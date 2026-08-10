@@ -1,0 +1,61 @@
+{
+  "AP_BULK": {
+    "title": {
+      "string": "Quản lý người dùng hàng loạt"
+    },
+    "description": {
+      "string": "Nhập và xuất người dùng hàng loạt bằng tệp CSV."
+    },
+    "export": {
+      "title": {
+        "string": "Xuất người dùng"
+      },
+      "description": {
+        "string": "Tải xuống tất cả người dùng dưới dạng tệp CSV."
+      },
+      "format": {
+        "string": "Tệp CSV (.csv)"
+      },
+      "button": {
+        "string": "Xuất CSV"
+      },
+      "success": {
+        "string": "Đã tải xuống xuất"
+      },
+      "error": {
+        "string": "Xuất thất bại"
+      }
+    },
+    "import": {
+      "title": {
+        "string": "Nhập người dùng"
+      },
+      "description": {
+        "string": "Tải lên tệp CSV chứa dữ liệu người dùng để tạo hoặc cập nhật tài khoản."
+      },
+      "dropzone": {
+        "string": "Nhấp để tải lên CSV"
+      },
+      "button": {
+        "string": "Nhập CSV"
+      },
+      "remove": {
+        "string": "Xóa tệp"
+      },
+      "success": {
+        "string": "Đã nhập: {created} đã tạo, {updated} đã cập nhật"
+      },
+      "error": {
+        "string": "Nhập thất bại"
+      }
+    },
+    "format": {
+      "title": {
+        "string": "Định dạng CSV"
+      },
+      "hint": {
+        "string": "Dòng đầu tiên phải là tiêu đề. uid, cn, sn, givenName, mail là bắt buộc. password là tùy chọn (ngẫu nhiên nếu để trống)."
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "AP_DBMIG": {
+    "title": {
+      "string": "Database migration"
+    },
+    "description": {
+      "string": "Spor skemaversioner og migrationshistorik. Kør migrationer fra adminpanelet."
+    },
+    "current_version": {
+      "string": "Nuværende skemaversion"
+    },
+    "run": {
+      "button": {
+        "string": "Kør migration"
+      },
+      "running": {
+        "string": "Kører..."
+      },
+      "success": {
+        "string": "Migration udført"
+      },
+      "error": {
+        "string": "Migration mislykkedes"
+      }
+    },
+    "history": {
+      "title": {
+        "string": "Migrationshistorik"
+      },
+      "empty": {
+        "string": "Ingen migrationer registreret."
+      }
+    }
+  }
+}

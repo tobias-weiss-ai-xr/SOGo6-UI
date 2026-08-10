@@ -3,20 +3,23 @@
 import { useTranslations } from 'next-intl'
 import React from 'react'
 
+import { ErrorAlertWithRetry } from '@/components/ui/error-alert'
 import LabelsFormSkeleton from '@/components/ui/skeletons/inputs'
 import {
   useGetUserPreferencesQuery,
   useUpdateUserPreferencesSecurityMutation,
 } from '@/features/user-settings/store/user-preferences-api'
 import PasswordForm from './components/password-form'
+import PGPForm from './components/pgp-form'
 import TotpSettingsForm from './components/totp-form'
+import { WebauthnSettingsForm } from './components/webauthn-form'
 
 const TotpSettings: React.FC = () => {
   const t = useTranslations('US_SECURITY')
-  const { data, error, isFetching } = useGetUserPreferencesQuery()
+  const { data, error, isFetching, refetch } = useGetUserPreferencesQuery()
   const [updateSecurity] = useUpdateUserPreferencesSecurityMutation()
   if (error) {
-    return 'ERROR' //TODO
+    return <ErrorAlertWithRetry onRetry={() => refetch()} />
   }
   return (
     <div className="grid grid-cols-1 gap-4">
@@ -27,6 +30,8 @@ const TotpSettings: React.FC = () => {
         <div className="grid grid-cols-1 gap-4">
           <PasswordForm />
           <TotpSettingsForm data={data?.data} update={updateSecurity} />
+          <WebauthnSettingsForm />
+          <PGPForm />
         </div>
       )}
     </div>

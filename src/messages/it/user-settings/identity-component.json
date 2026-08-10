@@ -1,0 +1,37 @@
+{
+    "IDENTITY_COMPONENT": {
+        "labels": {
+            "name": "Nome Identità",
+            "email": "Indirizzo Email",
+            "replyTo": "Rispondi A",
+            "newIdentity": "Nuova Identità",
+            "default": "Predefinita",
+            "removeIdentity": "Rimuovi Identità",
+            "atLeastOneIdentity": "È richiesta almeno un'identità",
+            "useDefaultIdentity": {
+                "string": "Usa come identità predefinita"
+            },
+            "setAsDefault": "Imposta come predefinita",
+            "defaultDescription": "Questa identità verrà utilizzata per impostazione predefinita durante la composizione di nuovi messaggi",
+            "mainIdentityEmail": "Questo è il tuo indirizzo email principale e non può essere modificato",
+            "nameNotEditable": "La modifica del nome è disabilitata dall'amministratore",
+            "replyToNotEditable": "La modifica del Rispondi A è disabilitata dall'amministratore",
+            "signatures": "Firme",
+            "signaturesDescription": "Crea e gestisci le firme email per questa identità",
+            "signaturePlaceholder": "Inserisci nome firma",
+            "addIdentity": "Aggiungi un'identità",
+            "allowsCustom": "Puoi aggiungere e gestire identità aggiuntive"
+        },
+        "description": {
+            "useDefaultIdentity": {
+                "string": "Questa identità verrà selezionata per impostazione predefinita durante la composizione di nuovi messaggi"
+            }
+        },
+        "accessibility": {
+            "toggleCollapse": "Mostra/nascondi dettagli identità",
+            "expandIdentity": "Espandi",
+            "collapseIdentity": "Comprimi",
+            "removeIcon": "Pulsante rimuovi identità"
+        }
+    }
+}

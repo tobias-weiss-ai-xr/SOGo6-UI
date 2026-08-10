@@ -1,0 +1,95 @@
+{
+    "US_MAIL_NOTIFICATIONS": {
+        "title": {
+            "string": "Notifiche Posta"
+        },
+        "page": {
+            "description": {
+                "string": "Invia notifiche email quando i tuoi filtri posta vengono attivati."
+            }
+        },
+        "labels": {
+            "enabled": {
+                "string": "Abilita notifiche posta"
+            },
+            "email": {
+                "string": "Indirizzi email"
+            },
+            "message": {
+                "string": "Messaggio di notifica"
+            }
+        },
+        "description": {
+            "enabled": {
+                "string": "Notifica indirizzi esterni quando una regola di filtro corrisponde alla posta in arrivo."
+            }
+        },
+        "help": {
+            "email": {
+                "string": "Invieremo notifiche a questi indirizzi quando i filtri vengono attivati"
+            }
+        },
+        "hints": {
+            "blur": {
+                "string": "Premi Invio per aggiungere questo indirizzo"
+            }
+        },
+        "placeholders": {
+            "email": {
+                "string": "Aggiungi indirizzo email e premi Invio"
+            },
+            "message": {
+                "string": "Inserisci messaggio di notifica"
+            }
+        },
+        "errors": {
+            "email": {
+                "invalid": {
+                    "string": "Inserisci un indirizzo email valido"
+                },
+                "duplicate": {
+                    "string": "Questo indirizzo è già nella lista"
+                }
+            },
+            "max_reached": {
+                "string": "Massimo {max} indirizzi consentiti"
+            },
+            "validation": {
+                "addresses_required": {
+                    "string": "È richiesto almeno un indirizzo email quando le notifiche sono abilitate."
+                },
+                "message_required": {
+                    "string": "È richiesto un messaggio di notifica."
+                }
+            }
+        },
+        "errors_api": {
+            "title": {
+                "string": "Errore"
+            },
+            "save_failed": {
+                "string": "Impossibile salvare le modifiche, riprova"
+            },
+            "load_failed": {
+                "string": "Impossibile caricare le impostazioni di notifica. Riprova più tardi."
+            },
+            "feature_disabled": {
+                "string": "Le notifiche posta sono state disabilitate dall'amministratore."
+            }
+        },
+        "aria": {
+            "toggle_notifications": {
+                "string": "Attiva/disattiva notifiche posta"
+            },
+            "tags_count": {
+                "string": "{count} di {max} indirizzi email aggiunti"
+            },
+            "remove_email": {
+                "string": "Rimuovi {email}"
+            },
+            "email_input_group": {
+                "string": "Indirizzi email per le notifiche"
+            }
+        }
+    }
+}

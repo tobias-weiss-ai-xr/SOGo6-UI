@@ -1,0 +1,31 @@
+{
+    "AP_APPROVALS": {
+        "title": { "string": "Flussi di Approvazione" },
+        "description": { "string": "Crea catene di approvazione multi-step per ordini di acquisto, annunci e altro." },
+        "form": {
+            "create": { "string": "Nuova Approvazione" },
+            "cancel": { "string": "Annulla" },
+            "title": { "string": "Crea Flusso di Approvazione" },
+            "workflow_title": { "string": "Titolo" },
+            "category": { "string": "Categoria" },
+            "description": { "string": "Descrizione" },
+            "steps": { "string": "Passaggi di Approvazione" },
+            "submit": { "string": "Crea Flusso" }
+        },
+        "create": {
+            "success": { "string": "Flusso creato" },
+            "error": { "string": "Creazione fallita" }
+        },
+        "action": {
+            "approved": { "string": "Passaggio approvato" },
+            "rejected": { "string": "Respinto" },
+            "error": { "string": "Azione fallita" }
+        },
+        "list": {
+            "empty": { "string": "Nessun flusso di approvazione ancora." }
+        },
+        "errors": {
+            "fields": { "string": "Titolo e almeno un passaggio con email sono obbligatori" }
+        }
+    }
+}

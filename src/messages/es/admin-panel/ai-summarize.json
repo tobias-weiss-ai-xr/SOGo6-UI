@@ -1,0 +1,46 @@
+{
+  "AI_SUMMARIZE": {
+    "title": {
+      "string": "Resumen de correo"
+    },
+    "description": {
+      "string": "Resumen extractivo basado en puntuación de oraciones"
+    },
+    "input": {
+      "title": {
+        "string": "Entrada"
+      },
+      "text": {
+        "string": "Texto del correo"
+      },
+      "sentences": {
+        "string": "Oraciones"
+      },
+      "placeholder": {
+        "string": "Pegue el texto del correo aquí..."
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Resumen"
+      },
+      "empty": {
+        "string": "El resumen aparecerá aquí"
+      }
+    },
+    "summarize": {
+      "string": "Resumir"
+    },
+    "loading": {
+      "string": "Resumiendo..."
+    },
+    "errors": {
+      "empty": {
+        "string": "Texto requerido"
+      },
+      "fail": {
+        "string": "Operación fallida"
+      }
+    }
+  }
+}

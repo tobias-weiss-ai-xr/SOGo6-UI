@@ -1,0 +1,68 @@
+{
+    "AP_WEBHOOKS": {
+        "title": {
+            "string": "Webhooks"
+        },
+        "description": {
+            "string": "Webhooks sortants pour n8n, Make et autres plateformes."
+        },
+        "form": {
+            "add": {
+                "string": "Ajouter un webhook"
+            },
+            "cancel": {
+                "string": "Annuleur"
+            },
+            "title": {
+                "string": "Nouveau webhook"
+            },
+            "url": {
+                "string": "URL du webhook"
+            },
+            "name": {
+                "string": "Nom d'affichage"
+            },
+            "name_placeholder": {
+                "string": "ex. workflow n8n"
+            },
+            "secret": {
+                "string": "Secret de signature"
+            },
+            "secret_placeholder": {
+                "string": "Secret HMAC (optionnel)"
+            },
+            "events": {
+                "string": "Evenements"
+            },
+            "create": {
+                "string": "Creer un webhook"
+            }
+        },
+        "create": {
+            "success": {
+                "string": "Webhook cree"
+            },
+            "error": {
+                "string": "Echec de la creation"
+            }
+        },
+        "delete": {
+            "success": {
+                "string": "Webhook supprime"
+            },
+            "error": {
+                "string": "Echec de la suppression"
+            }
+        },
+        "list": {
+            "empty": {
+                "string": "Aucun webhook configure."
+            }
+        },
+        "errors": {
+            "fields": {
+                "string": "URL et au moins un evenement requis"
+            }
+        }
+    }
+}

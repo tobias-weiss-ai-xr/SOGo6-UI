@@ -1,0 +1,59 @@
+{
+    "NAVIGATION": {
+        "address_book": {
+            "string": "สมุดรายชื่อ"
+        },
+        "calendar": {
+            "string": "ปฏิทิน"
+        },
+        "tasks": {
+            "string": "งาน"
+        },
+        "notes": {
+            "string": "บันทึก"
+        },
+        "fast_access": {
+            "calendar": {
+                "title": "ปฏิทิน",
+                "view_all": "ดูทั้งหมด",
+                "today": "วันนี้",
+                "no_events": "ไม่มีกิจกรรมวันนี้",
+                "all_day": "All day",
+                "loading": "กำลังโหลดกิจกรรม…",
+                "error": "ปฏิทิน"
+            },
+            "tasks": {
+                "title": "งาน",
+                "view_all": "ดูทั้งหมด",
+                "search_placeholder": "Search tasks",
+                "overdue": "Overdue",
+                "today": "วันนี้",
+                "upcoming": "Upcoming",
+                "no_due_date": "No due date",
+                "empty": "You're all caught up",
+                "no_results": "No matches",
+                "loading": "กำลังโหลดงาน…",
+                "error": "Could not load tasks"
+            },
+            "address_book": {
+                "title": "Contacts",
+                "view_all": "View all",
+                "search_placeholder": "Search contacts and lists",
+                "distribution_lists": "Distribution lists",
+                "contacts": "Contacts",
+                "member_count": "{number} members",
+                "compose": "Write message",
+                "loading": "Loading contacts…",
+                "error": "Could not load contacts",
+                "empty": "No address book available",
+                "no_entries": "No contacts or lists yet",
+                "no_results": "No matches",
+                "search_min_length": "Enter at least 2 characters to search."
+            },
+            "coming_soon": {
+                "title": "Feature incoming",
+                "description": "This section is under development and will be available soon."
+            }
+        }
+    }
+}

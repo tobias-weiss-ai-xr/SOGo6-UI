@@ -1,0 +1,171 @@
+{
+  "US_MAIL_GENERAL": {
+    "title": {
+      "string": "Ustawienia ogólne poczty",
+      "context": "Title for the mail general settings page"
+    },
+    "compose_message_in": {
+      "string": "Tworzenie wiadomości w",
+      "context": "Dropdown label in what way to compose messages"
+    },
+    "display_subscribed_mailboxes_only": {
+      "string": "Pokaż tylko subskrybowane skrzynki pocztowe",
+      "context": "Checkbox to show subscribed mailboxes only"
+    },
+    "fetch_count_of_unseen_messages": {
+      "string": "Pobierz liczbę nieprzeczytanych wiadomości dla wszystkich skrzynek",
+      "context": "Checkbox to fetch count of unseen messages for all mailboxes"
+    },
+    "sort_messages_by_threads": {
+      "string": "Sortuj wiadomości według wątków",
+      "context": "Checkbox to sort messages by threads"
+    },
+    "show_recipients_or_sender_full_email": {
+      "string": "Pokaż pełny adres e-mail nadawcy lub odbiorców w skrzynkach",
+      "context": "Checkbox to show recipients or sender full email in mailboxes"
+    },
+    "hide_attachments_for_inline_images": {
+      "string": "Nie wyświetlaj osadzonych obrazów jako załączników w podglądzie wiadomości",
+      "context": "Checkbox to hide attachments for inline images"
+    },
+    "automatically_mark_messages_as_read": {
+      "string": "Oznacz wiadomości jako przeczytane po (zdefiniowanej) liczbie sekund",
+      "context": "Checkbox to automatically mark messages as read"
+    },
+    "collect_unknown_addresses": {
+      "string": "Zapisz nieznane adresy e-mail w książce adresowej",
+      "context": "Checkbox to collect unknown mail addresses"
+    },
+    "collect_unknown_addressbook_name": {
+      "string": "Nazwa książki adresowej",
+      "context": "Input for the unknown email addressbook name"
+    },
+    "forward_messages": {
+      "title": {
+        "string": "Przekazywanie wiadomości",
+        "context": "Dropdown label for forward messages"
+      },
+      "as_attachment": {
+        "string": "Jako załącznik",
+        "context": "Checkbox to forward messages as attachment"
+      },
+      "as_inline": {
+        "string": "Osadzone w treści",
+        "context": "Checkbox to forward messages as inline"
+      }
+    },
+    "start_reply": {
+      "title": {
+        "string": "Podczas odpowiadania na wiadomość",
+        "context": "Dropdown label to know where to start in the mail when replying"
+      },
+      "to_above": {
+        "string": "Zacznij moją odpowiedź powyżej cytatu",
+        "context": "Checkbox to start replying at the bottom"
+      },
+      "to_below": {
+        "string": "Zacznij moją odpowiedź poniżej cytatu",
+        "context": "Checkbox to start replying at the top"
+      }
+    },
+    "place_signature": {
+      "title": {
+        "string": "i umieść podpis",
+        "context": "Dropdown label to know where to place the signature"
+      },
+      "above": {
+        "string": "powyżej cytatu",
+        "context": "Checkbox to start replying at the bottom"
+      },
+      "below": {
+        "string": "poniżej cytatu",
+        "context": "Checkbox to start replying at the top"
+      }
+    },
+    "attachment_position": {
+      "title": {
+        "string": "Umieść załącznik",
+        "context": "Dropdown label to know where to place the attachment"
+      },
+      "above": {
+        "string": "powyżej wiadomości"
+      },
+      "below": {
+        "string": "poniżej wiadomości"
+      }
+    },
+    "sign_on": {
+      "new": {
+        "string": "Wstaw podpis w nowej wiadomości"
+      },
+      "reply": {
+        "string": "Wstaw podpis w odpowiedzi"
+      },
+      "forward": {
+        "string": "Wstaw podpis przy przekazaniu"
+      }
+    },
+    "default_font_size": {
+      "title": {
+        "string": "Domyślny rozmiar czcionki",
+        "context": "Dropdown label to know the default font size"
+      },
+      "sm": {
+        "string": "Mały",
+        "context": "Small font size"
+      },
+      "md": {
+        "string": "Średni",
+        "context": "Medium font size"
+      },
+      "lg": {
+        "string": "Duży",
+        "context": "Large font size"
+      },
+      "xl": {
+        "string": "Bardzo duży",
+        "context": "Extra large font size"
+      }
+    },
+    "display_remote_images": {
+      "string": "Wyświetlaj zdalne obrazy osadzone w treści",
+      "context": "Checkbox to set display remote inline images to true or false"
+    },
+    "compose": {
+      "title": {
+        "string": "Domyślne zachowanie otwierania edytora wiadomości",
+        "context": "Dropdown label to know where to open compose in"
+      },
+      "always_ask": {
+        "string": "Zawsze pytaj, czy otwierać edytor w nowym oknie, czy w interfejsie webmaila",
+        "context": "Dropdown label to know where to open compose in"
+      },
+      "in_new_window": {
+        "string": "Otwórz edytor w nowym oknie",
+        "context": "Dropdown label to know where to open compose in"
+      },
+      "inside_webmail": {
+        "string": "Otwórz edytor w interfejsie webmaila",
+        "context": "Dropdown label to know where to open compose in"
+      }
+    },
+    "mail_allow_receipt": {
+      "string": "Zezwól na żądanie potwierdzenia odbioru",
+      "context": "Checkbox to allow mail to ask for receipts"
+    },
+    "mail_folder_subscribe": {
+      "string": "Pokaż tylko subskrybowane skrzynki pocztowe",
+      "context": "Checkbox to show subscribed mailboxes only"
+    },
+    "compose_mail_window": {
+      "string": "Okno tworzenia wiadomości",
+      "context": "Dropdown label to know where to open compose in",
+      "popup": {
+        "string": "Compose email in a popup"
+      },
+      "inline": {
+        "string": "Compose email inside the webmail"
+      }
+    }
+  }
+}

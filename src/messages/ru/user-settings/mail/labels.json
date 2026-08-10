@@ -1,0 +1,14 @@
+{
+  "US_MAIL_LABELS": {
+    "title": {
+      "string": "Метки писем",
+      "context": "Title for the mail labels settings page"
+    },
+    "label": {
+      "string": "Метка"
+    },
+    "imap_label": {
+      "string": "IMAP-метка"
+    }
+  }
+}

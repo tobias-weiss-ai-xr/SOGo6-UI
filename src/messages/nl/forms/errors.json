@@ -1,0 +1,14 @@
+{
+  "FORM_ERRORS": {
+    "required": {
+      "default": {
+        "string": "Dit veld is verplicht"
+      }
+    },
+    "invalid": {
+      "email": {
+        "string": "Ongeldig e-mailadres"
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+    "COMMONS": {
+        "close": {
+            "string": "Fechar"
+        },
+        "workInProgress": {
+            "description": {
+                "string": "Esta funcionalidade está em desenvolvimento."
+            },
+            "message": {
+                "string": "Estamos trabalhando para disponibilizar esta funcionalidade."
+            },
+            "comingSoon": {
+                "string": "Em breve! Fique atento."
+            }
+        }
+    },
+    "COMMON": {
+        "demo": {
+            "warning": {
+                "title": {
+                    "string": "Versão de demonstração"
+                },
+                "description": {
+                    "string": "Você está usando uma versão demo da aplicação. Algumas funcionalidades podem estar limitadas."
+                },
+                "action": {
+                    "string": "Entendi"
+                }
+            }
+        },
+        "language": {
+            "english": "Inglês",
+            "french": "Francês"
+        },
+        "serviceUnavailable": {
+            "title": {
+                "string": "Serviço indisponível"
+            },
+            "description": {
+                "string": "A aplicação não conseguiu conectar ao servidor. Tente novamente mais tarde ou entre em contato com o administrador."
+            },
+            "retry": {
+                "string": "Tentar novamente"
+            }
+        }
+    }
+}

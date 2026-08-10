@@ -1,0 +1,40 @@
+{
+  "AI_ATTACH": {
+    "title": {
+      "string": "Acțiuni inteligente pentru atașamente"
+    },
+    "description": {
+      "string": "Detectează automat tipul documentului și sugerează acțiuni de salvare, redirecționare sau arhivare."
+    },
+    "input": {
+      "title": {
+        "string": "Atașament"
+      },
+      "filename": {
+        "string": "Nume fișier"
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Analiză"
+      },
+      "empty": {
+        "string": "Introduceți un nume de fișier"
+      },
+      "preview": {
+        "string": "Poate fi previzualizat"
+      }
+    },
+    "classify": {
+      "string": "Clasifică"
+    },
+    "errors": {
+      "empty": {
+        "string": "Introduceți un nume de fișier"
+      },
+      "fail": {
+        "string": "Clasificarea a eșuat"
+      }
+    }
+  }
+}

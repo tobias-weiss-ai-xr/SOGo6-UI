@@ -1,0 +1,322 @@
+{
+    "CONTACT_FORM": {
+        "emails": {
+            "string": "Indirizzi email",
+            "context": "Label for the email addresses section in the contact form."
+        },
+        "addresses": {
+            "string": "Indirizzi",
+            "context": "Label for the addresses section in the contact form."
+        },
+        "phone_numbers": {
+            "string": "Numeri di telefono",
+            "context": "Label for the phone numbers section in the contact form."
+        },
+        "urls": {
+            "string": "URL",
+            "context": "Label for the URLs section in the contact form."
+        },
+        "birthday": {
+            "string": "Compleanno",
+            "context": "Label for the birthday field in the contact visualization."
+        },
+        "notes": {
+            "string": "Note",
+            "context": "Label for the notes section in the contact form."
+        },
+        "contact_information": {
+            "string": "Informazioni di contatto",
+            "context": "Label for the contact information section in the contact form."
+        },
+        "contact_details": {
+            "string": "Dettagli contatto",
+            "context": "Title for the contact details view header."
+        },
+        "back_to_list": {
+            "string": "Torna all'elenco",
+            "context": "Button label to return to the contact list."
+        },
+        "copied_to_clipboard": {
+            "string": "Copiato negli appunti",
+            "context": "Toast message when content is copied successfully."
+        },
+        "copied_value": {
+            "string": "Copiato: {value}",
+            "context": "Toast description showing what was copied."
+        },
+        "copy_failed": {
+            "string": "Copia fallita",
+            "context": "Toast error message when copy operation fails."
+        },
+        "copy_failed_description": {
+            "string": "Impossibile copiare negli appunti. Riprova.",
+            "context": "Toast error description when copy fails."
+        },
+        "copy_email": {
+            "string": "Copia email",
+            "context": "Tooltip for copy email button."
+        },
+        "copy": {
+            "string": "Copia",
+            "context": "Generic copy button label."
+        },
+        "edit": {
+            "string": "Modifica",
+            "context": "Button label to edit a field."
+        },
+        "export": {
+            "string": "Esporta",
+            "context": "Button label to export a contact."
+        },
+        "save": {
+            "string": "Salva",
+            "context": "Button label to save changes."
+        },
+        "cancel": {
+            "string": "Annulla",
+            "context": "Button label to cancel editing."
+        },
+        "edit_note": {
+            "string": "Modifica nota",
+            "context": "Button label to edit the contact note."
+        },
+        "add_note": {
+            "string": "Aggiungi nota",
+            "context": "Button label to add a note to the contact."
+        },
+        "no_notes": {
+            "string": "Nessuna nota",
+            "context": "Placeholder text when there are no notes."
+        },
+        "new_contact": {
+            "string": "Nuovo contatto",
+            "context": "Title for the new contact dialog"
+        },
+        "edit_contact": {
+            "string": "Modifica contatto",
+            "context": "Title for the edit contact dialog"
+        },
+        "create": {
+            "string": "Crea",
+            "context": "Button to create a new contact"
+        },
+        "delete": {
+            "string": "Elimina",
+            "context": "Button to delete a contact"
+        },
+        "add_email": {
+            "string": "Aggiungi email",
+            "context": "Button to add another email field"
+        },
+        "add_phone": {
+            "string": "Aggiungi telefono",
+            "context": "Button to add another phone field"
+        },
+        "remove_field": {
+            "string": "Rimuovi campo",
+            "context": "Aria label for removing a dynamic form field"
+        },
+        "add_address": {
+            "string": "Aggiungi indirizzo",
+            "context": "Button to add another address field"
+        },
+        "add_url": {
+            "string": "Aggiungi URL",
+            "context": "Button to add another URL field"
+        },
+        "add_impp": {
+            "string": "Aggiungi messaggistica istantanea",
+            "context": "Button to add another instant messaging field"
+        },
+        "categories": {
+            "string": "Categorie",
+            "context": "Label for contact categories field"
+        },
+        "photo": {
+            "string": "Foto",
+            "context": "Label for contact photo upload"
+        },
+        "photo_upload": {
+            "string": "Carica una foto",
+            "context": "Button to select a contact photo file"
+        },
+        "photo_change": {
+            "string": "Cambia foto",
+            "context": "Button to change contact photo"
+        },
+        "photo_remove": {
+            "string": "Rimuovi foto",
+            "context": "Button to remove contact photo"
+        },
+        "anniversary": {
+            "string": "Anniversario",
+            "context": "Label for anniversary field in contact visualization"
+        },
+        "impp": {
+            "string": "Messaggistica istantanea",
+            "context": "Label for instant messaging addresses"
+        },
+        "geo": {
+            "string": "Posizione",
+            "context": "Label for geographic location"
+        },
+        "submit_error": {
+            "string": "Impossibile salvare. Controlla il modulo e riprova.",
+            "context": "Generic submit error shown in contact form"
+        },
+        "fields": {
+            "first_name": {
+                "string": "Nome"
+            },
+            "last_name": {
+                "string": "Cognome"
+            },
+            "middle_name": {
+                "string": "Secondo nome"
+            },
+            "prefix": {
+                "string": "Prefisso"
+            },
+            "suffix": {
+                "string": "Suffisso"
+            },
+            "nickname": {
+                "string": "Soprannome"
+            },
+            "organization": {
+                "string": "Organizzazione"
+            },
+            "department": {
+                "string": "Dipartimento"
+            },
+            "job_title": {
+                "string": "Titolo professionale"
+            },
+            "role": {
+                "string": "Ruolo"
+            },
+            "impp": {
+                "string": "Messaggistica istantanea"
+            },
+            "anniversary": {
+                "string": "Anniversario"
+            },
+            "birthday_unknown_year": {
+                "string": "Anno sconosciuto (solo mese e giorno)"
+            },
+            "street": {
+                "string": "Via"
+            },
+            "city": {
+                "string": "Città"
+            },
+            "postal_code": {
+                "string": "Codice postale"
+            },
+            "country": {
+                "string": "Paese"
+            },
+            "region": {
+                "string": "Regione / Stato"
+            },
+            "po_box": {
+                "string": "Casella postale"
+            },
+            "extended": {
+                "string": "Indirizzo esteso"
+            },
+            "contact_kind": {
+                "string": "Tipo di contatto"
+            },
+            "contact_kind_individual": {
+                "string": "Persona"
+            },
+            "contact_kind_org": {
+                "string": "Organizzazione"
+            },
+            "organization_required": {
+                "string": "Nome organizzazione"
+            },
+            "type": {
+                "string": "Tipo"
+            },
+            "type_default": {
+                "string": "Predefinito"
+            },
+            "pref": {
+                "string": "Preferito"
+            },
+            "email_type_work": {
+                "string": "Lavoro"
+            },
+            "email_type_home": {
+                "string": "Casa"
+            },
+            "email_type_other": {
+                "string": "Altro"
+            },
+            "phone_type_work": {
+                "string": "Lavoro"
+            },
+            "phone_type_home": {
+                "string": "Casa"
+            },
+            "phone_type_mobile": {
+                "string": "Cellulare"
+            },
+            "phone_type_other": {
+                "string": "Altro"
+            },
+            "url": {
+                "string": "URL"
+            }
+        },
+        "delete_dialog": {
+            "title": {
+                "string": "Eliminare il contatto?"
+            },
+            "description": {
+                "string": "Questo contatto verrà rimosso permanentemente dalla tua rubrica."
+            },
+            "confirm": {
+                "string": "Elimina"
+            }
+        },
+        "write_message": {
+            "string": "Scrivi messaggio",
+            "context": "Button to compose an email to this contact."
+        },
+        "actions_menu": {
+            "string": "Altre azioni",
+            "context": "Aria label for the contact actions dropdown menu."
+        },
+        "compose_email": {
+            "string": "Componi",
+            "context": "Button to compose an email to a specific address on the contact card."
+        },
+        "selection_placeholder": {
+            "title": {
+                "string": "Seleziona un contatto",
+                "context": "Title shown when no contact is selected in the detail panel."
+            },
+            "description": {
+                "string": "Scegli un contatto o una lista di distribuzione dall'elenco per visualizzare i dettagli.",
+                "context": "Description shown when no contact is selected."
+            }
+        },
+        "load_error": {
+            "title": {
+                "string": "Impossibile caricare il contatto",
+                "context": "Error title when contact details fail to load."
+            },
+            "list": {
+                "string": "Impossibile caricare i contatti",
+                "context": "Error message when the contact list fails to load."
+            },
+            "description": {
+                "string": "Riprova più tardi.",
+                "context": "Error description when contact data fails to load."
+            }
+        }
+    }
+}

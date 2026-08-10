@@ -1,0 +1,50 @@
+{
+  "SCIM": {
+    "title": {
+      "string": "SCIM-Bereitstellung"
+    },
+    "description": {
+      "string": "SCIM 2.0 Identitätslebenszyklus für Azure AD, Okta und andere IdPs"
+    },
+    "errors": {
+      "email": {
+        "string": "E-Mail erforderlich"
+      },
+      "fail": {
+        "string": "Vorgang fehlgeschlagen"
+      }
+    },
+    "success": {
+      "create": {
+        "string": "Benutzer bereitgestellt"
+      },
+      "delete": {
+        "string": "Benutzer entfernen"
+      }
+    },
+    "field": {
+      "email": {
+        "string": "Benutzername/E-Mail"
+      },
+      "name": {
+        "string": "Anzeigename"
+      },
+      "status": {
+        "string": "Status"
+      }
+    },
+    "button": {
+      "provision": {
+        "string": "Benutzer bereitstellen"
+      }
+    },
+    "users": {
+      "title": {
+        "string": "Bereitgestellte Benutzer"
+      },
+      "empty": {
+        "string": "Noch keine SCIM-Benutzer"
+      }
+    }
+  }
+}

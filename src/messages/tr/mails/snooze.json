@@ -1,0 +1,39 @@
+{
+  "MAIL_SNOOZE": {
+    "title": {
+      "string": "Ertele"
+    },
+    "description": {
+      "string": "Bu e-postanın gelen kutunuza tekrar görünmesi için bir zaman seçin."
+    },
+    "presets": {
+      "later_today": {
+        "string": "Bugün daha sonra"
+      },
+      "tomorrow": {
+        "string": "Yarın"
+      },
+      "this_weekend": {
+        "string": "Bu hafta sonu"
+      },
+      "next_week": {
+        "string": "Gelecek hafta"
+      }
+    },
+    "pick_date": {
+      "string": "Tarih ve saat seçin"
+    },
+    "pick_date_placeholder": {
+      "string": "Tarih seçin..."
+    },
+    "snooze_button": {
+      "string": "Ertele"
+    },
+    "success": {
+      "string": "E-posta ertelendi"
+    },
+    "error": {
+      "string": "E-posta erteleme başarısız"
+    }
+  }
+}

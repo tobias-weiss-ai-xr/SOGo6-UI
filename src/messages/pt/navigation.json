@@ -1,0 +1,59 @@
+{
+    "NAVIGATION": {
+        "address_book": {
+            "string": "Agenda"
+        },
+        "calendar": {
+            "string": "Calendário"
+        },
+        "tasks": {
+            "string": "Tarefas"
+        },
+        "notes": {
+            "string": "Notas"
+        },
+        "fast_access": {
+            "calendar": {
+                "title": "Calendário",
+                "view_all": "Ver tudo",
+                "today": "Hoje",
+                "no_events": "Sem eventos hoje",
+                "all_day": "Dia todo",
+                "loading": "A carregar eventos…",
+                "error": "Calendário"
+            },
+            "tasks": {
+                "title": "Tarefas",
+                "view_all": "Ver tudo",
+                "search_placeholder": "Pesquisar tarefas",
+                "overdue": "Atrasadas",
+                "today": "Hoje",
+                "upcoming": "Próximas",
+                "no_due_date": "Sem data de vencimento",
+                "empty": "Você está em dia",
+                "no_results": "Sem correspondências",
+                "loading": "A carregar attivitàs…",
+                "error": "Não foi possível carregar tarefas"
+            },
+            "address_book": {
+                "title": "Contatos",
+                "view_all": "Ver todos",
+                "search_placeholder": "Pesquisar contatos e listas",
+                "distribution_lists": "Listas de distribuição",
+                "contacts": "Contatos",
+                "member_count": "{number} membros",
+                "compose": "Escrever mensagem",
+                "loading": "Carregando contatos…",
+                "error": "Não foi possível carregar contatos",
+                "empty": "Nenhuma caderneta de endereços disponível",
+                "no_entries": "Ainda não há contatos ou listas",
+                "no_results": "Sem correspondências",
+                "search_min_length": "Digite pelo menos 2 caracteres para pesquisar."
+            },
+            "coming_soon": {
+                "title": "Recurso em breve",
+                "description": "Esta seção está em desenvolvimento e estará disponível em breve."
+            }
+        }
+    }
+}

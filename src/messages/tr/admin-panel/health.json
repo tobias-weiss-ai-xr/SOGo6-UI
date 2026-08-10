@@ -1,0 +1,34 @@
+{
+  "AP_HEALTH": {
+    "title": {
+      "string": "Sistem Durumu"
+    },
+    "description": {
+      "string": "SOGo yığınındaki tüm hizmetlerin gerçek zamanlı durumu."
+    },
+    "status": {
+      "all_ok": {
+        "string": "Tüm Sistemler Çalışıyor"
+      },
+      "degraded": {
+        "string": "Bozulmuş"
+      }
+    },
+    "overview": {
+      "uptime": {
+        "string": "Çalışma Süresi"
+      },
+      "version": {
+        "string": "Sürüm"
+      },
+      "services": {
+        "string": "Hizmetler Sağlam"
+      }
+    },
+    "errors": {
+      "load_failed": {
+        "string": "Durum verileri yüklenemedi"
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "US_MAIL_LABELS": {
+    "title": {
+      "string": "Etichete poștale",
+      "context": "Title for the mail labels settings page"
+    },
+    "label": {
+      "string": "Etichetă"
+    },
+    "imap_label": {
+      "string": "Etichetă IMAP"
+    }
+  }
+}

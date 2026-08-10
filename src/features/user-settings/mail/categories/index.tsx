@@ -2,6 +2,8 @@
 
 import { useTranslations } from 'next-intl'
 import React from 'react'
+
+import { ErrorAlertWithRetry } from '@/components/ui/error-alert'
 import LabelsFormSkeleton from './components/skeleton'
 
 import {
@@ -13,10 +15,10 @@ import { MailCategoriesSettingsForm } from './components/mail-categories-form'
 
 const MailCategoriesSettings: React.FC = () => {
   const t = useTranslations('US_MAIL_CATEGORIES')
-  const { data, error, isFetching } = useGetUserPreferencesQuery()
+  const { data, error, isFetching, refetch } = useGetUserPreferencesQuery()
   const [updateMail] = useUpdateUserPreferencesMailCategoryMutation()
   if (error) {
-    return 'ERROR' //TODO
+    return <ErrorAlertWithRetry onRetry={() => refetch()} />
   }
   return (
     <div className="grid grid-cols-1 gap-4">

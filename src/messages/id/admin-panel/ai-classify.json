@@ -1,0 +1,46 @@
+{
+  "AI_CLASSIFY": {
+    "title": {
+      "string": "Klasifikasi Email Cerdas"
+    },
+    "description": {
+      "string": "Label otomatis email: buletin, faktur, notifikasi, sosial, pribadi."
+    },
+    "input": {
+      "title": {
+        "string": "Email Masukan"
+      },
+      "subject": {
+        "string": "Subjek"
+      },
+      "sender": {
+        "string": "Pengirim"
+      },
+      "body": {
+        "string": "Isi"
+      },
+      "placeholder": {
+        "string": "Tempel konten email..."
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Hasil Klasifikasi"
+      },
+      "empty": {
+        "string": "Masukkan teks dan klik Klasifikasi"
+      }
+    },
+    "classify": {
+      "string": "Klasifikasi"
+    },
+    "errors": {
+      "empty": {
+        "string": "Masukkan teks email"
+      },
+      "fail": {
+        "string": "Klasifikasi gagal"
+      }
+    }
+  }
+}

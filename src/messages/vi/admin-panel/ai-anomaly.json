@@ -1,0 +1,49 @@
+{
+  "AI_ANOMALY": {
+    "title": {
+      "string": "Phát hiện Dị thường"
+    },
+    "description": {
+      "string": "Đánh dấu các mẫu gửi bất thường: gửi hàng loạt, giờ lẻ, người nhận mới."
+    },
+    "input": {
+      "title": {
+        "string": "Mẫu Gửi"
+      },
+      "recipients": {
+        "string": "Số lượng Người nhận"
+      },
+      "hour": {
+        "string": "Giờ (0-23)"
+      },
+      "new_ratio": {
+        "string": "Tỷ lệ Người nhận Mới"
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Kết quả Phân tích"
+      },
+      "empty": {
+        "string": "Nhập giá trị và nhấn Phân tích"
+      },
+      "anomaly": {
+        "string": "Phát hiện Dị thường!"
+      },
+      "normal": {
+        "string": "Mẫu Bình thường"
+      },
+      "score": {
+        "string": "Điểm Rủi ro"
+      }
+    },
+    "analyze": {
+      "string": "Phân tích"
+    },
+    "errors": {
+      "fail": {
+        "string": "Phân tích thất bại"
+      }
+    }
+  }
+}

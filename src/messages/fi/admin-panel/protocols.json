@@ -1,0 +1,10 @@
+{
+  "PROTOCOLS": {
+    "title": {
+      "string": "Sähköpostiprotokollien tila"
+    },
+    "description": {
+      "string": "JMAP- ja ActiveSync-protokollapalvelimien tila ja ominaisuudet"
+    }
+  }
+}

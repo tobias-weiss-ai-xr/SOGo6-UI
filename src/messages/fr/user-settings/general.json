@@ -12,19 +12,19 @@
                 "string": "Fuseau horaire"
             },
             "short_date_style": {
-                "string": "Style de date court"
+                "string": "Format date court"
             },
             "long_date_style": {
-                "string": "Style de date long"
+                "string": "Format date long"
             },
             "time_style": {
-                "string": "Style d'heure"
+                "string": "Format heure"
             },
             "default_view": {
                 "string": "Vue par défaut"
             },
             "refresh_frequency": {
-                "string": "Fréquence de rafraîchissement"
+                "string": "Fréquence d'actualisation"
             },
             "enable_notifications": {
                 "string": "Activer les notifications"
@@ -33,42 +33,48 @@
                 "string": "Paramètres généraux enregistrés"
             },
             "mail": {
-                "string": "Mail"
+                "string": "Courrieur"
             },
             "calendar": {
-                "string": "Calendrier"
+                "string": "Agenda"
             },
             "contacts": {
                 "string": "Contacts"
             },
             "last": {
-                "string": "Dernier module affiché"
+                "string": "Last displayed module"
+            },
+            "enable_external_avatar": {
+                "string": "Enable external avatar"
             }
         },
         "descriptions": {
             "language": {
-                "string": "La langue utilisée dans l'application."
+                "string": "The language used in the app."
             },
             "timezone": {
-                "string": "Le fuseau horaire dans lequel vous vous trouvez."
+                "string": "The time zone you are in."
             },
             "short_date_style": {
-                "string": "Comment les dates sont affichées dans l'application."
+                "string": "How dates are displayed in the app."
             },
             "long_date_style": {
-                "string": "Comment les dates sont affichées dans l'application."
+                "string": "How dates are displayed in the app."
             },
             "time_style": {
-                "string": "Comment l'heure est affichée dans l'application."
+                "string": "How time is displayed in the app."
             },
             "default_view": {
-                "string": "La vue par défaut lorsque vous ouvrez l'application."
+                "string": "The default view when you open the app."
             },
             "refresh_frequency": {
-                "string": "À quelle fréquence l'application devrait-elle vérifier les nouveaux emails, événements de calendrier et autres ?"
+                "string": " How often the app should check for new emails, calendar events, and more."
             },
             "enable_notifications": {
-                "string": "Recevoir des notifications pour les nouveaux emails, événements de calendrier et autres."
+                "string": "Receive notifications for new emails, calendar events, and more."
+            },
+            "enable_external_avatar": {
+                "string": "Enable external avatar (e.g., Gravatar)"
             }
         }
     }

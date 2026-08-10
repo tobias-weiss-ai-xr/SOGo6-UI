@@ -1,0 +1,88 @@
+{
+    "HEADER": {
+        "theme": {
+            "title": {
+                "string": "Tema",
+                "context": "Titolo sezione per il menu a tendina dell'intestazione"
+            },
+            "dark": {
+                "string": "Scuro",
+                "context": "Interruttore tema scuro nell'intestazione"
+            },
+            "light": {
+                "string": "Chiaro",
+                "context": "Interruttore tema chiaro nell'intestazione"
+            },
+            "dyslexia": {
+                "string": "Dislessia",
+                "context": "Interruttore tema dislessia nell'intestazione"
+            },
+            "tritanopia": {
+                "string": "Tritanopia",
+                "context": "Interruttore tema tritanopia nell'intestazione"
+            },
+            "protanopia": {
+                "string": "Protanopia",
+                "context": "Interruttore tema protanopia nell'intestazione"
+            },
+            "deuteranopia": {
+                "string": "Deuteranopia",
+                "context": "Interruttore tema deuteranopia nell'intestazione"
+            },
+            "system": {
+                "string": "Auto",
+                "context": "Interruttore tema automatico nell'intestazione"
+            }
+        },
+        "admin": {
+            "panel": {
+                "string": "Pannello Amministratore",
+                "context": "Titolo del pannello di amministrazione nel menu a tendina dell'intestazione"
+            }
+        },
+        "account": {
+            "section": {
+                "string": "Account",
+                "context": "Titolo sezione per il menu a tendina dell'intestazione"
+            },
+            "profile": {
+                "string": "Profilo",
+                "context": "Link al profilo account nel menu a tendina dell'intestazione"
+            },
+            "security": {
+                "string": "Sicurezza",
+                "context": "Link alla sicurezza account nel menu a tendina dell'intestazione"
+            },
+            "defaultUser": {
+                "string": "Utente",
+                "context": "Nome utente predefinito quando il profilo non è ancora caricato"
+            }
+        },
+        "logout": {
+            "string": "Disconnetti",
+            "context": "Link per disconnettersi nel menu a tendina dell'intestazione"
+        },
+        "settings": {
+            "title": {
+                "string": "Impostazioni",
+                "context": "Titolo sezione per il menu a tendina dell'intestazione"
+            },
+            "general": {
+                "string": "Generale",
+                "context": "Link alle impostazioni generali nel menu a tendina dell'intestazione"
+            },
+            "calendar": {
+                "string": "Calendario",
+                "context": "Link alle impostazioni calendario nel menu a tendina dell'intestazione"
+            },
+            "address_books": {
+                "string": "Rubriche",
+                "context": "Link alle impostazioni rubriche nel menu a tendina dell'intestazione"
+            },
+            "email": {
+                "string": "Email",
+                "context": "Link alle impostazioni email nel menu a tendina dell'intestazione"
+            }
+        }
+    }
+}

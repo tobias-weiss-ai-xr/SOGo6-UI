@@ -1,0 +1,14 @@
+{
+  "FORM_ERRORS": {
+    "required": {
+      "default": {
+        "string": "Acest câmp este obligatoriu"
+      }
+    },
+    "invalid": {
+      "email": {
+        "string": "Adresă de email invalidă"
+      }
+    }
+  }
+}

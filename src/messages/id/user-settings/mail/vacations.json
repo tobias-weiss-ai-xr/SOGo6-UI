@@ -1,0 +1,133 @@
+{
+  "US_MAIL_VACATIONS": {
+    "title": {
+      "string": "Pengaturan Liburan",
+      "context": "Title for the vacation settings page"
+    },
+    "page": {
+      "description": {
+        "string": "Konfigurasi pesan balasan otomatis saat tidak di kantor dan kapan harus diaktifkan."
+      }
+    },
+    "errors_api": {
+      "load_failed": {
+        "string": "Tidak dapat memuat pengaturan liburan. Silakan coba lagi nanti."
+      },
+      "feature_disabled": {
+        "string": "Balasan otomatis liburan dinonaktifkan oleh administrator Anda."
+      }
+    },
+    "errors": {
+      "validation": {
+        "message_required": {
+          "string": "Pesan balasan otomatis wajib diisi saat liburan diaktifkan."
+        },
+        "dates_required": {
+          "string": "Tanggal mulai dan berakhir wajib diisi saat batasan tanggal diaktifkan."
+        },
+        "date_order": {
+          "string": "Tanggal berakhir harus sama atau setelah tanggal mulai."
+        },
+        "time_invalid": {
+          "string": "Masukkan waktu yang valid dalam format JJ:MM."
+        },
+        "weekday_required": {
+          "string": "Pilih setidaknya satu hari kerja saat batasan hari kerja diaktifkan."
+        },
+        "response_interval_invalid": {
+          "string": "Interval balasan harus nol atau angka positif."
+        },
+        "response_interval_zero": {
+          "string": "Interval balasan nol hari tidak diizinkan di domain ini."
+        }
+      }
+    },
+    "auto_reply": {
+      "enable": {
+        "string": "Aktifkan balasan otomatis liburan"
+      },
+      "subject": {
+        "label": {
+          "string": "Subjek balasan otomatis"
+        },
+        "description": {
+          "string": "Biarkan kosong untuk menggunakan subjek default. Anda dapat menulis {subject} untuk menyisipkan subjek asli."
+        }
+      },
+      "message": {
+        "string": "Pesan balasan otomatis"
+      },
+      "constraints": {
+        "title": {
+          "string": "Batasan aktivasi"
+        },
+        "description": {
+          "string": "Sesuaikan rentang hari dan jam secara mandiri serta gabungkan secara opsional dengan hari kerja tertentu untuk menyesuaikan filter liburan sesuai preferensi Anda."
+        },
+        "enable": {
+          "days": {
+            "string": "Aktifkan balasan otomatis pada hari-hari ini"
+          },
+          "hours": {
+            "string": "Aktifkan balasan otomatis antara jam-jam ini"
+          },
+          "range": {
+            "string": "Aktifkan balasan otomatis antara tanggal-tanggal ini"
+          }
+        },
+        "time": {
+          "start": {
+            "string": "Waktu mulai"
+          },
+          "end": {
+            "string": "Waktu selesai"
+          }
+        },
+        "weekdays": {
+          "monday": {
+            "string": "Senin"
+          },
+          "tuesday": {
+            "string": "Selasa"
+          },
+          "wednesday": {
+            "string": "Rabu"
+          },
+          "thursday": {
+            "string": "Kamis"
+          },
+          "friday": {
+            "string": "Jumat"
+          },
+          "saturday": {
+            "string": "Sabtu"
+          },
+          "sunday": {
+            "string": "Minggu"
+          }
+        }
+      },
+      "response": {
+        "interval_days": {
+          "label": {
+            "string": "Jumlah hari minimum antar balasan otomatis"
+          },
+          "placeholder": {
+            "string": "Kosongkan untuk perilaku bawaan"
+          },
+          "description": {
+            "string": "Mencegah pengiriman balasan liburan duplikat dalam periode ini (RFC 5230 :hari)."
+          }
+        },
+        "send_always": {
+          "label": {
+            "string": "Selalu kirim balasan pesan liburan"
+          },
+          "description": {
+            "string": "Pesan liburan dikirim sebelum menerapkan filter Anda."
+          }
+        }
+      }
+    }
+  }
+}

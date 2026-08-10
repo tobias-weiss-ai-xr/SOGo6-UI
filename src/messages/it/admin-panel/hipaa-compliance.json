@@ -1,0 +1,40 @@
+{
+    "HIPAA": {
+        "title": { "string": "Modalità Conformità HIPAA" },
+        "description": { "string": "Conformità di livello sanitario con rilevamento PHI, crittografia e tracciature audit." },
+        "errors": {
+            "fail": { "string": "Operazione fallita" },
+            "email": { "string": "Email obbligatoria" }
+        },
+        "config": {
+            "title": { "string": "Impostazioni Conformità" },
+            "enabled": { "string": "Modalità HIPAA" },
+            "encryption": { "string": "Crittografia a Riposo" },
+            "audit": { "string": "Tracciature Audit" },
+            "phi_detection": { "string": "Rilevamento PHI" },
+            "require_reason": { "string": "Richiedi Motivo Accesso" },
+            "retention": { "string": "Conservazione Log" }
+        },
+        "detect": {
+            "title": { "string": "Scansione PHI" },
+            "placeholder": { "string": "Incolla testo email o documento per scansionare PHI..." },
+            "button": { "string": "Scansiona per PHI" },
+            "risk": { "string": "Livello di Rischio" }
+        },
+        "audit": {
+            "title": { "string": "Tracciature Accessi" },
+            "email": { "placeholder": { "string": "ID Email" } },
+            "reason": { "placeholder": { "string": "Motivo (obbligatorio)" } },
+            "log": { "string": "Registra Accesso" },
+            "accessor": { "string": "Accessore" },
+            "action": { "string": "Azione" },
+            "time": { "string": "Ora" }
+        },
+        "success": {
+            "log": { "string": "Accesso registrato" }
+        },
+        "label": {
+            "days": { "string": "giorni" }
+        }
+    }
+}

@@ -1,0 +1,46 @@
+{
+  "AI_SUMMARIZE": {
+    "title": {
+      "string": "E-postsammendrag"
+    },
+    "description": {
+      "string": "TL;DR for lange e-posttråder. Ekstraherende sammendrag returnerer de viktigste setningene."
+    },
+    "input": {
+      "title": {
+        "string": "Inndata-e-post"
+      },
+      "text": {
+        "string": "E-posttekst"
+      },
+      "placeholder": {
+        "string": "Lim inn e-postinnholdet her..."
+      },
+      "sentences": {
+        "string": "Maks antall setninger"
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Sammendrag"
+      },
+      "empty": {
+        "string": "Skriv inn tekst og klikk Sammendrag"
+      }
+    },
+    "summarize": {
+      "string": "Sammendrag"
+    },
+    "loading": {
+      "string": "Lager sammendrag..."
+    },
+    "errors": {
+      "empty": {
+        "string": "Skriv inn tekst for å lage sammendrag"
+      },
+      "fail": {
+        "string": "Sammendrag mislyktes"
+      }
+    }
+  }
+}

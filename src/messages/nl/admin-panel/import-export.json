@@ -1,0 +1,34 @@
+{
+  "IMPORT": {
+    "title": {
+      "string": "PST / M365 Importeren & Exporteren"
+    },
+    "description": {
+      "string": "Importeer mailboxen uit PST-bestanden of Microsoft 365 met voortgangsbewaking"
+    },
+    "errors": {
+      "fields": {
+        "string": "Verplichte velden ontbreken"
+      },
+      "fail": {
+        "string": "Bewerking mislukt"
+      }
+    },
+    "success": {
+      "analyze": {
+        "string": "PST geanalyseerd"
+      },
+      "import": {
+        "string": "Importeren gestart"
+      }
+    },
+    "jobs": {
+      "title": {
+        "string": "Importtaken"
+      },
+      "empty": {
+        "string": "Nog geen importtaken"
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+    "DATA_TABLE": {
+        "filter_placeholder": {
+            "string": "Filter..."
+        },
+        "no_result": {
+            "string": "Tidak ada hasil."
+        },
+        "previous": {
+            "string": "Sebelumnya"
+        },
+        "next": {
+            "string": "Berikutnya"
+        },
+        "selected": {
+            "string": "{selected} of {total} row(s) selected."
+        }
+    }
+}

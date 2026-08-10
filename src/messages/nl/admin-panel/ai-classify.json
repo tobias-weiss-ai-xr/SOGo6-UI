@@ -1,0 +1,46 @@
+{
+  "AI_CLASSIFY": {
+    "title": {
+      "string": "Slimme e-mailclassificatie"
+    },
+    "description": {
+      "string": "Automatisch labels toewijzen: nieuwsbrief, factuur, melding, sociaal, persoonlijk."
+    },
+    "input": {
+      "title": {
+        "string": "Invoere-mail"
+      },
+      "subject": {
+        "string": "Onderwerp"
+      },
+      "sender": {
+        "string": "Afzender"
+      },
+      "body": {
+        "string": "Inhoud"
+      },
+      "placeholder": {
+        "string": "Plak e-mailinhoud hier..."
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Classificatieresultaten"
+      },
+      "empty": {
+        "string": "Voer tekst in en klik op Classificeren"
+      }
+    },
+    "classify": {
+      "string": "Classificeren"
+    },
+    "errors": {
+      "empty": {
+        "string": "Voer e-mailtekst in"
+      },
+      "fail": {
+        "string": "Classificatie mislukt"
+      }
+    }
+  }
+}

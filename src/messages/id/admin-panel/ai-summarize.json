@@ -1,0 +1,46 @@
+{
+  "AI_SUMMARIZE": {
+    "title": {
+      "string": "Ringkasan Email"
+    },
+    "description": {
+      "string": "TL;DR untuk utas email panjang. Ringkasan ekstraktif mengembalikan kalimat-kalimat terpenting."
+    },
+    "input": {
+      "title": {
+        "string": "Email Masukan"
+      },
+      "text": {
+        "string": "Teks Email"
+      },
+      "placeholder": {
+        "string": "Tempelkan isi email di sini..."
+      },
+      "sentences": {
+        "string": "Maksimal Kalimat"
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Ringkasan"
+      },
+      "empty": {
+        "string": "Masukkan teks dan klik Ringkas"
+      }
+    },
+    "summarize": {
+      "string": "Ringkas"
+    },
+    "loading": {
+      "string": "Sedang meringkas..."
+    },
+    "errors": {
+      "empty": {
+        "string": "Masukkan teks untuk diringkas"
+      },
+      "fail": {
+        "string": "Peringkasan gagal"
+      }
+    }
+  }
+}

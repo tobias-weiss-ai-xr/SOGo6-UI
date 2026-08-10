@@ -1,0 +1,49 @@
+{
+    "AI_SPAM": {
+        "title": {
+            "string": "Filtro Antispam Intelligente"
+        },
+        "description": {
+            "string": "Punteggio spam in tempo reale con analisi dei pattern, reputazione mittente e euristiche sui contenuti."
+        },
+        "input": {
+            "title": {
+                "string": "Email da Valutare"
+            },
+            "subject": {
+                "string": "Oggetto"
+            },
+            "sender": {
+                "string": "Mittente"
+            },
+            "body": {
+                "string": "Corpo"
+            },
+            "placeholder": {
+                "string": "Incolla il corpo dell'email..."
+            }
+        },
+        "output": {
+            "title": {
+                "string": "Punteggio Spam"
+            },
+            "empty": {
+                "string": "Inserisci contenuto email e clicca Valuta"
+            },
+            "signals": {
+                "string": "Segnali Rilevati"
+            }
+        },
+        "score": {
+            "string": "Valuta Email"
+        },
+        "errors": {
+            "empty": {
+                "string": "Inserisci oggetto o corpo"
+            },
+            "fail": {
+                "string": "Valutazione fallita"
+            }
+        }
+    }
+}

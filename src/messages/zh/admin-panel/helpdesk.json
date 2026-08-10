@@ -1,0 +1,68 @@
+{
+    "AP_HELPDESK": {
+        "title": {
+            "string": "Helpdesk / Ticketing中"
+        },
+        "description": {
+            "string": "从邮件自动创建工单。"
+        },
+        "form": {
+            "create": {
+                "string": "新建工单"
+            },
+            "cancel": {
+                "string": "取消"
+            },
+            "title": {
+                "string": "创建工单"
+            },
+            "subject": {
+                "string": "主题"
+            },
+            "priority": {
+                "string": "优先级"
+            },
+            "description": {
+                "string": "描述"
+            },
+            "requester": {
+                "string": "请求者邮箱"
+            },
+            "assignee": {
+                "string": "负责人邮箱"
+            },
+            "sla": {
+                "string": "SLA（小时）"
+            },
+            "submit": {
+                "string": "创建工单"
+            }
+        },
+        "create": {
+            "success": {
+                "string": "工单已创建"
+            },
+            "error": {
+                "string": "创建失败"
+            }
+        },
+        "update": {
+            "success": {
+                "string": "工单已更新"
+            },
+            "error": {
+                "string": "更新失败"
+            }
+        },
+        "list": {
+            "empty": {
+                "string": "暂无工单。"
+            }
+        },
+        "errors": {
+            "fields": {
+                "string": "主题和描述为必填"
+            }
+        }
+    }
+}

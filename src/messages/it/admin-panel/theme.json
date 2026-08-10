@@ -1,0 +1,135 @@
+{
+    "AP_THEME": {
+        "title": {
+            "string": "Impostazioni Tema"
+        },
+        "description": {
+            "string": "Personalizza l'aspetto dell'interfaccia SOGo"
+        },
+        "form_title": {
+            "string": "Tema Personalizzato"
+        },
+        "form_description": {
+            "string": "Configura colori, logo e CSS personalizzati per l'interfaccia"
+        },
+        "fields": {
+            "primary": {
+                "label": {
+                    "string": "Colore Primario"
+                },
+                "description": {
+                    "string": "Valori HSL per il colore primario (es. 180 25% 40%)"
+                }
+            },
+            "primary_foreground": {
+                "label": {
+                    "string": "Primario - Primo Piano"
+                },
+                "description": {
+                    "string": "Colore del testo sugli sfondi primari"
+                }
+            },
+            "background": {
+                "label": {
+                    "string": "Sfondo"
+                },
+                "description": {
+                    "string": "Valori HSL per lo sfondo della pagina"
+                }
+            },
+            "foreground": {
+                "label": {
+                    "string": "Primo Piano"
+                },
+                "description": {
+                    "string": "Colore predefinito del testo"
+                }
+            },
+            "sidebar_background": {
+                "label": {
+                    "string": "Sfondo Barra Laterale"
+                },
+                "description": {
+                    "string": "Valori HSL per lo sfondo della barra laterale"
+                }
+            },
+            "sidebar_foreground": {
+                "label": {
+                    "string": "Testo Barra Laterale"
+                },
+                "description": {
+                    "string": "Colore del testo nella barra laterale"
+                }
+            },
+            "sidebar_primary": {
+                "label": {
+                    "string": "Primario Barra Laterale"
+                },
+                "description": {
+                    "string": "Colore di accento primario nella barra laterale"
+                }
+            },
+            "sidebar_accent": {
+                "label": {
+                    "string": "Accento Barra Laterale"
+                },
+                "description": {
+                    "string": "Colore di accento nella barra laterale"
+                }
+            },
+            "header_background": {
+                "label": {
+                    "string": "Sfondo Intestazione"
+                },
+                "description": {
+                    "string": "Valori HSL per la barra dell'intestazione superiore"
+                }
+            },
+            "header_foreground": {
+                "label": {
+                    "string": "Testo Intestazione"
+                },
+                "description": {
+                    "string": "Colore del testo nell'intestazione"
+                }
+            },
+            "logo_url": {
+                "label": {
+                    "string": "URL Logo"
+                },
+                "description": {
+                    "string": "URL dell'immagine del logo personalizzato (opzionale)"
+                }
+            },
+            "custom_css": {
+                "label": {
+                    "string": "CSS Personalizzato"
+                },
+                "description": {
+                    "string": "Regole CSS aggiuntive da iniettare (opzionale)"
+                }
+            }
+        },
+        "save": {
+            "string": "Salva Modifiche"
+        },
+        "saving": {
+            "string": "Salvataggio in corso…"
+        },
+        "saved": {
+            "string": "Impostazioni tema salvate con successo"
+        },
+        "save_error": {
+            "string": "Salvataggio fallito: {message}"
+        },
+        "unsaved_changes": {
+            "string": "Ci sono modifiche non salvate"
+        },
+        "load_error": {
+            "string": "Caricamento impostazioni tema fallito"
+        },
+        "retry": {
+            "string": "Riprova"
+        }
+    }
+}

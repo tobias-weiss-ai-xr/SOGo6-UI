@@ -1,0 +1,49 @@
+{
+  "AI_ANOMALY": {
+    "title": {
+      "string": "Anomália érzékelés"
+    },
+    "description": {
+      "string": "Jelöljön ki szokatlan küldési mintákat: tömeges e-mailek, szokatlan időpontok, új címzettek."
+    },
+    "input": {
+      "title": {
+        "string": "Küldési minta"
+      },
+      "recipients": {
+        "string": "Címzettek száma"
+      },
+      "hour": {
+        "string": "Óra (0-23)"
+      },
+      "new_ratio": {
+        "string": "Új címzettek aránya"
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Elemzés eredménye"
+      },
+      "empty": {
+        "string": "Adjon meg értékeket és kattintson az Elemzés gombra"
+      },
+      "anomaly": {
+        "string": "Anomália észlelve!"
+      },
+      "normal": {
+        "string": "Normál minta"
+      },
+      "score": {
+        "string": "Kockázati pontszám"
+      }
+    },
+    "analyze": {
+      "string": "Elemzés"
+    },
+    "errors": {
+      "fail": {
+        "string": "Az elemzés sikertelen"
+      }
+    }
+  }
+}

@@ -1,0 +1,1285 @@
+{
+  "AP_DOMAIN_CONFIGURATION": {
+    "origin": {
+      "rule": {
+        "string": "(kuraldan {origin})"
+      },
+      "default": {
+        "string": "(varsayılan yapılandırmadan)"
+      },
+      "domain": {
+        "string": "(alan adından {origin})"
+      }
+    },
+    "tabs": {
+      "auth_settings": {
+        "string": "Kimlik doğrulama ayarları"
+      },
+      "user_source": {
+        "string": "Kullanıcı Kaynağı"
+      },
+      "user_module_settings": {
+        "string": "Kullanıcı ve Modül ayarları"
+      },
+      "mail_settings": {
+        "string": "E-posta ayarları"
+      },
+      "calendar_contact_settings": {
+        "string": "Takvim ve Kişi ayarları"
+      }
+    },
+    "properties": {
+      "SOGO_D_AUTH_TYPE": {
+        "name": {
+          "string": "Kimlik doğrulama türü"
+        },
+        "description": {
+          "string": "Kullanıcılar için kimlik doğrulama yöntemini seçin. 'Plain', klasik kullanıcı adı/şifre anlamına gelir"
+        },
+        "developer_comment": "Options might include LDAP, SQL, etc."
+      },
+      "SOGO_D_CAS_URL": {
+        "name": {
+          "string": "CAS sunucusunun URL'si"
+        },
+        "description": {
+          "string": "CAS sunucunuzun tam URL'sini girin"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_CAS_LOGOUT_ENABLED": {
+        "name": {
+          "string": "CAS ile oturumu kapatmayı etkinleştir"
+        },
+        "description": {
+          "string": "Kullanıcıların SOGO ve CAS sunucusundan oturumu kapatmasına izin vermek için kutuyu işaretleyin"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_OPENID_CONFIG_URL": {
+        "name": {
+          "string": "OpenID Sağlayıcı uç noktasının URL'si"
+        },
+        "description": {
+          "string": "Örnek: https://myopenid.net/.well-known/openid-configuration"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_OPENID_CLIENT_NAME": {
+        "name": {
+          "string": "OpenID istemci adı"
+        },
+        "description": {
+          "string": "OpenID istemcinizin adı"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_OPENID_CLIENT_SECRET": {
+        "name": {
+          "string": "OpenID istemci gizli anahtarı"
+        },
+        "description": {
+          "string": "OpenID istemcinizin gizli anahtarı"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_OPENID_SCOPE": {
+        "name": {
+          "string": "OpenID istemci kapsamı"
+        },
+        "description": {
+          "string": "OpenID istemcinizin kapsamı. Varsayılan değer 'openid profile email' dir."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_OPENID_EMAIL": {
+        "name": {
+          "string": "kullanıcının e-posta anahtarı"
+        },
+        "description": {
+          "string": "Kullanıcı profilinde kullanıcının e-postasının bulunduğu anahtar."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_OPENID_TOKEN_CHECK_INTERVAL": {
+        "name": {
+          "string": "Belirteç kontrol aralığı"
+        },
+        "description": {
+          "string": "OpenID sunucunuza yapılan belirteç geçerliliği kontrol isteklerinin sayısını sınırlamak için, ilk başarılı kontrol sonrasında belirtecin tekrar kontrol edilmemesi için saniye cinsinden bir aralık ayarlayın. 0 değeri, belirtecin her zaman kontrol edileceği anlamına gelir. 60 değeri, ilk başarılı kontrol sonrasında 60 saniye boyunca belirtecin kontrol edilmemesi anlamına gelir."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_OPENID_REFRESH_ENABLE": {
+        "name": {
+          "string": "Yenileme Belirteci Mekanizmasını Etkinleştir"
+        },
+        "description": {
+          "string": "Eğer OpenID sunucunuz yenileme belirteci mekanizmasını yönetiyorsa, SOGo bunu kullanacaktır."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_OPENID_ENDSESSION_ENABLED": {
+        "name": {
+          "string": "OpenID sunucusundan Oturumu Sonlandırmayı Etkinleştir"
+        },
+        "description": {
+          "string": "Varsayılan olarak, kullanıcılar yalnızca web postasından çıkış yapabilir. Bu ayarı işaretleyerek OpenID sunucunuzdan da çıkış yapılması sağlanır, yani kullanıcı OpenID sunucusunu kullanan tüm uygulamalardan çıkış yapmış olur. Bu özellik yalnızca OpenID sunucunuzun end_session_endpoint'i varsa çalışır."
+        },
+        "developer_comment": ""
+      },
+      "SOGo_D_OPENID_FETCH_USER_PROFILE": {
+        "name": {
+          "string": "Kullanıcı Profilini Getir"
+        },
+        "description": {
+          "string": "Varsayılan olarak, SOGo kullanıcının e-postasını almak için kullanıcı profilini getirir. Bu seçeneğin işaretini kaldırarak e-postayı doğrudan belirteçten alabilirsiniz. Microsoft Active Directory Federation Service (AD FS) kullanıyorsanız bu seçeneğin işaretini kaldırın."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SAML2_URL": {
+        "name": {
+          "string": "SAML2 HENÜZ TAMAMLANMADI!!!"
+        },
+        "description": {
+          "string": "Bunu yapacak kişiye bol şans..."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_PWD_CHANGE_ENABLED": {
+        "name": {
+          "string": "Şifre Değişikliğini Etkinleştir"
+        },
+        "description": {
+          "string": "Kullanıcıların SOGo üzerinden şifrelerini değiştirmelerine izin ver. Kullanıcı Kaynağınızın kullanıcılara bu eylemi gerçekleştirme izni verdiğinden emin olun."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_LOGIN_CHECK_MAX_ATTEMPT": {
+        "name": {
+          "string": "Giriş Denemesi Maksimum Başarısızlık Sayısı"
+        },
+        "description": {
+          "string": "Bir kullanıcının engellenmeden önce girişinde kaç kez başarısız olabileceğini ayarlayın. 0 değeri, sınır olmadığı anlamına gelir."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_LOGIN_CHECK_TIME_SPAN": {
+        "name": {
+          "string": "Başarısız Giriş Denemesi Süre Aralığı"
+        },
+        "description": {
+          "string": "Başarısız giriş denemelerini saymak için saniye cinsinden süre aralığını ayarlayın. Örnek: 60, kullanıcının ilk başarısız girişten sonra 60 saniye içinde 'Maksimum Başarısız Giriş Denemesi' sayısına kadar başarısız olabileceği ve ardından engelleneceği anlamına gelir."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_LOGIN_CHECK_BLOCK_TIME": {
+        "name": {
+          "string": "Başarısız Giriş Denemesi Engelleme Süresi"
+        },
+        "description": {
+          "string": "Çok fazla başarısız giriş denemesinden sonra kullanıcının engelleneceği süreyi saniye cinsinden ayarlayın."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_PWD_RECOVERY": {
+        "name": {
+          "string": "Şifre Kurtarma Etkinleştir"
+        },
+        "description": {
+          "string": "Kullanıcıların şifre kurtarma yöntemi ayarlamasına izin ver"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_PWD_RECOVERY_METHOD": {
+        "name": {
+          "string": "Kullanılabilir Şifre Kurtarma Yöntemleri"
+        },
+        "description": {
+          "string": "Kullanıcılar için kullanılabilir şifre kurtarma yöntemini seçin"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_PWD_RECOVERY_FORCE": {
+        "name": {
+          "string": "Şifre Kurtarma Zorla"
+        },
+        "description": {
+          "string": "Kullanıcıları şifre kurtarma yöntemi ayarlamaya zorla."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_PWD_RECOVERY_DELAY": {
+        "name": {
+          "string": "Şifre Kurtarma Arası Bekleme Süresi"
+        },
+        "description": {
+          "string": "Kullanıcının tekrar şifre kurtarma talep edebilmesi için saniye cinsinden bekleme süresi."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_LOGIN_MFA": {
+        "name": {
+          "string": "Çok Faktörlü Kimlik Doğrulama Etkinleştir"
+        },
+        "description": {
+          "string": "Kullanıcıların Çok Faktörlü Kimlik Doğrulama ayarlamasına izin ver"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_LOGIN_MFA_METHOD": {
+        "name": {
+          "string": "Kullanılabilir Çok Faktörlü Kimlik Doğrulama Yöntemleri"
+        },
+        "description": {
+          "string": "Kullanıcılar için kullanılabilir çok faktörlü kimlik doğrulama yöntemini seçin"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_LOGIN_MFA_FORCE": {
+        "name": {
+          "string": "Çok Faktörlü Kimlik Doğrulama Zorla"
+        },
+        "description": {
+          "string": "Kullanıcıları Çok Faktörlü Kimlik Doğrulama ayarlamaya zorla"
+        },
+        "developer_comment": ""
+      },
+      "US_UID": {
+        "name": {
+          "string": "Kullanıcı Kaynağı Kimliği"
+        },
+        "description": {
+          "string": "Bu Kullanıcı Kaynağı için benzersiz bir ad seçin, kullanıcılara gösterilmeyecek"
+        },
+        "developer_comment": "Only for SOGo to differentiate differents User SOurce"
+      },
+      "US_TYPE": {
+        "name": {
+          "string": "Kullanıcı Kaynağı Türü"
+        },
+        "description": {
+          "string": "Kullanıcı Kaynağı türünüzü ayarlayın"
+        },
+        "developer_comment": "Only ldap and sql supported for now"
+      },
+      "US_LDAP_HOSTNAME": {
+        "name": {
+          "string": "LDAP sunucu ana bilgisayar adı"
+        },
+        "description": {
+          "string": "Sadece ana bilgisayar adını ve portu belirtin, başka bilgi eklemeyin"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_BIND_DN": {
+        "name": {
+          "string": "Bağlantı DN"
+        },
+        "description": {
+          "string": "Sunucunuza bağlanmak için kullanılan oturum açma adının DN'si."
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_BIND_DN_PWD": {
+        "name": {
+          "string": "Bağlantı DN şifresi"
+        },
+        "description": {
+          "string": "Bağlantı DN'niz için şifre"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_BASE_DN": {
+        "name": {
+          "string": "Temel DN"
+        },
+        "description": {
+          "string": "Kullanıcı girişinizin Temel DN'si. E-posta etki alanı burada yer alıyorsa, kullanıcı e-postasından dinamik olarak eklemek için '%d' ekleyebilirsiniz: örn. 'ou=%d,dc=example,dc=com'"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_UID": {
+        "name": {
+          "string": "UID alanı"
+        },
+        "description": {
+          "string": "Kullanıcının oturum açma adını içeren alan. Oturum açma adı tüm Kullanıcı Kaynakları ve Etki Alanları arasında benzersiz olmalıdır"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_CN": {
+        "name": {
+          "string": "CN alanı"
+        },
+        "description": {
+          "string": "Kullanıcının tam adını içeren alan"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_ID": {
+        "name": {
+          "string": "ID alanı"
+        },
+        "description": {
+          "string": "Bağlantı Alanı kullanılmıyorsa bir kullanıcı DN'sini başlatan alan. (örnek: 'dn: uid=sogo,ou=users,dc=example,dc=org' değeri 'uid' olmalıdır)"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_SCOPE": {
+        "name": {
+          "string": "LDAP Arama Kapsamı"
+        },
+        "description": {
+          "string": "BaseDN'de veya altında bulunan ve arama isteği için potansiyel eşleşmeler olarak kabul edilebilecek giriş kümesini belirtir"
+        },
+        "developer_comment": "https://ldapwiki.com/wiki/Wiki.jsp?page=LDAP%20Search%20Scopes"
+      },
+      "US_LDAP_FILTER": {
+        "name": {
+          "string": "LDAP Filtresi"
+        },
+        "description": {
+          "string": "LDAP sorguları için kullanılacak ek filtre. '=', '!=', 'AND', 'OR' ve parantezleri kullanın. Örnek: '(objectClass='mailUser' OR objectClass!='mailGroup') AND accountStatus='active'"
+        },
+        "developer_comment": "Use SOGo's syntax and not ldap syntax for filter"
+      },
+      "US_LDAP_PWD_POLICY": {
+        "name": {
+          "string": "LDAP Şifre Politikası"
+        },
+        "description": {
+          "string": "LDAP sunucunuzun sona erme ve yedek süre kavramıyla Şifre Politikası olduğunu belirtir"
+        },
+        "developer_comment": "https://ldapwiki.com/wiki/Wiki.jsp?page=Password%20Policy"
+      },
+      "US_LDAP_PWD_UPDATE_SAMBA": {
+        "name": {
+          "string": "LDAP Samba Parolalarını Güncelle"
+        },
+        "description": {
+          "string": "Kullanıcı parolasını değiştirdiğinde sambaNTPassword ve sambaLMPassword alanlarını da günceller"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_BIND_AS_USER": {
+        "name": {
+          "string": "Kullanıcı Olarak Bağlan"
+        },
+        "description": {
+          "string": "Kimlik doğrulama sonrasında, kullanıcının DN'sini bağlanmak için kullanır"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_BIND_FIELD": {
+        "name": {
+          "string": "Ek Bağlantı Alanları"
+        },
+        "description": {
+          "string": "Kullanılacak ek bağlanma alanları. Örneğin 'mail' eklerseniz bağlanma işlemi 'mail=<giriş>' şeklinde de olacaktır"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_ATTR_FIELD": {
+        "name": {
+          "string": "Öznitelik Alanları"
+        },
+        "description": {
+          "string": "Arama sorgusu sırasında döndürülecek öznitelik alanları. Varsayılan olarak '*' (tüm alanlar) kullanılır. Dikkatli olun, bu SOGo performansını önemli ölçüde etkileyebilir"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_GROUP_CLASS": {
+        "name": {
+          "string": "LDAP Grup Sınıfı"
+        },
+        "description": {
+          "string": "SOGo'ya bu bir grup olduğunu ve tekil bir kullanıcı olmadığını belirtmek için kullanılacak LDAP sınıfını ayarlar"
+        },
+        "developer_comment": ""
+      },
+      "US_SQL_USER_URL": {
+        "name": {
+          "string": "SQL Kullanıcı URL'si"
+        },
+        "description": {
+          "string": "Kullanıcı tablonuzun veritabanı URL'si. Örnek: postgresql://sogo:sogo@127.0.0.1:5432/sogo/sogo_user"
+        },
+        "developer_comment": ""
+      },
+      "US_SQL_PREPEND_PWD_SCHEME": {
+        "name": {
+          "string": "SQL Kullanıcı Parola Şeması"
+        },
+        "description": {
+          "string": "Parolanın veritabanında {şema}şifrelenmişDeğer formatında saklandığı durumda Evet'i işaretleyin"
+        },
+        "developer_comment": ""
+      },
+      "US_SQL_USER_FILTER": {
+        "name": {
+          "string": "SQL Kullanıcı Filtresi"
+        },
+        "description": {
+          "string": "SQL sorgusuna eklenecek ek WHERE koşulları. Örnek: 'active=1'"
+        },
+        "developer_comment": ""
+      },
+      "US_SQL_DOMAIN_FIELD": {
+        "name": {
+          "string": "SQL Kullanıcı Alan Adı"
+        },
+        "description": {
+          "string": "Kullanıcının alan adının bulunduğu sütunu ayarlar. Ayarlanırsa, her SQL sorgusuna '<alan_sütunu> = <kullanıcı alan adı>' koşulu eklenir"
+        },
+        "developer_comment": ""
+      },
+      "US_MAPPING": {
+        "name": {
+          "string": "Kullanıcı Kaynağı Eşlemesi"
+        },
+        "description": {
+          "string": "Kullanıcı Kaynağı alanınızı kişi özniteliğine eşleyin"
+        },
+        "developer_comment": ""
+      },
+      "US_CAN_AUTH": {
+        "name": {
+          "string": "Kimlik Doğrulama Yapabilir"
+        },
+        "description": {
+          "string": "Bu Kullanıcı Kaynağındaki kullanıcılar webmail'e giriş yapabilir"
+        },
+        "developer_comment": ""
+      },
+      "US_PWD_ALGO": {
+        "name": {
+          "string": "Kullanıcı Kaynağı Şifre Algoritması"
+        },
+        "description": {
+          "string": "Bu kullanıcı kaynağı tarafından kullanılan şifre algoritması. SQL kullanıcı kaynağı için zorunludur. LDAP için isteğe bağlıdır: yalnızca kullanıcıların şifrelerini değiştirmelerine izin veriyorsanız gereklidir"
+        },
+        "developer_comment": ""
+      },
+      "US_SIM_KEY_TYPE": {
+        "name": {
+          "string": "Şifre Algoritması Simetrik Anahtar Türü"
+        },
+        "description": {
+          "string": "Şifre algoritmanızın simetrik anahtarının nasıl depolandığını belirtir"
+        },
+        "developer_comment": ""
+      },
+      "US_SIM_KEY_VALUE": {
+        "name": {
+          "string": "Şifre Algoritması Simetrik Anahtar Değeri"
+        },
+        "description": {
+          "string": "Değer, türüne bağlıdır.\nEğer 'path' ise, SOGo'nun simetrik anahtarınızı bulacağı dosya yolunu girin.\nEğer 'env' ise, anahtarın bulunduğu çevre değişkeninin adını ayarlayın.\nEğer 'plain' ise, anahtarı doğrudan buraya girin"
+        },
+        "developer_comment": ""
+      },
+      "US_PWD_POLICY": {
+        "name": {
+          "string": "Kullanıcı Şifre Politikası"
+        },
+        "description": {
+          "string": "Kullanıcı şifresine bir politika eklemek için kutuyu işaretleyin. Bu politika, kullanıcı şifresini değiştirdiğinde veya 'girişte şifre gücünü kontrol et' özelliğini etkinleştirdiğinizde kullanılacaktır"
+        },
+        "developer_comment": ""
+      },
+      "US_PWD_LEN_MIN": {
+        "name": {
+          "string": "Kullanıcı Şifresi Minimum Uzunluğu"
+        },
+        "description": {
+          "string": "Kullanıcı şifresinin minimum uzunluğu (dahil). Minimum 4 karakter."
+        },
+        "developer_comment": ""
+      },
+      "US_PWD_LEN_MAX": {
+        "name": {
+          "string": "Kullanıcı Şifresi Maksimum Uzunluğu"
+        },
+        "description": {
+          "string": "Kullanıcı şifresinin maksimum uzunluğu (dahil). 0 sınır yok anlamına gelir"
+        },
+        "developer_comment": ""
+      },
+      "US_PWD_UPPERCASE_MIN": {
+        "name": {
+          "string": "Kullanıcı Şifresi Büyük Harf Minimumu"
+        },
+        "description": {
+          "string": "Büyük harf minimum sayısı. 0 sınır yok anlamına gelir"
+        },
+        "developer_comment": ""
+      },
+      "US_PWD_LOWERCASE_MIN": {
+        "name": {
+          "string": "Kullanıcı Şifresi Küçük Harf Minimumu"
+        },
+        "description": {
+          "string": "Küçük harf minimum sayısı. 0 sınır yok anlamına gelir"
+        },
+        "developer_comment": ""
+      },
+      "US_PWD_DIGITS_MIN": {
+        "name": {
+          "string": "Kullanıcı Şifresi Rakam Minimumu"
+        },
+        "description": {
+          "string": "Rakam minimum sayısı. 0 sınır yok anlamına gelir"
+        },
+        "developer_comment": ""
+      },
+      "US_PWD_SPECIAL_ALLOWED": {
+        "name": {
+          "string": "Kullanıcı Şifresinde İzin Verilen Özel Karakterler"
+        },
+        "description": {
+          "string": "Şifrelerde izin verilen özel karakterleri listeleyin"
+        },
+        "developer_comment": ""
+      },
+      "US_PWD_SPECIAL_MIN": {
+        "name": {
+          "string": "Kullanıcı Şifresi Özel Karakter Minimumu"
+        },
+        "description": {
+          "string": "Özel karakterlerin minimum kullanım sayısı. 0 sınır yok demektir"
+        },
+        "developer_comment": ""
+      },
+      "US_MAIL": {
+        "name": {
+          "string": "Kullanıcı E-posta Alanı"
+        },
+        "description": {
+          "string": "Kullanıcı e-postasının bulunduğu alan. Ana e-posta alanından sonra ek alanlar eklenerek kullanıcının takma adları belirtilebilir"
+        },
+        "developer_comment": ""
+      },
+      "US_MAIL_SERVER_LOGIN": {
+        "name": {
+          "string": "Kullanıcı E-posta Sunucusu Giriş Adı"
+        },
+        "description": {
+          "string": "Eğer kullanıcının e-posta sunucunuza (IMAP) giriş adı ana e-postasından farklıysa, giriş adının bulunduğu alanı burada belirtin"
+        },
+        "developer_comment": ""
+      },
+      "US_MAIL_FILTERING_LOGIN": {
+        "name": {
+          "string": "Kullanıcı E-posta Filtreleme Sunucusu Giriş Adı"
+        },
+        "description": {
+          "string": "Eğer kullanıcının e-posta filtreleme sunucunuza (Sieve) giriş adı ana e-postasından farklıysa, giriş adının bulunduğu alanı burada belirtin"
+        },
+        "developer_comment": ""
+      },
+      "US_MAIL_OUTGOING_LOGIN": {
+        "name": {
+          "string": "Kullanıcı Giden E-posta Sunucusu Giriş Adı"
+        },
+        "description": {
+          "string": "Eğer kullanıcının giden e-posta sunucunuza (SMTP) giriş adı ana e-postasından farklıysa, giriş adının bulunduğu alanı burada belirtin"
+        },
+        "developer_comment": ""
+      },
+      "US_KIND": {
+        "name": {
+          "string": "Kullanıcı Türü"
+        },
+        "description": {
+          "string": "Kullanıcı türünün ('kullanıcı', 'kaynak' veya 'grup') bulunduğu alanı belirtin"
+        },
+        "developer_comment": ""
+      },
+      "US_IS_ADDRESSBOOK": {
+        "name": {
+          "string": "Kullanıcı Kaynağı Rehberde Mi"
+        },
+        "description": {
+          "string": "Bu Kullanıcı Kaynağındaki kullanıcıların otomatik tamamlama veya Küresel Adres Defteri aracılığıyla bulunup bulunamayacağını belirtin"
+        },
+        "developer_comment": ""
+      },
+      "US_SEARCH": {
+        "name": {
+          "string": "Kullanıcı Arama Alanı"
+        },
+        "description": {
+          "string": "Kullanıcı ararken eklenecek ek alan. Örneğin 'ad' alanı, kullanıcıları adlarına göre bulmanızı sağlar"
+        },
+        "developer_comment": ""
+      },
+      "US_DISPLAY_NAME": {
+        "name": {
+          "string": "Kullanıcı Kaynağı Görüntülenme Adı"
+        },
+        "description": {
+          "string": "Bu kullanıcı kaynağının görüntülenme adı, küresel adres defteri listesinde gösterilecektir"
+        },
+        "developer_comment": ""
+      },
+      "US_AUTO_SEARCH": {
+        "name": {
+          "string": "Kullanıcı Otomatik GAB Görüntüleme"
+        },
+        "description": {
+          "string": "Seçildiğinde, kullanıcıları Global Adres Defteri'nde otomatik olarak arar ve gösterir. Aksi takdirde, kullanıcının aramayı tetiklemek için yazması veya tümünü aramak için '.' girmesi gerekir."
+        },
+        "developer_comment": ""
+      },
+      "US_AUTO_SEARCH_LIMIT": {
+        "name": {
+          "string": "Kullanıcı Otomatik Tamamlama Limiti"
+        },
+        "description": {
+          "string": "Arama sorgusu sonrasında döndürülen maksimum kullanıcı sayısını sınırlar. 0 sınır yok anlamına gelir"
+        },
+        "developer_comment": ""
+      },
+      "US_EXTRA_CONTACT_INFO": {
+        "name": {
+          "string": "Kullanıcı Ek İletişim Bilgisi"
+        },
+        "description": {
+          "string": "Otomatik tamamlama sonucuna eklenecek bilgileri belirtir. 'cn <ek> mail' formatında gösterilir"
+        },
+        "developer_comment": ""
+      },
+      "US_HIDDEN_USER": {
+        "name": {
+          "string": "Gizli Kullanıcı"
+        },
+        "description": {
+          "string": "Arama ve otomatik tamamlama için asla başkalarına döndürülmemesi gereken kullanıcı uid'lerinin listesi"
+        },
+        "developer_comment": ""
+      },
+      "US_HAS_RESOURCE": {
+        "name": {
+          "string": "Kullanıcı Kaynağı Kaynak İçerir"
+        },
+        "description": {
+          "string": "Bu Kullanıcı Kaynağının kaynakları varsa kutuyu işaretleyin"
+        },
+        "developer_comment": ""
+      },
+      "US_RESOURCE_SEARCH": {
+        "name": {
+          "string": "Kullanıcı Kaynak Arama"
+        },
+        "description": {
+          "string": "Kaynaklar için ek arama alanı"
+        },
+        "developer_comment": ""
+      },
+      "US_RESOURCE_MULTIBOOKING": {
+        "name": {
+          "string": "Kullanıcı Kaynak Çoklu Rezervasyon"
+        },
+        "description": {
+          "string": "Bir kaynağın çoklu rezervasyon değerinin bulunduğu alan"
+        },
+        "developer_comment": ""
+      },
+      "US_RESOURCE_EXTRA_INFO": {
+        "name": {
+          "string": "Kullanıcı Kaynak Ek Bilgi"
+        },
+        "description": {
+          "string": "Otomatik tamamlama sonucuna eklenecek bilgileri belirtir. 'cn <ek> mail' formatında gösterilir"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MODULE_ACCESS": {
+        "name": {
+          "string": "Modül Erişimi"
+        },
+        "description": {
+          "string": "Posta, takvim ve kişiler arasında hangi modüllerin kullanılabilir olduğunu tanımlar"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAPI_ACCESS": {
+        "name": {
+          "string": "MAPI Sunucusunu Etkinleştir"
+        },
+        "description": {
+          "string": "Masaüstündeki kullanıcıların MAPI protokolünü kullanmasına izin ver"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_EAS_ACCESS": {
+        "name": {
+          "string": "EAS Sunucusunu Etkinleştir"
+        },
+        "description": {
+          "string": "Mobil cihazlardaki kullanıcıların ActiveSync protokolünü kullanmasına izin ver"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_FOLDER_DISABLE_EXPORT": {
+        "name": {
+          "string": "Klasör Dışa Aktarımını Devre Dışı Bırak"
+        },
+        "description": {
+          "string": "Kullanıcının e-posta, takvim ve kişiler arasındaki klasörlerini dışa aktarmasını engelle"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_FOLDER_DISABLE_SHARING": {
+        "name": {
+          "string": "Klasör Paylaşımını Devre Dışı Bırak"
+        },
+        "description": {
+          "string": "Kullanıcının e-posta, takvim ve kişiler arasındaki klasörlerini paylaşmasını engelle"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_FOLDER_DISABLE_SHARING_ANY_AUTH": {
+        "name": {
+          "string": "Kimlik Doğrulanmış Kullanıcıyla Klasör Paylaşımını Devre Dışı Bırak"
+        },
+        "description": {
+          "string": "Kullanıcının e-posta, takvim ve kişiler arasındaki klasörlerini tüm kimlik doğrulanmış kullanıcılarla paylaşmasını engelle"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_AUTOCOMPLETION_MIN_LEN": {
+        "name": {
+          "string": "Otomatik tamamlama için minimum karakter sayısı"
+        },
+        "description": {
+          "string": "Otomatik tamamlama aramasını tetikleyen minimum karakter sayısını ayarla (3, aramanın üçüncü karakterde başlayacağı anlamına gelir)"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_API_MAX_REQUEST": {
+        "name": {
+          "string": "Maksimum API isteği"
+        },
+        "description": {
+          "string": "Kimlik doğrulanmış bir kullanıcının belirli bir sürede yapabileceği maksimum istek sayısını ayarla"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_API_MAX_REQUEST_INTERVAL": {
+        "name": {
+          "string": "Maksimum API isteği süresi"
+        },
+        "description": {
+          "string": "'Maksimum API isteği' sınırlamasının geçerli olduğu zaman aralığını ayarla"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_API_MAX_REQUEST_BLOCK_INTERVAL": {
+        "name": {
+          "string": "Maksimum API isteğinden sonra engelleme süresi"
+        },
+        "description": {
+          "string": "'Maksimum API isteği' limitine ulaşıldığında kullanıcının istek yapmasının engelleneceği süreyi ayarla"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_IDENTITIES_ENABLED": {
+        "name": {
+          "string": "Kimlikleri Etkinleştir"
+        },
+        "description": {
+          "string": "Kullanıcının e-posta kimlikleri oluşturmasına izin ver"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_IDENTITIES_CUSTOM_FROM_ENABLED": {
+        "name": {
+          "string": "Özel 'Gönderen' Etkinleştir"
+        },
+        "description": {
+          "string": "Kullanıcının kimliklerinde özel 'Gönderen' ayarlamasına izin ver"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_IDENTITIES_CUSTOM_NAME_ENABLED": {
+        "name": {
+          "string": "Özel 'Ad' etkinleştir"
+        },
+        "description": {
+          "string": "Kullanıcıların kimliklerinde özel Ad ayarlamasına izin ver"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_IDENTITIES_CUSTOM_REPLY_TO_ENABLED": {
+        "name": {
+          "string": "Özel 'Yanıtla' etkinleştir"
+        },
+        "description": {
+          "string": "Kullanıcıların kimliklerinde özel 'Yanıtla' ayarlamasına izin ver"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_ALLOW_EXT_MAIL_ACCOUNT": {
+        "name": {
+          "string": "Harici e-posta hesabı etkinleştir"
+        },
+        "description": {
+          "string": "Kullanıcının harici hesap ayarlamasına izin ver"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_ALLOW_EXT_AVATAR": {
+        "name": {
+          "string": "Harici avatar kullanımına izin ver"
+        },
+        "description": {
+          "string": "Kullanıcının harici avatar (gravatar, libravatar vb.) kullanım tercihini ayarlamasına izin ver"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_REFRESH_INTERVAL_ALLOWED": {
+        "name": {
+          "string": "E-posta için izin verilen otomatik yenileme aralığını ayarla"
+        },
+        "description": {
+          "string": "'E-postayı otomatik yenile' değeri için kullanıcıların seçebileceği değerleri ayarla"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_JUNK_SETTINGS": {
+        "name": {
+          "string": "İstenmeyen/istenen e-posta tetikleyicisini ayarla"
+        },
+        "description": {
+          "string": "Kullanıcılar e-postayı istenmeyen/istenen olarak işaretlediğinde devreye girecek mekanizmayı ayarla"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_JUNK_MAIL_SPAM": {
+        "name": {
+          "string": "İstenmeyen e-posta için e-posta adresi"
+        },
+        "description": {
+          "string": "İstenmeyen e-postaların iletileceği e-posta adresini ayarla"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_SERVER_TYPE": {
+        "name": {
+          "string": "E-posta sunucu türü"
+        },
+        "description": {
+          "string": "E-posta sunucusunun türünü ayarla"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_IMAP_SERVER": {
+        "name": {
+          "string": "IMAP sunucusu"
+        },
+        "description": {
+          "string": "IMAP sunucusunun ana bilgisayar adı"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_IMAP_PORT": {
+        "name": {
+          "string": "IMAP portu"
+        },
+        "description": {
+          "string": "IMAP sunucusunun portu"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_IMAP_ENCRYPTION": {
+        "name": {
+          "string": "IMAP şifrelemesi"
+        },
+        "description": {
+          "string": "IMAP sunucusunun şifreleme mekanizması"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_IMAP_AUTH_MECH": {
+        "name": {
+          "string": "IMAP kimlik doğrulama yöntemi"
+        },
+        "description": {
+          "string": "IMAP'in kimlik doğrulama mekanizması. 'login' kullanırken dikkatli olun"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SOFT_EMAIL_QUOTA": {
+        "name": {
+          "string": "Yumuşak kota"
+        },
+        "description": {
+          "string": "Yumuşak kotanın yüzdesini ayarlayın."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_PURGE_ALLOW": {
+        "name": {
+          "string": "Temizlemeyi etkinleştir"
+        },
+        "description": {
+          "string": "Temizleme, kullanıcıların bir klasördeki veya tüm hesabındaki belirli bir tarihten eski tüm e-postalarını silmesine olanak tanır."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_PURGE_MIN_DATE": {
+        "name": {
+          "string": "Temizleme minimum gün sayısı"
+        },
+        "description": {
+          "string": "Kullanıcıların temizleme için kullanabileceği minimum gün sayısını ayarlayın. 0, kullanıcıların tüm e-postalarını silebileceği anlamına gelir. 30, kullanıcıların yalnızca 30 günden eski e-postaları silebileceği anlamına gelir."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_FILTERING_ENABLED": {
+        "name": {
+          "string": "E-posta filtrelemesini etkinleştir"
+        },
+        "description": {
+          "string": "Kullanıcıların e-posta filtreleri ayarlamasına izin ver"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_FILTERING_TYPE": {
+        "name": {
+          "string": "E-posta filtreleme türü"
+        },
+        "description": {
+          "string": "E-posta filtreleme protokolünün türü"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SIEVE_SERVER": {
+        "name": {
+          "string": "Sieve sunucusu"
+        },
+        "description": {
+          "string": "Sieve sunucusunun ana bilgisayar adı"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SIEVE_PORT": {
+        "name": {
+          "string": "Sieve portu"
+        },
+        "description": {
+          "string": "Sieve sunucusunun portu"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SIEVE_ENCRYPTION": {
+        "name": {
+          "string": "Sieve şifrelemesi"
+        },
+        "description": {
+          "string": "Sieve sunucusunun şifrelemesi"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SIEVE_AUTH_MECH": {
+        "name": {
+          "string": "Sieve kimlik doğrulama mekanizması"
+        },
+        "description": {
+          "string": "Sieve için kimlik doğrulama mekanizması. Yoksa"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SIEVE_FOLDER_ENCODING": {
+        "name": {
+          "string": "Sieve kodlaması"
+        },
+        "description": {
+          "string": "Sieve sunucusu tarafından kullanılan kodlamayı ayarlar."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SIEVE_HEADER": {
+        "name": {
+          "string": "Sieve başlığı"
+        },
+        "description": {
+          "string": "Tüm kullanıcıların sieve betiklerinin başına eklenecek bir sieve betiği ayarlar"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SIEVE_FOOTER": {
+        "name": {
+          "string": "Sieve altbilgisi"
+        },
+        "description": {
+          "string": "Tüm kullanıcıların sieve betiklerinin sonuna eklenecek bir sieve betiği ayarlar"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SIEVE_FIRST_FILTER": {
+        "name": {
+          "string": "Başlangıç sieve betiği"
+        },
+        "description": {
+          "string": "Tüm yeni kullanıcılar için başlangıç sieve betiğini ayarlar. Kullanıcılar daha sonra değiştirebilecekler"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_VACATION_ENABLED": {
+        "name": {
+          "string": "Tatil mesajına izin ver"
+        },
+        "description": {
+          "string": "Kullanıcının tatil mesajı ayarlamasına izin ver. 'vacation' sieve uzantısını kullanır (rfc5230)"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_VACATION_ALLOW_RESPONSE_ALWAYS": {
+        "name": {
+          "string": "Her zaman tatil mesajına izin ver"
+        },
+        "description": {
+          "string": "Kullanıcının bekleme süresi olmadan her zaman gönderilecek bir tatil mesajı ayarlamasına izin ver"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_FORWARD_ENABLED": {
+        "name": {
+          "string": "Otomatik yönlendirmeye izin ver"
+        },
+        "description": {
+          "string": "Kullanıcının otomatik yönlendirme ayarlamasına izin ver. 'redirect' sieve komutunu kullanır"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_FORWARD_ALLOW_USER_DOMAIN": {
+        "name": {
+          "string": "Aynı alana otomatik yönlendirmeye izin ver"
+        },
+        "description": {
+          "string": "Kullanıcının aynı alan içindeki adreslere otomatik yönlendirme ayarlamasına izin ver"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_FORWARD_ALLOW_SOGO_DOMAIN": {
+        "name": {
+          "string": "SOGo alanına otomatik yönlendirmeye izin ver"
+        },
+        "description": {
+          "string": "Kullanıcının SOGo tarafından bilinen adreslere otomatik yönlendirme ayarlamasına izin ver"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_FORWARD_ALLOW_EXT_DOMAIN": {
+        "name": {
+          "string": "Harici alana otomatik yönlendirmeyi izin ver"
+        },
+        "description": {
+          "string": "Kullanıcının harici adreslere otomatik yönlendirme ayarlamasına izin ver"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_FORWARD_WHITELIST": {
+        "name": {
+          "string": "Otomatik yönlendirme için beyaz liste alanları"
+        },
+        "description": {
+          "string": "Kullanıcının yönlendirme yapabileceği belirli alanları ayarla"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_FORWARD_BLACKLIST": {
+        "name": {
+          "string": "Otomatik yönlendirme için kara liste alanları"
+        },
+        "description": {
+          "string": "Kullanıcının yönlendirme yapmasının yasak olduğu belirli alanları ayarla"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_NOTIFY_ENABLED": {
+        "name": {
+          "string": "Bildirime izin ver"
+        },
+        "description": {
+          "string": "Kullanıcının bildirim ayarlamasına izin ver. 'notify' sieve uzantısını kullanır (rfc5435)"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_NOTIFY_ALLOW_USER_DOMAIN": {
+        "name": {
+          "string": "Kullanıcı alanına bildirim göndermeye izin ver"
+        },
+        "description": {
+          "string": "Kullanıcının aynı alan içindeki adreslere bildirim ayarlamasına izin ver"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_NOTIFY_ALLOW_SOGO_DOMAIN": {
+        "name": {
+          "string": "SOGo alanına bildirim göndermeye izin ver"
+        },
+        "description": {
+          "string": "Kullanıcının SOGo tarafından bilinen adreslere bildirim ayarlamasına izin ver"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_NOTIFY_ALLOW_EXT_DOMAIN": {
+        "name": {
+          "string": "Harici alana bildirim göndermeye izin ver"
+        },
+        "description": {
+          "string": "Kullanıcının harici adreslere bildirim ayarlamasına izin ver"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_NOTIFY_WHITELIST": {
+        "name": {
+          "string": "Bildirim için beyaz liste alanları"
+        },
+        "description": {
+          "string": "Kullanıcının bildirim gönderebileceği belirli alanları ayarla"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_NOTIFY_BLACKLIST": {
+        "name": {
+          "string": "Bildirim için kara liste alanları"
+        },
+        "description": {
+          "string": "Kullanıcının bildirim göndermesinin yasak olduğu belirli alanları ayarla"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_OUTGOING_TYPE": {
+        "name": {
+          "string": "Giden posta sunucusu türü"
+        },
+        "description": {
+          "string": "Giden posta sunucusunun türünü ayarla"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SMTP_SERVER": {
+        "name": {
+          "string": "SMTP sunucusu"
+        },
+        "description": {
+          "string": "SMTP sunucusunun ana bilgisayar adı"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SMTP_PORT": {
+        "name": {
+          "string": "SMTP portu"
+        },
+        "description": {
+          "string": "SMTP sunucusunun portu"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SMTP_ENCRYPTION": {
+        "name": {
+          "string": "SMTP şifreleme"
+        },
+        "description": {
+          "string": "SMTP sunucusunun şifreleme mekanizması"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SMTP_AUTH_MECH": {
+        "name": {
+          "string": "SMTP kimlik doğrulama yöntemi"
+        },
+        "description": {
+          "string": "SMTP kimlik doğrulama mekanizması. 'Yok' seçeneğini dikkatli kullanın"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SMTP_MASTER_ENABLED": {
+        "name": {
+          "string": "SMTP ana hesabı"
+        },
+        "description": {
+          "string": "Tüm sistem mesajları (etkinlik, bildirimler vb.) için ana hesap kullan"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SMTP_MASTER_FROM": {
+        "name": {
+          "string": "Ana hesap gönderici"
+        },
+        "description": {
+          "string": "SMTP ana hesabının gönderici adresi"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SMTP_MASTER_LOGIN": {
+        "name": {
+          "string": "Ana hesap giriş adı"
+        },
+        "description": {
+          "string": "SMTP ana hesabının e-posta adresi"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SMTP_MASTER_PWD": {
+        "name": {
+          "string": "Ana hesap şifresi"
+        },
+        "description": {
+          "string": "SMTP ana hesabının şifresi"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_MAX_SUBMISSION": {
+        "name": {
+          "string": "Maksimum gönderilebilecek e-posta"
+        },
+        "description": {
+          "string": "Bir kullanıcının belirli bir sürede gönderebileceği maksimum e-posta sayısı"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_MAX_SUBMISSION_INTERVAL": {
+        "name": {
+          "string": "Maksimum gönderim süresi"
+        },
+        "description": {
+          "string": "'Maksimum gönderilebilecek e-posta' sayısının geçerli olduğu süre (saniye cinsinden)"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_MAX_SUBMISSION_BLOCK_INTERVAl": {
+        "name": {
+          "string": "Maksimum e-posta gönderim engelleme süresi"
+        },
+        "description": {
+          "string": "'Maksimum e-posta gönderimi' tetiklendikten sonra kullanıcının e-posta gönderemeyeceği süre"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_MAX_RECIPIENT": {
+        "name": {
+          "string": "E-postadaki maksimum alıcı sayısı"
+        },
+        "description": {
+          "string": "Ana hesap şifresi"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_CHECK_FROM": {
+        "name": {
+          "string": "'Gönderen' kontrolü"
+        },
+        "description": {
+          "string": "Giden e-posta sunucusuna istek gönderilmeden önce 'Gönderen'in kullanıcının e-postalarından biri olup olmadığını (varsayılan, takma adlar, kimlikler vb.) kontrol et"
+        },
+        "developer_comment": ""
+      }
+    }
+  }
+}

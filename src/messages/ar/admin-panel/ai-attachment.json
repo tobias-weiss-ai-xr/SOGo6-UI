@@ -1,0 +1,40 @@
+{
+  "AI_ATTACH": {
+    "title": {
+      "string": "إجراءات المرفقات الذكية"
+    },
+    "description": {
+      "string": "الكشف التلقائي عن نوع المستند واقتراح إجراءات الحفظ أو التحويل أو الأرشفة."
+    },
+    "input": {
+      "title": {
+        "string": "المرفق"
+      },
+      "filename": {
+        "string": "اسم الملف"
+      }
+    },
+    "output": {
+      "title": {
+        "string": "التحليل"
+      },
+      "empty": {
+        "string": "أدخل اسم الملف"
+      },
+      "preview": {
+        "string": "يمكن المعاينة"
+      }
+    },
+    "classify": {
+      "string": "تصنيف"
+    },
+    "errors": {
+      "empty": {
+        "string": "أدخل اسم الملف"
+      },
+      "fail": {
+        "string": "فشل التصنيف"
+      }
+    }
+  }
+}

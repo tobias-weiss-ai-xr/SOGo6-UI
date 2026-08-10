@@ -1,0 +1,61 @@
+{
+  "AP_BULK": {
+    "title": {
+      "string": "대량 사용자 관리"
+    },
+    "description": {
+      "string": "CSV 파일을 사용하여 사용자를 대량으로 가져오고 내보내기"
+    },
+    "export": {
+      "title": {
+        "string": "사용자 내보내기"
+      },
+      "description": {
+        "string": "모든 사용자를 CSV 파일로 다운로드"
+      },
+      "format": {
+        "string": "CSV 파일 (.csv)"
+      },
+      "button": {
+        "string": "CSV 내보내기"
+      },
+      "success": {
+        "string": "내보내기 완료"
+      },
+      "error": {
+        "string": "내보내기 실패"
+      }
+    },
+    "import": {
+      "title": {
+        "string": "사용자 가져오기"
+      },
+      "description": {
+        "string": "사용자 데이터를 포함한 CSV 파일을 업로드하여 계정을 생성 또는 업데이트"
+      },
+      "dropzone": {
+        "string": "클릭하여 CSV 업로드"
+      },
+      "button": {
+        "string": "CSV 가져오기"
+      },
+      "remove": {
+        "string": "파일 제거"
+      },
+      "success": {
+        "string": "가져오기 완료: {created}개 생성, {updated}개 업데이트"
+      },
+      "error": {
+        "string": "가져오기 실패"
+      }
+    },
+    "format": {
+      "title": {
+        "string": "CSV 형식"
+      },
+      "hint": {
+        "string": "첫 번째 행은 헤더여야 합니다. uid, cn, sn, givenName, mail은 필수입니다. password는 선택 사항(비어 있으면 무작위 생성)"
+      }
+    }
+  }
+}

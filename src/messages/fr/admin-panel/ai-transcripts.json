@@ -1,0 +1,60 @@
+{
+    "AI_TRANSCRIPTS": {
+        "title": {
+            "string": "Relevés de réunion"
+        },
+        "description": {
+            "string": "Gestion des transcriptions avec résumé automatique et points d'action"
+        },
+        "input": {
+            "title": {
+                "string": "Nouvelle transcription"
+            },
+            "transcript_title": {
+                "string": "Titre"
+            },
+            "attendees": {
+                "string": "Participants"
+            },
+            "content": {
+                "string": "Contenu"
+            },
+            "placeholder": {
+                "string": "Collez le relevé de réunion ici..."
+            }
+        },
+        "output": {
+            "title": {
+                "string": "Résumé"
+            },
+            "empty": {
+                "string": "Le résumé apparaîtra ici"
+            }
+        },
+        "list": {
+            "title": {
+                "string": "Transcriptions"
+            },
+            "empty": {
+                "string": "Aucune transcription"
+            },
+            "duration": {
+                "string": "min"
+            },
+            "attendees_short": {
+                "string": "Part."
+            }
+        },
+        "create": {
+            "string": "Créeur"
+        },
+        "errors": {
+            "fields": {
+                "string": "Titre et contenu requis"
+            },
+            "fail": {
+                "string": "Échec de la création"
+            }
+        }
+    }
+}

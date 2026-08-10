@@ -1,0 +1,40 @@
+{
+  "AI_DRAFT": {
+    "title": {
+      "string": "AI-ontwerpassistent"
+    },
+    "description": {
+      "string": "Antwoordsuggesties met tooninstelling. Genereert contextuele ontwerpantwoorden."
+    },
+    "input": {
+      "title": {
+        "string": "Originele e-mail"
+      },
+      "email": {
+        "string": "E-mailtekst"
+      },
+      "placeholder": {
+        "string": "Plak de e-mail waar je op wilt reageren..."
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Voorgesteld antwoord"
+      },
+      "empty": {
+        "string": "Voer e-mailtekst in en selecteer een toon"
+      }
+    },
+    "suggest": {
+      "string": "Stel antwoord voor"
+    },
+    "errors": {
+      "empty": {
+        "string": "Voer e-mailtekst in"
+      },
+      "fail": {
+        "string": "Suggestie mislukt"
+      }
+    }
+  }
+}

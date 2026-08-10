@@ -1,0 +1,46 @@
+{
+  "AI_SUMMARIZE": {
+    "title": {
+      "string": "メール要約"
+    },
+    "description": {
+      "string": "長いメールスレッドのTL;DR。抽出型要約で最も重要な文を抽出します。"
+    },
+    "input": {
+      "title": {
+        "string": "入力メール"
+      },
+      "text": {
+        "string": "メール本文"
+      },
+      "placeholder": {
+        "string": "メール本文をここに貼り付けてください..."
+      },
+      "sentences": {
+        "string": "最大文数"
+      }
+    },
+    "output": {
+      "title": {
+        "string": "要約"
+      },
+      "empty": {
+        "string": "テキストを入力して「要約」をクリックしてください"
+      }
+    },
+    "summarize": {
+      "string": "要約"
+    },
+    "loading": {
+      "string": "要約中..."
+    },
+    "errors": {
+      "empty": {
+        "string": "要約するテキストを入力してください"
+      },
+      "fail": {
+        "string": "要約に失敗しました"
+      }
+    }
+  }
+}

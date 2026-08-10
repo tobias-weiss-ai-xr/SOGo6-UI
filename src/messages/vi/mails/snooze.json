@@ -1,0 +1,39 @@
+{
+  "MAIL_SNOOZE": {
+    "title": {
+      "string": "Hoãn thư"
+    },
+    "description": {
+      "string": "Chọn thời gian thư này sẽ xuất hiện lại trong hộp thư đến của bạn."
+    },
+    "presets": {
+      "later_today": {
+        "string": "Sau hôm nay"
+      },
+      "tomorrow": {
+        "string": "Ngày mai"
+      },
+      "this_weekend": {
+        "string": "Cuối tuần này"
+      },
+      "next_week": {
+        "string": "Tuần sau"
+      }
+    },
+    "pick_date": {
+      "string": "Chọn ngày & giờ"
+    },
+    "pick_date_placeholder": {
+      "string": "Chọn ngày..."
+    },
+    "snooze_button": {
+      "string": "Hoãn thư"
+    },
+    "success": {
+      "string": "Thư đã được hoãn"
+    },
+    "error": {
+      "string": "Không thể hoãn thư"
+    }
+  }
+}

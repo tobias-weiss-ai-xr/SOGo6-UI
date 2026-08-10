@@ -1,0 +1,39 @@
+{
+  "MAIL_SNOOZE": {
+    "title": {
+      "string": "स्नूज़ करें"
+    },
+    "description": {
+      "string": "चुनें कि यह ईमेल आपके इनबॉक्स में कब फिर से दिखाई दे"
+    },
+    "presets": {
+      "later_today": {
+        "string": "आज बाद में"
+      },
+      "tomorrow": {
+        "string": "कल"
+      },
+      "this_weekend": {
+        "string": "इस सप्ताहांत"
+      },
+      "next_week": {
+        "string": "अगले सप्ताह"
+      }
+    },
+    "pick_date": {
+      "string": "तारीख और समय चुनें"
+    },
+    "pick_date_placeholder": {
+      "string": "तारीख चुनें..."
+    },
+    "snooze_button": {
+      "string": "स्नूज़ करें"
+    },
+    "success": {
+      "string": "ईमेल स्नूज़ किया गया"
+    },
+    "error": {
+      "string": "ईमेल स्नूज़ करने में विफल"
+    }
+  }
+}

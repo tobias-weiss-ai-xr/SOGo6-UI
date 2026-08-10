@@ -1,0 +1,43 @@
+{
+  "AI_SCHEDULE": {
+    "title": {
+      "string": "Smart schemaläggning av kalender"
+    },
+    "description": {
+      "string": "AI-förslag på mötestider baserade på deltagarnas tillgänglighetsmönster och preferenser."
+    },
+    "input": {
+      "title": {
+        "string": "Inställningar för möte"
+      },
+      "attendees": {
+        "string": "Deltagare"
+      },
+      "from": {
+        "string": "Från"
+      },
+      "to": {
+        "string": "Till"
+      },
+      "duration": {
+        "string": "Varaktighet (min)"
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Föreslagna tider"
+      }
+    },
+    "suggest": {
+      "string": "Föreslå tider"
+    },
+    "errors": {
+      "fields": {
+        "string": "Deltagare, från- och till-datum krävs"
+      },
+      "fail": {
+        "string": "Förslaget misslyckades"
+      }
+    }
+  }
+}

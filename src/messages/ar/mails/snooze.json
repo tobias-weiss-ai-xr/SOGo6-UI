@@ -1,0 +1,39 @@
+{
+  "MAIL_SNOOZE": {
+    "title": {
+      "string": "تأجيل"
+    },
+    "description": {
+      "string": "اختر متى يجب أن يعاود هذا البريد الظهور في صندوق الوارد."
+    },
+    "presets": {
+      "later_today": {
+        "string": "لاحقًا اليوم"
+      },
+      "tomorrow": {
+        "string": "غدًا"
+      },
+      "this_weekend": {
+        "string": "نهاية هذا الأسبوع"
+      },
+      "next_week": {
+        "string": "الأسبوع القادم"
+      }
+    },
+    "pick_date": {
+      "string": "اختر تاريخًا ووقتًا"
+    },
+    "pick_date_placeholder": {
+      "string": "حدد التاريخ..."
+    },
+    "snooze_button": {
+      "string": "أجل"
+    },
+    "success": {
+      "string": "تم تأجيل البريد"
+    },
+    "error": {
+      "string": "فشل تأجيل البريد"
+    }
+  }
+}

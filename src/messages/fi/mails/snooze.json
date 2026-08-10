@@ -1,0 +1,39 @@
+{
+  "MAIL_SNOOZE": {
+    "title": {
+      "string": "Lykkää"
+    },
+    "description": {
+      "string": "Valitse, milloin tämän sähköpostin tulisi palata postilaatikkoosi."
+    },
+    "presets": {
+      "later_today": {
+        "string": "Myöhemmin tänään"
+      },
+      "tomorrow": {
+        "string": "Huomenna"
+      },
+      "this_weekend": {
+        "string": "Tänä viikonloppuna"
+      },
+      "next_week": {
+        "string": "Ensi viikolla"
+      }
+    },
+    "pick_date": {
+      "string": "Valitse päivämäärä ja aika"
+    },
+    "pick_date_placeholder": {
+      "string": "Valitse päivämäärä..."
+    },
+    "snooze_button": {
+      "string": "Lykkää"
+    },
+    "success": {
+      "string": "Sähköposti lykätty"
+    },
+    "error": {
+      "string": "Sähköpostin lykkääminen epäonnistui"
+    }
+  }
+}

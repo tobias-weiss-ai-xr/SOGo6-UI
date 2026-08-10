@@ -1,0 +1,35 @@
+{
+  "AP_DBMIG": {
+    "title": {
+      "string": "Databasemigratie"
+    },
+    "description": {
+      "string": "Volg schema-versies en migratiegeschiedenis. Voer migraties uit vanaf het beheerderspaneel."
+    },
+    "current_version": {
+      "string": "Huidige schema-versie"
+    },
+    "run": {
+      "button": {
+        "string": "Migratie uitvoeren"
+      },
+      "running": {
+        "string": "Bezig..."
+      },
+      "success": {
+        "string": "Migratie toegepast"
+      },
+      "error": {
+        "string": "Migratie mislukt"
+      }
+    },
+    "history": {
+      "title": {
+        "string": "Migratiegeschiedenis"
+      },
+      "empty": {
+        "string": "Geen migraties geregistreerd."
+      }
+    }
+  }
+}

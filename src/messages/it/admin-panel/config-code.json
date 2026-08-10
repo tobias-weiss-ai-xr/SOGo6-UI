@@ -1,0 +1,31 @@
+{
+    "AP_CFGCODE": {
+        "title": { "string": "Configurazione come Codice" },
+        "description": { "string": "Esporta, versiona e importa la configurazione di sistema come JSON per flussi di lavoro GitOps." },
+        "export": {
+            "title": { "string": "Configurazione Corrente" },
+            "copy": { "string": "Copia" },
+            "copied": { "string": "Copiato!" },
+            "download": { "string": "Scarica JSON" },
+            "success": { "string": "Scaricato" }
+        },
+        "import": {
+            "title": { "string": "Importa Configurazione" },
+            "description_label": { "string": "Descrizione" },
+            "description_placeholder": { "string": "es. Aggiornamento impostazioni server mail" },
+            "placeholder": { "string": "Incolla qui la configurazione JSON..." },
+            "button": { "string": "Applica Configurazione" },
+            "running": { "string": "Applicazione in corso..." },
+            "success": { "string": "Configurazione v{{version}} applicata" },
+            "error": { "string": "Importazione fallita" }
+        },
+        "history": {
+            "title": { "string": "Cronologia Versioni" },
+            "empty": { "string": "Nessuno snapshot di configurazione ancora." }
+        },
+        "errors": {
+            "empty": { "string": "Il JSON di configurazione è vuoto" },
+            "parse": { "string": "JSON non valido — controlla la sintassi" }
+        }
+    }
+}

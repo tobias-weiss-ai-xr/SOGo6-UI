@@ -1,0 +1,14 @@
+{
+  "US_MAIL_LABELS": {
+    "title": {
+      "string": "E-mailmærker",
+      "context": "Title for the mail labels settings page"
+    },
+    "label": {
+      "string": "Mærke"
+    },
+    "imap_label": {
+      "string": "IMAP-mærke"
+    }
+  }
+}

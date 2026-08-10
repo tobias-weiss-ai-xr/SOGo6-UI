@@ -1,0 +1,19 @@
+{
+    "DATA_TABLE": {
+        "filter_placeholder": {
+            "string": "Filtrovat..."
+        },
+        "no_result": {
+            "string": "Žádné výsledky."
+        },
+        "previous": {
+            "string": "Předchozí"
+        },
+        "next": {
+            "string": "Další"
+        },
+        "selected": {
+            "string": "{selected} of {total} row(s) selected."
+        }
+    }
+}

@@ -1,0 +1,43 @@
+{
+  "AI_SCHEDULE": {
+    "title": {
+      "string": "Akıllı Takvim Planlama"
+    },
+    "description": {
+      "string": "Katılımcıların müsaitlik kalıpları ve tercihlerine dayalı olarak AI tarafından önerilen toplantı saatleri."
+    },
+    "input": {
+      "title": {
+        "string": "Toplantı Kurulumu"
+      },
+      "attendees": {
+        "string": "Katılımcılar"
+      },
+      "from": {
+        "string": "Başlangıç"
+      },
+      "to": {
+        "string": "Bitiş"
+      },
+      "duration": {
+        "string": "Süre (dk)"
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Önerilen Saatler"
+      }
+    },
+    "suggest": {
+      "string": "Saatleri Öner"
+    },
+    "errors": {
+      "fields": {
+        "string": "Katılımcılar, başlangıç ve bitiş tarihleri zorunludur"
+      },
+      "fail": {
+        "string": "Öneri başarısız oldu"
+      }
+    }
+  }
+}

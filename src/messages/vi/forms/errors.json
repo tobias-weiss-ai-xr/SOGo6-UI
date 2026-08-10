@@ -1,0 +1,14 @@
+{
+  "FORM_ERRORS": {
+    "required": {
+      "default": {
+        "string": "Trường này là bắt buộc"
+      }
+    },
+    "invalid": {
+      "email": {
+        "string": "Địa chỉ email không hợp lệ"
+      }
+    }
+  }
+}

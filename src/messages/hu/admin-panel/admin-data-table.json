@@ -1,0 +1,19 @@
+{
+    "DATA_TABLE": {
+        "filter_placeholder": {
+            "string": "Szűrés..."
+        },
+        "no_result": {
+            "string": "Nincsenek eredmények."
+        },
+        "previous": {
+            "string": "Előző"
+        },
+        "next": {
+            "string": "Következő"
+        },
+        "selected": {
+            "string": "{selected} of {total} row(s) selected."
+        }
+    }
+}

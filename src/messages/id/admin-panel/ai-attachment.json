@@ -1,0 +1,40 @@
+{
+  "AI_ATTACH": {
+    "title": {
+      "string": "Aksi Lampiran Cerdas"
+    },
+    "description": {
+      "string": "Deteksi otomatis jenis dokumen dan sarankan tindakan simpan, teruskan, atau arsipkan."
+    },
+    "input": {
+      "title": {
+        "string": "Lampiran"
+      },
+      "filename": {
+        "string": "Nama Berkas"
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Analisis"
+      },
+      "empty": {
+        "string": "Masukkan nama berkas"
+      },
+      "preview": {
+        "string": "Dapat Pratinjau"
+      }
+    },
+    "classify": {
+      "string": "Klasifikasikan"
+    },
+    "errors": {
+      "empty": {
+        "string": "Masukkan nama berkas"
+      },
+      "fail": {
+        "string": "Klasifikasi gagal"
+      }
+    }
+  }
+}

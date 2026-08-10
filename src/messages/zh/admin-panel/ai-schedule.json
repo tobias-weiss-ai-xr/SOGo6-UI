@@ -1,0 +1,46 @@
+{
+  "AI_SCHEDULE": {
+    "title": {
+      "string": "智能会议排期"
+    },
+    "description": {
+      "string": "基于参与者分析和冲突检测的会议时间建议"
+    },
+    "input": {
+      "title": {
+        "string": "输入"
+      },
+      "attendees": {
+        "string": "参与者"
+      },
+      "from": {
+        "string": "开始日期"
+      },
+      "to": {
+        "string": "结束日期"
+      },
+      "duration": {
+        "string": "时长（分钟）"
+      }
+    },
+    "output": {
+      "title": {
+        "string": "建议"
+      },
+      "empty": {
+        "string": "暂无建议"
+      }
+    },
+    "suggest": {
+      "string": "生成建议"
+    },
+    "errors": {
+      "fields": {
+        "string": "请填写所有字段"
+      },
+      "fail": {
+        "string": "建议生成失败"
+      }
+    }
+  }
+}

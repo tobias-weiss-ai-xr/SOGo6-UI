@@ -1,0 +1,34 @@
+{
+  "AP_HEALTH": {
+    "title": {
+      "string": "Santé du système"
+    },
+    "description": {
+      "string": "Statut en temps réel de tous les services de la pile SOGo."
+    },
+    "status": {
+      "all_ok": {
+        "string": "Tous les systèmes opérationnels"
+      },
+      "degraded": {
+        "string": "Degraded"
+      }
+    },
+    "overview": {
+      "uptime": {
+        "string": "Disponibilité"
+      },
+      "version": {
+        "string": "Version"
+      },
+      "services": {
+        "string": "Services Healthy"
+      }
+    },
+    "errors": {
+      "load_failed": {
+        "string": "Failed to load health data"
+      }
+    }
+  }
+}

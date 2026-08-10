@@ -1,0 +1,63 @@
+{
+    "MOBILE": {
+        "title": {
+            "string": "Gestion de l'app mobile"
+        },
+        "description": {
+            "string": "Gérer les appareils enregistrés, les notifications push et la configuration de l'app"
+        },
+        "errors": {
+            "fail": {
+                "string": "Opération échouée"
+            }
+        },
+        "success": {
+            "unregister": {
+                "string": "Appareil désenregistré"
+            },
+            "broadcast": {
+                "string": "Notification push envoyée"
+            }
+        },
+        "config": {
+            "title": {
+                "string": "Paramètres de l'app"
+            },
+            "push": {
+                "string": "Notifications push"
+            },
+            "biometric": {
+                "string": "Authentification biométrique"
+            }
+        },
+        "push": {
+            "title": {
+                "string": "Diffusion push"
+            },
+            "message": {
+                "placeholder": {
+                    "string": "Message..."
+                }
+            },
+            "broadcast": {
+                "string": "Envoyeur"
+            }
+        },
+        "stats": {
+            "title": {
+                "string": "Statistiques"
+            },
+            "devices": {
+                "string": "Appareils enregistrés"
+            }
+        },
+        "devices": {
+            "title": {
+                "string": "Tous les appareils"
+            },
+            "empty": {
+                "string": "Aucun appareil enregistré"
+            }
+        }
+    }
+}

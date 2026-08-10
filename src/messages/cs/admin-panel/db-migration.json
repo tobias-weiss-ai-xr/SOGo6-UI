@@ -1,0 +1,35 @@
+{
+  "AP_DBMIG": {
+    "title": {
+      "string": "Migrace databáze"
+    },
+    "description": {
+      "string": "Sledujte verze schématu a historii migrací. Spouštějte migrace z administrátorského panelu."
+    },
+    "current_version": {
+      "string": "Aktuální verze schématu"
+    },
+    "run": {
+      "button": {
+        "string": "Spustit migraci"
+      },
+      "running": {
+        "string": "Probíhá..."
+      },
+      "success": {
+        "string": "Migrace aplikována"
+      },
+      "error": {
+        "string": "Migrace selhala"
+      }
+    },
+    "history": {
+      "title": {
+        "string": "Historie migrací"
+      },
+      "empty": {
+        "string": "Žádné migrace nezaznamenány."
+      }
+    }
+  }
+}

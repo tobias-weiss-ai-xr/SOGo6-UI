@@ -1,0 +1,10 @@
+{
+  "PROTOCOLS": {
+    "title": {
+      "string": "E-posta Protokol Durumu"
+    },
+    "description": {
+      "string": "JMAP ve ActiveSync protokol sunucusu durumu ve özellikleri"
+    }
+  }
+}

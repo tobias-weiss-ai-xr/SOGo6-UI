@@ -18,6 +18,7 @@ import { cn } from '@/lib/utils'
 import { Plus } from 'lucide-react'
 import { useTranslations } from 'next-intl'
 import React, { useState } from 'react'
+import { logger } from '@/lib/logger'
 
 interface AddAddressBookProps {
   type: 'personals' | 'subscriptions'
@@ -48,7 +49,7 @@ const AddAddressBook: React.FC<AddAddressBookProps> = ({ type }) => {
       setName('')
       setOpen(false)
     } catch (error) {
-      console.error('Failed to create address book:', error)
+      logger.error('Failed to create address book:', { error: error })
     }
   }
 

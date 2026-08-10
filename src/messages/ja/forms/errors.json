@@ -1,0 +1,14 @@
+{
+  "FORM_ERRORS": {
+    "required": {
+      "default": {
+        "string": "この項目は必須です"
+      }
+    },
+    "invalid": {
+      "email": {
+        "string": "無効なメールアドレスです"
+      }
+    }
+  }
+}

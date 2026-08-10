@@ -1,0 +1,35 @@
+{
+  "AP_DBMIG": {
+    "title": {
+      "string": "Migrare bază de date"
+    },
+    "description": {
+      "string": "Urmărește versiunile schemei și istoricul migărilor. Rulează migrarea din panoul de administrare."
+    },
+    "current_version": {
+      "string": "Versiunea curentă a schemei"
+    },
+    "run": {
+      "button": {
+        "string": "Rulează migrarea"
+      },
+      "running": {
+        "string": "Se rulează..."
+      },
+      "success": {
+        "string": "Migrare aplicată"
+      },
+      "error": {
+        "string": "Migrare eșuată"
+      }
+    },
+    "history": {
+      "title": {
+        "string": "Istoricul migărilor"
+      },
+      "empty": {
+        "string": "Nicio migrare înregistrată."
+      }
+    }
+  }
+}

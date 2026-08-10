@@ -1,0 +1,34 @@
+{
+  "IMPORT": {
+    "title": {
+      "string": "PST / M365 -tuonti ja vienti"
+    },
+    "description": {
+      "string": "Tuo postilaatikot PST-tiedostoista tai Microsoft 365:stä edistymisen seurannalla"
+    },
+    "errors": {
+      "fields": {
+        "string": "Pakollisia kenttiä puuttuu"
+      },
+      "fail": {
+        "string": "Toiminto epäonnistui"
+      }
+    },
+    "success": {
+      "analyze": {
+        "string": "PST analysoitu"
+      },
+      "import": {
+        "string": "Tuonti käynnistetty"
+      }
+    },
+    "jobs": {
+      "title": {
+        "string": "Tuontitehtävät"
+      },
+      "empty": {
+        "string": "Ei tuontitehtäviä vielä"
+      }
+    }
+  }
+}

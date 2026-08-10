@@ -4,6 +4,7 @@ import { MAIL_PRIORITY_NORMAL } from '../../store/mail-compose-slice'
 
 const mockDispatch = jest.fn()
 const mockSendMail = jest.fn()
+const mockCancelPendingSend = jest.fn()
 const mockUseSendMailMutation = jest.fn()
 const mockBuildComposeMailPayload = jest.fn()
 
@@ -11,8 +12,20 @@ jest.mock('@/lib/redux/hooks', () => ({
   useAppDispatch: () => mockDispatch,
 }))
 
+jest.mock('next-intl', () => ({
+  useTranslations: () => (key: string) => key,
+}))
+
+jest.mock('sonner', () => ({
+  toast: {
+    success: jest.fn(),
+    error: jest.fn(),
+  },
+}))
+
 jest.mock('../../store/mail-api', () => ({
   useSendMailMutation: () => mockUseSendMailMutation(),
+  useCancelPendingSendMutation: () => [mockCancelPendingSend],
 }))
 
 jest.mock('../../utils/build-compose-mail-payload', () => ({
@@ -160,5 +173,79 @@ describe('useComposeSend', () => {
     const { result } = renderHook(() => useComposeSend(baseFields))
 
     expect(result.current.isSending).toBe(true)
+  })
+
+  describe('Undo Send', () => {
+    it('keeps the draft open and shows an undo toast when the send is pending', async () => {
+      const { toast } = require('sonner')
+      const future = Math.round(Date.now() / 1000) + 30
+      mockSendMail.mockResolvedValue({
+        data: {
+          data: {
+            status: 'pending',
+            pending_key: 'pending-1',
+            undo_available_until: future,
+          },
+        },
+      })
+      const { result } = renderHook(() => useComposeSend(baseFields))
+
+      await act(async () => {
+        await result.current.handleSend()
+      })
+
+      // Draft stays open — no closeDraft dispatched.
+      expect(mockDispatch).not.toHaveBeenCalled()
+      expect(toast.success).toHaveBeenCalledWith(
+        'mail_send.undo.message.string',
+        expect.objectContaining({
+          action: expect.objectContaining({
+            label: 'mail_send.undo.action.string',
+          }),
+        })
+      )
+    })
+
+    it('cancels the pending send when the undo action is clicked', async () => {
+      const { toast } = require('sonner')
+      const future = Math.round(Date.now() / 1000) + 30
+      mockSendMail.mockResolvedValue({
+        data: {
+          data: {
+            status: 'pending',
+            pending_key: 'pending-1',
+            undo_available_until: future,
+          },
+        },
+      })
+      const { result } = renderHook(() => useComposeSend(baseFields))
+
+      await act(async () => {
+        await result.current.handleSend()
+      })
+
+      const options = toast.success.mock.calls[0][1]
+      await act(async () => {
+        options.action.onClick()
+      })
+
+      expect(mockCancelPendingSend).toHaveBeenCalledWith({
+        accountId: 'acc-1',
+        pendingKey: 'pending-1',
+      })
+      // Still no draft close.
+      expect(mockDispatch).not.toHaveBeenCalled()
+    })
+
+    it('closes the draft normally for an immediate (non-pending) send', async () => {
+      mockSendMail.mockResolvedValue({ data: { data: { status: 'sent' } } })
+      const { result } = renderHook(() => useComposeSend(baseFields))
+
+      await act(async () => {
+        await result.current.handleSend()
+      })
+
+      expect(mockDispatch).toHaveBeenCalledWith(closeDraft({ draftId: 'draft-1' }))
+    })
   })
 })

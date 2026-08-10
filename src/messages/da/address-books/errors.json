@@ -1,0 +1,108 @@
+{
+  "ADDRESS_BOOKS_ERRORS": {
+    "list_member_invalid": {
+      "string": "Et eller flere af de valgte medlemmer er ikke kontakter i denne adressebog.",
+      "context": "Inline error when a distribution list member is invalid."
+    },
+    "addressbook_not_found": {
+      "string": "Adressebogen kunne ikke findes.",
+      "context": "Error when an address book is missing."
+    },
+    "addressbook_duplicate": {
+      "string": "Der findes allerede en adressebog med dette navn.",
+      "context": "Toast when address book creation conflicts."
+    },
+    "contact_not_found": {
+      "string": "Kontakten kunne ikke findes.",
+      "context": "Error when a contact is missing."
+    },
+    "contact_duplicate": {
+      "string": "Der findes allerede en kontakt med dette identifikationsnummer.",
+      "context": "Toast when contact creation conflicts."
+    },
+    "contact_persist_failed": {
+      "string": "Kontakten kunne ikke gemmes.",
+      "context": "Error when contact creation fails on the server."
+    },
+    "contact_update_failed": {
+      "string": "Kontakten kunne ikke opdateres.",
+      "context": "Error when contact update fails on the server."
+    },
+    "operation_not_supported": {
+      "string": "Denne handling understøttes ikke for denne adressebog.",
+      "context": "Error when mutating a non-local address book source."
+    },
+    "list_not_found": {
+      "string": "Distributionslisten kunne ikke findes.",
+      "context": "Error when a distribution list is missing."
+    },
+    "list_duplicate": {
+      "string": "Der findes allerede en distributionsliste med dette navn.",
+      "context": "Toast when list creation conflicts."
+    },
+    "list_persist_failed": {
+      "string": "Distributionslisten kunne ikke gemmes.",
+      "context": "Error when list creation fails on the server."
+    },
+    "list_update_failed": {
+      "string": "Distributionslisten kunne ikke opdateres.",
+      "context": "Error when list update fails on the server."
+    },
+    "access_denied": {
+      "string": "Du har ikke tilladelse til at redigere denne adressebog.",
+      "context": "Toast when write access is denied."
+    },
+    "read_only": {
+      "string": "Denne adressebog er skrivebeskyttet.",
+      "context": "Toast when mutating a read-only address book."
+    },
+    "export_format_unsupported": {
+      "string": "Det valgte eksportformat understøttes ikke.",
+      "context": "Error when export format negotiation fails."
+    },
+    "import_no_file": {
+      "string": "Der blev ikke angivet nogen fil til import.",
+      "context": "Error when import request has no file."
+    },
+    "import_too_large": {
+      "string": "Importfilen overstiger den maksimalt tilladte størrelse (10 MB).",
+      "context": "Error when import payload is too large."
+    },
+    "import_parse_failed": {
+      "string": "Importfilen kunne ikke analyseres.",
+      "context": "Error when import document parsing fails."
+    },
+    "job_not_found": {
+      "string": "Baggrundsopgaven kunne ikke findes.",
+      "context": "Error when polling an unknown job."
+    },
+    "job_forbidden": {
+      "string": "Du har ikke adgang til denne baggrundsopgave.",
+      "context": "Error when job belongs to another user."
+    },
+    "job_not_ready": {
+      "string": "Eksporten er endnu ikke klar. Vent venligst og prøv igen.",
+      "context": "Error when downloading a job result too early."
+    },
+    "job_no_result": {
+      "string": "Denne opgave har ingen downloadbar resultat.",
+      "context": "Error when job result is unavailable."
+    },
+    "job_concurrent_limit": {
+      "string": "For mange baggrundsopgaver kører. Prøv venligst igen senere.",
+      "context": "Error when concurrent job limit is reached."
+    },
+    "file_too_large": {
+      "string": "Fotoet overstiger den maksimalt tilladte størrelse (2 MB).",
+      "context": "Inline error when contact photo upload is too large."
+    },
+    "file_type_not_allowed": {
+      "string": "Denne filtype er ikke tilladt til kontaktbilleder.",
+      "context": "Inline error when contact photo type is not allowed."
+    },
+    "generic": {
+      "string": "Handlingen kunne ikke fuldføres. Prøv venligst igen.",
+      "context": "Fallback error message for contact API errors."
+    }
+  }
+}

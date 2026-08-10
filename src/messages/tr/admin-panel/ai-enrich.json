@@ -1,0 +1,54 @@
+{
+  "AI_ENRICH": {
+    "title": {
+      "string": "İletişim Otomatik Zenginleştirme"
+    },
+    "description": {
+      "string": "E-posta imzalarından telefon, unvan, şirket, konum bilgilerini çıkartın."
+    },
+    "input": {
+      "title": {
+        "string": "E-posta İmzası"
+      },
+      "signature": {
+        "string": "İmza Metni"
+      },
+      "placeholder": {
+        "string": "E-posta imzasını buraya yapıştırın..."
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Çıkarılan Bilgiler"
+      },
+      "empty": {
+        "string": "İmza metnini girin ve Çıkart'a tıklayın"
+      }
+    },
+    "extract": {
+      "string": "Bilgileri Çıkart"
+    },
+    "field": {
+      "phone": {
+        "string": "Telefon"
+      },
+      "title": {
+        "string": "Unvan"
+      },
+      "company": {
+        "string": "Şirket"
+      },
+      "location": {
+        "string": "Konum"
+      }
+    },
+    "errors": {
+      "empty": {
+        "string": "Metin girin"
+      },
+      "fail": {
+        "string": "Çıkarma başarısız"
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+    "DATA_TABLE": {
+        "filter_placeholder": {
+            "string": "फ़िल्टर..."
+        },
+        "no_result": {
+            "string": "कोई परिणाम नहीं।"
+        },
+        "previous": {
+            "string": "पिछला"
+        },
+        "next": {
+            "string": "अगला"
+        },
+        "selected": {
+            "string": "{selected} of {total} row(s) selected."
+        }
+    }
+}

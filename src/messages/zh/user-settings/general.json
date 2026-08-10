@@ -1,0 +1,81 @@
+{
+  "US_GENERAL": {
+    "title": {
+      "string": "通用设置",
+      "context": "Title for the general settings page"
+    },
+    "labels": {
+      "language": {
+        "string": "语言"
+      },
+      "timezone": {
+        "string": "时区"
+      },
+      "short_date_style": {
+        "string": "短日期格式"
+      },
+      "long_date_style": {
+        "string": "长日期格式"
+      },
+      "time_style": {
+        "string": "时间格式"
+      },
+      "default_view": {
+        "string": "默认视图"
+      },
+      "refresh_frequency": {
+        "string": "刷新频率"
+      },
+      "enable_notifications": {
+        "string": "启用通知"
+      },
+      "saved": {
+        "string": "通用设置已保存"
+      },
+      "mail": {
+        "string": "邮件"
+      },
+      "calendar": {
+        "string": "日历"
+      },
+      "contacts": {
+        "string": "联系人"
+      },
+      "last": {
+        "string": "上次显示的模块"
+      },
+      "enable_external_avatar": {
+        "string": "启用外部头像"
+      }
+    },
+    "descriptions": {
+      "language": {
+        "string": "应用中使用的语言。"
+      },
+      "timezone": {
+        "string": "您所在的时区。"
+      },
+      "short_date_style": {
+        "string": "应用中日期的显示方式。"
+      },
+      "long_date_style": {
+        "string": "应用中日期的显示方式。"
+      },
+      "time_style": {
+        "string": "应用中时间的显示方式。"
+      },
+      "default_view": {
+        "string": "打开应用时的默认视图。"
+      },
+      "refresh_frequency": {
+        "string": "应用检查新邮件、日历事件等的频率。"
+      },
+      "enable_notifications": {
+        "string": "接收新邮件、日历事件等的通知。"
+      },
+      "enable_external_avatar": {
+        "string": "启用外部头像（如 Gravatar）"
+      }
+    }
+  }
+}

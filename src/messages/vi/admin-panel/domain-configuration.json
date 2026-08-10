@@ -1,0 +1,1285 @@
+{
+  "AP_DOMAIN_CONFIGURATION": {
+    "origin": {
+      "rule": {
+        "string": "(từ quy tắc {origin})"
+      },
+      "default": {
+        "string": "(từ cấu hình mặc định)"
+      },
+      "domain": {
+        "string": "(từ miền {origin})"
+      }
+    },
+    "tabs": {
+      "auth_settings": {
+        "string": "Cài đặt xác thực"
+      },
+      "user_source": {
+        "string": "Nguồn người dùng"
+      },
+      "user_module_settings": {
+        "string": "Cài đặt Người dùng và Mô-đun"
+      },
+      "mail_settings": {
+        "string": "Cài đặt Thư"
+      },
+      "calendar_contact_settings": {
+        "string": "Cài đặt Lịch và Danh bạ"
+      }
+    },
+    "properties": {
+      "SOGO_D_AUTH_TYPE": {
+        "name": {
+          "string": "Loại xác thực"
+        },
+        "description": {
+          "string": "Chọn phương thức xác thực cho người dùng. 'Plain' có nghĩa là phương thức tên đăng nhập/mật khẩu cổ điển"
+        },
+        "developer_comment": "Options might include LDAP, SQL, etc."
+      },
+      "SOGO_D_CAS_URL": {
+        "name": {
+          "string": "URL của máy chủ CAS"
+        },
+        "description": {
+          "string": "Nhập URL đầy đủ của máy chủ CAS của bạn"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_CAS_LOGOUT_ENABLED": {
+        "name": {
+          "string": "Bật đăng xuất với CAS"
+        },
+        "description": {
+          "string": "Đánh dấu vào ô để cho phép người dùng đăng xuất khỏi SOGo và máy chủ CAS"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_OPENID_CONFIG_URL": {
+        "name": {
+          "string": "URL của điểm cuối Nhà cung cấp OpenID"
+        },
+        "description": {
+          "string": "Ví dụ: https://myopenid.net/.well-known/openid-configuration"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_OPENID_CLIENT_NAME": {
+        "name": {
+          "string": "Tên khách hàng OpenID"
+        },
+        "description": {
+          "string": "Tên của khách hàng OpenID của bạn"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_OPENID_CLIENT_SECRET": {
+        "name": {
+          "string": "Mật khẩu khách hàng OpenID"
+        },
+        "description": {
+          "string": "Mật khẩu của khách hàng OpenID của bạn"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_OPENID_SCOPE": {
+        "name": {
+          "string": "Phạm vi khách hàng OpenID"
+        },
+        "description": {
+          "string": "Phạm vi của khách hàng OpenID của bạn. Mặc định là 'openid profile email'."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_OPENID_EMAIL": {
+        "name": {
+          "string": "Khóa email của người dùng"
+        },
+        "description": {
+          "string": "Khóa để tìm email của người dùng trong hồ sơ người dùng."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_OPENID_TOKEN_CHECK_INTERVAL": {
+        "name": {
+          "string": "Khoảng thời gian kiểm tra token"
+        },
+        "description": {
+          "string": "Để giới hạn số lượng yêu cầu gửi đến máy chủ OpenID của bạn để kiểm tra tính hợp lệ của token, hãy đặt khoảng thời gian (tính bằng giây) mà token sẽ không được kiểm tra lại sau lần kiểm tra thành công đầu tiên. 0 có nghĩa là token sẽ luôn được kiểm tra. 60 có nghĩa là token sẽ không được kiểm tra lại trong 60 giây sau lần kiểm tra thành công đầu tiên."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_OPENID_REFRESH_ENABLE": {
+        "name": {
+          "string": "Cho phép cơ chế Làm mới Token"
+        },
+        "description": {
+          "string": "Nếu máy chủ OpenID của bạn quản lý cơ chế làm mới token, SOGo sẽ sử dụng nó."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_OPENID_ENDSESSION_ENABLED": {
+        "name": {
+          "string": "Bật Kết thúc Phiên từ máy chủ OpenID"
+        },
+        "description": {
+          "string": "Theo mặc định, người dùng chỉ có thể đăng xuất khỏi webmail. Bật cài đặt này để cũng đăng xuất khỏi máy chủ OpenID của bạn, nghĩa là người dùng sẽ bị đăng xuất khỏi tất cả các ứng dụng sử dụng máy chủ OpenID. Chỉ hoạt động nếu OpenID của bạn có điểm cuối end_session_endpoint."
+        },
+        "developer_comment": ""
+      },
+      "SOGo_D_OPENID_FETCH_USER_PROFILE": {
+        "name": {
+          "string": "Lấy Hồ sơ Người dùng"
+        },
+        "description": {
+          "string": "Theo mặc định, SOGo sẽ lấy hồ sơ người dùng để lấy email của người dùng. Bỏ chọn để lấy email trực tiếp từ token. Bỏ chọn nếu bạn đang sử dụng Dịch vụ Liên đoàn Active Directory của Microsoft (AD FS)."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SAML2_URL": {
+        "name": {
+          "string": "SAML2 CHƯA ĐƯỢC HOÀN THIỆN!!!"
+        },
+        "description": {
+          "string": "Chúc may mắn cho người sẽ làm việc này..."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_PWD_CHANGE_ENABLED": {
+        "name": {
+          "string": "Cho phép Thay đổi Mật khẩu"
+        },
+        "description": {
+          "string": "Cho phép người dùng thay đổi mật khẩu của họ từ SOGo. Đảm bảo rằng Nguồn Người dùng của bạn cấp quyền cho người dùng thực hiện hành động này."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_LOGIN_CHECK_MAX_ATTEMPT": {
+        "name": {
+          "string": "Số lần đăng nhập thất bại tối đa"
+        },
+        "description": {
+          "string": "Đặt số lần người dùng có thể đăng nhập thất bại trước khi bị khóa. 0 có nghĩa là không giới hạn."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_LOGIN_CHECK_TIME_SPAN": {
+        "name": {
+          "string": "Khoảng thời gian đăng nhập thất bại"
+        },
+        "description": {
+          "string": "Đặt khoảng thời gian (tính bằng giây) để đếm các lần đăng nhập thất bại. Ví dụ: 60 có nghĩa là người dùng chỉ có thể đăng nhập thất bại lên đến 'Số lần đăng nhập thất bại tối đa' trong vòng 60 giây sau lần thất bại đầu tiên, trước khi bị khóa."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_LOGIN_CHECK_BLOCK_TIME": {
+        "name": {
+          "string": "Thời gian chặn sau khi đăng nhập thất bại"
+        },
+        "description": {
+          "string": "Thiết lập thời gian (tính bằng giây) người dùng bị chặn sau quá nhiều lần đăng nhập thất bại."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_PWD_RECOVERY": {
+        "name": {
+          "string": "Bật Khôi phục Mật khẩu"
+        },
+        "description": {
+          "string": "Cho phép người dùng thiết lập phương thức khôi phục mật khẩu"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_PWD_RECOVERY_METHOD": {
+        "name": {
+          "string": "Phương thức Khôi phục Mật khẩu Khả dụng"
+        },
+        "description": {
+          "string": "Chọn phương thức khôi phục mật khẩu có sẵn cho người dùng"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_PWD_RECOVERY_FORCE": {
+        "name": {
+          "string": "Bắt buộc Khôi phục Mật khẩu"
+        },
+        "description": {
+          "string": "Bắt buộc người dùng thiết lập phương thức khôi phục mật khẩu."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_PWD_RECOVERY_DELAY": {
+        "name": {
+          "string": "Thời gian chờ giữa các lần Khôi phục Mật khẩu"
+        },
+        "description": {
+          "string": "Thời gian chờ (tính bằng giây) trước khi người dùng có thể yêu cầu khôi phục mật khẩu lần nữa."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_LOGIN_MFA": {
+        "name": {
+          "string": "Bật Xác thực Đa Yếu tố (MFA)"
+        },
+        "description": {
+          "string": "Cho phép người dùng thiết lập Xác thực Đa Yếu tố"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_LOGIN_MFA_METHOD": {
+        "name": {
+          "string": "Phương thức MFA Khả dụng"
+        },
+        "description": {
+          "string": "Chọn phương thức Xác thực Đa Yếu tố có sẵn cho người dùng"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_LOGIN_MFA_FORCE": {
+        "name": {
+          "string": "Bắt buộc MFA"
+        },
+        "description": {
+          "string": "Bắt buộc người dùng thiết lập MFA"
+        },
+        "developer_comment": ""
+      },
+      "US_UID": {
+        "name": {
+          "string": "UID Nguồn Người dùng"
+        },
+        "description": {
+          "string": "Chọn tên duy nhất cho Nguồn Người dùng này, tên sẽ không hiển thị với người dùng"
+        },
+        "developer_comment": "Only for SOGo to differentiate differents User SOurce"
+      },
+      "US_TYPE": {
+        "name": {
+          "string": "Loại Nguồn Người dùng"
+        },
+        "description": {
+          "string": "Thiết lập loại Nguồn Người dùng của bạn"
+        },
+        "developer_comment": "Only ldap and sql supported for now"
+      },
+      "US_LDAP_HOSTNAME": {
+        "name": {
+          "string": "Tên máy chủ LDAP"
+        },
+        "description": {
+          "string": "Chỉ định rõ host và port, không thêm bất kỳ thông tin nào khác"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_BIND_DN": {
+        "name": {
+          "string": "Bind DN"
+        },
+        "description": {
+          "string": "DN của tên đăng nhập dùng để bind với máy chủ của bạn"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_BIND_DN_PWD": {
+        "name": {
+          "string": "Mật khẩu Bind DN"
+        },
+        "description": {
+          "string": "Mật khẩu cho Bind DN của bạn"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_BASE_DN": {
+        "name": {
+          "string": "Base DN"
+        },
+        "description": {
+          "string": "Base DN của mục người dùng. Nếu miền email có trong đây, bạn có thể thêm '%d' để động thêm nó từ email người dùng như: 'ou=%d,dc=example,dc=com'"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_UID": {
+        "name": {
+          "string": "Trường UID"
+        },
+        "description": {
+          "string": "Trường chứa tên đăng nhập của người dùng, tên đăng nhập phải là duy nhất trên tất cả Nguồn Người dùng và Miền"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_CN": {
+        "name": {
+          "string": "Trường CN"
+        },
+        "description": {
+          "string": "Trường chứa Tên Đầy Đủ của người dùng"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_ID": {
+        "name": {
+          "string": "Trường ID"
+        },
+        "description": {
+          "string": "Trường bắt đầu DN của người dùng nếu không sử dụng Bind Field (ví dụ: nếu bạn có 'dn: uid=sogo,ou=users,dc=example,dc=org', giá trị này nên là 'uid')"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_SCOPE": {
+        "name": {
+          "string": "Phạm vi Tìm kiếm LDAP"
+        },
+        "description": {
+          "string": "Chỉ định tập hợp các mục tại hoặc dưới BaseDN có thể được xem xét là khớp tiềm năng cho yêu cầu tìm kiếm"
+        },
+        "developer_comment": "https://ldapwiki.com/wiki/Wiki.jsp?page=LDAP%20Search%20Scopes"
+      },
+      "US_LDAP_FILTER": {
+        "name": {
+          "string": "Bộ lọc LDAP"
+        },
+        "description": {
+          "string": "Bộ lọc bổ sung dùng cho các truy vấn LDAP. Sử dụng '=', '!=', 'AND', 'OR' và dấu ngoặc. Ví dụ: '(objectClass='mailUser' OR objectClass!='mailGroup') AND accountStatus='active'"
+        },
+        "developer_comment": "Use SOGo's syntax and not ldap syntax for filter"
+      },
+      "US_LDAP_PWD_POLICY": {
+        "name": {
+          "string": "Chính sách Mật khẩu LDAP"
+        },
+        "description": {
+          "string": "Chỉ định rằng máy chủ LDAP của bạn có Chính sách Mật khẩu với khái niệm hết hạn và thời gian ân hạn"
+        },
+        "developer_comment": "https://ldapwiki.com/wiki/Wiki.jsp?page=Password%20Policy"
+      },
+      "US_LDAP_PWD_UPDATE_SAMBA": {
+        "name": {
+          "string": "Cập nhật mật khẩu Samba qua LDAP"
+        },
+        "description": {
+          "string": "Nếu người dùng đổi mật khẩu, cũng cập nhật sambaNTPassword và sambaLMPassword"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_BIND_AS_USER": {
+        "name": {
+          "string": "Ràng buộc dưới dạng Người dùng"
+        },
+        "description": {
+          "string": "Sau khi xác thực, sử dụng DN của người dùng để ràng buộc thay thế"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_BIND_FIELD": {
+        "name": {
+          "string": "Trường ràng buộc bổ sung"
+        },
+        "description": {
+          "string": "Các trường ràng buộc bổ sung để sử dụng. Ví dụ: nếu thêm 'mail', ràng buộc sẽ có thêm 'mail=<tên_đăng_nhập>'"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_ATTR_FIELD": {
+        "name": {
+          "string": "Trường thuộc tính"
+        },
+        "description": {
+          "string": "Các trường thuộc tính trả về trong truy vấn tìm kiếm. Mặc định là '*' (tất cả). Cẩn thận vì điều này có thể ảnh hưởng nặng nề đến hiệu suất SOGo"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_GROUP_CLASS": {
+        "name": {
+          "string": "Lớp nhóm LDAP"
+        },
+        "description": {
+          "string": "Đặt lớp LDAP chỉ định cho SOGo biết đây là một nhóm chứ không phải người dùng đơn lẻ"
+        },
+        "developer_comment": ""
+      },
+      "US_SQL_USER_URL": {
+        "name": {
+          "string": "URL Người dùng SQL"
+        },
+        "description": {
+          "string": "URL cơ sở dữ liệu đến bảng người dùng. Ví dụ: postgresql://sogo:sogo@127.0.0.1:5432/sogo/sogo_user"
+        },
+        "developer_comment": ""
+      },
+      "US_SQL_PREPEND_PWD_SCHEME": {
+        "name": {
+          "string": "Sơ đồ mật khẩu Người dùng SQL"
+        },
+        "description": {
+          "string": "Đánh dấu CÓ nếu mật khẩu được lưu trong cơ sở dữ liệu dưới dạng {scheme}giá_trị_mã_hóa"
+        },
+        "developer_comment": ""
+      },
+      "US_SQL_USER_FILTER": {
+        "name": {
+          "string": "Bộ lọc Người dùng SQL"
+        },
+        "description": {
+          "string": "Điều kiện WHERE bổ sung để thêm vào truy vấn SQL. Ví dụ: 'active=1'"
+        },
+        "developer_comment": ""
+      },
+      "US_SQL_DOMAIN_FIELD": {
+        "name": {
+          "string": "Miền Người dùng SQL"
+        },
+        "description": {
+          "string": "Đặt tên cột chứa miền của người dùng. Nếu được thiết lập, mỗi truy vấn SQL sẽ thêm '<cột_miền> = <miền_người_dùng>' vào điều kiện WHERE"
+        },
+        "developer_comment": ""
+      },
+      "US_MAPPING": {
+        "name": {
+          "string": "Ánh xạ Nguồn Người dùng"
+        },
+        "description": {
+          "string": "Ánh xạ trường Nguồn Người dùng sang thuộc tính liên hệ"
+        },
+        "developer_comment": ""
+      },
+      "US_CAN_AUTH": {
+        "name": {
+          "string": "Cho phép xác thực"
+        },
+        "description": {
+          "string": "Người dùng từ Nguồn Người dùng này có thể đăng nhập vào webmail"
+        },
+        "developer_comment": ""
+      },
+      "US_PWD_ALGO": {
+        "name": {
+          "string": "Thuật toán Mật khẩu Nguồn Người dùng"
+        },
+        "description": {
+          "string": "Thuật toán mật khẩu được sử dụng bởi nguồn người dùng này. Bắt buộc đối với nguồn người dùng SQL. Tùy chọn đối với LDAP: chỉ cần thiết nếu bạn cho phép người dùng thay đổi mật khẩu"
+        },
+        "developer_comment": ""
+      },
+      "US_SIM_KEY_TYPE": {
+        "name": {
+          "string": "Loại Khóa Đối xứng của Thuật toán Mật khẩu"
+        },
+        "description": {
+          "string": "Chỉ định cách bạn lưu trữ khóa đối xứng của thuật toán mật khẩu"
+        },
+        "developer_comment": ""
+      },
+      "US_SIM_KEY_VALUE": {
+        "name": {
+          "string": "Giá trị Khóa Đối xứng của Thuật toán Mật khẩu"
+        },
+        "description": {
+          "string": "Giá trị phụ thuộc vào loại.\nNếu là 'path', nhập đường dẫn tệp nơi SOGo sẽ tìm khóa đối xứng.\nNếu là 'env', đặt tên biến môi trường chứa khóa.\nNếu là 'plain', nhập trực tiếp khóa vào đây"
+        },
+        "developer_comment": ""
+      },
+      "US_PWD_POLICY": {
+        "name": {
+          "string": "Chính sách Mật khẩu Người dùng"
+        },
+        "description": {
+          "string": "Đánh dấu vào ô để thêm chính sách cho mật khẩu người dùng. Chính sách này sẽ được áp dụng khi người dùng thay đổi mật khẩu hoặc nếu bạn bật 'kiểm tra độ mạnh mật khẩu khi đăng nhập'"
+        },
+        "developer_comment": ""
+      },
+      "US_PWD_LEN_MIN": {
+        "name": {
+          "string": "Độ dài Tối thiểu của Mật khẩu Người dùng"
+        },
+        "description": {
+          "string": "Độ dài tối thiểu của mật khẩu người dùng, bao gồm cả giới hạn. Tối thiểu là 4"
+        },
+        "developer_comment": ""
+      },
+      "US_PWD_LEN_MAX": {
+        "name": {
+          "string": "Độ dài Tối đa của Mật khẩu Người dùng"
+        },
+        "description": {
+          "string": "Độ dài tối đa của mật khẩu người dùng, bao gồm cả giới hạn. 0 có nghĩa là không giới hạn"
+        },
+        "developer_comment": ""
+      },
+      "US_PWD_UPPERCASE_MIN": {
+        "name": {
+          "string": "Số ký tự In hoa Tối thiểu trong Mật khẩu"
+        },
+        "description": {
+          "string": "Số lần xuất hiện tối thiểu của ký tự in hoa. 0 có nghĩa là không giới hạn"
+        },
+        "developer_comment": ""
+      },
+      "US_PWD_LOWERCASE_MIN": {
+        "name": {
+          "string": "Số ký tự In thường Tối thiểu trong Mật khẩu"
+        },
+        "description": {
+          "string": "Số lần xuất hiện tối thiểu của ký tự in thường. 0 có nghĩa là không giới hạn"
+        },
+        "developer_comment": ""
+      },
+      "US_PWD_DIGITS_MIN": {
+        "name": {
+          "string": "Số Chữ số Tối thiểu trong Mật khẩu"
+        },
+        "description": {
+          "string": "Số lần xuất hiện tối thiểu của chữ số. 0 có nghĩa là không giới hạn"
+        },
+        "developer_comment": ""
+      },
+      "US_PWD_SPECIAL_ALLOWED": {
+        "name": {
+          "string": "Ký tự đặc biệt cho phép trong mật khẩu"
+        },
+        "description": {
+          "string": "Danh sách các ký tự đặc biệt được phép sử dụng trong mật khẩu"
+        },
+        "developer_comment": ""
+      },
+      "US_PWD_SPECIAL_MIN": {
+        "name": {
+          "string": "Số lượng ký tự đặc biệt tối thiểu trong mật khẩu"
+        },
+        "description": {
+          "string": "Số lần xuất hiện tối thiểu của ký tự đặc biệt. 0 nghĩa là không giới hạn"
+        },
+        "developer_comment": ""
+      },
+      "US_MAIL": {
+        "name": {
+          "string": "Trường email của người dùng"
+        },
+        "description": {
+          "string": "Trường chứa email chính của người dùng. Có thể thêm các trường khác sau trường email chính để chỉ định các bí danh của người dùng"
+        },
+        "developer_comment": ""
+      },
+      "US_MAIL_SERVER_LOGIN": {
+        "name": {
+          "string": "Tên đăng nhập máy chủ thư của người dùng"
+        },
+        "description": {
+          "string": "Chỉ thiết lập nếu tên đăng nhập máy chủ thư (IMAP) của người dùng khác với email chính. Điền trường chứa tên đăng nhập tại đây"
+        },
+        "developer_comment": ""
+      },
+      "US_MAIL_FILTERING_LOGIN": {
+        "name": {
+          "string": "Tên đăng nhập máy chủ lọc thư của người dùng"
+        },
+        "description": {
+          "string": "Chỉ thiết lập nếu tên đăng nhập máy chủ lọc thư (Sieve) của người dùng khác với email chính. Điền trường chứa tên đăng nhập tại đây"
+        },
+        "developer_comment": ""
+      },
+      "US_MAIL_OUTGOING_LOGIN": {
+        "name": {
+          "string": "Tên đăng nhập máy chủ thư gửi đi của người dùng"
+        },
+        "description": {
+          "string": "Chỉ thiết lập nếu tên đăng nhập máy chủ thư gửi đi (SMTP) của người dùng khác với email chính. Điền trường chứa tên đăng nhập tại đây"
+        },
+        "developer_comment": ""
+      },
+      "US_KIND": {
+        "name": {
+          "string": "Loại người dùng"
+        },
+        "description": {
+          "string": "Đặt trường chứa loại người dùng ('user', 'resource' hoặc 'group')"
+        },
+        "developer_comment": ""
+      },
+      "US_IS_ADDRESSBOOK": {
+        "name": {
+          "string": "Nguồn người dùng là Danh bạ"
+        },
+        "description": {
+          "string": "Đặt trường nếu người dùng của Nguồn Người dùng này có thể được tìm thấy qua tính năng tự động hoàn thành hoặc Danh bạ Toàn cục"
+        },
+        "developer_comment": ""
+      },
+      "US_SEARCH": {
+        "name": {
+          "string": "Trường tìm kiếm người dùng"
+        },
+        "description": {
+          "string": "Trường bổ sung để thêm khi tìm kiếm người dùng. Ví dụ: 'name' sẽ tìm người dùng theo tên của họ"
+        },
+        "developer_comment": ""
+      },
+      "US_DISPLAY_NAME": {
+        "name": {
+          "string": "Tên hiển thị của nguồn người dùng"
+        },
+        "description": {
+          "string": "Tên hiển thị của nguồn người dùng, sẽ được hiển thị trong danh sách Danh bạ Toàn cục"
+        },
+        "developer_comment": ""
+      },
+      "US_AUTO_SEARCH": {
+        "name": {
+          "string": "Tự động hiển thị người dùng trong GAB"
+        },
+        "description": {
+          "string": "Tự động tìm kiếm và hiển thị người dùng trong Sổ địa chỉ toàn cầu khi được chọn. Nếu không, người dùng phải nhập để kích hoạt tìm kiếm hoặc nhập '.' để tìm tất cả."
+        },
+        "developer_comment": ""
+      },
+      "US_AUTO_SEARCH_LIMIT": {
+        "name": {
+          "string": "Giới hạn tự động hoàn thiện người dùng"
+        },
+        "description": {
+          "string": "Giới hạn số lượng tối đa người dùng trả về sau truy vấn tìm kiếm. 0 có nghĩa là không giới hạn"
+        },
+        "developer_comment": ""
+      },
+      "US_EXTRA_CONTACT_INFO": {
+        "name": {
+          "string": "Thông tin liên hệ bổ sung của người dùng"
+        },
+        "description": {
+          "string": "Chỉ định thông tin cần thêm vào kết quả tự động hoàn thiện. Hiển thị dưới dạng 'cn <thông tin bổ sung> mail'"
+        },
+        "developer_comment": ""
+      },
+      "US_HIDDEN_USER": {
+        "name": {
+          "string": "Người dùng ẩn"
+        },
+        "description": {
+          "string": "Danh sách uid người dùng không bao giờ trả về cho người khác trong tìm kiếm và tự động hoàn thiện"
+        },
+        "developer_comment": ""
+      },
+      "US_HAS_RESOURCE": {
+        "name": {
+          "string": "Nguồn người dùng có tài nguyên"
+        },
+        "description": {
+          "string": "Đánh dấu vào ô nếu Nguồn người dùng này có tài nguyên"
+        },
+        "developer_comment": ""
+      },
+      "US_RESOURCE_SEARCH": {
+        "name": {
+          "string": "Tìm kiếm tài nguyên người dùng"
+        },
+        "description": {
+          "string": "Trường tìm kiếm bổ sung cho tài nguyên"
+        },
+        "developer_comment": ""
+      },
+      "US_RESOURCE_MULTIBOOKING": {
+        "name": {
+          "string": "Đặt chỗ đa tài nguyên người dùng"
+        },
+        "description": {
+          "string": "Trường chứa giá trị đặt chỗ đa của tài nguyên"
+        },
+        "developer_comment": ""
+      },
+      "US_RESOURCE_EXTRA_INFO": {
+        "name": {
+          "string": "Thông tin bổ sung tài nguyên người dùng"
+        },
+        "description": {
+          "string": "Chỉ định thông tin cần thêm vào kết quả tự động hoàn thiện. Hiển thị dưới dạng 'cn <thông tin bổ sung> mail'"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MODULE_ACCESS": {
+        "name": {
+          "string": "Truy cập module"
+        },
+        "description": {
+          "string": "Xác định các module có sẵn trong số thư, lịch và danh bạ"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAPI_ACCESS": {
+        "name": {
+          "string": "Bật Máy chủ MAPI"
+        },
+        "description": {
+          "string": "Cho phép người dùng trên máy tính sử dụng giao thức MAPI"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_EAS_ACCESS": {
+        "name": {
+          "string": "Bật máy chủ EAS"
+        },
+        "description": {
+          "string": "Cho phép người dùng trên thiết bị di động sử dụng giao thức ActiveSync"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_FOLDER_DISABLE_EXPORT": {
+        "name": {
+          "string": "Vô hiệu hóa xuất thư mục"
+        },
+        "description": {
+          "string": "Ngăn người dùng xuất thư mục của họ trong thư, lịch và danh bạ"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_FOLDER_DISABLE_SHARING": {
+        "name": {
+          "string": "Vô hiệu hóa chia sẻ thư mục"
+        },
+        "description": {
+          "string": "Ngăn người dùng chia sẻ thư mục của họ trong thư, lịch và danh bạ"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_FOLDER_DISABLE_SHARING_ANY_AUTH": {
+        "name": {
+          "string": "Vô hiệu hóa chia sẻ thư mục với người dùng đã xác thực"
+        },
+        "description": {
+          "string": "Ngăn người dùng chia sẻ thư mục của họ với tất cả người dùng đã xác thực trong thư, lịch và danh bạ"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_AUTOCOMPLETION_MIN_LEN": {
+        "name": {
+          "string": "Số ký tự tối thiểu để tự động hoàn thành"
+        },
+        "description": {
+          "string": "Thiết lập số ký tự tối thiểu để kích hoạt tìm kiếm tự động hoàn thành (3 có nghĩa là tìm kiếm sẽ được thực hiện ở ký tự thứ 3)"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_API_MAX_REQUEST": {
+        "name": {
+          "string": "Yêu cầu API tối đa"
+        },
+        "description": {
+          "string": "Thiết lập số yêu cầu tối đa mà người dùng đã xác thực có thể thực hiện trong một khoảng thời gian"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_API_MAX_REQUEST_INTERVAL": {
+        "name": {
+          "string": "Khoảng thời gian giới hạn yêu cầu API tối đa"
+        },
+        "description": {
+          "string": "Thiết lập khoảng thời gian mà 'Yêu cầu API tối đa' được áp dụng"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_API_MAX_REQUEST_BLOCK_INTERVAL": {
+        "name": {
+          "string": "Thời gian chặn sau khi đạt yêu cầu API tối đa"
+        },
+        "description": {
+          "string": "Thiết lập thời gian người dùng bị chặn thực hiện yêu cầu nếu đã đạt 'Yêu cầu API tối đa'"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_IDENTITIES_ENABLED": {
+        "name": {
+          "string": "Bật danh tính"
+        },
+        "description": {
+          "string": "Cho phép người dùng tạo danh tính thư"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_IDENTITIES_CUSTOM_FROM_ENABLED": {
+        "name": {
+          "string": "Bật 'Từ' tùy chỉnh"
+        },
+        "description": {
+          "string": "Cho phép người dùng thiết lập 'Từ' tùy chỉnh trong danh tính của họ"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_IDENTITIES_CUSTOM_NAME_ENABLED": {
+        "name": {
+          "string": "Bật tên tùy chỉnh"
+        },
+        "description": {
+          "string": "Cho phép người dùng đặt tên tùy chỉnh trong danh tính của họ"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_IDENTITIES_CUSTOM_REPLY_TO_ENABLED": {
+        "name": {
+          "string": "Bật 'Trả lời tới' tùy chỉnh"
+        },
+        "description": {
+          "string": "Cho phép người dùng đặt 'Trả lời tới' tùy chỉnh trong danh tính của họ"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_ALLOW_EXT_MAIL_ACCOUNT": {
+        "name": {
+          "string": "Bật tài khoản thư ngoại vi"
+        },
+        "description": {
+          "string": "Cho phép người dùng thiết lập tài khoản ngoại vi"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_ALLOW_EXT_AVATAR": {
+        "name": {
+          "string": "Cho phép sử dụng avatar ngoại vi"
+        },
+        "description": {
+          "string": "Cho phép người dùng thiết lập tùy chọn sử dụng avatar ngoại vi (gravatar, libravatar...)"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_REFRESH_INTERVAL_ALLOWED": {
+        "name": {
+          "string": "Đặt khoảng thời gian làm mới thư tự động được phép"
+        },
+        "description": {
+          "string": "Đặt các giá trị mà người dùng có thể chọn cho chức năng 'tự động làm mới thư'"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_JUNK_SETTINGS": {
+        "name": {
+          "string": "Đặt loại cơ chế kích hoạt cho thư rác/thư hợp lệ"
+        },
+        "description": {
+          "string": "Đặt cơ chế khi người dùng đánh dấu thư là thư rác/thư hợp lệ"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_JUNK_MAIL_SPAM": {
+        "name": {
+          "string": "Thư cho thư rác"
+        },
+        "description": {
+          "string": "Đặt địa chỉ thư để chuyển tiếp thư rác"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_SERVER_TYPE": {
+        "name": {
+          "string": "Loại máy chủ thư"
+        },
+        "description": {
+          "string": "Đặt loại máy chủ thư"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_IMAP_SERVER": {
+        "name": {
+          "string": "Máy chủ IMAP"
+        },
+        "description": {
+          "string": "Tên máy chủ của máy chủ IMAP"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_IMAP_PORT": {
+        "name": {
+          "string": "Cổng IMAP"
+        },
+        "description": {
+          "string": "Cổng của máy chủ IMAP"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_IMAP_ENCRYPTION": {
+        "name": {
+          "string": "Mã hóa IMAP"
+        },
+        "description": {
+          "string": "Cơ chế mã hóa cho máy chủ IMAP"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_IMAP_AUTH_MECH": {
+        "name": {
+          "string": "Cơ chế xác thực IMAP"
+        },
+        "description": {
+          "string": "Cơ chế xác thực của IMAP. Không nên dùng 'login' mà không có biện pháp phòng ngừa"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SOFT_EMAIL_QUOTA": {
+        "name": {
+          "string": "Hạn mức mềm"
+        },
+        "description": {
+          "string": "Đặt tỷ lệ phần trăm của hạn mức mềm"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_PURGE_ALLOW": {
+        "name": {
+          "string": "Bật xóa hàng loạt"
+        },
+        "description": {
+          "string": "Cho phép người dùng xóa tất cả thư cũ hơn một ngày trong thư mục hoặc toàn bộ tài khoản"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_PURGE_MIN_DATE": {
+        "name": {
+          "string": "Số ngày tối thiểu để xóa"
+        },
+        "description": {
+          "string": "Đặt số ngày tối thiểu mà người dùng có thể sử dụng chức năng xóa. 0 có nghĩa là người dùng có thể xóa tất cả thư. 30 có nghĩa là người dùng chỉ có thể xóa thư cũ hơn 30 ngày"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_FILTERING_ENABLED": {
+        "name": {
+          "string": "Bật lọc thư"
+        },
+        "description": {
+          "string": "Cho phép người dùng thiết lập bộ lọc thư"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_FILTERING_TYPE": {
+        "name": {
+          "string": "Loại lọc thư"
+        },
+        "description": {
+          "string": "Loại giao thức lọc thư"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SIEVE_SERVER": {
+        "name": {
+          "string": "Máy chủ Sieve"
+        },
+        "description": {
+          "string": "Tên máy chủ của máy chủ Sieve"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SIEVE_PORT": {
+        "name": {
+          "string": "Cổng Sieve"
+        },
+        "description": {
+          "string": "Cổng của máy chủ Sieve"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SIEVE_ENCRYPTION": {
+        "name": {
+          "string": "Mã hóa Sieve"
+        },
+        "description": {
+          "string": "Mã hóa của máy chủ Sieve"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SIEVE_AUTH_MECH": {
+        "name": {
+          "string": "Cơ chế xác thực Sieve"
+        },
+        "description": {
+          "string": "Cơ chế xác thực cho Sieve. Nếu không có"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SIEVE_FOLDER_ENCODING": {
+        "name": {
+          "string": "Mã hóa Sieve"
+        },
+        "description": {
+          "string": "Đặt mã hóa được sử dụng bởi máy chủ Sieve."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SIEVE_HEADER": {
+        "name": {
+          "string": "Tiêu đề Sieve"
+        },
+        "description": {
+          "string": "Đặt một kịch bản Sieve sẽ được đặt ở đầu tất cả kịch bản Sieve của người dùng"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SIEVE_FOOTER": {
+        "name": {
+          "string": "Chân trang Sieve"
+        },
+        "description": {
+          "string": "Đặt một kịch bản Sieve sẽ được đặt ở cuối tất cả kịch bản Sieve của người dùng"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SIEVE_FIRST_FILTER": {
+        "name": {
+          "string": "Kịch bản Sieve ban đầu"
+        },
+        "description": {
+          "string": "Đặt kịch bản Sieve ban đầu cho tất cả người dùng mới. Họ có thể sửa đổi sau đó"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_VACATION_ENABLED": {
+        "name": {
+          "string": "Cho phép tin nhắn nghỉ phép"
+        },
+        "description": {
+          "string": "Cho phép người dùng đặt tin nhắn nghỉ phép. Sử dụng tiện ích mở rộng 'vacation' của Sieve (rfc5230)"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_VACATION_ALLOW_RESPONSE_ALWAYS": {
+        "name": {
+          "string": "Cho phép tin nhắn nghỉ phép mọi lúc"
+        },
+        "description": {
+          "string": "Cho phép người dùng đặt tin nhắn nghỉ phép sẽ được gửi mọi lúc mà không có thời gian chờ"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_FORWARD_ENABLED": {
+        "name": {
+          "string": "Cho phép chuyển tiếp tự động"
+        },
+        "description": {
+          "string": "Cho phép người dùng đặt chuyển tiếp tự động. Sử dụng lệnh 'redirect' của Sieve"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_FORWARD_ALLOW_USER_DOMAIN": {
+        "name": {
+          "string": "Cho phép chuyển tiếp tự động tới miền người dùng"
+        },
+        "description": {
+          "string": "Cho phép người dùng đặt chuyển tiếp tự động tới các địa chỉ trong cùng miền"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_FORWARD_ALLOW_SOGO_DOMAIN": {
+        "name": {
+          "string": "Cho phép chuyển tiếp tự động tới miền SOGo"
+        },
+        "description": {
+          "string": "Cho phép người dùng đặt chuyển tiếp tự động tới các địa chỉ được SOGo biết đến"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_FORWARD_ALLOW_EXT_DOMAIN": {
+        "name": {
+          "string": "Cho phép chuyển tiếp tự động đến miền bên ngoài"
+        },
+        "description": {
+          "string": "Cho phép người dùng thiết lập chuyển tiếp tự động đến các địa chỉ bên ngoài"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_FORWARD_WHITELIST": {
+        "name": {
+          "string": "Danh sách miền cho phép chuyển tiếp tự động"
+        },
+        "description": {
+          "string": "Thiết lập các miền cụ thể mà người dùng có thể chuyển tiếp đến"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_FORWARD_BLACKLIST": {
+        "name": {
+          "string": "Danh sách miền chặn chuyển tiếp tự động"
+        },
+        "description": {
+          "string": "Thiết lập các miền cụ thể mà người dùng bị cấm chuyển tiếp đến"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_NOTIFY_ENABLED": {
+        "name": {
+          "string": "Cho phép thông báo"
+        },
+        "description": {
+          "string": "Cho phép người dùng thiết lập thông báo. Sử dụng tiện ích mở rộng 'notify' của sieve (rfc5435)"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_NOTIFY_ALLOW_USER_DOMAIN": {
+        "name": {
+          "string": "Cho phép thông báo đến miền của người dùng"
+        },
+        "description": {
+          "string": "Cho phép người dùng thiết lập thông báo đến các địa chỉ trong cùng miền"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_NOTIFY_ALLOW_SOGO_DOMAIN": {
+        "name": {
+          "string": "Cho phép thông báo đến miền SOGo"
+        },
+        "description": {
+          "string": "Cho phép người dùng thiết lập thông báo đến các địa chỉ được SOGo biết đến"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_NOTIFY_ALLOW_EXT_DOMAIN": {
+        "name": {
+          "string": "Cho phép thông báo đến miền bên ngoài"
+        },
+        "description": {
+          "string": "Cho phép người dùng thiết lập thông báo đến các địa chỉ bên ngoài"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_NOTIFY_WHITELIST": {
+        "name": {
+          "string": "Danh sách miền cho phép thông báo"
+        },
+        "description": {
+          "string": "Thiết lập các miền cụ thể mà người dùng có thể gửi thông báo đến"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_NOTIFY_BLACKLIST": {
+        "name": {
+          "string": "Danh sách miền chặn thông báo"
+        },
+        "description": {
+          "string": "Thiết lập các miền cụ thể mà người dùng bị cấm gửi thông báo đến"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_OUTGOING_TYPE": {
+        "name": {
+          "string": "Loại máy chủ thư đi"
+        },
+        "description": {
+          "string": "Thiết lập loại máy chủ thư đi"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SMTP_SERVER": {
+        "name": {
+          "string": "Máy chủ SMTP"
+        },
+        "description": {
+          "string": "Tên miền của máy chủ SMTP"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SMTP_PORT": {
+        "name": {
+          "string": "Cổng SMTP"
+        },
+        "description": {
+          "string": "Cổng của máy chủ SMTP"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SMTP_ENCRYPTION": {
+        "name": {
+          "string": "Mã hóa SMTP"
+        },
+        "description": {
+          "string": "Cơ chế mã hóa của máy chủ SMTP"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SMTP_AUTH_MECH": {
+        "name": {
+          "string": "Cơ chế xác thực SMTP"
+        },
+        "description": {
+          "string": "Cơ chế xác thực của SMTP. Không nên dùng 'None' nếu không cẩn thận"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SMTP_MASTER_ENABLED": {
+        "name": {
+          "string": "Tài khoản chủ SMTP"
+        },
+        "description": {
+          "string": "Sử dụng tài khoản chủ cho tất cả tin nhắn hệ thống (sự kiện, thông báo...)"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SMTP_MASTER_FROM": {
+        "name": {
+          "string": "Tài khoản chủ - Địa chỉ gửi"
+        },
+        "description": {
+          "string": "Địa chỉ gửi của tài khoản chủ SMTP"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SMTP_MASTER_LOGIN": {
+        "name": {
+          "string": "Tên đăng nhập tài khoản chủ"
+        },
+        "description": {
+          "string": "Email của tài khoản chủ SMTP"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SMTP_MASTER_PWD": {
+        "name": {
+          "string": "Mật khẩu tài khoản chủ"
+        },
+        "description": {
+          "string": "Mật khẩu của tài khoản chủ SMTP"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_MAX_SUBMISSION": {
+        "name": {
+          "string": "Số email tối đa được gửi"
+        },
+        "description": {
+          "string": "Số email tối đa mà người dùng có thể gửi trong một khoảng thời gian"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_MAX_SUBMISSION_INTERVAL": {
+        "name": {
+          "string": "Khoảng thời gian gửi email tối đa"
+        },
+        "description": {
+          "string": "Khoảng thời gian (tính bằng giây) áp dụng cho 'Số email tối đa được gửi'"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_MAX_SUBMISSION_BLOCK_INTERVAl": {
+        "name": {
+          "string": "Thời gian chặn gửi thư"
+        },
+        "description": {
+          "string": "Thời gian người dùng bị cấm gửi thư sau khi kích hoạt 'Số lượng thư gửi tối đa'"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_MAX_RECIPIENT": {
+        "name": {
+          "string": "Số người nhận tối đa trong thư"
+        },
+        "description": {
+          "string": "Mật khẩu tài khoản chính"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_CHECK_FROM": {
+        "name": {
+          "string": "Kiểm tra 'Từ'"
+        },
+        "description": {
+          "string": "Kiểm tra xem địa chỉ 'Từ' có phải là một trong các địa chỉ thư của người dùng (mặc định, bí danh, danh tính...) trước khi yêu cầu máy chủ thư đi"
+        },
+        "developer_comment": ""
+      }
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "AP_DEBUG": {
+    "title": {
+      "string": "Debug Kotak Surat"
+    },
+    "description": {
+      "string": "Alat diagnostik untuk memecahkan masalah pengiriman surat. Lihat sumber email mentah atau header yang diurai."
+    },
+    "query": {
+      "title": {
+        "string": "Kueri Debug"
+      },
+      "button": {
+        "string": "Periksa"
+      }
+    },
+    "labels": {
+      "user": {
+        "string": "Pengguna"
+      },
+      "folder": {
+        "string": "Folder IMAP"
+      },
+      "mail_uid": {
+        "string": "UID Surat"
+      },
+      "select_user": {
+        "string": "Pilih pengguna..."
+      }
+    },
+    "result": {
+      "raw": {
+        "title": {
+          "string": "Sumber Email Mentah"
+        }
+      },
+      "headers": {
+        "title": {
+          "string": "Header yang Diurai"
+        }
+      }
+    },
+    "errors": {
+      "fields_required": {
+        "string": "Pengguna, folder, dan UID surat wajib diisi"
+      },
+      "fetch_failed": {
+        "string": "Gagal mengambil data debug"
+      }
+    }
+  }
+}

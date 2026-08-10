@@ -1,0 +1,46 @@
+{
+  "AI_CLASSIFY": {
+    "title": {
+      "string": "تصنيف البريد الذكي"
+    },
+    "description": {
+      "string": "تسمية البريد تلقائيًا: نشرة إخبارية، فاتورة، إشعار، اجتماعي، شخصي."
+    },
+    "input": {
+      "title": {
+        "string": "البريد المدخل"
+      },
+      "subject": {
+        "string": "الموضوع"
+      },
+      "sender": {
+        "string": "المرسل"
+      },
+      "body": {
+        "string": "نص الرسالة"
+      },
+      "placeholder": {
+        "string": "الصق محتوى البريد هنا..."
+      }
+    },
+    "output": {
+      "title": {
+        "string": "نتائج التصنيف"
+      },
+      "empty": {
+        "string": "أدخل النص وانقر على تصنيف"
+      }
+    },
+    "classify": {
+      "string": "صنّف"
+    },
+    "errors": {
+      "empty": {
+        "string": "أدخل نص البريد"
+      },
+      "fail": {
+        "string": "فشل التصنيف"
+      }
+    }
+  }
+}

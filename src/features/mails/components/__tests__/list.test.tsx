@@ -1,6 +1,5 @@
 import '@testing-library/jest-dom'
-import { fireEvent, render, screen } from '@testing-library/react'
-import React from 'react'
+import { render, screen } from '@testing-library/react'
 import MessagesList from '../list'
 
 // ── Mocks ──────────────────────────────────────────────────────────────────
@@ -9,22 +8,37 @@ jest.mock('next/navigation', () => ({ useParams: jest.fn() }))
 jest.mock('next-intl', () => ({ useTranslations: jest.fn() }))
 jest.mock('@/lib/redux/hooks', () => ({
   useAppDispatch: jest.fn(() => jest.fn()),
-  useAppSelector: jest.fn((fn: (s: { mailLayout: { selectedMailIds: string[] } }) => string[]) =>
-    fn({ mailLayout: { selectedMailIds: [] } })
+  useAppSelector: jest.fn(
+    (
+      fn: (s: {
+        mailLayout: { selectedMailIds: string[]; viewMode: string }
+      }) => string[]
+    ) => fn({ mailLayout: { selectedMailIds: [], viewMode: 'flat' } })
   ),
 }))
-jest.mock('@/lib/utils', () => ({ cn: (...c: unknown[]) => c.filter(Boolean).join(' ') }))
+jest.mock('@/lib/utils', () => ({
+  cn: (...c: unknown[]) => c.filter(Boolean).join(' '),
+}))
 jest.mock('../utils', () => ({ nameSelector: jest.fn() }))
 
 jest.mock('@/components/ui/checkbox', () => ({
   Checkbox: ({ checked, onCheckedChange }: any) => (
-    <input type="checkbox" data-testid="checkbox" checked={checked === true}
-      ref={(el) => { if (el) el.indeterminate = checked === 'indeterminate' }}
-      onChange={(e) => onCheckedChange?.(e.target.checked)} />
+    <input
+      type="checkbox"
+      data-testid="checkbox"
+      checked={checked === true}
+      ref={(el) => {
+        if (el) el.indeterminate = checked === 'indeterminate'
+      }}
+      onChange={(e) => onCheckedChange?.(e.target.checked)}
+    />
   ),
 }))
 jest.mock('@/components/ui/tooltip', () => ({
   TooltipProvider: ({ children }: any) => <>{children}</>,
+  Tooltip: ({ children }: any) => <>{children}</>,
+  TooltipTrigger: ({ children }: any) => <>{children}</>,
+  TooltipContent: ({ children }: any) => <>{children}</>,
 }))
 jest.mock('@/components/dnd/draggable', () => ({
   __esModule: true,
@@ -45,23 +59,46 @@ jest.mock('../list-item', () => ({
 }))
 jest.mock('../list-item-classic', () => ({
   __esModule: true,
-  default: ({ data }: any) => <div data-testid="list-item-classic" data-id={data.id} />,
+  default: ({ data }: any) => (
+    <div data-testid="list-item-classic" data-id={data.id} />
+  ),
 }))
 jest.mock('../mail/mail-action-bar', () => ({
   __esModule: true,
   default: ({ actions, onAction }: any) => (
     <div data-testid="mail-actions-bar">
       {actions.map((a: any, i: number) => (
-        <button key={a.id} data-testid={`action-${a.id}`} onClick={() => onAction?.(i, a)}>{a.title}</button>
+        <button
+          key={a.id}
+          data-testid={`action-${a.id}`}
+          onClick={() => onAction?.(i, a)}
+        >
+          {a.title}
+        </button>
       ))}
     </div>
   ),
 }))
-jest.mock('../list/list-filter', () => ({ __esModule: true, default: () => <div data-testid="list-filter" /> }))
-jest.mock('../list/list-filter-dropdown', () => ({ __esModule: true, default: () => <div data-testid="list-filter-dropdown" /> }))
-jest.mock('../list/list-pagination', () => ({ __esModule: true, default: () => <div data-testid="list-pagination" /> }))
-jest.mock('../list/list-sort', () => ({ __esModule: true, default: () => <div data-testid="list-sort" /> }))
-jest.mock('../skeletons/skeleton', () => ({ __esModule: true, default: () => <div data-testid="skeleton" /> }))
+jest.mock('../list/list-filter', () => ({
+  __esModule: true,
+  default: () => <div data-testid="list-filter" />,
+}))
+jest.mock('../list/list-filter-dropdown', () => ({
+  __esModule: true,
+  default: () => <div data-testid="list-filter-dropdown" />,
+}))
+jest.mock('../list/list-pagination', () => ({
+  __esModule: true,
+  default: () => <div data-testid="list-pagination" />,
+}))
+jest.mock('../list/list-sort', () => ({
+  __esModule: true,
+  default: () => <div data-testid="list-sort" />,
+}))
+jest.mock('../skeletons/skeleton', () => ({
+  __esModule: true,
+  default: () => <div data-testid="skeleton" />,
+}))
 
 // ── Setup ──────────────────────────────────────────────────────────────────
 const mockUseIsMobile = require('@/hooks/use-mobile').useIsMobile
@@ -104,7 +141,13 @@ const items = [
   },
 ]
 
-const defaultProps = { items, total: 2, page: 1, totalPages: 1, isLoading: false }
+const defaultProps = {
+  items,
+  total: 2,
+  page: 1,
+  totalPages: 1,
+  isLoading: false,
+}
 
 beforeEach(() => {
   jest.clearAllMocks()

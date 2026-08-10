@@ -6,10 +6,16 @@ import ListSkeleton from '@/features/mails/components/skeletons/list-skeleton'
 import { VirtualFolderEmptyState } from '@/features/mails/components/virtual-folder-empty-state'
 import { useFolderMessages } from '@/features/mails/hooks/use-folder-messages'
 import { setSkipFolderFetch } from '@/features/mails/store/mail-navigation-slice'
+import {
+  clearSearch,
+  selectMailSearch,
+  setSearchResults,
+} from '@/features/mails/store/mail-search-slice'
+import { useSearchMailsQuery } from '@/features/mails/store/mails-api'
 import { getClientFilteredMails } from '@/features/mails/utils/client-mail-list-filter'
 import { folderPathFromParams } from '@/features/mails/utils/folder-path-from-params'
 import { usePathname, useRouter } from '@/lib/i18n/navigation'
-import { useAppDispatch } from '@/lib/redux/hooks'
+import { useAppDispatch, useAppSelector } from '@/lib/redux/hooks'
 import { useParams, useSearchParams } from 'next/navigation'
 import React, { useEffect } from 'react'
 
@@ -24,20 +30,71 @@ const Page = () => {
   const pathname = usePathname()
   const { replace } = useRouter()
   const activeFilter = searchParams.get('filter') ?? 'all'
-  const { data, isLoading, isFetching, error, refetch, currentPage, isVirtualFolder } =
-    useFolderMessages({
-      folder: folderPath,
-      accountId: accountString,
-    })
+  const searchState = useAppSelector(selectMailSearch)
 
+  // When search is active, skip the folder fetch and use search results instead
   useEffect(() => {
-    dispatch(setSkipFolderFetch(false))
+    if (searchState.isActive) {
+      dispatch(setSkipFolderFetch(true))
+    } else {
+      dispatch(setSkipFolderFetch(false))
+    }
+  }, [searchState.isActive, dispatch])
+
+  const {
+    data,
+    isLoading,
+    isFetching,
+    error,
+    refetch,
+    currentPage,
+    isVirtualFolder,
+  } = useFolderMessages({
+    folder: folderPath,
+    accountId: accountString,
+  })
+
+  // Search query
+  const {
+    data: searchData,
+    isLoading: searchIsLoading,
+    isFetching: searchIsFetching,
+    error: searchError,
+  } = useSearchMailsQuery(
+    {
+      accountId: accountString,
+      params: {
+        ...searchState.searchParams,
+        page: searchState.page,
+      },
+    },
+    {
+      skip: !searchState.isActive,
+    }
+  )
+
+  // Sync search results to store when they arrive
+  useEffect(() => {
+    if (searchData && searchState.isActive) {
+      dispatch(
+        setSearchResults({
+          results: searchData.mails,
+          total: searchData.total,
+          page: searchData.page,
+          totalPages: searchData.totalPages,
+        })
+      )
+    }
+  }, [searchData, searchState.isActive, dispatch])
+
+  // Clear search when navigating to a different folder
+  useEffect(() => {
+    dispatch(clearSearch())
   }, [folderPath, dispatch])
 
   const clientFilterActive = activeFilter !== 'all'
 
-  // Keep the URL page in range: if the current page no longer exists (e.g. the
-  // last mail of the last page was deleted/moved), fall back to the last valid page.
+  // Keep the URL page in range
   useEffect(() => {
     if (isLoading || isFetching || error || clientFilterActive || !data) return
     const totalPages = data.totalPages ?? 1
@@ -67,6 +124,35 @@ const Page = () => {
     () => getClientFilteredMails(data?.mails ?? [], activeFilter),
     [data, activeFilter]
   )
+
+  // When search is active, show search results
+  if (searchState.isActive) {
+    if (searchIsLoading) return <ListSkeleton />
+
+    if (searchError) {
+      return (
+        <FolderMessagesErrorFallback
+          error={searchError}
+          refetch={() => {
+            void refetch()
+          }}
+          accountId={accountString}
+        />
+      )
+    }
+
+    return (
+      <MessagesList
+        items={searchState.results}
+        page={searchState.page}
+        total={searchState.total}
+        totalPages={searchState.totalPages}
+        isLoading={searchIsLoading}
+        isFetching={searchIsFetching}
+        hideToolbar
+      />
+    )
+  }
 
   if (isVirtualFolder) {
     return <VirtualFolderEmptyState />

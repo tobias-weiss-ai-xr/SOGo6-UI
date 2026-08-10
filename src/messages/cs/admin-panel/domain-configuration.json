@@ -1,0 +1,1285 @@
+{
+  "AP_DOMAIN_CONFIGURATION": {
+    "origin": {
+      "rule": {
+        "string": "(z pravidla {origin})"
+      },
+      "default": {
+        "string": "(z výchozí konfigurace)"
+      },
+      "domain": {
+        "string": "(z domény {origin})"
+      }
+    },
+    "tabs": {
+      "auth_settings": {
+        "string": "Nastavení ověřování"
+      },
+      "user_source": {
+        "string": "Zdroj uživatelů"
+      },
+      "user_module_settings": {
+        "string": "Nastavení uživatelů a modulů"
+      },
+      "mail_settings": {
+        "string": "Nastavení pošty"
+      },
+      "calendar_contact_settings": {
+        "string": "Nastavení kalendáře a kontaktů"
+      }
+    },
+    "properties": {
+      "SOGO_D_AUTH_TYPE": {
+        "name": {
+          "string": "Typ ověřování"
+        },
+        "description": {
+          "string": "Vyberte metodu ověřování pro uživatele. 'Plain' znamená klasické uživatelské jméno/heslo"
+        },
+        "developer_comment": "Options might include LDAP, SQL, etc."
+      },
+      "SOGO_D_CAS_URL": {
+        "name": {
+          "string": "URL serveru CAS"
+        },
+        "description": {
+          "string": "Zadejte úplnou adresu URL svého serveru CAS"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_CAS_LOGOUT_ENABLED": {
+        "name": {
+          "string": "Povolit odhlášení přes CAS"
+        },
+        "description": {
+          "string": "Zaškrtněte políčko, aby bylo uživatelům umožněno odhlásit se ze SOGo a serveru CAS"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_OPENID_CONFIG_URL": {
+        "name": {
+          "string": "URL koncového bodu poskytovatele OpenID"
+        },
+        "description": {
+          "string": "Příklad: https://myopenid.net/.well-known/openid-configuration"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_OPENID_CLIENT_NAME": {
+        "name": {
+          "string": "Název klienta OpenID"
+        },
+        "description": {
+          "string": "Název vašeho klienta OpenID"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_OPENID_CLIENT_SECRET": {
+        "name": {
+          "string": "Tajný klíč klienta OpenID"
+        },
+        "description": {
+          "string": "Tajný klíč vašeho klienta OpenID"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_OPENID_SCOPE": {
+        "name": {
+          "string": "Rozsah klienta OpenID"
+        },
+        "description": {
+          "string": "Rozsah vašeho klienta OpenID. Výchozí hodnota je 'openid profile email'."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_OPENID_EMAIL": {
+        "name": {
+          "string": "Klíč e-mailu uživatele"
+        },
+        "description": {
+          "string": "Klíč, kde se nachází e-mail uživatele v jeho profilu."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_OPENID_TOKEN_CHECK_INTERVAL": {
+        "name": {
+          "string": "Interval kontroly tokenu"
+        },
+        "description": {
+          "string": "Pro omezení počtu požadavků na server OpenID za účelem kontroly platnosti tokenu nastavte interval v sekundách, po který nebude token znovu kontrolován po prvním úspěchu. 0 znamená, že token bude vždy kontrolován. 60 znamená, že token nebude kontrolován po dobu 60 sekund po prvním úspěchu."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_OPENID_REFRESH_ENABLE": {
+        "name": {
+          "string": "Povolit mechanismus obnovení tokenu"
+        },
+        "description": {
+          "string": "Pokud váš server OpenID podporuje mechanismus obnovení tokenu, SOGo jej bude používat."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_OPENID_ENDSESSION_ENABLED": {
+        "name": {
+          "string": "Povolit ukončení relace z serveru OpenID"
+        },
+        "description": {
+          "string": "Ve výchozím nastavení se uživatel může odhlásit pouze z webmailu. Zaškrtněte toto nastavení, aby se uživatel odhlásil také z vašeho serveru OpenID, což znamená, že bude odhlášen ze všech aplikací používajících server OpenID. Funkce funguje pouze v případě, že váš OpenID má koncový bod end_session_endpoint."
+        },
+        "developer_comment": ""
+      },
+      "SOGo_D_OPENID_FETCH_USER_PROFILE": {
+        "name": {
+          "string": "Načíst profil uživatele"
+        },
+        "description": {
+          "string": "Ve výchozím nastavení SOGo načte profil uživatele, aby získalo jeho e-mail. Odškrtněte tuto možnost, chcete-li získat e-mail přímo z tokenu. Odškrtněte tuto možnost, pokud používáte Microsoft Active Directory Federation Service (AD FS)."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SAML2_URL": {
+        "name": {
+          "string": "SAML2 JEŠTĚ NENÍ DOKONČENO!!!"
+        },
+        "description": {
+          "string": "Hodně štěstí tomu, kdo se toho ujme..."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_PWD_CHANGE_ENABLED": {
+        "name": {
+          "string": "Povolit změnu hesla"
+        },
+        "description": {
+          "string": "Umožňuje uživatelům měnit své heslo z SOGo. Ujistěte se, že váš zdroj uživatelů uděluje uživatelům práva k této akci."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_LOGIN_CHECK_MAX_ATTEMPT": {
+        "name": {
+          "string": "Maximální počet neúspěšných pokusů o přihlášení"
+        },
+        "description": {
+          "string": "Nastavte, kolikrát může uživatel neúspěšně zadat přihlašovací údaje, než bude zablokován. 0 znamená žádný limit."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_LOGIN_CHECK_TIME_SPAN": {
+        "name": {
+          "string": "Časové rozpětí neúspěšných pokusů o přihlášení"
+        },
+        "description": {
+          "string": "Nastavte časové rozpětí v sekundách, po které se počítají neúspěšné pokusy. Příklad: 60 znamená, že uživatel může neúspěšně zadat přihlašovací údaje až 'Maximální počet neúspěšných pokusů o přihlášení' do 60 sekund od prvního neúspěchu, než bude zablokován."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_LOGIN_CHECK_BLOCK_TIME": {
+        "name": {
+          "string": "Doba blokování po neúspěšných pokusech o přihlášení"
+        },
+        "description": {
+          "string": "Nastavte, jak dlouho (v sekundách) bude uživatel blokován po příliš mnoha neúspěšných pokusech o přihlášení."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_PWD_RECOVERY": {
+        "name": {
+          "string": "Povolit obnovení hesla"
+        },
+        "description": {
+          "string": "Umožnit uživatelům nastavit metodu pro obnovení hesla"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_PWD_RECOVERY_METHOD": {
+        "name": {
+          "string": "Dostupné metody obnovení hesla"
+        },
+        "description": {
+          "string": "Vyberte metody obnovení hesla dostupné pro uživatele"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_PWD_RECOVERY_FORCE": {
+        "name": {
+          "string": "Vynutit obnovení hesla"
+        },
+        "description": {
+          "string": "Vynutit, aby uživatelé nastavili metodu pro obnovení hesla."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_PWD_RECOVERY_DELAY": {
+        "name": {
+          "string": "Prodleva mezi požadavky na obnovení hesla"
+        },
+        "description": {
+          "string": "Prodleva v sekundách, než může uživatel znovu požádat o obnovení hesla."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_LOGIN_MFA": {
+        "name": {
+          "string": "Povolit vícefaktorové ověřování (MFA)"
+        },
+        "description": {
+          "string": "Umožnit uživatelům nastavit vícefaktorové ověřování"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_LOGIN_MFA_METHOD": {
+        "name": {
+          "string": "Dostupné metody MFA"
+        },
+        "description": {
+          "string": "Vyberte metody vícefaktorového ověřování dostupné pro uživatele"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_LOGIN_MFA_FORCE": {
+        "name": {
+          "string": "Vynutit MFA"
+        },
+        "description": {
+          "string": "Vynutit, aby uživatelé nastavili vícefaktorové ověřování"
+        },
+        "developer_comment": ""
+      },
+      "US_UID": {
+        "name": {
+          "string": "UID zdroje uživatelů"
+        },
+        "description": {
+          "string": "Zvolte jedinečný název pro tento zdroj uživatelů, nebude se zobrazovat uživatelům"
+        },
+        "developer_comment": "Only for SOGo to differentiate differents User SOurce"
+      },
+      "US_TYPE": {
+        "name": {
+          "string": "Typ zdroje uživatelů"
+        },
+        "description": {
+          "string": "Nastavte typ svého zdroje uživatelů"
+        },
+        "developer_comment": "Only ldap and sql supported for now"
+      },
+      "US_LDAP_HOSTNAME": {
+        "name": {
+          "string": "Název hostitele LDAP serveru"
+        },
+        "description": {
+          "string": "Zadejte pouze hostitele a port, nepřidávejte žádné další informace"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_BIND_DN": {
+        "name": {
+          "string": "Vazební DN"
+        },
+        "description": {
+          "string": "DN přihlašovacího jména použitého pro vazbu na váš server"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_BIND_DN_PWD": {
+        "name": {
+          "string": "Heslo vazebního DN"
+        },
+        "description": {
+          "string": "Heslo pro váš vazební DN"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_BASE_DN": {
+        "name": {
+          "string": "Základní DN"
+        },
+        "description": {
+          "string": "Základní DN pro záznamy uživatelů. Pokud je doména e-mailu součástí DN, můžete přidat '%d' pro dynamické vložení z e-mailu uživatele, např.: 'ou=%d,dc=example,dc=com'"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_UID": {
+        "name": {
+          "string": "Pole UID"
+        },
+        "description": {
+          "string": "Pole s přihlašovacím jménem uživatele; přihlašovací jméno musí být jedinečné napříč všemi zdroji uživatelů a doménami"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_CN": {
+        "name": {
+          "string": "Pole CN"
+        },
+        "description": {
+          "string": "Pole s úplným jménem uživatele"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_ID": {
+        "name": {
+          "string": "Pole ID"
+        },
+        "description": {
+          "string": "Pole, které zahajuje DN uživatele, pokud není použito pole pro vazbu (např.: pokud máte 'dn: uid=sogo,ou=users,dc=example,dc=org', měla by být hodnota 'uid')"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_SCOPE": {
+        "name": {
+          "string": "Rozsah vyhledávání LDAP"
+        },
+        "description": {
+          "string": "Určuje sadu záznamů na úrovni nebo pod Základním DN, které mohou být považovány za potenciální shody pro požadavek na vyhledávání"
+        },
+        "developer_comment": "https://ldapwiki.com/wiki/Wiki.jsp?page=LDAP%20Search%20Scopes"
+      },
+      "US_LDAP_FILTER": {
+        "name": {
+          "string": "LDAP filtr"
+        },
+        "description": {
+          "string": "Další filtr pro LDAP dotazy. Používejte '=', '!=', 'AND', 'OR' a závorky. Příklad: '(objectClass='mailUser' OR objectClass!='mailGroup') AND accountStatus='active'"
+        },
+        "developer_comment": "Use SOGo's syntax and not ldap syntax for filter"
+      },
+      "US_LDAP_PWD_POLICY": {
+        "name": {
+          "string": "Zásady hesla LDAP"
+        },
+        "description": {
+          "string": "Označuje, zda váš LDAP server má zásady hesla s pojmy expirace a lhůty pro obnovu"
+        },
+        "developer_comment": "https://ldapwiki.com/wiki/Wiki.jsp?page=Password%20Policy"
+      },
+      "US_LDAP_PWD_UPDATE_SAMBA": {
+        "name": {
+          "string": "Aktualizovat hesla Samba přes LDAP"
+        },
+        "description": {
+          "string": "Pokud uživatel změní své heslo, aktualizuje také sambaNTPassword a sambaLMPassword"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_BIND_AS_USER": {
+        "name": {
+          "string": "Připojit jako uživatel"
+        },
+        "description": {
+          "string": "Po autentizaci použít uživatelské DN pro připojení"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_BIND_FIELD": {
+        "name": {
+          "string": "Další pole pro připojení"
+        },
+        "description": {
+          "string": "Další pole používaná pro připojení. Například pokud přidáte 'mail', připojení bude obsahovat také 'mail=<přihlášení>'"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_ATTR_FIELD": {
+        "name": {
+          "string": "Atributy"
+        },
+        "description": {
+          "string": "Atributy vracené při vyhledávacím dotazu. Výchozí hodnota je '*' (vše). Buďte opatrní, protože to může výrazně ovlivnit chování SOGo"
+        },
+        "developer_comment": ""
+      },
+      "US_LDAP_GROUP_CLASS": {
+        "name": {
+          "string": "Třída LDAP skupiny"
+        },
+        "description": {
+          "string": "Nastaví třídu LDAP, která SOGo informuje, že se jedná o skupinu, nikoliv o jednotlivého uživatele"
+        },
+        "developer_comment": ""
+      },
+      "US_SQL_USER_URL": {
+        "name": {
+          "string": "SQL URL uživatelů"
+        },
+        "description": {
+          "string": "URL databáze k tabulce uživatelů. Příklad: postgresql://sogo:sogo@127.0.0.1:5432/sogo/sogo_user"
+        },
+        "developer_comment": ""
+      },
+      "US_SQL_PREPEND_PWD_SCHEME": {
+        "name": {
+          "string": "Schéma hesla uživatele v SQL"
+        },
+        "description": {
+          "string": "Zaškrtněte ANO, pokud je heslo v databázi uloženo ve formátu {schéma}zašifrovanáHodnota"
+        },
+        "developer_comment": ""
+      },
+      "US_SQL_USER_FILTER": {
+        "name": {
+          "string": "Filtr uživatelů SQL"
+        },
+        "description": {
+          "string": "Další podmínky WHERE, které se přidají k SQL dotazu. Příklad: 'active=1'"
+        },
+        "developer_comment": ""
+      },
+      "US_SQL_DOMAIN_FIELD": {
+        "name": {
+          "string": "Doména uživatele v SQL"
+        },
+        "description": {
+          "string": "Nastaví název sloupce, kde je doména uživatele. Pokud je nastaveno, každý SQL dotaz přidá '<sloupec_domeny> = <doména_uživatele>' do své podmínky WHERE"
+        },
+        "developer_comment": ""
+      },
+      "US_MAPPING": {
+        "name": {
+          "string": "Mapování zdroje uživatelů"
+        },
+        "description": {
+          "string": "Mapujte pole zdroje uživatelů na atributy kontaktů"
+        },
+        "developer_comment": ""
+      },
+      "US_CAN_AUTH": {
+        "name": {
+          "string": "Může se autentizovat"
+        },
+        "description": {
+          "string": "Uživatelé tohoto uživatelského zdroje se mohou přihlásit do webmailu"
+        },
+        "developer_comment": ""
+      },
+      "US_PWD_ALGO": {
+        "name": {
+          "string": "Algoritmus hesla uživatelského zdroje"
+        },
+        "description": {
+          "string": "Algoritmus hesla používaný tímto uživatelským zdrojem. Povinné pro SQL uživatelský zdroj. Nepovinné pro LDAP: vyžadováno pouze, pokud uživatelům umožníte změnit jejich heslo"
+        },
+        "developer_comment": ""
+      },
+      "US_SIM_KEY_TYPE": {
+        "name": {
+          "string": "Typ symetrického klíče algoritmu hesla"
+        },
+        "description": {
+          "string": "Určuje, jak je uložen symetrický klíč vašeho algoritmu hesla"
+        },
+        "developer_comment": ""
+      },
+      "US_SIM_KEY_VALUE": {
+        "name": {
+          "string": "Hodnota symetrického klíče algoritmu hesla"
+        },
+        "description": {
+          "string": "Hodnota závisí na typu.\nPokud 'cesta', vložte sem cestu k souboru, kde SOGo nalezne váš symetrický klíč.\nPokud 'env', nastavte název proměnné prostředí, kde je klíč uložen.\nPokud 'plain', vložte sem přímo klíč"
+        },
+        "developer_comment": ""
+      },
+      "US_PWD_POLICY": {
+        "name": {
+          "string": "Zásady hesla uživatele"
+        },
+        "description": {
+          "string": "Zaškrtněte políčko pro přidání zásady pro uživatelské heslo. Tato zásada se použije, když uživatel heslo mění, nebo pokud povolíte 'kontrolu síly hesla při přihlášení'"
+        },
+        "developer_comment": ""
+      },
+      "US_PWD_LEN_MIN": {
+        "name": {
+          "string": "Minimální délka hesla uživatele"
+        },
+        "description": {
+          "string": "Minimální délka uživatelského hesla (včetně). Minimálně 4 znaky."
+        },
+        "developer_comment": ""
+      },
+      "US_PWD_LEN_MAX": {
+        "name": {
+          "string": "Maximální délka hesla uživatele"
+        },
+        "description": {
+          "string": "Maximální délka uživatelského hesla (včetně). 0 znamená žádný limit"
+        },
+        "developer_comment": ""
+      },
+      "US_PWD_UPPERCASE_MIN": {
+        "name": {
+          "string": "Minimální počet velkých písmen v hesle"
+        },
+        "description": {
+          "string": "Minimální počet velkých písmen. 0 znamená žádný limit"
+        },
+        "developer_comment": ""
+      },
+      "US_PWD_LOWERCASE_MIN": {
+        "name": {
+          "string": "Minimální počet malých písmen v hesle"
+        },
+        "description": {
+          "string": "Minimální počet malých písmen. 0 znamená žádný limit"
+        },
+        "developer_comment": ""
+      },
+      "US_PWD_DIGITS_MIN": {
+        "name": {
+          "string": "Minimální počet číslic v hesle"
+        },
+        "description": {
+          "string": "Minimální počet číslic. 0 znamená žádný limit"
+        },
+        "developer_comment": ""
+      },
+      "US_PWD_SPECIAL_ALLOWED": {
+        "name": {
+          "string": "Povolené speciální znaky v hesle uživatele"
+        },
+        "description": {
+          "string": "Seznam speciálních znaků povolených v heslech"
+        },
+        "developer_comment": ""
+      },
+      "US_PWD_SPECIAL_MIN": {
+        "name": {
+          "string": "Minimální počet speciálních znaků v hesle uživatele"
+        },
+        "description": {
+          "string": "Minimální počet výskytů speciálních znaků. 0 znamená žádný limit"
+        },
+        "developer_comment": ""
+      },
+      "US_MAIL": {
+        "name": {
+          "string": "Pole e-mailu uživatele"
+        },
+        "description": {
+          "string": "Pole, kde se nachází e-mail uživatele. Další pole lze nastavit pro určení aliasů uživatele po hlavním e-mailovém poli"
+        },
+        "developer_comment": ""
+      },
+      "US_MAIL_SERVER_LOGIN": {
+        "name": {
+          "string": "Přihlašovací jméno uživatele k poštovnímu serveru"
+        },
+        "description": {
+          "string": "Nastavte pouze v případě, že se přihlašovací jméno uživatele k poštovnímu serveru (IMAP) liší od jeho hlavního e-mailu. Zde zadejte pole, kde se nachází jejich přihlašovací jméno"
+        },
+        "developer_comment": ""
+      },
+      "US_MAIL_FILTERING_LOGIN": {
+        "name": {
+          "string": "Přihlašovací jméno uživatele k filtru pošty"
+        },
+        "description": {
+          "string": "Nastavte pouze v případě, že se přihlašovací jméno uživatele k serveru pro filtrování pošty (Sieve) liší od jeho hlavního e-mailu. Zde zadejte pole, kde se nachází jejich přihlašovací jméno"
+        },
+        "developer_comment": ""
+      },
+      "US_MAIL_OUTGOING_LOGIN": {
+        "name": {
+          "string": "Přihlašovací jméno uživatele k odchozímu poštovnímu serveru"
+        },
+        "description": {
+          "string": "Nastavte pouze v případě, že se přihlašovací jméno uživatele k odchozímu poštovnímu serveru (SMTP) liší od jeho hlavního e-mailu. Zde zadejte pole, kde se nachází jejich přihlašovací jméno"
+        },
+        "developer_comment": ""
+      },
+      "US_KIND": {
+        "name": {
+          "string": "Typ uživatele"
+        },
+        "description": {
+          "string": "Nastavte pole, kde se nachází typ uživatele ('uživatel', 'zdroj' nebo 'skupina')"
+        },
+        "developer_comment": ""
+      },
+      "US_IS_ADDRESSBOOK": {
+        "name": {
+          "string": "Je zdroj uživatelů adresářem"
+        },
+        "description": {
+          "string": "Nastavte pole, pokud lze uživatele tohoto zdroje nalézt prostřednictvím automatického doplňování nebo globálního adresáře"
+        },
+        "developer_comment": ""
+      },
+      "US_SEARCH": {
+        "name": {
+          "string": "Vyhledávací pole uživatele"
+        },
+        "description": {
+          "string": "Další pole, které se přidá při vyhledávání uživatele. Příklad: 'jméno' najde uživatele podle jejich jména"
+        },
+        "developer_comment": ""
+      },
+      "US_DISPLAY_NAME": {
+        "name": {
+          "string": "Zobrazované jméno zdroje uživatelů"
+        },
+        "description": {
+          "string": "Zobrazované jméno tohoto zdroje uživatelů, které se zobrazí v seznamu globálního adresáře"
+        },
+        "developer_comment": ""
+      },
+      "US_AUTO_SEARCH": {
+        "name": {
+          "string": "Automatické zobrazení uživatelů v GAB"
+        },
+        "description": {
+          "string": "Automaticky vyhledává a zobrazuje uživatele v Globálním adresáři při výběru. Jinak musí uživatel začít psát nebo zadat '.' pro vyhledání všech."
+        },
+        "developer_comment": ""
+      },
+      "US_AUTO_SEARCH_LIMIT": {
+        "name": {
+          "string": "Limit automatického doplňování uživatelů"
+        },
+        "description": {
+          "string": "Omezení maximálního počtu vrácených uživatelů po vyhledávacím dotazu. 0 znamená žádný limit."
+        },
+        "developer_comment": ""
+      },
+      "US_EXTRA_CONTACT_INFO": {
+        "name": {
+          "string": "Další kontaktní informace uživatele"
+        },
+        "description": {
+          "string": "Určuje, jaké informace přidat k výsledku automatického doplňování. Zobrazuje se jako 'cn <extra> mail'."
+        },
+        "developer_comment": ""
+      },
+      "US_HIDDEN_USER": {
+        "name": {
+          "string": "Skrytí uživatelé"
+        },
+        "description": {
+          "string": "Seznam UID uživatelů, kteří se nikdy nezobrazí ostatním při vyhledávání a automatickém doplňování."
+        },
+        "developer_comment": ""
+      },
+      "US_HAS_RESOURCE": {
+        "name": {
+          "string": "Zdroj uživatele má prostředky"
+        },
+        "description": {
+          "string": "Zaškrtněte, pokud tento zdroj uživatele obsahuje prostředky."
+        },
+        "developer_comment": ""
+      },
+      "US_RESOURCE_SEARCH": {
+        "name": {
+          "string": "Vyhledávání prostředků uživatele"
+        },
+        "description": {
+          "string": "Další vyhledávací pole pro prostředky."
+        },
+        "developer_comment": ""
+      },
+      "US_RESOURCE_MULTIBOOKING": {
+        "name": {
+          "string": "Více rezervací prostředků uživatele"
+        },
+        "description": {
+          "string": "Pole, kde se nachází hodnota pro více rezervací prostředku."
+        },
+        "developer_comment": ""
+      },
+      "US_RESOURCE_EXTRA_INFO": {
+        "name": {
+          "string": "Další informace o prostředcích uživatele"
+        },
+        "description": {
+          "string": "Určuje, jaké informace přidat k výsledku automatického doplňování. Zobrazuje se jako 'cn <extra> mail'."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MODULE_ACCESS": {
+        "name": {
+          "string": "Přístup k modulům"
+        },
+        "description": {
+          "string": "Definuje, které moduly jsou dostupné (pošta, kalendář, kontakty)."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAPI_ACCESS": {
+        "name": {
+          "string": "Povolit MAPI server"
+        },
+        "description": {
+          "string": "Umožňuje uživatelům na počítači používat protokol MAPI."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_EAS_ACCESS": {
+        "name": {
+          "string": "Povolit přístup k EAS serveru"
+        },
+        "description": {
+          "string": "Umožnit uživatelům na mobilních zařízeních používat protokol ActiveSync"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_FOLDER_DISABLE_EXPORT": {
+        "name": {
+          "string": "Zakázat export složek"
+        },
+        "description": {
+          "string": "Zabránit uživatelům v exportu jejich složek (pošta, kalendář, kontakty)"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_FOLDER_DISABLE_SHARING": {
+        "name": {
+          "string": "Zakázat sdílení složek"
+        },
+        "description": {
+          "string": "Zabránit uživatelům ve sdílení jejich složek (pošta, kalendář, kontakty)"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_FOLDER_DISABLE_SHARING_ANY_AUTH": {
+        "name": {
+          "string": "Zakázat sdílení složek s ověřenými uživateli"
+        },
+        "description": {
+          "string": "Zabránit uživatelům ve sdílení svých složek (pošta, kalendář, kontakty) se všemi ověřenými uživateli"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_AUTOCOMPLETION_MIN_LEN": {
+        "name": {
+          "string": "Minimální počet znaků pro automatické doplňování"
+        },
+        "description": {
+          "string": "Nastaví minimální počet znaků pro spuštění vyhledávání při automatickém doplňování (např. 3 = vyhledávání se spustí při třetím znaku)"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_API_MAX_REQUEST": {
+        "name": {
+          "string": "Maximální počet požadavků na API"
+        },
+        "description": {
+          "string": "Nastaví maximální počet požadavků, které může ověřený uživatel provést v daném časovém úseku"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_API_MAX_REQUEST_INTERVAL": {
+        "name": {
+          "string": "Časové okno pro maximální počet požadavků na API"
+        },
+        "description": {
+          "string": "Nastaví časové období, ve kterém se uplatňuje limit 'Maximální počet požadavků na API'"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_API_MAX_REQUEST_BLOCK_INTERVAL": {
+        "name": {
+          "string": "Doba blokování po překročení limitu požadavků na API"
+        },
+        "description": {
+          "string": "Nastaví dobu, po kterou je uživatel blokován od odesílání požadavků, pokud byl dosažen limit 'Maximální počet požadavků na API'"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_IDENTITIES_ENABLED": {
+        "name": {
+          "string": "Povolit identity"
+        },
+        "description": {
+          "string": "Umožnit uživatelům vytvářet e-mailové identity"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_IDENTITIES_CUSTOM_FROM_ENABLED": {
+        "name": {
+          "string": "Povolit vlastní pole 'Od'"
+        },
+        "description": {
+          "string": "Umožnit uživatelům nastavit vlastní pole 'Od' ve svých identitách"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_IDENTITIES_CUSTOM_NAME_ENABLED": {
+        "name": {
+          "string": "Povolit vlastní „Jméno“"
+        },
+        "description": {
+          "string": "Umožnit uživateli nastavit vlastní jméno v identitách"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_IDENTITIES_CUSTOM_REPLY_TO_ENABLED": {
+        "name": {
+          "string": "Povolit vlastní „Odpovědět na“"
+        },
+        "description": {
+          "string": "Umožnit uživateli nastavit vlastní „Odpovědět na“ v identitách"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_ALLOW_EXT_MAIL_ACCOUNT": {
+        "name": {
+          "string": "Povolit externí poštovní účet"
+        },
+        "description": {
+          "string": "Umožnit uživateli nastavit externí účet"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_ALLOW_EXT_AVATAR": {
+        "name": {
+          "string": "Povolit použití externího avatara"
+        },
+        "description": {
+          "string": "Umožnit uživateli nastavit předvolby pro použití externího avatara (gravatar, libravatar atd.)"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_REFRESH_INTERVAL_ALLOWED": {
+        "name": {
+          "string": "Nastavit povolený interval automatického obnovení pošty"
+        },
+        "description": {
+          "string": "Nastavit hodnoty, které mohou uživatelé zvolit pro „automatické obnovení pošty“"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_JUNK_SETTINGS": {
+        "name": {
+          "string": "Nastavit typ spouštěče pro ham/spam"
+        },
+        "description": {
+          "string": "Nastavit mechanismus, kdy uživatelé označují poštu jako spam/ham"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_JUNK_MAIL_SPAM": {
+        "name": {
+          "string": "E-mail pro spam"
+        },
+        "description": {
+          "string": "Nastavit e-mailovou adresu, kam bude spam přesměrován"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_SERVER_TYPE": {
+        "name": {
+          "string": "Typ poštovního serveru"
+        },
+        "description": {
+          "string": "Nastavit typ poštovního serveru"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_IMAP_SERVER": {
+        "name": {
+          "string": "IMAP server"
+        },
+        "description": {
+          "string": "Název hostitele IMAP serveru"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_IMAP_PORT": {
+        "name": {
+          "string": "IMAP port"
+        },
+        "description": {
+          "string": "Port IMAP serveru"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_IMAP_ENCRYPTION": {
+        "name": {
+          "string": "Šifrování IMAP"
+        },
+        "description": {
+          "string": "Šifrovací mechanismus pro IMAP server"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_IMAP_AUTH_MECH": {
+        "name": {
+          "string": "Autentizační mechanismus IMAP"
+        },
+        "description": {
+          "string": "Autentizační mechanismus IMAP. Nepoužívejte 'login' bez opatření"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SOFT_EMAIL_QUOTA": {
+        "name": {
+          "string": "Měkký kvóta"
+        },
+        "description": {
+          "string": "Nastavte procento měkké kvóty"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_PURGE_ALLOW": {
+        "name": {
+          "string": "Povolit vymazání"
+        },
+        "description": {
+          "string": "Umožňuje uživatelům smazat všechny e-maily starší než zadané datum ve složce nebo pro celý účet"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_PURGE_MIN_DATE": {
+        "name": {
+          "string": "Minimální dny pro vymazání"
+        },
+        "description": {
+          "string": "Nastavte minimální počet dnů, které musí uplynout, než může uživatel použít vymazání. 0 znamená, že uživatel může smazat všechny e-maily. 30 znamená, že uživatel může smazat pouze e-maily starší než 30 dnů"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_FILTERING_ENABLED": {
+        "name": {
+          "string": "Povolit filtrování e-mailů"
+        },
+        "description": {
+          "string": "Umožňuje uživatelům nastavit filtry pro e-maily"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_FILTERING_TYPE": {
+        "name": {
+          "string": "Typ filtrování e-mailů"
+        },
+        "description": {
+          "string": "Druh protokolu pro filtrování e-mailů"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SIEVE_SERVER": {
+        "name": {
+          "string": "Sieve server"
+        },
+        "description": {
+          "string": "Název hostitele Sieve serveru"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SIEVE_PORT": {
+        "name": {
+          "string": "Port Sieve"
+        },
+        "description": {
+          "string": "Port Sieve serveru"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SIEVE_ENCRYPTION": {
+        "name": {
+          "string": "Šifrování Sieve"
+        },
+        "description": {
+          "string": "Šifrování Sieve serveru"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SIEVE_AUTH_MECH": {
+        "name": {
+          "string": "Mechanismus ověřování Sieve"
+        },
+        "description": {
+          "string": "Mechanismus ověřování pro Sieve. Pokud není nastaveno"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SIEVE_FOLDER_ENCODING": {
+        "name": {
+          "string": "Kódování Sieve"
+        },
+        "description": {
+          "string": "Nastaví kódování používané serverem Sieve."
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SIEVE_HEADER": {
+        "name": {
+          "string": "Záhlaví Sieve"
+        },
+        "description": {
+          "string": "Nastaví skript Sieve, který bude umístěn na začátek všech uživatelských skriptů Sieve"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SIEVE_FOOTER": {
+        "name": {
+          "string": "Patička Sieve"
+        },
+        "description": {
+          "string": "Nastaví skript Sieve, který bude umístěn na konec všech uživatelských skriptů Sieve"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SIEVE_FIRST_FILTER": {
+        "name": {
+          "string": "Počáteční skript Sieve"
+        },
+        "description": {
+          "string": "Nastaví počáteční skript Sieve pro všechny nové uživatele. Budou ho moci později upravit"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_VACATION_ENABLED": {
+        "name": {
+          "string": "Povolit zprávu o nepřítomnosti"
+        },
+        "description": {
+          "string": "Povolit uživatelům nastavit zprávu o nepřítomnosti. Používá rozšíření Sieve 'vacation' (RFC 5230)"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_VACATION_ALLOW_RESPONSE_ALWAYS": {
+        "name": {
+          "string": "Povolit zprávu o nepřítomnosti vždy"
+        },
+        "description": {
+          "string": "Povolit uživatelům nastavit zprávu o nepřítomnosti, která bude odesílána vždy bez ochranné lhůty"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_FORWARD_ENABLED": {
+        "name": {
+          "string": "Povolit automatické přesměrování"
+        },
+        "description": {
+          "string": "Povolit uživatelům nastavit automatické přesměrování. Používá příkaz Sieve 'redirect'"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_FORWARD_ALLOW_USER_DOMAIN": {
+        "name": {
+          "string": "Povolit automatické přesměrování do domény uživatele"
+        },
+        "description": {
+          "string": "Povolit uživatelům nastavit automatické přesměrování na adresy ve stejné doméně"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_FORWARD_ALLOW_SOGO_DOMAIN": {
+        "name": {
+          "string": "Povolit automatické přesměrování do domény SOGo"
+        },
+        "description": {
+          "string": "Povolit uživatelům nastavit automatické přesměrování na adresy známé systémem SOGo"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_FORWARD_ALLOW_EXT_DOMAIN": {
+        "name": {
+          "string": "Povolit automatické přesměrování na externí domény"
+        },
+        "description": {
+          "string": "Povolit uživatelům nastavit automatické přesměrování na externí adresy"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_FORWARD_WHITELIST": {
+        "name": {
+          "string": "Bílá lista domén pro automatické přesměrování"
+        },
+        "description": {
+          "string": "Nastavit konkrétní domény, na které mohou uživatelé přesměrovávat"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_FORWARD_BLACKLIST": {
+        "name": {
+          "string": "Černá lista domén pro automatické přesměrování"
+        },
+        "description": {
+          "string": "Nastavit konkrétní domény, na které uživatelé nesmí přesměrovávat"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_NOTIFY_ENABLED": {
+        "name": {
+          "string": "Povolit upozornění"
+        },
+        "description": {
+          "string": "Povolit uživatelům nastavit upozornění. Používá rozšíření 'notify' pro Sieve (RFC 5435)"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_NOTIFY_ALLOW_USER_DOMAIN": {
+        "name": {
+          "string": "Povolit upozornění na doménu uživatele"
+        },
+        "description": {
+          "string": "Povolit uživatelům nastavit upozornění na adresy ve stejné doméně"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_NOTIFY_ALLOW_SOGO_DOMAIN": {
+        "name": {
+          "string": "Povolit upozornění na domény SOGo"
+        },
+        "description": {
+          "string": "Povolit uživatelům nastavit upozornění na adresy známé SOGo"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_NOTIFY_ALLOW_EXT_DOMAIN": {
+        "name": {
+          "string": "Povolit upozornění na externí domény"
+        },
+        "description": {
+          "string": "Povolit uživatelům nastavit upozornění na externí adresy"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_NOTIFY_WHITELIST": {
+        "name": {
+          "string": "Bílá lista domén pro upozornění"
+        },
+        "description": {
+          "string": "Nastavit konkrétní domény, na které mohou uživatelé odesílat upozornění"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_NOTIFY_BLACKLIST": {
+        "name": {
+          "string": "Černá lista domén pro upozornění"
+        },
+        "description": {
+          "string": "Nastavit konkrétní domény, na které uživatelé nesmí odesílat upozornění"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_OUTGOING_TYPE": {
+        "name": {
+          "string": "Typ odchozího poštovního serveru"
+        },
+        "description": {
+          "string": "Nastavit typ odchozího poštovního serveru"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SMTP_SERVER": {
+        "name": {
+          "string": "SMTP server"
+        },
+        "description": {
+          "string": "Název hostitele SMTP serveru"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SMTP_PORT": {
+        "name": {
+          "string": "SMTP port"
+        },
+        "description": {
+          "string": "Port SMTP serveru"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SMTP_ENCRYPTION": {
+        "name": {
+          "string": "Šifrování SMTP"
+        },
+        "description": {
+          "string": "Šifrovací mechanismus SMTP serveru"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SMTP_AUTH_MECH": {
+        "name": {
+          "string": "Autentizační mechanismus SMTP"
+        },
+        "description": {
+          "string": "Autentizační mechanismus SMTP. Nepoužívejte 'Žádný' bez opatrnosti"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SMTP_MASTER_ENABLED": {
+        "name": {
+          "string": "Hlavní účet SMTP"
+        },
+        "description": {
+          "string": "Použít hlavní účet pro všechny systémové zprávy (události, oznámení atd.)"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SMTP_MASTER_FROM": {
+        "name": {
+          "string": "Odesílatel hlavního účtu"
+        },
+        "description": {
+          "string": "Odesílatel hlavního účtu SMTP"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SMTP_MASTER_LOGIN": {
+        "name": {
+          "string": "Přihlášení hlavního účtu"
+        },
+        "description": {
+          "string": "E-mail hlavního účtu SMTP"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_SMTP_MASTER_PWD": {
+        "name": {
+          "string": "Heslo hlavního účtu"
+        },
+        "description": {
+          "string": "Heslo hlavního účtu SMTP"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_MAX_SUBMISSION": {
+        "name": {
+          "string": "Maximální počet odeslaných e-mailů"
+        },
+        "description": {
+          "string": "Maximální počet e-mailů, které může uživatel odeslat během určitého časového období"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_MAX_SUBMISSION_INTERVAL": {
+        "name": {
+          "string": "Časové období pro maximální počet odeslaných e-mailů"
+        },
+        "description": {
+          "string": "Doba v sekundách, během které platí omezení 'Maximální počet odeslaných e-mailů'"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_MAX_SUBMISSION_BLOCK_INTERVAl": {
+        "name": {
+          "string": "Maximální doba blokování odeslání pošty"
+        },
+        "description": {
+          "string": "Doba, po kterou je uživateli zakázáno odesílat poštu po spuštění omezení 'Maximální počet odeslaných zpráv'"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_MAX_RECIPIENT": {
+        "name": {
+          "string": "Maximální počet příjemců v e-mailu"
+        },
+        "description": {
+          "string": "Heslo hlavního účtu"
+        },
+        "developer_comment": ""
+      },
+      "SOGO_D_MAIL_CHECK_FROM": {
+        "name": {
+          "string": "Kontrola pole 'Od'"
+        },
+        "description": {
+          "string": "Zkontrolovat, zda je odesílatel (pole 'Od') jednou z uživatelových e-mailových adres (výchozí, aliasy, identity atd.) před odesláním na odchozí poštovní server"
+        },
+        "developer_comment": ""
+      }
+    }
+  }
+}

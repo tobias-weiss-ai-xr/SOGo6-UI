@@ -1,0 +1,54 @@
+{
+  "AP_MIG": {
+    "title": {
+      "string": "Siirtotyökalut"
+    },
+    "description": {
+      "string": "Tuo tietoja ulkoisista lähteistä — G Suite, M365, Dovecot, Cyrus tai tiedostolataukset."
+    },
+    "wizard": {
+      "title": {
+        "string": "Aloita siirto"
+      },
+      "source": {
+        "string": "Lähde"
+      },
+      "select_source": {
+        "string": "Valitse lähde..."
+      },
+      "user": {
+        "string": "Kohdekäyttäjä"
+      },
+      "select_user": {
+        "string": "Valitse käyttäjä..."
+      }
+    },
+    "start": {
+      "button": {
+        "string": "Aloita siirto"
+      },
+      "running": {
+        "string": "Alustetaan..."
+      },
+      "success": {
+        "string": "Siirto aloitettu"
+      },
+      "error": {
+        "string": "Siirto epäonnistui"
+      }
+    },
+    "history": {
+      "title": {
+        "string": "Siirtohistoria"
+      },
+      "empty": {
+        "string": "Ei siirtoja vielä."
+      }
+    },
+    "errors": {
+      "fields": {
+        "string": "Lähde ja käyttäjä ovat pakollisia"
+      }
+    }
+  }
+}

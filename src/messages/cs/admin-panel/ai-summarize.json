@@ -1,0 +1,46 @@
+{
+  "AI_SUMMARIZE": {
+    "title": {
+      "string": "Shrnutí e-mailů"
+    },
+    "description": {
+      "string": "TL;DR pro dlouhé e-mailové vlákna. Extraktivní shrnutí vrátí nejdůležitější věty."
+    },
+    "input": {
+      "title": {
+        "string": "Vstupní e-mail"
+      },
+      "text": {
+        "string": "Text e-mailu"
+      },
+      "placeholder": {
+        "string": "Vložte sem tělo e-mailu..."
+      },
+      "sentences": {
+        "string": "Maximální počet vět"
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Shrnutí"
+      },
+      "empty": {
+        "string": "Zadejte text a klikněte na Shrnout"
+      }
+    },
+    "summarize": {
+      "string": "Shrnout"
+    },
+    "loading": {
+      "string": "Shrnuji..."
+    },
+    "errors": {
+      "empty": {
+        "string": "Zadejte text k shrnutí"
+      },
+      "fail": {
+        "string": "Shrnutí se nezdařilo"
+      }
+    }
+  }
+}

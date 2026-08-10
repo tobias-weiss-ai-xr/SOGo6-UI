@@ -1,0 +1,39 @@
+{
+  "MAIL_SNOOZE": {
+    "title": {
+      "string": "Αναβολή"
+    },
+    "description": {
+      "string": "Επιλέξτε πότε να εμφανιστεί ξανά αυτό το email στο εισερχόμενό σας."
+    },
+    "presets": {
+      "later_today": {
+        "string": "Αργότερα σήμερα"
+      },
+      "tomorrow": {
+        "string": "Αύριο"
+      },
+      "this_weekend": {
+        "string": "Αυτό το Σαββατοκύριακο"
+      },
+      "next_week": {
+        "string": "Επόμενη εβδομάδα"
+      }
+    },
+    "pick_date": {
+      "string": "Επιλέξτε ημερομηνία & ώρα"
+    },
+    "pick_date_placeholder": {
+      "string": "Επιλέξτε ημερομηνία..."
+    },
+    "snooze_button": {
+      "string": "Αναβολή"
+    },
+    "success": {
+      "string": "Το email αναβλήθηκε"
+    },
+    "error": {
+      "string": "Αποτυχία αναβολής του email"
+    }
+  }
+}

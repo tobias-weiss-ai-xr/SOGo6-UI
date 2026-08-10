@@ -1,0 +1,46 @@
+{
+  "AI_CLASSIFY": {
+    "title": {
+      "string": "Akıllı E-posta Sınıflandırma"
+    },
+    "description": {
+      "string": "E-postaları otomatik etiketle: bülten, fatura, bildirim, sosyal, kişisel."
+    },
+    "input": {
+      "title": {
+        "string": "Giriş E-postası"
+      },
+      "subject": {
+        "string": "Konu"
+      },
+      "sender": {
+        "string": "Gönderen"
+      },
+      "body": {
+        "string": "İçerik"
+      },
+      "placeholder": {
+        "string": "E-posta içeriğini yapıştırın..."
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Sınıflandırma Sonuçları"
+      },
+      "empty": {
+        "string": "Metin girin ve Sınıflandır'a tıklayın"
+      }
+    },
+    "classify": {
+      "string": "Sınıflandır"
+    },
+    "errors": {
+      "empty": {
+        "string": "E-posta metni girin"
+      },
+      "fail": {
+        "string": "Sınıflandırma başarısız"
+      }
+    }
+  }
+}

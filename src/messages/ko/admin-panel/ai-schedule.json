@@ -1,0 +1,43 @@
+{
+  "AI_SCHEDULE": {
+    "title": {
+      "string": "스마트 캘린더 스케줄링"
+    },
+    "description": {
+      "string": "참석자 가용성 패턴과 선호도를 기반으로 AI가 제안하는 회의 시간"
+    },
+    "input": {
+      "title": {
+        "string": "회의 설정"
+      },
+      "attendees": {
+        "string": "참석자"
+      },
+      "from": {
+        "string": "시작일"
+      },
+      "to": {
+        "string": "종료일"
+      },
+      "duration": {
+        "string": "시간 (분)"
+      }
+    },
+    "output": {
+      "title": {
+        "string": "제안된 시간"
+      }
+    },
+    "suggest": {
+      "string": "시간 제안"
+    },
+    "errors": {
+      "fields": {
+        "string": "참석자, 시작일 및 종료일은 필수입니다"
+      },
+      "fail": {
+        "string": "제안 실패"
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+    "AI_DRAFT": {
+        "title": {
+            "string": "Assistente Bozze AI"
+        },
+        "description": {
+            "string": "Suggerimenti di risposta con regolazione del tono. Genera bozze di risposta contestuali."
+        },
+        "input": {
+            "title": {
+                "string": "Email Originale"
+            },
+            "email": {
+                "string": "Corpo Email"
+            },
+            "placeholder": {
+                "string": "Incolla l'email a cui vuoi rispondere..."
+            }
+        },
+        "output": {
+            "title": {
+                "string": "Risposta Suggerita"
+            },
+            "empty": {
+                "string": "Inserisci il testo dell'email e seleziona un tono"
+            }
+        },
+        "suggest": {
+            "string": "Suggerisci Risposta"
+        },
+        "errors": {
+            "empty": {
+                "string": "Inserisci il testo dell'email"
+            },
+            "fail": {
+                "string": "Suggerimento fallito"
+            }
+        }
+    }
+}

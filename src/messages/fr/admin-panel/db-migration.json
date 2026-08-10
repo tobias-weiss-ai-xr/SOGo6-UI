@@ -1,0 +1,35 @@
+{
+  "AP_DBMIG": {
+    "title": {
+      "string": "Migration de base de données"
+    },
+    "description": {
+      "string": "Suivre les versions de schéma et l'historique des migrations. Exécuter les migrations depuis le panneau d'administration."
+    },
+    "current_version": {
+      "string": "Current Schema Version"
+    },
+    "run": {
+      "button": {
+        "string": "Run Migration"
+      },
+      "running": {
+        "string": "En cours..."
+      },
+      "success": {
+        "string": "Migration applied"
+      },
+      "error": {
+        "string": "Migration failed"
+      }
+    },
+    "history": {
+      "title": {
+        "string": "Migration History"
+      },
+      "empty": {
+        "string": "No migrations recorded."
+      }
+    }
+  }
+}

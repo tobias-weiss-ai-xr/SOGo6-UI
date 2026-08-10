@@ -1,0 +1,39 @@
+{
+  "MAIL_SNOOZE": {
+    "title": {
+      "string": "Adiar"
+    },
+    "description": {
+      "string": "Escolha quando este e-mail deve voltar a aparecer na sua caixa de entrada."
+    },
+    "presets": {
+      "later_today": {
+        "string": "Mais tarde hoje"
+      },
+      "tomorrow": {
+        "string": "Amanhã"
+      },
+      "this_weekend": {
+        "string": "Este fim de semana"
+      },
+      "next_week": {
+        "string": "Próxima semana"
+      }
+    },
+    "pick_date": {
+      "string": "Selecionar data e hora"
+    },
+    "pick_date_placeholder": {
+      "string": "Selecionar data..."
+    },
+    "snooze_button": {
+      "string": "Adiar"
+    },
+    "success": {
+      "string": "E-mail adiado"
+    },
+    "error": {
+      "string": "Falha ao adiar o e-mail"
+    }
+  }
+}

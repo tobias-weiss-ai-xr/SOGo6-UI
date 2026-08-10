@@ -1,0 +1,39 @@
+{
+  "MAIL_SNOOZE": {
+    "title": {
+      "string": "Tunda"
+    },
+    "description": {
+      "string": "Pilih kapan email ini harus muncul kembali di kotak masuk Anda."
+    },
+    "presets": {
+      "later_today": {
+        "string": "Nanti hari ini"
+      },
+      "tomorrow": {
+        "string": "Besok"
+      },
+      "this_weekend": {
+        "string": "Akhir pekan ini"
+      },
+      "next_week": {
+        "string": "Minggu depan"
+      }
+    },
+    "pick_date": {
+      "string": "Pilih tanggal & waktu"
+    },
+    "pick_date_placeholder": {
+      "string": "Pilih tanggal..."
+    },
+    "snooze_button": {
+      "string": "Tunda"
+    },
+    "success": {
+      "string": "Email ditunda"
+    },
+    "error": {
+      "string": "Gagal menunda email"
+    }
+  }
+}

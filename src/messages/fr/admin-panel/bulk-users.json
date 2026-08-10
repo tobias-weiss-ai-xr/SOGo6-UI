@@ -1,0 +1,61 @@
+{
+  "AP_BULK": {
+    "title": {
+      "string": "Gestion des utilisateurs en masse"
+    },
+    "description": {
+      "string": "Importer et exporter des utilisateurs en masse via fichiers CSV."
+    },
+    "export": {
+      "title": {
+        "string": "Export Users"
+      },
+      "description": {
+        "string": "Download all users as a CSV file."
+      },
+      "format": {
+        "string": "CSV file (.csv)"
+      },
+      "button": {
+        "string": "Export CSV"
+      },
+      "success": {
+        "string": "Export downloaded"
+      },
+      "error": {
+        "string": "Export failed"
+      }
+    },
+    "import": {
+      "title": {
+        "string": "Import Users"
+      },
+      "description": {
+        "string": "Upload a CSV file with user data to create or update accounts."
+      },
+      "dropzone": {
+        "string": "Click to upload CSV"
+      },
+      "button": {
+        "string": "Import CSV"
+      },
+      "remove": {
+        "string": "Remove file"
+      },
+      "success": {
+        "string": "Imported: {created} created, {updated} updated"
+      },
+      "error": {
+        "string": "Import failed"
+      }
+    },
+    "format": {
+      "title": {
+        "string": "CSV Format"
+      },
+      "hint": {
+        "string": "First row must be the header. uid, cn, sn, givenName, mail are required. password is optional (random if blank)."
+      }
+    }
+  }
+}

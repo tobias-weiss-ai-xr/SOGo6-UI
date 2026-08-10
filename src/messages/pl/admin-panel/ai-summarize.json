@@ -1,0 +1,46 @@
+{
+  "AI_SUMMARIZE": {
+    "title": {
+      "string": "Podsumowanie e-maila"
+    },
+    "description": {
+      "string": "TL;DR dla długich wątków e-mail. Ekstraktywne podsumowanie zwraca najważniejsze zdania."
+    },
+    "input": {
+      "title": {
+        "string": "E-mail wejściowy"
+      },
+      "text": {
+        "string": "Treść e-maila"
+      },
+      "placeholder": {
+        "string": "Wklej tutaj treść e-maila..."
+      },
+      "sentences": {
+        "string": "Maks. zdań"
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Podsumowanie"
+      },
+      "empty": {
+        "string": "Wprowadź tekst i kliknij Podsumuj"
+      }
+    },
+    "summarize": {
+      "string": "Podsumuj"
+    },
+    "loading": {
+      "string": "Podsumowywanie..."
+    },
+    "errors": {
+      "empty": {
+        "string": "Wprowadź tekst do podsumowania"
+      },
+      "fail": {
+        "string": "Podsumowanie nie powiodło się"
+      }
+    }
+  }
+}

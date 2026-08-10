@@ -38,6 +38,20 @@ jest.mock('next-intl', () => ({
   },
 }))
 
+jest.mock('next/navigation', () => ({
+  useParams: jest.fn(() => ({})),
+}))
+
+jest.mock('@/features/user-profile', () => ({
+  useProfile: jest.fn(() => ({
+    sharedMailboxAccounts: [],
+  })),
+}))
+
+jest.mock('@/lib/utils/create-client-id', () => ({
+  createClientId: jest.fn(() => 'generated-draft-id'),
+}))
+
 import { useComposeAction } from '../use-compose-action'
 
 describe('useComposeAction', () => {

@@ -1,3 +1,4 @@
+// @ts-nocheck — Jest mock file, not compiled as part of the app
 import React from 'react'
 
 export const useTranslations = () => {

@@ -1,0 +1,135 @@
+{
+  "AP_THEME": {
+    "title": {
+      "string": "Ustawienia motywu"
+    },
+    "description": {
+      "string": "Dostosuj wygląd i odczucia interfejsu SOGo"
+    },
+    "form_title": {
+      "string": "Niestandardowy motyw"
+    },
+    "form_description": {
+      "string": "Konfiguruj kolory, logo i niestandardowy CSS dla interfejsu groupware"
+    },
+    "fields": {
+      "primary": {
+        "label": {
+          "string": "Kolor podstawowy"
+        },
+        "description": {
+          "string": "Wartości HSL dla koloru podstawowego (np. 180 25% 40%)"
+        }
+      },
+      "primary_foreground": {
+        "label": {
+          "string": "Pierwszy plan koloru podstawowego"
+        },
+        "description": {
+          "string": "Kolor tekstu na tle koloru podstawowego"
+        }
+      },
+      "background": {
+        "label": {
+          "string": "Tło"
+        },
+        "description": {
+          "string": "Wartości HSL dla tła strony"
+        }
+      },
+      "foreground": {
+        "label": {
+          "string": "Pierwszy plan"
+        },
+        "description": {
+          "string": "Domyślny kolor tekstu"
+        }
+      },
+      "sidebar_background": {
+        "label": {
+          "string": "Tło paska bocznego"
+        },
+        "description": {
+          "string": "Wartości HSL dla tła paska bocznego"
+        }
+      },
+      "sidebar_foreground": {
+        "label": {
+          "string": "Pierwszy plan paska bocznego"
+        },
+        "description": {
+          "string": "Kolor tekstu w pasku bocznym"
+        }
+      },
+      "sidebar_primary": {
+        "label": {
+          "string": "Kolor podstawowy paska bocznego"
+        },
+        "description": {
+          "string": "Podstawowy kolor akcentowy w pasku bocznym"
+        }
+      },
+      "sidebar_accent": {
+        "label": {
+          "string": "Kolor akcentowy paska bocznego"
+        },
+        "description": {
+          "string": "Kolor akcentowy w pasku bocznym"
+        }
+      },
+      "header_background": {
+        "label": {
+          "string": "Tło nagłówka"
+        },
+        "description": {
+          "string": "Wartości HSL dla górnego paska nagłówka"
+        }
+      },
+      "header_foreground": {
+        "label": {
+          "string": "Pierwszy plan nagłówka"
+        },
+        "description": {
+          "string": "Kolor tekstu w nagłówku"
+        }
+      },
+      "logo_url": {
+        "label": {
+          "string": "Adres URL loga"
+        },
+        "description": {
+          "string": "Adres URL niestandardowego obrazka loga (opcjonalnie)"
+        }
+      },
+      "custom_css": {
+        "label": {
+          "string": "Niestandardowy CSS"
+        },
+        "description": {
+          "string": "Dodatkowe reguły CSS do wstrzyknięcia (opcjonalnie)"
+        }
+      }
+    },
+    "save": {
+      "string": "Zapisz zmiany"
+    },
+    "saving": {
+      "string": "Zapisywanie…"
+    },
+    "saved": {
+      "string": "Ustawienia motywu zostały pomyślnie zapisane"
+    },
+    "save_error": {
+      "string": "Zapisywanie nie powiodło się: {message}"
+    },
+    "unsaved_changes": {
+      "string": "Masz niezapisane zmiany"
+    },
+    "load_error": {
+      "string": "Nie udało się załadować ustawień motywu"
+    },
+    "retry": {
+      "string": "Spróbuj ponownie"
+    }
+  }
+}

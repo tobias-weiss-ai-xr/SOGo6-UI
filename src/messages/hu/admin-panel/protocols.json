@@ -1,0 +1,10 @@
+{
+  "PROTOCOLS": {
+    "title": {
+      "string": "E-mail protokoll állapota"
+    },
+    "description": {
+      "string": "JMAP és ActiveSync protokoll szerver állapota és képességei"
+    }
+  }
+}

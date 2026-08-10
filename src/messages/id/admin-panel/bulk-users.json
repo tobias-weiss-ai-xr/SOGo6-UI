@@ -1,0 +1,61 @@
+{
+  "AP_BULK": {
+    "title": {
+      "string": "Manajemen Pengguna Massal"
+    },
+    "description": {
+      "string": "Impor dan ekspor pengguna secara massal menggunakan file CSV."
+    },
+    "export": {
+      "title": {
+        "string": "Eksport Pengguna"
+      },
+      "description": {
+        "string": "Unduh semua pengguna sebagai file CSV."
+      },
+      "format": {
+        "string": "File CSV (.csv)"
+      },
+      "button": {
+        "string": "Eksport CSV"
+      },
+      "success": {
+        "string": "Eksport diunduh"
+      },
+      "error": {
+        "string": "Eksport gagal"
+      }
+    },
+    "import": {
+      "title": {
+        "string": "Impor Pengguna"
+      },
+      "description": {
+        "string": "Unggah file CSV berisi data pengguna untuk membuat atau memperbarui akun."
+      },
+      "dropzone": {
+        "string": "Klik untuk mengunggah CSV"
+      },
+      "button": {
+        "string": "Impor CSV"
+      },
+      "remove": {
+        "string": "Hapus file"
+      },
+      "success": {
+        "string": "Diimpor: {created} dibuat, {updated} diperbarui"
+      },
+      "error": {
+        "string": "Impor gagal"
+      }
+    },
+    "format": {
+      "title": {
+        "string": "Format CSV"
+      },
+      "hint": {
+        "string": "Baris pertama harus berupa header. uid, cn, sn, givenName, mail wajib diisi. password opsional (acak jika kosong)."
+      }
+    }
+  }
+}

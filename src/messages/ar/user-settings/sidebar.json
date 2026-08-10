@@ -1,0 +1,84 @@
+{
+    "US_SIDEBAR": {
+        "account": {
+            "title": {
+                "string": "Account",
+                "context": "Section title for the settings sidebar"
+            },
+            "profile": {
+                "string": "Profile",
+                "context": "Link to the account profile in the settings sidebar"
+            },
+            "security": {
+                "string": "Security",
+                "context": "Link to the account security in the settings sidebar"
+            }
+        },
+        "settings": {
+            "title": {
+                "string": "إعدادات",
+                "context": "Section title for the settings sidebar"
+            },
+            "general": {
+                "string": "General",
+                "context": "Link to the general settings in the settings sidebar"
+            },
+            "address_books": {
+                "string": "Address books",
+                "context": "Link to the settings address books in the settings sidebar"
+            },
+            "calendars": {
+                "title": {
+                    "string": "تقويم",
+                    "context": "Section title for the settings sidebar"
+                },
+                "general": {
+                    "string": "General",
+                    "context": "Link to the general calendars settings in the settings sidebar"
+                },
+                "categories": {
+                    "string": "Categories",
+                    "context": "Link to the categories calendars settings in the settings sidebar"
+                }
+            },
+            "email": {
+                "title": {
+                    "string": "Email",
+                    "context": "Section title for the settings sidebar"
+                },
+                "notifications": {
+                    "string": "Notifications",
+                    "context": "Link to the notifications settings in the settings sidebar"
+                },
+                "general": {
+                    "string": "General",
+                    "context": "Link to the general email settings in the settings sidebar"
+                },
+                "categories": {
+                    "string": "Categories",
+                    "context": "Link to the categories email settings in the settings sidebar"
+                },
+                "filters": {
+                    "string": "Filters",
+                    "context": "Link to the filters email settings in the settings sidebar"
+                },
+                "vacation": {
+                    "string": "Vacation",
+                    "context": "Link to the vacation email settings in the settings sidebar"
+                },
+                "external_accounts": {
+                    "string": "External accounts",
+                    "context": "Link to the external accounts email settings in the settings sidebar"
+                },
+                "forward": {
+                    "string": "Forward",
+                    "context": "Link to the forward email settings in the settings sidebar"
+                }
+            },
+            "api_docs": {
+                "string": "API Documentation",
+                "context": "Link to the API documentation / Swagger UI in the settings sidebar"
+            }
+        }
+    }
+}

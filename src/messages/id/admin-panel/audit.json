@@ -1,0 +1,44 @@
+{
+  "AP_AUDIT": {
+    "title": {
+      "string": "Log Audit"
+    },
+    "description": {
+      "string": "Log aktivitas admin dan pengguna yang tahan manipulasi. Entri bersifat tambahan saja dan tidak dapat dimodifikasi atau dihapus."
+    },
+    "table": {
+      "timestamp": {
+        "string": "Waktu"
+      },
+      "action": {
+        "string": "Aksi"
+      },
+      "actor": {
+        "string": "Pelaku"
+      },
+      "target": {
+        "string": "Target"
+      },
+      "detail": {
+        "string": "Detail"
+      },
+      "ip": {
+        "string": "Alamat IP"
+      },
+      "no_entries": {
+        "string": "Tidak ada entri log audit yang ditemukan."
+      }
+    },
+    "count_one": {
+      "string": "entri"
+    },
+    "count_many": {
+      "string": "entri"
+    },
+    "errors": {
+      "load_failed": {
+        "string": "Gagal memuat log audit"
+      }
+    }
+  }
+}

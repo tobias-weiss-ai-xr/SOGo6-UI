@@ -1,0 +1,135 @@
+{
+  "AP_THEME": {
+    "title": {
+      "string": "Tema Ayarları"
+    },
+    "description": {
+      "string": "SOGo arayüzünün görünümünü ve hissini özelleştirin"
+    },
+    "form_title": {
+      "string": "Özel Tema"
+    },
+    "form_description": {
+      "string": "Grupware arayüzü için renkleri, logoyu ve özel CSS'i yapılandırın"
+    },
+    "fields": {
+      "primary": {
+        "label": {
+          "string": "Birincil Renk"
+        },
+        "description": {
+          "string": "Birincil renk için HSL değerleri (örn. 180 25% 40%)"
+        }
+      },
+      "primary_foreground": {
+        "label": {
+          "string": "Birincil Ön Plan"
+        },
+        "description": {
+          "string": "Birincil arka planlardaki metin rengi"
+        }
+      },
+      "background": {
+        "label": {
+          "string": "Arka Plan"
+        },
+        "description": {
+          "string": "Sayfa arka planı için HSL değerleri"
+        }
+      },
+      "foreground": {
+        "label": {
+          "string": "Ön Plan"
+        },
+        "description": {
+          "string": "Varsayılan metin rengi"
+        }
+      },
+      "sidebar_background": {
+        "label": {
+          "string": "Yan Çubuk Arka Planı"
+        },
+        "description": {
+          "string": "Yan çubuk arka planı için HSL değerleri"
+        }
+      },
+      "sidebar_foreground": {
+        "label": {
+          "string": "Yan Çubuk Ön Planı"
+        },
+        "description": {
+          "string": "Yan çubuktaki metin rengi"
+        }
+      },
+      "sidebar_primary": {
+        "label": {
+          "string": "Yan Çubuk Birincil Rengi"
+        },
+        "description": {
+          "string": "Yan çubuktaki birincil vurgu rengi"
+        }
+      },
+      "sidebar_accent": {
+        "label": {
+          "string": "Yan Çubuk Vurgu Rengi"
+        },
+        "description": {
+          "string": "Yan çubuktaki vurgu rengi"
+        }
+      },
+      "header_background": {
+        "label": {
+          "string": "Üst Bilgi Arka Planı"
+        },
+        "description": {
+          "string": "Üst bilgi çubuğu için HSL değerleri"
+        }
+      },
+      "header_foreground": {
+        "label": {
+          "string": "Üst Bilgi Ön Planı"
+        },
+        "description": {
+          "string": "Üst bilgi çubuğundaki metin rengi"
+        }
+      },
+      "logo_url": {
+        "label": {
+          "string": "Logo URL'si"
+        },
+        "description": {
+          "string": "Özel logo görselinin URL'si (isteğe bağlı)"
+        }
+      },
+      "custom_css": {
+        "label": {
+          "string": "Özel CSS"
+        },
+        "description": {
+          "string": "Eklenecek ek CSS kuralları (isteğe bağlı)"
+        }
+      }
+    },
+    "save": {
+      "string": "Değişiklikleri Kaydet"
+    },
+    "saving": {
+      "string": "Kaydediliyor…"
+    },
+    "saved": {
+      "string": "Tema ayarları başarıyla kaydedildi"
+    },
+    "save_error": {
+      "string": "Kaydedilemedi: {message}"
+    },
+    "unsaved_changes": {
+      "string": "Kaydedilmemiş değişiklikleriniz var"
+    },
+    "load_error": {
+      "string": "Tema ayarları yüklenemedi"
+    },
+    "retry": {
+      "string": "Yeniden Dene"
+    }
+  }
+}

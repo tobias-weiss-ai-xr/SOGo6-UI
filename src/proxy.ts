@@ -1,6 +1,7 @@
 import { getDefaultLocale, getLocales, routing } from '@/lib/i18n/config'
 import createMiddleware from 'next-intl/middleware'
 import { NextRequest, NextResponse } from 'next/server'
+import { isUsingFakeApi } from '@/lib/api/router'
 
 export const config = {
   matcher: [
@@ -67,6 +68,78 @@ export function isAuthPath(pathname: string): boolean {
 
 const intlMiddleware = createMiddleware(routing)
 
+/**
+ * Handle API proxy requests
+ * Forwards /api/v1/* requests to the backend server
+ */
+async function handleApiProxy(req: NextRequest): Promise<NextResponse | null> {
+  const pathname = req.nextUrl.pathname;
+  
+  // Check if this is an API request
+  if (!pathname.startsWith('/api/v1/')) {
+    return null;
+  }
+  
+  // If using fake API, let Next.js handle it (fakeApi is at /fakeApi)
+  if (isUsingFakeApi()) {
+    return null;
+  }
+  
+  // Proxy to backend
+  const backendUrl = process.env.NEXT_PUBLIC_API_BASE_URL || 'http://localhost:5000';
+  
+  try {
+    const apiPath = pathname.replace(/^\/api\/v1/, '');
+    const targetUrl = new URL(apiPath, backendUrl);
+    
+    // Copy headers, removing Next.js specific ones
+    const headers = new Headers(req.headers);
+    headers.delete('host');
+    headers.delete('x-forwarded-host');
+    headers.delete('x-forwarded-proto');
+    
+    // Forward the request
+    const response = await fetch(targetUrl.toString(), {
+      method: req.method,
+      headers: headers as HeadersInit,
+      body: req.method === 'GET' || req.method === 'HEAD' ? undefined : req.body,
+      // Note: For streaming responses, we need to handle them specially
+      ...(req.method !== 'GET' && req.method !== 'HEAD' && { body: req.body }),
+    });
+    
+    // Clone the response and pipe it back
+    const apiResponse = new NextResponse(response.body, {
+      status: response.status,
+      statusText: response.statusText,
+      headers: response.headers,
+    });
+    
+    return apiResponse;
+  } catch (error) {
+    console.error('API Proxy Error:', error);
+    return NextResponse.json(
+      { error: 'API Proxy Error', message: error instanceof Error ? error.message : 'Unknown error' },
+      { status: 502 }
+    );
+  }
+}
+
+/**
+ * Handle fake API requests
+ * Serves mock data for development
+ */
+function handleFakeApi(req: NextRequest): NextResponse | null {
+  const pathname = req.nextUrl.pathname;
+  
+  // Check if this is a fake API request
+  if (!pathname.startsWith('/fakeApi/') && !pathname.startsWith('/api/v1/')) {
+    return null;
+  }
+  
+  // fakeApi routes are handled by Next.js directly
+  return null;
+}
+
 export default async function proxy(req: NextRequest) {
   const hostname = req.headers.get('host') || ''
   const pathname = req.nextUrl.pathname
@@ -78,6 +151,23 @@ export default async function proxy(req: NextRequest) {
   const isAdminPanelRoute = isAdminPanelPath(pathname)
   const isAuthRoute = isAuthPath(pathname)
   const isLocaleRoot = isLocaleRootPath(pathname)
+
+  // Check if this is an API request - handle proxy or fake API
+  if (pathname.startsWith('/api/') || pathname.startsWith('/fakeApi/')) {
+    // Try to handle API proxy
+    const apiResponse = await handleApiProxy(req);
+    if (apiResponse) {
+      return apiResponse;
+    }
+    
+    // Fall through to fakeApi handling
+    const fakeApiResponse = handleFakeApi(req);
+    if (fakeApiResponse) {
+      return fakeApiResponse;
+    }
+    
+    // If neither handled it, continue with normal routing
+  }
 
   // Check if the pathname matches the locale regex
   if (!localeRegex.test(pathname)) {

@@ -1,0 +1,135 @@
+{
+  "AP_THEME": {
+    "title": {
+      "string": "Thema-instellingen"
+    },
+    "description": {
+      "string": "Pas het uiterlijk en de uitstraling van de SOGo-interface aan"
+    },
+    "form_title": {
+      "string": "Aangepast thema"
+    },
+    "form_description": {
+      "string": "Configureer kleuren, logo en aangepaste CSS voor de groupware-interface"
+    },
+    "fields": {
+      "primary": {
+        "label": {
+          "string": "Primair kleur"
+        },
+        "description": {
+          "string": "HSL-waarden voor de primair kleur (bv. 180 25% 40%)"
+        }
+      },
+      "primary_foreground": {
+        "label": {
+          "string": "Primair voorgrond"
+        },
+        "description": {
+          "string": "Tekstkleur op primair achtergronden"
+        }
+      },
+      "background": {
+        "label": {
+          "string": "Achtergrond"
+        },
+        "description": {
+          "string": "HSL-waarden voor de pagina-achtergrond"
+        }
+      },
+      "foreground": {
+        "label": {
+          "string": "Voorgrond"
+        },
+        "description": {
+          "string": "Standaard tekstkleur"
+        }
+      },
+      "sidebar_background": {
+        "label": {
+          "string": "Zijbalk-achtergrond"
+        },
+        "description": {
+          "string": "HSL-waarden voor de zijbalk-achtergrond"
+        }
+      },
+      "sidebar_foreground": {
+        "label": {
+          "string": "Zijbalk-voorgrond"
+        },
+        "description": {
+          "string": "Tekstkleur in de zijbalk"
+        }
+      },
+      "sidebar_primary": {
+        "label": {
+          "string": "Zijbalk primair"
+        },
+        "description": {
+          "string": "Primair accentkleur in de zijbalk"
+        }
+      },
+      "sidebar_accent": {
+        "label": {
+          "string": "Zijbalk accent"
+        },
+        "description": {
+          "string": "Accentkleur in de zijbalk"
+        }
+      },
+      "header_background": {
+        "label": {
+          "string": "Achtergrond kopbal"
+        },
+        "description": {
+          "string": "HSL-waarden voor de bovenste kopbal"
+        }
+      },
+      "header_foreground": {
+        "label": {
+          "string": "Voorgrond kopbal"
+        },
+        "description": {
+          "string": "Tekstkleur in de kopbal"
+        }
+      },
+      "logo_url": {
+        "label": {
+          "string": "Logo-URL"
+        },
+        "description": {
+          "string": "URL van het aangepaste logo (optioneel)"
+        }
+      },
+      "custom_css": {
+        "label": {
+          "string": "Aangepaste CSS"
+        },
+        "description": {
+          "string": "Extra CSS-regels om in te voegen (optioneel)"
+        }
+      }
+    },
+    "save": {
+      "string": "Wijzigingen opslaan"
+    },
+    "saving": {
+      "string": "Opslaan…"
+    },
+    "saved": {
+      "string": "Thema-instellingen succesvol opgeslagen"
+    },
+    "save_error": {
+      "string": "Opslaan mislukt: {message}"
+    },
+    "unsaved_changes": {
+      "string": "U heeft niet-opgeslagen wijzigingen"
+    },
+    "load_error": {
+      "string": "Laden van thema-instellingen mislukt"
+    },
+    "retry": {
+      "string": "Opnieuw proberen"
+    }
+  }
+}

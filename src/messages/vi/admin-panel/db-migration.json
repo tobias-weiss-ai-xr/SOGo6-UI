@@ -1,0 +1,35 @@
+{
+  "AP_DBMIG": {
+    "title": {
+      "string": "Di chuyển Cơ sở dữ liệu"
+    },
+    "description": {
+      "string": "Theo dõi phiên bản schema và lịch sử di chuyển. Chạy di chuyển từ bảng điều khiển quản trị."
+    },
+    "current_version": {
+      "string": "Phiên bản Schema Hiện tại"
+    },
+    "run": {
+      "button": {
+        "string": "Chạy Di chuyển"
+      },
+      "running": {
+        "string": "Đang chạy..."
+      },
+      "success": {
+        "string": "Di chuyển đã được áp dụng"
+      },
+      "error": {
+        "string": "Di chuyển thất bại"
+      }
+    },
+    "history": {
+      "title": {
+        "string": "Lịch sử Di chuyển"
+      },
+      "empty": {
+        "string": "Không có bản ghi di chuyển nào."
+      }
+    }
+  }
+}

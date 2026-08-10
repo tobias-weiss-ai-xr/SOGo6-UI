@@ -112,7 +112,7 @@ describe('ListItemClassic', () => {
 
     expect(
       screen.getByText(
-        pastDate.toLocaleDateString([], { month: 'short', day: 'numeric' })
+        pastDate.toLocaleDateString('en-US', { month: 'short', day: 'numeric' })
       )
     ).toBeInTheDocument()
   })

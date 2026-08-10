@@ -64,9 +64,10 @@ const ComposeHeader: React.FC<ComposeHeaderProps> = ({ draftId }) => {
     customFromEnabled,
     user,
     mailMaxRecipient,
+    sharedMailboxAccounts,
   } = useProfile()
 
-  const { toRecipients, ccRecipients, bccRecipients } =
+  const { toRecipients, ccRecipients, bccRecipients, selectedIdentity } =
     useAppSelector(selectDraftData(draftId)) ?? {}
 
   const [toTags, setToTags] = React.useState<RecipientTag[]>([])
@@ -161,18 +162,30 @@ const ComposeHeader: React.FC<ComposeHeaderProps> = ({ draftId }) => {
   )
 
   const defaultFrom = defaultIdentity?.mail || user?.email || ''
-  const [selectedFrom, setSelectedFrom] = React.useState(defaultFrom)
+  // Initialize with selectedIdentity from draft if available, otherwise use default
+  const initialFrom = selectedIdentity?.mail || defaultFrom
+  const [selectedFrom, setSelectedFrom] = React.useState(initialFrom)
 
+  // Update selectedFrom if draft's selectedIdentity changes
   React.useEffect(() => {
-    if (defaultFrom) setSelectedFrom(defaultFrom)
-  }, [defaultFrom])
+    if (selectedIdentity?.mail) {
+      setSelectedFrom(selectedIdentity.mail)
+    } else if (defaultFrom) {
+      setSelectedFrom(defaultFrom)
+    }
+  }, [selectedIdentity?.mail, defaultFrom])
 
   const memoizedIdentities = React.useMemo(
     () => [
       ...(mainAccount?.identities ?? []),
       ...externalAccounts.flatMap((acc) => acc.identities),
+      ...(sharedMailboxAccounts?.map((sb) => ({
+        mail: sb.email,
+        name: sb.name,
+        signatures: {},
+      })) ?? []),
     ],
-    [mainAccount?.identities, externalAccounts]
+    [mainAccount?.identities, externalAccounts, sharedMailboxAccounts]
   )
 
   const currentIdentity = React.useMemo(

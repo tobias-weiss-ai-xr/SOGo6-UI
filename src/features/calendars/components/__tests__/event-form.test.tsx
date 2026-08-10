@@ -44,6 +44,21 @@ jest.mock('@/features/address_books/hooks/use-recipient-suggestions', () => ({
   })),
 }))
 
+jest.mock('@/features/resources/hooks/use-resources', () => ({
+  useResources: jest.fn(() => ({
+    resources: [],
+    isLoading: false,
+    isError: false,
+    error: undefined,
+    refetch: jest.fn(),
+  })),
+  useAvailableResources: jest.fn(() => ({ resources: [], isLoading: false })),
+  useResourceAvailability: jest.fn(() => ({ availability: {}, isLoading: false })),
+  useResourcesByType: jest.fn(() => ({ resources: [], isLoading: false })),
+  useBookableResources: jest.fn(() => ({ resources: [], isLoading: false })),
+  useResourceSearch: jest.fn(() => ({ resources: [], isLoading: false })),
+}))
+
 jest.mock('next-intl', () => ({
   useTranslations: jest.fn(() => (key: string) => key),
   useLocale: jest.fn(() => 'en'),

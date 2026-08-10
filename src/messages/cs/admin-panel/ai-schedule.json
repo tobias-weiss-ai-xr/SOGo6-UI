@@ -1,0 +1,43 @@
+{
+  "AI_SCHEDULE": {
+    "title": {
+      "string": "Inteligentní plánování kalendáře"
+    },
+    "description": {
+      "string": "Návrhy času schůzek od AI na základě vzorců dostupnosti a preferencí účastníků."
+    },
+    "input": {
+      "title": {
+        "string": "Nastavení schůzky"
+      },
+      "attendees": {
+        "string": "Účastníci"
+      },
+      "from": {
+        "string": "Od"
+      },
+      "to": {
+        "string": "Do"
+      },
+      "duration": {
+        "string": "Délka (min)"
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Navrhované časy"
+      }
+    },
+    "suggest": {
+      "string": "Navrhnout časy"
+    },
+    "errors": {
+      "fields": {
+        "string": "Účastníci, datum od a datum do jsou povinné"
+      },
+      "fail": {
+        "string": "Návrh se nezdařil"
+      }
+    }
+  }
+}

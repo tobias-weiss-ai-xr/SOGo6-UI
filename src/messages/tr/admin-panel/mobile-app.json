@@ -1,0 +1,65 @@
+{
+  "MOBILE": {
+    "title": {
+      "string": "Mobil Uygulama Yönetimi"
+    },
+    "description": {
+      "string": "Kayıtlı cihazları, push bildirimlerini ve uygulama yapılandırmasını yönetin"
+    },
+    "errors": {
+      "fail": {
+        "string": "İşlem başarısız"
+      }
+    },
+    "success": {
+      "unregister": {
+        "string": "Cihaz kaydı kaldırıldı"
+      },
+      "broadcast": {
+        "string": "Push bildirimi gönderildi"
+      }
+    },
+    "config": {
+      "title": {
+        "string": "Uygulama Ayarları"
+      },
+      "push": {
+        "string": "Push Bildirimleri"
+      },
+      "biometric": {
+        "string": "Biyometrik Kimlik Doğrulama"
+      }
+    },
+    "push": {
+      "title": {
+        "placeholder": {
+          "string": "Bildirim başlığı"
+        }
+      },
+      "message": {
+        "placeholder": {
+          "string": "Mesaj..."
+        }
+      },
+      "broadcast": {
+        "string": "Gönder"
+      }
+    },
+    "stats": {
+      "title": {
+        "string": "İstatistikler"
+      },
+      "devices": {
+        "string": "Kayıtlı Cihazlar"
+      }
+    },
+    "devices": {
+      "title": {
+        "string": "Tüm Cihazlar"
+      },
+      "empty": {
+        "string": "Henüz kayıtlı cihaz yok"
+      }
+    }
+  }
+}

@@ -10,6 +10,7 @@ import {
   ShieldUser,
   User,
   UserCog,
+  BookOpen,
 } from 'lucide-react'
 import { useMemo } from 'react'
 
@@ -83,6 +84,10 @@ export function useNavItems(): NavItem[] {
                 title: 'US_SIDEBAR.settings.calendars.categories.string',
                 url: '/user_settings/calendars/categories',
               },
+              {
+                title: 'US_SIDEBAR.settings.calendars.caldav.string',
+                url: '/user_settings/calendars/caldav',
+              },
             ],
           },
           {
@@ -120,6 +125,11 @@ export function useNavItems(): NavItem[] {
                 url: '/user_settings/mail/notifications',
               }),
             ],
+          },
+          {
+            title: 'US_SIDEBAR.settings.api_docs.string',
+            url: '/swagger-basic',
+            icon: BookOpen,
           },
         ],
       },

@@ -1,0 +1,135 @@
+{
+  "AP_THEME": {
+    "title": {
+      "string": "Pengaturan Tema"
+    },
+    "description": {
+      "string": "Sesuaikan tampilan dan nuansa antarmuka SOGo"
+    },
+    "form_title": {
+      "string": "Tema Kustom"
+    },
+    "form_description": {
+      "string": "Konfigurasi warna, logo, dan CSS kustom untuk antarmuka groupware"
+    },
+    "fields": {
+      "primary": {
+        "label": {
+          "string": "Warna Primer"
+        },
+        "description": {
+          "string": "Nilai HSL untuk warna primer (contoh: 180 25% 40%)"
+        }
+      },
+      "primary_foreground": {
+        "label": {
+          "string": "Latar Depan Primer"
+        },
+        "description": {
+          "string": "Warna teks pada latar belakang primer"
+        }
+      },
+      "background": {
+        "label": {
+          "string": "Latar Belakang"
+        },
+        "description": {
+          "string": "Nilai HSL untuk latar belakang halaman"
+        }
+      },
+      "foreground": {
+        "label": {
+          "string": "Latar Depan"
+        },
+        "description": {
+          "string": "Warna teks default"
+        }
+      },
+      "sidebar_background": {
+        "label": {
+          "string": "Latar Belakang Sidebar"
+        },
+        "description": {
+          "string": "Nilai HSL untuk latar belakang sidebar"
+        }
+      },
+      "sidebar_foreground": {
+        "label": {
+          "string": "Latar Depan Sidebar"
+        },
+        "description": {
+          "string": "Warna teks di sidebar"
+        }
+      },
+      "sidebar_primary": {
+        "label": {
+          "string": "Primer Sidebar"
+        },
+        "description": {
+          "string": "Warna aksen primer di sidebar"
+        }
+      },
+      "sidebar_accent": {
+        "label": {
+          "string": "Aksen Sidebar"
+        },
+        "description": {
+          "string": "Warna aksen di sidebar"
+        }
+      },
+      "header_background": {
+        "label": {
+          "string": "Latar Belakang Header"
+        },
+        "description": {
+          "string": "Nilai HSL untuk bilah header bagian atas"
+        }
+      },
+      "header_foreground": {
+        "label": {
+          "string": "Teks Header"
+        },
+        "description": {
+          "string": "Warna teks di header"
+        }
+      },
+      "logo_url": {
+        "label": {
+          "string": "URL Logo"
+        },
+        "description": {
+          "string": "URL gambar logo kustom (opsional)"
+        }
+      },
+      "custom_css": {
+        "label": {
+          "string": "CSS Kustom"
+        },
+        "description": {
+          "string": "Aturan CSS tambahan untuk disisipkan (opsional)"
+        }
+      }
+    },
+    "save": {
+      "string": "Simpan Perubahan"
+    },
+    "saving": {
+      "string": "Menyimpan…"
+    },
+    "saved": {
+      "string": "Pengaturan tema berhasil disimpan"
+    },
+    "save_error": {
+      "string": "Gagal menyimpan: {message}"
+    },
+    "unsaved_changes": {
+      "string": "Anda memiliki perubahan yang belum disimpan"
+    },
+    "load_error": {
+      "string": "Gagal memuat pengaturan tema"
+    },
+    "retry": {
+      "string": "Coba Lagi"
+    }
+  }
+}

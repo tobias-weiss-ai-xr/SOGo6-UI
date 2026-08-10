@@ -1,0 +1,48 @@
+{
+    "COMMONS": {
+        "close": {
+            "string": "Sluiten"
+        },
+        "workInProgress": {
+            "description": {
+                "string": "Deze functie wordt momenteel ontwikkeld."
+            },
+            "message": {
+                "string": "We werken hard om deze functie beschikbaar te maken."
+            },
+            "comingSoon": {
+                "string": "Binnenkort beschikbaar! Blijf op de hoogte."
+            }
+        }
+    },
+    "COMMON": {
+        "demo": {
+            "warning": {
+                "title": {
+                    "string": "Demoversie"
+                },
+                "description": {
+                    "string": "U gebruikt momenteel een demoversie van de applicatie. Sommige functies kunnen beperkt zijn."
+                },
+                "action": {
+                    "string": "Begrepen"
+                }
+            }
+        },
+        "language": {
+            "english": "English",
+            "french": "Français"
+        },
+        "serviceUnavailable": {
+            "title": {
+                "string": "Service niet beschikbaar"
+            },
+            "description": {
+                "string": "De applicatie kon geen verbinding maken met de server. Probeer het later opnieuw of neem contact op met uw beheerder."
+            },
+            "retry": {
+                "string": "Opnieuw proberen"
+            }
+        }
+    }
+}

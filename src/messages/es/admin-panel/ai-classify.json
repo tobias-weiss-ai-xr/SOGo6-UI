@@ -1,0 +1,46 @@
+{
+  "AI_CLASSIFY": {
+    "title": {
+      "string": "Clasificación de correos"
+    },
+    "description": {
+      "string": "Categorización automática de correos con puntuación de confianza"
+    },
+    "input": {
+      "title": {
+        "string": "Entrada"
+      },
+      "subject": {
+        "string": "Asunto"
+      },
+      "sender": {
+        "string": "Remitente"
+      },
+      "body": {
+        "string": "Texto del correo"
+      },
+      "placeholder": {
+        "string": "Pegue el texto del correo aquí..."
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Categorías"
+      },
+      "empty": {
+        "string": "Las categorías aparecerán aquí"
+      }
+    },
+    "classify": {
+      "string": "Clasificar"
+    },
+    "errors": {
+      "empty": {
+        "string": "Texto requerido"
+      },
+      "fail": {
+        "string": "Clasificación fallida"
+      }
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "IMPORT": {
+    "title": {
+      "string": "Import/Export PST/M365"
+    },
+    "description": {
+      "string": "Importer des boîtes aux lettres depuis des fichiers PST ou Microsoft 365 avec suivi de progression"
+    },
+    "errors": {
+      "fields": {
+        "string": "Champs requis manquants"
+      },
+      "fail": {
+        "string": "Opération échouée"
+      }
+    },
+    "success": {
+      "analyze": {
+        "string": "PST analysé"
+      },
+      "import": {
+        "string": "Import démarré"
+      }
+    },
+    "jobs": {
+      "title": {
+        "string": "Tâches d'import"
+      },
+      "empty": {
+        "string": "Aucune tâche d'import"
+      }
+    }
+  }
+}

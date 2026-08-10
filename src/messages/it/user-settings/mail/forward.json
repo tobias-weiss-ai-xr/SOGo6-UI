@@ -1,0 +1,116 @@
+{
+    "US_MAIL_FORWARD": {
+        "title": {
+            "string": "Inoltro Posta"
+        },
+        "page": {
+            "description": {
+                "string": "Inoltra automaticamente i messaggi in arrivo a uno o più indirizzi email."
+            }
+        },
+        "labels": {
+            "transfer_incoming": {
+                "string": "Trasferisci messaggi in arrivo"
+            },
+            "email": {
+                "string": "Indirizzo email"
+            },
+            "always_forward": {
+                "string": "Inoltra sempre"
+            },
+            "keep_copy": {
+                "string": "Mantieni una copia in questa casella"
+            }
+        },
+        "description": {
+            "transfer_incoming": {
+                "string": "Inoltra automaticamente i nuovi messaggi a un altro indirizzo email"
+            },
+            "email": {
+                "string": "Inoltra a questi indirizzi (fino a {max} indirizzi). Aggiungi più indirizzi separati da virgola, punto e virgola o premi Invio/Tab."
+            }
+        },
+        "help": {
+            "email": {
+                "string": "Inoltreremo i nuovi messaggi a questi indirizzi"
+            }
+        },
+        "placeholders": {
+            "email": {
+                "string": "Aggiungi indirizzo email e premi Invio"
+            }
+        },
+        "errors": {
+            "email": {
+                "invalid": {
+                    "string": "Inserisci un indirizzo email valido"
+                },
+                "duplicate": {
+                    "string": "Questo indirizzo è già nella lista"
+                }
+            },
+            "emails": {
+                "list": {
+                    "string": "Si è verificato un errore con uno o più indirizzi email"
+                }
+            },
+            "max_reached": {
+                "string": "Massimo {max} indirizzi consentiti"
+            },
+            "validation": {
+                "addresses_required": {
+                    "string": "È richiesto almeno un indirizzo email quando l'inoltro è abilitato."
+                }
+            }
+        },
+        "hints": {
+            "blur": {
+                "string": "Premi Invio per aggiungere questo indirizzo"
+            }
+        },
+        "tooltip": {
+            "always_forward": {
+                "string": "La posta in arrivo viene inoltrata prima di applicare i filtri."
+            },
+            "keep_copy": {
+                "string": "Mantieni una copia dei messaggi inoltrati nella tua casella. Utile se vuoi mantenere un archivio locale."
+            }
+        },
+        "errors_api": {
+            "title": {
+                "string": "Errore"
+            },
+            "save_failed": {
+                "string": "Impossibile salvare le modifiche, riprova"
+            },
+            "load_failed": {
+                "string": "Impossibile caricare le impostazioni di inoltro. Riprova più tardi."
+            },
+            "feature_disabled": {
+                "string": "L'inoltro della posta è stato disabilitato dall'amministratore."
+            }
+        },
+        "status": {
+            "enabled": {
+                "string": "Abilitato"
+            },
+            "disabled": {
+                "string": "Disabilitato"
+            }
+        },
+        "aria": {
+            "tags_count": {
+                "string": "{count} di {max} indirizzi email aggiunti"
+            },
+            "remove_email": {
+                "string": "Rimuovi {email}"
+            },
+            "email_input_group": {
+                "string": "Indirizzi email per l'inoltro"
+            },
+            "toggle_forwarding": {
+                "string": "Attiva/disattiva inoltro email"
+            }
+        }
+    }
+}

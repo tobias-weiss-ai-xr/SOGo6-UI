@@ -1,0 +1,46 @@
+{
+  "AI_SUMMARIZE": {
+    "title": {
+      "string": "E-postsammanfattning"
+    },
+    "description": {
+      "string": "TL;DR för långa e-posttrådar. Extraherande sammanfattning returnerar de viktigaste meningarna."
+    },
+    "input": {
+      "title": {
+        "string": "Indata-e-post"
+      },
+      "text": {
+        "string": "E-posttext"
+      },
+      "placeholder": {
+        "string": "Klistra in e-postinnehållet här..."
+      },
+      "sentences": {
+        "string": "Max antal meningar"
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Sammanfattning"
+      },
+      "empty": {
+        "string": "Ange text och klicka på Sammanfatta"
+      }
+    },
+    "summarize": {
+      "string": "Sammanfatta"
+    },
+    "loading": {
+      "string": "Sammanfattar..."
+    },
+    "errors": {
+      "empty": {
+        "string": "Ange text att sammanfatta"
+      },
+      "fail": {
+        "string": "Sammanfattningen misslyckades"
+      }
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "AP_DEBUG": {
+    "title": {
+      "string": "Postilaatikon vianetsintä"
+    },
+    "description": {
+      "string": "Diagnostinen työkalu sähköpostin toimitusongelmien vianetsintään. Näytä raaka sähköpostin lähdekoodi tai jäsennetyt otsikot."
+    },
+    "query": {
+      "title": {
+        "string": "Vianetsintäkysely"
+      },
+      "button": {
+        "string": "Tarkasta"
+      }
+    },
+    "labels": {
+      "user": {
+        "string": "Käyttäjä"
+      },
+      "folder": {
+        "string": "IMAP-kansio"
+      },
+      "mail_uid": {
+        "string": "Sähköpostin UID"
+      },
+      "select_user": {
+        "string": "Valitse käyttäjä..."
+      }
+    },
+    "result": {
+      "raw": {
+        "title": {
+          "string": "Raaka sähköpostin lähdekoodi"
+        }
+      },
+      "headers": {
+        "title": {
+          "string": "Jäsennetyt otsikot"
+        }
+      }
+    },
+    "errors": {
+      "fields_required": {
+        "string": "Käyttäjä, kansio ja sähköpostin UID ovat pakollisia"
+      },
+      "fetch_failed": {
+        "string": "Vianetsintädatan haku epäonnistui"
+      }
+    }
+  }
+}

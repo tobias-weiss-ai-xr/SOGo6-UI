@@ -1,0 +1,34 @@
+{
+  "AP_HEALTH": {
+    "title": {
+      "string": "Stav systému"
+    },
+    "description": {
+      "string": "Aktuální stav všech služeb v SOGo stacku."
+    },
+    "status": {
+      "all_ok": {
+        "string": "Všechny systémy funkční"
+      },
+      "degraded": {
+        "string": "Omezený provoz"
+      }
+    },
+    "overview": {
+      "uptime": {
+        "string": "Doba provozu"
+      },
+      "version": {
+        "string": "Verze"
+      },
+      "services": {
+        "string": "Služby funkční"
+      }
+    },
+    "errors": {
+      "load_failed": {
+        "string": "Nepodařilo se načíst data o stavu"
+      }
+    }
+  }
+}

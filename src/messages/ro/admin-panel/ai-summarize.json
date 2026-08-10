@@ -1,0 +1,46 @@
+{
+  "AI_SUMMARIZE": {
+    "title": {
+      "string": "Rezumatizare email"
+    },
+    "description": {
+      "string": "TL;DR pentru fire lungi de emailuri. Rezumatizarea extractivă returnează cele mai importante propoziții."
+    },
+    "input": {
+      "title": {
+        "string": "Email de intrare"
+      },
+      "text": {
+        "string": "Textul emailului"
+      },
+      "placeholder": {
+        "string": "Lipește aici corpul emailului..."
+      },
+      "sentences": {
+        "string": "Număr maxim de propoziții"
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Rezumat"
+      },
+      "empty": {
+        "string": "Introdu textul și apasă pe Rezumă"
+      }
+    },
+    "summarize": {
+      "string": "Rezumă"
+    },
+    "loading": {
+      "string": "Se rezumă..."
+    },
+    "errors": {
+      "empty": {
+        "string": "Introdu textul de rezumat"
+      },
+      "fail": {
+        "string": "Rezumatizarea a eșuat"
+      }
+    }
+  }
+}

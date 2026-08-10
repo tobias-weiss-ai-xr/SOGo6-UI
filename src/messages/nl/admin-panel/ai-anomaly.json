@@ -1,0 +1,49 @@
+{
+  "AI_ANOMALY": {
+    "title": {
+      "string": "Afwijkingsdetectie"
+    },
+    "description": {
+      "string": "Markeer ongebruikelijke verzendpatronen: bulk-e-mails, ongebruikelijke uren, nieuwe ontvangers."
+    },
+    "input": {
+      "title": {
+        "string": "Verzendpatroon"
+      },
+      "recipients": {
+        "string": "Aantal ontvangers"
+      },
+      "hour": {
+        "string": "Uur (0-23)"
+      },
+      "new_ratio": {
+        "string": "Verhouding nieuwe ontvangers"
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Analyse resultaat"
+      },
+      "empty": {
+        "string": "Voer waarden in en klik op Analyseren"
+      },
+      "anomaly": {
+        "string": "Afwijking gedetecteerd!"
+      },
+      "normal": {
+        "string": "Patroon normaal"
+      },
+      "score": {
+        "string": "Risicoscore"
+      }
+    },
+    "analyze": {
+      "string": "Analyseren"
+    },
+    "errors": {
+      "fail": {
+        "string": "Analyse mislukt"
+      }
+    }
+  }
+}

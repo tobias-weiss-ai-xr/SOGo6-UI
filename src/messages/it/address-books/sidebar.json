@@ -1,0 +1,203 @@
+{
+    "ADDRESS_BOOKS_SIDEBAR": {
+        "new_contact": {
+            "string": "Nuovo contatto",
+            "context": "Button for creating a new contact in the sidebar"
+        },
+        "new_distribution_list": {
+            "string": "Nuova lista di distribuzione",
+            "context": "Button for creating a new distribution list in the sidebar"
+        },
+        "globals": {
+            "string": "Rubriche globali"
+        },
+        "personals": {
+            "string": "Rubriche"
+        },
+        "add_personal": {
+            "string": "Aggiungi rubrica"
+        },
+        "subscriptions": {
+            "string": "Sottoscrizioni"
+        },
+        "add_subscriptions": {
+            "string": "Aggiungi sottoscrizioni"
+        },
+        "name": {
+            "string": "Nome",
+            "context": "Label for the name field in the address book sidebar."
+        },
+        "options": {
+            "edit": {
+                "title": {
+                    "string": "Modifica rubrica {name}"
+                },
+                "labels": {
+                    "name": {
+                        "string": "Nome"
+                    }
+                }
+            },
+            "link": {
+                "title": {
+                    "string": "Collegamenti"
+                },
+                "labels": {
+                    "name": {
+                        "string": "URL CardDAV"
+                    }
+                },
+                "copy": {
+                    "string": "Copia URL",
+                    "context": "Aria label for copying the address book CardDAV URL."
+                }
+            },
+            "delete": {
+                "title": {
+                    "string": "Sei sicuro di voler eliminare la rubrica {name}?"
+                }
+            },
+            "sharing": {
+                "string": "Condivisione"
+            },
+            "import": {
+                "string": "Importa"
+            },
+            "export": {
+                "string": "Esporta"
+            },
+            "ios_download": {
+                "string": "Scarica profilo configurazione iOS - macOS"
+            }
+        },
+        "sharing": {
+            "title": {
+                "string": "Condivisione Rubrica"
+            },
+            "description": {
+                "string": "Condividi questa rubrica con altri utenti. Gli utenti con cui la condividi possono visualizzare o modificare i contatti in base al livello di autorizzazione che concedi."
+            },
+            "addUser": {
+                "string": "Aggiungi utente"
+            },
+            "searchPlaceholder": {
+                "string": "Inserisci email utente..."
+            },
+            "addButton": {
+                "string": "Condividi"
+            },
+            "added": {
+                "string": "Rubrica condivisa con successo"
+            },
+            "addError": {
+                "string": "Condivisione rubrica fallita"
+            },
+            "removed": {
+                "string": "Condivisione rimossa con successo"
+            },
+            "removeError": {
+                "string": "Rimozione condivisione fallita"
+            },
+            "removeButton": {
+                "string": "Rimuovi"
+            },
+            "existingShares": {
+                "string": "Condivisa con"
+            },
+            "noShares": {
+                "string": "Questa rubrica non è ancora condivisa con nessuno."
+            },
+            "table": {
+                "user": {
+                    "string": "Utente"
+                },
+                "level": {
+                    "string": "Livello di autorizzazione"
+                }
+            }
+        },
+        "all_contacts": {
+            "string": "Tutti i contatti",
+            "context": "Sidebar entry for cross-address-book contact listing"
+        },
+        "import": {
+            "description": {
+                "string": "Carica un file di contatti o liste di distribuzione da importare."
+            },
+            "title_book": {
+                "string": "Importa in {name}"
+            },
+            "scope": {
+                "string": "Destinazione importazione"
+            },
+            "scope_contacts": {
+                "string": "Contatti in questa rubrica"
+            },
+            "scope_lists": {
+                "string": "Liste di distribuzione in questa rubrica"
+            },
+            "scope_new_book": {
+                "string": "Crea una nuova rubrica"
+            },
+            "format": {
+                "string": "Formato file"
+            },
+            "format_json": {
+                "string": "JSON"
+            },
+            "format_vcard3": {
+                "string": "vCard 3.0"
+            },
+            "format_vcard4": {
+                "string": "vCard 4.0"
+            },
+            "format_ldif": {
+                "string": "LDIF"
+            },
+            "file": {
+                "string": "File"
+            },
+            "submit": {
+                "string": "Avvia importazione"
+            },
+            "processing": {
+                "string": "Importazione in corso..."
+            },
+            "cancel": {
+                "string": "Annulla importazione"
+            },
+            "success": {
+                "string": "Importazione completata con successo."
+            },
+            "success_with_counts": {
+                "string": "Importazione completata. Creati: {counts}."
+            },
+            "close": {
+                "string": "Chiudi"
+            }
+        },
+        "export": {
+            "description": {
+                "string": "Esporta questa rubrica in un file."
+            },
+            "title_book": {
+                "string": "Esporta {name}"
+            },
+            "format": {
+                "string": "Formato di esportazione"
+            },
+            "submit": {
+                "string": "Avvia esportazione"
+            },
+            "processing": {
+                "string": "Esportazione in corso..."
+            },
+            "success": {
+                "string": "Esportazione completata. Il download dovrebbe iniziare a breve."
+            },
+            "close": {
+                "string": "Chiudi"
+            }
+        }
+    }
+}

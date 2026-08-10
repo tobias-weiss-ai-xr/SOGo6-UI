@@ -1,0 +1,18 @@
+{
+  "OPENCLOUD": {
+    "picker": {
+      "search": {
+        "string": "Hledat soubory..."
+      },
+      "empty": {
+        "string": "Žádné soubory nenalezeny"
+      },
+      "attached": {
+        "string": "Připojeno: {name}"
+      },
+      "error": {
+        "string": "Nepodařilo se vybrat soubor"
+      }
+    }
+  }
+}

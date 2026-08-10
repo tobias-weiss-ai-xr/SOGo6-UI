@@ -1,0 +1,135 @@
+{
+  "AP_THEME": {
+    "title": {
+      "string": "إعدادات السمة"
+    },
+    "description": {
+      "string": "تخصيص مظهر وشعور واجهة SOGo"
+    },
+    "form_title": {
+      "string": "سمة مخصصة"
+    },
+    "form_description": {
+      "string": "تكوين الألوان والشعار و CSS المخصص لواجهة مجموعة البرامج"
+    },
+    "fields": {
+      "primary": {
+        "label": {
+          "string": "اللون الأساسي"
+        },
+        "description": {
+          "string": "قيم HSL للون الأساسي (مثال: 180 25% 40%)"
+        }
+      },
+      "primary_foreground": {
+        "label": {
+          "string": "الوجه الأمامي الأساسي"
+        },
+        "description": {
+          "string": "لون النص على خلفيات أساسية"
+        }
+      },
+      "background": {
+        "label": {
+          "string": "الخلفية"
+        },
+        "description": {
+          "string": "قيم HSL لخلفية الصفحة"
+        }
+      },
+      "foreground": {
+        "label": {
+          "string": "الوجه الأمامي"
+        },
+        "description": {
+          "string": "لون النص الافتراضي"
+        }
+      },
+      "sidebar_background": {
+        "label": {
+          "string": "خلفية الشريط الجانبي"
+        },
+        "description": {
+          "string": "قيم HSL لخلفية الشريط الجانبي"
+        }
+      },
+      "sidebar_foreground": {
+        "label": {
+          "string": "الوجه الأمامي للشريط الجانبي"
+        },
+        "description": {
+          "string": "لون النص في الشريط الجانبي"
+        }
+      },
+      "sidebar_primary": {
+        "label": {
+          "string": "الأساسي في الشريط الجانبي"
+        },
+        "description": {
+          "string": "لون التوكيد الأساسي في الشريط الجانبي"
+        }
+      },
+      "sidebar_accent": {
+        "label": {
+          "string": "لون التوكيد في الشريط الجانبي"
+        },
+        "description": {
+          "string": "لون التوكيد في الشريط الجانبي"
+        }
+      },
+      "header_background": {
+        "label": {
+          "string": "خلفية الرأس"
+        },
+        "description": {
+          "string": "قيم HSL لشريط الرأس العلوي"
+        }
+      },
+      "header_foreground": {
+        "label": {
+          "string": "الون الأمامي للرأس"
+        },
+        "description": {
+          "string": "لون النص في الرأس"
+        }
+      },
+      "logo_url": {
+        "label": {
+          "string": "رابط الشعار"
+        },
+        "description": {
+          "string": "رابط صورة الشعار المخصص (اختياري)"
+        }
+      },
+      "custom_css": {
+        "label": {
+          "string": "CSS مخصص"
+        },
+        "description": {
+          "string": "قواعد CSS إضافية للإضافة (اختياري)"
+        }
+      }
+    },
+    "save": {
+      "string": "حفظ التغييرات"
+    },
+    "saving": {
+      "string": "جاري الحفظ…"
+    },
+    "saved": {
+      "string": "تم حفظ إعدادات السمة بنجاح"
+    },
+    "save_error": {
+      "string": "فشل الحفظ: {message}"
+    },
+    "unsaved_changes": {
+      "string": "لديك تغييرات غير محفوظة"
+    },
+    "load_error": {
+      "string": "فشل تحميل إعدادات السمة"
+    },
+    "retry": {
+      "string": "إعادة المحاولة"
+    }
+  }
+}

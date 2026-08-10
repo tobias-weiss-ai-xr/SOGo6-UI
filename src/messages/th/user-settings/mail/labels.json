@@ -1,0 +1,14 @@
+{
+  "US_MAIL_LABELS": {
+    "title": {
+      "string": "ป้ายกำกับอีเมล",
+      "context": "Title for the mail labels settings page"
+    },
+    "label": {
+      "string": "ป้ายกำกับ"
+    },
+    "imap_label": {
+      "string": "ป้ายกำกับ IMAP"
+    }
+  }
+}

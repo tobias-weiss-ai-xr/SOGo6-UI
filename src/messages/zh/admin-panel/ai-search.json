@@ -1,0 +1,40 @@
+{
+  "AI_SEARCH": {
+    "title": {
+      "string": "自然语言搜索"
+    },
+    "description": {
+      "string": "将自然语言查询转换为结构化过滤器"
+    },
+    "input": {
+      "title": {
+        "string": "搜索查询"
+      },
+      "placeholder": {
+        "string": "上个月约翰关于项目的邮件"
+      }
+    },
+    "output": {
+      "title": {
+        "string": "识别的过滤器"
+      },
+      "empty": {
+        "string": "过滤器将在此显示"
+      },
+      "detected": {
+        "string": "已识别"
+      }
+    },
+    "search": {
+      "string": "搜索"
+    },
+    "errors": {
+      "empty": {
+        "string": "请输入搜索内容"
+      },
+      "fail": {
+        "string": "搜索失败"
+      }
+    }
+  }
+}

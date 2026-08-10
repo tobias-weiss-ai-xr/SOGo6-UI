@@ -1,0 +1,54 @@
+{
+  "AP_MIG": {
+    "title": {
+      "string": "마이그레이션 도구"
+    },
+    "description": {
+      "string": "외부 소스(G Suite, M365, Dovecot, Cyrus) 또는 파일 업로드에서 데이터 가져오기"
+    },
+    "wizard": {
+      "title": {
+        "string": "마이그레이션 시작"
+      },
+      "source": {
+        "string": "소스"
+      },
+      "select_source": {
+        "string": "소스 선택..."
+      },
+      "user": {
+        "string": "대상 사용자"
+      },
+      "select_user": {
+        "string": "사용자 선택..."
+      }
+    },
+    "start": {
+      "button": {
+        "string": "마이그레이션 시작"
+      },
+      "running": {
+        "string": "시작 중..."
+      },
+      "success": {
+        "string": "마이그레이션 시작됨"
+      },
+      "error": {
+        "string": "마이그레이션 실패"
+      }
+    },
+    "history": {
+      "title": {
+        "string": "마이그레이션 기록"
+      },
+      "empty": {
+        "string": "아직 마이그레이션 내역이 없습니다."
+      }
+    },
+    "errors": {
+      "fields": {
+        "string": "소스와 사용자는 필수 항목입니다"
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "AI_DRAFT": {
+    "title": {
+      "string": "Asistent de proiectare AI"
+    },
+    "description": {
+      "string": "Sugestii de răspuns cu ajustare a tonului. Generează răspunsuri contextuale sub formă de proiect."
+    },
+    "input": {
+      "title": {
+        "string": "Email original"
+      },
+      "email": {
+        "string": "Corpul emailului"
+      },
+      "placeholder": {
+        "string": "Lipește aici emailul la care dorești să răspunzi..."
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Răspuns sugerat"
+      },
+      "empty": {
+        "string": "Introdu textul emailului și selectează un ton"
+      }
+    },
+    "suggest": {
+      "string": "Sugerează răspuns"
+    },
+    "errors": {
+      "empty": {
+        "string": "Introdu textul emailului"
+      },
+      "fail": {
+        "string": "Sugestia a eșuat"
+      }
+    }
+  }
+}

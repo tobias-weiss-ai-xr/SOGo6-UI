@@ -1,80 +1,28 @@
-# Pin Node LTS (Active LTS) — same major everywhere (build + runtime).
-ARG NODE_VERSION=24
+# Development Dockerfile for SOGo 6 UI
+# Single stage for development (source will be mounted by compose)
 
-# Dependencies
-FROM node:${NODE_VERSION}-alpine AS deps
-RUN apk add --no-cache libc6-compat
+FROM node:20-alpine AS development
+
 WORKDIR /app
 
-# Install dependencies based on the preferred package manager
+# Install git for potential npm installs
+RUN apk add --no-cache git
+
+# Copy package files (conditional - skip if missing)
 COPY package.json package-lock.json* ./
-RUN \
-  if [ -f package-lock.json ]; then npm ci --frozen-lockfile; \
-  else echo "Lockfile not found." && exit 1; \
-  fi
 
-# Builder
-FROM node:${NODE_VERSION}-alpine AS builder
-WORKDIR /app
-COPY --from=deps /app/node_modules ./node_modules
-COPY . .
+# Install dependencies if package.json exists
+RUN if [ -f package.json ]; then npm ci || npm install; else echo "No package.json - skipping npm install"; fi
 
-ENV NEXT_TELEMETRY_DISABLED=1
+# Copy source code (will be mounted by compose in dev)
+COPY . ./
 
-RUN npm run build
+# Expose dev server port and WebSocket port
+EXPOSE 3000 24678
 
-# Prune node_modules to keep only production dependencies
-FROM node:${NODE_VERSION}-alpine AS prod-deps
-ENV NODE_ENV=production
-RUN apk add --no-cache libc6-compat
-WORKDIR /app
-COPY package.json package-lock.json* ./
-RUN npm ci --omit=dev --ignore-scripts && npm cache clean --force
-
-# Lightweight cleanup stage to remove unnecessary files
-FROM alpine:3.24 AS cleanup
-WORKDIR /app
-COPY --from=prod-deps /app/node_modules ./node_modules
-
-# Remove unnecessary files from node_modules to reduce size
-RUN find ./node_modules -type d -name "*.d.ts" -exec rm -rf {} + 2>/dev/null || true && \
-    find ./node_modules -type f \( -name "*.md" -o -name "*.txt" -o -name "LICENSE*" -o -name "*.map" -o -name "*.json" \) -delete && \
-    find ./node_modules -type d \( -name "test" -o -name "tests" -o -name "__tests__" -o -name "spec" -o -name ".github" -o -name "docs" -o -name "examples" \) -exec rm -rf {} + 2>/dev/null || true && \
-    find ./node_modules -type f \( -name "*.ts" -o -name "*.jsx" -o -name "*.mjs" \) ! -path "*/node_modules/.bin/*" -delete 2>/dev/null || true && \
-    find ./node_modules/@ckeditor -type f \( -name "*.map" -o -name "*.ts" -o -name "*.jsx" \) -delete 2>/dev/null || true && \
-    find ./node_modules -type d -name "node_modules" ! -path "./node_modules" -exec rm -rf {} + 2>/dev/null || true
-
-# Runner — same Node image as build stages (no apk nodejs mismatch)
-FROM node:${NODE_VERSION}-alpine AS runner
-WORKDIR /app
-
-ENV NODE_ENV="production"
-ENV NEXT_TELEMETRY_DISABLED=1
-
-RUN apk add --no-cache wget && \
-    addgroup --system --gid 1001 nodejs && \
-    adduser --system --uid 1001 --ingroup nodejs nextjs
-
-# Copy cleaned node_modules
-COPY --from=cleanup --chown=nextjs:nodejs /app/node_modules ./node_modules
-
-# Copy only essential build outputs
-COPY --from=builder --chown=nextjs:nodejs /app/.next/standalone ./
-COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
-COPY --from=builder --chown=nextjs:nodejs /app/public ./public
-COPY --from=builder --chown=nextjs:nodejs /app/src/messages ./src/messages
-
-# Strip unnecessary files
-RUN rm -rf /usr/share/man/* /var/cache/apk/* /tmp/* 2>/dev/null || true
-
-USER nextjs
-
-EXPOSE 3000
-
-ENV PORT=3000
-ENV HOSTNAME="0.0.0.0"
-
-HEALTHCHECK --interval=30s --timeout=5s --start-period=10s --retries=3 \
-  CMD wget --quiet --tries=1 --spider http://127.0.0.1:3000/env || exit 1
-
-CMD ["node", "server.js"]
+# Use next dev for development (hot reload, stable for E2E tests).
+# In production, use Dockerfile.prod with multi-stage build.
+CMD ["sh", "-c", "if [ -f next.config.mjs ] || [ -f next.config.js ]; then \
+  echo '=== Starting dev server (next dev) ===' && \
+  npx next dev --port 3000 --hostname 0.0.0.0; \
+  else echo 'UI source missing - run make setup first'; fi"]

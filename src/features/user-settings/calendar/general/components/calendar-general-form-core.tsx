@@ -33,19 +33,25 @@ interface Props {
   update: (data: UserCalendarGeneral) => void
 }
 
+import { useGetCalendarsQuery } from '@/features/calendars/store/calendars-api'
 import { EmailsTagInput } from '@/components/ui/emails-tag-input'
 
 import { MultiSelect } from '@/components/ui/combomultiple'
-
-const calendarDefaultOptions = [
-  // //TODO: fetch calendar list from API instead of hardcoding these values
-  { value: 'SOGO_DEFAULT_CALENDAR', label: 'Default calendar' },
-  { value: 'SOGO_BIRTHDAY_CALENDAR', label: 'Birthday calendar' },
-  { value: 'SOGO_ANNIVERSARY_CALENDAR', label: 'Anniversary calendar' },
-]
+import { logger } from '@/lib/logger'
 
 const LabelsForm: React.FC<Props> = ({ data, update }) => {
   const t = useTranslations('US_CALENDARS')
+
+  const { data: calendars = [] } = useGetCalendarsQuery()
+
+  const calendarDefaultOptions = useMemo(
+    () =>
+      calendars.map((cal) => ({
+        value: cal.key ?? cal.name,
+        label: cal.name,
+      })),
+    [calendars]
+  )
 
   const calendarDaysShowedOptions = useMemo(
     () =>
@@ -82,7 +88,7 @@ const LabelsForm: React.FC<Props> = ({ data, update }) => {
       <form
         onSubmit={form.handleSubmit(onSubmit, (err) => {
           if (process.env.NODE_ENV === 'development') {
-            console.warn('errors submit', err)
+            logger.warn('errors submit', { detail: err })
           }
         })}
       >
@@ -219,6 +225,38 @@ const LabelsForm: React.FC<Props> = ({ data, update }) => {
           />
           <FormField
             control={form.control}
+            name="nonWorkingWeekdays"
+            render={({ field }) => (
+              <FormItem>
+                <FormLabel>{t('nonWorkingWeekdays.string')}</FormLabel>
+                <MultiSelect
+                  options={calendarDaysShowedOptions}
+                  selected={field.value.map(String)}
+                  onChange={(values) => field.onChange(values.map(Number))}
+                />
+              </FormItem>
+            )}
+          />
+          <FormField
+            control={form.control}
+            name="defaultLocation"
+            render={({ field }) => (
+              <FormItem>
+                <FormLabel>{t('defaultLocation.string')}</FormLabel>
+                <FormControl>
+                  <input
+                    type="text"
+                    className="flex h-9 w-full rounded-md border border-input bg-transparent px-3 py-1 text-sm shadow-sm transition-colors placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50"
+                    placeholder={t('defaultLocation.placeholder.string')}
+                    value={field.value ?? ''}
+                    onChange={field.onChange}
+                  />
+                </FormControl>
+              </FormItem>
+            )}
+          />
+          <FormField
+            control={form.control}
             name="calendarWeekNumberFormat"
             render={({ field }) => (
               <FormItem>
@@ -305,7 +343,6 @@ const LabelsForm: React.FC<Props> = ({ data, update }) => {
           />
         </div>
 
-        {/* //TODO */}
         <div className="grid gap-4 p-4 lg:grid-cols-3 lg:space-x-10">
           <FormField
             control={form.control}

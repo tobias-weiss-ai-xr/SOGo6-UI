@@ -1,0 +1,108 @@
+{
+  "ADDRESS_BOOKS_ERRORS": {
+    "list_member_invalid": {
+      "string": "En eller flere valgte medlemmer er ikke kontakter i denne adresseboken.",
+      "context": "Inline error when a distribution list member is invalid."
+    },
+    "addressbook_not_found": {
+      "string": "Adresseboken ble ikke funnet.",
+      "context": "Error when an address book is missing."
+    },
+    "addressbook_duplicate": {
+      "string": "En adressebok med dette navnet finnes allerede.",
+      "context": "Toast when address book creation conflicts."
+    },
+    "contact_not_found": {
+      "string": "Kontakten ble ikke funnet.",
+      "context": "Error when a contact is missing."
+    },
+    "contact_duplicate": {
+      "string": "En kontakt med denne identifikatoren finnes allerede.",
+      "context": "Toast when contact creation conflicts."
+    },
+    "contact_persist_failed": {
+      "string": "Kontakten kunne ikke lagres.",
+      "context": "Error when contact creation fails on the server."
+    },
+    "contact_update_failed": {
+      "string": "Kontakten kunne ikke oppdateres.",
+      "context": "Error when contact update fails on the server."
+    },
+    "operation_not_supported": {
+      "string": "Denne operasjonen støttes ikke for denne adresseboken.",
+      "context": "Error when mutating a non-local address book source."
+    },
+    "list_not_found": {
+      "string": "Distribusjonslisten ble ikke funnet.",
+      "context": "Error when a distribution list is missing."
+    },
+    "list_duplicate": {
+      "string": "En distribusjonsliste med dette navnet finnes allerede.",
+      "context": "Toast when list creation conflicts."
+    },
+    "list_persist_failed": {
+      "string": "Distribusjonslisten kunne ikke lagres.",
+      "context": "Error when list creation fails on the server."
+    },
+    "list_update_failed": {
+      "string": "Distribusjonslisten kunne ikke oppdateres.",
+      "context": "Error when list update fails on the server."
+    },
+    "access_denied": {
+      "string": "Du har ikke tillatelse til å endre denne adresseboken.",
+      "context": "Toast when write access is denied."
+    },
+    "read_only": {
+      "string": "Denne adresseboken er skrivebeskyttet.",
+      "context": "Toast when mutating a read-only address book."
+    },
+    "export_format_unsupported": {
+      "string": "Det valgte eksportformatet støttes ikke.",
+      "context": "Error when export format negotiation fails."
+    },
+    "import_no_file": {
+      "string": "Ingen fil ble oppgitt for import.",
+      "context": "Error when import request has no file."
+    },
+    "import_too_large": {
+      "string": "Importfilen overskrider maksimal tillatt størrelse (10 MB).",
+      "context": "Error when import payload is too large."
+    },
+    "import_parse_failed": {
+      "string": "Importfilen kunne ikke tolkes.",
+      "context": "Error when import document parsing fails."
+    },
+    "job_not_found": {
+      "string": "Bakgrunnsjobben ble ikke funnet.",
+      "context": "Error when polling an unknown job."
+    },
+    "job_forbidden": {
+      "string": "Du har ikke tilgang til denne bakgrunnsjobben.",
+      "context": "Error when job belongs to another user."
+    },
+    "job_not_ready": {
+      "string": "Eksporten er ikke klar ennå. Vennligst vent og prøv igjen.",
+      "context": "Error when downloading a job result too early."
+    },
+    "job_no_result": {
+      "string": "Denne jobben har ingen nedlastbar resultat.",
+      "context": "Error when job result is unavailable."
+    },
+    "job_concurrent_limit": {
+      "string": "For mange bakgrunnsjobber kjører. Vennligst prøv igjen senere.",
+      "context": "Error when concurrent job limit is reached."
+    },
+    "file_too_large": {
+      "string": "Bildet overskrider maksimal tillatt størrelse (2 MB).",
+      "context": "Inline error when contact photo upload is too large."
+    },
+    "file_type_not_allowed": {
+      "string": "Denne filtypen er ikke tillatt for kontaktbilder.",
+      "context": "Inline error when contact photo type is not allowed."
+    },
+    "generic": {
+      "string": "Operasjonen kunne ikke fullføres. Vennligst prøv igjen.",
+      "context": "Fallback error message for contact API errors."
+    }
+  }
+}

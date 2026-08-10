@@ -1,0 +1,51 @@
+{
+    "FORM_COMMONS": {
+        "save": {
+            "default": {
+                "string": "Lagre",
+                "description": "Click to save the form data."
+            }
+        },
+        "delete": {
+            "default": {
+                "string": "Slett",
+                "description": "Click to delete the selected item."
+            }
+        },
+        "edit": {
+            "default": {
+                "string": "Rediger",
+                "description": "Click to edit the selected item."
+            }
+        },
+        "cancel": {
+            "default": {
+                "string": "Avbryt",
+                "description": "Click to cancel the form submission."
+            }
+        },
+        "create": {
+            "default": {
+                "string": "Opprett",
+                "description": "Click to create a new item."
+            }
+        },
+        "reset": {
+            "default": {
+                "string": "Reset",
+                "description": "Click to reset the form fields to their default values."
+            }
+        },
+        "enabled": {
+            "string": "Aktivert"
+        },
+        "emails": {
+            "placeholder": "Add email address and press Enter"
+        },
+        "validation": {
+            "required": "Field is required",
+            "identityAtLeastOneDefault": "At least one identity must be set as default",
+            "email": "Please enter a valid email address"
+        }
+    }
+}

@@ -1,0 +1,46 @@
+{
+  "AI_SUMMARIZE": {
+    "title": {
+      "string": "สรุปอีเมล"
+    },
+    "description": {
+      "string": "TL;DR สำหรับอีเมลยาว ๆ การสรุปแบบ extractive จะคัดเลือกประโยคสำคัญที่สุด"
+    },
+    "input": {
+      "title": {
+        "string": "อีเมลที่ต้องการสรุป"
+      },
+      "text": {
+        "string": "ข้อความอีเมล"
+      },
+      "placeholder": {
+        "string": "วางข้อความอีเมลที่นี่..."
+      },
+      "sentences": {
+        "string": "จำนวนประโยคสูงสุด"
+      }
+    },
+    "output": {
+      "title": {
+        "string": "สรุป"
+      },
+      "empty": {
+        "string": "กรอกข้อความแล้วคลิก สรุป"
+      }
+    },
+    "summarize": {
+      "string": "สรุป"
+    },
+    "loading": {
+      "string": "กำลังสรุป..."
+    },
+    "errors": {
+      "empty": {
+        "string": "กรอกข้อความเพื่อสรุป"
+      },
+      "fail": {
+        "string": "การสรุปล้มเหลว"
+      }
+    }
+  }
+}

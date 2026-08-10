@@ -1,0 +1,39 @@
+{
+  "MAIL_SNOOZE": {
+    "title": {
+      "string": "Odłóż"
+    },
+    "description": {
+      "string": "Wybierz, kiedy ten e-mail ma ponownie pojawić się w Twojej skrzynce odbiorczej."
+    },
+    "presets": {
+      "later_today": {
+        "string": "Później dzisiaj"
+      },
+      "tomorrow": {
+        "string": "Jutro"
+      },
+      "this_weekend": {
+        "string": "W ten weekend"
+      },
+      "next_week": {
+        "string": "W przyszłym tygodniu"
+      }
+    },
+    "pick_date": {
+      "string": "Wybierz datę i godzinę"
+    },
+    "pick_date_placeholder": {
+      "string": "Wybierz datę..."
+    },
+    "snooze_button": {
+      "string": "Odłóż"
+    },
+    "success": {
+      "string": "E-mail został odłożony"
+    },
+    "error": {
+      "string": "Nie udało się odłożyć e-maila"
+    }
+  }
+}

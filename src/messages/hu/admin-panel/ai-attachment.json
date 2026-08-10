@@ -1,0 +1,40 @@
+{
+  "AI_ATTACH": {
+    "title": {
+      "string": "Okos csatolmány műveletek"
+    },
+    "description": {
+      "string": "Automatikusan érzékeli a dokumentum típust, és javaslatot tesz a mentésre, továbbításra vagy archiválásra."
+    },
+    "input": {
+      "title": {
+        "string": "Csatolmány"
+      },
+      "filename": {
+        "string": "Fájlnév"
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Elemzés"
+      },
+      "empty": {
+        "string": "Adjon meg egy fájlnevet"
+      },
+      "preview": {
+        "string": "Előnézhető"
+      }
+    },
+    "classify": {
+      "string": "Osztályozás"
+    },
+    "errors": {
+      "empty": {
+        "string": "Adjon meg egy fájlnevet"
+      },
+      "fail": {
+        "string": "Az osztályozás sikertelen"
+      }
+    }
+  }
+}

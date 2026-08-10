@@ -49,6 +49,8 @@ export interface MailComposeDraft {
   updatedAt: number
   selectedIdentity?: Identity
   selectedSignatureKey: string | null
+  /** ISO 8601 datetime for scheduled delivery (null = send immediately) */
+  sendAt?: string | null
 }
 
 export interface MailComposeState {
@@ -119,6 +121,7 @@ const mailComposeSlice = createSlice({
               string
             >) ?? {}
           )[0] ?? null,
+        sendAt: initialData?.sendAt ?? null,
       }
       state.openDraftIds.push(draftId)
       state.activeDraftId = draftId
@@ -281,6 +284,15 @@ const mailComposeSlice = createSlice({
       }
     },
 
+    setSendAt: (
+      state,
+      action: PayloadAction<{ draftId: string; sendAt: string | null }>
+    ) => {
+      const draft = state.drafts[action.payload.draftId]
+      if (draft) {
+        draft.sendAt = action.payload.sendAt
+      }
+    },
     toggleReadReceipt: (state, action: PayloadAction<{ draftId: string }>) => {
       const { draftId } = action.payload
       const draft = state.drafts[draftId]
@@ -384,6 +396,7 @@ export const {
   setPlainTextMode,
   markDraftSaved,
   deleteDraft,
+  setSendAt,
   setSending,
   setSendError,
   clearAllDrafts,

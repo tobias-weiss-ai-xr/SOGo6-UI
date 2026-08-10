@@ -1,0 +1,133 @@
+{
+  "US_MAIL_VACATIONS": {
+    "title": {
+      "string": "休暇設定",
+      "context": "Title for the vacation settings page"
+    },
+    "page": {
+      "description": {
+        "string": "不在時の自動返信メッセージとその有効期間を設定します。"
+      }
+    },
+    "errors_api": {
+      "load_failed": {
+        "string": "休暇設定を読み込めませんでした。後でもう一度お試しください。"
+      },
+      "feature_disabled": {
+        "string": "休暇自動返信は管理者によって無効にされています。"
+      }
+    },
+    "errors": {
+      "validation": {
+        "message_required": {
+          "string": "休暇を有効にする場合、自動返信メッセージは必須です。"
+        },
+        "dates_required": {
+          "string": "日付制限を有効にする場合、開始日と終了日は必須です。"
+        },
+        "date_order": {
+          "string": "終了日は開始日と同日か、それ以降でなければなりません。"
+        },
+        "time_invalid": {
+          "string": "有効な時間を HH:MM 形式で入力してください。"
+        },
+        "weekday_required": {
+          "string": "曜日制限を有効にする場合、少なくとも1つの曜日を選択してください。"
+        },
+        "response_interval_invalid": {
+          "string": "返信間隔は0以上の数値で指定してください。"
+        },
+        "response_interval_zero": {
+          "string": "このドメインでは、返信間隔を0日に設定することはできません。"
+        }
+      }
+    },
+    "auto_reply": {
+      "enable": {
+        "string": "休暇自動返信を有効にする"
+      },
+      "subject": {
+        "label": {
+          "string": "自動返信の件名"
+        },
+        "description": {
+          "string": "空白のままにするとデフォルトの件名が使用されます。元の件名を挿入するには {subject} と入力してください。"
+        }
+      },
+      "message": {
+        "string": "自動返信メッセージ"
+      },
+      "constraints": {
+        "title": {
+          "string": "有効化の制限"
+        },
+        "description": {
+          "string": "日付と時間の範囲を個別にカスタマイズし、必要に応じて特定の曜日と組み合わせて、休暇フィルタを好みに合わせて調整できます。"
+        },
+        "enable": {
+          "days": {
+            "string": "これらの日に自動返信を有効にする"
+          },
+          "hours": {
+            "string": "これらの時間帯に自動返信を有効にする"
+          },
+          "range": {
+            "string": "これらの日付範囲で自動返信を有効にする"
+          }
+        },
+        "time": {
+          "start": {
+            "string": "開始時刻"
+          },
+          "end": {
+            "string": "終了時刻"
+          }
+        },
+        "weekdays": {
+          "monday": {
+            "string": "月曜日"
+          },
+          "tuesday": {
+            "string": "火曜日"
+          },
+          "wednesday": {
+            "string": "水曜日"
+          },
+          "thursday": {
+            "string": "木曜日"
+          },
+          "friday": {
+            "string": "金曜日"
+          },
+          "saturday": {
+            "string": "土曜日"
+          },
+          "sunday": {
+            "string": "日曜日"
+          }
+        }
+      },
+      "response": {
+        "interval_days": {
+          "label": {
+            "string": "自動返信間の最小日数"
+          },
+          "placeholder": {
+            "string": "空白のままにするとデフォルト動作になります"
+          },
+          "description": {
+            "string": "この期間内に重複した休暇返信を送信しないようにします（RFC 5230 :days）。"
+          }
+        },
+        "send_always": {
+          "label": {
+            "string": "常に休暇メッセージを送信する"
+          },
+          "description": {
+            "string": "休暇メッセージはフィルタを適用する前に送信されます。"
+          }
+        }
+      }
+    }
+  }
+}

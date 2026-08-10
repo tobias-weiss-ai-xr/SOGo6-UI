@@ -1,0 +1,57 @@
+{
+    "AP_FILESHARE": {
+        "title": {
+            "string": "File Sharing"
+        },
+        "description": {
+            "string": "Create shareable links for files with optional password protection, expiration, and download tracking."
+        },
+        "form": {
+            "share": {
+                "string": "Share File"
+            },
+            "cancel": {
+                "string": "Hủy"
+            },
+            "title": {
+                "string": "Share a File"
+            },
+            "filename": {
+                "string": "Filename"
+            },
+            "size": {
+                "string": "Size (bytes)"
+            },
+            "expires": {
+                "string": "Expires in (days)"
+            },
+            "password": {
+                "string": "Password"
+            },
+            "password_hint": {
+                "string": "Leave empty for no password"
+            },
+            "submit": {
+                "string": "Create Share Link"
+            }
+        },
+        "create": {
+            "success": {
+                "string": "Share link created"
+            },
+            "error": {
+                "string": "Failed to create share"
+            }
+        },
+        "list": {
+            "empty": {
+                "string": "No shared files. Create a share link to securely distribute files."
+            }
+        },
+        "errors": {
+            "fields": {
+                "string": "Filename and size are required"
+            }
+        }
+    }
+}

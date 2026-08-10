@@ -10,7 +10,11 @@ import {
   SelectTrigger,
   SelectValue,
 } from '@/components/ui/select'
-import { useGetSystemQuery, useLazyGetAuthModeQuery } from '@/features/auth/components/store/auth.api'
+import {
+  useGetSystemQuery,
+  useLazyGetAuthModeQuery,
+} from '@/features/auth/components/store/auth.api'
+import { WebauthnLoginDialog } from '@/features/auth/webauthn-login-dialog'
 import { useEnvVars } from '@/lib/env-service'
 import { getLocales } from '@/lib/i18n/config'
 import { usePathname, useRouter } from '@/lib/i18n/navigation'
@@ -119,17 +123,26 @@ export function LoginForm({
 
     try {
       const result = await getAuthMode({ username: data.email }).unwrap()
-      const { kind, location } = result.data
+      const { kind, location, discovery_required } = result.data
 
       switch (kind) {
         case 'plain':
           push(`/auth/login/pwd?email=${encodeURIComponent(data.email)}`)
           break
         case 'ldap':
-          push(`/auth/login/pwd?email=${encodeURIComponent(data.email)}&mode=ldap`)
+          push(
+            `/auth/login/pwd?email=${encodeURIComponent(data.email)}&mode=ldap`
+          )
           break
         case 'sso':
-          window.location.href = location
+          // If discovery is required, redirect to the SAML2 WAYF page
+          if (discovery_required) {
+            push(
+              `/auth/saml2/discovery?relay_state=${encodeURIComponent(data.email)}`
+            )
+          } else {
+            window.location.href = location
+          }
           break
         default:
           setServerError(t('error.unknown_provider.string'))
@@ -146,8 +159,7 @@ export function LoginForm({
     void refetchSystem()
   }
 
-  const isSystemBlocked =
-    systemLoading && !systemTimedOut && !systemError
+  const isSystemBlocked = systemLoading && !systemTimedOut && !systemError
 
   if (isSystemBlocked) {
     return (
@@ -238,6 +250,10 @@ export function LoginForm({
               ))}
           </SelectContent>
         </Select>
+      </div>
+      {/* Passkey login button */}
+      <div className="mb-3">
+        <WebauthnLoginDialog />
       </div>
       {/* Submit button - CTA principal */}
       <Button

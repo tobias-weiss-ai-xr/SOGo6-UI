@@ -1,0 +1,54 @@
+{
+    "AP_CRM": {
+        "title": {
+            "string": "CRM-light"
+        },
+        "description": {
+            "string": "Associate contacts with accounts, track interactions, categorize contacts, and record notes."
+        },
+        "form": {
+            "create": {
+                "string": "New Account"
+            },
+            "cancel": {
+                "string": "Cancelar"
+            },
+            "title": {
+                "string": "Create Account"
+            },
+            "name": {
+                "string": "Account Name"
+            },
+            "domain": {
+                "string": "Domínio"
+            },
+            "industry": {
+                "string": "Industry"
+            },
+            "notes": {
+                "string": "Notas"
+            },
+            "submit": {
+                "string": "Create Account"
+            }
+        },
+        "create": {
+            "success": {
+                "string": "Account created"
+            },
+            "error": {
+                "string": "Failed to create"
+            }
+        },
+        "list": {
+            "empty": {
+                "string": "No CRM accounts yet."
+            }
+        },
+        "errors": {
+            "fields": {
+                "string": "Account name is required"
+            }
+        }
+    }
+}

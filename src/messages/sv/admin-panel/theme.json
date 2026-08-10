@@ -1,0 +1,135 @@
+{
+  "AP_THEME": {
+    "title": {
+      "string": "Teminställningar"
+    },
+    "description": {
+      "string": "Anpassa utseende och känsla för SOGo-gränssnittet"
+    },
+    "form_title": {
+      "string": "Anpassat tema"
+    },
+    "form_description": {
+      "string": "Konfigurera färger, logotyp och anpassad CSS för groupware-gränssnittet"
+    },
+    "fields": {
+      "primary": {
+        "label": {
+          "string": "Primärfärg"
+        },
+        "description": {
+          "string": "HSL-värden för primärfärgen (t.ex. 180 25% 40%)"
+        }
+      },
+      "primary_foreground": {
+        "label": {
+          "string": "Primär förgrund"
+        },
+        "description": {
+          "string": "Textfärg på primära bakgrunder"
+        }
+      },
+      "background": {
+        "label": {
+          "string": "Bakgrund"
+        },
+        "description": {
+          "string": "HSL-värden för sidbakgrunden"
+        }
+      },
+      "foreground": {
+        "label": {
+          "string": "Förgrund"
+        },
+        "description": {
+          "string": "Standardtextfärg"
+        }
+      },
+      "sidebar_background": {
+        "label": {
+          "string": "Sidopanelbakgrund"
+        },
+        "description": {
+          "string": "HSL-värden för sidopanelbakgrunden"
+        }
+      },
+      "sidebar_foreground": {
+        "label": {
+          "string": "Sidopanelförgrund"
+        },
+        "description": {
+          "string": "Textfärg i sidopanelen"
+        }
+      },
+      "sidebar_primary": {
+        "label": {
+          "string": "Sidopanelprimär"
+        },
+        "description": {
+          "string": "Primär accentfärg i sidopanelen"
+        }
+      },
+      "sidebar_accent": {
+        "label": {
+          "string": "Sidopanelaccent"
+        },
+        "description": {
+          "string": "Accentfärg i sidopanelen"
+        }
+      },
+      "header_background": {
+        "label": {
+          "string": "Rubrikbakgrund"
+        },
+        "description": {
+          "string": "HSL-värden för den övre rubrikraden"
+        }
+      },
+      "header_foreground": {
+        "label": {
+          "string": "Rubrikförgrund"
+        },
+        "description": {
+          "string": "Textfärg i rubriken"
+        }
+      },
+      "logo_url": {
+        "label": {
+          "string": "Logotyp-URL"
+        },
+        "description": {
+          "string": "URL för anpassad logotypbild (valfritt)"
+        }
+      },
+      "custom_css": {
+        "label": {
+          "string": "Anpassad CSS"
+        },
+        "description": {
+          "string": "Ytterligare CSS-regler att infoga (valfritt)"
+        }
+      }
+    },
+    "save": {
+      "string": "Spara ändringar"
+    },
+    "saving": {
+      "string": "Sparar…"
+    },
+    "saved": {
+      "string": "Teminställningar sparade"
+    },
+    "save_error": {
+      "string": "Misslyckades med att spara: {message}"
+    },
+    "unsaved_changes": {
+      "string": "Du har osparade ändringar"
+    },
+    "load_error": {
+      "string": "Misslyckades med att ladda temainställningar"
+    },
+    "retry": {
+      "string": "Försök igen"
+    }
+  }
+}

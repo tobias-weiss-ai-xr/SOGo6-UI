@@ -1,0 +1,75 @@
+{
+  "US_SECURITY": {
+    "title": {
+      "string": "Bảo mật",
+      "context": "Title for the Security settings section in user settings"
+    },
+    "totp": {
+      "title": {
+        "string": "Xác thực hai yếu tố (TOTP)",
+        "context": "Title for the Two-Factor Authentication settings"
+      },
+      "description": {
+        "string": "Xác thực hai yếu tố thêm một lớp bảo mật bổ sung cho tài khoản của bạn. Sau khi bật, bạn sẽ phải nhập một mã duy nhất được tạo bởi ứng dụng xác thực trên điện thoại mỗi khi đăng nhập."
+      },
+      "verification_code": {
+        "title": {
+          "string": "Mã xác minh"
+        },
+        "description": {
+          "string": "Nhập mã xác minh được tạo bởi ứng dụng xác thực của bạn."
+        }
+      }
+    },
+    "webauthn": {
+      "title": {
+        "string": "Khóa truy cập (WebAuthn)",
+        "context": "Title for the WebAuthn settings section"
+      },
+      "description": {
+        "string": "Khóa truy cập cho phép bạn đăng nhập mà không cần mật khẩu bằng cách sử dụng cảm biến sinh trắc học của thiết bị (vân tay, Face ID) hoặc khóa bảo mật phần cứng. Khóa truy cập của bạn được lưu trữ an toàn trên thiết bị này.",
+        "context": "Description for the WebAuthn settings section"
+      },
+      "registered_credentials": {
+        "string": "Khóa truy cập đã đăng ký",
+        "context": "Label for the list of registered passkeys"
+      },
+      "registered_at": {
+        "string": "Đã đăng ký",
+        "context": "Label for the registration date of a passkey"
+      },
+      "no_credentials": {
+        "string": "Chưa có khóa truy cập nào được đăng ký.",
+        "context": "Message when no passkeys are registered"
+      },
+      "register": {
+        "string": "Đăng ký khóa truy cập mới",
+        "context": "Button to register a new passkey",
+        "title": {
+          "string": "Register a New Passkey",
+          "context": "Title for the passkey registration dialog"
+        },
+        "description": {
+          "string": "Your browser or device will guide you through setting up a passkey using biometrics, a PIN, or an external security key.",
+          "context": "Description for the passkey registration dialog"
+        },
+        "button": {
+          "string": "Register",
+          "context": "Button to start passkey registration"
+        },
+        "waiting": {
+          "string": "Waiting for device interaction — follow the prompts on your device.",
+          "context": "Status during passkey registration"
+        },
+        "success": {
+          "string": "Passkey registered successfully!",
+          "context": "Status when passkey registration succeeds"
+        }
+      },
+      "device_name": {
+        "string": "Tên thiết bị (tùy chọn)",
+        "context": "Label for the device name input field"
+      }
+    }
+  }
+}

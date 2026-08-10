@@ -1,0 +1,25 @@
+{ "AP_BULK": {
+    "title": { "string": "Gestione Utenti in Massa" },
+    "description": { "string": "Importa ed esporta utenti in massa utilizzando file CSV." },
+    "export": {
+      "title": { "string": "Esporta Utenti" },
+      "description": { "string": "Scarica tutti gli utenti come file CSV." },
+      "format": { "string": "File CSV (.csv)" },
+      "button": { "string": "Esporta CSV" },
+      "success": { "string": "Esportazione scaricata" },
+      "error": { "string": "Esportazione fallita" }
+    },
+    "import": {
+      "title": { "string": "Importa Utenti" },
+      "description": { "string": "Carica un file CSV con dati utente per creare o aggiornare account." },
+      "dropzone": { "string": "Clicca per caricare CSV" },
+      "button": { "string": "Importa CSV" },
+      "remove": { "string": "Rimuovi file" },
+      "success": { "string": "Importati: {created} creati, {updated} aggiornati" },
+      "error": { "string": "Importazione fallita" }
+    },
+    "format": {
+      "title": { "string": "Formato CSV" },
+      "hint": { "string": "La prima riga deve essere l'intestazione. uid, cn, sn, givenName, mail sono obbligatori. password è opzionale (casuale se vuota)." }
+    }
+}}

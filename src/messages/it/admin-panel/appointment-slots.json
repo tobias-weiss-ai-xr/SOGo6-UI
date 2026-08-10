@@ -1,0 +1,33 @@
+{
+    "AP_SLOTS": {
+        "title": { "string": "Appuntamenti" },
+        "description": { "string": "Pubblica fasce orarie prenotabili (stile Calendly). Genera link di prenotazione per partecipanti esterni." },
+        "form": {
+            "create": { "string": "Crea Slot" },
+            "cancel": { "string": "Annulla" },
+            "title": { "string": "Nuovo Appuntamento" },
+            "slot_title": { "string": "Titolo Slot" },
+            "duration": { "string": "Durata (min)" },
+            "buffer": { "string": "Buffer (min)" },
+            "start_time": { "string": "Ora Inizio" },
+            "end_time": { "string": "Ora Fine" },
+            "days": { "string": "Giorni Disponibili" },
+            "submit": { "string": "Crea Slot" }
+        },
+        "create": {
+            "success": { "string": "Slot creato" },
+            "error": { "string": "Creazione slot fallita" }
+        },
+        "slots": {
+            "title": { "string": "I Tuoi Slot" },
+            "empty": { "string": "Nessun appuntamento. Creane uno per condividere la tua disponibilità." }
+        },
+        "bookings": {
+            "title": { "string": "Prenotazioni Recenti" },
+            "empty": { "string": "Nessuna prenotazione ancora." }
+        },
+        "errors": {
+            "fields": { "string": "Titolo, durata, orari e almeno un giorno sono obbligatori" }
+        }
+    }
+}

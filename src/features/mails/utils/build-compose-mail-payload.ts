@@ -15,6 +15,7 @@ export interface ComposeMailFields {
   requestReadReceipt: boolean
   selectedPriority: MailComposeDraft['priority']
   isPlainText: boolean
+  sendAt?: string | null
 }
 
 export function buildComposeMailPayload({
@@ -27,6 +28,7 @@ export function buildComposeMailPayload({
   requestReadReceipt,
   selectedPriority,
   isPlainText,
+  sendAt,
 }: ComposeMailFields): SendMailBody {
   return {
     // `from` is only undefined for an instant while a draft's default
@@ -41,5 +43,6 @@ export function buildComposeMailPayload({
     priority: selectedPriority,
     is_html: !isPlainText,
     reply_to: selectedIdentity?.replyTo || null,
+    send_at: sendAt ?? null,
   }
 }

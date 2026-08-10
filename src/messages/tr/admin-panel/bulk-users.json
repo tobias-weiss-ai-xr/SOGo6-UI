@@ -1,0 +1,61 @@
+{
+  "AP_BULK": {
+    "title": {
+      "string": "Toplu Kullanıcı Yönetimi"
+    },
+    "description": {
+      "string": "CSV dosyaları kullanarak kullanıcıları toplu şekilde içe aktarın ve dışa aktarın."
+    },
+    "export": {
+      "title": {
+        "string": "Kullanıcıları Dışa Aktar"
+      },
+      "description": {
+        "string": "Tüm kullanıcıları CSV dosyası olarak indirin."
+      },
+      "format": {
+        "string": "CSV dosyası (.csv)"
+      },
+      "button": {
+        "string": "CSV Dışa Aktar"
+      },
+      "success": {
+        "string": "Dışa aktarma indirildi"
+      },
+      "error": {
+        "string": "Dışa aktarma başarısız"
+      }
+    },
+    "import": {
+      "title": {
+        "string": "Kullanıcıları İçe Aktar"
+      },
+      "description": {
+        "string": "Kullanıcı verileri içeren bir CSV dosyası yükleyerek hesap oluşturun veya güncelleyin."
+      },
+      "dropzone": {
+        "string": "CSV yüklemek için tıklayın"
+      },
+      "button": {
+        "string": "CSV İçe Aktar"
+      },
+      "remove": {
+        "string": "Dosyayı kaldır"
+      },
+      "success": {
+        "string": "İçe aktarıldı: {created} oluşturuldu, {updated} güncellendi"
+      },
+      "error": {
+        "string": "İçe aktarma başarısız"
+      }
+    },
+    "format": {
+      "title": {
+        "string": "CSV Biçimi"
+      },
+      "hint": {
+        "string": "İlk satır başlık olmalıdır. uid, cn, sn, givenName, mail zorunludur. password isteğe bağlıdır (boş bırakılırsa rastgele atanır)."
+      }
+    }
+  }
+}

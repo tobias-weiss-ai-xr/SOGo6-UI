@@ -1,0 +1,49 @@
+{
+  "AI_SPAM": {
+    "title": {
+      "string": "Intelligent spamfilter"
+    },
+    "description": {
+      "string": "Realtidsscoring af spam med mønsteranalyse, afsenderreputation og indholdsheuristik."
+    },
+    "input": {
+      "title": {
+        "string": "E-mail til scoring"
+      },
+      "subject": {
+        "string": "Emne"
+      },
+      "sender": {
+        "string": "Afsender"
+      },
+      "body": {
+        "string": "Brødtekst"
+      },
+      "placeholder": {
+        "string": "Indsæt e-mailens brødtekst her..."
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Spam-score"
+      },
+      "empty": {
+        "string": "Indtast e-mail-indhold og klik på Score"
+      },
+      "signals": {
+        "string": "Detekterede signaler"
+      }
+    },
+    "score": {
+      "string": "Score e-mail"
+    },
+    "errors": {
+      "empty": {
+        "string": "Indtast emne eller brødtekst"
+      },
+      "fail": {
+        "string": "Scoring mislykkedes"
+      }
+    }
+  }
+}

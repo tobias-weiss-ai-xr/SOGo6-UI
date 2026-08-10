@@ -1,0 +1,135 @@
+{
+  "AP_THEME": {
+    "title": {
+      "string": "테마 설정"
+    },
+    "description": {
+      "string": "SOGo 인터페이스의 외관과 느낌을 사용자 정의하세요"
+    },
+    "form_title": {
+      "string": "사용자 정의 테마"
+    },
+    "form_description": {
+      "string": "그룹웨어 인터페이스의 색상, 로고 및 사용자 정의 CSS를 구성하세요"
+    },
+    "fields": {
+      "primary": {
+        "label": {
+          "string": "기본 색상"
+        },
+        "description": {
+          "string": "기본 색상의 HSL 값 (예: 180 25% 40%)"
+        }
+      },
+      "primary_foreground": {
+        "label": {
+          "string": "기본 전경색"
+        },
+        "description": {
+          "string": "기본 배경 위의 텍스트 색상"
+        }
+      },
+      "background": {
+        "label": {
+          "string": "배경"
+        },
+        "description": {
+          "string": "페이지 배경의 HSL 값"
+        }
+      },
+      "foreground": {
+        "label": {
+          "string": "전경색"
+        },
+        "description": {
+          "string": "기본 텍스트 색상"
+        }
+      },
+      "sidebar_background": {
+        "label": {
+          "string": "사이드바 배경"
+        },
+        "description": {
+          "string": "사이드바 배경의 HSL 값"
+        }
+      },
+      "sidebar_foreground": {
+        "label": {
+          "string": "사이드바 전경색"
+        },
+        "description": {
+          "string": "사이드바의 텍스트 색상"
+        }
+      },
+      "sidebar_primary": {
+        "label": {
+          "string": "사이드바 기본 색상"
+        },
+        "description": {
+          "string": "사이드바의 기본 강조 색상"
+        }
+      },
+      "sidebar_accent": {
+        "label": {
+          "string": "사이드바 강조색"
+        },
+        "description": {
+          "string": "사이드바의 강조 색상"
+        }
+      },
+      "header_background": {
+        "label": {
+          "string": "헤더 배경"
+        },
+        "description": {
+          "string": "상단 헤더 바의 HSL 값"
+        }
+      },
+      "header_foreground": {
+        "label": {
+          "string": "헤더 전경"
+        },
+        "description": {
+          "string": "헤더의 텍스트 색상"
+        }
+      },
+      "logo_url": {
+        "label": {
+          "string": "로고 URL"
+        },
+        "description": {
+          "string": "사용자 정의 로고 이미지 URL (선택 사항)"
+        }
+      },
+      "custom_css": {
+        "label": {
+          "string": "사용자 정의 CSS"
+        },
+        "description": {
+          "string": "주입할 추가 CSS 규칙 (선택 사항)"
+        }
+      }
+    },
+    "save": {
+      "string": "변경 사항 저장"
+    },
+    "saving": {
+      "string": "저장 중…"
+    },
+    "saved": {
+      "string": "테마 설정이 성공적으로 저장됨"
+    },
+    "save_error": {
+      "string": "저장 실패: {message}"
+    },
+    "unsaved_changes": {
+      "string": "저장되지 않은 변경 사항이 있습니다"
+    },
+    "load_error": {
+      "string": "테마 설정 로드 실패"
+    },
+    "retry": {
+      "string": "다시 시도"
+    }
+  }
+}

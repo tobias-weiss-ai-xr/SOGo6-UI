@@ -1,0 +1,54 @@
+{
+  "AI_ENRICH": {
+    "title": {
+      "string": "Automatisk berigelse af kontakter"
+    },
+    "description": {
+      "string": "Uddrag telefon, titel, virksomhed og beliggenhed fra e-mail-signaturer."
+    },
+    "input": {
+      "title": {
+        "string": "E-mail-signatur"
+      },
+      "signature": {
+        "string": "Signaturtekst"
+      },
+      "placeholder": {
+        "string": "Indsæt en e-mail-signatur her..."
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Uddraget information"
+      },
+      "empty": {
+        "string": "Indtast signaturtekst og klik på Uddrag"
+      }
+    },
+    "extract": {
+      "string": "Uddrag info"
+    },
+    "field": {
+      "phone": {
+        "string": "Telefon"
+      },
+      "title": {
+        "string": "Titel"
+      },
+      "company": {
+        "string": "Virksomhed"
+      },
+      "location": {
+        "string": "Beliggenhed"
+      }
+    },
+    "errors": {
+      "empty": {
+        "string": "Indtast tekst"
+      },
+      "fail": {
+        "string": "Uddrag mislykkedes"
+      }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "AI_SCHEDULE": {
+    "title": {
+      "string": "Lịch trình Thông minh"
+    },
+    "description": {
+      "string": "Thời gian họp được AI gợi ý dựa trên mẫu thời gian rảnh và sở thích của người tham dự."
+    },
+    "input": {
+      "title": {
+        "string": "Thiết lập Cuộc họp"
+      },
+      "attendees": {
+        "string": "Người tham dự"
+      },
+      "from": {
+        "string": "Từ ngày"
+      },
+      "to": {
+        "string": "Đến ngày"
+      },
+      "duration": {
+        "string": "Thời lượng (phút)"
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Thời gian Đề xuất"
+      }
+    },
+    "suggest": {
+      "string": "Đề xuất Thời gian"
+    },
+    "errors": {
+      "fields": {
+        "string": "Người tham dự, ngày bắt đầu và ngày kết thúc là bắt buộc"
+      },
+      "fail": {
+        "string": "Đề xuất thất bại"
+      }
+    }
+  }
+}

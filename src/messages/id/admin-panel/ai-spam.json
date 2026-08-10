@@ -1,0 +1,49 @@
+{
+  "AI_SPAM": {
+    "title": {
+      "string": "Filter Spam Cerdas"
+    },
+    "description": {
+      "string": "Pemberian skor spam secara real-time dengan analisis pola, reputasi pengirim, dan heuristik konten."
+    },
+    "input": {
+      "title": {
+        "string": "Email untuk Dinilai"
+      },
+      "subject": {
+        "string": "Subjek"
+      },
+      "sender": {
+        "string": "Pengirim"
+      },
+      "body": {
+        "string": "Isi"
+      },
+      "placeholder": {
+        "string": "Tempel isi email di sini..."
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Skor Spam"
+      },
+      "empty": {
+        "string": "Masukkan konten email dan klik Nilai"
+      },
+      "signals": {
+        "string": "Sinyal yang Terdeteksi"
+      }
+    },
+    "score": {
+      "string": "Nilai Email"
+    },
+    "errors": {
+      "empty": {
+        "string": "Masukkan subjek atau isi"
+      },
+      "fail": {
+        "string": "Pemberian skor gagal"
+      }
+    }
+  }
+}

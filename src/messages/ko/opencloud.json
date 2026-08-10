@@ -1,0 +1,18 @@
+{
+  "OPENCLOUD": {
+    "picker": {
+      "search": {
+        "string": "파일 검색..."
+      },
+      "empty": {
+        "string": "파일을 찾을 수 없습니다"
+      },
+      "attached": {
+        "string": "첨부됨: {name}"
+      },
+      "error": {
+        "string": "파일 선택 실패"
+      }
+    }
+  }
+}

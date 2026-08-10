@@ -1,0 +1,10 @@
+{
+  "PROTOCOLS": {
+    "title": {
+      "string": "Stav e-mailových protokolů"
+    },
+    "description": {
+      "string": "Stav a možnosti serverů protokolů JMAP a ActiveSync"
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "AI_ATTACH": {
+    "title": {
+      "string": "Akıllı Ek Eylemleri"
+    },
+    "description": {
+      "string": "Belge türünü otomatik olarak algılar ve kaydetme, iletme veya arşivleme eylemleri önerir."
+    },
+    "input": {
+      "title": {
+        "string": "Ek"
+      },
+      "filename": {
+        "string": "Dosya Adı"
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Analiz"
+      },
+      "empty": {
+        "string": "Bir dosya adı girin"
+      },
+      "preview": {
+        "string": "Önizleme Yapılabilir"
+      }
+    },
+    "classify": {
+      "string": "Sınıflandır"
+    },
+    "errors": {
+      "empty": {
+        "string": "Bir dosya adı girin"
+      },
+      "fail": {
+        "string": "Sınıflandırma başarısız"
+      }
+    }
+  }
+}

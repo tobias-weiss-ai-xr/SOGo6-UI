@@ -1,0 +1,18 @@
+{
+  "OPENCLOUD": {
+    "picker": {
+      "search": {
+        "string": "搜索文件..."
+      },
+      "empty": {
+        "string": "未找到文件"
+      },
+      "attached": {
+        "string": "已附加：{name}"
+      },
+      "error": {
+        "string": "文件选择失败"
+      }
+    }
+  }
+}

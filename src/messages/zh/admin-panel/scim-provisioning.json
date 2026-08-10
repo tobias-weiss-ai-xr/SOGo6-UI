@@ -1,0 +1,50 @@
+{
+  "SCIM": {
+    "title": {
+      "string": "SCIM 配置管理"
+    },
+    "description": {
+      "string": "面向 Azure AD、Okta 等身份提供商的 SCIM 2.0 身份生命周期管理"
+    },
+    "errors": {
+      "email": {
+        "string": "邮箱必填"
+      },
+      "fail": {
+        "string": "操作失败"
+      }
+    },
+    "success": {
+      "create": {
+        "string": "用户已配置"
+      },
+      "delete": {
+        "string": "用户已移除"
+      }
+    },
+    "field": {
+      "email": {
+        "string": "用户名/邮箱"
+      },
+      "name": {
+        "string": "显示名称"
+      },
+      "status": {
+        "string": "状态"
+      }
+    },
+    "button": {
+      "provision": {
+        "string": "配置用户"
+      }
+    },
+    "users": {
+      "title": {
+        "string": "已配置用户"
+      },
+      "empty": {
+        "string": "暂无 SCIM 用户"
+      }
+    }
+  }
+}

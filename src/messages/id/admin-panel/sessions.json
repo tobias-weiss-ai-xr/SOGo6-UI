@@ -1,0 +1,76 @@
+{
+  "AP_SESSIONS": {
+    "title": {
+      "string": "Sesi Aktif"
+    },
+    "description": {
+      "string": "Lihat dan kelola sesi pengguna aktif"
+    },
+    "table": {
+      "uid": {
+        "string": "Pengguna"
+      },
+      "domain": {
+        "string": "Domain"
+      },
+      "last_activity": {
+        "string": "Aktivitas Terakhir"
+      },
+      "actions": {
+        "string": "Aksi"
+      },
+      "no_sessions": {
+        "string": "Tidak ada sesi aktif yang ditemukan"
+      },
+      "loading": {
+        "string": "Memuat sesi..."
+      }
+    },
+    "revoke": {
+      "button": {
+        "string": "Cabut"
+      },
+      "confirm": {
+        "string": "Apakah Anda yakin ingin mencabut sesi ini?"
+      },
+      "confirm_multiple": {
+        "string": "Apakah Anda yakin ingin mencabut sesi yang dipilih?"
+      },
+      "revoke_selected": {
+        "string": "Cabut yang Dipilih"
+      },
+      "revoke_selected_one": {
+        "string": "Cabut yang Dipilih ({count})"
+      },
+      "success": {
+        "string": "Sesi berhasil dicabut"
+      },
+      "success_multiple": {
+        "string": "{count} sesi berhasil dicabut"
+      },
+      "error": {
+        "string": "Gagal mencabut sesi"
+      }
+    },
+    "revoke_inactive": {
+      "button": {
+        "string": "Cabut Tidak Aktif"
+      },
+      "confirm": {
+        "string": "Apakah Anda yakin ingin mencabut semua sesi tidak aktif?"
+      },
+      "days": {
+        "string": "Hari tidak aktif"
+      },
+      "days_placeholder": {
+        "string": "contoh: 30"
+      },
+      "success": {
+        "string": "Sesi tidak aktif berhasil dicabut"
+      }
+    },
+    "refresh": {
+      "string": "Muat Ulang"
+    }
+  }
+}

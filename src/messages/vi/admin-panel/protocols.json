@@ -1,0 +1,10 @@
+{
+  "PROTOCOLS": {
+    "title": {
+      "string": "Trạng thái Giao thức Email"
+    },
+    "description": {
+      "string": "Trạng thái và khả năng của máy chủ giao thức JMAP và ActiveSync"
+    }
+  }
+}

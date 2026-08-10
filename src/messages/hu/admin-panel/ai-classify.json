@@ -1,0 +1,46 @@
+{
+  "AI_CLASSIFY": {
+    "title": {
+      "string": "Okos e-mail osztályozás"
+    },
+    "description": {
+      "string": "Automatikus címkézés: hírcsatorna, számla, értesítés, közösségi, személyes."
+    },
+    "input": {
+      "title": {
+        "string": "Bemeneti e-mail"
+      },
+      "subject": {
+        "string": "Tárgy"
+      },
+      "sender": {
+        "string": "Feladó"
+      },
+      "body": {
+        "string": "Törzs"
+      },
+      "placeholder": {
+        "string": "Illessze be az e-mail tartalmát..."
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Osztályozási eredmények"
+      },
+      "empty": {
+        "string": "Adjon meg szöveget és kattintson az Osztályozás gombra"
+      }
+    },
+    "classify": {
+      "string": "Osztályozás"
+    },
+    "errors": {
+      "empty": {
+        "string": "Adja meg az e-mail szövegét"
+      },
+      "fail": {
+        "string": "Az osztályozás sikertelen"
+      }
+    }
+  }
+}

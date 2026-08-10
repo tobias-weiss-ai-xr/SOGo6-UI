@@ -1,0 +1,135 @@
+{
+  "AP_THEME": {
+    "title": {
+      "string": "थीम सेटिंग्स"
+    },
+    "description": {
+      "string": "SOGo इंटरफेस की लुक और फील को अनुकूलित करें"
+    },
+    "form_title": {
+      "string": "कस्टम थीम"
+    },
+    "form_description": {
+      "string": "ग्रुपवेयर इंटरफेस के लिए रंग, लोगो और कस्टम CSS कॉन्फ़िगर करें"
+    },
+    "fields": {
+      "primary": {
+        "label": {
+          "string": "प्राथमिक रंग"
+        },
+        "description": {
+          "string": "प्राथमिक रंग के लिए HSL मान (जैसे 180 25% 40%)"
+        }
+      },
+      "primary_foreground": {
+        "label": {
+          "string": "प्राथमिक फोरग्राउंड"
+        },
+        "description": {
+          "string": "प्राथमिक पृष्ठभूमि पर टेक्स्ट रंग"
+        }
+      },
+      "background": {
+        "label": {
+          "string": "पृष्ठभूमि"
+        },
+        "description": {
+          "string": "पृष्ठ पृष्ठभूमि के लिए HSL मान"
+        }
+      },
+      "foreground": {
+        "label": {
+          "string": "फोरग्राउंड"
+        },
+        "description": {
+          "string": "डिफ़ॉल्ट टेक्स्ट रंग"
+        }
+      },
+      "sidebar_background": {
+        "label": {
+          "string": "साइडबार पृष्ठभूमि"
+        },
+        "description": {
+          "string": "साइडबार पृष्ठभूमि के लिए HSL मान"
+        }
+      },
+      "sidebar_foreground": {
+        "label": {
+          "string": "साइडबार फोरग्राउंड"
+        },
+        "description": {
+          "string": "साइडबार में टेक्स्ट रंग"
+        }
+      },
+      "sidebar_primary": {
+        "label": {
+          "string": "साइडबार प्राथमिक"
+        },
+        "description": {
+          "string": "साइडबार में प्राथमिक एक्सेंट रंग"
+        }
+      },
+      "sidebar_accent": {
+        "label": {
+          "string": "साइडबार एक्सेंट"
+        },
+        "description": {
+          "string": "साइडबार में एक्सेंट रंग"
+        }
+      },
+      "header_background": {
+        "label": {
+          "string": "हेडर बैकग्राउंड"
+        },
+        "description": {
+          "string": "टॉप हेडर बार के लिए HSL मान"
+        }
+      },
+      "header_foreground": {
+        "label": {
+          "string": "हेडर फोरग्राउंड"
+        },
+        "description": {
+          "string": "हेडर में टेक्स्ट का रंग"
+        }
+      },
+      "logo_url": {
+        "label": {
+          "string": "लोगो URL"
+        },
+        "description": {
+          "string": "कस्टम लोगो इमेज का URL (ऐच्छिक)"
+        }
+      },
+      "custom_css": {
+        "label": {
+          "string": "कस्टम CSS"
+        },
+        "description": {
+          "string": "इंजेक्ट करने के लिए अतिरिक्त CSS नियम (ऐच्छिक)"
+        }
+      }
+    },
+    "save": {
+      "string": "परिवर्तन सहेजें"
+    },
+    "saving": {
+      "string": "सहेज रहा है…"
+    },
+    "saved": {
+      "string": "थीम सेटिंग्स सफलतापूर्वक सहेजी गईं"
+    },
+    "save_error": {
+      "string": "सहेजने में विफल: {message}"
+    },
+    "unsaved_changes": {
+      "string": "आपके पास असहेजित परिवर्तन हैं"
+    },
+    "load_error": {
+      "string": "थीम सेटिंग्स लोड करने में विफल"
+    },
+    "retry": {
+      "string": "पुनः प्रयास करें"
+    }
+  }
+}

@@ -22,6 +22,13 @@ const schema = z.object({
     .regex(/^([01]\d|2[0-3]):([0-5]\d)$/)
     ,
   busyOffHours: z.boolean(),
+  nonWorkingWeekdays: z
+    .number()
+    .min(0)
+    .max(6)
+    .array()
+    ,
+  defaultLocation: z.string(),
   calendarDaysShowed: z
     .number()
     .min(0)

@@ -20,9 +20,9 @@ export function ThemesLoader() {
       styleTag.innerHTML =
         typeof theme === 'string'
           ? theme
-          : Array.isArray(theme?.cssRules)
-            ? Array.from(theme.cssRules)
-                .map((rule) => rule.cssText)
+          : theme && typeof theme === 'object' && 'cssRules' in theme && Array.isArray((theme as any).cssRules)
+            ? Array.from((theme as any).cssRules as CSSRule[])
+                .map((rule: CSSRule) => rule.cssText)
                 .join('\n')
             : ''
     }

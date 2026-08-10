@@ -1,0 +1,65 @@
+{
+  "MOBILE": {
+    "title": {
+      "string": "Mobilalkalmazás-kezelés"
+    },
+    "description": {
+      "string": "Regisztrált eszközök, push értesítések és alkalmazásbeállítások kezelése"
+    },
+    "errors": {
+      "fail": {
+        "string": "A művelet sikertelen"
+      }
+    },
+    "success": {
+      "unregister": {
+        "string": "Eszköz törölve"
+      },
+      "broadcast": {
+        "string": "Push értesítés elküldve"
+      }
+    },
+    "config": {
+      "title": {
+        "string": "Alkalmazás beállításai"
+      },
+      "push": {
+        "string": "Push értesítések"
+      },
+      "biometric": {
+        "string": "Biometrikus hitelesítés"
+      }
+    },
+    "push": {
+      "title": {
+        "placeholder": {
+          "string": "Értesítés címe"
+        }
+      },
+      "message": {
+        "placeholder": {
+          "string": "Üzenet..."
+        }
+      },
+      "broadcast": {
+        "string": "Küldés"
+      }
+    },
+    "stats": {
+      "title": {
+        "string": "Statisztikák"
+      },
+      "devices": {
+        "string": "Regisztrált eszközök"
+      }
+    },
+    "devices": {
+      "title": {
+        "string": "Összes eszköz"
+      },
+      "empty": {
+        "string": "Még nincsenek regisztrált eszközök"
+      }
+    }
+  }
+}

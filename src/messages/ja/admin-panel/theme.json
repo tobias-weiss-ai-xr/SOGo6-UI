@@ -1,0 +1,135 @@
+{
+  "AP_THEME": {
+    "title": {
+      "string": "テーマ設定"
+    },
+    "description": {
+      "string": "SOGoインターフェースの見た目と操作感をカスタマイズ"
+    },
+    "form_title": {
+      "string": "カスタムテーマ"
+    },
+    "form_description": {
+      "string": "グループウェアインターフェースの色、ロゴ、カスタムCSSを設定"
+    },
+    "fields": {
+      "primary": {
+        "label": {
+          "string": "プライマリカラー"
+        },
+        "description": {
+          "string": "プライマリカラーのHSL値（例: 180 25% 40%）"
+        }
+      },
+      "primary_foreground": {
+        "label": {
+          "string": "プライマリ前景色"
+        },
+        "description": {
+          "string": "プライマリ背景上のテキスト色"
+        }
+      },
+      "background": {
+        "label": {
+          "string": "背景"
+        },
+        "description": {
+          "string": "ページ背景のHSL値"
+        }
+      },
+      "foreground": {
+        "label": {
+          "string": "前景色"
+        },
+        "description": {
+          "string": "デフォルトのテキスト色"
+        }
+      },
+      "sidebar_background": {
+        "label": {
+          "string": "サイドバー背景"
+        },
+        "description": {
+          "string": "サイドバー背景のHSL値"
+        }
+      },
+      "sidebar_foreground": {
+        "label": {
+          "string": "サイドバー前景色"
+        },
+        "description": {
+          "string": "サイドバー内のテキスト色"
+        }
+      },
+      "sidebar_primary": {
+        "label": {
+          "string": "サイドバープライマリ"
+        },
+        "description": {
+          "string": "サイドバー内のプライマリアクセント色"
+        }
+      },
+      "sidebar_accent": {
+        "label": {
+          "string": "サイドバーサイドアクセント"
+        },
+        "description": {
+          "string": "サイドバー内のアクセント色"
+        }
+      },
+      "header_background": {
+        "label": {
+          "string": "ヘッダー背景"
+        },
+        "description": {
+          "string": "上部ヘッダーバーのHSL値"
+        }
+      },
+      "header_foreground": {
+        "label": {
+          "string": "ヘッダー前景"
+        },
+        "description": {
+          "string": "ヘッダー内のテキスト色"
+        }
+      },
+      "logo_url": {
+        "label": {
+          "string": "ロゴURL"
+        },
+        "description": {
+          "string": "カスタムロゴ画像のURL（オプション）"
+        }
+      },
+      "custom_css": {
+        "label": {
+          "string": "カスタムCSS"
+        },
+        "description": {
+          "string": "追加で挿入するCSSルール（オプション）"
+        }
+      }
+    },
+    "save": {
+      "string": "変更を保存"
+    },
+    "saving": {
+      "string": "保存中…"
+    },
+    "saved": {
+      "string": "テーマ設定を保存しました"
+    },
+    "save_error": {
+      "string": "保存に失敗しました: {message}"
+    },
+    "unsaved_changes": {
+      "string": "未保存の変更があります"
+    },
+    "load_error": {
+      "string": "テーマ設定の読み込みに失敗しました"
+    },
+    "retry": {
+      "string": "再試行"
+    }
+  }
+}

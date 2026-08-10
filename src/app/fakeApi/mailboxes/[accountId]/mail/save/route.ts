@@ -11,10 +11,13 @@ export async function POST(
   const body = await req.json()
   const close = new URL(req.url).searchParams.get('close') === 'true'
 
-  console.log(
-    `[fakeApi] POST /mailboxes/${accountId}/mail/save${close ? '?close=true' : ''}`,
-    body
-  )
+  // Development logging for fake API
+  if (process.env.NODE_ENV === 'development') {
+    console.log(
+      `[fakeApi] POST /mailboxes/${accountId}/mail/save${close ? '?close=true' : ''}`,
+      body
+    )
+  }
 
   // Generate a mock key for the new draft
   const mockKey = `${Date.now()}${Math.random().toString(36).substr(2, 9)}`

@@ -1,0 +1,171 @@
+{
+  "US_MAIL_GENERAL": {
+    "title": {
+      "string": "การตั้งค่าทั่วไปของอีเมล",
+      "context": "Title for the mail general settings page"
+    },
+    "compose_message_in": {
+      "string": "เขียนข้อความใน",
+      "context": "Dropdown label in what way to compose messages"
+    },
+    "display_subscribed_mailboxes_only": {
+      "string": "แสดงเฉพาะกล่องจดหมายที่สมัครไว้",
+      "context": "Checkbox to show subscribed mailboxes only"
+    },
+    "fetch_count_of_unseen_messages": {
+      "string": "ดึงจำนวนข้อความที่ยังไม่ได้อ่านสำหรับทุกกล่องจดหมาย",
+      "context": "Checkbox to fetch count of unseen messages for all mailboxes"
+    },
+    "sort_messages_by_threads": {
+      "string": "เรียงข้อความตามหัวข้อสนทนา",
+      "context": "Checkbox to sort messages by threads"
+    },
+    "show_recipients_or_sender_full_email": {
+      "string": "แสดงอีเมลเต็มของผู้รับหรือผู้ส่งในกล่องจดหมาย",
+      "context": "Checkbox to show recipients or sender full email in mailboxes"
+    },
+    "hide_attachments_for_inline_images": {
+      "string": "ไม่แสดงรูปภาพที่แทรกในข้อความเป็นไฟล์แนบในตัวดูอีเมล",
+      "context": "Checkbox to hide attachments for inline images"
+    },
+    "automatically_mark_messages_as_read": {
+      "string": "ทำเครื่องหมายข้อความว่าได้อ่านแล้วหลังจาก (กำหนด) วินาที",
+      "context": "Checkbox to automatically mark messages as read"
+    },
+    "collect_unknown_addresses": {
+      "string": "บันทึกที่อยู่อีเมลที่ไม่รู้จักลงในสมุดที่อยู่",
+      "context": "Checkbox to collect unknown mail addresses"
+    },
+    "collect_unknown_addressbook_name": {
+      "string": "ชื่อสมุดที่อยู่",
+      "context": "Input for the unknown email addressbook name"
+    },
+    "forward_messages": {
+      "title": {
+        "string": "ส่งต่อข้อความ",
+        "context": "Dropdown label for forward messages"
+      },
+      "as_attachment": {
+        "string": "เป็นไฟล์แนบ",
+        "context": "Checkbox to forward messages as attachment"
+      },
+      "as_inline": {
+        "string": "แทรกในข้อความ",
+        "context": "Checkbox to forward messages as inline"
+      }
+    },
+    "start_reply": {
+      "title": {
+        "string": "เมื่อตอบกลับข้อความ",
+        "context": "Dropdown label to know where to start in the mail when replying"
+      },
+      "to_above": {
+        "string": "เริ่มตอบข้างบนข้อความที่อ้างอิง",
+        "context": "Checkbox to start replying at the bottom"
+      },
+      "to_below": {
+        "string": "เริ่มตอบข้างล่างข้อความที่อ้างอิง",
+        "context": "Checkbox to start replying at the top"
+      }
+    },
+    "place_signature": {
+      "title": {
+        "string": "และวางลายเซ็น",
+        "context": "Dropdown label to know where to place the signature"
+      },
+      "above": {
+        "string": "ข้างบนข้อความที่อ้างอิง",
+        "context": "Checkbox to start replying at the bottom"
+      },
+      "below": {
+        "string": "ข้างล่างข้อความที่อ้างอิง",
+        "context": "Checkbox to start replying at the top"
+      }
+    },
+    "attachment_position": {
+      "title": {
+        "string": "วางไฟล์แนบ",
+        "context": "Dropdown label to know where to place the attachment"
+      },
+      "above": {
+        "string": "เหนืออีเมล"
+      },
+      "below": {
+        "string": "ใต้อีเมล"
+      }
+    },
+    "sign_on": {
+      "new": {
+        "string": "แทรกลายเซ็นในข้อความใหม่"
+      },
+      "reply": {
+        "string": "แทรกลายเซ็นในข้อความตอบกลับ"
+      },
+      "forward": {
+        "string": "แทรกลายเซ็นในข้อความส่งต่อ"
+      }
+    },
+    "default_font_size": {
+      "title": {
+        "string": "ขนาดฟอนต์เริ่มต้น",
+        "context": "Dropdown label to know the default font size"
+      },
+      "sm": {
+        "string": "เล็ก",
+        "context": "Small font size"
+      },
+      "md": {
+        "string": "กลาง",
+        "context": "Medium font size"
+      },
+      "lg": {
+        "string": "ใหญ่",
+        "context": "Large font size"
+      },
+      "xl": {
+        "string": "ใหญ่พิเศษ",
+        "context": "Extra large font size"
+      }
+    },
+    "display_remote_images": {
+      "string": "แสดงรูปภาพออนไลน์",
+      "context": "Checkbox to set display remote inline images to true or false"
+    },
+    "compose": {
+      "title": {
+        "string": "พฤติกรรมเริ่มต้นของการเขียนอีเมล",
+        "context": "Dropdown label to know where to open compose in"
+      },
+      "always_ask": {
+        "string": "ถามเสมอว่าจะเปิดหน้าต่างเขียนอีเมลใหม่หรือภายในเว็บเมล",
+        "context": "Dropdown label to know where to open compose in"
+      },
+      "in_new_window": {
+        "string": "เปิดหน้าต่างเขียนอีเมลใหม่",
+        "context": "Dropdown label to know where to open compose in"
+      },
+      "inside_webmail": {
+        "string": "เปิดหน้าต่างเขียนอีเมลภายในเว็บเมล",
+        "context": "Dropdown label to know where to open compose in"
+      }
+    },
+    "mail_allow_receipt": {
+      "string": "อนุญาตให้อีเมลขอใบรับ",
+      "context": "Checkbox to allow mail to ask for receipts"
+    },
+    "mail_folder_subscribe": {
+      "string": "แสดงเพียงกล่องจดหมายที่สมัครใช้งาน",
+      "context": "Checkbox to show subscribed mailboxes only"
+    },
+    "compose_mail_window": {
+      "string": "หน้าต่างเขียนอีเมล",
+      "context": "Dropdown label to know where to open compose in",
+      "popup": {
+        "string": "Compose email in a popup"
+      },
+      "inline": {
+        "string": "Compose email inside the webmail"
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "MAIL_SNOOZE": {
+    "title": {
+      "string": "Uitstellen"
+    },
+    "description": {
+      "string": "Kies wanneer deze e-mail opnieuw in je inbox moet verschijnen."
+    },
+    "presets": {
+      "later_today": {
+        "string": "Later vandaag"
+      },
+      "tomorrow": {
+        "string": "Morgen"
+      },
+      "this_weekend": {
+        "string": "Dit weekend"
+      },
+      "next_week": {
+        "string": "Volgende week"
+      }
+    },
+    "pick_date": {
+      "string": "Kies een datum en tijd"
+    },
+    "pick_date_placeholder": {
+      "string": "Selecteer datum..."
+    },
+    "snooze_button": {
+      "string": "Uitstellen"
+    },
+    "success": {
+      "string": "E-mail uitgesteld"
+    },
+    "error": {
+      "string": "E-mail uitstellen mislukt"
+    }
+  }
+}

@@ -1,0 +1,133 @@
+{
+  "US_MAIL_VACATIONS": {
+    "title": {
+      "string": "Setări pentru absență",
+      "context": "Title for the vacation settings page"
+    },
+    "page": {
+      "description": {
+        "string": "Configurați mesajul automat de răspuns pentru absență și perioada în care acesta trebuie să fie activ."
+      }
+    },
+    "errors_api": {
+      "load_failed": {
+        "string": "Nu s-au putut încărca setările pentru absență. Încercați din nou mai târziu."
+      },
+      "feature_disabled": {
+        "string": "Răspunsul automat pentru absență a fost dezactivat de administratorul dvs."
+      }
+    },
+    "errors": {
+      "validation": {
+        "message_required": {
+          "string": "Mesajul de răspuns automat este obligatoriu când absența este activată."
+        },
+        "dates_required": {
+          "string": "Data de început și data de sfârșit sunt obligatorii când restricțiile de dată sunt activate."
+        },
+        "date_order": {
+          "string": "Data de sfârșit trebuie să fie egală sau ulterioară datei de început."
+        },
+        "time_invalid": {
+          "string": "Introduceți o oră validă în formatul HH:MM."
+        },
+        "weekday_required": {
+          "string": "Selectați cel puțin o zi a săptămânii când restricțiile pentru zilele săptămânii sunt activate."
+        },
+        "response_interval_invalid": {
+          "string": "Intervalul de răspuns trebuie să fie zero sau un număr pozitiv."
+        },
+        "response_interval_zero": {
+          "string": "Un interval de răspuns de zero zile nu este permis pe acest domeniu."
+        }
+      }
+    },
+    "auto_reply": {
+      "enable": {
+        "string": "Activează răspunsul automat pentru absență"
+      },
+      "subject": {
+        "label": {
+          "string": "Subiectul răspunsului automat"
+        },
+        "description": {
+          "string": "Lăsați necompletat pentru a folosi subiectul implicit. Puteți scrie {subject} pentru a insera subiectul original."
+        }
+      },
+      "message": {
+        "string": "Mesajul de răspuns automat"
+      },
+      "constraints": {
+        "title": {
+          "string": "Restricții de activare"
+        },
+        "description": {
+          "string": "Personalizați intervalele de zile și ore independent și combinați-le opțional cu anumite zile ale săptămânii pentru a vă adapta filtrele de absență preferințelor dvs."
+        },
+        "enable": {
+          "days": {
+            "string": "Activează răspunsul automat în aceste zile"
+          },
+          "hours": {
+            "string": "Activează răspunsul automat între aceste ore"
+          },
+          "range": {
+            "string": "Activează răspunsul automat între aceste zile"
+          }
+        },
+        "time": {
+          "start": {
+            "string": "Ora de începere"
+          },
+          "end": {
+            "string": "Ora de încheiere"
+          }
+        },
+        "weekdays": {
+          "monday": {
+            "string": "Luni"
+          },
+          "tuesday": {
+            "string": "Marți"
+          },
+          "wednesday": {
+            "string": "Miercuri"
+          },
+          "thursday": {
+            "string": "Joi"
+          },
+          "friday": {
+            "string": "Vineri"
+          },
+          "saturday": {
+            "string": "Sâmbătă"
+          },
+          "sunday": {
+            "string": "Duminică"
+          }
+        }
+      },
+      "response": {
+        "interval_days": {
+          "label": {
+            "string": "Număr minim de zile între răspunsurile automate"
+          },
+          "placeholder": {
+            "string": "Lăsați gol pentru comportamentul implicit"
+          },
+          "description": {
+            "string": "Previne trimiterea de răspunsuri duplicate de vacanță în această perioadă (RFC 5230 :zile)."
+          }
+        },
+        "send_always": {
+          "label": {
+            "string": "Trimite întotdeauna răspunsul mesajului de vacanță"
+          },
+          "description": {
+            "string": "Mesajul de vacanță este trimis înainte de aplicarea filtrelor tale."
+          }
+        }
+      }
+    }
+  }
+}

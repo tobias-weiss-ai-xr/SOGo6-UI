@@ -1,0 +1,458 @@
+{
+  "AP_SHARED_MAILBOXES": {
+    "title": {
+      "string": "Shared Mailboxes",
+      "context": "Page title for shared mailboxes administration"
+    },
+    "description": {
+      "string": "Manage team/shared mailboxes (e.g., support@, info@)",
+      "context": "Page description"
+    },
+    "createMailbox": {
+      "string": "Create Shared Mailbox",
+      "context": "Button to create a new shared mailbox"
+    },
+    "createSuccess": {
+      "string": "Shared mailbox created successfully",
+      "context": "Success message after creating a shared mailbox"
+    },
+    "createDescription": {
+      "string": "Create a new shared mailbox for your team.",
+      "context": "Description for create dialog"
+    },
+    "searchPlaceholder": {
+      "string": "Search shared mailboxes...",
+      "context": "Placeholder for search input"
+    },
+    "noMailboxes": {
+      "string": "No shared mailboxes yet",
+      "context": "Message when no shared mailboxes exist"
+    },
+    "name": {
+      "string": "Name",
+      "context": "Label for mailbox name"
+    },
+    "email": {
+      "string": "Email",
+      "context": "Label for mailbox email"
+    },
+    "members": {
+      "string": "Members",
+      "context": "Label for member count"
+    },
+    "status": {
+      "string": "Status",
+      "context": "Label for mailbox status"
+    },
+    "active": {
+      "string": "Active",
+      "context": "Status badge for active mailbox"
+    },
+    "inactive": {
+      "string": "Inactive",
+      "context": "Status badge for inactive mailbox"
+    },
+    "createdAt": {
+      "string": "Created",
+      "context": "Label for creation date"
+    },
+    "actions": {
+      "string": "Actions",
+      "context": "Label for actions column"
+    },
+    "edit": {
+      "string": "Edit",
+      "context": "Menu item to edit a mailbox"
+    },
+    "manageMembers": {
+      "string": "Manage Members",
+      "context": "Menu item to manage mailbox members"
+    },
+    "viewDetails": {
+      "string": "Details",
+      "context": "Menu item to view mailbox details (analytics, notes, assignments)"
+    },
+    "delete": {
+      "string": "Delete",
+      "context": "Menu item to delete a mailbox"
+    },
+    "editMailbox": {
+      "string": "Edit Shared Mailbox",
+      "context": "Title for edit dialog"
+    },
+    "editDescription": {
+      "string": "Update the settings for \"{name}\".",
+      "context": "Description for edit dialog"
+    },
+    "editSuccess": {
+      "string": "Shared mailbox updated successfully",
+      "context": "Success message after updating a shared mailbox"
+    },
+    "deleteMailbox": {
+      "string": "Delete Shared Mailbox",
+      "context": "Title for delete confirmation dialog"
+    },
+    "deleteConfirm": {
+      "string": "Are you sure you want to delete \"{name}\"?",
+      "context": "Confirmation message for deletion"
+    },
+    "deleteWarning": {
+      "string": "This action cannot be undone. All notes and assignments for this mailbox will be deleted as well.",
+      "context": "Warning message for deletion"
+    },
+    "deleteSuccess": {
+      "string": "Shared mailbox deleted successfully",
+      "context": "Success message after deleting a shared mailbox"
+    },
+    "descriptionPlaceholder": {
+      "string": "Enter a description for this shared mailbox",
+      "context": "Placeholder for description input"
+    },
+    "initialMembers": {
+      "string": "Initial Members",
+      "context": "Label for initial members selection"
+    },
+    "cancel": {
+      "string": "Cancel",
+      "context": "Button to cancel an action"
+    },
+    "create": {
+      "string": "Create",
+      "context": "Button to create a mailbox"
+    },
+    "creating": {
+      "string": "Creating...",
+      "context": "Button text when creating"
+    },
+    "update": {
+      "string": "Update",
+      "context": "Button to update a mailbox"
+    },
+    "updating": {
+      "string": "Updating...",
+      "context": "Button text when updating"
+    },
+    "deleting": {
+      "string": "Deleting...",
+      "context": "Button text when deleting"
+    },
+    "membersDescription": {
+      "string": "Add or remove members for \"{name}\".",
+      "context": "Description for members dialog"
+    },
+    "currentMembers": {
+      "string": "Current Members",
+      "context": "Label for current members section"
+    },
+    "noMembers": {
+      "string": "No members yet",
+      "context": "Message when no members exist"
+    },
+    "addMembers": {
+      "string": "Add Members",
+      "context": "Label for add members section"
+    },
+    "searchUsers": {
+      "string": "Search users...",
+      "context": "Placeholder for user search"
+    },
+    "close": {
+      "string": "Close",
+      "context": "Button to close dialog"
+    },
+    "memberAddSuccess": {
+      "string": "Added \"{name}\" to the shared mailbox",
+      "context": "Success message after adding a member"
+    },
+    "memberRemoveSuccess": {
+      "string": "Member removed successfully",
+      "context": "Success message after removing a member"
+    },
+    "role": {
+      "string": "Role",
+      "context": "Label for member role"
+    },
+    "roleAdmin": {
+      "string": "Admin",
+      "context": "Role name for admin"
+    },
+    "roleModerator": {
+      "string": "Moderator",
+      "context": "Role name for moderator"
+    },
+    "roleMember": {
+      "string": "Member",
+      "context": "Role name for member"
+    },
+    "roleUpdateSuccess": {
+      "string": "Member role updated",
+      "context": "Success message after updating member role"
+    },
+    "roleUpdateFailed": {
+      "string": "Failed to update member role",
+      "context": "Error message when role update fails"
+    },
+    "quota": {
+      "string": "Quota",
+      "context": "Section label for quota settings"
+    },
+    "quotaEnabled": {
+      "string": "Enable quota",
+      "context": "Label for quota enabled switch"
+    },
+    "quotaMaxSize": {
+      "string": "Max size (MB)",
+      "context": "Label for max size input"
+    },
+    "quotaMaxEmails": {
+      "string": "Max emails",
+      "context": "Label for max emails input"
+    },
+    "autoRespond": {
+      "string": "Auto-Responder",
+      "context": "Section label for auto-responder settings"
+    },
+    "autoRespondEnabled": {
+      "string": "Enable auto-responder",
+      "context": "Label for auto-responder enabled switch"
+    },
+    "autoRespondSubject": {
+      "string": "Subject",
+      "context": "Label for auto-responder subject"
+    },
+    "autoRespondMessage": {
+      "string": "Message",
+      "context": "Label for auto-responder message"
+    },
+    "forwarding": {
+      "string": "Forwarding",
+      "context": "Section label for forwarding settings"
+    },
+    "forwardTo": {
+      "string": "Forward to (comma separated)",
+      "context": "Label for forward to input"
+    },
+    "forwardKeepCopy": {
+      "string": "Keep copy in shared mailbox",
+      "context": "Label for keep copy switch"
+    },
+    "signature": {
+      "string": "Signature",
+      "context": "Section label for signature settings"
+    },
+    "signatureEnabled": {
+      "string": "Enable signature",
+      "context": "Label for signature enabled switch"
+    },
+    "signatureHtml": {
+      "string": "HTML signature",
+      "context": "Label for HTML signature textarea"
+    },
+    "signaturePlain": {
+      "string": "Plain text signature",
+      "context": "Label for plain text signature textarea"
+    },
+    "tabAnalytics": {
+      "string": "Analytics",
+      "context": "Tab label for analytics"
+    },
+    "tabNotes": {
+      "string": "Notes",
+      "context": "Tab label for notes"
+    },
+    "tabAssignments": {
+      "string": "Assignments",
+      "context": "Tab label for assignments"
+    },
+    "tabMembers": {
+      "string": "Members",
+      "context": "Tab label for members"
+    },
+    "detailsDescription": {
+      "string": "Details for \"{name}\"",
+      "context": "Description for details dialog"
+    },
+    "analyticsNotes": {
+      "string": "Notes",
+      "context": "Analytics stat label"
+    },
+    "analyticsPublicNotes": {
+      "string": "Public",
+      "context": "Analytics stat label"
+    },
+    "analyticsPrivateNotes": {
+      "string": "Private",
+      "context": "Analytics stat label"
+    },
+    "analyticsAssignments": {
+      "string": "Assignments",
+      "context": "Analytics stat label"
+    },
+    "analyticsPending": {
+      "string": "Pending",
+      "context": "Analytics stat label"
+    },
+    "analyticsAccepted": {
+      "string": "Accepted",
+      "context": "Analytics stat label"
+    },
+    "analyticsCompleted": {
+      "string": "Completed",
+      "context": "Analytics stat label"
+    },
+    "analyticsCancelled": {
+      "string": "Cancelled",
+      "context": "Analytics stat label"
+    },
+    "analyticsCompletionRate": {
+      "string": "Completion rate",
+      "context": "Analytics stat label"
+    },
+    "analyticsLast7d": {
+      "string": "Last 7 days",
+      "context": "Analytics stat label"
+    },
+    "analyticsLast30d": {
+      "string": "Last 30 days",
+      "context": "Analytics stat label"
+    },
+    "noNotes": {
+      "string": "No notes yet",
+      "context": "Message when no notes exist"
+    },
+    "addNote": {
+      "string": "Add Note",
+      "context": "Button to add a note"
+    },
+    "noteContent": {
+      "string": "Note content",
+      "context": "Label for note content input"
+    },
+    "notePlaceholder": {
+      "string": "Write an internal note...",
+      "context": "Placeholder for note content"
+    },
+    "notePrivate": {
+      "string": "Private (only visible to author)",
+      "context": "Label for private note switch"
+    },
+    "noteAdded": {
+      "string": "Note added",
+      "context": "Success message after adding a note"
+    },
+    "noteDeleteSuccess": {
+      "string": "Note deleted",
+      "context": "Success message after deleting a note"
+    },
+    "noteDeleteFailed": {
+      "string": "Failed to delete note",
+      "context": "Error message when note deletion fails"
+    },
+    "noAssignments": {
+      "string": "No assignments yet",
+      "context": "Message when no assignments exist"
+    },
+    "addAssignment": {
+      "string": "Add Assignment",
+      "context": "Button to add an assignment"
+    },
+    "assignmentEmail": {
+      "string": "Email ID",
+      "context": "Label for assignment email id"
+    },
+    "assignmentEmailPlaceholder": {
+      "string": "Email ID or message ID",
+      "context": "Placeholder for assignment email id"
+    },
+    "assignmentReason": {
+      "string": "Reason",
+      "context": "Label for assignment reason"
+    },
+    "assignmentReasonPlaceholder": {
+      "string": "Why is this being assigned?",
+      "context": "Placeholder for assignment reason"
+    },
+    "assignedTo": {
+      "string": "Assigned to",
+      "context": "Label for assignee"
+    },
+    "assignedBy": {
+      "string": "Assigned by",
+      "context": "Label for assigner"
+    },
+    "assignmentStatus": {
+      "string": "Status",
+      "context": "Label for assignment status"
+    },
+    "statusPending": {
+      "string": "Pending",
+      "context": "Assignment status"
+    },
+    "statusAccepted": {
+      "string": "Accepted",
+      "context": "Assignment status"
+    },
+    "statusCompleted": {
+      "string": "Completed",
+      "context": "Assignment status"
+    },
+    "statusCancelled": {
+      "string": "Cancelled",
+      "context": "Assignment status"
+    },
+    "assignmentAdded": {
+      "string": "Assignment created",
+      "context": "Success message after creating an assignment"
+    },
+    "assignmentUpdateSuccess": {
+      "string": "Assignment updated",
+      "context": "Success message after updating an assignment"
+    },
+    "assignmentUpdateFailed": {
+      "string": "Failed to update assignment",
+      "context": "Error message when assignment update fails"
+    },
+    "assignmentDeleteSuccess": {
+      "string": "Assignment deleted",
+      "context": "Success message after deleting an assignment"
+    },
+    "assignmentDeleteFailed": {
+      "string": "Failed to delete assignment",
+      "context": "Error message when assignment deletion fails"
+    },
+    "error": {
+      "requiredFields": {
+        "string": "Please fill in all required fields",
+        "context": "Error message for missing required fields"
+      },
+      "createFailed": {
+        "string": "Failed to create shared mailbox",
+        "context": "Error message when create fails"
+      },
+      "updateFailed": {
+        "string": "Failed to update shared mailbox",
+        "context": "Error message when update fails"
+      },
+      "deleteFailed": {
+        "string": "Failed to delete shared mailbox",
+        "context": "Error message when delete fails"
+      },
+      "memberAddFailed": {
+        "string": "Failed to add member",
+        "context": "Error message when adding member fails"
+      },
+      "memberRemoveFailed": {
+        "string": "Failed to remove member",
+        "context": "Error message when removing member fails"
+      },
+      "noteAddFailed": {
+        "string": "Failed to add note",
+        "context": "Error message when adding note fails"
+      },
+      "assignmentCreateFailed": {
+        "string": "Failed to create assignment",
+        "context": "Error message when creating assignment fails"
+      }
+    }
+  }
+}

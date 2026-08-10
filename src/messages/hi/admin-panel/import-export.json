@@ -1,0 +1,34 @@
+{
+  "IMPORT": {
+    "title": {
+      "string": "PST / M365 आयात और निर्यात"
+    },
+    "description": {
+      "string": "PST फ़ाइलों या Microsoft 365 से मेलबॉक्स आयात करें, प्रगति ट्रैकिंग के साथ"
+    },
+    "errors": {
+      "fields": {
+        "string": "आवश्यक फ़ील्ड गायब हैं"
+      },
+      "fail": {
+        "string": "ऑपरेशन विफल"
+      }
+    },
+    "success": {
+      "analyze": {
+        "string": "PST का विश्लेषण किया गया"
+      },
+      "import": {
+        "string": "आयात शुरू हुआ"
+      }
+    },
+    "jobs": {
+      "title": {
+        "string": "आयात कार्य"
+      },
+      "empty": {
+        "string": "अभी तक कोई आयात कार्य नहीं"
+      }
+    }
+  }
+}

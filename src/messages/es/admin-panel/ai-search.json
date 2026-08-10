@@ -1,0 +1,40 @@
+{
+  "AI_SEARCH": {
+    "title": {
+      "string": "Búsqueda en lenguaje natural"
+    },
+    "description": {
+      "string": "Convierta consultas en lenguaje natural en filtros estructurados"
+    },
+    "input": {
+      "title": {
+        "string": "Consulta"
+      },
+      "placeholder": {
+        "string": "Correos de John sobre el proyecto del mes pasado"
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Filtros detectados"
+      },
+      "empty": {
+        "string": "Los filtros aparecerán aquí"
+      },
+      "detected": {
+        "string": "Detectado"
+      }
+    },
+    "search": {
+      "string": "Buscar"
+    },
+    "errors": {
+      "empty": {
+        "string": "Consulta requerida"
+      },
+      "fail": {
+        "string": "Búsqueda fallida"
+      }
+    }
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "AI_ENRICH": {
+    "title": {
+      "string": "Kontakt-Anreicherung"
+    },
+    "description": {
+      "string": "Kontaktdaten aus E-Mail-Signaturen extrahieren"
+    },
+    "input": {
+      "title": {
+        "string": "Eingabe"
+      },
+      "signature": {
+        "string": "Signaturtext"
+      },
+      "placeholder": {
+        "string": "E-Mail-Signatur hier einfügen..."
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Extrahierte Daten"
+      },
+      "empty": {
+        "string": "Daten werden hier angezeigt"
+      }
+    },
+    "field": {
+      "phone": {
+        "string": "Telefon"
+      },
+      "title": {
+        "string": "Position"
+      },
+      "company": {
+        "string": "Unternehmen"
+      },
+      "location": {
+        "string": "Standort"
+      }
+    },
+    "extract": {
+      "string": "Extrahieren"
+    },
+    "errors": {
+      "empty": {
+        "string": "Text erforderlich"
+      },
+      "fail": {
+        "string": "Extraktion fehlgeschlagen"
+      }
+    }
+  }
+}

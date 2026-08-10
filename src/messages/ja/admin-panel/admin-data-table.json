@@ -1,0 +1,19 @@
+{
+    "DATA_TABLE": {
+        "filter_placeholder": {
+            "string": "フィルター..."
+        },
+        "no_result": {
+            "string": "結果がありません。"
+        },
+        "previous": {
+            "string": "前へ"
+        },
+        "next": {
+            "string": "次へ"
+        },
+        "selected": {
+            "string": "{selected} of {total} row(s) selected."
+        }
+    }
+}

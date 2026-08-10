@@ -1,0 +1,108 @@
+{
+  "ADDRESS_BOOKS_ERRORS": {
+    "list_member_invalid": {
+      "string": "احد الاعضاء المختارة او اكثر ليسوا من جهات الاتصال في دفتر العناوين هذا.",
+      "context": "Inline error when a distribution list member is invalid."
+    },
+    "addressbook_not_found": {
+      "string": "تعذر العثور على دفتر العناوين.",
+      "context": "Error when an address book is missing."
+    },
+    "addressbook_duplicate": {
+      "string": "يوجد دفتر عناوين بنفس الاسم بالفعل.",
+      "context": "Toast when address book creation conflicts."
+    },
+    "contact_not_found": {
+      "string": "تعذر العثور على جهة الاتصال.",
+      "context": "Error when a contact is missing."
+    },
+    "contact_duplicate": {
+      "string": "يوجد جهة اتصال بنفس المعرف بالفعل.",
+      "context": "Toast when contact creation conflicts."
+    },
+    "contact_persist_failed": {
+      "string": "تعذر حفظ جهة الاتصال.",
+      "context": "Error when contact creation fails on the server."
+    },
+    "contact_update_failed": {
+      "string": "تعذر تحديث جهة الاتصال.",
+      "context": "Error when contact update fails on the server."
+    },
+    "operation_not_supported": {
+      "string": "هذه العملية غير مدعومة لدفتر العناوين هذا.",
+      "context": "Error when mutating a non-local address book source."
+    },
+    "list_not_found": {
+      "string": "تعذر العثور على قائمة التوزيع.",
+      "context": "Error when a distribution list is missing."
+    },
+    "list_duplicate": {
+      "string": "يوجد قائمة توزيع بنفس الاسم بالفعل.",
+      "context": "Toast when list creation conflicts."
+    },
+    "list_persist_failed": {
+      "string": "تعذر حفظ قائمة التوزيع.",
+      "context": "Error when list creation fails on the server."
+    },
+    "list_update_failed": {
+      "string": "تعذر تحديث قائمة التوزيع.",
+      "context": "Error when list update fails on the server."
+    },
+    "access_denied": {
+      "string": "ليس لديك إذن لتعديل دفتر العناوين هذا.",
+      "context": "Toast when write access is denied."
+    },
+    "read_only": {
+      "string": "دفتر العناوين هذا للقراءة فقط.",
+      "context": "Toast when mutating a read-only address book."
+    },
+    "export_format_unsupported": {
+      "string": "تنسيق التصدير المختار غير مدعوم.",
+      "context": "Error when export format negotiation fails."
+    },
+    "import_no_file": {
+      "string": "لم يتم توفير أي ملف للاستيراد.",
+      "context": "Error when import request has no file."
+    },
+    "import_too_large": {
+      "string": "يتجاوز ملف الاستيراد الحجم الأقصى المسموح به (10 ميجابايت).",
+      "context": "Error when import payload is too large."
+    },
+    "import_parse_failed": {
+      "string": "تعذر تحليل ملف الاستيراد.",
+      "context": "Error when import document parsing fails."
+    },
+    "job_not_found": {
+      "string": "تعذر العثور على المهمة الخلفية.",
+      "context": "Error when polling an unknown job."
+    },
+    "job_forbidden": {
+      "string": "ليس لديك حق الوصول إلى هذه المهمة الخلفية.",
+      "context": "Error when job belongs to another user."
+    },
+    "job_not_ready": {
+      "string": "لم يكتمل التصدير بعد. يرجى الانتظار ومحاولة مرة أخرى.",
+      "context": "Error when downloading a job result too early."
+    },
+    "job_no_result": {
+      "string": "لا يوجد نتيجة قابلة للتنزيل لهذه المهمة.",
+      "context": "Error when job result is unavailable."
+    },
+    "job_concurrent_limit": {
+      "string": "هناك العديد من المهام الخلفية قيد التنفيذ. يرجى المحاولة مرة أخرى لاحقًا.",
+      "context": "Error when concurrent job limit is reached."
+    },
+    "file_too_large": {
+      "string": "تجاوزت الصورة الحد الأقصى للحجم المسموح به (2 ميجابايت).",
+      "context": "Inline error when contact photo upload is too large."
+    },
+    "file_type_not_allowed": {
+      "string": "نوع الملف هذا غير مسموح به لصور جهات الاتصال.",
+      "context": "Inline error when contact photo type is not allowed."
+    },
+    "generic": {
+      "string": "تعذر إكمال العملية. يرجى المحاولة مرة أخرى.",
+      "context": "Fallback error message for contact API errors."
+    }
+  }
+}

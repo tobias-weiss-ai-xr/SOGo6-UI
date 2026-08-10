@@ -1,0 +1,65 @@
+{
+  "MOBILE": {
+    "title": {
+      "string": "Quản lý Ứng dụng Di động"
+    },
+    "description": {
+      "string": "Quản lý thiết bị đã đăng ký, thông báo đẩy và cấu hình ứng dụng"
+    },
+    "errors": {
+      "fail": {
+        "string": "Thao tác thất bại"
+      }
+    },
+    "success": {
+      "unregister": {
+        "string": "Thiết bị đã hủy đăng ký"
+      },
+      "broadcast": {
+        "string": "Thông báo đẩy đã được gửi"
+      }
+    },
+    "config": {
+      "title": {
+        "string": "Cài đặt Ứng dụng"
+      },
+      "push": {
+        "string": "Thông báo Đẩy"
+      },
+      "biometric": {
+        "string": "Xác thực Sinh trắc học"
+      }
+    },
+    "push": {
+      "title": {
+        "placeholder": {
+          "string": "Tiêu đề thông báo"
+        }
+      },
+      "message": {
+        "placeholder": {
+          "string": "Tin nhắn..."
+        }
+      },
+      "broadcast": {
+        "string": "Gửi"
+      }
+    },
+    "stats": {
+      "title": {
+        "string": "Thống kê"
+      },
+      "devices": {
+        "string": "Thiết bị Đã Đăng ký"
+      }
+    },
+    "devices": {
+      "title": {
+        "string": "Tất cả Thiết bị"
+      },
+      "empty": {
+        "string": "Chưa có thiết bị nào được đăng ký"
+      }
+    }
+  }
+}

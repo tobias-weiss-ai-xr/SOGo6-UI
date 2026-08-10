@@ -23,7 +23,7 @@ import LinkAction from './actions/link'
 import EditForm from './forms/edit'
 import ImportDialog from './actions/import-dialog'
 import ExportDialog from './actions/export-dialog'
-import WorkInProgress from '@/components/work-in-progress'
+import ShareForm from './forms/share'
 
 interface SidebarItemProps {
   name: string
@@ -155,7 +155,7 @@ const SidebarItem: React.FC<SidebarItemProps> = ({
             {type === 'delete' && <DeleteAction id={id} name={name} />}
             {type === 'link' && <LinkAction id={id} name={name} />}
             {type === 'sharing' && (
-              <WorkInProgress title={t('options.sharing.string')} />
+              <ShareForm addressBookKey={id} />
             )}
             {type === 'import' && (
               <ImportDialog

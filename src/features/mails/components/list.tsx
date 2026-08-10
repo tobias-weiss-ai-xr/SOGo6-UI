@@ -3,6 +3,7 @@ import { TooltipProvider } from '@/components/ui/tooltip'
 import {
   clearSelectedMails,
   setSelectedMails,
+  setMailViewMode,
 } from '@/features/mails/store/mail-layout-slice'
 import { useIsMobile } from '@/hooks/use-mobile'
 import { useAppDispatch, useAppSelector } from '@/lib/redux/hooks'
@@ -10,12 +11,15 @@ import type { RootState } from '@/lib/redux/store'
 import { cn } from '@/lib/utils'
 import { useTranslations } from 'next-intl'
 import { useParams } from 'next/navigation'
-import React, { useCallback, useEffect } from 'react'
+import React, { useCallback, useEffect, useMemo } from 'react'
+import { useConversations } from '../hooks/use-conversations'
 import { useMailItemActions } from '../hooks/use-mail-item-actions'
 import type { ImapMessagesList } from '../mails-types'
 import { folderPathFromParams } from '../utils/folder-path-from-params'
+import ConversationItem from './conversation-item'
 import ListItem from './list-item'
 import ListItemClassic from './list-item-classic'
+import MailViewToggle from './list/mail-view-toggle'
 import AddressBookListSkeleton from './skeletons/skeleton'
 
 interface MessagesListProps {
@@ -95,6 +99,12 @@ const MessagesList: React.FC<MessagesListProps> = ({
   const selectedIds = useAppSelector(
     (state: RootState) => state.mailLayout.selectedMailIds
   )
+  const viewMode = useAppSelector(
+    (state: RootState) => state.mailLayout.viewMode
+  )
+
+  // Conversation grouping
+  const conversations = useConversations(items)
 
   // Reset selection when folder changes
   useEffect(() => {
@@ -110,6 +120,20 @@ const MessagesList: React.FC<MessagesListProps> = ({
     dispatch(setSelectedMails(next))
   }
 
+  const handleConversationSelect = useCallback(
+    (_threadId: string) => {
+      // Could expand the conversation by default
+    },
+    []
+  )
+
+  const handleMailSelect = useCallback(
+    (mail: ImapMessagesList) => {
+      // Navigate to mail detail — handled by parent
+    },
+    []
+  )
+
   if (isLoading) {
     return <AddressBookListSkeleton />
   }
@@ -117,14 +141,20 @@ const MessagesList: React.FC<MessagesListProps> = ({
   return (
     <TooltipProvider delayDuration={300}>
       <div className="flex min-h-0 w-full flex-1 flex-col overflow-hidden rounded">
+        {/* View mode toggle */}
         {!hideToolbar && (
-          <div className="text-foreground flex min-w-0 shrink-0 flex-row flex-wrap items-center justify-between gap-y-1">
+          <div className="flex min-w-0 shrink-0 flex-row flex-wrap items-center justify-between gap-y-1 px-2 py-1">
             <span className="text-muted-foreground hidden text-sm md:inline-block" />
+            <MailViewToggle
+              value={viewMode}
+              onChange={(mode) => dispatch(setMailViewMode(mode))}
+            />
           </div>
         )}
+
         <ul
           className={cn(
-            'min-h-0 flex-1 overflow-y-auto rounded transition-opacity',
+            'min-h-0 flex-1 overflow-y-auto transition-opacity',
             isMobile && 'pb-12',
             isFetching && 'opacity-60'
           )}
@@ -134,7 +164,21 @@ const MessagesList: React.FC<MessagesListProps> = ({
               {t('no_items.string')}
             </li>
           )}
-          {items.length > 0 &&
+
+          {/* Conversation view */}
+          {viewMode === 'conversation' && conversations.length > 0 &&
+            conversations.map((conv) => (
+              <li key={conv.id}>
+                <ConversationItem
+                  conversation={conv}
+                  onSelect={handleConversationSelect}
+                  onMailSelect={handleMailSelect}
+                />
+              </li>
+            ))}
+
+          {/* Flat list view */}
+          {viewMode === 'flat' && items.length > 0 &&
             items.map((item) => {
               const listItemComponent =
                 type === 'classic' ? (

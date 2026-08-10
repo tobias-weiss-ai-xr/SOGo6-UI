@@ -1,0 +1,44 @@
+{
+  "AP_AUDIT": {
+    "title": {
+      "string": "Protokol auditů"
+    },
+    "description": {
+      "string": "Nezfalšovatelný záznam akcí administrátorů a uživatelů. Zápisy lze pouze přidávat, nelze je upravovat ani mazat."
+    },
+    "table": {
+      "timestamp": {
+        "string": "Časové razítko"
+      },
+      "action": {
+        "string": "Akce"
+      },
+      "actor": {
+        "string": "Provedl"
+      },
+      "target": {
+        "string": "Cíl"
+      },
+      "detail": {
+        "string": "Podrobnosti"
+      },
+      "ip": {
+        "string": "IP adresa"
+      },
+      "no_entries": {
+        "string": "Nebyly nalezeny žádné záznamy v protokolu auditů."
+      }
+    },
+    "count_one": {
+      "string": "záznam"
+    },
+    "count_many": {
+      "string": "záznamy"
+    },
+    "errors": {
+      "load_failed": {
+        "string": "Nepodařilo se načíst protokol auditů"
+      }
+    }
+  }
+}

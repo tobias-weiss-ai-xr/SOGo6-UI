@@ -1,0 +1,35 @@
+{
+  "AP_DBMIG": {
+    "title": {
+      "string": "Databas migration"
+    },
+    "description": {
+      "string": "Spåra schema versioner och migrationshistorik. Kör migrationer från adminpanelen."
+    },
+    "current_version": {
+      "string": "Aktuell schema version"
+    },
+    "run": {
+      "button": {
+        "string": "Kör migration"
+      },
+      "running": {
+        "string": "Kör..."
+      },
+      "success": {
+        "string": "Migration tillämpad"
+      },
+      "error": {
+        "string": "Migration misslyckades"
+      }
+    },
+    "history": {
+      "title": {
+        "string": "Migrationshistorik"
+      },
+      "empty": {
+        "string": "Inga migrationer registrerade."
+      }
+    }
+  }
+}

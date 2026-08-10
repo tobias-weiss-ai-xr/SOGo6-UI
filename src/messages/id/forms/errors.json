@@ -1,0 +1,14 @@
+{
+  "FORM_ERRORS": {
+    "required": {
+      "default": {
+        "string": "Bidang ini wajib diisi"
+      }
+    },
+    "invalid": {
+      "email": {
+        "string": "Alamat email tidak valid"
+      }
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+    "AP_HELPDESK": {
+        "title": {
+            "string": "Helpdesk / Ticketando"
+        },
+        "description": {
+            "string": "Crear tickets automaticamente desde correos."
+        },
+        "form": {
+            "create": {
+                "string": "Nuevo ticket"
+            },
+            "cancel": {
+                "string": "Cancelar"
+            },
+            "title": {
+                "string": "Crear ticket"
+            },
+            "subject": {
+                "string": "Asunto"
+            },
+            "priority": {
+                "string": "Prioridad"
+            },
+            "description": {
+                "string": "Descripcion"
+            },
+            "requester": {
+                "string": "Correo del solicitante"
+            },
+            "assignee": {
+                "string": "Correo del asignado"
+            },
+            "sla": {
+                "string": "SLA (horas)"
+            },
+            "submit": {
+                "string": "Crear ticket"
+            }
+        },
+        "create": {
+            "success": {
+                "string": "Ticket creado"
+            },
+            "error": {
+                "string": "Error al crear"
+            }
+        },
+        "update": {
+            "success": {
+                "string": "Ticket actualizado"
+            },
+            "error": {
+                "string": "Error al actualizar"
+            }
+        },
+        "list": {
+            "empty": {
+                "string": "Sin tickets."
+            }
+        },
+        "errors": {
+            "fields": {
+                "string": "Asunto y descripcion requeridos"
+            }
+        }
+    }
+}

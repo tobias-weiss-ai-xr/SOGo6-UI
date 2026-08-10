@@ -1,0 +1,100 @@
+{
+    "DONOR": {
+        "title": {
+            "string": "Donor Communication Management"
+        },
+        "description": {
+            "string": "Track donors, manage GDPR consent, generate tax receipts, and run campaigns"
+        },
+        "errors": {
+            "fields": {
+                "string": "Required fields missando"
+            },
+            "fail": {
+                "string": "Operation failed"
+            }
+        },
+        "success": {
+            "create": {
+                "string": "Donor registered"
+            },
+            "donate": {
+                "string": "Donation recorded"
+            }
+        },
+        "register": {
+            "title": {
+                "string": "Register Donor"
+            }
+        },
+        "donate": {
+            "title": {
+                "string": "Record Donação"
+            },
+            "select": {
+                "string": "Select donor..."
+            },
+            "campaign": {
+                "string": "Campaign"
+            }
+        },
+        "field": {
+            "name": {
+                "string": "Nome"
+            },
+            "email": {
+                "string": "Email"
+            },
+            "type": {
+                "string": "Tipo"
+            },
+            "total": {
+                "string": "Total"
+            },
+            "donations": {
+                "string": "Donations"
+            },
+            "consent": {
+                "string": "GDPR"
+            }
+        },
+        "type": {
+            "individual": {
+                "string": "Individual"
+            },
+            "corporate": {
+                "string": "Corporate"
+            },
+            "foundation": {
+                "string": "Foundação"
+            }
+        },
+        "button": {
+            "register": {
+                "string": "Registor"
+            },
+            "donate": {
+                "string": "Record Donação"
+            }
+        },
+        "stats": {
+            "title": {
+                "string": "Statistics"
+            },
+            "total_donors": {
+                "string": "Total Donors"
+            },
+            "total_raised": {
+                "string": "Total Raised"
+            }
+        },
+        "list": {
+            "title": {
+                "string": "All Donors"
+            },
+            "empty": {
+                "string": "No donors registered yet"
+            }
+        }
+    }
+}

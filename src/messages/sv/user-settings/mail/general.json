@@ -1,0 +1,171 @@
+{
+  "US_MAIL_GENERAL": {
+    "title": {
+      "string": "Allmänna e-postinställningar",
+      "context": "Title for the mail general settings page"
+    },
+    "compose_message_in": {
+      "string": "Skriv meddelande i",
+      "context": "Dropdown label in what way to compose messages"
+    },
+    "display_subscribed_mailboxes_only": {
+      "string": "Visa endast prenumererade brevlådor",
+      "context": "Checkbox to show subscribed mailboxes only"
+    },
+    "fetch_count_of_unseen_messages": {
+      "string": "Hämta antal olästa meddelanden för alla brevlådor",
+      "context": "Checkbox to fetch count of unseen messages for all mailboxes"
+    },
+    "sort_messages_by_threads": {
+      "string": "Sortera meddelanden efter trådar",
+      "context": "Checkbox to sort messages by threads"
+    },
+    "show_recipients_or_sender_full_email": {
+      "string": "Visa fullständig e-postadress för mottagare eller avsändare i brevlådor",
+      "context": "Checkbox to show recipients or sender full email in mailboxes"
+    },
+    "hide_attachments_for_inline_images": {
+      "string": "Visa inte inbäddade bilder som bilagor i e-postvisaren",
+      "context": "Checkbox to hide attachments for inline images"
+    },
+    "automatically_mark_messages_as_read": {
+      "string": "Markera meddelanden som lästa efter (definierade) sekunder",
+      "context": "Checkbox to automatically mark messages as read"
+    },
+    "collect_unknown_addresses": {
+      "string": "Spara okända e-postadresser i en adressbok",
+      "context": "Checkbox to collect unknown mail addresses"
+    },
+    "collect_unknown_addressbook_name": {
+      "string": "Adressbokens namn",
+      "context": "Input for the unknown email addressbook name"
+    },
+    "forward_messages": {
+      "title": {
+        "string": "Vidarebefordra meddelanden",
+        "context": "Dropdown label for forward messages"
+      },
+      "as_attachment": {
+        "string": "Som bilaga",
+        "context": "Checkbox to forward messages as attachment"
+      },
+      "as_inline": {
+        "string": "Inbäddat",
+        "context": "Checkbox to forward messages as inline"
+      }
+    },
+    "start_reply": {
+      "title": {
+        "string": "När du svarar på ett meddelande",
+        "context": "Dropdown label to know where to start in the mail when replying"
+      },
+      "to_above": {
+        "string": "Börja mitt svar ovanför citatet",
+        "context": "Checkbox to start replying at the bottom"
+      },
+      "to_below": {
+        "string": "Börja mitt svar under citatet",
+        "context": "Checkbox to start replying at the top"
+      }
+    },
+    "place_signature": {
+      "title": {
+        "string": "och placera signaturen",
+        "context": "Dropdown label to know where to place the signature"
+      },
+      "above": {
+        "string": "ovanför citatet",
+        "context": "Checkbox to start replying at the bottom"
+      },
+      "below": {
+        "string": "under citatet",
+        "context": "Checkbox to start replying at the top"
+      }
+    },
+    "attachment_position": {
+      "title": {
+        "string": "Placera bilagan",
+        "context": "Dropdown label to know where to place the attachment"
+      },
+      "above": {
+        "string": "ovanför e-postmeddelandet"
+      },
+      "below": {
+        "string": "under e-postmeddelandet"
+      }
+    },
+    "sign_on": {
+      "new": {
+        "string": "Infoga signatur i nytt meddelande"
+      },
+      "reply": {
+        "string": "Infoga signatur i svarsmeddelande"
+      },
+      "forward": {
+        "string": "Infoga signatur i vidarebefordrat meddelande"
+      }
+    },
+    "default_font_size": {
+      "title": {
+        "string": "Standardteckenstorlek",
+        "context": "Dropdown label to know the default font size"
+      },
+      "sm": {
+        "string": "Liten",
+        "context": "Small font size"
+      },
+      "md": {
+        "string": "Medium",
+        "context": "Medium font size"
+      },
+      "lg": {
+        "string": "Stor",
+        "context": "Large font size"
+      },
+      "xl": {
+        "string": "Extra stor",
+        "context": "Extra large font size"
+      }
+    },
+    "display_remote_images": {
+      "string": "Visa externa inbäddade bilder",
+      "context": "Checkbox to set display remote inline images to true or false"
+    },
+    "compose": {
+      "title": {
+        "string": "Standardbeteende för nytt meddelande",
+        "context": "Dropdown label to know where to open compose in"
+      },
+      "always_ask": {
+        "string": "Fråga alltid om nytt fönster eller inuti webmail",
+        "context": "Dropdown label to know where to open compose in"
+      },
+      "in_new_window": {
+        "string": "Öppna nytt meddelande i nytt fönster",
+        "context": "Dropdown label to know where to open compose in"
+      },
+      "inside_webmail": {
+        "string": "Öppna nytt meddelande inuti webmail",
+        "context": "Dropdown label to know where to open compose in"
+      }
+    },
+    "mail_allow_receipt": {
+      "string": "Tillåt e-post att begära kvitton",
+      "context": "Checkbox to allow mail to ask for receipts"
+    },
+    "mail_folder_subscribe": {
+      "string": "Visa endast prenumererade brevlådor",
+      "context": "Checkbox to show subscribed mailboxes only"
+    },
+    "compose_mail_window": {
+      "string": "Fönster för nytt e-postmeddelande",
+      "context": "Dropdown label to know where to open compose in",
+      "popup": {
+        "string": "Compose email in a popup"
+      },
+      "inline": {
+        "string": "Compose email inside the webmail"
+      }
+    }
+  }
+}

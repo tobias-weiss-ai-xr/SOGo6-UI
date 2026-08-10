@@ -1,0 +1,54 @@
+{
+  "AI_ENRICH": {
+    "title": {
+      "string": "Tự động làm giàu thông tin liên hệ"
+    },
+    "description": {
+      "string": "Trích xuất số điện thoại, chức danh, công ty, địa điểm từ chữ ký email."
+    },
+    "input": {
+      "title": {
+        "string": "Chữ ký Email"
+      },
+      "signature": {
+        "string": "Nội dung Chữ ký"
+      },
+      "placeholder": {
+        "string": "Dán chữ ký email vào đây..."
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Thông tin được trích xuất"
+      },
+      "empty": {
+        "string": "Nhập nội dung chữ ký và nhấn Trích xuất"
+      }
+    },
+    "extract": {
+      "string": "Trích xuất"
+    },
+    "field": {
+      "phone": {
+        "string": "Số điện thoại"
+      },
+      "title": {
+        "string": "Chức danh"
+      },
+      "company": {
+        "string": "Công ty"
+      },
+      "location": {
+        "string": "Địa điểm"
+      }
+    },
+    "errors": {
+      "empty": {
+        "string": "Vui lòng nhập nội dung"
+      },
+      "fail": {
+        "string": "Trích xuất thất bại"
+      }
+    }
+  }
+}

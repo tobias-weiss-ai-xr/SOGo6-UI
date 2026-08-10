@@ -1,0 +1,39 @@
+{
+  "MAIL_SNOOZE": {
+    "title": {
+      "string": "Halasztás"
+    },
+    "description": {
+      "string": "Válassza ki, mikor jelenjen meg újra az e-mail a beérkezett levelek között."
+    },
+    "presets": {
+      "later_today": {
+        "string": "Ma később"
+      },
+      "tomorrow": {
+        "string": "Holnap"
+      },
+      "this_weekend": {
+        "string": "Ezen a hétvégén"
+      },
+      "next_week": {
+        "string": "Jövő héten"
+      }
+    },
+    "pick_date": {
+      "string": "Dátum és idő kiválasztása"
+    },
+    "pick_date_placeholder": {
+      "string": "Dátum kiválasztása..."
+    },
+    "snooze_button": {
+      "string": "Halasztás"
+    },
+    "success": {
+      "string": "E-mail halasztva"
+    },
+    "error": {
+      "string": "Az e-mail halasztása sikertelen"
+    }
+  }
+}

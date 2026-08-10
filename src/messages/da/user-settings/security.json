@@ -1,0 +1,75 @@
+{
+  "US_SECURITY": {
+    "title": {
+      "string": "Sikkerhed",
+      "context": "Title for the Security settings section in user settings"
+    },
+    "totp": {
+      "title": {
+        "string": "To-faktor-godkendelse (TOTP)",
+        "context": "Title for the Two-Factor Authentication settings"
+      },
+      "description": {
+        "string": "To-faktor-godkendelse tilføjer et ekstra sikkerhedslag til din konto. Når det er aktiveret, skal du indtaste en unik kode, der genereres af en godkendelsesapp på din telefon, hver gang du logger ind."
+      },
+      "verification_code": {
+        "title": {
+          "string": "Bekræftelseskode"
+        },
+        "description": {
+          "string": "Indtast den bekræftelseskode, der genereres af din godkendelsesapp."
+        }
+      }
+    },
+    "webauthn": {
+      "title": {
+        "string": "Adgangsnøgler (WebAuthn)",
+        "context": "Title for the WebAuthn settings section"
+      },
+      "description": {
+        "string": "Adgangsnøgler gør det muligt at logge ind uden adgangskode ved hjælp af din enheds biometriske sensor (fingeraftryk, Face ID) eller en fysisk sikkerhedsnøgle. Din adgangsnøgle gemmes sikkert på denne enhed.",
+        "context": "Description for the WebAuthn settings section"
+      },
+      "registered_credentials": {
+        "string": "Registrerede adgangsnøgler",
+        "context": "Label for the list of registered passkeys"
+      },
+      "registered_at": {
+        "string": "Registreret",
+        "context": "Label for the registration date of a passkey"
+      },
+      "no_credentials": {
+        "string": "Ingen adgangsnøgler registreret endnu.",
+        "context": "Message when no passkeys are registered"
+      },
+      "register": {
+        "string": "Registrer en ny adgangsnøgle",
+        "context": "Button to register a new passkey",
+        "title": {
+          "string": "Register a New Passkey",
+          "context": "Title for the passkey registration dialog"
+        },
+        "description": {
+          "string": "Your browser or device will guide you through setting up a passkey using biometrics, a PIN, or an external security key.",
+          "context": "Description for the passkey registration dialog"
+        },
+        "button": {
+          "string": "Register",
+          "context": "Button to start passkey registration"
+        },
+        "waiting": {
+          "string": "Waiting for device interaction — follow the prompts on your device.",
+          "context": "Status during passkey registration"
+        },
+        "success": {
+          "string": "Passkey registered successfully!",
+          "context": "Status when passkey registration succeeds"
+        }
+      },
+      "device_name": {
+        "string": "Enhedsnavn (valgfrit)",
+        "context": "Label for the device name input field"
+      }
+    }
+  }
+}

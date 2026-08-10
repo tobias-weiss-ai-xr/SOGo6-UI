@@ -1,0 +1,39 @@
+{
+  "MAIL_SNOOZE": {
+    "title": {
+      "string": "เลื่อนการแจ้งเตือน"
+    },
+    "description": {
+      "string": "เลือกเวลาที่อีเมลฉบับนี้จะปรากฏในกล่องจดหมายของคุณอีกครั้ง"
+    },
+    "presets": {
+      "later_today": {
+        "string": "ภายในวันนี้"
+      },
+      "tomorrow": {
+        "string": "พรุ่งนี้"
+      },
+      "this_weekend": {
+        "string": "วันหยุดสุดสัปดาห์นี้"
+      },
+      "next_week": {
+        "string": "สัปดาห์หน้า"
+      }
+    },
+    "pick_date": {
+      "string": "เลือกวันที่และเวลา"
+    },
+    "pick_date_placeholder": {
+      "string": "เลือกวันที่..."
+    },
+    "snooze_button": {
+      "string": "เลื่อนการแจ้งเตือน"
+    },
+    "success": {
+      "string": "เลื่อนการแจ้งเตือนอีเมลแล้ว"
+    },
+    "error": {
+      "string": "ไม่สามารถเลื่อนการแจ้งเตือนอีเมลได้"
+    }
+  }
+}

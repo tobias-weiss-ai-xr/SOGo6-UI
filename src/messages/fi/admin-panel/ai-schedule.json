@@ -1,0 +1,43 @@
+{
+  "AI_SCHEDULE": {
+    "title": {
+      "string": "Älykäs kalenterin aikataulutus"
+    },
+    "description": {
+      "string": "AI:n ehdottamat kokousajat osallistujien saatavuusmallien ja mieltymysten perusteella."
+    },
+    "input": {
+      "title": {
+        "string": "Kokouksen asetukset"
+      },
+      "attendees": {
+        "string": "Osallistujat"
+      },
+      "from": {
+        "string": "Alkaen"
+      },
+      "to": {
+        "string": "Päätös"
+      },
+      "duration": {
+        "string": "Kesto (min)"
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Ehdotetut ajat"
+      }
+    },
+    "suggest": {
+      "string": "Ehdota aikoja"
+    },
+    "errors": {
+      "fields": {
+        "string": "Osallistujat, alkupäivä ja loppupäivä ovat pakollisia"
+      },
+      "fail": {
+        "string": "Ehdotuksen luominen epäonnistui"
+      }
+    }
+  }
+}

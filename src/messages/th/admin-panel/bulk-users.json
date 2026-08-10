@@ -1,0 +1,61 @@
+{
+  "AP_BULK": {
+    "title": {
+      "string": "การจัดการผู้ใช้แบบกลุ่ม"
+    },
+    "description": {
+      "string": "นำเข้าและส่งออกผู้ใช้แบบกลุ่มโดยใช้ไฟล์ CSV"
+    },
+    "export": {
+      "title": {
+        "string": "ส่งออกผู้ใช้"
+      },
+      "description": {
+        "string": "ดาวน์โหลดข้อมูลผู้ใช้ทั้งหมดเป็นไฟล์ CSV"
+      },
+      "format": {
+        "string": "ไฟล์ CSV (.csv)"
+      },
+      "button": {
+        "string": "ส่งออกเป็น CSV"
+      },
+      "success": {
+        "string": "ดาวน์โหลดสำเร็จ"
+      },
+      "error": {
+        "string": "ส่งออกล้มเหลว"
+      }
+    },
+    "import": {
+      "title": {
+        "string": "นำเข้าผู้ใช้"
+      },
+      "description": {
+        "string": "อัปโหลดไฟล์ CSV ที่มีข้อมูลผู้ใช้เพื่อสร้างหรืออัปเดตบัญชี"
+      },
+      "dropzone": {
+        "string": "คลิกเพื่ออัปโหลดไฟล์ CSV"
+      },
+      "button": {
+        "string": "นำเข้าจาก CSV"
+      },
+      "remove": {
+        "string": "ลบไฟล์"
+      },
+      "success": {
+        "string": "นำเข้าสำเร็จ: สร้าง {created} รายการ, อัปเดต {updated} รายการ"
+      },
+      "error": {
+        "string": "นำเข้าล้มเหลว"
+      }
+    },
+    "format": {
+      "title": {
+        "string": "รูปแบบ CSV"
+      },
+      "hint": {
+        "string": "แถวแรกต้องเป็นหัวข้อ uid, cn, sn, givenName, mail เป็นฟิลด์บังคับ password เป็นทางเลือก (สุ่มหากว่างเปล่า)"
+      }
+    }
+  }
+}

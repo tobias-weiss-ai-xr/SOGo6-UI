@@ -1,0 +1,29 @@
+{
+    "AP_OAUTH": {
+        "title": { "string": "Client OAuth2 / OIDC" },
+        "description": { "string": "Gestisci applicazioni client OAuth2. SOGo funge da server di autorizzazione OAuth2 e provider OpenID Connect." },
+        "form": {
+            "register": { "string": "Registra Client" },
+            "cancel": { "string": "Annulla" },
+            "title": { "string": "Registra Client OAuth2" },
+            "name": { "string": "Nome Applicazione" },
+            "redirect_uris": { "string": "URI di Reindirizzamento" },
+            "redirect_hint": { "string": "Separa più URI con virgole" },
+            "scopes": { "string": "Ambiti" },
+            "create": { "string": "Registra" }
+        },
+        "credentials": {
+            "title": { "string": "Credenziali Client — Salva Ora" }
+        },
+        "create": {
+            "success": { "string": "Client registrato" },
+            "error": { "string": "Registrazione fallita" }
+        },
+        "list": {
+            "empty": { "string": "Nessun client OAuth2 ancora registrato." }
+        },
+        "errors": {
+            "fields": { "string": "Nome e URI di reindirizzamento sono obbligatori" }
+        }
+    }
+}

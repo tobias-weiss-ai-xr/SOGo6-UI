@@ -1,0 +1,48 @@
+{
+    "COMMONS": {
+        "close": {
+            "string": "Sulje"
+        },
+        "workInProgress": {
+            "description": {
+                "string": "Tämä ominaisuus on parhaillaan kehityksessä."
+            },
+            "message": {
+                "string": "Teemme kovasti töitä tämän ominaisuuden tuomiseksi."
+            },
+            "comingSoon": {
+                "string": "Tulossa pian! Seuraa uutisia."
+            }
+        }
+    },
+    "COMMON": {
+        "demo": {
+            "warning": {
+                "title": {
+                    "string": "Demoversio"
+                },
+                "description": {
+                    "string": "Käytät tällä hetkellä sovelluksen demoversiota. Jotkin ominaisuudet saattavat olla rajoitettuja."
+                },
+                "action": {
+                    "string": "Selvä"
+                }
+            }
+        },
+        "language": {
+            "english": "English",
+            "french": "Français"
+        },
+        "serviceUnavailable": {
+            "title": {
+                "string": "Palvelu ei ole saatavilla"
+            },
+            "description": {
+                "string": "Sovellus ei saanut yhteyttä palvelimeen. Yritä myöhemmin uudelleen tai ota yhteyttä ylläpitäjään."
+            },
+            "retry": {
+                "string": "Yritä uudelleen"
+            }
+        }
+    }
+}

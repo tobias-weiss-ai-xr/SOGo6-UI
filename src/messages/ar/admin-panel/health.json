@@ -1,0 +1,34 @@
+{
+  "AP_HEALTH": {
+    "title": {
+      "string": "حالة النظام"
+    },
+    "description": {
+      "string": "الحالة الفورية لجميع خدمات مجموعة SOGo."
+    },
+    "status": {
+      "all_ok": {
+        "string": "جميع الأنظمة تعمل بشكل طبيعي"
+      },
+      "degraded": {
+        "string": "مُتدهور"
+      }
+    },
+    "overview": {
+      "uptime": {
+        "string": "وقت التشغيل"
+      },
+      "version": {
+        "string": "الإصدار"
+      },
+      "services": {
+        "string": "الخدمات تعمل بشكل صحيح"
+      }
+    },
+    "errors": {
+      "load_failed": {
+        "string": "فشل تحميل بيانات الحالة"
+      }
+    }
+  }
+}

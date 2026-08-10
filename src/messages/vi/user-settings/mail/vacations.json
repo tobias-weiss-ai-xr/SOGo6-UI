@@ -1,0 +1,133 @@
+{
+  "US_MAIL_VACATIONS": {
+    "title": {
+      "string": "Cài đặt nghỉ phép",
+      "context": "Title for the vacation settings page"
+    },
+    "page": {
+      "description": {
+        "string": "Cấu hình tin nhắn tự động trả lời khi bạn đi vắng và thời gian hoạt động của tin nhắn."
+      }
+    },
+    "errors_api": {
+      "load_failed": {
+        "string": "Không thể tải cài đặt nghỉ phép. Vui lòng thử lại sau."
+      },
+      "feature_disabled": {
+        "string": "Tính năng tự động trả lời khi nghỉ phép đã bị quản trị viên vô hiệu hóa."
+      }
+    },
+    "errors": {
+      "validation": {
+        "message_required": {
+          "string": "Tin nhắn tự động trả lời là bắt buộc khi bật chế độ nghỉ phép."
+        },
+        "dates_required": {
+          "string": "Ngày bắt đầu và ngày kết thúc là bắt buộc khi bật ràng buộc ngày."
+        },
+        "date_order": {
+          "string": "Ngày kết thúc phải cùng ngày hoặc sau ngày bắt đầu."
+        },
+        "time_invalid": {
+          "string": "Vui lòng nhập thời gian hợp lệ theo định dạng HH:MM."
+        },
+        "weekday_required": {
+          "string": "Vui lòng chọn ít nhất một ngày trong tuần khi bật ràng buộc ngày trong tuần."
+        },
+        "response_interval_invalid": {
+          "string": "Khoảng thời gian trả lời phải là số không hoặc số dương."
+        },
+        "response_interval_zero": {
+          "string": "Khoảng thời gian trả lời bằng không ngày không được phép trên miền này."
+        }
+      }
+    },
+    "auto_reply": {
+      "enable": {
+        "string": "Bật tự động trả lời khi nghỉ phép"
+      },
+      "subject": {
+        "label": {
+          "string": "Tiêu đề tự động trả lời"
+        },
+        "description": {
+          "string": "Để trống để sử dụng tiêu đề mặc định. Bạn có thể viết {subject} để chèn tiêu đề gốc."
+        }
+      },
+      "message": {
+        "string": "Nội dung tự động trả lời"
+      },
+      "constraints": {
+        "title": {
+          "string": "Ràng buộc kích hoạt"
+        },
+        "description": {
+          "string": "Tùy chỉnh các khoảng ngày và giờ độc lập, đồng thời có thể kết hợp với các ngày cụ thể trong tuần để điều chỉnh bộ lọc nghỉ phép theo sở thích của bạn."
+        },
+        "enable": {
+          "days": {
+            "string": "Bật tự động trả lời vào các ngày này"
+          },
+          "hours": {
+            "string": "Bật tự động trả lời trong khoảng giờ này"
+          },
+          "range": {
+            "string": "Bật tự động trả lời trong khoảng ngày này"
+          }
+        },
+        "time": {
+          "start": {
+            "string": "Thời gian bắt đầu"
+          },
+          "end": {
+            "string": "Thời gian kết thúc"
+          }
+        },
+        "weekdays": {
+          "monday": {
+            "string": "Thứ Hai"
+          },
+          "tuesday": {
+            "string": "Thứ Ba"
+          },
+          "wednesday": {
+            "string": "Thứ Tư"
+          },
+          "thursday": {
+            "string": "Thứ Năm"
+          },
+          "friday": {
+            "string": "Thứ Sáu"
+          },
+          "saturday": {
+            "string": "Thứ Bảy"
+          },
+          "sunday": {
+            "string": "Chủ Nhật"
+          }
+        }
+      },
+      "response": {
+        "interval_days": {
+          "label": {
+            "string": "Số ngày tối thiểu giữa các phản hồi tự động"
+          },
+          "placeholder": {
+            "string": "Để trống để sử dụng cài đặt mặc định"
+          },
+          "description": {
+            "string": "Ngăn việc gửi các phản hồi nghỉ phép trùng lặp trong khoảng thời gian này (RFC 5230 :days)."
+          }
+        },
+        "send_always": {
+          "label": {
+            "string": "Luôn gửi phản hồi tin nhắn nghỉ phép"
+          },
+          "description": {
+            "string": "Tin nhắn nghỉ phép được gửi trước khi áp dụng bộ lọc của bạn."
+          }
+        }
+      }
+    }
+  }
+}

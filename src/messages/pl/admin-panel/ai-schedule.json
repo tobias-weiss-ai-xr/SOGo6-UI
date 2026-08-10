@@ -1,0 +1,43 @@
+{
+  "AI_SCHEDULE": {
+    "title": {
+      "string": "Inteligentne planowanie kalendarza"
+    },
+    "description": {
+      "string": "Czasy spotkań sugerowane przez AI na podstawie wzorców dostępności i preferencji uczestników."
+    },
+    "input": {
+      "title": {
+        "string": "Konfiguracja spotkania"
+      },
+      "attendees": {
+        "string": "Uczestnicy"
+      },
+      "from": {
+        "string": "Od"
+      },
+      "to": {
+        "string": "Do"
+      },
+      "duration": {
+        "string": "Czas trwania (min)"
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Proponowane terminy"
+      }
+    },
+    "suggest": {
+      "string": "Zaproponuj terminy"
+    },
+    "errors": {
+      "fields": {
+        "string": "Wymagani są uczestnicy, data początkowa i końcowa"
+      },
+      "fail": {
+        "string": "Błąd sugestii"
+      }
+    }
+  }
+}

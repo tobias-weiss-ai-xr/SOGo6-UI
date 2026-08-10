@@ -1,0 +1,108 @@
+{
+  "ADDRESS_BOOKS_ERRORS": {
+    "list_member_invalid": {
+      "string": "Yksi tai useampi valituista jäsenistä ei ole yhteystietoja tässä osoitekirjassa.",
+      "context": "Inline error when a distribution list member is invalid."
+    },
+    "addressbook_not_found": {
+      "string": "Osoitekirjaa ei löytynyt.",
+      "context": "Error when an address book is missing."
+    },
+    "addressbook_duplicate": {
+      "string": "Osoitekirja tällä nimellä on jo olemassa.",
+      "context": "Toast when address book creation conflicts."
+    },
+    "contact_not_found": {
+      "string": "Yhteystietoa ei löytynyt.",
+      "context": "Error when a contact is missing."
+    },
+    "contact_duplicate": {
+      "string": "Yhteystieto tällä tunnisteella on jo olemassa.",
+      "context": "Toast when contact creation conflicts."
+    },
+    "contact_persist_failed": {
+      "string": "Yhteystietoa ei voitu tallentaa.",
+      "context": "Error when contact creation fails on the server."
+    },
+    "contact_update_failed": {
+      "string": "Yhteystietoa ei voitu päivittää.",
+      "context": "Error when contact update fails on the server."
+    },
+    "operation_not_supported": {
+      "string": "Tätä toimintoa ei tueta tälle osoitekirjalle.",
+      "context": "Error when mutating a non-local address book source."
+    },
+    "list_not_found": {
+      "string": "Jakelulistaa ei löytynyt.",
+      "context": "Error when a distribution list is missing."
+    },
+    "list_duplicate": {
+      "string": "Jakelulista tällä nimellä on jo olemassa.",
+      "context": "Toast when list creation conflicts."
+    },
+    "list_persist_failed": {
+      "string": "Jakelulistaa ei voitu tallentaa.",
+      "context": "Error when list creation fails on the server."
+    },
+    "list_update_failed": {
+      "string": "Jakelulistaa ei voitu päivittää.",
+      "context": "Error when list update fails on the server."
+    },
+    "access_denied": {
+      "string": "Sinulla ei ole oikeutta muokata tätä osoitekirjaa.",
+      "context": "Toast when write access is denied."
+    },
+    "read_only": {
+      "string": "Tämä osoitekirja on vain luku -tilassa.",
+      "context": "Toast when mutating a read-only address book."
+    },
+    "export_format_unsupported": {
+      "string": "Valittua vientiformaattia ei tueta.",
+      "context": "Error when export format negotiation fails."
+    },
+    "import_no_file": {
+      "string": "Tuontia varten ei ole annettu tiedostoa.",
+      "context": "Error when import request has no file."
+    },
+    "import_too_large": {
+      "string": "Tuontitiedosto ylittää sallitun enimmäiskokon (10 Mt).",
+      "context": "Error when import payload is too large."
+    },
+    "import_parse_failed": {
+      "string": "Tuontitiedostoa ei voitu jäsentää.",
+      "context": "Error when import document parsing fails."
+    },
+    "job_not_found": {
+      "string": "Taustatehtävää ei löytynyt.",
+      "context": "Error when polling an unknown job."
+    },
+    "job_forbidden": {
+      "string": "Sinulla ei ole pääsyä tähän taustatehtävään.",
+      "context": "Error when job belongs to another user."
+    },
+    "job_not_ready": {
+      "string": "Vientia ei ole vielä valmis. Odota hetki ja yritä uudelleen.",
+      "context": "Error when downloading a job result too early."
+    },
+    "job_no_result": {
+      "string": "Tällä työllä ei ole ladattavaa tulosta.",
+      "context": "Error when job result is unavailable."
+    },
+    "job_concurrent_limit": {
+      "string": "Liian monta taustatehtävää on käynnissä. Yritä myöhemmin uudelleen.",
+      "context": "Error when concurrent job limit is reached."
+    },
+    "file_too_large": {
+      "string": "Kuva ylittää sallitun enimmäiskoon (2 Mt).",
+      "context": "Inline error when contact photo upload is too large."
+    },
+    "file_type_not_allowed": {
+      "string": "Tätä tiedostotyyppiä ei sallita yhteystietojen kuville.",
+      "context": "Inline error when contact photo type is not allowed."
+    },
+    "generic": {
+      "string": "Toimintoa ei voitu suorittaa. Yritä uudelleen.",
+      "context": "Fallback error message for contact API errors."
+    }
+  }
+}

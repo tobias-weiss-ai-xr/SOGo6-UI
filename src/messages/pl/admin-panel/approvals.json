@@ -1,0 +1,65 @@
+{
+    "AP_APPROVALS": {
+        "title": {
+            "string": "Approval Workflows"
+        },
+        "description": {
+            "string": "Create multi-step approval chains for purchase orders, announcements, and more."
+        },
+        "form": {
+            "create": {
+                "string": "New Approval"
+            },
+            "cancel": {
+                "string": "Anuluj"
+            },
+            "title": {
+                "string": "Create Approval Workflow"
+            },
+            "workflow_title": {
+                "string": "Title"
+            },
+            "category": {
+                "string": "Category"
+            },
+            "description": {
+                "string": "Opis"
+            },
+            "steps": {
+                "string": "Approval Steps"
+            },
+            "submit": {
+                "string": "Create Workflow"
+            }
+        },
+        "create": {
+            "success": {
+                "string": "Workflow created"
+            },
+            "error": {
+                "string": "Failed to create"
+            }
+        },
+        "action": {
+            "approved": {
+                "string": "Step approved"
+            },
+            "rejected": {
+                "string": "Rejected"
+            },
+            "error": {
+                "string": "Action failed"
+            }
+        },
+        "list": {
+            "empty": {
+                "string": "No approval workflows yet."
+            }
+        },
+        "errors": {
+            "fields": {
+                "string": "Title and at least one step with email are required"
+            }
+        }
+    }
+}

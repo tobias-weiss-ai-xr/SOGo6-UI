@@ -47,11 +47,12 @@ describe('Mail Types', () => {
       FORWARD: 'forward',
       EDIT_DRAFT: 'edit-draft',
       USE_TEMPLATE: 'use-template',
+      SNOOZE: 'snooze',
     })
   })
 
-  it('should have exactly 18 action types', () => {
-    expect(Object.keys(ActionId)).toHaveLength(18)
+  it('should have exactly 19 action types', () => {
+    expect(Object.keys(ActionId)).toHaveLength(19)
   })
 
   describe('Type definitions', () => {

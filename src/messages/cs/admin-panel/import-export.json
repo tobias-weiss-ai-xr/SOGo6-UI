@@ -1,0 +1,34 @@
+{
+  "IMPORT": {
+    "title": {
+      "string": "Import a export PST / M365"
+    },
+    "description": {
+      "string": "Import poštovních schránek z PST souborů nebo Microsoft 365 s sledováním průběhu"
+    },
+    "errors": {
+      "fields": {
+        "string": "Chybějící povinná pole"
+      },
+      "fail": {
+        "string": "Operace se nezdařila"
+      }
+    },
+    "success": {
+      "analyze": {
+        "string": "PST analyzováno"
+      },
+      "import": {
+        "string": "Import zahájen"
+      }
+    },
+    "jobs": {
+      "title": {
+        "string": "Úlohy importu"
+      },
+      "empty": {
+        "string": "Zatím žádné úlohy importu"
+      }
+    }
+  }
+}

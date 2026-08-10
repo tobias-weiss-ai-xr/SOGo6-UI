@@ -39,6 +39,10 @@
                 "categories": {
                     "string": "Categories",
                     "context": "Link to the categories calendars settings in the settings sidebar"
+                },
+                "caldav": {
+                    "string": "CalDAV & Sync",
+                    "context": "Link to the CalDAV synchronization settings in the settings sidebar"
                 }
             },
             "email": {
@@ -74,6 +78,10 @@
                     "string": "Forward",
                     "context": "Link to the forward email settings in the settings sidebar"
                 }
+            },
+            "api_docs": {
+                "string": "API Documentation",
+                "context": "Link to the API documentation / Swagger UI in the settings sidebar"
             }
         }
     }

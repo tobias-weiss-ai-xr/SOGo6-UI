@@ -1,0 +1,46 @@
+{
+    "AI_CLASSIFY": {
+        "title": {
+            "string": "Classification d'e-mails"
+        },
+        "description": {
+            "string": "Catégorisation automatique des e-mails avec score de confiance"
+        },
+        "input": {
+            "title": {
+                "string": "Entrée"
+            },
+            "subject": {
+                "string": "Objet"
+            },
+            "sender": {
+                "string": "Expéditeur"
+            },
+            "body": {
+                "string": "Texte de l'e-mail"
+            },
+            "placeholder": {
+                "string": "Collez le texte de l'e-mail ici..."
+            }
+        },
+        "output": {
+            "title": {
+                "string": "Catégories"
+            },
+            "empty": {
+                "string": "Les catégories apparaîtront ici"
+            }
+        },
+        "classify": {
+            "string": "Classifieur"
+        },
+        "errors": {
+            "empty": {
+                "string": "Texte requis"
+            },
+            "fail": {
+                "string": "Échec de la classification"
+            }
+        }
+    }
+}

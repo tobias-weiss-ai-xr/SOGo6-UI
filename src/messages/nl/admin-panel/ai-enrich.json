@@ -1,0 +1,54 @@
+{
+  "AI_ENRICH": {
+    "title": {
+      "string": "Automatische verrijking van contactgegevens"
+    },
+    "description": {
+      "string": "Extraheer telefoonnummer, functie, bedrijf en locatie uit e-mailsignaturen."
+    },
+    "input": {
+      "title": {
+        "string": "E-mailsignatuur"
+      },
+      "signature": {
+        "string": "Signatuurtekst"
+      },
+      "placeholder": {
+        "string": "Plak hier een e-mailsignatuur..."
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Geëxtraheerde informatie"
+      },
+      "empty": {
+        "string": "Voer signatuurtekst in en klik op Extraheren"
+      }
+    },
+    "extract": {
+      "string": "Informatie extraheren"
+    },
+    "field": {
+      "phone": {
+        "string": "Telefoon"
+      },
+      "title": {
+        "string": "Functie"
+      },
+      "company": {
+        "string": "Bedrijf"
+      },
+      "location": {
+        "string": "Locatie"
+      }
+    },
+    "errors": {
+      "empty": {
+        "string": "Voer tekst in"
+      },
+      "fail": {
+        "string": "Extraheren mislukt"
+      }
+    }
+  }
+}

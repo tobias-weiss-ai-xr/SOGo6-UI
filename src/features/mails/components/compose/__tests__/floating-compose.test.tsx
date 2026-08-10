@@ -44,6 +44,7 @@ jest.mock('@/features/mails/store/mail-api.ts', () => ({
     { isLoading: false },
   ]),
   useDeleteMailMutation: jest.fn(() => [jest.fn(), { isLoading: false }]),
+  useCancelPendingSendMutation: jest.fn(() => [jest.fn(), { isLoading: false }]),
 }))
 
 jest.mock('@/features/mails/store/mail-api.ts', () => ({
@@ -53,6 +54,7 @@ jest.mock('@/features/mails/store/mail-api.ts', () => ({
     { isLoading: false },
   ]),
   useDeleteMailMutation: jest.fn(() => [jest.fn(), { isLoading: false }]),
+  useCancelPendingSendMutation: jest.fn(() => [jest.fn(), { isLoading: false }]),
   useUploadAttachmentMutation: jest.fn(() => [jest.fn(), { isLoading: false }]),
   useDeleteAttachmentMutation: jest.fn(() => [jest.fn(), { isLoading: false }]),
   useLazyDownloadAttachmentQuery: jest.fn(() => [

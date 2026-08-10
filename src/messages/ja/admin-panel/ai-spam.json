@@ -1,0 +1,49 @@
+{
+  "AI_SPAM": {
+    "title": {
+      "string": "インテリジェントスパムフィルター"
+    },
+    "description": {
+      "string": "リアルタイムスパムスコアリング：パターン分析、送信者の評判、コンテンツヒューリスティックを使用"
+    },
+    "input": {
+      "title": {
+        "string": "スコアを付けるメール"
+      },
+      "subject": {
+        "string": "件名"
+      },
+      "sender": {
+        "string": "送信者"
+      },
+      "body": {
+        "string": "本文"
+      },
+      "placeholder": {
+        "string": "メール本文を貼り付けてください..."
+      }
+    },
+    "output": {
+      "title": {
+        "string": "スパムスコア"
+      },
+      "empty": {
+        "string": "メール内容を入力して「スコア」をクリックしてください"
+      },
+      "signals": {
+        "string": "検出されたシグナル"
+      }
+    },
+    "score": {
+      "string": "メールをスコアリング"
+    },
+    "errors": {
+      "empty": {
+        "string": "件名または本文を入力してください"
+      },
+      "fail": {
+        "string": "スコアリングに失敗しました"
+      }
+    }
+  }
+}

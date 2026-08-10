@@ -1,0 +1,50 @@
+{
+  "SCIM": {
+    "title": {
+      "string": "Provisionnement SCIM"
+    },
+    "description": {
+      "string": "Gestion du cycle de vie des identités SCIM 2.0 pour Azure AD, Okta et autres IdPs"
+    },
+    "errors": {
+      "email": {
+        "string": "E-mail requis"
+      },
+      "fail": {
+        "string": "Opération échouée"
+      }
+    },
+    "success": {
+      "create": {
+        "string": "Utilisateur provisionné"
+      },
+      "delete": {
+        "string": "Utilisateur supprimé"
+      }
+    },
+    "field": {
+      "email": {
+        "string": "Nom d'utilisateur/E-mail"
+      },
+      "name": {
+        "string": "Nom d'affichage"
+      },
+      "status": {
+        "string": "Statut"
+      }
+    },
+    "button": {
+      "provision": {
+        "string": "Provisionner l'utilisateur"
+      }
+    },
+    "users": {
+      "title": {
+        "string": "Utilisateurs provisionnés"
+      },
+      "empty": {
+        "string": "Aucun utilisateur SCIM"
+      }
+    }
+  }
+}

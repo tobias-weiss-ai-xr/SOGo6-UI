@@ -6,6 +6,7 @@ import { useAppDispatch, useAppSelector } from '@/lib/redux/hooks'
 import { Pencil, type LucideIcon } from 'lucide-react'
 import { useTranslations } from 'next-intl'
 import { useCallback } from 'react'
+import { useParams } from 'next/navigation'
 import { toast } from 'sonner'
 import {
   createDraft,
@@ -13,6 +14,7 @@ import {
   selectCanOpenNewDraft,
 } from '../store'
 import { createClientId } from '@/lib/utils/create-client-id'
+import { useProfile } from '@/features/user-profile'
 
 export function useComposeAction(options?: { closeMobileSidebar?: boolean }) {
   const t = useTranslations('COMPOSE')
@@ -21,6 +23,11 @@ export function useComposeAction(options?: { closeMobileSidebar?: boolean }) {
   const dispatch = useAppDispatch()
   const canOpen = useAppSelector(selectCanOpenNewDraft)
   const closeMobileSidebar = options?.closeMobileSidebar ?? true
+  const { account } = useParams()
+  const { sharedMailboxAccounts } = useProfile()
+
+  // Get the current account ID from URL, handling both regular and shared mailboxes
+  const accountString = Array.isArray(account) ? account[0] : (account ?? '0')
 
   const onClick = useCallback(() => {
     if (!canOpen) {
@@ -32,8 +39,25 @@ export function useComposeAction(options?: { closeMobileSidebar?: boolean }) {
       setOpenMobile(false)
     }
 
-    dispatch(createDraft({ draftId: createClientId() }))
-  }, [canOpen, closeMobileSidebar, dispatch, isMobile, setOpenMobile, t])
+    // Check if current account is a shared mailbox
+    const isSharedMailbox = accountString.startsWith('shared-')
+    const sharedMailbox = isSharedMailbox 
+      ? sharedMailboxAccounts.find(m => m.id === accountString)
+      : null
+
+    // If composing from a shared mailbox, pre-select its identity
+    const initialData = isSharedMailbox && sharedMailbox ? {
+      selectedIdentity: {
+        mail: sharedMailbox.email,
+        name: sharedMailbox.name,
+      },
+    } : undefined
+
+    dispatch(createDraft({ 
+      draftId: createClientId(),
+      initialData 
+    }))
+  }, [canOpen, closeMobileSidebar, dispatch, isMobile, setOpenMobile, t, accountString, sharedMailboxAccounts])
 
   return {
     onClick,

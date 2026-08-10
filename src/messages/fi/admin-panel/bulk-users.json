@@ -1,0 +1,61 @@
+{
+  "AP_BULK": {
+    "title": {
+      "string": "Käyttäjien joukkohallinta"
+    },
+    "description": {
+      "string": "Tuo ja vie käyttäjiä joukkona CSV-tiedostojen avulla."
+    },
+    "export": {
+      "title": {
+        "string": "Vie käyttäjät"
+      },
+      "description": {
+        "string": "Lataa kaikki käyttäjät CSV-tiedostona."
+      },
+      "format": {
+        "string": "CSV-tiedosto (.csv)"
+      },
+      "button": {
+        "string": "Vie CSV"
+      },
+      "success": {
+        "string": "Vienti ladattu"
+      },
+      "error": {
+        "string": "Vienti epäonnistui"
+      }
+    },
+    "import": {
+      "title": {
+        "string": "Tuo käyttäjät"
+      },
+      "description": {
+        "string": "Lataa CSV-tiedosto käyttäjätiedoilla luodaksesi tai päivittääksesi tilejä."
+      },
+      "dropzone": {
+        "string": "Napsauta CSV-tiedoston lataamiseksi"
+      },
+      "button": {
+        "string": "Tuo CSV"
+      },
+      "remove": {
+        "string": "Poista tiedosto"
+      },
+      "success": {
+        "string": "Tuotu: {created} luotua, {updated} päivitettyä"
+      },
+      "error": {
+        "string": "Tuonti epäonnistui"
+      }
+    },
+    "format": {
+      "title": {
+        "string": "CSV-muoto"
+      },
+      "hint": {
+        "string": "Ensimmäisen rivin tulee olla otsikkorivi. Vaadittuja kenttiä: uid, cn, sn, givenName, mail. Salasana on valinnainen (satunnainen, jos tyhjä)."
+      }
+    }
+  }
+}

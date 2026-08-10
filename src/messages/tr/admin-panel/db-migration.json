@@ -1,0 +1,35 @@
+{
+  "AP_DBMIG": {
+    "title": {
+      "string": "Veritabanı Göçü"
+    },
+    "description": {
+      "string": "Şema sürümlerini ve göç geçmişini takip edin. Yönetim panelinden göçleri çalıştırın."
+    },
+    "current_version": {
+      "string": "Mevcut Şema Sürümü"
+    },
+    "run": {
+      "button": {
+        "string": "Göçü Çalıştır"
+      },
+      "running": {
+        "string": "Çalışıyor..."
+      },
+      "success": {
+        "string": "Göç uygulandı"
+      },
+      "error": {
+        "string": "Göç başarısız oldu"
+      }
+    },
+    "history": {
+      "title": {
+        "string": "Göç Geçmişi"
+      },
+      "empty": {
+        "string": "Kaydedilmiş göç yok."
+      }
+    }
+  }
+}

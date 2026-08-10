@@ -1,0 +1,54 @@
+{
+  "AI_ENRICH": {
+    "title": {
+      "string": "Automatisk kontaktberikning"
+    },
+    "description": {
+      "string": "Extrahera telefon, titel, företag och plats från e-postsignaturer."
+    },
+    "input": {
+      "title": {
+        "string": "E-postsignatur"
+      },
+      "signature": {
+        "string": "Signaturtext"
+      },
+      "placeholder": {
+        "string": "Klistra in en e-postsignatur här..."
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Extraherad information"
+      },
+      "empty": {
+        "string": "Ange signaturtext och klicka på Extrahera"
+      }
+    },
+    "extract": {
+      "string": "Extrahera info"
+    },
+    "field": {
+      "phone": {
+        "string": "Telefon"
+      },
+      "title": {
+        "string": "Titel"
+      },
+      "company": {
+        "string": "Företag"
+      },
+      "location": {
+        "string": "Plats"
+      }
+    },
+    "errors": {
+      "empty": {
+        "string": "Ange text"
+      },
+      "fail": {
+        "string": "Extrahering misslyckades"
+      }
+    }
+  }
+}

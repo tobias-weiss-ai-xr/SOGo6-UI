@@ -1,0 +1,71 @@
+{
+    "MATRIX": {
+        "title": {
+            "string": "Matrix Chat Integration"
+        },
+        "description": {
+            "string": "Embedded Matrix rooms, messaging, and SOGo user linking"
+        },
+        "errors": {
+            "name": {
+                "string": "Name required"
+            },
+            "fail": {
+                "string": "Operation failed"
+            }
+        },
+        "success": {
+            "config": {
+                "string": "Configuration saved"
+            },
+            "room": {
+                "string": "Room created"
+            }
+        },
+        "config": {
+            "title": {
+                "string": "Server Config"
+            },
+            "enabled": {
+                "string": "ممكّن"
+            },
+            "bridge": {
+                "string": "Bridge"
+            }
+        },
+        "rooms": {
+            "title": {
+                "string": "Chat Rooms"
+            },
+            "name": {
+                "placeholder": {
+                    "string": "Room name..."
+                }
+            },
+            "visibility": {
+                "private": {
+                    "string": "Private"
+                },
+                "public": {
+                    "string": "Public"
+                }
+            }
+        },
+        "button": {
+            "save": {
+                "string": "حفظ"
+            },
+            "create": {
+                "string": "Create Room"
+            }
+        },
+        "links": {
+            "title": {
+                "string": "User Links"
+            },
+            "empty": {
+                "string": "No linked users"
+            }
+        }
+    }
+}

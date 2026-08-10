@@ -1,0 +1,18 @@
+{
+    "IMPORT": {
+        "title": { "string": "Importazione/Esportazione PST / M365" },
+        "description": { "string": "Importa cassette postali da file PST o Microsoft 365 con monitoraggio dell'avanzamento" },
+        "errors": {
+            "fields": { "string": "Campi obbligatori mancanti" },
+            "fail": { "string": "Operazione fallita" }
+        },
+        "success": {
+            "analyze": { "string": "PST analizzato" },
+            "import": { "string": "Importazione avviata" }
+        },
+        "jobs": {
+            "title": { "string": "Job di Importazione" },
+            "empty": { "string": "Nessun job di importazione ancora" }
+        }
+    }
+}

@@ -1,0 +1,40 @@
+{
+  "AI_DRAFT": {
+    "title": {
+      "string": "Asistent pro návrhy odpovědí pomocí AI"
+    },
+    "description": {
+      "string": "Návrhy odpovědí s úpravou tónu. Generuje kontextové návrhy odpovědí."
+    },
+    "input": {
+      "title": {
+        "string": "Původní e-mail"
+      },
+      "email": {
+        "string": "Tělo e-mailu"
+      },
+      "placeholder": {
+        "string": "Vložte e-mail, na který chcete odpovědět..."
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Navržená odpověď"
+      },
+      "empty": {
+        "string": "Zadejte text e-mailu a vyberte tón"
+      }
+    },
+    "suggest": {
+      "string": "Navrhnout odpověď"
+    },
+    "errors": {
+      "empty": {
+        "string": "Zadejte text e-mailu"
+      },
+      "fail": {
+        "string": "Návrh se nezdařil"
+      }
+    }
+  }
+}

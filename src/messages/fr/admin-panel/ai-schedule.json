@@ -1,0 +1,46 @@
+{
+    "AI_SCHEDULE": {
+        "title": {
+            "string": "Planification intelligente de réunions"
+        },
+        "description": {
+            "string": "Suggestions d'horaires avec analyse des participants et détection de conflits"
+        },
+        "input": {
+            "title": {
+                "string": "Entrée"
+            },
+            "attendees": {
+                "string": "Participants"
+            },
+            "from": {
+                "string": "Du"
+            },
+            "to": {
+                "string": "Au"
+            },
+            "duration": {
+                "string": "Durée (min)"
+            }
+        },
+        "output": {
+            "title": {
+                "string": "Suggestions"
+            },
+            "empty": {
+                "string": "Aucune suggestion"
+            }
+        },
+        "suggest": {
+            "string": "Suggéreur"
+        },
+        "errors": {
+            "fields": {
+                "string": "Tous les champs requis"
+            },
+            "fail": {
+                "string": "Échec des suggestions"
+            }
+        }
+    }
+}

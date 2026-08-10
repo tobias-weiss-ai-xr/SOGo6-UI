@@ -1,0 +1,34 @@
+{
+  "AP_HEALTH": {
+    "title": {
+      "string": "Systeemstatus"
+    },
+    "description": {
+      "string": "Realtime status van alle diensten in de SOGo-stack."
+    },
+    "status": {
+      "all_ok": {
+        "string": "Alle systemen operationeel"
+      },
+      "degraded": {
+        "string": "Beperkte functionaliteit"
+      }
+    },
+    "overview": {
+      "uptime": {
+        "string": "Uptime"
+      },
+      "version": {
+        "string": "Versie"
+      },
+      "services": {
+        "string": "Diensten gezond"
+      }
+    },
+    "errors": {
+      "load_failed": {
+        "string": "Laden van statusgegevens mislukt"
+      }
+    }
+  }
+}

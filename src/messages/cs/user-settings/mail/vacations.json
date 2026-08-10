@@ -1,0 +1,133 @@
+{
+  "US_MAIL_VACATIONS": {
+    "title": {
+      "string": "Nastavení dovolené",
+      "context": "Title for the vacation settings page"
+    },
+    "page": {
+      "description": {
+        "string": "Nastavte svou automatickou odpověď mimo kancelář a období, kdy má být aktivní."
+      }
+    },
+    "errors_api": {
+      "load_failed": {
+        "string": "Nepodařilo se načíst nastavení dovolené. Zkuste to prosím později."
+      },
+      "feature_disabled": {
+        "string": "Automatická odpověď na dovolené byla zakázána vaším správcem."
+      }
+    },
+    "errors": {
+      "validation": {
+        "message_required": {
+          "string": "Při zapnuté dovolené je vyžadována zpráva automatické odpovědi."
+        },
+        "dates_required": {
+          "string": "Při zapnutém omezení data jsou vyžadována data zahájení a ukončení."
+        },
+        "date_order": {
+          "string": "Datum ukončení musí být stejné nebo pozdější než datum zahájení."
+        },
+        "time_invalid": {
+          "string": "Zadejte platný čas ve formátu HH:MM."
+        },
+        "weekday_required": {
+          "string": "Při zapnutém omezení dnů v týdnu vyberte alespoň jeden den."
+        },
+        "response_interval_invalid": {
+          "string": "Interval odpovědí musí být nula nebo kladné číslo."
+        },
+        "response_interval_zero": {
+          "string": "Interval odpovědí 0 dnů není v této doméně povolen."
+        }
+      }
+    },
+    "auto_reply": {
+      "enable": {
+        "string": "Povolit automatickou odpověď na dovolené"
+      },
+      "subject": {
+        "label": {
+          "string": "Předmět automatické odpovědi"
+        },
+        "description": {
+          "string": "Nechte prázdné pro použití výchozího předmětu. Můžete napsat {subject} pro vložení původního předmětu."
+        }
+      },
+      "message": {
+        "string": "Zpráva automatické odpovědi"
+      },
+      "constraints": {
+        "title": {
+          "string": "Omezení aktivace"
+        },
+        "description": {
+          "string": "Přizpůsobte si rozmezí dnů a hodin nezávisle a volitelně je kombinujte s konkrétními dny v týdnu, aby vyhovovaly vašim preferencím pro filtry dovolené."
+        },
+        "enable": {
+          "days": {
+            "string": "Povolit automatickou odpověď v těchto dnech"
+          },
+          "hours": {
+            "string": "Povolit automatickou odpověď mezi těmito hodinami"
+          },
+          "range": {
+            "string": "Povolit automatickou odpověď mezi těmito dny"
+          }
+        },
+        "time": {
+          "start": {
+            "string": "Počáteční čas"
+          },
+          "end": {
+            "string": "Konečný čas"
+          }
+        },
+        "weekdays": {
+          "monday": {
+            "string": "Pondělí"
+          },
+          "tuesday": {
+            "string": "Úterý"
+          },
+          "wednesday": {
+            "string": "Středa"
+          },
+          "thursday": {
+            "string": "Čtvrtek"
+          },
+          "friday": {
+            "string": "Pátek"
+          },
+          "saturday": {
+            "string": "Sobota"
+          },
+          "sunday": {
+            "string": "Neděle"
+          }
+        }
+      },
+      "response": {
+        "interval_days": {
+          "label": {
+            "string": "Minimální počet dnů mezi automatickými odpověďmi"
+          },
+          "placeholder": {
+            "string": "Nechte prázdné pro výchozí chování"
+          },
+          "description": {
+            "string": "Zabrání odeslání duplicitních dovolenkových odpovědí v tomto období (RFC 5230 :days)."
+          }
+        },
+        "send_always": {
+          "label": {
+            "string": "Vždy odeslat odpověď s dovolenkovou zprávou"
+          },
+          "description": {
+            "string": "Dovolenková zpráva se odešle před aplikací vašich filtrů."
+          }
+        }
+      }
+    }
+  }
+}

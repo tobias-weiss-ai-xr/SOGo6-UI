@@ -1,0 +1,65 @@
+{
+  "MOBILE": {
+    "title": {
+      "string": "Beheer van mobiele app"
+    },
+    "description": {
+      "string": "Beheer geregistreerde apparaten, pushmeldingen en app-configuratie"
+    },
+    "errors": {
+      "fail": {
+        "string": "Bewerking mislukt"
+      }
+    },
+    "success": {
+      "unregister": {
+        "string": "Apparaat uitgeschreven"
+      },
+      "broadcast": {
+        "string": "Pushmelding verzonden"
+      }
+    },
+    "config": {
+      "title": {
+        "string": "App-instellingen"
+      },
+      "push": {
+        "string": "Pushmeldingen"
+      },
+      "biometric": {
+        "string": "Biometrische verificatie"
+      }
+    },
+    "push": {
+      "title": {
+        "placeholder": {
+          "string": "Titel van melding"
+        }
+      },
+      "message": {
+        "placeholder": {
+          "string": "Bericht..."
+        }
+      },
+      "broadcast": {
+        "string": "Verzenden"
+      }
+    },
+    "stats": {
+      "title": {
+        "string": "Statistieken"
+      },
+      "devices": {
+        "string": "Geregistreerde apparaten"
+      }
+    },
+    "devices": {
+      "title": {
+        "string": "Alle apparaten"
+      },
+      "empty": {
+        "string": "Nog geen apparaten geregistreerd"
+      }
+    }
+  }
+}

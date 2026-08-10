@@ -1,0 +1,34 @@
+{
+  "AP_HEALTH": {
+    "title": {
+      "string": "Systemstatus"
+    },
+    "description": {
+      "string": "Realtidsstatus för alla tjänster i SOGo-stacken."
+    },
+    "status": {
+      "all_ok": {
+        "string": "Alla system fungerar"
+      },
+      "degraded": {
+        "string": "Nedsatt funktion"
+      }
+    },
+    "overview": {
+      "uptime": {
+        "string": "Driftstid"
+      },
+      "version": {
+        "string": "Version"
+      },
+      "services": {
+        "string": "Tjänster i drift"
+      }
+    },
+    "errors": {
+      "load_failed": {
+        "string": "Misslyckades med att ladda hälsodata"
+      }
+    }
+  }
+}

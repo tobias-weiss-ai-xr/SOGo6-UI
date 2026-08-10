@@ -1,0 +1,53 @@
+{
+  "AP_QUOTAS": {
+    "title": {
+      "string": "使用配额"
+    },
+    "description": {
+      "string": "查看和设置每个用户的资源限制：邮箱大小、日历和联系人。"
+    },
+    "select_user": {
+      "string": "选择用户"
+    },
+    "select_placeholder": {
+      "string": "Choose a user..."
+    },
+    "current_usage": {
+      "string": "Current Usage"
+    },
+    "set_quota": {
+      "string": "Set Quota"
+    },
+    "labels": {
+      "mailbox": {
+        "string": "Mailbox"
+      },
+      "calendars": {
+        "string": "Calendars"
+      },
+      "contacts": {
+        "string": "Contacts"
+      },
+      "mailbox_limit": {
+        "string": "Mailbox Size Limit"
+      },
+      "calendar_limit": {
+        "string": "Max Calendars"
+      },
+      "contact_limit": {
+        "string": "Max Contacts"
+      }
+    },
+    "save": {
+      "button": {
+        "string": "Save Quota"
+      },
+      "success": {
+        "string": "Quota updated"
+      },
+      "error": {
+        "string": "Failed to update quota"
+      }
+    }
+  }
+}

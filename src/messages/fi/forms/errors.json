@@ -1,0 +1,14 @@
+{
+  "FORM_ERRORS": {
+    "required": {
+      "default": {
+        "string": "Tämä kenttä on pakollinen"
+      }
+    },
+    "invalid": {
+      "email": {
+        "string": "Virheellinen sähköpostiosoite"
+      }
+    }
+  }
+}

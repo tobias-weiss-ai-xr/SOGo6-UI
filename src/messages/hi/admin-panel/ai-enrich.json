@@ -1,0 +1,54 @@
+{
+  "AI_ENRICH": {
+    "title": {
+      "string": "संपर्क स्वचालित समृद्धिकरण"
+    },
+    "description": {
+      "string": "ईमेल हस्ताक्षरों से फोन, पद, कंपनी, स्थान निकालें।"
+    },
+    "input": {
+      "title": {
+        "string": "ईमेल हस्ताक्षर"
+      },
+      "signature": {
+        "string": "हस्ताक्षर पाठ"
+      },
+      "placeholder": {
+        "string": "यहाँ ईमेल हस्ताक्षर पेस्ट करें..."
+      }
+    },
+    "output": {
+      "title": {
+        "string": "निकाली गई जानकारी"
+      },
+      "empty": {
+        "string": "हस्ताक्षर पाठ दर्ज करें और निकाले बटन पर क्लिक करें"
+      }
+    },
+    "extract": {
+      "string": "जानकारी निकालें"
+    },
+    "field": {
+      "phone": {
+        "string": "फोन"
+      },
+      "title": {
+        "string": "पद"
+      },
+      "company": {
+        "string": "कंपनी"
+      },
+      "location": {
+        "string": "स्थान"
+      }
+    },
+    "errors": {
+      "empty": {
+        "string": "पाठ दर्ज करें"
+      },
+      "fail": {
+        "string": "निकालना विफल"
+      }
+    }
+  }
+}

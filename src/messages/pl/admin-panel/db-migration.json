@@ -1,0 +1,35 @@
+{
+  "AP_DBMIG": {
+    "title": {
+      "string": "Migracja bazy danych"
+    },
+    "description": {
+      "string": "Śledź wersje schematu i historię migracji. Uruchamiaj migracje z panelu administracyjnego."
+    },
+    "current_version": {
+      "string": "Aktualna wersja schematu"
+    },
+    "run": {
+      "button": {
+        "string": "Uruchom migrację"
+      },
+      "running": {
+        "string": "W trakcie..."
+      },
+      "success": {
+        "string": "Migracja zastosowana"
+      },
+      "error": {
+        "string": "Migracja nie powiodła się"
+      }
+    },
+    "history": {
+      "title": {
+        "string": "Historia migracji"
+      },
+      "empty": {
+        "string": "Brak zarejestrowanych migracji."
+      }
+    }
+  }
+}

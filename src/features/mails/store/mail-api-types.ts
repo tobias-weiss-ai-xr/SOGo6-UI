@@ -20,6 +20,8 @@ export interface SendMailBody {
   priority?: number
   is_html?: boolean
   reply_to?: string | null
+  /** ISO 8601 datetime for scheduled delivery */
+  send_at?: string | null
 }
 
 export interface SendMailArg {
@@ -27,6 +29,23 @@ export interface SendMailArg {
   accountId: string
   mail: SendMailBody
   mailKey?: string | null
+}
+
+/** Result of a send request — may be immediate, scheduled, or held for Undo Send. */
+export interface SendMailResult {
+  /** 'sent' = delivered now, 'scheduled' = queued via send_at, 'pending' = held for Undo Send */
+  status?: 'sent' | 'scheduled' | 'pending'
+  /** Present when status === 'pending' — used to cancel the send (Undo Send). */
+  pending_key?: string
+  /** Epoch seconds until which the undo window stays open. */
+  undo_available_until?: number
+  scheduled_at?: string
+  job_id?: string
+}
+
+export interface CancelPendingSendArg {
+  accountId: string
+  pendingKey: string
 }
 
 export interface SaveDraftArg {

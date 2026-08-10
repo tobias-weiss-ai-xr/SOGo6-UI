@@ -132,7 +132,7 @@ export const ARIA_ATTRIBUTES = {
   ARIA_SORT: 'aria-sort',
   
   // Property attributes
-  ARIA_ACTIVEDescendant: 'aria-activedescendant',
+  ARIA_ACTIVEDESCENDANT: 'aria-activedescendant',
   ARIA_ATOMIC: 'aria-atomic',
   ARIA_AUTOCOMPLETE: 'aria-autocomplete',
   ARIA_COLCOUNT: 'aria-colcount',
@@ -158,10 +158,6 @@ export const ARIA_ATTRIBUTES = {
   ARIA_VALUEMIN: 'aria-valuemin',
   ARIA_VALUENOW: 'aria-valuenow',
   ARIA_VALUETEXT: 'aria-valuetext',
-  
-  // Live region attributes
-  ARIA_ATOMIC: 'aria-atomic',
-  ARIA_RELEVANT: 'aria-relevant',
   
   // Drag and drop attributes
   ARIA_DROP_EFFECT: 'aria-dropeffect',

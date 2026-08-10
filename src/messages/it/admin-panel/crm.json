@@ -1,0 +1,26 @@
+{
+    "AP_CRM": {
+        "title": { "string": "CRM-leggero" },
+        "description": { "string": "Associa contatti ad account, traccia interazioni, categorizza contatti e registra note." },
+        "form": {
+            "create": { "string": "Nuovo Account" },
+            "cancel": { "string": "Annulla" },
+            "title": { "string": "Crea Account" },
+            "name": { "string": "Nome Account" },
+            "domain": { "string": "Dominio" },
+            "industry": { "string": "Settore" },
+            "notes": { "string": "Note" },
+            "submit": { "string": "Crea Account" }
+        },
+        "create": {
+            "success": { "string": "Account creato" },
+            "error": { "string": "Creazione fallita" }
+        },
+        "list": {
+            "empty": { "string": "Nessun account CRM ancora." }
+        },
+        "errors": {
+            "fields": { "string": "Il nome account è obbligatorio" }
+        }
+    }
+}

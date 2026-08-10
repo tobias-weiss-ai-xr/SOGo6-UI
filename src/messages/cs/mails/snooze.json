@@ -1,0 +1,39 @@
+{
+  "MAIL_SNOOZE": {
+    "title": {
+      "string": "Odložit"
+    },
+    "description": {
+      "string": "Vyberte, kdy se má tento e-mail znovu zobrazit ve vaší schránce."
+    },
+    "presets": {
+      "later_today": {
+        "string": "Dnes později"
+      },
+      "tomorrow": {
+        "string": "Zítra"
+      },
+      "this_weekend": {
+        "string": "Tento víkend"
+      },
+      "next_week": {
+        "string": "Příští týden"
+      }
+    },
+    "pick_date": {
+      "string": "Vybrat datum a čas"
+    },
+    "pick_date_placeholder": {
+      "string": "Vyberte datum..."
+    },
+    "snooze_button": {
+      "string": "Odložit"
+    },
+    "success": {
+      "string": "E-mail odložen"
+    },
+    "error": {
+      "string": "Nepodařilo se odložit e-mail"
+    }
+  }
+}

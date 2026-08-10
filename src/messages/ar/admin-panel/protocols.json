@@ -1,0 +1,10 @@
+{
+  "PROTOCOLS": {
+    "title": {
+      "string": "حالة بروتوكول البريد الإلكتروني"
+    },
+    "description": {
+      "string": "حالة خادم بروتوكولي JMAP وActiveSync وقدراتهما"
+    }
+  }
+}

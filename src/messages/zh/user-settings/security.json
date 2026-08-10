@@ -1,0 +1,75 @@
+{
+  "US_SECURITY": {
+    "title": {
+      "string": "安全",
+      "context": "Title for the Security settings section in user settings"
+    },
+    "totp": {
+      "title": {
+        "string": "双因素认证 (TOTP)",
+        "context": "Title for the Two-Factor Authentication settings"
+      },
+      "description": {
+        "string": "双因素认证为您的账户增加了一层额外的安全保护。启用后，每次登录时您都需要输入手机验证器应用生成的唯一代码。"
+      },
+      "verification_code": {
+        "title": {
+          "string": "验证码"
+        },
+        "description": {
+          "string": "请输入验证器应用生成的验证码。"
+        }
+      }
+    },
+    "webauthn": {
+      "title": {
+        "string": "通行密钥 (WebAuthn)",
+        "context": "Title for the WebAuthn settings section"
+      },
+      "description": {
+        "string": "通行密钥让您可以使用设备的生物识别传感器（指纹、面部识别）或硬件安全密钥进行无密码登录。您的通行密钥会被安全地存储在该设备上。",
+        "context": "Description for the WebAuthn settings section"
+      },
+      "registered_credentials": {
+        "string": "已注册的通行密钥",
+        "context": "Label for the list of registered passkeys"
+      },
+      "registered_at": {
+        "string": "注册时间",
+        "context": "Label for the registration date of a passkey"
+      },
+      "no_credentials": {
+        "string": "尚未注册任何通行密钥。",
+        "context": "Message when no passkeys are registered"
+      },
+      "register": {
+        "string": "注册新通行密钥",
+        "context": "Button to register a new passkey",
+        "title": {
+          "string": "Register a New Passkey",
+          "context": "Title for the passkey registration dialog"
+        },
+        "description": {
+          "string": "Your browser or device will guide you through setting up a passkey using biometrics, a PIN, or an external security key.",
+          "context": "Description for the passkey registration dialog"
+        },
+        "button": {
+          "string": "Register",
+          "context": "Button to start passkey registration"
+        },
+        "waiting": {
+          "string": "Waiting for device interaction — follow the prompts on your device.",
+          "context": "Status during passkey registration"
+        },
+        "success": {
+          "string": "Passkey registered successfully!",
+          "context": "Status when passkey registration succeeds"
+        }
+      },
+      "device_name": {
+        "string": "设备名称（可选）",
+        "context": "Label for the device name input field"
+      }
+    }
+  }
+}

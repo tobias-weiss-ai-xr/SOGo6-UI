@@ -1,0 +1,49 @@
+{
+  "AI_ANOMALY": {
+    "title": {
+      "string": "異常検知"
+    },
+    "description": {
+      "string": "異常な送信パターンを検出：一括メール、不審な時間帯、新規受信者"
+    },
+    "input": {
+      "title": {
+        "string": "送信パターン"
+      },
+      "recipients": {
+        "string": "受信者数"
+      },
+      "hour": {
+        "string": "時間 (0-23)"
+      },
+      "new_ratio": {
+        "string": "新規受信者比率"
+      }
+    },
+    "output": {
+      "title": {
+        "string": "解析結果"
+      },
+      "empty": {
+        "string": "値を入力して「解析」をクリック"
+      },
+      "anomaly": {
+        "string": "異常を検出！"
+      },
+      "normal": {
+        "string": "パターンは正常"
+      },
+      "score": {
+        "string": "リスクスコア"
+      }
+    },
+    "analyze": {
+      "string": "解析"
+    },
+    "errors": {
+      "fail": {
+        "string": "解析に失敗しました"
+      }
+    }
+  }
+}

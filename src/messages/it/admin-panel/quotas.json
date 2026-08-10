@@ -1,0 +1,23 @@
+{
+    "AP_QUOTAS": {
+        "title": { "string": "Quote di Utilizzo" },
+        "description": { "string": "Visualizza e imposta limiti risorse per utente per dimensione casella, calendari e contatti." },
+        "select_user": { "string": "Seleziona Utente" },
+        "select_placeholder": { "string": "Scegli un utente..." },
+        "current_usage": { "string": "Utilizzo Corrente" },
+        "set_quota": { "string": "Imposta Quota" },
+        "labels": {
+            "mailbox": { "string": "Casella" },
+            "calendars": { "string": "Calendari" },
+            "contacts": { "string": "Contatti" },
+            "mailbox_limit": { "string": "Limite Dimensione Casella" },
+            "calendar_limit": { "string": "Max Calendari" },
+            "contact_limit": { "string": "Max Contatti" }
+        },
+        "save": {
+            "button": { "string": "Salva Quota" },
+            "success": { "string": "Quota aggiornata" },
+            "error": { "string": "Aggiornamento quota fallito" }
+        }
+    }
+}

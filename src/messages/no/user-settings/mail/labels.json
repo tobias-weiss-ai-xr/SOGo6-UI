@@ -1,0 +1,14 @@
+{
+  "US_MAIL_LABELS": {
+    "title": {
+      "string": "E-postetiketter",
+      "context": "Title for the mail labels settings page"
+    },
+    "label": {
+      "string": "Etikett"
+    },
+    "imap_label": {
+      "string": "IMAP-etikett"
+    }
+  }
+}

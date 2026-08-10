@@ -15,11 +15,10 @@ export async function PATCH(
   try {
     const { custom_domain_id: customDomainId } = await params
     const body = await request.json()
-    console.log(`PATCH /admin/v1/config/domains/${customDomainId} body:`, body)
-    console.log(
-      `PATCH /admin/v1/config/domains/${customDomainId} body:`,
-      JSON.stringify(body, null, 2)
-    )
+  // Development logging for fake API
+  if (process.env.NODE_ENV === 'development') {
+    console.log(`[fakeApi] PATCH /admin/v1/config/domains/${customDomainId}`, body)
+  }
     // This is a fake API: we don't persist to disk.
     // Return the updated representation indicating success.
     // const updated = {
@@ -54,7 +53,6 @@ export async function DELETE(
   { params }: { params: Promise<{ custom_domain_id: string }> }
 ) {
   const { custom_domain_id: customDomainId } = await params
-  console.log(`DELETE config for domain ${customDomainId}`)
   return NextResponse.json(
     { success: true, message: `Domain ${customDomainId} deleted (fakeApi)` },
     { status: 200 }

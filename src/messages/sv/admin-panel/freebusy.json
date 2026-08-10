@@ -1,0 +1,40 @@
+{
+  "AP_FREEBUSY": {
+    "title": {
+      "string": "Ledig/Upptagen-sökning"
+    },
+    "description": {
+      "string": "Visuell överläggning av deltagares scheman. Kontrollera tillgänglighet vid skapande av händelser."
+    },
+    "form": {
+      "title": {
+        "string": "Kontrollera tillgänglighet"
+      },
+      "participants": {
+        "string": "Deltagare"
+      },
+      "start": {
+        "string": "Start"
+      },
+      "end": {
+        "string": "Slut"
+      },
+      "lookup": {
+        "string": "Sök"
+      }
+    },
+    "results": {
+      "title": {
+        "string": "Upptagna tider"
+      }
+    },
+    "errors": {
+      "fields": {
+        "string": "Minst en deltagare krävs"
+      }
+    },
+    "error": {
+      "string": "Sökningen misslyckades"
+    }
+  }
+}

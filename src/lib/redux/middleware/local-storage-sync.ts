@@ -1,5 +1,6 @@
 import type { Middleware } from '@reduxjs/toolkit'
 import type { RootState } from '../store'
+import { logger } from '@/lib/logger'
 
 const STORAGE_KEY = 'sogo_auth'
 
@@ -34,7 +35,7 @@ export const localStorageSyncMiddleware: Middleware<object, RootState> =
           sessionStorage.removeItem(STORAGE_KEY)
         }
       } catch (error) {
-        console.error('Error saving auth to localStorage:', error)
+        logger.error('Error saving auth to localStorage:', { error: error })
       }
     }
 
@@ -78,7 +79,7 @@ export const loadAuthFromStorage = (): StoredAuthState | undefined => {
     }
     return undefined
   } catch (error) {
-    console.error('Error loading auth from storage:', error)
+    logger.error('Error loading auth from storage:', { error: error })
     localStorage.removeItem(STORAGE_KEY)
     sessionStorage.removeItem(STORAGE_KEY)
     return undefined

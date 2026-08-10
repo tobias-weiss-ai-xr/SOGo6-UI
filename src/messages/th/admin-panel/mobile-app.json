@@ -1,0 +1,65 @@
+{
+  "MOBILE": {
+    "title": {
+      "string": "การจัดการแอปพลิเคชันบนมือถือ"
+    },
+    "description": {
+      "string": "จัดการอุปกรณ์ที่ลงทะเบียน การแจ้งเตือนแบบ push และการตั้งค่าประยุกต์"
+    },
+    "errors": {
+      "fail": {
+        "string": "การดำเนินการล้มเหลว"
+      }
+    },
+    "success": {
+      "unregister": {
+        "string": "ยกเลิกการลงทะเบียนอุปกรณ์แล้ว"
+      },
+      "broadcast": {
+        "string": "ส่งการแจ้งเตือนแบบ push แล้ว"
+      }
+    },
+    "config": {
+      "title": {
+        "string": "การตั้งค่าแอปพลิเคชัน"
+      },
+      "push": {
+        "string": "การแจ้งเตือนแบบ push"
+      },
+      "biometric": {
+        "string": "การยืนยันตัวตนด้วยชีวมิติ"
+      }
+    },
+    "push": {
+      "title": {
+        "placeholder": {
+          "string": "หัวข้อการแจ้งเตือน"
+        }
+      },
+      "message": {
+        "placeholder": {
+          "string": "ข้อความ..."
+        }
+      },
+      "broadcast": {
+        "string": "ส่ง"
+      }
+    },
+    "stats": {
+      "title": {
+        "string": "สถิติ"
+      },
+      "devices": {
+        "string": "อุปกรณ์ที่ลงทะเบียน"
+      }
+    },
+    "devices": {
+      "title": {
+        "string": "อุปกรณ์ทั้งหมด"
+      },
+      "empty": {
+        "string": "ยังไม่มีอุปกรณ์ที่ลงทะเบียน"
+      }
+    }
+  }
+}

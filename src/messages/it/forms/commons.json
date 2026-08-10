@@ -1,0 +1,51 @@
+{
+    "FORM_COMMONS": {
+        "save": {
+            "default": {
+                "string": "Salva",
+                "description": "Click to save the form data."
+            }
+        },
+        "delete": {
+            "default": {
+                "string": "Elimina",
+                "description": "Click to delete the selected item."
+            }
+        },
+        "edit": {
+            "default": {
+                "string": "Modifica",
+                "description": "Click to edit the selected item."
+            }
+        },
+        "cancel": {
+            "default": {
+                "string": "Annulla",
+                "description": "Click to cancel the form submission."
+            }
+        },
+        "create": {
+            "default": {
+                "string": "Crea",
+                "description": "Click to create a new item."
+            }
+        },
+        "reset": {
+            "default": {
+                "string": "Reimposta",
+                "description": "Click to reset the form fields to their default values."
+            }
+        },
+        "enabled": {
+            "string": "Abilitato"
+        },
+        "emails": {
+            "placeholder": "Aggiungi indirizzo email e premi Invio"
+        },
+        "validation": {
+            "required": "Il campo è obbligatorio",
+            "identityAtLeastOneDefault": "Almeno un'identità deve essere impostata come predefinita",
+            "email": "Inserisci un indirizzo email valido"
+        }
+    }
+}

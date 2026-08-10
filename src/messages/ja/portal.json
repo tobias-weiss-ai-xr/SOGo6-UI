@@ -1,0 +1,16 @@
+{
+    "PORTAL": {
+        "title": {
+            "string": "SOGoポータル"
+        },
+        "description": {
+            "string": "SOGoポータルへようこそ。アプリケーションを選択して開始してください。"
+        },
+        "launch": {
+            "string": "Launch"
+        },
+        "settings": {
+            "string": "Intercom Settings"
+        }
+    }
+}

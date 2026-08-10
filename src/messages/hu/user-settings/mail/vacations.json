@@ -1,0 +1,133 @@
+{
+  "US_MAIL_VACATIONS": {
+    "title": {
+      "string": "Szabadság beállítások",
+      "context": "Title for the vacation settings page"
+    },
+    "page": {
+      "description": {
+        "string": "Állítsa be a távolléti automatikus válaszüzenetét és az aktív időpontját."
+      }
+    },
+    "errors_api": {
+      "load_failed": {
+        "string": "A szabadság beállítások betöltése sikertelen. Kérjük, próbálja újra később."
+      },
+      "feature_disabled": {
+        "string": "A szabadság automatikus válasz funkciót az adminisztrátor letiltotta."
+      }
+    },
+    "errors": {
+      "validation": {
+        "message_required": {
+          "string": "Az automatikus válaszüzenet kötelező, ha a szabadság be van kapcsolva."
+        },
+        "dates_required": {
+          "string": "A kezdő és záró dátum kötelező, ha a dátumkorlátozások be vannak kapcsolva."
+        },
+        "date_order": {
+          "string": "A záró dátumnak a kezdő dátumon vagy után kell lennie."
+        },
+        "time_invalid": {
+          "string": "Kérjük, adjon meg egy érvényes időpontot ÓÓ:PP formátumban."
+        },
+        "weekday_required": {
+          "string": "Válasszon legalább egy hétköznapot, ha a hétköznapi korlátozások be vannak kapcsolva."
+        },
+        "response_interval_invalid": {
+          "string": "A válaszintervallumnak nulla vagy pozitív számnak kell lennie."
+        },
+        "response_interval_zero": {
+          "string": "Nulla napos válaszintervallum nem engedélyezett ezen a tartományon."
+        }
+      }
+    },
+    "auto_reply": {
+      "enable": {
+        "string": "Szabadság automatikus válasz engedélyezése"
+      },
+      "subject": {
+        "label": {
+          "string": "Automatikus válasz tárgya"
+        },
+        "description": {
+          "string": "Hagyja üresen az alapértelmezett tárgy használatához. Írhat {subject} az eredeti tárgy beszúrásához."
+        }
+      },
+      "message": {
+        "string": "Automatikus válaszüzenet"
+      },
+      "constraints": {
+        "title": {
+          "string": "Aktiválási korlátozások"
+        },
+        "description": {
+          "string": "Testre szabhatja a nap- és óratartományokat függetlenül, és opcionálisan kombinálhatja őket bizonyos hétköznapokkal a szabadsági szűrők igényei szerint."
+        },
+        "enable": {
+          "days": {
+            "string": "Automatikus válasz engedélyezése e napon"
+          },
+          "hours": {
+            "string": "Automatikus válasz engedélyezése e időpontok között"
+          },
+          "range": {
+            "string": "Automatikus válasz engedélyezése e napok között"
+          }
+        },
+        "time": {
+          "start": {
+            "string": "Kezdési időpont"
+          },
+          "end": {
+            "string": "Befejezési időpont"
+          }
+        },
+        "weekdays": {
+          "monday": {
+            "string": "Hétfő"
+          },
+          "tuesday": {
+            "string": "Kedd"
+          },
+          "wednesday": {
+            "string": "Szerda"
+          },
+          "thursday": {
+            "string": "Csütörtök"
+          },
+          "friday": {
+            "string": "Péntek"
+          },
+          "saturday": {
+            "string": "Szombat"
+          },
+          "sunday": {
+            "string": "Vasárnap"
+          }
+        }
+      },
+      "response": {
+        "interval_days": {
+          "label": {
+            "string": "Automatikus válaszok minimális időtávolsága (napokban)"
+          },
+          "placeholder": {
+            "string": "Hagyja üresen az alapértelmezett viselkedéshez"
+          },
+          "description": {
+            "string": "Megakadályozza az ismétlődő szabadságválaszok küldését ebben az időszakban (RFC 5230 :napok)."
+          }
+        },
+        "send_always": {
+          "label": {
+            "string": "Mindig küldje el a szabadságüzenet válaszként"
+          },
+          "description": {
+            "string": "A szabadságüzenet a szűrők alkalmazása előtt kerül elküldésre."
+          }
+        }
+      }
+    }
+  }
+}

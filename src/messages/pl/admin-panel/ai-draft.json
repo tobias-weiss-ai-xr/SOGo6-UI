@@ -1,0 +1,40 @@
+{
+  "AI_DRAFT": {
+    "title": {
+      "string": "Asystent projektów odpowiedzi AI"
+    },
+    "description": {
+      "string": "Sugestie odpowiedzi z dostosowaniem tonu. Generuje kontekstowe projekty odpowiedzi."
+    },
+    "input": {
+      "title": {
+        "string": "Oryginalny e-mail"
+      },
+      "email": {
+        "string": "Treść e-maila"
+      },
+      "placeholder": {
+        "string": "Wklej e-mail, na który chcesz odpowiedzieć..."
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Sugerowana odpowiedź"
+      },
+      "empty": {
+        "string": "Wprowadź tekst e-maila i wybierz ton"
+      }
+    },
+    "suggest": {
+      "string": "Zaproponuj odpowiedź"
+    },
+    "errors": {
+      "empty": {
+        "string": "Wprowadź tekst e-maila"
+      },
+      "fail": {
+        "string": "Generowanie sugestii nie powiodło się"
+      }
+    }
+  }
+}

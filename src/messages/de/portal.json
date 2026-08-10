@@ -1,0 +1,6 @@
+{ "PORTAL": {
+    "title": { "string": "App-Portal" },
+    "description": { "string": "SOGo 6 integriert mit dem Univention Nubus Portal. Verbundene Apps verwalten, nubusintercom konfigurieren und Integrationen starten." },
+    "launch": { "string": "Starten" },
+    "settings": { "string": "Intercom-Einstellungen" }
+}}

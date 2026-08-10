@@ -1,0 +1,61 @@
+{
+  "AP_BULK": {
+    "title": {
+      "string": "Hromadné správy uživatelů"
+    },
+    "description": {
+      "string": "Hromadný import a export uživatelů pomocí souborů CSV."
+    },
+    "export": {
+      "title": {
+        "string": "Exportovat uživatele"
+      },
+      "description": {
+        "string": "Stáhnout všechny uživatele jako soubor CSV."
+      },
+      "format": {
+        "string": "Soubor CSV (.csv)"
+      },
+      "button": {
+        "string": "Exportovat CSV"
+      },
+      "success": {
+        "string": "Export stažen"
+      },
+      "error": {
+        "string": "Export se nezdařil"
+      }
+    },
+    "import": {
+      "title": {
+        "string": "Importovat uživatele"
+      },
+      "description": {
+        "string": "Nahrajte soubor CSV s daty uživatelů pro vytvoření nebo aktualizaci účtů."
+      },
+      "dropzone": {
+        "string": "Klikněte pro nahrání CSV"
+      },
+      "button": {
+        "string": "Importovat CSV"
+      },
+      "remove": {
+        "string": "Odstranit soubor"
+      },
+      "success": {
+        "string": "Importováno: {created} vytvořeno, {updated} aktualizováno"
+      },
+      "error": {
+        "string": "Import se nezdařil"
+      }
+    },
+    "format": {
+      "title": {
+        "string": "Formát CSV"
+      },
+      "hint": {
+        "string": "První řádek musí být záhlaví. Požadována jsou pole: uid, cn, sn, givenName, mail. Pole password je nepovinné (náhodné, pokud prázdné)."
+      }
+    }
+  }
+}

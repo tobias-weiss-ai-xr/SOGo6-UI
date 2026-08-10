@@ -1,0 +1,54 @@
+{
+  "AI_ENRICH": {
+    "title": {
+      "string": "联系人信息补充"
+    },
+    "description": {
+      "string": "从邮件签名中提取联系人信息"
+    },
+    "input": {
+      "title": {
+        "string": "输入"
+      },
+      "signature": {
+        "string": "签名文本"
+      },
+      "placeholder": {
+        "string": "在此粘贴邮件签名..."
+      }
+    },
+    "output": {
+      "title": {
+        "string": "提取的数据"
+      },
+      "empty": {
+        "string": "数据将在此显示"
+      }
+    },
+    "field": {
+      "phone": {
+        "string": "电话"
+      },
+      "title": {
+        "string": "职位"
+      },
+      "company": {
+        "string": "公司"
+      },
+      "location": {
+        "string": "位置"
+      }
+    },
+    "extract": {
+      "string": "提取"
+    },
+    "errors": {
+      "empty": {
+        "string": "请输入文本"
+      },
+      "fail": {
+        "string": "提取失败"
+      }
+    }
+  }
+}

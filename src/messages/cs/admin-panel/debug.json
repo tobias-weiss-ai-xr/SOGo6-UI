@@ -1,0 +1,52 @@
+{
+  "AP_DEBUG": {
+    "title": {
+      "string": "Ladění poštovní schránky"
+    },
+    "description": {
+      "string": "Diagnostický nástroj pro řešení problémů s doručováním pošty. Zobrazte zdrojový kód e-mailu nebo zpracované hlavičky."
+    },
+    "query": {
+      "title": {
+        "string": "Dotaz pro ladění"
+      },
+      "button": {
+        "string": "Zkontrolovat"
+      }
+    },
+    "labels": {
+      "user": {
+        "string": "Uživatel"
+      },
+      "folder": {
+        "string": "Složka IMAP"
+      },
+      "mail_uid": {
+        "string": "UID zprávy"
+      },
+      "select_user": {
+        "string": "Vyberte uživatele..."
+      }
+    },
+    "result": {
+      "raw": {
+        "title": {
+          "string": "Zdrojový kód e-mailu"
+        }
+      },
+      "headers": {
+        "title": {
+          "string": "Zpracované hlavičky"
+        }
+      }
+    },
+    "errors": {
+      "fields_required": {
+        "string": "Uživatel, složka a UID zprávy jsou povinné"
+      },
+      "fetch_failed": {
+        "string": "Nepodařilo se načíst ladicí data"
+      }
+    }
+  }
+}

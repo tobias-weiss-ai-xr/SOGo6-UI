@@ -47,6 +47,7 @@ jest.mock('@/features/mails/store/mails-api', () => ({
     },
     isLoading: false,
   })),
+  useBatchMailActionMutation: jest.fn(() => [jest.fn()]),
 }))
 
 jest.mock('next/navigation', () => ({

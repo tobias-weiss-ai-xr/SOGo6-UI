@@ -1,0 +1,68 @@
+{
+    "AP_HELPDESK": {
+        "title": {
+            "string": "Helpdesk / Ticketing"
+        },
+        "description": {
+            "string": "Auto-create tickets from emails with assignment, priority, SLA tracking, and response history."
+        },
+        "form": {
+            "create": {
+                "string": "New Ticket"
+            },
+            "cancel": {
+                "string": "Mégsem"
+            },
+            "title": {
+                "string": "Create Ticket"
+            },
+            "subject": {
+                "string": "Subject"
+            },
+            "priority": {
+                "string": "Priority"
+            },
+            "description": {
+                "string": "Leírás"
+            },
+            "requester": {
+                "string": "Requester Email"
+            },
+            "assignee": {
+                "string": "Assignee Email"
+            },
+            "sla": {
+                "string": "SLA (hours)"
+            },
+            "submit": {
+                "string": "Create Ticket"
+            }
+        },
+        "create": {
+            "success": {
+                "string": "Ticket created"
+            },
+            "error": {
+                "string": "Failed to create"
+            }
+        },
+        "update": {
+            "success": {
+                "string": "Ticket updated"
+            },
+            "error": {
+                "string": "Failed to update"
+            }
+        },
+        "list": {
+            "empty": {
+                "string": "No tickets yet."
+            }
+        },
+        "errors": {
+            "fields": {
+                "string": "Subject and description are required"
+            }
+        }
+    }
+}

@@ -1,0 +1,49 @@
+{
+  "AI_SPAM": {
+    "title": {
+      "string": "Inteligentny filtr spamu"
+    },
+    "description": {
+      "string": "Ocena spamu w czasie rzeczywistym z analizą wzorców, reputacją nadawcy i heurystykami treści."
+    },
+    "input": {
+      "title": {
+        "string": "Email do oceny"
+      },
+      "subject": {
+        "string": "Temat"
+      },
+      "sender": {
+        "string": "Nadawca"
+      },
+      "body": {
+        "string": "Treść"
+      },
+      "placeholder": {
+        "string": "Wklej treść emaila..."
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Wynik spamu"
+      },
+      "empty": {
+        "string": "Wprowadź treść emaila i kliknij Oceń"
+      },
+      "signals": {
+        "string": "Wykryte sygnały"
+      }
+    },
+    "score": {
+      "string": "Oceń email"
+    },
+    "errors": {
+      "empty": {
+        "string": "Wprowadź temat lub treść"
+      },
+      "fail": {
+        "string": "Ocena nie powiodła się"
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "AI_CLASSIFY": {
+    "title": {
+      "string": "Phân loại Email Thông minh"
+    },
+    "description": {
+      "string": "Tự động gán nhãn email: bản tin, hóa đơn, thông báo, mạng xã hội, cá nhân."
+    },
+    "input": {
+      "title": {
+        "string": "Email Đầu vào"
+      },
+      "subject": {
+        "string": "Tiêu đề"
+      },
+      "sender": {
+        "string": "Người gửi"
+      },
+      "body": {
+        "string": "Nội dung"
+      },
+      "placeholder": {
+        "string": "Dán nội dung email..."
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Kết quả Phân loại"
+      },
+      "empty": {
+        "string": "Nhập văn bản và nhấn Phân loại"
+      }
+    },
+    "classify": {
+      "string": "Phân loại"
+    },
+    "errors": {
+      "empty": {
+        "string": "Vui lòng nhập nội dung email"
+      },
+      "fail": {
+        "string": "Phân loại thất bại"
+      }
+    }
+  }
+}

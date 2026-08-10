@@ -1,0 +1,34 @@
+{
+  "AP_HEALTH": {
+    "title": {
+      "string": "Systemstatus"
+    },
+    "description": {
+      "string": "Realtidsstatus for alle tjenester i SOGo-stakken"
+    },
+    "status": {
+      "all_ok": {
+        "string": "Alle systemer fungerer"
+      },
+      "degraded": {
+        "string": "Nedsat funktion"
+      }
+    },
+    "overview": {
+      "uptime": {
+        "string": "Driftstid"
+      },
+      "version": {
+        "string": "Version"
+      },
+      "services": {
+        "string": "Tjenester i god stand"
+      }
+    },
+    "errors": {
+      "load_failed": {
+        "string": "Kunne ikke indlæse sundhedsdata"
+      }
+    }
+  }
+}

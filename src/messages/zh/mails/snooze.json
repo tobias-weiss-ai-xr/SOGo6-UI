@@ -1,0 +1,39 @@
+{
+  "MAIL_SNOOZE": {
+    "title": {
+      "string": "暂时隐藏"
+    },
+    "description": {
+      "string": "选择这封邮件何时重新出现在收件箱中。"
+    },
+    "presets": {
+      "later_today": {
+        "string": "今天稍后"
+      },
+      "tomorrow": {
+        "string": "明天"
+      },
+      "this_weekend": {
+        "string": "本周末"
+      },
+      "next_week": {
+        "string": "下周"
+      }
+    },
+    "pick_date": {
+      "string": "选择日期和时间"
+    },
+    "pick_date_placeholder": {
+      "string": "选择日期..."
+    },
+    "snooze_button": {
+      "string": "暂时隐藏"
+    },
+    "success": {
+      "string": "邮件已暂时隐藏"
+    },
+    "error": {
+      "string": "暂时隐藏邮件失败"
+    }
+  }
+}

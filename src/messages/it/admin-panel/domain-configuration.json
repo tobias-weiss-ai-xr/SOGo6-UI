@@ -1,0 +1,1285 @@
+{
+    "AP_DOMAIN_CONFIGURATION": {
+        "origin": {
+            "rule": {
+                "string": "(dalla regola {origin})"
+            },
+            "default": {
+                "string": "(dalla configurazione predefinita)"
+            },
+            "domain": {
+                "string": "(dal dominio {origin})"
+            }
+        },
+        "tabs": {
+            "auth_settings": {
+                "string": "Impostazioni di autenticazione"
+            },
+            "user_source": {
+                "string": "Sorgente Utente"
+            },
+            "user_module_settings": {
+                "string": "Impostazioni Utente e Moduli"
+            },
+            "mail_settings": {
+                "string": "Impostazioni Posta"
+            },
+            "calendar_contact_settings": {
+                "string": "Impostazioni Calendario e Contatti"
+            }
+        },
+        "properties": {
+            "SOGO_D_AUTH_TYPE": {
+                "name": {
+                    "string": "Tipo di autenticazione"
+                },
+                "description": {
+                    "string": "Seleziona il metodo di autenticazione per gli utenti. 'Plain' significa il classico nome utente/password"
+                },
+                "developer_comment": "Options might include LDAP, SQL, etc."
+            },
+            "SOGO_D_CAS_URL": {
+                "name": {
+                    "string": "URL del server CAS"
+                },
+                "description": {
+                    "string": "Inserisci l'URL completo del tuo server CAS"
+                },
+                "developer_comment": ""
+            },
+            "SOGO_D_CAS_LOGOUT_ENABLED": {
+                "name": {
+                    "string": "Abilita logout con CAS"
+                },
+                "description": {
+                    "string": "Seleziona la casella per consentire all'utente di disconnettersi da SOGo e dal server CAS"
+                },
+                "developer_comment": ""
+            },
+            "SOGO_D_OPENID_CONFIG_URL": {
+                "name": {
+                    "string": "URL dell'endpoint del provider OpenID"
+                },
+                "description": {
+                    "string": "Esempio: https://myopenid.net/.well-known/openid-configuration"
+                },
+                "developer_comment": ""
+            },
+            "SOGO_D_OPENID_CLIENT_NAME": {
+                "name": {
+                    "string": "Nome client OpenID"
+                },
+                "description": {
+                    "string": "Nome del tuo client OpenID"
+                },
+                "developer_comment": ""
+            },
+            "SOGO_D_OPENID_CLIENT_SECRET": {
+                "name": {
+                    "string": "Segreto client OpenID"
+                },
+                "description": {
+                    "string": "Segreto del tuo client OpenID"
+                },
+                "developer_comment": ""
+            },
+            "SOGO_D_OPENID_SCOPE": {
+                "name": {
+                    "string": "Ambito client OpenID"
+                },
+                "description": {
+                    "string": "Ambito del tuo client OpenID. Predefinito a 'openid profile email'."
+                },
+                "developer_comment": ""
+            },
+            "SOGO_D_OPENID_EMAIL": {
+                "name": {
+                    "string": "Chiave email utente"
+                },
+                "description": {
+                    "string": "Chiave dove trovare la mail dell'utente nel profilo utente."
+                },
+                "developer_comment": ""
+            },
+            "SOGO_D_OPENID_TOKEN_CHECK_INTERVAL": {
+                "name": {
+                    "string": "Intervallo controllo token"
+                },
+                "description": {
+                    "string": "Per limitare il numero di richieste al server OpenID per verificare la validità del token, imposta un intervallo in secondi durante il quale il token non verrà ricontrollato dopo un primo successo. 0 significa che il token verrà sempre controllato. 60 significa che il token non verrà controllato per 60 secondi dopo un primo successo"
+                },
+                "developer_comment": ""
+            },
+            "SOGO_D_OPENID_REFRESH_ENABLE": {
+                "name": {
+                    "string": "Consenti meccanismo Refresh Token"
+                },
+                "description": {
+                    "string": "Se il tuo server OpenID gestisce il meccanismo di refresh token, SOGo lo utilizzerà"
+                },
+                "developer_comment": ""
+            },
+            "SOGO_D_OPENID_ENDSESSION_ENABLED": {
+                "name": {
+                    "string": "Abilita fine sessione dal server OpenID"
+                },
+                "description": {
+                    "string": "Per impostazione predefinita, l'utente può solo disconnettersi dalla webmail. Seleziona questa opzione per disconnettersi anche dal server OpenID, il che significa che l'utente verrà disconnesso da tutte le applicazioni che utilizzano il server OpenID. Funziona solo se il tuo OpenID ha un end_session_endpoint"
+                },
+                "developer_comment": ""
+            },
+            "SOGo_D_OPENID_FETCH_USER_PROFILE": {
+                "name": {
+                    "string": "Recupera profilo utente"
+                },
+                "description": {
+                    "string": "Per impostazione predefinita, SOGo recupera il profilo utente per ottenere l'email dell'utente. Deseleziona per ottenere l'email direttamente dal token. Deseleziona se stai utilizzando Microsoft Active Directory Federation Service (AD FS)"
+                },
+                "developer_comment": ""
+            },
+            "SOGO_D_SAML2_URL": {
+                "name": {
+                    "string": "SAML2 NON È ANCORA IMPLEMENTATO!!!!"
+                },
+                "description": {
+                    "string": "Buona fortuna alla persona che lo implementerà..."
+                },
+                "developer_comment": ""
+            },
+            "SOGO_D_PWD_CHANGE_ENABLED": {
+                "name": {
+                    "string": "Abilita cambio password"
+                },
+                "description": {
+                    "string": "Consenti agli utenti di cambiare la propria password da SOGo. Assicurati che la Sorgente Utente dia i permessi agli utenti per eseguire questa azione"
+                },
+                "developer_comment": ""
+            },
+            "SOGO_D_LOGIN_CHECK_MAX_ATTEMPT": {
+                "name": {
+                    "string": "Tentativi massimi di accesso falliti"
+                },
+                "description": {
+                    "string": "Imposta quante volte un utente può fallire l'accesso prima di essere bloccato. 0 significa nessun limite"
+                },
+                "developer_comment": ""
+            },
+            "SOGO_D_LOGIN_CHECK_TIME_SPAN": {
+                "name": {
+                    "string": "Intervallo di tempo tentativi falliti"
+                },
+                "description": {
+                    "string": "Imposta l'intervallo di tempo in secondi per contare i tentativi falliti. Esempio: 60 significa che l'utente può fallire solo fino al 'Numero massimo tentativi falliti' entro 60 secondi dal primo fallimento, prima di essere bloccato"
+                },
+                "developer_comment": ""
+            },
+            "SOGO_D_LOGIN_CHECK_BLOCK_TIME": {
+                "name": {
+                    "string": "Tempo di blocco dopo tentativi falliti"
+                },
+                "description": {
+                    "string": "Imposta per quanto tempo in secondi l'utente viene bloccato dopo troppi tentativi falliti."
+                },
+                "developer_comment": ""
+            },
+            "SOGO_D_PWD_RECOVERY": {
+                "name": {
+                    "string": "Abilita recupero password"
+                },
+                "description": {
+                    "string": "Consenti all'utente di impostare un metodo di recupero password"
+                },
+                "developer_comment": ""
+            },
+            "SOGO_D_PWD_RECOVERY_METHOD": {
+                "name": {
+                    "string": "Metodi di recupero password disponibili"
+                },
+                "description": {
+                    "string": "Scegli il metodo di recupero password disponibile per gli utenti"
+                },
+                "developer_comment": ""
+            },
+            "SOGO_D_PWD_RECOVERY_FORCE": {
+                "name": {
+                    "string": "Forza recupero password"
+                },
+                "description": {
+                    "string": "Forza gli utenti a impostare un metodo di recupero password."
+                },
+                "developer_comment": ""
+            },
+            "SOGO_D_PWD_RECOVERY_DELAY": {
+                "name": {
+                    "string": "Ritardo tra recuperi password"
+                },
+                "description": {
+                    "string": "Ritardo in secondi prima che un utente possa richiedere nuovamente il recupero password."
+                },
+                "developer_comment": ""
+            },
+            "SOGO_D_LOGIN_MFA": {
+                "name": {
+                    "string": "Abilita MFA"
+                },
+                "description": {
+                    "string": "Consenti all'utente di impostare un'autenticazione multifattore"
+                },
+                "developer_comment": ""
+            },
+            "SOGO_D_LOGIN_MFA_METHOD": {
+                "name": {
+                    "string": "Metodi MFA disponibili"
+                },
+                "description": {
+                    "string": "Scegli i metodi di autenticazione multifattore disponibili per gli utenti"
+                },
+                "developer_comment": ""
+            },
+            "SOGO_D_LOGIN_MFA_FORCE": {
+                "name": {
+                    "string": "Forza MFA"
+                },
+                "description": {
+                    "string": "Forza gli utenti a impostare l'autenticazione multifattore"
+                },
+                "developer_comment": ""
+            },
+            "US_UID": {
+                "name": {
+                    "string": "UID Sorgente Utente"
+                },
+                "description": {
+                    "string": "Scegli un nome univoco per questa Sorgente Utente, non verrà visualizzato agli utenti"
+                },
+                "developer_comment": "Only for SOGo to differentiate different User Sources"
+            },
+            "US_TYPE": {
+                "name": {
+                    "string": "Tipo Sorgente Utente"
+                },
+                "description": {
+                    "string": "Imposta il tipo della tua Sorgente Utente"
+                },
+                "developer_comment": "Only ldap and sql supported for now"
+            },
+            "US_LDAP_HOSTNAME": {
+                "name": {
+                    "string": "Hostname server LDAP"
+                },
+                "description": {
+                    "string": "Indica solo host e porta, non aggiungere altre informazioni"
+                },
+                "developer_comment": ""
+            },
+            "US_LDAP_BIND_DN": {
+                "name": {
+                    "string": "Bind DN"
+                },
+                "description": {
+                    "string": "Il DN del nome di accesso da utilizzare per il binding al tuo server."
+                },
+                "developer_comment": ""
+            },
+            "US_LDAP_BIND_DN_PWD": {
+                "name": {
+                    "string": "Password Bind DN"
+                },
+                "description": {
+                    "string": "La password per il tuo Bind DN"
+                },
+                "developer_comment": ""
+            },
+            "US_LDAP_BASE_DN": {
+                "name": {
+                    "string": "Base DN"
+                },
+                "description": {
+                    "string": "Base DN delle voci utente. Se il dominio della mail è presente, puoi aggiungere '%d' per aggiungerlo dinamicamente dalla mail dell'utente come: 'ou=%d,dc=example,dc=com'"
+                },
+                "developer_comment": ""
+            },
+            "US_LDAP_UID": {
+                "name": {
+                    "string": "Campo UID"
+                },
+                "description": {
+                    "string": "Campo con il login dell'utente, il login deve essere univoco in tutte le Sorgenti Utente e Domini"
+                },
+                "developer_comment": ""
+            },
+            "US_LDAP_CN": {
+                "name": {
+                    "string": "Campo CN"
+                },
+                "description": {
+                    "string": "Campo con il Nome Completo dell'utente"
+                },
+                "developer_comment": ""
+            },
+            "US_LDAP_ID": {
+                "name": {
+                    "string": "Campo ID"
+                },
+                "description": {
+                    "string": "Campo che inizia un DN utente se il Campo Bind non viene utilizzato (esempio: se hai 'dn: uid=sogo,ou=users,dc=example,dc=org' questo valore dovrebbe essere 'uid')"
+                },
+                "developer_comment": ""
+            },
+            "US_LDAP_SCOPE": {
+                "name": {
+                    "string": "Ambito di ricerca LDAP"
+                },
+                "description": {
+                    "string": "Indica l'insieme di voci al di sotto o al livello del BaseDN che possono essere considerate corrispondenze potenziali per una richiesta di ricerca"
+                },
+                "developer_comment": "https://ldapwiki.com/wiki/Wiki.jsp?page=LDAP%20Search%20Scopes"
+            },
+            "US_LDAP_FILTER": {
+                "name": {
+                    "string": "Filtro LDAP"
+                },
+                "description": {
+                    "string": "Filtro aggiuntivo da utilizzare per le query LDAP.\nUsa '=', '!=', 'AND', 'OR' e le parentesi. Esempio: '(objectClass='mailUser' OR objectClass!='mailGroup') AND accountStatus='active'"
+                },
+                "developer_comment": "Use SOGo's syntax and not ldap syntax for filter"
+            },
+            "US_LDAP_PWD_POLICY": {
+                "name": {
+                    "string": "Policy password LDAP"
+                },
+                "description": {
+                    "string": "Indica che il tuo server LDAP ha una Policy Password con nozione di scadenza e periodo di grazia"
+                },
+                "developer_comment": "https://ldapwiki.com/wiki/Wiki.jsp?page=Password%20Policy"
+            },
+            "US_LDAP_PWD_UPDATE_SAMBA": {
+                "name": {
+                    "string": "Aggiorna password Samba LDAP"
+                },
+                "description": {
+                    "string": "Se un utente cambia la password, aggiorna anche sambaNTPassword e sambaLMPassword"
+                },
+                "developer_comment": ""
+            },
+            "US_LDAP_BIND_AS_USER": {
+                "name": {
+                    "string": "Bind come utente"
+                },
+                "description": {
+                    "string": "Dopo l'autenticazione, utilizza il DN dell'utente per il binding"
+                },
+                "developer_comment": ""
+            },
+            "US_LDAP_BIND_FIELD": {
+                "name": {
+                    "string": "Campi bind aggiuntivi"
+                },
+                "description": {
+                    "string": "Campi bind aggiuntivi da utilizzare. Ad esempio, se aggiungi 'mail', il bind avrà anche 'mail=<login>'"
+                },
+                "developer_comment": ""
+            },
+            "US_LDAP_ATTR_FIELD": {
+                "name": {
+                    "string": "Campi attributo"
+                },
+                "description": {
+                    "string": "Attributi restituiti durante la query di ricerca. Il valore predefinito '*' significa tutti. Fai attenzione perché questo può influenzare pesantemente il comportamento di SOGo"
+                },
+                "developer_comment": ""
+            },
+            "US_LDAP_GROUP_CLASS": {
+                "name": {
+                    "string": "Classe gruppo LDAP"
+                },
+                "description": {
+                    "string": "Imposta la classe LDAP che indicherà a SOGo che si tratta di un gruppo e non di un singolo utente"
+                },
+                "developer_comment": ""
+            },
+            "US_SQL_USER_URL": {
+                "name": {
+                    "string": "URL utente SQL"
+                },
+                "description": {
+                    "string": "URL del database per la tabella utenti. Esempio: postgresql://sogo:sogo@127.0.0.1:5432/sogo/sogo_user"
+                },
+                "developer_comment": ""
+            },
+            "US_SQL_PREPEND_PWD_SCHEME": {
+                "name": {
+                    "string": "Schema password utente SQL"
+                },
+                "description": {
+                    "string": "Seleziona YES se la password è memorizzata nel database come {schema}valoreCrittografato"
+                },
+                "developer_comment": ""
+            },
+            "US_SQL_USER_FILTER": {
+                "name": {
+                    "string": "Filtro utente SQL"
+                },
+                "description": {
+                    "string": "Condizioni WHERE aggiuntive da aggiungere alla query SQL. Esempio: 'active=1'"
+                },
+                "developer_comment": ""
+            },
+            "US_SQL_DOMAIN_FIELD": {
+                "name": {
+                    "string": "Dominio utente SQL"
+                },
+                "description": {
+                    "string": "Imposta il nome della colonna del dominio dell'utente. Se impostato, ogni query SQL aggiungerà '<colonna_dominio> = <dominio_utente>' alla sua condizione WHERE."
+                },
+                "developer_comment": ""
+            },
+            "US_MAPPING": {
+                "name": {
+                    "string": "Mapping Sorgente Utente"
+                },
+                "description": {
+                    "string": "Mappa il campo della tua Sorgente Utente all'attributo del contatto"
+                },
+                "developer_comment": ""
+            },
+            "US_CAN_AUTH": {
+                "name": {
+                    "string": "Può autenticarsi"
+                },
+                "description": {
+                    "string": "Gli utenti di questa Sorgente Utente possono accedere alla webmail"
+                },
+                "developer_comment": ""
+            },
+            "US_PWD_ALGO": {
+                "name": {
+                    "string": "Algoritmo password Sorgente Utente"
+                },
+                "description": {
+                    "string": "Algoritmo password utilizzato da questa sorgente utente. Obbligatorio per una sorgente utente SQL. Opzionale per LDAP: necessario solo se permetti agli utenti di cambiare la propria password"
+                },
+                "developer_comment": ""
+            },
+            "US_SIM_KEY_TYPE": {
+                "name": {
+                    "string": "Tipo chiave simmetrica algoritmo password"
+                },
+                "description": {
+                    "string": "Indica come memorizzi la chiave simmetrica del tuo algoritmo password"
+                },
+                "developer_comment": ""
+            },
+            "US_SIM_KEY_VALUE": {
+                "name": {
+                    "string": "Valore chiave simmetrica algoritmo password"
+                },
+                "description": {
+                    "string": "Il valore dipende dal tipo.\nSe 'path', inserisci qui il percorso del file dove SOGo troverà la tua chiave simmetrica.\nSe 'env', imposta il nome della variabile d'ambiente dove si trova la chiave.\nSe 'plain', inserisci direttamente la chiave"
+                },
+                "developer_comment": ""
+            },
+            "US_PWD_POLICY": {
+                "name": {
+                    "string": "Policy password utente"
+                },
+                "description": {
+                    "string": "Seleziona la casella per aggiungere una policy sulla password dell'utente. Questa policy verrà utilizzata quando l'utente la cambia o se abiliti il 'controllo della robustezza della password al login'"
+                },
+                "developer_comment": ""
+            },
+            "US_PWD_LEN_MIN": {
+                "name": {
+                    "string": "Lunghezza minima password utente"
+                },
+                "description": {
+                    "string": "Lunghezza minima di una password utente, inclusiva. Minimo 4."
+                },
+                "developer_comment": ""
+            },
+            "US_PWD_LEN_MAX": {
+                "name": {
+                    "string": "Lunghezza massima password utente"
+                },
+                "description": {
+                    "string": "Lunghezza massima di una password utente, inclusiva. 0 significa nessun limite"
+                },
+                "developer_comment": ""
+            },
+            "US_PWD_UPPERCASE_MIN": {
+                "name": {
+                    "string": "Minimo maiuscole password utente"
+                },
+                "description": {
+                    "string": "Numero minimo di lettere maiuscole. 0 significa nessun limite"
+                },
+                "developer_comment": ""
+            },
+            "US_PWD_LOWERCASE_MIN": {
+                "name": {
+                    "string": "Minimo minuscole password utente"
+                },
+                "description": {
+                    "string": "Numero minimo di lettere minuscole. 0 significa nessun limite"
+                },
+                "developer_comment": ""
+            },
+            "US_PWD_DIGITS_MIN": {
+                "name": {
+                    "string": "Minimo cifre password utente"
+                },
+                "description": {
+                    "string": "Numero minimo di cifre. 0 significa nessun limite"
+                },
+                "developer_comment": ""
+            },
+            "US_PWD_SPECIAL_ALLOWED": {
+                "name": {
+                    "string": "Caratteri speciali consentiti password"
+                },
+                "description": {
+                    "string": "Elenca i caratteri speciali consentiti nelle password"
+                },
+                "developer_comment": ""
+            },
+            "US_PWD_SPECIAL_MIN": {
+                "name": {
+                    "string": "Minimo caratteri speciali password"
+                },
+                "description": {
+                    "string": "Numero minimo di caratteri speciali. 0 significa nessun limite"
+                },
+                "developer_comment": ""
+            },
+            "US_MAIL": {
+                "name": {
+                    "string": "Campo mail utente"
+                },
+                "description": {
+                    "string": "Campo dove trovare la mail dell'utente. Campi aggiuntivi possono essere impostati dopo il campo mail principale per indicare gli alias dell'utente."
+                },
+                "developer_comment": ""
+            },
+            "US_MAIL_SERVER_LOGIN": {
+                "name": {
+                    "string": "Login server di posta utente"
+                },
+                "description": {
+                    "string": "Da impostare solo se il login dell'utente al server di posta (imap) è diverso dalla sua mail principale. Imposta qui il campo dove trovare il suo login"
+                },
+                "developer_comment": ""
+            },
+            "US_MAIL_FILTERING_LOGIN": {
+                "name": {
+                    "string": "Login filtro posta utente"
+                },
+                "description": {
+                    "string": "Da impostare solo se il login dell'utente al server di filtro posta (sieve) è diverso dalla sua mail principale. Imposta qui il campo dove trovare il suo login"
+                },
+                "developer_comment": ""
+            },
+            "US_MAIL_OUTGOING_LOGIN": {
+                "name": {
+                    "string": "Login posta in uscita utente"
+                },
+                "description": {
+                    "string": "Da impostare solo se il login dell'utente al server di posta in uscita (smtp) è diverso dalla sua mail principale. Imposta qui il campo dove trovare il suo login"
+                },
+                "developer_comment": ""
+            },
+            "US_KIND": {
+                "name": {
+                    "string": "Tipo utente"
+                },
+                "description": {
+                    "string": "Imposta il campo dove si trova il tipo di utente ('user', 'resource' o 'group')"
+                },
+                "developer_comment": ""
+            },
+            "US_IS_ADDRESSBOOK": {
+                "name": {
+                    "string": "Sorgente Utente è Rubrica"
+                },
+                "description": {
+                    "string": "Imposta il campo se gli utenti di questa Sorgente Utente possono essere trovati tramite completamento automatico o Rubrica Globale"
+                },
+                "developer_comment": ""
+            },
+            "US_SEARCH": {
+                "name": {
+                    "string": "Campo ricerca utente"
+                },
+                "description": {
+                    "string": "Campo aggiuntivo da aggiungere durante la ricerca di un utente. Esempio 'name' troverà l'utente per nome"
+                },
+                "developer_comment": ""
+            },
+            "US_DISPLAY_NAME": {
+                "name": {
+                    "string": "Nome visualizzato Sorgente Utente"
+                },
+                "description": {
+                    "string": "Nome visualizzato di questa sorgente utente, verrà mostrato nell'elenco della rubrica globale"
+                },
+                "developer_comment": ""
+            },
+            "US_AUTO_SEARCH": {
+                "name": {
+                    "string": "Visualizzazione automatica utente in GAB"
+                },
+                "description": {
+                    "string": "Cerca e visualizza automaticamente gli utenti nella Rubrica Globale quando selezionata. Altrimenti l'utente deve digitare per attivare la ricerca o digitare '.' per cercare tutti."
+                },
+                "developer_comment": ""
+            },
+            "US_AUTO_SEARCH_LIMIT": {
+                "name": {
+                    "string": "Limite completamento automatico utente"
+                },
+                "description": {
+                    "string": "Limita il numero massimo di utenti restituiti dopo una query di ricerca. 0 significa nessun limite"
+                },
+                "developer_comment": ""
+            },
+            "US_EXTRA_CONTACT_INFO": {
+                "name": {
+                    "string": "Informazioni contatto aggiuntive utente"
+                },
+                "description": {
+                    "string": "Indica quali informazioni aggiungere al risultato del completamento automatico. Viene mostrato come 'cn <extra> mail'"
+                },
+                "developer_comment": ""
+            },
+            "US_HIDDEN_USER": {
+                "name": {
+                    "string": "Utente nascosto"
+                },
+                "description": {
+                    "string": "Elenco di UID utente da non restituire mai ad altri per ricerca e completamento automatico"
+                },
+                "developer_comment": ""
+            },
+            "US_HAS_RESOURCE": {
+                "name": {
+                    "string": "Sorgente Utente ha risorse"
+                },
+                "description": {
+                    "string": "Seleziona la casella se questa Sorgente Utente ha risorse"
+                },
+                "developer_comment": ""
+            },
+            "US_RESOURCE_SEARCH": {
+                "name": {
+                    "string": "Ricerca risorse utente"
+                },
+                "description": {
+                    "string": "Campo di ricerca aggiuntivo per le risorse"
+                },
+                "developer_comment": ""
+            },
+            "US_RESOURCE_MULTIBOOKING": {
+                "name": {
+                    "string": "Prenotazione multipla risorse utente"
+                },
+                "description": {
+                    "string": "Campo dove trovare il valore di prenotazione multipla di una risorsa"
+                },
+                "developer_comment": ""
+            },
+            "US_RESOURCE_EXTRA_INFO": {
+                "name": {
+                    "string": "Informazioni extra risorsa utente"
+                },
+                "description": {
+                    "string": "Indica quali informazioni aggiungere al risultato del completamento automatico. Viene mostrato come 'cn <extra> mail'"
+                },
+                "developer_comment": ""
+            },
+            "SOGO_D_MODULE_ACCESS": {
+                "name": {
+                    "string": "Accesso moduli"
+                },
+                "description": {
+                    "string": "Definisce quali moduli sono disponibili tra posta, calendario e contatti"
+                },
+                "developer_comment": ""
+            },
+            "SOGO_D_MAPI_ACCESS": {
+                "name": {
+                    "string": "Abilita server MAPI"
+                },
+                "description": {
+                    "string": "Consente all'utente sul desktop di utilizzare il protocollo MAPI"
+                },
+                "developer_comment": ""
+            },
+            "SOGO_D_EAS_ACCESS": {
+                "name": {
+                    "string": "Abilita server EAS"
+                },
+                "description": {
+                    "string": "Consente all'utente su mobile di utilizzare il protocollo ActiveSync"
+                },
+                "developer_comment": ""
+            },
+            "SOGO_D_FOLDER_DISABLE_EXPORT": {
+                "name": {
+                    "string": "Disabilita esportazione cartelle"
+                },
+                "description": {
+                    "string": "Impedisce all'utente di esportare le proprie cartelle tra posta, calendario e contatti"
+                },
+                "developer_comment": ""
+            },
+            "SOGO_D_FOLDER_DISABLE_SHARING": {
+                "name": {
+                    "string": "Disabilita condivisione cartelle"
+                },
+                "description": {
+                    "string": "Impedisce all'utente di condividere le proprie cartelle tra posta, calendario e contatti"
+                },
+                "developer_comment": ""
+            },
+            "SOGO_D_FOLDER_DISABLE_SHARING_ANY_AUTH": {
+                "name": {
+                    "string": "Disabilita condivisione con utenti autenticati"
+                },
+                "description": {
+                    "string": "Impedisce all'utente di condividere le proprie cartelle con tutti gli utenti autenticati tra posta, calendario e contatti"
+                },
+                "developer_comment": ""
+            },
+            "SOGO_D_AUTOCOMPLETION_MIN_LEN": {
+                "name": {
+                    "string": "Caratteri minimi per completamento automatico"
+                },
+                "description": {
+                    "string": "Imposta il numero minimo di caratteri per attivare una ricerca di completamento automatico (3 significa che una ricerca verrà effettuata al terzo carattere)"
+                },
+                "developer_comment": ""
+            },
+            "SOGO_D_API_MAX_REQUEST": {
+                "name": {
+                    "string": "Numero massimo richieste API"
+                },
+                "description": {
+                    "string": "Imposta il numero massimo di richieste che un utente autenticato può effettuare in un determinato intervallo di tempo"
+                },
+                "developer_comment": ""
+            },
+            "SOGO_D_API_MAX_REQUEST_INTERVAL": {
+                "name": {
+                    "string": "Intervallo massimo richieste API"
+                },
+                "description": {
+                    "string": "Imposta l'intervallo di tempo in cui è limitato il 'Numero massimo richieste API'"
+                },
+                "developer_comment": ""
+            },
+            "SOGO_D_API_MAX_REQUEST_BLOCK_INTERVAL": {
+                "name": {
+                    "string": "Tempo di blocco dopo richieste API massime"
+                },
+                "description": {
+                    "string": "Imposta il tempo in cui un utente viene bloccato dall'effettuare richieste se è stato raggiunto il 'Numero massimo richieste API'"
+                },
+                "developer_comment": ""
+            },
+            "SOGO_D_IDENTITIES_ENABLED": {
+                "name": {
+                    "string": "Abilita identità"
+                },
+                "description": {
+                    "string": "Consente all'utente di creare identità di posta"
+                },
+                "developer_comment": ""
+            },
+            "SOGO_D_IDENTITIES_CUSTOM_FROM_ENABLED": {
+                "name": {
+                    "string": "Abilita 'Da' personalizzato"
+                },
+                "description": {
+                    "string": "Consente all'utente di impostare un 'Da' personalizzato nelle proprie identità"
+                },
+                "developer_comment": ""
+            },
+            "SOGO_D_IDENTITIES_CUSTOM_NAME_ENABLED": {
+                "name": {
+                    "string": "Abilita 'Nome' personalizzato"
+                },
+                "description": {
+                    "string": "Consente all'utente di impostare un Nome personalizzato nelle proprie identità"
+                },
+                "developer_comment": ""
+            },
+            "SOGO_D_IDENTITIES_CUSTOM_REPLY_TO_ENABLED": {
+                "name": {
+                    "string": "Abilita 'Rispondi a' personalizzato"
+                },
+                "description": {
+                    "string": "Consente all'utente di impostare un 'Rispondi a' personalizzato nelle proprie identità"
+                },
+                "developer_comment": ""
+            },
+            "SOGO_D_ALLOW_EXT_MAIL_ACCOUNT": {
+                "name": {
+                    "string": "Abilita account di posta esterno"
+                },
+                "description": {
+                    "string": "Consente all'utente di impostare account esterni"
+                },
+                "developer_comment": ""
+            },
+            "SOGO_D_ALLOW_EXT_AVATAR": {
+                "name": {
+                    "string": "Consenti utilizzo avatar esterno"
+                },
+                "description": {
+                    "string": "Consente all'utente di impostare preferenze per utilizzare avatar esterni (gravatar, libravatar...)"
+                },
+                "developer_comment": ""
+            },
+            "SOGO_D_MAIL_REFRESH_INTERVAL_ALLOWED": {
+                "name": {
+                    "string": "Imposta intervallo aggiornamento automatico posta"
+                },
+                "description": {
+                    "string": "Imposta i valori tra cui gli utenti possono scegliere per l''aggiornamento automatico della posta'"
+                },
+                "developer_comment": ""
+            },
+            "SOGO_D_MAIL_JUNK_SETTINGS": {
+                "name": {
+                    "string": "Tipo di attivazione per ham/spam"
+                },
+                "description": {
+                    "string": "Imposta un meccanismo per quando gli utenti contrassegnano la posta come spam/ham"
+                },
+                "developer_comment": ""
+            },
+            "SOGO_D_MAIL_JUNK_MAIL_SPAM": {
+                "name": {
+                    "string": "Posta per spam"
+                },
+                "description": {
+                    "string": "Imposta l'indirizzo email a cui verrà inoltrato lo spam"
+                },
+                "developer_comment": ""
+            },
+            "SOGO_D_MAIL_SERVER_TYPE": {
+                "name": {
+                    "string": "Tipo server di posta"
+                },
+                "description": {
+                    "string": "Imposta il tipo di server di posta"
+                },
+                "developer_comment": ""
+            },
+            "SOGO_D_IMAP_SERVER": {
+                "name": {
+                    "string": "Server IMAP"
+                },
+                "description": {
+                    "string": "Hostname del server IMAP"
+                },
+                "developer_comment": ""
+            },
+            "SOGO_D_IMAP_PORT": {
+                "name": {
+                    "string": "Porta IMAP"
+                },
+                "description": {
+                    "string": "Porta del server IMAP"
+                },
+                "developer_comment": ""
+            },
+            "SOGO_D_IMAP_ENCRYPTION": {
+                "name": {
+                    "string": "Crittografia IMAP"
+                },
+                "description": {
+                    "string": "Meccanismo di crittografia del server IMAP"
+                },
+                "developer_comment": ""
+            },
+            "SOGO_D_IMAP_AUTH_MECH": {
+                "name": {
+                    "string": "Meccanismo autenticazione IMAP"
+                },
+                "description": {
+                    "string": "Meccanismo di autenticazione IMAP. Non usare 'login' senza precauzione"
+                },
+                "developer_comment": ""
+            },
+            "SOGO_D_SOFT_EMAIL_QUOTA": {
+                "name": {
+                    "string": "Quota soft"
+                },
+                "description": {
+                    "string": "Imposta la percentuale della quota soft."
+                },
+                "developer_comment": ""
+            },
+            "SOGO_D_MAIL_PURGE_ALLOW": {
+                "name": {
+                    "string": "Abilita eliminazione"
+                },
+                "description": {
+                    "string": "La funzione di eliminazione consente all'utente di cancellare tutta la posta più vecchia di una data in una cartella o per l'intero account."
+                },
+                "developer_comment": ""
+            },
+            "SOGO_D_MAIL_PURGE_MIN_DATE": {
+                "name": {
+                    "string": "Giorni minimi eliminazione"
+                },
+                "description": {
+                    "string": "Imposta i giorni minimi che un utente può utilizzare per l'eliminazione. 0 significa che un utente può eliminare tutta la posta. 30 significa che un utente può eliminare solo la posta più vecchia di 30 giorni"
+                },
+                "developer_comment": ""
+            },
+            "SOGO_D_MAIL_FILTERING_ENABLED": {
+                "name": {
+                    "string": "Abilita filtraggio posta"
+                },
+                "description": {
+                    "string": "Consente all'utente di impostare filtri per la posta"
+                },
+                "developer_comment": ""
+            },
+            "SOGO_D_MAIL_FILTERING_TYPE": {
+                "name": {
+                    "string": "Tipo filtraggio posta"
+                },
+                "description": {
+                    "string": "Tipo di protocollo di filtraggio posta"
+                },
+                "developer_comment": ""
+            },
+            "SOGO_D_SIEVE_SERVER": {
+                "name": {
+                    "string": "Server Sieve"
+                },
+                "description": {
+                    "string": "Hostname del server sieve"
+                },
+                "developer_comment": ""
+            },
+            "SOGO_D_SIEVE_PORT": {
+                "name": {
+                    "string": "Porta Sieve"
+                },
+                "description": {
+                    "string": "Porta del server sieve"
+                },
+                "developer_comment": ""
+            },
+            "SOGO_D_SIEVE_ENCRYPTION": {
+                "name": {
+                    "string": "Crittografia Sieve"
+                },
+                "description": {
+                    "string": "Crittografia del server sieve"
+                },
+                "developer_comment": ""
+            },
+            "SOGO_D_SIEVE_AUTH_MECH": {
+                "name": {
+                    "string": "Meccanismo autenticazione Sieve"
+                },
+                "description": {
+                    "string": "Meccanismo di autenticazione per sieve. Se None"
+                },
+                "developer_comment": ""
+            },
+            "SOGO_D_SIEVE_FOLDER_ENCODING": {
+                "name": {
+                    "string": "Codifica Sieve"
+                },
+                "description": {
+                    "string": "Imposta la codifica utilizzata dal server sieve."
+                },
+                "developer_comment": ""
+            },
+            "SOGO_D_SIEVE_HEADER": {
+                "name": {
+                    "string": "Intestazione Sieve"
+                },
+                "description": {
+                    "string": "Imposta uno script sieve che verrà posto all'inizio di tutti gli script sieve degli utenti"
+                },
+                "developer_comment": ""
+            },
+            "SOGO_D_SIEVE_FOOTER": {
+                "name": {
+                    "string": "Piè di pagina Sieve"
+                },
+                "description": {
+                    "string": "Imposta uno script sieve che verrà posto alla fine di tutti gli script sieve degli utenti"
+                },
+                "developer_comment": ""
+            },
+            "SOGO_D_SIEVE_FIRST_FILTER": {
+                "name": {
+                    "string": "Script sieve iniziale"
+                },
+                "description": {
+                    "string": "Imposta lo script sieve iniziale per tutti i nuovi utenti. Potranno modificarlo in seguito"
+                },
+                "developer_comment": ""
+            },
+            "SOGO_D_VACATION_ENABLED": {
+                "name": {
+                    "string": "Consenti messaggio di vacanza"
+                },
+                "description": {
+                    "string": "Consente all'utente di impostare un messaggio di vacanza. Utilizza l'estensione sieve 'vacation' (rfc5230)"
+                },
+                "developer_comment": ""
+            },
+            "SOGO_D_VACATION_ALLOW_RESPONSE_ALWAYS": {
+                "name": {
+                    "string": "Consenti messaggio di vacanza sempre"
+                },
+                "description": {
+                    "string": "Consente all'utente di impostare un messaggio di vacanza che verrà inviato sempre senza periodo di grazia"
+                },
+                "developer_comment": ""
+            },
+            "SOGO_D_FORWARD_ENABLED": {
+                "name": {
+                    "string": "Consenti inoltro automatico"
+                },
+                "description": {
+                    "string": "Consente all'utente di impostare l'inoltro automatico. Utilizza il comando sieve 'redirect'"
+                },
+                "developer_comment": ""
+            },
+            "SOGO_D_FORWARD_ALLOW_USER_DOMAIN": {
+                "name": {
+                    "string": "Consenti inoltro al dominio utente"
+                },
+                "description": {
+                    "string": "Consente all'utente di impostare l'inoltro automatico a indirizzi all'interno dello stesso dominio"
+                },
+                "developer_comment": ""
+            },
+            "SOGO_D_FORWARD_ALLOW_SOGO_DOMAIN": {
+                "name": {
+                    "string": "Consenti inoltro al dominio SOGo"
+                },
+                "description": {
+                    "string": "Consente all'utente di impostare l'inoltro automatico a indirizzi conosciuti da SOGo"
+                },
+                "developer_comment": ""
+            },
+            "SOGO_D_FORWARD_ALLOW_EXT_DOMAIN": {
+                "name": {
+                    "string": "Consenti inoltro a dominio esterno"
+                },
+                "description": {
+                    "string": "Consente all'utente di impostare l'inoltro automatico a indirizzi esterni"
+                },
+                "developer_comment": ""
+            },
+            "SOGO_D_FORWARD_WHITELIST": {
+                "name": {
+                    "string": "Domini in whitelist per inoltro automatico"
+                },
+                "description": {
+                    "string": "Imposta domini specifici a cui l'utente può inoltrare"
+                },
+                "developer_comment": ""
+            },
+            "SOGO_D_FORWARD_BLACKLIST": {
+                "name": {
+                    "string": "Domini in blacklist per inoltro automatico"
+                },
+                "description": {
+                    "string": "Imposta domini specifici a cui è vietato inoltrare"
+                },
+                "developer_comment": ""
+            },
+            "SOGO_D_NOTIFY_ENABLED": {
+                "name": {
+                    "string": "Consenti notifiche"
+                },
+                "description": {
+                    "string": "Consente all'utente di impostare notifiche. Utilizza l'estensione sieve 'notify' (rfc5435)"
+                },
+                "developer_comment": ""
+            },
+            "SOGO_D_NOTIFY_ALLOW_USER_DOMAIN": {
+                "name": {
+                    "string": "Consenti notifica al dominio utente"
+                },
+                "description": {
+                    "string": "Consente all'utente di impostare notifiche a indirizzi all'interno dello stesso dominio"
+                },
+                "developer_comment": ""
+            },
+            "SOGO_D_NOTIFY_ALLOW_SOGO_DOMAIN": {
+                "name": {
+                    "string": "Consenti notifica al dominio SOGo"
+                },
+                "description": {
+                    "string": "Consente all'utente di impostare notifiche a indirizzi conosciuti da SOGo"
+                },
+                "developer_comment": ""
+            },
+            "SOGO_D_NOTIFY_ALLOW_EXT_DOMAIN": {
+                "name": {
+                    "string": "Consenti notifica a dominio esterno"
+                },
+                "description": {
+                    "string": "Consente all'utente di impostare notifiche a indirizzi esterni"
+                },
+                "developer_comment": ""
+            },
+            "SOGO_D_NOTIFY_WHITELIST": {
+                "name": {
+                    "string": "Domini in whitelist per notifiche"
+                },
+                "description": {
+                    "string": "Imposta domini specifici a cui l'utente può inviare notifiche"
+                },
+                "developer_comment": ""
+            },
+            "SOGO_D_NOTIFY_BLACKLIST": {
+                "name": {
+                    "string": "Domini in blacklist per notifiche"
+                },
+                "description": {
+                    "string": "Imposta domini specifici a cui è vietato inviare notifiche"
+                },
+                "developer_comment": ""
+            },
+            "SOGO_D_MAIL_OUTGOING_TYPE": {
+                "name": {
+                    "string": "Tipo server di posta in uscita"
+                },
+                "description": {
+                    "string": "Imposta il tipo di server di posta in uscita"
+                },
+                "developer_comment": ""
+            },
+            "SOGO_D_SMTP_SERVER": {
+                "name": {
+                    "string": "Server SMTP"
+                },
+                "description": {
+                    "string": "Hostname del server SMTP"
+                },
+                "developer_comment": ""
+            },
+            "SOGO_D_SMTP_PORT": {
+                "name": {
+                    "string": "Porta SMTP"
+                },
+                "description": {
+                    "string": "Porta del server SMTP"
+                },
+                "developer_comment": ""
+            },
+            "SOGO_D_SMTP_ENCRYPTION": {
+                "name": {
+                    "string": "Crittografia SMTP"
+                },
+                "description": {
+                    "string": "Meccanismo di crittografia del server SMTP"
+                },
+                "developer_comment": ""
+            },
+            "SOGO_D_SMTP_AUTH_MECH": {
+                "name": {
+                    "string": "Meccanismo autenticazione SMTP"
+                },
+                "description": {
+                    "string": "Meccanismo di autenticazione SMTP. Non usare 'None' senza precauzione"
+                },
+                "developer_comment": ""
+            },
+            "SOGO_D_SMTP_MASTER_ENABLED": {
+                "name": {
+                    "string": "Account master SMTP"
+                },
+                "description": {
+                    "string": "Utilizza un account master per tutti i messaggi di sistema (eventi, notifiche...)"
+                },
+                "developer_comment": ""
+            },
+            "SOGO_D_SMTP_MASTER_FROM": {
+                "name": {
+                    "string": "Da account master"
+                },
+                "description": {
+                    "string": "Da account master SMTP"
+                },
+                "developer_comment": ""
+            },
+            "SOGO_D_SMTP_MASTER_LOGIN": {
+                "name": {
+                    "string": "Login account master"
+                },
+                "description": {
+                    "string": "Email account master SMTP"
+                },
+                "developer_comment": ""
+            },
+            "SOGO_D_SMTP_MASTER_PWD": {
+                "name": {
+                    "string": "Password account master"
+                },
+                "description": {
+                    "string": "Password account master SMTP"
+                },
+                "developer_comment": ""
+            },
+            "SOGO_D_MAIL_MAX_SUBMISSION": {
+                "name": {
+                    "string": "Numero massimo email inviate"
+                },
+                "description": {
+                    "string": "Numero massimo di email che un utente può inviare in un determinato intervallo di tempo"
+                },
+                "developer_comment": ""
+            },
+            "SOGO_D_MAIL_MAX_SUBMISSION_INTERVAL": {
+                "name": {
+                    "string": "Intervallo massimo email inviate"
+                },
+                "description": {
+                    "string": "Intervallo di tempo in secondi in cui è limitato il 'Numero massimo email inviate'"
+                },
+                "developer_comment": ""
+            },
+            "SOGO_D_MAIL_MAX_SUBMISSION_BLOCK_INTERVAl": {
+                "name": {
+                    "string": "Tempo blocco massimo email inviate"
+                },
+                "description": {
+                    "string": "Tempo in cui a un utente è vietato inviare email dopo aver superato il 'Numero massimo email inviate'"
+                },
+                "developer_comment": ""
+            },
+            "SOGO_D_MAIL_MAX_RECIPIENT": {
+                "name": {
+                    "string": "Numero massimo destinatari per email"
+                },
+                "description": {
+                    "string": "Numero massimo di destinatari consentiti in un'unica email"
+                },
+                "developer_comment": ""
+            },
+            "SOGO_D_MAIL_CHECK_FROM": {
+                "name": {
+                    "string": "Controlla 'Da'"
+                },
+                "description": {
+                    "string": "Controlla se il mittente è una delle mail dell'utente (predefinita, alias, identità...) prima di richiedere il server di posta in uscita"
+                },
+                "developer_comment": ""
+            }
+        }
+    }
+}

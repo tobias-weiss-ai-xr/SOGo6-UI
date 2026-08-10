@@ -1,0 +1,19 @@
+{
+    "DATA_TABLE": {
+        "filter_placeholder": {
+            "string": "Suodata..."
+        },
+        "no_result": {
+            "string": "Ei tuloksia."
+        },
+        "previous": {
+            "string": "Edellinen"
+        },
+        "next": {
+            "string": "Seuraava"
+        },
+        "selected": {
+            "string": "{selected} of {total} row(s) selected."
+        }
+    }
+}
