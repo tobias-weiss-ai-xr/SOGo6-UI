@@ -17,22 +17,24 @@ describe('list-item-utils', () => {
     })
 
     it('should format dates from this week as day name', () => {
-      // Go back at least 1 day to ensure we don't land on today
-      const daysAgo = Math.max(1, now.getDay() === 0 ? 6 : now.getDay() - 1)
-      const dateFromThisWeek = new Date(
-        now.getTime() - daysAgo * 24 * 60 * 60 * 1000
-      )
-      const result = formatDate(dateFromThisWeek.toISOString(), 'en-US')
-      const weekdays = [
-        'Sunday',
-        'Monday',
-        'Tuesday',
-        'Wednesday',
-        'Thursday',
-        'Friday',
-        'Saturday',
-      ]
-      expect(weekdays).toContain(result)
+      // Use a fixed reference date to ensure deterministic "this week" calculation
+      // Wednesday Jan 8 2025, going back to Monday Jan 6 2025 (same week)
+      const refDate = new Date(2025, 0, 8) // Wed Jan 8
+      const realDateConstructor = Date
+      jest.spyOn(global, 'Date').mockImplementation(function (
+        this: any,
+        ...args: any[]
+      ) {
+        if (args.length === 0) return refDate
+        return new (Function.prototype.bind.apply(realDateConstructor, [
+          null,
+          ...args,
+        ]) as any)()
+      })
+      const mondayThisWeek = new Date(2025, 0, 6) // Mon Jan 6
+      const result = formatDate(mondayThisWeek.toISOString(), 'en-US')
+      expect(['Monday']).toContain(result)
+      jest.restoreAllMocks()
     })
 
     it('should format dates from previous years as "MMM D, YYYY"', () => {
@@ -43,17 +45,24 @@ describe('list-item-utils', () => {
     })
 
     it('should format dates from this year as "MMM D"', () => {
-      const mockNow = new Date(2025, 10, 8) // November 8, 2025
+      // Use a reference date in late November, checking a date from January same year
+      const mockNow = new Date(now.getFullYear(), 10, 8) // November 8 of current year
       const realDateConstructor = Date
-      jest.spyOn(global, 'Date').mockImplementation(function(this: any, ...args: any[]) {
+      jest.spyOn(global, 'Date').mockImplementation(function (
+        this: any,
+        ...args: any[]
+      ) {
         if (args.length === 0) {
           return mockNow
         }
-        return new (Function.prototype.bind.apply(realDateConstructor, [null, ...args]) as any)()
+        return new (Function.prototype.bind.apply(realDateConstructor, [
+          null,
+          ...args,
+        ]) as any)()
       })
 
-      // January 8, 2025 — same year, clearly outside current week
-      const sameYear = new Date(2025, 0, 8)
+      // January 8 of the same year — clearly outside current week
+      const sameYear = new Date(now.getFullYear(), 0, 8)
       const result = formatDate(sameYear.toISOString(), 'en-US')
       expect(result).toMatch(/^[A-Z][a-z]{2}\s\d{1,2}$/)
       jest.restoreAllMocks()
