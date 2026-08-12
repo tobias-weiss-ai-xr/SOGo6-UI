@@ -1,0 +1,9 @@
+# CRA Art. 14(2) — Coordinated vulnerability disclosure (RFC 9116)
+# See SECURITY.md in the repository root for the full policy.
+
+Contact: mailto:security@example.org
+Expires: 2027-12-31T23:59:59Z
+Encryption: https://example.org/pgp-key.txt
+Preferred-Languages: en, de
+Policy: https://github.com/tobias-weiss-ai-xr/SOGo6-dockerized/blob/main/SECURITY.md
+Canonical: https://vhrz2392.hrz.uni-marburg.de:9443/.well-known/security.txt
