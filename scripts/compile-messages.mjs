@@ -17,7 +17,12 @@ import { fileURLToPath } from 'url';
 const __dirname = join(fileURLToPath(import.meta.url), '..');
 const ROOT = join(__dirname, '..');
 const SRC_MESSAGES = join(ROOT, 'src', 'messages');
-const OUT_DIR = join(ROOT, 'src', 'compiled-messages');
+// request.ts (src/lib/i18n/) requires './compiled-messages/<locale>.json',
+// which resolves relative to src/lib/i18n/ — so the output MUST live there,
+// not in src/compiled-messages/ (previously a silent mismatch that made the
+// pre-compiled imports fail at build/dev time and fall back to slow dynamic
+// fs loading).
+const OUT_DIR = join(ROOT, 'src', 'lib', 'i18n', 'compiled-messages');
 
 // Locales to compile (mirrors src/lib/i18n/config.ts)
 const LOCALES = [
