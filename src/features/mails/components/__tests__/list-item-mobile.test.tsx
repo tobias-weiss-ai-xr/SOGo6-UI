@@ -1,6 +1,6 @@
 import { mailComposeReducer } from '@/features/mails/store'
 import { apiSlice } from '@/lib/redux/api/api-slice'
-import { configureStore, PreloadedState } from '@reduxjs/toolkit'
+import { configureStore } from '@reduxjs/toolkit'
 import '@testing-library/jest-dom'
 import { fireEvent, render, screen } from '@testing-library/react'
 import { Provider } from 'react-redux'
@@ -96,15 +96,17 @@ describe('ListItemMobile Component', () => {
   }
   const mockOnHandleCheckboxClick = jest.fn()
 
-  const createTestStore = (preloadedState?: PreloadedState<any>) => {
+  const createTestStore = (preloadedState?: Record<string, unknown>) => {
     return configureStore({
       reducer: {
         mailCompose: mailComposeReducer,
         [apiSlice.reducerPath]: apiSlice.reducer,
       },
       middleware: (getDefaultMiddleware) =>
-        getDefaultMiddleware().concat(apiSlice.middleware),
-      preloadedState,
+        getDefaultMiddleware().concat(
+          apiSlice.middleware as ReturnType<typeof getDefaultMiddleware>[number]
+        ),
+      preloadedState: preloadedState as never,
     })
   }
 

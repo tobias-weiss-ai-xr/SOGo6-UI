@@ -18,16 +18,12 @@ describe('getMailAttachmentNames', () => {
             name: 'report.pdf',
             contentType: 'application/pdf',
             size: 100,
-            downloadUri: '/dl/1',
-            displayUri: '/display/1',
           },
           {
             partId: '2',
             name: '  notes.txt  ',
             contentType: 'text/plain',
             size: 50,
-            downloadUri: '/dl/2',
-            displayUri: '/display/2',
           },
         ],
       }
@@ -46,8 +42,6 @@ describe('getMailAttachmentNames', () => {
             name: '',
             contentType: 'application/pdf',
             size: 100,
-            downloadUri: '/dl/1',
-            displayUri: '/display/1',
           },
         ],
       }
@@ -58,16 +52,12 @@ describe('getMailAttachmentNames', () => {
       const attachments = [
         {
           contentType: 'application/pdf',
-          displayUri: '/display/1',
-          downloadUri: '/dl/1',
           extension: 'pdf',
           filename: 'invoice.pdf',
           size: 200,
         },
         {
           contentType: 'text/plain',
-          displayUri: '/display/2',
-          downloadUri: '/dl/2',
           extension: 'txt',
           filename: '  readme.txt  ',
           size: 10,

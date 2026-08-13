@@ -2,6 +2,15 @@ import { render, screen } from '@testing-library/react'
 import { useTranslations } from 'next-intl'
 import { UseFormReturn } from 'react-hook-form'
 import { MODE_CREATE, MODE_EDIT } from '../../external-accounts-utils'
+import {
+  AUTHMECH_LOGIN,
+  AUTHMECH_PLAIN,
+  RECEIPT_POLICY_ALWAYS,
+  RECEIPT_POLICY_ASK,
+  RECEIPT_POLICY_NEVER,
+  SOCKET_ENC_EXPLICIT_TLS,
+  SOCKET_ENC_IMPLICIT_TLS,
+} from '../../store/mailboxes-api-types'
 import ExternalAccountSettingsTab from '../external-accounts-settings-tab'
 
 // ── Mocks ─────────────────────────────────────────────────────────────────────
@@ -128,16 +137,16 @@ const mockMailbox = {
   mail_server: {
     server: 'imap.example.com',
     port: 993,
-    encryption: 'implicit_tls',
-    auth_mech: 'plain',
+    encryption: SOCKET_ENC_IMPLICIT_TLS,
+    auth_mech: AUTHMECH_PLAIN,
     username: 'user',
     password: 'pass123456',
   },
   mail_outgoing: {
     server: 'smtp.example.com',
     port: 587,
-    encryption: 'explicit_tls',
-    auth_mech: 'login',
+    encryption: SOCKET_ENC_EXPLICIT_TLS,
+    auth_mech: AUTHMECH_LOGIN,
     username: 'user',
     password: 'pass123456',
   },
@@ -152,9 +161,9 @@ const mockMailbox = {
   ],
   receipts: {
     enabled: false,
-    not_to_cc: 'never',
-    outside_domain: 'never',
-    other: 'never',
+    not_to_cc: RECEIPT_POLICY_NEVER,
+    outside_domain: RECEIPT_POLICY_NEVER,
+    other: RECEIPT_POLICY_NEVER,
   },
 }
 

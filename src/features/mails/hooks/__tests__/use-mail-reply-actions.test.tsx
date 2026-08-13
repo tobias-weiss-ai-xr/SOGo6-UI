@@ -12,8 +12,8 @@ const mockCreateDraft = jest.fn((payload: unknown) => ({
   payload,
 }))
 const mockApiDataToMailComposeDraft = jest.fn()
-const mockBuildForwardedBody = jest.fn(() => '<div>forwarded</div>')
-const mockBuildQuotedReplyBody = jest.fn(() => '<div>quoted</div>')
+const mockBuildForwardedBody = jest.fn((...args: any[]) => '<div>forwarded</div>')
+const mockBuildQuotedReplyBody = jest.fn((...args: any[]) => '<div>quoted</div>')
 
 jest.mock('@/lib/redux/hooks', () => ({
   useAppDispatch: jest.fn(() => mockDispatch),
@@ -26,10 +26,13 @@ jest.mock('@/features/mails/store', () => ({
 }))
 
 jest.mock('@/features/mails/utils/mail-compose-from-api', () => ({
-  apiDataToMailComposeDraft: (...args: unknown[]) =>
+  apiDataToMailComposeDraft: // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  (...args: any[]) =>
     mockApiDataToMailComposeDraft(...args),
-  buildForwardedBody: (...args: unknown[]) => mockBuildForwardedBody(...args),
-  buildQuotedReplyBody: (...args: unknown[]) =>
+  buildForwardedBody: // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  (...args: any[]) => mockBuildForwardedBody(...args),
+  buildQuotedReplyBody: // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  (...args: any[]) =>
     mockBuildQuotedReplyBody(...args),
 }))
 
@@ -42,6 +45,7 @@ import { useMailReplyActions } from '../use-mail-reply-actions'
 const mockMail: ImapMessages = {
   id: '1',
   uid: '1',
+  size: 0,
   attachments: { count: 0, parts: [] },
   seen: true,
   answered: false,

@@ -1,4 +1,8 @@
 import { MailboxSettings } from '@/features/user-settings/mail/external-accounts/store/mailboxes-form-types'
+import {
+  SOCKET_ENC_EXPLICIT_TLS,
+  SOCKET_ENC_IMPLICIT_TLS,
+} from '@/features/user-settings/mail/external-accounts/store/mailboxes-api-types'
 import { render, screen, waitFor } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import { useTranslations } from 'next-intl'
@@ -103,7 +107,7 @@ function mockMailbox(overrides = {}): MailboxSettings {
     mail_server: {
       server: 'imap.example.com',
       port: 993,
-      encryption: 'implicit_tls',
+      encryption: SOCKET_ENC_IMPLICIT_TLS,
       auth_mech: 'plain',
       username: 'user',
       password: 'pass',
@@ -111,7 +115,7 @@ function mockMailbox(overrides = {}): MailboxSettings {
     mail_outgoing: {
       server: 'smtp.example.com',
       port: 587,
-      encryption: 'explicit_tls',
+      encryption: SOCKET_ENC_EXPLICIT_TLS,
       auth_mech: 'login',
       username: 'user',
       password: 'pass',
