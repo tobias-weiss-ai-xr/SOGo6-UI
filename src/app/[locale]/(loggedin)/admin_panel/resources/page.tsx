@@ -96,9 +96,9 @@ export default function AdminResourceManagementPage() {
       setError(null)
       
       try {
-        // Data is already loaded by the query hook
-        if (resourcesData?.data) {
-          setResources(resourcesData.data)
+        // Admin API returns the resource array directly
+        if (resourcesData) {
+          setResources(resourcesData)
         }
       } catch (err) {
         setError('Failed to load resources')
@@ -110,10 +110,10 @@ export default function AdminResourceManagementPage() {
     if (isFetchError && fetchError) {
       setError('Failed to load resources')
       setIsLoading(false)
-    } else if (!isFetching && resourcesData?.data) {
-      setResources(resourcesData.data)
+    } else if (!isFetching && resourcesData) {
+      setResources(resourcesData)
       setIsLoading(false)
-    } else if (!isFetching && !resourcesData?.data) {
+    } else if (!isFetching && !resourcesData) {
       setIsLoading(false)
     }
   }, [resourcesData, isFetching, isFetchError, fetchError])

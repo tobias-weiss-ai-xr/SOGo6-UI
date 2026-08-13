@@ -5,6 +5,8 @@ export interface EventAttendee {
   role?: 'required' | 'optional' | 'chair' | 'non-participant'
   status?: 'needs-action' | 'accepted' | 'declined' | 'tentative'
   rsvp?: boolean
+  // RFC 5545 CUTYPE — used for resource/room attendees (resource booking)
+  cutype?: 'individual' | 'group' | 'resource' | 'room' | 'unknown'
 }
 
 // Recurrence rule (RRULE)
