@@ -16,7 +16,7 @@ export interface VisuallyHiddenProps {
   children: ReactNode;
   className?: string;
   style?: React.CSSProperties;
-  tag?: keyof JSX.IntrinsicElements;
+  tag?: React.ElementType;
 }
 
 /**
@@ -112,7 +112,7 @@ export const AccessibleIcon: React.FC<AccessibleIconProps> = ({
   };
 
   const handleKeyDown = (e: React.KeyboardEvent) => {
-    if (e.key === 'Enter' || e.key === ' ' && onClick && !disabled) {
+    if ((e.key === 'Enter' || e.key === ' ') && onClick && !disabled) {
       e.preventDefault();
       onClick();
     }

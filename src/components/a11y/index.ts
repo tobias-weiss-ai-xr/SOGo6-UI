@@ -55,7 +55,7 @@ export {
 } from './LiveAnnouncer';
 
 export {
-  ErrorBoundaryComponent as ErrorBoundary,
+  ErrorBoundary,
   AccessibleErrorFallback,
   withErrorBoundary,
   type ErrorBoundaryProps,

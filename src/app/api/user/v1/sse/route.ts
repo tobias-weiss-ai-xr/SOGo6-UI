@@ -9,7 +9,10 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getConfig, getUseFakeApi } from '@/lib/api/client/config';
 
-const BACKEND_BASE_URL = getConfig().buildBaseUrl || process.env.NEXT_PUBLIC_API_BASE_URL || 'http://localhost:5000';
+const BACKEND_BASE_URL = getConfig().baseUrl || process.env.NEXT_PUBLIC_API_BASE_URL || 'http://localhost:5000';
+
+// Strip a trailing '/api/v1' if present — the SSE path below appends its own.
+const BACKEND_ROOT = BACKEND_BASE_URL.replace(/\/api\/v1\/?$/, '');
 
 export async function GET(_request: NextRequest) {
   // Check if we should use fake API
@@ -24,8 +27,8 @@ export async function GET(_request: NextRequest) {
 /**
  * Handle SSE with real backend
  */
-async function handleRealBackendSSE(_request: NextRequest): Promise<Response> {
-  const backendSseUrl = `${BACKEND_BASE_URL}/api/user/v1/sse`;
+async function handleRealBackendSSE(request: NextRequest): Promise<Response> {
+  const backendSseUrl = `${BACKEND_ROOT}/api/user/v1/sse`;
   
   try {
     // Build URL with query parameters
@@ -107,6 +110,7 @@ async function handleRealBackendSSE(_request: NextRequest): Promise<Response> {
  */
 async function handleFakeApiSSE(_request: NextRequest): Promise<Response> {
   // Create a stream of mock SSE events
+  let interval: ReturnType<typeof setInterval> | undefined;
   const stream = new ReadableStream({
     start(controller) {
       // Send initial connection message
@@ -124,7 +128,7 @@ async function handleFakeApiSSE(_request: NextRequest): Promise<Response> {
       ];
       
       // Send events every 5-10 seconds
-      const interval = setInterval(() => {
+      interval = setInterval(() => {
         const type = types[Math.floor(Math.random() * types.length)];
         const messageText = messages[Math.floor(Math.random() * messages.length)];
         
@@ -145,10 +149,11 @@ async function handleFakeApiSSE(_request: NextRequest): Promise<Response> {
         eventId++;
       }, 5000 + Math.random() * 5000);
       
-      // Cleanup on close
-      controller.onclose = () => {
-        clearInterval(interval);
-      };
+      // Cleanup when the consumer cancels the stream (no standard onclose)
+      return undefined;
+    },
+    cancel() {
+      clearInterval(interval);
     },
   });
   

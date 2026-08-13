@@ -156,9 +156,10 @@ async function cloneRequestBody(request: Request): Promise<BodyInit | null> {
       
       for (const [key, value] of formData.entries()) {
         if (value instanceof Blob) {
-          // Clone blob
+          // Clone blob — preserve filename when it's a File
           const blob = new Blob([value as BlobPart], { type: value.type });
-          newFormData.append(key, blob, (value as Blob).name);
+          const name = typeof (value as File).name === 'string' ? (value as File).name : 'upload';
+          newFormData.append(key, blob, name);
         } else {
           newFormData.append(key, value as string);
         }

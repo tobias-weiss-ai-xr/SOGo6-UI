@@ -306,7 +306,9 @@ export function useKeyboardNavigation(
   dependencies: any[] = []
 ) {
   useEffect(() => {
-    const handleKeyDown = (event: KeyboardEvent) => {
+    // The window listener receives NATIVE KeyboardEvents — use the DOM type,
+    // not React's synthetic KeyboardEvent.
+    const handleKeyDown = (event: globalThis.KeyboardEvent) => {
       const handler = Object.entries(handlers).find(([keyPattern]) => {
         const keys = keyPattern.split('+').map(k => k.trim());
         const modifiers = keys.filter(k => ['Ctrl', 'Shift', 'Alt', 'Meta', 'Cmd'].includes(k));
@@ -325,7 +327,11 @@ export function useKeyboardNavigation(
       });
       
       if (handler) {
-        const result = (handler[1] as KeyboardEventHandler)(event);
+        // The handlers only access native-compatible fields (key, ctrlKey,
+        // shiftKey, altKey, metaKey, preventDefault) — safe at the boundary.
+        const result = (handler[1] as KeyboardEventHandler)(
+          event as unknown as KeyboardEvent
+        );
         if (result === true) {
           event.preventDefault();
         }
@@ -355,7 +361,8 @@ export function useKeyboardShortcut(
       return;
     }
 
-    const handleKeyDown = (event: KeyboardEvent) => {
+    // Native window listener — use the DOM KeyboardEvent type.
+    const handleKeyDown = (event: globalThis.KeyboardEvent) => {
       const shift = event.shiftKey || modifiers.includes('Shift');
       const ctrl = event.ctrlKey || event.metaKey || modifiers.includes('Ctrl') || modifiers.includes('Cmd') || modifiers.includes('Meta');
       const alt = event.altKey || modifiers.includes('Alt');

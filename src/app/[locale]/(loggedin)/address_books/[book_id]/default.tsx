@@ -23,7 +23,7 @@ const AddressBooksPage: React.FC = () => {
       ) : (
         <AddressBookList
           items={items}
-          isLoading={isFetching}
+          isFetching={isFetching}
           serverSide
           totalPages={totalPages}
           currentPage={page}

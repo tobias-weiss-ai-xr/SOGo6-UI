@@ -190,7 +190,7 @@ export function useLiveAnnouncer(): LiveAnnouncerContextType {
 export interface AnnounceProps {
   message: string
   politeness?: PolitenessLevel
-  as?: keyof JSX.IntrinsicElements
+  as?: React.ElementType
   className?: string
   style?: React.CSSProperties
   children?: ReactNode

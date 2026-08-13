@@ -15,7 +15,7 @@ export interface AdminFormProps {
   //data: ConfigOption[] | undefined
   data: Record<string, unknown> | null // Changed from ConfigOption[]
   /** Callback when form is submitted with form values */
-  onSubmit: (_values: Record<string, unknown>) => void
+  onSubmit: (_values: Record<string, unknown>) => void | Promise<void> | Promise<Record<string, unknown> | null>
   /** Loading state for submit button */
   isLoading?: boolean
   /** Optional form title */
