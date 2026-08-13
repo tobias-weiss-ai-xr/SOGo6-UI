@@ -81,7 +81,6 @@ export const renderDynamicComponent = (
         onValueChange={(vals: string[]) => field.onChange(vals)}
         options={options}
         placeholder={`Select ${item.name.toLowerCase()}`}
-        multiple={true}
         disabled={field.disabled}
       />
     )
@@ -103,7 +102,6 @@ export const renderDynamicComponent = (
         }}
         options={options}
         placeholder={`Select ${item.name.toLowerCase()}`}
-        multiple={true}
         disabled={field.disabled}
       />
     )
@@ -301,7 +299,7 @@ export const createDynamicSchema = (data: Record<string, any>) => {
         }
 
         case 'dict':
-          fieldSchema = z.record(z.unknown())
+          fieldSchema = z.record(z.string(), z.unknown())
           break
 
         default:
@@ -542,7 +540,8 @@ export function createVisibilityResolver(
   schema: z.ZodTypeAny,
   meta: Record<string, any>
 ) {
-  const base = zodResolver(schema)
+  // zodResolver typing targets zod v3 (Zod3Type) — runtime works with zod 4
+  const base = zodResolver(schema as never)
   return async (values: any, context: any, options: any) => {
     try {
       const filtered = filterInvisibleFields(values, meta)

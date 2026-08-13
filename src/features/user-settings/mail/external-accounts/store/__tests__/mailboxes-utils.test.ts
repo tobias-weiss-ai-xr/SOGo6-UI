@@ -99,7 +99,8 @@ describe('mailboxes-utils', () => {
       })
       const result = mapApiToMailboxSettings(mailbox)
 
-      expect(result.identities).toBeUndefined()
+      // Normalized to an empty array (safer for consumers than undefined)
+      expect(result.identities).toEqual([])
     })
 
     it('maps receipts settings, using defaults for missing fields', () => {

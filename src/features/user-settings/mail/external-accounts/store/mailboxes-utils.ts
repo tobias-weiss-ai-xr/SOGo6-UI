@@ -1,5 +1,11 @@
 import { FAKE_PASSWORD_SENTINEL } from '../external-accounts-utils'
-import { IMAP, Mailbox, MailboxPOST, SMTP } from './mailboxes-api-types'
+import {
+  IMAP,
+  Mailbox,
+  MailboxPOST,
+  RECEIPT_POLICY_NEVER,
+  SMTP,
+} from './mailboxes-api-types'
 
 import { MailboxSettings } from './mailboxes-form-types'
 
@@ -26,7 +32,7 @@ export function mapApiToMailboxSettings(mailbox: Mailbox): MailboxSettings {
       username: mailbox.mail_outgoing?.username,
       auth_mech: mailbox.mail_outgoing?.auth_mech,
     },
-    identities: mailbox.identities?.map((identity) => ({
+    identities: (mailbox.identities ?? []).map((identity) => ({
       mail: identity.mail,
       name: identity.name,
       replyTo: identity.replyTo,
@@ -79,9 +85,9 @@ function mapMailboxSettingsToApiBase(
     // certificates: values.certificates ?? {},
     receipts: {
       enabled: values.receipts.enabled,
-      not_to_cc: values.receipts.not_to_cc,
-      outside_domain: values.receipts.outside_domain,
-      other: values.receipts.other,
+      not_to_cc: values.receipts.not_to_cc ?? RECEIPT_POLICY_NEVER,
+      outside_domain: values.receipts.outside_domain ?? RECEIPT_POLICY_NEVER,
+      other: values.receipts.other ?? RECEIPT_POLICY_NEVER,
     },
   }
 }
