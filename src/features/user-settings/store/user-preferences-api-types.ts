@@ -163,6 +163,8 @@ export interface UserPreferences {
   USER_CONTACT_CATEGORY: UserContactCategory
   USER_MAIL_GENERAL_SETTINGS: UserMailGeneral
   USER_MAIL_CATEGORY_SETTINGS: UserMailCategory
+  // Optional feature flags / permissions (backend-dependent)
+  permissions?: Record<string, boolean>
 }
 
 export interface UserPreferencesResponse {
