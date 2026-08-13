@@ -10,6 +10,3 @@ export {
   type ApiContextType,
 } from './use-api';
 
-// Re-export SSE and push notification hooks (if available)
-export * from './use-sse';
-export * from './use-push-notifications';

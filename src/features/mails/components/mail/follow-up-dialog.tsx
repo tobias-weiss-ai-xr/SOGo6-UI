@@ -61,8 +61,8 @@ export default function FollowUpDialog({
         <Calendar
           mode="single"
           selected={date}
-          onSelect={(d) => d && setDate(d)}
-          disabled={(d) => d < new Date()}
+          onSelect={(d: Date | undefined) => d && setDate(d)}
+          disabled={(d: Date) => d < new Date()}
           className="mx-auto"
         />
         <DialogFooter className="gap-2">

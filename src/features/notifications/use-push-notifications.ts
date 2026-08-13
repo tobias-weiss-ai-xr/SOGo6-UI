@@ -31,7 +31,7 @@ export function usePushNotifications() {
     setIsLoading(true)
     try {
       // Request permission if not granted
-      let perm = Notification.permission
+      let perm: NotificationPermission = Notification.permission
       if (perm !== 'granted') {
         perm = await Notification.requestPermission()
         setPermission(perm)
@@ -49,7 +49,9 @@ export function usePushNotifications() {
       // Subscribe to push
       const sub = await reg.pushManager.subscribe({
         userVisibleOnly: true,
-        applicationServerKey: _urlBase64ToUint8Array(publicKey),
+        applicationServerKey: _urlBase64ToUint8Array(
+          publicKey
+        ) as BufferSource,
       })
 
       // Send subscription to server
