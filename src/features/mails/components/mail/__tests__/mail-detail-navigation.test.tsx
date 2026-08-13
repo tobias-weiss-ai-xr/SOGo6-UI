@@ -66,8 +66,8 @@ describe('MailDetailNavigation', () => {
         canGoNext: false,
         goPrev: mockGoPrev,
         goNext: mockGoNext,
-        currentPosition: null,
-        totalInPage: null,
+        currentPosition: 0,
+        totalInPage: 0,
       })
 
       const { container } = render(<MailDetailNavigation />)

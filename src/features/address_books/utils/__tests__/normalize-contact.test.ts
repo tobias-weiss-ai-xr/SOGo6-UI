@@ -53,7 +53,7 @@ describe('normalizeContactsList', () => {
         ],
       },
       error_code: 'S000000',
-    })
+    } as never)
 
     expect(contacts).toHaveLength(1)
     expect(contacts[0].firstName).toBe('Alice')

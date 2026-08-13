@@ -26,7 +26,7 @@ import ImportDialog from './actions/import-dialog'
 import ExportDialog from './actions/export-dialog'
 import ShareForm from './forms/share'
 
-interface SidebarItemProps {
+export interface SidebarItemProps {
   name: string
   id: string
   isDefault?: boolean

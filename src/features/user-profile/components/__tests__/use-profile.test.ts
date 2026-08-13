@@ -16,8 +16,8 @@ jest.mock('../../store/profile-api', () => ({
 }))
 
 describe('useProfile', () => {
-  const mockUseGetUserProfileQuery = useGetUserProfileQuery as jest.Mock
-  const mockUseAppSelector = useAppSelector as jest.Mock
+  const mockUseGetUserProfileQuery = useGetUserProfileQuery as unknown as jest.Mock
+  const mockUseAppSelector = useAppSelector as unknown as jest.Mock
 
   beforeEach(() => {
     jest.clearAllMocks()

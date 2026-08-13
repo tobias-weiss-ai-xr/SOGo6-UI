@@ -24,17 +24,20 @@ const createDraft = (
   overrides: Partial<MailComposeDraft> = {}
 ): MailComposeDraft => ({
   draftId: 'draft-1',
+  mailKey: null,
   to: [],
   cc: [],
   bcc: [],
   subject: 'Subject',
   body: '<p>Body</p>',
   attachments: [],
-  priority: 'normal',
+  priority: 1 as 0 | 1 | 2 | 3 | 4,
   requestReadReceipt: false,
+  isPlainText: false,
   isDirty: false,
   createdAt: 1,
   updatedAt: 1,
+  selectedSignatureKey: null,
   ...overrides,
 })
 

@@ -136,7 +136,7 @@ describe('CustomEditor Component (compose.tsx)', () => {
     })
 
     it('should provide loading fallback', () => {
-      expect(fileContent).toMatch(/createLazyImport[^)]*EditorLoader/s)
+      expect(fileContent).toMatch(/createLazyImport[\s\S]*?EditorLoader/)
     })
 
     it('should follow lazy loading best practices', () => {

@@ -11,8 +11,7 @@ jest.mock('@/components/ui/buttons/tooltip-button', () => ({
     children: React.ReactNode
     tooltip?: string
     className?: string
-    type?: string
-    tabIndex?: number
+    [key: string]: unknown
   }) => (
     <button
       data-testid="tooltip-button"

@@ -66,7 +66,7 @@ describe('CreateEventOpener', () => {
     useSidebarMock.mockReturnValue({
       isMobile: false,
       setOpenMobile: mockSetOpenMobile,
-    } as ReturnType<typeof useSidebar>)
+    } as unknown as ReturnType<typeof useSidebar>)
   })
 
   describe('basic rendering', () => {
@@ -129,7 +129,7 @@ describe('CreateEventOpener', () => {
       useSidebarMock.mockReturnValue({
         isMobile: true,
         setOpenMobile: mockSetOpenMobile,
-      } as ReturnType<typeof useSidebar>)
+      } as unknown as ReturnType<typeof useSidebar>)
       render(<CreateEventOpener />)
       await user.click(screen.getByTestId('sidebar-menu-button'))
       await waitFor(() => {

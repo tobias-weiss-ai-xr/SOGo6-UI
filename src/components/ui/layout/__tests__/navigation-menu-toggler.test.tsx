@@ -31,7 +31,7 @@ jest.mock('@/components/ui/popover', () => ({
     </div>
   ),
   PopoverTrigger: React.forwardRef<
-    HTMLButtonElement,
+    HTMLDivElement,
     { asChild?: boolean; children: React.ReactNode }
   >(({ children }, ref) => <div ref={ref}>{children}</div>),
   PopoverContent: ({
@@ -64,7 +64,7 @@ jest.mock('@/components/ui/button', () => ({
   >(({ children, ...props }, ref) => {
     const { asChild, ...domProps } = props
     return (
-      <button ref={ref} {...domProps}>
+      <button ref={ref as React.Ref<HTMLButtonElement>} {...domProps}>
         {children}
       </button>
     )

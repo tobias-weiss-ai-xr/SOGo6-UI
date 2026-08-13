@@ -32,9 +32,9 @@ import { useAppSelector } from '@/lib/redux/hooks'
 import { useTasksSource } from '../use-tasks-source'
 import { useTaskState } from '../use-task-state'
 
-const mockUseAppSelector = useAppSelector as jest.Mock
-const mockUseGetCalendarsQuery = useGetCalendarsQuery as jest.Mock
-const mockUseTasksSource = useTasksSource as jest.Mock
+const mockUseAppSelector = useAppSelector as unknown as jest.Mock
+const mockUseGetCalendarsQuery = useGetCalendarsQuery as unknown as jest.Mock
+const mockUseTasksSource = useTasksSource as unknown as jest.Mock
 
 describe('useTaskState', () => {
   beforeEach(() => {

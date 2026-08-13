@@ -18,7 +18,7 @@ jest.mock('../../store/tasks-api', () => ({
 import { useAppSelector } from '@/lib/redux/hooks'
 import { useTaskSelection } from '../use-task-selection'
 
-const mockUseAppSelector = useAppSelector as jest.Mock
+const mockUseAppSelector = useAppSelector as unknown as jest.Mock
 
 const tasks = [
   { id: 't1', key: 't1', title: 'Open', status: 'needs_action' as const },

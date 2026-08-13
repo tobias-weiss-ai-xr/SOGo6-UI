@@ -9,7 +9,8 @@ import { TextDecoder, TextEncoder } from 'util'
  * tests stay fast and deterministic. Callers can still pass a custom delay.
  */
 const userEventSetup = userEvent.setup.bind(userEvent)
-userEvent.setup = ((options) =>
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+;(userEvent as any).setup = ((options: any) =>
   userEventSetup({ delay: null, ...options })) as typeof userEvent.setup
 
 // Polyfill crypto.subtle for Node/jsdom test environment

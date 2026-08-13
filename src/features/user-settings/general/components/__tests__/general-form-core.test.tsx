@@ -1,4 +1,4 @@
-import { UserPreferences } from '@/features/user-settings/store/user-preferences-api-types'
+import { UserCalendarGeneral, UserPreferences } from '@/features/user-settings/store/user-preferences-api-types'
 import { render, screen, waitFor } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import { useTranslations } from 'next-intl'
@@ -13,27 +13,28 @@ export const UserGeneralMock = {
   SOGO_U_LONG_DATE: 'Saturday, February 01, 2025',
   SOGO_U_SHORT_DATE: '01-Feb-25',
   SOGO_U_TIMEZONE: 'Europe/London',
-  SOGO_U_PROFILE_PICTURE: 'default',
+  SOGO_U_PROFILE_PICTURE: 'default' as const,
 }
 
 export const UserSecurityMock = {
   SOGO_U_MFA_ENABLE: false,
+  SOGO_U_MFA_METHOD: null,
 }
 
 export const UserContactGeneralMock = {
   SOGO_U_ADDRESSBOOK_CREATION_NOTIF: false,
 }
 
-export const UserCalendarGeneralMock = {
+export const UserCalendarGeneralMock: UserCalendarGeneral = {
   SOGO_U_NO_INVITATION: false,
   SOGO_U_BUSY_OFF_HOURS: false,
   SOGO_U_CALENDAR_DEFAULT: 'Work',
   SOGO_U_WORKDAY_END_TIME: '18:00',
-  SOGO_U_TASK_DEFAULT_CLASS: 'Normal',
+  SOGO_U_TASK_DEFAULT_CLASS: 'PUBLIC',
   SOGO_U_WORKDAY_START_TIME: '09:00',
-  SOGO_U_EVENT_DEFAULT_CLASS: 'Normal',
+  SOGO_U_EVENT_DEFAULT_CLASS: 'PUBLIC',
   SOGO_U_CALENDAR_DAYS_SHOWED: [1, 2, 3, 4, 5],
-  SOGO_U_JOURNAL_DEFAULT_CLASS: 'Normal',
+  SOGO_U_JOURNAL_DEFAULT_CLASS: 'PUBLIC',
   SOGO_U_TASK_DEFAULT_REMINDER: '15 minutes before',
   SOGO_U_EVENT_DEFAULT_REMINDER: '15 minutes before',
   SOGO_U_CALENDAR_CREATION_NOTIF: false,
@@ -41,16 +42,21 @@ export const UserCalendarGeneralMock = {
   SOGO_U_JOURNAL_DEFAULT_REMINDER: '15 minutes before',
   SOGO_U_DAV_FORCE_SYNC_FROM_CLIENT: false,
   SOGO_U_DO_NOT_SEND_INVIT_FROM_DAV: false,
-  SOGO_U_CALENDAR_WEEK_NUMBER_FORMAT: 'ISO',
+  SOGO_U_CALENDAR_WEEK_NUMBER_FORMAT: '%V',
+  SOGO_U_NON_WORKING_WEEKDAYS: [],
+  SOGO_U_DEFAULT_LOCATION: '',
+  SOGO_U_NO_INVITATION_WHITELIST: [],
 }
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const UserPreferencesMock = {
   USER_GENERAL: UserGeneralMock,
   USER_SECURITY: UserSecurityMock,
   USER_CONTACT_GENERAL: UserContactGeneralMock,
   USER_CALENDAR_GENERAL: UserCalendarGeneralMock,
-  USER_CONTACT_CATEGORY: {},
-  USER_CALENDAR_CATEGORY: {},
+  USER_CONTACT_CATEGORY: { SOGO_U_CONTACT_CATEGORIES: [] },
+  USER_CALENDAR_CATEGORY: { SOGO_U_CALENDAR_CATEGORIES: [] },
+  USER_MAIL_CATEGORY_SETTINGS: { SOGO_U_MAIL_CATEGORIES: [] },
   USER_MAIL_GENERAL_SETTINGS: {},
 }
 
@@ -134,7 +140,7 @@ jest.mock('@/components/ui/forms/radio-group-form', () => {
   }
 })
 
-const mockData: UserPreferences = UserPreferencesMock
+const mockData = UserPreferencesMock as unknown as UserPreferences
 
 describe('GeneralSettingsForm', () => {
   const mockUpdate = jest.fn()

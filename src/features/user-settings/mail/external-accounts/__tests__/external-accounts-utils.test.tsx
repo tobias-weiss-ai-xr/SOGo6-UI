@@ -1,3 +1,7 @@
+import {
+  SOCKET_ENC_EXPLICIT_TLS,
+  SOCKET_ENC_IMPLICIT_TLS,
+} from '../store/mailboxes-api-types'
 import { schemaType } from '../components/external-accounts-schema'
 import {
   FAKE_PASSWORD_SENTINEL,
@@ -77,7 +81,7 @@ describe('external-accounts-utils', () => {
         mail_server: {
           server: 'imap.example.com',
           port: 993,
-          encryption: 'implicit_tls',
+          encryption: SOCKET_ENC_IMPLICIT_TLS,
           auth_mech: 'plain',
           username: 'user',
           password: 'password123',
@@ -85,7 +89,7 @@ describe('external-accounts-utils', () => {
         mail_outgoing: {
           server: 'smtp.example.com',
           port: 587,
-          encryption: 'explicit_tls',
+          encryption: SOCKET_ENC_EXPLICIT_TLS,
           auth_mech: 'login',
           username: 'user',
           password: 'password123',
@@ -140,7 +144,7 @@ describe('external-accounts-utils', () => {
         mail_server: {
           server: 'imap.example.com',
           port: 993,
-          encryption: 'implicit_tls',
+          encryption: SOCKET_ENC_IMPLICIT_TLS,
           auth_mech: 'plain',
           username: 'user',
           password: FAKE_PASSWORD_SENTINEL,
@@ -155,7 +159,7 @@ describe('external-accounts-utils', () => {
         mail_server: {
           server: 'imap.example.com',
           port: 993,
-          encryption: 'implicit_tls',
+          encryption: SOCKET_ENC_IMPLICIT_TLS,
           auth_mech: 'plain',
           username: 'user',
           password: 'realPassword123',
@@ -172,7 +176,7 @@ describe('external-accounts-utils', () => {
         mail_outgoing: {
           server: 'smtp.example.com',
           port: 587,
-          encryption: 'explicit_tls',
+          encryption: SOCKET_ENC_EXPLICIT_TLS,
           auth_mech: 'login',
           username: 'user',
           password: FAKE_PASSWORD_SENTINEL,
@@ -187,7 +191,7 @@ describe('external-accounts-utils', () => {
         mail_outgoing: {
           server: 'smtp.example.com',
           port: 587,
-          encryption: 'explicit_tls',
+          encryption: SOCKET_ENC_EXPLICIT_TLS,
           auth_mech: 'login',
           username: 'user',
           password: 'realSmtpPassword123',
@@ -204,7 +208,7 @@ describe('external-accounts-utils', () => {
         mail_server: {
           server: 'imap.example.com',
           port: 993,
-          encryption: 'implicit_tls',
+          encryption: SOCKET_ENC_IMPLICIT_TLS,
           auth_mech: 'plain',
           username: 'user',
           password: FAKE_PASSWORD_SENTINEL,
@@ -212,7 +216,7 @@ describe('external-accounts-utils', () => {
         mail_outgoing: {
           server: 'smtp.example.com',
           port: 587,
-          encryption: 'explicit_tls',
+          encryption: SOCKET_ENC_EXPLICIT_TLS,
           auth_mech: 'login',
           username: 'user',
           password: FAKE_PASSWORD_SENTINEL,
@@ -228,7 +232,7 @@ describe('external-accounts-utils', () => {
         mail_server: {
           server: 'imap.example.com',
           port: 993,
-          encryption: 'implicit_tls',
+          encryption: SOCKET_ENC_IMPLICIT_TLS,
           auth_mech: 'plain',
           username: 'user',
           password: 'realImapPassword123',
@@ -236,7 +240,7 @@ describe('external-accounts-utils', () => {
         mail_outgoing: {
           server: 'smtp.example.com',
           port: 587,
-          encryption: 'explicit_tls',
+          encryption: SOCKET_ENC_EXPLICIT_TLS,
           auth_mech: 'login',
           username: 'user',
           password: FAKE_PASSWORD_SENTINEL,
@@ -270,7 +274,7 @@ describe('external-accounts-utils', () => {
         mail_server: {
           server: 'imap.example.com',
           port: 993,
-          encryption: 'implicit_tls',
+          encryption: SOCKET_ENC_IMPLICIT_TLS,
           auth_mech: 'plain',
           username: 'user',
           password: '',
@@ -286,7 +290,7 @@ describe('external-accounts-utils', () => {
         mail_server: {
           server: 'imap.example.com',
           port: 993,
-          encryption: 'implicit_tls',
+          encryption: SOCKET_ENC_IMPLICIT_TLS,
           auth_mech: 'plain',
           username: 'user',
           password: null as any,
@@ -321,7 +325,7 @@ describe('external-accounts-utils', () => {
         mail_server: {
           server: 'imap.example.com',
           port: 993,
-          encryption: 'implicit_tls',
+          encryption: SOCKET_ENC_IMPLICIT_TLS,
           auth_mech: 'plain',
           username: 'user',
           password: FAKE_PASSWORD_SENTINEL,
@@ -343,7 +347,7 @@ describe('external-accounts-utils', () => {
         mail_server: {
           server: 'imap.example.com',
           port: 993,
-          encryption: 'implicit_tls',
+          encryption: SOCKET_ENC_IMPLICIT_TLS,
           auth_mech: 'plain',
           username: 'user',
           password: FAKE_PASSWORD_SENTINEL,
@@ -358,7 +362,7 @@ describe('external-accounts-utils', () => {
         mail_server: {
           server: 'custom.imap.example.com',
           port: 3993,
-          encryption: 'explicit_tls',
+          encryption: SOCKET_ENC_EXPLICIT_TLS,
           auth_mech: 'login',
           username: 'custom_user',
           password: FAKE_PASSWORD_SENTINEL,
@@ -381,7 +385,7 @@ describe('external-accounts-utils', () => {
         mail_server: {
           server: 'imap.example.com',
           port: 993,
-          encryption: 'implicit_tls',
+          encryption: SOCKET_ENC_IMPLICIT_TLS,
           auth_mech: 'plain',
           username: 'user',
           password: FAKE_PASSWORD_SENTINEL,
@@ -389,7 +393,7 @@ describe('external-accounts-utils', () => {
         mail_outgoing: {
           server: 'smtp.example.com',
           port: 587,
-          encryption: 'explicit_tls',
+          encryption: SOCKET_ENC_EXPLICIT_TLS,
           auth_mech: 'login',
           username: 'user',
           password: 'newSmtpPassword456',
@@ -406,7 +410,7 @@ describe('external-accounts-utils', () => {
         mail_server: {
           server: 'imap.example.com',
           port: 993,
-          encryption: 'implicit_tls',
+          encryption: SOCKET_ENC_IMPLICIT_TLS,
           auth_mech: 'plain',
           username: 'user',
           password: 'newImapPassword789',
@@ -414,7 +418,7 @@ describe('external-accounts-utils', () => {
         mail_outgoing: {
           server: 'smtp.example.com',
           port: 587,
-          encryption: 'explicit_tls',
+          encryption: SOCKET_ENC_EXPLICIT_TLS,
           auth_mech: 'login',
           username: 'user',
           password: 'newSmtpPassword789',

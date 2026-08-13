@@ -18,9 +18,9 @@ import {
 } from '../../store/tasks-api'
 import { useTasksSource } from '../use-tasks-source'
 
-const mockUseAppSelector = useAppSelector as jest.Mock
-const mockUseGetTasksQuery = useGetTasksQuery as jest.Mock
-const mockUseGetCalendarTasksQuery = useGetCalendarTasksQuery as jest.Mock
+const mockUseAppSelector = useAppSelector as unknown as jest.Mock
+const mockUseGetTasksQuery = useGetTasksQuery as unknown as jest.Mock
+const mockUseGetCalendarTasksQuery = useGetCalendarTasksQuery as unknown as jest.Mock
 
 describe('useTasksSource', () => {
   beforeEach(() => {

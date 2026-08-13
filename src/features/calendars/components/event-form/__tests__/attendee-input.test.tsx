@@ -3,13 +3,15 @@ import { act, fireEvent, render, screen, waitFor } from '@testing-library/react'
 import React from 'react'
 import AttendeeInput from '../attendee-input'
 
-const mockUseRecipientSuggestions = jest.fn(() => ({
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const mockUseRecipientSuggestions = jest.fn((..._args: any[]) => ({
   suggestions: [] as { email: string; name?: string; source: 'user' | 'contact' | 'list' }[],
   isFetching: false,
 }))
 
 jest.mock('@/features/address_books/hooks/use-recipient-suggestions', () => ({
-  useRecipientSuggestions: (...args: unknown[]) => mockUseRecipientSuggestions(...args),
+  useRecipientSuggestions: // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  (...args: any[]) => mockUseRecipientSuggestions(...args),
 }))
 
 jest.mock('next-intl', () => {

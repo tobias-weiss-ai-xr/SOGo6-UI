@@ -82,7 +82,7 @@ describe('AccountSwitcher', () => {
     it('renders disabled button when loading', () => {
       mockProfile({ isLoading: true, allMailboxes: [], defaultIdentity: null })
       render(<AccountSwitcher />)
-      expect(screen.getByRole('button', { disabled: true })).toBeInTheDocument()
+      expect(screen.getByRole('button')).toBeDisabled()
     })
   })
 

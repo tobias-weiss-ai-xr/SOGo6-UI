@@ -87,7 +87,7 @@ describe('selectBookEntriesItems', () => {
         total: 1,
         page: 1,
         totalPages: 1,
-      })
+      } as never)
     ).toHaveLength(1)
   })
 

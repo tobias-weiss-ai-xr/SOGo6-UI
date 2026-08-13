@@ -76,9 +76,9 @@ describe('ListFilter', () => {
 
     it('shows client-side filter scope notice when filter is not all', () => {
       mockUseSearchParams.mockReturnValue({
-        get: (key: string) => (key === 'filter' ? 'unread' : null),
+        get: (key: string) => (key === 'filter' ? 'unread' : null) as 'all' | null,
         toString: () => 'filter=unread',
-      })
+      } as { get: (key: string) => 'all' | null; toString: () => string })
       render(<ListFilter />)
       expect(
         screen.getByText('filter.client_scope_notice.string')

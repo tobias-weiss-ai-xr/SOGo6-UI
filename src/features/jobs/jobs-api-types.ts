@@ -7,6 +7,7 @@ export type JobStatus =
   | 'canceled'
 
 export interface JobState {
+  job_id?: string
   status: JobStatus
   payload?: Record<string, unknown>
   result?: Record<string, unknown> | null

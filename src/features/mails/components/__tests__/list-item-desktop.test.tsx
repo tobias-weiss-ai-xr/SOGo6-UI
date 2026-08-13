@@ -111,7 +111,8 @@ const createTestStore = () =>
       mailCompose: mailComposeReducer,
       [apiSlice.reducerPath]: apiSlice.reducer,
     },
-    middleware: (getDefaultMiddleware) =>
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    middleware: (getDefaultMiddleware: any) =>
       getDefaultMiddleware().concat(apiSlice.middleware as never),
   })
 

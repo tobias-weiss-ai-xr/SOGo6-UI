@@ -27,6 +27,7 @@ import { usePrintMail } from '../use-print-mail'
 
 const baseMail: ImapMessages = {
   id: '1',
+  size: 0,
   subject: 'Hello',
   from: { name: 'Alice', email: 'alice@example.com' },
   to: [{ name: 'Bob', email: 'bob@example.com' }],

@@ -29,7 +29,17 @@ import {
   mailFiltersSettingsApiEndpoints,
 } from '../mail-filters-settings-api'
 
-const defs = (mailFiltersSettingsApiEndpoints as unknown as { _endpointDefs: Record<string, { query?: Function; mutation?: Function; onQueryStarted?: Function }> })._endpointDefs
+const defs = (mailFiltersSettingsApiEndpoints as unknown as {
+  _endpointDefs: Record<
+    string,
+    {
+      query?: Function
+      mutation?: Function
+      onQueryStarted?: Function
+      transformResponse?: Function
+    }
+  >
+})._endpointDefs
 
 describe('mail-filters-settings-api', () => {
   describe('getMailFiltersUrl', () => {
@@ -44,7 +54,7 @@ describe('mail-filters-settings-api', () => {
 
   describe('getMailFiltersSettings', () => {
     it('queries the correct URL', () => {
-      expect(defs.getMailFiltersSettings.query({ accountId: '0' })).toBe(
+      expect(defs.getMailFiltersSettings.query!({ accountId: '0' })).toBe(
         'mailboxes/0/filters'
       )
     })

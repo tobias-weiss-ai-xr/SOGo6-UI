@@ -11,6 +11,9 @@ const sampleEvent: CalendarEvent = {
   title: 'Team standup',
   calendar_id: 'cal-1',
   date_start: '2024-06-23T09:00:00.000Z',
+  all_day: false,
+  created_at: '2024-06-23T00:00:00Z',
+  updated_at: '2024-06-23T00:00:00Z',
 }
 
 describe('calendar-event-selection-bridge', () => {

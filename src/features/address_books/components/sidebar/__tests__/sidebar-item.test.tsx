@@ -3,6 +3,7 @@ import { render } from '@testing-library/react'
 import { useTranslations } from 'next-intl'
 import React from 'react'
 import { useParams } from 'next/navigation'
+import type { SidebarItemProps } from '../sidebar-item'
 import SidebarItem from '../sidebar-item'
 
 // Mock next-intl
@@ -157,7 +158,7 @@ describe('SidebarItem', () => {
   })
 
   it('renders the dynamic icon when icon prop is passed', () => {
-    const props = { ...defaultProps, icon: 'Book' }
+    const props = { ...defaultProps, icon: 'Book' as unknown as SidebarItemProps['icon'] }
     const { getByTestId } = render(<SidebarItem {...props} />)
 
     expect(getByTestId('dynamic-icon-Book')).toBeInTheDocument()

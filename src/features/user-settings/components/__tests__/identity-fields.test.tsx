@@ -1,7 +1,7 @@
 import { Form } from '@/components/ui/form'
 import { render, screen } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
-import { useForm } from 'react-hook-form'
+import { useForm, type FieldValues, type UseFormReturn } from 'react-hook-form'
 import { IdentityFields, emptyIdentity } from '../identity-fields'
 
 // ── Mocks ─────────────────────────────────────────────────────────────────────
@@ -36,7 +36,7 @@ function Wrapper({ initialValues = DEFAULT_IDENTITY, ...props }: WrapperProps) {
   return (
     <Form {...form}>
       <IdentityFields
-        form={form}
+        form={form as unknown as UseFormReturn<FieldValues>}
         index={0}
         identityCount={2}
         onSetDefault={jest.fn()}

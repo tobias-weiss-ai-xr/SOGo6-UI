@@ -46,7 +46,9 @@ describe('Dynamic Imports', () => {
   describe('createDynamicComponent', () => {
     it('should create a dynamic component with default options', async () => {
       const DynamicTest = createDynamicComponent(() =>
-        Promise.resolve({ default: TestComponent })
+        Promise.resolve({ default: TestComponent }) as unknown as Promise<{
+          default: React.ComponentType<{ message?: string }>
+        }>
       )
 
       render(<DynamicTest />)
@@ -105,7 +107,9 @@ describe('Dynamic Imports', () => {
 
     it('should pass props to the dynamic component', async () => {
       const DynamicTest = createDynamicComponent(() =>
-        Promise.resolve({ default: TestComponent })
+        Promise.resolve({ default: TestComponent }) as unknown as Promise<{
+          default: React.ComponentType<{ message?: string }>
+        }>
       )
 
       render(<DynamicTest message="Custom Message" />)
@@ -200,10 +204,16 @@ describe('Dynamic Imports', () => {
       const ref = React.createRef()
 
       const DynamicTest = createDynamicComponent(() =>
-        Promise.resolve({ default: TestComponent })
+        Promise.resolve({ default: TestComponent }) as unknown as Promise<{
+          default: React.ComponentType<{ message?: string }>
+        }>
       )
 
-      render(<DynamicTest ref={ref} />)
+      render(
+        <DynamicTest
+          ref={ref as unknown as React.Ref<HTMLDivElement>}
+        />
+      )
 
       await waitFor(() => {
         expect(screen.getByTestId('test-component')).toBeInTheDocument()
@@ -214,7 +224,9 @@ describe('Dynamic Imports', () => {
 
     it('should handle multiple instances independently', async () => {
       const DynamicTest = createDynamicComponent(() =>
-        Promise.resolve({ default: TestComponent })
+        Promise.resolve({ default: TestComponent }) as unknown as Promise<{
+          default: React.ComponentType<{ message?: string }>
+        }>
       )
 
       render(
@@ -315,8 +327,9 @@ describe('Dynamic Imports', () => {
     it('should not block rendering while loading', async () => {
       const DynamicTest = createDynamicComponent(
         () =>
-          new Promise((resolve) =>
-            setTimeout(() => resolve({ default: TestComponent }), 100)
+          new Promise<{ default: React.ComponentType<{ message?: string }> }>(
+            (resolve) =>
+              setTimeout(() => resolve({ default: TestComponent }), 100)
           )
       )
 

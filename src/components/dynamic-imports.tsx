@@ -63,10 +63,12 @@ export function createDynamicComponent<P extends object = object>(
     loading?: () => ReactElement
     ssr?: boolean
   } = {}
-): ComponentType<P> {
+): React.ForwardRefExoticComponent<P & { ref?: React.Ref<unknown> }> {
   const { loading = () => <ComponentLoader />, ssr = true } = options
 
-  return dynamic(importFn, { loading, ssr }) as ComponentType<P>
+  return dynamic(importFn, { loading, ssr }) as React.ForwardRefExoticComponent<
+    P & { ref?: React.Ref<unknown> }
+  >
 }
 
 // Example usage:

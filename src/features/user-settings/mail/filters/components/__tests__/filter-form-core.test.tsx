@@ -90,8 +90,9 @@ jest.mock('@/components/ui/forms/select-form', () => ({
   }: {
     options: { value: string; label: string; disabled?: boolean }[]
     value: string
+    [key: string]: unknown
   }) => (
-    <select data-testid="select" value={value} readOnly>
+    <select data-testid="select" value={value}>
       {options.map((option) => (
         <option
           key={option.value}

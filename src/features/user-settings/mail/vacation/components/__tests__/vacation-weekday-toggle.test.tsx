@@ -32,7 +32,7 @@ function TestHost() {
     defaultValues: createEmptyVacation(),
   })
 
-  return <VacationWeekdayToggle control={control} name="constraints.days" />
+  return <VacationWeekdayToggle control={control} name="constraints.weekdays" />
 }
 
 describe('VacationWeekdayToggle', () => {

@@ -40,7 +40,7 @@ jest.mock('../address-book-empty-state', () => ({
 }))
 
 jest.mock('next-intl', () => ({
-  useTranslations: jest.fn(() => (key, params) => {
+  useTranslations: jest.fn(() => (key: string, params: Record<string, unknown>) => {
     if (key === 'contacts_number.string')
       return `${params?.number || 0} contacts`
     if (key === 'no_items.string') return 'No items available'
