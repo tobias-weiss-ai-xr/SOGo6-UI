@@ -37,17 +37,6 @@ jest.mock('@/lib/redux/api/api-slice', () => {
   }
 })
 
-import type {
-  Resource,
-  Booking,
-  BookingStatus,
-  BookingPolicy,
-  ResourceType,
-  TimeRange,
-  AvailabilityCheckResponse,
-  BookResourceRequest,
-  BookingCreateResponse,
-} from '../store/resources-api'
 
 // Access the mock fn from the mocked module
 const mockInjectEndpoints = (jest.requireMock('@/lib/redux/api/api-slice') as any).__mockInjectEndpoints

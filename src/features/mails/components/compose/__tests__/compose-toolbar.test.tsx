@@ -72,6 +72,9 @@ const baseProps = {
   selectedPriority: MAIL_PRIORITY_NORMAL as 0 | 1 | 2 | 3 | 4,
   isSending: false,
   onSend: jest.fn(),
+  onScheduleSend: jest.fn(),
+  onClearSchedule: jest.fn(),
+  onInsertTemplate: jest.fn(),
 }
 
 describe('ComposeToolbar', () => {
