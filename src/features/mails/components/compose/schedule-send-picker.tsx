@@ -99,8 +99,8 @@ export default function ScheduleSendPicker({
           <Calendar
             mode="single"
             selected={selectedDate}
-            onSelect={(d) => d && setSelectedDate(d)}
-            disabled={(d) => d < new Date() || d > maxDate}
+            onSelect={(d: Date | undefined) => d && setSelectedDate(d)}
+            disabled={(d: Date) => d < new Date() || d > maxDate}
             fromDate={minDate}
             toDate={maxDate}
             className="mx-auto"

@@ -94,7 +94,7 @@ const ListToolbar: React.FC = () => {
 
   const handleBulkAction = useCallback(
     async (idx: number) => {
-      const mailUids = selectedIds.map(Number).filter((n) => !isNaN(n))
+      const mailUids = selectedIds.map(Number).filter((n: number) => !isNaN(n))
       if (mailUids.length === 0) return
 
       const mailsById = new Map(filteredMails.map((m) => [String(m.id), m]))
@@ -134,7 +134,7 @@ const ListToolbar: React.FC = () => {
         case 2:
           // Bulk mark as read (tag with \Seen)
           {
-            const unreadIds = mailUids.filter((id) => {
+            const unreadIds = mailUids.filter((id: number) => {
               const item = mailsById.get(String(id))
               return item && !item.seen
             })

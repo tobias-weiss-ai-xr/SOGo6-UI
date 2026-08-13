@@ -174,7 +174,7 @@ function toFieldArray(values?: string[]) {
   return values.map((value) => ({ value }))
 }
 
-function toEmailFieldArray(contact?: VCard | null) {
+function toEmailFieldArray(contact?: Partial<VCard> | null) {
   if (contact?.structuredEmails?.length) {
     return contact.structuredEmails.map((entry) => ({
       value: entry.value,
@@ -194,7 +194,7 @@ function toEmailFieldArray(contact?: VCard | null) {
   }))
 }
 
-function toPhoneFieldArray(contact?: VCard | null) {
+function toPhoneFieldArray(contact?: Partial<VCard> | null) {
   if (contact?.structuredPhones?.length) {
     return contact.structuredPhones.map((entry) => ({
       value: entry.number,
@@ -218,7 +218,7 @@ function fromFieldArray(fields: { value: string }[]): string[] {
   return fields.map((field) => field.value.trim()).filter(Boolean)
 }
 
-function toAddressFieldArray(contact?: VCard | null) {
+function toAddressFieldArray(contact?: Partial<VCard> | null) {
   const structured = contact?.structuredAddresses
   if (structured?.length) {
     return structured.map((address) => ({
@@ -275,8 +275,11 @@ function ContactForm({
   const { data: preferences } = useGetUserPreferencesQuery()
 
   const categoryOptions = useMemo(() => {
-    if (!preferences) return []
-    return mapApiToContactGeneralSettings(preferences).categories
+    // This query returns the API wrapper { data, error_code, error_msg } —
+    // unwrap before mapping (previously undefined → empty category options).
+    const unwrapped = preferences?.data
+    if (!unwrapped) return []
+    return mapApiToContactGeneralSettings(unwrapped).categories
   }, [preferences])
 
   const form = useForm<ContactFormValues>({

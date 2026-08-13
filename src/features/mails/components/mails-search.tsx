@@ -46,7 +46,7 @@ export function MailsSearch({ folder, accountId }: MailsSearchProps) {
   const [open, setOpen] = useState(false)
 
   const handleSearch = useCallback(() => {
-    const params: Record<string, string | boolean | undefined> = {
+    const params: Record<string, string | boolean | number | undefined> = {
       query: localQuery,
       in_body: inBody || undefined,
       folders: selectedFolders || undefined,

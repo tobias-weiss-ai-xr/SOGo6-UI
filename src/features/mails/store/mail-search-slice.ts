@@ -13,7 +13,7 @@ export interface MailSearchState {
   /**
    * Additional search parameters sent to the backend.
    */
-  searchParams: Record<string, string | boolean | undefined>
+  searchParams: Record<string, string | boolean | number | undefined>
   /**
    * Search results (page of mails).
    */
@@ -50,7 +50,7 @@ const mailSearchSlice = createSlice({
       state,
       action: PayloadAction<{
         query: string
-        searchParams: Record<string, string | boolean | undefined>
+        searchParams: Record<string, string | boolean | number | undefined>
       }>
     ) {
       state.isActive = true
