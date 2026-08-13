@@ -57,13 +57,13 @@ describe('mail-forward-settings-api', () => {
 
   describe('getMailForwardSettings', () => {
     it('queries the correct URL', () => {
-      expect(defs.getMailForwardSettings.query?.({ accountId: '0' })).toBe(
+      expect(defs.getMailForwardSettings.query!({ accountId: '0' })).toBe(
         'mailboxes/0/forward'
       )
     })
 
     it('transforms wrapped backend response', () => {
-      const result = defs.getMailForwardSettings.transformResponse?.({
+      const result: any = defs.getMailForwardSettings.transformResponse?.({
         data: {
           forward: {
             enabled: true,
@@ -82,7 +82,7 @@ describe('mail-forward-settings-api', () => {
     })
 
     it('maps null forward to empty UI model', () => {
-      const result = defs.getMailForwardSettings.transformResponse?.({
+      const result: any = defs.getMailForwardSettings.transformResponse?.({
         data: { forward: null },
         error_code: 'S000000',
         error_msg: 'No Error',
@@ -101,7 +101,7 @@ describe('mail-forward-settings-api', () => {
         addresses: ['a@example.com'],
       }
 
-      const result = defs.updateMailForwardSettings.query?.({
+      const result = defs.updateMailForwardSettings.query!({
         accountId: '0',
         forward,
       })
@@ -119,7 +119,7 @@ describe('mail-forward-settings-api', () => {
     })
 
     it('transforms POST response to UI model', () => {
-      const result = defs.updateMailForwardSettings.transformResponse?.({
+      const result: any = defs.updateMailForwardSettings.transformResponse?.({
         data: {
           filters: null,
           forward: {

@@ -57,13 +57,13 @@ describe('mail-vacation-settings-api', () => {
 
   describe('getMailVacationSettings', () => {
     it('queries the correct URL', () => {
-      expect(defs.getMailVacationSettings.query({ accountId: '0' })).toBe(
+      expect(defs.getMailVacationSettings.query!({ accountId: '0' })).toBe(
         'mailboxes/0/vacation'
       )
     })
 
     it('transforms wrapped backend response', () => {
-      const result = defs.getMailVacationSettings.transformResponse?.({
+      const result: any = defs.getMailVacationSettings.transformResponse?.({
         data: {
           vacation: {
             enabled: true,
@@ -91,7 +91,7 @@ describe('mail-vacation-settings-api', () => {
     })
 
     it('maps null vacation to empty UI model', () => {
-      const result = defs.getMailVacationSettings.transformResponse?.({
+      const result: any = defs.getMailVacationSettings.transformResponse?.({
         data: { vacation: null },
         error_code: 'S000000',
         error_msg: 'No Error',
@@ -109,7 +109,7 @@ describe('mail-vacation-settings-api', () => {
         autoReplyText: 'Away',
       }
 
-      const result = defs.updateMailVacationSettings.query?.({
+      const result = defs.updateMailVacationSettings.query!({
         accountId: '0',
         vacation,
         timezone: 'Europe/Paris',
@@ -129,7 +129,7 @@ describe('mail-vacation-settings-api', () => {
     })
 
     it('transforms POST response to UI model', () => {
-      const result = defs.updateMailVacationSettings.transformResponse?.({
+      const result: any = defs.updateMailVacationSettings.transformResponse?.({
         data: {
           filters: null,
           vacation: {

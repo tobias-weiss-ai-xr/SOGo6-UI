@@ -63,13 +63,13 @@ describe('mail-notifications-settings-api', () => {
 
   describe('getMailNotificationSettings', () => {
     it('queries the correct URL', () => {
-      expect(defs.getMailNotificationSettings.query?.({ accountId: '0' })).toBe(
+      expect(defs.getMailNotificationSettings.query!({ accountId: '0' })).toBe(
         'mailboxes/0/notify'
       )
     })
 
     it('transforms wrapped backend response', () => {
-      const result = defs.getMailNotificationSettings.transformResponse?.({
+      const result: any = defs.getMailNotificationSettings.transformResponse?.({
         data: {
           notification: {
             enabled: true,
@@ -87,7 +87,7 @@ describe('mail-notifications-settings-api', () => {
     })
 
     it('maps null notification to empty UI model', () => {
-      const result = defs.getMailNotificationSettings.transformResponse?.({
+      const result: any = defs.getMailNotificationSettings.transformResponse?.({
         data: { notification: null },
         error_code: 'S000000',
         error_msg: 'No Error',
@@ -107,7 +107,7 @@ describe('mail-notifications-settings-api', () => {
         message: 'Alert',
       }
 
-      const result = defs.updateMailNotificationSettings.query?.({
+      const result = defs.updateMailNotificationSettings.query!({
         accountId: '0',
         notification,
       })
@@ -126,7 +126,7 @@ describe('mail-notifications-settings-api', () => {
     })
 
     it('transforms POST response to UI model', () => {
-      const result = defs.updateMailNotificationSettings.transformResponse?.({
+      const result: any = defs.updateMailNotificationSettings.transformResponse?.({
         data: {
           filters: null,
           forward: null,
