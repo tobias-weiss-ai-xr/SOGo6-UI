@@ -98,11 +98,12 @@ const API_BASE = '/user/v1/webauthn';
  * Check if WebAuthn is supported in this browser
  */
 export function isWebAuthnSupported(): boolean {
+  // PublicKeyCredential is a runtime class in WebAuthn-capable browsers;
+  // the static creation options type must NOT be used as a value here.
   return (
     typeof window !== 'undefined' &&
     'credentials' in window &&
-    'PublicKeyCredential' in window &&
-    'authenticatorSelection' in (PublicKeyCredentialCreationOptions?.prototype || {})
+    typeof window.PublicKeyCredential !== 'undefined'
   );
 }
 
@@ -134,7 +135,7 @@ export function base64urlToUint8Array(base64url: string): Uint8Array {
  * Convert base64url string to ArrayBuffer
  */
 export function base64urlToBuffer(base64url: string): ArrayBuffer {
-  return base64urlToUint8Array(base64url).buffer;
+  return base64urlToUint8Array(base64url).buffer as ArrayBuffer;
 }
 
 /**
@@ -147,7 +148,7 @@ export function bufferToBase64url(buffer: ArrayBuffer): string {
 /**
  * Prepare PublicKeyCredentialCreationOptions for browser API
  */
-function prepareRegistrationOptions(
+export function prepareRegistrationOptions(
   options: PublicKeyCredentialCreationOptionsJSON
 ): PublicKeyCredentialCreationOptions {
   return {
@@ -163,19 +164,23 @@ function prepareRegistrationOptions(
     },
     pubKeyCredParams: options.pubKeyCredParams.map((p) => ({
       type: p.type as PublicKeyCredentialType,
-      alg: p.alg as COSE.Algorithm,
+      alg: p.alg as number,
     })),
     timeout: options.timeout,
     attestation: options.attestation as AttestationConveyancePreference,
-    userVerification: options.userVerification as UserVerificationRequirement,
+    // userVerification/authenticatorSelection are valid per the WebAuthn
+    // spec; cast the whole object for older lib.dom typings.
+    ...(options.userVerification
+      ? { userVerification: options.userVerification as UserVerificationRequirement }
+      : {}),
     authenticatorSelection: options.authenticatorSelection as AuthenticatorSelectionCriteria,
-  };
+  } as PublicKeyCredentialCreationOptions;
 }
 
 /**
  * Prepare PublicKeyCredentialRequestOptions for browser API
  */
-function prepareAuthenticationOptions(
+export function prepareAuthenticationOptions(
   options: PublicKeyCredentialRequestOptionsJSON
 ): PublicKeyCredentialRequestOptions {
   return {
@@ -184,7 +189,7 @@ function prepareAuthenticationOptions(
     allowCredentials: options.allowCredentials.map((c) => ({
       id: base64urlToBuffer(c.id),
       type: c.type as PublicKeyCredentialType,
-      transports: c.transports as AuthenticationExtensionsClientOutputs['transports'],
+      transports: c.transports as AuthenticatorTransport[],
     })),
     timeout: options.timeout,
     userVerification: options.userVerification as UserVerificationRequirement,
@@ -199,8 +204,11 @@ export function publicKeyCredentialToJSON(
 ): PublicKeyCredentialJSON {
   const { id, rawId, type, response } = credential;
 
+  // NOTE: credential.id is ALREADY a base64url string per the WebAuthn spec
+  // (NOT an ArrayBuffer). Passing it to bufferToBase64url would silently
+  // produce an empty string (new Uint8Array(str) has length 0).
   return {
-    id: bufferToBase64url(id),
+    id,
     rawId: bufferToBase64url(rawId),
     type,
     response: {
@@ -226,7 +234,7 @@ export function publicKeyCredentialToJSON(
             : null
           : undefined,
     },
-    clientExtensionResults: credential.getClientExtensionResults?.(),
+    clientExtensionResults: credential.getClientExtensionResults?.() as Record<string, unknown>,
   };
 }
 
@@ -317,14 +325,3 @@ declare global {
     PublicKeyCredential: typeof PublicKeyCredential;
   }
 }
-
-// ============================================================================
-// Exports
-// ============================================================================
-
-export {
-  uint8ArrayToBase64url,
-  bufferToBase64url,
-  prepareRegistrationOptions,
-  prepareAuthenticationOptions,
-};
