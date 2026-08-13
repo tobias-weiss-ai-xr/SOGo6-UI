@@ -42,7 +42,8 @@ const mockResources = [
 
 jest.mock('@/features/admin-panel/store/admin-panel-api', () => ({
   useGetResourcesQuery: () => ({
-    data: { data: mockResources },
+    // Admin API returns the Resource[] directly (no wrapper)
+    data: mockResources,
     isLoading: false,
     isError: false,
     refetch: jest.fn(),
