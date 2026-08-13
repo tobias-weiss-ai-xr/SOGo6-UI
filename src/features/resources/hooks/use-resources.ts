@@ -60,7 +60,14 @@ export function useResources(options: UseResourcesOptions = {}) {
  * Hook to fetch available resources for a specific time range
  */
 export function useAvailableResources(timeRange: { start: string; end: string }) {
-  const { data, isLoading, isError, error, refetch } = useGetAvailableResourcesQuery(timeRange)
+  // The query expects snake_case start_time/end_time — mapping here so the
+  // backend actually receives the range (previously undefined → broken
+  // availability fetch).
+  const { data, isLoading, isError, error, refetch } =
+    useGetAvailableResourcesQuery({
+      start_time: timeRange.start,
+      end_time: timeRange.end,
+    })
 
   return {
     availableResources: data?.resources || [],
@@ -88,7 +95,9 @@ export function useResourceAvailability() {
         resourceId: params.resourceId,
         start_time: params.start,
         end_time: params.end,
-        exclude_booking_id: params.excludeBookingId,
+        ...(params.excludeBookingId
+          ? { exclude_booking_id: params.excludeBookingId }
+          : {}),
       }).unwrap()
       return { available: result.available, conflicts: result.conflicts }
     } catch {

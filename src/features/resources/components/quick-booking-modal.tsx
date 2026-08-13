@@ -144,7 +144,9 @@ export default function QuickBookingModal({ resource, isOpen, onClose, initialDa
     }
     
     setError(null)
-    setIsBooking(true)
+    // NOTE: there is no local setIsBooking state — the mutation hook's
+    // isBooking flag tracks the in-flight request; the phantom setter calls
+    // were a ReferenceError on every booking attempt.
     
     const bookingRequest: BookResourceRequest = {
       start_time: dateTimeLocalToISO(startTime),
@@ -173,7 +175,6 @@ export default function QuickBookingModal({ resource, isOpen, onClose, initialDa
       }, 3000)
     } catch (err: any) {
       setError(err.data?.message || 'Failed to book resource')
-      setIsBooking(false)
     }
   }, [startTime, endTime, title, description, location, isOnlineMeeting, onlineMeetingLink, isAvailable, resource.id, bookResource, onClose])
   
