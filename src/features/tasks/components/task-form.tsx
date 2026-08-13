@@ -93,7 +93,11 @@ export function createTaskFormSchema(t: TaskFormTranslator) {
   })
 }
 
-type TaskFormValues = z.infer<typeof taskFormFieldsSchema>
+// Use the zod *input* type: fields with .default() are optional on input
+// (which is what react-hook-form hands to the resolver) while remaining
+// required in the output. Using z.infer here makes the resolver type
+// disagree with useForm's field type (TS2719).
+type TaskFormValues = z.input<typeof taskFormFieldsSchema>
 
 type TaskFormProps = {
   open: boolean

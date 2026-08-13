@@ -31,11 +31,11 @@ import {
 import {
   AUTHMECH_LOGIN,
   AUTHMECH_PLAIN,
-  Mailbox,
   SOCKET_ENC_EXPLICIT_TLS,
   SOCKET_ENC_IMPLICIT_TLS,
   SOCKET_ENC_PLAIN,
 } from '@/features/user-settings/mail/external-accounts/store/mailboxes-api-types'
+import type { MailboxSettings } from '@/features/user-settings/mail/external-accounts/store/mailboxes-form-types'
 import { Eye, EyeOff, Plus } from 'lucide-react'
 import { useTranslations } from 'next-intl'
 import React, { useEffect, useState } from 'react'
@@ -44,7 +44,7 @@ import { schemaType } from './external-accounts-schema'
 interface ExternalAccountSettingsTabProps {
   form: UseFormReturn<schemaType>
   mode: typeof MODE_EDIT | typeof MODE_CREATE
-  mailboxData?: Mailbox
+  mailboxData?: MailboxSettings
 }
 
 // ---------------------------------------------------------------------------

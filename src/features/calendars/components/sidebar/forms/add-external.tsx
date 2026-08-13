@@ -44,7 +44,7 @@ const addExternalSchema = z.object({
   sync_interval_minutes: z.coerce.number().int().min(5).max(1440).optional(),
 })
 
-type AddExternalFormData = z.infer<typeof addExternalSchema>
+type AddExternalFormData = z.input<typeof addExternalSchema>
 
 const AddExternalCalendar: React.FC = () => {
   const t = useTranslations('CALENDARS')
@@ -68,7 +68,7 @@ const AddExternalCalendar: React.FC = () => {
         name: values.name,
         url: values.url,
         color: values.color ?? DEFAULT_CALENDAR_COLOR,
-        sync_interval_minutes: values.sync_interval_minutes ?? 60,
+        sync_interval_minutes: Number(values.sync_interval_minutes ?? 60),
       }).unwrap()
       setOpen(false)
       form.reset()

@@ -14,22 +14,22 @@ import { useState } from 'react'
 import { UseFormReturn } from 'react-hook-form'
 import { z } from 'zod'
 import { MODE_CREATE, MODE_EDIT } from '../external-accounts-utils'
-import type { ImapAccountDetail } from '../types'
-import { imapAccountCreateSchema, imapAccountEditSchema } from './imap-schema'
+import type { MailboxSettings } from '../store/mailboxes-form-types'
+import type { schemaType } from './external-accounts-schema'
 
-type ImapCreateValues = z.infer<typeof imapAccountCreateSchema>
-type ImapEditValues = z.infer<typeof imapAccountEditSchema>
+type ImapCreateValues = schemaType
+type ImapEditValues = schemaType
 
 interface ImapSecurityTabProps {
   form: UseFormReturn<ImapCreateValues> | UseFormReturn<ImapEditValues>
   mode: typeof MODE_EDIT | typeof MODE_CREATE
-  accountData?: ImapAccountDetail
+  accountData?: MailboxSettings
 }
 
 function ImapSecurityTabEdit({
   accountData,
 }: {
-  accountData: ImapAccountDetail
+  accountData: MailboxSettings
 }) {
   const t = useTranslations('US_MAIL_IMAP_ACCOUNTS')
 
@@ -46,7 +46,7 @@ function ImapSecurityTabEdit({
           <FormLabel>{t('labels.certificateName.string')}</FormLabel>
           <FormControl>
             <Input
-              value={accountData.certificateName ?? ''}
+              value={accountData?.mail_server?.server ?? ''}
               readOnly
               className="bg-muted cursor-not-allowed"
             />
@@ -73,10 +73,12 @@ function ImapSecurityTabNew({
           {t('sections.certificate.string')}
         </h3>
 
-        {/* Certificate File Upload */}
+        {/* Certificate File Upload — S/MIME fields are not part of the
+            current mailbox schema; kept as unregistered UI (no-op until the
+            backend certificate API exists). */}
         <FormField
           control={form.control}
-          name="certificateFile"
+          name={'certificateFile' as never}
           render={({ field: { value, onChange, ...field } }) => (
             <FormItem>
               <FormLabel>{t('labels.certificateFile.string')}</FormLabel>
@@ -97,17 +99,18 @@ function ImapSecurityTabNew({
               </FormControl>
               {value && (
                 <p className="text-muted-foreground text-sm">
-                  {t('labels.selectedFile.string')} {value.name}
+                  {t('labels.selectedFile.string')}{' '}
+                  {(value as { name?: string } | null)?.name ?? ''}
                 </p>
               )}
             </FormItem>
           )}
         />
 
-        {/* Certificate Import Password */}
+        {/* Certificate Import Password (unregistered field, see above) */}
         <FormField
           control={form.control}
-          name="certificatePassword"
+          name={'certificatePassword' as never}
           render={({ field }) => (
             <FormItem>
               <FormLabel>{t('labels.certificatePassword.string')}</FormLabel>

@@ -181,7 +181,11 @@ function ExternalAccountForm({
                 />
               </TabsContent>
               <TabsContent value="security">
-                <ImapSecurityTab form={form} mode={mode} mailboxData={data} />
+                <ImapSecurityTab
+                  form={form}
+                  mode={mode}
+                  accountData={data}
+                />
               </TabsContent>
             </Tabs>
           </CardContent>
