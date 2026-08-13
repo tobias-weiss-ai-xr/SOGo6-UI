@@ -9,17 +9,11 @@ jest.mock('@/lib/utils', () => ({
 }))
 
 jest.mock('@radix-ui/react-toggle-group', () => ({
-  Root: React.forwardRef<any, any>(
-    ({ children, onValueChange, defaultValue, type, ...props }, ref) => (
+  Root: React.forwardRef<HTMLDivElement, any>(
+    ({ children, onValueChange, defaultValue, type: _, ...props }, ref) => (
       <div
         ref={ref}
         data-testid="toggle-group-root"
-        type={type}
-        defaultValue={
-          typeof defaultValue === 'string'
-            ? defaultValue
-            : JSON.stringify(defaultValue)
-        }
         onClick={() => onValueChange && onValueChange('test')}
         {...props}
       >

@@ -2,13 +2,14 @@ import { API_FETCH_MAX_CONCURRENT } from '../fetch-semaphore'
 
 async function importFetchSemaphore(nodeEnv: 'production' | 'development' | 'test') {
   const originalEnv = process.env.NODE_ENV
-  process.env.NODE_ENV = nodeEnv
+  ;(process.env as Record<string, string | undefined>).NODE_ENV = nodeEnv
   jest.resetModules()
   const mod = await import('../fetch-semaphore')
   return {
     mod,
     restore: () => {
-      process.env.NODE_ENV = originalEnv
+      ;(process.env as Record<string, string | undefined>).NODE_ENV =
+        originalEnv
       jest.resetModules()
     },
   }

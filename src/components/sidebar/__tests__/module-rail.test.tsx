@@ -6,7 +6,7 @@ import ModuleRail, { type ModuleId } from '../module-rail'
 
 const mockToggleModule = jest.fn()
 const mockRouterPush = jest.fn()
-const mockUseFastAccess = jest.fn(() => ({
+const mockUseFastAccess = jest.fn((..._args: any[]) => ({
   isOpen: false,
   activeModule: null,
   openModule: jest.fn(),
@@ -15,7 +15,8 @@ const mockUseFastAccess = jest.fn(() => ({
 }))
 
 jest.mock('@/features/mails/components/sidebars/fast-access/context', () => ({
-  useFastAccess: (...args: unknown[]) => mockUseFastAccess(...args),
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  useFastAccess: (...args: any[]) => mockUseFastAccess(...args),
 }))
 
 jest.mock('next/navigation', () => ({
@@ -247,7 +248,7 @@ describe('ModuleRail', () => {
     })
 
     it('calls router.push when no fast access context is available', async () => {
-      mockUseFastAccess.mockReturnValueOnce(null)
+      mockUseFastAccess.mockReturnValueOnce(null as unknown as ReturnType<typeof mockUseFastAccess>)
 
       const user = userEvent.setup()
       render(<ModuleRail />)

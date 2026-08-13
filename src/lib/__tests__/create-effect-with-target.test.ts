@@ -3,6 +3,7 @@ import { useEffect, useLayoutEffect } from 'react'
 import {
   createEffectWithTarget,
   getTargetElement,
+  type BasicTarget,
 } from '../create-effect-with-target'
 
 // Mock es-toolkit
@@ -172,7 +173,7 @@ describe('createEffectWithTarget', () => {
     })
 
     it('should handle null return from effect', () => {
-      const effect = jest.fn(() => null)
+      const effect = jest.fn((): void => {})
       const useEffectWithTarget = createEffectWithTarget(useEffect)
       const target = document.createElement('div')
 
@@ -354,7 +355,7 @@ describe('createEffectWithTarget', () => {
         { current: document.createElement('p') },
         window,
         null,
-      ]
+      ] as unknown as BasicTarget[]
 
       renderHook(() => {
         useEffectWithTarget(effect, [true, false], targets)

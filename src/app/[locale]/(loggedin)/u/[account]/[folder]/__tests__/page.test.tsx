@@ -14,10 +14,11 @@ const createTestStore = (preloadedState: Record<string, unknown> = {}) =>
       mailNavigation: mailNavigationReducer,
       mailSearch: mailSearchReducer,
       [apiSlice.reducerPath]: apiSlice.reducer,
-    },
-    middleware: (getDefaultMiddleware) =>
+    } as never,
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    middleware: (getDefaultMiddleware: any) =>
       getDefaultMiddleware().concat(apiSlice.middleware),
-    preloadedState,
+    preloadedState: preloadedState as never,
   })
 
 // Mock dependencies

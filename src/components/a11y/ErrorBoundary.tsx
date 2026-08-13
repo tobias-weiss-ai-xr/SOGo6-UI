@@ -197,15 +197,15 @@ export const AccessibleErrorFallback: React.FC<AccessibleErrorFallbackProps> = (
 /**
  * HOC to wrap components with error boundary
  */
-export const withErrorBoundary = (
-  WrappedComponent: React.ComponentType<any>,
+export const withErrorBoundary = <P extends object>(
+  WrappedComponent: React.ComponentType<P>,
   fallback?: ReactNode
 ) => {
-  return class ErrorBoundaryWrapper extends React.Component<ErrorBoundaryProps> {
+  return class ErrorBoundaryWrapper extends React.Component<P> {
     render() {
       return (
         <ErrorBoundaryComponent fallback={fallback}>
-          <WrappedComponent {...this.props} />
+          <WrappedComponent {...(this.props as P)} />
         </ErrorBoundaryComponent>
       );
     }

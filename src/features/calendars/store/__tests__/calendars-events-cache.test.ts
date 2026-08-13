@@ -29,6 +29,8 @@ const baseEvent: CalendarEvent = {
   calendar_id: 'cal-1',
   title: 'Meeting',
   all_day: false,
+    created_at: '2026-01-01T00:00:00Z',
+    updated_at: '2026-01-01T00:00:00Z',
   date_start: '2026-07-16T10:00:00.000Z',
   date_end: '2026-07-16T11:00:00.000Z',
 }
@@ -73,7 +75,7 @@ describe('calendars-events-cache', () => {
       }
 
       patchEventInCachedTimeRangeQueries(
-        dispatch,
+        dispatch as unknown as (action: unknown) => void,
         () => ({
           api: {
             queries: {
@@ -114,7 +116,7 @@ describe('calendars-events-cache', () => {
       )
 
       patchEventsInCachedQuery(
-        dispatch,
+        dispatch as unknown as (action: unknown) => void,
         {
           endpointName: 'getEvents',
           originalArgs: { startDate: 'a', endDate: 'b' },

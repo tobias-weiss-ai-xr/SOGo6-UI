@@ -75,7 +75,7 @@ describe('DropdownMenu component', () => {
         <DropdownMenuTrigger>Open Menu</DropdownMenuTrigger>
         <DropdownMenuContent>
           <DropdownMenuRadioGroup>
-            <DropdownMenuRadioItem>Radio Item</DropdownMenuRadioItem>
+            <DropdownMenuRadioItem value="radio-1">Radio Item</DropdownMenuRadioItem>
           </DropdownMenuRadioGroup>
         </DropdownMenuContent>
       </DropdownMenu>

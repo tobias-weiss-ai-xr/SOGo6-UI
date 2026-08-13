@@ -98,7 +98,7 @@ const createTestStore = () =>
       [apiSlice.reducerPath]: apiSlice.reducer,
     },
     middleware: (getDefaultMiddleware) =>
-      getDefaultMiddleware().concat(apiSlice.middleware),
+      getDefaultMiddleware().concat(apiSlice.middleware as never),
   })
 
 const renderWithRedux = (

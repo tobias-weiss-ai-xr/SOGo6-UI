@@ -101,7 +101,7 @@ describe('ListItemMobile Component', () => {
       reducer: {
         mailCompose: mailComposeReducer,
         [apiSlice.reducerPath]: apiSlice.reducer,
-      },
+      } as never,
       middleware: (getDefaultMiddleware) =>
         getDefaultMiddleware().concat(
           apiSlice.middleware as ReturnType<typeof getDefaultMiddleware>[number]

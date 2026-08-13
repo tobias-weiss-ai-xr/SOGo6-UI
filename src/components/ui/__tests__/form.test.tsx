@@ -1,4 +1,5 @@
 import '@testing-library/jest-dom'
+import React from 'react'
 import { render, screen } from '@testing-library/react'
 import { FormProvider, useForm } from 'react-hook-form'
 import {
@@ -10,7 +11,7 @@ import {
 } from '../form'
 
 describe('Form components', () => {
-  const Wrapper = ({ children }) => {
+  const Wrapper = ({ children }: { children: React.ReactNode }) => {
     const methods = useForm()
     return <FormProvider {...methods}>{children}</FormProvider>
   }

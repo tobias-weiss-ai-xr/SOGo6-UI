@@ -304,7 +304,7 @@ describe('TasksContent', () => {
 
     it('queries the API with search after debounce', async () => {
       const user = userEvent.setup({
-        advanceTimers: jest.advanceTimers,
+        advanceTimers: jest.advanceTimersByTime,
       })
 
       render(<TasksContent />)
@@ -323,7 +323,7 @@ describe('TasksContent', () => {
 
     it('shows no results message when search matches nothing', async () => {
       const user = userEvent.setup({
-        advanceTimers: jest.advanceTimers,
+        advanceTimers: jest.advanceTimersByTime,
       })
 
       render(<TasksContent />)

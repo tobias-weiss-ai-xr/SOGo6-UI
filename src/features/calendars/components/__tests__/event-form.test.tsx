@@ -64,7 +64,7 @@ jest.mock('next-intl', () => ({
   useLocale: jest.fn(() => 'en'),
 }))
 
-import type { Calendar, CalendarEvent } from '@/features/calendars/types'
+import type { Calendar, CalendarEvent } from '@/features/calendars/calendars-types'
 import { EventForm } from '../event-form'
 
 describe('EventForm', () => {
@@ -75,12 +75,14 @@ describe('EventForm', () => {
       key: 'cal-1',
       name: 'Calendar 1',
       color: '#FF0000',
+      description: null,
     },
     {
       id: 'cal-2',
       key: 'cal-2',
       name: 'Calendar 2',
       color: '#00FF00',
+      description: null,
     },
   ]
 
@@ -92,6 +94,8 @@ describe('EventForm', () => {
     date_start: '2024-07-15T10:00:00Z',
     date_end: '2024-07-15T11:00:00Z',
     all_day: false,
+      created_at: '2026-01-01T00:00:00Z',
+      updated_at: '2026-01-01T00:00:00Z',
     timezone: 'UTC',
     description: 'Test description',
     location: 'Test location',
