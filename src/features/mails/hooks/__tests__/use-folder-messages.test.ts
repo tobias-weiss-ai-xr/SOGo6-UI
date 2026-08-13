@@ -216,7 +216,7 @@ describe('useFolderMessages', () => {
 
   describe('virtual folders', () => {
     it('skips folder messages query when folder is not selectable', () => {
-      ;(useCurrentFolder as jest.Mock).mockReturnValue({
+      ;(useCurrentFolder as unknown as jest.Mock).mockReturnValue({
         isSelectable: false,
         isVirtual: true,
         isLoading: false,

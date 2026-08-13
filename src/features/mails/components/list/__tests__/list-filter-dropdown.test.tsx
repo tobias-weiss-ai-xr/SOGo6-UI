@@ -63,13 +63,13 @@ describe('ListFilterDropdown Component', () => {
 
   beforeEach(() => {
     jest.clearAllMocks()
-    ;(useRouter as jest.Mock).mockReturnValue({ push: mockPush })
-    ;(usePathname as jest.Mock).mockReturnValue('/u/test@example.com/inbox')
-    ;(useTranslations as jest.Mock).mockReturnValue(mockTranslate)
+    ;(useRouter as unknown as jest.Mock).mockReturnValue({ push: mockPush })
+    ;(usePathname as unknown as jest.Mock).mockReturnValue('/u/test@example.com/inbox')
+    ;(useTranslations as unknown as jest.Mock).mockReturnValue(mockTranslate)
   })
 
   it('should render select component', () => {
-    ;(useSearchParams as jest.Mock).mockReturnValue(
+    ;(useSearchParams as unknown as jest.Mock).mockReturnValue(
       new URLSearchParams('filter=all')
     )
 
@@ -78,7 +78,7 @@ describe('ListFilterDropdown Component', () => {
   })
 
   it('should default to "all" filter when no filter is specified', () => {
-    ;(useSearchParams as jest.Mock).mockReturnValue(new URLSearchParams(''))
+    ;(useSearchParams as unknown as jest.Mock).mockReturnValue(new URLSearchParams(''))
 
     render(<ListFilterDropdown />)
     const input = screen.getByTestId('select-input') as HTMLInputElement
@@ -86,7 +86,7 @@ describe('ListFilterDropdown Component', () => {
   })
 
   it('should display current filter value', () => {
-    ;(useSearchParams as jest.Mock).mockReturnValue(
+    ;(useSearchParams as unknown as jest.Mock).mockReturnValue(
       new URLSearchParams('filter=unread')
     )
 
@@ -96,7 +96,7 @@ describe('ListFilterDropdown Component', () => {
   })
 
   it('should render all filter options', () => {
-    ;(useSearchParams as jest.Mock).mockReturnValue(
+    ;(useSearchParams as unknown as jest.Mock).mockReturnValue(
       new URLSearchParams('filter=all')
     )
 
@@ -109,7 +109,7 @@ describe('ListFilterDropdown Component', () => {
   })
 
   it('should navigate to path without query when "all" is selected', () => {
-    ;(useSearchParams as jest.Mock).mockReturnValue(
+    ;(useSearchParams as unknown as jest.Mock).mockReturnValue(
       new URLSearchParams('filter=unread')
     )
 
@@ -121,7 +121,7 @@ describe('ListFilterDropdown Component', () => {
   })
 
   it('should navigate with filter query parameter when non-all filter is selected', () => {
-    ;(useSearchParams as jest.Mock).mockReturnValue(
+    ;(useSearchParams as unknown as jest.Mock).mockReturnValue(
       new URLSearchParams('filter=all')
     )
 
@@ -133,7 +133,7 @@ describe('ListFilterDropdown Component', () => {
   })
 
   it('should handle filter change for "read"', () => {
-    ;(useSearchParams as jest.Mock).mockReturnValue(
+    ;(useSearchParams as unknown as jest.Mock).mockReturnValue(
       new URLSearchParams('filter=all')
     )
 
@@ -145,7 +145,7 @@ describe('ListFilterDropdown Component', () => {
   })
 
   it('should handle filter change for "unread"', () => {
-    ;(useSearchParams as jest.Mock).mockReturnValue(
+    ;(useSearchParams as unknown as jest.Mock).mockReturnValue(
       new URLSearchParams('filter=all')
     )
 
@@ -157,7 +157,7 @@ describe('ListFilterDropdown Component', () => {
   })
 
   it('should handle filter change for "attachments"', () => {
-    ;(useSearchParams as jest.Mock).mockReturnValue(
+    ;(useSearchParams as unknown as jest.Mock).mockReturnValue(
       new URLSearchParams('filter=all')
     )
 
@@ -169,7 +169,7 @@ describe('ListFilterDropdown Component', () => {
   })
 
   it('should translate filter labels', () => {
-    ;(useSearchParams as jest.Mock).mockReturnValue(
+    ;(useSearchParams as unknown as jest.Mock).mockReturnValue(
       new URLSearchParams('filter=all')
     )
 
@@ -181,7 +181,7 @@ describe('ListFilterDropdown Component', () => {
   })
 
   it('should handle empty filter value by defaulting to all', () => {
-    ;(useSearchParams as jest.Mock).mockReturnValue(
+    ;(useSearchParams as unknown as jest.Mock).mockReturnValue(
       new URLSearchParams('filter=')
     )
 
@@ -193,7 +193,7 @@ describe('ListFilterDropdown Component', () => {
   })
 
   it('shows client-side filter scope notice when filter is not all', () => {
-    ;(useSearchParams as jest.Mock).mockReturnValue(
+    ;(useSearchParams as unknown as jest.Mock).mockReturnValue(
       new URLSearchParams('filter=unread')
     )
 

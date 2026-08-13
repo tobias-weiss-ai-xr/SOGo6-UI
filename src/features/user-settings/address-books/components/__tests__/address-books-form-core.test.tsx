@@ -122,7 +122,7 @@ const makePreferences = (
   }) as unknown as UserPreferences
 
 const setupTranslations = () => {
-  ;(useTranslations as jest.Mock).mockImplementation(() => {
+  ;(useTranslations as unknown as jest.Mock).mockImplementation(() => {
     const map: Record<string, string> = {
       'create.string': 'Create',
       'notification.title': 'Notify on creation',
@@ -377,7 +377,7 @@ describe('LabelsForm', () => {
 
     it('only calls useTranslations with the US_ADDRESS_BOOKS namespace', () => {
       render(<LabelsForm data={undefined} update={mockUpdate} />)
-      const calls = (useTranslations as jest.Mock).mock.calls.map((c) => c[0])
+      const calls = (useTranslations as unknown as jest.Mock).mock.calls.map((c) => c[0])
       expect(calls.every((ns: string) => ns === 'US_ADDRESS_BOOKS')).toBe(true)
     })
   })

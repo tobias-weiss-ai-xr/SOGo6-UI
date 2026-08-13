@@ -143,7 +143,7 @@ describe('GeneralSettingsForm', () => {
     jest.clearAllMocks()
 
     // Setup mock translations
-    ;(useTranslations as jest.Mock).mockImplementation(() => {
+    ;(useTranslations as unknown as jest.Mock).mockImplementation(() => {
       return (key: string) => {
         const translations: Record<string, string> = {
           'labels.language.string': 'Language',

@@ -59,7 +59,7 @@ describe('AddressBook Layout', () => {
 
   beforeEach(() => {
     const { usePathname } = require('@/lib/i18n/navigation')
-    ;(usePathname as jest.Mock).mockReturnValue(
+    ;(usePathname as unknown as jest.Mock).mockReturnValue(
       '/en/address_books/test-book-id'
     )
     mockUseAddressBookEntries.mockReturnValue(defaultEntries)

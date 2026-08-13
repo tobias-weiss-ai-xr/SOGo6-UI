@@ -105,7 +105,7 @@ const sampleLabels: MailLabel[] = [
 ]
 
 function setupTranslations() {
-  ;(useTranslations as jest.Mock).mockImplementation((namespace: string) => {
+  ;(useTranslations as unknown as jest.Mock).mockImplementation((namespace: string) => {
     const translations: Record<string, Record<string, string>> = {
       FORM_COMMONS: {
         'create.default.string': 'Create label',

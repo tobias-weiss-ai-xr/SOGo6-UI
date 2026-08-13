@@ -89,8 +89,8 @@ describe('Mail Folder Layout', () => {
 
   beforeEach(() => {
     jest.clearAllMocks()
-    ;(useIsMobileModule.useIsMobile as jest.Mock).mockReturnValue(false)
-    ;(userPreferencesApi.useGetPreferencesQuery as jest.Mock).mockReturnValue({
+    ;(useIsMobileModule.useIsMobile as unknown as jest.Mock).mockReturnValue(false)
+    ;(userPreferencesApi.useGetPreferencesQuery as unknown as jest.Mock).mockReturnValue({
       data: { layoutType: 'modern' },
     })
   })
@@ -112,7 +112,7 @@ describe('Mail Folder Layout', () => {
   })
 
   it('should render classic layout when layoutType is classic', () => {
-    ;(userPreferencesApi.useGetPreferencesQuery as jest.Mock).mockReturnValue({
+    ;(userPreferencesApi.useGetPreferencesQuery as unknown as jest.Mock).mockReturnValue({
       data: { layoutType: 'classic' },
     })
     render(<Layout classic={mockClassic}>{mockChildren}</Layout>)
@@ -129,13 +129,13 @@ describe('Mail Folder Layout', () => {
   })
 
   it('should show SidebarTrigger on desktop', () => {
-    ;(useIsMobileModule.useIsMobile as jest.Mock).mockReturnValue(false)
+    ;(useIsMobileModule.useIsMobile as unknown as jest.Mock).mockReturnValue(false)
     render(<Layout classic={mockClassic}>{mockChildren}</Layout>)
     expect(screen.getByTestId('sidebar-trigger')).toBeInTheDocument()
   })
 
   it('should hide SidebarTrigger on mobile', () => {
-    ;(useIsMobileModule.useIsMobile as jest.Mock).mockReturnValue(true)
+    ;(useIsMobileModule.useIsMobile as unknown as jest.Mock).mockReturnValue(true)
     const { container } = render(
       <Layout classic={mockClassic}>{mockChildren}</Layout>
     )
@@ -164,7 +164,7 @@ describe('Mail Folder Layout', () => {
   })
 
   it('should default to modern layout when no preferences data', () => {
-    ;(userPreferencesApi.useGetPreferencesQuery as jest.Mock).mockReturnValue({
+    ;(userPreferencesApi.useGetPreferencesQuery as unknown as jest.Mock).mockReturnValue({
       data: undefined,
     })
     render(<Layout classic={mockClassic}>{mockChildren}</Layout>)

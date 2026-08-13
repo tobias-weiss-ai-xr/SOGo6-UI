@@ -94,7 +94,7 @@ import { useProfile } from '@/features/user-profile'
 // --- Helper ---
 
 const mockProfile = (overrides = {}) => {
-  ;(useProfile as jest.Mock).mockReturnValue({
+  ;(useProfile as unknown as jest.Mock).mockReturnValue({
     mainAccount: {
       identities: [{ mail: 'jdoe@sogo.nu', name: 'John Doe' }],
     },

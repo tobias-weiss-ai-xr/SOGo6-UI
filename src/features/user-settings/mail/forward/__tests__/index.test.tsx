@@ -39,17 +39,17 @@ describe('MailForwardSettings', () => {
 
   beforeEach(() => {
     jest.clearAllMocks()
-    ;(useTranslations as jest.Mock).mockReturnValue(mockTranslate)
-    ;(useProfile as jest.Mock).mockReturnValue({
+    ;(useTranslations as unknown as jest.Mock).mockReturnValue(mockTranslate)
+    ;(useProfile as unknown as jest.Mock).mockReturnValue({
       mainAccount: { id: 'acc-1' },
     })
-    ;(useUpdateMailForwardSettingsMutation as jest.Mock).mockReturnValue([
+    ;(useUpdateMailForwardSettingsMutation as unknown as jest.Mock).mockReturnValue([
       mockUpdate,
     ])
   })
 
   it('renders page title and description', () => {
-    ;(useGetMailForwardSettingsQuery as jest.Mock).mockReturnValue({
+    ;(useGetMailForwardSettingsQuery as unknown as jest.Mock).mockReturnValue({
       data: undefined,
       error: undefined,
       isLoading: false,
@@ -62,7 +62,7 @@ describe('MailForwardSettings', () => {
   })
 
   it('shows skeleton while loading', () => {
-    ;(useGetMailForwardSettingsQuery as jest.Mock).mockReturnValue({
+    ;(useGetMailForwardSettingsQuery as unknown as jest.Mock).mockReturnValue({
       data: undefined,
       error: undefined,
       isLoading: true,
@@ -75,7 +75,7 @@ describe('MailForwardSettings', () => {
   })
 
   it('renders forward form when data is loaded', () => {
-    ;(useGetMailForwardSettingsQuery as jest.Mock).mockReturnValue({
+    ;(useGetMailForwardSettingsQuery as unknown as jest.Mock).mockReturnValue({
       data: { enabled: false, addresses: [] },
       error: undefined,
       isLoading: false,
@@ -91,7 +91,7 @@ describe('MailForwardSettings', () => {
   })
 
   it('shows feature disabled message on 403 error', () => {
-    ;(useGetMailForwardSettingsQuery as jest.Mock).mockReturnValue({
+    ;(useGetMailForwardSettingsQuery as unknown as jest.Mock).mockReturnValue({
       data: undefined,
       error: { status: 403 },
       isLoading: false,
@@ -105,7 +105,7 @@ describe('MailForwardSettings', () => {
   })
 
   it('shows generic load error for other failures', () => {
-    ;(useGetMailForwardSettingsQuery as jest.Mock).mockReturnValue({
+    ;(useGetMailForwardSettingsQuery as unknown as jest.Mock).mockReturnValue({
       data: undefined,
       error: { status: 500 },
       isLoading: false,

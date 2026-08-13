@@ -24,7 +24,7 @@ describe('NotificationToaster', () => {
   it('passes correct props to Toaster', () => {
     render(<NotificationToaster />)
 
-    const callArgs = (Toaster as unknown as jest.Mock).mock.calls[0][0]
+    const callArgs = (Toaster as unknown as unknown as jest.Mock).mock.calls[0][0]
     expect(callArgs).toMatchObject({
       position: 'top-right',
       richColors: true,
@@ -36,31 +36,31 @@ describe('NotificationToaster', () => {
 
   it('sets position to top-right', () => {
     render(<NotificationToaster />)
-    const callArgs = (Toaster as unknown as jest.Mock).mock.calls[0][0]
+    const callArgs = (Toaster as unknown as unknown as jest.Mock).mock.calls[0][0]
     expect(callArgs.position).toBe('top-right')
   })
 
   it('enables richColors', () => {
     render(<NotificationToaster />)
-    const callArgs = (Toaster as unknown as jest.Mock).mock.calls[0][0]
+    const callArgs = (Toaster as unknown as unknown as jest.Mock).mock.calls[0][0]
     expect(callArgs.richColors).toBe(true)
   })
 
   it('shows close button', () => {
     render(<NotificationToaster />)
-    const callArgs = (Toaster as unknown as jest.Mock).mock.calls[0][0]
+    const callArgs = (Toaster as unknown as unknown as jest.Mock).mock.calls[0][0]
     expect(callArgs.closeButton).toBe(true)
   })
 
   it('expands toasts', () => {
     render(<NotificationToaster />)
-    const callArgs = (Toaster as unknown as jest.Mock).mock.calls[0][0]
+    const callArgs = (Toaster as unknown as unknown as jest.Mock).mock.calls[0][0]
     expect(callArgs.expand).toBe(true)
   })
 
   it('sets default duration to 5000ms', () => {
     render(<NotificationToaster />)
-    const callArgs = (Toaster as unknown as jest.Mock).mock.calls[0][0]
+    const callArgs = (Toaster as unknown as unknown as jest.Mock).mock.calls[0][0]
     expect(callArgs.duration).toBe(5000)
   })
 })

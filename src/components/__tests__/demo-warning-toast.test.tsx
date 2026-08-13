@@ -97,7 +97,7 @@ describe('DemoWarningToast', () => {
     })
 
     // Get the onClick handler from the action
-    const callArgs = (toast.warning as jest.Mock).mock.calls[0]
+    const callArgs = (toast.warning as unknown as jest.Mock).mock.calls[0]
     const actionOnClick = callArgs[1].action.onClick
 
     // Call the onClick handler
@@ -107,7 +107,7 @@ describe('DemoWarningToast', () => {
   })
 
   it('should not display toast when not using fake API', () => {
-    ;(isUsingFakeApi as jest.Mock).mockReturnValue(false)
+    ;(isUsingFakeApi as unknown as jest.Mock).mockReturnValue(false)
 
     render(<DemoWarningToast />)
     jest.advanceTimersByTime(1000)

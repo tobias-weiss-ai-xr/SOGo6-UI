@@ -49,19 +49,19 @@ describe('MailVacationSettings', () => {
 
   beforeEach(() => {
     jest.clearAllMocks()
-    ;(useTranslations as jest.Mock).mockReturnValue(mockTranslate)
-    ;(useProfile as jest.Mock).mockReturnValue({
+    ;(useTranslations as unknown as jest.Mock).mockReturnValue(mockTranslate)
+    ;(useProfile as unknown as jest.Mock).mockReturnValue({
       mainAccount: { id: 'acc-1' },
       timezone: 'Europe/Paris',
       vacationAllowResponseAlways: false,
     })
-    ;(useUpdateMailVacationSettingsMutation as jest.Mock).mockReturnValue([
+    ;(useUpdateMailVacationSettingsMutation as unknown as jest.Mock).mockReturnValue([
       mockUpdate,
     ])
   })
 
   it('renders page title and description', () => {
-    ;(useGetMailVacationSettingsQuery as jest.Mock).mockReturnValue({
+    ;(useGetMailVacationSettingsQuery as unknown as jest.Mock).mockReturnValue({
       data: undefined,
       error: undefined,
       isLoading: false,
@@ -74,7 +74,7 @@ describe('MailVacationSettings', () => {
   })
 
   it('shows skeleton while loading', () => {
-    ;(useGetMailVacationSettingsQuery as jest.Mock).mockReturnValue({
+    ;(useGetMailVacationSettingsQuery as unknown as jest.Mock).mockReturnValue({
       data: undefined,
       error: undefined,
       isLoading: true,
@@ -87,7 +87,7 @@ describe('MailVacationSettings', () => {
   })
 
   it('renders vacation form when data is loaded', () => {
-    ;(useGetMailVacationSettingsQuery as jest.Mock).mockReturnValue({
+    ;(useGetMailVacationSettingsQuery as unknown as jest.Mock).mockReturnValue({
       data: { enabled: false },
       error: undefined,
       isLoading: false,
@@ -103,7 +103,7 @@ describe('MailVacationSettings', () => {
   })
 
   it('shows feature disabled message on 403 error', () => {
-    ;(useGetMailVacationSettingsQuery as jest.Mock).mockReturnValue({
+    ;(useGetMailVacationSettingsQuery as unknown as jest.Mock).mockReturnValue({
       data: undefined,
       error: { status: 403 },
       isLoading: false,
@@ -117,7 +117,7 @@ describe('MailVacationSettings', () => {
   })
 
   it('shows generic load error for other failures', () => {
-    ;(useGetMailVacationSettingsQuery as jest.Mock).mockReturnValue({
+    ;(useGetMailVacationSettingsQuery as unknown as jest.Mock).mockReturnValue({
       data: undefined,
       error: { status: 500 },
       isLoading: false,
@@ -129,12 +129,12 @@ describe('MailVacationSettings', () => {
   })
 
   it('passes vacationAllowResponseAlways to form', () => {
-    ;(useProfile as jest.Mock).mockReturnValue({
+    ;(useProfile as unknown as jest.Mock).mockReturnValue({
       mainAccount: { id: 'acc-1' },
       timezone: 'Europe/Paris',
       vacationAllowResponseAlways: true,
     })
-    ;(useGetMailVacationSettingsQuery as jest.Mock).mockReturnValue({
+    ;(useGetMailVacationSettingsQuery as unknown as jest.Mock).mockReturnValue({
       data: { enabled: false },
       error: undefined,
       isLoading: false,

@@ -67,12 +67,12 @@ const mockFolderShareData = (users: Record<string, { uid: string; c_email?: stri
 describe('ShareFolderDialog', () => {
   beforeEach(() => {
     jest.clearAllMocks()
-    ;(useGetFolderShareQuery as jest.Mock).mockReturnValue({
+    ;(useGetFolderShareQuery as unknown as jest.Mock).mockReturnValue({
       data: undefined,
       isLoading: false,
       isError: false,
     })
-    ;(useSetFolderShareMutation as jest.Mock).mockReturnValue([
+    ;(useSetFolderShareMutation as unknown as jest.Mock).mockReturnValue([
       mockSetFolderShare,
       { isLoading: false },
     ])
@@ -148,7 +148,7 @@ describe('ShareFolderDialog', () => {
 
   describe('loading state', () => {
     it('should show skeleton loaders when isLoading is true', () => {
-      ;(useGetFolderShareQuery as jest.Mock).mockReturnValue({
+      ;(useGetFolderShareQuery as unknown as jest.Mock).mockReturnValue({
         data: undefined,
         isLoading: true,
         isError: false,
@@ -161,7 +161,7 @@ describe('ShareFolderDialog', () => {
 
   describe('empty state', () => {
     it('should show empty state when no users', async () => {
-      ;(useGetFolderShareQuery as jest.Mock).mockReturnValue(
+      ;(useGetFolderShareQuery as unknown as jest.Mock).mockReturnValue(
         mockFolderShareData({})
       )
       render(<ShareFolderDialog {...defaultProps} />)
@@ -175,7 +175,7 @@ describe('ShareFolderDialog', () => {
 
   describe('user list', () => {
     it('should display users when data is loaded', async () => {
-      ;(useGetFolderShareQuery as jest.Mock).mockReturnValue(
+      ;(useGetFolderShareQuery as unknown as jest.Mock).mockReturnValue(
         mockFolderShareData({
           'other@example.com': {
             uid: 'other@example.com',
@@ -193,7 +193,7 @@ describe('ShareFolderDialog', () => {
     })
 
     it('should show "You" badge for current user', async () => {
-      ;(useGetFolderShareQuery as jest.Mock).mockReturnValue(
+      ;(useGetFolderShareQuery as unknown as jest.Mock).mockReturnValue(
         mockFolderShareData({
           'current@example.com': {
             uid: 'current@example.com',
@@ -211,7 +211,7 @@ describe('ShareFolderDialog', () => {
     })
 
     it('should show "Public" badge for public-user', async () => {
-      ;(useGetFolderShareQuery as jest.Mock).mockReturnValue(
+      ;(useGetFolderShareQuery as unknown as jest.Mock).mockReturnValue(
         mockFolderShareData({
           'public@example.com': {
             uid: 'public@example.com',
@@ -232,7 +232,7 @@ describe('ShareFolderDialog', () => {
   describe('add user', () => {
     it('should show invalid email error when adding invalid email', async () => {
       const user = userEvent.setup()
-      ;(useGetFolderShareQuery as jest.Mock).mockReturnValue(
+      ;(useGetFolderShareQuery as unknown as jest.Mock).mockReturnValue(
         mockFolderShareData({})
       )
       render(<ShareFolderDialog {...defaultProps} />)
@@ -260,7 +260,7 @@ describe('ShareFolderDialog', () => {
 
     it('should add user when valid email is entered', async () => {
       const user = userEvent.setup()
-      ;(useGetFolderShareQuery as jest.Mock).mockReturnValue(
+      ;(useGetFolderShareQuery as unknown as jest.Mock).mockReturnValue(
         mockFolderShareData({})
       )
       render(<ShareFolderDialog {...defaultProps} />)
@@ -286,7 +286,7 @@ describe('ShareFolderDialog', () => {
 
     it('should show duplicate error when adding existing user', async () => {
       const user = userEvent.setup()
-      ;(useGetFolderShareQuery as jest.Mock).mockReturnValue(
+      ;(useGetFolderShareQuery as unknown as jest.Mock).mockReturnValue(
         mockFolderShareData({
           'existing@example.com': {
             uid: 'existing@example.com',
@@ -369,7 +369,7 @@ describe('ShareFolderDialog', () => {
     it('should call setFolderShare and onOpenChange when Save is clicked', async () => {
       const user = userEvent.setup()
       const onOpenChange = jest.fn()
-      ;(useGetFolderShareQuery as jest.Mock).mockReturnValue(
+      ;(useGetFolderShareQuery as unknown as jest.Mock).mockReturnValue(
         mockFolderShareData({
           'user@example.com': {
             uid: 'user@example.com',
@@ -415,7 +415,7 @@ describe('ShareFolderDialog', () => {
     })
 
     it('should disable Save button when isLoading', () => {
-      ;(useGetFolderShareQuery as jest.Mock).mockReturnValue({
+      ;(useGetFolderShareQuery as unknown as jest.Mock).mockReturnValue({
         data: undefined,
         isLoading: true,
         isError: false,

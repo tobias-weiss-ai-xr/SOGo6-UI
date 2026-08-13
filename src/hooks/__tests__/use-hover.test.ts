@@ -18,13 +18,13 @@ describe('useHover', () => {
     mockSetFalse = jest.fn()
 
     // Mock useBoolean to return state and actions
-    ;(useBoolean as jest.Mock).mockReturnValue([
+    ;(useBoolean as unknown as jest.Mock).mockReturnValue([
       false,
       { setTrue: mockSetTrue, setFalse: mockSetFalse },
     ])
 
     mockAddEventListener = jest.fn()
-    ;(useEventListener as jest.Mock).mockImplementation(mockAddEventListener)
+    ;(useEventListener as unknown as jest.Mock).mockImplementation(mockAddEventListener)
   })
 
   it('should be a function', () => {
@@ -77,7 +77,7 @@ describe('useHover', () => {
     renderHook(() => useHover(target))
 
     // Get the mouseenter handler
-    const mouseenterCall = (useEventListener as jest.Mock).mock.calls.find(
+    const mouseenterCall = (useEventListener as unknown as jest.Mock).mock.calls.find(
       (call) => call[0] === 'mouseenter'
     )
     const mouseenterHandler = mouseenterCall[1]
@@ -95,7 +95,7 @@ describe('useHover', () => {
     renderHook(() => useHover(target))
 
     // Get the mouseleave handler
-    const mouseleaveCall = (useEventListener as jest.Mock).mock.calls.find(
+    const mouseleaveCall = (useEventListener as unknown as jest.Mock).mock.calls.find(
       (call) => call[0] === 'mouseleave'
     )
     const mouseleaveHandler = mouseleaveCall[1]
@@ -113,7 +113,7 @@ describe('useHover', () => {
 
     renderHook(() => useHover(target, { onEnter }))
 
-    const mouseenterCall = (useEventListener as jest.Mock).mock.calls.find(
+    const mouseenterCall = (useEventListener as unknown as jest.Mock).mock.calls.find(
       (call) => call[0] === 'mouseenter'
     )
     const mouseenterHandler = mouseenterCall[1]
@@ -131,7 +131,7 @@ describe('useHover', () => {
 
     renderHook(() => useHover(target, { onLeave }))
 
-    const mouseleaveCall = (useEventListener as jest.Mock).mock.calls.find(
+    const mouseleaveCall = (useEventListener as unknown as jest.Mock).mock.calls.find(
       (call) => call[0] === 'mouseleave'
     )
     const mouseleaveHandler = mouseleaveCall[1]
@@ -149,7 +149,7 @@ describe('useHover', () => {
 
     renderHook(() => useHover(target, { onChange }))
 
-    const mouseenterCall = (useEventListener as jest.Mock).mock.calls.find(
+    const mouseenterCall = (useEventListener as unknown as jest.Mock).mock.calls.find(
       (call) => call[0] === 'mouseenter'
     )
     const mouseenterHandler = mouseenterCall[1]
@@ -167,7 +167,7 @@ describe('useHover', () => {
 
     renderHook(() => useHover(target, { onChange }))
 
-    const mouseleaveCall = (useEventListener as jest.Mock).mock.calls.find(
+    const mouseleaveCall = (useEventListener as unknown as jest.Mock).mock.calls.find(
       (call) => call[0] === 'mouseleave'
     )
     const mouseleaveHandler = mouseleaveCall[1]
@@ -187,7 +187,7 @@ describe('useHover', () => {
 
     renderHook(() => useHover(target, { onEnter, onChange }))
 
-    const mouseenterCall = (useEventListener as jest.Mock).mock.calls.find(
+    const mouseenterCall = (useEventListener as unknown as jest.Mock).mock.calls.find(
       (call) => call[0] === 'mouseenter'
     )
     const mouseenterHandler = mouseenterCall[1]
@@ -207,7 +207,7 @@ describe('useHover', () => {
 
     renderHook(() => useHover(target, { onLeave, onChange }))
 
-    const mouseleaveCall = (useEventListener as jest.Mock).mock.calls.find(
+    const mouseleaveCall = (useEventListener as unknown as jest.Mock).mock.calls.find(
       (call) => call[0] === 'mouseleave'
     )
     const mouseleaveHandler = mouseleaveCall[1]
@@ -234,7 +234,7 @@ describe('useHover', () => {
 
     renderHook(() => useHover(target, { onEnter }))
 
-    const mouseenterCall = (useEventListener as jest.Mock).mock.calls.find(
+    const mouseenterCall = (useEventListener as unknown as jest.Mock).mock.calls.find(
       (call) => call[0] === 'mouseenter'
     )
     const mouseenterHandler = mouseenterCall[1]
@@ -283,7 +283,7 @@ describe('useHover', () => {
 
     renderHook(() => useHover(target))
 
-    const calls = (useEventListener as jest.Mock).mock.calls
+    const calls = (useEventListener as unknown as jest.Mock).mock.calls
     expect(calls[0][2]).toEqual({ target })
     expect(calls[1][2]).toEqual({ target })
   })
@@ -295,7 +295,7 @@ describe('useHover', () => {
       useHover(target, { onLeave: jest.fn() })
     )
 
-    const mouseenterCall = (useEventListener as jest.Mock).mock.calls.find(
+    const mouseenterCall = (useEventListener as unknown as jest.Mock).mock.calls.find(
       (call) => call[0] === 'mouseenter'
     )
     const mouseenterHandler = mouseenterCall[1]
@@ -314,7 +314,7 @@ describe('useHover', () => {
       useHover(target, { onEnter: jest.fn() })
     )
 
-    const mouseleaveCall = (useEventListener as jest.Mock).mock.calls.find(
+    const mouseleaveCall = (useEventListener as unknown as jest.Mock).mock.calls.find(
       (call) => call[0] === 'mouseleave'
     )
     const mouseleaveHandler = mouseleaveCall[1]
@@ -333,7 +333,7 @@ describe('useHover', () => {
       useHover(target, { onEnter: jest.fn() })
     )
 
-    const mouseleaveCall = (useEventListener as jest.Mock).mock.calls.find(
+    const mouseleaveCall = (useEventListener as unknown as jest.Mock).mock.calls.find(
       (call) => call[0] === 'mouseleave'
     )
     const mouseleaveHandler = mouseleaveCall[1]
@@ -351,10 +351,10 @@ describe('useHover', () => {
 
     renderHook(() => useHover(target, { onChange }))
 
-    const mouseenterCall = (useEventListener as jest.Mock).mock.calls.find(
+    const mouseenterCall = (useEventListener as unknown as jest.Mock).mock.calls.find(
       (call) => call[0] === 'mouseenter'
     )
-    const mouseleaveCall = (useEventListener as jest.Mock).mock.calls.find(
+    const mouseleaveCall = (useEventListener as unknown as jest.Mock).mock.calls.find(
       (call) => call[0] === 'mouseleave'
     )
 
@@ -380,10 +380,10 @@ describe('useHover', () => {
 
     renderHook(() => useHover(target, { onChange }))
 
-    const mouseenterCall = (useEventListener as jest.Mock).mock.calls.find(
+    const mouseenterCall = (useEventListener as unknown as jest.Mock).mock.calls.find(
       (call) => call[0] === 'mouseenter'
     )
-    const mouseleaveCall = (useEventListener as jest.Mock).mock.calls.find(
+    const mouseleaveCall = (useEventListener as unknown as jest.Mock).mock.calls.find(
       (call) => call[0] === 'mouseleave'
     )
 
@@ -411,7 +411,7 @@ describe('useHover', () => {
 
     renderHook(() => useHover(target, { onEnter, onChange }))
 
-    const mouseenterCall = (useEventListener as jest.Mock).mock.calls.find(
+    const mouseenterCall = (useEventListener as unknown as jest.Mock).mock.calls.find(
       (call) => call[0] === 'mouseenter'
     )
     const mouseenterHandler = mouseenterCall[1]
@@ -432,7 +432,7 @@ describe('useHover', () => {
 
     renderHook(() => useHover(target, { onLeave, onChange }))
 
-    const mouseleaveCall = (useEventListener as jest.Mock).mock.calls.find(
+    const mouseleaveCall = (useEventListener as unknown as jest.Mock).mock.calls.find(
       (call) => call[0] === 'mouseleave'
     )
     const mouseleaveHandler = mouseleaveCall[1]

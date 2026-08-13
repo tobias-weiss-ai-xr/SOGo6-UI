@@ -43,9 +43,9 @@ describe('NotificationProvider', () => {
     jest.clearAllMocks()
     mockDispatch = jest.fn()
     mockTranslate = jest.fn((key) => `translated_${key}`)
-    ;(useAppDispatch as jest.Mock).mockReturnValue(mockDispatch)
-    ;(useAppSelector as jest.Mock).mockReturnValue([])
-    ;(useTranslations as jest.Mock).mockReturnValue(mockTranslate)
+    ;(useAppDispatch as unknown as jest.Mock).mockReturnValue(mockDispatch)
+    ;(useAppSelector as unknown as jest.Mock).mockReturnValue([])
+    ;(useTranslations as unknown as jest.Mock).mockReturnValue(mockTranslate)
   })
 
   it('renders without crashing', () => {
@@ -69,7 +69,7 @@ describe('NotificationProvider', () => {
       details: '',
     }
 
-    ;(useAppSelector as jest.Mock).mockReturnValueOnce([notification])
+    ;(useAppSelector as unknown as jest.Mock).mockReturnValueOnce([notification])
 
     render(<NotificationProvider />)
 
@@ -91,7 +91,7 @@ describe('NotificationProvider', () => {
       timestamp: Date.now(),
     }
 
-    ;(useAppSelector as jest.Mock).mockReturnValueOnce([notification])
+    ;(useAppSelector as unknown as jest.Mock).mockReturnValueOnce([notification])
 
     render(<NotificationProvider />)
 
@@ -113,7 +113,7 @@ describe('NotificationProvider', () => {
       timestamp: Date.now(),
     }
 
-    ;(useAppSelector as jest.Mock).mockReturnValueOnce([notification])
+    ;(useAppSelector as unknown as jest.Mock).mockReturnValueOnce([notification])
 
     render(<NotificationProvider />)
 
@@ -135,7 +135,7 @@ describe('NotificationProvider', () => {
       timestamp: Date.now(),
     }
 
-    ;(useAppSelector as jest.Mock).mockReturnValueOnce([notification])
+    ;(useAppSelector as unknown as jest.Mock).mockReturnValueOnce([notification])
 
     render(<NotificationProvider />)
 
@@ -157,12 +157,12 @@ describe('NotificationProvider', () => {
       timestamp: Date.now(),
     }
 
-    ;(useAppSelector as jest.Mock).mockReturnValueOnce([notification])
+    ;(useAppSelector as unknown as jest.Mock).mockReturnValueOnce([notification])
 
     render(<NotificationProvider />)
 
     await waitFor(() => {
-      const callArgs = (toast.success as jest.Mock).mock.calls[0]
+      const callArgs = (toast.success as unknown as jest.Mock).mock.calls[0]
       const onDismiss = callArgs[1].onDismiss
       onDismiss()
       expect(mockDispatch).toHaveBeenCalledWith(removeNotification('test-123'))
@@ -179,7 +179,7 @@ describe('NotificationProvider', () => {
       timestamp: Date.now(),
     }
 
-    ;(useAppSelector as jest.Mock).mockReturnValueOnce([notification])
+    ;(useAppSelector as unknown as jest.Mock).mockReturnValueOnce([notification])
 
     render(<NotificationProvider />)
 
@@ -211,7 +211,7 @@ describe('NotificationProvider', () => {
       },
     ]
 
-    ;(useAppSelector as jest.Mock).mockReturnValueOnce(notifications)
+    ;(useAppSelector as unknown as jest.Mock).mockReturnValueOnce(notifications)
 
     render(<NotificationProvider />)
 
@@ -231,7 +231,7 @@ describe('NotificationProvider', () => {
       timestamp: Date.now(),
     }
 
-    ;(useAppSelector as jest.Mock).mockReturnValue([notification])
+    ;(useAppSelector as unknown as jest.Mock).mockReturnValue([notification])
 
     const { rerender } = render(<NotificationProvider />)
 
@@ -256,7 +256,7 @@ describe('NotificationProvider', () => {
       timestamp: Date.now(),
     }
 
-    ;(useAppSelector as jest.Mock).mockReturnValueOnce([notification])
+    ;(useAppSelector as unknown as jest.Mock).mockReturnValueOnce([notification])
 
     render(<NotificationProvider />)
 
@@ -272,7 +272,7 @@ describe('NotificationProvider', () => {
   })
 
   it('renders null when there are no notifications', () => {
-    ;(useAppSelector as jest.Mock).mockReturnValueOnce([])
+    ;(useAppSelector as unknown as jest.Mock).mockReturnValueOnce([])
     const { container } = render(<NotificationProvider />)
     expect(container.firstChild).toBeNull()
   })
@@ -287,7 +287,7 @@ describe('NotificationProvider', () => {
       timestamp: Date.now(),
     }
 
-    ;(useAppSelector as jest.Mock).mockReturnValueOnce([notification])
+    ;(useAppSelector as unknown as jest.Mock).mockReturnValueOnce([notification])
     render(<NotificationProvider />)
 
     await waitFor(() => {
@@ -307,11 +307,11 @@ describe('NotificationProvider', () => {
       timestamp: Date.now(),
     }
 
-    ;(useAppSelector as jest.Mock).mockReturnValueOnce([notification])
+    ;(useAppSelector as unknown as jest.Mock).mockReturnValueOnce([notification])
     render(<NotificationProvider />)
 
     await waitFor(() => {
-      const callArgs = (toast.error as jest.Mock).mock.calls[0]
+      const callArgs = (toast.error as unknown as jest.Mock).mock.calls[0]
       const description = callArgs[1].description
       // When details is present, description is JSX (not a plain string)
       expect(description).not.toBe('translated_Error Message')
@@ -329,11 +329,11 @@ describe('NotificationProvider', () => {
       timestamp: Date.now(),
     }
 
-    ;(useAppSelector as jest.Mock).mockReturnValueOnce([notification])
+    ;(useAppSelector as unknown as jest.Mock).mockReturnValueOnce([notification])
     render(<NotificationProvider />)
 
     await waitFor(() => {
-      const callArgs = (toast.success as jest.Mock).mock.calls[0]
+      const callArgs = (toast.success as unknown as jest.Mock).mock.calls[0]
       const description = callArgs[1].description
       expect(description).toBe('translated_Message')
     })
@@ -349,11 +349,11 @@ describe('NotificationProvider', () => {
       timestamp: Date.now(),
     }
 
-    ;(useAppSelector as jest.Mock).mockReturnValueOnce([notification])
+    ;(useAppSelector as unknown as jest.Mock).mockReturnValueOnce([notification])
     render(<NotificationProvider />)
 
     await waitFor(() => {
-      const callArgs = (toast.info as jest.Mock).mock.calls[0]
+      const callArgs = (toast.info as unknown as jest.Mock).mock.calls[0]
       expect(callArgs[1].duration).toBeUndefined()
     })
   })
@@ -370,7 +370,7 @@ describe('NotificationProvider', () => {
       timestamp: Date.now(),
     }
 
-    ;(useAppSelector as jest.Mock).mockReturnValueOnce([notification])
+    ;(useAppSelector as unknown as jest.Mock).mockReturnValueOnce([notification])
     render(<NotificationProvider />)
 
     jest.advanceTimersByTime(10000)
@@ -394,7 +394,7 @@ describe('NotificationProvider', () => {
       timestamp: Date.now(),
     }
 
-    ;(useAppSelector as jest.Mock).mockReturnValueOnce([notification])
+    ;(useAppSelector as unknown as jest.Mock).mockReturnValueOnce([notification])
     render(<NotificationProvider />)
 
     jest.advanceTimersByTime(10000)
@@ -416,11 +416,11 @@ describe('NotificationProvider', () => {
       timestamp: Date.now(),
     }
 
-    ;(useAppSelector as jest.Mock).mockReturnValueOnce([notification])
+    ;(useAppSelector as unknown as jest.Mock).mockReturnValueOnce([notification])
     render(<NotificationProvider />)
 
     await waitFor(() => {
-      const callArgs = (toast.error as jest.Mock).mock.calls[0]
+      const callArgs = (toast.error as unknown as jest.Mock).mock.calls[0]
       callArgs[1].onDismiss()
       expect(mockDispatch).toHaveBeenCalledWith(
         removeNotification('error-dismiss')
@@ -438,11 +438,11 @@ describe('NotificationProvider', () => {
       timestamp: Date.now(),
     }
 
-    ;(useAppSelector as jest.Mock).mockReturnValueOnce([notification])
+    ;(useAppSelector as unknown as jest.Mock).mockReturnValueOnce([notification])
     render(<NotificationProvider />)
 
     await waitFor(() => {
-      const callArgs = (toast.info as jest.Mock).mock.calls[0]
+      const callArgs = (toast.info as unknown as jest.Mock).mock.calls[0]
       callArgs[1].onDismiss()
       expect(mockDispatch).toHaveBeenCalledWith(
         removeNotification('info-dismiss')

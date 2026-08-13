@@ -39,7 +39,7 @@ describe('Toaster (sonner UI component)', () => {
     mockUseTheme.mockReturnValue({ theme: undefined })
     render(<Toaster />)
 
-    const callArgs = (SonnerToaster as unknown as jest.Mock).mock.calls[0][0]
+    const callArgs = (SonnerToaster as unknown as unknown as jest.Mock).mock.calls[0][0]
     expect(callArgs.theme).toBe('system')
   })
 
@@ -47,21 +47,21 @@ describe('Toaster (sonner UI component)', () => {
     mockUseTheme.mockReturnValue({ theme: 'dark' })
     render(<Toaster />)
 
-    const callArgs = (SonnerToaster as unknown as jest.Mock).mock.calls[0][0]
+    const callArgs = (SonnerToaster as unknown as unknown as jest.Mock).mock.calls[0][0]
     expect(callArgs.theme).toBe('dark')
   })
 
   it('sets correct className', () => {
     render(<Toaster />)
 
-    const callArgs = (SonnerToaster as unknown as jest.Mock).mock.calls[0][0]
+    const callArgs = (SonnerToaster as unknown as unknown as jest.Mock).mock.calls[0][0]
     expect(callArgs.className).toBe('toaster group')
   })
 
   it('configures toast styling', () => {
     render(<Toaster />)
 
-    const callArgs = (SonnerToaster as unknown as jest.Mock).mock.calls[0][0]
+    const callArgs = (SonnerToaster as unknown as unknown as jest.Mock).mock.calls[0][0]
     expect(callArgs.toastOptions).toBeDefined()
     expect(callArgs.toastOptions.classNames).toBeDefined()
   })
@@ -69,7 +69,7 @@ describe('Toaster (sonner UI component)', () => {
   it('applies correct toast classes', () => {
     render(<Toaster />)
 
-    const callArgs = (SonnerToaster as unknown as jest.Mock).mock.calls[0][0]
+    const callArgs = (SonnerToaster as unknown as unknown as jest.Mock).mock.calls[0][0]
     const classNames = callArgs.toastOptions.classNames
 
     expect(classNames.toast).toContain('group')
@@ -81,7 +81,7 @@ describe('Toaster (sonner UI component)', () => {
   it('applies description styles', () => {
     render(<Toaster />)
 
-    const callArgs = (SonnerToaster as unknown as jest.Mock).mock.calls[0][0]
+    const callArgs = (SonnerToaster as unknown as unknown as jest.Mock).mock.calls[0][0]
     const classNames = callArgs.toastOptions.classNames
 
     expect(classNames.description).toBe('group-[.toast]:text-muted-foreground')
@@ -90,7 +90,7 @@ describe('Toaster (sonner UI component)', () => {
   it('applies action button styles', () => {
     render(<Toaster />)
 
-    const callArgs = (SonnerToaster as unknown as jest.Mock).mock.calls[0][0]
+    const callArgs = (SonnerToaster as unknown as unknown as jest.Mock).mock.calls[0][0]
     const classNames = callArgs.toastOptions.classNames
 
     expect(classNames.actionButton).toContain('group-[.toast]:bg-primary')
@@ -102,7 +102,7 @@ describe('Toaster (sonner UI component)', () => {
   it('applies cancel button styles', () => {
     render(<Toaster />)
 
-    const callArgs = (SonnerToaster as unknown as jest.Mock).mock.calls[0][0]
+    const callArgs = (SonnerToaster as unknown as unknown as jest.Mock).mock.calls[0][0]
     const classNames = callArgs.toastOptions.classNames
 
     expect(classNames.cancelButton).toContain('group-[.toast]:bg-muted')
@@ -115,7 +115,7 @@ describe('Toaster (sonner UI component)', () => {
     const customProps = { position: 'bottom-right' as const }
     render(<Toaster {...customProps} />)
 
-    const callArgs = (SonnerToaster as unknown as jest.Mock).mock.calls[0][0]
+    const callArgs = (SonnerToaster as unknown as unknown as jest.Mock).mock.calls[0][0]
     expect(callArgs.position).toBe('bottom-right')
   })
 
@@ -125,7 +125,7 @@ describe('Toaster (sonner UI component)', () => {
     mockUseTheme.mockReturnValue({ theme: 'dark' })
     rerender(<Toaster />)
 
-    const calls = (SonnerToaster as unknown as jest.Mock).mock.calls
+    const calls = (SonnerToaster as unknown as unknown as jest.Mock).mock.calls
     const lastCallArgs = calls[calls.length - 1][0]
     expect(lastCallArgs.theme).toBe('dark')
   })
@@ -134,7 +134,7 @@ describe('Toaster (sonner UI component)', () => {
     mockUseTheme.mockReturnValue({ theme: 'light' })
     render(<Toaster />)
 
-    const callArgs = (SonnerToaster as unknown as jest.Mock).mock.calls[0][0]
+    const callArgs = (SonnerToaster as unknown as unknown as jest.Mock).mock.calls[0][0]
     expect(callArgs.theme).toBe('light')
   })
 
@@ -142,7 +142,7 @@ describe('Toaster (sonner UI component)', () => {
     mockUseTheme.mockReturnValue({ theme: 'dark' })
     render(<Toaster />)
 
-    const callArgs = (SonnerToaster as unknown as jest.Mock).mock.calls[0][0]
+    const callArgs = (SonnerToaster as unknown as unknown as jest.Mock).mock.calls[0][0]
     expect(callArgs).toEqual(
       expect.objectContaining({
         theme: 'dark',

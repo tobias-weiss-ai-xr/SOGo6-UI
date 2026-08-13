@@ -119,7 +119,7 @@ describe('mailboxesOnQueryStarted', () => {
 
   beforeEach(() => {
     jest.clearAllMocks()
-    ;(createApiNotificationHandler as jest.Mock).mockReturnValue(mockNotificationFn)
+    ;(createApiNotificationHandler as unknown as jest.Mock).mockReturnValue(mockNotificationFn)
   })
 
   // Helper: call onQueryStarted directly from a built endpoint

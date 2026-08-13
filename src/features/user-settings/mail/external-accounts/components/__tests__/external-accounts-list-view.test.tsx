@@ -144,7 +144,7 @@ describe('ExternalAccountsListView', () => {
 
   beforeEach(() => {
     jest.clearAllMocks()
-    ;(useTranslations as jest.Mock).mockReturnValue(mockT)
+    ;(useTranslations as unknown as jest.Mock).mockReturnValue(mockT)
   })
 
   // ── rendering ─────────────────────────────────────────────────────────────

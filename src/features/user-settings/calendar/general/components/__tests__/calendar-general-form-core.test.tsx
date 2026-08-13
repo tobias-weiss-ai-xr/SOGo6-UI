@@ -176,7 +176,7 @@ beforeEach(() => {
     ],
   })
 
-  ;(useTranslations as jest.Mock).mockImplementation((namespace: string) => {
+  ;(useTranslations as unknown as jest.Mock).mockImplementation((namespace: string) => {
     const translations: Record<string, Record<string, string>> = {
       US_CALENDARS: {
         'calendarViewFirstDay.string': 'First day of week',

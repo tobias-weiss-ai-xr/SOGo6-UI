@@ -37,7 +37,7 @@ jest.mock('@/components/ui/skeleton', () => ({
 describe('ImapAccountSkeleton', () => {
   beforeEach(() => {
     jest.clearAllMocks()
-    ;(useTranslations as jest.Mock).mockReturnValue((key: string) => key)
+    ;(useTranslations as unknown as jest.Mock).mockReturnValue((key: string) => key)
   })
 
   describe('rendering', () => {

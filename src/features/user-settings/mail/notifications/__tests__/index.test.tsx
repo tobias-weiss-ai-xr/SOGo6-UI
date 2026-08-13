@@ -39,17 +39,17 @@ describe('MailNotificationsSettings', () => {
 
   beforeEach(() => {
     jest.clearAllMocks()
-    ;(useTranslations as jest.Mock).mockReturnValue(mockTranslate)
-    ;(useProfile as jest.Mock).mockReturnValue({
+    ;(useTranslations as unknown as jest.Mock).mockReturnValue(mockTranslate)
+    ;(useProfile as unknown as jest.Mock).mockReturnValue({
       mainAccount: { id: 'acc-1' },
     })
-    ;(useUpdateMailNotificationSettingsMutation as jest.Mock).mockReturnValue([
+    ;(useUpdateMailNotificationSettingsMutation as unknown as jest.Mock).mockReturnValue([
       mockUpdate,
     ])
   })
 
   it('renders page title and description', () => {
-    ;(useGetMailNotificationSettingsQuery as jest.Mock).mockReturnValue({
+    ;(useGetMailNotificationSettingsQuery as unknown as jest.Mock).mockReturnValue({
       data: undefined,
       error: undefined,
       isLoading: false,
@@ -62,7 +62,7 @@ describe('MailNotificationsSettings', () => {
   })
 
   it('shows skeleton while loading', () => {
-    ;(useGetMailNotificationSettingsQuery as jest.Mock).mockReturnValue({
+    ;(useGetMailNotificationSettingsQuery as unknown as jest.Mock).mockReturnValue({
       data: undefined,
       error: undefined,
       isLoading: true,
@@ -75,7 +75,7 @@ describe('MailNotificationsSettings', () => {
   })
 
   it('renders notifications form when data is loaded', () => {
-    ;(useGetMailNotificationSettingsQuery as jest.Mock).mockReturnValue({
+    ;(useGetMailNotificationSettingsQuery as unknown as jest.Mock).mockReturnValue({
       data: { enabled: false, addresses: [], message: '' },
       error: undefined,
       isLoading: false,
@@ -91,7 +91,7 @@ describe('MailNotificationsSettings', () => {
   })
 
   it('shows feature disabled message on 403 error', () => {
-    ;(useGetMailNotificationSettingsQuery as jest.Mock).mockReturnValue({
+    ;(useGetMailNotificationSettingsQuery as unknown as jest.Mock).mockReturnValue({
       data: undefined,
       error: { status: 403 },
       isLoading: false,
@@ -105,7 +105,7 @@ describe('MailNotificationsSettings', () => {
   })
 
   it('shows generic load error for other failures', () => {
-    ;(useGetMailNotificationSettingsQuery as jest.Mock).mockReturnValue({
+    ;(useGetMailNotificationSettingsQuery as unknown as jest.Mock).mockReturnValue({
       data: undefined,
       error: { status: 500 },
       isLoading: false,

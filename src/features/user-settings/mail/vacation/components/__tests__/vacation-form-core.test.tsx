@@ -59,7 +59,7 @@ describe('MailVacationSettingsForm (core)', () => {
 
   beforeEach(() => {
     jest.clearAllMocks()
-    ;(useTranslations as jest.Mock).mockImplementation((ns: string) => {
+    ;(useTranslations as unknown as jest.Mock).mockImplementation((ns: string) => {
       if (ns === 'US_MAIL_VACATIONS') return mockT
       return (key: string) => key
     })

@@ -50,7 +50,7 @@ jest.mock('@/features/notifications', () => ({
 import { apiSlice as mockApiSlice } from '@/lib/redux/api/api-slice'
 
 // Access the captured injectEndpoints config
-const mockInject = (mockApiSlice.injectEndpoints as unknown as jest.Mock)
+const mockInject = (mockApiSlice.injectEndpoints as unknown as unknown as jest.Mock)
 
 // Load the module under test AFTER the mock is registered (require ensures ordering)
 // eslint-disable-next-line @typescript-eslint/no-var-requires

@@ -121,7 +121,7 @@ const mockData = {
 
 beforeEach(() => {
   jest.clearAllMocks()
-  ;(useTranslations as jest.Mock).mockImplementation((namespace: string) => {
+  ;(useTranslations as unknown as jest.Mock).mockImplementation((namespace: string) => {
     const translations: Record<string, Record<string, string>> = {
       US_MAIL_GENERAL: {
         'compose_mail_window.string': 'Compose mail window',

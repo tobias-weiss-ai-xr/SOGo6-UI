@@ -148,14 +148,14 @@ describe('FloatingCompose Component', () => {
       get: jest.fn(() => null),
       toString: jest.fn(() => ''),
     }
-    ;(useAppDispatch as jest.Mock).mockReturnValue(mockDispatch)
-    ;(useRouter as jest.Mock).mockReturnValue({ push: mockPush })
-    ;(useSearchParams as jest.Mock).mockReturnValue(mockSearchParams)
-    ;(usePathname as jest.Mock).mockReturnValue('/en/mails')
-    ;(useLocale as jest.Mock).mockReturnValue('en')
-    ;(useTranslations as jest.Mock).mockReturnValue((key: string) => key)
-    ;(useIsMobile as jest.Mock).mockReturnValue(false)
-    ;(useAppSelector as jest.Mock).mockImplementation(
+    ;(useAppDispatch as unknown as jest.Mock).mockReturnValue(mockDispatch)
+    ;(useRouter as unknown as jest.Mock).mockReturnValue({ push: mockPush })
+    ;(useSearchParams as unknown as jest.Mock).mockReturnValue(mockSearchParams)
+    ;(usePathname as unknown as jest.Mock).mockReturnValue('/en/mails')
+    ;(useLocale as unknown as jest.Mock).mockReturnValue('en')
+    ;(useTranslations as unknown as jest.Mock).mockReturnValue((key: string) => key)
+    ;(useIsMobile as unknown as jest.Mock).mockReturnValue(false)
+    ;(useAppSelector as unknown as jest.Mock).mockImplementation(
       (selector: (s: any) => any) => selector(createMockState(true, false))
     )
   })
@@ -166,7 +166,7 @@ describe('FloatingCompose Component', () => {
 
   describe('Render Behavior', () => {
     it('should not render when compose is not open', () => {
-      ;(useAppSelector as jest.Mock).mockImplementation(
+      ;(useAppSelector as unknown as jest.Mock).mockImplementation(
         (selector: (s: any) => any) => selector(createMockState(false))
       )
 
@@ -390,7 +390,7 @@ describe('FloatingCompose Component', () => {
 
   describe('Mobile Behavior', () => {
     it('should maximize on mobile', () => {
-      ;(useIsMobile as jest.Mock).mockReturnValue(true)
+      ;(useIsMobile as unknown as jest.Mock).mockReturnValue(true)
       render(<FloatingCompose draftId="draft-1" />)
 
       // Component should auto-maximize on mobile
@@ -399,7 +399,7 @@ describe('FloatingCompose Component', () => {
     })
 
     it('should not be maximized on desktop', () => {
-      ;(useIsMobile as jest.Mock).mockReturnValue(false)
+      ;(useIsMobile as unknown as jest.Mock).mockReturnValue(false)
       render(<FloatingCompose draftId="draft-1" />)
 
       const maximizeButton = screen.getByRole('button', {
@@ -409,7 +409,7 @@ describe('FloatingCompose Component', () => {
     })
 
     it('should not display maximize/restore button on mobile', () => {
-      ;(useIsMobile as jest.Mock).mockReturnValue(true)
+      ;(useIsMobile as unknown as jest.Mock).mockReturnValue(true)
       render(<FloatingCompose draftId="draft-1" />)
 
       expect(

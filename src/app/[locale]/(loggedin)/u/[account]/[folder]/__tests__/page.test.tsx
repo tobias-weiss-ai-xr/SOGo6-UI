@@ -74,16 +74,16 @@ describe('Mail Folder Page', () => {
 
   beforeEach(() => {
     jest.clearAllMocks()
-    ;(useParams as jest.Mock).mockReturnValue({
+    ;(useParams as unknown as jest.Mock).mockReturnValue({
       locale: 'en',
       account: 'test@example.com',
       folder: 'INBOX',
     })
-    ;(useSearchParams as jest.Mock).mockReturnValue(mockSearchParams)
+    ;(useSearchParams as unknown as jest.Mock).mockReturnValue(mockSearchParams)
   })
 
   it('should render the page component', () => {
-    ;(useGetFolderMessagesQuery as jest.Mock).mockReturnValue({
+    ;(useGetFolderMessagesQuery as unknown as jest.Mock).mockReturnValue({
       data: {
         mails: [],
         page: 1,
@@ -105,7 +105,7 @@ describe('Mail Folder Page', () => {
   })
 
   it('should show loading skeleton while fetching messages', () => {
-    ;(useGetFolderMessagesQuery as jest.Mock).mockReturnValue({
+    ;(useGetFolderMessagesQuery as unknown as jest.Mock).mockReturnValue({
       data: undefined,
       isLoading: true,
       refetch: jest.fn(),
@@ -125,7 +125,7 @@ describe('Mail Folder Page', () => {
       { id: '2', subject: 'Test 2', from: 'sender2@example.com' },
     ]
 
-    ;(useGetFolderMessagesQuery as jest.Mock).mockReturnValue({
+    ;(useGetFolderMessagesQuery as unknown as jest.Mock).mockReturnValue({
       data: {
         mails: mockMessages,
         page: 1,
@@ -150,7 +150,7 @@ describe('Mail Folder Page', () => {
   })
 
   it('should pass correct page information to MessagesList', () => {
-    ;(useGetFolderMessagesQuery as jest.Mock).mockReturnValue({
+    ;(useGetFolderMessagesQuery as unknown as jest.Mock).mockReturnValue({
       data: {
         mails: [],
         page: 2,
@@ -178,7 +178,7 @@ describe('Mail Folder Page', () => {
 
   it('should extract folder from params correctly', () => {
     const mockRefetch = jest.fn()
-    ;(useGetFolderMessagesQuery as jest.Mock).mockReturnValue({
+    ;(useGetFolderMessagesQuery as unknown as jest.Mock).mockReturnValue({
       data: {
         mails: [],
         page: 1,
@@ -190,7 +190,7 @@ describe('Mail Folder Page', () => {
       isLoading: false,
       refetch: mockRefetch,
     })
-    ;(useParams as jest.Mock).mockReturnValue({
+    ;(useParams as unknown as jest.Mock).mockReturnValue({
       folder: 'Sent',
     })
 
@@ -210,7 +210,7 @@ describe('Mail Folder Page', () => {
 
   it('should handle array folder param', () => {
     const mockRefetch = jest.fn()
-    ;(useGetFolderMessagesQuery as jest.Mock).mockReturnValue({
+    ;(useGetFolderMessagesQuery as unknown as jest.Mock).mockReturnValue({
       data: {
         mails: [],
         page: 1,
@@ -222,7 +222,7 @@ describe('Mail Folder Page', () => {
       isLoading: false,
       refetch: mockRefetch,
     })
-    ;(useParams as jest.Mock).mockReturnValue({
+    ;(useParams as unknown as jest.Mock).mockReturnValue({
       folder: ['Archive', 'Old'],
     })
 
@@ -244,8 +244,8 @@ describe('Mail Folder Page', () => {
     const mockRefetch = jest.fn()
     const searchParams = new URLSearchParams([['sort', 't_desc']])
 
-    ;(useSearchParams as jest.Mock).mockReturnValue(searchParams)
-    ;(useGetFolderMessagesQuery as jest.Mock).mockReturnValue({
+    ;(useSearchParams as unknown as jest.Mock).mockReturnValue(searchParams)
+    ;(useGetFolderMessagesQuery as unknown as jest.Mock).mockReturnValue({
       data: {
         mails: [],
         page: 1,
@@ -278,7 +278,7 @@ describe('Mail Folder Page', () => {
   })
 
   it('should handle empty messages array', () => {
-    ;(useGetFolderMessagesQuery as jest.Mock).mockReturnValue({
+    ;(useGetFolderMessagesQuery as unknown as jest.Mock).mockReturnValue({
       data: {
         mails: [],
         page: 1,
@@ -301,7 +301,7 @@ describe('Mail Folder Page', () => {
   })
 
   it('should handle undefined data gracefully', () => {
-    ;(useGetFolderMessagesQuery as jest.Mock).mockReturnValue({
+    ;(useGetFolderMessagesQuery as unknown as jest.Mock).mockReturnValue({
       data: undefined,
       isLoading: false,
       refetch: jest.fn(),
@@ -319,10 +319,10 @@ describe('Mail Folder Page', () => {
   })
 
   it('should call useGetFolderMessagesQuery with new folder when folder changes', async () => {
-    ;(useParams as jest.Mock).mockReturnValue({
+    ;(useParams as unknown as jest.Mock).mockReturnValue({
       folder: 'INBOX',
     })
-    ;(useGetFolderMessagesQuery as jest.Mock).mockReturnValue({
+    ;(useGetFolderMessagesQuery as unknown as jest.Mock).mockReturnValue({
       data: {
         mails: [],
         page: 1,
@@ -350,7 +350,7 @@ describe('Mail Folder Page', () => {
     )
 
     // Change the folder to Drafts
-    ;(useParams as jest.Mock).mockReturnValue({
+    ;(useParams as unknown as jest.Mock).mockReturnValue({
       folder: 'Drafts',
     })
 
@@ -375,7 +375,7 @@ describe('Mail Folder Page', () => {
   it('should not call refetch while loading', () => {
     const mockRefetch = jest.fn()
 
-    ;(useGetFolderMessagesQuery as jest.Mock).mockReturnValue({
+    ;(useGetFolderMessagesQuery as unknown as jest.Mock).mockReturnValue({
       data: undefined,
       isLoading: true,
       refetch: mockRefetch,
@@ -392,10 +392,10 @@ describe('Mail Folder Page', () => {
   })
 
   it('should handle null folder param', () => {
-    ;(useParams as jest.Mock).mockReturnValue({
+    ;(useParams as unknown as jest.Mock).mockReturnValue({
       folder: null,
     })
-    ;(useGetFolderMessagesQuery as jest.Mock).mockReturnValue({
+    ;(useGetFolderMessagesQuery as unknown as jest.Mock).mockReturnValue({
       data: {
         mails: [],
         page: 1,
@@ -423,7 +423,7 @@ describe('Mail Folder Page', () => {
   })
 
   it('should show loading skeleton when data is loading', () => {
-    ;(useGetFolderMessagesQuery as jest.Mock).mockReturnValue({
+    ;(useGetFolderMessagesQuery as unknown as jest.Mock).mockReturnValue({
       data: {
         mails: [],
         page: 1,

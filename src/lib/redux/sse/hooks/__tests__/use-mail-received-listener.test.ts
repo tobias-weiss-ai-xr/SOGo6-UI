@@ -39,7 +39,7 @@ describe('useMailReceivedListener', () => {
   beforeEach(() => {
     jest.clearAllMocks()
     mockSubscribe.mockReturnValue(mockUnsubscribe)
-    ;(getSSEServiceInstance as jest.Mock).mockReturnValue({
+    ;(getSSEServiceInstance as unknown as jest.Mock).mockReturnValue({
       subscribe: mockSubscribe,
     })
   })

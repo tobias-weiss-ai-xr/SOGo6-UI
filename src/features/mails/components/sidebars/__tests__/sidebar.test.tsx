@@ -198,10 +198,10 @@ describe('MailSidebar Component', () => {
 
   beforeEach(() => {
     jest.clearAllMocks()
-    ;(useParams as jest.Mock).mockReturnValue({
+    ;(useParams as unknown as jest.Mock).mockReturnValue({
       account: 'test@example.com',
     })
-    ;(useGetFoldersQuery as jest.Mock).mockReturnValue({
+    ;(useGetFoldersQuery as unknown as jest.Mock).mockReturnValue({
       data: mockFolders,
       isFetching: false,
     })
@@ -248,7 +248,7 @@ describe('MailSidebar Component', () => {
 
   describe('Loading State', () => {
     it('should show skeleton while fetching', () => {
-      ;(useGetFoldersQuery as jest.Mock).mockReturnValue({
+      ;(useGetFoldersQuery as unknown as jest.Mock).mockReturnValue({
         data: undefined,
         isFetching: true,
       })
@@ -259,7 +259,7 @@ describe('MailSidebar Component', () => {
     })
 
     it('should not show folders while fetching', () => {
-      ;(useGetFoldersQuery as jest.Mock).mockReturnValue({
+      ;(useGetFoldersQuery as unknown as jest.Mock).mockReturnValue({
         data: undefined,
         isFetching: true,
       })
@@ -270,7 +270,7 @@ describe('MailSidebar Component', () => {
     })
 
     it('should show folders when not fetching', () => {
-      ;(useGetFoldersQuery as jest.Mock).mockReturnValue({
+      ;(useGetFoldersQuery as unknown as jest.Mock).mockReturnValue({
         data: mockFolders,
         isFetching: false,
       })
@@ -324,7 +324,7 @@ describe('MailSidebar Component', () => {
     it('should call push with correct path on folder click', async () => {
       const user = userEvent.setup()
       const mockPush = jest.fn()
-      ;(useRouter as jest.Mock).mockReturnValue({ push: mockPush })
+      ;(useRouter as unknown as jest.Mock).mockReturnValue({ push: mockPush })
 
       render(<MailSidebar />)
 
@@ -337,7 +337,7 @@ describe('MailSidebar Component', () => {
     it('should encode folder path with special characters', async () => {
       const user = userEvent.setup()
       const mockPush = jest.fn()
-      ;(useRouter as jest.Mock).mockReturnValue({ push: mockPush })
+      ;(useRouter as unknown as jest.Mock).mockReturnValue({ push: mockPush })
 
       const foldersWithSpecialChars: ImapFolder[] = [
         {
@@ -353,7 +353,7 @@ describe('MailSidebar Component', () => {
         },
       ]
 
-      ;(useGetFoldersQuery as jest.Mock).mockReturnValue({
+      ;(useGetFoldersQuery as unknown as jest.Mock).mockReturnValue({
         data: foldersWithSpecialChars,
         isFetching: false,
       })
@@ -369,8 +369,8 @@ describe('MailSidebar Component', () => {
     it('should use current account from params', async () => {
       const user = userEvent.setup()
       const mockPush = jest.fn()
-      ;(useRouter as jest.Mock).mockReturnValue({ push: mockPush })
-      ;(useParams as jest.Mock).mockReturnValue({ account: 'work@example.com' })
+      ;(useRouter as unknown as jest.Mock).mockReturnValue({ push: mockPush })
+      ;(useParams as unknown as jest.Mock).mockReturnValue({ account: 'work@example.com' })
 
       render(<MailSidebar />)
 
@@ -397,7 +397,7 @@ describe('MailSidebar Component', () => {
         },
       ]
 
-      ;(useGetFoldersQuery as jest.Mock).mockReturnValue({
+      ;(useGetFoldersQuery as unknown as jest.Mock).mockReturnValue({
         data: foldersWithoutSubfolders,
         isFetching: false,
       })
@@ -435,7 +435,7 @@ describe('MailSidebar Component', () => {
         },
       ]
 
-      ;(useGetFoldersQuery as jest.Mock).mockReturnValue({
+      ;(useGetFoldersQuery as unknown as jest.Mock).mockReturnValue({
         data: foldersWithSubfolders,
         isFetching: false,
       })
@@ -474,7 +474,7 @@ describe('MailSidebar Component', () => {
         },
       ]
 
-      ;(useGetFoldersQuery as jest.Mock).mockReturnValue({
+      ;(useGetFoldersQuery as unknown as jest.Mock).mockReturnValue({
         data: foldersWithSubfolders,
         isFetching: false,
       })
@@ -526,7 +526,7 @@ describe('MailSidebar Component', () => {
         },
       ]
 
-      ;(useGetFoldersQuery as jest.Mock).mockReturnValue({
+      ;(useGetFoldersQuery as unknown as jest.Mock).mockReturnValue({
         data: nestedFolders,
         isFetching: false,
       })
@@ -572,7 +572,7 @@ describe('MailSidebar Component', () => {
         },
       ]
 
-      ;(useGetFoldersQuery as jest.Mock).mockReturnValue({
+      ;(useGetFoldersQuery as unknown as jest.Mock).mockReturnValue({
         data: customFolders,
         isFetching: false,
       })
@@ -601,7 +601,7 @@ describe('MailSidebar Component', () => {
         },
       ]
 
-      ;(useGetFoldersQuery as jest.Mock).mockReturnValue({
+      ;(useGetFoldersQuery as unknown as jest.Mock).mockReturnValue({
         data: customFolders,
         isFetching: false,
       })
@@ -614,7 +614,7 @@ describe('MailSidebar Component', () => {
 
   describe('Active State', () => {
     it('should mark current folder as active from route folder param', () => {
-      ;(useParams as jest.Mock).mockReturnValue({
+      ;(useParams as unknown as jest.Mock).mockReturnValue({
         account: 'test@example.com',
         folder: 'INBOX',
       })
@@ -632,13 +632,13 @@ describe('MailSidebar Component', () => {
     })
 
     it('should update active state when route folder param changes', () => {
-      ;(useParams as jest.Mock).mockReturnValue({
+      ;(useParams as unknown as jest.Mock).mockReturnValue({
         account: 'test@example.com',
         folder: 'INBOX',
       })
       const { rerender } = render(<MailSidebar />)
 
-      ;(useParams as jest.Mock).mockReturnValue({
+      ;(useParams as unknown as jest.Mock).mockReturnValue({
         account: 'test@example.com',
         folder: 'Sent',
       })
@@ -668,11 +668,11 @@ describe('MailSidebar Component', () => {
           default: false,
         },
       ]
-      ;(useGetFoldersQuery as jest.Mock).mockReturnValue({
+      ;(useGetFoldersQuery as unknown as jest.Mock).mockReturnValue({
         data: foldersWithTrash,
         isFetching: false,
       })
-      ;(useParams as jest.Mock).mockReturnValue({
+      ;(useParams as unknown as jest.Mock).mockReturnValue({
         account: 'test@example.com',
         folder: 'INBOX.Trash',
       })
@@ -688,7 +688,7 @@ describe('MailSidebar Component', () => {
 
   describe('Empty and Edge Cases', () => {
     it('should handle empty folder list', () => {
-      ;(useGetFoldersQuery as jest.Mock).mockReturnValue({
+      ;(useGetFoldersQuery as unknown as jest.Mock).mockReturnValue({
         data: [],
         isFetching: false,
       })
@@ -714,7 +714,7 @@ describe('MailSidebar Component', () => {
         },
       ]
 
-      ;(useGetFoldersQuery as jest.Mock).mockReturnValue({
+      ;(useGetFoldersQuery as unknown as jest.Mock).mockReturnValue({
         data: foldersWithoutSubfolders,
         isFetching: false,
       })
@@ -740,7 +740,7 @@ describe('MailSidebar Component', () => {
         },
       ]
 
-      ;(useGetFoldersQuery as jest.Mock).mockReturnValue({
+      ;(useGetFoldersQuery as unknown as jest.Mock).mockReturnValue({
         data: foldersWithEmptySubfolders,
         isFetching: false,
       })
@@ -765,7 +765,7 @@ describe('MailSidebar Component', () => {
         },
       ]
 
-      ;(useGetFoldersQuery as jest.Mock).mockReturnValue({
+      ;(useGetFoldersQuery as unknown as jest.Mock).mockReturnValue({
         data: specialFolders,
         isFetching: false,
       })
@@ -819,7 +819,7 @@ describe('MailSidebar Component', () => {
     it('should use router for navigation', async () => {
       const user = userEvent.setup()
       const mockPush = jest.fn()
-      ;(useRouter as jest.Mock).mockReturnValue({ push: mockPush })
+      ;(useRouter as unknown as jest.Mock).mockReturnValue({ push: mockPush })
 
       render(<MailSidebar />)
 
@@ -856,7 +856,7 @@ describe('MailSidebar Component', () => {
         },
       ]
 
-      ;(useGetFoldersQuery as jest.Mock).mockReturnValue({
+      ;(useGetFoldersQuery as unknown as jest.Mock).mockReturnValue({
         data: foldersWithSubfolders,
         isFetching: false,
       })
@@ -895,7 +895,7 @@ describe('MailSidebar Component', () => {
         },
       ]
 
-      ;(useGetFoldersQuery as jest.Mock).mockReturnValue({
+      ;(useGetFoldersQuery as unknown as jest.Mock).mockReturnValue({
         data: foldersWithSubfolders,
         isFetching: false,
       })
@@ -955,7 +955,7 @@ describe('MailSidebar Component', () => {
         },
       ]
 
-      ;(useGetFoldersQuery as jest.Mock).mockReturnValue({
+      ;(useGetFoldersQuery as unknown as jest.Mock).mockReturnValue({
         data: foldersWithSubfolders,
         isFetching: false,
       })
@@ -993,7 +993,7 @@ describe('MailSidebar Component', () => {
         },
       ]
 
-      ;(useGetFoldersQuery as jest.Mock).mockReturnValue({
+      ;(useGetFoldersQuery as unknown as jest.Mock).mockReturnValue({
         data: foldersWithSubfolders,
         isFetching: false,
       })

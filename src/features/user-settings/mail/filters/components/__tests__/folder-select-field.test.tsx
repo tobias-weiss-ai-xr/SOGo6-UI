@@ -80,7 +80,7 @@ describe('FolderSelectField', () => {
 
   beforeEach(() => {
     jest.clearAllMocks()
-    ;(useGetFoldersQuery as jest.Mock).mockReturnValue({
+    ;(useGetFoldersQuery as unknown as jest.Mock).mockReturnValue({
       data: mockFolders,
       isLoading: false,
     })
@@ -110,7 +110,7 @@ describe('FolderSelectField', () => {
   })
 
   it('disables combobox while folders are loading', () => {
-    ;(useGetFoldersQuery as jest.Mock).mockReturnValue({
+    ;(useGetFoldersQuery as unknown as jest.Mock).mockReturnValue({
       data: undefined,
       isLoading: true,
     })

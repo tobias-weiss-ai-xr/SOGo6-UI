@@ -40,7 +40,7 @@ describe('ListItem Component (Wrapper)', () => {
   })
 
   it('should render ListItemDesktop when not on mobile', () => {
-    ;(useIsMobile as jest.Mock).mockReturnValue(false)
+    ;(useIsMobile as unknown as jest.Mock).mockReturnValue(false)
     render(
       <ListItem
         data={mockData}
@@ -52,7 +52,7 @@ describe('ListItem Component (Wrapper)', () => {
   })
 
   it('should render ListItemMobile when on mobile', () => {
-    ;(useIsMobile as jest.Mock).mockReturnValue(true)
+    ;(useIsMobile as unknown as jest.Mock).mockReturnValue(true)
     render(
       <ListItem
         data={mockData}
@@ -64,7 +64,7 @@ describe('ListItem Component (Wrapper)', () => {
   })
 
   it('should pass all props to desktop variant', () => {
-    ;(useIsMobile as jest.Mock).mockReturnValue(false)
+    ;(useIsMobile as unknown as jest.Mock).mockReturnValue(false)
     render(
       <ListItem
         data={mockData}
@@ -77,7 +77,7 @@ describe('ListItem Component (Wrapper)', () => {
   })
 
   it('should pass all props to mobile variant', () => {
-    ;(useIsMobile as jest.Mock).mockReturnValue(true)
+    ;(useIsMobile as unknown as jest.Mock).mockReturnValue(true)
     render(
       <ListItem
         data={mockData}

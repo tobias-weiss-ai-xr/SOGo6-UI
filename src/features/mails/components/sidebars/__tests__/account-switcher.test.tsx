@@ -47,7 +47,7 @@ import { useParams } from 'next/navigation'
 // --- Helpers ---
 
 const mockProfile = (overrides = {}) => {
-  ;(useProfile as jest.Mock).mockReturnValue({
+  ;(useProfile as unknown as jest.Mock).mockReturnValue({
     allMailboxes: [
       {
         id: '0',
@@ -68,8 +68,8 @@ const mockProfile = (overrides = {}) => {
 describe('AccountSwitcher', () => {
   beforeEach(() => {
     jest.clearAllMocks()
-    ;(useRouter as jest.Mock).mockReturnValue({ push: jest.fn() })
-    ;(useParams as jest.Mock).mockReturnValue({ account: '0' })
+    ;(useRouter as unknown as jest.Mock).mockReturnValue({ push: jest.fn() })
+    ;(useParams as unknown as jest.Mock).mockReturnValue({ account: '0' })
   })
 
   describe('Loading state', () => {
@@ -110,7 +110,7 @@ describe('AccountSwitcher', () => {
     it('navigates to correct mailbox on click', async () => {
       const user = userEvent.setup()
       const mockPush = jest.fn()
-      ;(useRouter as jest.Mock).mockReturnValue({ push: mockPush })
+      ;(useRouter as unknown as jest.Mock).mockReturnValue({ push: mockPush })
       mockProfile()
       render(<AccountSwitcher />)
 
@@ -123,7 +123,7 @@ describe('AccountSwitcher', () => {
     it('navigates to imap settings when add account is clicked', async () => {
       const user = userEvent.setup()
       const mockPush = jest.fn()
-      ;(useRouter as jest.Mock).mockReturnValue({ push: mockPush })
+      ;(useRouter as unknown as jest.Mock).mockReturnValue({ push: mockPush })
       mockProfile({ canAddExternalAccount: true })
       render(<AccountSwitcher />)
 

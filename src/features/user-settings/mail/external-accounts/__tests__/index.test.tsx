@@ -135,20 +135,20 @@ describe('MailExternalAccountSettings', () => {
 
   beforeEach(() => {
     jest.clearAllMocks()
-    ;(useTranslations as jest.Mock).mockReturnValue(mockTranslate)
-    ;(useCreateUserMailboxMutation as jest.Mock).mockReturnValue([
+    ;(useTranslations as unknown as jest.Mock).mockReturnValue(mockTranslate)
+    ;(useCreateUserMailboxMutation as unknown as jest.Mock).mockReturnValue([
       mockCreateMutation,
     ])
-    ;(useDeleteUserMailboxMutation as jest.Mock).mockReturnValue([
+    ;(useDeleteUserMailboxMutation as unknown as jest.Mock).mockReturnValue([
       mockDeleteMutation,
     ])
-    ;(useUpdateUserMailboxMutation as jest.Mock).mockReturnValue([
+    ;(useUpdateUserMailboxMutation as unknown as jest.Mock).mockReturnValue([
       mockUpdateMutation,
     ])
   })
 
   it('should render title', () => {
-    ;(useGetUserMailboxesQuery as jest.Mock).mockReturnValue({
+    ;(useGetUserMailboxesQuery as unknown as jest.Mock).mockReturnValue({
       data: mockMailboxData,
       error: null,
       isFetching: false,
@@ -160,7 +160,7 @@ describe('MailExternalAccountSettings', () => {
   })
 
   it('should display skeleton while loading', () => {
-    ;(useGetUserMailboxesQuery as jest.Mock).mockReturnValue({
+    ;(useGetUserMailboxesQuery as unknown as jest.Mock).mockReturnValue({
       data: null,
       error: null,
       isFetching: true,
@@ -172,7 +172,7 @@ describe('MailExternalAccountSettings', () => {
   })
 
   it('should render list view with accounts', () => {
-    ;(useGetUserMailboxesQuery as jest.Mock).mockReturnValue({
+    ;(useGetUserMailboxesQuery as unknown as jest.Mock).mockReturnValue({
       data: mockMailboxData,
       error: null,
       isFetching: false,
@@ -185,7 +185,7 @@ describe('MailExternalAccountSettings', () => {
   })
 
   it('should filter out account with id 0', () => {
-    ;(useGetUserMailboxesQuery as jest.Mock).mockReturnValue({
+    ;(useGetUserMailboxesQuery as unknown as jest.Mock).mockReturnValue({
       data: mockMailboxData,
       error: null,
       isFetching: false,
@@ -199,7 +199,7 @@ describe('MailExternalAccountSettings', () => {
 
   it('should handle add button click and show create form', async () => {
     const user = userEvent.setup()
-    ;(useGetUserMailboxesQuery as jest.Mock).mockReturnValue({
+    ;(useGetUserMailboxesQuery as unknown as jest.Mock).mockReturnValue({
       data: mockMailboxData,
       error: null,
       isFetching: false,
@@ -218,7 +218,7 @@ describe('MailExternalAccountSettings', () => {
 
   it('should handle edit button click and show edit form', async () => {
     const user = userEvent.setup()
-    ;(useGetUserMailboxesQuery as jest.Mock).mockReturnValue({
+    ;(useGetUserMailboxesQuery as unknown as jest.Mock).mockReturnValue({
       data: mockMailboxData,
       error: null,
       isFetching: false,
@@ -237,7 +237,7 @@ describe('MailExternalAccountSettings', () => {
 
   it('should handle back button and return to list view', async () => {
     const user = userEvent.setup()
-    ;(useGetUserMailboxesQuery as jest.Mock).mockReturnValue({
+    ;(useGetUserMailboxesQuery as unknown as jest.Mock).mockReturnValue({
       data: mockMailboxData,
       error: null,
       isFetching: false,
@@ -262,7 +262,7 @@ describe('MailExternalAccountSettings', () => {
   })
 
   it('should call useTranslations with correct namespace', () => {
-    ;(useGetUserMailboxesQuery as jest.Mock).mockReturnValue({
+    ;(useGetUserMailboxesQuery as unknown as jest.Mock).mockReturnValue({
       data: mockMailboxData,
       error: null,
       isFetching: false,
@@ -274,7 +274,7 @@ describe('MailExternalAccountSettings', () => {
   })
 
   it('should pass correct props to list view component', () => {
-    ;(useGetUserMailboxesQuery as jest.Mock).mockReturnValue({
+    ;(useGetUserMailboxesQuery as unknown as jest.Mock).mockReturnValue({
       data: mockMailboxData,
       error: null,
       isFetching: false,
@@ -287,7 +287,7 @@ describe('MailExternalAccountSettings', () => {
   })
 
   it('should handle empty mailbox list', () => {
-    ;(useGetUserMailboxesQuery as jest.Mock).mockReturnValue({
+    ;(useGetUserMailboxesQuery as unknown as jest.Mock).mockReturnValue({
       data: { data: [{ id: '0' }] }, // Only the filtered account
       error: null,
       isFetching: false,
@@ -299,7 +299,7 @@ describe('MailExternalAccountSettings', () => {
   })
 
   it('should handle null data gracefully', () => {
-    ;(useGetUserMailboxesQuery as jest.Mock).mockReturnValue({
+    ;(useGetUserMailboxesQuery as unknown as jest.Mock).mockReturnValue({
       data: null,
       error: null,
       isFetching: false,
@@ -312,7 +312,7 @@ describe('MailExternalAccountSettings', () => {
 
   it('should maintain selected account ID during edit mode', async () => {
     const user = userEvent.setup()
-    ;(useGetUserMailboxesQuery as jest.Mock).mockReturnValue({
+    ;(useGetUserMailboxesQuery as unknown as jest.Mock).mockReturnValue({
       data: mockMailboxData,
       error: null,
       isFetching: false,

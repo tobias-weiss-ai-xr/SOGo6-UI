@@ -20,7 +20,7 @@ describe('useNotification', () => {
   beforeEach(() => {
     jest.clearAllMocks()
     mockDispatch = jest.fn()
-    ;(useAppDispatch as jest.Mock).mockReturnValue(mockDispatch)
+    ;(useAppDispatch as unknown as jest.Mock).mockReturnValue(mockDispatch)
   })
 
   it('returns notification methods', () => {

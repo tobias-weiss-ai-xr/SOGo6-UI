@@ -41,7 +41,7 @@ describe('env-service', () => {
     })
 
     it('clearEnvCache resets getters after a successful load', async () => {
-      ;(global.fetch as jest.Mock).mockResolvedValueOnce(
+      ;(global.fetch as unknown as jest.Mock).mockResolvedValueOnce(
         mockResponse({ REACT_APP_API_BASE_URL: '/fakeApi' })
       )
       await fetchEnvVars()
@@ -57,7 +57,7 @@ describe('env-service', () => {
 
   describe('fetchEnvVars', () => {
     it('fetches /env with AbortSignal and returns parsed JSON', async () => {
-      ;(global.fetch as jest.Mock).mockResolvedValueOnce(
+      ;(global.fetch as unknown as jest.Mock).mockResolvedValueOnce(
         mockResponse({
           REACT_APP_API_BASE_URL: 'https://api.example.test',
           SSE_ENABLED: true,
@@ -78,7 +78,7 @@ describe('env-service', () => {
     })
 
     it('returns cached env without calling fetch again', async () => {
-      ;(global.fetch as jest.Mock).mockResolvedValueOnce(
+      ;(global.fetch as unknown as jest.Mock).mockResolvedValueOnce(
         mockResponse({ REACT_APP_API_BASE_URL: '/fakeApi' })
       )
 
@@ -94,7 +94,7 @@ describe('env-service', () => {
       const pending = new Promise<Response>((resolve) => {
         resolveFetch = resolve
       })
-      ;(global.fetch as jest.Mock).mockImplementation(() => pending)
+      ;(global.fetch as unknown as jest.Mock).mockImplementation(() => pending)
 
       const a = fetchEnvVars()
       const b = fetchEnvVars()
@@ -112,7 +112,7 @@ describe('env-service', () => {
     })
 
     it('falls back to /fakeApi when fetch /env rejects', async () => {
-      ;(global.fetch as jest.Mock).mockRejectedValueOnce(new Error('network'))
+      ;(global.fetch as unknown as jest.Mock).mockRejectedValueOnce(new Error('network'))
 
       const vars = await fetchEnvVars()
 
@@ -122,7 +122,7 @@ describe('env-service', () => {
     })
 
     it('falls back to /fakeApi when response.json throws', async () => {
-      ;(global.fetch as jest.Mock).mockResolvedValueOnce({
+      ;(global.fetch as unknown as jest.Mock).mockResolvedValueOnce({
         json: jest.fn().mockRejectedValue(new Error('invalid json')),
       })
 
@@ -139,7 +139,7 @@ describe('env-service', () => {
     })
 
     it('throws when REACT_APP_API_BASE_URL is missing from /env', async () => {
-      ;(global.fetch as jest.Mock).mockResolvedValueOnce(mockResponse({}))
+      ;(global.fetch as unknown as jest.Mock).mockResolvedValueOnce(mockResponse({}))
 
       await expect(fetchEnvVars()).rejects.toThrow(
         'REACT_APP_API_BASE_URL is not configured'
@@ -148,7 +148,7 @@ describe('env-service', () => {
     })
 
     it('throws when fetch /env rejects instead of falling back to /fakeApi', async () => {
-      ;(global.fetch as jest.Mock).mockRejectedValueOnce(new Error('network'))
+      ;(global.fetch as unknown as jest.Mock).mockRejectedValueOnce(new Error('network'))
 
       await expect(fetchEnvVars()).rejects.toThrow('network')
       expect(isUsingFakeApi()).toBe(false)
@@ -161,7 +161,7 @@ describe('env-service', () => {
     })
 
     it('uses real API when cross-origin health check returns 200 + S000000', async () => {
-      ;(global.fetch as jest.Mock)
+      ;(global.fetch as unknown as jest.Mock)
         .mockResolvedValueOnce(
           mockResponse({
             REACT_APP_API_BASE_URL: 'http://127.0.0.1:5000/api/user/v1',
@@ -187,7 +187,7 @@ describe('env-service', () => {
     })
 
     it('falls back to /fakeApi when cross-origin health check fails', async () => {
-      ;(global.fetch as jest.Mock)
+      ;(global.fetch as unknown as jest.Mock)
         .mockResolvedValueOnce(
           mockResponse({
             REACT_APP_API_BASE_URL: 'http://127.0.0.1:5000/api/user/v1',
@@ -204,7 +204,7 @@ describe('env-service', () => {
 
   describe('useEnvVars', () => {
     it('loads env on mount when cache is empty', async () => {
-      ;(global.fetch as jest.Mock).mockResolvedValueOnce(
+      ;(global.fetch as unknown as jest.Mock).mockResolvedValueOnce(
         mockResponse({ REACT_APP_API_BASE_URL: '/fakeApi' })
       )
 
@@ -221,7 +221,7 @@ describe('env-service', () => {
     })
 
     it('uses cache on mount when env is already loaded', async () => {
-      ;(global.fetch as jest.Mock).mockResolvedValueOnce(
+      ;(global.fetch as unknown as jest.Mock).mockResolvedValueOnce(
         mockResponse({ REACT_APP_API_BASE_URL: '/fakeApi' })
       )
       await fetchEnvVars()
@@ -237,7 +237,7 @@ describe('env-service', () => {
     })
 
     it('refetch clears cache and fetches again', async () => {
-      ;(global.fetch as jest.Mock)
+      ;(global.fetch as unknown as jest.Mock)
         .mockResolvedValueOnce(mockResponse({ REACT_APP_API_BASE_URL: '/a' }))
         .mockResolvedValueOnce(mockResponse({ REACT_APP_API_BASE_URL: '/b' }))
 
@@ -258,7 +258,7 @@ describe('env-service', () => {
 
     it('refetch surfaces errors in production mode', async () => {
       process.env.NODE_ENV = 'production'
-      ;(global.fetch as jest.Mock)
+      ;(global.fetch as unknown as jest.Mock)
         .mockResolvedValueOnce(
           mockResponse({ REACT_APP_API_BASE_URL: 'https://api.example.test' })
         )

@@ -64,7 +64,7 @@ import SidebarItem from '../sidebar-item'
 // --- Helper ---
 
 const mockProfile = (overrides = {}) => {
-  ;(useProfile as jest.Mock).mockReturnValue({
+  ;(useProfile as unknown as jest.Mock).mockReturnValue({
     mailPurgeAllow: false,
     ...overrides,
   })

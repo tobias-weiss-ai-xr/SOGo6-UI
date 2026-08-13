@@ -45,7 +45,7 @@ describe('MailNotificationsSettingForm (core)', () => {
 
   beforeEach(() => {
     jest.clearAllMocks()
-    ;(useTranslations as jest.Mock).mockImplementation((ns: string) => {
+    ;(useTranslations as unknown as jest.Mock).mockImplementation((ns: string) => {
       if (ns === 'US_MAIL_NOTIFICATIONS') return mockT
       return (key: string) => key
     })

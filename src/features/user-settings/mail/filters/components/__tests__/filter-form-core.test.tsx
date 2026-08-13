@@ -205,7 +205,7 @@ describe('FilterEditDialog', () => {
 
   beforeEach(() => {
     jest.clearAllMocks()
-    ;(useTranslations as jest.Mock).mockImplementation((namespace: string) => {
+    ;(useTranslations as unknown as jest.Mock).mockImplementation((namespace: string) => {
       const map: Record<string, Record<string, string>> = {
         US_MAIL_FILTERS: {
           'form.create.string': 'Create filter',

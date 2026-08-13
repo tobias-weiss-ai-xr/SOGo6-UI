@@ -51,7 +51,7 @@ jest.mock('@/lib/utils', () => ({
 describe('Compose Page', () => {
   beforeEach(() => {
     jest.clearAllMocks()
-    ;(useTranslations as jest.Mock).mockReturnValue((key: string) => {
+    ;(useTranslations as unknown as jest.Mock).mockReturnValue((key: string) => {
       const translations: Record<string, string> = {
         'new_message.string': 'New Message',
         'save_draft.string': 'Save draft',
@@ -68,18 +68,18 @@ describe('Compose Page', () => {
   })
 
   it('should provide button mock', () => {
-    const t = (useTranslations as jest.Mock)()
+    const t = (useTranslations as unknown as jest.Mock)()
     expect(typeof t).toBe('function')
   })
 
   it('should support translation key resolution', () => {
-    const t = (useTranslations as jest.Mock)(() => 'key')
+    const t = (useTranslations as unknown as jest.Mock)(() => 'key')
     const result = t('new_message.string')
     expect(result).toBe('New Message')
   })
 
   it('should render composition components', () => {
-    const t = (useTranslations as jest.Mock)(() => 'key')
+    const t = (useTranslations as unknown as jest.Mock)(() => 'key')
     const mockEditor = jest.fn(() => null)
     expect(mockEditor).toBeDefined()
   })

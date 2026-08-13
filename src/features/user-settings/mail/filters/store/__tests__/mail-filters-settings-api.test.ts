@@ -128,7 +128,7 @@ describe('mail-filters-settings-api', () => {
 
     beforeEach(() => {
       jest.clearAllMocks()
-      ;(createApiNotificationHandler as jest.Mock).mockReturnValue(
+      ;(createApiNotificationHandler as unknown as jest.Mock).mockReturnValue(
         mockNotificationFn
       )
     })

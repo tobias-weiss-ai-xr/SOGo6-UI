@@ -79,11 +79,11 @@ describe('ComposeOpener Component', () => {
 
     mockSetOpenMobile = jest.fn()
     mockStore = createMockStore()
-    ;(useSidebar as jest.Mock).mockReturnValue({
+    ;(useSidebar as unknown as jest.Mock).mockReturnValue({
       setOpenMobile: mockSetOpenMobile,
     })
-    ;(useTranslations as jest.Mock).mockReturnValue((key: string) => key)
-    ;(useIsMobile as jest.Mock).mockReturnValue(false)
+    ;(useTranslations as unknown as jest.Mock).mockReturnValue((key: string) => key)
+    ;(useIsMobile as unknown as jest.Mock).mockReturnValue(false)
     jest.spyOn(global.crypto, 'randomUUID').mockReturnValue('generated-draft-id')
     jest.spyOn(mockStore, 'dispatch')
   })
@@ -101,7 +101,7 @@ describe('ComposeOpener Component', () => {
     })
 
     it('should display new_message text label on desktop', () => {
-      ;(useIsMobile as jest.Mock).mockReturnValue(false)
+      ;(useIsMobile as unknown as jest.Mock).mockReturnValue(false)
 
       renderWithProvider()
 
@@ -146,7 +146,7 @@ describe('ComposeOpener Component', () => {
 
   describe('Icon Display', () => {
     it('should hide icon on desktop by default', () => {
-      ;(useIsMobile as jest.Mock).mockReturnValue(false)
+      ;(useIsMobile as unknown as jest.Mock).mockReturnValue(false)
 
       renderWithProvider()
 
@@ -178,7 +178,7 @@ describe('ComposeOpener Component', () => {
 
   describe('Text Label', () => {
     it('should display text label on desktop', () => {
-      ;(useIsMobile as jest.Mock).mockReturnValue(false)
+      ;(useIsMobile as unknown as jest.Mock).mockReturnValue(false)
 
       renderWithProvider()
 
@@ -246,7 +246,7 @@ describe('ComposeOpener Component', () => {
   describe('Mobile Behavior', () => {
     it('should close sidebar on mobile when button is clicked', async () => {
       const user = userEvent.setup()
-      ;(useIsMobile as jest.Mock).mockReturnValue(true)
+      ;(useIsMobile as unknown as jest.Mock).mockReturnValue(true)
 
       renderWithProvider()
 
@@ -258,7 +258,7 @@ describe('ComposeOpener Component', () => {
 
     it('should not close sidebar on desktop when button is clicked', async () => {
       const user = userEvent.setup()
-      ;(useIsMobile as jest.Mock).mockReturnValue(false)
+      ;(useIsMobile as unknown as jest.Mock).mockReturnValue(false)
 
       renderWithProvider()
 
@@ -270,7 +270,7 @@ describe('ComposeOpener Component', () => {
 
     it('should still dispatch createDraft on mobile', async () => {
       const user = userEvent.setup()
-      ;(useIsMobile as jest.Mock).mockReturnValue(true)
+      ;(useIsMobile as unknown as jest.Mock).mockReturnValue(true)
 
       renderWithProvider()
 
@@ -289,7 +289,7 @@ describe('ComposeOpener Component', () => {
 
     it('should toggle sidebar and open compose in correct order on mobile', async () => {
       const user = userEvent.setup()
-      ;(useIsMobile as jest.Mock).mockReturnValue(true)
+      ;(useIsMobile as unknown as jest.Mock).mockReturnValue(true)
 
       renderWithProvider()
 
@@ -340,7 +340,7 @@ describe('ComposeOpener Component', () => {
     })
 
     it('should have visible text label for context', () => {
-      ;(useIsMobile as jest.Mock).mockReturnValue(false)
+      ;(useIsMobile as unknown as jest.Mock).mockReturnValue(false)
 
       renderWithProvider()
 
@@ -349,7 +349,7 @@ describe('ComposeOpener Component', () => {
     })
 
     it('should have proper tooltip via text on non-mobile', () => {
-      ;(useIsMobile as jest.Mock).mockReturnValue(false)
+      ;(useIsMobile as unknown as jest.Mock).mockReturnValue(false)
 
       renderWithProvider()
 
@@ -361,7 +361,7 @@ describe('ComposeOpener Component', () => {
   describe('Integration', () => {
     it('should use correct translations key', () => {
       const mockT = jest.fn((key: string) => `translated_${key}`)
-      ;(useTranslations as jest.Mock).mockReturnValue(mockT)
+      ;(useTranslations as unknown as jest.Mock).mockReturnValue(mockT)
 
       renderWithProvider()
 

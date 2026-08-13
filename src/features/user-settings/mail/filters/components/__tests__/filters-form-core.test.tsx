@@ -111,7 +111,7 @@ const sampleFilters: MailFilter[] = [
 describe('MailFiltersSettingsForm', () => {
   beforeEach(() => {
     jest.clearAllMocks()
-    ;(useTranslations as jest.Mock).mockImplementation((namespace: string) => {
+    ;(useTranslations as unknown as jest.Mock).mockImplementation((namespace: string) => {
       const map: Record<string, Record<string, string>> = {
         US_MAIL_FILTERS: {
           'empty_state.title.string': 'No mail filters yet',

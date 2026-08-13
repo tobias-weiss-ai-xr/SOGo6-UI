@@ -102,7 +102,7 @@ const dataWithCategories = {
 
 beforeEach(() => {
   jest.clearAllMocks()
-  ;(useTranslations as jest.Mock).mockImplementation((namespace: string) => {
+  ;(useTranslations as unknown as jest.Mock).mockImplementation((namespace: string) => {
     const translations: Record<string, Record<string, string>> = {
       US_CALENDARS: {
         'categories.create.string': 'Create',

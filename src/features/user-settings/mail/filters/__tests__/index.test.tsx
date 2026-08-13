@@ -44,21 +44,21 @@ describe('MailFiltersSettings', () => {
 
   beforeEach(() => {
     jest.clearAllMocks()
-    ;(useTranslations as jest.Mock).mockReturnValue(mockTranslate)
-    ;(useProfile as jest.Mock).mockReturnValue({
+    ;(useTranslations as unknown as jest.Mock).mockReturnValue(mockTranslate)
+    ;(useProfile as unknown as jest.Mock).mockReturnValue({
       mainAccount: { id: 'acc-1' },
     })
-    ;(useUpdateMailFiltersSettingsMutation as jest.Mock).mockReturnValue([
+    ;(useUpdateMailFiltersSettingsMutation as unknown as jest.Mock).mockReturnValue([
       mockUpdate,
     ])
-    ;(useGetFoldersQuery as jest.Mock).mockReturnValue({
+    ;(useGetFoldersQuery as unknown as jest.Mock).mockReturnValue({
       data: [],
       isLoading: false,
     })
   })
 
   it('renders page title and description', () => {
-    ;(useGetMailFiltersSettingsQuery as jest.Mock).mockReturnValue({
+    ;(useGetMailFiltersSettingsQuery as unknown as jest.Mock).mockReturnValue({
       data: [],
       error: undefined,
       isLoading: false,
@@ -71,7 +71,7 @@ describe('MailFiltersSettings', () => {
   })
 
   it('shows skeleton while loading', () => {
-    ;(useGetMailFiltersSettingsQuery as jest.Mock).mockReturnValue({
+    ;(useGetMailFiltersSettingsQuery as unknown as jest.Mock).mockReturnValue({
       data: undefined,
       error: undefined,
       isLoading: true,
@@ -84,7 +84,7 @@ describe('MailFiltersSettings', () => {
   })
 
   it('renders filters form when data is loaded', () => {
-    ;(useGetMailFiltersSettingsQuery as jest.Mock).mockReturnValue({
+    ;(useGetMailFiltersSettingsQuery as unknown as jest.Mock).mockReturnValue({
       data: [],
       error: undefined,
       isLoading: false,
@@ -100,7 +100,7 @@ describe('MailFiltersSettings', () => {
   })
 
   it('shows feature disabled message on 403 error', () => {
-    ;(useGetMailFiltersSettingsQuery as jest.Mock).mockReturnValue({
+    ;(useGetMailFiltersSettingsQuery as unknown as jest.Mock).mockReturnValue({
       data: undefined,
       error: { status: 403 },
       isLoading: false,
@@ -114,7 +114,7 @@ describe('MailFiltersSettings', () => {
   })
 
   it('shows generic load error for other failures', () => {
-    ;(useGetMailFiltersSettingsQuery as jest.Mock).mockReturnValue({
+    ;(useGetMailFiltersSettingsQuery as unknown as jest.Mock).mockReturnValue({
       data: undefined,
       error: { status: 500 },
       isLoading: false,
@@ -126,7 +126,7 @@ describe('MailFiltersSettings', () => {
   })
 
   it('prefetches folders for the main account', () => {
-    ;(useGetMailFiltersSettingsQuery as jest.Mock).mockReturnValue({
+    ;(useGetMailFiltersSettingsQuery as unknown as jest.Mock).mockReturnValue({
       data: [],
       error: undefined,
       isLoading: false,

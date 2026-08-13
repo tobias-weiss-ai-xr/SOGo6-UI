@@ -24,7 +24,7 @@ import { useNavItems } from '../content'
 // --- Helper ---
 
 const mockProfile = (overrides = {}) => {
-  ;(useProfile as jest.Mock).mockReturnValue({
+  ;(useProfile as unknown as jest.Mock).mockReturnValue({
     forwardEnabled: true,
     vacationEnabled: true,
     mailFilteringEnabled: true,

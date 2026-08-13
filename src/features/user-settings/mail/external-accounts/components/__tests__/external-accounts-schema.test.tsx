@@ -18,7 +18,7 @@ const mockT = (key: string) => key
 const mockTCommons = (key: string) => key
 
 function makeSchema() {
-  ;(useTranslations as jest.Mock).mockReturnValue(mockT)
+  ;(useTranslations as unknown as jest.Mock).mockReturnValue(mockT)
   return schema(
     mockT as ReturnType<typeof useTranslations>,
     mockTCommons as ReturnType<typeof useTranslations>
