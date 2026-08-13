@@ -56,8 +56,6 @@ describe('Mails Types', () => {
       name: 'file.pdf',
       contentType: 'application/pdf',
       size: 1024,
-      downloadUri: '/download/1',
-      displayUri: '/display/1',
     }
     expect(attachment.name).toBe('file.pdf')
   })

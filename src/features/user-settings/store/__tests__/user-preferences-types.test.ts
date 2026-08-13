@@ -23,6 +23,7 @@ function makeGeneralSettings(overrides = {}): GeneralSettings {
     defaultView: 'mail',
     enableNotifications: true,
     avatarEnabled: false,
+    profilePictureSource: 'default',
     ...overrides,
   }
 }

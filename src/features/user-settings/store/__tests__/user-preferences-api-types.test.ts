@@ -15,6 +15,7 @@ import type {
   UserPreferencesResponse,
   UserSecurity,
 } from '../user-preferences-api-types'
+import { PP_DEFAULT } from '../user-preferences-api-types'
 
 // ── Helpers ───────────────────────────────────────────────────────────────────
 
@@ -28,6 +29,7 @@ function makeUserGeneral(overrides = {}): UserGeneral {
     SOGO_U_LONG_DATE: '%A, %B %e, %Y',
     SOGO_U_SHORT_DATE: '%m/%d/%Y',
     SOGO_U_TIMEZONE: 'Europe/Paris',
+    SOGO_U_PROFILE_PICTURE: PP_DEFAULT,
     ...overrides,
   }
 }
@@ -56,6 +58,8 @@ function makeCalendarGeneral(overrides = {}): UserCalendarGeneral {
     SOGO_U_CALENDAR_DEFAULT: 'personal',
     SOGO_U_EVENT_DEFAULT_CLASS: 'PUBLIC',
     SOGO_U_TASK_DEFAULT_CLASS: 'PUBLIC',
+    SOGO_U_NON_WORKING_WEEKDAYS: [],
+    SOGO_U_DEFAULT_LOCATION: '',
     SOGO_U_JOURNAL_DEFAULT_CLASS: 'PUBLIC',
     SOGO_U_EVENT_DEFAULT_REMINDER: null,
     SOGO_U_TASK_DEFAULT_REMINDER: null,

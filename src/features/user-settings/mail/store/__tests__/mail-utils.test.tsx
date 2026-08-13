@@ -8,7 +8,7 @@ import type { UserPreferences } from '@/features/user-settings/store/user-prefer
 import type {
   MailGeneralSettings,
   MailCategoriesSettings,
-} from '../../store/user-preferences-types'
+} from '../../../store/user-preferences-types'
 
 // ── Helpers ───────────────────────────────────────────────────────────────────
 

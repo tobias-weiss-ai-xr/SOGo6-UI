@@ -3,7 +3,7 @@ import React from 'react'
 import AdminPanelHeader from '../admin-panel-header'
 
 jest.mock('@/components/ui/textarea', () => ({
-  Textarea: React.forwardRef(
+  Textarea: React.forwardRef<HTMLTextAreaElement, any>(
     ({ value, onChange, onBlur, onKeyDown, ...props }, ref) => (
       <textarea
         ref={ref}

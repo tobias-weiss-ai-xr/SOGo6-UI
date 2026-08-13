@@ -151,6 +151,7 @@ describe('Mail Types', () => {
     it('should allow RightActionsType to be defined as array', () => {
       const actions: RightActionsType = [
         {
+          id: 'action-1',
           icon: React.createElement('i'),
           title: 'Action 1',
         },
@@ -174,8 +175,6 @@ describe('Mail Types', () => {
         name: 'document.pdf',
         contentType: 'application/pdf',
         size: 1024,
-        downloadUri: 'https://example.com/download/1',
-        displayUri: 'https://example.com/display/1',
       }
       expect(attachment.name).toBe('document.pdf')
       expect(attachment.size).toBe(1024)
@@ -200,8 +199,6 @@ describe('Mail Types', () => {
           name: 'image.jpg',
           contentType: 'image/jpeg',
           size: 2048,
-          downloadUri: 'https://example.com/download/1',
-          displayUri: 'https://example.com/display/1',
         },
         className: 'attachment',
       }
@@ -217,8 +214,6 @@ describe('Mail Types', () => {
             name: 'file1.txt',
             contentType: 'text/plain',
             size: 512,
-            downloadUri: 'https://example.com/download/1',
-            displayUri: 'https://example.com/display/1',
           },
         ],
         zipUri: 'https://example.com/download/all.zip',
@@ -231,6 +226,7 @@ describe('Mail Types', () => {
 
     it('should allow MailContentProps to be defined', () => {
       const props: MailContentProps = {
+        attachmentsUrl: '',
         body: '<p>Hello, World!</p>',
         attachments: {
           count: 0,

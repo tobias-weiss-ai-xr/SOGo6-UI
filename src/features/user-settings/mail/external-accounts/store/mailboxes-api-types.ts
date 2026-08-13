@@ -1,13 +1,13 @@
-export const SOCKET_ENC_PLAIN = 'None'
-export const SOCKET_ENC_IMPLICIT_TLS = 'SSL/TLS'
-export const SOCKET_ENC_EXPLICIT_TLS = 'StartTLS'
+export const SOCKET_ENC_PLAIN = 'None' as const
+export const SOCKET_ENC_IMPLICIT_TLS = 'SSL/TLS' as const
+export const SOCKET_ENC_EXPLICIT_TLS = 'StartTLS' as const
 
 export const IMAP = 'imap'
 
 export const SMTP = 'smtp'
 
-export const AUTHMECH_PLAIN = 'plain'
-export const AUTHMECH_LOGIN = 'login'
+export const AUTHMECH_PLAIN = 'plain' as const
+export const AUTHMECH_LOGIN = 'login' as const
 
 export const RECEIPT_POLICY_NEVER = 'never' as const
 export const RECEIPT_POLICY_ALWAYS = 'always' as const
