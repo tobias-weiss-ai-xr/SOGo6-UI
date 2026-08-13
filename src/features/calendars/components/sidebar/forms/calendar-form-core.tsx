@@ -109,10 +109,12 @@ const CalendarFormCore: React.FC<CalendarFormCoreProps> = ({
                       )}
                       {...field}
                       onFocus={(e) => {
+                        const fieldOnFocus = (field as { onFocus?: (ev: React.FocusEvent<HTMLInputElement>) => void })
+                          .onFocus
                         if (formPrefix === 'editCalendar') {
-                          placeCaretAtEndOnFocus(e, field.onFocus)
+                          placeCaretAtEndOnFocus(e, fieldOnFocus)
                         } else {
-                          field.onFocus(e)
+                          fieldOnFocus?.(e)
                         }
                       }}
                     />

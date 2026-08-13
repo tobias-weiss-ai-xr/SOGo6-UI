@@ -8,6 +8,8 @@ export type RecipientSuggestionItem = {
   email: string
   name?: string
   source: 'user' | 'contact' | 'list'
+  /** User directory department (users only) — shown in attendee picker */
+  department?: string
 }
 
 export function useRecipientSuggestions(query: string) {
@@ -38,6 +40,7 @@ export function useRecipientSuggestions(query: string) {
         email: user.email,
         name: user.name,
         source: 'user',
+        department: user.department,
       })
     }
 

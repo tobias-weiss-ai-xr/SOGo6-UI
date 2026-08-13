@@ -473,7 +473,7 @@ export function PasskeyManagerWithStore({ onSuccess }: PasskeyManagerWithStorePr
           <DialogHeader>
             <DialogTitle>{t('passkeys.removePasskey') || 'Remove Passkey'}</DialogTitle>
             <DialogDescription>
-              {t('passkeys.removeConfirm', { name: selectedCredential?.device_name }) || 
+              {t('passkeys.removeConfirm', { name: selectedCredential?.device_name ?? '' }) || 
                `Are you sure you want to remove "${selectedCredential?.device_name}"?`}
               {credentials.length === 1 && (
                 <span className="block mt-2 text-rose-600">
@@ -503,7 +503,7 @@ export function PasskeyManagerWithStore({ onSuccess }: PasskeyManagerWithStorePr
           <DialogHeader>
             <DialogTitle>{t('passkeys.renamePasskey') || 'Rename Passkey'}</DialogTitle>
             <DialogDescription>
-              {t('passkeys.renameDesc', { name: selectedCredential?.device_name }) || 
+              {t('passkeys.renameDesc', { name: selectedCredential?.device_name ?? '' }) || 
                `Enter a new name for "${selectedCredential?.device_name}"`}
             </DialogDescription>
           </DialogHeader>

@@ -73,6 +73,7 @@ export default function AttendeeInput({
           uid: `${suggestion.email}-${index}`,
           email: suggestion.email,
           name: suggestion.name ?? suggestion.email,
+          department: suggestion.department,
         })),
     [suggestions, value]
   )
