@@ -1,6 +1,6 @@
 import { z } from 'zod'
 import { FILTER_NAME_MAX_LENGTH } from '../mail-filters-constants'
-import type { MailFilter } from '../mail-filters-types'
+import type { ApiFilterRuleNode, MailFilter } from '../mail-filters-types'
 import { createEmptyFilter } from '../mail-filters-utils'
 
 type FiltersTranslator = (
@@ -79,7 +79,7 @@ const createFilterItemSchema = (t: FiltersTranslator) =>
         .min(1, t('errors.validation.actions_required.string')),
       advancedStructure: z.boolean().optional(),
       readOnly: z.boolean().optional(),
-      rawRules: z.unknown().optional(),
+      rawRules: z.custom<ApiFilterRuleNode>().optional(),
     })
     .superRefine((filter, ctx) => {
       if (filter.readOnly || filter.advancedStructure) {

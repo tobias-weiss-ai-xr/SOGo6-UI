@@ -263,7 +263,7 @@ const AddressBookContent: React.FC = () => {
 
       dispatch(
         createDraft({
-          id: `compose-${Date.now()}`,
+          draftId: `compose-${Date.now()}`,
           initialData: {
             to: [
               {
@@ -286,7 +286,7 @@ const AddressBookContent: React.FC = () => {
       const displayName = getContactDisplayName(list)
       dispatch(
         createDraft({
-          id: `compose-${Date.now()}`,
+          draftId: `compose-${Date.now()}`,
           initialData: {
             to: emails.map((email) => ({
               email,

@@ -184,12 +184,12 @@ export function BasicInfoTab({ form }: BasicInfoTabProps) {
                 </FormItem>
 
                 {/* Aliases List */}
-                {watch('aliases') && watch('aliases').length > 0 && (
+                {watch('aliases') && (watch('aliases') ?? []).length > 0 && (
                   <FormItem>
                     <FormLabel>{t('basicInfo.aliases')}</FormLabel>
                     <div className="border-input bg-muted rounded-md border p-3">
                       <div className="space-y-1">
-                        {watch('aliases').map((alias, index) => (
+                        {(watch('aliases') ?? []).map((alias, index) => (
                           <div key={index} className="text-sm">
                             {alias}
                           </div>
