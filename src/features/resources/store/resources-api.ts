@@ -210,8 +210,8 @@ const injectedEndpoints = apiSlice.injectEndpoints({
           }) ?? {
             resources: [],
             total_count: 0,
-            start_time: timeRange.start_time,
-            end_time: timeRange.end_time,
+            start_time: '',
+            end_time: '',
           }
         )
       },
@@ -234,7 +234,7 @@ const injectedEndpoints = apiSlice.injectEndpoints({
         return (
           (response?.data as AvailabilityCheckResponse) ?? {
             available: false,
-            resource_id: resourceId,
+            resource_id: '',
             conflicts: [],
           }
         )
@@ -311,7 +311,7 @@ const injectedEndpoints = apiSlice.injectEndpoints({
         return (
           (response?.data as { message: string; booking_id: string }) ?? {
             message: 'Booking cancelled',
-            booking_id: bookingId,
+            booking_id: '',
           }
         )
       },
