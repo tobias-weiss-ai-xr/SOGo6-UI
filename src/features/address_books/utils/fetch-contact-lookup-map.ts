@@ -1,4 +1,5 @@
 import type {
+  ApiContact,
   ApiContactsListData,
   ApiDistributionList,
   ApiListsCollectionData,
@@ -59,7 +60,10 @@ function contactCollectionPath(bookId: string): string {
 
 export async function fetchContactLookupMap(
   bookId: string,
-  baseQuery: BaseQueryFn,
+  // RTK generic inference across queryFn boundaries is brittle; match the
+  // caller's boundary type (see address-books-api.ts).
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  baseQuery: (...args: any[]) => any,
   options?: FetchLoopOptions
 ): Promise<Map<string, VCard>> {
   const map = new Map<string, VCard>()
@@ -116,7 +120,7 @@ export async function fetchContactsByKeys(
       })
       if (result.error) return
 
-      const contact = normalizeContact(unwrapApiData(result.data))
+      const contact = normalizeContact(unwrapApiData<ApiContact>(result.data as ApiContact))
       for (const [key, value] of buildContactsByKey([contact])) {
         map.set(key, value)
       }

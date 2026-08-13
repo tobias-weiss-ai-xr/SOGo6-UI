@@ -200,7 +200,7 @@ export const CustomEditorCore = ({ data, onChange }: EditorCoreProps) => {
 
   // Handle content changes
   const handleChange = useCallback(
-    (event, editor: ClassicEditor) => {
+    (event: unknown, editor: ClassicEditor) => {
       onChange?.(editor.getData())
     },
     [onChange]

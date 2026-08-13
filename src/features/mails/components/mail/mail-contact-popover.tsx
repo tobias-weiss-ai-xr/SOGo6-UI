@@ -65,7 +65,7 @@ export function ContactPopoverContent({ contact }: { contact: EmailContact }) {
     const id = `compose-${Date.now()}`
     dispatch(
       createDraft({
-        id,
+        draftId: id,
         initialData: {
           to: [
             {

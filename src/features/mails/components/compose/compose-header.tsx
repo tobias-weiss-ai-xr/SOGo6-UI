@@ -182,6 +182,8 @@ const ComposeHeader: React.FC<ComposeHeaderProps> = ({ draftId }) => {
       ...(sharedMailboxAccounts?.map((sb) => ({
         mail: sb.email,
         name: sb.name,
+        replyTo: '',
+        isDefault: false,
         signatures: {},
       })) ?? []),
     ],

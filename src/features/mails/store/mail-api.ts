@@ -183,7 +183,7 @@ const injectedEndpoints = apiSlice.injectEndpoints({
       query: ({ accountId, mailKey, filename }) => ({
         url: `mailboxes/${accountId}/mail/${mailKey}/attachments/${filename}`,
         method: 'GET',
-        responseHandler: async (response) => {
+        responseHandler: async (response: Response) => {
           return response.blob()
         },
       }),

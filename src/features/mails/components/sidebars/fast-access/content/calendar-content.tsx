@@ -199,7 +199,7 @@ const CalendarContent: React.FC = () => {
       <Calendar
         mode="single"
         selected={selectedDate}
-        onSelect={(d) => d && setSelectedDate(d)}
+        onSelect={(d: Date | undefined) => d && setSelectedDate(d)}
         month={displayMonth}
         onMonthChange={setDisplayMonth}
         className={cn('rounded-none border-b')}

@@ -35,7 +35,8 @@ interface JwtPayload {
   email: string;
 }
 
-interface PasskeyLoginButtonWithStoreProps extends ButtonProps {
+interface PasskeyLoginButtonWithStoreProps
+  extends Omit<ButtonProps, 'variant'> {
   /**
    * Email to use for login (optional, may be required by server)
    */

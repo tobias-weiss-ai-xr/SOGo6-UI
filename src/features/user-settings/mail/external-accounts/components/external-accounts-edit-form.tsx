@@ -38,7 +38,7 @@ import { logger } from '@/lib/logger'
 interface ExternalAccountFormProps {
   data?: MailboxSettings
   onBack: () => void
-  manageData: (data: Mailbox | MailboxPOST) => void
+  manageData: (data: Mailbox | MailboxPOST) => void | Promise<unknown>
   error: string | null
   mode: typeof MODE_EDIT | typeof MODE_CREATE
   onSuccess?: () => void

@@ -420,7 +420,7 @@ const injectedEndpoints = apiSlice.injectEndpoints({
         url: `mailboxes/${accountId}/folders/${encodeURIComponent(folder)}/mails/${encodeURIComponent(mailId)}/download`,
         method: 'POST',
         body: { format },
-        responseHandler: (response) => response.blob(),
+        responseHandler: (response: Response) => response.blob(),
       }),
     }),
 

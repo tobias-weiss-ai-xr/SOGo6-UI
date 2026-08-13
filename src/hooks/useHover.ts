@@ -30,7 +30,7 @@ export function useHoverRef<T extends HTMLElement = HTMLElement>(): [
   RefObject<T>,
   boolean,
 ] {
-  const ref = useState<RefObject<T>>(() => ({ current: null }))[0]
+  const ref = useState<RefObject<T>>(() => ({ current: null }) as unknown as RefObject<T>)[0]
   const isHovered = useHover(ref)
 
   return [ref, isHovered]

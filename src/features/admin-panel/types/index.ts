@@ -13,7 +13,6 @@ export type {
 
 // API types
 export type {
-  AdminConfig,
   AdminConfigSection,
   DropdownOption,
   Rule,

@@ -1,11 +1,29 @@
 'use client'
 
 import { ALL_CONTACTS_BOOK_ID } from '../address-books-constants'
+import type { VCard } from '../address-books-types'
 import { useAddressBookEntries } from './use-address-book-entries'
 import { useAllContactsEntries } from './use-all-contacts-entries'
 import React, { createContext, useContext } from 'react'
 
-type AddressBookEntriesValue = ReturnType<typeof useAddressBookEntries>
+// The two hooks return nearly identical shapes; useAllContactsEntries adds a
+// bookId field and the refetch types differ (different RTK queries). Define
+// the context value structurally so both are assignable.
+type AddressBookEntriesValue = {
+  items: VCard[]
+  total: number
+  contactTotal: number
+  listTotal: number
+  page: number
+  totalPages: number
+  isLoading: boolean
+  isFetching: boolean
+  isError: boolean
+  refetch: () => void
+  searchTooShort: boolean
+  minSearchLength: number
+  bookId?: string
+}
 
 const AddressBookEntriesContext = createContext<AddressBookEntriesValue | null>(
   null

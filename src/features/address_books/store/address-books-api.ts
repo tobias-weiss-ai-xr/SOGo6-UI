@@ -14,6 +14,7 @@ import type {
   ApiAddressBookShare,
   ApiAddressBookShareCreateBody,
   ApiAddressBookSharesData,
+  ApiContact,
   BookEntriesQueryParams,
   BookEntriesResponse,
   ContactSuggestion,
@@ -97,9 +98,10 @@ const vcardBookTag = (bookId: string) => ({
   id: `book:${bookId}`,
 })
 
-type AddressBookBaseQueryFn = (
-  arg: Parameters<BaseQueryFn>[0]
-) => ReturnType<BaseQueryFn>
+// The baseQuery passed to queryFn is RTK's own BaseQueryFn. RTK's generic
+// inference across queryFn boundaries is brittle — cast at the boundary.
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+type AddressBookBaseQueryFn = (...args: any[]) => any
 
 async function normalizeListEntry(
   bookId: string,
@@ -253,7 +255,7 @@ const injectedEndpoints = apiSlice.injectEndpoints({
 
         const listsPageParams = buildListsPageParams(queryParams)
 
-        const [contactsResult, listsResult] = await Promise.all([
+        const [contactsResult, listsResult] = (await Promise.all([
           baseQuery({
             url: contactsUrl,
             params: queryParams,
@@ -269,7 +271,7 @@ const injectedEndpoints = apiSlice.injectEndpoints({
                 params: listsPageParams,
                 signal,
               }),
-        ])
+        ])) as Array<{ error?: unknown; data?: unknown; meta?: unknown }>
 
         if (contactsResult.error) return { error: contactsResult.error }
         if (listsResult.error) return { error: listsResult.error }
@@ -335,7 +337,7 @@ const injectedEndpoints = apiSlice.injectEndpoints({
           signal,
         })
         if (!contactResult.error) {
-          return { data: normalizeContact(unwrapApiData(contactResult.data)) }
+          return { data: normalizeContact(unwrapApiData<ApiContact>(contactResult.data as ApiContact)) }
         }
 
         const listResult = await baseQuery({
@@ -421,7 +423,7 @@ const injectedEndpoints = apiSlice.injectEndpoints({
           body: patchBody ?? serializeContactPatch(patch),
         })
         if (result.error) return { error: result.error }
-        return { data: normalizeContact(unwrapApiData(result.data)) }
+        return { data: normalizeContact(unwrapApiData<ApiContact>(result.data as ApiContact)) }
       },
       invalidatesTags: (result, error, { id, kind }) => [
         {
@@ -526,7 +528,7 @@ const injectedEndpoints = apiSlice.injectEndpoints({
           body: createBody ?? serializeContactCreate(vCard),
         })
         if (result.error) return { error: result.error }
-        return { data: normalizeContact(unwrapApiData(result.data)) }
+        return { data: normalizeContact(unwrapApiData<ApiContact>(result.data as ApiContact)) }
       },
       invalidatesTags: [CONTACTS_AUTOCOMPLETE_SLICE],
       async onQueryStarted(
@@ -731,7 +733,9 @@ const injectedEndpoints = apiSlice.injectEndpoints({
         const pagination = parseXPaginationFromMeta(
           result.meta as { response?: Response }
         )
-        const contacts = normalizeContactsList(unwrapApiData(result.data))
+        const contacts = normalizeContactsList(
+          unwrapApiData<{ contacts: ApiContact[] }>(result.data as { contacts: ApiContact[] })
+        )
 
         return {
           data: {

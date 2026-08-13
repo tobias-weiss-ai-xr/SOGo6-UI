@@ -41,13 +41,13 @@ import { useTranslations } from 'next-intl'
 import * as React from 'react'
 import { AdminDataTableProps } from '../types/admin-data-table'
 
-export function AdminDataTable<TData>({
+export function AdminDataTable({
   data,
   columns,
   filterColumn,
   filterPlaceholder,
   actionButtonLabel,
-}: AdminDataTableProps<TData>) {
+}: AdminDataTableProps<NormalizedDomain>) {
   const t = useTranslations('')
   const [sorting, setSorting] = React.useState<SortingState>([])
   const [columnFilters, setColumnFilters] = React.useState<ColumnFiltersState>(

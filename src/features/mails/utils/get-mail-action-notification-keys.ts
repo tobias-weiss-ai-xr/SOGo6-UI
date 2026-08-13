@@ -1,4 +1,4 @@
-import type { ApiNotificationStrings } from '@/features/notifications/api-notification-handler'
+import type { ApiNotificationProps } from '@/features/notifications/api-notification-handler'
 
 type MailActionType =
   | 'tag'
@@ -26,7 +26,7 @@ function isSeenFlagToggle(arg: {
 export function getMailActionNotificationKeys(arg: {
   action: MailActionType
   data?: string | string[] | null
-}): ApiNotificationStrings | null {
+}): ApiNotificationProps | null {
   if (isSeenFlagToggle(arg)) return null
 
   switch (arg.action) {

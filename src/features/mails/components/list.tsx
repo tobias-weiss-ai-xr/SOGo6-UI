@@ -115,7 +115,7 @@ const MessagesList: React.FC<MessagesListProps> = ({
     e.stopPropagation()
     const id = String(item.id)
     const next = selectedIds.includes(id)
-      ? selectedIds.filter((i) => i !== id)
+      ? selectedIds.filter((i: string) => i !== id)
       : [...selectedIds, id]
     dispatch(setSelectedMails(next))
   }

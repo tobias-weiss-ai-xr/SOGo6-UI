@@ -16,9 +16,21 @@ import { Clock, MapPin, Plus, Users, X } from 'lucide-react'
 import type { Resource } from '@/features/resources/types/resources'
 import { useBookableResources } from '@/features/resources/hooks/use-resources'
 
+// The event form stores a light resource shape ({id,email,name,
+// resource_type}); the selector tolerates the full Resource too.
+interface ResourceSelectorValue {
+  id: string
+  email?: string
+  name?: string
+  resource_type?: Resource['resource_type']
+  location?: string | null
+  capacity?: number | null
+  is_active?: boolean
+}
+
 interface ResourceSelectorProps {
-  value: Resource[]
-  onChange: (resources: Resource[]) => void
+  value: Array<ResourceSelectorValue | Resource>
+  onChange: (resources: Array<ResourceSelectorValue | Resource>) => void
   startTime: string
   endTime: string
   className?: string
@@ -29,7 +41,7 @@ interface ResourceSelectorProps {
 /**
  * Format resource for display
  */
-function getResourceIcon(resource: Resource) {
+function getResourceIcon(resource: ResourceSelectorValue | Resource) {
   switch (resource.resource_type) {
     case 'room':
       return <MapPin className="w-4 h-4 mr-2 text-blue-600" />

@@ -46,12 +46,17 @@ export function useComposeAction(options?: { closeMobileSidebar?: boolean }) {
       : null
 
     // If composing from a shared mailbox, pre-select its identity
-    const initialData = isSharedMailbox && sharedMailbox ? {
-      selectedIdentity: {
-        mail: sharedMailbox.email,
-        name: sharedMailbox.name,
-      },
-    } : undefined
+    const initialData = isSharedMailbox && sharedMailbox
+      ? {
+          selectedIdentity: {
+            mail: sharedMailbox.email,
+            name: sharedMailbox.name,
+            replyTo: '',
+            isDefault: false,
+            signatures: {},
+          },
+        }
+      : undefined
 
     dispatch(createDraft({ 
       draftId: createClientId(),

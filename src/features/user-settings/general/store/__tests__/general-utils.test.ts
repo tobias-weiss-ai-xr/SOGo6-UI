@@ -1,16 +1,18 @@
 import {
   PP_DEFAULT,
   PP_GRAVATAR,
+  type UserGeneral,
 } from '@/features/user-settings/store/user-preferences-api-types'
 import { DateFormats } from '../../../utils'
 import {
   mapApiToGeneralSettings,
   mapGeneralSettingsToApi,
 } from '../general-utils'
+import type { GeneralSettings } from '../../../store/user-preferences-types'
 
 // ── Fixtures ──────────────────────────────────────────────────────────────────
 
-const FULL_GENERAL_SETTINGS = {
+const FULL_GENERAL_SETTINGS: GeneralSettings = {
   language: 'fr',
   timeStyle: '12',
   defaultView: 'mail',

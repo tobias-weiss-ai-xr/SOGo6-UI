@@ -1,6 +1,10 @@
 import { clearEnvCache, fetchEnvVars } from '@/lib/env-service'
 import type { RootState } from '@/lib/redux/store'
-import type { BaseQueryFn } from '@reduxjs/toolkit/query'
+import type {
+  BaseQueryFn,
+  FetchBaseQueryError,
+  FetchBaseQueryMeta,
+} from '@reduxjs/toolkit/query'
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
 import { withApiFetchSemaphore } from './fetch-semaphore'
 
@@ -44,6 +48,7 @@ export const USER_SEARCH_SLICE = 'user_search'
 export const CONTACTS_AUTOCOMPLETE_SLICE = 'contacts_autocomplete'
 export const JOBS_SLICE = 'jobs'
 export const WEBAUTHN_CREDENTIALS_SLICE = 'WebAuthnCredentials'
+export const SHARED_MAILBOXES_SLICE = 'SharedMailboxes'
 
 // ---------------------------------------------------------------------------
 // Tag types array
@@ -87,6 +92,7 @@ const tagTypes = [
   CONTACTS_AUTOCOMPLETE_SLICE,
   JOBS_SLICE,
   WEBAUTHN_CREDENTIALS_SLICE,
+  SHARED_MAILBOXES_SLICE,
 ] as const
 
 // Cache the base URL to avoid fetching env vars on every API call
@@ -110,7 +116,14 @@ const PUBLIC_AUTH_ENDPOINTS = new Set([
   'webauthnDeleteCredential',
 ])
 
-const dynamicBaseQuery: BaseQueryFn = async (args, api, extraOptions) => {
+// Declared as any-returning so createApi infers the query return shapes
+// (RTK's generic inference across this wrapper is brittle).
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export const dynamicBaseQuery = async (
+  args: Parameters<BaseQueryFn>[0],
+  api: Parameters<BaseQueryFn>[1],
+  extraOptions: Parameters<BaseQueryFn>[2]
+) => {
   if (!cachedBaseUrl) {
     try {
       const envVars = await Promise.race([
@@ -164,7 +177,13 @@ const dynamicBaseQuery: BaseQueryFn = async (args, api, extraOptions) => {
     },
   })
 
-  return withApiFetchSemaphore(() => baseQuery(args, api, extraOptions))
+  // fetchBaseQuery + the semaphore wrapper always return a Promise.
+  // RTK's BaseQueryFn generic inference is brittle here — cast through any.
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const result: any = withApiFetchSemaphore<any>(() =>
+    baseQuery(args, api, extraOptions)
+  )
+  return result
 }
 
 export const apiSlice = createApi({

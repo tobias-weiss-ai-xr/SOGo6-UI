@@ -37,7 +37,7 @@ const injectedEndpoints = apiSlice.injectEndpoints({
       query: ({ jobId, download }) => ({
         url: `jobs/${encodeURIComponent(jobId)}/result`,
         params: download ? { download: true } : undefined,
-        responseHandler: async (response) => {
+        responseHandler: async (response: Response) => {
           const blob = await response.blob()
           return {
             blob,

@@ -1,6 +1,7 @@
 import { z } from 'zod'
 import { FILTER_NAME_MAX_LENGTH } from '../mail-filters-constants'
-import type { ApiFilterRuleNode, MailFilter } from '../mail-filters-types'
+import type { ApiFilterRuleNode } from '../mail-filters-api-types'
+import type { MailFilter } from '../mail-filters-types'
 import { createEmptyFilter } from '../mail-filters-utils'
 
 type FiltersTranslator = (

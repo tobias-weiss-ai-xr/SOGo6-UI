@@ -43,7 +43,7 @@ function RecursiveNavItem({ item }: RecursiveNavItemProps) {
         </SidebarMenuSub>
       </SidebarMenuItem>
     )
-  } else {
+  } else if (item.url) {
     return (
       <SidebarMenuItem key={item.title}>
         <Link href={item.url}>
@@ -52,6 +52,16 @@ function RecursiveNavItem({ item }: RecursiveNavItemProps) {
             <span>{t(item.title)}</span>
           </SidebarMenuButton>
         </Link>
+      </SidebarMenuItem>
+    )
+  } else {
+    // No URL and no children — render a plain (non-link) item
+    return (
+      <SidebarMenuItem key={item.title}>
+        <SidebarMenuButton tooltip={t(item.title)}>
+          {item.icon && <item.icon />}
+          <span>{t(item.title)}</span>
+        </SidebarMenuButton>
       </SidebarMenuItem>
     )
   }

@@ -399,6 +399,3 @@ export const {
   useAddFavoriteResourceMutation,
   useRemoveFavoriteResourceMutation,
 } = injectedEndpoints
-
-// Export lazy-loaded hooks for code splitting (optional)
-export const { endpoints, select } = injectedEndpoints

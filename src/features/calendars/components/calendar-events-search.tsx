@@ -128,8 +128,7 @@ export function CalendarEventsSearch() {
         side="bottom"
         align="start"
         className="z-50 w-80 p-0"
-        modal={false}
-        onOpenAutoFocus={(e) => e.preventDefault()}
+        onOpenAutoFocus={(e: Event) => e.preventDefault()}
       >
         {isSearchFetching ? (
           <p className="text-muted-foreground p-3 text-sm">

@@ -52,7 +52,7 @@ export function CalendarDayDatePicker({
           <Calendar
             mode="single"
             selected={date}
-            onSelect={(selected) => {
+            onSelect={(selected: Date | undefined) => {
               if (!selected) return
               onDateSelect(selected)
               setOpen(false)

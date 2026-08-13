@@ -14,6 +14,7 @@
 export function formatDate(
   isoString: string,
   locale: string = 'en-US',
+  tMinutesAgo?: (minutes: number) => string,
 ): string {
   const date = new Date(isoString)
   const now = new Date()
@@ -24,7 +25,7 @@ export function formatDate(
 
   // Less than 1 hour ago today
   if (date >= startOfToday && diffMinutes < 60 && diffMinutes >= 0) {
-    return `${diffMinutes}m`
+    return tMinutesAgo ? tMinutesAgo(diffMinutes) : `${diffMinutes}m`
   }
 
   // Today → time format

@@ -19,7 +19,7 @@ export interface RequestOptions {
   method?: HttpMethod;
   headers?: Record<string, string>;
   body?: any;
-  params?: Record<string, string | number | boolean>;
+  params?: Record<string, string | number | boolean | undefined>;
   timeout?: number;
   signal?: AbortSignal;
   credentials?: RequestCredentials;
@@ -356,7 +356,7 @@ export class BaseApiClient {
   /**
    * Build query string from params
    */
-  private buildQueryString(params?: Record<string, string | number | boolean>): string {
+  private buildQueryString(params?: Record<string, string | number | boolean | undefined>): string {
     if (!params) return '';
     
     const query = new URLSearchParams();

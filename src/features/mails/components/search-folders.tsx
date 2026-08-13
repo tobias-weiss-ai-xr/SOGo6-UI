@@ -39,7 +39,7 @@ function flattenFolders(
 }
 
 const SearchFolders = () => {
-  const { data } = useGetFoldersQuery()
+  const { data } = useGetFoldersQuery({})
   const [search, setSearch] = useState('')
   const t = useTranslations('MAILS_COMMONS')
   // Flatten only filtered folders

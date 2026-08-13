@@ -7,7 +7,9 @@ import { logger } from '@/lib/logger'
 
 type Props = AdminPanelHeaderProps & {
   editableDescription?: boolean
-  onSaveDescription?: (desc: string) => Promise<void>
+  onSaveDescription?: (
+    desc: string
+  ) => Promise<void> | Promise<Record<string, unknown>>
 }
 
 /**

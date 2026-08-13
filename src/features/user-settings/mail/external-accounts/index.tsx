@@ -5,6 +5,7 @@ import { useState } from 'react'
 import ExternalAccountForm from './components/external-accounts-edit-form'
 import ExternalAccountsListView from './components/external-accounts-list-view'
 import LabelsFormSkeleton from './components/external-accounts-skeleton'
+import type { Mailbox, MailboxPOST } from './store/mailboxes-api-types'
 
 import {
   useCreateUserMailboxMutation,
@@ -73,7 +74,7 @@ const MailExternalAccountSettings = () => {
               mode={MODE_EDIT}
               data={fetchedData?.filter((i) => i.id === selectedAccountId)[0]}
               onBack={handleBack}
-              manageData={update}
+              manageData={update as (data: Mailbox | MailboxPOST) => void}
               error={getExistingErrorMessage(error)}
             />
           )}

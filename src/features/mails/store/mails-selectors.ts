@@ -6,8 +6,11 @@ import type {
 import { mailsApiEndpoints } from './mails-api'
 
 // Selectors for mails API cached data
+// The getFolders endpoint takes { accountId?: string }; select() without an
+// argument matches the cache for the undefined key — the query hook defaults
+// to {} which serializes to the same key, so this stays consistent.
 export const selectFoldersResult =
-  mailsApiEndpoints.endpoints.getFolders.select()
+  mailsApiEndpoints.endpoints.getFolders.select(undefined as never)
 
 export const selectFolderMessagesResult = (
   folder: string,
