@@ -9,6 +9,16 @@ type GetAddressBookVCardsArg =
 
 type PatchUndo = { undo: () => void }
 
+// Endpoints are injected into apiSlice at runtime (address-books-api.ts
+// calls apiSlice.injectEndpoints) — the base slice type can't see them,
+// hence the any-cast. Runtime is safe: this util runs only from within
+// the injected mutations.
+const util = apiSlice.util as unknown as {
+  selectCachedArgsForQuery: (name: string, state: RootState) => unknown[]
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  updateQueryData: (name: string, arg: unknown, recipe: unknown) => any
+}
+
 function getBookIdFromArg(arg: GetAddressBookVCardsArg | string): string {
   return typeof arg === 'string' ? arg : arg.bookId
 }
@@ -19,7 +29,11 @@ export function patchAllBookEntryCaches(
   bookId: string,
   recipe: (draft: BookEntriesResponse) => void
 ): PatchUndo[] {
-  const cachedArgs = apiSlice.util.selectCachedArgsForQuery(
+  // Endpoints are injected into apiSlice at runtime (address-books-api.ts
+  // calls apiSlice.injectEndpoints) — the base slice type can't see them,
+  // hence the any-cast. Runtime is safe: this util runs only from within
+  // the injected mutations.
+  const cachedArgs = util.selectCachedArgsForQuery(
     getState(),
     'getAddressBookVCards'
   ) as Array<GetAddressBookVCardsArg | string>
@@ -28,8 +42,8 @@ export function patchAllBookEntryCaches(
   for (const arg of cachedArgs) {
     if (getBookIdFromArg(arg) !== bookId) continue
     const patch = dispatch(
-      apiSlice.util.updateQueryData('getAddressBookVCards', arg, recipe)
-    ) as PatchUndo
+      util.updateQueryData('getAddressBookVCards', arg, recipe)
+    ) as unknown as PatchUndo
     undos.push(patch)
   }
   return undos
@@ -90,7 +104,7 @@ export function patchVCardDetailCache(
   recipe: (draft: VCard) => void
 ): PatchUndo | undefined {
   const patch = dispatch(
-    apiSlice.util.updateQueryData('getVCard', args, recipe)
-  ) as PatchUndo | undefined
+    util.updateQueryData('getVCard', args, recipe)
+  ) as unknown as PatchUndo | undefined
   return patch
 }
