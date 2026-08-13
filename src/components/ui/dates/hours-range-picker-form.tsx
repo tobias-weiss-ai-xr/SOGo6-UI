@@ -38,7 +38,7 @@ const minutes: { [key: number]: number[] } = {
   1: minutes1,
 }
 interface HoursRangePickerFormProps {
-  form: object
+  form: { control: any }
   name: string
 }
 

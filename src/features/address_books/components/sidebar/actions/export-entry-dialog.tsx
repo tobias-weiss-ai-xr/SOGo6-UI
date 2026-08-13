@@ -16,7 +16,7 @@ import { Label } from '@/components/ui/label'
 import { Loader2 } from 'lucide-react'
 import { useTranslations } from 'next-intl'
 import { memo, useState } from 'react'
-import type { ContactKind } from '../../address-books-types'
+import type { ContactKind } from '../../../address-books-types'
 import { useContactJobRunner } from '../../../hooks/use-contact-job-runner'
 import {
   useExportContactDocumentMutation,

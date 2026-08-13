@@ -454,7 +454,7 @@ const injectedEndpoints = apiSlice.injectEndpoints({
       query: (mailboxId) => ({
         url: `/admin/v1/shared-mailboxes/${mailboxId}/analytics/export`,
         method: 'GET',
-        responseHandler: (response) => response.blob(),
+        responseHandler: (response: Response) => response.blob(),
       }),
     }),
 
@@ -1084,7 +1084,7 @@ const injectedEndpoints = apiSlice.injectEndpoints({
       query: () => ({
         url: '/admin/v1/bulk-users/export/csv',
         method: 'GET',
-        responseHandler: (response) => response.blob(),
+        responseHandler: (response: Response) => response.blob(),
       }),
     }),
 

@@ -25,7 +25,6 @@ jest.mock('@/lib/accessibility/utils', () => ({
 }));
 
 // Mock PointerEvent for jsdom (not natively supported)
-// @ts-expect-error - minimal polyfill for testing
 if (typeof global.PointerEvent === 'undefined') {
   global.PointerEvent = class PointerEvent extends MouseEvent {
     constructor(type: string, init?: PointerEventInit) {
@@ -260,7 +259,7 @@ describe('ModalFocusTrap Component', () => {
 describe('useFocusTrap Hook', () => {
   const TestComponent: React.FC<{ active?: boolean }> = ({ active = true }) => {
     const ref = React.useRef<HTMLDivElement>(null);
-    useFocusTrap(ref, { active });
+    useFocusTrap(ref as React.RefObject<HTMLElement>, { active });
 
     return (
       <div ref={ref} data-testid="trap-container">

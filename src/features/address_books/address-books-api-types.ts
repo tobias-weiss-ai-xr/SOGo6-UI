@@ -1,4 +1,5 @@
-import type { ContactKind } from './address-books-types'
+// Inline kind union to avoid a circular import with address-books-types.
+type ApiContactKind = 'individual' | 'group' | 'org'
 
 export interface ApiDataResponse<T> {
   data: T
@@ -65,7 +66,7 @@ export interface ApiContact {
   addressbook_key?: string | null
   uid?: string | null
   version?: string
-  kind?: ContactKind | 'org'
+  kind?: ApiContactKind
   display_name?: string | null
   first_name?: string | null
   last_name?: string | null
@@ -174,7 +175,7 @@ export interface ContactCreateBody {
   prefix?: string | null
   suffix?: string | null
   nickname?: string | null
-  kind?: ContactKind | 'org'
+  kind?: ApiContactKind
   organization?: string | null
   department?: string | null
   job_title?: string | null

@@ -30,7 +30,7 @@ export function EmailsTagInput({
   const [inputValue, setInputValue] = useState('')
   const [error, setError] = useState('')
   const [focused, setFocused] = useState(false)
-  const inputRef = useRef(null)
+  const inputRef = useRef<HTMLInputElement>(null)
 
   const emails = value
 

@@ -21,7 +21,7 @@ import { CalendarDays } from 'lucide-react'
 import { useTranslations } from 'next-intl'
 
 interface DatePickerWithRangeFormProps {
-  form: object
+  form: { control: any }
   name: string
   mode?: 'range' | 'single' | 'multiple' | 'default'
 }

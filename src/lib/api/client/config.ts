@@ -74,7 +74,7 @@ export function setConfig(config: Partial<ApiConfig>): void {
 /**
  * Build full URL for an endpoint
  */
-export function buildUrl(endpoint: string, params: Record<string, string | number | boolean> = {}): string {
+export function buildUrl(endpoint: string, params: Record<string, string | number | boolean | undefined> = {}): string {
   const config = getConfig();
   
   // Replace path parameters

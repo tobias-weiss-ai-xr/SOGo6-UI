@@ -21,7 +21,7 @@ export function SortableItem({ children, id }: SortableItemProps) {
       {React.cloneElement(children as React.ReactElement, {
         attributes,
         listeners,
-      })}
+      } as Record<string, unknown>)}
     </div>
   )
 }

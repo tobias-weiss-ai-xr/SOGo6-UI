@@ -33,7 +33,7 @@ export function EmailItem({ email, displayName }: EmailItemProps) {
     e.stopPropagation()
     dispatch(
       createDraft({
-        id: `compose-${Date.now()}`,
+        draftId: `compose-${Date.now()}`,
         initialData: {
           to: [{ email, name: displayName }],
         },

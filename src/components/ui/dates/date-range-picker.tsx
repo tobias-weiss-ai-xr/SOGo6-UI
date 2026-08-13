@@ -17,7 +17,7 @@ import { cn } from '@/lib/utils'
 export function DatePickerWithRange({
   className,
   disabled,
-}: React.HTMLAttributes<HTMLDivElement>) {
+}: React.HTMLAttributes<HTMLDivElement> & { disabled?: boolean }) {
   const [date, setDate] = React.useState<DateRange | undefined>({
     from: new Date(2022, 0, 20),
     to: addDays(new Date(2022, 0, 20), 20),

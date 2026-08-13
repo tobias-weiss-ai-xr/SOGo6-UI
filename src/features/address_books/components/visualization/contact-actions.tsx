@@ -43,7 +43,7 @@ function ContactActions({
 
     dispatch(
       createDraft({
-        id: `compose-${Date.now()}`,
+        draftId: `compose-${Date.now()}`,
         initialData: {
           to: validEmails.map((email) => ({
             email,

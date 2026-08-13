@@ -43,7 +43,7 @@ function DistributionListActions({ list, bookId }: DistributionListActionsProps)
 
     dispatch(
       createDraft({
-        id: `compose-${Date.now()}`,
+        draftId: `compose-${Date.now()}`,
         initialData: {
           to: listEmails.map((email) => {
             const member = list.members?.find((item) => item.email === email)

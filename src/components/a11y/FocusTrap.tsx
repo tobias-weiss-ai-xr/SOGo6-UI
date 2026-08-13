@@ -40,16 +40,19 @@ export interface FocusTrapProps {
  * - Flyout panels
  * - Any component that needs to prevent focus from escaping
  */
-export const FocusTrap: React.FC<FocusTrapProps> = ({
-  children,
-  active = true,
-  id,
-  className = '',
-  initialFocus,
-  returnFocus = true,
-  onActivate,
-  onDeactivate,
-}) => {
+export const FocusTrap = React.forwardRef<HTMLDivElement, FocusTrapProps>(function FocusTrap(
+  {
+    children,
+    active = true,
+    id,
+    className = '',
+    initialFocus,
+    returnFocus = true,
+    onActivate,
+    onDeactivate,
+  },
+  forwardedRef
+) {
   const containerRef = useRef<HTMLDivElement>(null);
   const previousActiveElementRef = useRef<HTMLElement | null>(null);
   const cleanupRef = useRef<() => void | null>(null);
@@ -108,7 +111,11 @@ export const FocusTrap: React.FC<FocusTrapProps> = ({
 
   return (
     <div
-      ref={containerRef}
+      ref={(node) => {
+        containerRef.current = node
+        if (typeof forwardedRef === 'function') forwardedRef(node)
+        else if (forwardedRef) forwardedRef.current = node
+      }}
       id={id}
       className={`focus-trap ${className}`}
       // Prevent pointer events from escaping the trap
@@ -121,7 +128,7 @@ export const FocusTrap: React.FC<FocusTrapProps> = ({
       {children}
     </div>
   );
-};
+});
 
 /**
  * ModalFocusTrap component specifically designed for modal dialogs

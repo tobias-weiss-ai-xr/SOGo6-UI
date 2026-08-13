@@ -8,6 +8,7 @@ import {
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu'
 import { SidebarMenuAction, SidebarMenuItem } from '@/components/ui/sidebar'
+import WorkInProgress from '@/components/work-in-progress'
 import { cn } from '@/lib/utils'
 import {
   useGetSyncStatusQuery,

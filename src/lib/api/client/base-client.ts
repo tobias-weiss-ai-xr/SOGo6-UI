@@ -169,7 +169,7 @@ export class BaseApiClient {
     endpoint: string,
     options: RequestOptions = {}
   ): Promise<ApiResponse<T>> {
-    const { apiBaseUrl, timeout, enableFakeApi } = getConfig();  // eslint-disable-line @typescript-eslint/no-unused-vars
+    const { timeout, enableFakeApi } = getConfig();  // eslint-disable-line @typescript-eslint/no-unused-vars
     const method = (options.method || 'GET') as HttpMethod;
     const { body, params, headers: customHeaders, ...rest } = options;
 

@@ -6,7 +6,7 @@
 // Base client and configuration
 export { BaseApiClient, type HttpMethod, type RequestOptions, type ApiResponse, type ApiError } from './client/base-client';
 export { apiClient, createApiClient } from './client/base-client';
-export { getConfig, setConfig, createConfig, useFakeApi, buildUrl, type ApiConfig } from './client/config';
+export { getConfig, setConfig, createConfig, getUseFakeApi, buildUrl, type ApiConfig } from './client/config';
 export { type BackendResponse, unwrapBackendResponse } from './backend-response';
 
 // API Endpoint Modules

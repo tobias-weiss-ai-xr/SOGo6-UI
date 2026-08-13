@@ -2,7 +2,7 @@ import type {
   ApiContactAddress,
   ApiContactEmail,
   ApiContactPhone,
-} from '../address-books-api-types'
+} from './address-books-api-types'
 
 export type AddressBookType = 'global' | 'personal' | 'shared'
 
