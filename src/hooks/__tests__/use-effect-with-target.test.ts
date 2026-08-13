@@ -169,7 +169,7 @@ describe('useEffectWithTarget', () => {
     const target = {
       addEventListener: jest.fn(),
       removeEventListener: jest.fn(),
-    }
+    } as unknown as Element
 
     renderHook(() => {
       useEffectWithTarget(effectFn, [], target)
@@ -180,7 +180,7 @@ describe('useEffectWithTarget', () => {
 
   it('should pass target to effect function', () => {
     const effectFn = jest.fn()
-    const target = {}
+    const target = {} as unknown as Element
 
     renderHook(() => {
       useEffectWithTarget(effectFn, [], target)
@@ -192,7 +192,7 @@ describe('useEffectWithTarget', () => {
 
   it('should pass target and dependencies to effect', () => {
     const effectFn = jest.fn()
-    const target = {}
+    const target = {} as unknown as Element
 
     const { rerender } = renderHook(
       ({ dep }) => {
@@ -313,7 +313,7 @@ describe('useEffectWithTarget', () => {
       addEventListener: jest.fn(),
       removeEventListener: jest.fn(),
       data: { nested: { value: 'test' } },
-    }
+    } as unknown as Element
 
     renderHook(() => {
       useEffectWithTarget(effectFn, [], target)
@@ -335,12 +335,12 @@ describe('useEffectWithTarget', () => {
       ({ target }) => {
         useEffectWithTarget(effectFn, [target], target)
       },
-      { initialProps: { target: { id: 1 } } }
+      { initialProps: { target: { id: 1 } as unknown as Element } }
     )
 
     expect(effectFn).toHaveBeenCalledTimes(1)
 
-    rerender({ target: { id: 2 } })
+    rerender({ target: { id: 2 } as unknown as Element })
 
     expect(effectFn).toHaveBeenCalledTimes(2)
     expect(cleanupFn1).toHaveBeenCalledTimes(1)

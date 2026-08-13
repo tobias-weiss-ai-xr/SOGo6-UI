@@ -124,7 +124,7 @@ describe('useLatest', () => {
 
   it('should handle undefined to value transition', () => {
     const { result, rerender } = renderHook(({ value }) => useLatest(value), {
-      initialProps: { value: undefined },
+      initialProps: { value: undefined as string | undefined },
     })
 
     expect(result.current.current).toBeUndefined()
@@ -135,7 +135,7 @@ describe('useLatest', () => {
 
   it('should handle null to value transition', () => {
     const { result, rerender } = renderHook(({ value }) => useLatest(value), {
-      initialProps: { value: null },
+      initialProps: { value: null as string | null },
     })
 
     expect(result.current.current).toBeNull()
@@ -146,7 +146,7 @@ describe('useLatest', () => {
 
   it('should handle value to null transition', () => {
     const { result, rerender } = renderHook(({ value }) => useLatest(value), {
-      initialProps: { value: 'something' },
+      initialProps: { value: 'something' as string | null },
     })
 
     expect(result.current.current).toBe('something')
@@ -239,7 +239,7 @@ describe('useLatest', () => {
 
   it('should handle falsy values correctly', () => {
     const { result, rerender } = renderHook(({ value }) => useLatest(value), {
-      initialProps: { value: 0 },
+      initialProps: { value: 0 as number | string | boolean },
     })
 
     expect(result.current.current).toBe(0)

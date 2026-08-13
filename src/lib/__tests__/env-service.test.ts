@@ -21,14 +21,14 @@ const PREV_NODE_ENV = process.env.NODE_ENV
 
 describe('env-service', () => {
   beforeEach(() => {
-    process.env.NODE_ENV = 'test'
+    (process.env as Record<string, string | undefined>).NODE_ENV = 'test'
     clearEnvCache()
     global.fetch = jest.fn()
     jest.clearAllMocks()
   })
 
   afterEach(() => {
-    process.env.NODE_ENV = PREV_NODE_ENV
+    (process.env as Record<string, string | undefined>).NODE_ENV = PREV_NODE_ENV
   })
 
   describe('clearEnvCache and getters', () => {
@@ -135,7 +135,7 @@ describe('env-service', () => {
 
   describe('fetchEnvVars (production)', () => {
     beforeEach(() => {
-      process.env.NODE_ENV = 'production'
+      (process.env as Record<string, string | undefined>).NODE_ENV = 'production'
     })
 
     it('throws when REACT_APP_API_BASE_URL is missing from /env', async () => {
@@ -157,7 +157,7 @@ describe('env-service', () => {
 
   describe('fetchEnvVars health check (development)', () => {
     beforeEach(() => {
-      process.env.NODE_ENV = 'development'
+      (process.env as Record<string, string | undefined>).NODE_ENV = 'development'
     })
 
     it('uses real API when cross-origin health check returns 200 + S000000', async () => {
@@ -257,7 +257,7 @@ describe('env-service', () => {
     })
 
     it('refetch surfaces errors in production mode', async () => {
-      process.env.NODE_ENV = 'production'
+      (process.env as Record<string, string | undefined>).NODE_ENV = 'production'
       ;(global.fetch as unknown as jest.Mock)
         .mockResolvedValueOnce(
           mockResponse({ REACT_APP_API_BASE_URL: 'https://api.example.test' })
