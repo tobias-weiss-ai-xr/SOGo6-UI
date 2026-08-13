@@ -34,16 +34,12 @@ describe('MailContent', () => {
         name: 'file1.pdf',
         contentType: 'application/pdf',
         size: 1024,
-        downloadUri: '/dl/1',
-        displayUri: '/display/1',
       },
       {
         partId: '2',
         name: 'file2.txt',
         contentType: 'text/plain',
         size: 512,
-        downloadUri: '/dl/2',
-        displayUri: '/display/2',
       },
     ],
   }
@@ -54,7 +50,7 @@ describe('MailContent', () => {
 
   describe('basic rendering', () => {
     it('renders mail content with plain HTML', async () => {
-      const { container } = render(<MailContent body={mockPlainBody} />)
+      const { container } = render(<MailContent attachmentsUrl="" body={mockPlainBody} />)
 
       await waitFor(() => {
         const shadowHost = container.querySelector('.mail-shadow-root')
@@ -68,7 +64,7 @@ describe('MailContent', () => {
     })
 
     it('renders mail content in proper container', () => {
-      const { container } = render(<MailContent body={mockPlainBody} />)
+      const { container } = render(<MailContent attachmentsUrl="" body={mockPlainBody} />)
       const mailContent = container.querySelector('.mail-content')
       expect(mailContent).toBeInTheDocument()
       expect(mailContent).toHaveClass('mail-content')
@@ -78,7 +74,7 @@ describe('MailContent', () => {
   describe('integration', () => {
     it('renders attachments when provided', () => {
       render(
-        <MailContent body={mockPlainBody} attachments={mockAttachments} />
+        <MailContent attachmentsUrl="" body={mockPlainBody} attachments={mockAttachments} />
       )
       const attachmentDisplay = screen.getByTestId('attachment-display')
       expect(attachmentDisplay).toBeInTheDocument()
@@ -88,6 +84,7 @@ describe('MailContent', () => {
     it('does not render attachments when count is 0', () => {
       render(
         <MailContent
+          attachmentsUrl=""
           body={mockPlainBody}
           attachments={{ count: 0, parts: [] }}
         />
@@ -98,19 +95,19 @@ describe('MailContent', () => {
 
   describe('configuration', () => {
     it('shows image loading button when external images are detected', () => {
-      render(<MailContent body={mockBodyWithImages} />)
+      render(<MailContent attachmentsUrl="" body={mockBodyWithImages} />)
       expect(screen.getByTestId('show-images')).toBeInTheDocument()
     })
 
     it('hides image loading button after clicking show images', async () => {
       const user = userEvent.setup()
-      render(<MailContent body={mockBodyWithImages} />)
+      render(<MailContent attachmentsUrl="" body={mockBodyWithImages} />)
       await user.click(screen.getByTestId('show-images'))
       expect(screen.queryByTestId('show-images')).not.toBeInTheDocument()
     })
 
     it('decodes base64 content correctly', async () => {
-      const { container } = render(<MailContent body={mockBase64Body} />)
+      const { container } = render(<MailContent attachmentsUrl="" body={mockBase64Body} />)
 
       await waitFor(() => {
         const shadowHost = container.querySelector('.mail-shadow-root')
@@ -126,7 +123,7 @@ describe('MailContent', () => {
 
   describe('custom styling', () => {
     it('has proper structure with border separator', () => {
-      const { container } = render(<MailContent body={mockPlainBody} />)
+      const { container } = render(<MailContent attachmentsUrl="" body={mockPlainBody} />)
       const mainContainer = container.querySelector('.w-full')
       expect(mainContainer).toBeInTheDocument()
       expect(mainContainer).toHaveClass('w-full')
@@ -139,7 +136,7 @@ describe('MailContent', () => {
 
   describe('component stability', () => {
     it('sanitizes HTML content by removing scripts', async () => {
-      const { container } = render(<MailContent body={mockBodyWithScript} />)
+      const { container } = render(<MailContent attachmentsUrl="" body={mockBodyWithScript} />)
 
       await waitFor(() => {
         const shadowHost = container.querySelector('.mail-shadow-root')

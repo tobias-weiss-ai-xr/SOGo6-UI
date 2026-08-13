@@ -24,7 +24,13 @@ jest.mock('@/features/tasks/components/task-complete-checkbox', () => ({
 import TaskItem from '../task-item'
 
 const calendars = [
-  { key: 'cal-1', id: 'cal-1', name: 'Personal', color: '#ff0000' },
+  {
+    key: 'cal-1',
+    id: 'cal-1',
+    name: 'Personal',
+    color: '#ff0000',
+    description: null,
+  },
 ]
 
 const task = {

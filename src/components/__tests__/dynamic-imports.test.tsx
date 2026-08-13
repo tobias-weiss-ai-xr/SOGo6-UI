@@ -28,11 +28,13 @@ jest.mock('../lazy-components', () => ({
   ),
 }))
 
-const TestComponent = React.forwardRef((props, ref) => (
-  <div ref={ref} data-testid="test-component">
-    {props.message || 'Test Component Loaded'}
-  </div>
-))
+const TestComponent = React.forwardRef<HTMLDivElement, { message?: string }>(
+  (props, ref) => (
+    <div ref={ref} data-testid="test-component">
+      {props.message || 'Test Component Loaded'}
+    </div>
+  )
+)
 
 TestComponent.displayName = 'TestComponent'
 
@@ -126,8 +128,11 @@ describe('Dynamic Imports', () => {
       )
 
       // Error boundary to catch render errors
-      class TestErrorBoundary extends React.Component {
-        constructor(props) {
+      class TestErrorBoundary extends React.Component<
+        { children: React.ReactNode },
+        { hasError: boolean }
+      > {
+        constructor(props: { children: React.ReactNode }) {
           super(props)
           this.state = { hasError: false }
         }
