@@ -71,6 +71,8 @@ describe('MailInvitationWidget', () => {
         calendar_id: 'cal-1',
         title: 'Team sync',
         all_day: false,
+      created_at: '2026-01-01T00:00:00Z',
+      updated_at: '2026-01-01T00:00:00Z',
         attendees: [{ email: 'bob@example.com', status: 'needs-action' }],
       },
     }
@@ -94,6 +96,8 @@ describe('MailInvitationWidget', () => {
         calendar_id: 'cal-1',
         title: 'Team sync',
         all_day: false,
+      created_at: '2026-01-01T00:00:00Z',
+      updated_at: '2026-01-01T00:00:00Z',
         attendees: [{ email: 'bob@example.com', status: 'needs-action' }],
       },
     }

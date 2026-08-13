@@ -1,6 +1,6 @@
 import { useBoolean } from '@/hooks/use-boolean'
 import { useEventListener } from '@/hooks/use-event-listener'
-import type { BasicTarget } from '@/lib/create-effect-with-target'
+import type { BasicTarget, TargetType } from '@/lib/create-effect-with-target'
 
 export interface Options {
   onEnter?: () => void
@@ -8,7 +8,10 @@ export interface Options {
   onChange?: (isHovering: boolean) => void
 }
 
-export function useHover(target: BasicTarget, options?: Options): boolean {
+export function useHover(
+  target: BasicTarget<TargetType>,
+  options?: Options
+): boolean {
   const { onEnter, onLeave, onChange } = options || {}
 
   const [state, { setTrue, setFalse }] = useBoolean(false)

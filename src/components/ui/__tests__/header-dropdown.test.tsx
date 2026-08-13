@@ -123,14 +123,13 @@ jest.mock('@radix-ui/react-dropdown-menu', () => {
   }
 
   const Trigger = React.forwardRef<HTMLElement, TriggerProps>(
-    ({ children, open, setOpen, asChild, ...props }, ref) => {
-      const { asChild: _, ...cleanProps } = props
+    ({ children, open, setOpen, asChild: _, ...cleanProps }, ref) => {
       return React.isValidElement(children)
-        ? React.cloneElement(children as ReactElement, {
+        ? React.cloneElement(children as React.ReactElement<Record<string, unknown>>, {
             ...cleanProps,
             ref,
             onClick: () => setOpen && setOpen(!open),
-          })
+          } as Record<string, unknown>)
         : null
     }
   )
@@ -140,8 +139,7 @@ jest.mock('@radix-ui/react-dropdown-menu', () => {
   Portal.displayName = 'DropdownMenuPortal'
 
   const Content = React.forwardRef<HTMLElement, ContentProps>(
-    ({ children, open, setOpen, sideOffset, ...props }, ref) => {
-      const { sideOffset: _, setOpen: __, ...cleanProps } = props
+    ({ children, open, setOpen: _, sideOffset: __, ...cleanProps }, ref) => {
       return open ? (
         <div {...cleanProps} ref={ref as React.Ref<HTMLDivElement>}>
           {children}

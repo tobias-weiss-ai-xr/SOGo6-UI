@@ -347,10 +347,10 @@ describe('useEventListener', () => {
 
   it('should call handler with event when listener is triggered', () => {
     const handler = jest.fn()
-    let eventListener: ((event: Event) => void) | null = null
+    let eventListener: EventListener | null = null as unknown as EventListener | null
 
     addEventListenerSpy.mockImplementation((event, listener) => {
-      eventListener = listener
+      eventListener = listener as EventListener
     })
 
     renderHook(() => {
@@ -429,10 +429,10 @@ describe('useEventListener', () => {
   it('should handle handler updates', () => {
     const handler1 = jest.fn()
     const handler2 = jest.fn()
-    let eventListener: ((event: Event) => void) | null = null
+    let eventListener: EventListener | null = null as unknown as EventListener | null
 
     addEventListenerSpy.mockImplementation((event, listener) => {
-      eventListener = listener
+      eventListener = listener as EventListener
     })
 
     const { rerender } = renderHook(

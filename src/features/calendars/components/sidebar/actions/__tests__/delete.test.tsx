@@ -8,17 +8,19 @@ const mockDeleteExternalCalendar = jest.fn(() => ({
   unwrap: () => Promise.resolve(),
 }))
 
+import React from 'react'
+
 jest.mock('@/components/ui/dialog', () => ({
-  DialogHeader: ({ children }: { children: unknown }) => (
+  DialogHeader: ({ children }: { children: React.ReactNode }) => (
     <div data-testid="dialog-header">{children}</div>
   ),
-  DialogTitle: ({ children }: { children: unknown }) => (
+  DialogTitle: ({ children }: { children: React.ReactNode }) => (
     <div data-testid="dialog-title">{children}</div>
   ),
-  DialogDescription: ({ children }: { children: unknown }) => (
+  DialogDescription: ({ children }: { children: React.ReactNode }) => (
     <div data-testid="dialog-description">{children}</div>
   ),
-  DialogFooter: ({ children }: { children: unknown }) => (
+  DialogFooter: ({ children }: { children: React.ReactNode }) => (
     <div data-testid="dialog-footer">{children}</div>
   ),
 }))
