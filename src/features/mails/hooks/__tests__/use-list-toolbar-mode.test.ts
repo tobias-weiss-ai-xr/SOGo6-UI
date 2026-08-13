@@ -3,7 +3,7 @@ import { useListToolbarMode } from '../use-list-toolbar-mode'
 
 jest.mock('@/features/app-data/store/user-preferences-api', () => ({
   useGetPreferencesQuery: jest.fn(() => ({
-    data: { layoutType: 'modern' },
+    data: { mailDisplayMode: 'modern' },
   })),
 }))
 
@@ -33,7 +33,7 @@ describe('useListToolbarMode', () => {
 
     useIsMobile.mockReturnValue(false)
     useMailDetailNavigation.mockReturnValue({ isOnMailDetailPath: false })
-    useGetPreferencesQuery.mockReturnValue({ data: { layoutType: 'modern' } })
+    useGetPreferencesQuery.mockReturnValue({ data: { mailDisplayMode: 'modern' } })
     useAppSelector.mockImplementation((fn: (s: { mailLayout: { mode: string } }) => string) =>
       fn({ mailLayout: { mode: 'full' } })
     )
@@ -79,7 +79,7 @@ describe('useListToolbarMode', () => {
   it('returns list mode on classic layout even on mail detail', () => {
     const { useGetPreferencesQuery } = require('@/features/app-data/store/user-preferences-api')
     const { useMailDetailNavigation } = require('@/features/mails/hooks/use-mail-detail-navigation')
-    useGetPreferencesQuery.mockReturnValue({ data: { layoutType: 'classic' } })
+    useGetPreferencesQuery.mockReturnValue({ data: { mailDisplayMode: 'classic' } })
     useMailDetailNavigation.mockReturnValue({ isOnMailDetailPath: true })
 
     const { result } = renderHook(() => useListToolbarMode())

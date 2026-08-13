@@ -56,7 +56,9 @@ export interface DomainConfigFormPageProps {
    */
   tabDataByTab: Record<string, unknown>
   /** Callback when form is submitted */
-  onSubmit: (_values: Record<string, unknown>) => Promise<void> | void
+  onSubmit: (
+    _values: Record<string, unknown>
+  ) => Promise<void> | void | Promise<Record<string, unknown> | null>
   /** Loading state for the entire page */
   isLoading?: boolean
   /** Loading state specifically for the form */

@@ -5,11 +5,37 @@ import CustomEditor from '@/features/mails/components/compose/compose'
 import ComposeHeader from '@/features/mails/components/compose/compose-header'
 import styles from '@/features/mails/components/compose/compose.module.css'
 import { cn } from '@/lib/utils'
+import { createClientId } from '@/lib/utils/create-client-id'
+import { useAppDispatch } from '@/lib/redux/hooks'
+import { createDraft } from '@/features/mails/store/mail-compose-slice'
 import { Save, Send } from 'lucide-react'
 import { useTranslations } from 'next-intl'
+import { useEffect, useMemo } from 'react'
 
 export default function ComposePage() {
   const t = useTranslations('COMPOSE')
+  const dispatch = useAppDispatch()
+
+  // The standalone compose page needs a draft in the Redux store for the
+  // editor/header to bind to (previously draftId was undefined → typing,
+  // save and send did nothing).
+  const draftId = useMemo(() => createClientId(), [])
+
+  useEffect(() => {
+    dispatch(
+      createDraft({
+        draftId,
+        initialData: {
+          to: [],
+          cc: [],
+          bcc: [],
+          subject: '',
+          body: '',
+          attachments: [],
+        },
+      })
+    )
+  }, [dispatch, draftId])
 
   return (
     <div className="bg-background flex h-screen flex-col">
@@ -21,14 +47,14 @@ export default function ComposePage() {
       {/* Content */}
       <div className="flex-1">
         <div className="flex h-full flex-col">
-          <ComposeHeader />
+          <ComposeHeader draftId={draftId} />
           <div
             className={cn(
               'mt-4 flex h-screen flex-1 flex-col',
               styles.compose_editor
             )}
           >
-            <CustomEditor />
+            <CustomEditor draftId={draftId} />
           </div>
         </div>
       </div>

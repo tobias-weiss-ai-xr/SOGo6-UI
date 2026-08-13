@@ -21,7 +21,7 @@ export function useListToolbarMode(): ListToolbarMode {
     (state: RootState) => state.mailLayout.mode
   )
   const { data } = useGetPreferencesQuery()
-  const layoutType = data?.layoutType || 'modern'
+  const layoutType = data?.mailDisplayMode || 'modern'
 
   const isSplitMode = mailLayoutMode === 'split' && !isMobile
   const isClassicLayout = layoutType === 'classic' || isSplitMode

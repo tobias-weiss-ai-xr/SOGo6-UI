@@ -32,11 +32,6 @@ function formatResourceType(type: string): string {
   return types[type as ResourceType] || type
 }
 
-// Map admin resource to our internal type for compatibility
-function mapAdminResourceToInternal(resource: AdminResource): ResourceType & { created_at: string; updated_at: string } & AdminResource {
-  return resource
-}
-
 // Default resource form data
 const defaultResourceFormData: Omit<AdminResource, 'id' | 'created_at' | 'updated_at'> = {
   name: '',
@@ -187,11 +182,17 @@ export default function AdminResourceManagementPage() {
       ...defaultResourceFormData,
       ...formData,
     }
+
+    // The create/update mutations accept a subset (no is_active); the
+    // payload is a superset — cast at the boundary.
+    const createPayload = formAsResource as Parameters<
+      typeof createResource
+    >[0]
     
     try {
       if (showCreateModal) {
         // Create new resource
-        await createResource(formAsResource).unwrap()
+        await createResource(createPayload).unwrap()
         // Refetch resources
         await refetch()
         handleCloseCreateModal()

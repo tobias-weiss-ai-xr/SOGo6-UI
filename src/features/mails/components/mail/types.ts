@@ -75,7 +75,7 @@ export type RightActionsType = {
 }[]
 
 export type MailHeaderFullProps = MailHeaderProps & {
-  date: number
+  date: number | string
   mail?: ImapMessages
   mailId?: string
   folder?: string

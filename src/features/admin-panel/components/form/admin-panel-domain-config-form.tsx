@@ -9,7 +9,9 @@ import AdminPanelTabs from './admin-panel-tabs'
 
 type Props = DomainConfigFormPageProps & {
   description?: string
-  onUpdateDescription?: (desc: string) => Promise<void>
+  onUpdateDescription?: (
+    desc: string
+  ) => Promise<void> | Promise<Record<string, unknown>>
 }
 
 export default function DomainConfigFormPage({

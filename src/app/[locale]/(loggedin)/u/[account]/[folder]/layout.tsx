@@ -30,7 +30,7 @@ function MailLayoutInner({
   classic: React.ReactNode
 }) {
   const { data } = useGetPreferencesQuery()
-  const layoutType = data?.layoutType || 'modern'
+  const layoutType = data?.mailDisplayMode || 'modern'
   const isMobile = useIsMobile()
   const mailLayoutMode = useAppSelector(
     (state: RootState) => state.mailLayout.mode

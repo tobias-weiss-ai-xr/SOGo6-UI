@@ -85,8 +85,11 @@ export function parseEmailContact(
   return { name: '', email: str.trim() }
 }
 
-export function formatMailTime(date: number) {
-  const d = new Date(date)
+export function formatMailTime(date: number | string) {
+  // Backend sends RFC 2822 strings (email 'Date' header); also accept
+  // numeric timestamps. Guard against invalid input instead of throwing.
+  const d = typeof date === 'number' ? new Date(date) : new Date(date)
+  if (isNaN(d.getTime())) return ''
   return d
     .toLocaleString('fr-FR', {
       month: 'long',

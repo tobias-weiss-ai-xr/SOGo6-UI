@@ -18,6 +18,7 @@ import { useMailInvitation } from '@/features/mails/hooks/use-mail-invitation'
 import { useMailReplyActions } from '@/features/mails/hooks/use-mail-reply-actions'
 import { usePrintMail } from '@/features/mails/hooks/use-print-mail'
 import { useGetMailQuery } from '@/features/mails/store/mails-api'
+import type { ImapAttachments } from '@/features/mails/mails-types'
 import { useIsMobile } from '@/hooks/use-mobile'
 import { useAppSelector } from '@/lib/redux/hooks'
 
@@ -75,6 +76,24 @@ const MailPage: React.FC = () => {
   const from = parseEmailContact(fromRaw)
   const to = toRaw.map(parseEmailContact)
   const cc = ccRaw ? ccRaw.map(parseEmailContact) : []
+
+  // Backend sends attachments as a plain array [{filename, contentType,
+  // size, extension}] — normalize to the ImapAttachments shape the UI
+  // components expect (parts[].name), so attachments render and download
+  // correctly (previously part.name was undefined → broken links).
+  const normalizedAttachments: ImapAttachments | undefined = Array.isArray(
+    data.attachments
+  )
+    ? {
+        count: data.attachments.length,
+        parts: data.attachments.map((a) => ({
+          partId: String(a.filename ?? ''),
+          name: a.filename ?? '',
+          contentType: a.contentType ?? 'application/octet-stream',
+          size: a.size ?? 0,
+        })),
+      }
+    : data.attachments
 
   const handleNavigationAction = (idx: number, action: Action) => {
     if (action.id === ActionId.GO_BACK) {
@@ -164,8 +183,8 @@ const MailPage: React.FC = () => {
         ) : null}
         {invitation.kind === 'none' || data.body?.trim() ? (
           <MailContent
-            body={data.body}
-            attachments={data.attachments}
+            body={data.body ?? ''}
+            attachments={normalizedAttachments}
             attachmentsUrl={buildAttachmentsUrl({
               accountId: account,
               folder,
