@@ -390,7 +390,7 @@ const injectedEndpoints = apiSlice.injectEndpoints({
           return { data: normalizeContact(result.data as VCard) }
         }
 
-        if (isListKind(kind ?? patch.kind)) {
+        if (isListKind(kind)) {
           const body = serializeListPatch({
             name: patch.firstName,
             note: patch.note,
@@ -740,8 +740,8 @@ const injectedEndpoints = apiSlice.injectEndpoints({
             contactTotal: pagination?.total ?? contacts.length,
             listTotal: 0,
             page: pagination?.page ?? params?.page ?? 1,
-            pageSize: pagination?.page_size ?? params?.page_size ?? 20,
-            totalPages: pagination?.total_pages ?? 1,
+            pageSize: params?.page_size ?? 20,
+            totalPages: pagination?.totalPages ?? 1,
           },
         }
       },
