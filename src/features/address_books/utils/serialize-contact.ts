@@ -1,5 +1,7 @@
 import type {
   ApiContactAddress,
+  ApiContactEmail,
+  ApiContactPhone,
   ContactCreateBody,
   ContactPatchBody,
 } from '../address-books-api-types'
@@ -10,12 +12,16 @@ export const CONTACT_PHOTO_MAX_BYTES = 2048 * 1024
 
 type TypedEmailEntry = { value: string; type?: string; pref?: boolean }
 type TypedPhoneEntry = { value: string; type?: string; pref?: boolean }
+// Plain-value entries are a subset — optional type/pref keep the map body
+// type-safe without changing runtime behavior (fields are absent).
+type PlainValueEntry = { value: string; type?: string; pref?: boolean }
+type EmailInput = TypedEmailEntry | PlainValueEntry
 
 function toEmailObjects(
-  values?: TypedEmailEntry[] | string[] | { value: string }[]
-) {
+  values?: EmailInput[] | string[]
+): ApiContactEmail[] | undefined {
   if (!values?.length) return undefined
-  const emails = values
+  const emails: Array<ApiContactEmail | null> = values
     .map((entry) => {
       if (typeof entry === 'string') {
         const value = entry.trim()
@@ -31,14 +37,14 @@ function toEmailObjects(
       }
     })
     .filter(Boolean)
-  return emails.length ? emails : undefined
+  return emails.length ? (emails as ApiContactEmail[]) : undefined
 }
 
 function toPhoneObjects(
-  values?: TypedPhoneEntry[] | string[] | { value: string }[]
-) {
+  values?: TypedPhoneEntry[] | string[] | PlainValueEntry[]
+): ApiContactPhone[] | undefined {
   if (!values?.length) return undefined
-  const phones = values
+  const phones: Array<ApiContactPhone | null> = values
     .map((entry) => {
       if (typeof entry === 'string') {
         const number = entry.trim()
@@ -54,7 +60,7 @@ function toPhoneObjects(
       }
     })
     .filter(Boolean)
-  return phones.length ? phones : undefined
+  return phones.length ? (phones as ApiContactPhone[]) : undefined
 }
 
 function toAddressObjects(
