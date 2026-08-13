@@ -11,6 +11,7 @@ import FixedFormButtonGroup from '@/components/ui/forms/fixed-form-button-group'
 import { Separator } from '@/components/ui/separator'
 import { useProfile } from '@/features/user-profile/hooks/use-profile'
 import { useUpdateUserMailboxProfileMutation } from '@/features/user-settings/mail/external-accounts/store/mailboxes-api'
+import type { MailBoxIdentity } from '@/features/user-settings/mail/external-accounts/store/mailboxes-api-types'
 import { useUpdateUserPreferencesProfileMutation } from '@/features/user-settings/store/user-preferences-api'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { useTranslations } from 'next-intl'
@@ -40,7 +41,9 @@ const ProfileFormCore = () => {
     useUpdateUserPreferencesProfileMutation()
 
   // Create schema with UI config from API
-  const uiConfig = uiSettings
+  const uiConfig: Record<string, unknown> | undefined = uiSettings as
+    | Record<string, unknown>
+    | undefined
   const schema = createProfileSchema(t, formT, uiConfig)
 
   // Default values from API
@@ -50,9 +53,11 @@ const ProfileFormCore = () => {
     cn: user?.cn,
     profilePictureSource:
       preferences?.USER_GENERAL?.SOGO_U_PROFILE_PICTURE || PP_DEFAULT,
-    company: profile?.company || '',
-    team: profile?.team || '',
-    aliases: profile?.aliases || [],
+    // NOTE: company/team/aliases are not part of the current ProfileData API
+    // response — kept as empty defaults until the backend exposes them.
+    company: '',
+    team: '',
+    aliases: [],
     identities: mainAccount?.identities || [
       {
         mail: '',
@@ -88,7 +93,7 @@ const ProfileFormCore = () => {
       // Patch identities using updateUserMailbox with id 0
       await updateMailboxProfile({
         id: '0',
-        identities: values.identities,
+        identities: values.identities as MailBoxIdentity[],
         _skipNotification: true,
       }).unwrap()
 

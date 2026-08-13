@@ -65,4 +65,4 @@ export const createProfileSchema = (
   return schema
 }
 
-export type ProfileFormData = z.infer<ReturnType<typeof createProfileSchema>>
+export type ProfileFormData = z.input<ReturnType<typeof createProfileSchema>>
