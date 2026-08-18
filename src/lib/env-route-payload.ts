@@ -25,9 +25,15 @@ export function buildEnvRoutePayload(
   const loginPrefillPassword =
     env.LOGIN_PREFILL_PASSWORD ?? env.NEXT_PUBLIC_LOGIN_PREFILL_PASSWORD ?? ''
 
+  // When NEXT_PUBLIC_API_BASE_URL is set (reverse-proxy deployments),
+  // build a public URL so the browser can reach the API.
+  // Otherwise fall back to REACT_APP_API_BASE_URL (internal Docker URL)
+  // or the local dev default.
   const reactAppApiBaseUrl =
-    env.REACT_APP_API_BASE_URL?.trim() ||
-    (env.NODE_ENV === 'development' ? defaultDevApiBaseUrl : undefined)
+    env.NEXT_PUBLIC_API_BASE_URL?.trim()
+      ? env.NEXT_PUBLIC_API_BASE_URL.trim() + '/api/user/v1'
+      : env.REACT_APP_API_BASE_URL?.trim() ||
+        (env.NODE_ENV === 'development' ? defaultDevApiBaseUrl : undefined)
 
   const sseEnabled =
     env.NODE_ENV === 'development'
