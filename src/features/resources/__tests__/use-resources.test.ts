@@ -10,24 +10,32 @@ jest.mock('../store/resources-api', () => ({
   useGetAvailableResourcesQuery: jest.fn(),
 }))
 
-import { renderHook, act, waitFor } from '@testing-library/react'
+import { act, renderHook } from '@testing-library/react'
 import {
-  useGetResourcesQuery,
-  useCheckResourceAvailabilityMutation,
-  useGetAvailableResourcesQuery,
-} from '../store/resources-api'
-import {
-  useResources,
   useAvailableResources,
-  useResourceAvailability,
-  useResourcesByType,
   useBookableResources,
+  useResourceAvailability,
+  useResources,
+  useResourcesByType,
   useResourceSearch,
 } from '../hooks/use-resources'
+import {
+  useCheckResourceAvailabilityMutation,
+  useGetAvailableResourcesQuery,
+  useGetResourcesQuery,
+} from '../store/resources-api'
 
-const mockedUseGetResourcesQuery = useGetResourcesQuery as jest.MockedFunction<typeof useGetResourcesQuery>
-const mockedUseCheckAvailability = useCheckResourceAvailabilityMutation as jest.MockedFunction<typeof useCheckResourceAvailabilityMutation>
-const mockedUseGetAvailableResourcesQuery = useGetAvailableResourcesQuery as jest.MockedFunction<typeof useGetAvailableResourcesQuery>
+const mockedUseGetResourcesQuery = useGetResourcesQuery as jest.MockedFunction<
+  typeof useGetResourcesQuery
+>
+const mockedUseCheckAvailability =
+  useCheckResourceAvailabilityMutation as jest.MockedFunction<
+    typeof useCheckResourceAvailabilityMutation
+  >
+const mockedUseGetAvailableResourcesQuery =
+  useGetAvailableResourcesQuery as jest.MockedFunction<
+    typeof useGetAvailableResourcesQuery
+  >
 
 // Mock data
 const mockResources = [
@@ -86,7 +94,12 @@ const mockResources = [
 
 function mockQueryResult(overrides: Record<string, unknown> = {}) {
   return {
-    data: { resources: mockResources, total_count: mockResources.length, limit: 100, offset: 0 },
+    data: {
+      resources: mockResources,
+      total_count: mockResources.length,
+      limit: 100,
+      offset: 0,
+    },
     isLoading: false,
     isError: false,
     error: null,
@@ -111,7 +124,10 @@ describe('use-resources.ts Hooks', () => {
       const { result } = renderHook(() => useResources())
 
       expect(result.current.resources).toHaveLength(2)
-      expect(result.current.resources.map(r => r.id)).toEqual(['res-001', 'res-002'])
+      expect(result.current.resources.map((r) => r.id)).toEqual([
+        'res-001',
+        'res-002',
+      ])
       expect(result.current.isLoading).toBe(false)
       expect(result.current.isError).toBe(false)
     })
@@ -119,13 +135,15 @@ describe('use-resources.ts Hooks', () => {
     it('should pass filter options to the query', () => {
       mockedUseGetResourcesQuery.mockReturnValue(mockQueryResult() as any)
 
-      renderHook(() => useResources({
-        resourceType: 'room',
-        search: 'conference',
-        location: 'Building A',
-        capacityMin: 10,
-        limit: 50,
-      }))
+      renderHook(() =>
+        useResources({
+          resourceType: 'room',
+          search: 'conference',
+          location: 'Building A',
+          capacityMin: 10,
+          limit: 50,
+        })
+      )
 
       expect(mockedUseGetResourcesQuery).toHaveBeenCalledWith({
         resource_type: 'room',
@@ -139,7 +157,9 @@ describe('use-resources.ts Hooks', () => {
     })
 
     it('should return empty array when loading', () => {
-      mockedUseGetResourcesQuery.mockReturnValue(mockQueryResult({ isLoading: true, data: undefined }) as any)
+      mockedUseGetResourcesQuery.mockReturnValue(
+        mockQueryResult({ isLoading: true, data: undefined }) as any
+      )
 
       const { result } = renderHook(() => useResources())
 
@@ -149,7 +169,9 @@ describe('use-resources.ts Hooks', () => {
 
     it('should expose error state', () => {
       const error = new Error('fetch failed')
-      mockedUseGetResourcesQuery.mockReturnValue(mockQueryResult({ isError: true, error, data: undefined }) as any)
+      mockedUseGetResourcesQuery.mockReturnValue(
+        mockQueryResult({ isError: true, error, data: undefined }) as any
+      )
 
       const { result } = renderHook(() => useResources())
 
@@ -160,7 +182,9 @@ describe('use-resources.ts Hooks', () => {
 
     it('should expose refetch', () => {
       const refetch = jest.fn()
-      mockedUseGetResourcesQuery.mockReturnValue(mockQueryResult({ refetch }) as any)
+      mockedUseGetResourcesQuery.mockReturnValue(
+        mockQueryResult({ refetch }) as any
+      )
 
       const { result } = renderHook(() => useResources())
       act(() => result.current.refetch())
@@ -174,11 +198,19 @@ describe('use-resources.ts Hooks', () => {
   // ==========================================================================
 
   describe('useAvailableResources', () => {
-    const timeRange = { start: '2025-01-15T10:00:00Z', end: '2025-01-15T11:00:00Z' }
+    const timeRange = {
+      start: '2025-01-15T10:00:00Z',
+      end: '2025-01-15T11:00:00Z',
+    }
 
     it('should return available resources for a time range', () => {
       mockedUseGetAvailableResourcesQuery.mockReturnValue({
-        data: { resources: [mockResources[0]], total_count: 1, start_time: timeRange.start, end_time: timeRange.end },
+        data: {
+          resources: [mockResources[0]],
+          total_count: 1,
+          start_time: timeRange.start,
+          end_time: timeRange.end,
+        },
         isLoading: false,
         isError: false,
         error: null,
@@ -187,7 +219,11 @@ describe('use-resources.ts Hooks', () => {
 
       const { result } = renderHook(() => useAvailableResources(timeRange))
 
-      expect(mockedUseGetAvailableResourcesQuery).toHaveBeenCalledWith(timeRange)
+      // Hook maps {start, end} → {start_time, end_time} for the backend API
+      expect(mockedUseGetAvailableResourcesQuery).toHaveBeenCalledWith({
+        start_time: timeRange.start,
+        end_time: timeRange.end,
+      })
       expect(result.current.availableResources).toEqual([mockResources[0]])
     })
 
@@ -216,7 +252,10 @@ describe('use-resources.ts Hooks', () => {
       const trigger = jest.fn().mockReturnValue({
         unwrap: async () => ({ available: true, conflicts: [] }),
       })
-      mockedUseCheckAvailability.mockReturnValue([trigger, { isLoading: false }] as any)
+      mockedUseCheckAvailability.mockReturnValue([
+        trigger,
+        { isLoading: false },
+      ] as any)
 
       const { result } = renderHook(() => useResourceAvailability())
 
@@ -243,7 +282,10 @@ describe('use-resources.ts Hooks', () => {
           throw new Error('network error')
         },
       })
-      mockedUseCheckAvailability.mockReturnValue([trigger, { isLoading: false }] as any)
+      mockedUseCheckAvailability.mockReturnValue([
+        trigger,
+        { isLoading: false },
+      ] as any)
 
       const { result } = renderHook(() => useResourceAvailability())
 
@@ -263,7 +305,10 @@ describe('use-resources.ts Hooks', () => {
       const trigger = jest.fn().mockReturnValue({
         unwrap: async () => ({ available: true, conflicts: [] }),
       })
-      mockedUseCheckAvailability.mockReturnValue([trigger, { isLoading: false }] as any)
+      mockedUseCheckAvailability.mockReturnValue([
+        trigger,
+        { isLoading: false },
+      ] as any)
 
       const { result } = renderHook(() => useResourceAvailability())
 
@@ -295,11 +340,16 @@ describe('use-resources.ts Hooks', () => {
 
       const { result } = renderHook(() => useResourcesByType('room'))
 
-      expect(mockedUseGetResourcesQuery).toHaveBeenCalledWith(expect.objectContaining({
-        resource_type: 'room',
-      }))
+      expect(mockedUseGetResourcesQuery).toHaveBeenCalledWith(
+        expect.objectContaining({
+          resource_type: 'room',
+        })
+      )
       // Query-level filtering happens server-side; active resources are returned as-is
-      expect(result.current.resources.map(r => r.id)).toEqual(['res-001', 'res-002'])
+      expect(result.current.resources.map((r) => r.id)).toEqual([
+        'res-001',
+        'res-002',
+      ])
     })
 
     it('should filter by equipment type via query params', () => {
@@ -307,9 +357,11 @@ describe('use-resources.ts Hooks', () => {
 
       renderHook(() => useResourcesByType('equipment'))
 
-      expect(mockedUseGetResourcesQuery).toHaveBeenCalledWith(expect.objectContaining({
-        resource_type: 'equipment',
-      }))
+      expect(mockedUseGetResourcesQuery).toHaveBeenCalledWith(
+        expect.objectContaining({
+          resource_type: 'equipment',
+        })
+      )
     })
   })
 
@@ -324,7 +376,10 @@ describe('use-resources.ts Hooks', () => {
       const { result } = renderHook(() => useBookableResources())
 
       // Only active resources of type room/equipment/vehicle
-      expect(result.current.resources.map(r => r.id)).toEqual(['res-001', 'res-002'])
+      expect(result.current.resources.map((r) => r.id)).toEqual([
+        'res-001',
+        'res-002',
+      ])
     })
 
     it('should exclude inactive resources even if type is bookable', () => {
@@ -334,7 +389,7 @@ describe('use-resources.ts Hooks', () => {
       const { result } = renderHook(() => useBookableResources())
 
       // res-003 is inactive so excluded
-      expect(result.current.resources.map(r => r.id)).not.toContain('res-003')
+      expect(result.current.resources.map((r) => r.id)).not.toContain('res-003')
     })
   })
 
@@ -348,9 +403,11 @@ describe('use-resources.ts Hooks', () => {
 
       renderHook(() => useResourceSearch('conf'))
 
-      expect(mockedUseGetResourcesQuery).toHaveBeenCalledWith(expect.objectContaining({
-        search: 'conf',
-      }))
+      expect(mockedUseGetResourcesQuery).toHaveBeenCalledWith(
+        expect.objectContaining({
+          search: 'conf',
+        })
+      )
     })
 
     it('should not search for queries shorter than 2 chars', () => {
@@ -358,21 +415,27 @@ describe('use-resources.ts Hooks', () => {
 
       renderHook(() => useResourceSearch('c'))
 
-      expect(mockedUseGetResourcesQuery).toHaveBeenCalledWith(expect.objectContaining({
-        search: undefined,
-      }))
+      expect(mockedUseGetResourcesQuery).toHaveBeenCalledWith(
+        expect.objectContaining({
+          search: undefined,
+        })
+      )
     })
 
     it('should merge additional options', () => {
       mockedUseGetResourcesQuery.mockReturnValue(mockQueryResult() as any)
 
-      renderHook(() => useResourceSearch('conf', { resourceType: 'room', limit: 25 }))
+      renderHook(() =>
+        useResourceSearch('conf', { resourceType: 'room', limit: 25 })
+      )
 
-      expect(mockedUseGetResourcesQuery).toHaveBeenCalledWith(expect.objectContaining({
-        search: 'conf',
-        resource_type: 'room',
-        limit: 25,
-      }))
+      expect(mockedUseGetResourcesQuery).toHaveBeenCalledWith(
+        expect.objectContaining({
+          search: 'conf',
+          resource_type: 'room',
+          limit: 25,
+        })
+      )
     })
   })
 })

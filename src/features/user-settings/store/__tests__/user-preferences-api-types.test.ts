@@ -129,8 +129,8 @@ describe('user-preferences-api-types runtime shape validation', () => {
       expect(typeof obj.SOGO_U_TIMEZONE).toBe('string')
     })
 
-    it('has exactly 8 keys', () => {
-      expect(Object.keys(makeUserGeneral())).toHaveLength(8)
+    it('has exactly 9 keys', () => {
+      expect(Object.keys(makeUserGeneral())).toHaveLength(9)
     })
 
     it('accepts true and false for boolean fields', () => {

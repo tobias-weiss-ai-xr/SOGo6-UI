@@ -95,8 +95,8 @@ describe('user-preferences-types runtime shape validation', () => {
   // ── GeneralSettings ───────────────────────────────────────────────────────
 
   describe('GeneralSettings', () => {
-    it('constructs with all 8 required fields', () => {
-      expect(Object.keys(makeGeneralSettings())).toHaveLength(8)
+    it('constructs with all 9 required fields', () => {
+      expect(Object.keys(makeGeneralSettings())).toHaveLength(9)
     })
 
     it('all string fields are strings at runtime', () => {

@@ -1,7 +1,3 @@
-import {
-  SOCKET_ENC_EXPLICIT_TLS,
-  SOCKET_ENC_IMPLICIT_TLS,
-} from '../store/mailboxes-api-types'
 import { schemaType } from '../components/external-accounts-schema'
 import {
   FAKE_PASSWORD_SENTINEL,
@@ -12,6 +8,10 @@ import {
   MODE_LIST,
   stripUnchangedPasswords,
 } from '../external-accounts-utils'
+import {
+  SOCKET_ENC_EXPLICIT_TLS,
+  SOCKET_ENC_IMPLICIT_TLS,
+} from '../store/mailboxes-api-types'
 
 // ── Tests ─────────────────────────────────────────────────────────────────────
 
@@ -371,7 +371,7 @@ describe('external-accounts-utils', () => {
       const result = stripUnchangedPasswords(value as schemaType)
       expect(result.mail_server?.server).toBe('custom.imap.example.com')
       expect(result.mail_server?.port).toBe(3993)
-      expect(result.mail_server?.encryption).toBe('explicit_tls')
+      expect(result.mail_server?.encryption).toBe('StartTLS')
       expect(result.mail_server?.auth_mech).toBe('login')
       expect(result.mail_server?.username).toBe('custom_user')
       expect(result.mail_server?.password).toBeUndefined()
