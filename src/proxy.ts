@@ -6,7 +6,7 @@ import { isUsingFakeApi } from '@/lib/api/router'
 export const config = {
   matcher: [
     // Exclude api (proxied to SOGo back), fakeApi, env, and static assets
-    '/((?!_next|api|fakeApi|env|.*\\.(?:js|css|png|jpg|jpeg|svg|gif|ico|webp|woff|woff2|ttf|eot)$).*)',
+    '/((?!_next|api|fakeApi|env|.*\\.(?:js|css|png|jpg|jpeg|svg|gif|ico|webp|woff|woff2|ttf|eot|json|xml|txt|webmanifest)$).*)',
   ],
 }
 
