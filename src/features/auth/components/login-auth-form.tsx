@@ -7,8 +7,8 @@ import { Label } from '@/components/ui/label'
 import { useLoginMutation } from '@/features/auth/components/store/auth.api'
 import { setCredentials } from '@/features/auth/components/store/auth.slice'
 import { useLazyGetUserPreferencesQuery } from '@/features/user-settings/store/user-preferences-api'
-import { useRouter } from '@/lib/i18n/navigation'
 import { useEnvVars } from '@/lib/env-service'
+import { useLocale, useRouter } from '@/lib/i18n/navigation'
 import { getErrorMessage, getErrorStatus } from '@/lib/redux/api/error-handlers'
 import { useAppDispatch } from '@/lib/redux/hooks'
 import { cn } from '@/lib/utils'
@@ -50,6 +50,7 @@ export function LoginAuthForm({
 }: React.ComponentPropsWithoutRef<'form'>) {
   const t = useTranslations('AUTH')
   const { push } = useRouter()
+  const locale = useLocale()
   const searchParams = useSearchParams()
   const email = searchParams.get('email')
   const mode = searchParams.get('mode') // 'ldap' ou null
@@ -124,7 +125,7 @@ export function LoginAuthForm({
         })
       )
 
-      push('/u/0/INBOX')
+      push('/u/0/INBOX', { locale })
     } catch (error: unknown) {
       const status = getErrorStatus(error)
 
