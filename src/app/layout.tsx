@@ -38,6 +38,13 @@ export const metadata: Metadata = {
   },
 }
 
+// Locales that render right-to-left. Keep in sync with next-intl locale config.
+const RTL_LOCALES = new Set(['ar', 'he', 'fa', 'ur'])
+
+function getDirection(locale: string): 'rtl' | 'ltr' {
+  return RTL_LOCALES.has(locale) ? 'rtl' : 'ltr'
+}
+
 export default async function RootLayout({
   children,
 }: Readonly<{
@@ -54,6 +61,7 @@ export default async function RootLayout({
     <html
       suppressHydrationWarning
       lang={locale}
+      dir={getDirection(locale)}
       className={`${geistSans.variable} ${geistMono.variable} ${openDyslexic.variable}`}
     >
       <body className="overflow-hidden antialiased">
