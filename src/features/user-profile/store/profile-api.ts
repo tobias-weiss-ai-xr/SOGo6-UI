@@ -47,7 +47,7 @@ export const profileApi = apiSlice.injectEndpoints({
      */
     getUserSharedMailboxes: builder.query<SharedMailbox[], void>({
       query: () => ({
-        url: 'user/v1/shared-mailboxes',
+        url: 'shared-mailboxes',
         method: 'GET',
       }),
 
