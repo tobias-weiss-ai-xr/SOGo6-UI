@@ -1,13 +1,15 @@
+import StoreProvider from '@/lib/redux/store-provider'
 import '@testing-library/jest-dom'
 import { render, screen, waitFor } from '@testing-library/react'
 import React from 'react'
 import { LoginAuthForm } from '../login-auth-form'
-import StoreProvider from '@/lib/redux/store-provider'
 
 // Mock next-intl
 const mockTranslate = jest.fn((key: string) => key)
 jest.mock('next-intl', () => ({
   useTranslations: () => mockTranslate,
+  useLocale: () => 'en',
+  useFormatter: () => (v: unknown) => String(v),
 }))
 
 // Mock navigation with searchParams
