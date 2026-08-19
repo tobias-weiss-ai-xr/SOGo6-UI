@@ -132,8 +132,9 @@ export function LoginForm({
   }, [systemData, push])
 
   const handleLocaleChange = (newLocale: string) => {
-    const newPathname = pathname.replace(`/${locale}`, `/${newLocale}`)
-    push(newPathname)
+    // usePathname() returns the path WITHOUT locale prefix.
+    // next-intl's push() accepts { locale } to switch locale.
+    push(pathname, { locale: newLocale })
   }
 
   const onSubmit = async (data: LoginFormData) => {
