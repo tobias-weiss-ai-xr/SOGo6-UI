@@ -28,14 +28,33 @@ import { useForm } from 'react-hook-form'
 import { z } from 'zod'
 
 const localeLabels: Record<string, string> = {
-  en: 'English',
+  ar: 'العربية',
+  cs: 'Čeština',
+  da: 'Dansk',
   de: 'Deutsch',
-  fr: 'Français',
+  el: 'Ελληνικά',
+  en: 'English',
   es: 'Español',
+  fi: 'Suomi',
+  fr: 'Français',
+  hi: 'हिन्दी',
+  hu: 'Magyar',
+  id: 'Bahasa Indonesia',
+  it: 'Italiano',
+  ja: '日本語',
+  ko: '한국어',
+  nl: 'Nederlands',
+  no: 'Norsk',
+  pl: 'Polski',
+  pt: 'Português',
+  ro: 'Română',
+  ru: 'Русский',
+  sv: 'Svenska',
+  th: 'ไทย',
+  tr: 'Türkçe',
+  vi: 'Tiếng Việt',
+  zh: '中文',
 }
-
-// Languages available in the demo
-const availableLocales = ['en']
 
 const SYSTEM_LOAD_TIMEOUT_MS = 15_000
 
@@ -241,13 +260,11 @@ export function LoginForm({
             <SelectValue placeholder={localeLabels[locale] || locale} />
           </SelectTrigger>
           <SelectContent>
-            {locales
-              .filter((loc) => availableLocales.includes(loc))
-              .map((loc) => (
-                <SelectItem key={loc} value={loc}>
-                  {localeLabels[loc] || loc}
-                </SelectItem>
-              ))}
+            {locales.map((loc) => (
+              <SelectItem key={loc} value={loc}>
+                {localeLabels[loc] || loc}
+              </SelectItem>
+            ))}
           </SelectContent>
         </Select>
       </div>
