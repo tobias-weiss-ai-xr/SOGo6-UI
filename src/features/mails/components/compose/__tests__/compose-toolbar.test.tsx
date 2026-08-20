@@ -2,7 +2,9 @@ import { fireEvent, render, screen } from '@testing-library/react'
 import {
   MAIL_PRIORITY_HIGH,
   MAIL_PRIORITY_NORMAL,
+  toggleEncryptMessage,
   toggleReadReceipt,
+  toggleSignMessage,
   updatePriority,
 } from '../../../store/mail-compose-slice'
 import { ComposeToolbar } from '../compose-toolbar'
@@ -69,6 +71,8 @@ const baseProps = {
   jitsiEnabled: false,
   onInsertJitsi: jest.fn(),
   requestReadReceipt: false,
+  signMessage: false,
+  encryptMessage: false,
   selectedPriority: MAIL_PRIORITY_NORMAL as 0 | 1 | 2 | 3 | 4,
   isSending: false,
   onSend: jest.fn(),
@@ -153,5 +157,47 @@ describe('ComposeToolbar', () => {
   it('renders the schedule sending menu item', () => {
     render(<ComposeToolbar {...baseProps} />)
     expect(screen.getByText('schedule_sending.string')).toBeInTheDocument()
+  })
+
+  it('renders the sign message checkbox', () => {
+    render(<ComposeToolbar {...baseProps} />)
+    expect(screen.getByText('sign_message.string')).toBeInTheDocument()
+  })
+
+  it('renders the encrypt message checkbox', () => {
+    render(<ComposeToolbar {...baseProps} />)
+    expect(screen.getByText('encrypt_message.string')).toBeInTheDocument()
+  })
+
+  it('toggles sign message by dispatching toggleSignMessage', () => {
+    render(<ComposeToolbar {...baseProps} signMessage={false} />)
+    fireEvent.click(screen.getByText('sign_message.string'))
+    expect(mockDispatch).toHaveBeenCalledWith(
+      toggleSignMessage({ draftId: 'draft-1' })
+    )
+  })
+
+  it('toggles encrypt message by dispatching toggleEncryptMessage', () => {
+    render(<ComposeToolbar {...baseProps} encryptMessage={false} />)
+    fireEvent.click(screen.getByText('encrypt_message.string'))
+    expect(mockDispatch).toHaveBeenCalledWith(
+      toggleEncryptMessage({ draftId: 'draft-1' })
+    )
+  })
+
+  it('reflects the sign message checked state', () => {
+    render(<ComposeToolbar {...baseProps} signMessage />)
+    expect(screen.getByText('sign_message.string').closest('button')).toHaveAttribute(
+      'aria-pressed',
+      'true'
+    )
+  })
+
+  it('reflects the encrypt message checked state', () => {
+    render(<ComposeToolbar {...baseProps} encryptMessage />)
+    expect(screen.getByText('encrypt_message.string').closest('button')).toHaveAttribute(
+      'aria-pressed',
+      'true'
+    )
   })
 })
