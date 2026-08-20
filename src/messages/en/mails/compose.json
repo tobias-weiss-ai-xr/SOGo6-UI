@@ -156,6 +156,14 @@
       "string": "Return receipt",
       "context": "Button to request a return receipt for the email"
     },
+    "sign_message": {
+      "string": "Sign message (PGP)",
+      "context": "Button to sign the message with PGP"
+    },
+    "encrypt_message": {
+      "string": "Encrypt message (PGP)",
+      "context": "Button to encrypt the message with PGP"
+    },
     "priority": {
       "string": "Set priority",
       "context": "Button to set the priority of the email"

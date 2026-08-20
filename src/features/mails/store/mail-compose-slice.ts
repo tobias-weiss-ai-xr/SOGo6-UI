@@ -42,6 +42,10 @@ export interface MailComposeDraft {
     | typeof MAIL_PRIORITY_HIGH
     | typeof MAIL_PRIORITY_HIGHEST
   requestReadReceipt?: boolean
+  /** Whether to sign the message with PGP */
+  signMessage?: boolean
+  /** Whether to encrypt the message with PGP */
+  encryptMessage?: boolean
   isPlainText: boolean
   isDirty: boolean
   lastSaved?: number
@@ -109,6 +113,8 @@ const mailComposeSlice = createSlice({
         forwardOf,
         priority: initialData?.priority ?? MAIL_PRIORITY_NORMAL,
         requestReadReceipt: initialData?.requestReadReceipt ?? false,
+        signMessage: initialData?.signMessage ?? false,
+        encryptMessage: initialData?.encryptMessage ?? false,
         isPlainText: initialData?.isPlainText ?? false,
         isDirty: false,
         createdAt: now,
@@ -303,6 +309,26 @@ const mailComposeSlice = createSlice({
       }
     },
 
+    toggleSignMessage: (state, action: PayloadAction<{ draftId: string }>) => {
+      const { draftId } = action.payload
+      const draft = state.drafts[draftId]
+      if (draft) {
+        draft.signMessage = !draft.signMessage
+        draft.isDirty = true
+        draft.updatedAt = Date.now()
+      }
+    },
+
+    toggleEncryptMessage: (state, action: PayloadAction<{ draftId: string }>) => {
+      const { draftId } = action.payload
+      const draft = state.drafts[draftId]
+      if (draft) {
+        draft.encryptMessage = !draft.encryptMessage
+        draft.isDirty = true
+        draft.updatedAt = Date.now()
+      }
+    },
+
     setPlainTextMode: (
       state,
       action: PayloadAction<{ draftId: string; isPlainText: boolean }>
@@ -393,6 +419,8 @@ export const {
   renameAttachment,
   updatePriority,
   toggleReadReceipt,
+  toggleSignMessage,
+  toggleEncryptMessage,
   setPlainTextMode,
   markDraftSaved,
   deleteDraft,

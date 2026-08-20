@@ -42,6 +42,8 @@ export const FloatingCompose: React.FC<FloatingComposeProps> = ({
     subject,
     selectedPriority,
     requestReadReceipt,
+    signMessage,
+    encryptMessage,
     isPlainText,
     selectedIdentity,
     toRecipients,
@@ -113,6 +115,8 @@ export const FloatingCompose: React.FC<FloatingComposeProps> = ({
     subject,
     body,
     requestReadReceipt,
+    signMessage,
+    encryptMessage,
     selectedPriority,
     isPlainText,
     sendAt,
@@ -255,6 +259,8 @@ export const FloatingCompose: React.FC<FloatingComposeProps> = ({
             jitsiEnabled={Boolean(jitsiLinkEnabled && jitsiBaseUrl)}
             onInsertJitsi={handleInsertJitsi}
             requestReadReceipt={requestReadReceipt}
+            signMessage={signMessage}
+            encryptMessage={encryptMessage}
             selectedPriority={selectedPriority}
             isSending={isSending}
             onSend={() => void handleSend()}
