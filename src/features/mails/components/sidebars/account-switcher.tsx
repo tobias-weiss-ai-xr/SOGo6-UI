@@ -80,7 +80,7 @@ export function AccountSwitcher() {
             <div className="flex aspect-square size-8 items-center justify-center rounded-lg group-data-[collapsible=icon]:hidden">
               <Mail className="h-5 w-5 opacity-50" />
             </div>
-            <div className="flex group-data-[collapsible=icon]:hidden">
+            <div className="flex min-w-0 flex-col group-data-[collapsible=icon]:hidden">
               <span className="text-muted-foreground animate-pulse">…</span>
             </div>
           </SidebarMenuButton>
@@ -102,8 +102,11 @@ export function AccountSwitcher() {
                 <div className="flex aspect-square size-8 items-center justify-center rounded-lg group-data-[collapsible=icon]:hidden">
                   <Mail className="h-5 w-5" />
                 </div>
-                <div className="flex group-data-[collapsible=icon]:hidden">
-                  <span className="truncate">{selectedEmail}</span>
+                <div className="flex min-w-0 flex-col group-data-[collapsible=icon]:hidden" title={selectedEmail}>
+                  <span className="truncate text-sm leading-tight">{selectedEmail.split('@')[0] || selectedEmail}</span>
+                  {selectedEmail.includes('@') && (
+                    <span className="truncate text-xs leading-tight text-muted-foreground">@{selectedEmail.split('@')[1]}</span>
+                  )}
                 </div>
                 <MoreVertical className="ml-auto h-4 w-4 shrink-0 group-data-[collapsible=icon]:ml-0" />
               </SidebarMenuButton>
@@ -116,6 +119,7 @@ export function AccountSwitcher() {
                 <DropdownMenuItem
                   key={mailbox.id}
                   onClick={() => push(`/u/${index}/INBOX`)}
+                  title={getAccountEmail(mailbox.id)}
                 >
                   <span className="truncate">{getAccountEmail(mailbox.id)}</span>
                   {!currentIsShared && index === currentIndex && (
@@ -134,6 +138,7 @@ export function AccountSwitcher() {
                     <DropdownMenuItem
                       key={mailbox.id}
                       onClick={() => push(`/u/${mailbox.id}/INBOX`)}
+                      title={getAccountEmail(mailbox.id)}
                     >
                       <Users className="mr-2 h-4 w-4" />
                       <span className="truncate">{getAccountEmail(mailbox.id)}</span>
