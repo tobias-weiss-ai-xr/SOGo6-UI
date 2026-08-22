@@ -25,7 +25,7 @@ export function AppSidebar(): React.JSX.Element {
       >
         <SidebarsContent />
       </SidebarContent>
-      <SidebarFooter className="flex justify-end border-t border-sidebar-border p-0">
+      <SidebarFooter className="z-10 flex justify-end border-t border-sidebar-border bg-sidebar p-0">
         <SidebarTrigger className="mb-2 ml-auto h-10 w-15 rounded-r-none" />
       </SidebarFooter>
     </Sidebar>
