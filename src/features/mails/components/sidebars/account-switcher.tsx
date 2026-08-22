@@ -105,7 +105,7 @@ export function AccountSwitcher() {
                 <div className="flex min-w-0 flex-col group-data-[collapsible=icon]:hidden" title={selectedEmail}>
                   <span className="truncate text-sm leading-tight">{selectedEmail.split('@')[0] || selectedEmail}</span>
                   {selectedEmail.includes('@') && (
-                    <span className="truncate text-xs leading-tight text-muted-foreground">@{selectedEmail.split('@')[1]}</span>
+                    <span className="truncate text-[10px] leading-none text-muted-foreground">@{selectedEmail.split('@')[1]}</span>
                   )}
                 </div>
                 <MoreVertical className="ml-auto h-4 w-4 shrink-0 group-data-[collapsible=icon]:ml-0" />
