@@ -16,7 +16,10 @@ export function formatDate(
   locale: string = 'en-US',
   tMinutesAgo?: (minutes: number) => string,
 ): string {
+  // Guard against empty/invalid date strings (e.g. missing Date header)
+  if (!isoString) return ''
   const date = new Date(isoString)
+  if (isNaN(date.getTime())) return ''
   const now = new Date()
 
   const startOfToday = new Date(now.getFullYear(), now.getMonth(), now.getDate())
