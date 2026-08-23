@@ -44,28 +44,28 @@ const NavigationToggler: React.FC<NavigationTogglerProps> = ({
         <TabsTrigger
           value="mail"
           aria-label="Mail"
-          className="text-sidebar-foreground hover:text-foreground data-[state=active]:text-foreground cursor-pointer"
+          className="text-sidebar-foreground hover:text-foreground data-[state=active]:text-foreground w-full cursor-pointer"
         >
           <ModuleNavIcon.Mail className="h-6 w-6" />
         </TabsTrigger>
         <TabsTrigger
           value="address_books"
           aria-label="Address Books"
-          className="text-sidebar-foreground hover:text-foreground data-[state=active]:text-foreground cursor-pointer"
+          className="text-sidebar-foreground hover:text-foreground data-[state=active]:text-foreground w-full cursor-pointer"
         >
           <ModuleNavIcon.AddressBook className="h-6 w-6" />
         </TabsTrigger>
         <TabsTrigger
           value="calendars"
           aria-label="Calendars"
-          className="text-sidebar-foreground hover:text-foreground data-[state=active]:text-foreground cursor-pointer"
+          className="text-sidebar-foreground hover:text-foreground data-[state=active]:text-foreground w-full cursor-pointer"
         >
           <ModuleNavIcon.Calendar className="h-6 w-6" />
         </TabsTrigger>
         <TabsTrigger
           value="tasks"
           aria-label="Tasks"
-          className="text-sidebar-foreground hover:text-foreground data-[state=active]:text-foreground cursor-pointer"
+          className="text-sidebar-foreground hover:text-foreground data-[state=active]:text-foreground w-full cursor-pointer"
         >
           <ModuleNavIcon.Tasks className="h-6 w-6" />
         </TabsTrigger>
