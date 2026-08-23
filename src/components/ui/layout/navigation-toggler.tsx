@@ -40,32 +40,32 @@ const NavigationToggler: React.FC<NavigationTogglerProps> = ({
         else if (value === 'tasks') push('/tasks')
       }}
     >
-      <TabsList className="border-sidebar-foreground/20 bg-sidebar grid h-10 w-full grid-cols-4 border px-1 py-1">
+      <TabsList className="border-sidebar-foreground/20 bg-sidebar grid h-auto w-full grid-cols-4 border px-1 py-1">
         <TabsTrigger
           value="mail"
           aria-label="Mail"
-          className="text-sidebar-foreground hover:text-foreground data-[state=active]:text-foreground w-full cursor-pointer"
+          className="text-sidebar-foreground hover:text-foreground data-[state=active]:text-foreground min-h-0 w-full cursor-pointer"
         >
           <ModuleNavIcon.Mail className="h-6 w-6" />
         </TabsTrigger>
         <TabsTrigger
           value="address_books"
           aria-label="Address Books"
-          className="text-sidebar-foreground hover:text-foreground data-[state=active]:text-foreground w-full cursor-pointer"
+          className="text-sidebar-foreground hover:text-foreground data-[state=active]:text-foreground min-h-0 w-full cursor-pointer"
         >
           <ModuleNavIcon.AddressBook className="h-6 w-6" />
         </TabsTrigger>
         <TabsTrigger
           value="calendars"
           aria-label="Calendars"
-          className="text-sidebar-foreground hover:text-foreground data-[state=active]:text-foreground w-full cursor-pointer"
+          className="text-sidebar-foreground hover:text-foreground data-[state=active]:text-foreground min-h-0 w-full cursor-pointer"
         >
           <ModuleNavIcon.Calendar className="h-6 w-6" />
         </TabsTrigger>
         <TabsTrigger
           value="tasks"
           aria-label="Tasks"
-          className="text-sidebar-foreground hover:text-foreground data-[state=active]:text-foreground w-full cursor-pointer"
+          className="text-sidebar-foreground hover:text-foreground data-[state=active]:text-foreground min-h-0 w-full cursor-pointer"
         >
           <ModuleNavIcon.Tasks className="h-6 w-6" />
         </TabsTrigger>

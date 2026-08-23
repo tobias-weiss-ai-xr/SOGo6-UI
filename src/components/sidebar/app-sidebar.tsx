@@ -14,7 +14,7 @@ export function AppSidebar(): React.JSX.Element {
   return (
     <Sidebar collapsible="icon">
       <AppSidebarMobileEffects />
-      <SidebarHeader className="flex h-29 rounded-br-2xl" />
+      <SidebarHeader className="flex min-h-[120px] rounded-br-2xl" />
       <SidebarContent
         className="scrollbar-thin-gray mt-1 overflow-y-auto p-0 pt-1 group-data-[state=collapsed]:overflow-visible [scrollbar-gutter:auto]!"
         style={{
