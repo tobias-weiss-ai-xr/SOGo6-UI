@@ -1,48 +1,72 @@
 {
-    "COMMONS": {
-        "close": {
-            "string": "Zamknij"
-        },
-        "workInProgress": {
-            "description": {
-                "string": "Ta funkcja jest obecnie w fazie rozwoju."
-            },
-            "message": {
-                "string": "Pracujemy nad udostępnieniem tej funkcji."
-            },
-            "comingSoon": {
-                "string": "Wkrótce! Śledź nowości."
-            }
-        }
+  "COMMONS": {
+    "close": {
+      "string": "Zamknij"
     },
-    "COMMON": {
-        "demo": {
-            "warning": {
-                "title": {
-                    "string": "Wersja demonstracyjna"
-                },
-                "description": {
-                    "string": "Używasz wersji demonstracyjnej aplikacji. Niektóre funkcje mogą być ograniczone."
-                },
-                "action": {
-                    "string": "Rozumiem"
-                }
-            }
-        },
-        "language": {
-            "english": "English",
-            "french": "Français"
-        },
-        "serviceUnavailable": {
-            "title": {
-                "string": "Usługa niedostępna"
-            },
-            "description": {
-                "string": "Aplikacja nie mogła połączyć się z serwerem. Spróbuj ponownie później lub skontaktuj się z administratorem."
-            },
-            "retry": {
-                "string": "Spróbuj ponownie"
-            }
-        }
+    "workInProgress": {
+      "description": {
+        "string": "Ta funkcja jest obecnie w fazie rozwoju."
+      },
+      "message": {
+        "string": "Pracujemy nad udostępnieniem tej funkcji."
+      },
+      "comingSoon": {
+        "string": "Wkrótce! Śledź nowości."
+      }
     }
+  },
+  "COMMON": {
+    "demo": {
+      "warning": {
+        "title": {
+          "string": "Wersja demonstracyjna"
+        },
+        "description": {
+          "string": "Używasz wersji demonstracyjnej aplikacji. Niektóre funkcje mogą być ograniczone."
+        },
+        "action": {
+          "string": "Rozumiem"
+        }
+      }
+    },
+    "language": {
+      "english": "English",
+      "german": "Deutsch",
+      "french": "Français",
+      "spanish": "Español",
+      "chinese": "中文",
+      "italian": "Italiano",
+      "portuguese": "Português",
+      "dutch": "Nederlands",
+      "polish": "Polski",
+      "russian": "Русский",
+      "swedish": "Svenska",
+      "danish": "Dansk",
+      "finnish": "Suomi",
+      "norwegian": "Norsk",
+      "czech": "Čeština",
+      "greek": "Ελληνικά",
+      "turkish": "Türkçe",
+      "hungarian": "Magyar",
+      "romanian": "Română",
+      "japanese": "日本語",
+      "hindi": "हिन्दी",
+      "arabic": "العربية",
+      "korean": "한국어",
+      "thai": "ไทย",
+      "vietnamese": "Tiếng Việt",
+      "indonesian": "Bahasa Indonesia"
+    },
+    "serviceUnavailable": {
+      "title": {
+        "string": "Usługa niedostępna"
+      },
+      "description": {
+        "string": "Aplikacja nie mogła połączyć się z serwerem. Spróbuj ponownie później lub skontaktuj się z administratorem."
+      },
+      "retry": {
+        "string": "Spróbuj ponownie"
+      }
+    }
+  }
 }

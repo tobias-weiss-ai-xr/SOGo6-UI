@@ -1,48 +1,72 @@
 {
-    "COMMONS": {
-        "close": {
-            "string": "Закрыть"
-        },
-        "workInProgress": {
-            "description": {
-                "string": "Эта функция в настоящее время находится в разработке."
-            },
-            "message": {
-                "string": "Мы усердно работаем над тем, чтобы предоставить вам эту функцию."
-            },
-            "comingSoon": {
-                "string": "Скоро! Следите за обновлениями."
-            }
-        }
+  "COMMONS": {
+    "close": {
+      "string": "Закрыть"
     },
-    "COMMON": {
-        "demo": {
-            "warning": {
-                "title": {
-                    "string": "Демо-версия"
-                },
-                "description": {
-                    "string": "Вы используете демо-версию приложения. Некоторые функции могут быть ограничены."
-                },
-                "action": {
-                    "string": "Понятно"
-                }
-            }
-        },
-        "language": {
-            "english": "English",
-            "french": "Français"
-        },
-        "serviceUnavailable": {
-            "title": {
-                "string": "Сервис недоступен"
-            },
-            "description": {
-                "string": "Приложению не удалось подключиться к серверу. Попробуйте позже или обратитесь к администратору."
-            },
-            "retry": {
-                "string": "Повторить"
-            }
-        }
+    "workInProgress": {
+      "description": {
+        "string": "Эта функция в настоящее время находится в разработке."
+      },
+      "message": {
+        "string": "Мы усердно работаем над тем, чтобы предоставить вам эту функцию."
+      },
+      "comingSoon": {
+        "string": "Скоро! Следите за обновлениями."
+      }
     }
+  },
+  "COMMON": {
+    "demo": {
+      "warning": {
+        "title": {
+          "string": "Демо-версия"
+        },
+        "description": {
+          "string": "Вы используете демо-версию приложения. Некоторые функции могут быть ограничены."
+        },
+        "action": {
+          "string": "Понятно"
+        }
+      }
+    },
+    "language": {
+      "english": "English",
+      "german": "Deutsch",
+      "french": "Français",
+      "spanish": "Español",
+      "chinese": "中文",
+      "italian": "Italiano",
+      "portuguese": "Português",
+      "dutch": "Nederlands",
+      "polish": "Polski",
+      "russian": "Русский",
+      "swedish": "Svenska",
+      "danish": "Dansk",
+      "finnish": "Suomi",
+      "norwegian": "Norsk",
+      "czech": "Čeština",
+      "greek": "Ελληνικά",
+      "turkish": "Türkçe",
+      "hungarian": "Magyar",
+      "romanian": "Română",
+      "japanese": "日本語",
+      "hindi": "हिन्दी",
+      "arabic": "العربية",
+      "korean": "한국어",
+      "thai": "ไทย",
+      "vietnamese": "Tiếng Việt",
+      "indonesian": "Bahasa Indonesia"
+    },
+    "serviceUnavailable": {
+      "title": {
+        "string": "Сервис недоступен"
+      },
+      "description": {
+        "string": "Приложению не удалось подключиться к серверу. Попробуйте позже или обратитесь к администратору."
+      },
+      "retry": {
+        "string": "Повторить"
+      }
+    }
+  }
 }

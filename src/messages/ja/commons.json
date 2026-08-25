@@ -1,48 +1,72 @@
 {
-    "COMMONS": {
-        "close": {
-            "string": "閉じる"
-        },
-        "workInProgress": {
-            "description": {
-                "string": "この機能は現在開発中です。"
-            },
-            "message": {
-                "string": "この機能を提供できるよう鋭意開発中です。"
-            },
-            "comingSoon": {
-                "string": "近日公開！お楽しみに。"
-            }
-        }
+  "COMMONS": {
+    "close": {
+      "string": "閉じる"
     },
-    "COMMON": {
-        "demo": {
-            "warning": {
-                "title": {
-                    "string": "デモ版"
-                },
-                "description": {
-                    "string": "デモ版のアプリケーションを使用しています。一部の機能が制限される場合があります。"
-                },
-                "action": {
-                    "string": "理解しました"
-                }
-            }
-        },
-        "language": {
-            "english": "英語",
-            "french": "フランス語"
-        },
-        "serviceUnavailable": {
-            "title": {
-                "string": "サービス利用不可"
-            },
-            "description": {
-                "string": "アプリケーションがサーバーに接続できませんでした。後でもう一度お試しいただくか、管理者にお問い合わせください。"
-            },
-            "retry": {
-                "string": "再試行"
-            }
-        }
+    "workInProgress": {
+      "description": {
+        "string": "この機能は現在開発中です。"
+      },
+      "message": {
+        "string": "この機能を提供できるよう鋭意開発中です。"
+      },
+      "comingSoon": {
+        "string": "近日公開！お楽しみに。"
+      }
     }
+  },
+  "COMMON": {
+    "demo": {
+      "warning": {
+        "title": {
+          "string": "デモ版"
+        },
+        "description": {
+          "string": "デモ版のアプリケーションを使用しています。一部の機能が制限される場合があります。"
+        },
+        "action": {
+          "string": "理解しました"
+        }
+      }
+    },
+    "language": {
+      "english": "English",
+      "german": "Deutsch",
+      "french": "Français",
+      "spanish": "Español",
+      "chinese": "中文",
+      "italian": "Italiano",
+      "portuguese": "Português",
+      "dutch": "Nederlands",
+      "polish": "Polski",
+      "russian": "Русский",
+      "swedish": "Svenska",
+      "danish": "Dansk",
+      "finnish": "Suomi",
+      "norwegian": "Norsk",
+      "czech": "Čeština",
+      "greek": "Ελληνικά",
+      "turkish": "Türkçe",
+      "hungarian": "Magyar",
+      "romanian": "Română",
+      "japanese": "日本語",
+      "hindi": "हिन्दी",
+      "arabic": "العربية",
+      "korean": "한국어",
+      "thai": "ไทย",
+      "vietnamese": "Tiếng Việt",
+      "indonesian": "Bahasa Indonesia"
+    },
+    "serviceUnavailable": {
+      "title": {
+        "string": "サービス利用不可"
+      },
+      "description": {
+        "string": "アプリケーションがサーバーに接続できませんでした。後でもう一度お試しいただくか、管理者にお問い合わせください。"
+      },
+      "retry": {
+        "string": "再試行"
+      }
+    }
+  }
 }

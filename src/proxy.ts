@@ -169,12 +169,13 @@ export default async function proxy(req: NextRequest) {
     // If neither handled it, continue with normal routing
   }
 
-  // Check if the pathname matches the locale regex
+  // If the pathname doesn't have a locale prefix, delegate to next-intl
+  // middleware which detects the browser's preferred language via the
+  // Accept-Language header and redirects to the best-matching locale.
+  // This respects the user's browser language instead of always falling
+  // back to the hardcoded default locale.
   if (!localeRegex.test(pathname)) {
-    // Redirect to the default locale
-    const queryParams = req.nextUrl.search
-    const url = new URL(`/${defaultLocale}${pathname}${queryParams}`, req.url)
-    return NextResponse.redirect(url)
+    return await intlMiddleware(req)
   }
 
   // Domain-based routing logic

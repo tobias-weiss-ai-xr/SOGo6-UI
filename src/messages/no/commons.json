@@ -1,48 +1,72 @@
 {
-    "COMMONS": {
-        "close": {
-            "string": "Lukk"
-        },
-        "workInProgress": {
-            "description": {
-                "string": "Denne funksjonen er for tiden under utvikling."
-            },
-            "message": {
-                "string": "Vi jobber hardt med å bringe deg denne funksjonen."
-            },
-            "comingSoon": {
-                "string": "Kommer snart! Følg med."
-            }
-        }
+  "COMMONS": {
+    "close": {
+      "string": "Lukk"
     },
-    "COMMON": {
-        "demo": {
-            "warning": {
-                "title": {
-                    "string": "Demoversjon"
-                },
-                "description": {
-                    "string": "Du bruker for tiden en demoversjon av applikasjonen. Noen funksjoner kan være begrenset."
-                },
-                "action": {
-                    "string": "Jeg forstår"
-                }
-            }
-        },
-        "language": {
-            "english": "English",
-            "french": "Français"
-        },
-        "serviceUnavailable": {
-            "title": {
-                "string": "Tjenesten er ikke tilgjengelig"
-            },
-            "description": {
-                "string": "Applikasjonen kunne ikke koble til serveren. Prøv igjen senere eller kontakt administratoren din."
-            },
-            "retry": {
-                "string": "Prøv igjen"
-            }
-        }
+    "workInProgress": {
+      "description": {
+        "string": "Denne funksjonen er for tiden under utvikling."
+      },
+      "message": {
+        "string": "Vi jobber hardt med å bringe deg denne funksjonen."
+      },
+      "comingSoon": {
+        "string": "Kommer snart! Følg med."
+      }
     }
+  },
+  "COMMON": {
+    "demo": {
+      "warning": {
+        "title": {
+          "string": "Demoversjon"
+        },
+        "description": {
+          "string": "Du bruker for tiden en demoversjon av applikasjonen. Noen funksjoner kan være begrenset."
+        },
+        "action": {
+          "string": "Jeg forstår"
+        }
+      }
+    },
+    "language": {
+      "english": "English",
+      "german": "Deutsch",
+      "french": "Français",
+      "spanish": "Español",
+      "chinese": "中文",
+      "italian": "Italiano",
+      "portuguese": "Português",
+      "dutch": "Nederlands",
+      "polish": "Polski",
+      "russian": "Русский",
+      "swedish": "Svenska",
+      "danish": "Dansk",
+      "finnish": "Suomi",
+      "norwegian": "Norsk",
+      "czech": "Čeština",
+      "greek": "Ελληνικά",
+      "turkish": "Türkçe",
+      "hungarian": "Magyar",
+      "romanian": "Română",
+      "japanese": "日本語",
+      "hindi": "हिन्दी",
+      "arabic": "العربية",
+      "korean": "한국어",
+      "thai": "ไทย",
+      "vietnamese": "Tiếng Việt",
+      "indonesian": "Bahasa Indonesia"
+    },
+    "serviceUnavailable": {
+      "title": {
+        "string": "Tjenesten er ikke tilgjengelig"
+      },
+      "description": {
+        "string": "Applikasjonen kunne ikke koble til serveren. Prøv igjen senere eller kontakt administratoren din."
+      },
+      "retry": {
+        "string": "Prøv igjen"
+      }
+    }
+  }
 }

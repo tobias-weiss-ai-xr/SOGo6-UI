@@ -66,6 +66,29 @@ jest.mock('next-intl', () => ({
   useLocale: () => 'en',
 }))
 
+// Mock next-intl/navigation (createNavigation is not available in Jest)
+jest.mock('@/lib/i18n/navigation', () => ({
+  Link: ({ children, href }: any) => <a href={href}>{children}</a>,
+  redirect: jest.fn(),
+  usePathname: () => '/en/user-settings/general',
+  useRouter: () => ({
+    push: jest.fn(),
+    replace: jest.fn(),
+    back: jest.fn(),
+    forward: jest.fn(),
+    refresh: jest.fn(),
+    prefetch: jest.fn(),
+  }),
+  getPathname: () => '/en/user-settings/general',
+}))
+
+// Mock i18n config (needed for LANGUAGE_OPTIONS constant at module load)
+jest.mock('@/lib/i18n/config', () => ({
+  getLocales: () => ['en'],
+  getDefaultLocale: () => 'en',
+  routing: { locales: ['en'], defaultLocale: 'en', localePrefix: 'always', localeDetection: true },
+}))
+
 // Mock UI components
 jest.mock('@/components/ui/checkbox', () => ({
   Checkbox: ({ checked, onCheckedChange, ...props }: any) => (
@@ -280,7 +303,13 @@ describe('GeneralSettingsForm', () => {
   it('should render all select options correctly', () => {
     render(<GeneralSettingsForm data={mockData} update={mockUpdate} />)
 
-    expect(screen.getByText('language.english')).toBeInTheDocument()
-    expect(screen.getByText('labels.mail.string')).toBeInTheDocument()
+    // Language selector is the first SelectForm; it should include all 26 languages
+    const selects = screen.getAllByTestId('select-form')
+    expect(selects.length).toBeGreaterThanOrEqual(1)
+    const languageSelect = selects[0]
+    const options = languageSelect.querySelectorAll('option')
+    expect(options.length).toBe(26)
+    // English should be the first option
+    expect(options[0].getAttribute('value')).toBe('en')
   })
 })

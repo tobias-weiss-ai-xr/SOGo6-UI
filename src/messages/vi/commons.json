@@ -1,48 +1,72 @@
 {
-    "COMMONS": {
-        "close": {
-            "string": "Đóng"
-        },
-        "workInProgress": {
-            "description": {
-                "string": "Tính năng này hiện đang được phát triển."
-            },
-            "message": {
-                "string": "Chúng tôi đang nỗ lực để mang đến tính năng này cho bạn."
-            },
-            "comingSoon": {
-                "string": "Sắp ra mắt! Hãy theo dõi."
-            }
-        }
+  "COMMONS": {
+    "close": {
+      "string": "Đóng"
     },
-    "COMMON": {
-        "demo": {
-            "warning": {
-                "title": {
-                    "string": "Phiên bản dùng thử"
-                },
-                "description": {
-                    "string": "Bạn đang sử dụng phiên bản dùng thử của ứng dụng. Một số tính năng có thể bị giới hạn."
-                },
-                "action": {
-                    "string": "Đã hiểu"
-                }
-            }
-        },
-        "language": {
-            "english": "English",
-            "french": "Français"
-        },
-        "serviceUnavailable": {
-            "title": {
-                "string": "Dịch vụ không khả dụng"
-            },
-            "description": {
-                "string": "Ứng dụng không thể kết nối đến máy chủ. Vui lòng thử lại sau hoặc liên hệ quản trị viên của bạn."
-            },
-            "retry": {
-                "string": "Thử lại"
-            }
-        }
+    "workInProgress": {
+      "description": {
+        "string": "Tính năng này hiện đang được phát triển."
+      },
+      "message": {
+        "string": "Chúng tôi đang nỗ lực để mang đến tính năng này cho bạn."
+      },
+      "comingSoon": {
+        "string": "Sắp ra mắt! Hãy theo dõi."
+      }
     }
+  },
+  "COMMON": {
+    "demo": {
+      "warning": {
+        "title": {
+          "string": "Phiên bản dùng thử"
+        },
+        "description": {
+          "string": "Bạn đang sử dụng phiên bản dùng thử của ứng dụng. Một số tính năng có thể bị giới hạn."
+        },
+        "action": {
+          "string": "Đã hiểu"
+        }
+      }
+    },
+    "language": {
+      "english": "English",
+      "german": "Deutsch",
+      "french": "Français",
+      "spanish": "Español",
+      "chinese": "中文",
+      "italian": "Italiano",
+      "portuguese": "Português",
+      "dutch": "Nederlands",
+      "polish": "Polski",
+      "russian": "Русский",
+      "swedish": "Svenska",
+      "danish": "Dansk",
+      "finnish": "Suomi",
+      "norwegian": "Norsk",
+      "czech": "Čeština",
+      "greek": "Ελληνικά",
+      "turkish": "Türkçe",
+      "hungarian": "Magyar",
+      "romanian": "Română",
+      "japanese": "日本語",
+      "hindi": "हिन्दी",
+      "arabic": "العربية",
+      "korean": "한국어",
+      "thai": "ไทย",
+      "vietnamese": "Tiếng Việt",
+      "indonesian": "Bahasa Indonesia"
+    },
+    "serviceUnavailable": {
+      "title": {
+        "string": "Dịch vụ không khả dụng"
+      },
+      "description": {
+        "string": "Ứng dụng không thể kết nối đến máy chủ. Vui lòng thử lại sau hoặc liên hệ quản trị viên của bạn."
+      },
+      "retry": {
+        "string": "Thử lại"
+      }
+    }
+  }
 }

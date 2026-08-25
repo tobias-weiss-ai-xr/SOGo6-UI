@@ -157,21 +157,29 @@ describe('proxy handler', () => {
     jest.restoreAllMocks()
   })
 
-  it('redirects paths without a locale prefix to the default locale', async () => {
+  it('delegates paths without a locale prefix to next-intl middleware for browser language detection', async () => {
+    const intlResponse = jest.requireMock('next/server').NextResponse.redirect(
+      'http://mail.example.com/de/mails'
+    )
+    mockIntlMiddleware.mockResolvedValue(intlResponse)
+
     const response = await proxy(createRequest('/mails'))
 
-    expect(response.status).toBe(307)
-    expect(response.headers.get('location')).toBe(
-      'http://mail.example.com/en/mails'
-    )
+    // next-intl middleware should be called to detect browser language
+    expect(mockIntlMiddleware).toHaveBeenCalledTimes(1)
+    expect(response).toBe(intlResponse)
   })
 
-  it('preserves query params when redirecting to default locale', async () => {
+  it('preserves query params when delegating to next-intl middleware', async () => {
+    const intlResponse = jest.requireMock('next/server').NextResponse.redirect(
+      'http://mail.example.com/de/mails?folder=inbox'
+    )
+    mockIntlMiddleware.mockResolvedValue(intlResponse)
+
     const response = await proxy(createRequest('/mails?folder=inbox'))
 
-    expect(response.headers.get('location')).toBe(
-      'http://mail.example.com/en/mails?folder=inbox'
-    )
+    expect(mockIntlMiddleware).toHaveBeenCalledTimes(1)
+    expect(response).toBe(intlResponse)
   })
 
   it('delegates auth routes to next-intl middleware', async () => {

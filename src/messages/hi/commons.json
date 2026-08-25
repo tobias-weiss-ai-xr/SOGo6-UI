@@ -1,48 +1,72 @@
 {
-    "COMMONS": {
-        "close": {
-            "string": "बंद करें"
-        },
-        "workInProgress": {
-            "description": {
-                "string": "यह सुविधा वर्तमान में विकास के अंतर्गत है।"
-            },
-            "message": {
-                "string": "हम आपके लिए इस सुविधा को लाने के लिए कड़ी मेहनत कर रहे हैं।"
-            },
-            "comingSoon": {
-                "string": "जल्द आ रहा है! बने रहें।"
-            }
-        }
+  "COMMONS": {
+    "close": {
+      "string": "बंद करें"
     },
-    "COMMON": {
-        "demo": {
-            "warning": {
-                "title": {
-                    "string": "डेमो संस्करण"
-                },
-                "description": {
-                    "string": "आप वर्तमान में एप्लिकेशन का डेमो संस्करण उपयोग कर रहे हैं। कुछ सुविधाएं सीमित हो सकती हैं।"
-                },
-                "action": {
-                    "string": "समझ गया"
-                }
-            }
-        },
-        "language": {
-            "english": "English",
-            "french": "Français"
-        },
-        "serviceUnavailable": {
-            "title": {
-                "string": "सेवा अनुपलब्ध"
-            },
-            "description": {
-                "string": "एप्लिकेशन सर्वर से कनेक्ट नहीं कर पाई। कृपया बाद में पुनः प्रयास करें या अपने व्यवस्थापक से संपर्क करें।"
-            },
-            "retry": {
-                "string": "पुनः प्रयास"
-            }
-        }
+    "workInProgress": {
+      "description": {
+        "string": "यह सुविधा वर्तमान में विकास के अंतर्गत है।"
+      },
+      "message": {
+        "string": "हम आपके लिए इस सुविधा को लाने के लिए कड़ी मेहनत कर रहे हैं।"
+      },
+      "comingSoon": {
+        "string": "जल्द आ रहा है! बने रहें।"
+      }
     }
+  },
+  "COMMON": {
+    "demo": {
+      "warning": {
+        "title": {
+          "string": "डेमो संस्करण"
+        },
+        "description": {
+          "string": "आप वर्तमान में एप्लिकेशन का डेमो संस्करण उपयोग कर रहे हैं। कुछ सुविधाएं सीमित हो सकती हैं।"
+        },
+        "action": {
+          "string": "समझ गया"
+        }
+      }
+    },
+    "language": {
+      "english": "English",
+      "german": "Deutsch",
+      "french": "Français",
+      "spanish": "Español",
+      "chinese": "中文",
+      "italian": "Italiano",
+      "portuguese": "Português",
+      "dutch": "Nederlands",
+      "polish": "Polski",
+      "russian": "Русский",
+      "swedish": "Svenska",
+      "danish": "Dansk",
+      "finnish": "Suomi",
+      "norwegian": "Norsk",
+      "czech": "Čeština",
+      "greek": "Ελληνικά",
+      "turkish": "Türkçe",
+      "hungarian": "Magyar",
+      "romanian": "Română",
+      "japanese": "日本語",
+      "hindi": "हिन्दी",
+      "arabic": "العربية",
+      "korean": "한국어",
+      "thai": "ไทย",
+      "vietnamese": "Tiếng Việt",
+      "indonesian": "Bahasa Indonesia"
+    },
+    "serviceUnavailable": {
+      "title": {
+        "string": "सेवा अनुपलब्ध"
+      },
+      "description": {
+        "string": "एप्लिकेशन सर्वर से कनेक्ट नहीं कर पाई। कृपया बाद में पुनः प्रयास करें या अपने व्यवस्थापक से संपर्क करें।"
+      },
+      "retry": {
+        "string": "पुनः प्रयास"
+      }
+    }
+  }
 }

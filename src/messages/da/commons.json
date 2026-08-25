@@ -1,48 +1,72 @@
 {
-    "COMMONS": {
-        "close": {
-            "string": "Luk"
-        },
-        "workInProgress": {
-            "description": {
-                "string": "Denne funktion er i øjeblikket under udvikling."
-            },
-            "message": {
-                "string": "Vi arbejder hårdt på at bringe dig denne funktion."
-            },
-            "comingSoon": {
-                "string": "Kommer snart! Følg med."
-            }
-        }
+  "COMMONS": {
+    "close": {
+      "string": "Luk"
     },
-    "COMMON": {
-        "demo": {
-            "warning": {
-                "title": {
-                    "string": "Demo-version"
-                },
-                "description": {
-                    "string": "Du bruger i øjeblikket en demo-version af applikationen. Nogle funktioner kan være begrænsede."
-                },
-                "action": {
-                    "string": "Forstået"
-                }
-            }
-        },
-        "language": {
-            "english": "English",
-            "french": "Français"
-        },
-        "serviceUnavailable": {
-            "title": {
-                "string": "Tjenesten er ikke tilgængelig"
-            },
-            "description": {
-                "string": "Applikationen kunne ikke oprette forbindelse til serveren. Prøv igen senere eller kontakt din administrator."
-            },
-            "retry": {
-                "string": "Prøv igen"
-            }
-        }
+    "workInProgress": {
+      "description": {
+        "string": "Denne funktion er i øjeblikket under udvikling."
+      },
+      "message": {
+        "string": "Vi arbejder hårdt på at bringe dig denne funktion."
+      },
+      "comingSoon": {
+        "string": "Kommer snart! Følg med."
+      }
     }
+  },
+  "COMMON": {
+    "demo": {
+      "warning": {
+        "title": {
+          "string": "Demo-version"
+        },
+        "description": {
+          "string": "Du bruger i øjeblikket en demo-version af applikationen. Nogle funktioner kan være begrænsede."
+        },
+        "action": {
+          "string": "Forstået"
+        }
+      }
+    },
+    "language": {
+      "english": "English",
+      "german": "Deutsch",
+      "french": "Français",
+      "spanish": "Español",
+      "chinese": "中文",
+      "italian": "Italiano",
+      "portuguese": "Português",
+      "dutch": "Nederlands",
+      "polish": "Polski",
+      "russian": "Русский",
+      "swedish": "Svenska",
+      "danish": "Dansk",
+      "finnish": "Suomi",
+      "norwegian": "Norsk",
+      "czech": "Čeština",
+      "greek": "Ελληνικά",
+      "turkish": "Türkçe",
+      "hungarian": "Magyar",
+      "romanian": "Română",
+      "japanese": "日本語",
+      "hindi": "हिन्दी",
+      "arabic": "العربية",
+      "korean": "한국어",
+      "thai": "ไทย",
+      "vietnamese": "Tiếng Việt",
+      "indonesian": "Bahasa Indonesia"
+    },
+    "serviceUnavailable": {
+      "title": {
+        "string": "Tjenesten er ikke tilgængelig"
+      },
+      "description": {
+        "string": "Applikationen kunne ikke oprette forbindelse til serveren. Prøv igen senere eller kontakt din administrator."
+      },
+      "retry": {
+        "string": "Prøv igen"
+      }
+    }
+  }
 }

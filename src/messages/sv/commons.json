@@ -1,48 +1,72 @@
 {
-    "COMMONS": {
-        "close": {
-            "string": "Stäng"
-        },
-        "workInProgress": {
-            "description": {
-                "string": "Denna funktion är för närvarande under utveckling."
-            },
-            "message": {
-                "string": "Vi arbetar hårt för att ta fram denna funktion."
-            },
-            "comingSoon": {
-                "string": "Kommer snart! Håll utkik."
-            }
-        }
+  "COMMONS": {
+    "close": {
+      "string": "Stäng"
     },
-    "COMMON": {
-        "demo": {
-            "warning": {
-                "title": {
-                    "string": "Demoversion"
-                },
-                "description": {
-                    "string": "Du använder för närvarande en demoversion av applikationen. Vissa funktioner kan vara begränsade."
-                },
-                "action": {
-                    "string": "Jag förstår"
-                }
-            }
-        },
-        "language": {
-            "english": "English",
-            "french": "Français"
-        },
-        "serviceUnavailable": {
-            "title": {
-                "string": "Tjänsten är inte tillgänglig"
-            },
-            "description": {
-                "string": "Applikationen kunde inte ansluta till servern. Försök igen senare eller kontakta din administratör."
-            },
-            "retry": {
-                "string": "Försök igen"
-            }
-        }
+    "workInProgress": {
+      "description": {
+        "string": "Denna funktion är för närvarande under utveckling."
+      },
+      "message": {
+        "string": "Vi arbetar hårt för att ta fram denna funktion."
+      },
+      "comingSoon": {
+        "string": "Kommer snart! Håll utkik."
+      }
     }
+  },
+  "COMMON": {
+    "demo": {
+      "warning": {
+        "title": {
+          "string": "Demoversion"
+        },
+        "description": {
+          "string": "Du använder för närvarande en demoversion av applikationen. Vissa funktioner kan vara begränsade."
+        },
+        "action": {
+          "string": "Jag förstår"
+        }
+      }
+    },
+    "language": {
+      "english": "English",
+      "german": "Deutsch",
+      "french": "Français",
+      "spanish": "Español",
+      "chinese": "中文",
+      "italian": "Italiano",
+      "portuguese": "Português",
+      "dutch": "Nederlands",
+      "polish": "Polski",
+      "russian": "Русский",
+      "swedish": "Svenska",
+      "danish": "Dansk",
+      "finnish": "Suomi",
+      "norwegian": "Norsk",
+      "czech": "Čeština",
+      "greek": "Ελληνικά",
+      "turkish": "Türkçe",
+      "hungarian": "Magyar",
+      "romanian": "Română",
+      "japanese": "日本語",
+      "hindi": "हिन्दी",
+      "arabic": "العربية",
+      "korean": "한국어",
+      "thai": "ไทย",
+      "vietnamese": "Tiếng Việt",
+      "indonesian": "Bahasa Indonesia"
+    },
+    "serviceUnavailable": {
+      "title": {
+        "string": "Tjänsten är inte tillgänglig"
+      },
+      "description": {
+        "string": "Applikationen kunde inte ansluta till servern. Försök igen senare eller kontakta din administratör."
+      },
+      "retry": {
+        "string": "Försök igen"
+      }
+    }
+  }
 }

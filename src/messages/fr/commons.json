@@ -1,48 +1,72 @@
 {
-    "COMMONS": {
-        "close": {
-            "string": "Fermeur"
-        },
-        "workInProgress": {
-            "description": {
-                "string": "Cette fonctionnalité est actuellement en développement."
-            },
-            "message": {
-                "string": "Nous travaillons dur pour vous offrir cette fonctionnalité."
-            },
-            "comingSoon": {
-                "string": "Bientôt disponible ! Restez à l'écoute."
-            }
-        }
+  "COMMONS": {
+    "close": {
+      "string": "Fermeur"
     },
-    "COMMON": {
-        "demo": {
-            "warning": {
-                "title": {
-                    "string": "Version de démonstration"
-                },
-                "description": {
-                    "string": "Vous utilisez actuellement une version de démonstration de l'application. Certaines fonctionnalités peuvent être limitées."
-                },
-                "action": {
-                    "string": "Compris"
-                }
-            }
-        },
-        "language": {
-            "english": "English",
-            "french": "Français"
-        },
-        "serviceUnavailable": {
-            "title": {
-                "string": "Service indisponible"
-            },
-            "description": {
-                "string": "L'application n'a pas pu se connecter au serveur. Veuillez réessayer plus tard ou contacter votre administrateur."
-            },
-            "retry": {
-                "string": "Réessayeur"
-            }
-        }
+    "workInProgress": {
+      "description": {
+        "string": "Cette fonctionnalité est actuellement en développement."
+      },
+      "message": {
+        "string": "Nous travaillons dur pour vous offrir cette fonctionnalité."
+      },
+      "comingSoon": {
+        "string": "Bientôt disponible ! Restez à l'écoute."
+      }
     }
+  },
+  "COMMON": {
+    "demo": {
+      "warning": {
+        "title": {
+          "string": "Version de démonstration"
+        },
+        "description": {
+          "string": "Vous utilisez actuellement une version de démonstration de l'application. Certaines fonctionnalités peuvent être limitées."
+        },
+        "action": {
+          "string": "Compris"
+        }
+      }
+    },
+    "language": {
+      "english": "English",
+      "german": "Deutsch",
+      "french": "Français",
+      "spanish": "Español",
+      "chinese": "中文",
+      "italian": "Italiano",
+      "portuguese": "Português",
+      "dutch": "Nederlands",
+      "polish": "Polski",
+      "russian": "Русский",
+      "swedish": "Svenska",
+      "danish": "Dansk",
+      "finnish": "Suomi",
+      "norwegian": "Norsk",
+      "czech": "Čeština",
+      "greek": "Ελληνικά",
+      "turkish": "Türkçe",
+      "hungarian": "Magyar",
+      "romanian": "Română",
+      "japanese": "日本語",
+      "hindi": "हिन्दी",
+      "arabic": "العربية",
+      "korean": "한국어",
+      "thai": "ไทย",
+      "vietnamese": "Tiếng Việt",
+      "indonesian": "Bahasa Indonesia"
+    },
+    "serviceUnavailable": {
+      "title": {
+        "string": "Service indisponible"
+      },
+      "description": {
+        "string": "L'application n'a pas pu se connecter au serveur. Veuillez réessayer plus tard ou contacter votre administrateur."
+      },
+      "retry": {
+        "string": "Réessayeur"
+      }
+    }
+  }
 }

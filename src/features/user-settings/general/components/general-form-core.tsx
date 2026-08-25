@@ -20,7 +20,7 @@ import {
   TIMEFORMAT,
 } from '@/features/user-settings/utils'
 import { zodResolver } from '@hookform/resolvers/zod'
-import { useTranslations } from 'next-intl'
+import { useLocale, useTranslations } from 'next-intl'
 import { useEffect } from 'react'
 import { useForm } from 'react-hook-form'
 import { z } from 'zod'
@@ -30,6 +30,37 @@ import {
 } from '../store/general-utils'
 import { schema } from './general-schema'
 import { logger } from '@/lib/logger'
+import { usePathname, useRouter } from '@/lib/i18n/navigation'
+
+// Native language names for the selector
+const LANGUAGE_OPTIONS = [
+  { value: 'en', labelKey: 'language.english' },
+  { value: 'de', labelKey: 'language.german' },
+  { value: 'fr', labelKey: 'language.french' },
+  { value: 'es', labelKey: 'language.spanish' },
+  { value: 'zh', labelKey: 'language.chinese' },
+  { value: 'it', labelKey: 'language.italian' },
+  { value: 'pt', labelKey: 'language.portuguese' },
+  { value: 'nl', labelKey: 'language.dutch' },
+  { value: 'pl', labelKey: 'language.polish' },
+  { value: 'ru', labelKey: 'language.russian' },
+  { value: 'sv', labelKey: 'language.swedish' },
+  { value: 'da', labelKey: 'language.danish' },
+  { value: 'fi', labelKey: 'language.finnish' },
+  { value: 'no', labelKey: 'language.norwegian' },
+  { value: 'cs', labelKey: 'language.czech' },
+  { value: 'el', labelKey: 'language.greek' },
+  { value: 'tr', labelKey: 'language.turkish' },
+  { value: 'hu', labelKey: 'language.hungarian' },
+  { value: 'ro', labelKey: 'language.romanian' },
+  { value: 'ja', labelKey: 'language.japanese' },
+  { value: 'hi', labelKey: 'language.hindi' },
+  { value: 'ar', labelKey: 'language.arabic' },
+  { value: 'ko', labelKey: 'language.korean' },
+  { value: 'th', labelKey: 'language.thai' },
+  { value: 'vi', labelKey: 'language.vietnamese' },
+  { value: 'id', labelKey: 'language.indonesian' },
+]
 
 interface Props {
   data: UserPreferences | undefined
@@ -39,6 +70,9 @@ interface Props {
 export function GeneralSettingsForm({ data, update }: Props) {
   const t = useTranslations('US_GENERAL')
   const t_common = useTranslations('COMMON')
+  const locale = useLocale()
+  const { push } = useRouter()
+  const pathname = usePathname()
 
   const today = new Date()
   const day = String(today.getDate()).padStart(2, '0')
@@ -67,6 +101,20 @@ export function GeneralSettingsForm({ data, update }: Props) {
     update(mapGeneralSettingsToApi(values))
   }
 
+  // When the user changes the language in the selector, save the
+  // preference AND immediately switch the UI locale via next-intl
+  // navigation. This updates the URL to /<locale>/... and reloads
+  // the page with the new language.
+  function handleLanguageChange(newLocale: string) {
+    // Update the form value
+    form.setValue('language', newLocale, { shouldDirty: true })
+    // Persist the preference to the backend
+    const currentValues = form.getValues()
+    update(mapGeneralSettingsToApi(currentValues))
+    // Switch the UI locale immediately
+    push(pathname, { locale: newLocale })
+  }
+
   const { isDirty, isSubmitting } = form.formState
 
   return (
@@ -87,20 +135,12 @@ export function GeneralSettingsForm({ data, update }: Props) {
                 <FormItem>
                   <FormLabel>{t('labels.language.string')}</FormLabel>
                   <SelectForm
-                    onValueChange={field.onChange}
-                    value={field.value ?? 'en'}
-                    options={[
-                      {
-                        value: 'en',
-                        label: t_common('language.english'),
-                        labelRight: '100%',
-                      },
-                      {
-                        value: 'fr',
-                        label: t_common('language.french'),
-                        labelRight: '10%',
-                      },
-                    ]}
+                    onValueChange={(v) => handleLanguageChange(v)}
+                    value={field.value ?? locale ?? 'en'}
+                    options={LANGUAGE_OPTIONS.map((opt) => ({
+                      value: opt.value,
+                      label: t_common(opt.labelKey),
+                    }))}
                   />
                   <FormMessage />
                   <FormDescription>
