@@ -1,9 +1,11 @@
-import React from 'react'
-import { useTranslations } from 'next-intl'
+'use client'
+
 import {
   useGetCalDavConnectionQuery,
   useGetCalDavSyncOverviewQuery,
 } from '@/features/caldav-sync/store/caldav-sync-api'
+import { useTranslations } from 'next-intl'
+import React from 'react'
 
 /**
  * CalDAV & Sync settings page (spec: caldav.spec.md).
@@ -30,21 +32,17 @@ const CalDavSyncSettings: React.FC = () => {
   const readyLabel = t('status.ready.string')
   const notDiscoverable = t('status.notDiscoverable.string')
 
-  const {
-    data: connection,
-    isLoading: loadingConnection,
-  } = useGetCalDavConnectionQuery()
-  const {
-    data: overview,
-    isLoading: loadingOverview,
-  } = useGetCalDavSyncOverviewQuery()
+  const { data: connection, isLoading: loadingConnection } =
+    useGetCalDavConnectionQuery()
+  const { data: overview, isLoading: loadingOverview } =
+    useGetCalDavSyncOverviewQuery()
 
   const loading = loadingConnection || loadingOverview
 
   return (
     <div data-testid="caldav-sync-settings">
       <h1 className="text-lg font-semibold">{title}</h1>
-      <p className="text-sm text-muted-foreground">{description}</p>
+      <p className="text-muted-foreground text-sm">{description}</p>
 
       {loading && <div data-testid="loading">…</div>}
 
@@ -56,7 +54,9 @@ const CalDavSyncSettings: React.FC = () => {
           </div>
           <div>
             <dt className="font-medium">{calendarHomeLabel}</dt>
-            <dd className="font-mono text-sm">{connection.calendar_home_path}</dd>
+            <dd className="font-mono text-sm">
+              {connection.calendar_home_path}
+            </dd>
           </div>
           <div>
             <dt className="font-medium">{davLabel}</dt>
@@ -64,7 +64,9 @@ const CalDavSyncSettings: React.FC = () => {
           </div>
           <div>
             <dt className="font-medium">{supportedLabel}</dt>
-            <dd className="text-sm">{connection.supported_components.join(', ')}</dd>
+            <dd className="text-sm">
+              {connection.supported_components.join(', ')}
+            </dd>
           </div>
         </dl>
       )}
@@ -74,9 +76,12 @@ const CalDavSyncSettings: React.FC = () => {
       {overview && overview.calendars.length > 0 && (
         <ul data-testid="calendar-sync-list" className="mt-2 space-y-2">
           {overview.calendars.map((cal) => (
-            <li key={cal.calendar_key} data-testid={`calendar-sync-${cal.calendar_key}`}>
+            <li
+              key={cal.calendar_key}
+              data-testid={`calendar-sync-${cal.calendar_key}`}
+            >
               <span className="font-medium">{cal.calendar_name}</span>
-              <span className="ml-2 text-xs text-muted-foreground">
+              <span className="text-muted-foreground ml-2 text-xs">
                 {eventCountLabel} {cal.event_count}
               </span>
               <span className="ml-2 text-xs">
