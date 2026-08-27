@@ -90,7 +90,7 @@ describe('AppSidebar Component', () => {
       render(<AppSidebar />)
 
       const header = screen.getByTestId('sidebar-header')
-      expect(header).toHaveClass('flex', 'h-29', 'rounded-br-2xl')
+      expect(header).toHaveClass('flex', 'min-h-[120px]', 'rounded-br-2xl')
     })
 
     it('should apply correct CSS classes to content', () => {

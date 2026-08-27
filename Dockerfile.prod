@@ -41,7 +41,9 @@ COPY --from=builder /build/.next/static /app/.next/static
 COPY --from=builder /build/public /app/public
 
 # Copy compiled messages (static JSON, no runtime fs needed)
-COPY --from=builder /build/src/compiled-messages /app/src/compiled-messages
+# The compile script (scripts/compile-messages.mjs) writes to
+# src/lib/i18n/compiled-messages/ — the path request.ts actually requires.
+COPY --from=builder /build/src/lib/i18n/compiled-messages /app/src/lib/i18n/compiled-messages
 
 # Copy package.json for version info
 COPY --from=builder /build/package.json /app/package.json
