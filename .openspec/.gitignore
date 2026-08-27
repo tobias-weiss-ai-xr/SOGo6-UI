@@ -1,6 +1,6 @@
-# OpenSpec files
-*.change.md
-*.spec.md
+# OpenSpec files are version-controlled (the parent SOGo6-dockerized repo's
+# openspec-validate workflow requires each submodule to ship project.spec.md,
+# specs/ and changes/). Only local scratch files are ignored.
 
 # Temporary files
 *.tmp
