@@ -9,6 +9,7 @@ import {
   apiDataToMailComposeDraft,
   buildForwardedBody,
   buildQuotedReplyBody,
+  prefixMailSubject,
   type ApiMailData,
 } from '@/features/mails/utils/mail-compose-from-api'
 
@@ -96,7 +97,11 @@ describe('apiDataToMailComposeDraft', () => {
       const draft = apiDataToMailComposeDraft('draft-1', {
         body: '<p>Direct body</p>',
         contents: [
-          { content: '<p>HTML</p>', contentType: 'text/html', shouldDisplayAttachment: false },
+          {
+            content: '<p>HTML</p>',
+            contentType: 'text/html',
+            shouldDisplayAttachment: false,
+          },
         ],
       })
 
@@ -106,8 +111,16 @@ describe('apiDataToMailComposeDraft', () => {
     it('falls back to the html content when body is missing', () => {
       const draft = apiDataToMailComposeDraft('draft-1', {
         contents: [
-          { content: 'Plain text', contentType: 'text/plain', shouldDisplayAttachment: false },
-          { content: '<p>HTML content</p>', contentType: 'text/html', shouldDisplayAttachment: false },
+          {
+            content: 'Plain text',
+            contentType: 'text/plain',
+            shouldDisplayAttachment: false,
+          },
+          {
+            content: '<p>HTML content</p>',
+            contentType: 'text/html',
+            shouldDisplayAttachment: false,
+          },
         ],
       })
 
@@ -117,7 +130,11 @@ describe('apiDataToMailComposeDraft', () => {
     it('falls back to the plain text content when no html content is present', () => {
       const draft = apiDataToMailComposeDraft('draft-1', {
         contents: [
-          { content: 'Plain text only', contentType: 'text/plain', shouldDisplayAttachment: false },
+          {
+            content: 'Plain text only',
+            contentType: 'text/plain',
+            shouldDisplayAttachment: false,
+          },
         ],
       })
 
@@ -139,7 +156,11 @@ describe('apiDataToMailComposeDraft', () => {
     it('returns an empty string when contents has neither html nor plain text', () => {
       const draft = apiDataToMailComposeDraft('draft-1', {
         contents: [
-          { content: 'invite', contentType: 'text/calendar', shouldDisplayAttachment: false },
+          {
+            content: 'invite',
+            contentType: 'text/calendar',
+            shouldDisplayAttachment: false,
+          },
         ],
       })
 
@@ -354,7 +375,9 @@ describe('buildForwardedBody', () => {
     expect(result).toContain(
       'From: &lt;script&gt;alert(1)&lt;/script&gt; &lt;evil@example.com&gt;'
     )
-    expect(result).toContain('Subject: &lt;b&gt;Hi&lt;/b&gt; &amp; &quot;quotes&quot;')
+    expect(result).toContain(
+      'Subject: &lt;b&gt;Hi&lt;/b&gt; &amp; &quot;quotes&quot;'
+    )
   })
 
   it('returns an empty To line when there are no recipients', () => {
@@ -388,12 +411,81 @@ describe('buildQuotedReplyBody', () => {
 
   it('escapes html special characters in the sender name', () => {
     const result = buildQuotedReplyBody(
-      { from: { name: '<script>alert(1)</script>', email: 'evil@example.com' }, date: mail.date },
+      {
+        from: { name: '<script>alert(1)</script>', email: 'evil@example.com' },
+        date: mail.date,
+      },
       ''
     )
 
     expect(result).toContain(
       '&lt;script&gt;alert(1)&lt;/script&gt; &lt;evil@example.com&gt;'
     )
+  })
+})
+
+describe('prefixMailSubject', () => {
+  describe('reply', () => {
+    it('prefixes a normal subject with RE:', () => {
+      expect(prefixMailSubject('Hello', 'reply')).toBe('RE: Hello')
+    })
+
+    it('does not double-prefix when subject already starts with RE:', () => {
+      expect(prefixMailSubject('RE: Hello', 'reply')).toBe('RE: Hello')
+    })
+
+    it('does not double-prefix when subject already starts with re:', () => {
+      expect(prefixMailSubject('re: Hello', 'reply')).toBe('re: Hello')
+    })
+
+    it('returns just RE: for empty subject', () => {
+      expect(prefixMailSubject('', 'reply')).toBe('RE:')
+    })
+
+    it('returns just RE: for null subject', () => {
+      expect(prefixMailSubject(null, 'reply')).toBe('RE:')
+    })
+
+    it('returns just RE: for undefined subject', () => {
+      expect(prefixMailSubject(undefined, 'reply')).toBe('RE:')
+    })
+
+    it('handles subject that is just spaces', () => {
+      expect(prefixMailSubject('   ', 'reply')).toBe('RE:    ')
+    })
+  })
+
+  describe('forward', () => {
+    it('prefixes a normal subject with FWD:', () => {
+      expect(prefixMailSubject('Hello', 'forward')).toBe('FWD: Hello')
+    })
+
+    it('strips existing FWD: prefix and re-adds it', () => {
+      expect(prefixMailSubject('FWD: Hello', 'forward')).toBe('FWD: Hello')
+    })
+
+    it('strips existing fwd: prefix (lowercase) and re-adds', () => {
+      expect(prefixMailSubject('fwd: Hello', 'forward')).toBe('FWD: Hello')
+    })
+
+    it('keeps RE: prefix intact when forwarding a replied message', () => {
+      expect(prefixMailSubject('RE: Hello', 'forward')).toBe('FWD: RE: Hello')
+    })
+
+    it('returns just FWD: for empty subject', () => {
+      expect(prefixMailSubject('', 'forward')).toBe('FWD:')
+    })
+
+    it('returns just FWD: for null subject', () => {
+      expect(prefixMailSubject(null, 'forward')).toBe('FWD:')
+    })
+
+    it('returns just FWD: for undefined subject', () => {
+      expect(prefixMailSubject(undefined, 'forward')).toBe('FWD:')
+    })
+
+    it('handles subject that is only a FWD: prefix with nothing after', () => {
+      expect(prefixMailSubject('FWD:', 'forward')).toBe('FWD:')
+    })
   })
 })

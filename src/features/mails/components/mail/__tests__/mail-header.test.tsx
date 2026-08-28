@@ -97,7 +97,7 @@ const createTestStore = () =>
       mailCompose: mailComposeReducer,
       [apiSlice.reducerPath]: apiSlice.reducer,
     },
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+
     middleware: (getDefaultMiddleware: any) =>
       getDefaultMiddleware().concat(apiSlice.middleware as never),
   })
@@ -286,7 +286,7 @@ describe('MailHeader', () => {
       to: [],
       cc: expected.cc,
       bcc: expected.bcc,
-      subject: expected.subject,
+      subject: `FWD: ${expected.subject}`,
       body: buildForwardedBody(mockMail, expected.body),
       attachments: expected.attachments,
       priority: expected.priority,
@@ -312,7 +312,7 @@ describe('MailHeader', () => {
 
     const draft = Object.values(selectAllDrafts(store.getState()))[0]!
 
-    expect(draft.subject).toBe('Edited subject')
+    expect(draft.subject).toBe('FWD: Edited subject')
     expect(draft.body).toBe(buildForwardedBody(editMail, '<p>Edited body</p>'))
   })
 
@@ -339,7 +339,7 @@ describe('MailHeader', () => {
       to: expected.to,
       cc: [],
       bcc: [],
-      subject: expected.subject,
+      subject: `RE: ${expected.subject}`,
       body: buildQuotedReplyBody(mockMail, expected.body),
     })
   })
@@ -368,7 +368,7 @@ describe('MailHeader', () => {
       to: expected.to,
       cc: expected.cc,
       bcc: [],
-      subject: expected.subject,
+      subject: `RE: ${expected.subject}`,
       body: buildQuotedReplyBody(mockMail, expected.body),
     })
   })
@@ -392,6 +392,8 @@ describe('MailHeader', () => {
     const draft = Object.values(selectAllDrafts(store.getState()))[0]!
 
     expect(draft.subject).toBe('Re: Original subject')
-    expect(draft.body).toBe(buildQuotedReplyBody(replyMail, '<p>Reply body</p>'))
+    expect(draft.body).toBe(
+      buildQuotedReplyBody(replyMail, '<p>Reply body</p>')
+    )
   })
 })

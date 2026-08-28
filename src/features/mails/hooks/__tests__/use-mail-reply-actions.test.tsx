@@ -12,8 +12,18 @@ const mockCreateDraft = jest.fn((payload: unknown) => ({
   payload,
 }))
 const mockApiDataToMailComposeDraft = jest.fn()
-const mockBuildForwardedBody = jest.fn((...args: any[]) => '<div>forwarded</div>')
-const mockBuildQuotedReplyBody = jest.fn((...args: any[]) => '<div>quoted</div>')
+const mockPrefixMailSubject = jest.fn((...args: any[]) => {
+  const subject = args[0]
+  const action = args[1]
+  if (action === 'reply') return `RE: ${subject}`
+  return `FWD: ${subject}`
+})
+const mockBuildForwardedBody = jest.fn(
+  (...args: any[]) => '<div>forwarded</div>'
+)
+const mockBuildQuotedReplyBody = jest.fn(
+  (...args: any[]) => '<div>quoted</div>'
+)
 
 jest.mock('@/lib/redux/hooks', () => ({
   useAppDispatch: jest.fn(() => mockDispatch),
@@ -26,14 +36,11 @@ jest.mock('@/features/mails/store', () => ({
 }))
 
 jest.mock('@/features/mails/utils/mail-compose-from-api', () => ({
-  apiDataToMailComposeDraft: // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  (...args: any[]) =>
+  apiDataToMailComposeDraft: (...args: any[]) =>
     mockApiDataToMailComposeDraft(...args),
-  buildForwardedBody: // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  (...args: any[]) => mockBuildForwardedBody(...args),
-  buildQuotedReplyBody: // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  (...args: any[]) =>
-    mockBuildQuotedReplyBody(...args),
+  prefixMailSubject: (...args: any[]) => mockPrefixMailSubject(...args),
+  buildForwardedBody: (...args: any[]) => mockBuildForwardedBody(...args),
+  buildQuotedReplyBody: (...args: any[]) => mockBuildQuotedReplyBody(...args),
 }))
 
 jest.mock('next-intl', () => ({
@@ -61,29 +68,32 @@ const mockMail: ImapMessages = {
 describe('useMailReplyActions', () => {
   beforeEach(() => {
     mockTriggerGetEditMessage.mockResolvedValue({
-      data: { subject: 'Fwd: Hello' },
+      data: { subject: 'Hello' },
     })
     mockTriggerGetReplyMessage.mockResolvedValue({
-      data: { subject: 'Re: Hello' },
+      data: { subject: 'Hello' },
     })
     mockApiDataToMailComposeDraft.mockReturnValue({
       draftId: 'draft-1',
       to: [{ email: 'alice@example.com' }],
       cc: [{ email: 'cc@example.com' }],
       bcc: [],
-      subject: 'Re: Hello',
+      subject: 'Hello',
       body: '<p>Hi</p>',
       attachments: [],
     })
+    mockPrefixMailSubject.mockClear()
   })
 
   describe('rightActions', () => {
     it('returns reply, reply-all and forward actions in order', () => {
       const { result } = renderHook(() => useMailReplyActions({}))
 
-      expect(result.current.rightActions.map((action) => action.id)).toEqual(
-        [ActionId.REPLY, ActionId.REPLY_ALL, ActionId.FORWARD]
-      )
+      expect(result.current.rightActions.map((action) => action.id)).toEqual([
+        ActionId.REPLY,
+        ActionId.REPLY_ALL,
+        ActionId.FORWARD,
+      ])
     })
   })
 
@@ -156,13 +166,15 @@ describe('useMailReplyActions', () => {
       })
       expect(mockApiDataToMailComposeDraft).toHaveBeenCalledWith(
         expect.any(String),
-        expect.objectContaining({ ...mockMail, subject: 'Fwd: Hello' })
+        expect.objectContaining({ ...mockMail, subject: 'Hello' })
       )
+      expect(mockPrefixMailSubject).toHaveBeenCalledWith('Hello', 'forward')
       expect(mockBuildForwardedBody).toHaveBeenCalled()
       expect(mockCreateDraft).toHaveBeenCalledWith(
         expect.objectContaining({
           forwardOf: '1',
           initialData: expect.objectContaining({
+            subject: 'FWD: Hello',
             to: [],
             body: '<div>forwarded</div>',
           }),
@@ -195,11 +207,13 @@ describe('useMailReplyActions', () => {
         mailId: '1',
         accountId: '0',
       })
+      expect(mockPrefixMailSubject).toHaveBeenCalledWith('Hello', 'reply')
       expect(mockBuildQuotedReplyBody).toHaveBeenCalled()
       expect(mockCreateDraft).toHaveBeenCalledWith(
         expect.objectContaining({
           inReplyTo: '1',
           initialData: expect.objectContaining({
+            subject: 'RE: Hello',
             cc: [],
             bcc: [],
             body: '<div>quoted</div>',
@@ -231,6 +245,7 @@ describe('useMailReplyActions', () => {
         expect.objectContaining({
           inReplyTo: '1',
           initialData: expect.objectContaining({
+            subject: 'RE: Hello',
             cc: [{ email: 'cc@example.com' }],
             bcc: [],
           }),
