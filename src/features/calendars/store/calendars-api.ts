@@ -772,16 +772,16 @@ const injectedEndpoints = apiSlice.injectEndpoints({
     /**
      * List all shares for a calendar.
      */
-    listShares: builder.query<
-      CalendarShare[],
-      string
-    >({
+    listShares: builder.query<CalendarShare[], string>({
       query: (key) => ({
         url: calendarSharesUrl(key),
         method: 'GET',
       }),
       transformResponse: (
-        response: ApiDataResponse<{ shares: CalendarShare[]; total_count: number }>,
+        response: ApiDataResponse<{
+          shares: CalendarShare[]
+          total_count: number
+        }>
       ) => response.data?.shares ?? [],
       providesTags: (result, error, key) => [
         { type: CALENDARS_SLICE, id: `shares:${key}` },
@@ -800,9 +800,8 @@ const injectedEndpoints = apiSlice.injectEndpoints({
         method: 'POST',
         body,
       }),
-      transformResponse: (
-        response: ApiDataResponse<CalendarShare>,
-      ) => response.data!,
+      transformResponse: (response: ApiDataResponse<CalendarShare>) =>
+        response.data!,
       invalidatesTags: (result, error, { key }) => [
         { type: CALENDARS_SLICE, id: `shares:${key}` },
         CALENDARS_SLICE,
@@ -812,10 +811,7 @@ const injectedEndpoints = apiSlice.injectEndpoints({
     /**
      * Remove a share from a calendar.
      */
-    removeShare: builder.mutation<
-      void,
-      { key: string; userUid: string }
-    >({
+    removeShare: builder.mutation<void, { key: string; userUid: string }>({
       query: ({ key, userUid }) => ({
         url: calendarShareUrl(key, userUid),
         method: 'DELETE',
@@ -824,6 +820,61 @@ const injectedEndpoints = apiSlice.injectEndpoints({
         { type: CALENDARS_SLICE, id: `shares:${key}` },
         CALENDARS_SLICE,
       ],
+    }),
+
+    /**
+     * Enqueue a background ICS export of a calendar (job-based).
+     */
+    exportCalendar: builder.mutation<
+      { job_id: string },
+      { key: string; startDate?: string; endDate?: string }
+    >({
+      query: ({ key, startDate, endDate }) => ({
+        url: `calendars/${encodeURIComponent(key)}/export`,
+        params: {
+          start_date_time: startDate || undefined,
+          end_date_time: endDate || undefined,
+        },
+      }),
+      transformResponse: (response: { data?: { job_id: string } }) => {
+        if (!response.data) {
+          throw new Error('Export response missing job_id')
+        }
+        return response.data
+      },
+    }),
+
+    /**
+     * Activate the public .ics subscription of a calendar.
+     */
+    enableSubscription: builder.mutation<
+      { share_token: string; public_url: string },
+      string
+    >({
+      query: (key) => ({
+        url: `calendars/${encodeURIComponent(key)}/subscription`,
+        method: 'POST',
+      }),
+      transformResponse: (response: {
+        data?: { share_token: string; public_url: string }
+      }) => {
+        if (!response.data) {
+          throw new Error('Subscription response missing data')
+        }
+        return response.data
+      },
+      invalidatesTags: [CALENDARS_SLICE],
+    }),
+
+    /**
+     * Revoke the public .ics subscription of a calendar.
+     */
+    disableSubscription: builder.mutation<void, string>({
+      query: (key) => ({
+        url: `calendars/${encodeURIComponent(key)}/subscription`,
+        method: 'DELETE',
+      }),
+      invalidatesTags: [CALENDARS_SLICE],
     }),
   }),
   overrideExisting: false,
@@ -855,6 +906,9 @@ export const {
   useListSharesQuery,
   useAddShareMutation,
   useRemoveShareMutation,
+  useExportCalendarMutation,
+  useEnableSubscriptionMutation,
+  useDisableSubscriptionMutation,
 } = injectedEndpoints
 
 export const calendarsApiEndpoints = injectedEndpoints

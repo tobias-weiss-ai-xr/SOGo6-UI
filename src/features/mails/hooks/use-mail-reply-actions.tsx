@@ -5,20 +5,21 @@ import type {
   RightActionsType,
 } from '@/features/mails/components/mail/types'
 import { ActionId } from '@/features/mails/components/mail/types'
-import type { ImapMessages, ImapFolderType } from '@/features/mails/mails-types'
-import {
-  isDraftFolderType,
-  isTemplateFolderType,
-} from '@/features/mails/utils/folder-type-helpers'
+import type { ImapMessages } from '@/features/mails/mails-types'
 import {
   createDraft,
   useLazyGetEditMessageQuery,
   useLazyGetReplyMessageQuery,
 } from '@/features/mails/store'
 import {
+  isDraftFolderType,
+  isTemplateFolderType,
+} from '@/features/mails/utils/folder-type-helpers'
+import {
   apiDataToMailComposeDraft,
   buildForwardedBody,
   buildQuotedReplyBody,
+  prefixMailSubject,
 } from '@/features/mails/utils/mail-compose-from-api'
 import { useAppDispatch } from '@/lib/redux/hooks'
 import { createClientId } from '@/lib/utils/create-client-id'
@@ -83,6 +84,7 @@ export function useMailReplyActions({
             forwardOf: mailId,
             initialData: {
               ...draftData,
+              subject: prefixMailSubject(mailData.subject, 'forward'),
               to: [],
               body: buildForwardedBody(mailData, draftData.body),
             },
@@ -109,6 +111,7 @@ export function useMailReplyActions({
             inReplyTo: mailId,
             initialData: {
               ...draftData,
+              subject: prefixMailSubject(mailData.subject, 'reply'),
               cc: action.id === ActionId.REPLY_ALL ? draftData.cc : [],
               bcc: [],
               body: buildQuotedReplyBody(mailData, draftData.body),

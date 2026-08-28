@@ -155,6 +155,33 @@ export function buildQuotedReplyBody(
   return header + quoted
 }
 
+const RE_PREFIX = /^RE:\s*/i
+const FWD_PREFIX = /^FWD?:\s*/i
+
+/**
+ * Prefix a subject line for a reply (RE:) or forward (FWD:).
+ * Avoids double-prefixing:
+ * - Reply: only adds "RE: " if the subject doesn't already start with "RE:".
+ * - Forward: always prepends "FWD: " (standard email clients add FWD even if RE: exists).
+ */
+export function prefixMailSubject(
+  subject: string | null | undefined,
+  action: 'reply' | 'forward'
+): string {
+  const s = subject ?? ''
+  if (s === '') {
+    return action === 'reply' ? 'RE:' : 'FWD:'
+  }
+
+  if (action === 'reply') {
+    return RE_PREFIX.test(s) ? s : `RE: ${s}`
+  }
+
+  // Forward: always prepend but strip any existing FWD:/FWD: prefix before re-adding
+  const stripped = s.replace(FWD_PREFIX, '').trim()
+  return stripped ? `FWD: ${stripped}` : 'FWD:'
+}
+
 export function apiDataToMailComposeDraft(
   draftId: string,
   data: ApiMailData
