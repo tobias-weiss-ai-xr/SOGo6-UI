@@ -2,6 +2,22 @@ import { fireEvent, render, screen } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import { FloatingCompose } from '../floating-compose'
 
+// Mock opencloud-api hooks before any component imports
+jest.mock('@/features/mails/store/opencloud-api', () => ({
+  useExchangeOpenCloudTokenMutation: jest.fn(() => [
+    jest.fn().mockResolvedValue({ data: { access_token: 'mock-token' } }),
+    { isLoading: false },
+  ]),
+  useBrowseOpenCloudFilesQuery: jest.fn(() => ({
+    data: { path: '/', files: [] },
+    isLoading: false,
+  })),
+  useSelectOpenCloudFileMutation: jest.fn(() => [
+    jest.fn(),
+    { isLoading: false },
+  ]),
+}))
+
 // Mock dependencies
 jest.mock('@/components/ui/button', () => ({
   Button: ({ children, onClick, ...props }: any) => (
@@ -44,7 +60,10 @@ jest.mock('@/features/mails/store/mail-api.ts', () => ({
     { isLoading: false },
   ]),
   useDeleteMailMutation: jest.fn(() => [jest.fn(), { isLoading: false }]),
-  useCancelPendingSendMutation: jest.fn(() => [jest.fn(), { isLoading: false }]),
+  useCancelPendingSendMutation: jest.fn(() => [
+    jest.fn(),
+    { isLoading: false },
+  ]),
 }))
 
 jest.mock('@/features/mails/store/mail-api.ts', () => ({
@@ -54,7 +73,10 @@ jest.mock('@/features/mails/store/mail-api.ts', () => ({
     { isLoading: false },
   ]),
   useDeleteMailMutation: jest.fn(() => [jest.fn(), { isLoading: false }]),
-  useCancelPendingSendMutation: jest.fn(() => [jest.fn(), { isLoading: false }]),
+  useCancelPendingSendMutation: jest.fn(() => [
+    jest.fn(),
+    { isLoading: false },
+  ]),
   useUploadAttachmentMutation: jest.fn(() => [jest.fn(), { isLoading: false }]),
   useDeleteAttachmentMutation: jest.fn(() => [jest.fn(), { isLoading: false }]),
   useLazyDownloadAttachmentQuery: jest.fn(() => [
@@ -153,7 +175,9 @@ describe('FloatingCompose Component', () => {
     ;(useSearchParams as unknown as jest.Mock).mockReturnValue(mockSearchParams)
     ;(usePathname as unknown as jest.Mock).mockReturnValue('/en/mails')
     ;(useLocale as unknown as jest.Mock).mockReturnValue('en')
-    ;(useTranslations as unknown as jest.Mock).mockReturnValue((key: string) => key)
+    ;(useTranslations as unknown as jest.Mock).mockReturnValue(
+      (key: string) => key
+    )
     ;(useIsMobile as unknown as jest.Mock).mockReturnValue(false)
     ;(useAppSelector as unknown as jest.Mock).mockImplementation(
       (selector: (s: any) => any) => selector(createMockState(true, false))

@@ -17,6 +17,12 @@ export interface MailComposeAttachment {
   uploadProgress?: number
   uploadStatus?: 'pending' | 'uploading' | 'completed' | 'error'
   errorMessage?: string
+  /** OpenCloud share URL for cloud-attached files */
+  share_url?: string
+  /** Source of cloud attachment (e.g., 'OpenCloud') */
+  cloud_source?: string
+  /** Action for cloud file (e.g., 'attach') */
+  cloud_action?: string
 }
 
 export interface MailComposeRecipient {
@@ -319,7 +325,10 @@ const mailComposeSlice = createSlice({
       }
     },
 
-    toggleEncryptMessage: (state, action: PayloadAction<{ draftId: string }>) => {
+    toggleEncryptMessage: (
+      state,
+      action: PayloadAction<{ draftId: string }>
+    ) => {
       const { draftId } = action.payload
       const draft = state.drafts[draftId]
       if (draft) {

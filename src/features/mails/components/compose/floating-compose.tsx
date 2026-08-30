@@ -1,9 +1,16 @@
 'use client'
 
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+} from '@/components/ui/dialog'
 import { useComposeAttachmentUpload } from '@/features/mails/hooks/use-compose-attachment-upload'
 import { useComposeDraftPersistence } from '@/features/mails/hooks/use-compose-draft-persistence'
 import { useComposeFloatingWindowState } from '@/features/mails/hooks/use-compose-floating-window-state'
 import { useComposeSend } from '@/features/mails/hooks/use-compose-send'
+import { useExchangeOpenCloudTokenMutation } from '@/features/mails/store/opencloud-api'
 import { useProfile } from '@/features/user-profile'
 import { useIsMobile } from '@/hooks/use-mobile'
 import { useAppDispatch, useAppSelector } from '@/lib/redux/hooks'
@@ -12,18 +19,25 @@ import { motion } from 'framer-motion'
 import { Paperclip } from 'lucide-react'
 import { useTranslations } from 'next-intl'
 import React from 'react'
+import { toast } from 'sonner'
 import { setActiveDraft } from '../../store'
 import { selectDraftData } from '../../store/mail-compose-selectors'
-import { setPendingInsert, setSendAt, updateSubject } from '../../store/mail-compose-slice'
+import {
+  addAttachment,
+  setPendingInsert,
+  setSendAt,
+  updateSubject,
+} from '../../store/mail-compose-slice'
 import { resolveComposeAccountId } from '../../utils/resolve-compose-account-id'
-import ComposeAttachmentList from './compose-attachment-list'
 import CustomEditor from './compose'
+import ComposeAttachmentList from './compose-attachment-list'
 import ComposeHeader from './compose-header'
 import ComposeSendAlerts from './compose-send-alerts'
 import ComposeToolbar from './compose-toolbar'
 import ComposeWindowHeader from './compose-window-header'
-import ScheduleSendPicker from './schedule-send-picker'
 import styles from './compose.module.css'
+import { OpenCloudPicker } from './opencloud-picker'
+import ScheduleSendPicker from './schedule-send-picker'
 
 interface FloatingComposeProps {
   draftId: string
@@ -77,7 +91,12 @@ export const FloatingCompose: React.FC<FloatingComposeProps> = ({
         externalAccounts,
         sharedMailboxAccounts
       ),
-    [selectedIdentity?.mail, mainAccount, externalAccounts, sharedMailboxAccounts]
+    [
+      selectedIdentity?.mail,
+      mainAccount,
+      externalAccounts,
+      sharedMailboxAccounts,
+    ]
   )
 
   const SOGO_D_MAIL_DRAFT_AUTOSAVE = uiSettings?.SOGO_D_MAIL_DRAFT_AUTOSAVE
@@ -147,6 +166,55 @@ export const FloatingCompose: React.FC<FloatingComposeProps> = ({
       : 5000,
     ...mailFields,
   })
+
+  const [openCloudPickerOpen, setOpenCloudPickerOpen] = React.useState(false)
+  const [openCloudAccessToken, setOpenCloudAccessToken] = React.useState<
+    string | null
+  >(null)
+  const [exchangeToken] = useExchangeOpenCloudTokenMutation()
+
+  // Open OpenCloud picker and exchange token
+  const handleOpenCloudAttachment = async () => {
+    try {
+      const result = await exchangeToken({
+        scopes: ['files.read', 'files.write'],
+      })
+      if ('data' in result && result.data?.access_token) {
+        setOpenCloudAccessToken(result.data.access_token)
+        setOpenCloudPickerOpen(true)
+      } else {
+        toast.error(t('opencloud_error.string'))
+      }
+    } catch {
+      toast.error(t('opencloud_error.string'))
+    }
+  }
+
+  // Handle OpenCloud file selection
+  const handleOpenCloudFileSelect = async (file: {
+    file_path: string
+    share_url: string
+    action: string
+  }) => {
+    dispatch(
+      addAttachment({
+        draftId,
+        attachment: {
+          draftId: crypto.randomUUID(),
+          name: file.file_path.split('/').pop() || file.file_path,
+          size: 0,
+          type: 'application/octet-stream',
+          share_url: file.share_url,
+          cloud_source: 'OpenCloud',
+          cloud_action: file.action,
+          uploadStatus: 'completed',
+        },
+      })
+    )
+    toast.success(t('opencloud.attached.string', { name: file.file_path }))
+    setOpenCloudPickerOpen(false)
+    setOpenCloudAccessToken(null)
+  }
 
   const handleInsertJitsi = () => {
     const meetId = Math.random().toString(36).substring(2, 10)
@@ -270,6 +338,7 @@ export const FloatingCompose: React.FC<FloatingComposeProps> = ({
             subject={subject}
             body={body}
             onInsertTemplate={handleInsertTemplate}
+            onOpenCloudAttachment={handleOpenCloudAttachment}
           />
         </>
       )}
@@ -292,6 +361,19 @@ export const FloatingCompose: React.FC<FloatingComposeProps> = ({
         }
         onConfirmSendAnyway={() => void handleConfirmSendAnyway()}
       />
+
+      {/* OpenCloud Picker dialog */}
+      <Dialog open={openCloudPickerOpen} onOpenChange={setOpenCloudPickerOpen}>
+        <DialogContent className="max-h-[80vh] max-w-4xl">
+          <DialogHeader>
+            <DialogTitle>{t('opencloud.string')}</DialogTitle>
+          </DialogHeader>
+          <OpenCloudPicker
+            accessToken={openCloudAccessToken || undefined}
+            onSelect={handleOpenCloudFileSelect}
+          />
+        </DialogContent>
+      </Dialog>
     </motion.div>
   )
 }

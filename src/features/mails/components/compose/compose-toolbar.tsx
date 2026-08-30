@@ -19,7 +19,7 @@ import {
 import { useAppDispatch } from '@/lib/redux/hooks'
 import { cn } from '@/lib/utils'
 import {
-  Bookmark,
+  Cloud,
   MoreHorizontalIcon,
   MoreVerticalIcon,
   Paperclip,
@@ -28,8 +28,6 @@ import {
 } from 'lucide-react'
 import { useTranslations } from 'next-intl'
 import React from 'react'
-import QuickReplyTemplates from './quick-reply-templates'
-import { SecurityOptions } from './security-options'
 import {
   MAIL_PRIORITY_HIGH,
   MAIL_PRIORITY_HIGHEST,
@@ -40,6 +38,8 @@ import {
   toggleReadReceipt,
   updatePriority,
 } from '../../store/mail-compose-slice'
+import QuickReplyTemplates from './quick-reply-templates'
+import { SecurityOptions } from './security-options'
 
 interface ComposeToolbarProps {
   draftId: string
@@ -61,6 +61,7 @@ interface ComposeToolbarProps {
   subject?: string
   body?: string
   onInsertTemplate: (subject: string, body: string) => void
+  onOpenCloudAttachment?: () => void
 }
 
 export function ComposeToolbar({
@@ -83,6 +84,7 @@ export function ComposeToolbar({
   subject,
   body,
   onInsertTemplate,
+  onOpenCloudAttachment,
 }: ComposeToolbarProps) {
   const t = useTranslations('COMPOSE')
   const dispatch = useAppDispatch()
@@ -108,6 +110,16 @@ export function ComposeToolbar({
           <Paperclip
             className={cn('h-5 w-5', isUploading && 'animate-pulse')}
           />
+        </Button>
+
+        <Button
+          variant="outline"
+          className="rounded"
+          size="sm"
+          title={t('from_cloud.string')}
+          onClick={onOpenCloudAttachment}
+        >
+          <Cloud className="h-5 w-5" />
         </Button>
 
         {jitsiEnabled && (

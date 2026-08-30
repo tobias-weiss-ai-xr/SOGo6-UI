@@ -209,6 +209,24 @@
         "string": "Add \"{email}\"",
         "context": "Add a typed email address directly as recipient"
       }
+    },
+    "opencloud": {
+      "from_cloud": {
+        "string": "From OpenCloud",
+        "context": "Option to attach files from OpenCloud in the compose toolbar"
+      },
+      "opencloud": {
+        "string": "OpenCloud",
+        "context": "Label for OpenCloud file picker"
+      },
+      "opencloud_error": {
+        "string": "Failed to attach from OpenCloud",
+        "context": "Error message when OpenCloud attachment fails"
+      },
+      "opencloudAttached": {
+        "string": "Attached from OpenCloud: {name}",
+        "context": "Success message when a file is attached from OpenCloud"
+      }
     }
   },
   "scheduleSend": {
