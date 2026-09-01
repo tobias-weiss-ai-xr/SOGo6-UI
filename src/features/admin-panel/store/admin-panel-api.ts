@@ -1538,12 +1538,12 @@ const injectedEndpoints = apiSlice.injectEndpoints({
       }>,
       void
     >({
-      query: () => ({ url: '/api/v1/calendar/polls', method: 'GET' }),
+      query: () => ({ url: '/api/admin/v1/calendar/polls', method: 'GET' }),
       providesTags: ['AdminPolls'],
     }),
     createSchedulingPoll: builder.mutation<any, any>({
       query: (body) => ({
-        url: '/api/v1/calendar/polls',
+        url: '/api/admin/v1/calendar/polls',
         method: 'POST',
         body,
       }),
@@ -1562,14 +1562,14 @@ const injectedEndpoints = apiSlice.injectEndpoints({
       void
     >({
       query: () => ({
-        url: '/api/v1/calendar/appointment-slots',
+        url: '/api/admin/v1/calendar/appointment-slots',
         method: 'GET',
       }),
       providesTags: ['AdminSlots'],
     }),
     createAppointmentSlot: builder.mutation<any, any>({
       query: (body) => ({
-        url: '/api/v1/calendar/appointment-slots',
+        url: '/api/admin/v1/calendar/appointment-slots',
         method: 'POST',
         body,
       }),
@@ -1586,7 +1586,7 @@ const injectedEndpoints = apiSlice.injectEndpoints({
       void
     >({
       query: () => ({
-        url: '/api/v1/calendar/appointment-slots/bookings',
+        url: '/api/admin/v1/calendar/appointment-slots/bookings',
         method: 'GET',
       }),
       providesTags: ['AdminSlots'],
@@ -1603,12 +1603,12 @@ const injectedEndpoints = apiSlice.injectEndpoints({
       }>,
       void
     >({
-      query: () => ({ url: '/api/v1/mail/shared-drafts', method: 'GET' }),
+      query: () => ({ url: '/api/admin/v1/mail/shared-drafts', method: 'GET' }),
       providesTags: ['AdminDrafts'],
     }),
     createSharedDraft: builder.mutation<any, any>({
       query: (body) => ({
-        url: '/api/v1/mail/shared-drafts',
+        url: '/api/admin/v1/mail/shared-drafts',
         method: 'POST',
         body,
       }),
@@ -1825,7 +1825,7 @@ const injectedEndpoints = apiSlice.injectEndpoints({
       { target_uids: string[]; start: string; end: string }
     >({
       query: (body) => ({
-        url: '/api/v1/calendar/freebusy',
+        url: '/api/admin/v1/calendar/freebusy',
         method: 'POST',
         body,
       }),

@@ -85,8 +85,8 @@ async function handleApiProxy(req: NextRequest): Promise<NextResponse | null> {
     return null;
   }
   
-  // Proxy to backend
-  const backendUrl = process.env.NEXT_PUBLIC_API_BASE_URL || 'http://localhost:5000';
+  // Proxy to backend - use internal env var, not exposed to browser
+  const backendUrl = process.env.API_BASE_URL || process.env.NEXT_PUBLIC_API_BASE_URL || 'http://localhost:5000';
   
   try {
     const apiPath = pathname.replace(/^\/api\/v1/, '');

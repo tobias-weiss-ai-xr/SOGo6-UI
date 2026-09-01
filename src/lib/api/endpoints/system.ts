@@ -144,7 +144,7 @@ export class SystemApi {
    */
   async getSystemParameters(): Promise<SystemParameters> {
     const response = await apiClient.get<BackendResponse<SystemParameters>>(
-      '/api/v1/system'
+      '/api/user/v1/system'
     );
     return apiClient.unwrapBackendResponse(response);
   }
@@ -155,7 +155,7 @@ export class SystemApi {
    */
   async ping(): Promise<{ pong: string; timestamp: number; uptime: number }> {
     const response = await apiClient.get<BackendResponse<{ pong: string; timestamp: number; uptime: number }>>(
-      '/api/v1/system/ping'
+      '/api/user/v1/system/ping'
     );
     return apiClient.unwrapBackendResponse(response);
   }
@@ -168,7 +168,7 @@ export class SystemApi {
     redirect?: string
   ): Promise<UserAuthMechanism> {
     const response = await apiClient.get<BackendResponse<UserAuthMechanism>>(
-      '/api/v1/system/auth-mech',
+      '/api/user/v1/system/auth-mech',
       { params: { username, redirect } }
     );
     return apiClient.unwrapBackendResponse(response);
@@ -179,7 +179,7 @@ export class SystemApi {
    */
   async getVersion(): Promise<VersionInfo> {
     const response = await apiClient.get<BackendResponse<VersionInfo>>(
-      '/api/v1/system/version'
+      '/api/user/v1/system/version'
     );
     return apiClient.unwrapBackendResponse(response);
   }
@@ -199,7 +199,7 @@ export class SystemApi {
       api_versions: string[];
       auth_methods: string[];
     }>>(
-      '/api/v1/system/capabilities'
+      '/api/user/v1/system/capabilities'
     );
     return apiClient.unwrapBackendResponse(response);
   }
@@ -237,7 +237,7 @@ export class SystemApi {
       order: number;
       config: Record<string, any>;
     }>>>(
-      '/api/v1/system/sso/providers'
+      '/api/user/v1/system/sso/providers'
     );
     return apiClient.unwrapBackendResponse(response);
   }
@@ -269,7 +269,7 @@ export class SystemApi {
       is_available: boolean;
       version: string;
     }>>(
-      '/api/v1/system/portal/config'
+      '/api/user/v1/system/portal/config'
     );
     return apiClient.unwrapBackendResponse(response);
   }

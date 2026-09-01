@@ -152,7 +152,7 @@ export class HealthApi {
    */
   async check(): Promise<HealthCheck> {
     const response = await apiClient.get<BackendResponse<HealthCheck>>(
-      '/api/v1/health'
+      '/api/user/v1/health'
     );
     return apiClient.unwrapBackendResponse(response);
   }
@@ -162,7 +162,7 @@ export class HealthApi {
    */
   async checkComponents(componentNames: string[]): Promise<ComponentHealth[]> {
     const response = await apiClient.get<BackendResponse<ComponentHealth[]>>(
-      '/api/v1/health/components',
+      '/api/user/v1/health/components',
       { params: { components: componentNames.join(',') } }
     );
     return apiClient.unwrapBackendResponse(response);
@@ -173,7 +173,7 @@ export class HealthApi {
    */
   async checkAllComponents(): Promise<ComponentHealth[]> {
     const response = await apiClient.get<BackendResponse<ComponentHealth[]>>(
-      '/api/v1/health/components'
+      '/api/user/v1/health/components'
     );
     return apiClient.unwrapBackendResponse(response);
   }
@@ -184,7 +184,7 @@ export class HealthApi {
    */
   async readiness(): Promise<ReadinessCheck> {
     const response = await apiClient.get<BackendResponse<ReadinessCheck>>(
-      '/api/v1/health/ready'
+      '/api/user/v1/health/ready'
     );
     return apiClient.unwrapBackendResponse(response);
   }
@@ -195,7 +195,7 @@ export class HealthApi {
    */
   async liveness(): Promise<LivenessCheck> {
     const response = await apiClient.get<BackendResponse<LivenessCheck>>(
-      '/api/v1/health/live'
+      '/api/user/v1/health/live'
     );
     return apiClient.unwrapBackendResponse(response);
   }
@@ -205,7 +205,7 @@ export class HealthApi {
    */
   async ping(): Promise<PingResponse> {
     const response = await apiClient.get<BackendResponse<PingResponse>>(
-      '/api/v1/health/ping'
+      '/api/user/v1/health/ping'
     );
     return apiClient.unwrapBackendResponse(response);
   }
@@ -215,7 +215,7 @@ export class HealthApi {
    */
   async getMetrics(): Promise<SystemMetrics> {
     const response = await apiClient.get<BackendResponse<SystemMetrics>>(
-      '/api/v1/health/metrics'
+      '/api/user/v1/health/metrics'
     );
     return apiClient.unwrapBackendResponse(response);
   }
@@ -251,7 +251,7 @@ export class HealthApi {
       connection_count: number;
       max_connections: number;
     }>>(
-      '/api/v1/health/database'
+      '/api/user/v1/health/database'
     );
     return apiClient.unwrapBackendResponse(response);
   }
@@ -275,7 +275,7 @@ export class HealthApi {
       memory_used_mb: number;
       keys: number;
     }>>(
-      '/api/v1/health/cache'
+      '/api/user/v1/health/cache'
     );
     return apiClient.unwrapBackendResponse(response);
   }
@@ -323,7 +323,7 @@ export class HealthApi {
       duration_ms: number;
       details: Record<string, any>;
     }>>(
-      '/api/v1/health/check',
+      '/api/user/v1/health/check',
       { check: checkName }
     );
     return apiClient.unwrapBackendResponse(response);
@@ -362,7 +362,7 @@ export class HealthApi {
       }>;
       total: number;
     }>>(
-      '/api/v1/health/history',
+      '/api/user/v1/health/history',
       { params: params as unknown as Record<string, string> }
     );
     return apiClient.unwrapBackendResponse(response);
@@ -373,7 +373,7 @@ export class HealthApi {
    */
   async resetCache(): Promise<{ success: boolean; message: string }> {
     const response = await apiClient.post<BackendResponse<{ success: boolean; message: string }>>(
-      '/api/v1/health/cache/reset'
+      '/api/user/v1/health/cache/reset'
     );
     return apiClient.unwrapBackendResponse(response);
   }
@@ -397,7 +397,7 @@ export class HealthApi {
       restarts: number;
       longest_uptime: number;
     }>>(
-      '/api/v1/health/uptime'
+      '/api/user/v1/health/uptime'
     );
     return apiClient.unwrapBackendResponse(response);
   }
