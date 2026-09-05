@@ -31,13 +31,45 @@ jest.mock('@/lib/i18n/navigation', () => ({
   ),
 }))
 
+// Control env vars + auth/mode from within each test
+const mockAuthMode = jest.fn()
+const mockRedirectTo = jest.fn()
+let mockEnvVars: Record<string, unknown> = {}
+export const setMockEnvVars = (v: Record<string, unknown>) => {
+  mockEnvVars = v
+}
+
+export const getMockAuthMode = () => mockAuthMode
+
+export const getMockRedirectTo = () => mockRedirectTo
+
+export const setMockAuthModeResult = (val: unknown) => {
+  mockAuthMode.mockImplementation(() => ({
+    unwrap: () => Promise.resolve(val),
+  }))
+}
+
+export const setMockAuthModeError = () => {
+  mockAuthMode.mockImplementation(() => ({
+    unwrap: () => Promise.reject(new Error('auth mode failed')),
+  }))
+}
+
+jest.mock('@/lib/env-service', () => ({
+  useEnvVars: () => ({ envVars: mockEnvVars }),
+}))
+
+jest.mock('@/lib/navigation', () => ({
+  redirectTo: (...args: unknown[]) => mockRedirectTo(...args),
+}))
+
 jest.mock('@/features/auth/components/store/auth.api', () => ({
   useGetSystemQuery: () => ({
     data: { data: { system: { SOGO_S_DIRECT_LOGIN: false } } },
     isLoading: false,
     isError: false,
   }),
-  useLazyGetAuthModeQuery: () => [jest.fn()],
+  useLazyGetAuthModeQuery: () => [mockAuthMode, { isLoading: false }],
   useWebauthnBeginLoginMutation: () => [jest.fn(), { isLoading: false }],
   useWebauthnCompleteLoginMutation: () => [jest.fn(), { isLoading: false }],
   useLoginMutation: () => [jest.fn(), { isLoading: false }],
@@ -95,5 +127,75 @@ describe('LoginForm - Step 1 (Email + Language)', () => {
     render(<LoginForm />)
     const languageLabel = screen.getByText(/language.label.string/i)
     expect(languageLabel).toBeInTheDocument()
+  })
+})
+
+describe('LoginForm - Auto SSO redirect', () => {
+  beforeEach(() => {
+    jest.clearAllMocks()
+    mockAuthMode.mockReset()
+    mockRedirectTo.mockReset()
+    setMockEnvVars({})
+  })
+
+  it('does NOT auto-redirect when SSO_AUTO_REDIRECT is off', async () => {
+    setMockEnvVars({ SSO_AUTO_REDIRECT: false })
+    render(<LoginForm />)
+    await new Promise((r) => setTimeout(r, 50))
+    expect(mockAuthMode).not.toHaveBeenCalled()
+    expect(mockRedirectTo).not.toHaveBeenCalled()
+  })
+
+  it('auto-redirects to the SSO location when auth mode is sso', async () => {
+    setMockEnvVars({
+      SSO_AUTO_REDIRECT: true,
+      SSO_AUTO_REDIRECT_USERNAME: 'sso@home.opendesk-edu.org',
+    })
+    setMockAuthModeResult({
+      data: {
+        kind: 'sso',
+        location:
+          'https://id.home.opendesk-edu.org/realms/opendesk/protocol/openid-connect/auth?...',
+      },
+    })
+    render(<LoginForm />)
+    await new Promise((r) => setTimeout(r, 50))
+    expect(mockAuthMode).toHaveBeenCalledWith({
+      username: 'sso@home.opendesk-edu.org',
+    })
+    expect(mockRedirectTo).toHaveBeenCalledWith(
+      expect.stringContaining('id.home.opendesk-edu.org')
+    )
+  })
+
+  it('falls back to email form when auth mode is NOT sso', async () => {
+    setMockEnvVars({
+      SSO_AUTO_REDIRECT: true,
+      SSO_AUTO_REDIRECT_USERNAME: 'sso@home.opendesk-edu.org',
+    })
+    setMockAuthModeResult({
+      data: {
+        kind: 'plain',
+        location: '',
+      },
+    })
+    render(<LoginForm />)
+    await new Promise((r) => setTimeout(r, 50))
+    expect(mockAuthMode).toHaveBeenCalledTimes(1)
+    expect(mockRedirectTo).not.toHaveBeenCalled()
+    expect(screen.getByLabelText(/email.label.string/i)).toBeInTheDocument()
+  })
+
+  it('falls back to email form when auth/mode request errors', async () => {
+    setMockEnvVars({
+      SSO_AUTO_REDIRECT: true,
+      SSO_AUTO_REDIRECT_USERNAME: 'sso@home.opendesk-edu.org',
+    })
+    setMockAuthModeError()
+    render(<LoginForm />)
+    await new Promise((r) => setTimeout(r, 50))
+    expect(mockAuthMode).toHaveBeenCalledTimes(1)
+    expect(mockRedirectTo).not.toHaveBeenCalled()
+    expect(screen.getByLabelText(/email.label.string/i)).toBeInTheDocument()
   })
 })

@@ -47,4 +47,30 @@ describe('buildEnvRoutePayload', () => {
     })
     expect(payload.SSE_ENABLED).toBe(false)
   })
+
+  it('SSO_AUTO_REDIRECT is false and username empty by default', () => {
+    const payload = buildEnvRoutePayload({ NODE_ENV: 'production' })
+    expect(payload.SSO_AUTO_REDIRECT).toBe(false)
+    expect(payload.SSO_AUTO_REDIRECT_USERNAME).toBe('')
+  })
+
+  it('honors SSO_AUTO_REDIRECT=true with explicit username', () => {
+    const payload = buildEnvRoutePayload({
+      NODE_ENV: 'production',
+      SSO_AUTO_REDIRECT: 'true',
+      SSO_AUTO_REDIRECT_USERNAME: 'sso@example.org',
+    })
+    expect(payload.SSO_AUTO_REDIRECT).toBe(true)
+    expect(payload.SSO_AUTO_REDIRECT_USERNAME).toBe('sso@example.org')
+  })
+
+  it('derives sso@<domain> from SOGO_DOMAIN when only domain is set', () => {
+    const payload = buildEnvRoutePayload({
+      NODE_ENV: 'production',
+      SSO_AUTO_REDIRECT: 'true',
+      SOGO_DOMAIN: 'home.opendesk-edu.org',
+    })
+    expect(payload.SSO_AUTO_REDIRECT).toBe(true)
+    expect(payload.SSO_AUTO_REDIRECT_USERNAME).toBe('sso@home.opendesk-edu.org')
+  })
 })

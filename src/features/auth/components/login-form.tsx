@@ -18,6 +18,7 @@ import { WebauthnLoginDialog } from '@/features/auth/webauthn-login-dialog'
 import { useEnvVars } from '@/lib/env-service'
 import { getLocales } from '@/lib/i18n/config'
 import { usePathname, useRouter } from '@/lib/i18n/navigation'
+import { redirectTo } from '@/lib/navigation'
 import { getErrorMessage } from '@/lib/redux/api/error-handlers'
 import { cn } from '@/lib/utils'
 import { zodResolver } from '@hookform/resolvers/zod'
@@ -130,6 +131,39 @@ export function LoginForm({
       push('/auth/login/pwd')
     }
   }, [systemData, push])
+
+  // Auto-SSO: when the deployment is SSO-only (SSO_AUTO_REDIRECT), skip the
+  // email form entirely and bounce straight to the IdP. The username passed to
+  // /api/user/v1/auth/mode is synthetic (`sso@<domain>`) — only its domain part
+  // is used to build the OIDC authorization URL; the server keys the PKCE state
+  // in Redis by the returned `state` token, not by the username.
+  React.useEffect(() => {
+    if (!envVars?.SSO_AUTO_REDIRECT) return
+    const autoUsername = envVars.SSO_AUTO_REDIRECT_USERNAME?.trim()
+    if (!autoUsername) return
+
+    let cancelled = false
+
+    getAuthMode({ username: autoUsername })
+      .unwrap()
+      .then((result) => {
+        if (cancelled) return
+        const { kind, location } = result.data
+        if (kind === 'sso' && location) {
+          redirectTo(location)
+        }
+        // If auth mode is NOT sso (plain/ldap), fall through to the normal
+        // email form — the deployment is not actually SSO-only.
+      })
+      .catch(() => {
+        // auth/mode failed (e.g. domain not configured) — fall back to the
+        // regular email step so the user can still log in.
+      })
+
+    return () => {
+      cancelled = true
+    }
+  }, [envVars, getAuthMode])
 
   const handleLocaleChange = (newLocale: string) => {
     // usePathname() returns the path WITHOUT locale prefix.

@@ -9,6 +9,10 @@ export interface EnvVariables {
   LOGIN_PREFILL_EMAIL?: string
   /** Runtime prefill for /auth/login/pwd (from LOGIN_PREFILL_PASSWORD or legacy NEXT_PUBLIC_* on server). Dev only. */
   LOGIN_PREFILL_PASSWORD?: string
+  /** When true, /auth/login auto-redirects to the configured SSO provider (skips the email form). */
+  SSO_AUTO_REDIRECT?: boolean
+  /** Synthetic username (`sso@<domain>`) for GET /api/user/v1/auth/mode to obtain the SSO auth URL. */
+  SSO_AUTO_REDIRECT_USERNAME?: string
 }
 
 let envCache: EnvVariables | null = null
