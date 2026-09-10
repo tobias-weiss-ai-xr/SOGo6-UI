@@ -9,14 +9,17 @@
 'use client'
 
 import { useEffect } from 'react'
-// This import ensures the mails endpoints are registered
+// This import ensures the mails endpoints are registered and gives the
+// typed, endpoint-enhanced api slice used for cache updates below.
 import type { ImapMessagesList } from '@/features/mails/mails-types'
-import '@/features/mails/store/mails-api'
+import type { MailListQueryParams } from '@/features/mails/store/mails-api'
+import { mailsApiEndpoints } from '@/features/mails/store/mails-api'
+import { logger } from '@/lib/logger'
+import { ThunkDispatch } from '@reduxjs/toolkit'
 import { apiSlice } from '../../api/api-slice'
 import { useAppDispatch } from '../../hooks'
 import type { AppDispatch, RootState } from '../../store'
 import { getSSEServiceInstance } from '../sse-api'
-import { logger } from '@/lib/logger'
 
 // Singleton registry: track all active listener registrations
 // This prevents duplicate SSE subscriptions while supporting multiple folders
@@ -29,7 +32,9 @@ interface ListenerRegistration {
 }
 
 const listenerRegistry: ListenerRegistration[] = []
-let activeHandler: ((message: { type: string; data?: Record<string, unknown> }) => void) | null = null
+let activeHandler:
+  | ((message: { type: string; data?: Record<string, unknown> }) => void)
+  | null = null
 // The single active SSE subscription. Tracked at module level so ANY
 // registration's cleanup can tear it down when the registry empties — a
 // later mount's cleanup closure would otherwise see `undefined` (only the
@@ -181,37 +186,47 @@ function updateMailsCache(
     // where `params` includes list defaults (page_size, fields, ...). Passing a
     // hand-built arg (e.g. with `params: undefined`) never matches, so we walk
     // every cached arg of the endpoint and update only the matching folders.
-    dispatch((_dispatchThunk, getState) => {
-      const queryState = (getState() as RootState)[apiSlice.reducerPath]?.queries
+    dispatch(((
+      thunkDispatch: ThunkDispatch<RootState, unknown, never>,
+      getState: () => RootState
+    ) => {
+      const queryState = getState()[apiSlice.reducerPath]?.queries
       if (!queryState) return
 
       for (const cacheKey of Object.keys(queryState)) {
         const entry = queryState[cacheKey]
         const originalArgs = entry?.originalArgs as
           | {
-              folder?: string
-              accountId?: string | number
-              params?: Record<string, string | number | boolean>
+              folder: string
+              accountId?: string
+              params?: MailListQueryParams &
+                Record<string, string | number | boolean>
             }
           | undefined
         if (!entry || entry.endpointName !== 'getFolderMessages') continue
         // Only touch cache entries for the folder this registration belongs to.
         if (originalArgs?.folder !== folder) continue
-        if (String(originalArgs?.accountId ?? '0') !== String(accountId)) continue
+        if (String(originalArgs?.accountId ?? '0') !== String(accountId))
+          continue
 
-        _dispatchThunk(
-          apiSlice.util.updateQueryData('getFolderMessages', originalArgs as never, (draft) => {
-            // The folder-messages cache is normalized to `{ mails, total, ... }`.
-            if (!draft?.mails) return
-            if (draft.mails.some((m) => String(m.id) === String(newMail.id))) return
-            draft.mails.unshift(newMail)
-            if (typeof draft.total === 'number') {
-              draft.total += 1
+        thunkDispatch(
+          mailsApiEndpoints.util.updateQueryData(
+            'getFolderMessages',
+            originalArgs,
+            (draft) => {
+              // The folder-messages cache is normalized to `{ mails, total, ... }`.
+              if (!draft?.mails) return
+              if (draft.mails.some((m) => String(m.id) === String(newMail.id)))
+                return
+              draft.mails.unshift(newMail)
+              if (typeof draft.total === 'number') {
+                draft.total += 1
+              }
             }
-          }) as Parameters<AppDispatch>[0]
+          )
         )
       }
-    })
+    }) as unknown as Parameters<AppDispatch>[0])
   } catch (error) {
     logger.error('Error updating mails cache:', { error: error })
   }
