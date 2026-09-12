@@ -83,6 +83,7 @@ export default async function RootLayout({
           themes={[
             'light',
             'dark',
+            'sogo5-classic',
             'dyslexia',
             'tritanopia',
             'deuteranopia',

@@ -20,6 +20,7 @@ function makeGeneralSettings(overrides = {}): GeneralSettings {
     shortDateStyle: '%m/%d/%Y',
     longDateStyle: '%A, %B %e, %Y',
     timeStyle: '24',
+    theme: 'default',
     defaultView: 'mail',
     enableNotifications: true,
     avatarEnabled: false,
@@ -95,8 +96,8 @@ describe('user-preferences-types runtime shape validation', () => {
   // ── GeneralSettings ───────────────────────────────────────────────────────
 
   describe('GeneralSettings', () => {
-    it('constructs with all 9 required fields', () => {
-      expect(Object.keys(makeGeneralSettings())).toHaveLength(9)
+    it('constructs with all 10 required fields', () => {
+      expect(Object.keys(makeGeneralSettings())).toHaveLength(10)
     })
 
     it('all string fields are strings at runtime', () => {

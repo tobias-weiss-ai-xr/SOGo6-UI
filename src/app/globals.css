@@ -331,6 +331,65 @@
     --sidebar-border: 220 13% 40%;
     --sidebar-ring: 220 80% 60%;
   }
+
+  /*
+   * SOGo 5 Classic — recognizable SOGo 5 default look (light-only).
+   * Tokens sampled from SOGo 5.12 theme-default.css:
+   * primary #4D8080, hover #8EBFBB, accent #B2D6D3, calendar-selected #A1CCC8,
+   * body #fafafa, surfaces #fff, borders #e0e0e0, text rgba(0,0,0,.87)/.54.
+   */
+  .sogo5-classic {
+    --background: 0 0% 98%;
+    --foreground: 0 0% 13%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 13%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 13%;
+
+    --primary: 180 25% 40%; /* #4D8080 classic SOGo teal */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 0 0% 96%;
+    --secondary-foreground: 0 0% 13%;
+
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 46%; /* rgba(0,0,0,.54) on white */
+
+    --accent: 180 31% 79%; /* #B2D6D3 light teal hover */
+    --accent-foreground: 0 0% 13%;
+
+    --destructive: 0 70% 45%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 88%; /* #e0e0e0 */
+    --input: 0 0% 88%;
+    --ring: 180 25% 40%;
+
+    --chart-1: 180 25% 40%;
+    --chart-2: 104 43% 44%; /* #56B04C SOGo accent green */
+    --chart-3: 180 31% 64%; /* #A1CCC8 calendar selection */
+    --chart-4: 180 19% 60%; /* #8EBFBB */
+    --chart-5: 0 70% 45%;
+
+    /* Material 2px radii */
+    --radius: 0.125rem;
+
+    /* White sidenav (SOGo5), teal toolbar */
+    --sidebar-background: 0 0% 100%;
+    --sidebar-background-secondary: 0 0% 96%;
+    --sidebar-foreground: 0 0% 13%;
+    --sidebar-foreground-secondary: 0 0% 46%;
+    --sidebar-muted-foreground-secondary: 0 0% 62%;
+    --sidebar-primary: 180 25% 40%;
+    --sidebar-accent: 180 31% 79%;
+    --sidebar-accent-foreground: 0 0% 13%;
+    --sidebar-border: 0 0% 88%;
+    --sidebar-ring: 180 25% 40%;
+
+    --header-background: 180 25% 40%; /* SOGo5 teal module toolbar */
+    --header-foreground: 0 0% 100%;
+    --header-muted-foreground: 180 31% 79%;
+  }
 }
 
 @layer base {
@@ -520,4 +579,18 @@ button + button,
 input + input,
 [role="button"] + [role="button"] {
   margin: 4px;
+}
+
+/* ─── SOGo 5 Classic extras ────────────────────────────────────────────
+   Outside @layer base so it wins over Tailwind utilities. Material
+   conventions: Roboto-first type, uppercase 500-weight text buttons,
+   2px radii come from the token block. Icon-only buttons unaffected. */
+.sogo5-classic {
+  font-family: Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+.sogo5-classic button:not([data-classic-plain]) {
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 0.02em;
 }

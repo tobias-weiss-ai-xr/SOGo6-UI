@@ -26,6 +26,7 @@ function makeUserGeneral(overrides = {}): UserGeneral {
     SOGO_U_FIRST_MODULE: 'mail',
     SOGO_U_BROWSER_NOTIF: true,
     SOGO_U_EXT_AVATAR_ENABLED: false,
+    SOGO_U_THEME: 'default',
     SOGO_U_LONG_DATE: '%A, %B %e, %Y',
     SOGO_U_SHORT_DATE: '%m/%d/%Y',
     SOGO_U_TIMEZONE: 'Europe/Paris',
@@ -129,8 +130,8 @@ describe('user-preferences-api-types runtime shape validation', () => {
       expect(typeof obj.SOGO_U_TIMEZONE).toBe('string')
     })
 
-    it('has exactly 9 keys', () => {
-      expect(Object.keys(makeUserGeneral())).toHaveLength(9)
+    it('has exactly 10 keys', () => {
+      expect(Object.keys(makeUserGeneral())).toHaveLength(10)
     })
 
     it('accepts true and false for boolean fields', () => {

@@ -2,9 +2,9 @@ import type {
   UserGeneral,
   UserPreferences,
 } from '@/features/user-settings/store/user-preferences-api-types'
+import { PP_DEFAULT } from '@/features/user-settings/store/user-preferences-api-types'
 import { GeneralSettings } from '../../store/user-preferences-types'
 import { DateFormats } from '../../utils'
-import { PP_DEFAULT } from '@/features/user-settings/store/user-preferences-api-types'
 
 export function mapGeneralSettingsToApi(
   values: Omit<GeneralSettings, 'profilePictureSource'> & {
@@ -17,6 +17,7 @@ export function mapGeneralSettingsToApi(
     SOGO_U_FIRST_MODULE: values.defaultView,
     SOGO_U_BROWSER_NOTIF: values.enableNotifications,
     SOGO_U_EXT_AVATAR_ENABLED: values.avatarEnabled,
+    SOGO_U_THEME: values.theme,
     // The general form doesn't manage the picture source — preserve the
     // existing value instead of wiping it with undefined.
     SOGO_U_PROFILE_PICTURE: values.profilePictureSource ?? PP_DEFAULT,
@@ -42,5 +43,6 @@ export function mapApiToGeneralSettings(
     shortDateStyle:
       data.USER_GENERAL.SOGO_U_SHORT_DATE || DateFormats.DD_MMM_YY,
     timezone: data.USER_GENERAL.SOGO_U_TIMEZONE || 'UTC',
+    theme: data.USER_GENERAL.SOGO_U_THEME || 'default',
   }
 }

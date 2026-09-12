@@ -1,23 +1,23 @@
 'use client'
 
 import AppHeader from '@/components/app-header'
-import MobileCreateFab from '@/components/mobile-create-fab'
-import { useAppSelector } from '@/lib/redux/hooks'
-import { useRouter } from 'next/navigation'
+import { ClassicThemeSync } from '@/components/classic-theme-sync'
 import { DemoWarningToast } from '@/components/demo-warning-toast'
+import MobileCreateFab from '@/components/mobile-create-fab'
 import { AppSidebar } from '@/components/sidebar/app-sidebar'
 import { SidebarInset, SidebarProvider } from '@/components/ui/sidebar'
 import ContactFormHost from '@/features/address_books/components/contact-form-host'
 import DistributionListFormHost from '@/features/address_books/components/distribution-list-form-host'
 import { useAddressBookDragEnd } from '@/features/address_books/hooks/use-address-book-drag-end'
 import FloatingComposeContainer from '@/features/mails/components/compose/floating-compose-container'
-import GlobalQuickSearch from '@/features/search/components/GlobalQuickSearch'
 import {
   NotificationProvider,
   NotificationToaster,
 } from '@/features/notifications'
+import GlobalQuickSearch from '@/features/search/components/GlobalQuickSearch'
 import { useGetUserProfileQuery } from '@/features/user-profile'
 import { fetchEnvVars } from '@/lib/env-service'
+import { useAppSelector } from '@/lib/redux/hooks'
 import {
   getSSEConfigForEnvironment,
   useConnectSSEMutation,
@@ -32,6 +32,7 @@ import {
 } from '@dnd-kit/core'
 import { snapCenterToCursor } from '@dnd-kit/modifiers'
 import { Contact2 } from 'lucide-react'
+import { useRouter } from 'next/navigation'
 import React, { startTransition, useEffect, useState } from 'react'
 import ReactDOM from 'react-dom'
 
@@ -97,6 +98,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <>
       <ProfilePrefetch />
+      <ClassicThemeSync />
       <DemoWarningToast />
       <NotificationToaster />
       <NotificationProvider />

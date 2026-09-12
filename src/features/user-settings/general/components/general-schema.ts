@@ -17,6 +17,7 @@ const schema = z.object({
   defaultView: z.string(),
   enableNotifications: z.boolean(),
   avatarEnabled: z.boolean(),
+  theme: z.enum(['default', 'sogo5-classic']),
 }) satisfies GeneralSettingsSchema
 
 export { schema }
