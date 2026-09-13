@@ -1,67 +1,11 @@
 'use client'
 
-import { useProfile } from '@/features/user-profile'
-import { useIsMobile } from '@/hooks/use-mobile'
-import { useAppDispatch, useAppSelector } from '@/lib/redux/hooks'
-import { createClientId } from '@/lib/utils/create-client-id'
-import React from 'react'
+import { useAppSelector } from '@/lib/redux/hooks'
 import { selectOpenDraftIds } from '../../store'
-import { useLazyGetCurrentDraftsQuery } from '../../store/mail-api'
-import { createDraft } from '../../store/mail-compose-slice'
-import { useLazyGetMailQuery } from '../../store/mails-api'
-import { apiDataToMailComposeDraft } from '../../utils/mail-compose-from-api'
-import { FOLDERS_NAME } from '../constants'
 import FloatingCompose from './floating-compose'
 
 const FloatingComposeContainer = () => {
-  const dispatch = useAppDispatch()
   const openDraftIds = useAppSelector(selectOpenDraftIds)
-  const { mainAccount } = useProfile()
-  const [triggerGetCurrentDrafts] = useLazyGetCurrentDraftsQuery()
-  const isMobile = useIsMobile()
-
-  const [triggerGetMail] = useLazyGetMailQuery()
-  const hasInitialized = React.useRef(false)
-
-  React.useEffect(() => {
-    if (!mainAccount?.id || hasInitialized.current || isMobile) return
-
-    const accountId = String(mainAccount.id)
-
-    const initDrafts = async () => {
-      if (accountId) {
-        const result = await triggerGetCurrentDrafts({ accountId })
-        if (!result.data?.data?.length) return
-
-        for (const item of result.data.data) {
-          const draftId = createClientId()
-          const editResult = await triggerGetMail({
-            folder: FOLDERS_NAME.DRAFT,
-            mailId: item.mail_server_uid,
-            accountId,
-          })
-          if (editResult.data) {
-            dispatch(
-              createDraft({
-                draftId,
-                initialData: apiDataToMailComposeDraft(draftId, {
-                  ...editResult.data,
-                  key: item.key,
-                }),
-              })
-            )
-          }
-        }
-      }
-    }
-
-    const timer = window.setTimeout(() => {
-      hasInitialized.current = true
-      void initDrafts()
-    }, 2000)
-
-    return () => window.clearTimeout(timer)
-  }, [dispatch, isMobile, mainAccount?.id, triggerGetCurrentDrafts, triggerGetMail])
 
   if (openDraftIds.length === 0) {
     return null
