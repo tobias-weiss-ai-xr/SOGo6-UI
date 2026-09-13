@@ -52,7 +52,7 @@ export function ThemeSwitcher() {
           <CollapsibleTrigger className="cursor-pointer">
             <ChevronDown className="text-muted-foreground pt-2" />
           </CollapsibleTrigger>
-          <CollapsibleContent className="flex flex-col gap-2">
+          <CollapsibleContent className="bg-background flex flex-col gap-2 rounded-md border p-2 shadow-sm">
             <Toggle
               aria-label={t('theme.dyslexia.string')}
               size={'sm'}
