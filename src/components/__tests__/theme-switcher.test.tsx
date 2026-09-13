@@ -355,6 +355,14 @@ describe('ThemeSwitcher', () => {
     })
   })
 
+  describe('classic theme', () => {
+    it('should render nothing when theme is sogo5-classic', () => {
+      mockTheme.mockReturnValue('sogo5-classic')
+      const { container } = render(<ThemeSwitcher />)
+      expect(container.firstChild).toBeNull()
+    })
+  })
+
   describe('theme switching workflow', () => {
     it('should allow switching between different themes', () => {
       const { rerender } = render(<ThemeSwitcher />)

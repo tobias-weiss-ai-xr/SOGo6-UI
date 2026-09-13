@@ -15,6 +15,9 @@ export function ThemeSwitcher() {
   const { setTheme, theme } = useTheme()
   const t = useTranslations('HEADER')
 
+  // Classic theme is light-only (like SOGo 5) — no theme switching UI
+  if (theme === 'sogo5-classic') return null
+
   return (
     <>
       <div className="flex items-center justify-center gap-2">
