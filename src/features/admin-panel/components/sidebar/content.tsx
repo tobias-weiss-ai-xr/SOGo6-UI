@@ -149,6 +149,8 @@ const navItems = [
     isActive: true,
     collapsedIcon: BookOpen,
     url: '/swagger-admin',
+    target: '_blank',
+    rel: 'noreferrer',
   },
   {
     title: 'AP_SIDEBAR.dns_wizard.string',

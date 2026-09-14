@@ -21,6 +21,8 @@ interface NavItem {
   collapsedIcon?: LucideIcon
   isActive?: boolean
   items?: NavItem[]
+  target?: string
+  rel?: string
 }
 
 const when = (condition: boolean, item: NavItem): NavItem[] =>
@@ -130,6 +132,8 @@ export function useNavItems(): NavItem[] {
             title: 'US_SIDEBAR.settings.api_docs.string',
             url: '/swagger-basic',
             icon: BookOpen,
+            target: '_blank',
+            rel: 'noreferrer',
           },
         ],
       },
