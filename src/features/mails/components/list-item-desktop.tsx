@@ -27,6 +27,7 @@ import { useTranslations } from 'next-intl'
 import { useParams } from 'next/navigation'
 import React, { memo } from 'react'
 import { ImapMessagesList } from '../mails-types'
+import { useMailActionMutation } from '../store'
 import { formatDate } from './list-item-utils'
 
 interface ListItemDesktopProps {
@@ -60,6 +61,7 @@ const ListItemDesktop: React.FC<ListItemDesktopProps> = ({
   )
   const { folderType } = useCurrentFolder(folderString, accountString)
   const { openDraftIfNeeded } = useOpenDraftOnClick()
+  const [mailAction] = useMailActionMutation()
   const { id, from, flagged, hasAttachment } = data
   const isSelectedClass = isSelected ? 'bg-primary/20' : ''
   const showHighPriority = data.priority <= 2
@@ -113,7 +115,17 @@ const ListItemDesktop: React.FC<ListItemDesktopProps> = ({
             fill={flagged ? 'yellow' : 'white'}
             className="h-4 w-4 cursor-pointer transition-all duration-200 hover:h-5 hover:w-5"
             strokeWidth={1}
-            onClick={(e) => e.stopPropagation()}
+            aria-label={flagged ? t('unstar.string') : t('star.string')}
+            onClick={(e) => {
+              e.stopPropagation()
+              mailAction({
+                accountId: accountString || '0',
+                folder: folderString,
+                mailId: id,
+                action: flagged ? 'untag' : 'tag',
+                data: ['\\Flagged'],
+              })
+            }}
           />
         </div>
 

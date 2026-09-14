@@ -254,6 +254,13 @@ const ListItemMobile: React.FC<ListItemMobileProps> = ({
                       strokeWidth={1}
                       onClick={(e) => {
                         e.stopPropagation()
+                        mailAction({
+                          accountId: accountString || '0',
+                          folder: folderString,
+                          mailId: id,
+                          action: flagged ? 'untag' : 'tag',
+                          data: ['\\Flagged'],
+                        })
                       }}
                     />
                   </div>
