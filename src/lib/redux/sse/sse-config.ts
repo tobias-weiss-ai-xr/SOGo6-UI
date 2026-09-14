@@ -78,7 +78,9 @@ export function getProductionSSEConfig(): SSEConfig {
   }
 
   return {
-    url: `${window.location.origin}/api/sse`,
+    url: token
+      ? `${window.location.origin}/api/sse?token=${encodeURIComponent(token)}`
+      : `${window.location.origin}/api/sse`,
     reconnectInterval: 5000,
     maxReconnectAttempts: 10,
     heartbeatTimeout: 60000,
