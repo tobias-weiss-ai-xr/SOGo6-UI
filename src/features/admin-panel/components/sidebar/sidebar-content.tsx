@@ -16,6 +16,23 @@ interface RecursiveNavItemProps {
   item: NavItems
 }
 
+function NavLink({
+  item,
+  children,
+}: {
+  item: NavItems
+  children: React.ReactNode
+}) {
+  if (item.target) {
+    return (
+      <a href={item.url} target={item.target} rel={item.rel ?? 'noreferrer'}>
+        {children}
+      </a>
+    )
+  }
+  return <Link href={item.url!}>{children}</Link>
+}
+
 function RecursiveNavItem({ item }: RecursiveNavItemProps) {
   const t = useTranslations()
   if (item.items) {
@@ -29,12 +46,12 @@ function RecursiveNavItem({ item }: RecursiveNavItemProps) {
           {item.items?.map((subItem) =>
             subItem.url ? (
               <SidebarMenuSubItem className="pt-2" key={subItem.title}>
-                <Link href={subItem.url}>
+                <NavLink item={subItem}>
                   <SidebarMenuButton>
                     {subItem.icon && <subItem.icon size={24} />}
                     <span>{t(subItem.title)}</span>
                   </SidebarMenuButton>
-                </Link>
+                </NavLink>
               </SidebarMenuSubItem>
             ) : (
               <RecursiveNavItem key={subItem.title} item={subItem} />
@@ -46,12 +63,12 @@ function RecursiveNavItem({ item }: RecursiveNavItemProps) {
   } else if (item.url) {
     return (
       <SidebarMenuItem key={item.title}>
-        <Link href={item.url}>
+        <NavLink item={item}>
           <SidebarMenuButton tooltip={t(item.title)}>
             {item.icon && <item.icon />}
             <span>{t(item.title)}</span>
           </SidebarMenuButton>
-        </Link>
+        </NavLink>
       </SidebarMenuItem>
     )
   } else {
