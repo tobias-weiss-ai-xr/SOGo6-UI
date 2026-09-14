@@ -170,7 +170,7 @@ const CalendarPage = () => {
       if (isCalendarWritable(calendarState.defaultCalendar)) {
         calendarState.setSelectedSlot({
           start: new Date(),
-          end: new Date(),
+          end: new Date(Date.now() + 60 * 60 * 1000),
           slots: [],
           action: 'click',
         })
