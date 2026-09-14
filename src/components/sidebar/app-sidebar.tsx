@@ -28,7 +28,7 @@ export function AppSidebar(): React.JSX.Element {
       >
         <SidebarsContent />
       </SidebarContent>
-      <SidebarFooter className="border-sidebar-border bg-sidebar z-10 flex items-center justify-between border-t p-2">
+      <SidebarFooter className="border-sidebar-border bg-sidebar z-10 flex flex-row items-center justify-between border-t p-2">
         {open && (
           <Image
             alt="App Logo"
