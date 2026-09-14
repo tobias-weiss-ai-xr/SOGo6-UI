@@ -37,4 +37,5 @@ export {
   getProductionSSEConfig,
   getSSEConfigForEnvironment,
   getTestSSEConfig,
+  waitForSSEToken,
 } from './sse-config'

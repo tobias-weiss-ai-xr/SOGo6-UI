@@ -21,6 +21,7 @@ import { useAppSelector } from '@/lib/redux/hooks'
 import {
   getSSEConfigForEnvironment,
   useConnectSSEMutation,
+  waitForSSEToken,
 } from '@/lib/redux/sse'
 import {
   DndContext,
@@ -80,6 +81,13 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       const envVars = await fetchEnvVars()
       if (cancelled || envVars.SSE_ENABLED === false) {
         return
+      }
+
+      // Avoid a tokenless connect (401) when the layout mounts during the
+      // login redirect before the token has been persisted.
+      if (process.env.NODE_ENV === 'production') {
+        const ready = await waitForSSEToken()
+        if (cancelled || !ready) return
       }
 
       const config = await getSSEConfigForEnvironment()

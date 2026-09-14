@@ -67,7 +67,8 @@ export function getProductionSSEConfig(): SSEConfig {
   const STORAGE_KEY = 'sogo_auth'
   let token = ''
   try {
-    const stored = localStorage.getItem(STORAGE_KEY) || sessionStorage.getItem(STORAGE_KEY)
+    const stored =
+      localStorage.getItem(STORAGE_KEY) || sessionStorage.getItem(STORAGE_KEY)
     if (stored) {
       const auth = JSON.parse(stored)
       token = auth.token || ''
@@ -133,4 +134,25 @@ export async function getSSEConfigForEnvironment(): Promise<SSEConfig> {
   }
 
   return getDefaultSSEConfig()
+}
+
+/**
+ * Wait (up to ~5s) for the auth token to land in storage, so the SSE
+ * connect doesn't fire tokenless and 401 during the login redirect race.
+ */
+export async function waitForSSEToken(
+  tries = 20,
+  delayMs = 250
+): Promise<boolean> {
+  for (let i = 0; i < tries; i++) {
+    try {
+      const stored =
+        localStorage.getItem('sogo_auth') || sessionStorage.getItem('sogo_auth')
+      if (stored && JSON.parse(stored).token) return true
+    } catch {
+      // not yet parseable — retry
+    }
+    await new Promise((r) => setTimeout(r, delayMs))
+  }
+  return false
 }
