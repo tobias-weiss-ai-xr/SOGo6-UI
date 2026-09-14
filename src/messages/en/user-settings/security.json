@@ -70,6 +70,15 @@
                 "string": "Device name (optional)",
                 "context": "Label for the device name input field"
             }
+        },
+        "pgp": {
+            "title": "PGP",
+            "description": "Manage your PGP keys",
+            "loading": "Loading...",
+            "fingerprint": "Fingerprint",
+            "copyPublicKey": "Copy Public Key",
+            "deleteKey": "Delete Key",
+            "generateKey": "Generate Key"
         }
     }
 }

@@ -712,6 +712,13 @@
                 "string": "Recurring event",
                 "description": "Badge for recurring invitations"
             }
+        },
+        "followUp": {
+            "title": "Wiedervorlage festlegen",
+            "changeTitle": "Wiedervorlage ändern",
+            "description": "Legen Sie fest, wann Sie an diese E-Mail erinnert werden möchten.",
+            "clear": "Wiedervorlage entfernen",
+            "set": "Wiedervorlage festlegen"
         }
     }
 }
