@@ -1,4 +1,4 @@
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
+import { Avatar, AvatarFallback } from '@/components/ui/avatar'
 import { Button } from '@/components/ui/button'
 import { ChevronDown, ChevronUp } from 'lucide-react'
 import { useTranslations } from 'next-intl'
@@ -32,7 +32,6 @@ export default function MailHeaderMobile({
       <div className="flex items-start justify-between gap-2">
         <div className="flex min-w-0 flex-1 items-start gap-2">
           <Avatar className="h-10 w-10 shrink-0">
-            <AvatarImage src="/images/account-avatar.svg" />
             <AvatarFallback>
               {from.name?.[0]?.toUpperCase() ||
                 from.email?.[0]?.toUpperCase() ||

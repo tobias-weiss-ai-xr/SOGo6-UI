@@ -28,6 +28,7 @@ import {
   type CalendarEvent,
   type CalendarEventCreateBody,
 } from '@/features/calendars'
+import { ResourceSelector } from '@/features/resources/components'
 import { cn, tagDismissButtonClassName } from '@/lib/utils'
 import {
   formDialogBodyClassName,
@@ -58,8 +59,6 @@ import {
   type EventReminder,
   type FreeBusyRequest,
 } from '../calendars-types'
-import { ResourceSelector } from '@/features/resources/components'
-import type { Resource } from '@/features/resources/types/resources'
 import { useGetFreeBusyQuery } from '../store/calendars-api'
 import { isCalendarWritable } from '../utils/is-calendar-writable'
 import { recurrenceScopeToMutationFields } from '../utils/recurrence-scope-mutation'
@@ -315,12 +314,15 @@ export function EventForm({
           email: attendee.email,
           name: attendee.name ?? '',
         })) ?? [],
-      resources: event?.attendees?.filter(a => a.cutype === 'resource' || a.cutype === 'room')?.map(a => ({
-        id: a.email, // Using email as ID for now, backend will resolve
-        email: a.email,
-        name: a.name ?? '',
-        resource_type: a.cutype === 'room' ? 'room' : 'equipment',
-      })) ?? [],
+      resources:
+        event?.attendees
+          ?.filter((a) => a.cutype === 'resource' || a.cutype === 'room')
+          ?.map((a) => ({
+            id: a.email, // Using email as ID for now, backend will resolve
+            email: a.email,
+            name: a.name ?? '',
+            resource_type: a.cutype === 'room' ? 'room' : 'equipment',
+          })) ?? [],
       recurrence_rule: recurrenceToFormRule(
         event?.recurrence ?? event?.recurrence_rule ?? null
       ),
@@ -469,37 +471,40 @@ export function EventForm({
             minutes_before: reminder.minutes_before,
           }))
         : undefined,
-    attendees: [
-      ...values.attendees.filter((attendee) => attendee.email.trim() !== '')
-        .map((attendee) => ({
-          email: attendee.email,
-          name: attendee.name || undefined,
-        })),
-      ...values.resources.map((resource) => ({
-        email: resource.email,
-        name: resource.name,
-        cutype: resource.resource_type === 'room' ? 'room' : 'resource',
-        role: 'required' as const,
-        status: 'needs-action' as const,
-        rsvp: false,
-      })),
-    ].length > 0
-      ? [
-          ...values.attendees.filter((attendee) => attendee.email.trim() !== '')
-            .map((attendee) => ({
-              email: attendee.email,
-              name: attendee.name || undefined,
-            })),
-          ...values.resources.map((resource) => ({
-            email: resource.email,
-            name: resource.name,
-            cutype: resource.resource_type === 'room' ? 'room' : 'resource',
-            role: 'required' as const,
-            status: 'needs-action' as const,
-            rsvp: false,
+    attendees:
+      [
+        ...values.attendees
+          .filter((attendee) => attendee.email.trim() !== '')
+          .map((attendee) => ({
+            email: attendee.email,
+            name: attendee.name || undefined,
           })),
-        ]
-      : undefined,
+        ...values.resources.map((resource) => ({
+          email: resource.email,
+          name: resource.name,
+          cutype: resource.resource_type === 'room' ? 'room' : 'resource',
+          role: 'required' as const,
+          status: 'needs-action' as const,
+          rsvp: false,
+        })),
+      ].length > 0
+        ? [
+            ...values.attendees
+              .filter((attendee) => attendee.email.trim() !== '')
+              .map((attendee) => ({
+                email: attendee.email,
+                name: attendee.name || undefined,
+              })),
+            ...values.resources.map((resource) => ({
+              email: resource.email,
+              name: resource.name,
+              cutype: resource.resource_type === 'room' ? 'room' : 'resource',
+              role: 'required' as const,
+              status: 'needs-action' as const,
+              rsvp: false,
+            })),
+          ]
+        : undefined,
     recurrence_rule: values.recurrence_rule ?? undefined,
   })
 
@@ -954,7 +959,7 @@ export function EventForm({
             name="resources"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>{t('CALENDARS.eventForm.resources.title.string')}</FormLabel>
+                <FormLabel>{t('eventForm.resources.title.string')}</FormLabel>
                 <ResourceSelector
                   value={field.value}
                   onChange={field.onChange}

@@ -453,6 +453,12 @@
         "string": "Failed to create assignment",
         "context": "Error message when creating assignment fails"
       }
+    },
+    "notes": {
+      "string": "Notes"
+    },
+    "assignments": {
+      "string": "Assignments"
     }
   }
 }

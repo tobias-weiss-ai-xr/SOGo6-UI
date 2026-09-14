@@ -140,7 +140,7 @@ const injectedEndpoints = apiSlice.injectEndpoints({
             params.append('offset', String(query.offset))
         }
         return {
-          url: '/user/v1/resources',
+          url: '/resources',
           method: 'GET',
           params: params.toString() || undefined,
         }
@@ -166,7 +166,7 @@ const injectedEndpoints = apiSlice.injectEndpoints({
     // Get a single resource by ID
     getResource: builder.query<Resource, string>({
       query: (resourceId: string) => ({
-        url: `/user/v1/resources/${resourceId}`,
+        url: `/resources/${resourceId}`,
         method: 'GET',
       }),
       providesTags: (result, error, id) => [
@@ -194,7 +194,7 @@ const injectedEndpoints = apiSlice.injectEndpoints({
         params.append('end_time', timeRange.end_time)
         if (timeRange.timezone) params.append('timezone', timeRange.timezone)
         return {
-          url: '/user/v1/resources/available',
+          url: '/resources/available',
           method: 'GET',
           params: params.toString(),
         }
@@ -226,7 +226,7 @@ const injectedEndpoints = apiSlice.injectEndpoints({
         resourceId,
         ...body
       }: { resourceId: string } & AvailabilityCheckRequest) => ({
-        url: `/user/v1/resources/${resourceId}/check-availability`,
+        url: `/resources/${resourceId}/check-availability`,
         method: 'POST',
         body,
       }),
@@ -250,7 +250,7 @@ const injectedEndpoints = apiSlice.injectEndpoints({
         resourceId,
         ...body
       }: { resourceId: string } & BookResourceRequest) => ({
-        url: `/user/v1/resources/${resourceId}/book`,
+        url: `/resources/${resourceId}/book`,
         method: 'POST',
         body,
       }),
@@ -268,7 +268,7 @@ const injectedEndpoints = apiSlice.injectEndpoints({
     // Get user's bookings
     getMyBookings: builder.query<BookingListResponse, void>({
       query: () => ({
-        url: '/user/v1/resources/my-bookings',
+        url: '/resources/my-bookings',
         method: 'GET',
       }),
       providesTags: [BOOKINGS_SLICE],
@@ -285,7 +285,7 @@ const injectedEndpoints = apiSlice.injectEndpoints({
     // Get a specific booking
     getMyBooking: builder.query<Booking, string>({
       query: (bookingId: string) => ({
-        url: `/user/v1/resources/my-bookings/${bookingId}`,
+        url: `/resources/my-bookings/${bookingId}`,
         method: 'GET',
       }),
       providesTags: (result, error, id) => [
@@ -303,7 +303,7 @@ const injectedEndpoints = apiSlice.injectEndpoints({
       string
     >({
       query: (bookingId: string) => ({
-        url: `/user/v1/resources/my-bookings/${bookingId}`,
+        url: `/resources/my-bookings/${bookingId}`,
         method: 'DELETE',
       }),
       invalidatesTags: [BOOKINGS_SLICE],
@@ -323,7 +323,7 @@ const injectedEndpoints = apiSlice.injectEndpoints({
       void
     >({
       query: () => ({
-        url: '/user/v1/resources/favorites',
+        url: '/resources/favorites',
         method: 'GET',
       }),
       providesTags: [RESOURCES_SLICE],
@@ -343,7 +343,7 @@ const injectedEndpoints = apiSlice.injectEndpoints({
       string
     >({
       query: (resourceId: string) => ({
-        url: `/user/v1/resources/${resourceId}/favorite`,
+        url: `/resources/${resourceId}/favorite`,
         method: 'POST',
       }),
       invalidatesTags: (result, error, resourceId) => [
@@ -366,7 +366,7 @@ const injectedEndpoints = apiSlice.injectEndpoints({
       string
     >({
       query: (resourceId: string) => ({
-        url: `/user/v1/resources/${resourceId}/favorite`,
+        url: `/resources/${resourceId}/favorite`,
         method: 'DELETE',
       }),
       invalidatesTags: (result, error, resourceId) => [
@@ -399,3 +399,6 @@ export const {
   useAddFavoriteResourceMutation,
   useRemoveFavoriteResourceMutation,
 } = injectedEndpoints
+
+// Exported for tests: asserts endpoint URL construction (no double-prefixed /user/v1).
+export const resourcesApi = injectedEndpoints

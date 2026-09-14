@@ -1,4 +1,4 @@
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
+import { Avatar, AvatarFallback } from '@/components/ui/avatar'
 import { Button } from '@/components/ui/button'
 import { useMailReplyActions } from '@/features/mails/hooks/use-mail-reply-actions'
 import { useTranslations } from 'next-intl'
@@ -51,7 +51,6 @@ export default function MailHeader({
       {/* Avatar à gauche, aligné en haut */}
       <div className="flex flex-col items-start">
         <Avatar className="h-12 w-12">
-          <AvatarImage src="/images/account-avatar.svg" />
           <AvatarFallback>
             {(from.name?.[0] ?? from.email?.[0] ?? '?').toUpperCase()}
           </AvatarFallback>

@@ -199,16 +199,16 @@
         "string": "Add \"{email}\"",
         "context": "Add a typed email address directly as recipient"
       }
+    },
+    "scheduleSend": {
+      "title": "Zeitgesteuert senden",
+      "description": "W\u00e4hlen Sie, wann diese E-Mail zugestellt werden soll",
+      "time": "Uhrzeit",
+      "confirm": "Einplanen",
+      "clear": "Zeitplan l\u00f6schen",
+      "currentlyScheduled": "Aktuell geplant f\u00fcr {time}",
+      "change": "Zeitplan \u00e4ndern"
     }
-  },
-  "scheduleSend": {
-    "title": "Zeitgesteuert senden",
-    "description": "W\u00e4hlen Sie, wann diese E-Mail zugestellt werden soll",
-    "time": "Uhrzeit",
-    "confirm": "Einplanen",
-    "clear": "Zeitplan l\u00f6schen",
-    "currentlyScheduled": "Aktuell geplant f\u00fcr {time}",
-    "change": "Zeitplan \u00e4ndern"
   },
   "schedule_sending": {
     "string": "Zeitgesteuert senden",

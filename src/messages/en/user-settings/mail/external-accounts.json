@@ -131,6 +131,9 @@
       "readReceipts": {
         "string": "Read Receipts"
       },
+      "sameAsIncoming": {
+        "string": "Same as incoming server"
+      },
       "certificateName": {
         "string": "Certificate Name"
       },

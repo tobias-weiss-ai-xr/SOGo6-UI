@@ -1,4 +1,4 @@
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
+import { Avatar, AvatarFallback } from '@/components/ui/avatar'
 import { Separator } from '@/components/ui/separator'
 import MailListItemCheckbox from '@/features/mails/components/mail-list-item-checkbox'
 import { useCurrentFolder } from '@/features/mails/hooks/use-current-folder'
@@ -171,7 +171,6 @@ const ListItemMobile: React.FC<ListItemMobileProps> = ({
                 )}
               >
                 <Avatar className="bg-secondary flex h-10 w-10 items-center justify-center">
-                  <AvatarImage src="/images/account-avatar.svg" />
                   <AvatarFallback className="text-lg font-semibold">
                     {from.name && from.name.length > 0
                       ? from.name[0].toUpperCase()

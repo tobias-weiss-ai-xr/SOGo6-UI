@@ -1,5 +1,16 @@
 {
     "MAILS_COMMONS": {
+        "cancel": {
+            "string": "Cancel",
+            "context": "Generic cancel/dismiss button label"
+        },
+        "followUp": {
+            "title": "Set follow-up",
+            "changeTitle": "Change follow-up",
+            "description": "Choose when to be reminded about this email.",
+            "clear": "Clear follow-up",
+            "set": "Set follow-up"
+        },
         "mail_display": {
             "action-bar": {
                 "reply": {

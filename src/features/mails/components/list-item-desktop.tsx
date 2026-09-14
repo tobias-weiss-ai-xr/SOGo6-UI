@@ -1,4 +1,4 @@
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
+import { Avatar, AvatarFallback } from '@/components/ui/avatar'
 import { Separator } from '@/components/ui/separator'
 import { TooltipWrapper } from '@/components/ui/tooltip'
 import MailListItemCheckbox from '@/features/mails/components/mail-list-item-checkbox'
@@ -102,7 +102,6 @@ const ListItemDesktop: React.FC<ListItemDesktopProps> = ({
           )}
         >
           <Avatar className="h-6 w-6">
-            <AvatarImage src="/images/account-avatar.svg" />
             <AvatarFallback>
               {(from.name?.[0] ?? from.email?.[0] ?? '?').toUpperCase()}
             </AvatarFallback>

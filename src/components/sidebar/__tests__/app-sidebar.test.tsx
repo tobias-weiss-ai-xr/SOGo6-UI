@@ -1,6 +1,9 @@
 import { render, screen } from '@testing-library/react'
 import { AppSidebar } from '../app-sidebar'
 
+// Controlled per-test via mockSidebarOpen
+let mockSidebarOpen = true
+
 // Mock the UI components
 jest.mock('@/components/ui/sidebar', () => ({
   Sidebar: ({ children, collapsible, ...props }: any) => (
@@ -33,6 +36,7 @@ jest.mock('@/components/ui/sidebar', () => ({
       Toggle Sidebar
     </button>
   ),
+  useSidebar: () => ({ open: mockSidebarOpen }),
 }))
 
 // Mock the SidebarsContent component
@@ -49,6 +53,27 @@ jest.mock('../app-sidebar-mobile-effects', () => ({
 describe('AppSidebar Component', () => {
   beforeEach(() => {
     jest.clearAllMocks()
+    mockSidebarOpen = true
+  })
+
+  describe('logo placement', () => {
+    it('should render the logo in the footer when the sidebar is open', () => {
+      render(<AppSidebar />)
+
+      const footer = screen.getByTestId('sidebar-footer')
+      const logo = screen.getByAltText('App Logo')
+      expect(footer).toContainElement(logo)
+      // Collapse trigger stays in the footer alongside the logo
+      expect(footer).toContainElement(screen.getByTestId('sidebar-trigger'))
+    })
+
+    it('should hide the logo when the sidebar is collapsed', () => {
+      mockSidebarOpen = false
+      render(<AppSidebar />)
+
+      expect(screen.queryByAltText('App Logo')).not.toBeInTheDocument()
+      expect(screen.getByTestId('sidebar-trigger')).toBeInTheDocument()
+    })
   })
 
   describe('basic rendering', () => {
@@ -90,7 +115,7 @@ describe('AppSidebar Component', () => {
       render(<AppSidebar />)
 
       const header = screen.getByTestId('sidebar-header')
-      expect(header).toHaveClass('flex', 'min-h-[120px]', 'rounded-br-2xl')
+      expect(header).toHaveClass('flex', 'rounded-br-2xl', 'px-2', 'pt-3')
     })
 
     it('should apply correct CSS classes to content', () => {
@@ -110,20 +135,22 @@ describe('AppSidebar Component', () => {
       render(<AppSidebar />)
 
       const footer = screen.getByTestId('sidebar-footer')
-      expect(footer).toHaveClass('flex', 'justify-end', 'p-0')
+      expect(footer).toHaveClass(
+        'z-10',
+        'flex',
+        'items-center',
+        'justify-between',
+        'border-t',
+        'bg-sidebar',
+        'p-2'
+      )
     })
 
     it('should apply correct CSS classes to trigger', () => {
       render(<AppSidebar />)
 
       const trigger = screen.getByTestId('sidebar-trigger')
-      expect(trigger).toHaveClass(
-        'mb-2',
-        'ml-auto',
-        'h-10',
-        'w-15',
-        'rounded-r-none'
-      )
+      expect(trigger).toHaveClass('h-10', 'w-15', 'rounded-r-none')
     })
   })
 

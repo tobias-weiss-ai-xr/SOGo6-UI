@@ -75,7 +75,7 @@ self.addEventListener('fetch', (event) => {
   // For static assets: stale-while-revalidate.
   event.respondWith(
     caches.match(event.request).then((cached) => {
-      const network = fetch(event.request)
+      return fetch(event.request)
         .then((response) => {
           if (response.status >= 200 && response.status < 400) {
             const copy = response.clone();
@@ -83,8 +83,9 @@ self.addEventListener('fetch', (event) => {
           }
           return response;
         })
-        .catch(() => cached);
-      return cached || network;
+        .catch(() =>
+          cached || new Response('', { status: 200, headers: { 'Content-Type': 'text/plain' } })
+        );
     })
   );
 });
