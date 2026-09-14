@@ -58,10 +58,14 @@ const eventWrapper = (props: any) => {
     : 0
 
   if (!hasResources) {
-    return <span {...props} />
+    return <span {...props}>{props.title}</span>
   }
 
-  return <span {...props} data-resource-count={resourceCount} />
+  return (
+    <span {...props} data-resource-count={resourceCount}>
+      {props.title}
+    </span>
+  )
 }
 
 const calendarSlotSelectionGuardComponents = {

@@ -8,7 +8,7 @@
  *  - Background sync (optional)
  */
 
-const CACHE_NAME = 'sogo6-v3';
+const CACHE_NAME = 'sogo6-v4';
 const OFFLINE_URL = '/offline';
 const APP_SHELL = ['/', '/en', '/en/u/0/INBOX', '/en/calendars', OFFLINE_URL];
 

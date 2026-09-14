@@ -264,7 +264,7 @@ export function EventForm({
     : (start ?? new Date())
   const endDate = event
     ? new Date(event.date_end ?? end ?? startDate)
-    : (end ?? startDate)
+    : (end ?? new Date(startDate.getTime() + 60 * 60 * 1000))
   const [categoryInput, setCategoryInput] = useState('')
   const [scopeDialogOpen, setScopeDialogOpen] = useState(false)
   const [pendingFormValues, setPendingFormValues] =
