@@ -235,7 +235,10 @@ function TaskForm({
 
   return (
     <Dialog open={open} onOpenChange={(v) => !v && onClose()}>
-      <DialogContent className={formDialogContentClassName('2xl')}>
+      <DialogContent
+        className={formDialogContentClassName('2xl')}
+        aria-describedby={undefined}
+      >
         <DialogHeader className={formDialogHeaderClassName}>
           <DialogTitle className={formDialogTitleClassName}>
             {isEdit

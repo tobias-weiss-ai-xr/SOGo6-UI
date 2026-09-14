@@ -33,9 +33,9 @@ import { useTranslations } from 'next-intl'
 import React, { useEffect, useMemo } from 'react'
 import { useFieldArray, useForm, useWatch, type Control } from 'react-hook-form'
 import type { MailFilter } from '../mail-filters-types'
-import FolderSelectField from './folder-select-field'
-import { createSingleFilterSchema, defaultFilterValues } from './filters-schema'
 import type { SingleFilterFormValues } from './filters-schema'
+import { createSingleFilterSchema, defaultFilterValues } from './filters-schema'
+import FolderSelectField from './folder-select-field'
 import {
   actions,
   getActionOption,
@@ -192,7 +192,10 @@ const FilterEditDialog: React.FC<FilterEditDialogProps> = ({
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="max-h-[90vh] max-w-4xl overflow-y-auto">
+      <DialogContent
+        className="max-h-[90vh] max-w-4xl overflow-y-auto"
+        aria-describedby={undefined}
+      >
         <Form {...form}>
           <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
             <DialogHeader>
@@ -265,7 +268,9 @@ const FilterEditDialog: React.FC<FilterEditDialogProps> = ({
                 </div>
                 {rulesFields.map((rule, index) => {
                   const watchedField = form.watch(`rules.${index}.field`)
-                  const watchedCondition = form.watch(`rules.${index}.condition`)
+                  const watchedCondition = form.watch(
+                    `rules.${index}.condition`
+                  )
                   const conditionOptions = getConditionsForField(
                     watchedField
                   ).map((condition) => ({
@@ -323,34 +328,36 @@ const FilterEditDialog: React.FC<FilterEditDialogProps> = ({
                         <div className="flex items-start gap-2">
                           {watchedCondition !== 'EXISTS' &&
                             watchedCondition !== 'NOT_EXISTS' && (
-                            <FormField
-                              control={form.control}
-                              name={`rules.${index}.value`}
-                              render={({ field }) => (
-                                <FormItem className="flex-1">
-                                  <FormControl>
-                                    <Input
-                                      {...field}
-                                      type={
-                                        watchedCondition === 'SIZE_OVER' ||
-                                        watchedCondition === 'SIZE_UNDER'
-                                          ? 'text'
-                                          : 'text'
-                                      }
-                                      disabled={isReadOnly}
-                                      placeholder={
-                                        watchedCondition === 'SIZE_OVER' ||
-                                        watchedCondition === 'SIZE_UNDER'
-                                          ? t('placeholders.size_value.string')
-                                          : undefined
-                                      }
-                                    />
-                                  </FormControl>
-                                  <FormMessage />
-                                </FormItem>
-                              )}
-                            />
-                          )}
+                              <FormField
+                                control={form.control}
+                                name={`rules.${index}.value`}
+                                render={({ field }) => (
+                                  <FormItem className="flex-1">
+                                    <FormControl>
+                                      <Input
+                                        {...field}
+                                        type={
+                                          watchedCondition === 'SIZE_OVER' ||
+                                          watchedCondition === 'SIZE_UNDER'
+                                            ? 'text'
+                                            : 'text'
+                                        }
+                                        disabled={isReadOnly}
+                                        placeholder={
+                                          watchedCondition === 'SIZE_OVER' ||
+                                          watchedCondition === 'SIZE_UNDER'
+                                            ? t(
+                                                'placeholders.size_value.string'
+                                              )
+                                            : undefined
+                                        }
+                                      />
+                                    </FormControl>
+                                    <FormMessage />
+                                  </FormItem>
+                                )}
+                              />
+                            )}
                           {!isReadOnly && rulesFields.length > 1 && (
                             <Button
                               type="button"
@@ -450,7 +457,8 @@ const FilterEditDialog: React.FC<FilterEditDialogProps> = ({
                         )}
                       />
                       <div className="flex items-start gap-2">
-                        {(watchedAction === 'move' || watchedAction === 'copy') && (
+                        {(watchedAction === 'move' ||
+                          watchedAction === 'copy') && (
                           <FolderActionFields
                             index={index}
                             accountId={accountId}

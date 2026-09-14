@@ -319,6 +319,7 @@ const CalendarPage = () => {
         }}
       >
         <DialogContent
+          aria-describedby={undefined}
           className={cn(
             dialogMode === 'edit'
               ? formDialogContentClassName('2xl')

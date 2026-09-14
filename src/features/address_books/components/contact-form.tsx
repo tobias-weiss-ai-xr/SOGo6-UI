@@ -519,7 +519,10 @@ function ContactForm({
         if (!next) onClose()
       }}
     >
-      <DialogContent className={formDialogContentClassName('lg')}>
+      <DialogContent
+        className={formDialogContentClassName('lg')}
+        aria-describedby={undefined}
+      >
         <DialogHeader className={formDialogHeaderClassName}>
           <DialogTitle className={formDialogTitleClassName}>
             {isEdit ? t('edit_contact.string') : t('new_contact.string')}

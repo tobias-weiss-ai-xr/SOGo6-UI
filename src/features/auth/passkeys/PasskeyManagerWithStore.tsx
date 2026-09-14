@@ -7,48 +7,80 @@
  * Spec: sogo6-server/.openspec/specs/webauthn-passkeys.spec.md
  */
 
-'use client';
+'use client'
 
-import { useState, useEffect, useCallback } from 'react';
-import { useTranslations } from 'next-intl';
-import { toast } from 'sonner';
+import { useTranslations } from 'next-intl'
+import { useCallback, useEffect, useState } from 'react'
+import { toast } from 'sonner'
 
-import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Dialog, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle } from '@/components/ui/dialog';
-import { Input } from '@/components/ui/input';
-import { Label } from '@/components/ui/label';
-import { Badge } from '@/components/ui/badge';
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
-import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from '@/components/ui/dropdown-menu';
-import { Skeleton } from '@/components/ui/skeleton';
-import { MoreHorizontal, Plus, Trash2, Pencil, ShieldCheck, Clock } from 'lucide-react';
+import { Badge } from '@/components/ui/badge'
+import { Button } from '@/components/ui/button'
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from '@/components/ui/card'
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogFooter,
+  DialogHeader,
+  DialogTitle,
+} from '@/components/ui/dialog'
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from '@/components/ui/dropdown-menu'
+import { Input } from '@/components/ui/input'
+import { Label } from '@/components/ui/label'
+import { Skeleton } from '@/components/ui/skeleton'
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from '@/components/ui/table'
+import {
+  Clock,
+  MoreHorizontal,
+  Pencil,
+  Plus,
+  ShieldCheck,
+  Trash2,
+} from 'lucide-react'
 
 import {
   useWebauthnBeginRegistrationMutation,
   useWebauthnCompleteRegistrationMutation,
-  useWebauthnGetCredentialsQuery,
   useWebauthnDeleteCredentialMutation,
-} from '@/features/auth/components/store/auth.api';
-import { getErrorMessage } from '@/lib/redux/api/error-handlers';
+  useWebauthnGetCredentialsQuery,
+} from '@/features/auth/components/store/auth.api'
+import { getErrorMessage } from '@/lib/redux/api/error-handlers'
 
 // ============================================================================
 // Types
 // ============================================================================
 
 interface PasskeyCredential {
-  id: number;
-  credential_id: string;
-  device_name: string;
-  transports: string[] | null;
-  enabled: boolean;
-  created_at: string;
-  last_used_at: string | null;
-  is_default?: boolean;
+  id: number
+  credential_id: string
+  device_name: string
+  transports: string[] | null
+  enabled: boolean
+  created_at: string
+  last_used_at: string | null
+  is_default?: boolean
 }
 
 interface PasskeyManagerWithStoreProps {
-  onSuccess?: () => void;
+  onSuccess?: () => void
 }
 
 // ============================================================================
@@ -56,242 +88,275 @@ interface PasskeyManagerWithStoreProps {
 // ============================================================================
 
 function base64urlToBuffer(base64url: string): ArrayBuffer {
-  const base64 = base64url.replace(/-/g, '+').replace(/_/g, '/');
-  const binary = atob(base64);
-  const bytes = new Uint8Array(binary.length);
+  const base64 = base64url.replace(/-/g, '+').replace(/_/g, '/')
+  const binary = atob(base64)
+  const bytes = new Uint8Array(binary.length)
   for (let i = 0; i < binary.length; i++) {
-    bytes[i] = binary.charCodeAt(i);
+    bytes[i] = binary.charCodeAt(i)
   }
-  return bytes.buffer;
+  return bytes.buffer
 }
 
 function base64urlEncode(buffer: ArrayBuffer): string {
-  const bytes = new Uint8Array(buffer);
-  let binary = '';
+  const bytes = new Uint8Array(buffer)
+  let binary = ''
   for (let i = 0; i < bytes.byteLength; i++) {
-    binary += String.fromCharCode(bytes[i]);
+    binary += String.fromCharCode(bytes[i])
   }
-  return btoa(binary).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
+  return btoa(binary).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '')
 }
 
 // ============================================================================
 // Main Component
 // ============================================================================
 
-export function PasskeyManagerWithStore({ onSuccess }: PasskeyManagerWithStoreProps) {
-  const t = useTranslations('AUTH');
-  
+export function PasskeyManagerWithStore({
+  onSuccess,
+}: PasskeyManagerWithStoreProps) {
+  const t = useTranslations('AUTH')
+
   // RTK Query hooks
   const {
     data: credentialsData,
     isLoading,
     isError,
     refetch,
-  } = useWebauthnGetCredentialsQuery();
-  
-  const [beginRegistration] = useWebauthnBeginRegistrationMutation();
-  const [completeRegistration] = useWebauthnCompleteRegistrationMutation();
-  const [deleteCredential] = useWebauthnDeleteCredentialMutation();
-  
+  } = useWebauthnGetCredentialsQuery()
+
+  const [beginRegistration] = useWebauthnBeginRegistrationMutation()
+  const [completeRegistration] = useWebauthnCompleteRegistrationMutation()
+  const [deleteCredential] = useWebauthnDeleteCredentialMutation()
+
   // State
-  const [credentials, setCredentials] = useState<PasskeyCredential[]>([]);
-  const [showAddDialog, setShowAddDialog] = useState(false);
-  const [showRemoveDialog, setShowRemoveDialog] = useState(false);
-  const [showRenameDialog, setShowRenameDialog] = useState(false);
-  const [selectedCredential, setSelectedCredential] = useState<PasskeyCredential | null>(null);
-  const [passkeyName, setPasskeyName] = useState('');
-  const [removingId, setRemovingId] = useState<string | null>(null);
-  const [renamingId, setRenamingId] = useState<number | null>(null);
-  const [newName, setNewName] = useState('');
-  const [registering, setRegistering] = useState(false);
-  const [actionLoading, setActionLoading] = useState(false);
-  
+  const [credentials, setCredentials] = useState<PasskeyCredential[]>([])
+  const [showAddDialog, setShowAddDialog] = useState(false)
+  const [showRemoveDialog, setShowRemoveDialog] = useState(false)
+  const [showRenameDialog, setShowRenameDialog] = useState(false)
+  const [selectedCredential, setSelectedCredential] =
+    useState<PasskeyCredential | null>(null)
+  const [passkeyName, setPasskeyName] = useState('')
+  const [removingId, setRemovingId] = useState<string | null>(null)
+  const [renamingId, setRenamingId] = useState<number | null>(null)
+  const [newName, setNewName] = useState('')
+  const [registering, setRegistering] = useState(false)
+  const [actionLoading, setActionLoading] = useState(false)
+
   // Check if WebAuthn is supported
-  const isSupported = typeof window !== 'undefined' && 
-    'credentials' in window && 
-    'PublicKeyCredential' in window;
-  
+  const isSupported =
+    typeof window !== 'undefined' &&
+    'credentials' in window &&
+    'PublicKeyCredential' in window
+
   // Load and transform credentials data
   useEffect(() => {
     if (credentialsData?.data?.credentials) {
-      setCredentials(credentialsData.data.credentials);
+      setCredentials(credentialsData.data.credentials)
     }
-  }, [credentialsData]);
-  
+  }, [credentialsData])
+
   // ============================================================================
   // Passkey Registration
   // ============================================================================
-  
+
   const handleRegister = useCallback(async () => {
     if (!isSupported) {
-      toast.error(t('passkey.error.not_supported.string'));
-      return;
+      toast.error(t('passkey.error.not_supported.string'))
+      return
     }
-    
+
     try {
-      setRegistering(true);
-      setShowAddDialog(false);
-      
+      setRegistering(true)
+      setShowAddDialog(false)
+
       // Step 1: Get registration challenge from server
-      const beginResult = await beginRegistration().unwrap();
-      const publicKey = beginResult.data.publicKey as PublicKeyCredentialCreationOptions;
-      
+      const beginResult = await beginRegistration().unwrap()
+      const publicKey = beginResult.data
+        .publicKey as PublicKeyCredentialCreationOptions
+
       // Convert challenge from base64url to ArrayBuffer
-      publicKey.challenge = base64urlToBuffer(publicKey.challenge as unknown as string);
-      
+      publicKey.challenge = base64urlToBuffer(
+        publicKey.challenge as unknown as string
+      )
+
       // Convert user.id if present
       if (publicKey.user) {
-        publicKey.user.id = base64urlToBuffer(publicKey.user.id as unknown as string);
+        publicKey.user.id = base64urlToBuffer(
+          publicKey.user.id as unknown as string
+        )
       }
-      
+
       // Convert excludeCredentials if present
       if (publicKey.excludeCredentials) {
-        publicKey.excludeCredentials = publicKey.excludeCredentials.map((cred) => ({
-          ...cred,
-          id: base64urlToBuffer(cred.id as unknown as string),
-          type: 'public-key' as const,
-        }));
+        publicKey.excludeCredentials = publicKey.excludeCredentials.map(
+          (cred) => ({
+            ...cred,
+            id: base64urlToBuffer(cred.id as unknown as string),
+            type: 'public-key' as const,
+          })
+        )
       }
-      
+
       // Step 2: Trigger browser's WebAuthn API
       const credential = (await navigator.credentials.create({
         publicKey,
-      })) as PublicKeyCredential | null;
-      
+      })) as PublicKeyCredential | null
+
       if (!credential) {
         // User cancelled
-        toast.info(t('passkey.registrationCancelled.string'));
-        return;
+        toast.info(t('passkey.registrationCancelled.string'))
+        return
       }
-      
+
       // Step 3: Convert credential to JSON format for server
-      const credentialResponse = credential.response as AuthenticatorAttestationResponse;
+      const credentialResponse =
+        credential.response as AuthenticatorAttestationResponse
       const credentialData = {
         id: credential.id,
         rawId: base64urlEncode(credential.rawId),
         type: credential.type,
         response: {
-          attestationObject: base64urlEncode(credentialResponse.attestationObject),
+          attestationObject: base64urlEncode(
+            credentialResponse.attestationObject
+          ),
           clientDataJSON: base64urlEncode(credentialResponse.clientDataJSON),
         },
         clientExtensionResults: credential.getClientExtensionResults?.() ?? {},
-      };
-      
+      }
+
       // Step 4: Complete registration on server
-      await completeRegistration({ 
+      await completeRegistration({
         credential: credentialData,
         device_name: passkeyName || undefined,
-      }).unwrap();
-      
-      toast.success(t('passkey.registrationSuccess.string'));
-      
+      }).unwrap()
+
+      toast.success(t('passkey.registrationSuccess.string'))
+
       // Refresh credentials list
-      await refetch();
-      
+      await refetch()
+
       // Reset form
-      setPasskeyName('');
-      
+      setPasskeyName('')
+
       // Notify parent
-      onSuccess?.();
-      
+      onSuccess?.()
     } catch (error: unknown) {
-      const errorMsg = getErrorMessage(error) || t('passkey.registrationFailed.string');
-      toast.error(errorMsg);
+      const errorMsg =
+        getErrorMessage(error) || t('passkey.registrationFailed.string')
+      toast.error(errorMsg)
     } finally {
-      setRegistering(false);
+      setRegistering(false)
     }
-  }, [isSupported, beginRegistration, completeRegistration, passkeyName, refetch, onSuccess, t]);
-  
+  }, [
+    isSupported,
+    beginRegistration,
+    completeRegistration,
+    passkeyName,
+    refetch,
+    onSuccess,
+    t,
+  ])
+
   // ============================================================================
   // Passkey Removal
   // ============================================================================
-  
+
   const confirmRemove = (credential: PasskeyCredential) => {
-    setSelectedCredential(credential);
-    setRemovingId(credential.credential_id);
-    setShowRemoveDialog(true);
-  };
-  
+    setSelectedCredential(credential)
+    setRemovingId(credential.credential_id)
+    setShowRemoveDialog(true)
+  }
+
   const handleRemove = async () => {
-    if (!removingId) return;
-    
+    if (!removingId) return
+
     try {
-      setActionLoading(true);
-      await deleteCredential({ credential_id: removingId }).unwrap();
-      toast.success(t('passkeys.removalSuccess') || 'Passkey removed successfully');
-      
+      setActionLoading(true)
+      await deleteCredential({ credential_id: removingId }).unwrap()
+      toast.success(
+        t('passkeys.removalSuccess') || 'Passkey removed successfully'
+      )
+
       // Refresh credentials list
-      await refetch();
-      
+      await refetch()
+
       // Close dialog
-      setShowRemoveDialog(false);
-      setRemovingId(null);
-      setSelectedCredential(null);
-      
+      setShowRemoveDialog(false)
+      setRemovingId(null)
+      setSelectedCredential(null)
     } catch (error: unknown) {
-      const errorMsg = getErrorMessage(error) || t('passkeys.removalFailed') || 'Failed to remove passkey';
-      toast.error(errorMsg);
+      const errorMsg =
+        getErrorMessage(error) ||
+        t('passkeys.removalFailed') ||
+        'Failed to remove passkey'
+      toast.error(errorMsg)
     } finally {
-      setActionLoading(false);
+      setActionLoading(false)
     }
-  };
-  
+  }
+
   // ============================================================================
   // Passkey Rename
   // ============================================================================
-  
+
   const confirmRename = (credential: PasskeyCredential) => {
-    setSelectedCredential(credential);
-    setRenamingId(credential.id);
-    setNewName(credential.device_name);
-    setShowRenameDialog(true);
-  };
-  
+    setSelectedCredential(credential)
+    setRenamingId(credential.id)
+    setNewName(credential.device_name)
+    setShowRenameDialog(true)
+  }
+
   const handleRename = async () => {
-    if (!renamingId || !newName.trim()) return;
-    
+    if (!renamingId || !newName.trim()) return
+
     try {
-      setActionLoading(true);
+      setActionLoading(true)
       // Note: The current API doesn't support renaming, but we can add it
       // For now, we'll show a message that rename is not yet supported
-      toast.info(t('common.comingSoon') || 'Rename feature coming soon');
-      
-      setShowRenameDialog(false);
-      setRenamingId(null);
-      setNewName('');
-      setSelectedCredential(null);
-      
+      toast.info(t('common.comingSoon') || 'Rename feature coming soon')
+
+      setShowRenameDialog(false)
+      setRenamingId(null)
+      setNewName('')
+      setSelectedCredential(null)
     } catch (error: unknown) {
-      const errorMsg = getErrorMessage(error) || t('passkeys.updateFailed') || 'Failed to rename passkey';
-      toast.error(errorMsg);
+      const errorMsg =
+        getErrorMessage(error) ||
+        t('passkeys.updateFailed') ||
+        'Failed to rename passkey'
+      toast.error(errorMsg)
     } finally {
-      setActionLoading(false);
+      setActionLoading(false)
     }
-  };
-  
+  }
+
   const handleSetDefault = async (credential: PasskeyCredential) => {
     try {
-      setActionLoading(true);
+      setActionLoading(true)
       // Note: The current API doesn't support setting default, but we can add it
-      toast.info(t('common.comingSoon') || 'Set default feature coming soon');
+      toast.info(t('common.comingSoon') || 'Set default feature coming soon')
     } catch (error: unknown) {
-      const errorMsg = getErrorMessage(error) || t('passkeys.defaultFailed') || 'Failed to set default';
-      toast.error(errorMsg);
+      const errorMsg =
+        getErrorMessage(error) ||
+        t('passkeys.defaultFailed') ||
+        'Failed to set default'
+      toast.error(errorMsg)
     } finally {
-      setActionLoading(false);
+      setActionLoading(false)
     }
-  };
-  
+  }
+
   // ============================================================================
   // Render Functions
   // ============================================================================
-  
+
   if (isLoading) {
     return (
       <Card>
         <CardHeader>
           <CardTitle>{t('passkey.title') || 'Passkeys'}</CardTitle>
-          <CardDescription>{t('passkey.description') || 'Manage your passkeys'}</CardDescription>
+          <CardDescription>
+            {t('passkey.description') || 'Manage your passkeys'}
+          </CardDescription>
         </CardHeader>
         <CardContent>
           <div className="space-y-4">
@@ -300,32 +365,35 @@ export function PasskeyManagerWithStore({ onSuccess }: PasskeyManagerWithStorePr
           </div>
         </CardContent>
       </Card>
-    );
+    )
   }
-  
+
   // Browser not supported
   if (!isSupported) {
     return (
       <Card>
         <CardHeader>
           <CardTitle>{t('passkey.title') || 'Passkeys'}</CardTitle>
-          <CardDescription>{t('passkey.description') || 'Manage your passkeys'}</CardDescription>
+          <CardDescription>
+            {t('passkey.description') || 'Manage your passkeys'}
+          </CardDescription>
         </CardHeader>
         <CardContent>
-          <div className="text-center py-8">
-            <ShieldCheck className="h-12 w-12 mx-auto mb-4 text-muted-foreground" />
-            <h3 className="text-lg font-semibold mb-2">
+          <div className="py-8 text-center">
+            <ShieldCheck className="text-muted-foreground mx-auto mb-4 h-12 w-12" />
+            <h3 className="mb-2 text-lg font-semibold">
               {t('passkey.error.not_supported.string')}
             </h3>
-            <p className="text-sm text-muted-foreground">
-              {t('passkey.error.not_supported_desc') || 'Please use a modern browser to use passkeys.'}
+            <p className="text-muted-foreground text-sm">
+              {t('passkey.error.not_supported_desc') ||
+                'Please use a modern browser to use passkeys.'}
             </p>
           </div>
         </CardContent>
       </Card>
-    );
+    )
   }
-  
+
   // Main render
   return (
     <>
@@ -333,32 +401,41 @@ export function PasskeyManagerWithStore({ onSuccess }: PasskeyManagerWithStorePr
         <CardHeader className="flex flex-row items-center justify-between">
           <div>
             <CardTitle>{t('passkey.title') || 'Passkeys'}</CardTitle>
-            <CardDescription>{t('passkey.description') || 'Manage your passkeys'}</CardDescription>
+            <CardDescription>
+              {t('passkey.description') || 'Manage your passkeys'}
+            </CardDescription>
           </div>
-          <Button 
-            onClick={() => { setShowAddDialog(true); setPasskeyName(''); }}
+          <Button
+            onClick={() => {
+              setShowAddDialog(true)
+              setPasskeyName('')
+            }}
             disabled={actionLoading}
           >
-            <Plus className="mr-2 h-4 w-4" /> 
+            <Plus className="mr-2 h-4 w-4" />
             {t('passkey.addPasskey') || 'Add Passkey'}
           </Button>
         </CardHeader>
-        
+
         <CardContent>
           {credentials.length === 0 ? (
-            <div className="text-center py-12">
-              <ShieldCheck className="h-12 w-12 mx-auto mb-4 text-muted-foreground" />
-              <h3 className="text-lg font-semibold mb-2">
+            <div className="py-12 text-center">
+              <ShieldCheck className="text-muted-foreground mx-auto mb-4 h-12 w-12" />
+              <h3 className="mb-2 text-lg font-semibold">
                 {t('passkeys.noPasskeys') || 'No Passkeys Yet'}
               </h3>
-              <p className="text-sm text-muted-foreground mb-4">
-                {t('passkeys.noPasskeysDesc') || 'Passkeys provide a secure and convenient way to log in without passwords.'}
+              <p className="text-muted-foreground mb-4 text-sm">
+                {t('passkeys.noPasskeysDesc') ||
+                  'Passkeys provide a secure and convenient way to log in without passwords.'}
               </p>
-              <Button 
-                onClick={() => { setShowAddDialog(true); setPasskeyName(''); }}
+              <Button
+                onClick={() => {
+                  setShowAddDialog(true)
+                  setPasskeyName('')
+                }}
                 disabled={actionLoading}
               >
-                <Plus className="mr-2 h-4 w-4" /> 
+                <Plus className="mr-2 h-4 w-4" />
                 {t('passkeys.addFirstPasskey') || 'Add Your First Passkey'}
               </Button>
             </div>
@@ -369,28 +446,40 @@ export function PasskeyManagerWithStore({ onSuccess }: PasskeyManagerWithStorePr
                   <TableRow>
                     <TableHead>{t('passkeys.name') || 'Name'}</TableHead>
                     <TableHead>{t('passkeys.default') || 'Default'}</TableHead>
-                    <TableHead>{t('passkeys.lastUsed') || 'Last Used'}</TableHead>
-                    <TableHead>{t('passkeys.createdAt') || 'Created'}</TableHead>
-                    <TableHead className="text-right">{t('common.actions') || 'Actions'}</TableHead>
+                    <TableHead>
+                      {t('passkeys.lastUsed') || 'Last Used'}
+                    </TableHead>
+                    <TableHead>
+                      {t('passkeys.createdAt') || 'Created'}
+                    </TableHead>
+                    <TableHead className="text-right">
+                      {t('common.actions') || 'Actions'}
+                    </TableHead>
                   </TableRow>
                 </TableHeader>
                 <TableBody>
                   {credentials.map((cred) => (
                     <TableRow key={cred.credential_id}>
-                      <TableCell className="font-medium">{cred.device_name || t('common.unnamed') || 'Unnamed'}</TableCell>
+                      <TableCell className="font-medium">
+                        {cred.device_name || t('common.unnamed') || 'Unnamed'}
+                      </TableCell>
                       <TableCell>
                         {cred.is_default && (
-                          <Badge variant="default">{t('common.default') || 'Default'}</Badge>
+                          <Badge variant="default">
+                            {t('common.default') || 'Default'}
+                          </Badge>
                         )}
                       </TableCell>
                       <TableCell>
                         {cred.last_used_at ? (
                           <div className="flex items-center">
-                            <Clock className="h-3 w-3 mr-2" />
+                            <Clock className="mr-2 h-3 w-3" />
                             {new Date(cred.last_used_at).toLocaleDateString()}
                           </div>
                         ) : (
-                          <span className="text-muted-foreground">{t('common.none') || 'Never'}</span>
+                          <span className="text-muted-foreground">
+                            {t('common.none') || 'Never'}
+                          </span>
                         )}
                       </TableCell>
                       <TableCell>
@@ -399,22 +488,32 @@ export function PasskeyManagerWithStore({ onSuccess }: PasskeyManagerWithStorePr
                       <TableCell className="text-right">
                         <DropdownMenu>
                           <DropdownMenuTrigger asChild>
-                            <Button variant="ghost" className="h-8 w-8 p-0" disabled={actionLoading}>
+                            <Button
+                              variant="ghost"
+                              className="h-8 w-8 p-0"
+                              disabled={actionLoading}
+                            >
                               <MoreHorizontal className="h-4 w-4" />
                             </Button>
                           </DropdownMenuTrigger>
                           <DropdownMenuContent align="end">
                             {!cred.is_default && (
-                              <DropdownMenuItem onClick={() => handleSetDefault(cred)} disabled={actionLoading}>
+                              <DropdownMenuItem
+                                onClick={() => handleSetDefault(cred)}
+                                disabled={actionLoading}
+                              >
                                 <ShieldCheck className="mr-2 h-4 w-4" />
                                 {t('passkeys.setAsDefault') || 'Set as Default'}
                               </DropdownMenuItem>
                             )}
-                            <DropdownMenuItem onClick={() => confirmRename(cred)} disabled={actionLoading}>
+                            <DropdownMenuItem
+                              onClick={() => confirmRename(cred)}
+                              disabled={actionLoading}
+                            >
                               <Pencil className="mr-2 h-4 w-4" />
                               {t('common.rename') || 'Rename'}
                             </DropdownMenuItem>
-                            <DropdownMenuItem 
+                            <DropdownMenuItem
                               onClick={() => confirmRemove(cred)}
                               className="text-destructive"
                               disabled={actionLoading}
@@ -433,14 +532,20 @@ export function PasskeyManagerWithStore({ onSuccess }: PasskeyManagerWithStorePr
           )}
         </CardContent>
       </Card>
-      
+
       {/* Add Passkey Dialog */}
       <Dialog open={showAddDialog} onOpenChange={setShowAddDialog}>
         <DialogHeader>
           <DialogTitle>{t('passkeys.addPasskey') || 'Add Passkey'}</DialogTitle>
-          <DialogDescription>{t('passkeys.addPasskeyDesc') || 'Create a new passkey for this account.'}</DialogDescription>
+          <DialogDescription>
+            {t('passkeys.addPasskeyDesc') ||
+              'Create a new passkey for this account.'}
+          </DialogDescription>
         </DialogHeader>
-        <DialogContent className="sm:max-w-[425px]">
+        <DialogContent
+          className="sm:max-w-[425px]"
+          aria-describedby={undefined}
+        >
           <div className="grid gap-4 py-4">
             <div className="grid grid-cols-4 items-center gap-4">
               <Label htmlFor="passkey-name" className="text-right">
@@ -457,54 +562,80 @@ export function PasskeyManagerWithStore({ onSuccess }: PasskeyManagerWithStorePr
             </div>
           </div>
           <DialogFooter>
-            <Button variant="outline" onClick={() => setShowAddDialog(false)} disabled={registering}>
+            <Button
+              variant="outline"
+              onClick={() => setShowAddDialog(false)}
+              disabled={registering}
+            >
               {t('common.cancel') || 'Cancel'}
             </Button>
             <Button onClick={handleRegister} disabled={registering}>
-              {registering ? t('common.registering') || 'Registering...' : t('passkeys.register') || 'Register'}
+              {registering
+                ? t('common.registering') || 'Registering...'
+                : t('passkeys.register') || 'Register'}
             </Button>
           </DialogFooter>
         </DialogContent>
       </Dialog>
-      
+
       {/* Remove Passkey Dialog */}
       <Dialog open={showRemoveDialog} onOpenChange={setShowRemoveDialog}>
-        <DialogContent className="sm:max-w-[425px]">
+        <DialogContent
+          className="sm:max-w-[425px]"
+          aria-describedby={undefined}
+        >
           <DialogHeader>
-            <DialogTitle>{t('passkeys.removePasskey') || 'Remove Passkey'}</DialogTitle>
+            <DialogTitle>
+              {t('passkeys.removePasskey') || 'Remove Passkey'}
+            </DialogTitle>
             <DialogDescription>
-              {t('passkeys.removeConfirm', { name: selectedCredential?.device_name ?? '' }) || 
-               `Are you sure you want to remove "${selectedCredential?.device_name}"?`}
+              {t('passkeys.removeConfirm', {
+                name: selectedCredential?.device_name ?? '',
+              }) ||
+                `Are you sure you want to remove "${selectedCredential?.device_name}"?`}
               {credentials.length === 1 && (
-                <span className="block mt-2 text-rose-600">
-                  {t('passkeys.removeLastWarning') || 'This is your last passkey.'}
+                <span className="mt-2 block text-rose-600">
+                  {t('passkeys.removeLastWarning') ||
+                    'This is your last passkey.'}
                 </span>
               )}
             </DialogDescription>
           </DialogHeader>
           <DialogFooter>
-            <Button variant="outline" onClick={() => setShowRemoveDialog(false)} disabled={actionLoading}>
+            <Button
+              variant="outline"
+              onClick={() => setShowRemoveDialog(false)}
+              disabled={actionLoading}
+            >
               {t('common.cancel') || 'Cancel'}
             </Button>
-            <Button 
-              variant="destructive" 
+            <Button
+              variant="destructive"
               onClick={handleRemove}
               disabled={actionLoading}
             >
-              {actionLoading ? t('common.processing') || 'Processing...' : t('common.delete') || 'Delete'}
+              {actionLoading
+                ? t('common.processing') || 'Processing...'
+                : t('common.delete') || 'Delete'}
             </Button>
           </DialogFooter>
         </DialogContent>
       </Dialog>
-      
+
       {/* Rename Passkey Dialog */}
       <Dialog open={showRenameDialog} onOpenChange={setShowRenameDialog}>
-        <DialogContent className="sm:max-w-[425px]">
+        <DialogContent
+          className="sm:max-w-[425px]"
+          aria-describedby={undefined}
+        >
           <DialogHeader>
-            <DialogTitle>{t('passkeys.renamePasskey') || 'Rename Passkey'}</DialogTitle>
+            <DialogTitle>
+              {t('passkeys.renamePasskey') || 'Rename Passkey'}
+            </DialogTitle>
             <DialogDescription>
-              {t('passkeys.renameDesc', { name: selectedCredential?.device_name ?? '' }) || 
-               `Enter a new name for "${selectedCredential?.device_name}"`}
+              {t('passkeys.renameDesc', {
+                name: selectedCredential?.device_name ?? '',
+              }) || `Enter a new name for "${selectedCredential?.device_name}"`}
             </DialogDescription>
           </DialogHeader>
           <div className="grid gap-4 py-4">
@@ -523,21 +654,30 @@ export function PasskeyManagerWithStore({ onSuccess }: PasskeyManagerWithStorePr
             </div>
           </div>
           <DialogFooter>
-            <Button variant="outline" onClick={() => setShowRenameDialog(false)} disabled={actionLoading}>
+            <Button
+              variant="outline"
+              onClick={() => setShowRenameDialog(false)}
+              disabled={actionLoading}
+            >
               {t('common.cancel') || 'Cancel'}
             </Button>
-            <Button onClick={handleRename} disabled={!newName.trim() || actionLoading}>
-              {actionLoading ? t('common.processing') || 'Processing...' : t('common.save') || 'Save'}
+            <Button
+              onClick={handleRename}
+              disabled={!newName.trim() || actionLoading}
+            >
+              {actionLoading
+                ? t('common.processing') || 'Processing...'
+                : t('common.save') || 'Save'}
             </Button>
           </DialogFooter>
         </DialogContent>
       </Dialog>
     </>
-  );
+  )
 }
 
 // ============================================================================
 // Exports
 // ============================================================================
 
-export default PasskeyManagerWithStore;
+export default PasskeyManagerWithStore

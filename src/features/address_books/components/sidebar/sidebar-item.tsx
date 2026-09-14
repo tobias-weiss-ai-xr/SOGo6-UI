@@ -11,6 +11,7 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
 } from '@/components/ui/sidebar'
+import WorkInProgress from '@/components/work-in-progress'
 import { useIsMobile } from '@/hooks/use-mobile'
 import { useRouter } from '@/lib/i18n/navigation'
 import { MoreVertical } from 'lucide-react'
@@ -18,12 +19,11 @@ import { DynamicIcon, IconName } from 'lucide-react/dynamic'
 import { useTranslations } from 'next-intl'
 import { useParams } from 'next/navigation'
 import React from 'react'
-import WorkInProgress from '@/components/work-in-progress'
 import DeleteAction from './actions/delete'
+import ExportDialog from './actions/export-dialog'
+import ImportDialog from './actions/import-dialog'
 import LinkAction from './actions/link'
 import EditForm from './forms/edit'
-import ImportDialog from './actions/import-dialog'
-import ExportDialog from './actions/export-dialog'
 import ShareForm from './forms/share'
 
 export interface SidebarItemProps {
@@ -65,7 +65,7 @@ const SidebarItem: React.FC<SidebarItemProps> = ({
     typeof params?.book_id === 'string' ? params.book_id : null
   const isActive = activeBookId === id
   const isMobile = useIsMobile()
-  
+
   return (
     <SidebarMenuItem>
       <SidebarMenuButton
@@ -149,15 +149,13 @@ const SidebarItem: React.FC<SidebarItemProps> = ({
               )}
             </DropdownMenuContent>
           </DropdownMenu>
-          <DialogContent>
+          <DialogContent aria-describedby={undefined}>
             {type === 'edit' && (
               <EditForm id={id} name={name} onSuccess={() => setType('')} />
             )}
             {type === 'delete' && <DeleteAction id={id} name={name} />}
             {type === 'link' && <LinkAction id={id} name={name} />}
-            {type === 'sharing' && (
-              <ShareForm addressBookKey={id} />
-            )}
+            {type === 'sharing' && <ShareForm addressBookKey={id} />}
             {type === 'import' && (
               <ImportDialog
                 bookId={id}

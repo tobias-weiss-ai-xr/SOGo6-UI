@@ -13,7 +13,7 @@ import { useGetMailLabelsSettingsQuery } from '@/features/user-settings/mail/lab
 import { Link } from '@/lib/i18n/navigation'
 import { Loader2 } from 'lucide-react'
 import { useTranslations } from 'next-intl'
-import React, { useCallback, useMemo, useState } from 'react'
+import { useCallback, useMemo, useState } from 'react'
 
 type MailLabelPickerDialogProps = {
   open: boolean
@@ -34,9 +34,12 @@ export default function MailLabelPickerDialog({
 }: MailLabelPickerDialogProps) {
   const t = useTranslations('MAILS_COMMONS.mail_display.action-bar')
   const tLabels = useTranslations('US_MAIL_LABELS')
-  const { data: labels, isFetching } = useGetMailLabelsSettingsQuery(undefined, {
-    skip: !open,
-  })
+  const { data: labels, isFetching } = useGetMailLabelsSettingsQuery(
+    undefined,
+    {
+      skip: !open,
+    }
+  )
   const [pending, setPending] = useState<string | null>(null)
 
   const appliedSet = useMemo(() => new Set(appliedFlags), [appliedFlags])
@@ -61,7 +64,7 @@ export default function MailLabelPickerDialog({
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="max-w-md">
+      <DialogContent className="max-w-md" aria-describedby={undefined}>
         <DialogHeader>
           <DialogTitle>{t('label.string')}</DialogTitle>
         </DialogHeader>
@@ -98,7 +101,9 @@ export default function MailLabelPickerDialog({
             )
           })}
           {!busy && (labels ?? []).length === 0 ? (
-            <p className="text-muted-foreground text-sm">{tLabels('title.string')}</p>
+            <p className="text-muted-foreground text-sm">
+              {tLabels('title.string')}
+            </p>
           ) : null}
         </div>
         <DialogFooter className="flex-row justify-between sm:justify-between">

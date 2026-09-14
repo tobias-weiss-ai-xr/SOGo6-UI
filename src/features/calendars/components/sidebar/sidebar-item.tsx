@@ -266,7 +266,10 @@ const SidebarItem: React.FC<SidebarItemProps> = ({
               </DialogTrigger>
             </DropdownMenuContent>
           </DropdownMenu>
-          <DialogContent className="max-w-[calc(100vw-2rem)] sm:max-w-2xl">
+          <DialogContent
+            className="max-w-[calc(100vw-2rem)] sm:max-w-2xl"
+            aria-describedby={undefined}
+          >
             {type === 'edit' && (
               <EditForm
                 id={id}

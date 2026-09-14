@@ -364,7 +364,10 @@ export const FloatingCompose: React.FC<FloatingComposeProps> = ({
 
       {/* OpenCloud Picker dialog */}
       <Dialog open={openCloudPickerOpen} onOpenChange={setOpenCloudPickerOpen}>
-        <DialogContent className="max-h-[80vh] max-w-4xl">
+        <DialogContent
+          className="max-h-[80vh] max-w-4xl"
+          aria-describedby={undefined}
+        >
           <DialogHeader>
             <DialogTitle>{t('opencloud.string')}</DialogTitle>
           </DialogHeader>

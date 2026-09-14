@@ -3,10 +3,13 @@
 import ShadcnBigCalendar from '@/components/calendar'
 import { Dialog, DialogContent, DialogHeader } from '@/components/ui/dialog'
 import { type Calendar, type CalendarEvent } from '@/features/calendars'
-import { hasResourceAttendees, getResourceCount } from '@/features/resources/components/resource-event-indicator'
 import { AgendaView } from '@/features/calendars/components/agenda-view'
 import { LazyEventForm } from '@/features/calendars/components/event-form-lazy'
 import { MobileCalendarView } from '@/features/calendars/components/mobile-calendar-view'
+import {
+  getResourceCount,
+  hasResourceAttendees,
+} from '@/features/resources/components/resource-event-indicator'
 import { useIsMobile } from '@/hooks/useMediaQuery'
 import { DATE_LOCALES } from '@/lib/i18n/date-locales'
 import {
@@ -50,7 +53,9 @@ const DnDCalendar = withDragAndDrop<CalendarEventWithDate>(ShadcnBigCalendar)
 const eventWrapper = (props: any) => {
   const { event } = props
   const hasResources = hasResourceAttendees(event as unknown as CalendarEvent)
-  const resourceCount = hasResources ? getResourceCount(event as unknown as CalendarEvent) : 0
+  const resourceCount = hasResources
+    ? getResourceCount(event as unknown as CalendarEvent)
+    : 0
 
   if (!hasResources) {
     return <span {...props} />
@@ -119,7 +124,10 @@ function EventDialog({
 
   return (
     <Dialog open={selectedSlot !== null} onOpenChange={onClose}>
-      <DialogContent className={formDialogContentClassName('2xl')}>
+      <DialogContent
+        className={formDialogContentClassName('2xl')}
+        aria-describedby={undefined}
+      >
         <DialogHeader className={formDialogHeaderClassName}>
           <h2 className={formDialogTitleClassName}>
             {t('events.create.string')}
@@ -217,11 +225,12 @@ function CalendarView({
   }, [defaultColor, calendarColorMap])
 
   const eventStyleGetter = (event: CalendarEventWithDate) => {
-    const color =
-      calendarColorMap[event.calendar_id ?? ''] || defaultColor
+    const color = calendarColorMap[event.calendar_id ?? ''] || defaultColor
 
     const hasResources = hasResourceAttendees(event as unknown as CalendarEvent)
-    const resourceCount = hasResources ? getResourceCount(event as unknown as CalendarEvent) : 0
+    const resourceCount = hasResources
+      ? getResourceCount(event as unknown as CalendarEvent)
+      : 0
 
     return {
       style: {
