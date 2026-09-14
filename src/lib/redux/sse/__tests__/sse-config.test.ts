@@ -3,6 +3,40 @@ jest.mock('@/lib/env-service', () => ({
   getCachedEnvVars: jest.fn(),
 }))
 
+describe('waitForSSEToken', () => {
+  afterEach(() => {
+    localStorage.removeItem('sogo_auth')
+    sessionStorage.removeItem('sogo_auth')
+  })
+
+  it('resolves true immediately when a token is in localStorage', async () => {
+    localStorage.setItem('sogo_auth', JSON.stringify({ token: 'jwt-1' }))
+    await expect(waitForSSEToken(2, 1)).resolves.toBe(true)
+  })
+
+  it('resolves true from sessionStorage fallback', async () => {
+    sessionStorage.setItem('sogo_auth', JSON.stringify({ token: 'jwt-2' }))
+    await expect(waitForSSEToken(2, 1)).resolves.toBe(true)
+  })
+
+  it('resolves true once a late token lands', async () => {
+    const pending = waitForSSEToken(20, 5)
+    setTimeout(() => {
+      localStorage.setItem('sogo_auth', JSON.stringify({ token: 'late' }))
+    }, 10)
+    await expect(pending).resolves.toBe(true)
+  })
+
+  it('gives up (false) when no token appears', async () => {
+    await expect(waitForSSEToken(2, 1)).resolves.toBe(false)
+  })
+
+  it('treats malformed stored auth as absent', async () => {
+    localStorage.setItem('sogo_auth', 'not-json{{{')
+    await expect(waitForSSEToken(2, 1)).resolves.toBe(false)
+  })
+})
+
 const { fetchEnvVars, getCachedEnvVars } = jest.requireMock(
   '@/lib/env-service'
 ) as {
@@ -17,6 +51,7 @@ import {
   getProductionSSEConfig,
   getSSEConfigForEnvironment,
   getTestSSEConfig,
+  waitForSSEToken,
 } from '../sse-config'
 
 describe('sse-config', () => {
@@ -88,7 +123,9 @@ describe('sse-config', () => {
 
       const config = getProductionSSEConfig()
 
-      expect(config.url).toBe(`${window.location.origin}/api/sse?token=${encodeURIComponent('token-123')}`)
+      expect(config.url).toBe(
+        `${window.location.origin}/api/sse?token=${encodeURIComponent('token-123')}`
+      )
       expect(config.headers?.Authorization).toBe('Bearer token-123')
       expect(config.reconnectInterval).toBe(5000)
     })
@@ -100,7 +137,9 @@ describe('sse-config', () => {
 
       const config = getProductionSSEConfig()
 
-      expect(config.url).toBe(`${window.location.origin}/api/sse?token=${encodeURIComponent('session-token')}`)
+      expect(config.url).toBe(
+        `${window.location.origin}/api/sse?token=${encodeURIComponent('session-token')}`
+      )
       expect(config.headers?.Authorization).toBe('Bearer session-token')
 
       sessionStorage.removeItem('sogo_auth')

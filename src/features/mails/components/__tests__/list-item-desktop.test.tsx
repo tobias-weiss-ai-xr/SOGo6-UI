@@ -2,14 +2,14 @@ import { mailComposeReducer } from '@/features/mails/store'
 import { apiSlice } from '@/lib/redux/api/api-slice'
 import { configureStore } from '@reduxjs/toolkit'
 import '@testing-library/jest-dom'
-import { fireEvent, render, screen } from '@testing-library/react'
+import { fireEvent, render, screen, waitFor } from '@testing-library/react'
 import React from 'react'
 import { Provider } from 'react-redux'
 import ListItemDesktop from '../list-item-desktop'
 
 // ── Mocks ──────────────────────────────────────────────────────────────────
 jest.mock('next/navigation', () => ({
-  useParams: jest.fn(() => ({ mail_id: '456' })),
+  useParams: jest.fn(() => ({ mail_id: '456', account: '0', folder: 'INBOX' })),
 }))
 
 jest.mock('@/lib/i18n/navigation', () => ({
@@ -111,7 +111,7 @@ const createTestStore = () =>
       mailCompose: mailComposeReducer,
       [apiSlice.reducerPath]: apiSlice.reducer,
     },
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+
     middleware: (getDefaultMiddleware: any) =>
       getDefaultMiddleware().concat(apiSlice.middleware as never),
   })
@@ -211,5 +211,57 @@ describe('ListItemDesktop', () => {
   it('renders separator', () => {
     renderWithRedux(<ListItemDesktop {...defaultProps} />)
     expect(screen.getByTestId('separator')).toBeInTheDocument()
+  })
+
+  describe('star toggle', () => {
+    // mailAction's type is lost in the injectEndpoints inference — cast for the spy
+    const initiateSpy = jest.spyOn(
+      (
+        apiSlice.endpoints as unknown as {
+          mailAction: { initiate: (args: unknown) => unknown }
+        }
+      ).mailAction,
+      'initiate'
+    )
+
+    beforeEach(() => {
+      // keep the baseQuery's /env resolution and POST from hitting anything
+      global.fetch = jest.fn(
+        () => new Promise(() => {})
+      ) as unknown as typeof fetch
+      initiateSpy.mockClear()
+    })
+
+    const expectStarToggle = async (expectedAction: 'tag' | 'untag') => {
+      fireEvent.click(screen.getByTestId('star-icon'))
+      await waitFor(() => expect(initiateSpy).toHaveBeenCalled())
+      expect(initiateSpy.mock.calls[0][0]).toEqual({
+        accountId: '0',
+        folder: 'INBOX',
+        mailId: '123',
+        action: expectedAction,
+        data: ['\\Flagged'],
+      })
+    }
+
+    it('initiates tag \\Flagged for an unflagged mail', async () => {
+      renderWithRedux(
+        <ListItemDesktop
+          {...defaultProps}
+          data={{ ...mockData, flagged: false }}
+        />
+      )
+      await expectStarToggle('tag')
+    })
+
+    it('initiates untag \\Flagged for an already flagged mail', async () => {
+      renderWithRedux(
+        <ListItemDesktop
+          {...defaultProps}
+          data={{ ...mockData, flagged: true }}
+        />
+      )
+      await expectStarToggle('untag')
+    })
   })
 })

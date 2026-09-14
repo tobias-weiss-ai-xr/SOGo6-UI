@@ -36,7 +36,10 @@ jest.mock('@/lib/redux/api/api-slice', () => ({
 }))
 
 import {
+  dispatchFlaggedPatchOnAllFolderMessageCaches,
+  dispatchGetMailFlaggedPatch,
   isFolderRemovingAction,
+  isMailActionFlaggedToggle,
   isMailActionSeenFlagToggle,
   normalizeMailActionDataArray,
   removeMailFromAllFolderCaches,
@@ -50,18 +53,18 @@ describe('mail action predicates', () => {
   })
 
   it('isMailActionSeenFlagToggle only matches tag/untag \\Seen', () => {
-    expect(isMailActionSeenFlagToggle({ action: 'tag', data: ['\\Seen'] })).toBe(
-      true
-    )
+    expect(
+      isMailActionSeenFlagToggle({ action: 'tag', data: ['\\Seen'] })
+    ).toBe(true)
     expect(
       isMailActionSeenFlagToggle({ action: 'untag', data: ['\\Seen'] })
     ).toBe(true)
     expect(isMailActionSeenFlagToggle({ action: 'tag', data: ['work'] })).toBe(
       false
     )
-    expect(isMailActionSeenFlagToggle({ action: 'move', data: 'Archive' })).toBe(
-      false
-    )
+    expect(
+      isMailActionSeenFlagToggle({ action: 'move', data: 'Archive' })
+    ).toBe(false)
   })
 
   it('isFolderRemovingAction matches move/spam/ham only', () => {
@@ -70,6 +73,100 @@ describe('mail action predicates', () => {
     expect(isFolderRemovingAction('ham')).toBe(true)
     expect(isFolderRemovingAction('tag')).toBe(false)
     expect(isFolderRemovingAction('copy')).toBe(false)
+  })
+
+  it('isMailActionFlaggedToggle only matches tag/untag \\Flagged', () => {
+    expect(
+      isMailActionFlaggedToggle({ action: 'tag', data: ['\\Flagged'] })
+    ).toBe(true)
+    expect(
+      isMailActionFlaggedToggle({ action: 'untag', data: ['\\Flagged'] })
+    ).toBe(true)
+    expect(isMailActionFlaggedToggle({ action: 'tag', data: ['\\Seen'] })).toBe(
+      false
+    )
+    expect(isMailActionFlaggedToggle({ action: 'tag', data: ['work'] })).toBe(
+      false
+    )
+    expect(isMailActionFlaggedToggle({ action: 'move', data: null })).toBe(
+      false
+    )
+  })
+})
+
+describe('flagged optimistic cache patches', () => {
+  const dispatch = jest.fn((action) => ({ ...action, undo: jest.fn() }))
+
+  beforeEach(() => {
+    cacheStore.clear()
+    dispatch.mockClear()
+  })
+
+  it('dispatchFlaggedPatchOnAllFolderMessageCaches flips flagged in matching folder caches only', () => {
+    const inboxPage: QueryArg = { accountId: '0', folder: 'INBOX' }
+    const sentPage: QueryArg = { accountId: '0', folder: 'Sent' }
+    cacheStore.set(JSON.stringify(inboxPage), {
+      mails: [
+        { id: '10', flagged: false } as never,
+        { id: '11', flagged: false } as never,
+      ],
+      total: 2,
+      page: 1,
+      totalPages: 1,
+      hasNextPage: false,
+      hasPreviousPage: false,
+    })
+    cacheStore.set(JSON.stringify(sentPage), {
+      mails: [{ id: '10', flagged: false } as never],
+      total: 1,
+      page: 1,
+      totalPages: 1,
+      hasNextPage: false,
+      hasPreviousPage: false,
+    })
+    cachedArgs = [inboxPage, sentPage]
+
+    const patches = dispatchFlaggedPatchOnAllFolderMessageCaches(
+      dispatch as never,
+      {} as never,
+      { accountId: '0', folder: 'INBOX', mailId: '10', flagged: true }
+    )
+
+    expect(
+      cacheStore
+        .get(JSON.stringify(inboxPage))!
+        .mails.find((m) => m.id === '10')?.flagged
+    ).toBe(true)
+    expect(
+      cacheStore
+        .get(JSON.stringify(inboxPage))!
+        .mails.find((m) => m.id === '11')?.flagged
+    ).toBe(false)
+    expect(cacheStore.get(JSON.stringify(sentPage))!.mails[0].flagged).toBe(
+      false
+    )
+    expect(patches).toHaveLength(1)
+  })
+
+  it('dispatchGetMailFlaggedPatch flips flagged on the getMail cache entry', () => {
+    const arg = { accountId: '0', folder: 'INBOX', mailId: '10' }
+    cacheStore.set(JSON.stringify(arg), {
+      flagged: false,
+    } as never)
+
+    const patch = dispatchGetMailFlaggedPatch(dispatch as never, {
+      accountId: '0',
+      folder: 'INBOX',
+      mailId: '10',
+      flagged: true,
+    })
+
+    expect(
+      (cacheStore.get(JSON.stringify(arg)) as never as { flagged: boolean })
+        .flagged
+    ).toBe(true)
+    expect(patch).toBeDefined()
+    expect(typeof patch!.undo).toBe('function')
   })
 })
 
