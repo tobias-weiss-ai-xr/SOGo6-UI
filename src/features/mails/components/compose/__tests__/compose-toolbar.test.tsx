@@ -32,15 +32,13 @@ jest.mock('@/components/ui/dropdown-menu', () => ({
   DropdownMenuTrigger: ({ children }: any) => <div>{children}</div>,
   DropdownMenuContent: ({ children }: any) => <div>{children}</div>,
   DropdownMenuGroup: ({ children }: any) => <div>{children}</div>,
+  DropdownMenuLabel: ({ children }: any) => <div>{children}</div>,
   DropdownMenuSeparator: () => <hr />,
   DropdownMenuItem: ({ children, onClick }: any) => (
     <button onClick={onClick}>{children}</button>
   ),
   DropdownMenuCheckboxItem: ({ children, checked, onCheckedChange }: any) => (
-    <button
-      aria-pressed={checked}
-      onClick={() => onCheckedChange(!checked)}
-    >
+    <button aria-pressed={checked} onClick={() => onCheckedChange(!checked)}>
       {children}
     </button>
   ),
@@ -120,10 +118,9 @@ describe('ComposeToolbar', () => {
 
   it('reflects the requestReadReceipt checked state', () => {
     render(<ComposeToolbar {...baseProps} requestReadReceipt />)
-    expect(screen.getByText('return_receipt.string').closest('button')).toHaveAttribute(
-      'aria-pressed',
-      'true'
-    )
+    expect(
+      screen.getByText('return_receipt.string').closest('button')
+    ).toHaveAttribute('aria-pressed', 'true')
   })
 
   it('dispatches updatePriority with the numeric value when changing priority', () => {
@@ -159,6 +156,23 @@ describe('ComposeToolbar', () => {
     expect(screen.getByText('schedule_sending.string')).toBeInTheDocument()
   })
 
+  it('keeps the Send label while a schedule is set', () => {
+    render(<ComposeToolbar {...baseProps} sendAt="2026-09-12T10:00:00.000Z" />)
+    expect(screen.getByText('send.string')).toBeInTheDocument()
+    expect(
+      screen.queryByText('schedule_sending.string')
+    ).not.toBeInTheDocument()
+  })
+
+  it('shows schedule state, change and clear actions when sendAt is set', () => {
+    render(<ComposeToolbar {...baseProps} sendAt="2026-09-12T10:00:00.000Z" />)
+    expect(
+      screen.getByText('scheduleSend.currentlyScheduled')
+    ).toBeInTheDocument()
+    expect(screen.getByText('schedule_sending.change')).toBeInTheDocument()
+    expect(screen.getByText('schedule_sending.clear')).toBeInTheDocument()
+  })
+
   it('renders the sign message checkbox', () => {
     render(<ComposeToolbar {...baseProps} />)
     expect(screen.getByText('sign_message.string')).toBeInTheDocument()
@@ -187,17 +201,15 @@ describe('ComposeToolbar', () => {
 
   it('reflects the sign message checked state', () => {
     render(<ComposeToolbar {...baseProps} signMessage />)
-    expect(screen.getByText('sign_message.string').closest('button')).toHaveAttribute(
-      'aria-pressed',
-      'true'
-    )
+    expect(
+      screen.getByText('sign_message.string').closest('button')
+    ).toHaveAttribute('aria-pressed', 'true')
   })
 
   it('reflects the encrypt message checked state', () => {
     render(<ComposeToolbar {...baseProps} encryptMessage />)
-    expect(screen.getByText('encrypt_message.string').closest('button')).toHaveAttribute(
-      'aria-pressed',
-      'true'
-    )
+    expect(
+      screen.getByText('encrypt_message.string').closest('button')
+    ).toHaveAttribute('aria-pressed', 'true')
   })
 })

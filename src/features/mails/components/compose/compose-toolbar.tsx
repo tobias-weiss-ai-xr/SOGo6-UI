@@ -8,6 +8,7 @@ import {
   DropdownMenuContent,
   DropdownMenuGroup,
   DropdownMenuItem,
+  DropdownMenuLabel,
   DropdownMenuRadioGroup,
   DropdownMenuRadioItem,
   DropdownMenuSeparator,
@@ -19,12 +20,14 @@ import {
 import { useAppDispatch } from '@/lib/redux/hooks'
 import { cn } from '@/lib/utils'
 import {
+  Clock,
   Cloud,
   MoreHorizontalIcon,
   MoreVerticalIcon,
   Paperclip,
   Send,
   Video,
+  X,
 } from 'lucide-react'
 import { useTranslations } from 'next-intl'
 import React from 'react'
@@ -141,14 +144,14 @@ export function ComposeToolbar({
           onInsert={onInsertTemplate}
         />
 
-        <ButtonGroup className="z-9999">
+        <ButtonGroup>
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
               <Button variant="outline" size="icon" aria-label="More Options">
                 <MoreVerticalIcon />
               </Button>
             </DropdownMenuTrigger>
-            <DropdownMenuContent align="end" className="z-9999 w-40">
+            <DropdownMenuContent align="end" className="w-40">
               <DropdownMenuGroup>
                 <DropdownMenuCheckboxItem
                   checked={requestReadReceipt}
@@ -226,33 +229,50 @@ export function ComposeToolbar({
           size="sm"
           onClick={onSend}
           disabled={isSending || isUploading}
+          title={
+            sendAt
+              ? t('scheduleSend.currentlyScheduled', {
+                  time: new Date(sendAt).toLocaleString(),
+                })
+              : t('send.string')
+          }
         >
-          <Send className="mr-2 h-4 w-4" />
-          {sendAt
-            ? t('schedule_sending.string')
-            : isSending
-              ? t('sending.string')
-              : t('send.string')}
+          {sendAt ? (
+            <Clock className="mr-2 h-4 w-4" />
+          ) : (
+            <Send className="mr-2 h-4 w-4" />
+          )}
+          {isSending ? t('sending.string') : t('send.string')}
         </Button>
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
             <Button
               size="icon"
-              aria-label="More Options"
+              className="size-8"
+              aria-label={t('schedule_sending.string')}
               disabled={isSending || isUploading}
             >
               <MoreHorizontalIcon />
             </Button>
           </DropdownMenuTrigger>
-          <DropdownMenuContent align="end" className="z-9999 w-40">
+          <DropdownMenuContent align="end" className="w-52">
+            {sendAt && (
+              <DropdownMenuLabel className="text-muted-foreground text-xs font-normal">
+                {t('scheduleSend.currentlyScheduled', {
+                  time: new Date(sendAt).toLocaleString(),
+                })}
+              </DropdownMenuLabel>
+            )}
             <DropdownMenuGroup>
               <DropdownMenuItem onSelect={onScheduleSend}>
+                <Clock className="mr-2 h-4 w-4" />
                 {sendAt
                   ? t('schedule_sending.change')
                   : t('schedule_sending.string')}
               </DropdownMenuItem>
               {sendAt && (
                 <DropdownMenuItem onSelect={onClearSchedule}>
+                  <X className="mr-2 h-4 w-4" />
                   {t('schedule_sending.clear')}
                 </DropdownMenuItem>
               )}
