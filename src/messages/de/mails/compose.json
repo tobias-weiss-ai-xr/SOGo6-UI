@@ -9,7 +9,7 @@
       "context": "Label for the recipient field in the compose form"
     },
     "new_message": {
-      "string": "New message",
+      "string": "Neue Nachricht",
       "context": "Button for composing a new message in sidebar"
     },
     "send": {
@@ -22,11 +22,11 @@
     },
     "no_recipient_alert": {
       "title": {
-        "string": "No recipient",
+        "string": "Kein Empfänger",
         "context": "Title of the alert shown when the user tries to send a message without any recipients"
       },
       "content": {
-        "string": "Please add at least one recipient before sending.",
+        "string": "Bitte fügen Sie mindestens einen Empfänger hinzu, bevor Sie senden.",
         "context": "Content of the alert shown when the user tries to send a message without any recipients"
       },
       "ok": {
@@ -37,40 +37,40 @@
     },
     "no_subject_alert": {
       "title": {
-        "string": "No subject",
+        "string": "Kein Betreff",
         "context": "Title of the confirmation shown when the user tries to send a message without a subject"
       },
       "content": {
-        "string": "This message has no subject. Do you want to send it anyway?",
+        "string": "Diese Nachricht hat keinen Betreff. Möchten Sie sie trotzdem senden?",
         "context": "Content of the confirmation shown when the user tries to send a message without a subject"
       },
       "context": "Confirmation shown when the user tries to send a message without a subject"
     },
     "no_body_alert": {
       "title": {
-        "string": "No content",
+        "string": "Kein Inhalt",
         "context": "Title of the confirmation shown when the user tries to send a message without any content"
       },
       "content": {
-        "string": "This message has no content. Do you want to send it anyway?",
+        "string": "Diese Nachricht hat keinen Inhalt. Möchten Sie sie trotzdem senden?",
         "context": "Content of the confirmation shown when the user tries to send a message without any content"
       },
       "context": "Confirmation shown when the user tries to send a message without any content"
     },
     "no_subject_body_alert": {
       "title": {
-        "string": "No subject and no content",
+        "string": "Kein Betreff und kein Inhalt",
         "context": "Title of the confirmation shown when the user tries to send a message without a subject and without any content"
       },
       "content": {
-        "string": "This message has no subject and no content. Do you want to send it anyway?",
+        "string": "Diese Nachricht hat keinen Betreff und keinen Inhalt. Möchten Sie sie trotzdem senden?",
         "context": "Content of the confirmation shown when the user tries to send a message without a subject and without any content"
       },
       "context": "Confirmation shown when the user tries to send a message without a subject and without any content"
     },
     "empty_content_alert": {
       "send": {
-        "string": "Send anyway",
+        "string": "Trotzdem senden",
         "context": "Label for the button confirming the send despite the missing subject and/or content"
       },
       "cancel": {
@@ -79,15 +79,17 @@
       }
     },
     "schedule_sending": {
-      "string": "Schedule sending",
+      "string": "Zeitgesteuertes Senden",
+      "change": "Zeitplan ändern",
+      "clear": "Zeitplan löschen",
       "context": "Schedule the sending of the composed message"
     },
     "save_draft": {
-      "string": "Save draft",
+      "string": "Entwurf speichern",
       "context": "Save the composed message as a draft"
     },
     "discard_draft": {
-      "string": "Discard draft",
+      "string": "Entwurf verwerfen",
       "context": "Discard the current draft"
     },
     "cc": {
@@ -102,6 +104,10 @@
       "string": "Betreff",
       "context": "Subject of the email"
     },
+    "body": {
+      "string": "Nachrichtentext",
+      "context": "Label for the message body field in a compose dialog"
+    },
     "minimize": {
       "string": "Minimieren",
       "context": "Minimize the compose window"
@@ -111,27 +117,27 @@
       "context": "Maximize the compose window"
     },
     "restore": {
-      "string": "Restore",
+      "string": "Wiederherstellen",
       "context": "Restore the compose window to its previous size"
     },
     "close": {
-      "string": "Schlie\u00dfen",
+      "string": "Schließen",
       "context": "Close the compose window"
     },
     "open_in_new_page": {
-      "string": "Open in new page",
+      "string": "In neuer Seite öffnen",
       "context": "Open the compose window in a new page"
     },
     "jitsi": {
-      "string": "Insert Jitsi meeting link",
+      "string": "Jitsi-Meeting-Link einfügen",
       "context": "Button to insert a Jitsi video meeting link into the message body"
     },
     "max_recipients_reached": {
-      "string": "Maximum {max} recipients reached",
+      "string": "Maximal {max} Empfänger erreicht",
       "context": "Error shown when the maximum number of recipients has been reached"
     },
     "max_windows_error": {
-      "string": "Maximum {max} compose windows allowed.",
+      "string": "Maximal {max} Compose-Fenster erlaubt.",
       "context": "Error shown when the user tries to open more than three floating compose windows"
     },
     "signature": {
@@ -139,23 +145,23 @@
       "context": "Label for the signature picker button in the compose header"
     },
     "no_signature": {
-      "string": "No signature",
+      "string": "Keine Signatur",
       "context": "Label for the option to have no signature in the signature picker"
     },
     "attachment": {
-      "string": "Insert attachment",
+      "string": "Anhang einfügen",
       "context": "Button to insert an attachment into the message body",
       "download": {
-        "string": "Download attachment",
+        "string": "Anhang herunterladen",
         "context": "Title for the download attachment button"
       }
     },
     "return_receipt": {
-      "string": "Return receipt",
+      "string": "Lesebestätigung anfordern",
       "context": "Button to request a return receipt for the email"
     },
     "priority": {
-      "string": "Priorit\u00e4t setzen",
+      "string": "Priorität setzen",
       "context": "Button to set the priority of the email"
     },
     "low": {
@@ -163,7 +169,7 @@
       "context": "Option to set the email priority to low"
     },
     "lowest": {
-      "string": "Lowest",
+      "string": "Am niedrigsten",
       "context": "Option to set the email priority to lowest"
     },
     "normal": {
@@ -175,45 +181,77 @@
       "context": "Option to set the email priority to high"
     },
     "highest": {
-      "string": "Highest",
+      "string": "Am höchsten",
       "context": "Option to set the email priority to highest"
     },
     "attachment_error": {
-      "string": "Attachment upload failed",
+      "string": "Fehler beim Hochladen des Anhangs",
       "context": "Error message shown when an attachment fails to upload"
     },
     "drop_files": {
-      "string": "Drop files here",
+      "string": "Dateien hier ablegen",
       "context": "Overlay message shown when the user drags files over the compose window"
     },
     "attachment_upload": {
-      "string": "Uploading attachment...",
+      "string": "Anhang wird hochgeladen...",
       "context": "Message shown while an attachment is being uploaded"
     },
     "recipient_search": {
       "loading": {
-        "string": "Searching recipients\u2026",
+        "string": "Empfänger werden durchsucht…",
         "context": "Loading state while searching contacts and users"
       },
       "add_direct": {
-        "string": "Add \"{email}\"",
+        "string": "\"{email}\" hinzufügen",
         "context": "Add a typed email address directly as recipient"
       }
     },
+    "from_cloud": {
+      "string": "Aus OpenCloud",
+      "context": "Option to attach files from OpenCloud in the compose toolbar"
+    },
+    "opencloud_error": {
+      "string": "Fehler beim Anhängen aus OpenCloud",
+      "context": "Error message when OpenCloud attachment fails"
+    },
+    "opencloud": {
+      "string": "OpenCloud",
+      "context": "Label for OpenCloud file picker",
+      "attached": {
+        "string": "Aus OpenCloud angehängt: {name}",
+        "context": "Success message when a file is attached from OpenCloud"
+      }
+    },
+    "cancel": {
+      "string": "Abbrechen",
+      "context": "Cancel or dismiss a dialog"
+    },
+    "sign_message": {
+      "string": "Nachricht signieren (PGP)",
+      "context": "Button to sign the message with PGP"
+    },
+    "encrypt_message": {
+      "string": "Nachricht verschlüsseln (PGP)",
+      "context": "Button to encrypt the message with PGP"
+    },
     "scheduleSend": {
       "title": "Zeitgesteuert senden",
-      "description": "W\u00e4hlen Sie, wann diese E-Mail zugestellt werden soll",
+      "description": "Wählen Sie, wann diese E-Mail zugestellt werden soll",
       "time": "Uhrzeit",
       "confirm": "Einplanen",
-      "clear": "Zeitplan l\u00f6schen",
-      "currentlyScheduled": "Aktuell geplant f\u00fcr {time}",
-      "change": "Zeitplan \u00e4ndern"
+      "clear": "Zeitplan löschen",
+      "currentlyScheduled": "Aktuell geplant für {time}",
+      "change": "Zeitplan ändern"
+    },
+    "templates": {
+      "insert": "Vorlage einfügen",
+      "noTemplates": "Noch keine Vorlagen",
+      "saveCurrent": "Aktuelle als Vorlage speichern",
+      "saveTitle": "Als Vorlage speichern",
+      "saveDescription": "Speichern Sie Betreff und Nachrichtentext als wiederverwendbare Schnellantwort-Vorlage",
+      "templateName": "Vorlagenname",
+      "namePlaceholder": "Geben Sie einen Namen für diese Vorlage ein",
+      "save": "Vorlage speichern"
     }
-  },
-  "schedule_sending": {
-    "string": "Zeitgesteuert senden",
-    "change": "Zeitplan \u00e4ndern",
-    "clear": "Zeitplan l\u00f6schen",
-    "context": "Schedule the sending of the composed message"
   }
 }

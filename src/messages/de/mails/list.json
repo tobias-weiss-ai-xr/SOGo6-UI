@@ -1,9 +1,13 @@
 {
   "MAILS_LIST": {
-    "star": { "string": "Markieren" },
-    "unstar": { "string": "Markierung aufheben" },
+    "star": {
+      "string": "Markieren"
+    },
+    "unstar": {
+      "string": "Markierung aufheben"
+    },
     "messages_number": {
-      "string": "{number, plural, one {# message} other {# messages}}",
+      "string": "{number, plural, one {# Nachricht} other {# Nachrichten}}",
       "context": "Displays the number of messages in an mail folder."
     },
     "sort": {
@@ -12,33 +16,33 @@
           "string": "Neueste zuerst"
         },
         "descending": {
-          "string": "Older first"
+          "string": "Älteste zuerst"
         }
       },
       "size": {
         "ascending": {
-          "string": "Smallest first"
+          "string": "Kleinste zuerst"
         },
         "descending": {
-          "string": "Largest first"
+          "string": "Größte zuerst"
         }
       }
     },
     "pagination": {
       "previous": {
-        "string": "Previous page"
+        "string": "Vorherige Seite"
       },
       "next": {
-        "string": "Next page"
+        "string": "Nächste Seite"
       }
     },
     "list_load_error": {
       "folder_not_found": {
-        "string": "This folder no longer exists.",
+        "string": "Dieser Ordner existiert nicht mehr.",
         "description": "Message when folder messages request returns 404"
       },
       "mail_unavailable": {
-        "string": "Mail server is temporarily unavailable.",
+        "string": "Der Mailserver ist vorübergehend nicht verfügbar.",
         "description": "Message when folder messages request returns 503"
       },
       "retry": {
@@ -46,75 +50,75 @@
         "description": "Button label to refetch folder messages after 503"
       },
       "open_inbox": {
-        "string": "Open Inbox",
+        "string": "Posteingang öffnen",
         "description": "Button label to navigate to INBOX after folder 404"
       },
       "generic": {
-        "string": "Unable to load messages. Please try again later.",
+        "string": "Nachrichten können nicht geladen werden. Bitte versuchen Sie es später erneut.",
         "description": "Generic folder list load error (e.g. 500)"
       }
     },
     "filter": {
       "client_scope_notice": {
-        "string": "Filters apply only to messages loaded on this page.",
+        "string": "Filter gelten nur für die auf dieser Seite geladenen Nachrichten.",
         "description": "Hint that URL filters are client-side on the current server page"
       },
       "all": {
-        "string": "All"
+        "string": "Alle"
       },
       "unread": {
-        "string": "Unread"
+        "string": "Ungelesen"
       },
       "read": {
-        "string": "Read"
+        "string": "Gelesen"
       },
       "starred": {
-        "string": "Starred"
+        "string": "Markiert"
       },
       "attachments": {
-        "string": "Attachments"
+        "string": "Anhänge"
       }
     },
     "layout": {
       "full": {
-        "string": "Full view"
+        "string": "Volle Ansicht"
       },
       "split": {
-        "string": "Split view"
+        "string": "Geteilte Ansicht"
       }
     },
     "select_message": {
-      "string": "Select a message to read"
+      "string": "Wählen Sie eine E-Mail zum Lesen aus"
     },
     "no_items": {
-      "string": "No message found."
+      "string": "Keine Nachricht gefunden."
     },
     "actions": {
       "mark_as_read": {
         "string": "Als gelesen markieren"
       },
       "mark_as_unread": {
-        "string": "Mark as unread"
+        "string": "Als ungelesen markieren"
       },
       "delete": {
-        "string": "Move to trash"
+        "string": "In den Papierkorb bewegen"
       },
       "archive": {
         "string": "Archiv"
       },
       "select_mail": {
-        "string": "Select message"
+        "string": "E-Mail auswählen"
       },
       "deselect_mail": {
-        "string": "Deselect message"
+        "string": "Auswahl aufheben"
       }
     },
     "time": {
       "minutes_ago": {
-        "string": "{count}m ago"
+        "string": "vor {count} Min."
       }
-    }
-  },
-  "viewFlat": "Flat list",
-  "viewConversation": "Conversation view"
+    },
+    "viewFlat": "Flache Liste",
+    "viewConversation": "Konversationsansicht"
+  }
 }

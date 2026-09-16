@@ -1,5 +1,16 @@
 {
     "MAILS_COMMONS": {
+        "cancel": {
+            "string": "Abbrechen",
+            "context": "Generic cancel/dismiss button label"
+        },
+        "followUp": {
+            "title": "Wiedervorlage festlegen",
+            "changeTitle": "Wiedervorlage ändern",
+            "description": "Legen Sie fest, wann Sie an diese E-Mail erinnert werden möchten.",
+            "clear": "Wiedervorlage entfernen",
+            "set": "Wiedervorlage festlegen"
+        },
         "mail_display": {
             "action-bar": {
                 "reply": {
@@ -290,12 +301,16 @@
                 "description": "Button to add an external mail account in the sidebar account switcher"
             },
             "new_folder": {
-                "string": "New folder",
+                "string": "Neuer Ordner",
                 "description": "Label for the new folder action in the account switcher menu"
             },
             "delegate": {
                 "string": "Delegieren",
                 "description": "Label for the delegate action in the account switcher menu (not yet implemented)"
+            },
+            "shared_mailboxes": {
+                "string": "Geteilt",
+                "description": "Label for the shared mailboxes section in the account switcher"
             }
         },
         "to": {
@@ -313,7 +328,7 @@
         "folders": {
             "actions": {
                 "new_subfolder": {
-                    "string": "New Subfolder",
+                    "string": "Neuer Unterordner",
                     "description": "Button to create a new subfolder in the current folder"
                 },
                 "rename": {
@@ -508,7 +523,7 @@
                         "string": "Purge folder"
                     },
                     "confirmDesc": {
-                        "string": "Are you sure you want to purge \"{folder}\"? All deleted messages will be permanently removed. This action cannot be undone."
+                        "string": "Möchten Sie \"{folder}\" wirklich bereinigen? Alle gelöschten Nachrichten werden dauerhaft entfernt. Diese Aktion kann nicht rückgängig gemacht werden."
                     },
                     "confirm": {
                         "string": "Purge"
@@ -548,14 +563,14 @@
                             "string": "Benutzerdefiniertes Datum"
                         },
                         "all": {
-                            "string": "All mails"
+                            "string": "Alle E-Mails"
                         }
                     },
                     "successTitle": {
                         "string": "Folder purged"
                     },
                     "successMessage": {
-                        "string": "All deleted messages have been permanently removed."
+                        "string": "Alle gelöschten Nachrichten wurden dauerhaft entfernt."
                     },
                     "errorTitle": {
                         "string": "Purge failed"
@@ -570,7 +585,7 @@
                         "string": "Expunge folder"
                     },
                     "confirmDesc": {
-                        "string": "Are you sure you want to expunge \"{folder}\"? All messages marked as deleted will be permanently removed. This action cannot be undone."
+                        "string": "Möchten Sie \"{folder}\" wirklich bereinigen? Alle als gelöscht markierten Nachrichten werden dauerhaft entfernt. Diese Aktion kann nicht rückgängig gemacht werden."
                     },
                     "confirm": {
                         "string": "Expunge"
@@ -601,7 +616,7 @@
                 },
                 "new_subfolder_dialog": {
                     "title": {
-                        "string": "New subfolder",
+                        "string": "Neuer Unterordner",
                         "description": "Title of the create subfolder dialog"
                     },
                     "label": {
@@ -673,7 +688,7 @@
         },
         "sse": {
             "defaultSubject": {
-                "string": "New message"
+                "string": "Neue Nachricht"
             },
             "defaultSender": {
                 "string": "Unknown sender"
@@ -712,13 +727,6 @@
                 "string": "Recurring event",
                 "description": "Badge for recurring invitations"
             }
-        },
-        "followUp": {
-            "title": "Wiedervorlage festlegen",
-            "changeTitle": "Wiedervorlage ändern",
-            "description": "Legen Sie fest, wann Sie an diese E-Mail erinnert werden möchten.",
-            "clear": "Wiedervorlage entfernen",
-            "set": "Wiedervorlage festlegen"
         }
     }
 }
