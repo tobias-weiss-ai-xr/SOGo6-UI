@@ -24,7 +24,7 @@
             "4": "Donnerstag",
             "5": "Freitag",
             "6": "Samstag",
-            "string": "First day of the week in calendar view",
+            "string": "Erster Tag der Woche in der Kalenderansicht",
             "context": "Label for the setting that determines the first day of the week in calendar view (0=Sunday..6=Saturday)"
         },
         "workdayStartTime": {
@@ -54,7 +54,7 @@
             "%U": "Sunday as the first day of the week",
             "%W": "Monday as the first day of the week",
             "%V": "First 4 days week",
-            "string": "How the first week number is evaluated",
+            "string": "Wie die erste Woche nummeriert wird",
             "context": "Label for the setting that determines the week number format in calendar view (%U, %W or %V)"
         },
         "calendarDefault": {
@@ -67,15 +67,15 @@
             "PRIVATE": "Privat"
         },
         "eventDefaultClass": {
-            "string": "Default classification for events",
+            "string": "Standardklassifizierung für Ereignisse",
             "context": "Label for the setting that determines the default classification for events (PUBLIC, CONFIDENTIAL or PRIVATE)"
         },
         "taskDefaultClass": {
-            "string": "Default classification for tasks",
+            "string": "Standardklassifizierung für Aufgaben",
             "context": "Label for the setting that determines the default classification for tasks (PUBLIC, CONFIDENTIAL or PRIVATE)"
         },
         "journalDefaultClass": {
-            "string": "Default classification for journal entries",
+            "string": "Standardklassifizierung für Journaleinträge",
             "context": "Label for the setting that determines the default classification for journal entries (PUBLIC, CONFIDENTIAL or PRIVATE)"
         },
         "eventDefaultReminder": {
@@ -87,7 +87,7 @@
             "context": "Label for the setting that determines the default reminder for tasks (e.g. -PT15M)"
         },
         "journalDefaultReminder": {
-            "string": "Default reminder for journal entries",
+            "string": "Standard-Erinnerung für Journaleinträge",
             "context": "Label for the setting that determines the default reminder for journal entries (e.g. -PT15M)"
         },
         "reminderAfter": {
@@ -103,11 +103,11 @@
             "context": "Label for the setting that determines the whitelist of email addresses to which invitations will be sent even if 'Do not send invitations' is enabled"
         },
         "doNotSendInvitFromDav": {
-            "string": "Do not send invitations for events created from CalDAV clients",
+            "string": "Keine Einladungen für Ereignisse senden, die von CalDAV-Clients erstellt wurden",
             "context": "Label for the setting that determines whether to send invitations for events created from CalDAV clients or not"
         },
         "davForceSyncFromClient": {
-            "string": "Force synchronization of events created from CalDAV clients",
+            "string": "Synchronisation von Ereignissen erzwingen, die von CalDAV-Clients erstellt wurden",
             "help-tooltip": "Warning: if events from the client are more recent, force the sync anyway",
             "context": "Label for the setting that determines whether to force synchronization of events created from CalDAV clients or not"
         },
