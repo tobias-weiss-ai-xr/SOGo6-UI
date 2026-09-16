@@ -1,233 +1,100 @@
 {
   "TASKS": {
-    "page_title": {
-      "string": "Aufgaben"
-    },
-    "new_task": {
-      "string": "Neue Aufgabe"
-    },
-    "search_placeholder": {
-      "string": "Aufgaben durchsuchen…"
-    },
-    "show_completed": {
-      "string": "Abgeschlossene anzeigen"
-    },
-    "all_calendars": {
-      "string": "Alle Kalender"
-    },
-    "empty_title": {
-      "string": "Noch keine Aufgaben"
-    },
-    "empty_description": {
-      "string": "Erstellen Sie Ihre erste Aufgabe, um organisiert zu bleiben."
-    },
-    "overdue": {
-      "string": "Überfällig"
-    },
+    "page_title": {"string": "Aufgaben"},
+    "new_task": {"string": "Neue Aufgabe"},
+    "search_placeholder": {"string": "Aufgaben durchsuchen…"},
+    "show_completed": {"string": "Abgeschlossene anzeigen"},
+    "all_calendars": {"string": "Alle Kalender"},
+    "empty_title": {"string": "Noch keine Aufgaben"},
+    "empty_description": {"string": "Erstellen Sie Ihre erste Aufgabe, um organisiert zu bleiben."},
+    "overdue": {"string": "Überfällig"},
     "filters": {
-      "all": {
-        "string": "Alle"
-      },
-      "needs_action": {
-        "string": "Zu erledigen"
-      },
-      "in_process": {
-        "string": "In Bearbeitung"
-      },
-      "completed": {
-        "string": "Abgeschlossen"
-      },
-      "cancelled": {
-        "string": "Abgebrochen"
-      },
-      "overdue": {
-        "string": "Überfällig"
-      }
+      "all": {"string": "Alle"},
+      "needs_action": {"string": "Zu erledigen"},
+      "in_process": {"string": "In Bearbeitung"},
+      "completed": {"string": "Abgeschlossen"},
+      "cancelled": {"string": "Abgebrochen"},
+      "overdue": {"string": "Überfällig"}
     },
     "priority": {
-      "none": {
-        "string": "Keine Priorität"
-      },
-      "high": {
-        "string": "Hoch"
-      },
-      "medium": {
-        "string": "Mittel"
-      },
-      "low": {
-        "string": "Niedrig"
-      }
+      "none": {"string": "Keine Priorität"},
+      "high": {"string": "Hoch"},
+      "medium": {"string": "Mittel"},
+      "low": {"string": "Niedrig"}
     },
     "status": {
-      "needs_action": {
-        "string": "Zu erledigen"
-      },
-      "in_process": {
-        "string": "In Bearbeitung"
-      },
-      "completed": {
-        "string": "Completed"
-      },
-      "cancelled": {
-        "string": "Cancelled"
-      }
+      "needs_action": {"string": "Zu erledigen"},
+      "in_process": {"string": "In Bearbeitung"},
+      "completed": {"string": "Abgeschlossen"},
+      "cancelled": {"string": "Abgebrochen"}
     },
     "form": {
-      "create_title": {
-        "string": "New task"
-      },
-      "edit_title": {
-        "string": "Edit task"
-      },
-      "title": {
-        "string": "Title"
-      },
-      "description": {
-        "string": "Description"
-      },
-      "due": {
-        "string": "Due date"
-      },
-      "date_start": {
-        "string": "Start date"
-      },
-      "status": {
-        "string": "Status"
-      },
-      "priority": {
-        "string": "Priority"
-      },
-      "percent_complete": {
-        "string": "Progress"
-      },
-      "calendar": {
-        "string": "Calendar"
-      },
-      "categories": {
-        "string": "Categories"
-      },
-      "visibility": {
-        "string": "Visibility"
-      },
-      "save": {
-        "string": "Save"
-      },
-      "cancel": {
-        "string": "Cancel"
-      },
-      "calendar_required": {
-        "string": "Select a calendar"
-      },
+      "create_title": {"string": "Neue Aufgabe"},
+      "edit_title": {"string": "Aufgabe bearbeiten"},
+      "title": {"string": "Titel"},
+      "description": {"string": "Beschreibung"},
+      "due": {"string": "Fälligkeitsdatum"},
+      "date_start": {"string": "Startdatum"},
+      "status": {"string": "Status"},
+      "priority": {"string": "Priorität"},
+      "percent_complete": {"string": "Fortschritt"},
+      "calendar": {"string": "Kalender"},
+      "categories": {"string": "Kategorien"},
+      "visibility": {"string": "Sichtbarkeit"},
+      "save": {"string": "Speichern"},
+      "cancel": {"string": "Abbrechen"},
+      "calendar_required": {"string": "Wählen Sie einen Kalender aus"},
       "errors": {
-        "date_order": {
-          "string": "Due date must be on or after the start date."
+        "date_order": {"string": "Das Fälligkeitsdatum muss am oder nach dem Startdatum liegen."
         }
       }
     },
     "actions": {
-      "edit": {
-        "string": "Edit"
-      },
-      "delete": {
-        "string": "Delete"
-      }
+      "edit": {"string": "Bearbeiten"},
+      "delete": {"string": "Löschen"}
     },
     "delete_dialog": {
-      "title": {
-        "string": "Delete task?"
-      },
-      "description": {
-        "string": "This action cannot be undone."
-      },
-      "confirm": {
-        "string": "Delete"
-      },
-      "cancel": {
-        "string": "Cancel"
-      }
+      "title": {"string": "Aufgabe löschen?"},
+      "description": {"string": "Diese Aktion kann nicht rückgängig gemacht werden."},
+      "confirm": {"string": "Löschen"},
+      "cancel": {"string": "Abbrechen"}
     },
     "selection": {
-      "enter": {
-        "string": "Select tasks"
-      },
-      "cancel": {
-        "string": "Cancel"
-      },
-      "select_all": {
-        "string": "Select all tasks"
-      },
-      "count": {
-        "string": "{count, plural, one {# selected} other {# selected}}"
-      },
+      "enter": {"string": "Aufgaben auswählen"},
+      "cancel": {"string": "Abbrechen"},
+      "select_all": {"string": "Alle Aufgaben auswählen"},
+      "count": {"string": "{count, plural, one {# ausgewählt} other {# ausgewählt}}"},
       "actions": {
-        "complete": {
-          "string": "Complete"
-        },
-        "reopen": {
-          "string": "Reopen"
-        },
-        "delete": {
-          "string": "Delete"
-        }
+        "complete": {"string": "Abschließen"},
+        "reopen": {"string": "Wiedereröffnen"},
+        "delete": {"string": "Löschen"}
       },
       "delete_dialog": {
-        "title": {
-          "string": "Delete selected tasks?"
-        },
-        "description": {
-          "string": "You are about to delete {count, plural, one {# task} other {# tasks}}. This action cannot be undone."
-        },
-        "confirm": {
-          "string": "Delete"
-        },
-        "cancel": {
-          "string": "Cancel"
-        }
+        "title": {"string": "Ausgewählte Aufgaben löschen?"},
+        "description": {"string": "Sie sind dabei, {count, plural, one {# Aufgabe} other {# Aufgaben}} zu löschen. Diese Aktion kann nicht rückgängig gemacht werden."},
+        "confirm": {"string": "Löschen"},
+        "cancel": {"string": "Abbrechen"}
       }
     },
     "sidebar": {
       "smart_views": {
-        "title": {
-          "string": "Smart views"
-        },
-        "all": {
-          "string": "All tasks"
-        },
-        "today": {
-          "string": "Today"
-        },
-        "upcoming": {
-          "string": "Upcoming"
-        },
-        "overdue": {
-          "string": "Overdue"
-        },
-        "completed": {
-          "string": "Completed"
-        }
+        "title": {"string": "Intelligente Ansichten"},
+        "all": {"string": "Alle Aufgaben"},
+        "today": {"string": "Heute"},
+        "upcoming": {"string": "Bevorstehend"},
+        "overdue": {"string": "Überfällig"},
+        "completed": {"string": "Abgeschlossen"}
       },
       "calendars": {
-        "title": {
-          "string": "Calendars"
-        },
-        "all": {
-          "string": "All calendars"
-        }
+        "title": {"string": "Kalender"},
+        "all": {"string": "Alle Kalender"}
       }
     },
     "fast_access": {
-      "title": {
-        "string": "Tasks"
-      },
-      "view_all": {
-        "string": "View all tasks"
-      },
-      "empty": {
-        "string": "No pending tasks"
-      },
-      "loading": {
-        "string": "Loading tasks…"
-      }
+      "title": {"string": "Aufgaben"},
+      "view_all": {"string": "Alle Aufgaben anzeigen"},
+      "empty": {"string": "Keine ausstehenden Aufgaben"},
+      "loading": {"string": "Aufgaben werden geladen…"}
     }
   }
 }
