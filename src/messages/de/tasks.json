@@ -35,7 +35,7 @@
       "description": {"string": "Beschreibung"},
       "due": {"string": "Fälligkeitsdatum"},
       "date_start": {"string": "Startdatum"},
-      "status": {"string": "Status"},
+      "status": {"string": "Zustand"},
       "priority": {"string": "Priorität"},
       "percent_complete": {"string": "Fortschritt"},
       "calendar": {"string": "Kalender"},
