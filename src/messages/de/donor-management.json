@@ -4,7 +4,7 @@
       "string": "Spenderverwaltung"
     },
     "description": {
-      "string": "Spender verfolgen, DSGVO-Einwilligung und Quittungen"
+      "string": "Spender verfolgen, DSGVO-Zustimmung verwalten, Spendenquittungen erstellen und Kampagnen durchführen"
     },
     "errors": {
       "fields": {
@@ -93,7 +93,7 @@
         "string": "Alle Spender"
       },
       "empty": {
-        "string": "Keine Spender registriert"
+        "string": "Noch keine Spender registriert"
       }
     }
   }

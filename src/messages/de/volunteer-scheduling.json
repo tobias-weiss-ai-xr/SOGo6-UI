@@ -4,7 +4,7 @@
       "string": "Freiwilligenplanung"
     },
     "description": {
-      "string": "Freiwillige verwalten und Stunden verfolgen"
+      "string": "Freiwillige verwalten, Schichten zuweisen, Stunden verfolgen und Zertifikate erstellen"
     },
     "errors": {
       "fields": {

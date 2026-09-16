@@ -1,10 +1,10 @@
 {
   "EIDAS": {
     "title": {
-      "string": "eIDAS-Signaturen"
+      "string": "eIDAS-Qualifizierte Signaturen"
     },
     "description": {
-      "string": "Qualifizierte elektronische Signaturen (EU 910/2014)"
+      "string": "EU-Verordnung 910/2014 – qualifizierte elektronische Signaturen und Zeitstempel"
     },
     "errors": {
       "fields": {
