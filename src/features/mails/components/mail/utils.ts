@@ -1,6 +1,6 @@
 import { getCachedEnvVars } from '@/lib/env-service'
-import React, { useEffect, useRef } from 'react'
 import { logger } from '@/lib/logger'
+import React, { useEffect, useRef } from 'react'
 
 // Resolve API base URL at call time (env may load after module init)
 function getApiBaseUrl(): string {
@@ -85,13 +85,13 @@ export function parseEmailContact(
   return { name: '', email: str.trim() }
 }
 
-export function formatMailTime(date: number | string) {
+export function formatMailTime(date: number | string, locale = 'en') {
   // Backend sends RFC 2822 strings (email 'Date' header); also accept
   // numeric timestamps. Guard against invalid input instead of throwing.
   const d = typeof date === 'number' ? new Date(date) : new Date(date)
   if (isNaN(d.getTime())) return ''
   return d
-    .toLocaleString('fr-FR', {
+    .toLocaleString(locale, {
       month: 'long',
       day: 'numeric',
       hour: '2-digit',
@@ -101,10 +101,25 @@ export function formatMailTime(date: number | string) {
     .replace(',', '')
 }
 
-export function formatSize(size: number) {
-  if (size >= 1024 * 1024) return `${(size / (1024 * 1024)).toFixed(1)} Mo`
-  if (size >= 1024) return `${(size / 1024).toFixed(1)} Ko`
-  return `${size} o`
+// Units are locale-neutral (en/de both use B/KB/MB); the NUMBER is
+// formatted per locale (decimal comma vs point).
+const SIZE_UNITS = ['B', 'KB', 'MB', 'GB', 'TB'] as const
+
+export function formatSize(size: number, locale = 'en') {
+  let value = size
+  let unit = 0
+  while (value >= 1024 && unit < SIZE_UNITS.length - 1) {
+    value /= 1024
+    unit++
+  }
+  const num =
+    unit === 0
+      ? value.toLocaleString(locale, { maximumFractionDigits: 0 })
+      : value.toLocaleString(locale, {
+          minimumFractionDigits: 1,
+          maximumFractionDigits: 1,
+        })
+  return `${num} ${SIZE_UNITS[unit]}`
 }
 
 export function getFileExtension(filename: string) {

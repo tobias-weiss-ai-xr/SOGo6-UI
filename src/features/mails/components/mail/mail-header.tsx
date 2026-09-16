@@ -1,7 +1,7 @@
 import { Avatar, AvatarFallback } from '@/components/ui/avatar'
 import { Button } from '@/components/ui/button'
 import { useMailReplyActions } from '@/features/mails/hooks/use-mail-reply-actions'
-import { useTranslations } from 'next-intl'
+import { useLocale, useTranslations } from 'next-intl'
 import { useState } from 'react'
 import MailActionsBar from './mail-action-bar'
 import { ContactBadge } from './mail-contact-badge'
@@ -24,6 +24,7 @@ export default function MailHeader({
   accountId,
 }: MailHeaderFullProps) {
   const t = useTranslations('MAILS_COMMONS')
+  const locale = useLocale()
   const [open, setOpen] = useState(false)
   const [showAllTo, setShowAllTo] = useState(false)
   const [showAllCc, setShowAllCc] = useState(false)
@@ -44,7 +45,7 @@ export default function MailHeader({
     : (cc ?? []).slice(0, MAX_DISPLAY_CC)
   const plusUndisplayElement = '+'
 
-  const formattedTime = formatMailTime(date)
+  const formattedTime = formatMailTime(date, locale)
 
   return (
     <div className="mb-3 flex w-full items-start justify-between gap-4">

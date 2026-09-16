@@ -3,11 +3,11 @@
         "mail_display": {
             "action-bar": {
                 "reply": {
-                    "string": "Reply",
+                    "string": "Antworten",
                     "description": "Reply to the current message"
                 },
                 "reply_all": {
-                    "string": "Reply all",
+                    "string": "Allen antworten",
                     "description": "Reply to all recipients of the current message"
                 },
                 "forward": {
@@ -94,7 +94,7 @@
                 },
                 "delete_confirm": {
                     "title": {
-                        "string": "Delete message"
+                        "string": "Nachricht löschen"
                     },
                     "message": {
                         "string": "This message will be moved to Trash."
@@ -135,11 +135,11 @@
                     }
                 },
                 "more": {
-                    "string": "More actions",
+                    "string": "Weitere Aktionen",
                     "description": "More actions"
                 },
                 "next-mail": {
-                    "string": "Next mail",
+                    "string": "Nächste E-Mail",
                     "description": "Next mail"
                 },
                 "previous-mail": {
@@ -198,7 +198,7 @@
                 },
                 "unsubscribe-dialog": {
                     "message": {
-                        "string": "Do you want to unsubscribe from this mailing list?",
+                        "string": "Möchten Sie diese Mailingliste abbestellen?",
                         "description": "Message in the unsubscribe dialog"
                     },
                     "confirm": {
@@ -232,15 +232,15 @@
         },
         "search": {
             "placeholder": {
-                "string": "Search emails",
+                "string": "E-Mails durchsuchen",
                 "description": "Placeholder text for the email search input field"
             },
             "more_options": {
-                "string": "More Options",
+                "string": "Weitere Optionen",
                 "description": "Button to open more search options"
             },
             "folders": {
-                "string": "Folders",
+                "string": "Ordner",
                 "description": "Label for the folders section in the search options"
             },
             "confirm": {
@@ -268,7 +268,7 @@
                 "description": "Label for the 'Body' field in email search options"
             },
             "date_from": {
-                "string": "Date from",
+                "string": "Datum von",
                 "description": "Label for the 'Date from' field in email search options"
             },
             "date_to": {
@@ -397,7 +397,7 @@
                         "string": "Set folder type"
                     },
                     "description": {
-                        "string": "Choose the semantic type for \"{folder}\"."
+                        "string": "Wählen Sie den semantischen Typ für „{folder}\"."
                     },
                     "cancel": {
                         "string": "Abbrechen"
@@ -425,7 +425,7 @@
                         "string": "Move folder"
                     },
                     "description": {
-                        "string": "Choose a new parent for \"{folder}\"."
+                        "string": "Wählen Sie einen neuen übergeordneten Ordner für „{folder}\"."
                     },
                     "placeholder": {
                         "string": "Select destination"
@@ -446,7 +446,7 @@
                         "string": "Share folder"
                     },
                     "description": {
-                        "string": "Manage who has access to \"{folder}\" and their permissions."
+                        "string": "Verwalten Sie, wer auf „{folder}\" zugreifen darf, und die entsprechenden Berechtigungen."
                     },
                     "noUsers": {
                         "string": "No users have access yet."
@@ -517,7 +517,7 @@
                         "string": "Abbrechen"
                     },
                     "olderThan": {
-                        "string": "Delete mails older than"
+                        "string": "E-Mails löschen, die älter sind als"
                     },
                     "customDate": {
                         "string": "Benutzerdefiniertes Datum"
@@ -532,7 +532,7 @@
                         "string": "Permanently delete (cannot be undone)"
                     },
                     "confirmPermanent": {
-                        "string": "I understand this will permanently delete the selected mails and they cannot be recovered"
+                        "string": "Ich verstehe, dass die ausgewählten E-Mails dauerhaft gelöscht werden und nicht wiederhergestellt werden können"
                     },
                     "datePresets": {
                         "3months": {
@@ -561,7 +561,7 @@
                         "string": "Purge failed"
                     },
                     "errorMessage": {
-                        "string": "An error occurred while purging the folder. Please try again."
+                        "string": "Beim Bereinigen des Ordners ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut."
                     }
                 },
                 "expunge": {
@@ -580,10 +580,10 @@
                     }
                 },
                 "delete": {
-                    "string": "Delete folder",
+                    "string": "Ordner löschen",
                     "description": "Label for the delete folder action in the folder context menu",
                     "confirmTitle": {
-                        "string": "Delete folder",
+                        "string": "Ordner löschen",
                         "description": "Title of the delete folder confirmation dialog"
                     },
                     "confirmDesc": {
@@ -667,7 +667,7 @@
                     "string": "Virtual folder"
                 },
                 "description": {
-                    "string": "This folder cannot contain messages. Expand it in the sidebar to browse subfolders."
+                    "string": "Dieser Ordner kann keine Nachrichten enthalten. Klappen Sie ihn in der Seitenleiste aus, um Unterordner anzuzeigen."
                 }
             }
         },
@@ -697,7 +697,7 @@
                 "description": "Message when an attendee sends an iMIP REPLY"
             },
             "sync_pending": {
-                "string": "Syncing with your calendar…",
+                "string": "Synchronisierung mit Ihrem Kalender…",
                 "description": "Event not found yet after opening invitation mail"
             },
             "retry": {

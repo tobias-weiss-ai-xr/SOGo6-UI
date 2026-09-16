@@ -1,7 +1,7 @@
 import { Avatar, AvatarFallback } from '@/components/ui/avatar'
 import { Button } from '@/components/ui/button'
 import { ChevronDown, ChevronUp } from 'lucide-react'
-import { useTranslations } from 'next-intl'
+import { useLocale, useTranslations } from 'next-intl'
 import { useState } from 'react'
 import { ContactBadge } from './mail-contact-badge'
 import { UnsubscribeDialog } from './mail-unsubscribe-dialog'
@@ -16,6 +16,7 @@ export default function MailHeaderMobile({
   date,
 }: MailHeaderFullProps) {
   const t = useTranslations('MAILS_COMMONS')
+  const locale = useLocale()
   const [open, setOpen] = useState(false)
   const [expandRecipients, setExpandRecipients] = useState(false)
 
@@ -24,7 +25,7 @@ export default function MailHeaderMobile({
   const totalTo = safeTo.length
   const totalCc = safeCc.length
 
-  const formattedTime = formatMailTime(date)
+  const formattedTime = formatMailTime(date, locale)
 
   return (
     <div className="flex w-full flex-col gap-3">

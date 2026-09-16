@@ -9,6 +9,7 @@ import { Provider } from 'react-redux'
 import { AttachmentName, MailAttachment } from '../mail-attachment'
 
 jest.mock('next-intl', () => ({
+  useLocale: () => 'en',
   useTranslations: () => () => 'Download',
 }))
 
@@ -49,7 +50,7 @@ describe('MailAttachment', () => {
       <MailAttachment part={mockPart} attachmentsUrl="/mail/1/" />
     )
     expect(screen.getByText('image.png')).toBeInTheDocument()
-    expect(screen.getByText('15.1 Ko')).toBeInTheDocument()
+    expect(screen.getByText('15.1 KB')).toBeInTheDocument()
     const downloadLink = screen.getByRole('link', { name: 'Download' })
     expect(downloadLink).toBeInTheDocument()
     expect(downloadLink).toHaveAttribute(

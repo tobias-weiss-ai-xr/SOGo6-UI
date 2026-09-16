@@ -171,7 +171,7 @@ const SidebarItem: React.FC<SidebarItemProps> = ({
           <span className="min-w-0 truncate text-sm">{name}</span>
           {isReadOnly && (
             <Lock
-              className="text-muted-foreground h-3 w-3 shrink-0"
+              className="text-sidebar-foreground/70 h-3 w-3 shrink-0"
               aria-label={t('sidebar.readOnlyCalendar.string')}
             />
           )}

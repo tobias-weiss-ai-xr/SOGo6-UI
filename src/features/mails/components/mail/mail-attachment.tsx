@@ -3,7 +3,7 @@ import { TooltipWrapper } from '@/components/ui/tooltip'
 import { useDownloadFile } from '@/hooks/use-download-file'
 import { cn } from '@/lib/utils'
 import { ArrowDownToLine } from 'lucide-react'
-import { useTranslations } from 'next-intl'
+import { useLocale, useTranslations } from 'next-intl'
 import { useState } from 'react'
 import {
   AttachmentNameProps,
@@ -45,6 +45,7 @@ export function MailAttachment({
   attachmentsUrl = '',
 }: MailAttachmentProps) {
   const t = useTranslations('MAILS_COMMONS')
+  const locale = useLocale()
   const { downloadFile, isDownloading } = useDownloadFile()
 
   const handleDownload = (e: React.MouseEvent) => {
@@ -81,7 +82,7 @@ export function MailAttachment({
         </a>
       </TooltipWrapper>
       <span className="text-muted-foreground ml-1 shrink-0 text-xs">
-        {formatSize(part.size)}
+        {formatSize(part.size, locale)}
       </span>
     </div>
   )

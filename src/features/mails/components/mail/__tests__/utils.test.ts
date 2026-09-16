@@ -34,23 +34,30 @@ describe('parseEmailContact', () => {
 
 // formatMailTime
 describe('formatMailTime', () => {
-  it('formats a timestamp to fr-FR', () => {
+  it('formats a timestamp in the requested locale', () => {
     // 1 Jan 2022, 15:05 CET (+01:00) = 14:05 UTC
     const ts = new Date('2022-01-01T15:05:00+01:00').getTime()
-    expect(formatMailTime(ts)).toMatch(/1 janvier.*(14:05|15:05)/)
+    expect(formatMailTime(ts, 'de')).toMatch(/1\. Januar.*(14:05|15:05)/)
+  })
+  it('does not hardcode a French default', () => {
+    const ts = new Date('2022-01-01T15:05:00+01:00').getTime()
+    expect(formatMailTime(ts)).not.toMatch(/janvier/)
   })
 })
 
 // formatSize
 describe('formatSize', () => {
   it('formats bytes', () => {
-    expect(formatSize(500)).toBe('500 o')
+    expect(formatSize(500)).toBe('500 B')
   })
   it('formats kilobytes', () => {
-    expect(formatSize(2048)).toBe('2.0 Ko')
+    expect(formatSize(2048)).toBe('2.0 KB')
   })
   it('formats megabytes', () => {
-    expect(formatSize(2 * 1024 * 1024)).toBe('2.0 Mo')
+    expect(formatSize(2 * 1024 * 1024)).toBe('2.0 MB')
+  })
+  it('formats the number per locale (decimal comma)', () => {
+    expect(formatSize(2048, 'de')).toBe('2,0 KB')
   })
 })
 

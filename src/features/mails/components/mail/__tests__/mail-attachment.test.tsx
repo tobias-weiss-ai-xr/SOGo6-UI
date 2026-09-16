@@ -14,6 +14,7 @@ import type { ImapAttachmentPart, ImapAttachments } from '../types'
 
 // Mock next-intl
 jest.mock('next-intl', () => ({
+  useLocale: () => 'en',
   useTranslations: () => (key: string) => key,
 }))
 
