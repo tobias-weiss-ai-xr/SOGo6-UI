@@ -1,203 +1,76 @@
 {
-    "ADDRESS_BOOKS_SIDEBAR": {
-        "new_contact": {
-            "string": "Neuer Kontakt",
-            "context": "Button for creating a new contact in the sidebar"
-        },
-        "new_distribution_list": {
-            "string": "Neue Verteilerliste",
-            "context": "Button for creating a new distribution list in the sidebar"
-        },
-        "globals": {
-            "string": "Globale Adressbücher"
-        },
-        "personals": {
-            "string": "Adressbücher"
-        },
-        "add_personal": {
-            "string": "Adressbuch hinzufügen"
-        },
-        "subscriptions": {
-            "string": "Abonnements"
-        },
-        "add_subscriptions": {
-            "string": "Abonnements hinzufügen"
-        },
-        "name": {
-            "string": "Name",
-            "context": "Label for the name field in the address book sidebar."
-        },
-        "options": {
-            "edit": {
-                "title": {
-                    "string": "Adressbuch {name} bearbeiten"
-                },
-                "labels": {
-                    "name": {
-                        "string": "Name"
-                    }
-                }
-            },
-            "link": {
-                "title": {
-                    "string": "Links"
-                },
-                "labels": {
-                    "name": {
-                        "string": "CardDAV URL"
-                    }
-                },
-                "copy": {
-                    "string": "Copy URL",
-                    "context": "Aria label for copying the address book CardDAV URL."
-                }
-            },
-            "delete": {
-                "title": {
-                    "string": "Are you sure you want to delete address book {name}?"
-                }
-            },
-            "sharing": {
-                "string": "Sharing"
-            },
-            "import": {
-                "string": "Importieren"
-            },
-            "export": {
-                "string": "Exportieren"
-            },
-            "ios_download": {
-                "string": "Download iOS - MacOS configuration profile"
-            }
-        },
-        "sharing": {
-            "title": {
-                "string": "Address Book Sharing"
-            },
-            "description": {
-                "string": "Share this address book with other users. Shared users can view or modify contacts based on the permission level you grant."
-            },
-            "addUser": {
-                "string": "Add User"
-            },
-            "searchPlaceholder": {
-                "string": "Enter user email..."
-            },
-            "addButton": {
-                "string": "Share"
-            },
-            "added": {
-                "string": "Address book shared successfully"
-            },
-            "addError": {
-                "string": "Failed to share address book"
-            },
-            "removed": {
-                "string": "Share removed successfully"
-            },
-            "removeError": {
-                "string": "Failed to remove share"
-            },
-            "removeButton": {
-                "string": "Entfernen"
-            },
-            "existingShares": {
-                "string": "Geteilt mit"
-            },
-            "noShares": {
-                "string": "This address book is not shared with anyone yet."
-            },
-            "table": {
-                "user": {
-                    "string": "Benutzer"
-                },
-                "level": {
-                    "string": "Permission Level"
-                }
-            }
-        },
-        "all_contacts": {
-            "string": "All contacts",
-            "context": "Sidebar entry for cross-address-book contact listing"
-        },
-        "import": {
-            "description": {
-                "string": "Upload a contacts or distribution list file to import."
-            },
-            "title_book": {
-                "string": "Import into {name}"
-            },
-            "scope": {
-                "string": "Import target"
-            },
-            "scope_contacts": {
-                "string": "Contacts into this address book"
-            },
-            "scope_lists": {
-                "string": "Distribution lists into this address book"
-            },
-            "scope_new_book": {
-                "string": "Create a new address book"
-            },
-            "format": {
-                "string": "File format"
-            },
-            "format_json": {
-                "string": "JSON"
-            },
-            "format_vcard3": {
-                "string": "vCard 3.0"
-            },
-            "format_vcard4": {
-                "string": "vCard 4.0"
-            },
-            "format_ldif": {
-                "string": "LDIF"
-            },
-            "file": {
-                "string": "File"
-            },
-            "submit": {
-                "string": "Start import"
-            },
-            "processing": {
-                "string": "Import in progress..."
-            },
-            "cancel": {
-                "string": "Cancel import"
-            },
-            "success": {
-                "string": "Import completed successfully."
-            },
-            "success_with_counts": {
-                "string": "Import completed. Created: {counts}."
-            },
-            "close": {
-                "string": "Schließen"
-            }
-        },
-        "export": {
-            "description": {
-                "string": "Export this address book to a file."
-            },
-            "title_book": {
-                "string": "Export {name}"
-            },
-            "format": {
-                "string": "Export format"
-            },
-            "submit": {
-                "string": "Start export"
-            },
-            "processing": {
-                "string": "Export in progress..."
-            },
-            "success": {
-                "string": "Export completed. Your download should start shortly."
-            },
-            "close": {
-                "string": "Schließen"
-            }
-        }
+  "ADDRESS_BOOKS_SIDEBAR": {
+    "new_contact": { "string": "Neuer Kontakt", "context": "Button for creating a new contact in the sidebar" },
+    "new_distribution_list": { "string": "Neue Verteilerliste", "context": "Button for creating a new distribution list in the sidebar" },
+    "globals": { "string": "Globale Adressbücher" },
+    "personals": { "string": "Adressbücher" },
+    "add_personal": { "string": "Adressbuch hinzufügen" },
+    "subscriptions": { "string": "Abonnements" },
+    "add_subscriptions": { "string": "Abonnements hinzufügen" },
+    "name": { "string": "Name", "context": "Label for the name field in the address book sidebar." },
+    "options": {
+      "edit": {
+        "title": { "string": "Adressbuch {name} bearbeiten" },
+        "labels": { "name": { "string": "Name" } }
+      },
+      "link": {
+        "title": { "string": "Links" },
+        "labels": { "name": { "string": "CardDAV-URL" } },
+        "copy": { "string": "URL kopieren", "context": "Aria label for copying the address book CardDAV URL." }
+      },
+      "delete": { "title": { "string": "Möchten Sie das Adressbuch {name} wirklich löschen?" } }
+    },
+    "sharing": { "string": "Freigabe" },
+    "import": { "string": "Importieren" },
+    "export": { "string": "Exportieren" },
+    "ios_download": { "string": "iOS/macOS-Konfigurationsprofil herunterladen" },
+    "sharing": {
+      "title": { "string": "Adressbuch-Freigabe" },
+      "description": { "string": "Teilen Sie dieses Adressbuch mit anderen Benutzern. Geteilte Benutzer können Kontakte basierend auf der von Ihnen gewhrten Berechtigungsstufe anzeigen oder bearbeiten." },
+      "addUser": { "string": "Benutzer hinzufügen" },
+      "searchPlaceholder": { "string": "Geben Sie die E-Mail-Adresse des Benutzers ein..." },
+      "addButton": { "string": "Freigeben" },
+      "added": { "string": "Adressbuch erfolgreich geteilt" },
+      "addError": { "string": "Freigabe des Adressbuchs fehlgeschlagen" },
+      "removed": { "string": "Freigabe erfolgreich entfernt" },
+      "removeError": { "string": "Entfernen der Freigabe fehlgeschlagen" },
+      "removeButton": { "string": "Entfernen" },
+      "existingShares": { "string": "Geteilt mit" },
+      "noShares": { "string": "Dieses Adressbuch wird noch mit niemandem geteilt." },
+      "table": {
+        "user": { "string": "Benutzer" },
+        "level": { "string": "Berechtigungsstufe" }
+      }
+    },
+    "all_contacts": { "string": "Alle Kontakte", "context": "Sidebar entry for cross-address-book contact listing" },
+    "import": {
+      "description": { "string": "Laden Sie eine Kontakte- oder Verteilerlistendatei zum Importieren hoch." },
+      "title_book": { "string": "Import in {name}" },
+      "scope": { "string": "Importziel" },
+      "scope_contacts": { "string": "Kontakte in dieses Adressbuch" },
+      "scope_lists": { "string": "Verteilerlisten in dieses Adressbuch" },
+      "scope_new_book": { "string": "Neues Adressbuch erstellen" },
+      "format": { "string": "Dateiformat" },
+      "format_json": { "string": "JSON" },
+      "format_vcard3": { "string": "vCard 3.0" },
+      "format_vcard4": { "string": "vCard 4.0" },
+      "format_ldif": { "string": "LDIF" },
+      "file": { "string": "Datei" },
+      "submit": { "string": "Import starten" },
+      "processing": { "string": "Import läuft..." },
+      "cancel": { "string": "Import abbrechen" },
+      "success": { "string": "Import erfolgreich abgeschlossen." },
+      "success_with_counts": { "string": "Import abgeschlossen. Erstellt: {counts}." },
+      "close": { "string": "Schließen" }
+    },
+    "export": {
+      "description": { "string": "Exportieren Sie dieses Adressbuch in eine Datei." },
+      "title_book": { "string": "Export {name}" },
+      "format": { "string": "Exportformat" },
+      "submit": { "string": "Export starten" },
+      "processing": { "string": "Export läuft..." },
+      "success": { "string": "Export abgeschlossen. Ihr Download sollte kurz beginnen." },
+      "close": { "string": "Schließen" }
     }
+  }
 }
