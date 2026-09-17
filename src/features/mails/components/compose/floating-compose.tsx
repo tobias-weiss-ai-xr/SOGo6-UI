@@ -11,6 +11,7 @@ import { useComposeDraftPersistence } from '@/features/mails/hooks/use-compose-d
 import { useComposeFloatingWindowState } from '@/features/mails/hooks/use-compose-floating-window-state'
 import { useComposeSend } from '@/features/mails/hooks/use-compose-send'
 import { useExchangeOpenCloudTokenMutation } from '@/features/mails/store/opencloud-api'
+import { useExchangeNextcloudTokenMutation } from '@/features/mails/store/nextcloud-api'
 import { useProfile } from '@/features/user-profile'
 import { useIsMobile } from '@/hooks/use-mobile'
 import { useAppDispatch, useAppSelector } from '@/lib/redux/hooks'
@@ -105,6 +106,7 @@ export const FloatingCompose: React.FC<FloatingComposeProps> = ({
     fileInputRef,
     isDragOver,
     isUploading,
+    processFiles,
     handleAttachmentClick,
     handleFileChange,
     handleDragEnter,
@@ -191,10 +193,50 @@ export const FloatingCompose: React.FC<FloatingComposeProps> = ({
   }
 
   // Handle OpenCloud file selection
+  const [nextcloudPickerOpen, setNextcloudPickerOpen] = React.useState(false)
+  const [nextcloudAccessToken, setNextcloudAccessToken] = React.useState<
+    string | null
+  >(null)
+  const [exchangeNextcloudToken] = useExchangeNextcloudTokenMutation()
+
+  // Open Nextcloud picker and exchange token
+  const handleNextcloudAttachment = async () => {
+    try {
+      const result = await exchangeNextcloudToken({
+        scopes: ['files.read', 'files.write'],
+      })
+      const tok =
+        result.data?.data?.access_token ?? result.data?.access_token
+      if ('data' in result && tok) {
+        setNextcloudAccessToken(tok)
+        setNextcloudPickerOpen(true)
+      } else {
+        toast.error(t('opencloud_error.string'))
+      }
+    } catch {
+      toast.error(t('opencloud_error.string'))
+    }
+  }
+
+  // Handle Nextcloud file selection: bytes are attached like a local file.
+  const handleNextcloudFileSelect = async (file: {
+    file_path: string
+    action: string
+    file?: File
+  }) => {
+    setNextcloudPickerOpen(false)
+    setNextcloudAccessToken(null)
+    if (file.file) {
+      await processFiles([file.file])
+      toast.success(t('nextcloud.attached.string', { name: file.file.name }))
+    }
+  }
+
   const handleOpenCloudFileSelect = async (file: {
     file_path: string
-    share_url: string
+    share_url?: string
     action: string
+    file?: File
   }) => {
     dispatch(
       addAttachment({
@@ -339,6 +381,7 @@ export const FloatingCompose: React.FC<FloatingComposeProps> = ({
             body={body}
             onInsertTemplate={handleInsertTemplate}
             onOpenCloudAttachment={handleOpenCloudAttachment}
+            onNextcloudAttachment={handleNextcloudAttachment}
           />
         </>
       )}
@@ -364,13 +407,30 @@ export const FloatingCompose: React.FC<FloatingComposeProps> = ({
 
       {/* OpenCloud Picker dialog */}
       <Dialog open={openCloudPickerOpen} onOpenChange={setOpenCloudPickerOpen}>
-        <DialogContent className="max-h-[80vh] max-w-4xl">
+        <DialogContent className="z-[110] max-h-[80vh] max-w-4xl">
           <DialogHeader>
             <DialogTitle>{t('opencloud.string')}</DialogTitle>
           </DialogHeader>
           <OpenCloudPicker
             accessToken={openCloudAccessToken || undefined}
             onSelect={handleOpenCloudFileSelect}
+          />
+        </DialogContent>
+      </Dialog>
+
+      {/* Nextcloud Picker dialog */}
+      <Dialog
+        open={nextcloudPickerOpen}
+        onOpenChange={setNextcloudPickerOpen}
+      >
+        <DialogContent className="z-[110] max-h-[80vh] max-w-4xl">
+          <DialogHeader>
+            <DialogTitle>{t('nextcloud.string')}</DialogTitle>
+          </DialogHeader>
+          <OpenCloudPicker
+            source="nextcloud"
+            accessToken={nextcloudAccessToken || undefined}
+            onSelect={handleNextcloudFileSelect}
           />
         </DialogContent>
       </Dialog>

@@ -10,6 +10,10 @@ import {
   useSelectOpenCloudFileMutation,
 } from '@/features/mails/store/opencloud-api'
 import {
+  useBrowseNextcloudFilesQuery,
+  useExchangeNextcloudTokenMutation,
+} from '@/features/mails/store/nextcloud-api'
+import {
   ChevronLeft,
   ChevronRight,
   File,
@@ -54,34 +58,50 @@ interface FileItem {
 interface OpenCloudPickerProps {
   onSelect: (file: {
     file_path: string
-    share_url: string
+    share_url?: string
     action: string
+    file?: File
   }) => void
   accessToken?: string
+  source?: 'opencloud' | 'nextcloud'
 }
 
 export function OpenCloudPicker({
   onSelect,
   accessToken: externalToken,
+  source = 'opencloud',
 }: OpenCloudPickerProps): ReactNode {
   const t = useTranslations('OPENCLOUD')
   const [currentPath, setCurrentPath] = useState('/')
   const [search, setSearch] = useState('')
+  const isNextcloud = source === 'nextcloud'
 
-  const [exchangeToken, { data: tokenData }] =
-    useExchangeOpenCloudTokenMutation()
-  const { data: browseData, isLoading: browseLoading } =
-    useBrowseOpenCloudFilesQuery(
-      {
-        token: externalToken ? externalToken : (tokenData?.access_token ?? ''),
-        path: currentPath,
-      },
-      { skip: !externalToken && !tokenData?.access_token }
-    )
+  const [exchangeNcToken, ncTokenResult] = useExchangeNextcloudTokenMutation()
+  const [exchangeOcToken, ocTokenResult] = useExchangeOpenCloudTokenMutation()
+  const exchangeToken = isNextcloud ? exchangeNcToken : exchangeOcToken
+  const tokenData = (isNextcloud ? ncTokenResult : ocTokenResult).data
+  const exchangedToken = tokenData?.data?.access_token ?? tokenData?.access_token ?? ''
+  const ncBrowse = useBrowseNextcloudFilesQuery(
+    {
+      token: externalToken ? externalToken : exchangedToken,
+      path: currentPath,
+    },
+    { skip: !isNextcloud || (!externalToken && !exchangedToken) }
+  )
+  const ocBrowse = useBrowseOpenCloudFilesQuery(
+    {
+      token: externalToken ? externalToken : exchangedToken,
+      path: currentPath,
+    },
+    { skip: isNextcloud || (!externalToken && !exchangedToken) }
+  )
+  const { data: browseData, isLoading: browseLoading } = isNextcloud
+    ? ncBrowse
+    : ocBrowse
   const [selectFile, { isLoading: selecting }] =
     useSelectOpenCloudFileMutation()
 
-  const files: FileItem[] = browseData?.files ?? []
+  const files: FileItem[] = browseData?.data?.files ?? browseData?.files ?? []
 
   const handleRefresh = useCallback(() => {
     if (!externalToken) {
@@ -110,22 +130,38 @@ export function OpenCloudPicker({
         handleNavigate(file.name)
         return
       }
+      const token = externalToken ? externalToken : exchangedToken
+      const filePath =
+        currentPath === '/'
+          ? `/${file.name}`
+          : `${currentPath}/${file.name}`
       try {
-        const result = await selectFile({
-          token: externalToken
-            ? externalToken
-            : (tokenData?.access_token ?? ''),
-          file_path:
-            currentPath === '/'
-              ? `/${file.name}`
-              : `${currentPath}/${file.name}`,
-          action: 'attach',
-        }).unwrap()
-        onSelect({
-          file_path: result.file_path,
-          share_url: result.share_url,
-          action: result.action,
-        })
+        if (isNextcloud) {
+          // Download the raw bytes from Nextcloud and attach them like a local file.
+          // sogo6-server re-exchanges a fresh Nextcloud token internally; this
+          // call needs the SOGo session JWT (same one the apiClient uses).
+          const sogoJwt =
+            localStorage.getItem('NEXT_PUBLIC_JWT_STORAGE_KEY') || ''
+          const resp = await fetch(
+            `/api/user/v1/nextcloud/files/content?path=${encodeURIComponent(filePath)}`,
+            { headers: { Authorization: `Bearer ${sogoJwt}` } }
+          )
+          if (!resp.ok) throw new Error(`content ${resp.status}`)
+          const blob = await resp.blob()
+          const f = new File([blob], file.name, { type: blob.type || 'application/octet-stream' })
+          onSelect({ file_path: filePath, action: 'attach', file: f })
+        } else {
+          const result = await selectFile({
+            token,
+            file_path: filePath,
+            action: 'attach',
+          }).unwrap()
+          onSelect({
+            file_path: result.file_path,
+            share_url: result.share_url,
+            action: result.action,
+          })
+        }
         toast.success(t('picker.attached.string', { name: file.name }))
       } catch {
         toast.error(t('picker.error.string'))
@@ -139,6 +175,7 @@ export function OpenCloudPicker({
       onSelect,
       t,
       handleNavigate,
+      isNextcloud,
     ]
   )
 

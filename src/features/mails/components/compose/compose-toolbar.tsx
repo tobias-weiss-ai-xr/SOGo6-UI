@@ -20,6 +20,7 @@ import { useAppDispatch } from '@/lib/redux/hooks'
 import { cn } from '@/lib/utils'
 import {
   Cloud,
+  CloudUpload,
   MoreHorizontalIcon,
   MoreVerticalIcon,
   Paperclip,
@@ -62,6 +63,7 @@ interface ComposeToolbarProps {
   body?: string
   onInsertTemplate: (subject: string, body: string) => void
   onOpenCloudAttachment?: () => void
+  onNextcloudAttachment?: () => void
 }
 
 export function ComposeToolbar({
@@ -85,6 +87,7 @@ export function ComposeToolbar({
   body,
   onInsertTemplate,
   onOpenCloudAttachment,
+  onNextcloudAttachment,
 }: ComposeToolbarProps) {
   const t = useTranslations('COMPOSE')
   const dispatch = useAppDispatch()
@@ -120,6 +123,16 @@ export function ComposeToolbar({
           onClick={onOpenCloudAttachment}
         >
           <Cloud className="h-5 w-5" />
+        </Button>
+
+        <Button
+          variant="outline"
+          className="rounded"
+          size="sm"
+          title={t('from_nextcloud.string')}
+          onClick={onNextcloudAttachment}
+        >
+          <CloudUpload className="h-5 w-5" />
         </Button>
 
         {jitsiEnabled && (

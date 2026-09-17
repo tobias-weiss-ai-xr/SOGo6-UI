@@ -166,6 +166,7 @@ export function useComposeAttachmentUpload({
     fileInputRef,
     isDragOver,
     isUploading,
+    processFiles,
     handleAttachmentClick,
     handleFileChange,
     handleDragEnter,

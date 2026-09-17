@@ -202,7 +202,7 @@
     },
     "recipient_search": {
       "loading": {
-        "string": "Searching recipients\u2026",
+        "string": "Searching recipients…",
         "context": "Loading state while searching contacts and users"
       },
       "add_direct": {
@@ -227,6 +227,26 @@
         "string": "Attached from OpenCloud: {name}",
         "context": "Success message when a file is attached from OpenCloud"
       }
+    },
+    "from_nextcloud": {
+      "string": "From Nextcloud",
+      "context": "Option to attach files from Nextcloud in the compose toolbar"
+    },
+    "nextcloud": {
+      "string": "Nextcloud",
+      "context": "Label for Nextcloud file picker",
+      "attached": {
+        "string": "Attached from Nextcloud: {name}",
+        "context": "Success message when a file is attached from Nextcloud"
+      }
+    },
+    "from_cloud": {
+      "string": "From cloud",
+      "context": "Option to attach files from the cloud in the compose toolbar"
+    },
+    "opencloud_error": {
+      "string": "Could not reach the cloud provider",
+      "context": "Error toast when the cloud token exchange fails"
     }
   },
   "scheduleSend": {

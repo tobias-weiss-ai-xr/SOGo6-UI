@@ -115,7 +115,7 @@
       "context": "Restore the compose window to its previous size"
     },
     "close": {
-      "string": "Schlie\u00dfen",
+      "string": "Schließen",
       "context": "Close the compose window"
     },
     "open_in_new_page": {
@@ -155,7 +155,7 @@
       "context": "Button to request a return receipt for the email"
     },
     "priority": {
-      "string": "Priorit\u00e4t setzen",
+      "string": "Priorität setzen",
       "context": "Button to set the priority of the email"
     },
     "low": {
@@ -192,28 +192,48 @@
     },
     "recipient_search": {
       "loading": {
-        "string": "Searching recipients\u2026",
+        "string": "Searching recipients…",
         "context": "Loading state while searching contacts and users"
       },
       "add_direct": {
         "string": "Add \"{email}\"",
         "context": "Add a typed email address directly as recipient"
       }
+    },
+    "from_nextcloud": {
+      "string": "From Nextcloud",
+      "context": "Option to attach files from Nextcloud in the compose toolbar"
+    },
+    "nextcloud": {
+      "string": "Nextcloud",
+      "context": "Label for Nextcloud file picker",
+      "attached": {
+        "string": "Attached from Nextcloud: {name}",
+        "context": "Success message when a file is attached from Nextcloud"
+      }
+    },
+    "from_cloud": {
+      "string": "From cloud",
+      "context": "Option to attach files from the cloud in the compose toolbar"
+    },
+    "opencloud_error": {
+      "string": "Could not reach the cloud provider",
+      "context": "Fehlermeldung, wenn der Cloud-Token-Austausch fehlschlägt"
     }
   },
   "scheduleSend": {
     "title": "Zeitgesteuert senden",
-    "description": "W\u00e4hlen Sie, wann diese E-Mail zugestellt werden soll",
+    "description": "Wählen Sie, wann diese E-Mail zugestellt werden soll",
     "time": "Uhrzeit",
     "confirm": "Einplanen",
-    "clear": "Zeitplan l\u00f6schen",
-    "currentlyScheduled": "Aktuell geplant f\u00fcr {time}",
-    "change": "Zeitplan \u00e4ndern"
+    "clear": "Zeitplan löschen",
+    "currentlyScheduled": "Aktuell geplant für {time}",
+    "change": "Zeitplan ändern"
   },
   "schedule_sending": {
     "string": "Zeitgesteuert senden",
-    "change": "Zeitplan \u00e4ndern",
-    "clear": "Zeitplan l\u00f6schen",
+    "change": "Zeitplan ändern",
+    "clear": "Zeitplan löschen",
     "context": "Schedule the sending of the composed message"
   }
 }

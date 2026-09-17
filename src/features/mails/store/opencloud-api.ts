@@ -25,7 +25,7 @@ const injectedEndpoints = apiSlice.injectEndpoints({
   endpoints: (builder: EndpointBuilder<BaseQueryFn, string, 'api'>) => ({
     exchangeOpenCloudToken: builder.mutation<{ access_token: string; token_type: string; expires_in: number; scopes: string[] }, { scopes?: string[] }>({
       query: (body) => ({
-        url: '/api/user/v1/opencloud/token/exchange',
+        url: 'opencloud/token/exchange',
         method: 'POST',
         body,
       }),
@@ -33,7 +33,7 @@ const injectedEndpoints = apiSlice.injectEndpoints({
 
     browseOpenCloudFiles: builder.query<OpenCloudBrowseResponse, { token: string; path?: string; type?: string }>({
       query: ({ token, path, type }) => ({
-        url: '/api/user/v1/opencloud/files/browse',
+        url: 'opencloud/files/browse',
         method: 'GET',
         params: { path: path || '/', type: type || 'all' },
         headers: token ? { Authorization: `Bearer ${token}` } : {},
@@ -42,7 +42,7 @@ const injectedEndpoints = apiSlice.injectEndpoints({
 
     selectOpenCloudFile: builder.mutation<OpenCloudSelectResponse, { token: string; file_path: string; action?: string }>({
       query: ({ token, ...body }) => ({
-        url: '/api/user/v1/opencloud/files/select',
+        url: 'opencloud/files/select',
         method: 'POST',
         body: { file_path: body.file_path, action: body.action || 'attach' },
         headers: token ? { Authorization: `Bearer ${token}` } : {},
