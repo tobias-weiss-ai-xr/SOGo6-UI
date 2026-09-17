@@ -181,8 +181,10 @@ export const FloatingCompose: React.FC<FloatingComposeProps> = ({
       const result = await exchangeToken({
         scopes: ['files.read', 'files.write'],
       })
-      if ('data' in result && result.data?.access_token) {
-        setOpenCloudAccessToken(result.data.access_token)
+      // server wraps in create_api_base_response → { data: { access_token } }
+      const tok = result.data?.data?.access_token ?? result.data?.access_token
+      if ('data' in result && tok) {
+        setOpenCloudAccessToken(tok)
         setOpenCloudPickerOpen(true)
       } else {
         toast.error(t('opencloud_error.string'))
