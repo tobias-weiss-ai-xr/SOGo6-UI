@@ -8,6 +8,12 @@ const mockSetOpenMobile = jest.fn()
 const mockUseIsMobile = jest.fn()
 const mockUseAppSelector = jest.fn()
 const mockToastError = jest.fn()
+const mockPush = jest.fn()
+const mockResolvedTheme = jest.fn(() => 'light')
+
+jest.mock('next-themes', () => ({
+  useTheme: () => ({ resolvedTheme: mockResolvedTheme() }),
+}))
 
 jest.mock('@/lib/redux/hooks', () => ({
   useAppDispatch: () => mockDispatch,
@@ -38,6 +44,10 @@ jest.mock('next-intl', () => ({
   },
 }))
 
+jest.mock('@/lib/i18n/navigation', () => ({
+  useRouter: () => ({ push: mockPush }),
+}))
+
 jest.mock('next/navigation', () => ({
   useParams: jest.fn(() => ({})),
 }))
@@ -59,6 +69,7 @@ describe('useComposeAction', () => {
     jest.clearAllMocks()
     mockUseIsMobile.mockReturnValue(false)
     mockUseAppSelector.mockReturnValue(true)
+    mockResolvedTheme.mockReturnValue('light')
   })
 
   describe('configuration', () => {
@@ -85,6 +96,18 @@ describe('useComposeAction', () => {
           draftId: expect.any(String),
         })
       )
+    })
+
+    it('navigates to the full-page composer in the SOGo5 classic skin', () => {
+      mockResolvedTheme.mockReturnValue('sogo5-classic')
+      const { result } = renderHook(() => useComposeAction())
+
+      act(() => {
+        result.current.onClick()
+      })
+
+      expect(mockPush).toHaveBeenCalledWith('/compose')
+      expect(mockDispatch).not.toHaveBeenCalled()
     })
 
     it('shows toast and does not dispatch when max drafts reached', () => {
