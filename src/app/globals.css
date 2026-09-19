@@ -622,6 +622,16 @@ input + input,
   background-color: #56b04c; /* SOGo5 accent green */
 }
 
+/* SOGo5: unread mail rows are bold on the neutral list background — no tint */
+.sogo5-classic .bg-primary\/15.font-semibold {
+  background-color: transparent;
+}
+
+/* SOGo5 mail: the reading pane sits on #EEEEEE, not the page bg */
+.sogo5-classic .classic-reading-pane {
+  background-color: #eeeeee;
+}
+
 /* SOGo5 main content panes are neutral #EEEEEE, not teal-tinted */
 .sogo5-classic .mail-client {
   background-color: hsl(var(--background));

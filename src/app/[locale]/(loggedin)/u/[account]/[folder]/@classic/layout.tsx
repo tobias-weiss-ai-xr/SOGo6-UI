@@ -8,11 +8,13 @@ import React from 'react'
 function EmptyState() {
   const t = useTranslations('MAILS_LIST')
   return (
-    <div className="text-muted-foreground flex h-full w-full select-none flex-col items-center justify-center gap-4">
+    <div className="text-muted-foreground flex h-full w-full flex-col items-center justify-center gap-4 select-none">
       <div className="bg-muted rounded-full p-6">
         <Mail className="h-10 w-10 opacity-40" />
       </div>
-      <p className="text-sm font-medium opacity-50">{t('select_message.string')}</p>
+      <p className="text-sm font-medium opacity-50">
+        {t('select_message.string')}
+      </p>
     </div>
   )
 }
@@ -42,10 +44,13 @@ export default function ClassicLayout({
   return (
     <div className="flex h-full w-full flex-col overflow-hidden">
       <div className="flex min-h-0 flex-1 flex-row overflow-hidden">
-        <div className="border-border flex h-full w-[38%] min-w-0 shrink-0 flex-col overflow-hidden border-r" style={{ minWidth: 'min(280px, 38%)' }}>
+        <div
+          className="border-border flex h-full w-[38%] min-w-0 shrink-0 flex-col overflow-hidden border-r"
+          style={{ minWidth: 'min(280px, 38%)' }}
+        >
           {children}
         </div>
-        <div className="flex min-w-0 flex-1 flex-col overflow-hidden">
+        <div className="classic-reading-pane flex min-w-0 flex-1 flex-col overflow-hidden">
           {hasMailSelected ? visualization : <EmptyState />}
         </div>
       </div>
