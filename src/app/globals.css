@@ -600,6 +600,14 @@ input + input,
   letter-spacing: 0.02em;
 }
 
+/* SOGo5 compact controls: dense select/combobox triggers */
+.sogo5-classic button[role="combobox"] {
+  height: 1.75rem; /* 28px */
+  padding-top: 0;
+  padding-bottom: 0;
+  min-height: 0;
+}
+
 /* SOGo5 top band: the sidebar header joins the teal module toolbar so the
    toolbar reads full-width (sogo5 has ONE teal strip across sidebar+content).
    Reuse --header-background so both stay in sync. */
@@ -639,6 +647,28 @@ input + input,
 /* SOGo5 composer: Send is the bright branded green #00C853 */
 .sogo5-classic .classic-compose .bg-primary {
   background-color: #00c853;
+}
+
+/* SOGo5 header searches sit on a white pill so text is readable on the
+   teal band (idle mails-search pill + input searches in the other modules) */
+.sogo5-classic header .text-gray-500 {
+  color: #374151;
+  background-color: #ffffff;
+  border-color: #ffffff;
+}
+.sogo5-classic header input {
+  background-color: #ffffff;
+  color: #374151;
+}
+.sogo5-classic header input::placeholder {
+  color: #6b7280;
+  opacity: 1;
+}
+.sogo5-classic header input::placeholder + * {
+  color: #6b7280;
+}
+.sogo5-classic header .text-muted-foreground {
+  color: #6b7280; /* SOGo5: readable placeholder/overlay text on the teal band */
 }
 
 /* SOGo5 main content panes are neutral #EEEEEE, not teal-tinted */

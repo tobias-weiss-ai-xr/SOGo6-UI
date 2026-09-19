@@ -162,6 +162,18 @@ describe('ListItemDesktop', () => {
     expect(screen.getByTestId('archive-icon')).toBeInTheDocument()
   })
 
+  it('keeps the date column mounted so rows do not shift on hover', () => {
+    const { container } = renderWithRedux(<ListItemDesktop {...defaultProps} />)
+    const nameCell = screen.getByText('John Doe')
+    const row = nameCell.closest('[class*="cursor-pointer"]') ?? container
+    fireEvent.mouseEnter(row)
+    // The hover actions live in an absolutely positioned overlay so the
+    // date column keeps its layout slot.
+    const overlay = row?.querySelector('.absolute')
+    expect(overlay).not.toBeNull()
+    expect(overlay?.className).toContain('hidden')
+  })
+
   it('shows checkbox on hover', () => {
     renderWithRedux(<ListItemDesktop {...defaultProps} />)
     const container = screen.getByText('John Doe').closest('div')!

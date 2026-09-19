@@ -160,6 +160,9 @@
                 "snooze": {
                     "string": "Snooze",
                     "description": "Temporarily remove from inbox and return later"
+                },
+                "move_to_folder": {
+                    "string": "In Ordner verschieben"
                 }
             },
             "content": {
@@ -433,6 +436,23 @@
                         "TEMPLATE": {
                             "string": "Templates"
                         }
+                    }
+                },
+                "move_mails_dialog": {
+                    "title": {
+                        "string": "Move mails"
+                    },
+                    "description": {
+                        "string": "Move {count} selected mails to another folder."
+                    },
+                    "placeholder": {
+                        "string": "Select destination folder"
+                    },
+                    "confirm": {
+                        "string": "Move"
+                    },
+                    "cancel": {
+                        "string": "Cancel"
                     }
                 },
                 "move_to_dialog": {

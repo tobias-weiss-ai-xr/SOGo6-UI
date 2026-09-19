@@ -119,9 +119,9 @@ const ListItemClassic: React.FC<ListItemClassicProps> = ({
             >
               {displayName}
             </span>
-            <div className="flex shrink-0 items-center gap-1">
+            <div className="relative flex shrink-0 items-center gap-1">
               {onToggleRead && (
-                <div className="hidden group-hover:flex">
+                <div className="absolute top-1/2 right-0 hidden -translate-y-1/2 group-hover:flex">
                   <TooltipWrapper
                     content={
                       data.seen

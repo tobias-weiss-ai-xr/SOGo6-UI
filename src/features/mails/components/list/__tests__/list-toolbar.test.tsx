@@ -1,6 +1,5 @@
 import '@testing-library/jest-dom'
-import { fireEvent, render, screen } from '@testing-library/react'
-import React from 'react'
+import { render, screen } from '@testing-library/react'
 import ListToolbar from '../list-toolbar'
 
 jest.mock('@/features/mails/hooks/use-mail-item-actions', () => ({
@@ -48,6 +47,9 @@ jest.mock('@/features/mails/store/mails-api', () => ({
     isLoading: false,
   })),
   useBatchMailActionMutation: jest.fn(() => [jest.fn()]),
+  useGetFoldersQuery: jest.fn(() => ({
+    data: [{ path: 'INBOX', name: 'INBOX', selectable: true }],
+  })),
 }))
 
 jest.mock('next/navigation', () => ({
@@ -58,7 +60,10 @@ jest.mock('next/navigation', () => ({
 jest.mock('@/lib/redux/hooks', () => ({
   useAppDispatch: jest.fn(() => jest.fn()),
   useAppSelector: jest.fn((fn: (s: any) => any) =>
-    fn({ mailLayout: { selectedMailIds: [] }, mailNavigation: { skipFolderFetch: false } })
+    fn({
+      mailLayout: { selectedMailIds: [] },
+      mailNavigation: { skipFolderFetch: false },
+    })
   ),
 }))
 
@@ -112,7 +117,10 @@ jest.mock('@/features/mails/hooks/use-list-toolbar-mode', () => ({
 }))
 
 const mockUseAppSelector = jest.fn((fn: (s: any) => any) =>
-  fn({ mailLayout: { selectedMailIds: [] }, mailNavigation: { skipFolderFetch: false } })
+  fn({
+    mailLayout: { selectedMailIds: [] },
+    mailNavigation: { skipFolderFetch: false },
+  })
 )
 
 describe('ListToolbar', () => {
@@ -161,7 +169,10 @@ describe('ListToolbar', () => {
     it('shows MailActionsBar when items selected', () => {
       const { useAppSelector } = require('@/lib/redux/hooks')
       useAppSelector.mockImplementation((fn: (s: any) => any) =>
-        fn({ mailLayout: { selectedMailIds: ['1'] }, mailNavigation: { skipFolderFetch: false } })
+        fn({
+          mailLayout: { selectedMailIds: ['1'] },
+          mailNavigation: { skipFolderFetch: false },
+        })
       )
       render(<ListToolbar />)
       expect(screen.getByTestId('mail-actions-bar')).toBeInTheDocument()
@@ -192,19 +203,25 @@ describe('ListToolbar', () => {
 
   describe('mail detail view', () => {
     it('shows mail navigation instead of list controls on mobile', () => {
-      const { useListToolbarMode } = require('@/features/mails/hooks/use-list-toolbar-mode')
+      const {
+        useListToolbarMode,
+      } = require('@/features/mails/hooks/use-list-toolbar-mode')
       useListToolbarMode.mockReturnValue('detail-navigation')
 
       render(<ListToolbar />)
 
       expect(screen.getByTestId('mail-detail-navigation')).toBeInTheDocument()
       expect(screen.queryByTestId('list-pagination')).not.toBeInTheDocument()
-      expect(screen.queryByTestId('list-filter-dropdown')).not.toBeInTheDocument()
+      expect(
+        screen.queryByTestId('list-filter-dropdown')
+      ).not.toBeInTheDocument()
       expect(screen.queryByTestId('checkbox')).not.toBeInTheDocument()
     })
 
     it('renders nothing on desktop full-screen mail detail', () => {
-      const { useListToolbarMode } = require('@/features/mails/hooks/use-list-toolbar-mode')
+      const {
+        useListToolbarMode,
+      } = require('@/features/mails/hooks/use-list-toolbar-mode')
       useListToolbarMode.mockReturnValue('hidden')
 
       const { container } = render(<ListToolbar />)

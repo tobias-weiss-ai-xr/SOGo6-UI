@@ -160,6 +160,9 @@
                 "snooze": {
                     "string": "Snooze",
                     "description": "Temporarily remove from inbox and return later"
+                },
+                "move_to_folder": {
+                    "string": "Move to folder"
                 }
             },
             "content": {
@@ -345,7 +348,7 @@
                         "description": "Label for the folder name input"
                     },
                     "placeholder": {
-                        "string": "e.g. Work, Archives\u2026",
+                        "string": "e.g. Work, Archives…",
                         "description": "Placeholder for the folder name input"
                     },
                     "submit": {
@@ -433,6 +436,23 @@
                         "TEMPLATE": {
                             "string": "Templates"
                         }
+                    }
+                },
+                "move_mails_dialog": {
+                    "title": {
+                        "string": "Move mails"
+                    },
+                    "description": {
+                        "string": "Move {count} selected mails to another folder."
+                    },
+                    "placeholder": {
+                        "string": "Select destination folder"
+                    },
+                    "confirm": {
+                        "string": "Move"
+                    },
+                    "cancel": {
+                        "string": "Cancel"
                     }
                 },
                 "move_to_dialog": {
@@ -624,7 +644,7 @@
                         "description": "Label for the folder name input"
                     },
                     "placeholder": {
-                        "string": "e.g. Work, Archives\u2026",
+                        "string": "e.g. Work, Archives…",
                         "description": "Placeholder for the folder name input"
                     },
                     "submit": {
@@ -674,7 +694,7 @@
                 "description": "Message templates"
             },
             "virtual_folder": {
-                "string": "Virtual folder \u2014 expand to browse subfolders",
+                "string": "Virtual folder — expand to browse subfolders",
                 "description": "Tooltip for non-selectable IMAP folders"
             },
             "virtual_empty": {
@@ -712,7 +732,7 @@
                 "description": "Message when an attendee sends an iMIP REPLY"
             },
             "sync_pending": {
-                "string": "Syncing with your calendar\u2026",
+                "string": "Syncing with your calendar…",
                 "description": "Event not found yet after opening invitation mail"
             },
             "retry": {

@@ -7,6 +7,7 @@ import ListPagination from '@/features/mails/components/list/list-pagination'
 import ListSort from '@/features/mails/components/list/list-sort'
 import MailActionsBar from '@/features/mails/components/mail/mail-action-bar'
 import MailDetailNavigation from '@/features/mails/components/mail/mail-detail-navigation'
+import { BulkMoveDialog } from '@/features/mails/components/sidebars/bulk-move-dialog'
 import { useFolderMessages } from '@/features/mails/hooks/use-folder-messages'
 import { useListToolbarMode } from '@/features/mails/hooks/use-list-toolbar-mode'
 import { useMailItemActions } from '@/features/mails/hooks/use-mail-item-actions'
@@ -14,6 +15,7 @@ import {
   clearSelectedMails,
   setSelectedMails,
 } from '@/features/mails/store/mail-layout-slice'
+import { useBatchMailActionMutation } from '@/features/mails/store/mails-api'
 import { getClientFilteredMails } from '@/features/mails/utils/client-mail-list-filter'
 import {
   folderPathFromParams,
@@ -22,11 +24,18 @@ import {
 import { useIsMobile } from '@/hooks/use-mobile'
 import { useAppDispatch, useAppSelector } from '@/lib/redux/hooks'
 import type { RootState } from '@/lib/redux/store'
-import { useBatchMailActionMutation } from '@/features/mails/store/mails-api'
-import { Archive, Flame, Inbox, Mail, Tag, Trash2 } from 'lucide-react'
+import {
+  Archive,
+  Flame,
+  FolderInput,
+  Inbox,
+  Mail,
+  Tag,
+  Trash2,
+} from 'lucide-react'
 import { useTranslations } from 'next-intl'
 import { useParams, useSearchParams } from 'next/navigation'
-import React, { useCallback, useMemo } from 'react'
+import React, { useCallback, useMemo, useState } from 'react'
 
 const ListToolbar: React.FC = () => {
   const t = useTranslations('MAILS_LIST')
@@ -84,13 +93,39 @@ const ListToolbar: React.FC = () => {
 
   const tActions = useTranslations('MAILS_LIST.actions')
   const tBar = useTranslations('MAILS_COMMONS.mail_display.action-bar')
-  const { isJunk } =
-    useMailItemActions({
-      accountId: accountString,
-      folder: folderPath,
-    })
+  const { isJunk } = useMailItemActions({
+    accountId: accountString,
+    folder: folderPath,
+  })
 
   const [batchAction] = useBatchMailActionMutation()
+  const [moveOpen, setMoveOpen] = useState(false)
+  const [moveSubmitting, setMoveSubmitting] = useState(false)
+
+  const handleBulkMove = useCallback(
+    async (destination: string) => {
+      const mailUids = selectedIds.map(Number).filter((n: number) => !isNaN(n))
+      if (mailUids.length === 0) return
+      setMoveSubmitting(true)
+      try {
+        await batchAction({
+          accountId: accountString,
+          folder: folderPath,
+          action: 'move',
+          mailUids,
+          data: destination,
+        }).unwrap()
+        setMoveOpen(false)
+        dispatch(clearSelectedMails())
+      } catch {
+        // keep dialog open + selection intact; error surfaces via
+        // the global notification handler
+      } finally {
+        setMoveSubmitting(false)
+      }
+    },
+    [selectedIds, accountString, folderPath, batchAction, dispatch]
+  )
 
   const handleBulkAction = useCallback(
     async (idx: number) => {
@@ -175,7 +210,15 @@ const ListToolbar: React.FC = () => {
       }
       dispatch(clearSelectedMails())
     },
-    [filteredMails, selectedIds, accountString, folderPath, batchAction, isJunk, dispatch]
+    [
+      filteredMails,
+      selectedIds,
+      accountString,
+      folderPath,
+      batchAction,
+      isJunk,
+      dispatch,
+    ]
   )
 
   if (toolbarMode === 'hidden') {
@@ -231,13 +274,22 @@ const ListToolbar: React.FC = () => {
                   icon: isJunk ? <Inbox size={16} /> : <Flame size={16} />,
                 },
                 {
+                  id: 'bulk-move',
+                  title: tBar('move_to_folder.string'),
+                  icon: <FolderInput size={16} />,
+                },
+                {
                   id: 'bulk-label',
                   title: tBar('label.string'),
                   icon: <Tag size={16} />,
                   disabled: true,
                 },
               ]}
-              onAction={(idx) => {
+              onAction={(idx, action) => {
+                if (action?.id === 'bulk-move') {
+                  setMoveOpen(true)
+                  return
+                }
                 void handleBulkAction(idx)
               }}
             />
@@ -263,6 +315,15 @@ const ListToolbar: React.FC = () => {
           />
         </div>
       </div>
+      <BulkMoveDialog
+        open={moveOpen}
+        onOpenChange={setMoveOpen}
+        accountId={accountString}
+        currentFolder={folderPath}
+        count={selectedIds.length}
+        submitting={moveSubmitting}
+        onSubmit={(destination) => void handleBulkMove(destination)}
+      />
     </div>
   )
 }

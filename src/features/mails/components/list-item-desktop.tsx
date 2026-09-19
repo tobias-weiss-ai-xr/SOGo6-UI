@@ -113,7 +113,7 @@ const ListItemDesktop: React.FC<ListItemDesktopProps> = ({
         <div>
           <Star
             fill={flagged ? 'yellow' : 'white'}
-            className="h-4 w-4 cursor-pointer transition-all duration-200 hover:h-5 hover:w-5"
+            className="h-4 w-4 cursor-pointer transition-transform duration-150 hover:scale-110"
             strokeWidth={1}
             aria-label={flagged ? t('unstar.string') : t('star.string')}
             onClick={(e) => {
@@ -185,81 +185,88 @@ const ListItemDesktop: React.FC<ListItemDesktopProps> = ({
           )}
         </div>
 
-        <span className="text-muted-foreground w-1/5 text-right group-hover:hidden">
-          {hasAttachment && <Paperclip className="mr-2 inline h-4 w-4" />}
-          {formatDate(data.date)}
-        </span>
-
-        <div className="hidden w-1/5 items-center justify-end gap-1 group-hover:flex">
-          <TooltipWrapper
-            content={
-              data.seen
-                ? t('actions.mark_as_unread.string')
-                : t('actions.mark_as_read.string')
-            }
-            side="top"
+        <div className="relative flex w-1/5 shrink-0 items-center justify-end">
+          <span
+            className={cn(
+              'text-muted-foreground w-full truncate text-right',
+              isSelected || undefined
+            )}
           >
-            <button
-              onClick={(e) => {
-                e.stopPropagation()
-                onToggleRead?.(data.id)
-              }}
-              className="hover:bg-background cursor-pointer rounded p-1 transition-colors"
-            >
-              {data.seen ? <MailOpen size={16} /> : <Mail size={16} />}
-            </button>
-          </TooltipWrapper>
+            {hasAttachment && <Paperclip className="mr-2 inline h-4 w-4" />}
+            {formatDate(data.date)}
+          </span>
 
-          <TooltipWrapper content={t('actions.delete.string')} side="top">
-            <button
-              onClick={(e) => {
-                e.stopPropagation()
-                onDelete?.(data.id)
-              }}
-              className="hover:bg-background cursor-pointer rounded p-1 transition-colors"
+          <div className="bg-background/95 absolute top-1/2 right-0 hidden -translate-y-1/2 items-center gap-1 rounded-md pl-2 group-hover:flex">
+            <TooltipWrapper
+              content={
+                data.seen
+                  ? t('actions.mark_as_unread.string')
+                  : t('actions.mark_as_read.string')
+              }
+              side="top"
             >
-              <Trash2 size={16} />
-            </button>
-          </TooltipWrapper>
-
-          <TooltipWrapper content={t('actions.archive.string')} side="top">
-            <button
-              onClick={(e) => {
-                e.stopPropagation()
-                onArchive?.(data.id)
-              }}
-              className="hover:bg-background cursor-pointer rounded p-1 transition-colors"
-            >
-              <Archive size={16} />
-            </button>
-          </TooltipWrapper>
-
-          {onMoveToInbox ? (
-            <TooltipWrapper content={tBar('move_to_inbox.string')} side="top">
               <button
                 onClick={(e) => {
                   e.stopPropagation()
-                  onMoveToInbox(data.id)
+                  onToggleRead?.(data.id)
                 }}
                 className="hover:bg-background cursor-pointer rounded p-1 transition-colors"
               >
-                <Inbox size={16} />
+                {data.seen ? <MailOpen size={16} /> : <Mail size={16} />}
               </button>
             </TooltipWrapper>
-          ) : null}
-          {onSpam ? (
-            <TooltipWrapper content={tBar('report_spam.string')} side="top">
+
+            <TooltipWrapper content={t('actions.delete.string')} side="top">
               <button
                 onClick={(e) => {
                   e.stopPropagation()
-                  onSpam(data.id)
+                  onDelete?.(data.id)
                 }}
                 className="hover:bg-background cursor-pointer rounded p-1 transition-colors"
               >
-                <Flame size={16} />
+                <Trash2 size={16} />
               </button>
             </TooltipWrapper>
-          ) : null}
+
+            <TooltipWrapper content={t('actions.archive.string')} side="top">
+              <button
+                onClick={(e) => {
+                  e.stopPropagation()
+                  onArchive?.(data.id)
+                }}
+                className="hover:bg-background cursor-pointer rounded p-1 transition-colors"
+              >
+                <Archive size={16} />
+              </button>
+            </TooltipWrapper>
+
+            {onMoveToInbox ? (
+              <TooltipWrapper content={tBar('move_to_inbox.string')} side="top">
+                <button
+                  onClick={(e) => {
+                    e.stopPropagation()
+                    onMoveToInbox(data.id)
+                  }}
+                  className="hover:bg-background cursor-pointer rounded p-1 transition-colors"
+                >
+                  <Inbox size={16} />
+                </button>
+              </TooltipWrapper>
+            ) : null}
+            {onSpam ? (
+              <TooltipWrapper content={tBar('report_spam.string')} side="top">
+                <button
+                  onClick={(e) => {
+                    e.stopPropagation()
+                    onSpam(data.id)
+                  }}
+                  className="hover:bg-background cursor-pointer rounded p-1 transition-colors"
+                >
+                  <Flame size={16} />
+                </button>
+              </TooltipWrapper>
+            ) : null}
+          </div>
         </div>
       </div>
       <Separator className="m-0" />
