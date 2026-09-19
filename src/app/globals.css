@@ -390,9 +390,10 @@
     --header-foreground: 0 0% 100%;
     --header-muted-foreground: 180 31% 79%;
 
-    /* SOGo5 fully teal top band: toolbar + sidebar header share the color */
+    /* SOGo5 fully teal top band: toolbar + sidebar header share the color;
+       the sidebar header zone is the lighter #639997 SOGo5 shade */
     --header-toolbar-bg: 180 25% 40%;
-    --sidebar-header-bg: 180 25% 40%;
+    --sidebar-header-bg: 178 21% 49%; /* #639997 */
   }
 }
 
