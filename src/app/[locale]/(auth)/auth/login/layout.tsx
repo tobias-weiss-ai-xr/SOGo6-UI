@@ -37,7 +37,7 @@ const LoginLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
           priority
         />
       </div>
-      <div className="bg-primary flex flex-1 justify-center p-6 sm:justify-center sm:p-10 lg:min-h-[400px] lg:items-center lg:justify-start">
+      <div className="login-panel bg-primary flex flex-1 justify-center p-6 sm:justify-center sm:p-10 lg:min-h-[400px] lg:items-center lg:justify-start">
         <div className="w-full max-w-xs">{children}</div>
       </div>
       <div className="absolute top-4 right-4">

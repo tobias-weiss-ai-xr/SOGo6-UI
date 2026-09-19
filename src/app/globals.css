@@ -374,21 +374,25 @@
     /* Material 2px radii */
     --radius: 0.125rem;
 
-    /* White sidenav (SOGo5), teal toolbar */
-    --sidebar-background: 0 0% 100%;
+    /* SOGo5: gray folder sidebar (#E0E0E0) with teal icon rail + toolbar */
+    --sidebar-background: 0 0% 88%;          /* #E0E0E0 SOGo5 sidebar */
     --sidebar-background-secondary: 0 0% 96%;
-    --sidebar-foreground: 0 0% 13%;
+    --sidebar-foreground: 0 0% 20%;
     --sidebar-foreground-secondary: 0 0% 46%;
-    --sidebar-muted-foreground-secondary: 0 0% 62%;
+    --sidebar-muted-foreground-secondary: 0 0% 46%;
     --sidebar-primary: 180 25% 40%;
     --sidebar-accent: 180 31% 79%;
     --sidebar-accent-foreground: 0 0% 13%;
-    --sidebar-border: 0 0% 88%;
+    --sidebar-border: 0 0% 80%;
     --sidebar-ring: 180 25% 40%;
 
     --header-background: 180 25% 40%; /* SOGo5 teal module toolbar */
     --header-foreground: 0 0% 100%;
     --header-muted-foreground: 180 31% 79%;
+
+    /* SOGo5 fully teal top band: toolbar + sidebar header share the color */
+    --header-toolbar-bg: 180 25% 40%;
+    --sidebar-header-bg: 180 25% 40%;
   }
 }
 
@@ -593,4 +597,35 @@ input + input,
   text-transform: uppercase;
   font-weight: 500;
   letter-spacing: 0.02em;
+}
+
+/* SOGo5 top band: the sidebar header joins the teal module toolbar so the
+   toolbar reads full-width (sogo5 has ONE teal strip across sidebar+content).
+   Reuse --header-background so both stay in sync. */
+.sogo5-classic [data-sidebar="header"] {
+  background-color: hsl(var(--sidebar-header-bg, var(--header-background)));
+  color: hsl(var(--header-foreground));
+}
+.sogo5-classic [data-sidebar="header"] [data-sidebar="menu-button"]:hover {
+  background-color: rgba(0, 0, 0, 0.12);
+  color: inherit;
+}
+
+/* Gray SOGo5 folder sidebar body sits under the teal band */
+.sogo5-classic [data-sidebar="content"] {
+  background-color: hsl(var(--sidebar-background));
+}
+
+/* SOGo5 login: form card on neutral background + solid green right panel */
+.sogo5-classic .login-panel {
+  background-color: #56b04c; /* SOGo5 accent green */
+}
+
+/* SOGo5 main content panes are neutral #EEEEEE, not teal-tinted */
+.sogo5-classic .mail-client {
+  background-color: hsl(var(--background));
+}
+
+.sogo5-classic [data-sidebar="footer"] {
+  background-color: hsl(var(--sidebar-background));
 }
