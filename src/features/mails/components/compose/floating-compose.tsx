@@ -41,10 +41,13 @@ import ScheduleSendPicker from './schedule-send-picker'
 
 interface FloatingComposeProps {
   draftId: string
+  /** Render as a full-page form (SOGo5-classic) instead of a floating window */
+  fullPage?: boolean
 }
 
 export const FloatingCompose: React.FC<FloatingComposeProps> = ({
   draftId,
+  fullPage = false,
 }) => {
   const t = useTranslations('COMPOSE')
   const isMobile = useIsMobile()
@@ -244,27 +247,47 @@ export const FloatingCompose: React.FC<FloatingComposeProps> = ({
 
   if (!draft) return null
 
-  return (
-    <motion.div
-      style={{ x }}
-      drag={isDraggable ? 'x' : false}
-      dragControls={dragControls}
-      dragListener={false}
-      dragMomentum={false}
-      dragElastic={0}
-      onFocusCapture={() => dispatch(setActiveDraft(draftId))}
-      onPointerDownCapture={() => dispatch(setActiveDraft(draftId))}
-      className={cn(
-        'bg-background pointer-events-auto relative flex flex-col border transition-all duration-300',
-        !isMobile && !isMaximized && 'rounded-t-lg',
-        containerClasses,
-        isMaximized && !isMobile && 'rounded-lg'
-      )}
-      onDragEnter={handleDragEnter}
-      onDragLeave={handleDragLeave}
-      onDragOver={handleDragOver}
-      onDrop={(e) => void handleDrop(e)}
-    >
+  const composeDialogs = (
+    <>
+      {/* Schedule Send picker dialog */}
+      <ScheduleSendPicker
+        open={schedulePickerOpen}
+        onOpenChange={setSchedulePickerOpen}
+        onConfirm={handleScheduleConfirm}
+        onClear={handleClearSchedule}
+        currentValue={sendAt}
+      />
+
+      <ComposeSendAlerts
+        showNoRecipientAlert={showNoRecipientAlert}
+        onNoRecipientAlertOpenChange={setShowNoRecipientAlert}
+        emptyContentAlert={emptyContentAlert}
+        onEmptyContentAlertOpenChange={(open) =>
+          !open && setEmptyContentAlert(null)
+        }
+        onConfirmSendAnyway={() => void handleConfirmSendAnyway()}
+      />
+
+      {/* OpenCloud Picker dialog */}
+      <Dialog open={openCloudPickerOpen} onOpenChange={setOpenCloudPickerOpen}>
+        <DialogContent
+          className="max-h-[80vh] max-w-4xl"
+          aria-describedby={undefined}
+        >
+          <DialogHeader>
+            <DialogTitle>{t('opencloud.string')}</DialogTitle>
+          </DialogHeader>
+          <OpenCloudPicker
+            accessToken={openCloudAccessToken || undefined}
+            onSelect={handleOpenCloudFileSelect}
+          />
+        </DialogContent>
+      </Dialog>
+    </>
+  )
+
+  const composeBody = (
+    <>
       {isDragOver && !showMinimized && (
         <div className="border-primary bg-primary/10 pointer-events-none absolute inset-0 z-50 flex items-center justify-center rounded-lg border-2 border-dashed">
           <div className="text-primary flex flex-col items-center gap-2">
@@ -275,22 +298,6 @@ export const FloatingCompose: React.FC<FloatingComposeProps> = ({
           </div>
         </div>
       )}
-
-      <ComposeWindowHeader
-        subject={subject}
-        isMobile={isMobile}
-        isDraggable={isDraggable}
-        showMinimized={showMinimized}
-        isMaximized={isMaximized}
-        isSending={isSending}
-        isUploading={isUploading}
-        dragControls={dragControls}
-        onMinimize={handleMinimize}
-        onMaximize={handleMaximize}
-        onRestore={handleRestore}
-        onDiscardDraft={() => void handleDiscardDraft()}
-        onClose={handleClose}
-      />
 
       {!showMinimized && (
         <>
@@ -342,41 +349,58 @@ export const FloatingCompose: React.FC<FloatingComposeProps> = ({
           />
         </>
       )}
+    </>
+  )
 
-      {/* Schedule Send picker dialog */}
-      <ScheduleSendPicker
-        open={schedulePickerOpen}
-        onOpenChange={setSchedulePickerOpen}
-        onConfirm={handleScheduleConfirm}
-        onClear={handleClearSchedule}
-        currentValue={sendAt}
+  if (fullPage) {
+    return (
+      <div className="bg-background flex h-full w-full flex-col overflow-hidden">
+        {composeBody}
+        {composeDialogs}
+      </div>
+    )
+  }
+
+  return (
+    <motion.div
+      style={{ x }}
+      drag={isDraggable ? 'x' : false}
+      dragControls={dragControls}
+      dragListener={false}
+      dragMomentum={false}
+      dragElastic={0}
+      onFocusCapture={() => dispatch(setActiveDraft(draftId))}
+      onPointerDownCapture={() => dispatch(setActiveDraft(draftId))}
+      className={cn(
+        'bg-background pointer-events-auto relative flex flex-col border transition-all duration-300',
+        !isMobile && !isMaximized && 'rounded-t-lg',
+        containerClasses,
+        isMaximized && !isMobile && 'rounded-lg'
+      )}
+      onDragEnter={handleDragEnter}
+      onDragLeave={handleDragLeave}
+      onDragOver={handleDragOver}
+      onDrop={(e) => void handleDrop(e)}
+    >
+      {composeBody}
+
+      <ComposeWindowHeader
+        subject={subject}
+        isMobile={isMobile}
+        isDraggable={isDraggable}
+        showMinimized={showMinimized}
+        isMaximized={isMaximized}
+        isSending={isSending}
+        isUploading={isUploading}
+        dragControls={dragControls}
+        onMinimize={handleMinimize}
+        onMaximize={handleMaximize}
+        onRestore={handleRestore}
+        onDiscardDraft={() => void handleDiscardDraft()}
+        onClose={handleClose}
       />
 
-      <ComposeSendAlerts
-        showNoRecipientAlert={showNoRecipientAlert}
-        onNoRecipientAlertOpenChange={setShowNoRecipientAlert}
-        emptyContentAlert={emptyContentAlert}
-        onEmptyContentAlertOpenChange={(open) =>
-          !open && setEmptyContentAlert(null)
-        }
-        onConfirmSendAnyway={() => void handleConfirmSendAnyway()}
-      />
-
-      {/* OpenCloud Picker dialog */}
-      <Dialog open={openCloudPickerOpen} onOpenChange={setOpenCloudPickerOpen}>
-        <DialogContent
-          className="max-h-[80vh] max-w-4xl"
-          aria-describedby={undefined}
-        >
-          <DialogHeader>
-            <DialogTitle>{t('opencloud.string')}</DialogTitle>
-          </DialogHeader>
-          <OpenCloudPicker
-            accessToken={openCloudAccessToken || undefined}
-            onSelect={handleOpenCloudFileSelect}
-          />
-        </DialogContent>
-      </Dialog>
+      {composeDialogs}
     </motion.div>
   )
 }
