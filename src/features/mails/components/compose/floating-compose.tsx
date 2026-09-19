@@ -356,7 +356,7 @@ export const FloatingCompose: React.FC<FloatingComposeProps> = ({
     // SOGo5 compose = the mail module split: form fields in the left column,
     // editor in the #EEEEEE reading pane. Same geometry as the classic mail list.
     return (
-      <div className="flex h-full w-full flex-col overflow-hidden">
+      <div className="classic-compose flex h-full w-full flex-col overflow-hidden">
         <div className="flex min-h-0 flex-1 flex-row">
           <div className="border-border flex w-[38%] min-w-0 shrink-0 flex-col overflow-hidden border-r">
             <ComposeHeader draftId={draftId} />

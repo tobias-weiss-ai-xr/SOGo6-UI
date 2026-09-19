@@ -631,6 +631,15 @@ input + input,
 .sogo5-classic .classic-reading-pane {
   background-color: #eeeeee;
 }
+.sogo5-classic .classic-reading-pane .ck-content,
+.sogo5-classic .classic-reading-pane .ck-editor__main {
+  background-color: #eeeeee;
+}
+
+/* SOGo5 composer: Send is the bright branded green #00C853 */
+.sogo5-classic .classic-compose .bg-primary {
+  background-color: #00c853;
+}
 
 /* SOGo5 main content panes are neutral #EEEEEE, not teal-tinted */
 .sogo5-classic .mail-client {
