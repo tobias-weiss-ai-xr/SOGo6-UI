@@ -353,9 +353,55 @@ export const FloatingCompose: React.FC<FloatingComposeProps> = ({
   )
 
   if (fullPage) {
+    // SOGo5 compose = the mail module split: form fields in the left column,
+    // editor in the #EEEEEE reading pane. Same geometry as the classic mail list.
     return (
-      <div className="bg-background flex h-full w-full flex-col overflow-hidden">
-        {composeBody}
+      <div className="flex h-full w-full flex-col overflow-hidden">
+        <div className="flex min-h-0 flex-1 flex-row">
+          <div className="border-border flex w-[38%] min-w-0 shrink-0 flex-col overflow-hidden border-r">
+            <ComposeHeader draftId={draftId} />
+            <div className="border-border border-t" />
+            <ComposeAttachmentList
+              draftId={draftId}
+              accountId={accountId}
+              mailKey={mailKey}
+              attachments={attachments}
+            />
+            <div className="flex-1" />
+            <ComposeToolbar
+              draftId={draftId}
+              fileInputRef={fileInputRef}
+              isUploading={isUploading}
+              onAttachmentClick={handleAttachmentClick}
+              onFileChange={handleFileChange}
+              jitsiEnabled={Boolean(jitsiLinkEnabled && jitsiBaseUrl)}
+              onInsertJitsi={handleInsertJitsi}
+              requestReadReceipt={requestReadReceipt}
+              signMessage={signMessage}
+              encryptMessage={encryptMessage}
+              selectedPriority={selectedPriority}
+              isSending={isSending}
+              onSend={() => void handleSend()}
+              sendAt={sendAt}
+              onScheduleSend={() => setSchedulePickerOpen(true)}
+              onClearSchedule={handleClearSchedule}
+              subject={subject}
+              body={body}
+              onInsertTemplate={handleInsertTemplate}
+              onOpenCloudAttachment={handleOpenCloudAttachment}
+            />
+          </div>
+          <div className="classic-reading-pane flex min-w-0 flex-1 flex-col overflow-hidden">
+            <div
+              className={cn(
+                'flex flex-1 flex-col overflow-y-auto',
+                styles.compose_editor
+              )}
+            >
+              <CustomEditor draftId={draftId} />
+            </div>
+          </div>
+        </div>
         {composeDialogs}
       </div>
     )
