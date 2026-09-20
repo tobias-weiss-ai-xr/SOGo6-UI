@@ -237,6 +237,18 @@
       "export": {
         "string": "Export Calendar"
       },
+      "import": {
+        "string": "Import Calendar",
+        "description": {
+          "string": "Import events from an .ics file into this calendar."
+        },
+        "success": {
+          "string": "Import complete"
+        },
+        "choose_file": {
+          "string": "Choose .ics file"
+        }
+      },
       "color": {
         "string": "Calendar Color"
       },

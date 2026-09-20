@@ -237,12 +237,36 @@
             "export": {
                 "string": "Export Calendar"
             },
+            "import": {
+                "string": "Kalender importieren",
+                "description": {
+                    "string": "Ereignisse aus einer .ics-Datei in diesen Kalender importieren."
+                },
+                "success": {
+                    "string": "Import abgeschlossen"
+                },
+                "choose_file": {
+                    "string": ".ics-Datei wählen"
+                }
+            },
             "color": {
                 "string": "Calendar Color"
             },
             "readOnlyCalendar": {
                 "string": "Read-only calendar",
                 "context": "Label for ICS/subscription calendars that cannot be edited"
+            },
+            "import": {
+                "string": "Kalender importieren",
+                "description": {
+                    "string": "Ereignisse aus einer .ics-Datei in diesen Kalender importieren."
+                },
+                "success": {
+                    "string": "Import abgeschlossen"
+                },
+                "choose_file": {
+                    "string": ".ics-Datei wählen"
+                }
             }
         },
         "actions": {
