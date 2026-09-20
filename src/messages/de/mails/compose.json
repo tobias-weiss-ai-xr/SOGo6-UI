@@ -226,14 +226,6 @@
       "string": "Abbrechen",
       "context": "Cancel or dismiss a dialog"
     },
-    "sign_message": {
-      "string": "Nachricht signieren (PGP)",
-      "context": "Button to sign the message with PGP"
-    },
-    "encrypt_message": {
-      "string": "Nachricht verschlüsseln (PGP)",
-      "context": "Button to encrypt the message with PGP"
-    },
     "scheduleSend": {
       "title": "Zeitgesteuert senden",
       "description": "Wählen Sie, wann diese E-Mail zugestellt werden soll",

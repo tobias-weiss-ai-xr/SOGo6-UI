@@ -11,8 +11,6 @@ const createTestDraft = (draftId: string) => ({
   attachments: [] as any[],
   priority: 2 as const,
   requestReadReceipt: false,
-  signMessage: false,
-  encryptMessage: false,
   isPlainText: false,
   isDirty: false,
   createdAt: Date.now(),
