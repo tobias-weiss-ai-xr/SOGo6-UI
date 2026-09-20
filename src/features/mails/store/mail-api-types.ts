@@ -22,6 +22,10 @@ export interface SendMailBody {
   reply_to?: string | null
   /** ISO 8601 datetime for scheduled delivery */
   send_at?: string | null
+  /** Sign with the sender's S/MIME certificate */
+  sign?: boolean
+  /** Encrypt with S/MIME to all recipients */
+  encrypt?: boolean
 }
 
 export interface SendMailArg {

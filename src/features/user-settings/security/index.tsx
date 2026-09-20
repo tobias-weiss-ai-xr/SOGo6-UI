@@ -10,7 +10,7 @@ import {
   useUpdateUserPreferencesSecurityMutation,
 } from '@/features/user-settings/store/user-preferences-api'
 import PasswordForm from './components/password-form'
-import PGPForm from './components/pgp-form'
+import SmimeForm from './components/smime-form'
 import TotpSettingsForm from './components/totp-form'
 import { WebauthnSettingsForm } from './components/webauthn-form'
 
@@ -31,7 +31,7 @@ const TotpSettings: React.FC = () => {
           <PasswordForm />
           <TotpSettingsForm data={data?.data} update={updateSecurity} />
           <WebauthnSettingsForm />
-          <PGPForm />
+          <SmimeForm />
         </div>
       )}
     </div>

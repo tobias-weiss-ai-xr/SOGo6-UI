@@ -42,6 +42,7 @@ import {
   updatePriority,
 } from '../../store/mail-compose-slice'
 import QuickReplyTemplates from './quick-reply-templates'
+import { SecurityOptions } from './security-options'
 
 interface ComposeToolbarProps {
   draftId: string
@@ -52,6 +53,8 @@ interface ComposeToolbarProps {
   jitsiEnabled: boolean
   onInsertJitsi: () => void
   requestReadReceipt: boolean
+  signMessage?: boolean
+  encryptMessage?: boolean
   selectedPriority: MailComposeDraft['priority']
   isSending: boolean
   onSend: () => void
@@ -73,6 +76,8 @@ export function ComposeToolbar({
   jitsiEnabled,
   onInsertJitsi,
   requestReadReceipt,
+  signMessage,
+  encryptMessage,
   selectedPriority,
   isSending,
   onSend,
@@ -156,6 +161,11 @@ export function ComposeToolbar({
                 >
                   {t('return_receipt.string')}
                 </DropdownMenuCheckboxItem>
+                <SecurityOptions
+                  draftId={draftId}
+                  signMessage={signMessage}
+                  encryptMessage={encryptMessage}
+                />
               </DropdownMenuGroup>
               <DropdownMenuSeparator />
               <DropdownMenuGroup>

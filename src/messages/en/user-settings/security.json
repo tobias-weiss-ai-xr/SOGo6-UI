@@ -79,6 +79,17 @@
             "copyPublicKey": "Copy Public Key",
             "deleteKey": "Delete Key",
             "generateKey": "Generate Key"
+        },
+        "smime": {
+            "title": "S/MIME",
+            "description": "Manage your S/MIME certificate for signing and encrypting email",
+            "loading": "Loading...",
+            "selfSigned": "self-signed",
+            "validUntil": "Valid until",
+            "delete": "Delete certificate",
+            "generate": "Generate self-signed certificate",
+            "import": "Import certificate (PEM/PKCS#12)",
+            "noCertificate": "No S/MIME certificate configured yet"
         }
     }
 }

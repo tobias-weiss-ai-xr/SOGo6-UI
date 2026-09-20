@@ -70,6 +70,36 @@
                 "string": "Gerätename (optional)",
                 "context": "Label for the device name input field"
             }
+        },
+        "smime": {
+            "title": {
+                "string": "S/MIME",
+                "context": "Title for the S/MIME certificate settings"
+            },
+            "description": {
+                "string": "Verwalten Sie Ihr S/MIME-Zertifikat zum Signieren und Verschlüsseln von E-Mails."
+            },
+            "loading": {
+                "string": "Wird geladen..."
+            },
+            "selfSigned": {
+                "string": "selbstsigniert"
+            },
+            "validUntil": {
+                "string": "Gültig bis"
+            },
+            "delete": {
+                "string": "Zertifikat löschen"
+            },
+            "generate": {
+                "string": "Selbstsigniertes Zertifikat erstellen"
+            },
+            "import": {
+                "string": "Zertifikat importieren (PEM/PKCS#12)"
+            },
+            "noCertificate": {
+                "string": "Noch kein S/MIME-Zertifikat konfiguriert"
+            }
         }
     }
 }

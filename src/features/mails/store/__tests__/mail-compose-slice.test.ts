@@ -1,4 +1,9 @@
-import reducer, { addAttachment, setPendingInsert } from '../mail-compose-slice'
+import reducer, {
+  addAttachment,
+  setPendingInsert,
+  toggleEncryptMessage,
+  toggleSignMessage,
+} from '../mail-compose-slice'
 
 const createTestDraft = (draftId: string) => ({
   draftId,
@@ -11,6 +16,8 @@ const createTestDraft = (draftId: string) => ({
   attachments: [] as any[],
   priority: 2 as const,
   requestReadReceipt: false,
+  signMessage: false,
+  encryptMessage: false,
   isPlainText: false,
   isDirty: false,
   createdAt: Date.now(),
@@ -51,6 +58,28 @@ describe('mailComposeSlice', () => {
         '<a href="https://meet.jitsi.si/abc">https://meet.jitsi.si/abc</a>'
       const state = reducer(undefined, setPendingInsert(html))
       expect(state.pendingInsert).toBe(html)
+    })
+  })
+
+  describe('smime toggles', () => {
+    it('toggles signMessage on and marks draft dirty', () => {
+      const s0 = reducer(createTestState('d1') as any, { type: '@@INIT/never' })
+      const state = reducer(
+        s0.drafts.d1
+          ? { ...s0, drafts: { d1: { ...s0.drafts.d1, isDirty: false } } }
+          : s0,
+        toggleSignMessage({ draftId: 'd1' })
+      )
+      expect(state.drafts.d1.signMessage).toBe(true)
+      expect(state.drafts.d1.isDirty).toBe(true)
+    })
+
+    it('toggles encryptMessage on and off', () => {
+      const s0 = reducer(createTestState('d1') as any, { type: '@@INIT/never' })
+      const on = reducer(s0, toggleEncryptMessage({ draftId: 'd1' }))
+      expect(on.drafts.d1.encryptMessage).toBe(true)
+      const off = reducer(on, toggleEncryptMessage({ draftId: 'd1' }))
+      expect(off.drafts.d1.encryptMessage).toBe(false)
     })
   })
 

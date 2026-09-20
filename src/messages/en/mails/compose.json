@@ -156,6 +156,14 @@
       "string": "Return receipt",
       "context": "Button to request a return receipt for the email"
     },
+    "sign_message": {
+      "string": "Sign message",
+      "context": "Option to sign the email with the sender's S/MIME certificate"
+    },
+    "encrypt_message": {
+      "string": "Encrypt message",
+      "context": "Option to encrypt the email with S/MIME to all recipients"
+    },
     "priority": {
       "string": "Set priority",
       "context": "Button to set the priority of the email"
