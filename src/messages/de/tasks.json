@@ -41,6 +41,7 @@
       "calendar": {"string": "Kalender"},
       "categories": {"string": "Kategorien"},
       "visibility": {"string": "Sichtbarkeit"},
+      "attendees": {"string": "Beauftragte"},
       "save": {"string": "Speichern"},
       "cancel": {"string": "Abbrechen"},
       "calendar_required": {"string": "Wählen Sie einen Kalender aus"},

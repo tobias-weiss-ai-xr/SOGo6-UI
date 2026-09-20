@@ -28,7 +28,11 @@ import {
   CALENDAR_EVENT_DESCRIPTION_MAX_LENGTH,
   CALENDAR_EVENT_TITLE_MAX_LENGTH,
 } from '@/features/calendars/calendar-constants'
-import type { Calendar } from '@/features/calendars/calendars-types'
+import type {
+  AttendeeInputItem,
+  Calendar,
+} from '@/features/calendars/calendars-types'
+import AttendeeInput from '@/features/calendars/components/event-form/attendee-input'
 import type { RecurrenceRuleValue } from '@/features/calendars/components/recurrence-selector'
 import { RecurrenceSelector } from '@/features/calendars/components/recurrence-selector'
 import TaskProgressField from '@/features/tasks/components/task-progress-field'
@@ -85,6 +89,14 @@ const taskFormFieldsSchema = z.object({
     })
     .nullable()
     .default(null),
+  attendees: z
+    .array(
+      z.object({
+        email: z.string(),
+        name: z.string().optional().nullable(),
+      })
+    )
+    .default([]),
 })
 
 type TaskFormTranslator = (key: string) => string
@@ -185,6 +197,7 @@ function TaskForm({
       percent_complete: 0,
       visibility: 'public',
       recurrence_rule: null,
+      attendees: [],
     },
   })
 
@@ -203,6 +216,10 @@ function TaskForm({
         percent_complete: task.percent_complete ?? 0,
         visibility: task.visibility ?? 'public',
         recurrence_rule: taskRecurrenceToFormRule(task.recurrence_rule),
+        attendees: (task.attendees ?? []).map((a) => ({
+          email: a.email,
+          name: a.name ?? undefined,
+        })),
       })
     } else {
       form.reset({
@@ -217,6 +234,7 @@ function TaskForm({
         percent_complete: 0,
         visibility: 'public',
         recurrence_rule: null,
+        attendees: [],
       })
     }
   }, [open, task, calendars, defaultCalendarKey, form])
@@ -258,6 +276,12 @@ function TaskForm({
       completed_at:
         values.status === 'completed' ? new Date().toISOString() : null,
       recurrence_rule: values.recurrence_rule ?? null,
+      attendees:
+        (values.attendees ?? []).length > 0
+          ? (values.attendees ?? [])
+              .filter((a) => a.email.trim() !== '')
+              .map((a) => ({ email: a.email, name: a.name || undefined }))
+          : undefined,
     }
 
     await onSubmit({
@@ -494,6 +518,22 @@ function TaskForm({
                     <FormLabel>{t('form.description.string')}</FormLabel>
                     <FormControl>
                       <Textarea {...field} value={field.value ?? ''} rows={4} />
+                    </FormControl>
+                  </FormItem>
+                )}
+              />
+
+              <FormField
+                control={form.control}
+                name="attendees"
+                render={({ field }) => (
+                  <FormItem>
+                    <FormLabel>{t('form.attendees.string')}</FormLabel>
+                    <FormControl>
+                      <AttendeeInput
+                        value={(field.value ?? []) as AttendeeInputItem[]}
+                        onChange={field.onChange}
+                      />
                     </FormControl>
                   </FormItem>
                 )}

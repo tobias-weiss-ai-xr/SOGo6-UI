@@ -45,6 +45,35 @@ jest.mock('@/components/ui/select', () => ({
   SelectValue: () => null,
 }))
 
+jest.mock('@/features/calendars/components/event-form/attendee-input', () => ({
+  __esModule: true,
+  default: ({
+    value,
+    onChange,
+  }: {
+    value: Array<{ email: string; name?: string }>
+    onChange: (v: Array<{ email: string; name?: string }>) => void
+  }) => (
+    <div data-testid="attendee-input">
+      <span>{value.map((a) => a.email).join(',')}</span>
+      <input
+        data-testid="attendee-add"
+        type="text"
+        onKeyDown={(e: React.KeyboardEvent<HTMLInputElement>) => {
+          if (e.key === 'Enter') {
+            e.preventDefault()
+            const email = (e.target as HTMLInputElement).value.trim()
+            if (email) {
+              onChange([...value, { email }])
+              ;(e.target as HTMLInputElement).value = ''
+            }
+          }
+        }}
+      />
+    </div>
+  ),
+}))
+
 import TaskForm from '../task-form'
 
 const calendars = [
@@ -225,6 +254,56 @@ describe('TaskForm', () => {
       )
       // Editing a recurring task keeps the recurrence switch on.
       expect(screen.getByLabelText('repeat.string')).toBeChecked()
+    })
+
+    it('loads existing attendees into the assignment field', async () => {
+      render(
+        <TaskForm
+          open
+          calendars={calendars}
+          task={{
+            id: 't1',
+            key: 't1',
+            title: 'Delegated task',
+            calendar_key: 'cal-1',
+            attendees: [
+              { email: 'alice@example.org', name: 'Alice' },
+              { email: 'bob@example.org' },
+            ],
+          }}
+          onClose={jest.fn()}
+          onSubmit={jest.fn()}
+        />
+      )
+      expect(screen.getByTestId('attendee-input')).toHaveTextContent(
+        'alice@example.org,bob@example.org'
+      )
+    })
+
+    it('submits attendees as task assignment', async () => {
+      const user = userEvent.setup()
+      const onSubmit = jest.fn().mockResolvedValue(undefined)
+      render(
+        <TaskForm
+          open
+          calendars={calendars}
+          onClose={jest.fn()}
+          onSubmit={onSubmit}
+        />
+      )
+      await user.type(screen.getByLabelText('form.title.string'), 'Assign me')
+      await user.type(
+        screen.getByTestId('attendee-add'),
+        'carol@example.org{enter}'
+      )
+      await user.click(screen.getByRole('button', { name: 'form.save.string' }))
+      await waitFor(() => {
+        expect(onSubmit).toHaveBeenCalled()
+      })
+      const { body } = onSubmit.mock.calls[0][0]
+      expect(body.attendees).toEqual([
+        { email: 'carol@example.org', name: undefined },
+      ])
     })
   })
 })
