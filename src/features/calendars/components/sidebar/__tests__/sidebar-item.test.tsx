@@ -183,16 +183,16 @@ describe('SidebarItem', () => {
     render(<SidebarItem {...defaultProps} isDefault={false} />)
 
     const menuItems = screen.getAllByTestId('dropdown-menu-item')
-    // Edit, Delete, Link, Sharing, Export
-    expect(menuItems.length).toBeGreaterThanOrEqual(5)
+    // Edit, Delete, Link, Sharing, Export, Import
+    expect(menuItems.length).toBeGreaterThanOrEqual(6)
   })
 
   it('should not render delete option for default calendar', () => {
     render(<SidebarItem {...defaultProps} isDefault={true} />)
 
     const menuItems = screen.getAllByTestId('dropdown-menu-item')
-    // Edit, Link, Sharing, Export (no Delete)
-    expect(menuItems.length).toBeLessThan(5)
+    // Edit, Link, Sharing, Export, Import (no Delete)
+    expect(menuItems.length).toBe(5)
   })
 
   it('should use translations from CALENDARS namespace', () => {

@@ -28,6 +28,7 @@ import { useCalendarVisibility } from '../../hooks/useCalendarVisibility'
 import { isSubscriptionCalendar } from '../../utils/calendar-source-type'
 import DeleteAction from './actions/delete'
 import ExportAction from './actions/export'
+import ImportAction from './actions/import-action'
 import LinkAction from './actions/link'
 import EditForm from './forms/edit'
 import ShareForm from './forms/share'
@@ -257,6 +258,17 @@ const SidebarItem: React.FC<SidebarItemProps> = ({
               <DialogTrigger asChild>
                 <DropdownMenuItem
                   onClick={() => {
+                    setType('import')
+                    setDialogOpen(true)
+                  }}
+                >
+                  <span>{t('sidebar.import.string')}</span>
+                </DropdownMenuItem>
+              </DialogTrigger>
+
+              <DialogTrigger asChild>
+                <DropdownMenuItem
+                  onClick={() => {
                     setType('export')
                     setDialogOpen(true)
                   }}
@@ -293,6 +305,13 @@ const SidebarItem: React.FC<SidebarItemProps> = ({
             )}
             {type === 'export' && (
               <ExportAction
+                id={id}
+                name={name}
+                onClose={() => setDialogOpen(false)}
+              />
+            )}
+            {type === 'import' && (
+              <ImportAction
                 id={id}
                 name={name}
                 onClose={() => setDialogOpen(false)}
