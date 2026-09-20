@@ -12,6 +12,24 @@
             "set": "Set follow-up"
         },
         "mail_display": {
+            "smime": {
+                "encrypted": {
+                    "string": "Encrypted",
+                    "description": "Badge shown when a mail was S/MIME encrypted and could be decrypted"
+                },
+                "signature_valid": {
+                    "string": "Signed — signature valid",
+                    "description": "Badge shown when the S/MIME signature verified successfully"
+                },
+                "signature_invalid": {
+                    "string": "Signature invalid",
+                    "description": "Badge shown when the S/MIME signature failed verification"
+                },
+                "encrypted_not_readable": {
+                    "string": "Encrypted — no certificate",
+                    "description": "Badge shown when a mail is S/MIME encrypted but no key is available to decrypt it"
+                }
+            },
             "action-bar": {
                 "reply": {
                     "string": "Reply",

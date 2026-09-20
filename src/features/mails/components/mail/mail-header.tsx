@@ -1,6 +1,7 @@
 import { Avatar, AvatarFallback } from '@/components/ui/avatar'
 import { Button } from '@/components/ui/button'
 import { useMailReplyActions } from '@/features/mails/hooks/use-mail-reply-actions'
+import { BadgeCheck, Lock, ShieldX } from 'lucide-react'
 import { useLocale, useTranslations } from 'next-intl'
 import { useState } from 'react'
 import MailActionsBar from './mail-action-bar'
@@ -47,6 +48,12 @@ export default function MailHeader({
 
   const formattedTime = formatMailTime(date, locale)
 
+  const signerCn =
+    Array.isArray(mail?.certificates) && mail.certificates.length > 0
+      ? (mail?.certificates[0] as { subject_cn?: string } | undefined)
+          ?.subject_cn
+      : undefined
+
   return (
     <div className="mb-3 flex w-full items-start justify-between gap-4">
       {/* Avatar à gauche, aligné en haut */}
@@ -62,6 +69,38 @@ export default function MailHeader({
         <div className="flex flex-wrap items-center gap-2">
           <span className="text-base font-bold">From</span>
           <ContactBadge contact={from} />
+          {mail?.is_encrypted && (
+            <span
+              className="text-muted-foreground flex items-center gap-1 text-xs"
+              title={
+                mail?.contents?.length
+                  ? t('mail_display.smime.encrypted.string')
+                  : t('mail_display.smime.encrypted_not_readable.string')
+              }
+            >
+              <Lock className="h-3.5 w-3.5" />
+            </span>
+          )}
+          {mail?.signature_valid === true && (
+            <span
+              className="flex items-center gap-1 text-xs text-emerald-600"
+              title={
+                signerCn
+                  ? `${t('mail_display.smime.signature_valid.string')} (${signerCn})`
+                  : t('mail_display.smime.signature_valid.string')
+              }
+            >
+              <BadgeCheck className="h-3.5 w-3.5" />
+            </span>
+          )}
+          {mail?.signature_valid === false && (
+            <span
+              className="text-destructive flex items-center gap-1 text-xs"
+              title={t('mail_display.smime.signature_invalid.string')}
+            >
+              <ShieldX className="h-3.5 w-3.5" />
+            </span>
+          )}
           {showUnsubscribeButton && (
             <>
               <Button

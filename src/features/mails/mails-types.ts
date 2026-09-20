@@ -114,6 +114,8 @@ export interface ImapMessages {
   priority?: number
   should_ask_receipt?: boolean
   is_signed?: boolean
+  is_encrypted?: boolean
+  signature_valid?: boolean | null
   valid?: boolean | null
   certificates?: unknown[]
   /** Ex. `"event"`, `"contact"` (API snake_case). */

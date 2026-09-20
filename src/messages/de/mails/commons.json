@@ -12,6 +12,24 @@
             "set": "Wiedervorlage festlegen"
         },
         "mail_display": {
+            "smime": {
+                "encrypted": {
+                    "string": "Verschlüsselt",
+                    "description": "Badge shown when a mail was S/MIME encrypted and could be decrypted"
+                },
+                "signature_valid": {
+                    "string": "Signiert — Signatur gültig",
+                    "description": "Badge shown when the S/MIME signature verified successfully"
+                },
+                "signature_invalid": {
+                    "string": "Signatur ungültig",
+                    "description": "Badge shown when the S/MIME signature failed verification"
+                },
+                "encrypted_not_readable": {
+                    "string": "Verschlüsselt — kein Zertifikat",
+                    "description": "Badge shown when a mail is S/MIME encrypted but no key is available to decrypt it"
+                }
+            },
             "action-bar": {
                 "reply": {
                     "string": "Antworten",
