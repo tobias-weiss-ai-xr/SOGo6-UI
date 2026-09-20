@@ -1,5 +1,5 @@
 import { ThemeProvider } from '@/components/theme-provider'
-import { geistMono, geistSans, openDyslexic } from '@/lib/fonts'
+import { firaSans, geistMono, geistSans, openDyslexic } from '@/lib/fonts'
 import { getDefaultLocale } from '@/lib/i18n/config'
 import StoreProvider from '@/lib/redux/store-provider'
 import type { Metadata } from 'next'
@@ -62,7 +62,7 @@ export default async function RootLayout({
       suppressHydrationWarning
       lang={locale}
       dir={getDirection(locale)}
-      className={`${geistSans.variable} ${geistMono.variable} ${openDyslexic.variable}`}
+      className={`${geistSans.variable} ${geistMono.variable} ${openDyslexic.variable} ${firaSans.variable}`}
     >
       <body className="overflow-hidden antialiased">
         {/* Service Worker registration for PWA support */}

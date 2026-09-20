@@ -591,7 +591,16 @@ input + input,
    conventions: Roboto-first type, uppercase 500-weight text buttons,
    2px radii come from the token block. Icon-only buttons unaffected. */
 .sogo5-classic {
-  font-family: Roboto, 'Helvetica Neue', Arial, sans-serif;
+  /* SOGo5 renders "Fira Sans" everywhere — rebind the Geist vars so every
+     font-sans/utility and body default resolves to Fira inside the classic
+     skin (type-identical to the reference UI). */
+  --font-sans: var(--font-fira-sans), Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --font-geist-sans: var(--font-fira-sans), Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-family: var(--font-fira-sans), Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+.sogo5-classic body {
+  font-family: var(--font-fira-sans), Roboto, 'Helvetica Neue', Arial, sans-serif;
 }
 
 .sogo5-classic button:not([data-classic-plain]) {
