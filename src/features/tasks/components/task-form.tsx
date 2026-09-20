@@ -29,6 +29,8 @@ import {
   CALENDAR_EVENT_TITLE_MAX_LENGTH,
 } from '@/features/calendars/calendar-constants'
 import type { Calendar } from '@/features/calendars/calendars-types'
+import type { RecurrenceRuleValue } from '@/features/calendars/components/recurrence-selector'
+import { RecurrenceSelector } from '@/features/calendars/components/recurrence-selector'
 import TaskProgressField from '@/features/tasks/components/task-progress-field'
 import type { Task, TaskCreateBody } from '@/features/tasks/tasks-types'
 import { clampTaskProgress } from '@/features/tasks/utils/task-progress'
@@ -52,6 +54,8 @@ const taskStatuses = [
   'cancelled',
 ] as const
 
+const recurrenceFrequencies = ['daily', 'weekly', 'monthly', 'yearly'] as const
+
 const taskFormFieldsSchema = z.object({
   title: z.string().min(1).max(CALENDAR_EVENT_TITLE_MAX_LENGTH),
   description: z
@@ -69,6 +73,18 @@ const taskFormFieldsSchema = z.object({
     .enum(['public', 'private', 'confidential'])
     .optional()
     .nullable(),
+  recurrence_rule: z
+    .object({
+      frequency: z.enum(recurrenceFrequencies),
+      interval: z.number().min(1).default(1),
+      until: z.string().optional(),
+      count: z.number().min(1).optional(),
+      by_day: z.array(z.string()).optional(),
+      by_month_day: z.array(z.number()).optional(),
+      week_start: z.string().default('MO'),
+    })
+    .nullable()
+    .default(null),
 })
 
 type TaskFormTranslator = (key: string) => string
@@ -77,6 +93,21 @@ function parseTaskFormBound(value: string | null | undefined): Date | null {
   if (!value) return null
   const parsed = new Date(value)
   return Number.isNaN(parsed.getTime()) ? null : parsed
+}
+
+function taskRecurrenceToFormRule(
+  recurrence: Task['recurrence_rule']
+): RecurrenceRuleValue | null {
+  if (!recurrence) return null
+  return {
+    frequency: recurrence.frequency,
+    interval: recurrence.interval ?? 1,
+    until: recurrence.until ?? undefined,
+    count: recurrence.count ?? undefined,
+    by_day: recurrence.by_day ?? undefined,
+    by_month_day: recurrence.by_month_day ?? undefined,
+    week_start: 'MO',
+  }
 }
 
 export function createTaskFormSchema(t: TaskFormTranslator) {
@@ -153,6 +184,7 @@ function TaskForm({
       priority: 0,
       percent_complete: 0,
       visibility: 'public',
+      recurrence_rule: null,
     },
   })
 
@@ -170,6 +202,7 @@ function TaskForm({
         priority: task.priority ?? 0,
         percent_complete: task.percent_complete ?? 0,
         visibility: task.visibility ?? 'public',
+        recurrence_rule: taskRecurrenceToFormRule(task.recurrence_rule),
       })
     } else {
       form.reset({
@@ -183,6 +216,7 @@ function TaskForm({
         priority: 0,
         percent_complete: 0,
         visibility: 'public',
+        recurrence_rule: null,
       })
     }
   }, [open, task, calendars, defaultCalendarKey, form])
@@ -223,6 +257,7 @@ function TaskForm({
       visibility: values.visibility ?? null,
       completed_at:
         values.status === 'completed' ? new Date().toISOString() : null,
+      recurrence_rule: values.recurrence_rule ?? null,
     }
 
     await onSubmit({
@@ -333,6 +368,39 @@ function TaskForm({
                     </FormControl>
                   </FormItem>
                 )}
+              />
+
+              <FormField
+                control={form.control}
+                name="recurrence_rule"
+                render={({ field }) => {
+                  const watchedStart = form.watch('date_start')
+                  return (
+                    <FormItem>
+                      <FormControl>
+                        <RecurrenceSelector
+                          value={
+                            field.value
+                              ? {
+                                  frequency: field.value.frequency,
+                                  interval: field.value.interval ?? 1,
+                                  until: field.value.until,
+                                  count: field.value.count,
+                                  by_day: field.value.by_day,
+                                  by_month_day: field.value.by_month_day,
+                                  week_start: field.value.week_start ?? 'MO',
+                                }
+                              : null
+                          }
+                          onChange={field.onChange}
+                          eventStart={
+                            parseTaskFormBound(watchedStart) ?? undefined
+                          }
+                        />
+                      </FormControl>
+                    </FormItem>
+                  )
+                }}
               />
 
               <FormField

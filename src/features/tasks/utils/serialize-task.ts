@@ -38,6 +38,9 @@ export function serializeTaskBody(
   if (body.related_to !== undefined) {
     result.related_to = serializeRelatedTo(body.related_to)
   }
+  if (body.recurrence_rule !== undefined) {
+    result.recurrence_rule = body.recurrence_rule
+  }
 
   return result
 }

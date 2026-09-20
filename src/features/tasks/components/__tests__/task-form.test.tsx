@@ -175,5 +175,56 @@ describe('TaskForm', () => {
       })
       expect(onSubmit).not.toHaveBeenCalled()
     })
+
+    it('submits recurrence_rule when recurrence toggled on', async () => {
+      const user = userEvent.setup()
+      const onSubmit = jest.fn().mockResolvedValue(undefined)
+      render(
+        <TaskForm
+          open
+          calendars={calendars}
+          onClose={jest.fn()}
+          onSubmit={onSubmit}
+        />
+      )
+      await user.type(screen.getByLabelText('form.title.string'), 'Recurring')
+      await user.click(screen.getByLabelText('repeat.string'))
+      await user.click(screen.getByRole('button', { name: 'form.save.string' }))
+      await waitFor(() => {
+        expect(onSubmit).toHaveBeenCalled()
+      })
+      const { body } = onSubmit.mock.calls[0][0]
+      expect(body.recurrence_rule).toEqual(
+        expect.objectContaining({
+          frequency: 'weekly',
+          interval: 1,
+          week_start: 'MO',
+        })
+      )
+    })
+
+    it('loads existing recurrence_rule into the editor', async () => {
+      render(
+        <TaskForm
+          open
+          calendars={calendars}
+          task={{
+            id: 't1',
+            key: 't1',
+            title: 'Recurring task',
+            calendar_key: 'cal-1',
+            recurrence_rule: {
+              frequency: 'monthly',
+              interval: 2,
+              by_month_day: [14],
+            },
+          }}
+          onClose={jest.fn()}
+          onSubmit={jest.fn()}
+        />
+      )
+      // Editing a recurring task keeps the recurrence switch on.
+      expect(screen.getByLabelText('repeat.string')).toBeChecked()
+    })
   })
 })
