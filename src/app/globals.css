@@ -687,6 +687,22 @@ input + input,
   color: #6b7280; /* SOGo5: readable placeholder/overlay text on the teal band */
 }
 
+/* sogo5 calendar: hour gutter is the neutral list bg, not white */
+.sogo5-classic .rbc-time-gutter {
+  background-color: hsl(var(--background));
+}
+
+/* SOGo5 mail rows: 40px tall with 16px spacing (56px pitch). sogo6 classic
+   rows render 66px — the 10px/row drift compounds down the list and is the
+   main driver of the mail mid-band delta. min-h-14 is unique to the classic
+   mail list item. */
+.sogo5-classic [class*="min-h-14"] {
+  height: 40px;
+  min-height: 40px;
+  margin-bottom: 16px;
+  overflow: hidden;
+}
+
 /* SOGo5 main content panes are neutral #EEEEEE, not teal-tinted */
 .sogo5-classic .mail-client {
   background-color: hsl(var(--background));
