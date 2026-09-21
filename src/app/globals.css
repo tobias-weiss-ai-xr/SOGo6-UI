@@ -603,6 +603,12 @@ input + input,
   font-family: var(--font-fira-sans), Roboto, 'Helvetica Neue', Arial, sans-serif;
 }
 
+/* SOGo5 header is 64px tall (md-toolbar default), not 48 — a 16px shift
+   misaligns every band below in the pixel diff */
+.sogo5-classic header {
+  height: 64px;
+}
+
 .sogo5-classic button:not([data-classic-plain]) {
   text-transform: uppercase;
   font-weight: 500;
@@ -623,6 +629,7 @@ input + input,
 .sogo5-classic [data-sidebar="header"] {
   background-color: hsl(var(--sidebar-header-bg, var(--header-background)));
   color: hsl(var(--header-foreground));
+  height: 128px; /* sogo5 md-toolbar md-tall: teal band above the folder list */
 }
 .sogo5-classic [data-sidebar="header"] [data-sidebar="menu-button"]:hover {
   background-color: rgba(0, 0, 0, 0.12);
