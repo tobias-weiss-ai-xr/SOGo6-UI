@@ -1,7 +1,7 @@
 import { Avatar, AvatarFallback } from '@/components/ui/avatar'
 import { Button } from '@/components/ui/button'
 import { useMailReplyActions } from '@/features/mails/hooks/use-mail-reply-actions'
-import { BadgeCheck, Lock, ShieldX } from 'lucide-react'
+import { BadgeCheck, Lock, ShieldAlert, ShieldX } from 'lucide-react'
 import { useLocale, useTranslations } from 'next-intl'
 import { useState } from 'react'
 import MailActionsBar from './mail-action-bar'
@@ -81,18 +81,32 @@ export default function MailHeader({
               <Lock className="h-3.5 w-3.5" />
             </span>
           )}
-          {mail?.signature_valid === true && (
-            <span
-              className="flex items-center gap-1 text-xs text-emerald-600"
-              title={
-                signerCn
-                  ? `${t('mail_display.smime.signature_valid.string')} (${signerCn})`
-                  : t('mail_display.smime.signature_valid.string')
-              }
-            >
-              <BadgeCheck className="h-3.5 w-3.5" />
-            </span>
-          )}
+          {mail?.signature_valid === true &&
+            mail?.signature_trusted !== false && (
+              <span
+                className="flex items-center gap-1 text-xs text-emerald-600"
+                title={
+                  signerCn
+                    ? `${t('mail_display.smime.signature_valid.string')} (${signerCn})`
+                    : t('mail_display.smime.signature_valid.string')
+                }
+              >
+                <BadgeCheck className="h-3.5 w-3.5" />
+              </span>
+            )}
+          {mail?.signature_valid === true &&
+            mail?.signature_trusted === false && (
+              <span
+                className="flex items-center gap-1 text-xs text-amber-600"
+                title={
+                  signerCn
+                    ? `${t('mail_display.smime.signature_untrusted.string')} (${signerCn})`
+                    : t('mail_display.smime.signature_untrusted.string')
+                }
+              >
+                <ShieldAlert className="h-3.5 w-3.5" />
+              </span>
+            )}
           {mail?.signature_valid === false && (
             <span
               className="text-destructive flex items-center gap-1 text-xs"

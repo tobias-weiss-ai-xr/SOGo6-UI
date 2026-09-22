@@ -25,6 +25,10 @@
                     "string": "Signature invalid",
                     "description": "Badge shown when the S/MIME signature failed verification"
                 },
+                "signature_untrusted": {
+                    "string": "Signed — signature valid, CA not trusted",
+                    "description": "Badge shown when the signature verifies but the signer's CA does not chain to the configured trust bundle"
+                },
                 "encrypted_not_readable": {
                     "string": "Encrypted — no certificate",
                     "description": "Badge shown when a mail is S/MIME encrypted but no key is available to decrypt it"

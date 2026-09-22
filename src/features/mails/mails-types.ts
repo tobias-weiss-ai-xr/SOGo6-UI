@@ -116,6 +116,7 @@ export interface ImapMessages {
   is_signed?: boolean
   is_encrypted?: boolean
   signature_valid?: boolean | null
+  signature_trusted?: boolean | null
   valid?: boolean | null
   certificates?: unknown[]
   /** Ex. `"event"`, `"contact"` (API snake_case). */
