@@ -24,6 +24,8 @@ interface SmimeCertInfo {
   subject_cn?: string | null
   issuer_cn?: string | null
   not_after?: string
+  days_until_expiry?: number
+  expired?: boolean
   fingerprint_sha256?: string
   self_signed?: boolean
 }
@@ -156,6 +158,20 @@ export default function SmimeForm() {
                 ? new Date(cert.not_after).toLocaleDateString()
                 : '—'}
             </div>
+            {cert.expired && (
+              <div className="flex items-center gap-1.5 text-xs text-red-500">
+                <ShieldAlert className="h-3.5 w-3.5" />
+                {t('smime.expired')}
+              </div>
+            )}
+            {!cert.expired &&
+              cert.days_until_expiry !== undefined &&
+              cert.days_until_expiry <= 30 && (
+                <div className="flex items-center gap-1.5 text-xs text-amber-500">
+                  <ShieldAlert className="h-3.5 w-3.5" />
+                  {t('smime.expiresSoon', { days: cert.days_until_expiry })}
+                </div>
+              )}
             <div className="flex gap-2">
               <Button
                 variant="outline"

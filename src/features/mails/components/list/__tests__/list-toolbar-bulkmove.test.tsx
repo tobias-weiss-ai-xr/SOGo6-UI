@@ -148,7 +148,7 @@ describe('ListToolbar bulk move-to-folder', () => {
     )
     expect(confirm).toBeInTheDocument()
     // Select a destination folder in the dialog's select
-    fireEvent.click(screen.getByRole('combobox')).catch?.(() => {})
+    fireEvent.click(screen.getByRole('combobox'))
     const archiveOption = screen.getAllByText('Archive')[0]
     fireEvent.click(archiveOption)
     fireEvent.click(confirm)
