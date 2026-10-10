@@ -1,13 +1,26 @@
 import { cn } from '@/lib/utils'
 import React from 'react'
 
+export interface SkeletonProps extends React.HTMLAttributes<HTMLDivElement> {
+  variant?: 'text' | 'circular' | 'rectangular' | 'inline'
+}
+
 function Skeleton({
   className,
+  variant = 'rectangular',
   ...props
-}: React.HTMLAttributes<HTMLDivElement>) {
+}: SkeletonProps) {
+  const baseClasses = 'animate-pulse rounded-md bg-primary/10'
+  const variantClasses = {
+    text: 'rounded-sm h-4 w-full',
+    circular: 'rounded-full aspect-square',
+    rectangular: '',
+    inline: 'rounded-sm h-6 w-24 inline-block',
+  }
+
   return (
     <div
-      className={cn('bg-primary/10 animate-pulse rounded-md', className)}
+      className={cn(baseClasses, variantClasses[variant], className)}
       {...props}
     />
   )
