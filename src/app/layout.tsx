@@ -1,8 +1,9 @@
 import { ThemeProvider } from '@/components/theme-provider'
+import { SerwistProviderGate } from '@/features/offline/components/serwist-provider-gate'
 import { firaSans, geistMono, geistSans, openDyslexic } from '@/lib/fonts'
 import { getDefaultLocale } from '@/lib/i18n/config'
 import StoreProvider from '@/lib/redux/store-provider'
-import type { Metadata } from 'next'
+import type { Metadata, Viewport } from 'next'
 import { getLocale } from 'next-intl/server'
 import React from 'react'
 import './globals.css'
@@ -16,13 +17,21 @@ import './globals.css'
 // });
 
 export const metadata: Metadata = {
-  title: 'SOGo',
-  description: 'SOGo Webmail',
+  applicationName: 'SOGo',
+  title: {
+    default: 'SOGo',
+    template: '%s · SOGo',
+  },
+  description: 'Next-generation groupware — mail, calendar, contacts',
   robots: 'noindex, nofollow',
-  manifest: '/manifest.json',
+  manifest: '/manifest.webmanifest',
   icons: {
-    icon: '/images/sogo-compact.svg',
-    shortcut: '/images/sogo-compact.svg',
+    icon: [
+      { url: '/icons/icon-192.png', sizes: '192x192', type: 'image/png' },
+      { url: '/icons/icon-512.png', sizes: '512x512', type: 'image/png' },
+      { url: '/images/sogo-compact.svg' },
+    ],
+    shortcut: '/icons/icon-192.png',
     apple: '/icons/icon-192.png',
   },
   appleWebApp: {
@@ -36,6 +45,13 @@ export const metadata: Metadata = {
     maximumScale: 1,
     viewportFit: 'cover',
   },
+}
+
+export const viewport: Viewport = {
+  themeColor: [
+    { media: '(prefers-color-scheme: light)', color: '#3b6868' },
+    { media: '(prefers-color-scheme: dark)', color: '#257f7f' },
+  ],
 }
 
 // Locales that render right-to-left. Keep in sync with next-intl locale config.
@@ -65,18 +81,6 @@ export default async function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} ${openDyslexic.variable} ${firaSans.variable}`}
     >
       <body className="overflow-hidden antialiased">
-        {/* Service Worker registration for PWA support */}
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              if ('serviceWorker' in navigator) {
-                window.addEventListener('load', () => {
-                  navigator.serviceWorker.register('/sw.js').catch(() => {});
-                });
-              }
-            `,
-          }}
-        />
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
@@ -92,7 +96,9 @@ export default async function RootLayout({
           ]}
           enableSystem
         >
-          <StoreProvider>{children}</StoreProvider>
+          <StoreProvider>
+            <SerwistProviderGate>{children}</SerwistProviderGate>
+          </StoreProvider>
         </ThemeProvider>
       </body>
     </html>

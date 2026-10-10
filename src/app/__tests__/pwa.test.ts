@@ -9,14 +9,21 @@ import * as path from 'path'
 
 const PUBLIC_DIR = path.join(process.cwd(), 'public')
 const APP_DIR = path.join(process.cwd(), 'src', 'app')
+const FEATURES_DIR = path.join(process.cwd(), 'src', 'features')
 
 describe('PWA manifest', () => {
   const manifestPath = path.join(PUBLIC_DIR, 'manifest.json')
   let manifest: any
 
   beforeAll(() => {
-    expect(fs.existsSync(manifestPath)).toBe(true)
-    manifest = JSON.parse(fs.readFileSync(manifestPath, 'utf-8'))
+    // Support both manifest.json and manifest.webmanifest
+    const possiblePaths = [
+      path.join(PUBLIC_DIR, 'manifest.webmanifest'),
+      path.join(PUBLIC_DIR, 'manifest.json'),
+    ];
+    const foundPath = possiblePaths.find((p) => fs.existsSync(p));
+    expect(foundPath).toBeTruthy();
+    manifest = JSON.parse(fs.readFileSync(foundPath!, 'utf-8'));
   })
 
   it('has a name and short_name', () => {
@@ -39,10 +46,7 @@ describe('PWA manifest', () => {
     expect(sizes).toContain('192x192')
     expect(sizes).toContain('512x512')
     for (const icon of manifest.icons) {
-      const filePath = path.join(
-        PUBLIC_DIR,
-        icon.src.replace(/^\//, '')
-      )
+      const filePath = path.join(PUBLIC_DIR, icon.src.replace(/^\//, ''))
       expect(fs.existsSync(filePath)).toBe(true)
     }
   })
@@ -53,8 +57,8 @@ describe('PWA manifest', () => {
   })
 })
 
-describe('Service worker (sw.js)', () => {
-  const swPath = path.join(PUBLIC_DIR, 'sw.js')
+describe('Service worker with Serwist', () => {
+  const swPath = path.join(APP_DIR, 'sw.ts')
   let sw: string
 
   beforeAll(() => {
@@ -62,40 +66,48 @@ describe('Service worker (sw.js)', () => {
     sw = fs.readFileSync(swPath, 'utf-8')
   })
 
-  it('registers install/activate/fetch/push handlers', () => {
-    expect(sw).toContain("self.addEventListener('install'")
-    expect(sw).toContain("self.addEventListener('activate'")
-    expect(sw).toContain("self.addEventListener('fetch'")
-    expect(sw).toContain("self.addEventListener('push'")
+  it('has Serwist integration', () => {
+    expect(sw).toContain('Serwist')
+    expect(sw).toContain('serwist.addEventListeners()')
   })
 
-  it('precaches the app shell including the offline page', () => {
-    expect(sw).toContain("'/offline'")
-    expect(sw).toContain('caches.open')
+  it('configures precaching', () => {
+    expect(sw).toContain('precacheEntries')
+    expect(sw).toContain('filterPrecacheEntries')
   })
 
-  it('never caches API or fakeApi endpoints', () => {
-    expect(sw).toContain("'/api/'")
-    expect(sw).toContain("'/fakeApi/'")
+  it('configures runtime caching strategies', () => {
+    expect(sw).toContain('runtimeCaching')
+    expect(sw).toContain('CacheFirst')
+    expect(sw).toContain('NetworkFirst')
+    expect(sw).toContain('NetworkOnly')
   })
 
-  it('uses icon paths that exist on disk', () => {
-    const iconMatches = sw.match(/\/icons\/[a-z0-9-]+\.png/g) || []
-    expect(iconMatches.length).toBeGreaterThan(0)
-    for (const icon of iconMatches) {
-      const filePath = path.join(PUBLIC_DIR, icon.replace(/^\//, ''))
-      expect(fs.existsSync(filePath)).toBe(true)
-    }
+  it('has fallback entries for offline navigation', () => {
+    expect(sw).toContain('fallbacks')
+    expect(sw).toContain('~offline')
   })
 
-  it('provides an offline fallback for failed navigations', () => {
-    expect(sw).toContain("event.request.mode === 'navigate'")
-    expect(sw).toContain('OFFLINE_URL')
+  it('handles skip waiting messages', () => {
+    expect(sw).toContain('SKIP_WAITING')
+    expect(sw).toContain('skipWaiting')
+  })
+})
+
+describe('Service worker runtime utilities', () => {
+  const swRuntimePath = path.join(APP_DIR, 'sw-runtime.ts')
+
+  it('exists with navigation helpers', () => {
+    expect(fs.existsSync(swRuntimePath)).toBe(true)
+    const content = fs.readFileSync(swRuntimePath, 'utf-8')
+    expect(content).toContain('isNavigationRequest')
+    expect(content).toContain('pathnameFromRequestUrl')
+    expect(content).toContain('offlineFallbackPath')
   })
 })
 
 describe('Offline page', () => {
-  const offlinePage = path.join(APP_DIR, 'offline', 'page.tsx')
+  const offlinePage = path.join(APP_DIR, '~offline', 'page.tsx')
 
   it('exists', () => {
     expect(fs.existsSync(offlinePage)).toBe(true)
@@ -107,21 +119,32 @@ describe('Offline page', () => {
   })
 })
 
-describe('PWA registration in root layout', () => {
+describe('Serwist registration route', () => {
+  const serwistRoute = path.join(APP_DIR, 'serwist', 'route.ts')
+
+  it('exists for service worker registration', () => {
+    expect(fs.existsSync(serwistRoute)).toBe(true)
+  })
+})
+
+describe('PWA configuration in root layout', () => {
   const layoutPath = path.join(APP_DIR, 'layout.tsx')
   const layout = fs.readFileSync(layoutPath, 'utf-8')
 
-  it('references the manifest', () => {
-    expect(layout).toContain("manifest: '/manifest.json'")
+  it('references the manifest with webmanifest extension', () => {
+    expect(layout).toContain("manifest: '/manifest.webmanifest'")
   })
 
-  it('registers the service worker', () => {
-    expect(layout).toContain("navigator.serviceWorker.register('/sw.js')")
+  it('includes SerwistProviderGate for PWA support', () => {
+    expect(layout).toContain('SerwistProviderGate')
   })
 
   it('sets apple-web-app metadata for iOS', () => {
     expect(layout).toContain('appleWebApp')
-    expect(layout).toContain('apple:')
+  })
+
+  it('sets viewport metadata', () => {
+    expect(layout).toContain('viewport:')
   })
 })
 
@@ -131,5 +154,15 @@ describe('PWA icons', () => {
       const p = path.join(PUBLIC_DIR, 'icons', name)
       expect(fs.existsSync(p)).toBe(true)
     }
+  })
+})
+
+describe('PWA environment configuration', () => {
+  const envExamplePath = path.join(process.cwd(), '.env.example')
+  const envExample = fs.readFileSync(envExamplePath, 'utf-8')
+
+  it('documents PWA feature flags', () => {
+    expect(envExample).toContain('NEXT_PUBLIC_PWA_ENABLED')
+    expect(envExample).toContain('PWA')
   })
 })
