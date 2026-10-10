@@ -20,10 +20,10 @@ describe('PWA manifest', () => {
     const possiblePaths = [
       path.join(PUBLIC_DIR, 'manifest.webmanifest'),
       path.join(PUBLIC_DIR, 'manifest.json'),
-    ];
-    const foundPath = possiblePaths.find((p) => fs.existsSync(p));
-    expect(foundPath).toBeTruthy();
-    manifest = JSON.parse(fs.readFileSync(foundPath!, 'utf-8'));
+    ]
+    const foundPath = possiblePaths.find((p) => fs.existsSync(p))
+    expect(foundPath).toBeTruthy()
+    manifest = JSON.parse(fs.readFileSync(foundPath!, 'utf-8'))
   })
 
   it('has a name and short_name', () => {
@@ -131,8 +131,8 @@ describe('PWA configuration in root layout', () => {
   const layoutPath = path.join(APP_DIR, 'layout.tsx')
   const layout = fs.readFileSync(layoutPath, 'utf-8')
 
-  it('references the manifest with webmanifest extension', () => {
-    expect(layout).toContain("manifest: '/manifest.webmanifest'")
+  it('references the manifest', () => {
+    expect(layout).toContain("manifest: '/manifest.json'")
   })
 
   it('includes SerwistProviderGate for PWA support', () => {

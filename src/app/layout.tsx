@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   },
   description: 'Next-generation groupware — mail, calendar, contacts',
   robots: 'noindex, nofollow',
-  manifest: '/manifest.webmanifest',
+  manifest: '/manifest.json',
   icons: {
     icon: [
       { url: '/icons/icon-192.png', sizes: '192x192', type: 'image/png' },
