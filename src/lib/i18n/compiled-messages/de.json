@@ -6783,7 +6783,10 @@
         }
       },
       "editEvent": {
-        "string": "Edit event"
+        "string": "Termin bearbeiten"
+      },
+      "copyEvent": {
+        "string": "Termin kopieren"
       },
       "deleteEvent": {
         "confirm": {

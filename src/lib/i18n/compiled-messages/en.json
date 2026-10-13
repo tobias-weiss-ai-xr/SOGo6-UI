@@ -7628,6 +7628,9 @@
       "editEvent": {
         "string": "Edit event"
       },
+      "copyEvent": {
+        "string": "Copy event"
+      },
       "deleteEvent": {
         "confirm": {
           "title": {
