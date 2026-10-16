@@ -54,9 +54,9 @@ function TaskCompleteCheckbox({
       data-testid="task-complete-checkbox"
       onClick={handleClick}
       className={cn(
-        'group mt-0.5 flex h-[22px] w-[22px] shrink-0 items-center justify-center rounded-full border',
+        'group mt-0.5 flex h-[18px] w-[18px] shrink-0 items-center justify-center rounded-full border',
         'transition-[transform,background-color,border-color,box-shadow] duration-200 ease-out',
-        'cursor-pointer focus-visible:ring-ring focus-visible:ring-2 focus-visible:outline-none',
+        'focus-visible:ring-ring cursor-pointer focus-visible:ring-2 focus-visible:outline-none',
         'active:scale-90',
         (disabled || isPending) && 'cursor-not-allowed',
         checked

@@ -161,7 +161,7 @@ const ListItemMobile: React.FC<ListItemMobileProps> = ({
                   isSelected={isSelected}
                   data={data}
                   onHandleCheckboxClick={onHandleCheckboxClick}
-                  checkboxClassName="h-7 w-7"
+                  checkboxClassName="h-5 w-5"
                 />
               )}
               <span

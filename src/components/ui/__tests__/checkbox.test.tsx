@@ -12,7 +12,7 @@ describe('Checkbox component', () => {
   it('renders Checkbox component', () => {
     const { container } = render(<Checkbox />)
     expect(container.firstChild).toHaveClass(
-      'peer h-5 w-5 shrink-0 rounded-sm border border-primary shadow-sm focus-visible:outline-hidden focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50'
+      'peer h-4 w-4 shrink-0 rounded-sm border border-primary shadow-sm focus-visible:outline-hidden focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50'
     )
   })
 
@@ -23,7 +23,7 @@ describe('Checkbox component', () => {
 
   it('renders Check icon inside Checkbox component when checked', () => {
     const { container } = render(<Checkbox checked />)
-    expect(container.querySelector('svg')).toHaveClass('h-5 w-5')
+    expect(container.querySelector('svg')).toHaveClass('h-3.5 w-3.5')
   })
 
   it('toggles Checkbox state on click', () => {
