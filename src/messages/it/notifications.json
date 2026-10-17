@@ -4,22 +4,22 @@
             "success": {
                 "string": "Successo",
                 "context": "Notification title for successful operations.",
-                "developer_comment": "Advise the user that an operation completed successfully."
+                "developer_comment": "Informa l'utente che un'operazione è stata completata con successo."
             },
             "error": {
                 "string": "Errore",
                 "context": "Notification title for failed operations.",
-                "developer_comment": "Advise the user that an error occurred during the operation. {error}"
+                "developer_comment": "Informa l'utente che si è verificato un errore durante l'operazione. {error}"
             },
             "warning": {
                 "string": "Avviso",
                 "context": "Notification title for warning messages.",
-                "developer_comment": "Advise the user to check the details and proceed with caution."
+                "developer_comment": "Invita l'utente a controllare i dettagli e a procedere con cautela."
             },
             "info": {
                 "string": "Informazione",
                 "context": "Notification title for informational messages.",
-                "developer_comment": "Advise the user of an informational message."
+                "developer_comment": "Informa l'utente di un messaggio informativo."
             }
         },
         "mail_action": {
@@ -723,19 +723,19 @@
         "message": {
             "success": {
                 "string": "Operazione completata con successo.",
-                "developer_comment": "Advise the user that an operation completed successfully."
+                "developer_comment": "Informa l'utente che un'operazione è stata completata con successo."
             },
             "error": {
                 "string": "Si è verificato un errore durante l'operazione.",
-                "developer_comment": "Advise the user that there was an error while processing their request."
+                "developer_comment": "Informa l'utente che si è verificato un errore durante l'elaborazione della richiesta."
             },
             "warning": {
                 "string": "Controlla i dettagli e procedi con cautela.",
-                "developer_comment": "This is a warning message to alert the user."
+                "developer_comment": "Questo è un messaggio di avviso pensato per avvisare l'utente."
             },
             "info": {
                 "string": "Questo è un messaggio informativo.",
-                "developer_comment": "This message provides information to the user."
+                "developer_comment": "Questo messaggio fornisce informazioni all'utente."
             }
         },
         "mail_send": {
