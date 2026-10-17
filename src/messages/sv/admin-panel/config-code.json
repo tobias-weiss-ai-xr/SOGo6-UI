@@ -1,68 +1,68 @@
 {
     "AP_CFGCODE": {
         "title": {
-            "string": "Configuration as Code"
+            "string": "Konfiguration som kod"
         },
         "description": {
-            "string": "Export, version, and import system configuration as JSON for GitOps workflows."
+            "string": "Exportera, versionshantera och importera systemkonfiguration som JSON för GitOps-arbetsflöden."
         },
         "export": {
             "title": {
-                "string": "Current Configuration"
+                "string": "Aktuell konfiguration"
             },
             "copy": {
                 "string": "Kopiera"
             },
             "copied": {
-                "string": "Copied!"
+                "string": "Kopierat!"
             },
             "download": {
-                "string": "Download JSON"
+                "string": "Ladda ner JSON"
             },
             "success": {
-                "string": "Downloaded"
+                "string": "Nedladdat"
             }
         },
         "import": {
             "title": {
-                "string": "Import Configuration"
+                "string": "Importera konfiguration"
             },
             "description_label": {
                 "string": "Beskrivning"
             },
             "description_placeholder": {
-                "string": "e.g. Update mail server settings"
+                "string": "t.ex. Uppdatera e-postserverinställningar"
             },
             "placeholder": {
-                "string": "Paste JSON configuration here..."
+                "string": "Klistra in JSON-konfiguration här..."
             },
             "button": {
-                "string": "Apply Configuration"
+                "string": "Tillämpa konfiguration"
             },
             "running": {
-                "string": "Applying..."
+                "string": "Tillämpar..."
             },
             "success": {
-                "string": "Configuration v{{version}} applied"
+                "string": "Konfiguration v{{version}} tillämpad"
             },
             "error": {
-                "string": "Import failed"
+                "string": "Importen misslyckades"
             }
         },
         "history": {
             "title": {
-                "string": "Version History"
+                "string": "Versionshistorik"
             },
             "empty": {
-                "string": "No configuration snapshots yet."
+                "string": "Inga konfigurationsögonblicksbilder ännu."
             }
         },
         "errors": {
             "empty": {
-                "string": "Configuration JSON is empty"
+                "string": "Konfigurations-JSON:en är tom"
             },
             "parse": {
-                "string": "Invalid JSON — please check syntax"
+                "string": "Ogiltig JSON — kontrollera syntaxen"
             }
         }
     }

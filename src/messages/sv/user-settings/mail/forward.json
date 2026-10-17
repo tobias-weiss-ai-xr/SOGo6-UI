@@ -1,79 +1,79 @@
 {
     "US_MAIL_FORWARD": {
         "title": {
-            "string": "Mail Forward"
+            "string": "Vidarebefordring av e-post"
         },
         "page": {
             "description": {
-                "string": "Automatically forward incoming messages to one or more email addresses."
+                "string": "Vidarebefordra inkommande meddelanden automatiskt till en eller flera e-postadresser."
             }
         },
         "labels": {
             "transfer_incoming": {
-                "string": "Transfer incoming messages"
+                "string": "Vidarebefordra inkommande meddelanden"
             },
             "email": {
-                "string": "Email address"
+                "string": "E-postadress"
             },
             "always_forward": {
-                "string": "Always forward"
+                "string": "Vidarebefordra alltid"
             },
             "keep_copy": {
-                "string": "Keep a copy in this inbox"
+                "string": "Behåll en kopia i denna inkorg"
             }
         },
         "description": {
             "transfer_incoming": {
-                "string": "Automatically forward new messages to another email address"
+                "string": "Vidarebefordra nya meddelanden automatiskt till en annan e-postadress"
             },
             "email": {
-                "string": "Forward to these addresses (up to {max} addresses). Add multiple addresses separated by comma, semicolon, or press Enter/Tab."
+                "string": "Vidarebefordra till dessa adresser (högst {max} adresser). Lägg till flera adresser separerade med komma eller semikolon, eller tryck på Retur/Tabb."
             }
         },
         "help": {
             "email": {
-                "string": "We'll forward new messages to these addresses"
+                "string": "Vi vidarebefordrar nya meddelanden till dessa adresser"
             }
         },
         "placeholders": {
             "email": {
-                "string": "Add email address and press Enter"
+                "string": "Lägg till e-postadress och tryck på Retur"
             }
         },
         "errors": {
             "email": {
                 "invalid": {
-                    "string": "Please enter a valid email address"
+                    "string": "Ange en giltig e-postadress"
                 },
                 "duplicate": {
-                    "string": "This address is already in the list"
+                    "string": "Denna adress finns redan i listan"
                 }
             },
             "emails": {
                 "list": {
-                    "string": "There was an error with one or more email addresses"
+                    "string": "Det uppstod ett problem med en eller flera e-postadresser"
                 }
             },
             "max_reached": {
-                "string": "Maximum {max} addresses allowed"
+                "string": "Högst {max} adresser tillåts"
             },
             "validation": {
                 "addresses_required": {
-                    "string": "At least one email address is required when forwarding is enabled."
+                    "string": "Minst en e-postadress krävs när vidarebefordring är aktiverad."
                 }
             }
         },
         "hints": {
             "blur": {
-                "string": "Press Enter to add this address"
+                "string": "Tryck på Retur för att lägga till denna adress"
             }
         },
         "tooltip": {
             "always_forward": {
-                "string": "Incoming mail is forwarded before applying your filters."
+                "string": "Inkommande e-post vidarebefordras innan dina filter tillämpas."
             },
             "keep_copy": {
-                "string": "Keep a copy of forwarded messages in your inbox. Useful if you want to maintain a local archive."
+                "string": "Behåll en kopia av vidarebefordrade meddelanden i din inkorg. Bra om du vill ha ett lokalt arkiv."
             }
         },
         "errors_api": {
@@ -81,13 +81,13 @@
                 "string": "Fel"
             },
             "save_failed": {
-                "string": "Couldn't save your changes, try again"
+                "string": "Kunde inte spara dina ändringar, försök igen"
             },
             "load_failed": {
-                "string": "Could not load forwarding settings. Please try again later."
+                "string": "Kunde inte läsa in vidarebefordringsinställningarna. Försök igen senare."
             },
             "feature_disabled": {
-                "string": "Mail forwarding has been disabled by your administrator."
+                "string": "Vidarebefordring av e-post har inaktiverats av din administratör."
             }
         },
         "status": {
@@ -100,16 +100,16 @@
         },
         "aria": {
             "tags_count": {
-                "string": "{count} of {max} email addresses added"
+                "string": "{count} av {max} e-postadresser har lagts till"
             },
             "remove_email": {
-                "string": "Remove {email}"
+                "string": "Ta bort {email}"
             },
             "email_input_group": {
-                "string": "Email addresses for forwarding"
+                "string": "E-postadresser för vidarebefordring"
             },
             "toggle_forwarding": {
-                "string": "Toggle email forwarding"
+                "string": "Växla vidarebefordring av e-post"
             }
         }
     }

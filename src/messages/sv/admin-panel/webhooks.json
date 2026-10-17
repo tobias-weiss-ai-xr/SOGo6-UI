@@ -4,64 +4,64 @@
             "string": "Webhooks"
         },
         "description": {
-            "string": "Outbound webhooks for n8n, Make, and other automation platforms. Events trigger HTTP POST with HMAC-signed payloads."
+            "string": "Utgående webhooks för n8n, Make och andra automationsplattformar. Händelser utlöser HTTP POST med HMAC-signerade nyttolaster."
         },
         "form": {
             "add": {
-                "string": "Add Webhook"
+                "string": "Lägg till webhook"
             },
             "cancel": {
                 "string": "Avbryt"
             },
             "title": {
-                "string": "New Webhook"
+                "string": "Ny webhook"
             },
             "url": {
-                "string": "Webhook URL"
+                "string": "Webhook-URL"
             },
             "name": {
-                "string": "Display Name"
+                "string": "Visningsnamn"
             },
             "name_placeholder": {
-                "string": "e.g. n8n Workflow"
+                "string": "t.ex. n8n-arbetsflöde"
             },
             "secret": {
-                "string": "Signing Secret"
+                "string": "Signeringshemlighet"
             },
             "secret_placeholder": {
-                "string": "HMAC secret (optional)"
+                "string": "HMAC-hemlighet (valfritt)"
             },
             "events": {
-                "string": "Events"
+                "string": "Händelser"
             },
             "create": {
-                "string": "Create Webhook"
+                "string": "Skapa webhook"
             }
         },
         "create": {
             "success": {
-                "string": "Webhook created"
+                "string": "Webhooken skapades"
             },
             "error": {
-                "string": "Failed to create webhook"
+                "string": "Kunde inte skapa webhooken"
             }
         },
         "delete": {
             "success": {
-                "string": "Webhook deleted"
+                "string": "Webhooken raderades"
             },
             "error": {
-                "string": "Failed to delete"
+                "string": "Kunde inte radera"
             }
         },
         "list": {
             "empty": {
-                "string": "No webhooks configured. Click Add Webhook to get started."
+                "string": "Inga webhooks konfigurerade. Klicka på Lägg till webhook för att komma igång."
             }
         },
         "errors": {
             "fields": {
-                "string": "URL and at least one event are required"
+                "string": "URL och minst en händelse krävs"
             }
         }
     }

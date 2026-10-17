@@ -2,19 +2,19 @@
     "HEADER": {
         "theme": {
             "title": {
-                "string": "Theme",
+                "string": "Tema",
                 "context": "Section title for the header dropdown"
             },
             "dark": {
-                "string": "Dark",
+                "string": "Mörkt",
                 "context": "Dark theme switcher in the header"
             },
             "light": {
-                "string": "Light",
+                "string": "Ljust",
                 "context": "Light theme switcher in the header"
             },
             "dyslexia": {
-                "string": "Dyslexia",
+                "string": "Dyslexi",
                 "context": "Dyslexia theme switcher in the header"
             },
             "tritanopia": {
@@ -30,36 +30,36 @@
                 "context": "Deuteranopia theme switcher in the header"
             },
             "system": {
-                "string": "Auto",
+                "string": "Automatiskt",
                 "context": "Auto theme switcher in the header"
             }
         },
         "admin": {
             "panel": {
-                "string": "Administrator Panel",
+                "string": "Administratörspanel",
                 "context": "Title of the admin panel in the header dropdown"
             }
         },
         "account": {
             "section": {
-                "string": "Account",
+                "string": "Konto",
                 "context": "Section title for the header dropdown"
             },
             "profile": {
-                "string": "Profile",
+                "string": "Profil",
                 "context": "Link to the account profile in the header dropdown"
             },
             "security": {
-                "string": "Security",
+                "string": "Säkerhet",
                 "context": "Link to the account security in the header dropdown"
             },
             "defaultUser": {
-                "string": "User",
+                "string": "Användare",
                 "context": "Default username fallback when profile is not yet loaded"
             }
         },
         "logout": {
-            "string": "Logout",
+            "string": "Logga ut",
             "context": "Link to logout in the header dropdown"
         },
         "settings": {
@@ -68,7 +68,7 @@
                 "context": "Section title for the header dropdown"
             },
             "general": {
-                "string": "General",
+                "string": "Allmänt",
                 "context": "Link to the general settings in the header dropdown"
             },
             "calendar": {
@@ -76,11 +76,11 @@
                 "context": "Link to the calendar settings in the header dropdown"
             },
             "address_books": {
-                "string": "Address books",
+                "string": "Adressböcker",
                 "context": "Link to the address books settings in the header dropdown"
             },
             "email": {
-                "string": "Email",
+                "string": "E-post",
                 "context": "Link to the emails settings in the header dropdown"
             }
         }

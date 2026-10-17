@@ -4,809 +4,809 @@
             "success": {
                 "string": "Framgång",
                 "context": "Notification title for successful operations.",
-                "developer_comment": "Advise the user that an operation completed successfully."
+                "developer_comment": "Informera användaren om att en åtgärd har slutförts."
             },
             "error": {
                 "string": "Fel",
                 "context": "Notification title for failed operations.",
-                "developer_comment": "Advise the user that an error occurred during the operation. {error}"
+                "developer_comment": "Informera användaren om att ett fel uppstod under åtgärden. {error}"
             },
             "warning": {
                 "string": "Varning",
                 "context": "Notification title for warning messages.",
-                "developer_comment": "Advise the user to check the details and proceed with caution."
+                "developer_comment": "Informera användaren om att kontrollera detaljerna och fortsätta med försiktighet."
             },
             "info": {
                 "string": "Information",
                 "context": "Notification title for informational messages.",
-                "developer_comment": "Advise the user of an informational message."
+                "developer_comment": "Informera användaren om ett informativt meddelande."
             }
         },
         "mail_action": {
             "spam": {
                 "successTitle": {
-                    "string": "Marked as spam"
+                    "string": "Markerat som skräppost"
                 },
                 "successMessage": {
-                    "string": "The message was moved to Junk."
+                    "string": "Meddelandet flyttades till skräpmappen."
                 },
                 "errorTitle": {
-                    "string": "Action failed"
+                    "string": "Åtgärden misslyckades"
                 },
                 "errorMessage": {
-                    "string": "Could not mark this message as spam."
+                    "string": "Kunde inte markera meddelandet som skräppost."
                 }
             },
             "ham": {
                 "successTitle": {
-                    "string": "Moved to Inbox"
+                    "string": "Flyttat till inkorgen"
                 },
                 "successMessage": {
-                    "string": "The message was moved to your Inbox."
+                    "string": "Meddelandet flyttades till din inkorg."
                 },
                 "errorTitle": {
-                    "string": "Action failed"
+                    "string": "Åtgärden misslyckades"
                 },
                 "errorMessage": {
-                    "string": "Could not restore this message."
+                    "string": "Kunde inte återställa meddelandet."
                 }
             },
             "move": {
                 "successTitle": {
-                    "string": "Message moved"
+                    "string": "Meddelandet flyttades"
                 },
                 "successMessage": {
-                    "string": "The message was moved successfully."
+                    "string": "Meddelandet flyttades."
                 },
                 "errorTitle": {
-                    "string": "Move failed"
+                    "string": "Flyttningen misslyckades"
                 },
                 "errorMessage": {
-                    "string": "Could not move this message."
+                    "string": "Kunde inte flytta meddelandet."
                 }
             },
             "tag": {
                 "successTitle": {
-                    "string": "Label applied"
+                    "string": "Etikett applicerad"
                 },
                 "successMessage": {
-                    "string": "The label was applied to this message."
+                    "string": "Etiketten applicerades på meddelandet."
                 },
                 "errorTitle": {
-                    "string": "Label failed"
+                    "string": "Etikettåtgärden misslyckades"
                 },
                 "errorMessage": {
-                    "string": "Could not apply the label."
+                    "string": "Kunde inte applicera etiketten."
                 }
             },
             "untag_label": {
                 "successTitle": {
-                    "string": "Label removed"
+                    "string": "Etikett borttagen"
                 },
                 "successMessage": {
-                    "string": "The label was removed from this message."
+                    "string": "Etiketten togs bort från meddelandet."
                 },
                 "errorTitle": {
-                    "string": "Label failed"
+                    "string": "Etikettåtgärden misslyckades"
                 },
                 "errorMessage": {
-                    "string": "Could not remove the label."
+                    "string": "Kunde inte ta bort etiketten."
                 }
             }
         },
         "mail_print": {
             "popup_blocked": {
                 "title": {
-                    "string": "Print blocked"
+                    "string": "Utskrift blockerad"
                 },
                 "message": {
-                    "string": "Allow pop-ups for this site to print messages."
+                    "string": "Tillåt popupfönster för denna webbplats för att skriva ut meddelanden."
                 }
             }
         },
         "folders_purge": {
             "successTitle": {
-                "string": "Folder purged"
+                "string": "Mappen rensades"
             },
             "successMessage": {
-                "string": "All deleted messages have been permanently removed."
+                "string": "Alla raderade meddelanden har tagits bort permanent."
             },
             "errorTitle": {
-                "string": "Purge failed"
+                "string": "Rensningen misslyckades"
             },
             "errorMessage": {
-                "string": "An error occurred while purging the folder. Please try again."
+                "string": "Ett fel uppstod när mappen rensades. Försök igen."
             }
         },
         "folders_expunge": {
             "successTitle": {
-                "string": "Folder expunged"
+                "string": "Mappen komprimerades"
             },
             "successMessage": {
-                "string": "All deleted messages have been permanently removed."
+                "string": "Alla raderade meddelanden har tagits bort permanent."
             },
             "errorTitle": {
-                "string": "Expunge failed"
+                "string": "Komprimeringen misslyckades"
             },
             "errorMessage": {
-                "string": "An error occurred while expunging the folder. Please try again."
+                "string": "Ett fel uppstod när mappen komprimerades. Försök igen."
             }
         },
         "folders_share": {
             "successTitle": {
-                "string": "Sharing updated"
+                "string": "Delningen uppdaterades"
             },
             "successMessage": {
-                "string": "Folder sharing settings have been saved."
+                "string": "Mappens delningsinställningar har sparats."
             },
             "errorTitle": {
-                "string": "Sharing failed"
+                "string": "Delningen misslyckades"
             },
             "errorMessage": {
-                "string": "An error occurred while updating sharing settings. Please try again."
+                "string": "Ett fel uppstod när delningsinställningarna uppdaterades. Försök igen."
             }
         },
         "folders_create": {
             "success": {
                 "title": {
-                    "string": "Folder created"
+                    "string": "Mappen skapades"
                 },
                 "message": {
-                    "string": "The subfolder has been successfully created."
+                    "string": "Undermappen har skapats."
                 }
             },
             "error": {
                 "title": {
-                    "string": "Failed to create folder"
+                    "string": "Kunde inte skapa mapp"
                 },
                 "message": {
-                    "string": "An error occurred while creating the folder. Please try again."
+                    "string": "Ett fel uppstod när mappen skapades. Försök igen."
                 }
             }
         },
         "folders_delete": {
             "success": {
                 "title": {
-                    "string": "Folder deleted"
+                    "string": "Mappen raderades"
                 },
                 "message": {
-                    "string": "The folder has been moved to Trash or permanently deleted."
+                    "string": "Mappen har flyttats till papperskorgen eller raderats permanent."
                 }
             },
             "error": {
                 "title": {
-                    "string": "Failed to delete folder"
+                    "string": "Kunde inte radera mappen"
                 },
                 "message": {
-                    "string": "An error occurred while deleting the folder. Please try again."
+                    "string": "Ett fel uppstod när mappen raderades. Försök igen."
                 }
             }
         },
         "folders_rename": {
             "success": {
                 "title": {
-                    "string": "Folder renamed"
+                    "string": "Mappen bytte namn"
                 },
                 "message": {
-                    "string": "The folder has been successfully renamed."
+                    "string": "Mappens namn har ändrats."
                 }
             },
             "error": {
                 "title": {
-                    "string": "Failed to rename folder"
+                    "string": "Kunde inte byta namn på mappen"
                 },
                 "message": {
-                    "string": "An error occurred while renaming the folder. Please try again."
+                    "string": "Ett fel uppstod när mappens namn ändrades. Försök igen."
                 }
             }
         },
         "folders_set_type": {
             "success": {
                 "title": {
-                    "string": "Folder type updated"
+                    "string": "Mapptypen uppdaterades"
                 },
                 "message": {
-                    "string": "The folder type has been updated."
+                    "string": "Mapptypen har uppdaterats."
                 }
             },
             "error": {
                 "title": {
-                    "string": "Failed to update folder type"
+                    "string": "Kunde inte uppdatera mapptypen"
                 },
                 "message": {
-                    "string": "An error occurred while updating the folder type. Please try again."
+                    "string": "Ett fel uppstod när mapptypen uppdaterades. Försök igen."
                 }
             }
         },
         "folders_move": {
             "success": {
                 "title": {
-                    "string": "Folder moved"
+                    "string": "Mappen flyttades"
                 },
                 "message": {
-                    "string": "The folder has been moved."
+                    "string": "Mappen har flyttats."
                 }
             },
             "error": {
                 "title": {
-                    "string": "Failed to move folder"
+                    "string": "Kunde inte flytta mappen"
                 },
                 "message": {
-                    "string": "An error occurred while moving the folder. Please try again."
+                    "string": "Ett fel uppstod när mappen flyttades. Försök igen."
                 }
             }
         },
         "folders_export": {
             "success": {
                 "title": {
-                    "string": "Export started"
+                    "string": "Exporten har startat"
                 },
                 "message": {
-                    "string": "The folder export has been started."
+                    "string": "Mappens export har startats."
                 }
             },
             "error": {
                 "title": {
-                    "string": "Failed to export folder"
+                    "string": "Kunde inte exportera mappen"
                 },
                 "message": {
-                    "string": "An error occurred while exporting the folder. Please try again."
+                    "string": "Ett fel uppstod när mappen exporterades. Försök igen."
                 }
             }
         },
         "calendar_create": {
             "success": {
                 "title": {
-                    "string": "Calendar created"
+                    "string": "Kalendern skapades"
                 },
                 "message": {
-                    "string": "The calendar has been successfully created."
+                    "string": "Kalendern har skapats."
                 }
             },
             "error": {
                 "title": {
-                    "string": "Creation failed"
+                    "string": "Skapandet misslyckades"
                 },
                 "message": {
-                    "string": "Failed to create the calendar. Please try again."
+                    "string": "Kunde inte skapa kalendern. Försök igen."
                 }
             }
         },
         "calendar_update": {
             "success": {
                 "title": {
-                    "string": "Calendar updated"
+                    "string": "Kalendern uppdaterades"
                 },
                 "message": {
-                    "string": "The calendar has been successfully updated."
+                    "string": "Kalendern har uppdaterats."
                 }
             },
             "error": {
                 "title": {
-                    "string": "Update failed"
+                    "string": "Uppdateringen misslyckades"
                 },
                 "message": {
-                    "string": "Failed to update the calendar. Please try again."
+                    "string": "Kunde inte uppdatera kalendern. Försök igen."
                 }
             }
         },
         "calendar_delete": {
             "success": {
                 "title": {
-                    "string": "Calendar deleted"
+                    "string": "Kalendern raderades"
                 },
                 "message": {
-                    "string": "The calendar has been successfully deleted."
+                    "string": "Kalendern har raderats."
                 }
             },
             "error": {
                 "title": {
-                    "string": "Deletion failed"
+                    "string": "Raderingen misslyckades"
                 },
                 "message": {
-                    "string": "Failed to delete the calendar. Please try again."
+                    "string": "Kunde inte radera kalendern. Försök igen."
                 }
             }
         },
         "external_calendar_create": {
             "success": {
                 "title": {
-                    "string": "Calendar subscribed"
+                    "string": "Prenumerationen skapades"
                 },
                 "message": {
-                    "string": "The ICS calendar has been added."
+                    "string": "ICS-kalendern har lagts till."
                 }
             },
             "error": {
                 "title": {
-                    "string": "Subscription failed"
+                    "string": "Prenumerationen misslyckades"
                 },
                 "message": {
-                    "string": "Unable to subscribe to this calendar."
+                    "string": "Kunde inte prenumerera på kalendern."
                 }
             }
         },
         "external_calendar_delete": {
             "success": {
                 "title": {
-                    "string": "Subscription removed"
+                    "string": "Prenumerationen togs bort"
                 },
                 "message": {
-                    "string": "The calendar has been removed."
+                    "string": "Kalendern har tagits bort."
                 }
             },
             "error": {
                 "title": {
-                    "string": "Deletion failed"
+                    "string": "Raderingen misslyckades"
                 },
                 "message": {
-                    "string": "Unable to remove this calendar."
+                    "string": "Kunde inte ta bort kalendern."
                 }
             }
         },
         "external_calendar_sync": {
             "success": {
                 "title": {
-                    "string": "Calendar synced"
+                    "string": "Kalendern synkroniserades"
                 },
                 "message": {
-                    "string": "The calendar has been synchronized."
+                    "string": "Kalendern har synkroniserats."
                 }
             },
             "error": {
                 "title": {
-                    "string": "Sync failed"
+                    "string": "Synkroniseringen misslyckades"
                 },
                 "message": {
-                    "string": "Unable to sync this calendar."
+                    "string": "Kunde inte synkronisera kalendern."
                 }
             }
         },
         "calendar_event_create": {
             "success": {
                 "title": {
-                    "string": "Event created"
+                    "string": "Evenemanget skapades"
                 },
                 "message": {
-                    "string": "The event has been successfully created."
+                    "string": "Evenemanget har skapats."
                 }
             },
             "error": {
                 "title": {
-                    "string": "Creation failed"
+                    "string": "Skapandet misslyckades"
                 },
                 "message": {
-                    "string": "Failed to create the event. Please try again."
+                    "string": "Kunde inte skapa evenemanget. Försök igen."
                 }
             }
         },
         "calendar_event_update": {
             "success": {
                 "title": {
-                    "string": "Event updated"
+                    "string": "Evenemanget uppdaterades"
                 },
                 "message": {
-                    "string": "The event has been successfully updated."
+                    "string": "Evenemanget har uppdaterats."
                 }
             },
             "error": {
                 "title": {
-                    "string": "Update failed"
+                    "string": "Uppdateringen misslyckades"
                 },
                 "message": {
-                    "string": "Failed to update the event. Please try again."
+                    "string": "Kunde inte uppdatera evenemanget. Försök igen."
                 }
             }
         },
         "calendar_event_delete": {
             "success": {
                 "title": {
-                    "string": "Event deleted"
+                    "string": "Evenemanget raderades"
                 },
                 "message": {
-                    "string": "The event has been successfully deleted."
+                    "string": "Evenemanget har raderats."
                 }
             },
             "error": {
                 "title": {
-                    "string": "Deletion failed"
+                    "string": "Raderingen misslyckades"
                 },
                 "message": {
-                    "string": "Failed to delete the event. Please try again."
+                    "string": "Kunde inte radera evenemanget. Försök igen."
                 }
             }
         },
         "task_create": {
             "success": {
                 "title": {
-                    "string": "Task created"
+                    "string": "Uppgiften skapades"
                 },
                 "message": {
-                    "string": "The task has been created."
+                    "string": "Uppgiften har skapats."
                 }
             },
             "error": {
                 "title": {
-                    "string": "Creation failed"
+                    "string": "Skapandet misslyckades"
                 },
                 "message": {
-                    "string": "Could not create the task. Please try again."
+                    "string": "Kunde inte skapa uppgiften. Försök igen."
                 }
             }
         },
         "task_update": {
             "success": {
                 "title": {
-                    "string": "Task updated"
+                    "string": "Uppgiften uppdaterades"
                 },
                 "message": {
-                    "string": "The task has been updated."
+                    "string": "Uppgiften har uppdaterats."
                 }
             },
             "error": {
                 "title": {
-                    "string": "Update failed"
+                    "string": "Uppdateringen misslyckades"
                 },
                 "message": {
-                    "string": "Could not update the task. Please try again."
+                    "string": "Kunde inte uppdatera uppgiften. Försök igen."
                 }
             }
         },
         "task_delete": {
             "success": {
                 "title": {
-                    "string": "Task deleted"
+                    "string": "Uppgiften raderades"
                 },
                 "message": {
-                    "string": "The task has been deleted."
+                    "string": "Uppgiften har raderats."
                 }
             },
             "error": {
                 "title": {
-                    "string": "Deletion failed"
+                    "string": "Raderingen misslyckades"
                 },
                 "message": {
-                    "string": "Could not delete the task. Please try again."
+                    "string": "Kunde inte radera uppgiften. Försök igen."
                 }
             }
         },
         "address_book_entry_create": {
             "success": {
                 "title": {
-                    "string": "Contact created"
+                    "string": "Kontakten skapades"
                 },
                 "message": {
-                    "string": "The contact has been added to your address book."
+                    "string": "Kontakten har lagts till i din adressbok."
                 }
             },
             "error": {
                 "title": {
-                    "string": "Creation failed"
+                    "string": "Skapandet misslyckades"
                 },
                 "message": {
-                    "string": "Could not create the contact. Please try again."
+                    "string": "Kunde inte skapa kontakten. Försök igen."
                 }
             }
         },
         "address_book_entry_update": {
             "success": {
                 "title": {
-                    "string": "Contact updated"
+                    "string": "Kontakten uppdaterades"
                 },
                 "message": {
-                    "string": "The contact has been updated."
+                    "string": "Kontakten har uppdaterats."
                 }
             },
             "error": {
                 "title": {
-                    "string": "Update failed"
+                    "string": "Uppdateringen misslyckades"
                 },
                 "message": {
-                    "string": "Could not update the contact. Please try again."
+                    "string": "Kunde inte uppdatera kontakten. Försök igen."
                 }
             }
         },
         "address_book_entry_delete": {
             "success": {
                 "title": {
-                    "string": "Contact deleted"
+                    "string": "Kontakten raderades"
                 },
                 "message": {
-                    "string": "The contact has been removed."
+                    "string": "Kontakten har tagits bort."
                 }
             },
             "error": {
                 "title": {
-                    "string": "Deletion failed"
+                    "string": "Raderingen misslyckades"
                 },
                 "message": {
-                    "string": "Could not delete the contact. Please try again."
+                    "string": "Kunde inte radera kontakten. Försök igen."
                 }
             }
         },
         "address_book_entry_move": {
             "success": {
                 "title": {
-                    "string": "Contact moved"
+                    "string": "Kontakten flyttades"
                 },
                 "message": {
-                    "string": "The contact has been moved to another address book."
+                    "string": "Kontakten har flyttats till en annan adressbok."
                 }
             },
             "error": {
                 "title": {
-                    "string": "Move failed"
+                    "string": "Flyttningen misslyckades"
                 },
                 "message": {
-                    "string": "Could not move the contact. Please try again."
+                    "string": "Kunde inte flytta kontakten. Försök igen."
                 }
             }
         },
         "address_book_create": {
             "success": {
                 "title": {
-                    "string": "Address book created"
+                    "string": "Adressboken skapades"
                 },
                 "message": {
-                    "string": "The address book has been created."
+                    "string": "Adressboken har skapats."
                 }
             },
             "error": {
                 "title": {
-                    "string": "Creation failed"
+                    "string": "Skapandet misslyckades"
                 },
                 "message": {
-                    "string": "Could not create the address book. Please try again."
+                    "string": "Kunde inte skapa adressboken. Försök igen."
                 }
             }
         },
         "address_book_update": {
             "success": {
                 "title": {
-                    "string": "Address book updated"
+                    "string": "Adressboken uppdaterades"
                 },
                 "message": {
-                    "string": "The address book has been updated."
+                    "string": "Adressboken har uppdaterats."
                 }
             },
             "error": {
                 "title": {
-                    "string": "Update failed"
+                    "string": "Uppdateringen misslyckades"
                 },
                 "message": {
-                    "string": "Could not update the address book. Please try again."
+                    "string": "Kunde inte uppdatera adressboken. Försök igen."
                 }
             }
         },
         "address_book_delete": {
             "success": {
                 "title": {
-                    "string": "Address book deleted"
+                    "string": "Adressboken raderades"
                 },
                 "message": {
-                    "string": "The address book has been removed."
+                    "string": "Adressboken har tagits bort."
                 }
             },
             "error": {
                 "title": {
-                    "string": "Deletion failed"
+                    "string": "Raderingen misslyckades"
                 },
                 "message": {
-                    "string": "Could not delete the address book. Please try again."
+                    "string": "Kunde inte radera adressboken. Försök igen."
                 }
             }
         },
         "contact_api_errors": {
             "addressbook_not_found": {
-                "string": "The address book could not be found."
+                "string": "Adressboken kunde inte hittas."
             },
             "addressbook_duplicate": {
-                "string": "An address book with this name already exists."
+                "string": "En adressbok med detta namn finns redan."
             },
             "contact_not_found": {
-                "string": "The contact could not be found."
+                "string": "Kontakten kunde inte hittas."
             },
             "contact_duplicate": {
-                "string": "A contact with this identifier already exists."
+                "string": "En kontakt med denna identifierare finns redan."
             },
             "contact_persist_failed": {
-                "string": "The contact could not be saved."
+                "string": "Kontakten kunde inte sparas."
             },
             "contact_update_failed": {
-                "string": "The contact could not be updated."
+                "string": "Kontakten kunde inte uppdateras."
             },
             "operation_not_supported": {
-                "string": "This operation is not supported for this address book."
+                "string": "Denna åtgärd stöds inte för denna adressbok."
             },
             "list_not_found": {
-                "string": "The distribution list could not be found."
+                "string": "Distributionslistan kunde inte hittas."
             },
             "list_duplicate": {
-                "string": "A distribution list with this name already exists."
+                "string": "En distributionslista med detta namn finns redan."
             },
             "list_persist_failed": {
-                "string": "The distribution list could not be saved."
+                "string": "Distributionslistan kunde inte sparas."
             },
             "list_update_failed": {
-                "string": "The distribution list could not be updated."
+                "string": "Distributionslistan kunde inte uppdateras."
             },
             "list_member_invalid": {
-                "string": "One or more selected members are not contacts in this address book."
+                "string": "En eller flera markerade medlemmar är inte kontakter i denna adressbok."
             },
             "access_denied": {
-                "string": "You do not have permission to modify this address book."
+                "string": "Du har inte behörighet att ändra denna adressbok."
             },
             "read_only": {
-                "string": "This address book is read-only."
+                "string": "Denna adressbok är skrivskyddad."
             },
             "export_format_unsupported": {
-                "string": "The selected export format is not supported."
+                "string": "Det valda exportformatet stöds inte."
             },
             "import_no_file": {
-                "string": "No file was provided for import."
+                "string": "Ingen fil angavs för import."
             },
             "import_too_large": {
-                "string": "The import file exceeds the maximum allowed size (10 MB)."
+                "string": "Importfilen överskrider den högsta tillåtna storleken (10 MB)."
             },
             "import_parse_failed": {
-                "string": "The import file could not be parsed."
+                "string": "Importfilen kunde inte tolkas."
             },
             "job_not_found": {
-                "string": "The background job could not be found."
+                "string": "Bakgrundsjobbet kunde inte hittas."
             },
             "job_forbidden": {
-                "string": "You do not have access to this background job."
+                "string": "Du har inte åtkomst till detta bakgrundsjobb."
             },
             "job_not_ready": {
-                "string": "The export is not ready yet. Please wait and try again."
+                "string": "Exporten är inte klar ännu. Vänta och försök igen."
             },
             "job_no_result": {
-                "string": "This job has no downloadable result."
+                "string": "Detta jobb har ingen nedladdningsbar resultatfil."
             },
             "job_concurrent_limit": {
-                "string": "Too many background jobs are running. Please try again later."
+                "string": "För många bakgrundsjobb körs. Försök igen senare."
             },
             "file_too_large": {
-                "string": "The photo exceeds the maximum allowed size (2 MB)."
+                "string": "Fotot överskrider den högsta tillåtna storleken (2 MB)."
             },
             "file_type_not_allowed": {
-                "string": "This file type is not allowed for contact photos."
+                "string": "Denna filtyp är inte tillåten för kontaktfoton."
             },
             "generic": {
-                "string": "The operation could not be completed. Please try again."
+                "string": "Åtgärden kunde inte slutföras. Försök igen."
             }
         },
         "calendar_event_attendance": {
             "success": {
                 "accepted": {
                     "title": {
-                        "string": "Invitation accepted"
+                        "string": "Inbjudan accepterad"
                     },
                     "message": {
-                        "string": "You accepted this event."
+                        "string": "Du accepterade detta evenemang."
                     }
                 },
                 "declined": {
                     "title": {
-                        "string": "Invitation declined"
+                        "string": "Inbjudan avböjd"
                     },
                     "message": {
-                        "string": "You declined this event."
+                        "string": "Du avböjde detta evenemang."
                     }
                 },
                 "tentative": {
                     "title": {
-                        "string": "Marked as maybe"
+                        "string": "Markerat som kanske"
                     },
                     "message": {
-                        "string": "You marked this event as maybe."
+                        "string": "Du markerade detta evenemang som kanske."
                     }
                 },
                 "delegated": {
                     "title": {
-                        "string": "Attendance updated"
+                        "string": "Deltagandet uppdaterades"
                     },
                     "message": {
-                        "string": "Your attendance was updated."
+                        "string": "Ditt deltagande uppdaterades."
                     }
                 }
             },
             "error": {
                 "title": {
-                    "string": "Attendance update failed"
+                    "string": "Uppdateringen av deltagandet misslyckades"
                 },
                 "message": {
-                    "string": "Failed to update your attendance. Please try again."
+                    "string": "Kunde inte uppdatera ditt deltagande. Försök igen."
                 }
             }
         },
         "message": {
             "success": {
-                "string": "Operation completed successfully.",
-                "developer_comment": "Advise the user that an operation completed successfully."
+                "string": "Åtgärden slutfördes.",
+                "developer_comment": "Informera användaren om att en åtgärd har slutförts."
             },
             "error": {
-                "string": "An error occurred during the operation.",
-                "developer_comment": "Advise the user that there was an error while processing their request."
+                "string": "Ett fel uppstod under åtgärden.",
+                "developer_comment": "Informera användaren om att ett fel uppstod när deras begäran behandlades."
             },
             "warning": {
-                "string": "Please check the details and proceed with caution.",
-                "developer_comment": "This is a warning message to alert the user."
+                "string": "Kontrollera detaljerna och fortsätt med försiktighet.",
+                "developer_comment": "Detta är ett varningsmeddelande som ska uppmärksamma användaren."
             },
             "info": {
-                "string": "This is an informational message.",
-                "developer_comment": "This message provides information to the user."
+                "string": "Detta är ett informativt meddelande.",
+                "developer_comment": "Detta meddelande ger information till användaren."
             }
         },
         "mail_send": {
             "success": {
                 "title": {
-                    "string": "Mail sent"
+                    "string": "E-post skickad"
                 },
                 "message": {
-                    "string": "Your email has been sent successfully."
+                    "string": "Ditt e-postmeddelande har skickats."
                 }
             },
             "error": {
                 "title": {
-                    "string": "Failed to send mail"
+                    "string": "Kunde inte skicka e-post"
                 },
                 "message": {
-                    "string": "An error occurred while sending your email. Please try again."
+                    "string": "Ett fel uppstod när ditt e-postmeddelande skickades. Försök igen."
                 }
             }
         },
         "save_draft": {
             "success": {
                 "title": {
-                    "string": "Draft saved"
+                    "string": "Utkast sparat"
                 },
                 "message": {
-                    "string": "Your email has been saved as a draft."
+                    "string": "Ditt e-postmeddelande har sparats som utkast."
                 }
             },
             "error": {
                 "title": {
-                    "string": "Failed to save draft"
+                    "string": "Kunde inte spara utkastet"
                 },
                 "message": {
-                    "string": "An error occurred while saving your draft. Please try again."
+                    "string": "Ett fel uppstod när ditt utkast sparades. Försök igen."
                 }
             }
         },
         "discard_draft": {
             "success": {
                 "title": {
-                    "string": "Draft discarded"
+                    "string": "Utkast kastat"
                 },
                 "message": {
-                    "string": "Your email has been discarded."
+                    "string": "Ditt e-postmeddelande har kastats."
                 }
             },
             "error": {
                 "title": {
-                    "string": "Failed to discard draft"
+                    "string": "Kunde inte kasta utkastet"
                 },
                 "message": {
-                    "string": "An error occurred while discarding your draft. Please try again."
+                    "string": "Ett fel uppstod när ditt utkast kastades. Försök igen."
                 }
             }
         },
         "attachment_upload": {
             "success": {
                 "title": {
-                    "string": "Attachment uploaded"
+                    "string": "Bilaga uppladdad"
                 },
                 "message": {
-                    "string": "Your attachment has been uploaded successfully."
+                    "string": "Din bilaga har laddats upp."
                 }
             },
             "error": {
                 "title": {
-                    "string": "Failed to upload attachment"
+                    "string": "Kunde inte ladda upp bilagan"
                 },
                 "message": {
-                    "string": "An error occurred while uploading your attachment. Please try again."
+                    "string": "Ett fel uppstod när din bilaga laddades upp. Försök igen."
                 }
             }
         },
@@ -814,18 +814,18 @@
             "save": {
                 "success": {
                     "title": {
-                        "string": "Filters saved"
+                        "string": "Filter sparade"
                     },
                     "message": {
-                        "string": "Your mail filters have been updated."
+                        "string": "Dina e-postfilter har uppdaterats."
                     }
                 },
                 "error": {
                     "title": {
-                        "string": "Could not save filters"
+                        "string": "Kunde inte spara filtren"
                     },
                     "message": {
-                        "string": "An error occurred while saving your mail filters."
+                        "string": "Ett fel uppstod när dina e-postfilter sparades."
                     }
                 }
             }
@@ -834,18 +834,18 @@
             "save": {
                 "success": {
                     "title": {
-                        "string": "Vacation settings saved"
+                        "string": "Semesterinställningar sparade"
                     },
                     "message": {
-                        "string": "Your vacation auto reply has been updated."
+                        "string": "Ditt automatiska semestersvar har uppdaterats."
                     }
                 },
                 "error": {
                     "title": {
-                        "string": "Could not save vacation settings"
+                        "string": "Kunde inte spara semesterinställningarna"
                     },
                     "message": {
-                        "string": "An error occurred while saving your vacation settings."
+                        "string": "Ett fel uppstod när dina semesterinställningar sparades."
                     }
                 }
             }
@@ -854,18 +854,18 @@
             "save": {
                 "success": {
                     "title": {
-                        "string": "Forwarding settings saved"
+                        "string": "Vidarebefordringsinställningar sparade"
                     },
                     "message": {
-                        "string": "Your mail forwarding settings have been updated."
+                        "string": "Dina inställningar för vidarebefordring av e-post har uppdaterats."
                     }
                 },
                 "error": {
                     "title": {
-                        "string": "Could not save forwarding settings"
+                        "string": "Kunde inte spara vidarebefordringsinställningarna"
                     },
                     "message": {
-                        "string": "An error occurred while saving your mail forwarding settings."
+                        "string": "Ett fel uppstod när dina vidarebefordringsinställningar sparades."
                     }
                 }
             }
@@ -874,26 +874,26 @@
             "save": {
                 "success": {
                     "title": {
-                        "string": "Notification settings saved"
+                        "string": "Aviseringsinställningar sparade"
                     },
                     "message": {
-                        "string": "Your mail notification settings have been updated."
+                        "string": "Dina aviseringsinställningar för e-post har uppdaterats."
                     }
                 },
                 "error": {
                     "title": {
-                        "string": "Could not save notification settings"
+                        "string": "Kunde inte spara aviseringsinställningarna"
                     },
                     "message": {
-                        "string": "An error occurred while saving your mail notification settings."
+                        "string": "Ett fel uppstod när dina aviseringsinställningar sparades."
                     }
                 },
                 "warning": {
                     "title": {
-                        "string": "Notification settings not applied"
+                        "string": "Aviseringsinställningarna tillämpades inte"
                     },
                     "message": {
-                        "string": "Your server does not support mail notifications (enotify extension). Settings were not saved."
+                        "string": "Din server stöder inte e-postaviseringar (tillägget enotify). Inställningarna sparades inte."
                     }
                 }
             }

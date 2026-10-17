@@ -4,64 +4,64 @@
             "string": "Helpdesk / Ticketing"
         },
         "description": {
-            "string": "Auto-create tickets from emails with assignment, priority, SLA tracking, and response history."
+            "string": "Skapa automatiskt ärenden från e-post med tilldelning, prioritet, SLA-uppföljning och svarshistorik."
         },
         "form": {
             "create": {
-                "string": "New Ticket"
+                "string": "Nytt ärende"
             },
             "cancel": {
                 "string": "Avbryt"
             },
             "title": {
-                "string": "Create Ticket"
+                "string": "Skapa ärende"
             },
             "subject": {
-                "string": "Subject"
+                "string": "Ämne"
             },
             "priority": {
-                "string": "Priority"
+                "string": "Prioritet"
             },
             "description": {
                 "string": "Beskrivning"
             },
             "requester": {
-                "string": "Requester Email"
+                "string": "Beställarens e-post"
             },
             "assignee": {
-                "string": "Assignee Email"
+                "string": "Handläggarens e-post"
             },
             "sla": {
-                "string": "SLA (hours)"
+                "string": "SLA (timmar)"
             },
             "submit": {
-                "string": "Create Ticket"
+                "string": "Skapa ärende"
             }
         },
         "create": {
             "success": {
-                "string": "Ticket created"
+                "string": "Ärendet skapades"
             },
             "error": {
-                "string": "Failed to create"
+                "string": "Kunde inte skapa"
             }
         },
         "update": {
             "success": {
-                "string": "Ticket updated"
+                "string": "Ärendet uppdaterades"
             },
             "error": {
-                "string": "Failed to update"
+                "string": "Kunde inte uppdatera"
             }
         },
         "list": {
             "empty": {
-                "string": "No tickets yet."
+                "string": "Inga ärenden ännu."
             }
         },
         "errors": {
             "fields": {
-                "string": "Subject and description are required"
+                "string": "Ämne och beskrivning krävs"
             }
         }
     }

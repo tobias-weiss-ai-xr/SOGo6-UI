@@ -1,58 +1,58 @@
 {
     "AP_QUICK": {
         "title": {
-            "string": "Quick Actions"
+            "string": "Snabbåtgärder"
         },
         "description": {
-            "string": "User-defined multi-step actions triggered with a single click from the mail list."
+            "string": "Användardefinierade åtgärder i flera steg som utlöses med ett enda klick från maillistan."
         },
         "form": {
             "create": {
-                "string": "New Action"
+                "string": "Ny åtgärd"
             },
             "cancel": {
                 "string": "Avbryt"
             },
             "title": {
-                "string": "Create Quick Action"
+                "string": "Skapa snabbåtgärd"
             },
             "name": {
-                "string": "Action Name"
+                "string": "Åtgärdsnamn"
             },
             "icon": {
-                "string": "Icon"
+                "string": "Ikon"
             },
             "steps": {
-                "string": "Steps"
+                "string": "Steg"
             },
             "submit": {
-                "string": "Create Action"
+                "string": "Skapa åtgärd"
             }
         },
         "create": {
             "success": {
-                "string": "Action created"
+                "string": "Åtgärden skapades"
             },
             "error": {
-                "string": "Failed to create"
+                "string": "Kunde inte skapa"
             }
         },
         "delete": {
             "success": {
-                "string": "Action deleted"
+                "string": "Åtgärden raderades"
             },
             "error": {
-                "string": "Failed to delete"
+                "string": "Kunde inte radera"
             }
         },
         "list": {
             "empty": {
-                "string": "No quick actions yet. Create one to speed up your workflow."
+                "string": "Inga snabbåtgärder ännu. Skapa en för att snabba upp ditt arbetsflöde."
             }
         },
         "errors": {
             "fields": {
-                "string": "Name and at least one step are required"
+                "string": "Namn och minst ett steg krävs"
             }
         }
     }

@@ -1,52 +1,52 @@
 {
     "AP_QUOTAS": {
         "title": {
-            "string": "Usage Quotas"
+            "string": "Användningskvoter"
         },
         "description": {
-            "string": "View and set per-user resource limits for mailbox size, calendars, and contacts."
+            "string": "Visa och ställ in resursgränser per användare för postlådestorlek, kalendrar och kontakter."
         },
         "select_user": {
-            "string": "Select User"
+            "string": "Välj användare"
         },
         "select_placeholder": {
-            "string": "Choose a user..."
+            "string": "Välj en användare..."
         },
         "current_usage": {
-            "string": "Current Usage"
+            "string": "Aktuell användning"
         },
         "set_quota": {
-            "string": "Set Quota"
+            "string": "Ställ in kvot"
         },
         "labels": {
             "mailbox": {
-                "string": "Mailbox"
+                "string": "Postlåda"
             },
             "calendars": {
-                "string": "Calendars"
+                "string": "Kalendrar"
             },
             "contacts": {
                 "string": "Kontakter"
             },
             "mailbox_limit": {
-                "string": "Mailbox Size Limit"
+                "string": "Maxstorlek för postlåda"
             },
             "calendar_limit": {
-                "string": "Max Calendars"
+                "string": "Högst antal kalendrar"
             },
             "contact_limit": {
-                "string": "Max Contacts"
+                "string": "Högst antal kontakter"
             }
         },
         "save": {
             "button": {
-                "string": "Save Quota"
+                "string": "Spara kvot"
             },
             "success": {
-                "string": "Quota updated"
+                "string": "Kvoten uppdaterades"
             },
             "error": {
-                "string": "Failed to update quota"
+                "string": "Kunde inte uppdatera kvoten"
             }
         }
     }

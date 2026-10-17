@@ -1,56 +1,56 @@
 {
     "AP_FILESHARE": {
         "title": {
-            "string": "File Sharing"
+            "string": "Fildelning"
         },
         "description": {
-            "string": "Create shareable links for files with optional password protection, expiration, and download tracking."
+            "string": "Skapa delningsbara länkar för filer med valfritt lösenordsskydd, utgångstid och spårning av nedladdningar."
         },
         "form": {
             "share": {
-                "string": "Share File"
+                "string": "Dela fil"
             },
             "cancel": {
                 "string": "Avbryt"
             },
             "title": {
-                "string": "Share a File"
+                "string": "Dela en fil"
             },
             "filename": {
-                "string": "Filename"
+                "string": "Filnamn"
             },
             "size": {
-                "string": "Size (bytes)"
+                "string": "Storlek (byte)"
             },
             "expires": {
-                "string": "Expires in (days)"
+                "string": "Upphör om (dagar)"
             },
             "password": {
-                "string": "Password"
+                "string": "Lösenord"
             },
             "password_hint": {
-                "string": "Leave empty for no password"
+                "string": "Lämna tomt för inget lösenord"
             },
             "submit": {
-                "string": "Create Share Link"
+                "string": "Skapa delningslänk"
             }
         },
         "create": {
             "success": {
-                "string": "Share link created"
+                "string": "Delningslänken skapades"
             },
             "error": {
-                "string": "Failed to create share"
+                "string": "Kunde inte skapa delning"
             }
         },
         "list": {
             "empty": {
-                "string": "No shared files. Create a share link to securely distribute files."
+                "string": "Inga delade filer. Skapa en delningslänk för att distribuera filer säkert."
             }
         },
         "errors": {
             "fields": {
-                "string": "Filename and size are required"
+                "string": "Filnamn och storlek krävs"
             }
         }
     }

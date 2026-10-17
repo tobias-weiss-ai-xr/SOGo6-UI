@@ -18,41 +18,41 @@
                 "view_all": "Visa alla",
                 "today": "Idag",
                 "no_events": "Inga evenemang idag",
-                "all_day": "All day",
+                "all_day": "Heldag",
                 "loading": "Laddar evenemang…",
                 "error": "Kalender"
             },
             "tasks": {
                 "title": "Uppgifter",
                 "view_all": "Visa alla",
-                "search_placeholder": "Search tasks",
-                "overdue": "Overdue",
+                "search_placeholder": "Sök uppgifter",
+                "overdue": "Förfallna",
                 "today": "Idag",
-                "upcoming": "Upcoming",
-                "no_due_date": "No due date",
-                "empty": "You're all caught up",
-                "no_results": "No matches",
+                "upcoming": "Kommande",
+                "no_due_date": "Inget förfallodatum",
+                "empty": "Du är helt ifatt",
+                "no_results": "Inga träffar",
                 "loading": "Laddar evenemang…",
-                "error": "Could not load tasks"
+                "error": "Kunde inte läsa in uppgifter"
             },
             "address_book": {
-                "title": "Contacts",
-                "view_all": "View all",
-                "search_placeholder": "Search contacts and lists",
-                "distribution_lists": "Distribution lists",
-                "contacts": "Contacts",
-                "member_count": "{number} members",
-                "compose": "Write message",
-                "loading": "Loading contacts…",
-                "error": "Could not load contacts",
-                "empty": "No address book available",
-                "no_entries": "No contacts or lists yet",
-                "no_results": "No matches",
-                "search_min_length": "Enter at least 2 characters to search."
+                "title": "Kontakter",
+                "view_all": "Visa alla",
+                "search_placeholder": "Sök kontakter och listor",
+                "distribution_lists": "Distributionslistor",
+                "contacts": "Kontakter",
+                "member_count": "{number} medlemmar",
+                "compose": "Skriv meddelande",
+                "loading": "Läser in kontakter…",
+                "error": "Kunde inte läsa in kontakter",
+                "empty": "Ingen adressbok tillgänglig",
+                "no_entries": "Inga kontakter eller listor ännu",
+                "no_results": "Inga träffar",
+                "search_min_length": "Ange minst 2 tecken för att söka."
             },
             "coming_soon": {
-                "title": "Feature incoming",
-                "description": "This section is under development and will be available soon."
+                "title": "Funktion på väg",
+                "description": "Detta avsnitt är under utveckling och kommer snart att vara tillgängligt."
             }
         }
     }

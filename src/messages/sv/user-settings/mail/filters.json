@@ -1,189 +1,189 @@
 {
     "US_MAIL_FILTERS": {
         "title": {
-            "string": "Mail Filters",
+            "string": "E-postfilter",
             "context": "Title for the mail filters settings page"
         },
         "page": {
             "description": {
-                "string": "Automatically organize incoming messages with custom rules. Filters run in order from top to bottom."
+                "string": "Organisera inkommande meddelanden automatiskt med egna regler. Filter körs i ordning uppifrån och ner."
             }
         },
         "form": {
             "edit": {
-                "string": "Edit filter: {name}"
+                "string": "Redigera filtret: {name}"
             },
             "create": {
-                "string": "Create filter",
+                "string": "Skapa filter",
                 "description": "Create a new filter for incoming messages."
             }
         },
         "operators": {
             "title": {
-                "string": "For incoming messages that"
+                "string": "För inkommande meddelanden som"
             },
             "all": {
-                "string": "Match all messages"
+                "string": "Matchar alla meddelanden"
             },
             "or": {
-                "string": "Match any of the following rules",
+                "string": "Matchar någon av följande regler",
                 "context": "test context",
-                "developer_comment": "This is the string that will be used in the UI to indicate that any of the rules should match."
+                "developer_comment": "Detta är strängen som används i gränssnittet för att indikera att någon av reglerna ska matcha."
             },
             "and": {
-                "string": "Match all the following rules"
+                "string": "Matchar alla följande regler"
             }
         },
         "conditions": {
             "title": {
-                "string": "Match the following conditions"
+                "string": "Matcha följande villkor"
             },
             "is": {
-                "string": "Is"
+                "string": "Är"
             },
             "is_not": {
-                "string": "Is not"
+                "string": "Är inte"
             },
             "contains": {
-                "string": "Contains"
+                "string": "Innehåller"
             },
             "not_contain": {
-                "string": "Does not contain"
+                "string": "Innehåller inte"
             },
             "match": {
-                "string": "Match"
+                "string": "Matchar"
             },
             "not_match": {
-                "string": "Does not match"
+                "string": "Matchar inte"
             },
             "match_regex": {
-                "string": "Match regex"
+                "string": "Matchar regex"
             },
             "starts_with": {
-                "string": "Starts with"
+                "string": "Börjar med"
             },
             "ends_with": {
-                "string": "Ends with"
+                "string": "Slutar med"
             },
             "exists": {
-                "string": "Exists"
+                "string": "Finns"
             },
             "size_over": {
-                "string": "Is over (KB)"
+                "string": "Är över (KB)"
             },
             "not_match_regex": {
-                "string": "Does not match regex"
+                "string": "Matchar inte regex"
             },
             "not_exists": {
-                "string": "Does not exist"
+                "string": "Finns inte"
             },
             "size_under": {
-                "string": "Is under (KB)"
+                "string": "Är under (KB)"
             },
             "is_over": {
-                "string": "Is over"
+                "string": "Är över"
             }
         },
         "rules": {
             "body": {
-                "string": "Body"
+                "string": "Meddelandetext"
             },
             "from": {
-                "string": "From"
+                "string": "Från"
             },
             "subject": {
-                "string": "Subject"
+                "string": "Ämne"
             },
             "to": {
-                "string": "To"
+                "string": "Till"
             },
             "cc": {
-                "string": "CC"
+                "string": "Kopia"
             },
             "to_or_cc": {
-                "string": "To or CC"
+                "string": "Till eller Kopia"
             },
             "header": {
-                "string": "Header"
+                "string": "Huvud"
             },
             "size": {
-                "string": "Size (Kb)"
+                "string": "Storlek (KB)"
             }
         },
         "actions": {
             "title": {
-                "string": "Perform the following actions"
+                "string": "Utför följande åtgärder"
             },
             "move": {
-                "string": "File the message in"
+                "string": "Placera meddelandet i"
             },
             "copy": {
-                "string": "Copy the message to"
+                "string": "Kopiera meddelandet till"
             },
             "stop": {
-                "string": "Stop processing filter rules"
+                "string": "Sluta bearbeta filterregler"
             },
             "reject": {
-                "string": "Send a reject message",
+                "string": "Skicka ett avvisningsmeddelande",
                 "disabled_tooltip": {
-                    "string": "Reject actions are not yet available on this server"
+                    "string": "Avvisningsåtgärder är ännu inte tillgängliga på denna server"
                 }
             },
             "discard": {
-                "string": "Discard the message"
+                "string": "Kasta meddelandet"
             },
             "forward": {
-                "string": "Forward the message to"
+                "string": "Vidarebefordra meddelandet till"
             },
             "removeheader": {
-                "string": "Remove header"
+                "string": "Ta bort huvud"
             },
             "flag": {
-                "string": "Flag the message with",
+                "string": "Flagga meddelandet med",
                 "disabled_tooltip": {
-                    "string": "Flag actions are not yet available on this server"
+                    "string": "Flaggåtgärder är ännu inte tillgängliga på denna server"
                 }
             },
             "keep": {
-                "string": "Keep the message"
+                "string": "Behåll meddelandet"
             }
         },
         "empty_state": {
             "title": {
-                "string": "No mail filters yet"
+                "string": "Inga e-postfilter ännu"
             },
             "description": {
-                "string": "Create rules to automatically organize incoming messages."
+                "string": "Skapa regler för att automatiskt organisera inkommande meddelanden."
             },
             "add_button": {
-                "string": "Add your first filter"
+                "string": "Lägg till ditt första filter"
             }
         },
         "list": {
             "section_title": {
-                "string": "Your filters"
+                "string": "Dina filter"
             },
             "section_description": {
-                "string": "Drag to reorder. Disabled filters are skipped."
+                "string": "Dra för att ändra ordning. Inaktiverade filter hoppas över."
             },
             "add_filter": {
-                "string": "Add filter"
+                "string": "Lägg till filter"
             },
             "advanced_structure": {
-                "string": "Advanced structure"
+                "string": "Avancerad struktur"
             },
             "read_only": {
-                "string": "Read-only"
+                "string": "Skrivskyddad"
             },
             "drag_handle": {
-                "string": "Reorder filter"
+                "string": "Ändra ordning på filtret"
             },
             "delete_confirm": {
                 "title": {
-                    "string": "Delete filter?"
+                    "string": "Radera filtret?"
                 },
                 "description": {
-                    "string": "This filter will be removed when you save your changes."
+                    "string": "Detta filter tas bort när du sparar dina ändringar."
                 },
                 "confirm": {
                     "string": "Ta bort"
@@ -195,35 +195,35 @@
         },
         "folder_select": {
             "placeholder": {
-                "string": "Select a folder"
+                "string": "Välj en mapp"
             },
             "search": {
-                "string": "Search folders..."
+                "string": "Sök mappar..."
             },
             "empty": {
-                "string": "No folders found"
+                "string": "Inga mappar hittades"
             },
             "aria_label": {
-                "string": "Select destination folder"
+                "string": "Välj målmapp"
             },
             "create_if_missing": {
-                "string": "Create folder if it does not exist"
+                "string": "Skapa mappen om den inte finns"
             }
         },
         "advanced_structure_readonly": {
-            "string": "This filter uses an advanced rule structure that cannot be edited in the simplified editor. You can still enable or disable it, or delete it."
+            "string": "Detta filter använder en avancerad regelstruktur som inte kan redigeras i den förenklade redigeraren. Du kan fortfarande aktivera eller inaktivera det, eller radera det."
         },
         "aria": {
             "toggle_filter": {
-                "string": "Toggle filter"
+                "string": "Växla filtret"
             }
         },
         "labels": {
             "filter_name": {
-                "string": "Filter name"
+                "string": "Filternamn"
             },
             "custom_header": {
-                "string": "Header name"
+                "string": "Namn på huvud"
             }
         },
         "placeholders": {
@@ -231,74 +231,74 @@
                 "string": "name@example.com"
             },
             "header_name": {
-                "string": "Header name (e.g. X-Spam-Flag)"
+                "string": "Namn på huvud (t.ex. X-Spam-Flag)"
             },
             "size_value": {
-                "string": "Size (e.g. 1024, 5M, 10K)"
+                "string": "Storlek (t.ex. 1024, 5M, 10K)"
             },
             "imap_flag": {
-                "string": "IMAP flag (e.g. \\Flagged)"
+                "string": "IMAP-flagga (t.ex. \\Flagged)"
             },
             "reject_message": {
-                "string": "Optional reject message"
+                "string": "Valfritt avvisningsmeddelande"
             }
         },
         "success": {
             "title": {
-                "string": "Filters saved"
+                "string": "Filter sparade"
             },
             "saved": {
-                "string": "Your mail filters have been updated."
+                "string": "Dina e-postfilter har uppdaterats."
             }
         },
         "errors_api": {
             "title": {
-                "string": "Could not save filters"
+                "string": "Kunde inte spara filtren"
             },
             "save_failed": {
-                "string": "An error occurred while saving your mail filters."
+                "string": "Ett fel uppstod när dina e-postfilter sparades."
             },
             "load_failed": {
-                "string": "Could not load mail filters. Please try again later."
+                "string": "Kunde inte läsa in e-postfiltren. Försök igen senare."
             },
             "feature_disabled": {
-                "string": "Mail filtering has been disabled by your administrator."
+                "string": "E-postfiltrering har inaktiverats av din administratör."
             }
         },
         "errors": {
             "validation": {
                 "name_required": {
-                    "string": "Filter name is required"
+                    "string": "Filternamn krävs"
                 },
                 "rules_required": {
-                    "string": "At least one condition is required"
+                    "string": "Minst ett villkor krävs"
                 },
                 "actions_required": {
-                    "string": "At least one action is required"
+                    "string": "Minst en åtgärd krävs"
                 },
                 "folder_required": {
-                    "string": "A destination folder is required"
+                    "string": "En målmapp krävs"
                 },
                 "email_invalid": {
-                    "string": "Enter a valid email address"
+                    "string": "Ange en giltig e-postadress"
                 },
                 "header_name_required": {
-                    "string": "Header name is required"
+                    "string": "Huvudnamn krävs"
                 },
                 "rule_value_required": {
-                    "string": "Condition value is required"
+                    "string": "Villkorsvärde krävs"
                 },
                 "size_value_required": {
-                    "string": "Enter a valid size in KB"
+                    "string": "Ange en giltig storlek i KB"
                 },
                 "size_condition_required": {
-                    "string": "Size rules must use over or under"
+                    "string": "Storleksregler måste använda över eller under"
                 },
                 "flag_required": {
-                    "string": "An IMAP flag is required"
+                    "string": "En IMAP-flagga krävs"
                 },
                 "action_unavailable": {
-                    "string": "This action is not available yet"
+                    "string": "Denna åtgärd är inte tillgänglig ännu"
                 }
             }
         }
