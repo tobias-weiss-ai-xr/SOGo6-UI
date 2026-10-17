@@ -1,17 +1,17 @@
 {
   "Login": {
-    "offlineNotice": "You are currently offline. Some features may be limited."
+    "offlineNotice": "Είστε επί του παρόντος εκτός σύνδεσης. Ορισμένες λειτουργίες ενδέχεται να είναι περιορισμένες."
   },
   "PWA": {
     "installPrompt": {
-      "title": "Install SOGo",
-      "description": "Add SOGo to your home screen for quick access, even offline.",
-      "install": "Install",
-      "dismiss": "Not now"
+      "title": "Εγκατάσταση SOGo",
+      "description": "Προσθέστε το SOGo στην αρχική οθόνη για γρήγορη πρόσβαση, ακόμα και εκτός σύνδεσης.",
+      "install": "Εγκατάσταση",
+      "dismiss": "Όχι τώρα"
     },
     "offlineBanner": {
-      "label": "You are offline. Some features may not work."
+      "label": "Είστε εκτός σύνδεσης. Ορισμένες λειτουργίες μπορεί να μην λειτουργούν."
     },
-    "featureUnavailable": "{feature} is not available while offline."
+    "featureUnavailable": "Το {feature} δεν είναι διαθέσιμο εκτός σύνδεσης."
   }
 }

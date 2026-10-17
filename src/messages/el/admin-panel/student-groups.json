@@ -1,44 +1,44 @@
 {
-    "STUDENT_GROUPS": {
-        "title": {
-            "string": "Student Group Management"
-        },
-        "description": {
-            "string": "Manage student groups, course mailing lists, and enrollment"
-        },
-        "errors": {
-            "name": {
-                "string": "Group name required"
-            },
-            "fail": {
-                "string": "Operation failed"
-            }
-        },
-        "success": {
-            "create": {
-                "string": "Group created successfully"
-            }
-        },
-        "field": {
-            "name": {
-                "string": "Group Name"
-            },
-            "course": {
-                "string": "Course Code"
-            }
-        },
-        "button": {
-            "create": {
-                "string": "Create Group"
-            }
-        },
-        "label": {
-            "none": {
-                "string": "Κανένα"
-            },
-            "students": {
-                "string": "students"
-            }
-        }
+  "STUDENT_GROUPS": {
+    "title": {
+      "string": "Διαχείριση Ομάδων Μαθητών"
+    },
+    "description": {
+      "string": "Διαχείριση ομάδων μαθητών, λιστών αλληλογραφίας μαθημάτων και εγγραφών"
+    },
+    "errors": {
+      "name": {
+        "string": "Το όνομα ομάδας είναι υποχρεωτικό"
+      },
+      "fail": {
+        "string": "Η λειτουργία απέτυχε"
+      }
+    },
+    "success": {
+      "create": {
+        "string": "Η ομάδα δημιουργήθηκε επιτυχώς"
+      }
+    },
+    "field": {
+      "name": {
+        "string": "Όνομα Ομάδας"
+      },
+      "course": {
+        "string": "Κωδικός Μαθήματος"
+      }
+    },
+    "button": {
+      "create": {
+        "string": "Δημιουργία Ομάδας"
+      }
+    },
+    "label": {
+      "none": {
+        "string": "Κανένα"
+      },
+      "students": {
+        "string": "μαθητές"
+      }
     }
+  }
 }

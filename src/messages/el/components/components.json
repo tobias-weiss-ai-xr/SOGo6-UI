@@ -2,26 +2,26 @@
   "COMPONENTS": {
     "forms": {
       "fixed-form-button-group": {
-        "alert": "{number} errors"
+        "alert": "{number} σφάλματα"
       }
     },
     "color-picker": {
-      "custom-color": "Custom Color"
+      "custom-color": "Προσαρμοσμένο Χρώμα"
     },
     "duration-picker": {
-      "noReminder": "No reminder",
-      "5min": "5 min before",
-      "10min": "10 min before",
-      "15min": "15 min before",
-      "30min": "30 min before",
-      "45min": "45 min before",
-      "1h": "1 hour before",
-      "2h": "2 hour before",
-      "5h": "5 hour before",
-      "15h": "15 hour before",
-      "1d": "1 day before",
-      "2d": "2 days before",
-      "1w": "1 week before"
+      "noReminder": "Χωρίς υπενθύμιση",
+      "5min": "5 λεπτά πριν",
+      "10min": "10 λεπτά πριν",
+      "15min": "15 λεπτά πριν",
+      "30min": "30 λεπτά πριν",
+      "45min": "45 λεπτά πριν",
+      "1h": "1 ώρα πριν",
+      "2h": "2 ώρες πριν",
+      "5h": "5 ώρες πριν",
+      "15h": "15 ώρες πριν",
+      "1d": "1 ημέρα πριν",
+      "2d": "2 ημέρες πριν",
+      "1w": "1 εβδομάδα πριν"
     }
   }
 }

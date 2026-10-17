@@ -1,902 +1,902 @@
 {
-    "NOTIFICATIONS": {
+  "NOTIFICATIONS": {
+    "title": {
+      "success": {
+        "string": "Επιτυχία",
+        "context": "Notification title for successful operations.",
+        "developer_comment": "Ενημερώνει τον χρήστη ότι μια λειτουργία ολοκληρώθηκε επιτυχώς."
+      },
+      "error": {
+        "string": "Σφάλμα",
+        "context": "Notification title for failed operations.",
+        "developer_comment": "Ενημερώνει τον χρήστη ότι παρουσιάστηκε σφάλμα κατά τη λειτουργία. {error}"
+      },
+      "warning": {
+        "string": "Προειδοποίηση",
+        "context": "Notification title for warning messages.",
+        "developer_comment": "Ενημερώνει τον χρήστη να ελέγξει τις λεπτομέρειες και να προχωρήσει με προσοχή."
+      },
+      "info": {
+        "string": "Πληροφορία",
+        "context": "Notification title for informational messages.",
+        "developer_comment": "Ενημερώνει τον χρήστη για ένα ενημερωτικό μήνυμα."
+      }
+    },
+    "mail_action": {
+      "spam": {
+        "successTitle": {
+          "string": "Σημάνθηκε ως ανεπιθύμητο"
+        },
+        "successMessage": {
+          "string": "Το μήνυμα μετακινήθηκε στα Ανεπιθύμητα."
+        },
+        "errorTitle": {
+          "string": "Η ενέργεια απέτυχε"
+        },
+        "errorMessage": {
+          "string": "Δεν ήταν δυνατή η σήμανση αυτού του μηνύματος ως ανεπιθύμητου."
+        }
+      },
+      "ham": {
+        "successTitle": {
+          "string": "Μετακινήθηκε στα Εισερχόμενα"
+        },
+        "successMessage": {
+          "string": "Το μήνυμα μετακινήθηκε στα Εισερχόμενά σας."
+        },
+        "errorTitle": {
+          "string": "Η ενέργεια απέτυχε"
+        },
+        "errorMessage": {
+          "string": "Δεν ήταν δυνατή η επαναφορά αυτού του μηνύματος."
+        }
+      },
+      "move": {
+        "successTitle": {
+          "string": "Το μήνυμα μετακινήθηκε"
+        },
+        "successMessage": {
+          "string": "Το μήνυμα μετακινήθηκε επιτυχώς."
+        },
+        "errorTitle": {
+          "string": "Η μετακίνηση απέτυχε"
+        },
+        "errorMessage": {
+          "string": "Δεν ήταν δυνατή η μετακίνηση αυτού του μηνύματος."
+        }
+      },
+      "tag": {
+        "successTitle": {
+          "string": "Η ετικέτα εφαρμόστηκε"
+        },
+        "successMessage": {
+          "string": "Η ετικέτα εφαρμόστηκε σε αυτό το μήνυμα."
+        },
+        "errorTitle": {
+          "string": "Η επισήμανση απέτυχε"
+        },
+        "errorMessage": {
+          "string": "Δεν ήταν δυνατή η εφαρμογή της ετικέτας."
+        }
+      },
+      "untag_label": {
+        "successTitle": {
+          "string": "Η ετικέτα αφαιρέθηκε"
+        },
+        "successMessage": {
+          "string": "Η ετικέτα αφαιρέθηκε από αυτό το μήνυμα."
+        },
+        "errorTitle": {
+          "string": "Η επισήμανση απέτυχε"
+        },
+        "errorMessage": {
+          "string": "Δεν ήταν δυνατή η αφαίρεση της ετικέτας."
+        }
+      }
+    },
+    "mail_print": {
+      "popup_blocked": {
         "title": {
-            "success": {
-                "string": "Επιτυχία",
-                "context": "Notification title for successful operations.",
-                "developer_comment": "Advise the user that an operation completed successfully."
-            },
-            "error": {
-                "string": "Σφάλμα",
-                "context": "Notification title for failed operations.",
-                "developer_comment": "Advise the user that an error occurred during the operation. {error}"
-            },
-            "warning": {
-                "string": "Προειδοποίηση",
-                "context": "Notification title for warning messages.",
-                "developer_comment": "Advise the user to check the details and proceed with caution."
-            },
-            "info": {
-                "string": "Πληροφορία",
-                "context": "Notification title for informational messages.",
-                "developer_comment": "Advise the user of an informational message."
-            }
-        },
-        "mail_action": {
-            "spam": {
-                "successTitle": {
-                    "string": "Marked as spam"
-                },
-                "successMessage": {
-                    "string": "The message was moved to Junk."
-                },
-                "errorTitle": {
-                    "string": "Action failed"
-                },
-                "errorMessage": {
-                    "string": "Could not mark this message as spam."
-                }
-            },
-            "ham": {
-                "successTitle": {
-                    "string": "Moved to Inbox"
-                },
-                "successMessage": {
-                    "string": "The message was moved to your Inbox."
-                },
-                "errorTitle": {
-                    "string": "Action failed"
-                },
-                "errorMessage": {
-                    "string": "Could not restore this message."
-                }
-            },
-            "move": {
-                "successTitle": {
-                    "string": "Message moved"
-                },
-                "successMessage": {
-                    "string": "The message was moved successfully."
-                },
-                "errorTitle": {
-                    "string": "Move failed"
-                },
-                "errorMessage": {
-                    "string": "Could not move this message."
-                }
-            },
-            "tag": {
-                "successTitle": {
-                    "string": "Label applied"
-                },
-                "successMessage": {
-                    "string": "The label was applied to this message."
-                },
-                "errorTitle": {
-                    "string": "Label failed"
-                },
-                "errorMessage": {
-                    "string": "Could not apply the label."
-                }
-            },
-            "untag_label": {
-                "successTitle": {
-                    "string": "Label removed"
-                },
-                "successMessage": {
-                    "string": "The label was removed from this message."
-                },
-                "errorTitle": {
-                    "string": "Label failed"
-                },
-                "errorMessage": {
-                    "string": "Could not remove the label."
-                }
-            }
-        },
-        "mail_print": {
-            "popup_blocked": {
-                "title": {
-                    "string": "Print blocked"
-                },
-                "message": {
-                    "string": "Allow pop-ups for this site to print messages."
-                }
-            }
-        },
-        "folders_purge": {
-            "successTitle": {
-                "string": "Folder purged"
-            },
-            "successMessage": {
-                "string": "All deleted messages have been permanently removed."
-            },
-            "errorTitle": {
-                "string": "Purge failed"
-            },
-            "errorMessage": {
-                "string": "An error occurred while purging the folder. Please try again."
-            }
-        },
-        "folders_expunge": {
-            "successTitle": {
-                "string": "Folder expunged"
-            },
-            "successMessage": {
-                "string": "All deleted messages have been permanently removed."
-            },
-            "errorTitle": {
-                "string": "Expunge failed"
-            },
-            "errorMessage": {
-                "string": "An error occurred while expunging the folder. Please try again."
-            }
-        },
-        "folders_share": {
-            "successTitle": {
-                "string": "Sharing updated"
-            },
-            "successMessage": {
-                "string": "Folder sharing settings have been saved."
-            },
-            "errorTitle": {
-                "string": "Sharing failed"
-            },
-            "errorMessage": {
-                "string": "An error occurred while updating sharing settings. Please try again."
-            }
-        },
-        "folders_create": {
-            "success": {
-                "title": {
-                    "string": "Folder created"
-                },
-                "message": {
-                    "string": "The subfolder has been successfully created."
-                }
-            },
-            "error": {
-                "title": {
-                    "string": "Failed to create folder"
-                },
-                "message": {
-                    "string": "An error occurred while creating the folder. Please try again."
-                }
-            }
-        },
-        "folders_delete": {
-            "success": {
-                "title": {
-                    "string": "Folder deleted"
-                },
-                "message": {
-                    "string": "The folder has been moved to Trash or permanently deleted."
-                }
-            },
-            "error": {
-                "title": {
-                    "string": "Failed to delete folder"
-                },
-                "message": {
-                    "string": "An error occurred while deleting the folder. Please try again."
-                }
-            }
-        },
-        "folders_rename": {
-            "success": {
-                "title": {
-                    "string": "Folder renamed"
-                },
-                "message": {
-                    "string": "The folder has been successfully renamed."
-                }
-            },
-            "error": {
-                "title": {
-                    "string": "Failed to rename folder"
-                },
-                "message": {
-                    "string": "An error occurred while renaming the folder. Please try again."
-                }
-            }
-        },
-        "folders_set_type": {
-            "success": {
-                "title": {
-                    "string": "Folder type updated"
-                },
-                "message": {
-                    "string": "The folder type has been updated."
-                }
-            },
-            "error": {
-                "title": {
-                    "string": "Failed to update folder type"
-                },
-                "message": {
-                    "string": "An error occurred while updating the folder type. Please try again."
-                }
-            }
-        },
-        "folders_move": {
-            "success": {
-                "title": {
-                    "string": "Folder moved"
-                },
-                "message": {
-                    "string": "The folder has been moved."
-                }
-            },
-            "error": {
-                "title": {
-                    "string": "Failed to move folder"
-                },
-                "message": {
-                    "string": "An error occurred while moving the folder. Please try again."
-                }
-            }
-        },
-        "folders_export": {
-            "success": {
-                "title": {
-                    "string": "Export started"
-                },
-                "message": {
-                    "string": "The folder export has been started."
-                }
-            },
-            "error": {
-                "title": {
-                    "string": "Failed to export folder"
-                },
-                "message": {
-                    "string": "An error occurred while exporting the folder. Please try again."
-                }
-            }
-        },
-        "calendar_create": {
-            "success": {
-                "title": {
-                    "string": "Calendar created"
-                },
-                "message": {
-                    "string": "The calendar has been successfully created."
-                }
-            },
-            "error": {
-                "title": {
-                    "string": "Creation failed"
-                },
-                "message": {
-                    "string": "Failed to create the calendar. Please try again."
-                }
-            }
-        },
-        "calendar_update": {
-            "success": {
-                "title": {
-                    "string": "Calendar updated"
-                },
-                "message": {
-                    "string": "The calendar has been successfully updated."
-                }
-            },
-            "error": {
-                "title": {
-                    "string": "Update failed"
-                },
-                "message": {
-                    "string": "Failed to update the calendar. Please try again."
-                }
-            }
-        },
-        "calendar_delete": {
-            "success": {
-                "title": {
-                    "string": "Calendar deleted"
-                },
-                "message": {
-                    "string": "The calendar has been successfully deleted."
-                }
-            },
-            "error": {
-                "title": {
-                    "string": "Deletion failed"
-                },
-                "message": {
-                    "string": "Failed to delete the calendar. Please try again."
-                }
-            }
-        },
-        "external_calendar_create": {
-            "success": {
-                "title": {
-                    "string": "Calendar subscribed"
-                },
-                "message": {
-                    "string": "The ICS calendar has been added."
-                }
-            },
-            "error": {
-                "title": {
-                    "string": "Subscription failed"
-                },
-                "message": {
-                    "string": "Unable to subscribe to this calendar."
-                }
-            }
-        },
-        "external_calendar_delete": {
-            "success": {
-                "title": {
-                    "string": "Subscription removed"
-                },
-                "message": {
-                    "string": "The calendar has been removed."
-                }
-            },
-            "error": {
-                "title": {
-                    "string": "Deletion failed"
-                },
-                "message": {
-                    "string": "Unable to remove this calendar."
-                }
-            }
-        },
-        "external_calendar_sync": {
-            "success": {
-                "title": {
-                    "string": "Calendar synced"
-                },
-                "message": {
-                    "string": "The calendar has been synchronized."
-                }
-            },
-            "error": {
-                "title": {
-                    "string": "Sync failed"
-                },
-                "message": {
-                    "string": "Unable to sync this calendar."
-                }
-            }
-        },
-        "calendar_event_create": {
-            "success": {
-                "title": {
-                    "string": "Event created"
-                },
-                "message": {
-                    "string": "The event has been successfully created."
-                }
-            },
-            "error": {
-                "title": {
-                    "string": "Creation failed"
-                },
-                "message": {
-                    "string": "Failed to create the event. Please try again."
-                }
-            }
-        },
-        "calendar_event_update": {
-            "success": {
-                "title": {
-                    "string": "Event updated"
-                },
-                "message": {
-                    "string": "The event has been successfully updated."
-                }
-            },
-            "error": {
-                "title": {
-                    "string": "Update failed"
-                },
-                "message": {
-                    "string": "Failed to update the event. Please try again."
-                }
-            }
-        },
-        "calendar_event_delete": {
-            "success": {
-                "title": {
-                    "string": "Event deleted"
-                },
-                "message": {
-                    "string": "The event has been successfully deleted."
-                }
-            },
-            "error": {
-                "title": {
-                    "string": "Deletion failed"
-                },
-                "message": {
-                    "string": "Failed to delete the event. Please try again."
-                }
-            }
-        },
-        "task_create": {
-            "success": {
-                "title": {
-                    "string": "Task created"
-                },
-                "message": {
-                    "string": "The task has been created."
-                }
-            },
-            "error": {
-                "title": {
-                    "string": "Creation failed"
-                },
-                "message": {
-                    "string": "Could not create the task. Please try again."
-                }
-            }
-        },
-        "task_update": {
-            "success": {
-                "title": {
-                    "string": "Task updated"
-                },
-                "message": {
-                    "string": "The task has been updated."
-                }
-            },
-            "error": {
-                "title": {
-                    "string": "Update failed"
-                },
-                "message": {
-                    "string": "Could not update the task. Please try again."
-                }
-            }
-        },
-        "task_delete": {
-            "success": {
-                "title": {
-                    "string": "Task deleted"
-                },
-                "message": {
-                    "string": "The task has been deleted."
-                }
-            },
-            "error": {
-                "title": {
-                    "string": "Deletion failed"
-                },
-                "message": {
-                    "string": "Could not delete the task. Please try again."
-                }
-            }
-        },
-        "address_book_entry_create": {
-            "success": {
-                "title": {
-                    "string": "Contact created"
-                },
-                "message": {
-                    "string": "The contact has been added to your address book."
-                }
-            },
-            "error": {
-                "title": {
-                    "string": "Creation failed"
-                },
-                "message": {
-                    "string": "Could not create the contact. Please try again."
-                }
-            }
-        },
-        "address_book_entry_update": {
-            "success": {
-                "title": {
-                    "string": "Contact updated"
-                },
-                "message": {
-                    "string": "The contact has been updated."
-                }
-            },
-            "error": {
-                "title": {
-                    "string": "Update failed"
-                },
-                "message": {
-                    "string": "Could not update the contact. Please try again."
-                }
-            }
-        },
-        "address_book_entry_delete": {
-            "success": {
-                "title": {
-                    "string": "Contact deleted"
-                },
-                "message": {
-                    "string": "The contact has been removed."
-                }
-            },
-            "error": {
-                "title": {
-                    "string": "Deletion failed"
-                },
-                "message": {
-                    "string": "Could not delete the contact. Please try again."
-                }
-            }
-        },
-        "address_book_entry_move": {
-            "success": {
-                "title": {
-                    "string": "Contact moved"
-                },
-                "message": {
-                    "string": "The contact has been moved to another address book."
-                }
-            },
-            "error": {
-                "title": {
-                    "string": "Move failed"
-                },
-                "message": {
-                    "string": "Could not move the contact. Please try again."
-                }
-            }
-        },
-        "address_book_create": {
-            "success": {
-                "title": {
-                    "string": "Address book created"
-                },
-                "message": {
-                    "string": "The address book has been created."
-                }
-            },
-            "error": {
-                "title": {
-                    "string": "Creation failed"
-                },
-                "message": {
-                    "string": "Could not create the address book. Please try again."
-                }
-            }
-        },
-        "address_book_update": {
-            "success": {
-                "title": {
-                    "string": "Address book updated"
-                },
-                "message": {
-                    "string": "The address book has been updated."
-                }
-            },
-            "error": {
-                "title": {
-                    "string": "Update failed"
-                },
-                "message": {
-                    "string": "Could not update the address book. Please try again."
-                }
-            }
-        },
-        "address_book_delete": {
-            "success": {
-                "title": {
-                    "string": "Address book deleted"
-                },
-                "message": {
-                    "string": "The address book has been removed."
-                }
-            },
-            "error": {
-                "title": {
-                    "string": "Deletion failed"
-                },
-                "message": {
-                    "string": "Could not delete the address book. Please try again."
-                }
-            }
-        },
-        "contact_api_errors": {
-            "addressbook_not_found": {
-                "string": "The address book could not be found."
-            },
-            "addressbook_duplicate": {
-                "string": "An address book with this name already exists."
-            },
-            "contact_not_found": {
-                "string": "The contact could not be found."
-            },
-            "contact_duplicate": {
-                "string": "A contact with this identifier already exists."
-            },
-            "contact_persist_failed": {
-                "string": "The contact could not be saved."
-            },
-            "contact_update_failed": {
-                "string": "The contact could not be updated."
-            },
-            "operation_not_supported": {
-                "string": "This operation is not supported for this address book."
-            },
-            "list_not_found": {
-                "string": "The distribution list could not be found."
-            },
-            "list_duplicate": {
-                "string": "A distribution list with this name already exists."
-            },
-            "list_persist_failed": {
-                "string": "The distribution list could not be saved."
-            },
-            "list_update_failed": {
-                "string": "The distribution list could not be updated."
-            },
-            "list_member_invalid": {
-                "string": "One or more selected members are not contacts in this address book."
-            },
-            "access_denied": {
-                "string": "You do not have permission to modify this address book."
-            },
-            "read_only": {
-                "string": "This address book is read-only."
-            },
-            "export_format_unsupported": {
-                "string": "The selected export format is not supported."
-            },
-            "import_no_file": {
-                "string": "No file was provided for import."
-            },
-            "import_too_large": {
-                "string": "The import file exceeds the maximum allowed size (10 MB)."
-            },
-            "import_parse_failed": {
-                "string": "The import file could not be parsed."
-            },
-            "job_not_found": {
-                "string": "The background job could not be found."
-            },
-            "job_forbidden": {
-                "string": "You do not have access to this background job."
-            },
-            "job_not_ready": {
-                "string": "The export is not ready yet. Please wait and try again."
-            },
-            "job_no_result": {
-                "string": "This job has no downloadable result."
-            },
-            "job_concurrent_limit": {
-                "string": "Too many background jobs are running. Please try again later."
-            },
-            "file_too_large": {
-                "string": "The photo exceeds the maximum allowed size (2 MB)."
-            },
-            "file_type_not_allowed": {
-                "string": "This file type is not allowed for contact photos."
-            },
-            "generic": {
-                "string": "The operation could not be completed. Please try again."
-            }
-        },
-        "calendar_event_attendance": {
-            "success": {
-                "accepted": {
-                    "title": {
-                        "string": "Invitation accepted"
-                    },
-                    "message": {
-                        "string": "You accepted this event."
-                    }
-                },
-                "declined": {
-                    "title": {
-                        "string": "Invitation declined"
-                    },
-                    "message": {
-                        "string": "You declined this event."
-                    }
-                },
-                "tentative": {
-                    "title": {
-                        "string": "Marked as maybe"
-                    },
-                    "message": {
-                        "string": "You marked this event as maybe."
-                    }
-                },
-                "delegated": {
-                    "title": {
-                        "string": "Attendance updated"
-                    },
-                    "message": {
-                        "string": "Your attendance was updated."
-                    }
-                }
-            },
-            "error": {
-                "title": {
-                    "string": "Attendance update failed"
-                },
-                "message": {
-                    "string": "Failed to update your attendance. Please try again."
-                }
-            }
+          "string": "Αποκλεισμένη εκτύπωση"
         },
         "message": {
-            "success": {
-                "string": "Operation completed successfully.",
-                "developer_comment": "Advise the user that an operation completed successfully."
-            },
-            "error": {
-                "string": "An error occurred during the operation.",
-                "developer_comment": "Advise the user that there was an error while processing their request."
-            },
-            "warning": {
-                "string": "Please check the details and proceed with caution.",
-                "developer_comment": "This is a warning message to alert the user."
-            },
-            "info": {
-                "string": "This is an informational message.",
-                "developer_comment": "This message provides information to the user."
-            }
-        },
-        "mail_send": {
-            "success": {
-                "title": {
-                    "string": "Mail sent"
-                },
-                "message": {
-                    "string": "Your email has been sent successfully."
-                }
-            },
-            "error": {
-                "title": {
-                    "string": "Failed to send mail"
-                },
-                "message": {
-                    "string": "An error occurred while sending your email. Please try again."
-                }
-            }
-        },
-        "save_draft": {
-            "success": {
-                "title": {
-                    "string": "Draft saved"
-                },
-                "message": {
-                    "string": "Your email has been saved as a draft."
-                }
-            },
-            "error": {
-                "title": {
-                    "string": "Failed to save draft"
-                },
-                "message": {
-                    "string": "An error occurred while saving your draft. Please try again."
-                }
-            }
-        },
-        "discard_draft": {
-            "success": {
-                "title": {
-                    "string": "Draft discarded"
-                },
-                "message": {
-                    "string": "Your email has been discarded."
-                }
-            },
-            "error": {
-                "title": {
-                    "string": "Failed to discard draft"
-                },
-                "message": {
-                    "string": "An error occurred while discarding your draft. Please try again."
-                }
-            }
-        },
-        "attachment_upload": {
-            "success": {
-                "title": {
-                    "string": "Attachment uploaded"
-                },
-                "message": {
-                    "string": "Your attachment has been uploaded successfully."
-                }
-            },
-            "error": {
-                "title": {
-                    "string": "Failed to upload attachment"
-                },
-                "message": {
-                    "string": "An error occurred while uploading your attachment. Please try again."
-                }
-            }
-        },
-        "mail_filters": {
-            "save": {
-                "success": {
-                    "title": {
-                        "string": "Filters saved"
-                    },
-                    "message": {
-                        "string": "Your mail filters have been updated."
-                    }
-                },
-                "error": {
-                    "title": {
-                        "string": "Could not save filters"
-                    },
-                    "message": {
-                        "string": "An error occurred while saving your mail filters."
-                    }
-                }
-            }
-        },
-        "mail_vacation": {
-            "save": {
-                "success": {
-                    "title": {
-                        "string": "Vacation settings saved"
-                    },
-                    "message": {
-                        "string": "Your vacation auto reply has been updated."
-                    }
-                },
-                "error": {
-                    "title": {
-                        "string": "Could not save vacation settings"
-                    },
-                    "message": {
-                        "string": "An error occurred while saving your vacation settings."
-                    }
-                }
-            }
-        },
-        "mail_forward": {
-            "save": {
-                "success": {
-                    "title": {
-                        "string": "Forwarding settings saved"
-                    },
-                    "message": {
-                        "string": "Your mail forwarding settings have been updated."
-                    }
-                },
-                "error": {
-                    "title": {
-                        "string": "Could not save forwarding settings"
-                    },
-                    "message": {
-                        "string": "An error occurred while saving your mail forwarding settings."
-                    }
-                }
-            }
-        },
-        "mail_notify": {
-            "save": {
-                "success": {
-                    "title": {
-                        "string": "Notification settings saved"
-                    },
-                    "message": {
-                        "string": "Your mail notification settings have been updated."
-                    }
-                },
-                "error": {
-                    "title": {
-                        "string": "Could not save notification settings"
-                    },
-                    "message": {
-                        "string": "An error occurred while saving your mail notification settings."
-                    }
-                },
-                "warning": {
-                    "title": {
-                        "string": "Notification settings not applied"
-                    },
-                    "message": {
-                        "string": "Your server does not support mail notifications (enotify extension). Settings were not saved."
-                    }
-                }
-            }
+          "string": "Επιτρέψτε τα αναδυόμενα παράθυρα για αυτόν τον ιστότοπο για να εκτυπώσετε μηνύματα."
         }
+      }
+    },
+    "folders_purge": {
+      "successTitle": {
+        "string": "Ο φάκελος καθαρίστηκε"
+      },
+      "successMessage": {
+        "string": "Όλα τα διαγραμμένα μηνύματα αφαιρέθηκαν οριστικά."
+      },
+      "errorTitle": {
+        "string": "Ο καθαρισμός απέτυχε"
+      },
+      "errorMessage": {
+        "string": "Παρουσιάστηκε σφάλμα κατά τον καθαρισμό του φακέλου. Παρακαλώ δοκιμάστε ξανά."
+      }
+    },
+    "folders_expunge": {
+      "successTitle": {
+        "string": "Η οριστική απομάκρυνση ολοκληρώθηκε"
+      },
+      "successMessage": {
+        "string": "Όλα τα διαγραμμένα μηνύματα αφαιρέθηκαν οριστικά."
+      },
+      "errorTitle": {
+        "string": "Η οριστική απομάκρυνση απέτυχε"
+      },
+      "errorMessage": {
+        "string": "Παρουσιάστηκε σφάλμα κατά την οριστική απομάκρυνση των διαγραμμένων στον φάκελο. Παρακαλώ δοκιμάστε ξανά."
+      }
+    },
+    "folders_share": {
+      "successTitle": {
+        "string": "Η κοινή χρήση ενημερώθηκε"
+      },
+      "successMessage": {
+        "string": "Οι ρυθμίσεις κοινής χρήσης του φακέλου αποθηκεύτηκαν."
+      },
+      "errorTitle": {
+        "string": "Η κοινή χρήση απέτυχε"
+      },
+      "errorMessage": {
+        "string": "Παρουσιάστηκε σφάλμα κατά την ενημέρωση των ρυθμίσεων κοινής χρήσης. Παρακαλώ δοκιμάστε ξανά."
+      }
+    },
+    "folders_create": {
+      "success": {
+        "title": {
+          "string": "Ο φάκελος δημιουργήθηκε"
+        },
+        "message": {
+          "string": "Ο υποφάκελος δημιουργήθηκε επιτυχώς."
+        }
+      },
+      "error": {
+        "title": {
+          "string": "Αποτυχία δημιουργίας φακέλου"
+        },
+        "message": {
+          "string": "Παρουσιάστηκε σφάλμα κατά τη δημιουργία του φακέλου. Παρακαλώ δοκιμάστε ξανά."
+        }
+      }
+    },
+    "folders_delete": {
+      "success": {
+        "title": {
+          "string": "Ο φάκελος διαγράφηκε"
+        },
+        "message": {
+          "string": "Ο φάκελος μετακινήθηκε στα Διαγραμμένα ή διαγράφηκε οριστικά."
+        }
+      },
+      "error": {
+        "title": {
+          "string": "Αποτυχία διαγραφής φακέλου"
+        },
+        "message": {
+          "string": "Παρουσιάστηκε σφάλμα κατά τη διαγραφή του φακέλου. Παρακαλώ δοκιμάστε ξανά."
+        }
+      }
+    },
+    "folders_rename": {
+      "success": {
+        "title": {
+          "string": "Ο φάκελος μετονομάστηκε"
+        },
+        "message": {
+          "string": "Ο φάκελος μετονομάστηκε επιτυχώς."
+        }
+      },
+      "error": {
+        "title": {
+          "string": "Αποτυχία μετονομασίας φακέλου"
+        },
+        "message": {
+          "string": "Παρουσιάστηκε σφάλμα κατά τη μετονομασία του φακέλου. Παρακαλώ δοκιμάστε ξανά."
+        }
+      }
+    },
+    "folders_set_type": {
+      "success": {
+        "title": {
+          "string": "Ο τύπος φακέλου ενημερώθηκε"
+        },
+        "message": {
+          "string": "Ο τύπος του φακέλου ενημερώθηκε."
+        }
+      },
+      "error": {
+        "title": {
+          "string": "Αποτυχία ενημέρωσης τύπου φακέλου"
+        },
+        "message": {
+          "string": "Παρουσιάστηκε σφάλμα κατά την ενημέρωση του τύπου του φακέλου. Παρακαλώ δοκιμάστε ξανά."
+        }
+      }
+    },
+    "folders_move": {
+      "success": {
+        "title": {
+          "string": "Ο φάκελος μετακινήθηκε"
+        },
+        "message": {
+          "string": "Ο φάκελος μετακινήθηκε."
+        }
+      },
+      "error": {
+        "title": {
+          "string": "Αποτυχία μετακίνησης φακέλου"
+        },
+        "message": {
+          "string": "Παρουσιάστηκε σφάλμα κατά τη μετακίνηση του φακέλου. Παρακαλώ δοκιμάστε ξανά."
+        }
+      }
+    },
+    "folders_export": {
+      "success": {
+        "title": {
+          "string": "Η εξαγωγή ξεκίνησε"
+        },
+        "message": {
+          "string": "Η εξαγωγή του φακέλου ξεκίνησε."
+        }
+      },
+      "error": {
+        "title": {
+          "string": "Αποτυχία εξαγωγής φακέλου"
+        },
+        "message": {
+          "string": "Παρουσιάστηκε σφάλμα κατά την εξαγωγή του φακέλου. Παρακαλώ δοκιμάστε ξανά."
+        }
+      }
+    },
+    "calendar_create": {
+      "success": {
+        "title": {
+          "string": "Το ημερολόγιο δημιουργήθηκε"
+        },
+        "message": {
+          "string": "Το ημερολόγιο δημιουργήθηκε επιτυχώς."
+        }
+      },
+      "error": {
+        "title": {
+          "string": "Αποτυχία δημιουργίας"
+        },
+        "message": {
+          "string": "Αποτυχία δημιουργίας του ημερολογίου. Παρακαλώ δοκιμάστε ξανά."
+        }
+      }
+    },
+    "calendar_update": {
+      "success": {
+        "title": {
+          "string": "Το ημερολόγιο ενημερώθηκε"
+        },
+        "message": {
+          "string": "Το ημερολόγιο ενημερώθηκε επιτυχώς."
+        }
+      },
+      "error": {
+        "title": {
+          "string": "Αποτυχία ενημέρωσης"
+        },
+        "message": {
+          "string": "Αποτυχία ενημέρωσης του ημερολογίου. Παρακαλώ δοκιμάστε ξανά."
+        }
+      }
+    },
+    "calendar_delete": {
+      "success": {
+        "title": {
+          "string": "Το ημερολόγιο διαγράφηκε"
+        },
+        "message": {
+          "string": "Το ημερολόγιο διαγράφηκε επιτυχώς."
+        }
+      },
+      "error": {
+        "title": {
+          "string": "Η διαγραφή απέτυχε"
+        },
+        "message": {
+          "string": "Αποτυχία διαγραφής του ημερολογίου. Παρακαλώ δοκιμάστε ξανά."
+        }
+      }
+    },
+    "external_calendar_create": {
+      "success": {
+        "title": {
+          "string": "Έγινε συνδρομή στο ημερολόγιο"
+        },
+        "message": {
+          "string": "Το ημερολόγιο ICS προστέθηκε."
+        }
+      },
+      "error": {
+        "title": {
+          "string": "Η συνδρομή απέτυχε"
+        },
+        "message": {
+          "string": "Δεν είναι δυνατή η συνδρομή σε αυτό το ημερολόγιο."
+        }
+      }
+    },
+    "external_calendar_delete": {
+      "success": {
+        "title": {
+          "string": "Η συνδρομή αφαιρέθηκε"
+        },
+        "message": {
+          "string": "Το ημερολόγιο αφαιρέθηκε."
+        }
+      },
+      "error": {
+        "title": {
+          "string": "Η διαγραφή απέτυχε"
+        },
+        "message": {
+          "string": "Δεν είναι δυνατή η αφαίρεση αυτού του ημερολογίου."
+        }
+      }
+    },
+    "external_calendar_sync": {
+      "success": {
+        "title": {
+          "string": "Το ημερολόγιο συγχρονίστηκε"
+        },
+        "message": {
+          "string": "Το ημερολόγιο συγχρονίστηκε."
+        }
+      },
+      "error": {
+        "title": {
+          "string": "Ο συγχρονισμός απέτυχε"
+        },
+        "message": {
+          "string": "Δεν είναι δυνατός ο συγχρονισμός αυτού του ημερολογίου."
+        }
+      }
+    },
+    "calendar_event_create": {
+      "success": {
+        "title": {
+          "string": "Το γεγονός δημιουργήθηκε"
+        },
+        "message": {
+          "string": "Το γεγονός δημιουργήθηκε επιτυχώς."
+        }
+      },
+      "error": {
+        "title": {
+          "string": "Αποτυχία δημιουργίας"
+        },
+        "message": {
+          "string": "Αποτυχία δημιουργίας του γεγονότος. Παρακαλώ δοκιμάστε ξανά."
+        }
+      }
+    },
+    "calendar_event_update": {
+      "success": {
+        "title": {
+          "string": "Το γεγονός ενημερώθηκε"
+        },
+        "message": {
+          "string": "Το γεγονός ενημερώθηκε επιτυχώς."
+        }
+      },
+      "error": {
+        "title": {
+          "string": "Αποτυχία ενημέρωσης"
+        },
+        "message": {
+          "string": "Αποτυχία ενημέρωσης του γεγονότος. Παρακαλώ δοκιμάστε ξανά."
+        }
+      }
+    },
+    "calendar_event_delete": {
+      "success": {
+        "title": {
+          "string": "Το γεγονός διαγράφηκε"
+        },
+        "message": {
+          "string": "Το γεγονός διαγράφηκε επιτυχώς."
+        }
+      },
+      "error": {
+        "title": {
+          "string": "Η διαγραφή απέτυχε"
+        },
+        "message": {
+          "string": "Αποτυχία διαγραφής του γεγονότος. Παρακαλώ δοκιμάστε ξανά."
+        }
+      }
+    },
+    "task_create": {
+      "success": {
+        "title": {
+          "string": "Η εργασία δημιουργήθηκε"
+        },
+        "message": {
+          "string": "Η εργασία δημιουργήθηκε."
+        }
+      },
+      "error": {
+        "title": {
+          "string": "Αποτυχία δημιουργίας"
+        },
+        "message": {
+          "string": "Δεν ήταν δυνατή η δημιουργία της εργασίας. Παρακαλώ δοκιμάστε ξανά."
+        }
+      }
+    },
+    "task_update": {
+      "success": {
+        "title": {
+          "string": "Η εργασία ενημερώθηκε"
+        },
+        "message": {
+          "string": "Η εργασία ενημερώθηκε."
+        }
+      },
+      "error": {
+        "title": {
+          "string": "Αποτυχία ενημέρωσης"
+        },
+        "message": {
+          "string": "Δεν ήταν δυνατή η ενημέρωση της εργασίας. Παρακαλώ δοκιμάστε ξανά."
+        }
+      }
+    },
+    "task_delete": {
+      "success": {
+        "title": {
+          "string": "Η εργασία διαγράφηκε"
+        },
+        "message": {
+          "string": "Η εργασία διαγράφηκε."
+        }
+      },
+      "error": {
+        "title": {
+          "string": "Η διαγραφή απέτυχε"
+        },
+        "message": {
+          "string": "Δεν ήταν δυνατή η διαγραφή της εργασίας. Παρακαλώ δοκιμάστε ξανά."
+        }
+      }
+    },
+    "address_book_entry_create": {
+      "success": {
+        "title": {
+          "string": "Η επαφή δημιουργήθηκε"
+        },
+        "message": {
+          "string": "Η επαφή προστέθηκε στη λίστα διευθύνσεών σας."
+        }
+      },
+      "error": {
+        "title": {
+          "string": "Αποτυχία δημιουργίας"
+        },
+        "message": {
+          "string": "Δεν ήταν δυνατή η δημιουργία της επαφής. Παρακαλώ δοκιμάστε ξανά."
+        }
+      }
+    },
+    "address_book_entry_update": {
+      "success": {
+        "title": {
+          "string": "Η επαφή ενημερώθηκε"
+        },
+        "message": {
+          "string": "Η επαφή ενημερώθηκε."
+        }
+      },
+      "error": {
+        "title": {
+          "string": "Αποτυχία ενημέρωσης"
+        },
+        "message": {
+          "string": "Δεν ήταν δυνατή η ενημέρωση της επαφής. Παρακαλώ δοκιμάστε ξανά."
+        }
+      }
+    },
+    "address_book_entry_delete": {
+      "success": {
+        "title": {
+          "string": "Η επαφή διαγράφηκε"
+        },
+        "message": {
+          "string": "Η επαφή αφαιρέθηκε."
+        }
+      },
+      "error": {
+        "title": {
+          "string": "Η διαγραφή απέτυχε"
+        },
+        "message": {
+          "string": "Δεν ήταν δυνατή η διαγραφή της επαφής. Παρακαλώ δοκιμάστε ξανά."
+        }
+      }
+    },
+    "address_book_entry_move": {
+      "success": {
+        "title": {
+          "string": "Η επαφή μετακινήθηκε"
+        },
+        "message": {
+          "string": "Η επαφή μετακινήθηκε σε άλλη λίστα διευθύνσεων."
+        }
+      },
+      "error": {
+        "title": {
+          "string": "Η μετακίνηση απέτυχε"
+        },
+        "message": {
+          "string": "Δεν ήταν δυνατή η μετακίνηση της επαφής. Παρακαλώ δοκιμάστε ξανά."
+        }
+      }
+    },
+    "address_book_create": {
+      "success": {
+        "title": {
+          "string": "Η λίστα διευθύνσεων δημιουργήθηκε"
+        },
+        "message": {
+          "string": "Η λίστα διευθύνσεων δημιουργήθηκε."
+        }
+      },
+      "error": {
+        "title": {
+          "string": "Αποτυχία δημιουργίας"
+        },
+        "message": {
+          "string": "Δεν ήταν δυνατή η δημιουργία της λίστας διευθύνσεων. Παρακαλώ δοκιμάστε ξανά."
+        }
+      }
+    },
+    "address_book_update": {
+      "success": {
+        "title": {
+          "string": "Η λίστα διευθύνσεων ενημερώθηκε"
+        },
+        "message": {
+          "string": "Η λίστα διευθύνσεων ενημερώθηκε."
+        }
+      },
+      "error": {
+        "title": {
+          "string": "Αποτυχία ενημέρωσης"
+        },
+        "message": {
+          "string": "Δεν ήταν δυνατή η ενημέρωση της λίστας διευθύνσεων. Παρακαλώ δοκιμάστε ξανά."
+        }
+      }
+    },
+    "address_book_delete": {
+      "success": {
+        "title": {
+          "string": "Η λίστα διευθύνσεων διαγράφηκε"
+        },
+        "message": {
+          "string": "Η λίστα διευθύνσεων αφαιρέθηκε."
+        }
+      },
+      "error": {
+        "title": {
+          "string": "Η διαγραφή απέτυχε"
+        },
+        "message": {
+          "string": "Δεν ήταν δυνατή η διαγραφή της λίστας διευθύνσεων. Παρακαλώ δοκιμάστε ξανά."
+        }
+      }
+    },
+    "contact_api_errors": {
+      "addressbook_not_found": {
+        "string": "Η λίστα διευθύνσεων δεν βρέθηκε."
+      },
+      "addressbook_duplicate": {
+        "string": "Υπάρχει ήδη μια λίστα διευθύνσεων με αυτό το όνομα."
+      },
+      "contact_not_found": {
+        "string": "Η επαφή δεν βρέθηκε."
+      },
+      "contact_duplicate": {
+        "string": "Υπάρχει ήδη μια επαφή με αυτό το αναγνωριστικό."
+      },
+      "contact_persist_failed": {
+        "string": "Η επαφή δεν μπόρεσε να αποθηκευτεί."
+      },
+      "contact_update_failed": {
+        "string": "Η επαφή δεν μπόρεσε να ενημερωθεί."
+      },
+      "operation_not_supported": {
+        "string": "Αυτή η λειτουργία δεν υποστηρίζεται για αυτή τη λίστα διευθύνσεων."
+      },
+      "list_not_found": {
+        "string": "Η λίστα διανομής δεν βρέθηκε."
+      },
+      "list_duplicate": {
+        "string": "Υπάρχει ήδη μια λίστα διανομής με αυτό το όνομα."
+      },
+      "list_persist_failed": {
+        "string": "Η λίστα διανομής δεν μπόρεσε να αποθηκευτεί."
+      },
+      "list_update_failed": {
+        "string": "Η λίστα διανομής δεν μπόρεσε να ενημερωθεί."
+      },
+      "list_member_invalid": {
+        "string": "Ένα ή περισσότερα επιλεγμένα μέλη δεν είναι επαφές σε αυτή τη λίστα διευθύνσεων."
+      },
+      "access_denied": {
+        "string": "Δεν έχετε άδεια να τροποποιήσετε αυτή τη λίστα διευθύνσεων."
+      },
+      "read_only": {
+        "string": "Αυτή η λίστα διευθύνσεων είναι μόνο για ανάγνωση."
+      },
+      "export_format_unsupported": {
+        "string": "Η επιλεγμένη μορφή εξαγωγής δεν υποστηρίζεται."
+      },
+      "import_no_file": {
+        "string": "Δεν παρέχθηκε αρχείο για εισαγωγή."
+      },
+      "import_too_large": {
+        "string": "Το αρχείο εισαγωγής υπερβαίνει το μέγιστο επιτρεπόμενο μέγεθος (10 MB)."
+      },
+      "import_parse_failed": {
+        "string": "Δεν ήταν δυνατή η ανάλυση του αρχείου εισαγωγής."
+      },
+      "job_not_found": {
+        "string": "Η εργασία παρασκηνίου δεν βρέθηκε."
+      },
+      "job_forbidden": {
+        "string": "Δεν έχετε πρόσβαση σε αυτή την εργασία παρασκηνίου."
+      },
+      "job_not_ready": {
+        "string": "Η εξαγωγή δεν είναι ακόμα έτοιμη. Παρακαλώ περιμένετε και δοκιμάστε ξανά."
+      },
+      "job_no_result": {
+        "string": "Αυτή η εργασία δεν έχει αποτέλεσμα προς λήψη."
+      },
+      "job_concurrent_limit": {
+        "string": "Εκτελούνται πολλές εργασίες παρασκηνίου. Παρακαλώ δοκιμάστε ξανά αργότερα."
+      },
+      "file_too_large": {
+        "string": "Η φωτογραφία υπερβαίνει το μέγιστο επιτρεπόμενο μέγεθος (2 MB)."
+      },
+      "file_type_not_allowed": {
+        "string": "Αυτός ο τύπος αρχείου δεν επιτρέπεται για φωτογραφίες επαφών."
+      },
+      "generic": {
+        "string": "Η λειτουργία δεν μπόρεσε να ολοκληρωθεί. Παρακαλώ δοκιμάστε ξανά."
+      }
+    },
+    "calendar_event_attendance": {
+      "success": {
+        "accepted": {
+          "title": {
+            "string": "Η πρόσκληση έγινε αποδεκτή"
+          },
+          "message": {
+            "string": "Αποδεχτήκατε αυτό το γεγονός."
+          }
+        },
+        "declined": {
+          "title": {
+            "string": "Η πρόσκληση απορρίφθηκε"
+          },
+          "message": {
+            "string": "Απορρίψατε αυτό το γεγονός."
+          }
+        },
+        "tentative": {
+          "title": {
+            "string": "Σημειώθηκε ως «ίσως»"
+          },
+          "message": {
+            "string": "Σημειώσατε αυτό το γεγονός ως ίσως."
+          }
+        },
+        "delegated": {
+          "title": {
+            "string": "Η συμμετοχή ενημερώθηκε"
+          },
+          "message": {
+            "string": "Η συμμετοχή σας ενημερώθηκε."
+          }
+        }
+      },
+      "error": {
+        "title": {
+          "string": "Η ενημέρωση συμμετοχής απέτυχε"
+        },
+        "message": {
+          "string": "Αποτυχία ενημέρωσης της συμμετοχής σας. Παρακαλώ δοκιμάστε ξανά."
+        }
+      }
+    },
+    "message": {
+      "success": {
+        "string": "Η λειτουργία ολοκληρώθηκε επιτυχώς.",
+        "developer_comment": "Ενημερώνει τον χρήστη ότι μια λειτουργία ολοκληρώθηκε επιτυχώς."
+      },
+      "error": {
+        "string": "Παρουσιάστηκε σφάλμα κατά τη λειτουργία.",
+        "developer_comment": "Ενημερώνει τον χρήστη ότι παρουσιάστηκε σφάλμα κατά την επεξεργασία του αιτήματός του."
+      },
+      "warning": {
+        "string": "Παρακαλώ ελέγξτε τις λεπτομέρειες και προχωρήστε με προσοχή.",
+        "developer_comment": "Αυτό είναι ένα μήνυμα προειδοποίησης για ειδοποίηση του χρήστη."
+      },
+      "info": {
+        "string": "Αυτό είναι ένα ενημερωτικό μήνυμα.",
+        "developer_comment": "Αυτό το μήνυμα παρέχει πληροφορίες στον χρήστη."
+      }
+    },
+    "mail_send": {
+      "success": {
+        "title": {
+          "string": "Το email στάλθηκε"
+        },
+        "message": {
+          "string": "Το email σας στάλθηκε επιτυχώς."
+        }
+      },
+      "error": {
+        "title": {
+          "string": "Αποτυχία αποστολής email"
+        },
+        "message": {
+          "string": "Παρουσιάστηκε σφάλμα κατά την αποστολή του email σας. Παρακαλώ δοκιμάστε ξανά."
+        }
+      }
+    },
+    "save_draft": {
+      "success": {
+        "title": {
+          "string": "Το πρόχειρο αποθηκεύτηκε"
+        },
+        "message": {
+          "string": "Το email σας αποθηκεύτηκε ως πρόχειρο."
+        }
+      },
+      "error": {
+        "title": {
+          "string": "Αποτυχία αποθήκευσης προχείρου"
+        },
+        "message": {
+          "string": "Παρουσιάστηκε σφάλμα κατά την αποθήκευση του προχείρου σας. Παρακαλώ δοκιμάστε ξανά."
+        }
+      }
+    },
+    "discard_draft": {
+      "success": {
+        "title": {
+          "string": "Το πρόχειρο απορρίφθηκε"
+        },
+        "message": {
+          "string": "Το email σας απορρίφθηκε."
+        }
+      },
+      "error": {
+        "title": {
+          "string": "Αποτυχία απόρριψης προχείρου"
+        },
+        "message": {
+          "string": "Παρουσιάστηκε σφάλμα κατά την απόρριψη του προχείρου σας. Παρακαλώ δοκιμάστε ξανά."
+        }
+      }
+    },
+    "attachment_upload": {
+      "success": {
+        "title": {
+          "string": "Το συνημμένο μεταφορτώθηκε"
+        },
+        "message": {
+          "string": "Το συνημμένο σας μεταφορτώθηκε επιτυχώς."
+        }
+      },
+      "error": {
+        "title": {
+          "string": "Αποτυχία μεταφόρτωσης συνημμένου"
+        },
+        "message": {
+          "string": "Παρουσιάστηκε σφάλμα κατά τη μεταφόρτωση του συνημμένου σας. Παρακαλώ δοκιμάστε ξανά."
+        }
+      }
+    },
+    "mail_filters": {
+      "save": {
+        "success": {
+          "title": {
+            "string": "Τα φίλτρα αποθηκεύτηκαν"
+          },
+          "message": {
+            "string": "Τα φίλτρα email σας ενημερώθηκαν."
+          }
+        },
+        "error": {
+          "title": {
+            "string": "Αποτυχία αποθήκευσης φίλτρων"
+          },
+          "message": {
+            "string": "Παρουσιάστηκε σφάλμα κατά την αποθήκευση των φίλτρων email."
+          }
+        }
+      }
+    },
+    "mail_vacation": {
+      "save": {
+        "success": {
+          "title": {
+            "string": "Οι ρυθμίσεις απουσίας αποθηκεύτηκαν"
+          },
+          "message": {
+            "string": "Η αυτόματη απάντηση απουσίας σας ενημερώθηκε."
+          }
+        },
+        "error": {
+          "title": {
+            "string": "Δεν ήταν δυνατή η αποθήκευση των ρυθμίσεων απουσίας"
+          },
+          "message": {
+            "string": "Παρουσιάστηκε σφάλμα κατά την αποθήκευση των ρυθμίσεων απουσίας σας."
+          }
+        }
+      }
+    },
+    "mail_forward": {
+      "save": {
+        "success": {
+          "title": {
+            "string": "Οι ρυθμίσεις προώθησης αποθηκεύτηκαν"
+          },
+          "message": {
+            "string": "Οι ρυθμίσεις προώθησης email σας ενημερώθηκαν."
+          }
+        },
+        "error": {
+          "title": {
+            "string": "Δεν ήταν δυνατή η αποθήκευση των ρυθμίσεων προώθησης"
+          },
+          "message": {
+            "string": "Παρουσιάστηκε σφάλμα κατά την αποθήκευση των ρυθμίσεων προώθησης email."
+          }
+        }
+      }
+    },
+    "mail_notify": {
+      "save": {
+        "success": {
+          "title": {
+            "string": "Οι ρυθμίσεις ειδοποιήσεων αποθηκεύτηκαν"
+          },
+          "message": {
+            "string": "Οι ρυθμίσεις ειδοποιήσεων email σας ενημερώθηκαν."
+          }
+        },
+        "error": {
+          "title": {
+            "string": "Δεν ήταν δυνατή η αποθήκευση των ρυθμίσεων ειδοποιήσεων"
+          },
+          "message": {
+            "string": "Παρουσιάστηκε σφάλμα κατά την αποθήκευση των ρυθμίσεων ειδοποιήσεων email."
+          }
+        },
+        "warning": {
+          "title": {
+            "string": "Οι ρυθμίσεις ειδοποιήσεων δεν εφαρμόστηκαν"
+          },
+          "message": {
+            "string": "Ο διακομιστής σας δεν υποστηρίζει ειδοποιήσεις email (επέκταση enotify). Οι ρυθμίσεις δεν αποθηκεύτηκαν."
+          }
+        }
+      }
     }
+  }
 }

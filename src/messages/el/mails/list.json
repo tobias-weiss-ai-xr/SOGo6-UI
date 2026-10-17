@@ -1,120 +1,124 @@
 {
-    "MAILS_LIST": {
-        "star": { "string": "Star" },
-        "unstar": { "string": "Unstar" },
-        "messages_number": {
-            "string": "{number, plural, one {# message} other {# messages}}",
-            "context": "Displays the number of messages in an mail folder."
-        },
-        "sort": {
-            "date": {
-                "ascending": {
-                    "string": "Newest first"
-                },
-                "descending": {
-                    "string": "Older first"
-                }
-            },
-            "size": {
-                "ascending": {
-                    "string": "Smallest first"
-                },
-                "descending": {
-                    "string": "Largest first"
-                }
-            }
-        },
-        "pagination": {
-            "previous": {
-                "string": "Previous page"
-            },
-            "next": {
-                "string": "Next page"
-            }
-        },
-        "list_load_error": {
-            "folder_not_found": {
-                "string": "This folder no longer exists.",
-                "description": "Message when folder messages request returns 404"
-            },
-            "mail_unavailable": {
-                "string": "Mail server is temporarily unavailable.",
-                "description": "Message when folder messages request returns 503"
-            },
-            "retry": {
-                "string": "Try again",
-                "description": "Button label to refetch folder messages after 503"
-            },
-            "open_inbox": {
-                "string": "Open Inbox",
-                "description": "Button label to navigate to INBOX after folder 404"
-            },
-            "generic": {
-                "string": "Unable to load messages. Please try again later.",
-                "description": "Generic folder list load error (e.g. 500)"
-            }
-        },
-        "filter": {
-            "client_scope_notice": {
-                "string": "Filters apply only to messages loaded on this page.",
-                "description": "Hint that URL filters are client-side on the current server page"
-            },
-            "all": {
-                "string": "Όλα"
-            },
-            "unread": {
-                "string": "Unread"
-            },
-            "read": {
-                "string": "Read"
-            },
-            "starred": {
-                "string": "Starred"
-            },
-            "attachments": {
-                "string": "Attachments"
-            }
-        },
-        "layout": {
-            "full": {
-                "string": "Full view"
-            },
-            "split": {
-                "string": "Split view"
-            }
-        },
-        "select_message": {
-            "string": "Select a message to read"
-        },
-        "no_items": {
-            "string": "No message found."
-        },
-        "actions": {
-            "mark_as_read": {
-                "string": "Σημείωση ως αναγνωσμένο"
-            },
-            "mark_as_unread": {
-                "string": "Σημείωση ως μη αναγνωσμένο"
-            },
-            "delete": {
-                "string": "Move to trash"
-            },
-            "archive": {
-                "string": "Αρχείο"
-            },
-            "select_mail": {
-                "string": "Select message"
-            },
-            "deselect_mail": {
-                "string": "Deselect message"
-            }
-        },
-        "time": {
-            "minutes_ago": {
-                "string": "{count}m ago"
-            }
-        }
+  "MAILS_LIST": {
+    "star": {
+      "string": "Αστέρι"
     },
-    "viewFlat": "Flat list",
-    "viewConversation": "Conversation view"
+    "unstar": {
+      "string": "Αφαίρεση αστεριού"
+    },
+    "messages_number": {
+      "string": "{number, plural, one {# μήνυμα} other {# μηνύματα}}",
+      "context": "Displays the number of messages in an mail folder."
+    },
+    "sort": {
+      "date": {
+        "ascending": {
+          "string": "Νεότερα πρώτα"
+        },
+        "descending": {
+          "string": "Παλαιότερα πρώτα"
+        }
+      },
+      "size": {
+        "ascending": {
+          "string": "Μικρότερα πρώτα"
+        },
+        "descending": {
+          "string": "Μεγαλύτερα πρώτα"
+        }
+      }
+    },
+    "pagination": {
+      "previous": {
+        "string": "Προηγούμενη σελίδα"
+      },
+      "next": {
+        "string": "Επόμενη σελίδα"
+      }
+    },
+    "list_load_error": {
+      "folder_not_found": {
+        "string": "Αυτός ο φάκελος δεν υπάρχει πλέον.",
+        "description": "Message when folder messages request returns 404"
+      },
+      "mail_unavailable": {
+        "string": "Ο διακομιστής αλληλογραφίας δεν είναι προσωρινά διαθέσιμος.",
+        "description": "Message when folder messages request returns 503"
+      },
+      "retry": {
+        "string": "Δοκιμάστε ξανά",
+        "description": "Button label to refetch folder messages after 503"
+      },
+      "open_inbox": {
+        "string": "Άνοιγμα Εισερχομένων",
+        "description": "Button label to navigate to INBOX after folder 404"
+      },
+      "generic": {
+        "string": "Δεν είναι δυνατή η φόρτωση μηνυμάτων. Παρακαλώ δοκιμάστε ξανά αργότερα.",
+        "description": "Generic folder list load error (e.g. 500)"
+      }
+    },
+    "filter": {
+      "client_scope_notice": {
+        "string": "Τα φίλτρα ισχύουν μόνο για τα μηνύματα που φορτώθηκαν σε αυτή τη σελίδα.",
+        "description": "Hint that URL filters are client-side on the current server page"
+      },
+      "all": {
+        "string": "Όλα"
+      },
+      "unread": {
+        "string": "Μη αναγνωσμένα"
+      },
+      "read": {
+        "string": "Ανάγνωση"
+      },
+      "starred": {
+        "string": "Με αστέρι"
+      },
+      "attachments": {
+        "string": "Συνημμένα"
+      }
+    },
+    "layout": {
+      "full": {
+        "string": "Πλήρης προβολή"
+      },
+      "split": {
+        "string": "Διαιρεμένη προβολή"
+      }
+    },
+    "select_message": {
+      "string": "Επιλέξτε ένα μήνυμα για ανάγνωση"
+    },
+    "no_items": {
+      "string": "Δεν βρέθηκε μήνυμα."
+    },
+    "actions": {
+      "mark_as_read": {
+        "string": "Σημείωση ως αναγνωσμένο"
+      },
+      "mark_as_unread": {
+        "string": "Σημείωση ως μη αναγνωσμένο"
+      },
+      "delete": {
+        "string": "Μετακίνηση στα Διαγραμμένα"
+      },
+      "archive": {
+        "string": "Αρχείο"
+      },
+      "select_mail": {
+        "string": "Επιλογή μηνύματος"
+      },
+      "deselect_mail": {
+        "string": "Αποεπιλογή μηνύματος"
+      }
+    },
+    "time": {
+      "minutes_ago": {
+        "string": "πριν {count} λεπτά"
+      }
+    }
+  },
+  "viewFlat": "Επίπεδη λίστα",
+  "viewConversation": "Προβολή συνομιλίας"
 }

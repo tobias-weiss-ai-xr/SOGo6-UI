@@ -36,7 +36,7 @@
         "description": {
           "string": "Επιλέξτε τη μέθοδο πιστοποίησης για τους χρήστες. Το 'Plain' σημαίνει το κλασικό όνομα χρήστη/κωδικός πρόσβασης"
         },
-        "developer_comment": "Options might include LDAP, SQL, etc."
+        "developer_comment": "Οι επιλογές μπορεί να περιλαμβάνουν LDAP, SQL κ.λπ."
       },
       "SOGO_D_CAS_URL": {
         "name": {
@@ -252,7 +252,7 @@
         "description": {
           "string": "Επιλέξτε ένα μοναδικό όνομα για αυτήν την Πηγή Χρηστών, δεν θα εμφανίζεται στους χρήστες"
         },
-        "developer_comment": "Only for SOGo to differentiate differents User SOurce"
+        "developer_comment": "Μόνο για το SOGo, για τη διάκριση διαφορετικών πηγών χρηστών"
       },
       "US_TYPE": {
         "name": {
@@ -261,7 +261,7 @@
         "description": {
           "string": "Ορίστε τον τύπο της Πηγής Χρηστών σας"
         },
-        "developer_comment": "Only ldap and sql supported for now"
+        "developer_comment": "Προς το παρόν υποστηρίζονται μόνο ldap και sql"
       },
       "US_LDAP_HOSTNAME": {
         "name": {
@@ -342,7 +342,7 @@
         "description": {
           "string": "Πρόσθετο φίλτρο για χρήση σε ερωτήματα LDAP. Χρησιμοποιήστε '=', '!=', 'AND', 'OR' και παρενθέσεις. Παράδειγμα: '(objectClass='mailUser' OR objectClass!='mailGroup') AND accountStatus='active'"
         },
-        "developer_comment": "Use SOGo's syntax and not ldap syntax for filter"
+        "developer_comment": "Χρησιμοποιήστε τη σύνταξη SOGo και όχι τη σύνταξη ldap για το φίλτρο"
       },
       "US_LDAP_PWD_POLICY": {
         "name": {

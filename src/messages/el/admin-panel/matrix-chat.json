@@ -1,71 +1,71 @@
 {
-    "MATRIX": {
-        "title": {
-            "string": "Matrix Chat Integration"
-        },
-        "description": {
-            "string": "Embedded Matrix rooms, messaging, and SOGo user linking"
-        },
-        "errors": {
-            "name": {
-                "string": "Name required"
-            },
-            "fail": {
-                "string": "Operation failed"
-            }
-        },
-        "success": {
-            "config": {
-                "string": "Configuration saved"
-            },
-            "room": {
-                "string": "Room created"
-            }
-        },
-        "config": {
-            "title": {
-                "string": "Server Config"
-            },
-            "enabled": {
-                "string": "Ενεργοποιημένο"
-            },
-            "bridge": {
-                "string": "Bridge"
-            }
-        },
-        "rooms": {
-            "title": {
-                "string": "Chat Rooms"
-            },
-            "name": {
-                "placeholder": {
-                    "string": "Room name..."
-                }
-            },
-            "visibility": {
-                "private": {
-                    "string": "Private"
-                },
-                "public": {
-                    "string": "Public"
-                }
-            }
-        },
-        "button": {
-            "save": {
-                "string": "Αποθήκευση"
-            },
-            "create": {
-                "string": "Create Room"
-            }
-        },
-        "links": {
-            "title": {
-                "string": "User Links"
-            },
-            "empty": {
-                "string": "No linked users"
-            }
+  "MATRIX": {
+    "title": {
+      "string": "Ενσωμάτωση Συνομιλίας Matrix"
+    },
+    "description": {
+      "string": "Ενσωματωμένα δωμάτια Matrix, μηνύματα και σύνδεση χρηστών SOGo"
+    },
+    "errors": {
+      "name": {
+        "string": "Το όνομα είναι υποχρεωτικό"
+      },
+      "fail": {
+        "string": "Η λειτουργία απέτυχε"
+      }
+    },
+    "success": {
+      "config": {
+        "string": "Οι ρυθμίσεις αποθηκεύτηκαν"
+      },
+      "room": {
+        "string": "Το δωμάτιο δημιουργήθηκε"
+      }
+    },
+    "config": {
+      "title": {
+        "string": "Ρυθμίσεις Διακομιστή"
+      },
+      "enabled": {
+        "string": "Ενεργοποιημένο"
+      },
+      "bridge": {
+        "string": "Γέφυρα"
+      }
+    },
+    "rooms": {
+      "title": {
+        "string": "Δωμάτια Συνομιλίας"
+      },
+      "name": {
+        "placeholder": {
+          "string": "Όνομα δωματίου..."
         }
+      },
+      "visibility": {
+        "private": {
+          "string": "Ιδιωτικό"
+        },
+        "public": {
+          "string": "Δημόσιο"
+        }
+      }
+    },
+    "button": {
+      "save": {
+        "string": "Αποθήκευση"
+      },
+      "create": {
+        "string": "Δημιουργία Δωματίου"
+      }
+    },
+    "links": {
+      "title": {
+        "string": "Σύνδεσμοι Χρηστών"
+      },
+      "empty": {
+        "string": "Δεν υπάρχουν συνδεδεμένοι χρήστες"
+      }
     }
+  }
 }

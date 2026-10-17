@@ -1,76 +1,76 @@
 {
-    "AP_SESSIONS": {
-        "title": {
-            "string": "Active Sessions"
-        },
-        "description": {
-            "string": "View and manage active user sessions"
-        },
-        "table": {
-            "uid": {
-                "string": "User"
-            },
-            "domain": {
-                "string": "Τομέας"
-            },
-            "last_activity": {
-                "string": "Last Activity"
-            },
-            "actions": {
-                "string": "Actions"
-            },
-            "no_sessions": {
-                "string": "No active sessions found"
-            },
-            "loading": {
-                "string": "Loading sessions..."
-            }
-        },
-        "revoke": {
-            "button": {
-                "string": "Revoke"
-            },
-            "confirm": {
-                "string": "Are you sure you want to revoke this session?"
-            },
-            "confirm_multiple": {
-                "string": "Are you sure you want to revoke the selected sessions?"
-            },
-            "revoke_selected": {
-                "string": "Revoke Selected"
-            },
-            "revoke_selected_one": {
-                "string": "Revoke Selected ({count})"
-            },
-            "success": {
-                "string": "Session revoked successfully"
-            },
-            "success_multiple": {
-                "string": "{count} sessions revoked successfully"
-            },
-            "error": {
-                "string": "Failed to revoke session"
-            }
-        },
-        "revoke_inactive": {
-            "button": {
-                "string": "Revoke Inactive"
-            },
-            "confirm": {
-                "string": "Are you sure you want to revoke all inactive sessions?"
-            },
-            "days": {
-                "string": "Days of inactivity"
-            },
-            "days_placeholder": {
-                "string": "e.g., 30"
-            },
-            "success": {
-                "string": "Inactive sessions revoked successfully"
-            }
-        },
-        "refresh": {
-            "string": "Refresh"
-        }
+  "AP_SESSIONS": {
+    "title": {
+      "string": "Ενεργές Συνεδρίες"
+    },
+    "description": {
+      "string": "Προβολή και διαχείριση ενεργών συνεδριών χρηστών"
+    },
+    "table": {
+      "uid": {
+        "string": "Χρήστης"
+      },
+      "domain": {
+        "string": "Τομέας"
+      },
+      "last_activity": {
+        "string": "Τελευταία Δραστηριότητα"
+      },
+      "actions": {
+        "string": "Ενέργειες"
+      },
+      "no_sessions": {
+        "string": "Δεν βρέθηκαν ενεργές συνεδρίες"
+      },
+      "loading": {
+        "string": "Φόρτωση συνεδριών..."
+      }
+    },
+    "revoke": {
+      "button": {
+        "string": "Ανάκληση"
+      },
+      "confirm": {
+        "string": "Είστε βέβαιοι ότι θέλετε να ανακαλέσετε αυτή τη συνεδρία;"
+      },
+      "confirm_multiple": {
+        "string": "Είστε βέβαιοι ότι θέλετε να ανακαλέσετε τις επιλεγμένες συνεδρίες;"
+      },
+      "revoke_selected": {
+        "string": "Ανάκληση Επιλεγμένων"
+      },
+      "revoke_selected_one": {
+        "string": "Ανάκληση Επιλεγμένων ({count})"
+      },
+      "success": {
+        "string": "Η συνεδρία ανακλήθηκε επιτυχώς"
+      },
+      "success_multiple": {
+        "string": "{count} συνεδρίες ανακλήθηκαν επιτυχώς"
+      },
+      "error": {
+        "string": "Αποτυχία ανάκλησης συνεδρίας"
+      }
+    },
+    "revoke_inactive": {
+      "button": {
+        "string": "Ανάκληση Ανενεργών"
+      },
+      "confirm": {
+        "string": "Είστε βέβαιοι ότι θέλετε να ανακαλέσετε όλες τις ανενεργές συνεδρίες;"
+      },
+      "days": {
+        "string": "Ημέρες αδράνειας"
+      },
+      "days_placeholder": {
+        "string": "π.χ. 30"
+      },
+      "success": {
+        "string": "Οι ανενεργές συνεδρίες ανακλήθηκαν επιτυχώς"
+      }
+    },
+    "refresh": {
+      "string": "Ανανέωση"
     }
+  }
 }

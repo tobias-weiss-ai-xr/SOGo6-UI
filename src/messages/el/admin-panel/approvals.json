@@ -1,65 +1,65 @@
 {
-    "AP_APPROVALS": {
-        "title": {
-            "string": "Approval Workflows"
-        },
-        "description": {
-            "string": "Create multi-step approval chains for purchase orders, announcements, and more."
-        },
-        "form": {
-            "create": {
-                "string": "New Approval"
-            },
-            "cancel": {
-                "string": "Ακύρωση"
-            },
-            "title": {
-                "string": "Create Approval Workflow"
-            },
-            "workflow_title": {
-                "string": "Title"
-            },
-            "category": {
-                "string": "Category"
-            },
-            "description": {
-                "string": "Περιγραφή"
-            },
-            "steps": {
-                "string": "Approval Steps"
-            },
-            "submit": {
-                "string": "Create Workflow"
-            }
-        },
-        "create": {
-            "success": {
-                "string": "Workflow created"
-            },
-            "error": {
-                "string": "Failed to create"
-            }
-        },
-        "action": {
-            "approved": {
-                "string": "Step approved"
-            },
-            "rejected": {
-                "string": "Rejected"
-            },
-            "error": {
-                "string": "Action failed"
-            }
-        },
-        "list": {
-            "empty": {
-                "string": "No approval workflows yet."
-            }
-        },
-        "errors": {
-            "fields": {
-                "string": "Title and at least one step with email are required"
-            }
-        }
+  "AP_APPROVALS": {
+    "title": {
+      "string": "Ροές Εγκρίσεων"
+    },
+    "description": {
+      "string": "Δημιουργία πολυβάθμιων αλυσίδων έγκρισης για εντολές αγοράς, ανακοινώσεις και άλλα."
+    },
+    "form": {
+      "create": {
+        "string": "Νέα Έγκριση"
+      },
+      "cancel": {
+        "string": "Ακύρωση"
+      },
+      "title": {
+        "string": "Δημιουργία Ροής Έγκρισης"
+      },
+      "workflow_title": {
+        "string": "Τίτλος"
+      },
+      "category": {
+        "string": "Κατηγορία"
+      },
+      "description": {
+        "string": "Περιγραφή"
+      },
+      "steps": {
+        "string": "Βήματα Έγκρισης"
+      },
+      "submit": {
+        "string": "Δημιουργία ροής εργασιών"
+      }
+    },
+    "create": {
+      "success": {
+        "string": "Η ροή εργασιών δημιουργήθηκε"
+      },
+      "error": {
+        "string": "Αποτυχία δημιουργίας"
+      }
+    },
+    "action": {
+      "approved": {
+        "string": "Το βήμα εγκρίθηκε"
+      },
+      "rejected": {
+        "string": "Απορρίφθηκε"
+      },
+      "error": {
+        "string": "Η ενέργεια απέτυχε"
+      }
+    },
+    "list": {
+      "empty": {
+        "string": "Δεν υπάρχουν ροές εγκρίσεων ακόμα."
+      }
+    },
+    "errors": {
+      "fields": {
+        "string": "Ο τίτλος και τουλάχιστον ένα βήμα με email είναι υποχρεωτικά"
+      }
     }
+  }
 }

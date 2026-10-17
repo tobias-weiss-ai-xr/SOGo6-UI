@@ -1,57 +1,57 @@
 {
-    "AP_FILESHARE": {
-        "title": {
-            "string": "File Sharing"
-        },
-        "description": {
-            "string": "Create shareable links for files with optional password protection, expiration, and download tracking."
-        },
-        "form": {
-            "share": {
-                "string": "Share File"
-            },
-            "cancel": {
-                "string": "Ακύρωση"
-            },
-            "title": {
-                "string": "Share a File"
-            },
-            "filename": {
-                "string": "Filename"
-            },
-            "size": {
-                "string": "Size (bytes)"
-            },
-            "expires": {
-                "string": "Expires in (days)"
-            },
-            "password": {
-                "string": "Password"
-            },
-            "password_hint": {
-                "string": "Leave empty for no password"
-            },
-            "submit": {
-                "string": "Create Share Link"
-            }
-        },
-        "create": {
-            "success": {
-                "string": "Share link created"
-            },
-            "error": {
-                "string": "Failed to create share"
-            }
-        },
-        "list": {
-            "empty": {
-                "string": "No shared files. Create a share link to securely distribute files."
-            }
-        },
-        "errors": {
-            "fields": {
-                "string": "Filename and size are required"
-            }
-        }
+  "AP_FILESHARE": {
+    "title": {
+      "string": "Κοινή Χρήση Αρχείων"
+    },
+    "description": {
+      "string": "Δημιουργία συνδέσμων κοινής χρήσης για αρχεία με προαιρετική προστασία κωδικού, λήξη και παρακολούθηση λήψεων."
+    },
+    "form": {
+      "share": {
+        "string": "Κοινή Χρήση Αρχείου"
+      },
+      "cancel": {
+        "string": "Ακύρωση"
+      },
+      "title": {
+        "string": "Κοινή Χρήση Αρχείου"
+      },
+      "filename": {
+        "string": "Όνομα αρχείου"
+      },
+      "size": {
+        "string": "Μέγεθος (bytes)"
+      },
+      "expires": {
+        "string": "Λήγει σε (ημέρες)"
+      },
+      "password": {
+        "string": "Κωδικός πρόσβασης"
+      },
+      "password_hint": {
+        "string": "Αφήστε κενό για κανέναν κωδικό"
+      },
+      "submit": {
+        "string": "Δημιουργία Συνδέσμου Κοινής Χρήσης"
+      }
+    },
+    "create": {
+      "success": {
+        "string": "Ο σύνδεσμος κοινής χρήσης δημιουργήθηκε"
+      },
+      "error": {
+        "string": "Αποτυχία δημιουργίας κοινής χρήσης"
+      }
+    },
+    "list": {
+      "empty": {
+        "string": "Δεν υπάρχουν αρχεία κοινής χρήσης. Δημιουργήστε σύνδεσμο κοινής χρήσης για ασφαλή διανομή αρχείων."
+      }
+    },
+    "errors": {
+      "fields": {
+        "string": "Το όνομα αρχείου και το μέγεθος είναι υποχρεωτικά"
+      }
     }
+  }
 }

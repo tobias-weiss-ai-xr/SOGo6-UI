@@ -1,79 +1,79 @@
 {
-    "AP_BRANDING": {
-        "title": {
-            "string": "Multi-Tenant Branding"
-        },
-        "description": {
-            "string": "Customize login page appearance per domain — logo, colors, CSS, header/footer text."
-        },
-        "select_domain": {
-            "string": "Τομέας"
-        },
-        "select_placeholder": {
-            "string": "Choose a domain..."
-        },
-        "select_hint": {
-            "string": "Select a domain above to view and edit its branding."
-        },
-        "card": {
-            "identity": {
-                "string": "Visual Identity"
-            },
-            "login_page": {
-                "string": "Login Page"
-            }
-        },
-        "labels": {
-            "logo": {
-                "string": "Logo"
-            },
-            "favicon": {
-                "string": "Favicon"
-            },
-            "primary_color": {
-                "string": "Primary Color"
-            },
-            "login_header": {
-                "string": "Login Header Text"
-            },
-            "login_footer": {
-                "string": "Login Footer Text"
-            },
-            "custom_css": {
-                "string": "Custom CSS"
-            }
-        },
-        "buttons": {
-            "upload": {
-                "string": "Upload"
-            }
-        },
-        "placeholders": {
-            "header": {
-                "string": "e.g. Welcome to My Company Mail"
-            },
-            "footer": {
-                "string": "e.g. © 2026 My Company"
-            },
-            "css": {
-                "string": "body { font-family: sans-serif; }"
-            }
-        },
-        "save": {
-            "button": {
-                "string": "Save Branding"
-            },
-            "success": {
-                "string": "Branding saved"
-            },
-            "error": {
-                "string": "Failed to save branding"
-            }
-        },
-        "errors": {
-            "upload": {
-                "string": "Failed to read file"
-            }
-        }
+  "AP_BRANDING": {
+    "title": {
+      "string": "Προσαρμογή Εμφάνισης ανά Τομέα"
+    },
+    "description": {
+      "string": "Προσαρμόστε την εμφάνιση της σελίδας σύνδεσης ανά τομέα — λογότυπο, χρώματα, CSS, κείμενο κεφαλίδας/υποσέλιδου."
+    },
+    "select_domain": {
+      "string": "Τομέας"
+    },
+    "select_placeholder": {
+      "string": "Επιλέξτε τομέα..."
+    },
+    "select_hint": {
+      "string": "Επιλέξτε τομέα παραπάνω για να δείτε και να επεξεργαστείτε την εμφάνισή του."
+    },
+    "card": {
+      "identity": {
+        "string": "Οπτική Ταυτότητα"
+      },
+      "login_page": {
+        "string": "Σελίδα Σύνδεσης"
+      }
+    },
+    "labels": {
+      "logo": {
+        "string": "Λογότυπο"
+      },
+      "favicon": {
+        "string": "Favicon"
+      },
+      "primary_color": {
+        "string": "Βασικό Χρώμα"
+      },
+      "login_header": {
+        "string": "Κείμενο Κεφαλίδας Σύνδεσης"
+      },
+      "login_footer": {
+        "string": "Κείμενο Υποσέλιδου Σύνδεσης"
+      },
+      "custom_css": {
+        "string": "Προσαρμοσμένο CSS"
+      }
+    },
+    "buttons": {
+      "upload": {
+        "string": "Μεταφόρτωση"
+      }
+    },
+    "placeholders": {
+      "header": {
+        "string": "π.χ. Καλώς ήρθατε στο Mail της Εταιρείας μου"
+      },
+      "footer": {
+        "string": "π.χ. © 2026 Η Εταιρεία μου"
+      },
+      "css": {
+        "string": "body { font-family: sans-serif; }"
+      }
+    },
+    "save": {
+      "button": {
+        "string": "Αποθήκευση Εμφάνισης"
+      },
+      "success": {
+        "string": "Η εμφάνιση αποθηκεύτηκε"
+      },
+      "error": {
+        "string": "Αποτυχία αποθήκευσης εμφάνισης"
+      }
+    },
+    "errors": {
+      "upload": {
+        "string": "Αποτυχία ανάγνωσης αρχείου"
+      }
     }
+  }
 }

@@ -1,53 +1,53 @@
 {
-    "FORM_PROFILE": {
-        "title": "Profile",
-        "description": "Manage your profile information and settings.",
-        "sections": {
-            "basicInfo": "Basic Information",
-            "identities": "Identities"
-        },
-        "firstname": {
-            "string": "First Name",
-            "description": "Label for the first name input field."
-        },
-        "lastname": {
-            "string": "Last Name",
-            "description": "Label for the last name input field."
-        },
-        "basicInfo": {
-            "title": "Basic Information",
-            "uid": "User ID",
-            "email": "Email",
-            "fullName": "Name",
-            "aliases": "Email Aliases"
-        },
-        "extraInfo": {
-            "title": "Extra Information",
-            "company": "Company",
-            "team": "Team"
-        },
-        "profilePictureSource": {
-            "title": "Profile Picture",
-            "description": "Choose how your profile picture is displayed. You can upload a custom image, use your Gravatar, Libravatar or use the default avatar.",
-            "useDefault": "Default",
-            "useGravatar": "Gravatar",
-            "useLibravatar": "Libravatar",
-            "useCustom": "Custom"
-        },
-        "identities": {},
-        "api": {
-            "title": {
-                "string": "Σφάλμα"
-            },
-            "loading": {
-                "string": "Φόρτωση"
-            },
-            "load_failed": {
-                "string": "Failed to load profile. Please try again later."
-            },
-            "update_failed": {
-                "string": "Failed to update profile. Please try again."
-            }
-        }
+  "FORM_PROFILE": {
+    "title": "Προφίλ",
+    "description": "Διαχείριση των πληροφοριών και ρυθμίσεων του προφίλ σας.",
+    "sections": {
+      "basicInfo": "Βασικές Πληροφορίες",
+      "identities": "Ταυτότητες"
+    },
+    "firstname": {
+      "string": "Όνομα",
+      "description": "Label for the first name input field."
+    },
+    "lastname": {
+      "string": "Επώνυμο",
+      "description": "Label for the last name input field."
+    },
+    "basicInfo": {
+      "title": "Βασικές Πληροφορίες",
+      "uid": "ID Χρήστη",
+      "email": "Email",
+      "fullName": "Όνομα",
+      "aliases": "Ψευδώνυμα Email"
+    },
+    "extraInfo": {
+      "title": "Επιπλέον Πληροφορίες",
+      "company": "Εταιρεία",
+      "team": "Ομάδα"
+    },
+    "profilePictureSource": {
+      "title": "Εικόνα Προφίλ",
+      "description": "Επιλέξτε πώς εμφανίζεται η εικόνα προφίλ σας. Μπορείτε να μεταφορτώσετε προσαρμοσμένη εικόνα, να χρησιμοποιήσετε το Gravatar ή το Libravatar σας ή να χρησιμοποιήσετε την προεπιλεγμένη εικόνα.",
+      "useDefault": "Προεπιλογή",
+      "useGravatar": "Gravatar",
+      "useLibravatar": "Libravatar",
+      "useCustom": "Προσαρμοσμένη"
+    },
+    "identities": {},
+    "api": {
+      "title": {
+        "string": "Σφάλμα"
+      },
+      "loading": {
+        "string": "Φόρτωση"
+      },
+      "load_failed": {
+        "string": "Αποτυχία φόρτωσης προφίλ. Παρακαλώ δοκιμάστε ξανά αργότερα."
+      },
+      "update_failed": {
+        "string": "Αποτυχία ενημέρωσης προφίλ. Παρακαλώ δοκιμάστε ξανά."
+      }
     }
+  }
 }

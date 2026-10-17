@@ -1,98 +1,98 @@
 {
-    "VOLUNTEER": {
-        "title": {
-            "string": "Volunteer Scheduling"
-        },
-        "description": {
-            "string": "Manage volunteers, assign shifts, track hours, and generate certificates"
-        },
-        "errors": {
-            "fields": {
-                "string": "Required fields missing"
-            },
-            "fail": {
-                "string": "Operation failed"
-            }
-        },
-        "success": {
-            "create": {
-                "string": "Volunteer registered"
-            },
-            "shift": {
-                "string": "Shift assigned"
-            },
-            "cert": {
-                "string": "Certificate generated"
-            }
-        },
-        "register": {
-            "title": {
-                "string": "Register Volunteer"
-            }
-        },
-        "shift": {
-            "title": {
-                "string": "Create Shift"
-            },
-            "select": {
-                "string": "Select volunteer..."
-            },
-            "task": {
-                "string": "Task"
-            },
-            "start": {
-                "string": "Start"
-            },
-            "end": {
-                "string": "End"
-            }
-        },
-        "field": {
-            "name": {
-                "string": "Όνομα"
-            },
-            "email": {
-                "string": "Email"
-            },
-            "hours": {
-                "string": "Hours"
-            },
-            "status": {
-                "string": "Κατάσταση"
-            },
-            "no_shows": {
-                "string": "No-shows"
-            }
-        },
-        "button": {
-            "register": {
-                "string": "Register"
-            },
-            "assign": {
-                "string": "Assign Shift"
-            }
-        },
-        "stats": {
-            "title": {
-                "string": "Statistics"
-            },
-            "volunteers": {
-                "string": "Volunteers"
-            },
-            "hours": {
-                "string": "Total Hours"
-            },
-            "shifts": {
-                "string": "Active Shifts"
-            }
-        },
-        "list": {
-            "title": {
-                "string": "All Volunteers"
-            },
-            "empty": {
-                "string": "No volunteers registered yet"
-            }
-        }
+  "VOLUNTEER": {
+    "title": {
+      "string": "Προγραμματισμός Εθελοντών"
+    },
+    "description": {
+      "string": "Διαχείριση εθελοντών, ανάθεση βαρδιών, παρακολούθηση ωρών και δημιουργία πιστοποιητικών"
+    },
+    "errors": {
+      "fields": {
+        "string": "Λείπουν υποχρεωτικά πεδία"
+      },
+      "fail": {
+        "string": "Η λειτουργία απέτυχε"
+      }
+    },
+    "success": {
+      "create": {
+        "string": "Ο εθελοντής καταχωρήθηκε"
+      },
+      "shift": {
+        "string": "Η βάρδια ανατέθηκε"
+      },
+      "cert": {
+        "string": "Το πιστοποιητικό δημιουργήθηκε"
+      }
+    },
+    "register": {
+      "title": {
+        "string": "Καταχώρηση Εθελοντή"
+      }
+    },
+    "shift": {
+      "title": {
+        "string": "Δημιουργία Βάρδιας"
+      },
+      "select": {
+        "string": "Επιλογή εθελοντή..."
+      },
+      "task": {
+        "string": "Εργασία"
+      },
+      "start": {
+        "string": "Έναρξη"
+      },
+      "end": {
+        "string": "Λήξη"
+      }
+    },
+    "field": {
+      "name": {
+        "string": "Όνομα"
+      },
+      "email": {
+        "string": "Email"
+      },
+      "hours": {
+        "string": "Ώρες"
+      },
+      "status": {
+        "string": "Κατάσταση"
+      },
+      "no_shows": {
+        "string": "Απουσίες"
+      }
+    },
+    "button": {
+      "register": {
+        "string": "Καταχώρηση"
+      },
+      "assign": {
+        "string": "Ανάθεση Βάρδιας"
+      }
+    },
+    "stats": {
+      "title": {
+        "string": "Στατιστικά"
+      },
+      "volunteers": {
+        "string": "Εθελοντές"
+      },
+      "hours": {
+        "string": "Σύνολο Ωρών"
+      },
+      "shifts": {
+        "string": "Ενεργές Βάρδιες"
+      }
+    },
+    "list": {
+      "title": {
+        "string": "Όλοι οι Εθελοντές"
+      },
+      "empty": {
+        "string": "Δεν έχουν καταχωρηθεί εθελοντές ακόμα"
+      }
     }
+  }
 }

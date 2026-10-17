@@ -1,79 +1,79 @@
 {
-    "AP_SYSTEM": {
-        "title": {
-            "string": "System Settings"
+  "AP_SYSTEM": {
+    "title": {
+      "string": "Ρυθμίσεις Συστήματος"
+    },
+    "description": {
+      "string": "Ρύθμιση της συμπεριφοράς όλου του συστήματος για την εγκατάσταση SOGo."
+    },
+    "form_title": {
+      "string": "Διαμόρφωση"
+    },
+    "form_description": {
+      "string": "Τροποποιήστε παρακάτω τις καθολικές ρυθμίσεις συστήματος."
+    },
+    "save": {
+      "string": "Αποθήκευση"
+    },
+    "saving": {
+      "string": "Αποθήκευση…"
+    },
+    "saved": {
+      "string": "Οι ρυθμίσεις συστήματος αποθηκεύτηκαν επιτυχώς."
+    },
+    "save_error": {
+      "string": "Αποτυχία αποθήκευσης: {message}"
+    },
+    "load_error": {
+      "string": "Αποτυχία φόρτωσης ρυθμίσεων συστήματος."
+    },
+    "retry": {
+      "string": "Δοκιμή ξανά"
+    },
+    "unsaved_changes": {
+      "string": "Έχετε μη αποθηκευμένες αλλαγές."
+    },
+    "fields": {
+      "SOGO_S_DIRECT_LOGIN": {
+        "label": {
+          "string": "Άμεση Σύνδεση"
         },
         "description": {
-            "string": "Configure system-wide behaviour for the SOGo instance."
-        },
-        "form_title": {
-            "string": "Διαμόρφωση"
-        },
-        "form_description": {
-            "string": "Modify global system settings below."
-        },
-        "save": {
-            "string": "Αποθήκευση"
-        },
-        "saving": {
-            "string": "Saving…"
-        },
-        "saved": {
-            "string": "System settings saved successfully."
-        },
-        "save_error": {
-            "string": "Failed to save: {message}"
-        },
-        "load_error": {
-            "string": "Failed to load system settings."
-        },
-        "retry": {
-            "string": "Retry"
-        },
-        "unsaved_changes": {
-            "string": "You have unsaved changes."
-        },
-        "fields": {
-            "SOGO_S_DIRECT_LOGIN": {
-                "label": {
-                    "string": "Direct Login"
-                },
-                "description": {
-                    "string": "Allow users to log in without selecting a domain."
-                }
-            },
-            "SOGO_S_DOMAINLESS_LOGIN": {
-                "label": {
-                    "string": "Domainless Login"
-                },
-                "description": {
-                    "string": "Allow login with username only (no @domain)."
-                }
-            },
-            "SOGO_S_DO_DOMAIN": {
-                "label": {
-                    "string": "Enable Domains"
-                },
-                "description": {
-                    "string": "Enable multi-domain support for this instance."
-                }
-            },
-            "SOGO_S_REJECT_UNKNOWN_DOMAIN": {
-                "label": {
-                    "string": "Reject Unknown Domains"
-                },
-                "description": {
-                    "string": "Reject login attempts from domains not configured in SOGo."
-                }
-            },
-            "SOGO_S_SENDMAIL": {
-                "label": {
-                    "string": "Sendmail Path"
-                },
-                "description": {
-                    "string": "Absolute path to the sendmail binary used for outgoing mail."
-                }
-            }
+          "string": "Να επιτρέπεται στους χρήστες να συνδέονται χωρίς επιλογή τομέα."
         }
+      },
+      "SOGO_S_DOMAINLESS_LOGIN": {
+        "label": {
+          "string": "Σύνδεση χωρίς Τομέα"
+        },
+        "description": {
+          "string": "Να επιτρέπεται σύνδεση μόνο με όνομα χρήστη (χωρίς @τομέα)."
+        }
+      },
+      "SOGO_S_DO_DOMAIN": {
+        "label": {
+          "string": "Ενεργοποίηση Τομέων"
+        },
+        "description": {
+          "string": "Ενεργοποίηση υποστήριξης πολλαπλών τομέων για αυτή την εγκατάσταση."
+        }
+      },
+      "SOGO_S_REJECT_UNKNOWN_DOMAIN": {
+        "label": {
+          "string": "Απόρριψη Άγνωστων Τομέων"
+        },
+        "description": {
+          "string": "Απόρριψη απόπειρων σύνδεσης από τομείς που δεν έχουν ρυθμιστεί στο SOGo."
+        }
+      },
+      "SOGO_S_SENDMAIL": {
+        "label": {
+          "string": "Διαδρομή Sendmail"
+        },
+        "description": {
+          "string": "Απόλυτη διαδρομή του εκτελέσιμου sendmail για την εξερχόμενη αλληλογραφία."
+        }
+      }
     }
+  }
 }
