@@ -1,6 +1,39 @@
 {
     "MAILS_COMMONS": {
+        "cancel": {
+            "string": "Annulla",
+            "context": "Generic cancel/dismiss button label"
+        },
+        "followUp": {
+            "title": "Imposta promemoria",
+            "changeTitle": "Modifica promemoria",
+            "description": "Scegli quando ricevere un promemoria per questa email.",
+            "clear": "Rimuovi promemoria",
+            "set": "Imposta promemoria"
+        },
         "mail_display": {
+            "smime": {
+                "encrypted": {
+                    "string": "Crittografato",
+                    "description": "Badge shown when a mail was S/MIME encrypted and could be decrypted"
+                },
+                "signature_valid": {
+                    "string": "Firmato — firma valida",
+                    "description": "Badge shown when the S/MIME signature verified successfully"
+                },
+                "signature_invalid": {
+                    "string": "Firma non valida",
+                    "description": "Badge shown when the S/MIME signature failed verification"
+                },
+                "signature_untrusted": {
+                    "string": "Firmato — firma valida, CA non attendibile",
+                    "description": "Badge shown when the signature verifies but the signer's CA does not chain to the configured trust bundle"
+                },
+                "encrypted_not_readable": {
+                    "string": "Crittografato — nessun certificato",
+                    "description": "Badge shown when a mail is S/MIME encrypted but no key is available to decrypt it"
+                }
+            },
             "action-bar": {
                 "reply": {
                     "string": "Rispondi",
@@ -149,6 +182,9 @@
                 "snooze": {
                     "string": "Posticipa",
                     "description": "Temporarily remove from inbox and return later"
+                },
+                "move_to_folder": {
+                    "string": "Sposta nella cartella"
                 }
             },
             "content": {
@@ -296,6 +332,10 @@
             "delegate": {
                 "string": "Delega",
                 "description": "Label for the delegate action in the account switcher menu (not yet implemented)"
+            },
+            "shared_mailboxes": {
+                "string": "Condivise",
+                "description": "Label for the shared mailboxes section in the account switcher"
             }
         },
         "to": {
@@ -418,6 +458,23 @@
                         "TEMPLATE": {
                             "string": "Modelli"
                         }
+                    }
+                },
+                "move_mails_dialog": {
+                    "title": {
+                        "string": "Sposta messaggi"
+                    },
+                    "description": {
+                        "string": "Sposta {count} messaggi selezionati in un'altra cartella."
+                    },
+                    "placeholder": {
+                        "string": "Seleziona la cartella di destinazione"
+                    },
+                    "confirm": {
+                        "string": "Sposta"
+                    },
+                    "cancel": {
+                        "string": "Annulla"
                     }
                 },
                 "move_to_dialog": {
