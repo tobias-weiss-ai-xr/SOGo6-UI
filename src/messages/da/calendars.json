@@ -811,6 +811,9 @@
                     "string": "Annuller"
                 }
             },
+            "copyEvent": {
+                "string": "Kopiér begivenhed"
+            },
             "editCalendar": {
                 "title": {
                     "string": "Edit Calendar"

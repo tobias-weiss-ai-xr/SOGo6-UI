@@ -861,6 +861,9 @@
           "string": "Cancel"
         }
       },
+      "copyEvent": {
+        "string": "Copy event"
+      },
       "editCalendar": {
         "title": {
           "string": "Edit Calendar"

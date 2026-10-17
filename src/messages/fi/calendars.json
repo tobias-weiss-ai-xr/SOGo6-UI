@@ -811,6 +811,9 @@
                     "string": "Peruuta"
                 }
             },
+            "copyEvent": {
+                "string": "Kopioi tapahtuma"
+            },
             "editCalendar": {
                 "title": {
                     "string": "Edit Calendar"

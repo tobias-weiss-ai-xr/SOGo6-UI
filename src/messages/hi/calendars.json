@@ -811,6 +811,9 @@
                     "string": "रद्द करें"
                 }
             },
+            "copyEvent": {
+                "string": "ईवेंट कॉपी करें"
+            },
             "editCalendar": {
                 "title": {
                     "string": "Edit Calendar"

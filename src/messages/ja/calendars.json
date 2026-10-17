@@ -811,6 +811,9 @@
                     "string": "キャンセル"
                 }
             },
+            "copyEvent": {
+                "string": "イベントをコピー"
+            },
             "editCalendar": {
                 "title": {
                     "string": "Edit Calendar"

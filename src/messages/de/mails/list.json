@@ -120,5 +120,7 @@
     },
     "viewFlat": "Flache Liste",
     "viewConversation": "Konversationsansicht"
-  }
+  },
+  "viewConversation": "Unterhaltung",
+  "viewFlat": "Flache Liste"
 }

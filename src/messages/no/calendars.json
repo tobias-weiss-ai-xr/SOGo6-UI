@@ -811,6 +811,9 @@
                     "string": "Avbryt"
                 }
             },
+            "copyEvent": {
+                "string": "Kopier hendelse"
+            },
             "editCalendar": {
                 "title": {
                     "string": "Edit Calendar"

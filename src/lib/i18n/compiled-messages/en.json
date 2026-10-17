@@ -6931,6 +6931,18 @@
       "export": {
         "string": "Export Calendar"
       },
+      "import": {
+        "string": "Import Calendar",
+        "description": {
+          "string": "Import events from an .ics file into this calendar."
+        },
+        "success": {
+          "string": "Import complete"
+        },
+        "choose_file": {
+          "string": "Choose .ics file"
+        }
+      },
       "color": {
         "string": "Calendar Color"
       },
@@ -7543,6 +7555,9 @@
           "string": "Cancel"
         }
       },
+      "copyEvent": {
+        "string": "Copy event"
+      },
       "editCalendar": {
         "title": {
           "string": "Edit Calendar"
@@ -7627,9 +7642,6 @@
       },
       "editEvent": {
         "string": "Edit event"
-      },
-      "copyEvent": {
-        "string": "Copy event"
       },
       "deleteEvent": {
         "confirm": {
@@ -8015,6 +8027,28 @@
       "set": "Set follow-up"
     },
     "mail_display": {
+      "smime": {
+        "encrypted": {
+          "string": "Encrypted",
+          "description": "Badge shown when a mail was S/MIME encrypted and could be decrypted"
+        },
+        "signature_valid": {
+          "string": "Signed — signature valid",
+          "description": "Badge shown when the S/MIME signature verified successfully"
+        },
+        "signature_invalid": {
+          "string": "Signature invalid",
+          "description": "Badge shown when the S/MIME signature failed verification"
+        },
+        "signature_untrusted": {
+          "string": "Signed — signature valid, CA not trusted",
+          "description": "Badge shown when the signature verifies but the signer's CA does not chain to the configured trust bundle"
+        },
+        "encrypted_not_readable": {
+          "string": "Encrypted — no certificate",
+          "description": "Badge shown when a mail is S/MIME encrypted but no key is available to decrypt it"
+        }
+      },
       "action-bar": {
         "reply": {
           "string": "Reply",
@@ -8163,6 +8197,9 @@
         "snooze": {
           "string": "Snooze",
           "description": "Temporarily remove from inbox and return later"
+        },
+        "move_to_folder": {
+          "string": "Move to folder"
         }
       },
       "content": {
@@ -8436,6 +8473,23 @@
             "TEMPLATE": {
               "string": "Templates"
             }
+          }
+        },
+        "move_mails_dialog": {
+          "title": {
+            "string": "Move mails"
+          },
+          "description": {
+            "string": "Move {count} selected mails to another folder."
+          },
+          "placeholder": {
+            "string": "Select destination folder"
+          },
+          "confirm": {
+            "string": "Move"
+          },
+          "cancel": {
+            "string": "Cancel"
           }
         },
         "move_to_dialog": {
@@ -8890,12 +8944,12 @@
       "context": "Button to request a return receipt for the email"
     },
     "sign_message": {
-      "string": "Sign message (PGP)",
-      "context": "Button to sign the message with PGP"
+      "string": "Sign message",
+      "context": "Option to sign the email with the sender's S/MIME certificate"
     },
     "encrypt_message": {
-      "string": "Encrypt message (PGP)",
-      "context": "Button to encrypt the message with PGP"
+      "string": "Encrypt message",
+      "context": "Option to encrypt the email with S/MIME to all recipients"
     },
     "priority": {
       "string": "Set priority",
@@ -10127,6 +10181,21 @@
       }
     }
   },
+  "Login": {
+    "offlineNotice": "You are currently offline. Some features may be limited."
+  },
+  "PWA": {
+    "installPrompt": {
+      "title": "Install SOGo",
+      "description": "Add SOGo to your home screen for quick access, even offline.",
+      "install": "Install",
+      "dismiss": "Not now"
+    },
+    "offlineBanner": {
+      "label": "You are offline. Some features may not work."
+    },
+    "featureUnavailable": "{feature} is not available while offline."
+  },
   "OPENCLOUD": {
     "picker": {
       "search": {
@@ -10281,6 +10350,9 @@
       },
       "calendar": {
         "string": "Calendar"
+      },
+      "attendees": {
+        "string": "Assignees"
       },
       "categories": {
         "string": "Categories"
@@ -12038,6 +12110,19 @@
       "copyPublicKey": "Copy Public Key",
       "deleteKey": "Delete Key",
       "generateKey": "Generate Key"
+    },
+    "smime": {
+      "title": "S/MIME",
+      "description": "Manage your S/MIME certificate for signing and encrypting email",
+      "loading": "Loading...",
+      "selfSigned": "self-signed",
+      "validUntil": "Valid until",
+      "delete": "Delete certificate",
+      "generate": "Generate self-signed certificate",
+      "import": "Import certificate (PEM/PKCS#12)",
+      "noCertificate": "No S/MIME certificate configured yet",
+      "expired": "This certificate has expired. Generate or import a new one.",
+      "expiresSoon": "This certificate expires in {days} day(s)."
     }
   },
   "US_SIDEBAR": {
@@ -12125,20 +12210,5 @@
         "context": "Link to the API documentation / Swagger UI in the settings sidebar"
       }
     }
-  },
-  "PWA": {
-    "installPrompt": {
-      "title": "Install SOGo",
-      "description": "Add SOGo to your home screen for quick access, even offline.",
-      "install": "Install",
-      "dismiss": "Not now"
-    },
-    "offlineBanner": {
-      "label": "You are offline. Some features may not work."
-    },
-    "featureUnavailable": "{feature} is not available while offline."
-  },
-  "Login": {
-    "offlineNotice": "You are currently offline. Some features may be limited."
   }
 }

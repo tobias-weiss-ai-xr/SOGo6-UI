@@ -811,6 +811,9 @@
                     "string": "Anulează"
                 }
             },
+            "copyEvent": {
+                "string": "Copiază evenimentul"
+            },
             "editCalendar": {
                 "title": {
                     "string": "Edit Calendar"

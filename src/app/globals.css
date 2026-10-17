@@ -481,6 +481,10 @@ html.dyslexia [class*="font-"] {
   word-spacing: 0.1em !important;
 }
 
+/* Class-based dark mode: next-themes sets .dark on <html> (attribute="class").
+   Without this, Tailwind v4's dark: variant follows prefers-color-scheme
+   instead of the in-app theme toggle and the UI renders half-dark. */
+@custom-variant dark (&:where(.dark, .dark *));
 @custom-variant dyslexia (&:where(.dyslexia, .dyslexia *));
 @custom-variant tritanopia (&:where(.tritanopia, .tritanopia *));
 @custom-variant deuteranopia (&:where(.deuteranopia, .deuteranopia *));

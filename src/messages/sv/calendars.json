@@ -811,6 +811,9 @@
                     "string": "Avbryt"
                 }
             },
+            "copyEvent": {
+                "string": "Kopiera händelse"
+            },
             "editCalendar": {
                 "title": {
                     "string": "Edit Calendar"

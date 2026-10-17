@@ -811,6 +811,9 @@
                     "string": "Batal"
                 }
             },
+            "copyEvent": {
+                "string": "Salin acara"
+            },
             "editCalendar": {
                 "title": {
                     "string": "Edit Calendar"

@@ -811,6 +811,9 @@
                     "string": "Zrušit"
                 }
             },
+            "copyEvent": {
+                "string": "Kopírovat událost"
+            },
             "editCalendar": {
                 "title": {
                     "string": "Edit Calendar"

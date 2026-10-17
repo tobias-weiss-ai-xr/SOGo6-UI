@@ -811,6 +811,9 @@
                     "string": "取消"
                 }
             },
+            "copyEvent": {
+                "string": "复制日程"
+            },
             "editCalendar": {
                 "title": {
                     "string": "Edit Calendar"

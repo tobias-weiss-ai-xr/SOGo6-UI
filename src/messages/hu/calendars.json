@@ -811,6 +811,9 @@
                     "string": "Mégsem"
                 }
             },
+            "copyEvent": {
+                "string": "Esemény másolása"
+            },
             "editCalendar": {
                 "title": {
                     "string": "Edit Calendar"

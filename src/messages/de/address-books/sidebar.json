@@ -18,12 +18,12 @@
         "labels": { "name": { "string": "CardDAV-URL" } },
         "copy": { "string": "URL kopieren", "context": "Aria label for copying the address book CardDAV URL." }
       },
-      "delete": { "title": { "string": "Möchten Sie das Adressbuch {name} wirklich löschen?" } }
+      "delete": { "title": { "string": "Möchten Sie das Adressbuch {name} wirklich löschen?" } },
+      "sharing": { "string": "Freigabe" },
+      "import": { "string": "Importieren" },
+      "export": { "string": "Exportieren" },
+      "ios_download": { "string": "iOS/macOS-Konfigurationsprofil herunterladen" }
     },
-    "sharing": { "string": "Freigabe" },
-    "import": { "string": "Importieren" },
-    "export": { "string": "Exportieren" },
-    "ios_download": { "string": "iOS/macOS-Konfigurationsprofil herunterladen" },
     "sharing": {
       "title": { "string": "Adressbuch-Freigabe" },
       "description": { "string": "Teilen Sie dieses Adressbuch mit anderen Benutzern. Geteilte Benutzer können Kontakte basierend auf der von Ihnen gewhrten Berechtigungsstufe anzeigen oder bearbeiten." },

@@ -811,6 +811,9 @@
                     "string": "Ακύρωση"
                 }
             },
+            "copyEvent": {
+                "string": "Αντιγραφή συμβάντος"
+            },
             "editCalendar": {
                 "title": {
                     "string": "Edit Calendar"

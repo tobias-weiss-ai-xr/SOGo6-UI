@@ -811,6 +811,9 @@
                     "string": "Annuleren"
                 }
             },
+            "copyEvent": {
+                "string": "Gebeurtenis kopiëren"
+            },
             "editCalendar": {
                 "title": {
                     "string": "Edit Calendar"

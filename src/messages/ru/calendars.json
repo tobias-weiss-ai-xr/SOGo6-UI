@@ -811,6 +811,9 @@
                     "string": "Отмена"
                 }
             },
+            "copyEvent": {
+                "string": "Копировать событие"
+            },
             "editCalendar": {
                 "title": {
                     "string": "Edit Calendar"
