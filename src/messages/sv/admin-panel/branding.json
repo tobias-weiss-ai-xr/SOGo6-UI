@@ -1,59 +1,59 @@
 {
     "AP_BRANDING": {
         "title": {
-            "string": "Multi-Tenant Branding"
+            "string": "Varumärkning för flera klienter"
         },
         "description": {
-            "string": "Customize login page appearance per domain — logo, colors, CSS, header/footer text."
+            "string": "Anpassa inloggningssidans utseende per domän — logotyp, färger, CSS, texter i sidhuvud och sidfot."
         },
         "select_domain": {
             "string": "Domän"
         },
         "select_placeholder": {
-            "string": "Choose a domain..."
+            "string": "Välj en domän..."
         },
         "select_hint": {
-            "string": "Select a domain above to view and edit its branding."
+            "string": "Välj en domän ovan för att visa och redigera dess varumärke."
         },
         "card": {
             "identity": {
-                "string": "Visual Identity"
+                "string": "Visuell identitet"
             },
             "login_page": {
-                "string": "Login Page"
+                "string": "Inloggningssida"
             }
         },
         "labels": {
             "logo": {
-                "string": "Logo"
+                "string": "Logotyp"
             },
             "favicon": {
-                "string": "Favicon"
+                "string": "Favoritikon"
             },
             "primary_color": {
-                "string": "Primary Color"
+                "string": "Primärfärg"
             },
             "login_header": {
-                "string": "Login Header Text"
+                "string": "Text i inloggningens sidhuvud"
             },
             "login_footer": {
-                "string": "Login Footer Text"
+                "string": "Text i inloggningens sidfot"
             },
             "custom_css": {
-                "string": "Custom CSS"
+                "string": "Anpassad CSS"
             }
         },
         "buttons": {
             "upload": {
-                "string": "Upload"
+                "string": "Ladda upp"
             }
         },
         "placeholders": {
             "header": {
-                "string": "e.g. Welcome to My Company Mail"
+                "string": "t.ex. Välkommen till Mitt företags e-post"
             },
             "footer": {
-                "string": "e.g. © 2026 My Company"
+                "string": "t.ex. © 2026 Mitt företag"
             },
             "css": {
                 "string": "body { font-family: sans-serif; }"
@@ -61,18 +61,18 @@
         },
         "save": {
             "button": {
-                "string": "Save Branding"
+                "string": "Spara varumärke"
             },
             "success": {
-                "string": "Branding saved"
+                "string": "Varumärket sparades"
             },
             "error": {
-                "string": "Failed to save branding"
+                "string": "Kunde inte spara varumärket"
             }
         },
         "errors": {
             "upload": {
-                "string": "Failed to read file"
+                "string": "Kunde inte läsa filen"
             }
         }
     }

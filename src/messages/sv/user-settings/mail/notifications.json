@@ -1,65 +1,65 @@
 {
     "US_MAIL_NOTIFICATIONS": {
         "title": {
-            "string": "Mail Notifications"
+            "string": "E-postaviseringar"
         },
         "page": {
             "description": {
-                "string": "Send email notifications when your mail filters are triggered."
+                "string": "Skicka e-postaviseringar när dina e-postfilter utlöses."
             }
         },
         "labels": {
             "enabled": {
-                "string": "Enable mail notifications"
+                "string": "Aktivera e-postaviseringar"
             },
             "email": {
-                "string": "Email addresses"
+                "string": "E-postadresser"
             },
             "message": {
-                "string": "Notification message"
+                "string": "Aviseringsmeddelande"
             }
         },
         "description": {
             "enabled": {
-                "string": "Notify external addresses when a filter rule matches incoming mail."
+                "string": "Meddela externa adresser när en filterregel matchar inkommande e-post."
             }
         },
         "help": {
             "email": {
-                "string": "We'll send notifications to these addresses when filters are triggered"
+                "string": "Vi skickar aviseringar till dessa adresser när filter utlöses"
             }
         },
         "hints": {
             "blur": {
-                "string": "Press Enter to add this address"
+                "string": "Tryck på Retur för att lägga till denna adress"
             }
         },
         "placeholders": {
             "email": {
-                "string": "Add email address and press Enter"
+                "string": "Lägg till e-postadress och tryck på Retur"
             },
             "message": {
-                "string": "Enter notification message"
+                "string": "Ange aviseringsmeddelande"
             }
         },
         "errors": {
             "email": {
                 "invalid": {
-                    "string": "Please enter a valid email address"
+                    "string": "Ange en giltig e-postadress"
                 },
                 "duplicate": {
-                    "string": "This address is already in the list"
+                    "string": "Denna adress finns redan i listan"
                 }
             },
             "max_reached": {
-                "string": "Maximum {max} addresses allowed"
+                "string": "Högst {max} adresser tillåts"
             },
             "validation": {
                 "addresses_required": {
-                    "string": "At least one email address is required when notifications are enabled."
+                    "string": "Minst en e-postadress krävs när aviseringar är aktiverade."
                 },
                 "message_required": {
-                    "string": "A notification message is required."
+                    "string": "Ett aviseringsmeddelande krävs."
                 }
             }
         },
@@ -68,27 +68,27 @@
                 "string": "Fel"
             },
             "save_failed": {
-                "string": "Couldn't save your changes, try again"
+                "string": "Kunde inte spara dina ändringar, försök igen"
             },
             "load_failed": {
-                "string": "Could not load notification settings. Please try again later."
+                "string": "Kunde inte läsa in aviseringsinställningarna. Försök igen senare."
             },
             "feature_disabled": {
-                "string": "Mail notifications have been disabled by your administrator."
+                "string": "E-postaviseringar har inaktiverats av din administratör."
             }
         },
         "aria": {
             "toggle_notifications": {
-                "string": "Toggle mail notifications"
+                "string": "Växla e-postaviseringar"
             },
             "tags_count": {
-                "string": "{count} of {max} email addresses added"
+                "string": "{count} av {max} e-postadresser har lagts till"
             },
             "remove_email": {
-                "string": "Remove {email}"
+                "string": "Ta bort {email}"
             },
             "email_input_group": {
-                "string": "Email addresses for notifications"
+                "string": "E-postadresser för aviseringar"
             }
         }
     }

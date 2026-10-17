@@ -1,76 +1,76 @@
 {
     "AP_SESSIONS": {
         "title": {
-            "string": "Active Sessions"
+            "string": "Aktiva sessioner"
         },
         "description": {
-            "string": "View and manage active user sessions"
+            "string": "Visa och hantera aktiva användarsessioner"
         },
         "table": {
             "uid": {
-                "string": "User"
+                "string": "Användare"
             },
             "domain": {
                 "string": "Domän"
             },
             "last_activity": {
-                "string": "Last Activity"
+                "string": "Senaste aktivitet"
             },
             "actions": {
-                "string": "Actions"
+                "string": "Åtgärder"
             },
             "no_sessions": {
-                "string": "No active sessions found"
+                "string": "Inga aktiva sessioner hittades"
             },
             "loading": {
-                "string": "Loading sessions..."
+                "string": "Läser in sessioner..."
             }
         },
         "revoke": {
             "button": {
-                "string": "Revoke"
+                "string": "Återkalla"
             },
             "confirm": {
-                "string": "Are you sure you want to revoke this session?"
+                "string": "Är du säker på att du vill återkalla denna session?"
             },
             "confirm_multiple": {
-                "string": "Are you sure you want to revoke the selected sessions?"
+                "string": "Är du säker på att du vill återkalla de markerade sessionerna?"
             },
             "revoke_selected": {
-                "string": "Revoke Selected"
+                "string": "Återkalla markerade"
             },
             "revoke_selected_one": {
-                "string": "Revoke Selected ({count})"
+                "string": "Återkalla markerade ({count})"
             },
             "success": {
-                "string": "Session revoked successfully"
+                "string": "Sessionen återkallades"
             },
             "success_multiple": {
-                "string": "{count} sessions revoked successfully"
+                "string": "{count} sessioner återkallades"
             },
             "error": {
-                "string": "Failed to revoke session"
+                "string": "Kunde inte återkalla sessionen"
             }
         },
         "revoke_inactive": {
             "button": {
-                "string": "Revoke Inactive"
+                "string": "Återkalla inaktiva"
             },
             "confirm": {
-                "string": "Are you sure you want to revoke all inactive sessions?"
+                "string": "Är du säker på att du vill återkalla alla inaktiva sessioner?"
             },
             "days": {
-                "string": "Days of inactivity"
+                "string": "Dagar av inaktivitet"
             },
             "days_placeholder": {
-                "string": "e.g., 30"
+                "string": "t.ex. 30"
             },
             "success": {
-                "string": "Inactive sessions revoked successfully"
+                "string": "Inaktiva sessioner återkallades"
             }
         },
         "refresh": {
-            "string": "Refresh"
+            "string": "Uppdatera"
         }
     }
 }

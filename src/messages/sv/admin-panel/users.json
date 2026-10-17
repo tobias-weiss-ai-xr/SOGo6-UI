@@ -1,17 +1,17 @@
 {
     "AP_USERS": {
         "title": {
-            "string": "User Management"
+            "string": "Användarhantering"
         },
         "description": {
-            "string": "Create, edit, and delete user accounts in the LDAP directory"
+            "string": "Skapa, redigera och radera användarkonton i LDAP-katalogen"
         },
         "search": {
             "placeholder": {
-                "string": "Search by name, email, or UID..."
+                "string": "Sök på namn, e-post eller UID..."
             },
             "clear": {
-                "string": "Clear"
+                "string": "Rensa"
             }
         },
         "table": {
@@ -19,48 +19,48 @@
                 "string": "UID"
             },
             "cn": {
-                "string": "Full Name"
+                "string": "Fullständigt namn"
             },
             "mail": {
-                "string": "Email"
+                "string": "E-post"
             },
             "sn": {
-                "string": "Surname"
+                "string": "Efternamn"
             },
             "givenName": {
-                "string": "Given Name"
+                "string": "Förnamn"
             },
             "uidNumber": {
-                "string": "UID Number"
+                "string": "UID-nummer"
             },
             "gidNumber": {
-                "string": "GID Number"
+                "string": "GID-nummer"
             },
             "homeDirectory": {
-                "string": "Home Directory"
+                "string": "Hemkatalog"
             },
             "actions": {
-                "string": "Actions"
+                "string": "Åtgärder"
             },
             "no_users": {
-                "string": "No users found"
+                "string": "Inga användare hittades"
             },
             "loading": {
-                "string": "Loading users..."
+                "string": "Läser in användare..."
             }
         },
         "create": {
             "button": {
-                "string": "Create User"
+                "string": "Skapa användare"
             },
             "title": {
-                "string": "Create New User"
+                "string": "Skapa ny användare"
             },
             "success": {
-                "string": "User created successfully"
+                "string": "Användaren skapades"
             },
             "error": {
-                "string": "Failed to create user"
+                "string": "Kunde inte skapa användaren"
             }
         },
         "edit": {
@@ -68,16 +68,16 @@
                 "string": "Redigera"
             },
             "title": {
-                "string": "Edit User"
+                "string": "Redigera användare"
             },
             "save": {
-                "string": "Save Changes"
+                "string": "Spara ändringar"
             },
             "success": {
-                "string": "User updated successfully"
+                "string": "Användaren uppdaterades"
             },
             "error": {
-                "string": "Failed to update user"
+                "string": "Kunde inte uppdatera användaren"
             }
         },
         "delete": {
@@ -85,45 +85,45 @@
                 "string": "Ta bort"
             },
             "confirm": {
-                "string": "Are you sure you want to delete user {uid}?"
+                "string": "Är du säker på att du vill radera användaren {uid}?"
             },
             "success": {
-                "string": "User deleted successfully"
+                "string": "Användaren raderades"
             },
             "error": {
-                "string": "Failed to delete user"
+                "string": "Kunde inte radera användaren"
             }
         },
         "form": {
             "uid": {
-                "string": "User ID (email)"
+                "string": "Användar-ID (e-post)"
             },
             "cn": {
-                "string": "Full Name"
+                "string": "Fullständigt namn"
             },
             "sn": {
-                "string": "Surname"
+                "string": "Efternamn"
             },
             "givenName": {
-                "string": "Given Name"
+                "string": "Förnamn"
             },
             "mail": {
-                "string": "Email Address"
+                "string": "E-postadress"
             },
             "password": {
-                "string": "Password"
+                "string": "Lösenord"
             },
             "uidNumber": {
-                "string": "UID Number (optional)"
+                "string": "UID-nummer (valfritt)"
             },
             "gidNumber": {
-                "string": "GID Number (optional)"
+                "string": "GID-nummer (valfritt)"
             },
             "homeDirectory": {
-                "string": "Home Directory (optional)"
+                "string": "Hemkatalog (valfri)"
             },
             "required": {
-                "string": "Required"
+                "string": "Obligatoriskt"
             }
         }
     }

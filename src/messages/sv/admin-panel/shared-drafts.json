@@ -1,70 +1,70 @@
 {
     "AP_DRAFTS": {
         "title": {
-            "string": "Collaborative Drafts"
+            "string": "Gemensamma utkast"
         },
         "description": {
-            "string": "Share draft emails with colleagues for review and approval before sending."
+            "string": "Dela e-postutkast med kollegor för granskning och godkännande innan de skickas."
         },
         "form": {
             "share": {
-                "string": "Share Draft"
+                "string": "Dela utkast"
             },
             "cancel": {
                 "string": "Avbryt"
             },
             "title": {
-                "string": "Share a Draft"
+                "string": "Dela ett utkast"
             },
             "subject": {
-                "string": "Subject"
+                "string": "Ämne"
             },
             "reviewers": {
-                "string": "Reviewers"
+                "string": "Granskare"
             },
             "message": {
-                "string": "Message to Reviewers"
+                "string": "Meddelande till granskarna"
             },
             "message_hint": {
-                "string": "Please review this draft before I send it"
+                "string": "Granska gärna detta utkast innan jag skickar det"
             },
             "body": {
-                "string": "Email Body"
+                "string": "E-postinnehåll"
             },
             "submit": {
-                "string": "Share Draft"
+                "string": "Dela utkast"
             }
         },
         "create": {
             "success": {
-                "string": "Draft shared"
+                "string": "Utkastet delades"
             },
             "error": {
-                "string": "Failed to share draft"
+                "string": "Kunde inte dela utkastet"
             }
         },
         "review": {
             "approved": {
-                "string": "Draft approved"
+                "string": "Utkastet godkändes"
             },
             "rejected": {
-                "string": "Draft rejected"
+                "string": "Utkastet avvisades"
             },
             "error": {
-                "string": "Review failed"
+                "string": "Granskningen misslyckades"
             }
         },
         "list": {
             "empty": {
-                "string": "No shared drafts. Create one to collaborate on an email."
+                "string": "Inga delade utkast. Skapa ett för att samarbeta kring ett e-postmeddelande."
             },
             "by": {
-                "string": "by"
+                "string": "av"
             }
         },
         "errors": {
             "fields": {
-                "string": "Subject, body, and at least one reviewer are required"
+                "string": "Ämne, innehåll och minst en granskare krävs"
             }
         }
     }

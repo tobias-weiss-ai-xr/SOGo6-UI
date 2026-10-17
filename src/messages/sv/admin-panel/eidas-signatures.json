@@ -1,64 +1,64 @@
 {
     "EIDAS": {
         "title": {
-            "string": "eIDAS Qualified Signatures"
+            "string": "Kvalificerade eIDAS-signaturer"
         },
         "description": {
-            "string": "EU Regulation 910/2014 qualified electronic signatures and timestamps"
+            "string": "Kvalificerade elektroniska signaturer och tidsstämplar enligt EU-förordning 910/2014"
         },
         "errors": {
             "fields": {
-                "string": "All fields required"
+                "string": "Alla fält krävs"
             },
             "fail": {
-                "string": "Operation failed"
+                "string": "Åtgärden misslyckades"
             }
         },
         "success": {
             "sign": {
-                "string": "Document signed with QES"
+                "string": "Dokumentet signerades med QES"
             }
         },
         "sign": {
             "title": {
-                "string": "Sign Document"
+                "string": "Signera dokument"
             },
             "placeholder": {
-                "string": "Enter document content to sign..."
+                "string": "Ange dokumentinnehåll att signera..."
             },
             "signer": {
-                "string": "Signer Email"
+                "string": "Signerarens e-post"
             },
             "algorithm": {
-                "string": "Hash Algorithm"
+                "string": "Hashalgoritm"
             },
             "button": {
-                "string": "Sign with QES"
+                "string": "Signera med QES"
             }
         },
         "verify": {
             "title": {
-                "string": "Verify Signature"
+                "string": "Verifiera signatur"
             },
             "doc_hash": {
-                "string": "Document Hash"
+                "string": "Dokumenthash"
             },
             "signature": {
-                "string": "Signature"
+                "string": "Signatur"
             },
             "button": {
-                "string": "Verify"
+                "string": "Verifiera"
             },
             "valid": {
-                "string": "Valid"
+                "string": "Giltig"
             },
             "invalid": {
-                "string": "Invalid"
+                "string": "Ogiltig"
             }
         },
         "certs": {
             "title": {
-                "string": "Trust Service Certificates"
+                "string": "Betrodda tjänstecertifikat"
             },
             "type": {
                 "string": "Typ"

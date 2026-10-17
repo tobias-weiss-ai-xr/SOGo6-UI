@@ -1,69 +1,69 @@
 {
     "AP_WORKFLOWS": {
         "title": {
-            "string": "Workflow Builder"
+            "string": "Arbetsflödesbyggare"
         },
         "description": {
-            "string": "Low-code automation: If email from X and subject Y → forward, create event, notify."
+            "string": "Kodlös automation: Om e-post från X och ämnet Y → vidarebefordra, skapa händelse, meddela."
         },
         "form": {
             "create": {
-                "string": "New Workflow"
+                "string": "Nytt arbetsflöde"
             },
             "cancel": {
                 "string": "Avbryt"
             },
             "title": {
-                "string": "Create Workflow"
+                "string": "Skapa arbetsflöde"
             },
             "name": {
-                "string": "Workflow Name"
+                "string": "Arbetsflödesnamn"
             },
             "trigger": {
-                "string": "Trigger"
+                "string": "Utlösare"
             },
             "description": {
                 "string": "Beskrivning"
             },
             "conditions": {
-                "string": "Conditions"
+                "string": "Villkor"
             },
             "actions": {
-                "string": "Actions"
+                "string": "Åtgärder"
             },
             "submit": {
-                "string": "Create Workflow"
+                "string": "Skapa arbetsflöde"
             }
         },
         "create": {
             "success": {
-                "string": "Workflow created"
+                "string": "Arbetsflödet skapades"
             },
             "error": {
-                "string": "Failed to create"
+                "string": "Kunde inte skapa"
             }
         },
         "toggle": {
             "error": {
-                "string": "Failed to toggle"
+                "string": "Kunde inte växla"
             }
         },
         "delete": {
             "success": {
-                "string": "Workflow deleted"
+                "string": "Arbetsflödet raderades"
             },
             "error": {
-                "string": "Failed to delete"
+                "string": "Kunde inte radera"
             }
         },
         "list": {
             "empty": {
-                "string": "No workflows defined. Create one to automate actions."
+                "string": "Inga arbetsflöden definierade. Skapa ett för att automatisera åtgärder."
             }
         },
         "errors": {
             "fields": {
-                "string": "Name, conditions, and actions are required"
+                "string": "Namn, villkor och åtgärder krävs"
             }
         }
     }

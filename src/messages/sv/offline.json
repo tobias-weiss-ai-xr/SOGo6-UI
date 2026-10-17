@@ -1,17 +1,17 @@
 {
   "Login": {
-    "offlineNotice": "You are currently offline. Some features may be limited."
+    "offlineNotice": "Du är för närvarande offline. Vissa funktioner kan vara begränsade."
   },
   "PWA": {
     "installPrompt": {
-      "title": "Install SOGo",
-      "description": "Add SOGo to your home screen for quick access, even offline.",
-      "install": "Install",
-      "dismiss": "Not now"
+      "title": "Installera SOGo",
+      "description": "Lägg till SOGo på din startskärm för snabb åtkomst, även offline.",
+      "install": "Installera",
+      "dismiss": "Inte nu"
     },
     "offlineBanner": {
-      "label": "You are offline. Some features may not work."
+      "label": "Du är offline. Vissa funktioner kanske inte fungerar."
     },
-    "featureUnavailable": "{feature} is not available while offline."
+    "featureUnavailable": "{feature} är inte tillgänglig offline."
   }
 }

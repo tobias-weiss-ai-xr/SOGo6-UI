@@ -1,53 +1,53 @@
 {
     "MATRIX": {
         "title": {
-            "string": "Matrix Chat Integration"
+            "string": "Matrix-chattintegration"
         },
         "description": {
-            "string": "Embedded Matrix rooms, messaging, and SOGo user linking"
+            "string": "Inbäddade Matrix-rum, meddelandefunktioner och koppling av SOGo-användare"
         },
         "errors": {
             "name": {
-                "string": "Name required"
+                "string": "Namn krävs"
             },
             "fail": {
-                "string": "Operation failed"
+                "string": "Åtgärden misslyckades"
             }
         },
         "success": {
             "config": {
-                "string": "Configuration saved"
+                "string": "Konfigurationen sparades"
             },
             "room": {
-                "string": "Room created"
+                "string": "Rummet skapades"
             }
         },
         "config": {
             "title": {
-                "string": "Server Config"
+                "string": "Serverkonfiguration"
             },
             "enabled": {
                 "string": "Aktiverad"
             },
             "bridge": {
-                "string": "Bridge"
+                "string": "Brygga"
             }
         },
         "rooms": {
             "title": {
-                "string": "Chat Rooms"
+                "string": "Chattrum"
             },
             "name": {
                 "placeholder": {
-                    "string": "Room name..."
+                    "string": "Rumnamn..."
                 }
             },
             "visibility": {
                 "private": {
-                    "string": "Private"
+                    "string": "Privat"
                 },
                 "public": {
-                    "string": "Public"
+                    "string": "Publikt"
                 }
             }
         },
@@ -56,15 +56,15 @@
                 "string": "Spara"
             },
             "create": {
-                "string": "Create Room"
+                "string": "Skapa rum"
             }
         },
         "links": {
             "title": {
-                "string": "User Links"
+                "string": "Användarkopplingar"
             },
             "empty": {
-                "string": "No linked users"
+                "string": "Inga kopplade användare"
             }
         }
     }

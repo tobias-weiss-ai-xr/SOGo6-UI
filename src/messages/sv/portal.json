@@ -7,10 +7,10 @@
             "string": "Välkommen till SOGo Portal. Välj en applikation för att börja."
         },
         "launch": {
-            "string": "Launch"
+            "string": "Starta"
         },
         "settings": {
-            "string": "Intercom Settings"
+            "string": "Intercom-inställningar"
         }
     }
 }

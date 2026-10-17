@@ -1,31 +1,31 @@
 {
     "ADMIN_PANNEL_DOMAIN": {
         "title": {
-            "string": "Custom domains"
+            "string": "Egna domäner"
         },
         "filter_placeholder": {
-            "string": "Filter domains..."
+            "string": "Filtrera domäner..."
         },
         "add_new_domain": {
-            "string": "Add new custom domain"
+            "string": "Lägg till ny egen domän"
         },
         "select_all": {
-            "string": "Select all"
+            "string": "Markera alla"
         },
         "select_row": {
-            "string": "Select row"
+            "string": "Markera rad"
         },
         "domain": {
             "string": "Domän"
         },
         "open_menu": {
-            "string": "Open menu"
+            "string": "Öppna meny"
         },
         "actions": {
-            "string": "Actions"
+            "string": "Åtgärder"
         },
         "copy_domain": {
-            "string": "Copy domain name"
+            "string": "Kopiera domännamnet"
         },
         "edit": {
             "string": "Redigera"

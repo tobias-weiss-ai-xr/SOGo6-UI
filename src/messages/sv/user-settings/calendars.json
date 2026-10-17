@@ -17,13 +17,13 @@
       "context": "Label for the calendar creation notification setting"
     },
     "calendarViewFirstDay": {
-      "0": "Sunday",
-      "1": "Monday",
-      "2": "Tuesday",
-      "3": "Wednesday",
-      "4": "Thursday",
-      "5": "Friday",
-      "6": "Saturday",
+      "0": "Söndag",
+      "1": "Måndag",
+      "2": "Tisdag",
+      "3": "Onsdag",
+      "4": "Torsdag",
+      "5": "Fredag",
+      "6": "Lördag",
       "string": "Första veckodag i kalendervy",
       "context": "Label for the setting that determines the first day of the week in calendar view (0=Sunday..6=Saturday)"
     },
@@ -40,20 +40,20 @@
       "context": "Label for the setting that determines whether to show as busy during off hours"
     },
     "calendarDaysShowed": {
-      "0": "Sunday",
-      "1": "Monday",
-      "2": "Tuesday",
-      "3": "Wednesday",
-      "4": "Thursday",
-      "5": "Friday",
-      "6": "Saturday",
+      "0": "Söndag",
+      "1": "Måndag",
+      "2": "Tisdag",
+      "3": "Onsdag",
+      "4": "Torsdag",
+      "5": "Fredag",
+      "6": "Lördag",
       "string": "Dagar som visas i kalendervy",
       "context": "Label for the setting that determines which days are showed in calendar view (array of 0=Sunday..6=Saturday)"
     },
     "calendarWeekNumberFormat": {
-      "%U": "Sunday as the first day of the week",
-      "%W": "Monday as the first day of the week",
-      "%V": "First 4 days week",
+      "%U": "Söndag som första dag i veckan",
+      "%W": "Måndag som första dag i veckan",
+      "%V": "Första 4-dagarsveckan",
       "string": "Hur den första veckonumret beräknas",
       "context": "Label for the setting that determines the week number format in calendar view (%U, %W or %V)"
     },
@@ -62,9 +62,9 @@
       "context": "Label for the setting that determines the default calendar"
     },
     "calendarStatus": {
-      "PUBLIC": "Public",
-      "CONFIDENTIAL": "Confidential",
-      "PRIVATE": "Private"
+      "PUBLIC": "Publik",
+      "CONFIDENTIAL": "Konfidentiell",
+      "PRIVATE": "Privat"
     },
     "eventDefaultClass": {
       "string": "Standardklassificering för händelser",
@@ -108,7 +108,7 @@
     },
     "davForceSyncFromClient": {
       "string": "Tvinga synkronisering av händelser skapade från CalDAV-klienter",
-      "help-tooltip": "Warning: if events from the client are more recent, force the sync anyway",
+      "help-tooltip": "Varning: om händelserna från klienten är mer aktuella tvingas synkroniseringen ändå",
       "context": "Label for the setting that determines whether to force synchronization of events created from CalDAV clients or not"
     },
     "categories": {
@@ -128,11 +128,11 @@
           }
         }
       },
-      "Work": "Work",
-      "Family": "Family",
-      "Friends": "Friends",
+      "Work": "Arbete",
+      "Family": "Familj",
+      "Friends": "Vänner",
       "validation": {
-        "category-name-required": "Category name is required"
+        "category-name-required": "Kategorinamn krävs"
       }
     }
   }

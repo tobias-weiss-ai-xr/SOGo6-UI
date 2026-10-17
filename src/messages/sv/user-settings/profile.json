@@ -1,38 +1,38 @@
 {
     "FORM_PROFILE": {
-        "title": "Profile",
-        "description": "Manage your profile information and settings.",
+        "title": "Profil",
+        "description": "Hantera din profilinformation och dina inställningar.",
         "sections": {
-            "basicInfo": "Basic Information",
-            "identities": "Identities"
+            "basicInfo": "Grundläggande information",
+            "identities": "Identiteter"
         },
         "firstname": {
-            "string": "First Name",
+            "string": "Förnamn",
             "description": "Label for the first name input field."
         },
         "lastname": {
-            "string": "Last Name",
+            "string": "Efternamn",
             "description": "Label for the last name input field."
         },
         "basicInfo": {
-            "title": "Basic Information",
-            "uid": "User ID",
-            "email": "Email",
-            "fullName": "Name",
-            "aliases": "Email Aliases"
+            "title": "Grundläggande information",
+            "uid": "Användar-ID",
+            "email": "E-post",
+            "fullName": "Namn",
+            "aliases": "E-postalias"
         },
         "extraInfo": {
-            "title": "Extra Information",
-            "company": "Company",
+            "title": "Ytterligare information",
+            "company": "Företag",
             "team": "Team"
         },
         "profilePictureSource": {
-            "title": "Profile Picture",
-            "description": "Choose how your profile picture is displayed. You can upload a custom image, use your Gravatar, Libravatar or use the default avatar.",
-            "useDefault": "Default",
+            "title": "Profilbild",
+            "description": "Välj hur din profilbild visas. Du kan ladda upp en egen bild, använda din Gravatar, Libravatar eller använda standardavatarbilden.",
+            "useDefault": "Standard",
             "useGravatar": "Gravatar",
             "useLibravatar": "Libravatar",
-            "useCustom": "Custom"
+            "useCustom": "Egen"
         },
         "identities": {},
         "api": {
@@ -43,10 +43,10 @@
                 "string": "Laddar"
             },
             "load_failed": {
-                "string": "Failed to load profile. Please try again later."
+                "string": "Kunde inte läsa in profilen. Försök igen senare."
             },
             "update_failed": {
-                "string": "Failed to update profile. Please try again."
+                "string": "Kunde inte uppdatera profilen. Försök igen."
             }
         }
     }

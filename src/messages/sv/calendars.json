@@ -5,52 +5,52 @@
         },
         "attendance": {
             "accepted": {
-                "string": "Accept"
+                "string": "Acceptera"
             },
             "declined": {
-                "string": "Decline"
+                "string": "Avböj"
             },
             "tentative": {
-                "string": "Maybe"
+                "string": "Kanske"
             },
             "delegated": {
-                "string": "Delegate"
+                "string": "Delegera"
             },
             "success": {
                 "accepted": {
-                    "string": "You accepted this event"
+                    "string": "Du accepterade detta evenemang"
                 },
                 "declined": {
-                    "string": "You declined this event"
+                    "string": "Du avböjde detta evenemang"
                 },
                 "tentative": {
-                    "string": "Marked as maybe"
+                    "string": "Markerat som kanske"
                 }
             },
             "error": {
                 "string": {
-                    "string": "Failed to update your attendance"
+                    "string": "Kunde inte uppdatera ditt deltagande"
                 }
             }
         },
         "recurrenceScope": {
             "editTitle": {
-                "string": "Edit recurring event"
+                "string": "Redigera återkommande evenemang"
             },
             "deleteTitle": {
-                "string": "Delete recurring event"
+                "string": "Radera återkommande evenemang"
             },
             "description": {
-                "string": "Which events do you want to modify?"
+                "string": "Vilka evenemang vill du ändra?"
             },
             "ONE": {
-                "string": "This event only"
+                "string": "Endast detta evenemang"
             },
             "THISANDFUTURE": {
-                "string": "This and following events"
+                "string": "Detta och följande evenemang"
             },
             "ALL": {
-                "string": "All events"
+                "string": "Alla evenemang"
             },
             "cancel": {
                 "string": "Avbryt"
@@ -67,60 +67,60 @@
                 "string": "Nästa"
             },
             "pickDate": {
-                "string": "Pick a date"
+                "string": "Välj ett datum"
             },
             "search": {
-                "string": "Search events...",
+                "string": "Sök evenemang...",
                 "no_results": {
-                    "string": "No events found"
+                    "string": "Inga evenemang hittades"
                 },
                 "loading": {
-                    "string": "Searching..."
+                    "string": "Söker..."
                 }
             },
             "selectView": {
-                "string": "Select view"
+                "string": "Välj vy"
             },
             "views": {
                 "month": {
-                    "string": "Month"
+                    "string": "Månad"
                 },
                 "week": {
-                    "string": "Week"
+                    "string": "Vecka"
                 },
                 "day": {
-                    "string": "Day"
+                    "string": "Dag"
                 },
                 "schedule": {
-                    "string": "Schedule"
+                    "string": "Schema"
                 }
             },
             "createEvent": {
-                "string": "Create Event"
+                "string": "Skapa evenemang"
             }
         },
         "events": {
             "create": {
-                "string": "Create Event"
+                "string": "Skapa evenemang"
             }
         },
         "schedule": {
             "noEvents": {
-                "string": "No events"
+                "string": "Inga evenemang"
             },
             "noUpcomingEvents": {
-                "string": "No upcoming events for this period"
+                "string": "Inga kommande evenemang för denna period"
             }
         },
         "views": {
             "month": {
-                "string": "Month"
+                "string": "Månad"
             },
             "week": {
-                "string": "Week"
+                "string": "Vecka"
             },
             "day": {
-                "string": "Day"
+                "string": "Dag"
             },
             "agenda": {
                 "string": "Agenda"
@@ -128,25 +128,25 @@
         },
         "mobile": {
             "event": {
-                "string": "event",
-                "plural": "events"
+                "string": "evenemang",
+                "plural": "evenemang"
             },
             "weekView": {
                 "eventsCount": {
-                    "string": "{count, plural, one {# event} other {# events}}"
+                    "string": "{count, plural, one {# evenemang} other {# evenemang}}"
                 }
             },
             "noEvents": {
-                "string": "No events"
+                "string": "Inga evenemang"
             },
             "swipeHint": {
-                "string": "← Swipe to see all days →"
+                "string": "← Svep för att se alla dagar →"
             },
             "swipeToChangeDay": {
-                "string": "Swipe to change day"
+                "string": "Svep för att byta dag"
             },
             "swipeToNavigate": {
-                "string": "← Swipe to navigate →"
+                "string": "← Svep för att navigera →"
             },
             "timeSeparator": {
                 "string": "-"
@@ -156,34 +156,34 @@
                     "string": "Idag"
                 },
                 "hasEvents": {
-                    "string": "Has events"
+                    "string": "Har evenemang"
                 }
             }
         },
         "external": {
             "add_title": {
-                "string": "Subscribe to calendar"
+                "string": "Prenumerera på kalender"
             },
             "name_label": {
                 "string": "Namn"
             },
             "url_label": {
-                "string": "Calendar URL (.ics)"
+                "string": "Kalender-URL (.ics)"
             },
             "url_error": {
-                "string": "Please enter a valid URL"
+                "string": "Ange en giltig URL"
             },
             "color_label": {
-                "string": "Color"
+                "string": "Färg"
             },
             "sync_interval_label": {
-                "string": "Sync every"
+                "string": "Synka var"
             },
             "sync_now": {
-                "string": "Sync now"
+                "string": "Synka nu"
             },
             "submit": {
-                "string": "Subscribe"
+                "string": "Prenumerera"
             },
             "sync_interval_options": {
                 "5": {
@@ -196,70 +196,70 @@
                     "string": "30 min"
                 },
                 "60": {
-                    "string": "1 hour"
+                    "string": "1 timme"
                 },
                 "360": {
-                    "string": "6 hours"
+                    "string": "6 timmar"
                 },
                 "1440": {
-                    "string": "24 hours"
+                    "string": "24 timmar"
                 }
             }
         },
         "sidebar": {
             "personals": {
-                "string": "Personal Calendars"
+                "string": "Personliga kalendrar"
             },
             "shared": {
-                "string": "Shared Calendars"
+                "string": "Delade kalendrar"
             },
             "subscriptions": {
-                "string": "Subscriptions"
+                "string": "Prenumerationer"
             },
             "add": {
-                "string": "Add Calendar"
+                "string": "Lägg till kalender"
             },
             "edit": {
-                "string": "Edit Calendar"
+                "string": "Redigera kalender"
             },
             "delete": {
-                "string": "Delete Calendar"
+                "string": "Radera kalender"
             },
             "sharing": {
-                "string": "Sharing Settings"
+                "string": "Delningsinställningar"
             },
             "link": {
-                "string": "Get Calendar Link",
+                "string": "Hämta kalenderlänk",
                 "description": {
-                    "string": "Copy this link to subscribe to this calendar in other calendar applications."
+                    "string": "Kopiera denna länk för att prenumerera på kalendern i andra kalenderprogram."
                 }
             },
             "export": {
-                "string": "Export Calendar"
+                "string": "Exportera kalender"
             },
             "color": {
-                "string": "Calendar Color"
+                "string": "Kalenderfärg"
             },
             "readOnlyCalendar": {
-                "string": "Read-only calendar",
+                "string": "Skrivskyddad kalender",
                 "context": "Label for ICS/subscription calendars that cannot be edited"
             }
         },
         "actions": {
             "newEvent": {
-                "string": "New Event"
+                "string": "Nytt evenemang"
             },
             "today": {
                 "string": "Idag"
             },
             "month": {
-                "string": "Month"
+                "string": "Månad"
             },
             "week": {
-                "string": "Week"
+                "string": "Vecka"
             },
             "day": {
-                "string": "Day"
+                "string": "Dag"
             },
             "agenda": {
                 "string": "Agenda"
@@ -267,106 +267,106 @@
         },
         "visualization": {
             "location": {
-                "string": "Location"
+                "string": "Plats"
             },
             "description": {
                 "string": "Beskrivning"
             },
             "attendees": {
-                "string": "Attendees"
+                "string": "Deltagare"
             },
             "conference": {
-                "string": "Video Conference"
+                "string": "Videokonferens"
             },
             "joinMeeting": {
-                "string": "Join Meeting"
+                "string": "Anslut till mötet"
             },
             "reminders": {
-                "string": "Reminders"
+                "string": "Påminnelser"
             },
             "recurrence": {
-                "string": "Repeats"
+                "string": "Upprepas"
             },
             "frequency": {
                 "daily": {
-                    "string": "Daily"
+                    "string": "Dagligen"
                 },
                 "weekly": {
-                    "string": "Weekly"
+                    "string": "Veckovis"
                 },
                 "monthly": {
-                    "string": "Monthly"
+                    "string": "Månadsvis"
                 },
                 "yearly": {
-                    "string": "Yearly"
+                    "string": "Årsvis"
                 }
             },
             "every": {
-                "string": "Every {count}"
+                "string": "Var {count}"
             },
             "daysBefore": {
-                "string": "{count} days before"
+                "string": "{count} dagar före"
             },
             "hoursBefore": {
-                "string": "{count} hours before"
+                "string": "{count} timmar före"
             },
             "minutesBefore": {
-                "string": "{count} minutes before"
+                "string": "{count} minuter före"
             },
             "organizer": {
-                "string": "Organizer"
+                "string": "Organisatör"
             },
             "organizerRole": {
-                "string": "(organizer)"
+                "string": "(organisatör)"
             },
             "attendeeStatus": {
                 "accepted": {
-                    "string": "Accepted"
+                    "string": "Accepterat"
                 },
                 "pending": {
-                    "string": "Pending"
+                    "string": "Väntar"
                 },
                 "declined": {
-                    "string": "Declined"
+                    "string": "Avböjt"
                 },
                 "tentative": {
-                    "string": "Tentative"
+                    "string": "Preliminärt"
                 }
             },
             "categories": {
-                "string": "Categories"
+                "string": "Kategorier"
             },
             "url": {
                 "string": "URL"
             },
             "visibility": {
-                "string": "Visibility",
+                "string": "Synlighet",
                 "values": {
                     "public": {
-                        "string": "Public"
+                        "string": "Publikt"
                     },
                     "private": {
-                        "string": "Private"
+                        "string": "Privat"
                     },
                     "confidential": {
-                        "string": "Confidential"
+                        "string": "Konfidentiellt"
                     }
                 }
             },
             "showAs": {
-                "string": "Show as",
+                "string": "Visa som",
                 "values": {
                     "busy": {
-                        "string": "Busy"
+                        "string": "Upptagen"
                     },
                     "free": {
-                        "string": "Free"
+                        "string": "Ledig"
                     },
                     "tentative": {
-                        "string": "Tentative"
+                        "string": "Preliminär"
                     },
                     "outOfOffice": {
-                        "string": "Out of office"
+                        "string": "Ej på kontoret"
                     }
                 }
             },
@@ -374,13 +374,13 @@
                 "string": "Status",
                 "values": {
                     "confirmed": {
-                        "string": "Confirmed"
+                        "string": "Bekräftat"
                     },
                     "tentative": {
-                        "string": "Tentative"
+                        "string": "Preliminärt"
                     },
                     "cancelled": {
-                        "string": "Cancelled"
+                        "string": "Inställt"
                     }
                 }
             }
@@ -391,53 +391,53 @@
                     "string": "Kalender"
                 },
                 "placeholder": {
-                    "string": "Select calendar"
+                    "string": "Välj kalender"
                 }
             },
             "title": {
                 "label": {
-                    "string": "Event title"
+                    "string": "Evenemangstitel"
                 },
                 "placeholder": {
-                    "string": "Enter event title"
+                    "string": "Ange evenemangstitel"
                 }
             },
             "allDay": {
                 "label": {
-                    "string": "All day"
+                    "string": "Heldag"
                 }
             },
             "startDate": {
                 "label": {
-                    "string": "Start date"
+                    "string": "Startdatum"
                 }
             },
             "startTime": {
                 "label": {
-                    "string": "Start time"
+                    "string": "Starttid"
                 }
             },
             "endDate": {
                 "label": {
-                    "string": "End date"
+                    "string": "Slutdatum"
                 }
             },
             "endTime": {
                 "label": {
-                    "string": "End time"
+                    "string": "Sluttid"
                 }
             },
             "errors": {
                 "date_order": {
-                    "string": "End date must be on or after the start date."
+                    "string": "Slutdatumet måste ligga på eller efter startdatumet."
                 }
             },
             "timezone": {
                 "label": {
-                    "string": "Timezone (event)"
+                    "string": "Tidszon (evenemang)"
                 },
                 "description": {
-                    "string": "Timezone in which this event's dates are interpreted"
+                    "string": "Tidszonen som evenemangets datum tolkas i"
                 }
             },
             "description": {
@@ -445,55 +445,55 @@
                     "string": "Beskrivning"
                 },
                 "placeholder": {
-                    "string": "Add event details"
+                    "string": "Lägg till information om evenemanget"
                 }
             },
             "location": {
                 "label": {
-                    "string": "Location"
+                    "string": "Plats"
                 },
                 "placeholder": {
-                    "string": "Add location"
+                    "string": "Lägg till plats"
                 }
             },
             "visibility": {
                 "label": {
-                    "string": "Visibility"
+                    "string": "Synlighet"
                 },
                 "placeholder": {
-                    "string": "Select visibility"
+                    "string": "Välj synlighet"
                 },
                 "options": {
                     "public": {
-                        "string": "Public"
+                        "string": "Publikt"
                     },
                     "private": {
-                        "string": "Private"
+                        "string": "Privat"
                     },
                     "confidential": {
-                        "string": "Confidential"
+                        "string": "Konfidentiellt"
                     }
                 }
             },
             "showAs": {
                 "label": {
-                    "string": "Show as"
+                    "string": "Visa som"
                 },
                 "placeholder": {
-                    "string": "Select availability"
+                    "string": "Välj tillgänglighet"
                 },
                 "options": {
                     "busy": {
-                        "string": "Busy"
+                        "string": "Upptagen"
                     },
                     "free": {
-                        "string": "Free"
+                        "string": "Ledig"
                     },
                     "outOfOffice": {
-                        "string": "Out of office"
+                        "string": "Ej på kontoret"
                     },
                     "tentative": {
-                        "string": "Tentative"
+                        "string": "Preliminär"
                     }
                 }
             },
@@ -502,197 +502,197 @@
                     "string": "Status"
                 },
                 "placeholder": {
-                    "string": "Select status"
+                    "string": "Välj status"
                 },
                 "options": {
                     "confirmed": {
-                        "string": "Confirmed"
+                        "string": "Bekräftat"
                     },
                     "tentative": {
-                        "string": "Tentative"
+                        "string": "Preliminärt"
                     },
                     "cancelled": {
-                        "string": "Cancelled"
+                        "string": "Inställt"
                     }
                 }
             },
             "color": {
                 "label": {
-                    "string": "Color"
+                    "string": "Färg"
                 },
                 "reset": {
-                    "string": "Reset"
+                    "string": "Återställ"
                 }
             },
             "categories": {
                 "label": {
-                    "string": "Categories"
+                    "string": "Kategorier"
                 },
                 "placeholder": {
-                    "string": "Add a category and press Enter"
+                    "string": "Lägg till en kategori och tryck på Retur"
                 },
                 "remove": {
-                    "string": "Remove {category}"
+                    "string": "Ta bort {category}"
                 }
             },
             "attendees": {
                 "label": {
-                    "string": "Attendees"
+                    "string": "Deltagare"
                 },
                 "title": {
-                    "string": "Participants"
+                    "string": "Deltagare"
                 },
                 "add": {
-                    "string": "Add participant"
+                    "string": "Lägg till deltagare"
                 },
                 "emailPlaceholder": {
                     "string": "email@example.com"
                 },
                 "namePlaceholder": {
-                    "string": "Name (optional)"
+                    "string": "Namn (valfritt)"
                 },
                 "remove": {
-                    "string": "Remove {email}"
+                    "string": "Ta bort {email}"
                 },
                 "search_placeholder": {
-                    "string": "Search by name or email..."
+                    "string": "Sök på namn eller e-post..."
                 },
                 "invalid_email": {
-                    "string": "Please enter a valid email address"
+                    "string": "Ange en giltig e-postadress"
                 },
                 "already_added": {
-                    "string": "This participant has already been added"
+                    "string": "Denna deltagare har redan lagts till"
                 },
                 "max_reached": {
-                    "string": "Maximum {max} participants reached"
+                    "string": "Högst {max} deltagare har lagts till"
                 },
                 "add_email_direct": {
-                    "string": "Add \"{email}\" directly"
+                    "string": "Lägg till \"{email}\" direkt"
                 },
                 "no_data": {
-                    "string": "No availability data"
+                    "string": "Ingen tillgänglighetsdata"
                 },
                 "legend_free": {
-                    "string": "Available"
+                    "string": "Tillgänglig"
                 },
                 "legend_busy": {
-                    "string": "Busy"
+                    "string": "Upptagen"
                 },
                 "legend_tentative": {
-                    "string": "Tentative"
+                    "string": "Preliminär"
                 },
                 "legend_non_working": {
-                    "string": "Non-working hours"
+                    "string": "Utanför arbetstid"
                 },
                 "optimal_slot": {
-                    "string": "Suggested window"
+                    "string": "Föreslaget fönster"
                 },
                 "timeline_hour": {
-                    "string": "{hour}h"
+                    "string": "{hour} tim"
                 },
                 "scroll_horizontal_hint": {
-                    "string": "Scroll horizontally"
+                    "string": "Rulla vågrätt"
                 },
                 "tooltip_slot_busy": {
-                    "string": "Busy"
+                    "string": "Upptagen"
                 },
                 "tooltip_slot_free": {
-                    "string": "{name} · free · {time}"
+                    "string": "{name} · ledig · {time}"
                 },
                 "tooltip_slot_optimal": {
-                    "string": "Part of the suggested {duration}-min window · {time}"
+                    "string": "Del av det föreslagna {duration}-min-fönstret · {time}"
                 }
             },
             "reminders": {
                 "label": {
-                    "string": "Reminders"
+                    "string": "Påminnelser"
                 },
                 "add": {
-                    "string": "Add reminder"
+                    "string": "Lägg till påminnelse"
                 },
                 "minutesBefore": {
-                    "string": "min before"
+                    "string": "min före"
                 },
                 "remove": {
-                    "string": "Remove reminder"
+                    "string": "Ta bort påminnelse"
                 },
                 "methods": {
                     "popup": {
                         "string": "Popup"
                     },
                     "email": {
-                        "string": "Email"
+                        "string": "E-post"
                     }
                 }
             },
             "recurrence": {
                 "repeat": {
-                    "string": "Repeat"
+                    "string": "Upprepa"
                 },
                 "every": {
-                    "string": "Every"
+                    "string": "Var"
                 },
                 "on": {
-                    "string": "On"
+                    "string": "På"
                 },
                 "onDay": {
-                    "string": "On day"
+                    "string": "På dag"
                 },
                 "ofTheMonth": {
-                    "string": "of the month"
+                    "string": "i månaden"
                 },
                 "ends": {
-                    "string": "Ends"
+                    "string": "Slutar"
                 },
                 "occurrences": {
-                    "string": "occurrences"
+                    "string": "gånger"
                 },
                 "days": {
                     "mo": {
-                        "string": "Mon"
+                        "string": "Mån"
                     },
                     "tu": {
-                        "string": "Tue"
+                        "string": "Tis"
                     },
                     "we": {
-                        "string": "Wed"
+                        "string": "Ons"
                     },
                     "th": {
-                        "string": "Thu"
+                        "string": "Tors"
                     },
                     "fr": {
-                        "string": "Fri"
+                        "string": "Fre"
                     },
                     "sa": {
-                        "string": "Sat"
+                        "string": "Lör"
                     },
                     "su": {
-                        "string": "Sun"
+                        "string": "Sön"
                     }
                 },
                 "frequencies": {
                     "daily": {
-                        "string": "Day(s)"
+                        "string": "Dag(ar)"
                     },
                     "weekly": {
-                        "string": "Week(s)"
+                        "string": "Vecka(or)"
                     },
                     "monthly": {
-                        "string": "Month(s)"
+                        "string": "Månad(er)"
                     },
                     "yearly": {
-                        "string": "Year(s)"
+                        "string": "År"
                     }
                 },
                 "endTypes": {
                     "never": {
-                        "string": "Never"
+                        "string": "Aldrig"
                     },
                     "on": {
-                        "string": "On"
+                        "string": "Den"
                     },
                     "after": {
-                        "string": "After"
+                        "string": "Efter"
                     }
                 }
             },
@@ -708,10 +708,10 @@
                 "string": "Avbryt"
             },
             "create": {
-                "string": "Create Event"
+                "string": "Skapa evenemang"
             },
             "update": {
-                "string": "Update Event"
+                "string": "Uppdatera evenemang"
             }
         },
         "common": {
@@ -722,90 +722,90 @@
         "forms": {
             "createCalendar": {
                 "title": {
-                    "string": "Create New Calendar"
+                    "string": "Skapa ny kalender"
                 },
                 "defaultEventDuration": {
-                    "string": "Default Event Duration"
+                    "string": "Standardlängd för evenemang"
                 },
                 "nameLabel": {
-                    "string": "Calendar Name"
+                    "string": "Kalendernamn"
                 },
                 "namePlaceholder": {
-                    "string": "My Calendar"
+                    "string": "Min kalender"
                 },
                 "colorLabel": {
-                    "string": "Color"
+                    "string": "Färg"
                 },
                 "description": {
                     "string": "Beskrivning"
                 },
                 "descriptionPlaceholder": {
-                    "string": "Add description to calendar"
+                    "string": "Lägg till beskrivning av kalendern"
                 },
                 "eventDuration": {
-                    "string": "Event Duration"
+                    "string": "Evenemangslängd"
                 },
                 "eventNotifications": {
-                    "string": "Event Notifications"
+                    "string": "Evenemangsaviseringar"
                 },
                 "allDayNotifications": {
-                    "string": "All-day event notifications"
+                    "string": "Aviseringar för heldagsevenemang"
                 },
                 "addNotification": {
-                    "string": "Add notification"
+                    "string": "Lägg till avisering"
                 },
                 "showBusyStatus": {
-                    "string": "Show others when I'm busy"
+                    "string": "Visa för andra när jag är upptagen"
                 },
                 "atTimeOfEvent": {
-                    "string": "at time of event"
+                    "string": "vid tidpunkten för evenemanget"
                 },
                 "fiveMinutes": {
-                    "string": "5 minutes before"
+                    "string": "5 minuter före"
                 },
                 "fifteenMinutes": {
-                    "string": "15 minutes before"
+                    "string": "15 minuter före"
                 },
                 "thirtyMinutesBefore": {
-                    "string": "30 minutes before"
+                    "string": "30 minuter före"
                 },
                 "oneHourBefore": {
-                    "string": "1 hour before"
+                    "string": "1 timme före"
                 },
                 "dayBefore": {
-                    "string": "day before"
+                    "string": "dagen före"
                 },
                 "notification": {
-                    "string": "notification"
+                    "string": "avisering"
                 },
                 "email": {
-                    "string": "e-mail"
+                    "string": "e-post"
                 },
                 "delete": {
                     "string": "Ta bort"
                 },
                 "at": {
-                    "string": "at"
+                    "string": "kl."
                 },
                 "durationOptions": {
                     "thirtyMinutes": {
-                        "string": "30 minutes"
+                        "string": "30 minuter"
                     },
                     "oneHour": {
-                        "string": "1 hour"
+                        "string": "1 timme"
                     },
                     "twoHours": {
-                        "string": "2 hours"
+                        "string": "2 timmar"
                     },
                     "allDay": {
-                        "string": "All day"
+                        "string": "Heldag"
                     }
                 },
                 "saving": {
-                    "string": "Creating..."
+                    "string": "Skapar..."
                 },
                 "submit": {
-                    "string": "Create Calendar"
+                    "string": "Skapa kalender"
                 },
                 "cancel": {
                     "string": "Avbryt"
@@ -816,96 +816,96 @@
             },
             "editCalendar": {
                 "title": {
-                    "string": "Edit Calendar"
+                    "string": "Redigera kalender"
                 },
                 "nameLabel": {
-                    "string": "Calendar Name"
+                    "string": "Kalendernamn"
                 },
                 "colorLabel": {
-                    "string": "Color"
+                    "string": "Färg"
                 },
                 "description": {
                     "string": "Beskrivning"
                 },
                 "descriptionPlaceholder": {
-                    "string": "Add description to calendar"
+                    "string": "Lägg till beskrivning av kalendern"
                 },
                 "eventDuration": {
-                    "string": "Event Duration"
+                    "string": "Evenemangslängd"
                 },
                 "eventNotifications": {
-                    "string": "Event Notifications"
+                    "string": "Evenemangsaviseringar"
                 },
                 "allDayNotifications": {
-                    "string": "All-day event notifications"
+                    "string": "Aviseringar för heldagsevenemang"
                 },
                 "addNotification": {
-                    "string": "Add notification"
+                    "string": "Lägg till avisering"
                 },
                 "showBusyStatus": {
-                    "string": "Show others when I'm busy"
+                    "string": "Visa för andra när jag är upptagen"
                 },
                 "atTimeOfEvent": {
-                    "string": "at time of event"
+                    "string": "vid tidpunkten för evenemanget"
                 },
                 "fiveMinutes": {
-                    "string": "5 minutes before"
+                    "string": "5 minuter före"
                 },
                 "fifteenMinutes": {
-                    "string": "15 minutes before"
+                    "string": "15 minuter före"
                 },
                 "thirtyMinutesBefore": {
-                    "string": "30 minutes before"
+                    "string": "30 minuter före"
                 },
                 "oneHourBefore": {
-                    "string": "1 hour before"
+                    "string": "1 timme före"
                 },
                 "dayBefore": {
-                    "string": "day before"
+                    "string": "dagen före"
                 },
                 "notification": {
-                    "string": "notification"
+                    "string": "avisering"
                 },
                 "email": {
-                    "string": "e-mail"
+                    "string": "e-post"
                 },
                 "delete": {
                     "string": "Ta bort"
                 },
                 "at": {
-                    "string": "at"
+                    "string": "kl."
                 },
                 "durationOptions": {
                     "thirtyMinutes": {
-                        "string": "30 minutes"
+                        "string": "30 minuter"
                     },
                     "oneHour": {
-                        "string": "1 hour"
+                        "string": "1 timme"
                     },
                     "twoHours": {
-                        "string": "2 hours"
+                        "string": "2 timmar"
                     },
                     "allDay": {
-                        "string": "All day"
+                        "string": "Heldag"
                     }
                 },
                 "submit": {
-                    "string": "Save Changes"
+                    "string": "Spara ändringar"
                 },
                 "cancel": {
                     "string": "Avbryt"
                 }
             },
             "editEvent": {
-                "string": "Edit event"
+                "string": "Redigera evenemang"
             },
             "deleteEvent": {
                 "confirm": {
                     "title": {
-                        "string": "Delete event?"
+                        "string": "Radera evenemanget?"
                     },
                     "description": {
-                        "string": "This action cannot be undone."
+                        "string": "Denna åtgärd kan inte ångras."
                     },
                     "button": {
                         "string": "Ta bort"
@@ -914,10 +914,10 @@
             },
             "deleteCalendar": {
                 "title": {
-                    "string": "Delete Calendar"
+                    "string": "Radera kalender"
                 },
                 "message": {
-                    "string": "Are you sure you want to delete this calendar? This action cannot be undone."
+                    "string": "Är du säker på att du vill radera denna kalender? Denna åtgärd kan inte ångras."
                 },
                 "confirm": {
                     "string": "Ta bort"
@@ -929,50 +929,50 @@
         },
         "share": {
             "title": {
-                "string": "Calendar Sharing"
+                "string": "Kalenderdelning"
             },
             "description": {
-                "string": "Share this calendar with other users. Shared users can see events based on the permission level you grant."
+                "string": "Dela denna kalender med andra användare. Användare som du delar med kan se evenemang beroende på vilken behörighetsnivå du ger dem."
             },
             "addUser": {
-                "string": "Add User"
+                "string": "Lägg till användare"
             },
             "searchPlaceholder": {
-                "string": "Search by name or email..."
+                "string": "Sök på namn eller e-post..."
             },
             "addButton": {
-                "string": "Share"
+                "string": "Dela"
             },
             "added": {
-                "string": "Calendar shared successfully"
+                "string": "Kalendern delades"
             },
             "addError": {
-                "string": "Failed to share calendar"
+                "string": "Kunde inte dela kalendern"
             },
             "removed": {
-                "string": "Share removed successfully"
+                "string": "Delningen togs bort"
             },
             "removeError": {
-                "string": "Failed to remove share"
+                "string": "Kunde inte ta bort delningen"
             },
             "removeButton": {
                 "string": "Ta bort"
             },
             "existingShares": {
-                "string": "Shared with"
+                "string": "Delad med"
             },
             "noShares": {
-                "string": "This calendar is not shared with anyone yet."
+                "string": "Denna kalender är inte delad med någon ännu."
             },
             "table": {
                 "user": {
-                    "string": "User"
+                    "string": "Användare"
                 },
                 "level": {
-                    "string": "Permission Level"
+                    "string": "Behörighetsnivå"
                 },
                 "canCreate": {
-                    "string": "Can Create"
+                    "string": "Kan skapa"
                 }
             }
         }

@@ -1,37 +1,37 @@
 {
     "AP_BACKUP": {
         "title": {
-            "string": "Backup Automation"
+            "string": "Säkerhetskopiering"
         },
         "description": {
-            "string": "Manage database and mailstore backups with retention policies and optional S3 upload."
+            "string": "Hantera säkerhetskopior av databas och e-postlager med lagringsprinciper och valfri S3-uppladdning."
         },
         "trigger": {
             "button": {
-                "string": "Trigger Backup"
+                "string": "Starta säkerhetskopiering"
             },
             "running": {
-                "string": "Running..."
+                "string": "Kör..."
             },
             "success": {
-                "string": "Backup completed"
+                "string": "Säkerhetskopieringen slutfördes"
             },
             "error": {
-                "string": "Backup failed"
+                "string": "Säkerhetskopieringen misslyckades"
             }
         },
         "config": {
             "retention": {
-                "string": "Retention"
+                "string": "Lagringstid"
             },
             "s3": {
-                "string": "S3 Upload"
+                "string": "S3-uppladdning"
             },
             "mailstore": {
-                "string": "Mailstore"
+                "string": "E-postlager"
             },
             "total": {
-                "string": "Total Backups"
+                "string": "Totalt antal säkerhetskopior"
             }
         },
         "table": {
@@ -39,7 +39,7 @@
                 "string": "ID"
             },
             "timestamp": {
-                "string": "Timestamp"
+                "string": "Tidsstämpel"
             },
             "type": {
                 "string": "Typ"
@@ -48,13 +48,13 @@
                 "string": "Status"
             },
             "size": {
-                "string": "Size"
+                "string": "Storlek"
             },
             "duration": {
-                "string": "Duration"
+                "string": "Längd"
             },
             "empty": {
-                "string": "No backups yet."
+                "string": "Inga säkerhetskopior ännu."
             }
         }
     }

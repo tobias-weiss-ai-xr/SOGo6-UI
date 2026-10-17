@@ -1,36 +1,36 @@
 {
     "US_GENERAL": {
         "title": {
-            "string": "General Settings",
+            "string": "Allmänna inställningar",
             "context": "Title for the general settings page"
         },
         "labels": {
             "language": {
-                "string": "Language"
+                "string": "Språk"
             },
             "timezone": {
-                "string": "Timezone"
+                "string": "Tidszon"
             },
             "short_date_style": {
-                "string": "Short Date Style"
+                "string": "Kort datumformat"
             },
             "long_date_style": {
-                "string": "Long Date Style"
+                "string": "Långt datumformat"
             },
             "time_style": {
-                "string": "Time Style"
+                "string": "Tidsformat"
             },
             "default_view": {
-                "string": "Default View"
+                "string": "Standardvy"
             },
             "refresh_frequency": {
-                "string": "Refresh Frequency"
+                "string": "Uppdateringsfrekvens"
             },
             "enable_notifications": {
-                "string": "Enable Notifications"
+                "string": "Aktivera aviseringar"
             },
             "saved": {
-                "string": "General settings saved"
+                "string": "Allmänna inställningar sparade"
             },
             "mail": {
                 "string": "E-post"
@@ -42,39 +42,39 @@
                 "string": "Kontakter"
             },
             "last": {
-                "string": "Last displayed module"
+                "string": "Senast visad modul"
             },
             "enable_external_avatar": {
-                "string": "Enable external avatar"
+                "string": "Aktivera extern avatar"
             }
         },
         "descriptions": {
             "language": {
-                "string": "The language used in the app."
+                "string": "Språket som används i appen."
             },
             "timezone": {
-                "string": "The time zone you are in."
+                "string": "Den tidszon du befinner dig i."
             },
             "short_date_style": {
-                "string": "How dates are displayed in the app."
+                "string": "Hur datum visas i appen."
             },
             "long_date_style": {
-                "string": "How dates are displayed in the app."
+                "string": "Hur datum visas i appen."
             },
             "time_style": {
-                "string": "How time is displayed in the app."
+                "string": "Hur tid visas i appen."
             },
             "default_view": {
-                "string": "The default view when you open the app."
+                "string": "Vyn som öppnas som standard när du startar appen."
             },
             "refresh_frequency": {
-                "string": " How often the app should check for new emails, calendar events, and more."
+                "string": " Hur ofta appen ska leta efter nya e-postmeddelanden, kalenderhändelser med mera."
             },
             "enable_notifications": {
-                "string": "Receive notifications for new emails, calendar events, and more."
+                "string": "Få aviseringar om nya e-postmeddelanden, kalenderhändelser med mera."
             },
             "enable_external_avatar": {
-                "string": "Enable external avatar (e.g., Gravatar)"
+                "string": "Aktivera extern avatar (t.ex. Gravatar)"
             }
         }
     }

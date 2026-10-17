@@ -1,50 +1,50 @@
 {
     "US_MAIL_EXTERNAL_ACCOUNTS": {
         "title": {
-            "string": "External Accounts"
+            "string": "Externa konton"
         },
         "sections": {
             "imap": {
-                "string": "Incoming Mail (IMAP)"
+                "string": "Inkommande e-post (IMAP)"
             },
             "smtp": {
-                "string": "Outgoing Mail (SMTP)"
+                "string": "Utgående e-post (SMTP)"
             },
             "identity": {
-                "string": "Identities"
+                "string": "Identiteter"
             },
             "preferences": {
-                "string": "Preferences"
+                "string": "Inställningar"
             },
             "certificate": {
-                "string": "S/MIME Certificate"
+                "string": "S/MIME-certifikat"
             },
             "receipts": {
-                "string": "Receipts",
+                "string": "Kvitton",
                 "description": "When I receive a request for a return receipt"
             }
         },
         "list": {
             "title": {
-                "string": "Your external Accounts"
+                "string": "Dina externa konton"
             },
             "add_button": {
-                "string": "Add Account"
+                "string": "Lägg till konto"
             },
             "edit_button": {
                 "string": "Redigera"
             },
             "edit_button_aria": {
-                "string": "Edit account {email}"
+                "string": "Redigera kontot {email}"
             },
             "delete_button_aria": {
-                "string": "Delete account {email}"
+                "string": "Radera kontot {email}"
             },
             "delete_confirm_title": {
                 "string": "{name}"
             },
             "delete_confirm_desc": {
-                "string": "Are you sure you want to delete {name}? This action cannot be undone."
+                "string": "Är du säker på att du vill radera {name}? Denna åtgärd kan inte ångras."
             },
             "cancel_button": {
                 "string": "Avbryt"
@@ -53,47 +53,47 @@
                 "string": "Ta bort"
             },
             "empty": {
-                "string": "No IMAP accounts configured yet. Add your first account to get started."
+                "string": "Inga IMAP-konton konfigurerade ännu. Lägg till ditt första konto för att komma igång."
             }
         },
         "edit": {
             "title": {
-                "string": "Edit External Account"
+                "string": "Redigera externt konto"
             },
             "back_button": {
-                "string": "Back to list"
+                "string": "Tillbaka till listan"
             },
             "readonly_notice": {
-                "string": "Most settings are read-only."
+                "string": "De flesta inställningar är skrivskyddade."
             }
         },
         "new": {
             "title": {
-                "string": "New External Account"
+                "string": "Nytt externt konto"
             },
             "description": {
-                "string": "Configure a new external IMAP account"
+                "string": "Konfigurera ett nytt externt IMAP-konto"
             },
             "back_button": {
                 "string": "Avbryt"
             },
             "create_button": {
-                "string": "Create Account"
+                "string": "Skapa konto"
             }
         },
         "labels": {
-            "name": "Name",
-            "email": "Email",
-            "replyTo": "Reply to",
+            "name": "Namn",
+            "email": "E-post",
+            "replyTo": "Svara till",
             "receipts": {
-                "never": "Never",
-                "always": "Always",
-                "ask": "Ask",
-                "neverSend": "Never send a return receipt",
-                "allowSome": "Allow return receipts for some messages",
-                "notToCc": "If I'm not in the To or Cc of the message",
-                "outsideDomain": "If the sender is outside my domain",
-                "other": "In all other cases"
+                "never": "Aldrig",
+                "always": "Alltid",
+                "ask": "Fråga",
+                "neverSend": "Skicka aldrig läskvitto",
+                "allowSome": "Tillåt läskvitton för vissa meddelanden",
+                "notToCc": "Om jag inte står som mottagare eller kopia i meddelandet",
+                "outsideDomain": "Om avsändaren är utanför min domän",
+                "other": "I alla andra fall"
             },
             "server": {
                 "string": "Server"
@@ -102,53 +102,53 @@
                 "string": "Port"
             },
             "encryption": {
-                "string": "Encryption"
+                "string": "Kryptering"
             },
             "authType": {
-                "string": "Authentication type"
+                "string": "Autentiseringstyp"
             },
             "smtpServer": {
-                "string": "SMTP Server"
+                "string": "SMTP-server"
             },
             "smtpPort": {
                 "string": "Port"
             },
             "smtpAuth": {
-                "string": "SMTP Authentication"
+                "string": "SMTP-autentisering"
             },
             "smtpEncryption": {
-                "string": "SMTP Encryption"
+                "string": "SMTP-kryptering"
             },
             "username": {
-                "string": "Username"
+                "string": "Användarnamn"
             },
             "password": {
-                "string": "Password"
+                "string": "Lösenord"
             },
             "useDefaultIdentity": {
-                "string": "Always use default identity for this account"
+                "string": "Använd alltid standardidentiteten för detta konto"
             },
             "readReceipts": {
-                "string": "Read Receipts"
+                "string": "Läskvitton"
             },
             "certificateName": {
-                "string": "Certificate Name"
+                "string": "Certifikatnamn"
             },
             "certificateFingerprint": {
-                "string": "Certificate Fingerprint"
+                "string": "Certifikatets fingeravtryck"
             },
             "certificateFile": {
-                "string": "S/MIME Certificate File"
+                "string": "S/MIME-certifikatfil"
             },
             "certificatePassword": {
-                "string": "Certificate Import Password"
+                "string": "Lösenord för certifikatimport"
             },
             "selectedFile": {
-                "string": "Selected file"
+                "string": "Vald fil"
             }
         },
         "placeholders": {
-            "nameAccount": "Work account",
+            "nameAccount": "Jobbkonto",
             "imapServer": {
                 "string": "imap.example.com"
             },
@@ -159,34 +159,34 @@
                 "string": "user@example.com"
             },
             "password": {
-                "string": "Enter your password"
+                "string": "Ange ditt lösenord"
             },
             "certificateName": {
-                "string": "My S/MIME Certificate"
+                "string": "Mitt S/MIME-certifikat"
             },
             "certificateFingerprint": {
-                "string": "Auto-generated after certificate upload"
+                "string": "Skapas automatiskt efter att certifikatet laddats upp"
             },
             "certificatePassword": {
-                "string": "Enter certificate import password"
+                "string": "Ange lösenordet för certifikatimporten"
             },
-            "signatureName": "Name"
+            "signatureName": "Namn"
         },
         "description": {
             "useDefaultIdentity": {
-                "string": "When composing messages, your default identity will be used instead of the account-specific one"
+                "string": "När du skriver meddelanden används din standardidentitet i stället för kontots egna"
             },
             "password": {
-                "string": "Your account password (stored securely)"
+                "string": "Ditt kontolösenord (lagras säkert)"
             },
             "certificateName": {
-                "string": "Name of the certificate"
+                "string": "Certifikatets namn"
             },
             "certificateFile": {
-                "string": "Upload your S/MIME certificate file"
+                "string": "Ladda upp din S/MIME-certifikatfil"
             },
             "certificatePassword": {
-                "string": "Password required to import the certificate file"
+                "string": "Lösenord som krävs för att importera certifikatfilen"
             }
         },
         "encryption": {
@@ -202,18 +202,18 @@
         },
         "readReceipts": {
             "never": {
-                "string": "Never send read receipts"
+                "string": "Skicka aldrig läskvitton"
             },
             "selective": {
-                "string": "Allow sending read receipts for certain messages"
+                "string": "Tillåt att läskvitton skickas för vissa meddelanden"
             }
         },
         "aria": {
             "show_password": {
-                "string": "Show password"
+                "string": "Visa lösenordet"
             },
             "hide_password": {
-                "string": "Hide password"
+                "string": "Dölj lösenordet"
             }
         },
         "tabs": {
@@ -221,7 +221,7 @@
                 "string": "Inställningar"
             },
             "security": {
-                "string": "Security"
+                "string": "Säkerhet"
             }
         },
         "notifications": {
@@ -230,13 +230,13 @@
                     "string": "Framgång"
                 },
                 "created": {
-                    "string": "IMAP account created successfully"
+                    "string": "IMAP-kontot skapades"
                 },
                 "updated": {
-                    "string": "IMAP account updated successfully"
+                    "string": "IMAP-kontot uppdaterades"
                 },
                 "deleted": {
-                    "string": "Account deleted successfully"
+                    "string": "Kontot raderades"
                 }
             },
             "errors_api": {
@@ -244,24 +244,24 @@
                     "string": "Fel"
                 },
                 "load_failed": {
-                    "string": "Failed to load external accounts. Please try again later."
+                    "string": "Kunde inte läsa in externa konton. Försök igen senare."
                 },
                 "create_failed": {
-                    "string": "Failed to create external account. Please try again."
+                    "string": "Kunde inte skapa det externa kontot. Försök igen."
                 },
                 "update_failed": {
-                    "string": "Failed to update external account. Please try again."
+                    "string": "Kunde inte uppdatera det externa kontot. Försök igen."
                 },
                 "delete_failed": {
-                    "string": "Failed to delete account. Please try again."
+                    "string": "Kunde inte radera kontot. Försök igen."
                 }
             }
         },
         "validation": {
-            "required": "Required",
-            "server-required": "Server address is required",
-            "server-invalid": "Must be a valid hostname or IP address",
-            "port-required": "Port is required"
+            "required": "Obligatoriskt",
+            "server-required": "Serveradress krävs",
+            "server-invalid": "Måste vara ett giltigt värdnamn eller en giltig IP-adress",
+            "port-required": "Port krävs"
         }
     }
 }
