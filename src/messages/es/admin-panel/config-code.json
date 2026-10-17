@@ -11,16 +11,16 @@
                 "string": "Current Configuración"
             },
             "copy": {
-                "string": "Copy"
+                "string": "Copiar"
             },
             "copied": {
-                "string": "Copied!"
+                "string": "¡Copiado!"
             },
             "download": {
-                "string": "Download JSON"
+                "string": "Descargar JSON"
             },
             "success": {
-                "string": "Downloaded"
+                "string": "Descargado"
             }
         },
         "import": {
@@ -31,38 +31,38 @@
                 "string": "Descripción"
             },
             "description_placeholder": {
-                "string": "e.g. Update mail server settings"
+                "string": "p. ej., Actualizar la configuración del servidor de correo"
             },
             "placeholder": {
-                "string": "Paste JSON configuration here..."
+                "string": "Pegue aquí la configuración JSON..."
             },
             "button": {
                 "string": "Apply Configuración"
             },
             "running": {
-                "string": "Applying..."
+                "string": "Aplicando..."
             },
             "success": {
-                "string": "Configuration v{{version}} applied"
+                "string": "Configuración v{{version}} aplicada"
             },
             "error": {
-                "string": "Import failed"
+                "string": "Error en la importación"
             }
         },
         "history": {
             "title": {
-                "string": "Version History"
+                "string": "Historial de versiones"
             },
             "empty": {
-                "string": "No configuration snapshots yet."
+                "string": "Aún no hay instantáneas de configuración."
             }
         },
         "errors": {
             "empty": {
-                "string": "Configuration JSON is empty"
+                "string": "La configuración JSON está vacía"
             },
             "parse": {
-                "string": "Invalid JSON — please check syntax"
+                "string": "JSON no válido — compruebe la sintaxis"
             }
         }
     }

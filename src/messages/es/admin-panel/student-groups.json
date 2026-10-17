@@ -4,14 +4,14 @@
             "string": "Gestión de grupos de estudiantes"
         },
         "description": {
-            "string": "Manage student groups, course mailing lists, and enrollment"
+            "string": "Gestione grupos de estudiantes, listas de correo de cursos y matrículas"
         },
         "errors": {
             "name": {
-                "string": "Group name required"
+                "string": "El nombre del grupo es obligatorio"
             },
             "fail": {
-                "string": "Operation failed"
+                "string": "Error en la operación"
             }
         },
         "success": {
@@ -21,23 +21,23 @@
         },
         "field": {
             "name": {
-                "string": "Group Name"
+                "string": "Nombre del grupo"
             },
             "course": {
-                "string": "Course Code"
+                "string": "Código del curso"
             }
         },
         "button": {
             "create": {
-                "string": "Create Group"
+                "string": "Crear grupo"
             }
         },
         "label": {
             "none": {
-                "string": "None"
+                "string": "Ninguno"
             },
             "students": {
-                "string": "students"
+                "string": "estudiantes"
             }
         }
     }

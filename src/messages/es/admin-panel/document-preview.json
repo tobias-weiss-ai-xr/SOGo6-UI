@@ -4,11 +4,11 @@
             "string": "Vista previa de documentos"
         },
         "description": {
-            "string": "Preview PDF and Office documents in-browser. PDFs render natively; Office docs use Collabora/OnlyOffice."
+            "string": "Vista previa de documentos PDF y Office en el navegador. Los PDF se renderizan de forma nativa; los documentos de Office usan Collabora/OnlyOffice."
         },
         "upload": {
             "dropzone": {
-                "string": "Click to upload or drag a document"
+                "string": "Haga clic para subir o arrastre un documento"
             }
         },
         "settings": {
@@ -16,18 +16,18 @@
                 "string": "Ajustes"
             },
             "title": {
-                "string": "Preview Settings"
+                "string": "Ajustes de vista previa"
             },
             "collabora_url": {
-                "string": "Collabora/OnlyOffice URL"
+                "string": "URL de Collabora/OnlyOffice"
             },
             "hint": {
-                "string": "The base URL of your Collabora or OnlyOffice server. Leave default for demo mode."
+                "string": "La URL base de su servidor Collabora o OnlyOffice. Deje el valor predeterminado para el modo de demostración."
             }
         },
         "errors": {
             "unsupported": {
-                "string": "Unsupported file type. Use .pdf, .docx, .xlsx, or .pptx"
+                "string": "Tipo de archivo no compatible. Use .pdf, .docx, .xlsx o .pptx"
             }
         }
     }

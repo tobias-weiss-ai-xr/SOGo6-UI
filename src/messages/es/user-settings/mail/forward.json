@@ -27,7 +27,7 @@
                 "string": "Reenviar automáticamente los nuevos mensajes"
             },
             "email": {
-                "string": "Forward to these addresses (up to {max} addresses). Add multiple addresses separated by comma, semicolon, or press Enter/Tab."
+                "string": "Reenviar a estas direcciones (hasta {max} direcciones). Añada varias direcciones separadas por comas, punto y coma, o pulse Intro/Tabulación."
             }
         },
         "help": {
@@ -46,20 +46,20 @@
                     "string": "Introduzca una dirección de correo válida"
                 },
                 "duplicate": {
-                    "string": "This address is already in the list"
+                    "string": "Esta dirección ya está en la lista"
                 }
             },
             "emails": {
                 "list": {
-                    "string": "There was an error with one or more email addresses"
+                    "string": "Hubo un problema con una o más direcciones de correo"
                 }
             },
             "max_reached": {
-                "string": "Maximum {max} addresses allowed"
+                "string": "Máximo de {max} direcciones permitidas"
             },
             "validation": {
                 "addresses_required": {
-                    "string": "At least one email address is required when forwarding is enabled."
+                    "string": "Se requiere al menos una dirección de correo cuando el reenvío está activado."
                 }
             }
         },
@@ -70,10 +70,10 @@
         },
         "tooltip": {
             "always_forward": {
-                "string": "Incoming mail is forwarded before applying your filters."
+                "string": "El correo entrante se reenvía antes de aplicar sus filtros."
             },
             "keep_copy": {
-                "string": "Keep a copy of forwarded messages in your inbox. Useful if you want to maintain a local archive."
+                "string": "Conserva una copia de los mensajes reenviados en su bandeja de entrada. Útil si desea mantener un archivo local."
             }
         },
         "errors_api": {
@@ -81,10 +81,10 @@
                 "string": "Error"
             },
             "save_failed": {
-                "string": "Couldn't save your changes, try again"
+                "string": "No se pudieron guardar los cambios; inténtelo de nuevo"
             },
             "load_failed": {
-                "string": "Could not load forwarding settings. Please try again later."
+                "string": "No se pudieron cargar los ajustes de reenvío. Inténtelo de nuevo más tarde."
             },
             "feature_disabled": {
                 "string": "El reenvío ha sido desactivado por su administrador."
@@ -100,10 +100,10 @@
         },
         "aria": {
             "tags_count": {
-                "string": "{count} of {max} email addresses added"
+                "string": "{count} de {max} direcciones de correo añadidas"
             },
             "remove_email": {
-                "string": "Remove {email}"
+                "string": "Quitar {email}"
             },
             "email_input_group": {
                 "string": "Email addresses for forwardando"

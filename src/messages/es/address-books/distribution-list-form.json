@@ -45,7 +45,7 @@
             "context": "Button to add manual email field"
         },
         "remove_email": {
-            "string": "Remove email",
+            "string": "Quitar correo",
             "context": "Aria label for removing manual email field"
         },
         "create": {
@@ -62,7 +62,7 @@
         },
         "fields": {
             "name": {
-                "string": "List name"
+                "string": "Nombre de la lista"
             },
             "note": {
                 "string": "Descripción"
@@ -70,10 +70,10 @@
         },
         "delete_dialog": {
             "title": {
-                "string": "Delete distribution list?"
+                "string": "¿Eliminar la lista de distribución?"
             },
             "description": {
-                "string": "This distribution list will be permanently removed from your address book."
+                "string": "Esta lista de distribución se eliminará permanentemente de su libreta de direcciones."
             },
             "confirm": {
                 "string": "Eliminar"

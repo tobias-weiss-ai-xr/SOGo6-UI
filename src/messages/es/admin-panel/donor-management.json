@@ -4,27 +4,27 @@
             "string": "Gestión de comunicación de donantes"
         },
         "description": {
-            "string": "Track donors, manage GDPR consent, generate tax receipts, and run campaigns"
+            "string": "Gestione donantes, consentimientos RGPD, genere recibos fiscales y realice campañas"
         },
         "errors": {
             "fields": {
                 "string": "Required fields missando"
             },
             "fail": {
-                "string": "Operation failed"
+                "string": "Error en la operación"
             }
         },
         "success": {
             "create": {
-                "string": "Donor registered"
+                "string": "Donante registrado"
             },
             "donate": {
-                "string": "Donation recorded"
+                "string": "Donación registrada"
             }
         },
         "register": {
             "title": {
-                "string": "Register Donor"
+                "string": "Registrar donante"
             }
         },
         "donate": {
@@ -32,30 +32,30 @@
                 "string": "Record Donación"
             },
             "select": {
-                "string": "Select donor..."
+                "string": "Seleccionar donante..."
             },
             "campaign": {
-                "string": "Campaign"
+                "string": "Campaña"
             }
         },
         "field": {
             "name": {
-                "string": "Name"
+                "string": "Nombre"
             },
             "email": {
-                "string": "Email"
+                "string": "Correo"
             },
             "type": {
-                "string": "Type"
+                "string": "Tipo"
             },
             "total": {
                 "string": "Total"
             },
             "donations": {
-                "string": "Donations"
+                "string": "Donaciones"
             },
             "consent": {
-                "string": "GDPR"
+                "string": "RGPD"
             }
         },
         "type": {
@@ -63,7 +63,7 @@
                 "string": "Individual"
             },
             "corporate": {
-                "string": "Corporate"
+                "string": "Corporativo"
             },
             "foundation": {
                 "string": "Foundación"
@@ -79,21 +79,21 @@
         },
         "stats": {
             "title": {
-                "string": "Statistics"
+                "string": "Estadísticas"
             },
             "total_donors": {
-                "string": "Total Donors"
+                "string": "Total de donantes"
             },
             "total_raised": {
-                "string": "Total Raised"
+                "string": "Total recaudado"
             }
         },
         "list": {
             "title": {
-                "string": "All Donors"
+                "string": "Todos los donantes"
             },
             "empty": {
-                "string": "No donors registered yet"
+                "string": "Aún no hay donantes registrados"
             }
         }
     }

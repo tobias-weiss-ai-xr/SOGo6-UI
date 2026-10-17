@@ -41,23 +41,23 @@
             "context": "Toast message when content is copied successfully."
         },
         "copied_value": {
-            "string": "Copied: {value}",
+            "string": "Copiado: {value}",
             "context": "Toast description showing what was copied."
         },
         "copy_failed": {
-            "string": "Copy failed",
+            "string": "Error al copiar",
             "context": "Toast error message when copy operation fails."
         },
         "copy_failed_description": {
-            "string": "Unable to copy to clipboard. Please try again.",
+            "string": "No se pudo copiar al portapapeles. Inténtelo de nuevo.",
             "context": "Toast error description when copy fails."
         },
         "copy_email": {
-            "string": "Copy email",
+            "string": "Copiar correo",
             "context": "Tooltip for copy email button."
         },
         "copy": {
-            "string": "Copy",
+            "string": "Copiar",
             "context": "Generic copy button label."
         },
         "edit": {
@@ -77,15 +77,15 @@
             "context": "Button label to cancel editing."
         },
         "edit_note": {
-            "string": "Edit note",
+            "string": "Editar nota",
             "context": "Button label to edit the contact note."
         },
         "add_note": {
-            "string": "Add note",
+            "string": "Añadir nota",
             "context": "Button label to add a note to the contact."
         },
         "no_notes": {
-            "string": "No notes",
+            "string": "Sin notas",
             "context": "Placeholder text when there are no notes."
         },
         "new_contact": {
@@ -109,11 +109,11 @@
             "context": "Button to add another email field"
         },
         "add_phone": {
-            "string": "Add phone",
+            "string": "Añadir teléfono",
             "context": "Button to add another phone field"
         },
         "remove_field": {
-            "string": "Remove field",
+            "string": "Quitar campo",
             "context": "Aria label for removing a dynamic form field"
         },
         "add_address": {
@@ -133,11 +133,11 @@
             "context": "Label for contact categories field"
         },
         "photo": {
-            "string": "Photo",
+            "string": "Foto",
             "context": "Label for contact photo upload"
         },
         "photo_upload": {
-            "string": "Upload a photo",
+            "string": "Subir una foto",
             "context": "Button to select a contact photo file"
         },
         "photo_change": {
@@ -161,18 +161,18 @@
             "context": "Label for geographic location"
         },
         "submit_error": {
-            "string": "Could not save. Please check the form and try again.",
+            "string": "No se pudo guardar. Compruebe el formulario e inténtelo de nuevo.",
             "context": "Generic submit error shown in contact form"
         },
         "fields": {
             "first_name": {
-                "string": "First name"
+                "string": "Nombre"
             },
             "last_name": {
-                "string": "Last name"
+                "string": "Apellido"
             },
             "middle_name": {
-                "string": "Middle name"
+                "string": "Segundo nombre"
             },
             "prefix": {
                 "string": "Prefijo"
@@ -190,7 +190,7 @@
                 "string": "Departamento"
             },
             "job_title": {
-                "string": "Job title"
+                "string": "Puesto"
             },
             "role": {
                 "string": "Rol"
@@ -202,7 +202,7 @@
                 "string": "Aniversario"
             },
             "birthday_unknown_year": {
-                "string": "Year unknown (month and day only)"
+                "string": "Año desconocido (solo mes y día)"
             },
             "street": {
                 "string": "Calle"
@@ -211,31 +211,31 @@
                 "string": "Ciudad"
             },
             "postal_code": {
-                "string": "Postal code"
+                "string": "Código postal"
             },
             "country": {
-                "string": "Country"
+                "string": "País"
             },
             "region": {
-                "string": "Region / State"
+                "string": "Región / Provincia"
             },
             "po_box": {
-                "string": "PO box"
+                "string": "Apartado postal"
             },
             "extended": {
                 "string": "Dirección extendida"
             },
             "contact_kind": {
-                "string": "Contact type"
+                "string": "Tipo de contacto"
             },
             "contact_kind_individual": {
-                "string": "Person"
+                "string": "Persona"
             },
             "contact_kind_org": {
                 "string": "Organización"
             },
             "organization_required": {
-                "string": "Organization name"
+                "string": "Nombre de la organización"
             },
             "type": {
                 "string": "Tipo"
@@ -273,10 +273,10 @@
         },
         "delete_dialog": {
             "title": {
-                "string": "Delete contact?"
+                "string": "¿Eliminar el contacto?"
             },
             "description": {
-                "string": "This contact will be permanently removed from your address book."
+                "string": "Este contacto se eliminará permanentemente de su libreta de direcciones."
             },
             "confirm": {
                 "string": "Eliminar"
@@ -287,26 +287,26 @@
             "context": "Button to compose an email to this contact."
         },
         "actions_menu": {
-            "string": "More actions",
+            "string": "Más acciones",
             "context": "Aria label for the contact actions dropdown menu."
         },
         "compose_email": {
-            "string": "Compose",
+            "string": "Redactar",
             "context": "Button to compose an email to a specific address on the contact card."
         },
         "selection_placeholder": {
             "title": {
-                "string": "Select a contact",
+                "string": "Seleccione un contacto",
                 "context": "Title shown when no contact is selected in the detail panel."
             },
             "description": {
-                "string": "Choose a contact or distribution list from the list to view details.",
+                "string": "Elija un contacto o una lista de distribución de la lista para ver los detalles.",
                 "context": "Description shown when no contact is selected."
             }
         },
         "load_error": {
             "title": {
-                "string": "Could not load contact",
+                "string": "No se pudo cargar el contacto",
                 "context": "Error title when contact details fail to load."
             },
             "list": {
@@ -314,7 +314,7 @@
                 "context": "Error message when the contact list fails to load."
             },
             "description": {
-                "string": "Please try again later.",
+                "string": "Inténtelo de nuevo más tarde.",
                 "context": "Error description when contact data fails to load."
             }
         }

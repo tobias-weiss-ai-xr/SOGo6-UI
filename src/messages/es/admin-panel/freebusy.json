@@ -4,37 +4,37 @@
       "string": "Consulta de disponibilidad"
     },
     "description": {
-      "string": "Visual attendee schedule overlay. Check availability when creating events."
+      "string": "Superposición visual de la disponibilidad de los participantes. Compruebe la disponibilidad al crear eventos."
     },
     "form": {
       "title": {
-        "string": "Check Availability"
+        "string": "Comprobar disponibilidad"
       },
       "participants": {
-        "string": "Participants"
+        "string": "Participantes"
       },
       "start": {
-        "string": "Start"
+        "string": "Inicio"
       },
       "end": {
-        "string": "End"
+        "string": "Fin"
       },
       "lookup": {
-        "string": "Look Up"
+        "string": "Buscar"
       }
     },
     "results": {
       "title": {
-        "string": "Busy Slots"
+        "string": "Franjas ocupadas"
       }
     },
     "errors": {
       "fields": {
-        "string": "At least one participant is required"
+        "string": "Se requiere al menos un participante"
       }
     },
     "error": {
-      "string": "Lookup failed"
+      "string": "Error en la consulta"
     }
   }
 }

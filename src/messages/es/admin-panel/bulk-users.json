@@ -8,53 +8,53 @@
     },
     "export": {
       "title": {
-        "string": "Export Users"
+        "string": "Exportar usuarios"
       },
       "description": {
-        "string": "Download all users as a CSV file."
+        "string": "Descargue todos los usuarios como archivo CSV."
       },
       "format": {
-        "string": "CSV file (.csv)"
+        "string": "Archivo CSV (.csv)"
       },
       "button": {
-        "string": "Export CSV"
+        "string": "Exportar CSV"
       },
       "success": {
-        "string": "Export downloaded"
+        "string": "Exportación descargada"
       },
       "error": {
-        "string": "Export failed"
+        "string": "Error en la exportación"
       }
     },
     "import": {
       "title": {
-        "string": "Import Users"
+        "string": "Importar usuarios"
       },
       "description": {
-        "string": "Upload a CSV file with user data to create or update accounts."
+        "string": "Suba un archivo CSV con datos de usuarios para crear o actualizar cuentas."
       },
       "dropzone": {
-        "string": "Click to upload CSV"
+        "string": "Haga clic para subir un CSV"
       },
       "button": {
-        "string": "Import CSV"
+        "string": "Importar CSV"
       },
       "remove": {
-        "string": "Remove file"
+        "string": "Quitar archivo"
       },
       "success": {
-        "string": "Imported: {created} created, {updated} updated"
+        "string": "Importado: {created} creados, {updated} actualizados"
       },
       "error": {
-        "string": "Import failed"
+        "string": "Error en la importación"
       }
     },
     "format": {
       "title": {
-        "string": "CSV Format"
+        "string": "Formato CSV"
       },
       "hint": {
-        "string": "First row must be the header. uid, cn, sn, givenName, mail are required. password is optional (random if blank)."
+        "string": "La primera fila debe ser la cabecera. uid, cn, sn, givenName y mail son obligatorios. password es opcional (aleatoria si se deja vacía)."
       }
     }
   }

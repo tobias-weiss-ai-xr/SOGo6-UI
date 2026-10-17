@@ -8,10 +8,10 @@
         },
         "query": {
             "title": {
-                "string": "Debug Query"
+                "string": "Consulta de depuración"
             },
             "button": {
-                "string": "Inspect"
+                "string": "Inspeccionar"
             }
         },
         "labels": {
@@ -22,30 +22,30 @@
                 "string": "IMAP Foldor"
             },
             "mail_uid": {
-                "string": "Mail UID"
+                "string": "UID del correo"
             },
             "select_user": {
-                "string": "Select user..."
+                "string": "Seleccionar usuario..."
             }
         },
         "result": {
             "raw": {
                 "title": {
-                    "string": "Raw Email Source"
+                    "string": "Fuente original del correo"
                 }
             },
             "headers": {
                 "title": {
-                    "string": "Parsed Headers"
+                    "string": "Cabeceras analizadas"
                 }
             }
         },
         "errors": {
             "fields_required": {
-                "string": "User, folder, and mail UID are required"
+                "string": "El usuario, la carpeta y el UID del correo son obligatorios"
             },
             "fetch_failed": {
-                "string": "Failed to fetch debug data"
+                "string": "Error al obtener los datos de depuración"
             }
         }
     }

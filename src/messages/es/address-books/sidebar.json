@@ -40,7 +40,7 @@
             },
             "link": {
                 "title": {
-                    "string": "Links"
+                    "string": "Enlaces"
                 },
                 "labels": {
                     "name": {
@@ -48,17 +48,17 @@
                     }
                 },
                 "copy": {
-                    "string": "Copy URL",
+                    "string": "Copiar URL",
                     "context": "Aria label for copying the address book CardDAV URL."
                 }
             },
             "delete": {
                 "title": {
-                    "string": "Are you sure you want to delete address book {name}?"
+                    "string": "¿Seguro que desea eliminar la libreta de direcciones {name}?"
                 }
             },
             "sharing": {
-                "string": "Sharando"
+                "string": "Compartición"
             },
             "import": {
                 "string": "Importar"
@@ -67,36 +67,36 @@
                 "string": "Exportar"
             },
             "ios_download": {
-                "string": "Download iOS - MacOS configuration profile"
+                "string": "Descargar perfil de configuración de iOS/macOS"
             }
         },
         "sharing": {
             "title": {
-                "string": "Address Book Sharando"
+                "string": "Compartición de la libreta de direcciones"
             },
             "description": {
-                "string": "Share this address book with other users. Shared users can view or modify contacts based on the permission level you grant."
+                "string": "Comparta esta libreta de direcciones con otros usuarios. Los usuarios con acceso pueden ver o modificar los contactos según el nivel de permiso que les conceda."
             },
             "addUser": {
                 "string": "Add Usor"
             },
             "searchPlaceholder": {
-                "string": "Enter user email..."
+                "string": "Introduzca el correo electrónico del usuario..."
             },
             "addButton": {
-                "string": "Share"
+                "string": "Compartir"
             },
             "added": {
                 "string": "Address book shared successfulmente"
             },
             "addError": {
-                "string": "Failed to share address book"
+                "string": "Error al compartir la libreta de direcciones"
             },
             "removed": {
                 "string": "Share removed successfulmente"
             },
             "removeError": {
-                "string": "Failed to remove share"
+                "string": "Error al eliminar la compartición"
             },
             "removeButton": {
                 "string": "Eliminar"
@@ -105,42 +105,42 @@
                 "string": "Compartido con"
             },
             "noShares": {
-                "string": "This address book is not shared with anyone yet."
+                "string": "Esta libreta de direcciones aún no se comparte con nadie."
             },
             "table": {
                 "user": {
                     "string": "Usuario"
                 },
                 "level": {
-                    "string": "Permission Level"
+                    "string": "Nivel de permiso"
                 }
             }
         },
         "all_contacts": {
-            "string": "All contacts",
+            "string": "Todos los contactos",
             "context": "Sidebar entry for cross-address-book contact listing"
         },
         "import": {
             "description": {
-                "string": "Upload a contacts or distribution list file to import."
+                "string": "Suba un archivo de contactos o de listas de distribución para importarlo."
             },
             "title_book": {
-                "string": "Import into {name}"
+                "string": "Importar en {name}"
             },
             "scope": {
-                "string": "Import target"
+                "string": "Destino de la importación"
             },
             "scope_contacts": {
-                "string": "Contacts into this address book"
+                "string": "Contactos en esta libreta de direcciones"
             },
             "scope_lists": {
-                "string": "Distribution lists into this address book"
+                "string": "Listas de distribución en esta libreta de direcciones"
             },
             "scope_new_book": {
-                "string": "Create a new address book"
+                "string": "Crear una libreta de direcciones nueva"
             },
             "format": {
-                "string": "File format"
+                "string": "Formato de archivo"
             },
             "format_json": {
                 "string": "JSON"
@@ -155,22 +155,22 @@
                 "string": "LDIF"
             },
             "file": {
-                "string": "File"
+                "string": "Archivo"
             },
             "submit": {
-                "string": "Start import"
+                "string": "Iniciar importación"
             },
             "processing": {
-                "string": "Import in progress..."
+                "string": "Importación en curso..."
             },
             "cancel": {
-                "string": "Cancel import"
+                "string": "Cancelar importación"
             },
             "success": {
-                "string": "Import completed successfully."
+                "string": "Importación completada correctamente."
             },
             "success_with_counts": {
-                "string": "Import completed. Created: {counts}."
+                "string": "Importación completada. Creados: {counts}."
             },
             "close": {
                 "string": "Cerrar"
@@ -178,22 +178,22 @@
         },
         "export": {
             "description": {
-                "string": "Export this address book to a file."
+                "string": "Exporte esta libreta de direcciones a un archivo."
             },
             "title_book": {
-                "string": "Export {name}"
+                "string": "Exportar {name}"
             },
             "format": {
-                "string": "Export format"
+                "string": "Formato de exportación"
             },
             "submit": {
-                "string": "Start export"
+                "string": "Iniciar exportación"
             },
             "processing": {
-                "string": "Export in progress..."
+                "string": "Exportación en curso..."
             },
             "success": {
-                "string": "Export completed. Your download should start shortly."
+                "string": "Exportación completada. Su descarga comenzará en breve."
             },
             "close": {
                 "string": "Cerrar"

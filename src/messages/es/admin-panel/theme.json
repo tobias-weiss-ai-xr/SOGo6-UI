@@ -39,55 +39,55 @@
             },
             "foreground": {
                 "label": {
-                    "string": "Foreground"
+                    "string": "Primer plano"
                 },
                 "description": {
-                    "string": "Default text color"
+                    "string": "Color de texto predeterminado"
                 }
             },
             "sidebar_background": {
                 "label": {
-                    "string": "Sidebar Background"
+                    "string": "Fondo de la barra lateral"
                 },
                 "description": {
-                    "string": "HSL values for the sidebar background"
+                    "string": "Valores HSL del fondo de la barra lateral"
                 }
             },
             "sidebar_foreground": {
                 "label": {
-                    "string": "Sidebar Foreground"
+                    "string": "Primer plano de la barra lateral"
                 },
                 "description": {
-                    "string": "Text color in the sidebar"
+                    "string": "Color del texto en la barra lateral"
                 }
             },
             "sidebar_primary": {
                 "label": {
-                    "string": "Sidebar Primary"
+                    "string": "Color principal de la barra lateral"
                 },
                 "description": {
-                    "string": "Primary accent color in the sidebar"
+                    "string": "Color de acento principal en la barra lateral"
                 }
             },
             "sidebar_accent": {
                 "label": {
-                    "string": "Sidebar Accent"
+                    "string": "Color de acento de la barra lateral"
                 },
                 "description": {
-                    "string": "Accent color in the sidebar"
+                    "string": "Color de acento en la barra lateral"
                 }
             },
             "header_background": {
                 "label": {
-                    "string": "Header Background"
+                    "string": "Fondo de la cabecera"
                 },
                 "description": {
-                    "string": "HSL values for the top header bar"
+                    "string": "Valores HSL de la barra de cabecera superior"
                 }
             },
             "header_foreground": {
                 "label": {
-                    "string": "Header Foreground"
+                    "string": "Primer plano de la cabecera"
                 },
                 "description": {
                     "string": "Text color in the heador"
@@ -98,7 +98,7 @@
                     "string": "URL del logo"
                 },
                 "description": {
-                    "string": "URL of the custom logo image (optional)"
+                    "string": "URL de la imagen del logotipo personalizado (opcional)"
                 }
             },
             "custom_css": {
@@ -106,12 +106,12 @@
                     "string": "CSS personalizado"
                 },
                 "description": {
-                    "string": "Additional CSS rules to inject (optional)"
+                    "string": "Reglas CSS adicionales que se inyectarán (opcional)"
                 }
             }
         },
         "save": {
-            "string": "Save Changes"
+            "string": "Guardar cambios"
         },
         "saving": {
             "string": "Guardando…"
@@ -126,7 +126,7 @@
             "string": "Tiene cambios sin guardar"
         },
         "load_error": {
-            "string": "Failed to load theme settings"
+            "string": "Error al cargar los ajustes del tema"
         },
         "retry": {
             "string": "Reintentar"

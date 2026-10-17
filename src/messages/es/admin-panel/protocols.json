@@ -4,7 +4,7 @@
       "string": "Estado de protocolos de correo"
     },
     "description": {
-      "string": "JMAP and ActiveSync protocol server status and capabilities"
+      "string": "Estado y capacidades de los servidores de protocolo JMAP y ActiveSync"
     }
   }
 }

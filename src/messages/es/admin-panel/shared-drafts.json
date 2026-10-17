@@ -4,67 +4,67 @@
             "string": "Borradores colaborativos"
         },
         "description": {
-            "string": "Share draft emails with colleagues for review and approval before sending."
+            "string": "Comparta borradores de correo con colegas para revisarlos y aprobarlos antes de enviarlos."
         },
         "form": {
             "share": {
-                "string": "Share Draft"
+                "string": "Compartir borrador"
             },
             "cancel": {
                 "string": "Cancelar"
             },
             "title": {
-                "string": "Share a Draft"
+                "string": "Compartir un borrador"
             },
             "subject": {
-                "string": "Subject"
+                "string": "Asunto"
             },
             "reviewers": {
-                "string": "Reviewers"
+                "string": "Revisores"
             },
             "message": {
-                "string": "Message to Reviewers"
+                "string": "Mensaje para los revisores"
             },
             "message_hint": {
-                "string": "Please review this draft before I send it"
+                "string": "Por favor, revise este borrador antes de enviarlo"
             },
             "body": {
-                "string": "Email Body"
+                "string": "Cuerpo del correo"
             },
             "submit": {
-                "string": "Share Draft"
+                "string": "Compartir borrador"
             }
         },
         "create": {
             "success": {
-                "string": "Draft shared"
+                "string": "Borrador compartido"
             },
             "error": {
-                "string": "Failed to share draft"
+                "string": "Error al compartir el borrador"
             }
         },
         "review": {
             "approved": {
-                "string": "Draft approved"
+                "string": "Borrador aprobado"
             },
             "rejected": {
-                "string": "Draft rejected"
+                "string": "Borrador rechazado"
             },
             "error": {
-                "string": "Review failed"
+                "string": "Error en la revisión"
             }
         },
         "list": {
             "empty": {
-                "string": "No shared drafts. Create one to collaborate on an email."
+                "string": "No hay borradores compartidos. Cree uno para colaborar en un correo."
             },
             "by": {
-                "string": "by"
+                "string": "por"
             }
         },
         "errors": {
             "fields": {
-                "string": "Subject, body, and at least one reviewer are required"
+                "string": "El asunto, el cuerpo y al menos un revisor son obligatorios"
             }
         }
     }

@@ -4,61 +4,61 @@
             "string": "Flujos de aprobación"
         },
         "description": {
-            "string": "Create multi-step approval chains for purchase orders, announcements, and more."
+            "string": "Cree cadenas de aprobación de varios pasos para pedidos de compra, anuncios y más."
         },
         "form": {
             "create": {
-                "string": "New Approval"
+                "string": "Nueva aprobación"
             },
             "cancel": {
                 "string": "Cancelar"
             },
             "title": {
-                "string": "Create Approval Workflow"
+                "string": "Crear flujo de aprobación"
             },
             "workflow_title": {
-                "string": "Title"
+                "string": "Título"
             },
             "category": {
-                "string": "Category"
+                "string": "Categoría"
             },
             "description": {
                 "string": "Descripción"
             },
             "steps": {
-                "string": "Approval Steps"
+                "string": "Pasos de aprobación"
             },
             "submit": {
-                "string": "Create Workflow"
+                "string": "Crear flujo de trabajo"
             }
         },
         "create": {
             "success": {
-                "string": "Workflow created"
+                "string": "Flujo de trabajo creado"
             },
             "error": {
-                "string": "Failed to create"
+                "string": "Error al crear"
             }
         },
         "action": {
             "approved": {
-                "string": "Step approved"
+                "string": "Paso aprobado"
             },
             "rejected": {
-                "string": "Rejected"
+                "string": "Rechazado"
             },
             "error": {
-                "string": "Action failed"
+                "string": "Error en la acción"
             }
         },
         "list": {
             "empty": {
-                "string": "No approval workflows yet."
+                "string": "Aún no hay flujos de aprobación."
             }
         },
         "errors": {
             "fields": {
-                "string": "Title and at least one step with email are required"
+                "string": "El título y al menos un paso con correo electrónico son obligatorios"
             }
         }
     }
