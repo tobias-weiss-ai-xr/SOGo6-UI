@@ -1,69 +1,69 @@
 {
-    "AP_CFGCODE": {
-        "title": {
-            "string": "Configuration as Code"
-        },
-        "description": {
-            "string": "Export, version, and import system configuration as JSON for GitOps workflows."
-        },
-        "export": {
-            "title": {
-                "string": "Current Configuration"
-            },
-            "copy": {
-                "string": "Kopier"
-            },
-            "copied": {
-                "string": "Copied!"
-            },
-            "download": {
-                "string": "Download JSON"
-            },
-            "success": {
-                "string": "Downloaded"
-            }
-        },
-        "import": {
-            "title": {
-                "string": "Import Configuration"
-            },
-            "description_label": {
-                "string": "Beskrivelse"
-            },
-            "description_placeholder": {
-                "string": "e.g. Update mail server settings"
-            },
-            "placeholder": {
-                "string": "Paste JSON configuration here..."
-            },
-            "button": {
-                "string": "Apply Configuration"
-            },
-            "running": {
-                "string": "Applying..."
-            },
-            "success": {
-                "string": "Configuration v{{version}} applied"
-            },
-            "error": {
-                "string": "Import failed"
-            }
-        },
-        "history": {
-            "title": {
-                "string": "Version History"
-            },
-            "empty": {
-                "string": "No configuration snapshots yet."
-            }
-        },
-        "errors": {
-            "empty": {
-                "string": "Configuration JSON is empty"
-            },
-            "parse": {
-                "string": "Invalid JSON — please check syntax"
-            }
-        }
+  "AP_CFGCODE": {
+    "title": {
+      "string": "Konfiguration som kode"
+    },
+    "description": {
+      "string": "Eksportér, versionér og importér systemkonfiguration som JSON til GitOps-workflows."
+    },
+    "export": {
+      "title": {
+        "string": "Aktuel konfiguration"
+      },
+      "copy": {
+        "string": "Kopier"
+      },
+      "copied": {
+        "string": "Copied!"
+      },
+      "download": {
+        "string": "Download JSON-fil"
+      },
+      "success": {
+        "string": "Downloaded"
+      }
+    },
+    "import": {
+      "title": {
+        "string": "Importér konfiguration"
+      },
+      "description_label": {
+        "string": "Beskrivelse"
+      },
+      "description_placeholder": {
+        "string": "f.eks. Opdatér mailserverindstillinger"
+      },
+      "placeholder": {
+        "string": "Indsæt JSON-konfiguration her..."
+      },
+      "button": {
+        "string": "Anvend konfiguration"
+      },
+      "running": {
+        "string": "Applying..."
+      },
+      "success": {
+        "string": "Konfiguration v{{version}} anvendt"
+      },
+      "error": {
+        "string": "Importen mislykkedes"
+      }
+    },
+    "history": {
+      "title": {
+        "string": "Versionshistorik"
+      },
+      "empty": {
+        "string": "Ingen konfigurationssnapshots endnu."
+      }
+    },
+    "errors": {
+      "empty": {
+        "string": "JSON-konfigurationen er tom"
+      },
+      "parse": {
+        "string": "Ugyldig JSON — kontrollér syntaksen"
+      }
     }
+  }
 }

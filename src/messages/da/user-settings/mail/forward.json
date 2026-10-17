@@ -1,116 +1,116 @@
 {
-    "US_MAIL_FORWARD": {
-        "title": {
-            "string": "Mail Forward"
+  "US_MAIL_FORWARD": {
+    "title": {
+      "string": "Mail Forward"
+    },
+    "page": {
+      "description": {
+        "string": "Videresend automatisk indgående meddelelser til en eller flere e-mailadresser."
+      }
+    },
+    "labels": {
+      "transfer_incoming": {
+        "string": "Videresend indgående meddelelser"
+      },
+      "email": {
+        "string": "E-mailadresse"
+      },
+      "always_forward": {
+        "string": "Videresend altid"
+      },
+      "keep_copy": {
+        "string": "Behold en kopi i denne indbakke"
+      }
+    },
+    "description": {
+      "transfer_incoming": {
+        "string": "Videresend automatisk nye meddelelser til en anden e-mailadresse"
+      },
+      "email": {
+        "string": "Videresend til disse adresser (op til {max} adresser). Tilføj flere adresser adskilt med komma eller semikolon, eller tryk på Enter/Tab."
+      }
+    },
+    "help": {
+      "email": {
+        "string": "Vi videresender nye meddelelser til disse adresser"
+      }
+    },
+    "placeholders": {
+      "email": {
+        "string": "Tilføj e-mailadresse, og tryk på Enter"
+      }
+    },
+    "errors": {
+      "email": {
+        "invalid": {
+          "string": "Indtast en gyldig e-mailadresse"
         },
-        "page": {
-            "description": {
-                "string": "Automatically forward incoming messages to one or more email addresses."
-            }
-        },
-        "labels": {
-            "transfer_incoming": {
-                "string": "Transfer incoming messages"
-            },
-            "email": {
-                "string": "Email address"
-            },
-            "always_forward": {
-                "string": "Always forward"
-            },
-            "keep_copy": {
-                "string": "Keep a copy in this inbox"
-            }
-        },
-        "description": {
-            "transfer_incoming": {
-                "string": "Automatically forward new messages to another email address"
-            },
-            "email": {
-                "string": "Forward to these addresses (up to {max} addresses). Add multiple addresses separated by comma, semicolon, or press Enter/Tab."
-            }
-        },
-        "help": {
-            "email": {
-                "string": "We'll forward new messages to these addresses"
-            }
-        },
-        "placeholders": {
-            "email": {
-                "string": "Add email address and press Enter"
-            }
-        },
-        "errors": {
-            "email": {
-                "invalid": {
-                    "string": "Please enter a valid email address"
-                },
-                "duplicate": {
-                    "string": "This address is already in the list"
-                }
-            },
-            "emails": {
-                "list": {
-                    "string": "There was an error with one or more email addresses"
-                }
-            },
-            "max_reached": {
-                "string": "Maximum {max} addresses allowed"
-            },
-            "validation": {
-                "addresses_required": {
-                    "string": "At least one email address is required when forwarding is enabled."
-                }
-            }
-        },
-        "hints": {
-            "blur": {
-                "string": "Press Enter to add this address"
-            }
-        },
-        "tooltip": {
-            "always_forward": {
-                "string": "Incoming mail is forwarded before applying your filters."
-            },
-            "keep_copy": {
-                "string": "Keep a copy of forwarded messages in your inbox. Useful if you want to maintain a local archive."
-            }
-        },
-        "errors_api": {
-            "title": {
-                "string": "Fejl"
-            },
-            "save_failed": {
-                "string": "Couldn't save your changes, try again"
-            },
-            "load_failed": {
-                "string": "Could not load forwarding settings. Please try again later."
-            },
-            "feature_disabled": {
-                "string": "Mail forwarding has been disabled by your administrator."
-            }
-        },
-        "status": {
-            "enabled": {
-                "string": "Aktiveret"
-            },
-            "disabled": {
-                "string": "Deaktiveret"
-            }
-        },
-        "aria": {
-            "tags_count": {
-                "string": "{count} of {max} email addresses added"
-            },
-            "remove_email": {
-                "string": "Remove {email}"
-            },
-            "email_input_group": {
-                "string": "Email addresses for forwarding"
-            },
-            "toggle_forwarding": {
-                "string": "Toggle email forwarding"
-            }
+        "duplicate": {
+          "string": "Denne adresse er allerede på listen"
         }
+      },
+      "emails": {
+        "list": {
+          "string": "Der var en fejl med en eller flere e-mailadresser"
+        }
+      },
+      "max_reached": {
+        "string": "Maks. {max} adresser tilladt"
+      },
+      "validation": {
+        "addresses_required": {
+          "string": "Mindst én e-mailadresse er påkrævet, når videresendelse er aktiveret."
+        }
+      }
+    },
+    "hints": {
+      "blur": {
+        "string": "Tryk på Enter for at tilføje denne adresse"
+      }
+    },
+    "tooltip": {
+      "always_forward": {
+        "string": "Indgående mail videresendes, før dine filtre anvendes."
+      },
+      "keep_copy": {
+        "string": "Behold en kopi af videresendte meddelelser i din indbakke. Nyttigt, hvis du vil opbevare et lokalt arkiv."
+      }
+    },
+    "errors_api": {
+      "title": {
+        "string": "Fejl"
+      },
+      "save_failed": {
+        "string": "Kunne ikke gemme dine ændringer. Prøv igen"
+      },
+      "load_failed": {
+        "string": "Kunne ikke indlæse indstillinger for videresendelse. Prøv igen senere."
+      },
+      "feature_disabled": {
+        "string": "Videresendelse af mail er blevet deaktiveret af din administrator."
+      }
+    },
+    "status": {
+      "enabled": {
+        "string": "Aktiveret"
+      },
+      "disabled": {
+        "string": "Deaktiveret"
+      }
+    },
+    "aria": {
+      "tags_count": {
+        "string": "{count} af {max} e-mailadresser tilføjet"
+      },
+      "remove_email": {
+        "string": "Fjern {email}"
+      },
+      "email_input_group": {
+        "string": "E-mailadresser til videresendelse"
+      },
+      "toggle_forwarding": {
+        "string": "Slå videresendelse af e-mail til/fra"
+      }
     }
+  }
 }

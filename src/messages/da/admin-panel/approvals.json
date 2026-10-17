@@ -1,65 +1,65 @@
 {
-    "AP_APPROVALS": {
-        "title": {
-            "string": "Approval Workflows"
-        },
-        "description": {
-            "string": "Create multi-step approval chains for purchase orders, announcements, and more."
-        },
-        "form": {
-            "create": {
-                "string": "New Approval"
-            },
-            "cancel": {
-                "string": "Annuller"
-            },
-            "title": {
-                "string": "Create Approval Workflow"
-            },
-            "workflow_title": {
-                "string": "Title"
-            },
-            "category": {
-                "string": "Category"
-            },
-            "description": {
-                "string": "Beskrivelse"
-            },
-            "steps": {
-                "string": "Approval Steps"
-            },
-            "submit": {
-                "string": "Create Workflow"
-            }
-        },
-        "create": {
-            "success": {
-                "string": "Workflow created"
-            },
-            "error": {
-                "string": "Failed to create"
-            }
-        },
-        "action": {
-            "approved": {
-                "string": "Step approved"
-            },
-            "rejected": {
-                "string": "Rejected"
-            },
-            "error": {
-                "string": "Action failed"
-            }
-        },
-        "list": {
-            "empty": {
-                "string": "No approval workflows yet."
-            }
-        },
-        "errors": {
-            "fields": {
-                "string": "Title and at least one step with email are required"
-            }
-        }
+  "AP_APPROVALS": {
+    "title": {
+      "string": "Godkendelses-workflows"
+    },
+    "description": {
+      "string": "Opret godkendelseskæder med flere trin til købsordrer, meddelelser m.m."
+    },
+    "form": {
+      "create": {
+        "string": "New Approval"
+      },
+      "cancel": {
+        "string": "Annuller"
+      },
+      "title": {
+        "string": "Opret godkendelses-workflow"
+      },
+      "workflow_title": {
+        "string": "Title"
+      },
+      "category": {
+        "string": "Category"
+      },
+      "description": {
+        "string": "Beskrivelse"
+      },
+      "steps": {
+        "string": "Godkendelsestrin"
+      },
+      "submit": {
+        "string": "Opret workflow"
+      }
+    },
+    "create": {
+      "success": {
+        "string": "Workflow oprettet"
+      },
+      "error": {
+        "string": "Kunne ikke oprette"
+      }
+    },
+    "action": {
+      "approved": {
+        "string": "Trin godkendt"
+      },
+      "rejected": {
+        "string": "Rejected"
+      },
+      "error": {
+        "string": "Handlingen mislykkedes"
+      }
+    },
+    "list": {
+      "empty": {
+        "string": "Ingen godkendelses-workflows endnu."
+      }
+    },
+    "errors": {
+      "fields": {
+        "string": "Titel og mindst ét trin med e-mail er påkrævet"
+      }
     }
+  }
 }

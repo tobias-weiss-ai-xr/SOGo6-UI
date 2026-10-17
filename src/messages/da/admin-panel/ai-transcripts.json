@@ -1,57 +1,57 @@
 {
-    "AI_TRANSCRIPTS": {
-        "title": {
-            "string": "Meeting Transcripts"
-        },
-        "description": {
-            "string": "Record meeting transcripts, auto-generate summaries and action items."
-        },
-        "form": {
-            "create": {
-                "string": "New Transcript"
-            },
-            "cancel": {
-                "string": "Annuller"
-            },
-            "title": {
-                "string": "Create Transcript"
-            },
-            "meeting_title": {
-                "string": "Meeting Title"
-            },
-            "event_id": {
-                "string": "Calendar Event ID"
-            },
-            "attendees": {
-                "string": "Attendees"
-            },
-            "transcript": {
-                "string": "Transcript / Notes"
-            },
-            "placeholder": {
-                "string": "Paste meeting notes or transcript..."
-            },
-            "submit": {
-                "string": "Save & Summarize"
-            }
-        },
-        "create": {
-            "success": {
-                "string": "Transcript saved"
-            },
-            "error": {
-                "string": "Failed to save"
-            }
-        },
-        "list": {
-            "empty": {
-                "string": "No transcripts yet."
-            }
-        },
-        "errors": {
-            "fields": {
-                "string": "Title and transcript text are required"
-            }
-        }
+  "AI_TRANSCRIPTS": {
+    "title": {
+      "string": "Mødereferater"
+    },
+    "description": {
+      "string": "Optag mødereferater, og generér automatisk resuméer og handlingspunkter."
+    },
+    "form": {
+      "create": {
+        "string": "Nyt referat"
+      },
+      "cancel": {
+        "string": "Annuller"
+      },
+      "title": {
+        "string": "Opret referat"
+      },
+      "meeting_title": {
+        "string": "Mødets titel"
+      },
+      "event_id": {
+        "string": "Kalenderbegivenhedens ID"
+      },
+      "attendees": {
+        "string": "Attendees"
+      },
+      "transcript": {
+        "string": "Referat / noter"
+      },
+      "placeholder": {
+        "string": "Indsæt mødenoter eller referat..."
+      },
+      "submit": {
+        "string": "Gem og opsumér"
+      }
+    },
+    "create": {
+      "success": {
+        "string": "Referatet blev gemt"
+      },
+      "error": {
+        "string": "Kunne ikke gemme"
+      }
+    },
+    "list": {
+      "empty": {
+        "string": "Ingen referater endnu."
+      }
+    },
+    "errors": {
+      "fields": {
+        "string": "Titel og referattekst er påkrævet"
+      }
     }
+  }
 }
