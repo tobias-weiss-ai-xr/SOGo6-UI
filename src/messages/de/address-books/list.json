@@ -44,7 +44,7 @@
       "next": { "string": "Nächste Seite", "context": "Pagination next page button" },
       "page": { "string": "Seite {page} von {total}", "context": "Current pagination page indicator (contacts only)" },
       "page_size": { "string": "Pro Seite" },
-      "contacts_page_hint": { "string": "Die Seitenierung gilt für Kontakte; alle Listen werden angezeigt.", "context": "Hint that list pagination is contact-scoped" }
+      "contacts_page_hint": { "string": "Die Paginierung gilt für Kontakte; alle Listen werden angezeigt.", "context": "Hint that list pagination is contact-scoped" }
     }
   }
 }
