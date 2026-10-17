@@ -1,57 +1,57 @@
 {
-    "AI_TRANSCRIPTS": {
-        "title": {
-            "string": "Meeting Transcripts"
-        },
-        "description": {
-            "string": "Record meeting transcripts, auto-generate summaries and action items."
-        },
-        "form": {
-            "create": {
-                "string": "New Transcript"
-            },
-            "cancel": {
-                "string": "Annuleren"
-            },
-            "title": {
-                "string": "Create Transcript"
-            },
-            "meeting_title": {
-                "string": "Meeting Title"
-            },
-            "event_id": {
-                "string": "Calendar Event ID"
-            },
-            "attendees": {
-                "string": "Attendees"
-            },
-            "transcript": {
-                "string": "Transcript / Notes"
-            },
-            "placeholder": {
-                "string": "Paste meeting notes or transcript..."
-            },
-            "submit": {
-                "string": "Save & Summarize"
-            }
-        },
-        "create": {
-            "success": {
-                "string": "Transcript saved"
-            },
-            "error": {
-                "string": "Failed to save"
-            }
-        },
-        "list": {
-            "empty": {
-                "string": "No transcripts yet."
-            }
-        },
-        "errors": {
-            "fields": {
-                "string": "Title and transcript text are required"
-            }
-        }
+  "AI_TRANSCRIPTS": {
+    "title": {
+      "string": "Vergadertranscripties"
+    },
+    "description": {
+      "string": "Neem vergadertranscripties op en genereer automatisch samenvattingen en actiepunten."
+    },
+    "form": {
+      "create": {
+        "string": "Nieuwe transcriptie"
+      },
+      "cancel": {
+        "string": "Annuleren"
+      },
+      "title": {
+        "string": "Transcriptie aanmaken"
+      },
+      "meeting_title": {
+        "string": "Titel van de vergadering"
+      },
+      "event_id": {
+        "string": "Agenda-evenement-ID"
+      },
+      "attendees": {
+        "string": "Attendees"
+      },
+      "transcript": {
+        "string": "Transcriptie / Notities"
+      },
+      "placeholder": {
+        "string": "Plak hier vergadernotities of de transcriptie..."
+      },
+      "submit": {
+        "string": "Opslaan & samenvatten"
+      }
+    },
+    "create": {
+      "success": {
+        "string": "Transcriptie opgeslagen"
+      },
+      "error": {
+        "string": "Opslaan mislukt"
+      }
+    },
+    "list": {
+      "empty": {
+        "string": "Nog geen transcripties."
+      }
+    },
+    "errors": {
+      "fields": {
+        "string": "Titel en transcriptietekst zijn verplicht"
+      }
     }
+  }
 }

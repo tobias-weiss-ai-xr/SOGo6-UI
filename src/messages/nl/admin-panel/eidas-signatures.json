@@ -1,74 +1,74 @@
 {
-    "EIDAS": {
-        "title": {
-            "string": "eIDAS Qualified Signatures"
-        },
-        "description": {
-            "string": "EU Regulation 910/2014 qualified electronic signatures and timestamps"
-        },
-        "errors": {
-            "fields": {
-                "string": "All fields required"
-            },
-            "fail": {
-                "string": "Operation failed"
-            }
-        },
-        "success": {
-            "sign": {
-                "string": "Document signed with QES"
-            }
-        },
-        "sign": {
-            "title": {
-                "string": "Sign Document"
-            },
-            "placeholder": {
-                "string": "Enter document content to sign..."
-            },
-            "signer": {
-                "string": "Signer Email"
-            },
-            "algorithm": {
-                "string": "Hash Algorithm"
-            },
-            "button": {
-                "string": "Sign with QES"
-            }
-        },
-        "verify": {
-            "title": {
-                "string": "Verify Signature"
-            },
-            "doc_hash": {
-                "string": "Document Hash"
-            },
-            "signature": {
-                "string": "Signature"
-            },
-            "button": {
-                "string": "Verify"
-            },
-            "valid": {
-                "string": "Valid"
-            },
-            "invalid": {
-                "string": "Invalid"
-            }
-        },
-        "certs": {
-            "title": {
-                "string": "Trust Service Certificates"
-            },
-            "type": {
-                "string": "Type"
-            },
-            "name": {
-                "string": "Naam"
-            },
-            "hash": {
-                "string": "Hash"
-            }
-        }
+  "EIDAS": {
+    "title": {
+      "string": "Gekwalificeerde eIDAS-handtekeningen"
+    },
+    "description": {
+      "string": "Gekwalificeerde elektronische handtekeningen en tijdstempels volgens EU-verordening 910/2014"
+    },
+    "errors": {
+      "fields": {
+        "string": "Alle velden zijn verplicht"
+      },
+      "fail": {
+        "string": "Bewerking mislukt"
+      }
+    },
+    "success": {
+      "sign": {
+        "string": "Document ondertekend met QES"
+      }
+    },
+    "sign": {
+      "title": {
+        "string": "Document ondertekenen"
+      },
+      "placeholder": {
+        "string": "Voer de inhoud van het document in om te ondertekenen..."
+      },
+      "signer": {
+        "string": "Signer Email"
+      },
+      "algorithm": {
+        "string": "Hash-algoritme"
+      },
+      "button": {
+        "string": "Ondertekenen met QES"
+      }
+    },
+    "verify": {
+      "title": {
+        "string": "Handtekening verifiëren"
+      },
+      "doc_hash": {
+        "string": "Document-hash"
+      },
+      "signature": {
+        "string": "Signature"
+      },
+      "button": {
+        "string": "Verify"
+      },
+      "valid": {
+        "string": "Valid"
+      },
+      "invalid": {
+        "string": "Invalid"
+      }
+    },
+    "certs": {
+      "title": {
+        "string": "Certificaten van vertrouwensdiensten"
+      },
+      "type": {
+        "string": "Type"
+      },
+      "name": {
+        "string": "Naam"
+      },
+      "hash": {
+        "string": "Hash"
+      }
     }
+  }
 }

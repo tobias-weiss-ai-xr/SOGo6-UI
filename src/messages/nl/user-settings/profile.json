@@ -1,53 +1,53 @@
 {
-    "FORM_PROFILE": {
-        "title": "Profile",
-        "description": "Manage your profile information and settings.",
-        "sections": {
-            "basicInfo": "Basic Information",
-            "identities": "Identities"
-        },
-        "firstname": {
-            "string": "First Name",
-            "description": "Label for the first name input field."
-        },
-        "lastname": {
-            "string": "Last Name",
-            "description": "Label for the last name input field."
-        },
-        "basicInfo": {
-            "title": "Basic Information",
-            "uid": "User ID",
-            "email": "Email",
-            "fullName": "Name",
-            "aliases": "Email Aliases"
-        },
-        "extraInfo": {
-            "title": "Extra Information",
-            "company": "Company",
-            "team": "Team"
-        },
-        "profilePictureSource": {
-            "title": "Profile Picture",
-            "description": "Choose how your profile picture is displayed. You can upload a custom image, use your Gravatar, Libravatar or use the default avatar.",
-            "useDefault": "Default",
-            "useGravatar": "Gravatar",
-            "useLibravatar": "Libravatar",
-            "useCustom": "Custom"
-        },
-        "identities": {},
-        "api": {
-            "title": {
-                "string": "Fout"
-            },
-            "loading": {
-                "string": "Laden"
-            },
-            "load_failed": {
-                "string": "Failed to load profile. Please try again later."
-            },
-            "update_failed": {
-                "string": "Failed to update profile. Please try again."
-            }
-        }
+  "FORM_PROFILE": {
+    "title": "Profile",
+    "description": "Beheer uw profielgegevens en instellingen.",
+    "sections": {
+      "basicInfo": "Basisgegevens",
+      "identities": "Identities"
+    },
+    "firstname": {
+      "string": "First Name",
+      "description": "Label for the first name input field."
+    },
+    "lastname": {
+      "string": "Last Name",
+      "description": "Label for the last name input field."
+    },
+    "basicInfo": {
+      "title": "Basisgegevens",
+      "uid": "User ID",
+      "email": "Email",
+      "fullName": "Name",
+      "aliases": "E-mailaliassen"
+    },
+    "extraInfo": {
+      "title": "Aanvullende informatie",
+      "company": "Company",
+      "team": "Team"
+    },
+    "profilePictureSource": {
+      "title": "Profielfoto",
+      "description": "Kies hoe uw profielfoto wordt weergegeven. U kunt een eigen afbeelding uploaden, uw Gravatar of Libravatar gebruiken, of de standaardavatar gebruiken.",
+      "useDefault": "Default",
+      "useGravatar": "Gravatar",
+      "useLibravatar": "Libravatar",
+      "useCustom": "Custom"
+    },
+    "identities": {},
+    "api": {
+      "title": {
+        "string": "Fout"
+      },
+      "loading": {
+        "string": "Laden"
+      },
+      "load_failed": {
+        "string": "Profiel laden mislukt. Probeer het later opnieuw."
+      },
+      "update_failed": {
+        "string": "Profiel bijwerken mislukt. Probeer het opnieuw."
+      }
     }
+  }
 }
