@@ -137,7 +137,7 @@ for (const filePath of files) {
     if (typeof v !== 'string') continue
     if (isTranslatorNote(k)) continue
     const leaf = k.split('/').pop()
-    if (v === leaf) violations.push([k, v, 'raw-key fallback'])
+    if (leaf && v && v === leaf) violations.push([k, v, 'raw-key fallback'])
     else if (fen[k] === v && v.length > 12 && v.includes(' ') && !allow.has(v)) {
       violations.push([k, v, 'untranslated (identical to en)'])
     }
