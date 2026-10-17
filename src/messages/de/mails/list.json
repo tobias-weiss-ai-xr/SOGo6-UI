@@ -39,29 +39,29 @@
     "list_load_error": {
       "folder_not_found": {
         "string": "Dieser Ordner existiert nicht mehr.",
-        "description": "Message when folder messages request returns 404"
+        "description": "Meldung, wenn die Anfrage der Ordner-Nachrichten den Status 404 zurückgibt"
       },
       "mail_unavailable": {
         "string": "Der Mailserver ist vorübergehend nicht verfügbar.",
-        "description": "Message when folder messages request returns 503"
+        "description": "Meldung, wenn die Anfrage der Ordner-Nachrichten den Status 503 zurückgibt"
       },
       "retry": {
         "string": "Erneut versuchen",
-        "description": "Button label to refetch folder messages after 503"
+        "description": "Beschriftung der Schaltfläche zum erneuten Abrufen der Ordner-Nachrichten nach einem 503-Fehler"
       },
       "open_inbox": {
         "string": "Posteingang öffnen",
-        "description": "Button label to navigate to INBOX after folder 404"
+        "description": "Beschriftung der Schaltfläche zum Wechseln zum Posteingang nach einem 404-Ordnerfehler"
       },
       "generic": {
         "string": "Nachrichten können nicht geladen werden. Bitte versuchen Sie es später erneut.",
-        "description": "Generic folder list load error (e.g. 500)"
+        "description": "Allgemeiner Fehler beim Laden der Ordnerliste (z. B. 500)"
       }
     },
     "filter": {
       "client_scope_notice": {
         "string": "Filter gelten nur für die auf dieser Seite geladenen Nachrichten.",
-        "description": "Hint that URL filters are client-side on the current server page"
+        "description": "Hinweis, dass URL-Filter nur clientseitig auf der aktuellen Serverseite wirken"
       },
       "all": {
         "string": "Alle"
