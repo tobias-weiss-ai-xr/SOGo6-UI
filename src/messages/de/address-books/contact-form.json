@@ -20,7 +20,7 @@
     "save": { "string": "Speichern", "context": "Button label to save changes." },
     "cancel": { "string": "Abbrechen", "context": "Button label to cancel editing." },
     "edit_note": { "string": "Notiz bearbeiten", "context": "Button label to edit the contact note." },
-    "add_note": { "string": "Notiz Hinzufügen", "context": "Button label to add a note to the contact." },
+    "add_note": { "string": "Notiz hinzufügen", "context": "Button label to add a note to the contact." },
     "no_notes": { "string": "Keine Notizen", "context": "Placeholder text when there are no notes." },
     "new_contact": { "string": "Neuer Kontakt", "context": "Title for the new contact dialog" },
     "edit_contact": { "string": "Kontakt bearbeiten", "context": "Title for the edit contact dialog" },
