@@ -1,37 +1,37 @@
 {
-    "AI_SEARCH": {
-        "title": {
-            "string": "Natural Language Search"
-        },
-        "description": {
-            "string": "Search emails with plain English. Converts to structured queries automatically."
-        },
-        "input": {
-            "placeholder": {
-                "string": "Show invoices from March over $500..."
-            }
-        },
-        "output": {
-            "title": {
-                "string": "Parsed Query"
-            },
-            "empty": {
-                "string": "Enter a search query above"
-            },
-            "detected": {
-                "string": "Detected filters"
-            }
-        },
-        "search": {
-            "string": "Søg"
-        },
-        "errors": {
-            "empty": {
-                "string": "Enter a search query"
-            },
-            "fail": {
-                "string": "Search failed"
-            }
-        }
+  "AI_SEARCH": {
+    "title": {
+      "string": "Søgning på naturligt sprog"
+    },
+    "description": {
+      "string": "Søg i e-mails med almindelig tekst. Konverteres automatisk til strukturerede forespørgsler."
+    },
+    "input": {
+      "placeholder": {
+        "string": "Vis fakturaer fra marts over 500 $..."
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Parsed Query"
+      },
+      "empty": {
+        "string": "Indtast en søgeforespørgsel ovenfor"
+      },
+      "detected": {
+        "string": "Fundne filtre"
+      }
+    },
+    "search": {
+      "string": "Søg"
+    },
+    "errors": {
+      "empty": {
+        "string": "Indtast en søgeforespørgsel"
+      },
+      "fail": {
+        "string": "Søgningen mislykkedes"
+      }
     }
+  }
 }

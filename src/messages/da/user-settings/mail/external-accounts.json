@@ -1,267 +1,267 @@
 {
-    "US_MAIL_EXTERNAL_ACCOUNTS": {
+  "US_MAIL_EXTERNAL_ACCOUNTS": {
+    "title": {
+      "string": "Eksterne konti"
+    },
+    "sections": {
+      "imap": {
+        "string": "Indgående mail (IMAP)"
+      },
+      "smtp": {
+        "string": "Udgående mail (SMTP)"
+      },
+      "identity": {
+        "string": "Identities"
+      },
+      "preferences": {
+        "string": "Preferences"
+      },
+      "certificate": {
+        "string": "S/MIME-certifikat"
+      },
+      "receipts": {
+        "string": "Receipts",
+        "description": "When I receive a request for a return receipt"
+      }
+    },
+    "list": {
+      "title": {
+        "string": "Dine eksterne konti"
+      },
+      "add_button": {
+        "string": "Add Account"
+      },
+      "edit_button": {
+        "string": "Rediger"
+      },
+      "edit_button_aria": {
+        "string": "Redigér kontoen {email}"
+      },
+      "delete_button_aria": {
+        "string": "Slet kontoen {email}"
+      },
+      "delete_confirm_title": {
+        "string": "{name}"
+      },
+      "delete_confirm_desc": {
+        "string": "Er du sikker på, at du vil slette {name}? Denne handling kan ikke fortrydes."
+      },
+      "cancel_button": {
+        "string": "Annuller"
+      },
+      "confirm_delete_button": {
+        "string": "Slet"
+      },
+      "empty": {
+        "string": "Ingen IMAP-konti konfigureret endnu. Tilføj din første konto for at komme i gang."
+      }
+    },
+    "edit": {
+      "title": {
+        "string": "Redigér ekstern konto"
+      },
+      "back_button": {
+        "string": "Back to list"
+      },
+      "readonly_notice": {
+        "string": "De fleste indstillinger er skrivebeskyttede."
+      }
+    },
+    "new": {
+      "title": {
+        "string": "Ny ekstern konto"
+      },
+      "description": {
+        "string": "Konfigurér en ny ekstern IMAP-konto"
+      },
+      "back_button": {
+        "string": "Annuller"
+      },
+      "create_button": {
+        "string": "Opret konto"
+      }
+    },
+    "labels": {
+      "name": "Name",
+      "email": "Email",
+      "replyTo": "Reply to",
+      "receipts": {
+        "never": "Never",
+        "always": "Always",
+        "ask": "Ask",
+        "neverSend": "Send aldrig en kvittering for modtagelse",
+        "allowSome": "Tillad kvitteringer for modtagelse for visse meddelelser",
+        "notToCc": "Hvis jeg ikke er i Til eller Cc på meddelelsen",
+        "outsideDomain": "Hvis afsenderen er uden for mit domæne",
+        "other": "I alle andre tilfælde"
+      },
+      "server": {
+        "string": "Server"
+      },
+      "port": {
+        "string": "Port"
+      },
+      "encryption": {
+        "string": "Encryption"
+      },
+      "authType": {
+        "string": "Godkendelsestype"
+      },
+      "smtpServer": {
+        "string": "SMTP Server"
+      },
+      "smtpPort": {
+        "string": "Port"
+      },
+      "smtpAuth": {
+        "string": "SMTP-godkendelse"
+      },
+      "smtpEncryption": {
+        "string": "SMTP-kryptering"
+      },
+      "username": {
+        "string": "Username"
+      },
+      "password": {
+        "string": "Password"
+      },
+      "useDefaultIdentity": {
+        "string": "Brug altid standardidentitet for denne konto"
+      },
+      "readReceipts": {
+        "string": "Læskvitteringer"
+      },
+      "certificateName": {
+        "string": "Certifikatnavn"
+      },
+      "certificateFingerprint": {
+        "string": "Certifikat-fingeraftryk"
+      },
+      "certificateFile": {
+        "string": "S/MIME-certifikatfil"
+      },
+      "certificatePassword": {
+        "string": "Adgangskode til certifikatimport"
+      },
+      "selectedFile": {
+        "string": "Valgt fil"
+      }
+    },
+    "placeholders": {
+      "nameAccount": "Work account",
+      "imapServer": {
+        "string": "imap.example.com"
+      },
+      "smtpServer": {
+        "string": "smtp.example.com"
+      },
+      "username": {
+        "string": "user@example.com"
+      },
+      "password": {
+        "string": "Indtast din adgangskode"
+      },
+      "certificateName": {
+        "string": "Mit S/MIME-certifikat"
+      },
+      "certificateFingerprint": {
+        "string": "Genereres automatisk efter certifikatupload"
+      },
+      "certificatePassword": {
+        "string": "Indtast adgangskode til certifikatimport"
+      },
+      "signatureName": "Name"
+    },
+    "description": {
+      "useDefaultIdentity": {
+        "string": "Når du skriver meddelelser, bruges din standardidentitet i stedet for den kontospecifikke"
+      },
+      "password": {
+        "string": "Din kontoadgangskode (opbevares sikkert)"
+      },
+      "certificateName": {
+        "string": "Certifikatets navn"
+      },
+      "certificateFile": {
+        "string": "Upload din S/MIME-certifikatfil"
+      },
+      "certificatePassword": {
+        "string": "Adgangskode kræves for at importere certifikatfilen"
+      }
+    },
+    "encryption": {
+      "none": {
+        "string": "Ingen"
+      },
+      "ssl": {
+        "string": "SSL"
+      },
+      "tls": {
+        "string": "TLS"
+      }
+    },
+    "readReceipts": {
+      "never": {
+        "string": "Send aldrig læskvitteringer"
+      },
+      "selective": {
+        "string": "Tillad afsendelse af læskvitteringer for visse meddelelser"
+      }
+    },
+    "aria": {
+      "show_password": {
+        "string": "Vis adgangskode"
+      },
+      "hide_password": {
+        "string": "Skjul adgangskode"
+      }
+    },
+    "tabs": {
+      "settings": {
+        "string": "Indstillinger"
+      },
+      "security": {
+        "string": "Security"
+      }
+    },
+    "notifications": {
+      "success": {
         "title": {
-            "string": "External Accounts"
+          "string": "Succes"
         },
-        "sections": {
-            "imap": {
-                "string": "Incoming Mail (IMAP)"
-            },
-            "smtp": {
-                "string": "Outgoing Mail (SMTP)"
-            },
-            "identity": {
-                "string": "Identities"
-            },
-            "preferences": {
-                "string": "Preferences"
-            },
-            "certificate": {
-                "string": "S/MIME Certificate"
-            },
-            "receipts": {
-                "string": "Receipts",
-                "description": "When I receive a request for a return receipt"
-            }
+        "created": {
+          "string": "IMAP-kontoen blev oprettet"
         },
-        "list": {
-            "title": {
-                "string": "Your external Accounts"
-            },
-            "add_button": {
-                "string": "Add Account"
-            },
-            "edit_button": {
-                "string": "Rediger"
-            },
-            "edit_button_aria": {
-                "string": "Edit account {email}"
-            },
-            "delete_button_aria": {
-                "string": "Delete account {email}"
-            },
-            "delete_confirm_title": {
-                "string": "{name}"
-            },
-            "delete_confirm_desc": {
-                "string": "Are you sure you want to delete {name}? This action cannot be undone."
-            },
-            "cancel_button": {
-                "string": "Annuller"
-            },
-            "confirm_delete_button": {
-                "string": "Slet"
-            },
-            "empty": {
-                "string": "No IMAP accounts configured yet. Add your first account to get started."
-            }
+        "updated": {
+          "string": "IMAP-kontoen blev opdateret"
         },
-        "edit": {
-            "title": {
-                "string": "Edit External Account"
-            },
-            "back_button": {
-                "string": "Back to list"
-            },
-            "readonly_notice": {
-                "string": "Most settings are read-only."
-            }
-        },
-        "new": {
-            "title": {
-                "string": "New External Account"
-            },
-            "description": {
-                "string": "Configure a new external IMAP account"
-            },
-            "back_button": {
-                "string": "Annuller"
-            },
-            "create_button": {
-                "string": "Create Account"
-            }
-        },
-        "labels": {
-            "name": "Name",
-            "email": "Email",
-            "replyTo": "Reply to",
-            "receipts": {
-                "never": "Never",
-                "always": "Always",
-                "ask": "Ask",
-                "neverSend": "Never send a return receipt",
-                "allowSome": "Allow return receipts for some messages",
-                "notToCc": "If I'm not in the To or Cc of the message",
-                "outsideDomain": "If the sender is outside my domain",
-                "other": "In all other cases"
-            },
-            "server": {
-                "string": "Server"
-            },
-            "port": {
-                "string": "Port"
-            },
-            "encryption": {
-                "string": "Encryption"
-            },
-            "authType": {
-                "string": "Authentication type"
-            },
-            "smtpServer": {
-                "string": "SMTP Server"
-            },
-            "smtpPort": {
-                "string": "Port"
-            },
-            "smtpAuth": {
-                "string": "SMTP Authentication"
-            },
-            "smtpEncryption": {
-                "string": "SMTP Encryption"
-            },
-            "username": {
-                "string": "Username"
-            },
-            "password": {
-                "string": "Password"
-            },
-            "useDefaultIdentity": {
-                "string": "Always use default identity for this account"
-            },
-            "readReceipts": {
-                "string": "Read Receipts"
-            },
-            "certificateName": {
-                "string": "Certificate Name"
-            },
-            "certificateFingerprint": {
-                "string": "Certificate Fingerprint"
-            },
-            "certificateFile": {
-                "string": "S/MIME Certificate File"
-            },
-            "certificatePassword": {
-                "string": "Certificate Import Password"
-            },
-            "selectedFile": {
-                "string": "Selected file"
-            }
-        },
-        "placeholders": {
-            "nameAccount": "Work account",
-            "imapServer": {
-                "string": "imap.example.com"
-            },
-            "smtpServer": {
-                "string": "smtp.example.com"
-            },
-            "username": {
-                "string": "user@example.com"
-            },
-            "password": {
-                "string": "Enter your password"
-            },
-            "certificateName": {
-                "string": "My S/MIME Certificate"
-            },
-            "certificateFingerprint": {
-                "string": "Auto-generated after certificate upload"
-            },
-            "certificatePassword": {
-                "string": "Enter certificate import password"
-            },
-            "signatureName": "Name"
-        },
-        "description": {
-            "useDefaultIdentity": {
-                "string": "When composing messages, your default identity will be used instead of the account-specific one"
-            },
-            "password": {
-                "string": "Your account password (stored securely)"
-            },
-            "certificateName": {
-                "string": "Name of the certificate"
-            },
-            "certificateFile": {
-                "string": "Upload your S/MIME certificate file"
-            },
-            "certificatePassword": {
-                "string": "Password required to import the certificate file"
-            }
-        },
-        "encryption": {
-            "none": {
-                "string": "Ingen"
-            },
-            "ssl": {
-                "string": "SSL"
-            },
-            "tls": {
-                "string": "TLS"
-            }
-        },
-        "readReceipts": {
-            "never": {
-                "string": "Never send read receipts"
-            },
-            "selective": {
-                "string": "Allow sending read receipts for certain messages"
-            }
-        },
-        "aria": {
-            "show_password": {
-                "string": "Show password"
-            },
-            "hide_password": {
-                "string": "Hide password"
-            }
-        },
-        "tabs": {
-            "settings": {
-                "string": "Indstillinger"
-            },
-            "security": {
-                "string": "Security"
-            }
-        },
-        "notifications": {
-            "success": {
-                "title": {
-                    "string": "Succes"
-                },
-                "created": {
-                    "string": "IMAP account created successfully"
-                },
-                "updated": {
-                    "string": "IMAP account updated successfully"
-                },
-                "deleted": {
-                    "string": "Account deleted successfully"
-                }
-            },
-            "errors_api": {
-                "title": {
-                    "string": "Fejl"
-                },
-                "load_failed": {
-                    "string": "Failed to load external accounts. Please try again later."
-                },
-                "create_failed": {
-                    "string": "Failed to create external account. Please try again."
-                },
-                "update_failed": {
-                    "string": "Failed to update external account. Please try again."
-                },
-                "delete_failed": {
-                    "string": "Failed to delete account. Please try again."
-                }
-            }
-        },
-        "validation": {
-            "required": "Required",
-            "server-required": "Server address is required",
-            "server-invalid": "Must be a valid hostname or IP address",
-            "port-required": "Port is required"
+        "deleted": {
+          "string": "Kontoen blev slettet"
         }
+      },
+      "errors_api": {
+        "title": {
+          "string": "Fejl"
+        },
+        "load_failed": {
+          "string": "Kunne ikke indlæse eksterne konti. Prøv igen senere."
+        },
+        "create_failed": {
+          "string": "Kunne ikke oprette ekstern konto. Prøv igen."
+        },
+        "update_failed": {
+          "string": "Kunne ikke opdatere ekstern konto. Prøv igen."
+        },
+        "delete_failed": {
+          "string": "Kunne ikke slette kontoen. Prøv igen."
+        }
+      }
+    },
+    "validation": {
+      "required": "Required",
+      "server-required": "Serveradresse er påkrævet",
+      "server-invalid": "Skal være et gyldigt værtsnavn eller en gyldig IP-adresse",
+      "port-required": "Port er påkrævet"
     }
+  }
 }

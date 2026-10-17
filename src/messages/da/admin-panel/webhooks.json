@@ -1,68 +1,68 @@
 {
-    "AP_WEBHOOKS": {
-        "title": {
-            "string": "Webhooks"
-        },
-        "description": {
-            "string": "Outbound webhooks for n8n, Make, and other automation platforms. Events trigger HTTP POST with HMAC-signed payloads."
-        },
-        "form": {
-            "add": {
-                "string": "Add Webhook"
-            },
-            "cancel": {
-                "string": "Annuller"
-            },
-            "title": {
-                "string": "New Webhook"
-            },
-            "url": {
-                "string": "Webhook URL"
-            },
-            "name": {
-                "string": "Display Name"
-            },
-            "name_placeholder": {
-                "string": "e.g. n8n Workflow"
-            },
-            "secret": {
-                "string": "Signing Secret"
-            },
-            "secret_placeholder": {
-                "string": "HMAC secret (optional)"
-            },
-            "events": {
-                "string": "Events"
-            },
-            "create": {
-                "string": "Create Webhook"
-            }
-        },
-        "create": {
-            "success": {
-                "string": "Webhook created"
-            },
-            "error": {
-                "string": "Failed to create webhook"
-            }
-        },
-        "delete": {
-            "success": {
-                "string": "Webhook deleted"
-            },
-            "error": {
-                "string": "Failed to delete"
-            }
-        },
-        "list": {
-            "empty": {
-                "string": "No webhooks configured. Click Add Webhook to get started."
-            }
-        },
-        "errors": {
-            "fields": {
-                "string": "URL and at least one event are required"
-            }
-        }
+  "AP_WEBHOOKS": {
+    "title": {
+      "string": "Webhooks"
+    },
+    "description": {
+      "string": "Udgående webhooks til n8n, Make og andre automationsplatforme. Hændelser udløser HTTP POST med HMAC-signerede payloads."
+    },
+    "form": {
+      "add": {
+        "string": "Add Webhook"
+      },
+      "cancel": {
+        "string": "Annuller"
+      },
+      "title": {
+        "string": "New Webhook"
+      },
+      "url": {
+        "string": "Webhook URL"
+      },
+      "name": {
+        "string": "Display Name"
+      },
+      "name_placeholder": {
+        "string": "f.eks. n8n-workflow"
+      },
+      "secret": {
+        "string": "Signeringshemmelighed"
+      },
+      "secret_placeholder": {
+        "string": "HMAC-hemmelighed (valgfrit)"
+      },
+      "events": {
+        "string": "Events"
+      },
+      "create": {
+        "string": "Opret webhook"
+      }
+    },
+    "create": {
+      "success": {
+        "string": "Webhooken er oprettet"
+      },
+      "error": {
+        "string": "Kunne ikke oprette webhooken"
+      }
+    },
+    "delete": {
+      "success": {
+        "string": "Webhooken er slettet"
+      },
+      "error": {
+        "string": "Kunne ikke slette"
+      }
+    },
+    "list": {
+      "empty": {
+        "string": "Ingen webhooks konfigureret. Klik på Tilføj webhook for at komme i gang."
+      }
+    },
+    "errors": {
+      "fields": {
+        "string": "URL og mindst én hændelse er påkrævet"
+      }
     }
+  }
 }

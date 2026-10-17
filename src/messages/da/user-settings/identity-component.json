@@ -1,26 +1,26 @@
 {
   "IDENTITY_COMPONENT": {
     "labels": {
-      "name": "Identity Name",
-      "email": "Email Address",
+      "name": "Identitetsnavn",
+      "email": "E-mailadresse",
       "replyTo": "Reply To",
       "newIdentity": "New Identity",
       "default": "Default",
-      "removeIdentity": "Remove Identity",
-      "atLeastOneIdentity": "At least one identity is required",
+      "removeIdentity": "Fjern identitet",
+      "atLeastOneIdentity": "Mindst én identitet er påkrævet",
       "useDefaultIdentity": {
         "string": "Brug som standardidentitet"
       },
-      "setAsDefault": "Set as default",
-      "defaultDescription": "This identity will be used by default when composing new messages",
-      "mainIdentityEmail": "This is your main email address and cannot be changed",
-      "nameNotEditable": "Name editing is disabled by administrator",
-      "replyToNotEditable": "Reply-To editing is disabled by administrator",
+      "setAsDefault": "Angiv som standard",
+      "defaultDescription": "Denne identitet bruges som standard ved skrivning af nye meddelelser",
+      "mainIdentityEmail": "Dette er din primære e-mailadresse og kan ikke ændres",
+      "nameNotEditable": "Redigering af navn er deaktiveret af administratoren",
+      "replyToNotEditable": "Redigering af Reply-To er deaktiveret af administratoren",
       "signatures": "Signatures",
-      "signaturesDescription": "Create and manage email signatures for this identity",
-      "signaturePlaceholder": "Enter signature name",
-      "addIdentity": "Add an identity",
-      "allowsCustom": "You can add and manage additional identities"
+      "signaturesDescription": "Opret og administrér e-mailsignaturer for denne identitet",
+      "signaturePlaceholder": "Indtast signaturnavn",
+      "addIdentity": "Tilføj en identitet",
+      "allowsCustom": "Du kan tilføje og administrére yderligere identiteter"
     },
     "description": {
       "useDefaultIdentity": {
@@ -28,10 +28,10 @@
       }
     },
     "accessibility": {
-      "toggleCollapse": "Toggle identity details",
+      "toggleCollapse": "Vis/skjul identitetsdetaljer",
       "expandIdentity": "Expand",
       "collapseIdentity": "Collapse",
-      "removeIcon": "Remove identity button"
+      "removeIcon": "Knap til at fjerne identitet"
     }
   }
 }
