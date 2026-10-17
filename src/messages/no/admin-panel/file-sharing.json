@@ -1,57 +1,57 @@
 {
-    "AP_FILESHARE": {
-        "title": {
-            "string": "File Sharing"
-        },
-        "description": {
-            "string": "Create shareable links for files with optional password protection, expiration, and download tracking."
-        },
-        "form": {
-            "share": {
-                "string": "Share File"
-            },
-            "cancel": {
-                "string": "Avbryt"
-            },
-            "title": {
-                "string": "Share a File"
-            },
-            "filename": {
-                "string": "Filename"
-            },
-            "size": {
-                "string": "Size (bytes)"
-            },
-            "expires": {
-                "string": "Expires in (days)"
-            },
-            "password": {
-                "string": "Password"
-            },
-            "password_hint": {
-                "string": "Leave empty for no password"
-            },
-            "submit": {
-                "string": "Create Share Link"
-            }
-        },
-        "create": {
-            "success": {
-                "string": "Share link created"
-            },
-            "error": {
-                "string": "Failed to create share"
-            }
-        },
-        "list": {
-            "empty": {
-                "string": "No shared files. Create a share link to securely distribute files."
-            }
-        },
-        "errors": {
-            "fields": {
-                "string": "Filename and size are required"
-            }
-        }
+  "AP_FILESHARE": {
+    "title": {
+      "string": "File Sharing"
+    },
+    "description": {
+      "string": "Opprett delbare lenker for filer med valgfri passordbeskyttelse, utløp og sporing av nedlastinger."
+    },
+    "form": {
+      "share": {
+        "string": "Share File"
+      },
+      "cancel": {
+        "string": "Avbryt"
+      },
+      "title": {
+        "string": "Share a File"
+      },
+      "filename": {
+        "string": "Filename"
+      },
+      "size": {
+        "string": "Size (bytes)"
+      },
+      "expires": {
+        "string": "Utløper om (dager)"
+      },
+      "password": {
+        "string": "Password"
+      },
+      "password_hint": {
+        "string": "La stå tom for å slippe passord"
+      },
+      "submit": {
+        "string": "Opprett delingslenke"
+      }
+    },
+    "create": {
+      "success": {
+        "string": "Delingslenken er opprettet"
+      },
+      "error": {
+        "string": "Kunne ikke opprette deling"
+      }
+    },
+    "list": {
+      "empty": {
+        "string": "Ingen delte filer. Opprett en delingslenke for å distribuere filer sikkert."
+      }
+    },
+    "errors": {
+      "fields": {
+        "string": "Filnavn og størrelse er påkrevd"
+      }
     }
+  }
 }

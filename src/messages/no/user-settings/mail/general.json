@@ -161,10 +161,10 @@
       "string": "Skriv e-post-vindu",
       "context": "Dropdown label to know where to open compose in",
       "popup": {
-        "string": "Compose email in a popup"
+        "string": "Skriv e-post i et popup-vindu"
       },
       "inline": {
-        "string": "Compose email inside the webmail"
+        "string": "Skriv e-post inne i nettposten"
       }
     }
   }
