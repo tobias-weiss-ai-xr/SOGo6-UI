@@ -9,103 +9,103 @@
   "close_dialog": "Dialog schließen",
   "close_menu": "Menü schließen",
   "open_menu": "Menü öffnen",
-  "toggle_menu": "Toggle menu",
-  "toggle_dark_mode": "Toggle dark mode",
-  "increase_contrast": "Increase contrast",
-  "decrease_contrast": "Decrease contrast",
-  "reset_contrast": "Reset contrast",
+  "toggle_menu": "Menü umschalten",
+  "toggle_dark_mode": "Dunkelmodus umschalten",
+  "increase_contrast": "Kontrast erhöhen",
+  "decrease_contrast": "Kontrast verringern",
+  "reset_contrast": "Kontrast zurücksetzen",
   "loading": "Laden...",
-  "saving": "Saving...",
-  "submitting": "Submitting...",
-  "deleting": "Deleting...",
-  "processing": "Processing...",
-  "action_complete": "Action completed successfully",
-  "save_success": "Saved successfully",
-  "delete_success": "Deleted successfully",
-  "update_success": "Updated successfully",
+  "saving": "Speichern...",
+  "submitting": "Wird gesendet...",
+  "deleting": "Wird gelöscht...",
+  "processing": "Wird verarbeitet...",
+  "action_complete": "Aktion erfolgreich abgeschlossen",
+  "save_success": "Erfolgreich gespeichert",
+  "delete_success": "Erfolgreich gelöscht",
+  "update_success": "Erfolgreich aktualisiert",
   "something_went_wrong": "Etwas ist schiefgelaufen",
   "error": "Fehler",
   "warning": "Warnung",
   "info": "Information",
   "required_field_error": "Dieses Feld ist erforderlich",
-  "invalid_format_error": "Invalid format",
+  "invalid_format_error": "Ungültiges Format",
   "invalid_email_error": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
   "password_mismatch_error": "Passwörter stimmen nicht überein",
-  "min_length_error": "Must be at least {min} characters",
-  "max_length_error": "Must be no more than {max} characters",
-  "generic_error": "An error occurred",
+  "min_length_error": "Muss mindestens {min} Zeichen lang sein",
+  "max_length_error": "Darf höchstens {max} Zeichen lang sein",
+  "generic_error": "Ein Fehler ist aufgetreten",
   "try_again": "Erneut versuchen",
-  "contact_support": "Contact support",
-  "navigated_to": "Navigated to {page}",
-  "page_loaded": "Page loaded",
-  "item_added": "{item} added",
-  "item_removed": "{item} removed",
-  "item_updated": "{item} updated",
-  "items_selected": "{count} items selected",
-  "no_items_selected": "No items selected",
-  "all_items_selected": "All {count} items selected",
-  "search_results": "{count} search results",
-  "no_search_results": "No search results found",
-  "filter_applied": "Filter applied",
-  "filter_cleared": "Filter cleared",
-  "sort_changed": "Sort order changed",
-  "view_changed": "View changed",
+  "contact_support": "Support kontaktieren",
+  "navigated_to": "Zu {page} navigiert",
+  "page_loaded": "Seite geladen",
+  "item_added": "{item} hinzugefügt",
+  "item_removed": "{item} entfernt",
+  "item_updated": "{item} aktualisiert",
+  "items_selected": "{count} Elemente ausgewählt",
+  "no_items_selected": "Keine Elemente ausgewählt",
+  "all_items_selected": "Alle {count} Elemente ausgewählt",
+  "search_results": "{count} Suchergebnisse",
+  "no_search_results": "Keine Suchergebnisse gefunden",
+  "filter_applied": "Filter angewendet",
+  "filter_cleared": "Filter zurückgesetzt",
+  "sort_changed": "Sortierung geändert",
+  "view_changed": "Ansicht geändert",
   " debris": "",
-  "language_changed": "Language changed to {language}",
-  "theme_changed": "Theme changed to {theme}",
-  "show_password": "Show password",
-  "hide_password": "Hide password",
+  "language_changed": "Sprache zu {language} geändert",
+  "theme_changed": "Design zu {theme} geändert",
+  "show_password": "Passwort anzeigen",
+  "hide_password": "Passwort verbergen",
   "expand": "Erweitern",
   "collapse": "Einklappen",
-  "show_more": "Show more",
-  "show_less": "Show less",
-  "next_page": "Next page",
-  "previous_page": "Previous page",
-  "first_page": "First page",
-  "last_page": "Last page",
-  "go_to_page": "Go to page {page}",
-  "total_pages": "of {total}",
-  "rows_per_page": "{count} rows per page",
+  "show_more": "Mehr anzeigen",
+  "show_less": "Weniger anzeigen",
+  "next_page": "Nächste Seite",
+  "previous_page": "Vorherige Seite",
+  "first_page": "Erste Seite",
+  "last_page": "Letzte Seite",
+  "go_to_page": "Zur Seite {page} gehen",
+  "total_pages": "von {total}",
+  "rows_per_page": "{count} Zeilen pro Seite",
   "select_all": "Alle auswählen",
   "deselect_all": "Alle abwählen",
-  "selected": "Selected",
-  "not_selected": "Not selected",
-  "partially_selected": "Partially selected",
-  "drag_and_drop": "Drag and drop to reorder",
-  "drop_here": "Drop here",
-  "copy": "Copy",
-  "cut": "Cut",
-  "paste": "Paste",
-  "undo": "Undo",
-  "redo": "Redo",
-  "tab_list": "Tab list",
-  "tab_panel": "Tab panel",
-  "modal": "Modal dialog",
-  "alert_dialog": "Alert dialog",
-  "confirm_dialog": "Confirmation dialog",
+  "selected": "Ausgewählt",
+  "not_selected": "Nicht ausgewählt",
+  "partially_selected": "Teilweise ausgewählt",
+  "drag_and_drop": "Zum Neuanordnen ziehen und ablegen",
+  "drop_here": "Hier ablegen",
+  "copy": "Kopieren",
+  "cut": "Ausschneiden",
+  "paste": "Einfügen",
+  "undo": "Rückgängig",
+  "redo": "Wiederholen",
+  "tab_list": "Registerkartenliste",
+  "tab_panel": "Registerkartenbereich",
+  "modal": "Modaler Dialog",
+  "alert_dialog": "Warnungsdialog",
+  "confirm_dialog": "Bestätigungsdialog",
   "dialog": "Dialog",
-  "menu": "Menu",
-  "submenu": "Submenu",
-  "menu_item": "Menu item",
-  "checkbox": "Checkbox",
-  "radio_button": "Radio button",
-  "radio_group": "Radio group",
-  "switch": "Switch",
-  "slider": "Slider",
-  "combobox": "Combobox",
-  "listbox": "Listbox",
+  "menu": "Menü",
+  "submenu": "Untermenü",
+  "menu_item": "Menüeintrag",
+  "checkbox": "Kontrollkästchen",
+  "radio_button": "Optionsfeld",
+  "radio_group": "Optionsgruppe",
+  "switch": "Schalter",
+  "slider": "Schieberegler",
+  "combobox": "Kombinationsfeld",
+  "listbox": "Auswahlliste",
   "option": "Option",
-  "grid": "Grid",
-  "grid_cell": "Grid cell",
-  "row": "Row",
-  "column": "Column",
-  "tree": "Tree",
-  "tree_item": "Tree item",
-  "toolbar": "Toolbar",
+  "grid": "Raster",
+  "grid_cell": "Rasterzelle",
+  "row": "Zeile",
+  "column": "Spalte",
+  "tree": "Baumstruktur",
+  "tree_item": "Struktureintrag",
+  "toolbar": "Symbolleiste",
   "status": "Status",
-  "progress": "Progress",
+  "progress": "Fortschritt",
   "timer": "Timer",
-  "marquee": "Marquee",
+  "marquee": "Lauftext",
   "CONTACT_FORM": {
     "emails": {
       "string": "E-Mail-Adressen",
@@ -188,7 +188,7 @@
       "context": "Button label to edit the contact note."
     },
     "add_note": {
-      "string": "Notiz Hinzufügen",
+      "string": "Notiz hinzufügen",
       "context": "Button label to add a note to the contact."
     },
     "no_notes": {
@@ -758,7 +758,7 @@
         "string": "Pro Seite"
       },
       "contacts_page_hint": {
-        "string": "Die Seitenierung gilt für Kontakte; alle Listen werden angezeigt.",
+        "string": "Die Paginierung gilt für Kontakte; alle Listen werden angezeigt.",
         "context": "Hint that list pagination is contact-scoped"
       }
     }
@@ -839,7 +839,7 @@
         "string": "Adressbuch-Freigabe"
       },
       "description": {
-        "string": "Teilen Sie dieses Adressbuch mit anderen Benutzern. Geteilte Benutzer können Kontakte basierend auf der von Ihnen gewhrten Berechtigungsstufe anzeigen oder bearbeiten."
+        "string": "Teilen Sie dieses Adressbuch mit anderen Benutzern. Geteilte Benutzer können Kontakte basierend auf der von Ihnen gewährten Berechtigungsstufe anzeigen oder bearbeiten."
       },
       "addUser": {
         "string": "Benutzer hinzufügen"
@@ -945,7 +945,7 @@
         "string": "Exportieren Sie dieses Adressbuch in eine Datei."
       },
       "title_book": {
-        "string": "Export {name}"
+        "string": "Export aus {name}"
       },
       "format": {
         "string": "Exportformat"
@@ -1812,61 +1812,61 @@
     },
     "export": {
       "title": {
-        "string": "Current Configuration"
+        "string": "Aktuelle Konfiguration"
       },
       "copy": {
-        "string": "Copy"
+        "string": "Kopieren"
       },
       "copied": {
-        "string": "Copied!"
+        "string": "Kopiert!"
       },
       "download": {
-        "string": "Download JSON"
+        "string": "JSON herunterladen"
       },
       "success": {
-        "string": "Downloaded"
+        "string": "Heruntergeladen"
       }
     },
     "import": {
       "title": {
-        "string": "Import Configuration"
+        "string": "Konfiguration importieren"
       },
       "description_label": {
-        "string": "Description"
+        "string": "Beschreibung"
       },
       "description_placeholder": {
-        "string": "e.g. Update mail server settings"
+        "string": "z. B. Mailserver-Einstellungen aktualisieren"
       },
       "placeholder": {
-        "string": "Paste JSON configuration here..."
+        "string": "JSON-Konfiguration hier einfügen..."
       },
       "button": {
-        "string": "Apply Configuration"
+        "string": "Konfiguration anwenden"
       },
       "running": {
-        "string": "Applying..."
+        "string": "Wird angewendet..."
       },
       "success": {
-        "string": "Configuration v{{version}} applied"
+        "string": "Konfiguration v{{version}} angewendet"
       },
       "error": {
-        "string": "Import failed"
+        "string": "Import fehlgeschlagen"
       }
     },
     "history": {
       "title": {
-        "string": "Version History"
+        "string": "Versionsverlauf"
       },
       "empty": {
-        "string": "No configuration snapshots yet."
+        "string": "Noch keine Konfigurations-Snapshots vorhanden."
       }
     },
     "errors": {
       "empty": {
-        "string": "Configuration JSON is empty"
+        "string": "Die JSON-Konfiguration ist leer"
       },
       "parse": {
-        "string": "Invalid JSON — please check syntax"
+        "string": "Ungültiges JSON — bitte Syntax prüfen"
       }
     }
   },
@@ -1930,28 +1930,28 @@
       "string": "Schemaversionen und Migrationsverlauf verfolgen. Migrationen über das Admin-Panel ausführen."
     },
     "current_version": {
-      "string": "Current Schema Version"
+      "string": "Aktuelle Schemaversion"
     },
     "run": {
       "button": {
-        "string": "Run Migration"
+        "string": "Migration ausführen"
       },
       "running": {
         "string": "Wird ausgeführt..."
       },
       "success": {
-        "string": "Migration applied"
+        "string": "Migration angewendet"
       },
       "error": {
-        "string": "Migration failed"
+        "string": "Migration fehlgeschlagen"
       }
     },
     "history": {
       "title": {
-        "string": "Migration History"
+        "string": "Migrationsverlauf"
       },
       "empty": {
-        "string": "No migrations recorded."
+        "string": "Keine Migrationen aufgezeichnet."
       }
     }
   },
@@ -2261,7 +2261,7 @@
         "description": {
           "string": "Wählen Sie die Authentifizierungsmethode für Benutzer. 'Plain' bedeutet klassischer Benutzername/Passwort"
         },
-        "developer_comment": "Options might include LDAP, SQL, etc."
+        "developer_comment": "Zu den Optionen können LDAP, SQL usw. gehören."
       },
       "SOGO_D_CAS_URL": {
         "name": {
@@ -2477,7 +2477,7 @@
         "description": {
           "string": "Wählen Sie einen eindeutigennamen für diese Benutzerquelle aus, dieser wird nicht Benutzern angezeigt"
         },
-        "developer_comment": "Only for SOGo to differentiate differents User SOurce"
+        "developer_comment": "Nur für SOGo, um verschiedene Benutzerquellen zu unterscheiden"
       },
       "US_TYPE": {
         "name": {
@@ -2486,7 +2486,7 @@
         "description": {
           "string": "Legen Sie den Typ Ihrer Benutzerquelle fest"
         },
-        "developer_comment": "Only ldap and sql supported for now"
+        "developer_comment": "Derzeit werden nur LDAP und SQL unterstützt"
       },
       "US_LDAP_HOSTNAME": {
         "name": {
@@ -2567,7 +2567,7 @@
         "description": {
           "string": "Zusätzlicher Filter für LDAP-Abfragen. Verwenden Sie '=', '!=', 'AND', 'OR' und Klammern. Beispiel: '(objectClass='mailUser' OR objectClass!='mailGroup') AND accountStatus='active'"
         },
-        "developer_comment": "Use SOGo's syntax and not ldap syntax for filter"
+        "developer_comment": "Verwenden Sie die SOGo-Syntax und nicht die LDAP-Syntax für den Filter"
       },
       "US_LDAP_PWD_POLICY": {
         "name": {
@@ -3772,37 +3772,37 @@
       "string": "Verfügbarkeitsabfrage"
     },
     "description": {
-      "string": "Visual attendee schedule overlay. Check availability when creating events."
+      "string": "Visuelle Verfügbarkeitsübersicht der Teilnehmer. Prüfen Sie die Verfügbarkeit beim Erstellen von Terminen."
     },
     "form": {
       "title": {
-        "string": "Check Availability"
+        "string": "Verfügbarkeit prüfen"
       },
       "participants": {
-        "string": "Participants"
+        "string": "Teilnehmer"
       },
       "start": {
         "string": "Start"
       },
       "end": {
-        "string": "End"
+        "string": "Ende"
       },
       "lookup": {
-        "string": "Look Up"
+        "string": "Abfragen"
       }
     },
     "results": {
       "title": {
-        "string": "Busy Slots"
+        "string": "Belegte Zeitfenster"
       }
     },
     "errors": {
       "fields": {
-        "string": "At least one participant is required"
+        "string": "Mindestens ein Teilnehmer ist erforderlich"
       }
     },
     "error": {
-      "string": "Lookup failed"
+      "string": "Abfrage fehlgeschlagen"
     }
   },
   "AP_HEALTH": {
@@ -3817,7 +3817,7 @@
         "string": "Alle Systeme betriebsbereit"
       },
       "degraded": {
-        "string": "Degraded"
+        "string": "Eingeschränkt"
       }
     },
     "overview": {
@@ -3828,12 +3828,12 @@
         "string": "Version"
       },
       "services": {
-        "string": "Services Healthy"
+        "string": "Dienste betriebsbereit"
       }
     },
     "errors": {
       "load_failed": {
-        "string": "Failed to load health data"
+        "string": "Integritätsdaten konnten nicht geladen werden"
       }
     }
   },
@@ -6981,8 +6981,8 @@
       "45min": "45 Minuten vorher",
       "1h": "1 Stunde vorher",
       "2h": "2 Stunden vorher",
-      "5h": "5 hour before",
-      "15h": "15 hour before",
+      "5h": "5 Stunden vorher",
+      "15h": "15 Stunden vorher",
       "1d": "1 Tag vorher",
       "2d": "2 Tage vorher",
       "1w": "1 Woche vorher"
@@ -7012,37 +7012,37 @@
     "save": {
       "default": {
         "string": "Speichern",
-        "description": "Click to save the form data."
+        "description": "Klicken Sie, um die Formulardaten zu speichern."
       }
     },
     "delete": {
       "default": {
         "string": "Löschen",
-        "description": "Click to delete the selected item."
+        "description": "Klicken Sie, um das ausgewählte Element zu löschen."
       }
     },
     "edit": {
       "default": {
         "string": "Bearbeiten",
-        "description": "Click to edit the selected item."
+        "description": "Klicken Sie, um das ausgewählte Element zu bearbeiten."
       }
     },
     "cancel": {
       "default": {
         "string": "Abbrechen",
-        "description": "Click to cancel the form submission."
+        "description": "Klicken Sie, um das Absenden des Formulars abzubrechen."
       }
     },
     "create": {
       "default": {
         "string": "Erstellen",
-        "description": "Click to create a new item."
+        "description": "Klicken Sie, um ein neues Element zu erstellen."
       }
     },
     "reset": {
       "default": {
         "string": "Zurücksetzen",
-        "description": "Click to reset the form fields to their default values."
+        "description": "Klicken Sie, um die Formularfelder auf ihre Standardwerte zurückzusetzen."
       }
     },
     "enabled": {
@@ -7072,39 +7072,39 @@
   "FORM_PASSWORD": {
     "title": {
       "string": "Passwort ändern",
-      "description": "Password form title."
+      "description": "Titel des Passwort-Formulars."
     },
     "description": {
-      "string": "Ensure your account is using a long, random password to stay secure.",
-      "description": "Password form description."
+      "string": "Stellen Sie sicher, dass Ihr Konto ein langes, zufälliges Passwort verwendet, um die Sicherheit zu gewährleisten.",
+      "description": "Beschreibung des Passwort-Formulars."
     },
     "current": {
       "string": "Aktuelles Passwort",
-      "description": "Label for the current password input field."
+      "description": "Bezeichnung für das Eingabefeld des aktuellen Passworts."
     },
     "new": {
       "string": "Neues Passwort",
-      "description": "Label for the new password input field."
+      "description": "Bezeichnung für das Eingabefeld des neuen Passworts."
     },
     "confirm": {
       "string": "Neues Passwort bestätigen",
-      "description": "Label for the confirm new password input field."
+      "description": "Bezeichnung für das Eingabefeld zur Bestätigung des neuen Passworts."
     },
     "success": {
       "string": "Passwort erfolgreich geändert",
-      "description": "Success message after password change."
+      "description": "Erfolgsmeldung nach dem Ändern des Passworts."
     },
     "error": {
       "string": "Passwortänderung fehlgeschlagen",
-      "description": "Error message when password change fails."
+      "description": "Fehlermeldung, wenn das Ändern des Passworts fehlschlägt."
     },
     "mismatch": {
       "string": "Passwörter stimmen nicht überein",
-      "description": "Error message when new password and confirm password don't match."
+      "description": "Fehlermeldung, wenn neues Passwort und Bestätigung nicht übereinstimmen."
     },
     "saving": {
       "string": "Passwort wird geändert…",
-      "description": "Loading text while password is being changed."
+      "description": "Ladetext, während das Passwort geändert wird."
     }
   },
   "FORM_SUCCESS": {},
@@ -7215,122 +7215,122 @@
       "smime": {
         "encrypted": {
           "string": "Verschlüsselt",
-          "description": "Badge shown when a mail was S/MIME encrypted and could be decrypted"
+          "description": "Badge, das angezeigt wird, wenn eine E-Mail S/MIME-verschlüsselt war und entschlüsselt werden konnte"
         },
         "signature_valid": {
           "string": "Signiert — Signatur gültig",
-          "description": "Badge shown when the S/MIME signature verified successfully"
+          "description": "Badge, das angezeigt wird, wenn die S/MIME-Signatur erfolgreich geprüft wurde"
         },
         "signature_invalid": {
           "string": "Signatur ungültig",
-          "description": "Badge shown when the S/MIME signature failed verification"
+          "description": "Badge, das angezeigt wird, wenn die S/MIME-Signatur die Prüfung nicht bestanden hat"
         },
         "signature_untrusted": {
           "string": "Signiert — Signatur gültig, CA nicht vertrauenswürdig",
-          "description": "Badge shown when the signature verifies but the signer's CA does not chain to the configured trust bundle"
+          "description": "Badge, das angezeigt wird, wenn die Signatur gültig ist, die Zertifizierungsstelle des Unterzeichners aber nicht zur konfigurierten Vertrauenskette gehört"
         },
         "encrypted_not_readable": {
           "string": "Verschlüsselt — kein Zertifikat",
-          "description": "Badge shown when a mail is S/MIME encrypted but no key is available to decrypt it"
+          "description": "Badge, das angezeigt wird, wenn eine E-Mail S/MIME-verschlüsselt ist, aber kein Schlüssel zum Entschlüsseln verfügbar ist"
         }
       },
       "action-bar": {
         "reply": {
           "string": "Antworten",
-          "description": "Reply to the current message"
+          "description": "Auf die aktuelle Nachricht antworten"
         },
         "reply_all": {
           "string": "Allen antworten",
-          "description": "Reply to all recipients of the current message"
+          "description": "Allen Empfängern der aktuellen Nachricht antworten"
         },
         "forward": {
           "string": "Weiterleitung",
-          "description": "Forward the current message to another recipient"
+          "description": "Die aktuelle Nachricht an einen anderen Empfänger weiterleiten"
         },
         "edit_draft": {
           "string": "Bearbeiten",
-          "description": "Open the draft in the composer"
+          "description": "Den Entwurf im Editor öffnen"
         },
         "use_template": {
-          "string": "Use template",
-          "description": "Create a new draft from this template without modifying it"
+          "string": "Vorlage verwenden",
+          "description": "Einen neuen Entwurf aus dieser Vorlage erstellen, ohne sie zu verändern"
         },
         "return": {
-          "string": "Return to search results",
-          "description": "Return to search results"
+          "string": "Zurück zu den Suchergebnissen",
+          "description": "Zu den Suchergebnissen zurückkehren"
         },
         "delete": {
           "string": "Löschen",
-          "description": "Delete the current message"
+          "description": "Die aktuelle Nachricht löschen"
         },
         "report_spam": {
-          "string": "Mark as spam",
-          "description": "Mark as spam"
+          "string": "Als Spam markieren",
+          "description": "Als Spam markieren"
         },
         "mark_unread": {
-          "string": "Mark as unread",
-          "description": "Mark as unread"
+          "string": "Als ungelesen markieren",
+          "description": "Als ungelesen markieren"
         },
         "label": {
           "string": "Label",
           "description": "Label",
           "coming_soon": {
-            "string": "Labels coming soon",
-            "description": "Tooltip when label picker is not yet available"
+            "string": "Labels sind bald verfügbar",
+            "description": "Tooltip, solange die Label-Auswahl noch nicht verfügbar ist"
           }
         },
         "move_to_inbox": {
-          "string": "Move to Inbox",
-          "description": "Move message from Junk back to the Inbox"
+          "string": "In den Posteingang verschieben",
+          "description": "Nachricht aus dem Junk-Ordner zurück in den Posteingang verschieben"
         },
         "archive": {
-          "string": "Archiv",
-          "description": "Move message to archive folder"
+          "string": "Archivieren",
+          "description": "Nachricht in den Archivordner verschieben"
         },
         "download": {
-          "string": "Download",
-          "description": "Download message as .eml file"
+          "string": "Herunterladen",
+          "description": "Nachricht als .eml-Datei herunterladen"
         },
         "move": {
-          "string": "Move to folder",
-          "description": "Move message to another folder"
+          "string": "In Ordner verschieben",
+          "description": "Nachricht in einen anderen Ordner verschieben"
         },
         "print": {
           "string": "Drucken",
-          "description": "Print the current message"
+          "description": "Die aktuelle Nachricht drucken"
         },
         "print_labels": {
           "from": {
             "string": "Von",
-            "description": "From label in print view"
+            "description": "Bezeichnung „Von“ in der Druckansicht"
           },
           "to": {
             "string": "An",
-            "description": "To label in print view"
+            "description": "Bezeichnung „An“ in der Druckansicht"
           },
           "cc": {
             "string": "Cc",
-            "description": "Cc label in print view"
+            "description": "Bezeichnung „Cc“ in der Druckansicht"
           },
           "date": {
             "string": "Datum",
-            "description": "Date label in print view"
+            "description": "Bezeichnung „Datum“ in der Druckansicht"
           },
           "attachments": {
-            "string": "Attachments",
-            "description": "Attachments label in print view"
+            "string": "Anhänge",
+            "description": "Bezeichnung „Anhänge“ in der Druckansicht"
           }
         },
         "view_source": {
-          "string": "View source",
-          "description": "View raw message source"
+          "string": "Quelltext anzeigen",
+          "description": "Den rohen Nachrichtenquelltext anzeigen"
         },
         "delete_confirm": {
           "title": {
             "string": "Nachricht löschen"
           },
           "message": {
-            "string": "This message will be moved to Trash."
+            "string": "Diese Nachricht wird in den Papierkorb verschoben."
           },
           "confirm": {
             "string": "Löschen"
@@ -7341,13 +7341,13 @@
         },
         "spam_confirm": {
           "title": {
-            "string": "Mark as spam"
+            "string": "Als Spam markieren"
           },
           "message": {
-            "string": "This message will be moved to Junk."
+            "string": "Diese Nachricht wird in den Junk-Ordner verschoben."
           },
           "confirm": {
-            "string": "Move to Junk"
+            "string": "In Junk verschieben"
           },
           "cancel": {
             "string": "Abbrechen"
@@ -7355,13 +7355,13 @@
         },
         "ham_confirm": {
           "title": {
-            "string": "Move to Inbox"
+            "string": "In den Posteingang verschieben"
           },
           "message": {
-            "string": "This message will be moved to your Inbox."
+            "string": "Diese Nachricht wird in Ihren Posteingang verschoben."
           },
           "confirm": {
-            "string": "Move to Inbox"
+            "string": "In den Posteingang verschieben"
           },
           "cancel": {
             "string": "Abbrechen"
@@ -7369,19 +7369,19 @@
         },
         "more": {
           "string": "Weitere Aktionen",
-          "description": "More actions"
+          "description": "Weitere Aktionen"
         },
         "next-mail": {
           "string": "Nächste E-Mail",
-          "description": "Next mail"
+          "description": "Nächste E-Mail"
         },
         "previous-mail": {
-          "string": "Previous mail",
-          "description": "Previous mail"
+          "string": "Vorherige E-Mail",
+          "description": "Vorherige E-Mail"
         },
         "snooze": {
-          "string": "Snooze",
-          "description": "Temporarily remove from inbox and return later"
+          "string": "Später erinnern",
+          "description": "Nachricht zeitweise aus dem Posteingang entfernen und später wieder anzeigen"
         },
         "move_to_folder": {
           "string": "In Ordner verschieben"
@@ -7389,244 +7389,244 @@
       },
       "content": {
         "external_images_warning": {
-          "string": "This message contains external images.  Click to display them.",
-          "description": "Warning: This message contains external images"
+          "string": "Diese Nachricht enthält externe Bilder. Klicken Sie, um sie anzuzeigen.",
+          "description": "Warnung: Diese Nachricht enthält externe Bilder"
         },
         "download_attachment": {
-          "string": "Download attachment",
-          "description": "ARIA label for the download attachment link"
+          "string": "Anhang herunterladen",
+          "description": "ARIA-Beschriftung des Links zum Herunterladen des Anhangs"
         },
         "download_all_attachments": {
-          "string": "Download all attachments",
-          "description": "ARIA label for the download all attachments link"
+          "string": "Alle Anhänge herunterladen",
+          "description": "ARIA-Beschriftung des Links zum Herunterladen aller Anhänge"
         },
         "download_error": {
           "title": {
-            "string": "Download failed",
-            "description": "Title of the error toast shown when an attachment fails to download"
+            "string": "Download fehlgeschlagen",
+            "description": "Titel der Fehlermeldung, die angezeigt wird, wenn ein Anhang nicht heruntergeladen werden kann"
           },
           "message": {
-            "string": "The attachment could not be downloaded. Please try again.",
-            "description": "Message of the error toast shown when an attachment fails to download"
+            "string": "Der Anhang konnte nicht heruntergeladen werden. Bitte versuchen Sie es erneut.",
+            "description": "Text der Fehlermeldung, die angezeigt wird, wenn ein Anhang nicht heruntergeladen werden kann"
           }
         },
         "more_attachments_count": {
           "string": "+{count}",
-          "description": "Compact label to reveal additional hidden attachments (e.g. +3)"
+          "description": "Kompakte Bezeichnung zum Einblenden weiterer ausgeblendeter Anhänge (z. B. +3)"
         }
       },
       "header": {
         "from": {
           "string": "Von",
-          "description": "From"
+          "description": "Von"
         },
         "to": {
           "string": "An",
-          "description": "To"
+          "description": "An"
         },
         "cc": {
           "string": "Cc",
           "description": "Cc"
         },
         "unsubscribe": {
-          "string": "Unsubscribe",
-          "description": "Unsubscribe from the mailing list"
+          "string": "Abbestellen",
+          "description": "Von der Mailingliste abmelden"
         },
         "unsubscribe-dialog": {
           "message": {
             "string": "Möchten Sie diese Mailingliste abbestellen?",
-            "description": "Message in the unsubscribe dialog"
+            "description": "Meldung im Abmelde-Dialog"
           },
           "confirm": {
-            "string": "Unsubscribe",
-            "description": "Confirm the unsubscription"
+            "string": "Abbestellen",
+            "description": "Das Abbestellen bestätigen"
           },
           "cancel": {
             "string": "Abbrechen",
-            "description": "Cancel the unsubscription"
+            "description": "Das Abbestellen abbrechen"
           }
         },
         "contacts-badge": {
           "popover-view-contact": {
-            "string": "View contact",
-            "description": "Open the matching contact in the address book"
+            "string": "Kontakt anzeigen",
+            "description": "Den passenden Kontakt im Adressbuch öffnen"
           },
           "popover-add-to-addressbook": {
-            "string": "Add to address book",
-            "description": "Add the contact to the address book"
+            "string": "Zum Adressbuch hinzufügen",
+            "description": "Den Kontakt zum Adressbuch hinzufügen"
           },
           "popover-write-new-message": {
-            "string": "Write new message",
-            "description": "Write a new message to the contact"
+            "string": "Neue Nachricht schreiben",
+            "description": "Eine neue Nachricht an den Kontakt schreiben"
           }
         }
       }
     },
     "error": {
       "string": "Fehler",
-      "description": "Generic error title used when mails fail to load"
+      "description": "Allgemeiner Fehlertitel, der angezeigt wird, wenn E-Mails nicht geladen werden können"
     },
     "search": {
       "placeholder": {
         "string": "E-Mails durchsuchen",
-        "description": "Placeholder text for the email search input field"
+        "description": "Platzhaltertext für das E-Mail-Suchfeld"
       },
       "more_options": {
         "string": "Weitere Optionen",
-        "description": "Button to open more search options"
+        "description": "Schaltfläche, um weitere Suchoptionen zu öffnen"
       },
       "folders": {
         "string": "Ordner",
-        "description": "Label for the folders section in the search options"
+        "description": "Bezeichnung für den Ordnerbereich in den Suchoptionen"
       },
       "confirm": {
         "string": "Suchen",
-        "description": "Button to confirm and execute the email search"
+        "description": "Schaltfläche zum Bestätigen und Ausführen der E-Mail-Suche"
       },
       "in_message_content": {
-        "string": "In message content",
-        "description": "Option to search within the content of messages"
+        "string": "Im Nachrichteninhalt",
+        "description": "Option, um im Inhalt von Nachrichten zu suchen"
       },
       "with_attachments": {
-        "string": "With Attachments",
-        "description": "Option to filter emails that have attachments"
+        "string": "Mit Anhängen",
+        "description": "Option zum Filtern von E-Mails mit Anhängen"
       },
       "in_favorites": {
-        "string": "In favorites",
-        "description": "Option to filter emails that are marked as favorites"
+        "string": "In Favoriten",
+        "description": "Option zum Filtern von E-Mails, die als Favoriten markiert sind"
       },
       "unseen_only": {
-        "string": "Unseen only",
-        "description": "Option to filter emails that are unseen"
+        "string": "Nur ungelesene",
+        "description": "Option zum Filtern von ungelesenen E-Mails"
       },
       "body": {
         "string": "Nachrichtentext",
-        "description": "Label for the 'Body' field in email search options"
+        "description": "Bezeichnung für das Feld „Nachrichtentext“ in den E-Mail-Suchoptionen"
       },
       "date_from": {
         "string": "Datum von",
-        "description": "Label for the 'Date from' field in email search options"
+        "description": "Bezeichnung für das Feld „Datum von“ in den E-Mail-Suchoptionen"
       },
       "date_to": {
-        "string": "Date to",
-        "description": "Label for the 'Date to' field in email search options"
+        "string": "Datum bis",
+        "description": "Bezeichnung für das Feld „Datum bis“ in den E-Mail-Suchoptionen"
       },
       "others": {
-        "string": "Others",
-        "description": "Label for the 'Others' section in email search options"
+        "string": "Sonstige",
+        "description": "Bezeichnung für den Bereich „Sonstige“ in den E-Mail-Suchoptionen"
       }
     },
     "from": {
       "string": "Von",
-      "description": "Label for the 'From' field in email search options"
+      "description": "Bezeichnung für das Feld „Von“ in den E-Mail-Suchoptionen"
     },
     "account_switcher": {
       "add_account": {
-        "string": "Add account",
-        "description": "Button to add an external mail account in the sidebar account switcher"
+        "string": "Konto hinzufügen",
+        "description": "Schaltfläche zum Hinzufügen eines externen E-Mail-Kontos im Kontoumschalter der Seitenleiste"
       },
       "new_folder": {
         "string": "Neuer Ordner",
-        "description": "Label for the new folder action in the account switcher menu"
+        "description": "Bezeichnung für die Aktion „Neuer Ordner“ im Menü des Kontoumschalters"
       },
       "delegate": {
         "string": "Delegieren",
-        "description": "Label for the delegate action in the account switcher menu (not yet implemented)"
+        "description": "Bezeichnung für die Aktion „Delegieren“ im Menü des Kontoumschalters (noch nicht implementiert)"
       },
       "shared_mailboxes": {
         "string": "Geteilt",
-        "description": "Label for the shared mailboxes section in the account switcher"
+        "description": "Bezeichnung für den Bereich der geteilten Postfächer im Kontoumschalter"
       }
     },
     "to": {
       "string": "An",
-      "description": "Label for the 'To' field in email search options"
+      "description": "Bezeichnung für das Feld „An“ in den E-Mail-Suchoptionen"
     },
     "bcc": {
       "string": "Bcc",
-      "description": "Label for the 'Bcc' field in email search options"
+      "description": "Bezeichnung für das Feld „Bcc“ in den E-Mail-Suchoptionen"
     },
     "subject": {
       "string": "Betreff",
-      "description": "Label for the 'Subject' field in email search options"
+      "description": "Bezeichnung für das Feld „Betreff“ in den E-Mail-Suchoptionen"
     },
     "folders": {
       "actions": {
         "new_subfolder": {
           "string": "Neuer Unterordner",
-          "description": "Button to create a new subfolder in the current folder"
+          "description": "Schaltfläche, um im aktuellen Ordner einen neuen Unterordner zu erstellen"
         },
         "rename": {
-          "string": "Rename",
-          "description": "Button to rename the current folder"
+          "string": "Umbenennen",
+          "description": "Schaltfläche zum Umbenennen des aktuellen Ordners"
         },
         "rename_dialog": {
           "title": {
-            "string": "Rename folder",
-            "description": "Title of the rename folder dialog"
+            "string": "Ordner umbenennen",
+            "description": "Titel des Dialogs zum Umbenennen eines Ordners"
           },
           "label": {
-            "string": "Folder name",
-            "description": "Label for the folder name input"
+            "string": "Ordnername",
+            "description": "Bezeichnung für das Eingabefeld des Ordnernamens"
           },
           "placeholder": {
-            "string": "e.g. Work, Archives…",
-            "description": "Placeholder for the folder name input"
+            "string": "z. B. Arbeit, Archiv…",
+            "description": "Platzhalter für das Eingabefeld des Ordnernamens"
           },
           "submit": {
-            "string": "Rename",
-            "description": "Submit button label in the rename folder dialog"
+            "string": "Umbenennen",
+            "description": "Beschriftung der Bestätigungsschaltfläche im Dialog zum Umbenennen eines Ordners"
           },
           "cancel": {
             "string": "Abbrechen",
-            "description": "Cancel button label in the rename folder dialog"
+            "description": "Beschriftung der Abbrechen-Schaltfläche im Dialog zum Umbenennen eines Ordners"
           },
           "error_required": {
-            "string": "Folder name is required",
-            "description": "Validation error when folder name is empty"
+            "string": "Der Ordnername ist erforderlich",
+            "description": "Validierungsfehler, wenn der Ordnername leer ist"
           },
           "error_dot": {
-            "string": "Folder name cannot contain a dot",
-            "description": "Validation error when folder name contains a dot character"
+            "string": "Der Ordnername darf keinen Punkt enthalten",
+            "description": "Validierungsfehler, wenn der Ordnername einen Punkt enthält"
           },
           "error_max": {
-            "string": "Folder name must be at most 100 characters",
-            "description": "Validation error when folder name exceeds max length"
+            "string": "Der Ordnername darf höchstens 100 Zeichen lang sein",
+            "description": "Validierungsfehler, wenn der Ordnername die maximale Länge überschreitet"
           }
         },
         "mark_as_read": {
-          "string": "Mark as Read",
-          "description": "Button to mark the current folder as read"
+          "string": "Als gelesen markieren",
+          "description": "Schaltfläche, um den aktuellen Ordner als gelesen zu markieren"
         },
         "export": {
           "string": "Exportieren",
-          "description": "Button to export all messages in the current folder"
+          "description": "Schaltfläche zum Exportieren aller Nachrichten im aktuellen Ordner"
         },
         "move_to": {
-          "string": "Move to",
-          "description": "Button to move the current folder under another parent"
+          "string": "Verschieben nach",
+          "description": "Schaltfläche, um den aktuellen Ordner unter einen anderen übergeordneten Ordner zu verschieben"
         },
         "set_as": {
-          "string": "Set as",
-          "description": "Button to assign a semantic folder type to a normal folder"
+          "string": "Festlegen als",
+          "description": "Schaltfläche, um einem normalen Ordner einen semantischen Typ zuzuweisen"
         },
         "empty_folder": {
-          "string": "Empty folder",
-          "description": "Button to permanently empty trash or junk folder"
+          "string": "Ordner leeren",
+          "description": "Schaltfläche, um den Papierkorb oder Junk-Ordner dauerhaft zu leeren"
         },
         "action_unavailable": {
-          "string": "This action is not available yet",
-          "description": "Tooltip shown when a folder action is disabled because the backend is not ready"
+          "string": "Diese Aktion ist noch nicht verfügbar",
+          "description": "Tooltip, wenn eine Ordner-Aktion deaktiviert ist, weil das Backend noch nicht bereit ist"
         },
         "empty_folder_dialog": {
           "title": {
-            "string": "Empty folder"
+            "string": "Ordner leeren"
           },
           "description": {
-            "string": "Permanently delete all messages in \"{folder}\"? This action cannot be undone."
+            "string": "Alle Nachrichten in \"{folder}\" dauerhaft löschen? Diese Aktion kann nicht rückgängig gemacht werden."
           },
           "confirm": {
-            "string": "Empty folder"
+            "string": "Ordner leeren"
           },
           "cancel": {
             "string": "Abbrechen"
@@ -7634,7 +7634,7 @@
         },
         "set_as_dialog": {
           "title": {
-            "string": "Set folder type"
+            "string": "Ordnertyp festlegen"
           },
           "description": {
             "string": "Wählen Sie den semantischen Typ für „{folder}\"."
@@ -7656,61 +7656,61 @@
               "string": "Junk"
             },
             "TEMPLATE": {
-              "string": "Templates"
+              "string": "Vorlagen"
             }
           }
         },
         "move_mails_dialog": {
           "title": {
-            "string": "Move mails"
+            "string": "E-Mails verschieben"
           },
           "description": {
-            "string": "Move {count} selected mails to another folder."
+            "string": "{count} ausgewählte E-Mails in einen anderen Ordner verschieben."
           },
           "placeholder": {
-            "string": "Select destination folder"
+            "string": "Zielordner auswählen"
           },
           "confirm": {
-            "string": "Move"
+            "string": "Verschieben"
           },
           "cancel": {
-            "string": "Cancel"
+            "string": "Abbrechen"
           }
         },
         "move_to_dialog": {
           "title": {
-            "string": "Move folder"
+            "string": "Ordner verschieben"
           },
           "description": {
             "string": "Wählen Sie einen neuen übergeordneten Ordner für „{folder}\"."
           },
           "placeholder": {
-            "string": "Select destination"
+            "string": "Ziel auswählen"
           },
           "root": {
-            "string": "Root level"
+            "string": "Höchste Ebene"
           },
           "confirm": {
-            "string": "Move"
+            "string": "Verschieben"
           },
           "cancel": {
             "string": "Abbrechen"
           }
         },
         "sharing": {
-          "string": "Sharing",
+          "string": "Freigabe",
           "title": {
-            "string": "Share folder"
+            "string": "Ordner freigeben"
           },
           "description": {
             "string": "Verwalten Sie, wer auf „{folder}\" zugreifen darf, und die entsprechenden Berechtigungen."
           },
           "noUsers": {
-            "string": "No users have access yet."
+            "string": "Noch kein Benutzer hat Zugriff."
           },
           "addUser": {
             "label": {
-              "string": "Add a user"
+              "string": "Benutzer hinzufügen"
             },
             "placeholder": {
               "string": "email@domain.com"
@@ -7720,19 +7720,19 @@
             },
             "error": {
               "invalid": {
-                "string": "Please enter a valid email address."
+                "string": "Bitte geben Sie eine gültige E-Mail-Adresse ein."
               },
               "duplicate": {
-                "string": "This user already has access."
+                "string": "Dieser Benutzer hat bereits Zugriff."
               }
             }
           },
           "presets": {
             "read": {
-              "string": "Read"
+              "string": "Lesen"
             },
             "write": {
-              "string": "Write"
+              "string": "Schreiben"
             },
             "admin": {
               "string": "Admin"
@@ -7746,7 +7746,7 @@
           },
           "badge": {
             "you": {
-              "string": "You"
+              "string": "Sie"
             },
             "public": {
               "string": "Öffentlich"
@@ -7754,21 +7754,21 @@
           },
           "removeUser": {
             "tooltip": {
-              "string": "Cannot remove yourself"
+              "string": "Sie können sich nicht selbst entfernen"
             }
           }
         },
         "purge": {
-          "string": "Purge",
-          "description": "Button to permanently delete all messages in the current folder",
+          "string": "Bereinigen",
+          "description": "Schaltfläche zum dauerhaften Löschen aller Nachrichten im aktuellen Ordner",
           "confirmTitle": {
-            "string": "Purge folder"
+            "string": "Ordner bereinigen"
           },
           "confirmDesc": {
             "string": "Möchten Sie \"{folder}\" wirklich bereinigen? Alle gelöschten Nachrichten werden dauerhaft entfernt. Diese Aktion kann nicht rückgängig gemacht werden."
           },
           "confirm": {
-            "string": "Purge"
+            "string": "Bereinigen"
           },
           "cancel": {
             "string": "Abbrechen"
@@ -7780,26 +7780,26 @@
             "string": "Benutzerdefiniertes Datum"
           },
           "pickDate": {
-            "string": "Pick a date"
+            "string": "Datum auswählen"
           },
           "applyToSubfolders": {
-            "string": "Apply to subfolders"
+            "string": "Auf Unterordner anwenden"
           },
           "permanentlyDelete": {
-            "string": "Permanently delete (cannot be undone)"
+            "string": "Dauerhaft löschen (kann nicht rückgängig gemacht werden)"
           },
           "confirmPermanent": {
             "string": "Ich verstehe, dass die ausgewählten E-Mails dauerhaft gelöscht werden und nicht wiederhergestellt werden können"
           },
           "datePresets": {
             "3months": {
-              "string": "3 months"
+              "string": "3 Monate"
             },
             "6months": {
-              "string": "6 months"
+              "string": "6 Monate"
             },
             "1year": {
-              "string": "1 year"
+              "string": "1 Jahr"
             },
             "custom": {
               "string": "Benutzerdefiniertes Datum"
@@ -7809,28 +7809,28 @@
             }
           },
           "successTitle": {
-            "string": "Folder purged"
+            "string": "Ordner bereinigt"
           },
           "successMessage": {
             "string": "Alle gelöschten Nachrichten wurden dauerhaft entfernt."
           },
           "errorTitle": {
-            "string": "Purge failed"
+            "string": "Bereinigen fehlgeschlagen"
           },
           "errorMessage": {
             "string": "Beim Bereinigen des Ordners ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut."
           }
         },
         "expunge": {
-          "string": "Expunge",
+          "string": "Endgültig entfernen",
           "confirmTitle": {
-            "string": "Expunge folder"
+            "string": "Ordner endgültig bereinigen"
           },
           "confirmDesc": {
             "string": "Möchten Sie \"{folder}\" wirklich bereinigen? Alle als gelöscht markierten Nachrichten werden dauerhaft entfernt. Diese Aktion kann nicht rückgängig gemacht werden."
           },
           "confirm": {
-            "string": "Expunge"
+            "string": "Endgültig entfernen"
           },
           "cancel": {
             "string": "Abbrechen"
@@ -7838,90 +7838,90 @@
         },
         "delete": {
           "string": "Ordner löschen",
-          "description": "Label for the delete folder action in the folder context menu",
+          "description": "Bezeichnung für die Aktion „Ordner löschen“ im Kontextmenü des Ordners",
           "confirmTitle": {
             "string": "Ordner löschen",
-            "description": "Title of the delete folder confirmation dialog"
+            "description": "Titel des Bestätigungsdialogs zum Löschen eines Ordners"
           },
           "confirmDesc": {
-            "string": "Are you sure you want to delete \"{folder}\"? It will be moved to Trash. If it is already in Trash, it will be permanently deleted.",
-            "description": "Description of the delete folder confirmation dialog"
+            "string": "Möchten Sie \"{folder}\" wirklich löschen? Er wird in den Papierkorb verschoben. Befindet er sich bereits im Papierkorb, wird er dauerhaft gelöscht.",
+            "description": "Beschreibung des Bestätigungsdialogs zum Löschen eines Ordners"
           },
           "confirm": {
             "string": "Löschen",
-            "description": "Confirm button label in the delete folder dialog"
+            "description": "Beschriftung der Bestätigungsschaltfläche im Dialog zum Löschen eines Ordners"
           },
           "cancel": {
             "string": "Abbrechen",
-            "description": "Cancel button label in the delete folder dialog"
+            "description": "Beschriftung der Abbrechen-Schaltfläche im Dialog zum Löschen eines Ordners"
           }
         },
         "new_subfolder_dialog": {
           "title": {
             "string": "Neuer Unterordner",
-            "description": "Title of the create subfolder dialog"
+            "description": "Titel des Dialogs zum Erstellen eines Unterordners"
           },
           "label": {
-            "string": "Folder name",
-            "description": "Label for the folder name input"
+            "string": "Ordnername",
+            "description": "Bezeichnung für das Eingabefeld des Ordnernamens"
           },
           "placeholder": {
-            "string": "e.g. Work, Archives…",
-            "description": "Placeholder for the folder name input"
+            "string": "z. B. Arbeit, Archiv…",
+            "description": "Platzhalter für das Eingabefeld des Ordnernamens"
           },
           "submit": {
             "string": "Erstellen",
-            "description": "Submit button label in the create subfolder dialog"
+            "description": "Beschriftung der Bestätigungsschaltfläche im Dialog zum Erstellen eines Unterordners"
           },
           "cancel": {
             "string": "Abbrechen",
-            "description": "Cancel button label in the create subfolder dialog"
+            "description": "Beschriftung der Abbrechen-Schaltfläche im Dialog zum Erstellen eines Unterordners"
           },
           "error_required": {
-            "string": "Folder name is required",
-            "description": "Validation error when folder name is empty"
+            "string": "Der Ordnername ist erforderlich",
+            "description": "Validierungsfehler, wenn der Ordnername leer ist"
           },
           "error_dot": {
-            "string": "Folder name cannot contain a dot",
-            "description": "Validation error when folder name contains a dot character"
+            "string": "Der Ordnername darf keinen Punkt enthalten",
+            "description": "Validierungsfehler, wenn der Ordnername einen Punkt enthält"
           },
           "error_max": {
-            "string": "Folder name must be at most 100 characters",
-            "description": "Validation error when folder name exceeds max length"
+            "string": "Der Ordnername darf höchstens 100 Zeichen lang sein",
+            "description": "Validierungsfehler, wenn der Ordnername die maximale Länge überschreitet"
           }
         }
       },
       "inbox": {
         "string": "Posteingang",
-        "description": "Your inbox where you receive new messages"
+        "description": "Ihr Posteingang, in dem Sie neue Nachrichten empfangen"
       },
       "sent": {
         "string": "Gesendet",
-        "description": "Messages you have sent"
+        "description": "Nachrichten, die Sie gesendet haben"
       },
       "drafts": {
         "string": "Entwürfe",
-        "description": "Messages you have saved as drafts"
+        "description": "Nachrichten, die Sie als Entwurf gespeichert haben"
       },
       "trash": {
         "string": "Papierkorb",
-        "description": "Deleted messages that can be restored or permanently deleted"
+        "description": "Gelöschte Nachrichten, die wiederhergestellt oder dauerhaft gelöscht werden können"
       },
       "junk": {
         "string": "Junk",
-        "description": "Messages identified as spam"
+        "description": "Nachrichten, die als Spam erkannt wurden"
       },
       "template": {
-        "string": "Templates",
-        "description": "Message templates"
+        "string": "Vorlagen",
+        "description": "Nachrichtenvorlagen"
       },
       "virtual_folder": {
-        "string": "Virtual folder — expand to browse subfolders",
-        "description": "Tooltip for non-selectable IMAP folders"
+        "string": "Virtueller Ordner — aufklappen, um Unterordner zu durchsuchen",
+        "description": "Tooltip für nicht auswählbare IMAP-Ordner"
       },
       "virtual_empty": {
         "title": {
-          "string": "Virtual folder"
+          "string": "Virtueller Ordner"
         },
         "description": {
           "string": "Dieser Ordner kann keine Nachrichten enthalten. Klappen Sie ihn in der Seitenleiste aus, um Unterordner anzuzeigen."
@@ -7933,41 +7933,41 @@
         "string": "Neue Nachricht"
       },
       "defaultSender": {
-        "string": "Unknown sender"
+        "string": "Unbekannter Absender"
       }
     },
     "invitation": {
       "label": {
-        "string": "Calendar invitation",
-        "description": "Heading for an iMIP calendar invitation in mail view"
+        "string": "Kalendereinladung",
+        "description": "Überschrift für eine iMIP-Kalendereinladung in der E-Mail-Ansicht"
       },
       "synced_to_calendar": {
-        "string": "This event has been added to your calendar.",
-        "description": "Info banner after inbound iMIP sync"
+        "string": "Dieses Ereignis wurde zu Ihrem Kalender hinzugefügt.",
+        "description": "Info-Banner nach eingehender iMIP-Synchronisierung"
       },
       "event_cancelled": {
-        "string": "This event has been cancelled.",
-        "description": "Message for iMIP CANCEL mails"
+        "string": "Dieses Ereignis wurde abgesagt.",
+        "description": "Meldung für iMIP-CANCEL-E-Mails"
       },
       "reply_from_attendee": {
-        "string": "{name} responded: {status}",
-        "description": "Message when an attendee sends an iMIP REPLY"
+        "string": "{name} hat geantwortet: {status}",
+        "description": "Meldung, wenn ein Teilnehmer eine iMIP-Antwort sendet"
       },
       "sync_pending": {
         "string": "Synchronisierung mit Ihrem Kalender…",
-        "description": "Event not found yet after opening invitation mail"
+        "description": "Ereignis wurde nach dem Öffnen der Einladungs-E-Mail noch nicht gefunden"
       },
       "retry": {
         "string": "Wiederholen",
-        "description": "Retry loading calendar event for invitation"
+        "description": "Kalenderereignis der Einladung erneut laden"
       },
       "view_in_calendar": {
-        "string": "View in calendar",
-        "description": "Link to open the event in the calendar module"
+        "string": "Im Kalender anzeigen",
+        "description": "Link, um das Ereignis im Kalendermodul zu öffnen"
       },
       "recurring_badge": {
-        "string": "Recurring event",
-        "description": "Badge for recurring invitations"
+        "string": "Wiederkehrendes Ereignis",
+        "description": "Badge für wiederkehrende Einladungen"
       }
     }
   },
@@ -8266,29 +8266,29 @@
     "list_load_error": {
       "folder_not_found": {
         "string": "Dieser Ordner existiert nicht mehr.",
-        "description": "Message when folder messages request returns 404"
+        "description": "Meldung, wenn die Anfrage der Ordner-Nachrichten den Status 404 zurückgibt"
       },
       "mail_unavailable": {
         "string": "Der Mailserver ist vorübergehend nicht verfügbar.",
-        "description": "Message when folder messages request returns 503"
+        "description": "Meldung, wenn die Anfrage der Ordner-Nachrichten den Status 503 zurückgibt"
       },
       "retry": {
         "string": "Erneut versuchen",
-        "description": "Button label to refetch folder messages after 503"
+        "description": "Beschriftung der Schaltfläche zum erneuten Abrufen der Ordner-Nachrichten nach einem 503-Fehler"
       },
       "open_inbox": {
         "string": "Posteingang öffnen",
-        "description": "Button label to navigate to INBOX after folder 404"
+        "description": "Beschriftung der Schaltfläche zum Wechseln zum Posteingang nach einem 404-Ordnerfehler"
       },
       "generic": {
         "string": "Nachrichten können nicht geladen werden. Bitte versuchen Sie es später erneut.",
-        "description": "Generic folder list load error (e.g. 500)"
+        "description": "Allgemeiner Fehler beim Laden der Ordnerliste (z. B. 500)"
       }
     },
     "filter": {
       "client_scope_notice": {
         "string": "Filter gelten nur für die auf dieser Seite geladenen Nachrichten.",
-        "description": "Hint that URL filters are client-side on the current server page"
+        "description": "Hinweis, dass URL-Filter nur clientseitig auf der aktuellen Serverseite wirken"
       },
       "all": {
         "string": "Alle"
@@ -8417,7 +8417,7 @@
       },
       "tasks": {
         "title": "Aufgaben",
-        "view_all": "View all tasks",
+        "view_all": "Alle Aufgaben anzeigen",
         "search_placeholder": "Aufgaben suchen",
         "overdue": "Überfällig",
         "today": "Heute",
@@ -8445,7 +8445,7 @@
       },
       "coming_soon": {
         "title": "Funktion in Kürze",
-        "description": "This section is under development and will be available soon."
+        "description": "Dieser Bereich befindet sich in Entwicklung und steht in Kürze zur Verfügung."
       }
     }
   },
@@ -9177,15 +9177,15 @@
       },
       "error": {
         "string": "Während des Vorgangs ist ein Fehler aufgetreten.",
-        "developer_comment": "Advise the user that there was an error while processing their request."
+        "developer_comment": "Weist den Benutzer darauf hin, dass bei der Verarbeitung seiner Anfrage ein Fehler aufgetreten ist."
       },
       "warning": {
         "string": "Bitte überprüfen Sie die Details und fahren Sie mit Vorsicht fort.",
-        "developer_comment": "This is a warning message to alert the user."
+        "developer_comment": "Dies ist eine Warnmeldung, die den Benutzer aufmerksam machen soll."
       },
       "info": {
         "string": "Dies ist eine informelle Meldung.",
-        "developer_comment": "This message provides information to the user."
+        "developer_comment": "Diese Meldung stellt dem Benutzer Informationen bereit."
       }
     },
     "mail_send": {
@@ -9739,15 +9739,15 @@
       "context": "Label for the setting that determines the first day of the week in calendar view (0=Sunday..6=Saturday)"
     },
     "workdayStartTime": {
-      "string": "Workday start time",
+      "string": "Beginn des Arbeitstages",
       "context": "Label for the setting that determines the start time of the workday (e.g. 09:00)"
     },
     "workdayEndTime": {
-      "string": "Workday end time",
+      "string": "Ende des Arbeitstages",
       "context": "Label for the setting that determines the end time of the workday (e.g. 18:00)"
     },
     "busyOffHours": {
-      "string": "Show as busy during off hours",
+      "string": "Außerhalb der Arbeitszeiten als beschäftigt anzeigen",
       "context": "Label for the setting that determines whether to show as busy during off hours"
     },
     "calendarDaysShowed": {
@@ -9758,18 +9758,18 @@
       "4": "Donnerstag",
       "5": "Freitag",
       "6": "Samstag",
-      "string": "Days showed in calendar view",
+      "string": "Angezeigte Tage in der Kalenderansicht",
       "context": "Label for the setting that determines which days are showed in calendar view (array of 0=Sunday..6=Saturday)"
     },
     "calendarWeekNumberFormat": {
-      "%U": "Sunday as the first day of the week",
-      "%W": "Monday as the first day of the week",
-      "%V": "First 4 days week",
+      "%U": "Sonntag als erster Tag der Woche",
+      "%W": "Montag als erster Tag der Woche",
+      "%V": "Woche mit den ersten 4 Tagen",
       "string": "Wie die erste Woche nummeriert wird",
       "context": "Label for the setting that determines the week number format in calendar view (%U, %W or %V)"
     },
     "calendarDefault": {
-      "string": "Default Calendar chosen when creating a new event",
+      "string": "Standardkalender beim Erstellen eines neuen Ereignisses",
       "context": "Label for the setting that determines the default calendar"
     },
     "calendarStatus": {
@@ -9802,15 +9802,15 @@
       "context": "Label for the setting that determines the default reminder for journal entries (e.g. -PT15M)"
     },
     "reminderAfter": {
-      "string": "before",
+      "string": "vorher",
       "context": "example: 20min before"
     },
     "noInvitation": {
-      "string": "Prevent to be add as attendee by others users",
+      "string": "Verhindern, dass andere Benutzer Sie als Teilnehmer hinzufügen",
       "context": "Label for the setting prevent user to be add as attendees by others users"
     },
     "noInvitationWhitelist": {
-      "string": "Invitation whitelist",
+      "string": "Whitelist für Einladungen",
       "context": "Label for the setting that determines the whitelist of email addresses to which invitations will be sent even if 'Do not send invitations' is enabled"
     },
     "doNotSendInvitFromDav": {
@@ -9819,7 +9819,7 @@
     },
     "davForceSyncFromClient": {
       "string": "Synchronisation von Ereignissen erzwingen, die von CalDAV-Clients erstellt wurden",
-      "help-tooltip": "Warning: if events from the client are more recent, force the sync anyway",
+      "help-tooltip": "Warnung: Wenn Ereignisse auf dem Client aktueller sind, wird die Synchronisation trotzdem erzwungen",
       "context": "Label for the setting that determines whether to force synchronization of events created from CalDAV clients or not"
     },
     "categories": {
@@ -9945,25 +9945,25 @@
       },
       "setAsDefault": "Als Standard festlegen",
       "defaultDescription": "Diese Identität wird standardmäßig beim Verfassen neuer Nachrichten verwendet",
-      "mainIdentityEmail": "This is your main email address and cannot be changed",
-      "nameNotEditable": "Name editing is disabled by administrator",
-      "replyToNotEditable": "Reply-To editing is disabled by administrator",
-      "signatures": "Signatures",
-      "signaturesDescription": "Create and manage email signatures for this identity",
-      "signaturePlaceholder": "Enter signature name",
-      "addIdentity": "Add an identity",
-      "allowsCustom": "You can add and manage additional identities"
+      "mainIdentityEmail": "Dies ist Ihre Haupt-E-Mail-Adresse und kann nicht geändert werden",
+      "nameNotEditable": "Die Bearbeitung des Namens wurde vom Administrator deaktiviert",
+      "replyToNotEditable": "Die Bearbeitung von „Antwort an“ wurde vom Administrator deaktiviert",
+      "signatures": "Signaturen",
+      "signaturesDescription": "E-Mail-Signaturen für diese Identität erstellen und verwalten",
+      "signaturePlaceholder": "Signaturnamen eingeben",
+      "addIdentity": "Identität hinzufügen",
+      "allowsCustom": "Sie können weitere Identitäten hinzufügen und verwalten"
     },
     "description": {
       "useDefaultIdentity": {
-        "string": "This identity will be selected by default when composing new messages"
+        "string": "Diese Identität wird beim Verfassen neuer Nachrichten standardmäßig ausgewählt"
       }
     },
     "accessibility": {
-      "toggleCollapse": "Toggle identity details",
+      "toggleCollapse": "Identitätsdetails ein-/ausklappen",
       "expandIdentity": "Erweitern",
       "collapseIdentity": "Einklappen",
-      "removeIcon": "Remove identity button"
+      "removeIcon": "Schaltfläche zum Entfernen der Identität"
     }
   },
   "US_MAIL_CATEGORIES": {
@@ -10046,7 +10046,7 @@
         "string": "Löschen"
       },
       "empty": {
-        "string": "No IMAP accounts configured yet. Add your first account to get started."
+        "string": "Noch keine IMAP-Konten konfiguriert. Fügen Sie Ihr erstes Konto hinzu, um zu beginnen."
       }
     },
     "edit": {
@@ -11093,18 +11093,18 @@
   },
   "FORM_PROFILE": {
     "title": "Profil",
-    "description": "Manage your profile information and settings.",
+    "description": "Verwalten Sie Ihre Profilinformationen und Einstellungen.",
     "sections": {
       "basicInfo": "Grundinformationen",
       "identities": "Identitäten"
     },
     "firstname": {
       "string": "Vorname",
-      "description": "Label for the first name input field."
+      "description": "Bezeichnung für das Eingabefeld des Vornamens."
     },
     "lastname": {
       "string": "Nachname",
-      "description": "Label for the last name input field."
+      "description": "Bezeichnung für das Eingabefeld des Nachnamens."
     },
     "basicInfo": {
       "title": "Grundinformationen",
@@ -11114,13 +11114,13 @@
       "aliases": "E-Mail-Aliase"
     },
     "extraInfo": {
-      "title": "Extra Information",
-      "company": "Company",
+      "title": "Zusätzliche Informationen",
+      "company": "Unternehmen",
       "team": "Team"
     },
     "profilePictureSource": {
-      "title": "Profile Picture",
-      "description": "Choose how your profile picture is displayed. You can upload a custom image, use your Gravatar, Libravatar or use the default avatar.",
+      "title": "Profilbild",
+      "description": "Wählen Sie, wie Ihr Profilbild angezeigt wird. Sie können ein eigenes Bild hochladen, Ihr Gravatar oder Libravatar verwenden oder das Standard-Avatar nutzen.",
       "useDefault": "Standard",
       "useGravatar": "Gravatar",
       "useLibravatar": "Libravatar",
@@ -11135,10 +11135,10 @@
         "string": "Laden"
       },
       "load_failed": {
-        "string": "Failed to load profile. Please try again later."
+        "string": "Profil konnte nicht geladen werden. Bitte versuchen Sie es später erneut."
       },
       "update_failed": {
-        "string": "Failed to update profile. Please try again."
+        "string": "Profil konnte nicht aktualisiert werden. Bitte versuchen Sie es erneut."
       }
     }
   },
@@ -11311,7 +11311,7 @@
           "context": "Link to the filters email settings in the settings sidebar"
         },
         "vacation": {
-          "string": "Vacation",
+          "string": "Abwesenheit",
           "context": "Link to the vacation email settings in the settings sidebar"
         },
         "external_accounts": {
