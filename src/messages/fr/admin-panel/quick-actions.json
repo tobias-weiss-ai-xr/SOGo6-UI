@@ -4,55 +4,55 @@
             "string": "Actions rapides"
         },
         "description": {
-            "string": "User-defined multi-step actions triggered with a single click from the mail list."
+            "string": "Actions multi-étapes définies par l'utilisateur, déclenchées en un clic depuis la liste des messages."
         },
         "form": {
             "create": {
-                "string": "New Action"
+                "string": "Nouvelle action"
             },
             "cancel": {
                 "string": "Annuler"
             },
             "title": {
-                "string": "Create Quick Action"
+                "string": "Créer une action rapide"
             },
             "name": {
-                "string": "Action Name"
+                "string": "Nom de l'action"
             },
             "icon": {
-                "string": "Icon"
+                "string": "Icône"
             },
             "steps": {
-                "string": "Steps"
+                "string": "Étapes"
             },
             "submit": {
-                "string": "Create Action"
+                "string": "Créer l’action"
             }
         },
         "create": {
             "success": {
-                "string": "Action created"
+                "string": "Action créée"
             },
             "error": {
-                "string": "Failed to create"
+                "string": "Échec de la création"
             }
         },
         "delete": {
             "success": {
-                "string": "Action deleted"
+                "string": "Action supprimée"
             },
             "error": {
-                "string": "Failed to delete"
+                "string": "Échec de la suppression"
             }
         },
         "list": {
             "empty": {
-                "string": "No quick actions yet. Create one to speed up your workflow."
+                "string": "Aucune action rapide pour le moment. Créez-en une pour accélérer votre travail."
             }
         },
         "errors": {
             "fields": {
-                "string": "Name and at least one step are required"
+                "string": "Le nom et au moins une étape sont requis"
             }
         }
     }

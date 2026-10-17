@@ -27,7 +27,7 @@
                 "string": "Transférer automatiquement les nouveaux messages"
             },
             "email": {
-                "string": "Forward to these addresses (up to {max} addresses). Add multiple addresses separated by comma, semicolon, or press Enter/Tab."
+                "string": "Transférer vers ces adresses (jusqu'à {max} adresses). Ajoutez plusieurs adresses séparées par des virgules, des points-virgules, ou appuyez sur Entrée/Tabulation."
             }
         },
         "help": {
@@ -46,20 +46,20 @@
                     "string": "Veuillez entrer une adresse e-mail valide"
                 },
                 "duplicate": {
-                    "string": "This address is already in the list"
+                    "string": "Cette adresse est déjà dans la liste"
                 }
             },
             "emails": {
                 "list": {
-                    "string": "There was an error with one or more email addresses"
+                    "string": "Une erreur est survenue avec une ou plusieurs adresses e-mail"
                 }
             },
             "max_reached": {
-                "string": "Maximum {max} addresses allowed"
+                "string": "Maximum de {max} adresses autorisées"
             },
             "validation": {
                 "addresses_required": {
-                    "string": "At least one email address is required when forwarding is enabled."
+                    "string": "Au moins une adresse e-mail est requise lorsque le transfert est activé."
                 }
             }
         },
@@ -70,10 +70,10 @@
         },
         "tooltip": {
             "always_forward": {
-                "string": "Incoming mail is forwarded before applying your filters."
+                "string": "Le courrier entrant est transféré avant l'application de vos filtres."
             },
             "keep_copy": {
-                "string": "Keep a copy of forwarded messages in your inbox. Useful if you want to maintain a local archive."
+                "string": "Conserver une copie des messages transférés dans votre boîte de réception. Utile pour maintenir une archive locale."
             }
         },
         "errors_api": {
@@ -81,10 +81,10 @@
                 "string": "Erreur"
             },
             "save_failed": {
-                "string": "Couldn't save your changes, try again"
+                "string": "Impossible d'enregistrer vos modifications, veuillez réessayer"
             },
             "load_failed": {
-                "string": "Could not load forwarding settings. Please try again later."
+                "string": "Impossible de charger les paramètres de transfert. Veuillez réessayer plus tard."
             },
             "feature_disabled": {
                 "string": "Le transfert a été désactivé par votre administrateur."
@@ -100,10 +100,10 @@
         },
         "aria": {
             "tags_count": {
-                "string": "{count} of {max} email addresses added"
+                "string": "{count} adresses e-mail ajoutées sur {max}"
             },
             "remove_email": {
-                "string": "Remove {email}"
+                "string": "Supprimer {email}"
             },
             "email_input_group": {
                 "string": "Email addresses for forwardant"

@@ -8,43 +8,43 @@
         },
         "errors": {
             "name": {
-                "string": "Name required"
+                "string": "Nom requis"
             },
             "fail": {
-                "string": "Operation failed"
+                "string": "Échec de l'opération"
             }
         },
         "success": {
             "config": {
-                "string": "Configuration saved"
+                "string": "Configuration enregistrée"
             },
             "room": {
-                "string": "Room created"
+                "string": "Salon créé"
             }
         },
         "config": {
             "title": {
-                "string": "Server Config"
+                "string": "Configuration du serveur"
             },
             "enabled": {
-                "string": "Enabled"
+                "string": "Activé"
             },
             "bridge": {
-                "string": "Bridge"
+                "string": "Passerelle"
             }
         },
         "rooms": {
             "title": {
-                "string": "Chat Rooms"
+                "string": "Salons de discussion"
             },
             "name": {
                 "placeholder": {
-                    "string": "Room name..."
+                    "string": "Nom du salon..."
                 }
             },
             "visibility": {
                 "private": {
-                    "string": "Private"
+                    "string": "Privé"
                 },
                 "public": {
                     "string": "Public"
@@ -56,15 +56,15 @@
                 "string": "Enregistrer"
             },
             "create": {
-                "string": "Create Room"
+                "string": "Créer un salon"
             }
         },
         "links": {
             "title": {
-                "string": "User Links"
+                "string": "Liens d'utilisateurs"
             },
             "empty": {
-                "string": "No linked users"
+                "string": "Aucun utilisateur lié"
             }
         }
     }

@@ -4,20 +4,20 @@
             "string": "Constructeur de workflows"
         },
         "description": {
-            "string": "Low-code automation: If email from X and subject Y → forward, create event, notify."
+            "string": "Automatisation sans code : si e-mail de X et objet Y → transférer, créer un événement, notifier."
         },
         "form": {
             "create": {
-                "string": "New Workflow"
+                "string": "Nouveau workflow"
             },
             "cancel": {
                 "string": "Annuler"
             },
             "title": {
-                "string": "Create Workflow"
+                "string": "Créer un workflow"
             },
             "name": {
-                "string": "Workflow Name"
+                "string": "Nom du workflow"
             },
             "trigger": {
                 "string": "Triggeur"
@@ -32,38 +32,38 @@
                 "string": "Actions"
             },
             "submit": {
-                "string": "Create Workflow"
+                "string": "Créer le workflow"
             }
         },
         "create": {
             "success": {
-                "string": "Workflow created"
+                "string": "Workflow créé"
             },
             "error": {
-                "string": "Failed to create"
+                "string": "Échec de la création"
             }
         },
         "toggle": {
             "error": {
-                "string": "Failed to toggle"
+                "string": "Échec du basculement"
             }
         },
         "delete": {
             "success": {
-                "string": "Workflow deleted"
+                "string": "Workflow supprimé"
             },
             "error": {
-                "string": "Failed to delete"
+                "string": "Échec de la suppression"
             }
         },
         "list": {
             "empty": {
-                "string": "No workflows defined. Create one to automate actions."
+                "string": "Aucun workflow défini. Créez-en un pour automatiser des actions."
             }
         },
         "errors": {
             "fields": {
-                "string": "Name, conditions, and actions are required"
+                "string": "Le nom, les conditions et les actions sont requis"
             }
         }
     }

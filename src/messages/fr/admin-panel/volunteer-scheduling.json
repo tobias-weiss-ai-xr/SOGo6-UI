@@ -4,25 +4,25 @@
             "string": "Planification des bénévoles"
         },
         "description": {
-            "string": "Manage volunteers, assign shifts, track hours, and generate certificates"
+            "string": "Gérez les bénévoles, attribuez des créneaux, suivez les heures et générez des attestations"
         },
         "errors": {
             "fields": {
                 "string": "Required fields missant"
             },
             "fail": {
-                "string": "Operation failed"
+                "string": "Échec de l'opération"
             }
         },
         "success": {
             "create": {
-                "string": "Volunteer registered"
+                "string": "Bénévole enregistré"
             },
             "shift": {
-                "string": "Shift assigned"
+                "string": "Créneau attribué"
             },
             "cert": {
-                "string": "Certificate generated"
+                "string": "Attestation générée"
             }
         },
         "register": {
@@ -32,36 +32,36 @@
         },
         "shift": {
             "title": {
-                "string": "Create Shift"
+                "string": "Créer un créneau"
             },
             "select": {
-                "string": "Select volunteer..."
+                "string": "Sélectionner un bénévole..."
             },
             "task": {
-                "string": "Task"
+                "string": "Tâche"
             },
             "start": {
-                "string": "Start"
+                "string": "Début"
             },
             "end": {
-                "string": "End"
+                "string": "Fin"
             }
         },
         "field": {
             "name": {
-                "string": "Name"
+                "string": "Nom"
             },
             "email": {
-                "string": "Email"
+                "string": "E-mail"
             },
             "hours": {
-                "string": "Hours"
+                "string": "Heures"
             },
             "status": {
-                "string": "Status"
+                "string": "Statut"
             },
             "no_shows": {
-                "string": "No-shows"
+                "string": "Absences"
             }
         },
         "button": {
@@ -69,29 +69,29 @@
                 "string": "Registeur"
             },
             "assign": {
-                "string": "Assign Shift"
+                "string": "Attribuer le créneau"
             }
         },
         "stats": {
             "title": {
-                "string": "Statistics"
+                "string": "Statistiques"
             },
             "volunteers": {
-                "string": "Volunteers"
+                "string": "Bénévoles"
             },
             "hours": {
-                "string": "Total Hours"
+                "string": "Heures totales"
             },
             "shifts": {
-                "string": "Active Shifts"
+                "string": "Créneaux actifs"
             }
         },
         "list": {
             "title": {
-                "string": "All Volunteers"
+                "string": "Tous les bénévoles"
             },
             "empty": {
-                "string": "No volunteers registered yet"
+                "string": "Aucun bénévole enregistré pour le moment"
             }
         }
     }

@@ -38,20 +38,20 @@
                     "string": "L'intervalle de réponse doit être zéro ou un nombre positif."
                 },
                 "response_interval_zero": {
-                    "string": "A zero-day response interval is not allowed on this domain."
+                    "string": "Un intervalle de réponse de zéro jour n'est pas autorisé sur ce domaine."
                 }
             }
         },
         "auto_reply": {
             "enable": {
-                "string": "Enable vacation auto reply"
+                "string": "Activer la réponse automatique d'absence"
             },
             "subject": {
                 "label": {
-                    "string": "Auto reply subject"
+                    "string": "Objet de la réponse automatique"
                 },
                 "description": {
-                    "string": "Leave blank to use default subject. You can write {subject} to insert the original subject."
+                    "string": "Laisser vide pour utiliser l’objet par défaut. Vous pouvez écrire {subject} pour insérer l’objet d’origine."
                 }
             },
             "message": {
@@ -59,20 +59,20 @@
             },
             "constraints": {
                 "title": {
-                    "string": "Activation constraints"
+                    "string": "Contraintes d'activation"
                 },
                 "description": {
-                    "string": "Customize day and hour ranges independently and optionally combine them with specific weekdays to tailor your vacation filters to your preferences."
+                    "string": "Personnalisez indépendamment les plages de jours et d'heures et combinez-les éventuellement avec des jours de semaine précis pour adapter vos filtres d'absence à vos préférences."
                 },
                 "enable": {
                     "days": {
-                        "string": "Enable auto reply on these days"
+                        "string": "Activer la réponse automatique ces jours-là"
                     },
                     "hours": {
-                        "string": "Enable auto reply between these hours"
+                        "string": "Activer la réponse automatique entre ces heures"
                     },
                     "range": {
-                        "string": "Enable auto reply between these days"
+                        "string": "Activer la réponse automatique entre ces jours"
                     }
                 },
                 "time": {
@@ -110,21 +110,21 @@
             "response": {
                 "interval_days": {
                     "label": {
-                        "string": "Minimum days between auto replies"
+                        "string": "Jours minimum entre les réponses automatiques"
                     },
                     "placeholder": {
-                        "string": "Leave empty for default behavior"
+                        "string": "Laisser vide pour le comportement par défaut"
                     },
                     "description": {
-                        "string": "Prevents sending duplicate vacation replies within this period (RFC 5230 :days)."
+                        "string": "Évite l’envoi de réponses d’absence en double pendant cette période (RFC 5230 :days)."
                     }
                 },
                 "send_always": {
                     "label": {
-                        "string": "Always send vacation message response"
+                        "string": "Toujours envoyer la réponse d'absence"
                     },
                     "description": {
-                        "string": "The vacation message is sent prior to applying your filters."
+                        "string": "Le message d'absence est envoyé avant l'application de vos filtres."
                     }
                 }
             }

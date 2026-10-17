@@ -39,22 +39,22 @@
             "string": "Règles"
         },
         "description": {
-            "string": "Manage configuration rules for domains"
+            "string": "Gérez les règles de configuration des domaines"
         },
         "search": {
             "placeholder": {
-                "string": "Search rules..."
+                "string": "Rechercher des règles..."
             }
         },
         "create": {
             "button": {
-                "string": "New Rule"
+                "string": "Nouvelle règle"
             },
             "title": {
-                "string": "Create Rule"
+                "string": "Créer une règle"
             },
             "description": {
-                "string": "Add a new configuration rule"
+                "string": "Ajouter une nouvelle règle de configuration"
             },
             "success": {
                 "string": "Règle créée avec succès"
@@ -63,7 +63,7 @@
                 "string": "Échec de la création de la règle"
             },
             "name_required": {
-                "string": "Rule name is required"
+                "string": "Le nom de la règle est requis"
             }
         },
         "edit": {
@@ -71,13 +71,13 @@
                 "string": "Modifieur"
             },
             "title": {
-                "string": "Edit Rule"
+                "string": "Modifier la règle"
             },
             "description": {
-                "string": "Update rule: {name}"
+                "string": "Mettre à jour la règle : {name}"
             },
             "save": {
-                "string": "Save Changes"
+                "string": "Enregistrer les modifications"
             },
             "success": {
                 "string": "Règle mise à jour avec succès"
@@ -91,7 +91,7 @@
                 "string": "Supprimeur"
             },
             "title": {
-                "string": "Delete Rule"
+                "string": "Supprimer la règle"
             },
             "confirm": {
                 "string": "Confirmez-vous la suppression de la règle \"{name}\" ?"
@@ -105,25 +105,25 @@
         },
         "form": {
             "name": {
-                "string": "Rule Name"
+                "string": "Nom de la règle"
             },
             "name_placeholder": {
-                "string": "e.g. French LDAP Rules"
+                "string": "p. ex. Règles LDAP françaises"
             },
             "description": {
                 "string": "Description"
             },
             "description_placeholder": {
-                "string": "Optional description of this rule"
+                "string": "Description facultative de cette règle"
             },
             "domains": {
-                "string": "Affected Domains"
+                "string": "Domaines concernés"
             },
             "domains_placeholder": {
                 "string": "example.org, domain2.org"
             },
             "domains_hint": {
-                "string": "Comma-separated list of domain names. Leave empty for all domains."
+                "string": "Liste de noms de domaine séparés par des virgules. Laisser vide pour tous les domaines."
             }
         },
         "table": {
@@ -138,10 +138,10 @@
             }
         },
         "no_rules": {
-            "string": "No rules configured yet"
+            "string": "Aucune règle configurée pour le moment"
         },
         "no_results": {
-            "string": "No rules match your search"
+            "string": "Aucune règle ne correspond à votre recherche"
         }
     }
 }

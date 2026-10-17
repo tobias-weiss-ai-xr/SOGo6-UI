@@ -10,43 +10,43 @@
       "string": "Sélectionner un utilisateur"
     },
     "select_placeholder": {
-      "string": "Choose a user..."
+      "string": "Choisissez un utilisateur..."
     },
     "current_usage": {
-      "string": "Current Usage"
+      "string": "Utilisation actuelle"
     },
     "set_quota": {
-      "string": "Set Quota"
+      "string": "Définir le quota"
     },
     "labels": {
       "mailbox": {
-        "string": "Mailbox"
+        "string": "Boîte aux lettres"
       },
       "calendars": {
-        "string": "Calendars"
+        "string": "Calendriers"
       },
       "contacts": {
         "string": "Contacts"
       },
       "mailbox_limit": {
-        "string": "Mailbox Size Limit"
+        "string": "Taille maximale de la boîte aux lettres"
       },
       "calendar_limit": {
-        "string": "Max Calendars"
+        "string": "Calendriers maximum"
       },
       "contact_limit": {
-        "string": "Max Contacts"
+        "string": "Contacts maximum"
       }
     },
     "save": {
       "button": {
-        "string": "Save Quota"
+        "string": "Enregistrer le quota"
       },
       "success": {
-        "string": "Quota updated"
+        "string": "Quota mis à jour"
       },
       "error": {
-        "string": "Failed to update quota"
+        "string": "Échec de la mise à jour du quota"
       }
     }
   }
