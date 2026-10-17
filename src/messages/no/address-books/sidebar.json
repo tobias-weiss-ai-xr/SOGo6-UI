@@ -1,203 +1,203 @@
 {
-    "ADDRESS_BOOKS_SIDEBAR": {
-        "new_contact": {
-            "string": "New contact",
-            "context": "Button for creating a new contact in the sidebar"
+  "ADDRESS_BOOKS_SIDEBAR": {
+    "new_contact": {
+      "string": "New contact",
+      "context": "Button for creating a new contact in the sidebar"
+    },
+    "new_distribution_list": {
+      "string": "Ny distribusjonsliste",
+      "context": "Button for creating a new distribution list in the sidebar"
+    },
+    "globals": {
+      "string": "Globale adressebøker"
+    },
+    "personals": {
+      "string": "Adressebøker"
+    },
+    "add_personal": {
+      "string": "Legg til adressebok"
+    },
+    "subscriptions": {
+      "string": "Subscriptions"
+    },
+    "add_subscriptions": {
+      "string": "Legg til abonnementer"
+    },
+    "name": {
+      "string": "Navn",
+      "context": "Label for the name field in the address book sidebar."
+    },
+    "options": {
+      "edit": {
+        "title": {
+          "string": "Rediger adresseboken {name}"
         },
-        "new_distribution_list": {
-            "string": "New distribution list",
-            "context": "Button for creating a new distribution list in the sidebar"
-        },
-        "globals": {
-            "string": "Global address books"
-        },
-        "personals": {
-            "string": "Address books"
-        },
-        "add_personal": {
-            "string": "Add address book"
-        },
-        "subscriptions": {
-            "string": "Subscriptions"
-        },
-        "add_subscriptions": {
-            "string": "Add subscriptions"
-        },
-        "name": {
-            "string": "Navn",
-            "context": "Label for the name field in the address book sidebar."
-        },
-        "options": {
-            "edit": {
-                "title": {
-                    "string": "Edit address book {name}"
-                },
-                "labels": {
-                    "name": {
-                        "string": "Navn"
-                    }
-                }
-            },
-            "link": {
-                "title": {
-                    "string": "Links"
-                },
-                "labels": {
-                    "name": {
-                        "string": "CardDAV URL"
-                    }
-                },
-                "copy": {
-                    "string": "Copy URL",
-                    "context": "Aria label for copying the address book CardDAV URL."
-                }
-            },
-            "delete": {
-                "title": {
-                    "string": "Are you sure you want to delete address book {name}?"
-                }
-            },
-            "sharing": {
-                "string": "Sharing"
-            },
-            "import": {
-                "string": "Import"
-            },
-            "export": {
-                "string": "Export"
-            },
-            "ios_download": {
-                "string": "Download iOS - MacOS configuration profile"
-            }
-        },
-        "sharing": {
-            "title": {
-                "string": "Address Book Sharing"
-            },
-            "description": {
-                "string": "Share this address book with other users. Shared users can view or modify contacts based on the permission level you grant."
-            },
-            "addUser": {
-                "string": "Add User"
-            },
-            "searchPlaceholder": {
-                "string": "Enter user email..."
-            },
-            "addButton": {
-                "string": "Share"
-            },
-            "added": {
-                "string": "Address book shared successfully"
-            },
-            "addError": {
-                "string": "Failed to share address book"
-            },
-            "removed": {
-                "string": "Share removed successfully"
-            },
-            "removeError": {
-                "string": "Failed to remove share"
-            },
-            "removeButton": {
-                "string": "Fjern"
-            },
-            "existingShares": {
-                "string": "Shared with"
-            },
-            "noShares": {
-                "string": "This address book is not shared with anyone yet."
-            },
-            "table": {
-                "user": {
-                    "string": "User"
-                },
-                "level": {
-                    "string": "Permission Level"
-                }
-            }
-        },
-        "all_contacts": {
-            "string": "All contacts",
-            "context": "Sidebar entry for cross-address-book contact listing"
-        },
-        "import": {
-            "description": {
-                "string": "Upload a contacts or distribution list file to import."
-            },
-            "title_book": {
-                "string": "Import into {name}"
-            },
-            "scope": {
-                "string": "Import target"
-            },
-            "scope_contacts": {
-                "string": "Contacts into this address book"
-            },
-            "scope_lists": {
-                "string": "Distribution lists into this address book"
-            },
-            "scope_new_book": {
-                "string": "Create a new address book"
-            },
-            "format": {
-                "string": "File format"
-            },
-            "format_json": {
-                "string": "JSON"
-            },
-            "format_vcard3": {
-                "string": "vCard 3.0"
-            },
-            "format_vcard4": {
-                "string": "vCard 4.0"
-            },
-            "format_ldif": {
-                "string": "LDIF"
-            },
-            "file": {
-                "string": "File"
-            },
-            "submit": {
-                "string": "Start import"
-            },
-            "processing": {
-                "string": "Import in progress..."
-            },
-            "cancel": {
-                "string": "Cancel import"
-            },
-            "success": {
-                "string": "Import completed successfully."
-            },
-            "success_with_counts": {
-                "string": "Import completed. Created: {counts}."
-            },
-            "close": {
-                "string": "Lukk"
-            }
-        },
-        "export": {
-            "description": {
-                "string": "Export this address book to a file."
-            },
-            "title_book": {
-                "string": "Export {name}"
-            },
-            "format": {
-                "string": "Export format"
-            },
-            "submit": {
-                "string": "Start export"
-            },
-            "processing": {
-                "string": "Export in progress..."
-            },
-            "success": {
-                "string": "Export completed. Your download should start shortly."
-            },
-            "close": {
-                "string": "Lukk"
-            }
+        "labels": {
+          "name": {
+            "string": "Navn"
+          }
         }
+      },
+      "link": {
+        "title": {
+          "string": "Links"
+        },
+        "labels": {
+          "name": {
+            "string": "CardDAV URL"
+          }
+        },
+        "copy": {
+          "string": "Copy URL",
+          "context": "Aria label for copying the address book CardDAV URL."
+        }
+      },
+      "delete": {
+        "title": {
+          "string": "Er du sikker på at du vil slette adresseboken {name}?"
+        }
+      },
+      "sharing": {
+        "string": "Sharing"
+      },
+      "import": {
+        "string": "Import"
+      },
+      "export": {
+        "string": "Export"
+      },
+      "ios_download": {
+        "string": "Last ned konfigurasjonsprofil for iOS - MacOS"
+      }
+    },
+    "sharing": {
+      "title": {
+        "string": "Deling av adressebok"
+      },
+      "description": {
+        "string": "Del denne adresseboken med andre brukere. Brukere med tilgang kan se eller endre kontakter basert på tilgangsnivået du gir dem."
+      },
+      "addUser": {
+        "string": "Add User"
+      },
+      "searchPlaceholder": {
+        "string": "Skriv inn brukerens e-post…"
+      },
+      "addButton": {
+        "string": "Share"
+      },
+      "added": {
+        "string": "Adresseboken er delt"
+      },
+      "addError": {
+        "string": "Kunne ikke dele adresseboken"
+      },
+      "removed": {
+        "string": "Delingen er fjernet"
+      },
+      "removeError": {
+        "string": "Kunne ikke fjerne delingen"
+      },
+      "removeButton": {
+        "string": "Fjern"
+      },
+      "existingShares": {
+        "string": "Shared with"
+      },
+      "noShares": {
+        "string": "Denne adresseboken er ikke delt med noen ennå."
+      },
+      "table": {
+        "user": {
+          "string": "User"
+        },
+        "level": {
+          "string": "Tilgangsnivå"
+        }
+      }
+    },
+    "all_contacts": {
+      "string": "All contacts",
+      "context": "Sidebar entry for cross-address-book contact listing"
+    },
+    "import": {
+      "description": {
+        "string": "Last opp en fil med kontakter eller distribusjonslister for å importere."
+      },
+      "title_book": {
+        "string": "Importer til {name}"
+      },
+      "scope": {
+        "string": "Importmål"
+      },
+      "scope_contacts": {
+        "string": "Kontakter til denne adresseboken"
+      },
+      "scope_lists": {
+        "string": "Distribusjonslister til denne adresseboken"
+      },
+      "scope_new_book": {
+        "string": "Opprett en ny adressebok"
+      },
+      "format": {
+        "string": "File format"
+      },
+      "format_json": {
+        "string": "JSON"
+      },
+      "format_vcard3": {
+        "string": "vCard 3.0"
+      },
+      "format_vcard4": {
+        "string": "vCard 4.0"
+      },
+      "format_ldif": {
+        "string": "LDIF"
+      },
+      "file": {
+        "string": "File"
+      },
+      "submit": {
+        "string": "Start import"
+      },
+      "processing": {
+        "string": "Import pågår…"
+      },
+      "cancel": {
+        "string": "Avbryt import"
+      },
+      "success": {
+        "string": "Importen ble fullført."
+      },
+      "success_with_counts": {
+        "string": "Importen er fullført. Opprettet: {counts}."
+      },
+      "close": {
+        "string": "Lukk"
+      }
+    },
+    "export": {
+      "description": {
+        "string": "Eksporter denne adresseboken til en fil."
+      },
+      "title_book": {
+        "string": "Eksporter {name}"
+      },
+      "format": {
+        "string": "Eksportformat"
+      },
+      "submit": {
+        "string": "Start export"
+      },
+      "processing": {
+        "string": "Eksport pågår…"
+      },
+      "success": {
+        "string": "Eksporten er fullført. Nedlastingen din starter snart."
+      },
+      "close": {
+        "string": "Lukk"
+      }
     }
+  }
 }

@@ -1,59 +1,59 @@
 {
-    "NAVIGATION": {
-        "address_book": {
-            "string": "Adressebok"
-        },
-        "calendar": {
-            "string": "Kalender"
-        },
-        "tasks": {
-            "string": "Oppgaver"
-        },
-        "notes": {
-            "string": "Notater"
-        },
-        "fast_access": {
-            "calendar": {
-                "title": "Kalender",
-                "view_all": "Vis alle",
-                "today": "I dag",
-                "no_events": "Ingen hendelser i dag",
-                "all_day": "All day",
-                "loading": "Laster hendelser…",
-                "error": "Kalender"
-            },
-            "tasks": {
-                "title": "Oppgaver",
-                "view_all": "Vis alle",
-                "search_placeholder": "Search tasks",
-                "overdue": "Overdue",
-                "today": "I dag",
-                "upcoming": "Upcoming",
-                "no_due_date": "No due date",
-                "empty": "You're all caught up",
-                "no_results": "No matches",
-                "loading": "Laster oppgaver…",
-                "error": "Could not load tasks"
-            },
-            "address_book": {
-                "title": "Contacts",
-                "view_all": "View all",
-                "search_placeholder": "Search contacts and lists",
-                "distribution_lists": "Distribution lists",
-                "contacts": "Contacts",
-                "member_count": "{number} members",
-                "compose": "Write message",
-                "loading": "Loading contacts…",
-                "error": "Could not load contacts",
-                "empty": "No address book available",
-                "no_entries": "No contacts or lists yet",
-                "no_results": "No matches",
-                "search_min_length": "Enter at least 2 characters to search."
-            },
-            "coming_soon": {
-                "title": "Feature incoming",
-                "description": "This section is under development and will be available soon."
-            }
-        }
+  "NAVIGATION": {
+    "address_book": {
+      "string": "Adressebok"
+    },
+    "calendar": {
+      "string": "Kalender"
+    },
+    "tasks": {
+      "string": "Oppgaver"
+    },
+    "notes": {
+      "string": "Notater"
+    },
+    "fast_access": {
+      "calendar": {
+        "title": "Kalender",
+        "view_all": "Vis alle",
+        "today": "I dag",
+        "no_events": "Ingen hendelser i dag",
+        "all_day": "All day",
+        "loading": "Laster hendelser…",
+        "error": "Kalender"
+      },
+      "tasks": {
+        "title": "Oppgaver",
+        "view_all": "Vis alle",
+        "search_placeholder": "Search tasks",
+        "overdue": "Overdue",
+        "today": "I dag",
+        "upcoming": "Upcoming",
+        "no_due_date": "No due date",
+        "empty": "Du er helt oppdatert",
+        "no_results": "No matches",
+        "loading": "Laster oppgaver…",
+        "error": "Kunne ikke laste inn oppgaver"
+      },
+      "address_book": {
+        "title": "Contacts",
+        "view_all": "View all",
+        "search_placeholder": "Søk i kontakter og lister",
+        "distribution_lists": "Distribusjonslister",
+        "contacts": "Contacts",
+        "member_count": "{number} medlemmer",
+        "compose": "Skriv melding",
+        "loading": "Laster inn kontakter…",
+        "error": "Kunne ikke laste inn kontakter",
+        "empty": "Ingen adressebok tilgjengelig",
+        "no_entries": "Ingen kontakter eller lister ennå",
+        "no_results": "No matches",
+        "search_min_length": "Skriv inn minst 2 tegn for å søke."
+      },
+      "coming_soon": {
+        "title": "Funksjon på vei",
+        "description": "Denne delen er under utvikling og blir tilgjengelig snart."
+      }
     }
+  }
 }
