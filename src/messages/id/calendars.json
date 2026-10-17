@@ -1,980 +1,980 @@
 {
-    "CALENDARS": {
+  "CALENDARS": {
+    "loading": {
+      "string": "Memuat..."
+    },
+    "attendance": {
+      "accepted": {
+        "string": "Accept"
+      },
+      "declined": {
+        "string": "Decline"
+      },
+      "tentative": {
+        "string": "Maybe"
+      },
+      "delegated": {
+        "string": "Delegate"
+      },
+      "success": {
+        "accepted": {
+          "string": "Anda menerima acara ini"
+        },
+        "declined": {
+          "string": "Anda menolak acara ini"
+        },
+        "tentative": {
+          "string": "Ditandai sebagai mungkin"
+        }
+      },
+      "error": {
+        "string": {
+          "string": "Gagal memperbarui kehadiran Anda"
+        }
+      }
+    },
+    "recurrenceScope": {
+      "editTitle": {
+        "string": "Sunting acara berulang"
+      },
+      "deleteTitle": {
+        "string": "Hapus acara berulang"
+      },
+      "description": {
+        "string": "Acara mana yang ingin Anda ubah?"
+      },
+      "ONE": {
+        "string": "Hanya acara ini"
+      },
+      "THISANDFUTURE": {
+        "string": "Acara ini dan acara berikutnya"
+      },
+      "ALL": {
+        "string": "All events"
+      },
+      "cancel": {
+        "string": "Batal"
+      }
+    },
+    "toolbar": {
+      "previous": {
+        "string": "Sebelumnya"
+      },
+      "today": {
+        "string": "Hari ini"
+      },
+      "next": {
+        "string": "Berikutnya"
+      },
+      "pickDate": {
+        "string": "Pick a date"
+      },
+      "search": {
+        "string": "Cari acara...",
+        "no_results": {
+          "string": "Tidak ada acara yang ditemukan"
+        },
         "loading": {
-            "string": "Memuat..."
+          "string": "Searching..."
+        }
+      },
+      "selectView": {
+        "string": "Select view"
+      },
+      "views": {
+        "month": {
+          "string": "Month"
         },
-        "attendance": {
-            "accepted": {
-                "string": "Accept"
-            },
-            "declined": {
-                "string": "Decline"
-            },
-            "tentative": {
-                "string": "Maybe"
-            },
-            "delegated": {
-                "string": "Delegate"
-            },
-            "success": {
-                "accepted": {
-                    "string": "You accepted this event"
-                },
-                "declined": {
-                    "string": "You declined this event"
-                },
-                "tentative": {
-                    "string": "Marked as maybe"
-                }
-            },
-            "error": {
-                "string": {
-                    "string": "Failed to update your attendance"
-                }
-            }
+        "week": {
+          "string": "Week"
         },
-        "recurrenceScope": {
-            "editTitle": {
-                "string": "Edit recurring event"
-            },
-            "deleteTitle": {
-                "string": "Delete recurring event"
-            },
-            "description": {
-                "string": "Which events do you want to modify?"
-            },
-            "ONE": {
-                "string": "This event only"
-            },
-            "THISANDFUTURE": {
-                "string": "This and following events"
-            },
-            "ALL": {
-                "string": "All events"
-            },
-            "cancel": {
-                "string": "Batal"
-            }
-        },
-        "toolbar": {
-            "previous": {
-                "string": "Sebelumnya"
-            },
-            "today": {
-                "string": "Hari ini"
-            },
-            "next": {
-                "string": "Berikutnya"
-            },
-            "pickDate": {
-                "string": "Pick a date"
-            },
-            "search": {
-                "string": "Search events...",
-                "no_results": {
-                    "string": "No events found"
-                },
-                "loading": {
-                    "string": "Searching..."
-                }
-            },
-            "selectView": {
-                "string": "Select view"
-            },
-            "views": {
-                "month": {
-                    "string": "Month"
-                },
-                "week": {
-                    "string": "Week"
-                },
-                "day": {
-                    "string": "Day"
-                },
-                "schedule": {
-                    "string": "Schedule"
-                }
-            },
-            "createEvent": {
-                "string": "Create Event"
-            }
-        },
-        "events": {
-            "create": {
-                "string": "Create Event"
-            }
+        "day": {
+          "string": "Day"
         },
         "schedule": {
-            "noEvents": {
-                "string": "No events"
-            },
-            "noUpcomingEvents": {
-                "string": "No upcoming events for this period"
-            }
-        },
-        "views": {
-            "month": {
-                "string": "Month"
-            },
-            "week": {
-                "string": "Week"
-            },
-            "day": {
-                "string": "Day"
-            },
-            "agenda": {
-                "string": "Agenda"
-            }
-        },
-        "mobile": {
-            "event": {
-                "string": "event",
-                "plural": "events"
-            },
-            "weekView": {
-                "eventsCount": {
-                    "string": "{count, plural, one {# event} other {# events}}"
-                }
-            },
-            "noEvents": {
-                "string": "No events"
-            },
-            "swipeHint": {
-                "string": "← Swipe to see all days →"
-            },
-            "swipeToChangeDay": {
-                "string": "Swipe to change day"
-            },
-            "swipeToNavigate": {
-                "string": "← Swipe to navigate →"
-            },
-            "timeSeparator": {
-                "string": "-"
-            },
-            "month": {
-                "today": {
-                    "string": "Hari ini"
-                },
-                "hasEvents": {
-                    "string": "Has events"
-                }
-            }
-        },
-        "external": {
-            "add_title": {
-                "string": "Subscribe to calendar"
-            },
-            "name_label": {
-                "string": "Nama"
-            },
-            "url_label": {
-                "string": "Calendar URL (.ics)"
-            },
-            "url_error": {
-                "string": "Please enter a valid URL"
-            },
-            "color_label": {
-                "string": "Color"
-            },
-            "sync_interval_label": {
-                "string": "Sync every"
-            },
-            "sync_now": {
-                "string": "Sync now"
-            },
-            "submit": {
-                "string": "Subscribe"
-            },
-            "sync_interval_options": {
-                "5": {
-                    "string": "5 min"
-                },
-                "15": {
-                    "string": "15 min"
-                },
-                "30": {
-                    "string": "30 min"
-                },
-                "60": {
-                    "string": "1 hour"
-                },
-                "360": {
-                    "string": "6 hours"
-                },
-                "1440": {
-                    "string": "24 hours"
-                }
-            }
-        },
-        "sidebar": {
-            "personals": {
-                "string": "Personal Calendars"
-            },
-            "shared": {
-                "string": "Shared Calendars"
-            },
-            "subscriptions": {
-                "string": "Subscriptions"
-            },
-            "add": {
-                "string": "Add Calendar"
-            },
-            "edit": {
-                "string": "Edit Calendar"
-            },
-            "delete": {
-                "string": "Delete Calendar"
-            },
-            "sharing": {
-                "string": "Sharing Settings"
-            },
-            "link": {
-                "string": "Get Calendar Link",
-                "description": {
-                    "string": "Copy this link to subscribe to this calendar in other calendar applications."
-                }
-            },
-            "export": {
-                "string": "Export Calendar"
-            },
-            "color": {
-                "string": "Calendar Color"
-            },
-            "readOnlyCalendar": {
-                "string": "Read-only calendar",
-                "context": "Label for ICS/subscription calendars that cannot be edited"
-            }
-        },
-        "actions": {
-            "newEvent": {
-                "string": "New Event"
-            },
-            "today": {
-                "string": "Hari ini"
-            },
-            "month": {
-                "string": "Month"
-            },
-            "week": {
-                "string": "Week"
-            },
-            "day": {
-                "string": "Day"
-            },
-            "agenda": {
-                "string": "Agenda"
-            }
-        },
-        "visualization": {
-            "location": {
-                "string": "Location"
-            },
-            "description": {
-                "string": "Deskripsi"
-            },
-            "attendees": {
-                "string": "Attendees"
-            },
-            "conference": {
-                "string": "Video Conference"
-            },
-            "joinMeeting": {
-                "string": "Join Meeting"
-            },
-            "reminders": {
-                "string": "Reminders"
-            },
-            "recurrence": {
-                "string": "Repeats"
-            },
-            "frequency": {
-                "daily": {
-                    "string": "Daily"
-                },
-                "weekly": {
-                    "string": "Weekly"
-                },
-                "monthly": {
-                    "string": "Monthly"
-                },
-                "yearly": {
-                    "string": "Yearly"
-                }
-            },
-            "every": {
-                "string": "Every {count}"
-            },
-            "daysBefore": {
-                "string": "{count} days before"
-            },
-            "hoursBefore": {
-                "string": "{count} hours before"
-            },
-            "minutesBefore": {
-                "string": "{count} minutes before"
-            },
-            "organizer": {
-                "string": "Organizer"
-            },
-            "organizerRole": {
-                "string": "(organizer)"
-            },
-            "attendeeStatus": {
-                "accepted": {
-                    "string": "Accepted"
-                },
-                "pending": {
-                    "string": "Pending"
-                },
-                "declined": {
-                    "string": "Declined"
-                },
-                "tentative": {
-                    "string": "Tentative"
-                }
-            },
-            "categories": {
-                "string": "Categories"
-            },
-            "url": {
-                "string": "URL"
-            },
-            "visibility": {
-                "string": "Visibility",
-                "values": {
-                    "public": {
-                        "string": "Public"
-                    },
-                    "private": {
-                        "string": "Private"
-                    },
-                    "confidential": {
-                        "string": "Confidential"
-                    }
-                }
-            },
-            "showAs": {
-                "string": "Show as",
-                "values": {
-                    "busy": {
-                        "string": "Busy"
-                    },
-                    "free": {
-                        "string": "Free"
-                    },
-                    "tentative": {
-                        "string": "Tentative"
-                    },
-                    "outOfOffice": {
-                        "string": "Out of office"
-                    }
-                }
-            },
-            "status": {
-                "string": "Status",
-                "values": {
-                    "confirmed": {
-                        "string": "Confirmed"
-                    },
-                    "tentative": {
-                        "string": "Tentative"
-                    },
-                    "cancelled": {
-                        "string": "Cancelled"
-                    }
-                }
-            }
-        },
-        "eventForm": {
-            "calendar": {
-                "label": {
-                    "string": "Kalender"
-                },
-                "placeholder": {
-                    "string": "Select calendar"
-                }
-            },
-            "title": {
-                "label": {
-                    "string": "Event title"
-                },
-                "placeholder": {
-                    "string": "Enter event title"
-                }
-            },
-            "allDay": {
-                "label": {
-                    "string": "All day"
-                }
-            },
-            "startDate": {
-                "label": {
-                    "string": "Start date"
-                }
-            },
-            "startTime": {
-                "label": {
-                    "string": "Start time"
-                }
-            },
-            "endDate": {
-                "label": {
-                    "string": "End date"
-                }
-            },
-            "endTime": {
-                "label": {
-                    "string": "End time"
-                }
-            },
-            "errors": {
-                "date_order": {
-                    "string": "End date must be on or after the start date."
-                }
-            },
-            "timezone": {
-                "label": {
-                    "string": "Timezone (event)"
-                },
-                "description": {
-                    "string": "Timezone in which this event's dates are interpreted"
-                }
-            },
-            "description": {
-                "label": {
-                    "string": "Deskripsi"
-                },
-                "placeholder": {
-                    "string": "Add event details"
-                }
-            },
-            "location": {
-                "label": {
-                    "string": "Location"
-                },
-                "placeholder": {
-                    "string": "Add location"
-                }
-            },
-            "visibility": {
-                "label": {
-                    "string": "Visibility"
-                },
-                "placeholder": {
-                    "string": "Select visibility"
-                },
-                "options": {
-                    "public": {
-                        "string": "Public"
-                    },
-                    "private": {
-                        "string": "Private"
-                    },
-                    "confidential": {
-                        "string": "Confidential"
-                    }
-                }
-            },
-            "showAs": {
-                "label": {
-                    "string": "Show as"
-                },
-                "placeholder": {
-                    "string": "Select availability"
-                },
-                "options": {
-                    "busy": {
-                        "string": "Busy"
-                    },
-                    "free": {
-                        "string": "Free"
-                    },
-                    "outOfOffice": {
-                        "string": "Out of office"
-                    },
-                    "tentative": {
-                        "string": "Tentative"
-                    }
-                }
-            },
-            "status": {
-                "label": {
-                    "string": "Status"
-                },
-                "placeholder": {
-                    "string": "Select status"
-                },
-                "options": {
-                    "confirmed": {
-                        "string": "Confirmed"
-                    },
-                    "tentative": {
-                        "string": "Tentative"
-                    },
-                    "cancelled": {
-                        "string": "Cancelled"
-                    }
-                }
-            },
-            "color": {
-                "label": {
-                    "string": "Color"
-                },
-                "reset": {
-                    "string": "Reset"
-                }
-            },
-            "categories": {
-                "label": {
-                    "string": "Categories"
-                },
-                "placeholder": {
-                    "string": "Add a category and press Enter"
-                },
-                "remove": {
-                    "string": "Remove {category}"
-                }
-            },
-            "attendees": {
-                "label": {
-                    "string": "Attendees"
-                },
-                "title": {
-                    "string": "Participants"
-                },
-                "add": {
-                    "string": "Add participant"
-                },
-                "emailPlaceholder": {
-                    "string": "email@example.com"
-                },
-                "namePlaceholder": {
-                    "string": "Name (optional)"
-                },
-                "remove": {
-                    "string": "Remove {email}"
-                },
-                "search_placeholder": {
-                    "string": "Search by name or email..."
-                },
-                "invalid_email": {
-                    "string": "Please enter a valid email address"
-                },
-                "already_added": {
-                    "string": "This participant has already been added"
-                },
-                "max_reached": {
-                    "string": "Maximum {max} participants reached"
-                },
-                "add_email_direct": {
-                    "string": "Add \"{email}\" directly"
-                },
-                "no_data": {
-                    "string": "No availability data"
-                },
-                "legend_free": {
-                    "string": "Available"
-                },
-                "legend_busy": {
-                    "string": "Busy"
-                },
-                "legend_tentative": {
-                    "string": "Tentative"
-                },
-                "legend_non_working": {
-                    "string": "Non-working hours"
-                },
-                "optimal_slot": {
-                    "string": "Suggested window"
-                },
-                "timeline_hour": {
-                    "string": "{hour}h"
-                },
-                "scroll_horizontal_hint": {
-                    "string": "Scroll horizontally"
-                },
-                "tooltip_slot_busy": {
-                    "string": "Busy"
-                },
-                "tooltip_slot_free": {
-                    "string": "{name} · free · {time}"
-                },
-                "tooltip_slot_optimal": {
-                    "string": "Part of the suggested {duration}-min window · {time}"
-                }
-            },
-            "reminders": {
-                "label": {
-                    "string": "Reminders"
-                },
-                "add": {
-                    "string": "Add reminder"
-                },
-                "minutesBefore": {
-                    "string": "min before"
-                },
-                "remove": {
-                    "string": "Remove reminder"
-                },
-                "methods": {
-                    "popup": {
-                        "string": "Popup"
-                    },
-                    "email": {
-                        "string": "Email"
-                    }
-                }
-            },
-            "recurrence": {
-                "repeat": {
-                    "string": "Repeat"
-                },
-                "every": {
-                    "string": "Every"
-                },
-                "on": {
-                    "string": "On"
-                },
-                "onDay": {
-                    "string": "On day"
-                },
-                "ofTheMonth": {
-                    "string": "of the month"
-                },
-                "ends": {
-                    "string": "Ends"
-                },
-                "occurrences": {
-                    "string": "occurrences"
-                },
-                "days": {
-                    "mo": {
-                        "string": "Mon"
-                    },
-                    "tu": {
-                        "string": "Tue"
-                    },
-                    "we": {
-                        "string": "Wed"
-                    },
-                    "th": {
-                        "string": "Thu"
-                    },
-                    "fr": {
-                        "string": "Fri"
-                    },
-                    "sa": {
-                        "string": "Sat"
-                    },
-                    "su": {
-                        "string": "Sun"
-                    }
-                },
-                "frequencies": {
-                    "daily": {
-                        "string": "Day(s)"
-                    },
-                    "weekly": {
-                        "string": "Week(s)"
-                    },
-                    "monthly": {
-                        "string": "Month(s)"
-                    },
-                    "yearly": {
-                        "string": "Year(s)"
-                    }
-                },
-                "endTypes": {
-                    "never": {
-                        "string": "Never"
-                    },
-                    "on": {
-                        "string": "On"
-                    },
-                    "after": {
-                        "string": "After"
-                    }
-                }
-            },
-            "url": {
-                "label": {
-                    "string": "URL"
-                },
-                "placeholder": {
-                    "string": "https://example.com"
-                }
-            },
-            "cancel": {
-                "string": "Batal"
-            },
-            "create": {
-                "string": "Create Event"
-            },
-            "update": {
-                "string": "Update Event"
-            }
-        },
-        "common": {
-            "cancel": {
-                "string": "Batal"
-            }
-        },
-        "forms": {
-            "createCalendar": {
-                "title": {
-                    "string": "Create New Calendar"
-                },
-                "defaultEventDuration": {
-                    "string": "Default Event Duration"
-                },
-                "nameLabel": {
-                    "string": "Calendar Name"
-                },
-                "namePlaceholder": {
-                    "string": "My Calendar"
-                },
-                "colorLabel": {
-                    "string": "Color"
-                },
-                "description": {
-                    "string": "Deskripsi"
-                },
-                "descriptionPlaceholder": {
-                    "string": "Add description to calendar"
-                },
-                "eventDuration": {
-                    "string": "Event Duration"
-                },
-                "eventNotifications": {
-                    "string": "Event Notifications"
-                },
-                "allDayNotifications": {
-                    "string": "All-day event notifications"
-                },
-                "addNotification": {
-                    "string": "Add notification"
-                },
-                "showBusyStatus": {
-                    "string": "Show others when I'm busy"
-                },
-                "atTimeOfEvent": {
-                    "string": "at time of event"
-                },
-                "fiveMinutes": {
-                    "string": "5 minutes before"
-                },
-                "fifteenMinutes": {
-                    "string": "15 minutes before"
-                },
-                "thirtyMinutesBefore": {
-                    "string": "30 minutes before"
-                },
-                "oneHourBefore": {
-                    "string": "1 hour before"
-                },
-                "dayBefore": {
-                    "string": "day before"
-                },
-                "notification": {
-                    "string": "notification"
-                },
-                "email": {
-                    "string": "e-mail"
-                },
-                "delete": {
-                    "string": "Hapus"
-                },
-                "at": {
-                    "string": "at"
-                },
-                "durationOptions": {
-                    "thirtyMinutes": {
-                        "string": "30 minutes"
-                    },
-                    "oneHour": {
-                        "string": "1 hour"
-                    },
-                    "twoHours": {
-                        "string": "2 hours"
-                    },
-                    "allDay": {
-                        "string": "All day"
-                    }
-                },
-                "saving": {
-                    "string": "Creating..."
-                },
-                "submit": {
-                    "string": "Create Calendar"
-                },
-                "cancel": {
-                    "string": "Batal"
-                }
-            },
-            "copyEvent": {
-                "string": "Salin acara"
-            },
-            "editCalendar": {
-                "title": {
-                    "string": "Edit Calendar"
-                },
-                "nameLabel": {
-                    "string": "Calendar Name"
-                },
-                "colorLabel": {
-                    "string": "Color"
-                },
-                "description": {
-                    "string": "Deskripsi"
-                },
-                "descriptionPlaceholder": {
-                    "string": "Add description to calendar"
-                },
-                "eventDuration": {
-                    "string": "Event Duration"
-                },
-                "eventNotifications": {
-                    "string": "Event Notifications"
-                },
-                "allDayNotifications": {
-                    "string": "All-day event notifications"
-                },
-                "addNotification": {
-                    "string": "Add notification"
-                },
-                "showBusyStatus": {
-                    "string": "Show others when I'm busy"
-                },
-                "atTimeOfEvent": {
-                    "string": "at time of event"
-                },
-                "fiveMinutes": {
-                    "string": "5 minutes before"
-                },
-                "fifteenMinutes": {
-                    "string": "15 minutes before"
-                },
-                "thirtyMinutesBefore": {
-                    "string": "30 minutes before"
-                },
-                "oneHourBefore": {
-                    "string": "1 hour before"
-                },
-                "dayBefore": {
-                    "string": "day before"
-                },
-                "notification": {
-                    "string": "notification"
-                },
-                "email": {
-                    "string": "e-mail"
-                },
-                "delete": {
-                    "string": "Hapus"
-                },
-                "at": {
-                    "string": "at"
-                },
-                "durationOptions": {
-                    "thirtyMinutes": {
-                        "string": "30 minutes"
-                    },
-                    "oneHour": {
-                        "string": "1 hour"
-                    },
-                    "twoHours": {
-                        "string": "2 hours"
-                    },
-                    "allDay": {
-                        "string": "All day"
-                    }
-                },
-                "submit": {
-                    "string": "Save Changes"
-                },
-                "cancel": {
-                    "string": "Batal"
-                }
-            },
-            "editEvent": {
-                "string": "Edit event"
-            },
-            "deleteEvent": {
-                "confirm": {
-                    "title": {
-                        "string": "Delete event?"
-                    },
-                    "description": {
-                        "string": "This action cannot be undone."
-                    },
-                    "button": {
-                        "string": "Hapus"
-                    }
-                }
-            },
-            "deleteCalendar": {
-                "title": {
-                    "string": "Delete Calendar"
-                },
-                "message": {
-                    "string": "Are you sure you want to delete this calendar? This action cannot be undone."
-                },
-                "confirm": {
-                    "string": "Hapus"
-                },
-                "cancel": {
-                    "string": "Batal"
-                }
-            }
-        },
-        "share": {
-            "title": {
-                "string": "Calendar Sharing"
-            },
-            "description": {
-                "string": "Share this calendar with other users. Shared users can see events based on the permission level you grant."
-            },
-            "addUser": {
-                "string": "Add User"
-            },
-            "searchPlaceholder": {
-                "string": "Search by name or email..."
-            },
-            "addButton": {
-                "string": "Share"
-            },
-            "added": {
-                "string": "Calendar shared successfully"
-            },
-            "addError": {
-                "string": "Failed to share calendar"
-            },
-            "removed": {
-                "string": "Share removed successfully"
-            },
-            "removeError": {
-                "string": "Failed to remove share"
-            },
-            "removeButton": {
-                "string": "Hapus"
-            },
-            "existingShares": {
-                "string": "Shared with"
-            },
-            "noShares": {
-                "string": "This calendar is not shared with anyone yet."
-            },
-            "table": {
-                "user": {
-                    "string": "User"
-                },
-                "level": {
-                    "string": "Permission Level"
-                },
-                "canCreate": {
-                    "string": "Can Create"
-                }
-            }
+          "string": "Schedule"
         }
+      },
+      "createEvent": {
+        "string": "Create Event"
+      }
+    },
+    "events": {
+      "create": {
+        "string": "Create Event"
+      }
+    },
+    "schedule": {
+      "noEvents": {
+        "string": "No events"
+      },
+      "noUpcomingEvents": {
+        "string": "Tidak ada acara mendatang untuk periode ini"
+      }
+    },
+    "views": {
+      "month": {
+        "string": "Month"
+      },
+      "week": {
+        "string": "Week"
+      },
+      "day": {
+        "string": "Day"
+      },
+      "agenda": {
+        "string": "Agenda"
+      }
+    },
+    "mobile": {
+      "event": {
+        "string": "event",
+        "plural": "events"
+      },
+      "weekView": {
+        "eventsCount": {
+          "string": "{count, plural, one {# acara} other {# acara}}"
+        }
+      },
+      "noEvents": {
+        "string": "No events"
+      },
+      "swipeHint": {
+        "string": "← Geser untuk melihat semua hari →"
+      },
+      "swipeToChangeDay": {
+        "string": "Geser untuk mengganti hari"
+      },
+      "swipeToNavigate": {
+        "string": "← Geser untuk menavigasi →"
+      },
+      "timeSeparator": {
+        "string": "-"
+      },
+      "month": {
+        "today": {
+          "string": "Hari ini"
+        },
+        "hasEvents": {
+          "string": "Has events"
+        }
+      }
+    },
+    "external": {
+      "add_title": {
+        "string": "Berlangganan kalender"
+      },
+      "name_label": {
+        "string": "Nama"
+      },
+      "url_label": {
+        "string": "URL Kalender (.ics)"
+      },
+      "url_error": {
+        "string": "Masukkan URL yang valid"
+      },
+      "color_label": {
+        "string": "Color"
+      },
+      "sync_interval_label": {
+        "string": "Sync every"
+      },
+      "sync_now": {
+        "string": "Sync now"
+      },
+      "submit": {
+        "string": "Subscribe"
+      },
+      "sync_interval_options": {
+        "5": {
+          "string": "5 min"
+        },
+        "15": {
+          "string": "15 min"
+        },
+        "30": {
+          "string": "30 min"
+        },
+        "60": {
+          "string": "1 hour"
+        },
+        "360": {
+          "string": "6 hours"
+        },
+        "1440": {
+          "string": "24 hours"
+        }
+      }
+    },
+    "sidebar": {
+      "personals": {
+        "string": "Kalender Pribadi"
+      },
+      "shared": {
+        "string": "Kalender Bersama"
+      },
+      "subscriptions": {
+        "string": "Subscriptions"
+      },
+      "add": {
+        "string": "Add Calendar"
+      },
+      "edit": {
+        "string": "Sunting Kalender"
+      },
+      "delete": {
+        "string": "Hapus Kalender"
+      },
+      "sharing": {
+        "string": "Pengaturan Berbagi"
+      },
+      "link": {
+        "string": "Dapatkan Tautan Kalender",
+        "description": {
+          "string": "Salin tautan ini untuk berlangganan kalender ini di aplikasi kalender lain."
+        }
+      },
+      "export": {
+        "string": "Ekspor Kalender"
+      },
+      "color": {
+        "string": "Warna Kalender"
+      },
+      "readOnlyCalendar": {
+        "string": "Kalender hanya-baca",
+        "context": "Label for ICS/subscription calendars that cannot be edited"
+      }
+    },
+    "actions": {
+      "newEvent": {
+        "string": "New Event"
+      },
+      "today": {
+        "string": "Hari ini"
+      },
+      "month": {
+        "string": "Month"
+      },
+      "week": {
+        "string": "Week"
+      },
+      "day": {
+        "string": "Day"
+      },
+      "agenda": {
+        "string": "Agenda"
+      }
+    },
+    "visualization": {
+      "location": {
+        "string": "Location"
+      },
+      "description": {
+        "string": "Deskripsi"
+      },
+      "attendees": {
+        "string": "Attendees"
+      },
+      "conference": {
+        "string": "Konferensi Video"
+      },
+      "joinMeeting": {
+        "string": "Join Meeting"
+      },
+      "reminders": {
+        "string": "Reminders"
+      },
+      "recurrence": {
+        "string": "Repeats"
+      },
+      "frequency": {
+        "daily": {
+          "string": "Daily"
+        },
+        "weekly": {
+          "string": "Weekly"
+        },
+        "monthly": {
+          "string": "Monthly"
+        },
+        "yearly": {
+          "string": "Yearly"
+        }
+      },
+      "every": {
+        "string": "Setiap {count}"
+      },
+      "daysBefore": {
+        "string": "{count} hari sebelumnya"
+      },
+      "hoursBefore": {
+        "string": "{count} jam sebelumnya"
+      },
+      "minutesBefore": {
+        "string": "{count} menit sebelumnya"
+      },
+      "organizer": {
+        "string": "Organizer"
+      },
+      "organizerRole": {
+        "string": "(organizer)"
+      },
+      "attendeeStatus": {
+        "accepted": {
+          "string": "Accepted"
+        },
+        "pending": {
+          "string": "Pending"
+        },
+        "declined": {
+          "string": "Declined"
+        },
+        "tentative": {
+          "string": "Tentative"
+        }
+      },
+      "categories": {
+        "string": "Categories"
+      },
+      "url": {
+        "string": "URL"
+      },
+      "visibility": {
+        "string": "Visibility",
+        "values": {
+          "public": {
+            "string": "Public"
+          },
+          "private": {
+            "string": "Private"
+          },
+          "confidential": {
+            "string": "Confidential"
+          }
+        }
+      },
+      "showAs": {
+        "string": "Show as",
+        "values": {
+          "busy": {
+            "string": "Busy"
+          },
+          "free": {
+            "string": "Free"
+          },
+          "tentative": {
+            "string": "Tentative"
+          },
+          "outOfOffice": {
+            "string": "Di luar kantor"
+          }
+        }
+      },
+      "status": {
+        "string": "Status",
+        "values": {
+          "confirmed": {
+            "string": "Confirmed"
+          },
+          "tentative": {
+            "string": "Tentative"
+          },
+          "cancelled": {
+            "string": "Cancelled"
+          }
+        }
+      }
+    },
+    "eventForm": {
+      "calendar": {
+        "label": {
+          "string": "Kalender"
+        },
+        "placeholder": {
+          "string": "Pilih kalender"
+        }
+      },
+      "title": {
+        "label": {
+          "string": "Event title"
+        },
+        "placeholder": {
+          "string": "Masukkan judul acara"
+        }
+      },
+      "allDay": {
+        "label": {
+          "string": "All day"
+        }
+      },
+      "startDate": {
+        "label": {
+          "string": "Start date"
+        }
+      },
+      "startTime": {
+        "label": {
+          "string": "Start time"
+        }
+      },
+      "endDate": {
+        "label": {
+          "string": "End date"
+        }
+      },
+      "endTime": {
+        "label": {
+          "string": "End time"
+        }
+      },
+      "errors": {
+        "date_order": {
+          "string": "Tanggal selesai harus sama dengan atau setelah tanggal mulai."
+        }
+      },
+      "timezone": {
+        "label": {
+          "string": "Zona waktu (acara)"
+        },
+        "description": {
+          "string": "Zona waktu untuk menafsirkan tanggal acara ini"
+        }
+      },
+      "description": {
+        "label": {
+          "string": "Deskripsi"
+        },
+        "placeholder": {
+          "string": "Tambahkan detail acara"
+        }
+      },
+      "location": {
+        "label": {
+          "string": "Location"
+        },
+        "placeholder": {
+          "string": "Add location"
+        }
+      },
+      "visibility": {
+        "label": {
+          "string": "Visibility"
+        },
+        "placeholder": {
+          "string": "Pilih visibilitas"
+        },
+        "options": {
+          "public": {
+            "string": "Public"
+          },
+          "private": {
+            "string": "Private"
+          },
+          "confidential": {
+            "string": "Confidential"
+          }
+        }
+      },
+      "showAs": {
+        "label": {
+          "string": "Show as"
+        },
+        "placeholder": {
+          "string": "Pilih ketersediaan"
+        },
+        "options": {
+          "busy": {
+            "string": "Busy"
+          },
+          "free": {
+            "string": "Free"
+          },
+          "outOfOffice": {
+            "string": "Di luar kantor"
+          },
+          "tentative": {
+            "string": "Tentative"
+          }
+        }
+      },
+      "status": {
+        "label": {
+          "string": "Status"
+        },
+        "placeholder": {
+          "string": "Pilih status"
+        },
+        "options": {
+          "confirmed": {
+            "string": "Confirmed"
+          },
+          "tentative": {
+            "string": "Tentative"
+          },
+          "cancelled": {
+            "string": "Cancelled"
+          }
+        }
+      },
+      "color": {
+        "label": {
+          "string": "Color"
+        },
+        "reset": {
+          "string": "Reset"
+        }
+      },
+      "categories": {
+        "label": {
+          "string": "Categories"
+        },
+        "placeholder": {
+          "string": "Tambahkan kategori dan tekan Enter"
+        },
+        "remove": {
+          "string": "Hapus {category}"
+        }
+      },
+      "attendees": {
+        "label": {
+          "string": "Attendees"
+        },
+        "title": {
+          "string": "Participants"
+        },
+        "add": {
+          "string": "Tambahkan peserta"
+        },
+        "emailPlaceholder": {
+          "string": "email@example.com"
+        },
+        "namePlaceholder": {
+          "string": "Nama (opsional)"
+        },
+        "remove": {
+          "string": "Hapus {email}"
+        },
+        "search_placeholder": {
+          "string": "Cari berdasarkan nama atau email..."
+        },
+        "invalid_email": {
+          "string": "Masukkan alamat email yang valid"
+        },
+        "already_added": {
+          "string": "Peserta ini sudah ditambahkan"
+        },
+        "max_reached": {
+          "string": "Maksimal {max} peserta tercapai"
+        },
+        "add_email_direct": {
+          "string": "Tambahkan \"{email}\" secara langsung"
+        },
+        "no_data": {
+          "string": "Tidak ada data ketersediaan"
+        },
+        "legend_free": {
+          "string": "Available"
+        },
+        "legend_busy": {
+          "string": "Busy"
+        },
+        "legend_tentative": {
+          "string": "Tentative"
+        },
+        "legend_non_working": {
+          "string": "Jam non-kerja"
+        },
+        "optimal_slot": {
+          "string": "Jendela yang disarankan"
+        },
+        "timeline_hour": {
+          "string": "{hour}h"
+        },
+        "scroll_horizontal_hint": {
+          "string": "Gulir secara horizontal"
+        },
+        "tooltip_slot_busy": {
+          "string": "Busy"
+        },
+        "tooltip_slot_free": {
+          "string": "{name} · waktu luang · {time}"
+        },
+        "tooltip_slot_optimal": {
+          "string": "Bagian dari jendela {duration} menit yang disarankan · {time}"
+        }
+      },
+      "reminders": {
+        "label": {
+          "string": "Reminders"
+        },
+        "add": {
+          "string": "Add reminder"
+        },
+        "minutesBefore": {
+          "string": "min before"
+        },
+        "remove": {
+          "string": "Hapus pengingat"
+        },
+        "methods": {
+          "popup": {
+            "string": "Popup"
+          },
+          "email": {
+            "string": "Email"
+          }
+        }
+      },
+      "recurrence": {
+        "repeat": {
+          "string": "Repeat"
+        },
+        "every": {
+          "string": "Every"
+        },
+        "on": {
+          "string": "On"
+        },
+        "onDay": {
+          "string": "On day"
+        },
+        "ofTheMonth": {
+          "string": "of the month"
+        },
+        "ends": {
+          "string": "Ends"
+        },
+        "occurrences": {
+          "string": "occurrences"
+        },
+        "days": {
+          "mo": {
+            "string": "Mon"
+          },
+          "tu": {
+            "string": "Tue"
+          },
+          "we": {
+            "string": "Wed"
+          },
+          "th": {
+            "string": "Thu"
+          },
+          "fr": {
+            "string": "Fri"
+          },
+          "sa": {
+            "string": "Sat"
+          },
+          "su": {
+            "string": "Sun"
+          }
+        },
+        "frequencies": {
+          "daily": {
+            "string": "Day(s)"
+          },
+          "weekly": {
+            "string": "Week(s)"
+          },
+          "monthly": {
+            "string": "Month(s)"
+          },
+          "yearly": {
+            "string": "Year(s)"
+          }
+        },
+        "endTypes": {
+          "never": {
+            "string": "Never"
+          },
+          "on": {
+            "string": "On"
+          },
+          "after": {
+            "string": "After"
+          }
+        }
+      },
+      "url": {
+        "label": {
+          "string": "URL"
+        },
+        "placeholder": {
+          "string": "https://example.com"
+        }
+      },
+      "cancel": {
+        "string": "Batal"
+      },
+      "create": {
+        "string": "Create Event"
+      },
+      "update": {
+        "string": "Update Event"
+      }
+    },
+    "common": {
+      "cancel": {
+        "string": "Batal"
+      }
+    },
+    "forms": {
+      "createCalendar": {
+        "title": {
+          "string": "Buat Kalender Baru"
+        },
+        "defaultEventDuration": {
+          "string": "Durasi Acara Default"
+        },
+        "nameLabel": {
+          "string": "Nama Kalender"
+        },
+        "namePlaceholder": {
+          "string": "My Calendar"
+        },
+        "colorLabel": {
+          "string": "Color"
+        },
+        "description": {
+          "string": "Deskripsi"
+        },
+        "descriptionPlaceholder": {
+          "string": "Tambahkan deskripsi ke kalender"
+        },
+        "eventDuration": {
+          "string": "Durasi Acara"
+        },
+        "eventNotifications": {
+          "string": "Notifikasi Acara"
+        },
+        "allDayNotifications": {
+          "string": "Notifikasi acara sepanjang hari"
+        },
+        "addNotification": {
+          "string": "Tambahkan notifikasi"
+        },
+        "showBusyStatus": {
+          "string": "Tunjukkan ke orang lain saat saya sibuk"
+        },
+        "atTimeOfEvent": {
+          "string": "pada saat acara"
+        },
+        "fiveMinutes": {
+          "string": "5 menit sebelumnya"
+        },
+        "fifteenMinutes": {
+          "string": "15 menit sebelumnya"
+        },
+        "thirtyMinutesBefore": {
+          "string": "30 menit sebelumnya"
+        },
+        "oneHourBefore": {
+          "string": "1 jam sebelumnya"
+        },
+        "dayBefore": {
+          "string": "day before"
+        },
+        "notification": {
+          "string": "notification"
+        },
+        "email": {
+          "string": "e-mail"
+        },
+        "delete": {
+          "string": "Hapus"
+        },
+        "at": {
+          "string": "at"
+        },
+        "durationOptions": {
+          "thirtyMinutes": {
+            "string": "30 minutes"
+          },
+          "oneHour": {
+            "string": "1 hour"
+          },
+          "twoHours": {
+            "string": "2 hours"
+          },
+          "allDay": {
+            "string": "All day"
+          }
+        },
+        "saving": {
+          "string": "Creating..."
+        },
+        "submit": {
+          "string": "Buat Kalender"
+        },
+        "cancel": {
+          "string": "Batal"
+        }
+      },
+      "copyEvent": {
+        "string": "Salin acara"
+      },
+      "editCalendar": {
+        "title": {
+          "string": "Sunting Kalender"
+        },
+        "nameLabel": {
+          "string": "Nama Kalender"
+        },
+        "colorLabel": {
+          "string": "Color"
+        },
+        "description": {
+          "string": "Deskripsi"
+        },
+        "descriptionPlaceholder": {
+          "string": "Tambahkan deskripsi ke kalender"
+        },
+        "eventDuration": {
+          "string": "Durasi Acara"
+        },
+        "eventNotifications": {
+          "string": "Notifikasi Acara"
+        },
+        "allDayNotifications": {
+          "string": "Notifikasi acara sepanjang hari"
+        },
+        "addNotification": {
+          "string": "Tambahkan notifikasi"
+        },
+        "showBusyStatus": {
+          "string": "Tunjukkan ke orang lain saat saya sibuk"
+        },
+        "atTimeOfEvent": {
+          "string": "pada saat acara"
+        },
+        "fiveMinutes": {
+          "string": "5 menit sebelumnya"
+        },
+        "fifteenMinutes": {
+          "string": "15 menit sebelumnya"
+        },
+        "thirtyMinutesBefore": {
+          "string": "30 menit sebelumnya"
+        },
+        "oneHourBefore": {
+          "string": "1 jam sebelumnya"
+        },
+        "dayBefore": {
+          "string": "day before"
+        },
+        "notification": {
+          "string": "notification"
+        },
+        "email": {
+          "string": "e-mail"
+        },
+        "delete": {
+          "string": "Hapus"
+        },
+        "at": {
+          "string": "at"
+        },
+        "durationOptions": {
+          "thirtyMinutes": {
+            "string": "30 minutes"
+          },
+          "oneHour": {
+            "string": "1 hour"
+          },
+          "twoHours": {
+            "string": "2 hours"
+          },
+          "allDay": {
+            "string": "All day"
+          }
+        },
+        "submit": {
+          "string": "Save Changes"
+        },
+        "cancel": {
+          "string": "Batal"
+        }
+      },
+      "editEvent": {
+        "string": "Edit event"
+      },
+      "deleteEvent": {
+        "confirm": {
+          "title": {
+            "string": "Hapus acara?"
+          },
+          "description": {
+            "string": "Tindakan ini tidak dapat dibatalkan."
+          },
+          "button": {
+            "string": "Hapus"
+          }
+        }
+      },
+      "deleteCalendar": {
+        "title": {
+          "string": "Hapus Kalender"
+        },
+        "message": {
+          "string": "Apakah Anda yakin ingin menghapus kalender ini? Tindakan ini tidak dapat dibatalkan."
+        },
+        "confirm": {
+          "string": "Hapus"
+        },
+        "cancel": {
+          "string": "Batal"
+        }
+      }
+    },
+    "share": {
+      "title": {
+        "string": "Berbagi Kalender"
+      },
+      "description": {
+        "string": "Bagikan kalender ini dengan pengguna lain. Pengguna yang diberi akses dapat melihat acara sesuai tingkat izin yang Anda berikan."
+      },
+      "addUser": {
+        "string": "Add User"
+      },
+      "searchPlaceholder": {
+        "string": "Cari berdasarkan nama atau email..."
+      },
+      "addButton": {
+        "string": "Share"
+      },
+      "added": {
+        "string": "Kalender berhasil dibagikan"
+      },
+      "addError": {
+        "string": "Gagal membagikan kalender"
+      },
+      "removed": {
+        "string": "Berbagi berhasil dihapus"
+      },
+      "removeError": {
+        "string": "Gagal menghapus berbagi"
+      },
+      "removeButton": {
+        "string": "Hapus"
+      },
+      "existingShares": {
+        "string": "Shared with"
+      },
+      "noShares": {
+        "string": "Kalender ini belum dibagikan dengan siapa pun."
+      },
+      "table": {
+        "user": {
+          "string": "User"
+        },
+        "level": {
+          "string": "Tingkat Izin"
+        },
+        "canCreate": {
+          "string": "Can Create"
+        }
+      }
     }
+  }
 }

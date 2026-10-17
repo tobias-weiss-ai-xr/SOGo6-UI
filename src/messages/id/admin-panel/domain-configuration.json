@@ -36,7 +36,7 @@
         "description": {
           "string": "Pilih metode autentikasi untuk pengguna. 'Plain' berarti username/kata sandi klasik"
         },
-        "developer_comment": "Options might include LDAP, SQL, etc."
+        "developer_comment": "Pilihan dapat mencakup LDAP, SQL, dll."
       },
       "SOGO_D_CAS_URL": {
         "name": {
@@ -252,7 +252,7 @@
         "description": {
           "string": "Pilih nama unik untuk Sumber Pengguna ini, tidak akan ditampilkan kepada pengguna"
         },
-        "developer_comment": "Only for SOGo to differentiate differents User SOurce"
+        "developer_comment": "Hanya untuk SOGo membedakan berbagai Sumber Pengguna"
       },
       "US_TYPE": {
         "name": {
@@ -261,7 +261,7 @@
         "description": {
           "string": "Atur jenis Sumber Pengguna Anda"
         },
-        "developer_comment": "Only ldap and sql supported for now"
+        "developer_comment": "Hanya ldap dan sql yang didukung untuk saat ini"
       },
       "US_LDAP_HOSTNAME": {
         "name": {
@@ -342,7 +342,7 @@
         "description": {
           "string": "Filter tambahan untuk digunakan dalam kueri LDAP. Gunakan '=', '!=', 'AND', 'OR', dan tanda kurung. Contoh: '(objectClass='mailUser' OR objectClass!='mailGroup') AND accountStatus='active'"
         },
-        "developer_comment": "Use SOGo's syntax and not ldap syntax for filter"
+        "developer_comment": "Gunakan sintaks SOGo dan bukan sintaks ldap untuk filter"
       },
       "US_LDAP_PWD_POLICY": {
         "name": {
@@ -412,7 +412,7 @@
           "string": "Skema Kata Sandi Pengguna SQL"
         },
         "description": {
-          "string": "Centang YA jika kata sandi disimpan dalam format {skema}nilaiTerenkripsi di database"
+          "string": "Centang YA jika kata sandi disimpan seperti ini di database {scheme)encryptedValue"
         },
         "developer_comment": ""
       },

@@ -1,71 +1,71 @@
 {
-    "AP_SLOTS": {
-        "title": {
-            "string": "Appointment Slots"
-        },
-        "description": {
-            "string": "Publish bookable time slots (Calendly-style). Generate booking links for external participants."
-        },
-        "form": {
-            "create": {
-                "string": "Create Slot"
-            },
-            "cancel": {
-                "string": "Batal"
-            },
-            "title": {
-                "string": "New Appointment Slot"
-            },
-            "slot_title": {
-                "string": "Slot Title"
-            },
-            "duration": {
-                "string": "Duration (min)"
-            },
-            "buffer": {
-                "string": "Buffer (min)"
-            },
-            "start_time": {
-                "string": "Start Time"
-            },
-            "end_time": {
-                "string": "End Time"
-            },
-            "days": {
-                "string": "Available Days"
-            },
-            "submit": {
-                "string": "Create Slot"
-            }
-        },
-        "create": {
-            "success": {
-                "string": "Slot created"
-            },
-            "error": {
-                "string": "Failed to create slot"
-            }
-        },
-        "slots": {
-            "title": {
-                "string": "Your Slots"
-            },
-            "empty": {
-                "string": "No appointment slots. Create one to share your availability."
-            }
-        },
-        "bookings": {
-            "title": {
-                "string": "Recent Bookings"
-            },
-            "empty": {
-                "string": "No bookings yet."
-            }
-        },
-        "errors": {
-            "fields": {
-                "string": "Title, duration, times, and at least one day are required"
-            }
-        }
+  "AP_SLOTS": {
+    "title": {
+      "string": "Slot Janji Temu"
+    },
+    "description": {
+      "string": "Publikasikan slot waktu yang dapat dipesan (gaya Calendly). Buat tautan pemesanan untuk peserta eksternal."
+    },
+    "form": {
+      "create": {
+        "string": "Create Slot"
+      },
+      "cancel": {
+        "string": "Batal"
+      },
+      "title": {
+        "string": "Slot Janji Temu Baru"
+      },
+      "slot_title": {
+        "string": "Slot Title"
+      },
+      "duration": {
+        "string": "Durasi (menit)"
+      },
+      "buffer": {
+        "string": "Buffer (min)"
+      },
+      "start_time": {
+        "string": "Start Time"
+      },
+      "end_time": {
+        "string": "End Time"
+      },
+      "days": {
+        "string": "Hari yang Tersedia"
+      },
+      "submit": {
+        "string": "Create Slot"
+      }
+    },
+    "create": {
+      "success": {
+        "string": "Slot created"
+      },
+      "error": {
+        "string": "Gagal membuat slot"
+      }
+    },
+    "slots": {
+      "title": {
+        "string": "Your Slots"
+      },
+      "empty": {
+        "string": "Belum ada slot janji temu. Buat satu untuk membagikan ketersediaan Anda."
+      }
+    },
+    "bookings": {
+      "title": {
+        "string": "Pemesanan Terbaru"
+      },
+      "empty": {
+        "string": "Belum ada pemesanan."
+      }
+    },
+    "errors": {
+      "fields": {
+        "string": "Judul, durasi, waktu, dan minimal satu hari wajib ada"
+      }
     }
+  }
 }

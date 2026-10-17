@@ -1,37 +1,37 @@
 {
-    "ADMIN_PANNEL_DOMAIN": {
-        "title": {
-            "string": "Custom domains"
-        },
-        "filter_placeholder": {
-            "string": "Filter domains..."
-        },
-        "add_new_domain": {
-            "string": "Add new custom domain"
-        },
-        "select_all": {
-            "string": "Select all"
-        },
-        "select_row": {
-            "string": "Select row"
-        },
-        "domain": {
-            "string": "Domain"
-        },
-        "open_menu": {
-            "string": "Open menu"
-        },
-        "actions": {
-            "string": "Actions"
-        },
-        "copy_domain": {
-            "string": "Copy domain name"
-        },
-        "edit": {
-            "string": "Sunting"
-        },
-        "delete": {
-            "string": "Hapus"
-        }
+  "ADMIN_PANNEL_DOMAIN": {
+    "title": {
+      "string": "Domain kustom"
+    },
+    "filter_placeholder": {
+      "string": "Filter domain..."
+    },
+    "add_new_domain": {
+      "string": "Tambahkan domain kustom baru"
+    },
+    "select_all": {
+      "string": "Select all"
+    },
+    "select_row": {
+      "string": "Select row"
+    },
+    "domain": {
+      "string": "Domain"
+    },
+    "open_menu": {
+      "string": "Open menu"
+    },
+    "actions": {
+      "string": "Actions"
+    },
+    "copy_domain": {
+      "string": "Salin nama domain"
+    },
+    "edit": {
+      "string": "Sunting"
+    },
+    "delete": {
+      "string": "Hapus"
     }
+  }
 }

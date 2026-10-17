@@ -1,306 +1,306 @@
 {
-    "US_MAIL_FILTERS": {
-        "title": {
-            "string": "Mail Filters",
-            "context": "Title for the mail filters settings page"
-        },
-        "page": {
-            "description": {
-                "string": "Automatically organize incoming messages with custom rules. Filters run in order from top to bottom."
-            }
-        },
-        "form": {
-            "edit": {
-                "string": "Edit filter: {name}"
-            },
-            "create": {
-                "string": "Create filter",
-                "description": "Create a new filter for incoming messages."
-            }
-        },
-        "operators": {
-            "title": {
-                "string": "For incoming messages that"
-            },
-            "all": {
-                "string": "Match all messages"
-            },
-            "or": {
-                "string": "Match any of the following rules",
-                "context": "test context",
-                "developer_comment": "This is the string that will be used in the UI to indicate that any of the rules should match."
-            },
-            "and": {
-                "string": "Match all the following rules"
-            }
-        },
-        "conditions": {
-            "title": {
-                "string": "Match the following conditions"
-            },
-            "is": {
-                "string": "Is"
-            },
-            "is_not": {
-                "string": "Is not"
-            },
-            "contains": {
-                "string": "Contains"
-            },
-            "not_contain": {
-                "string": "Does not contain"
-            },
-            "match": {
-                "string": "Match"
-            },
-            "not_match": {
-                "string": "Does not match"
-            },
-            "match_regex": {
-                "string": "Match regex"
-            },
-            "starts_with": {
-                "string": "Starts with"
-            },
-            "ends_with": {
-                "string": "Ends with"
-            },
-            "exists": {
-                "string": "Exists"
-            },
-            "size_over": {
-                "string": "Is over (KB)"
-            },
-            "not_match_regex": {
-                "string": "Does not match regex"
-            },
-            "not_exists": {
-                "string": "Does not exist"
-            },
-            "size_under": {
-                "string": "Is under (KB)"
-            },
-            "is_over": {
-                "string": "Is over"
-            }
-        },
-        "rules": {
-            "body": {
-                "string": "Body"
-            },
-            "from": {
-                "string": "From"
-            },
-            "subject": {
-                "string": "Subject"
-            },
-            "to": {
-                "string": "To"
-            },
-            "cc": {
-                "string": "CC"
-            },
-            "to_or_cc": {
-                "string": "To or CC"
-            },
-            "header": {
-                "string": "Header"
-            },
-            "size": {
-                "string": "Size (Kb)"
-            }
-        },
-        "actions": {
-            "title": {
-                "string": "Perform the following actions"
-            },
-            "move": {
-                "string": "File the message in"
-            },
-            "copy": {
-                "string": "Copy the message to"
-            },
-            "stop": {
-                "string": "Stop processing filter rules"
-            },
-            "reject": {
-                "string": "Send a reject message",
-                "disabled_tooltip": {
-                    "string": "Reject actions are not yet available on this server"
-                }
-            },
-            "discard": {
-                "string": "Discard the message"
-            },
-            "forward": {
-                "string": "Forward the message to"
-            },
-            "removeheader": {
-                "string": "Remove header"
-            },
-            "flag": {
-                "string": "Flag the message with",
-                "disabled_tooltip": {
-                    "string": "Flag actions are not yet available on this server"
-                }
-            },
-            "keep": {
-                "string": "Keep the message"
-            }
-        },
-        "empty_state": {
-            "title": {
-                "string": "No mail filters yet"
-            },
-            "description": {
-                "string": "Create rules to automatically organize incoming messages."
-            },
-            "add_button": {
-                "string": "Add your first filter"
-            }
-        },
-        "list": {
-            "section_title": {
-                "string": "Your filters"
-            },
-            "section_description": {
-                "string": "Drag to reorder. Disabled filters are skipped."
-            },
-            "add_filter": {
-                "string": "Add filter"
-            },
-            "advanced_structure": {
-                "string": "Advanced structure"
-            },
-            "read_only": {
-                "string": "Read-only"
-            },
-            "drag_handle": {
-                "string": "Reorder filter"
-            },
-            "delete_confirm": {
-                "title": {
-                    "string": "Delete filter?"
-                },
-                "description": {
-                    "string": "This filter will be removed when you save your changes."
-                },
-                "confirm": {
-                    "string": "Hapus"
-                },
-                "cancel": {
-                    "string": "Batal"
-                }
-            }
-        },
-        "folder_select": {
-            "placeholder": {
-                "string": "Select a folder"
-            },
-            "search": {
-                "string": "Search folders..."
-            },
-            "empty": {
-                "string": "No folders found"
-            },
-            "aria_label": {
-                "string": "Select destination folder"
-            },
-            "create_if_missing": {
-                "string": "Create folder if it does not exist"
-            }
-        },
-        "advanced_structure_readonly": {
-            "string": "This filter uses an advanced rule structure that cannot be edited in the simplified editor. You can still enable or disable it, or delete it."
-        },
-        "aria": {
-            "toggle_filter": {
-                "string": "Toggle filter"
-            }
-        },
-        "labels": {
-            "filter_name": {
-                "string": "Filter name"
-            },
-            "custom_header": {
-                "string": "Header name"
-            }
-        },
-        "placeholders": {
-            "forward_email": {
-                "string": "name@example.com"
-            },
-            "header_name": {
-                "string": "Header name (e.g. X-Spam-Flag)"
-            },
-            "size_value": {
-                "string": "Size (e.g. 1024, 5M, 10K)"
-            },
-            "imap_flag": {
-                "string": "IMAP flag (e.g. \\Flagged)"
-            },
-            "reject_message": {
-                "string": "Optional reject message"
-            }
-        },
-        "success": {
-            "title": {
-                "string": "Filters saved"
-            },
-            "saved": {
-                "string": "Your mail filters have been updated."
-            }
-        },
-        "errors_api": {
-            "title": {
-                "string": "Could not save filters"
-            },
-            "save_failed": {
-                "string": "An error occurred while saving your mail filters."
-            },
-            "load_failed": {
-                "string": "Could not load mail filters. Please try again later."
-            },
-            "feature_disabled": {
-                "string": "Mail filtering has been disabled by your administrator."
-            }
-        },
-        "errors": {
-            "validation": {
-                "name_required": {
-                    "string": "Filter name is required"
-                },
-                "rules_required": {
-                    "string": "At least one condition is required"
-                },
-                "actions_required": {
-                    "string": "At least one action is required"
-                },
-                "folder_required": {
-                    "string": "A destination folder is required"
-                },
-                "email_invalid": {
-                    "string": "Enter a valid email address"
-                },
-                "header_name_required": {
-                    "string": "Header name is required"
-                },
-                "rule_value_required": {
-                    "string": "Condition value is required"
-                },
-                "size_value_required": {
-                    "string": "Enter a valid size in KB"
-                },
-                "size_condition_required": {
-                    "string": "Size rules must use over or under"
-                },
-                "flag_required": {
-                    "string": "An IMAP flag is required"
-                },
-                "action_unavailable": {
-                    "string": "This action is not available yet"
-                }
-            }
+  "US_MAIL_FILTERS": {
+    "title": {
+      "string": "Mail Filters",
+      "context": "Title for the mail filters settings page"
+    },
+    "page": {
+      "description": {
+        "string": "Atur pesan masuk secara otomatis dengan aturan kustom. Filter dijalankan berurutan dari atas ke bawah."
+      }
+    },
+    "form": {
+      "edit": {
+        "string": "Sunting filter: {name}"
+      },
+      "create": {
+        "string": "Buat filter",
+        "description": "Create a new filter for incoming messages."
+      }
+    },
+    "operators": {
+      "title": {
+        "string": "Untuk pesan masuk yang"
+      },
+      "all": {
+        "string": "Cocokkan semua pesan"
+      },
+      "or": {
+        "string": "Cocokkan salah satu aturan berikut",
+        "context": "test context",
+        "developer_comment": "Ini adalah string yang akan digunakan di UI untuk menunjukkan bahwa salah satu aturan harus cocok."
+      },
+      "and": {
+        "string": "Cocokkan semua aturan berikut"
+      }
+    },
+    "conditions": {
+      "title": {
+        "string": "Cocokkan kondisi berikut"
+      },
+      "is": {
+        "string": "Is"
+      },
+      "is_not": {
+        "string": "Is not"
+      },
+      "contains": {
+        "string": "Contains"
+      },
+      "not_contain": {
+        "string": "Tidak memuat"
+      },
+      "match": {
+        "string": "Match"
+      },
+      "not_match": {
+        "string": "Tidak cocok"
+      },
+      "match_regex": {
+        "string": "Match regex"
+      },
+      "starts_with": {
+        "string": "Starts with"
+      },
+      "ends_with": {
+        "string": "Ends with"
+      },
+      "exists": {
+        "string": "Exists"
+      },
+      "size_over": {
+        "string": "Is over (KB)"
+      },
+      "not_match_regex": {
+        "string": "Tidak cocok dengan regex"
+      },
+      "not_exists": {
+        "string": "Tidak ada"
+      },
+      "size_under": {
+        "string": "Di bawah (KB)"
+      },
+      "is_over": {
+        "string": "Is over"
+      }
+    },
+    "rules": {
+      "body": {
+        "string": "Body"
+      },
+      "from": {
+        "string": "From"
+      },
+      "subject": {
+        "string": "Subject"
+      },
+      "to": {
+        "string": "To"
+      },
+      "cc": {
+        "string": "CC"
+      },
+      "to_or_cc": {
+        "string": "To or CC"
+      },
+      "header": {
+        "string": "Header"
+      },
+      "size": {
+        "string": "Size (Kb)"
+      }
+    },
+    "actions": {
+      "title": {
+        "string": "Lakukan tindakan berikut"
+      },
+      "move": {
+        "string": "Simpan pesan di"
+      },
+      "copy": {
+        "string": "Salin pesan ke"
+      },
+      "stop": {
+        "string": "Hentikan pemrosesan aturan filter"
+      },
+      "reject": {
+        "string": "Kirim pesan penolakan",
+        "disabled_tooltip": {
+          "string": "Tindakan tolak belum tersedia di server ini"
         }
+      },
+      "discard": {
+        "string": "Buang pesan"
+      },
+      "forward": {
+        "string": "Teruskan pesan ke"
+      },
+      "removeheader": {
+        "string": "Hapus header"
+      },
+      "flag": {
+        "string": "Tandai pesan dengan",
+        "disabled_tooltip": {
+          "string": "Tindakan flag belum tersedia di server ini"
+        }
+      },
+      "keep": {
+        "string": "Simpan pesan"
+      }
+    },
+    "empty_state": {
+      "title": {
+        "string": "Belum ada filter surel"
+      },
+      "description": {
+        "string": "Buat aturan untuk mengatur pesan masuk secara otomatis."
+      },
+      "add_button": {
+        "string": "Tambahkan filter pertama Anda"
+      }
+    },
+    "list": {
+      "section_title": {
+        "string": "Your filters"
+      },
+      "section_description": {
+        "string": "Seret untuk mengurutkan ulang. Filter yang dinonaktifkan akan dilewati."
+      },
+      "add_filter": {
+        "string": "Add filter"
+      },
+      "advanced_structure": {
+        "string": "Struktur lanjutan"
+      },
+      "read_only": {
+        "string": "Read-only"
+      },
+      "drag_handle": {
+        "string": "Urutkan ulang filter"
+      },
+      "delete_confirm": {
+        "title": {
+          "string": "Hapus filter?"
+        },
+        "description": {
+          "string": "Filter ini akan dihapus saat Anda menyimpan perubahan."
+        },
+        "confirm": {
+          "string": "Hapus"
+        },
+        "cancel": {
+          "string": "Batal"
+        }
+      }
+    },
+    "folder_select": {
+      "placeholder": {
+        "string": "Pilih folder"
+      },
+      "search": {
+        "string": "Cari folder..."
+      },
+      "empty": {
+        "string": "Tidak ada folder yang ditemukan"
+      },
+      "aria_label": {
+        "string": "Pilih folder tujuan"
+      },
+      "create_if_missing": {
+        "string": "Buat folder jika belum ada"
+      }
+    },
+    "advanced_structure_readonly": {
+      "string": "Filter ini menggunakan struktur aturan lanjutan yang tidak dapat diedit di editor sederhana. Anda tetap dapat mengaktifkan atau menonaktifkannya, atau menghapusnya."
+    },
+    "aria": {
+      "toggle_filter": {
+        "string": "Alihkan filter"
+      }
+    },
+    "labels": {
+      "filter_name": {
+        "string": "Filter name"
+      },
+      "custom_header": {
+        "string": "Header name"
+      }
+    },
+    "placeholders": {
+      "forward_email": {
+        "string": "name@example.com"
+      },
+      "header_name": {
+        "string": "Nama header (misalnya X-Spam-Flag)"
+      },
+      "size_value": {
+        "string": "Ukuran (misalnya 1024, 5M, 10K)"
+      },
+      "imap_flag": {
+        "string": "Flag IMAP (misalnya \\Flagged)"
+      },
+      "reject_message": {
+        "string": "Pesan penolakan opsional"
+      }
+    },
+    "success": {
+      "title": {
+        "string": "Filter disimpan"
+      },
+      "saved": {
+        "string": "Filter surel Anda telah diperbarui."
+      }
+    },
+    "errors_api": {
+      "title": {
+        "string": "Tidak dapat menyimpan filter"
+      },
+      "save_failed": {
+        "string": "Terjadi kesalahan saat menyimpan filter surel Anda."
+      },
+      "load_failed": {
+        "string": "Tidak dapat memuat filter surel. Silakan coba lagi nanti."
+      },
+      "feature_disabled": {
+        "string": "Penyaringan surel telah dinonaktifkan oleh administrator Anda."
+      }
+    },
+    "errors": {
+      "validation": {
+        "name_required": {
+          "string": "Nama filter wajib diisi"
+        },
+        "rules_required": {
+          "string": "Minimal satu kondisi wajib ada"
+        },
+        "actions_required": {
+          "string": "Minimal satu tindakan wajib ada"
+        },
+        "folder_required": {
+          "string": "Folder tujuan wajib diisi"
+        },
+        "email_invalid": {
+          "string": "Masukkan alamat email yang valid"
+        },
+        "header_name_required": {
+          "string": "Nama header wajib diisi"
+        },
+        "rule_value_required": {
+          "string": "Nilai kondisi wajib diisi"
+        },
+        "size_value_required": {
+          "string": "Masukkan ukuran yang valid dalam KB"
+        },
+        "size_condition_required": {
+          "string": "Aturan ukuran harus menggunakan lebih dari atau kurang dari"
+        },
+        "flag_required": {
+          "string": "Flag IMAP wajib diisi"
+        },
+        "action_unavailable": {
+          "string": "Tindakan ini belum tersedia"
+        }
+      }
     }
+  }
 }

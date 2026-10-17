@@ -2,7 +2,7 @@
   "COMPONENTS": {
     "forms": {
       "fixed-form-button-group": {
-        "alert": "{number} errors"
+        "alert": "{number} kesalahan"
       }
     },
     "color-picker": {
@@ -11,17 +11,17 @@
     "duration-picker": {
       "noReminder": "No reminder",
       "5min": "5 min before",
-      "10min": "10 min before",
-      "15min": "15 min before",
-      "30min": "30 min before",
-      "45min": "45 min before",
-      "1h": "1 hour before",
-      "2h": "2 hour before",
-      "5h": "5 hour before",
-      "15h": "15 hour before",
+      "10min": "10 menit sebelumnya",
+      "15min": "15 menit sebelumnya",
+      "30min": "30 menit sebelumnya",
+      "45min": "45 menit sebelumnya",
+      "1h": "1 jam sebelumnya",
+      "2h": "2 jam sebelumnya",
+      "5h": "5 jam sebelumnya",
+      "15h": "15 jam sebelumnya",
       "1d": "1 day before",
-      "2d": "2 days before",
-      "1w": "1 week before"
+      "2d": "2 hari sebelumnya",
+      "1w": "1 minggu sebelumnya"
     }
   }
 }
