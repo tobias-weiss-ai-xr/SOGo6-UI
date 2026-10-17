@@ -1,10 +1,10 @@
 {
     "AP_DNS_WIZARD": {
         "title": {
-            "string": "DNS Wizard"
+            "string": "Мастер DNS"
         },
         "description": {
-            "string": "Generate and validate DNS records for email authentication (SPF, DKIM, DMARC). Add these records to your domain's DNS zone to protect against spoofing and improve deliverability."
+            "string": "Генерируйте и проверяйте DNS-записи для аутентификации почты (SPF, DKIM, DMARC). Добавьте эти записи в DNS-зону вашего домена, чтобы защититься от подделки и улучшить доставляемость."
         },
         "tabs": {
             "spf": {
@@ -17,7 +17,7 @@
                 "string": "DMARC"
             },
             "validate": {
-                "string": "Validate"
+                "string": "Проверка"
             }
         },
         "labels": {
@@ -25,127 +25,127 @@
                 "string": "Домен"
             },
             "policy": {
-                "string": "Policy"
+                "string": "Политика"
             },
             "mx_servers": {
-                "string": "MX Servers"
+                "string": "Серверы MX"
             },
             "ip4_addresses": {
-                "string": "IPv4 Addresses"
+                "string": "Адреса IPv4"
             },
             "ip6_addresses": {
-                "string": "IPv6 Addresses"
+                "string": "Адреса IPv6"
             },
             "include_domains": {
-                "string": "Include Domains"
+                "string": "Включаемые домены"
             },
             "selector": {
-                "string": "Selector"
+                "string": "Селектор"
             },
             "key_type": {
-                "string": "Key Type"
+                "string": "Тип ключа"
             },
             "public_key": {
-                "string": "Public Key (Base64)"
+                "string": "Открытый ключ (Base64)"
             },
             "rua_email": {
-                "string": "Aggregate Reports Email"
+                "string": "Адрес для агрегированных отчётов"
             },
             "ruf_email": {
-                "string": "Forensic Reports Email"
+                "string": "Адрес для детальных отчётов"
             },
             "pct": {
-                "string": "Policy Percentage"
+                "string": "Процент применения политики"
             },
             "subdomain_policy": {
-                "string": "Subdomain Policy"
+                "string": "Политика для поддоменов"
             },
             "aspf": {
-                "string": "SPF Alignment"
+                "string": "Выравнивание SPF"
             },
             "adkim": {
-                "string": "DKIM Alignment"
+                "string": "Выравнивание DKIM"
             }
         },
         "policies": {
             "hardfail": {
-                "string": "hardfail"
+                "string": "жёсткий отказ"
             },
             "softfail": {
-                "string": "softfail"
+                "string": "мягкий отказ"
             },
             "neutral": {
-                "string": "neutral"
+                "string": "нейтрально"
             },
             "no_policy": {
-                "string": "no policy"
+                "string": "без политики"
             }
         },
         "spf": {
             "description": {
-                "string": "SPF (Sender Policy Framework) specifies which mail servers are allowed to send email from your domain. Add this TXT record to your DNS zone."
+                "string": "SPF (Sender Policy Framework) указывает, каким почтовым серверам разрешено отправлять почту от вашего домена. Добавьте эту TXT-запись в вашу DNS-зону."
             },
             "generate": {
-                "string": "Generate SPF Record"
+                "string": "Сгенерировать запись SPF"
             }
         },
         "dkim": {
             "description": {
-                "string": "DKIM (DomainKeys Identified Mail) adds a digital signature to outgoing emails, allowing recipients to verify the message was not altered in transit."
+                "string": "DKIM (DomainKeys Identified Mail) добавляет цифровую подпись к исходящим письмам, позволяя получателям проверить, что сообщение не было изменено при передаче."
             },
             "generate": {
-                "string": "Generate DKIM Record"
+                "string": "Сгенерировать запись DKIM"
             },
             "public_key_placeholder": {
-                "string": "Leave empty for placeholder with generation instructions"
+                "string": "Оставьте пустым для заполнителя с инструкцией по генерации"
             },
             "public_key_hint": {
-                "string": "Optional. If empty, the record will include a placeholder with the openssl command to generate the key pair."
+                "string": "Необязательно. Если пусто, запись будет содержать заполнитель с командой openssl для генерации пары ключей."
             }
         },
         "dmarc": {
             "description": {
-                "string": "DMARC (Domain-based Message Authentication, Reporting, and Conformance) tells receiving mail servers what to do when SPF or DKIM fails. Start with p=none to monitor, then move to quarantine or reject."
+                "string": "DMARC (Domain-based Message Authentication, Reporting, and Conformance) сообщает принимающим почтовым серверам, что делать при сбое SPF или DKIM. Начните с p=none для мониторинга, затем переходите к quarantine или reject."
             },
             "generate": {
-                "string": "Generate DMARC Record"
+                "string": "Сгенерировать запись DMARC"
             },
             "policy_none": {
-                "string": "monitor only"
+                "string": "только мониторинг"
             },
             "policy_quarantine": {
-                "string": "quarantine failures"
+                "string": "карантин при сбое"
             },
             "policy_reject": {
-                "string": "reject failures"
+                "string": "отклонение при сбое"
             },
             "relaxed": {
-                "string": "relaxed"
+                "string": "свободное"
             },
             "strict": {
-                "string": "strict"
+                "string": "строгое"
             },
             "inherit": {
-                "string": "Inherit from domain policy"
+                "string": "Наследовать политику домена"
             }
         },
         "validate": {
             "description": {
-                "string": "Paste an existing SPF or DMARC record value to check for syntax errors and best-practice warnings."
+                "string": "Вставьте существующее значение записи SPF или DMARC, чтобы проверить синтаксические ошибки и предупреждения по лучшим практикам."
             },
             "button": {
-                "string": "Validate"
+                "string": "Проверить"
             },
             "spf_title": {
-                "string": "Validate SPF Record"
+                "string": "Проверить запись SPF"
             },
             "dmarc_title": {
-                "string": "Validate DMARC Record"
+                "string": "Проверить запись DMARC"
             }
         },
         "record": {
             "title": {
-                "string": "Generated DNS Record"
+                "string": "Сгенерированная DNS-запись"
             },
             "name": {
                 "string": "Имя"
@@ -154,7 +154,7 @@
                 "string": "Тип"
             },
             "value": {
-                "string": "Value"
+                "string": "Значение"
             },
             "ttl": {
                 "string": "TTL"
@@ -165,24 +165,24 @@
         },
         "validation": {
             "valid": {
-                "string": "Valid"
+                "string": "Действительна"
             },
             "invalid": {
-                "string": "Invalid"
+                "string": "Недействительна"
             },
             "domain_required": {
-                "string": "Domain is required"
+                "string": "Укажите домен"
             },
             "value_required": {
-                "string": "Record value is required"
+                "string": "Укажите значение записи"
             }
         },
         "errors": {
             "generate_failed": {
-                "string": "Failed to generate record"
+                "string": "Не удалось сгенерировать запись"
             },
             "validate_failed": {
-                "string": "Failed to validate record"
+                "string": "Не удалось проверить запись"
             }
         }
     }

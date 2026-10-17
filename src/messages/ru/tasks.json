@@ -60,54 +60,54 @@
         },
         "status": {
             "needs_action": {
-                "string": "To do"
+                "string": "К выполнению"
             },
             "in_process": {
-                "string": "In progress"
+                "string": "В работе"
             },
             "completed": {
-                "string": "Completed"
+                "string": "Завершено"
             },
             "cancelled": {
-                "string": "Cancelled"
+                "string": "Отменено"
             }
         },
         "form": {
             "create_title": {
-                "string": "New task"
+                "string": "Новая задача"
             },
             "edit_title": {
-                "string": "Edit task"
+                "string": "Изменить задачу"
             },
             "title": {
-                "string": "Title"
+                "string": "Название"
             },
             "description": {
                 "string": "Описание"
             },
             "due": {
-                "string": "Due date"
+                "string": "Срок"
             },
             "date_start": {
-                "string": "Start date"
+                "string": "Дата начала"
             },
             "status": {
                 "string": "Статус"
             },
             "priority": {
-                "string": "Priority"
+                "string": "Приоритет"
             },
             "percent_complete": {
-                "string": "Progress"
+                "string": "Прогресс"
             },
             "calendar": {
                 "string": "Календарь"
             },
             "categories": {
-                "string": "Categories"
+                "string": "Категории"
             },
             "visibility": {
-                "string": "Visibility"
+                "string": "Видимость"
             },
             "save": {
                 "string": "Сохранить"
@@ -116,11 +116,11 @@
                 "string": "Отмена"
             },
             "calendar_required": {
-                "string": "Select a calendar"
+                "string": "Выберите календарь"
             },
             "errors": {
                 "date_order": {
-                    "string": "Due date must be on or after the start date."
+                    "string": "Срок должен быть не раньше даты начала."
                 }
             }
         },
@@ -134,10 +134,10 @@
         },
         "delete_dialog": {
             "title": {
-                "string": "Delete task?"
+                "string": "Удалить задачу?"
             },
             "description": {
-                "string": "This action cannot be undone."
+                "string": "Это действие нельзя отменить."
             },
             "confirm": {
                 "string": "Удалить"
@@ -148,23 +148,23 @@
         },
         "selection": {
             "enter": {
-                "string": "Select tasks"
+                "string": "Выбрать задачи"
             },
             "cancel": {
                 "string": "Отмена"
             },
             "select_all": {
-                "string": "Select all tasks"
+                "string": "Выбрать все задачи"
             },
             "count": {
-                "string": "{count, plural, one {# selected} other {# selected}}"
+                "string": "{count, plural, one {# выбрана} few {# выбрано} many {# выбрано} other {# выбрано}}"
             },
             "actions": {
                 "complete": {
-                    "string": "Complete"
+                    "string": "Завершить"
                 },
                 "reopen": {
-                    "string": "Reopen"
+                    "string": "Возобновить"
                 },
                 "delete": {
                     "string": "Удалить"
@@ -172,10 +172,10 @@
             },
             "delete_dialog": {
                 "title": {
-                    "string": "Delete selected tasks?"
+                    "string": "Удалить выбранные задачи?"
                 },
                 "description": {
-                    "string": "You are about to delete {count, plural, one {# task} other {# tasks}}. This action cannot be undone."
+                    "string": "Вы собираетесь удалить {count, plural, one {# задачу} few {# задачи} many {# задач} other {# задачи}}. Это действие нельзя отменить."
                 },
                 "confirm": {
                     "string": "Удалить"
@@ -188,30 +188,30 @@
         "sidebar": {
             "smart_views": {
                 "title": {
-                    "string": "Smart views"
+                    "string": "Умные подборки"
                 },
                 "all": {
-                    "string": "All tasks"
+                    "string": "Все задачи"
                 },
                 "today": {
                     "string": "Сегодня"
                 },
                 "upcoming": {
-                    "string": "Upcoming"
+                    "string": "Предстоящие"
                 },
                 "overdue": {
-                    "string": "Overdue"
+                    "string": "Просроченные"
                 },
                 "completed": {
-                    "string": "Completed"
+                    "string": "Завершённые"
                 }
             },
             "calendars": {
                 "title": {
-                    "string": "Calendars"
+                    "string": "Календари"
                 },
                 "all": {
-                    "string": "All calendars"
+                    "string": "Все календари"
                 }
             }
         },
@@ -220,13 +220,13 @@
                 "string": "Задачи"
             },
             "view_all": {
-                "string": "View all tasks"
+                "string": "Показать все задачи"
             },
             "empty": {
-                "string": "No pending tasks"
+                "string": "Нет незавершённых задач"
             },
             "loading": {
-                "string": "Loading tasks…"
+                "string": "Загрузка задач…"
             }
         }
     }

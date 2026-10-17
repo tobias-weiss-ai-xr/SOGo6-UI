@@ -1,59 +1,59 @@
 {
     "AP_BRANDING": {
         "title": {
-            "string": "Multi-Tenant Branding"
+            "string": "Брендинг для нескольких арендаторов"
         },
         "description": {
-            "string": "Customize login page appearance per domain — logo, colors, CSS, header/footer text."
+            "string": "Настройте внешний вид страницы входа для каждого домена — логотип, цвета, CSS, тексты шапки и подвала."
         },
         "select_domain": {
             "string": "Домен"
         },
         "select_placeholder": {
-            "string": "Choose a domain..."
+            "string": "Выберите домен..."
         },
         "select_hint": {
-            "string": "Select a domain above to view and edit its branding."
+            "string": "Выберите домен выше, чтобы просмотреть и изменить его брендинг."
         },
         "card": {
             "identity": {
-                "string": "Visual Identity"
+                "string": "Визуальная айдентика"
             },
             "login_page": {
-                "string": "Login Page"
+                "string": "Страница входа"
             }
         },
         "labels": {
             "logo": {
-                "string": "Logo"
+                "string": "Логотип"
             },
             "favicon": {
                 "string": "Favicon"
             },
             "primary_color": {
-                "string": "Primary Color"
+                "string": "Основной цвет"
             },
             "login_header": {
-                "string": "Login Header Text"
+                "string": "Текст шапки страницы входа"
             },
             "login_footer": {
-                "string": "Login Footer Text"
+                "string": "Текст подвала страницы входа"
             },
             "custom_css": {
-                "string": "Custom CSS"
+                "string": "Свой CSS"
             }
         },
         "buttons": {
             "upload": {
-                "string": "Upload"
+                "string": "Загрузить"
             }
         },
         "placeholders": {
             "header": {
-                "string": "e.g. Welcome to My Company Mail"
+                "string": "напр. Добро пожаловать в почту Моей компании"
             },
             "footer": {
-                "string": "e.g. © 2026 My Company"
+                "string": "напр. © 2026 Моя компания"
             },
             "css": {
                 "string": "body { font-family: sans-serif; }"
@@ -61,18 +61,18 @@
         },
         "save": {
             "button": {
-                "string": "Save Branding"
+                "string": "Сохранить брендинг"
             },
             "success": {
-                "string": "Branding saved"
+                "string": "Брендинг сохранён"
             },
             "error": {
-                "string": "Failed to save branding"
+                "string": "Не удалось сохранить брендинг"
             }
         },
         "errors": {
             "upload": {
-                "string": "Failed to read file"
+                "string": "Не удалось прочитать файл"
             }
         }
     }

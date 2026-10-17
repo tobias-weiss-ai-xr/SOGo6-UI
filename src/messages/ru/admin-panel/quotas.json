@@ -1,52 +1,52 @@
 {
     "AP_QUOTAS": {
         "title": {
-            "string": "Usage Quotas"
+            "string": "Квоты использования"
         },
         "description": {
-            "string": "View and set per-user resource limits for mailbox size, calendars, and contacts."
+            "string": "Просматривайте и задавайте лимиты ресурсов для каждого пользователя: размер почтового ящика, календари и контакты."
         },
         "select_user": {
-            "string": "Select User"
+            "string": "Выберите пользователя"
         },
         "select_placeholder": {
-            "string": "Choose a user..."
+            "string": "Выберите пользователя..."
         },
         "current_usage": {
-            "string": "Current Usage"
+            "string": "Текущее использование"
         },
         "set_quota": {
-            "string": "Set Quota"
+            "string": "Установить квоту"
         },
         "labels": {
             "mailbox": {
-                "string": "Mailbox"
+                "string": "Почтовый ящик"
             },
             "calendars": {
-                "string": "Calendars"
+                "string": "Календари"
             },
             "contacts": {
                 "string": "Контакты"
             },
             "mailbox_limit": {
-                "string": "Mailbox Size Limit"
+                "string": "Лимит размера ящика"
             },
             "calendar_limit": {
-                "string": "Max Calendars"
+                "string": "Макс. календарей"
             },
             "contact_limit": {
-                "string": "Max Contacts"
+                "string": "Макс. контактов"
             }
         },
         "save": {
             "button": {
-                "string": "Save Quota"
+                "string": "Сохранить квоту"
             },
             "success": {
-                "string": "Quota updated"
+                "string": "Квота обновлена"
             },
             "error": {
-                "string": "Failed to update quota"
+                "string": "Не удалось обновить квоту"
             }
         }
     }

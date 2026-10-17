@@ -17,11 +17,11 @@
       }
     },
     "categories": {
-      "Work": "Travail",
-      "Family": "Famille",
-      "Friends": "Amis",
+      "Work": "Работа",
+      "Family": "Семья",
+      "Friends": "Друзья",
       "validation": {
-        "category-name-required": "Category name is required"
+        "category-name-required": "Укажите название категории"
       }
     }
   }

@@ -1,56 +1,56 @@
 {
     "AI_TRANSCRIPTS": {
         "title": {
-            "string": "Meeting Transcripts"
+            "string": "Стенограммы встреч"
         },
         "description": {
-            "string": "Record meeting transcripts, auto-generate summaries and action items."
+            "string": "Записывайте стенограммы встреч, автоматически создавайте резюме и списки задач."
         },
         "form": {
             "create": {
-                "string": "New Transcript"
+                "string": "Новая стенограмма"
             },
             "cancel": {
                 "string": "Отмена"
             },
             "title": {
-                "string": "Create Transcript"
+                "string": "Создать стенограмму"
             },
             "meeting_title": {
-                "string": "Meeting Title"
+                "string": "Название встречи"
             },
             "event_id": {
-                "string": "Calendar Event ID"
+                "string": "ID события календаря"
             },
             "attendees": {
-                "string": "Attendees"
+                "string": "Участники"
             },
             "transcript": {
-                "string": "Transcript / Notes"
+                "string": "Стенограмма / заметки"
             },
             "placeholder": {
-                "string": "Paste meeting notes or transcript..."
+                "string": "Вставьте заметки или стенограмму встречи..."
             },
             "submit": {
-                "string": "Save & Summarize"
+                "string": "Сохранить и создать резюме"
             }
         },
         "create": {
             "success": {
-                "string": "Transcript saved"
+                "string": "Стенограмма сохранена"
             },
             "error": {
-                "string": "Failed to save"
+                "string": "Не удалось сохранить"
             }
         },
         "list": {
             "empty": {
-                "string": "No transcripts yet."
+                "string": "Стенограмм пока нет."
             }
         },
         "errors": {
             "fields": {
-                "string": "Title and transcript text are required"
+                "string": "Укажите название и текст стенограммы"
             }
         }
     }

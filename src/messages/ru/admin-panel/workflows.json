@@ -1,69 +1,69 @@
 {
     "AP_WORKFLOWS": {
         "title": {
-            "string": "Workflow Builder"
+            "string": "Конструктор рабочих процессов"
         },
         "description": {
-            "string": "Low-code automation: If email from X and subject Y → forward, create event, notify."
+            "string": "Автоматизация с низким кодом: если письмо от X с темой Y → переслать, создать событие, уведомить."
         },
         "form": {
             "create": {
-                "string": "New Workflow"
+                "string": "Новый процесс"
             },
             "cancel": {
                 "string": "Отмена"
             },
             "title": {
-                "string": "Create Workflow"
+                "string": "Создать рабочий процесс"
             },
             "name": {
-                "string": "Workflow Name"
+                "string": "Название процесса"
             },
             "trigger": {
-                "string": "Trigger"
+                "string": "Триггер"
             },
             "description": {
                 "string": "Описание"
             },
             "conditions": {
-                "string": "Conditions"
+                "string": "Условия"
             },
             "actions": {
-                "string": "Actions"
+                "string": "Действия"
             },
             "submit": {
-                "string": "Create Workflow"
+                "string": "Создать рабочий процесс"
             }
         },
         "create": {
             "success": {
-                "string": "Workflow created"
+                "string": "Рабочий процесс создан"
             },
             "error": {
-                "string": "Failed to create"
+                "string": "Не удалось создать"
             }
         },
         "toggle": {
             "error": {
-                "string": "Failed to toggle"
+                "string": "Не удалось переключить"
             }
         },
         "delete": {
             "success": {
-                "string": "Workflow deleted"
+                "string": "Рабочий процесс удалён"
             },
             "error": {
-                "string": "Failed to delete"
+                "string": "Не удалось удалить"
             }
         },
         "list": {
             "empty": {
-                "string": "No workflows defined. Create one to automate actions."
+                "string": "Рабочие процессы не заданы. Создайте первый, чтобы автоматизировать действия."
             }
         },
         "errors": {
             "fields": {
-                "string": "Name, conditions, and actions are required"
+                "string": "Укажите название, условия и действия"
             }
         }
     }

@@ -1,64 +1,64 @@
 {
     "AP_APPROVALS": {
         "title": {
-            "string": "Approval Workflows"
+            "string": "Процессы согласования"
         },
         "description": {
-            "string": "Create multi-step approval chains for purchase orders, announcements, and more."
+            "string": "Создавайте многошаговые цепочки согласования для заказов на покупку, объявлений и т. д."
         },
         "form": {
             "create": {
-                "string": "New Approval"
+                "string": "Новое согласование"
             },
             "cancel": {
                 "string": "Отмена"
             },
             "title": {
-                "string": "Create Approval Workflow"
+                "string": "Создать процесс согласования"
             },
             "workflow_title": {
-                "string": "Title"
+                "string": "Название"
             },
             "category": {
-                "string": "Category"
+                "string": "Категория"
             },
             "description": {
                 "string": "Описание"
             },
             "steps": {
-                "string": "Approval Steps"
+                "string": "Шаги согласования"
             },
             "submit": {
-                "string": "Create Workflow"
+                "string": "Создать процесс"
             }
         },
         "create": {
             "success": {
-                "string": "Workflow created"
+                "string": "Процесс создан"
             },
             "error": {
-                "string": "Failed to create"
+                "string": "Не удалось создать"
             }
         },
         "action": {
             "approved": {
-                "string": "Step approved"
+                "string": "Шаг согласован"
             },
             "rejected": {
-                "string": "Rejected"
+                "string": "Отклонено"
             },
             "error": {
-                "string": "Action failed"
+                "string": "Действие не выполнено"
             }
         },
         "list": {
             "empty": {
-                "string": "No approval workflows yet."
+                "string": "Процессов согласования пока нет."
             }
         },
         "errors": {
             "fields": {
-                "string": "Title and at least one step with email are required"
+                "string": "Укажите название и хотя бы один шаг с адресом электронной почты"
             }
         }
     }

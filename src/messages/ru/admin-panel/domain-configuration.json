@@ -36,7 +36,7 @@
         "description": {
           "string": "Выберите метод аутентификации для пользователей. 'Plain' означает классический логин/пароль"
         },
-        "developer_comment": "Options might include LDAP, SQL, etc."
+        "developer_comment": "Варианты могут включать LDAP, SQL и т. д."
       },
       "SOGO_D_CAS_URL": {
         "name": {
@@ -252,7 +252,7 @@
         "description": {
           "string": "Задайте уникальное имя для этого источника пользователей, оно не будет отображаться пользователям"
         },
-        "developer_comment": "Only for SOGo to differentiate differents User SOurce"
+        "developer_comment": "Только для SOGo, чтобы различать разные источники пользователей"
       },
       "US_TYPE": {
         "name": {
@@ -261,7 +261,7 @@
         "description": {
           "string": "Укажите тип источника пользователей"
         },
-        "developer_comment": "Only ldap and sql supported for now"
+        "developer_comment": "Пока поддерживаются только ldap и sql"
       },
       "US_LDAP_HOSTNAME": {
         "name": {
@@ -342,7 +342,7 @@
         "description": {
           "string": "Дополнительный фильтр для LDAP-запросов. Используйте '=', '!=', 'AND', 'OR' и скобки. Пример: '(objectClass='mailUser' OR objectClass!='mailGroup') AND accountStatus='active'"
         },
-        "developer_comment": "Use SOGo's syntax and not ldap syntax for filter"
+        "developer_comment": "Используйте синтаксис SOGo, а не синтаксис ldap для фильтра"
       },
       "US_LDAP_PWD_POLICY": {
         "name": {

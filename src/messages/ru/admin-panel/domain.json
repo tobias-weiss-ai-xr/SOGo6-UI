@@ -1,31 +1,31 @@
 {
     "ADMIN_PANNEL_DOMAIN": {
         "title": {
-            "string": "Custom domains"
+            "string": "Свои домены"
         },
         "filter_placeholder": {
-            "string": "Filter domains..."
+            "string": "Фильтр доменов..."
         },
         "add_new_domain": {
-            "string": "Add new custom domain"
+            "string": "Добавить новый свой домен"
         },
         "select_all": {
-            "string": "Select all"
+            "string": "Выбрать все"
         },
         "select_row": {
-            "string": "Select row"
+            "string": "Выбрать строку"
         },
         "domain": {
             "string": "Домен"
         },
         "open_menu": {
-            "string": "Open menu"
+            "string": "Открыть меню"
         },
         "actions": {
-            "string": "Actions"
+            "string": "Действия"
         },
         "copy_domain": {
-            "string": "Copy domain name"
+            "string": "Копировать имя домена"
         },
         "edit": {
             "string": "Редактировать"

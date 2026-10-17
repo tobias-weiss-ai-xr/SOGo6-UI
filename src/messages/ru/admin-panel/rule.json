@@ -1,31 +1,31 @@
 {
     "ADMIN_PANNEL_RULE": {
         "title": {
-            "string": "Rules"
+            "string": "Правила"
         },
         "filter_placeholder": {
-            "string": "Filter rules..."
+            "string": "Фильтр правил..."
         },
         "add_new_rule": {
-            "string": "Add new rule"
+            "string": "Добавить новое правило"
         },
         "select_all": {
-            "string": "Select all"
+            "string": "Выбрать все"
         },
         "select_row": {
-            "string": "Select row"
+            "string": "Выбрать строку"
         },
         "domain": {
             "string": "Домен"
         },
         "open_menu": {
-            "string": "Open menu"
+            "string": "Открыть меню"
         },
         "actions": {
-            "string": "Actions"
+            "string": "Действия"
         },
         "copy_domain": {
-            "string": "Copy domain name"
+            "string": "Копировать имя домена"
         },
         "edit": {
             "string": "Редактировать"
@@ -36,34 +36,34 @@
     },
     "AP_RULES": {
         "title": {
-            "string": "Rules"
+            "string": "Правила"
         },
         "description": {
-            "string": "Manage configuration rules for domains"
+            "string": "Управляйте правилами конфигурации для доменов"
         },
         "search": {
             "placeholder": {
-                "string": "Search rules..."
+                "string": "Поиск правил..."
             }
         },
         "create": {
             "button": {
-                "string": "New Rule"
+                "string": "Новое правило"
             },
             "title": {
-                "string": "Create Rule"
+                "string": "Создать правило"
             },
             "description": {
-                "string": "Add a new configuration rule"
+                "string": "Добавьте новое правило конфигурации"
             },
             "success": {
-                "string": "Rule created successfully"
+                "string": "Правило успешно создано"
             },
             "error": {
-                "string": "Failed to create rule"
+                "string": "Не удалось создать правило"
             },
             "name_required": {
-                "string": "Rule name is required"
+                "string": "Укажите название правила"
             }
         },
         "edit": {
@@ -71,19 +71,19 @@
                 "string": "Редактировать"
             },
             "title": {
-                "string": "Edit Rule"
+                "string": "Изменить правило"
             },
             "description": {
-                "string": "Update rule: {name}"
+                "string": "Обновить правило: {name}"
             },
             "save": {
-                "string": "Save Changes"
+                "string": "Сохранить изменения"
             },
             "success": {
-                "string": "Rule updated successfully"
+                "string": "Правило успешно обновлено"
             },
             "error": {
-                "string": "Failed to update rule"
+                "string": "Не удалось обновить правило"
             }
         },
         "delete": {
@@ -91,39 +91,39 @@
                 "string": "Удалить"
             },
             "title": {
-                "string": "Delete Rule"
+                "string": "Удалить правило"
             },
             "confirm": {
-                "string": "Are you sure you want to delete rule \"{name}\"?"
+                "string": "Вы уверены, что хотите удалить правило «{name}»?"
             },
             "success": {
-                "string": "Rule deleted successfully"
+                "string": "Правило успешно удалено"
             },
             "error": {
-                "string": "Failed to delete rule"
+                "string": "Не удалось удалить правило"
             }
         },
         "form": {
             "name": {
-                "string": "Rule Name"
+                "string": "Название правила"
             },
             "name_placeholder": {
-                "string": "e.g. French LDAP Rules"
+                "string": "напр. Правила LDAP для Франции"
             },
             "description": {
                 "string": "Описание"
             },
             "description_placeholder": {
-                "string": "Optional description of this rule"
+                "string": "Необязательное описание этого правила"
             },
             "domains": {
-                "string": "Affected Domains"
+                "string": "Затрагиваемые домены"
             },
             "domains_placeholder": {
                 "string": "example.org, domain2.org"
             },
             "domains_hint": {
-                "string": "Comma-separated list of domain names. Leave empty for all domains."
+                "string": "Список имён доменов через запятую. Оставьте пустым для всех доменов."
             }
         },
         "table": {
@@ -134,14 +134,14 @@
                 "string": "Имя"
             },
             "actions": {
-                "string": "Actions"
+                "string": "Действия"
             }
         },
         "no_rules": {
-            "string": "No rules configured yet"
+            "string": "Правила ещё не настроены"
         },
         "no_results": {
-            "string": "No rules match your search"
+            "string": "Ни одно правило не соответствует поиску"
         }
     }
 }

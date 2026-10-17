@@ -1,65 +1,65 @@
 {
     "US_MAIL_NOTIFICATIONS": {
         "title": {
-            "string": "Mail Notifications"
+            "string": "Почтовые уведомления"
         },
         "page": {
             "description": {
-                "string": "Send email notifications when your mail filters are triggered."
+                "string": "Отправлять уведомления по электронной почте при срабатывании ваших почтовых фильтров."
             }
         },
         "labels": {
             "enabled": {
-                "string": "Enable mail notifications"
+                "string": "Включить почтовые уведомления"
             },
             "email": {
-                "string": "Email addresses"
+                "string": "Адреса электронной почты"
             },
             "message": {
-                "string": "Notification message"
+                "string": "Текст уведомления"
             }
         },
         "description": {
             "enabled": {
-                "string": "Notify external addresses when a filter rule matches incoming mail."
+                "string": "Уведомлять внешние адреса при совпадении входящего письма с правилом фильтра."
             }
         },
         "help": {
             "email": {
-                "string": "We'll send notifications to these addresses when filters are triggered"
+                "string": "Мы будем отправлять уведомления на эти адреса при срабатывании фильтров"
             }
         },
         "hints": {
             "blur": {
-                "string": "Press Enter to add this address"
+                "string": "Нажмите Enter, чтобы добавить этот адрес"
             }
         },
         "placeholders": {
             "email": {
-                "string": "Add email address and press Enter"
+                "string": "Добавьте адрес и нажмите Enter"
             },
             "message": {
-                "string": "Enter notification message"
+                "string": "Введите текст уведомления"
             }
         },
         "errors": {
             "email": {
                 "invalid": {
-                    "string": "Please enter a valid email address"
+                    "string": "Введите корректный адрес электронной почты"
                 },
                 "duplicate": {
-                    "string": "This address is already in the list"
+                    "string": "Этот адрес уже есть в списке"
                 }
             },
             "max_reached": {
-                "string": "Maximum {max} addresses allowed"
+                "string": "Разрешено не более {max} адресов"
             },
             "validation": {
                 "addresses_required": {
-                    "string": "At least one email address is required when notifications are enabled."
+                    "string": "При включённых уведомлениях требуется хотя бы один адрес электронной почты."
                 },
                 "message_required": {
-                    "string": "A notification message is required."
+                    "string": "Укажите текст уведомления."
                 }
             }
         },
@@ -68,27 +68,27 @@
                 "string": "Ошибка"
             },
             "save_failed": {
-                "string": "Couldn't save your changes, try again"
+                "string": "Не удалось сохранить изменения, повторите попытку"
             },
             "load_failed": {
-                "string": "Could not load notification settings. Please try again later."
+                "string": "Не удалось загрузить настройки уведомлений. Повторите попытку позже."
             },
             "feature_disabled": {
-                "string": "Mail notifications have been disabled by your administrator."
+                "string": "Почтовые уведомления отключены вашим администратором."
             }
         },
         "aria": {
             "toggle_notifications": {
-                "string": "Toggle mail notifications"
+                "string": "Включить или отключить почтовые уведомления"
             },
             "tags_count": {
-                "string": "{count} of {max} email addresses added"
+                "string": "Добавлено адресов: {count} из {max}"
             },
             "remove_email": {
-                "string": "Remove {email}"
+                "string": "Убрать {email}"
             },
             "email_input_group": {
-                "string": "Email addresses for notifications"
+                "string": "Адреса электронной почты для уведомлений"
             }
         }
     }

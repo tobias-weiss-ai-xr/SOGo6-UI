@@ -1,67 +1,67 @@
 {
     "AP_WEBHOOKS": {
         "title": {
-            "string": "Webhooks"
+            "string": "Вебхуки"
         },
         "description": {
-            "string": "Outbound webhooks for n8n, Make, and other automation platforms. Events trigger HTTP POST with HMAC-signed payloads."
+            "string": "Исходящие вебхуки для n8n, Make и других платформ автоматизации. События вызывают HTTP POST с подписанными HMAC данными."
         },
         "form": {
             "add": {
-                "string": "Add Webhook"
+                "string": "Добавить вебхук"
             },
             "cancel": {
                 "string": "Отмена"
             },
             "title": {
-                "string": "New Webhook"
+                "string": "Новый вебхук"
             },
             "url": {
-                "string": "Webhook URL"
+                "string": "URL вебхука"
             },
             "name": {
-                "string": "Display Name"
+                "string": "Отображаемое имя"
             },
             "name_placeholder": {
-                "string": "e.g. n8n Workflow"
+                "string": "напр. Рабочий процесс n8n"
             },
             "secret": {
-                "string": "Signing Secret"
+                "string": "Секрет подписи"
             },
             "secret_placeholder": {
-                "string": "HMAC secret (optional)"
+                "string": "Секрет HMAC (необязательно)"
             },
             "events": {
-                "string": "Events"
+                "string": "События"
             },
             "create": {
-                "string": "Create Webhook"
+                "string": "Создать вебхук"
             }
         },
         "create": {
             "success": {
-                "string": "Webhook created"
+                "string": "Вебхук создан"
             },
             "error": {
-                "string": "Failed to create webhook"
+                "string": "Не удалось создать вебхук"
             }
         },
         "delete": {
             "success": {
-                "string": "Webhook deleted"
+                "string": "Вебхук удалён"
             },
             "error": {
-                "string": "Failed to delete"
+                "string": "Не удалось удалить"
             }
         },
         "list": {
             "empty": {
-                "string": "No webhooks configured. Click Add Webhook to get started."
+                "string": "Вебхуки не настроены. Нажмите «Добавить вебхук», чтобы начать."
             }
         },
         "errors": {
             "fields": {
-                "string": "URL and at least one event are required"
+                "string": "Укажите URL и хотя бы одно событие"
             }
         }
     }

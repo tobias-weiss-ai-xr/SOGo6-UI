@@ -1,38 +1,38 @@
 {
     "FORM_PROFILE": {
-        "title": "Profile",
-        "description": "Manage your profile information and settings.",
+        "title": "Профиль",
+        "description": "Управляйте информацией и настройками вашего профиля.",
         "sections": {
-            "basicInfo": "Basic Information",
-            "identities": "Identities"
+            "basicInfo": "Основная информация",
+            "identities": "Профили отправителя"
         },
         "firstname": {
-            "string": "First Name",
+            "string": "Имя",
             "description": "Label for the first name input field."
         },
         "lastname": {
-            "string": "Last Name",
+            "string": "Фамилия",
             "description": "Label for the last name input field."
         },
         "basicInfo": {
-            "title": "Basic Information",
-            "uid": "User ID",
-            "email": "Email",
-            "fullName": "Name",
-            "aliases": "Email Aliases"
+            "title": "Основная информация",
+            "uid": "Идентификатор пользователя",
+            "email": "Эл. почта",
+            "fullName": "Имя",
+            "aliases": "Псевдонимы электронной почты"
         },
         "extraInfo": {
-            "title": "Extra Information",
-            "company": "Company",
-            "team": "Team"
+            "title": "Дополнительная информация",
+            "company": "Компания",
+            "team": "Команда"
         },
         "profilePictureSource": {
-            "title": "Profile Picture",
-            "description": "Choose how your profile picture is displayed. You can upload a custom image, use your Gravatar, Libravatar or use the default avatar.",
-            "useDefault": "Default",
+            "title": "Фотография профиля",
+            "description": "Выберите, как отображается ваша фотография профиля. Вы можете загрузить своё изображение, использовать Gravatar, Libravatar или стандартный аватар.",
+            "useDefault": "По умолчанию",
             "useGravatar": "Gravatar",
             "useLibravatar": "Libravatar",
-            "useCustom": "Custom"
+            "useCustom": "Своё изображение"
         },
         "identities": {},
         "api": {
@@ -43,10 +43,10 @@
                 "string": "Загрузка"
             },
             "load_failed": {
-                "string": "Failed to load profile. Please try again later."
+                "string": "Не удалось загрузить профиль. Повторите попытку позже."
             },
             "update_failed": {
-                "string": "Failed to update profile. Please try again."
+                "string": "Не удалось обновить профиль. Повторите попытку."
             }
         }
     }

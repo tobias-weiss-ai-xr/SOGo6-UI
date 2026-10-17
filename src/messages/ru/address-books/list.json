@@ -1,16 +1,16 @@
 {
     "ADDRESS_BOOKS_LIST": {
         "contacts_number": {
-            "string": "{number, plural, one {# contact} other {# contacts}}",
+            "string": "{number, plural, one {# контакт} few {# контакта} many {# контактов} other {# контакта}}",
             "context": "Displays the number of contacts in an address book."
         },
         "lists_count": {
-            "string": "{number, plural, one {# list} other {# lists}}",
+            "string": "{number, plural, one {# список} few {# списка} many {# списков} other {# списка}}",
             "context": "Displays the number of distribution lists in an address book."
         },
         "sections": {
             "distribution_lists": {
-                "string": "Distribution lists",
+                "string": "Списки рассылки",
                 "context": "Section heading for distribution lists in the address book list."
             },
             "contacts": {
@@ -19,11 +19,11 @@
             }
         },
         "selected_count": {
-            "string": "{number, plural, one {# selected} other {# selected}}",
+            "string": "{number, plural, one {# выбран} few {# выбрано} many {# выбрано} other {# выбрано}}",
             "context": "Displays the number of selected contacts."
         },
         "deselect_all": {
-            "string": "Deselect all",
+            "string": "Снять выделение",
             "context": "Button to deselect all selected contacts."
         },
         "select": {
@@ -39,56 +39,56 @@
                 "string": "Имя"
             },
             "sort_by": {
-                "string": "Sort by"
+                "string": "Сортировка"
             },
             "sort_options": {
                 "display_name": {
-                    "string": "Display name"
+                    "string": "Отображаемое имя"
                 },
                 "last_name": {
-                    "string": "Last name"
+                    "string": "Фамилия"
                 },
                 "first_name": {
-                    "string": "First name"
+                    "string": "Имя"
                 },
                 "organization": {
-                    "string": "Organization"
+                    "string": "Организация"
                 },
                 "created_at": {
-                    "string": "Date created"
+                    "string": "Дата создания"
                 },
                 "updated_at": {
-                    "string": "Date updated"
+                    "string": "Дата изменения"
                 }
             },
             "sort_order_asc": {
-                "string": "Sort ascending"
+                "string": "По возрастанию"
             },
             "sort_order_desc": {
-                "string": "Sort descending"
+                "string": "По убыванию"
             }
         },
         "no_items": {
-            "string": "No contact found."
+            "string": "Контакт не найден."
         },
         "empty_title": {
-            "string": "No contacts yet",
+            "string": "Контактов пока нет",
             "context": "Title when an address book has no contacts"
         },
         "empty_description": {
-            "string": "Add your first contact to get started.",
+            "string": "Добавьте свой первый контакт, чтобы начать.",
             "context": "Description when an address book is empty"
         },
         "empty_create_contact": {
-            "string": "New contact",
+            "string": "Новый контакт",
             "context": "Button to create the first contact from empty state"
         },
         "search_empty_title": {
-            "string": "No results",
+            "string": "Ничего не найдено",
             "context": "Title when search returns no contacts"
         },
         "search_empty_description": {
-            "string": "Try a different search term or clear the filter.",
+            "string": "Попробуйте другой поисковый запрос или сбросьте фильтр.",
             "context": "Description when search has no matches"
         },
         "clear_search": {
@@ -96,55 +96,55 @@
             "context": "Button to reset the contacts search filter"
         },
         "search_placeholder": {
-            "string": "Search contacts…",
+            "string": "Поиск контактов…",
             "context": "Placeholder for the contacts search input in the header"
         },
         "search_min_length": {
-            "string": "Enter at least 2 characters to search.",
+            "string": "Введите минимум 2 символа для поиска.",
             "context": "Hint when the search query is too short for server-side search"
         },
         "source_address_book": {
-            "string": "In {name}",
+            "string": "В «{name}»",
             "context": "Shows which address book a contact belongs to in the all-contacts view."
         },
         "delete_selected": {
-            "string": "Delete selected contacts",
+            "string": "Удалить выбранные контакты",
             "context": "Aria label for bulk delete button"
         },
         "bulk_delete_description": {
-            "string": "Are you sure you want to delete {number, plural, one {# contact} other {# contacts}}? This action cannot be undone.",
+            "string": "Вы уверены, что хотите удалить {number, plural, one {# контакт} few {# контакта} many {# контактов} other {# контакта}}? Это действие нельзя отменить.",
             "context": "Confirmation message for bulk delete"
         },
         "create_list_from_selection": {
-            "string": "Create distribution list from selection",
+            "string": "Создать список рассылки из выбранных",
             "context": "Aria label for bulk create list action"
         },
         "list_member_count": {
-            "string": "{number, plural, one {# member} other {# members}}",
+            "string": "{number, plural, one {# участник} few {# участника} many {# участников} other {# участника}}",
             "context": "Member count shown under a distribution list in the contact list"
         },
         "read_only_banner": {
-            "string": "{name} is read-only. You cannot edit contacts or lists.",
+            "string": "«{name}» доступна только для чтения. Вы не можете изменять контакты или списки.",
             "context": "Banner shown when viewing a non-writable address book."
         },
         "pagination": {
             "previous": {
-                "string": "Previous page",
+                "string": "Предыдущая страница",
                 "context": "Pagination previous page button"
             },
             "next": {
-                "string": "Next page",
+                "string": "Следующая страница",
                 "context": "Pagination next page button"
             },
             "page": {
-                "string": "Page {page} of {total}",
+                "string": "Страница {page} из {total}",
                 "context": "Current pagination page indicator (contacts only)"
             },
             "page_size": {
-                "string": "Per page"
+                "string": "На странице"
             },
             "contacts_page_hint": {
-                "string": "Pagination applies to contacts; all lists are shown.",
+                "string": "Разбиение на страницы применяется к контактам; отображаются все списки.",
                 "context": "Hint that list pagination is contact-scoped"
             }
         }

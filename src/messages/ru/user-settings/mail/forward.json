@@ -1,79 +1,79 @@
 {
     "US_MAIL_FORWARD": {
         "title": {
-            "string": "Mail Forward"
+            "string": "Пересылка почты"
         },
         "page": {
             "description": {
-                "string": "Automatically forward incoming messages to one or more email addresses."
+                "string": "Автоматически пересылайте входящие сообщения на один или несколько адресов электронной почты."
             }
         },
         "labels": {
             "transfer_incoming": {
-                "string": "Transfer incoming messages"
+                "string": "Пересылать входящие сообщения"
             },
             "email": {
-                "string": "Email address"
+                "string": "Адрес электронной почты"
             },
             "always_forward": {
-                "string": "Always forward"
+                "string": "Всегда пересылать"
             },
             "keep_copy": {
-                "string": "Keep a copy in this inbox"
+                "string": "Сохранять копию во «Входящих»"
             }
         },
         "description": {
             "transfer_incoming": {
-                "string": "Automatically forward new messages to another email address"
+                "string": "Автоматически пересылать новые сообщения на другой адрес электронной почты"
             },
             "email": {
-                "string": "Forward to these addresses (up to {max} addresses). Add multiple addresses separated by comma, semicolon, or press Enter/Tab."
+                "string": "Пересылать на эти адреса (до {max} адресов). Добавляйте несколько адресов через запятую или точку с запятой либо нажимайте Enter/Tab."
             }
         },
         "help": {
             "email": {
-                "string": "We'll forward new messages to these addresses"
+                "string": "Мы будем пересылать новые сообщения на эти адреса"
             }
         },
         "placeholders": {
             "email": {
-                "string": "Add email address and press Enter"
+                "string": "Добавьте адрес и нажмите Enter"
             }
         },
         "errors": {
             "email": {
                 "invalid": {
-                    "string": "Please enter a valid email address"
+                    "string": "Введите корректный адрес электронной почты"
                 },
                 "duplicate": {
-                    "string": "This address is already in the list"
+                    "string": "Этот адрес уже есть в списке"
                 }
             },
             "emails": {
                 "list": {
-                    "string": "There was an error with one or more email addresses"
+                    "string": "Обнаружена проблема с одним или несколькими адресами электронной почты"
                 }
             },
             "max_reached": {
-                "string": "Maximum {max} addresses allowed"
+                "string": "Разрешено не более {max} адресов"
             },
             "validation": {
                 "addresses_required": {
-                    "string": "At least one email address is required when forwarding is enabled."
+                    "string": "При включённой пересылке требуется хотя бы один адрес электронной почты."
                 }
             }
         },
         "hints": {
             "blur": {
-                "string": "Press Enter to add this address"
+                "string": "Нажмите Enter, чтобы добавить этот адрес"
             }
         },
         "tooltip": {
             "always_forward": {
-                "string": "Incoming mail is forwarded before applying your filters."
+                "string": "Входящая почта пересылается до применения ваших фильтров."
             },
             "keep_copy": {
-                "string": "Keep a copy of forwarded messages in your inbox. Useful if you want to maintain a local archive."
+                "string": "Сохранять копию пересланных сообщений во «Входящих». Полезно, если вы хотите вести локальный архив."
             }
         },
         "errors_api": {
@@ -81,13 +81,13 @@
                 "string": "Ошибка"
             },
             "save_failed": {
-                "string": "Couldn't save your changes, try again"
+                "string": "Не удалось сохранить изменения, повторите попытку"
             },
             "load_failed": {
-                "string": "Could not load forwarding settings. Please try again later."
+                "string": "Не удалось загрузить настройки пересылки. Повторите попытку позже."
             },
             "feature_disabled": {
-                "string": "Mail forwarding has been disabled by your administrator."
+                "string": "Пересылка почты отключена вашим администратором."
             }
         },
         "status": {
@@ -100,16 +100,16 @@
         },
         "aria": {
             "tags_count": {
-                "string": "{count} of {max} email addresses added"
+                "string": "Добавлено адресов: {count} из {max}"
             },
             "remove_email": {
-                "string": "Remove {email}"
+                "string": "Убрать {email}"
             },
             "email_input_group": {
-                "string": "Email addresses for forwarding"
+                "string": "Адреса электронной почты для пересылки"
             },
             "toggle_forwarding": {
-                "string": "Toggle email forwarding"
+                "string": "Включить или отключить пересылку почты"
             }
         }
     }

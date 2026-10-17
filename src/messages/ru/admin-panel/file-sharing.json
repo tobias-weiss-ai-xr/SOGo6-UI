@@ -1,56 +1,56 @@
 {
     "AP_FILESHARE": {
         "title": {
-            "string": "File Sharing"
+            "string": "Обмен файлами"
         },
         "description": {
-            "string": "Create shareable links for files with optional password protection, expiration, and download tracking."
+            "string": "Создавайте ссылки для обмена файлами с необязательной защитой паролем, сроком действия и отслеживанием скачиваний."
         },
         "form": {
             "share": {
-                "string": "Share File"
+                "string": "Поделиться файлом"
             },
             "cancel": {
                 "string": "Отмена"
             },
             "title": {
-                "string": "Share a File"
+                "string": "Поделиться файлом"
             },
             "filename": {
-                "string": "Filename"
+                "string": "Имя файла"
             },
             "size": {
-                "string": "Size (bytes)"
+                "string": "Размер (байт)"
             },
             "expires": {
-                "string": "Expires in (days)"
+                "string": "Истекает через (дней)"
             },
             "password": {
-                "string": "Password"
+                "string": "Пароль"
             },
             "password_hint": {
-                "string": "Leave empty for no password"
+                "string": "Оставьте пустым без пароля"
             },
             "submit": {
-                "string": "Create Share Link"
+                "string": "Создать ссылку"
             }
         },
         "create": {
             "success": {
-                "string": "Share link created"
+                "string": "Ссылка для обмена создана"
             },
             "error": {
-                "string": "Failed to create share"
+                "string": "Не удалось создать ссылку"
             }
         },
         "list": {
             "empty": {
-                "string": "No shared files. Create a share link to securely distribute files."
+                "string": "Нет общих файлов. Создайте ссылку, чтобы безопасно распространять файлы."
             }
         },
         "errors": {
             "fields": {
-                "string": "Filename and size are required"
+                "string": "Укажите имя файла и размер"
             }
         }
     }

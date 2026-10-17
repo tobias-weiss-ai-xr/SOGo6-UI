@@ -1,62 +1,62 @@
 {
     "AP_POLLS": {
         "title": {
-            "string": "Scheduling Polls"
+            "string": "Опросы для планирования"
         },
         "description": {
-            "string": "Create 'When are you free?' polls to find the best meeting time for internal and external participants."
+            "string": "Создавайте опросы «Когда вы свободны?», чтобы найти лучшее время встречи для внутренних и внешних участников."
         },
         "form": {
             "create": {
-                "string": "Create Poll"
+                "string": "Создать опрос"
             },
             "cancel": {
                 "string": "Отмена"
             },
             "title": {
-                "string": "New Scheduling Poll"
+                "string": "Новый опрос для планирования"
             },
             "poll_title": {
-                "string": "Poll Title"
+                "string": "Название опроса"
             },
             "title_hint": {
-                "string": "e.g. Q1 Planning Meeting"
+                "string": "напр. Планирование на Q1"
             },
             "participants": {
-                "string": "Participants"
+                "string": "Участники"
             },
             "description": {
                 "string": "Описание"
             },
             "time_slots": {
-                "string": "Proposed Time Slots"
+                "string": "Предлагаемые интервалы времени"
             },
             "add_slot": {
-                "string": "Add Slot"
+                "string": "Добавить интервал"
             },
             "submit": {
-                "string": "Create Poll"
+                "string": "Создать опрос"
             }
         },
         "create": {
             "success": {
-                "string": "Poll created"
+                "string": "Опрос создан"
             },
             "error": {
-                "string": "Failed to create poll"
+                "string": "Не удалось создать опрос"
             }
         },
         "list": {
             "empty": {
-                "string": "No scheduling polls yet. Create one to find the best meeting time."
+                "string": "Опросов для планирования пока нет. Создайте первый, чтобы найти лучшее время встречи."
             },
             "by": {
-                "string": "by"
+                "string": "от"
             }
         },
         "errors": {
             "fields": {
-                "string": "Title, participants, and at least one time slot are required"
+                "string": "Укажите название, участников и хотя бы один интервал времени"
             }
         }
     }

@@ -1,77 +1,77 @@
 {
     "AP_SYSTEM": {
         "title": {
-            "string": "System Settings"
+            "string": "Системные настройки"
         },
         "description": {
-            "string": "Configure system-wide behaviour for the SOGo instance."
+            "string": "Настройте поведение всей системы для этого экземпляра SOGo."
         },
         "form_title": {
             "string": "Конфигурация"
         },
         "form_description": {
-            "string": "Modify global system settings below."
+            "string": "Измените глобальные системные настройки ниже."
         },
         "save": {
             "string": "Сохранить"
         },
         "saving": {
-            "string": "Saving…"
+            "string": "Сохранение…"
         },
         "saved": {
-            "string": "System settings saved successfully."
+            "string": "Системные настройки успешно сохранены."
         },
         "save_error": {
-            "string": "Failed to save: {message}"
+            "string": "Не удалось сохранить: {message}"
         },
         "load_error": {
-            "string": "Failed to load system settings."
+            "string": "Не удалось загрузить системные настройки."
         },
         "retry": {
-            "string": "Retry"
+            "string": "Повторить"
         },
         "unsaved_changes": {
-            "string": "You have unsaved changes."
+            "string": "У вас есть несохранённые изменения."
         },
         "fields": {
             "SOGO_S_DIRECT_LOGIN": {
                 "label": {
-                    "string": "Direct Login"
+                    "string": "Прямой вход"
                 },
                 "description": {
-                    "string": "Allow users to log in without selecting a domain."
+                    "string": "Разрешить пользователям входить без выбора домена."
                 }
             },
             "SOGO_S_DOMAINLESS_LOGIN": {
                 "label": {
-                    "string": "Domainless Login"
+                    "string": "Вход без домена"
                 },
                 "description": {
-                    "string": "Allow login with username only (no @domain)."
+                    "string": "Разрешить вход только по имени пользователя (без @домена)."
                 }
             },
             "SOGO_S_DO_DOMAIN": {
                 "label": {
-                    "string": "Enable Domains"
+                    "string": "Включить домены"
                 },
                 "description": {
-                    "string": "Enable multi-domain support for this instance."
+                    "string": "Включить поддержку нескольких доменов для этого экземпляра."
                 }
             },
             "SOGO_S_REJECT_UNKNOWN_DOMAIN": {
                 "label": {
-                    "string": "Reject Unknown Domains"
+                    "string": "Отклонять неизвестные домены"
                 },
                 "description": {
-                    "string": "Reject login attempts from domains not configured in SOGo."
+                    "string": "Отклонять попытки входа с доменов, не настроенных в SOGo."
                 }
             },
             "SOGO_S_SENDMAIL": {
                 "label": {
-                    "string": "Sendmail Path"
+                    "string": "Путь к sendmail"
                 },
                 "description": {
-                    "string": "Absolute path to the sendmail binary used for outgoing mail."
+                    "string": "Абсолютный путь к бинарному файлу sendmail, используемому для исходящей почты."
                 }
             }
         }

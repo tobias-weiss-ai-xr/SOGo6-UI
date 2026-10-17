@@ -1,17 +1,17 @@
 {
     "AP_USERS": {
         "title": {
-            "string": "User Management"
+            "string": "Управление пользователями"
         },
         "description": {
-            "string": "Create, edit, and delete user accounts in the LDAP directory"
+            "string": "Создавайте, изменяйте и удаляйте учётные записи пользователей в каталоге LDAP"
         },
         "search": {
             "placeholder": {
-                "string": "Search by name, email, or UID..."
+                "string": "Поиск по имени, эл. почте или UID..."
             },
             "clear": {
-                "string": "Clear"
+                "string": "Очистить"
             }
         },
         "table": {
@@ -19,48 +19,48 @@
                 "string": "UID"
             },
             "cn": {
-                "string": "Full Name"
+                "string": "Полное имя"
             },
             "mail": {
-                "string": "Email"
+                "string": "Эл. почта"
             },
             "sn": {
-                "string": "Surname"
+                "string": "Фамилия"
             },
             "givenName": {
-                "string": "Given Name"
+                "string": "Имя"
             },
             "uidNumber": {
-                "string": "UID Number"
+                "string": "Номер UID"
             },
             "gidNumber": {
-                "string": "GID Number"
+                "string": "Номер GID"
             },
             "homeDirectory": {
-                "string": "Home Directory"
+                "string": "Домашний каталог"
             },
             "actions": {
-                "string": "Actions"
+                "string": "Действия"
             },
             "no_users": {
-                "string": "No users found"
+                "string": "Пользователи не найдены"
             },
             "loading": {
-                "string": "Loading users..."
+                "string": "Загрузка пользователей..."
             }
         },
         "create": {
             "button": {
-                "string": "Create User"
+                "string": "Создать пользователя"
             },
             "title": {
-                "string": "Create New User"
+                "string": "Создать нового пользователя"
             },
             "success": {
-                "string": "User created successfully"
+                "string": "Пользователь успешно создан"
             },
             "error": {
-                "string": "Failed to create user"
+                "string": "Не удалось создать пользователя"
             }
         },
         "edit": {
@@ -68,16 +68,16 @@
                 "string": "Редактировать"
             },
             "title": {
-                "string": "Edit User"
+                "string": "Изменить пользователя"
             },
             "save": {
-                "string": "Save Changes"
+                "string": "Сохранить изменения"
             },
             "success": {
-                "string": "User updated successfully"
+                "string": "Пользователь успешно обновлён"
             },
             "error": {
-                "string": "Failed to update user"
+                "string": "Не удалось обновить пользователя"
             }
         },
         "delete": {
@@ -85,45 +85,45 @@
                 "string": "Удалить"
             },
             "confirm": {
-                "string": "Are you sure you want to delete user {uid}?"
+                "string": "Вы уверены, что хотите удалить пользователя {uid}?"
             },
             "success": {
-                "string": "User deleted successfully"
+                "string": "Пользователь успешно удалён"
             },
             "error": {
-                "string": "Failed to delete user"
+                "string": "Не удалось удалить пользователя"
             }
         },
         "form": {
             "uid": {
-                "string": "User ID (email)"
+                "string": "Идентификатор пользователя (эл. почта)"
             },
             "cn": {
-                "string": "Full Name"
+                "string": "Полное имя"
             },
             "sn": {
-                "string": "Surname"
+                "string": "Фамилия"
             },
             "givenName": {
-                "string": "Given Name"
+                "string": "Имя"
             },
             "mail": {
-                "string": "Email Address"
+                "string": "Адрес электронной почты"
             },
             "password": {
-                "string": "Password"
+                "string": "Пароль"
             },
             "uidNumber": {
-                "string": "UID Number (optional)"
+                "string": "Номер UID (необязательно)"
             },
             "gidNumber": {
-                "string": "GID Number (optional)"
+                "string": "Номер GID (необязательно)"
             },
             "homeDirectory": {
-                "string": "Home Directory (optional)"
+                "string": "Домашний каталог (необязательно)"
             },
             "required": {
-                "string": "Required"
+                "string": "Обязательное поле"
             }
         }
     }

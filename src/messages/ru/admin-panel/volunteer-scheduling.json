@@ -1,50 +1,50 @@
 {
     "VOLUNTEER": {
         "title": {
-            "string": "Volunteer Scheduling"
+            "string": "Планирование волонтёров"
         },
         "description": {
-            "string": "Manage volunteers, assign shifts, track hours, and generate certificates"
+            "string": "Управляйте волонтёрами, назначайте смены, отслеживайте часы и создавайте справки"
         },
         "errors": {
             "fields": {
-                "string": "Required fields missing"
+                "string": "Не заполнены обязательные поля"
             },
             "fail": {
-                "string": "Operation failed"
+                "string": "Операция не выполнена"
             }
         },
         "success": {
             "create": {
-                "string": "Volunteer registered"
+                "string": "Волонтёр зарегистрирован"
             },
             "shift": {
-                "string": "Shift assigned"
+                "string": "Смена назначена"
             },
             "cert": {
-                "string": "Certificate generated"
+                "string": "Справка создана"
             }
         },
         "register": {
             "title": {
-                "string": "Register Volunteer"
+                "string": "Зарегистрировать волонтёра"
             }
         },
         "shift": {
             "title": {
-                "string": "Create Shift"
+                "string": "Создать смену"
             },
             "select": {
-                "string": "Select volunteer..."
+                "string": "Выберите волонтёра..."
             },
             "task": {
-                "string": "Task"
+                "string": "Задача"
             },
             "start": {
-                "string": "Start"
+                "string": "Начало"
             },
             "end": {
-                "string": "End"
+                "string": "Конец"
             }
         },
         "field": {
@@ -52,46 +52,46 @@
                 "string": "Имя"
             },
             "email": {
-                "string": "Email"
+                "string": "Эл. почта"
             },
             "hours": {
-                "string": "Hours"
+                "string": "Часы"
             },
             "status": {
                 "string": "Статус"
             },
             "no_shows": {
-                "string": "No-shows"
+                "string": "Неявки"
             }
         },
         "button": {
             "register": {
-                "string": "Register"
+                "string": "Зарегистрировать"
             },
             "assign": {
-                "string": "Assign Shift"
+                "string": "Назначить смену"
             }
         },
         "stats": {
             "title": {
-                "string": "Statistics"
+                "string": "Статистика"
             },
             "volunteers": {
-                "string": "Volunteers"
+                "string": "Волонтёры"
             },
             "hours": {
-                "string": "Total Hours"
+                "string": "Всего часов"
             },
             "shifts": {
-                "string": "Active Shifts"
+                "string": "Активные смены"
             }
         },
         "list": {
             "title": {
-                "string": "All Volunteers"
+                "string": "Все волонтёры"
             },
             "empty": {
-                "string": "No volunteers registered yet"
+                "string": "Волонтёры ещё не зарегистрированы"
             }
         }
     }

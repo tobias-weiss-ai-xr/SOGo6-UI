@@ -1,26 +1,26 @@
 {
   "IDENTITY_COMPONENT": {
     "labels": {
-      "name": "Identity Name",
-      "email": "Email Address",
-      "replyTo": "Reply To",
-      "newIdentity": "New Identity",
-      "default": "Default",
-      "removeIdentity": "Remove Identity",
-      "atLeastOneIdentity": "At least one identity is required",
+      "name": "Название профиля",
+      "email": "Адрес электронной почты",
+      "replyTo": "Ответить на",
+      "newIdentity": "Новый профиль",
+      "default": "По умолчанию",
+      "removeIdentity": "Удалить профиль",
+      "atLeastOneIdentity": "Требуется хотя бы один профиль",
       "useDefaultIdentity": {
         "string": "Использовать как идентификатор по умолчанию"
       },
-      "setAsDefault": "Set as default",
-      "defaultDescription": "This identity will be used by default when composing new messages",
-      "mainIdentityEmail": "This is your main email address and cannot be changed",
-      "nameNotEditable": "Name editing is disabled by administrator",
-      "replyToNotEditable": "Reply-To editing is disabled by administrator",
-      "signatures": "Signatures",
-      "signaturesDescription": "Create and manage email signatures for this identity",
-      "signaturePlaceholder": "Enter signature name",
-      "addIdentity": "Add an identity",
-      "allowsCustom": "You can add and manage additional identities"
+      "setAsDefault": "Сделать по умолчанию",
+      "defaultDescription": "Этот профиль будет использоваться по умолчанию при написании новых сообщений",
+      "mainIdentityEmail": "Это ваш основной адрес электронной почты, его нельзя изменить",
+      "nameNotEditable": "Изменение имени отключено администратором",
+      "replyToNotEditable": "Изменение поля «Ответить на» отключено администратором",
+      "signatures": "Подписи",
+      "signaturesDescription": "Создавайте подписи и управляйте ими для этого профиля",
+      "signaturePlaceholder": "Введите название подписи",
+      "addIdentity": "Добавить профиль",
+      "allowsCustom": "Вы можете добавлять дополнительные профили и управлять ими"
     },
     "description": {
       "useDefaultIdentity": {
@@ -28,10 +28,10 @@
       }
     },
     "accessibility": {
-      "toggleCollapse": "Toggle identity details",
-      "expandIdentity": "Expand",
-      "collapseIdentity": "Collapse",
-      "removeIcon": "Remove identity button"
+      "toggleCollapse": "Показать/скрыть сведения о профиле",
+      "expandIdentity": "Развернуть",
+      "collapseIdentity": "Свернуть",
+      "removeIcon": "Кнопка удаления профиля"
     }
   }
 }

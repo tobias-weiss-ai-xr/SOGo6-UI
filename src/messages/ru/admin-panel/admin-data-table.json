@@ -13,7 +13,7 @@
             "string": "Далее"
         },
         "selected": {
-            "string": "{selected} of {total} row(s) selected."
+            "string": "Выбрано строк: {selected} из {total}."
         }
     }
 }
