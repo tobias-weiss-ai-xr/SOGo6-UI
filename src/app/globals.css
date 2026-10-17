@@ -621,6 +621,19 @@ input[type="reset"],
   min-width: 44px;
 }
 
+/* Radix toggle controls render as <button role="checkbox|radio|switch">,
+   so the floor above blew them up to 44x44 regardless of their Tailwind
+   size classes (min-* beats width/height) — giant checkboxes everywhere.
+   Exempt them: visual size comes from the component's size classes; the
+   hit area is provided by wrapping buttons (e.g. the 32px mail-list
+   selector) instead of inflating the control itself. */
+button[role="checkbox"],
+button[role="radio"],
+button[role="switch"] {
+  min-height: 0;
+  min-width: 0;
+}
+
 /* Ensure touch targets have enough spacing */
 button + button,
 input + input,
