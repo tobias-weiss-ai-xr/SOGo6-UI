@@ -1,69 +1,69 @@
 {
     "AP_WORKFLOWS": {
         "title": {
-            "string": "Workflow Builder"
+            "string": "Kreator przepływów pracy"
         },
         "description": {
-            "string": "Low-code automation: If email from X and subject Y → forward, create event, notify."
+            "string": "Automatyzacja low-code: jeśli e-mail od X i temat Y → przekazuj, utwórz wydarzenie, powiadom."
         },
         "form": {
             "create": {
-                "string": "New Workflow"
+                "string": "Nowy przepływ pracy"
             },
             "cancel": {
                 "string": "Anuluj"
             },
             "title": {
-                "string": "Create Workflow"
+                "string": "Utwórz przepływ pracy"
             },
             "name": {
-                "string": "Workflow Name"
+                "string": "Nazwa przepływu pracy"
             },
             "trigger": {
-                "string": "Trigger"
+                "string": "Wyzwalacz"
             },
             "description": {
                 "string": "Opis"
             },
             "conditions": {
-                "string": "Conditions"
+                "string": "Warunki"
             },
             "actions": {
-                "string": "Actions"
+                "string": "Akcje"
             },
             "submit": {
-                "string": "Create Workflow"
+                "string": "Utwórz przepływ pracy"
             }
         },
         "create": {
             "success": {
-                "string": "Workflow created"
+                "string": "Utworzono przepływ pracy"
             },
             "error": {
-                "string": "Failed to create"
+                "string": "Nie udało się utworzyć"
             }
         },
         "toggle": {
             "error": {
-                "string": "Failed to toggle"
+                "string": "Nie udało się przełączyć"
             }
         },
         "delete": {
             "success": {
-                "string": "Workflow deleted"
+                "string": "Usunięto przepływ pracy"
             },
             "error": {
-                "string": "Failed to delete"
+                "string": "Nie udało się usunąć"
             }
         },
         "list": {
             "empty": {
-                "string": "No workflows defined. Create one to automate actions."
+                "string": "Brak zdefiniowanych przepływów pracy. Utwórz jeden, aby automatyzować działania."
             }
         },
         "errors": {
             "fields": {
-                "string": "Name, conditions, and actions are required"
+                "string": "Nazwa, warunki i akcje są wymagane"
             }
         }
     }

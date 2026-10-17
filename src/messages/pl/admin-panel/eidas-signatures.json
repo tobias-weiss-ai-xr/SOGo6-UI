@@ -1,64 +1,64 @@
 {
     "EIDAS": {
         "title": {
-            "string": "eIDAS Qualified Signatures"
+            "string": "Kwalifikowane podpisy eIDAS"
         },
         "description": {
-            "string": "EU Regulation 910/2014 qualified electronic signatures and timestamps"
+            "string": "Kwalifikowane podpisy elektroniczne i znaczniki czasu zgodne z rozporządzeniem UE 910/2014"
         },
         "errors": {
             "fields": {
-                "string": "All fields required"
+                "string": "Wszystkie pola są wymagane"
             },
             "fail": {
-                "string": "Operation failed"
+                "string": "Operacja nie powiodła się"
             }
         },
         "success": {
             "sign": {
-                "string": "Document signed with QES"
+                "string": "Dokument podpisany przez QES"
             }
         },
         "sign": {
             "title": {
-                "string": "Sign Document"
+                "string": "Podpisz dokument"
             },
             "placeholder": {
-                "string": "Enter document content to sign..."
+                "string": "Wprowadź treść dokumentu do podpisania..."
             },
             "signer": {
-                "string": "Signer Email"
+                "string": "E-mail podpisującego"
             },
             "algorithm": {
-                "string": "Hash Algorithm"
+                "string": "Algorytm skrótu"
             },
             "button": {
-                "string": "Sign with QES"
+                "string": "Podpisz przez QES"
             }
         },
         "verify": {
             "title": {
-                "string": "Verify Signature"
+                "string": "Zweryfikuj podpis"
             },
             "doc_hash": {
-                "string": "Document Hash"
+                "string": "Skrót dokumentu"
             },
             "signature": {
-                "string": "Signature"
+                "string": "Podpis"
             },
             "button": {
-                "string": "Verify"
+                "string": "Zweryfikuj"
             },
             "valid": {
-                "string": "Valid"
+                "string": "Prawidłowy"
             },
             "invalid": {
-                "string": "Invalid"
+                "string": "Nieprawidłowy"
             }
         },
         "certs": {
             "title": {
-                "string": "Trust Service Certificates"
+                "string": "Certyfikaty usług zaufania"
             },
             "type": {
                 "string": "Typ"
@@ -67,7 +67,7 @@
                 "string": "Nazwa"
             },
             "hash": {
-                "string": "Hash"
+                "string": "Skrót"
             }
         }
     }

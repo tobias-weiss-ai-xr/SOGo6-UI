@@ -1,16 +1,16 @@
 {
     "ADDRESS_BOOKS_LIST": {
         "contacts_number": {
-            "string": "{number, plural, one {# contact} other {# contacts}}",
+            "string": "{number, plural, one {# kontakt} few {# kontakty} many {# kontaktów} other {# kontaktu}}",
             "context": "Displays the number of contacts in an address book."
         },
         "lists_count": {
-            "string": "{number, plural, one {# list} other {# lists}}",
+            "string": "{number, plural, one {# lista} few {# listy} many {# list} other {# listy}}",
             "context": "Displays the number of distribution lists in an address book."
         },
         "sections": {
             "distribution_lists": {
-                "string": "Distribution lists",
+                "string": "Listy dystrybucyjne",
                 "context": "Section heading for distribution lists in the address book list."
             },
             "contacts": {
@@ -19,11 +19,11 @@
             }
         },
         "selected_count": {
-            "string": "{number, plural, one {# selected} other {# selected}}",
+            "string": "{number, plural, one {# wybrany} few {# wybrane} many {# wybranych} other {# wybranego}}",
             "context": "Displays the number of selected contacts."
         },
         "deselect_all": {
-            "string": "Deselect all",
+            "string": "Odznacz wszystkie",
             "context": "Button to deselect all selected contacts."
         },
         "select": {
@@ -39,56 +39,56 @@
                 "string": "Nazwa"
             },
             "sort_by": {
-                "string": "Sort by"
+                "string": "Sortuj według"
             },
             "sort_options": {
                 "display_name": {
-                    "string": "Display name"
+                    "string": "Nazwa wyświetlana"
                 },
                 "last_name": {
-                    "string": "Last name"
+                    "string": "Nazwisko"
                 },
                 "first_name": {
-                    "string": "First name"
+                    "string": "Imię"
                 },
                 "organization": {
-                    "string": "Organization"
+                    "string": "Organizacja"
                 },
                 "created_at": {
-                    "string": "Date created"
+                    "string": "Data utworzenia"
                 },
                 "updated_at": {
-                    "string": "Date updated"
+                    "string": "Data aktualizacji"
                 }
             },
             "sort_order_asc": {
-                "string": "Sort ascending"
+                "string": "Sortuj rosnąco"
             },
             "sort_order_desc": {
-                "string": "Sort descending"
+                "string": "Sortuj malejąco"
             }
         },
         "no_items": {
-            "string": "No contact found."
+            "string": "Nie znaleziono kontaktu."
         },
         "empty_title": {
-            "string": "No contacts yet",
+            "string": "Brak kontaktów",
             "context": "Title when an address book has no contacts"
         },
         "empty_description": {
-            "string": "Add your first contact to get started.",
+            "string": "Dodaj pierwszy kontakt, aby zacząć.",
             "context": "Description when an address book is empty"
         },
         "empty_create_contact": {
-            "string": "New contact",
+            "string": "Nowy kontakt",
             "context": "Button to create the first contact from empty state"
         },
         "search_empty_title": {
-            "string": "No results",
+            "string": "Brak wyników",
             "context": "Title when search returns no contacts"
         },
         "search_empty_description": {
-            "string": "Try a different search term or clear the filter.",
+            "string": "Wypróbuj inny wyszukiwany termin lub wyczyść filtr.",
             "context": "Description when search has no matches"
         },
         "clear_search": {
@@ -96,55 +96,55 @@
             "context": "Button to reset the contacts search filter"
         },
         "search_placeholder": {
-            "string": "Search contacts…",
+            "string": "Szukaj kontaktów…",
             "context": "Placeholder for the contacts search input in the header"
         },
         "search_min_length": {
-            "string": "Enter at least 2 characters to search.",
+            "string": "Wpisz co najmniej 2 znaki, aby szukać.",
             "context": "Hint when the search query is too short for server-side search"
         },
         "source_address_book": {
-            "string": "In {name}",
+            "string": "W: {name}",
             "context": "Shows which address book a contact belongs to in the all-contacts view."
         },
         "delete_selected": {
-            "string": "Delete selected contacts",
+            "string": "Usuń wybrane kontakty",
             "context": "Aria label for bulk delete button"
         },
         "bulk_delete_description": {
-            "string": "Are you sure you want to delete {number, plural, one {# contact} other {# contacts}}? This action cannot be undone.",
+            "string": "Czy na pewno chcesz usunąć {number, plural, one {# kontakt} few {# kontakty} many {# kontaktów} other {# kontaktu}}? Tej operacji nie można cofnąć.",
             "context": "Confirmation message for bulk delete"
         },
         "create_list_from_selection": {
-            "string": "Create distribution list from selection",
+            "string": "Utwórz listę dystrybucyjną z zaznaczenia",
             "context": "Aria label for bulk create list action"
         },
         "list_member_count": {
-            "string": "{number, plural, one {# member} other {# members}}",
+            "string": "{number, plural, one {# członek} few {# członków} many {# członków} other {# członka}}",
             "context": "Member count shown under a distribution list in the contact list"
         },
         "read_only_banner": {
-            "string": "{name} is read-only. You cannot edit contacts or lists.",
+            "string": "„{name}” jest tylko do odczytu. Nie możesz edytować kontaktów ani list.",
             "context": "Banner shown when viewing a non-writable address book."
         },
         "pagination": {
             "previous": {
-                "string": "Previous page",
+                "string": "Poprzednia strona",
                 "context": "Pagination previous page button"
             },
             "next": {
-                "string": "Next page",
+                "string": "Następna strona",
                 "context": "Pagination next page button"
             },
             "page": {
-                "string": "Page {page} of {total}",
+                "string": "Strona {page} z {total}",
                 "context": "Current pagination page indicator (contacts only)"
             },
             "page_size": {
-                "string": "Per page"
+                "string": "Na stronę"
             },
             "contacts_page_hint": {
-                "string": "Pagination applies to contacts; all lists are shown.",
+                "string": "Paginacja dotyczy kontaktów; wszystkie listy są widoczne.",
                 "context": "Hint that list pagination is contact-scoped"
             }
         }

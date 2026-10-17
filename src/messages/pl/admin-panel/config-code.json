@@ -1,68 +1,68 @@
 {
     "AP_CFGCODE": {
         "title": {
-            "string": "Configuration as Code"
+            "string": "Konfiguracja jako kod"
         },
         "description": {
-            "string": "Export, version, and import system configuration as JSON for GitOps workflows."
+            "string": "Eksportuj, wersjonuj i importuj konfigurację systemu jako JSON dla przepływów GitOps."
         },
         "export": {
             "title": {
-                "string": "Current Configuration"
+                "string": "Bieżąca konfiguracja"
             },
             "copy": {
                 "string": "Kopiuj"
             },
             "copied": {
-                "string": "Copied!"
+                "string": "Skopiowano!"
             },
             "download": {
-                "string": "Download JSON"
+                "string": "Pobierz JSON"
             },
             "success": {
-                "string": "Downloaded"
+                "string": "Pobrano"
             }
         },
         "import": {
             "title": {
-                "string": "Import Configuration"
+                "string": "Importuj konfigurację"
             },
             "description_label": {
                 "string": "Opis"
             },
             "description_placeholder": {
-                "string": "e.g. Update mail server settings"
+                "string": "np. Zaktualizuj ustawienia serwera poczty"
             },
             "placeholder": {
-                "string": "Paste JSON configuration here..."
+                "string": "Wklej tutaj konfigurację JSON..."
             },
             "button": {
-                "string": "Apply Configuration"
+                "string": "Zastosuj konfigurację"
             },
             "running": {
-                "string": "Applying..."
+                "string": "Stosowanie..."
             },
             "success": {
-                "string": "Configuration v{{version}} applied"
+                "string": "Zastosowano konfigurację v{{version}}"
             },
             "error": {
-                "string": "Import failed"
+                "string": "Import nie powiódł się"
             }
         },
         "history": {
             "title": {
-                "string": "Version History"
+                "string": "Historia wersji"
             },
             "empty": {
-                "string": "No configuration snapshots yet."
+                "string": "Brak migawek konfiguracji."
             }
         },
         "errors": {
             "empty": {
-                "string": "Configuration JSON is empty"
+                "string": "Konfiguracja JSON jest pusta"
             },
             "parse": {
-                "string": "Invalid JSON — please check syntax"
+                "string": "Nieprawidłowy JSON — sprawdź składnię"
             }
         }
     }

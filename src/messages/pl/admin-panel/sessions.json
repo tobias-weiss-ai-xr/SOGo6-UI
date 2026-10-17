@@ -1,76 +1,76 @@
 {
     "AP_SESSIONS": {
         "title": {
-            "string": "Active Sessions"
+            "string": "Aktywne sesje"
         },
         "description": {
-            "string": "View and manage active user sessions"
+            "string": "Przeglądaj aktywne sesje użytkownika i zarządzaj nimi"
         },
         "table": {
             "uid": {
-                "string": "User"
+                "string": "Użytkownik"
             },
             "domain": {
                 "string": "Domena"
             },
             "last_activity": {
-                "string": "Last Activity"
+                "string": "Ostatnia aktywność"
             },
             "actions": {
-                "string": "Actions"
+                "string": "Akcje"
             },
             "no_sessions": {
-                "string": "No active sessions found"
+                "string": "Nie znaleziono aktywnych sesji"
             },
             "loading": {
-                "string": "Loading sessions..."
+                "string": "Wczytywanie sesji..."
             }
         },
         "revoke": {
             "button": {
-                "string": "Revoke"
+                "string": "Unieważnij"
             },
             "confirm": {
-                "string": "Are you sure you want to revoke this session?"
+                "string": "Czy na pewno chcesz unieważnić tę sesję?"
             },
             "confirm_multiple": {
-                "string": "Are you sure you want to revoke the selected sessions?"
+                "string": "Czy na pewno chcesz unieważnić wybrane sesje?"
             },
             "revoke_selected": {
-                "string": "Revoke Selected"
+                "string": "Unieważnij wybrane"
             },
             "revoke_selected_one": {
-                "string": "Revoke Selected ({count})"
+                "string": "Unieważnij wybrane ({count})"
             },
             "success": {
-                "string": "Session revoked successfully"
+                "string": "Sesja została pomyślnie unieważniona"
             },
             "success_multiple": {
-                "string": "{count} sessions revoked successfully"
+                "string": "Pomyślnie unieważniono sesje: {count}"
             },
             "error": {
-                "string": "Failed to revoke session"
+                "string": "Nie udało się unieważnić sesji"
             }
         },
         "revoke_inactive": {
             "button": {
-                "string": "Revoke Inactive"
+                "string": "Unieważnij nieaktywne"
             },
             "confirm": {
-                "string": "Are you sure you want to revoke all inactive sessions?"
+                "string": "Czy na pewno chcesz unieważnić wszystkie nieaktywne sesje?"
             },
             "days": {
-                "string": "Days of inactivity"
+                "string": "Dni nieaktywności"
             },
             "days_placeholder": {
-                "string": "e.g., 30"
+                "string": "np. 30"
             },
             "success": {
-                "string": "Inactive sessions revoked successfully"
+                "string": "Nieaktywne sesje zostały pomyślnie unieważnione"
             }
         },
         "refresh": {
-            "string": "Refresh"
+            "string": "Odśwież"
         }
     }
 }

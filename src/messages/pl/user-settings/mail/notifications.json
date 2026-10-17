@@ -1,65 +1,65 @@
 {
     "US_MAIL_NOTIFICATIONS": {
         "title": {
-            "string": "Mail Notifications"
+            "string": "Powiadomienia pocztowe"
         },
         "page": {
             "description": {
-                "string": "Send email notifications when your mail filters are triggered."
+                "string": "Wysyłaj powiadomienia e-mail, gdy Twoje filtry poczty zostaną uruchomione."
             }
         },
         "labels": {
             "enabled": {
-                "string": "Enable mail notifications"
+                "string": "Włącz powiadomienia pocztowe"
             },
             "email": {
-                "string": "Email addresses"
+                "string": "Adresy e-mail"
             },
             "message": {
-                "string": "Notification message"
+                "string": "Treść powiadomienia"
             }
         },
         "description": {
             "enabled": {
-                "string": "Notify external addresses when a filter rule matches incoming mail."
+                "string": "Powiadamiaj adresy zewnętrzne, gdy reguła filtra dopasuje przychodzącą pocztę."
             }
         },
         "help": {
             "email": {
-                "string": "We'll send notifications to these addresses when filters are triggered"
+                "string": "Będziemy wysyłać powiadomienia na te adresy, gdy filtry zostaną uruchomione"
             }
         },
         "hints": {
             "blur": {
-                "string": "Press Enter to add this address"
+                "string": "Naciśnij Enter, aby dodać ten adres"
             }
         },
         "placeholders": {
             "email": {
-                "string": "Add email address and press Enter"
+                "string": "Dodaj adres e-mail i naciśnij Enter"
             },
             "message": {
-                "string": "Enter notification message"
+                "string": "Wprowadź treść powiadomienia"
             }
         },
         "errors": {
             "email": {
                 "invalid": {
-                    "string": "Please enter a valid email address"
+                    "string": "Wprowadź prawidłowy adres e-mail"
                 },
                 "duplicate": {
-                    "string": "This address is already in the list"
+                    "string": "Ten adres znajduje się już na liście"
                 }
             },
             "max_reached": {
-                "string": "Maximum {max} addresses allowed"
+                "string": "Dozwolonych jest maksymalnie {max} adresów"
             },
             "validation": {
                 "addresses_required": {
-                    "string": "At least one email address is required when notifications are enabled."
+                    "string": "Gdy powiadomienia są włączone, wymagany jest co najmniej jeden adres e-mail."
                 },
                 "message_required": {
-                    "string": "A notification message is required."
+                    "string": "Komunikat powiadomienia jest wymagany."
                 }
             }
         },
@@ -68,27 +68,27 @@
                 "string": "Błąd"
             },
             "save_failed": {
-                "string": "Couldn't save your changes, try again"
+                "string": "Nie udało się zapisać zmian, spróbuj ponownie"
             },
             "load_failed": {
-                "string": "Could not load notification settings. Please try again later."
+                "string": "Nie udało się wczytać ustawień powiadomień. Spróbuj ponownie później."
             },
             "feature_disabled": {
-                "string": "Mail notifications have been disabled by your administrator."
+                "string": "Powiadomienia pocztowe zostały wyłączone przez administratora."
             }
         },
         "aria": {
             "toggle_notifications": {
-                "string": "Toggle mail notifications"
+                "string": "Przełącz powiadomienia pocztowe"
             },
             "tags_count": {
-                "string": "{count} of {max} email addresses added"
+                "string": "Dodano {count} z {max} adresów e-mail"
             },
             "remove_email": {
-                "string": "Remove {email}"
+                "string": "Usuń {email}"
             },
             "email_input_group": {
-                "string": "Email addresses for notifications"
+                "string": "Adresy e-mail do powiadomień"
             }
         }
     }

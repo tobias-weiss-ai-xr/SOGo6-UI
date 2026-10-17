@@ -1,67 +1,67 @@
 {
     "AP_WEBHOOKS": {
         "title": {
-            "string": "Webhooks"
+            "string": "Webhooki"
         },
         "description": {
-            "string": "Outbound webhooks for n8n, Make, and other automation platforms. Events trigger HTTP POST with HMAC-signed payloads."
+            "string": "Webhooki wychodzące dla n8n, Make i innych platform automatyzacji. Zdarzenia wyzwalają żądania HTTP POST z podpisanymi HMAC danymi."
         },
         "form": {
             "add": {
-                "string": "Add Webhook"
+                "string": "Dodaj webhook"
             },
             "cancel": {
                 "string": "Anuluj"
             },
             "title": {
-                "string": "New Webhook"
+                "string": "Nowy webhook"
             },
             "url": {
-                "string": "Webhook URL"
+                "string": "Adres URL webhooka"
             },
             "name": {
-                "string": "Display Name"
+                "string": "Nazwa wyświetlana"
             },
             "name_placeholder": {
-                "string": "e.g. n8n Workflow"
+                "string": "np. Przepływ n8n"
             },
             "secret": {
-                "string": "Signing Secret"
+                "string": "Sekret podpisu"
             },
             "secret_placeholder": {
-                "string": "HMAC secret (optional)"
+                "string": "Sekret HMAC (opcjonalnie)"
             },
             "events": {
-                "string": "Events"
+                "string": "Wydarzenia"
             },
             "create": {
-                "string": "Create Webhook"
+                "string": "Utwórz webhook"
             }
         },
         "create": {
             "success": {
-                "string": "Webhook created"
+                "string": "Utworzono webhook"
             },
             "error": {
-                "string": "Failed to create webhook"
+                "string": "Nie udało się utworzyć webhooka"
             }
         },
         "delete": {
             "success": {
-                "string": "Webhook deleted"
+                "string": "Usunięto webhook"
             },
             "error": {
-                "string": "Failed to delete"
+                "string": "Nie udało się usunąć"
             }
         },
         "list": {
             "empty": {
-                "string": "No webhooks configured. Click Add Webhook to get started."
+                "string": "Brak skonfigurowanych webhooków. Kliknij Dodaj webhook, aby zacząć."
             }
         },
         "errors": {
             "fields": {
-                "string": "URL and at least one event are required"
+                "string": "Adres URL i co najmniej jedno wydarzenie są wymagane"
             }
         }
     }

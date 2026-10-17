@@ -1,15 +1,15 @@
 {
   "search": {
-    "openCommandPalette": "Press Cmd+K to open command palette",
-    "placeholder": "Search emails, contacts, calendar…",
-    "navigate": "Quick navigation",
-    "results": "Search results",
-    "noResults": "No results found.",
-    "goToInbox": "Go to Inbox",
-    "goToMail": "Go to Mail",
-    "goToContacts": "Go to Contacts",
-    "goToCalendar": "Go to Calendar",
-    "goToSettings": "Go to Settings",
-    "searchInMail": "Search mail for \"{query}\""
+    "openCommandPalette": "Naciśnij Cmd+K, aby otworzyć paletę poleceń",
+    "placeholder": "Szukaj e-maili, kontaktów, kalendarza…",
+    "navigate": "Szybka nawigacja",
+    "results": "Wyniki wyszukiwania",
+    "noResults": "Nie znaleziono wyników.",
+    "goToInbox": "Przejdź do skrzynki odbiorczej",
+    "goToMail": "Przejdź do poczty",
+    "goToContacts": "Przejdź do kontaktów",
+    "goToCalendar": "Przejdź do kalendarza",
+    "goToSettings": "Przejdź do ustawień",
+    "searchInMail": "Szukaj w poczcie „{query}”"
   }
 }

@@ -1,53 +1,53 @@
 {
     "MATRIX": {
         "title": {
-            "string": "Matrix Chat Integration"
+            "string": "Integracja czatu Matrix"
         },
         "description": {
-            "string": "Embedded Matrix rooms, messaging, and SOGo user linking"
+            "string": "Osadzone pokoje Matrix, wiadomości i powiązanie użytkowników SOGo"
         },
         "errors": {
             "name": {
-                "string": "Name required"
+                "string": "Nazwa jest wymagana"
             },
             "fail": {
-                "string": "Operation failed"
+                "string": "Operacja nie powiodła się"
             }
         },
         "success": {
             "config": {
-                "string": "Configuration saved"
+                "string": "Konfiguracja została zapisana"
             },
             "room": {
-                "string": "Room created"
+                "string": "Utworzono pokój"
             }
         },
         "config": {
             "title": {
-                "string": "Server Config"
+                "string": "Konfiguracja serwera"
             },
             "enabled": {
                 "string": "Włączone"
             },
             "bridge": {
-                "string": "Bridge"
+                "string": "Most"
             }
         },
         "rooms": {
             "title": {
-                "string": "Chat Rooms"
+                "string": "Pokoje czatu"
             },
             "name": {
                 "placeholder": {
-                    "string": "Room name..."
+                    "string": "Nazwa pokoju..."
                 }
             },
             "visibility": {
                 "private": {
-                    "string": "Private"
+                    "string": "Prywatny"
                 },
                 "public": {
-                    "string": "Public"
+                    "string": "Publiczny"
                 }
             }
         },
@@ -56,15 +56,15 @@
                 "string": "Zapisz"
             },
             "create": {
-                "string": "Create Room"
+                "string": "Utwórz pokój"
             }
         },
         "links": {
             "title": {
-                "string": "User Links"
+                "string": "Powiązania użytkownika"
             },
             "empty": {
-                "string": "No linked users"
+                "string": "Brak powiązanych użytkowników"
             }
         }
     }

@@ -1,26 +1,26 @@
 {
   "IDENTITY_COMPONENT": {
     "labels": {
-      "name": "Identity Name",
-      "email": "Email Address",
-      "replyTo": "Reply To",
-      "newIdentity": "New Identity",
-      "default": "Default",
-      "removeIdentity": "Remove Identity",
-      "atLeastOneIdentity": "At least one identity is required",
+      "name": "Nazwa tożsamości",
+      "email": "Adres e-mail",
+      "replyTo": "Reply-To",
+      "newIdentity": "Nowa tożsamość",
+      "default": "Domyślny",
+      "removeIdentity": "Usuń tożsamość",
+      "atLeastOneIdentity": "Wymagana jest co najmniej jedna tożsamość",
       "useDefaultIdentity": {
         "string": "Użyj jako domyślnej tożsamości"
       },
-      "setAsDefault": "Set as default",
-      "defaultDescription": "This identity will be used by default when composing new messages",
-      "mainIdentityEmail": "This is your main email address and cannot be changed",
-      "nameNotEditable": "Name editing is disabled by administrator",
-      "replyToNotEditable": "Reply-To editing is disabled by administrator",
-      "signatures": "Signatures",
-      "signaturesDescription": "Create and manage email signatures for this identity",
-      "signaturePlaceholder": "Enter signature name",
-      "addIdentity": "Add an identity",
-      "allowsCustom": "You can add and manage additional identities"
+      "setAsDefault": "Ustaw jako domyślną",
+      "defaultDescription": "Ta tożsamość będzie domyślnie używana podczas tworzenia nowych wiadomości",
+      "mainIdentityEmail": "To jest Twój główny adres e-mail i nie można go zmienić",
+      "nameNotEditable": "Edytowanie nazwy jest wyłączone przez administratora",
+      "replyToNotEditable": "Edytowanie pola Reply-To jest wyłączone przez administratora",
+      "signatures": "Podpisy",
+      "signaturesDescription": "Twórz i zarządzaj podpisami e-mail dla tej tożsamości",
+      "signaturePlaceholder": "Wprowadź nazwę podpisu",
+      "addIdentity": "Dodaj tożsamość",
+      "allowsCustom": "Możesz dodawać dodatkowe tożsamości i zarządzać nimi"
     },
     "description": {
       "useDefaultIdentity": {
@@ -28,10 +28,10 @@
       }
     },
     "accessibility": {
-      "toggleCollapse": "Toggle identity details",
-      "expandIdentity": "Expand",
-      "collapseIdentity": "Collapse",
-      "removeIcon": "Remove identity button"
+      "toggleCollapse": "Przełącz szczegóły tożsamości",
+      "expandIdentity": "Rozwiń",
+      "collapseIdentity": "Zwiń",
+      "removeIcon": "Przycisk usuwania tożsamości"
     }
   }
 }

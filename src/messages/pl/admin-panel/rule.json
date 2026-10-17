@@ -1,31 +1,31 @@
 {
     "ADMIN_PANNEL_RULE": {
         "title": {
-            "string": "Rules"
+            "string": "Reguły"
         },
         "filter_placeholder": {
-            "string": "Filter rules..."
+            "string": "Reguły filtrowania..."
         },
         "add_new_rule": {
-            "string": "Add new rule"
+            "string": "Dodaj nową regułę"
         },
         "select_all": {
-            "string": "Select all"
+            "string": "Zaznacz wszystko"
         },
         "select_row": {
-            "string": "Select row"
+            "string": "Wybierz wiersz"
         },
         "domain": {
             "string": "Domena"
         },
         "open_menu": {
-            "string": "Open menu"
+            "string": "Otwórz menu"
         },
         "actions": {
-            "string": "Actions"
+            "string": "Akcje"
         },
         "copy_domain": {
-            "string": "Copy domain name"
+            "string": "Skopiuj nazwę domeny"
         },
         "edit": {
             "string": "Edytuj"
@@ -36,34 +36,34 @@
     },
     "AP_RULES": {
         "title": {
-            "string": "Rules"
+            "string": "Reguły"
         },
         "description": {
-            "string": "Manage configuration rules for domains"
+            "string": "Zarządzaj regułami konfiguracji dla domen"
         },
         "search": {
             "placeholder": {
-                "string": "Search rules..."
+                "string": "Szukaj reguł..."
             }
         },
         "create": {
             "button": {
-                "string": "New Rule"
+                "string": "Nowa reguła"
             },
             "title": {
-                "string": "Create Rule"
+                "string": "Utwórz regułę"
             },
             "description": {
-                "string": "Add a new configuration rule"
+                "string": "Dodaj nową regułę konfiguracji"
             },
             "success": {
-                "string": "Rule created successfully"
+                "string": "Reguła została pomyślnie utworzona"
             },
             "error": {
-                "string": "Failed to create rule"
+                "string": "Nie udało się utworzyć reguły"
             },
             "name_required": {
-                "string": "Rule name is required"
+                "string": "Nazwa reguły jest wymagana"
             }
         },
         "edit": {
@@ -71,19 +71,19 @@
                 "string": "Edytuj"
             },
             "title": {
-                "string": "Edit Rule"
+                "string": "Edytuj regułę"
             },
             "description": {
-                "string": "Update rule: {name}"
+                "string": "Zaktualizuj regułę: {name}"
             },
             "save": {
-                "string": "Save Changes"
+                "string": "Zapisz zmiany"
             },
             "success": {
-                "string": "Rule updated successfully"
+                "string": "Reguła została pomyślnie zaktualizowana"
             },
             "error": {
-                "string": "Failed to update rule"
+                "string": "Nie udało się zaktualizować reguły"
             }
         },
         "delete": {
@@ -91,39 +91,39 @@
                 "string": "Usuń"
             },
             "title": {
-                "string": "Delete Rule"
+                "string": "Usuń regułę"
             },
             "confirm": {
-                "string": "Are you sure you want to delete rule \"{name}\"?"
+                "string": "Czy na pewno chcesz usunąć regułę „{name}”?"
             },
             "success": {
-                "string": "Rule deleted successfully"
+                "string": "Reguła została pomyślnie usunięta"
             },
             "error": {
-                "string": "Failed to delete rule"
+                "string": "Nie udało się usunąć reguły"
             }
         },
         "form": {
             "name": {
-                "string": "Rule Name"
+                "string": "Nazwa reguły"
             },
             "name_placeholder": {
-                "string": "e.g. French LDAP Rules"
+                "string": "np. Francuskie reguły LDAP"
             },
             "description": {
                 "string": "Opis"
             },
             "description_placeholder": {
-                "string": "Optional description of this rule"
+                "string": "Opcjonalny opis tej reguły"
             },
             "domains": {
-                "string": "Affected Domains"
+                "string": "Dotyczy domen"
             },
             "domains_placeholder": {
                 "string": "example.org, domain2.org"
             },
             "domains_hint": {
-                "string": "Comma-separated list of domain names. Leave empty for all domains."
+                "string": "Rozdzielona przecinkami lista nazw domen. Pozostaw puste dla wszystkich domen."
             }
         },
         "table": {
@@ -134,14 +134,14 @@
                 "string": "Nazwa"
             },
             "actions": {
-                "string": "Actions"
+                "string": "Akcje"
             }
         },
         "no_rules": {
-            "string": "No rules configured yet"
+            "string": "Brak skonfigurowanych reguł"
         },
         "no_results": {
-            "string": "No rules match your search"
+            "string": "Żadne reguły nie pasują do wyszukiwania"
         }
     }
 }

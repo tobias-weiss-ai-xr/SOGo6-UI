@@ -60,54 +60,54 @@
         },
         "status": {
             "needs_action": {
-                "string": "To do"
+                "string": "Do zrobienia"
             },
             "in_process": {
-                "string": "In progress"
+                "string": "W toku"
             },
             "completed": {
-                "string": "Completed"
+                "string": "Ukończone"
             },
             "cancelled": {
-                "string": "Cancelled"
+                "string": "Odwołane"
             }
         },
         "form": {
             "create_title": {
-                "string": "New task"
+                "string": "Nowe zadanie"
             },
             "edit_title": {
-                "string": "Edit task"
+                "string": "Edytuj zadanie"
             },
             "title": {
-                "string": "Title"
+                "string": "Tytuł"
             },
             "description": {
                 "string": "Opis"
             },
             "due": {
-                "string": "Due date"
+                "string": "Termin wykonania"
             },
             "date_start": {
-                "string": "Start date"
+                "string": "Data rozpoczęcia"
             },
             "status": {
                 "string": "Status"
             },
             "priority": {
-                "string": "Priority"
+                "string": "Priorytet"
             },
             "percent_complete": {
-                "string": "Progress"
+                "string": "Postęp"
             },
             "calendar": {
                 "string": "Kalendarz"
             },
             "categories": {
-                "string": "Categories"
+                "string": "Kategorie"
             },
             "visibility": {
-                "string": "Visibility"
+                "string": "Widoczność"
             },
             "save": {
                 "string": "Zapisz"
@@ -116,11 +116,11 @@
                 "string": "Anuluj"
             },
             "calendar_required": {
-                "string": "Select a calendar"
+                "string": "Wybierz kalendarz"
             },
             "errors": {
                 "date_order": {
-                    "string": "Due date must be on or after the start date."
+                    "string": "Termin wykonania musi przypadać w dacie rozpoczęcia lub po niej."
                 }
             }
         },
@@ -134,10 +134,10 @@
         },
         "delete_dialog": {
             "title": {
-                "string": "Delete task?"
+                "string": "Usunąć zadanie?"
             },
             "description": {
-                "string": "This action cannot be undone."
+                "string": "Tej operacji nie można cofnąć."
             },
             "confirm": {
                 "string": "Usuń"
@@ -148,23 +148,23 @@
         },
         "selection": {
             "enter": {
-                "string": "Select tasks"
+                "string": "Wybierz zadania"
             },
             "cancel": {
                 "string": "Anuluj"
             },
             "select_all": {
-                "string": "Select all tasks"
+                "string": "Zaznacz wszystkie zadania"
             },
             "count": {
-                "string": "{count, plural, one {# selected} other {# selected}}"
+                "string": "{count, plural, one {# wybrany} few {# wybrane} many {# wybranych} other {# wybranego}}"
             },
             "actions": {
                 "complete": {
-                    "string": "Complete"
+                    "string": "Ukończ"
                 },
                 "reopen": {
-                    "string": "Reopen"
+                    "string": "Otwórz ponownie"
                 },
                 "delete": {
                     "string": "Usuń"
@@ -172,10 +172,10 @@
             },
             "delete_dialog": {
                 "title": {
-                    "string": "Delete selected tasks?"
+                    "string": "Usunąć wybrane zadania?"
                 },
                 "description": {
-                    "string": "You are about to delete {count, plural, one {# task} other {# tasks}}. This action cannot be undone."
+                    "string": "Zamierzasz usunąć {count, plural, one {# zadanie} few {# zadania} many {# zadań} other {# zadania}}. Tej operacji nie można cofnąć."
                 },
                 "confirm": {
                     "string": "Usuń"
@@ -188,30 +188,30 @@
         "sidebar": {
             "smart_views": {
                 "title": {
-                    "string": "Smart views"
+                    "string": "Inteligentne widoki"
                 },
                 "all": {
-                    "string": "All tasks"
+                    "string": "Wszystkie zadania"
                 },
                 "today": {
                     "string": "Dziś"
                 },
                 "upcoming": {
-                    "string": "Upcoming"
+                    "string": "Nadchodzące"
                 },
                 "overdue": {
-                    "string": "Overdue"
+                    "string": "Zaległe"
                 },
                 "completed": {
-                    "string": "Completed"
+                    "string": "Ukończone"
                 }
             },
             "calendars": {
                 "title": {
-                    "string": "Calendars"
+                    "string": "Kalendarze"
                 },
                 "all": {
-                    "string": "All calendars"
+                    "string": "Wszystkie kalendarze"
                 }
             }
         },
@@ -220,13 +220,13 @@
                 "string": "Zadania"
             },
             "view_all": {
-                "string": "View all tasks"
+                "string": "Zobacz wszystkie zadania"
             },
             "empty": {
-                "string": "No pending tasks"
+                "string": "Brak zadań oczekujących"
             },
             "loading": {
-                "string": "Loading tasks…"
+                "string": "Wczytywanie zadań…"
             }
         }
     }

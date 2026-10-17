@@ -1,56 +1,56 @@
 {
     "AP_FILESHARE": {
         "title": {
-            "string": "File Sharing"
+            "string": "Udostępnianie plików"
         },
         "description": {
-            "string": "Create shareable links for files with optional password protection, expiration, and download tracking."
+            "string": "Twórz udostępniane linki do plików z opcjonalną ochroną hasłem, wygasaniem i śledzeniem pobrań."
         },
         "form": {
             "share": {
-                "string": "Share File"
+                "string": "Udostępnij plik"
             },
             "cancel": {
                 "string": "Anuluj"
             },
             "title": {
-                "string": "Share a File"
+                "string": "Udostępnij plik"
             },
             "filename": {
-                "string": "Filename"
+                "string": "Nazwa pliku"
             },
             "size": {
-                "string": "Size (bytes)"
+                "string": "Rozmiar (bajty)"
             },
             "expires": {
-                "string": "Expires in (days)"
+                "string": "Wygasa po (dniach)"
             },
             "password": {
-                "string": "Password"
+                "string": "Hasło"
             },
             "password_hint": {
-                "string": "Leave empty for no password"
+                "string": "Pozostaw puste, aby nie ustawiać hasła"
             },
             "submit": {
-                "string": "Create Share Link"
+                "string": "Utwórz link udostępniania"
             }
         },
         "create": {
             "success": {
-                "string": "Share link created"
+                "string": "Utworzono link udostępniania"
             },
             "error": {
-                "string": "Failed to create share"
+                "string": "Nie udało się utworzyć udostępnienia"
             }
         },
         "list": {
             "empty": {
-                "string": "No shared files. Create a share link to securely distribute files."
+                "string": "Brak udostępnionych plików. Utwórz link udostępniania, aby bezpiecznie rozpowszechniać pliki."
             }
         },
         "errors": {
             "fields": {
-                "string": "Filename and size are required"
+                "string": "Nazwa pliku i rozmiar są wymagane"
             }
         }
     }

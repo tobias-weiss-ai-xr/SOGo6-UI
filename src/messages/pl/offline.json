@@ -1,17 +1,17 @@
 {
   "Login": {
-    "offlineNotice": "You are currently offline. Some features may be limited."
+    "offlineNotice": "Jesteś obecnie offline. Niektóre funkcje mogą być ograniczone."
   },
   "PWA": {
     "installPrompt": {
-      "title": "Install SOGo",
-      "description": "Add SOGo to your home screen for quick access, even offline.",
-      "install": "Install",
-      "dismiss": "Not now"
+      "title": "Zainstaluj SOGo",
+      "description": "Dodaj SOGo do ekranu głównego, aby mieć szybki dostęp nawet w trybie offline.",
+      "install": "Zainstaluj",
+      "dismiss": "Nie teraz"
     },
     "offlineBanner": {
-      "label": "You are offline. Some features may not work."
+      "label": "Jesteś offline. Niektóre funkcje mogą nie działać."
     },
-    "featureUnavailable": "{feature} is not available while offline."
+    "featureUnavailable": "{feature} nie jest dostępne w trybie offline."
   }
 }

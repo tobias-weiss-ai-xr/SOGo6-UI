@@ -1,38 +1,38 @@
 {
     "FORM_PROFILE": {
-        "title": "Profile",
-        "description": "Manage your profile information and settings.",
+        "title": "Profil",
+        "description": "Zarządzaj informacjami i ustawieniami swojego profilu.",
         "sections": {
-            "basicInfo": "Basic Information",
-            "identities": "Identities"
+            "basicInfo": "Informacje podstawowe",
+            "identities": "Tożsamości"
         },
         "firstname": {
-            "string": "First Name",
+            "string": "Imię",
             "description": "Label for the first name input field."
         },
         "lastname": {
-            "string": "Last Name",
+            "string": "Nazwisko",
             "description": "Label for the last name input field."
         },
         "basicInfo": {
-            "title": "Basic Information",
-            "uid": "User ID",
-            "email": "Email",
-            "fullName": "Name",
-            "aliases": "Email Aliases"
+            "title": "Informacje podstawowe",
+            "uid": "Identyfikator użytkownika",
+            "email": "E-mail",
+            "fullName": "Nazwa",
+            "aliases": "Aliasy e-mail"
         },
         "extraInfo": {
-            "title": "Extra Information",
-            "company": "Company",
-            "team": "Team"
+            "title": "Informacje dodatkowe",
+            "company": "Firma",
+            "team": "Zespół"
         },
         "profilePictureSource": {
-            "title": "Profile Picture",
-            "description": "Choose how your profile picture is displayed. You can upload a custom image, use your Gravatar, Libravatar or use the default avatar.",
-            "useDefault": "Default",
+            "title": "Zdjęcie profilowe",
+            "description": "Wybierz sposób wyświetlania zdjęcia profilowego. Możesz przesłać własny obraz, użyć Gravatar, Libravatar lub domyślnego awatara.",
+            "useDefault": "Domyślny",
             "useGravatar": "Gravatar",
             "useLibravatar": "Libravatar",
-            "useCustom": "Custom"
+            "useCustom": "Niestandardowe"
         },
         "identities": {},
         "api": {
@@ -43,10 +43,10 @@
                 "string": "Ładowanie"
             },
             "load_failed": {
-                "string": "Failed to load profile. Please try again later."
+                "string": "Nie udało się wczytać profilu. Spróbuj ponownie później."
             },
             "update_failed": {
-                "string": "Failed to update profile. Please try again."
+                "string": "Nie udało się zaktualizować profilu. Spróbuj ponownie."
             }
         }
     }
