@@ -8,61 +8,61 @@
     },
     "export": {
       "title": {
-        "string": "Current Configuration"
+        "string": "Aktuelle Konfiguration"
       },
       "copy": {
-        "string": "Copy"
+        "string": "Kopieren"
       },
       "copied": {
-        "string": "Copied!"
+        "string": "Kopiert!"
       },
       "download": {
-        "string": "Download JSON"
+        "string": "JSON herunterladen"
       },
       "success": {
-        "string": "Downloaded"
+        "string": "Heruntergeladen"
       }
     },
     "import": {
       "title": {
-        "string": "Import Configuration"
+        "string": "Konfiguration importieren"
       },
       "description_label": {
-        "string": "Description"
+        "string": "Beschreibung"
       },
       "description_placeholder": {
-        "string": "e.g. Update mail server settings"
+        "string": "z. B. Mailserver-Einstellungen aktualisieren"
       },
       "placeholder": {
-        "string": "Paste JSON configuration here..."
+        "string": "JSON-Konfiguration hier einfügen..."
       },
       "button": {
-        "string": "Apply Configuration"
+        "string": "Konfiguration anwenden"
       },
       "running": {
-        "string": "Applying..."
+        "string": "Wird angewendet..."
       },
       "success": {
-        "string": "Configuration v{{version}} applied"
+        "string": "Konfiguration v{{version}} angewendet"
       },
       "error": {
-        "string": "Import failed"
+        "string": "Import fehlgeschlagen"
       }
     },
     "history": {
       "title": {
-        "string": "Version History"
+        "string": "Versionsverlauf"
       },
       "empty": {
-        "string": "No configuration snapshots yet."
+        "string": "Noch keine Konfigurations-Snapshots vorhanden."
       }
     },
     "errors": {
       "empty": {
-        "string": "Configuration JSON is empty"
+        "string": "Die JSON-Konfiguration ist leer"
       },
       "parse": {
-        "string": "Invalid JSON — please check syntax"
+        "string": "Ungültiges JSON — bitte Syntax prüfen"
       }
     }
   }

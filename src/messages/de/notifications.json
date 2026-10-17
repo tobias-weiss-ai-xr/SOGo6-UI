@@ -727,15 +727,15 @@
       },
       "error": {
         "string": "Während des Vorgangs ist ein Fehler aufgetreten.",
-        "developer_comment": "Advise the user that there was an error while processing their request."
+        "developer_comment": "Weist den Benutzer darauf hin, dass bei der Verarbeitung seiner Anfrage ein Fehler aufgetreten ist."
       },
       "warning": {
         "string": "Bitte überprüfen Sie die Details und fahren Sie mit Vorsicht fort.",
-        "developer_comment": "This is a warning message to alert the user."
+        "developer_comment": "Dies ist eine Warnmeldung, die den Benutzer aufmerksam machen soll."
       },
       "info": {
         "string": "Dies ist eine informelle Meldung.",
-        "developer_comment": "This message provides information to the user."
+        "developer_comment": "Diese Meldung stellt dem Benutzer Informationen bereit."
       }
     },
     "mail_send": {

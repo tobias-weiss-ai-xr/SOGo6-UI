@@ -4,37 +4,37 @@
       "string": "Verfügbarkeitsabfrage"
     },
     "description": {
-      "string": "Visual attendee schedule overlay. Check availability when creating events."
+      "string": "Visuelle Verfügbarkeitsübersicht der Teilnehmer. Prüfen Sie die Verfügbarkeit beim Erstellen von Terminen."
     },
     "form": {
       "title": {
-        "string": "Check Availability"
+        "string": "Verfügbarkeit prüfen"
       },
       "participants": {
-        "string": "Participants"
+        "string": "Teilnehmer"
       },
       "start": {
         "string": "Start"
       },
       "end": {
-        "string": "End"
+        "string": "Ende"
       },
       "lookup": {
-        "string": "Look Up"
+        "string": "Abfragen"
       }
     },
     "results": {
       "title": {
-        "string": "Busy Slots"
+        "string": "Belegte Zeitfenster"
       }
     },
     "errors": {
       "fields": {
-        "string": "At least one participant is required"
+        "string": "Mindestens ein Teilnehmer ist erforderlich"
       }
     },
     "error": {
-      "string": "Lookup failed"
+      "string": "Abfrage fehlgeschlagen"
     }
   }
 }
