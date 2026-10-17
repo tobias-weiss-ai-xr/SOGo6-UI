@@ -1,69 +1,69 @@
 {
-    "AP_CFGCODE": {
-        "title": {
-            "string": "Configuration as Code"
-        },
-        "description": {
-            "string": "Export, version, and import system configuration as JSON for GitOps workflows."
-        },
-        "export": {
-            "title": {
-                "string": "Current Configuration"
-            },
-            "copy": {
-                "string": "Αντιγραφή"
-            },
-            "copied": {
-                "string": "Copied!"
-            },
-            "download": {
-                "string": "Download JSON"
-            },
-            "success": {
-                "string": "Downloaded"
-            }
-        },
-        "import": {
-            "title": {
-                "string": "Import Configuration"
-            },
-            "description_label": {
-                "string": "Περιγραφή"
-            },
-            "description_placeholder": {
-                "string": "e.g. Update mail server settings"
-            },
-            "placeholder": {
-                "string": "Paste JSON configuration here..."
-            },
-            "button": {
-                "string": "Apply Configuration"
-            },
-            "running": {
-                "string": "Applying..."
-            },
-            "success": {
-                "string": "Configuration v{{version}} applied"
-            },
-            "error": {
-                "string": "Import failed"
-            }
-        },
-        "history": {
-            "title": {
-                "string": "Version History"
-            },
-            "empty": {
-                "string": "No configuration snapshots yet."
-            }
-        },
-        "errors": {
-            "empty": {
-                "string": "Configuration JSON is empty"
-            },
-            "parse": {
-                "string": "Invalid JSON — please check syntax"
-            }
-        }
+  "AP_CFGCODE": {
+    "title": {
+      "string": "Ρυθμίσεις ως Κώδικας"
+    },
+    "description": {
+      "string": "Εξαγωγή, εκδόσεις και εισαγωγή ρυθμίσεων συστήματος ως JSON για ροές εργασίας GitOps."
+    },
+    "export": {
+      "title": {
+        "string": "Τρέχουσες Ρυθμίσεις"
+      },
+      "copy": {
+        "string": "Αντιγραφή"
+      },
+      "copied": {
+        "string": "Αντιγράφηκε!"
+      },
+      "download": {
+        "string": "Λήψη JSON"
+      },
+      "success": {
+        "string": "Λήφθηκε"
+      }
+    },
+    "import": {
+      "title": {
+        "string": "Εισαγωγή Ρυθμίσεων"
+      },
+      "description_label": {
+        "string": "Περιγραφή"
+      },
+      "description_placeholder": {
+        "string": "π.χ. Ενημέρωση ρυθμίσεων διακομιστή αλληλογραφίας"
+      },
+      "placeholder": {
+        "string": "Επικολλήστε εδώ τις ρυθμίσεις JSON..."
+      },
+      "button": {
+        "string": "Εφαρμογή Ρυθμίσεων"
+      },
+      "running": {
+        "string": "Εφαρμογή..."
+      },
+      "success": {
+        "string": "Οι ρυθμίσεις v{{version}} εφαρμόστηκαν"
+      },
+      "error": {
+        "string": "Η εισαγωγή απέτυχε"
+      }
+    },
+    "history": {
+      "title": {
+        "string": "Ιστορικό Εκδόσεων"
+      },
+      "empty": {
+        "string": "Δεν υπάρχουν στιγμιότυπα ρυθμίσεων ακόμα."
+      }
+    },
+    "errors": {
+      "empty": {
+        "string": "Το JSON των ρυθμίσεων είναι κενό"
+      },
+      "parse": {
+        "string": "Μη έγκυρο JSON — παρακαλώ ελέγξτε τη σύνταξη"
+      }
     }
+  }
 }

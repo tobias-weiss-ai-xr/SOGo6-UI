@@ -17,21 +17,21 @@
       }
     },
     "notification": {
-      "title": "Notifications",
+      "title": "Ειδοποιήσεις",
       "string": "Αποστολή ειδοποίησης μέσω email όταν δημιουργείται ένα βιβλίο διευθύνσεων",
       "context": "Label for the notification setting"
     },
     "categories": {
-      "title": "Categories",
-      "Work": "Work",
-      "Family": "Family",
-      "Friends": "Friends"
+      "title": "Κατηγορίες",
+      "Work": "Εργασία",
+      "Family": "Οικογένεια",
+      "Friends": "Φίλοι"
     },
     "color": {
       "title": "Couleur"
     },
     "validation": {
-      "category-name-required": "Category name is required"
+      "category-name-required": "Το όνομα κατηγορίας είναι υποχρεωτικό"
     }
   }
 }

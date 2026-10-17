@@ -1,116 +1,116 @@
 {
-    "US_MAIL_FORWARD": {
-        "title": {
-            "string": "Mail Forward"
+  "US_MAIL_FORWARD": {
+    "title": {
+      "string": "Προώθηση Email"
+    },
+    "page": {
+      "description": {
+        "string": "Αυτόματη προώθηση εισερχόμενων μηνυμάτων σε μία ή περισσότερες διευθύνσεις email."
+      }
+    },
+    "labels": {
+      "transfer_incoming": {
+        "string": "Μεταφορά εισερχόμενων μηνυμάτων"
+      },
+      "email": {
+        "string": "Διεύθυνση email"
+      },
+      "always_forward": {
+        "string": "Πάντα προώθηση"
+      },
+      "keep_copy": {
+        "string": "Διατήρηση αντιγράφου στα Εισερχόμενα"
+      }
+    },
+    "description": {
+      "transfer_incoming": {
+        "string": "Αυτόματη προώθηση νέων μηνυμάτων σε άλλη διεύθυνση email"
+      },
+      "email": {
+        "string": "Προώθηση σε αυτές τις διευθύνσεις (έως {max} διευθύνσεις). Προσθέστε πολλαπλές διευθύνσεις διαχωρισμένες με κόμμα, ερωτηματικό ή πατήστε Enter/Tab."
+      }
+    },
+    "help": {
+      "email": {
+        "string": "Θα προωθούμε τα νέα μηνύματα σε αυτές τις διευθύνσεις"
+      }
+    },
+    "placeholders": {
+      "email": {
+        "string": "Προσθέστε διεύθυνση email και πατήστε Enter"
+      }
+    },
+    "errors": {
+      "email": {
+        "invalid": {
+          "string": "Παρακαλώ εισάγετε μια έγκυρη διεύθυνση email"
         },
-        "page": {
-            "description": {
-                "string": "Automatically forward incoming messages to one or more email addresses."
-            }
-        },
-        "labels": {
-            "transfer_incoming": {
-                "string": "Transfer incoming messages"
-            },
-            "email": {
-                "string": "Email address"
-            },
-            "always_forward": {
-                "string": "Always forward"
-            },
-            "keep_copy": {
-                "string": "Keep a copy in this inbox"
-            }
-        },
-        "description": {
-            "transfer_incoming": {
-                "string": "Automatically forward new messages to another email address"
-            },
-            "email": {
-                "string": "Forward to these addresses (up to {max} addresses). Add multiple addresses separated by comma, semicolon, or press Enter/Tab."
-            }
-        },
-        "help": {
-            "email": {
-                "string": "We'll forward new messages to these addresses"
-            }
-        },
-        "placeholders": {
-            "email": {
-                "string": "Add email address and press Enter"
-            }
-        },
-        "errors": {
-            "email": {
-                "invalid": {
-                    "string": "Please enter a valid email address"
-                },
-                "duplicate": {
-                    "string": "This address is already in the list"
-                }
-            },
-            "emails": {
-                "list": {
-                    "string": "There was an error with one or more email addresses"
-                }
-            },
-            "max_reached": {
-                "string": "Maximum {max} addresses allowed"
-            },
-            "validation": {
-                "addresses_required": {
-                    "string": "At least one email address is required when forwarding is enabled."
-                }
-            }
-        },
-        "hints": {
-            "blur": {
-                "string": "Press Enter to add this address"
-            }
-        },
-        "tooltip": {
-            "always_forward": {
-                "string": "Incoming mail is forwarded before applying your filters."
-            },
-            "keep_copy": {
-                "string": "Keep a copy of forwarded messages in your inbox. Useful if you want to maintain a local archive."
-            }
-        },
-        "errors_api": {
-            "title": {
-                "string": "Σφάλμα"
-            },
-            "save_failed": {
-                "string": "Couldn't save your changes, try again"
-            },
-            "load_failed": {
-                "string": "Could not load forwarding settings. Please try again later."
-            },
-            "feature_disabled": {
-                "string": "Mail forwarding has been disabled by your administrator."
-            }
-        },
-        "status": {
-            "enabled": {
-                "string": "Ενεργοποιημένο"
-            },
-            "disabled": {
-                "string": "Απενεργοποιημένο"
-            }
-        },
-        "aria": {
-            "tags_count": {
-                "string": "{count} of {max} email addresses added"
-            },
-            "remove_email": {
-                "string": "Remove {email}"
-            },
-            "email_input_group": {
-                "string": "Email addresses for forwarding"
-            },
-            "toggle_forwarding": {
-                "string": "Toggle email forwarding"
-            }
+        "duplicate": {
+          "string": "Αυτή η διεύθυνση βρίσκεται ήδη στη λίστα"
         }
+      },
+      "emails": {
+        "list": {
+          "string": "Υπήρξε σφάλμα με μία ή περισσότερες διευθύνσεις email"
+        }
+      },
+      "max_reached": {
+        "string": "Επιτρέπονται το πολύ {max} διευθύνσεις"
+      },
+      "validation": {
+        "addresses_required": {
+          "string": "Απαιτείται τουλάχιστον μία διεύθυνση email όταν η προώθηση είναι ενεργοποιημένη."
+        }
+      }
+    },
+    "hints": {
+      "blur": {
+        "string": "Πατήστε Enter για να προσθέσετε αυτή τη διεύθυνση"
+      }
+    },
+    "tooltip": {
+      "always_forward": {
+        "string": "Τα εισερχόμενα email προωθούνται πριν από την εφαρμογή των φίλτρων σας."
+      },
+      "keep_copy": {
+        "string": "Διατήρηση αντιγράφου των προωθημένων μηνυμάτων στα Εισερχόμενά σας. Χρήσιμο αν θέλετε να διατηρείτε τοπικό αρχείο."
+      }
+    },
+    "errors_api": {
+      "title": {
+        "string": "Σφάλμα"
+      },
+      "save_failed": {
+        "string": "Δεν ήταν δυνατή η αποθήκευση των αλλαγών σας, δοκιμάστε ξανά"
+      },
+      "load_failed": {
+        "string": "Δεν ήταν δυνατή η φόρτωση των ρυθμίσεων προώθησης. Παρακαλώ δοκιμάστε ξανά αργότερα."
+      },
+      "feature_disabled": {
+        "string": "Η προώθηση email έχει απενεργοποιηθεί από τον διαχειριστή σας."
+      }
+    },
+    "status": {
+      "enabled": {
+        "string": "Ενεργοποιημένο"
+      },
+      "disabled": {
+        "string": "Απενεργοποιημένο"
+      }
+    },
+    "aria": {
+      "tags_count": {
+        "string": "Προστέθηκαν {count} από τις {max} διευθύνσεις email"
+      },
+      "remove_email": {
+        "string": "Αφαίρεση {email}"
+      },
+      "email_input_group": {
+        "string": "Διευθύνσεις email για προώθηση"
+      },
+      "toggle_forwarding": {
+        "string": "Εναλλαγή προώθησης email"
+      }
     }
+  }
 }

@@ -1,980 +1,980 @@
 {
-    "CALENDARS": {
+  "CALENDARS": {
+    "loading": {
+      "string": "Φόρτωση..."
+    },
+    "attendance": {
+      "accepted": {
+        "string": "Αποδοχή"
+      },
+      "declined": {
+        "string": "Απόρριψη"
+      },
+      "tentative": {
+        "string": "Ίσως"
+      },
+      "delegated": {
+        "string": "Αντιπρόσωπος"
+      },
+      "success": {
+        "accepted": {
+          "string": "Αποδεχτήκατε αυτό το γεγονός"
+        },
+        "declined": {
+          "string": "Απορρίψατε αυτό το γεγονός"
+        },
+        "tentative": {
+          "string": "Σημειώθηκε ως «ίσως»"
+        }
+      },
+      "error": {
+        "string": {
+          "string": "Αποτυχία ενημέρωσης της συμμετοχής σας"
+        }
+      }
+    },
+    "recurrenceScope": {
+      "editTitle": {
+        "string": "Επεξεργασία επαναλαμβανόμενου γεγονότος"
+      },
+      "deleteTitle": {
+        "string": "Διαγραφή επαναλαμβανόμενου γεγονότος"
+      },
+      "description": {
+        "string": "Ποια γεγονότα θέλετε να τροποποιήσετε;"
+      },
+      "ONE": {
+        "string": "Μόνο αυτό το γεγονός"
+      },
+      "THISANDFUTURE": {
+        "string": "Αυτό και τα επόμενα γεγονότα"
+      },
+      "ALL": {
+        "string": "Όλα τα γεγονότα"
+      },
+      "cancel": {
+        "string": "Ακύρωση"
+      }
+    },
+    "toolbar": {
+      "previous": {
+        "string": "Προηγούμενο"
+      },
+      "today": {
+        "string": "Σήμερα"
+      },
+      "next": {
+        "string": "Επόμενο"
+      },
+      "pickDate": {
+        "string": "Επιλέξτε ημερομηνία"
+      },
+      "search": {
+        "string": "Αναζήτηση γεγονότων...",
+        "no_results": {
+          "string": "Δεν βρέθηκαν γεγονότα"
+        },
         "loading": {
-            "string": "Φόρτωση..."
+          "string": "Αναζήτηση..."
+        }
+      },
+      "selectView": {
+        "string": "Επιλογή προβολής"
+      },
+      "views": {
+        "month": {
+          "string": "Μήνας"
         },
-        "attendance": {
-            "accepted": {
-                "string": "Accept"
-            },
-            "declined": {
-                "string": "Decline"
-            },
-            "tentative": {
-                "string": "Maybe"
-            },
-            "delegated": {
-                "string": "Delegate"
-            },
-            "success": {
-                "accepted": {
-                    "string": "You accepted this event"
-                },
-                "declined": {
-                    "string": "You declined this event"
-                },
-                "tentative": {
-                    "string": "Marked as maybe"
-                }
-            },
-            "error": {
-                "string": {
-                    "string": "Failed to update your attendance"
-                }
-            }
+        "week": {
+          "string": "Εβδομάδα"
         },
-        "recurrenceScope": {
-            "editTitle": {
-                "string": "Edit recurring event"
-            },
-            "deleteTitle": {
-                "string": "Delete recurring event"
-            },
-            "description": {
-                "string": "Which events do you want to modify?"
-            },
-            "ONE": {
-                "string": "This event only"
-            },
-            "THISANDFUTURE": {
-                "string": "This and following events"
-            },
-            "ALL": {
-                "string": "All events"
-            },
-            "cancel": {
-                "string": "Ακύρωση"
-            }
-        },
-        "toolbar": {
-            "previous": {
-                "string": "Προηγούμενο"
-            },
-            "today": {
-                "string": "Σήμερα"
-            },
-            "next": {
-                "string": "Επόμενο"
-            },
-            "pickDate": {
-                "string": "Pick a date"
-            },
-            "search": {
-                "string": "Search events...",
-                "no_results": {
-                    "string": "No events found"
-                },
-                "loading": {
-                    "string": "Searching..."
-                }
-            },
-            "selectView": {
-                "string": "Select view"
-            },
-            "views": {
-                "month": {
-                    "string": "Month"
-                },
-                "week": {
-                    "string": "Week"
-                },
-                "day": {
-                    "string": "Day"
-                },
-                "schedule": {
-                    "string": "Schedule"
-                }
-            },
-            "createEvent": {
-                "string": "Create Event"
-            }
-        },
-        "events": {
-            "create": {
-                "string": "Create Event"
-            }
+        "day": {
+          "string": "Ημέρα"
         },
         "schedule": {
-            "noEvents": {
-                "string": "No events"
-            },
-            "noUpcomingEvents": {
-                "string": "No upcoming events for this period"
-            }
-        },
-        "views": {
-            "month": {
-                "string": "Month"
-            },
-            "week": {
-                "string": "Week"
-            },
-            "day": {
-                "string": "Day"
-            },
-            "agenda": {
-                "string": "Agenda"
-            }
-        },
-        "mobile": {
-            "event": {
-                "string": "event",
-                "plural": "events"
-            },
-            "weekView": {
-                "eventsCount": {
-                    "string": "{count, plural, one {# event} other {# events}}"
-                }
-            },
-            "noEvents": {
-                "string": "No events"
-            },
-            "swipeHint": {
-                "string": "← Swipe to see all days →"
-            },
-            "swipeToChangeDay": {
-                "string": "Swipe to change day"
-            },
-            "swipeToNavigate": {
-                "string": "← Swipe to navigate →"
-            },
-            "timeSeparator": {
-                "string": "-"
-            },
-            "month": {
-                "today": {
-                    "string": "Σήμερα"
-                },
-                "hasEvents": {
-                    "string": "Has events"
-                }
-            }
-        },
-        "external": {
-            "add_title": {
-                "string": "Subscribe to calendar"
-            },
-            "name_label": {
-                "string": "Όνομα"
-            },
-            "url_label": {
-                "string": "Calendar URL (.ics)"
-            },
-            "url_error": {
-                "string": "Please enter a valid URL"
-            },
-            "color_label": {
-                "string": "Color"
-            },
-            "sync_interval_label": {
-                "string": "Sync every"
-            },
-            "sync_now": {
-                "string": "Sync now"
-            },
-            "submit": {
-                "string": "Subscribe"
-            },
-            "sync_interval_options": {
-                "5": {
-                    "string": "5 min"
-                },
-                "15": {
-                    "string": "15 min"
-                },
-                "30": {
-                    "string": "30 min"
-                },
-                "60": {
-                    "string": "1 hour"
-                },
-                "360": {
-                    "string": "6 hours"
-                },
-                "1440": {
-                    "string": "24 hours"
-                }
-            }
-        },
-        "sidebar": {
-            "personals": {
-                "string": "Personal Calendars"
-            },
-            "shared": {
-                "string": "Shared Calendars"
-            },
-            "subscriptions": {
-                "string": "Subscriptions"
-            },
-            "add": {
-                "string": "Add Calendar"
-            },
-            "edit": {
-                "string": "Edit Calendar"
-            },
-            "delete": {
-                "string": "Delete Calendar"
-            },
-            "sharing": {
-                "string": "Sharing Settings"
-            },
-            "link": {
-                "string": "Get Calendar Link",
-                "description": {
-                    "string": "Copy this link to subscribe to this calendar in other calendar applications."
-                }
-            },
-            "export": {
-                "string": "Export Calendar"
-            },
-            "color": {
-                "string": "Calendar Color"
-            },
-            "readOnlyCalendar": {
-                "string": "Read-only calendar",
-                "context": "Label for ICS/subscription calendars that cannot be edited"
-            }
-        },
-        "actions": {
-            "newEvent": {
-                "string": "New Event"
-            },
-            "today": {
-                "string": "Σήμερα"
-            },
-            "month": {
-                "string": "Month"
-            },
-            "week": {
-                "string": "Week"
-            },
-            "day": {
-                "string": "Day"
-            },
-            "agenda": {
-                "string": "Agenda"
-            }
-        },
-        "visualization": {
-            "location": {
-                "string": "Location"
-            },
-            "description": {
-                "string": "Περιγραφή"
-            },
-            "attendees": {
-                "string": "Attendees"
-            },
-            "conference": {
-                "string": "Video Conference"
-            },
-            "joinMeeting": {
-                "string": "Join Meeting"
-            },
-            "reminders": {
-                "string": "Reminders"
-            },
-            "recurrence": {
-                "string": "Repeats"
-            },
-            "frequency": {
-                "daily": {
-                    "string": "Daily"
-                },
-                "weekly": {
-                    "string": "Weekly"
-                },
-                "monthly": {
-                    "string": "Monthly"
-                },
-                "yearly": {
-                    "string": "Yearly"
-                }
-            },
-            "every": {
-                "string": "Every {count}"
-            },
-            "daysBefore": {
-                "string": "{count} days before"
-            },
-            "hoursBefore": {
-                "string": "{count} hours before"
-            },
-            "minutesBefore": {
-                "string": "{count} minutes before"
-            },
-            "organizer": {
-                "string": "Organizer"
-            },
-            "organizerRole": {
-                "string": "(organizer)"
-            },
-            "attendeeStatus": {
-                "accepted": {
-                    "string": "Accepted"
-                },
-                "pending": {
-                    "string": "Pending"
-                },
-                "declined": {
-                    "string": "Declined"
-                },
-                "tentative": {
-                    "string": "Tentative"
-                }
-            },
-            "categories": {
-                "string": "Categories"
-            },
-            "url": {
-                "string": "URL"
-            },
-            "visibility": {
-                "string": "Visibility",
-                "values": {
-                    "public": {
-                        "string": "Public"
-                    },
-                    "private": {
-                        "string": "Private"
-                    },
-                    "confidential": {
-                        "string": "Confidential"
-                    }
-                }
-            },
-            "showAs": {
-                "string": "Show as",
-                "values": {
-                    "busy": {
-                        "string": "Busy"
-                    },
-                    "free": {
-                        "string": "Free"
-                    },
-                    "tentative": {
-                        "string": "Tentative"
-                    },
-                    "outOfOffice": {
-                        "string": "Out of office"
-                    }
-                }
-            },
-            "status": {
-                "string": "Κατάσταση",
-                "values": {
-                    "confirmed": {
-                        "string": "Confirmed"
-                    },
-                    "tentative": {
-                        "string": "Tentative"
-                    },
-                    "cancelled": {
-                        "string": "Cancelled"
-                    }
-                }
-            }
-        },
-        "eventForm": {
-            "calendar": {
-                "label": {
-                    "string": "Ημερολόγιο"
-                },
-                "placeholder": {
-                    "string": "Select calendar"
-                }
-            },
-            "title": {
-                "label": {
-                    "string": "Event title"
-                },
-                "placeholder": {
-                    "string": "Enter event title"
-                }
-            },
-            "allDay": {
-                "label": {
-                    "string": "All day"
-                }
-            },
-            "startDate": {
-                "label": {
-                    "string": "Start date"
-                }
-            },
-            "startTime": {
-                "label": {
-                    "string": "Start time"
-                }
-            },
-            "endDate": {
-                "label": {
-                    "string": "End date"
-                }
-            },
-            "endTime": {
-                "label": {
-                    "string": "End time"
-                }
-            },
-            "errors": {
-                "date_order": {
-                    "string": "End date must be on or after the start date."
-                }
-            },
-            "timezone": {
-                "label": {
-                    "string": "Timezone (event)"
-                },
-                "description": {
-                    "string": "Timezone in which this event's dates are interpreted"
-                }
-            },
-            "description": {
-                "label": {
-                    "string": "Περιγραφή"
-                },
-                "placeholder": {
-                    "string": "Add event details"
-                }
-            },
-            "location": {
-                "label": {
-                    "string": "Location"
-                },
-                "placeholder": {
-                    "string": "Add location"
-                }
-            },
-            "visibility": {
-                "label": {
-                    "string": "Visibility"
-                },
-                "placeholder": {
-                    "string": "Select visibility"
-                },
-                "options": {
-                    "public": {
-                        "string": "Public"
-                    },
-                    "private": {
-                        "string": "Private"
-                    },
-                    "confidential": {
-                        "string": "Confidential"
-                    }
-                }
-            },
-            "showAs": {
-                "label": {
-                    "string": "Show as"
-                },
-                "placeholder": {
-                    "string": "Select availability"
-                },
-                "options": {
-                    "busy": {
-                        "string": "Busy"
-                    },
-                    "free": {
-                        "string": "Free"
-                    },
-                    "outOfOffice": {
-                        "string": "Out of office"
-                    },
-                    "tentative": {
-                        "string": "Tentative"
-                    }
-                }
-            },
-            "status": {
-                "label": {
-                    "string": "Κατάσταση"
-                },
-                "placeholder": {
-                    "string": "Select status"
-                },
-                "options": {
-                    "confirmed": {
-                        "string": "Confirmed"
-                    },
-                    "tentative": {
-                        "string": "Tentative"
-                    },
-                    "cancelled": {
-                        "string": "Cancelled"
-                    }
-                }
-            },
-            "color": {
-                "label": {
-                    "string": "Color"
-                },
-                "reset": {
-                    "string": "Reset"
-                }
-            },
-            "categories": {
-                "label": {
-                    "string": "Categories"
-                },
-                "placeholder": {
-                    "string": "Add a category and press Enter"
-                },
-                "remove": {
-                    "string": "Remove {category}"
-                }
-            },
-            "attendees": {
-                "label": {
-                    "string": "Attendees"
-                },
-                "title": {
-                    "string": "Participants"
-                },
-                "add": {
-                    "string": "Add participant"
-                },
-                "emailPlaceholder": {
-                    "string": "email@example.com"
-                },
-                "namePlaceholder": {
-                    "string": "Name (optional)"
-                },
-                "remove": {
-                    "string": "Remove {email}"
-                },
-                "search_placeholder": {
-                    "string": "Search by name or email..."
-                },
-                "invalid_email": {
-                    "string": "Please enter a valid email address"
-                },
-                "already_added": {
-                    "string": "This participant has already been added"
-                },
-                "max_reached": {
-                    "string": "Maximum {max} participants reached"
-                },
-                "add_email_direct": {
-                    "string": "Add \"{email}\" directly"
-                },
-                "no_data": {
-                    "string": "No availability data"
-                },
-                "legend_free": {
-                    "string": "Available"
-                },
-                "legend_busy": {
-                    "string": "Busy"
-                },
-                "legend_tentative": {
-                    "string": "Tentative"
-                },
-                "legend_non_working": {
-                    "string": "Non-working hours"
-                },
-                "optimal_slot": {
-                    "string": "Suggested window"
-                },
-                "timeline_hour": {
-                    "string": "{hour}h"
-                },
-                "scroll_horizontal_hint": {
-                    "string": "Scroll horizontally"
-                },
-                "tooltip_slot_busy": {
-                    "string": "Busy"
-                },
-                "tooltip_slot_free": {
-                    "string": "{name} · free · {time}"
-                },
-                "tooltip_slot_optimal": {
-                    "string": "Part of the suggested {duration}-min window · {time}"
-                }
-            },
-            "reminders": {
-                "label": {
-                    "string": "Reminders"
-                },
-                "add": {
-                    "string": "Add reminder"
-                },
-                "minutesBefore": {
-                    "string": "min before"
-                },
-                "remove": {
-                    "string": "Remove reminder"
-                },
-                "methods": {
-                    "popup": {
-                        "string": "Popup"
-                    },
-                    "email": {
-                        "string": "Email"
-                    }
-                }
-            },
-            "recurrence": {
-                "repeat": {
-                    "string": "Repeat"
-                },
-                "every": {
-                    "string": "Every"
-                },
-                "on": {
-                    "string": "On"
-                },
-                "onDay": {
-                    "string": "On day"
-                },
-                "ofTheMonth": {
-                    "string": "of the month"
-                },
-                "ends": {
-                    "string": "Ends"
-                },
-                "occurrences": {
-                    "string": "occurrences"
-                },
-                "days": {
-                    "mo": {
-                        "string": "Mon"
-                    },
-                    "tu": {
-                        "string": "Tue"
-                    },
-                    "we": {
-                        "string": "Wed"
-                    },
-                    "th": {
-                        "string": "Thu"
-                    },
-                    "fr": {
-                        "string": "Fri"
-                    },
-                    "sa": {
-                        "string": "Sat"
-                    },
-                    "su": {
-                        "string": "Sun"
-                    }
-                },
-                "frequencies": {
-                    "daily": {
-                        "string": "Day(s)"
-                    },
-                    "weekly": {
-                        "string": "Week(s)"
-                    },
-                    "monthly": {
-                        "string": "Month(s)"
-                    },
-                    "yearly": {
-                        "string": "Year(s)"
-                    }
-                },
-                "endTypes": {
-                    "never": {
-                        "string": "Never"
-                    },
-                    "on": {
-                        "string": "On"
-                    },
-                    "after": {
-                        "string": "After"
-                    }
-                }
-            },
-            "url": {
-                "label": {
-                    "string": "URL"
-                },
-                "placeholder": {
-                    "string": "https://example.com"
-                }
-            },
-            "cancel": {
-                "string": "Ακύρωση"
-            },
-            "create": {
-                "string": "Create Event"
-            },
-            "update": {
-                "string": "Update Event"
-            }
-        },
-        "common": {
-            "cancel": {
-                "string": "Ακύρωση"
-            }
-        },
-        "forms": {
-            "createCalendar": {
-                "title": {
-                    "string": "Create New Calendar"
-                },
-                "defaultEventDuration": {
-                    "string": "Default Event Duration"
-                },
-                "nameLabel": {
-                    "string": "Calendar Name"
-                },
-                "namePlaceholder": {
-                    "string": "My Calendar"
-                },
-                "colorLabel": {
-                    "string": "Color"
-                },
-                "description": {
-                    "string": "Περιγραφή"
-                },
-                "descriptionPlaceholder": {
-                    "string": "Add description to calendar"
-                },
-                "eventDuration": {
-                    "string": "Event Duration"
-                },
-                "eventNotifications": {
-                    "string": "Event Notifications"
-                },
-                "allDayNotifications": {
-                    "string": "All-day event notifications"
-                },
-                "addNotification": {
-                    "string": "Add notification"
-                },
-                "showBusyStatus": {
-                    "string": "Show others when I'm busy"
-                },
-                "atTimeOfEvent": {
-                    "string": "at time of event"
-                },
-                "fiveMinutes": {
-                    "string": "5 minutes before"
-                },
-                "fifteenMinutes": {
-                    "string": "15 minutes before"
-                },
-                "thirtyMinutesBefore": {
-                    "string": "30 minutes before"
-                },
-                "oneHourBefore": {
-                    "string": "1 hour before"
-                },
-                "dayBefore": {
-                    "string": "day before"
-                },
-                "notification": {
-                    "string": "notification"
-                },
-                "email": {
-                    "string": "e-mail"
-                },
-                "delete": {
-                    "string": "Διαγραφή"
-                },
-                "at": {
-                    "string": "at"
-                },
-                "durationOptions": {
-                    "thirtyMinutes": {
-                        "string": "30 minutes"
-                    },
-                    "oneHour": {
-                        "string": "1 hour"
-                    },
-                    "twoHours": {
-                        "string": "2 hours"
-                    },
-                    "allDay": {
-                        "string": "All day"
-                    }
-                },
-                "saving": {
-                    "string": "Creating..."
-                },
-                "submit": {
-                    "string": "Create Calendar"
-                },
-                "cancel": {
-                    "string": "Ακύρωση"
-                }
-            },
-            "copyEvent": {
-                "string": "Αντιγραφή συμβάντος"
-            },
-            "editCalendar": {
-                "title": {
-                    "string": "Edit Calendar"
-                },
-                "nameLabel": {
-                    "string": "Calendar Name"
-                },
-                "colorLabel": {
-                    "string": "Color"
-                },
-                "description": {
-                    "string": "Περιγραφή"
-                },
-                "descriptionPlaceholder": {
-                    "string": "Add description to calendar"
-                },
-                "eventDuration": {
-                    "string": "Event Duration"
-                },
-                "eventNotifications": {
-                    "string": "Event Notifications"
-                },
-                "allDayNotifications": {
-                    "string": "All-day event notifications"
-                },
-                "addNotification": {
-                    "string": "Add notification"
-                },
-                "showBusyStatus": {
-                    "string": "Show others when I'm busy"
-                },
-                "atTimeOfEvent": {
-                    "string": "at time of event"
-                },
-                "fiveMinutes": {
-                    "string": "5 minutes before"
-                },
-                "fifteenMinutes": {
-                    "string": "15 minutes before"
-                },
-                "thirtyMinutesBefore": {
-                    "string": "30 minutes before"
-                },
-                "oneHourBefore": {
-                    "string": "1 hour before"
-                },
-                "dayBefore": {
-                    "string": "day before"
-                },
-                "notification": {
-                    "string": "notification"
-                },
-                "email": {
-                    "string": "e-mail"
-                },
-                "delete": {
-                    "string": "Διαγραφή"
-                },
-                "at": {
-                    "string": "at"
-                },
-                "durationOptions": {
-                    "thirtyMinutes": {
-                        "string": "30 minutes"
-                    },
-                    "oneHour": {
-                        "string": "1 hour"
-                    },
-                    "twoHours": {
-                        "string": "2 hours"
-                    },
-                    "allDay": {
-                        "string": "All day"
-                    }
-                },
-                "submit": {
-                    "string": "Save Changes"
-                },
-                "cancel": {
-                    "string": "Ακύρωση"
-                }
-            },
-            "editEvent": {
-                "string": "Edit event"
-            },
-            "deleteEvent": {
-                "confirm": {
-                    "title": {
-                        "string": "Delete event?"
-                    },
-                    "description": {
-                        "string": "This action cannot be undone."
-                    },
-                    "button": {
-                        "string": "Διαγραφή"
-                    }
-                }
-            },
-            "deleteCalendar": {
-                "title": {
-                    "string": "Delete Calendar"
-                },
-                "message": {
-                    "string": "Are you sure you want to delete this calendar? This action cannot be undone."
-                },
-                "confirm": {
-                    "string": "Διαγραφή"
-                },
-                "cancel": {
-                    "string": "Ακύρωση"
-                }
-            }
-        },
-        "share": {
-            "title": {
-                "string": "Calendar Sharing"
-            },
-            "description": {
-                "string": "Share this calendar with other users. Shared users can see events based on the permission level you grant."
-            },
-            "addUser": {
-                "string": "Add User"
-            },
-            "searchPlaceholder": {
-                "string": "Search by name or email..."
-            },
-            "addButton": {
-                "string": "Share"
-            },
-            "added": {
-                "string": "Calendar shared successfully"
-            },
-            "addError": {
-                "string": "Failed to share calendar"
-            },
-            "removed": {
-                "string": "Share removed successfully"
-            },
-            "removeError": {
-                "string": "Failed to remove share"
-            },
-            "removeButton": {
-                "string": "Αφαίρεση"
-            },
-            "existingShares": {
-                "string": "Shared with"
-            },
-            "noShares": {
-                "string": "This calendar is not shared with anyone yet."
-            },
-            "table": {
-                "user": {
-                    "string": "User"
-                },
-                "level": {
-                    "string": "Permission Level"
-                },
-                "canCreate": {
-                    "string": "Can Create"
-                }
-            }
+          "string": "Πρόγραμμα"
         }
+      },
+      "createEvent": {
+        "string": "Δημιουργία γεγονότος"
+      }
+    },
+    "events": {
+      "create": {
+        "string": "Δημιουργία γεγονότος"
+      }
+    },
+    "schedule": {
+      "noEvents": {
+        "string": "Κανένα γεγονός"
+      },
+      "noUpcomingEvents": {
+        "string": "Δεν υπάρχουν επερχόμενα γεγονότα για αυτή την περίοδο"
+      }
+    },
+    "views": {
+      "month": {
+        "string": "Μήνας"
+      },
+      "week": {
+        "string": "Εβδομάδα"
+      },
+      "day": {
+        "string": "Ημέρα"
+      },
+      "agenda": {
+        "string": "Ατζέντα"
+      }
+    },
+    "mobile": {
+      "event": {
+        "string": "γεγονός",
+        "plural": "γεγονότα"
+      },
+      "weekView": {
+        "eventsCount": {
+          "string": "{count, plural, one {# γεγονός} other {# γεγονότα}}"
+        }
+      },
+      "noEvents": {
+        "string": "Κανένα γεγονός"
+      },
+      "swipeHint": {
+        "string": "← Σύρετε για να δείτε όλες τις ημέρες →"
+      },
+      "swipeToChangeDay": {
+        "string": "Σύρετε για αλλαγή ημέρας"
+      },
+      "swipeToNavigate": {
+        "string": "← Σύρετε για πλοήγηση →"
+      },
+      "timeSeparator": {
+        "string": "-"
+      },
+      "month": {
+        "today": {
+          "string": "Σήμερα"
+        },
+        "hasEvents": {
+          "string": "Έχει γεγονότα"
+        }
+      }
+    },
+    "external": {
+      "add_title": {
+        "string": "Συνδρομή σε ημερολόγιο"
+      },
+      "name_label": {
+        "string": "Όνομα"
+      },
+      "url_label": {
+        "string": "URL Ημερολογίου (.ics)"
+      },
+      "url_error": {
+        "string": "Παρακαλώ εισάγετε ένα έγκυρο URL"
+      },
+      "color_label": {
+        "string": "Χρώμα"
+      },
+      "sync_interval_label": {
+        "string": "Συγχρονισμός κάθε"
+      },
+      "sync_now": {
+        "string": "Συγχρονισμός τώρα"
+      },
+      "submit": {
+        "string": "Συνδρομή"
+      },
+      "sync_interval_options": {
+        "5": {
+          "string": "5 λεπτά"
+        },
+        "15": {
+          "string": "15 λεπτά"
+        },
+        "30": {
+          "string": "30 λεπτά"
+        },
+        "60": {
+          "string": "1 ώρα"
+        },
+        "360": {
+          "string": "6 ώρες"
+        },
+        "1440": {
+          "string": "24 ώρες"
+        }
+      }
+    },
+    "sidebar": {
+      "personals": {
+        "string": "Προσωπικά Ημερολόγια"
+      },
+      "shared": {
+        "string": "Κοινόχρηστα Ημερολόγια"
+      },
+      "subscriptions": {
+        "string": "Συνδρομές"
+      },
+      "add": {
+        "string": "Προσθήκη Ημερολογίου"
+      },
+      "edit": {
+        "string": "Επεξεργασία Ημερολογίου"
+      },
+      "delete": {
+        "string": "Διαγραφή Ημερολογίου"
+      },
+      "sharing": {
+        "string": "Ρυθμίσεις Κοινής Χρήσης"
+      },
+      "link": {
+        "string": "Λήψη Συνδέσμου Ημερολογίου",
+        "description": {
+          "string": "Αντιγράψτε αυτόν τον σύνδεσμο για συνδρομή σε αυτό το ημερολόγιο σε άλλες εφαρμογές ημερολογίου."
+        }
+      },
+      "export": {
+        "string": "Εξαγωγή Ημερολογίου"
+      },
+      "color": {
+        "string": "Χρώμα Ημερολογίου"
+      },
+      "readOnlyCalendar": {
+        "string": "Ημερολόγιο μόνο για ανάγνωση",
+        "context": "Label for ICS/subscription calendars that cannot be edited"
+      }
+    },
+    "actions": {
+      "newEvent": {
+        "string": "Νέο Γεγονός"
+      },
+      "today": {
+        "string": "Σήμερα"
+      },
+      "month": {
+        "string": "Μήνας"
+      },
+      "week": {
+        "string": "Εβδομάδα"
+      },
+      "day": {
+        "string": "Ημέρα"
+      },
+      "agenda": {
+        "string": "Ατζέντα"
+      }
+    },
+    "visualization": {
+      "location": {
+        "string": "Τοποθεσία"
+      },
+      "description": {
+        "string": "Περιγραφή"
+      },
+      "attendees": {
+        "string": "Συμμετέχοντες"
+      },
+      "conference": {
+        "string": "Τηλεδιάσκεψη"
+      },
+      "joinMeeting": {
+        "string": "Συμμετοχή στη Συνάντηση"
+      },
+      "reminders": {
+        "string": "Υπενθυμίσεις"
+      },
+      "recurrence": {
+        "string": "Επανάληψη"
+      },
+      "frequency": {
+        "daily": {
+          "string": "Καθημερινά"
+        },
+        "weekly": {
+          "string": "Εβδομαδιαία"
+        },
+        "monthly": {
+          "string": "Μηνιαία"
+        },
+        "yearly": {
+          "string": "Ετήσια"
+        }
+      },
+      "every": {
+        "string": "Κάθε {count}"
+      },
+      "daysBefore": {
+        "string": "{count} ημέρες πριν"
+      },
+      "hoursBefore": {
+        "string": "{count} ώρες πριν"
+      },
+      "minutesBefore": {
+        "string": "{count} λεπτά πριν"
+      },
+      "organizer": {
+        "string": "Διοργανωτής"
+      },
+      "organizerRole": {
+        "string": "(διοργανωτής)"
+      },
+      "attendeeStatus": {
+        "accepted": {
+          "string": "Αποδεκτό"
+        },
+        "pending": {
+          "string": "Εκκρεμές"
+        },
+        "declined": {
+          "string": "Απορριφμένο"
+        },
+        "tentative": {
+          "string": "Προσωρινό"
+        }
+      },
+      "categories": {
+        "string": "Κατηγορίες"
+      },
+      "url": {
+        "string": "URL"
+      },
+      "visibility": {
+        "string": "Ορατότητα",
+        "values": {
+          "public": {
+            "string": "Δημόσιο"
+          },
+          "private": {
+            "string": "Ιδιωτικό"
+          },
+          "confidential": {
+            "string": "Εμπιστευτικό"
+          }
+        }
+      },
+      "showAs": {
+        "string": "Εμφάνιση ως",
+        "values": {
+          "busy": {
+            "string": "Απασχολημένο"
+          },
+          "free": {
+            "string": "Ελεύθερο"
+          },
+          "tentative": {
+            "string": "Προσωρινό"
+          },
+          "outOfOffice": {
+            "string": "Εκτός γραφείου"
+          }
+        }
+      },
+      "status": {
+        "string": "Κατάσταση",
+        "values": {
+          "confirmed": {
+            "string": "Επιβεβαιωμένο"
+          },
+          "tentative": {
+            "string": "Προσωρινό"
+          },
+          "cancelled": {
+            "string": "Ακυρωμένο"
+          }
+        }
+      }
+    },
+    "eventForm": {
+      "calendar": {
+        "label": {
+          "string": "Ημερολόγιο"
+        },
+        "placeholder": {
+          "string": "Επιλογή ημερολογίου"
+        }
+      },
+      "title": {
+        "label": {
+          "string": "Τίτλος γεγονότος"
+        },
+        "placeholder": {
+          "string": "Εισαγάγετε τίτλο γεγονότος"
+        }
+      },
+      "allDay": {
+        "label": {
+          "string": "Όλη μέρα"
+        }
+      },
+      "startDate": {
+        "label": {
+          "string": "Ημερομηνία έναρξης"
+        }
+      },
+      "startTime": {
+        "label": {
+          "string": "Ώρα έναρξης"
+        }
+      },
+      "endDate": {
+        "label": {
+          "string": "Ημερομηνία λήξης"
+        }
+      },
+      "endTime": {
+        "label": {
+          "string": "Ώρα λήξης"
+        }
+      },
+      "errors": {
+        "date_order": {
+          "string": "Η ημερομηνία λήξης πρέπει να είναι ίδια ή μεταγενέστερη της ημερομηνίας έναρξης."
+        }
+      },
+      "timezone": {
+        "label": {
+          "string": "Ζώνη ώρας (γεγονός)"
+        },
+        "description": {
+          "string": "Η ζώνη ώρας στην οποία ερμηνεύονται οι ημερομηνίες αυτού του γεγονότος"
+        }
+      },
+      "description": {
+        "label": {
+          "string": "Περιγραφή"
+        },
+        "placeholder": {
+          "string": "Προσθήκη λεπτομερειών γεγονότος"
+        }
+      },
+      "location": {
+        "label": {
+          "string": "Τοποθεσία"
+        },
+        "placeholder": {
+          "string": "Προσθήκη τοποθεσίας"
+        }
+      },
+      "visibility": {
+        "label": {
+          "string": "Ορατότητα"
+        },
+        "placeholder": {
+          "string": "Επιλογή ορατότητας"
+        },
+        "options": {
+          "public": {
+            "string": "Δημόσιο"
+          },
+          "private": {
+            "string": "Ιδιωτικό"
+          },
+          "confidential": {
+            "string": "Εμπιστευτικό"
+          }
+        }
+      },
+      "showAs": {
+        "label": {
+          "string": "Εμφάνιση ως"
+        },
+        "placeholder": {
+          "string": "Επιλογή διαθεσιμότητας"
+        },
+        "options": {
+          "busy": {
+            "string": "Απασχολημένο"
+          },
+          "free": {
+            "string": "Ελεύθερο"
+          },
+          "outOfOffice": {
+            "string": "Εκτός γραφείου"
+          },
+          "tentative": {
+            "string": "Προσωρινό"
+          }
+        }
+      },
+      "status": {
+        "label": {
+          "string": "Κατάσταση"
+        },
+        "placeholder": {
+          "string": "Επιλογή κατάστασης"
+        },
+        "options": {
+          "confirmed": {
+            "string": "Επιβεβαιωμένο"
+          },
+          "tentative": {
+            "string": "Προσωρινό"
+          },
+          "cancelled": {
+            "string": "Ακυρωμένο"
+          }
+        }
+      },
+      "color": {
+        "label": {
+          "string": "Χρώμα"
+        },
+        "reset": {
+          "string": "Επαναφορά"
+        }
+      },
+      "categories": {
+        "label": {
+          "string": "Κατηγορίες"
+        },
+        "placeholder": {
+          "string": "Προσθέστε κατηγορία και πατήστε Enter"
+        },
+        "remove": {
+          "string": "Αφαίρεση {category}"
+        }
+      },
+      "attendees": {
+        "label": {
+          "string": "Συμμετέχοντες"
+        },
+        "title": {
+          "string": "Συμμετέχοντες"
+        },
+        "add": {
+          "string": "Προσθήκη συμμετέχοντα"
+        },
+        "emailPlaceholder": {
+          "string": "email@example.com"
+        },
+        "namePlaceholder": {
+          "string": "Όνομα (προαιρετικό)"
+        },
+        "remove": {
+          "string": "Αφαίρεση {email}"
+        },
+        "search_placeholder": {
+          "string": "Αναζήτηση με όνομα ή email..."
+        },
+        "invalid_email": {
+          "string": "Παρακαλώ εισάγετε μια έγκυρη διεύθυνση email"
+        },
+        "already_added": {
+          "string": "Αυτός ο συμμετέχων έχει ήδη προστεθεί"
+        },
+        "max_reached": {
+          "string": "Επιτεύχθηκε το μέγιστο των {max} συμμετεχόντων"
+        },
+        "add_email_direct": {
+          "string": "Προσθήκη \"{email}\" απευθείας"
+        },
+        "no_data": {
+          "string": "Δεν υπάρχουν δεδομένα διαθεσιμότητας"
+        },
+        "legend_free": {
+          "string": "Διαθέσιμο"
+        },
+        "legend_busy": {
+          "string": "Απασχολημένο"
+        },
+        "legend_tentative": {
+          "string": "Προσωρινό"
+        },
+        "legend_non_working": {
+          "string": "Εκτός ωραρίου εργασίας"
+        },
+        "optimal_slot": {
+          "string": "Προτεινόμενο διάστημα"
+        },
+        "timeline_hour": {
+          "string": "{hour} ώ"
+        },
+        "scroll_horizontal_hint": {
+          "string": "Κύλιση οριζόντια"
+        },
+        "tooltip_slot_busy": {
+          "string": "Απασχολημένο"
+        },
+        "tooltip_slot_free": {
+          "string": "{name} · ελεύθερο · {time}"
+        },
+        "tooltip_slot_optimal": {
+          "string": "Μέρος του προτεινόμενου διαστήματος {duration} λεπτών · {time}"
+        }
+      },
+      "reminders": {
+        "label": {
+          "string": "Υπενθυμίσεις"
+        },
+        "add": {
+          "string": "Προσθήκη υπενθύμισης"
+        },
+        "minutesBefore": {
+          "string": "λεπτά πριν"
+        },
+        "remove": {
+          "string": "Αφαίρεση υπενθύμισης"
+        },
+        "methods": {
+          "popup": {
+            "string": "Αναδυόμενο παράθυρο"
+          },
+          "email": {
+            "string": "Email"
+          }
+        }
+      },
+      "recurrence": {
+        "repeat": {
+          "string": "Επανάληψη"
+        },
+        "every": {
+          "string": "Κάθε"
+        },
+        "on": {
+          "string": "Στις"
+        },
+        "onDay": {
+          "string": "Στην ημέρα"
+        },
+        "ofTheMonth": {
+          "string": "του μήνα"
+        },
+        "ends": {
+          "string": "Λήγει"
+        },
+        "occurrences": {
+          "string": "επαναλήψεις"
+        },
+        "days": {
+          "mo": {
+            "string": "Δευ"
+          },
+          "tu": {
+            "string": "Τρί"
+          },
+          "we": {
+            "string": "Τετ"
+          },
+          "th": {
+            "string": "Πέμ"
+          },
+          "fr": {
+            "string": "Παρ"
+          },
+          "sa": {
+            "string": "Σάβ"
+          },
+          "su": {
+            "string": "Κυρ"
+          }
+        },
+        "frequencies": {
+          "daily": {
+            "string": "Ημέρα(-ες)"
+          },
+          "weekly": {
+            "string": "Εβδομάδα(-ες)"
+          },
+          "monthly": {
+            "string": "Μήνας(-ες)"
+          },
+          "yearly": {
+            "string": "Έτος(-η)"
+          }
+        },
+        "endTypes": {
+          "never": {
+            "string": "Ποτέ"
+          },
+          "on": {
+            "string": "Σε ημερομηνία"
+          },
+          "after": {
+            "string": "Μετά από"
+          }
+        }
+      },
+      "url": {
+        "label": {
+          "string": "URL"
+        },
+        "placeholder": {
+          "string": "https://example.com"
+        }
+      },
+      "cancel": {
+        "string": "Ακύρωση"
+      },
+      "create": {
+        "string": "Δημιουργία γεγονότος"
+      },
+      "update": {
+        "string": "Ενημέρωση Γεγονότος"
+      }
+    },
+    "common": {
+      "cancel": {
+        "string": "Ακύρωση"
+      }
+    },
+    "forms": {
+      "createCalendar": {
+        "title": {
+          "string": "Δημιουργία Νέου Ημερολογίου"
+        },
+        "defaultEventDuration": {
+          "string": "Προεπιλεγμένη Διάρκεια Γεγονότος"
+        },
+        "nameLabel": {
+          "string": "Όνομα Ημερολογίου"
+        },
+        "namePlaceholder": {
+          "string": "Το Ημερολόγιό μου"
+        },
+        "colorLabel": {
+          "string": "Χρώμα"
+        },
+        "description": {
+          "string": "Περιγραφή"
+        },
+        "descriptionPlaceholder": {
+          "string": "Προσθήκη περιγραφής στο ημερολόγιο"
+        },
+        "eventDuration": {
+          "string": "Διάρκεια Γεγονότος"
+        },
+        "eventNotifications": {
+          "string": "Ειδοποιήσεις Γεγονότος"
+        },
+        "allDayNotifications": {
+          "string": "Ειδοποιήσεις γεγονότος όλης της ημέρας"
+        },
+        "addNotification": {
+          "string": "Προσθήκη ειδοποίησης"
+        },
+        "showBusyStatus": {
+          "string": "Εμφάνιση στους άλλους όταν είμαι απασχολημένος"
+        },
+        "atTimeOfEvent": {
+          "string": "την ώρα του γεγονότος"
+        },
+        "fiveMinutes": {
+          "string": "5 λεπτά πριν"
+        },
+        "fifteenMinutes": {
+          "string": "15 λεπτά πριν"
+        },
+        "thirtyMinutesBefore": {
+          "string": "30 λεπτά πριν"
+        },
+        "oneHourBefore": {
+          "string": "1 ώρα πριν"
+        },
+        "dayBefore": {
+          "string": "την προηγούμενη ημέρα"
+        },
+        "notification": {
+          "string": "ειδοποίηση"
+        },
+        "email": {
+          "string": "email"
+        },
+        "delete": {
+          "string": "Διαγραφή"
+        },
+        "at": {
+          "string": "στις"
+        },
+        "durationOptions": {
+          "thirtyMinutes": {
+            "string": "30 λεπτά"
+          },
+          "oneHour": {
+            "string": "1 ώρα"
+          },
+          "twoHours": {
+            "string": "2 ώρες"
+          },
+          "allDay": {
+            "string": "Όλη μέρα"
+          }
+        },
+        "saving": {
+          "string": "Δημιουργία..."
+        },
+        "submit": {
+          "string": "Δημιουργία Ημερολογίου"
+        },
+        "cancel": {
+          "string": "Ακύρωση"
+        }
+      },
+      "copyEvent": {
+        "string": "Αντιγραφή συμβάντος"
+      },
+      "editCalendar": {
+        "title": {
+          "string": "Επεξεργασία Ημερολογίου"
+        },
+        "nameLabel": {
+          "string": "Όνομα Ημερολογίου"
+        },
+        "colorLabel": {
+          "string": "Χρώμα"
+        },
+        "description": {
+          "string": "Περιγραφή"
+        },
+        "descriptionPlaceholder": {
+          "string": "Προσθήκη περιγραφής στο ημερολόγιο"
+        },
+        "eventDuration": {
+          "string": "Διάρκεια Γεγονότος"
+        },
+        "eventNotifications": {
+          "string": "Ειδοποιήσεις Γεγονότος"
+        },
+        "allDayNotifications": {
+          "string": "Ειδοποιήσεις γεγονότος όλης της ημέρας"
+        },
+        "addNotification": {
+          "string": "Προσθήκη ειδοποίησης"
+        },
+        "showBusyStatus": {
+          "string": "Εμφάνιση στους άλλους όταν είμαι απασχολημένος"
+        },
+        "atTimeOfEvent": {
+          "string": "την ώρα του γεγονότος"
+        },
+        "fiveMinutes": {
+          "string": "5 λεπτά πριν"
+        },
+        "fifteenMinutes": {
+          "string": "15 λεπτά πριν"
+        },
+        "thirtyMinutesBefore": {
+          "string": "30 λεπτά πριν"
+        },
+        "oneHourBefore": {
+          "string": "1 ώρα πριν"
+        },
+        "dayBefore": {
+          "string": "την προηγούμενη ημέρα"
+        },
+        "notification": {
+          "string": "ειδοποίηση"
+        },
+        "email": {
+          "string": "email"
+        },
+        "delete": {
+          "string": "Διαγραφή"
+        },
+        "at": {
+          "string": "στις"
+        },
+        "durationOptions": {
+          "thirtyMinutes": {
+            "string": "30 λεπτά"
+          },
+          "oneHour": {
+            "string": "1 ώρα"
+          },
+          "twoHours": {
+            "string": "2 ώρες"
+          },
+          "allDay": {
+            "string": "Όλη μέρα"
+          }
+        },
+        "submit": {
+          "string": "Αποθήκευση αλλαγών"
+        },
+        "cancel": {
+          "string": "Ακύρωση"
+        }
+      },
+      "editEvent": {
+        "string": "Επεξεργασία γεγονότος"
+      },
+      "deleteEvent": {
+        "confirm": {
+          "title": {
+            "string": "Διαγραφή γεγονότος;"
+          },
+          "description": {
+            "string": "Αυτή η ενέργεια δεν μπορεί να αναιρεθεί."
+          },
+          "button": {
+            "string": "Διαγραφή"
+          }
+        }
+      },
+      "deleteCalendar": {
+        "title": {
+          "string": "Διαγραφή Ημερολογίου"
+        },
+        "message": {
+          "string": "Είστε βέβαιοι ότι θέλετε να διαγράψετε αυτό το ημερολόγιο; Αυτή η ενέργεια δεν μπορεί να αναιρεθεί."
+        },
+        "confirm": {
+          "string": "Διαγραφή"
+        },
+        "cancel": {
+          "string": "Ακύρωση"
+        }
+      }
+    },
+    "share": {
+      "title": {
+        "string": "Κοινή Χρήση Ημερολογίου"
+      },
+      "description": {
+        "string": "Μοιραστείτε αυτό το ημερολόγιο με άλλους χρήστες. Οι χρήστες μπορούν να βλέπουν γεγονότα ανάλογα με το επίπεδο δικαιωμάτων που τους εκχωρείτε."
+      },
+      "addUser": {
+        "string": "Προσθήκη χρήστη"
+      },
+      "searchPlaceholder": {
+        "string": "Αναζήτηση με όνομα ή email..."
+      },
+      "addButton": {
+        "string": "Κοινή χρήση"
+      },
+      "added": {
+        "string": "Το ημερολόγιο διαμοιράστηκε επιτυχώς"
+      },
+      "addError": {
+        "string": "Αποτυχία διαμοιρασμού ημερολογίου"
+      },
+      "removed": {
+        "string": "Η κοινή χρήση αφαιρέθηκε επιτυχώς"
+      },
+      "removeError": {
+        "string": "Αποτυχία αφαίρεσης κοινής χρήσης"
+      },
+      "removeButton": {
+        "string": "Αφαίρεση"
+      },
+      "existingShares": {
+        "string": "Κοινή χρήση με"
+      },
+      "noShares": {
+        "string": "Αυτό το ημερολόγιο δεν έχει διαμοιραστεί ακόμα με κανέναν."
+      },
+      "table": {
+        "user": {
+          "string": "Χρήστης"
+        },
+        "level": {
+          "string": "Επίπεδο δικαιωμάτων"
+        },
+        "canCreate": {
+          "string": "Μπορεί να Δημιουργεί"
+        }
+      }
     }
+  }
 }

@@ -1,71 +1,71 @@
 {
-    "AP_DRAFTS": {
-        "title": {
-            "string": "Collaborative Drafts"
-        },
-        "description": {
-            "string": "Share draft emails with colleagues for review and approval before sending."
-        },
-        "form": {
-            "share": {
-                "string": "Share Draft"
-            },
-            "cancel": {
-                "string": "Ακύρωση"
-            },
-            "title": {
-                "string": "Share a Draft"
-            },
-            "subject": {
-                "string": "Subject"
-            },
-            "reviewers": {
-                "string": "Reviewers"
-            },
-            "message": {
-                "string": "Message to Reviewers"
-            },
-            "message_hint": {
-                "string": "Please review this draft before I send it"
-            },
-            "body": {
-                "string": "Email Body"
-            },
-            "submit": {
-                "string": "Share Draft"
-            }
-        },
-        "create": {
-            "success": {
-                "string": "Draft shared"
-            },
-            "error": {
-                "string": "Failed to share draft"
-            }
-        },
-        "review": {
-            "approved": {
-                "string": "Draft approved"
-            },
-            "rejected": {
-                "string": "Draft rejected"
-            },
-            "error": {
-                "string": "Review failed"
-            }
-        },
-        "list": {
-            "empty": {
-                "string": "No shared drafts. Create one to collaborate on an email."
-            },
-            "by": {
-                "string": "by"
-            }
-        },
-        "errors": {
-            "fields": {
-                "string": "Subject, body, and at least one reviewer are required"
-            }
-        }
+  "AP_DRAFTS": {
+    "title": {
+      "string": "Συνεργατικά Πρόχειρα"
+    },
+    "description": {
+      "string": "Μοιραστείτε πρόχειρα email με συναδέλφους για έλεγχο και έγκριση πριν την αποστολή."
+    },
+    "form": {
+      "share": {
+        "string": "Κοινή Χρήση Πρόχειρου"
+      },
+      "cancel": {
+        "string": "Ακύρωση"
+      },
+      "title": {
+        "string": "Κοινή Χρήση Προχείρου"
+      },
+      "subject": {
+        "string": "Θέμα"
+      },
+      "reviewers": {
+        "string": "Αναθεωρητές"
+      },
+      "message": {
+        "string": "Μήνυμα προς Αναθεωρητές"
+      },
+      "message_hint": {
+        "string": "Παρακαλώ ελέγξτε αυτό το πρόχειρο πριν το στείλω"
+      },
+      "body": {
+        "string": "Σώμα Email"
+      },
+      "submit": {
+        "string": "Κοινή Χρήση Πρόχειρου"
+      }
+    },
+    "create": {
+      "success": {
+        "string": "Το πρόχειρο διαμοιράστηκε"
+      },
+      "error": {
+        "string": "Αποτυχία διαμοιρασμού προχείρου"
+      }
+    },
+    "review": {
+      "approved": {
+        "string": "Το πρόχειρο εγκρίθηκε"
+      },
+      "rejected": {
+        "string": "Το πρόχειρο απορρίφθηκε"
+      },
+      "error": {
+        "string": "Ο έλεγχος απέτυχε"
+      }
+    },
+    "list": {
+      "empty": {
+        "string": "Δεν υπάρχουν διαμοιρασμένα πρόχειρα. Δημιουργήστε ένα για να συνεργαστείτε σε ένα email."
+      },
+      "by": {
+        "string": "από"
+      }
+    },
+    "errors": {
+      "fields": {
+        "string": "Το θέμα, το σώμα και τουλάχιστον ένας αναθεωρητής είναι υποχρεωτικά"
+      }
     }
+  }
 }

@@ -1,189 +1,189 @@
 {
-    "AP_DNS_WIZARD": {
-        "title": {
-            "string": "DNS Wizard"
-        },
-        "description": {
-            "string": "Generate and validate DNS records for email authentication (SPF, DKIM, DMARC). Add these records to your domain's DNS zone to protect against spoofing and improve deliverability."
-        },
-        "tabs": {
-            "spf": {
-                "string": "SPF"
-            },
-            "dkim": {
-                "string": "DKIM"
-            },
-            "dmarc": {
-                "string": "DMARC"
-            },
-            "validate": {
-                "string": "Validate"
-            }
-        },
-        "labels": {
-            "domain": {
-                "string": "Τομέας"
-            },
-            "policy": {
-                "string": "Policy"
-            },
-            "mx_servers": {
-                "string": "MX Servers"
-            },
-            "ip4_addresses": {
-                "string": "IPv4 Addresses"
-            },
-            "ip6_addresses": {
-                "string": "IPv6 Addresses"
-            },
-            "include_domains": {
-                "string": "Include Domains"
-            },
-            "selector": {
-                "string": "Selector"
-            },
-            "key_type": {
-                "string": "Key Type"
-            },
-            "public_key": {
-                "string": "Public Key (Base64)"
-            },
-            "rua_email": {
-                "string": "Aggregate Reports Email"
-            },
-            "ruf_email": {
-                "string": "Forensic Reports Email"
-            },
-            "pct": {
-                "string": "Policy Percentage"
-            },
-            "subdomain_policy": {
-                "string": "Subdomain Policy"
-            },
-            "aspf": {
-                "string": "SPF Alignment"
-            },
-            "adkim": {
-                "string": "DKIM Alignment"
-            }
-        },
-        "policies": {
-            "hardfail": {
-                "string": "hardfail"
-            },
-            "softfail": {
-                "string": "softfail"
-            },
-            "neutral": {
-                "string": "neutral"
-            },
-            "no_policy": {
-                "string": "no policy"
-            }
-        },
-        "spf": {
-            "description": {
-                "string": "SPF (Sender Policy Framework) specifies which mail servers are allowed to send email from your domain. Add this TXT record to your DNS zone."
-            },
-            "generate": {
-                "string": "Generate SPF Record"
-            }
-        },
-        "dkim": {
-            "description": {
-                "string": "DKIM (DomainKeys Identified Mail) adds a digital signature to outgoing emails, allowing recipients to verify the message was not altered in transit."
-            },
-            "generate": {
-                "string": "Generate DKIM Record"
-            },
-            "public_key_placeholder": {
-                "string": "Leave empty for placeholder with generation instructions"
-            },
-            "public_key_hint": {
-                "string": "Optional. If empty, the record will include a placeholder with the openssl command to generate the key pair."
-            }
-        },
-        "dmarc": {
-            "description": {
-                "string": "DMARC (Domain-based Message Authentication, Reporting, and Conformance) tells receiving mail servers what to do when SPF or DKIM fails. Start with p=none to monitor, then move to quarantine or reject."
-            },
-            "generate": {
-                "string": "Generate DMARC Record"
-            },
-            "policy_none": {
-                "string": "monitor only"
-            },
-            "policy_quarantine": {
-                "string": "quarantine failures"
-            },
-            "policy_reject": {
-                "string": "reject failures"
-            },
-            "relaxed": {
-                "string": "relaxed"
-            },
-            "strict": {
-                "string": "strict"
-            },
-            "inherit": {
-                "string": "Inherit from domain policy"
-            }
-        },
-        "validate": {
-            "description": {
-                "string": "Paste an existing SPF or DMARC record value to check for syntax errors and best-practice warnings."
-            },
-            "button": {
-                "string": "Validate"
-            },
-            "spf_title": {
-                "string": "Validate SPF Record"
-            },
-            "dmarc_title": {
-                "string": "Validate DMARC Record"
-            }
-        },
-        "record": {
-            "title": {
-                "string": "Generated DNS Record"
-            },
-            "name": {
-                "string": "Όνομα"
-            },
-            "type": {
-                "string": "Τύπος"
-            },
-            "value": {
-                "string": "Value"
-            },
-            "ttl": {
-                "string": "TTL"
-            },
-            "selector": {
-                "string": "Selector"
-            }
-        },
-        "validation": {
-            "valid": {
-                "string": "Valid"
-            },
-            "invalid": {
-                "string": "Invalid"
-            },
-            "domain_required": {
-                "string": "Domain is required"
-            },
-            "value_required": {
-                "string": "Record value is required"
-            }
-        },
-        "errors": {
-            "generate_failed": {
-                "string": "Failed to generate record"
-            },
-            "validate_failed": {
-                "string": "Failed to validate record"
-            }
-        }
+  "AP_DNS_WIZARD": {
+    "title": {
+      "string": "Οδηγός DNS"
+    },
+    "description": {
+      "string": "Δημιουργία και επαλήθευση εγγραφών DNS για τον έλεγχο ταυτότητας email (SPF, DKIM, DMARC). Προσθέστε αυτές τις εγγραφές στη ζώνη DNS του τομέα σας για προστασία από πλαστογράφηση και βελτίωση της παραδοσιμότητας."
+    },
+    "tabs": {
+      "spf": {
+        "string": "SPF"
+      },
+      "dkim": {
+        "string": "DKIM"
+      },
+      "dmarc": {
+        "string": "DMARC"
+      },
+      "validate": {
+        "string": "Επαλήθευση"
+      }
+    },
+    "labels": {
+      "domain": {
+        "string": "Τομέας"
+      },
+      "policy": {
+        "string": "Πολιτική"
+      },
+      "mx_servers": {
+        "string": "Διακομιστές MX"
+      },
+      "ip4_addresses": {
+        "string": "Διευθύνσεις IPv4"
+      },
+      "ip6_addresses": {
+        "string": "Διευθύνσεις IPv6"
+      },
+      "include_domains": {
+        "string": "Συμπερίληψη τομέων"
+      },
+      "selector": {
+        "string": "Επιλογέας"
+      },
+      "key_type": {
+        "string": "Τύπος Κλειδιού"
+      },
+      "public_key": {
+        "string": "Δημόσιο Κλειδί (Base64)"
+      },
+      "rua_email": {
+        "string": "Email Συγκεντρωτικών Αναφορών"
+      },
+      "ruf_email": {
+        "string": "Email Αναφορών Αποτυχιών"
+      },
+      "pct": {
+        "string": "Ποσοστό Πολιτικής"
+      },
+      "subdomain_policy": {
+        "string": "Πολιτική Υποτομέων"
+      },
+      "aspf": {
+        "string": "Ευθυγράμμιση SPF"
+      },
+      "adkim": {
+        "string": "Ευθυγράμμιση DKIM"
+      }
+    },
+    "policies": {
+      "hardfail": {
+        "string": "αυστηρή απόρριψη"
+      },
+      "softfail": {
+        "string": "ήπια απόρριψη"
+      },
+      "neutral": {
+        "string": "ουδέτερο"
+      },
+      "no_policy": {
+        "string": "χωρίς πολιτική"
+      }
+    },
+    "spf": {
+      "description": {
+        "string": "Το SPF (Sender Policy Framework) καθορίζει ποιοι διακομιστές αλληλογραφίας επιτρέπεται να στέλνουν email από τον τομέα σας. Προσθέστε αυτή την εγγραφή TXT στη ζώνη DNS σας."
+      },
+      "generate": {
+        "string": "Δημιουργία Εγγραφής SPF"
+      }
+    },
+    "dkim": {
+      "description": {
+        "string": "Το DKIM (DomainKeys Identified Mail) προσθέτει ψηφιακή υπογραφή στα εξερχόμενα email, επιτρέποντας στους παραλήπτες να επιβεβαιώσουν ότι το μήνυμα δεν τροποποιήθηκε κατά τη μεταφορά."
+      },
+      "generate": {
+        "string": "Δημιουργία Εγγραφής DKIM"
+      },
+      "public_key_placeholder": {
+        "string": "Αφήστε κενό για σύμβολο θέσης με οδηγίες δημιουργίας"
+      },
+      "public_key_hint": {
+        "string": "Προαιρετικό. Αν μείνει κενό, η εγγραφή θα περιλαμβάνει σύμβολο θέσης με την εντολή openssl για τη δημιουργία του ζεύγους κλειδιών."
+      }
+    },
+    "dmarc": {
+      "description": {
+        "string": "Το DMARC (Domain-based Message Authentication, Reporting, and Conformance) ορίζει στους λήπτες διακομιστές τι να κάνουν όταν το SPF ή το DKIM αποτυγχάνει. Ξεκινήστε με p=none για παρακολούθηση και μετά μεταβείτε σε quarantine ή reject."
+      },
+      "generate": {
+        "string": "Δημιουργία Εγγραφής DMARC"
+      },
+      "policy_none": {
+        "string": "μόνο παρακολούθηση"
+      },
+      "policy_quarantine": {
+        "string": "καραντίνα αποτυχιών"
+      },
+      "policy_reject": {
+        "string": "απόρριψη αποτυχιών"
+      },
+      "relaxed": {
+        "string": "χαλαρή"
+      },
+      "strict": {
+        "string": "αυστηρή"
+      },
+      "inherit": {
+        "string": "Κληρονόμηση από πολιτική τομέα"
+      }
+    },
+    "validate": {
+      "description": {
+        "string": "Επικολλήστε μια υπάρχουσα τιμή εγγραφής SPF ή DMARC για έλεγχο συντακτικών σφαλμάτων και προειδοποιήσεων βέλτιστων πρακτικών."
+      },
+      "button": {
+        "string": "Επαλήθευση"
+      },
+      "spf_title": {
+        "string": "Επαλήθευση Εγγραφής SPF"
+      },
+      "dmarc_title": {
+        "string": "Επαλήθευση Εγγραφής DMARC"
+      }
+    },
+    "record": {
+      "title": {
+        "string": "Δημιουργημένη Εγγραφή DNS"
+      },
+      "name": {
+        "string": "Όνομα"
+      },
+      "type": {
+        "string": "Τύπος"
+      },
+      "value": {
+        "string": "Τιμή"
+      },
+      "ttl": {
+        "string": "TTL"
+      },
+      "selector": {
+        "string": "Επιλογέας"
+      }
+    },
+    "validation": {
+      "valid": {
+        "string": "Έγκυρο"
+      },
+      "invalid": {
+        "string": "Μη έγκυρο"
+      },
+      "domain_required": {
+        "string": "Ο τομέας είναι υποχρεωτικός"
+      },
+      "value_required": {
+        "string": "Η τιμή εγγραφής είναι υποχρεωτική"
+      }
+    },
+    "errors": {
+      "generate_failed": {
+        "string": "Αποτυχία δημιουργίας εγγραφής"
+      },
+      "validate_failed": {
+        "string": "Αποτυχία επαλήθευσης εγγραφής"
+      }
     }
+  }
 }

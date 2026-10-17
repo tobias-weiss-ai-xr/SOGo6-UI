@@ -1,71 +1,71 @@
 {
-    "AP_SLOTS": {
-        "title": {
-            "string": "Appointment Slots"
-        },
-        "description": {
-            "string": "Publish bookable time slots (Calendly-style). Generate booking links for external participants."
-        },
-        "form": {
-            "create": {
-                "string": "Create Slot"
-            },
-            "cancel": {
-                "string": "Ακύρωση"
-            },
-            "title": {
-                "string": "New Appointment Slot"
-            },
-            "slot_title": {
-                "string": "Slot Title"
-            },
-            "duration": {
-                "string": "Duration (min)"
-            },
-            "buffer": {
-                "string": "Buffer (min)"
-            },
-            "start_time": {
-                "string": "Start Time"
-            },
-            "end_time": {
-                "string": "End Time"
-            },
-            "days": {
-                "string": "Available Days"
-            },
-            "submit": {
-                "string": "Create Slot"
-            }
-        },
-        "create": {
-            "success": {
-                "string": "Slot created"
-            },
-            "error": {
-                "string": "Failed to create slot"
-            }
-        },
-        "slots": {
-            "title": {
-                "string": "Your Slots"
-            },
-            "empty": {
-                "string": "No appointment slots. Create one to share your availability."
-            }
-        },
-        "bookings": {
-            "title": {
-                "string": "Recent Bookings"
-            },
-            "empty": {
-                "string": "No bookings yet."
-            }
-        },
-        "errors": {
-            "fields": {
-                "string": "Title, duration, times, and at least one day are required"
-            }
-        }
+  "AP_SLOTS": {
+    "title": {
+      "string": "Χρονικές Θέσεις Ραντεβού"
+    },
+    "description": {
+      "string": "Δημοσίευση κρατήσιμων χρονικών θέσεων (τύπου Calendly). Δημιουργία συνδέσμων κράτησης για εξωτερικούς συμμετέχοντες."
+    },
+    "form": {
+      "create": {
+        "string": "Δημιουργία Θέσης"
+      },
+      "cancel": {
+        "string": "Ακύρωση"
+      },
+      "title": {
+        "string": "Νέα Χρονική Θέση Ραντεβού"
+      },
+      "slot_title": {
+        "string": "Τίτλος Θέσης"
+      },
+      "duration": {
+        "string": "Διάρκεια (λεπτά)"
+      },
+      "buffer": {
+        "string": "Ενδιάμεσο διάστημα (λεπτά)"
+      },
+      "start_time": {
+        "string": "Ώρα Έναρξης"
+      },
+      "end_time": {
+        "string": "Ώρα Λήξης"
+      },
+      "days": {
+        "string": "Διαθέσιμες Ημέρες"
+      },
+      "submit": {
+        "string": "Δημιουργία Θέσης"
+      }
+    },
+    "create": {
+      "success": {
+        "string": "Η θέση δημιουργήθηκε"
+      },
+      "error": {
+        "string": "Αποτυχία δημιουργίας θέσης"
+      }
+    },
+    "slots": {
+      "title": {
+        "string": "Οι Θέσεις σας"
+      },
+      "empty": {
+        "string": "Δεν υπάρχουν χρονικές θέσεις ραντεβού. Δημιουργήστε μία για να μοιραστείτε τη διαθεσιμότητά σας."
+      }
+    },
+    "bookings": {
+      "title": {
+        "string": "Πρόσφατες Κρατήσεις"
+      },
+      "empty": {
+        "string": "Δεν υπάρχουν κρατήσεις ακόμα."
+      }
+    },
+    "errors": {
+      "fields": {
+        "string": "Ο τίτλος, η διάρκεια, οι ώρες και τουλάχιστον μία ημέρα είναι υποχρεωτικά"
+      }
     }
+  }
 }

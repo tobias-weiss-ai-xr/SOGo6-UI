@@ -1,70 +1,70 @@
 {
-    "AP_WORKFLOWS": {
-        "title": {
-            "string": "Workflow Builder"
-        },
-        "description": {
-            "string": "Low-code automation: If email from X and subject Y → forward, create event, notify."
-        },
-        "form": {
-            "create": {
-                "string": "New Workflow"
-            },
-            "cancel": {
-                "string": "Ακύρωση"
-            },
-            "title": {
-                "string": "Create Workflow"
-            },
-            "name": {
-                "string": "Workflow Name"
-            },
-            "trigger": {
-                "string": "Trigger"
-            },
-            "description": {
-                "string": "Περιγραφή"
-            },
-            "conditions": {
-                "string": "Conditions"
-            },
-            "actions": {
-                "string": "Actions"
-            },
-            "submit": {
-                "string": "Create Workflow"
-            }
-        },
-        "create": {
-            "success": {
-                "string": "Workflow created"
-            },
-            "error": {
-                "string": "Failed to create"
-            }
-        },
-        "toggle": {
-            "error": {
-                "string": "Failed to toggle"
-            }
-        },
-        "delete": {
-            "success": {
-                "string": "Workflow deleted"
-            },
-            "error": {
-                "string": "Failed to delete"
-            }
-        },
-        "list": {
-            "empty": {
-                "string": "No workflows defined. Create one to automate actions."
-            }
-        },
-        "errors": {
-            "fields": {
-                "string": "Name, conditions, and actions are required"
-            }
-        }
+  "AP_WORKFLOWS": {
+    "title": {
+      "string": "Κατασκευαστής Ροών Εργασιών"
+    },
+    "description": {
+      "string": "Αυτοματισμός χαμηλού κώδικα: Αν email από Χ και θέμα Υ → προώθηση, δημιουργία γεγονότος, ειδοποίηση."
+    },
+    "form": {
+      "create": {
+        "string": "Νέα Ροή Εργασιών"
+      },
+      "cancel": {
+        "string": "Ακύρωση"
+      },
+      "title": {
+        "string": "Δημιουργία ροής εργασιών"
+      },
+      "name": {
+        "string": "Όνομα Ροής Εργασιών"
+      },
+      "trigger": {
+        "string": "Εναύσμα"
+      },
+      "description": {
+        "string": "Περιγραφή"
+      },
+      "conditions": {
+        "string": "Συνθήκες"
+      },
+      "actions": {
+        "string": "Ενέργειες"
+      },
+      "submit": {
+        "string": "Δημιουργία ροής εργασιών"
+      }
+    },
+    "create": {
+      "success": {
+        "string": "Η ροή εργασιών δημιουργήθηκε"
+      },
+      "error": {
+        "string": "Αποτυχία δημιουργίας"
+      }
+    },
+    "toggle": {
+      "error": {
+        "string": "Αποτυχία εναλλαγής"
+      }
+    },
+    "delete": {
+      "success": {
+        "string": "Η ροή εργασιών διαγράφηκε"
+      },
+      "error": {
+        "string": "Αποτυχία διαγραφής"
+      }
+    },
+    "list": {
+      "empty": {
+        "string": "Δεν έχουν οριστεί ροές εργασιών. Δημιουργήστε μία για να αυτοματοποιήσετε ενέργειες."
+      }
+    },
+    "errors": {
+      "fields": {
+        "string": "Το όνομα, οι συνθήκες και οι ενέργειες είναι υποχρεωτικά"
+      }
     }
+  }
 }

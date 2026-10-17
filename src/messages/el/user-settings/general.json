@@ -1,81 +1,81 @@
 {
-    "US_GENERAL": {
-        "title": {
-            "string": "General Settings",
-            "context": "Title for the general settings page"
-        },
-        "labels": {
-            "language": {
-                "string": "Language"
-            },
-            "timezone": {
-                "string": "Timezone"
-            },
-            "short_date_style": {
-                "string": "Short Date Style"
-            },
-            "long_date_style": {
-                "string": "Long Date Style"
-            },
-            "time_style": {
-                "string": "Time Style"
-            },
-            "default_view": {
-                "string": "Default View"
-            },
-            "refresh_frequency": {
-                "string": "Refresh Frequency"
-            },
-            "enable_notifications": {
-                "string": "Enable Notifications"
-            },
-            "saved": {
-                "string": "General settings saved"
-            },
-            "mail": {
-                "string": "Αλληλογραφία"
-            },
-            "calendar": {
-                "string": "Ημερολόγιο"
-            },
-            "contacts": {
-                "string": "Επαφές"
-            },
-            "last": {
-                "string": "Last displayed module"
-            },
-            "enable_external_avatar": {
-                "string": "Enable external avatar"
-            }
-        },
-        "descriptions": {
-            "language": {
-                "string": "The language used in the app."
-            },
-            "timezone": {
-                "string": "The time zone you are in."
-            },
-            "short_date_style": {
-                "string": "How dates are displayed in the app."
-            },
-            "long_date_style": {
-                "string": "How dates are displayed in the app."
-            },
-            "time_style": {
-                "string": "How time is displayed in the app."
-            },
-            "default_view": {
-                "string": "The default view when you open the app."
-            },
-            "refresh_frequency": {
-                "string": " How often the app should check for new emails, calendar events, and more."
-            },
-            "enable_notifications": {
-                "string": "Receive notifications for new emails, calendar events, and more."
-            },
-            "enable_external_avatar": {
-                "string": "Enable external avatar (e.g., Gravatar)"
-            }
-        }
+  "US_GENERAL": {
+    "title": {
+      "string": "Γενικές Ρυθμίσεις",
+      "context": "Title for the general settings page"
+    },
+    "labels": {
+      "language": {
+        "string": "Γλώσσα"
+      },
+      "timezone": {
+        "string": "Ζώνη ώρας"
+      },
+      "short_date_style": {
+        "string": "Στυλ Σύντομης Ημερομηνίας"
+      },
+      "long_date_style": {
+        "string": "Στυλ Εκτεταμένης Ημερομηνίας"
+      },
+      "time_style": {
+        "string": "Στυλ Ώρας"
+      },
+      "default_view": {
+        "string": "Προεπιλεγμένη Προβολή"
+      },
+      "refresh_frequency": {
+        "string": "Συχνότητα Ανανέωσης"
+      },
+      "enable_notifications": {
+        "string": "Ενεργοποίηση Ειδοποιήσεων"
+      },
+      "saved": {
+        "string": "Οι γενικές ρυθμίσεις αποθηκεύτηκαν"
+      },
+      "mail": {
+        "string": "Αλληλογραφία"
+      },
+      "calendar": {
+        "string": "Ημερολόγιο"
+      },
+      "contacts": {
+        "string": "Επαφές"
+      },
+      "last": {
+        "string": "Τελευταία εμφανιζόμενη ενότητα"
+      },
+      "enable_external_avatar": {
+        "string": "Ενεργοποίηση εξωτερικής εικόνας προφίλ"
+      }
+    },
+    "descriptions": {
+      "language": {
+        "string": "Η γλώσσα που χρησιμοποιείται στην εφαρμογή."
+      },
+      "timezone": {
+        "string": "Η ζώνη ώρας στην οποία βρίσκεστε."
+      },
+      "short_date_style": {
+        "string": "Πώς εμφανίζονται οι ημερομηνίες στην εφαρμογή."
+      },
+      "long_date_style": {
+        "string": "Πώς εμφανίζονται οι ημερομηνίες στην εφαρμογή."
+      },
+      "time_style": {
+        "string": "Πώς εμφανίζεται η ώρα στην εφαρμογή."
+      },
+      "default_view": {
+        "string": "Η προεπιλεγμένη προβολή όταν ανοίγετε την εφαρμογή."
+      },
+      "refresh_frequency": {
+        "string": " Πόσο συχνά πρέπει η εφαρμογή να ελέγχει για νέα email, γεγονότα ημερολογίου κ.λπ."
+      },
+      "enable_notifications": {
+        "string": "Λήψη ειδοποιήσεων για νέα email, γεγονότα ημερολογίου κ.λπ."
+      },
+      "enable_external_avatar": {
+        "string": "Ενεργοποίηση εξωτερικής εικόνας προφίλ (π.χ. Gravatar)"
+      }
     }
+  }
 }

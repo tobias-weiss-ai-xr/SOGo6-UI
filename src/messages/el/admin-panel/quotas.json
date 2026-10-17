@@ -1,53 +1,53 @@
 {
-    "AP_QUOTAS": {
-        "title": {
-            "string": "Usage Quotas"
-        },
-        "description": {
-            "string": "View and set per-user resource limits for mailbox size, calendars, and contacts."
-        },
-        "select_user": {
-            "string": "Select User"
-        },
-        "select_placeholder": {
-            "string": "Choose a user..."
-        },
-        "current_usage": {
-            "string": "Current Usage"
-        },
-        "set_quota": {
-            "string": "Set Quota"
-        },
-        "labels": {
-            "mailbox": {
-                "string": "Mailbox"
-            },
-            "calendars": {
-                "string": "Calendars"
-            },
-            "contacts": {
-                "string": "Επαφές"
-            },
-            "mailbox_limit": {
-                "string": "Mailbox Size Limit"
-            },
-            "calendar_limit": {
-                "string": "Max Calendars"
-            },
-            "contact_limit": {
-                "string": "Max Contacts"
-            }
-        },
-        "save": {
-            "button": {
-                "string": "Save Quota"
-            },
-            "success": {
-                "string": "Quota updated"
-            },
-            "error": {
-                "string": "Failed to update quota"
-            }
-        }
+  "AP_QUOTAS": {
+    "title": {
+      "string": "Όρια Χρήσης"
+    },
+    "description": {
+      "string": "Προβολή και ορισμός ορίων πόρων ανά χρήστη για το μέγεθος γραμματοκιβωτίου, ημερολόγια και επαφές."
+    },
+    "select_user": {
+      "string": "Επιλογή Χρήστη"
+    },
+    "select_placeholder": {
+      "string": "Επιλέξτε χρήστη..."
+    },
+    "current_usage": {
+      "string": "Τρέχουσα Χρήση"
+    },
+    "set_quota": {
+      "string": "Ορισμός Ορίου"
+    },
+    "labels": {
+      "mailbox": {
+        "string": "Γραμματοκιβώτιο"
+      },
+      "calendars": {
+        "string": "Ημερολόγια"
+      },
+      "contacts": {
+        "string": "Επαφές"
+      },
+      "mailbox_limit": {
+        "string": "Όριο Μεγέθους Γραμματοκιβωτίου"
+      },
+      "calendar_limit": {
+        "string": "Μέγιστα Ημερολόγια"
+      },
+      "contact_limit": {
+        "string": "Μέγιστες Επαφές"
+      }
+    },
+    "save": {
+      "button": {
+        "string": "Αποθήκευση Ορίου"
+      },
+      "success": {
+        "string": "Το όριο ενημερώθηκε"
+      },
+      "error": {
+        "string": "Αποτυχία ενημέρωσης ορίου"
+      }
     }
+  }
 }

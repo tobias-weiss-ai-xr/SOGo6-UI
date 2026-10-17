@@ -1,59 +1,59 @@
 {
-    "AP_QUICK": {
-        "title": {
-            "string": "Quick Actions"
-        },
-        "description": {
-            "string": "User-defined multi-step actions triggered with a single click from the mail list."
-        },
-        "form": {
-            "create": {
-                "string": "New Action"
-            },
-            "cancel": {
-                "string": "Ακύρωση"
-            },
-            "title": {
-                "string": "Create Quick Action"
-            },
-            "name": {
-                "string": "Action Name"
-            },
-            "icon": {
-                "string": "Icon"
-            },
-            "steps": {
-                "string": "Steps"
-            },
-            "submit": {
-                "string": "Create Action"
-            }
-        },
-        "create": {
-            "success": {
-                "string": "Action created"
-            },
-            "error": {
-                "string": "Failed to create"
-            }
-        },
-        "delete": {
-            "success": {
-                "string": "Action deleted"
-            },
-            "error": {
-                "string": "Failed to delete"
-            }
-        },
-        "list": {
-            "empty": {
-                "string": "No quick actions yet. Create one to speed up your workflow."
-            }
-        },
-        "errors": {
-            "fields": {
-                "string": "Name and at least one step are required"
-            }
-        }
+  "AP_QUICK": {
+    "title": {
+      "string": "Γρήγορες Ενέργειες"
+    },
+    "description": {
+      "string": "Ενέργειες πολλαπλών βημάτων ορισμένες από τον χρήστη, που ενεργοποιούνται με ένα κλικ από τη λίστα email."
+    },
+    "form": {
+      "create": {
+        "string": "Νέα Ενέργεια"
+      },
+      "cancel": {
+        "string": "Ακύρωση"
+      },
+      "title": {
+        "string": "Δημιουργία Γρήγορης Ενέργειας"
+      },
+      "name": {
+        "string": "Όνομα Ενέργειας"
+      },
+      "icon": {
+        "string": "Εικονίδιο"
+      },
+      "steps": {
+        "string": "Βήματα"
+      },
+      "submit": {
+        "string": "Δημιουργία Ενέργειας"
+      }
+    },
+    "create": {
+      "success": {
+        "string": "Η ενέργεια δημιουργήθηκε"
+      },
+      "error": {
+        "string": "Αποτυχία δημιουργίας"
+      }
+    },
+    "delete": {
+      "success": {
+        "string": "Η ενέργεια διαγράφηκε"
+      },
+      "error": {
+        "string": "Αποτυχία διαγραφής"
+      }
+    },
+    "list": {
+      "empty": {
+        "string": "Δεν υπάρχουν γρήγορες ενέργειες ακόμα. Δημιουργήστε μία για να επιταχύνετε τη ροή εργασιών σας."
+      }
+    },
+    "errors": {
+      "fields": {
+        "string": "Το όνομα και τουλάχιστον ένα βήμα είναι υποχρεωτικά"
+      }
     }
+  }
 }

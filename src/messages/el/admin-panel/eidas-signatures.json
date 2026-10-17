@@ -1,74 +1,74 @@
 {
-    "EIDAS": {
-        "title": {
-            "string": "eIDAS Qualified Signatures"
-        },
-        "description": {
-            "string": "EU Regulation 910/2014 qualified electronic signatures and timestamps"
-        },
-        "errors": {
-            "fields": {
-                "string": "All fields required"
-            },
-            "fail": {
-                "string": "Operation failed"
-            }
-        },
-        "success": {
-            "sign": {
-                "string": "Document signed with QES"
-            }
-        },
-        "sign": {
-            "title": {
-                "string": "Sign Document"
-            },
-            "placeholder": {
-                "string": "Enter document content to sign..."
-            },
-            "signer": {
-                "string": "Signer Email"
-            },
-            "algorithm": {
-                "string": "Hash Algorithm"
-            },
-            "button": {
-                "string": "Sign with QES"
-            }
-        },
-        "verify": {
-            "title": {
-                "string": "Verify Signature"
-            },
-            "doc_hash": {
-                "string": "Document Hash"
-            },
-            "signature": {
-                "string": "Signature"
-            },
-            "button": {
-                "string": "Verify"
-            },
-            "valid": {
-                "string": "Valid"
-            },
-            "invalid": {
-                "string": "Invalid"
-            }
-        },
-        "certs": {
-            "title": {
-                "string": "Trust Service Certificates"
-            },
-            "type": {
-                "string": "Τύπος"
-            },
-            "name": {
-                "string": "Όνομα"
-            },
-            "hash": {
-                "string": "Hash"
-            }
-        }
+  "EIDAS": {
+    "title": {
+      "string": "Πιστοποιημένες Υπογραφές eIDAS"
+    },
+    "description": {
+      "string": "Πιστοποιημένες ηλεκτρονικές υπογραφές και χρονοσημάνσεις σύμφωνα με τον Κανονισμό ΕΕ 910/2014"
+    },
+    "errors": {
+      "fields": {
+        "string": "Όλα τα πεδία είναι υποχρεωτικά"
+      },
+      "fail": {
+        "string": "Η λειτουργία απέτυχε"
+      }
+    },
+    "success": {
+      "sign": {
+        "string": "Το έγγραφο υπογράφηκε με QES"
+      }
+    },
+    "sign": {
+      "title": {
+        "string": "Υπογραφή Εγγράφου"
+      },
+      "placeholder": {
+        "string": "Εισαγάγετε το περιεχόμενο του εγγράφου προς υπογραφή..."
+      },
+      "signer": {
+        "string": "Email Υπογράφοντα"
+      },
+      "algorithm": {
+        "string": "Αλγόριθμος Κατακερματισμού"
+      },
+      "button": {
+        "string": "Υπογραφή με QES"
+      }
+    },
+    "verify": {
+      "title": {
+        "string": "Επαλήθευση Υπογραφής"
+      },
+      "doc_hash": {
+        "string": "Κατακερματισμός Εγγράφου"
+      },
+      "signature": {
+        "string": "Υπογραφή"
+      },
+      "button": {
+        "string": "Επαλήθευση"
+      },
+      "valid": {
+        "string": "Έγκυρο"
+      },
+      "invalid": {
+        "string": "Μη έγκυρο"
+      }
+    },
+    "certs": {
+      "title": {
+        "string": "Πιστοποιητικά Υπηρεσίας Εμπιστοσύνης"
+      },
+      "type": {
+        "string": "Τύπος"
+      },
+      "name": {
+        "string": "Όνομα"
+      },
+      "hash": {
+        "string": "Κατακερματισμός"
+      }
     }
+  }
 }
