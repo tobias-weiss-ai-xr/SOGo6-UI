@@ -28,15 +28,15 @@
             "context": "Label for the setting that determines the first day of the week in calendar view (0=Sunday..6=Saturday)"
         },
         "workdayStartTime": {
-            "string": "Workday start time",
+            "string": "Beginn des Arbeitstages",
             "context": "Label for the setting that determines the start time of the workday (e.g. 09:00)"
         },
         "workdayEndTime": {
-            "string": "Workday end time",
+            "string": "Ende des Arbeitstages",
             "context": "Label for the setting that determines the end time of the workday (e.g. 18:00)"
         },
         "busyOffHours": {
-            "string": "Show as busy during off hours",
+            "string": "Außerhalb der Arbeitszeiten als beschäftigt anzeigen",
             "context": "Label for the setting that determines whether to show as busy during off hours"
         },
         "calendarDaysShowed": {
@@ -47,18 +47,18 @@
             "4": "Donnerstag",
             "5": "Freitag",
             "6": "Samstag",
-            "string": "Days showed in calendar view",
+            "string": "Angezeigte Tage in der Kalenderansicht",
             "context": "Label for the setting that determines which days are showed in calendar view (array of 0=Sunday..6=Saturday)"
         },
         "calendarWeekNumberFormat": {
-            "%U": "Sunday as the first day of the week",
-            "%W": "Monday as the first day of the week",
-            "%V": "First 4 days week",
+            "%U": "Sonntag als erster Tag der Woche",
+            "%W": "Montag als erster Tag der Woche",
+            "%V": "Woche mit den ersten 4 Tagen",
             "string": "Wie die erste Woche nummeriert wird",
             "context": "Label for the setting that determines the week number format in calendar view (%U, %W or %V)"
         },
         "calendarDefault": {
-            "string": "Default Calendar chosen when creating a new event",
+            "string": "Standardkalender beim Erstellen eines neuen Ereignisses",
             "context": "Label for the setting that determines the default calendar"
         },
         "calendarStatus": {
@@ -91,15 +91,15 @@
             "context": "Label for the setting that determines the default reminder for journal entries (e.g. -PT15M)"
         },
         "reminderAfter": {
-            "string": "before",
+            "string": "vorher",
             "context": "example: 20min before"
         },
         "noInvitation": {
-            "string": "Prevent to be add as attendee by others users",
+            "string": "Verhindern, dass andere Benutzer Sie als Teilnehmer hinzufügen",
             "context": "Label for the setting prevent user to be add as attendees by others users"
         },
         "noInvitationWhitelist": {
-            "string": "Invitation whitelist",
+            "string": "Whitelist für Einladungen",
             "context": "Label for the setting that determines the whitelist of email addresses to which invitations will be sent even if 'Do not send invitations' is enabled"
         },
         "doNotSendInvitFromDav": {
@@ -108,7 +108,7 @@
         },
         "davForceSyncFromClient": {
             "string": "Synchronisation von Ereignissen erzwingen, die von CalDAV-Clients erstellt wurden",
-            "help-tooltip": "Warning: if events from the client are more recent, force the sync anyway",
+            "help-tooltip": "Warnung: Wenn Ereignisse auf dem Client aktueller sind, wird die Synchronisation trotzdem erzwungen",
             "context": "Label for the setting that determines whether to force synchronization of events created from CalDAV clients or not"
         },
         "categories": {
