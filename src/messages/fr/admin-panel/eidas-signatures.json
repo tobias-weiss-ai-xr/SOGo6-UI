@@ -4,19 +4,19 @@
             "string": "Signatures qualifiées eIDAS"
         },
         "description": {
-            "string": "EU Regulation 910/2014 qualified electronic signatures and timestamps"
+            "string": "Signatures et horodatages électroniques qualifiés — Règlement UE 910/2014"
         },
         "errors": {
             "fields": {
-                "string": "All fields required"
+                "string": "Tous les champs sont requis"
             },
             "fail": {
-                "string": "Operation failed"
+                "string": "Échec de l'opération"
             }
         },
         "success": {
             "sign": {
-                "string": "Document signed with QES"
+                "string": "Document signé avec SEQ"
             }
         },
         "sign": {
@@ -24,50 +24,50 @@
                 "string": "Sign Docuement"
             },
             "placeholder": {
-                "string": "Enter document content to sign..."
+                "string": "Saisir le contenu du document à signer..."
             },
             "signer": {
-                "string": "Signer Email"
+                "string": "E-mail du signataire"
             },
             "algorithm": {
-                "string": "Hash Algorithm"
+                "string": "Algorithme de hachage"
             },
             "button": {
-                "string": "Sign with QES"
+                "string": "Signer avec SEQ"
             }
         },
         "verify": {
             "title": {
-                "string": "Verify Signature"
+                "string": "Vérifier la signature"
             },
             "doc_hash": {
-                "string": "Document Hash"
+                "string": "Hachage du document"
             },
             "signature": {
                 "string": "Signature"
             },
             "button": {
-                "string": "Verify"
+                "string": "Vérifier"
             },
             "valid": {
-                "string": "Valid"
+                "string": "Valide"
             },
             "invalid": {
-                "string": "Invalid"
+                "string": "Non valide"
             }
         },
         "certs": {
             "title": {
-                "string": "Trust Service Certificates"
+                "string": "Certificats de services de confiance"
             },
             "type": {
                 "string": "Type"
             },
             "name": {
-                "string": "Name"
+                "string": "Nom"
             },
             "hash": {
-                "string": "Hash"
+                "string": "Hachage"
             }
         }
     }

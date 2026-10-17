@@ -4,7 +4,7 @@
             "string": "Filtrer..."
         },
         "no_result": {
-            "string": "No results."
+            "string": "Aucun résultat."
         },
         "previous": {
             "string": "Précédent"
@@ -13,7 +13,7 @@
             "string": "Suivant"
         },
         "selected": {
-            "string": "{selected} of {total} row(s) selected."
+            "string": "{selected} ligne(s) sur {total} sélectionnée(s)."
         }
     }
 }

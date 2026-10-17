@@ -8,36 +8,36 @@
         },
         "errors": {
             "name": {
-                "string": "Group name required"
+                "string": "Nom du groupe requis"
             },
             "fail": {
-                "string": "Operation failed"
+                "string": "Échec de l'opération"
             }
         },
         "success": {
             "create": {
-                "string": "Group created successfully"
+                "string": "Groupe créé avec succès"
             }
         },
         "field": {
             "name": {
-                "string": "Group Name"
+                "string": "Nom du groupe"
             },
             "course": {
-                "string": "Course Code"
+                "string": "Code du cours"
             }
         },
         "button": {
             "create": {
-                "string": "Create Group"
+                "string": "Créer le groupe"
             }
         },
         "label": {
             "none": {
-                "string": "None"
+                "string": "Aucun"
             },
             "students": {
-                "string": "students"
+                "string": "étudiants"
             }
         }
     }

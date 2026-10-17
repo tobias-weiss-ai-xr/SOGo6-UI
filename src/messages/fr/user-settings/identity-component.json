@@ -13,25 +13,25 @@
             },
             "setAsDefault": "Définir par défaut",
             "defaultDescription": "Cette identité sera utilisée par défaut",
-            "mainIdentityEmail": "This is your main email address and cannot be changed",
-            "nameNotEditable": "Name editing is disabled by administrator",
-            "replyToNotEditable": "Reply-To editing is disabled by administrator",
+            "mainIdentityEmail": "Ceci est votre adresse e-mail principale et ne peut pas être modifiée",
+            "nameNotEditable": "La modification du nom est désactivée par l'administrateur",
+            "replyToNotEditable": "La modification du champ Répondre à est désactivée par l'administrateur",
             "signatures": "Signatures",
-            "signaturesDescription": "Create and manage email signatures for this identity",
-            "signaturePlaceholder": "Enter signature name",
-            "addIdentity": "Add an identity",
-            "allowsCustom": "You can add and manage additional identities"
+            "signaturesDescription": "Créer et gérer des signatures e-mail pour cette identité",
+            "signaturePlaceholder": "Saisir le nom de la signature",
+            "addIdentity": "Ajouter une identité",
+            "allowsCustom": "Vous pouvez ajouter et gérer des identités supplémentaires"
         },
         "description": {
             "useDefaultIdentity": {
-                "string": "This identity will be selected by default when composing new messages"
+                "string": "Cette identité sera sélectionnée par défaut lors de la rédaction de nouveaux messages"
             }
         },
         "accessibility": {
-            "toggleCollapse": "Toggle identity details",
+            "toggleCollapse": "Afficher/masquer les détails de l’identité",
             "expandIdentity": "Développer",
             "collapseIdentity": "Réduire",
-            "removeIcon": "Remove identity button"
+            "removeIcon": "Bouton de suppression d'identité"
         }
     }
 }

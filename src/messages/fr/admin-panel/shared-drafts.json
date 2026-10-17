@@ -4,67 +4,67 @@
             "string": "Brouillons collaboratifs"
         },
         "description": {
-            "string": "Share draft emails with colleagues for review and approval before sending."
+            "string": "Partagez des brouillons d’e-mails avec des collègues pour relecture et approbation avant envoi."
         },
         "form": {
             "share": {
-                "string": "Share Draft"
+                "string": "Partager un brouillon"
             },
             "cancel": {
                 "string": "Annuler"
             },
             "title": {
-                "string": "Share a Draft"
+                "string": "Partager un brouillon"
             },
             "subject": {
-                "string": "Subject"
+                "string": "Objet"
             },
             "reviewers": {
-                "string": "Reviewers"
+                "string": "Relecteurs"
             },
             "message": {
-                "string": "Message to Reviewers"
+                "string": "Message aux relecteurs"
             },
             "message_hint": {
-                "string": "Please review this draft before I send it"
+                "string": "Merci de relire ce brouillon avant que je l’envoie"
             },
             "body": {
-                "string": "Email Body"
+                "string": "Corps de l’e-mail"
             },
             "submit": {
-                "string": "Share Draft"
+                "string": "Partager le brouillon"
             }
         },
         "create": {
             "success": {
-                "string": "Draft shared"
+                "string": "Brouillon partagé"
             },
             "error": {
-                "string": "Failed to share draft"
+                "string": "Échec du partage du brouillon"
             }
         },
         "review": {
             "approved": {
-                "string": "Draft approved"
+                "string": "Brouillon approuvé"
             },
             "rejected": {
-                "string": "Draft rejected"
+                "string": "Brouillon rejeté"
             },
             "error": {
-                "string": "Review failed"
+                "string": "Échec de la relecture"
             }
         },
         "list": {
             "empty": {
-                "string": "No shared drafts. Create one to collaborate on an email."
+                "string": "Aucun brouillon partagé. Créez-en un pour collaborer sur un e-mail."
             },
             "by": {
-                "string": "by"
+                "string": "par"
             }
         },
         "errors": {
             "fields": {
-                "string": "Subject, body, and at least one reviewer are required"
+                "string": "L'objet, le corps et au moins un relecteur sont requis"
             }
         }
     }

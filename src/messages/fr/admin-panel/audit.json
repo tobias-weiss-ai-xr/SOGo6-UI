@@ -4,7 +4,7 @@
       "string": "Journal d'audit"
     },
     "description": {
-      "string": "Tamper-proof log of admin and user actions. Entries are append-only and cannot be modified or deleted."
+      "string": "Journal inaltérable des actions des administrateurs et des utilisateurs. Les entrées sont en ajout seul et ne peuvent pas être modifiées ou supprimées."
     },
     "table": {
       "timestamp": {
@@ -14,30 +14,30 @@
         "string": "Action"
       },
       "actor": {
-        "string": "Actor"
+        "string": "Acteur"
       },
       "target": {
-        "string": "Target"
+        "string": "Cible"
       },
       "detail": {
-        "string": "Detail"
+        "string": "Détail"
       },
       "ip": {
         "string": "Adresse IP"
       },
       "no_entries": {
-        "string": "No audit log entries found."
+        "string": "Aucune entrée dans le journal d'audit."
       }
     },
     "count_one": {
-      "string": "entry"
+      "string": "entrée"
     },
     "count_many": {
-      "string": "entries"
+      "string": "entrées"
     },
     "errors": {
       "load_failed": {
-        "string": "Failed to load audit log"
+        "string": "Échec du chargement du journal d'audit"
       }
     }
   }

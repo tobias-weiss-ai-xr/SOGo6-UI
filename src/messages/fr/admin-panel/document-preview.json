@@ -4,7 +4,7 @@
             "string": "Aperçu de documents"
         },
         "description": {
-            "string": "Preview PDF and Office documents in-browser. PDFs render natively; Office docs use Collabora/OnlyOffice."
+            "string": "Prévisualisez les documents PDF et Office dans le navigateur. Les PDF sont affichés nativement ; les documents Office utilisent Collabora/OnlyOffice."
         },
         "upload": {
             "dropzone": {
@@ -16,18 +16,18 @@
                 "string": "Paramètres"
             },
             "title": {
-                "string": "Preview Settings"
+                "string": "Paramètres de prévisualisation"
             },
             "collabora_url": {
-                "string": "Collabora/OnlyOffice URL"
+                "string": "URL Collabora/OnlyOffice"
             },
             "hint": {
-                "string": "The base URL of your Collabora or OnlyOffice server. Leave default for demo mode."
+                "string": "L'URL de base de votre serveur Collabora ou OnlyOffice. Laissez la valeur par défaut pour le mode démo."
             }
         },
         "errors": {
             "unsupported": {
-                "string": "Unsupported file type. Use .pdf, .docx, .xlsx, or .pptx"
+                "string": "Type de fichier non pris en charge. Utilisez .pdf, .docx, .xlsx ou .pptx"
             }
         }
     }

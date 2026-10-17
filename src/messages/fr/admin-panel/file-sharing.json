@@ -4,53 +4,53 @@
             "string": "Partage de fichiers"
         },
         "description": {
-            "string": "Create shareable links for files with optional password protection, expiration, and download tracking."
+            "string": "Créez des liens de partage pour des fichiers avec protection par mot de passe facultative, expiration et suivi des téléchargements."
         },
         "form": {
             "share": {
-                "string": "Share File"
+                "string": "Partager un fichier"
             },
             "cancel": {
                 "string": "Annuler"
             },
             "title": {
-                "string": "Share a File"
+                "string": "Partager un fichier"
             },
             "filename": {
-                "string": "Filename"
+                "string": "Nom du fichier"
             },
             "size": {
-                "string": "Size (bytes)"
+                "string": "Taille (octets)"
             },
             "expires": {
-                "string": "Expires in (days)"
+                "string": "Expire dans (jours)"
             },
             "password": {
-                "string": "Password"
+                "string": "Mot de passe"
             },
             "password_hint": {
-                "string": "Leave empty for no password"
+                "string": "Laisser vide pour aucun mot de passe"
             },
             "submit": {
-                "string": "Create Share Link"
+                "string": "Créer le lien de partage"
             }
         },
         "create": {
             "success": {
-                "string": "Share link created"
+                "string": "Lien de partage créé"
             },
             "error": {
-                "string": "Failed to create share"
+                "string": "Échec de la création du partage"
             }
         },
         "list": {
             "empty": {
-                "string": "No shared files. Create a share link to securely distribute files."
+                "string": "Aucun fichier partagé. Créez un lien de partage pour diffuser des fichiers en toute sécurité."
             }
         },
         "errors": {
             "fields": {
-                "string": "Filename and size are required"
+                "string": "Le nom et la taille du fichier sont requis"
             }
         }
     }

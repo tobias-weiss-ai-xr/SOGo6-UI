@@ -11,7 +11,7 @@
         "string": "Tous les systèmes opérationnels"
       },
       "degraded": {
-        "string": "Degraded"
+        "string": "Dégradé"
       }
     },
     "overview": {
@@ -22,12 +22,12 @@
         "string": "Version"
       },
       "services": {
-        "string": "Services Healthy"
+        "string": "Services opérationnels"
       }
     },
     "errors": {
       "load_failed": {
-        "string": "Failed to load health data"
+        "string": "Échec du chargement des données de santé"
       }
     }
   }

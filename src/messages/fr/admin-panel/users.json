@@ -71,7 +71,7 @@
                 "string": "Edit Useur"
             },
             "save": {
-                "string": "Save Changes"
+                "string": "Enregistrer les modifications"
             },
             "success": {
                 "string": "Utilisateur mis à jour avec succès"
@@ -96,7 +96,7 @@
         },
         "form": {
             "uid": {
-                "string": "User ID (email)"
+                "string": "Identifiant utilisateur (e-mail)"
             },
             "cn": {
                 "string": "Nom complet"
@@ -114,13 +114,13 @@
                 "string": "Mot de passe"
             },
             "uidNumber": {
-                "string": "UID Number (optional)"
+                "string": "Numéro UID (facultatif)"
             },
             "gidNumber": {
-                "string": "GID Number (optional)"
+                "string": "Numéro GID (facultatif)"
             },
             "homeDirectory": {
-                "string": "Home Directory (optional)"
+                "string": "Répertoire personnel (facultatif)"
             },
             "required": {
                 "string": "Requis"

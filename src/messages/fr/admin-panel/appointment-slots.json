@@ -4,67 +4,67 @@
             "string": "Créneaux de rendez-vous"
         },
         "description": {
-            "string": "Publish bookable time slots (Calendly-style). Generate booking links for external participants."
+            "string": "Publiez des créneaux réservables (à la Calendly). Générez des liens de réservation pour des participants externes."
         },
         "form": {
             "create": {
-                "string": "Create Slot"
+                "string": "Créer un créneau"
             },
             "cancel": {
                 "string": "Annuler"
             },
             "title": {
-                "string": "New Appointment Slot"
+                "string": "Nouveau créneau de rendez-vous"
             },
             "slot_title": {
-                "string": "Slot Title"
+                "string": "Titre du créneau"
             },
             "duration": {
-                "string": "Duration (min)"
+                "string": "Durée (min)"
             },
             "buffer": {
-                "string": "Buffer (min)"
+                "string": "Marge (min)"
             },
             "start_time": {
-                "string": "Start Time"
+                "string": "Heure de début"
             },
             "end_time": {
-                "string": "End Time"
+                "string": "Heure de fin"
             },
             "days": {
-                "string": "Available Days"
+                "string": "Jours disponibles"
             },
             "submit": {
-                "string": "Create Slot"
+                "string": "Créer le créneau"
             }
         },
         "create": {
             "success": {
-                "string": "Slot created"
+                "string": "Créneau créé"
             },
             "error": {
-                "string": "Failed to create slot"
+                "string": "Échec de la création du créneau"
             }
         },
         "slots": {
             "title": {
-                "string": "Your Slots"
+                "string": "Vos créneaux"
             },
             "empty": {
-                "string": "No appointment slots. Create one to share your availability."
+                "string": "Aucun créneau de rendez-vous. Créez-en un pour partager vos disponibilités."
             }
         },
         "bookings": {
             "title": {
-                "string": "Recent Bookings"
+                "string": "Réservations récentes"
             },
             "empty": {
-                "string": "No bookings yet."
+                "string": "Aucune réservation pour le moment."
             }
         },
         "errors": {
             "fields": {
-                "string": "Title, duration, times, and at least one day are required"
+                "string": "Le titre, la durée, les horaires et au moins un jour sont requis"
             }
         }
     }

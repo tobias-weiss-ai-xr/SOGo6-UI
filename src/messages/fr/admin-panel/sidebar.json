@@ -1,16 +1,16 @@
 {
     "AP_SIDEBAR": {
         "system": {
-            "string": "System"
+            "string": "Système"
         },
         "theme": {
-            "string": "Theme"
+            "string": "Thème"
         },
         "users": {
-            "string": "Users"
+            "string": "Utilisateurs"
         },
         "bulk_users": {
-            "string": "Bulk Users"
+            "string": "Utilisateurs en masse"
         },
         "quotas": {
             "string": "Quotas"
@@ -19,40 +19,40 @@
             "string": "Brandant"
         },
         "backup": {
-            "string": "Backup"
+            "string": "Sauvegarde"
         },
         "db_migration": {
-            "string": "DB Migration"
+            "string": "Migration BDD"
         },
         "migration": {
             "string": "Migration"
         },
         "config_code": {
-            "string": "Config as Code"
+            "string": "Configuration en tant que code"
         },
         "webhooks": {
             "string": "Webhooks"
         },
         "oauth_clients": {
-            "string": "OAuth Clients"
+            "string": "Clients OAuth"
         },
         "scheduling_polls": {
-            "string": "Scheduling Polls"
+            "string": "Sondages de planification"
         },
         "appointment_slots": {
-            "string": "Appointment Slots"
+            "string": "Créneaux de rendez-vous"
         },
         "shared_drafts": {
-            "string": "Shared Drafts"
+            "string": "Brouillons partagés"
         },
         "file_sharing": {
             "string": "File Sharant"
         },
         "doc_preview": {
-            "string": "Doc Preview"
+            "string": "Aperçu de documents"
         },
         "approvals": {
-            "string": "Approvals"
+            "string": "Approbations"
         },
         "helpdesk": {
             "string": "Helpdesk"
@@ -61,59 +61,59 @@
             "string": "CRM"
         },
         "workflows": {
-            "string": "Workflows"
+            "string": "Flux de travail"
         },
         "quick_actions": {
-            "string": "Quick Actions"
+            "string": "Actions rapides"
         },
         "freebusy": {
-            "string": "Free/Busy"
+            "string": "Libre/Occupé"
         },
         "ai_summarize": {
-            "string": "AI Summarize"
+            "string": "Résumé IA"
         },
         "ai_classify": {
-            "string": "AI Classify"
+            "string": "Classification IA"
         },
         "ai_draft": {
-            "string": "AI Draft"
+            "string": "Brouillon IA"
         },
         "ai_search": {
-            "string": "AI Search"
+            "string": "Recherche IA"
         },
         "ai_schedule": {
-            "string": "AI Schedule"
+            "string": "Planification IA"
         },
         "ai_anomaly": {
-            "string": "AI Anomaly"
+            "string": "Anomalies IA"
         },
         "ai_enrich": {
-            "string": "AI Enrich"
+            "string": "Enrichissement IA"
         },
         "ai_attachment": {
-            "string": "AI Attach"
+            "string": "Pièces jointes IA"
         },
         "ai_spam": {
-            "string": "AI Spam"
+            "string": "Anti-spam IA"
         },
         "ai_transcripts": {
-            "string": "AI Transcripts"
+            "string": "Transcriptions IA"
         },
         "api_docs": {
-            "string": "API Documentation"
+            "string": "Documentation API"
         },
         "config": {
             "string": "Configuration",
             "rules": {
-                "string": "Rules"
+                "string": "Règles"
             },
             "domains": {
-                "string": "Domains",
+                "string": "Domaines",
                 "default": {
-                    "string": "Default"
+                    "string": "Par défaut"
                 },
                 "custom": {
-                    "string": "Custom domains"
+                    "string": "Domaines personnalisés"
                 }
             }
         },
@@ -121,19 +121,19 @@
             "string": "Sessions"
         },
         "audit": {
-            "string": "Audit Log"
+            "string": "Journal d'audit"
         },
         "health": {
-            "string": "Health"
+            "string": "État"
         },
         "debug": {
-            "string": "Mailbox Debug"
+            "string": "Débogage de boîte aux lettres"
         },
         "dns_wizard": {
-            "string": "DNS Wizard"
+            "string": "Assistant DNS"
         },
         "resources": {
-            "string": "Resources"
+            "string": "Ressources"
         },
         "scim": {
             "string": "Provisionnement SCIM"

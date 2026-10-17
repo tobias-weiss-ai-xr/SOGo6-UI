@@ -8,46 +8,46 @@
         },
         "wizard": {
             "title": {
-                "string": "Start Migration"
+                "string": "Démarrer la migration"
             },
             "source": {
                 "string": "Source"
             },
             "select_source": {
-                "string": "Choose a source..."
+                "string": "Choisissez une source..."
             },
             "user": {
                 "string": "Target Useur"
             },
             "select_user": {
-                "string": "Select user..."
+                "string": "Sélectionner un utilisateur..."
             }
         },
         "start": {
             "button": {
-                "string": "Start Migration"
+                "string": "Démarrer la migration"
             },
             "running": {
-                "string": "Starting..."
+                "string": "Démarrage..."
             },
             "success": {
-                "string": "Migration started"
+                "string": "Migration démarrée"
             },
             "error": {
-                "string": "Migration failed"
+                "string": "Échec de la migration"
             }
         },
         "history": {
             "title": {
-                "string": "Migration History"
+                "string": "Historique des migrations"
             },
             "empty": {
-                "string": "No migrations yet."
+                "string": "Aucune migration pour le moment."
             }
         },
         "errors": {
             "fields": {
-                "string": "Source and user are required"
+                "string": "La source et l'utilisateur sont requis"
             }
         }
     }

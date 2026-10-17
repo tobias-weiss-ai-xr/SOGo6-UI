@@ -4,20 +4,20 @@
             "string": "Sondages de planification"
         },
         "description": {
-            "string": "Create 'When are you free?' polls to find the best meeting time for internal and external participants."
+            "string": "Créez des sondages « Quand êtes-vous disponible ? » pour trouver le meilleur créneau de réunion pour les participants internes et externes."
         },
         "form": {
             "create": {
-                "string": "Create Poll"
+                "string": "Créer un sondage"
             },
             "cancel": {
                 "string": "Annuler"
             },
             "title": {
-                "string": "New Scheduling Poll"
+                "string": "Nouveau sondage de planification"
             },
             "poll_title": {
-                "string": "Poll Title"
+                "string": "Titre du sondage"
             },
             "title_hint": {
                 "string": "e.g. Q1 Planning Meetant"
@@ -29,34 +29,34 @@
                 "string": "Description"
             },
             "time_slots": {
-                "string": "Proposed Time Slots"
+                "string": "Créneaux proposés"
             },
             "add_slot": {
-                "string": "Add Slot"
+                "string": "Ajouter un créneau"
             },
             "submit": {
-                "string": "Create Poll"
+                "string": "Créer le sondage"
             }
         },
         "create": {
             "success": {
-                "string": "Poll created"
+                "string": "Sondage créé"
             },
             "error": {
-                "string": "Failed to create poll"
+                "string": "Échec de la création du sondage"
             }
         },
         "list": {
             "empty": {
-                "string": "No scheduling polls yet. Create one to find the best meeting time."
+                "string": "Aucun sondage de planification pour le moment. Créez-en un pour trouver le meilleur créneau de réunion."
             },
             "by": {
-                "string": "by"
+                "string": "par"
             }
         },
         "errors": {
             "fields": {
-                "string": "Title, participants, and at least one time slot are required"
+                "string": "Le titre, les participants et au moins un créneau sont requis"
             }
         }
     }

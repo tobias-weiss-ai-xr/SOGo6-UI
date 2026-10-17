@@ -46,19 +46,19 @@
                     "string": "Nom d'affichage"
                 },
                 "last_name": {
-                    "string": "Last name"
+                    "string": "Nom"
                 },
                 "first_name": {
-                    "string": "First name"
+                    "string": "Prénom"
                 },
                 "organization": {
                     "string": "Organisation"
                 },
                 "created_at": {
-                    "string": "Date created"
+                    "string": "Date de création"
                 },
                 "updated_at": {
-                    "string": "Date updated"
+                    "string": "Date de mise à jour"
                 }
             },
             "sort_order_asc": {
@@ -69,14 +69,14 @@
             }
         },
         "no_items": {
-            "string": "No contact found."
+            "string": "Aucun contact trouvé."
         },
         "empty_title": {
-            "string": "No contacts yet",
+            "string": "Aucun contact pour le moment",
             "context": "Title when an address book has no contacts"
         },
         "empty_description": {
-            "string": "Add your first contact to get started.",
+            "string": "Ajoutez votre premier contact pour commencer.",
             "context": "Description when an address book is empty"
         },
         "empty_create_contact": {
@@ -84,19 +84,19 @@
             "context": "Button to create the first contact from empty state"
         },
         "search_empty_title": {
-            "string": "No results",
+            "string": "Aucun résultat",
             "context": "Title when search returns no contacts"
         },
         "search_empty_description": {
-            "string": "Try a different search term or clear the filter.",
+            "string": "Essayez un autre terme de recherche ou effacez le filtre.",
             "context": "Description when search has no matches"
         },
         "clear_search": {
-            "string": "Clear search",
+            "string": "Effacer la recherche",
             "context": "Button to reset the contacts search filter"
         },
         "search_placeholder": {
-            "string": "Search contacts…",
+            "string": "Rechercher des contacts…",
             "context": "Placeholder for the contacts search input in the header"
         },
         "search_min_length": {
@@ -104,19 +104,19 @@
             "context": "Hint when the search query is too short for server-side search"
         },
         "source_address_book": {
-            "string": "In {name}",
+            "string": "Dans {name}",
             "context": "Shows which address book a contact belongs to in the all-contacts view."
         },
         "delete_selected": {
-            "string": "Delete selected contacts",
+            "string": "Supprimer les contacts sélectionnés",
             "context": "Aria label for bulk delete button"
         },
         "bulk_delete_description": {
-            "string": "Are you sure you want to delete {number, plural, one {# contact} other {# contacts}}? This action cannot be undone.",
+            "string": "Voulez-vous vraiment supprimer {number, plural, one {# contact} other {# contacts}} ? Cette action est irréversible.",
             "context": "Confirmation message for bulk delete"
         },
         "create_list_from_selection": {
-            "string": "Create distribution list from selection",
+            "string": "Créer une liste de diffusion depuis la sélection",
             "context": "Aria label for bulk create list action"
         },
         "list_member_count": {
@@ -124,27 +124,27 @@
             "context": "Member count shown under a distribution list in the contact list"
         },
         "read_only_banner": {
-            "string": "{name} is read-only. You cannot edit contacts or lists.",
+            "string": "{name} est en lecture seule. Vous ne pouvez pas modifier les contacts ni les listes.",
             "context": "Banner shown when viewing a non-writable address book."
         },
         "pagination": {
             "previous": {
-                "string": "Previous page",
+                "string": "Page précédente",
                 "context": "Pagination previous page button"
             },
             "next": {
-                "string": "Next page",
+                "string": "Page suivante",
                 "context": "Pagination next page button"
             },
             "page": {
-                "string": "Page {page} of {total}",
+                "string": "Page {page} sur {total}",
                 "context": "Current pagination page indicator (contacts only)"
             },
             "page_size": {
-                "string": "Per page"
+                "string": "Par page"
             },
             "contacts_page_hint": {
-                "string": "Pagination applies to contacts; all lists are shown.",
+                "string": "La pagination s’applique aux contacts ; toutes les listes sont affichées.",
                 "context": "Hint that list pagination is contact-scoped"
             }
         }
