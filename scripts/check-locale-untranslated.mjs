@@ -42,24 +42,28 @@ const LOCALE_ALLOWLIST = {
   fr: ['Nom (facultatif)'],
 }
 
-function flatten(obj, path = '', parentKeys = {}) {
+const SIBLINGS = {}
+
+function flatten(obj, path = '') {
   const out = {}
   for (const [k, v] of Object.entries(obj ?? {})) {
     const p = path ? `${path}/${k}` : `/${k}`
     if (v && typeof v === 'object') {
-      Object.assign(out, flatten(v, p))
+      flatten(v, p)
     } else {
       out[p] = v
-      parentKeys[p] = Object.keys(obj) // siblings of this leaf
+      SIBLINGS[p] = Object.keys(obj) // leaves remember their parent's keys
     }
   }
   return out
 }
 
-function isTranslatorNote(relLeafPath, siblings) {
+function isTranslatorNote(relLeafPath) {
   if (relLeafPath.endsWith('/context')) return true
   const leaf = relLeafPath.split('/').pop()
-  if (leaf === 'description' && siblings.includes('string')) return true
+  if (leaf === 'description' && (SIBLINGS[relLeafPath] ?? []).includes('string')) {
+    return true
+  }
   return false
 }
 
@@ -126,13 +130,12 @@ for (const filePath of files) {
     continue
   }
   checked++
-  const siblings = {}
-  const floc = flatten(loc, '', siblings)
+  const floc = flatten(loc)
   const fen = flatten(en)
   const violations = []
   for (const [k, v] of Object.entries(floc)) {
     if (typeof v !== 'string') continue
-    if (isTranslatorNote(k, siblings[k])) continue
+    if (isTranslatorNote(k)) continue
     const leaf = k.split('/').pop()
     if (v === leaf) violations.push([k, v, 'raw-key fallback'])
     else if (fen[k] === v && v.length > 12 && v.includes(' ') && !allow.has(v)) {
