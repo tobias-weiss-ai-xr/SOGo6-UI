@@ -1,68 +1,68 @@
 {
     "AP_CFGCODE": {
         "title": {
-            "string": "Configuration as Code"
+            "string": "Конфигурация как код"
         },
         "description": {
-            "string": "Export, version, and import system configuration as JSON for GitOps workflows."
+            "string": "Экспортируйте, версионируйте и импортируйте конфигурацию системы в формате JSON для рабочих процессов GitOps."
         },
         "export": {
             "title": {
-                "string": "Current Configuration"
+                "string": "Текущая конфигурация"
             },
             "copy": {
                 "string": "Копировать"
             },
             "copied": {
-                "string": "Copied!"
+                "string": "Скопировано!"
             },
             "download": {
-                "string": "Download JSON"
+                "string": "Скачать JSON"
             },
             "success": {
-                "string": "Downloaded"
+                "string": "Скачано"
             }
         },
         "import": {
             "title": {
-                "string": "Import Configuration"
+                "string": "Импорт конфигурации"
             },
             "description_label": {
                 "string": "Описание"
             },
             "description_placeholder": {
-                "string": "e.g. Update mail server settings"
+                "string": "напр. Обновить настройки почтового сервера"
             },
             "placeholder": {
-                "string": "Paste JSON configuration here..."
+                "string": "Вставьте конфигурацию JSON сюда..."
             },
             "button": {
-                "string": "Apply Configuration"
+                "string": "Применить конфигурацию"
             },
             "running": {
-                "string": "Applying..."
+                "string": "Применение..."
             },
             "success": {
-                "string": "Configuration v{{version}} applied"
+                "string": "Конфигурация v{{version}} применена"
             },
             "error": {
-                "string": "Import failed"
+                "string": "Не удалось импортировать"
             }
         },
         "history": {
             "title": {
-                "string": "Version History"
+                "string": "История версий"
             },
             "empty": {
-                "string": "No configuration snapshots yet."
+                "string": "Снимков конфигурации пока нет."
             }
         },
         "errors": {
             "empty": {
-                "string": "Configuration JSON is empty"
+                "string": "JSON конфигурации пуст"
             },
             "parse": {
-                "string": "Invalid JSON — please check syntax"
+                "string": "Некорректный JSON — проверьте синтаксис"
             }
         }
     }

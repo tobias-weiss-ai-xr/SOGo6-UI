@@ -1,70 +1,70 @@
 {
     "AP_SLOTS": {
         "title": {
-            "string": "Appointment Slots"
+            "string": "Слоты приёма"
         },
         "description": {
-            "string": "Publish bookable time slots (Calendly-style). Generate booking links for external participants."
+            "string": "Публикуйте бронируемые интервалы времени (в стиле Calendly). Создавайте ссылки для записи внешних участников."
         },
         "form": {
             "create": {
-                "string": "Create Slot"
+                "string": "Создать слот"
             },
             "cancel": {
                 "string": "Отмена"
             },
             "title": {
-                "string": "New Appointment Slot"
+                "string": "Новый слот приёма"
             },
             "slot_title": {
-                "string": "Slot Title"
+                "string": "Название слота"
             },
             "duration": {
-                "string": "Duration (min)"
+                "string": "Длительность (мин)"
             },
             "buffer": {
-                "string": "Buffer (min)"
+                "string": "Буфер (мин)"
             },
             "start_time": {
-                "string": "Start Time"
+                "string": "Время начала"
             },
             "end_time": {
-                "string": "End Time"
+                "string": "Время окончания"
             },
             "days": {
-                "string": "Available Days"
+                "string": "Доступные дни"
             },
             "submit": {
-                "string": "Create Slot"
+                "string": "Создать слот"
             }
         },
         "create": {
             "success": {
-                "string": "Slot created"
+                "string": "Слот создан"
             },
             "error": {
-                "string": "Failed to create slot"
+                "string": "Не удалось создать слот"
             }
         },
         "slots": {
             "title": {
-                "string": "Your Slots"
+                "string": "Ваши слоты"
             },
             "empty": {
-                "string": "No appointment slots. Create one to share your availability."
+                "string": "Нет слотов приёма. Создайте первый, чтобы поделиться своей доступностью."
             }
         },
         "bookings": {
             "title": {
-                "string": "Recent Bookings"
+                "string": "Последние записи"
             },
             "empty": {
-                "string": "No bookings yet."
+                "string": "Записей пока нет."
             }
         },
         "errors": {
             "fields": {
-                "string": "Title, duration, times, and at least one day are required"
+                "string": "Укажите название, длительность, время и хотя бы один день"
             }
         }
     }

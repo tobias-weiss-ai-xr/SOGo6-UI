@@ -2,26 +2,26 @@
   "COMPONENTS": {
     "forms": {
       "fixed-form-button-group": {
-        "alert": "{number} errors"
+        "alert": "Ошибок: {number}"
       }
     },
     "color-picker": {
-      "custom-color": "Custom Color"
+      "custom-color": "Свой цвет"
     },
     "duration-picker": {
-      "noReminder": "No reminder",
-      "5min": "5 min before",
-      "10min": "10 min before",
-      "15min": "15 min before",
-      "30min": "30 min before",
-      "45min": "45 min before",
-      "1h": "1 hour before",
-      "2h": "2 hour before",
-      "5h": "5 hour before",
-      "15h": "15 hour before",
-      "1d": "1 day before",
-      "2d": "2 days before",
-      "1w": "1 week before"
+      "noReminder": "Без напоминания",
+      "5min": "за 5 минут до",
+      "10min": "за 10 минут до",
+      "15min": "за 15 минут до",
+      "30min": "за 30 минут до",
+      "45min": "за 45 минут до",
+      "1h": "за 1 час до",
+      "2h": "за 2 часа до",
+      "5h": "за 5 часов до",
+      "15h": "за 15 часов до",
+      "1d": "за 1 день до",
+      "2d": "за 2 дня до",
+      "1w": "за 1 неделю до"
     }
   }
 }

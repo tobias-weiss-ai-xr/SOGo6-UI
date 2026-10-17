@@ -1,76 +1,76 @@
 {
     "AP_SESSIONS": {
         "title": {
-            "string": "Active Sessions"
+            "string": "Активные сеансы"
         },
         "description": {
-            "string": "View and manage active user sessions"
+            "string": "Просматривайте активные сеансы пользователей и управляйте ими"
         },
         "table": {
             "uid": {
-                "string": "User"
+                "string": "Пользователь"
             },
             "domain": {
                 "string": "Домен"
             },
             "last_activity": {
-                "string": "Last Activity"
+                "string": "Последняя активность"
             },
             "actions": {
-                "string": "Actions"
+                "string": "Действия"
             },
             "no_sessions": {
-                "string": "No active sessions found"
+                "string": "Активные сеансы не найдены"
             },
             "loading": {
-                "string": "Loading sessions..."
+                "string": "Загрузка сеансов..."
             }
         },
         "revoke": {
             "button": {
-                "string": "Revoke"
+                "string": "Отозвать"
             },
             "confirm": {
-                "string": "Are you sure you want to revoke this session?"
+                "string": "Вы уверены, что хотите отозвать этот сеанс?"
             },
             "confirm_multiple": {
-                "string": "Are you sure you want to revoke the selected sessions?"
+                "string": "Вы уверены, что хотите отозвать выбранные сеансы?"
             },
             "revoke_selected": {
-                "string": "Revoke Selected"
+                "string": "Отозвать выбранные"
             },
             "revoke_selected_one": {
-                "string": "Revoke Selected ({count})"
+                "string": "Отозвать выбранные ({count})"
             },
             "success": {
-                "string": "Session revoked successfully"
+                "string": "Сеанс успешно отозван"
             },
             "success_multiple": {
-                "string": "{count} sessions revoked successfully"
+                "string": "Сеансы ({count}) успешно отозваны"
             },
             "error": {
-                "string": "Failed to revoke session"
+                "string": "Не удалось отозвать сеанс"
             }
         },
         "revoke_inactive": {
             "button": {
-                "string": "Revoke Inactive"
+                "string": "Отозвать неактивные"
             },
             "confirm": {
-                "string": "Are you sure you want to revoke all inactive sessions?"
+                "string": "Вы уверены, что хотите отозвать все неактивные сеансы?"
             },
             "days": {
-                "string": "Days of inactivity"
+                "string": "Дней без активности"
             },
             "days_placeholder": {
-                "string": "e.g., 30"
+                "string": "напр. 30"
             },
             "success": {
-                "string": "Inactive sessions revoked successfully"
+                "string": "Неактивные сеансы успешно отозваны"
             }
         },
         "refresh": {
-            "string": "Refresh"
+            "string": "Обновить"
         }
     }
 }

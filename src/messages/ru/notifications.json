@@ -4,809 +4,809 @@
             "success": {
                 "string": "Успех",
                 "context": "Notification title for successful operations.",
-                "developer_comment": "Advise the user that an operation completed successfully."
+                "developer_comment": "Сообщите пользователю, что операция успешно завершена."
             },
             "error": {
                 "string": "Ошибка",
                 "context": "Notification title for failed operations.",
-                "developer_comment": "Advise the user that an error occurred during the operation. {error}"
+                "developer_comment": "Сообщите пользователю, что во время операции произошла ошибка. {error}"
             },
             "warning": {
                 "string": "Предупреждение",
                 "context": "Notification title for warning messages.",
-                "developer_comment": "Advise the user to check the details and proceed with caution."
+                "developer_comment": "Предупредите пользователя, чтобы он проверил детали и действовал с осторожностью."
             },
             "info": {
                 "string": "Информация",
                 "context": "Notification title for informational messages.",
-                "developer_comment": "Advise the user of an informational message."
+                "developer_comment": "Проинформируйте пользователя о информационном сообщении."
             }
         },
         "mail_action": {
             "spam": {
                 "successTitle": {
-                    "string": "Marked as spam"
+                    "string": "Отмечено как спам"
                 },
                 "successMessage": {
-                    "string": "The message was moved to Junk."
+                    "string": "Сообщение перемещено в папку «Спам»."
                 },
                 "errorTitle": {
-                    "string": "Action failed"
+                    "string": "Действие не выполнено"
                 },
                 "errorMessage": {
-                    "string": "Could not mark this message as spam."
+                    "string": "Не удалось пометить это сообщение как спам."
                 }
             },
             "ham": {
                 "successTitle": {
-                    "string": "Moved to Inbox"
+                    "string": "Перемещено во «Входящие»"
                 },
                 "successMessage": {
-                    "string": "The message was moved to your Inbox."
+                    "string": "Сообщение перемещено в папку «Входящие»."
                 },
                 "errorTitle": {
-                    "string": "Action failed"
+                    "string": "Действие не выполнено"
                 },
                 "errorMessage": {
-                    "string": "Could not restore this message."
+                    "string": "Не удалось восстановить это сообщение."
                 }
             },
             "move": {
                 "successTitle": {
-                    "string": "Message moved"
+                    "string": "Сообщение перемещено"
                 },
                 "successMessage": {
-                    "string": "The message was moved successfully."
+                    "string": "Сообщение успешно перемещено."
                 },
                 "errorTitle": {
-                    "string": "Move failed"
+                    "string": "Не удалось переместить"
                 },
                 "errorMessage": {
-                    "string": "Could not move this message."
+                    "string": "Не удалось переместить это сообщение."
                 }
             },
             "tag": {
                 "successTitle": {
-                    "string": "Label applied"
+                    "string": "Ярлык применён"
                 },
                 "successMessage": {
-                    "string": "The label was applied to this message."
+                    "string": "Ярлык применён к этому сообщению."
                 },
                 "errorTitle": {
-                    "string": "Label failed"
+                    "string": "Ошибка ярлыка"
                 },
                 "errorMessage": {
-                    "string": "Could not apply the label."
+                    "string": "Не удалось применить ярлык."
                 }
             },
             "untag_label": {
                 "successTitle": {
-                    "string": "Label removed"
+                    "string": "Ярлык снят"
                 },
                 "successMessage": {
-                    "string": "The label was removed from this message."
+                    "string": "Ярлык снят с этого сообщения."
                 },
                 "errorTitle": {
-                    "string": "Label failed"
+                    "string": "Ошибка ярлыка"
                 },
                 "errorMessage": {
-                    "string": "Could not remove the label."
+                    "string": "Не удалось снять ярлык."
                 }
             }
         },
         "mail_print": {
             "popup_blocked": {
                 "title": {
-                    "string": "Print blocked"
+                    "string": "Печать заблокирована"
                 },
                 "message": {
-                    "string": "Allow pop-ups for this site to print messages."
+                    "string": "Разрешите всплывающие окна для этого сайта, чтобы печатать сообщения."
                 }
             }
         },
         "folders_purge": {
             "successTitle": {
-                "string": "Folder purged"
+                "string": "Папка очищена"
             },
             "successMessage": {
-                "string": "All deleted messages have been permanently removed."
+                "string": "Все удалённые сообщения безвозвратно стёрты."
             },
             "errorTitle": {
-                "string": "Purge failed"
+                "string": "Не удалось очистить"
             },
             "errorMessage": {
-                "string": "An error occurred while purging the folder. Please try again."
+                "string": "Произошла ошибка при очистке папки. Повторите попытку."
             }
         },
         "folders_expunge": {
             "successTitle": {
-                "string": "Folder expunged"
+                "string": "Папка сжата"
             },
             "successMessage": {
-                "string": "All deleted messages have been permanently removed."
+                "string": "Все удалённые сообщения безвозвратно стёрты."
             },
             "errorTitle": {
-                "string": "Expunge failed"
+                "string": "Не удалось сжать"
             },
             "errorMessage": {
-                "string": "An error occurred while expunging the folder. Please try again."
+                "string": "Произошла ошибка при сжатии папки. Повторите попытку."
             }
         },
         "folders_share": {
             "successTitle": {
-                "string": "Sharing updated"
+                "string": "Настройки доступа обновлены"
             },
             "successMessage": {
-                "string": "Folder sharing settings have been saved."
+                "string": "Настройки общего доступа к папке сохранены."
             },
             "errorTitle": {
-                "string": "Sharing failed"
+                "string": "Не удалось настроить доступ"
             },
             "errorMessage": {
-                "string": "An error occurred while updating sharing settings. Please try again."
+                "string": "Произошла ошибка при обновлении настроек общего доступа. Повторите попытку."
             }
         },
         "folders_create": {
             "success": {
                 "title": {
-                    "string": "Folder created"
+                    "string": "Папка создана"
                 },
                 "message": {
-                    "string": "The subfolder has been successfully created."
+                    "string": "Подпапка успешно создана."
                 }
             },
             "error": {
                 "title": {
-                    "string": "Failed to create folder"
+                    "string": "Не удалось создать папку"
                 },
                 "message": {
-                    "string": "An error occurred while creating the folder. Please try again."
+                    "string": "Произошла ошибка при создании папки. Повторите попытку."
                 }
             }
         },
         "folders_delete": {
             "success": {
                 "title": {
-                    "string": "Folder deleted"
+                    "string": "Папка удалена"
                 },
                 "message": {
-                    "string": "The folder has been moved to Trash or permanently deleted."
+                    "string": "Папка перемещена в «Корзину» или удалена безвозвратно."
                 }
             },
             "error": {
                 "title": {
-                    "string": "Failed to delete folder"
+                    "string": "Не удалось удалить папку"
                 },
                 "message": {
-                    "string": "An error occurred while deleting the folder. Please try again."
+                    "string": "Произошла ошибка при удалении папки. Повторите попытку."
                 }
             }
         },
         "folders_rename": {
             "success": {
                 "title": {
-                    "string": "Folder renamed"
+                    "string": "Папка переименована"
                 },
                 "message": {
-                    "string": "The folder has been successfully renamed."
+                    "string": "Папка успешно переименована."
                 }
             },
             "error": {
                 "title": {
-                    "string": "Failed to rename folder"
+                    "string": "Не удалось переименовать папку"
                 },
                 "message": {
-                    "string": "An error occurred while renaming the folder. Please try again."
+                    "string": "Произошла ошибка при переименовании папки. Повторите попытку."
                 }
             }
         },
         "folders_set_type": {
             "success": {
                 "title": {
-                    "string": "Folder type updated"
+                    "string": "Тип папки обновлён"
                 },
                 "message": {
-                    "string": "The folder type has been updated."
+                    "string": "Тип папки обновлён."
                 }
             },
             "error": {
                 "title": {
-                    "string": "Failed to update folder type"
+                    "string": "Не удалось обновить тип папки"
                 },
                 "message": {
-                    "string": "An error occurred while updating the folder type. Please try again."
+                    "string": "Произошла ошибка при обновлении типа папки. Повторите попытку."
                 }
             }
         },
         "folders_move": {
             "success": {
                 "title": {
-                    "string": "Folder moved"
+                    "string": "Папка перемещена"
                 },
                 "message": {
-                    "string": "The folder has been moved."
+                    "string": "Папка перемещена."
                 }
             },
             "error": {
                 "title": {
-                    "string": "Failed to move folder"
+                    "string": "Не удалось переместить папку"
                 },
                 "message": {
-                    "string": "An error occurred while moving the folder. Please try again."
+                    "string": "Произошла ошибка при перемещении папки. Повторите попытку."
                 }
             }
         },
         "folders_export": {
             "success": {
                 "title": {
-                    "string": "Export started"
+                    "string": "Экспорт запущен"
                 },
                 "message": {
-                    "string": "The folder export has been started."
+                    "string": "Экспорт папки запущен."
                 }
             },
             "error": {
                 "title": {
-                    "string": "Failed to export folder"
+                    "string": "Не удалось экспортировать папку"
                 },
                 "message": {
-                    "string": "An error occurred while exporting the folder. Please try again."
+                    "string": "Произошла ошибка при экспорте папки. Повторите попытку."
                 }
             }
         },
         "calendar_create": {
             "success": {
                 "title": {
-                    "string": "Calendar created"
+                    "string": "Календарь создан"
                 },
                 "message": {
-                    "string": "The calendar has been successfully created."
+                    "string": "Календарь успешно создан."
                 }
             },
             "error": {
                 "title": {
-                    "string": "Creation failed"
+                    "string": "Не удалось создать"
                 },
                 "message": {
-                    "string": "Failed to create the calendar. Please try again."
+                    "string": "Не удалось создать календарь. Повторите попытку."
                 }
             }
         },
         "calendar_update": {
             "success": {
                 "title": {
-                    "string": "Calendar updated"
+                    "string": "Календарь обновлён"
                 },
                 "message": {
-                    "string": "The calendar has been successfully updated."
+                    "string": "Календарь успешно обновлён."
                 }
             },
             "error": {
                 "title": {
-                    "string": "Update failed"
+                    "string": "Не удалось обновить"
                 },
                 "message": {
-                    "string": "Failed to update the calendar. Please try again."
+                    "string": "Не удалось обновить календарь. Повторите попытку."
                 }
             }
         },
         "calendar_delete": {
             "success": {
                 "title": {
-                    "string": "Calendar deleted"
+                    "string": "Календарь удалён"
                 },
                 "message": {
-                    "string": "The calendar has been successfully deleted."
+                    "string": "Календарь успешно удалён."
                 }
             },
             "error": {
                 "title": {
-                    "string": "Deletion failed"
+                    "string": "Не удалось удалить"
                 },
                 "message": {
-                    "string": "Failed to delete the calendar. Please try again."
+                    "string": "Не удалось удалить календарь. Повторите попытку."
                 }
             }
         },
         "external_calendar_create": {
             "success": {
                 "title": {
-                    "string": "Calendar subscribed"
+                    "string": "Подписка оформлена"
                 },
                 "message": {
-                    "string": "The ICS calendar has been added."
+                    "string": "Календарь ICS добавлен."
                 }
             },
             "error": {
                 "title": {
-                    "string": "Subscription failed"
+                    "string": "Не удалось подписаться"
                 },
                 "message": {
-                    "string": "Unable to subscribe to this calendar."
+                    "string": "Не удалось подписаться на этот календарь."
                 }
             }
         },
         "external_calendar_delete": {
             "success": {
                 "title": {
-                    "string": "Subscription removed"
+                    "string": "Подписка удалена"
                 },
                 "message": {
-                    "string": "The calendar has been removed."
+                    "string": "Календарь удалён."
                 }
             },
             "error": {
                 "title": {
-                    "string": "Deletion failed"
+                    "string": "Не удалось удалить"
                 },
                 "message": {
-                    "string": "Unable to remove this calendar."
+                    "string": "Не удалось удалить этот календарь."
                 }
             }
         },
         "external_calendar_sync": {
             "success": {
                 "title": {
-                    "string": "Calendar synced"
+                    "string": "Календарь синхронизирован"
                 },
                 "message": {
-                    "string": "The calendar has been synchronized."
+                    "string": "Календарь синхронизирован."
                 }
             },
             "error": {
                 "title": {
-                    "string": "Sync failed"
+                    "string": "Ошибка синхронизации"
                 },
                 "message": {
-                    "string": "Unable to sync this calendar."
+                    "string": "Не удалось синхронизировать этот календарь."
                 }
             }
         },
         "calendar_event_create": {
             "success": {
                 "title": {
-                    "string": "Event created"
+                    "string": "Событие создано"
                 },
                 "message": {
-                    "string": "The event has been successfully created."
+                    "string": "Событие успешно создано."
                 }
             },
             "error": {
                 "title": {
-                    "string": "Creation failed"
+                    "string": "Не удалось создать"
                 },
                 "message": {
-                    "string": "Failed to create the event. Please try again."
+                    "string": "Не удалось создать событие. Повторите попытку."
                 }
             }
         },
         "calendar_event_update": {
             "success": {
                 "title": {
-                    "string": "Event updated"
+                    "string": "Событие обновлено"
                 },
                 "message": {
-                    "string": "The event has been successfully updated."
+                    "string": "Событие успешно обновлено."
                 }
             },
             "error": {
                 "title": {
-                    "string": "Update failed"
+                    "string": "Не удалось обновить"
                 },
                 "message": {
-                    "string": "Failed to update the event. Please try again."
+                    "string": "Не удалось обновить событие. Повторите попытку."
                 }
             }
         },
         "calendar_event_delete": {
             "success": {
                 "title": {
-                    "string": "Event deleted"
+                    "string": "Событие удалено"
                 },
                 "message": {
-                    "string": "The event has been successfully deleted."
+                    "string": "Событие успешно удалено."
                 }
             },
             "error": {
                 "title": {
-                    "string": "Deletion failed"
+                    "string": "Не удалось удалить"
                 },
                 "message": {
-                    "string": "Failed to delete the event. Please try again."
+                    "string": "Не удалось удалить событие. Повторите попытку."
                 }
             }
         },
         "task_create": {
             "success": {
                 "title": {
-                    "string": "Task created"
+                    "string": "Задача создана"
                 },
                 "message": {
-                    "string": "The task has been created."
+                    "string": "Задача создана."
                 }
             },
             "error": {
                 "title": {
-                    "string": "Creation failed"
+                    "string": "Не удалось создать"
                 },
                 "message": {
-                    "string": "Could not create the task. Please try again."
+                    "string": "Не удалось создать задачу. Повторите попытку."
                 }
             }
         },
         "task_update": {
             "success": {
                 "title": {
-                    "string": "Task updated"
+                    "string": "Задача обновлена"
                 },
                 "message": {
-                    "string": "The task has been updated."
+                    "string": "Задача обновлена."
                 }
             },
             "error": {
                 "title": {
-                    "string": "Update failed"
+                    "string": "Не удалось обновить"
                 },
                 "message": {
-                    "string": "Could not update the task. Please try again."
+                    "string": "Не удалось обновить задачу. Повторите попытку."
                 }
             }
         },
         "task_delete": {
             "success": {
                 "title": {
-                    "string": "Task deleted"
+                    "string": "Задача удалена"
                 },
                 "message": {
-                    "string": "The task has been deleted."
+                    "string": "Задача удалена."
                 }
             },
             "error": {
                 "title": {
-                    "string": "Deletion failed"
+                    "string": "Не удалось удалить"
                 },
                 "message": {
-                    "string": "Could not delete the task. Please try again."
+                    "string": "Не удалось удалить задачу. Повторите попытку."
                 }
             }
         },
         "address_book_entry_create": {
             "success": {
                 "title": {
-                    "string": "Contact created"
+                    "string": "Контакт создан"
                 },
                 "message": {
-                    "string": "The contact has been added to your address book."
+                    "string": "Контакт добавлен в вашу адресную книгу."
                 }
             },
             "error": {
                 "title": {
-                    "string": "Creation failed"
+                    "string": "Не удалось создать"
                 },
                 "message": {
-                    "string": "Could not create the contact. Please try again."
+                    "string": "Не удалось создать контакт. Повторите попытку."
                 }
             }
         },
         "address_book_entry_update": {
             "success": {
                 "title": {
-                    "string": "Contact updated"
+                    "string": "Контакт обновлён"
                 },
                 "message": {
-                    "string": "The contact has been updated."
+                    "string": "Контакт обновлён."
                 }
             },
             "error": {
                 "title": {
-                    "string": "Update failed"
+                    "string": "Не удалось обновить"
                 },
                 "message": {
-                    "string": "Could not update the contact. Please try again."
+                    "string": "Не удалось обновить контакт. Повторите попытку."
                 }
             }
         },
         "address_book_entry_delete": {
             "success": {
                 "title": {
-                    "string": "Contact deleted"
+                    "string": "Контакт удалён"
                 },
                 "message": {
-                    "string": "The contact has been removed."
+                    "string": "Контакт удалён."
                 }
             },
             "error": {
                 "title": {
-                    "string": "Deletion failed"
+                    "string": "Не удалось удалить"
                 },
                 "message": {
-                    "string": "Could not delete the contact. Please try again."
+                    "string": "Не удалось удалить контакт. Повторите попытку."
                 }
             }
         },
         "address_book_entry_move": {
             "success": {
                 "title": {
-                    "string": "Contact moved"
+                    "string": "Контакт перемещён"
                 },
                 "message": {
-                    "string": "The contact has been moved to another address book."
+                    "string": "Контакт перемещён в другую адресную книгу."
                 }
             },
             "error": {
                 "title": {
-                    "string": "Move failed"
+                    "string": "Не удалось переместить"
                 },
                 "message": {
-                    "string": "Could not move the contact. Please try again."
+                    "string": "Не удалось переместить контакт. Повторите попытку."
                 }
             }
         },
         "address_book_create": {
             "success": {
                 "title": {
-                    "string": "Address book created"
+                    "string": "Адресная книга создана"
                 },
                 "message": {
-                    "string": "The address book has been created."
+                    "string": "Адресная книга создана."
                 }
             },
             "error": {
                 "title": {
-                    "string": "Creation failed"
+                    "string": "Не удалось создать"
                 },
                 "message": {
-                    "string": "Could not create the address book. Please try again."
+                    "string": "Не удалось создать адресную книгу. Повторите попытку."
                 }
             }
         },
         "address_book_update": {
             "success": {
                 "title": {
-                    "string": "Address book updated"
+                    "string": "Адресная книга обновлена"
                 },
                 "message": {
-                    "string": "The address book has been updated."
+                    "string": "Адресная книга обновлена."
                 }
             },
             "error": {
                 "title": {
-                    "string": "Update failed"
+                    "string": "Не удалось обновить"
                 },
                 "message": {
-                    "string": "Could not update the address book. Please try again."
+                    "string": "Не удалось обновить адресную книгу. Повторите попытку."
                 }
             }
         },
         "address_book_delete": {
             "success": {
                 "title": {
-                    "string": "Address book deleted"
+                    "string": "Адресная книга удалена"
                 },
                 "message": {
-                    "string": "The address book has been removed."
+                    "string": "Адресная книга удалена."
                 }
             },
             "error": {
                 "title": {
-                    "string": "Deletion failed"
+                    "string": "Не удалось удалить"
                 },
                 "message": {
-                    "string": "Could not delete the address book. Please try again."
+                    "string": "Не удалось удалить адресную книгу. Повторите попытку."
                 }
             }
         },
         "contact_api_errors": {
             "addressbook_not_found": {
-                "string": "The address book could not be found."
+                "string": "Адресная книга не найдена."
             },
             "addressbook_duplicate": {
-                "string": "An address book with this name already exists."
+                "string": "Адресная книга с таким названием уже существует."
             },
             "contact_not_found": {
-                "string": "The contact could not be found."
+                "string": "Контакт не найден."
             },
             "contact_duplicate": {
-                "string": "A contact with this identifier already exists."
+                "string": "Контакт с таким идентификатором уже существует."
             },
             "contact_persist_failed": {
-                "string": "The contact could not be saved."
+                "string": "Не удалось сохранить контакт."
             },
             "contact_update_failed": {
-                "string": "The contact could not be updated."
+                "string": "Не удалось обновить контакт."
             },
             "operation_not_supported": {
-                "string": "This operation is not supported for this address book."
+                "string": "Эта операция не поддерживается для данной адресной книги."
             },
             "list_not_found": {
-                "string": "The distribution list could not be found."
+                "string": "Список рассылки не найден."
             },
             "list_duplicate": {
-                "string": "A distribution list with this name already exists."
+                "string": "Список рассылки с таким названием уже существует."
             },
             "list_persist_failed": {
-                "string": "The distribution list could not be saved."
+                "string": "Не удалось сохранить список рассылки."
             },
             "list_update_failed": {
-                "string": "The distribution list could not be updated."
+                "string": "Не удалось обновить список рассылки."
             },
             "list_member_invalid": {
-                "string": "One or more selected members are not contacts in this address book."
+                "string": "Один или несколько выбранных участников не являются контактами этой адресной книги."
             },
             "access_denied": {
-                "string": "You do not have permission to modify this address book."
+                "string": "У вас нет прав на изменение этой адресной книги."
             },
             "read_only": {
-                "string": "This address book is read-only."
+                "string": "Эта адресная книга доступна только для чтения."
             },
             "export_format_unsupported": {
-                "string": "The selected export format is not supported."
+                "string": "Выбранный формат экспорта не поддерживается."
             },
             "import_no_file": {
-                "string": "No file was provided for import."
+                "string": "Для импорта не указан файл."
             },
             "import_too_large": {
-                "string": "The import file exceeds the maximum allowed size (10 MB)."
+                "string": "Файл импорта превышает максимально допустимый размер (10 МБ)."
             },
             "import_parse_failed": {
-                "string": "The import file could not be parsed."
+                "string": "Не удалось обработать файл импорта."
             },
             "job_not_found": {
-                "string": "The background job could not be found."
+                "string": "Фоновая задача не найдена."
             },
             "job_forbidden": {
-                "string": "You do not have access to this background job."
+                "string": "У вас нет доступа к этой фоновой задаче."
             },
             "job_not_ready": {
-                "string": "The export is not ready yet. Please wait and try again."
+                "string": "Экспорт ещё не готов. Подождите и повторите попытку."
             },
             "job_no_result": {
-                "string": "This job has no downloadable result."
+                "string": "У этой задачи нет результата для скачивания."
             },
             "job_concurrent_limit": {
-                "string": "Too many background jobs are running. Please try again later."
+                "string": "Запущено слишком много фоновых задач. Повторите попытку позже."
             },
             "file_too_large": {
-                "string": "The photo exceeds the maximum allowed size (2 MB)."
+                "string": "Фотография превышает максимально допустимый размер (2 МБ)."
             },
             "file_type_not_allowed": {
-                "string": "This file type is not allowed for contact photos."
+                "string": "Этот тип файла не разрешён для фотографий контактов."
             },
             "generic": {
-                "string": "The operation could not be completed. Please try again."
+                "string": "Не удалось завершить операцию. Повторите попытку."
             }
         },
         "calendar_event_attendance": {
             "success": {
                 "accepted": {
                     "title": {
-                        "string": "Invitation accepted"
+                        "string": "Приглашение принято"
                     },
                     "message": {
-                        "string": "You accepted this event."
+                        "string": "Вы приняли это событие."
                     }
                 },
                 "declined": {
                     "title": {
-                        "string": "Invitation declined"
+                        "string": "Приглашение отклонено"
                     },
                     "message": {
-                        "string": "You declined this event."
+                        "string": "Вы отклонили это событие."
                     }
                 },
                 "tentative": {
                     "title": {
-                        "string": "Marked as maybe"
+                        "string": "Отмечено как «возможно»"
                     },
                     "message": {
-                        "string": "You marked this event as maybe."
+                        "string": "Вы отметили это событие как «возможно»."
                     }
                 },
                 "delegated": {
                     "title": {
-                        "string": "Attendance updated"
+                        "string": "Статус участия обновлён"
                     },
                     "message": {
-                        "string": "Your attendance was updated."
+                        "string": "Ваш статус участия обновлён."
                     }
                 }
             },
             "error": {
                 "title": {
-                    "string": "Attendance update failed"
+                    "string": "Не удалось обновить участие"
                 },
                 "message": {
-                    "string": "Failed to update your attendance. Please try again."
+                    "string": "Не удалось обновить ваш статус участия. Повторите попытку."
                 }
             }
         },
         "message": {
             "success": {
-                "string": "Operation completed successfully.",
-                "developer_comment": "Advise the user that an operation completed successfully."
+                "string": "Операция успешно завершена.",
+                "developer_comment": "Сообщите пользователю, что операция успешно завершена."
             },
             "error": {
-                "string": "An error occurred during the operation.",
-                "developer_comment": "Advise the user that there was an error while processing their request."
+                "string": "Во время операции произошла ошибка.",
+                "developer_comment": "Сообщите пользователю, что при обработке его запроса произошла ошибка."
             },
             "warning": {
-                "string": "Please check the details and proceed with caution.",
-                "developer_comment": "This is a warning message to alert the user."
+                "string": "Проверьте детали и действуйте с осторожностью.",
+                "developer_comment": "Это предупреждение, предназначенное для привлечения внимания пользователя."
             },
             "info": {
-                "string": "This is an informational message.",
-                "developer_comment": "This message provides information to the user."
+                "string": "Это информационное сообщение.",
+                "developer_comment": "Это сообщение содержит информацию для пользователя."
             }
         },
         "mail_send": {
             "success": {
                 "title": {
-                    "string": "Mail sent"
+                    "string": "Письмо отправлено"
                 },
                 "message": {
-                    "string": "Your email has been sent successfully."
+                    "string": "Ваше письмо успешно отправлено."
                 }
             },
             "error": {
                 "title": {
-                    "string": "Failed to send mail"
+                    "string": "Не удалось отправить письмо"
                 },
                 "message": {
-                    "string": "An error occurred while sending your email. Please try again."
+                    "string": "Произошла ошибка при отправке письма. Повторите попытку."
                 }
             }
         },
         "save_draft": {
             "success": {
                 "title": {
-                    "string": "Draft saved"
+                    "string": "Черновик сохранён"
                 },
                 "message": {
-                    "string": "Your email has been saved as a draft."
+                    "string": "Ваше письмо сохранено как черновик."
                 }
             },
             "error": {
                 "title": {
-                    "string": "Failed to save draft"
+                    "string": "Не удалось сохранить черновик"
                 },
                 "message": {
-                    "string": "An error occurred while saving your draft. Please try again."
+                    "string": "Произошла ошибка при сохранении черновика. Повторите попытку."
                 }
             }
         },
         "discard_draft": {
             "success": {
                 "title": {
-                    "string": "Draft discarded"
+                    "string": "Черновик отклонён"
                 },
                 "message": {
-                    "string": "Your email has been discarded."
+                    "string": "Ваше письмо отклонено."
                 }
             },
             "error": {
                 "title": {
-                    "string": "Failed to discard draft"
+                    "string": "Не удалось отклонить черновик"
                 },
                 "message": {
-                    "string": "An error occurred while discarding your draft. Please try again."
+                    "string": "Произошла ошибка при отклонении черновика. Повторите попытку."
                 }
             }
         },
         "attachment_upload": {
             "success": {
                 "title": {
-                    "string": "Attachment uploaded"
+                    "string": "Вложение загружено"
                 },
                 "message": {
-                    "string": "Your attachment has been uploaded successfully."
+                    "string": "Ваше вложение успешно загружено."
                 }
             },
             "error": {
                 "title": {
-                    "string": "Failed to upload attachment"
+                    "string": "Не удалось загрузить вложение"
                 },
                 "message": {
-                    "string": "An error occurred while uploading your attachment. Please try again."
+                    "string": "Произошла ошибка при загрузке вложения. Повторите попытку."
                 }
             }
         },
@@ -814,18 +814,18 @@
             "save": {
                 "success": {
                     "title": {
-                        "string": "Filters saved"
+                        "string": "Фильтры сохранены"
                     },
                     "message": {
-                        "string": "Your mail filters have been updated."
+                        "string": "Ваши почтовые фильтры обновлены."
                     }
                 },
                 "error": {
                     "title": {
-                        "string": "Could not save filters"
+                        "string": "Не удалось сохранить фильтры"
                     },
                     "message": {
-                        "string": "An error occurred while saving your mail filters."
+                        "string": "Произошла ошибка при сохранении почтовых фильтров."
                     }
                 }
             }
@@ -834,18 +834,18 @@
             "save": {
                 "success": {
                     "title": {
-                        "string": "Vacation settings saved"
+                        "string": "Настройки автоответа сохранены"
                     },
                     "message": {
-                        "string": "Your vacation auto reply has been updated."
+                        "string": "Ваш автоответ во время отсутствия обновлён."
                     }
                 },
                 "error": {
                     "title": {
-                        "string": "Could not save vacation settings"
+                        "string": "Не удалось сохранить настройки автоответа"
                     },
                     "message": {
-                        "string": "An error occurred while saving your vacation settings."
+                        "string": "Произошла ошибка при сохранении настроек автоответа."
                     }
                 }
             }
@@ -854,18 +854,18 @@
             "save": {
                 "success": {
                     "title": {
-                        "string": "Forwarding settings saved"
+                        "string": "Настройки пересылки сохранены"
                     },
                     "message": {
-                        "string": "Your mail forwarding settings have been updated."
+                        "string": "Настройки пересылки почты обновлены."
                     }
                 },
                 "error": {
                     "title": {
-                        "string": "Could not save forwarding settings"
+                        "string": "Не удалось сохранить настройки пересылки"
                     },
                     "message": {
-                        "string": "An error occurred while saving your mail forwarding settings."
+                        "string": "Произошла ошибка при сохранении настроек пересылки почты."
                     }
                 }
             }
@@ -874,26 +874,26 @@
             "save": {
                 "success": {
                     "title": {
-                        "string": "Notification settings saved"
+                        "string": "Настройки уведомлений сохранены"
                     },
                     "message": {
-                        "string": "Your mail notification settings have been updated."
+                        "string": "Ваши настройки почтовых уведомлений обновлены."
                     }
                 },
                 "error": {
                     "title": {
-                        "string": "Could not save notification settings"
+                        "string": "Не удалось сохранить настройки уведомлений"
                     },
                     "message": {
-                        "string": "An error occurred while saving your mail notification settings."
+                        "string": "Произошла ошибка при сохранении настроек почтовых уведомлений."
                     }
                 },
                 "warning": {
                     "title": {
-                        "string": "Notification settings not applied"
+                        "string": "Настройки уведомлений не применены"
                     },
                     "message": {
-                        "string": "Your server does not support mail notifications (enotify extension). Settings were not saved."
+                        "string": "Ваш сервер не поддерживает почтовые уведомления (расширение enotify). Настройки не сохранены."
                     }
                 }
             }

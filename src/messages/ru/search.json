@@ -1,15 +1,15 @@
 {
   "search": {
-    "openCommandPalette": "Press Cmd+K to open command palette",
-    "placeholder": "Search emails, contacts, calendar…",
-    "navigate": "Quick navigation",
-    "results": "Search results",
-    "noResults": "No results found.",
-    "goToInbox": "Go to Inbox",
-    "goToMail": "Go to Mail",
-    "goToContacts": "Go to Contacts",
-    "goToCalendar": "Go to Calendar",
-    "goToSettings": "Go to Settings",
-    "searchInMail": "Search mail for \"{query}\""
+    "openCommandPalette": "Нажмите Cmd+K, чтобы открыть палитру команд",
+    "placeholder": "Поиск по почте, контактам, календарю…",
+    "navigate": "Быстрая навигация",
+    "results": "Результаты поиска",
+    "noResults": "Ничего не найдено.",
+    "goToInbox": "Перейти во «Входящие»",
+    "goToMail": "Перейти к почте",
+    "goToContacts": "Перейти к контактам",
+    "goToCalendar": "Перейти к календарю",
+    "goToSettings": "Перейти к настройкам",
+    "searchInMail": "Искать в почте «{query}»"
   }
 }

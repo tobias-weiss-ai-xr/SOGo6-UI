@@ -1,14 +1,14 @@
 {
     "AP_DOCPREV": {
         "title": {
-            "string": "Document Preview"
+            "string": "Предпросмотр документов"
         },
         "description": {
-            "string": "Preview PDF and Office documents in-browser. PDFs render natively; Office docs use Collabora/OnlyOffice."
+            "string": "Предпросмотр PDF и документов Office в браузере. PDF отображается нативно; документы Office используют Collabora/OnlyOffice."
         },
         "upload": {
             "dropzone": {
-                "string": "Click to upload or drag a document"
+                "string": "Нажмите для загрузки или перетащите документ"
             }
         },
         "settings": {
@@ -16,18 +16,18 @@
                 "string": "Настройки"
             },
             "title": {
-                "string": "Preview Settings"
+                "string": "Настройки предпросмотра"
             },
             "collabora_url": {
-                "string": "Collabora/OnlyOffice URL"
+                "string": "URL Collabora/OnlyOffice"
             },
             "hint": {
-                "string": "The base URL of your Collabora or OnlyOffice server. Leave default for demo mode."
+                "string": "Базовый URL вашего сервера Collabora или OnlyOffice. Оставьте значение по умолчанию для деморежима."
             }
         },
         "errors": {
             "unsupported": {
-                "string": "Unsupported file type. Use .pdf, .docx, .xlsx, or .pptx"
+                "string": "Неподдерживаемый тип файла. Используйте .pdf, .docx, .xlsx или .pptx"
             }
         }
     }

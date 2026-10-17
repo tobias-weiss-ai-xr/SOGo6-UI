@@ -1,35 +1,35 @@
 {
     "STUDENT_GROUPS": {
         "title": {
-            "string": "Student Group Management"
+            "string": "Управление учебными группами"
         },
         "description": {
-            "string": "Manage student groups, course mailing lists, and enrollment"
+            "string": "Управляйте учебными группами, списками рассылки курсов и зачислением"
         },
         "errors": {
             "name": {
-                "string": "Group name required"
+                "string": "Укажите название группы"
             },
             "fail": {
-                "string": "Operation failed"
+                "string": "Операция не выполнена"
             }
         },
         "success": {
             "create": {
-                "string": "Group created successfully"
+                "string": "Группа успешно создана"
             }
         },
         "field": {
             "name": {
-                "string": "Group Name"
+                "string": "Название группы"
             },
             "course": {
-                "string": "Course Code"
+                "string": "Код курса"
             }
         },
         "button": {
             "create": {
-                "string": "Create Group"
+                "string": "Создать группу"
             }
         },
         "label": {
@@ -37,7 +37,7 @@
                 "string": "Нет"
             },
             "students": {
-                "string": "students"
+                "string": "студентов"
             }
         }
     }

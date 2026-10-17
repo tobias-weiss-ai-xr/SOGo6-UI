@@ -17,21 +17,21 @@
       }
     },
     "notification": {
-      "title": "Notifications",
+      "title": "Уведомления",
       "string": "Отправлять уведомление по электронной почте при создании адресной книги",
       "context": "Label for the notification setting"
     },
     "categories": {
-      "title": "Categories",
-      "Work": "Work",
-      "Family": "Family",
-      "Friends": "Friends"
+      "title": "Категории",
+      "Work": "Работа",
+      "Family": "Семья",
+      "Friends": "Друзья"
     },
     "color": {
-      "title": "Couleur"
+      "title": "Цвет"
     },
     "validation": {
-      "category-name-required": "Category name is required"
+      "category-name-required": "Укажите название категории"
     }
   }
 }

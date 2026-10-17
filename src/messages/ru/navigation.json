@@ -18,41 +18,41 @@
                 "view_all": "Показать все",
                 "today": "Сегодня",
                 "no_events": "Сегодня нет событий",
-                "all_day": "All day",
+                "all_day": "Весь день",
                 "loading": "Загрузка событий…",
                 "error": "Календарь"
             },
             "tasks": {
                 "title": "Задачи",
                 "view_all": "Показать все",
-                "search_placeholder": "Search tasks",
-                "overdue": "Overdue",
+                "search_placeholder": "Поиск задач",
+                "overdue": "Просроченные",
                 "today": "Сегодня",
-                "upcoming": "Upcoming",
-                "no_due_date": "No due date",
-                "empty": "You're all caught up",
-                "no_results": "No matches",
+                "upcoming": "Предстоящие",
+                "no_due_date": "Без срока",
+                "empty": "Все задачи выполнены",
+                "no_results": "Ничего не найдено",
                 "loading": "Загрузка событий…",
-                "error": "Could not load tasks"
+                "error": "Не удалось загрузить задачи"
             },
             "address_book": {
-                "title": "Contacts",
-                "view_all": "View all",
-                "search_placeholder": "Search contacts and lists",
-                "distribution_lists": "Distribution lists",
-                "contacts": "Contacts",
-                "member_count": "{number} members",
-                "compose": "Write message",
-                "loading": "Loading contacts…",
-                "error": "Could not load contacts",
-                "empty": "No address book available",
-                "no_entries": "No contacts or lists yet",
-                "no_results": "No matches",
-                "search_min_length": "Enter at least 2 characters to search."
+                "title": "Контакты",
+                "view_all": "Показать все",
+                "search_placeholder": "Поиск контактов и списков",
+                "distribution_lists": "Списки рассылки",
+                "contacts": "Контакты",
+                "member_count": "Участников: {number}",
+                "compose": "Написать сообщение",
+                "loading": "Загрузка контактов…",
+                "error": "Не удалось загрузить контакты",
+                "empty": "Нет доступных адресных книг",
+                "no_entries": "Контактов и списков пока нет",
+                "no_results": "Ничего не найдено",
+                "search_min_length": "Введите минимум 2 символа для поиска."
             },
             "coming_soon": {
-                "title": "Feature incoming",
-                "description": "This section is under development and will be available soon."
+                "title": "Функция скоро появится",
+                "description": "Этот раздел находится в разработке и скоро станет доступен."
             }
         }
     }

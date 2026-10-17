@@ -1,41 +1,41 @@
 {
     "DONOR": {
         "title": {
-            "string": "Donor Communication Management"
+            "string": "Управление коммуникацией с донорами"
         },
         "description": {
-            "string": "Track donors, manage GDPR consent, generate tax receipts, and run campaigns"
+            "string": "Ведите доноров, управляйте согласиями GDPR, создавайте налоговые квитанции и запускайте кампании"
         },
         "errors": {
             "fields": {
-                "string": "Required fields missing"
+                "string": "Не заполнены обязательные поля"
             },
             "fail": {
-                "string": "Operation failed"
+                "string": "Операция не выполнена"
             }
         },
         "success": {
             "create": {
-                "string": "Donor registered"
+                "string": "Донор зарегистрирован"
             },
             "donate": {
-                "string": "Donation recorded"
+                "string": "Пожертвование записано"
             }
         },
         "register": {
             "title": {
-                "string": "Register Donor"
+                "string": "Зарегистрировать донора"
             }
         },
         "donate": {
             "title": {
-                "string": "Record Donation"
+                "string": "Записать пожертвование"
             },
             "select": {
-                "string": "Select donor..."
+                "string": "Выберите донора..."
             },
             "campaign": {
-                "string": "Campaign"
+                "string": "Кампания"
             }
         },
         "field": {
@@ -43,16 +43,16 @@
                 "string": "Имя"
             },
             "email": {
-                "string": "Email"
+                "string": "Эл. почта"
             },
             "type": {
                 "string": "Тип"
             },
             "total": {
-                "string": "Total"
+                "string": "Всего"
             },
             "donations": {
-                "string": "Donations"
+                "string": "Пожертвования"
             },
             "consent": {
                 "string": "GDPR"
@@ -60,40 +60,40 @@
         },
         "type": {
             "individual": {
-                "string": "Individual"
+                "string": "Частное лицо"
             },
             "corporate": {
-                "string": "Corporate"
+                "string": "Организация"
             },
             "foundation": {
-                "string": "Foundation"
+                "string": "Фонд"
             }
         },
         "button": {
             "register": {
-                "string": "Register"
+                "string": "Зарегистрировать"
             },
             "donate": {
-                "string": "Record Donation"
+                "string": "Записать пожертвование"
             }
         },
         "stats": {
             "title": {
-                "string": "Statistics"
+                "string": "Статистика"
             },
             "total_donors": {
-                "string": "Total Donors"
+                "string": "Всего доноров"
             },
             "total_raised": {
-                "string": "Total Raised"
+                "string": "Всего собрано"
             }
         },
         "list": {
             "title": {
-                "string": "All Donors"
+                "string": "Все доноры"
             },
             "empty": {
-                "string": "No donors registered yet"
+                "string": "Доноры ещё не зарегистрированы"
             }
         }
     }

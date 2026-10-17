@@ -1,27 +1,27 @@
 {
     "ADDRESS_BOOKS_SIDEBAR": {
         "new_contact": {
-            "string": "New contact",
+            "string": "Новый контакт",
             "context": "Button for creating a new contact in the sidebar"
         },
         "new_distribution_list": {
-            "string": "New distribution list",
+            "string": "Новый список рассылки",
             "context": "Button for creating a new distribution list in the sidebar"
         },
         "globals": {
-            "string": "Global address books"
+            "string": "Глобальные адресные книги"
         },
         "personals": {
-            "string": "Address books"
+            "string": "Адресные книги"
         },
         "add_personal": {
-            "string": "Add address book"
+            "string": "Добавить адресную книгу"
         },
         "subscriptions": {
-            "string": "Subscriptions"
+            "string": "Подписки"
         },
         "add_subscriptions": {
-            "string": "Add subscriptions"
+            "string": "Добавить подписки"
         },
         "name": {
             "string": "Имя",
@@ -30,7 +30,7 @@
         "options": {
             "edit": {
                 "title": {
-                    "string": "Edit address book {name}"
+                    "string": "Изменить адресную книгу {name}"
                 },
                 "labels": {
                     "name": {
@@ -40,107 +40,107 @@
             },
             "link": {
                 "title": {
-                    "string": "Links"
+                    "string": "Ссылки"
                 },
                 "labels": {
                     "name": {
-                        "string": "CardDAV URL"
+                        "string": "URL CardDAV"
                     }
                 },
                 "copy": {
-                    "string": "Copy URL",
+                    "string": "Копировать URL",
                     "context": "Aria label for copying the address book CardDAV URL."
                 }
             },
             "delete": {
                 "title": {
-                    "string": "Are you sure you want to delete address book {name}?"
+                    "string": "Вы уверены, что хотите удалить адресную книгу {name}?"
                 }
             },
             "sharing": {
-                "string": "Sharing"
+                "string": "Общий доступ"
             },
             "import": {
-                "string": "Import"
+                "string": "Импорт"
             },
             "export": {
-                "string": "Export"
+                "string": "Экспорт"
             },
             "ios_download": {
-                "string": "Download iOS - MacOS configuration profile"
+                "string": "Скачать профиль конфигурации для iOS и macOS"
             }
         },
         "sharing": {
             "title": {
-                "string": "Address Book Sharing"
+                "string": "Общий доступ к адресной книге"
             },
             "description": {
-                "string": "Share this address book with other users. Shared users can view or modify contacts based on the permission level you grant."
+                "string": "Предоставьте этой адресной книге общий доступ для других пользователей. Они смогут просматривать или изменять контакты в зависимости от выданного уровня прав."
             },
             "addUser": {
-                "string": "Add User"
+                "string": "Добавить пользователя"
             },
             "searchPlaceholder": {
-                "string": "Enter user email..."
+                "string": "Введите эл. почту пользователя..."
             },
             "addButton": {
-                "string": "Share"
+                "string": "Открыть доступ"
             },
             "added": {
-                "string": "Address book shared successfully"
+                "string": "Общий доступ к адресной книге успешно открыт"
             },
             "addError": {
-                "string": "Failed to share address book"
+                "string": "Не удалось открыть общий доступ к адресной книге"
             },
             "removed": {
-                "string": "Share removed successfully"
+                "string": "Общий доступ успешно закрыт"
             },
             "removeError": {
-                "string": "Failed to remove share"
+                "string": "Не удалось закрыть общий доступ"
             },
             "removeButton": {
                 "string": "Удалить"
             },
             "existingShares": {
-                "string": "Shared with"
+                "string": "Доступ предоставлен:"
             },
             "noShares": {
-                "string": "This address book is not shared with anyone yet."
+                "string": "Доступ к этой адресной книге ещё никому не предоставлен."
             },
             "table": {
                 "user": {
-                    "string": "User"
+                    "string": "Пользователь"
                 },
                 "level": {
-                    "string": "Permission Level"
+                    "string": "Уровень прав"
                 }
             }
         },
         "all_contacts": {
-            "string": "All contacts",
+            "string": "Все контакты",
             "context": "Sidebar entry for cross-address-book contact listing"
         },
         "import": {
             "description": {
-                "string": "Upload a contacts or distribution list file to import."
+                "string": "Загрузите файл контактов или списков рассылки для импорта."
             },
             "title_book": {
-                "string": "Import into {name}"
+                "string": "Импорт в {name}"
             },
             "scope": {
-                "string": "Import target"
+                "string": "Цель импорта"
             },
             "scope_contacts": {
-                "string": "Contacts into this address book"
+                "string": "Контакты в эту адресную книгу"
             },
             "scope_lists": {
-                "string": "Distribution lists into this address book"
+                "string": "Списки рассылки в эту адресную книгу"
             },
             "scope_new_book": {
-                "string": "Create a new address book"
+                "string": "Создать новую адресную книгу"
             },
             "format": {
-                "string": "File format"
+                "string": "Формат файла"
             },
             "format_json": {
                 "string": "JSON"
@@ -155,22 +155,22 @@
                 "string": "LDIF"
             },
             "file": {
-                "string": "File"
+                "string": "Файл"
             },
             "submit": {
-                "string": "Start import"
+                "string": "Начать импорт"
             },
             "processing": {
-                "string": "Import in progress..."
+                "string": "Идёт импорт..."
             },
             "cancel": {
-                "string": "Cancel import"
+                "string": "Отменить импорт"
             },
             "success": {
-                "string": "Import completed successfully."
+                "string": "Импорт успешно завершён."
             },
             "success_with_counts": {
-                "string": "Import completed. Created: {counts}."
+                "string": "Импорт завершён. Создано: {counts}."
             },
             "close": {
                 "string": "Закрыть"
@@ -178,22 +178,22 @@
         },
         "export": {
             "description": {
-                "string": "Export this address book to a file."
+                "string": "Экспортируйте эту адресную книгу в файл."
             },
             "title_book": {
-                "string": "Export {name}"
+                "string": "Экспорт {name}"
             },
             "format": {
-                "string": "Export format"
+                "string": "Формат экспорта"
             },
             "submit": {
-                "string": "Start export"
+                "string": "Начать экспорт"
             },
             "processing": {
-                "string": "Export in progress..."
+                "string": "Идёт экспорт..."
             },
             "success": {
-                "string": "Export completed. Your download should start shortly."
+                "string": "Экспорт завершён. Скачивание начнётся вскоре."
             },
             "close": {
                 "string": "Закрыть"

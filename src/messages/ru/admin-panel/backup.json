@@ -1,37 +1,37 @@
 {
     "AP_BACKUP": {
         "title": {
-            "string": "Backup Automation"
+            "string": "Автоматизация резервного копирования"
         },
         "description": {
-            "string": "Manage database and mailstore backups with retention policies and optional S3 upload."
+            "string": "Управляйте резервными копиями базы данных и почтового хранилища с политиками хранения и необязательной загрузкой в S3."
         },
         "trigger": {
             "button": {
-                "string": "Trigger Backup"
+                "string": "Запустить резервное копирование"
             },
             "running": {
-                "string": "Running..."
+                "string": "Выполняется..."
             },
             "success": {
-                "string": "Backup completed"
+                "string": "Резервное копирование завершено"
             },
             "error": {
-                "string": "Backup failed"
+                "string": "Ошибка резервного копирования"
             }
         },
         "config": {
             "retention": {
-                "string": "Retention"
+                "string": "Хранение"
             },
             "s3": {
-                "string": "S3 Upload"
+                "string": "Загрузка в S3"
             },
             "mailstore": {
-                "string": "Mailstore"
+                "string": "Почтовое хранилище"
             },
             "total": {
-                "string": "Total Backups"
+                "string": "Всего резервных копий"
             }
         },
         "table": {
@@ -39,7 +39,7 @@
                 "string": "ID"
             },
             "timestamp": {
-                "string": "Timestamp"
+                "string": "Метка времени"
             },
             "type": {
                 "string": "Тип"
@@ -48,13 +48,13 @@
                 "string": "Статус"
             },
             "size": {
-                "string": "Size"
+                "string": "Размер"
             },
             "duration": {
-                "string": "Duration"
+                "string": "Длительность"
             },
             "empty": {
-                "string": "No backups yet."
+                "string": "Резервных копий пока нет."
             }
         }
     }

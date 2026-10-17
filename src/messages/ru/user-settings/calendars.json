@@ -17,13 +17,13 @@
       "context": "Label for the calendar creation notification setting"
     },
     "calendarViewFirstDay": {
-      "0": "Sunday",
-      "1": "Monday",
-      "2": "Tuesday",
-      "3": "Wednesday",
-      "4": "Thursday",
-      "5": "Friday",
-      "6": "Saturday",
+      "0": "Воскресенье",
+      "1": "Понедельник",
+      "2": "Вторник",
+      "3": "Среда",
+      "4": "Четверг",
+      "5": "Пятница",
+      "6": "Суббота",
       "string": "Первый день недели в представлении календаря",
       "context": "Label for the setting that determines the first day of the week in calendar view (0=Sunday..6=Saturday)"
     },
@@ -40,20 +40,20 @@
       "context": "Label for the setting that determines whether to show as busy during off hours"
     },
     "calendarDaysShowed": {
-      "0": "Sunday",
-      "1": "Monday",
-      "2": "Tuesday",
-      "3": "Wednesday",
-      "4": "Thursday",
-      "5": "Friday",
-      "6": "Saturday",
+      "0": "Воскресенье",
+      "1": "Понедельник",
+      "2": "Вторник",
+      "3": "Среда",
+      "4": "Четверг",
+      "5": "Пятница",
+      "6": "Суббота",
       "string": "Количество дней, отображаемых в календаре",
       "context": "Label for the setting that determines which days are showed in calendar view (array of 0=Sunday..6=Saturday)"
     },
     "calendarWeekNumberFormat": {
-      "%U": "Sunday as the first day of the week",
-      "%W": "Monday as the first day of the week",
-      "%V": "First 4 days week",
+      "%U": "Воскресенье — первый день недели",
+      "%W": "Понедельник — первый день недели",
+      "%V": "Неделя с первыми 4 днями",
       "string": "Способ определения номера первой недели",
       "context": "Label for the setting that determines the week number format in calendar view (%U, %W or %V)"
     },
@@ -62,9 +62,9 @@
       "context": "Label for the setting that determines the default calendar"
     },
     "calendarStatus": {
-      "PUBLIC": "Public",
-      "CONFIDENTIAL": "Confidential",
-      "PRIVATE": "Private"
+      "PUBLIC": "Публичный",
+      "CONFIDENTIAL": "Конфиденциальный",
+      "PRIVATE": "Личный"
     },
     "eventDefaultClass": {
       "string": "Классификация по умолчанию для событий",
@@ -108,7 +108,7 @@
     },
     "davForceSyncFromClient": {
       "string": "Принудительная синхронизация событий, созданных из CalDAV-клиентов",
-      "help-tooltip": "Warning: if events from the client are more recent, force the sync anyway",
+      "help-tooltip": "Внимание: если события с клиента новее, всё равно принудительно синхронизировать",
       "context": "Label for the setting that determines whether to force synchronization of events created from CalDAV clients or not"
     },
     "categories": {
@@ -128,11 +128,11 @@
           }
         }
       },
-      "Work": "Work",
-      "Family": "Family",
-      "Friends": "Friends",
+      "Work": "Работа",
+      "Family": "Семья",
+      "Friends": "Друзья",
       "validation": {
-        "category-name-required": "Category name is required"
+        "category-name-required": "Укажите название категории"
       }
     }
   }

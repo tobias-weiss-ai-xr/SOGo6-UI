@@ -1,58 +1,58 @@
 {
     "AP_QUICK": {
         "title": {
-            "string": "Quick Actions"
+            "string": "Быстрые действия"
         },
         "description": {
-            "string": "User-defined multi-step actions triggered with a single click from the mail list."
+            "string": "Определяемые пользователем многошаговые действия, запускаемые одним щелчком из списка писем."
         },
         "form": {
             "create": {
-                "string": "New Action"
+                "string": "Новое действие"
             },
             "cancel": {
                 "string": "Отмена"
             },
             "title": {
-                "string": "Create Quick Action"
+                "string": "Создать быстрое действие"
             },
             "name": {
-                "string": "Action Name"
+                "string": "Название действия"
             },
             "icon": {
-                "string": "Icon"
+                "string": "Значок"
             },
             "steps": {
-                "string": "Steps"
+                "string": "Шаги"
             },
             "submit": {
-                "string": "Create Action"
+                "string": "Создать действие"
             }
         },
         "create": {
             "success": {
-                "string": "Action created"
+                "string": "Действие создано"
             },
             "error": {
-                "string": "Failed to create"
+                "string": "Не удалось создать"
             }
         },
         "delete": {
             "success": {
-                "string": "Action deleted"
+                "string": "Действие удалено"
             },
             "error": {
-                "string": "Failed to delete"
+                "string": "Не удалось удалить"
             }
         },
         "list": {
             "empty": {
-                "string": "No quick actions yet. Create one to speed up your workflow."
+                "string": "Быстрых действий пока нет. Создайте первое, чтобы ускорить свою работу."
             }
         },
         "errors": {
             "fields": {
-                "string": "Name and at least one step are required"
+                "string": "Укажите название и хотя бы один шаг"
             }
         }
     }

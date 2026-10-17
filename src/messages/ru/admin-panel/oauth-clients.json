@@ -1,58 +1,58 @@
 {
     "AP_OAUTH": {
         "title": {
-            "string": "OAuth2 / OIDC Clients"
+            "string": "Клиенты OAuth2 / OIDC"
         },
         "description": {
-            "string": "Manage OAuth2 client applications. SOGo acts as an OAuth2 authorization server and OpenID Connect provider."
+            "string": "Управляйте клиентскими приложениями OAuth2. SOGo выступает сервером авторизации OAuth2 и провайдером OpenID Connect."
         },
         "form": {
             "register": {
-                "string": "Register Client"
+                "string": "Зарегистрировать клиент"
             },
             "cancel": {
                 "string": "Отмена"
             },
             "title": {
-                "string": "Register OAuth2 Client"
+                "string": "Регистрация клиента OAuth2"
             },
             "name": {
-                "string": "Application Name"
+                "string": "Название приложения"
             },
             "redirect_uris": {
-                "string": "Redirect URIs"
+                "string": "URI перенаправления"
             },
             "redirect_hint": {
-                "string": "Separate multiple URIs with commas"
+                "string": "Разделяйте несколько URI запятыми"
             },
             "scopes": {
-                "string": "Scopes"
+                "string": "Области доступа"
             },
             "create": {
-                "string": "Register"
+                "string": "Зарегистрировать"
             }
         },
         "credentials": {
             "title": {
-                "string": "Client Credentials — Save Now"
+                "string": "Учётные данные клиента — сохраните сейчас"
             }
         },
         "create": {
             "success": {
-                "string": "Client registered"
+                "string": "Клиент зарегистрирован"
             },
             "error": {
-                "string": "Registration failed"
+                "string": "Не удалось зарегистрировать"
             }
         },
         "list": {
             "empty": {
-                "string": "No OAuth2 clients registered yet."
+                "string": "Клиенты OAuth2 ещё не зарегистрированы."
             }
         },
         "errors": {
             "fields": {
-                "string": "Name and redirect URI are required"
+                "string": "Укажите название и URI перенаправления"
             }
         }
     }
