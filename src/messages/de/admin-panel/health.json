@@ -11,7 +11,7 @@
         "string": "Alle Systeme betriebsbereit"
       },
       "degraded": {
-        "string": "Degraded"
+        "string": "Eingeschränkt"
       }
     },
     "overview": {
@@ -22,12 +22,12 @@
         "string": "Version"
       },
       "services": {
-        "string": "Services Healthy"
+        "string": "Dienste betriebsbereit"
       }
     },
     "errors": {
       "load_failed": {
-        "string": "Failed to load health data"
+        "string": "Integritätsdaten konnten nicht geladen werden"
       }
     }
   }

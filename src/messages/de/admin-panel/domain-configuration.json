@@ -16,7 +16,7 @@
       "SOGO_D_AUTH_TYPE": {
         "name": { "string": "Authentifizierungstyp" },
         "description": { "string": "Wählen Sie die Authentifizierungsmethode für Benutzer. 'Plain' bedeutet klassischer Benutzername/Passwort" },
-        "developer_comment": "Options might include LDAP, SQL, etc."
+        "developer_comment": "Zu den Optionen können LDAP, SQL usw. gehören."
       },
       "SOGO_D_CAS_URL": {
         "name": { "string": "URL des CAS-Servers" },
@@ -146,12 +146,12 @@
       "US_UID": {
         "name": { "string": "Benutzerquellen-UID" },
         "description": { "string": "Wählen Sie einen eindeutigennamen für diese Benutzerquelle aus, dieser wird nicht Benutzern angezeigt" },
-        "developer_comment": "Only for SOGo to differentiate differents User SOurce"
+        "developer_comment": "Nur für SOGo, um verschiedene Benutzerquellen zu unterscheiden"
       },
       "US_TYPE": {
         "name": { "string": "Benutzerquellen-Typ" },
         "description": { "string": "Legen Sie den Typ Ihrer Benutzerquelle fest" },
-        "developer_comment": "Only ldap and sql supported for now"
+        "developer_comment": "Derzeit werden nur LDAP und SQL unterstützt"
       },
       "US_LDAP_HOSTNAME": {
         "name": { "string": "LDAP-Server-Hostname" },
@@ -204,7 +204,7 @@
         "description": {
           "string": "Zusätzlicher Filter für LDAP-Abfragen. Verwenden Sie '=', '!=', 'AND', 'OR' und Klammern. Beispiel: '(objectClass='mailUser' OR objectClass!='mailGroup') AND accountStatus='active'"
         },
-        "developer_comment": "Use SOGo's syntax and not ldap syntax for filter"
+        "developer_comment": "Verwenden Sie die SOGo-Syntax und nicht die LDAP-Syntax für den Filter"
       },
       "US_LDAP_PWD_POLICY": {
         "name": { "string": "LDAP-Passwortrichtlinie" },
