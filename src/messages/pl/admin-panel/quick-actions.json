@@ -1,58 +1,58 @@
 {
     "AP_QUICK": {
         "title": {
-            "string": "Quick Actions"
+            "string": "Szybkie akcje"
         },
         "description": {
-            "string": "User-defined multi-step actions triggered with a single click from the mail list."
+            "string": "Wieloetapowe akcje zdefiniowane przez użytkownika, uruchamiane jednym kliknięciem z listy wiadomości."
         },
         "form": {
             "create": {
-                "string": "New Action"
+                "string": "Nowa akcja"
             },
             "cancel": {
                 "string": "Anuluj"
             },
             "title": {
-                "string": "Create Quick Action"
+                "string": "Utwórz szybką akcję"
             },
             "name": {
-                "string": "Action Name"
+                "string": "Nazwa akcji"
             },
             "icon": {
-                "string": "Icon"
+                "string": "Ikona"
             },
             "steps": {
-                "string": "Steps"
+                "string": "Kroki"
             },
             "submit": {
-                "string": "Create Action"
+                "string": "Utwórz akcję"
             }
         },
         "create": {
             "success": {
-                "string": "Action created"
+                "string": "Utworzono akcję"
             },
             "error": {
-                "string": "Failed to create"
+                "string": "Nie udało się utworzyć"
             }
         },
         "delete": {
             "success": {
-                "string": "Action deleted"
+                "string": "Usunięto akcję"
             },
             "error": {
-                "string": "Failed to delete"
+                "string": "Nie udało się usunąć"
             }
         },
         "list": {
             "empty": {
-                "string": "No quick actions yet. Create one to speed up your workflow."
+                "string": "Brak szybkich akcji. Utwórz jedną, aby przyspieszyć swój przepływ pracy."
             }
         },
         "errors": {
             "fields": {
-                "string": "Name and at least one step are required"
+                "string": "Nazwa i co najmniej jeden krok są wymagane"
             }
         }
     }

@@ -13,7 +13,7 @@
             "string": "Dalej"
         },
         "selected": {
-            "string": "{selected} of {total} row(s) selected."
+            "string": "Wybrano {selected} z {total} wierszy."
         }
     }
 }

@@ -1,41 +1,41 @@
 {
     "DONOR": {
         "title": {
-            "string": "Donor Communication Management"
+            "string": "Zarządzanie komunikacją z darczyńcami"
         },
         "description": {
-            "string": "Track donors, manage GDPR consent, generate tax receipts, and run campaigns"
+            "string": "Śledź darczyńców, zarządzaj zgodami RODO, generuj potwierdzenia podatkowe i prowadź kampanie"
         },
         "errors": {
             "fields": {
-                "string": "Required fields missing"
+                "string": "Brak wymaganych pól"
             },
             "fail": {
-                "string": "Operation failed"
+                "string": "Operacja nie powiodła się"
             }
         },
         "success": {
             "create": {
-                "string": "Donor registered"
+                "string": "Zarejestrowano darczyńcę"
             },
             "donate": {
-                "string": "Donation recorded"
+                "string": "Zapisano darowiznę"
             }
         },
         "register": {
             "title": {
-                "string": "Register Donor"
+                "string": "Zarejestruj darczyńcę"
             }
         },
         "donate": {
             "title": {
-                "string": "Record Donation"
+                "string": "Zapisz darowiznę"
             },
             "select": {
-                "string": "Select donor..."
+                "string": "Wybierz darczyńcę..."
             },
             "campaign": {
-                "string": "Campaign"
+                "string": "Kampania"
             }
         },
         "field": {
@@ -43,16 +43,16 @@
                 "string": "Nazwa"
             },
             "email": {
-                "string": "Email"
+                "string": "E-mail"
             },
             "type": {
                 "string": "Typ"
             },
             "total": {
-                "string": "Total"
+                "string": "Łącznie"
             },
             "donations": {
-                "string": "Donations"
+                "string": "Darowizny"
             },
             "consent": {
                 "string": "GDPR"
@@ -60,40 +60,40 @@
         },
         "type": {
             "individual": {
-                "string": "Individual"
+                "string": "Osoba prywatna"
             },
             "corporate": {
-                "string": "Corporate"
+                "string": "Firma"
             },
             "foundation": {
-                "string": "Foundation"
+                "string": "Fundacja"
             }
         },
         "button": {
             "register": {
-                "string": "Register"
+                "string": "Zarejestruj"
             },
             "donate": {
-                "string": "Record Donation"
+                "string": "Zapisz darowiznę"
             }
         },
         "stats": {
             "title": {
-                "string": "Statistics"
+                "string": "Statystyki"
             },
             "total_donors": {
-                "string": "Total Donors"
+                "string": "Wszyscy darczyńcy"
             },
             "total_raised": {
-                "string": "Total Raised"
+                "string": "Zebrano łącznie"
             }
         },
         "list": {
             "title": {
-                "string": "All Donors"
+                "string": "Wszyscy darczyńcy"
             },
             "empty": {
-                "string": "No donors registered yet"
+                "string": "Brak zarejestrowanych darczyńców"
             }
         }
     }

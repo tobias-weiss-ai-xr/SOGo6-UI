@@ -1,50 +1,50 @@
 {
     "VOLUNTEER": {
         "title": {
-            "string": "Volunteer Scheduling"
+            "string": "Planowanie wolontariuszy"
         },
         "description": {
-            "string": "Manage volunteers, assign shifts, track hours, and generate certificates"
+            "string": "Zarządzaj wolontariuszami, przydzielaj zmiany, śledź godziny i generuj zaświadczenia"
         },
         "errors": {
             "fields": {
-                "string": "Required fields missing"
+                "string": "Brak wymaganych pól"
             },
             "fail": {
-                "string": "Operation failed"
+                "string": "Operacja nie powiodła się"
             }
         },
         "success": {
             "create": {
-                "string": "Volunteer registered"
+                "string": "Wolontariusz został zarejestrowany"
             },
             "shift": {
-                "string": "Shift assigned"
+                "string": "Przydzielono zmianę"
             },
             "cert": {
-                "string": "Certificate generated"
+                "string": "Certyfikat został wygenerowany"
             }
         },
         "register": {
             "title": {
-                "string": "Register Volunteer"
+                "string": "Zarejestruj wolontariusza"
             }
         },
         "shift": {
             "title": {
-                "string": "Create Shift"
+                "string": "Utwórz zmianę"
             },
             "select": {
-                "string": "Select volunteer..."
+                "string": "Wybierz wolontariusza..."
             },
             "task": {
-                "string": "Task"
+                "string": "Zadanie"
             },
             "start": {
-                "string": "Start"
+                "string": "Rozpocznij"
             },
             "end": {
-                "string": "End"
+                "string": "Koniec"
             }
         },
         "field": {
@@ -52,46 +52,46 @@
                 "string": "Nazwa"
             },
             "email": {
-                "string": "Email"
+                "string": "E-mail"
             },
             "hours": {
-                "string": "Hours"
+                "string": "Godziny"
             },
             "status": {
                 "string": "Status"
             },
             "no_shows": {
-                "string": "No-shows"
+                "string": "Nieobecni"
             }
         },
         "button": {
             "register": {
-                "string": "Register"
+                "string": "Zarejestruj"
             },
             "assign": {
-                "string": "Assign Shift"
+                "string": "Przydziel zmianę"
             }
         },
         "stats": {
             "title": {
-                "string": "Statistics"
+                "string": "Statystyki"
             },
             "volunteers": {
-                "string": "Volunteers"
+                "string": "Wolontariusze"
             },
             "hours": {
-                "string": "Total Hours"
+                "string": "Łącznie godzin"
             },
             "shifts": {
-                "string": "Active Shifts"
+                "string": "Aktywne zmiany"
             }
         },
         "list": {
             "title": {
-                "string": "All Volunteers"
+                "string": "Wszyscy wolontariusze"
             },
             "empty": {
-                "string": "No volunteers registered yet"
+                "string": "Brak zarejestrowanych wolontariuszy"
             }
         }
     }

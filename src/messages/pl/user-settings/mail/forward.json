@@ -1,79 +1,79 @@
 {
     "US_MAIL_FORWARD": {
         "title": {
-            "string": "Mail Forward"
+            "string": "Przekazywanie poczty"
         },
         "page": {
             "description": {
-                "string": "Automatically forward incoming messages to one or more email addresses."
+                "string": "Automatycznie przekazuj wiadomości przychodzące na jeden lub więcej adresów e-mail."
             }
         },
         "labels": {
             "transfer_incoming": {
-                "string": "Transfer incoming messages"
+                "string": "Przenoś wiadomości przychodzące"
             },
             "email": {
-                "string": "Email address"
+                "string": "Adres e-mail"
             },
             "always_forward": {
-                "string": "Always forward"
+                "string": "Zawsze przekazuj"
             },
             "keep_copy": {
-                "string": "Keep a copy in this inbox"
+                "string": "Zachowaj kopię w tej skrzynce odbiorczej"
             }
         },
         "description": {
             "transfer_incoming": {
-                "string": "Automatically forward new messages to another email address"
+                "string": "Automatycznie przekazuj nowe wiadomości na inny adres e-mail"
             },
             "email": {
-                "string": "Forward to these addresses (up to {max} addresses). Add multiple addresses separated by comma, semicolon, or press Enter/Tab."
+                "string": "Przekazuj na te adresy (maksymalnie {max} adresów). Dodaj wiele adresów oddzielonych przecinkiem, średnikiem lub naciśnij Enter/Tab."
             }
         },
         "help": {
             "email": {
-                "string": "We'll forward new messages to these addresses"
+                "string": "Będziemy przekazywać nowe wiadomości na te adresy"
             }
         },
         "placeholders": {
             "email": {
-                "string": "Add email address and press Enter"
+                "string": "Dodaj adres e-mail i naciśnij Enter"
             }
         },
         "errors": {
             "email": {
                 "invalid": {
-                    "string": "Please enter a valid email address"
+                    "string": "Wprowadź prawidłowy adres e-mail"
                 },
                 "duplicate": {
-                    "string": "This address is already in the list"
+                    "string": "Ten adres znajduje się już na liście"
                 }
             },
             "emails": {
                 "list": {
-                    "string": "There was an error with one or more email addresses"
+                    "string": "Wystąpił błąd dotyczący jednego lub większej liczby adresów e-mail"
                 }
             },
             "max_reached": {
-                "string": "Maximum {max} addresses allowed"
+                "string": "Dozwolonych jest maksymalnie {max} adresów"
             },
             "validation": {
                 "addresses_required": {
-                    "string": "At least one email address is required when forwarding is enabled."
+                    "string": "Gdy przekazywanie jest włączone, wymagany jest co najmniej jeden adres e-mail."
                 }
             }
         },
         "hints": {
             "blur": {
-                "string": "Press Enter to add this address"
+                "string": "Naciśnij Enter, aby dodać ten adres"
             }
         },
         "tooltip": {
             "always_forward": {
-                "string": "Incoming mail is forwarded before applying your filters."
+                "string": "Poczta przychodząca jest przekazywana przed zastosowaniem Twoich filtrów."
             },
             "keep_copy": {
-                "string": "Keep a copy of forwarded messages in your inbox. Useful if you want to maintain a local archive."
+                "string": "Zachowaj kopię przekazywanych wiadomości w skrzynce odbiorczej. Przydatne, jeśli chcesz prowadzić lokalne archiwum."
             }
         },
         "errors_api": {
@@ -81,13 +81,13 @@
                 "string": "Błąd"
             },
             "save_failed": {
-                "string": "Couldn't save your changes, try again"
+                "string": "Nie udało się zapisać zmian, spróbuj ponownie"
             },
             "load_failed": {
-                "string": "Could not load forwarding settings. Please try again later."
+                "string": "Nie udało się wczytać ustawień przekazywania. Spróbuj ponownie później."
             },
             "feature_disabled": {
-                "string": "Mail forwarding has been disabled by your administrator."
+                "string": "Przekazywanie poczty zostało wyłączone przez administratora."
             }
         },
         "status": {
@@ -100,16 +100,16 @@
         },
         "aria": {
             "tags_count": {
-                "string": "{count} of {max} email addresses added"
+                "string": "Dodano {count} z {max} adresów e-mail"
             },
             "remove_email": {
-                "string": "Remove {email}"
+                "string": "Usuń {email}"
             },
             "email_input_group": {
-                "string": "Email addresses for forwarding"
+                "string": "Adresy e-mail do przekazywania"
             },
             "toggle_forwarding": {
-                "string": "Toggle email forwarding"
+                "string": "Przełącz przekazywanie e-maili"
             }
         }
     }

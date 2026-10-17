@@ -1,62 +1,62 @@
 {
     "AP_POLLS": {
         "title": {
-            "string": "Scheduling Polls"
+            "string": "Ankiety terminów"
         },
         "description": {
-            "string": "Create 'When are you free?' polls to find the best meeting time for internal and external participants."
+            "string": "Twórz ankiety typu „Kiedy jesteś dostępny?”, aby znaleźć najlepszy termin spotkania dla uczestników wewnętrznych i zewnętrznych."
         },
         "form": {
             "create": {
-                "string": "Create Poll"
+                "string": "Utwórz ankietę"
             },
             "cancel": {
                 "string": "Anuluj"
             },
             "title": {
-                "string": "New Scheduling Poll"
+                "string": "Nowa ankieta terminów"
             },
             "poll_title": {
-                "string": "Poll Title"
+                "string": "Tytuł ankiety"
             },
             "title_hint": {
-                "string": "e.g. Q1 Planning Meeting"
+                "string": "np. Spotkanie planistyczne Q1"
             },
             "participants": {
-                "string": "Participants"
+                "string": "Uczestnicy"
             },
             "description": {
                 "string": "Opis"
             },
             "time_slots": {
-                "string": "Proposed Time Slots"
+                "string": "Proponowane terminy"
             },
             "add_slot": {
-                "string": "Add Slot"
+                "string": "Dodaj termin"
             },
             "submit": {
-                "string": "Create Poll"
+                "string": "Utwórz ankietę"
             }
         },
         "create": {
             "success": {
-                "string": "Poll created"
+                "string": "Utworzono ankietę"
             },
             "error": {
-                "string": "Failed to create poll"
+                "string": "Nie udało się utworzyć ankiety"
             }
         },
         "list": {
             "empty": {
-                "string": "No scheduling polls yet. Create one to find the best meeting time."
+                "string": "Brak ankiet terminów. Utwórz jedną, aby znaleźć najlepszy termin spotkania."
             },
             "by": {
-                "string": "by"
+                "string": "od"
             }
         },
         "errors": {
             "fields": {
-                "string": "Title, participants, and at least one time slot are required"
+                "string": "Tytuł, uczestnicy i co najmniej jeden termin są wymagane"
             }
         }
     }

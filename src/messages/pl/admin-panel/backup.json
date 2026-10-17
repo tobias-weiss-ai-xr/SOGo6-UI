@@ -1,37 +1,37 @@
 {
     "AP_BACKUP": {
         "title": {
-            "string": "Backup Automation"
+            "string": "Automatyzacja kopii zapasowych"
         },
         "description": {
-            "string": "Manage database and mailstore backups with retention policies and optional S3 upload."
+            "string": "Zarządzaj kopiami zapasowymi bazy danych i magazynu poczty z zasadami retencji i opcjonalnym przesyłaniem do S3."
         },
         "trigger": {
             "button": {
-                "string": "Trigger Backup"
+                "string": "Uruchom kopię zapasową"
             },
             "running": {
-                "string": "Running..."
+                "string": "Działanie..."
             },
             "success": {
-                "string": "Backup completed"
+                "string": "Kopia zapasowa została utworzona"
             },
             "error": {
-                "string": "Backup failed"
+                "string": "Kopia zapasowa nie powiodła się"
             }
         },
         "config": {
             "retention": {
-                "string": "Retention"
+                "string": "Retencja"
             },
             "s3": {
-                "string": "S3 Upload"
+                "string": "Przesyłanie S3"
             },
             "mailstore": {
-                "string": "Mailstore"
+                "string": "Magazyn poczty"
             },
             "total": {
-                "string": "Total Backups"
+                "string": "Wszystkie kopie zapasowe"
             }
         },
         "table": {
@@ -39,7 +39,7 @@
                 "string": "ID"
             },
             "timestamp": {
-                "string": "Timestamp"
+                "string": "Znacznik czasu"
             },
             "type": {
                 "string": "Typ"
@@ -48,13 +48,13 @@
                 "string": "Status"
             },
             "size": {
-                "string": "Size"
+                "string": "Rozmiar"
             },
             "duration": {
-                "string": "Duration"
+                "string": "Czas trwania"
             },
             "empty": {
-                "string": "No backups yet."
+                "string": "Brak kopii zapasowych."
             }
         }
     }

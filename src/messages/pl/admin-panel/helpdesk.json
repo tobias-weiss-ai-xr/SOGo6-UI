@@ -4,64 +4,64 @@
             "string": "Helpdesk / Ticketing"
         },
         "description": {
-            "string": "Auto-create tickets from emails with assignment, priority, SLA tracking, and response history."
+            "string": "Automatyczne tworzenie zgłoszeń z e-maili z przypisywaniem, priorytetami, śledzeniem SLA i historią odpowiedzi."
         },
         "form": {
             "create": {
-                "string": "New Ticket"
+                "string": "Nowe zgłoszenie"
             },
             "cancel": {
                 "string": "Anuluj"
             },
             "title": {
-                "string": "Create Ticket"
+                "string": "Utwórz zgłoszenie"
             },
             "subject": {
-                "string": "Subject"
+                "string": "Temat"
             },
             "priority": {
-                "string": "Priority"
+                "string": "Priorytet"
             },
             "description": {
                 "string": "Opis"
             },
             "requester": {
-                "string": "Requester Email"
+                "string": "E-mail zgłaszającego"
             },
             "assignee": {
-                "string": "Assignee Email"
+                "string": "E-mail wykonawcy"
             },
             "sla": {
-                "string": "SLA (hours)"
+                "string": "SLA (godziny)"
             },
             "submit": {
-                "string": "Create Ticket"
+                "string": "Utwórz zgłoszenie"
             }
         },
         "create": {
             "success": {
-                "string": "Ticket created"
+                "string": "Utworzono zgłoszenie"
             },
             "error": {
-                "string": "Failed to create"
+                "string": "Nie udało się utworzyć"
             }
         },
         "update": {
             "success": {
-                "string": "Ticket updated"
+                "string": "Zaktualizowano zgłoszenie"
             },
             "error": {
-                "string": "Failed to update"
+                "string": "Nie udało się zaktualizować"
             }
         },
         "list": {
             "empty": {
-                "string": "No tickets yet."
+                "string": "Brak zgłoszeń."
             }
         },
         "errors": {
             "fields": {
-                "string": "Subject and description are required"
+                "string": "Temat i opis są wymagane"
             }
         }
     }

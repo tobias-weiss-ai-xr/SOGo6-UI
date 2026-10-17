@@ -4,166 +4,166 @@
             "string": "System"
         },
         "theme": {
-            "string": "Theme"
+            "string": "Motyw"
         },
         "users": {
             "string": "Użytkownicy"
         },
         "bulk_users": {
-            "string": "Bulk Users"
+            "string": "Masowe operacje na użytkownikach"
         },
         "quotas": {
-            "string": "Quotas"
+            "string": "Limity"
         },
         "branding": {
             "string": "Branding"
         },
         "backup": {
-            "string": "Backup"
+            "string": "Kopia zapasowa"
         },
         "db_migration": {
-            "string": "DB Migration"
+            "string": "Migracja bazy danych"
         },
         "migration": {
-            "string": "Migration"
+            "string": "Migracja"
         },
         "config_code": {
-            "string": "Config as Code"
+            "string": "Konfiguracja jako kod"
         },
         "webhooks": {
-            "string": "Webhooks"
+            "string": "Webhooki"
         },
         "oauth_clients": {
-            "string": "OAuth Clients"
+            "string": "Klienci OAuth"
         },
         "scheduling_polls": {
-            "string": "Scheduling Polls"
+            "string": "Ankiety terminów"
         },
         "appointment_slots": {
-            "string": "Appointment Slots"
+            "string": "Terminy spotkań"
         },
         "shared_drafts": {
-            "string": "Shared Drafts"
+            "string": "Wspólne wersje robocze"
         },
         "file_sharing": {
-            "string": "File Sharing"
+            "string": "Udostępnianie plików"
         },
         "doc_preview": {
-            "string": "Doc Preview"
+            "string": "Podgląd dokumentu"
         },
         "approvals": {
-            "string": "Approvals"
+            "string": "Zatwierdzenia"
         },
         "helpdesk": {
-            "string": "Helpdesk"
+            "string": "Pomoc techniczna"
         },
         "crm": {
             "string": "CRM"
         },
         "workflows": {
-            "string": "Workflows"
+            "string": "Przepływy pracy"
         },
         "quick_actions": {
-            "string": "Quick Actions"
+            "string": "Szybkie akcje"
         },
         "freebusy": {
-            "string": "Free/Busy"
+            "string": "Wolny/Zajęty"
         },
         "ai_summarize": {
-            "string": "AI Summarize"
+            "string": "Podsumowanie AI"
         },
         "ai_classify": {
-            "string": "AI Classify"
+            "string": "Klasyfikacja AI"
         },
         "ai_draft": {
-            "string": "AI Draft"
+            "string": "Wersja robocza AI"
         },
         "ai_search": {
-            "string": "AI Search"
+            "string": "Wyszukiwanie AI"
         },
         "ai_schedule": {
-            "string": "AI Schedule"
+            "string": "Planowanie AI"
         },
         "ai_anomaly": {
-            "string": "AI Anomaly"
+            "string": "Anomalia AI"
         },
         "ai_enrich": {
-            "string": "AI Enrich"
+            "string": "Wzbogacanie AI"
         },
         "ai_attachment": {
-            "string": "AI Attach"
+            "string": "Załączniki AI"
         },
         "ai_spam": {
-            "string": "AI Spam"
+            "string": "Spam AI"
         },
         "ai_transcripts": {
-            "string": "AI Transcripts"
+            "string": "Transkrypcje AI"
         },
         "api_docs": {
-            "string": "API Documentation"
+            "string": "Dokumentacja API"
         },
         "config": {
             "string": "Konfiguracja",
             "rules": {
-                "string": "Rules"
+                "string": "Reguły"
             },
             "domains": {
-                "string": "Domains",
+                "string": "Domeny",
                 "default": {
                     "string": "Domyślny"
                 },
                 "custom": {
-                    "string": "Custom domains"
+                    "string": "Domeny niestandardowe"
                 }
             }
         },
         "sessions": {
-            "string": "Sessions"
+            "string": "Sesje"
         },
         "audit": {
-            "string": "Audit Log"
+            "string": "Dziennik audytu"
         },
         "health": {
-            "string": "Health"
+            "string": "Zdrowie systemu"
         },
         "debug": {
-            "string": "Mailbox Debug"
+            "string": "Debugowanie skrzynki"
         },
         "dns_wizard": {
-            "string": "DNS Wizard"
+            "string": "Kreator DNS"
         },
         "resources": {
             "string": "Zasoby"
         },
         "scim": {
-            "string": "SCIM Provisioning"
+            "string": "Aprowizacja SCIM"
         },
         "student_groups": {
-            "string": "Student Groups"
+            "string": "Grupy studenckie"
         },
         "hipaa": {
-            "string": "HIPAA Compliance"
+            "string": "Zgodność HIPAA"
         },
         "eidas": {
-            "string": "eIDAS Signatures"
+            "string": "Podpisy eIDAS"
         },
         "donor": {
-            "string": "Donor Management"
+            "string": "Zarządzanie darczyńcami"
         },
         "volunteer": {
-            "string": "Volunteer Scheduling"
+            "string": "Planowanie wolontariuszy"
         },
         "import": {
-            "string": "Import/Export"
+            "string": "Import/eksport"
         },
         "matrix": {
-            "string": "Matrix Chat"
+            "string": "Czat Matrix"
         },
         "protocols": {
             "string": "JMAP / ActiveSync"
         },
         "mobile": {
-            "string": "Mobile App"
+            "string": "Aplikacja mobilna"
         }
     }
 }

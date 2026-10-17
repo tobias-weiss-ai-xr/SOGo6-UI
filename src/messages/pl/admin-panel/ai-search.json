@@ -1,25 +1,25 @@
 {
     "AI_SEARCH": {
         "title": {
-            "string": "Natural Language Search"
+            "string": "Wyszukiwanie językiem naturalnym"
         },
         "description": {
-            "string": "Search emails with plain English. Converts to structured queries automatically."
+            "string": "Szukaj e-maili zwykłym językiem. Automatycznie konwertuje na ustrukturyzowane zapytania."
         },
         "input": {
             "placeholder": {
-                "string": "Show invoices from March over $500..."
+                "string": "Pokaż faktury z marca powyżej 500 USD..."
             }
         },
         "output": {
             "title": {
-                "string": "Parsed Query"
+                "string": "Przetworzone zapytanie"
             },
             "empty": {
-                "string": "Enter a search query above"
+                "string": "Wprowadź zapytanie powyżej"
             },
             "detected": {
-                "string": "Detected filters"
+                "string": "Wykryte filtry"
             }
         },
         "search": {
@@ -27,10 +27,10 @@
         },
         "errors": {
             "empty": {
-                "string": "Enter a search query"
+                "string": "Wprowadź zapytanie"
             },
             "fail": {
-                "string": "Search failed"
+                "string": "Wyszukiwanie nie powiodło się"
             }
         }
     }

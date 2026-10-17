@@ -46,23 +46,23 @@
         "string": "Zarejestruj nowy klucz dostępu",
         "context": "Button to register a new passkey",
         "title": {
-          "string": "Register a New Passkey",
+          "string": "Zarejestruj nowy klucz dostępu",
           "context": "Title for the passkey registration dialog"
         },
         "description": {
-          "string": "Your browser or device will guide you through setting up a passkey using biometrics, a PIN, or an external security key.",
+          "string": "Przeglądarka lub urządzenie przeprowadzi Cię przez konfigurację klucza dostępu przy użyciu danych biometrycznych, kodu PIN lub zewnętrznego klucza bezpieczeństwa.",
           "context": "Description for the passkey registration dialog"
         },
         "button": {
-          "string": "Register",
+          "string": "Zarejestruj",
           "context": "Button to start passkey registration"
         },
         "waiting": {
-          "string": "Waiting for device interaction — follow the prompts on your device.",
+          "string": "Oczekiwanie na interakcję z urządzeniem — postępuj zgodnie z instrukcjami na urządzeniu.",
           "context": "Status during passkey registration"
         },
         "success": {
-          "string": "Passkey registered successfully!",
+          "string": "Klucz dostępu został pomyślnie zarejestrowany!",
           "context": "Status when passkey registration succeeds"
         }
       },

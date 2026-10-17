@@ -1,70 +1,70 @@
 {
     "AP_SLOTS": {
         "title": {
-            "string": "Appointment Slots"
+            "string": "Terminy spotkań"
         },
         "description": {
-            "string": "Publish bookable time slots (Calendly-style). Generate booking links for external participants."
+            "string": "Publikuj bookowalne terminy (w stylu Calendly). Generuj linki rezerwacji dla uczestników zewnętrznych."
         },
         "form": {
             "create": {
-                "string": "Create Slot"
+                "string": "Utwórz termin"
             },
             "cancel": {
                 "string": "Anuluj"
             },
             "title": {
-                "string": "New Appointment Slot"
+                "string": "Nowy termin spotkania"
             },
             "slot_title": {
-                "string": "Slot Title"
+                "string": "Tytuł terminu"
             },
             "duration": {
-                "string": "Duration (min)"
+                "string": "Czas trwania (min)"
             },
             "buffer": {
-                "string": "Buffer (min)"
+                "string": "Bufor (min)"
             },
             "start_time": {
-                "string": "Start Time"
+                "string": "Godzina rozpoczęcia"
             },
             "end_time": {
-                "string": "End Time"
+                "string": "Godzina zakończenia"
             },
             "days": {
-                "string": "Available Days"
+                "string": "Dostępne dni"
             },
             "submit": {
-                "string": "Create Slot"
+                "string": "Utwórz termin"
             }
         },
         "create": {
             "success": {
-                "string": "Slot created"
+                "string": "Utworzono termin"
             },
             "error": {
-                "string": "Failed to create slot"
+                "string": "Nie udało się utworzyć terminu"
             }
         },
         "slots": {
             "title": {
-                "string": "Your Slots"
+                "string": "Twoje terminy"
             },
             "empty": {
-                "string": "No appointment slots. Create one to share your availability."
+                "string": "Brak terminów spotkań. Utwórz jeden, aby udostępnić swoją dostępność."
             }
         },
         "bookings": {
             "title": {
-                "string": "Recent Bookings"
+                "string": "Ostatnie rezerwacje"
             },
             "empty": {
-                "string": "No bookings yet."
+                "string": "Brak rezerwacji."
             }
         },
         "errors": {
             "fields": {
-                "string": "Title, duration, times, and at least one day are required"
+                "string": "Tytuł, czas trwania, godziny i co najmniej jeden dzień są wymagane"
             }
         }
     }

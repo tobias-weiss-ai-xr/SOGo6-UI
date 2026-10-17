@@ -1,15 +1,15 @@
 {
     "CONTACT_FORM": {
         "emails": {
-            "string": "Email addresses",
+            "string": "Adresy e-mail",
             "context": "Label for the email addresses section in the contact form."
         },
         "addresses": {
-            "string": "Addresses",
+            "string": "Adresy",
             "context": "Label for the addresses section in the contact form."
         },
         "phone_numbers": {
-            "string": "Phone numbers",
+            "string": "Numery telefonów",
             "context": "Label for the phone numbers section in the contact form."
         },
         "urls": {
@@ -17,7 +17,7 @@
             "context": "Label for the URLs section in the contact form."
         },
         "birthday": {
-            "string": "Birthday",
+            "string": "Urodziny",
             "context": "Label for the birthday field in the contact visualization."
         },
         "notes": {
@@ -25,35 +25,35 @@
             "context": "Label for the notes section in the contact form."
         },
         "contact_information": {
-            "string": "Contact Information",
+            "string": "Informacje kontaktowe",
             "context": "Label for the contact information section in the contact form."
         },
         "contact_details": {
-            "string": "Contact Details",
+            "string": "Szczegóły kontaktu",
             "context": "Title for the contact details view header."
         },
         "back_to_list": {
-            "string": "Back to list",
+            "string": "Wróć do listy",
             "context": "Button label to return to the contact list."
         },
         "copied_to_clipboard": {
-            "string": "Copied to clipboard",
+            "string": "Skopiowano do schowka",
             "context": "Toast message when content is copied successfully."
         },
         "copied_value": {
-            "string": "Copied: {value}",
+            "string": "Skopiowano: {value}",
             "context": "Toast description showing what was copied."
         },
         "copy_failed": {
-            "string": "Copy failed",
+            "string": "Kopiowanie nie powiodło się",
             "context": "Toast error message when copy operation fails."
         },
         "copy_failed_description": {
-            "string": "Unable to copy to clipboard. Please try again.",
+            "string": "Nie udało się skopiować do schowka. Spróbuj ponownie.",
             "context": "Toast error description when copy fails."
         },
         "copy_email": {
-            "string": "Copy email",
+            "string": "Skopiuj e-mail",
             "context": "Tooltip for copy email button."
         },
         "copy": {
@@ -65,7 +65,7 @@
             "context": "Button label to edit a field."
         },
         "export": {
-            "string": "Export",
+            "string": "Eksportuj",
             "context": "Button label to export a contact."
         },
         "save": {
@@ -77,23 +77,23 @@
             "context": "Button label to cancel editing."
         },
         "edit_note": {
-            "string": "Edit note",
+            "string": "Edytuj notatkę",
             "context": "Button label to edit the contact note."
         },
         "add_note": {
-            "string": "Add note",
+            "string": "Dodaj notatkę",
             "context": "Button label to add a note to the contact."
         },
         "no_notes": {
-            "string": "No notes",
+            "string": "Brak notatek",
             "context": "Placeholder text when there are no notes."
         },
         "new_contact": {
-            "string": "New contact",
+            "string": "Nowy kontakt",
             "context": "Title for the new contact dialog"
         },
         "edit_contact": {
-            "string": "Edit contact",
+            "string": "Edytuj kontakt",
             "context": "Title for the edit contact dialog"
         },
         "create": {
@@ -105,137 +105,137 @@
             "context": "Button to delete a contact"
         },
         "add_email": {
-            "string": "Add email",
+            "string": "Dodaj e-mail",
             "context": "Button to add another email field"
         },
         "add_phone": {
-            "string": "Add phone",
+            "string": "Dodaj telefon",
             "context": "Button to add another phone field"
         },
         "remove_field": {
-            "string": "Remove field",
+            "string": "Usuń pole",
             "context": "Aria label for removing a dynamic form field"
         },
         "add_address": {
-            "string": "Add address",
+            "string": "Dodaj adres",
             "context": "Button to add another address field"
         },
         "add_url": {
-            "string": "Add URL",
+            "string": "Dodaj adres URL",
             "context": "Button to add another URL field"
         },
         "add_impp": {
-            "string": "Add instant messaging",
+            "string": "Dodaj komunikator internetowy",
             "context": "Button to add another instant messaging field"
         },
         "categories": {
-            "string": "Categories",
+            "string": "Kategorie",
             "context": "Label for contact categories field"
         },
         "photo": {
-            "string": "Photo",
+            "string": "Zdjęcie",
             "context": "Label for contact photo upload"
         },
         "photo_upload": {
-            "string": "Upload a photo",
+            "string": "Prześlij zdjęcie",
             "context": "Button to select a contact photo file"
         },
         "photo_change": {
-            "string": "Change photo",
+            "string": "Zmień zdjęcie",
             "context": "Button to change contact photo"
         },
         "photo_remove": {
-            "string": "Remove photo",
+            "string": "Usuń zdjęcie",
             "context": "Button to remove contact photo"
         },
         "anniversary": {
-            "string": "Anniversary",
+            "string": "Rocznica",
             "context": "Label for anniversary field in contact visualization"
         },
         "impp": {
-            "string": "Instant messaging",
+            "string": "Komunikator internetowy",
             "context": "Label for instant messaging addresses"
         },
         "geo": {
-            "string": "Location",
+            "string": "Lokalizacja",
             "context": "Label for geographic location"
         },
         "submit_error": {
-            "string": "Could not save. Please check the form and try again.",
+            "string": "Nie udało się zapisać. Sprawdź formularz i spróbuj ponownie.",
             "context": "Generic submit error shown in contact form"
         },
         "fields": {
             "first_name": {
-                "string": "First name"
+                "string": "Imię"
             },
             "last_name": {
-                "string": "Last name"
+                "string": "Nazwisko"
             },
             "middle_name": {
-                "string": "Middle name"
+                "string": "Drugie imię"
             },
             "prefix": {
-                "string": "Prefix"
+                "string": "Prefiks"
             },
             "suffix": {
-                "string": "Suffix"
+                "string": "Sufiks"
             },
             "nickname": {
-                "string": "Nickname"
+                "string": "Pseudonim"
             },
             "organization": {
-                "string": "Organization"
+                "string": "Organizacja"
             },
             "department": {
-                "string": "Department"
+                "string": "Dział"
             },
             "job_title": {
-                "string": "Job title"
+                "string": "Stanowisko"
             },
             "role": {
-                "string": "Role"
+                "string": "Rola"
             },
             "impp": {
-                "string": "Instant messaging"
+                "string": "Komunikator internetowy"
             },
             "anniversary": {
-                "string": "Anniversary"
+                "string": "Rocznica"
             },
             "birthday_unknown_year": {
-                "string": "Year unknown (month and day only)"
+                "string": "Rok nieznany (tylko miesiąc i dzień)"
             },
             "street": {
-                "string": "Street"
+                "string": "Ulica"
             },
             "city": {
-                "string": "City"
+                "string": "Miasto"
             },
             "postal_code": {
-                "string": "Postal code"
+                "string": "Kod pocztowy"
             },
             "country": {
-                "string": "Country"
+                "string": "Kraj"
             },
             "region": {
-                "string": "Region / State"
+                "string": "Region / stan"
             },
             "po_box": {
-                "string": "PO box"
+                "string": "Skrytka pocztowa"
             },
             "extended": {
-                "string": "Extended address"
+                "string": "Adres rozszerzony"
             },
             "contact_kind": {
-                "string": "Contact type"
+                "string": "Typ kontaktu"
             },
             "contact_kind_individual": {
-                "string": "Person"
+                "string": "Osoba"
             },
             "contact_kind_org": {
-                "string": "Organization"
+                "string": "Organizacja"
             },
             "organization_required": {
-                "string": "Organization name"
+                "string": "Nazwa organizacji"
             },
             "type": {
                 "string": "Typ"
@@ -244,28 +244,28 @@
                 "string": "Domyślny"
             },
             "pref": {
-                "string": "Preferred"
+                "string": "Preferowany"
             },
             "email_type_work": {
-                "string": "Work"
+                "string": "Praca"
             },
             "email_type_home": {
-                "string": "Home"
+                "string": "Dom"
             },
             "email_type_other": {
-                "string": "Other"
+                "string": "Inne"
             },
             "phone_type_work": {
-                "string": "Work"
+                "string": "Praca"
             },
             "phone_type_home": {
-                "string": "Home"
+                "string": "Dom"
             },
             "phone_type_mobile": {
-                "string": "Mobile"
+                "string": "Telefon komórkowy"
             },
             "phone_type_other": {
-                "string": "Other"
+                "string": "Inne"
             },
             "url": {
                 "string": "URL"
@@ -273,48 +273,48 @@
         },
         "delete_dialog": {
             "title": {
-                "string": "Delete contact?"
+                "string": "Usunąć kontakt?"
             },
             "description": {
-                "string": "This contact will be permanently removed from your address book."
+                "string": "Ten kontakt zostanie trwale usunięty z Twojej książki adresowej."
             },
             "confirm": {
                 "string": "Usuń"
             }
         },
         "write_message": {
-            "string": "Write message",
+            "string": "Napisz wiadomość",
             "context": "Button to compose an email to this contact."
         },
         "actions_menu": {
-            "string": "More actions",
+            "string": "Więcej akcji",
             "context": "Aria label for the contact actions dropdown menu."
         },
         "compose_email": {
-            "string": "Compose",
+            "string": "Utwórz",
             "context": "Button to compose an email to a specific address on the contact card."
         },
         "selection_placeholder": {
             "title": {
-                "string": "Select a contact",
+                "string": "Wybierz kontakt",
                 "context": "Title shown when no contact is selected in the detail panel."
             },
             "description": {
-                "string": "Choose a contact or distribution list from the list to view details.",
+                "string": "Wybierz kontakt lub listę dystrybucyjną z listy, aby wyświetlić szczegóły.",
                 "context": "Description shown when no contact is selected."
             }
         },
         "load_error": {
             "title": {
-                "string": "Could not load contact",
+                "string": "Nie udało się wczytać kontaktu",
                 "context": "Error title when contact details fail to load."
             },
             "list": {
-                "string": "Could not load contacts",
+                "string": "Nie udało się wczytać kontaktów",
                 "context": "Error message when the contact list fails to load."
             },
             "description": {
-                "string": "Please try again later.",
+                "string": "Spróbuj ponownie później.",
                 "context": "Error description when contact data fails to load."
             }
         }

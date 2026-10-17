@@ -1,51 +1,51 @@
 {
     "DISTRIBUTION_LIST_FORM": {
         "new_list": {
-            "string": "New distribution list",
+            "string": "Nowa lista dystrybucyjna",
             "context": "Title for the new distribution list dialog"
         },
         "edit_list": {
-            "string": "Edit distribution list",
+            "string": "Edytuj listę dystrybucyjną",
             "context": "Title for the edit distribution list dialog"
         },
         "list_badge": {
-            "string": "Distribution list",
+            "string": "Lista dystrybucyjna",
             "context": "Badge shown on distribution list detail view"
         },
         "member_count": {
-            "string": "{number, plural, one {# member} other {# members}}",
+            "string": "{number, plural, one {# członek} few {# członków} many {# członków} other {# członka}}",
             "context": "Member count on distribution list detail"
         },
         "members": {
-            "string": "Members",
+            "string": "Członkowie",
             "context": "Label for members section"
         },
         "members_selected": {
-            "string": "{number, plural, one {# member selected} other {# members selected}}",
+            "string": "{number, plural, one {wybrany # członek} few {wybrane # członków} many {wybranych # członków} other {wybranych # członków}}",
             "context": "Selected member count in form"
         },
         "members_required": {
-            "string": "Select at least one member or add an email address",
+            "string": "Wybierz co najmniej jednego członka lub dodaj adres e-mail",
             "context": "Validation when no members are provided"
         },
         "manual_emails": {
-            "string": "Additional email addresses",
+            "string": "Dodatkowe adresy e-mail",
             "context": "Label for manual email inputs"
         },
         "no_members": {
-            "string": "No members in this list",
+            "string": "Brak członków na tej liście",
             "context": "Empty state for members section"
         },
         "write_message": {
-            "string": "Write message",
+            "string": "Napisz wiadomość",
             "context": "Button to compose mail to all list members"
         },
         "add_email": {
-            "string": "Add email",
+            "string": "Dodaj e-mail",
             "context": "Button to add manual email field"
         },
         "remove_email": {
-            "string": "Remove email",
+            "string": "Usuń e-mail",
             "context": "Aria label for removing manual email field"
         },
         "create": {
@@ -62,7 +62,7 @@
         },
         "fields": {
             "name": {
-                "string": "List name"
+                "string": "Nazwa listy"
             },
             "note": {
                 "string": "Opis"
@@ -70,10 +70,10 @@
         },
         "delete_dialog": {
             "title": {
-                "string": "Delete distribution list?"
+                "string": "Usunąć listę dystrybucyjną?"
             },
             "description": {
-                "string": "This distribution list will be permanently removed from your address book."
+                "string": "Ta lista dystrybucyjna zostanie trwale usunięta z Twojej książki adresowej."
             },
             "confirm": {
                 "string": "Usuń"

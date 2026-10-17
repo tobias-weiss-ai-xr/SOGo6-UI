@@ -36,7 +36,7 @@
         "description": {
           "string": "Wybierz metodę uwierzytelniania dla użytkowników. 'Plain' oznacza klasyczną metodę nazwa_użytkownika/hasło"
         },
-        "developer_comment": "Options might include LDAP, SQL, etc."
+        "developer_comment": "Opcje mogą obejmować LDAP, SQL itd."
       },
       "SOGO_D_CAS_URL": {
         "name": {
@@ -252,7 +252,7 @@
         "description": {
           "string": "Wybierz unikalną nazwę dla tego źródła użytkowników (nie będzie wyświetlana użytkownikom)"
         },
-        "developer_comment": "Only for SOGo to differentiate differents User SOurce"
+        "developer_comment": "Tylko dla SOGo, aby odróżnić różne źródła użytkowników"
       },
       "US_TYPE": {
         "name": {
@@ -261,7 +261,7 @@
         "description": {
           "string": "Ustaw typ źródła użytkowników"
         },
-        "developer_comment": "Only ldap and sql supported for now"
+        "developer_comment": "Na razie obsługiwane są tylko ldap i sql"
       },
       "US_LDAP_HOSTNAME": {
         "name": {
@@ -342,7 +342,7 @@
         "description": {
           "string": "Dodatkowy filtr używany dla zapytań LDAP. Użyj '=', '!=', 'AND', 'OR' oraz nawiasów. Przykład: '(objectClass='mailUser' OR objectClass!='mailGroup') AND accountStatus='active'"
         },
-        "developer_comment": "Use SOGo's syntax and not ldap syntax for filter"
+        "developer_comment": "Użyj składni SOGo, a nie składni LDAP, w filtrze"
       },
       "US_LDAP_PWD_POLICY": {
         "name": {

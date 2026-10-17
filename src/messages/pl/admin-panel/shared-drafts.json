@@ -1,70 +1,70 @@
 {
     "AP_DRAFTS": {
         "title": {
-            "string": "Collaborative Drafts"
+            "string": "Wspólne wersje robocze"
         },
         "description": {
-            "string": "Share draft emails with colleagues for review and approval before sending."
+            "string": "Udostępniaj wersje robocze e-maili współpracownikom do sprawdzenia i zatwierdzenia przed wysłaniem."
         },
         "form": {
             "share": {
-                "string": "Share Draft"
+                "string": "Udostępnij wersję roboczą"
             },
             "cancel": {
                 "string": "Anuluj"
             },
             "title": {
-                "string": "Share a Draft"
+                "string": "Udostępnij wersję roboczą"
             },
             "subject": {
-                "string": "Subject"
+                "string": "Temat"
             },
             "reviewers": {
-                "string": "Reviewers"
+                "string": "Recenzenci"
             },
             "message": {
-                "string": "Message to Reviewers"
+                "string": "Wiadomość do recenzentów"
             },
             "message_hint": {
-                "string": "Please review this draft before I send it"
+                "string": "Proszę przejrzyj tę wersję roboczą, zanim ją wyślę"
             },
             "body": {
-                "string": "Email Body"
+                "string": "Treść e-maila"
             },
             "submit": {
-                "string": "Share Draft"
+                "string": "Udostępnij wersję roboczą"
             }
         },
         "create": {
             "success": {
-                "string": "Draft shared"
+                "string": "Udostępniono wersję roboczą"
             },
             "error": {
-                "string": "Failed to share draft"
+                "string": "Nie udało się udostępnić wersji roboczej"
             }
         },
         "review": {
             "approved": {
-                "string": "Draft approved"
+                "string": "Zatwierdzono wersję roboczą"
             },
             "rejected": {
-                "string": "Draft rejected"
+                "string": "Odrzucono wersję roboczą"
             },
             "error": {
-                "string": "Review failed"
+                "string": "Sprawdzenie nie powiodło się"
             }
         },
         "list": {
             "empty": {
-                "string": "No shared drafts. Create one to collaborate on an email."
+                "string": "Brak udostępnionych wersji roboczych. Utwórz jedną, aby współpracować nad e-mailem."
             },
             "by": {
-                "string": "by"
+                "string": "od"
             }
         },
         "errors": {
             "fields": {
-                "string": "Subject, body, and at least one reviewer are required"
+                "string": "Temat, treść i co najmniej jeden recenzent są wymagani"
             }
         }
     }

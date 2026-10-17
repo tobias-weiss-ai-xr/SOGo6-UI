@@ -1,53 +1,53 @@
 {
     "AP_CRM": {
         "title": {
-            "string": "CRM-light"
+            "string": "Lekki CRM"
         },
         "description": {
-            "string": "Associate contacts with accounts, track interactions, categorize contacts, and record notes."
+            "string": "Powiąż kontakty z kontami, śledź interakcje, kategoryzuj kontakty i zapisuj notatki."
         },
         "form": {
             "create": {
-                "string": "New Account"
+                "string": "Nowe konto"
             },
             "cancel": {
                 "string": "Anuluj"
             },
             "title": {
-                "string": "Create Account"
+                "string": "Utwórz konto"
             },
             "name": {
-                "string": "Account Name"
+                "string": "Nazwa konta"
             },
             "domain": {
                 "string": "Domena"
             },
             "industry": {
-                "string": "Industry"
+                "string": "Branża"
             },
             "notes": {
                 "string": "Notatki"
             },
             "submit": {
-                "string": "Create Account"
+                "string": "Utwórz konto"
             }
         },
         "create": {
             "success": {
-                "string": "Account created"
+                "string": "Utworzono konto"
             },
             "error": {
-                "string": "Failed to create"
+                "string": "Nie udało się utworzyć"
             }
         },
         "list": {
             "empty": {
-                "string": "No CRM accounts yet."
+                "string": "Brak kont CRM."
             }
         },
         "errors": {
             "fields": {
-                "string": "Account name is required"
+                "string": "Nazwa konta jest wymagana"
             }
         }
     }

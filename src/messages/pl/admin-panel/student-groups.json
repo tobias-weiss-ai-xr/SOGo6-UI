@@ -1,35 +1,35 @@
 {
     "STUDENT_GROUPS": {
         "title": {
-            "string": "Student Group Management"
+            "string": "Zarządzanie grupami studenckimi"
         },
         "description": {
-            "string": "Manage student groups, course mailing lists, and enrollment"
+            "string": "Zarządzaj grupami studenckimi, listami mailingowymi kursów i zapisami"
         },
         "errors": {
             "name": {
-                "string": "Group name required"
+                "string": "Nazwa grupy jest wymagana"
             },
             "fail": {
-                "string": "Operation failed"
+                "string": "Operacja nie powiodła się"
             }
         },
         "success": {
             "create": {
-                "string": "Group created successfully"
+                "string": "Grupa została pomyślnie utworzona"
             }
         },
         "field": {
             "name": {
-                "string": "Group Name"
+                "string": "Nazwa grupy"
             },
             "course": {
-                "string": "Course Code"
+                "string": "Kod kursu"
             }
         },
         "button": {
             "create": {
-                "string": "Create Group"
+                "string": "Utwórz grupę"
             }
         },
         "label": {
@@ -37,7 +37,7 @@
                 "string": "Brak"
             },
             "students": {
-                "string": "students"
+                "string": "studenci"
             }
         }
     }

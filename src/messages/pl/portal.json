@@ -7,10 +7,10 @@
             "string": "Witamy w portalu SOGo. Wybierz aplikację, aby rozpocząć."
         },
         "launch": {
-            "string": "Launch"
+            "string": "Uruchom"
         },
         "settings": {
-            "string": "Intercom Settings"
+            "string": "Ustawienia interkomu"
         }
     }
 }

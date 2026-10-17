@@ -1,52 +1,52 @@
 {
     "AP_QUOTAS": {
         "title": {
-            "string": "Usage Quotas"
+            "string": "Limity użycia"
         },
         "description": {
-            "string": "View and set per-user resource limits for mailbox size, calendars, and contacts."
+            "string": "Przeglądaj i ustawiaj limity zasobów dla użytkowników: rozmiar skrzynki, kalendarze i kontakty."
         },
         "select_user": {
-            "string": "Select User"
+            "string": "Wybierz użytkownika"
         },
         "select_placeholder": {
-            "string": "Choose a user..."
+            "string": "Wybierz użytkownika..."
         },
         "current_usage": {
-            "string": "Current Usage"
+            "string": "Bieżące użycie"
         },
         "set_quota": {
-            "string": "Set Quota"
+            "string": "Ustaw limit"
         },
         "labels": {
             "mailbox": {
-                "string": "Mailbox"
+                "string": "Skrzynka pocztowa"
             },
             "calendars": {
-                "string": "Calendars"
+                "string": "Kalendarze"
             },
             "contacts": {
                 "string": "Kontakty"
             },
             "mailbox_limit": {
-                "string": "Mailbox Size Limit"
+                "string": "Limit rozmiaru skrzynki"
             },
             "calendar_limit": {
-                "string": "Max Calendars"
+                "string": "Maks. kalendarzy"
             },
             "contact_limit": {
-                "string": "Max Contacts"
+                "string": "Maks. kontaktów"
             }
         },
         "save": {
             "button": {
-                "string": "Save Quota"
+                "string": "Zapisz limit"
             },
             "success": {
-                "string": "Quota updated"
+                "string": "Zaktualizowano limit"
             },
             "error": {
-                "string": "Failed to update quota"
+                "string": "Nie udało się zaktualizować limitu"
             }
         }
     }

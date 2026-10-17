@@ -1,31 +1,31 @@
 {
     "ADMIN_PANNEL_DOMAIN": {
         "title": {
-            "string": "Custom domains"
+            "string": "Domeny niestandardowe"
         },
         "filter_placeholder": {
-            "string": "Filter domains..."
+            "string": "Filtruj domeny..."
         },
         "add_new_domain": {
-            "string": "Add new custom domain"
+            "string": "Dodaj nową domenę niestandardową"
         },
         "select_all": {
-            "string": "Select all"
+            "string": "Zaznacz wszystko"
         },
         "select_row": {
-            "string": "Select row"
+            "string": "Wybierz wiersz"
         },
         "domain": {
             "string": "Domena"
         },
         "open_menu": {
-            "string": "Open menu"
+            "string": "Otwórz menu"
         },
         "actions": {
-            "string": "Actions"
+            "string": "Akcje"
         },
         "copy_domain": {
-            "string": "Copy domain name"
+            "string": "Skopiuj nazwę domeny"
         },
         "edit": {
             "string": "Edytuj"
