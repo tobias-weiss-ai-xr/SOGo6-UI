@@ -68,6 +68,39 @@ describe('CALENDARS.forms.copyEvent.string exists in every locale', () => {
       readMessages('de', 'calendars.json').CALENDARS.forms.copyEvent.string
     ).toBe('Ereignis kopieren')
   })
+
+  it('de create-event strings are translated (user-reported)', () => {
+    const de = readMessages('de', 'calendars.json').CALENDARS
+    expect(de.events.create.string).toBe('Ereignis erstellen')
+    expect(de.eventForm.create.string).toBe('Ereignis erstellen')
+    expect(de.toolbar.createEvent.string).toBe('Ereignis erstellen')
+  })
+
+  it('de calendars.json has no untranslated English prose left (ratchet)', () => {
+    const en = readMessages('en', 'calendars.json').CALENDARS
+    const de = readMessages('de', 'calendars.json').CALENDARS
+    const collect = (node: unknown, path: string[] = []): string[][] => {
+      if (typeof node === 'string') return [[path, node]]
+      if (node && typeof node === 'object') {
+        return Object.entries(node as Record<string, unknown>).flatMap(
+          ([k, v]) => collect(v, [...path, k])
+        )
+      }
+      return []
+    }
+    const enFlat = Object.fromEntries(
+      collect(en).map(([p, v]) => [p.join('/'), v])
+    )
+    const leftovers = collect(de).filter(
+      ([p, v]) =>
+        !p.join('/').endsWith('/context') && // translator notes stay English
+        enFlat[p.join('/')] === v &&
+        v.length > 12 &&
+        v.includes(' ') &&
+        v !== 'Name (optional)'
+    )
+    expect(leftovers).toEqual([])
+  })
 })
 
 describe('PWA + Login offline keys exist in every locale (source, not compiled)', () => {

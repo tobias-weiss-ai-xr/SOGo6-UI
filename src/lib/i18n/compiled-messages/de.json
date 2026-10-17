@@ -5993,7 +5993,7 @@
     },
     "events": {
       "create": {
-        "string": "Create Event"
+        "string": "Ereignis erstellen"
       }
     },
     "schedule": {
@@ -6025,20 +6025,20 @@
       },
       "weekView": {
         "eventsCount": {
-          "string": "{count, plural, one {# event} other {# events}}"
+          "string": "{count, plural, one {# Ereignis} other {# Ereignisse}}"
         }
       },
       "noEvents": {
         "string": "No events"
       },
       "swipeHint": {
-        "string": "← Swipe to see all days →"
+        "string": "← Wischen, um alle Tage zu sehen →"
       },
       "swipeToChangeDay": {
-        "string": "Swipe to change day"
+        "string": "Wischen, um den Tag zu wechseln"
       },
       "swipeToNavigate": {
-        "string": "← Swipe to navigate →"
+        "string": "← Wischen, um zu navigieren →"
       },
       "timeSeparator": {
         "string": "-"
@@ -6054,16 +6054,16 @@
     },
     "external": {
       "add_title": {
-        "string": "Subscribe to calendar"
+        "string": "Kalender abonnieren"
       },
       "name_label": {
         "string": "Name"
       },
       "url_label": {
-        "string": "Calendar URL (.ics)"
+        "string": "Kalender-URL (.ics)"
       },
       "url_error": {
-        "string": "Please enter a valid URL"
+        "string": "Bitte geben Sie eine gültige URL ein"
       },
       "color_label": {
         "string": "Farbe"
@@ -6100,10 +6100,10 @@
     },
     "sidebar": {
       "personals": {
-        "string": "Personal Calendars"
+        "string": "Persönliche Kalender"
       },
       "shared": {
-        "string": "Shared Calendars"
+        "string": "Geteilte Kalender"
       },
       "subscriptions": {
         "string": "Abonnements"
@@ -6121,13 +6121,13 @@
         "string": "Freigabeeinstellungen"
       },
       "link": {
-        "string": "Get Calendar Link",
+        "string": "Kalender-Link abrufen",
         "description": {
-          "string": "Copy this link to subscribe to this calendar in other calendar applications."
+          "string": "Kopieren Sie diesen Link, um diesen Kalender in anderen Kalenderanwendungen zu abonnieren."
         }
       },
       "export": {
-        "string": "Export Calendar"
+        "string": "Kalender exportieren"
       },
       "import": {
         "string": "Kalender importieren",
@@ -6142,10 +6142,10 @@
         }
       },
       "color": {
-        "string": "Calendar Color"
+        "string": "Kalenderfarbe"
       },
       "readOnlyCalendar": {
-        "string": "Read-only calendar",
+        "string": "Schreibgeschützter Kalender",
         "context": "Label for ICS/subscription calendars that cannot be edited"
       }
     },
@@ -6180,7 +6180,7 @@
         "string": "Teilnehmer"
       },
       "conference": {
-        "string": "Video Conference"
+        "string": "Videokonferenz"
       },
       "joinMeeting": {
         "string": "Join Meeting"
@@ -6206,16 +6206,16 @@
         }
       },
       "every": {
-        "string": "Every {count}"
+        "string": "Alle {count}"
       },
       "daysBefore": {
-        "string": "{count} days before"
+        "string": "{count} Tage vorher"
       },
       "hoursBefore": {
-        "string": "{count} hours before"
+        "string": "{count} Stunden vorher"
       },
       "minutesBefore": {
-        "string": "{count} minutes before"
+        "string": "{count} Minuten vorher"
       },
       "organizer": {
         "string": "Organisator"
@@ -6295,7 +6295,7 @@
           "string": "Kalender"
         },
         "placeholder": {
-          "string": "Select calendar"
+          "string": "Kalender auswählen"
         }
       },
       "title": {
@@ -6303,7 +6303,7 @@
           "string": "Event title"
         },
         "placeholder": {
-          "string": "Enter event title"
+          "string": "Ereignistitel eingeben"
         }
       },
       "allDay": {
@@ -6338,10 +6338,10 @@
       },
       "timezone": {
         "label": {
-          "string": "Timezone (event)"
+          "string": "Zeitzone (Ereignis)"
         },
         "description": {
-          "string": "Timezone in which this event's dates are interpreted"
+          "string": "Zeitzone, in der die Datumswerte dieses Ereignisses interpretiert werden"
         }
       },
       "description": {
@@ -6349,7 +6349,7 @@
           "string": "Beschreibung"
         },
         "placeholder": {
-          "string": "Add event details"
+          "string": "Details zum Ereignis hinzufügen"
         }
       },
       "location": {
@@ -6365,7 +6365,7 @@
           "string": "Sichtbarkeit"
         },
         "placeholder": {
-          "string": "Select visibility"
+          "string": "Sichtbarkeit auswählen"
         },
         "options": {
           "public": {
@@ -6384,7 +6384,7 @@
           "string": "Anzeigen als"
         },
         "placeholder": {
-          "string": "Select availability"
+          "string": "Verfügbarkeit auswählen"
         },
         "options": {
           "busy": {
@@ -6406,7 +6406,7 @@
           "string": "Status"
         },
         "placeholder": {
-          "string": "Select status"
+          "string": "Status auswählen"
         },
         "options": {
           "confirmed": {
@@ -6436,7 +6436,7 @@
           "string": "Fügen Sie eine Kategorie hinzu und drücken Sie die Eingabetaste"
         },
         "remove": {
-          "string": "Remove {category}"
+          "string": "{category} entfernen"
         }
       },
       "attendees": {
@@ -6447,7 +6447,7 @@
           "string": "Participants"
         },
         "add": {
-          "string": "Add participant"
+          "string": "Teilnehmer hinzufügen"
         },
         "emailPlaceholder": {
           "string": "email@example.com"
@@ -6456,7 +6456,7 @@
           "string": "Name (optional)"
         },
         "remove": {
-          "string": "Remove {email}"
+          "string": "{email} entfernen"
         },
         "search_placeholder": {
           "string": "Nach Name oder E-Mail suchen..."
@@ -6465,16 +6465,16 @@
           "string": "Bitte geben Sie eine gültige E-Mail-Adresse ein"
         },
         "already_added": {
-          "string": "This participant has already been added"
+          "string": "Dieser Teilnehmer wurde bereits hinzugefügt"
         },
         "max_reached": {
-          "string": "Maximum {max} participants reached"
+          "string": "Maximal {max} Teilnehmer erreicht"
         },
         "add_email_direct": {
-          "string": "Add \"{email}\" directly"
+          "string": "„{email}“ direkt hinzufügen"
         },
         "no_data": {
-          "string": "No availability data"
+          "string": "Keine Verfügbarkeitsdaten"
         },
         "legend_free": {
           "string": "Verfügbar"
@@ -6486,22 +6486,22 @@
           "string": "Vorläufig"
         },
         "legend_non_working": {
-          "string": "Non-working hours"
+          "string": "Außerhalb der Arbeitszeiten"
         },
         "optimal_slot": {
-          "string": "Suggested window"
+          "string": "Vorgeschlagenes Zeitfenster"
         },
         "timeline_hour": {
           "string": "{hour}h"
         },
         "scroll_horizontal_hint": {
-          "string": "Scroll horizontally"
+          "string": "Horizontal scrollen"
         },
         "tooltip_slot_busy": {
           "string": "Beschäftigt"
         },
         "tooltip_slot_free": {
-          "string": "{name} · free · {time}"
+          "string": "{name} · frei · {time}"
         },
         "tooltip_slot_optimal": {
           "string": "Teil des vorgeschlagenen {duration}-Minuten-Fensters · {time}"
@@ -6518,7 +6518,7 @@
           "string": "min before"
         },
         "remove": {
-          "string": "Remove reminder"
+          "string": "Erinnerung entfernen"
         },
         "methods": {
           "popup": {
@@ -6612,7 +6612,7 @@
         "string": "Abbrechen"
       },
       "create": {
-        "string": "Create Event"
+        "string": "Ereignis erstellen"
       },
       "update": {
         "string": "Update Event"
@@ -6629,10 +6629,10 @@
           "string": "Neuen Kalender erstellen"
         },
         "defaultEventDuration": {
-          "string": "Default Event Duration"
+          "string": "Standarddauer für Ereignisse"
         },
         "nameLabel": {
-          "string": "Calendar Name"
+          "string": "Kalendername"
         },
         "namePlaceholder": {
           "string": "My Calendar"
@@ -6644,34 +6644,34 @@
           "string": "Beschreibung"
         },
         "descriptionPlaceholder": {
-          "string": "Add description to calendar"
+          "string": "Beschreibung zum Kalender hinzufügen"
         },
         "eventDuration": {
-          "string": "Event Duration"
+          "string": "Ereignisdauer"
         },
         "eventNotifications": {
-          "string": "Event Notifications"
+          "string": "Ereignis-Benachrichtigungen"
         },
         "allDayNotifications": {
           "string": "Benachrichtigungen für Ganztagesevents"
         },
         "addNotification": {
-          "string": "Add notification"
+          "string": "Benachrichtigung hinzufügen"
         },
         "showBusyStatus": {
-          "string": "Show others when I'm busy"
+          "string": "Anderen anzeigen, wenn ich beschäftigt bin"
         },
         "atTimeOfEvent": {
           "string": "zum Zeitpunkt des Events"
         },
         "fiveMinutes": {
-          "string": "5 minutes before"
+          "string": "5 Minuten vorher"
         },
         "fifteenMinutes": {
-          "string": "15 minutes before"
+          "string": "15 Minuten vorher"
         },
         "thirtyMinutesBefore": {
-          "string": "30 minutes before"
+          "string": "30 Minuten vorher"
         },
         "oneHourBefore": {
           "string": "1 Stunde vorher"
@@ -6709,7 +6709,7 @@
           "string": "Creating..."
         },
         "submit": {
-          "string": "Create Calendar"
+          "string": "Kalender erstellen"
         },
         "cancel": {
           "string": "Abbrechen"
@@ -6723,7 +6723,7 @@
           "string": "Kalender bearbeiten"
         },
         "nameLabel": {
-          "string": "Calendar Name"
+          "string": "Kalendername"
         },
         "colorLabel": {
           "string": "Farbe"
@@ -6732,34 +6732,34 @@
           "string": "Beschreibung"
         },
         "descriptionPlaceholder": {
-          "string": "Add description to calendar"
+          "string": "Beschreibung zum Kalender hinzufügen"
         },
         "eventDuration": {
-          "string": "Event Duration"
+          "string": "Ereignisdauer"
         },
         "eventNotifications": {
-          "string": "Event Notifications"
+          "string": "Ereignis-Benachrichtigungen"
         },
         "allDayNotifications": {
           "string": "Benachrichtigungen für Ganztagesevents"
         },
         "addNotification": {
-          "string": "Add notification"
+          "string": "Benachrichtigung hinzufügen"
         },
         "showBusyStatus": {
-          "string": "Show others when I'm busy"
+          "string": "Anderen anzeigen, wenn ich beschäftigt bin"
         },
         "atTimeOfEvent": {
           "string": "zum Zeitpunkt des Events"
         },
         "fiveMinutes": {
-          "string": "5 minutes before"
+          "string": "5 Minuten vorher"
         },
         "fifteenMinutes": {
-          "string": "15 minutes before"
+          "string": "15 Minuten vorher"
         },
         "thirtyMinutesBefore": {
-          "string": "30 minutes before"
+          "string": "30 Minuten vorher"
         },
         "oneHourBefore": {
           "string": "1 Stunde vorher"
@@ -6821,7 +6821,7 @@
           "string": "Kalender löschen"
         },
         "message": {
-          "string": "Are you sure you want to delete this calendar? This action cannot be undone."
+          "string": "Möchten Sie diesen Kalender wirklich löschen? Diese Aktion kann nicht rückgängig gemacht werden."
         },
         "confirm": {
           "string": "Löschen"
@@ -6833,7 +6833,7 @@
     },
     "share": {
       "title": {
-        "string": "Calendar Sharing"
+        "string": "Kalender-Freigabe"
       },
       "description": {
         "string": "Teilen Sie diesen Kalender mit anderen Benutzern. Geteilte Benutzer können Ereignisse basierend auf der von Ihnen gewährten Berechtigungsstufe einsehen."
@@ -6848,16 +6848,16 @@
         "string": "Share"
       },
       "added": {
-        "string": "Calendar shared successfully"
+        "string": "Kalender erfolgreich geteilt"
       },
       "addError": {
-        "string": "Failed to share calendar"
+        "string": "Freigabe des Kalenders fehlgeschlagen"
       },
       "removed": {
-        "string": "Share removed successfully"
+        "string": "Freigabe erfolgreich entfernt"
       },
       "removeError": {
-        "string": "Failed to remove share"
+        "string": "Entfernen der Freigabe fehlgeschlagen"
       },
       "removeButton": {
         "string": "Entfernen"
@@ -6873,7 +6873,7 @@
           "string": "Benutzer"
         },
         "level": {
-          "string": "Permission Level"
+          "string": "Berechtigungsstufe"
         },
         "canCreate": {
           "string": "Can Create"
