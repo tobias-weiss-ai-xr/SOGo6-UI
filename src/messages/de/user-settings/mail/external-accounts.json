@@ -19,7 +19,7 @@
       "delete_confirm_desc": {"string": "Möchten Sie {name} wirklich löschen? Diese Aktion kann nicht rückgängig gemacht werden."},
       "cancel_button": {"string": "Abbrechen"},
       "confirm_delete_button": {"string": "Löschen"},
-      "empty": {"string": "No IMAP accounts configured yet. Add your first account to get started."}
+      "empty": {"string": "Noch keine IMAP-Konten konfiguriert. Fügen Sie Ihr erstes Konto hinzu, um zu beginnen."}
     },
     "edit": {
       "title": {"string": "Externes Konto bearbeiten"},

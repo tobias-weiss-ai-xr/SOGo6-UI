@@ -1,18 +1,18 @@
 {
     "FORM_PROFILE": {
         "title": "Profil",
-        "description": "Manage your profile information and settings.",
+        "description": "Verwalten Sie Ihre Profilinformationen und Einstellungen.",
         "sections": {
             "basicInfo": "Grundinformationen",
             "identities": "Identitäten"
         },
         "firstname": {
             "string": "Vorname",
-            "description": "Label for the first name input field."
+            "description": "Bezeichnung für das Eingabefeld des Vornamens."
         },
         "lastname": {
             "string": "Nachname",
-            "description": "Label for the last name input field."
+            "description": "Bezeichnung für das Eingabefeld des Nachnamens."
         },
         "basicInfo": {
             "title": "Grundinformationen",
@@ -22,13 +22,13 @@
             "aliases": "E-Mail-Aliase"
         },
         "extraInfo": {
-            "title": "Extra Information",
-            "company": "Company",
+            "title": "Zusätzliche Informationen",
+            "company": "Unternehmen",
             "team": "Team"
         },
         "profilePictureSource": {
-            "title": "Profile Picture",
-            "description": "Choose how your profile picture is displayed. You can upload a custom image, use your Gravatar, Libravatar or use the default avatar.",
+            "title": "Profilbild",
+            "description": "Wählen Sie, wie Ihr Profilbild angezeigt wird. Sie können ein eigenes Bild hochladen, Ihr Gravatar oder Libravatar verwenden oder das Standard-Avatar nutzen.",
             "useDefault": "Standard",
             "useGravatar": "Gravatar",
             "useLibravatar": "Libravatar",
@@ -43,10 +43,10 @@
                 "string": "Laden"
             },
             "load_failed": {
-                "string": "Failed to load profile. Please try again later."
+                "string": "Profil konnte nicht geladen werden. Bitte versuchen Sie es später erneut."
             },
             "update_failed": {
-                "string": "Failed to update profile. Please try again."
+                "string": "Profil konnte nicht aktualisiert werden. Bitte versuchen Sie es erneut."
             }
         }
     }
