@@ -1,81 +1,81 @@
 {
-    "US_GENERAL": {
-        "title": {
-            "string": "General Settings",
-            "context": "Title for the general settings page"
-        },
-        "labels": {
-            "language": {
-                "string": "Language"
-            },
-            "timezone": {
-                "string": "Timezone"
-            },
-            "short_date_style": {
-                "string": "Short Date Style"
-            },
-            "long_date_style": {
-                "string": "Long Date Style"
-            },
-            "time_style": {
-                "string": "Time Style"
-            },
-            "default_view": {
-                "string": "Default View"
-            },
-            "refresh_frequency": {
-                "string": "Refresh Frequency"
-            },
-            "enable_notifications": {
-                "string": "Enable Notifications"
-            },
-            "saved": {
-                "string": "General settings saved"
-            },
-            "mail": {
-                "string": "Surat"
-            },
-            "calendar": {
-                "string": "Kalender"
-            },
-            "contacts": {
-                "string": "Kontak"
-            },
-            "last": {
-                "string": "Last displayed module"
-            },
-            "enable_external_avatar": {
-                "string": "Enable external avatar"
-            }
-        },
-        "descriptions": {
-            "language": {
-                "string": "The language used in the app."
-            },
-            "timezone": {
-                "string": "The time zone you are in."
-            },
-            "short_date_style": {
-                "string": "How dates are displayed in the app."
-            },
-            "long_date_style": {
-                "string": "How dates are displayed in the app."
-            },
-            "time_style": {
-                "string": "How time is displayed in the app."
-            },
-            "default_view": {
-                "string": "The default view when you open the app."
-            },
-            "refresh_frequency": {
-                "string": " How often the app should check for new emails, calendar events, and more."
-            },
-            "enable_notifications": {
-                "string": "Receive notifications for new emails, calendar events, and more."
-            },
-            "enable_external_avatar": {
-                "string": "Enable external avatar (e.g., Gravatar)"
-            }
-        }
+  "US_GENERAL": {
+    "title": {
+      "string": "Pengaturan Umum",
+      "context": "Title for the general settings page"
+    },
+    "labels": {
+      "language": {
+        "string": "Language"
+      },
+      "timezone": {
+        "string": "Timezone"
+      },
+      "short_date_style": {
+        "string": "Gaya Tanggal Pendek"
+      },
+      "long_date_style": {
+        "string": "Gaya Tanggal Panjang"
+      },
+      "time_style": {
+        "string": "Time Style"
+      },
+      "default_view": {
+        "string": "Default View"
+      },
+      "refresh_frequency": {
+        "string": "Frekuensi Penyegaran"
+      },
+      "enable_notifications": {
+        "string": "Aktifkan Notifikasi"
+      },
+      "saved": {
+        "string": "Pengaturan umum disimpan"
+      },
+      "mail": {
+        "string": "Surat"
+      },
+      "calendar": {
+        "string": "Kalender"
+      },
+      "contacts": {
+        "string": "Kontak"
+      },
+      "last": {
+        "string": "Modul yang terakhir ditampilkan"
+      },
+      "enable_external_avatar": {
+        "string": "Aktifkan avatar eksternal"
+      }
+    },
+    "descriptions": {
+      "language": {
+        "string": "Bahasa yang digunakan di aplikasi."
+      },
+      "timezone": {
+        "string": "Zona waktu tempat Anda berada."
+      },
+      "short_date_style": {
+        "string": "Cara tanggal ditampilkan di aplikasi."
+      },
+      "long_date_style": {
+        "string": "Cara tanggal ditampilkan di aplikasi."
+      },
+      "time_style": {
+        "string": "Cara waktu ditampilkan di aplikasi."
+      },
+      "default_view": {
+        "string": "Tampilan default saat Anda membuka aplikasi."
+      },
+      "refresh_frequency": {
+        "string": " Seberapa sering aplikasi harus memeriksa email baru, acara kalender, dan lainnya."
+      },
+      "enable_notifications": {
+        "string": "Terima notifikasi untuk email baru, acara kalender, dan lainnya."
+      },
+      "enable_external_avatar": {
+        "string": "Aktifkan avatar eksternal (misalnya, Gravatar)"
+      }
     }
+  }
 }

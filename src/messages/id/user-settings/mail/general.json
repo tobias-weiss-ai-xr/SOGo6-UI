@@ -161,10 +161,10 @@
       "string": "Jendela komposisi surel",
       "context": "Dropdown label to know where to open compose in",
       "popup": {
-        "string": "Compose email in a popup"
+        "string": "Tulis email di jendela popup"
       },
       "inline": {
-        "string": "Compose email inside the webmail"
+        "string": "Tulis email di dalam webmail"
       }
     }
   }

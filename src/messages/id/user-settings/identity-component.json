@@ -1,26 +1,26 @@
 {
   "IDENTITY_COMPONENT": {
     "labels": {
-      "name": "Identity Name",
-      "email": "Email Address",
+      "name": "Nama Identitas",
+      "email": "Alamat Email",
       "replyTo": "Reply To",
       "newIdentity": "New Identity",
       "default": "Default",
-      "removeIdentity": "Remove Identity",
-      "atLeastOneIdentity": "At least one identity is required",
+      "removeIdentity": "Hapus Identitas",
+      "atLeastOneIdentity": "Minimal satu identitas wajib ada",
       "useDefaultIdentity": {
         "string": "Gunakan sebagai identitas default"
       },
-      "setAsDefault": "Set as default",
-      "defaultDescription": "This identity will be used by default when composing new messages",
-      "mainIdentityEmail": "This is your main email address and cannot be changed",
-      "nameNotEditable": "Name editing is disabled by administrator",
-      "replyToNotEditable": "Reply-To editing is disabled by administrator",
+      "setAsDefault": "Tetapkan sebagai default",
+      "defaultDescription": "Identitas ini akan digunakan secara default saat menulis pesan baru",
+      "mainIdentityEmail": "Ini adalah alamat email utama Anda dan tidak dapat diubah",
+      "nameNotEditable": "Penyuntingan nama dinonaktifkan oleh administrator",
+      "replyToNotEditable": "Penyuntingan Balas-Ke dinonaktifkan oleh administrator",
       "signatures": "Signatures",
-      "signaturesDescription": "Create and manage email signatures for this identity",
-      "signaturePlaceholder": "Enter signature name",
-      "addIdentity": "Add an identity",
-      "allowsCustom": "You can add and manage additional identities"
+      "signaturesDescription": "Buat dan kelola tanda tangan email untuk identitas ini",
+      "signaturePlaceholder": "Masukkan nama tanda tangan",
+      "addIdentity": "Tambahkan identitas",
+      "allowsCustom": "Anda dapat menambahkan dan mengelola identitas tambahan"
     },
     "description": {
       "useDefaultIdentity": {
@@ -28,10 +28,10 @@
       }
     },
     "accessibility": {
-      "toggleCollapse": "Toggle identity details",
+      "toggleCollapse": "Alihkan detail identitas",
       "expandIdentity": "Expand",
       "collapseIdentity": "Collapse",
-      "removeIcon": "Remove identity button"
+      "removeIcon": "Tombol hapus identitas"
     }
   }
 }

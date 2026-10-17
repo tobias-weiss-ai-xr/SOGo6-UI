@@ -1,68 +1,68 @@
 {
-    "AP_WEBHOOKS": {
-        "title": {
-            "string": "Webhooks"
-        },
-        "description": {
-            "string": "Outbound webhooks for n8n, Make, and other automation platforms. Events trigger HTTP POST with HMAC-signed payloads."
-        },
-        "form": {
-            "add": {
-                "string": "Add Webhook"
-            },
-            "cancel": {
-                "string": "Batal"
-            },
-            "title": {
-                "string": "New Webhook"
-            },
-            "url": {
-                "string": "Webhook URL"
-            },
-            "name": {
-                "string": "Display Name"
-            },
-            "name_placeholder": {
-                "string": "e.g. n8n Workflow"
-            },
-            "secret": {
-                "string": "Signing Secret"
-            },
-            "secret_placeholder": {
-                "string": "HMAC secret (optional)"
-            },
-            "events": {
-                "string": "Events"
-            },
-            "create": {
-                "string": "Create Webhook"
-            }
-        },
-        "create": {
-            "success": {
-                "string": "Webhook created"
-            },
-            "error": {
-                "string": "Failed to create webhook"
-            }
-        },
-        "delete": {
-            "success": {
-                "string": "Webhook deleted"
-            },
-            "error": {
-                "string": "Failed to delete"
-            }
-        },
-        "list": {
-            "empty": {
-                "string": "No webhooks configured. Click Add Webhook to get started."
-            }
-        },
-        "errors": {
-            "fields": {
-                "string": "URL and at least one event are required"
-            }
-        }
+  "AP_WEBHOOKS": {
+    "title": {
+      "string": "Webhooks"
+    },
+    "description": {
+      "string": "Webhook keluar untuk n8n, Make, dan platform otomasi lainnya. Peristiwa memicu HTTP POST dengan payload bertanda tangan HMAC."
+    },
+    "form": {
+      "add": {
+        "string": "Add Webhook"
+      },
+      "cancel": {
+        "string": "Batal"
+      },
+      "title": {
+        "string": "New Webhook"
+      },
+      "url": {
+        "string": "Webhook URL"
+      },
+      "name": {
+        "string": "Display Name"
+      },
+      "name_placeholder": {
+        "string": "misalnya Alur Kerja n8n"
+      },
+      "secret": {
+        "string": "Secret Penandatanganan"
+      },
+      "secret_placeholder": {
+        "string": "Secret HMAC (opsional)"
+      },
+      "events": {
+        "string": "Events"
+      },
+      "create": {
+        "string": "Buat Webhook"
+      }
+    },
+    "create": {
+      "success": {
+        "string": "Webhook dibuat"
+      },
+      "error": {
+        "string": "Gagal membuat webhook"
+      }
+    },
+    "delete": {
+      "success": {
+        "string": "Webhook dihapus"
+      },
+      "error": {
+        "string": "Gagal menghapus"
+      }
+    },
+    "list": {
+      "empty": {
+        "string": "Belum ada webhook yang dikonfigurasi. Klik Tambah Webhook untuk memulai."
+      }
+    },
+    "errors": {
+      "fields": {
+        "string": "URL dan minimal satu peristiwa wajib ada"
+      }
     }
+  }
 }

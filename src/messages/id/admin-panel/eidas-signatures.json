@@ -1,74 +1,74 @@
 {
-    "EIDAS": {
-        "title": {
-            "string": "eIDAS Qualified Signatures"
-        },
-        "description": {
-            "string": "EU Regulation 910/2014 qualified electronic signatures and timestamps"
-        },
-        "errors": {
-            "fields": {
-                "string": "All fields required"
-            },
-            "fail": {
-                "string": "Operation failed"
-            }
-        },
-        "success": {
-            "sign": {
-                "string": "Document signed with QES"
-            }
-        },
-        "sign": {
-            "title": {
-                "string": "Sign Document"
-            },
-            "placeholder": {
-                "string": "Enter document content to sign..."
-            },
-            "signer": {
-                "string": "Signer Email"
-            },
-            "algorithm": {
-                "string": "Hash Algorithm"
-            },
-            "button": {
-                "string": "Sign with QES"
-            }
-        },
-        "verify": {
-            "title": {
-                "string": "Verify Signature"
-            },
-            "doc_hash": {
-                "string": "Document Hash"
-            },
-            "signature": {
-                "string": "Signature"
-            },
-            "button": {
-                "string": "Verify"
-            },
-            "valid": {
-                "string": "Valid"
-            },
-            "invalid": {
-                "string": "Invalid"
-            }
-        },
-        "certs": {
-            "title": {
-                "string": "Trust Service Certificates"
-            },
-            "type": {
-                "string": "Tipe"
-            },
-            "name": {
-                "string": "Nama"
-            },
-            "hash": {
-                "string": "Hash"
-            }
-        }
+  "EIDAS": {
+    "title": {
+      "string": "Tanda Tangan Terkualifikasi eIDAS"
+    },
+    "description": {
+      "string": "Tanda tangan dan stempel waktu elektronik tersertifikasi sesuai Regulasi UE 910/2014"
+    },
+    "errors": {
+      "fields": {
+        "string": "Semua kolom wajib diisi"
+      },
+      "fail": {
+        "string": "Operasi gagal"
+      }
+    },
+    "success": {
+      "sign": {
+        "string": "Dokumen ditandatangani dengan QES"
+      }
+    },
+    "sign": {
+      "title": {
+        "string": "Tandatangani Dokumen"
+      },
+      "placeholder": {
+        "string": "Masukkan konten dokumen untuk ditandatangani..."
+      },
+      "signer": {
+        "string": "Signer Email"
+      },
+      "algorithm": {
+        "string": "Algoritma Hash"
+      },
+      "button": {
+        "string": "Tandatangani dengan QES"
+      }
+    },
+    "verify": {
+      "title": {
+        "string": "Verifikasi Tanda Tangan"
+      },
+      "doc_hash": {
+        "string": "Hash Dokumen"
+      },
+      "signature": {
+        "string": "Signature"
+      },
+      "button": {
+        "string": "Verify"
+      },
+      "valid": {
+        "string": "Valid"
+      },
+      "invalid": {
+        "string": "Invalid"
+      }
+    },
+    "certs": {
+      "title": {
+        "string": "Sertifikat Layanan Kepercayaan"
+      },
+      "type": {
+        "string": "Tipe"
+      },
+      "name": {
+        "string": "Nama"
+      },
+      "hash": {
+        "string": "Hash"
+      }
     }
+  }
 }

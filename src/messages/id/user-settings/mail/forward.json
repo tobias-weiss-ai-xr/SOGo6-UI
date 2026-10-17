@@ -1,116 +1,116 @@
 {
-    "US_MAIL_FORWARD": {
-        "title": {
-            "string": "Mail Forward"
+  "US_MAIL_FORWARD": {
+    "title": {
+      "string": "Mail Forward"
+    },
+    "page": {
+      "description": {
+        "string": "Teruskan pesan masuk secara otomatis ke satu atau lebih alamat email."
+      }
+    },
+    "labels": {
+      "transfer_incoming": {
+        "string": "Transfer pesan masuk"
+      },
+      "email": {
+        "string": "Alamat email"
+      },
+      "always_forward": {
+        "string": "Selalu teruskan"
+      },
+      "keep_copy": {
+        "string": "Simpan salinan di kotak masuk ini"
+      }
+    },
+    "description": {
+      "transfer_incoming": {
+        "string": "Teruskan pesan baru secara otomatis ke alamat email lain"
+      },
+      "email": {
+        "string": "Teruskan ke alamat-alamat ini (maksimal {max} alamat). Tambahkan beberapa alamat yang dipisahkan koma, titik koma, atau tekan Enter/Tab."
+      }
+    },
+    "help": {
+      "email": {
+        "string": "Kami akan meneruskan pesan baru ke alamat-alamat ini"
+      }
+    },
+    "placeholders": {
+      "email": {
+        "string": "Tambahkan alamat email dan tekan Enter"
+      }
+    },
+    "errors": {
+      "email": {
+        "invalid": {
+          "string": "Masukkan alamat email yang valid"
         },
-        "page": {
-            "description": {
-                "string": "Automatically forward incoming messages to one or more email addresses."
-            }
-        },
-        "labels": {
-            "transfer_incoming": {
-                "string": "Transfer incoming messages"
-            },
-            "email": {
-                "string": "Email address"
-            },
-            "always_forward": {
-                "string": "Always forward"
-            },
-            "keep_copy": {
-                "string": "Keep a copy in this inbox"
-            }
-        },
-        "description": {
-            "transfer_incoming": {
-                "string": "Automatically forward new messages to another email address"
-            },
-            "email": {
-                "string": "Forward to these addresses (up to {max} addresses). Add multiple addresses separated by comma, semicolon, or press Enter/Tab."
-            }
-        },
-        "help": {
-            "email": {
-                "string": "We'll forward new messages to these addresses"
-            }
-        },
-        "placeholders": {
-            "email": {
-                "string": "Add email address and press Enter"
-            }
-        },
-        "errors": {
-            "email": {
-                "invalid": {
-                    "string": "Please enter a valid email address"
-                },
-                "duplicate": {
-                    "string": "This address is already in the list"
-                }
-            },
-            "emails": {
-                "list": {
-                    "string": "There was an error with one or more email addresses"
-                }
-            },
-            "max_reached": {
-                "string": "Maximum {max} addresses allowed"
-            },
-            "validation": {
-                "addresses_required": {
-                    "string": "At least one email address is required when forwarding is enabled."
-                }
-            }
-        },
-        "hints": {
-            "blur": {
-                "string": "Press Enter to add this address"
-            }
-        },
-        "tooltip": {
-            "always_forward": {
-                "string": "Incoming mail is forwarded before applying your filters."
-            },
-            "keep_copy": {
-                "string": "Keep a copy of forwarded messages in your inbox. Useful if you want to maintain a local archive."
-            }
-        },
-        "errors_api": {
-            "title": {
-                "string": "Kesalahan"
-            },
-            "save_failed": {
-                "string": "Couldn't save your changes, try again"
-            },
-            "load_failed": {
-                "string": "Could not load forwarding settings. Please try again later."
-            },
-            "feature_disabled": {
-                "string": "Mail forwarding has been disabled by your administrator."
-            }
-        },
-        "status": {
-            "enabled": {
-                "string": "Diaktifkan"
-            },
-            "disabled": {
-                "string": "Dinonaktifkan"
-            }
-        },
-        "aria": {
-            "tags_count": {
-                "string": "{count} of {max} email addresses added"
-            },
-            "remove_email": {
-                "string": "Remove {email}"
-            },
-            "email_input_group": {
-                "string": "Email addresses for forwarding"
-            },
-            "toggle_forwarding": {
-                "string": "Toggle email forwarding"
-            }
+        "duplicate": {
+          "string": "Alamat ini sudah ada dalam daftar"
         }
+      },
+      "emails": {
+        "list": {
+          "string": "Terjadi kesalahan pada satu atau lebih alamat email"
+        }
+      },
+      "max_reached": {
+        "string": "Maksimal {max} alamat diizinkan"
+      },
+      "validation": {
+        "addresses_required": {
+          "string": "Minimal satu alamat email wajib ada saat penerusan diaktifkan."
+        }
+      }
+    },
+    "hints": {
+      "blur": {
+        "string": "Tekan Enter untuk menambahkan alamat ini"
+      }
+    },
+    "tooltip": {
+      "always_forward": {
+        "string": "Surel masuk diteruskan sebelum filter Anda diterapkan."
+      },
+      "keep_copy": {
+        "string": "Simpan salinan pesan yang diteruskan di kotak masuk Anda. Berguna jika Anda ingin memelihara arsip lokal."
+      }
+    },
+    "errors_api": {
+      "title": {
+        "string": "Kesalahan"
+      },
+      "save_failed": {
+        "string": "Tidak dapat menyimpan perubahan Anda, coba lagi"
+      },
+      "load_failed": {
+        "string": "Tidak dapat memuat pengaturan penerusan. Silakan coba lagi nanti."
+      },
+      "feature_disabled": {
+        "string": "Penerusan surel telah dinonaktifkan oleh administrator Anda."
+      }
+    },
+    "status": {
+      "enabled": {
+        "string": "Diaktifkan"
+      },
+      "disabled": {
+        "string": "Dinonaktifkan"
+      }
+    },
+    "aria": {
+      "tags_count": {
+        "string": "{count} dari {max} alamat email ditambahkan"
+      },
+      "remove_email": {
+        "string": "Hapus {email}"
+      },
+      "email_input_group": {
+        "string": "Alamat email untuk penerusan"
+      },
+      "toggle_forwarding": {
+        "string": "Alihkan penerusan email"
+      }
     }
+  }
 }

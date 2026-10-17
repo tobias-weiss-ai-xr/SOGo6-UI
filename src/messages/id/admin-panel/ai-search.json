@@ -1,37 +1,37 @@
 {
-    "AI_SEARCH": {
-        "title": {
-            "string": "Natural Language Search"
-        },
-        "description": {
-            "string": "Search emails with plain English. Converts to structured queries automatically."
-        },
-        "input": {
-            "placeholder": {
-                "string": "Show invoices from March over $500..."
-            }
-        },
-        "output": {
-            "title": {
-                "string": "Parsed Query"
-            },
-            "empty": {
-                "string": "Enter a search query above"
-            },
-            "detected": {
-                "string": "Detected filters"
-            }
-        },
-        "search": {
-            "string": "Cari"
-        },
-        "errors": {
-            "empty": {
-                "string": "Enter a search query"
-            },
-            "fail": {
-                "string": "Search failed"
-            }
-        }
+  "AI_SEARCH": {
+    "title": {
+      "string": "Pencarian Bahasa Alami"
+    },
+    "description": {
+      "string": "Cari email dengan bahasa Inggris sehari-hari. Otomatis dikonversi menjadi kueri terstruktur."
+    },
+    "input": {
+      "placeholder": {
+        "string": "Tampilkan faktur dari Maret di atas $500..."
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Parsed Query"
+      },
+      "empty": {
+        "string": "Masukkan kueri pencarian di atas"
+      },
+      "detected": {
+        "string": "Filter yang terdeteksi"
+      }
+    },
+    "search": {
+      "string": "Cari"
+    },
+    "errors": {
+      "empty": {
+        "string": "Masukkan kueri pencarian"
+      },
+      "fail": {
+        "string": "Pencarian gagal"
+      }
     }
+  }
 }

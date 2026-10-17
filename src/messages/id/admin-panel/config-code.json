@@ -1,69 +1,69 @@
 {
-    "AP_CFGCODE": {
-        "title": {
-            "string": "Configuration as Code"
-        },
-        "description": {
-            "string": "Export, version, and import system configuration as JSON for GitOps workflows."
-        },
-        "export": {
-            "title": {
-                "string": "Current Configuration"
-            },
-            "copy": {
-                "string": "Salin"
-            },
-            "copied": {
-                "string": "Copied!"
-            },
-            "download": {
-                "string": "Download JSON"
-            },
-            "success": {
-                "string": "Downloaded"
-            }
-        },
-        "import": {
-            "title": {
-                "string": "Import Configuration"
-            },
-            "description_label": {
-                "string": "Deskripsi"
-            },
-            "description_placeholder": {
-                "string": "e.g. Update mail server settings"
-            },
-            "placeholder": {
-                "string": "Paste JSON configuration here..."
-            },
-            "button": {
-                "string": "Apply Configuration"
-            },
-            "running": {
-                "string": "Applying..."
-            },
-            "success": {
-                "string": "Configuration v{{version}} applied"
-            },
-            "error": {
-                "string": "Import failed"
-            }
-        },
-        "history": {
-            "title": {
-                "string": "Version History"
-            },
-            "empty": {
-                "string": "No configuration snapshots yet."
-            }
-        },
-        "errors": {
-            "empty": {
-                "string": "Configuration JSON is empty"
-            },
-            "parse": {
-                "string": "Invalid JSON — please check syntax"
-            }
-        }
+  "AP_CFGCODE": {
+    "title": {
+      "string": "Konfigurasi sebagai Kode"
+    },
+    "description": {
+      "string": "Ekspor, versikan, dan impor konfigurasi sistem sebagai JSON untuk alur kerja GitOps."
+    },
+    "export": {
+      "title": {
+        "string": "Konfigurasi Saat Ini"
+      },
+      "copy": {
+        "string": "Salin"
+      },
+      "copied": {
+        "string": "Copied!"
+      },
+      "download": {
+        "string": "Unduh JSON"
+      },
+      "success": {
+        "string": "Downloaded"
+      }
+    },
+    "import": {
+      "title": {
+        "string": "Impor Konfigurasi"
+      },
+      "description_label": {
+        "string": "Deskripsi"
+      },
+      "description_placeholder": {
+        "string": "misalnya Perbarui pengaturan server surel"
+      },
+      "placeholder": {
+        "string": "Tempel konfigurasi JSON di sini..."
+      },
+      "button": {
+        "string": "Terapkan Konfigurasi"
+      },
+      "running": {
+        "string": "Applying..."
+      },
+      "success": {
+        "string": "Konfigurasi v{{version}} diterapkan"
+      },
+      "error": {
+        "string": "Impor gagal"
+      }
+    },
+    "history": {
+      "title": {
+        "string": "Riwayat Versi"
+      },
+      "empty": {
+        "string": "Belum ada snapshot konfigurasi."
+      }
+    },
+    "errors": {
+      "empty": {
+        "string": "JSON konfigurasi kosong"
+      },
+      "parse": {
+        "string": "JSON tidak valid — silakan periksa sintaks"
+      }
     }
+  }
 }

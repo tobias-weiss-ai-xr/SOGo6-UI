@@ -1,15 +1,15 @@
 {
   "search": {
-    "openCommandPalette": "Press Cmd+K to open command palette",
-    "placeholder": "Search emails, contacts, calendar…",
-    "navigate": "Quick navigation",
-    "results": "Search results",
-    "noResults": "No results found.",
+    "openCommandPalette": "Tekan Cmd+K untuk membuka palet perintah",
+    "placeholder": "Cari email, kontak, kalender…",
+    "navigate": "Navigasi cepat",
+    "results": "Hasil pencarian",
+    "noResults": "Tidak ada hasil yang ditemukan.",
     "goToInbox": "Go to Inbox",
     "goToMail": "Go to Mail",
-    "goToContacts": "Go to Contacts",
-    "goToCalendar": "Go to Calendar",
-    "goToSettings": "Go to Settings",
-    "searchInMail": "Search mail for \"{query}\""
+    "goToContacts": "Buka Kontak",
+    "goToCalendar": "Buka Kalender",
+    "goToSettings": "Buka Pengaturan",
+    "searchInMail": "Cari surel untuk \"{query}\""
   }
 }

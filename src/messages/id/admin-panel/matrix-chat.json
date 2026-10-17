@@ -1,71 +1,71 @@
 {
-    "MATRIX": {
-        "title": {
-            "string": "Matrix Chat Integration"
-        },
-        "description": {
-            "string": "Embedded Matrix rooms, messaging, and SOGo user linking"
-        },
-        "errors": {
-            "name": {
-                "string": "Name required"
-            },
-            "fail": {
-                "string": "Operation failed"
-            }
-        },
-        "success": {
-            "config": {
-                "string": "Configuration saved"
-            },
-            "room": {
-                "string": "Room created"
-            }
-        },
-        "config": {
-            "title": {
-                "string": "Server Config"
-            },
-            "enabled": {
-                "string": "Diaktifkan"
-            },
-            "bridge": {
-                "string": "Bridge"
-            }
-        },
-        "rooms": {
-            "title": {
-                "string": "Chat Rooms"
-            },
-            "name": {
-                "placeholder": {
-                    "string": "Room name..."
-                }
-            },
-            "visibility": {
-                "private": {
-                    "string": "Private"
-                },
-                "public": {
-                    "string": "Public"
-                }
-            }
-        },
-        "button": {
-            "save": {
-                "string": "Simpan"
-            },
-            "create": {
-                "string": "Create Room"
-            }
-        },
-        "links": {
-            "title": {
-                "string": "User Links"
-            },
-            "empty": {
-                "string": "No linked users"
-            }
+  "MATRIX": {
+    "title": {
+      "string": "Integrasi Obrolan Matrix"
+    },
+    "description": {
+      "string": "Ruangan Matrix tersemat, perpesanan, dan penautan pengguna SOGo"
+    },
+    "errors": {
+      "name": {
+        "string": "Nama wajib diisi"
+      },
+      "fail": {
+        "string": "Operasi gagal"
+      }
+    },
+    "success": {
+      "config": {
+        "string": "Konfigurasi disimpan"
+      },
+      "room": {
+        "string": "Room created"
+      }
+    },
+    "config": {
+      "title": {
+        "string": "Konfigurasi Server"
+      },
+      "enabled": {
+        "string": "Diaktifkan"
+      },
+      "bridge": {
+        "string": "Bridge"
+      }
+    },
+    "rooms": {
+      "title": {
+        "string": "Chat Rooms"
+      },
+      "name": {
+        "placeholder": {
+          "string": "Room name..."
         }
+      },
+      "visibility": {
+        "private": {
+          "string": "Private"
+        },
+        "public": {
+          "string": "Public"
+        }
+      }
+    },
+    "button": {
+      "save": {
+        "string": "Simpan"
+      },
+      "create": {
+        "string": "Create Room"
+      }
+    },
+    "links": {
+      "title": {
+        "string": "User Links"
+      },
+      "empty": {
+        "string": "Tidak ada pengguna yang ditautkan"
+      }
     }
+  }
 }
