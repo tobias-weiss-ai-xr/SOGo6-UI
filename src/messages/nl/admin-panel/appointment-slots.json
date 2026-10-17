@@ -1,71 +1,71 @@
 {
-    "AP_SLOTS": {
-        "title": {
-            "string": "Appointment Slots"
-        },
-        "description": {
-            "string": "Publish bookable time slots (Calendly-style). Generate booking links for external participants."
-        },
-        "form": {
-            "create": {
-                "string": "Create Slot"
-            },
-            "cancel": {
-                "string": "Annuleren"
-            },
-            "title": {
-                "string": "New Appointment Slot"
-            },
-            "slot_title": {
-                "string": "Slot Title"
-            },
-            "duration": {
-                "string": "Duration (min)"
-            },
-            "buffer": {
-                "string": "Buffer (min)"
-            },
-            "start_time": {
-                "string": "Start Time"
-            },
-            "end_time": {
-                "string": "End Time"
-            },
-            "days": {
-                "string": "Available Days"
-            },
-            "submit": {
-                "string": "Create Slot"
-            }
-        },
-        "create": {
-            "success": {
-                "string": "Slot created"
-            },
-            "error": {
-                "string": "Failed to create slot"
-            }
-        },
-        "slots": {
-            "title": {
-                "string": "Your Slots"
-            },
-            "empty": {
-                "string": "No appointment slots. Create one to share your availability."
-            }
-        },
-        "bookings": {
-            "title": {
-                "string": "Recent Bookings"
-            },
-            "empty": {
-                "string": "No bookings yet."
-            }
-        },
-        "errors": {
-            "fields": {
-                "string": "Title, duration, times, and at least one day are required"
-            }
-        }
+  "AP_SLOTS": {
+    "title": {
+      "string": "Afspraaktijdvakken"
+    },
+    "description": {
+      "string": "Publiceer reserveerbare tijdvakken (in de stijl van Calendly). Genereer boekingskoppelingen voor externe deelnemers."
+    },
+    "form": {
+      "create": {
+        "string": "Create Slot"
+      },
+      "cancel": {
+        "string": "Annuleren"
+      },
+      "title": {
+        "string": "Nieuw afspraaktijdvak"
+      },
+      "slot_title": {
+        "string": "Slot Title"
+      },
+      "duration": {
+        "string": "Duur (min)"
+      },
+      "buffer": {
+        "string": "Buffer (min)"
+      },
+      "start_time": {
+        "string": "Start Time"
+      },
+      "end_time": {
+        "string": "End Time"
+      },
+      "days": {
+        "string": "Beschikbare dagen"
+      },
+      "submit": {
+        "string": "Create Slot"
+      }
+    },
+    "create": {
+      "success": {
+        "string": "Slot created"
+      },
+      "error": {
+        "string": "Tijdvak aanmaken mislukt"
+      }
+    },
+    "slots": {
+      "title": {
+        "string": "Your Slots"
+      },
+      "empty": {
+        "string": "Geen afspraaktijdvakken. Maak er een aan om uw beschikbaarheid te delen."
+      }
+    },
+    "bookings": {
+      "title": {
+        "string": "Recente boekingen"
+      },
+      "empty": {
+        "string": "Nog geen boekingen."
+      }
+    },
+    "errors": {
+      "fields": {
+        "string": "Titel, duur, tijden en minimaal één dag zijn verplicht"
+      }
     }
+  }
 }

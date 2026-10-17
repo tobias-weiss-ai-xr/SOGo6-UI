@@ -161,10 +161,10 @@
       "string": "Venster voor nieuw bericht",
       "context": "Dropdown label to know where to open compose in",
       "popup": {
-        "string": "Compose email in a popup"
+        "string": "E-mail opstellen in een pop-up"
       },
       "inline": {
-        "string": "Compose email inside the webmail"
+        "string": "E-mail opstellen binnen de webmail"
       }
     }
   }

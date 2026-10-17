@@ -1,34 +1,34 @@
 {
-    "AP_DOCPREV": {
-        "title": {
-            "string": "Document Preview"
-        },
-        "description": {
-            "string": "Preview PDF and Office documents in-browser. PDFs render natively; Office docs use Collabora/OnlyOffice."
-        },
-        "upload": {
-            "dropzone": {
-                "string": "Click to upload or drag a document"
-            }
-        },
-        "settings": {
-            "button": {
-                "string": "Instellingen"
-            },
-            "title": {
-                "string": "Preview Settings"
-            },
-            "collabora_url": {
-                "string": "Collabora/OnlyOffice URL"
-            },
-            "hint": {
-                "string": "The base URL of your Collabora or OnlyOffice server. Leave default for demo mode."
-            }
-        },
-        "errors": {
-            "unsupported": {
-                "string": "Unsupported file type. Use .pdf, .docx, .xlsx, or .pptx"
-            }
-        }
+  "AP_DOCPREV": {
+    "title": {
+      "string": "Documentvoorbeeld"
+    },
+    "description": {
+      "string": "Bekijk PDF- en Office-documenten in de browser. PDF's worden systeemeigen weergegeven; Office-documenten gebruiken Collabora/OnlyOffice."
+    },
+    "upload": {
+      "dropzone": {
+        "string": "Klik om te uploaden of sleep een document hierheen"
+      }
+    },
+    "settings": {
+      "button": {
+        "string": "Instellingen"
+      },
+      "title": {
+        "string": "Voorbeeldinstellingen"
+      },
+      "collabora_url": {
+        "string": "Collabora/OnlyOffice-URL"
+      },
+      "hint": {
+        "string": "De basis-URL van uw Collabora- of OnlyOffice-server. Laat de standaardwaarde staan voor demomodus."
+      }
+    },
+    "errors": {
+      "unsupported": {
+        "string": "Niet-ondersteund bestandstype. Gebruik .pdf, .docx, .xlsx of .pptx"
+      }
     }
+  }
 }

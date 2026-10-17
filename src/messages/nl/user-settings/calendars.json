@@ -51,9 +51,9 @@
       "context": "Label for the setting that determines which days are showed in calendar view (array of 0=Sunday..6=Saturday)"
     },
     "calendarWeekNumberFormat": {
-      "%U": "Sunday as the first day of the week",
-      "%W": "Monday as the first day of the week",
-      "%V": "First 4 days week",
+      "%U": "Zondag als eerste dag van de week",
+      "%W": "Maandag als eerste dag van de week",
+      "%V": "Eerste 4 dagen week",
       "string": "Hoe het eerste weeknummer wordt bepaald",
       "context": "Label for the setting that determines the week number format in calendar view (%U, %W or %V)"
     },
@@ -108,7 +108,7 @@
     },
     "davForceSyncFromClient": {
       "string": "Synchronisatie van gebeurtenissen gemaakt via CalDAV-clients afdwingen",
-      "help-tooltip": "Warning: if events from the client are more recent, force the sync anyway",
+      "help-tooltip": "Waarschuwing: forceer de synchronisatie ook als evenementen van de client recenter zijn",
       "context": "Label for the setting that determines whether to force synchronization of events created from CalDAV clients or not"
     },
     "categories": {
@@ -132,7 +132,7 @@
       "Family": "Family",
       "Friends": "Friends",
       "validation": {
-        "category-name-required": "Category name is required"
+        "category-name-required": "Categorienaam is verplicht"
       }
     }
   }

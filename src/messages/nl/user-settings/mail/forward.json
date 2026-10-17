@@ -1,116 +1,116 @@
 {
-    "US_MAIL_FORWARD": {
-        "title": {
-            "string": "Mail Forward"
+  "US_MAIL_FORWARD": {
+    "title": {
+      "string": "Mail Forward"
+    },
+    "page": {
+      "description": {
+        "string": "Stuur binnenkomende berichten automatisch door naar een of meer e-mailadressen."
+      }
+    },
+    "labels": {
+      "transfer_incoming": {
+        "string": "Binnenkomende berichten doorsturen"
+      },
+      "email": {
+        "string": "E-mailadres"
+      },
+      "always_forward": {
+        "string": "Altijd doorsturen"
+      },
+      "keep_copy": {
+        "string": "Een kopie in dit postvak bewaren"
+      }
+    },
+    "description": {
+      "transfer_incoming": {
+        "string": "Nieuwe berichten automatisch doorsturen naar een ander e-mailadres"
+      },
+      "email": {
+        "string": "Doorsturen naar deze adressen (maximaal {max} adressen). Voeg meerdere adressen toe, gescheiden door een komma of puntkomma, of druk op Enter/Tab."
+      }
+    },
+    "help": {
+      "email": {
+        "string": "We sturen nieuwe berichten door naar deze adressen"
+      }
+    },
+    "placeholders": {
+      "email": {
+        "string": "Voeg een e-mailadres toe en druk op Enter"
+      }
+    },
+    "errors": {
+      "email": {
+        "invalid": {
+          "string": "Voer een geldig e-mailadres in"
         },
-        "page": {
-            "description": {
-                "string": "Automatically forward incoming messages to one or more email addresses."
-            }
-        },
-        "labels": {
-            "transfer_incoming": {
-                "string": "Transfer incoming messages"
-            },
-            "email": {
-                "string": "Email address"
-            },
-            "always_forward": {
-                "string": "Always forward"
-            },
-            "keep_copy": {
-                "string": "Keep a copy in this inbox"
-            }
-        },
-        "description": {
-            "transfer_incoming": {
-                "string": "Automatically forward new messages to another email address"
-            },
-            "email": {
-                "string": "Forward to these addresses (up to {max} addresses). Add multiple addresses separated by comma, semicolon, or press Enter/Tab."
-            }
-        },
-        "help": {
-            "email": {
-                "string": "We'll forward new messages to these addresses"
-            }
-        },
-        "placeholders": {
-            "email": {
-                "string": "Add email address and press Enter"
-            }
-        },
-        "errors": {
-            "email": {
-                "invalid": {
-                    "string": "Please enter a valid email address"
-                },
-                "duplicate": {
-                    "string": "This address is already in the list"
-                }
-            },
-            "emails": {
-                "list": {
-                    "string": "There was an error with one or more email addresses"
-                }
-            },
-            "max_reached": {
-                "string": "Maximum {max} addresses allowed"
-            },
-            "validation": {
-                "addresses_required": {
-                    "string": "At least one email address is required when forwarding is enabled."
-                }
-            }
-        },
-        "hints": {
-            "blur": {
-                "string": "Press Enter to add this address"
-            }
-        },
-        "tooltip": {
-            "always_forward": {
-                "string": "Incoming mail is forwarded before applying your filters."
-            },
-            "keep_copy": {
-                "string": "Keep a copy of forwarded messages in your inbox. Useful if you want to maintain a local archive."
-            }
-        },
-        "errors_api": {
-            "title": {
-                "string": "Fout"
-            },
-            "save_failed": {
-                "string": "Couldn't save your changes, try again"
-            },
-            "load_failed": {
-                "string": "Could not load forwarding settings. Please try again later."
-            },
-            "feature_disabled": {
-                "string": "Mail forwarding has been disabled by your administrator."
-            }
-        },
-        "status": {
-            "enabled": {
-                "string": "Ingeschakeld"
-            },
-            "disabled": {
-                "string": "Uitgeschakeld"
-            }
-        },
-        "aria": {
-            "tags_count": {
-                "string": "{count} of {max} email addresses added"
-            },
-            "remove_email": {
-                "string": "Remove {email}"
-            },
-            "email_input_group": {
-                "string": "Email addresses for forwarding"
-            },
-            "toggle_forwarding": {
-                "string": "Toggle email forwarding"
-            }
+        "duplicate": {
+          "string": "Dit adres staat al in de lijst"
         }
+      },
+      "emails": {
+        "list": {
+          "string": "Er is een fout met een of meer e-mailadressen"
+        }
+      },
+      "max_reached": {
+        "string": "Maximaal {max} adressen toegestaan"
+      },
+      "validation": {
+        "addresses_required": {
+          "string": "Minimaal één e-mailadres is vereist wanneer doorsturen is ingeschakeld."
+        }
+      }
+    },
+    "hints": {
+      "blur": {
+        "string": "Druk op Enter om dit adres toe te voegen"
+      }
+    },
+    "tooltip": {
+      "always_forward": {
+        "string": "Binnenkomende e-mail wordt doorgestuurd voordat uw filters worden toegepast."
+      },
+      "keep_copy": {
+        "string": "Bewaar een kopie van doorgestuurde berichten in uw postvak. Handig als u een lokaal archief wilt bijhouden."
+      }
+    },
+    "errors_api": {
+      "title": {
+        "string": "Fout"
+      },
+      "save_failed": {
+        "string": "Kon uw wijzigingen niet opslaan, probeer het opnieuw"
+      },
+      "load_failed": {
+        "string": "Kon doorstuurinstellingen niet laden. Probeer het later opnieuw."
+      },
+      "feature_disabled": {
+        "string": "E-mail doorsturen is door uw beheerder uitgeschakeld."
+      }
+    },
+    "status": {
+      "enabled": {
+        "string": "Ingeschakeld"
+      },
+      "disabled": {
+        "string": "Uitgeschakeld"
+      }
+    },
+    "aria": {
+      "tags_count": {
+        "string": "{count} van {max} e-mailadressen toegevoegd"
+      },
+      "remove_email": {
+        "string": "{email} verwijderen"
+      },
+      "email_input_group": {
+        "string": "E-mailadressen voor doorsturen"
+      },
+      "toggle_forwarding": {
+        "string": "E-mail doorsturen in- of uitschakelen"
+      }
     }
+  }
 }

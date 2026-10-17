@@ -1,95 +1,95 @@
 {
-    "US_MAIL_NOTIFICATIONS": {
-        "title": {
-            "string": "Mail Notifications"
+  "US_MAIL_NOTIFICATIONS": {
+    "title": {
+      "string": "E-mailmeldingen"
+    },
+    "page": {
+      "description": {
+        "string": "Verstuur e-mailmeldingen wanneer uw e-mailfilters worden geactiveerd."
+      }
+    },
+    "labels": {
+      "enabled": {
+        "string": "E-mailmeldingen inschakelen"
+      },
+      "email": {
+        "string": "E-mailadressen"
+      },
+      "message": {
+        "string": "Meldingsbericht"
+      }
+    },
+    "description": {
+      "enabled": {
+        "string": "Stel externe adressen op de hoogte wanneer een filterregel overeenkomt met binnenkomende e-mail."
+      }
+    },
+    "help": {
+      "email": {
+        "string": "We sturen meldingen naar deze adressen wanneer filters worden geactiveerd"
+      }
+    },
+    "hints": {
+      "blur": {
+        "string": "Druk op Enter om dit adres toe te voegen"
+      }
+    },
+    "placeholders": {
+      "email": {
+        "string": "Voeg een e-mailadres toe en druk op Enter"
+      },
+      "message": {
+        "string": "Voer het meldingsbericht in"
+      }
+    },
+    "errors": {
+      "email": {
+        "invalid": {
+          "string": "Voer een geldig e-mailadres in"
         },
-        "page": {
-            "description": {
-                "string": "Send email notifications when your mail filters are triggered."
-            }
-        },
-        "labels": {
-            "enabled": {
-                "string": "Enable mail notifications"
-            },
-            "email": {
-                "string": "Email addresses"
-            },
-            "message": {
-                "string": "Notification message"
-            }
-        },
-        "description": {
-            "enabled": {
-                "string": "Notify external addresses when a filter rule matches incoming mail."
-            }
-        },
-        "help": {
-            "email": {
-                "string": "We'll send notifications to these addresses when filters are triggered"
-            }
-        },
-        "hints": {
-            "blur": {
-                "string": "Press Enter to add this address"
-            }
-        },
-        "placeholders": {
-            "email": {
-                "string": "Add email address and press Enter"
-            },
-            "message": {
-                "string": "Enter notification message"
-            }
-        },
-        "errors": {
-            "email": {
-                "invalid": {
-                    "string": "Please enter a valid email address"
-                },
-                "duplicate": {
-                    "string": "This address is already in the list"
-                }
-            },
-            "max_reached": {
-                "string": "Maximum {max} addresses allowed"
-            },
-            "validation": {
-                "addresses_required": {
-                    "string": "At least one email address is required when notifications are enabled."
-                },
-                "message_required": {
-                    "string": "A notification message is required."
-                }
-            }
-        },
-        "errors_api": {
-            "title": {
-                "string": "Fout"
-            },
-            "save_failed": {
-                "string": "Couldn't save your changes, try again"
-            },
-            "load_failed": {
-                "string": "Could not load notification settings. Please try again later."
-            },
-            "feature_disabled": {
-                "string": "Mail notifications have been disabled by your administrator."
-            }
-        },
-        "aria": {
-            "toggle_notifications": {
-                "string": "Toggle mail notifications"
-            },
-            "tags_count": {
-                "string": "{count} of {max} email addresses added"
-            },
-            "remove_email": {
-                "string": "Remove {email}"
-            },
-            "email_input_group": {
-                "string": "Email addresses for notifications"
-            }
+        "duplicate": {
+          "string": "Dit adres staat al in de lijst"
         }
+      },
+      "max_reached": {
+        "string": "Maximaal {max} adressen toegestaan"
+      },
+      "validation": {
+        "addresses_required": {
+          "string": "Minimaal één e-mailadres is vereist wanneer meldingen zijn ingeschakeld."
+        },
+        "message_required": {
+          "string": "Een meldingsbericht is vereist."
+        }
+      }
+    },
+    "errors_api": {
+      "title": {
+        "string": "Fout"
+      },
+      "save_failed": {
+        "string": "Kon uw wijzigingen niet opslaan, probeer het opnieuw"
+      },
+      "load_failed": {
+        "string": "Kon meldingsinstellingen niet laden. Probeer het later opnieuw."
+      },
+      "feature_disabled": {
+        "string": "E-mailmeldingen zijn door uw beheerder uitgeschakeld."
+      }
+    },
+    "aria": {
+      "toggle_notifications": {
+        "string": "E-mailmeldingen in- of uitschakelen"
+      },
+      "tags_count": {
+        "string": "{count} van {max} e-mailadressen toegevoegd"
+      },
+      "remove_email": {
+        "string": "{email} verwijderen"
+      },
+      "email_input_group": {
+        "string": "E-mailadressen voor meldingen"
+      }
     }
+  }
 }

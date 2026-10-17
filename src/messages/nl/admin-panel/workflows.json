@@ -1,70 +1,70 @@
 {
-    "AP_WORKFLOWS": {
-        "title": {
-            "string": "Workflow Builder"
-        },
-        "description": {
-            "string": "Low-code automation: If email from X and subject Y → forward, create event, notify."
-        },
-        "form": {
-            "create": {
-                "string": "New Workflow"
-            },
-            "cancel": {
-                "string": "Annuleren"
-            },
-            "title": {
-                "string": "Create Workflow"
-            },
-            "name": {
-                "string": "Workflow Name"
-            },
-            "trigger": {
-                "string": "Trigger"
-            },
-            "description": {
-                "string": "Beschrijving"
-            },
-            "conditions": {
-                "string": "Conditions"
-            },
-            "actions": {
-                "string": "Actions"
-            },
-            "submit": {
-                "string": "Create Workflow"
-            }
-        },
-        "create": {
-            "success": {
-                "string": "Workflow created"
-            },
-            "error": {
-                "string": "Failed to create"
-            }
-        },
-        "toggle": {
-            "error": {
-                "string": "Failed to toggle"
-            }
-        },
-        "delete": {
-            "success": {
-                "string": "Workflow deleted"
-            },
-            "error": {
-                "string": "Failed to delete"
-            }
-        },
-        "list": {
-            "empty": {
-                "string": "No workflows defined. Create one to automate actions."
-            }
-        },
-        "errors": {
-            "fields": {
-                "string": "Name, conditions, and actions are required"
-            }
-        }
+  "AP_WORKFLOWS": {
+    "title": {
+      "string": "Workflowbouwer"
+    },
+    "description": {
+      "string": "Low-code-automatisering: als e-mail van X en onderwerp Y → doorsturen, evenement aanmaken, melding."
+    },
+    "form": {
+      "create": {
+        "string": "New Workflow"
+      },
+      "cancel": {
+        "string": "Annuleren"
+      },
+      "title": {
+        "string": "Workflow aanmaken"
+      },
+      "name": {
+        "string": "Naam van de workflow"
+      },
+      "trigger": {
+        "string": "Trigger"
+      },
+      "description": {
+        "string": "Beschrijving"
+      },
+      "conditions": {
+        "string": "Conditions"
+      },
+      "actions": {
+        "string": "Actions"
+      },
+      "submit": {
+        "string": "Workflow aanmaken"
+      }
+    },
+    "create": {
+      "success": {
+        "string": "Workflow aangemaakt"
+      },
+      "error": {
+        "string": "Aanmaken mislukt"
+      }
+    },
+    "toggle": {
+      "error": {
+        "string": "In- of uitschakelen mislukt"
+      }
+    },
+    "delete": {
+      "success": {
+        "string": "Workflow verwijderd"
+      },
+      "error": {
+        "string": "Verwijderen mislukt"
+      }
+    },
+    "list": {
+      "empty": {
+        "string": "Geen workflows gedefinieerd. Maak er een aan om acties te automatiseren."
+      }
+    },
+    "errors": {
+      "fields": {
+        "string": "Naam, voorwaarden en acties zijn verplicht"
+      }
     }
+  }
 }

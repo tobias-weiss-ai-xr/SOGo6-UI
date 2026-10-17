@@ -1,37 +1,37 @@
 {
-    "AI_SEARCH": {
-        "title": {
-            "string": "Natural Language Search"
-        },
-        "description": {
-            "string": "Search emails with plain English. Converts to structured queries automatically."
-        },
-        "input": {
-            "placeholder": {
-                "string": "Show invoices from March over $500..."
-            }
-        },
-        "output": {
-            "title": {
-                "string": "Parsed Query"
-            },
-            "empty": {
-                "string": "Enter a search query above"
-            },
-            "detected": {
-                "string": "Detected filters"
-            }
-        },
-        "search": {
-            "string": "Zoeken"
-        },
-        "errors": {
-            "empty": {
-                "string": "Enter a search query"
-            },
-            "fail": {
-                "string": "Search failed"
-            }
-        }
+  "AI_SEARCH": {
+    "title": {
+      "string": "Zoeken in natuurlijke taal"
+    },
+    "description": {
+      "string": "Zoek in e-mails met gewone taal. Wordt automatisch omgezet naar gestructureerde query's."
+    },
+    "input": {
+      "placeholder": {
+        "string": "Toon facturen van maart boven € 500..."
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Parsed Query"
+      },
+      "empty": {
+        "string": "Voer hierboven een zoekopdracht in"
+      },
+      "detected": {
+        "string": "Gedetecteerde filters"
+      }
+    },
+    "search": {
+      "string": "Zoeken"
+    },
+    "errors": {
+      "empty": {
+        "string": "Voer een zoekopdracht in"
+      },
+      "fail": {
+        "string": "Zoeken mislukt"
+      }
     }
+  }
 }

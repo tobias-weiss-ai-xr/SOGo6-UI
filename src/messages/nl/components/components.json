@@ -2,7 +2,7 @@
   "COMPONENTS": {
     "forms": {
       "fixed-form-button-group": {
-        "alert": "{number} errors"
+        "alert": "{number} fouten"
       }
     },
     "color-picker": {
@@ -11,17 +11,17 @@
     "duration-picker": {
       "noReminder": "No reminder",
       "5min": "5 min before",
-      "10min": "10 min before",
-      "15min": "15 min before",
-      "30min": "30 min before",
-      "45min": "45 min before",
-      "1h": "1 hour before",
-      "2h": "2 hour before",
-      "5h": "5 hour before",
-      "15h": "15 hour before",
+      "10min": "10 min eerder",
+      "15min": "15 min eerder",
+      "30min": "30 min eerder",
+      "45min": "45 min eerder",
+      "1h": "1 uur eerder",
+      "2h": "2 uur eerder",
+      "5h": "5 uur eerder",
+      "15h": "15 uur eerder",
       "1d": "1 day before",
-      "2d": "2 days before",
-      "1w": "1 week before"
+      "2d": "2 dagen eerder",
+      "1w": "1 week eerder"
     }
   }
 }
