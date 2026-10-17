@@ -11,7 +11,7 @@
                 "string": "Todos los sistemas operativos"
             },
             "degraded": {
-                "string": "Degraded"
+                "string": "Degradado"
             }
         },
         "overview": {
@@ -22,12 +22,12 @@
                 "string": "Versión"
             },
             "services": {
-                "string": "Services Healthy"
+                "string": "Servicios en buen estado"
             }
         },
         "errors": {
             "load_failed": {
-                "string": "Failed to load health data"
+                "string": "Error al cargar los datos de estado"
             }
         }
     }

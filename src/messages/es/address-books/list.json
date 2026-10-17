@@ -46,19 +46,19 @@
                     "string": "Nombre para mostrar"
                 },
                 "last_name": {
-                    "string": "Last name"
+                    "string": "Apellido"
                 },
                 "first_name": {
-                    "string": "First name"
+                    "string": "Nombre"
                 },
                 "organization": {
                     "string": "Organización"
                 },
                 "created_at": {
-                    "string": "Date created"
+                    "string": "Fecha de creación"
                 },
                 "updated_at": {
-                    "string": "Date updated"
+                    "string": "Fecha de actualización"
                 }
             },
             "sort_order_asc": {
@@ -69,14 +69,14 @@
             }
         },
         "no_items": {
-            "string": "No contact found."
+            "string": "No se encontró ningún contacto."
         },
         "empty_title": {
-            "string": "No contacts yet",
+            "string": "Aún no hay contactos",
             "context": "Title when an address book has no contacts"
         },
         "empty_description": {
-            "string": "Add your first contact to get started.",
+            "string": "Añada su primer contacto para empezar.",
             "context": "Description when an address book is empty"
         },
         "empty_create_contact": {
@@ -84,19 +84,19 @@
             "context": "Button to create the first contact from empty state"
         },
         "search_empty_title": {
-            "string": "No results",
+            "string": "Sin resultados",
             "context": "Title when search returns no contacts"
         },
         "search_empty_description": {
-            "string": "Try a different search term or clear the filter.",
+            "string": "Pruebe con otro término de búsqueda o borre el filtro.",
             "context": "Description when search has no matches"
         },
         "clear_search": {
-            "string": "Clear search",
+            "string": "Borrar búsqueda",
             "context": "Button to reset the contacts search filter"
         },
         "search_placeholder": {
-            "string": "Search contacts…",
+            "string": "Buscar contactos…",
             "context": "Placeholder for the contacts search input in the header"
         },
         "search_min_length": {
@@ -104,15 +104,15 @@
             "context": "Hint when the search query is too short for server-side search"
         },
         "source_address_book": {
-            "string": "In {name}",
+            "string": "En {name}",
             "context": "Shows which address book a contact belongs to in the all-contacts view."
         },
         "delete_selected": {
-            "string": "Delete selected contacts",
+            "string": "Eliminar los contactos seleccionados",
             "context": "Aria label for bulk delete button"
         },
         "bulk_delete_description": {
-            "string": "Are you sure you want to delete {number, plural, one {# contact} other {# contacts}}? This action cannot be undone.",
+            "string": "¿Seguro que desea eliminar {number, plural, one {# contacto} other {# contactos}}? Esta acción no se puede deshacer.",
             "context": "Confirmation message for bulk delete"
         },
         "create_list_from_selection": {
@@ -124,27 +124,27 @@
             "context": "Member count shown under a distribution list in the contact list"
         },
         "read_only_banner": {
-            "string": "{name} is read-only. You cannot edit contacts or lists.",
+            "string": "{name} es de solo lectura. No puede editar contactos ni listas.",
             "context": "Banner shown when viewing a non-writable address book."
         },
         "pagination": {
             "previous": {
-                "string": "Previous page",
+                "string": "Página anterior",
                 "context": "Pagination previous page button"
             },
             "next": {
-                "string": "Next page",
+                "string": "Página siguiente",
                 "context": "Pagination next page button"
             },
             "page": {
-                "string": "Page {page} of {total}",
+                "string": "Página {page} de {total}",
                 "context": "Current pagination page indicator (contacts only)"
             },
             "page_size": {
-                "string": "Per page"
+                "string": "Por página"
             },
             "contacts_page_hint": {
-                "string": "Pagination applies to contacts; all lists are shown.",
+                "string": "La paginación se aplica a los contactos; se muestran todas las listas.",
                 "context": "Hint that list pagination is contact-scoped"
             }
         }

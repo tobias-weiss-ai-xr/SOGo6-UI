@@ -35,16 +35,16 @@
                 "string": "Editar"
             },
             "edit_button_aria": {
-                "string": "Edit account {email}"
+                "string": "Editar cuenta {email}"
             },
             "delete_button_aria": {
-                "string": "Delete account {email}"
+                "string": "Eliminar cuenta {email}"
             },
             "delete_confirm_title": {
                 "string": "{name}"
             },
             "delete_confirm_desc": {
-                "string": "Are you sure you want to delete {name}? This action cannot be undone."
+                "string": "¿Seguro que desea eliminar {name}? Esta acción no se puede deshacer."
             },
             "cancel_button": {
                 "string": "Cancelar"
@@ -53,53 +53,53 @@
                 "string": "Eliminar"
             },
             "empty": {
-                "string": "No IMAP accounts configured yet. Add your first account to get started."
+                "string": "Aún no hay cuentas IMAP configuradas. Añada su primera cuenta para empezar."
             }
         },
         "edit": {
             "title": {
-                "string": "Edit External Account"
+                "string": "Editar cuenta externa"
             },
             "back_button": {
                 "string": "Volver a la lista"
             },
             "readonly_notice": {
-                "string": "Most settings are read-only."
+                "string": "La mayoría de los ajustes son de solo lectura."
             }
         },
         "new": {
             "title": {
-                "string": "New External Account"
+                "string": "Nueva cuenta externa"
             },
             "description": {
-                "string": "Configure a new external IMAP account"
+                "string": "Configurar una nueva cuenta IMAP externa"
             },
             "back_button": {
                 "string": "Cancelar"
             },
             "create_button": {
-                "string": "Create Account"
+                "string": "Crear cuenta"
             }
         },
         "labels": {
             "name": "Nombre",
             "email": "Correo",
-            "replyTo": "Reply to",
+            "replyTo": "Responder a",
             "receipts": {
                 "never": "Nunca",
-                "always": "Always",
-                "ask": "Ask",
-                "neverSend": "Never send a return receipt",
-                "allowSome": "Allow return receipts for some messages",
-                "notToCc": "If I'm not in the To or Cc of the message",
-                "outsideDomain": "If the sender is outside my domain",
-                "other": "In all other cases"
+                "always": "Siempre",
+                "ask": "Preguntar",
+                "neverSend": "No enviar nunca una confirmación de recepción",
+                "allowSome": "Permitir confirmaciones de recepción para algunos mensajes",
+                "notToCc": "Si no estoy en Para o CC del mensaje",
+                "outsideDomain": "Si el remitente está fuera de mi dominio",
+                "other": "En todos los demás casos"
             },
             "server": {
                 "string": "Servor"
             },
             "port": {
-                "string": "Port"
+                "string": "Puerto"
             },
             "encryption": {
                 "string": "Encrypción"
@@ -111,7 +111,7 @@
                 "string": "SMTP Servor"
             },
             "smtpPort": {
-                "string": "Port"
+                "string": "Puerto"
             },
             "smtpAuth": {
                 "string": "SMTP Authenticación"
@@ -126,29 +126,29 @@
                 "string": "Contraseña"
             },
             "useDefaultIdentity": {
-                "string": "Always use default identity for this account"
+                "string": "Usar siempre la identidad predeterminada para esta cuenta"
             },
             "readReceipts": {
-                "string": "Read Receipts"
+                "string": "Confirmaciones de lectura"
             },
             "certificateName": {
-                "string": "Certificate Name"
+                "string": "Nombre del certificado"
             },
             "certificateFingerprint": {
-                "string": "Certificate Fingerprint"
+                "string": "Huella del certificado"
             },
             "certificateFile": {
-                "string": "S/MIME Certificate File"
+                "string": "Archivo de certificado S/MIME"
             },
             "certificatePassword": {
-                "string": "Certificate Import Password"
+                "string": "Contraseña de importación del certificado"
             },
             "selectedFile": {
-                "string": "Selected file"
+                "string": "Archivo seleccionado"
             }
         },
         "placeholders": {
-            "nameAccount": "Work account",
+            "nameAccount": "Cuenta de trabajo",
             "imapServer": {
                 "string": "imap.example.com"
             },
@@ -162,31 +162,31 @@
                 "string": "Introduzca su contraseña"
             },
             "certificateName": {
-                "string": "My S/MIME Certificate"
+                "string": "Mi certificado S/MIME"
             },
             "certificateFingerprint": {
-                "string": "Auto-generated after certificate upload"
+                "string": "Se genera automáticamente tras subir el certificado"
             },
             "certificatePassword": {
-                "string": "Enter certificate import password"
+                "string": "Introduzca la contraseña de importación del certificado"
             },
             "signatureName": "Nombre"
         },
         "description": {
             "useDefaultIdentity": {
-                "string": "When composing messages, your default identity will be used instead of the account-specific one"
+                "string": "Al redactar mensajes, se usará su identidad predeterminada en lugar de la específica de la cuenta"
             },
             "password": {
-                "string": "Your account password (stored securely)"
+                "string": "La contraseña de su cuenta (se guarda de forma segura)"
             },
             "certificateName": {
-                "string": "Name of the certificate"
+                "string": "Nombre del certificado"
             },
             "certificateFile": {
-                "string": "Upload your S/MIME certificate file"
+                "string": "Suba su archivo de certificado S/MIME"
             },
             "certificatePassword": {
-                "string": "Password required to import the certificate file"
+                "string": "Contraseña necesaria para importar el archivo del certificado"
             }
         },
         "encryption": {
@@ -202,18 +202,18 @@
         },
         "readReceipts": {
             "never": {
-                "string": "Never send read receipts"
+                "string": "No enviar nunca confirmaciones de lectura"
             },
             "selective": {
-                "string": "Allow sending read receipts for certain messages"
+                "string": "Permitir el envío de confirmaciones de lectura para determinados mensajes"
             }
         },
         "aria": {
             "show_password": {
-                "string": "Show password"
+                "string": "Mostrar contraseña"
             },
             "hide_password": {
-                "string": "Hide password"
+                "string": "Ocultar contraseña"
             }
         },
         "tabs": {
@@ -244,24 +244,24 @@
                     "string": "Error"
                 },
                 "load_failed": {
-                    "string": "Failed to load external accounts. Please try again later."
+                    "string": "No se pudieron cargar las cuentas externas. Inténtelo de nuevo más tarde."
                 },
                 "create_failed": {
-                    "string": "Failed to create external account. Please try again."
+                    "string": "No se pudo crear la cuenta externa. Inténtelo de nuevo."
                 },
                 "update_failed": {
-                    "string": "Failed to update external account. Please try again."
+                    "string": "No se pudo actualizar la cuenta externa. Inténtelo de nuevo."
                 },
                 "delete_failed": {
-                    "string": "Failed to delete account. Please try again."
+                    "string": "No se pudo eliminar la cuenta. Inténtelo de nuevo."
                 }
             }
         },
         "validation": {
             "required": "Obligatorio",
-            "server-required": "Server address is required",
-            "server-invalid": "Must be a valid hostname or IP address",
-            "port-required": "Port is required"
+            "server-required": "La dirección del servidor es obligatoria",
+            "server-invalid": "Debe ser un nombre de host o una dirección IP válidos",
+            "port-required": "El puerto es obligatorio"
         }
     }
 }

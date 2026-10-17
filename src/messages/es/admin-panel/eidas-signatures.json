@@ -4,67 +4,67 @@
       "string": "Firmas cualificadas eIDAS"
     },
     "description": {
-      "string": "EU Regulation 910/2014 qualified electronic signatures and timestamps"
+      "string": "Reglamento (UE) 910/2014: firmas electrónicas cualificadas y sellos de tiempo"
     },
     "errors": {
       "fields": {
-        "string": "All fields required"
+        "string": "Todos los campos son obligatorios"
       },
       "fail": {
-        "string": "Operation failed"
+        "string": "Error en la operación"
       }
     },
     "success": {
       "sign": {
-        "string": "Document signed with QES"
+        "string": "Documento firmado con QES"
       }
     },
     "sign": {
       "title": {
-        "string": "Sign Document"
+        "string": "Firmar documento"
       },
       "placeholder": {
-        "string": "Enter document content to sign..."
+        "string": "Introduzca el contenido del documento a firmar..."
       },
       "signer": {
-        "string": "Signer Email"
+        "string": "Correo del firmante"
       },
       "algorithm": {
-        "string": "Hash Algorithm"
+        "string": "Algoritmo de hash"
       },
       "button": {
-        "string": "Sign with QES"
+        "string": "Firmar con QES"
       }
     },
     "verify": {
       "title": {
-        "string": "Verify Signature"
+        "string": "Verificar firma"
       },
       "doc_hash": {
-        "string": "Document Hash"
+        "string": "Hash del documento"
       },
       "signature": {
-        "string": "Signature"
+        "string": "Firma"
       },
       "button": {
-        "string": "Verify"
+        "string": "Verificar"
       },
       "valid": {
-        "string": "Valid"
+        "string": "Válida"
       },
       "invalid": {
-        "string": "Invalid"
+        "string": "No válida"
       }
     },
     "certs": {
       "title": {
-        "string": "Trust Service Certificates"
+        "string": "Certificados de servicios de confianza"
       },
       "type": {
-        "string": "Type"
+        "string": "Tipo"
       },
       "name": {
-        "string": "Name"
+        "string": "Nombre"
       },
       "hash": {
         "string": "Hash"

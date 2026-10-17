@@ -4,59 +4,59 @@
             "string": "Encuestas de programación"
         },
         "description": {
-            "string": "Create 'When are you free?' polls to find the best meeting time for internal and external participants."
+            "string": "Cree encuestas del tipo «¿Cuándo estás libre?» para encontrar la mejor franja de reunión para participantes internos y externos."
         },
         "form": {
             "create": {
-                "string": "Create Poll"
+                "string": "Crear encuesta"
             },
             "cancel": {
                 "string": "Cancelar"
             },
             "title": {
-                "string": "New Scheduling Poll"
+                "string": "Nueva encuesta de horarios"
             },
             "poll_title": {
-                "string": "Poll Title"
+                "string": "Título de la encuesta"
             },
             "title_hint": {
                 "string": "e.g. Q1 Planning Meetando"
             },
             "participants": {
-                "string": "Participants"
+                "string": "Participantes"
             },
             "description": {
                 "string": "Descripción"
             },
             "time_slots": {
-                "string": "Proposed Time Slots"
+                "string": "Franjas horarias propuestas"
             },
             "add_slot": {
-                "string": "Add Slot"
+                "string": "Añadir franja"
             },
             "submit": {
-                "string": "Create Poll"
+                "string": "Crear encuesta"
             }
         },
         "create": {
             "success": {
-                "string": "Poll created"
+                "string": "Encuesta creada"
             },
             "error": {
-                "string": "Failed to create poll"
+                "string": "Error al crear la encuesta"
             }
         },
         "list": {
             "empty": {
-                "string": "No scheduling polls yet. Create one to find the best meeting time."
+                "string": "Aún no hay encuestas de horarios. Cree una para encontrar la mejor franja de reunión."
             },
             "by": {
-                "string": "by"
+                "string": "por"
             }
         },
         "errors": {
             "fields": {
-                "string": "Title, participants, and at least one time slot are required"
+                "string": "El título, los participantes y al menos una franja horaria son obligatorios"
             }
         }
     }

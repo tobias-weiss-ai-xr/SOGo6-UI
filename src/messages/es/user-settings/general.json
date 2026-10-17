@@ -21,7 +21,7 @@
                 "string": "Formato de hora"
             },
             "default_view": {
-                "string": "Default View"
+                "string": "Vista predeterminada"
             },
             "refresh_frequency": {
                 "string": "Frecuencia de actualización"
@@ -42,39 +42,39 @@
                 "string": "Contactos"
             },
             "last": {
-                "string": "Last displayed module"
+                "string": "Último módulo mostrado"
             },
             "enable_external_avatar": {
-                "string": "Enable external avatar"
+                "string": "Activar avatar externo"
             }
         },
         "descriptions": {
             "language": {
-                "string": "The language used in the app."
+                "string": "El idioma usado en la aplicación."
             },
             "timezone": {
-                "string": "The time zone you are in."
+                "string": "La zona horaria en la que se encuentra."
             },
             "short_date_style": {
-                "string": "How dates are displayed in the app."
+                "string": "Cómo se muestran las fechas en la aplicación."
             },
             "long_date_style": {
-                "string": "How dates are displayed in the app."
+                "string": "Cómo se muestran las fechas en la aplicación."
             },
             "time_style": {
-                "string": "How time is displayed in the app."
+                "string": "Cómo se muestra la hora en la aplicación."
             },
             "default_view": {
-                "string": "The default view when you open the app."
+                "string": "La vista predeterminada al abrir la aplicación."
             },
             "refresh_frequency": {
-                "string": " How often the app should check for new emails, calendar events, and more."
+                "string": " Con qué frecuencia debe la aplicación buscar correos nuevos, eventos de calendario y más."
             },
             "enable_notifications": {
-                "string": "Receive notifications for new emails, calendar events, and more."
+                "string": "Recibir notificaciones de correos nuevos, eventos de calendario y más."
             },
             "enable_external_avatar": {
-                "string": "Enable external avatar (e.g., Gravatar)"
+                "string": "Activar avatar externo (p. ej., Gravatar)"
             }
         }
     }

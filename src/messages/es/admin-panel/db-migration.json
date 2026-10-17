@@ -17,18 +17,18 @@
                 "string": "Ejecutando..."
             },
             "success": {
-                "string": "Migration applied"
+                "string": "Migración aplicada"
             },
             "error": {
-                "string": "Migration failed"
+                "string": "Error en la migración"
             }
         },
         "history": {
             "title": {
-                "string": "Migration History"
+                "string": "Historial de migraciones"
             },
             "empty": {
-                "string": "No migrations recorded."
+                "string": "No hay migraciones registradas."
             }
         }
     }

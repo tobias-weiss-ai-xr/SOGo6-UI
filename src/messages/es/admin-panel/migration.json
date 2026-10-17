@@ -11,16 +11,16 @@
                 "string": "Start Migración"
             },
             "source": {
-                "string": "Source"
+                "string": "Origen"
             },
             "select_source": {
-                "string": "Choose a source..."
+                "string": "Elija un origen..."
             },
             "user": {
                 "string": "Target Usor"
             },
             "select_user": {
-                "string": "Select user..."
+                "string": "Seleccionar usuario..."
             }
         },
         "start": {
@@ -28,26 +28,26 @@
                 "string": "Start Migración"
             },
             "running": {
-                "string": "Starting..."
+                "string": "Iniciando..."
             },
             "success": {
-                "string": "Migration started"
+                "string": "Migración iniciada"
             },
             "error": {
-                "string": "Migration failed"
+                "string": "Error en la migración"
             }
         },
         "history": {
             "title": {
-                "string": "Migration History"
+                "string": "Historial de migraciones"
             },
             "empty": {
-                "string": "No migrations yet."
+                "string": "Aún no hay migraciones."
             }
         },
         "errors": {
             "fields": {
-                "string": "Source and user are required"
+                "string": "El origen y el usuario son obligatorios"
             }
         }
     }

@@ -13,7 +13,7 @@
             }
         },
         "calendarCreationNotif": {
-            "string": "Send notification when a calendar is created",
+            "string": "Enviar notificación cuando se cree un calendario",
             "context": "Label for the calendar creation notification setting"
         },
         "calendarViewFirstDay": {
@@ -24,19 +24,19 @@
             "4": "Jueves",
             "5": "Viernes",
             "6": "Sábado",
-            "string": "First day of the week in calendar view",
+            "string": "Primer día de la semana en la vista de calendario",
             "context": "Label for the setting that determines the first day of the week in calendar view (0=Sunday..6=Saturday)"
         },
         "workdayStartTime": {
-            "string": "Workday start time",
+            "string": "Hora de inicio de la jornada laboral",
             "context": "Label for the setting that determines the start time of the workday (e.g. 09:00)"
         },
         "workdayEndTime": {
-            "string": "Workday end time",
+            "string": "Hora de fin de la jornada laboral",
             "context": "Label for the setting that determines the end time of the workday (e.g. 18:00)"
         },
         "busyOffHours": {
-            "string": "Show as busy during off hours",
+            "string": "Mostrar como ocupado fuera del horario laboral",
             "context": "Label for the setting that determines whether to show as busy during off hours"
         },
         "calendarDaysShowed": {
@@ -47,18 +47,18 @@
             "4": "Jueves",
             "5": "Viernes",
             "6": "Sábado",
-            "string": "Days showed in calendar view",
+            "string": "Días mostrados en la vista de calendario",
             "context": "Label for the setting that determines which days are showed in calendar view (array of 0=Sunday..6=Saturday)"
         },
         "calendarWeekNumberFormat": {
-            "%U": "Sunday as the first day of the week",
-            "%W": "Monday as the first day of the week",
-            "%V": "First 4 days week",
-            "string": "How the first week number is evaluated",
+            "%U": "Domingo como primer día de la semana",
+            "%W": "Lunes como primer día de la semana",
+            "%V": "Semana de los primeros 4 días",
+            "string": "Cómo se evalúa el número de la primera semana",
             "context": "Label for the setting that determines the week number format in calendar view (%U, %W or %V)"
         },
         "calendarDefault": {
-            "string": "Default Calendar chosen when creating a new event",
+            "string": "Calendario predeterminado al crear un evento nuevo",
             "context": "Label for the setting that determines the default calendar"
         },
         "calendarStatus": {
@@ -67,15 +67,15 @@
             "PRIVATE": "Privado"
         },
         "eventDefaultClass": {
-            "string": "Default classification for events",
+            "string": "Clasificación predeterminada para eventos",
             "context": "Label for the setting that determines the default classification for events (PUBLIC, CONFIDENTIAL or PRIVATE)"
         },
         "taskDefaultClass": {
-            "string": "Default classification for tasks",
+            "string": "Clasificación predeterminada para tareas",
             "context": "Label for the setting that determines the default classification for tasks (PUBLIC, CONFIDENTIAL or PRIVATE)"
         },
         "journalDefaultClass": {
-            "string": "Default classification for journal entries",
+            "string": "Clasificación predeterminada para entradas del diario",
             "context": "Label for the setting that determines the default classification for journal entries (PUBLIC, CONFIDENTIAL or PRIVATE)"
         },
         "eventDefaultReminder": {
@@ -87,28 +87,28 @@
             "context": "Label for the setting that determines the default reminder for tasks (e.g. -PT15M)"
         },
         "journalDefaultReminder": {
-            "string": "Default reminder for journal entries",
+            "string": "Recordatorio predeterminado para entradas del diario",
             "context": "Label for the setting that determines the default reminder for journal entries (e.g. -PT15M)"
         },
         "reminderAfter": {
-            "string": "before",
+            "string": "antes",
             "context": "example: 20min before"
         },
         "noInvitation": {
-            "string": "Prevent to be add as attendee by others users",
+            "string": "Impedir que otros usuarios le añadan como asistente",
             "context": "Label for the setting prevent user to be add as attendees by others users"
         },
         "noInvitationWhitelist": {
-            "string": "Invitation whitelist",
+            "string": "Lista blanca de invitaciones",
             "context": "Label for the setting that determines the whitelist of email addresses to which invitations will be sent even if 'Do not send invitations' is enabled"
         },
         "doNotSendInvitFromDav": {
-            "string": "Do not send invitations for events created from CalDAV clients",
+            "string": "No enviar invitaciones para eventos creados desde clientes CalDAV",
             "context": "Label for the setting that determines whether to send invitations for events created from CalDAV clients or not"
         },
         "davForceSyncFromClient": {
-            "string": "Force synchronization of events created from CalDAV clients",
-            "help-tooltip": "Warning: if events from the client are more recent, force the sync anyway",
+            "string": "Forzar la sincronización de eventos creados desde clientes CalDAV",
+            "help-tooltip": "Aviso: si los eventos del cliente son más recientes, se fuerza la sincronización de todos modos",
             "context": "Label for the setting that determines whether to force synchronization of events created from CalDAV clients or not"
         },
         "categories": {

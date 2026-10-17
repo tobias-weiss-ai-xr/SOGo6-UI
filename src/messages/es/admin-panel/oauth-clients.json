@@ -4,29 +4,29 @@
             "string": "Clientes OAuth2 / OIDC"
         },
         "description": {
-            "string": "Manage OAuth2 client applications. SOGo acts as an OAuth2 authorization server and OpenID Connect provider."
+            "string": "Gestione aplicaciones cliente OAuth2. SOGo actúa como servidor de autorización OAuth2 y proveedor de OpenID Connect."
         },
         "form": {
             "register": {
-                "string": "Register Client"
+                "string": "Registrar cliente"
             },
             "cancel": {
                 "string": "Cancelar"
             },
             "title": {
-                "string": "Register OAuth2 Client"
+                "string": "Registrar cliente OAuth2"
             },
             "name": {
-                "string": "Application Name"
+                "string": "Nombre de la aplicación"
             },
             "redirect_uris": {
-                "string": "Redirect URIs"
+                "string": "URIs de redirección"
             },
             "redirect_hint": {
-                "string": "Separate multiple URIs with commas"
+                "string": "Separe varias URIs con comas"
             },
             "scopes": {
-                "string": "Scopes"
+                "string": "Ámbitos"
             },
             "create": {
                 "string": "Registor"
@@ -34,25 +34,25 @@
         },
         "credentials": {
             "title": {
-                "string": "Client Credentials — Save Now"
+                "string": "Credenciales del cliente — Guárdelas ahora"
             }
         },
         "create": {
             "success": {
-                "string": "Client registered"
+                "string": "Cliente registrado"
             },
             "error": {
-                "string": "Registration failed"
+                "string": "Error en el registro"
             }
         },
         "list": {
             "empty": {
-                "string": "No OAuth2 clients registered yet."
+                "string": "Aún no hay clientes OAuth2 registrados."
             }
         },
         "errors": {
             "fields": {
-                "string": "Name and redirect URI are required"
+                "string": "El nombre y la URI de redirección son obligatorios"
             }
         }
     }

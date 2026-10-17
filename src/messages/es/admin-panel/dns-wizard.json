@@ -4,7 +4,7 @@
             "string": "Asistente DNS"
         },
         "description": {
-            "string": "Generate and validate DNS records for email authentication (SPF, DKIM, DMARC). Add these records to your domain's DNS zone to protect against spoofing and improve deliverability."
+            "string": "Genere y valide registros DNS para la autenticación de correo electrónico (SPF, DKIM, DMARC). Añada estos registros a la zona DNS de su dominio para protegerse contra la suplantación y mejorar la entregabilidad."
         },
         "tabs": {
             "spf": {
@@ -17,54 +17,54 @@
                 "string": "DMARC"
             },
             "validate": {
-                "string": "Validate"
+                "string": "Validar"
             }
         },
         "labels": {
             "domain": {
-                "string": "Domain"
+                "string": "Dominio"
             },
             "policy": {
-                "string": "Policy"
+                "string": "Política"
             },
             "mx_servers": {
-                "string": "MX Servers"
+                "string": "Servidores MX"
             },
             "ip4_addresses": {
-                "string": "IPv4 Addresses"
+                "string": "Direcciones IPv4"
             },
             "ip6_addresses": {
-                "string": "IPv6 Addresses"
+                "string": "Direcciones IPv6"
             },
             "include_domains": {
-                "string": "Include Domains"
+                "string": "Dominios incluidos"
             },
             "selector": {
                 "string": "Selector"
             },
             "key_type": {
-                "string": "Key Type"
+                "string": "Tipo de clave"
             },
             "public_key": {
-                "string": "Public Key (Base64)"
+                "string": "Clave pública (Base64)"
             },
             "rua_email": {
-                "string": "Aggregate Reports Email"
+                "string": "Correo para informes agregados"
             },
             "ruf_email": {
-                "string": "Forensic Reports Email"
+                "string": "Correo para informes forenses"
             },
             "pct": {
-                "string": "Policy Percentage"
+                "string": "Porcentaje de la política"
             },
             "subdomain_policy": {
-                "string": "Subdomain Policy"
+                "string": "Política de subdominios"
             },
             "aspf": {
-                "string": "SPF Alignment"
+                "string": "Alineación SPF"
             },
             "adkim": {
-                "string": "DKIM Alignment"
+                "string": "Alineación DKIM"
             }
         },
         "policies": {
@@ -83,41 +83,41 @@
         },
         "spf": {
             "description": {
-                "string": "SPF (Sender Policy Framework) specifies which mail servers are allowed to send email from your domain. Add this TXT record to your DNS zone."
+                "string": "SPF (Sender Policy Framework) especifica qué servidores de correo pueden enviar correo electrónico desde su dominio. Añada este registro TXT a su zona DNS."
             },
             "generate": {
-                "string": "Generate SPF Record"
+                "string": "Generar registro SPF"
             }
         },
         "dkim": {
             "description": {
-                "string": "DKIM (DomainKeys Identified Mail) adds a digital signature to outgoing emails, allowing recipients to verify the message was not altered in transit."
+                "string": "DKIM (DomainKeys Identified Mail) añade una firma digital a los correos salientes, lo que permite a los destinatarios verificar que el mensaje no fue alterado en tránsito."
             },
             "generate": {
-                "string": "Generate DKIM Record"
+                "string": "Generar registro DKIM"
             },
             "public_key_placeholder": {
-                "string": "Leave empty for placeholder with generation instructions"
+                "string": "Deje vacío para obtener un marcador con instrucciones de generación"
             },
             "public_key_hint": {
-                "string": "Optional. If empty, the record will include a placeholder with the openssl command to generate the key pair."
+                "string": "Opcional. Si se deja vacío, el registro incluirá un marcador con el comando openssl para generar el par de claves."
             }
         },
         "dmarc": {
             "description": {
-                "string": "DMARC (Domain-based Message Authentication, Reporting, and Conformance) tells receiving mail servers what to do when SPF or DKIM fails. Start with p=none to monitor, then move to quarantine or reject."
+                "string": "DMARC (Domain-based Message Authentication, Reporting, and Conformance) indica a los servidores de correo receptores qué hacer cuando SPF o DKIM fallan. Comience con p=none para supervisar y pase después a cuarentena o rechazo."
             },
             "generate": {
-                "string": "Generate DMARC Record"
+                "string": "Generar registro DMARC"
             },
             "policy_none": {
                 "string": "monitor onmente"
             },
             "policy_quarantine": {
-                "string": "quarantine failures"
+                "string": "poner en cuarentena los fallos"
             },
             "policy_reject": {
-                "string": "reject failures"
+                "string": "rechazar los fallos"
             },
             "relaxed": {
                 "string": "relaxed"
@@ -126,35 +126,35 @@
                 "string": "strict"
             },
             "inherit": {
-                "string": "Inherit from domain policy"
+                "string": "Heredar de la política del dominio"
             }
         },
         "validate": {
             "description": {
-                "string": "Paste an existing SPF or DMARC record value to check for syntax errors and best-practice warnings."
+                "string": "Pegue un valor de registro SPF o DMARC existente para comprobar errores de sintaxis y avisos de buenas prácticas."
             },
             "button": {
-                "string": "Validate"
+                "string": "Validar"
             },
             "spf_title": {
-                "string": "Validate SPF Record"
+                "string": "Validar registro SPF"
             },
             "dmarc_title": {
-                "string": "Validate DMARC Record"
+                "string": "Validar registro DMARC"
             }
         },
         "record": {
             "title": {
-                "string": "Generated DNS Record"
+                "string": "Registro DNS generado"
             },
             "name": {
-                "string": "Name"
+                "string": "Nombre"
             },
             "type": {
-                "string": "Type"
+                "string": "Tipo"
             },
             "value": {
-                "string": "Value"
+                "string": "Valor"
             },
             "ttl": {
                 "string": "TTL"
@@ -165,24 +165,24 @@
         },
         "validation": {
             "valid": {
-                "string": "Valid"
+                "string": "Válido"
             },
             "invalid": {
-                "string": "Invalid"
+                "string": "No válido"
             },
             "domain_required": {
-                "string": "Domain is required"
+                "string": "El dominio es obligatorio"
             },
             "value_required": {
-                "string": "Record value is required"
+                "string": "El valor del registro es obligatorio"
             }
         },
         "errors": {
             "generate_failed": {
-                "string": "Failed to generate record"
+                "string": "Error al generar el registro"
             },
             "validate_failed": {
-                "string": "Failed to validate record"
+                "string": "Error al validar el registro"
             }
         }
     }

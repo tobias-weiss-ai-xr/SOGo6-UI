@@ -26,7 +26,7 @@
         },
         "filters": {
             "all": {
-                "string": "All"
+                "string": "Todas"
             },
             "needs_action": {
                 "string": "Pendiente"
@@ -38,7 +38,7 @@
                 "string": "Completado"
             },
             "cancelled": {
-                "string": "Cancelled"
+                "string": "Canceladas"
             },
             "overdue": {
                 "string": "Vencidas"
@@ -46,13 +46,13 @@
         },
         "priority": {
             "none": {
-                "string": "No priority"
+                "string": "Sin prioridad"
             },
             "high": {
                 "string": "Alta"
             },
             "medium": {
-                "string": "Medium"
+                "string": "Media"
             },
             "low": {
                 "string": "Baja"
@@ -69,7 +69,7 @@
                 "string": "Completado"
             },
             "cancelled": {
-                "string": "Cancelled"
+                "string": "Cancelada"
             }
         },
         "form": {
@@ -98,7 +98,7 @@
                 "string": "Prioridad"
             },
             "percent_complete": {
-                "string": "Progress"
+                "string": "Progreso"
             },
             "calendar": {
                 "string": "Calendario"
@@ -116,11 +116,11 @@
                 "string": "Cancelar"
             },
             "calendar_required": {
-                "string": "Select a calendar"
+                "string": "Seleccione un calendario"
             },
             "errors": {
                 "date_order": {
-                    "string": "Due date must be on or after the start date."
+                    "string": "La fecha de vencimiento debe ser igual o posterior a la fecha de inicio."
                 }
             }
         },
@@ -134,7 +134,7 @@
         },
         "delete_dialog": {
             "title": {
-                "string": "Delete task?"
+                "string": "¿Eliminar la tarea?"
             },
             "description": {
                 "string": "Esta acción no se puede deshacer."
@@ -148,16 +148,16 @@
         },
         "selection": {
             "enter": {
-                "string": "Select tasks"
+                "string": "Seleccionar tareas"
             },
             "cancel": {
                 "string": "Cancelar"
             },
             "select_all": {
-                "string": "Select all tasks"
+                "string": "Seleccionar todas las tareas"
             },
             "count": {
-                "string": "{count, plural, one {# selected} other {# selected}}"
+                "string": "{count, plural, one {# seleccionada} other {# seleccionadas}}"
             },
             "actions": {
                 "complete": {
@@ -172,10 +172,10 @@
             },
             "delete_dialog": {
                 "title": {
-                    "string": "Delete selected tasks?"
+                    "string": "¿Eliminar las tareas seleccionadas?"
                 },
                 "description": {
-                    "string": "You are about to delete {count, plural, one {# task} other {# tasks}}. This action cannot be undone."
+                    "string": "Está a punto de eliminar {count, plural, one {# tarea} other {# tareas}}. Esta acción no se puede deshacer."
                 },
                 "confirm": {
                     "string": "Eliminar"
@@ -188,10 +188,10 @@
         "sidebar": {
             "smart_views": {
                 "title": {
-                    "string": "Smart views"
+                    "string": "Vistas inteligentes"
                 },
                 "all": {
-                    "string": "All tasks"
+                    "string": "Todas las tareas"
                 },
                 "today": {
                     "string": "Hoy"
@@ -220,10 +220,10 @@
                 "string": "Tareas"
             },
             "view_all": {
-                "string": "View all tasks"
+                "string": "Ver todas las tareas"
             },
             "empty": {
-                "string": "No pending tasks"
+                "string": "No hay tareas pendientes"
             },
             "loading": {
                 "string": "Cargando tareas…"

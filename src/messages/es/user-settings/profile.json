@@ -1,7 +1,7 @@
 {
     "FORM_PROFILE": {
         "title": "Perfil",
-        "description": "Manage your profile information and settings.",
+        "description": "Gestione la información y los ajustes de su perfil.",
         "sections": {
             "basicInfo": "Información básica",
             "identities": "Identidades"
@@ -22,13 +22,13 @@
             "aliases": "Alias de correo"
         },
         "extraInfo": {
-            "title": "Extra Information",
-            "company": "Company",
-            "team": "Team"
+            "title": "Información adicional",
+            "company": "Empresa",
+            "team": "Equipo"
         },
         "profilePictureSource": {
-            "title": "Profile Picture",
-            "description": "Choose how your profile picture is displayed. You can upload a custom image, use your Gravatar, Libravatar or use the default avatar.",
+            "title": "Foto de perfil",
+            "description": "Elija cómo se muestra su foto de perfil. Puede subir una imagen personalizada, usar su Gravatar o Libravatar, o usar el avatar predeterminado.",
             "useDefault": "Predeterminado",
             "useGravatar": "Gravatar",
             "useLibravatar": "Libravatar",
@@ -43,10 +43,10 @@
                 "string": "Cargando"
             },
             "load_failed": {
-                "string": "Failed to load profile. Please try again later."
+                "string": "No se pudo cargar el perfil. Inténtelo de nuevo más tarde."
             },
             "update_failed": {
-                "string": "Failed to update profile. Please try again."
+                "string": "No se pudo actualizar el perfil. Inténtelo de nuevo."
             }
         }
     }

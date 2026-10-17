@@ -7,53 +7,53 @@
             "string": "Personalizar la apariencia de la página de inicio por dominio — logo, colores, CSS, texto de encabezado/pie."
         },
         "select_domain": {
-            "string": "Domain"
+            "string": "Dominio"
         },
         "select_placeholder": {
-            "string": "Choose a domain..."
+            "string": "Elija un dominio..."
         },
         "select_hint": {
-            "string": "Select a domain above to view and edit its branding."
+            "string": "Seleccione arriba un dominio para ver y editar su personalización de marca."
         },
         "card": {
             "identity": {
-                "string": "Visual Identity"
+                "string": "Identidad visual"
             },
             "login_page": {
-                "string": "Login Page"
+                "string": "Página de inicio de sesión"
             }
         },
         "labels": {
             "logo": {
-                "string": "Logo"
+                "string": "Logotipo"
             },
             "favicon": {
                 "string": "Favicon"
             },
             "primary_color": {
-                "string": "Primary Color"
+                "string": "Color principal"
             },
             "login_header": {
-                "string": "Login Header Text"
+                "string": "Texto de cabecera del inicio de sesión"
             },
             "login_footer": {
-                "string": "Login Footer Text"
+                "string": "Texto de pie de página del inicio de sesión"
             },
             "custom_css": {
-                "string": "Custom CSS"
+                "string": "CSS personalizado"
             }
         },
         "buttons": {
             "upload": {
-                "string": "Upload"
+                "string": "Subir"
             }
         },
         "placeholders": {
             "header": {
-                "string": "e.g. Welcome to My Company Mail"
+                "string": "p. ej., Bienvenido al correo de Mi Empresa"
             },
             "footer": {
-                "string": "e.g. © 2026 My Company"
+                "string": "p. ej., © 2026 Mi Empresa"
             },
             "css": {
                 "string": "body { font-family: sans-serif; }"
@@ -64,7 +64,7 @@
                 "string": "Save Brandando"
             },
             "success": {
-                "string": "Branding saved"
+                "string": "Personalización de marca guardada"
             },
             "error": {
                 "string": "Failed to save brandando"
@@ -72,7 +72,7 @@
         },
         "errors": {
             "upload": {
-                "string": "Failed to read file"
+                "string": "Error al leer el archivo"
             }
         }
     }

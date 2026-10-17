@@ -53,55 +53,55 @@
             "context": "Toast when write access is denied."
         },
         "read_only": {
-            "string": "This address book is read-only.",
+            "string": "Esta libreta de direcciones es de solo lectura.",
             "context": "Toast when mutating a read-only address book."
         },
         "export_format_unsupported": {
-            "string": "The selected export format is not supported.",
+            "string": "El formato de exportación seleccionado no es compatible.",
             "context": "Error when export format negotiation fails."
         },
         "import_no_file": {
-            "string": "No file was provided for import.",
+            "string": "No se ha proporcionado ningún archivo para importar.",
             "context": "Error when import request has no file."
         },
         "import_too_large": {
-            "string": "The import file exceeds the maximum allowed size (10 MB).",
+            "string": "El archivo de importación supera el tamaño máximo permitido (10 MB).",
             "context": "Error when import payload is too large."
         },
         "import_parse_failed": {
-            "string": "The import file could not be parsed.",
+            "string": "No se pudo analizar el archivo de importación.",
             "context": "Error when import document parsing fails."
         },
         "job_not_found": {
-            "string": "The background job could not be found.",
+            "string": "No se pudo encontrar la tarea en segundo plano.",
             "context": "Error when polling an unknown job."
         },
         "job_forbidden": {
-            "string": "You do not have access to this background job.",
+            "string": "No tiene acceso a esta tarea en segundo plano.",
             "context": "Error when job belongs to another user."
         },
         "job_not_ready": {
-            "string": "The export is not ready yet. Please wait and try again.",
+            "string": "La exportación aún no está lista. Espere e inténtelo de nuevo.",
             "context": "Error when downloading a job result too early."
         },
         "job_no_result": {
-            "string": "This job has no downloadable result.",
+            "string": "Esta tarea no tiene un resultado descargable.",
             "context": "Error when job result is unavailable."
         },
         "job_concurrent_limit": {
-            "string": "Too many background jobs are running. Please try again later.",
+            "string": "Hay demasiadas tareas en segundo plano en ejecución. Inténtelo de nuevo más tarde.",
             "context": "Error when concurrent job limit is reached."
         },
         "file_too_large": {
-            "string": "The photo exceeds the maximum allowed size (2 MB).",
+            "string": "La foto supera el tamaño máximo permitido (2 MB).",
             "context": "Inline error when contact photo upload is too large."
         },
         "file_type_not_allowed": {
-            "string": "This file type is not allowed for contact photos.",
+            "string": "Este tipo de archivo no está permitido para fotos de contacto.",
             "context": "Inline error when contact photo type is not allowed."
         },
         "generic": {
-            "string": "The operation could not be completed. Please try again.",
+            "string": "No se pudo completar la operación. Inténtelo de nuevo.",
             "context": "Fallback error message for contact API errors."
         }
     }

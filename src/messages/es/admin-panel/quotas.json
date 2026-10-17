@@ -10,43 +10,43 @@
       "string": "Seleccionar usuario"
     },
     "select_placeholder": {
-      "string": "Choose a user..."
+      "string": "Elija un usuario..."
     },
     "current_usage": {
-      "string": "Current Usage"
+      "string": "Uso actual"
     },
     "set_quota": {
-      "string": "Set Quota"
+      "string": "Establecer cuota"
     },
     "labels": {
       "mailbox": {
-        "string": "Mailbox"
+        "string": "Buzón"
       },
       "calendars": {
-        "string": "Calendars"
+        "string": "Calendarios"
       },
       "contacts": {
-        "string": "Contacts"
+        "string": "Contactos"
       },
       "mailbox_limit": {
-        "string": "Mailbox Size Limit"
+        "string": "Límite de tamaño del buzón"
       },
       "calendar_limit": {
-        "string": "Max Calendars"
+        "string": "Máx. de calendarios"
       },
       "contact_limit": {
-        "string": "Max Contacts"
+        "string": "Máx. de contactos"
       }
     },
     "save": {
       "button": {
-        "string": "Save Quota"
+        "string": "Guardar cuota"
       },
       "success": {
-        "string": "Quota updated"
+        "string": "Cuota actualizada"
       },
       "error": {
-        "string": "Failed to update quota"
+        "string": "Error al actualizar la cuota"
       }
     }
   }
