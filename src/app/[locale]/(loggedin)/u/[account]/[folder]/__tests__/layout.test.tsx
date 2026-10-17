@@ -48,15 +48,32 @@ jest.mock('@/components/ui/sidebar', () => ({
       {children}
     </div>
   ),
-  SidebarTrigger: ({
-    onClose: _onClose,
-    reverseIcon: _reverseIcon,
-    ...props
-  }: any) => (
-    <button type="button" data-testid="sidebar-trigger" {...props}>
+  SidebarTrigger: ({ onClose: _onClose, reverseIcon, ...props }: any) => (
+    <button
+      type="button"
+      data-testid="sidebar-trigger"
+      data-reverse-icon={reverseIcon ? 'true' : 'false'}
+      {...props}
+    >
       Trigger
     </button>
   ),
+}))
+
+// Controllable fast-access context (drives trigger visibility)
+const mockCloseModule = jest.fn()
+const mockFastAccessState: {
+  isOpen: boolean
+  activeModule: string | null
+  closeModule: jest.Mock
+} = {
+  isOpen: false,
+  activeModule: null,
+  closeModule: mockCloseModule,
+}
+jest.mock('@/features/mails/components/sidebars/fast-access/context', () => ({
+  FastAccessProvider: ({ children }: any) => <>{children}</>,
+  useFastAccessRequired: () => mockFastAccessState,
 }))
 jest.mock('@/features/mails/components/sidebars/fast-access/content', () => {
   return function MockFastAccessContent({ name }: any) {
@@ -134,12 +151,30 @@ describe('Mail Folder Layout', () => {
     expect(contentDiv).toHaveClass('w-full', 'overflow-hidden', 'p-1')
   })
 
-  it('should show SidebarTrigger on desktop', () => {
+  it('should show SidebarTrigger on desktop when a module is active', () => {
     ;(useIsMobileModule.useIsMobile as unknown as jest.Mock).mockReturnValue(
       false
     )
+    mockFastAccessState.activeModule = 'calendar'
     render(<Layout classic={mockClassic}>{mockChildren}</Layout>)
-    expect(screen.getByTestId('sidebar-trigger')).toBeInTheDocument()
+    const trigger = screen.getByTestId('sidebar-trigger')
+    expect(trigger).toBeInTheDocument()
+    // right sidebar arrows must always be reversed (correct direction)
+    expect(trigger).toHaveAttribute('data-reverse-icon', 'true')
+    mockFastAccessState.activeModule = null
+  })
+
+  it('should hide SidebarTrigger when no fast-access module is active', () => {
+    ;(useIsMobileModule.useIsMobile as unknown as jest.Mock).mockReturnValue(
+      false
+    )
+    mockFastAccessState.activeModule = null
+    const { container } = render(
+      <Layout classic={mockClassic}>{mockChildren}</Layout>
+    )
+    // no module selected → the trigger would toggle nothing → hidden
+    const trigger = container.querySelector('[data-testid="sidebar-trigger"]')
+    expect(trigger).not.toBeInTheDocument()
   })
 
   it('should hide SidebarTrigger on mobile', () => {
