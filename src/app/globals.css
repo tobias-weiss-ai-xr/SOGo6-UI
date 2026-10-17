@@ -613,36 +613,16 @@ input:disabled:focus-visible,
   }
 }
 
-/* Minimum touch target sizes for mobile */
-/* WCAG 2.1: 2.5.5 Target Size (Level AAA) */
-button,
-input[type="button"],
-input[type="submit"],
-input[type="reset"],
-[role="button"],
-[role="link"] {
+/* Opt-in touch target size (WCAG 2.1: 2.5.5 Target Size, Level AAA = 44px).
+   NOT applied globally: the old blanket per-button min-size floor inflated
+   unsized icon buttons (dialog/sheet close X — off-center icon, asymmetric
+   hover ring), forced Radix Checkbox/Radio/Switch to 44px, and the old
+   sibling-spacing rule double-spaced gap-based toolbars.
+   Apply .touch-target deliberately to standalone primary CTAs; adjacent
+   targets are spaced via layout gaps (satisfies WCAG 2.5.8 AA). */
+@utility touch-target {
   min-height: 44px;
   min-width: 44px;
-}
-
-/* Radix toggle controls render as <button role="checkbox|radio|switch">,
-   so the floor above blew them up to 44x44 regardless of their Tailwind
-   size classes (min-* beats width/height) — giant checkboxes everywhere.
-   Exempt them: visual size comes from the component's size classes; the
-   hit area is provided by wrapping buttons (e.g. the 32px mail-list
-   selector) instead of inflating the control itself. */
-button[role="checkbox"],
-button[role="radio"],
-button[role="switch"] {
-  min-height: 0;
-  min-width: 0;
-}
-
-/* Ensure touch targets have enough spacing */
-button + button,
-input + input,
-[role="button"] + [role="button"] {
-  margin: 4px;
 }
 
 /* ─── SOGo 5 Classic extras ────────────────────────────────────────────
