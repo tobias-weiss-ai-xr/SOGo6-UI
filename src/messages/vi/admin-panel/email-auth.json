@@ -1,0 +1,198 @@
+{
+  "AP_EMAIL_AUTH": {
+    "title": {
+      "string": "Xác thực Email"
+    },
+    "description": {
+      "string": "Cấu hình DKIM, DMARC và SPF để bảo vệ các miền của bạn khỏi việc giả mạo và cải thiện khả năng gửi thư."
+    },
+    "domains": {
+      "title": {
+        "string": "Các miền"
+      },
+      "add": {
+        "string": "Thêm miền"
+      },
+      "name": {
+        "string": "Tên miền"
+      },
+      "namePlaceholder": {
+        "string": "example.org"
+      },
+      "description": {
+        "string": "Mô tả"
+      },
+      "empty": {
+        "string": "Chưa cấu hình miền nào. Thêm miền đầu tiên của bạn để bắt đầu."
+      },
+      "added": {
+        "string": "Đã thêm miền"
+      },
+      "addFailed": {
+        "string": "Thêm miền thất bại"
+      },
+      "delete": {
+        "string": "Xóa"
+      },
+      "deleted": {
+        "string": "Đã xóa miền"
+      },
+      "deleteFailed": {
+        "string": "Xóa miền thất bại"
+      },
+      "validateAll": {
+        "string": "Xác thực tất cả"
+      },
+      "validated": {
+        "string": "Xác thực hoàn tất"
+      }
+    },
+    "status": {
+      "ok": {
+        "string": "OK"
+      },
+      "warning": {
+        "string": "Cảnh báo"
+      },
+      "error": {
+        "string": "Lỗi"
+      },
+      "none": {
+        "string": "Chưa cấu hình"
+      },
+      "overall": {
+        "string": "Tổng quan"
+      },
+      "dkim": {
+        "string": "DKIM"
+      },
+      "dmarc": {
+        "string": "DMARC"
+      },
+      "spf": {
+        "string": "SPF"
+      }
+    },
+    "dkim": {
+      "title": {
+        "string": "DKIM"
+      },
+      "generateKey": {
+        "string": "Tạo cặp khóa"
+      },
+      "selector": {
+        "string": "Bộ chọn"
+      },
+      "keyLength": {
+        "string": "Độ dài khóa"
+      },
+      "configure": {
+        "string": "Lưu cấu hình DKIM"
+      },
+      "rotate": {
+        "string": "Xoay khóa"
+      },
+      "validate": {
+        "string": "Xác thực DNS"
+      },
+      "publicKey": {
+        "string": "Khóa công khai"
+      },
+      "dnsRecord": {
+        "string": "Bản ghi DNS"
+      },
+      "generated": {
+        "string": "Đã tạo cặp khóa"
+      },
+      "saved": {
+        "string": "Đã lưu cấu hình DKIM"
+      },
+      "rotated": {
+        "string": "Khóa đã được xoay - vui lòng cập nhật bản ghi DNS của bạn"
+      },
+      "validation": {
+        "string": "Kết quả xác thực"
+      }
+    },
+    "dmarc": {
+      "title": {
+        "string": "DMARC"
+      },
+      "policy": {
+        "string": "Chính sách"
+      },
+      "pct": {
+        "string": "Phần trăm"
+      },
+      "reportEmail": {
+        "string": "Email báo cáo tổng hợp"
+      },
+      "configure": {
+        "string": "Lưu chính sách DMARC"
+      },
+      "validate": {
+        "string": "Xác thực DNS"
+      },
+      "saved": {
+        "string": "Đã lưu chính sách DMARC"
+      }
+    },
+    "spf": {
+      "title": {
+        "string": "SPF"
+      },
+      "includes": {
+        "string": "Bao gồm các miền"
+      },
+      "ip4": {
+        "string": "Địa chỉ IPv4"
+      },
+      "allQualifier": {
+        "string": "Chính sách bắt tất"
+      },
+      "configure": {
+        "string": "Lưu bản ghi SPF"
+      },
+      "validate": {
+        "string": "Xác thực DNS"
+      },
+      "saved": {
+        "string": "Đã lưu bản ghi SPF"
+      }
+    },
+    "test": {
+      "title": {
+        "string": "Kiểm tra"
+      },
+      "from": {
+        "string": "Địa chỉ gửi"
+      },
+      "run": {
+        "string": "Chạy kiểm tra"
+      },
+      "result": {
+        "string": "Kết quả"
+      },
+      "sent": {
+        "string": "Đã gửi"
+      },
+      "failed": {
+        "string": "Thất bại"
+      }
+    },
+    "common": {
+      "loading": {
+        "string": "Đang tải…"
+      },
+      "copy": {
+        "string": "Sao chép"
+      },
+      "copied": {
+        "string": "Đã sao chép"
+      },
+      "error": {
+        "string": "Lỗi"
+      }
+    }
+  }
+}

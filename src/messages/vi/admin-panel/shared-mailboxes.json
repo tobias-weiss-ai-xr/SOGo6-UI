@@ -1,0 +1,464 @@
+{
+  "AP_SHARED_MAILBOXES": {
+    "title": {
+      "string": "Hộp thư chia sẻ",
+      "context": "Page title for shared mailboxes administration"
+    },
+    "description": {
+      "string": "Quản lý hộp thư nhóm/chia sẻ (ví dụ: support@, info@)",
+      "context": "Page description"
+    },
+    "createMailbox": {
+      "string": "Tạo hộp thư chia sẻ",
+      "context": "Button to create a new shared mailbox"
+    },
+    "createSuccess": {
+      "string": "Tạo hộp thư chia sẻ thành công",
+      "context": "Success message after creating a shared mailbox"
+    },
+    "createDescription": {
+      "string": "Tạo một hộp thư chia sẻ mới cho nhóm của bạn.",
+      "context": "Description for create dialog"
+    },
+    "searchPlaceholder": {
+      "string": "Tìm kiếm hộp thư chia sẻ...",
+      "context": "Placeholder for search input"
+    },
+    "noMailboxes": {
+      "string": "Chưa có hộp thư chia sẻ nào",
+      "context": "Message when no shared mailboxes exist"
+    },
+    "name": {
+      "string": "Tên",
+      "context": "Label for mailbox name"
+    },
+    "email": {
+      "string": "Email",
+      "context": "Label for mailbox email"
+    },
+    "members": {
+      "string": "Thành viên",
+      "context": "Label for member count"
+    },
+    "status": {
+      "string": "Trạng thái",
+      "context": "Label for mailbox status"
+    },
+    "active": {
+      "string": "Hoạt động",
+      "context": "Status badge for active mailbox"
+    },
+    "inactive": {
+      "string": "Không hoạt động",
+      "context": "Status badge for inactive mailbox"
+    },
+    "createdAt": {
+      "string": "Ngày tạo",
+      "context": "Label for creation date"
+    },
+    "actions": {
+      "string": "Hành động",
+      "context": "Label for actions column"
+    },
+    "edit": {
+      "string": "Chỉnh sửa",
+      "context": "Menu item to edit a mailbox"
+    },
+    "manageMembers": {
+      "string": "Quản lý thành viên",
+      "context": "Menu item to manage mailbox members"
+    },
+    "viewDetails": {
+      "string": "Chi tiết",
+      "context": "Menu item to view mailbox details (analytics, notes, assignments)"
+    },
+    "delete": {
+      "string": "Xóa",
+      "context": "Menu item to delete a mailbox"
+    },
+    "editMailbox": {
+      "string": "Chỉnh sửa hộp thư chia sẻ",
+      "context": "Title for edit dialog"
+    },
+    "editDescription": {
+      "string": "Cập nhật cài đặt cho \"{name}\".",
+      "context": "Description for edit dialog"
+    },
+    "editSuccess": {
+      "string": "Cập nhật hộp thư chia sẻ thành công",
+      "context": "Success message after updating a shared mailbox"
+    },
+    "deleteMailbox": {
+      "string": "Xóa hộp thư chia sẻ",
+      "context": "Title for delete confirmation dialog"
+    },
+    "deleteConfirm": {
+      "string": "Bạn có chắc chắn muốn xóa \"{name}\"?",
+      "context": "Confirmation message for deletion"
+    },
+    "deleteWarning": {
+      "string": "Hành động này không thể hoàn tác. Tất cả ghi chú và phân công cho hộp thư này sẽ bị xóa.",
+      "context": "Warning message for deletion"
+    },
+    "deleteSuccess": {
+      "string": "Xóa hộp thư chia sẻ thành công",
+      "context": "Success message after deleting a shared mailbox"
+    },
+    "descriptionPlaceholder": {
+      "string": "Nhập mô tả cho hộp thư chia sẻ này",
+      "context": "Placeholder for description input"
+    },
+    "initialMembers": {
+      "string": "Thành viên ban đầu",
+      "context": "Label for initial members selection"
+    },
+    "cancel": {
+      "string": "Hủy",
+      "context": "Button to cancel an action"
+    },
+    "create": {
+      "string": "Tạo",
+      "context": "Button to create a mailbox"
+    },
+    "creating": {
+      "string": "Đang tạo...",
+      "context": "Button text when creating"
+    },
+    "update": {
+      "string": "Cập nhật",
+      "context": "Button to update a mailbox"
+    },
+    "updating": {
+      "string": "Đang cập nhật...",
+      "context": "Button text when updating"
+    },
+    "deleting": {
+      "string": "Đang xóa...",
+      "context": "Button text when deleting"
+    },
+    "membersDescription": {
+      "string": "Thêm hoặc xóa thành viên cho \"{name}\".",
+      "context": "Description for members dialog"
+    },
+    "currentMembers": {
+      "string": "Thành viên hiện tại",
+      "context": "Label for current members section"
+    },
+    "noMembers": {
+      "string": "Chưa có thành viên nào",
+      "context": "Message when no members exist"
+    },
+    "addMembers": {
+      "string": "Thêm thành viên",
+      "context": "Label for add members section"
+    },
+    "searchUsers": {
+      "string": "Tìm kiếm người dùng...",
+      "context": "Placeholder for user search"
+    },
+    "close": {
+      "string": "Đóng",
+      "context": "Button to close dialog"
+    },
+    "memberAddSuccess": {
+      "string": "Đã thêm \"{name}\" vào hộp thư chia sẻ",
+      "context": "Success message after adding a member"
+    },
+    "memberRemoveSuccess": {
+      "string": "Xóa thành viên thành công",
+      "context": "Success message after removing a member"
+    },
+    "role": {
+      "string": "Vai trò",
+      "context": "Label for member role"
+    },
+    "roleAdmin": {
+      "string": "Quản trị viên",
+      "context": "Role name for admin"
+    },
+    "roleModerator": {
+      "string": "Điều hành viên",
+      "context": "Role name for moderator"
+    },
+    "roleMember": {
+      "string": "Thành viên",
+      "context": "Role name for member"
+    },
+    "roleUpdateSuccess": {
+      "string": "Đã cập nhật vai trò thành viên",
+      "context": "Success message after updating member role"
+    },
+    "roleUpdateFailed": {
+      "string": "Cập nhật vai trò thành viên thất bại",
+      "context": "Error message when role update fails"
+    },
+    "quota": {
+      "string": "Hạn mức",
+      "context": "Section label for quota settings"
+    },
+    "quotaEnabled": {
+      "string": "Bật hạn mức",
+      "context": "Label for quota enabled switch"
+    },
+    "quotaMaxSize": {
+      "string": "Dung lượng tối đa (MB)",
+      "context": "Label for max size input"
+    },
+    "quotaMaxEmails": {
+      "string": "Số email tối đa",
+      "context": "Label for max emails input"
+    },
+    "autoRespond": {
+      "string": "Tự động phản hồi",
+      "context": "Section label for auto-responder settings"
+    },
+    "autoRespondEnabled": {
+      "string": "Bật tự động phản hồi",
+      "context": "Label for auto-responder enabled switch"
+    },
+    "autoRespondSubject": {
+      "string": "Tiêu đề",
+      "context": "Label for auto-responder subject"
+    },
+    "autoRespondMessage": {
+      "string": "Nội dung",
+      "context": "Label for auto-responder message"
+    },
+    "forwarding": {
+      "string": "Chuyển tiếp",
+      "context": "Section label for forwarding settings"
+    },
+    "forwardTo": {
+      "string": "Chuyển tiếp đến (cách nhau bởi dấu phẩy)",
+      "context": "Label for forward to input"
+    },
+    "forwardKeepCopy": {
+      "string": "Giữ bản sao trong hộp thư chia sẻ",
+      "context": "Label for keep copy switch"
+    },
+    "signature": {
+      "string": "Chữ ký",
+      "context": "Section label for signature settings"
+    },
+    "signatureEnabled": {
+      "string": "Bật chữ ký",
+      "context": "Label for signature enabled switch"
+    },
+    "signatureHtml": {
+      "string": "Chữ ký HTML",
+      "context": "Label for HTML signature textarea"
+    },
+    "signaturePlain": {
+      "string": "Chữ ký dạng văn bản",
+      "context": "Label for plain text signature textarea"
+    },
+    "tabAnalytics": {
+      "string": "Thống kê",
+      "context": "Tab label for analytics"
+    },
+    "tabNotes": {
+      "string": "Ghi chú",
+      "context": "Tab label for notes"
+    },
+    "tabAssignments": {
+      "string": "Phân công",
+      "context": "Tab label for assignments"
+    },
+    "tabMembers": {
+      "string": "Thành viên",
+      "context": "Tab label for members"
+    },
+    "detailsDescription": {
+      "string": "Chi tiết cho \"{name}\"",
+      "context": "Description for details dialog"
+    },
+    "analyticsNotes": {
+      "string": "Ghi chú",
+      "context": "Analytics stat label"
+    },
+    "analyticsPublicNotes": {
+      "string": "Công khai",
+      "context": "Analytics stat label"
+    },
+    "analyticsPrivateNotes": {
+      "string": "Riêng tư",
+      "context": "Analytics stat label"
+    },
+    "analyticsAssignments": {
+      "string": "Phân công",
+      "context": "Analytics stat label"
+    },
+    "analyticsPending": {
+      "string": " đang chờ",
+      "context": "Analytics stat label"
+    },
+    "analyticsAccepted": {
+      "string": "Đã chấp nhận",
+      "context": "Analytics stat label"
+    },
+    "analyticsCompleted": {
+      "string": "Đã hoàn thành",
+      "context": "Analytics stat label"
+    },
+    "analyticsCancelled": {
+      "string": "Đã hủy",
+      "context": "Analytics stat label"
+    },
+    "analyticsCompletionRate": {
+      "string": "Tỷ lệ hoàn thành",
+      "context": "Analytics stat label"
+    },
+    "analyticsLast7d": {
+      "string": "7 ngày gần đây",
+      "context": "Analytics stat label"
+    },
+    "analyticsLast30d": {
+      "string": "30 ngày gần đây",
+      "context": "Analytics stat label"
+    },
+    "noNotes": {
+      "string": "Chưa có ghi chú nào",
+      "context": "Message when no notes exist"
+    },
+    "addNote": {
+      "string": "Thêm ghi chú",
+      "context": "Button to add a note"
+    },
+    "noteContent": {
+      "string": "Nội dung ghi chú",
+      "context": "Label for note content input"
+    },
+    "notePlaceholder": {
+      "string": "Viết ghi chú nội bộ...",
+      "context": "Placeholder for note content"
+    },
+    "notePrivate": {
+      "string": "Riêng tư (chỉ tác giả nhìn thấy)",
+      "context": "Label for private note switch"
+    },
+    "noteAdded": {
+      "string": "Đã thêm ghi chú",
+      "context": "Success message after adding a note"
+    },
+    "noteDeleteSuccess": {
+      "string": "Đã xóa ghi chú",
+      "context": "Success message after deleting a note"
+    },
+    "noteDeleteFailed": {
+      "string": "Xóa ghi chú thất bại",
+      "context": "Error message when note deletion fails"
+    },
+    "noAssignments": {
+      "string": "Chưa có phân công nào",
+      "context": "Message when no assignments exist"
+    },
+    "addAssignment": {
+      "string": "Thêm phân công",
+      "context": "Button to add an assignment"
+    },
+    "assignmentEmail": {
+      "string": "ID Email",
+      "context": "Label for assignment email id"
+    },
+    "assignmentEmailPlaceholder": {
+      "string": "ID Email hoặc ID tin nhắn",
+      "context": "Placeholder for assignment email id"
+    },
+    "assignmentReason": {
+      "string": "Lý do",
+      "context": "Label for assignment reason"
+    },
+    "assignmentReasonPlaceholder": {
+      "string": "Tại sao điều này được phân công?",
+      "context": "Placeholder for assignment reason"
+    },
+    "assignedTo": {
+      "string": "Được phân công cho",
+      "context": "Label for assignee"
+    },
+    "assignedBy": {
+      "string": "Được phân công bởi",
+      "context": "Label for assigner"
+    },
+    "assignmentStatus": {
+      "string": "Trạng thái",
+      "context": "Label for assignment status"
+    },
+    "statusPending": {
+      "string": "Đang chờ",
+      "context": "Assignment status"
+    },
+    "statusAccepted": {
+      "string": "Đã chấp nhận",
+      "context": "Assignment status"
+    },
+    "statusCompleted": {
+      "string": "Đã hoàn thành",
+      "context": "Assignment status"
+    },
+    "statusCancelled": {
+      "string": "Đã hủy",
+      "context": "Assignment status"
+    },
+    "assignmentAdded": {
+      "string": "Đã tạo phân công",
+      "context": "Success message after creating an assignment"
+    },
+    "assignmentUpdateSuccess": {
+      "string": "Đã cập nhật phân công",
+      "context": "Success message after updating an assignment"
+    },
+    "assignmentUpdateFailed": {
+      "string": "Cập nhật phân công thất bại",
+      "context": "Error message when assignment update fails"
+    },
+    "assignmentDeleteSuccess": {
+      "string": "Đã xóa phân công",
+      "context": "Success message after deleting an assignment"
+    },
+    "assignmentDeleteFailed": {
+      "string": "Xóa phân công thất bại",
+      "context": "Error message when assignment deletion fails"
+    },
+    "error": {
+      "requiredFields": {
+        "string": "Vui lòng điền vào tất cả các trường bắt buộc",
+        "context": "Error message for missing required fields"
+      },
+      "createFailed": {
+        "string": "Tạo hộp thư chia sẻ thất bại",
+        "context": "Error message when create fails"
+      },
+      "updateFailed": {
+        "string": "Cập nhật hộp thư chia sẻ thất bại",
+        "context": "Error message when update fails"
+      },
+      "deleteFailed": {
+        "string": "Xóa hộp thư chia sẻ thất bại",
+        "context": "Error message when delete fails"
+      },
+      "memberAddFailed": {
+        "string": "Thêm thành viên thất bại",
+        "context": "Error message when adding member fails"
+      },
+      "memberRemoveFailed": {
+        "string": "Xóa thành viên thất bại",
+        "context": "Error message when removing member fails"
+      },
+      "noteAddFailed": {
+        "string": "Thêm ghi chú thất bại",
+        "context": "Error message when adding note fails"
+      },
+      "assignmentCreateFailed": {
+        "string": "Tạo phân công thất bại",
+        "context": "Error message when creating assignment fails"
+      }
+    },
+    "notes": {
+      "string": "Ghi chú"
+    },
+    "assignments": {
+      "string": "Phân công"
+    }
+  }
+}
