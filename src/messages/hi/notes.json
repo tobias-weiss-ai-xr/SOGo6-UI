@@ -1,48 +1,18 @@
 {
   "NOTES": {
-    "root": {
-      "title": {
-        "string": "नोट्स"
-      },
-      "new_note": {
-        "string": "नई नोट"
-      },
-      "save": {
-        "string": "सहेजें"
-      },
-      "cancel": {
-        "string": "रद्द करें"
-      },
-      "edit": {
-        "string": "संपादित करें"
-      },
-      "delete": {
-        "string": "हटाएं"
-      },
-      "confirm_delete": {
-        "string": "नोट हटाएं"
-      },
-      "confirm_delete_message": {
-        "string": "क्या आप वाकई इस नोट को हटाना चाहते हैं? इस क्रिया को पूर्ववत नहीं किया जा सकता।"
-      },
-      "loading": {
-        "string": "लोड हो रहा है..."
-      },
-      "error": {
-        "string": "नोट्स लोड करते समय एक त्रुटि हुई।"
-      },
-      "no_notes": {
-        "string": "कोई नोट नहीं मिला।"
-      },
-      "created_at": {
-        "string": "बनाया गया"
-      },
-      "placeholder_title": {
-        "string": "नोट शीर्षक दर्ज करें"
-      },
-      "placeholder_content": {
-        "string": "अपनी नोट यहां टाइप करना शुरू करें..."
-      }
-    }
+    "title": "नोट्स",
+    "new_note": "नया नोट",
+    "save": "सहेजें",
+    "cancel": "रद्द करें",
+    "edit": "संपादित करें",
+    "delete": "हटाएं",
+    "confirm_delete": "नोट हटाएं",
+    "confirm_delete_message": "क्या आप वाकई इस नोट को हटाना चाहते हैं? यह कार्य पूर्ववत नहीं किया जा सकता।",
+    "loading": "लोड हो रहा है...",
+    "error": "नोट्स लोड करते समय एक त्रुटि हुई।",
+    "no_notes": "कोई नोट नहीं मिला।",
+    "created_at": "बनाया गया: {date}",
+    "placeholder_title": "नोट शीर्षक दर्ज करें",
+    "placeholder_content": "अपना नोट यहां टाइप करना शुरू करें..."
   }
 }
