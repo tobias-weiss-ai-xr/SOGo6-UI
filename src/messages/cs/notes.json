@@ -1,48 +1,18 @@
 {
   "NOTES": {
-    "root": {
-      "title": {
-        "string": "Poznámky"
-      },
-      "new_note": {
-        "string": "Nová poznámka"
-      },
-      "save": {
-        "string": "Uložit"
-      },
-      "cancel": {
-        "string": "Zrušit"
-      },
-      "edit": {
-        "string": "Upravit"
-      },
-      "delete": {
-        "string": "Smazat"
-      },
-      "confirm_delete": {
-        "string": "Smazat poznámku"
-      },
-      "confirm_delete_message": {
-        "string": "Jste si jistý, že chcete smazat tuto poznámku? Tuto akci nelze vrátit zpět."
-      },
-      "loading": {
-        "string": "Načítání..."
-      },
-      "error": {
-        "string": "Při načítání poznámek došlo k chybě."
-      },
-      "no_notes": {
-        "string": " Nebyl nalezen žádny poznámky."
-      },
-      "created_at": {
-        "string": "Vytvořeno"
-      },
-      "placeholder_title": {
-        "string": "Zadejte název poznámky"
-      },
-      "placeholder_content": {
-        "string": "Začněte psát svou poznámku zde..."
-      }
-    }
+    "title": "Poznámky",
+    "new_note": "Nová poznámka",
+    "save": "Uložit",
+    "cancel": "Zrušit",
+    "edit": "Upravit",
+    "delete": "Smazat",
+    "confirm_delete": "Smazat poznámku",
+    "confirm_delete_message": "Jste si jistý, že chcete smazat tuto poznámku? Tato akce se nedá vrátit zpět.",
+    "loading": "Načítání...",
+    "error": "Při načítání poznámek došlo k chybě.",
+    "no_notes": "Žádné poznámky nenalezeny.",
+    "created_at": "Vytvořeno: {date}",
+    "placeholder_title": "Zadejte název poznámky",
+    "placeholder_content": "Začněte psát svou poznámku zde..."
   }
 }

@@ -1,48 +1,18 @@
 {
   "NOTES": {
-    "root": {
-      "title": {
-        "string": "Notas"
-      },
-      "new_note": {
-        "string": "Nova nota"
-      },
-      "save": {
-        "string": "Salvar"
-      },
-      "cancel": {
-        "string": "Cancelar"
-      },
-      "edit": {
-        "string": "Editar"
-      },
-      "delete": {
-        "string": "Excluir"
-      },
-      "confirm_delete": {
-        "string": "Excluir nota"
-      },
-      "confirm_delete_message": {
-        "string": "Tem certeza de que deseja excluir esta nota? Esta ação não pode ser desfeita."
-      },
-      "loading": {
-        "string": "Carregando..."
-      },
-      "error": {
-        "string": "Ocorreu um erro ao carregar as notas."
-      },
-      "no_notes": {
-        "string": "Nenhuma nota encontrada."
-      },
-      "created_at": {
-        "string": "Criado em"
-      },
-      "placeholder_title": {
-        "string": "Digite o título da nota"
-      },
-      "placeholder_content": {
-        "string": "Comece a digitar sua nota aqui..."
-      }
-    }
+    "title": "Notas",
+    "new_note": "Nova nota",
+    "save": "Salvar",
+    "cancel": "Cancelar",
+    "edit": "Editar",
+    "delete": "Excluir",
+    "confirm_delete": "Excluir nota",
+    "confirm_delete_message": "Tem a certeza de que pretende eliminar esta nota? Esta ação não pode ser desfeita.",
+    "loading": "A carregar...",
+    "error": "Ocorreu um erro ao carregar as notas.",
+    "no_notes": "Nenhuma nota encontrada.",
+    "created_at": "Criado em: {date}",
+    "placeholder_title": "Introduza o título da nota",
+    "placeholder_content": "Comece a escrever a sua nota aqui..."
   }
 }

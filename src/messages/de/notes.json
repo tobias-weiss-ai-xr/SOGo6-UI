@@ -1,48 +1,18 @@
 {
   "NOTES": {
-    "root": {
-      "title": {
-        "string": "Notizen"
-      },
-      "new_note": {
-        "string": "Neue Notiz"
-      },
-      "save": {
-        "string": "Speichern"
-      },
-      "cancel": {
-        "string": "Abbrechen"
-      },
-      "edit": {
-        "string": "Bearbeiten"
-      },
-      "delete": {
-        "string": "Löschen"
-      },
-      "confirm_delete": {
-        "string": "Notiz löschen"
-      },
-      "confirm_delete_message": {
-        "string": "Sind Sie sicher, dass Sie diese Notiz löschen möchten? Diese Aktion kann nicht rückgängig gemacht werden."
-      },
-      "loading": {
-        "string": "Wird geladen..."
-      },
-      "error": {
-        "string": "Beim Laden der Notizen ist ein Fehler aufgetreten."
-      },
-      "no_notes": {
-        "string": "Keine Notizen gefunden."
-      },
-      "created_at": {
-        "string": "Erstellt am"
-      },
-      "placeholder_title": {
-        "string": "Notizen-Titel eingeben"
-      },
-      "placeholder_content": {
-        "string": "Beginnen Sie hier mit dem Schreiben Ihrer Notiz..."
-      }
-    }
+    "title": "Notizen",
+    "new_note": "Neue Notiz",
+    "save": "Speichern",
+    "cancel": "Abbrechen",
+    "edit": "Bearbeiten",
+    "delete": "Löschen",
+    "confirm_delete": "Notiz löschen",
+    "confirm_delete_message": "Sind Sie sicher, dass Sie diese Notiz löschen möchten? Dieser Vorgang kann nicht rückgängig gemacht werden.",
+    "loading": "Wird geladen...",
+    "error": "Beim Laden der Notizen ist ein Fehler aufgetreten.",
+    "no_notes": "Keine Notizen gefunden.",
+    "created_at": "Erstellt: {date}",
+    "placeholder_title": "Notiztitel eingeben",
+    "placeholder_content": "Beginnen Sie hier mit dem Eingeben Ihrer Notiz..."
   }
 }

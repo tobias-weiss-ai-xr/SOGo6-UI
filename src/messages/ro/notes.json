@@ -1,48 +1,18 @@
 {
   "NOTES": {
-    "root": {
-      "title": {
-        "string": "Notițe"
-      },
-      "new_note": {
-        "string": "Notă nouă"
-      },
-      "save": {
-        "string": "Salvează"
-      },
-      "cancel": {
-        "string": "Anulează"
-      },
-      "edit": {
-        "string": "Editează"
-      },
-      "delete": {
-        "string": "Șterge"
-      },
-      "confirm_delete": {
-        "string": "Șterge notița"
-      },
-      "confirm_delete_message": {
-        "string": "Sunteți sigur că doriți să ștergeți această notiță? Această acțiune nu poate fi anulată."
-      },
-      "loading": {
-        "string": "Se înarcă..."
-      },
-      "error": {
-        "string": "A apărut o eroare la încărcarea notițelor."
-      },
-      "no_notes": {
-        "string": "Nicio notiță găsită."
-      },
-      "created_at": {
-        "string": "Creat la"
-      },
-      "placeholder_title": {
-        "string": "Introdu titlul notiței"
-      },
-      "placeholder_content": {
-        "string": "Îcepeți să tastați notița aici..."
-      }
-    }
+    "title": "Note",
+    "new_note": "Nota nouă",
+    "save": "Salvează",
+    "cancel": "Anulează",
+    "edit": "Editează",
+    "delete": "Șterge",
+    "confirm_delete": "Șterge nota",
+    "confirm_delete_message": "Sunteți sigur că doriți să ștergeți această notă? Această acțiune nu poate fi anulată.",
+    "loading": "Se încarcă...",
+    "error": "A apărut o eroare la încărcarea notelor.",
+    "no_notes": "Nicio notă găsită.",
+    "created_at": "Creat: {date}",
+    "placeholder_title": "Introduceți titlul notei",
+    "placeholder_content": "Îcepeți să scrieți nota dvs. aici..."
   }
 }

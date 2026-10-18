@@ -1,48 +1,18 @@
 {
   "NOTES": {
-    "root": {
-      "title": {
-        "string": "Notatki"
-      },
-      "new_note": {
-        "string": "Nowa notatka"
-      },
-      "save": {
-        "string": "Zapisz"
-      },
-      "cancel": {
-        "string": "Anuluj"
-      },
-      "edit": {
-        "string": "Edytuj"
-      },
-      "delete": {
-        "string": "Usuń"
-      },
-      "confirm_delete": {
-        "string": "Usuń notatkę"
-      },
-      "confirm_delete_message": {
-        "string": "Czy na pewno chcesz usunąć tę notatkę? Tej akcji nie można cofnąć."
-      },
-      "loading": {
-        "string": "Ładowanie..."
-      },
-      "error": {
-        "string": "Wystąpił błąd podczas ładowania notatek."
-      },
-      "no_notes": {
-        "string": "Nie znaleziono notatek."
-      },
-      "created_at": {
-        "string": "Utworzono"
-      },
-      "placeholder_title": {
-        "string": "Wprowadź tytuł notatki"
-      },
-      "placeholder_content": {
-        "string": "Rozpocznij pisać swoją notatkę tutaj..."
-      }
-    }
+    "title": "Notatki",
+    "new_note": "Nowa notatka",
+    "save": "Zapisz",
+    "cancel": "Anuluj",
+    "edit": "Edytuj",
+    "delete": "Usuń",
+    "confirm_delete": "Usuń notatkę",
+    "confirm_delete_message": "Czy jest Pan/Pani pewien/pewna, że chce usunąć tę notatkę? Tej akcji nie można cofnąć.",
+    "loading": "Ładowanie...",
+    "error": "Wystąpił błąd podczas ładowania notatek.",
+    "no_notes": "Nie znaleziono notatek.",
+    "created_at": "Utworzono: {date}",
+    "placeholder_title": "Wpisz tytuł notatki",
+    "placeholder_content": "Rozpocznij pisanie swojej notatki tutaj..."
   }
 }

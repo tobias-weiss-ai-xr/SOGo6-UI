@@ -1,48 +1,18 @@
 {
   "NOTES": {
-    "root": {
-      "title": {
-        "string": "Ghi chú"
-      },
-      "new_note": {
-        "string": "Ghi chú mới"
-      },
-      "save": {
-        "string": "Lưu"
-      },
-      "cancel": {
-        "string": "Hủy"
-      },
-      "edit": {
-        "string": "Chỉnh sửa"
-      },
-      "delete": {
-        "string": "Xóa"
-      },
-      "confirm_delete": {
-        "string": "Xóa ghi chú"
-      },
-      "confirm_delete_message": {
-        "string": "Bạn có chắc chắn muốn xóa ghi chú này không? Hành động này không thể hoàn tác."
-      },
-      "loading": {
-        "string": "Đang tải..."
-      },
-      "error": {
-        "string": "Đã xảy ra lỗi khi tải ghi chú."
-      },
-      "no_notes": {
-        "string": "Không tìm thấy ghi chú."
-      },
-      "created_at": {
-        "string": "Được tạo ra"
-      },
-      "placeholder_title": {
-        "string": "Nhập tiêu đề ghi chú"
-      },
-      "placeholder_content": {
-        "string": "Bắt đầu gõ ghi chú của bạn ở đây..."
-      }
-    }
+    "title": "Ghi chú",
+    "new_note": "Ghi chú mới",
+    "save": "Lưu",
+    "cancel": "Hủy",
+    "edit": "Chỉnh sửa",
+    "delete": "Xóa",
+    "confirm_delete": "Xóa ghi chú",
+    "confirm_delete_message": "Bạn có chắc chắn muốn xóa ghi chú này không? Hành động này không thể hủy.",
+    "loading": "Đang tải...",
+    "error": "Đã xảy ra lỗi khi tải ghi chú.",
+    "no_notes": "Không tìm thấy ghi chú.",
+    "created_at": "Tạo: {date}",
+    "placeholder_title": "Nhập tiêu đề ghi chú",
+    "placeholder_content": "Bắt đầu nhập ghi chú của bạn ở đây..."
   }
 }

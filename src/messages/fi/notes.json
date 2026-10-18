@@ -1,48 +1,18 @@
 {
   "NOTES": {
-    "root": {
-      "title": {
-        "string": "Muistiinpanot"
-      },
-      "new_note": {
-        "string": "Uusi muistiinpano"
-      },
-      "save": {
-        "string": "Tallenna"
-      },
-      "cancel": {
-        "string": "Peruuta"
-      },
-      "edit": {
-        "string": "Muokkaa"
-      },
-      "delete": {
-        "string": "Poista"
-      },
-      "confirm_delete": {
-        "string": "Poista muistiinpano"
-      },
-      "confirm_delete_message": {
-        "string": "Oletko varma, että haluat poistaa tämän muistiinpanon? Tätä toimintoa ei voi peruuttaa."
-      },
-      "loading": {
-        "string": "Lataa..."
-      },
-      "error": {
-        "string": "Muistiinpanojen lataamisessa tapahtui virhe."
-      },
-      "no_notes": {
-        "string": "Muistiinpanoja ei löytynyt."
-      },
-      "created_at": {
-        "string": "Luotu"
-      },
-      "placeholder_title": {
-        "string": "Anna muistiinpanon otsikko"
-      },
-      "placeholder_content": {
-        "string": "Aloita muistiinpanosi kirjoittaminen tästä..."
-      }
-    }
+    "title": "Muistiinpanot",
+    "new_note": "Uusi muistiinpano",
+    "save": "Tallenna",
+    "cancel": "Peruuta",
+    "edit": "Muokkaa",
+    "delete": "Poista",
+    "confirm_delete": "Poista muistiinpano",
+    "confirm_delete_message": "Oletko varma, että haluat poistaa tämän muistiinpanon? Tämä toiminto ei ole kumottavissa.",
+    "loading": "Lataan...",
+    "error": "Muistiinpanojen latauksessa tapahtui virhe.",
+    "no_notes": "Muistiinpanoja ei löytynyt.",
+    "created_at": "Luotu: {date}",
+    "placeholder_title": "Anna muistiinpanon otsikko",
+    "placeholder_content": "Aloita muistiinpanosi kirjoittaminen tähän..."
   }
 }

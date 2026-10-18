@@ -1,48 +1,18 @@
 {
   "NOTES": {
-    "root": {
-      "title": {
-        "string": "Notlar"
-      },
-      "new_note": {
-        "string": "Yeni not"
-      },
-      "save": {
-        "string": "Kaydet"
-      },
-      "cancel": {
-        "string": "İptal"
-      },
-      "edit": {
-        "string": "Düzenle"
-      },
-      "delete": {
-        "string": "Sil"
-      },
-      "confirm_delete": {
-        "string": "Notu sil"
-      },
-      "confirm_delete_message": {
-        "string": "Bu notu silmek istediğinizden emin misiniz? Bu işlem geri alınamaz."
-      },
-      "loading": {
-        "string": "Yükleniyor..."
-      },
-      "error": {
-        "string": "Notlar yüklenirken bir hata oluştu."
-      },
-      "no_notes": {
-        "string": "Not bulunamadı."
-      },
-      "created_at": {
-        "string": "Oluşturma tarihi"
-      },
-      "placeholder_title": {
-        "string": "Not başlığını girin"
-      },
-      "placeholder_content": {
-        "string": "Notunuzu burada yazmaya başlayın..."
-      }
-    }
+    "title": "Notlar",
+    "new_note": "Yeni not",
+    "save": "Kaydet",
+    "cancel": "İptal",
+    "edit": "Düzenle",
+    "delete": "Sil",
+    "confirm_delete": "Notu sil",
+    "confirm_delete_message": "Bu notu silmek istediğinizden emin misiniz? Bu işlem geri alınamaz.",
+    "loading": "Yükleniyor...",
+    "error": "Notlar yüklenirken bir hata oluştu.",
+    "no_notes": "Not bulunamadı.",
+    "created_at": "Oluşturma: {date}",
+    "placeholder_title": "Not başlığını girin",
+    "placeholder_content": "Notunuzu burada yazmaya başlayın..."
   }
 }

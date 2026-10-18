@@ -1,48 +1,18 @@
 {
   "NOTES": {
-    "root": {
-      "title": {
-        "string": "笔记"
-      },
-      "new_note": {
-        "string": "新笔记"
-      },
-      "save": {
-        "string": "保存"
-      },
-      "cancel": {
-        "string": "取消"
-      },
-      "edit": {
-        "string": "编辑"
-      },
-      "delete": {
-        "string": "删除"
-      },
-      "confirm_delete": {
-        "string": "删除笔记"
-      },
-      "confirm_delete_message": {
-        "string": "您确定要删除这个笔记吗？此操作无法撤消。"
-      },
-      "loading": {
-        "string": "加载中..."
-      },
-      "error": {
-        "string": "加载笔记时发生错误。"
-      },
-      "no_notes": {
-        "string": "未找到笔记。"
-      },
-      "created_at": {
-        "string": "创建时间"
-      },
-      "placeholder_title": {
-        "string": "输入笔记标题"
-      },
-      "placeholder_content": {
-        "string": "在此处开始输入您的笔记..."
-      }
-    }
+    "title": "笔记",
+    "new_note": "新笔记",
+    "save": "保存",
+    "cancel": "取消",
+    "edit": "编辑",
+    "delete": "删除",
+    "confirm_delete": "删除笔记",
+    "confirm_delete_message": "您确定要删除这个笔记吗？此操作无法撤销。",
+    "loading": "加载中...",
+    "error": "加载笔记时发生错误。",
+    "no_notes": "未找到笔记。",
+    "created_at": "创建时间: {date}",
+    "placeholder_title": "输入笔记标题",
+    "placeholder_content": "开始在这里输入您的笔记..."
   }
 }

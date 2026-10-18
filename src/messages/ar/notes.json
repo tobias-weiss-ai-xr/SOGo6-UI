@@ -1,48 +1,18 @@
 {
   "NOTES": {
-    "root": {
-      "title": {
-        "string": "ملاحظات"
-      },
-      "new_note": {
-        "string": "ملاحظة جديدة"
-      },
-      "save": {
-        "string": "حفظ"
-      },
-      "cancel": {
-        "string": "إلغاء"
-      },
-      "edit": {
-        "string": "تعديل"
-      },
-      "delete": {
-        "string": "حذف"
-      },
-      "confirm_delete": {
-        "string": "حذف الملاحظة"
-      },
-      "confirm_delete_message": {
-        "string": "هل أنت متأكد من رغبتك في حذف هذه الملاحظة؟ لا يمكن التراجع عن هذا الإجراء."
-      },
-      "loading": {
-        "string": "جاري التحميل..."
-      },
-      "error": {
-        "string": "حدث خطأ أثناء تحميل الملاحظات."
-      },
-      "no_notes": {
-        "string": "لا توجد ملاحظات."
-      },
-      "created_at": {
-        "string": "تم إنشاءها في"
-      },
-      "placeholder_title": {
-        "string": "ادخل عنوان الملاحظة"
-      },
-      "placeholder_content": {
-        "string": "ابدأ بكتابة ملاحظتك هنا..."
-      }
-    }
+    "title": "ملاحظات",
+    "new_note": "ملاحظة جديدة",
+    "save": "حفظ",
+    "cancel": "إلغاء",
+    "edit": "تعديل",
+    "delete": "حذف",
+    "confirm_delete": "حذف الملاحظة",
+    "confirm_delete_message": "هل أنت متأكد من أنك تريد حذف هذه الملاحظة؟ لا يمكن التراجع عن هذا الإجراء.",
+    "loading": "جاري التحميل...",
+    "error": "حدث خطأ أثناء تحميل الملاحظات.",
+    "no_notes": "لا توجد ملاحظات.",
+    "created_at": "تم الإنشاء: {date}",
+    "placeholder_title": "ادخل عنوان الملاحظة",
+    "placeholder_content": "ابدأ بكتابة ملاحظتك هنا..."
   }
 }

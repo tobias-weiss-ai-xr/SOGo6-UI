@@ -1,48 +1,18 @@
 {
   "NOTES": {
-    "root": {
-      "title": {
-        "string": "Anteckningar"
-      },
-      "new_note": {
-        "string": "Ny anteckning"
-      },
-      "save": {
-        "string": "Spara"
-      },
-      "cancel": {
-        "string": "Avbryt"
-      },
-      "edit": {
-        "string": "Redigera"
-      },
-      "delete": {
-        "string": "Ta bort"
-      },
-      "confirm_delete": {
-        "string": "Ta bort anteckning"
-      },
-      "confirm_delete_message": {
-        "string": "Är du säker på att du vill ta bort denna anteckning? Denna åtgärd kan inte ångras."
-      },
-      "loading": {
-        "string": "Laddar..."
-      },
-      "error": {
-        "string": "Ett fel uppstod vid inläsning av anteckningar."
-      },
-      "no_notes": {
-        "string": "Inga anteckningar hittades."
-      },
-      "created_at": {
-        "string": "Skapad den"
-      },
-      "placeholder_title": {
-        "string": "Ange anteckningstitel"
-      },
-      "placeholder_content": {
-        "string": "Börja skriva din anteckning här..."
-      }
-    }
+    "title": "Anteckningar",
+    "new_note": "Ny anteckning",
+    "save": "Spara",
+    "cancel": "Avbryt",
+    "edit": "Redigera",
+    "delete": "Ta bort",
+    "confirm_delete": "Ta bort anteckning",
+    "confirm_delete_message": "Är du säker på att du vill ta bort denna anteckning? Denna åtgärd kan inte ångras.",
+    "loading": "Laddar...",
+    "error": "Ett fel uppstod vid inläsning av anteckningar.",
+    "no_notes": "Inga anteckningar hittades.",
+    "created_at": "Skapad: {date}",
+    "placeholder_title": "Ange anteckningstitel",
+    "placeholder_content": "Börja skriva din anteckning här..."
   }
 }
