@@ -1,93 +1,93 @@
 {
     "MAILS_LIST": {
-        "star": { "string": "Star" },
-        "unstar": { "string": "Unstar" },
+        "star": { "string": "Favoritar" },
+        "unstar": { "string": "Remover favorito" },
         "messages_number": {
-            "string": "{number, plural, one {# message} other {# messages}}",
+            "string": "{number, plural, one {# mensagem} other {# mensagens}}",
             "context": "Displays the number of messages in an mail folder."
         },
         "sort": {
             "date": {
                 "ascending": {
-                    "string": "Newest first"
+                    "string": "Mais recentes primeiro"
                 },
                 "descending": {
-                    "string": "Older first"
+                    "string": "Mais antigos primeiro"
                 }
             },
             "size": {
                 "ascending": {
-                    "string": "Smallest first"
+                    "string": "Menores primeiro"
                 },
                 "descending": {
-                    "string": "Largest first"
+                    "string": "Maiores primeiro"
                 }
             }
         },
         "pagination": {
             "previous": {
-                "string": "Previous page"
+                "string": "Página anterior"
             },
             "next": {
-                "string": "Next page"
+                "string": "Próxima página"
             }
         },
         "list_load_error": {
             "folder_not_found": {
-                "string": "This folder no longer exists.",
+                "string": "Esta pasta não existe mais.",
                 "description": "Message when folder messages request returns 404"
             },
             "mail_unavailable": {
-                "string": "Mail server is temporarily unavailable.",
+                "string": "O servidor de e-mail está temporariamente indisponível.",
                 "description": "Message when folder messages request returns 503"
             },
             "retry": {
-                "string": "Try again",
+                "string": "Tentar novamente",
                 "description": "Button label to refetch folder messages after 503"
             },
             "open_inbox": {
-                "string": "Open Inbox",
+                "string": "Abrir Caixa de Entrada",
                 "description": "Button label to navigate to INBOX after folder 404"
             },
             "generic": {
-                "string": "Unable to load messages. Please try again later.",
+                "string": "Não foi possível carregar as mensagens. Por favor, tente novamente mais tarde.",
                 "description": "Generic folder list load error (e.g. 500)"
             }
         },
         "filter": {
             "client_scope_notice": {
-                "string": "Filters apply only to messages loaded on this page.",
+                "string": "Os filtros se aplicam apenas às mensagens carregadas nesta página.",
                 "description": "Hint that URL filters are client-side on the current server page"
             },
             "all": {
                 "string": "Todos"
             },
             "unread": {
-                "string": "Unread"
+                "string": "Não lidos"
             },
             "read": {
-                "string": "Read"
+                "string": "Lidos"
             },
             "starred": {
-                "string": "Starred"
+                "string": "Favoritados"
             },
             "attachments": {
-                "string": "Attachments"
+                "string": "Anexos"
             }
         },
         "layout": {
             "full": {
-                "string": "Full view"
+                "string": "Visualização completa"
             },
             "split": {
-                "string": "Split view"
+                "string": "Visualização dividida"
             }
         },
         "select_message": {
-            "string": "Select a message to read"
+            "string": "Selecione uma mensagem para ler"
         },
         "no_items": {
-            "string": "No message found."
+            "string": "Nenhuma mensagem encontrada."
         },
         "actions": {
             "mark_as_read": {
@@ -97,24 +97,24 @@
                 "string": "Marcar como não lido"
             },
             "delete": {
-                "string": "Move to trash"
+                "string": "Mover para a lixeira"
             },
             "archive": {
                 "string": "Arquivar"
             },
             "select_mail": {
-                "string": "Select message"
+                "string": "Selecione mensagem"
             },
             "deselect_mail": {
-                "string": "Deselect message"
+                "string": "Desmarcar mensagem"
             }
         },
         "time": {
             "minutes_ago": {
-                "string": "{count}m ago"
+                "string": "{count} min atrás"
             }
         }
     },
-    "viewFlat": "Flat list",
-    "viewConversation": "Conversation view"
+    "viewFlat": "Lista plana",
+    "viewConversation": "Visualização por conversa"
 }
