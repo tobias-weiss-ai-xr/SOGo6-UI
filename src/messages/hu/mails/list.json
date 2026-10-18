@@ -1,120 +1,120 @@
 {
-    "MAILS_LIST": {
-        "star": { "string": "Star" },
-        "unstar": { "string": "Unstar" },
-        "messages_number": {
-            "string": "{number, plural, one {# message} other {# messages}}",
-            "context": "Displays the number of messages in an mail folder."
-        },
-        "sort": {
-            "date": {
-                "ascending": {
-                    "string": "Newest first"
-                },
-                "descending": {
-                    "string": "Older first"
-                }
-            },
-            "size": {
-                "ascending": {
-                    "string": "Smallest first"
-                },
-                "descending": {
-                    "string": "Largest first"
-                }
-            }
-        },
-        "pagination": {
-            "previous": {
-                "string": "Previous page"
-            },
-            "next": {
-                "string": "Next page"
-            }
-        },
-        "list_load_error": {
-            "folder_not_found": {
-                "string": "This folder no longer exists.",
-                "description": "Message when folder messages request returns 404"
-            },
-            "mail_unavailable": {
-                "string": "Mail server is temporarily unavailable.",
-                "description": "Message when folder messages request returns 503"
-            },
-            "retry": {
-                "string": "Try again",
-                "description": "Button label to refetch folder messages after 503"
-            },
-            "open_inbox": {
-                "string": "Open Inbox",
-                "description": "Button label to navigate to INBOX after folder 404"
-            },
-            "generic": {
-                "string": "Unable to load messages. Please try again later.",
-                "description": "Generic folder list load error (e.g. 500)"
-            }
-        },
-        "filter": {
-            "client_scope_notice": {
-                "string": "Filters apply only to messages loaded on this page.",
-                "description": "Hint that URL filters are client-side on the current server page"
-            },
-            "all": {
-                "string": "Összes"
-            },
-            "unread": {
-                "string": "Unread"
-            },
-            "read": {
-                "string": "Read"
-            },
-            "starred": {
-                "string": "Starred"
-            },
-            "attachments": {
-                "string": "Attachments"
-            }
-        },
-        "layout": {
-            "full": {
-                "string": "Full view"
-            },
-            "split": {
-                "string": "Split view"
-            }
-        },
-        "select_message": {
-            "string": "Select a message to read"
-        },
-        "no_items": {
-            "string": "No message found."
-        },
-        "actions": {
-            "mark_as_read": {
-                "string": "Megjelölés olvasottként"
-            },
-            "mark_as_unread": {
-                "string": "Megjelölés olvasatlanként"
-            },
-            "delete": {
-                "string": "Move to trash"
-            },
-            "archive": {
-                "string": "Archívum"
-            },
-            "select_mail": {
-                "string": "Select message"
-            },
-            "deselect_mail": {
-                "string": "Deselect message"
-            }
-        },
-        "time": {
-            "minutes_ago": {
-                "string": "{count}m ago"
-            }
-        }
+  "MAILS_LIST": {
+    "star": { "string": "Csillagozás" },
+    "unstar": { "string": "Csillagozás visszavonása" },
+    "messages_number": {
+      "string": "{number, plural, one {# üzenet} other {# üzenet}}",
+      "context": "Displays the number of messages in an mail folder."
     },
-    "viewFlat": "Flat list",
-    "viewConversation": "Conversation view"
+    "sort": {
+      "date": {
+        "ascending": {
+          "string": "Legújabb elől"
+        },
+        "descending": {
+          "string": "Régebbi elöl"
+        }
+      },
+      "size": {
+        "ascending": {
+          "string": "Legkisebb elöl"
+        },
+        "descending": {
+          "string": "Legnagyobb elöl"
+        }
+      }
+    },
+    "pagination": {
+      "previous": {
+        "string": "Előző oldal"
+      },
+      "next": {
+        "string": "Következő oldal"
+      }
+    },
+    "list_load_error": {
+      "folder_not_found": {
+        "string": "Ez a mappa már nem létezik.",
+        "description": "Message when folder messages request returns 404"
+      },
+      "mail_unavailable": {
+        "string": "A levélkiszolgáló ideiglenesen nem elérhető.",
+        "description": "Message when folder messages request returns 503"
+      },
+      "retry": {
+        "string": "Újrapróbálás",
+        "description": "Button label to refetch folder messages after 503"
+      },
+      "open_inbox": {
+        "string": "Bejövő megnyitása",
+        "description": "Button label to navigate to INBOX after folder 404"
+      },
+      "generic": {
+        "string": "Nem sikerült az üzenetek betöltése. Kérjük, próbálja újra később.",
+        "description": "Generic folder list load error (e.g. 500)"
+      }
+    },
+    "filter": {
+      "client_scope_notice": {
+        "string": "A szűrők csak az ezen az oldalon betöltött üzenetjaira vonatkoznak.",
+        "description": "Hint that URL filters are client-side on the current server page"
+      },
+      "all": {
+        "string": "Összes"
+      },
+      "unread": {
+        "string": "Olvasatlan"
+      },
+      "read": {
+        "string": "Olvasott"
+      },
+      "starred": {
+        "string": "Csillagozott"
+      },
+      "attachments": {
+        "string": "Csatolt fájlok"
+      }
+    },
+    "layout": {
+      "full": {
+        "string": "Teljes nézet"
+      },
+      "split": {
+        "string": "Osztott nézet"
+      }
+    },
+    "select_message": {
+      "string": "Válasszon egy üzenetet az olvasáshoz"
+    },
+    "no_items": {
+      "string": "Nincs üzenet."
+    },
+    "actions": {
+      "mark_as_read": {
+        "string": "Megjelölés olvasottként"
+      },
+      "mark_as_unread": {
+        "string": "Megjelölés olvasatlanként"
+      },
+      "delete": {
+        "string": "Kukába helyezés"
+      },
+      "archive": {
+        "string": "Archiválás"
+      },
+      "select_mail": {
+        "string": "Üzenet kiválasztása"
+      },
+      "deselect_mail": {
+        "string": "Üzenet kiválasztásának visszavonása"
+      }
+    },
+    "time": {
+      "minutes_ago": {
+        "string": "{count} perce"
+      }
+    }
+  },
+  "viewFlat": "Lap nézet",
+  "viewConversation": "Beszélgetés nézet"
 }
