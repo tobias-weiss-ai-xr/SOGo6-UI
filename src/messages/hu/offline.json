@@ -1,17 +1,17 @@
 {
   "Login": {
-    "offlineNotice": "You are currently offline. Some features may be limited."
+    "offlineNotice": "Jelenleg offline vagy. Egyes funkciók korlátozottak lehetnek."
   },
   "PWA": {
     "installPrompt": {
-      "title": "Install SOGo",
-      "description": "Add SOGo to your home screen for quick access, even offline.",
-      "install": "Install",
-      "dismiss": "Not now"
+      "title": "SOGo telepítése",
+      "description": "Adja hozzá a SOGo-t a kezdőképernyőjéhez a gyors hozzáférésért, akár offline is.",
+      "install": "Telepítés",
+      "dismiss": "Most nem"
     },
     "offlineBanner": {
-      "label": "You are offline. Some features may not work."
+      "label": "Offline vagy. Egyes funkciók nem működnek."
     },
-    "featureUnavailable": "{feature} is not available while offline."
+    "featureUnavailable": "A(z) {feature} nem elérhető offline módban."
   }
 }
