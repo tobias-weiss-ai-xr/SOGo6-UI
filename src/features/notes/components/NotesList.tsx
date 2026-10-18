@@ -2,8 +2,8 @@
 
 import { Button } from '@/components/ui/button'
 import { Skeleton } from '@/components/ui/skeleton'
-import { apiClient } from '@/lib/api/client/base-client'
 import { useCallback, useEffect, useState } from 'react'
+import fetchClient from '../fetch-client'
 import NoteCard from './NoteCard'
 import NotesEditor from './NotesEditor'
 
@@ -26,8 +26,12 @@ function NotesList() {
     try {
       setIsLoading(true)
       setError(null)
-      const response = await apiClient.get<{ notes: Note[] }>('/api/v1/user/notes')
-      setNotes(response.data.notes)
+      const response = await fetchClient('/api/v1/user/notes')
+      if (!response.ok) {
+        throw new Error('Failed to fetch notes')
+      }
+      const data = await response.json()
+      setNotes(data.notes)
     } catch (err) {
       setError('Failed to load notes. Please try again.')
       console.error('Failed to fetch notes:', err)
@@ -47,7 +51,7 @@ function NotesList() {
 
   const handleDelete = useCallback(async (id: string) => {
     try {
-      await apiClient.delete(`/api/v1/user/notes/${id}`)
+      await fetchClient(`/api/v1/user/notes/${id}`, { method: 'DELETE' })
       await fetchNotes()
     } catch (err) {
       console.error('Failed to delete note:', err)
@@ -62,14 +66,20 @@ function NotesList() {
           title: note.title,
           content: note.content,
         }
-        await apiClient.put(`/api/v1/user/notes/${editingNote.id}`, updatedNote)
+        await fetchClient(`/api/v1/user/notes/${editingNote.id}`, {
+          method: 'PUT',
+          body: JSON.stringify(updatedNote),
+        })
       } else {
         // Create new note
         const newNote = {
           title: note.title,
           content: note.content,
         }
-        await apiClient.post('/api/v1/user/notes', newNote)
+        await fetchClient('/api/v1/user/notes', {
+          method: 'POST',
+          body: JSON.stringify(newNote),
+        })
       }
       await fetchNotes()
       setIsEditorOpen(false)
