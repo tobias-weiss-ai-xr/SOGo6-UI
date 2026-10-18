@@ -1,48 +1,18 @@
 {
   "NOTES": {
-    "root": {
-      "title": {
-        "string": "Notater"
-      },
-      "new_note": {
-        "string": "Nytt notat"
-      },
-      "save": {
-        "string": "Lagre"
-      },
-      "cancel": {
-        "string": "Avbryt"
-      },
-      "edit": {
-        "string": "Rediger"
-      },
-      "delete": {
-        "string": "Slett"
-      },
-      "confirm_delete": {
-        "string": "Slett notat"
-      },
-      "confirm_delete_message": {
-        "string": "Er du sikker på at du vil slette dette notatet? Denne handlingen kan ikke angres."
-      },
-      "loading": {
-        "string": "Laster..."
-      },
-      "error": {
-        "string": "En feil oppstod ved lasting av notater."
-      },
-      "no_notes": {
-        "string": "Ingen notater funnet."
-      },
-      "created_at": {
-        "string": "Opprettet"
-      },
-      "placeholder_title": {
-        "string": "Skriv inn notattittel"
-      },
-      "placeholder_content": {
-        "string": "Begynn å skrive notatet ditt her..."
-      }
-    }
+    "title": "Notater",
+    "new_note": "Ny notat",
+    "save": "Lagre",
+    "cancel": "Avbryt",
+    "edit": "Rediger",
+    "delete": "Slett",
+    "confirm_delete": "Slett notat",
+    "confirm_delete_message": "Er du sikker på at du vil slette dette notatet? Denne handlingen kan ikke angres.",
+    "loading": "Laster...",
+    "error": "En feil oppstod under innlasting av notater.",
+    "no_notes": "Ingen notater funnet.",
+    "created_at": "Opprettet: {date}",
+    "placeholder_title": "Skriv inn notattittel",
+    "placeholder_content": "Begynn å skrive notatet ditt her..."
   }
 }
