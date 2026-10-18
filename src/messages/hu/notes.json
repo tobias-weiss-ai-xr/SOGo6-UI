@@ -1,0 +1,48 @@
+{
+  "NOTES": {
+    "root": {
+      "title": {
+        "string": "Jegyzetek"
+      },
+      "new_note": {
+        "string": "Új jegyzet"
+      },
+      "save": {
+        "string": "Mentés"
+      },
+      "cancel": {
+        "string": "Mégse"
+      },
+      "edit": {
+        "string": "Szerkesztés"
+      },
+      "delete": {
+        "string": "Törlés"
+      },
+      "confirm_delete": {
+        "string": "Jegyzet törlése"
+      },
+      "confirm_delete_message": {
+        "string": "Biztosan törölni kívánja ezt a jegyzetet? Ez a művelet nem vonható vissza."
+      },
+      "loading": {
+        "string": "Betöltés..."
+      },
+      "error": {
+        "string": "Hiba történt a jegyzetek betöltése közben."
+      },
+      "no_notes": {
+        "string": "Nincs találat."
+      },
+      "created_at": {
+        "string": "Létrehozva"
+      },
+      "placeholder_title": {
+        "string": "Adja meg a jegyzet címét"
+      },
+      "placeholder_content": {
+        "string": "Kezdje el írni a jegyzetét ide..."
+      }
+    }
+  }
+}

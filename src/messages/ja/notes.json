@@ -1,0 +1,48 @@
+{
+  "NOTES": {
+    "root": {
+      "title": {
+        "string": "ノート"
+      },
+      "new_note": {
+        "string": "新しいノート"
+      },
+      "save": {
+        "string": "保存"
+      },
+      "cancel": {
+        "string": "キャンセル"
+      },
+      "edit": {
+        "string": "編集"
+      },
+      "delete": {
+        "string": "削除"
+      },
+      "confirm_delete": {
+        "string": "ノートを削除"
+      },
+      "confirm_delete_message": {
+        "string": "このノートを削除してもよろしいですか？この操作は取り消すことができません。"
+      },
+      "loading": {
+        "string": "読み込み中..."
+      },
+      "error": {
+        "string": "ノートの読み込み中にエラーが発生しました。"
+      },
+      "no_notes": {
+        "string": "ノートが見つかりません。"
+      },
+      "created_at": {
+        "string": "作成日"
+      },
+      "placeholder_title": {
+        "string": "ノートのタイトルを入力"
+      },
+      "placeholder_content": {
+        "string": "ここにノートを入力してください..."
+      }
+    }
+  }
+}

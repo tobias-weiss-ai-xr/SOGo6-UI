@@ -1,0 +1,48 @@
+{
+  "NOTES": {
+    "root": {
+      "title": {
+        "string": "โน้ต"
+      },
+      "new_note": {
+        "string": "โน้ตใหม่"
+      },
+      "save": {
+        "string": "บันทึก"
+      },
+      "cancel": {
+        "string": "ยกเลิก"
+      },
+      "edit": {
+        "string": "แก้ไข"
+      },
+      "delete": {
+        "string": "ลบ"
+      },
+      "confirm_delete": {
+        "string": "ลบโน้ต"
+      },
+      "confirm_delete_message": {
+        "string": "คุณแน่ใจว่าต้องการลบโน้ตนี้หรือไม่? ไม่สามารถย้อนกลับได้"
+      },
+      "loading": {
+        "string": "กำลังโหลด..."
+      },
+      "error": {
+        "string": "เกิดข้อผิดพลาดในการโหลดโน้ต"
+      },
+      "no_notes": {
+        "string": "ไม่พบโน้ต"
+      },
+      "created_at": {
+        "string": "สร้างเมื่อ"
+      },
+      "placeholder_title": {
+        "string": "ป้อนชื่อโน้ต"
+      },
+      "placeholder_content": {
+        "string": "เริ่มพิมพ์โน้ตของคุณที่นี่..."
+      }
+    }
+  }
+}

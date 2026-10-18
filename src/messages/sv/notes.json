@@ -1,0 +1,48 @@
+{
+  "NOTES": {
+    "root": {
+      "title": {
+        "string": "Anteckningar"
+      },
+      "new_note": {
+        "string": "Ny anteckning"
+      },
+      "save": {
+        "string": "Spara"
+      },
+      "cancel": {
+        "string": "Avbryt"
+      },
+      "edit": {
+        "string": "Redigera"
+      },
+      "delete": {
+        "string": "Ta bort"
+      },
+      "confirm_delete": {
+        "string": "Ta bort anteckning"
+      },
+      "confirm_delete_message": {
+        "string": "Är du säker på att du vill ta bort denna anteckning? Denna åtgärd kan inte ångras."
+      },
+      "loading": {
+        "string": "Laddar..."
+      },
+      "error": {
+        "string": "Ett fel uppstod vid inläsning av anteckningar."
+      },
+      "no_notes": {
+        "string": "Inga anteckningar hittades."
+      },
+      "created_at": {
+        "string": "Skapad den"
+      },
+      "placeholder_title": {
+        "string": "Ange anteckningstitel"
+      },
+      "placeholder_content": {
+        "string": "Börja skriva din anteckning här..."
+      }
+    }
+  }
+}

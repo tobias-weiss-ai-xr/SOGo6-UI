@@ -1,0 +1,48 @@
+{
+  "NOTES": {
+    "root": {
+      "title": {
+        "string": "Notes"
+      },
+      "new_note": {
+        "string": "New Note"
+      },
+      "save": {
+        "string": "Save"
+      },
+      "cancel": {
+        "string": "Cancel"
+      },
+      "edit": {
+        "string": "Edit"
+      },
+      "delete": {
+        "string": "Delete"
+      },
+      "confirm_delete": {
+        "string": "Delete Note"
+      },
+      "confirm_delete_message": {
+        "string": "Are you sure you want to delete this note? This action cannot be undone."
+      },
+      "loading": {
+        "string": "Loading..."
+      },
+      "error": {
+        "string": "An error occurred while loading notes."
+      },
+      "no_notes": {
+        "string": "No notes found."
+      },
+      "created_at": {
+        "string": "Created at"
+      },
+      "placeholder_title": {
+        "string": "Enter note title"
+      },
+      "placeholder_content": {
+        "string": "Start typing your note here..."
+      }
+    }
+  }
+}

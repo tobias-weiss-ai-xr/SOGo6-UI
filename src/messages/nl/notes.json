@@ -1,0 +1,48 @@
+{
+  "NOTES": {
+    "root": {
+      "title": {
+        "string": "Notities"
+      },
+      "new_note": {
+        "string": "Nieuwe notitie"
+      },
+      "save": {
+        "string": "Opslaan"
+      },
+      "cancel": {
+        "string": "Annuleren"
+      },
+      "edit": {
+        "string": "Bewerken"
+      },
+      "delete": {
+        "string": "Verwijderen"
+      },
+      "confirm_delete": {
+        "string": "Notitie verwijderen"
+      },
+      "confirm_delete_message": {
+        "string": "Weet u zeker dat u deze notitie wilt verwijderen? Deze actie kan niet ongedaan worden gemaakt."
+      },
+      "loading": {
+        "string": "Laden..."
+      },
+      "error": {
+        "string": "Er is een fout opgetreden bij het laden van notities."
+      },
+      "no_notes": {
+        "string": "Geen notities gevonden."
+      },
+      "created_at": {
+        "string": "Aangemaakt op"
+      },
+      "placeholder_title": {
+        "string": "Voer notitietitel in"
+      },
+      "placeholder_content": {
+        "string": "Begin hier met typen van uw notitie..."
+      }
+    }
+  }
+}

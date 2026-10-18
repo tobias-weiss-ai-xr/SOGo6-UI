@@ -1,0 +1,48 @@
+{
+  "NOTES": {
+    "root": {
+      "title": {
+        "string": "Notatki"
+      },
+      "new_note": {
+        "string": "Nowa notatka"
+      },
+      "save": {
+        "string": "Zapisz"
+      },
+      "cancel": {
+        "string": "Anuluj"
+      },
+      "edit": {
+        "string": "Edytuj"
+      },
+      "delete": {
+        "string": "Usuń"
+      },
+      "confirm_delete": {
+        "string": "Usuń notatkę"
+      },
+      "confirm_delete_message": {
+        "string": "Czy na pewno chcesz usunąć tę notatkę? Tej akcji nie można cofnąć."
+      },
+      "loading": {
+        "string": "Ładowanie..."
+      },
+      "error": {
+        "string": "Wystąpił błąd podczas ładowania notatek."
+      },
+      "no_notes": {
+        "string": "Nie znaleziono notatek."
+      },
+      "created_at": {
+        "string": "Utworzono"
+      },
+      "placeholder_title": {
+        "string": "Wprowadź tytuł notatki"
+      },
+      "placeholder_content": {
+        "string": "Rozpocznij pisać swoją notatkę tutaj..."
+      }
+    }
+  }
+}

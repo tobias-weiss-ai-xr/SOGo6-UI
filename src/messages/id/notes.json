@@ -1,0 +1,48 @@
+{
+  "NOTES": {
+    "root": {
+      "title": {
+        "string": "Catatan"
+      },
+      "new_note": {
+        "string": "Catatan Baru"
+      },
+      "save": {
+        "string": "Simpan"
+      },
+      "cancel": {
+        "string": "Batal"
+      },
+      "edit": {
+        "string": "Edit"
+      },
+      "delete": {
+        "string": "Hapus"
+      },
+      "confirm_delete": {
+        "string": "Hapus Catatan"
+      },
+      "confirm_delete_message": {
+        "string": "Apakah Anda yakin ingin menghapus catatan ini? Tindakan ini tidak dapat dibatalkan."
+      },
+      "loading": {
+        "string": "Memuat..."
+      },
+      "error": {
+        "string": "Terjadi kesalahan saat memuat catatan."
+      },
+      "no_notes": {
+        "string": "Tidak ada catatan ditemukan."
+      },
+      "created_at": {
+        "string": "Dibuat pada"
+      },
+      "placeholder_title": {
+        "string": "Masukkan judul catatan"
+      },
+      "placeholder_content": {
+        "string": "Mulai mengetik catatan Anda di sini..."
+      }
+    }
+  }
+}

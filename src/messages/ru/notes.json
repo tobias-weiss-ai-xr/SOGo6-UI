@@ -1,0 +1,48 @@
+{
+  "NOTES": {
+    "root": {
+      "title": {
+        "string": "Заметки"
+      },
+      "new_note": {
+        "string": "Новая заметка"
+      },
+      "save": {
+        "string": "Сохранить"
+      },
+      "cancel": {
+        "string": "Отмена"
+      },
+      "edit": {
+        "string": "Редактировать"
+      },
+      "delete": {
+        "string": "Удалить"
+      },
+      "confirm_delete": {
+        "string": "Удалить заметку"
+      },
+      "confirm_delete_message": {
+        "string": "Вы уверены, что хотите удалить эту заметку? Это действие невозможно отменить."
+      },
+      "loading": {
+        "string": "Загрузка..."
+      },
+      "error": {
+        "string": "Произошла ошибка при загрузке заметок."
+      },
+      "no_notes": {
+        "string": "Заметки не найдены."
+      },
+      "created_at": {
+        "string": "Создано"
+      },
+      "placeholder_title": {
+        "string": "Введите заголовок заметки"
+      },
+      "placeholder_content": {
+        "string": "Начните вводить свою заметку здесь..."
+      }
+    }
+  }
+}

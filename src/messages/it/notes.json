@@ -1,0 +1,48 @@
+{
+  "NOTES": {
+    "root": {
+      "title": {
+        "string": "Note"
+      },
+      "new_note": {
+        "string": "Nuova nota"
+      },
+      "save": {
+        "string": "Salva"
+      },
+      "cancel": {
+        "string": "Annulla"
+      },
+      "edit": {
+        "string": "Modifica"
+      },
+      "delete": {
+        "string": "Elimina"
+      },
+      "confirm_delete": {
+        "string": "Elimina nota"
+      },
+      "confirm_delete_message": {
+        "string": "Sei sicuro di voler eliminare questa nota? Questa azione non può essere annullata."
+      },
+      "loading": {
+        "string": "Caricamento..."
+      },
+      "error": {
+        "string": "Si è verificato un errore durante il caricamento delle note."
+      },
+      "no_notes": {
+        "string": "Nessuna nota trovata."
+      },
+      "created_at": {
+        "string": "Creata il"
+      },
+      "placeholder_title": {
+        "string": "Inserisci titolo nota"
+      },
+      "placeholder_content": {
+        "string": "Inizia a scrivere la tua nota qui..."
+      }
+    }
+  }
+}

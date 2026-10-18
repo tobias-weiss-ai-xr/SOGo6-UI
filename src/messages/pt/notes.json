@@ -1,0 +1,48 @@
+{
+  "NOTES": {
+    "root": {
+      "title": {
+        "string": "Notas"
+      },
+      "new_note": {
+        "string": "Nova nota"
+      },
+      "save": {
+        "string": "Salvar"
+      },
+      "cancel": {
+        "string": "Cancelar"
+      },
+      "edit": {
+        "string": "Editar"
+      },
+      "delete": {
+        "string": "Excluir"
+      },
+      "confirm_delete": {
+        "string": "Excluir nota"
+      },
+      "confirm_delete_message": {
+        "string": "Tem certeza de que deseja excluir esta nota? Esta ação não pode ser desfeita."
+      },
+      "loading": {
+        "string": "Carregando..."
+      },
+      "error": {
+        "string": "Ocorreu um erro ao carregar as notas."
+      },
+      "no_notes": {
+        "string": "Nenhuma nota encontrada."
+      },
+      "created_at": {
+        "string": "Criado em"
+      },
+      "placeholder_title": {
+        "string": "Digite o título da nota"
+      },
+      "placeholder_content": {
+        "string": "Comece a digitar sua nota aqui..."
+      }
+    }
+  }
+}

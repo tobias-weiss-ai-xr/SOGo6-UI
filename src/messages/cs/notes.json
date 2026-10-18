@@ -1,0 +1,48 @@
+{
+  "NOTES": {
+    "root": {
+      "title": {
+        "string": "Poznámky"
+      },
+      "new_note": {
+        "string": "Nová poznámka"
+      },
+      "save": {
+        "string": "Uložit"
+      },
+      "cancel": {
+        "string": "Zrušit"
+      },
+      "edit": {
+        "string": "Upravit"
+      },
+      "delete": {
+        "string": "Smazat"
+      },
+      "confirm_delete": {
+        "string": "Smazat poznámku"
+      },
+      "confirm_delete_message": {
+        "string": "Jste si jistý, že chcete smazat tuto poznámku? Tuto akci nelze vrátit zpět."
+      },
+      "loading": {
+        "string": "Načítání..."
+      },
+      "error": {
+        "string": "Při načítání poznámek došlo k chybě."
+      },
+      "no_notes": {
+        "string": " Nebyl nalezen žádny poznámky."
+      },
+      "created_at": {
+        "string": "Vytvořeno"
+      },
+      "placeholder_title": {
+        "string": "Zadejte název poznámky"
+      },
+      "placeholder_content": {
+        "string": "Začněte psát svou poznámku zde..."
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "NOTES": {
+    "root": {
+      "title": {
+        "string": "Noter"
+      },
+      "new_note": {
+        "string": "Ny note"
+      },
+      "save": {
+        "string": "Gem"
+      },
+      "cancel": {
+        "string": "Annuller"
+      },
+      "edit": {
+        "string": "Rediger"
+      },
+      "delete": {
+        "string": "Slet"
+      },
+      "confirm_delete": {
+        "string": "Slet note"
+      },
+      "confirm_delete_message": {
+        "string": "Er du sikker på, at du vil slette denne note? Denne handling kan ikke fortrydes."
+      },
+      "loading": {
+        "string": "Indlæser..."
+      },
+      "error": {
+        "string": "Der opstod en fejl under indlæsning af noter."
+      },
+      "no_notes": {
+        "string": "Ingen noter fundet."
+      },
+      "created_at": {
+        "string": "Oprettet den"
+      },
+      "placeholder_title": {
+        "string": "Indtast notetitel"
+      },
+      "placeholder_content": {
+        "string": "Begynd at skrive din note her..."
+      }
+    }
+  }
+}

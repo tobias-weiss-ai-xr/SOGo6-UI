@@ -1,0 +1,48 @@
+{
+  "NOTES": {
+    "root": {
+      "title": {
+        "string": "Muistiinpanot"
+      },
+      "new_note": {
+        "string": "Uusi muistiinpano"
+      },
+      "save": {
+        "string": "Tallenna"
+      },
+      "cancel": {
+        "string": "Peruuta"
+      },
+      "edit": {
+        "string": "Muokkaa"
+      },
+      "delete": {
+        "string": "Poista"
+      },
+      "confirm_delete": {
+        "string": "Poista muistiinpano"
+      },
+      "confirm_delete_message": {
+        "string": "Oletko varma, että haluat poistaa tämän muistiinpanon? Tätä toimintoa ei voi peruuttaa."
+      },
+      "loading": {
+        "string": "Lataa..."
+      },
+      "error": {
+        "string": "Muistiinpanojen lataamisessa tapahtui virhe."
+      },
+      "no_notes": {
+        "string": "Muistiinpanoja ei löytynyt."
+      },
+      "created_at": {
+        "string": "Luotu"
+      },
+      "placeholder_title": {
+        "string": "Anna muistiinpanon otsikko"
+      },
+      "placeholder_content": {
+        "string": "Aloita muistiinpanosi kirjoittaminen tästä..."
+      }
+    }
+  }
+}
