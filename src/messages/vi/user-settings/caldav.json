@@ -1,0 +1,54 @@
+{
+    "US_CALDAV": {
+        "title": {
+            "string": "CalDAV & Đồng bộ",
+            "context": "Title of the CalDAV & Sync settings page"
+        },
+        "description": {
+            "string": "Kết nối với Apple Calendar, Thunderbird, DAVx5 hoặc bất kỳ ứng dụng khách nào tương thích với CalDAV bằng các URL bên dưới.",
+            "context": "Short description of the CalDAV & Sync settings page"
+        },
+        "serverUrl": {
+            "string": "URL Máy chủ",
+            "context": "Label for the CalDAV server base URL"
+        },
+        "calendarHomePath": {
+            "string": "Thư mục lịch chính",
+            "context": "Label for the user's calendar home set collection path"
+        },
+        "davCapabilities": {
+            "string": "Khả năng của giao thức",
+            "context": "Label for the DAV capabilities header value"
+        },
+        "supportedComponents": {
+            "string": "Thành phần được hỗ trợ",
+            "context": "Label for the iCalendar component types a new calendar supports"
+        },
+        "calendarsTitle": {
+            "string": "Lịch của bạn",
+            "context": "Heading for the per-calendar sync status list"
+        },
+        "noCalendars": {
+            "string": "Chưa có lịch để đồng bộ.",
+            "context": "Empty state when the user has no calendars"
+        },
+        "eventCount": {
+            "string": "Sự kiện:",
+            "context": "Label prefix showing how many events a calendar contains"
+        },
+        "discoverable": {
+            "string": "Có thể phát hiện",
+            "context": "Heading label for the discoverability section"
+        },
+        "status": {
+            "ready": {
+                "string": "Sẵn sàng",
+                "context": "Badge shown when a calendar is servable over CalDAV"
+            },
+            "notDiscoverable": {
+                "string": "Không thể phát hiện",
+                "context": "Badge shown when a calendar is not servable over CalDAV"
+            }
+        }
+    }
+}
