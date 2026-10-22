@@ -33,7 +33,9 @@ WORKDIR /app
 RUN apk add --no-cache curl
 
 ENV NODE_ENV=production \
-    NEXT_TELEMETRY_DISABLED=1
+    NEXT_TELEMETRY_DISABLED=1 \
+    HOSTNAME=0.0.0.0 \
+    PORT=3000
 
 # Copy only the standalone output from builder
 COPY --from=builder /build/.next/standalone /app

@@ -9,10 +9,17 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getConfig, getUseFakeApi } from '@/lib/api/client/config';
 
-const BACKEND_BASE_URL = getConfig().baseUrl || process.env.NEXT_PUBLIC_API_BASE_URL || 'http://localhost:5000';
+// Server-side backend target. API_PROXY_TARGET is the internal API root
+// (e.g. http://sogo6-server:5000/api); NEXT_PUBLIC_API_BASE_URL is the
+// browser-facing public origin and is only a fallback (dev setups where
+// both point at the same local backend).
+const BACKEND_BASE_URL = getConfig().baseUrl
+  || process.env.API_PROXY_TARGET
+  || process.env.NEXT_PUBLIC_API_BASE_URL
+  || 'http://localhost:5000/api';
 
-// Strip a trailing '/api/v1' if present — the SSE path below appends its own.
-const BACKEND_ROOT = BACKEND_BASE_URL.replace(/\/api\/v1\/?$/, '');
+// Strip a trailing '/api' or '/api/v1' — the SSE path below appends its own.
+const BACKEND_ROOT = BACKEND_BASE_URL.replace(/\/api(\/v1)?\/?$/, '');
 
 export async function GET(_request: NextRequest) {
   // Check if we should use fake API
