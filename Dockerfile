@@ -1,7 +1,7 @@
 # Development Dockerfile for SOGo 6 UI
 # Single stage for development (source will be mounted by compose)
 
-FROM node:20-alpine AS development
+FROM node:22-alpine AS development
 
 WORKDIR /app
 
