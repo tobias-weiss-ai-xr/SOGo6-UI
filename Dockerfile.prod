@@ -29,8 +29,9 @@ FROM node:22-alpine AS runner
 
 WORKDIR /app
 
-# Install runtime dependencies
-RUN apk add --no-cache curl
+# Install runtime dependencies; strip the bundled npm CLI (carries CVE-flagged
+# internal deps: brace-expansion/picomatch/sigstore/pacote/...) — not needed at runtime
+RUN apk add --no-cache curl &&     rm -rf /usr/local/lib/node_modules/npm            /usr/local/bin/npm /usr/local/bin/npx /usr/local/bin/corepack
 
 ENV NODE_ENV=production \
     NEXT_TELEMETRY_DISABLED=1 \
