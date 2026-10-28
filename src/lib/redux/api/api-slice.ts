@@ -179,11 +179,18 @@ export const dynamicBaseQuery = async (
   )
   // Expired/invalid JWT: clear credentials so the (loggedin) layout guard
   // bounces to the login page instead of toasting on every call.
+  // Guard against multiple logout dispatches: when multiple RTK Query hooks
+  // fire simultaneously and all get 401, only dispatch logout once.
   if (
     result?.error?.status === 401 &&
     !PUBLIC_AUTH_ENDPOINTS.has(api.endpoint)
   ) {
-    api.dispatch(logout())
+    const currentState = api.getState() as RootState
+    // Only dispatch logout if the user is still authenticated — avoids
+    // cascading re-renders when multiple 401s arrive after the first logout.
+    if (currentState.auth?.token) {
+      api.dispatch(logout())
+    }
   }
   return result
 }

@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button'
 import { logout } from '@/features/auth/components/store/auth.slice'
 import { useRouter } from '@/lib/i18n/navigation'
 import { getErrorStatus } from '@/lib/redux/api/error-handlers'
-import { useAppDispatch } from '@/lib/redux/hooks'
+import { useAppDispatch, useAppSelector } from '@/lib/redux/hooks'
 import { cn } from '@/lib/utils'
 import { useTranslations } from 'next-intl'
 import React, { useEffect } from 'react'
@@ -25,13 +25,18 @@ export function FolderMessagesErrorFallback({
   const t = useTranslations('MAILS_LIST')
   const { push } = useRouter()
   const dispatch = useAppDispatch()
+  const token = useAppSelector((state) => state.auth?.token)
   const status = getErrorStatus(error)
 
   useEffect(() => {
     if (status !== 401) return
-    dispatch(logout())
+    // Only dispatch logout if the user is still authenticated — avoids
+    // duplicate logout dispatches when dynamicBaseQuery already handled it.
+    if (token) {
+      dispatch(logout())
+    }
     push('/auth/login')
-  }, [status, dispatch, push])
+  }, [status, dispatch, push, token])
 
   if (status === 401) {
     return null
