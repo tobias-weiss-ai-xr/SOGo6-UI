@@ -54,6 +54,19 @@ const nextConfig = {
             },
         ];
     },
+    // Classic SOGo-style webmail URLs are NOT routes of this SPA (the
+    // mailbox surface lives at /<locale> and /<locale>/portal). Map the
+    // legacy paths to the real entry so SOGo clients/bookmarks keep working:
+    //   /SOGo, /SOGo/so/<user> …     → /            (middleware locale-negotiates ~307 → /ll)
+    //   /de/SOGo…, /en/SOGo…         → /de, /en     (locale preserved)
+    // Traefik on openedusuite.org mirrors this with the webmail-sogo-redirect
+    // file router (dynamic/webmail-sogo-redirect.yml).
+    async redirects() {
+        return [
+            { source: '/SOGo/:path*', destination: '/', permanent: false },
+            { source: '/:locale/SOGo/:path*', destination: '/:locale', permanent: false },
+        ];
+    },
 };
 
 const withNextIntl = createNextIntlPlugin('./src/lib/i18n/request.ts');
