@@ -7,20 +7,20 @@
             "string": "Personnaliser l'apparence de la page de connexion par domaine — logo, couleurs, CSS, texte en-tête/pied de page."
         },
         "select_domain": {
-            "string": "Domain"
+            "string": "Domaine"
         },
         "select_placeholder": {
-            "string": "Choose a domain..."
+            "string": "Choisissez un domaine..."
         },
         "select_hint": {
-            "string": "Select a domain above to view and edit its branding."
+            "string": "Sélectionnez un domaine ci-dessus pour afficher et modifier son identité visuelle."
         },
         "card": {
             "identity": {
-                "string": "Visual Identity"
+                "string": "Identité visuelle"
             },
             "login_page": {
-                "string": "Login Page"
+                "string": "Page de connexion"
             }
         },
         "labels": {
@@ -31,29 +31,29 @@
                 "string": "Favicon"
             },
             "primary_color": {
-                "string": "Primary Color"
+                "string": "Couleur principale"
             },
             "login_header": {
-                "string": "Login Header Text"
+                "string": "Texte d'en-tête de connexion"
             },
             "login_footer": {
-                "string": "Login Footer Text"
+                "string": "Texte de pied de page de connexion"
             },
             "custom_css": {
-                "string": "Custom CSS"
+                "string": "CSS personnalisé"
             }
         },
         "buttons": {
             "upload": {
-                "string": "Upload"
+                "string": "Téléverser"
             }
         },
         "placeholders": {
             "header": {
-                "string": "e.g. Welcome to My Company Mail"
+                "string": "p. ex. Bienvenue sur la messagerie de Ma Société"
             },
             "footer": {
-                "string": "e.g. © 2026 My Company"
+                "string": "p. ex. © 2026 Ma Société"
             },
             "css": {
                 "string": "body { font-family: sans-serif; }"
@@ -64,7 +64,7 @@
                 "string": "Save Brandant"
             },
             "success": {
-                "string": "Branding saved"
+                "string": "Identité visuelle enregistrée"
             },
             "error": {
                 "string": "Failed to save brandant"
@@ -72,7 +72,7 @@
         },
         "errors": {
             "upload": {
-                "string": "Failed to read file"
+                "string": "Impossible de lire le fichier"
             }
         }
     }

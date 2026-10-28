@@ -15,6 +15,9 @@ export function ThemeSwitcher() {
   const { setTheme, theme } = useTheme()
   const t = useTranslations('HEADER')
 
+  // Classic theme is light-only (like SOGo 5) — no theme switching UI
+  if (theme === 'sogo5-classic') return null
+
   return (
     <>
       <div className="flex items-center justify-center gap-2">
@@ -49,7 +52,7 @@ export function ThemeSwitcher() {
           <CollapsibleTrigger className="cursor-pointer">
             <ChevronDown className="text-muted-foreground pt-2" />
           </CollapsibleTrigger>
-          <CollapsibleContent className="flex flex-col gap-2">
+          <CollapsibleContent className="bg-background flex flex-col gap-2 rounded-md border p-2 shadow-sm">
             <Toggle
               aria-label={t('theme.dyslexia.string')}
               size={'sm'}

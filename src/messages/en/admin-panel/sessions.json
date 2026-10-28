@@ -6,6 +6,9 @@
     "description": {
       "string": "View and manage active user sessions"
     },
+    "cancel": {
+      "string": "Cancel"
+    },
     "table": {
       "uid": {
         "string": "User"

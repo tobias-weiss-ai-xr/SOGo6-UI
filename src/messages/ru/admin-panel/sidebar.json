@@ -4,55 +4,55 @@
             "string": "Система"
         },
         "theme": {
-            "string": "Theme"
+            "string": "Тема"
         },
         "users": {
             "string": "Пользователи"
         },
         "bulk_users": {
-            "string": "Bulk Users"
+            "string": "Массовые пользователи"
         },
         "quotas": {
-            "string": "Quotas"
+            "string": "Квоты"
         },
         "branding": {
-            "string": "Branding"
+            "string": "Фирменный стиль"
         },
         "backup": {
-            "string": "Backup"
+            "string": "Резервное копирование"
         },
         "db_migration": {
-            "string": "DB Migration"
+            "string": "Миграция БД"
         },
         "migration": {
-            "string": "Migration"
+            "string": "Миграция"
         },
         "config_code": {
-            "string": "Config as Code"
+            "string": "Конфигурация как код"
         },
         "webhooks": {
-            "string": "Webhooks"
+            "string": "Вебхуки"
         },
         "oauth_clients": {
-            "string": "OAuth Clients"
+            "string": "Клиенты OAuth"
         },
         "scheduling_polls": {
-            "string": "Scheduling Polls"
+            "string": "Опросы для планирования"
         },
         "appointment_slots": {
-            "string": "Appointment Slots"
+            "string": "Слоты приёма"
         },
         "shared_drafts": {
-            "string": "Shared Drafts"
+            "string": "Общие черновики"
         },
         "file_sharing": {
-            "string": "File Sharing"
+            "string": "Обмен файлами"
         },
         "doc_preview": {
-            "string": "Doc Preview"
+            "string": "Предпросмотр документов"
         },
         "approvals": {
-            "string": "Approvals"
+            "string": "Согласования"
         },
         "helpdesk": {
             "string": "Helpdesk"
@@ -61,109 +61,109 @@
             "string": "CRM"
         },
         "workflows": {
-            "string": "Workflows"
+            "string": "Рабочие процессы"
         },
         "quick_actions": {
-            "string": "Quick Actions"
+            "string": "Быстрые действия"
         },
         "freebusy": {
-            "string": "Free/Busy"
+            "string": "Занятость"
         },
         "ai_summarize": {
-            "string": "AI Summarize"
+            "string": "ИИ-резюме"
         },
         "ai_classify": {
-            "string": "AI Classify"
+            "string": "ИИ-классификация"
         },
         "ai_draft": {
-            "string": "AI Draft"
+            "string": "ИИ-черновик"
         },
         "ai_search": {
-            "string": "AI Search"
+            "string": "ИИ-поиск"
         },
         "ai_schedule": {
-            "string": "AI Schedule"
+            "string": "ИИ-планирование"
         },
         "ai_anomaly": {
-            "string": "AI Anomaly"
+            "string": "ИИ-аномалии"
         },
         "ai_enrich": {
-            "string": "AI Enrich"
+            "string": "ИИ-обогащение"
         },
         "ai_attachment": {
-            "string": "AI Attach"
+            "string": "ИИ-вложения"
         },
         "ai_spam": {
-            "string": "AI Spam"
+            "string": "ИИ-антиспам"
         },
         "ai_transcripts": {
-            "string": "AI Transcripts"
+            "string": "ИИ-транскрипты"
         },
         "api_docs": {
-            "string": "API Documentation"
+            "string": "Документация API"
         },
         "config": {
             "string": "Конфигурация",
             "rules": {
-                "string": "Rules"
+                "string": "Правила"
             },
             "domains": {
-                "string": "Domains",
+                "string": "Домены",
                 "default": {
                     "string": "По умолчанию"
                 },
                 "custom": {
-                    "string": "Custom domains"
+                    "string": "Свои домены"
                 }
             }
         },
         "sessions": {
-            "string": "Sessions"
+            "string": "Сеансы"
         },
         "audit": {
-            "string": "Audit Log"
+            "string": "Журнал аудита"
         },
         "health": {
-            "string": "Health"
+            "string": "Состояние"
         },
         "debug": {
-            "string": "Mailbox Debug"
+            "string": "Отладка почтовых ящиков"
         },
         "dns_wizard": {
-            "string": "DNS Wizard"
+            "string": "Мастер DNS"
         },
         "resources": {
             "string": "Ресурсы"
         },
         "scim": {
-            "string": "SCIM Provisioning"
+            "string": "Провижининг SCIM"
         },
         "student_groups": {
-            "string": "Student Groups"
+            "string": "Учебные группы"
         },
         "hipaa": {
-            "string": "HIPAA Compliance"
+            "string": "Соответствие HIPAA"
         },
         "eidas": {
-            "string": "eIDAS Signatures"
+            "string": "Подписи eIDAS"
         },
         "donor": {
-            "string": "Donor Management"
+            "string": "Управление донорами"
         },
         "volunteer": {
-            "string": "Volunteer Scheduling"
+            "string": "Планирование волонтёров"
         },
         "import": {
-            "string": "Import/Export"
+            "string": "Импорт/экспорт"
         },
         "matrix": {
-            "string": "Matrix Chat"
+            "string": "Чат Matrix"
         },
         "protocols": {
             "string": "JMAP / ActiveSync"
         },
         "mobile": {
-            "string": "Mobile App"
+            "string": "Мобильное приложение"
         }
     }
 }

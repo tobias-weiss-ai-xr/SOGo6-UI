@@ -5,4 +5,4 @@ Contact: https://github.com/tobias-weiss-ai-xr/SOGo6-dockerized/security/advisor
 Expires: 2027-12-31T23:59:59Z
 Preferred-Languages: en, de
 Policy: https://github.com/tobias-weiss-ai-xr/SOGo6-dockerized/blob/main/SECURITY.md
-Canonical: https://vhrz2392.hrz.uni-marburg.de:9443/.well-known/security.txt
+Canonical: https://github.com/tobias-weiss-ai-xr/SOGo6-dockerized/blob/main/public/.well-known/security.txt

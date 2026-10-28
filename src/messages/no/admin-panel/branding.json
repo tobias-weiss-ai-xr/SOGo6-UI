@@ -1,79 +1,79 @@
 {
-    "AP_BRANDING": {
-        "title": {
-            "string": "Multi-Tenant Branding"
-        },
-        "description": {
-            "string": "Customize login page appearance per domain — logo, colors, CSS, header/footer text."
-        },
-        "select_domain": {
-            "string": "Domene"
-        },
-        "select_placeholder": {
-            "string": "Choose a domain..."
-        },
-        "select_hint": {
-            "string": "Select a domain above to view and edit its branding."
-        },
-        "card": {
-            "identity": {
-                "string": "Visual Identity"
-            },
-            "login_page": {
-                "string": "Login Page"
-            }
-        },
-        "labels": {
-            "logo": {
-                "string": "Logo"
-            },
-            "favicon": {
-                "string": "Favicon"
-            },
-            "primary_color": {
-                "string": "Primary Color"
-            },
-            "login_header": {
-                "string": "Login Header Text"
-            },
-            "login_footer": {
-                "string": "Login Footer Text"
-            },
-            "custom_css": {
-                "string": "Custom CSS"
-            }
-        },
-        "buttons": {
-            "upload": {
-                "string": "Upload"
-            }
-        },
-        "placeholders": {
-            "header": {
-                "string": "e.g. Welcome to My Company Mail"
-            },
-            "footer": {
-                "string": "e.g. © 2026 My Company"
-            },
-            "css": {
-                "string": "body { font-family: sans-serif; }"
-            }
-        },
-        "save": {
-            "button": {
-                "string": "Save Branding"
-            },
-            "success": {
-                "string": "Branding saved"
-            },
-            "error": {
-                "string": "Failed to save branding"
-            }
-        },
-        "errors": {
-            "upload": {
-                "string": "Failed to read file"
-            }
-        }
+  "AP_BRANDING": {
+    "title": {
+      "string": "Flerleiebasert profilering"
+    },
+    "description": {
+      "string": "Tilpass utseendet på innloggingssiden per domene — logo, farger, CSS, topptekst/bunntekst."
+    },
+    "select_domain": {
+      "string": "Domene"
+    },
+    "select_placeholder": {
+      "string": "Velg et domene…"
+    },
+    "select_hint": {
+      "string": "Velg et domene ovenfor for å se og redigere profileringen."
+    },
+    "card": {
+      "identity": {
+        "string": "Visuell identitet"
+      },
+      "login_page": {
+        "string": "Login Page"
+      }
+    },
+    "labels": {
+      "logo": {
+        "string": "Logo"
+      },
+      "favicon": {
+        "string": "Favicon"
+      },
+      "primary_color": {
+        "string": "Primærfarge"
+      },
+      "login_header": {
+        "string": "Topptekst for innloggingssiden"
+      },
+      "login_footer": {
+        "string": "Bunntekst for innloggingssiden"
+      },
+      "custom_css": {
+        "string": "Custom CSS"
+      }
+    },
+    "buttons": {
+      "upload": {
+        "string": "Upload"
+      }
+    },
+    "placeholders": {
+      "header": {
+        "string": "f.eks. Velkommen til firmaets e-post"
+      },
+      "footer": {
+        "string": "f.eks. © 2026 Mitt firma"
+      },
+      "css": {
+        "string": "body { font-family: sans-serif; }"
+      }
+    },
+    "save": {
+      "button": {
+        "string": "Lagre profilering"
+      },
+      "success": {
+        "string": "Profileringen er lagret"
+      },
+      "error": {
+        "string": "Kunne ikke lagre profileringen"
+      }
+    },
+    "errors": {
+      "upload": {
+        "string": "Kunne ikke lese filen"
+      }
     }
+  }
 }

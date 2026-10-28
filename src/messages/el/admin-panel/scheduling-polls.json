@@ -1,63 +1,63 @@
 {
-    "AP_POLLS": {
-        "title": {
-            "string": "Scheduling Polls"
-        },
-        "description": {
-            "string": "Create 'When are you free?' polls to find the best meeting time for internal and external participants."
-        },
-        "form": {
-            "create": {
-                "string": "Create Poll"
-            },
-            "cancel": {
-                "string": "Ακύρωση"
-            },
-            "title": {
-                "string": "New Scheduling Poll"
-            },
-            "poll_title": {
-                "string": "Poll Title"
-            },
-            "title_hint": {
-                "string": "e.g. Q1 Planning Meeting"
-            },
-            "participants": {
-                "string": "Participants"
-            },
-            "description": {
-                "string": "Περιγραφή"
-            },
-            "time_slots": {
-                "string": "Proposed Time Slots"
-            },
-            "add_slot": {
-                "string": "Add Slot"
-            },
-            "submit": {
-                "string": "Create Poll"
-            }
-        },
-        "create": {
-            "success": {
-                "string": "Poll created"
-            },
-            "error": {
-                "string": "Failed to create poll"
-            }
-        },
-        "list": {
-            "empty": {
-                "string": "No scheduling polls yet. Create one to find the best meeting time."
-            },
-            "by": {
-                "string": "by"
-            }
-        },
-        "errors": {
-            "fields": {
-                "string": "Title, participants, and at least one time slot are required"
-            }
-        }
+  "AP_POLLS": {
+    "title": {
+      "string": "Δημοσκοπήσεις Προγραμματισμού"
+    },
+    "description": {
+      "string": "Δημιουργήστε δημοσκοπήσεις τύπου «Πότε είστε διαθέσιμοι;» για να βρείτε την καλύτερη ώρα συνάντησης για εσωτερικούς και εξωτερικούς συμμετέχοντες."
+    },
+    "form": {
+      "create": {
+        "string": "Δημιουργία Δημοσκόπησης"
+      },
+      "cancel": {
+        "string": "Ακύρωση"
+      },
+      "title": {
+        "string": "Νέα Δημοσκόπηση Προγραμματισμού"
+      },
+      "poll_title": {
+        "string": "Τίτλος Δημοσκόπησης"
+      },
+      "title_hint": {
+        "string": "π.χ. Συνάντηση Προγραμματισμού Τ1"
+      },
+      "participants": {
+        "string": "Συμμετέχοντες"
+      },
+      "description": {
+        "string": "Περιγραφή"
+      },
+      "time_slots": {
+        "string": "Προτεινόμενες Χρονικές Θέσεις"
+      },
+      "add_slot": {
+        "string": "Προσθήκη Θέσης"
+      },
+      "submit": {
+        "string": "Δημιουργία Δημοσκόπησης"
+      }
+    },
+    "create": {
+      "success": {
+        "string": "Η δημοσκόπηση δημιουργήθηκε"
+      },
+      "error": {
+        "string": "Αποτυχία δημιουργίας δημοσκόπησης"
+      }
+    },
+    "list": {
+      "empty": {
+        "string": "Δεν υπάρχουν δημοσκοπήσεις προγραμματισμού ακόμα. Δημιουργήστε μία για να βρείτε την καλύτερη ώρα συνάντησης."
+      },
+      "by": {
+        "string": "από"
+      }
+    },
+    "errors": {
+      "fields": {
+        "string": "Ο τίτλος, οι συμμετέχοντες και τουλάχιστον μία χρονική θέση είναι υποχρεωτικά"
+      }
     }
+  }
 }

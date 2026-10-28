@@ -1,70 +1,70 @@
 {
     "AP_DRAFTS": {
         "title": {
-            "string": "Collaborative Drafts"
+            "string": "Совместные черновики"
         },
         "description": {
-            "string": "Share draft emails with colleagues for review and approval before sending."
+            "string": "Делитесь черновиками писем с коллегами для проверки и согласования перед отправкой."
         },
         "form": {
             "share": {
-                "string": "Share Draft"
+                "string": "Поделиться черновиком"
             },
             "cancel": {
                 "string": "Отмена"
             },
             "title": {
-                "string": "Share a Draft"
+                "string": "Поделиться черновиком"
             },
             "subject": {
-                "string": "Subject"
+                "string": "Тема"
             },
             "reviewers": {
-                "string": "Reviewers"
+                "string": "Рецензенты"
             },
             "message": {
-                "string": "Message to Reviewers"
+                "string": "Сообщение рецензентам"
             },
             "message_hint": {
-                "string": "Please review this draft before I send it"
+                "string": "Пожалуйста, проверьте этот черновик перед отправкой"
             },
             "body": {
-                "string": "Email Body"
+                "string": "Текст письма"
             },
             "submit": {
-                "string": "Share Draft"
+                "string": "Поделиться черновиком"
             }
         },
         "create": {
             "success": {
-                "string": "Draft shared"
+                "string": "Черновик отправлен на проверку"
             },
             "error": {
-                "string": "Failed to share draft"
+                "string": "Не удалось поделиться черновиком"
             }
         },
         "review": {
             "approved": {
-                "string": "Draft approved"
+                "string": "Черновик согласован"
             },
             "rejected": {
-                "string": "Draft rejected"
+                "string": "Черновик отклонён"
             },
             "error": {
-                "string": "Review failed"
+                "string": "Не удалось выполнить проверку"
             }
         },
         "list": {
             "empty": {
-                "string": "No shared drafts. Create one to collaborate on an email."
+                "string": "Нет общих черновиков. Создайте первый, чтобы работать над письмом сообща."
             },
             "by": {
-                "string": "by"
+                "string": "от"
             }
         },
         "errors": {
             "fields": {
-                "string": "Subject, body, and at least one reviewer are required"
+                "string": "Укажите тему, текст и хотя бы одного рецензента"
             }
         }
     }

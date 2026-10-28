@@ -7,6 +7,9 @@
       "string": "Filter domains..."
     },
     "add_new_domain": { "string": "Add new custom domain" },
+    "add": { "string": "Add" },
+    "adding": { "string": "Adding..." },
+    "deleting": { "string": "Deleting..." },
     "select_all": {
       "string": "Select all"
     },

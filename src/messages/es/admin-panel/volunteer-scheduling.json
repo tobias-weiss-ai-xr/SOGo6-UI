@@ -4,25 +4,25 @@
             "string": "Programación de voluntarios"
         },
         "description": {
-            "string": "Manage volunteers, assign shifts, track hours, and generate certificates"
+            "string": "Gestione voluntarios, asigne turnos, controle horas y genere certificados"
         },
         "errors": {
             "fields": {
                 "string": "Required fields missando"
             },
             "fail": {
-                "string": "Operation failed"
+                "string": "Error en la operación"
             }
         },
         "success": {
             "create": {
-                "string": "Volunteer registered"
+                "string": "Voluntario registrado"
             },
             "shift": {
-                "string": "Shift assigned"
+                "string": "Turno asignado"
             },
             "cert": {
-                "string": "Certificate generated"
+                "string": "Certificado generado"
             }
         },
         "register": {
@@ -32,36 +32,36 @@
         },
         "shift": {
             "title": {
-                "string": "Create Shift"
+                "string": "Crear turno"
             },
             "select": {
-                "string": "Select volunteer..."
+                "string": "Seleccionar voluntario..."
             },
             "task": {
-                "string": "Task"
+                "string": "Tarea"
             },
             "start": {
-                "string": "Start"
+                "string": "Inicio"
             },
             "end": {
-                "string": "End"
+                "string": "Fin"
             }
         },
         "field": {
             "name": {
-                "string": "Name"
+                "string": "Nombre"
             },
             "email": {
-                "string": "Email"
+                "string": "Correo"
             },
             "hours": {
-                "string": "Hours"
+                "string": "Horas"
             },
             "status": {
-                "string": "Status"
+                "string": "Estado"
             },
             "no_shows": {
-                "string": "No-shows"
+                "string": "Inasistencias"
             }
         },
         "button": {
@@ -69,29 +69,29 @@
                 "string": "Registor"
             },
             "assign": {
-                "string": "Assign Shift"
+                "string": "Asignar turno"
             }
         },
         "stats": {
             "title": {
-                "string": "Statistics"
+                "string": "Estadísticas"
             },
             "volunteers": {
-                "string": "Volunteers"
+                "string": "Voluntarios"
             },
             "hours": {
-                "string": "Total Hours"
+                "string": "Horas totales"
             },
             "shifts": {
-                "string": "Active Shifts"
+                "string": "Turnos activos"
             }
         },
         "list": {
             "title": {
-                "string": "All Volunteers"
+                "string": "Todos los voluntarios"
             },
             "empty": {
-                "string": "No volunteers registered yet"
+                "string": "Aún no hay voluntarios registrados"
             }
         }
     }

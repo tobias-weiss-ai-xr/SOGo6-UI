@@ -114,6 +114,14 @@ export function isMailActionSeenFlagToggle(arg: {
   return normalizeMailActionDataArray(arg.data).includes('\\Seen')
 }
 
+export function isMailActionFlaggedToggle(arg: {
+  action: 'tag' | 'untag' | 'move' | 'spam' | 'ham' | 'copy'
+  data?: string | string[] | null
+}): boolean {
+  if (arg.action !== 'tag' && arg.action !== 'untag') return false
+  return normalizeMailActionDataArray(arg.data).includes('\\Flagged')
+}
+
 /** Mail actions that remove the message from its source folder. */
 export function isFolderRemovingAction(action: string): boolean {
   return action === 'move' || action === 'spam' || action === 'ham'
@@ -158,6 +166,36 @@ export function dispatchSeenPatchOnAllFolderMessageCaches(
       const mail = draft.mails.find((m) => String(m.id) === String(arg.mailId))
       if (mail) {
         mail.seen = arg.seen
+      }
+    })
+    const patch = dispatch(action as UnknownAction) as unknown
+    if (patch && typeof (patch as { undo?: () => void }).undo === 'function') {
+      patches.push(patch as PatchResult)
+    }
+  }
+  return patches
+}
+
+export function dispatchFlaggedPatchOnAllFolderMessageCaches(
+  dispatch: ThunkDispatch<RootState, unknown, UnknownAction>,
+  state: RootState,
+  arg: {
+    accountId?: string
+    folder: string
+    mailId: string
+    flagged: boolean
+  }
+): PatchResult[] {
+  const accountKey = arg.accountId ?? '0'
+  const patches: PatchResult[] = []
+  const cachedArgs = folderMessagesCache.selectCachedArgs(state)
+  for (const queryArg of cachedArgs) {
+    const qAccount = queryArg.accountId ?? '0'
+    if (qAccount !== accountKey || queryArg.folder !== arg.folder) continue
+    const action = folderMessagesCache.updateQueryData(queryArg, (draft) => {
+      const mail = draft.mails.find((m) => String(m.id) === String(arg.mailId))
+      if (mail) {
+        mail.flagged = arg.flagged
       }
     })
     const patch = dispatch(action as UnknownAction) as unknown
@@ -235,6 +273,41 @@ export function dispatchGetMailSeenPatch(
     },
     (draft) => {
       draft.seen = arg.seen
+    }
+  )
+  const patch = dispatch(action as UnknownAction) as unknown
+  if (patch && typeof (patch as { undo?: () => void }).undo === 'function') {
+    return patch as PatchResult
+  }
+  return undefined
+}
+
+export function dispatchGetMailFlaggedPatch(
+  dispatch: ThunkDispatch<RootState, unknown, UnknownAction>,
+  arg: {
+    accountId?: string
+    folder: string
+    mailId: string
+    flagged: boolean
+  }
+): PatchResult | undefined {
+  const action = (
+    apiSlice.util as unknown as {
+      updateQueryData: (
+        name: string,
+        queryArg: { accountId?: string; folder: string; mailId: string },
+        recipe: (draft: ImapMessages) => void
+      ) => unknown
+    }
+  ).updateQueryData(
+    'getMail',
+    {
+      accountId: arg.accountId,
+      folder: arg.folder,
+      mailId: arg.mailId,
+    },
+    (draft) => {
+      draft.flagged = arg.flagged
     }
   )
   const patch = dispatch(action as UnknownAction) as unknown

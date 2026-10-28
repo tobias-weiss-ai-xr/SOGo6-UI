@@ -3,7 +3,6 @@
 import { Slot } from '@radix-ui/react-slot'
 import { VariantProps, cva } from 'class-variance-authority'
 import { ChevronsLeft, ChevronsRight, Menu } from 'lucide-react'
-import Image from 'next/image'
 import * as React from 'react'
 
 import { Button } from '@/components/ui/button'
@@ -391,7 +390,6 @@ const SidebarHeader = React.forwardRef<
   HTMLDivElement,
   React.ComponentProps<'div'>
 >(({ className, ...props }, ref) => {
-  const { open } = useSidebar()
   return (
     <div
       ref={ref}
@@ -399,16 +397,6 @@ const SidebarHeader = React.forwardRef<
       className={cn('bg-sidebar flex flex-col gap-2 p-2', className)}
       {...props}
     >
-      {open && (
-        <div className="flex items-center justify-center gap-4">
-          <Image
-            alt="App Logo"
-            src={'/images/sogo-full-alt.png'}
-            width={100}
-            height={50}
-          />
-        </div>
-      )}
       <div className="group-data-[state=collapsed]:hidden">
         <NavigationToggler className="flex gap-2" />
       </div>
@@ -666,7 +654,7 @@ const SidebarMenuAction = React.forwardRef<
         ref={ref}
         data-sidebar={dataSidebar ? dataSidebar : 'menu-action'}
         className={cn(
-          'text-sidebar-foreground ring-sidebar-ring hover:text-sidebar-accent-foreground peer-hover/menu-button:text-sidebar-accent-foreground absolute top-1.5 right-1 flex aspect-square w-5 items-center justify-center rounded-md p-0 outline-hidden cursor-pointer transition-[opacity_200ms_ease-in-out,transform] focus-visible:ring-2 [&>svg]:shrink-0',
+          'text-sidebar-foreground ring-sidebar-ring hover:text-sidebar-accent-foreground peer-hover/menu-button:text-sidebar-accent-foreground absolute top-1.5 right-1 flex aspect-square w-5 cursor-pointer items-center justify-center rounded-md p-0 outline-hidden transition-[opacity_200ms_ease-in-out,transform] focus-visible:ring-2 [&>svg]:shrink-0',
           // Increases the hit area of the button on mobile.
           'after:absolute after:-inset-2 md:after:hidden',
           'peer-data-[size=sm]/menu-button:top-1',

@@ -15,6 +15,8 @@ export interface ComposeMailFields {
   requestReadReceipt: boolean
   selectedPriority: MailComposeDraft['priority']
   isPlainText: boolean
+  signMessage?: boolean
+  encryptMessage?: boolean
   sendAt?: string | null
 }
 
@@ -28,6 +30,8 @@ export function buildComposeMailPayload({
   requestReadReceipt,
   selectedPriority,
   isPlainText,
+  signMessage,
+  encryptMessage,
   sendAt,
 }: ComposeMailFields): SendMailBody {
   return {
@@ -44,5 +48,7 @@ export function buildComposeMailPayload({
     is_html: !isPlainText,
     reply_to: selectedIdentity?.replyTo || null,
     send_at: sendAt ?? null,
+    sign: signMessage ?? false,
+    encrypt: encryptMessage ?? false,
   }
 }

@@ -84,3 +84,29 @@ describe('DialogOverlay Component', () => {
     expect(overlay).toBeInTheDocument()
   })
 })
+
+describe('Dialog close button', () => {
+  // Regression: without an explicit size + flex centering the close button
+  // inherited the (now removed) 44px blanket floor — the X icon sat
+  // top-left in an oversized box and the hover/focus ring was asymmetric.
+  it('has an explicit square size and centers its icon', () => {
+    render(
+      <Dialog>
+        <DialogTrigger>Open Dialog</DialogTrigger>
+        <DialogContent>
+          <DialogTitle>Test Dialog</DialogTitle>
+          <div>Dialog Content</div>
+        </DialogContent>
+      </Dialog>
+    )
+
+    fireEvent.click(screen.getByText('Open Dialog'))
+
+    const closeButton = screen.getByRole('button', { name: 'Close' })
+    expect(closeButton).toHaveClass('h-7')
+    expect(closeButton).toHaveClass('w-7')
+    expect(closeButton).toHaveClass('flex')
+    expect(closeButton).toHaveClass('items-center')
+    expect(closeButton).toHaveClass('justify-center')
+  })
+})

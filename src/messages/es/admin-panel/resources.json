@@ -4,40 +4,40 @@
             "string": "Reserva de recursos"
         },
         "description": {
-            "string": "Manage bookable resources such as meeting rooms, equipment, and vehicles. Resources can be invited as attendees to calendar events with automatic conflict detection."
+            "string": "Gestione recursos reservables como salas de reuniones, equipos y vehículos. Los recursos pueden invitarse como asistentes a eventos del calendario con detección automática de conflictos."
         },
         "refresh": {
-            "string": "Refresh"
+            "string": "Actualizar"
         },
         "cancel": {
             "string": "Cancelar"
         },
         "count_one": {
-            "string": "resource"
+            "string": "recurso"
         },
         "count_many": {
-            "string": "resources"
+            "string": "recursos"
         },
         "status": {
             "active": {
-                "string": "Active"
+                "string": "Activo"
             },
             "inactive": {
-                "string": "Inactive"
+                "string": "Inactivo"
             }
         },
         "labels": {
             "name": {
-                "string": "Name"
+                "string": "Nombre"
             },
             "email": {
-                "string": "Email"
+                "string": "Correo"
             },
             "type": {
-                "string": "Type"
+                "string": "Tipo"
             },
             "capacity": {
-                "string": "Capacity"
+                "string": "Capacidad"
             },
             "location": {
                 "string": "Locación"
@@ -46,21 +46,21 @@
                 "string": "Descripción"
             },
             "booking_policy": {
-                "string": "Booking Policy"
+                "string": "Política de reserva"
             },
             "auto_accept": {
-                "string": "Auto-accept bookings"
+                "string": "Aceptar reservas automáticamente"
             }
         },
         "types": {
             "room": {
-                "string": "Room"
+                "string": "Sala"
             },
             "equipment": {
-                "string": "Equipment"
+                "string": "Equipo"
             },
             "vehicle": {
-                "string": "Vehicle"
+                "string": "Vehículo"
             },
             "other": {
                 "string": "Othor"
@@ -68,10 +68,10 @@
         },
         "policies": {
             "open": {
-                "string": "Open — anyone can book"
+                "string": "Abierta — cualquiera puede reservar"
             },
             "moderated": {
-                "string": "Moderated — requires approval"
+                "string": "Moderada — requiere aprobación"
             },
             "restricted": {
                 "string": "Restricted — specific groups onmente"
@@ -84,42 +84,42 @@
         },
         "table": {
             "name": {
-                "string": "Name"
+                "string": "Nombre"
             },
             "email": {
-                "string": "Email"
+                "string": "Correo"
             },
             "type": {
-                "string": "Type"
+                "string": "Tipo"
             },
             "capacity": {
-                "string": "Capacity"
+                "string": "Capacidad"
             },
             "location": {
                 "string": "Locación"
             },
             "policy": {
-                "string": "Policy"
+                "string": "Política"
             },
             "status": {
-                "string": "Status"
+                "string": "Estado"
             },
             "actions": {
-                "string": "Actions"
+                "string": "Acciones"
             },
             "no_resources": {
-                "string": "No resources configured yet. Create one to get started."
+                "string": "Aún no hay recursos configurados. Cree uno para empezar."
             }
         },
         "create": {
             "button": {
-                "string": "Add Resource"
+                "string": "Añadir recurso"
             },
             "title": {
-                "string": "Add Resource"
+                "string": "Añadir recurso"
             },
             "description": {
-                "string": "Create a new bookable resource."
+                "string": "Cree un nuevo recurso reservable."
             },
             "submit": {
                 "string": "Crear"
@@ -130,10 +130,10 @@
         },
         "edit": {
             "title": {
-                "string": "Edit Resource"
+                "string": "Editar recurso"
             },
             "description": {
-                "string": "Update resource properties."
+                "string": "Actualice las propiedades del recurso."
             },
             "submit": {
                 "string": "Guardar"
@@ -144,33 +144,33 @@
         },
         "delete": {
             "confirm": {
-                "string": "Delete Resource"
+                "string": "Eliminar recurso"
             },
             "description": {
-                "string": "Are you sure you want to delete this resource? Existing bookings will not be removed."
+                "string": "¿Seguro que desea eliminar este recurso? Las reservas existentes no se eliminarán."
             },
             "submit": {
                 "string": "Eliminar"
             },
             "success": {
-                "string": "Resource deleted"
+                "string": "Recurso eliminado"
             }
         },
         "errors": {
             "name_email_required": {
-                "string": "Name and email are required"
+                "string": "El nombre y el correo electrónico son obligatorios"
             },
             "load_failed": {
-                "string": "Failed to load resources"
+                "string": "Error al cargar los recursos"
             },
             "create_failed": {
-                "string": "Failed to create resource"
+                "string": "Error al crear el recurso"
             },
             "update_failed": {
-                "string": "Failed to update resource"
+                "string": "Error al actualizar el recurso"
             },
             "delete_failed": {
-                "string": "Failed to delete resource"
+                "string": "Error al eliminar el recurso"
             }
         }
     }

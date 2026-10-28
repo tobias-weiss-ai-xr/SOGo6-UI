@@ -30,6 +30,33 @@
     scrollbar-color: #d1d5db transparent;
     scrollbar-gutter: stable;
   }
+
+  /* Smooth transitions for better UX */
+  .transition-smooth {
+    transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+  }
+
+  /* Underline animation for links */
+  .link-underline {
+    position: relative;
+    text-decoration: none;
+  }
+
+  .link-underline::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: currentColor;
+    transform: scaleX(0);
+    transition: transform 0.2s ease;
+  }
+
+  .link-underline:hover::after {
+    transform: scaleX(1);
+  }
 }
 
 @layer base {
@@ -331,19 +358,98 @@
     --sidebar-border: 220 13% 40%;
     --sidebar-ring: 220 80% 60%;
   }
+
+  /*
+   * SOGo 5 Classic — recognizable SOGo 5 default look (light-only).
+   * Tokens sampled from SOGo 5.12 theme-default.css:
+   * primary #4D8080, hover #8EBFBB, accent #B2D6D3, calendar-selected #A1CCC8,
+   * body #fafafa, surfaces #fff, borders #e0e0e0, text rgba(0,0,0,.87)/.54.
+   */
+  .sogo5-classic {
+    --background: 0 0% 98%;
+    --foreground: 0 0% 13%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 13%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 13%;
+
+    --primary: 180 25% 40%; /* #4D8080 classic SOGo teal */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 0 0% 96%;
+    --secondary-foreground: 0 0% 13%;
+
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 46%; /* rgba(0,0,0,.54) on white */
+
+    --accent: 180 31% 79%; /* #B2D6D3 light teal hover */
+    --accent-foreground: 0 0% 13%;
+
+    --destructive: 0 70% 45%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 88%; /* #e0e0e0 */
+    --input: 0 0% 88%;
+    --ring: 180 25% 40%;
+
+    --chart-1: 180 25% 40%;
+    --chart-2: 104 43% 44%; /* #56B04C SOGo accent green */
+    --chart-3: 180 31% 64%; /* #A1CCC8 calendar selection */
+    --chart-4: 180 19% 60%; /* #8EBFBB */
+    --chart-5: 0 70% 45%;
+
+    /* Material 2px radii */
+    --radius: 0.125rem;
+
+    /* SOGo5: gray folder sidebar (#E0E0E0) with teal icon rail + toolbar */
+    --sidebar-background: 0 0% 88%;          /* #E0E0E0 SOGo5 sidebar */
+    --sidebar-background-secondary: 0 0% 96%;
+    --sidebar-foreground: 0 0% 20%;
+    --sidebar-foreground-secondary: 0 0% 46%;
+    --sidebar-muted-foreground-secondary: 0 0% 46%;
+    --sidebar-primary: 180 25% 40%;
+    --sidebar-accent: 180 31% 79%;
+    --sidebar-accent-foreground: 0 0% 13%;
+    --sidebar-border: 0 0% 80%;
+    --sidebar-ring: 180 25% 40%;
+
+    --header-background: 180 25% 40%; /* SOGo5 teal module toolbar */
+    --header-foreground: 0 0% 100%;
+    --header-muted-foreground: 180 31% 79%;
+
+    /* SOGo5 fully teal top band: toolbar + sidebar header share the color;
+       the sidebar header zone is the lighter #639997 SOGo5 shade */
+    --header-toolbar-bg: 180 25% 40%;
+    --sidebar-header-bg: 178 21% 49%; /* #639997 */
+  }
 }
 
 @layer base {
   html {
     font-size: 16px; /* Base font size: 14px instead of default 16px */
     overflow-x: hidden;
+    scroll-behavior: smooth;
   }
   * {
     @apply border-border outline-ring/50;
   }
   body {
     @apply bg-background text-foreground;
+    /* Enable text selection with theme colors */
+    --color-selection-bg: hsl(var(--primary));
+    --color-selection-text: hsl(var(--primary-foreground));
   }
+}
+
+/* Text selection styling */
+::selection {
+  background-color: hsl(var(--primary));
+  color: hsl(var(--primary-foreground));
+}
+
+/* Focus within styles for form elements */
+:focus-within {
+  outline: none;
 }
 
 @layer base {
@@ -375,6 +481,10 @@ html.dyslexia [class*="font-"] {
   word-spacing: 0.1em !important;
 }
 
+/* Class-based dark mode: next-themes sets .dark on <html> (attribute="class").
+   Without this, Tailwind v4's dark: variant follows prefers-color-scheme
+   instead of the in-app theme toggle and the UI renders half-dark. */
+@custom-variant dark (&:where(.dark, .dark *));
 @custom-variant dyslexia (&:where(.dyslexia, .dyslexia *));
 @custom-variant tritanopia (&:where(.tritanopia, .tritanopia *));
 @custom-variant deuteranopia (&:where(.deuteranopia, .deuteranopia *));
@@ -503,21 +613,140 @@ input:disabled:focus-visible,
   }
 }
 
-/* Minimum touch target sizes for mobile */
-/* WCAG 2.1: 2.5.5 Target Size (Level AAA) */
-button,
-input[type="button"],
-input[type="submit"],
-input[type="reset"],
-[role="button"],
-[role="link"] {
+/* Opt-in touch target size (WCAG 2.1: 2.5.5 Target Size, Level AAA = 44px).
+   NOT applied globally: the old blanket per-button min-size floor inflated
+   unsized icon buttons (dialog/sheet close X — off-center icon, asymmetric
+   hover ring), forced Radix Checkbox/Radio/Switch to 44px, and the old
+   sibling-spacing rule double-spaced gap-based toolbars.
+   Apply .touch-target deliberately to standalone primary CTAs; adjacent
+   targets are spaced via layout gaps (satisfies WCAG 2.5.8 AA). */
+@utility touch-target {
   min-height: 44px;
   min-width: 44px;
 }
 
-/* Ensure touch targets have enough spacing */
-button + button,
-input + input,
-[role="button"] + [role="button"] {
-  margin: 4px;
+/* ─── SOGo 5 Classic extras ────────────────────────────────────────────
+   Outside @layer base so it wins over Tailwind utilities. Material
+   conventions: Roboto-first type, uppercase 500-weight text buttons,
+   2px radii come from the token block. Icon-only buttons unaffected. */
+.sogo5-classic {
+  /* SOGo5 renders "Fira Sans" everywhere — rebind the Geist vars so every
+     font-sans/utility and body default resolves to Fira inside the classic
+     skin (type-identical to the reference UI). */
+  --font-sans: var(--font-fira-sans), Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --font-geist-sans: var(--font-fira-sans), Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-family: var(--font-fira-sans), Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+.sogo5-classic body {
+  font-family: var(--font-fira-sans), Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* SOGo5 header is 64px tall (md-toolbar default), not 48 — a 16px shift
+   misaligns every band below in the pixel diff */
+.sogo5-classic header {
+  height: 64px;
+}
+
+.sogo5-classic button:not([data-classic-plain]) {
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+/* SOGo5 compact controls: dense select/combobox triggers */
+.sogo5-classic button[role="combobox"] {
+  height: 1.75rem; /* 28px */
+  padding-top: 0;
+  padding-bottom: 0;
+  min-height: 0;
+}
+
+/* SOGo5 top band: the sidebar header joins the teal module toolbar so the
+   toolbar reads full-width (sogo5 has ONE teal strip across sidebar+content).
+   Reuse --header-background so both stay in sync. */
+.sogo5-classic [data-sidebar="header"] {
+  background-color: hsl(var(--sidebar-header-bg, var(--header-background)));
+  color: hsl(var(--header-foreground));
+  height: 128px; /* sogo5 md-toolbar md-tall: teal band above the folder list */
+}
+.sogo5-classic [data-sidebar="header"] [data-sidebar="menu-button"]:hover {
+  background-color: rgba(0, 0, 0, 0.12);
+  color: inherit;
+}
+
+/* Gray SOGo5 folder sidebar body sits under the teal band */
+.sogo5-classic [data-sidebar="content"] {
+  background-color: hsl(var(--sidebar-background));
+}
+
+/* SOGo5 login: form card on neutral background + solid green right panel */
+.sogo5-classic .login-panel {
+  background-color: #56b04c; /* SOGo5 accent green */
+}
+
+/* SOGo5: unread mail rows are bold on the neutral list background — no tint */
+.sogo5-classic .bg-primary\/15.font-semibold {
+  background-color: transparent;
+}
+
+/* SOGo5 mail: the reading pane sits on #EEEEEE, not the page bg */
+.sogo5-classic .classic-reading-pane {
+  background-color: #eeeeee;
+}
+.sogo5-classic .classic-reading-pane .ck-content,
+.sogo5-classic .classic-reading-pane .ck-editor__main {
+  background-color: #eeeeee;
+}
+
+/* SOGo5 composer: Send is the bright branded green #00C853 */
+.sogo5-classic .classic-compose .bg-primary {
+  background-color: #00c853;
+}
+
+/* SOGo5 header searches sit on a white pill so text is readable on the
+   teal band (idle mails-search pill + input searches in the other modules) */
+.sogo5-classic header .text-gray-500 {
+  color: #374151;
+  background-color: #ffffff;
+  border-color: #ffffff;
+}
+.sogo5-classic header input {
+  background-color: #ffffff;
+  color: #374151;
+}
+.sogo5-classic header input::placeholder {
+  color: #6b7280;
+  opacity: 1;
+}
+.sogo5-classic header input::placeholder + * {
+  color: #6b7280;
+}
+.sogo5-classic header .text-muted-foreground {
+  color: #6b7280; /* SOGo5: readable placeholder/overlay text on the teal band */
+}
+
+/* sogo5 calendar: hour gutter is the neutral list bg, not white */
+.sogo5-classic .rbc-time-gutter {
+  background-color: hsl(var(--background));
+}
+
+/* SOGo5 mail rows: 40px tall with 16px spacing (56px pitch). sogo6 classic
+   rows render 66px — the 10px/row drift compounds down the list and is the
+   main driver of the mail mid-band delta. min-h-14 is unique to the classic
+   mail list item. */
+.sogo5-classic [class*="min-h-14"] {
+  height: 40px;
+  min-height: 40px;
+  margin-bottom: 16px;
+  overflow: hidden;
+}
+
+/* SOGo5 main content panes are neutral #EEEEEE, not teal-tinted */
+.sogo5-classic .mail-client {
+  background-color: hsl(var(--background));
+}
+
+.sogo5-classic [data-sidebar="footer"] {
+  background-color: hsl(var(--sidebar-background));
 }

@@ -1,70 +1,70 @@
 {
     "AP_SLOTS": {
         "title": {
-            "string": "Appointment Slots"
+            "string": "Bokningstider"
         },
         "description": {
-            "string": "Publish bookable time slots (Calendly-style). Generate booking links for external participants."
+            "string": "Publicera bokbara tider (i stil med Calendly). Skapa bokningslänkar för externa deltagare."
         },
         "form": {
             "create": {
-                "string": "Create Slot"
+                "string": "Skapa tid"
             },
             "cancel": {
                 "string": "Avbryt"
             },
             "title": {
-                "string": "New Appointment Slot"
+                "string": "Ny bokningstid"
             },
             "slot_title": {
-                "string": "Slot Title"
+                "string": "Titel"
             },
             "duration": {
-                "string": "Duration (min)"
+                "string": "Längd (min)"
             },
             "buffer": {
-                "string": "Buffer (min)"
+                "string": "Buffert (min)"
             },
             "start_time": {
-                "string": "Start Time"
+                "string": "Starttid"
             },
             "end_time": {
-                "string": "End Time"
+                "string": "Sluttid"
             },
             "days": {
-                "string": "Available Days"
+                "string": "Tillgängliga dagar"
             },
             "submit": {
-                "string": "Create Slot"
+                "string": "Skapa tid"
             }
         },
         "create": {
             "success": {
-                "string": "Slot created"
+                "string": "Tiden skapades"
             },
             "error": {
-                "string": "Failed to create slot"
+                "string": "Kunde inte skapa tid"
             }
         },
         "slots": {
             "title": {
-                "string": "Your Slots"
+                "string": "Dina tider"
             },
             "empty": {
-                "string": "No appointment slots. Create one to share your availability."
+                "string": "Inga bokningstider. Skapa en för att dela din tillgänglighet."
             }
         },
         "bookings": {
             "title": {
-                "string": "Recent Bookings"
+                "string": "Senaste bokningar"
             },
             "empty": {
-                "string": "No bookings yet."
+                "string": "Inga bokningar ännu."
             }
         },
         "errors": {
             "fields": {
-                "string": "Title, duration, times, and at least one day are required"
+                "string": "Titel, längd, tider och minst en dag krävs"
             }
         }
     }

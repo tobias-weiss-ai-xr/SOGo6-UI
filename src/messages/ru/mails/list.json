@@ -1,91 +1,93 @@
 {
     "MAILS_LIST": {
+        "star": { "string": "Отметить звёздочкой" },
+        "unstar": { "string": "Снять звёздочку" },
         "messages_number": {
-            "string": "{number, plural, one {# message} other {# messages}}",
+            "string": "{number, plural, one {# сообщение} few {# сообщения} many {# сообщений} other {# сообщения}}",
             "context": "Displays the number of messages in an mail folder."
         },
         "sort": {
             "date": {
                 "ascending": {
-                    "string": "Newest first"
+                    "string": "Сначала новые"
                 },
                 "descending": {
-                    "string": "Older first"
+                    "string": "Сначала старые"
                 }
             },
             "size": {
                 "ascending": {
-                    "string": "Smallest first"
+                    "string": "Сначала маленькие"
                 },
                 "descending": {
-                    "string": "Largest first"
+                    "string": "Сначала большие"
                 }
             }
         },
         "pagination": {
             "previous": {
-                "string": "Previous page"
+                "string": "Предыдущая страница"
             },
             "next": {
-                "string": "Next page"
+                "string": "Следующая страница"
             }
         },
         "list_load_error": {
             "folder_not_found": {
-                "string": "This folder no longer exists.",
+                "string": "Эта папка больше не существует.",
                 "description": "Message when folder messages request returns 404"
             },
             "mail_unavailable": {
-                "string": "Mail server is temporarily unavailable.",
+                "string": "Почтовый сервер временно недоступен.",
                 "description": "Message when folder messages request returns 503"
             },
             "retry": {
-                "string": "Try again",
+                "string": "Повторить попытку",
                 "description": "Button label to refetch folder messages after 503"
             },
             "open_inbox": {
-                "string": "Open Inbox",
+                "string": "Открыть «Входящие»",
                 "description": "Button label to navigate to INBOX after folder 404"
             },
             "generic": {
-                "string": "Unable to load messages. Please try again later.",
+                "string": "Не удалось загрузить сообщения. Повторите попытку позже.",
                 "description": "Generic folder list load error (e.g. 500)"
             }
         },
         "filter": {
             "client_scope_notice": {
-                "string": "Filters apply only to messages loaded on this page.",
+                "string": "Фильтры применяются только к сообщениям, загруженным на этой странице.",
                 "description": "Hint that URL filters are client-side on the current server page"
             },
             "all": {
                 "string": "Все"
             },
             "unread": {
-                "string": "Unread"
+                "string": "Непрочитанные"
             },
             "read": {
-                "string": "Read"
+                "string": "Прочитанные"
             },
             "starred": {
-                "string": "Starred"
+                "string": "Со звёздочкой"
             },
             "attachments": {
-                "string": "Attachments"
+                "string": "С вложениями"
             }
         },
         "layout": {
             "full": {
-                "string": "Full view"
+                "string": "Полный вид"
             },
             "split": {
-                "string": "Split view"
+                "string": "Разделённый вид"
             }
         },
         "select_message": {
-            "string": "Select a message to read"
+            "string": "Выберите сообщение для чтения"
         },
         "no_items": {
-            "string": "No message found."
+            "string": "Сообщения не найдены."
         },
         "actions": {
             "mark_as_read": {
@@ -95,24 +97,24 @@
                 "string": "Отметить как непрочитанное"
             },
             "delete": {
-                "string": "Move to trash"
+                "string": "Переместить в корзину"
             },
             "archive": {
                 "string": "Архив"
             },
             "select_mail": {
-                "string": "Select message"
+                "string": "Выбрать сообщение"
             },
             "deselect_mail": {
-                "string": "Deselect message"
+                "string": "Снять выбор с сообщения"
             }
         },
         "time": {
             "minutes_ago": {
-                "string": "{count}m ago"
+                "string": "{count} мин. назад"
             }
         }
     },
-    "viewFlat": "Flat list",
-    "viewConversation": "Conversation view"
+    "viewFlat": "Плоский список",
+    "viewConversation": "Просмотр бесед"
 }

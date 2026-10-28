@@ -18,6 +18,11 @@ jest.mock('@/lib/fonts', () => ({
     variable: '--font-opendyslexic',
     style: { fontFamily: 'OpenDyslexic' },
   },
+  firaSans: {
+    className: 'fira-sans',
+    variable: '--font-fira-sans',
+    style: { fontFamily: 'Fira Sans' },
+  },
 }))
 
 jest.mock('next-intl', () => ({

@@ -18,8 +18,8 @@ import { useCurrentFolder } from '@/features/mails/hooks/use-current-folder'
 import { useMailDetailFolderActions } from '@/features/mails/hooks/use-mail-detail-folder-actions'
 import { useMailReplyActions } from '@/features/mails/hooks/use-mail-reply-actions'
 import { usePrintMail } from '@/features/mails/hooks/use-print-mail'
-import { useGetMailQuery } from '@/features/mails/store/mails-api'
 import type { ImapAttachments } from '@/features/mails/mails-types'
+import { useGetMailQuery } from '@/features/mails/store/mails-api'
 import { useIsMobile } from '@/hooks/use-mobile'
 import { useRouter } from '@/lib/i18n/navigation'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
@@ -41,11 +41,14 @@ const VisualizationPage: React.FC = () => {
     : (params.folder ?? '')
   const isMobile = useIsMobile()
 
-  const { data, isLoading, isError } = useGetMailQuery({
-    folder,
-    mailId: mail_id,
-    accountId: account,
-  })
+  const { data, isLoading, isError } = useGetMailQuery(
+    {
+      folder,
+      mailId: mail_id,
+      accountId: account,
+    },
+    { skip: !mail_id }
+  )
 
   const { handlePrint, isPrintDisabled } = usePrintMail(data)
   const { folderType } = useCurrentFolder(folder, account)

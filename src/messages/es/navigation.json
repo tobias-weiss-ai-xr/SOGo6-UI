@@ -24,7 +24,7 @@
             },
             "tasks": {
                 "title": "Tareas",
-                "view_all": "View all tasks",
+                "view_all": "Ver todas las tareas",
                 "search_placeholder": "Buscar tareas",
                 "overdue": "Vencidas",
                 "today": "Hoy",
@@ -52,7 +52,7 @@
             },
             "coming_soon": {
                 "title": "Función próxima",
-                "description": "This section is under development and will be available soon."
+                "description": "Esta sección está en desarrollo y estará disponible próximamente."
             }
         }
     }

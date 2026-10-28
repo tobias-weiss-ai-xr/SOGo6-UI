@@ -42,39 +42,39 @@
                 "string": "Contacts"
             },
             "last": {
-                "string": "Last displayed module"
+                "string": "Dernier module affiché"
             },
             "enable_external_avatar": {
-                "string": "Enable external avatar"
+                "string": "Activer l'avatar externe"
             }
         },
         "descriptions": {
             "language": {
-                "string": "The language used in the app."
+                "string": "La langue utilisée dans l'application."
             },
             "timezone": {
-                "string": "The time zone you are in."
+                "string": "Le fuseau horaire dans lequel vous vous trouvez."
             },
             "short_date_style": {
-                "string": "How dates are displayed in the app."
+                "string": "La manière dont les dates sont affichées dans l'application."
             },
             "long_date_style": {
-                "string": "How dates are displayed in the app."
+                "string": "La manière dont les dates sont affichées dans l'application."
             },
             "time_style": {
-                "string": "How time is displayed in the app."
+                "string": "La manière dont l'heure est affichée dans l'application."
             },
             "default_view": {
-                "string": "The default view when you open the app."
+                "string": "La vue par défaut à l'ouverture de l'application."
             },
             "refresh_frequency": {
-                "string": " How often the app should check for new emails, calendar events, and more."
+                "string": " La fréquence à laquelle l'application doit vérifier les nouveaux e-mails, événements de calendrier, etc."
             },
             "enable_notifications": {
-                "string": "Receive notifications for new emails, calendar events, and more."
+                "string": "Recevoir des notifications pour les nouveaux e-mails, événements de calendrier, etc."
             },
             "enable_external_avatar": {
-                "string": "Enable external avatar (e.g., Gravatar)"
+                "string": "Activer l'avatar externe (p. ex. Gravatar)"
             }
         }
     }

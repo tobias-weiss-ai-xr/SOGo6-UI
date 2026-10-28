@@ -46,11 +46,11 @@
         "string": "Nieuwe passkey registreren",
         "context": "Button to register a new passkey",
         "title": {
-          "string": "Register a New Passkey",
+          "string": "Nieuwe passkey registreren",
           "context": "Title for the passkey registration dialog"
         },
         "description": {
-          "string": "Your browser or device will guide you through setting up a passkey using biometrics, a PIN, or an external security key.",
+          "string": "Uw browser of apparaat begeleidt u bij het instellen van een passkey met biometrie, een pincode of een externe beveiligingssleutel.",
           "context": "Description for the passkey registration dialog"
         },
         "button": {
@@ -58,11 +58,11 @@
           "context": "Button to start passkey registration"
         },
         "waiting": {
-          "string": "Waiting for device interaction — follow the prompts on your device.",
+          "string": "Wachten op interactie met het apparaat — volg de instructies op uw apparaat.",
           "context": "Status during passkey registration"
         },
         "success": {
-          "string": "Passkey registered successfully!",
+          "string": "Passkey succesvol geregistreerd!",
           "context": "Status when passkey registration succeeds"
         }
       },

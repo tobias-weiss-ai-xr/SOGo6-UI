@@ -1,0 +1,17 @@
+{
+  "Login": {
+    "offlineNotice": "Jesteś obecnie offline. Niektóre funkcje mogą być ograniczone."
+  },
+  "PWA": {
+    "installPrompt": {
+      "title": "Zainstaluj SOGo",
+      "description": "Dodaj SOGo do ekranu głównego, aby mieć szybki dostęp nawet w trybie offline.",
+      "install": "Zainstaluj",
+      "dismiss": "Nie teraz"
+    },
+    "offlineBanner": {
+      "label": "Jesteś offline. Niektóre funkcje mogą nie działać."
+    },
+    "featureUnavailable": "{feature} nie jest dostępne w trybie offline."
+  }
+}

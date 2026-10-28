@@ -1,17 +1,17 @@
 {
     "AP_USERS": {
         "title": {
-            "string": "User Management"
+            "string": "Zarządzanie użytkownikami"
         },
         "description": {
-            "string": "Create, edit, and delete user accounts in the LDAP directory"
+            "string": "Twórz, edytuj i usuwaj konta użytkowników w katalogu LDAP"
         },
         "search": {
             "placeholder": {
-                "string": "Search by name, email, or UID..."
+                "string": "Szukaj po nazwie, e-mailu lub UID..."
             },
             "clear": {
-                "string": "Clear"
+                "string": "Wyczyść"
             }
         },
         "table": {
@@ -19,48 +19,48 @@
                 "string": "UID"
             },
             "cn": {
-                "string": "Full Name"
+                "string": "Imię i nazwisko"
             },
             "mail": {
-                "string": "Email"
+                "string": "E-mail"
             },
             "sn": {
-                "string": "Surname"
+                "string": "Nazwisko"
             },
             "givenName": {
-                "string": "Given Name"
+                "string": "Imię"
             },
             "uidNumber": {
-                "string": "UID Number"
+                "string": "Numer UID"
             },
             "gidNumber": {
-                "string": "GID Number"
+                "string": "Numer GID"
             },
             "homeDirectory": {
-                "string": "Home Directory"
+                "string": "Katalog domowy"
             },
             "actions": {
-                "string": "Actions"
+                "string": "Akcje"
             },
             "no_users": {
-                "string": "No users found"
+                "string": "Nie znaleziono użytkowników"
             },
             "loading": {
-                "string": "Loading users..."
+                "string": "Wczytywanie użytkowników..."
             }
         },
         "create": {
             "button": {
-                "string": "Create User"
+                "string": "Utwórz użytkownika"
             },
             "title": {
-                "string": "Create New User"
+                "string": "Utwórz nowego użytkownika"
             },
             "success": {
-                "string": "User created successfully"
+                "string": "Użytkownik został pomyślnie utworzony"
             },
             "error": {
-                "string": "Failed to create user"
+                "string": "Nie udało się utworzyć użytkownika"
             }
         },
         "edit": {
@@ -68,16 +68,16 @@
                 "string": "Edytuj"
             },
             "title": {
-                "string": "Edit User"
+                "string": "Edytuj użytkownika"
             },
             "save": {
-                "string": "Save Changes"
+                "string": "Zapisz zmiany"
             },
             "success": {
-                "string": "User updated successfully"
+                "string": "Użytkownik został pomyślnie zaktualizowany"
             },
             "error": {
-                "string": "Failed to update user"
+                "string": "Nie udało się zaktualizować użytkownika"
             }
         },
         "delete": {
@@ -85,45 +85,45 @@
                 "string": "Usuń"
             },
             "confirm": {
-                "string": "Are you sure you want to delete user {uid}?"
+                "string": "Czy na pewno chcesz usunąć użytkownika {uid}?"
             },
             "success": {
-                "string": "User deleted successfully"
+                "string": "Użytkownik został pomyślnie usunięty"
             },
             "error": {
-                "string": "Failed to delete user"
+                "string": "Nie udało się usunąć użytkownika"
             }
         },
         "form": {
             "uid": {
-                "string": "User ID (email)"
+                "string": "Identyfikator użytkownika (e-mail)"
             },
             "cn": {
-                "string": "Full Name"
+                "string": "Imię i nazwisko"
             },
             "sn": {
-                "string": "Surname"
+                "string": "Nazwisko"
             },
             "givenName": {
-                "string": "Given Name"
+                "string": "Imię"
             },
             "mail": {
-                "string": "Email Address"
+                "string": "Adres e-mail"
             },
             "password": {
-                "string": "Password"
+                "string": "Hasło"
             },
             "uidNumber": {
-                "string": "UID Number (optional)"
+                "string": "Numer UID (opcjonalnie)"
             },
             "gidNumber": {
-                "string": "GID Number (optional)"
+                "string": "Numer GID (opcjonalnie)"
             },
             "homeDirectory": {
-                "string": "Home Directory (optional)"
+                "string": "Katalog domowy (opcjonalnie)"
             },
             "required": {
-                "string": "Required"
+                "string": "Wymagane"
             }
         }
     }

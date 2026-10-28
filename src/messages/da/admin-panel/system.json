@@ -1,79 +1,79 @@
 {
-    "AP_SYSTEM": {
-        "title": {
-            "string": "System Settings"
+  "AP_SYSTEM": {
+    "title": {
+      "string": "Systemindstillinger"
+    },
+    "description": {
+      "string": "Konfigurér systembred adfærd for SOGo-instansen."
+    },
+    "form_title": {
+      "string": "Konfiguration"
+    },
+    "form_description": {
+      "string": "Redigér globale systemindstillinger nedenfor."
+    },
+    "save": {
+      "string": "Gem"
+    },
+    "saving": {
+      "string": "Saving…"
+    },
+    "saved": {
+      "string": "Systemindstillingerne blev gemt."
+    },
+    "save_error": {
+      "string": "Kunne ikke gemme: {message}"
+    },
+    "load_error": {
+      "string": "Kunne ikke indlæse systemindstillingerne."
+    },
+    "retry": {
+      "string": "Retry"
+    },
+    "unsaved_changes": {
+      "string": "Du har ikke-gemte ændringer."
+    },
+    "fields": {
+      "SOGO_S_DIRECT_LOGIN": {
+        "label": {
+          "string": "Direct Login"
         },
         "description": {
-            "string": "Configure system-wide behaviour for the SOGo instance."
-        },
-        "form_title": {
-            "string": "Konfiguration"
-        },
-        "form_description": {
-            "string": "Modify global system settings below."
-        },
-        "save": {
-            "string": "Gem"
-        },
-        "saving": {
-            "string": "Saving…"
-        },
-        "saved": {
-            "string": "System settings saved successfully."
-        },
-        "save_error": {
-            "string": "Failed to save: {message}"
-        },
-        "load_error": {
-            "string": "Failed to load system settings."
-        },
-        "retry": {
-            "string": "Retry"
-        },
-        "unsaved_changes": {
-            "string": "You have unsaved changes."
-        },
-        "fields": {
-            "SOGO_S_DIRECT_LOGIN": {
-                "label": {
-                    "string": "Direct Login"
-                },
-                "description": {
-                    "string": "Allow users to log in without selecting a domain."
-                }
-            },
-            "SOGO_S_DOMAINLESS_LOGIN": {
-                "label": {
-                    "string": "Domainless Login"
-                },
-                "description": {
-                    "string": "Allow login with username only (no @domain)."
-                }
-            },
-            "SOGO_S_DO_DOMAIN": {
-                "label": {
-                    "string": "Enable Domains"
-                },
-                "description": {
-                    "string": "Enable multi-domain support for this instance."
-                }
-            },
-            "SOGO_S_REJECT_UNKNOWN_DOMAIN": {
-                "label": {
-                    "string": "Reject Unknown Domains"
-                },
-                "description": {
-                    "string": "Reject login attempts from domains not configured in SOGo."
-                }
-            },
-            "SOGO_S_SENDMAIL": {
-                "label": {
-                    "string": "Sendmail Path"
-                },
-                "description": {
-                    "string": "Absolute path to the sendmail binary used for outgoing mail."
-                }
-            }
+          "string": "Tillad brugere at logge ind uden at vælge et domæne."
         }
+      },
+      "SOGO_S_DOMAINLESS_LOGIN": {
+        "label": {
+          "string": "Login uden domæne"
+        },
+        "description": {
+          "string": "Tillad login med kun brugernavn (uden @domæne)."
+        }
+      },
+      "SOGO_S_DO_DOMAIN": {
+        "label": {
+          "string": "Aktivér domæner"
+        },
+        "description": {
+          "string": "Aktivér understøttelse af flere domæner for denne instans."
+        }
+      },
+      "SOGO_S_REJECT_UNKNOWN_DOMAIN": {
+        "label": {
+          "string": "Afvis ukendte domæner"
+        },
+        "description": {
+          "string": "Afvis loginforsøg fra domæner, der ikke er konfigureret i SOGo."
+        }
+      },
+      "SOGO_S_SENDMAIL": {
+        "label": {
+          "string": "Sendmail-sti"
+        },
+        "description": {
+          "string": "Absolut sti til sendmail-programmet, der bruges til udgående post."
+        }
+      }
     }
+  }
 }

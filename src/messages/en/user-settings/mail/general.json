@@ -1,5 +1,13 @@
 {
     "US_MAIL_GENERAL": {
+        "immediately_on_display": {
+            "string": "Immediately",
+            "context": "Mark a message as read immediately when opened"
+        },
+        "after_displaying_for_seconds": {
+            "string": "After 5 seconds",
+            "context": "Mark a message as read after it has been displayed for a few seconds"
+        },
         "title": {
             "string": "Mail General Settings",
             "context": "Title for the mail general settings page"

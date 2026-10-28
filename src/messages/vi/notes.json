@@ -1,0 +1,18 @@
+{
+  "NOTES": {
+    "title": "Ghi chú",
+    "new_note": "Ghi chú mới",
+    "save": "Lưu",
+    "cancel": "Hủy",
+    "edit": "Chỉnh sửa",
+    "delete": "Xóa",
+    "confirm_delete": "Xóa ghi chú",
+    "confirm_delete_message": "Bạn có chắc chắn muốn xóa ghi chú này không? Hành động này không thể hủy.",
+    "loading": "Đang tải...",
+    "error": "Đã xảy ra lỗi khi tải ghi chú.",
+    "no_notes": "Không tìm thấy ghi chú.",
+    "created_at": "Tạo: {date}",
+    "placeholder_title": "Nhập tiêu đề ghi chú",
+    "placeholder_content": "Bắt đầu nhập ghi chú của bạn ở đây..."
+  }
+}

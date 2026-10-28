@@ -52,3 +52,6 @@ compiled-messages/
 # Python bytecode
 __pycache__/
 *.pyc
+
+# taskfleet worktrees (do not commit)
+.tf-worktrees/

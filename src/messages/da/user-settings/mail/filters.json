@@ -1,306 +1,306 @@
 {
-    "US_MAIL_FILTERS": {
-        "title": {
-            "string": "Mail Filters",
-            "context": "Title for the mail filters settings page"
-        },
-        "page": {
-            "description": {
-                "string": "Automatically organize incoming messages with custom rules. Filters run in order from top to bottom."
-            }
-        },
-        "form": {
-            "edit": {
-                "string": "Edit filter: {name}"
-            },
-            "create": {
-                "string": "Create filter",
-                "description": "Create a new filter for incoming messages."
-            }
-        },
-        "operators": {
-            "title": {
-                "string": "For incoming messages that"
-            },
-            "all": {
-                "string": "Match all messages"
-            },
-            "or": {
-                "string": "Match any of the following rules",
-                "context": "test context",
-                "developer_comment": "This is the string that will be used in the UI to indicate that any of the rules should match."
-            },
-            "and": {
-                "string": "Match all the following rules"
-            }
-        },
-        "conditions": {
-            "title": {
-                "string": "Match the following conditions"
-            },
-            "is": {
-                "string": "Is"
-            },
-            "is_not": {
-                "string": "Is not"
-            },
-            "contains": {
-                "string": "Contains"
-            },
-            "not_contain": {
-                "string": "Does not contain"
-            },
-            "match": {
-                "string": "Match"
-            },
-            "not_match": {
-                "string": "Does not match"
-            },
-            "match_regex": {
-                "string": "Match regex"
-            },
-            "starts_with": {
-                "string": "Starts with"
-            },
-            "ends_with": {
-                "string": "Ends with"
-            },
-            "exists": {
-                "string": "Exists"
-            },
-            "size_over": {
-                "string": "Is over (KB)"
-            },
-            "not_match_regex": {
-                "string": "Does not match regex"
-            },
-            "not_exists": {
-                "string": "Does not exist"
-            },
-            "size_under": {
-                "string": "Is under (KB)"
-            },
-            "is_over": {
-                "string": "Is over"
-            }
-        },
-        "rules": {
-            "body": {
-                "string": "Body"
-            },
-            "from": {
-                "string": "From"
-            },
-            "subject": {
-                "string": "Subject"
-            },
-            "to": {
-                "string": "To"
-            },
-            "cc": {
-                "string": "CC"
-            },
-            "to_or_cc": {
-                "string": "To or CC"
-            },
-            "header": {
-                "string": "Header"
-            },
-            "size": {
-                "string": "Size (Kb)"
-            }
-        },
-        "actions": {
-            "title": {
-                "string": "Perform the following actions"
-            },
-            "move": {
-                "string": "File the message in"
-            },
-            "copy": {
-                "string": "Copy the message to"
-            },
-            "stop": {
-                "string": "Stop processing filter rules"
-            },
-            "reject": {
-                "string": "Send a reject message",
-                "disabled_tooltip": {
-                    "string": "Reject actions are not yet available on this server"
-                }
-            },
-            "discard": {
-                "string": "Discard the message"
-            },
-            "forward": {
-                "string": "Forward the message to"
-            },
-            "removeheader": {
-                "string": "Remove header"
-            },
-            "flag": {
-                "string": "Flag the message with",
-                "disabled_tooltip": {
-                    "string": "Flag actions are not yet available on this server"
-                }
-            },
-            "keep": {
-                "string": "Keep the message"
-            }
-        },
-        "empty_state": {
-            "title": {
-                "string": "No mail filters yet"
-            },
-            "description": {
-                "string": "Create rules to automatically organize incoming messages."
-            },
-            "add_button": {
-                "string": "Add your first filter"
-            }
-        },
-        "list": {
-            "section_title": {
-                "string": "Your filters"
-            },
-            "section_description": {
-                "string": "Drag to reorder. Disabled filters are skipped."
-            },
-            "add_filter": {
-                "string": "Add filter"
-            },
-            "advanced_structure": {
-                "string": "Advanced structure"
-            },
-            "read_only": {
-                "string": "Read-only"
-            },
-            "drag_handle": {
-                "string": "Reorder filter"
-            },
-            "delete_confirm": {
-                "title": {
-                    "string": "Delete filter?"
-                },
-                "description": {
-                    "string": "This filter will be removed when you save your changes."
-                },
-                "confirm": {
-                    "string": "Slet"
-                },
-                "cancel": {
-                    "string": "Annuller"
-                }
-            }
-        },
-        "folder_select": {
-            "placeholder": {
-                "string": "Select a folder"
-            },
-            "search": {
-                "string": "Search folders..."
-            },
-            "empty": {
-                "string": "No folders found"
-            },
-            "aria_label": {
-                "string": "Select destination folder"
-            },
-            "create_if_missing": {
-                "string": "Create folder if it does not exist"
-            }
-        },
-        "advanced_structure_readonly": {
-            "string": "This filter uses an advanced rule structure that cannot be edited in the simplified editor. You can still enable or disable it, or delete it."
-        },
-        "aria": {
-            "toggle_filter": {
-                "string": "Toggle filter"
-            }
-        },
-        "labels": {
-            "filter_name": {
-                "string": "Filter name"
-            },
-            "custom_header": {
-                "string": "Header name"
-            }
-        },
-        "placeholders": {
-            "forward_email": {
-                "string": "name@example.com"
-            },
-            "header_name": {
-                "string": "Header name (e.g. X-Spam-Flag)"
-            },
-            "size_value": {
-                "string": "Size (e.g. 1024, 5M, 10K)"
-            },
-            "imap_flag": {
-                "string": "IMAP flag (e.g. \\Flagged)"
-            },
-            "reject_message": {
-                "string": "Optional reject message"
-            }
-        },
-        "success": {
-            "title": {
-                "string": "Filters saved"
-            },
-            "saved": {
-                "string": "Your mail filters have been updated."
-            }
-        },
-        "errors_api": {
-            "title": {
-                "string": "Could not save filters"
-            },
-            "save_failed": {
-                "string": "An error occurred while saving your mail filters."
-            },
-            "load_failed": {
-                "string": "Could not load mail filters. Please try again later."
-            },
-            "feature_disabled": {
-                "string": "Mail filtering has been disabled by your administrator."
-            }
-        },
-        "errors": {
-            "validation": {
-                "name_required": {
-                    "string": "Filter name is required"
-                },
-                "rules_required": {
-                    "string": "At least one condition is required"
-                },
-                "actions_required": {
-                    "string": "At least one action is required"
-                },
-                "folder_required": {
-                    "string": "A destination folder is required"
-                },
-                "email_invalid": {
-                    "string": "Enter a valid email address"
-                },
-                "header_name_required": {
-                    "string": "Header name is required"
-                },
-                "rule_value_required": {
-                    "string": "Condition value is required"
-                },
-                "size_value_required": {
-                    "string": "Enter a valid size in KB"
-                },
-                "size_condition_required": {
-                    "string": "Size rules must use over or under"
-                },
-                "flag_required": {
-                    "string": "An IMAP flag is required"
-                },
-                "action_unavailable": {
-                    "string": "This action is not available yet"
-                }
-            }
+  "US_MAIL_FILTERS": {
+    "title": {
+      "string": "Mail Filters",
+      "context": "Title for the mail filters settings page"
+    },
+    "page": {
+      "description": {
+        "string": "Organisér automatisk indgående meddelelser med egne regler. Filtre køres i rækkefølge fra top til bund."
+      }
+    },
+    "form": {
+      "edit": {
+        "string": "Redigér filter: {name}"
+      },
+      "create": {
+        "string": "Opret filter",
+        "description": "Create a new filter for incoming messages."
+      }
+    },
+    "operators": {
+      "title": {
+        "string": "For indgående meddelelser, der"
+      },
+      "all": {
+        "string": "Matcher alle meddelelser"
+      },
+      "or": {
+        "string": "Matcher enhver af følgende regler",
+        "context": "test context",
+        "developer_comment": "Dette er den streng, der bruges i brugergrænsefladen til at angive, at enhver af reglerne kan matche."
+      },
+      "and": {
+        "string": "Matcher alle følgende regler"
+      }
+    },
+    "conditions": {
+      "title": {
+        "string": "Matcher følgende betingelser"
+      },
+      "is": {
+        "string": "Is"
+      },
+      "is_not": {
+        "string": "Is not"
+      },
+      "contains": {
+        "string": "Contains"
+      },
+      "not_contain": {
+        "string": "Indeholder ikke"
+      },
+      "match": {
+        "string": "Match"
+      },
+      "not_match": {
+        "string": "Matcher ikke"
+      },
+      "match_regex": {
+        "string": "Match regex"
+      },
+      "starts_with": {
+        "string": "Starts with"
+      },
+      "ends_with": {
+        "string": "Ends with"
+      },
+      "exists": {
+        "string": "Exists"
+      },
+      "size_over": {
+        "string": "Is over (KB)"
+      },
+      "not_match_regex": {
+        "string": "Matcher ikke regex"
+      },
+      "not_exists": {
+        "string": "Findes ikke"
+      },
+      "size_under": {
+        "string": "Er under (KB)"
+      },
+      "is_over": {
+        "string": "Is over"
+      }
+    },
+    "rules": {
+      "body": {
+        "string": "Body"
+      },
+      "from": {
+        "string": "From"
+      },
+      "subject": {
+        "string": "Subject"
+      },
+      "to": {
+        "string": "To"
+      },
+      "cc": {
+        "string": "CC"
+      },
+      "to_or_cc": {
+        "string": "To or CC"
+      },
+      "header": {
+        "string": "Header"
+      },
+      "size": {
+        "string": "Size (Kb)"
+      }
+    },
+    "actions": {
+      "title": {
+        "string": "Udfør følgende handlinger"
+      },
+      "move": {
+        "string": "Arkivér meddelelsen i"
+      },
+      "copy": {
+        "string": "Kopiér meddelelsen til"
+      },
+      "stop": {
+        "string": "Stop behandling af filterregler"
+      },
+      "reject": {
+        "string": "Send en afvisningsmeddelelse",
+        "disabled_tooltip": {
+          "string": "Afvisningshandlinger er endnu ikke tilgængelige på denne server"
         }
+      },
+      "discard": {
+        "string": "Forkast meddelelsen"
+      },
+      "forward": {
+        "string": "Videresend meddelelsen til"
+      },
+      "removeheader": {
+        "string": "Fjern header"
+      },
+      "flag": {
+        "string": "Markér meddelelsen med",
+        "disabled_tooltip": {
+          "string": "Markeringshandlinger er endnu ikke tilgængelige på denne server"
+        }
+      },
+      "keep": {
+        "string": "Behold meddelelsen"
+      }
+    },
+    "empty_state": {
+      "title": {
+        "string": "Ingen mailfiltre endnu"
+      },
+      "description": {
+        "string": "Opret regler for automatisk at organisere indgående meddelelser."
+      },
+      "add_button": {
+        "string": "Tilføj dit første filter"
+      }
+    },
+    "list": {
+      "section_title": {
+        "string": "Your filters"
+      },
+      "section_description": {
+        "string": "Træk for at ændre rækkefølgen. Deaktiverede filtre springes over."
+      },
+      "add_filter": {
+        "string": "Add filter"
+      },
+      "advanced_structure": {
+        "string": "Avanceret struktur"
+      },
+      "read_only": {
+        "string": "Read-only"
+      },
+      "drag_handle": {
+        "string": "Ændr rækkefølge for filter"
+      },
+      "delete_confirm": {
+        "title": {
+          "string": "Slet filteret?"
+        },
+        "description": {
+          "string": "Dette filter fjernes, når du gemmer dine ændringer."
+        },
+        "confirm": {
+          "string": "Slet"
+        },
+        "cancel": {
+          "string": "Annuller"
+        }
+      }
+    },
+    "folder_select": {
+      "placeholder": {
+        "string": "Vælg en mappe"
+      },
+      "search": {
+        "string": "Søg i mapper..."
+      },
+      "empty": {
+        "string": "Ingen mapper fundet"
+      },
+      "aria_label": {
+        "string": "Vælg destinationsmappe"
+      },
+      "create_if_missing": {
+        "string": "Opret mappen, hvis den ikke findes"
+      }
+    },
+    "advanced_structure_readonly": {
+      "string": "Dette filter bruger en avanceret regelstruktur, der ikke kan redigeres i den forenklede editor. Du kan stadig aktivere eller deaktivere det eller slette det."
+    },
+    "aria": {
+      "toggle_filter": {
+        "string": "Slå filter til/fra"
+      }
+    },
+    "labels": {
+      "filter_name": {
+        "string": "Filter name"
+      },
+      "custom_header": {
+        "string": "Header name"
+      }
+    },
+    "placeholders": {
+      "forward_email": {
+        "string": "name@example.com"
+      },
+      "header_name": {
+        "string": "Headernavn (f.eks. X-Spam-Flag)"
+      },
+      "size_value": {
+        "string": "Størrelse (f.eks. 1024, 5M, 10K)"
+      },
+      "imap_flag": {
+        "string": "IMAP-flag (f.eks. \\Flagged)"
+      },
+      "reject_message": {
+        "string": "Valgfri afvisningsmeddelelse"
+      }
+    },
+    "success": {
+      "title": {
+        "string": "Filtre gemt"
+      },
+      "saved": {
+        "string": "Dine mailfiltre er blevet opdateret."
+      }
+    },
+    "errors_api": {
+      "title": {
+        "string": "Kunne ikke gemme filtre"
+      },
+      "save_failed": {
+        "string": "Der opstod en fejl under gemning af dine mailfiltre."
+      },
+      "load_failed": {
+        "string": "Kunne ikke indlæse mailfiltre. Prøv igen senere."
+      },
+      "feature_disabled": {
+        "string": "Mailfiltrering er blevet deaktiveret af din administrator."
+      }
+    },
+    "errors": {
+      "validation": {
+        "name_required": {
+          "string": "Filternavn er påkrævet"
+        },
+        "rules_required": {
+          "string": "Mindst én betingelse er påkrævet"
+        },
+        "actions_required": {
+          "string": "Mindst én handling er påkrævet"
+        },
+        "folder_required": {
+          "string": "En destinationsmappe er påkrævet"
+        },
+        "email_invalid": {
+          "string": "Indtast en gyldig e-mailadresse"
+        },
+        "header_name_required": {
+          "string": "Headernavn er påkrævet"
+        },
+        "rule_value_required": {
+          "string": "Betingelsesværdi er påkrævet"
+        },
+        "size_value_required": {
+          "string": "Indtast en gyldig størrelse i KB"
+        },
+        "size_condition_required": {
+          "string": "Størrelsesregler skal bruge over eller under"
+        },
+        "flag_required": {
+          "string": "Et IMAP-flag er påkrævet"
+        },
+        "action_unavailable": {
+          "string": "Denne handling er endnu ikke tilgængelig"
+        }
+      }
     }
+  }
 }

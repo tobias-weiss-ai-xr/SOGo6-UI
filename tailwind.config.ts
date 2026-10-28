@@ -30,11 +30,16 @@ const config: Config = {
           from: { opacity: '0', transform: 'scale(0.9)' },
           to: { opacity: '1', transform: 'scale(1)' },
         },
+        'pulse-soft': {
+          '0%, 100%': { opacity: '1' },
+          '50%': { opacity: '0.6' },
+        },
       },
       animation: {
         horizontalTranslate: 'horizontalTranslate 2s ease-in-out forwards',
         shake: 'shake 0.5s ease-in-out',
         'fade-in': 'fade-in 0.3s ease-out',
+        'pulse-soft': 'pulse-soft 1.5s ease-in-out infinite',
       },
       colors: {
         background: 'hsl(var(--background))',

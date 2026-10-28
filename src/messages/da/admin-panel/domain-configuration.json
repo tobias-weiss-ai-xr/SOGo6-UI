@@ -36,7 +36,7 @@
         "description": {
           "string": "Vælg godkendelsesmetode for brugere. 'Plain' betyder det klassiske brugernavn/adgangskode"
         },
-        "developer_comment": "Options might include LDAP, SQL, etc."
+        "developer_comment": "Muligheder kan omfatte LDAP, SQL osv."
       },
       "SOGO_D_CAS_URL": {
         "name": {
@@ -252,7 +252,7 @@
         "description": {
           "string": "Vælg et unikt navn til denne brugerkilde, det vises ikke for brugere"
         },
-        "developer_comment": "Only for SOGo to differentiate differents User SOurce"
+        "developer_comment": "Kun til SOGo for at skelne mellem forskellige brugerkilder"
       },
       "US_TYPE": {
         "name": {
@@ -261,7 +261,7 @@
         "description": {
           "string": "Indstil din brugerkildetype"
         },
-        "developer_comment": "Only ldap and sql supported for now"
+        "developer_comment": "I øjeblikket understøttes kun ldap og sql"
       },
       "US_LDAP_HOSTNAME": {
         "name": {
@@ -342,7 +342,7 @@
         "description": {
           "string": "Yderligere filter til brug for LDAP-forespørgsler. Brug '=', '!=', 'AND', 'OR' og parenteser. Eksempel: '(objectClass='mailUser' OR objectClass!='mailGroup') AND accountStatus='active'"
         },
-        "developer_comment": "Use SOGo's syntax and not ldap syntax for filter"
+        "developer_comment": "Brug SOGos syntaks og ikke ldap-syntaks til filteret"
       },
       "US_LDAP_PWD_POLICY": {
         "name": {

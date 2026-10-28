@@ -1,26 +1,26 @@
 {
     "AP_BRANDING": {
         "title": {
-            "string": "Multi-Tenant Branding"
+            "string": "Branding wielodostępny"
         },
         "description": {
-            "string": "Customize login page appearance per domain — logo, colors, CSS, header/footer text."
+            "string": "Dostosuj wygląd strony logowania dla każdej domeny — logo, kolory, CSS, tekst nagłówka i stopki."
         },
         "select_domain": {
             "string": "Domena"
         },
         "select_placeholder": {
-            "string": "Choose a domain..."
+            "string": "Wybierz domenę..."
         },
         "select_hint": {
-            "string": "Select a domain above to view and edit its branding."
+            "string": "Wybierz domenę powyżej, aby wyświetlić i edytować jej branding."
         },
         "card": {
             "identity": {
-                "string": "Visual Identity"
+                "string": "Identyfikacja wizualna"
             },
             "login_page": {
-                "string": "Login Page"
+                "string": "Strona logowania"
             }
         },
         "labels": {
@@ -31,29 +31,29 @@
                 "string": "Favicon"
             },
             "primary_color": {
-                "string": "Primary Color"
+                "string": "Kolor podstawowy"
             },
             "login_header": {
-                "string": "Login Header Text"
+                "string": "Tekst nagłówka logowania"
             },
             "login_footer": {
-                "string": "Login Footer Text"
+                "string": "Tekst stopki logowania"
             },
             "custom_css": {
-                "string": "Custom CSS"
+                "string": "Niestandardowy CSS"
             }
         },
         "buttons": {
             "upload": {
-                "string": "Upload"
+                "string": "Prześlij"
             }
         },
         "placeholders": {
             "header": {
-                "string": "e.g. Welcome to My Company Mail"
+                "string": "np. Witamy w poczcie Mojej Firmy"
             },
             "footer": {
-                "string": "e.g. © 2026 My Company"
+                "string": "np. © 2026 Moja Firma"
             },
             "css": {
                 "string": "body { font-family: sans-serif; }"
@@ -61,18 +61,18 @@
         },
         "save": {
             "button": {
-                "string": "Save Branding"
+                "string": "Zapisz branding"
             },
             "success": {
-                "string": "Branding saved"
+                "string": "Zapisano branding"
             },
             "error": {
-                "string": "Failed to save branding"
+                "string": "Nie udało się zapisać brandingu"
             }
         },
         "errors": {
             "upload": {
-                "string": "Failed to read file"
+                "string": "Nie udało się odczytać pliku"
             }
         }
     }

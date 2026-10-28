@@ -1,53 +1,53 @@
 {
     "AP_CRM": {
         "title": {
-            "string": "CRM-light"
+            "string": "Enkelt CRM"
         },
         "description": {
-            "string": "Associate contacts with accounts, track interactions, categorize contacts, and record notes."
+            "string": "Koppla kontakter till kundkonton, följ upp interaktioner, kategorisera kontakter och spara anteckningar."
         },
         "form": {
             "create": {
-                "string": "New Account"
+                "string": "Nytt kundkonto"
             },
             "cancel": {
                 "string": "Avbryt"
             },
             "title": {
-                "string": "Create Account"
+                "string": "Skapa konto"
             },
             "name": {
-                "string": "Account Name"
+                "string": "Kontonamn"
             },
             "domain": {
                 "string": "Domän"
             },
             "industry": {
-                "string": "Industry"
+                "string": "Bransch"
             },
             "notes": {
                 "string": "Anteckningar"
             },
             "submit": {
-                "string": "Create Account"
+                "string": "Skapa konto"
             }
         },
         "create": {
             "success": {
-                "string": "Account created"
+                "string": "Kontot skapades"
             },
             "error": {
-                "string": "Failed to create"
+                "string": "Kunde inte skapa"
             }
         },
         "list": {
             "empty": {
-                "string": "No CRM accounts yet."
+                "string": "Inga CRM-konton ännu."
             }
         },
         "errors": {
             "fields": {
-                "string": "Account name is required"
+                "string": "Kontonamn krävs"
             }
         }
     }

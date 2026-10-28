@@ -1,41 +1,41 @@
 {
     "DONOR": {
         "title": {
-            "string": "Donor Communication Management"
+            "string": "Hantering av donatorkommunikation"
         },
         "description": {
-            "string": "Track donors, manage GDPR consent, generate tax receipts, and run campaigns"
+            "string": "Följ upp donatorer, hantera GDPR-samtycke, skapa skatteintyg och driv kampanjer"
         },
         "errors": {
             "fields": {
-                "string": "Required fields missing"
+                "string": "Obligatoriska fält saknas"
             },
             "fail": {
-                "string": "Operation failed"
+                "string": "Åtgärden misslyckades"
             }
         },
         "success": {
             "create": {
-                "string": "Donor registered"
+                "string": "Donator registrerad"
             },
             "donate": {
-                "string": "Donation recorded"
+                "string": "Donation registrerad"
             }
         },
         "register": {
             "title": {
-                "string": "Register Donor"
+                "string": "Registrera donator"
             }
         },
         "donate": {
             "title": {
-                "string": "Record Donation"
+                "string": "Registrera donation"
             },
             "select": {
-                "string": "Select donor..."
+                "string": "Välj donator..."
             },
             "campaign": {
-                "string": "Campaign"
+                "string": "Kampanj"
             }
         },
         "field": {
@@ -43,16 +43,16 @@
                 "string": "Namn"
             },
             "email": {
-                "string": "Email"
+                "string": "E-post"
             },
             "type": {
                 "string": "Typ"
             },
             "total": {
-                "string": "Total"
+                "string": "Totalt"
             },
             "donations": {
-                "string": "Donations"
+                "string": "Donationer"
             },
             "consent": {
                 "string": "GDPR"
@@ -60,40 +60,40 @@
         },
         "type": {
             "individual": {
-                "string": "Individual"
+                "string": "Privatperson"
             },
             "corporate": {
-                "string": "Corporate"
+                "string": "Företag"
             },
             "foundation": {
-                "string": "Foundation"
+                "string": "Stiftelse"
             }
         },
         "button": {
             "register": {
-                "string": "Register"
+                "string": "Registrera"
             },
             "donate": {
-                "string": "Record Donation"
+                "string": "Registrera donation"
             }
         },
         "stats": {
             "title": {
-                "string": "Statistics"
+                "string": "Statistik"
             },
             "total_donors": {
-                "string": "Total Donors"
+                "string": "Totalt antal donatorer"
             },
             "total_raised": {
-                "string": "Total Raised"
+                "string": "Totalt insamlat"
             }
         },
         "list": {
             "title": {
-                "string": "All Donors"
+                "string": "Alla donatorer"
             },
             "empty": {
-                "string": "No donors registered yet"
+                "string": "Inga donatorer registrerade ännu"
             }
         }
     }

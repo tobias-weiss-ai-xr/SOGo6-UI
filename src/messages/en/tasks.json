@@ -103,6 +103,9 @@
       "calendar": {
         "string": "Calendar"
       },
+      "attendees": {
+        "string": "Assignees"
+      },
       "categories": {
         "string": "Categories"
       },

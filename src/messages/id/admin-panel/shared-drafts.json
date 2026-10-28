@@ -1,71 +1,71 @@
 {
-    "AP_DRAFTS": {
-        "title": {
-            "string": "Collaborative Drafts"
-        },
-        "description": {
-            "string": "Share draft emails with colleagues for review and approval before sending."
-        },
-        "form": {
-            "share": {
-                "string": "Share Draft"
-            },
-            "cancel": {
-                "string": "Batal"
-            },
-            "title": {
-                "string": "Share a Draft"
-            },
-            "subject": {
-                "string": "Subject"
-            },
-            "reviewers": {
-                "string": "Reviewers"
-            },
-            "message": {
-                "string": "Message to Reviewers"
-            },
-            "message_hint": {
-                "string": "Please review this draft before I send it"
-            },
-            "body": {
-                "string": "Email Body"
-            },
-            "submit": {
-                "string": "Share Draft"
-            }
-        },
-        "create": {
-            "success": {
-                "string": "Draft shared"
-            },
-            "error": {
-                "string": "Failed to share draft"
-            }
-        },
-        "review": {
-            "approved": {
-                "string": "Draft approved"
-            },
-            "rejected": {
-                "string": "Draft rejected"
-            },
-            "error": {
-                "string": "Review failed"
-            }
-        },
-        "list": {
-            "empty": {
-                "string": "No shared drafts. Create one to collaborate on an email."
-            },
-            "by": {
-                "string": "by"
-            }
-        },
-        "errors": {
-            "fields": {
-                "string": "Subject, body, and at least one reviewer are required"
-            }
-        }
+  "AP_DRAFTS": {
+    "title": {
+      "string": "Draf Kolaboratif"
+    },
+    "description": {
+      "string": "Bagikan draf email dengan rekan kerja untuk ditinjau dan disetujui sebelum dikirim."
+    },
+    "form": {
+      "share": {
+        "string": "Share Draft"
+      },
+      "cancel": {
+        "string": "Batal"
+      },
+      "title": {
+        "string": "Bagikan Draf"
+      },
+      "subject": {
+        "string": "Subject"
+      },
+      "reviewers": {
+        "string": "Reviewers"
+      },
+      "message": {
+        "string": "Pesan untuk Peninjau"
+      },
+      "message_hint": {
+        "string": "Mohon tinjau draf ini sebelum saya mengirimkannya"
+      },
+      "body": {
+        "string": "Email Body"
+      },
+      "submit": {
+        "string": "Share Draft"
+      }
+    },
+    "create": {
+      "success": {
+        "string": "Draft shared"
+      },
+      "error": {
+        "string": "Gagal membagikan draf"
+      }
+    },
+    "review": {
+      "approved": {
+        "string": "Draf disetujui"
+      },
+      "rejected": {
+        "string": "Draf ditolak"
+      },
+      "error": {
+        "string": "Peninjauan gagal"
+      }
+    },
+    "list": {
+      "empty": {
+        "string": "Belum ada draf bersama. Buat satu untuk berkolaborasi pada email."
+      },
+      "by": {
+        "string": "by"
+      }
+    },
+    "errors": {
+      "fields": {
+        "string": "Subjek, isi, dan minimal satu peninjau wajib ada"
+      }
     }
+  }
 }

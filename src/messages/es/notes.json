@@ -1,0 +1,18 @@
+{
+  "NOTES": {
+    "title": "Notas",
+    "new_note": "Nueva nota",
+    "save": "Guardar",
+    "cancel": "Cancelar",
+    "edit": "Editar",
+    "delete": "Eliminar",
+    "confirm_delete": "Eliminar nota",
+    "confirm_delete_message": "¿Está seguro de que desea eliminar esta nota? Esta acción no se puede deshacer.",
+    "loading": "Cargando...",
+    "error": "Se produjo un error al cargar las notas.",
+    "no_notes": "No se encontraron notas.",
+    "created_at": "Creado: {date}",
+    "placeholder_title": "Ingresar título de la nota",
+    "placeholder_content": "Comience a escribir su nota aquí..."
+  }
+}

@@ -13,14 +13,15 @@ interface MailLayoutState {
 }
 
 function loadInitialState(): MailLayoutState {
-  let mode: MailLayoutMode = 'full'
+  let mode: MailLayoutMode = 'split' // SOGo5 parity: list + reading pane
   let viewMode: MailViewMode = 'flat'
   if (typeof window !== 'undefined') {
     try {
       const saved = localStorage.getItem(LAYOUT_KEY)
       if (saved === 'full' || saved === 'split') mode = saved
       const savedView = localStorage.getItem(VIEW_KEY)
-      if (savedView === 'flat' || savedView === 'conversation') viewMode = savedView
+      if (savedView === 'flat' || savedView === 'conversation')
+        viewMode = savedView
     } catch {
       // ignore
     }
@@ -36,11 +37,15 @@ const mailLayoutSlice = createSlice({
   reducers: {
     setMailLayout(state, action: PayloadAction<MailLayoutMode>) {
       state.mode = action.payload
-      try { localStorage.setItem(LAYOUT_KEY, action.payload) } catch {}
+      try {
+        localStorage.setItem(LAYOUT_KEY, action.payload)
+      } catch {}
     },
     setMailViewMode(state, action: PayloadAction<MailViewMode>) {
       state.viewMode = action.payload
-      try { localStorage.setItem(VIEW_KEY, action.payload) } catch {}
+      try {
+        localStorage.setItem(VIEW_KEY, action.payload)
+      } catch {}
     },
     setSelectedMails(state, action: PayloadAction<string[]>) {
       state.selectedMailIds = action.payload
@@ -51,5 +56,10 @@ const mailLayoutSlice = createSlice({
   },
 })
 
-export const { setMailLayout, setMailViewMode, setSelectedMails, clearSelectedMails } = mailLayoutSlice.actions
+export const {
+  setMailLayout,
+  setMailViewMode,
+  setSelectedMails,
+  clearSelectedMails,
+} = mailLayoutSlice.actions
 export default mailLayoutSlice.reducer

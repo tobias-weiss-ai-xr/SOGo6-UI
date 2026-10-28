@@ -811,6 +811,9 @@
                     "string": "Hủy"
                 }
             },
+            "copyEvent": {
+                "string": "Sao chép sự kiện"
+            },
             "editCalendar": {
                 "title": {
                     "string": "Edit Calendar"

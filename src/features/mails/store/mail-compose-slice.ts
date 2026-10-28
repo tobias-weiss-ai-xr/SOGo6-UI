@@ -48,9 +48,9 @@ export interface MailComposeDraft {
     | typeof MAIL_PRIORITY_HIGH
     | typeof MAIL_PRIORITY_HIGHEST
   requestReadReceipt?: boolean
-  /** Whether to sign the message with PGP */
+  /** Whether to sign with the user's S/MIME certificate on send */
   signMessage?: boolean
-  /** Whether to encrypt the message with PGP */
+  /** Whether to encrypt with S/MIME to all recipients on send */
   encryptMessage?: boolean
   isPlainText: boolean
   isDirty: boolean

@@ -1,26 +1,26 @@
 {
   "IDENTITY_COMPONENT": {
     "labels": {
-      "name": "Identity Name",
-      "email": "Email Address",
-      "replyTo": "Reply To",
-      "newIdentity": "New Identity",
-      "default": "Default",
-      "removeIdentity": "Remove Identity",
-      "atLeastOneIdentity": "At least one identity is required",
+      "name": "Identitetsnamn",
+      "email": "E-postadress",
+      "replyTo": "Svara till",
+      "newIdentity": "Ny identitet",
+      "default": "Standard",
+      "removeIdentity": "Ta bort identitet",
+      "atLeastOneIdentity": "Minst en identitet krävs",
       "useDefaultIdentity": {
         "string": "Använd som standardidentitet"
       },
-      "setAsDefault": "Set as default",
-      "defaultDescription": "This identity will be used by default when composing new messages",
-      "mainIdentityEmail": "This is your main email address and cannot be changed",
-      "nameNotEditable": "Name editing is disabled by administrator",
-      "replyToNotEditable": "Reply-To editing is disabled by administrator",
-      "signatures": "Signatures",
-      "signaturesDescription": "Create and manage email signatures for this identity",
-      "signaturePlaceholder": "Enter signature name",
-      "addIdentity": "Add an identity",
-      "allowsCustom": "You can add and manage additional identities"
+      "setAsDefault": "Ange som standard",
+      "defaultDescription": "Denna identitet används som standard när du skriver nya meddelanden",
+      "mainIdentityEmail": "Detta är din huvudsakliga e-postadress och kan inte ändras",
+      "nameNotEditable": "Redigering av namn är inaktiverad av administratören",
+      "replyToNotEditable": "Redigering av Svara till är inaktiverad av administratören",
+      "signatures": "Signaturer",
+      "signaturesDescription": "Skapa och hantera e-postsignaturer för denna identitet",
+      "signaturePlaceholder": "Ange signaturnamn",
+      "addIdentity": "Lägg till en identitet",
+      "allowsCustom": "Du kan lägga till och hantera ytterligare identiteter"
     },
     "description": {
       "useDefaultIdentity": {
@@ -28,10 +28,10 @@
       }
     },
     "accessibility": {
-      "toggleCollapse": "Toggle identity details",
-      "expandIdentity": "Expand",
-      "collapseIdentity": "Collapse",
-      "removeIcon": "Remove identity button"
+      "toggleCollapse": "Växla identitetsdetaljer",
+      "expandIdentity": "Expandera",
+      "collapseIdentity": "Komprimera",
+      "removeIcon": "Knapp för att ta bort identiteten"
     }
   }
 }

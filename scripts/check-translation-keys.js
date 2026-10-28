@@ -286,9 +286,10 @@ function extractTranslationKeysFromCode(content, filePath) {
         const namespace = nsMatch[2]    // e.g., 'ADDRESS_BOOKS_SIDEBAR', 'FORM_COMMONS'
 
         // Pattern for namespaced calls without parameters: variableName('key.string')
-        const namespacedPattern = new RegExp(`${variableName}\\(\\s*['"\`]([a-zA-Z_][a-zA-Z0-9_]*(?:\\.[a-zA-Z_][a-zA-Z0-9_]*)*\\.string)['"\`]\\s*\\)`, 'g')
+        // \b prevents `t` from matching the tail of e.g. `tContact(` in multi-namespace files.
+        const namespacedPattern = new RegExp(`\\b${variableName}\\(\\s*['"\`]([a-zA-Z_][a-zA-Z0-9_]*(?:\\.[a-zA-Z_][a-zA-Z0-9_]*)*\\.string)['"\`]\\s*\\)`, 'g')
         // Pattern for namespaced calls with parameters: variableName('key.string', {...})
-        const namespacedPatternWithParams = new RegExp(`${variableName}\\(\\s*['"\`]([a-zA-Z_][a-zA-Z0-9_]*(?:\\.[a-zA-Z_][a-zA-Z0-9_]*)*\\.string)['"\`]\\s*,`, 'g')
+        const namespacedPatternWithParams = new RegExp(`\\b${variableName}\\(\\s*['"\`]([a-zA-Z_][a-zA-Z0-9_]*(?:\\.[a-zA-Z_][a-zA-Z0-9_]*)*\\.string)['"\`]\\s*,`, 'g')
 
         let namespacedMatch
         while ((namespacedMatch = namespacedPattern.exec(content)) !== null) {

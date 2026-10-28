@@ -1,65 +1,65 @@
 {
-    "AP_APPROVALS": {
-        "title": {
-            "string": "Approval Workflows"
-        },
-        "description": {
-            "string": "Create multi-step approval chains for purchase orders, announcements, and more."
-        },
-        "form": {
-            "create": {
-                "string": "New Approval"
-            },
-            "cancel": {
-                "string": "Annuleren"
-            },
-            "title": {
-                "string": "Create Approval Workflow"
-            },
-            "workflow_title": {
-                "string": "Title"
-            },
-            "category": {
-                "string": "Category"
-            },
-            "description": {
-                "string": "Beschrijving"
-            },
-            "steps": {
-                "string": "Approval Steps"
-            },
-            "submit": {
-                "string": "Create Workflow"
-            }
-        },
-        "create": {
-            "success": {
-                "string": "Workflow created"
-            },
-            "error": {
-                "string": "Failed to create"
-            }
-        },
-        "action": {
-            "approved": {
-                "string": "Step approved"
-            },
-            "rejected": {
-                "string": "Rejected"
-            },
-            "error": {
-                "string": "Action failed"
-            }
-        },
-        "list": {
-            "empty": {
-                "string": "No approval workflows yet."
-            }
-        },
-        "errors": {
-            "fields": {
-                "string": "Title and at least one step with email are required"
-            }
-        }
+  "AP_APPROVALS": {
+    "title": {
+      "string": "Goedkeuringsworkflows"
+    },
+    "description": {
+      "string": "Maak goedkeuringsketens met meerdere stappen voor inkooporders, aankondigingen en meer."
+    },
+    "form": {
+      "create": {
+        "string": "New Approval"
+      },
+      "cancel": {
+        "string": "Annuleren"
+      },
+      "title": {
+        "string": "Goedkeuringsworkflow aanmaken"
+      },
+      "workflow_title": {
+        "string": "Title"
+      },
+      "category": {
+        "string": "Category"
+      },
+      "description": {
+        "string": "Beschrijving"
+      },
+      "steps": {
+        "string": "Goedkeuringsstappen"
+      },
+      "submit": {
+        "string": "Workflow aanmaken"
+      }
+    },
+    "create": {
+      "success": {
+        "string": "Workflow aangemaakt"
+      },
+      "error": {
+        "string": "Aanmaken mislukt"
+      }
+    },
+    "action": {
+      "approved": {
+        "string": "Stap goedgekeurd"
+      },
+      "rejected": {
+        "string": "Rejected"
+      },
+      "error": {
+        "string": "Actie mislukt"
+      }
+    },
+    "list": {
+      "empty": {
+        "string": "Nog geen goedkeuringsworkflows."
+      }
+    },
+    "errors": {
+      "fields": {
+        "string": "Titel en minimaal één stap met e-mailadres zijn verplicht"
+      }
     }
+  }
 }

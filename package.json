@@ -55,6 +55,7 @@
     "@radix-ui/react-toggle-group": "1.1.11",
     "@radix-ui/react-tooltip": "1.2.8",
     "@reduxjs/toolkit": "2.11.2",
+    "@serwist/turbopack": "^9.5.13",
     "@swc/helpers": "^0.5.21",
     "@tanstack/react-table": "8.21.3",
     "@use-gesture/react": "10.3.1",
@@ -68,7 +69,7 @@
     "framer-motion": "12.25.0",
     "geist": "^1.5.1",
     "lucide-react": "0.562.0",
-    "next": "^16.3.3",
+    "next": "^16.4.1",
     "next-intl": "^4.13.7",
     "next-qrcode": "2.5.1",
     "next-themes": "0.4.6",
@@ -79,6 +80,7 @@
     "react-hook-form": "7.70.0",
     "react-redux": "9.2.0",
     "react-virtualized": "9.22.6",
+    "serwist": "^9.5.13",
     "sonner": "2.0.7",
     "tailwind-merge": "3.4.0",
     "tailwindcss-animate": "1.0.7",
@@ -128,5 +130,12 @@
       "prettier --write",
       "jest --bail --findRelatedTests --coverage=false"
     ]
+  },
+  "overrides": {
+    "brace-expansion": "2.1.6",
+    "picomatch": "4.0.4",
+    "ip-address": "10.3.1",
+    "sharp": "0.35.5",
+    "sigstore": "4.1.1"
   }
 }

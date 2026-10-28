@@ -1,50 +1,50 @@
 {
     "VOLUNTEER": {
         "title": {
-            "string": "Volunteer Scheduling"
+            "string": "Volontärsschemaläggning"
         },
         "description": {
-            "string": "Manage volunteers, assign shifts, track hours, and generate certificates"
+            "string": "Hantera volontärer, tilldela pass, följa upp timmar och skapa intyg"
         },
         "errors": {
             "fields": {
-                "string": "Required fields missing"
+                "string": "Obligatoriska fält saknas"
             },
             "fail": {
-                "string": "Operation failed"
+                "string": "Åtgärden misslyckades"
             }
         },
         "success": {
             "create": {
-                "string": "Volunteer registered"
+                "string": "Volontär registrerad"
             },
             "shift": {
-                "string": "Shift assigned"
+                "string": "Pass tilldelat"
             },
             "cert": {
-                "string": "Certificate generated"
+                "string": "Intyg skapat"
             }
         },
         "register": {
             "title": {
-                "string": "Register Volunteer"
+                "string": "Registrera volontär"
             }
         },
         "shift": {
             "title": {
-                "string": "Create Shift"
+                "string": "Skapa pass"
             },
             "select": {
-                "string": "Select volunteer..."
+                "string": "Välj volontär..."
             },
             "task": {
-                "string": "Task"
+                "string": "Uppgift"
             },
             "start": {
                 "string": "Start"
             },
             "end": {
-                "string": "End"
+                "string": "Slut"
             }
         },
         "field": {
@@ -52,46 +52,46 @@
                 "string": "Namn"
             },
             "email": {
-                "string": "Email"
+                "string": "E-post"
             },
             "hours": {
-                "string": "Hours"
+                "string": "Timmar"
             },
             "status": {
                 "string": "Status"
             },
             "no_shows": {
-                "string": "No-shows"
+                "string": "Uteblivna"
             }
         },
         "button": {
             "register": {
-                "string": "Register"
+                "string": "Registrera"
             },
             "assign": {
-                "string": "Assign Shift"
+                "string": "Tilldela pass"
             }
         },
         "stats": {
             "title": {
-                "string": "Statistics"
+                "string": "Statistik"
             },
             "volunteers": {
-                "string": "Volunteers"
+                "string": "Volontärer"
             },
             "hours": {
-                "string": "Total Hours"
+                "string": "Totalt antal timmar"
             },
             "shifts": {
-                "string": "Active Shifts"
+                "string": "Aktiva pass"
             }
         },
         "list": {
             "title": {
-                "string": "All Volunteers"
+                "string": "Alla volontärer"
             },
             "empty": {
-                "string": "No volunteers registered yet"
+                "string": "Inga volontärer registrerade ännu"
             }
         }
     }

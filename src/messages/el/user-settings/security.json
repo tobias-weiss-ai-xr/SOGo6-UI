@@ -46,23 +46,23 @@
         "string": "Εγγραφή νέου κλειδιού πρόσβασης",
         "context": "Button to register a new passkey",
         "title": {
-          "string": "Register a New Passkey",
+          "string": "Καταχώρηση Νέου Passkey",
           "context": "Title for the passkey registration dialog"
         },
         "description": {
-          "string": "Your browser or device will guide you through setting up a passkey using biometrics, a PIN, or an external security key.",
+          "string": "Το πρόγραμμα περιήγησης ή η συσκευή σας θα σας καθοδηγήσει στη ρύθμιση passkey με βιομετρικά, PIN ή εξωτερικό κλειδί ασφαλείας.",
           "context": "Description for the passkey registration dialog"
         },
         "button": {
-          "string": "Register",
+          "string": "Καταχώρηση",
           "context": "Button to start passkey registration"
         },
         "waiting": {
-          "string": "Waiting for device interaction — follow the prompts on your device.",
+          "string": "Αναμονή για αλληλεπίδραση με τη συσκευή — ακολουθήστε τις οδηγίες στη συσκευή σας.",
           "context": "Status during passkey registration"
         },
         "success": {
-          "string": "Passkey registered successfully!",
+          "string": "Το passkey καταχωρήθηκε επιτυχώς!",
           "context": "Status when passkey registration succeeds"
         }
       },

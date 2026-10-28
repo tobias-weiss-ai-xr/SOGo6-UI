@@ -1,64 +1,64 @@
 {
     "EIDAS": {
         "title": {
-            "string": "eIDAS Qualified Signatures"
+            "string": "Квалифицированные подписи eIDAS"
         },
         "description": {
-            "string": "EU Regulation 910/2014 qualified electronic signatures and timestamps"
+            "string": "Квалифицированные электронные подписи и метки времени согласно регламенту ЕС 910/2014"
         },
         "errors": {
             "fields": {
-                "string": "All fields required"
+                "string": "Заполните все поля"
             },
             "fail": {
-                "string": "Operation failed"
+                "string": "Операция не выполнена"
             }
         },
         "success": {
             "sign": {
-                "string": "Document signed with QES"
+                "string": "Документ подписан QES"
             }
         },
         "sign": {
             "title": {
-                "string": "Sign Document"
+                "string": "Подписать документ"
             },
             "placeholder": {
-                "string": "Enter document content to sign..."
+                "string": "Введите содержимое документа для подписания..."
             },
             "signer": {
-                "string": "Signer Email"
+                "string": "Эл. почта подписанта"
             },
             "algorithm": {
-                "string": "Hash Algorithm"
+                "string": "Алгоритм хеширования"
             },
             "button": {
-                "string": "Sign with QES"
+                "string": "Подписать QES"
             }
         },
         "verify": {
             "title": {
-                "string": "Verify Signature"
+                "string": "Проверить подпись"
             },
             "doc_hash": {
-                "string": "Document Hash"
+                "string": "Хеш документа"
             },
             "signature": {
-                "string": "Signature"
+                "string": "Подпись"
             },
             "button": {
-                "string": "Verify"
+                "string": "Проверить"
             },
             "valid": {
-                "string": "Valid"
+                "string": "Действительна"
             },
             "invalid": {
-                "string": "Invalid"
+                "string": "Недействительна"
             }
         },
         "certs": {
             "title": {
-                "string": "Trust Service Certificates"
+                "string": "Сертификаты доверенных служб"
             },
             "type": {
                 "string": "Тип"
@@ -67,7 +67,7 @@
                 "string": "Имя"
             },
             "hash": {
-                "string": "Hash"
+                "string": "Хеш"
             }
         }
     }

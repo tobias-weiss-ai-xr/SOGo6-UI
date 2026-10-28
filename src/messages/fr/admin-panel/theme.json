@@ -39,55 +39,55 @@
             },
             "foreground": {
                 "label": {
-                    "string": "Foreground"
+                    "string": "Premier plan"
                 },
                 "description": {
-                    "string": "Default text color"
+                    "string": "Couleur du texte par défaut"
                 }
             },
             "sidebar_background": {
                 "label": {
-                    "string": "Sidebar Background"
+                    "string": "Arrière-plan de la barre latérale"
                 },
                 "description": {
-                    "string": "HSL values for the sidebar background"
+                    "string": "Valeurs HSL de l’arrière-plan de la barre latérale"
                 }
             },
             "sidebar_foreground": {
                 "label": {
-                    "string": "Sidebar Foreground"
+                    "string": "Premier plan de la barre latérale"
                 },
                 "description": {
-                    "string": "Text color in the sidebar"
+                    "string": "Couleur du texte dans la barre latérale"
                 }
             },
             "sidebar_primary": {
                 "label": {
-                    "string": "Sidebar Primary"
+                    "string": "Couleur principale de la barre latérale"
                 },
                 "description": {
-                    "string": "Primary accent color in the sidebar"
+                    "string": "Couleur d'accentuation principale dans la barre latérale"
                 }
             },
             "sidebar_accent": {
                 "label": {
-                    "string": "Sidebar Accent"
+                    "string": "Accent de la barre latérale"
                 },
                 "description": {
-                    "string": "Accent color in the sidebar"
+                    "string": "Couleur d'accentuation dans la barre latérale"
                 }
             },
             "header_background": {
                 "label": {
-                    "string": "Header Background"
+                    "string": "Arrière-plan de l’en-tête"
                 },
                 "description": {
-                    "string": "HSL values for the top header bar"
+                    "string": "Valeurs HSL de la barre d’en-tête supérieure"
                 }
             },
             "header_foreground": {
                 "label": {
-                    "string": "Header Foreground"
+                    "string": "Premier plan de l’en-tête"
                 },
                 "description": {
                     "string": "Text color in the headeur"
@@ -98,7 +98,7 @@
                     "string": "URL du logo"
                 },
                 "description": {
-                    "string": "URL of the custom logo image (optional)"
+                    "string": "URL du logo personnalisé (facultatif)"
                 }
             },
             "custom_css": {
@@ -106,18 +106,18 @@
                     "string": "CSS personnalisé"
                 },
                 "description": {
-                    "string": "Additional CSS rules to inject (optional)"
+                    "string": "Règles CSS supplémentaires à injecter (facultatif)"
                 }
             }
         },
         "save": {
-            "string": "Save Changes"
+            "string": "Enregistrer les modifications"
         },
         "saving": {
             "string": "Enregistrement…"
         },
         "saved": {
-            "string": "Theme settings saved successfully"
+            "string": "Paramètres du thème enregistrés avec succès"
         },
         "save_error": {
             "string": "Échec de l'enregistrement : {message}"
@@ -126,7 +126,7 @@
             "string": "Vous avez des modifications non enregistrées"
         },
         "load_error": {
-            "string": "Failed to load theme settings"
+            "string": "Échec du chargement des paramètres du thème"
         },
         "retry": {
             "string": "Réessayeur"

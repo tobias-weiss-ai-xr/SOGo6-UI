@@ -1,0 +1,18 @@
+{
+  "NOTES": {
+    "title": "Notatki",
+    "new_note": "Nowa notatka",
+    "save": "Zapisz",
+    "cancel": "Anuluj",
+    "edit": "Edytuj",
+    "delete": "Usuń",
+    "confirm_delete": "Usuń notatkę",
+    "confirm_delete_message": "Czy jest Pan/Pani pewien/pewna, że chce usunąć tę notatkę? Tej akcji nie można cofnąć.",
+    "loading": "Ładowanie...",
+    "error": "Wystąpił błąd podczas ładowania notatek.",
+    "no_notes": "Nie znaleziono notatek.",
+    "created_at": "Utworzono: {date}",
+    "placeholder_title": "Wpisz tytuł notatki",
+    "placeholder_content": "Rozpocznij pisanie swojej notatki tutaj..."
+  }
+}

@@ -4,50 +4,50 @@
             "string": "CRM légeur"
         },
         "description": {
-            "string": "Associate contacts with accounts, track interactions, categorize contacts, and record notes."
+            "string": "Associez des contacts à des comptes, suivez les interactions, catégorisez les contacts et consignez des notes."
         },
         "form": {
             "create": {
-                "string": "New Account"
+                "string": "Nouveau compte"
             },
             "cancel": {
                 "string": "Annuler"
             },
             "title": {
-                "string": "Create Account"
+                "string": "Créer un compte"
             },
             "name": {
-                "string": "Account Name"
+                "string": "Nom du compte"
             },
             "domain": {
-                "string": "Domain"
+                "string": "Domaine"
             },
             "industry": {
-                "string": "Industry"
+                "string": "Secteur"
             },
             "notes": {
                 "string": "Notes"
             },
             "submit": {
-                "string": "Create Account"
+                "string": "Créer le compte"
             }
         },
         "create": {
             "success": {
-                "string": "Account created"
+                "string": "Compte créé"
             },
             "error": {
-                "string": "Failed to create"
+                "string": "Échec de la création"
             }
         },
         "list": {
             "empty": {
-                "string": "No CRM accounts yet."
+                "string": "Aucun compte CRM pour le moment."
             }
         },
         "errors": {
             "fields": {
-                "string": "Account name is required"
+                "string": "Le nom du compte est requis"
             }
         }
     }

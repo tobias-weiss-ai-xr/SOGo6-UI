@@ -4,7 +4,7 @@
             "string": "Assistant DNS"
         },
         "description": {
-            "string": "Generate and validate DNS records for email authentication (SPF, DKIM, DMARC). Add these records to your domain's DNS zone to protect against spoofing and improve deliverability."
+            "string": "Générez et validez des enregistrements DNS pour l'authentification des e-mails (SPF, DKIM, DMARC). Ajoutez ces enregistrements à la zone DNS de votre domaine pour vous protéger contre l'usurpation et améliorer la délivrabilité."
         },
         "tabs": {
             "spf": {
@@ -17,48 +17,48 @@
                 "string": "DMARC"
             },
             "validate": {
-                "string": "Validate"
+                "string": "Valider"
             }
         },
         "labels": {
             "domain": {
-                "string": "Domain"
+                "string": "Domaine"
             },
             "policy": {
-                "string": "Policy"
+                "string": "Politique"
             },
             "mx_servers": {
-                "string": "MX Servers"
+                "string": "Serveurs MX"
             },
             "ip4_addresses": {
-                "string": "IPv4 Addresses"
+                "string": "Adresses IPv4"
             },
             "ip6_addresses": {
-                "string": "IPv6 Addresses"
+                "string": "Adresses IPv6"
             },
             "include_domains": {
-                "string": "Include Domains"
+                "string": "Domaines inclus"
             },
             "selector": {
                 "string": "Selector"
             },
             "key_type": {
-                "string": "Key Type"
+                "string": "Type de clé"
             },
             "public_key": {
-                "string": "Public Key (Base64)"
+                "string": "Clé publique (Base64)"
             },
             "rua_email": {
-                "string": "Aggregate Reports Email"
+                "string": "E-mail pour les rapports agrégés"
             },
             "ruf_email": {
-                "string": "Forensic Reports Email"
+                "string": "E-mail pour les rapports forensiques"
             },
             "pct": {
-                "string": "Policy Percentage"
+                "string": "Pourcentage de la politique"
             },
             "subdomain_policy": {
-                "string": "Subdomain Policy"
+                "string": "Politique des sous-domaines"
             },
             "aspf": {
                 "string": "SPF Alignement"
@@ -83,41 +83,41 @@
         },
         "spf": {
             "description": {
-                "string": "SPF (Sender Policy Framework) specifies which mail servers are allowed to send email from your domain. Add this TXT record to your DNS zone."
+                "string": "SPF (Sender Policy Framework) spécifie quels serveurs de messagerie sont autorisés à envoyer des e-mails depuis votre domaine. Ajoutez cet enregistrement TXT à votre zone DNS."
             },
             "generate": {
-                "string": "Generate SPF Record"
+                "string": "Générer l’enregistrement SPF"
             }
         },
         "dkim": {
             "description": {
-                "string": "DKIM (DomainKeys Identified Mail) adds a digital signature to outgoing emails, allowing recipients to verify the message was not altered in transit."
+                "string": "DKIM (DomainKeys Identified Mail) ajoute une signature numérique aux e-mails sortants, permettant aux destinataires de vérifier que le message n'a pas été altéré en transit."
             },
             "generate": {
-                "string": "Generate DKIM Record"
+                "string": "Générer l’enregistrement DKIM"
             },
             "public_key_placeholder": {
-                "string": "Leave empty for placeholder with generation instructions"
+                "string": "Laisser vide pour obtenir un espace réservé avec les instructions de génération"
             },
             "public_key_hint": {
-                "string": "Optional. If empty, the record will include a placeholder with the openssl command to generate the key pair."
+                "string": "Facultatif. Si vide, l'enregistrement contiendra un espace réservé avec la commande openssl pour générer la paire de clés."
             }
         },
         "dmarc": {
             "description": {
-                "string": "DMARC (Domain-based Message Authentication, Reporting, and Conformance) tells receiving mail servers what to do when SPF or DKIM fails. Start with p=none to monitor, then move to quarantine or reject."
+                "string": "DMARC (Domain-based Message Authentication, Reporting, and Conformance) indique aux serveurs de messagerie destinataires quoi faire lorsque SPF ou DKIM échoue. Commencez avec p=none pour surveiller, puis passez à quarantine ou reject."
             },
             "generate": {
-                "string": "Generate DMARC Record"
+                "string": "Générer l’enregistrement DMARC"
             },
             "policy_none": {
                 "string": "monitor only"
             },
             "policy_quarantine": {
-                "string": "quarantine failures"
+                "string": "mettre en quarantaine les échecs"
             },
             "policy_reject": {
-                "string": "reject failures"
+                "string": "rejeter les échecs"
             },
             "relaxed": {
                 "string": "relaxed"
@@ -126,35 +126,35 @@
                 "string": "strict"
             },
             "inherit": {
-                "string": "Inherit from domain policy"
+                "string": "Hériter de la politique du domaine"
             }
         },
         "validate": {
             "description": {
-                "string": "Paste an existing SPF or DMARC record value to check for syntax errors and best-practice warnings."
+                "string": "Collez une valeur d’enregistrement SPF ou DMARC existante pour vérifier les erreurs de syntaxe et les avertissements de bonnes pratiques."
             },
             "button": {
-                "string": "Validate"
+                "string": "Valider"
             },
             "spf_title": {
-                "string": "Validate SPF Record"
+                "string": "Valider l’enregistrement SPF"
             },
             "dmarc_title": {
-                "string": "Validate DMARC Record"
+                "string": "Valider l’enregistrement DMARC"
             }
         },
         "record": {
             "title": {
-                "string": "Generated DNS Record"
+                "string": "Enregistrement DNS généré"
             },
             "name": {
-                "string": "Name"
+                "string": "Nom"
             },
             "type": {
                 "string": "Type"
             },
             "value": {
-                "string": "Value"
+                "string": "Valeur"
             },
             "ttl": {
                 "string": "TTL"
@@ -165,24 +165,24 @@
         },
         "validation": {
             "valid": {
-                "string": "Valid"
+                "string": "Valide"
             },
             "invalid": {
-                "string": "Invalid"
+                "string": "Non valide"
             },
             "domain_required": {
-                "string": "Domain is required"
+                "string": "Le domaine est requis"
             },
             "value_required": {
-                "string": "Record value is required"
+                "string": "La valeur de l'enregistrement est requise"
             }
         },
         "errors": {
             "generate_failed": {
-                "string": "Failed to generate record"
+                "string": "Échec de la génération de l’enregistrement"
             },
             "validate_failed": {
-                "string": "Failed to validate record"
+                "string": "Échec de la validation de l’enregistrement"
             }
         }
     }

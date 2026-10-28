@@ -1,15 +1,15 @@
 {
   "search": {
-    "openCommandPalette": "Press Cmd+K to open command palette",
-    "placeholder": "Search emails, contacts, calendar…",
-    "navigate": "Quick navigation",
-    "results": "Search results",
-    "noResults": "No results found.",
-    "goToInbox": "Go to Inbox",
-    "goToMail": "Go to Mail",
-    "goToContacts": "Go to Contacts",
-    "goToCalendar": "Go to Calendar",
-    "goToSettings": "Go to Settings",
-    "searchInMail": "Search mail for \"{query}\""
+    "openCommandPalette": "Πατήστε Cmd+K για άνοιγμα της παλέτας εντολών",
+    "placeholder": "Αναζήτηση email, επαφών, ημερολογίου…",
+    "navigate": "Γρήγορη πλοήγηση",
+    "results": "Αποτελέσματα αναζήτησης",
+    "noResults": "Δεν βρέθηκαν αποτελέσματα.",
+    "goToInbox": "Μετάβαση στα Εισερχόμενα",
+    "goToMail": "Μετάβαση στο Email",
+    "goToContacts": "Μετάβαση στις Επαφές",
+    "goToCalendar": "Μετάβαση στο Ημερολόγιο",
+    "goToSettings": "Μετάβαση στις Ρυθμίσεις",
+    "searchInMail": "Αναζήτηση email για \"{query}\""
   }
 }

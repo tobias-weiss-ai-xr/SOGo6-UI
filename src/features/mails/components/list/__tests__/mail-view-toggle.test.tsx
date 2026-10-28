@@ -1,7 +1,6 @@
 import '@testing-library/jest-dom'
-import userEvent from '@testing-library/user-event'
 import { render, screen } from '@testing-library/react'
-import React from 'react'
+import userEvent from '@testing-library/user-event'
 import MailViewToggle from '../mail-view-toggle'
 
 jest.mock('next-intl', () => ({
@@ -10,7 +9,10 @@ jest.mock('next-intl', () => ({
 
 jest.mock('@/components/ui/toggle-group', () => {
   const React = require('react')
-  const ToggleGroupContext = React.createContext({ value: null, onValueChange: null })
+  const ToggleGroupContext = React.createContext({
+    value: null,
+    onValueChange: null,
+  })
   return {
     ToggleGroup: ({ children, value, onValueChange, ...props }: any) => (
       <ToggleGroupContext.Provider value={{ value, onValueChange }}>
@@ -49,11 +51,9 @@ describe('MailViewToggle', () => {
 
   it('renders two toggle buttons (flat + conversation)', () => {
     render(<MailViewToggle value="flat" onChange={onChange} />)
+    expect(screen.getByRole('button', { name: 'viewFlat' })).toBeInTheDocument()
     expect(
-      screen.getByRole('button', { name: 'mails.viewFlat' })
-    ).toBeInTheDocument()
-    expect(
-      screen.getByRole('button', { name: 'mails.viewConversation' })
+      screen.getByRole('button', { name: 'viewConversation' })
     ).toBeInTheDocument()
   })
 
@@ -68,16 +68,14 @@ describe('MailViewToggle', () => {
   it('calls onChange with flat when the flat button is clicked', async () => {
     const user = userEvent.setup()
     render(<MailViewToggle value="conversation" onChange={onChange} />)
-    await user.click(screen.getByRole('button', { name: 'mails.viewFlat' }))
+    await user.click(screen.getByRole('button', { name: 'viewFlat' }))
     expect(onChange).toHaveBeenCalledWith('flat')
   })
 
   it('calls onChange with conversation when the conversation button is clicked', async () => {
     const user = userEvent.setup()
     render(<MailViewToggle value="flat" onChange={onChange} />)
-    await user.click(
-      screen.getByRole('button', { name: 'mails.viewConversation' })
-    )
+    await user.click(screen.getByRole('button', { name: 'viewConversation' }))
     expect(onChange).toHaveBeenCalledWith('conversation')
   })
 })

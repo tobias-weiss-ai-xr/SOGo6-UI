@@ -3,6 +3,7 @@ import { fireEvent, render, screen } from '@testing-library/react'
 import MailHeaderMobile from '../mail-header-mobile'
 
 jest.mock('next-intl', () => ({
+  useLocale: jest.fn(() => 'en'),
   useTranslations: jest.fn(() => (key: string) => {
     const translations: Record<string, string> = {
       'mail_display.header.unsubscribe.string': 'Unsubscribe',

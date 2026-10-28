@@ -1,61 +1,61 @@
 {
-    "AP_BACKUP": {
-        "title": {
-            "string": "Backup Automation"
-        },
-        "description": {
-            "string": "Manage database and mailstore backups with retention policies and optional S3 upload."
-        },
-        "trigger": {
-            "button": {
-                "string": "Trigger Backup"
-            },
-            "running": {
-                "string": "Running..."
-            },
-            "success": {
-                "string": "Backup completed"
-            },
-            "error": {
-                "string": "Backup failed"
-            }
-        },
-        "config": {
-            "retention": {
-                "string": "Retention"
-            },
-            "s3": {
-                "string": "S3 Upload"
-            },
-            "mailstore": {
-                "string": "Mailstore"
-            },
-            "total": {
-                "string": "Total Backups"
-            }
-        },
-        "table": {
-            "id": {
-                "string": "ID"
-            },
-            "timestamp": {
-                "string": "Timestamp"
-            },
-            "type": {
-                "string": "Tipe"
-            },
-            "status": {
-                "string": "Status"
-            },
-            "size": {
-                "string": "Size"
-            },
-            "duration": {
-                "string": "Duration"
-            },
-            "empty": {
-                "string": "No backups yet."
-            }
-        }
+  "AP_BACKUP": {
+    "title": {
+      "string": "Otomasi Pencadangan"
+    },
+    "description": {
+      "string": "Kelola pencadangan basis data dan mailstore dengan kebijakan retensi dan unggahan S3 opsional."
+    },
+    "trigger": {
+      "button": {
+        "string": "Memicu Pencadangan"
+      },
+      "running": {
+        "string": "Running..."
+      },
+      "success": {
+        "string": "Pencadangan selesai"
+      },
+      "error": {
+        "string": "Pencadangan gagal"
+      }
+    },
+    "config": {
+      "retention": {
+        "string": "Retention"
+      },
+      "s3": {
+        "string": "S3 Upload"
+      },
+      "mailstore": {
+        "string": "Mailstore"
+      },
+      "total": {
+        "string": "Total Pencadangan"
+      }
+    },
+    "table": {
+      "id": {
+        "string": "ID"
+      },
+      "timestamp": {
+        "string": "Timestamp"
+      },
+      "type": {
+        "string": "Tipe"
+      },
+      "status": {
+        "string": "Status"
+      },
+      "size": {
+        "string": "Size"
+      },
+      "duration": {
+        "string": "Duration"
+      },
+      "empty": {
+        "string": "Belum ada pencadangan."
+      }
     }
+  }
 }

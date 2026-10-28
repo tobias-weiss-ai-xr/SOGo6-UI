@@ -8,18 +8,18 @@ import {
   SidebarTrigger,
 } from '@/components/ui/sidebar'
 import { useGetPreferencesQuery } from '@/features/app-data/store/user-preferences-api'
+import ListToolbar from '@/features/mails/components/list/list-toolbar'
+import MailSSEListener from '@/features/mails/components/mail-sse-listener'
 import FastAccessContent from '@/features/mails/components/sidebars/fast-access/content'
 import {
   FastAccessProvider,
   useFastAccessRequired,
 } from '@/features/mails/components/sidebars/fast-access/context'
-import ListToolbar from '@/features/mails/components/list/list-toolbar'
-import MailSSEListener from '@/features/mails/components/mail-sse-listener'
 import { useListToolbarMode } from '@/features/mails/hooks/use-list-toolbar-mode'
 import { useIsMobile } from '@/hooks/use-mobile'
-import { cn } from '@/lib/utils'
 import { useAppSelector } from '@/lib/redux/hooks'
 import type { RootState } from '@/lib/redux/store'
+import { cn } from '@/lib/utils'
 import React from 'react'
 
 function MailLayoutInner({
@@ -71,14 +71,17 @@ function MailLayoutInner({
             {content}
           </div>
         </SidebarInset>
-        {isOpen && activeModule && (
-          <FastAccessContent name={activeModule} />
-        )}
-        {!isMobile && (
+        {isOpen && activeModule && <FastAccessContent name={activeModule} />}
+        {/* Only render the toggle when a fast-access module is selected:
+            with activeModule === null the button toggled isOpen but rendered
+            no content — it looked broken. reverseIcon always: these are
+            right-sidebar semantics (open→collapse right, closed→expand
+            left) regardless of classic/split vs modern layout. */}
+        {!isMobile && activeModule && (
           <div className="fixed right-0 bottom-4 z-50">
             <SidebarTrigger
               className="rounded-r-none"
-              reverseIcon={!isClassicLayout}
+              reverseIcon
               onClose={closeModule}
             />
           </div>

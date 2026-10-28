@@ -1,68 +1,68 @@
 {
   "AP_CFGCODE": {
     "title": {
-      "string": "Configuration as Code"
+      "string": "Configuration en tant que code"
     },
     "description": {
       "string": "Exporter, versionner et importer la configuration système en JSON pour les workflows GitOps."
     },
     "export": {
       "title": {
-        "string": "Current Configuration"
+        "string": "Configuration actuelle"
       },
       "copy": {
-        "string": "Copy"
+        "string": "Copier"
       },
       "copied": {
-        "string": "Copied!"
+        "string": "Copié !"
       },
       "download": {
-        "string": "Download JSON"
+        "string": "Télécharger le JSON"
       },
       "success": {
-        "string": "Downloaded"
+        "string": "Téléchargé"
       }
     },
     "import": {
       "title": {
-        "string": "Import Configuration"
+        "string": "Importer une configuration"
       },
       "description_label": {
         "string": "Description"
       },
       "description_placeholder": {
-        "string": "e.g. Update mail server settings"
+        "string": "p. ex. Mettre à jour les paramètres du serveur de messagerie"
       },
       "placeholder": {
-        "string": "Paste JSON configuration here..."
+        "string": "Collez la configuration JSON ici..."
       },
       "button": {
-        "string": "Apply Configuration"
+        "string": "Appliquer la configuration"
       },
       "running": {
-        "string": "Applying..."
+        "string": "Application..."
       },
       "success": {
-        "string": "Configuration v{{version}} applied"
+        "string": "Configuration v{{version}} appliquée"
       },
       "error": {
-        "string": "Import failed"
+        "string": "Échec de l’importation"
       }
     },
     "history": {
       "title": {
-        "string": "Version History"
+        "string": "Historique des versions"
       },
       "empty": {
-        "string": "No configuration snapshots yet."
+        "string": "Aucun instantané de configuration pour le moment."
       }
     },
     "errors": {
       "empty": {
-        "string": "Configuration JSON is empty"
+        "string": "Le JSON de configuration est vide"
       },
       "parse": {
-        "string": "Invalid JSON — please check syntax"
+        "string": "JSON non valide — veuillez vérifier la syntaxe"
       }
     }
   }

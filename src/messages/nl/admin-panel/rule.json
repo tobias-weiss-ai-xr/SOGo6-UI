@@ -1,147 +1,147 @@
 {
-    "ADMIN_PANNEL_RULE": {
-        "title": {
-            "string": "Rules"
-        },
-        "filter_placeholder": {
-            "string": "Filter rules..."
-        },
-        "add_new_rule": {
-            "string": "Add new rule"
-        },
-        "select_all": {
-            "string": "Select all"
-        },
-        "select_row": {
-            "string": "Select row"
-        },
-        "domain": {
-            "string": "Domein"
-        },
-        "open_menu": {
-            "string": "Open menu"
-        },
-        "actions": {
-            "string": "Actions"
-        },
-        "copy_domain": {
-            "string": "Copy domain name"
-        },
-        "edit": {
-            "string": "Bewerken"
-        },
-        "delete": {
-            "string": "Verwijderen"
-        }
+  "ADMIN_PANNEL_RULE": {
+    "title": {
+      "string": "Rules"
     },
-    "AP_RULES": {
-        "title": {
-            "string": "Rules"
-        },
-        "description": {
-            "string": "Manage configuration rules for domains"
-        },
-        "search": {
-            "placeholder": {
-                "string": "Search rules..."
-            }
-        },
-        "create": {
-            "button": {
-                "string": "New Rule"
-            },
-            "title": {
-                "string": "Create Rule"
-            },
-            "description": {
-                "string": "Add a new configuration rule"
-            },
-            "success": {
-                "string": "Rule created successfully"
-            },
-            "error": {
-                "string": "Failed to create rule"
-            },
-            "name_required": {
-                "string": "Rule name is required"
-            }
-        },
-        "edit": {
-            "button": {
-                "string": "Bewerken"
-            },
-            "title": {
-                "string": "Edit Rule"
-            },
-            "description": {
-                "string": "Update rule: {name}"
-            },
-            "save": {
-                "string": "Save Changes"
-            },
-            "success": {
-                "string": "Rule updated successfully"
-            },
-            "error": {
-                "string": "Failed to update rule"
-            }
-        },
-        "delete": {
-            "button": {
-                "string": "Verwijderen"
-            },
-            "title": {
-                "string": "Delete Rule"
-            },
-            "confirm": {
-                "string": "Are you sure you want to delete rule \"{name}\"?"
-            },
-            "success": {
-                "string": "Rule deleted successfully"
-            },
-            "error": {
-                "string": "Failed to delete rule"
-            }
-        },
-        "form": {
-            "name": {
-                "string": "Rule Name"
-            },
-            "name_placeholder": {
-                "string": "e.g. French LDAP Rules"
-            },
-            "description": {
-                "string": "Beschrijving"
-            },
-            "description_placeholder": {
-                "string": "Optional description of this rule"
-            },
-            "domains": {
-                "string": "Affected Domains"
-            },
-            "domains_placeholder": {
-                "string": "example.org, domain2.org"
-            },
-            "domains_hint": {
-                "string": "Comma-separated list of domain names. Leave empty for all domains."
-            }
-        },
-        "table": {
-            "id": {
-                "string": "ID"
-            },
-            "name": {
-                "string": "Naam"
-            },
-            "actions": {
-                "string": "Actions"
-            }
-        },
-        "no_rules": {
-            "string": "No rules configured yet"
-        },
-        "no_results": {
-            "string": "No rules match your search"
-        }
+    "filter_placeholder": {
+      "string": "Regels filteren..."
+    },
+    "add_new_rule": {
+      "string": "Add new rule"
+    },
+    "select_all": {
+      "string": "Select all"
+    },
+    "select_row": {
+      "string": "Select row"
+    },
+    "domain": {
+      "string": "Domein"
+    },
+    "open_menu": {
+      "string": "Open menu"
+    },
+    "actions": {
+      "string": "Actions"
+    },
+    "copy_domain": {
+      "string": "Domeinnaam kopiëren"
+    },
+    "edit": {
+      "string": "Bewerken"
+    },
+    "delete": {
+      "string": "Verwijderen"
     }
+  },
+  "AP_RULES": {
+    "title": {
+      "string": "Rules"
+    },
+    "description": {
+      "string": "Beheer configuratieregels voor domeinen"
+    },
+    "search": {
+      "placeholder": {
+        "string": "Regels zoeken..."
+      }
+    },
+    "create": {
+      "button": {
+        "string": "New Rule"
+      },
+      "title": {
+        "string": "Create Rule"
+      },
+      "description": {
+        "string": "Voeg een nieuwe configuratieregel toe"
+      },
+      "success": {
+        "string": "Regel succesvol aangemaakt"
+      },
+      "error": {
+        "string": "Regel aanmaken mislukt"
+      },
+      "name_required": {
+        "string": "Regelnaam is verplicht"
+      }
+    },
+    "edit": {
+      "button": {
+        "string": "Bewerken"
+      },
+      "title": {
+        "string": "Edit Rule"
+      },
+      "description": {
+        "string": "Regel bijwerken: {name}"
+      },
+      "save": {
+        "string": "Save Changes"
+      },
+      "success": {
+        "string": "Regel succesvol bijgewerkt"
+      },
+      "error": {
+        "string": "Regel bijwerken mislukt"
+      }
+    },
+    "delete": {
+      "button": {
+        "string": "Verwijderen"
+      },
+      "title": {
+        "string": "Delete Rule"
+      },
+      "confirm": {
+        "string": "Weet u zeker dat u regel \"{name}\" wilt verwijderen?"
+      },
+      "success": {
+        "string": "Regel succesvol verwijderd"
+      },
+      "error": {
+        "string": "Regel verwijderen mislukt"
+      }
+    },
+    "form": {
+      "name": {
+        "string": "Rule Name"
+      },
+      "name_placeholder": {
+        "string": "bijv. Franse LDAP-regels"
+      },
+      "description": {
+        "string": "Beschrijving"
+      },
+      "description_placeholder": {
+        "string": "Optionele beschrijving van deze regel"
+      },
+      "domains": {
+        "string": "Betrokken domeinen"
+      },
+      "domains_placeholder": {
+        "string": "example.org, domain2.org"
+      },
+      "domains_hint": {
+        "string": "Kommagescheiden lijst met domeinnamen. Laat leeg voor alle domeinen."
+      }
+    },
+    "table": {
+      "id": {
+        "string": "ID"
+      },
+      "name": {
+        "string": "Naam"
+      },
+      "actions": {
+        "string": "Actions"
+      }
+    },
+    "no_rules": {
+      "string": "Nog geen regels ingesteld"
+    },
+    "no_results": {
+      "string": "Geen regels komen overeen met uw zoekopdracht"
+    }
+  }
 }

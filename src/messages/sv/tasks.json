@@ -4,110 +4,110 @@
             "string": "Uppgifter"
         },
         "new_task": {
-            "string": "New task"
+            "string": "Ny uppgift"
         },
         "search_placeholder": {
-            "string": "Search tasks…"
+            "string": "Sök uppgifter…"
         },
         "show_completed": {
-            "string": "Show completed"
+            "string": "Visa slutförda"
         },
         "all_calendars": {
-            "string": "All calendars"
+            "string": "Alla kalendrar"
         },
         "empty_title": {
-            "string": "No tasks yet"
+            "string": "Inga uppgifter ännu"
         },
         "empty_description": {
-            "string": "Create your first task to get organized."
+            "string": "Skapa din första uppgift för att bli organiserad."
         },
         "overdue": {
-            "string": "Overdue"
+            "string": "Förfallna"
         },
         "filters": {
             "all": {
                 "string": "Alla"
             },
             "needs_action": {
-                "string": "To do"
+                "string": "Att göra"
             },
             "in_process": {
-                "string": "In progress"
+                "string": "Pågående"
             },
             "completed": {
-                "string": "Completed"
+                "string": "Slutförda"
             },
             "cancelled": {
-                "string": "Cancelled"
+                "string": "Avbrutna"
             },
             "overdue": {
-                "string": "Overdue"
+                "string": "Förfallna"
             }
         },
         "priority": {
             "none": {
-                "string": "No priority"
+                "string": "Ingen prioritet"
             },
             "high": {
-                "string": "High"
+                "string": "Hög"
             },
             "medium": {
-                "string": "Medium"
+                "string": "Medel"
             },
             "low": {
-                "string": "Low"
+                "string": "Låg"
             }
         },
         "status": {
             "needs_action": {
-                "string": "To do"
+                "string": "Att göra"
             },
             "in_process": {
-                "string": "In progress"
+                "string": "Pågående"
             },
             "completed": {
-                "string": "Completed"
+                "string": "Slutförd"
             },
             "cancelled": {
-                "string": "Cancelled"
+                "string": "Avbruten"
             }
         },
         "form": {
             "create_title": {
-                "string": "New task"
+                "string": "Ny uppgift"
             },
             "edit_title": {
-                "string": "Edit task"
+                "string": "Redigera uppgift"
             },
             "title": {
-                "string": "Title"
+                "string": "Titel"
             },
             "description": {
                 "string": "Beskrivning"
             },
             "due": {
-                "string": "Due date"
+                "string": "Förfallodatum"
             },
             "date_start": {
-                "string": "Start date"
+                "string": "Startdatum"
             },
             "status": {
                 "string": "Status"
             },
             "priority": {
-                "string": "Priority"
+                "string": "Prioritet"
             },
             "percent_complete": {
-                "string": "Progress"
+                "string": "Framsteg"
             },
             "calendar": {
                 "string": "Kalender"
             },
             "categories": {
-                "string": "Categories"
+                "string": "Kategorier"
             },
             "visibility": {
-                "string": "Visibility"
+                "string": "Synlighet"
             },
             "save": {
                 "string": "Spara"
@@ -116,11 +116,11 @@
                 "string": "Avbryt"
             },
             "calendar_required": {
-                "string": "Select a calendar"
+                "string": "Välj en kalender"
             },
             "errors": {
                 "date_order": {
-                    "string": "Due date must be on or after the start date."
+                    "string": "Förfallodatumet måste ligga på eller efter startdatumet."
                 }
             }
         },
@@ -134,10 +134,10 @@
         },
         "delete_dialog": {
             "title": {
-                "string": "Delete task?"
+                "string": "Radera uppgiften?"
             },
             "description": {
-                "string": "This action cannot be undone."
+                "string": "Denna åtgärd kan inte ångras."
             },
             "confirm": {
                 "string": "Ta bort"
@@ -148,23 +148,23 @@
         },
         "selection": {
             "enter": {
-                "string": "Select tasks"
+                "string": "Markera uppgifter"
             },
             "cancel": {
                 "string": "Avbryt"
             },
             "select_all": {
-                "string": "Select all tasks"
+                "string": "Markera alla uppgifter"
             },
             "count": {
-                "string": "{count, plural, one {# selected} other {# selected}}"
+                "string": "{count, plural, one {# markerad} other {# markerade}}"
             },
             "actions": {
                 "complete": {
-                    "string": "Complete"
+                    "string": "Slutför"
                 },
                 "reopen": {
-                    "string": "Reopen"
+                    "string": "Öppna igen"
                 },
                 "delete": {
                     "string": "Ta bort"
@@ -172,10 +172,10 @@
             },
             "delete_dialog": {
                 "title": {
-                    "string": "Delete selected tasks?"
+                    "string": "Radera markerade uppgifter?"
                 },
                 "description": {
-                    "string": "You are about to delete {count, plural, one {# task} other {# tasks}}. This action cannot be undone."
+                    "string": "Du är på väg att radera {count, plural, one {# uppgift} other {# uppgifter}}. Denna åtgärd kan inte ångras."
                 },
                 "confirm": {
                     "string": "Ta bort"
@@ -188,30 +188,30 @@
         "sidebar": {
             "smart_views": {
                 "title": {
-                    "string": "Smart views"
+                    "string": "Smarta vyer"
                 },
                 "all": {
-                    "string": "All tasks"
+                    "string": "Alla uppgifter"
                 },
                 "today": {
                     "string": "Idag"
                 },
                 "upcoming": {
-                    "string": "Upcoming"
+                    "string": "Kommande"
                 },
                 "overdue": {
-                    "string": "Overdue"
+                    "string": "Förfallna"
                 },
                 "completed": {
-                    "string": "Completed"
+                    "string": "Slutförda"
                 }
             },
             "calendars": {
                 "title": {
-                    "string": "Calendars"
+                    "string": "Kalendrar"
                 },
                 "all": {
-                    "string": "All calendars"
+                    "string": "Alla kalendrar"
                 }
             }
         },
@@ -220,13 +220,13 @@
                 "string": "Uppgifter"
             },
             "view_all": {
-                "string": "View all tasks"
+                "string": "Visa alla uppgifter"
             },
             "empty": {
-                "string": "No pending tasks"
+                "string": "Inga pågående uppgifter"
             },
             "loading": {
-                "string": "Loading tasks…"
+                "string": "Läser in uppgifter…"
             }
         }
     }

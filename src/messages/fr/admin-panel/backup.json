@@ -28,7 +28,7 @@
         "string": "Upload S3"
       },
       "mailstore": {
-        "string": "Mailstore"
+        "string": "Magasin de messagerie"
       },
       "total": {
         "string": "Total des sauvegardes"
@@ -45,7 +45,7 @@
         "string": "Type"
       },
       "status": {
-        "string": "Status"
+        "string": "Statut"
       },
       "size": {
         "string": "Taille"

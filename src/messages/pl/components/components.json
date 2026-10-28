@@ -2,26 +2,26 @@
   "COMPONENTS": {
     "forms": {
       "fixed-form-button-group": {
-        "alert": "{number} errors"
+        "alert": "Błędy: {number}"
       }
     },
     "color-picker": {
-      "custom-color": "Custom Color"
+      "custom-color": "Kolor niestandardowy"
     },
     "duration-picker": {
-      "noReminder": "No reminder",
-      "5min": "5 min before",
-      "10min": "10 min before",
-      "15min": "15 min before",
-      "30min": "30 min before",
-      "45min": "45 min before",
-      "1h": "1 hour before",
-      "2h": "2 hour before",
-      "5h": "5 hour before",
-      "15h": "15 hour before",
-      "1d": "1 day before",
-      "2d": "2 days before",
-      "1w": "1 week before"
+      "noReminder": "Brak przypomnienia",
+      "5min": "5 min przed",
+      "10min": "10 min przed",
+      "15min": "15 min przed",
+      "30min": "30 min przed",
+      "45min": "45 min przed",
+      "1h": "1 godzinę przed",
+      "2h": "2 godziny przed",
+      "5h": "5 godzin przed",
+      "15h": "15 godzin przed",
+      "1d": "1 dzień przed",
+      "2d": "2 dni przed",
+      "1w": "1 tydzień przed"
     }
   }
 }

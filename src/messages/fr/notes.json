@@ -1,0 +1,18 @@
+{
+  "NOTES": {
+    "title": "Notes",
+    "new_note": "Nouvelle note",
+    "save": "Enregistrer",
+    "cancel": "Annuler",
+    "edit": "Modifier",
+    "delete": "Supprimer",
+    "confirm_delete": "Supprimer la note",
+    "confirm_delete_message": "Êtes-vous sûr de vouloir supprimer cette note ? Cette action ne peut pas être annulée.",
+    "loading": "Chargement en cours...",
+    "error": "Une erreur est survenue lors du chargement des notes.",
+    "no_notes": "Aucune note trouvée.",
+    "created_at": "Créé le : {date}",
+    "placeholder_title": "Saisir le titre de la note",
+    "placeholder_content": "Commencez à écrire votre note ici..."
+  }
+}

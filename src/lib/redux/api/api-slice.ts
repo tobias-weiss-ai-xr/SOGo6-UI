@@ -1,10 +1,7 @@
+import { logout } from '@/features/auth/components/store/auth.slice'
 import { clearEnvCache, fetchEnvVars } from '@/lib/env-service'
 import type { RootState } from '@/lib/redux/store'
-import type {
-  BaseQueryFn,
-  FetchBaseQueryError,
-  FetchBaseQueryMeta,
-} from '@reduxjs/toolkit/query'
+import type { BaseQueryFn } from '@reduxjs/toolkit/query'
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
 import { withApiFetchSemaphore } from './fetch-semaphore'
 
@@ -118,7 +115,7 @@ const PUBLIC_AUTH_ENDPOINTS = new Set([
 
 // Declared as any-returning so createApi infers the query return shapes
 // (RTK's generic inference across this wrapper is brittle).
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
+
 export const dynamicBaseQuery = async (
   args: Parameters<BaseQueryFn>[0],
   api: Parameters<BaseQueryFn>[1],
@@ -151,10 +148,7 @@ export const dynamicBaseQuery = async (
         throw error
       }
 
-      console.warn(
-        '⚠️ Could not resolve API base URL, using /fakeApi',
-        error
-      )
+      console.warn('⚠️ Could not resolve API base URL, using /fakeApi', error)
       cachedBaseUrl = '/fakeApi'
       clearEnvCache()
     }
@@ -179,10 +173,18 @@ export const dynamicBaseQuery = async (
 
   // fetchBaseQuery + the semaphore wrapper always return a Promise.
   // RTK's BaseQueryFn generic inference is brittle here — cast through any.
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+
   const result: any = withApiFetchSemaphore<any>(() =>
     baseQuery(args, api, extraOptions)
   )
+  // Expired/invalid JWT: clear credentials so the (loggedin) layout guard
+  // bounces to the login page instead of toasting on every call.
+  if (
+    result?.error?.status === 401 &&
+    !PUBLIC_AUTH_ENDPOINTS.has(api.endpoint)
+  ) {
+    api.dispatch(logout())
+  }
   return result
 }
 

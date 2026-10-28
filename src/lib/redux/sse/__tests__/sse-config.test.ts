@@ -3,6 +3,40 @@ jest.mock('@/lib/env-service', () => ({
   getCachedEnvVars: jest.fn(),
 }))
 
+describe('waitForSSEToken', () => {
+  afterEach(() => {
+    localStorage.removeItem('sogo_auth')
+    sessionStorage.removeItem('sogo_auth')
+  })
+
+  it('resolves true immediately when a token is in localStorage', async () => {
+    localStorage.setItem('sogo_auth', JSON.stringify({ token: 'jwt-1' }))
+    await expect(waitForSSEToken(2, 1)).resolves.toBe(true)
+  })
+
+  it('resolves true from sessionStorage fallback', async () => {
+    sessionStorage.setItem('sogo_auth', JSON.stringify({ token: 'jwt-2' }))
+    await expect(waitForSSEToken(2, 1)).resolves.toBe(true)
+  })
+
+  it('resolves true once a late token lands', async () => {
+    const pending = waitForSSEToken(20, 5)
+    setTimeout(() => {
+      localStorage.setItem('sogo_auth', JSON.stringify({ token: 'late' }))
+    }, 10)
+    await expect(pending).resolves.toBe(true)
+  })
+
+  it('gives up (false) when no token appears', async () => {
+    await expect(waitForSSEToken(2, 1)).resolves.toBe(false)
+  })
+
+  it('treats malformed stored auth as absent', async () => {
+    localStorage.setItem('sogo_auth', 'not-json{{{')
+    await expect(waitForSSEToken(2, 1)).resolves.toBe(false)
+  })
+})
+
 const { fetchEnvVars, getCachedEnvVars } = jest.requireMock(
   '@/lib/env-service'
 ) as {
@@ -17,6 +51,7 @@ import {
   getProductionSSEConfig,
   getSSEConfigForEnvironment,
   getTestSSEConfig,
+  waitForSSEToken,
 } from '../sse-config'
 
 describe('sse-config', () => {
@@ -92,6 +127,7 @@ describe('sse-config', () => {
     it('uses same-origin API SSE endpoint with token as query param', () => {
       const jwt = makeTestJwt()
       const authData = JSON.stringify({ token: jwt, user: 'testuser' })
+
       localStorage.setItem('sogo_auth', authData)
 
       const config = getProductionSSEConfig()
@@ -101,6 +137,7 @@ describe('sse-config', () => {
       expect(config!.url).toContain(`token=${encodeURIComponent(jwt)}`)
       expect(config!.headers?.Authorization).toBe(`Bearer ${jwt}`)
       expect(config!.reconnectInterval).toBe(5000)
+
     })
 
     it('falls back to sessionStorage when localStorage is empty', () => {
@@ -114,10 +151,12 @@ describe('sse-config', () => {
       expect(config).not.toBeNull()
       expect(config!.headers?.Authorization).toBe(`Bearer ${jwt}`)
 
+
       sessionStorage.removeItem('sogo_auth')
     })
 
     it('returns null when no token is stored (expired/missing)', () => {
+
       localStorage.removeItem('sogo_auth')
       sessionStorage.removeItem('sogo_auth')
 
@@ -134,6 +173,7 @@ describe('sse-config', () => {
       const config = getProductionSSEConfig()
 
       expect(config).toBeNull()
+
     })
 
     it('handles malformed stored auth gracefully', () => {
@@ -142,6 +182,7 @@ describe('sse-config', () => {
       const config = getProductionSSEConfig()
 
       expect(config).toBeNull()
+
     })
   })
 

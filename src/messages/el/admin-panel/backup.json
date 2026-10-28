@@ -1,61 +1,61 @@
 {
-    "AP_BACKUP": {
-        "title": {
-            "string": "Backup Automation"
-        },
-        "description": {
-            "string": "Manage database and mailstore backups with retention policies and optional S3 upload."
-        },
-        "trigger": {
-            "button": {
-                "string": "Trigger Backup"
-            },
-            "running": {
-                "string": "Running..."
-            },
-            "success": {
-                "string": "Backup completed"
-            },
-            "error": {
-                "string": "Backup failed"
-            }
-        },
-        "config": {
-            "retention": {
-                "string": "Retention"
-            },
-            "s3": {
-                "string": "S3 Upload"
-            },
-            "mailstore": {
-                "string": "Mailstore"
-            },
-            "total": {
-                "string": "Total Backups"
-            }
-        },
-        "table": {
-            "id": {
-                "string": "ID"
-            },
-            "timestamp": {
-                "string": "Timestamp"
-            },
-            "type": {
-                "string": "Τύπος"
-            },
-            "status": {
-                "string": "Κατάσταση"
-            },
-            "size": {
-                "string": "Size"
-            },
-            "duration": {
-                "string": "Duration"
-            },
-            "empty": {
-                "string": "No backups yet."
-            }
-        }
+  "AP_BACKUP": {
+    "title": {
+      "string": "Αυτοματοποίηση Αντιγράφων Ασφαλείας"
+    },
+    "description": {
+      "string": "Διαχείριση αντιγράφων ασφαλείας βάσης δεδομένων και αποθήκης email με πολιτικές διατήρησης και προαιρετική μεταφόρτωση σε S3."
+    },
+    "trigger": {
+      "button": {
+        "string": "Εκκίνηση Αντιγράφου Ασφαλείας"
+      },
+      "running": {
+        "string": "Εκτελείται..."
+      },
+      "success": {
+        "string": "Το αντίγραφο ασφαλείας ολοκληρώθηκε"
+      },
+      "error": {
+        "string": "Το αντίγραφο ασφαλείας απέτυχε"
+      }
+    },
+    "config": {
+      "retention": {
+        "string": "Διατήρηση"
+      },
+      "s3": {
+        "string": "Μεταφόρτωση S3"
+      },
+      "mailstore": {
+        "string": "Αποθήκη Email"
+      },
+      "total": {
+        "string": "Σύνολο Αντιγράφων"
+      }
+    },
+    "table": {
+      "id": {
+        "string": "ID"
+      },
+      "timestamp": {
+        "string": "Χρονοσήμανση"
+      },
+      "type": {
+        "string": "Τύπος"
+      },
+      "status": {
+        "string": "Κατάσταση"
+      },
+      "size": {
+        "string": "Μέγεθος"
+      },
+      "duration": {
+        "string": "Διάρκεια"
+      },
+      "empty": {
+        "string": "Δεν υπάρχουν αντίγραφα ασφαλείας ακόμα."
+      }
     }
+  }
 }

@@ -32,7 +32,7 @@
         },
         "reset": {
             "default": {
-                "string": "Reset",
+                "string": "Resetuj",
                 "description": "Click to reset the form fields to their default values."
             }
         },
@@ -40,12 +40,12 @@
             "string": "Włączone"
         },
         "emails": {
-            "placeholder": "Add email address and press Enter"
+            "placeholder": "Dodaj adres e-mail i naciśnij Enter"
         },
         "validation": {
-            "required": "Field is required",
-            "identityAtLeastOneDefault": "At least one identity must be set as default",
-            "email": "Please enter a valid email address"
+            "required": "Pole jest wymagane",
+            "identityAtLeastOneDefault": "Przynajmniej jedna tożsamość musi być ustawiona jako domyślna",
+            "email": "Wprowadź prawidłowy adres e-mail"
         }
     }
 }

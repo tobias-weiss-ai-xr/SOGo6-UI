@@ -1,25 +1,25 @@
 {
     "AI_SEARCH": {
         "title": {
-            "string": "Natural Language Search"
+            "string": "Поиск на естественном языке"
         },
         "description": {
-            "string": "Search emails with plain English. Converts to structured queries automatically."
+            "string": "Ищите письма обычным языком. Запросы автоматически преобразуются в структурированные."
         },
         "input": {
             "placeholder": {
-                "string": "Show invoices from March over $500..."
+                "string": "Покажи счёты за март на сумму более 500$..."
             }
         },
         "output": {
             "title": {
-                "string": "Parsed Query"
+                "string": "Разобранный запрос"
             },
             "empty": {
-                "string": "Enter a search query above"
+                "string": "Введите поисковый запрос выше"
             },
             "detected": {
-                "string": "Detected filters"
+                "string": "Обнаруженные фильтры"
             }
         },
         "search": {
@@ -27,10 +27,10 @@
         },
         "errors": {
             "empty": {
-                "string": "Enter a search query"
+                "string": "Введите поисковый запрос"
             },
             "fail": {
-                "string": "Search failed"
+                "string": "Поиск не выполнен"
             }
         }
     }

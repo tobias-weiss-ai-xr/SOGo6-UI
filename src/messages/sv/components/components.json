@@ -2,26 +2,26 @@
   "COMPONENTS": {
     "forms": {
       "fixed-form-button-group": {
-        "alert": "{number} errors"
+        "alert": "{number} fel"
       }
     },
     "color-picker": {
-      "custom-color": "Custom Color"
+      "custom-color": "Anpassad färg"
     },
     "duration-picker": {
-      "noReminder": "No reminder",
-      "5min": "5 min before",
-      "10min": "10 min before",
-      "15min": "15 min before",
-      "30min": "30 min before",
-      "45min": "45 min before",
-      "1h": "1 hour before",
-      "2h": "2 hour before",
-      "5h": "5 hour before",
-      "15h": "15 hour before",
-      "1d": "1 day before",
-      "2d": "2 days before",
-      "1w": "1 week before"
+      "noReminder": "Ingen påminnelse",
+      "5min": "5 min före",
+      "10min": "10 min före",
+      "15min": "15 min före",
+      "30min": "30 min före",
+      "45min": "45 min före",
+      "1h": "1 timme före",
+      "2h": "2 timmar före",
+      "5h": "5 timmar före",
+      "15h": "15 timmar före",
+      "1d": "1 dag före",
+      "2d": "2 dagar före",
+      "1w": "1 vecka före"
     }
   }
 }

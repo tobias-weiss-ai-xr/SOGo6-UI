@@ -1,26 +1,26 @@
 {
   "IDENTITY_COMPONENT": {
     "labels": {
-      "name": "Identity Name",
-      "email": "Email Address",
-      "replyTo": "Reply To",
-      "newIdentity": "New Identity",
-      "default": "Default",
-      "removeIdentity": "Remove Identity",
-      "atLeastOneIdentity": "At least one identity is required",
+      "name": "Όνομα Ταυτότητας",
+      "email": "Διεύθυνση Email",
+      "replyTo": "Απάντηση Σε",
+      "newIdentity": "Νέα Ταυτότητα",
+      "default": "Προεπιλογή",
+      "removeIdentity": "Αφαίρεση Ταυτότητας",
+      "atLeastOneIdentity": "Απαιτείται τουλάχιστον μία ταυτότητα",
       "useDefaultIdentity": {
         "string": "Χρήση ως προεπιλεγμένης ταυτότητας"
       },
-      "setAsDefault": "Set as default",
-      "defaultDescription": "This identity will be used by default when composing new messages",
-      "mainIdentityEmail": "This is your main email address and cannot be changed",
-      "nameNotEditable": "Name editing is disabled by administrator",
-      "replyToNotEditable": "Reply-To editing is disabled by administrator",
-      "signatures": "Signatures",
-      "signaturesDescription": "Create and manage email signatures for this identity",
-      "signaturePlaceholder": "Enter signature name",
-      "addIdentity": "Add an identity",
-      "allowsCustom": "You can add and manage additional identities"
+      "setAsDefault": "Ορισμός ως προεπιλογή",
+      "defaultDescription": "Αυτή η ταυτότητα θα χρησιμοποιείται προεπιλεγμένα κατά τη σύνταξη νέων μηνυμάτων",
+      "mainIdentityEmail": "Αυτή είναι η κύρια διεύθυνση email σας και δεν μπορεί να αλλάξει",
+      "nameNotEditable": "Η επεξεργασία ονόματος έχει απενεργοποιηθεί από τον διαχειριστή",
+      "replyToNotEditable": "Η επεξεργασία Reply-To έχει απενεργοποιηθεί από τον διαχειριστή",
+      "signatures": "Υπογραφές",
+      "signaturesDescription": "Δημιουργία και διαχείριση υπογραφών email για αυτή την ταυτότητα",
+      "signaturePlaceholder": "Εισαγάγετε όνομα υπογραφής",
+      "addIdentity": "Προσθήκη ταυτότητας",
+      "allowsCustom": "Μπορείτε να προσθέσετε και να διαχειριστείτε πρόσθετες ταυτότητες"
     },
     "description": {
       "useDefaultIdentity": {
@@ -28,10 +28,10 @@
       }
     },
     "accessibility": {
-      "toggleCollapse": "Toggle identity details",
-      "expandIdentity": "Expand",
-      "collapseIdentity": "Collapse",
-      "removeIcon": "Remove identity button"
+      "toggleCollapse": "Εναλλαγή λεπτομερειών ταυτότητας",
+      "expandIdentity": "Επέκταση",
+      "collapseIdentity": "Σύμπτυξη",
+      "removeIcon": "Κουμπί αφαίρεσης ταυτότητας"
     }
   }
 }

@@ -12,7 +12,6 @@ import { Eye, EyeOff } from 'lucide-react'
 import { useTranslations } from 'next-intl'
 import { useState } from 'react'
 import { UseFormReturn } from 'react-hook-form'
-import { z } from 'zod'
 import { MODE_CREATE, MODE_EDIT } from '../external-accounts-utils'
 import type { MailboxSettings } from '../store/mailboxes-form-types'
 import type { schemaType } from './external-accounts-schema'
@@ -31,7 +30,7 @@ function ImapSecurityTabEdit({
 }: {
   accountData: MailboxSettings
 }) {
-  const t = useTranslations('US_MAIL_IMAP_ACCOUNTS')
+  const t = useTranslations('US_MAIL_EXTERNAL_ACCOUNTS')
 
   return (
     <div className="space-y-8">

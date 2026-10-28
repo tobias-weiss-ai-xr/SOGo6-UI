@@ -1,83 +1,83 @@
 {
-    "DISTRIBUTION_LIST_FORM": {
-        "new_list": {
-            "string": "New distribution list",
-            "context": "Title for the new distribution list dialog"
-        },
-        "edit_list": {
-            "string": "Edit distribution list",
-            "context": "Title for the edit distribution list dialog"
-        },
-        "list_badge": {
-            "string": "Distribution list",
-            "context": "Badge shown on distribution list detail view"
-        },
-        "member_count": {
-            "string": "{number, plural, one {# member} other {# members}}",
-            "context": "Member count on distribution list detail"
-        },
-        "members": {
-            "string": "Members",
-            "context": "Label for members section"
-        },
-        "members_selected": {
-            "string": "{number, plural, one {# member selected} other {# members selected}}",
-            "context": "Selected member count in form"
-        },
-        "members_required": {
-            "string": "Select at least one member or add an email address",
-            "context": "Validation when no members are provided"
-        },
-        "manual_emails": {
-            "string": "Additional email addresses",
-            "context": "Label for manual email inputs"
-        },
-        "no_members": {
-            "string": "No members in this list",
-            "context": "Empty state for members section"
-        },
-        "write_message": {
-            "string": "Write message",
-            "context": "Button to compose mail to all list members"
-        },
-        "add_email": {
-            "string": "Add email",
-            "context": "Button to add manual email field"
-        },
-        "remove_email": {
-            "string": "Remove email",
-            "context": "Aria label for removing manual email field"
-        },
-        "create": {
-            "string": "Δημιουργία",
-            "context": "Submit button for new list"
-        },
-        "save": {
-            "string": "Αποθήκευση",
-            "context": "Submit button for edit list"
-        },
-        "cancel": {
-            "string": "Ακύρωση",
-            "context": "Cancel button"
-        },
-        "fields": {
-            "name": {
-                "string": "List name"
-            },
-            "note": {
-                "string": "Περιγραφή"
-            }
-        },
-        "delete_dialog": {
-            "title": {
-                "string": "Delete distribution list?"
-            },
-            "description": {
-                "string": "This distribution list will be permanently removed from your address book."
-            },
-            "confirm": {
-                "string": "Διαγραφή"
-            }
-        }
+  "DISTRIBUTION_LIST_FORM": {
+    "new_list": {
+      "string": "Νέα λίστα διανομής",
+      "context": "Title for the new distribution list dialog"
+    },
+    "edit_list": {
+      "string": "Επεξεργασία λίστας διανομής",
+      "context": "Title for the edit distribution list dialog"
+    },
+    "list_badge": {
+      "string": "Λίστα διανομής",
+      "context": "Badge shown on distribution list detail view"
+    },
+    "member_count": {
+      "string": "{number, plural, one {# μέλος} other {# μέλη}}",
+      "context": "Member count on distribution list detail"
+    },
+    "members": {
+      "string": "Μέλη",
+      "context": "Label for members section"
+    },
+    "members_selected": {
+      "string": "{number, plural, one {# επιλεγμένο μέλος} other {# επιλεγμένα μέλη}}",
+      "context": "Selected member count in form"
+    },
+    "members_required": {
+      "string": "Επιλέξτε τουλάχιστον ένα μέλος ή προσθέστε μια διεύθυνση email",
+      "context": "Validation when no members are provided"
+    },
+    "manual_emails": {
+      "string": "Επιπλέον διευθύνσεις email",
+      "context": "Label for manual email inputs"
+    },
+    "no_members": {
+      "string": "Δεν υπάρχουν μέλη σε αυτή τη λίστα",
+      "context": "Empty state for members section"
+    },
+    "write_message": {
+      "string": "Σύνταξη μηνύματος",
+      "context": "Button to compose mail to all list members"
+    },
+    "add_email": {
+      "string": "Προσθήκη email",
+      "context": "Button to add manual email field"
+    },
+    "remove_email": {
+      "string": "Αφαίρεση email",
+      "context": "Aria label for removing manual email field"
+    },
+    "create": {
+      "string": "Δημιουργία",
+      "context": "Submit button for new list"
+    },
+    "save": {
+      "string": "Αποθήκευση",
+      "context": "Submit button for edit list"
+    },
+    "cancel": {
+      "string": "Ακύρωση",
+      "context": "Cancel button"
+    },
+    "fields": {
+      "name": {
+        "string": "Όνομα λίστας"
+      },
+      "note": {
+        "string": "Περιγραφή"
+      }
+    },
+    "delete_dialog": {
+      "title": {
+        "string": "Διαγραφή λίστας διανομής;"
+      },
+      "description": {
+        "string": "Αυτή η λίστα διανομής θα αφαιρεθεί οριστικά από τη λίστα διευθύνσεών σας."
+      },
+      "confirm": {
+        "string": "Διαγραφή"
+      }
     }
+  }
 }

@@ -1,0 +1,18 @@
+{
+  "NOTES": {
+    "title": "Muistiinpanot",
+    "new_note": "Uusi muistiinpano",
+    "save": "Tallenna",
+    "cancel": "Peruuta",
+    "edit": "Muokkaa",
+    "delete": "Poista",
+    "confirm_delete": "Poista muistiinpano",
+    "confirm_delete_message": "Oletko varma, että haluat poistaa tämän muistiinpanon? Tämä toiminto ei ole kumottavissa.",
+    "loading": "Lataan...",
+    "error": "Muistiinpanojen latauksessa tapahtui virhe.",
+    "no_notes": "Muistiinpanoja ei löytynyt.",
+    "created_at": "Luotu: {date}",
+    "placeholder_title": "Anna muistiinpanon otsikko",
+    "placeholder_content": "Aloita muistiinpanosi kirjoittaminen tähän..."
+  }
+}

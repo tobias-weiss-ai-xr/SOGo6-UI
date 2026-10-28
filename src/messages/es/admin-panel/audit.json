@@ -4,7 +4,7 @@
       "string": "Registro de auditoría"
     },
     "description": {
-      "string": "Tamper-proof log of admin and user actions. Entries are append-only and cannot be modified or deleted."
+      "string": "Registro a prueba de manipulaciones de las acciones de administradores y usuarios. Las entradas solo se pueden añadir y no se pueden modificar ni eliminar."
     },
     "table": {
       "timestamp": {
@@ -14,30 +14,30 @@
         "string": "Acción"
       },
       "actor": {
-        "string": "Actor"
+        "string": "Autor"
       },
       "target": {
-        "string": "Target"
+        "string": "Objetivo"
       },
       "detail": {
-        "string": "Detail"
+        "string": "Detalle"
       },
       "ip": {
         "string": "Dirección IP"
       },
       "no_entries": {
-        "string": "No audit log entries found."
+        "string": "No se encontraron entradas del registro de auditoría."
       }
     },
     "count_one": {
-      "string": "entry"
+      "string": "entrada"
     },
     "count_many": {
-      "string": "entries"
+      "string": "entradas"
     },
     "errors": {
       "load_failed": {
-        "string": "Failed to load audit log"
+        "string": "Error al cargar el registro de auditoría"
       }
     }
   }

@@ -24,6 +24,7 @@ export interface GeneralSettings {
   defaultView: string
   enableNotifications: boolean
   avatarEnabled: boolean
+  theme: 'default' | 'sogo5-classic'
   profilePictureSource:
     | typeof PP_DEFAULT
     | typeof PP_GRAVATAR

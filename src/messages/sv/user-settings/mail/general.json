@@ -115,7 +115,7 @@
         "context": "Small font size"
       },
       "md": {
-        "string": "Medium",
+        "string": "Medel",
         "context": "Medium font size"
       },
       "lg": {
@@ -161,10 +161,10 @@
       "string": "Fönster för nytt e-postmeddelande",
       "context": "Dropdown label to know where to open compose in",
       "popup": {
-        "string": "Compose email in a popup"
+        "string": "Skriv e-post i ett popupfönster"
       },
       "inline": {
-        "string": "Compose email inside the webmail"
+        "string": "Skriv e-post i webbmejlet"
       }
     }
   }

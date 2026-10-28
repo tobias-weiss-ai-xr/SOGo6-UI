@@ -1,68 +1,68 @@
 {
-    "AP_WEBHOOKS": {
-        "title": {
-            "string": "Webhooks"
-        },
-        "description": {
-            "string": "Outbound webhooks for n8n, Make, and other automation platforms. Events trigger HTTP POST with HMAC-signed payloads."
-        },
-        "form": {
-            "add": {
-                "string": "Add Webhook"
-            },
-            "cancel": {
-                "string": "Ακύρωση"
-            },
-            "title": {
-                "string": "New Webhook"
-            },
-            "url": {
-                "string": "Webhook URL"
-            },
-            "name": {
-                "string": "Display Name"
-            },
-            "name_placeholder": {
-                "string": "e.g. n8n Workflow"
-            },
-            "secret": {
-                "string": "Signing Secret"
-            },
-            "secret_placeholder": {
-                "string": "HMAC secret (optional)"
-            },
-            "events": {
-                "string": "Events"
-            },
-            "create": {
-                "string": "Create Webhook"
-            }
-        },
-        "create": {
-            "success": {
-                "string": "Webhook created"
-            },
-            "error": {
-                "string": "Failed to create webhook"
-            }
-        },
-        "delete": {
-            "success": {
-                "string": "Webhook deleted"
-            },
-            "error": {
-                "string": "Failed to delete"
-            }
-        },
-        "list": {
-            "empty": {
-                "string": "No webhooks configured. Click Add Webhook to get started."
-            }
-        },
-        "errors": {
-            "fields": {
-                "string": "URL and at least one event are required"
-            }
-        }
+  "AP_WEBHOOKS": {
+    "title": {
+      "string": "Webhooks"
+    },
+    "description": {
+      "string": "Εξερχόμενα webhook για n8n, Make και άλλες πλατφόρμες αυτοματισμού. Τα συμβάντα ενεργοποιούν HTTP POST με ωφέλιμα φορτία υπογεγραμμένα με HMAC."
+    },
+    "form": {
+      "add": {
+        "string": "Προσθήκη Webhook"
+      },
+      "cancel": {
+        "string": "Ακύρωση"
+      },
+      "title": {
+        "string": "Νέο Webhook"
+      },
+      "url": {
+        "string": "Webhook URL"
+      },
+      "name": {
+        "string": "Εμφανιζόμενο Όνομα"
+      },
+      "name_placeholder": {
+        "string": "π.χ. Ροή εργασιών n8n"
+      },
+      "secret": {
+        "string": "Μυστικό Υπογραφής"
+      },
+      "secret_placeholder": {
+        "string": "Μυστικό HMAC (προαιρετικό)"
+      },
+      "events": {
+        "string": "Συμβάντα"
+      },
+      "create": {
+        "string": "Δημιουργία Webhook"
+      }
+    },
+    "create": {
+      "success": {
+        "string": "Το webhook δημιουργήθηκε"
+      },
+      "error": {
+        "string": "Αποτυχία δημιουργίας webhook"
+      }
+    },
+    "delete": {
+      "success": {
+        "string": "Το webhook διαγράφηκε"
+      },
+      "error": {
+        "string": "Αποτυχία διαγραφής"
+      }
+    },
+    "list": {
+      "empty": {
+        "string": "Δεν έχουν ρυθμιστεί webhook. Κάντε κλικ στην Προσθήκη Webhook για να ξεκινήσετε."
+      }
+    },
+    "errors": {
+      "fields": {
+        "string": "Το URL και τουλάχιστον ένα συμβάν είναι υποχρεωτικά"
+      }
     }
+  }
 }

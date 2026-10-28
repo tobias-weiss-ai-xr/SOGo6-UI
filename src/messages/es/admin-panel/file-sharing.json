@@ -4,53 +4,53 @@
             "string": "Compartir archivos"
         },
         "description": {
-            "string": "Create shareable links for files with optional password protection, expiration, and download tracking."
+            "string": "Cree enlaces para compartir archivos con protección opcional por contraseña, caducidad y seguimiento de descargas."
         },
         "form": {
             "share": {
-                "string": "Share File"
+                "string": "Compartir archivo"
             },
             "cancel": {
                 "string": "Cancelar"
             },
             "title": {
-                "string": "Share a File"
+                "string": "Compartir un archivo"
             },
             "filename": {
-                "string": "Filename"
+                "string": "Nombre del archivo"
             },
             "size": {
-                "string": "Size (bytes)"
+                "string": "Tamaño (bytes)"
             },
             "expires": {
-                "string": "Expires in (days)"
+                "string": "Caduca en (días)"
             },
             "password": {
-                "string": "Password"
+                "string": "Contraseña"
             },
             "password_hint": {
-                "string": "Leave empty for no password"
+                "string": "Deje vacío para no usar contraseña"
             },
             "submit": {
-                "string": "Create Share Link"
+                "string": "Crear enlace para compartir"
             }
         },
         "create": {
             "success": {
-                "string": "Share link created"
+                "string": "Enlace para compartir creado"
             },
             "error": {
-                "string": "Failed to create share"
+                "string": "Error al crear la compartición"
             }
         },
         "list": {
             "empty": {
-                "string": "No shared files. Create a share link to securely distribute files."
+                "string": "No hay archivos compartidos. Cree un enlace para compartir y distribuir archivos de forma segura."
             }
         },
         "errors": {
             "fields": {
-                "string": "Filename and size are required"
+                "string": "El nombre y el tamaño del archivo son obligatorios"
             }
         }
     }

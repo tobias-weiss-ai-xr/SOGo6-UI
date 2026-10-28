@@ -1,0 +1,17 @@
+{
+  "Login": {
+    "offlineNotice": "U bent momenteel offline. Sommige functies zijn mogelijk beperkt."
+  },
+  "PWA": {
+    "installPrompt": {
+      "title": "Install SOGo",
+      "description": "Voeg SOGo toe aan uw startscherm voor snelle toegang, zelfs offline.",
+      "install": "Install",
+      "dismiss": "Not now"
+    },
+    "offlineBanner": {
+      "label": "U bent offline. Sommige functies werken mogelijk niet."
+    },
+    "featureUnavailable": "{feature} is niet beschikbaar wanneer u offline bent."
+  }
+}

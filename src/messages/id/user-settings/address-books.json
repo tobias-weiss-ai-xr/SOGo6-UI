@@ -31,7 +31,7 @@
       "title": "Couleur"
     },
     "validation": {
-      "category-name-required": "Category name is required"
+      "category-name-required": "Nama kategori wajib diisi"
     }
   }
 }

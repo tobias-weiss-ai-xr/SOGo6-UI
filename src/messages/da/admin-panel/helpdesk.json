@@ -1,68 +1,68 @@
 {
-    "AP_HELPDESK": {
-        "title": {
-            "string": "Helpdesk / Ticketing"
-        },
-        "description": {
-            "string": "Auto-create tickets from emails with assignment, priority, SLA tracking, and response history."
-        },
-        "form": {
-            "create": {
-                "string": "New Ticket"
-            },
-            "cancel": {
-                "string": "Annuller"
-            },
-            "title": {
-                "string": "Create Ticket"
-            },
-            "subject": {
-                "string": "Subject"
-            },
-            "priority": {
-                "string": "Priority"
-            },
-            "description": {
-                "string": "Beskrivelse"
-            },
-            "requester": {
-                "string": "Requester Email"
-            },
-            "assignee": {
-                "string": "Assignee Email"
-            },
-            "sla": {
-                "string": "SLA (hours)"
-            },
-            "submit": {
-                "string": "Create Ticket"
-            }
-        },
-        "create": {
-            "success": {
-                "string": "Ticket created"
-            },
-            "error": {
-                "string": "Failed to create"
-            }
-        },
-        "update": {
-            "success": {
-                "string": "Ticket updated"
-            },
-            "error": {
-                "string": "Failed to update"
-            }
-        },
-        "list": {
-            "empty": {
-                "string": "No tickets yet."
-            }
-        },
-        "errors": {
-            "fields": {
-                "string": "Subject and description are required"
-            }
-        }
+  "AP_HELPDESK": {
+    "title": {
+      "string": "Helpdesk / Ticketing"
+    },
+    "description": {
+      "string": "Opret automatisk sager ud fra e-mails med tildeling, prioritet, SLA-sporing og svarhistorik."
+    },
+    "form": {
+      "create": {
+        "string": "New Ticket"
+      },
+      "cancel": {
+        "string": "Annuller"
+      },
+      "title": {
+        "string": "Opret sag"
+      },
+      "subject": {
+        "string": "Subject"
+      },
+      "priority": {
+        "string": "Priority"
+      },
+      "description": {
+        "string": "Beskrivelse"
+      },
+      "requester": {
+        "string": "Forespørgers e-mail"
+      },
+      "assignee": {
+        "string": "Sagsbehandlers e-mail"
+      },
+      "sla": {
+        "string": "SLA (hours)"
+      },
+      "submit": {
+        "string": "Opret sag"
+      }
+    },
+    "create": {
+      "success": {
+        "string": "Sagen er oprettet"
+      },
+      "error": {
+        "string": "Kunne ikke oprette"
+      }
+    },
+    "update": {
+      "success": {
+        "string": "Sagen er opdateret"
+      },
+      "error": {
+        "string": "Kunne ikke opdatere"
+      }
+    },
+    "list": {
+      "empty": {
+        "string": "Ingen sager endnu."
+      }
+    },
+    "errors": {
+      "fields": {
+        "string": "Emne og beskrivelse er påkrævet"
+      }
     }
+  }
 }

@@ -1,57 +1,57 @@
 {
-    "AI_TRANSCRIPTS": {
-        "title": {
-            "string": "Meeting Transcripts"
-        },
-        "description": {
-            "string": "Record meeting transcripts, auto-generate summaries and action items."
-        },
-        "form": {
-            "create": {
-                "string": "New Transcript"
-            },
-            "cancel": {
-                "string": "Batal"
-            },
-            "title": {
-                "string": "Create Transcript"
-            },
-            "meeting_title": {
-                "string": "Meeting Title"
-            },
-            "event_id": {
-                "string": "Calendar Event ID"
-            },
-            "attendees": {
-                "string": "Attendees"
-            },
-            "transcript": {
-                "string": "Transcript / Notes"
-            },
-            "placeholder": {
-                "string": "Paste meeting notes or transcript..."
-            },
-            "submit": {
-                "string": "Save & Summarize"
-            }
-        },
-        "create": {
-            "success": {
-                "string": "Transcript saved"
-            },
-            "error": {
-                "string": "Failed to save"
-            }
-        },
-        "list": {
-            "empty": {
-                "string": "No transcripts yet."
-            }
-        },
-        "errors": {
-            "fields": {
-                "string": "Title and transcript text are required"
-            }
-        }
+  "AI_TRANSCRIPTS": {
+    "title": {
+      "string": "Transkrip Rapat"
+    },
+    "description": {
+      "string": "Rekam transkrip rapat, buat ringkasan dan item tindakan secara otomatis."
+    },
+    "form": {
+      "create": {
+        "string": "Transkrip Baru"
+      },
+      "cancel": {
+        "string": "Batal"
+      },
+      "title": {
+        "string": "Buat Transkrip"
+      },
+      "meeting_title": {
+        "string": "Judul Rapat"
+      },
+      "event_id": {
+        "string": "ID Acara Kalender"
+      },
+      "attendees": {
+        "string": "Attendees"
+      },
+      "transcript": {
+        "string": "Transkrip / Catatan"
+      },
+      "placeholder": {
+        "string": "Tempel catatan rapat atau transkrip..."
+      },
+      "submit": {
+        "string": "Simpan & Ringkas"
+      }
+    },
+    "create": {
+      "success": {
+        "string": "Transkrip disimpan"
+      },
+      "error": {
+        "string": "Gagal menyimpan"
+      }
+    },
+    "list": {
+      "empty": {
+        "string": "Belum ada transkrip."
+      }
+    },
+    "errors": {
+      "fields": {
+        "string": "Judul dan teks transkrip wajib diisi"
+      }
     }
+  }
 }

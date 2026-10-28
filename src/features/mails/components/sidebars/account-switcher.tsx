@@ -1,6 +1,13 @@
 'use client'
 
-import { Check, FolderPlus, Mail, MoreVertical, Plus, Users } from 'lucide-react'
+import {
+  Check,
+  FolderPlus,
+  Mail,
+  MoreVertical,
+  Plus,
+  Users,
+} from 'lucide-react'
 import * as React from 'react'
 
 import {
@@ -45,7 +52,9 @@ export function AccountSwitcher() {
   const getAccountEmail = (mailboxId: string): string => {
     // Check if it's a shared mailbox
     if (mailboxId.startsWith('shared-')) {
-      const sharedMailbox = sharedMailboxAccounts.find((m) => m.id === mailboxId)
+      const sharedMailbox = sharedMailboxAccounts.find(
+        (m) => m.id === mailboxId
+      )
       if (sharedMailbox) {
         return `${sharedMailbox.name} <${sharedMailbox.email}>`
       }
@@ -66,7 +75,9 @@ export function AccountSwitcher() {
   } else {
     selectedMailbox = allMailboxes[currentIndex] ?? allMailboxes[0]
   }
-  const selectedEmail = selectedMailbox ? getAccountEmail(selectedMailbox.id) : ''
+  const selectedEmail = selectedMailbox
+    ? getAccountEmail(selectedMailbox.id)
+    : ''
 
   if (isLoading) {
     return (
@@ -81,7 +92,9 @@ export function AccountSwitcher() {
               <Mail className="h-5 w-5 opacity-50" />
             </div>
             <div className="flex min-w-0 flex-col group-data-[collapsible=icon]:hidden">
-              <span className="text-muted-foreground animate-pulse">…</span>
+              <span className="text-sidebar-foreground/70 animate-pulse">
+                …
+              </span>
             </div>
           </SidebarMenuButton>
         </SidebarMenuItem>
@@ -102,10 +115,17 @@ export function AccountSwitcher() {
                 <div className="flex aspect-square size-8 items-center justify-center rounded-lg group-data-[collapsible=icon]:hidden">
                   <Mail className="h-5 w-5" />
                 </div>
-                <div className="flex min-w-0 flex-col group-data-[collapsible=icon]:hidden" title={selectedEmail}>
-                  <span className="truncate text-sm leading-tight">{selectedEmail.split('@')[0] || selectedEmail}</span>
+                <div
+                  className="flex min-w-0 flex-col group-data-[collapsible=icon]:hidden"
+                  title={selectedEmail}
+                >
+                  <span className="truncate text-sm leading-tight">
+                    {selectedEmail.split('@')[0] || selectedEmail}
+                  </span>
                   {selectedEmail.includes('@') && (
-                    <span className="truncate text-[10px] leading-none text-muted-foreground">@{selectedEmail.split('@')[1]}</span>
+                    <span className="text-sidebar-foreground/70 truncate text-[10px] leading-none">
+                      @{selectedEmail.split('@')[1]}
+                    </span>
                   )}
                 </div>
                 <MoreVertical className="ml-auto h-4 w-4 shrink-0 group-data-[collapsible=icon]:ml-0" />
@@ -121,7 +141,9 @@ export function AccountSwitcher() {
                   onClick={() => push(`/u/${index}/INBOX`)}
                   title={getAccountEmail(mailbox.id)}
                 >
-                  <span className="truncate">{getAccountEmail(mailbox.id)}</span>
+                  <span className="truncate">
+                    {getAccountEmail(mailbox.id)}
+                  </span>
                   {!currentIsShared && index === currentIndex && (
                     <Check className="ml-auto h-4 w-4 shrink-0" />
                   )}
@@ -131,7 +153,10 @@ export function AccountSwitcher() {
               {sharedMailboxAccounts.length > 0 && (
                 <>
                   <DropdownMenuSeparator />
-                  <DropdownMenuItem disabled className="text-xs text-muted-foreground">
+                  <DropdownMenuItem
+                    disabled
+                    className="text-muted-foreground text-xs"
+                  >
                     {t('account_switcher.shared_mailboxes.string')}
                   </DropdownMenuItem>
                   {sharedMailboxAccounts.map((mailbox) => (
@@ -141,7 +166,9 @@ export function AccountSwitcher() {
                       title={getAccountEmail(mailbox.id)}
                     >
                       <Users className="mr-2 h-4 w-4" />
-                      <span className="truncate">{getAccountEmail(mailbox.id)}</span>
+                      <span className="truncate">
+                        {getAccountEmail(mailbox.id)}
+                      </span>
                       {currentIsShared && account === mailbox.id && (
                         <Check className="ml-auto h-4 w-4 shrink-0" />
                       )}
@@ -165,7 +192,9 @@ export function AccountSwitcher() {
                   <DropdownMenuSeparator />
                   <DropdownMenuItem
                     className="cursor-pointer"
-                    onClick={() => push('/user_settings/mail/external_accounts')}
+                    onClick={() =>
+                      push('/user_settings/mail/external_accounts')
+                    }
                   >
                     <Plus className="mr-1.5 h-4 w-4" />
                     <span>{t('account_switcher.add_account.string')}</span>

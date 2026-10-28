@@ -1,0 +1,17 @@
+{
+  "Login": {
+    "offlineNotice": "Jelenleg offline vagy. Egyes funkciók korlátozottak lehetnek."
+  },
+  "PWA": {
+    "installPrompt": {
+      "title": "SOGo telepítése",
+      "description": "Adja hozzá a SOGo-t a kezdőképernyőjéhez a gyors hozzáférésért, akár offline is.",
+      "install": "Telepítés",
+      "dismiss": "Most nem"
+    },
+    "offlineBanner": {
+      "label": "Offline vagy. Egyes funkciók nem működnek."
+    },
+    "featureUnavailable": "A(z) {feature} nem elérhető offline módban."
+  }
+}

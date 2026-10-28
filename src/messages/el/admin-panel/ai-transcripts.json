@@ -1,57 +1,57 @@
 {
-    "AI_TRANSCRIPTS": {
-        "title": {
-            "string": "Meeting Transcripts"
-        },
-        "description": {
-            "string": "Record meeting transcripts, auto-generate summaries and action items."
-        },
-        "form": {
-            "create": {
-                "string": "New Transcript"
-            },
-            "cancel": {
-                "string": "Ακύρωση"
-            },
-            "title": {
-                "string": "Create Transcript"
-            },
-            "meeting_title": {
-                "string": "Meeting Title"
-            },
-            "event_id": {
-                "string": "Calendar Event ID"
-            },
-            "attendees": {
-                "string": "Attendees"
-            },
-            "transcript": {
-                "string": "Transcript / Notes"
-            },
-            "placeholder": {
-                "string": "Paste meeting notes or transcript..."
-            },
-            "submit": {
-                "string": "Save & Summarize"
-            }
-        },
-        "create": {
-            "success": {
-                "string": "Transcript saved"
-            },
-            "error": {
-                "string": "Failed to save"
-            }
-        },
-        "list": {
-            "empty": {
-                "string": "No transcripts yet."
-            }
-        },
-        "errors": {
-            "fields": {
-                "string": "Title and transcript text are required"
-            }
-        }
+  "AI_TRANSCRIPTS": {
+    "title": {
+      "string": "Πρακτικά Συναντήσεων"
+    },
+    "description": {
+      "string": "Καταγραφή πρακτικών συναντήσεων, αυτόματη δημιουργία συνοψίσεων και ενεργειών."
+    },
+    "form": {
+      "create": {
+        "string": "Νέο Πρακτικό"
+      },
+      "cancel": {
+        "string": "Ακύρωση"
+      },
+      "title": {
+        "string": "Δημιουργία Πρακτικού"
+      },
+      "meeting_title": {
+        "string": "Τίτλος Συνάντησης"
+      },
+      "event_id": {
+        "string": "ID Γεγονότος Ημερολογίου"
+      },
+      "attendees": {
+        "string": "Συμμετέχοντες"
+      },
+      "transcript": {
+        "string": "Πρακτικό / Σημειώσεις"
+      },
+      "placeholder": {
+        "string": "Επικολλήστε σημειώσεις ή πρακτικό συνάντησης..."
+      },
+      "submit": {
+        "string": "Αποθήκευση & Σύνοψη"
+      }
+    },
+    "create": {
+      "success": {
+        "string": "Το πρακτικό αποθηκεύτηκε"
+      },
+      "error": {
+        "string": "Αποτυχία αποθήκευσης"
+      }
+    },
+    "list": {
+      "empty": {
+        "string": "Δεν υπάρχουν πρακτικά ακόμα."
+      }
+    },
+    "errors": {
+      "fields": {
+        "string": "Ο τίτλος και το κείμενο του πρακτικού είναι υποχρεωτικά"
+      }
     }
+  }
 }

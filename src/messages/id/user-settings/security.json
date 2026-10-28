@@ -46,11 +46,11 @@
         "string": "Daftarkan kunci akses baru",
         "context": "Button to register a new passkey",
         "title": {
-          "string": "Register a New Passkey",
+          "string": "Daftarkan Passkey Baru",
           "context": "Title for the passkey registration dialog"
         },
         "description": {
-          "string": "Your browser or device will guide you through setting up a passkey using biometrics, a PIN, or an external security key.",
+          "string": "Peramban atau perangkat Anda akan memandu Anda menyiapkan passkey menggunakan biometrik, PIN, atau kunci keamanan eksternal.",
           "context": "Description for the passkey registration dialog"
         },
         "button": {
@@ -58,11 +58,11 @@
           "context": "Button to start passkey registration"
         },
         "waiting": {
-          "string": "Waiting for device interaction — follow the prompts on your device.",
+          "string": "Menunggu interaksi perangkat — ikuti petunjuk di perangkat Anda.",
           "context": "Status during passkey registration"
         },
         "success": {
-          "string": "Passkey registered successfully!",
+          "string": "Passkey berhasil didaftarkan!",
           "context": "Status when passkey registration succeeds"
         }
       },

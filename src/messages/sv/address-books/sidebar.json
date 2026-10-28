@@ -1,27 +1,27 @@
 {
     "ADDRESS_BOOKS_SIDEBAR": {
         "new_contact": {
-            "string": "New contact",
+            "string": "Ny kontakt",
             "context": "Button for creating a new contact in the sidebar"
         },
         "new_distribution_list": {
-            "string": "New distribution list",
+            "string": "Ny distributionslista",
             "context": "Button for creating a new distribution list in the sidebar"
         },
         "globals": {
-            "string": "Global address books"
+            "string": "Globala adressböcker"
         },
         "personals": {
-            "string": "Address books"
+            "string": "Adressböcker"
         },
         "add_personal": {
-            "string": "Add address book"
+            "string": "Lägg till adressbok"
         },
         "subscriptions": {
-            "string": "Subscriptions"
+            "string": "Prenumerationer"
         },
         "add_subscriptions": {
-            "string": "Add subscriptions"
+            "string": "Lägg till prenumerationer"
         },
         "name": {
             "string": "Namn",
@@ -30,7 +30,7 @@
         "options": {
             "edit": {
                 "title": {
-                    "string": "Edit address book {name}"
+                    "string": "Redigera adressboken {name}"
                 },
                 "labels": {
                     "name": {
@@ -40,107 +40,107 @@
             },
             "link": {
                 "title": {
-                    "string": "Links"
+                    "string": "Länkar"
                 },
                 "labels": {
                     "name": {
-                        "string": "CardDAV URL"
+                        "string": "CardDAV-URL"
                     }
                 },
                 "copy": {
-                    "string": "Copy URL",
+                    "string": "Kopiera URL",
                     "context": "Aria label for copying the address book CardDAV URL."
                 }
             },
             "delete": {
                 "title": {
-                    "string": "Are you sure you want to delete address book {name}?"
+                    "string": "Är du säker på att du vill radera adressboken {name}?"
                 }
             },
             "sharing": {
-                "string": "Sharing"
+                "string": "Delning"
             },
             "import": {
-                "string": "Import"
+                "string": "Importera"
             },
             "export": {
-                "string": "Export"
+                "string": "Exportera"
             },
             "ios_download": {
-                "string": "Download iOS - MacOS configuration profile"
+                "string": "Hämta konfigurationsprofil för iOS - macOS"
             }
         },
         "sharing": {
             "title": {
-                "string": "Address Book Sharing"
+                "string": "Delning av adressbok"
             },
             "description": {
-                "string": "Share this address book with other users. Shared users can view or modify contacts based on the permission level you grant."
+                "string": "Dela denna adressbok med andra användare. Användare som du delar med kan visa eller ändra kontakter beroende på vilken behörighetsnivå du ger dem."
             },
             "addUser": {
-                "string": "Add User"
+                "string": "Lägg till användare"
             },
             "searchPlaceholder": {
-                "string": "Enter user email..."
+                "string": "Ange användarens e-postadress..."
             },
             "addButton": {
-                "string": "Share"
+                "string": "Dela"
             },
             "added": {
-                "string": "Address book shared successfully"
+                "string": "Adressboken delades"
             },
             "addError": {
-                "string": "Failed to share address book"
+                "string": "Kunde inte dela adressboken"
             },
             "removed": {
-                "string": "Share removed successfully"
+                "string": "Delningen togs bort"
             },
             "removeError": {
-                "string": "Failed to remove share"
+                "string": "Kunde inte ta bort delningen"
             },
             "removeButton": {
                 "string": "Ta bort"
             },
             "existingShares": {
-                "string": "Shared with"
+                "string": "Delad med"
             },
             "noShares": {
-                "string": "This address book is not shared with anyone yet."
+                "string": "Denna adressbok är inte delad med någon ännu."
             },
             "table": {
                 "user": {
-                    "string": "User"
+                    "string": "Användare"
                 },
                 "level": {
-                    "string": "Permission Level"
+                    "string": "Behörighetsnivå"
                 }
             }
         },
         "all_contacts": {
-            "string": "All contacts",
+            "string": "Alla kontakter",
             "context": "Sidebar entry for cross-address-book contact listing"
         },
         "import": {
             "description": {
-                "string": "Upload a contacts or distribution list file to import."
+                "string": "Ladda upp en fil med kontakter eller distributionslistor för att importera."
             },
             "title_book": {
-                "string": "Import into {name}"
+                "string": "Importera till {name}"
             },
             "scope": {
-                "string": "Import target"
+                "string": "Importmål"
             },
             "scope_contacts": {
-                "string": "Contacts into this address book"
+                "string": "Kontakter till denna adressbok"
             },
             "scope_lists": {
-                "string": "Distribution lists into this address book"
+                "string": "Distributionslistor till denna adressbok"
             },
             "scope_new_book": {
-                "string": "Create a new address book"
+                "string": "Skapa en ny adressbok"
             },
             "format": {
-                "string": "File format"
+                "string": "Filformat"
             },
             "format_json": {
                 "string": "JSON"
@@ -155,22 +155,22 @@
                 "string": "LDIF"
             },
             "file": {
-                "string": "File"
+                "string": "Fil"
             },
             "submit": {
-                "string": "Start import"
+                "string": "Starta import"
             },
             "processing": {
-                "string": "Import in progress..."
+                "string": "Import pågår..."
             },
             "cancel": {
-                "string": "Cancel import"
+                "string": "Avbryt import"
             },
             "success": {
-                "string": "Import completed successfully."
+                "string": "Importen slutfördes."
             },
             "success_with_counts": {
-                "string": "Import completed. Created: {counts}."
+                "string": "Importen slutfördes. Skapade: {counts}."
             },
             "close": {
                 "string": "Stäng"
@@ -178,22 +178,22 @@
         },
         "export": {
             "description": {
-                "string": "Export this address book to a file."
+                "string": "Exportera denna adressbok till en fil."
             },
             "title_book": {
-                "string": "Export {name}"
+                "string": "Exportera {name}"
             },
             "format": {
-                "string": "Export format"
+                "string": "Exportformat"
             },
             "submit": {
-                "string": "Start export"
+                "string": "Starta export"
             },
             "processing": {
-                "string": "Export in progress..."
+                "string": "Export pågår..."
             },
             "success": {
-                "string": "Export completed. Your download should start shortly."
+                "string": "Exporten slutfördes. Din nedladdning börjar snart."
             },
             "close": {
                 "string": "Stäng"

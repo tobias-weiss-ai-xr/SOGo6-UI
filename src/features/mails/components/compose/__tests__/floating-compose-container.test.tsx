@@ -3,13 +3,19 @@ import '@testing-library/jest-dom'
 import { render, screen, waitFor } from '@testing-library/react'
 
 import FloatingComposeContainer from '@/features/mails/components/compose/floating-compose-container'
-import { useAppSelector } from '@/lib/redux/hooks'
 import { selectOpenDraftIds } from '@/features/mails/store'
+import { useAppSelector } from '@/lib/redux/hooks'
 
 jest.mock('@/lib/redux/hooks', () => ({
   useAppSelector: jest.fn(),
   useAppDispatch: jest.fn(() => jest.fn()),
 }))
+
+import { usePathname } from '@/lib/i18n/navigation'
+jest.mock('@/lib/i18n/navigation', () => ({
+  usePathname: jest.fn(() => '/'),
+}))
+const usePathnameMock = usePathname as unknown as jest.Mock
 
 jest.mock('@/features/user-profile', () => ({
   useProfile: jest.fn(() => ({ mainAccount: null })),
@@ -42,13 +48,11 @@ jest.mock('@/features/mails/components/constants', () => ({
   FOLDERS_NAME: { DRAFT: 'Drafts' },
 }))
 
-const mockFloatingCompose = jest.fn(
-  ({ draftId }: { draftId: string }) => (
-    <div data-testid="floating-compose" data-draft-id={draftId}>
-      {draftId}
-    </div>
-  )
-)
+const mockFloatingCompose = jest.fn(({ draftId }: { draftId: string }) => (
+  <div data-testid="floating-compose" data-draft-id={draftId}>
+    {draftId}
+  </div>
+))
 
 jest.mock('@/features/mails/components/compose/floating-compose', () => ({
   __esModule: true,
@@ -74,6 +78,7 @@ describe('FloatingComposeContainer', () => {
 
   beforeEach(() => {
     jest.clearAllMocks()
+    ;(usePathnameMock as jest.Mock).mockReturnValue('/')
 
     mockState = {
       mailCompose: {
@@ -100,6 +105,18 @@ describe('FloatingComposeContainer', () => {
 
       expect(wrapper).toBeInTheDocument()
       expect(screen.getByTestId('floating-compose')).toBeInTheDocument()
+    })
+
+    it('should not float the draft while on the full-page /compose route', () => {
+      mockState.mailCompose.openDraftIds = ['draft-1']
+      usePathnameMock.mockReturnValue('/en/compose')
+
+      const { container } = renderComponent()
+
+      expect(
+        container.querySelector('div[class*="flex-row-reverse"]')
+      ).toBeNull()
+      expect(screen.queryByTestId('floating-compose')).toBeNull()
     })
   })
 
@@ -186,11 +203,11 @@ describe('FloatingComposeContainer', () => {
 
       renderComponent()
 
-      expect(screen.getAllByTestId('floating-compose').map((node) => node.textContent)).toEqual([
-        'draft-a',
-        'draft-b',
-        'draft-c',
-      ])
+      expect(
+        screen
+          .getAllByTestId('floating-compose')
+          .map((node) => node.textContent)
+      ).toEqual(['draft-a', 'draft-b', 'draft-c'])
     })
   })
 

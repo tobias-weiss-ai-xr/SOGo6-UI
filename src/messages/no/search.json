@@ -1,15 +1,15 @@
 {
   "search": {
-    "openCommandPalette": "Press Cmd+K to open command palette",
-    "placeholder": "Search emails, contacts, calendar…",
-    "navigate": "Quick navigation",
-    "results": "Search results",
-    "noResults": "No results found.",
+    "openCommandPalette": "Trykk Cmd+K for å åpne kommandopaletten",
+    "placeholder": "Søk i e-post, kontakter, kalender…",
+    "navigate": "Rask navigasjon",
+    "results": "Søkeresultater",
+    "noResults": "Ingen resultater funnet.",
     "goToInbox": "Go to Inbox",
     "goToMail": "Go to Mail",
-    "goToContacts": "Go to Contacts",
-    "goToCalendar": "Go to Calendar",
-    "goToSettings": "Go to Settings",
-    "searchInMail": "Search mail for \"{query}\""
+    "goToContacts": "Gå til kontakter",
+    "goToCalendar": "Gå til kalenderen",
+    "goToSettings": "Gå til innstillinger",
+    "searchInMail": "Søk i e-post etter \"{query}\""
   }
 }

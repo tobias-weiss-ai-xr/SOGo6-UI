@@ -1,0 +1,17 @@
+{
+  "Login": {
+    "offlineNotice": "Vous êtes actuellement hors ligne. Certaines fonctionnalités peuvent être limitées."
+  },
+  "PWA": {
+    "installPrompt": {
+      "title": "Installer SOGo",
+      "description": "Ajoutez SOGo à votre écran d'accueil pour un accès rapide, même hors ligne.",
+      "install": "Installer",
+      "dismiss": "Pas maintenant"
+    },
+    "offlineBanner": {
+      "label": "Vous êtes hors ligne. Certaines fonctionnalités peuvent ne pas fonctionner."
+    },
+    "featureUnavailable": "{feature} n'est pas disponible hors ligne."
+  }
+}

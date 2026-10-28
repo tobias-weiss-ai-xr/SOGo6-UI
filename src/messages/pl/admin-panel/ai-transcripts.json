@@ -1,56 +1,56 @@
 {
     "AI_TRANSCRIPTS": {
         "title": {
-            "string": "Meeting Transcripts"
+            "string": "Transkrypcje spotkań"
         },
         "description": {
-            "string": "Record meeting transcripts, auto-generate summaries and action items."
+            "string": "Nagrywaj transkrypcje spotkań, automatycznie generuj podsumowania i zadania."
         },
         "form": {
             "create": {
-                "string": "New Transcript"
+                "string": "Nowa transkrypcja"
             },
             "cancel": {
                 "string": "Anuluj"
             },
             "title": {
-                "string": "Create Transcript"
+                "string": "Utwórz transkrypcję"
             },
             "meeting_title": {
-                "string": "Meeting Title"
+                "string": "Tytuł spotkania"
             },
             "event_id": {
-                "string": "Calendar Event ID"
+                "string": "Identyfikator wydarzenia"
             },
             "attendees": {
-                "string": "Attendees"
+                "string": "Uczestnicy"
             },
             "transcript": {
-                "string": "Transcript / Notes"
+                "string": "Transkrypcja / Notatki"
             },
             "placeholder": {
-                "string": "Paste meeting notes or transcript..."
+                "string": "Wklej notatki ze spotkania lub transkrypcję..."
             },
             "submit": {
-                "string": "Save & Summarize"
+                "string": "Zapisz i podsumuj"
             }
         },
         "create": {
             "success": {
-                "string": "Transcript saved"
+                "string": "Zapisano transkrypcję"
             },
             "error": {
-                "string": "Failed to save"
+                "string": "Nie udało się zapisać"
             }
         },
         "list": {
             "empty": {
-                "string": "No transcripts yet."
+                "string": "Brak transkrypcji."
             }
         },
         "errors": {
             "fields": {
-                "string": "Title and transcript text are required"
+                "string": "Tytuł i tekst transkrypcji są wymagane"
             }
         }
     }

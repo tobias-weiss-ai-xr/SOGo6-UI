@@ -1,0 +1,18 @@
+{
+  "NOTES": {
+    "title": "Noter",
+    "new_note": "Ny note",
+    "save": "Gem",
+    "cancel": "Annuller",
+    "edit": "Rediger",
+    "delete": "Slet",
+    "confirm_delete": "Slet note",
+    "confirm_delete_message": "Er du sikker på, at du vil slette denne note? Denne handling kan ikke fortrydes.",
+    "loading": "Indlæser...",
+    "error": "Der opstod en fejl under indlæsning af noter.",
+    "no_notes": "Ingen noter fundet.",
+    "created_at": "Oprettet: {date}",
+    "placeholder_title": "Indtast notetitel",
+    "placeholder_content": "Begynd at skrive din note her..."
+  }
+}

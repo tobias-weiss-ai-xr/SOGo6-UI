@@ -50,7 +50,7 @@ import {
   formDialogHeaderClassName,
   formDialogTitleClassName,
 } from '@/lib/utils/form-dialog-layout'
-import { Pencil } from 'lucide-react'
+import { Copy, Pencil } from 'lucide-react'
 import { useTranslations } from 'next-intl'
 import { useRouter, useSearchParams } from 'next/navigation'
 import { memo, useCallback, useEffect, useMemo, useState } from 'react'
@@ -112,7 +112,7 @@ const CalendarPage = () => {
     (state) => state.calendarUi.createEventRequested
   )
   const [selectedEvent, setSelectedEvent] = useState<CalendarEvent | null>(null)
-  const [dialogMode, setDialogMode] = useState<'view' | 'edit'>('view')
+  const [dialogMode, setDialogMode] = useState<'view' | 'edit' | 'copy'>('view')
   const [deleteScopeDialogOpen, setDeleteScopeDialogOpen] = useState(false)
   const [deleteCalendarEvent] = useDeleteCalendarEventMutation()
 
@@ -170,7 +170,7 @@ const CalendarPage = () => {
       if (isCalendarWritable(calendarState.defaultCalendar)) {
         calendarState.setSelectedSlot({
           start: new Date(),
-          end: new Date(),
+          end: new Date(Date.now() + 60 * 60 * 1000),
           slots: [],
           action: 'click',
         })
@@ -319,6 +319,7 @@ const CalendarPage = () => {
         }}
       >
         <DialogContent
+          aria-describedby={undefined}
           className={cn(
             dialogMode === 'edit'
               ? formDialogContentClassName('2xl')
@@ -351,6 +352,18 @@ const CalendarPage = () => {
               >
                 {isSelectedEventWritable && (
                   <>
+                    <Button
+                      type="button"
+                      variant="outline"
+                      disabled={isDetailFetching && eventKeyForQuery !== null}
+                      onClick={() => {
+                        // Copy mode: open form with event data but without ID to create new
+                        setDialogMode('copy')
+                      }}
+                    >
+                      <Copy className={cn('mr-2 h-4 w-4')} />
+                      {t('forms.copyEvent.string')}
+                    </Button>
                     <Button
                       type="button"
                       variant="outline"
@@ -408,6 +421,32 @@ const CalendarPage = () => {
                 <LazyEventForm
                   key={eventKeyForQuery ?? 'edit-event'}
                   event={displayEvent}
+                  calendarKey={eventCalendarKey}
+                  calendars={calendarState.calendarsData ?? []}
+                  onCancel={() => setDialogMode('view')}
+                />
+              </div>
+            </>
+          )}
+          {selectedEvent && displayEvent && dialogMode === 'copy' && (
+            <>
+              <DialogHeader className={formDialogHeaderClassName}>
+                <DialogTitle className={formDialogTitleClassName}>
+                  {t('forms.copyEvent.string')}: {selectedEvent.title}
+                </DialogTitle>
+              </DialogHeader>
+              <div
+                className={cn('flex min-h-0 flex-1 flex-col overflow-hidden')}
+              >
+                <LazyEventForm
+                  key="copy-event"
+                  // Pass all event data EXCEPT the key/id to create a new event
+                  event={{
+                    ...displayEvent,
+                    key: undefined,
+                    id: undefined,
+                    uid: undefined,
+                  }}
                   calendarKey={eventCalendarKey}
                   calendars={calendarState.calendarsData ?? []}
                   onCancel={() => setDialogMode('view')}

@@ -85,17 +85,21 @@ const HeaderDropdown: React.FC = () => {
         </div>
       </DropdownMenuTrigger>
       <DropdownMenuContent className="w-56">
-        <DropdownMenuLabel className="flex items-center justify-between">
-          <span className="text-foreground dark:text-foreground">
-            {t('theme.title.string')}
-          </span>
-          <span className="text-muted-foreground text-right">
-            {t(`theme.${theme}.string`)}
-          </span>
-        </DropdownMenuLabel>
-        <DropdownMenuSeparator />
-        <ThemeSwitcher />
-        <DropdownMenuSeparator />
+        {theme !== 'sogo5-classic' && (
+          <>
+            <DropdownMenuLabel className="flex items-center justify-between">
+              <span className="text-foreground dark:text-foreground">
+                {t('theme.title.string')}
+              </span>
+              <span className="text-muted-foreground text-right">
+                {t(`theme.${theme}.string`)}
+              </span>
+            </DropdownMenuLabel>
+            <DropdownMenuSeparator />
+            <ThemeSwitcher />
+            <DropdownMenuSeparator />
+          </>
+        )}
         <DropdownMenuLabel>{t('account.section.string')}</DropdownMenuLabel>
         <DropdownMenuSeparator />
         <DropdownMenuItem

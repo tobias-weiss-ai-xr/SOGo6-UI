@@ -1,37 +1,37 @@
 {
-    "AI_SEARCH": {
-        "title": {
-            "string": "Natural Language Search"
-        },
-        "description": {
-            "string": "Search emails with plain English. Converts to structured queries automatically."
-        },
-        "input": {
-            "placeholder": {
-                "string": "Show invoices from March over $500..."
-            }
-        },
-        "output": {
-            "title": {
-                "string": "Parsed Query"
-            },
-            "empty": {
-                "string": "Enter a search query above"
-            },
-            "detected": {
-                "string": "Detected filters"
-            }
-        },
-        "search": {
-            "string": "Αναζήτηση"
-        },
-        "errors": {
-            "empty": {
-                "string": "Enter a search query"
-            },
-            "fail": {
-                "string": "Search failed"
-            }
-        }
+  "AI_SEARCH": {
+    "title": {
+      "string": "Αναζήτηση Φυσικής Γλώσσας"
+    },
+    "description": {
+      "string": "Αναζητήστε email με απλά λόγια. Μετατρέπεται αυτόματα σε δομημένα ερωτήματα."
+    },
+    "input": {
+      "placeholder": {
+        "string": "Εμφάνιση τιμολογίων από Μάρτιο άνω των $500..."
+      }
+    },
+    "output": {
+      "title": {
+        "string": "Αναλυμένο Ερώτημα"
+      },
+      "empty": {
+        "string": "Εισαγάγετε ένα ερώτημα αναζήτησης παραπάνω"
+      },
+      "detected": {
+        "string": "Εντοπισμένα φίλτρα"
+      }
+    },
+    "search": {
+      "string": "Αναζήτηση"
+    },
+    "errors": {
+      "empty": {
+        "string": "Εισαγάγετε ερώτημα αναζήτησης"
+      },
+      "fail": {
+        "string": "Η αναζήτηση απέτυχε"
+      }
     }
+  }
 }

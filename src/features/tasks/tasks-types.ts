@@ -1,5 +1,6 @@
 import type {
   EventAttendee,
+  EventRecurrence,
   EventReminder,
 } from '@/features/calendars/calendars-types'
 
@@ -40,6 +41,7 @@ export interface Task {
   attendees?: EventAttendee[]
   related_to?: string[]
   component_type?: 'task'
+  recurrence_rule?: EventRecurrence | null
   created_at?: string | null
   updated_at?: string | null
 }
@@ -59,6 +61,7 @@ export type TaskCreateBody = {
   organizer?: EventAttendee | null
   attendees?: EventAttendee[]
   related_to?: string[]
+  recurrence_rule?: EventRecurrence | null
 }
 
 export type TaskUpdateBody = Partial<TaskCreateBody>

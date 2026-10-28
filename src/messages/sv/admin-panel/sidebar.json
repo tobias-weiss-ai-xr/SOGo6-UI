@@ -4,55 +4,55 @@
             "string": "System"
         },
         "theme": {
-            "string": "Theme"
+            "string": "Tema"
         },
         "users": {
             "string": "Användare"
         },
         "bulk_users": {
-            "string": "Bulk Users"
+            "string": "Masshantera användare"
         },
         "quotas": {
-            "string": "Quotas"
+            "string": "Kvoter"
         },
         "branding": {
-            "string": "Branding"
+            "string": "Varumärke"
         },
         "backup": {
-            "string": "Backup"
+            "string": "Säkerhetskopiering"
         },
         "db_migration": {
-            "string": "DB Migration"
+            "string": "DB-migrering"
         },
         "migration": {
-            "string": "Migration"
+            "string": "Migrering"
         },
         "config_code": {
-            "string": "Config as Code"
+            "string": "Konfiguration som kod"
         },
         "webhooks": {
             "string": "Webhooks"
         },
         "oauth_clients": {
-            "string": "OAuth Clients"
+            "string": "OAuth-klienter"
         },
         "scheduling_polls": {
-            "string": "Scheduling Polls"
+            "string": "Schemaläggningsomröstningar"
         },
         "appointment_slots": {
-            "string": "Appointment Slots"
+            "string": "Bokningstider"
         },
         "shared_drafts": {
-            "string": "Shared Drafts"
+            "string": "Delade utkast"
         },
         "file_sharing": {
-            "string": "File Sharing"
+            "string": "Fildelning"
         },
         "doc_preview": {
-            "string": "Doc Preview"
+            "string": "Dokumentförhandsvisning"
         },
         "approvals": {
-            "string": "Approvals"
+            "string": "Godkännanden"
         },
         "helpdesk": {
             "string": "Helpdesk"
@@ -61,109 +61,109 @@
             "string": "CRM"
         },
         "workflows": {
-            "string": "Workflows"
+            "string": "Arbetsflöden"
         },
         "quick_actions": {
-            "string": "Quick Actions"
+            "string": "Snabbåtgärder"
         },
         "freebusy": {
-            "string": "Free/Busy"
+            "string": "Ledig/Upptagen"
         },
         "ai_summarize": {
-            "string": "AI Summarize"
+            "string": "AI-sammanfattning"
         },
         "ai_classify": {
-            "string": "AI Classify"
+            "string": "AI-klassificering"
         },
         "ai_draft": {
-            "string": "AI Draft"
+            "string": "AI-utkast"
         },
         "ai_search": {
-            "string": "AI Search"
+            "string": "AI-sökning"
         },
         "ai_schedule": {
-            "string": "AI Schedule"
+            "string": "AI-schemaläggning"
         },
         "ai_anomaly": {
-            "string": "AI Anomaly"
+            "string": "AI-avvikelser"
         },
         "ai_enrich": {
-            "string": "AI Enrich"
+            "string": "AI-berikning"
         },
         "ai_attachment": {
-            "string": "AI Attach"
+            "string": "AI-bilagor"
         },
         "ai_spam": {
-            "string": "AI Spam"
+            "string": "AI-skräppost"
         },
         "ai_transcripts": {
-            "string": "AI Transcripts"
+            "string": "AI-protokoll"
         },
         "api_docs": {
-            "string": "API Documentation"
+            "string": "API-dokumentation"
         },
         "config": {
             "string": "Konfiguration",
             "rules": {
-                "string": "Rules"
+                "string": "Regler"
             },
             "domains": {
-                "string": "Domains",
+                "string": "Domäner",
                 "default": {
                     "string": "Standard"
                 },
                 "custom": {
-                    "string": "Custom domains"
+                    "string": "Egna domäner"
                 }
             }
         },
         "sessions": {
-            "string": "Sessions"
+            "string": "Sessioner"
         },
         "audit": {
-            "string": "Audit Log"
+            "string": "Granskningslogg"
         },
         "health": {
-            "string": "Health"
+            "string": "Hälsa"
         },
         "debug": {
-            "string": "Mailbox Debug"
+            "string": "Postlådefelsökning"
         },
         "dns_wizard": {
-            "string": "DNS Wizard"
+            "string": "DNS-guide"
         },
         "resources": {
             "string": "Resurser"
         },
         "scim": {
-            "string": "SCIM Provisioning"
+            "string": "SCIM-etablering"
         },
         "student_groups": {
-            "string": "Student Groups"
+            "string": "Studentgrupper"
         },
         "hipaa": {
-            "string": "HIPAA Compliance"
+            "string": "HIPAA-efterlevnad"
         },
         "eidas": {
-            "string": "eIDAS Signatures"
+            "string": "eIDAS-signaturer"
         },
         "donor": {
-            "string": "Donor Management"
+            "string": "Donatorhantering"
         },
         "volunteer": {
-            "string": "Volunteer Scheduling"
+            "string": "Volontärsschemaläggning"
         },
         "import": {
             "string": "Import/Export"
         },
         "matrix": {
-            "string": "Matrix Chat"
+            "string": "Matrix-chatt"
         },
         "protocols": {
             "string": "JMAP / ActiveSync"
         },
         "mobile": {
-            "string": "Mobile App"
+            "string": "Mobilapp"
         }
     }
 }

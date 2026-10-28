@@ -4,7 +4,7 @@
             "string": "Acciones rápidas"
         },
         "description": {
-            "string": "User-defined multi-step actions triggered with a single click from the mail list."
+            "string": "Acciones de varios pasos definidas por el usuario que se ejecutan con un solo clic desde la lista de correo."
         },
         "form": {
             "create": {
@@ -17,13 +17,13 @@
                 "string": "Create Quick Acción"
             },
             "name": {
-                "string": "Action Name"
+                "string": "Nombre de la acción"
             },
             "icon": {
-                "string": "Icon"
+                "string": "Icono"
             },
             "steps": {
-                "string": "Steps"
+                "string": "Pasos"
             },
             "submit": {
                 "string": "Create Acción"
@@ -31,28 +31,28 @@
         },
         "create": {
             "success": {
-                "string": "Action created"
+                "string": "Acción creada"
             },
             "error": {
-                "string": "Failed to create"
+                "string": "Error al crear"
             }
         },
         "delete": {
             "success": {
-                "string": "Action deleted"
+                "string": "Acción eliminada"
             },
             "error": {
-                "string": "Failed to delete"
+                "string": "Error al eliminar"
             }
         },
         "list": {
             "empty": {
-                "string": "No quick actions yet. Create one to speed up your workflow."
+                "string": "Aún no hay acciones rápidas. Cree una para agilizar su flujo de trabajo."
             }
         },
         "errors": {
             "fields": {
-                "string": "Name and at least one step are required"
+                "string": "El nombre y al menos un paso son obligatorios"
             }
         }
     }

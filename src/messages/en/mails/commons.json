@@ -1,6 +1,39 @@
 {
     "MAILS_COMMONS": {
+        "cancel": {
+            "string": "Cancel",
+            "context": "Generic cancel/dismiss button label"
+        },
+        "followUp": {
+            "title": "Set follow-up",
+            "changeTitle": "Change follow-up",
+            "description": "Choose when to be reminded about this email.",
+            "clear": "Clear follow-up",
+            "set": "Set follow-up"
+        },
         "mail_display": {
+            "smime": {
+                "encrypted": {
+                    "string": "Encrypted",
+                    "description": "Badge shown when a mail was S/MIME encrypted and could be decrypted"
+                },
+                "signature_valid": {
+                    "string": "Signed — signature valid",
+                    "description": "Badge shown when the S/MIME signature verified successfully"
+                },
+                "signature_invalid": {
+                    "string": "Signature invalid",
+                    "description": "Badge shown when the S/MIME signature failed verification"
+                },
+                "signature_untrusted": {
+                    "string": "Signed — signature valid, CA not trusted",
+                    "description": "Badge shown when the signature verifies but the signer's CA does not chain to the configured trust bundle"
+                },
+                "encrypted_not_readable": {
+                    "string": "Encrypted — no certificate",
+                    "description": "Badge shown when a mail is S/MIME encrypted but no key is available to decrypt it"
+                }
+            },
             "action-bar": {
                 "reply": {
                     "string": "Reply",
@@ -149,6 +182,9 @@
                 "snooze": {
                     "string": "Snooze",
                     "description": "Temporarily remove from inbox and return later"
+                },
+                "move_to_folder": {
+                    "string": "Move to folder"
                 }
             },
             "content": {
@@ -334,7 +370,7 @@
                         "description": "Label for the folder name input"
                     },
                     "placeholder": {
-                        "string": "e.g. Work, Archives\u2026",
+                        "string": "e.g. Work, Archives…",
                         "description": "Placeholder for the folder name input"
                     },
                     "submit": {
@@ -422,6 +458,23 @@
                         "TEMPLATE": {
                             "string": "Templates"
                         }
+                    }
+                },
+                "move_mails_dialog": {
+                    "title": {
+                        "string": "Move mails"
+                    },
+                    "description": {
+                        "string": "Move {count} selected mails to another folder."
+                    },
+                    "placeholder": {
+                        "string": "Select destination folder"
+                    },
+                    "confirm": {
+                        "string": "Move"
+                    },
+                    "cancel": {
+                        "string": "Cancel"
                     }
                 },
                 "move_to_dialog": {
@@ -613,7 +666,7 @@
                         "description": "Label for the folder name input"
                     },
                     "placeholder": {
-                        "string": "e.g. Work, Archives\u2026",
+                        "string": "e.g. Work, Archives…",
                         "description": "Placeholder for the folder name input"
                     },
                     "submit": {
@@ -663,7 +716,7 @@
                 "description": "Message templates"
             },
             "virtual_folder": {
-                "string": "Virtual folder \u2014 expand to browse subfolders",
+                "string": "Virtual folder — expand to browse subfolders",
                 "description": "Tooltip for non-selectable IMAP folders"
             },
             "virtual_empty": {
@@ -701,7 +754,7 @@
                 "description": "Message when an attendee sends an iMIP REPLY"
             },
             "sync_pending": {
-                "string": "Syncing with your calendar\u2026",
+                "string": "Syncing with your calendar…",
                 "description": "Event not found yet after opening invitation mail"
             },
             "retry": {

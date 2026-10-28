@@ -1,62 +1,62 @@
 {
     "AP_POLLS": {
         "title": {
-            "string": "Scheduling Polls"
+            "string": "Schemaläggningsomröstningar"
         },
         "description": {
-            "string": "Create 'When are you free?' polls to find the best meeting time for internal and external participants."
+            "string": "Skapa omröstningar av typen \"När passar du?\" för att hitta den bästa mötestiden för interna och externa deltagare."
         },
         "form": {
             "create": {
-                "string": "Create Poll"
+                "string": "Skapa omröstning"
             },
             "cancel": {
                 "string": "Avbryt"
             },
             "title": {
-                "string": "New Scheduling Poll"
+                "string": "Ny schemaläggningsomröstning"
             },
             "poll_title": {
-                "string": "Poll Title"
+                "string": "Omröstningstitel"
             },
             "title_hint": {
-                "string": "e.g. Q1 Planning Meeting"
+                "string": "t.ex. Planeringsmöte för Q1"
             },
             "participants": {
-                "string": "Participants"
+                "string": "Deltagare"
             },
             "description": {
                 "string": "Beskrivning"
             },
             "time_slots": {
-                "string": "Proposed Time Slots"
+                "string": "Föreslagna tidpunkter"
             },
             "add_slot": {
-                "string": "Add Slot"
+                "string": "Lägg till tid"
             },
             "submit": {
-                "string": "Create Poll"
+                "string": "Skapa omröstning"
             }
         },
         "create": {
             "success": {
-                "string": "Poll created"
+                "string": "Omröstningen skapades"
             },
             "error": {
-                "string": "Failed to create poll"
+                "string": "Kunde inte skapa omröstningen"
             }
         },
         "list": {
             "empty": {
-                "string": "No scheduling polls yet. Create one to find the best meeting time."
+                "string": "Inga schemaläggningsomröstningar ännu. Skapa en för att hitta den bästa mötestiden."
             },
             "by": {
-                "string": "by"
+                "string": "av"
             }
         },
         "errors": {
             "fields": {
-                "string": "Title, participants, and at least one time slot are required"
+                "string": "Titel, deltagare och minst en tidpunkt krävs"
             }
         }
     }

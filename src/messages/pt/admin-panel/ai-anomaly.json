@@ -1,48 +1,48 @@
 {
     "AI_ANOMALY": {
         "title": {
-            "string": "Anomaly Detecção"
+            "string": "Detecção de Anomalias"
         },
         "description": {
-            "string": "Flag unusual sending patterns: bulk email, odd hours, new recipients."
+            "string": "Marque padrões de envio incomuns: e-mails em massa, horários atípicos, novos destinatários."
         },
         "input": {
             "title": {
-                "string": "Sending Pattern"
+                "string": "Padrão de Envio"
             },
             "recipients": {
-                "string": "Recipient Count"
+                "string": "Contagem de Destinatários"
             },
             "hour": {
-                "string": "Hour (0-23)"
+                "string": "Hora (0-23)"
             },
             "new_ratio": {
-                "string": "New Recipient Ratio"
+                "string": "Taxa de Novos Destinatários"
             }
         },
         "output": {
             "title": {
-                "string": "Analysis Result"
+                "string": "Resultado da Análise"
             },
             "empty": {
-                "string": "Enter values and click Analyze"
+                "string": "Insira valores e clique em Analisar"
             },
             "anomaly": {
-                "string": "Anomaly Detected!"
+                "string": "Anomalia Detectada!"
             },
             "normal": {
-                "string": "Pattern Normal"
+                "string": "Padrão Normal"
             },
             "score": {
-                "string": "Risk Score"
+                "string": "Pontuação de Risco"
             }
         },
         "analyze": {
-            "string": "Analyze"
+            "string": "Analisar"
         },
         "errors": {
             "fail": {
-                "string": "Analysis failed"
+                "string": "Análise falhou"
             }
         }
     }

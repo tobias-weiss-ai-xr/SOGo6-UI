@@ -26,7 +26,7 @@
         },
         "filters": {
             "all": {
-                "string": "All"
+                "string": "Toutes"
             },
             "needs_action": {
                 "string": "À faire"
@@ -38,7 +38,7 @@
                 "string": "Terminé"
             },
             "cancelled": {
-                "string": "Cancelled"
+                "string": "Annulées"
             },
             "overdue": {
                 "string": "En retard"
@@ -46,13 +46,13 @@
         },
         "priority": {
             "none": {
-                "string": "No priority"
+                "string": "Aucune priorité"
             },
             "high": {
                 "string": "Haute"
             },
             "medium": {
-                "string": "Medium"
+                "string": "Moyenne"
             },
             "low": {
                 "string": "Basse"
@@ -69,7 +69,7 @@
                 "string": "Terminé"
             },
             "cancelled": {
-                "string": "Cancelled"
+                "string": "Annulée"
             }
         },
         "form": {
@@ -98,7 +98,7 @@
                 "string": "Priorité"
             },
             "percent_complete": {
-                "string": "Progress"
+                "string": "Progression"
             },
             "calendar": {
                 "string": "Agenda"
@@ -116,11 +116,11 @@
                 "string": "Annuleur"
             },
             "calendar_required": {
-                "string": "Select a calendar"
+                "string": "Sélectionner un calendrier"
             },
             "errors": {
                 "date_order": {
-                    "string": "Due date must be on or after the start date."
+                    "string": "La date d'échéance doit être postérieure ou égale à la date de début."
                 }
             }
         },
@@ -134,7 +134,7 @@
         },
         "delete_dialog": {
             "title": {
-                "string": "Delete task?"
+                "string": "Supprimer la tâche ?"
             },
             "description": {
                 "string": "Cette action est irréversible."
@@ -148,16 +148,16 @@
         },
         "selection": {
             "enter": {
-                "string": "Select tasks"
+                "string": "Sélectionner des tâches"
             },
             "cancel": {
                 "string": "Annuleur"
             },
             "select_all": {
-                "string": "Select all tasks"
+                "string": "Sélectionner toutes les tâches"
             },
             "count": {
-                "string": "{count, plural, one {# selected} other {# selected}}"
+                "string": "{count, plural, one {# sélectionnée} other {# sélectionnées}}"
             },
             "actions": {
                 "complete": {
@@ -172,10 +172,10 @@
             },
             "delete_dialog": {
                 "title": {
-                    "string": "Delete selected tasks?"
+                    "string": "Supprimer les tâches sélectionnées ?"
                 },
                 "description": {
-                    "string": "You are about to delete {count, plural, one {# task} other {# tasks}}. This action cannot be undone."
+                    "string": "Vous êtes sur le point de supprimer {count, plural, one {# tâche} other {# tâches}}. Cette action est irréversible."
                 },
                 "confirm": {
                     "string": "Supprimeur"
@@ -188,10 +188,10 @@
         "sidebar": {
             "smart_views": {
                 "title": {
-                    "string": "Smart views"
+                    "string": "Vues intelligentes"
                 },
                 "all": {
-                    "string": "All tasks"
+                    "string": "Toutes les tâches"
                 },
                 "today": {
                     "string": "Aujourd'hui"
@@ -220,10 +220,10 @@
                 "string": "Tâches"
             },
             "view_all": {
-                "string": "View all tasks"
+                "string": "Voir toutes les tâches"
             },
             "empty": {
-                "string": "No pending tasks"
+                "string": "Aucune tâche en attente"
             },
             "loading": {
                 "string": "Chargement des tâches…"

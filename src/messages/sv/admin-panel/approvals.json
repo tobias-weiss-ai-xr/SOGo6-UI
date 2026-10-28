@@ -1,64 +1,64 @@
 {
     "AP_APPROVALS": {
         "title": {
-            "string": "Approval Workflows"
+            "string": "Godkännandeflöden"
         },
         "description": {
-            "string": "Create multi-step approval chains for purchase orders, announcements, and more."
+            "string": "Skapa godkännandekedjor i flera steg för inköpsorder, kungörelser med mera."
         },
         "form": {
             "create": {
-                "string": "New Approval"
+                "string": "Nytt godkännande"
             },
             "cancel": {
                 "string": "Avbryt"
             },
             "title": {
-                "string": "Create Approval Workflow"
+                "string": "Skapa godkännandeflöde"
             },
             "workflow_title": {
-                "string": "Title"
+                "string": "Titel"
             },
             "category": {
-                "string": "Category"
+                "string": "Kategori"
             },
             "description": {
                 "string": "Beskrivning"
             },
             "steps": {
-                "string": "Approval Steps"
+                "string": "Godkännandesteg"
             },
             "submit": {
-                "string": "Create Workflow"
+                "string": "Skapa flöde"
             }
         },
         "create": {
             "success": {
-                "string": "Workflow created"
+                "string": "Flödet skapades"
             },
             "error": {
-                "string": "Failed to create"
+                "string": "Kunde inte skapa"
             }
         },
         "action": {
             "approved": {
-                "string": "Step approved"
+                "string": "Steget godkändes"
             },
             "rejected": {
-                "string": "Rejected"
+                "string": "Avvisat"
             },
             "error": {
-                "string": "Action failed"
+                "string": "Åtgärden misslyckades"
             }
         },
         "list": {
             "empty": {
-                "string": "No approval workflows yet."
+                "string": "Inga godkännandeflöden ännu."
             }
         },
         "errors": {
             "fields": {
-                "string": "Title and at least one step with email are required"
+                "string": "Titel och minst ett steg med e-postadress krävs"
             }
         }
     }

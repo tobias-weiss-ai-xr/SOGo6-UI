@@ -1,4 +1,7 @@
-import { MAIL_PRIORITY_HIGH, MAIL_PRIORITY_NORMAL } from '../../store/mail-compose-slice'
+import {
+  MAIL_PRIORITY_HIGH,
+  MAIL_PRIORITY_NORMAL,
+} from '../../store/mail-compose-slice'
 import {
   buildComposeMailPayload,
   type ComposeMailFields,
@@ -47,6 +50,22 @@ describe('buildComposeMailPayload', () => {
     expect(result.from).toBeUndefined()
   })
 
+  it('defaults sign and encrypt to false when not set', () => {
+    const result = buildComposeMailPayload(baseFields)
+    expect(result.sign).toBe(false)
+    expect(result.encrypt).toBe(false)
+  })
+
+  it('passes sign and encrypt through when set', () => {
+    const result = buildComposeMailPayload({
+      ...baseFields,
+      signMessage: true,
+      encryptMessage: true,
+    })
+    expect(result.sign).toBe(true)
+    expect(result.encrypt).toBe(true)
+  })
+
   it('passes subject and body through unchanged', () => {
     const result = buildComposeMailPayload(baseFields)
     expect(result.subject).toBe('Hello')
@@ -78,9 +97,9 @@ describe('buildComposeMailPayload', () => {
   })
 
   it('sets is_html to the inverse of isPlainText', () => {
-    expect(buildComposeMailPayload({ ...baseFields, isPlainText: true }).is_html).toBe(
-      false
-    )
+    expect(
+      buildComposeMailPayload({ ...baseFields, isPlainText: true }).is_html
+    ).toBe(false)
     expect(
       buildComposeMailPayload({ ...baseFields, isPlainText: false }).is_html
     ).toBe(true)

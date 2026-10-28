@@ -1,16 +1,16 @@
 {
     "ADDRESS_BOOKS_LIST": {
         "contacts_number": {
-            "string": "{number, plural, one {# contact} other {# contacts}}",
+            "string": "{number, plural, one {# kontakt} other {# kontakter}}",
             "context": "Displays the number of contacts in an address book."
         },
         "lists_count": {
-            "string": "{number, plural, one {# list} other {# lists}}",
+            "string": "{number, plural, one {# lista} other {# listor}}",
             "context": "Displays the number of distribution lists in an address book."
         },
         "sections": {
             "distribution_lists": {
-                "string": "Distribution lists",
+                "string": "Distributionslistor",
                 "context": "Section heading for distribution lists in the address book list."
             },
             "contacts": {
@@ -19,11 +19,11 @@
             }
         },
         "selected_count": {
-            "string": "{number, plural, one {# selected} other {# selected}}",
+            "string": "{number, plural, one {# markerad} other {# markerade}}",
             "context": "Displays the number of selected contacts."
         },
         "deselect_all": {
-            "string": "Deselect all",
+            "string": "Avmarkera alla",
             "context": "Button to deselect all selected contacts."
         },
         "select": {
@@ -39,56 +39,56 @@
                 "string": "Namn"
             },
             "sort_by": {
-                "string": "Sort by"
+                "string": "Sortera efter"
             },
             "sort_options": {
                 "display_name": {
-                    "string": "Display name"
+                    "string": "Visningsnamn"
                 },
                 "last_name": {
-                    "string": "Last name"
+                    "string": "Efternamn"
                 },
                 "first_name": {
-                    "string": "First name"
+                    "string": "Förnamn"
                 },
                 "organization": {
-                    "string": "Organization"
+                    "string": "Organisation"
                 },
                 "created_at": {
-                    "string": "Date created"
+                    "string": "Skapat datum"
                 },
                 "updated_at": {
-                    "string": "Date updated"
+                    "string": "Uppdaterat datum"
                 }
             },
             "sort_order_asc": {
-                "string": "Sort ascending"
+                "string": "Sortera stigande"
             },
             "sort_order_desc": {
-                "string": "Sort descending"
+                "string": "Sortera fallande"
             }
         },
         "no_items": {
-            "string": "No contact found."
+            "string": "Ingen kontakt hittades."
         },
         "empty_title": {
-            "string": "No contacts yet",
+            "string": "Inga kontakter ännu",
             "context": "Title when an address book has no contacts"
         },
         "empty_description": {
-            "string": "Add your first contact to get started.",
+            "string": "Lägg till din första kontakt för att komma igång.",
             "context": "Description when an address book is empty"
         },
         "empty_create_contact": {
-            "string": "New contact",
+            "string": "Ny kontakt",
             "context": "Button to create the first contact from empty state"
         },
         "search_empty_title": {
-            "string": "No results",
+            "string": "Inga resultat",
             "context": "Title when search returns no contacts"
         },
         "search_empty_description": {
-            "string": "Try a different search term or clear the filter.",
+            "string": "Prova ett annat sökord eller rensa filtret.",
             "context": "Description when search has no matches"
         },
         "clear_search": {
@@ -96,55 +96,55 @@
             "context": "Button to reset the contacts search filter"
         },
         "search_placeholder": {
-            "string": "Search contacts…",
+            "string": "Sök kontakter…",
             "context": "Placeholder for the contacts search input in the header"
         },
         "search_min_length": {
-            "string": "Enter at least 2 characters to search.",
+            "string": "Ange minst 2 tecken för att söka.",
             "context": "Hint when the search query is too short for server-side search"
         },
         "source_address_book": {
-            "string": "In {name}",
+            "string": "I {name}",
             "context": "Shows which address book a contact belongs to in the all-contacts view."
         },
         "delete_selected": {
-            "string": "Delete selected contacts",
+            "string": "Radera markerade kontakter",
             "context": "Aria label for bulk delete button"
         },
         "bulk_delete_description": {
-            "string": "Are you sure you want to delete {number, plural, one {# contact} other {# contacts}}? This action cannot be undone.",
+            "string": "Är du säker på att du vill radera {number, plural, one {# kontakt} other {# kontakter}}? Denna åtgärd kan inte ångras.",
             "context": "Confirmation message for bulk delete"
         },
         "create_list_from_selection": {
-            "string": "Create distribution list from selection",
+            "string": "Skapa distributionslista av markerade objekt",
             "context": "Aria label for bulk create list action"
         },
         "list_member_count": {
-            "string": "{number, plural, one {# member} other {# members}}",
+            "string": "{number, plural, one {# medlem} other {# medlemmar}}",
             "context": "Member count shown under a distribution list in the contact list"
         },
         "read_only_banner": {
-            "string": "{name} is read-only. You cannot edit contacts or lists.",
+            "string": "{name} är skrivskyddad. Du kan inte redigera kontakter eller listor.",
             "context": "Banner shown when viewing a non-writable address book."
         },
         "pagination": {
             "previous": {
-                "string": "Previous page",
+                "string": "Föregående sida",
                 "context": "Pagination previous page button"
             },
             "next": {
-                "string": "Next page",
+                "string": "Nästa sida",
                 "context": "Pagination next page button"
             },
             "page": {
-                "string": "Page {page} of {total}",
+                "string": "Sida {page} av {total}",
                 "context": "Current pagination page indicator (contacts only)"
             },
             "page_size": {
-                "string": "Per page"
+                "string": "Per sida"
             },
             "contacts_page_hint": {
-                "string": "Pagination applies to contacts; all lists are shown.",
+                "string": "Sidindelning gäller kontakter; alla listor visas.",
                 "context": "Hint that list pagination is contact-scoped"
             }
         }

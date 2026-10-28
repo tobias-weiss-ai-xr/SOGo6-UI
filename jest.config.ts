@@ -21,6 +21,18 @@ const config: Config = {
     '!src/**/node_modules/**',
   ],
   coverageDirectory: 'coverage',
+  // Ratchet floors: full-suite v8 coverage measured 2026-10-17 was
+  // statements/lines 55.15%, branches 72.46%, functions 52.91%.
+  // Floors sit just under that so any regression fails, while normal
+  // jitter (node/ts-jest patch bumps) does not. Ratchet upward only.
+  coverageThreshold: {
+    global: {
+      statements: 55,
+      branches: 72,
+      functions: 52,
+      lines: 55,
+    },
+  },
   testEnvironment: 'jsdom',
   setupFilesAfterEnv: ['<rootDir>/jest.setup.ts'],
   moduleNameMapper: {

@@ -35,22 +35,22 @@
         },
         "recurrenceScope": {
             "editTitle": {
-                "string": "Edit recurring event"
+                "string": "Modifier l’événement récurrent"
             },
             "deleteTitle": {
-                "string": "Delete recurring event"
+                "string": "Supprimer l’événement récurrent"
             },
             "description": {
-                "string": "Which events do you want to modify?"
+                "string": "Quels événements souhaitez-vous modifier ?"
             },
             "ONE": {
-                "string": "This event only"
+                "string": "Cet événement uniquement"
             },
             "THISANDFUTURE": {
-                "string": "This and following events"
+                "string": "Cet événement et les suivants"
             },
             "ALL": {
-                "string": "All events"
+                "string": "Tous les événements"
             },
             "cancel": {
                 "string": "Annuleur"
@@ -67,19 +67,19 @@
                 "string": "Suivant"
             },
             "pickDate": {
-                "string": "Pick a date"
+                "string": "Choisir une date"
             },
             "search": {
-                "string": "Search events...",
+                "string": "Rechercher des événements...",
                 "no_results": {
-                    "string": "No events found"
+                    "string": "Aucun événement trouvé"
                 },
                 "loading": {
-                    "string": "Searching..."
+                    "string": "Recherche..."
                 }
             },
             "selectView": {
-                "string": "Select view"
+                "string": "Sélectionner la vue"
             },
             "views": {
                 "month": {
@@ -92,24 +92,24 @@
                     "string": "Jour"
                 },
                 "schedule": {
-                    "string": "Schedule"
+                    "string": "Planning"
                 }
             },
             "createEvent": {
-                "string": "Create Event"
+                "string": "Créer un événement"
             }
         },
         "events": {
             "create": {
-                "string": "Create Event"
+                "string": "Créer un événement"
             }
         },
         "schedule": {
             "noEvents": {
-                "string": "No events"
+                "string": "Aucun événement"
             },
             "noUpcomingEvents": {
-                "string": "No upcoming events for this period"
+                "string": "Aucun événement à venir pour cette période"
             }
         },
         "views": {
@@ -128,25 +128,25 @@
         },
         "mobile": {
             "event": {
-                "string": "event",
-                "plural": "events"
+                "string": "événement",
+                "plural": "événements"
             },
             "weekView": {
                 "eventsCount": {
-                    "string": "{count, plural, one {# event} other {# events}}"
+                    "string": "{count, plural, one {# événement} other {# événements}}"
                 }
             },
             "noEvents": {
-                "string": "No events"
+                "string": "Aucun événement"
             },
             "swipeHint": {
-                "string": "← Swipe to see all days →"
+                "string": "← Balayez pour voir tous les jours →"
             },
             "swipeToChangeDay": {
-                "string": "Swipe to change day"
+                "string": "Balayez pour changer de jour"
             },
             "swipeToNavigate": {
-                "string": "← Swipe to navigate →"
+                "string": "← Balayez pour naviguer →"
             },
             "timeSeparator": {
                 "string": "-"
@@ -156,34 +156,34 @@
                     "string": "Aujourd'hui"
                 },
                 "hasEvents": {
-                    "string": "Has events"
+                    "string": "Avec événements"
                 }
             }
         },
         "external": {
             "add_title": {
-                "string": "Subscribe to calendar"
+                "string": "S’abonner à un calendrier"
             },
             "name_label": {
                 "string": "Nom"
             },
             "url_label": {
-                "string": "Calendar URL (.ics)"
+                "string": "URL du calendrier (.ics)"
             },
             "url_error": {
-                "string": "Please enter a valid URL"
+                "string": "Veuillez saisir une URL valide"
             },
             "color_label": {
                 "string": "Couleur"
             },
             "sync_interval_label": {
-                "string": "Sync every"
+                "string": "Synchroniser toutes les"
             },
             "sync_now": {
                 "string": "Synchroniser maintenant"
             },
             "submit": {
-                "string": "Subscribe"
+                "string": "S’abonner"
             },
             "sync_interval_options": {
                 "5": {
@@ -196,58 +196,58 @@
                     "string": "30 min"
                 },
                 "60": {
-                    "string": "1 hour"
+                    "string": "1 heure"
                 },
                 "360": {
-                    "string": "6 hours"
+                    "string": "6 heures"
                 },
                 "1440": {
-                    "string": "24 hours"
+                    "string": "24 heures"
                 }
             }
         },
         "sidebar": {
             "personals": {
-                "string": "Personal Calendars"
+                "string": "Calendriers personnels"
             },
             "shared": {
-                "string": "Shared Calendars"
+                "string": "Calendriers partagés"
             },
             "subscriptions": {
                 "string": "Abonnements"
             },
             "add": {
-                "string": "Add Calendar"
+                "string": "Ajouter un calendrier"
             },
             "edit": {
-                "string": "Edit Calendar"
+                "string": "Modifier le calendrier"
             },
             "delete": {
-                "string": "Delete Calendar"
+                "string": "Supprimer le calendrier"
             },
             "sharing": {
-                "string": "Sharing Settings"
+                "string": "Paramètres de partage"
             },
             "link": {
-                "string": "Get Calendar Link",
+                "string": "Obtenir le lien du calendrier",
                 "description": {
-                    "string": "Copy this link to subscribe to this calendar in other calendar applications."
+                    "string": "Copiez ce lien pour vous abonner à ce calendrier dans d'autres applications de calendrier."
                 }
             },
             "export": {
-                "string": "Export Calendar"
+                "string": "Exporter le calendrier"
             },
             "color": {
-                "string": "Calendar Color"
+                "string": "Couleur du calendrier"
             },
             "readOnlyCalendar": {
-                "string": "Read-only calendar",
+                "string": "Calendrier en lecture seule",
                 "context": "Label for ICS/subscription calendars that cannot be edited"
             }
         },
         "actions": {
             "newEvent": {
-                "string": "New Event"
+                "string": "Nouvel événement"
             },
             "today": {
                 "string": "Aujourd'hui"
@@ -276,16 +276,16 @@
                 "string": "Participants"
             },
             "conference": {
-                "string": "Video Conference"
+                "string": "Visioconférence"
             },
             "joinMeeting": {
                 "string": "Join Meetant"
             },
             "reminders": {
-                "string": "Reminders"
+                "string": "Rappels"
             },
             "recurrence": {
-                "string": "Repeats"
+                "string": "Récurrence"
             },
             "frequency": {
                 "daily": {
@@ -295,39 +295,39 @@
                     "string": "Hebdomadaire"
                 },
                 "monthly": {
-                    "string": "Monthly"
+                    "string": "Mensuel"
                 },
                 "yearly": {
-                    "string": "Yearly"
+                    "string": "Annuel"
                 }
             },
             "every": {
-                "string": "Every {count}"
+                "string": "Tous les {count}"
             },
             "daysBefore": {
-                "string": "{count} days before"
+                "string": "{count} jours avant"
             },
             "hoursBefore": {
-                "string": "{count} hours before"
+                "string": "{count} heures avant"
             },
             "minutesBefore": {
-                "string": "{count} minutes before"
+                "string": "{count} minutes avant"
             },
             "organizer": {
                 "string": "Organisateur"
             },
             "organizerRole": {
-                "string": "(organizer)"
+                "string": "(organisateur)"
             },
             "attendeeStatus": {
                 "accepted": {
-                    "string": "Accepted"
+                    "string": "Accepté"
                 },
                 "pending": {
                     "string": "En attente"
                 },
                 "declined": {
-                    "string": "Declined"
+                    "string": "Décliné"
                 },
                 "tentative": {
                     "string": "Provisoire"
@@ -374,13 +374,13 @@
                 "string": "Statut",
                 "values": {
                     "confirmed": {
-                        "string": "Confirmed"
+                        "string": "Confirmé"
                     },
                     "tentative": {
                         "string": "Provisoire"
                     },
                     "cancelled": {
-                        "string": "Cancelled"
+                        "string": "Annulé"
                     }
                 }
             }
@@ -391,15 +391,15 @@
                     "string": "Agenda"
                 },
                 "placeholder": {
-                    "string": "Select calendar"
+                    "string": "Sélectionner un calendrier"
                 }
             },
             "title": {
                 "label": {
-                    "string": "Event title"
+                    "string": "Titre de l'événement"
                 },
                 "placeholder": {
-                    "string": "Enter event title"
+                    "string": "Saisir le titre de l'événement"
                 }
             },
             "allDay": {
@@ -434,10 +434,10 @@
             },
             "timezone": {
                 "label": {
-                    "string": "Timezone (event)"
+                    "string": "Fuseau horaire (événement)"
                 },
                 "description": {
-                    "string": "Timezone in which this event's dates are interpreted"
+                    "string": "Fuseau horaire dans lequel les dates de cet événement sont interprétées"
                 }
             },
             "description": {
@@ -445,7 +445,7 @@
                     "string": "Description"
                 },
                 "placeholder": {
-                    "string": "Add event details"
+                    "string": "Ajouter des détails à l’événement"
                 }
             },
             "location": {
@@ -461,7 +461,7 @@
                     "string": "Visibilité"
                 },
                 "placeholder": {
-                    "string": "Select visibility"
+                    "string": "Sélectionner la visibilité"
                 },
                 "options": {
                     "public": {
@@ -480,7 +480,7 @@
                     "string": "Afficher comme"
                 },
                 "placeholder": {
-                    "string": "Select availability"
+                    "string": "Sélectionner la disponibilité"
                 },
                 "options": {
                     "busy": {
@@ -502,17 +502,17 @@
                     "string": "Statut"
                 },
                 "placeholder": {
-                    "string": "Select status"
+                    "string": "Sélectionner le statut"
                 },
                 "options": {
                     "confirmed": {
-                        "string": "Confirmed"
+                        "string": "Confirmé"
                     },
                     "tentative": {
                         "string": "Provisoire"
                     },
                     "cancelled": {
-                        "string": "Cancelled"
+                        "string": "Annulé"
                     }
                 }
             },
@@ -532,7 +532,7 @@
                     "string": "Add a category and press Enteur"
                 },
                 "remove": {
-                    "string": "Remove {category}"
+                    "string": "Retirer {category}"
                 }
             },
             "attendees": {
@@ -543,34 +543,34 @@
                     "string": "Participants"
                 },
                 "add": {
-                    "string": "Add participant"
+                    "string": "Ajouter un participant"
                 },
                 "emailPlaceholder": {
                     "string": "email@example.com"
                 },
                 "namePlaceholder": {
-                    "string": "Name (optional)"
+                    "string": "Nom (facultatif)"
                 },
                 "remove": {
-                    "string": "Remove {email}"
+                    "string": "Retirer {email}"
                 },
                 "search_placeholder": {
-                    "string": "Search by name or email..."
+                    "string": "Rechercher par nom ou e-mail..."
                 },
                 "invalid_email": {
                     "string": "Veuillez entrer une adresse e-mail valide"
                 },
                 "already_added": {
-                    "string": "This participant has already been added"
+                    "string": "Ce participant a déjà été ajouté"
                 },
                 "max_reached": {
-                    "string": "Maximum {max} participants reached"
+                    "string": "Maximum de {max} participants atteint"
                 },
                 "add_email_direct": {
-                    "string": "Add \"{email}\" directly"
+                    "string": "Ajouter « {email} » directement"
                 },
                 "no_data": {
-                    "string": "No availability data"
+                    "string": "Aucune donnée de disponibilité"
                 },
                 "legend_free": {
                     "string": "Disponible"
@@ -582,43 +582,43 @@
                     "string": "Provisoire"
                 },
                 "legend_non_working": {
-                    "string": "Non-working hours"
+                    "string": "Heures non travaillées"
                 },
                 "optimal_slot": {
-                    "string": "Suggested window"
+                    "string": "Créneau suggéré"
                 },
                 "timeline_hour": {
                     "string": "{hour}h"
                 },
                 "scroll_horizontal_hint": {
-                    "string": "Scroll horizontally"
+                    "string": "Faire défiler horizontalement"
                 },
                 "tooltip_slot_busy": {
                     "string": "Occupé"
                 },
                 "tooltip_slot_free": {
-                    "string": "{name} · free · {time}"
+                    "string": "{name} · libre · {time}"
                 },
                 "tooltip_slot_optimal": {
-                    "string": "Part of the suggested {duration}-min window · {time}"
+                    "string": "Partie du créneau suggéré de {duration} min · {time}"
                 }
             },
             "reminders": {
                 "label": {
-                    "string": "Reminders"
+                    "string": "Rappels"
                 },
                 "add": {
                     "string": "Add remindeur"
                 },
                 "minutesBefore": {
-                    "string": "min before"
+                    "string": "min avant"
                 },
                 "remove": {
                     "string": "Remove remindeur"
                 },
                 "methods": {
                     "popup": {
-                        "string": "Popup"
+                        "string": "Fenêtre surgissante"
                     },
                     "email": {
                         "string": "E-mail"
@@ -630,19 +630,19 @@
                     "string": "Répéteur"
                 },
                 "every": {
-                    "string": "Every"
+                    "string": "Tous les"
                 },
                 "on": {
                     "string": "Le"
                 },
                 "onDay": {
-                    "string": "On day"
+                    "string": "Le jour"
                 },
                 "ofTheMonth": {
-                    "string": "of the month"
+                    "string": "du mois"
                 },
                 "ends": {
-                    "string": "Ends"
+                    "string": "Se termine"
                 },
                 "occurrences": {
                     "string": "occurrences"
@@ -672,16 +672,16 @@
                 },
                 "frequencies": {
                     "daily": {
-                        "string": "Day(s)"
+                        "string": "Jour(s)"
                     },
                     "weekly": {
-                        "string": "Week(s)"
+                        "string": "Semaine(s)"
                     },
                     "monthly": {
-                        "string": "Month(s)"
+                        "string": "Mois"
                     },
                     "yearly": {
-                        "string": "Year(s)"
+                        "string": "Année(s)"
                     }
                 },
                 "endTypes": {
@@ -708,10 +708,10 @@
                 "string": "Annuleur"
             },
             "create": {
-                "string": "Create Event"
+                "string": "Créer l’événement"
             },
             "update": {
-                "string": "Update Event"
+                "string": "Mettre à jour l’événement"
             }
         },
         "common": {
@@ -722,16 +722,16 @@
         "forms": {
             "createCalendar": {
                 "title": {
-                    "string": "Create New Calendar"
+                    "string": "Créer un nouveau calendrier"
                 },
                 "defaultEventDuration": {
-                    "string": "Default Event Duration"
+                    "string": "Durée d’événement par défaut"
                 },
                 "nameLabel": {
-                    "string": "Calendar Name"
+                    "string": "Nom du calendrier"
                 },
                 "namePlaceholder": {
-                    "string": "My Calendar"
+                    "string": "Mon calendrier"
                 },
                 "colorLabel": {
                     "string": "Couleur"
@@ -740,40 +740,40 @@
                     "string": "Description"
                 },
                 "descriptionPlaceholder": {
-                    "string": "Add description to calendar"
+                    "string": "Ajouter une description au calendrier"
                 },
                 "eventDuration": {
-                    "string": "Event Duration"
+                    "string": "Durée d’événement"
                 },
                 "eventNotifications": {
-                    "string": "Event Notifications"
+                    "string": "Notifications d'événements"
                 },
                 "allDayNotifications": {
-                    "string": "All-day event notifications"
+                    "string": "Notifications d'événements toute la journée"
                 },
                 "addNotification": {
-                    "string": "Add notification"
+                    "string": "Ajouter une notification"
                 },
                 "showBusyStatus": {
-                    "string": "Show others when I'm busy"
+                    "string": "Indiquer aux autres quand je suis occupé"
                 },
                 "atTimeOfEvent": {
-                    "string": "at time of event"
+                    "string": "à l'heure de l'événement"
                 },
                 "fiveMinutes": {
-                    "string": "5 minutes before"
+                    "string": "5 minutes avant"
                 },
                 "fifteenMinutes": {
-                    "string": "15 minutes before"
+                    "string": "15 minutes avant"
                 },
                 "thirtyMinutesBefore": {
-                    "string": "30 minutes before"
+                    "string": "30 minutes avant"
                 },
                 "oneHourBefore": {
                     "string": "1 heure avant"
                 },
                 "dayBefore": {
-                    "string": "day before"
+                    "string": "la veille"
                 },
                 "notification": {
                     "string": "notification"
@@ -792,31 +792,34 @@
                         "string": "30 minutes"
                     },
                     "oneHour": {
-                        "string": "1 hour"
+                        "string": "1 heure"
                     },
                     "twoHours": {
-                        "string": "2 hours"
+                        "string": "2 heures"
                     },
                     "allDay": {
                         "string": "Toute la journée"
                     }
                 },
                 "saving": {
-                    "string": "Creating..."
+                    "string": "Création..."
                 },
                 "submit": {
-                    "string": "Create Calendar"
+                    "string": "Créer le calendrier"
                 },
                 "cancel": {
                     "string": "Annuleur"
                 }
             },
+            "copyEvent": {
+                "string": "Copier l'événement"
+            },
             "editCalendar": {
                 "title": {
-                    "string": "Edit Calendar"
+                    "string": "Modifier le calendrier"
                 },
                 "nameLabel": {
-                    "string": "Calendar Name"
+                    "string": "Nom du calendrier"
                 },
                 "colorLabel": {
                     "string": "Couleur"
@@ -825,40 +828,40 @@
                     "string": "Description"
                 },
                 "descriptionPlaceholder": {
-                    "string": "Add description to calendar"
+                    "string": "Ajouter une description au calendrier"
                 },
                 "eventDuration": {
-                    "string": "Event Duration"
+                    "string": "Durée d’événement"
                 },
                 "eventNotifications": {
-                    "string": "Event Notifications"
+                    "string": "Notifications d'événements"
                 },
                 "allDayNotifications": {
-                    "string": "All-day event notifications"
+                    "string": "Notifications d'événements toute la journée"
                 },
                 "addNotification": {
-                    "string": "Add notification"
+                    "string": "Ajouter une notification"
                 },
                 "showBusyStatus": {
-                    "string": "Show others when I'm busy"
+                    "string": "Indiquer aux autres quand je suis occupé"
                 },
                 "atTimeOfEvent": {
-                    "string": "at time of event"
+                    "string": "à l'heure de l'événement"
                 },
                 "fiveMinutes": {
-                    "string": "5 minutes before"
+                    "string": "5 minutes avant"
                 },
                 "fifteenMinutes": {
-                    "string": "15 minutes before"
+                    "string": "15 minutes avant"
                 },
                 "thirtyMinutesBefore": {
-                    "string": "30 minutes before"
+                    "string": "30 minutes avant"
                 },
                 "oneHourBefore": {
                     "string": "1 heure avant"
                 },
                 "dayBefore": {
-                    "string": "day before"
+                    "string": "la veille"
                 },
                 "notification": {
                     "string": "notification"
@@ -877,29 +880,29 @@
                         "string": "30 minutes"
                     },
                     "oneHour": {
-                        "string": "1 hour"
+                        "string": "1 heure"
                     },
                     "twoHours": {
-                        "string": "2 hours"
+                        "string": "2 heures"
                     },
                     "allDay": {
                         "string": "Toute la journée"
                     }
                 },
                 "submit": {
-                    "string": "Save Changes"
+                    "string": "Enregistrer les modifications"
                 },
                 "cancel": {
                     "string": "Annuleur"
                 }
             },
             "editEvent": {
-                "string": "Edit event"
+                "string": "Modifier l'événement"
             },
             "deleteEvent": {
                 "confirm": {
                     "title": {
-                        "string": "Delete event?"
+                        "string": "Supprimer l'événement ?"
                     },
                     "description": {
                         "string": "Cette action est irréversible."
@@ -911,10 +914,10 @@
             },
             "deleteCalendar": {
                 "title": {
-                    "string": "Delete Calendar"
+                    "string": "Supprimer le calendrier"
                 },
                 "message": {
-                    "string": "Are you sure you want to delete this calendar? This action cannot be undone."
+                    "string": "Voulez-vous vraiment supprimer ce calendrier ? Cette action est irréversible."
                 },
                 "confirm": {
                     "string": "Supprimeur"
@@ -929,28 +932,28 @@
                 "string": "Calendar Sharant"
             },
             "description": {
-                "string": "Share this calendar with other users. Shared users can see events based on the permission level you grant."
+                "string": "Partagez ce calendrier avec d'autres utilisateurs. Les utilisateurs partagés peuvent voir les événements selon le niveau d'autorisation que vous leur accordez."
             },
             "addUser": {
                 "string": "Add Useur"
             },
             "searchPlaceholder": {
-                "string": "Search by name or email..."
+                "string": "Rechercher par nom ou e-mail..."
             },
             "addButton": {
-                "string": "Share"
+                "string": "Partager"
             },
             "added": {
-                "string": "Calendar shared successfully"
+                "string": "Calendrier partagé avec succès"
             },
             "addError": {
-                "string": "Failed to share calendar"
+                "string": "Échec du partage du calendrier"
             },
             "removed": {
-                "string": "Share removed successfully"
+                "string": "Partage retiré avec succès"
             },
             "removeError": {
-                "string": "Failed to remove share"
+                "string": "Échec du retrait du partage"
             },
             "removeButton": {
                 "string": "Supprimeur"
@@ -959,17 +962,17 @@
                 "string": "Partagé avec"
             },
             "noShares": {
-                "string": "This calendar is not shared with anyone yet."
+                "string": "Ce calendrier n'est encore partagé avec personne."
             },
             "table": {
                 "user": {
                     "string": "Utilisateur"
                 },
                 "level": {
-                    "string": "Permission Level"
+                    "string": "Niveau d'autorisation"
                 },
                 "canCreate": {
-                    "string": "Can Create"
+                    "string": "Peut créer"
                 }
             }
         }

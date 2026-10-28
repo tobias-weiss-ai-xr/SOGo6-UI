@@ -1,0 +1,18 @@
+{
+  "NOTES": {
+    "title": "Catatan",
+    "new_note": "Catatan baru",
+    "save": "Simpan",
+    "cancel": "Batal",
+    "edit": "Edit",
+    "delete": "Hapus",
+    "confirm_delete": "Hapus catatan",
+    "confirm_delete_message": "Apakah Anda yakin ingin menghapus catatan ini? Tindakan ini tidak dapat dibatalkan.",
+    "loading": "Memuat...",
+    "error": "Terjadi kesalahan saat memuat catatan.",
+    "no_notes": "Tidak ada catatan yang ditemukan.",
+    "created_at": "Dibuat: {date}",
+    "placeholder_title": "Masukkan judul catatan",
+    "placeholder_content": "Mulai mengetik catatan Anda di sini..."
+  }
+}

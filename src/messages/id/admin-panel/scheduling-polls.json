@@ -1,63 +1,63 @@
 {
-    "AP_POLLS": {
-        "title": {
-            "string": "Scheduling Polls"
-        },
-        "description": {
-            "string": "Create 'When are you free?' polls to find the best meeting time for internal and external participants."
-        },
-        "form": {
-            "create": {
-                "string": "Create Poll"
-            },
-            "cancel": {
-                "string": "Batal"
-            },
-            "title": {
-                "string": "New Scheduling Poll"
-            },
-            "poll_title": {
-                "string": "Poll Title"
-            },
-            "title_hint": {
-                "string": "e.g. Q1 Planning Meeting"
-            },
-            "participants": {
-                "string": "Participants"
-            },
-            "description": {
-                "string": "Deskripsi"
-            },
-            "time_slots": {
-                "string": "Proposed Time Slots"
-            },
-            "add_slot": {
-                "string": "Add Slot"
-            },
-            "submit": {
-                "string": "Create Poll"
-            }
-        },
-        "create": {
-            "success": {
-                "string": "Poll created"
-            },
-            "error": {
-                "string": "Failed to create poll"
-            }
-        },
-        "list": {
-            "empty": {
-                "string": "No scheduling polls yet. Create one to find the best meeting time."
-            },
-            "by": {
-                "string": "by"
-            }
-        },
-        "errors": {
-            "fields": {
-                "string": "Title, participants, and at least one time slot are required"
-            }
-        }
+  "AP_POLLS": {
+    "title": {
+      "string": "Poling Penjadwalan"
+    },
+    "description": {
+      "string": "Buat poling 'Kapan Anda waktu luang?' untuk menemukan waktu terbaik bagi peserta internal dan eksternal."
+    },
+    "form": {
+      "create": {
+        "string": "Create Poll"
+      },
+      "cancel": {
+        "string": "Batal"
+      },
+      "title": {
+        "string": "Poling Penjadwalan Baru"
+      },
+      "poll_title": {
+        "string": "Poll Title"
+      },
+      "title_hint": {
+        "string": "misalnya Rapat Perencanaan Kuartal 1"
+      },
+      "participants": {
+        "string": "Participants"
+      },
+      "description": {
+        "string": "Deskripsi"
+      },
+      "time_slots": {
+        "string": "Slot Waktu yang Diusulkan"
+      },
+      "add_slot": {
+        "string": "Add Slot"
+      },
+      "submit": {
+        "string": "Create Poll"
+      }
+    },
+    "create": {
+      "success": {
+        "string": "Poll created"
+      },
+      "error": {
+        "string": "Gagal membuat poling"
+      }
+    },
+    "list": {
+      "empty": {
+        "string": "Belum ada poling penjadwalan. Buat satu untuk menemukan waktu rapat terbaik."
+      },
+      "by": {
+        "string": "by"
+      }
+    },
+    "errors": {
+      "fields": {
+        "string": "Judul, peserta, dan minimal satu slot waktu wajib ada"
+      }
     }
+  }
 }

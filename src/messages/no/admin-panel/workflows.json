@@ -1,70 +1,70 @@
 {
-    "AP_WORKFLOWS": {
-        "title": {
-            "string": "Workflow Builder"
-        },
-        "description": {
-            "string": "Low-code automation: If email from X and subject Y → forward, create event, notify."
-        },
-        "form": {
-            "create": {
-                "string": "New Workflow"
-            },
-            "cancel": {
-                "string": "Avbryt"
-            },
-            "title": {
-                "string": "Create Workflow"
-            },
-            "name": {
-                "string": "Workflow Name"
-            },
-            "trigger": {
-                "string": "Trigger"
-            },
-            "description": {
-                "string": "Beskrivelse"
-            },
-            "conditions": {
-                "string": "Conditions"
-            },
-            "actions": {
-                "string": "Actions"
-            },
-            "submit": {
-                "string": "Create Workflow"
-            }
-        },
-        "create": {
-            "success": {
-                "string": "Workflow created"
-            },
-            "error": {
-                "string": "Failed to create"
-            }
-        },
-        "toggle": {
-            "error": {
-                "string": "Failed to toggle"
-            }
-        },
-        "delete": {
-            "success": {
-                "string": "Workflow deleted"
-            },
-            "error": {
-                "string": "Failed to delete"
-            }
-        },
-        "list": {
-            "empty": {
-                "string": "No workflows defined. Create one to automate actions."
-            }
-        },
-        "errors": {
-            "fields": {
-                "string": "Name, conditions, and actions are required"
-            }
-        }
+  "AP_WORKFLOWS": {
+    "title": {
+      "string": "Arbeidsflytbygger"
+    },
+    "description": {
+      "string": "Automatisering med lite kode: Hvis e-post fra X og emne Y → videresend, opprett hendelse, varsle."
+    },
+    "form": {
+      "create": {
+        "string": "New Workflow"
+      },
+      "cancel": {
+        "string": "Avbryt"
+      },
+      "title": {
+        "string": "Opprett arbeidsflyt"
+      },
+      "name": {
+        "string": "Navn på arbeidsflyt"
+      },
+      "trigger": {
+        "string": "Trigger"
+      },
+      "description": {
+        "string": "Beskrivelse"
+      },
+      "conditions": {
+        "string": "Conditions"
+      },
+      "actions": {
+        "string": "Actions"
+      },
+      "submit": {
+        "string": "Opprett arbeidsflyt"
+      }
+    },
+    "create": {
+      "success": {
+        "string": "Arbeidsflyten er opprettet"
+      },
+      "error": {
+        "string": "Kunne ikke opprette"
+      }
+    },
+    "toggle": {
+      "error": {
+        "string": "Kunne ikke slå av/på"
+      }
+    },
+    "delete": {
+      "success": {
+        "string": "Arbeidsflyten er slettet"
+      },
+      "error": {
+        "string": "Kunne ikke slette"
+      }
+    },
+    "list": {
+      "empty": {
+        "string": "Ingen arbeidsflyter definert. Opprett en for å automatisere handlinger."
+      }
+    },
+    "errors": {
+      "fields": {
+        "string": "Navn, betingelser og handlinger er påkrevd"
+      }
     }
+  }
 }

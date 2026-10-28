@@ -19,8 +19,11 @@ import {
   MODULES,
   TIMEFORMAT,
 } from '@/features/user-settings/utils'
+import { usePathname, useRouter } from '@/lib/i18n/navigation'
+import { logger } from '@/lib/logger'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { useLocale, useTranslations } from 'next-intl'
+import { useTheme } from 'next-themes'
 import { useEffect } from 'react'
 import { useForm } from 'react-hook-form'
 import { z } from 'zod'
@@ -29,8 +32,6 @@ import {
   mapGeneralSettingsToApi,
 } from '../store/general-utils'
 import { schema } from './general-schema'
-import { logger } from '@/lib/logger'
-import { usePathname, useRouter } from '@/lib/i18n/navigation'
 
 // Native language names for the selector
 const LANGUAGE_OPTIONS = [
@@ -73,6 +74,7 @@ export function GeneralSettingsForm({ data, update }: Props) {
   const locale = useLocale()
   const { push } = useRouter()
   const pathname = usePathname()
+  const { setTheme } = useTheme()
 
   const today = new Date()
   const day = String(today.getDate()).padStart(2, '0')
@@ -99,6 +101,14 @@ export function GeneralSettingsForm({ data, update }: Props) {
 
   function onSubmit(values: z.infer<typeof schema>) {
     update(mapGeneralSettingsToApi(values))
+  }
+
+  // Theme applies immediately (like language): persist the preference AND
+  // switch the look without waiting for Save.
+  function handleThemeChange(theme: 'default' | 'sogo5-classic') {
+    form.setValue('theme', theme, { shouldDirty: true })
+    setTheme(theme === 'default' ? 'light' : theme)
+    update(mapGeneralSettingsToApi(form.getValues()))
   }
 
   // When the user changes the language in the selector, save the
@@ -311,6 +321,35 @@ export function GeneralSettingsForm({ data, update }: Props) {
                   <FormMessage />
                   <FormDescription>
                     {t('descriptions.default_view.string')}
+                  </FormDescription>
+                </FormItem>
+              )}
+            />
+            <FormField
+              control={form.control}
+              name="theme"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel>{t('labels.theme.string')}</FormLabel>
+                  <SelectForm
+                    onValueChange={(v) =>
+                      handleThemeChange(v as 'default' | 'sogo5-classic')
+                    }
+                    value={field.value ?? 'default'}
+                    options={[
+                      {
+                        value: 'default',
+                        label: t('labels.theme_default.string'),
+                      },
+                      {
+                        value: 'sogo5-classic',
+                        label: t('labels.theme_sogo5_classic.string'),
+                      },
+                    ]}
+                  />
+                  <FormMessage />
+                  <FormDescription>
+                    {t('descriptions.theme.string')}
                   </FormDescription>
                 </FormItem>
               )}

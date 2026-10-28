@@ -16,7 +16,7 @@ permissions:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: tobias-weiss-ai-xr/umr/opendesk-edu/opendesk-nix/sogo6-ui
+  IMAGE_NAME: tobias-weiss-ai-xr/openedusuite/sogo6-ui
 
 jobs:
   build:

@@ -1,71 +1,71 @@
 {
-    "AP_DRAFTS": {
-        "title": {
-            "string": "Collaborative Drafts"
-        },
-        "description": {
-            "string": "Share draft emails with colleagues for review and approval before sending."
-        },
-        "form": {
-            "share": {
-                "string": "Share Draft"
-            },
-            "cancel": {
-                "string": "Annuller"
-            },
-            "title": {
-                "string": "Share a Draft"
-            },
-            "subject": {
-                "string": "Subject"
-            },
-            "reviewers": {
-                "string": "Reviewers"
-            },
-            "message": {
-                "string": "Message to Reviewers"
-            },
-            "message_hint": {
-                "string": "Please review this draft before I send it"
-            },
-            "body": {
-                "string": "Email Body"
-            },
-            "submit": {
-                "string": "Share Draft"
-            }
-        },
-        "create": {
-            "success": {
-                "string": "Draft shared"
-            },
-            "error": {
-                "string": "Failed to share draft"
-            }
-        },
-        "review": {
-            "approved": {
-                "string": "Draft approved"
-            },
-            "rejected": {
-                "string": "Draft rejected"
-            },
-            "error": {
-                "string": "Review failed"
-            }
-        },
-        "list": {
-            "empty": {
-                "string": "No shared drafts. Create one to collaborate on an email."
-            },
-            "by": {
-                "string": "by"
-            }
-        },
-        "errors": {
-            "fields": {
-                "string": "Subject, body, and at least one reviewer are required"
-            }
-        }
+  "AP_DRAFTS": {
+    "title": {
+      "string": "Fælles kladder"
+    },
+    "description": {
+      "string": "Del e-mailkladder med kolleger til gennemsyn og godkendelse inden afsendelse."
+    },
+    "form": {
+      "share": {
+        "string": "Share Draft"
+      },
+      "cancel": {
+        "string": "Annuller"
+      },
+      "title": {
+        "string": "Del en kladde"
+      },
+      "subject": {
+        "string": "Subject"
+      },
+      "reviewers": {
+        "string": "Reviewers"
+      },
+      "message": {
+        "string": "Meddelelse til korrekturlæsere"
+      },
+      "message_hint": {
+        "string": "Læs venligst denne kladde igennem, inden jeg sender den"
+      },
+      "body": {
+        "string": "Email Body"
+      },
+      "submit": {
+        "string": "Share Draft"
+      }
+    },
+    "create": {
+      "success": {
+        "string": "Draft shared"
+      },
+      "error": {
+        "string": "Kunne ikke dele kladden"
+      }
+    },
+    "review": {
+      "approved": {
+        "string": "Kladden er godkendt"
+      },
+      "rejected": {
+        "string": "Kladden er afvist"
+      },
+      "error": {
+        "string": "Gennemsynet mislykkedes"
+      }
+    },
+    "list": {
+      "empty": {
+        "string": "Ingen delte kladder. Opret en for at samarbejde om en e-mail."
+      },
+      "by": {
+        "string": "by"
+      }
+    },
+    "errors": {
+      "fields": {
+        "string": "Emne, brødtekst og mindst én korrekturlæser er påkrævet"
+      }
     }
+  }
 }

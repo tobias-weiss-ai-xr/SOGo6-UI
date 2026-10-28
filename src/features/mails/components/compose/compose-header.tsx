@@ -251,7 +251,7 @@ const ComposeHeader: React.FC<ComposeHeaderProps> = ({ draftId }) => {
             <PenLine className="h-3.5 w-3.5 shrink-0" />
           </Button>
         </DropdownMenuTrigger>
-        <DropdownMenuContent align="start" className="z-[9999] min-w-[160px]">
+        <DropdownMenuContent align="start" className="min-w-[160px]">
           <DropdownMenuGroup>
             <DropdownMenuItem
               onSelect={() => handleSignatureSelect(null)}
@@ -293,7 +293,7 @@ const ComposeHeader: React.FC<ComposeHeaderProps> = ({ draftId }) => {
           <SelectTrigger className="min-w-3xl">
             <SelectValue />
           </SelectTrigger>
-          <SelectContent className="z-[9999]">
+          <SelectContent>
             <SelectItem value={defaultFrom}>{defaultFrom}</SelectItem>
           </SelectContent>
         </Select>
@@ -304,7 +304,7 @@ const ComposeHeader: React.FC<ComposeHeaderProps> = ({ draftId }) => {
         <SelectTrigger className="min-w-3xl">
           <SelectValue placeholder={t('from.string')} />
         </SelectTrigger>
-        <SelectContent className="z-[9999]">
+        <SelectContent>
           {memoizedIdentities.map((identity) => (
             <SelectItem key={identity.mail} value={identity.mail}>
               {identity.name

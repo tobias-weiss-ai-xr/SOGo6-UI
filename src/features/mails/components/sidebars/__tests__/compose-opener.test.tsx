@@ -1,12 +1,12 @@
-import '@testing-library/jest-dom'
 import { configureStore } from '@reduxjs/toolkit'
+import '@testing-library/jest-dom'
 import { render, screen } from '@testing-library/react'
-import { Provider } from 'react-redux'
 import userEvent from '@testing-library/user-event'
+import { Provider } from 'react-redux'
 
-import ComposeOpener from '../compose-opener'
 import { createDraft } from '@/features/mails/store'
 import { toast } from 'sonner'
+import ComposeOpener from '../compose-opener'
 
 jest.mock('@/components/ui/sidebar', () => ({
   SidebarMenuButton: ({ children, onClick, ...props }: any) => (
@@ -25,6 +25,17 @@ jest.mock('@/hooks/use-mobile', () => ({
 
 jest.mock('next-intl', () => ({
   useTranslations: jest.fn(() => (key: string) => key),
+}))
+
+jest.mock('@/lib/i18n/navigation', () => ({
+  useRouter: () => ({
+    push: jest.fn(),
+    replace: jest.fn(),
+  }),
+}))
+
+jest.mock('next-themes', () => ({
+  useTheme: () => ({ resolvedTheme: 'light' }),
 }))
 
 jest.mock('next/navigation', () => ({
@@ -82,9 +93,13 @@ describe('ComposeOpener Component', () => {
     ;(useSidebar as unknown as jest.Mock).mockReturnValue({
       setOpenMobile: mockSetOpenMobile,
     })
-    ;(useTranslations as unknown as jest.Mock).mockReturnValue((key: string) => key)
+    ;(useTranslations as unknown as jest.Mock).mockReturnValue(
+      (key: string) => key
+    )
     ;(useIsMobile as unknown as jest.Mock).mockReturnValue(false)
-    jest.spyOn(global.crypto, 'randomUUID').mockReturnValue('generated-draft-id')
+    jest
+      .spyOn(global.crypto, 'randomUUID')
+      .mockReturnValue('generated-draft-id')
     jest.spyOn(mockStore, 'dispatch')
   })
 

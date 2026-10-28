@@ -811,6 +811,9 @@
                     "string": "İptal"
                 }
             },
+            "copyEvent": {
+                "string": "Etkinliği kopyala"
+            },
             "editCalendar": {
                 "title": {
                     "string": "Edit Calendar"

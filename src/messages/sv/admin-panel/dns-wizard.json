@@ -1,10 +1,10 @@
 {
     "AP_DNS_WIZARD": {
         "title": {
-            "string": "DNS Wizard"
+            "string": "DNS-guide"
         },
         "description": {
-            "string": "Generate and validate DNS records for email authentication (SPF, DKIM, DMARC). Add these records to your domain's DNS zone to protect against spoofing and improve deliverability."
+            "string": "Skapa och validera DNS-poster för e-postautentisering (SPF, DKIM, DMARC). Lägg till dessa poster i din domäns DNS-zon för att skydda mot förfalskning och förbättra leveransbarheten."
         },
         "tabs": {
             "spf": {
@@ -17,7 +17,7 @@
                 "string": "DMARC"
             },
             "validate": {
-                "string": "Validate"
+                "string": "Validera"
             }
         },
         "labels": {
@@ -25,46 +25,46 @@
                 "string": "Domän"
             },
             "policy": {
-                "string": "Policy"
+                "string": "Princip"
             },
             "mx_servers": {
-                "string": "MX Servers"
+                "string": "MX-servrar"
             },
             "ip4_addresses": {
-                "string": "IPv4 Addresses"
+                "string": "IPv4-adresser"
             },
             "ip6_addresses": {
-                "string": "IPv6 Addresses"
+                "string": "IPv6-adresser"
             },
             "include_domains": {
-                "string": "Include Domains"
+                "string": "Inkludera domäner"
             },
             "selector": {
                 "string": "Selector"
             },
             "key_type": {
-                "string": "Key Type"
+                "string": "Nyckeltyp"
             },
             "public_key": {
-                "string": "Public Key (Base64)"
+                "string": "Publik nyckel (Base64)"
             },
             "rua_email": {
-                "string": "Aggregate Reports Email"
+                "string": "E-post för sammanställda rapporter"
             },
             "ruf_email": {
-                "string": "Forensic Reports Email"
+                "string": "E-post för forensiska rapporter"
             },
             "pct": {
-                "string": "Policy Percentage"
+                "string": "Principandel (%)"
             },
             "subdomain_policy": {
-                "string": "Subdomain Policy"
+                "string": "Underdomänprincip"
             },
             "aspf": {
-                "string": "SPF Alignment"
+                "string": "SPF-justering"
             },
             "adkim": {
-                "string": "DKIM Alignment"
+                "string": "DKIM-justering"
             }
         },
         "policies": {
@@ -78,74 +78,74 @@
                 "string": "neutral"
             },
             "no_policy": {
-                "string": "no policy"
+                "string": "ingen princip"
             }
         },
         "spf": {
             "description": {
-                "string": "SPF (Sender Policy Framework) specifies which mail servers are allowed to send email from your domain. Add this TXT record to your DNS zone."
+                "string": "SPF (Sender Policy Framework) anger vilka e-postservrar som tillåts skicka e-post från din domän. Lägg till denna TXT-post i din DNS-zon."
             },
             "generate": {
-                "string": "Generate SPF Record"
+                "string": "Skapa SPF-post"
             }
         },
         "dkim": {
             "description": {
-                "string": "DKIM (DomainKeys Identified Mail) adds a digital signature to outgoing emails, allowing recipients to verify the message was not altered in transit."
+                "string": "DKIM (DomainKeys Identified Mail) lägger till en digital signatur på utgående e-post, vilket låter mottagare verifiera att meddelandet inte ändrats under transporten."
             },
             "generate": {
-                "string": "Generate DKIM Record"
+                "string": "Skapa DKIM-post"
             },
             "public_key_placeholder": {
-                "string": "Leave empty for placeholder with generation instructions"
+                "string": "Lämna tomt för platshållare med instruktioner för generering"
             },
             "public_key_hint": {
-                "string": "Optional. If empty, the record will include a placeholder with the openssl command to generate the key pair."
+                "string": "Valfritt. Om fältet är tomt innehåller posten en platshållare med openssl-kommandot för att skapa nyckelparet."
             }
         },
         "dmarc": {
             "description": {
-                "string": "DMARC (Domain-based Message Authentication, Reporting, and Conformance) tells receiving mail servers what to do when SPF or DKIM fails. Start with p=none to monitor, then move to quarantine or reject."
+                "string": "DMARC (Domain-based Message Authentication, Reporting, and Conformance) talar om för mottagande e-postservrar vad de ska göra när SPF eller DKIM misslyckas. Börja med p=none för att övervaka och gå sedan vidare till quarantine eller reject."
             },
             "generate": {
-                "string": "Generate DMARC Record"
+                "string": "Skapa DMARC-post"
             },
             "policy_none": {
-                "string": "monitor only"
+                "string": "endast övervaka"
             },
             "policy_quarantine": {
-                "string": "quarantine failures"
+                "string": "sätt i karantän vid fel"
             },
             "policy_reject": {
-                "string": "reject failures"
+                "string": "avvisa vid fel"
             },
             "relaxed": {
-                "string": "relaxed"
+                "string": "lax"
             },
             "strict": {
-                "string": "strict"
+                "string": "strikt"
             },
             "inherit": {
-                "string": "Inherit from domain policy"
+                "string": "Ärv från domänprincipen"
             }
         },
         "validate": {
             "description": {
-                "string": "Paste an existing SPF or DMARC record value to check for syntax errors and best-practice warnings."
+                "string": "Klistra in ett befintligt SPF- eller DMARC-postvärde för att kontrollera syntaxfel och varningar om bästa praxis."
             },
             "button": {
-                "string": "Validate"
+                "string": "Validera"
             },
             "spf_title": {
-                "string": "Validate SPF Record"
+                "string": "Validera SPF-post"
             },
             "dmarc_title": {
-                "string": "Validate DMARC Record"
+                "string": "Validera DMARC-post"
             }
         },
         "record": {
             "title": {
-                "string": "Generated DNS Record"
+                "string": "Genererad DNS-post"
             },
             "name": {
                 "string": "Namn"
@@ -154,7 +154,7 @@
                 "string": "Typ"
             },
             "value": {
-                "string": "Value"
+                "string": "Värde"
             },
             "ttl": {
                 "string": "TTL"
@@ -165,24 +165,24 @@
         },
         "validation": {
             "valid": {
-                "string": "Valid"
+                "string": "Giltig"
             },
             "invalid": {
-                "string": "Invalid"
+                "string": "Ogiltig"
             },
             "domain_required": {
-                "string": "Domain is required"
+                "string": "Domän krävs"
             },
             "value_required": {
-                "string": "Record value is required"
+                "string": "Postvärde krävs"
             }
         },
         "errors": {
             "generate_failed": {
-                "string": "Failed to generate record"
+                "string": "Kunde inte skapa post"
             },
             "validate_failed": {
-                "string": "Failed to validate record"
+                "string": "Kunde inte validera post"
             }
         }
     }

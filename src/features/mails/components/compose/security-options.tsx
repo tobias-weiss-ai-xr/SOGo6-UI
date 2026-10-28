@@ -6,7 +6,6 @@ import {
 } from '@/components/ui/dropdown-menu'
 import { useAppDispatch } from '@/lib/redux/hooks'
 import { useTranslations } from 'next-intl'
-import type { MailComposeDraft } from '../../store/mail-compose-slice'
 import {
   toggleEncryptMessage,
   toggleSignMessage,

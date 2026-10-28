@@ -1,147 +1,61 @@
 {
-    "ADMIN_PANNEL_RULE": {
-        "title": {
-            "string": "Regeln"
-        },
-        "filter_placeholder": {
-            "string": "Regeln filtern..."
-        },
-        "add_new_rule": {
-            "string": "Neue Regel hinzufügen"
-        },
-        "select_all": {
-            "string": "Alle auswählen"
-        },
-        "select_row": {
-            "string": "Zeile auswählen"
-        },
-        "domain": {
-            "string": "Domain"
-        },
-        "open_menu": {
-            "string": "Menü öffnen"
-        },
-        "actions": {
-            "string": "Aktionen"
-        },
-        "copy_domain": {
-            "string": "Domainnamen kopieren"
-        },
-        "edit": {
-            "string": "Bearbeiten"
-        },
-        "delete": {
-            "string": "Löschen"
-        }
+  "ADMIN_PANNEL_RULE": {
+    "title": {"string": "Regeln"},
+    "filter_placeholder": {"string": "Regeln filtern..."},
+    "add_new_rule": {"string": "Neue Regel hinzufügen"},
+    "select_all": {"string": "Alle auswählen"},
+    "select_row": {"string": "Zeile auswählen"},
+    "domain": {"string": "Domain"},
+    "open_menu": {"string": "Menü öffnen"},
+    "actions": {"string": "Aktionen"},
+    "copy_domain": {"string": "Domainnamen kopieren"},
+    "edit": {"string": "Bearbeiten"},
+    "delete": {"string": "Löschen"}
+  },
+  "AP_RULES": {
+    "title": {"string": "Regeln"},
+    "description": {"string": "Verwalten Sie Konfigurationsregeln für Domains"},
+    "search": {
+      "placeholder": {"string": "Regeln durchsuchen..."}
     },
-    "AP_RULES": {
-        "title": {
-            "string": "Regeln"
-        },
-        "description": {
-            "string": "Manage configuration rules for domains"
-        },
-        "search": {
-            "placeholder": {
-                "string": "Search rules..."
-            }
-        },
-        "create": {
-            "button": {
-                "string": "New Rule"
-            },
-            "title": {
-                "string": "Create Rule"
-            },
-            "description": {
-                "string": "Add a new configuration rule"
-            },
-            "success": {
-                "string": "Regel erfolgreich erstellt"
-            },
-            "error": {
-                "string": "Regelerstellung fehlgeschlagen"
-            },
-            "name_required": {
-                "string": "Rule name is required"
-            }
-        },
-        "edit": {
-            "button": {
-                "string": "Bearbeiten"
-            },
-            "title": {
-                "string": "Edit Rule"
-            },
-            "description": {
-                "string": "Update rule: {name}"
-            },
-            "save": {
-                "string": "Save Changes"
-            },
-            "success": {
-                "string": "Regel erfolgreich aktualisiert"
-            },
-            "error": {
-                "string": "Regelaktualisierung fehlgeschlagen"
-            }
-        },
-        "delete": {
-            "button": {
-                "string": "Löschen"
-            },
-            "title": {
-                "string": "Delete Rule"
-            },
-            "confirm": {
-                "string": "Sind Sie sicher, dass Sie die Regel \"{name}\" löschen möchten?"
-            },
-            "success": {
-                "string": "Regel erfolgreich gelöscht"
-            },
-            "error": {
-                "string": "Regellöschung fehlgeschlagen"
-            }
-        },
-        "form": {
-            "name": {
-                "string": "Rule Name"
-            },
-            "name_placeholder": {
-                "string": "e.g. French LDAP Rules"
-            },
-            "description": {
-                "string": "Beschreibung"
-            },
-            "description_placeholder": {
-                "string": "Optional description of this rule"
-            },
-            "domains": {
-                "string": "Affected Domains"
-            },
-            "domains_placeholder": {
-                "string": "example.org, domain2.org"
-            },
-            "domains_hint": {
-                "string": "Comma-separated list of domain names. Leave empty for all domains."
-            }
-        },
-        "table": {
-            "id": {
-                "string": "ID"
-            },
-            "name": {
-                "string": "Name"
-            },
-            "actions": {
-                "string": "Aktionen"
-            }
-        },
-        "no_rules": {
-            "string": "No rules configured yet"
-        },
-        "no_results": {
-            "string": "No rules match your search"
-        }
-    }
+    "create": {
+      "button": {"string": "Neue Regel"},
+      "title": {"string": "Regel erstellen"},
+      "description": {"string": "Fügen Sie eine neue Konfigurationsregel hinzu"},
+      "success": {"string": "Regel erfolgreich erstellt"},
+      "error": {"string": "Regelerstellung fehlgeschlagen"},
+      "name_required": {"string": "Regelname ist erforderlich"}
+    },
+    "edit": {
+      "button": {"string": "Bearbeiten"},
+      "title": {"string": "Regel bearbeiten"},
+      "description": {"string": "Regel aktualisieren: {name}"},
+      "save": {"string": "Änderungen speichern"},
+      "success": {"string": "Regel erfolgreich aktualisiert"},
+      "error": {"string": "Regelaktualisierung fehlgeschlagen"}
+    },
+    "delete": {
+      "button": {"string": "Löschen"},
+      "title": {"string": "Regel löschen"},
+      "confirm": {"string": "Sind Sie sicher, dass Sie die Regel \"{name}\" löschen möchten?"},
+      "success": {"string": "Regel erfolgreich gelöscht"},
+      "error": {"string": "Regellöschung fehlgeschlagen"}
+    },
+    "form": {
+      "name": {"string": "Regelname"},
+      "name_placeholder": {"string": "z.B. Französische LDAP-Regeln"},
+      "description": {"string": "Beschreibung"},
+      "description_placeholder": {"string": "Optionale Beschreibung dieser Regel"},
+      "domains": {"string": "Betroffene Domains"},
+      "domains_placeholder": {"string": "example.org, domain2.org"},
+      "domains_hint": {"string": "Kommagetrennte Liste von Domain-Namen. Leer lassen für alle Domains."}
+    },
+    "table": {
+      "id": {"string": "ID"},
+      "name": {"string": "Name"},
+      "actions": {"string": "Aktionen"}
+    },
+    "no_rules": {"string": "Noch keine Regeln konfiguriert"},
+    "no_results": {"string": "Keine Regeln entsprechen Ihrer Suche"}
+  }
 }

@@ -34,13 +34,13 @@
                 "string": "¿Confirma que desea revocar esta sesión?"
             },
             "confirm_multiple": {
-                "string": "Are you sure you want to revoke the selected sessions?"
+                "string": "¿Seguro que desea revocar las sesiones seleccionadas?"
             },
             "revoke_selected": {
-                "string": "Revoke Selected"
+                "string": "Revocar seleccionadas"
             },
             "revoke_selected_one": {
-                "string": "Revoke Selected ({count})"
+                "string": "Revocar seleccionadas ({count})"
             },
             "success": {
                 "string": "Sesión revocada con éxito"
@@ -54,23 +54,23 @@
         },
         "revoke_inactive": {
             "button": {
-                "string": "Revoke Inactive"
+                "string": "Revocar inactivas"
             },
             "confirm": {
                 "string": "¿Confirma que desea revocar todas las sesiones inactivas?"
             },
             "days": {
-                "string": "Days of inactivity"
+                "string": "Días de inactividad"
             },
             "days_placeholder": {
-                "string": "e.g., 30"
+                "string": "p. ej., 30"
             },
             "success": {
                 "string": "Sesiones inactivas revocadas con éxito"
             }
         },
         "refresh": {
-            "string": "Refresh"
+            "string": "Actualizar"
         }
     }
 }

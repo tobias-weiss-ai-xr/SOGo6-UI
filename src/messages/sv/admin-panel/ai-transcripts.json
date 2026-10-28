@@ -1,56 +1,56 @@
 {
     "AI_TRANSCRIPTS": {
         "title": {
-            "string": "Meeting Transcripts"
+            "string": "Mötesprotokoll"
         },
         "description": {
-            "string": "Record meeting transcripts, auto-generate summaries and action items."
+            "string": "Spela in mötesprotokoll, skapa automatiskt sammanfattningar och åtgärdspunkter."
         },
         "form": {
             "create": {
-                "string": "New Transcript"
+                "string": "Nytt protokoll"
             },
             "cancel": {
                 "string": "Avbryt"
             },
             "title": {
-                "string": "Create Transcript"
+                "string": "Skapa protokoll"
             },
             "meeting_title": {
-                "string": "Meeting Title"
+                "string": "Mötestitel"
             },
             "event_id": {
-                "string": "Calendar Event ID"
+                "string": "Kalenderhändelse-ID"
             },
             "attendees": {
-                "string": "Attendees"
+                "string": "Deltagare"
             },
             "transcript": {
-                "string": "Transcript / Notes"
+                "string": "Protokoll / Anteckningar"
             },
             "placeholder": {
-                "string": "Paste meeting notes or transcript..."
+                "string": "Klistra in mötesanteckningar eller protokoll..."
             },
             "submit": {
-                "string": "Save & Summarize"
+                "string": "Spara och sammanfatta"
             }
         },
         "create": {
             "success": {
-                "string": "Transcript saved"
+                "string": "Protokollet sparades"
             },
             "error": {
-                "string": "Failed to save"
+                "string": "Kunde inte spara"
             }
         },
         "list": {
             "empty": {
-                "string": "No transcripts yet."
+                "string": "Inga protokoll ännu."
             }
         },
         "errors": {
             "fields": {
-                "string": "Title and transcript text are required"
+                "string": "Titel och protokolltext krävs"
             }
         }
     }

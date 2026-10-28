@@ -92,8 +92,8 @@ jest.mock('@/components/ui/layout/navigation-menu-toggler', () => {
 })
 
 // Mock other UI components that might cause issues
-jest.mock('@/components/ui/button', () => ({
-  Button: React.forwardRef<
+jest.mock('@/components/ui/button', () => {
+  const MockButton = React.forwardRef<
     HTMLButtonElement,
     React.PropsWithChildren<{
       asChild?: boolean
@@ -109,19 +109,23 @@ jest.mock('@/components/ui/button', () => ({
         {children}
       </button>
     )
-  }),
-}))
+  })
+  MockButton.displayName = 'MockButton'
+  return { Button: MockButton }
+})
 
-jest.mock('@/components/ui/input', () => ({
-  Input: React.forwardRef<
+jest.mock('@/components/ui/input', () => {
+  const MockInput = React.forwardRef<
     HTMLInputElement,
     React.InputHTMLAttributes<HTMLInputElement> & { asChild?: boolean }
   >((props, ref) => {
     // Filter out non-DOM props
     const { asChild, ...domProps } = props
     return <input ref={ref} {...domProps} />
-  }),
-}))
+  })
+  MockInput.displayName = 'MockInput'
+  return { Input: MockInput }
+})
 
 jest.mock('@/components/ui/separator', () => ({
   Separator: (props: {
@@ -231,8 +235,8 @@ jest.mock('@/components/ui/tooltip', () => ({
   },
 }))
 
-jest.mock('@/components/ui/toggle', () => ({
-  Toggle: React.forwardRef<
+jest.mock('@/components/ui/toggle', () => {
+  const MockToggle = React.forwardRef<
     HTMLButtonElement,
     React.PropsWithChildren<Record<string, any>>
   >(({ children, ...props }, ref) => {
@@ -243,8 +247,10 @@ jest.mock('@/components/ui/toggle', () => ({
         {children}
       </button>
     )
-  }),
-}))
+  })
+  MockToggle.displayName = 'MockToggle'
+  return { Toggle: MockToggle }
+})
 
 jest.mock('@/components/ui/popover', () => ({
   Popover: ({
@@ -305,6 +311,7 @@ import {
   SidebarProvider,
   SidebarRail,
   SidebarSeparator,
+  SidebarTrigger,
 } from '../sidebar'
 
 describe('Sidebar Components', () => {
@@ -590,5 +597,38 @@ describe('Sidebar Components', () => {
 
     // SidebarSeparator is an hr element, check for its presence
     expect(document.querySelector('hr')).toBeInTheDocument()
+  })
+})
+
+describe('SidebarTrigger (right sidebar, reverseIcon)', () => {
+  // lucide-react is mocked file-wide with data-testid stubs (see top)
+  const mount = ({ open }: { open: boolean }) => {
+    return render(
+      <SidebarProvider open={open} defaultOpen={open}>
+        <SidebarTrigger reverseIcon />
+      </SidebarProvider>
+    )
+  }
+
+  it('closed right sidebar: arrow points LEFT (expand direction)', () => {
+    mount({ open: false })
+    const btn = screen.getByRole('button', { name: 'Toggle Sidebar' })
+    expect(
+      btn.querySelector('[data-testid="chevrons-left"]')
+    ).toBeInTheDocument()
+    expect(
+      btn.querySelector('[data-testid="chevrons-right"]')
+    ).not.toBeInTheDocument()
+  })
+
+  it('open right sidebar: arrow points RIGHT (collapse direction)', () => {
+    mount({ open: true })
+    const btn = screen.getByRole('button', { name: 'Toggle Sidebar' })
+    expect(
+      btn.querySelector('[data-testid="chevrons-right"]')
+    ).toBeInTheDocument()
+    expect(
+      btn.querySelector('[data-testid="chevrons-left"]')
+    ).not.toBeInTheDocument()
   })
 })

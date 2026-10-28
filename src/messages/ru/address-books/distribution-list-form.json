@@ -1,51 +1,51 @@
 {
     "DISTRIBUTION_LIST_FORM": {
         "new_list": {
-            "string": "New distribution list",
+            "string": "Новый список рассылки",
             "context": "Title for the new distribution list dialog"
         },
         "edit_list": {
-            "string": "Edit distribution list",
+            "string": "Изменить список рассылки",
             "context": "Title for the edit distribution list dialog"
         },
         "list_badge": {
-            "string": "Distribution list",
+            "string": "Список рассылки",
             "context": "Badge shown on distribution list detail view"
         },
         "member_count": {
-            "string": "{number, plural, one {# member} other {# members}}",
+            "string": "{number, plural, one {# участник} few {# участника} many {# участников} other {# участника}}",
             "context": "Member count on distribution list detail"
         },
         "members": {
-            "string": "Members",
+            "string": "Участники",
             "context": "Label for members section"
         },
         "members_selected": {
-            "string": "{number, plural, one {# member selected} other {# members selected}}",
+            "string": "{number, plural, one {# участник выбран} few {# участника выбрано} many {# участников выбрано} other {# участника выбрано}}",
             "context": "Selected member count in form"
         },
         "members_required": {
-            "string": "Select at least one member or add an email address",
+            "string": "Выберите хотя бы одного участника или добавьте адрес электронной почты",
             "context": "Validation when no members are provided"
         },
         "manual_emails": {
-            "string": "Additional email addresses",
+            "string": "Дополнительные адреса электронной почты",
             "context": "Label for manual email inputs"
         },
         "no_members": {
-            "string": "No members in this list",
+            "string": "В этом списке нет участников",
             "context": "Empty state for members section"
         },
         "write_message": {
-            "string": "Write message",
+            "string": "Написать сообщение",
             "context": "Button to compose mail to all list members"
         },
         "add_email": {
-            "string": "Add email",
+            "string": "Добавить адрес",
             "context": "Button to add manual email field"
         },
         "remove_email": {
-            "string": "Remove email",
+            "string": "Удалить адрес",
             "context": "Aria label for removing manual email field"
         },
         "create": {
@@ -62,7 +62,7 @@
         },
         "fields": {
             "name": {
-                "string": "List name"
+                "string": "Название списка"
             },
             "note": {
                 "string": "Описание"
@@ -70,10 +70,10 @@
         },
         "delete_dialog": {
             "title": {
-                "string": "Delete distribution list?"
+                "string": "Удалить список рассылки?"
             },
             "description": {
-                "string": "This distribution list will be permanently removed from your address book."
+                "string": "Этот список рассылки будет безвозвратно удалён из вашей адресной книги."
             },
             "confirm": {
                 "string": "Удалить"

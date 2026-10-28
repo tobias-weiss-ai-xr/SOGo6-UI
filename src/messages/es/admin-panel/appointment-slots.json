@@ -4,67 +4,67 @@
             "string": "Citas programadas"
         },
         "description": {
-            "string": "Publish bookable time slots (Calendly-style). Generate booking links for external participants."
+            "string": "Publique franjas horarias reservables (estilo Calendly). Genere enlaces de reserva para participantes externos."
         },
         "form": {
             "create": {
-                "string": "Create Slot"
+                "string": "Crear franja"
             },
             "cancel": {
                 "string": "Cancelar"
             },
             "title": {
-                "string": "New Appointment Slot"
+                "string": "Nueva franja de cita"
             },
             "slot_title": {
-                "string": "Slot Title"
+                "string": "Título de la franja"
             },
             "duration": {
-                "string": "Duration (min)"
+                "string": "Duración (min)"
             },
             "buffer": {
-                "string": "Buffer (min)"
+                "string": "Margen (min)"
             },
             "start_time": {
-                "string": "Start Time"
+                "string": "Hora de inicio"
             },
             "end_time": {
-                "string": "End Time"
+                "string": "Hora de fin"
             },
             "days": {
-                "string": "Available Days"
+                "string": "Días disponibles"
             },
             "submit": {
-                "string": "Create Slot"
+                "string": "Crear franja"
             }
         },
         "create": {
             "success": {
-                "string": "Slot created"
+                "string": "Franja creada"
             },
             "error": {
-                "string": "Failed to create slot"
+                "string": "Error al crear la franja"
             }
         },
         "slots": {
             "title": {
-                "string": "Your Slots"
+                "string": "Sus franjas"
             },
             "empty": {
-                "string": "No appointment slots. Create one to share your availability."
+                "string": "No hay franjas de cita. Cree una para compartir su disponibilidad."
             }
         },
         "bookings": {
             "title": {
-                "string": "Recent Bookings"
+                "string": "Reservas recientes"
             },
             "empty": {
-                "string": "No bookings yet."
+                "string": "Aún no hay reservas."
             }
         },
         "errors": {
             "fields": {
-                "string": "Title, duration, times, and at least one day are required"
+                "string": "El título, la duración, los horarios y al menos un día son obligatorios"
             }
         }
     }

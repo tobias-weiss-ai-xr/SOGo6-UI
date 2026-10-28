@@ -93,7 +93,7 @@ export function domainColumnsFromData<
     {
       id: 'actions',
       enableHiding: false,
-      cell: ({ row }) => {
+      cell: function DomainActionsCell({ row }) {
         const domain = row.original.name
         const router = useRouter()
         const pathname = usePathname() ?? '/'
@@ -169,9 +169,7 @@ export function domainColumnsFromData<
                     onClick={confirmAndDelete}
                     disabled={isLoading}
                   >
-                    {isLoading
-                      ? t('ADMIN_PANNEL_DOMAIN.deleting')
-                      : t('ADMIN_PANNEL_DOMAIN.delete')}
+                    {isLoading ? t('deleting') : t('delete')}
                   </Button>
                 </DialogFooter>
               </DialogContent>

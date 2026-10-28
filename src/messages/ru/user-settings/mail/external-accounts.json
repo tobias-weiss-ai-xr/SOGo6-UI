@@ -1,50 +1,50 @@
 {
     "US_MAIL_EXTERNAL_ACCOUNTS": {
         "title": {
-            "string": "External Accounts"
+            "string": "Внешние аккаунты"
         },
         "sections": {
             "imap": {
-                "string": "Incoming Mail (IMAP)"
+                "string": "Входящая почта (IMAP)"
             },
             "smtp": {
-                "string": "Outgoing Mail (SMTP)"
+                "string": "Исходящая почта (SMTP)"
             },
             "identity": {
-                "string": "Identities"
+                "string": "Профили отправителя"
             },
             "preferences": {
-                "string": "Preferences"
+                "string": "Настройки"
             },
             "certificate": {
-                "string": "S/MIME Certificate"
+                "string": "Сертификат S/MIME"
             },
             "receipts": {
-                "string": "Receipts",
+                "string": "Уведомления о прочтении",
                 "description": "When I receive a request for a return receipt"
             }
         },
         "list": {
             "title": {
-                "string": "Your external Accounts"
+                "string": "Ваши внешние аккаунты"
             },
             "add_button": {
-                "string": "Add Account"
+                "string": "Добавить аккаунт"
             },
             "edit_button": {
                 "string": "Редактировать"
             },
             "edit_button_aria": {
-                "string": "Edit account {email}"
+                "string": "Изменить аккаунт {email}"
             },
             "delete_button_aria": {
-                "string": "Delete account {email}"
+                "string": "Удалить аккаунт {email}"
             },
             "delete_confirm_title": {
                 "string": "{name}"
             },
             "delete_confirm_desc": {
-                "string": "Are you sure you want to delete {name}? This action cannot be undone."
+                "string": "Вы уверены, что хотите удалить {name}? Это действие нельзя отменить."
             },
             "cancel_button": {
                 "string": "Отмена"
@@ -53,102 +53,102 @@
                 "string": "Удалить"
             },
             "empty": {
-                "string": "No IMAP accounts configured yet. Add your first account to get started."
+                "string": "Аккаунты IMAP ещё не настроены. Добавьте свой первый аккаунт, чтобы начать."
             }
         },
         "edit": {
             "title": {
-                "string": "Edit External Account"
+                "string": "Изменить внешний аккаунт"
             },
             "back_button": {
-                "string": "Back to list"
+                "string": "Вернуться к списку"
             },
             "readonly_notice": {
-                "string": "Most settings are read-only."
+                "string": "Большинство настроек доступны только для чтения."
             }
         },
         "new": {
             "title": {
-                "string": "New External Account"
+                "string": "Новый внешний аккаунт"
             },
             "description": {
-                "string": "Configure a new external IMAP account"
+                "string": "Настройте новый внешний аккаунт IMAP"
             },
             "back_button": {
                 "string": "Отмена"
             },
             "create_button": {
-                "string": "Create Account"
+                "string": "Создать аккаунт"
             }
         },
         "labels": {
-            "name": "Name",
-            "email": "Email",
-            "replyTo": "Reply to",
+            "name": "Имя",
+            "email": "Эл. почта",
+            "replyTo": "Ответить на",
             "receipts": {
-                "never": "Never",
-                "always": "Always",
-                "ask": "Ask",
-                "neverSend": "Never send a return receipt",
-                "allowSome": "Allow return receipts for some messages",
-                "notToCc": "If I'm not in the To or Cc of the message",
-                "outsideDomain": "If the sender is outside my domain",
-                "other": "In all other cases"
+                "never": "Никогда",
+                "always": "Всегда",
+                "ask": "Спрашивать",
+                "neverSend": "Никогда не отправлять уведомление о прочтении",
+                "allowSome": "Разрешить уведомления о прочтении для некоторых сообщений",
+                "notToCc": "Если меня нет в поле «Кому» или «Копия»",
+                "outsideDomain": "Если отправитель вне моего домена",
+                "other": "Во всех остальных случаях"
             },
             "server": {
-                "string": "Server"
+                "string": "Сервер"
             },
             "port": {
-                "string": "Port"
+                "string": "Порт"
             },
             "encryption": {
-                "string": "Encryption"
+                "string": "Шифрование"
             },
             "authType": {
-                "string": "Authentication type"
+                "string": "Тип аутентификации"
             },
             "smtpServer": {
-                "string": "SMTP Server"
+                "string": "Сервер SMTP"
             },
             "smtpPort": {
-                "string": "Port"
+                "string": "Порт"
             },
             "smtpAuth": {
-                "string": "SMTP Authentication"
+                "string": "Аутентификация SMTP"
             },
             "smtpEncryption": {
-                "string": "SMTP Encryption"
+                "string": "Шифрование SMTP"
             },
             "username": {
-                "string": "Username"
+                "string": "Имя пользователя"
             },
             "password": {
-                "string": "Password"
+                "string": "Пароль"
             },
             "useDefaultIdentity": {
-                "string": "Always use default identity for this account"
+                "string": "Всегда использовать профиль отправителя по умолчанию для этого аккаунта"
             },
             "readReceipts": {
-                "string": "Read Receipts"
+                "string": "Уведомления о прочтении"
             },
             "certificateName": {
-                "string": "Certificate Name"
+                "string": "Название сертификата"
             },
             "certificateFingerprint": {
-                "string": "Certificate Fingerprint"
+                "string": "Отпечаток сертификата"
             },
             "certificateFile": {
-                "string": "S/MIME Certificate File"
+                "string": "Файл сертификата S/MIME"
             },
             "certificatePassword": {
-                "string": "Certificate Import Password"
+                "string": "Пароль импорта сертификата"
             },
             "selectedFile": {
-                "string": "Selected file"
+                "string": "Выбранный файл"
             }
         },
         "placeholders": {
-            "nameAccount": "Work account",
+            "nameAccount": "Рабочий аккаунт",
             "imapServer": {
                 "string": "imap.example.com"
             },
@@ -159,34 +159,34 @@
                 "string": "user@example.com"
             },
             "password": {
-                "string": "Enter your password"
+                "string": "Введите ваш пароль"
             },
             "certificateName": {
-                "string": "My S/MIME Certificate"
+                "string": "Мой сертификат S/MIME"
             },
             "certificateFingerprint": {
-                "string": "Auto-generated after certificate upload"
+                "string": "Создаётся автоматически после загрузки сертификата"
             },
             "certificatePassword": {
-                "string": "Enter certificate import password"
+                "string": "Введите пароль импорта сертификата"
             },
-            "signatureName": "Name"
+            "signatureName": "Имя"
         },
         "description": {
             "useDefaultIdentity": {
-                "string": "When composing messages, your default identity will be used instead of the account-specific one"
+                "string": "При написании сообщений будет использоваться профиль отправителя по умолчанию, а не привязанный к аккаунту"
             },
             "password": {
-                "string": "Your account password (stored securely)"
+                "string": "Пароль вашего аккаунта (хранится защищённо)"
             },
             "certificateName": {
-                "string": "Name of the certificate"
+                "string": "Название сертификата"
             },
             "certificateFile": {
-                "string": "Upload your S/MIME certificate file"
+                "string": "Загрузите файл вашего сертификата S/MIME"
             },
             "certificatePassword": {
-                "string": "Password required to import the certificate file"
+                "string": "Пароль, необходимый для импорта файла сертификата"
             }
         },
         "encryption": {
@@ -202,18 +202,18 @@
         },
         "readReceipts": {
             "never": {
-                "string": "Never send read receipts"
+                "string": "Никогда не отправлять уведомления о прочтении"
             },
             "selective": {
-                "string": "Allow sending read receipts for certain messages"
+                "string": "Разрешить отправку уведомлений о прочтении для определённых сообщений"
             }
         },
         "aria": {
             "show_password": {
-                "string": "Show password"
+                "string": "Показать пароль"
             },
             "hide_password": {
-                "string": "Hide password"
+                "string": "Скрыть пароль"
             }
         },
         "tabs": {
@@ -221,7 +221,7 @@
                 "string": "Настройки"
             },
             "security": {
-                "string": "Security"
+                "string": "Безопасность"
             }
         },
         "notifications": {
@@ -230,13 +230,13 @@
                     "string": "Успех"
                 },
                 "created": {
-                    "string": "IMAP account created successfully"
+                    "string": "Аккаунт IMAP успешно создан"
                 },
                 "updated": {
-                    "string": "IMAP account updated successfully"
+                    "string": "Аккаунт IMAP успешно обновлён"
                 },
                 "deleted": {
-                    "string": "Account deleted successfully"
+                    "string": "Аккаунт успешно удалён"
                 }
             },
             "errors_api": {
@@ -244,24 +244,24 @@
                     "string": "Ошибка"
                 },
                 "load_failed": {
-                    "string": "Failed to load external accounts. Please try again later."
+                    "string": "Не удалось загрузить внешние аккаунты. Повторите попытку позже."
                 },
                 "create_failed": {
-                    "string": "Failed to create external account. Please try again."
+                    "string": "Не удалось создать внешний аккаунт. Повторите попытку."
                 },
                 "update_failed": {
-                    "string": "Failed to update external account. Please try again."
+                    "string": "Не удалось обновить внешний аккаунт. Повторите попытку."
                 },
                 "delete_failed": {
-                    "string": "Failed to delete account. Please try again."
+                    "string": "Не удалось удалить аккаунт. Повторите попытку."
                 }
             }
         },
         "validation": {
-            "required": "Required",
-            "server-required": "Server address is required",
-            "server-invalid": "Must be a valid hostname or IP address",
-            "port-required": "Port is required"
+            "required": "Обязательное поле",
+            "server-required": "Укажите адрес сервера",
+            "server-invalid": "Должно быть корректным именем хоста или IP-адресом",
+            "port-required": "Укажите порт"
         }
     }
 }

@@ -157,12 +157,12 @@
       "context": "Button to request a return receipt for the email"
     },
     "sign_message": {
-      "string": "Sign message (PGP)",
-      "context": "Button to sign the message with PGP"
+      "string": "Sign message",
+      "context": "Option to sign the email with the sender's S/MIME certificate"
     },
     "encrypt_message": {
-      "string": "Encrypt message (PGP)",
-      "context": "Button to encrypt the message with PGP"
+      "string": "Encrypt message",
+      "context": "Option to encrypt the email with S/MIME to all recipients"
     },
     "priority": {
       "string": "Set priority",
@@ -202,7 +202,7 @@
     },
     "recipient_search": {
       "loading": {
-        "string": "Searching recipients…",
+        "string": "Searching recipients\u2026",
         "context": "Loading state while searching contacts and users"
       },
       "add_direct": {
@@ -210,52 +210,48 @@
         "context": "Add a typed email address directly as recipient"
       }
     },
+    "from_cloud": {
+      "string": "From OpenCloud",
+      "context": "Option to attach files from OpenCloud in the compose toolbar"
+    },
+    "opencloud_error": {
+      "string": "Failed to attach from OpenCloud",
+      "context": "Error message when OpenCloud attachment fails"
+    },
     "opencloud": {
-      "from_cloud": {
-        "string": "From OpenCloud",
-        "context": "Option to attach files from OpenCloud in the compose toolbar"
-      },
-      "opencloud": {
-        "string": "OpenCloud",
-        "context": "Label for OpenCloud file picker"
-      },
-      "opencloud_error": {
-        "string": "Failed to attach from OpenCloud",
-        "context": "Error message when OpenCloud attachment fails"
-      },
-      "opencloudAttached": {
+      "string": "OpenCloud",
+      "context": "Label for OpenCloud file picker",
+      "attached": {
         "string": "Attached from OpenCloud: {name}",
         "context": "Success message when a file is attached from OpenCloud"
       }
     },
-    "from_nextcloud": {
-      "string": "From Nextcloud",
-      "context": "Option to attach files from Nextcloud in the compose toolbar"
+    "cancel": {
+      "string": "Cancel",
+      "context": "Cancel or dismiss a dialog"
     },
-    "nextcloud": {
-      "string": "Nextcloud",
-      "context": "Label for Nextcloud file picker",
-      "attached": {
-        "string": "Attached from Nextcloud: {name}",
-        "context": "Success message when a file is attached from Nextcloud"
-      }
+    "body": {
+      "string": "Body",
+      "context": "Label for the message body field in a compose dialog"
     },
-    "from_cloud": {
-      "string": "From cloud",
-      "context": "Option to attach files from the cloud in the compose toolbar"
+    "scheduleSend": {
+      "title": "Schedule Send",
+      "description": "Choose when to deliver this email",
+      "time": "Time",
+      "confirm": "Schedule",
+      "clear": "Clear schedule",
+      "currentlyScheduled": "Currently scheduled for {time}",
+      "change": "Change schedule"
     },
-    "opencloud_error": {
-      "string": "Could not reach the cloud provider",
-      "context": "Error toast when the cloud token exchange fails"
+    "templates": {
+      "insert": "Insert template",
+      "noTemplates": "No templates yet",
+      "saveCurrent": "Save current as template",
+      "saveTitle": "Save as template",
+      "saveDescription": "Save the current subject and body as a reusable quick-reply template",
+      "templateName": "Template name",
+      "namePlaceholder": "Enter a name for this template",
+      "save": "Save template"
     }
-  },
-  "scheduleSend": {
-    "title": "Schedule Send",
-    "description": "Choose when to deliver this email",
-    "time": "Time",
-    "confirm": "Schedule",
-    "clear": "Clear schedule",
-    "currentlyScheduled": "Currently scheduled for {time}",
-    "change": "Change schedule"
   }
 }

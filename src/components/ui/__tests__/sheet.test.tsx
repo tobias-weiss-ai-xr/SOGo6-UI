@@ -75,3 +75,27 @@ describe('Sheet Component', () => {
     expect(screen.getByText('Footer Button')).toBeInTheDocument()
   })
 })
+
+describe('Sheet close button', () => {
+  // Regression: see dialog close button test — explicit size + centering
+  // instead of the old 44px blanket floor (asymmetric ring, off-center X).
+  it('has an explicit square size and centers its icon', () => {
+    render(
+      <Sheet>
+        <SheetTrigger>Open Sheet</SheetTrigger>
+        <SheetContent side="right">
+          <SheetHeader>
+            <SheetTitle>Sheet Title</SheetTitle>
+          </SheetHeader>
+        </SheetContent>
+      </Sheet>
+    )
+
+    fireEvent.click(screen.getByText('Open Sheet'))
+    const closeButton = screen.getByRole('button', { name: 'Close' })
+    expect(closeButton).toHaveClass('h-7')
+    expect(closeButton).toHaveClass('w-7')
+    expect(closeButton).toHaveClass('items-center')
+    expect(closeButton).toHaveClass('justify-center')
+  })
+})

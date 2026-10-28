@@ -1,6 +1,6 @@
 import React from 'react'
-import FeatureIncoming from './feature-incoming'
+import NotesProtected from '@/features/notes'
 
-const NotesContent: React.FC = () => <FeatureIncoming />
+const NotesContent: React.FC = () => <NotesProtected />
 
 export default NotesContent

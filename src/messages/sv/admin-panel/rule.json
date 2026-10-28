@@ -1,31 +1,31 @@
 {
     "ADMIN_PANNEL_RULE": {
         "title": {
-            "string": "Rules"
+            "string": "Regler"
         },
         "filter_placeholder": {
-            "string": "Filter rules..."
+            "string": "Filtrera regler..."
         },
         "add_new_rule": {
-            "string": "Add new rule"
+            "string": "Lägg till ny regel"
         },
         "select_all": {
-            "string": "Select all"
+            "string": "Markera alla"
         },
         "select_row": {
-            "string": "Select row"
+            "string": "Markera rad"
         },
         "domain": {
             "string": "Domän"
         },
         "open_menu": {
-            "string": "Open menu"
+            "string": "Öppna meny"
         },
         "actions": {
-            "string": "Actions"
+            "string": "Åtgärder"
         },
         "copy_domain": {
-            "string": "Copy domain name"
+            "string": "Kopiera domännamnet"
         },
         "edit": {
             "string": "Redigera"
@@ -36,34 +36,34 @@
     },
     "AP_RULES": {
         "title": {
-            "string": "Rules"
+            "string": "Regler"
         },
         "description": {
-            "string": "Manage configuration rules for domains"
+            "string": "Hantera konfigurationsregler för domäner"
         },
         "search": {
             "placeholder": {
-                "string": "Search rules..."
+                "string": "Sök regler..."
             }
         },
         "create": {
             "button": {
-                "string": "New Rule"
+                "string": "Ny regel"
             },
             "title": {
-                "string": "Create Rule"
+                "string": "Skapa regel"
             },
             "description": {
-                "string": "Add a new configuration rule"
+                "string": "Lägg till en ny konfigurationsregel"
             },
             "success": {
-                "string": "Rule created successfully"
+                "string": "Regeln skapades"
             },
             "error": {
-                "string": "Failed to create rule"
+                "string": "Kunde inte skapa regeln"
             },
             "name_required": {
-                "string": "Rule name is required"
+                "string": "Regelnamn krävs"
             }
         },
         "edit": {
@@ -71,19 +71,19 @@
                 "string": "Redigera"
             },
             "title": {
-                "string": "Edit Rule"
+                "string": "Redigera regel"
             },
             "description": {
-                "string": "Update rule: {name}"
+                "string": "Uppdatera regel: {name}"
             },
             "save": {
-                "string": "Save Changes"
+                "string": "Spara ändringar"
             },
             "success": {
-                "string": "Rule updated successfully"
+                "string": "Regeln uppdaterades"
             },
             "error": {
-                "string": "Failed to update rule"
+                "string": "Kunde inte uppdatera regeln"
             }
         },
         "delete": {
@@ -91,39 +91,39 @@
                 "string": "Ta bort"
             },
             "title": {
-                "string": "Delete Rule"
+                "string": "Radera regel"
             },
             "confirm": {
-                "string": "Are you sure you want to delete rule \"{name}\"?"
+                "string": "Är du säker på att du vill radera regeln \"{name}\"?"
             },
             "success": {
-                "string": "Rule deleted successfully"
+                "string": "Regeln raderades"
             },
             "error": {
-                "string": "Failed to delete rule"
+                "string": "Kunde inte radera regeln"
             }
         },
         "form": {
             "name": {
-                "string": "Rule Name"
+                "string": "Regelnamn"
             },
             "name_placeholder": {
-                "string": "e.g. French LDAP Rules"
+                "string": "t.ex. Franska LDAP-regler"
             },
             "description": {
                 "string": "Beskrivning"
             },
             "description_placeholder": {
-                "string": "Optional description of this rule"
+                "string": "Valfri beskrivning av denna regel"
             },
             "domains": {
-                "string": "Affected Domains"
+                "string": "Berörda domäner"
             },
             "domains_placeholder": {
                 "string": "example.org, domain2.org"
             },
             "domains_hint": {
-                "string": "Comma-separated list of domain names. Leave empty for all domains."
+                "string": "Kommaseparerad lista med domännamn. Lämna tomt för alla domäner."
             }
         },
         "table": {
@@ -134,14 +134,14 @@
                 "string": "Namn"
             },
             "actions": {
-                "string": "Actions"
+                "string": "Åtgärder"
             }
         },
         "no_rules": {
-            "string": "No rules configured yet"
+            "string": "Inga regler konfigurerade ännu"
         },
         "no_results": {
-            "string": "No rules match your search"
+            "string": "Inga regler matchar din sökning"
         }
     }
 }

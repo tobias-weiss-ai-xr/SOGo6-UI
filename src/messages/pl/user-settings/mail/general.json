@@ -161,10 +161,10 @@
       "string": "Okno tworzenia wiadomości",
       "context": "Dropdown label to know where to open compose in",
       "popup": {
-        "string": "Compose email in a popup"
+        "string": "Twórz e-maile w wyskakującym oknie"
       },
       "inline": {
-        "string": "Compose email inside the webmail"
+        "string": "Twórz e-maile wewnątrz poczty internetowej"
       }
     }
   }

@@ -1,7 +1,8 @@
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
+import { Avatar, AvatarFallback } from '@/components/ui/avatar'
 import { Button } from '@/components/ui/button'
 import { useMailReplyActions } from '@/features/mails/hooks/use-mail-reply-actions'
-import { useTranslations } from 'next-intl'
+import { BadgeCheck, Lock, ShieldAlert, ShieldX } from 'lucide-react'
+import { useLocale, useTranslations } from 'next-intl'
 import { useState } from 'react'
 import MailActionsBar from './mail-action-bar'
 import { ContactBadge } from './mail-contact-badge'
@@ -24,6 +25,7 @@ export default function MailHeader({
   accountId,
 }: MailHeaderFullProps) {
   const t = useTranslations('MAILS_COMMONS')
+  const locale = useLocale()
   const [open, setOpen] = useState(false)
   const [showAllTo, setShowAllTo] = useState(false)
   const [showAllCc, setShowAllCc] = useState(false)
@@ -44,14 +46,19 @@ export default function MailHeader({
     : (cc ?? []).slice(0, MAX_DISPLAY_CC)
   const plusUndisplayElement = '+'
 
-  const formattedTime = formatMailTime(date)
+  const formattedTime = formatMailTime(date, locale)
+
+  const signerCn =
+    Array.isArray(mail?.certificates) && mail.certificates.length > 0
+      ? (mail?.certificates[0] as { subject_cn?: string } | undefined)
+          ?.subject_cn
+      : undefined
 
   return (
     <div className="mb-3 flex w-full items-start justify-between gap-4">
       {/* Avatar à gauche, aligné en haut */}
       <div className="flex flex-col items-start">
         <Avatar className="h-12 w-12">
-          <AvatarImage src="/images/account-avatar.svg" />
           <AvatarFallback>
             {(from.name?.[0] ?? from.email?.[0] ?? '?').toUpperCase()}
           </AvatarFallback>
@@ -62,6 +69,52 @@ export default function MailHeader({
         <div className="flex flex-wrap items-center gap-2">
           <span className="text-base font-bold">From</span>
           <ContactBadge contact={from} />
+          {mail?.is_encrypted && (
+            <span
+              className="text-muted-foreground flex items-center gap-1 text-xs"
+              title={
+                mail?.contents?.length
+                  ? t('mail_display.smime.encrypted.string')
+                  : t('mail_display.smime.encrypted_not_readable.string')
+              }
+            >
+              <Lock className="h-3.5 w-3.5" />
+            </span>
+          )}
+          {mail?.signature_valid === true &&
+            mail?.signature_trusted !== false && (
+              <span
+                className="flex items-center gap-1 text-xs text-emerald-600"
+                title={
+                  signerCn
+                    ? `${t('mail_display.smime.signature_valid.string')} (${signerCn})`
+                    : t('mail_display.smime.signature_valid.string')
+                }
+              >
+                <BadgeCheck className="h-3.5 w-3.5" />
+              </span>
+            )}
+          {mail?.signature_valid === true &&
+            mail?.signature_trusted === false && (
+              <span
+                className="flex items-center gap-1 text-xs text-amber-600"
+                title={
+                  signerCn
+                    ? `${t('mail_display.smime.signature_untrusted.string')} (${signerCn})`
+                    : t('mail_display.smime.signature_untrusted.string')
+                }
+              >
+                <ShieldAlert className="h-3.5 w-3.5" />
+              </span>
+            )}
+          {mail?.signature_valid === false && (
+            <span
+              className="text-destructive flex items-center gap-1 text-xs"
+              title={t('mail_display.smime.signature_invalid.string')}
+            >
+              <ShieldX className="h-3.5 w-3.5" />
+            </span>
+          )}
           {showUnsubscribeButton && (
             <>
               <Button

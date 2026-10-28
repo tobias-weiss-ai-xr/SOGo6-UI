@@ -1,63 +1,63 @@
 {
-    "AP_POLLS": {
-        "title": {
-            "string": "Scheduling Polls"
-        },
-        "description": {
-            "string": "Create 'When are you free?' polls to find the best meeting time for internal and external participants."
-        },
-        "form": {
-            "create": {
-                "string": "Create Poll"
-            },
-            "cancel": {
-                "string": "Avbryt"
-            },
-            "title": {
-                "string": "New Scheduling Poll"
-            },
-            "poll_title": {
-                "string": "Poll Title"
-            },
-            "title_hint": {
-                "string": "e.g. Q1 Planning Meeting"
-            },
-            "participants": {
-                "string": "Participants"
-            },
-            "description": {
-                "string": "Beskrivelse"
-            },
-            "time_slots": {
-                "string": "Proposed Time Slots"
-            },
-            "add_slot": {
-                "string": "Add Slot"
-            },
-            "submit": {
-                "string": "Create Poll"
-            }
-        },
-        "create": {
-            "success": {
-                "string": "Poll created"
-            },
-            "error": {
-                "string": "Failed to create poll"
-            }
-        },
-        "list": {
-            "empty": {
-                "string": "No scheduling polls yet. Create one to find the best meeting time."
-            },
-            "by": {
-                "string": "by"
-            }
-        },
-        "errors": {
-            "fields": {
-                "string": "Title, participants, and at least one time slot are required"
-            }
-        }
+  "AP_POLLS": {
+    "title": {
+      "string": "Planleggingsavstemninger"
+    },
+    "description": {
+      "string": "Opprett «Når har du tid?»-avstemninger for å finne best møtetid for interne og eksterne deltakere."
+    },
+    "form": {
+      "create": {
+        "string": "Create Poll"
+      },
+      "cancel": {
+        "string": "Avbryt"
+      },
+      "title": {
+        "string": "Ny planleggingsavstemning"
+      },
+      "poll_title": {
+        "string": "Poll Title"
+      },
+      "title_hint": {
+        "string": "f.eks. Q1-planleggingsmøte"
+      },
+      "participants": {
+        "string": "Participants"
+      },
+      "description": {
+        "string": "Beskrivelse"
+      },
+      "time_slots": {
+        "string": "Foreslåtte tidspunkter"
+      },
+      "add_slot": {
+        "string": "Add Slot"
+      },
+      "submit": {
+        "string": "Create Poll"
+      }
+    },
+    "create": {
+      "success": {
+        "string": "Poll created"
+      },
+      "error": {
+        "string": "Kunne ikke opprette avstemningen"
+      }
+    },
+    "list": {
+      "empty": {
+        "string": "Ingen planleggingsavstemninger ennå. Opprett en for å finne best møtetid."
+      },
+      "by": {
+        "string": "by"
+      }
+    },
+    "errors": {
+      "fields": {
+        "string": "Tittel, deltakere og minst ett tidspunkt er påkrevd"
+      }
     }
+  }
 }

@@ -1,34 +1,34 @@
 {
-    "AP_DOCPREV": {
-        "title": {
-            "string": "Document Preview"
-        },
-        "description": {
-            "string": "Preview PDF and Office documents in-browser. PDFs render natively; Office docs use Collabora/OnlyOffice."
-        },
-        "upload": {
-            "dropzone": {
-                "string": "Click to upload or drag a document"
-            }
-        },
-        "settings": {
-            "button": {
-                "string": "Ρυθμίσεις"
-            },
-            "title": {
-                "string": "Preview Settings"
-            },
-            "collabora_url": {
-                "string": "Collabora/OnlyOffice URL"
-            },
-            "hint": {
-                "string": "The base URL of your Collabora or OnlyOffice server. Leave default for demo mode."
-            }
-        },
-        "errors": {
-            "unsupported": {
-                "string": "Unsupported file type. Use .pdf, .docx, .xlsx, or .pptx"
-            }
-        }
+  "AP_DOCPREV": {
+    "title": {
+      "string": "Προεπισκόπηση Εγγράφων"
+    },
+    "description": {
+      "string": "Προεπισκόπηση εγγράφων PDF και Office στο πρόγραμμα περιήγησης. Τα PDF απεικονίζονται εγγενώς· τα έγγραφα Office χρησιμοποιούν Collabora/OnlyOffice."
+    },
+    "upload": {
+      "dropzone": {
+        "string": "Κάντε κλικ για μεταφόρτωση ή σύρετε ένα έγγραφο"
+      }
+    },
+    "settings": {
+      "button": {
+        "string": "Ρυθμίσεις"
+      },
+      "title": {
+        "string": "Ρυθμίσεις Προεπισκόπησης"
+      },
+      "collabora_url": {
+        "string": "Collabora/OnlyOffice URL"
+      },
+      "hint": {
+        "string": "Το βασικό URL του διακομιστή Collabora ή OnlyOffice. Αφήστε την προεπιλογή για λειτουργία επίδειξης."
+      }
+    },
+    "errors": {
+      "unsupported": {
+        "string": "Μη υποστηριζόμενος τύπος αρχείου. Χρησιμοποιήστε .pdf, .docx, .xlsx ή .pptx"
+      }
     }
+  }
 }

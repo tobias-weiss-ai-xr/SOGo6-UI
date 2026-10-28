@@ -1,44 +1,44 @@
 {
-    "STUDENT_GROUPS": {
-        "title": {
-            "string": "Student Group Management"
-        },
-        "description": {
-            "string": "Manage student groups, course mailing lists, and enrollment"
-        },
-        "errors": {
-            "name": {
-                "string": "Group name required"
-            },
-            "fail": {
-                "string": "Operation failed"
-            }
-        },
-        "success": {
-            "create": {
-                "string": "Group created successfully"
-            }
-        },
-        "field": {
-            "name": {
-                "string": "Group Name"
-            },
-            "course": {
-                "string": "Course Code"
-            }
-        },
-        "button": {
-            "create": {
-                "string": "Create Group"
-            }
-        },
-        "label": {
-            "none": {
-                "string": "Ingen"
-            },
-            "students": {
-                "string": "students"
-            }
-        }
+  "STUDENT_GROUPS": {
+    "title": {
+      "string": "Håndtering af studiegrupper"
+    },
+    "description": {
+      "string": "Administrér studiegrupper, kursuslister og tilmeldinger"
+    },
+    "errors": {
+      "name": {
+        "string": "Gruppenavn er påkrævet"
+      },
+      "fail": {
+        "string": "Handlingen mislykkedes"
+      }
+    },
+    "success": {
+      "create": {
+        "string": "Gruppen blev oprettet"
+      }
+    },
+    "field": {
+      "name": {
+        "string": "Group Name"
+      },
+      "course": {
+        "string": "Course Code"
+      }
+    },
+    "button": {
+      "create": {
+        "string": "Create Group"
+      }
+    },
+    "label": {
+      "none": {
+        "string": "Ingen"
+      },
+      "students": {
+        "string": "students"
+      }
     }
+  }
 }

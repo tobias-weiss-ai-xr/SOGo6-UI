@@ -1,5 +1,7 @@
 {
     "MAILS_LIST": {
+        "star": { "string": "Aggiungi ai preferiti" },
+        "unstar": { "string": "Rimuovi dai preferiti" },
         "messages_number": {
             "string": "{number, plural, one {# messaggio} other {# messaggi}}",
             "context": "Displays the number of messages in an mail folder."

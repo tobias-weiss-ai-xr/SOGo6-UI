@@ -21,7 +21,7 @@
     "audit": {
       "title": { "string": "Access Audit Trail" },
       "email": { "placeholder": { "string": "Email ID" } },
-      "reason": { "placeholder": { "string": "Reason (required)" } },
+      "reason": { "string": "Reason", "placeholder": { "string": "Reason (required)" } },
       "log": { "string": "Log Access" },
       "accessor": { "string": "Accessor" },
       "action": { "string": "Action" },

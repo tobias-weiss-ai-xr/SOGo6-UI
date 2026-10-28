@@ -1,91 +1,93 @@
 {
     "MAILS_LIST": {
+        "star": { "string": "スターをつける" },
+        "unstar": { "string": "スターを外す" },
         "messages_number": {
-            "string": "{number, plural, one {# message} other {# messages}}",
+            "string": "{number, plural, one {# 件のメール} other {# 件のメール}}",
             "context": "Displays the number of messages in an mail folder."
         },
         "sort": {
             "date": {
                 "ascending": {
-                    "string": "Newest first"
+                    "string": "新しい順"
                 },
                 "descending": {
-                    "string": "Older first"
+                    "string": "古い順"
                 }
             },
             "size": {
                 "ascending": {
-                    "string": "Smallest first"
+                    "string": "サイズが小さい順"
                 },
                 "descending": {
-                    "string": "Largest first"
+                    "string": "サイズが大きい順"
                 }
             }
         },
         "pagination": {
             "previous": {
-                "string": "Previous page"
+                "string": "前のページ"
             },
             "next": {
-                "string": "Next page"
+                "string": "次のページ"
             }
         },
         "list_load_error": {
             "folder_not_found": {
-                "string": "This folder no longer exists.",
+                "string": "このフォルダーは存在しません。",
                 "description": "Message when folder messages request returns 404"
             },
             "mail_unavailable": {
-                "string": "Mail server is temporarily unavailable.",
+                "string": "メールサーバーが一時的に利用できません。",
                 "description": "Message when folder messages request returns 503"
             },
             "retry": {
-                "string": "Try again",
+                "string": "再試行",
                 "description": "Button label to refetch folder messages after 503"
             },
             "open_inbox": {
-                "string": "Open Inbox",
+                "string": "受信トレイを開く",
                 "description": "Button label to navigate to INBOX after folder 404"
             },
             "generic": {
-                "string": "Unable to load messages. Please try again later.",
+                "string": "メールを読み込めませんでした。時間をおいて再度お試しください。",
                 "description": "Generic folder list load error (e.g. 500)"
             }
         },
         "filter": {
             "client_scope_notice": {
-                "string": "Filters apply only to messages loaded on this page.",
+                "string": "フィルターはこのページに読み込まれたメールにのみ適用されます。",
                 "description": "Hint that URL filters are client-side on the current server page"
             },
             "all": {
                 "string": "すべて"
             },
             "unread": {
-                "string": "Unread"
+                "string": "未読"
             },
             "read": {
-                "string": "Read"
+                "string": "既読"
             },
             "starred": {
-                "string": "Starred"
+                "string": "スター付き"
             },
             "attachments": {
-                "string": "Attachments"
+                "string": "添付ファイルあり"
             }
         },
         "layout": {
             "full": {
-                "string": "Full view"
+                "string": "フルビュー"
             },
             "split": {
-                "string": "Split view"
+                "string": "分割ビュー"
             }
         },
         "select_message": {
-            "string": "Select a message to read"
+            "string": "読みたいメールを選択してください"
         },
         "no_items": {
-            "string": "No message found."
+            "string": "メールが見つかりません。"
         },
         "actions": {
             "mark_as_read": {
@@ -95,24 +97,24 @@
                 "string": "未読にする"
             },
             "delete": {
-                "string": "Move to trash"
+                "string": "ゴミ箱に移動"
             },
             "archive": {
                 "string": "アーカイブ"
             },
             "select_mail": {
-                "string": "Select message"
+                "string": "メールを選択"
             },
             "deselect_mail": {
-                "string": "Deselect message"
+                "string": "メールの選択を解除"
             }
         },
         "time": {
             "minutes_ago": {
-                "string": "{count}m ago"
+                "string": "{count}分前"
             }
         }
     },
-    "viewFlat": "Flat list",
-    "viewConversation": "Conversation view"
+    "viewFlat": "フラットリスト",
+    "viewConversation": "会話ビュー"
 }

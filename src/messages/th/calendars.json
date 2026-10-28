@@ -811,6 +811,9 @@
                     "string": "ยกเลิก"
                 }
             },
+            "copyEvent": {
+                "string": "คัดลอกกิจกรรม"
+            },
             "editCalendar": {
                 "title": {
                     "string": "Edit Calendar"

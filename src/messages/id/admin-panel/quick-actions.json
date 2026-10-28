@@ -1,59 +1,59 @@
 {
-    "AP_QUICK": {
-        "title": {
-            "string": "Quick Actions"
-        },
-        "description": {
-            "string": "User-defined multi-step actions triggered with a single click from the mail list."
-        },
-        "form": {
-            "create": {
-                "string": "New Action"
-            },
-            "cancel": {
-                "string": "Batal"
-            },
-            "title": {
-                "string": "Create Quick Action"
-            },
-            "name": {
-                "string": "Action Name"
-            },
-            "icon": {
-                "string": "Icon"
-            },
-            "steps": {
-                "string": "Steps"
-            },
-            "submit": {
-                "string": "Create Action"
-            }
-        },
-        "create": {
-            "success": {
-                "string": "Action created"
-            },
-            "error": {
-                "string": "Failed to create"
-            }
-        },
-        "delete": {
-            "success": {
-                "string": "Action deleted"
-            },
-            "error": {
-                "string": "Failed to delete"
-            }
-        },
-        "list": {
-            "empty": {
-                "string": "No quick actions yet. Create one to speed up your workflow."
-            }
-        },
-        "errors": {
-            "fields": {
-                "string": "Name and at least one step are required"
-            }
-        }
+  "AP_QUICK": {
+    "title": {
+      "string": "Tindakan Cepat"
+    },
+    "description": {
+      "string": "Tindakan multi-langkah yang ditentukan pengguna, dipicu dengan satu klik dari daftar surel."
+    },
+    "form": {
+      "create": {
+        "string": "New Action"
+      },
+      "cancel": {
+        "string": "Batal"
+      },
+      "title": {
+        "string": "Buat Tindakan Cepat"
+      },
+      "name": {
+        "string": "Action Name"
+      },
+      "icon": {
+        "string": "Icon"
+      },
+      "steps": {
+        "string": "Steps"
+      },
+      "submit": {
+        "string": "Buat Tindakan"
+      }
+    },
+    "create": {
+      "success": {
+        "string": "Tindakan dibuat"
+      },
+      "error": {
+        "string": "Gagal membuat"
+      }
+    },
+    "delete": {
+      "success": {
+        "string": "Tindakan dihapus"
+      },
+      "error": {
+        "string": "Gagal menghapus"
+      }
+    },
+    "list": {
+      "empty": {
+        "string": "Belum ada tindakan cepat. Buat satu untuk mempercepat alur kerja Anda."
+      }
+    },
+    "errors": {
+      "fields": {
+        "string": "Nama dan minimal satu langkah wajib ada"
+      }
     }
+  }
 }

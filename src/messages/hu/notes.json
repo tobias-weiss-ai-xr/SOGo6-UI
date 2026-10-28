@@ -1,0 +1,18 @@
+{
+  "NOTES": {
+    "title": "Jegyzetek",
+    "new_note": "Új jegyzet",
+    "save": "Mentés",
+    "cancel": "Mégse",
+    "edit": "Szerkesztés",
+    "delete": "Törlés",
+    "confirm_delete": "Jegyzet törlése",
+    "confirm_delete_message": "Biztosan törölni kívánja ezt a jegyzetet? Ez a művelet nem vonható vissza.",
+    "loading": "Betöltés...",
+    "error": "Hiba történt a jegyzetek betöltése közben.",
+    "no_notes": "Nem találtam jegyzeteket.",
+    "created_at": "Létrehozva: {date}",
+    "placeholder_title": "Adja meg a jegyzet címét",
+    "placeholder_content": "Kezdje el írni a jegyzetét ide..."
+  }
+}

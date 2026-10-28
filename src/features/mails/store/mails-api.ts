@@ -20,11 +20,14 @@ import type {
 import { getMailActionNotificationKeys } from '../utils/get-mail-action-notification-keys'
 import { sortImapFoldersTree } from '../utils/sort-folders'
 import {
+  dispatchFlaggedPatchOnAllFolderMessageCaches,
+  dispatchGetMailFlaggedPatch,
   dispatchGetMailSeenPatch,
   dispatchSeenPatchOnAllFolderMessageCaches,
   findListItemInFolderCaches,
   folderMessagesCache,
   isFolderRemovingAction,
+  isMailActionFlaggedToggle,
   isMailActionSeenFlagToggle,
   removeMailFromAllFolderCaches,
 } from './mails-cache'
@@ -371,6 +374,37 @@ const injectedEndpoints = apiSlice.injectEndpoints({
           return
         }
 
+        if (isMailActionFlaggedToggle(arg)) {
+          const flagged = arg.action === 'tag'
+          patchResults.push(
+            ...dispatchFlaggedPatchOnAllFolderMessageCaches(
+              dispatch,
+              getState() as RootState,
+              {
+                accountId: arg.accountId,
+                folder: arg.folder,
+                mailId: arg.mailId,
+                flagged,
+              }
+            )
+          )
+          const mailPatch = dispatchGetMailFlaggedPatch(dispatch, {
+            accountId: arg.accountId,
+            folder: arg.folder,
+            mailId: arg.mailId,
+            flagged,
+          })
+          if (mailPatch) getMailPatch = mailPatch
+
+          try {
+            await queryFulfilled
+          } catch {
+            patchResults.forEach((p) => p.undo())
+            getMailPatch?.undo()
+          }
+          return
+        }
+
         if (isFolderRemovingAction(arg.action)) {
           patchResults.push(
             ...removeMailFromAllFolderCaches(
@@ -398,7 +432,7 @@ const injectedEndpoints = apiSlice.injectEndpoints({
         }
       },
       invalidatesTags: (_result, _error, arg) =>
-        isMailActionSeenFlagToggle(arg)
+        isMailActionSeenFlagToggle(arg) || isMailActionFlaggedToggle(arg)
           ? [MAILS_FOLDERS_SLICE]
           : [
               { type: FOLDER_MESSAGES_SLICE, folder: arg.folder },
@@ -666,7 +700,11 @@ const injectedEndpoints = apiSlice.injectEndpoints({
     }),
 
     batchMailAction: builder.mutation<
-      { processed_ids?: number[]; failed_ids?: Array<{ uid: number; error: string }>; action: string },
+      {
+        processed_ids?: number[]
+        failed_ids?: Array<{ uid: number; error: string }>
+        action: string
+      },
       {
         accountId?: string
         folder: string
@@ -805,10 +843,10 @@ export const {
 export const mailsApiEndpoints = injectedEndpoints
 
 export {
+  batchMailActionQuery,
   getFolderMessagesQuery,
   getFoldersQuery,
   getMailQuery,
   mailActionQuery,
-  batchMailActionQuery,
   moveToTrashQuery,
 }

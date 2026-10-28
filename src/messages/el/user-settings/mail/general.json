@@ -161,10 +161,10 @@
       "string": "Παράθυρο σύνταξης μηνύματος",
       "context": "Dropdown label to know where to open compose in",
       "popup": {
-        "string": "Compose email in a popup"
+        "string": "Σύνταξη email σε αναδυόμενο παράθυρο"
       },
       "inline": {
-        "string": "Compose email inside the webmail"
+        "string": "Σύνταξη email μέσα στο webmail"
       }
     }
   }

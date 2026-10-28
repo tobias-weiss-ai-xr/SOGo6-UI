@@ -24,7 +24,7 @@
             },
             "tasks": {
                 "title": "Tâches",
-                "view_all": "View all tasks",
+                "view_all": "Voir toutes les tâches",
                 "search_placeholder": "Rechercher des tâches",
                 "overdue": "En retard",
                 "today": "Aujourd'hui",
@@ -52,7 +52,7 @@
             },
             "coming_soon": {
                 "title": "Fonctionnalité à venir",
-                "description": "This section is under development and will be available soon."
+                "description": "Cette section est en cours de développement et sera bientôt disponible."
             }
         }
     }

@@ -1,57 +1,57 @@
 {
-    "AP_FILESHARE": {
-        "title": {
-            "string": "File Sharing"
-        },
-        "description": {
-            "string": "Create shareable links for files with optional password protection, expiration, and download tracking."
-        },
-        "form": {
-            "share": {
-                "string": "Share File"
-            },
-            "cancel": {
-                "string": "Annuleren"
-            },
-            "title": {
-                "string": "Share a File"
-            },
-            "filename": {
-                "string": "Filename"
-            },
-            "size": {
-                "string": "Size (bytes)"
-            },
-            "expires": {
-                "string": "Expires in (days)"
-            },
-            "password": {
-                "string": "Password"
-            },
-            "password_hint": {
-                "string": "Leave empty for no password"
-            },
-            "submit": {
-                "string": "Create Share Link"
-            }
-        },
-        "create": {
-            "success": {
-                "string": "Share link created"
-            },
-            "error": {
-                "string": "Failed to create share"
-            }
-        },
-        "list": {
-            "empty": {
-                "string": "No shared files. Create a share link to securely distribute files."
-            }
-        },
-        "errors": {
-            "fields": {
-                "string": "Filename and size are required"
-            }
-        }
+  "AP_FILESHARE": {
+    "title": {
+      "string": "File Sharing"
+    },
+    "description": {
+      "string": "Maak deelbare koppelingen voor bestanden met optionele wachtwoordbeveiliging, verloopdatum en downloadtracking."
+    },
+    "form": {
+      "share": {
+        "string": "Share File"
+      },
+      "cancel": {
+        "string": "Annuleren"
+      },
+      "title": {
+        "string": "Share a File"
+      },
+      "filename": {
+        "string": "Filename"
+      },
+      "size": {
+        "string": "Size (bytes)"
+      },
+      "expires": {
+        "string": "Verloopt over (dagen)"
+      },
+      "password": {
+        "string": "Password"
+      },
+      "password_hint": {
+        "string": "Laat leeg voor geen wachtwoord"
+      },
+      "submit": {
+        "string": "Deelkoppeling aanmaken"
+      }
+    },
+    "create": {
+      "success": {
+        "string": "Deelkoppeling aangemaakt"
+      },
+      "error": {
+        "string": "Delen aanmaken mislukt"
+      }
+    },
+    "list": {
+      "empty": {
+        "string": "Geen gedeelde bestanden. Maak een deelkoppeling aan om bestanden veilig te verspreiden."
+      }
+    },
+    "errors": {
+      "fields": {
+        "string": "Bestandsnaam en grootte zijn verplicht"
+      }
     }
+  }
 }

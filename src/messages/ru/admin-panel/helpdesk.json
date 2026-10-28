@@ -4,64 +4,64 @@
             "string": "Helpdesk / Ticketing"
         },
         "description": {
-            "string": "Auto-create tickets from emails with assignment, priority, SLA tracking, and response history."
+            "string": "Автоматическое создание заявок из писем с назначением, приоритетом, отслеживанием SLA и историей ответов."
         },
         "form": {
             "create": {
-                "string": "New Ticket"
+                "string": "Новая заявка"
             },
             "cancel": {
                 "string": "Отмена"
             },
             "title": {
-                "string": "Create Ticket"
+                "string": "Создать заявку"
             },
             "subject": {
-                "string": "Subject"
+                "string": "Тема"
             },
             "priority": {
-                "string": "Priority"
+                "string": "Приоритет"
             },
             "description": {
                 "string": "Описание"
             },
             "requester": {
-                "string": "Requester Email"
+                "string": "Эл. почта заявителя"
             },
             "assignee": {
-                "string": "Assignee Email"
+                "string": "Эл. почта исполнителя"
             },
             "sla": {
-                "string": "SLA (hours)"
+                "string": "SLA (часы)"
             },
             "submit": {
-                "string": "Create Ticket"
+                "string": "Создать заявку"
             }
         },
         "create": {
             "success": {
-                "string": "Ticket created"
+                "string": "Заявка создана"
             },
             "error": {
-                "string": "Failed to create"
+                "string": "Не удалось создать"
             }
         },
         "update": {
             "success": {
-                "string": "Ticket updated"
+                "string": "Заявка обновлена"
             },
             "error": {
-                "string": "Failed to update"
+                "string": "Не удалось обновить"
             }
         },
         "list": {
             "empty": {
-                "string": "No tickets yet."
+                "string": "Заявок пока нет."
             }
         },
         "errors": {
             "fields": {
-                "string": "Subject and description are required"
+                "string": "Укажите тему и описание"
             }
         }
     }

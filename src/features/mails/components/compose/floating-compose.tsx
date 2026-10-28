@@ -11,7 +11,6 @@ import { useComposeDraftPersistence } from '@/features/mails/hooks/use-compose-d
 import { useComposeFloatingWindowState } from '@/features/mails/hooks/use-compose-floating-window-state'
 import { useComposeSend } from '@/features/mails/hooks/use-compose-send'
 import { useExchangeOpenCloudTokenMutation } from '@/features/mails/store/opencloud-api'
-import { useExchangeNextcloudTokenMutation } from '@/features/mails/store/nextcloud-api'
 import { useProfile } from '@/features/user-profile'
 import { useIsMobile } from '@/hooks/use-mobile'
 import { useAppDispatch, useAppSelector } from '@/lib/redux/hooks'
@@ -42,10 +41,13 @@ import ScheduleSendPicker from './schedule-send-picker'
 
 interface FloatingComposeProps {
   draftId: string
+  /** Render as a full-page form (SOGo5-classic) instead of a floating window */
+  fullPage?: boolean
 }
 
 export const FloatingCompose: React.FC<FloatingComposeProps> = ({
   draftId,
+  fullPage = false,
 }) => {
   const t = useTranslations('COMPOSE')
   const isMobile = useIsMobile()
@@ -106,7 +108,6 @@ export const FloatingCompose: React.FC<FloatingComposeProps> = ({
     fileInputRef,
     isDragOver,
     isUploading,
-    processFiles,
     handleAttachmentClick,
     handleFileChange,
     handleDragEnter,
@@ -181,10 +182,8 @@ export const FloatingCompose: React.FC<FloatingComposeProps> = ({
       const result = await exchangeToken({
         scopes: ['files.read', 'files.write'],
       })
-      // server wraps in create_api_base_response → { data: { access_token } }
-      const tok = result.data?.data?.access_token ?? result.data?.access_token
-      if ('data' in result && tok) {
-        setOpenCloudAccessToken(tok)
+      if ('data' in result && result.data?.access_token) {
+        setOpenCloudAccessToken(result.data.access_token)
         setOpenCloudPickerOpen(true)
       } else {
         toast.error(t('opencloud_error.string'))
@@ -195,50 +194,10 @@ export const FloatingCompose: React.FC<FloatingComposeProps> = ({
   }
 
   // Handle OpenCloud file selection
-  const [nextcloudPickerOpen, setNextcloudPickerOpen] = React.useState(false)
-  const [nextcloudAccessToken, setNextcloudAccessToken] = React.useState<
-    string | null
-  >(null)
-  const [exchangeNextcloudToken] = useExchangeNextcloudTokenMutation()
-
-  // Open Nextcloud picker and exchange token
-  const handleNextcloudAttachment = async () => {
-    try {
-      const result = await exchangeNextcloudToken({
-        scopes: ['files.read', 'files.write'],
-      })
-      const tok =
-        result.data?.data?.access_token ?? result.data?.access_token
-      if ('data' in result && tok) {
-        setNextcloudAccessToken(tok)
-        setNextcloudPickerOpen(true)
-      } else {
-        toast.error(t('opencloud_error.string'))
-      }
-    } catch {
-      toast.error(t('opencloud_error.string'))
-    }
-  }
-
-  // Handle Nextcloud file selection: bytes are attached like a local file.
-  const handleNextcloudFileSelect = async (file: {
-    file_path: string
-    action: string
-    file?: File
-  }) => {
-    setNextcloudPickerOpen(false)
-    setNextcloudAccessToken(null)
-    if (file.file) {
-      await processFiles([file.file])
-      toast.success(t('nextcloud.attached.string', { name: file.file.name }))
-    }
-  }
-
   const handleOpenCloudFileSelect = async (file: {
     file_path: string
-    share_url?: string
+    share_url: string
     action: string
-    file?: File
   }) => {
     dispatch(
       addAttachment({
@@ -288,27 +247,47 @@ export const FloatingCompose: React.FC<FloatingComposeProps> = ({
 
   if (!draft) return null
 
-  return (
-    <motion.div
-      style={{ x }}
-      drag={isDraggable ? 'x' : false}
-      dragControls={dragControls}
-      dragListener={false}
-      dragMomentum={false}
-      dragElastic={0}
-      onFocusCapture={() => dispatch(setActiveDraft(draftId))}
-      onPointerDownCapture={() => dispatch(setActiveDraft(draftId))}
-      className={cn(
-        'bg-background pointer-events-auto relative flex flex-col border transition-all duration-300',
-        !isMobile && !isMaximized && 'rounded-t-lg',
-        containerClasses,
-        isMaximized && !isMobile && 'rounded-lg'
-      )}
-      onDragEnter={handleDragEnter}
-      onDragLeave={handleDragLeave}
-      onDragOver={handleDragOver}
-      onDrop={(e) => void handleDrop(e)}
-    >
+  const composeDialogs = (
+    <>
+      {/* Schedule Send picker dialog */}
+      <ScheduleSendPicker
+        open={schedulePickerOpen}
+        onOpenChange={setSchedulePickerOpen}
+        onConfirm={handleScheduleConfirm}
+        onClear={handleClearSchedule}
+        currentValue={sendAt}
+      />
+
+      <ComposeSendAlerts
+        showNoRecipientAlert={showNoRecipientAlert}
+        onNoRecipientAlertOpenChange={setShowNoRecipientAlert}
+        emptyContentAlert={emptyContentAlert}
+        onEmptyContentAlertOpenChange={(open) =>
+          !open && setEmptyContentAlert(null)
+        }
+        onConfirmSendAnyway={() => void handleConfirmSendAnyway()}
+      />
+
+      {/* OpenCloud Picker dialog */}
+      <Dialog open={openCloudPickerOpen} onOpenChange={setOpenCloudPickerOpen}>
+        <DialogContent
+          className="max-h-[80vh] max-w-4xl"
+          aria-describedby={undefined}
+        >
+          <DialogHeader>
+            <DialogTitle>{t('opencloud.string')}</DialogTitle>
+          </DialogHeader>
+          <OpenCloudPicker
+            accessToken={openCloudAccessToken || undefined}
+            onSelect={handleOpenCloudFileSelect}
+          />
+        </DialogContent>
+      </Dialog>
+    </>
+  )
+
+  const composeBody = (
+    <>
       {isDragOver && !showMinimized && (
         <div className="border-primary bg-primary/10 pointer-events-none absolute inset-0 z-50 flex items-center justify-center rounded-lg border-2 border-dashed">
           <div className="text-primary flex flex-col items-center gap-2">
@@ -319,22 +298,6 @@ export const FloatingCompose: React.FC<FloatingComposeProps> = ({
           </div>
         </div>
       )}
-
-      <ComposeWindowHeader
-        subject={subject}
-        isMobile={isMobile}
-        isDraggable={isDraggable}
-        showMinimized={showMinimized}
-        isMaximized={isMaximized}
-        isSending={isSending}
-        isUploading={isUploading}
-        dragControls={dragControls}
-        onMinimize={handleMinimize}
-        onMaximize={handleMaximize}
-        onRestore={handleRestore}
-        onDiscardDraft={() => void handleDiscardDraft()}
-        onClose={handleClose}
-      />
 
       {!showMinimized && (
         <>
@@ -383,59 +346,107 @@ export const FloatingCompose: React.FC<FloatingComposeProps> = ({
             body={body}
             onInsertTemplate={handleInsertTemplate}
             onOpenCloudAttachment={handleOpenCloudAttachment}
-            onNextcloudAttachment={handleNextcloudAttachment}
           />
         </>
       )}
+    </>
+  )
 
-      {/* Schedule Send picker dialog */}
-      <ScheduleSendPicker
-        open={schedulePickerOpen}
-        onOpenChange={setSchedulePickerOpen}
-        onConfirm={handleScheduleConfirm}
-        onClear={handleClearSchedule}
-        currentValue={sendAt}
+  if (fullPage) {
+    // SOGo5 compose = the mail module split: form fields in the left column,
+    // editor in the #EEEEEE reading pane. Same geometry as the classic mail list.
+    return (
+      <div className="classic-compose flex h-full w-full flex-col overflow-hidden">
+        <div className="flex min-h-0 flex-1 flex-row">
+          <div className="border-border flex w-[38%] min-w-0 shrink-0 flex-col overflow-hidden border-r">
+            <ComposeHeader draftId={draftId} />
+            <div className="border-border border-t" />
+            <ComposeAttachmentList
+              draftId={draftId}
+              accountId={accountId}
+              mailKey={mailKey}
+              attachments={attachments}
+            />
+            <div className="flex-1" />
+            <ComposeToolbar
+              draftId={draftId}
+              fileInputRef={fileInputRef}
+              isUploading={isUploading}
+              onAttachmentClick={handleAttachmentClick}
+              onFileChange={handleFileChange}
+              jitsiEnabled={Boolean(jitsiLinkEnabled && jitsiBaseUrl)}
+              onInsertJitsi={handleInsertJitsi}
+              requestReadReceipt={requestReadReceipt}
+              signMessage={signMessage}
+              encryptMessage={encryptMessage}
+              selectedPriority={selectedPriority}
+              isSending={isSending}
+              onSend={() => void handleSend()}
+              sendAt={sendAt}
+              onScheduleSend={() => setSchedulePickerOpen(true)}
+              onClearSchedule={handleClearSchedule}
+              subject={subject}
+              body={body}
+              onInsertTemplate={handleInsertTemplate}
+              onOpenCloudAttachment={handleOpenCloudAttachment}
+            />
+          </div>
+          <div className="classic-reading-pane flex min-w-0 flex-1 flex-col overflow-hidden">
+            <div
+              className={cn(
+                'flex flex-1 flex-col overflow-y-auto',
+                styles.compose_editor
+              )}
+            >
+              <CustomEditor draftId={draftId} />
+            </div>
+          </div>
+        </div>
+        {composeDialogs}
+      </div>
+    )
+  }
+
+  return (
+    <motion.div
+      style={{ x }}
+      drag={isDraggable ? 'x' : false}
+      dragControls={dragControls}
+      dragListener={false}
+      dragMomentum={false}
+      dragElastic={0}
+      onFocusCapture={() => dispatch(setActiveDraft(draftId))}
+      onPointerDownCapture={() => dispatch(setActiveDraft(draftId))}
+      className={cn(
+        'bg-background pointer-events-auto relative flex flex-col border transition-all duration-300',
+        !isMobile && !isMaximized && 'rounded-t-lg',
+        containerClasses,
+        isMaximized && !isMobile && 'rounded-lg'
+      )}
+      onDragEnter={handleDragEnter}
+      onDragLeave={handleDragLeave}
+      onDragOver={handleDragOver}
+      onDrop={(e) => void handleDrop(e)}
+    >
+      {composeBody}
+
+      <ComposeWindowHeader
+        subject={subject}
+        isMobile={isMobile}
+        isDraggable={isDraggable}
+        showMinimized={showMinimized}
+        isMaximized={isMaximized}
+        isSending={isSending}
+        isUploading={isUploading}
+        dragControls={dragControls}
+        onMinimize={handleMinimize}
+        onMaximize={handleMaximize}
+        onRestore={handleRestore}
+        onDiscardDraft={() => void handleDiscardDraft()}
+        onClose={handleClose}
       />
 
-      <ComposeSendAlerts
-        showNoRecipientAlert={showNoRecipientAlert}
-        onNoRecipientAlertOpenChange={setShowNoRecipientAlert}
-        emptyContentAlert={emptyContentAlert}
-        onEmptyContentAlertOpenChange={(open) =>
-          !open && setEmptyContentAlert(null)
-        }
-        onConfirmSendAnyway={() => void handleConfirmSendAnyway()}
-      />
-
-      {/* OpenCloud Picker dialog */}
-      <Dialog open={openCloudPickerOpen} onOpenChange={setOpenCloudPickerOpen}>
-        <DialogContent className="z-[110] max-h-[80vh] max-w-4xl">
-          <DialogHeader>
-            <DialogTitle>{t('opencloud.string')}</DialogTitle>
-          </DialogHeader>
-          <OpenCloudPicker
-            accessToken={openCloudAccessToken || undefined}
-            onSelect={handleOpenCloudFileSelect}
-          />
-        </DialogContent>
-      </Dialog>
-
-      {/* Nextcloud Picker dialog */}
-      <Dialog
-        open={nextcloudPickerOpen}
-        onOpenChange={setNextcloudPickerOpen}
-      >
-        <DialogContent className="z-[110] max-h-[80vh] max-w-4xl">
-          <DialogHeader>
-            <DialogTitle>{t('nextcloud.string')}</DialogTitle>
-          </DialogHeader>
-          <OpenCloudPicker
-            source="nextcloud"
-            accessToken={nextcloudAccessToken || undefined}
-            onSelect={handleNextcloudFileSelect}
-          />
-        </DialogContent>
-      </Dialog>
+      {composeDialogs}
     </motion.div>
   )
 }

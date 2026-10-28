@@ -4,20 +4,20 @@
             "string": "Constructor de flujos"
         },
         "description": {
-            "string": "Low-code automation: If email from X and subject Y → forward, create event, notify."
+            "string": "Automatización de bajo código: si el correo es de X y el asunto es Y → reenviar, crear evento, notificar."
         },
         "form": {
             "create": {
-                "string": "New Workflow"
+                "string": "Nuevo flujo de trabajo"
             },
             "cancel": {
                 "string": "Cancelar"
             },
             "title": {
-                "string": "Create Workflow"
+                "string": "Crear flujo de trabajo"
             },
             "name": {
-                "string": "Workflow Name"
+                "string": "Nombre del flujo de trabajo"
             },
             "trigger": {
                 "string": "Triggor"
@@ -26,44 +26,44 @@
                 "string": "Descripción"
             },
             "conditions": {
-                "string": "Conditions"
+                "string": "Condiciones"
             },
             "actions": {
-                "string": "Actions"
+                "string": "Acciones"
             },
             "submit": {
-                "string": "Create Workflow"
+                "string": "Crear flujo de trabajo"
             }
         },
         "create": {
             "success": {
-                "string": "Workflow created"
+                "string": "Flujo de trabajo creado"
             },
             "error": {
-                "string": "Failed to create"
+                "string": "Error al crear"
             }
         },
         "toggle": {
             "error": {
-                "string": "Failed to toggle"
+                "string": "Error al alternar"
             }
         },
         "delete": {
             "success": {
-                "string": "Workflow deleted"
+                "string": "Flujo de trabajo eliminado"
             },
             "error": {
-                "string": "Failed to delete"
+                "string": "Error al eliminar"
             }
         },
         "list": {
             "empty": {
-                "string": "No workflows defined. Create one to automate actions."
+                "string": "No hay flujos de trabajo definidos. Cree uno para automatizar acciones."
             }
         },
         "errors": {
             "fields": {
-                "string": "Name, conditions, and actions are required"
+                "string": "El nombre, las condiciones y las acciones son obligatorios"
             }
         }
     }

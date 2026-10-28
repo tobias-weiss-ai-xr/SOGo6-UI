@@ -1,177 +1,75 @@
 {
-    "AP_RESOURCES": {
-        "title": {
-            "string": "Ressourcenbuchung"
-        },
-        "description": {
-            "string": "Manage bookable resources such as meeting rooms, equipment, and vehicles. Resources can be invited as attendees to calendar events with automatic conflict detection."
-        },
-        "refresh": {
-            "string": "Refresh"
-        },
-        "cancel": {
-            "string": "Abbrechen"
-        },
-        "count_one": {
-            "string": "resource"
-        },
-        "count_many": {
-            "string": "resources"
-        },
-        "status": {
-            "active": {
-                "string": "Active"
-            },
-            "inactive": {
-                "string": "Inactive"
-            }
-        },
-        "labels": {
-            "name": {
-                "string": "Name"
-            },
-            "email": {
-                "string": "Email"
-            },
-            "type": {
-                "string": "Type"
-            },
-            "capacity": {
-                "string": "Capacity"
-            },
-            "location": {
-                "string": "Location"
-            },
-            "description": {
-                "string": "Description"
-            },
-            "booking_policy": {
-                "string": "Booking Policy"
-            },
-            "auto_accept": {
-                "string": "Auto-accept bookings"
-            }
-        },
-        "types": {
-            "room": {
-                "string": "Room"
-            },
-            "equipment": {
-                "string": "Equipment"
-            },
-            "vehicle": {
-                "string": "Vehicle"
-            },
-            "other": {
-                "string": "Other"
-            }
-        },
-        "policies": {
-            "open": {
-                "string": "Open — anyone can book"
-            },
-            "moderated": {
-                "string": "Moderated — requires approval"
-            },
-            "restricted": {
-                "string": "Restricted — specific groups only"
-            }
-        },
-        "placeholders": {
-            "description": {
-                "string": "Ground floor, 20 seats, video conferencing"
-            }
-        },
-        "table": {
-            "name": {
-                "string": "Name"
-            },
-            "email": {
-                "string": "Email"
-            },
-            "type": {
-                "string": "Type"
-            },
-            "capacity": {
-                "string": "Capacity"
-            },
-            "location": {
-                "string": "Location"
-            },
-            "policy": {
-                "string": "Policy"
-            },
-            "status": {
-                "string": "Status"
-            },
-            "actions": {
-                "string": "Actions"
-            },
-            "no_resources": {
-                "string": "No resources configured yet. Create one to get started."
-            }
-        },
-        "create": {
-            "button": {
-                "string": "Add Resource"
-            },
-            "title": {
-                "string": "Add Resource"
-            },
-            "description": {
-                "string": "Create a new bookable resource."
-            },
-            "submit": {
-                "string": "Erstellen"
-            },
-            "success": {
-                "string": "Resource created successfully"
-            }
-        },
-        "edit": {
-            "title": {
-                "string": "Edit Resource"
-            },
-            "description": {
-                "string": "Update resource properties."
-            },
-            "submit": {
-                "string": "Speichern"
-            },
-            "success": {
-                "string": "Resource updated successfully"
-            }
-        },
-        "delete": {
-            "confirm": {
-                "string": "Delete Resource"
-            },
-            "description": {
-                "string": "Are you sure you want to delete this resource? Existing bookings will not be removed."
-            },
-            "submit": {
-                "string": "Löschen"
-            },
-            "success": {
-                "string": "Resource deleted"
-            }
-        },
-        "errors": {
-            "name_email_required": {
-                "string": "Name and email are required"
-            },
-            "load_failed": {
-                "string": "Failed to load resources"
-            },
-            "create_failed": {
-                "string": "Failed to create resource"
-            },
-            "update_failed": {
-                "string": "Failed to update resource"
-            },
-            "delete_failed": {
-                "string": "Failed to delete resource"
-            }
-        }
+  "AP_RESOURCES": {
+    "title": {"string": "Ressourcenbuchung"},
+    "description": {"string": "Verwalten Sie buchbare Ressourcen wie Besprechungsräume, Ausrüstung und Fahrzeuge. Ressourcen können als Teilnehmer zu Kalendereinträgen eingeladen werden mit automatischer Konfliktprüfung."},
+    "refresh": {"string": "Aktualisieren"},
+    "cancel": {"string": "Abbrechen"},
+    "count_one": {"string": "Ressource"},
+    "count_many": {"string": "Ressourcen"},
+    "status": {
+      "active": {"string": "Aktiv"},
+      "inactive": {"string": "Inaktiv"}
+    },
+    "labels": {
+      "name": {"string": "Name"},
+      "email": {"string": "E-Mail"},
+      "type": {"string": "Typ"},
+      "capacity": {"string": "Kapazität"},
+      "location": {"string": "Standort"},
+      "description": {"string": "Beschreibung"},
+      "booking_policy": {"string": "Buchungsrichtlinie"},
+      "auto_accept": {"string": "Buchungen automatisch akzeptieren"}
+    },
+    "types": {
+      "room": {"string": "Raum"},
+      "equipment": {"string": "Ausrüstung"},
+      "vehicle": {"string": "Fahrzeug"},
+      "other": {"string": "Sonstiges"}
+    },
+    "policies": {
+      "open": {"string": "Offen – jeder kann buchen"},
+      "moderated": {"string": "Moderiert – erfordert Freigabe"},
+      "restricted": {"string": "Eingeschränkt – nur bestimmte Gruppen"}
+    },
+    "placeholders": {
+      "description": {"string": "Erdgeschoss, 20 Plätze, Videokonferenz"}
+    },
+    "table": {
+      "name": {"string": "Name"},
+      "email": {"string": "E-Mail"},
+      "type": {"string": "Typ"},
+      "capacity": {"string": "Kapazität"},
+      "location": {"string": "Standort"},
+      "policy": {"string": "Richtlinie"},
+      "status": {"string": "Status"},
+      "actions": {"string": "Aktionen"},
+      "no_resources": {"string": "Noch keine Ressourcen konfiguriert. Erstellen Sie eine, um loszulegen."}
+    },
+    "create": {
+      "button": {"string": "Ressource hinzufügen"},
+      "title": {"string": "Ressource hinzufügen"},
+      "description": {"string": "Erstellen Sie eine neue buchbare Ressource."},
+      "submit": {"string": "Erstellen"},
+      "success": {"string": "Ressource erfolgreich erstellt"}
+    },
+    "edit": {
+      "title": {"string": "Ressource bearbeiten"},
+      "description": {"string": "Ressourceneigenschaften aktualisieren."},
+      "submit": {"string": "Speichern"},
+      "success": {"string": "Ressource erfolgreich aktualisiert"}
+    },
+    "delete": {
+      "confirm": {"string": "Ressource löschen"},
+      "description": {"string": "Sind Sie sicher, dass Sie diese Ressource löschen möchten? Vorhandene Buchungen werden nicht entfernt."},
+      "submit": {"string": "Löschen"},
+      "success": {"string": "Ressource gelöscht"}
+    },
+    "errors": {
+      "name_email_required": {"string": "Name und E-Mail sind erforderlich"},
+      "load_failed": {"string": "Laden der Ressourcen fehlgeschlagen"},
+      "create_failed": {"string": "Erstellen der Ressource fehlgeschlagen"},
+      "update_failed": {"string": "Aktualisieren der Ressource fehlgeschlagen"},
+      "delete_failed": {"string": "Löschen der Ressource fehlgeschlagen"}
     }
+  }
 }

@@ -1,59 +1,59 @@
 {
-    "AP_OAUTH": {
-        "title": {
-            "string": "OAuth2 / OIDC Clients"
-        },
-        "description": {
-            "string": "Manage OAuth2 client applications. SOGo acts as an OAuth2 authorization server and OpenID Connect provider."
-        },
-        "form": {
-            "register": {
-                "string": "Register Client"
-            },
-            "cancel": {
-                "string": "Annuller"
-            },
-            "title": {
-                "string": "Register OAuth2 Client"
-            },
-            "name": {
-                "string": "Application Name"
-            },
-            "redirect_uris": {
-                "string": "Redirect URIs"
-            },
-            "redirect_hint": {
-                "string": "Separate multiple URIs with commas"
-            },
-            "scopes": {
-                "string": "Scopes"
-            },
-            "create": {
-                "string": "Register"
-            }
-        },
-        "credentials": {
-            "title": {
-                "string": "Client Credentials — Save Now"
-            }
-        },
-        "create": {
-            "success": {
-                "string": "Client registered"
-            },
-            "error": {
-                "string": "Registration failed"
-            }
-        },
-        "list": {
-            "empty": {
-                "string": "No OAuth2 clients registered yet."
-            }
-        },
-        "errors": {
-            "fields": {
-                "string": "Name and redirect URI are required"
-            }
-        }
+  "AP_OAUTH": {
+    "title": {
+      "string": "OAuth2-/OIDC-klienter"
+    },
+    "description": {
+      "string": "Administrér OAuth2-klientapplikationer. SOGo fungerer som OAuth2-autorisationsserver og OpenID Connect-udbyder."
+    },
+    "form": {
+      "register": {
+        "string": "Registrér klient"
+      },
+      "cancel": {
+        "string": "Annuller"
+      },
+      "title": {
+        "string": "Registrér OAuth2-klient"
+      },
+      "name": {
+        "string": "Applikationsnavn"
+      },
+      "redirect_uris": {
+        "string": "Omdirigerings-URI'er"
+      },
+      "redirect_hint": {
+        "string": "Adskil flere URI'er med kommaer"
+      },
+      "scopes": {
+        "string": "Scopes"
+      },
+      "create": {
+        "string": "Register"
+      }
+    },
+    "credentials": {
+      "title": {
+        "string": "Klientlegitimationsoplysninger — gem nu"
+      }
+    },
+    "create": {
+      "success": {
+        "string": "Klienten er registreret"
+      },
+      "error": {
+        "string": "Registreringen mislykkedes"
+      }
+    },
+    "list": {
+      "empty": {
+        "string": "Ingen OAuth2-klienter registreret endnu."
+      }
+    },
+    "errors": {
+      "fields": {
+        "string": "Navn og omdirigerings-URI er påkrævet"
+      }
     }
+  }
 }

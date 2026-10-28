@@ -1,98 +1,98 @@
 {
-    "VOLUNTEER": {
-        "title": {
-            "string": "Volunteer Scheduling"
-        },
-        "description": {
-            "string": "Manage volunteers, assign shifts, track hours, and generate certificates"
-        },
-        "errors": {
-            "fields": {
-                "string": "Required fields missing"
-            },
-            "fail": {
-                "string": "Operation failed"
-            }
-        },
-        "success": {
-            "create": {
-                "string": "Volunteer registered"
-            },
-            "shift": {
-                "string": "Shift assigned"
-            },
-            "cert": {
-                "string": "Certificate generated"
-            }
-        },
-        "register": {
-            "title": {
-                "string": "Register Volunteer"
-            }
-        },
-        "shift": {
-            "title": {
-                "string": "Create Shift"
-            },
-            "select": {
-                "string": "Select volunteer..."
-            },
-            "task": {
-                "string": "Task"
-            },
-            "start": {
-                "string": "Start"
-            },
-            "end": {
-                "string": "End"
-            }
-        },
-        "field": {
-            "name": {
-                "string": "Navn"
-            },
-            "email": {
-                "string": "Email"
-            },
-            "hours": {
-                "string": "Hours"
-            },
-            "status": {
-                "string": "Status"
-            },
-            "no_shows": {
-                "string": "No-shows"
-            }
-        },
-        "button": {
-            "register": {
-                "string": "Register"
-            },
-            "assign": {
-                "string": "Assign Shift"
-            }
-        },
-        "stats": {
-            "title": {
-                "string": "Statistics"
-            },
-            "volunteers": {
-                "string": "Volunteers"
-            },
-            "hours": {
-                "string": "Total Hours"
-            },
-            "shifts": {
-                "string": "Active Shifts"
-            }
-        },
-        "list": {
-            "title": {
-                "string": "All Volunteers"
-            },
-            "empty": {
-                "string": "No volunteers registered yet"
-            }
-        }
+  "VOLUNTEER": {
+    "title": {
+      "string": "Vagtplanlægning for frivillige"
+    },
+    "description": {
+      "string": "Administrér frivillige, tildel vagter, følg timer, og generér beviser"
+    },
+    "errors": {
+      "fields": {
+        "string": "Påkrævede felter mangler"
+      },
+      "fail": {
+        "string": "Handlingen mislykkedes"
+      }
+    },
+    "success": {
+      "create": {
+        "string": "Frivillig registreret"
+      },
+      "shift": {
+        "string": "Vagt tildelt"
+      },
+      "cert": {
+        "string": "Bevis genereret"
+      }
+    },
+    "register": {
+      "title": {
+        "string": "Registrér frivillig"
+      }
+    },
+    "shift": {
+      "title": {
+        "string": "Create Shift"
+      },
+      "select": {
+        "string": "Vælg frivillig..."
+      },
+      "task": {
+        "string": "Task"
+      },
+      "start": {
+        "string": "Start"
+      },
+      "end": {
+        "string": "End"
+      }
+    },
+    "field": {
+      "name": {
+        "string": "Navn"
+      },
+      "email": {
+        "string": "Email"
+      },
+      "hours": {
+        "string": "Hours"
+      },
+      "status": {
+        "string": "Status"
+      },
+      "no_shows": {
+        "string": "No-shows"
+      }
+    },
+    "button": {
+      "register": {
+        "string": "Register"
+      },
+      "assign": {
+        "string": "Assign Shift"
+      }
+    },
+    "stats": {
+      "title": {
+        "string": "Statistics"
+      },
+      "volunteers": {
+        "string": "Volunteers"
+      },
+      "hours": {
+        "string": "Total Hours"
+      },
+      "shifts": {
+        "string": "Aktive vagter"
+      }
+    },
+    "list": {
+      "title": {
+        "string": "Alle frivillige"
+      },
+      "empty": {
+        "string": "Ingen frivillige registreret endnu"
+      }
     }
+  }
 }

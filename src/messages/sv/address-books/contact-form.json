@@ -1,23 +1,23 @@
 {
     "CONTACT_FORM": {
         "emails": {
-            "string": "Email addresses",
+            "string": "E-postadresser",
             "context": "Label for the email addresses section in the contact form."
         },
         "addresses": {
-            "string": "Addresses",
+            "string": "Adresser",
             "context": "Label for the addresses section in the contact form."
         },
         "phone_numbers": {
-            "string": "Phone numbers",
+            "string": "Telefonnummer",
             "context": "Label for the phone numbers section in the contact form."
         },
         "urls": {
-            "string": "URLs",
+            "string": "URL:er",
             "context": "Label for the URLs section in the contact form."
         },
         "birthday": {
-            "string": "Birthday",
+            "string": "Födelsedag",
             "context": "Label for the birthday field in the contact visualization."
         },
         "notes": {
@@ -25,35 +25,35 @@
             "context": "Label for the notes section in the contact form."
         },
         "contact_information": {
-            "string": "Contact Information",
+            "string": "Kontaktinformation",
             "context": "Label for the contact information section in the contact form."
         },
         "contact_details": {
-            "string": "Contact Details",
+            "string": "Kontaktuppgifter",
             "context": "Title for the contact details view header."
         },
         "back_to_list": {
-            "string": "Back to list",
+            "string": "Tillbaka till listan",
             "context": "Button label to return to the contact list."
         },
         "copied_to_clipboard": {
-            "string": "Copied to clipboard",
+            "string": "Kopierat till urklipp",
             "context": "Toast message when content is copied successfully."
         },
         "copied_value": {
-            "string": "Copied: {value}",
+            "string": "Kopierade: {value}",
             "context": "Toast description showing what was copied."
         },
         "copy_failed": {
-            "string": "Copy failed",
+            "string": "Kopieringen misslyckades",
             "context": "Toast error message when copy operation fails."
         },
         "copy_failed_description": {
-            "string": "Unable to copy to clipboard. Please try again.",
+            "string": "Kunde inte kopiera till urklipp. Försök igen.",
             "context": "Toast error description when copy fails."
         },
         "copy_email": {
-            "string": "Copy email",
+            "string": "Kopiera e-postadress",
             "context": "Tooltip for copy email button."
         },
         "copy": {
@@ -65,7 +65,7 @@
             "context": "Button label to edit a field."
         },
         "export": {
-            "string": "Export",
+            "string": "Exportera",
             "context": "Button label to export a contact."
         },
         "save": {
@@ -77,23 +77,23 @@
             "context": "Button label to cancel editing."
         },
         "edit_note": {
-            "string": "Edit note",
+            "string": "Redigera anteckning",
             "context": "Button label to edit the contact note."
         },
         "add_note": {
-            "string": "Add note",
+            "string": "Lägg till anteckning",
             "context": "Button label to add a note to the contact."
         },
         "no_notes": {
-            "string": "No notes",
+            "string": "Inga anteckningar",
             "context": "Placeholder text when there are no notes."
         },
         "new_contact": {
-            "string": "New contact",
+            "string": "Ny kontakt",
             "context": "Title for the new contact dialog"
         },
         "edit_contact": {
-            "string": "Edit contact",
+            "string": "Redigera kontakt",
             "context": "Title for the edit contact dialog"
         },
         "create": {
@@ -105,74 +105,74 @@
             "context": "Button to delete a contact"
         },
         "add_email": {
-            "string": "Add email",
+            "string": "Lägg till e-postadress",
             "context": "Button to add another email field"
         },
         "add_phone": {
-            "string": "Add phone",
+            "string": "Lägg till telefonnummer",
             "context": "Button to add another phone field"
         },
         "remove_field": {
-            "string": "Remove field",
+            "string": "Ta bort fält",
             "context": "Aria label for removing a dynamic form field"
         },
         "add_address": {
-            "string": "Add address",
+            "string": "Lägg till adress",
             "context": "Button to add another address field"
         },
         "add_url": {
-            "string": "Add URL",
+            "string": "Lägg till URL",
             "context": "Button to add another URL field"
         },
         "add_impp": {
-            "string": "Add instant messaging",
+            "string": "Lägg till snabbmeddelande",
             "context": "Button to add another instant messaging field"
         },
         "categories": {
-            "string": "Categories",
+            "string": "Kategorier",
             "context": "Label for contact categories field"
         },
         "photo": {
-            "string": "Photo",
+            "string": "Foto",
             "context": "Label for contact photo upload"
         },
         "photo_upload": {
-            "string": "Upload a photo",
+            "string": "Ladda upp ett foto",
             "context": "Button to select a contact photo file"
         },
         "photo_change": {
-            "string": "Change photo",
+            "string": "Byt foto",
             "context": "Button to change contact photo"
         },
         "photo_remove": {
-            "string": "Remove photo",
+            "string": "Ta bort foto",
             "context": "Button to remove contact photo"
         },
         "anniversary": {
-            "string": "Anniversary",
+            "string": "Årsdag",
             "context": "Label for anniversary field in contact visualization"
         },
         "impp": {
-            "string": "Instant messaging",
+            "string": "Snabbmeddelanden",
             "context": "Label for instant messaging addresses"
         },
         "geo": {
-            "string": "Location",
+            "string": "Plats",
             "context": "Label for geographic location"
         },
         "submit_error": {
-            "string": "Could not save. Please check the form and try again.",
+            "string": "Kunde inte spara. Kontrollera formuläret och försök igen.",
             "context": "Generic submit error shown in contact form"
         },
         "fields": {
             "first_name": {
-                "string": "First name"
+                "string": "Förnamn"
             },
             "last_name": {
-                "string": "Last name"
+                "string": "Efternamn"
             },
             "middle_name": {
-                "string": "Middle name"
+                "string": "Mellannamn"
             },
             "prefix": {
                 "string": "Prefix"
@@ -181,61 +181,61 @@
                 "string": "Suffix"
             },
             "nickname": {
-                "string": "Nickname"
+                "string": "Smeknamn"
             },
             "organization": {
-                "string": "Organization"
+                "string": "Organisation"
             },
             "department": {
-                "string": "Department"
+                "string": "Avdelning"
             },
             "job_title": {
-                "string": "Job title"
+                "string": "Befattning"
             },
             "role": {
-                "string": "Role"
+                "string": "Roll"
             },
             "impp": {
-                "string": "Instant messaging"
+                "string": "Snabbmeddelanden"
             },
             "anniversary": {
-                "string": "Anniversary"
+                "string": "Årsdag"
             },
             "birthday_unknown_year": {
-                "string": "Year unknown (month and day only)"
+                "string": "Årtal okänt (endast månad och dag)"
             },
             "street": {
-                "string": "Street"
+                "string": "Gatuadress"
             },
             "city": {
-                "string": "City"
+                "string": "Ort"
             },
             "postal_code": {
-                "string": "Postal code"
+                "string": "Postnummer"
             },
             "country": {
-                "string": "Country"
+                "string": "Land"
             },
             "region": {
-                "string": "Region / State"
+                "string": "Region / Län"
             },
             "po_box": {
-                "string": "PO box"
+                "string": "Postbox"
             },
             "extended": {
-                "string": "Extended address"
+                "string": "Tilläggsadress"
             },
             "contact_kind": {
-                "string": "Contact type"
+                "string": "Kontakttyp"
             },
             "contact_kind_individual": {
                 "string": "Person"
             },
             "contact_kind_org": {
-                "string": "Organization"
+                "string": "Organisation"
             },
             "organization_required": {
-                "string": "Organization name"
+                "string": "Organisationsnamn"
             },
             "type": {
                 "string": "Typ"
@@ -244,28 +244,28 @@
                 "string": "Standard"
             },
             "pref": {
-                "string": "Preferred"
+                "string": "Föredragen"
             },
             "email_type_work": {
-                "string": "Work"
+                "string": "Arbete"
             },
             "email_type_home": {
-                "string": "Home"
+                "string": "Hem"
             },
             "email_type_other": {
-                "string": "Other"
+                "string": "Annat"
             },
             "phone_type_work": {
-                "string": "Work"
+                "string": "Arbete"
             },
             "phone_type_home": {
-                "string": "Home"
+                "string": "Hem"
             },
             "phone_type_mobile": {
-                "string": "Mobile"
+                "string": "Mobil"
             },
             "phone_type_other": {
-                "string": "Other"
+                "string": "Annat"
             },
             "url": {
                 "string": "URL"
@@ -273,48 +273,48 @@
         },
         "delete_dialog": {
             "title": {
-                "string": "Delete contact?"
+                "string": "Radera kontakten?"
             },
             "description": {
-                "string": "This contact will be permanently removed from your address book."
+                "string": "Denna kontakt kommer att tas bort permanent från din adressbok."
             },
             "confirm": {
                 "string": "Ta bort"
             }
         },
         "write_message": {
-            "string": "Write message",
+            "string": "Skriv meddelande",
             "context": "Button to compose an email to this contact."
         },
         "actions_menu": {
-            "string": "More actions",
+            "string": "Fler åtgärder",
             "context": "Aria label for the contact actions dropdown menu."
         },
         "compose_email": {
-            "string": "Compose",
+            "string": "Skriv",
             "context": "Button to compose an email to a specific address on the contact card."
         },
         "selection_placeholder": {
             "title": {
-                "string": "Select a contact",
+                "string": "Välj en kontakt",
                 "context": "Title shown when no contact is selected in the detail panel."
             },
             "description": {
-                "string": "Choose a contact or distribution list from the list to view details.",
+                "string": "Välj en kontakt eller distributionslista i listan för att visa detaljer.",
                 "context": "Description shown when no contact is selected."
             }
         },
         "load_error": {
             "title": {
-                "string": "Could not load contact",
+                "string": "Kunde inte läsa in kontakten",
                 "context": "Error title when contact details fail to load."
             },
             "list": {
-                "string": "Could not load contacts",
+                "string": "Kunde inte läsa in kontakter",
                 "context": "Error message when the contact list fails to load."
             },
             "description": {
-                "string": "Please try again later.",
+                "string": "Försök igen senare.",
                 "context": "Error description when contact data fails to load."
             }
         }

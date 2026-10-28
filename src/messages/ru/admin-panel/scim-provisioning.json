@@ -1,33 +1,33 @@
 {
     "SCIM": {
         "title": {
-            "string": "SCIM Provisioning"
+            "string": "Провижининг SCIM"
         },
         "description": {
-            "string": "SCIM 2.0 identity lifecycle management for Azure AD, Okta, and other IdPs"
+            "string": "Управление жизненным циклом удостоверений SCIM 2.0 для Azure AD, Okta и других IdP"
         },
         "errors": {
             "email": {
-                "string": "Email is required"
+                "string": "Укажите адрес электронной почты"
             },
             "fail": {
-                "string": "Operation failed"
+                "string": "Операция не выполнена"
             }
         },
         "success": {
             "create": {
-                "string": "User provisioned successfully"
+                "string": "Пользователь провижен успешно"
             },
             "delete": {
-                "string": "User deprovisioned"
+                "string": "Провижининг пользователя отменён"
             }
         },
         "field": {
             "email": {
-                "string": "Username/Email"
+                "string": "Имя пользователя / эл. почта"
             },
             "name": {
-                "string": "Display Name"
+                "string": "Отображаемое имя"
             },
             "status": {
                 "string": "Статус"
@@ -35,15 +35,15 @@
         },
         "button": {
             "provision": {
-                "string": "Provision User"
+                "string": "Провижинить пользователя"
             }
         },
         "users": {
             "title": {
-                "string": "Provisioned Users"
+                "string": "Провижиненные пользователи"
             },
             "empty": {
-                "string": "No SCIM users provisioned yet"
+                "string": "Пользователи SCIM ещё не провижинены"
             }
         }
     }

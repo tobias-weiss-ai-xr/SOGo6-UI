@@ -7,6 +7,8 @@ export interface NavItems {
   icon?: LucideIcon
   isActive?: boolean
   items?: NavItems[]
+  target?: string
+  rel?: string
 }
 
 export interface BuilderSlice {

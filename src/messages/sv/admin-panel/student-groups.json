@@ -1,35 +1,35 @@
 {
     "STUDENT_GROUPS": {
         "title": {
-            "string": "Student Group Management"
+            "string": "Hantering av studentgrupper"
         },
         "description": {
-            "string": "Manage student groups, course mailing lists, and enrollment"
+            "string": "Hantera studentgrupper, kursmailistor och registrering"
         },
         "errors": {
             "name": {
-                "string": "Group name required"
+                "string": "Gruppnamn krävs"
             },
             "fail": {
-                "string": "Operation failed"
+                "string": "Åtgärden misslyckades"
             }
         },
         "success": {
             "create": {
-                "string": "Group created successfully"
+                "string": "Gruppen skapades"
             }
         },
         "field": {
             "name": {
-                "string": "Group Name"
+                "string": "Gruppnamn"
             },
             "course": {
-                "string": "Course Code"
+                "string": "Kurskod"
             }
         },
         "button": {
             "create": {
-                "string": "Create Group"
+                "string": "Skapa grupp"
             }
         },
         "label": {
@@ -37,7 +37,7 @@
                 "string": "Ingen"
             },
             "students": {
-                "string": "students"
+                "string": "studenter"
             }
         }
     }

@@ -13,25 +13,25 @@
             },
             "setAsDefault": "Als Standard festlegen",
             "defaultDescription": "Diese Identität wird standardmäßig beim Verfassen neuer Nachrichten verwendet",
-            "mainIdentityEmail": "This is your main email address and cannot be changed",
-            "nameNotEditable": "Name editing is disabled by administrator",
-            "replyToNotEditable": "Reply-To editing is disabled by administrator",
-            "signatures": "Signatures",
-            "signaturesDescription": "Create and manage email signatures for this identity",
-            "signaturePlaceholder": "Enter signature name",
-            "addIdentity": "Add an identity",
-            "allowsCustom": "You can add and manage additional identities"
+            "mainIdentityEmail": "Dies ist Ihre Haupt-E-Mail-Adresse und kann nicht geändert werden",
+            "nameNotEditable": "Die Bearbeitung des Namens wurde vom Administrator deaktiviert",
+            "replyToNotEditable": "Die Bearbeitung von „Antwort an“ wurde vom Administrator deaktiviert",
+            "signatures": "Signaturen",
+            "signaturesDescription": "E-Mail-Signaturen für diese Identität erstellen und verwalten",
+            "signaturePlaceholder": "Signaturnamen eingeben",
+            "addIdentity": "Identität hinzufügen",
+            "allowsCustom": "Sie können weitere Identitäten hinzufügen und verwalten"
         },
         "description": {
             "useDefaultIdentity": {
-                "string": "This identity will be selected by default when composing new messages"
+                "string": "Diese Identität wird beim Verfassen neuer Nachrichten standardmäßig ausgewählt"
             }
         },
         "accessibility": {
-            "toggleCollapse": "Toggle identity details",
+            "toggleCollapse": "Identitätsdetails ein-/ausklappen",
             "expandIdentity": "Erweitern",
             "collapseIdentity": "Einklappen",
-            "removeIcon": "Remove identity button"
+            "removeIcon": "Schaltfläche zum Entfernen der Identität"
         }
     }
 }

@@ -23,6 +23,23 @@ interface RecursiveNavItemProps {
   item: NavItems
 }
 
+function NavLink({
+  item,
+  children,
+}: {
+  item: NavItems
+  children: React.ReactNode
+}) {
+  if (item.target) {
+    return (
+      <a href={item.url} target={item.target} rel={item.rel ?? 'noreferrer'}>
+        {children}
+      </a>
+    )
+  }
+  return <Link href={item.url!}>{children}</Link>
+}
+
 function RecursiveNavItem({ item }: RecursiveNavItemProps) {
   const t = useTranslations()
 
@@ -46,12 +63,12 @@ function RecursiveNavItem({ item }: RecursiveNavItemProps) {
             {item.items?.map((subItem) => (
               <SidebarMenuSubItem className="pt-2" key={subItem.title}>
                 {subItem.url ? (
-                  <Link href={subItem.url}>
+                  <NavLink item={subItem}>
                     <SidebarMenuButton>
                       {subItem.icon && <subItem.icon size={24} />}
                       <span>{t(subItem.title)}</span>
                     </SidebarMenuButton>
-                  </Link>
+                  </NavLink>
                 ) : (
                   <RecursiveNavItem item={subItem} />
                 )}

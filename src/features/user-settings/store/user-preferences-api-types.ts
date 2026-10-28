@@ -31,6 +31,7 @@ export interface UserGeneral extends SkipNotification {
   SOGO_U_FIRST_MODULE: string
   SOGO_U_BROWSER_NOTIF: boolean
   SOGO_U_EXT_AVATAR_ENABLED: boolean
+  SOGO_U_THEME: 'default' | 'sogo5-classic'
   SOGO_U_PROFILE_PICTURE:
     | typeof PP_DEFAULT
     | typeof PP_GRAVATAR

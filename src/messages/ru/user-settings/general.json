@@ -1,36 +1,36 @@
 {
     "US_GENERAL": {
         "title": {
-            "string": "General Settings",
+            "string": "Общие настройки",
             "context": "Title for the general settings page"
         },
         "labels": {
             "language": {
-                "string": "Language"
+                "string": "Язык"
             },
             "timezone": {
-                "string": "Timezone"
+                "string": "Часовой пояс"
             },
             "short_date_style": {
-                "string": "Short Date Style"
+                "string": "Краткий формат даты"
             },
             "long_date_style": {
-                "string": "Long Date Style"
+                "string": "Полный формат даты"
             },
             "time_style": {
-                "string": "Time Style"
+                "string": "Формат времени"
             },
             "default_view": {
-                "string": "Default View"
+                "string": "Вид по умолчанию"
             },
             "refresh_frequency": {
-                "string": "Refresh Frequency"
+                "string": "Частота обновления"
             },
             "enable_notifications": {
-                "string": "Enable Notifications"
+                "string": "Включить уведомления"
             },
             "saved": {
-                "string": "General settings saved"
+                "string": "Общие настройки сохранены"
             },
             "mail": {
                 "string": "Почта"
@@ -42,39 +42,39 @@
                 "string": "Контакты"
             },
             "last": {
-                "string": "Last displayed module"
+                "string": "Последний открытый модуль"
             },
             "enable_external_avatar": {
-                "string": "Enable external avatar"
+                "string": "Включить внешний аватар"
             }
         },
         "descriptions": {
             "language": {
-                "string": "The language used in the app."
+                "string": "Язык, используемый в приложении."
             },
             "timezone": {
-                "string": "The time zone you are in."
+                "string": "Часовой пояс, в котором вы находитесь."
             },
             "short_date_style": {
-                "string": "How dates are displayed in the app."
+                "string": "Формат отображения дат в приложении."
             },
             "long_date_style": {
-                "string": "How dates are displayed in the app."
+                "string": "Формат отображения дат в приложении."
             },
             "time_style": {
-                "string": "How time is displayed in the app."
+                "string": "Формат отображения времени в приложении."
             },
             "default_view": {
-                "string": "The default view when you open the app."
+                "string": "Вид по умолчанию при открытии приложения."
             },
             "refresh_frequency": {
-                "string": " How often the app should check for new emails, calendar events, and more."
+                "string": "Как часто приложение должно проверять наличие новых писем, событий календаря и т. д."
             },
             "enable_notifications": {
-                "string": "Receive notifications for new emails, calendar events, and more."
+                "string": "Получать уведомления о новых письмах, событиях календаря и т. д."
             },
             "enable_external_avatar": {
-                "string": "Enable external avatar (e.g., Gravatar)"
+                "string": "Включить внешний аватар (напр., Gravatar)"
             }
         }
     }

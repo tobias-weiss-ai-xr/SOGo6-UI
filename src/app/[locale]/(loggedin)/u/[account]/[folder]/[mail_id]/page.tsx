@@ -17,8 +17,8 @@ import { useMailDetailNavigation } from '@/features/mails/hooks/use-mail-detail-
 import { useMailInvitation } from '@/features/mails/hooks/use-mail-invitation'
 import { useMailReplyActions } from '@/features/mails/hooks/use-mail-reply-actions'
 import { usePrintMail } from '@/features/mails/hooks/use-print-mail'
-import { useGetMailQuery } from '@/features/mails/store/mails-api'
 import type { ImapAttachments } from '@/features/mails/mails-types'
+import { useGetMailQuery } from '@/features/mails/store/mails-api'
 import { useIsMobile } from '@/hooks/use-mobile'
 import { useAppSelector } from '@/lib/redux/hooks'
 
@@ -45,11 +45,14 @@ const MailPage: React.FC = () => {
     navigation: mailNavigation,
   } = useMailDetailNavigation()
 
-  const { data, isLoading, isError } = useGetMailQuery({
-    folder,
-    mailId: mail_id,
-    accountId: account,
-  })
+  const { data, isLoading, isError } = useGetMailQuery(
+    {
+      folder,
+      mailId: mail_id,
+      accountId: account,
+    },
+    { skip: !mail_id }
+  )
 
   const currentUserEmail = useAppSelector((state) => state.auth.user?.email)
   const invitation = useMailInvitation(data, currentUserEmail)

@@ -274,7 +274,7 @@
             },
             "US_LDAP_BIND_DN": {
                 "name": {
-                    "string": "Bind DN"
+                    "string": "DN di bind"
                 },
                 "description": {
                     "string": "Il DN del nome di accesso da utilizzare per il binding al tuo server."
@@ -292,7 +292,7 @@
             },
             "US_LDAP_BASE_DN": {
                 "name": {
-                    "string": "Base DN"
+                    "string": "DN base"
                 },
                 "description": {
                     "string": "Base DN delle voci utente. Se il dominio della mail è presente, puoi aggiungere '%d' per aggiungerlo dinamicamente dalla mail dell'utente come: 'ou=%d,dc=example,dc=com'"

@@ -1,91 +1,93 @@
 {
     "MAILS_LIST": {
+        "star": { "string": "Tähdä" },
+        "unstar": { "string": "Poista tähti" },
         "messages_number": {
-            "string": "{number, plural, one {# message} other {# messages}}",
+            "string": "{number, plural, one {# viesti} other {# viestiä}}",
             "context": "Displays the number of messages in an mail folder."
         },
         "sort": {
             "date": {
                 "ascending": {
-                    "string": "Newest first"
+                    "string": "Uusimmat ensin"
                 },
                 "descending": {
-                    "string": "Older first"
+                    "string": "Vanhimmat ensin"
                 }
             },
             "size": {
                 "ascending": {
-                    "string": "Smallest first"
+                    "string": "Pienimmät ensin"
                 },
                 "descending": {
-                    "string": "Largest first"
+                    "string": "Suurimmat ensin"
                 }
             }
         },
         "pagination": {
             "previous": {
-                "string": "Previous page"
+                "string": "Edellinen sivu"
             },
             "next": {
-                "string": "Next page"
+                "string": "Seuraava sivu"
             }
         },
         "list_load_error": {
             "folder_not_found": {
-                "string": "This folder no longer exists.",
+                "string": "Tätä kansiota ei enää ole.",
                 "description": "Message when folder messages request returns 404"
             },
             "mail_unavailable": {
-                "string": "Mail server is temporarily unavailable.",
+                "string": "Sähköpostipalvelin on väliaikaisesti poissa käytöstä.",
                 "description": "Message when folder messages request returns 503"
             },
             "retry": {
-                "string": "Try again",
+                "string": "Yritä uudelleen",
                 "description": "Button label to refetch folder messages after 503"
             },
             "open_inbox": {
-                "string": "Open Inbox",
+                "string": "Avaa saapuneet",
                 "description": "Button label to navigate to INBOX after folder 404"
             },
             "generic": {
-                "string": "Unable to load messages. Please try again later.",
+                "string": "Viestejä ei voida ladata. Yritä myöhemmin uudelleen.",
                 "description": "Generic folder list load error (e.g. 500)"
             }
         },
         "filter": {
             "client_scope_notice": {
-                "string": "Filters apply only to messages loaded on this page.",
+                "string": "Suodattimet koskevat vain tällä sivulla ladattuja viestejä.",
                 "description": "Hint that URL filters are client-side on the current server page"
             },
             "all": {
                 "string": "Kaikki"
             },
             "unread": {
-                "string": "Unread"
+                "string": "Luisaamattomat"
             },
             "read": {
-                "string": "Read"
+                "string": "Luetut"
             },
             "starred": {
-                "string": "Starred"
+                "string": "Tähdätyt"
             },
             "attachments": {
-                "string": "Attachments"
+                "string": "Liitetiedostot"
             }
         },
         "layout": {
             "full": {
-                "string": "Full view"
+                "string": "Koko näkymä"
             },
             "split": {
-                "string": "Split view"
+                "string": "Jako-näkymä"
             }
         },
         "select_message": {
-            "string": "Select a message to read"
+            "string": "Valitse luettava viesti"
         },
         "no_items": {
-            "string": "No message found."
+            "string": "Ei viestejä."
         },
         "actions": {
             "mark_as_read": {
@@ -95,24 +97,24 @@
                 "string": "Merkitse lukemattomaksi"
             },
             "delete": {
-                "string": "Move to trash"
+                "string": "Siirrä roskakoriin"
             },
             "archive": {
                 "string": "Arkisto"
             },
             "select_mail": {
-                "string": "Select message"
+                "string": "Valitse viesti"
             },
             "deselect_mail": {
-                "string": "Deselect message"
+                "string": "Poista viestin valinta"
             }
         },
         "time": {
             "minutes_ago": {
-                "string": "{count}m ago"
+                "string": "{count} minuuttia sitten"
             }
         }
     },
-    "viewFlat": "Flat list",
-    "viewConversation": "Conversation view"
+    "viewFlat": "Litistynyt luettelo",
+    "viewConversation": "Keskustelunäkymä"
 }

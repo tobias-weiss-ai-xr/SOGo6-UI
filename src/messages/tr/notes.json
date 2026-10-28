@@ -1,0 +1,18 @@
+{
+  "NOTES": {
+    "title": "Notlar",
+    "new_note": "Yeni not",
+    "save": "Kaydet",
+    "cancel": "İptal",
+    "edit": "Düzenle",
+    "delete": "Sil",
+    "confirm_delete": "Notu sil",
+    "confirm_delete_message": "Bu notu silmek istediğinizden emin misiniz? Bu işlem geri alınamaz.",
+    "loading": "Yükleniyor...",
+    "error": "Notlar yüklenirken bir hata oluştu.",
+    "no_notes": "Not bulunamadı.",
+    "created_at": "Oluşturma: {date}",
+    "placeholder_title": "Not başlığını girin",
+    "placeholder_content": "Notunuzu burada yazmaya başlayın..."
+  }
+}

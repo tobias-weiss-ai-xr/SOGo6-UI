@@ -89,9 +89,7 @@ export default function ScheduleSendPicker({
       <DialogContent className="sm:max-w-[425px]">
         <DialogHeader>
           <DialogTitle>{t('scheduleSend.title')}</DialogTitle>
-          <DialogDescription>
-            {t('scheduleSend.description')}
-          </DialogDescription>
+          <DialogDescription>{t('scheduleSend.description')}</DialogDescription>
         </DialogHeader>
 
         <div className="flex flex-col gap-4 py-4">
@@ -107,7 +105,7 @@ export default function ScheduleSendPicker({
           />
 
           {/* Time picker */}
-          <div className="flex items-center gap-2">
+          <div className="flex items-center justify-between gap-4">
             <span className="text-sm font-medium">
               {t('scheduleSend.time')}:
             </span>
@@ -126,7 +124,7 @@ export default function ScheduleSendPicker({
           </div>
 
           {currentValue && (
-            <p className="text-xs text-muted-foreground">
+            <p className="text-muted-foreground text-xs">
               {t('scheduleSend.currentlyScheduled', {
                 time: new Date(currentValue).toLocaleString(),
               })}
@@ -134,18 +132,22 @@ export default function ScheduleSendPicker({
           )}
         </div>
 
-        <DialogFooter className="gap-2">
-          {currentValue && (
+        <DialogFooter className="gap-2 sm:justify-between">
+          {currentValue ? (
             <Button variant="outline" onClick={handleClear}>
               {t('scheduleSend.clear')}
             </Button>
+          ) : (
+            <span />
           )}
-          <Button variant="outline" onClick={() => onOpenChange(false)}>
-            {t('cancel.string')}
-          </Button>
-          <Button onClick={handleConfirm} disabled={!selectedDate}>
-            {t('scheduleSend.confirm')}
-          </Button>
+          <div className="flex gap-2">
+            <Button variant="outline" onClick={() => onOpenChange(false)}>
+              {t('cancel.string')}
+            </Button>
+            <Button onClick={handleConfirm} disabled={!selectedDate}>
+              {t('scheduleSend.confirm')}
+            </Button>
+          </div>
         </DialogFooter>
       </DialogContent>
     </Dialog>

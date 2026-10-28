@@ -1,0 +1,18 @@
+{
+  "NOTES": {
+    "title": "Notater",
+    "new_note": "Ny notat",
+    "save": "Lagre",
+    "cancel": "Avbryt",
+    "edit": "Rediger",
+    "delete": "Slett",
+    "confirm_delete": "Slett notat",
+    "confirm_delete_message": "Er du sikker på at du vil slette dette notatet? Denne handlingen kan ikke angres.",
+    "loading": "Laster...",
+    "error": "En feil oppstod under innlasting av notater.",
+    "no_notes": "Ingen notater funnet.",
+    "created_at": "Opprettet: {date}",
+    "placeholder_title": "Skriv inn notattittel",
+    "placeholder_content": "Begynn å skrive notatet ditt her..."
+  }
+}

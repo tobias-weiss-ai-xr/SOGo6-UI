@@ -845,6 +845,30 @@ const injectedEndpoints = apiSlice.injectEndpoints({
     }),
 
     /**
+     * Import an uploaded .ics payload into a calendar (job-based).
+     */
+    importCalendar: builder.mutation<
+      { job_id: string },
+      { key: string; file: File }
+    >({
+      query: ({ key, file }) => {
+        const formData = new FormData()
+        formData.append('file', file)
+        return {
+          url: `calendars/${encodeURIComponent(key)}/import`,
+          method: 'POST',
+          body: formData,
+        }
+      },
+      transformResponse: (response: { data?: { job_id: string } }) => {
+        if (!response.data) {
+          throw new Error('Import response missing job_id')
+        }
+        return response.data
+      },
+    }),
+
+    /**
      * Activate the public .ics subscription of a calendar.
      */
     enableSubscription: builder.mutation<
@@ -907,6 +931,7 @@ export const {
   useAddShareMutation,
   useRemoveShareMutation,
   useExportCalendarMutation,
+  useImportCalendarMutation,
   useEnableSubscriptionMutation,
   useDisableSubscriptionMutation,
 } = injectedEndpoints

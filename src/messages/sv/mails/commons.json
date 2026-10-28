@@ -3,15 +3,15 @@
         "mail_display": {
             "action-bar": {
                 "reply": {
-                    "string": "Reply",
+                    "string": "Svara",
                     "description": "Reply to the current message"
                 },
                 "reply_all": {
-                    "string": "Reply all",
+                    "string": "Svara alla",
                     "description": "Reply to all recipients of the current message"
                 },
                 "forward": {
-                    "string": "Forward",
+                    "string": "Vidarebefordra",
                     "description": "Forward the current message to another recipient"
                 },
                 "edit_draft": {
@@ -19,11 +19,11 @@
                     "description": "Open the draft in the composer"
                 },
                 "use_template": {
-                    "string": "Use template",
+                    "string": "Använd mall",
                     "description": "Create a new draft from this template without modifying it"
                 },
                 "return": {
-                    "string": "Return to search results",
+                    "string": "Tillbaka till sökresultaten",
                     "description": "Return to search results"
                 },
                 "delete": {
@@ -31,7 +31,7 @@
                     "description": "Delete the current message"
                 },
                 "report_spam": {
-                    "string": "Mark as spam",
+                    "string": "Markera som skräppost",
                     "description": "Mark as spam"
                 },
                 "mark_unread": {
@@ -39,15 +39,15 @@
                     "description": "Mark as unread"
                 },
                 "label": {
-                    "string": "Label",
+                    "string": "Etikett",
                     "description": "Label",
                     "coming_soon": {
-                        "string": "Labels coming soon",
+                        "string": "Etiketter kommer snart",
                         "description": "Tooltip when label picker is not yet available"
                     }
                 },
                 "move_to_inbox": {
-                    "string": "Move to Inbox",
+                    "string": "Flytta till inkorgen",
                     "description": "Move message from Junk back to the Inbox"
                 },
                 "archive": {
@@ -59,7 +59,7 @@
                     "description": "Download message as .eml file"
                 },
                 "move": {
-                    "string": "Move to folder",
+                    "string": "Flytta till mapp",
                     "description": "Move message to another folder"
                 },
                 "print": {
@@ -76,15 +76,15 @@
                         "description": "To label in print view"
                     },
                     "cc": {
-                        "string": "Cc",
+                        "string": "Kopia",
                         "description": "Cc label in print view"
                     },
                     "date": {
-                        "string": "Date",
+                        "string": "Datum",
                         "description": "Date label in print view"
                     },
                     "attachments": {
-                        "string": "Attachments",
+                        "string": "Bilagor",
                         "description": "Attachments label in print view"
                     }
                 },
@@ -94,10 +94,10 @@
                 },
                 "delete_confirm": {
                     "title": {
-                        "string": "Delete message"
+                        "string": "Radera meddelande"
                     },
                     "message": {
-                        "string": "This message will be moved to Trash."
+                        "string": "Detta meddelande kommer att flyttas till papperskorgen."
                     },
                     "confirm": {
                         "string": "Radera"
@@ -108,13 +108,13 @@
                 },
                 "spam_confirm": {
                     "title": {
-                        "string": "Mark as spam"
+                        "string": "Markera som skräppost"
                     },
                     "message": {
-                        "string": "This message will be moved to Junk."
+                        "string": "Detta meddelande kommer att flyttas till skräpmappen."
                     },
                     "confirm": {
-                        "string": "Move to Junk"
+                        "string": "Flytta till skräp"
                     },
                     "cancel": {
                         "string": "Avbryt"
@@ -122,13 +122,13 @@
                 },
                 "ham_confirm": {
                     "title": {
-                        "string": "Move to Inbox"
+                        "string": "Flytta till inkorgen"
                     },
                     "message": {
-                        "string": "This message will be moved to your Inbox."
+                        "string": "Detta meddelande kommer att flyttas till din inkorg."
                     },
                     "confirm": {
-                        "string": "Move to Inbox"
+                        "string": "Flytta till inkorgen"
                     },
                     "cancel": {
                         "string": "Avbryt"
@@ -147,30 +147,30 @@
                     "description": "Previous mail"
                 },
                 "snooze": {
-                    "string": "Snooze",
+                    "string": "Skjut upp",
                     "description": "Temporarily remove from inbox and return later"
                 }
             },
             "content": {
                 "external_images_warning": {
-                    "string": "This message contains external images.  Click to display them.",
+                    "string": "Detta meddelande innehåller externa bilder.  Klicka för att visa dem.",
                     "description": "Warning: This message contains external images"
                 },
                 "download_attachment": {
-                    "string": "Download attachment",
+                    "string": "Ladda ner bilaga",
                     "description": "ARIA label for the download attachment link"
                 },
                 "download_all_attachments": {
-                    "string": "Download all attachments",
+                    "string": "Ladda ner alla bilagor",
                     "description": "ARIA label for the download all attachments link"
                 },
                 "download_error": {
                     "title": {
-                        "string": "Download failed",
+                        "string": "Nedladdningen misslyckades",
                         "description": "Title of the error toast shown when an attachment fails to download"
                     },
                     "message": {
-                        "string": "The attachment could not be downloaded. Please try again.",
+                        "string": "Bilagan kunde inte laddas ner. Försök igen.",
                         "description": "Message of the error toast shown when an attachment fails to download"
                     }
                 },
@@ -189,20 +189,20 @@
                     "description": "To"
                 },
                 "cc": {
-                    "string": "Cc",
+                    "string": "Kopia",
                     "description": "Cc"
                 },
                 "unsubscribe": {
-                    "string": "Unsubscribe",
+                    "string": "Avsluta prenumeration",
                     "description": "Unsubscribe from the mailing list"
                 },
                 "unsubscribe-dialog": {
                     "message": {
-                        "string": "Do you want to unsubscribe from this mailing list?",
+                        "string": "Vill du avsluta prenumerationen på denna mailista?",
                         "description": "Message in the unsubscribe dialog"
                     },
                     "confirm": {
-                        "string": "Unsubscribe",
+                        "string": "Avsluta prenumeration",
                         "description": "Confirm the unsubscription"
                     },
                     "cancel": {
@@ -212,15 +212,15 @@
                 },
                 "contacts-badge": {
                     "popover-view-contact": {
-                        "string": "View contact",
+                        "string": "Visa kontakt",
                         "description": "Open the matching contact in the address book"
                     },
                     "popover-add-to-addressbook": {
-                        "string": "Add to address book",
+                        "string": "Lägg till i adressboken",
                         "description": "Add the contact to the address book"
                     },
                     "popover-write-new-message": {
-                        "string": "Write new message",
+                        "string": "Skriv nytt meddelande",
                         "description": "Write a new message to the contact"
                     }
                 }
@@ -286,7 +286,7 @@
         },
         "account_switcher": {
             "add_account": {
-                "string": "Add account",
+                "string": "Lägg till konto",
                 "description": "Button to add an external mail account in the sidebar account switcher"
             },
             "new_folder": {
@@ -294,7 +294,7 @@
                 "description": "Label for the new folder action in the account switcher menu"
             },
             "delegate": {
-                "string": "Delegate",
+                "string": "Delegat",
                 "description": "Label for the delegate action in the account switcher menu (not yet implemented)"
             }
         },
@@ -303,7 +303,7 @@
             "description": "Label for the 'To' field in email search options"
         },
         "bcc": {
-            "string": "Bcc",
+            "string": "Hemlig kopia",
             "description": "Label for the 'Bcc' field in email search options"
         },
         "subject": {
@@ -313,7 +313,7 @@
         "folders": {
             "actions": {
                 "new_subfolder": {
-                    "string": "New Subfolder",
+                    "string": "Ny undermapp",
                     "description": "Button to create a new subfolder in the current folder"
                 },
                 "rename": {
@@ -322,15 +322,15 @@
                 },
                 "rename_dialog": {
                     "title": {
-                        "string": "Rename folder",
+                        "string": "Byt namn på mapp",
                         "description": "Title of the rename folder dialog"
                     },
                     "label": {
-                        "string": "Folder name",
+                        "string": "Mappnamn",
                         "description": "Label for the folder name input"
                     },
                     "placeholder": {
-                        "string": "e.g. Work, Archives…",
+                        "string": "t.ex. Arbete, Arkiv…",
                         "description": "Placeholder for the folder name input"
                     },
                     "submit": {
@@ -342,24 +342,24 @@
                         "description": "Cancel button label in the rename folder dialog"
                     },
                     "error_required": {
-                        "string": "Folder name is required",
+                        "string": "Mappnamn krävs",
                         "description": "Validation error when folder name is empty"
                     },
                     "error_dot": {
-                        "string": "Folder name cannot contain a dot",
+                        "string": "Mappnamnet får inte innehålla en punkt",
                         "description": "Validation error when folder name contains a dot character"
                     },
                     "error_max": {
-                        "string": "Folder name must be at most 100 characters",
+                        "string": "Mappnamnet får vara högst 100 tecken",
                         "description": "Validation error when folder name exceeds max length"
                     }
                 },
                 "mark_as_read": {
-                    "string": "Mark as Read",
+                    "string": "Markera som läst",
                     "description": "Button to mark the current folder as read"
                 },
                 "export": {
-                    "string": "Export",
+                    "string": "Exportera",
                     "description": "Button to export all messages in the current folder"
                 },
                 "move_to": {
@@ -367,26 +367,26 @@
                     "description": "Button to move the current folder under another parent"
                 },
                 "set_as": {
-                    "string": "Set as",
+                    "string": "Ställ in som",
                     "description": "Button to assign a semantic folder type to a normal folder"
                 },
                 "empty_folder": {
-                    "string": "Empty folder",
+                    "string": "Töm mapp",
                     "description": "Button to permanently empty trash or junk folder"
                 },
                 "action_unavailable": {
-                    "string": "This action is not available yet",
+                    "string": "Denna åtgärd är inte tillgänglig ännu",
                     "description": "Tooltip shown when a folder action is disabled because the backend is not ready"
                 },
                 "empty_folder_dialog": {
                     "title": {
-                        "string": "Empty folder"
+                        "string": "Töm mapp"
                     },
                     "description": {
-                        "string": "Permanently delete all messages in \"{folder}\"? This action cannot be undone."
+                        "string": "Radera alla meddelanden i \"{folder}\" permanent? Denna åtgärd kan inte ångras."
                     },
                     "confirm": {
-                        "string": "Empty folder"
+                        "string": "Töm mapp"
                     },
                     "cancel": {
                         "string": "Avbryt"
@@ -394,10 +394,10 @@
                 },
                 "set_as_dialog": {
                     "title": {
-                        "string": "Set folder type"
+                        "string": "Ställ in mapptyp"
                     },
                     "description": {
-                        "string": "Choose the semantic type for \"{folder}\"."
+                        "string": "Välj den semantiska typen för \"{folder}\"."
                     },
                     "cancel": {
                         "string": "Avbryt"
@@ -416,22 +416,22 @@
                             "string": "Skräp"
                         },
                         "TEMPLATE": {
-                            "string": "Templates"
+                            "string": "Mallar"
                         }
                     }
                 },
                 "move_to_dialog": {
                     "title": {
-                        "string": "Move folder"
+                        "string": "Flytta mapp"
                     },
                     "description": {
-                        "string": "Choose a new parent for \"{folder}\"."
+                        "string": "Välj en ny överordnad mapp för \"{folder}\"."
                     },
                     "placeholder": {
-                        "string": "Select destination"
+                        "string": "Välj mål"
                     },
                     "root": {
-                        "string": "Root level"
+                        "string": "Rotnivå"
                     },
                     "confirm": {
                         "string": "Flytta"
@@ -441,19 +441,19 @@
                     }
                 },
                 "sharing": {
-                    "string": "Sharing",
+                    "string": "Delning",
                     "title": {
-                        "string": "Share folder"
+                        "string": "Dela mapp"
                     },
                     "description": {
-                        "string": "Manage who has access to \"{folder}\" and their permissions."
+                        "string": "Hantera vem som har åtkomst till \"{folder}\" och deras behörigheter."
                     },
                     "noUsers": {
-                        "string": "No users have access yet."
+                        "string": "Inga användare har åtkomst ännu."
                     },
                     "addUser": {
                         "label": {
-                            "string": "Add a user"
+                            "string": "Lägg till en användare"
                         },
                         "placeholder": {
                             "string": "email@domain.com"
@@ -463,19 +463,19 @@
                         },
                         "error": {
                             "invalid": {
-                                "string": "Please enter a valid email address."
+                                "string": "Ange en giltig e-postadress."
                             },
                             "duplicate": {
-                                "string": "This user already has access."
+                                "string": "Denna användare har redan åtkomst."
                             }
                         }
                     },
                     "presets": {
                         "read": {
-                            "string": "Read"
+                            "string": "Läsa"
                         },
                         "write": {
-                            "string": "Write"
+                            "string": "Skriva"
                         },
                         "admin": {
                             "string": "Admin"
@@ -489,105 +489,105 @@
                     },
                     "badge": {
                         "you": {
-                            "string": "You"
+                            "string": "Du"
                         },
                         "public": {
-                            "string": "Public"
+                            "string": "Publik"
                         }
                     },
                     "removeUser": {
                         "tooltip": {
-                            "string": "Cannot remove yourself"
+                            "string": "Du kan inte ta bort dig själv"
                         }
                     }
                 },
                 "purge": {
-                    "string": "Purge",
+                    "string": "Rensa",
                     "description": "Button to permanently delete all messages in the current folder",
                     "confirmTitle": {
-                        "string": "Purge folder"
+                        "string": "Rensa mapp"
                     },
                     "confirmDesc": {
-                        "string": "Are you sure you want to purge \"{folder}\"? All deleted messages will be permanently removed. This action cannot be undone."
+                        "string": "Är du säker på att du vill rensa \"{folder}\"? Alla raderade meddelanden kommer att tas bort permanent. Denna åtgärd kan inte ångras."
                     },
                     "confirm": {
-                        "string": "Purge"
+                        "string": "Rensa"
                     },
                     "cancel": {
                         "string": "Avbryt"
                     },
                     "olderThan": {
-                        "string": "Delete mails older than"
+                        "string": "Radera meddelanden äldre än"
                     },
                     "customDate": {
-                        "string": "Custom date"
+                        "string": "Eget datum"
                     },
                     "pickDate": {
-                        "string": "Pick a date"
+                        "string": "Välj ett datum"
                     },
                     "applyToSubfolders": {
-                        "string": "Apply to subfolders"
+                        "string": "Tillämpa på undermappar"
                     },
                     "permanentlyDelete": {
-                        "string": "Permanently delete (cannot be undone)"
+                        "string": "Radera permanent (kan inte ångras)"
                     },
                     "confirmPermanent": {
-                        "string": "I understand this will permanently delete the selected mails and they cannot be recovered"
+                        "string": "Jag förstår att detta raderar de markerade meddelandena permanent och att de inte kan återställas"
                     },
                     "datePresets": {
                         "3months": {
-                            "string": "3 months"
+                            "string": "3 månader"
                         },
                         "6months": {
-                            "string": "6 months"
+                            "string": "6 månader"
                         },
                         "1year": {
-                            "string": "1 year"
+                            "string": "1 år"
                         },
                         "custom": {
-                            "string": "Custom date"
+                            "string": "Eget datum"
                         },
                         "all": {
-                            "string": "All mails"
+                            "string": "Alla meddelanden"
                         }
                     },
                     "successTitle": {
-                        "string": "Folder purged"
+                        "string": "Mappen rensades"
                     },
                     "successMessage": {
-                        "string": "All deleted messages have been permanently removed."
+                        "string": "Alla raderade meddelanden har tagits bort permanent."
                     },
                     "errorTitle": {
-                        "string": "Purge failed"
+                        "string": "Rensningen misslyckades"
                     },
                     "errorMessage": {
-                        "string": "An error occurred while purging the folder. Please try again."
+                        "string": "Ett fel uppstod när mappen rensades. Försök igen."
                     }
                 },
                 "expunge": {
-                    "string": "Expunge",
+                    "string": "Komprimera",
                     "confirmTitle": {
-                        "string": "Expunge folder"
+                        "string": "Komprimera mapp"
                     },
                     "confirmDesc": {
-                        "string": "Are you sure you want to expunge \"{folder}\"? All messages marked as deleted will be permanently removed. This action cannot be undone."
+                        "string": "Är du säker på att du vill komprimera \"{folder}\"? Alla meddelanden som markerats för radering kommer att tas bort permanent. Denna åtgärd kan inte ångras."
                     },
                     "confirm": {
-                        "string": "Expunge"
+                        "string": "Komprimera"
                     },
                     "cancel": {
                         "string": "Avbryt"
                     }
                 },
                 "delete": {
-                    "string": "Delete folder",
+                    "string": "Radera mapp",
                     "description": "Label for the delete folder action in the folder context menu",
                     "confirmTitle": {
-                        "string": "Delete folder",
+                        "string": "Radera mapp",
                         "description": "Title of the delete folder confirmation dialog"
                     },
                     "confirmDesc": {
-                        "string": "Are you sure you want to delete \"{folder}\"? It will be moved to Trash. If it is already in Trash, it will be permanently deleted.",
+                        "string": "Är du säker på att du vill radera \"{folder}\"? Den kommer att flyttas till papperskorgen. Om den redan ligger i papperskorgen raderas den permanent.",
                         "description": "Description of the delete folder confirmation dialog"
                     },
                     "confirm": {
@@ -601,15 +601,15 @@
                 },
                 "new_subfolder_dialog": {
                     "title": {
-                        "string": "New subfolder",
+                        "string": "Ny undermapp",
                         "description": "Title of the create subfolder dialog"
                     },
                     "label": {
-                        "string": "Folder name",
+                        "string": "Mappnamn",
                         "description": "Label for the folder name input"
                     },
                     "placeholder": {
-                        "string": "e.g. Work, Archives…",
+                        "string": "t.ex. Arbete, Arkiv…",
                         "description": "Placeholder for the folder name input"
                     },
                     "submit": {
@@ -621,21 +621,21 @@
                         "description": "Cancel button label in the create subfolder dialog"
                     },
                     "error_required": {
-                        "string": "Folder name is required",
+                        "string": "Mappnamn krävs",
                         "description": "Validation error when folder name is empty"
                     },
                     "error_dot": {
-                        "string": "Folder name cannot contain a dot",
+                        "string": "Mappnamnet får inte innehålla en punkt",
                         "description": "Validation error when folder name contains a dot character"
                     },
                     "error_max": {
-                        "string": "Folder name must be at most 100 characters",
+                        "string": "Mappnamnet får vara högst 100 tecken",
                         "description": "Validation error when folder name exceeds max length"
                     }
                 }
             },
             "inbox": {
-                "string": "Inbox",
+                "string": "Inkorg",
                 "description": "Your inbox where you receive new messages"
             },
             "sent": {
@@ -655,19 +655,19 @@
                 "description": "Messages identified as spam"
             },
             "template": {
-                "string": "Templates",
+                "string": "Mallar",
                 "description": "Message templates"
             },
             "virtual_folder": {
-                "string": "Virtual folder — expand to browse subfolders",
+                "string": "Virtuell mapp — expandera för att bläddra bland undermappar",
                 "description": "Tooltip for non-selectable IMAP folders"
             },
             "virtual_empty": {
                 "title": {
-                    "string": "Virtual folder"
+                    "string": "Virtuell mapp"
                 },
                 "description": {
-                    "string": "This folder cannot contain messages. Expand it in the sidebar to browse subfolders."
+                    "string": "Denna mapp kan inte innehålla meddelanden. Expandera den i sidopanelen för att bläddra bland undermappar."
                 }
             }
         },
@@ -676,40 +676,40 @@
                 "string": "Nytt meddelande"
             },
             "defaultSender": {
-                "string": "Unknown sender"
+                "string": "Okänd avsändare"
             }
         },
         "invitation": {
             "label": {
-                "string": "Calendar invitation",
+                "string": "Kalenderinbjudan",
                 "description": "Heading for an iMIP calendar invitation in mail view"
             },
             "synced_to_calendar": {
-                "string": "This event has been added to your calendar.",
+                "string": "Detta evenemang har lagts till i din kalender.",
                 "description": "Info banner after inbound iMIP sync"
             },
             "event_cancelled": {
-                "string": "This event has been cancelled.",
+                "string": "Detta evenemang har ställts in.",
                 "description": "Message for iMIP CANCEL mails"
             },
             "reply_from_attendee": {
-                "string": "{name} responded: {status}",
+                "string": "{name} svarade: {status}",
                 "description": "Message when an attendee sends an iMIP REPLY"
             },
             "sync_pending": {
-                "string": "Syncing with your calendar…",
+                "string": "Synkroniserar med din kalender…",
                 "description": "Event not found yet after opening invitation mail"
             },
             "retry": {
-                "string": "Retry",
+                "string": "Försök igen",
                 "description": "Retry loading calendar event for invitation"
             },
             "view_in_calendar": {
-                "string": "View in calendar",
+                "string": "Visa i kalendern",
                 "description": "Link to open the event in the calendar module"
             },
             "recurring_badge": {
-                "string": "Recurring event",
+                "string": "Återkommande evenemang",
                 "description": "Badge for recurring invitations"
             }
         }

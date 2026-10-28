@@ -17,21 +17,21 @@
       }
     },
     "notification": {
-      "title": "Notifications",
+      "title": "Aviseringar",
       "string": "Skicka e-postavisering när en adressbok skapas",
       "context": "Label for the notification setting"
     },
     "categories": {
-      "title": "Categories",
-      "Work": "Work",
-      "Family": "Family",
-      "Friends": "Friends"
+      "title": "Kategorier",
+      "Work": "Arbete",
+      "Family": "Familj",
+      "Friends": "Vänner"
     },
     "color": {
-      "title": "Couleur"
+      "title": "Färg"
     },
     "validation": {
-      "category-name-required": "Category name is required"
+      "category-name-required": "Kategorinamn krävs"
     }
   }
 }

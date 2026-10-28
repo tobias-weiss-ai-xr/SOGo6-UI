@@ -42,7 +42,7 @@ export function ComposeSendAlerts({
         open={showNoRecipientAlert}
         onOpenChange={onNoRecipientAlertOpenChange}
       >
-        <AlertDialogContent className="z-9999">
+        <AlertDialogContent>
           <AlertDialogHeader>
             <AlertDialogTitle>
               {t('no_recipient_alert.title.string')}
@@ -52,7 +52,9 @@ export function ComposeSendAlerts({
             </AlertDialogDescription>
           </AlertDialogHeader>
           <AlertDialogFooter>
-            <AlertDialogAction onClick={() => onNoRecipientAlertOpenChange(false)}>
+            <AlertDialogAction
+              onClick={() => onNoRecipientAlertOpenChange(false)}
+            >
               {t('no_recipient_alert.ok.string')}
             </AlertDialogAction>
           </AlertDialogFooter>
@@ -63,7 +65,7 @@ export function ComposeSendAlerts({
         open={emptyContentAlert !== null}
         onOpenChange={onEmptyContentAlertOpenChange}
       >
-        <AlertDialogContent className="z-9999">
+        <AlertDialogContent>
           <AlertDialogHeader>
             <AlertDialogTitle>
               {emptyContentAlert &&

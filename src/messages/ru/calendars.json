@@ -18,39 +18,39 @@
             },
             "success": {
                 "accepted": {
-                    "string": "You accepted this event"
+                    "string": "Вы приняли это событие"
                 },
                 "declined": {
-                    "string": "You declined this event"
+                    "string": "Вы отклонили это событие"
                 },
                 "tentative": {
-                    "string": "Marked as maybe"
+                    "string": "Отмечено как «возможно»"
                 }
             },
             "error": {
                 "string": {
-                    "string": "Failed to update your attendance"
+                    "string": "Не удалось обновить статус участия"
                 }
             }
         },
         "recurrenceScope": {
             "editTitle": {
-                "string": "Edit recurring event"
+                "string": "Изменить повторяющееся событие"
             },
             "deleteTitle": {
-                "string": "Delete recurring event"
+                "string": "Удалить повторяющееся событие"
             },
             "description": {
-                "string": "Which events do you want to modify?"
+                "string": "Какие события вы хотите изменить?"
             },
             "ONE": {
-                "string": "This event only"
+                "string": "Только это событие"
             },
             "THISANDFUTURE": {
-                "string": "This and following events"
+                "string": "Это и последующие события"
             },
             "ALL": {
-                "string": "All events"
+                "string": "Все события"
             },
             "cancel": {
                 "string": "Отмена"
@@ -101,52 +101,52 @@
         },
         "events": {
             "create": {
-                "string": "Create Event"
+                "string": "Создать событие"
             }
         },
         "schedule": {
             "noEvents": {
-                "string": "No events"
+                "string": "Нет событий"
             },
             "noUpcomingEvents": {
-                "string": "No upcoming events for this period"
+                "string": "На этот период событий нет"
             }
         },
         "views": {
             "month": {
-                "string": "Month"
+                "string": "Месяц"
             },
             "week": {
-                "string": "Week"
+                "string": "Неделя"
             },
             "day": {
-                "string": "Day"
+                "string": "День"
             },
             "agenda": {
-                "string": "Agenda"
+                "string": "Повестка дня"
             }
         },
         "mobile": {
             "event": {
-                "string": "event",
-                "plural": "events"
+                "string": "событие",
+                "plural": "события"
             },
             "weekView": {
                 "eventsCount": {
-                    "string": "{count, plural, one {# event} other {# events}}"
+                    "string": "{count, plural, one {# событие} few {# события} many {# событий} other {# события}}"
                 }
             },
             "noEvents": {
-                "string": "No events"
+                "string": "Нет событий"
             },
             "swipeHint": {
-                "string": "← Swipe to see all days →"
+                "string": "← Проведите пальцем, чтобы увидеть все дни →"
             },
             "swipeToChangeDay": {
-                "string": "Swipe to change day"
+                "string": "Проведите пальцем, чтобы сменить день"
             },
             "swipeToNavigate": {
-                "string": "← Swipe to navigate →"
+                "string": "← Проведите пальцем для навигации →"
             },
             "timeSeparator": {
                 "string": "-"
@@ -156,217 +156,217 @@
                     "string": "Сегодня"
                 },
                 "hasEvents": {
-                    "string": "Has events"
+                    "string": "Есть события"
                 }
             }
         },
         "external": {
             "add_title": {
-                "string": "Subscribe to calendar"
+                "string": "Подписаться на календарь"
             },
             "name_label": {
                 "string": "Имя"
             },
             "url_label": {
-                "string": "Calendar URL (.ics)"
+                "string": "URL календаря (.ics)"
             },
             "url_error": {
-                "string": "Please enter a valid URL"
+                "string": "Введите корректный URL"
             },
             "color_label": {
-                "string": "Color"
+                "string": "Цвет"
             },
             "sync_interval_label": {
-                "string": "Sync every"
+                "string": "Синхронизировать каждые"
             },
             "sync_now": {
-                "string": "Sync now"
+                "string": "Синхронизировать сейчас"
             },
             "submit": {
-                "string": "Subscribe"
+                "string": "Подписаться"
             },
             "sync_interval_options": {
                 "5": {
-                    "string": "5 min"
+                    "string": "5 мин"
                 },
                 "15": {
-                    "string": "15 min"
+                    "string": "15 мин"
                 },
                 "30": {
-                    "string": "30 min"
+                    "string": "30 мин"
                 },
                 "60": {
-                    "string": "1 hour"
+                    "string": "1 час"
                 },
                 "360": {
-                    "string": "6 hours"
+                    "string": "6 часов"
                 },
                 "1440": {
-                    "string": "24 hours"
+                    "string": "24 часа"
                 }
             }
         },
         "sidebar": {
             "personals": {
-                "string": "Personal Calendars"
+                "string": "Личные календари"
             },
             "shared": {
-                "string": "Shared Calendars"
+                "string": "Общие календари"
             },
             "subscriptions": {
-                "string": "Subscriptions"
+                "string": "Подписки"
             },
             "add": {
-                "string": "Add Calendar"
+                "string": "Добавить календарь"
             },
             "edit": {
-                "string": "Edit Calendar"
+                "string": "Изменить календарь"
             },
             "delete": {
-                "string": "Delete Calendar"
+                "string": "Удалить календарь"
             },
             "sharing": {
-                "string": "Sharing Settings"
+                "string": "Настройки общего доступа"
             },
             "link": {
-                "string": "Get Calendar Link",
+                "string": "Получить ссылку на календарь",
                 "description": {
                     "string": "Copy this link to subscribe to this calendar in other calendar applications."
                 }
             },
             "export": {
-                "string": "Export Calendar"
+                "string": "Экспортировать календарь"
             },
             "color": {
-                "string": "Calendar Color"
+                "string": "Цвет календаря"
             },
             "readOnlyCalendar": {
-                "string": "Read-only calendar",
+                "string": "Календарь только для чтения",
                 "context": "Label for ICS/subscription calendars that cannot be edited"
             }
         },
         "actions": {
             "newEvent": {
-                "string": "New Event"
+                "string": "Новое событие"
             },
             "today": {
                 "string": "Сегодня"
             },
             "month": {
-                "string": "Month"
+                "string": "Месяц"
             },
             "week": {
-                "string": "Week"
+                "string": "Неделя"
             },
             "day": {
-                "string": "Day"
+                "string": "День"
             },
             "agenda": {
-                "string": "Agenda"
+                "string": "Повестка дня"
             }
         },
         "visualization": {
             "location": {
-                "string": "Location"
+                "string": "Место"
             },
             "description": {
                 "string": "Описание"
             },
             "attendees": {
-                "string": "Attendees"
+                "string": "Участники"
             },
             "conference": {
-                "string": "Video Conference"
+                "string": "Видеоконференция"
             },
             "joinMeeting": {
-                "string": "Join Meeting"
+                "string": "Присоединиться к конференции"
             },
             "reminders": {
-                "string": "Reminders"
+                "string": "Напоминания"
             },
             "recurrence": {
-                "string": "Repeats"
+                "string": "Повторяется"
             },
             "frequency": {
                 "daily": {
-                    "string": "Daily"
+                    "string": "Ежедневно"
                 },
                 "weekly": {
-                    "string": "Weekly"
+                    "string": "Еженедельно"
                 },
                 "monthly": {
-                    "string": "Monthly"
+                    "string": "Ежемесячно"
                 },
                 "yearly": {
-                    "string": "Yearly"
+                    "string": "Ежегодно"
                 }
             },
             "every": {
-                "string": "Every {count}"
+                "string": "Каждые {count}"
             },
             "daysBefore": {
-                "string": "{count} days before"
+                "string": "за {count} дн. до"
             },
             "hoursBefore": {
-                "string": "{count} hours before"
+                "string": "за {count} ч до"
             },
             "minutesBefore": {
-                "string": "{count} minutes before"
+                "string": "за {count} мин до"
             },
             "organizer": {
-                "string": "Organizer"
+                "string": "Организатор"
             },
             "organizerRole": {
-                "string": "(organizer)"
+                "string": "(организатор)"
             },
             "attendeeStatus": {
                 "accepted": {
-                    "string": "Accepted"
+                    "string": "Принято"
                 },
                 "pending": {
-                    "string": "Pending"
+                    "string": "Ожидает ответа"
                 },
                 "declined": {
-                    "string": "Declined"
+                    "string": "Отклонено"
                 },
                 "tentative": {
-                    "string": "Tentative"
+                    "string": "Под вопросом"
                 }
             },
             "categories": {
-                "string": "Categories"
+                "string": "Категории"
             },
             "url": {
                 "string": "URL"
             },
             "visibility": {
-                "string": "Visibility",
+                "string": "Видимость",
                 "values": {
                     "public": {
-                        "string": "Public"
+                        "string": "Публичное"
                     },
                     "private": {
-                        "string": "Private"
+                        "string": "Личное"
                     },
                     "confidential": {
-                        "string": "Confidential"
+                        "string": "Конфиденциальное"
                     }
                 }
             },
             "showAs": {
-                "string": "Show as",
+                "string": "Показать как",
                 "values": {
                     "busy": {
-                        "string": "Busy"
+                        "string": "Занят"
                     },
                     "free": {
-                        "string": "Free"
+                        "string": "Свободен"
                     },
                     "tentative": {
-                        "string": "Tentative"
+                        "string": "Под вопросом"
                     },
                     "outOfOffice": {
-                        "string": "Out of office"
+                        "string": "Вне офиса"
                     }
                 }
             },
@@ -374,13 +374,13 @@
                 "string": "Статус",
                 "values": {
                     "confirmed": {
-                        "string": "Confirmed"
+                        "string": "Подтверждено"
                     },
                     "tentative": {
-                        "string": "Tentative"
+                        "string": "Под вопросом"
                     },
                     "cancelled": {
-                        "string": "Cancelled"
+                        "string": "Отменено"
                     }
                 }
             }
@@ -391,53 +391,53 @@
                     "string": "Календарь"
                 },
                 "placeholder": {
-                    "string": "Select calendar"
+                    "string": "Выберите календарь"
                 }
             },
             "title": {
                 "label": {
-                    "string": "Event title"
+                    "string": "Название события"
                 },
                 "placeholder": {
-                    "string": "Enter event title"
+                    "string": "Введите название события"
                 }
             },
             "allDay": {
                 "label": {
-                    "string": "All day"
+                    "string": "Весь день"
                 }
             },
             "startDate": {
                 "label": {
-                    "string": "Start date"
+                    "string": "Дата начала"
                 }
             },
             "startTime": {
                 "label": {
-                    "string": "Start time"
+                    "string": "Время начала"
                 }
             },
             "endDate": {
                 "label": {
-                    "string": "End date"
+                    "string": "Дата окончания"
                 }
             },
             "endTime": {
                 "label": {
-                    "string": "End time"
+                    "string": "Время окончания"
                 }
             },
             "errors": {
                 "date_order": {
-                    "string": "End date must be on or after the start date."
+                    "string": "Дата окончания должна быть не раньше даты начала."
                 }
             },
             "timezone": {
                 "label": {
-                    "string": "Timezone (event)"
+                    "string": "Часовой пояс (событие)"
                 },
                 "description": {
-                    "string": "Timezone in which this event's dates are interpreted"
+                    "string": "Часовой пояс, в котором интерпретируются даты этого события"
                 }
             },
             "description": {
@@ -445,55 +445,55 @@
                     "string": "Описание"
                 },
                 "placeholder": {
-                    "string": "Add event details"
+                    "string": "Добавьте описание события"
                 }
             },
             "location": {
                 "label": {
-                    "string": "Location"
+                    "string": "Место"
                 },
                 "placeholder": {
-                    "string": "Add location"
+                    "string": "Добавьте место"
                 }
             },
             "visibility": {
                 "label": {
-                    "string": "Visibility"
+                    "string": "Видимость"
                 },
                 "placeholder": {
-                    "string": "Select visibility"
+                    "string": "Выберите видимость"
                 },
                 "options": {
                     "public": {
-                        "string": "Public"
+                        "string": "Публичное"
                     },
                     "private": {
-                        "string": "Private"
+                        "string": "Личное"
                     },
                     "confidential": {
-                        "string": "Confidential"
+                        "string": "Конфиденциальное"
                     }
                 }
             },
             "showAs": {
                 "label": {
-                    "string": "Show as"
+                    "string": "Показать как"
                 },
                 "placeholder": {
-                    "string": "Select availability"
+                    "string": "Выберите статус занятости"
                 },
                 "options": {
                     "busy": {
-                        "string": "Busy"
+                        "string": "Занят"
                     },
                     "free": {
-                        "string": "Free"
+                        "string": "Свободен"
                     },
                     "outOfOffice": {
-                        "string": "Out of office"
+                        "string": "Вне офиса"
                     },
                     "tentative": {
-                        "string": "Tentative"
+                        "string": "Под вопросом"
                     }
                 }
             },
@@ -502,197 +502,197 @@
                     "string": "Статус"
                 },
                 "placeholder": {
-                    "string": "Select status"
+                    "string": "Выберите статус"
                 },
                 "options": {
                     "confirmed": {
-                        "string": "Confirmed"
+                        "string": "Подтверждено"
                     },
                     "tentative": {
-                        "string": "Tentative"
+                        "string": "Под вопросом"
                     },
                     "cancelled": {
-                        "string": "Cancelled"
+                        "string": "Отменено"
                     }
                 }
             },
             "color": {
                 "label": {
-                    "string": "Color"
+                    "string": "Цвет"
                 },
                 "reset": {
-                    "string": "Reset"
+                    "string": "Сбросить"
                 }
             },
             "categories": {
                 "label": {
-                    "string": "Categories"
+                    "string": "Категории"
                 },
                 "placeholder": {
-                    "string": "Add a category and press Enter"
+                    "string": "Введите категорию и нажмите Enter"
                 },
                 "remove": {
-                    "string": "Remove {category}"
+                    "string": "Убрать {category}"
                 }
             },
             "attendees": {
                 "label": {
-                    "string": "Attendees"
+                    "string": "Участники"
                 },
                 "title": {
-                    "string": "Participants"
+                    "string": "Участники"
                 },
                 "add": {
-                    "string": "Add participant"
+                    "string": "Добавить участника"
                 },
                 "emailPlaceholder": {
                     "string": "email@example.com"
                 },
                 "namePlaceholder": {
-                    "string": "Name (optional)"
+                    "string": "Имя (необязательно)"
                 },
                 "remove": {
-                    "string": "Remove {email}"
+                    "string": "Убрать {email}"
                 },
                 "search_placeholder": {
-                    "string": "Search by name or email..."
+                    "string": "Поиск по имени или эл. почте..."
                 },
                 "invalid_email": {
-                    "string": "Please enter a valid email address"
+                    "string": "Введите корректный адрес электронной почты"
                 },
                 "already_added": {
-                    "string": "This participant has already been added"
+                    "string": "Этот участник уже добавлен"
                 },
                 "max_reached": {
-                    "string": "Maximum {max} participants reached"
+                    "string": "Достигнут максимум участников: {max}"
                 },
                 "add_email_direct": {
-                    "string": "Add \"{email}\" directly"
+                    "string": "Добавить «{email}» напрямую"
                 },
                 "no_data": {
-                    "string": "No availability data"
+                    "string": "Нет данных о доступности"
                 },
                 "legend_free": {
-                    "string": "Available"
+                    "string": "Свободен"
                 },
                 "legend_busy": {
-                    "string": "Busy"
+                    "string": "Занят"
                 },
                 "legend_tentative": {
-                    "string": "Tentative"
+                    "string": "Под вопросом"
                 },
                 "legend_non_working": {
-                    "string": "Non-working hours"
+                    "string": "Нерабочее время"
                 },
                 "optimal_slot": {
-                    "string": "Suggested window"
+                    "string": "Рекомендуемое окно"
                 },
                 "timeline_hour": {
-                    "string": "{hour}h"
+                    "string": "{hour} ч"
                 },
                 "scroll_horizontal_hint": {
-                    "string": "Scroll horizontally"
+                    "string": "Прокрутите по горизонтали"
                 },
                 "tooltip_slot_busy": {
-                    "string": "Busy"
+                    "string": "Занят"
                 },
                 "tooltip_slot_free": {
-                    "string": "{name} · free · {time}"
+                    "string": "{name} · свободен · {time}"
                 },
                 "tooltip_slot_optimal": {
-                    "string": "Part of the suggested {duration}-min window · {time}"
+                    "string": "Часть рекомендуемого окна ({duration} мин) · {time}"
                 }
             },
             "reminders": {
                 "label": {
-                    "string": "Reminders"
+                    "string": "Напоминания"
                 },
                 "add": {
-                    "string": "Add reminder"
+                    "string": "Добавить напоминание"
                 },
                 "minutesBefore": {
-                    "string": "min before"
+                    "string": "мин до"
                 },
                 "remove": {
-                    "string": "Remove reminder"
+                    "string": "Удалить напоминание"
                 },
                 "methods": {
                     "popup": {
-                        "string": "Popup"
+                        "string": "Всплывающее окно"
                     },
                     "email": {
-                        "string": "Email"
+                        "string": "Эл. почта"
                     }
                 }
             },
             "recurrence": {
                 "repeat": {
-                    "string": "Repeat"
+                    "string": "Повторение"
                 },
                 "every": {
-                    "string": "Every"
+                    "string": "Каждые"
                 },
                 "on": {
-                    "string": "On"
+                    "string": "По"
                 },
                 "onDay": {
-                    "string": "On day"
+                    "string": "В день"
                 },
                 "ofTheMonth": {
-                    "string": "of the month"
+                    "string": "месяца"
                 },
                 "ends": {
-                    "string": "Ends"
+                    "string": "Заканчивается"
                 },
                 "occurrences": {
-                    "string": "occurrences"
+                    "string": "повторов"
                 },
                 "days": {
                     "mo": {
-                        "string": "Mon"
+                        "string": "Пн"
                     },
                     "tu": {
-                        "string": "Tue"
+                        "string": "Вт"
                     },
                     "we": {
-                        "string": "Wed"
+                        "string": "Ср"
                     },
                     "th": {
-                        "string": "Thu"
+                        "string": "Чт"
                     },
                     "fr": {
-                        "string": "Fri"
+                        "string": "Пт"
                     },
                     "sa": {
-                        "string": "Sat"
+                        "string": "Сб"
                     },
                     "su": {
-                        "string": "Sun"
+                        "string": "Вс"
                     }
                 },
                 "frequencies": {
                     "daily": {
-                        "string": "Day(s)"
+                        "string": "дн."
                     },
                     "weekly": {
-                        "string": "Week(s)"
+                        "string": "нед."
                     },
                     "monthly": {
-                        "string": "Month(s)"
+                        "string": "мес."
                     },
                     "yearly": {
-                        "string": "Year(s)"
+                        "string": "год"
                     }
                 },
                 "endTypes": {
                     "never": {
-                        "string": "Never"
+                        "string": "Никогда"
                     },
                     "on": {
-                        "string": "On"
+                        "string": "В дату"
                     },
                     "after": {
-                        "string": "After"
+                        "string": "После"
                     }
                 }
             },
@@ -708,10 +708,10 @@
                 "string": "Отмена"
             },
             "create": {
-                "string": "Create Event"
+                "string": "Создать событие"
             },
             "update": {
-                "string": "Update Event"
+                "string": "Обновить событие"
             }
         },
         "common": {
@@ -722,187 +722,190 @@
         "forms": {
             "createCalendar": {
                 "title": {
-                    "string": "Create New Calendar"
+                    "string": "Создать новый календарь"
                 },
                 "defaultEventDuration": {
-                    "string": "Default Event Duration"
+                    "string": "Длительность события по умолчанию"
                 },
                 "nameLabel": {
-                    "string": "Calendar Name"
+                    "string": "Название календаря"
                 },
                 "namePlaceholder": {
-                    "string": "My Calendar"
+                    "string": "Мой календарь"
                 },
                 "colorLabel": {
-                    "string": "Color"
+                    "string": "Цвет"
                 },
                 "description": {
                     "string": "Описание"
                 },
                 "descriptionPlaceholder": {
-                    "string": "Add description to calendar"
+                    "string": "Добавьте описание календаря"
                 },
                 "eventDuration": {
-                    "string": "Event Duration"
+                    "string": "Длительность события"
                 },
                 "eventNotifications": {
-                    "string": "Event Notifications"
+                    "string": "Уведомления о событиях"
                 },
                 "allDayNotifications": {
-                    "string": "All-day event notifications"
+                    "string": "Уведомления о событиях на весь день"
                 },
                 "addNotification": {
-                    "string": "Add notification"
+                    "string": "Добавить уведомление"
                 },
                 "showBusyStatus": {
-                    "string": "Show others when I'm busy"
+                    "string": "Показывать другим, что я занят"
                 },
                 "atTimeOfEvent": {
-                    "string": "at time of event"
+                    "string": "в момент события"
                 },
                 "fiveMinutes": {
-                    "string": "5 minutes before"
+                    "string": "за 5 минут до"
                 },
                 "fifteenMinutes": {
-                    "string": "15 minutes before"
+                    "string": "за 15 минут до"
                 },
                 "thirtyMinutesBefore": {
-                    "string": "30 minutes before"
+                    "string": "за 30 минут до"
                 },
                 "oneHourBefore": {
-                    "string": "1 hour before"
+                    "string": "за 1 час до"
                 },
                 "dayBefore": {
-                    "string": "day before"
+                    "string": "за день до"
                 },
                 "notification": {
-                    "string": "notification"
+                    "string": "уведомление"
                 },
                 "email": {
-                    "string": "e-mail"
+                    "string": "эл. почта"
                 },
                 "delete": {
                     "string": "Удалить"
                 },
                 "at": {
-                    "string": "at"
+                    "string": "в"
                 },
                 "durationOptions": {
                     "thirtyMinutes": {
-                        "string": "30 minutes"
+                        "string": "30 минут"
                     },
                     "oneHour": {
-                        "string": "1 hour"
+                        "string": "1 час"
                     },
                     "twoHours": {
-                        "string": "2 hours"
+                        "string": "2 часа"
                     },
                     "allDay": {
-                        "string": "All day"
+                        "string": "Весь день"
                     }
                 },
                 "saving": {
-                    "string": "Creating..."
+                    "string": "Создание..."
                 },
                 "submit": {
-                    "string": "Create Calendar"
+                    "string": "Создать календарь"
                 },
                 "cancel": {
                     "string": "Отмена"
                 }
             },
+            "copyEvent": {
+                "string": "Копировать событие"
+            },
             "editCalendar": {
                 "title": {
-                    "string": "Edit Calendar"
+                    "string": "Изменить календарь"
                 },
                 "nameLabel": {
-                    "string": "Calendar Name"
+                    "string": "Название календаря"
                 },
                 "colorLabel": {
-                    "string": "Color"
+                    "string": "Цвет"
                 },
                 "description": {
                     "string": "Описание"
                 },
                 "descriptionPlaceholder": {
-                    "string": "Add description to calendar"
+                    "string": "Добавьте описание календаря"
                 },
                 "eventDuration": {
-                    "string": "Event Duration"
+                    "string": "Длительность события"
                 },
                 "eventNotifications": {
-                    "string": "Event Notifications"
+                    "string": "Уведомления о событиях"
                 },
                 "allDayNotifications": {
-                    "string": "All-day event notifications"
+                    "string": "Уведомления о событиях на весь день"
                 },
                 "addNotification": {
-                    "string": "Add notification"
+                    "string": "Добавить уведомление"
                 },
                 "showBusyStatus": {
-                    "string": "Show others when I'm busy"
+                    "string": "Показывать другим, что я занят"
                 },
                 "atTimeOfEvent": {
-                    "string": "at time of event"
+                    "string": "в момент события"
                 },
                 "fiveMinutes": {
-                    "string": "5 minutes before"
+                    "string": "за 5 минут до"
                 },
                 "fifteenMinutes": {
-                    "string": "15 minutes before"
+                    "string": "за 15 минут до"
                 },
                 "thirtyMinutesBefore": {
-                    "string": "30 minutes before"
+                    "string": "за 30 минут до"
                 },
                 "oneHourBefore": {
-                    "string": "1 hour before"
+                    "string": "за 1 час до"
                 },
                 "dayBefore": {
-                    "string": "day before"
+                    "string": "за день до"
                 },
                 "notification": {
-                    "string": "notification"
+                    "string": "уведомление"
                 },
                 "email": {
-                    "string": "e-mail"
+                    "string": "эл. почта"
                 },
                 "delete": {
                     "string": "Удалить"
                 },
                 "at": {
-                    "string": "at"
+                    "string": "в"
                 },
                 "durationOptions": {
                     "thirtyMinutes": {
-                        "string": "30 minutes"
+                        "string": "30 минут"
                     },
                     "oneHour": {
-                        "string": "1 hour"
+                        "string": "1 час"
                     },
                     "twoHours": {
-                        "string": "2 hours"
+                        "string": "2 часа"
                     },
                     "allDay": {
-                        "string": "All day"
+                        "string": "Весь день"
                     }
                 },
                 "submit": {
-                    "string": "Save Changes"
+                    "string": "Сохранить изменения"
                 },
                 "cancel": {
                     "string": "Отмена"
                 }
             },
             "editEvent": {
-                "string": "Edit event"
+                "string": "Изменить событие"
             },
             "deleteEvent": {
                 "confirm": {
                     "title": {
-                        "string": "Delete event?"
+                        "string": "Удалить событие?"
                     },
                     "description": {
-                        "string": "This action cannot be undone."
+                        "string": "Это действие нельзя отменить."
                     },
                     "button": {
                         "string": "Удалить"
@@ -911,10 +914,10 @@
             },
             "deleteCalendar": {
                 "title": {
-                    "string": "Delete Calendar"
+                    "string": "Удалить календарь"
                 },
                 "message": {
-                    "string": "Are you sure you want to delete this calendar? This action cannot be undone."
+                    "string": "Вы уверены, что хотите удалить этот календарь? Это действие нельзя отменить."
                 },
                 "confirm": {
                     "string": "Удалить"
@@ -926,50 +929,50 @@
         },
         "share": {
             "title": {
-                "string": "Calendar Sharing"
+                "string": "Общий доступ к календарю"
             },
             "description": {
-                "string": "Share this calendar with other users. Shared users can see events based on the permission level you grant."
+                "string": "Предоставьте этому календарю общий доступ для других пользователей. Они смогут видеть события в зависимости от выданного уровня прав."
             },
             "addUser": {
-                "string": "Add User"
+                "string": "Добавить пользователя"
             },
             "searchPlaceholder": {
-                "string": "Search by name or email..."
+                "string": "Поиск по имени или эл. почте..."
             },
             "addButton": {
-                "string": "Share"
+                "string": "Открыть доступ"
             },
             "added": {
-                "string": "Calendar shared successfully"
+                "string": "Общий доступ к календарю успешно открыт"
             },
             "addError": {
-                "string": "Failed to share calendar"
+                "string": "Не удалось открыть общий доступ к календарю"
             },
             "removed": {
-                "string": "Share removed successfully"
+                "string": "Общий доступ успешно закрыт"
             },
             "removeError": {
-                "string": "Failed to remove share"
+                "string": "Не удалось закрыть общий доступ"
             },
             "removeButton": {
                 "string": "Удалить"
             },
             "existingShares": {
-                "string": "Shared with"
+                "string": "Доступ предоставлен:"
             },
             "noShares": {
-                "string": "This calendar is not shared with anyone yet."
+                "string": "Доступ к этому календарю ещё никому не предоставлен."
             },
             "table": {
                 "user": {
-                    "string": "User"
+                    "string": "Пользователь"
                 },
                 "level": {
-                    "string": "Permission Level"
+                    "string": "Уровень прав"
                 },
                 "canCreate": {
-                    "string": "Can Create"
+                    "string": "Может создавать"
                 }
             }
         }

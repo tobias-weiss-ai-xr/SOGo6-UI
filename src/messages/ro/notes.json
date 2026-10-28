@@ -1,0 +1,18 @@
+{
+  "NOTES": {
+    "title": "Note",
+    "new_note": "Nota nouă",
+    "save": "Salvează",
+    "cancel": "Anulează",
+    "edit": "Editează",
+    "delete": "Șterge",
+    "confirm_delete": "Șterge nota",
+    "confirm_delete_message": "Sunteți sigur că doriți să ștergeți această notă? Această acțiune nu poate fi anulată.",
+    "loading": "Se încarcă...",
+    "error": "A apărut o eroare la încărcarea notelor.",
+    "no_notes": "Nicio notă găsită.",
+    "created_at": "Creat: {date}",
+    "placeholder_title": "Introduceți titlul notei",
+    "placeholder_content": "Îcepeți să scrieți nota dvs. aici..."
+  }
+}

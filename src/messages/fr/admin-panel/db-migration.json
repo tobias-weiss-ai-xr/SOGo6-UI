@@ -7,28 +7,28 @@
       "string": "Suivre les versions de schéma et l'historique des migrations. Exécuter les migrations depuis le panneau d'administration."
     },
     "current_version": {
-      "string": "Current Schema Version"
+      "string": "Version actuelle du schéma"
     },
     "run": {
       "button": {
-        "string": "Run Migration"
+        "string": "Exécuter la migration"
       },
       "running": {
         "string": "En cours..."
       },
       "success": {
-        "string": "Migration applied"
+        "string": "Migration appliquée"
       },
       "error": {
-        "string": "Migration failed"
+        "string": "Échec de la migration"
       }
     },
     "history": {
       "title": {
-        "string": "Migration History"
+        "string": "Historique des migrations"
       },
       "empty": {
-        "string": "No migrations recorded."
+        "string": "Aucune migration enregistrée."
       }
     }
   }

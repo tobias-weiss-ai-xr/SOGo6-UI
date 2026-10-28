@@ -8,13 +8,20 @@ import { isUsingFakeApi } from '@/lib/api/router';
  * It allows the frontend to make direct API calls that get proxied through.
  * 
  * Environment Variables:
- * - NEXT_PUBLIC_API_BASE_URL: Base URL for the backend server (default: http://localhost:5000)
+ * - API_PROXY_TARGET: internal backend API root the proxy forwards to
+ *   (e.g. http://sogo6-server:5000/api). Preferred over
+ *   NEXT_PUBLIC_API_BASE_URL, which is the BROWSER-facing public origin
+ *   (served to clients via GET /env) — reusing it here either loops the
+ *   proxy back through the public vhost or leaks an internal hostname
+ *   into the browser payload.
  * 
  * When fake API is enabled (in development), this will redirect to fakeApi.
  * In production, it always proxies to the real backend.
  */
 
-const BACKEND_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL || 'http://localhost:5000';
+const BACKEND_BASE_URL = process.env.API_PROXY_TARGET
+  || process.env.NEXT_PUBLIC_API_BASE_URL
+  || 'http://localhost:5000/api';
 
 export async function GET(request: NextRequest, context: { params: Promise<{ path?: string[] }> }) {
   return handleProxy(request, context, 'GET');

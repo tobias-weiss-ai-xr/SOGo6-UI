@@ -1,0 +1,18 @@
+{
+  "NOTES": {
+    "title": "Notities",
+    "new_note": "Nieuwe notitie",
+    "save": "Opslaan",
+    "cancel": "Annuleren",
+    "edit": "Bewerken",
+    "delete": "Verwijderen",
+    "confirm_delete": "Notitie verwijderen",
+    "confirm_delete_message": "Weet u zeker dat u deze notitie wilt verwijderen? Deze actie kan niet ongedaan worden gemaakt.",
+    "loading": "Laden...",
+    "error": "Er is een fout opgetreden bij het laden van notities.",
+    "no_notes": "Geen notities gevonden.",
+    "created_at": "Gemaakt: {date}",
+    "placeholder_title": "Voer notitietitel in",
+    "placeholder_content": "Begin hier met typen uw notitie..."
+  }
+}

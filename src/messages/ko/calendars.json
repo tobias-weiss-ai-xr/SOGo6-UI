@@ -811,6 +811,9 @@
                     "string": "취소"
                 }
             },
+            "copyEvent": {
+                "string": "일정 복사"
+            },
             "editCalendar": {
                 "title": {
                     "string": "Edit Calendar"

@@ -1,53 +1,53 @@
 {
     "AP_CRM": {
         "title": {
-            "string": "CRM-light"
+            "string": "Лёгкий CRM"
         },
         "description": {
-            "string": "Associate contacts with accounts, track interactions, categorize contacts, and record notes."
+            "string": "Связывайте контакты с аккаунтами, отслеживайте взаимодействия, категоризируйте контакты и ведите заметки."
         },
         "form": {
             "create": {
-                "string": "New Account"
+                "string": "Новый аккаунт"
             },
             "cancel": {
                 "string": "Отмена"
             },
             "title": {
-                "string": "Create Account"
+                "string": "Создать аккаунт"
             },
             "name": {
-                "string": "Account Name"
+                "string": "Название аккаунта"
             },
             "domain": {
                 "string": "Домен"
             },
             "industry": {
-                "string": "Industry"
+                "string": "Отрасль"
             },
             "notes": {
                 "string": "Заметки"
             },
             "submit": {
-                "string": "Create Account"
+                "string": "Создать аккаунт"
             }
         },
         "create": {
             "success": {
-                "string": "Account created"
+                "string": "Аккаунт создан"
             },
             "error": {
-                "string": "Failed to create"
+                "string": "Не удалось создать"
             }
         },
         "list": {
             "empty": {
-                "string": "No CRM accounts yet."
+                "string": "Аккаунтов CRM пока нет."
             }
         },
         "errors": {
             "fields": {
-                "string": "Account name is required"
+                "string": "Укажите название аккаунта"
             }
         }
     }

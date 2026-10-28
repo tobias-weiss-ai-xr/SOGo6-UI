@@ -1,25 +1,25 @@
 {
     "AP_SIDEBAR": {
         "system": {
-            "string": "System"
+            "string": "Sistema"
         },
         "theme": {
-            "string": "Theme"
+            "string": "Tema"
         },
         "users": {
-            "string": "Users"
+            "string": "Usuarios"
         },
         "bulk_users": {
-            "string": "Bulk Users"
+            "string": "Usuarios en masa"
         },
         "quotas": {
-            "string": "Quotas"
+            "string": "Cuotas"
         },
         "branding": {
             "string": "Brandando"
         },
         "backup": {
-            "string": "Backup"
+            "string": "Copia de seguridad"
         },
         "db_migration": {
             "string": "DB Migración"
@@ -28,31 +28,31 @@
             "string": "Migración"
         },
         "config_code": {
-            "string": "Config as Code"
+            "string": "Configuración como código"
         },
         "webhooks": {
             "string": "Webhooks"
         },
         "oauth_clients": {
-            "string": "OAuth Clients"
+            "string": "Clientes OAuth"
         },
         "scheduling_polls": {
-            "string": "Scheduling Polls"
+            "string": "Encuestas de horarios"
         },
         "appointment_slots": {
-            "string": "Appointment Slots"
+            "string": "Franjas de cita"
         },
         "shared_drafts": {
-            "string": "Shared Drafts"
+            "string": "Borradores compartidos"
         },
         "file_sharing": {
-            "string": "File Sharando"
+            "string": "Compartición de archivos"
         },
         "doc_preview": {
-            "string": "Doc Preview"
+            "string": "Vista previa de documentos"
         },
         "approvals": {
-            "string": "Approvals"
+            "string": "Aprobaciones"
         },
         "helpdesk": {
             "string": "Helpdesk"
@@ -61,43 +61,43 @@
             "string": "CRM"
         },
         "workflows": {
-            "string": "Workflows"
+            "string": "Flujos de trabajo"
         },
         "quick_actions": {
-            "string": "Quick Actions"
+            "string": "Acciones rápidas"
         },
         "freebusy": {
-            "string": "Free/Busy"
+            "string": "Libre/Ocupado"
         },
         "ai_summarize": {
-            "string": "AI Summarize"
+            "string": "Resumen IA"
         },
         "ai_classify": {
-            "string": "AI Classify"
+            "string": "Clasificación IA"
         },
         "ai_draft": {
-            "string": "AI Draft"
+            "string": "Borrador IA"
         },
         "ai_search": {
-            "string": "AI Search"
+            "string": "Búsqueda IA"
         },
         "ai_schedule": {
-            "string": "AI Schedule"
+            "string": "Programación IA"
         },
         "ai_anomaly": {
             "string": "AI Anomamente"
         },
         "ai_enrich": {
-            "string": "AI Enrich"
+            "string": "Enriquecimiento IA"
         },
         "ai_attachment": {
-            "string": "AI Attach"
+            "string": "Adjuntos IA"
         },
         "ai_spam": {
-            "string": "AI Spam"
+            "string": "Antispam IA"
         },
         "ai_transcripts": {
-            "string": "AI Transcripts"
+            "string": "Transcripciones de IA"
         },
         "api_docs": {
             "string": "API Documentación"
@@ -105,35 +105,35 @@
         "config": {
             "string": "Configuración",
             "rules": {
-                "string": "Rules"
+                "string": "Reglas"
             },
             "domains": {
-                "string": "Domains",
+                "string": "Dominios",
                 "default": {
-                    "string": "Default"
+                    "string": "Predeterminado"
                 },
                 "custom": {
-                    "string": "Custom domains"
+                    "string": "Dominios personalizados"
                 }
             }
         },
         "sessions": {
-            "string": "Sessions"
+            "string": "Sesiones"
         },
         "audit": {
-            "string": "Audit Log"
+            "string": "Registro de auditoría"
         },
         "health": {
-            "string": "Health"
+            "string": "Estado"
         },
         "debug": {
-            "string": "Mailbox Debug"
+            "string": "Depuración de buzón"
         },
         "dns_wizard": {
-            "string": "DNS Wizard"
+            "string": "Asistente DNS"
         },
         "resources": {
-            "string": "Resources"
+            "string": "Recursos"
         },
         "scim": {
             "string": "Aprovisionamiento SCIM"

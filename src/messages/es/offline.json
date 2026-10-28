@@ -1,0 +1,17 @@
+{
+  "Login": {
+    "offlineNotice": "Actualmente está sin conexión. Es posible que algunas funciones estén limitadas."
+  },
+  "PWA": {
+    "installPrompt": {
+      "title": "Instalar SOGo",
+      "description": "Añada SOGo a su pantalla de inicio para un acceso rápido, incluso sin conexión.",
+      "install": "Instalar",
+      "dismiss": "Ahora no"
+    },
+    "offlineBanner": {
+      "label": "Está sin conexión. Es posible que algunas funciones no funcionen."
+    },
+    "featureUnavailable": "{feature} no está disponible sin conexión."
+  }
+}

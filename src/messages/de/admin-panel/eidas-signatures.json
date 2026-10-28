@@ -1,74 +1,34 @@
 {
   "EIDAS": {
-    "title": {
-      "string": "eIDAS-Qualifizierte Signaturen"
-    },
-    "description": {
-      "string": "EU Regulation 910/2014 qualified electronic signatures and timestamps"
-    },
+    "title": {"string": "eIDAS-Qualifizierte Signaturen"},
+    "description": {"string": "EU-Verordnung 910/2014 – qualifizierte elektronische Signaturen und Zeitstempel"},
     "errors": {
-      "fields": {
-        "string": "All fields required"
-      },
-      "fail": {
-        "string": "Operation failed"
-      }
+      "fields": {"string": "Alle Felder sind erforderlich"},
+      "fail": {"string": "Vorgang fehlgeschlagen"}
     },
     "success": {
-      "sign": {
-        "string": "Document signed with QES"
-      }
+      "sign": {"string": "Dokument mit QES signiert"}
     },
     "sign": {
-      "title": {
-        "string": "Sign Document"
-      },
-      "placeholder": {
-        "string": "Enter document content to sign..."
-      },
-      "signer": {
-        "string": "Signer Email"
-      },
-      "algorithm": {
-        "string": "Hash Algorithm"
-      },
-      "button": {
-        "string": "Sign with QES"
-      }
+      "title": {"string": "Dokument signieren"},
+      "placeholder": {"string": "Inhalt des zu signierenden Dokuments eingeben..."},
+      "signer": {"string": "Signierer E-Mail"},
+      "algorithm": {"string": "Hash-Algorithmus"},
+      "button": {"string": "Mit QES signieren"}
     },
     "verify": {
-      "title": {
-        "string": "Verify Signature"
-      },
-      "doc_hash": {
-        "string": "Document Hash"
-      },
-      "signature": {
-        "string": "Signature"
-      },
-      "button": {
-        "string": "Verify"
-      },
-      "valid": {
-        "string": "Valid"
-      },
-      "invalid": {
-        "string": "Invalid"
-      }
+      "title": {"string": "Signatur überprüfen"},
+      "doc_hash": {"string": "Dokumenten-Hash"},
+      "signature": {"string": "Signatur"},
+      "button": {"string": "Überprüfen"},
+      "valid": {"string": "Gültig"},
+      "invalid": {"string": "Ungültig"}
     },
     "certs": {
-      "title": {
-        "string": "Trust Service Certificates"
-      },
-      "type": {
-        "string": "Type"
-      },
-      "name": {
-        "string": "Name"
-      },
-      "hash": {
-        "string": "Hash"
-      }
+      "title": {"string": "Vertrauensdienste-Zertifikate"},
+      "type": {"string": "Typ"},
+      "name": {"string": "Name"},
+      "hash": {"string": "Hash"}
     }
   }
 }

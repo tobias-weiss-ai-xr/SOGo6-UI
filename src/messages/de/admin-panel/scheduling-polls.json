@@ -1,63 +1,29 @@
 {
-    "AP_POLLS": {
-        "title": {
-            "string": "Terminabstimmungen"
-        },
-        "description": {
-            "string": "Create 'When are you free?' polls to find the best meeting time for internal and external participants."
-        },
-        "form": {
-            "create": {
-                "string": "Create Poll"
-            },
-            "cancel": {
-                "string": "Abbrechen"
-            },
-            "title": {
-                "string": "New Scheduling Poll"
-            },
-            "poll_title": {
-                "string": "Poll Title"
-            },
-            "title_hint": {
-                "string": "e.g. Q1 Planning Meeting"
-            },
-            "participants": {
-                "string": "Participants"
-            },
-            "description": {
-                "string": "Description"
-            },
-            "time_slots": {
-                "string": "Proposed Time Slots"
-            },
-            "add_slot": {
-                "string": "Add Slot"
-            },
-            "submit": {
-                "string": "Create Poll"
-            }
-        },
-        "create": {
-            "success": {
-                "string": "Poll created"
-            },
-            "error": {
-                "string": "Failed to create poll"
-            }
-        },
-        "list": {
-            "empty": {
-                "string": "No scheduling polls yet. Create one to find the best meeting time."
-            },
-            "by": {
-                "string": "by"
-            }
-        },
-        "errors": {
-            "fields": {
-                "string": "Title, participants, and at least one time slot are required"
-            }
-        }
+  "AP_POLLS": {
+    "title": {"string": "Terminabstimmungen"},
+    "description": {"string": "Erstellen Sie 'Wann haben Sie Zeit?'-Umfragen, um den besten Termin für interne und externe Teilnehmer zu finden."},
+    "form": {
+      "create": {"string": "Umfrage erstellen"},
+      "cancel": {"string": "Abbrechen"},
+      "title": {"string": "Neue Terminabstimmung"},
+      "poll_title": {"string": "Umfragetitel"},
+      "title_hint": {"string": "z.B. Q1 Planungsmeeting"},
+      "participants": {"string": "Teilnehmer"},
+      "description": {"string": "Beschreibung"},
+      "time_slots": {"string": "Vorgeschlagene Zeitslots"},
+      "add_slot": {"string": "Slot hinzufügen"},
+      "submit": {"string": "Umfrage erstellen"}
+    },
+    "create": {
+      "success": {"string": "Umfrage erstellt"},
+      "error": {"string": "Erstellen der Umfrage fehlgeschlagen"}
+    },
+    "list": {
+      "empty": {"string": "Noch keine Terminabstimmungen. Erstellen Sie eine, um den besten Termin zu finden."},
+      "by": {"string": "von"}
+    },
+    "errors": {
+      "fields": {"string": "Titel, Teilnehmer und mindestens ein Zeitslot sind erforderlich"}
     }
+  }
 }

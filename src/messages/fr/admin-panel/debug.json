@@ -8,10 +8,10 @@
         },
         "query": {
             "title": {
-                "string": "Debug Query"
+                "string": "Requête de débogage"
             },
             "button": {
-                "string": "Inspect"
+                "string": "Inspecter"
             }
         },
         "labels": {
@@ -22,30 +22,30 @@
                 "string": "IMAP Foldeur"
             },
             "mail_uid": {
-                "string": "Mail UID"
+                "string": "UID du message"
             },
             "select_user": {
-                "string": "Select user..."
+                "string": "Sélectionner un utilisateur..."
             }
         },
         "result": {
             "raw": {
                 "title": {
-                    "string": "Raw Email Source"
+                    "string": "Source brute de l’e-mail"
                 }
             },
             "headers": {
                 "title": {
-                    "string": "Parsed Headers"
+                    "string": "En-têtes analysés"
                 }
             }
         },
         "errors": {
             "fields_required": {
-                "string": "User, folder, and mail UID are required"
+                "string": "L'utilisateur, le dossier et l'UID du message sont requis"
             },
             "fetch_failed": {
-                "string": "Failed to fetch debug data"
+                "string": "Échec de la récupération des données de débogage"
             }
         }
     }

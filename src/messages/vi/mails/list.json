@@ -1,5 +1,7 @@
 {
     "MAILS_LIST": {
+        "star": { "string": "Star" },
+        "unstar": { "string": "Unstar" },
         "messages_number": {
             "string": "{number, plural, one {# message} other {# messages}}",
             "context": "Displays the number of messages in an mail folder."
@@ -114,5 +116,5 @@
         }
     },
     "viewFlat": "Flat list",
-    "viewConversation": "Conversation view"
+    "viewConversation": "Chế độ xem cuộc trò chuyện"
 }

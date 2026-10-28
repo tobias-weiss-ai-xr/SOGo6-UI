@@ -1,20 +1,18 @@
 'use client'
 
 import { useSidebar } from '@/components/ui/sidebar'
+import { useProfile } from '@/features/user-profile'
 import { useIsMobile } from '@/hooks/use-mobile'
+import { useRouter } from '@/lib/i18n/navigation'
 import { useAppDispatch, useAppSelector } from '@/lib/redux/hooks'
+import { createClientId } from '@/lib/utils/create-client-id'
 import { Pencil, type LucideIcon } from 'lucide-react'
 import { useTranslations } from 'next-intl'
-import { useCallback } from 'react'
+import { useTheme } from 'next-themes'
 import { useParams } from 'next/navigation'
+import { useCallback } from 'react'
 import { toast } from 'sonner'
-import {
-  createDraft,
-  MAX_OPEN_DRAFTS,
-  selectCanOpenNewDraft,
-} from '../store'
-import { createClientId } from '@/lib/utils/create-client-id'
-import { useProfile } from '@/features/user-profile'
+import { createDraft, MAX_OPEN_DRAFTS, selectCanOpenNewDraft } from '../store'
 
 export function useComposeAction(options?: { closeMobileSidebar?: boolean }) {
   const t = useTranslations('COMPOSE')
@@ -23,6 +21,8 @@ export function useComposeAction(options?: { closeMobileSidebar?: boolean }) {
   const dispatch = useAppDispatch()
   const canOpen = useAppSelector(selectCanOpenNewDraft)
   const closeMobileSidebar = options?.closeMobileSidebar ?? true
+  const { resolvedTheme } = useTheme()
+  const { push } = useRouter()
   const { account } = useParams()
   const { sharedMailboxAccounts } = useProfile()
 
@@ -30,6 +30,12 @@ export function useComposeAction(options?: { closeMobileSidebar?: boolean }) {
   const accountString = Array.isArray(account) ? account[0] : (account ?? '0')
 
   const onClick = useCallback(() => {
+    // SOGo5 classic composes full-page (not a floating window)
+    if (resolvedTheme === 'sogo5-classic') {
+      push('/compose')
+      return
+    }
+
     if (!canOpen) {
       toast.error(t('max_windows_error.string', { max: MAX_OPEN_DRAFTS }))
       return
@@ -41,28 +47,42 @@ export function useComposeAction(options?: { closeMobileSidebar?: boolean }) {
 
     // Check if current account is a shared mailbox
     const isSharedMailbox = accountString.startsWith('shared-')
-    const sharedMailbox = isSharedMailbox 
-      ? sharedMailboxAccounts.find(m => m.id === accountString)
+    const sharedMailbox = isSharedMailbox
+      ? sharedMailboxAccounts.find((m) => m.id === accountString)
       : null
 
     // If composing from a shared mailbox, pre-select its identity
-    const initialData = isSharedMailbox && sharedMailbox
-      ? {
-          selectedIdentity: {
-            mail: sharedMailbox.email,
-            name: sharedMailbox.name,
-            replyTo: '',
-            isDefault: false,
-            signatures: {},
-          },
-        }
-      : undefined
+    const initialData =
+      isSharedMailbox && sharedMailbox
+        ? {
+            selectedIdentity: {
+              mail: sharedMailbox.email,
+              name: sharedMailbox.name,
+              replyTo: '',
+              isDefault: false,
+              signatures: {},
+            },
+          }
+        : undefined
 
-    dispatch(createDraft({ 
-      draftId: createClientId(),
-      initialData 
-    }))
-  }, [canOpen, closeMobileSidebar, dispatch, isMobile, setOpenMobile, t, accountString, sharedMailboxAccounts])
+    dispatch(
+      createDraft({
+        draftId: createClientId(),
+        initialData,
+      })
+    )
+  }, [
+    canOpen,
+    closeMobileSidebar,
+    dispatch,
+    isMobile,
+    setOpenMobile,
+    t,
+    accountString,
+    sharedMailboxAccounts,
+    resolvedTheme,
+    push,
+  ])
 
   return {
     onClick,

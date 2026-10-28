@@ -1,64 +1,64 @@
 {
     "AP_APPROVALS": {
         "title": {
-            "string": "Approval Workflows"
+            "string": "Przepływy zatwierdzania"
         },
         "description": {
-            "string": "Create multi-step approval chains for purchase orders, announcements, and more."
+            "string": "Twórz wieloetapowe łańcuchy zatwierdzeń dla zamówień, ogłoszeń i nie tylko."
         },
         "form": {
             "create": {
-                "string": "New Approval"
+                "string": "Nowe zatwierdzenie"
             },
             "cancel": {
                 "string": "Anuluj"
             },
             "title": {
-                "string": "Create Approval Workflow"
+                "string": "Utwórz przepływ zatwierdzania"
             },
             "workflow_title": {
-                "string": "Title"
+                "string": "Tytuł"
             },
             "category": {
-                "string": "Category"
+                "string": "Kategoria"
             },
             "description": {
                 "string": "Opis"
             },
             "steps": {
-                "string": "Approval Steps"
+                "string": "Kroki zatwierdzania"
             },
             "submit": {
-                "string": "Create Workflow"
+                "string": "Utwórz przepływ pracy"
             }
         },
         "create": {
             "success": {
-                "string": "Workflow created"
+                "string": "Utworzono przepływ pracy"
             },
             "error": {
-                "string": "Failed to create"
+                "string": "Nie udało się utworzyć"
             }
         },
         "action": {
             "approved": {
-                "string": "Step approved"
+                "string": "Zatwierdzono krok"
             },
             "rejected": {
-                "string": "Rejected"
+                "string": "Odrzucony"
             },
             "error": {
-                "string": "Action failed"
+                "string": "Akcja nie powiodła się"
             }
         },
         "list": {
             "empty": {
-                "string": "No approval workflows yet."
+                "string": "Brak przepływów zatwierdzania."
             }
         },
         "errors": {
             "fields": {
-                "string": "Title and at least one step with email are required"
+                "string": "Tytuł i co najmniej jeden krok z e-mailem są wymagane"
             }
         }
     }

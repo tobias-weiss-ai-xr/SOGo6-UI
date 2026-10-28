@@ -7,10 +7,10 @@
             "string": "Добро пожаловать в портал SOGo. Выберите приложение для начала."
         },
         "launch": {
-            "string": "Launch"
+            "string": "Запустить"
         },
         "settings": {
-            "string": "Intercom Settings"
+            "string": "Настройки интеркома"
         }
     }
 }

@@ -18,41 +18,41 @@
                 "view_all": "Pokaż wszystko",
                 "today": "Dzisiaj",
                 "no_events": "Brak wydarzeń na dziś",
-                "all_day": "All day",
+                "all_day": "Cały dzień",
                 "loading": "Ładowanie wydarzeń…",
                 "error": "Kalendarz"
             },
             "tasks": {
                 "title": "Zadania",
                 "view_all": "Pokaż wszystko",
-                "search_placeholder": "Search tasks",
-                "overdue": "Overdue",
+                "search_placeholder": "Szukaj zadań",
+                "overdue": "Zaległe",
                 "today": "Dzisiaj",
-                "upcoming": "Upcoming",
-                "no_due_date": "No due date",
-                "empty": "You're all caught up",
-                "no_results": "No matches",
+                "upcoming": "Nadchodzące",
+                "no_due_date": "Brak terminu",
+                "empty": "Jesteś na bieżąco",
+                "no_results": "Brak dopasowań",
                 "loading": "Ładowanie wydarzeń…",
-                "error": "Could not load tasks"
+                "error": "Nie udało się wczytać zadań"
             },
             "address_book": {
-                "title": "Contacts",
-                "view_all": "View all",
-                "search_placeholder": "Search contacts and lists",
-                "distribution_lists": "Distribution lists",
-                "contacts": "Contacts",
-                "member_count": "{number} members",
-                "compose": "Write message",
-                "loading": "Loading contacts…",
-                "error": "Could not load contacts",
-                "empty": "No address book available",
-                "no_entries": "No contacts or lists yet",
-                "no_results": "No matches",
-                "search_min_length": "Enter at least 2 characters to search."
+                "title": "Kontakty",
+                "view_all": "Zobacz wszystkie",
+                "search_placeholder": "Szukaj kontaktów i list",
+                "distribution_lists": "Listy dystrybucyjne",
+                "contacts": "Kontakty",
+                "member_count": "Liczba członków: {number}",
+                "compose": "Napisz wiadomość",
+                "loading": "Wczytywanie kontaktów…",
+                "error": "Nie udało się wczytać kontaktów",
+                "empty": "Brak dostępnej książki adresowej",
+                "no_entries": "Brak kontaktów i list",
+                "no_results": "Brak dopasowań",
+                "search_min_length": "Wpisz co najmniej 2 znaki, aby szukać."
             },
             "coming_soon": {
-                "title": "Feature incoming",
-                "description": "This section is under development and will be available soon."
+                "title": "Funkcja w przygotowaniu",
+                "description": "Ta sekcja jest w trakcie opracowywania i będzie wkrótce dostępna."
             }
         }
     }

@@ -1,23 +1,23 @@
 {
     "CONTACT_FORM": {
         "emails": {
-            "string": "Email addresses",
+            "string": "Адреса электронной почты",
             "context": "Label for the email addresses section in the contact form."
         },
         "addresses": {
-            "string": "Addresses",
+            "string": "Адреса",
             "context": "Label for the addresses section in the contact form."
         },
         "phone_numbers": {
-            "string": "Phone numbers",
+            "string": "Номера телефонов",
             "context": "Label for the phone numbers section in the contact form."
         },
         "urls": {
-            "string": "URLs",
+            "string": "URL-адреса",
             "context": "Label for the URLs section in the contact form."
         },
         "birthday": {
-            "string": "Birthday",
+            "string": "День рождения",
             "context": "Label for the birthday field in the contact visualization."
         },
         "notes": {
@@ -25,35 +25,35 @@
             "context": "Label for the notes section in the contact form."
         },
         "contact_information": {
-            "string": "Contact Information",
+            "string": "Контактная информация",
             "context": "Label for the contact information section in the contact form."
         },
         "contact_details": {
-            "string": "Contact Details",
+            "string": "Сведения о контакте",
             "context": "Title for the contact details view header."
         },
         "back_to_list": {
-            "string": "Back to list",
+            "string": "Вернуться к списку",
             "context": "Button label to return to the contact list."
         },
         "copied_to_clipboard": {
-            "string": "Copied to clipboard",
+            "string": "Скопировано в буфер обмена",
             "context": "Toast message when content is copied successfully."
         },
         "copied_value": {
-            "string": "Copied: {value}",
+            "string": "Скопировано: {value}",
             "context": "Toast description showing what was copied."
         },
         "copy_failed": {
-            "string": "Copy failed",
+            "string": "Не удалось скопировать",
             "context": "Toast error message when copy operation fails."
         },
         "copy_failed_description": {
-            "string": "Unable to copy to clipboard. Please try again.",
+            "string": "Не удалось скопировать в буфер обмена. Повторите попытку.",
             "context": "Toast error description when copy fails."
         },
         "copy_email": {
-            "string": "Copy email",
+            "string": "Копировать адрес",
             "context": "Tooltip for copy email button."
         },
         "copy": {
@@ -65,7 +65,7 @@
             "context": "Button label to edit a field."
         },
         "export": {
-            "string": "Export",
+            "string": "Экспортировать",
             "context": "Button label to export a contact."
         },
         "save": {
@@ -77,23 +77,23 @@
             "context": "Button label to cancel editing."
         },
         "edit_note": {
-            "string": "Edit note",
+            "string": "Изменить заметку",
             "context": "Button label to edit the contact note."
         },
         "add_note": {
-            "string": "Add note",
+            "string": "Добавить заметку",
             "context": "Button label to add a note to the contact."
         },
         "no_notes": {
-            "string": "No notes",
+            "string": "Нет заметок",
             "context": "Placeholder text when there are no notes."
         },
         "new_contact": {
-            "string": "New contact",
+            "string": "Новый контакт",
             "context": "Title for the new contact dialog"
         },
         "edit_contact": {
-            "string": "Edit contact",
+            "string": "Изменить контакт",
             "context": "Title for the edit contact dialog"
         },
         "create": {
@@ -105,137 +105,137 @@
             "context": "Button to delete a contact"
         },
         "add_email": {
-            "string": "Add email",
+            "string": "Добавить адрес",
             "context": "Button to add another email field"
         },
         "add_phone": {
-            "string": "Add phone",
+            "string": "Добавить телефон",
             "context": "Button to add another phone field"
         },
         "remove_field": {
-            "string": "Remove field",
+            "string": "Удалить поле",
             "context": "Aria label for removing a dynamic form field"
         },
         "add_address": {
-            "string": "Add address",
+            "string": "Добавить адрес",
             "context": "Button to add another address field"
         },
         "add_url": {
-            "string": "Add URL",
+            "string": "Добавить URL",
             "context": "Button to add another URL field"
         },
         "add_impp": {
-            "string": "Add instant messaging",
+            "string": "Добавить мессенджер",
             "context": "Button to add another instant messaging field"
         },
         "categories": {
-            "string": "Categories",
+            "string": "Категории",
             "context": "Label for contact categories field"
         },
         "photo": {
-            "string": "Photo",
+            "string": "Фотография",
             "context": "Label for contact photo upload"
         },
         "photo_upload": {
-            "string": "Upload a photo",
+            "string": "Загрузить фотографию",
             "context": "Button to select a contact photo file"
         },
         "photo_change": {
-            "string": "Change photo",
+            "string": "Изменить фотографию",
             "context": "Button to change contact photo"
         },
         "photo_remove": {
-            "string": "Remove photo",
+            "string": "Удалить фотографию",
             "context": "Button to remove contact photo"
         },
         "anniversary": {
-            "string": "Anniversary",
+            "string": "Годовщина",
             "context": "Label for anniversary field in contact visualization"
         },
         "impp": {
-            "string": "Instant messaging",
+            "string": "Мессенджеры",
             "context": "Label for instant messaging addresses"
         },
         "geo": {
-            "string": "Location",
+            "string": "Местоположение",
             "context": "Label for geographic location"
         },
         "submit_error": {
-            "string": "Could not save. Please check the form and try again.",
+            "string": "Не удалось сохранить. Проверьте форму и повторите попытку.",
             "context": "Generic submit error shown in contact form"
         },
         "fields": {
             "first_name": {
-                "string": "First name"
+                "string": "Имя"
             },
             "last_name": {
-                "string": "Last name"
+                "string": "Фамилия"
             },
             "middle_name": {
-                "string": "Middle name"
+                "string": "Отчество"
             },
             "prefix": {
-                "string": "Prefix"
+                "string": "Префикс"
             },
             "suffix": {
-                "string": "Suffix"
+                "string": "Суффикс"
             },
             "nickname": {
-                "string": "Nickname"
+                "string": "Псевдоним"
             },
             "organization": {
-                "string": "Organization"
+                "string": "Организация"
             },
             "department": {
-                "string": "Department"
+                "string": "Отдел"
             },
             "job_title": {
-                "string": "Job title"
+                "string": "Должность"
             },
             "role": {
-                "string": "Role"
+                "string": "Роль"
             },
             "impp": {
-                "string": "Instant messaging"
+                "string": "Мессенджеры"
             },
             "anniversary": {
-                "string": "Anniversary"
+                "string": "Годовщина"
             },
             "birthday_unknown_year": {
-                "string": "Year unknown (month and day only)"
+                "string": "Год неизвестен (только месяц и день)"
             },
             "street": {
-                "string": "Street"
+                "string": "Улица"
             },
             "city": {
-                "string": "City"
+                "string": "Город"
             },
             "postal_code": {
-                "string": "Postal code"
+                "string": "Почтовый индекс"
             },
             "country": {
-                "string": "Country"
+                "string": "Страна"
             },
             "region": {
-                "string": "Region / State"
+                "string": "Регион / область"
             },
             "po_box": {
-                "string": "PO box"
+                "string": "Абонентский ящик"
             },
             "extended": {
-                "string": "Extended address"
+                "string": "Дополнение адреса"
             },
             "contact_kind": {
-                "string": "Contact type"
+                "string": "Тип контакта"
             },
             "contact_kind_individual": {
-                "string": "Person"
+                "string": "Человек"
             },
             "contact_kind_org": {
-                "string": "Organization"
+                "string": "Организация"
             },
             "organization_required": {
-                "string": "Organization name"
+                "string": "Название организации"
             },
             "type": {
                 "string": "Тип"
@@ -244,28 +244,28 @@
                 "string": "По умолчанию"
             },
             "pref": {
-                "string": "Preferred"
+                "string": "Предпочитаемый"
             },
             "email_type_work": {
-                "string": "Work"
+                "string": "Рабочий"
             },
             "email_type_home": {
-                "string": "Home"
+                "string": "Домашний"
             },
             "email_type_other": {
-                "string": "Other"
+                "string": "Другой"
             },
             "phone_type_work": {
-                "string": "Work"
+                "string": "Рабочий"
             },
             "phone_type_home": {
-                "string": "Home"
+                "string": "Домашний"
             },
             "phone_type_mobile": {
-                "string": "Mobile"
+                "string": "Мобильный"
             },
             "phone_type_other": {
-                "string": "Other"
+                "string": "Другой"
             },
             "url": {
                 "string": "URL"
@@ -273,48 +273,48 @@
         },
         "delete_dialog": {
             "title": {
-                "string": "Delete contact?"
+                "string": "Удалить контакт?"
             },
             "description": {
-                "string": "This contact will be permanently removed from your address book."
+                "string": "Этот контакт будет безвозвратно удалён из вашей адресной книги."
             },
             "confirm": {
                 "string": "Удалить"
             }
         },
         "write_message": {
-            "string": "Write message",
+            "string": "Написать сообщение",
             "context": "Button to compose an email to this contact."
         },
         "actions_menu": {
-            "string": "More actions",
+            "string": "Другие действия",
             "context": "Aria label for the contact actions dropdown menu."
         },
         "compose_email": {
-            "string": "Compose",
+            "string": "Написать",
             "context": "Button to compose an email to a specific address on the contact card."
         },
         "selection_placeholder": {
             "title": {
-                "string": "Select a contact",
+                "string": "Выберите контакт",
                 "context": "Title shown when no contact is selected in the detail panel."
             },
             "description": {
-                "string": "Choose a contact or distribution list from the list to view details.",
+                "string": "Выберите контакт или список рассылки из списка, чтобы просмотреть сведения.",
                 "context": "Description shown when no contact is selected."
             }
         },
         "load_error": {
             "title": {
-                "string": "Could not load contact",
+                "string": "Не удалось загрузить контакт",
                 "context": "Error title when contact details fail to load."
             },
             "list": {
-                "string": "Could not load contacts",
+                "string": "Не удалось загрузить контакты",
                 "context": "Error message when the contact list fails to load."
             },
             "description": {
-                "string": "Please try again later.",
+                "string": "Повторите попытку позже.",
                 "context": "Error description when contact data fails to load."
             }
         }

@@ -1,7 +1,7 @@
-import '@testing-library/jest-dom'
-import { render, waitFor, act } from '@testing-library/react'
-import React from 'react'
 import { useMailReceivedListener } from '@/lib/redux/sse/hooks/use-mail-received-listener'
+import '@testing-library/jest-dom'
+import { act, render, waitFor } from '@testing-library/react'
+import React from 'react'
 
 // --- Mock the store plumbing ---
 // The hook keeps a *module-level singleton registry* (Bug #45 fix) and its
@@ -33,7 +33,13 @@ jest.mock('@/lib/redux/hooks', () => ({
   useAppDispatch: () => mockDispatch,
 }))
 
-jest.mock('@/features/mails/store/mails-api', () => ({}))
+jest.mock('@/features/mails/store/mails-api', () => ({
+  mailsApiEndpoints: {
+    util: {
+      updateQueryData: jest.fn(() => ({ type: 'test/updateQueryData' })),
+    },
+  },
+}))
 
 jest.mock('@/lib/redux/api/api-slice', () => {
   const updateQueryData = jest.fn(() => ({ type: 'test/updateQueryData' }))
@@ -53,11 +59,12 @@ const { getSSEServiceInstance } = jest.requireMock(
   '@/lib/redux/sse/sse-api'
 ) as { getSSEServiceInstance: jest.Mock }
 
-/** The api-slice mock's updateQueryData (fresh per module init). */
-const mockUpdateQueryData = jest.fn()
-;(jest.requireMock('@/lib/redux/api/api-slice') as {
-  apiSlice: { util: { updateQueryData: jest.Mock } }
-}).apiSlice.util.updateQueryData = mockUpdateQueryData
+/** The mails-api mock's updateQueryData (created inside the module mock). */
+const mockUpdateQueryData = (
+  jest.requireMock('@/features/mails/store/mails-api') as {
+    mailsApiEndpoints: { util: { updateQueryData: jest.Mock } }
+  }
+).mailsApiEndpoints.util.updateQueryData
 
 function TestHost({
   folder,
@@ -66,7 +73,12 @@ function TestHost({
   folder?: string
   accountId?: string
 }) {
-  useMailReceivedListener(folder ?? 'INBOX', undefined, undefined, accountId ?? '0')
+  useMailReceivedListener(
+    folder ?? 'INBOX',
+    undefined,
+    undefined,
+    accountId ?? '0'
+  )
   return React.createElement('div', { 'data-testid': 'host' })
 }
 
@@ -82,10 +94,12 @@ function folderEntry(folder: string, accountId: string) {
 /** Capture the subscribe callback so tests can drive SSE events. */
 function captureHandler(): (msg: unknown) => void {
   let handler: ((msg: unknown) => void) | undefined
-  mockSubscribe.mockImplementation((event: string, cb: (m: unknown) => void) => {
-    if (event === 'mail:received') handler = cb
-    return mockUnsubscribe
-  })
+  mockSubscribe.mockImplementation(
+    (event: string, cb: (m: unknown) => void) => {
+      if (event === 'mail:received') handler = cb
+      return mockUnsubscribe
+    }
+  )
   return (msg: unknown) => {
     act(() => handler?.(msg))
   }
@@ -116,13 +130,16 @@ describe('useMailReceivedListener', () => {
           null,
           React.createElement(TestHost, { folder: 'INBOX' }),
           React.createElement(TestHost, { folder: 'Drafts' }),
-          React.createElement(TestHost, { folder: 'Sent' }),
-        ),
+          React.createElement(TestHost, { folder: 'Sent' })
+        )
       )
       await waitFor(() => {
         expect(mockSubscribe).toHaveBeenCalledTimes(1)
       })
-      expect(mockSubscribe).toHaveBeenCalledWith('mail:received', expect.any(Function))
+      expect(mockSubscribe).toHaveBeenCalledWith(
+        'mail:received',
+        expect.any(Function)
+      )
       await unmount(root)
     })
 
@@ -160,21 +177,29 @@ describe('useMailReceivedListener', () => {
             k_inbox: folderEntry('INBOX', '0'),
             k_drafts: folderEntry('Drafts', '0'),
             k_other_account: folderEntry('INBOX', '7'),
-            k_other_ep: { endpointName: 'getFolderDetail', originalArgs: { id: 'x' } },
+            k_other_ep: {
+              endpointName: 'getFolderDetail',
+              originalArgs: { id: 'x' },
+            },
           },
         },
       })
       const emit = captureHandler()
-      const root = render(React.createElement(TestHost, { folder: 'INBOX', accountId: '0' }))
+      const root = render(
+        React.createElement(TestHost, { folder: 'INBOX', accountId: '0' })
+      )
       await waitFor(() => expect(mockSubscribe).toHaveBeenCalled())
 
-      emit({ type: 'mail:received', data: { id: '99', subject: 'Hi', preview: 'P' } })
+      emit({
+        type: 'mail:received',
+        data: { id: '99', subject: 'Hi', preview: 'P' },
+      })
       await waitFor(() => {
         // Only the matching folder+accountId entry gets an updateQueryData call.
         expect(mockUpdateQueryData).toHaveBeenCalledWith(
           'getFolderMessages',
           expect.objectContaining({ folder: 'INBOX', accountId: '0' }),
-          expect.any(Function),
+          expect.any(Function)
         )
       })
       expect(mockUpdateQueryData).toHaveBeenCalledTimes(1)
@@ -187,7 +212,7 @@ describe('useMailReceivedListener', () => {
         (_ep: string, _args: unknown, recipe: (d: any) => void) => {
           recipes.push(recipe)
           return { type: 'test/updateQueryData' }
-        },
+        }
       )
       mockGetState = () => ({
         api: { queries: { k_inbox: folderEntry('INBOX', '0') } },
@@ -197,7 +222,12 @@ describe('useMailReceivedListener', () => {
       const root = render(React.createElement(TestHost, { folder: 'INBOX' }))
       await waitFor(() => expect(mockSubscribe).toHaveBeenCalled())
 
-      const mail = { id: '99', subject: 'Storm', preview: 'p', from: { name: 'S', email: 's@e' } }
+      const mail = {
+        id: '99',
+        subject: 'Storm',
+        preview: 'p',
+        from: { name: 'S', email: 's@e' },
+      }
       // Storm of N events for the SAME mail id.
       for (let i = 0; i < 5; i++) {
         emit({ type: 'mail:received', data: mail })
@@ -210,7 +240,9 @@ describe('useMailReceivedListener', () => {
       // recipe repeatedly must keep exactly one entry with id 99.
       const draft = { mails: [{ id: '10', subject: 'old' }], total: 1 }
       for (const recipe of recipes) recipe(draft)
-      expect(draft.mails.filter((m: any) => String(m.id) === '99').length).toBe(1)
+      expect(draft.mails.filter((m: any) => String(m.id) === '99').length).toBe(
+        1
+      )
       expect(draft.total).toBe(2) // unshifted once, total bumped once
       await unmount(root)
     })
@@ -240,7 +272,10 @@ describe('useMailReceivedListener', () => {
     it('subscribes to mail:received when SSE service is ready', async () => {
       const root = render(React.createElement(TestHost, { folder: 'Sent' }))
       await waitFor(() => {
-        expect(mockSubscribe).toHaveBeenCalledWith('mail:received', expect.any(Function))
+        expect(mockSubscribe).toHaveBeenCalledWith(
+          'mail:received',
+          expect.any(Function)
+        )
       })
       await unmount(root)
     })
@@ -251,7 +286,10 @@ describe('useMailReceivedListener', () => {
       await waitFor(() => {
         expect(mockSubscribe).toHaveBeenCalled()
       })
-      emit({ type: 'mail:received', data: { id: '99', subject: 'Hello', preview: 'Hi' } })
+      emit({
+        type: 'mail:received',
+        data: { id: '99', subject: 'Hello', preview: 'Hi' },
+      })
       await waitFor(() => expect(mockDispatch).toHaveBeenCalled())
       await unmount(root)
     })

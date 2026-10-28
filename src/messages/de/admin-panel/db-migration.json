@@ -7,28 +7,28 @@
       "string": "Schemaversionen und Migrationsverlauf verfolgen. Migrationen über das Admin-Panel ausführen."
     },
     "current_version": {
-      "string": "Current Schema Version"
+      "string": "Aktuelle Schemaversion"
     },
     "run": {
       "button": {
-        "string": "Run Migration"
+        "string": "Migration ausführen"
       },
       "running": {
         "string": "Wird ausgeführt..."
       },
       "success": {
-        "string": "Migration applied"
+        "string": "Migration angewendet"
       },
       "error": {
-        "string": "Migration failed"
+        "string": "Migration fehlgeschlagen"
       }
     },
     "history": {
       "title": {
-        "string": "Migration History"
+        "string": "Migrationsverlauf"
       },
       "empty": {
-        "string": "No migrations recorded."
+        "string": "Keine Migrationen aufgezeichnet."
       }
     }
   }

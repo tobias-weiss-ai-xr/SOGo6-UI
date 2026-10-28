@@ -8,46 +8,46 @@
         },
         "errors": {
             "name": {
-                "string": "Name required"
+                "string": "El nombre es obligatorio"
             },
             "fail": {
-                "string": "Operation failed"
+                "string": "Error en la operación"
             }
         },
         "success": {
             "config": {
-                "string": "Configuration saved"
+                "string": "Configuración guardada"
             },
             "room": {
-                "string": "Room created"
+                "string": "Sala creada"
             }
         },
         "config": {
             "title": {
-                "string": "Server Config"
+                "string": "Configuración del servidor"
             },
             "enabled": {
-                "string": "Enabled"
+                "string": "Activado"
             },
             "bridge": {
-                "string": "Bridge"
+                "string": "Puente"
             }
         },
         "rooms": {
             "title": {
-                "string": "Chat Rooms"
+                "string": "Salas de chat"
             },
             "name": {
                 "placeholder": {
-                    "string": "Room name..."
+                    "string": "Nombre de la sala..."
                 }
             },
             "visibility": {
                 "private": {
-                    "string": "Private"
+                    "string": "Privado"
                 },
                 "public": {
-                    "string": "Public"
+                    "string": "Público"
                 }
             }
         },
@@ -56,15 +56,15 @@
                 "string": "Guardar"
             },
             "create": {
-                "string": "Create Room"
+                "string": "Crear sala"
             }
         },
         "links": {
             "title": {
-                "string": "User Links"
+                "string": "Vínculos de usuario"
             },
             "empty": {
-                "string": "No linked users"
+                "string": "No hay usuarios vinculados"
             }
         }
     }

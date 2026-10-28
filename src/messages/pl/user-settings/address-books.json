@@ -17,21 +17,21 @@
       }
     },
     "notification": {
-      "title": "Notifications",
+      "title": "Powiadomienia",
       "string": "Wyślij powiadomienie e-mail przy tworzeniu książki adresowej",
       "context": "Label for the notification setting"
     },
     "categories": {
-      "title": "Categories",
-      "Work": "Work",
-      "Family": "Family",
-      "Friends": "Friends"
+      "title": "Kategorie",
+      "Work": "Praca",
+      "Family": "Rodzina",
+      "Friends": "Przyjaciele"
     },
     "color": {
-      "title": "Couleur"
+      "title": "Kolor"
     },
     "validation": {
-      "category-name-required": "Category name is required"
+      "category-name-required": "Nazwa kategorii jest wymagana"
     }
   }
 }
