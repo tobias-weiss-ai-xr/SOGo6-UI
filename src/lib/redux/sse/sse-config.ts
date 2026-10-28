@@ -60,9 +60,43 @@ export function getDefaultSSEConfigSync(): SSEConfig {
 }
 
 /**
- * Production SSE configuration (reverse-proxy same-origin).
+ * Decode a JWT token payload (without verifying signature).
+ * Returns null if the token is malformed.
  */
-export function getProductionSSEConfig(): SSEConfig {
+function decodeJwtPayload(token: string): { exp?: number; [key: string]: unknown } | null {
+  try {
+    const payload = token.split('.')[1]
+    const decoded = atob(payload.replace(/-/g, '+').replace(/_/g, '/'))
+    return JSON.parse(decoded)
+  } catch {
+    return null
+  }
+}
+
+/**
+ * Check if a JWT token is expired (with a 30s buffer).
+ * Returns true if the token is expired or cannot be decoded.
+ */
+function isTokenExpired(token: string, bufferSeconds = 30): boolean {
+  const payload = decodeJwtPayload(token)
+  if (!payload?.exp) return true
+  const expiresAt = payload.exp * 1000
+  const now = Date.now()
+  const buffer = bufferSeconds * 1000
+  return expiresAt - buffer < now
+}
+
+/**
+ * Production SSE configuration (reverse-proxy same-origin).
+ *
+ * EventSource cannot set custom HTTP headers, so the auth token must be
+ * passed as a query parameter (?token=<jwt>). The backend SSEView reads
+ * it from request.args.get('token').
+ *
+ * Returns null if the token is expired or missing — the caller should
+ * skip connecting and trigger a logout/redirect to /auth/login.
+ */
+export function getProductionSSEConfig(): SSEConfig | null {
   // Get auth token from storage - check localStorage first (rememberMe), then sessionStorage
   const STORAGE_KEY = 'sogo_auth'
   let token = ''
@@ -77,16 +111,26 @@ export function getProductionSSEConfig(): SSEConfig {
     token = ''
   }
 
+  // Don't connect SSE if the token is expired or missing — the backend
+  // would return 401 and EventSource would loop reconnection attempts.
+  if (!token || isTokenExpired(token)) {
+    return null
+  }
+
+  // EventSource cannot send Authorization headers — pass token as query param
+  const sseUrl = new URL(`${window.location.origin}/api/sse`)
+  sseUrl.searchParams.set('token', token)
+
   return {
-    url: `${window.location.origin}/api/sse`,
+    url: sseUrl.toString(),
     reconnectInterval: 5000,
-    maxReconnectAttempts: 10,
+    maxReconnectAttempts: 3,
     heartbeatTimeout: 60000,
     withCredentials: true,
     headers: {
       'Content-Type': 'text/event-stream',
       Accept: 'text/event-stream',
-      Authorization: token ? `Bearer ${token}` : '',
+      Authorization: `Bearer ${token}`,
     },
   }
 }
@@ -116,8 +160,11 @@ export function getTestSSEConfig(): SSEConfig {
 
 /**
  * Resolve SSE configuration for the current runtime environment.
+ *
+ * Returns null in production when the auth token is expired or missing,
+ * signalling the caller to skip SSE connection and trigger logout.
  */
-export async function getSSEConfigForEnvironment(): Promise<SSEConfig> {
+export async function getSSEConfigForEnvironment(): Promise<SSEConfig | null> {
   if (typeof window === 'undefined') {
     return getDefaultSSEConfigSync()
   }

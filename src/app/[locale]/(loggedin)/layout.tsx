@@ -18,6 +18,7 @@ import {
 } from '@/features/notifications'
 import { useGetUserProfileQuery } from '@/features/user-profile'
 import { fetchEnvVars } from '@/lib/env-service'
+import { logger } from '@/lib/logger'
 import {
   getSSEConfigForEnvironment,
   useConnectSSEMutation,
@@ -82,9 +83,17 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       }
 
       const config = await getSSEConfigForEnvironment()
-      if (!cancelled) {
-        connect(config)
+      if (cancelled) return
+
+      // In production, getProductionSSEConfig() returns null when the JWT
+      // token is expired or missing. Skip SSE and let the layout's token
+      // guard redirect to /auth/login.
+      if (config === null) {
+        logger.info('SSE skipped: auth token expired or missing')
+        return
       }
+
+      connect(config)
     })()
 
     return () => {

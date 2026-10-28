@@ -240,6 +240,39 @@ export class SSEService {
 
       this.setConnectionState(SSEConnectionState.CLOSED)
       logger.error(`Max reconnection attempts reached (3). Giving up.`)
+
+      // Check if the auth token is expired — if so, clear it and redirect
+      // to /auth/login so the user can re-authenticate instead of being
+      // stuck on a broken page with an expired session.
+      if (typeof window !== 'undefined') {
+        try {
+          const STORAGE_KEY = 'sogo_auth'
+          const stored = localStorage.getItem(STORAGE_KEY) || sessionStorage.getItem(STORAGE_KEY)
+          if (stored) {
+            const auth = JSON.parse(stored)
+            const token: string | undefined = auth?.token
+            if (token) {
+              // Decode JWT payload to check expiry
+              const payload = JSON.parse(
+                atob(token.split('.')[1].replace(/-/g, '+').replace(/_/g, '/'))
+              )
+              const expiresAt = (payload?.exp ?? 0) * 1000
+              if (expiresAt && expiresAt < Date.now()) {
+                logger.warn('SSE disconnected: auth token expired, redirecting to login')
+                localStorage.removeItem(STORAGE_KEY)
+                sessionStorage.removeItem(STORAGE_KEY)
+                // Also clear the JWT token key used by use-api.ts
+                localStorage.removeItem('NEXT_PUBLIC_JWT_STORAGE_KEY')
+                localStorage.removeItem('NEXT_PUBLIC_REFRESH_TOKEN_STORAGE_KEY')
+                window.location.href = '/auth/login'
+              }
+            }
+          }
+        } catch {
+          // Token parsing failed — silently ignore, the layout guard will
+          // handle the redirect if state.auth.token is null
+        }
+      }
       return
     }
 

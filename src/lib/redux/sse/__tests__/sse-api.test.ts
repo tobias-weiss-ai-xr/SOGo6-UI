@@ -85,6 +85,17 @@ describe('sse-api', () => {
       expect(result.data).toEqual({ connected: true })
       expect(mockConnect).toHaveBeenCalled()
     })
+
+    it('returns disabled when config is null (expired token)', async () => {
+      const { store, sseApi } = await createStore()
+
+      const result = await store.dispatch(
+        sseApi.endpoints.connectSSE.initiate(null)
+      )
+
+      expect(result.data).toEqual({ connected: false, disabled: true })
+      expect(mockConnect).not.toHaveBeenCalled()
+    })
   })
 
   describe('disconnectSSE mutation', () => {

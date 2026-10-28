@@ -110,10 +110,14 @@ export const sseApi = createApi({
 
     /**
      * Connect to SSE server
+     *
+     * If newConfig is null (e.g. token expired in production), the mutation
+     * returns early with { connected: false, disabled: true } instead of
+     * attempting a connection that would fail with 401 and loop reconnection.
      */
     connectSSE: builder.mutation<
       { connected: boolean; disabled?: boolean },
-      SSEConfig | void
+      SSEConfig | void | null
     >({
       queryFn: async (newConfig) => {
         // Check if SSE is disabled via environment variable
@@ -122,6 +126,14 @@ export const sseApi = createApi({
           if (process.env.NODE_ENV === 'development') {
             console.log('SSE is disabled via SSE_ENABLED environment variable')
           }
+          return { data: { connected: false, disabled: true } }
+        }
+
+        // In production, getProductionSSEConfig() returns null when the token
+        // is expired or missing. Skip connecting and let the caller handle
+        // logout/redirect.
+        if (newConfig === null) {
+          logger.info('SSE skipped: auth token expired or missing')
           return { data: { connected: false, disabled: true } }
         }
 

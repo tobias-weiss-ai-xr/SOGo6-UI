@@ -82,36 +82,58 @@ describe('sse-config', () => {
   })
 
   describe('getProductionSSEConfig', () => {
-    it('uses same-origin API SSE endpoint with auth header', () => {
-      const authData = JSON.stringify({ token: 'token-123', user: 'testuser' })
+    // Helper: create a valid JWT that expires in 1 hour
+    function makeTestJwt(expOffsetSeconds = 3600): string {
+      const payload = { uid: 'testuser', exp: Math.floor(Date.now() / 1000) + expOffsetSeconds }
+      const encodedPayload = btoa(JSON.stringify(payload))
+      return `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.${encodedPayload}.signature`
+    }
+
+    it('uses same-origin API SSE endpoint with token as query param', () => {
+      const jwt = makeTestJwt()
+      const authData = JSON.stringify({ token: jwt, user: 'testuser' })
       localStorage.setItem('sogo_auth', authData)
 
       const config = getProductionSSEConfig()
 
-      expect(config.url).toBe(`${window.location.origin}/api/sse`)
-      expect(config.headers?.Authorization).toBe('Bearer token-123')
-      expect(config.reconnectInterval).toBe(5000)
+      expect(config).not.toBeNull()
+      expect(config!.url).toContain(`${window.location.origin}/api/sse`)
+      expect(config!.url).toContain(`token=${encodeURIComponent(jwt)}`)
+      expect(config!.headers?.Authorization).toBe(`Bearer ${jwt}`)
+      expect(config!.reconnectInterval).toBe(5000)
     })
 
     it('falls back to sessionStorage when localStorage is empty', () => {
       localStorage.removeItem('sogo_auth')
-      const authData = JSON.stringify({ token: 'session-token' })
+      const jwt = makeTestJwt()
+      const authData = JSON.stringify({ token: jwt })
       sessionStorage.setItem('sogo_auth', authData)
 
       const config = getProductionSSEConfig()
 
-      expect(config.headers?.Authorization).toBe('Bearer session-token')
+      expect(config).not.toBeNull()
+      expect(config!.headers?.Authorization).toBe(`Bearer ${jwt}`)
 
       sessionStorage.removeItem('sogo_auth')
     })
 
-    it('returns empty auth header when no token is stored', () => {
+    it('returns null when no token is stored (expired/missing)', () => {
       localStorage.removeItem('sogo_auth')
       sessionStorage.removeItem('sogo_auth')
 
       const config = getProductionSSEConfig()
 
-      expect(config.headers?.Authorization).toBe('')
+      expect(config).toBeNull()
+    })
+
+    it('returns null when token is expired', () => {
+      const expiredJwt = makeTestJwt(-3600) // expired 1 hour ago
+      const authData = JSON.stringify({ token: expiredJwt })
+      localStorage.setItem('sogo_auth', authData)
+
+      const config = getProductionSSEConfig()
+
+      expect(config).toBeNull()
     })
 
     it('handles malformed stored auth gracefully', () => {
@@ -119,7 +141,7 @@ describe('sse-config', () => {
 
       const config = getProductionSSEConfig()
 
-      expect(config.headers?.Authorization).toBe('')
+      expect(config).toBeNull()
     })
   })
 
@@ -137,8 +159,10 @@ describe('sse-config', () => {
     it('returns a config with SSE endpoint URL', async () => {
       const config = await getSSEConfigForEnvironment()
 
-      expect(config.url).toMatch(/\/sse$/)
-      expect(config.reconnectInterval).toBeGreaterThan(0)
+      // In test env, getTestSSEConfig() is used
+      expect(config).not.toBeNull()
+      expect(config!.url).toMatch(/\/sse$/)
+      expect(config!.reconnectInterval).toBeGreaterThan(0)
     })
   })
 })

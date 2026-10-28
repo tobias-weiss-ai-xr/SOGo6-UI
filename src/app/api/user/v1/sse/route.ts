@@ -59,7 +59,16 @@ async function handleRealBackendSSE(request: NextRequest): Promise<Response> {
     });
     
     // Return the streamed response
+    // Pass through 401 so the EventSource client can detect auth failure
+    // and the frontend can redirect to login instead of looping reconnection.
     if (!response.ok) {
+      // For 401, return the status code directly so the client knows auth failed
+      if (response.status === 401) {
+        return new Response(null, {
+          status: 401,
+          statusText: 'Unauthorized',
+        });
+      }
       throw new Error(`SSE Failed: ${response.status} ${response.statusText}`);
     }
     
