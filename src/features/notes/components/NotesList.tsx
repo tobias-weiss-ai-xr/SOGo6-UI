@@ -2,7 +2,7 @@
 
 import { Button } from '@/components/ui/button'
 import { Skeleton } from '@/components/ui/skeleton'
-import { useCallback, useEffect, useState } from 'react'
+import { memo, useCallback, useEffect, useState } from 'react'
 import fetchClient from '../fetch-client'
 import NoteCard from './NoteCard'
 import NotesEditor from './NotesEditor'
