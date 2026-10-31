@@ -87,6 +87,13 @@ async function handleProxy(
     const requestInit: RequestInit = {
       method,
       headers: removeProxyHeaders(request.headers),
+      // Do NOT follow backend redirects here: the OIDC callback returns
+      // 302 -> /auth/callback#token=<jwt>. If fetch() follows it, the URL
+      // hash fragment is lost (fragments are never sent over HTTP) and the
+      // browser ends up stuck on the callback URL without the JWT voucher.
+      // With `manual` the 3xx passes back to the browser (Location header
+      // intact) so the token fragment survives the hop.
+      redirect: 'manual',
     };
     
     // Include body for methods that support it
@@ -231,11 +238,17 @@ function proxyResponse(proxyResponse: Response, _originalRequest: Request): Next
   headers.set('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, PATCH, HEAD, OPTIONS');
   headers.set('Access-Control-Allow-Headers', 'Content-Type, Authorization, X-Requested-With');
   
-  // Handle redirect responses
+  // Handle redirect responses. Use a raw Response instead of
+  // NextResponse.redirect() so the Location header (including any #fragment
+  // such as the SSO JWT voucher at /auth/callback#token=...) is preserved
+  // verbatim for the browser.
   if (proxyResponse.status >= 300 && proxyResponse.status < 400) {
     const location = proxyResponse.headers.get('location');
     if (location) {
-      return NextResponse.redirect(location, proxyResponse.status);
+      return new NextResponse(null, {
+        status: proxyResponse.status,
+        headers: { Location: location },
+      });
     }
   }
   
