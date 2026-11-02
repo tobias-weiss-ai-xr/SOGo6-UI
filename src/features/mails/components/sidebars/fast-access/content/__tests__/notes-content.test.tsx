@@ -2,9 +2,9 @@ import '@testing-library/jest-dom'
 import { render, screen } from '@testing-library/react'
 import NotesContent from '../notes-content'
 
-jest.mock('../feature-incoming', () => ({
+jest.mock('@/features/notes', () => ({
   __esModule: true,
-  default: () => <div data-testid="feature-incoming" />,
+  default: () => <div data-testid="notes-protected" />,
 }))
 
 describe('NotesContent', () => {
@@ -13,9 +13,9 @@ describe('NotesContent', () => {
   })
 
   describe('basic rendering', () => {
-    it('renders FeatureIncoming', () => {
+    it('renders NotesProtected', () => {
       render(<NotesContent />)
-      expect(screen.getByTestId('feature-incoming')).toBeInTheDocument()
+      expect(screen.getByTestId('notes-protected')).toBeInTheDocument()
     })
   })
 
@@ -23,7 +23,7 @@ describe('NotesContent', () => {
     it('renders consistently after rerender', () => {
       const { rerender } = render(<NotesContent />)
       rerender(<NotesContent />)
-      expect(screen.getByTestId('feature-incoming')).toBeInTheDocument()
+      expect(screen.getByTestId('notes-protected')).toBeInTheDocument()
     })
   })
 })

@@ -49,45 +49,51 @@ function NotesList() {
     setIsEditorOpen(true)
   }, [])
 
-  const handleDelete = useCallback(async (id: string) => {
-    try {
-      await fetchClient(`/api/v1/user/notes/${id}`, { method: 'DELETE' })
-      await fetchNotes()
-    } catch (err) {
-      console.error('Failed to delete note:', err)
-    }
-  }, [fetchNotes])
-
-  const handleSave = useCallback(async (note: Partial<Note>) => {
-    try {
-      if (editingNote) {
-        // Update existing note
-        const updatedNote = {
-          title: note.title,
-          content: note.content,
-        }
-        await fetchClient(`/api/v1/user/notes/${editingNote.id}`, {
-          method: 'PUT',
-          body: JSON.stringify(updatedNote),
-        })
-      } else {
-        // Create new note
-        const newNote = {
-          title: note.title,
-          content: note.content,
-        }
-        await fetchClient('/api/v1/user/notes', {
-          method: 'POST',
-          body: JSON.stringify(newNote),
-        })
+  const handleDelete = useCallback(
+    async (id: string) => {
+      try {
+        await fetchClient(`/api/v1/user/notes/${id}`, { method: 'DELETE' })
+        await fetchNotes()
+      } catch (err) {
+        console.error('Failed to delete note:', err)
       }
-      await fetchNotes()
-      setIsEditorOpen(false)
-      setEditingNote(null)
-    } catch (err) {
-      console.error('Failed to save note:', err)
-    }
-  }, [editingNote, fetchNotes])
+    },
+    [fetchNotes]
+  )
+
+  const handleSave = useCallback(
+    async (note: Partial<Note>) => {
+      try {
+        if (editingNote) {
+          // Update existing note
+          const updatedNote = {
+            title: note.title,
+            content: note.content,
+          }
+          await fetchClient(`/api/v1/user/notes/${editingNote.id}`, {
+            method: 'PUT',
+            body: JSON.stringify(updatedNote),
+          })
+        } else {
+          // Create new note
+          const newNote = {
+            title: note.title,
+            content: note.content,
+          }
+          await fetchClient('/api/v1/user/notes', {
+            method: 'POST',
+            body: JSON.stringify(newNote),
+          })
+        }
+        await fetchNotes()
+        setIsEditorOpen(false)
+        setEditingNote(null)
+      } catch (err) {
+        console.error('Failed to save note:', err)
+      }
+    },
+    [editingNote, fetchNotes]
+  )
 
   const handleCreate = useCallback(() => {
     setEditingNote(null)
@@ -103,18 +109,14 @@ function NotesList() {
     return (
       <div className="space-y-4">
         {Array.from({ length: 3 }).map((_, i) => (
-          <Skeleton key={i} className="h-24 w-full" />
+          <Skeleton key={i} data-testid="skeleton" className="h-24 w-full" />
         ))}
       </div>
     )
   }
 
   if (error) {
-    return (
-      <div className="text-destructive text-sm">
-        {error}
-      </div>
-    )
+    return <div className="text-destructive text-sm">{error}</div>
   }
 
   return (
@@ -135,7 +137,7 @@ function NotesList() {
           ))}
         </div>
       ) : (
-        <div className="text-muted-foreground text-center py-8">
+        <div className="text-muted-foreground py-8 text-center">
           <p className="mb-4">No notes found</p>
           <Button onClick={handleCreate}>Create your first note</Button>
         </div>

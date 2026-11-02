@@ -10,7 +10,7 @@ import {
 } from '@/components/ui/dialog'
 import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
-import { memo, useCallback, useEffect, useState } from 'react'
+import { memo, useCallback, useState } from 'react'
 
 export interface Note {
   id: string
@@ -31,16 +31,17 @@ function NotesEditor({ open, onClose, onSave, note }: NotesEditorProps) {
   const [title, setTitle] = useState('')
   const [content, setContent] = useState('')
 
-  // Initialize form with note data when editor opens or note changes
-  useEffect(() => {
-    if (note) {
-      setTitle(note.title)
-      setContent(note.content)
-    } else {
-      setTitle('')
-      setContent('')
-    }
-  }, [note, open])
+  // Initialize form with note data when the editor opens or switches notes.
+  // React docs: "adjusting state when a prop changes" — setState during render
+  // is allowed and avoids the cascading renders of an effect (react-hooks/set-state-in-effect).
+  const [prevNote, setPrevNote] = useState(note)
+  const [prevOpen, setPrevOpen] = useState(open)
+  if (note !== prevNote || (open && !prevOpen)) {
+    setPrevNote(note)
+    setPrevOpen(open)
+    setTitle(note ? note.title : '')
+    setContent(note ? note.content : '')
+  }
 
   const handleSubmit = useCallback(
     (e: React.FormEvent) => {
