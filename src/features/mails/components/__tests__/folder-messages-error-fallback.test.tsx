@@ -14,6 +14,9 @@ jest.mock('@/lib/i18n/navigation', () => ({
 
 jest.mock('@/lib/redux/hooks', () => ({
   useAppDispatch: jest.fn(() => mockDispatch),
+  // Component: token = useAppSelector((state) => state.auth?.token)
+  // User still authenticated (expired session) -> dispatch logout only when token is set
+  useAppSelector: jest.fn(() => 'stale-auth-token'),
 }))
 
 jest.mock('@/lib/redux/api/error-handlers', () => ({
