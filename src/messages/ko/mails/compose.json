@@ -219,6 +219,19 @@
             "context": "Success message when a file is attached from OpenCloud"
           }
         }
+,
+        "from_nextcloud": {
+          "string": "Nextcloud에서",
+          "context": "Option to attach files from Nextcloud in the compose toolbar"
+        },
+        "nextcloud": {
+          "string": "Nextcloud",
+          "context": "Label for Nextcloud file picker",
+          "attached": {
+            "string": "Nextcloud에서 첨부됨: {name}",
+            "context": "Success message when a file is attached from Nextcloud"
+          }
+        }
     },
     "scheduleSend": {
         "title": "Schedule Send",

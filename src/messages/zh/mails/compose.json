@@ -16,6 +16,19 @@
           "context": "Success message when a file is attached from OpenCloud"
         }
       }
+,
+        "from_nextcloud": {
+          "string": "从 Nextcloud",
+          "context": "Option to attach files from Nextcloud in the compose toolbar"
+        },
+        "nextcloud": {
+          "string": "Nextcloud",
+          "context": "Label for Nextcloud file picker",
+          "attached": {
+            "string": "已从 Nextcloud 附加：{name}",
+            "context": "Success message when a file is attached from Nextcloud"
+          }
+        }
     },
   "schedule_sending": {
     "string": "定时发送",
