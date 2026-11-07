@@ -202,6 +202,23 @@
                 "context": "Add a typed email address directly as recipient"
             }
         }
+,
+        "from_cloud": {
+          "string": "OpenCloudから",
+          "context": "Option to attach files from OpenCloud in the compose toolbar"
+        },
+        "opencloud_error": {
+          "string": "OpenCloudからの添付に失敗しました",
+          "context": "Error message when OpenCloud attachment fails"
+        },
+        "opencloud": {
+          "string": "OpenCloud",
+          "context": "Label for OpenCloud file picker",
+          "attached": {
+            "string": "OpenCloudから添付しました: {name}",
+            "context": "Success message when a file is attached from OpenCloud"
+          }
+        }
     },
     "scheduleSend": {
         "title": "Schedule Send",

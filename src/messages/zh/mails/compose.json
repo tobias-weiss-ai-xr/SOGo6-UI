@@ -1,4 +1,22 @@
 {
+    "COMPOSE": {
+      "from_cloud": {
+        "string": "从 OpenCloud",
+        "context": "Option to attach files from OpenCloud in the compose toolbar"
+      },
+      "opencloud_error": {
+        "string": "从 OpenCloud 附加失败",
+        "context": "Error message when OpenCloud attachment fails"
+      },
+      "opencloud": {
+        "string": "OpenCloud",
+        "context": "Label for OpenCloud file picker",
+        "attached": {
+          "string": "已从 OpenCloud 附加：{name}",
+          "context": "Success message when a file is attached from OpenCloud"
+        }
+      }
+    },
   "schedule_sending": {
     "string": "定时发送",
     "change": "修改时间",
