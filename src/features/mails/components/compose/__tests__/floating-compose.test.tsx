@@ -18,6 +18,18 @@ jest.mock('@/features/mails/store/opencloud-api', () => ({
   ]),
 }))
 
+// Mock nextcloud-api hooks before any component imports
+jest.mock('@/features/mails/store/nextcloud-api', () => ({
+  useExchangeNextcloudTokenMutation: jest.fn(() => [
+    jest.fn().mockResolvedValue({ data: { access_token: 'mock-token' } }),
+    { isLoading: false },
+  ]),
+  useBrowseNextcloudFilesQuery: jest.fn(() => ({
+    data: { path: '/', files: [] },
+    isLoading: false,
+  })),
+}))
+
 // Mock dependencies
 jest.mock('@/components/ui/button', () => ({
   Button: ({ children, onClick, ...props }: any) => (

@@ -11,6 +11,7 @@ import { useComposeDraftPersistence } from '@/features/mails/hooks/use-compose-d
 import { useComposeFloatingWindowState } from '@/features/mails/hooks/use-compose-floating-window-state'
 import { useComposeSend } from '@/features/mails/hooks/use-compose-send'
 import { useExchangeOpenCloudTokenMutation } from '@/features/mails/store/opencloud-api'
+import { useExchangeNextcloudTokenMutation } from '@/features/mails/store/nextcloud-api'
 import { useProfile } from '@/features/user-profile'
 import { useIsMobile } from '@/hooks/use-mobile'
 import { useAppDispatch, useAppSelector } from '@/lib/redux/hooks'
@@ -108,6 +109,7 @@ export const FloatingCompose: React.FC<FloatingComposeProps> = ({
     fileInputRef,
     isDragOver,
     isUploading,
+    processFiles,
     handleAttachmentClick,
     handleFileChange,
     handleDragEnter,
@@ -190,6 +192,49 @@ export const FloatingCompose: React.FC<FloatingComposeProps> = ({
       }
     } catch {
       toast.error(t('opencloud_error.string'))
+    }
+  }
+
+  // Open Nextcloud picker and exchange token
+  const [nextcloudPickerOpen, setNextcloudPickerOpen] = React.useState(false)
+  const [nextcloudAccessToken, setNextcloudAccessToken] = React.useState<
+    string | null
+  >(null)
+  const [exchangeNextcloudToken] = useExchangeNextcloudTokenMutation()
+
+  const handleNextcloudAttachment = async () => {
+    try {
+      const result = await exchangeNextcloudToken({
+        scopes: ['files.read', 'files.write'],
+      })
+      // Server may wrap the token in a create_api_base_response envelope
+      // ({ data: { access_token } }) or return it directly ({ access_token }).
+      const data = result.data as unknown as
+        | { data?: { access_token?: string }; access_token?: string }
+        | undefined
+      const tok = data?.data?.access_token ?? data?.access_token
+      if ('data' in result && tok) {
+        setNextcloudAccessToken(tok)
+        setNextcloudPickerOpen(true)
+      } else {
+        toast.error(t('opencloud_error.string'))
+      }
+    } catch {
+      toast.error(t('opencloud_error.string'))
+    }
+  }
+
+  // Handle Nextcloud file selection: bytes are attached like a local file.
+  const handleNextcloudFileSelect = async (file: {
+    file_path: string
+    action: string
+    file?: File
+  }) => {
+    setNextcloudPickerOpen(false)
+    setNextcloudAccessToken(null)
+    if (file.file) {
+      await processFiles([file.file])
+      toast.success(t('nextcloud.attached.string', { name: file.file.name }))
     }
   }
 
@@ -283,6 +328,20 @@ export const FloatingCompose: React.FC<FloatingComposeProps> = ({
           />
         </DialogContent>
       </Dialog>
+
+      {/* Nextcloud Picker dialog */}
+      <Dialog open={nextcloudPickerOpen} onOpenChange={setNextcloudPickerOpen}>
+        <DialogContent className="z-[110] max-h-[80vh] max-w-4xl">
+          <DialogHeader>
+            <DialogTitle>{t('nextcloud.string')}</DialogTitle>
+          </DialogHeader>
+          <OpenCloudPicker
+            source="nextcloud"
+            accessToken={nextcloudAccessToken || undefined}
+            onSelect={handleNextcloudFileSelect}
+          />
+        </DialogContent>
+      </Dialog>
     </>
   )
 
@@ -346,6 +405,7 @@ export const FloatingCompose: React.FC<FloatingComposeProps> = ({
             body={body}
             onInsertTemplate={handleInsertTemplate}
             onOpenCloudAttachment={handleOpenCloudAttachment}
+            onNextcloudAttachment={handleNextcloudAttachment}
           />
         </>
       )}
@@ -389,6 +449,7 @@ export const FloatingCompose: React.FC<FloatingComposeProps> = ({
               body={body}
               onInsertTemplate={handleInsertTemplate}
               onOpenCloudAttachment={handleOpenCloudAttachment}
+              onNextcloudAttachment={handleNextcloudAttachment}
             />
           </div>
           <div className="classic-reading-pane flex min-w-0 flex-1 flex-col overflow-hidden">

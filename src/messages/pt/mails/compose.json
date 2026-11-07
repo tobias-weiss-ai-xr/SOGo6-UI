@@ -252,6 +252,18 @@
       "templateName": "Nome do modelo",
       "namePlaceholder": "Digite um nome para este modelo",
       "save": "Salvar modelo"
+    },
+    "from_nextcloud": {
+      "string": "Do Nextcloud",
+      "context": "Option to attach files from Nextcloud in the compose toolbar"
+    },
+    "nextcloud": {
+      "string": "Nextcloud",
+      "context": "Label for Nextcloud file picker",
+      "attached": {
+        "string": "Anexado do Nextcloud: {name}",
+        "context": "Success message when a file is attached from Nextcloud"
+      }
     }
   }
 }

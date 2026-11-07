@@ -8224,6 +8224,18 @@
       "templateName": "Vorlagenname",
       "namePlaceholder": "Geben Sie einen Namen für diese Vorlage ein",
       "save": "Vorlage speichern"
+    },
+    "from_nextcloud": {
+      "string": "Aus Nextcloud",
+      "context": "Option to attach files from Nextcloud in the compose toolbar"
+    },
+    "nextcloud": {
+      "string": "Nextcloud",
+      "context": "Label for Nextcloud file picker",
+      "attached": {
+        "string": "Aus Nextcloud angehängt: {name}",
+        "context": "Success message when a file is attached from Nextcloud"
+      }
     }
   },
   "MAILS_LIST": {
@@ -8448,6 +8460,22 @@
         "description": "Dieser Bereich befindet sich in Entwicklung und steht in Kürze zur Verfügung."
       }
     }
+  },
+  "NOTES": {
+    "title": "Notizen",
+    "new_note": "Neue Notiz",
+    "save": "Speichern",
+    "cancel": "Abbrechen",
+    "edit": "Bearbeiten",
+    "delete": "Löschen",
+    "confirm_delete": "Notiz löschen",
+    "confirm_delete_message": "Sind Sie sicher, dass Sie diese Notiz löschen möchten? Dieser Vorgang kann nicht rückgängig gemacht werden.",
+    "loading": "Wird geladen...",
+    "error": "Beim Laden der Notizen ist ein Fehler aufgetreten.",
+    "no_notes": "Keine Notizen gefunden.",
+    "created_at": "Erstellt: {date}",
+    "placeholder_title": "Notiztitel eingeben",
+    "placeholder_content": "Beginnen Sie hier mit dem Eingeben Ihrer Notiz..."
   },
   "NOTIFICATIONS": {
     "title": {

@@ -252,6 +252,18 @@
       "templateName": "Vorlagenname",
       "namePlaceholder": "Geben Sie einen Namen für diese Vorlage ein",
       "save": "Vorlage speichern"
+    },
+    "from_nextcloud": {
+      "string": "Aus Nextcloud",
+      "context": "Option to attach files from Nextcloud in the compose toolbar"
+    },
+    "nextcloud": {
+      "string": "Nextcloud",
+      "context": "Label for Nextcloud file picker",
+      "attached": {
+        "string": "Aus Nextcloud angehängt: {name}",
+        "context": "Success message when a file is attached from Nextcloud"
+      }
     }
   }
 }

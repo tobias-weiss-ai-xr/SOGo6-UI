@@ -252,6 +252,18 @@
       "templateName": "Template name",
       "namePlaceholder": "Enter a name for this template",
       "save": "Save template"
+    },
+    "from_nextcloud": {
+      "string": "From Nextcloud",
+      "context": "Option to attach files from Nextcloud in the compose toolbar"
+    },
+    "nextcloud": {
+      "string": "Nextcloud",
+      "context": "Label for Nextcloud file picker",
+      "attached": {
+        "string": "Attached from Nextcloud: {name}",
+        "context": "Success message when a file is attached from Nextcloud"
+      }
     }
   }
 }
