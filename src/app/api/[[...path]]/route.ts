@@ -134,10 +134,16 @@ function removeProxyHeaders(headers: Headers): Record<string, string> {
   const result: Record<string, string> = {};
   
   for (const [key, value] of headers.entries()) {
-    // Skip Next.js and proxy-specific headers
-    if (key.toLowerCase().startsWith('x-') || 
-        key.toLowerCase().startsWith('host') ||
-        key.toLowerCase().startsWith('connection')) {
+    // Skip Next.js and proxy-specific headers.
+    // Strip content-length: the body is re-read below (arrayBuffer) and
+    // fetch() recalculates Content-Length from the actual bytes. Keeping
+    // the original header caused PUT/POST/PATCH to fail with ECONNRESET
+    // because JSON re-serialization changed the byte count.
+    const lower = key.toLowerCase();
+    if (lower.startsWith('x-') || 
+        lower.startsWith('host') ||
+        lower.startsWith('connection') ||
+        lower === 'content-length') {
       continue;
     }
     result[key] = value;
@@ -147,54 +153,16 @@ function removeProxyHeaders(headers: Headers): Record<string, string> {
 }
 
 /**
- * Clone request body for reuse
+ * Read the request body as raw bytes for forwarding.
+ *
+ * Previously this function parsed and re-serialized JSON / FormData / text,
+ * which changed the byte count (e.g. JSON.stringify removes whitespace)
+ * while the original Content-Length header was forwarded unchanged —
+ * causing the backend to wait for bytes that never arrived (ECONNRESET /
+ * "fetch failed"). Passing the raw arrayBuffer preserves the original
+ * bytes; fetch() sets Content-Length from the actual body.
  */
 async function cloneRequestBody(request: Request): Promise<BodyInit | null> {
-  // Check if Content-Type is JSON
-  const contentType = request.headers.get('content-type');
-  
-  if (contentType?.includes('application/json')) {
-    try {
-      const body = await request.json();
-      return JSON.stringify(body);
-    } catch {
-      return null;
-    }
-  }
-  
-  // Check if it's FormData
-  if (contentType?.includes('multipart/form-data')) {
-    try {
-      const formData = await request.formData();
-      const newFormData = new FormData();
-      
-      for (const [key, value] of formData.entries()) {
-        if (value instanceof Blob) {
-          // Clone blob — preserve filename when it's a File
-          const blob = new Blob([value as BlobPart], { type: value.type });
-          const name = typeof (value as File).name === 'string' ? (value as File).name : 'upload';
-          newFormData.append(key, blob, name);
-        } else {
-          newFormData.append(key, value as string);
-        }
-      }
-      
-      return newFormData;
-    } catch {
-      return null;
-    }
-  }
-  
-  // For text
-  if (contentType?.includes('text/')) {
-    try {
-      return await request.text();
-    } catch {
-      return null;
-    }
-  }
-  
-  // For binary data
   try {
     return await request.arrayBuffer();
   } catch {
