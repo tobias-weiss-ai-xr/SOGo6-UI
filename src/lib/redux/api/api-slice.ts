@@ -171,10 +171,14 @@ export const dynamicBaseQuery = async (
     },
   })
 
-  // fetchBaseQuery + the semaphore wrapper always return a Promise.
-  // RTK's BaseQueryFn generic inference is brittle here — cast through any.
+  // fetchBaseQuery + the semaphore wrapper is async — AWAIT it before
+  // inspecting the result. Assigning the raw Promise here made the 401 check
+  // below dead code (`result.error` is always undefined on a Promise), so an
+  // expired JWT page-fresh left the user on an empty mailbox instead of
+  // bouncing to login. RTK's BaseQueryFn generic inference is brittle here —
+  // cast through any.
 
-  const result: any = withApiFetchSemaphore<any>(() =>
+  const result: any = await withApiFetchSemaphore<any>(() =>
     baseQuery(args, api, extraOptions)
   )
   // Expired/invalid JWT: clear credentials so the (loggedin) layout guard

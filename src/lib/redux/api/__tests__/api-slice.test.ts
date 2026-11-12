@@ -7,6 +7,12 @@ jest.mock('@/lib/env-service', () => ({
   clearEnvCache: jest.fn(),
 }))
 
+// Mock auth slice so we can assert the logout action on 401
+const mockLogout = jest.fn(() => ({ type: 'auth/logout' }))
+jest.mock('@/features/auth/components/store/auth.slice', () => ({
+  logout: mockLogout,
+}))
+
 // Mock @reduxjs/toolkit/query/react
 const mockApiSlice = {
   reducerPath: 'api',
@@ -31,6 +37,7 @@ describe('API Slice', () => {
     mockFetchEnvVars.mockResolvedValue({
       REACT_APP_API_BASE_URL: '/fakeApi',
     })
+    mockLogout.mockClear()
   })
 
   describe('apiSlice creation', () => {
@@ -181,6 +188,85 @@ describe('API Slice', () => {
 
       // baseQuery should be the dynamicBaseQuery function
       expect(createApiCall?.baseQuery).toBeInstanceOf(Function)
+    })
+
+    it('dispatches logout when an authenticated endpoint returns 401', async () => {
+      await import('../api-slice')
+
+      const createApiCall = (mockCreateApi.mock.calls as any)[0]
+      const baseQueryFn = createApiCall?.[0]?.baseQuery
+      expect(baseQueryFn).toBeInstanceOf(Function)
+
+      // Simulate the backend answering 401 for an authenticated endpoint. The
+      // stale/expired JWT case: the request carries a token, the server
+      // rejects it → the baseQuery must clear credentials (logout) so the
+      // layout guard bounces to the login page and SSO re-issues a token.
+      mockFetchBaseQuery.mockReturnValueOnce(
+        jest.fn().mockResolvedValue({ error: { status: 401, data: {} } })
+      )
+
+      const dispatch = jest.fn()
+      const api = {
+        endpoint: 'getFolders',
+        getState: () => ({ auth: { token: 'stale-token' } }),
+        dispatch,
+      }
+
+      const result = await baseQueryFn(
+        { url: '/mailboxes/0/folders' },
+        api,
+        {}
+      )
+
+      // The 401 must surface to the caller …
+      expect(result.error.status).toBe(401)
+      // … and credentials must be cleared exactly once.
+      expect(mockLogout).toHaveBeenCalledTimes(1)
+      expect(dispatch).toHaveBeenCalledWith({ type: 'auth/logout' })
+    })
+
+    it('does not dispatch logout on 401 for public endpoints', async () => {
+      await import('../api-slice')
+
+      const createApiCall = (mockCreateApi.mock.calls as any)[0]
+      const baseQueryFn = createApiCall?.[0]?.baseQuery
+
+      mockFetchBaseQuery.mockReturnValueOnce(
+        jest.fn().mockResolvedValue({ error: { status: 401, data: {} } })
+      )
+
+      const dispatch = jest.fn()
+      const api = {
+        endpoint: 'getAuthMode', // public endpoint → no logout
+        getState: () => ({ auth: { token: 'whatever' } }),
+        dispatch,
+      }
+
+      await baseQueryFn({ url: '/auth/mode' }, api, {})
+
+      expect(mockLogout).not.toHaveBeenCalled()
+    })
+
+    it('does not dispatch logout when no auth token is present', async () => {
+      await import('../api-slice')
+
+      const createApiCall = (mockCreateApi.mock.calls as any)[0]
+      const baseQueryFn = createApiCall?.[0]?.baseQuery
+
+      mockFetchBaseQuery.mockReturnValueOnce(
+        jest.fn().mockResolvedValue({ error: { status: 401, data: {} } })
+      )
+
+      const dispatch = jest.fn()
+      const api = {
+        endpoint: 'getFolders',
+        getState: () => ({ auth: { token: null } }),
+        dispatch,
+      }
+
+      await baseQueryFn({ url: '/mailboxes/0/folders' }, api, {})
+
+      expect(mockLogout).not.toHaveBeenCalled()
     })
   })
 
