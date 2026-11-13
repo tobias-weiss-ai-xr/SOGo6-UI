@@ -4,7 +4,11 @@
       "mailSend": "Send email",
       "mailDraftCreate": "Create draft",
       "eventCreate": "Create calendar event",
-      "contactCreate": "Create contact"
+      "contactCreate": "Create contact",
+      "mailDraftSend": "초안 보내기",
+      "mailMessageGet": "메시지 읽기",
+      "eventUpdate": "일정 업데이트",
+      "eventDelete": "일정 삭제"
     },
     "executor": {
       "execute": "Execute",

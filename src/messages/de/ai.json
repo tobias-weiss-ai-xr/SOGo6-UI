@@ -4,7 +4,11 @@
       "mailSend": "E-Mail senden",
       "mailDraftCreate": "Entwurf erstellen",
       "eventCreate": "Kalendereintrag erstellen",
-      "contactCreate": "Kontakt erstellen"
+      "contactCreate": "Kontakt erstellen",
+      "mailDraftSend": "Entwurf senden",
+      "mailMessageGet": "Nachricht lesen",
+      "eventUpdate": "Termin aktualisieren",
+      "eventDelete": "Termin löschen"
     },
     "executor": {
       "execute": "Ausführen",

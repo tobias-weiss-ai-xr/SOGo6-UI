@@ -38,7 +38,11 @@ type ExecutionState =
 const ACTION_LABEL_KEYS: Record<AssistantAction['id'], string> = {
   'mail.send': 'action.mailSend',
   'mail.drafts.create': 'action.mailDraftCreate',
+  'mail.drafts.send': 'action.mailDraftSend',
+  'mail.messages.get': 'action.mailMessageGet',
   'calendar.events.create': 'action.eventCreate',
+  'calendar.events.update': 'action.eventUpdate',
+  'calendar.events.delete': 'action.eventDelete',
   'contacts.create': 'action.contactCreate',
 }
 
@@ -92,7 +96,10 @@ export function ActionExecutor({
                   {action.id}
                 </Badge>
               </div>
-              <p className="text-muted-foreground mt-1 text-sm">
+              <p
+                className="text-muted-foreground mt-1 text-sm"
+                data-testid="assistant-action-summary"
+              >
                 {action.summary ?? t('executor.reviewHint')}
               </p>
             </div>
@@ -104,7 +111,10 @@ export function ActionExecutor({
             data-testid="assistant-action-execute"
           >
             {busy ? (
-              <Loader2 className="mr-1 h-4 w-4 animate-spin" />
+              <Loader2
+                className="mr-1 h-4 w-4 animate-spin"
+                data-testid="assistant-action-executing"
+              />
             ) : (
               <Check className="mr-1 h-4 w-4" />
             )}

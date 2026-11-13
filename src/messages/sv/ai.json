@@ -4,7 +4,11 @@
       "mailSend": "Send email",
       "mailDraftCreate": "Create draft",
       "eventCreate": "Create calendar event",
-      "contactCreate": "Create contact"
+      "contactCreate": "Create contact",
+      "mailDraftSend": "Skicka utkast",
+      "mailMessageGet": "Läs meddelande",
+      "eventUpdate": "Uppdatera händelse",
+      "eventDelete": "Ta bort händelse"
     },
     "executor": {
       "execute": "Execute",

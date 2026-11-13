@@ -18,7 +18,11 @@ import { apiClient } from '../client/base-client'
 export type AssistantActionId =
   | 'mail.send'
   | 'mail.drafts.create'
+  | 'mail.drafts.send'
+  | 'mail.messages.get'
   | 'calendar.events.create'
+  | 'calendar.events.update'
+  | 'calendar.events.delete'
   | 'contacts.create'
 
 /**
@@ -53,9 +57,27 @@ const ACTION_ROUTES: Record<AssistantActionId, ActionRoute> = {
     method: 'POST',
     path: '/api/user/v1/agent/mail/drafts',
   },
+  'mail.drafts.send': {
+    method: 'POST',
+    // `{key}` is substituted from params (e.g. a draft key from create).
+    path: '/api/user/v1/agent/mail/drafts/{key}/send',
+  },
+  'mail.messages.get': {
+    method: 'GET',
+    // query params (folder/account_id) go into the query string.
+    path: '/api/user/v1/agent/mail/messages/{uid}',
+  },
   'calendar.events.create': {
     method: 'POST',
     path: '/api/user/v1/agent/calendar/events',
+  },
+  'calendar.events.update': {
+    method: 'PATCH',
+    path: '/api/user/v1/agent/calendar/events/{key}',
+  },
+  'calendar.events.delete': {
+    method: 'DELETE',
+    path: '/api/user/v1/agent/calendar/events/{key}',
   },
   'contacts.create': { method: 'POST', path: '/api/user/v1/agent/contacts' },
 }
@@ -104,9 +126,6 @@ export class AgentApi {
         break
       case 'DELETE':
         response = await apiClient.delete<AgentEnvelope<T>>(url, body)
-        break
-      case 'PUT':
-        response = await apiClient.put<AgentEnvelope<T>>(url, body)
         break
       default:
         response = await apiClient.post<AgentEnvelope<T>>(url, body)

@@ -5722,6 +5722,27 @@
       }
     }
   },
+  "AI_ASSISTANT": {
+    "action": {
+      "mailSend": "E-Mail senden",
+      "mailDraftCreate": "Entwurf erstellen",
+      "eventCreate": "Kalendereintrag erstellen",
+      "contactCreate": "Kontakt erstellen",
+      "mailDraftSend": "Entwurf senden",
+      "mailMessageGet": "Nachricht lesen",
+      "eventUpdate": "Termin aktualisieren",
+      "eventDelete": "Termin löschen"
+    },
+    "executor": {
+      "execute": "Ausführen",
+      "reviewHint": "Vor dem Ausführen prüfen – Aktionen laufen nie automatisch.",
+      "showParams": "Parameter anzeigen",
+      "result": {
+        "success": "Aktion ausgeführt",
+        "error": "Aktion fehlgeschlagen"
+      }
+    }
+  },
   "AUTH": {
     "email": {
       "label": {

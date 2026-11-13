@@ -135,4 +135,35 @@ describe('ActionExecutor', () => {
     await waitFor(() => expect(onExecuted).toHaveBeenCalled())
     expect(onExecuted.mock.calls[0][0].error_code).toBe('S000000')
   })
+
+  it('shows a running indicator while execution is pending', async () => {
+    let resolveExecute: (v: AgentEnvelope) => void = () => {}
+    executeMock.mockImplementation(
+      () => new Promise<AgentEnvelope>((resolve) => (resolveExecute = resolve))
+    )
+    render(<ActionExecutor action={sendDraft} />)
+
+    fireEvent.click(screen.getByTestId('assistant-action-execute'))
+    expect(
+      await screen.findByTestId('assistant-action-executing')
+    ).toBeInTheDocument()
+    expect(screen.getByTestId('assistant-action-execute')).toBeDisabled()
+
+    resolveExecute(envelope())
+    await waitFor(() =>
+      expect(screen.queryByTestId('assistant-action-executing')).toBeNull()
+    )
+  })
+
+  it('falls back to the raw id and review hint for unlabelled actions', () => {
+    const future = {
+      id: 'calendar.slots.book',
+      params: { key: 's-1' },
+    } as unknown as AssistantAction
+    render(<ActionExecutor action={future} />)
+    expect(screen.getAllByText('calendar.slots.book').length).toBeGreaterThan(0)
+    expect(screen.getByTestId('assistant-action-summary')).toHaveTextContent(
+      'reviewHint'
+    )
+  })
 })

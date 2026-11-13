@@ -6394,6 +6394,27 @@
       }
     }
   },
+  "AI_ASSISTANT": {
+    "action": {
+      "mailSend": "Send email",
+      "mailDraftCreate": "Create draft",
+      "eventCreate": "Create calendar event",
+      "contactCreate": "Create contact",
+      "mailDraftSend": "Send draft",
+      "mailMessageGet": "Read message",
+      "eventUpdate": "Update event",
+      "eventDelete": "Delete event"
+    },
+    "executor": {
+      "execute": "Execute",
+      "reviewHint": "Review before executing — actions never run automatically.",
+      "showParams": "Show parameters",
+      "result": {
+        "success": "Action executed",
+        "error": "Action failed"
+      }
+    }
+  },
   "AUTH": {
     "email": {
       "label": {

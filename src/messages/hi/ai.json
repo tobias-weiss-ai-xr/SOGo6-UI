@@ -4,7 +4,11 @@
       "mailSend": "Send email",
       "mailDraftCreate": "Create draft",
       "eventCreate": "Create calendar event",
-      "contactCreate": "Create contact"
+      "contactCreate": "Create contact",
+      "mailDraftSend": "ड्राफ्ट भेजें",
+      "mailMessageGet": "संदेश पढ़ें",
+      "eventUpdate": "ईवेंट अपडेट करें",
+      "eventDelete": "ईवेंट हटाएं"
     },
     "executor": {
       "execute": "Execute",

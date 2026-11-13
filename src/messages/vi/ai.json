@@ -4,7 +4,11 @@
       "mailSend": "Send email",
       "mailDraftCreate": "Create draft",
       "eventCreate": "Create calendar event",
-      "contactCreate": "Create contact"
+      "contactCreate": "Create contact",
+      "mailDraftSend": "Gửi bản nháp",
+      "mailMessageGet": "Đọc tin nhắn",
+      "eventUpdate": "Cập nhật sự kiện",
+      "eventDelete": "Xóa sự kiện"
     },
     "executor": {
       "execute": "Execute",
