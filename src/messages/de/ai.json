@@ -1,0 +1,19 @@
+{
+  "AI_ASSISTANT": {
+    "action": {
+      "mailSend": "E-Mail senden",
+      "mailDraftCreate": "Entwurf erstellen",
+      "eventCreate": "Kalendereintrag erstellen",
+      "contactCreate": "Kontakt erstellen"
+    },
+    "executor": {
+      "execute": "Ausführen",
+      "reviewHint": "Vor dem Ausführen prüfen – Aktionen laufen nie automatisch.",
+      "showParams": "Parameter anzeigen",
+      "result": {
+        "success": "Aktion ausgeführt",
+        "error": "Aktion fehlgeschlagen"
+      }
+    }
+  }
+}
