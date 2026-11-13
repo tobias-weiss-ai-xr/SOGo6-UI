@@ -77,6 +77,32 @@ describe('ActionExecutor', () => {
     )
   })
 
+  it('stays retryable after a facade error', async () => {
+    executeMock.mockResolvedValue(envelope('S000513'))
+    render(<ActionExecutor action={sendDraft} />)
+
+    fireEvent.click(screen.getByTestId('assistant-action-execute'))
+    await waitFor(() =>
+      expect(screen.getByTestId('assistant-action-result')).toHaveTextContent(
+        'S000513'
+      )
+    )
+    expect(screen.getByTestId('assistant-action-execute')).toBeEnabled()
+  })
+
+  it('disables the button after a successful execution', async () => {
+    executeMock.mockResolvedValue(envelope())
+    render(<ActionExecutor action={sendDraft} />)
+
+    fireEvent.click(screen.getByTestId('assistant-action-execute'))
+    await waitFor(() =>
+      expect(screen.getByTestId('assistant-action-result')).toHaveTextContent(
+        'success'
+      )
+    )
+    expect(screen.getByTestId('assistant-action-execute')).toBeDisabled()
+  })
+
   it('reports transport failures without crashing', async () => {
     executeMock.mockRejectedValue(new Error('network down'))
     render(<ActionExecutor action={sendDraft} />)

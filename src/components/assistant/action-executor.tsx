@@ -73,7 +73,9 @@ export function ActionExecutor({
 
   const labelKey = ACTION_LABEL_KEYS[action.id]
   const busy = state.phase === 'running'
-  const done = state.phase === 'done'
+  // Only a true success disables the button — a facade error (e.g. missing
+  // scope S000513) must stay retryable after the user fixes the permission.
+  const done = state.phase === 'done' && state.envelope.error_code === 'S000000'
 
   return (
     <Card data-testid="assistant-action" className="border-dashed">

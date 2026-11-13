@@ -9,6 +9,7 @@
  */
 
 import type { BackendResponse } from '../backend-response'
+import type { ApiResponse } from '../client/base-client'
 import { apiClient } from '../client/base-client'
 
 // ========== Types ==========
@@ -91,12 +92,25 @@ export class AgentApi {
     action: AssistantAction
   ): Promise<AgentEnvelope<T>> {
     const { method, url, body } = buildRequest(action)
-    const response =
-      method === 'GET'
-        ? await apiClient.get<AgentEnvelope<T>>(url, {
-            params: body as Record<string, string>,
-          })
-        : await apiClient.post<AgentEnvelope<T>>(url, body)
+    let response: ApiResponse<AgentEnvelope<T>>
+    switch (method) {
+      case 'GET':
+        response = await apiClient.get<AgentEnvelope<T>>(url, {
+          params: body as Record<string, string>,
+        })
+        break
+      case 'PATCH':
+        response = await apiClient.patch<AgentEnvelope<T>>(url, body)
+        break
+      case 'DELETE':
+        response = await apiClient.delete<AgentEnvelope<T>>(url, body)
+        break
+      case 'PUT':
+        response = await apiClient.put<AgentEnvelope<T>>(url, body)
+        break
+      default:
+        response = await apiClient.post<AgentEnvelope<T>>(url, body)
+    }
     return response.data
   }
 
